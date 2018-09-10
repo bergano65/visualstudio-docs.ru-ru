@@ -1,5 +1,5 @@
 ---
-title: Запуск приложений UWP в симуляторе | Документы Microsoft
+title: Запуск приложений UWP в симуляторе | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,34 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480665"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281056"
 ---
-# <a name="run-uwp-apps-in-the-simulator"></a>Запуск в симуляторе приложений UWP
-Симулятор Visual Studio для приложений UWP — это классическое приложение, которое имитирует приложение UWP. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать симулятор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать распространенные касания и поворота события и свойства сетевых подключений.
+# <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
+Имитатор Visual Studio для приложений универсальной платформы Windows — это классическое приложение, которое имитирует приложение универсальной платформы Windows. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать имитатор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать общие касания и поворота события и свойства сетевых подключений.
   
- Симулятор предоставляет среду, в которой можно проектирования, разработки, отладки и тестирования приложений UWP. Тем не менее прежде чем публиковать приложение в Microsoft Store, следует протестировать приложение на настоящем устройстве.  
+ Имитатор предоставляет среду, в которой можно проектировать, разрабатывать, отладка и тестирование приложений универсальной платформы Windows. Тем не менее прежде чем публиковать приложение Microsoft Store, необходимо протестировать приложение на настоящем устройстве.  
   
- Симулятор Visual Studio для приложений UWP не работает в изолированной среде на локальном компьютере. Поэтому ошибки, возникающие в симуляторе, например неустранимая системная ошибка, могут также влиять на весь компьютер.  
+ Имитатор Visual Studio для приложений универсальной платформы Windows не выполняется в изолированной среде на локальном компьютере. Поэтому ошибки, возникающие в симуляторе, например неустранимая системная ошибка, могут также влиять на весь компьютер.  
   
 > [!IMPORTANT]
 >  Имитатор Visual Studio 2015 не включает кнопку географического положения. Это вызвано тем, что в имитаторе Windows 10 не предусмотрено моделирование географического положения.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Установка симулятора в качестве целевого объекта  
- Чтобы запустить приложение UWP в симуляторе, выберите **симулятор** из раскрывающегося списка рядом с **начать отладку** на панели инструментов **Стандартная** инструментов. Этот параметр доступен, только если ваше приложение **Минимальная версия целевой. Версия** меньше или равно операционной системы на компьютере разработки. 
+ Для запуска приложения универсальной платформы Windows в симуляторе, выберите **симулятор** из раскрывающегося списка рядом с полем **начать отладку** кнопку на отладчик **стандартный** панели инструментов. Этот параметр доступен только в том случае если ваше приложение **Минимальная версия целевой. Версия** меньше или равно операционной системы на компьютере разработки. 
   
- ![Выполнение в имитаторе](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
+ ![Запуск в симуляторе](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> Выбор режима взаимодействия  
  Вы можете выбрать следующие режимы взаимодействия.  
   
 -   ![Кнопка режима мыши](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") режим мыши: устанавливает режим взаимодействия с помощью жестов мыши. К жестам мыши относятся щелчки, двойные щелчки и перетаскивания.  
   
--   ![Кнопки эмуляции сенсорного ввода запуска](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Эмуляция сенсорного экрана: Start: устанавливает режим взаимодействия с помощью жестов одним пальцем касания. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
+-   ![Кнопка эмуляции сенсорного ввода запуска](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Эмуляция сенсорного экрана: Start: устанавливает режим взаимодействия с помощью жестов одним пальцем касания. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
   
      ![Цель одного пальца в симуляторе](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") один целевой значок указывает расположение событий в симуляторе. Используйте мышь для перемещения указателя.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "31480665"
 ## <a name="pinch-and-zoom"></a>Жест сжатия и масштабирования  
  Устанавливает режим взаимодействия с помощью жестов сжатия и масштабирования, выполняемых двумя пальцами.  
   
--   ![Цель двух пальцев](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Цель двух пальцев в симуляторе](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")  
   
      Двойной целевой значок указывает расположение двух пальцев на экране устройства.  
   
@@ -94,9 +94,9 @@ ms.locfileid: "31480665"
  Размер и разрешение экрана указываются в виде *Ширина экрана в дюймах, ширина в пикселях X высота в пикселях*. Обратите внимание на то, что имитируется и размер, и разрешение экрана. Координаты расположения в симуляторе преобразуются в координаты выбранного размера и разрешения устройства.  
   
 > [!NOTE]
->  Можно сохранить масштабированные версии точечных рисунков в приложении, и Windows загрузит правильный рисунок для текущего масштаба. Дополнительные сведения см. в разделе [начальный конструктора и пользовательского интерфейса](/windows/uwp/layout/design-and-ui-intro). Однако, если изменить разрешение симулятора таким образом, чтобы ОС Windows выбрала другое изображение для соответствия разрешению, необходимо остановить и перезапустить сеанс отладки для просмотра нового изображения.  
+>  Можно сохранить масштабированные версии точечных рисунков в приложении, и Windows загрузит правильный рисунок для текущего масштаба. Дополнительные сведения см. в разделе [введение в проектирование и пользовательского интерфейса](/windows/uwp/layout/design-and-ui-intro). Однако, если изменить разрешение симулятора таким образом, чтобы ОС Windows выбрала другое изображение для соответствия разрешению, необходимо остановить и перезапустить сеанс отладки для просмотра нового изображения.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Создание снимка приложения для представления магазин Microsoft  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Создание снимка приложения для отправки в Microsoft Store  
  При отправке приложения в Microsoft Store, необходимо включить снимки экрана приложения.  
   
 > [!NOTE]
@@ -109,9 +109,9 @@ ms.locfileid: "31480665"
      ![Контекстное меню параметров снимка экрана](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений  
- Вы можете помочь пользователям приложения управлять затраты на лимитных сетевых подключениях, уведомления о сетевых соединений стоимость или данные плана изменения состояния и предоставления приложению возможности использовать эту информацию, чтобы избежать дополнительных расходов на оплату роуминга или превышение ограничения на передачу данных. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API-интерфейсы позволяют реагировать на [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) события, которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Вы можете помочь пользователям приложения управлять затраты на лимитных сетевых подключениях, поддерживая уведомления о сетевого подключения затрат и данных состояния изменения плана и предоставив приложению возможность использовать эту информацию, чтобы избежать дополнительных расходов на оплату роуминга или превышение ограничения на передачу данных. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API-интерфейсы позволяют реагировать на [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) события, в которых вход. См. в разделе [краткое руководство: управлению ограничениями расходов на](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
- Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых подключений, имитатор может имитировать свойства сети, представляемые с помощью [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объект, возвращаемый [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
+ Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых, имитатор может имитировать свойства сети, выполняемую с помощью [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объект, возвращаемый [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
  Для имитации свойств сети выполните следующие действия.  
   
@@ -121,32 +121,32 @@ ms.locfileid: "31480665"
   
      Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
   
-3.  Введите **Имя профиля** для сымитированной сети. Рекомендуется использовать уникальное имя, которое можно использовать для идентификации имитации в [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) свойство [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объекта.  
+3.  Введите **Имя профиля** для сымитированной сети. Мы рекомендуем использовать уникальное имя, которое можно использовать для идентификации имитации в [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) свойство [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объекта.  
   
-4.  Выберите [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) для профиля из **тип стоимости сети** списка.  
+4.  Выберите [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) значение для профиля из **тип стоимости сети** списка.  
   
-5.  Из **флаг состояния лимита данных** список, можно задать [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) свойство или [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) значение true, или можно выбрать  **В области данных ограничение** для обоих свойств значение false.  
+5.  Из **флаг состояния лимита данных** списка, можно задать [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) свойство или [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) присваивается значение true, или же вы можете  **Лимит данных не** оба значения задавать значение false.  
   
-6.  Из **состояние роуминга** выберите [перемещаемые](/uwp/api/windows.networking.connectivity.connectioncost) свойство.  
+6.  Из **состояние роуминга** списке [перемещаемых](/uwp/api/windows.networking.connectivity.connectioncost) свойство.  
   
-7.  Выберите **задать свойства** для имитации свойств сети путем активации переднего плана [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) событий и фон [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) типа  **NetworkStateChange**.  
+7.  Выберите **задание свойств** для имитации свойств сети путем активации переднего плана [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) событий и фона [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) типа  **NetworkStateChange**.  
   
  **Дополнительные сведения об управлении сетевыми подключениями**  
   
- [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+ [Краткое руководство: Управление с оплатой за трафик сети финансовым ограничениям](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Пример информации по сети](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+ [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
  [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Реакция на системные события с фоновыми задачами](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+ [Реакция на системные события с фоновыми задачами](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Вызов событий приостановки, возобновления и фоновых событий в приложениях UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Вызов событий приостановки, возобновления и фоновых событий в приложениях UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Навигация по симулятору с помощью клавиатуры  
- Панель инструментов имитатора можно перейти, нажав клавишу **сочетание клавиш CTRL + ALT + СТРЕЛКА ВВЕРХ** чтобы перенести фокус с окна симулятора на панель инструментов симулятора. Используйте клавиши **Стрелка вверх** и **Стрелка вниз** для перемещения между кнопками панели инструментов.  
+ Панель инструментов симулятора можно перейти, нажав клавишу **CTRL + ALT + СТРЕЛКА ВВЕРХ** чтобы перенести фокус с окна симулятора на панель инструментов симулятора. Используйте клавиши **Стрелка вверх** и **Стрелка вниз** для перемещения между кнопками панели инструментов.  
   
  Можно завершить работу симулятора, нажав клавишу **CTRL + ALT + F4**.  
   

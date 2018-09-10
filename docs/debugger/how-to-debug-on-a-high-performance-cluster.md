@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 9964621c216d058581d9298956ba90ac6cdbef86
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058039"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280796"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Практическое руководство. Отладка в высокопроизводительном кластере
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
   
  При отладке на кластере высокой производительности можно использовать все окна отладки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и методы, которые доступны для удаленной отладки. Однако, так как отладка происходит удаленно, то внешнее окно консоли не доступно.  
   
- **Потоков** окна и **процессы** особенно полезны для отладки параллельных приложений. Советы по использованию этих окон см. в разделе [как: использование окна процессов](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) и [Пошаговое руководство: отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).  
+ **Потоков** окна и **процессы** особенно полезны для отладки параллельных приложений. Советы по использованию этих окон см. в разделе [как: использование окна процессов](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) и [Пошаговое руководство: отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).  
   
  Следующие процедуры показывают некоторые методы, которые особенно полезны для отладки на кластере высокой производительности.  
   
@@ -101,7 +101,7 @@ ms.locfileid: "37058039"
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Удаленная отладка](../debugger/remote-debugging.md)   
- [Практическое: использование окна процессов](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Практическое: использование окна процессов](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
  [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Потоков и процессов](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Потоков и процессов](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
  [Использование точек останова](../debugger/using-breakpoints.md)

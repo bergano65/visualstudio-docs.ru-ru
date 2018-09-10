@@ -1,5 +1,5 @@
 ---
-title: Недопустимый диапазон в символ набор (JavaScript) | Документы Microsoft
+title: Недопустимый диапазон в символе задайте (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633004"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282824"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Недопустимый диапазон в наборе символов (JavaScript)
-Предпринята попытка создания регулярного выражения с диапазоном набор недопустимый символ. Наборов символов должно находиться в диапазоне от одного символа, например, a-z или 0-9; Классы символов, таких как \w нельзя включать в набор символов. Первый символ в диапазоне также может следовать до второго знака в диапазоне. Например:  
+Предпринята попытка создать регулярное выражение с диапазоном набора недопустимый символ. Наборов символов должно находиться в диапазоне от одного символа, например, a – z или 0-9; Классы символов, таких как \w нельзя включить в набор символов. Первый символ в диапазоне, также должны следовать после второго знака в диапазоне. Пример:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Используйте только одиночные символы для составления кодировке регулярного выражения и убедитесь, что они находятся в правильном порядке.  
+-   Используйте только одиночные символы для составления ваш набор символов регулярного выражения и убедитесь, что они находятся в правильном порядке.  
   
 ## <a name="see-also"></a>См. также  
  [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
- [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

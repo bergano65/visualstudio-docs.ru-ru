@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f146d567f429c8104017ef9441676f9cf3209b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623780"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283747"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Использование автономного сборщика данных IntelliTrace
 **Автономный сборщик IntelliTrace** позволяет собирать диагностические данные IntelliTrace для приложений на производственных серверах или в других средах без установки Visual Studio на целевом компьютере и без изменения среды в целевой системе. Автономный сборщик IntelliTrace работает в веб-приложениях, а также приложениях SharePoint, WPF и Windows Forms. По окончании сбора данных просто удалите сборщик.
@@ -382,7 +382,7 @@ ms.locfileid: "42623780"
 
 -   Из сеанса отладки в Visual Studio Enterprise IntelliTrace, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
--   В сеансе тестирования в Microsoft Test Manager см. [Практическое руководство. Сбор данных IntelliTrace для отладки сложных проблем](http://msdn.microsoft.com/Library/02b6716f-569e-4961-938a-e790a0c74b5c).
+-   В сеансе тестирования в Microsoft Test Manager, см. в разделе [как: сбор данных IntelliTrace для отладки сложных проблем](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)

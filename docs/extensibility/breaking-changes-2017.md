@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512257"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280575"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -73,7 +73,7 @@ ms.locfileid: "39512257"
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Во время выполнения подсистема pkgdef Visual Studio объединит эти записи в файл конфигурации среды выполнения в процесс Visual Studio (в разделе *[VSAPPDATA]\devenv.exe.config*) как [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) элементы. Это рекомендуемый способ позволяют найти сборку в процесс Visual Studio, так как позволяет избежать поиска с помощью проверки пути.
+    Во время выполнения подсистема pkgdef Visual Studio объединит эти записи в файл конфигурации среды выполнения в процесс Visual Studio (в разделе *[VSAPPDATA]\devenv.exe.config*) как [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) элементы. Это рекомендуемый способ позволяют найти сборку в процесс Visual Studio, так как позволяет избежать поиска с помощью проверки пути.
 
 ### <a name="reacting-to-this-breaking-change"></a>Реагирование на это критическое изменение
 
@@ -87,7 +87,7 @@ ms.locfileid: "39512257"
 
 ### <a name="global-com-registration"></a>Глобальной регистрации COM
 
-* Ранее Visual Studio устанавливается много разделов реестра в кустов HKEY_CLASSES_ROOT и HKEY_LOCAL_MACHINE, для поддержки встроенной регистрации COM. Чтобы исключить влияние этой конфигурации, Visual Studio использует [активации без регистрации для COM-компонентов](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Ранее Visual Studio устанавливается много разделов реестра в кустов HKEY_CLASSES_ROOT и HKEY_LOCAL_MACHINE, для поддержки встроенной регистрации COM. Чтобы исключить влияние этой конфигурации, Visual Studio использует [активации без регистрации для COM-компонентов](https://msdn.microsoft.com/library/ms973913.aspx).
 * Как следствие, большинство TLB / OLB / DLL-файлы в % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv больше не устанавливаются по умолчанию с помощью Visual Studio. Теперь эти файлы устанавливаются в разделе [INSTALLDIR] с соответствующей манифестами Registration-Free COM, используемые в процессе размещения Visual Studio.
 * В результате внешний код, который зависит от глобальной регистрации COM для интерфейсов модели COM Visual Studio больше не будет найти эти операции регистрации. Код, выполняемый в процесс Visual Studio не может заметить разницу.
 
@@ -106,5 +106,5 @@ ms.locfileid: "39512257"
 
 * Внешний код должен преобразовать для использования активации без регистрации для COM-компонентов также.
 * Внешние компоненты можно найти в расположении Visual Studio [, следуя указаниям ниже](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Мы рекомендуем использовать внешние компоненты [внешних менеджер по параметрам](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) вместо чтения/записи, непосредственно к разделам реестра Visual Studio.
+* Мы рекомендуем использовать внешние компоненты [внешних менеджер по параметрам](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) вместо чтения/записи, непосредственно к разделам реестра Visual Studio.
 * Проверьте, может ли реализовывать другой метод для регистрации компонентов, которые использует ваше расширение. Например, можно попытаться воспользоваться преимуществами нового расширения отладчика [msvsmon регистрация JSON-файл COM](migrate-debugger-COM-registration.md).

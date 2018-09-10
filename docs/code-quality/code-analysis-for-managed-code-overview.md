@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131886"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279099"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Обзор анализа кода для управляемого кода
 
@@ -71,14 +71,14 @@ Public class MyClass
 
 - Выполнить анализ кода в рамках последнего построения.
 
-Этого можно достичь, задав политики возврата. Дополнительные сведения см. в разделе [улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Этого можно достичь, задав политики возврата. Дополнительные сведения см. в разделе [улучшение качества кода с помощью политик возврата проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Интеграция командного построения
 
-Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [сборки и выпуска (VSTS)](/vsts/build-release/index).
+Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index).
 
 ## <a name="see-also"></a>См. также
 
 - [Обзор анализаторов Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Практическое: Включение и отключение автоматического анализа кода](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Практическое руководство. Включение и отключение автоматического анализа кода](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

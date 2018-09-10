@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c712114918f2e0feae2a0820ef9e90a6060e80ec
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780452"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281732"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике Visual Studio
 PDB-файл программы, также называемый файлом символов, сопоставляет идентификаторы, созданные в исходный код для классов, методов и другого кода и идентификаторы, которые используются в скомпилированных исполняемых файлах проекта. PDB-файл также сопоставляет операторы в исходном коде с инструкциями выполнения в исполняемых файлах. Отладчик использует эти сведения для определения двух ключевых момента:
@@ -255,6 +255,6 @@ PDB-файл программы, также называемый файлом с
      Обратите внимание, что параметры **Разрешить выполнение частично доверенных сборок (только управляемых) на исходном сервере** и **Всегда выполнять ненадежные команды исходного сервера без запроса** могут повысить риски безопасности, описанные выше.  
   
 ## <a name="see-also"></a>См. также  
-[Основные сведения о файлах символов и параметры символов Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Основные сведения о файлах символов и параметры символов Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Изменения принципов загрузки удаленных символов .NET в Visual Studio 2012 и 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+[Загрузка изменений в Visual Studio 2012 и 2013 удаленных символов .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

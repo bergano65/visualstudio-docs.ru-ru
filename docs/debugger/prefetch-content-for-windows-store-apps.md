@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 458b320b971cbb3c4db74d6f2202455332ca5465
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d511934dc185ed6dac8034ee3e149391b2dd185e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056330"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281550"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Отладка приложений UWP, с помощью предварительно выбранного содержимого в Visual Studio
   
- Для ускорения приложения универсальной платформы Windows, вы можете запросить Windows для предварительной загрузки некоторых веб-содержимого, например веб-страниц или изображений, в приложения [WinINet](/windows/desktop/WinInet/about-wininet) кэша. Эта функциональность называется предварительной загрузкой. Это особенно эффективен для содержимого, который используется при запуске, но вы можно выполнять предварительную загрузку другого часто используемого содержимого слишком. Методы [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) позволяют указывать URI содержимого, которое необходимо предварительно загрузить. См. в Windows SDK [примере предварительной загрузки содержимого](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) примеры добавления функциональности ContentPrefetcher в приложение.  
+ Для ускорения приложения универсальной платформы Windows, вы можете запросить Windows для предварительной загрузки некоторых веб-содержимого, например веб-страниц или изображений, в приложения [WinINet](/windows/desktop/WinInet/about-wininet) кэша. Эта функциональность называется предварительной загрузкой. Это особенно эффективен для содержимого, который используется при запуске, но вы можно выполнять предварительную загрузку другого часто используемого содержимого слишком. Методы [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) позволяют указывать URI содержимого, которое необходимо предварительно загрузить. См. в Windows SDK [примере предварительной загрузки содержимого](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) примеры добавления функциональности ContentPrefetcher в приложение.  
   
  Windows использует эвристику для определения времени и необходимости выполнения предварительной загрузки, а также того, какие ресурсы будут загружены. Эта эвристика учитывает условия питания и системной сети, историю использования приложения пользователем, а также результаты предыдущих попыток предварительной загрузки. В Visual Studio, можно использовать **запустить предварительную загрузку приложения Windows Store** принудительно Windows к игнорированию эвристики ContentPrefetcher и выполнению предварительной загрузки всего указанного веб-содержимого. Это может быть полезно, если требуется протестировать поведение или производительность приложения с содержимым, которое необходимо предварительно загрузить в известном состоянии (либо загруженном, либо незагруженном).  
   
@@ -42,4 +42,4 @@ ms.locfileid: "37056330"
 >  Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
   
 ## <a name="see-also"></a>См. также  
- [Запись блога: запуск предварительной загрузки для Windows Store Apps в Visual Studio 2013 с обновлением 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)
+ [Запись блога: запуск предварительной загрузки для Windows Store Apps в Visual Studio 2013 с обновлением 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

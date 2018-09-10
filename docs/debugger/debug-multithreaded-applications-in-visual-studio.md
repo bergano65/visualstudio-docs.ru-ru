@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675243"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279551"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 Поток — это последовательность инструкций, которой операционная система выделяет время процессора. Каждый процесс, выполняющийся в операционной системе, состоит по крайней мере из одного потока. Процессы, имеющие более одного потока, называются многопоточными.  
@@ -95,7 +95,7 @@ Visual Studio также предоставляет эффективные ср�
  [Работа с потоками](/dotnet/standard/threading/index)  
  Понятия потоков в программировании [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], включая примеры кода.  
   
- [Многопоточность в компонентах](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Многопоточность в компонентах](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Как использовать многопоточность в компонентах [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  [Поддержка многопоточности для устаревшего кода (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

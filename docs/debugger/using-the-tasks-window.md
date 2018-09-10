@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512295"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280887"
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
 
-**Задачи** напоминает окно **потоков** окна, за исключением того, что он отображается информация о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), или [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке.
+**Задачи** напоминает окно **потоков** окна, за исключением того, что он отображается информация о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), или [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке.
 
 В управляемом коде, можно использовать **задачи** окно при работе с <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов или с **await** и **async** ключевые слова (**Await** и **Async** в VisualBasic). Дополнительные сведения о задачах в управляемом коде, см. в разделе [параллельного программирования](/dotnet/standard/parallel-programming/index).
 
 В машинном коде, можно использовать **задачи** окно при работе с [группы задач](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [параллельные алгоритмы](/cpp/parallel/concrt/parallel-algorithms), [асинхронных агентов](/cpp/parallel/concrt/asynchronous-agents), и [упрощенных задач](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Дополнительные сведения о задачах в машинном коде, см. в разделе [среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime).
 
-В JavaScript, можно использовать окна задач при работе с объектом promise `.then` кода. См. в разделе [асинхронное программирование в JavaScript (приложения UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Дополнительные сведения.
+В JavaScript, можно использовать окна задач при работе с объектом promise `.then` кода. См. в разделе [асинхронное программирование в JavaScript (приложения UWP)](/previous-versions/windows/apps/hh700330(v=win.10)) Дополнительные сведения.
 
 Можно использовать **задачи** окно всякий раз при переключении в режим отладчика. Вы сможете открыть его на **Отладка** меню, щелкнув **Windows** и выбрав **задачи**. На следующем рисунке показано **задачи** окно в режиме по умолчанию.
 
@@ -47,7 +47,7 @@ ms.locfileid: "39512295"
 
 Столбцы в **задачи** окна отображаются следующие сведения.
 
-|Имя столбца|Описание:|
+|Имя столбца|Описание|
 |-----------------|-----------------|
 |**флаги**|Показывает, какие задачи помечены, и позволяет помечать задачи и снимать с них метки.|
 |**Значки**|Рядом с текущей задачей отображается желтая стрелка. Текущая задача находится на самом верхнем уровне текущего потока.<br /><br /> Белая стрелка указывает прерванную задачу, т.е. задачу, которая была текущей во время вызова отладчика.<br /><br /> Значок паузы указывает задачу, замороженную пользователем. Задачу можно заморозить или разморозить, щелкнув ее в списке правой кнопкой мыши.|

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638669"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281173"
 ---
 # <a name="address-dpi-issues"></a>Разрешение проблем
 Все большее число устройств входят в состав экранов «высокого разрешения». Эти экраны обычно имеют более чем 200 пикселей на дюйм (ppi). Для работы с приложением на этих компьютерах потребуется содержимого масштаба для удовлетворения потребностей Просмотр содержимого на расстоянии обычный режим просмотра для устройства. Начиная с 2014 г. основного целевого объекта, для дисплеев с высокой плотностью мобильных вычислительных устройств (планшеты, ноутбуки лотке и телефоны).  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Включение поддержки HDPI для WebOC  
  По умолчанию элементы управления WebOC (например, элемент управления WebBrowser в WPF или интерфейса IWebBrowser2) не включайте обнаружение HDPI и поддержки. Результатом будет внедренный элемент управления с Показывать содержимое, которое слишком мало, на экране с высоким разрешением. Ниже описано, как для поддержки высокого DPI в экземпляре WebOC конкретных web.  
   
- Реализация интерфейса IDocHostUIHandler (см. в статье MSDN на [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) интерфейса):  
+ Реализация интерфейса IDocHostUIHandler (см. в статье MSDN на [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- При необходимости реализовать интерфейс ICustomDoc (см. в статье MSDN на [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) интерфейса):  
+ При необходимости реализовать интерфейс ICustomDoc (см. в статье MSDN на [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

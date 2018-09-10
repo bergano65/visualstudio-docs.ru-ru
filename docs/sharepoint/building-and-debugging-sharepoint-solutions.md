@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326118"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283539"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Построение и отладка решений SharePoint
   Как правило, построение и отладка решений SharePoint является таким же, как построение и отладка других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.  
@@ -44,8 +44,8 @@ ms.locfileid: "36326118"
 ## <a name="debug-and-test-sharepoint-solutions"></a>Отладка и тестирование решений SharePoint
  Перед отладкой [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] копий *.wsp* пакет сервера SharePoint, активирует сайт и веб-компоненты, а в некоторых случаях запускает проект. В других случаях может понадобиться открыть проект вручную. Дополнительные сведения см. в разделе [решений SharePoint, устранение неполадок](../sharepoint/troubleshooting-sharepoint-solutions.md) и [решений SharePoint Отладка](../sharepoint/debugging-sharepoint-solutions.md).  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Отладка и проверка решений SharePoint с помощью возможностей ALM
- Возможности Visual Studio ALM, такие как модульное тестирование и IntelliTrace, обеспечивают качественный поиск проблем в решениях SharePoint. Профилирование позволяет найти и определить области с проблемами производительности в решениях SharePoint. Дополнительные сведения см. в разделе [проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) и [профилирование производительности приложений SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Отладка и проверка решений SharePoint с помощью функций служб Azure DevOps
+ Функции DevOps служб Azure, такие как модульное тестирование и IntelliTrace позволяют более точно выявить проблемы в решениях SharePoint. Профилирование позволяет найти и определить области с проблемами производительности в решениях SharePoint. Дополнительные сведения см. в разделе [проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) и [профилирование производительности приложений SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
   
 ## <a name="security-during-the-build-process"></a>Безопасность во время процесса построения
  Для упаковки и развертывания решений SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] должен иметь разрешение на копирование файлов на сервер SharePoint. Необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процессе с повышенными привилегиями и пользователя учетная запись должна быть администратор семейства сайтов на сервере SharePoint. Кроме того необходимо указать, является ли проект изолированное решение или решение фермы. Дополнительные сведения см. в разделе [различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  

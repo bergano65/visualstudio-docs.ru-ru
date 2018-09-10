@@ -1,5 +1,5 @@
 ---
-title: Запрос. PDB-файл | Документы Microsoft
+title: Запрос. PDB-файл | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b552300926ae0448aacd084b54934f03527f81e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470066"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282057"
 ---
 # <a name="querying-the-pdb-file"></a>Запрос PDB-файла
-Файл базы данных программы (с расширением PDB), двоичный файл, который содержит тип и символьную отладочную информацию, собранные в ходе компиляции и компоновки проекта. PDB-файл создается при компиляции программы C/C++ с **/ZI** или **/ZI** или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], или [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] программирования с использованием **/debug** параметр. Объектные файлы содержат ссылки в PDB-файла для отладочной информации. Дополнительные сведения о PDB-файлов см. в разделе [PDB-файлы](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Приложения доступа к интерфейсу отладки можно использовать следующие шаги для получения сведений о различных символов, объектов и элементов данных в исполняемый образ.  
+Файл базы данных программы (с расширением PDB) — это двоичный файл, который содержит тип и символьную отладочную информацию, собранные в ходе компиляции и компоновки проекта. PDB-файл создается при компиляции программы C/C++ с **/ZI** или **/ZI** или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], или [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] программировать **/debug** параметр. Объектные файлы содержат ссылки в PDB-файла для отладочной информации. Дополнительные сведения о PDB-файлы, см. в разделе [PDB-файлы](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Приложения доступа к интерфейсу отладки можно использовать следующие общие действия для получения сведений о различных символов, объекты и элементы данных в исполняемый образ.  
   
-### <a name="to-query-the-pdb-file"></a>Запрос PDB-файл  
+### <a name="to-query-the-pdb-file"></a>Запрос PDB-файла  
   
-1.  Получения источника данных путем создания [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) интерфейса.  
+1.  Получения источника данных путем создания [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) интерфейс.  
   
     ```C++  
     CComPtr<IDiaDataSource> pSource;  
@@ -43,7 +43,7 @@ ms.locfileid: "31470066"
     }  
     ```  
   
-2.  Вызовите [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) или [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) для загрузки отладочной информации.  
+2.  Вызовите [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) или [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) загрузить отладочную информацию.  
   
     ```C++  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -57,7 +57,7 @@ ms.locfileid: "31470066"
     }  
     ```  
   
-3.  Вызовите [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) Открытие [IDiaSession](../../debugger/debug-interface-access/idiasession.md) получить доступ к отладочной информации.  
+3.  Вызовите [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) открыть [IDiaSession](../../debugger/debug-interface-access/idiasession.md) для получения доступа к отладочной информации.  
   
     ```C++  
     CComPtr<IDiaSession> psession;  
@@ -77,7 +77,7 @@ ms.locfileid: "31470066"
     }  
     ```  
   
-5.  Используйте `IDiaEnum*` интерфейсы, перечисления и просмотра символы или другие элементы отладочную информацию.  
+5.  Используйте `IDiaEnum*` интерфейсы для перечисления и просмотра символы или другие элементы отладочную информацию.  
   
     ```C++  
     CComPtr<IDiaEnumTables> pTables;  

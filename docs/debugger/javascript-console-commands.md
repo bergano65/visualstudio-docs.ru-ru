@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154376"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282213"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения этого раздела применяются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладка приложения](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения этого раздела применяются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладка приложения](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах F12 для Internet Explorer, см. в разделе [в этом разделе](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "39154376"
 > [!TIP]
 >  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Отправляет сообщение, если `expression` имеет значение **false**.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Удаляет сообщения из окна консоли (включая сообщения об ошибках в скрипте), а также скрипт, появляющийся в окне консоли. Не удаляет скрипт, введенный после появления на консоли запроса на ввод.|`console.clear();`|  
@@ -64,7 +64,7 @@ ms.locfileid: "39154376"
 ## <a name="miscellaneous-commands"></a>Разные команды  
  Эти команды также доступны в окне консоли JavaScript (но недоступны в коде).  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Возвращает указанный элемент в окно консоли. `$0` возвращает элемент, выбранный в настоящее время в проводнике DOM, `$1` возвращает элемент, ранее выбранный в проводнике DOM, и так далее до четвертого ранее выбранного элемента.|$3|  
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626118"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280641"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Страница "Общие", папка "Отладка", диалоговое окно "Параметры"
 **Сервис > Параметры > Отладка > Общие** странице позволяет задать параметры, описанные в этой статье.
@@ -72,7 +72,7 @@ ms.locfileid: "42626118"
   
 - **Вызов функции преобразования строк для объектов в окнах переменных (C# и JavaScript только)** выполняет вызов функции преобразования неявных строковых при вычислении объектов в окнах переменных. Результат отображается в виде строки вместо имени типа. Применимо только при отладке кода C#. Этот параметр можно переопределить с помощью атрибута DebuggerDisplay (см. в разделе [использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Включение поддержки исходного сервера** указывает отладчику Visual Studio для получения исходных файлов с исходных серверов, которые реализуют SrcSrv (`srcsrv.dll`) протокола. Team Foundation Server и инструменты отладки для Windows — два исходных сервера, которые реализуют этот протокол. Дополнительные сведения о настройке SrcSrv см. в разделе [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) документации. Кроме того, см. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Включение поддержки исходного сервера** указывает отладчику Visual Studio для получения исходных файлов с исходных серверов, которые реализуют SrcSrv (`srcsrv.dll`) протокола. Team Foundation Server и инструменты отладки для Windows — два исходных сервера, которые реализуют этот протокол. Дополнительные сведения о настройке SrcSrv см. в разделе [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) документации. Кроме того, см. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Так как чтение *.pdb* файлов можно выполнить произвольный код в файлах, убедитесь, что вы доверяете серверу.  

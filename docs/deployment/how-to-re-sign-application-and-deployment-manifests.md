@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078645"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280679"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое: повторное подписание манифестов приложения и развертывания
 После внесения изменений в свойства развертывания в манифесте приложения для приложений Windows Forms, приложения Windows Presentation Foundation (xbap) или решения Office, необходимо повторно подписать приложение и манифесты развертывания с помощью сертификат. Этот процесс гарантирует, что Подделанные файлы не установлены на компьютерах конечных пользователей.  
@@ -33,7 +33,7 @@ ms.locfileid: "39078645"
  Еще один сценарий, где могут заново подписывать манифесты, когда ваши заказчики хотят подписать приложение и манифесты развертывания своим собственным сертификатом.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Повторно подписать приложение и манифесты развертывания  
- В этой процедуре предполагается, что вы уже внесены изменения в файле манифеста приложения (*.manifest*). Дополнительные сведения см. в разделе [как: изменение свойств развертывания](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ В этой процедуре предполагается, что вы уже внесены изменения в файле манифеста приложения (*.manifest*). Дополнительные сведения см. в разделе [как: изменение свойств развертывания](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Для повторного подписания приложения и развертывания, манифестов с помощью Mage.exe  
   

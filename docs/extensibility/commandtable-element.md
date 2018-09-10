@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cd201a1b0a68f958cafca80fd156a5eb9ca8120
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d3869a9d3350daac8b08398ed5afaab0729a05c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231637"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278885"
 ---
 # <a name="commandtable-element"></a>Элемент CommandTable
 CommandTable является корневым элементом *.vsct* файла. Это файл, который определяет фактическую структуру и тип команды, которые VSPackage предоставляет интегрированную среду разработки. Команды могут включать элементы меню, меню, панелей инструментов и поля со списком. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -47,14 +47,14 @@ CommandTable является корневым элементом *.vsct* фай
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|xmlns|Обязательно. Пространства имен XML:<br /><br /> xmlns =»http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs =»http://www.w3.org/2001/XMLSchema"|  
+|xmlns|Обязательно. Пространства имен XML:<br /><br /> xmlns =» http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs =» http://www.w3.org/2001/XMLSchema"|  
 |язык|Необязательный. Атрибут языка может использоваться для указания языка по умолчанию всех \<строки > элементы в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-us»|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент extern](../extensibility/extern-element.md)|Необязательный. Содержит директивы препроцессора для компилятора.|  
 |[Включить элемент](../extensibility/include-element.md)|Необязательный. Содержит пути к любым файлам, чтобы включить в компиляцию.|  
@@ -64,11 +64,11 @@ CommandTable является корневым элементом *.vsct* фай
 |[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Необязательный. Определяет статические видимость команды и панели инструментов.|  
 |[Элемент KeyBindings](../extensibility/keybindings-element.md)|Необязательный. Задает сочетания клавиш, если таковые имеются, для команд.|  
 |[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Необязательный. Разрешает VSPackage при необходимости реализовать свою собственную версию функции, изначально поддерживаемые других пакетов VSPackage.|  
-|[Элемент Symbols](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Необязательный. Содержит все данные символов--идентификаторы GUID, идентификаторы и т.д. — для компилятора.|  
+|[Элемент Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Необязательный. Содержит все данные символов--идентификаторы GUID, идентификаторы и т.д. — для компилятора.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Нет||  
   

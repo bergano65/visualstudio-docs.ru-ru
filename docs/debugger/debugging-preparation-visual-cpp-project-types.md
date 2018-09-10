@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1157a4475b12a51f9833131b550e31ad1c218ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a1ff82ec2b86eeaf078576a437481ec2b7c39aa4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176919"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279490"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Подготовка к отладке: типы проектов Visual C++
 В этом разделе описана отладка основных типов проектов, созданных с использованием шаблонов проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -98,7 +98,7 @@ ms.locfileid: "39176919"
  [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Приложения Windows Forms (.NET)  
- **Приложение Windows Forms (.NET)** шаблон создает [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] приложение Windows Forms. Для получения дополнительной информации см. [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Приложение Windows Forms (.NET)** шаблон создает [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] приложение Windows Forms. Дополнительные сведения см. в разделе [Практическое руководство. Создание проекта приложения WPF](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] аналогична отладке управляемых приложений Windows Forms.  
   
@@ -115,4 +115,4 @@ ms.locfileid: "39176919"
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Присоединение к выполняющейся программе или к нескольким программам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Практическое: Создание проекта приложения Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Практическое: Создание проекта приложения Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3209a79b0358471977a0e58e8ab5d8d7e5c08e07
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755372"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284046"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Средства платформы Entity Framework в Visual Studio
 Платформа Entity Framework — это технология объектно реляционного сопоставления, который позволяет разработчикам .NET работать с реляционными данными с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.
@@ -39,17 +39,17 @@ ms.locfileid: "36755372"
     > [!NOTE]
     >  Начиная с Visual Studio 2010, средства платформы Entity Framework не поддерживают [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
-Средства создают или изменяют *.edmx* файл. Это *.edmx* файл содержит сведения, описывающие концептуальной модели, модели хранения и сопоставления между ними. Дополнительные сведения см. в разделе [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
+Средства создают или изменяют *.edmx* файл. Это *.edmx* файл содержит сведения, описывающие концептуальной модели, модели хранения и сопоставления между ними. Дополнительные сведения см. в разделе [EDMX](https://docs.microsoft.com/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) помогут вам создавать приложения с использованием модели EDM. Power tools можно создать концептуальную модель, проверить существующую модель, подготовить файлы исходного кода, которые содержат классы объектов на основе концептуальной модели и создать файлы исходного кода, содержащие представления, создаваемые модели. Подробные сведения см. в разделе [Pre-Generated сопоставления представлений](https://msdn.microsoft.com/data/dn469601.aspx).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) помогут вам создавать приложения с использованием модели EDM. Power tools можно создать концептуальную модель, проверить существующую модель, подготовить файлы исходного кода, которые содержат классы объектов на основе концептуальной модели и создать файлы исходного кода, содержащие представления, создаваемые модели. Подробные сведения см. в разделе [Pre-Generated сопоставления представлений](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Описывает использование [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] средств, который [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] предоставляет для создания приложений.|
 |[Сущностная модель данных](/dotnet/framework/data/adonet/entity-data-model)|Предоставляет ссылки и сведения для работы с данными, используемый приложений на платформе [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
-|[Документация по Entity Framework (EF))](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Предоставляет индекс видео, руководства и дополнительные документацию, которая поможет вам максимально эффективно платформы Entity Framework.|
+|[Документация по Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started)|Предоставляет индекс видео, руководства и дополнительные документацию, которая поможет вам максимально эффективно платформы Entity Framework.|
 |[ASP.NET 5 приложения в новую базу данных](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|В этой статье описывается создание нового приложения ASP.NET 5 с помощью Entity Framework 7.|
 
 ## <a name="see-also"></a>См. также

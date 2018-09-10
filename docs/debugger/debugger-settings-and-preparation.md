@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468303"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282070"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
@@ -46,7 +46,7 @@ ms.locfileid: "39468303"
  Объясняется, как отладить исполняемый объект, который не был создан, как часть проекта Visual Studio.  
   
  [Практическое руководство. Отладка исходного кода Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Описано, как отладить исходный код из Microsoft Code Center Premium в проекте Visual Studio.  
+ В этой статье описывается отладка исходного кода из Microsoft Code Center Premium в проекте Visual Studio.  
   
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)  
  Описаны способы отладки 64-разрядных приложений.  
