@@ -9,12 +9,12 @@ description: Сведения о наборе продуктов ModernRequireme
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21a7d1a9ef072f13d53698a7fc09a83d7041e1bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280485"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289458"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Преимущество MODERNRequirements4TFS в подписках Visual Studio
 
@@ -24,24 +24,24 @@ ms.locfileid: "36280485"
 ## <a name="activation-steps"></a>Процедура активации
 1.  Чтобы воспользоваться преимуществом MODERNRequirementsTFS, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Найдите плитку "MODERNRequirements4TFS" в разделе "Средства" и щелкните ссылку **Получить код** в левом нижнем углу плитки преимущества.
-
-    ![Плитка преимущества ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка преимущества ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
 
 2.  Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
 
 3.  Вы будете перенаправлены на веб-сайт ModernRequirements для создания учетной записи и скачивания программного обеспечения.  На целевой странице укажите запрошенные контактные сведения, а затем нажмите кнопку **Get License Key and Download** (Получить лицензионный ключ и скачать).
-
-    ![Целевая страница ModernRequirements](_img\vs-modernreq\vs-modernreq-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Целевая страница ModernRequirements](_img\vs-modernreq\vs-modernreq-landing.png)
 
 
 4.  Следующая страница содержит лицензионный ключ.  Просмотрите представленные на странице сведения об установке, а затем щелкните синюю ссылку **To download the software please click here** (Для скачивания программного обеспечения щелкните здесь) в середине страницы.
-
-    ![Лицензионный ключ ModernRequirements](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Лицензионный ключ ModernRequirements](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
 
 
 5.  На странице скачивания вы можете установить наборы MODERNRequirements или отдельные модули из набора SMARTOffice4TFS.  Подходящие параметры будут зависеть от ваших предпочтений, а также от установленной версии TFS.  Обязательно ознакомьтесь со сведениями на этой странице, это поможет вам выбрать подходящую версию продуктов.
-
-    ![Параметры скачивания ModernRequirement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![Параметры скачивания ModernRequirement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  В этом примере мы выберем SMARTOffice4TFS.  Отображается диалоговое окно скачивания, предлагающее три варианта для скачивания и сохранения ZIP-файла.  Мы выберем **Сохранить**, чтобы оставить копию в папке скачивания на ПК.
 
@@ -57,7 +57,8 @@ ms.locfileid: "36280485"
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
-    ![Параметры скачивания ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Параметры скачивания ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
 11. Щелкните правой кнопкой мыши в папке и выберите **Извлечь все**.  Укажите расположение для извлечения файлов и нажмите кнопку **Извлечь**.
 

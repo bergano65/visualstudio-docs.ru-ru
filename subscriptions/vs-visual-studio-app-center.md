@@ -9,12 +9,12 @@ description: Сведения о преимуществе Центра прил�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282542"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289490"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -29,16 +29,16 @@ ms.locfileid: "36282542"
 1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы**.
-
-    ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png)
 
 3. Теперь создайте учетную запись.  Вы можете использовать для входа существующие учетные записи Microsoft, Google, GitHub или Facebook либо создать новую учетную запись, указав имя пользователя, адрес электронной почты и пароль.  Щелкните **Create account** (Создать учетную запись), чтобы продолжить.
-
-    ![Центр приложений Visual Studio — создание учетной записи](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Центр приложений Visual Studio — создание учетной записи](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. Больше ничего не требуется.  Просто щелкните **Add new organization** (Добавить новую организацию) или **Add new app** (Добавить новое приложение), чтобы приступить к работе.
-
-    ![Портал Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Портал Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |

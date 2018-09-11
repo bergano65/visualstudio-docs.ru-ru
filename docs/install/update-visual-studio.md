@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139092"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289284"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 
@@ -150,7 +150,6 @@ ms.locfileid: "43139092"
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio 2017](install-visual-studio.md)
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+* [Обновление Visual Studio для Mac](/visualstudio/mac/update)

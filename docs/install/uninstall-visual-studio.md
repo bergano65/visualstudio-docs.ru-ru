@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 592c2404d45619d313106526d051d4e18ffc8888
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138668"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43288987"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
@@ -57,7 +57,6 @@ ms.locfileid: "43138668"
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio](install-visual-studio.md)
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Обновление Visual Studio](update-visual-studio.md)
-* [Удаление Visual Studio](remove-visual-studio.md)
+* [Удаление Visual Studio для Mac](/visualstudio/mac/uninstall)

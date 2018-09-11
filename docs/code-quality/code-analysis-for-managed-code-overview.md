@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279099"
+ms.locfileid: "44320819"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Обзор анализа кода для управляемого кода
 
@@ -75,7 +75,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>Интеграция командного построения
 
-Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index).
+Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>См. также
 
