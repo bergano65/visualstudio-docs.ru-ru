@@ -12,16 +12,16 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e37645f8960aae54907dffeb0bcb88848d9cd63f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510826"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320583"
 ---
 # <a name="version-control-in-visual-studio"></a>Управление версиями в Visual Studio
 
-Системы управления версиями позволяют отслеживать изменения в коде по времени. Когда вы вносите изменения, система управления версиями создает моментальный снимок файлов. Этот снимок навсегда сохраняется в системе, благодаря чему вы можете повторно вызвать его в любое время. Visual Studio предоставляет такие системы управления версиями, как [Git](/vsts/git/index) и [TFVC](/vsts/tfvc/index) (система управления версиями Team Foundation). Чтобы выбрать одну из них, см. статью [Choosing the right version control for your project](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json) (Выбор системы управления версиями для вашего проекта).
+Системы управления версиями позволяют отслеживать изменения в коде по времени. Когда вы вносите изменения, система управления версиями создает моментальный снимок файлов. Этот снимок навсегда сохраняется в системе, благодаря чему вы можете повторно вызвать его в любое время. Visual Studio предоставляет такие системы управления версиями, как [Git](/azure/devops/repos/git/index?view=vsts) и [TFVC](/azure/devops/repos/tfvc/index?view=vsts) (система управления версиями Team Foundation). Чтобы выбрать одну из них, см. статью [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json) (Выбор системы управления версиями для вашего проекта).
 
 ## <a name="git"></a>Git
 Git — наиболее часто используемая система управления версиями на сегодняшний день, которая стремительно становится стандартом в мире систем управления версиями. Это распределенная система управления версиями. Это значит, что репозиторий представляет собой полную локальную копию кода. Полнофункциональные локальные репозитории упрощают работу как в автономном, так и в удаленном режиме. Вы работаете в локальной среде, а затем синхронизируете свою копию репозитория с копией на сервере. Эта парадигма отличается от централизованных систем управления версиями, где клиенты должны синхронизировать код с сервером перед созданием новой версии кода.
@@ -46,7 +46,7 @@ Git — наиболее часто используемая система уп
         </a>
     </li>
     <li>
-        <a href="/vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -64,7 +64,7 @@ Git — наиболее часто используемая система уп
         </a>
     </li>
     <li>
-        <a href="/vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -89,7 +89,7 @@ Git — наиболее часто используемая система уп
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/vsts/tfvc/overview">
+        <a href="/azure/devops/repos/tfvc/overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -107,7 +107,7 @@ Git — наиболее часто используемая система уп
         </a>
     </li>
     <li>
-        <a href="/vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +125,7 @@ Git — наиболее часто используемая система уп
         </a>
     </li>
    <li>
-        <a href="/vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
