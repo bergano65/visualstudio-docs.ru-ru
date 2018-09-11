@@ -9,12 +9,12 @@ description: Сведения о преимуществе обучения Opsgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380314"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289473"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Преимущество Opsgility в подписках Visual Studio
 
@@ -26,17 +26,17 @@ ms.locfileid: "39380314"
 2.  Найдите плитку "Opsgility" в разделе "Средства" на странице "Преимущества" и щелкните ссылку **Активировать** в нижней части плитки преимущества.
 
 3.  Чтобы воспользоваться преимуществом обучения Opsgility, выберите ссылку **Get Code** (Получить код) в нижней части плитки преимущества.   Вы увидите уведомление о том, что код купона успешно получен.  Щелкните **Активировать**, чтобы продолжить.
-
-    ![Плитка преимущества Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка преимущества Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Вы будете перенаправлены на целевую страницу [интерактивного обучения Opsgility для Visual Studio Enterprise](https://www.opsgility.com/vse).  (Вам может быть предложено начать сеанс чата со специалистом службы поддержки.  Если вы не хотите общаться с ним, просто сверните это окно.)  Заполните необходимые контактные данные и нажмите кнопку **Зарегистрировать**.
-
-    ![Целевая страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Целевая страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  Вот и все.  Теперь вы готовы начать обучение.  Чтобы помочь вам на начальном этапе, в левой части страницы приведен список предлагаемых учебных курсов.  Желаем удачи!
-
-    ![Домашняя страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Домашняя страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |

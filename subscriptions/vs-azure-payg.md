@@ -9,34 +9,34 @@ description: Сведения о настройке учетной записи 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14e9e13a57ffd5e67eba00f34b661e48410c517a
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31195326"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289450"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Настройка подписки Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.
 
 1.  Чтобы воспользоваться преимуществом подписки Azure с оплатой по мере использования, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните ссылку **Активировать** в нижней части плитки преимущества.   
-
-    ![Плитка Azure PAYG](_img\vs-azure-payg\vs-azure-payg-tile.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Плитка Azure PAYG](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 
 2.  Если вы уже активировали учетную запись Azure в рамках использования преимуществ подписки (например, если вы располагаете подпиской Enterprise и активировали ежемесячную сумму на счете Azure в размере 150 долларов США), перейдите к шагу 5.
 
 3.  На странице регистрации Microsoft Azure вы можете настроить предложение для разработки и тестирования с оплатой по мере использования (PAYG) или повысить уровень до предложения Visual Studio Enterprise.  Щелкните **Продолжать использовать текущее предложение (Тестирование и разработка с оплатой по мере использования)**, если вы не хотите выполнять повышать уровень. 
-
-    ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
 
 4.  Чтобы подтвердить свою личность, введите номер телефона и нажмите кнопку "Отправить текстовое сообщение" или "Позвонить мне".  Введите полученный код.  Нажмите кнопку **Проверить код**. 
-
-    ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
 
 
 5.  После этого укажите сведения о выставлении счетов для своей учетной записи и нажмите кнопку **Далее**.  (С этой кредитной карты будет списываться плата за все ваши покупки в Azure.)  
-
-    ![Оплата Azure PAYG](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Оплата Azure PAYG](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
         
 
 6.  В разделе "Соглашение" установите флажок, чтобы принять соглашение о подписке, условия предложения и заявление о конфиденциальности, а затем нажмите кнопку **Приобрести**. 
@@ -44,5 +44,5 @@ ms.locfileid: "31195326"
 7.  На странице **Добро пожаловать в Microsoft Azure** вы можете приобрести план поддержки или приступить к работе с подпиской.   
 
 8.  Если вы решили начать работу с подпиской, открывается [портал Microsoft Azure](https://portal.azure.com). Если вы зашли на него впервые, вам будет предложен краткий обзор некоторых функций.  После ознакомления с обзором или отказа от него вы увидите панель мониторинга.  Теперь вы готовы начать работу с Azure.
-  
-    ![Панель мониторинга Azure PAYG](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Панель мониторинга Azure PAYG](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 

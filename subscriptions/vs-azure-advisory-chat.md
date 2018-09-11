@@ -9,12 +9,12 @@ description: Узнайте, как воспользоваться преиму�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280807"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289521"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -25,16 +25,16 @@ ms.locfileid: "36280807"
 Использовать чат с Помощником по Azure просто.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку чата с Помощником по Azure в разделе поддержки и щелкните **Начать чат**.
-
-    ![Плитка Помощника по Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка Помощника по Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Вы увидите уведомление о том, что служба пока доступна только на английском языке (кроме вопросов по учетным записям, выставлению счетов и подпискам).  Нажмите кнопку **Продолжить**.
-
-    ![Чат с Помощником по Azure: отказ от ответственности](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Чат с Помощником по Azure: отказ от ответственности](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. Больше ничего не требуется.  Откроется окно чата, где вы увидите текущее состояние и место в очереди.  Вам ответит первый освободившийся эксперт.
-
-    ![Чат с Помощником по Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Чат с Помощником по Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Право на участие
 

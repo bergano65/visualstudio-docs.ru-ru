@@ -9,18 +9,18 @@ description: Сведения о преимуществе приоритетно
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567159"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289437"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Приоритетная поддержка в подписках Visual Studio
 
 Преимущество приоритетной поддержки позволяет получить доступ к нескольким форумам сообщества, где вы сможете найти ответ в публикациях или задать новые вопросы.  Если в течение двух дней сообщество не даст ответа на ваш вопрос, его предоставит служба поддержки корпорации Майкрософт.
 
-Некоторые подписки Visual Studio позволяют подписчикам получить право на приоритетную поддержку на большом количестве форумов по самым разнообразным темам.
+Некоторые подписки Visual Studio позволяют подписчикам получить право на приоритетную поддержку на большом количестве форумов по самым разнообразным темам.  Нажмите на любую из перечисленных ниже ссылок, чтобы перейти на соответствующий форум.  
 
 ## <a name="included-forums"></a>Включенные форумы
 

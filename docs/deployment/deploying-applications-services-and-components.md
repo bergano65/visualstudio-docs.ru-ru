@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279119"
+ms.locfileid: "44320557"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство: Общие сведения о развертывании в Visual Studio
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279119"
 
     ![Выбор публикации](../deployment/media/quickstart-publish.png)
 
-- **Среда выполнения Visual C++**: можно развернуть с помощью локальное развертывание или статическое связывание среда выполнения Visual C++. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Среда выполнения Visual C++**: можно развернуть с помощью локальное развертывание или статическое связывание среда выполнения Visual C++. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Публикация в Azure
 
@@ -76,7 +76,7 @@ ms.locfileid: "44279119"
 
     Можно также развернуть приложения ASP.NET и службы в ряд других способов. Дополнительные сведения см. в разделе [развертывание ASP.NET веб-приложений и служб](http://www.asp.net/aspnet/overview/deployment).
 
-- **Среда выполнения Visual C++**: можно развернуть среды выполнения Visual C++, с помощью центра развертывания. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Среда выполнения Visual C++**: можно развернуть среды выполнения Visual C++, с помощью центра развертывания. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows desktop** публикацией классического приложения Windows для веб-сервера или общей сетевой папки, используя технологию ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в разделе [развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) и [развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ ms.locfileid: "44279119"
 
 ## <a name="devops-deployment"></a>Развертывание DevOps
 
-В среде группы можно использовать конвейеры Azure включить непрерывное развертывание приложения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index) и [развертывание в Azure](/azure/devops/deploy-azure/index).
+В среде группы можно использовать конвейеры Azure включить непрерывное развертывание приложения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index?view=vsts) и [развертывание в Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Развертывания для других типов приложений
 
@@ -122,7 +122,7 @@ ms.locfileid: "44279119"
 | --- | --- | --- |
 | **Приложения Office** | Вы можете опубликовать надстройку для Office в Visual Studio. | [Развертывание и публикация надстройки Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Службы WCF или OData**  | Другие приложения могут использовать службы WCF RIA, развертываемые на веб-сервере. | [Разработка и развертывание служб WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch больше не поддерживается в Visual Studio 2017, но по-прежнему могут развертываться из Visual Studio 2015 и более ранних версий. | [Развертывание приложений LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch больше не поддерживается в Visual Studio 2017, но по-прежнему могут развертываться из Visual Studio 2015 и более ранних версий. | [Развертывание приложений LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Следующие шаги
 

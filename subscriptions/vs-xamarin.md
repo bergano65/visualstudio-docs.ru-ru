@@ -9,12 +9,12 @@ description: Сведения о преимуществе Xamarin University Tra
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281148"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289404"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Преимущество обучения Xamarin University в подписках Visual Studio
 
@@ -28,12 +28,12 @@ ms.locfileid: "36281148"
 ## <a name="activation-steps"></a>Процедура активации
 1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Найдите плитку преимущества Xamarin University Training (Обучение Xamarin University) в разделе профессионального развития и щелкните ссылку **Активировать** в левом нижнем ее углу.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Плитка для преимущества обучения Xamarin University](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  Вы перейдете на веб-страницу Xamarin University Mobile Training for Microsoft Visual Studio (Мобильное обучение Xamarin University для Microsoft Visual Studio).  Щелкните **Activate My Subscription Now** (Активировать подписку).
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Activate My Subscription Now](_img/vs-xamarin/vs-xamarin-activate.png) (Активировать подписку)
 
     > [!NOTE]
     > В зависимости от разрешения и уровня масштабирования экрана, возможно потребуется прокрутить вниз, чтобы увидеть кнопку **Activate My Subscription Now** (Активировать подписку).
@@ -47,24 +47,24 @@ ms.locfileid: "36281148"
     > 5. Активируйте преимущество обучения Xamarin University еще раз.
 
 4.  После этого отобразится страница входа с уведомлением о переходе Xamarin на проверку подлинности Microsoft.  Щелкните **Connect with Microsoft** (Связаться с корпорацией Майкрософт).
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Connect with Microsoft](_img/vs-xamarin/vs-xamarin-connect.png) (Связаться с корпорацией Майкрософт)
 
 5. Далее появится запрос на предоставление Xamarin University прав на вход и получение доступа к адресу электронной почты и базовому профилю.  Нажмите кнопку **Да**, чтобы продолжить. При желании разрешения приложения можно изменить позже.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Утверждение доступа](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Чтобы воспользоваться преимуществом Xamarin University, нужно войти в систему. Поэтому если щелкнуть **Нет**, вы вернетесь на предыдущую страницу и не сможете перейти к обучению.
 
 
 6. После создания учетной записи вы увидите приветственное сообщение.  Щелкните **Начать обучение**.
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Приветственное сообщение](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. Вот и все!  Вы перейдете на портал Xamarin University и сможете приступить к обучению.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Портал Xamarin University](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284141"
+ms.locfileid: "44321259"
 ---
 # <a name="using-the-code-metrics-results-window"></a>В окне результатов метрики кода
 
@@ -102,9 +102,9 @@ ms.locfileid: "44284141"
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>Создание рабочего элемента, в зависимости от результатов метрики кода
 
-Можно создать [доски Azure](/azure/devops/boards/index) приводит рабочий элемент, основанный на **Результаты метрик кода** окна. При создании рабочего элемента Visual Studio автоматически вводит название в **Title** поля и данные метрик кода в разделе **журнал** вкладки.
+Можно создать [доски Azure](/azure/devops/boards/index?view=vsts) приводит рабочий элемент, основанный на **Результаты метрик кода** окна. При создании рабочего элемента Visual Studio автоматически вводит название в **Title** поля и данные метрик кода в разделе **журнал** вкладки.
 
-Дополнительные сведения о Azure доски рабочие элементы, см. в разделе [рабочие элементы](/azure/devops/boards/work-items/index).
+Дополнительные сведения о Azure доски рабочие элементы, см. в разделе [рабочие элементы](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Чтобы создать рабочий элемент, на основе результата
 

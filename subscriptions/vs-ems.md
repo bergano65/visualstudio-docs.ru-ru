@@ -9,16 +9,19 @@ description: Сведения о преимуществе Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281655"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289534"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) в подписках Visual Studio
 
 Годовые облачные и стандартные подписки Visual Studio Enterprise включают в себя Enterprise Mobility + Security (EMS).  Вы можете защитить свои удостоверения, устройства, приложения и данные и управлять ими с помощью EMS — Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics и Microsoft Cloud App Security.
+
+> [!NOTE]
+> На данный момент при покупке подписки на несколько лет по программе корпоративного лицензирования преимущество EMS предоставляется только в первый год.  
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -27,24 +30,24 @@ ms.locfileid: "36281655"
 1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Найдите плитку "Enterprise Mobility + Security" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
-
-    ![Плитка преимущества EMS](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка преимущества EMS](_img\vs-ems\vs-ems-tile.png)
 
 2.  На странице Enterprise Mobility + Security E5 вы можете войти с использованием существующей подписки или создать ее.  Чтобы создать подписку, введите требуемые данные и нажмите кнопку **Далее**.
-
-    ![Создание учетной записи для преимущества EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Создание учетной записи для преимущества EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. Создайте идентификатор пользователя и пароль.  Щелкните **Создать учетную запись** для продолжения.
-
-    ![Создание идентификатора пользователя для преимущества EMS](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Создание идентификатора пользователя для преимущества EMS](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  Затем укажите номер телефона, чтобы получить код подтверждения по телефону или в SMS.  Введите код и нажмите кнопку **Далее**.
+    > [!div class="mx-imgBorder"]
+    > ![Проверка преимущества EMS](_img\vs-ems\vs-ems-robot-cropped.png)
 
-    ![Проверка преимущества EMS](_img\vs-ems\vs-ems-robot-cropped.png)
-
-5.  Следующая страница содержит вашу страницу входа и идентификатор пользователя.  Сохраните эти сведения для дальнейшего использования.  Щелкните **Все готово**.
-
-    ![Учетная запись для преимущества EMS создана](_img\vs-ems\vs-ems-save-info-cropped.png)
+5.  Следующая страница содержит вашу страницу входа и идентификатор пользователя.  Сохраните эти сведения для дальнейшего использования.  Щелкните **You’re ready to go…** (Все готово)
+    > [!div class="mx-imgBorder"]
+    > ![Учетная запись для преимущества EMS создана](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  EMS требуется доступ к [порталу Microsoft Azure](https://azure.microsoft.com).  Выполните три действия, указанные на целевой странице EMS, чтобы активировать подписку Azure, добавить пользователей и настроить EMS.
 

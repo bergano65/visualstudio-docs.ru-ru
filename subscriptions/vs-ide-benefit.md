@@ -9,12 +9,12 @@ description: Сведения о том, как скачать и установ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282630"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289484"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Использование преимущества Visual Studio 2017
 
@@ -28,34 +28,36 @@ ms.locfileid: "36282630"
 Скачивание интегрированной среды разработки:
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку "Visual Studio IDE" в разделе "Средства" и щелкните ссылку **Получить код** в левой нижней части плитки преимущества.  Вы также можете скачать ее со страницы [Загрузки](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
-
-    ![Плитка Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  Вы будете перенаправлены на страницу "Загрузить результаты" для Visual Studio Enterprise, где сможете загрузить интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
 4.  На вкладке "Сведения" на странице "Скачать результаты" сделайте следующее:
     - Выберите нужную архитектуру (x86, x64).
     - Выберите предпочитаемый язык.
 5.  Нажмите синюю кнопку "Скачать".
-    ![Сведения о скачивании Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
+    > [!div class="mx-imgBorder"]
+    > ![Сведения о скачивании Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  Чтобы выполнить установку, щелкните **Выполнить**.
 7.  В диалоговом окне "Контроль учетных записей пользователей" щелкните **Да**.
 8.  Нажмите кнопку **Продолжить**, чтобы принять условия лицензионного соглашения.
 9.  При запуске установщика выберите нужные рабочие нагрузки, отдельные компоненты и языковые пакеты на соответствующих вкладках.
-    ![Настройка Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Настройка Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
 10.  Нажмите кнопку **Установить**.
 
 11. По завершении установки вы сможете изменить ее или запустить Visual Studio.  Щелкните **Запустить**, чтобы начать работу.
-
-    ![Запуск Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Запуск Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
 12. Войдите в учетную запись, связанную с вашей подпиской Visual Studio.
 
 13. Выберите предпочитаемую тему и щелкните **Запустить Visual Studio**.
 
 14. Открывается начальная страница.  Теперь вы готовы начать работу с Visual Studio.
-
-    ![Начало работы с Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Начало работы с Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |

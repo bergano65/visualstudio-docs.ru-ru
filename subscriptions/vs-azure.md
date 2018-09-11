@@ -9,12 +9,12 @@ description: Сведения о том, как активировать пре�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379740"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289413"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 
@@ -53,21 +53,22 @@ ms.locfileid: "39379740"
 1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Найдите плитку "Azure" в разделе "Средства" на странице "Преимущества" и щелкните ссылку **Активировать** в нижней части плитки преимущества.
-
-    ![Плитка Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Укажите сведения, необходимые для создания подписки на Azure, установите флажок, чтобы принять условия использования, а нажмите кнопку **Регистрация**:
-
-    ![Регистрация в Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Регистрация в Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Когда учетная запись будет готова, вы можете выбрать план поддержки Azure (приобретается отдельно) или приступить к использованию подписки Azure.
-
-    ![Подготовка Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Подготовка Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Загрузится панель мониторинга Azure. При первом использовании можно просмотреть обзор.  Он состоит из ряда экранных подсказок по выполнению различных задач и поиску важной информации.  После завершения или закрытия обзора откроется панель мониторинга Azure.
 
 6.  Добавьте [портал Azure](https://portal.azure.com) в закладки для быстрого доступа в будущем.
-![Панель мониторинга Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Панель мониторинга Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>часто задаваемые вопросы
 

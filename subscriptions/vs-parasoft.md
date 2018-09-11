@@ -9,12 +9,12 @@ description: Сведения об активации подписки Parasoft 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ce10ed292644179f348b2599898b04ae2679c9d6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280563"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289565"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -26,12 +26,12 @@ ms.locfileid: "36280563"
 1.  Чтобы воспользоваться преимуществом Parasoft Virtualize/SOAtest Professional Desktop, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Найдите плитку "Parasoft" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки преимущества.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
-
-    ![Плитка преимущества Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка преимущества Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
 
 2.  Вы будете перенаправлены на веб-сайт Parasoft, где вы создадите учетную запись.  Просто укажите контактные данные и нажмите кнопку **Отправить**.
-
-    ![Создание учетной записи для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Создание учетной записи для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Создав учетную запись, вы увидите уведомление о том, что вам отправлено сообщение электронной почты с инструкциями по скачиванию.  (Если этого сообщения нет в папке "Входящие", не забудьте проверить папки нежелательной почты.)
@@ -39,8 +39,8 @@ ms.locfileid: "36280563"
 4.  Откройте это сообщение электронной почты и скопируйте **Код активации** в буфер обмена.
 
 5.  Щелкните ссылку, соответствующую используемой вами операционной системе.
-
-    ![Приветственное сообщение для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Приветственное сообщение для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-email.png)
 
 6.  В зависимости от используемого браузера вы можете по-разному увидеть диалоговые окна, предлагающие запустить установщик.  В Internet Explorer, например, вы увидите список последних скачиваний, в начале которого будет указан parasoft_soavirt_9.10.2_win32_x86_64.exe. Чтобы запустить установщик, нажмите кнопку **Выполнить**.
 
@@ -49,8 +49,8 @@ ms.locfileid: "36280563"
 8.  Выберите предпочтительный язык и нажмите кнопку **ОК**.
 
 9.  Запускается мастер установки Parasoft SOAtest и Virtualize.  Нажмите кнопку **Далее**.
-
-    ![Начало установки преимущества Parasoft](_img\vs-parasoft\vs-parasoft-start-install.png)
+    > [!div class="mx-imgBorder"]
+    >![Начало установки преимущества Parasoft](_img\vs-parasoft\vs-parasoft-start-install.png)
 
 10. Нажмите кнопку **Я принимаю условия соглашения** и затем кнопку **Далее**.
 
@@ -61,14 +61,14 @@ ms.locfileid: "36280563"
 13. Укажите, куда нужно поместить ярлык для приложения, и нажмите кнопку **Далее**.
 
 14. Для некоторых функциональных тестов на сайтах HTTPS требуется сертификат корневого центра сертификации веб-сайта SOAtest.  Выберите, следует ли устанавливать сертификат корневого ЦС, и нажмите кнопку **Далее**.
-
-    ![Сертификат корневого ЦС для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
+    > [!div class="mx-imgBorder"]
+    > ![Сертификат корневого ЦС для преимущества Parasoft](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
 15. Выберите, следует ли создавать значки рабочего стола и быстрого запуска во время установки, и нажмите кнопку **Далее**.
 
 16. Подтвердите выбранные параметры и нажмите кнопку **Установить** для начала установки программного обеспечения.
-
-    ![Готовность к установке преимущества Parasoft](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![Готовность к установке преимущества Parasoft](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
 17. После завершения программы установки нажмите кнопку **Готово**. Теперь вы готовы к началу работы с преимуществом Parasoft Virtualize/SOAtest Professional Desktop.
 
