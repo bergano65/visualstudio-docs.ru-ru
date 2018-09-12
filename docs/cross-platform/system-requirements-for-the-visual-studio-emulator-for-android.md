@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251553"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279405"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
 Эмулятор Visual Studio для Android выполняется в виде виртуальной машины в Hyper-V, технологии виртуализации для Windows 8 и более поздних версий. Чтобы запустить эмулятор, компьютер должен удовлетворять требованиям для запуска Hyper-V, как описано в этом разделе.  
@@ -117,7 +117,7 @@ ms.locfileid: "39251553"
   
 |Требование|Проверка и включение этого необходимого компонента|  
 |-----------------|----------------------------------------------|  
-|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|  
+|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|  
 |Технология Hyper-V должна быть запущена.|Дополнительные сведения об управлении службами см. в следующих разделах.<br /><br /> -   [Запуск, остановка, приостановка, возобновление работы или перезапуск службы](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Настройка способа запуска службы](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  Необходимо быть членом локальной группы администраторов Hyper-V.  

@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание проекта Python с помощью Cookiecutter
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python с помощью шаблона Cookiecutter.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7df6010043d1a88e08494d53ccd9eeb152899d28
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8e4f2fcf8422c0fa11e1f43723d4337804720050
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510388"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995895"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта на основе шаблона Cookiecutter
 

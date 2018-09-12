@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008412"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280042"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -255,7 +255,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ### <a name="intellisensejs-extensions"></a>Расширения `.intellisense.js`
 
-Ранее вы могли создавать [расширения IntelliSense](https://msdn.microsoft.com/en-us/library/hh874692.aspx), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
+Ранее вы могли создавать [расширения IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
 Разрабатывать эти расширения было довольно сложно, а устанавливать их и ссылаться на них — неудобно, поэтому новая языковая служба больше не поддерживает эти файлы.
 В качестве более простой альтернативы вы можете написать файл определения TypeScript, который обеспечит все те же возможности для IntelliSense, которые раньше предлагались расширениями `.intellisense.js`.
 Дополнительные сведения о создании файлов объявлений (`.d.ts`) см. [здесь](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

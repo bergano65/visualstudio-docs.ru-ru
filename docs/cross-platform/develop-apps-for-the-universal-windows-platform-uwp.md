@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251545"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280809"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 Благодаря универсальной платформе Windows и единому ядру Windows одно и то же приложение можно запускать на любом устройстве Windows 10 — от телефонов и до настольных компьютеров. Используйте Visual Studio со средствами разработки универсальных приложений Windows для создания этих приложений.
@@ -47,7 +47,7 @@ ms.locfileid: "39251545"
 После установки программного обеспечения нужно разрешить разработку на устройстве Windows 10. См. раздел [Разрешение разработки на устройстве](/windows/uwp/get-started/enable-your-device-for-development). (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)
 
 ## <a name="universal-windows-apps"></a>Универсальные приложения Windows
-Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы создать приложение универсальной платформы Windows для устройств Windows 10. Ознакомьтесь со статьей о [создании первого приложения](/windows/uwp/get-started/your-first-app) или видеороликом с [обзором инструментов для Windows 10](http://channel9.msdn.com/Series/ConnectOn-Demand/229).
+Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы создать приложение универсальной платформы Windows для устройств Windows 10. Ознакомьтесь со статьей о [создании первого приложения](/windows/uwp/get-started/your-first-app) или видеороликом с [обзором инструментов для Windows 10](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 
 При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью Visual Studio 2015, вам потребуется перенести их, чтобы использовать последнюю версию универсальной платформы Windows. См. раздел [Перенос приложения из среды выполнения Windows 8.x в UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
