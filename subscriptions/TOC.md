@@ -17,7 +17,7 @@
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps Services](vs-azure-devops.md)
 #### [Деньги на счете в Azure](vs-azure.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)

@@ -1,89 +1,96 @@
+items:
 - name: Управление версиями
   href: /visualstudio/version-control/index
 - name: Обзор
   items:
-    - name: Сведения о Git
-      href: /vsts/git/tutorial/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Выбор правильной системы управления версиями
-      href: /vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Сведения о Git
+    href: /azure/devops/repos/git/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Выбор правильной системы управления версиями
+    href: /azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Краткие руководства
   items:
-    - name: Создание репозитория Git (веб-портал)
-      href: /vsts/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Создание репозитория Git (CLI)
-      href: /vsts/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Совместное использование кода в Git
-      href: /vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Импорт репозитория в репозиторий Git VSTS
-      href: /vsts/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Совместное использование кода в TFVC
-      href: /vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Создание репозитория Git (веб-портал)
+    href: /azure/devops/repos/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Создание репозитория Git (CLI)
+    href: /azure/devops/repos/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Совместное использование кода в Git
+    href: /azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Импорт репозитория в Azure Repos
+    href: /azure/devops/repos/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Совместное использование кода в TFVC
+    href: /azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Учебники
   items:
-    - name: Git
-      href: /vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-      items:
-        - name: Создание репозитория
-          href: /vsts/git/tutorial/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Клонирование существующего репозитория
-          href: /vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Сохранение работы с помощью фиксаций
-          href: /vsts/git/tutorial/commits?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Создание рабочих элементов в ветвях
-          href: /vsts/git/tutorial/branches?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Совместное использование кода с помощью команды push
-          href: /vsts/git/tutorial/pushing?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Обновление кода с помощью команд fetch и pull
-          href: /vsts/git/tutorial/pulling?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Проверка кода с помощью запросов на вытягивание
-          href: /vsts/git/tutorial/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Применение изменений путем их перемещения из одной ветви в другую
-          href: /vsts/git/tutorial/rebase?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Копирование изменений путем их отбора
-          href: /vsts/git/tutorial/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Разрешение конфликтов слияния
-          href: /vsts/git/tutorial/merging?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Отмена изменений
-          href: /vsts/git/tutorial/undo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Пропуск файлов
-          href: /vsts/git/tutorial/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Просмотр журналов
-          href: /vsts/git/tutorial/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: TFVC
-      items:
-        - name: Пошаговое руководство по исправлению ошибок и проверке кода
-          href: /vsts/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-        - name: Проверка кода в Visual Studio
-          href: /vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Git
+    href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    items:
+    - name: Создание репозитория
+      href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Клонирование существующего репозитория
+      href: /azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Сохранение работы с помощью фиксаций
+      href: /azure/devops/repos/git/commits?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Создание рабочих элементов в ветвях
+      href: /azure/devops/repos/git/branches?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Совместное использование кода с помощью команды push
+      href: /azure/devops/repos/git/pushing?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Обновление кода с помощью команд fetch и pull
+      href: /azure/devops/repos/git/pulling?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Проверка кода с помощью запросов на вытягивание
+      href: /azure/devops/repos/git/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Применение изменений путем их перемещения из одной ветви в другую
+      href: /azure/devops/repos/git/rebase?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Копирование изменений путем их отбора
+      href: /azure/devops/repos/git/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Разрешение конфликтов слияния
+      href: /azure/devops/repos/git/merging?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Отмена изменений
+      href: /azure/devops/repos/git/undo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Пропуск файлов
+      href: /azure/devops/repos/git/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Просмотр журналов
+      href: /azure/devops/repos/git/review-history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: TFVC
+    items:
+    - name: Пошаговое руководство по исправлению ошибок и проверке кода
+      href: /azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Проверка кода в Visual Studio
+      href: /azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Основные понятия
   items:
-    - name: Журналы в Git
-      href: /vsts/git/concepts/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Упрощение журналов
-      href: /vsts/git/concepts/history-simplification?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Организация ветвей
-      href: /vsts/git/concepts/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Вилки
-      href: /vsts/git/concepts/forks?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Проверка подлинности
-      href: /vsts/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Сведения о датах в Git
-      href: /vsts/git/concepts/git-dates?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Сведения об именах в Git
-      href: /vsts/git/concepts/git-names?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Журналы в Git
+    href: /azure/devops/repos/git/history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Упрощение журналов
+    href: /azure/devops/articles/git-log-history-simplification?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Организация ветвей
+    href: /azure/devops/repos/git/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Вилки
+    href: /azure/devops/repos/git/forks?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Проверка подлинности
+    href: /azure/devops/repos/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Сведения о датах в Git
+    href: /azure/devops/repos/git/git-dates?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Сведения об именах в Git
+    href: /azure/devops/repos/git/git-names?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Практические руководства
   items:
-    - name: Аутентификация с помощью SSH
-      href: /vsts/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Аутентификация с помощью диспетчера учетных данных Git
-      href: /vsts/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Аутентификация с помощью SSH
+    href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Аутентификация с помощью диспетчера учетных данных Git
+    href: /azure/devops/repos/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Ссылка
   items:
-    - name: Справочник по командам
-      href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-    - name: Вопросы и ответы
-      href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+  - name: Справочник по командам
+    href: /azure/devops/repos/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+  - name: Вопросы и ответы
+    href: /azure/devops/repos/git/howto?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: Ресурсы
   items:
-    - name: Что такое Git?
-      href: /azure/devops/git/what-is-git
+  - name: Что такое Git?
+    href: /azure/devops/repos/get-started/what-is-repos#git
+ms.openlocfilehash: 9b2a5968cba8e1aefa09d7e10b9a5c0e2632f96f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279418"
