@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572349"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669333"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Диагностика проблем со средствами оценки производительности
 При использовании средств профилирования может возникнуть одна из следующих проблем:  
   
--   [Средства профилирования не собирают данные](#NoDataCollected)  
+-   [Средства профилирования не собирают данные](#no-data-is-collected-by-the-profiling-tools)  
   
--   [В представлениях и отчетах по производительности вместо имен функций отображаются номера](#NoSymbols)  
+-   [В представлениях и отчетах по производительности вместо имен функций отображаются номера](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Средства профилирования не собирают данные  
  После профилирования приложения файл данных профилирования (*VSP*) не создается, и появляется следующее предупреждение в окне **вывода** или в командном окне:  

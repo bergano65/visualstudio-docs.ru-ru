@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573171"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669248"
 ---
 # <a name="threads-view-parallel-performance"></a>Представление "Потоки" (параллельная производительность)
 **Представление потоков** — это самое полное и функциональное представлением визуализатора параллелизма. Выберите **Анализ** > **Визуализатор параллелизма**, чтобы запустить визуализатор. С помощью этого представления можно определить, выполняются ли потоки или они блокированы в результате синхронизации, ввода-вывода или по какой-либо другой причине.  

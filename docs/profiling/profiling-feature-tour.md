@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626626"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320843"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Краткое руководство. Первое знакомство со средствами профилирования
 
@@ -156,7 +156,7 @@ Visual Studio предоставляет широкий набор средст�
 |Средство производительности|Классические приложения Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Использование памяти](../profiling/memory-usage.md)|да|да|да| 
-|[Использование ЦП](../profiling/cpu-usage.md)|да (см. примечание)|да|да (см. примечание)|
+|[Использование ЦП](../profiling/cpu-usage.md)|да|да|да|
 |[Использование GPU](../debugger/gpu-usage.md)|да|да|нет| 
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|Нет|
 |[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|

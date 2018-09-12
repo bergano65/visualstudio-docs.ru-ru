@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567217"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384309"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -176,7 +176,7 @@ $selected$ is a great color. I love $selected$.
 
 |Дочерний элемент|Описание:|
 |-------------------|-----------------|
-|[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Необязательный элемент. Родительский элемент для всех данных фрагмента кода. Элемент `CodeSnippet` может содержать любое число элементов `CodeSnippets`, включая ноль.|
+|[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Необязательный элемент. Родительский элемент для всех данных фрагмента кода. Элемент `CodeSnippet` может содержать любое число элементов `CodeSnippets`, включая ноль.|
 
 ## <a name="declarations-element"></a>Элемент Declarations
 
@@ -196,7 +196,7 @@ $selected$ is a great color. I love $selected$.
 
 |Родительский элемент|Описание:|
 |--------------------|-----------------|
-|[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|
+|[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|
 
 ## <a name="default-element"></a>Элемент Default
 
@@ -279,7 +279,7 @@ $selected$ is a great color. I love $selected$.
 
 |Родительский элемент|Описание:|
 |--------------------|-----------------|
-|[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Родительский элемент для всех данных фрагмента кода.|
+|[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Родительский элемент для всех данных фрагмента кода.|
 
 ## <a name="helpurl-element"></a>Элемент HelpUrl
 
@@ -422,7 +422,7 @@ $selected$ is a great color. I love $selected$.
 
 |Родительский элемент|Описание:|
 |--------------------|-----------------|
-|[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations)|Содержит литералы и объекты фрагмента кода, доступные для редактирования.|
+|[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Содержит литералы и объекты фрагмента кода, доступные для редактирования.|
 
 ## <a name="namespace-element"></a>Элемент Namespace
 
@@ -491,7 +491,7 @@ $selected$ is a great color. I love $selected$.
 
 |Родительский элемент|Описание:|
 |--------------------|-----------------|
-|[Элемент References](../ide/code-snippets-schema-reference.md#references)|Группирующий элемент для элементов `Reference`.|
+|[Элемент References](../ide/code-snippets-schema-reference.md#references-element)|Группирующий элемент для элементов `Reference`.|
 
 ## <a name="references-element"></a>Элемент References
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078320"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280208"
 ---
 # <a name="work-with-shaders"></a>Работа с шейдерами
 
@@ -33,7 +33,7 @@ ms.locfileid: "39078320"
 
 Конструктор шейдеров сохраняет шейдеры в формате языка шейдеров ориентированных графов (DGSL). Этот XML-формат в разработан на основе языка разметки направленных графов (DGML). Шейдеры в формате DGSL можно применять в редакторе моделей непосредственно к трехмерным моделям. Но прежде чем использовать шейдер в приложении, его нужно экспортировать в формат, совместимый с DirectX (например, HLSL).
 
-Так как DGSL совместим с DGML, для анализа созданных шейдеров DGSL можно использовать любые средства, разработанные для анализа документов DGML. Дополнительные сведения о языке DGML см. в статье [Understanding Directed Graph Markup Language (DGML)](http://msdn.microsoft.com/library/ee842619.aspx) (Основные сведения о языке разметки направленных графов (DGML)).
+Так как DGSL совместим с DGML, для анализа созданных шейдеров DGSL можно использовать любые средства, разработанные для анализа документов DGML. Дополнительные сведения о языке DGML см. в статье [Understanding Directed Graph Markup Language (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md) (Основные сведения о языке разметки направленных графов (DGML)).
 
 ## <a name="related-topics"></a>См. также
 

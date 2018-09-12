@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380501"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320960"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Краткое руководство: создание проекта нагрузочного тестирования
 
@@ -59,7 +59,7 @@ ms.locfileid: "39380501"
 
    Откроется **мастер тестовой нагрузки**.
 
-1. Выберите параметр **Локальный нагрузочный тест** и нажмите кнопку **Далее**. Дополнительные сведения об облачном нагрузочном тестировании можно найти в [этой статье](/vsts/load-test/get-started-simple-cloud-load-test).
+1. Выберите параметр **Локальный нагрузочный тест** и нажмите кнопку **Далее**. Дополнительные сведения об облачном нагрузочном тестировании можно найти в [этой статье](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
    ![Первая страница мастера тестовой нагрузки](media/load-test-wizard-page-1.png)
 

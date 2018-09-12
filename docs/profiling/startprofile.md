@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669365"
 ---
 # <a name="startprofile"></a>StartProfile
 Функция `StartProfile` устанавливает для счетчика значение 1 (вкл) для указанного уровня профилирования.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Если состояние начала и остановки, а также состояние приостановки и возобновления включены, состояние профилирования для данного уровня включено. Для профилируемого потока состояния глобального уровня, уровня процесса и потока должны иметь значение ON.  
   
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Сведения о функции  
- Заголовок: объявлен в файле VSPerf.h  
+ Заголовок: объявлен в файле *VSPerf.h*  
   
- Библиотека импорта: VSPerf.lib  
+ Библиотека импорта: *VSPerf.lib*  
   
 ## <a name="example"></a>Пример  
  В приведенном ниже примере демонстрируется вызов функции StartProfile.  

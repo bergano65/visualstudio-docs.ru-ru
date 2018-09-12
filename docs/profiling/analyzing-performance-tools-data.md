@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690856"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669605"
 ---
 # <a name="analyze-performance-tools-data"></a>Анализ данных из средств оценки производительности
 Отчеты о производительности средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют просматривать и анализировать проблемы производительности приложения. В данном разделе представлены общие сведения о представлениях и отчетах производительности, которые можно использовать для изучения данных о производительности.  
@@ -44,4 +44,4 @@ ms.locfileid: "34690856"
 ## <a name="see-also"></a>См. также  
  [Обозреватель производительности](../profiling/performance-explorer.md)  
  [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
