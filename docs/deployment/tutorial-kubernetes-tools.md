@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138947"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701713"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы с Visual Studio Tools для Kubernetes
 
@@ -38,7 +38,7 @@ ms.locfileid: "43138947"
 
     1.  Helm CLI установлена на рабочей станции разработки. Дополнительные сведения см. в разделе [установке Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm, настроенным для кластера AKS. Дополнительные сведения о том, как это сделать, см. в разделе [Настройка Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Helm, настроенным для кластера AKS с помощью `helm init` команды. Дополнительные сведения о том, как это сделать, см. в разделе [Настройка Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Создайте новый проект Kubernetes
 
@@ -82,7 +82,7 @@ ms.locfileid: "43138947"
 
 Получив ваш код, запущенный нужным образом, можно опубликовать непосредственно из Visual Studio в кластер AKS.
 
-Чтобы сделать это, необходимо сначала настроить профиль публикации, который публикует образ контейнера в реестр контейнеров Azure (ACR). Затем AKS можно получить образ контейнера из ACR и развернуть его в кластер.
+Чтобы сделать это, сначала необходимо еще раз убедиться, что вы установили все, как описано в разделе [предварительные требования](#prerequisities) раздел элемента, для публикации в AKS и выполните все приведенные в ссылки действия командной строки. Затем настройте профиль публикации, который публикует образ контейнера в реестр контейнеров Azure (ACR). Затем AKS можно получить образ контейнера из ACR и развернуть его в кластер.
 
 1. В **обозревателе решений**, щелкните правой кнопкой мыши ваш *проекта* и выберите **публикации**.
 
