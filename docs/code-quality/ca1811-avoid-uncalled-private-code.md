@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918468"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550684"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: не используйте невызываемый закрытый код
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31918468"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- (На уровне сборки) член закрытым или внутренним ни объектами сборки, не используется средой CLR и не вызывается делегат. Это правило не проверяются следующие члены:
+ Член закрытым или внутренним (на уровне сборки) не поддерживает вызывающих объектов в сборке, не вызывается средой CLR и не вызывается делегат. Это правило не проверяются следующие члены:
 
--   Явные члены интерфейса.
+- Явные члены интерфейса.
 
--   Статические конструкторы.
+- Статические конструкторы.
 
--   Конструкторы сериализации.
+- Конструкторы сериализации.
 
--   Методы, помеченные <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Методы, помеченные как <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Элементы, которые являются переопределениями.
+- Члены, которые являются переопределениями.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило можно отчетов ложных положительных результатов в случае точки входа, в настоящее время не определены логикой правила. Кроме того компилятор может вставить noncallable кода в сборку.
+ Это правило можно отчетов ложных положительных результатов, в случае точки входа, не распознаются в настоящее время логике правила. Кроме того компилятор может выдать noncallable кода в сборку.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, удалите noncallable код или добавьте код, который вызывает ее.
+ Чтобы устранить нарушение этого правила, удалите noncallable код или добавьте код, который ее вызывает.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Его можно безопасно подавить предупреждение из этого правила.

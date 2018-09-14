@@ -14,16 +14,20 @@ ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a49671c4efc725a8796b050764dc4d9949f808
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922260"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549723"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: помечайте все несериализуемые поля
+
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
@@ -35,16 +39,16 @@ ms.locfileid: "31922260"
  Экземпляр поля несериализуемого типа объявлен в сериализуемом типе.
 
 ## <a name="rule-description"></a>Описание правила
- Сериализуемый тип то, которое помечается <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. При сериализации типа <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> исключения, если тип содержит поле экземпляра типа, который не может быть сериализован.
+ Сериализуемый тип — это приложения, имеющего <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. При сериализации типа <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> исключение вызывается в том случае, если тип содержит поле экземпляра типа, который не может быть сериализован.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, примените <xref:System.NonSerializedAttribute?displayProperty=fullName> атрибута с полем, которое не может быть сериализован.
+ Чтобы устранить нарушение этого правила, примените <xref:System.NonSerializedAttribute?displayProperty=fullName> атрибут с полем, которое не может быть сериализован.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Только отключайте предупреждение из этого правила, если <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> объявления, позволяющий поле, чтобы сериализовать и десериализовать экземпляры типа.
+ Только подавить предупреждение из этого правила, если <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> объявлен тип, который обеспечивает связь экземпляров с поля, чтобы сериализовать и десериализовать.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, тип, который нарушает правила и тип, соответствующий этому правилу.
+ В примере показан тип, который нарушает правило и тип, соответствующий этому правилу.
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]

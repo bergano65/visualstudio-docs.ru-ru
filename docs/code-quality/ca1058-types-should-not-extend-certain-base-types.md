@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c1e4635a654cac608985766884ddb66e353d03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898280"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549710"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: типы не должны расширять определенные базовые типы
 |||
@@ -34,29 +34,29 @@ ms.locfileid: "31898280"
 ## <a name="cause"></a>Причина
  Видимый извне тип расширяет некоторые базовые типы. В настоящее время это правило выдает сообщение типов, производных от следующих типов:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+- <xref:System.Xml.XmlDocument?displayProperty=fullName>
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.Queue?displayProperty=fullName>
+- <xref:System.Collections.Queue?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Stack?displayProperty=fullName>
+- <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Описание правила
- Для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] рекомендовалось версии 1 для формирования нового исключения из <xref:System.ApplicationException>. Рекомендация был изменен и новые исключения должен быть производным от <xref:System.Exception?displayProperty=fullName> или одного из его подклассов в <xref:System> пространства имен.
+ Для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] рекомендовалось версии 1, для получения новых исключений из <xref:System.ApplicationException>. Изменились рекомендации и новые исключения должен быть производным от <xref:System.Exception?displayProperty=fullName> или одного из его подклассов в <xref:System> пространства имен.
 
- Не следует создавать подкласс <xref:System.Xml.XmlDocument> требуется создать XML-представление базового источника данных или модели объекта.
+ Не следует создавать подкласс <xref:System.Xml.XmlDocument> Если вы хотите создать XML-представление базового источника данных или модели объекта.
 
 ### <a name="non-generic-collections"></a>Неуниверсальные коллекции
- Используйте и Расширяйте универсальные коллекции, когда это возможно. Если ранее поставляется неуниверсальных коллекций в коде, не распространяются.
+ Используйте и Расширяйте универсальные коллекции, когда это возможно. Не была расширена неуниверсальных коллекций в коде, если не поставляется ранее.
 
  **Примеры неверного использования**
 
@@ -83,7 +83,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, наследование типа от другого базового типа или универсальной коллекции.
+ Чтобы устранить нарушение этого правила, наследование типа от другого базового типа или универсальной коллекции.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила нарушений о <xref:System.ApplicationException>. Можно безопасно подавить предупреждение из этого правила нарушений о <xref:System.Xml.XmlDocument>. Можно безопасно подавить предупреждение о неуниверсальной коллекции, если код был выпущен ранее.
+ Не отключайте предупреждение из этого правила для нарушения о <xref:System.ApplicationException>. Это безопасно подавить предупреждение из этого правила для нарушения о <xref:System.Xml.XmlDocument>. Его можно безопасно подавить предупреждение о неуниверсальной коллекции, если код был выпущен ранее.

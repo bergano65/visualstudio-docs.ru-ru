@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4039e7f0d3c520a85d152329720d3253cab2140a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ba8ef8cc0b75ed70ea6e98be2a4bac3e041e1d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901595"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552020"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: не используйте статические члены в видимых COM типах
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31901595"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип, который специально помечен как видимый для модели объектов компонентов (COM) содержит `public``static` метод.
+ Тип, который специально помечен как видимый для модели объектов компонента (COM) содержит `public``static` метод.
 
 ## <a name="rule-description"></a>Описание правила
  COM не поддерживает `static` методы.
 
- Это правило не учитывает свойства и методы доступа к событию, перегрузки методов или методы, помеченные с помощью операторов <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> атрибута или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> атрибута.
+ Это правило не учитывает свойство и доступа к событиям, перегрузки методов или методы, помеченные с помощью операторов <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> атрибут или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> атрибута.
 
- По умолчанию, являются видимыми для COM следующие: сборки, открытые типы, члены общих экземпляров в открытых типах и все элементы общих типов значений.
+ По умолчанию следующие являются видимыми для COM: сборки, открытые типы, члены открытых экземпляров в открытых типов и все члены открытых типов значения.
 
- Для этого правила возникает уровня сборки <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть присвоено `false` и класс - <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть присвоено `true`, как показано в следующем коде.
+ Для этого правила возникает, уровня сборки <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть присвоено `false` и класс - <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть присвоено `true`, как показано в следующем коде.
 
 ```csharp
 using System;
@@ -61,10 +61,10 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, измените используйте метод экземпляра, который предоставляет те же функциональные возможности, как при разработке `static` метод.
+ Чтобы устранить нарушение этого правила, измените структуру использовать метод экземпляра, который предоставляет те же функции, что `static` метод.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила, если COM-клиента не требуется доступ к функциям, которые предоставляются `static` метод.
+ Это безопасно подавить предупреждение из этого правила, если COM-клиента не требуется доступ к функциональности, предоставляемой `static` метод.
 
 ## <a name="example-violation"></a>Пример нарушения
 
@@ -80,7 +80,7 @@ namespace Samples
 ## <a name="example-fix"></a>Пример исправления
 
 ### <a name="description"></a>Описание
- Чтобы устранить нарушение в предыдущем примере, можно изменить метод на метод экземпляра, однако, не имеет смысла в данном экземпляре. Лучшим решением является явное применение `ComVisible(false)` в метод, чтобы сделать его снимите флажок, чтобы другие разработчики, что метод не виден из COM.
+ Чтобы устранить нарушение в предыдущем примере, можно изменить метод на метод экземпляра, но, не имеет смысла в данном экземпляре. Лучшим решением является явное применение `ComVisible(false)` в метод, чтобы сделать его снимите флажок, чтобы другие разработчики, что метод не видны из COM.
 
  В следующем примере применяется <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> методу.
 

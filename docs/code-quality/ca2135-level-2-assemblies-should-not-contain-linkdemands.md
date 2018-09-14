@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c33df3775d0a267c35c80abd73d27a580a586da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d41310ba5c6e52add891a4a8d034c774f9f74d2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917328"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549612"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: сборки уровня 2 не должны содержать требования LinkDemand
 |||
@@ -28,13 +28,13 @@ ms.locfileid: "31917328"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- С помощью класса или члена класса <xref:System.Security.Permissions.SecurityAction> в приложении, которое используется безопасность уровня 2.
+ С помощью класса или члена класса <xref:System.Security.Permissions.SecurityAction> в приложении, которое использует безопасность уровня 2.
 
 ## <a name="rule-description"></a>Описание правила
  Требования LinkDemand являются устаревшими в наборе правил безопасности уровня 2. Вместо использования требования LinkDemand для обеспечения безопасности во время компиляции just-in-time (JIT), пометьте методы, типы и поля с <xref:System.Security.SecurityCriticalAttribute> атрибута.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, удалите <xref:System.Security.Permissions.SecurityAction> и пометить этот тип или член с <xref:System.Security.SecurityCriticalAttribute> атрибута.
+ Чтобы устранить нарушение этого правила, удалите <xref:System.Security.Permissions.SecurityAction> и пометить тип или член с <xref:System.Security.SecurityCriticalAttribute> атрибута.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
