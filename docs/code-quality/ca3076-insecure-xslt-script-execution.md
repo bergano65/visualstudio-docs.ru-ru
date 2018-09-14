@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919847"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546396"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: выполнение небезопасного скрипта XSLT
 
@@ -31,13 +31,13 @@ ms.locfileid: "31919847"
 
 ## <a name="rule-description"></a>Описание правила
 
-**XSLT** — это стандарт консорциума World Wide Web (W3C) для преобразования XML-данных. XSLT обычно используется для записи таблиц стилей в целях преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями-запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
+**XSLT** — это стандарт консорциума World Wide Web (W3C) для преобразования XML-данных. XSLT обычно используется для записи таблиц стилей для преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
 
-Чтобы вы являетесь не от атак, это правило срабатывает каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
+Чтобы вам не нужно предоставлять уязвимая зона, это правило активируется каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Замените небезопасный аргумент XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или с экземпляром, отключил документов функции и выполнением скриптов.
+- Замените небезопасный аргумент XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или с экземпляром, отключил документа функции и выполнением скриптов.
 
 - Замените аргумент <xref:System.Xml.XmlResolver> на NULL или экземпляр <xref:System.Xml.XmlSecureResolver> .
 
@@ -47,7 +47,7 @@ ms.locfileid: "31919847"
 
 ## <a name="pseudo-code-examples"></a>Примеры псевдокода
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Нарушение&mdash;использует XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Нарушение, использующий XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Решение&mdash;использовать XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Решение, использующее XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Нарушение&mdash;документов функциями и выполнением скриптов не отключена
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Нарушение&mdash;документа функции и выполнением скриптов не отключена
 
 ```csharp
 using System.Xml;
@@ -114,7 +114,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Решение&mdash;отключить документов функции и выполнением скриптов
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Решение&mdash;отключить выполнение функции и скрипт документа
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>См. также
 
-[Рекомендации по безопасности XSLT (Справочник по .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Рекомендации по безопасности XSLT (руководство по .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
