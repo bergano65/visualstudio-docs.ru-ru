@@ -14,16 +14,20 @@ ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d2aca450bba47b73c8fa2e5e8e1246e864a1293c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68f64d37a7616f095a86452353edc498d2d27f28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917735"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549421"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: свойства не должны возвращать массивы
+
 |||
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
@@ -35,30 +39,30 @@ ms.locfileid: "31917735"
  Открытый или защищенный свойство в открытом типе возвращает массив.
 
 ## <a name="rule-description"></a>Описание правила
- Массивы, возвращаемые свойствами, не защищены от записи, даже если свойство доступно только для чтения. Чтобы защитить массив от изменений, свойство должно возвращать копию массива. Как правило, пользователи не понимают требований к производительности при вызове такого свойства. В частности они могут использовать свойство как индексированное свойство.
+ Массивы, возвращаемые свойства не защищен от записи, даже если свойство доступно только для чтения. Чтобы защитить массив от изменений, свойство должно возвращать копию массива. Как правило, пользователи не понимают требований к производительности при вызове такого свойства. В частности они могут использовать свойство как индексированное свойство.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, сделайте свойство метода или измените свойство для возврата коллекции.
+ Чтобы устранить нарушение этого правила, сделайте свойство метод или измените свойства для возврата коллекции.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Атрибуты могут содержать свойства, которые возвращают массивы, но не может содержать свойства, которые возвращают коллекции. Можно подавить предупреждение, вызывается для свойства атрибута, который является производным от <xref:System.Attribute> класса. В противном случае не отключайте предупреждение из этого правила.
+ Атрибуты могут содержать свойства, которые возвращают массивы, но не могут содержать свойства, которые возвращают коллекции. Можно подавить предупреждение, которое возникает для свойства атрибута, который является производным от <xref:System.Attribute> класса. В противном случае не отключайте предупреждение из этого правила.
 
 ## <a name="example-violation"></a>Пример нарушения
 
 ### <a name="description"></a>Описание
- Следующий пример показывает свойства, которое нарушает это правило.
+ В следующем примере свойство, которое нарушает это правило.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
 ### <a name="comments"></a>Комментарии
- Чтобы устранить нарушение данного правила, сделайте свойство метода или измените свойство, чтобы вернуть коллекцию вместо массива.
+ Чтобы устранить нарушение этого правила, сделайте свойство метод или измените свойства для возврата коллекции вместо массива.
 
-## <a name="change-the-property-to-a-method-example"></a>Измените значение свойства на примере метод
+## <a name="change-the-property-to-a-method-example"></a>Измените свойство на пример метода
 
 ### <a name="description"></a>Описание
- В следующем примере нарушение устраняется путем изменения свойства в метод.
+ В следующем примере устраняется нарушение, изменив свойство в метод.
 
 ### <a name="code"></a>Код
  [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
@@ -75,10 +79,10 @@ ms.locfileid: "31917735"
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
  [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allowing-users-to-modify-a-property"></a>Предоставление пользователям разрешения на изменение свойства
+## <a name="allowing-users-to-modify-a-property"></a>Разрешение пользователям изменять свойство
 
 ### <a name="description"></a>Описание
- Можно разрешить пользователю изменять свойство класса. В следующем примере свойство чтения/записи, которое нарушает это правило.
+ Может потребоваться предоставить пользователю класса, для изменения свойства. В следующем примере свойство чтения/записи, которое нарушает это правило.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]

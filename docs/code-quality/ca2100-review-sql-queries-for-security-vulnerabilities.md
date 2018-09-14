@@ -15,16 +15,21 @@ ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: be39489c30de235248b9e3f2770811fc190ac5a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918117"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551471"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: проанализируйте SQL-запросы с целью выявления уязвимостей безопасности
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -33,37 +38,38 @@ ms.locfileid: "31918117"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод задает <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойства с использованием строки, созданной из строкового аргумента метода.
+ Задает метод <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойства с помощью строки, составленное из строкового аргумента метода.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL. При атаке путем внедрения кода SQL пользователь-злоумышленник вводит данные, которые изменяют структуру запроса при попытке привести к повреждению или получить несанкционированный доступ к базе данных. Типичные приемы можно назвать вставку кавычки или апострофа, который является разделитель строк-литералов SQL; двух тире, обозначающих Комментарий SQL; и точкой с запятой, которое указывает, соответствует новую команду. Если входные данные пользователя должны быть частью запроса, воспользуйтесь одним из следующих значений, перечисленных в порядке эффективности методы, чтобы снизить риск атак.
 
--   Используйте хранимую процедуру.
+Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL. Атаки путем внедрения кода SQL пользователь-злоумышленник вводит данные, которые изменяют структуру запроса при попытке привести к повреждению или получения несанкционированного доступа к базе данных. Типичные методы включают внедрение одинарная кавычка или апостроф, который является разделитель строк-литералов SQL; два тире, обозначающих Комментарий SQL; Используйте точку с запятой, который указывает, что соответствует новой команды. Если входные данные пользователя должны быть частью запроса, используйте один из следующих, перечислены в порядке эффективности, чтобы снизить риск атаки.
 
--   Использование параметризованной командной строки.
+- Используйте хранимую процедуру.
 
--   Проверка введенных пользователем данных тип и содержимое перед построением командную строку.
+- Использование параметризованной командой строки.
 
- Следующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] типы реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или предоставляют конструкторы, которые свойству, используя строковый аргумент.
+- Проверьте входные данные пользователя для типа и содержимое, прежде чем построить строку команды.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>.
+Следующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] типы реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или конструкторы, свойства с помощью строкового аргумента.
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> и <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>.
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> и <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> и <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>.
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> и <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>.
 
- Обратите внимание, что это правило нарушается, при использовании метода ToString типа явно или неявно для построения строки запроса. Пример.
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>.
+
+Обратите внимание на то, что это правило нарушается при использовании метода ToString типа явно или неявно для создания строки запроса. Пример.
 
 ```
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- При нарушении правила, так как пользователь-злоумышленник может переопределить метод ToString().
+ Правило нарушается, так как пользователь-злоумышленник может переопределить метод ToString().
 
- Также при нарушении правила при ToString используется неявно.
+ Правило также нарушается, если метод ToString используется неявно.
 
 ```
 int x = 10;
@@ -74,10 +80,10 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  Чтобы устранить нарушение этого правила, используйте параметризованный запрос.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это безопасно подавить предупреждение из этого правила, если текст команды не содержит вводимых пользователем.
+ Его можно безопасно подавить предупреждение из этого правила, если текст команды не содержит вводимых пользователем.
 
 ## <a name="example"></a>Пример
- В примере показан метод, `UnsafeQuery`, которое нарушает правило и метод, `SaferQuery`, соответствующий этому правилу, используя строку параметризованной команды.
+ В примере показан метод, `UnsafeQuery`, который нарушает правило и метод, `SaferQuery`, выполняет правила, используя строку параметризованные команды.
 
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

@@ -14,16 +14,20 @@ ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ea72439219431ee0a1a5403aa266e1b2601a78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c5b4dee5a274e88be407e015adc4d20c06605dd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920567"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547650"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: вызывайте методы базового класса для типов ISerializable
+
 |||
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
@@ -32,17 +36,17 @@ ms.locfileid: "31920567"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип является производным от типа, который реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс и одно из следующих условий верно:
+ Один тип является производным от типа, который реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс и одно из следующих условий верно:
 
--   Тип реализует конструктор сериализации, то есть конструктор с <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> сигнатура параметра, но не вызывает конструктор сериализации базового типа.
+- Тип реализует конструктор сериализации, то есть конструктор с <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> сигнатура параметра, но не вызывает конструктор базового типа сериализации.
 
--   Тип реализует <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метода, но не вызывает <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод базового типа.
+- Тип реализует <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метод, но не вызывает <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод базового типа.
 
 ## <a name="rule-description"></a>Описание правила
- В процессе настраиваемой сериализации, реализуемый типом <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод сериализации его полей и выполнить десериализацию поля конструктор сериализации. Если тип является производным от типа, который реализует <xref:System.Runtime.Serialization.ISerializable> базовый тип интерфейса <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> конструктор сериализации и метод должен вызываться для сериализации или десериализации-serialize поля базового типа. В противном случае тип не быть сериализованы и десериализованный правильно. Обратите внимание, что если производный тип не добавляются все новые поля, тип нужно реализовать <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод или конструктор сериализации или вызвать эквиваленты базового типа.
+ В процессе настраиваемой сериализации, тип реализует <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод сериализации его полей и конструктор сериализации для десериализации поля. Если тип является производным от типа, который реализует <xref:System.Runtime.Serialization.ISerializable> интерфейс, базовый тип <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод и сериализации конструктор должен быть вызван сериализацию и десериализацию поля базового типа. В противном случае тип не быть сериализованы и десериализованный правильно. Обратите внимание, что если производный тип не добавляет никакие новые поля, тип необходимости реализовывать <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод или конструктор сериализации или вызвать эквиваленты базового типа.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, вызовите базовый тип <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> производный метод или конструктор сериализации из соответствующего метода типа или конструктора.
+ Чтобы устранить нарушение этого правила, вызовите базовый тип <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> метод или конструктор сериализации из соответствующего производного типа метода или конструктора.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
