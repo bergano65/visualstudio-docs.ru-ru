@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708778"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283526"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Клонирование репозитория с кодом Python в Visual Studio
 
@@ -17,9 +17,9 @@ ms.locfileid: "29708778"
 
 2. Запустите Visual Studio.
 
-3. Последовательно выберите **"Вид" > "Team Explorer…"**, чтобы открыть окно **Team Explorer**, в котором вы можете подключиться к GitHub или Visual Studio Team Services либо клонировать репозиторий.
+3. Последовательно выберите **Вид > Team Explorer**, чтобы открыть окно **Team Explorer**, в котором вы можете подключиться к GitHub или Azure DevOps либо клонировать репозиторий.
 
-    ![Окно Team Explorer с возможностями подключения к Visual Studio Team Services и GitHub, а также клонирования репозитория](media\create-project-repo\team-explorer.png)
+    ![Окно Team Explorer с возможностями подключения к Azure DevOps и GitHub, а также клонирования репозитория](media\create-project-repo\team-explorer.png)
 
 4. В разделе **Локальные репозитории Git** в поле URL-адреса введите `https://github.com/Microsoft/samples-for-ai`, укажите папку для клонируемых файлов и нажмите кнопку **Клонировать**.
 

@@ -9,12 +9,12 @@ description: Сведения о преимуществе LinkedIn Learning, к�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bb3611b485bd36b1268f12ca06b29d8962eab8ae
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289401"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278813"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -116,4 +116,4 @@ ms.locfileid: "43289401"
     - Справка по [использованию LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Справка по общим вопросам о [LinkedIn](https://www.linkedin.com/help/linkedin), включая создание учетных записей и профилей, а также поддержку сети.
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

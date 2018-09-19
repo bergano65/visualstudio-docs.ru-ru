@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627269"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280172"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство. Начало работы с веб-платформой Django в Visual Studio
 
@@ -100,7 +100,7 @@ ms.locfileid: "42627269"
 
     ![Окно Team Explorer для отправки в имеющийся удаленный репозиторий](media/django/step01-push-to-github.png)
 
-    Если у вас нет репозитория, параметры **Publish to GitHub** (Опубликовать в GitHub) и **Отправка в Visual Studio Team Services** позволяют создать его непосредственно из Visual Studio.
+    Если у вас нет репозитория, параметры **Опубликовать в GitHub** и **Отправить в Azure DevOps** позволяют создать его непосредственно из Visual Studio.
 
 1. При работе с этим руководством вы будете периодически использовать элементы управления в Visual Studio для фиксации и отправки изменений. Мы напомним вам об этом при необходимости.
 

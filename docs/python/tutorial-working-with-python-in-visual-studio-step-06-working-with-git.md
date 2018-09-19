@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511331"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278730"
 ---
 # <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
 
 **Предыдущий шаг. [Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio обеспечивает прямую интеграцию с локальными репозиториями Git, а также удаленными репозиториями, находящимися в таких службах, как GitHub и Visual Studio Team Services. Эта интеграция включает в себя клонирование репозитория, фиксацию изменений и управление ветвями.
+Visual Studio обеспечивает прямую интеграцию с локальными репозиториями Git, а также удаленными репозиториями, находящимися в таких службах, как GitHub и Azure Repos. Эта интеграция включает в себя клонирование репозитория, фиксацию изменений и управление ветвями.
 
 В этой статье представлены общие сведения о создании локального репозитория Git для существующего проекта и некоторых возможностях Visual Studio, связанных с Git.
 
@@ -56,7 +56,7 @@ Visual Studio обеспечивает прямую интеграцию с ло
 
 Общие инструкции по созданию проекта из удаленного репозитория Git см. в статье [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Подробное руководство и инструкции по обработке конфликтов слияния, проверке кода с запросами на вытягивание, перемещении изменений из одной ветви в другую и отборе изменений см. в руководстве по [началу работы с Git и VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Подробное руководство и инструкции по обработке конфликтов слияния, проверке кода с запросами на вытягивание, перемещении изменений из одной ветви в другую и отборе изменений см. в руководстве по [началу работы с Git и Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
 
 ## <a name="tutorial-review"></a>Обзор руководства
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924794"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776097"
 ---
 # <a name="unit-testing-in-nodejs"></a>Модульное тестирование в Node.js
 
@@ -147,3 +147,24 @@ Test execution time: 1.5731 Seconds
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 Обнаружение доступных тестовых платформ выполняется при запуске Visual Studio. Если платформа добавляется во время выполнения Visual Studio, перезапустите Visual Studio для обнаружения платформы. Но вам не нужно перезапускать платформу, если вы вносите изменения в реализацию.
+
+## <a name="unit-tests-in-other-project-types"></a>Модульные тесты в других типах проектов
+Вы можете писать модульные тесты не только в проектах Node.js. Когда вы добавляете свойства TestFramework и TestRoot в проект C# или VB, эти тесты будут перечислены, и вы сможете выполнять их в окне обозревателя тестов.
+
+Чтобы включить эту функцию, щелкните правой кнопкой мыши узел проекта в обозревателе решений, выберите **Выгрузить проект**, а затем **Изменить проект**. Затем в файле проекта добавьте следующие два элемента в группу свойств.
+
+> [!NOTE]
+> Убедитесь, что для группы свойств, в которую вы добавляете элементы, не указано условие.
+> Это может привести к непредвиденному поведению.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Затем добавьте тесты в указанную папку тестового корня, и они будут доступны для выполнения в окне обозревателя тестов. Если они не отображаются, возможно, потребуется перестроить проект.
+
+> [!NOTE]
+> В настоящее время эта функция не подходит для проектов .NET Standard и .NET Core.

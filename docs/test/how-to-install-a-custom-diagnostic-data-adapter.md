@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379293"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321051"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Практическое руководство. Установка настраиваемого адаптера диагностических данных
 
@@ -46,7 +46,7 @@ ms.locfileid: "39379293"
     > [!NOTE]
     > Хотя адаптер диагностических данных и редактор конфигурации могут быть созданы в том же самом проекте и встроены в ту же самую сборку, при желании для них можно создать отдельные проекты и отдельные сборки.
 
-     Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Чтобы выбрать адаптер диагностических данных для теста, необходимо сначала выбрать существующие параметры тестирования или создать новые параметры с помощью Microsoft Test Manager или Visual Studio, а затем выбрать адаптер диагностических данных на вкладке **Данные и диагностика** выбранных параметров тестирования.
 

@@ -9,16 +9,16 @@ description: Сведения о наборе продуктов ModernRequireme
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289458"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279028"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Преимущество MODERNRequirements4TFS в подписках Visual Studio
 
-Некоторые подписки Visual Studio включают шестимесячную подписку на MODERNRequirements SmartOffice 4TFS и ModernRequirements4TFS.  SmartOffice4TFS от MODERNRequirements расширяет возможности TFS или Visual Studio Team Services благодаря возможности использования отчетов на основе Microsoft Word, а также быстрого и простого создания текстов в формате RTF.  ModernRequirements4TFS предоставляет базовые показатели рабочих элементов и возможности моделирования HTML5.
+Некоторые подписки Visual Studio включают шестимесячную подписку на MODERNRequirements SmartOffice 4TFS и ModernRequirements4TFS.  SmartOffice4TFS от MODERNRequirements расширяет возможности TFS или Azure DevOps Services благодаря возможности использования отчетов на основе Microsoft Word, а также быстрому и простому созданию текстов с форматированием.  ModernRequirements4TFS предоставляет базовые показатели рабочих элементов и возможности моделирования HTML5.
 
 
 ## <a name="activation-steps"></a>Процедура активации
@@ -101,4 +101,4 @@ ms.locfileid: "43289458"
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с продуктами ModernRequirements?  Посетите сайт https://www.modernrequirements.com/support-2/.
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

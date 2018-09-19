@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380896"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321194"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
 
@@ -257,7 +257,7 @@ ms.locfileid: "39380896"
     >
     > В следующей папке имеются другие примеры файлов конфигурации в зависимости от каталога установки: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
      Дополнительные сведения об установке файла конфигурации см. в статье [Практическое руководство. Установка настраиваемого адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
@@ -265,7 +265,7 @@ ms.locfileid: "39380896"
 
 13. Дополнительные сведения об установке собственного редактора см. в статье [Практическое руководство. Установка настраиваемого адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-14. Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+14. Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 15. Чтобы выбрать адаптер диагностических данных, нужно выбрать существующие параметры тестирования или создать новый параметр с помощью Microsoft Test Manager или Visual Studio. Адаптер отображается на вкладке **Данные и диагностика** параметров тестирования и имеет понятное имя, присвоенное классу.
 
@@ -285,6 +285,6 @@ ms.locfileid: "39380896"
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
-- [Сбор данных диагностики в ручных тестах (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Сбор диагностических данных во время тестирования (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Практическое руководство. Создание специализированного редактора данных для адаптера диагностических данных](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

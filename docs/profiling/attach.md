@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7d54d31a1a4478f114e997df39bcbeeb95d5cda5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690631"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669368"
 ---
 # <a name="attach"></a>Attach
 Параметр **Attach** программы *VSPerfCmd.exe* начинает профилирование с выборкой для запущенного процесса, указанного идентификатором процесса (PID).  

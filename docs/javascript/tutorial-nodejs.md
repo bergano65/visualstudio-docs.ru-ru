@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132334"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124922"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](http://visualstudio.microsoft.com), если еще не сделали это.
@@ -85,7 +85,7 @@ Visual Studio управляет файлами для отдельного пр
 
     (3) В узле npm представлены все установленные пакеты npm. Вы можете щелкнуть узел npm правой кнопкой мыши, чтобы найти и установить пакеты npm с помощью диалогового окна. Кроме того, установить и обновить пакеты можно с помощью параметров, доступных в файле *package.json* и контекстном меню узла npm.
 
-    (4) *package.json* — это файл, используемый npm для управления зависимостями и версиями пакетов для локально установленных пакетов.
+    (4) *package.json* — это файл, используемый npm для управления зависимостями и версиями пакетов для локально установленных пакетов. Дополнительные сведения для этого файла см. в разделе [Конфигурация package.json](../javascript/configure-packages-with-package-json.md)
 
     (5) Файлы проекта, такие как *app.js*, отображаются в узле проекта. *app.js* — это файл запуска проекта, поэтому он выделяется **полужирным** шрифтом. Задать файл запуска можно, щелкнув правой кнопкой мыши файл в проекте и выбрав **Задать как файл запуска Node.js**.
 

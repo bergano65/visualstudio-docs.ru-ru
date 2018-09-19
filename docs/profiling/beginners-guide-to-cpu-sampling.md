@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573184"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669413"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Руководство по выборке циклов ЦП для начинающих
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура показывает, как использовать данные **выборки**.
@@ -41,7 +41,7 @@ ms.locfileid: "34573184"
 ## <a name="create-and-run-a-performance-session"></a>Создание и выполнение сеанса производительности  
  Чтобы получить нужные данные для анализа, необходимо сначала создать сеанс производительности, а затем запустить его. Обе эти задачи помогает выполнить **мастер производительности**.  
   
- Если вы не выполняете профилирование классического приложения Windows или приложения ASP.NET, необходимо использовать другое средство профилирования. См. раздел [Первое знакомство со средствами профилирования](../profiling/profiling-tools.md).  
+ Если вы не выполняете профилирование классического приложения Windows или приложения ASP.NET, необходимо использовать другое средство профилирования. См. раздел [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Порядок создания и выполнения сеанса производительности  
   
@@ -129,4 +129,4 @@ ms.locfileid: "34573184"
  [Приступая к работе со средствами профилирования](../profiling/getting-started-with-performance-tools.md)   
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)  
  [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

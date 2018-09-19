@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901489"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280289"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -24,7 +24,7 @@ ms.locfileid: "42901489"
 
 ## <a name="specify-a-run-settings-file"></a>Указание файла параметров запуска
 
-Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) с помощью Visual Studio Team Services (VSTS) или Team Foundation Server (TFS).
+Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) с помощью Azure Test Plans или Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Указание файла параметров запуска в интегрированной среде разработки
 
@@ -256,4 +256,4 @@ public void HomePageTest()
 ## <a name="see-also"></a>См. также
 
 - [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md)
-- [Задача теста Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

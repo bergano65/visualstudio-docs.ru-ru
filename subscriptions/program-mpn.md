@@ -9,12 +9,12 @@ description: Сведения о предлагаемых подписках, п
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281034"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283578"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -54,7 +54,7 @@ ms.locfileid: "36281034"
 
 Подписчики Visual Studio Professional (MPN) также могут загрузить и использовать бесплатное программное обеспечение для разработки, включая SQL Server Developer Edition.
 
-Подписка Visual Studio Professional (MPN) не включает преимущества VSTS, ежемесячные кредиты Azure, техническую поддержку, обучение и другие преимущества подписчиков, доступные при приобретении подписки Visual Studio.
+Подписка Visual Studio Professional (MPN) не включает преимущества Azure DevOps Services, ежемесячные кредиты Azure, техническую поддержку, обучение и другие преимущества подписчиков, доступные при приобретении подписки Visual Studio.
 
 ## <a name="internal-use-only-restriction"></a>Доступно только для внутреннего использования
 По правилам MPN любое программное обеспечение, полученное в виде преимущества, подлежит только внутреннему использованию. Это относится к программному обеспечению для отдельных подписчиков Visual Studio и к общим преимуществам по лицензии на программное обеспечение MPN.

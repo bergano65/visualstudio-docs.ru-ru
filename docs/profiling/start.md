@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669600"
 ---
 # <a name="start"></a>Запуск
-**Start** — это параметр программы VSPerfCmd.exe, который инициализирует профилировщик для использования указанного метода профилирования.  
+**Start** — это параметр программы *VSPerfCmd.exe*, который инициализирует профилировщик для использования указанного метода профилирования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -65,7 +66,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  Отключает профилировщик.  
   
 ## <a name="example"></a>Пример  
- В приведенном ниже примере кода показано, как с помощью параметра **Start** программы VSPerfCmd.exe инициализировать профилировщик.  
+ В приведенном ниже примере кода показано, как с помощью параметра **Start** программы *VSPerfCmd.exe* инициализировать профилировщик.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626643"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995967"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг2. Создание приложения Django с представлениями и шаблонами страниц
 

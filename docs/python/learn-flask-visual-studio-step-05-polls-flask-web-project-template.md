@@ -1,7 +1,7 @@
 ---
 title: Руководство. Сведения о Flask в Visual Studio — шаг 5
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio с описанием функций шаблонов "Веб-проект опроса Flask" и "Веб-проект опроса Flask/Jade".
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637621"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280098"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Шаг 5. Использование шаблона веб-проекта опроса Flask
 
@@ -356,7 +356,7 @@ def results(key):
 
 - Добавьте реализацию репозитория, использующую другое хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все они могут размещаться на платформе Azure). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты, а также с Cosmos DB.
 
-- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Visual Studio Team Services (VSTS). В дополнение к работе с системой управления исходным кодом (в VSTS, GitHub или в другом месте), VSTS может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, VSTS интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
+- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Azure Pipelines. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), Azure Test Plans может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps Services интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps Project](/azure/devops-project/azure-devops-project-python?view=vsts) (Создание конвейера CI/CD для Python с помощью проекта Azure DevOps)
+  - [Создание конвейера CI/CD для Python с помощью проектов Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Python development in Azure with Visual Studio Team Services](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/) (Разработка Python в Azure с помощью Visual Studio Team Services).

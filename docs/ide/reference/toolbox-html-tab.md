@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177010"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384166"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 
@@ -117,7 +117,7 @@ ms.locfileid: "39177010"
 ```
 
 > [!IMPORTANT]
-> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в разделе [Защита подключений](/previous-versions/tn-archive/bb418917(v=technet.10)). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Ввод (флажок)**
 

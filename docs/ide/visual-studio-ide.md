@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626677"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320791"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
@@ -50,7 +50,7 @@ ms.locfileid: "42626677"
 
 - В окно [вывода](../ide/reference/output-window.md) (в центре внизу) Visual Studio отправляет уведомления, такие как сообщения об отладке и ошибках, предупреждения компилятора, сообщения о состоянии публикаций и многие другие. Каждый источник сообщений имеет собственную вкладку.
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) (правый нижний угол) позволяет отслеживать рабочие элементы и использовать код совместно с другими пользователями с помощью технологий управления версиями, таких как [Git](https://git-scm.com/) и [система управления версиями Team Foundation (TFVC)](/vsts/tfvc/overview).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (правый нижний угол) позволяет отслеживать рабочие элементы и использовать код совместно с другими пользователями с помощью технологий управления версиями, таких как [Git](https://git-scm.com/) и [система управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
 ### <a name="popular-productivity-features"></a>Популярные средства повышения производительности
 
@@ -273,6 +273,8 @@ ms.locfileid: "42626677"
 - [Создание первого веб-приложения Python с помощью Visual Studio](quickstart-python.md)
 
 - [Создание первого веб-приложения C# с помощью Visual Studio](quickstart-aspnet-core.md)
+
+- [Создание первого веб-приложения F# с помощью Visual Studio](quickstart-fsharp.md)
 
 - [Создание первого веб-приложения Node.js с помощью Visual Studio](quickstart-nodejs.md)
 

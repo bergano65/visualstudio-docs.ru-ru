@@ -1,6 +1,6 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Feedback Client 2017
-description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для предоставления подробных отзывов о Visual Studio Team Services или Team Foundation Server
+description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для предоставления подробных отзывов об Azure DevOps Services или Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138783"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281563"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client 2017
 
@@ -43,7 +43,7 @@ ms.locfileid: "43138783"
 
 **Идентификатор.** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы о Visual Studio Team Services или Team Foundation Server.
+**Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы об Azure DevOps Services или Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 

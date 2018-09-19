@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476681"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669653"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
-Подкоманды **ThreadOff** и **ThreadOn** программы VSPerfCmd.exe доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.  
+Подкоманды **ThreadOff** и **ThreadOn** программы *VSPerfCmd.exe* доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.  
   
- В большинстве случаев **ThreadOn** или **ThreadOff** указывается как единственный параметр команды VSPerfCmd.exe, но их также можно сочетать с подкомандами **GlobalOn**, **GlobalOff**, **ProcessOn** и **ProcessOff**.  
+ В большинстве случаев **ThreadOn** или **ThreadOff** указывается как единственный параметр команды *VSPerfCmd.exe*, но их также можно сочетать с подкомандами **GlobalOn**, **GlobalOff**, **ProcessOn** и **ProcessOff**.  
   
  Подкоманды **ThreadOn** и **ThreadOff** взаимодействуют с подкомандами **GlobalOn** и **GlobalOff**, которые управляют сбором данных для всех процессов сеанса профилирования с использованием командной строки, и с подкомандами **ProcessOn** и **ProcessOff**, которые позволяют управлять сбором данных для указанного процесса.  
   
@@ -30,7 +30,7 @@ ms.locfileid: "34476681"
   
 -   **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.  
   
- Дополнительные сведения см. в статье [Profile tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
+ Дополнительные сведения см. в статье [Интерфейсы API для средств профилирования](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   

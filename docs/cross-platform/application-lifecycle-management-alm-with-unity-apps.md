@@ -4,29 +4,29 @@ ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634622"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320895"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps с приложениями Unity
 
 Разработка приложений для современных платформ включает гораздо больше, чем просто написание кода. Эти действия, называемые DevOps (разработка + операции), охватывают весь жизненный цикл приложения и включают планирование и отслеживание работы, проектирование и реализацию кода, управление репозиторием исходного кода, выполнение сборок, управление непрерывной интеграцией и развертываниями, тестирование (включая модульные тесты и тесты пользовательского интерфейса), выполнение всевозможной диагностики в средах разработки и рабочих средах и отслеживание производительности приложения и поведения пользователей в режиме реального времени с помощью телеметрии и анализа.
 
-Visual Studio (совместно с Visual Studio Team Services и Team Foundation Server) предоставляет широкий набор возможностей DevOps. Многие из них применимы к кроссплатформенным проектам, в том числе к играм и мощным графическим приложениям, созданным с помощью Unity &mdash; особенно при использовании C# в качестве скриптового языка. Однако поскольку Unity имеет собственную среду разработки и выполнения, ряд возможностей DevOps не применяется, как в случае с другими типами проектов, созданных в Visual Studio.
+Visual Studio (совместно с Azure DevOps Services и Team Foundation Server) предоставляет широкий набор возможностей DevOps. Многие из них применимы к кроссплатформенным проектам, в том числе к играм и мощным графическим приложениям, созданным с помощью Unity &mdash; особенно при использовании C# в качестве скриптового языка. Однако поскольку Unity имеет собственную среду разработки и выполнения, ряд возможностей DevOps не применяется, как в случае с другими типами проектов, созданных в Visual Studio.
 
 В следующих таблицах описано, какие функции DevOps в Visual Studio применяются при работе с Unity, а какие — нет. Дополнительные сведения о самих функциях см. в документации по ссылкам.
 
 ## <a name="agile-tools"></a>Средства Agile
 
-Справочная ссылка: [О средствах гибкой разработки и гибком управлении проектами](/vsts/work/backlogs/overview?view=vsts) (с использованием Visual Studio Team Services или TFS, включая Team Explorer Everywhere)
+Справочная ссылка: [О средствах гибкой разработки и гибком управлении проектами](/azure/devops/boards/backlogs/overview?view=vsts) (с использованием Azure Boards или TFS, включая Team Explorer Everywhere)
 
 Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.
 
@@ -59,8 +59,8 @@ Visual Studio (совместно с Visual Studio Team Services и Team Foundat
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
-|[Используйте управление версиями в Team Foundation](/vsts/tfvc/overview?view=vsts) или Visual Studio Team Services|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
-|[Приступая к работе с Git в Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Да|См. примечания после таблицы.|
+|[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) или Azure Repos|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
+|[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Да|См. примечания после таблицы.|
 |[Улучшение качества кода](../test/improve-code-quality.md)|Да||
 |[Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)|Да||
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||
@@ -75,13 +75,13 @@ Visual Studio (совместно с Visual Studio Team Services и Team Foundat
 
 ## <a name="build"></a>Построить
 
-Ссылка: **[Сборка и выпуск](/vsts/build-release/index)**
+Ссылка для справки: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
-|Локальный сервер TFS|Возможна|Сборка проектов Unity осуществляется с помощью среды Unity, а не системы сборки Visual Studio (при сборке с помощью набора средств Visual Studio Tools для Unity скрипты компилируются, но исполняемый файл не создается). Вы можете настроить [сборку проектов Unity из командной строки](http://docs.unity3d.com/Manual/CommandLineArguments.html) (документация по Unity), поэтому вы можете настроить процесс MSBuild на сервере TFS для выполнения соответствующих команд Unity, если на этом сервере установлена сама среда Unity.<br /><br /> Unity также предлагает службу [облачной сборки для Unity](https://build.cloud.unity3d.com/landing/), которая отслеживает репозиторий Git или SVN и периодически выполняет сборку. В настоящее время она не работает с системой управления версиями Team Foundation и Visual Studio Team Services.|
-|Локальный сервер сборки, связанный с Visual Studio Team Services|Возможна|С приведенными выше условиями можно выполнять сборки, запущенные с помощью Visual Studio Team Services, на локальном компьютере TFS. Инструкции см. в разделе [Агенты сборки и выпуска](/vsts/build-release/concepts/agents/agents).|
-|Служба размещенного контроллера Visual Studio Team Services|Нет|Сборки Unity в настоящее время не поддерживаются.|
+|Локальное развертывание Team Foundation Server (TFS)|Возможна|Сборка проектов Unity осуществляется с помощью среды Unity, а не системы сборки Visual Studio (при сборке с помощью набора средств Visual Studio Tools для Unity скрипты компилируются, но исполняемый файл не создается). Вы можете настроить [сборку проектов Unity из командной строки](http://docs.unity3d.com/Manual/CommandLineArguments.html) (документация по Unity), поэтому вы можете настроить процесс MSBuild на сервере TFS для выполнения соответствующих команд Unity, если на этом сервере установлена сама среда Unity.<br /><br /> Unity также предлагает службу [облачной сборки для Unity](https://build.cloud.unity3d.com/landing/), которая отслеживает репозиторий Git или SVN и периодически выполняет сборку. В настоящее время она не работает с TFVC или Azure DevOps Services.|
+|Локальные серверы сборки, связанные с Azure DevOps Services|Возможна|С приведенными выше условиями можно выполнять сборки, запущенные с помощью Azure DevOps Services, на локальном компьютере TFS. Инструкции см. в разделе [Агенты сборки и выпуска](/azure/devops/pipelines/agents/agents?view=vsts).|
+|Служба размещенного контроллера Azure DevOps Services|Нет|Сборки Unity в настоящее время не поддерживаются.|
 |Определения сборки с сценариями до и после сборки|Да|В пользовательском определении сборки, использующем командную строку Unity для выполнения сборки, также можно настроить запуск скриптов до и после сборки.|
 |Непрерывная интеграция, включая условный возврат|Да|Условный возврат доступен только для TFVC, так как Git работает с моделью запроса на включение внесенных изменений, а не с возвратом.|
 
@@ -103,20 +103,20 @@ Visual Studio (совместно с Visual Studio Team Services и Team Foundat
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
 |[Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
-|[Поиск повторяющегося кода с помощью обнаружения клонов кода](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
+|[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/hh205279.aspx)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Обозреватель производительности](../profiling/performance-explorer.md)|Нет|Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (веб-сайт Unity).|
-|[Анализ проблем с памятью .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Нет|Средства Visual Studio не имеют обработчиков в платформе Mono (используемой средой Unity) для профилирования. Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (документация по Unity).|
+|[Анализ проблем с памятью .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Нет|Средства Visual Studio не имеют обработчиков в платформе Mono (используемой средой Unity) для профилирования. Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (документация по Unity).|
 
 ## <a name="release-management"></a>Управление выпуском
 
-Справочная ссылка: [Обзор сборки и выпуска](/vsts/pipelines/overview?view=vsts)
+Ссылка для справки: [Сборка и выпуск в Azure Pipelines и TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
 |Управление процессами выпуска|Да||
 |Развертывание на серверах для загрузки неопубликованных приложений через сценарии|Да||
-|Отправка в магазин приложений|Partial|Доступны расширения, которые автоматизируют этот процесс для некоторых магазинов приложений. См. раздел [Расширения для Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), например, [расширение для Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Отправка в магазин приложений|Partial|Доступны расширения, которые автоматизируют этот процесс для некоторых магазинов приложений. См. раздел [Расширения для Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), например [расширение для Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Мониторинг с HockeyApp
 

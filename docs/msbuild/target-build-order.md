@@ -1,7 +1,7 @@
 ---
 title: Порядок сборки целевых объектов | Документы Майкрософт
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178960"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774949"
 ---
 # <a name="target-build-order"></a>Порядок сборки целевого объекта
 Целевые объекты необходимо упорядочить, если входные данные для одного целевого объекта зависят от выходных данных другого целевого объекта. Эти атрибуты можно использовать для задания порядка выполнения целевых объектов:  
@@ -114,7 +114,7 @@ ms.locfileid: "39178960"
 
     Целевые объекты, в которых указываются условные целевые объекты в `BeforeTargets` или `AfterTargets`, по-прежнему выполняются в предписанном порядке
   
-4.  Перед выполнением целевого объекта выполняются его целевые объекты `DependsOnTargets`.  
+4.  Прежде чем целевой объект будет выполнен или пропущен, если его атрибут `Condition` отсутствовал или не принимал значение `false`, выполняются его целевые объекты `DependsOnTargets`.  
   
 5.  Перед выполнением или пропуском целевого объекта выполняются любые целевые объекты, указанные в атрибуте `BeforeTargets`.  
   

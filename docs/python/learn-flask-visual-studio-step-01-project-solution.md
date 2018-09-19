@@ -1,7 +1,7 @@
 ---
 title: Руководство. Сведения о Flask в Visual Studio — шаг 1
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586408"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283422"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Руководство. Начало работы с веб-платформой Flask в Visual Studio
 
@@ -95,7 +95,7 @@ Flask называют "микро"-платформой, так как она �
 
     ![Окно Team Explorer для отправки в имеющийся удаленный репозиторий](media/flask/step01-push-to-github.png)
 
-    Если у вас нет репозитория, параметры **Publish to GitHub** (Опубликовать в GitHub) и **Отправка в Visual Studio Team Services** позволяют создать его непосредственно из Visual Studio.
+    Если у вас нет репозитория, параметры **Опубликовать в GitHub** и **Отправить в Azure DevOps** позволяют создать его непосредственно из Visual Studio.
 
 1. При работе с этим руководством вы будете периодически использовать элементы управления в Visual Studio для фиксации и отправки изменений. Мы напомним вам об этом при необходимости.
 

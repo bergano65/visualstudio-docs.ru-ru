@@ -9,12 +9,12 @@ description: Сведения о преимуществе обучения Opsgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289473"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280900"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Преимущество Opsgility в подписках Visual Studio
 
@@ -55,4 +55,4 @@ ms.locfileid: "43289473"
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с Opsgility?  Отправьте запрос на поддержку на странице [обратной связи](https://www.opsgility.com/SupportTicket).
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
