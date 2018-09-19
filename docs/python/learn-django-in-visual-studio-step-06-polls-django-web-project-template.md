@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627299"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548235"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Шаг 6. Использование шаблона веб-проекта Django для опросов
 
@@ -118,7 +118,7 @@ class Choice(models.Model):
 
 Полный список типов полей — `CharField` (ограниченный текст) `TextField` (неограниченный текст), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` и `ManyToMany`. Каждое поле принимает некоторые атрибуты, такие как `max_length`. Атрибут `blank=True` означает, что поле необязательное. `null=true` означает, что значение необязательное. Кроме того, есть атрибут `choices`, который ограничивает значения только теми, что находятся в массиве кортежей значений данных, и теми, что отображаются в кортежах. (См. [ссылку на поле модели](https://docs.djangoproject.com/en/2.0/ref/models/fields/) в документации по Django.)
 
-Вы можете проверить, что именно хранится в базе данных, просмотрев файл *db.sqlite3* в проекте с помощью таких средств, как [браузер SQLite](http://sqlitebrowser.org/). В базе данных поле внешнего ключа, такое как `poll`, в модели Choice хранится в виде `poll_id`. Django обрабатывает сопоставление автоматически.
+Вы можете проверить, что именно хранится в базе данных, просмотрев файл *db.sqlite3* в проекте с помощью таких средств, как [браузер SQLite](https://sqlitebrowser.org/). В базе данных поле внешнего ключа, такое как `poll`, в модели Choice хранится в виде `poll_id`. Django обрабатывает сопоставление автоматически.
 
 Как правило, работа с базой данных в Django подразумевает работу исключительно с вашими моделями, чтобы программа Django могла управлять основной базой данных от вашего имени.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Чтобы увидеть результат, сначала запустите приложение. Вы убедитесь, что опросов еще нет. Посетите URL-адрес "/seed", и когда приложение возвратится на домашнюю страницу, вы увидите, что опросы стали доступны. Опять же, вы можете изучить необработанный файл *db.sqlite3* с помощью такого средства, как [браузер SQLite](http://sqlitebrowser.org/).
+Чтобы увидеть результат, сначала запустите приложение. Вы убедитесь, что опросов еще нет. Посетите URL-адрес "/seed", и когда приложение возвратится на домашнюю страницу, вы увидите, что опросы стали доступны. Опять же, вы можете изучить необработанный файл *db.sqlite3* с помощью такого средства, как [браузер SQLite](https://sqlitebrowser.org/).
 
 ![Приложение веб-проекта опроса Django с базой данных, заполненной начальными значениями](media/django/step06-app-with-seeded-database.png)
 
@@ -376,8 +376,8 @@ admin.site.register(Poll, PollAdmin)
 
 - Изменение приложения с SQLite на хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все из них могут размещаться на платформе Azure). Как описано в статье про [использование SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite отлично работает с сайтами с низким и средним уровнем трафика с менее чем 100 тысяч попаданий/день, но использовать большие объемы не рекомендуется. Кроме того, он работает только на одном компьютере, поэтому может использоваться в любом сценарии с несколькими серверами, таком как балансировка нагрузки и георепликация. Сведения о поддержке Django в других базах данных см. в разделе [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Настройка базы данных). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты.
 
-- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Visual Studio Team Services (VSTS). В дополнение к работе с системой управления исходным кодом (в VSTS, GitHub или в другом месте), VSTS может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, VSTS интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
+- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Azure Pipelines. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), Azure Test Plans может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps Services интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps Project](/azure/devops-project/azure-devops-project-python?view=vsts) (Создание конвейера CI/CD для Python с помощью проекта Azure DevOps)
+  - [Создание конвейера CI/CD для Python с помощью проектов Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Python development in Azure with Visual Studio Team Services](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/) (Разработка Python в Azure с помощью Visual Studio Team Services).
 

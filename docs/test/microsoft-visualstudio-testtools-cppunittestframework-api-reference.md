@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381990"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280926"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 В этом разделе перечислены открытые члены пространства имен `Microsoft::VisualStudio::CppUnitTestFramework`. С помощью этих интерфейсов API можно создавать модульные тесты для C++ на основе собственной платформы модульного тестирования Майкрософт. В конце раздела приводится [пример использования](#example).
 
- Файлы заголовков находятся в папке *папка_установки_Visual_Studio_2012[x86]***\VC\UnitTest\include**.
+ Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\include**.
 
- Файлы библиотек расположены в папке *папка_установки_Visual_Studio_2012[x86]***\VC\UnitTest\lib**.
+ Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\lib**.
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 

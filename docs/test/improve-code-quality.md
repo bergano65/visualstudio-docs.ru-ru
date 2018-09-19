@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180117"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321064"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Средства тестирования Visual Studio
 
@@ -42,8 +42,7 @@ ms.locfileid: "39180117"
 
 ## <a name="related-scenarios"></a>Связанные сценарии
 
-* [Произвольное и ручное тестирование (VSTS)](/vsts/manual-test/)
-* [Нагрузочное тестирование (VSTS)](/vsts/load-test/index)
-* [Непрерывное тестирование (VSTS)](/vsts/build-release/test/index)
-* [Общие сведения о DevOps для Team Services и TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Произвольное и ручное тестирование (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [Нагрузочное тестирование (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [Непрерывное тестирование (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Средства анализа кода](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

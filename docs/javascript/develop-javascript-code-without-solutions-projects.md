@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924744"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774608"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -58,3 +58,27 @@ Visual Studio 2017 представляет возможность [разраб
 
 > [!NOTE]
 > Дополнительные сведения о файле *tsconfig.json* см. на [странице руководства по tsconfig.json в TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Модульные тесты
+Вы можете включить интеграцию модульных тестов в Visual Studio, указав тестовый корень в файле *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Средство запуска тестов перечисляет локально установленные пакеты, чтобы определить, какие платформы тестирования использовать.
+Если ни одна из поддерживаемых платформ не распознается, выбирается средство выполнения тестов по умолчанию *ExportRunner*. Другие поддерживаемые платформы:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+После открытия обозревателя тестов (выберите **Тест** > **Windows** > **Обозреватель тестов**) Visual Studio обнаруживает и отображает тесты.
+
+> [!NOTE]
+> Средство выполнения тестов перечисляет только файлы JavaScript в тестовом корне. Если ваше приложение написано в TypeScript, вам нужно сначала создать их.

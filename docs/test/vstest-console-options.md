@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2821e785d0caf504cd64eb90a6538b1a69e9a26
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978656"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279691"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -46,7 +46,7 @@ ms.locfileid: "38978656"
 |**/Framework: [*версия платформы*]**|Целевая версия .NET Framework, которую следует использовать для выполнения тестов.<br />Допустимые значения — Framework35, Framework40, Framework45 и FrameworkUap10.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
 |**/TestCaseFilter:[*выражение*]**|Запуск тестов, соответствующих заданному выражению.<br /><Выражение \> имеет формат <свойство\>=<значение\>[&#124;<Выражение\>].<br />Пример: `/TestCaseFilter:"Priority=1"`<br />Пример: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Параметр командной строки **/TestCaseFilter** нельзя использовать с параметром командной строки **/Tests**. <br />Сведения о создании и использовании выражений см. в разделе [Фильтр TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Отображает сведения об использовании.|
-|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример: чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример: чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL-адрес командного проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=<имя командного проекта\>;**<br />**[;Platform=<"Any CPU" по умолчанию>]**<br />**[;Flavor=<"Debug" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|
+|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример: чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример: чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=<"Any CPU" по умолчанию>]**<br />**[;Flavor=<"Debug" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|
 |**/ListTests:[*имя файла*]**|Перечисление обнаруженных тестов из указанного контейнера тестов.|
 |**/ListDiscoverers**|Перечисление установленных средств обнаружения тестов.|
 |**/ListExecutors**|Перечисление установленных исполнителей тестов.|

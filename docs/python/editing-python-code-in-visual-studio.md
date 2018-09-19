@@ -1,7 +1,7 @@
 ---
 title: Редактирование кода Python
 description: Редактор кода Python в Visual Studio предоставляет возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626836"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774769"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
-Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация.
+Так как при разработке вы много работаете в редакторе кода, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции для повышения продуктивности этой работы. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация.
 
 Редактор также интегрируется с **интерактивным** окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник, шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) и [Использование интерактивного окна. Команда "Отправить в интерактивное окно"](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 

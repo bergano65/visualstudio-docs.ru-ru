@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6952408611bfdd59a3d488db2a7f34524588edf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37f2dd735b7deb2d4fed1232c2ba690b26a9fde0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669533"
 ---
 # <a name="span-markers"></a>Маркеры диапазонов
 Маркер диапазона представляет содержательный этап приложения. Например, можно использовать диапазон для представления временного интервала, в течение которого обрабатывается определенный рабочий элемент. Его длина представляет длительность соответствующего этапа приложения. На этой иллюстрации показан диапазон в визуализаторе параллелизма:  

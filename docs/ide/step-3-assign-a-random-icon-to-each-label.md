@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8aac613f4fe8a93ebd31127e26bcd92218b6300
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748248"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775856"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждой метке случайного значка
 Если значки оказываются в одной и той же ячейке каждую игру, игра становится слишком простой. Чтобы избежать этого, назначайте значки элементам управления Label случайным образом, используя для этого метод `AssignIconsToSquares()`.
@@ -49,7 +49,7 @@ ms.locfileid: "34748248"
 
      Помните, если вы не уверены, что делает какая-либо часть кода, можно навести указатель мыши на элемент кода и посмотреть отображаемую подсказку. Можно также выполнять каждую строку кода пошагово после запуска программы, воспользовавшись отладчиком Visual Studio. Дополнительные сведения см. в руководствах по [началу работы с отладчиком в Visual Studio](http://msdn.microsoft.com/vstudio/ee672313.aspx) и [навигации по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).
 
-3.  Чтобы быстро заполнить игровое поле значками, необходимо вызвать метод `AssignIconsToSquares()` сразу после запуска программы. При написании кода на языке Visual C# добавьте оператор после вызова метода `InitializeComponent()` в **конструкторе Form1****. В этом случае форма будет вызывать новый метод для ее настройки перед отображением. Конструкторы вызываются при создании нового объекта, такого как класс или структура. Дополнительные сведения см. в разделах [Конструкторы (руководство по программированию на C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) и [Использование конструкторов и деструкторов в Visual Basic](http://msdn.microsoft.com/library/2z08e49e.aspx).
+3.  Чтобы быстро заполнить игровое поле значками, необходимо вызвать метод `AssignIconsToSquares()` сразу после запуска программы. При написании кода на языке Visual C# добавьте оператор после вызова метода `InitializeComponent()` в **Form1**_constructor_. В этом случае форма будет вызывать новый метод для ее настройки перед отображением. Конструкторы вызываются при создании нового объекта, такого как класс или структура. Дополнительные сведения см. в разделах [Конструкторы (руководство по программированию на C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) и [Использование конструкторов и деструкторов в Visual Basic](http://msdn.microsoft.com/library/2z08e49e.aspx).
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

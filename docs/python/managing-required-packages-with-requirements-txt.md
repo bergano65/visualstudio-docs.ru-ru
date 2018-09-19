@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468249"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548796"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
-Если вы используете проект совместно с другими пользователями с помощью системы сборки или планируете [опубликовать его в Microsoft Azure](python-azure-cloud-service-project-template.md), нужно указать требуемые для проекта внешние пакеты. Рекомендуется использовать файл [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
+Если вы используете проект совместно с другими пользователями с помощью системы сборки или планируете [опубликовать его в Microsoft Azure](python-azure-cloud-service-project-template.md), нужно указать требуемые для проекта внешние пакеты. Рекомендуется использовать файл [requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
 
 Технически для отслеживания требований можно использовать любой файл (используя `-r <full path to file>` при установке пакета), но Visual Studio имеет встроенную поддержку *requirements.txt*:
 
@@ -38,7 +38,7 @@ ms.locfileid: "39468249"
 
 Так как файлы *requirements.txt* используются для фиксации требований среды, все установленные пакеты записываются с точными версиями. Такие версии позволяют легко воспроизвести ваше окружение на другом компьютере. Пакеты включены, даже если они были установлены с диапазоном версий, как зависимость от другого пакета или с установщиком, отличным от pip.
 
-Если pip не удается установить пакет, указанный в файле *requirements.txt*, установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл *requirements.txt*:
+Если pip не удается установить пакет, указанный в файле *requirements.txt*, установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

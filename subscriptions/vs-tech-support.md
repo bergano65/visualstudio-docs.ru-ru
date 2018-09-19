@@ -9,12 +9,12 @@ description: Сведения о том, как активировать пре�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289422"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701771"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация преимущества технической поддержки в подписках Visual Studio
 
@@ -32,12 +32,13 @@ ms.locfileid: "43289422"
 3.  Чтобы завершить этот процесс, необходимо предоставить представителю следующие сведения:
     - Адрес электронной почты, используемый для входа в подписку
     - Идентификатор подписки, который можно найти на вкладке [Подписки](https://my.visualstudio.com/subscriptions).
+
     > [!div class="mx-imgBorder"]
     > ![Поиск идентификатора подписки для преимущества технической поддержки](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Чтобы активировать свою учетную запись поддержки на языке, отличном от английского, выберите свою страну в [этом списке](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> Чтобы активировать свою учетную запись поддержки на языке, отличном от английского, выберите свою страну в [этом списке](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Отправка заявки

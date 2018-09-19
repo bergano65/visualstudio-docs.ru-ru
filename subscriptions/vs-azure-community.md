@@ -9,12 +9,12 @@ description: Сведения о преимуществе сообщества A
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289512"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283734"
 ---
 # <a name="azure-community"></a>Сообщество Azure
 
@@ -68,4 +68,4 @@ ms.locfileid: "43289512"
 -  Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
 -  [Документация по Azure](/azure/).
 -  Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -9,12 +9,12 @@ description: Сведения об активации учебной подпи�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289325"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279171"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
@@ -38,13 +38,15 @@ ms.locfileid: "43289325"
 
 4.  В разделе **Activate your account** (Активация учетной записи) страницы вам нужно будет выполнить четыре шага:
 
-    - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для VSTS](/vsts/marketplace/install-vsts-extension?view=vsts).
+    - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
-    Нажмите зеленую кнопку **Установить**, если вы используете VSTS, или кнопку **Скачать** для Team Foundation Server.  В этом примере мы будем использовать VSTS.
+
+    Нажмите зеленую кнопку **Установить**, если вы используете Azure DevOps Services, или кнопку **Загрузить** для Team Foundation Server.  В этом примере мы будем использовать Azure DevOps Services.
     > [!div class="mx-imgBorder"]
     > ![Установка расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Затем выберите нужную учетную запись VSTS и нажмите кнопку **Подтверждение**.  (Если VSTS еще не настроен, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте ваше преимущество VSTS.)
+    - Затем выберите нужную организацию Azure DevOps Services и нажмите кнопку **Подтвердить**.  (Если вы еще не настроили Azure DevOps Services, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте преимущество Azure DevOps Services.)
+
     > [!div class="mx-imgBorder"]
     > ![Учетная запись для подтверждения преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ ms.locfileid: "43289325"
     > [!div class="mx-imgBorder"]
     > ![Установка преимущества WhiteSource завершена](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Откройте панель мониторинга проекта Visual Studio Team Services (VSTS), щелкните меню **Сборка и выпуск** и выберите **WhiteSource Bolt**.
+5.  Откройте панель мониторинга проекта Azure DevOps Services, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![Добавление расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -90,4 +92,4 @@ ms.locfileid: "43289325"
 
 -  Нужна помощь с WhiteSource Bolt?  Вы можете начать беседу с представителем WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

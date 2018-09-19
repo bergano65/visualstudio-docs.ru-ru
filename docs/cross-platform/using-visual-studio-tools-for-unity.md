@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251722"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283344"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
@@ -188,7 +188,7 @@ ms.locfileid: "39251722"
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Отладка проекта с управляемой библиотекой DLL, используемой в проекте Unity
 
-1. Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL. Дополнительные сведения о добавлении нового или существующего проекта в решение см. в разделе [Практическое руководство. Добавление проектов в решение](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).
+1. Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL. Дополнительные сведения о добавлении нового или существующего проекта в решение см. в разделе [Практическое руководство. Добавление проектов в решение](https://msdn.microsoft.com/library/ff460187.aspx).
 
      ![Добавление существующего проекта библиотеки DLL в решение](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -217,6 +217,6 @@ ms.locfileid: "39251722"
 |Открыть мастер MonoBehavior|**CTRL**+**SHIFT**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Открыть обозреватель проектов Unity|**ALT**+**SHIFT**+**E**|**View.UnityProjectExplorer**|
 |Доступ к документации по Unity|**CTRL**+**ALT**+**M, CTRL**+**H**|**Help.UnityAPIReference**|
-|Присоединиться к отладчику Unity (проигрыватель или редактор)|***Значение по умолчанию отсутствует***|**Debug.AttachUnityDebugger**|
+|Присоединиться к отладчику Unity (проигрыватель или редактор)|**_значение по умолчанию отсутствует_**|**Debug.AttachUnityDebugger**|
 
  Если вас не устраивает сочетание клавиш по умолчанию, его можно изменить. Чтобы узнать, как это сделать, см. статью [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

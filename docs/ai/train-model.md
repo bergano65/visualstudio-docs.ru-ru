@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379836"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278326"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Обучение моделей искусственного интеллекта в Azure Batch AI
 
@@ -34,9 +34,9 @@ Batch AI — это облачная служба, позволяющая сп�
 
     ![Коллекция примеров](media\train-model\batchai.png)
 
-3. Последовательно выберите **"Вид" > "Team Explorer…"**, чтобы открыть окно **Team Explorer**, в котором вы можете подключиться к GitHub или Visual Studio Team Services либо клонировать репозиторий.
+3. Последовательно выберите **Вид > Team Explorer**, чтобы открыть окно **Team Explorer**, в котором вы можете подключиться к GitHub или Azure DevOps либо клонировать репозиторий.
 
-    ![Окно Team Explorer с возможностями подключения к Visual Studio Team Services и GitHub, а также клонирования репозитория](media\train-model\team-explorer.png)
+    ![Окно Team Explorer с возможностями подключения к Azure DevOps и GitHub, а также клонирования репозитория](media\train-model\team-explorer.png)
 
 4. В разделе **Локальные репозитории Git** в поле URL-адреса введите `https://github.com/Microsoft/samples-for-ai`, укажите папку для клонируемых файлов и нажмите кнопку **Клонировать**.
 

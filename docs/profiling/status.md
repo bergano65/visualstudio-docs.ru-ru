@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e39743b8e3e6602961dfec693d5dc92c0ee63
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669328"
 ---
 # <a name="status"></a>Status
-Параметр VSPerfCmd.exe **Status** позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.  
+Параметр *VSPerfCmd.exe* **Status** позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.  
   
- Параметр **Status** должен быть единственным параметром, указанным в командной строке. Для отображения состояния необходимо инициализировать профилировщик параметром VSPerfCmd.exe **Start**.  
+ Параметр **Status** должен быть единственным параметром, указанным в командной строке. Для отображения состояния необходимо инициализировать профилировщик параметром *VSPerfCmd.exe* **Start**.  
   
 ## <a name="syntax"></a>Синтаксис  
   

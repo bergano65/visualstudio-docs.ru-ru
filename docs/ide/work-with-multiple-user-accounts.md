@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179701"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283474"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
 
@@ -59,9 +59,9 @@ Azure AD поддерживает единый вход в веб-приложе
 
 Дополнительные сведения о различных типах проверки подлинности в ASP.NET см. в разделе [Создание веб-проектов ASP.NET в Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (сведения о проверке подлинности все еще актуальны для текущих версий Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Доступ к учетной записи Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Доступ к вашей организации Team Foundation Server (TFS)
 
-В главном меню выберите пункт **Команда** > **Подключиться к Team Foundation Server**, чтобы открыть окно **Team Explorer**. Щелкните пункт **Выберите командные проекты**, а затем в списке **Выберите Team Foundation Server**появится URL-адрес для учетной записи Visual Studio Team Services. При выборе URL-адреса будет выполнен вход в систему без необходимости повторного ввода учетных данных.
+В главном меню выберите пункт **Команда** > **Подключиться к Team Foundation Server**, чтобы открыть окно **Team Explorer**. Щелкните пункт **Выбрать проекты**, а затем в списке **Выберите Team Foundation Server** появится URL-адрес для вашей организации TFS. При выборе URL-адреса будет выполнен вход в систему без необходимости повторного ввода учетных данных.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Добавление учетной записи второго пользователя в Visual Studio
 

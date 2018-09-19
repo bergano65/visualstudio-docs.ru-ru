@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203856"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321155"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Практическое руководство. Сбор данных IntelliTrace для отладки сложных проблем
 
@@ -110,7 +110,7 @@ ms.locfileid: "39203856"
 
 ## <a name="see-also"></a>См. также
 
-- [Сбор диагностических данных во время тестирования (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Сбор данных диагностики в ручных тестах (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
 - [Сбор данных IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)
