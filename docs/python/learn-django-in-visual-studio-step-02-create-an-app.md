@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547936"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995967"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг2. Создание приложения Django с представлениями и шаблонами страниц
 
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 Если вы не используете в конце регулярного выражения символ $, как в случае с `^home`, то шаблон URL-адреса соответствует *любому* URL-адресу, который начинается с home, например home, homework, homestead и home192837.
 
-Чтобы поэкспериментировать с разными регулярными выражениями, попробуйте воспользоваться интерактивными средствами, например [regex101.com](https://regex101.com) в [pythex.org](https://www.pythex.org).
+Чтобы поэкспериментировать с разными регулярными выражениями, попробуйте воспользоваться интерактивными средствами, например [regex101.com](https://regex101.com) в [pythex.org](http://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Шаг 2–3. Преобразование представления с помощью HTML
 
