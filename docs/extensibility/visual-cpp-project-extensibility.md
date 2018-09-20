@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552509"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135663"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
-*Системы проектов Visual C++* используемых VCXPROJ-файлами. Он основан на [Visual Studio распространенных система проектов (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) и предоставляет дополнительные идентификаторы, расширяемость для конкретного C++ указывает для облегчения интеграции новые наборы инструментов, архитектур сборки и целевых платформ. 
+*Системы проектов Visual C++* используется для файлов с расширением VCXPROJ. Он основан на [Visual Studio распространенных система проектов (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) и предоставляет дополнительные идентификаторы, расширяемость для конкретного C++ указывает для облегчения интеграции новые наборы инструментов, архитектур сборки и целевых платформ. 
 
 ## <a name="c-msbuild-targets-structure"></a>Структура целевые объекты MSBuild для C++
 
@@ -227,13 +227,13 @@ ms.locfileid: "45552509"
 </Target>
 ```
 
-`ClCompile` и другие целевые объекты сборки инструментальным определяются как пустые целевые объекты в Microsoft.CppBuild.targets:
+`ClCompile` и другие сборки, целевые объекты конкретного инструмента определяются как пустые целевые объекты в *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Так как `ClCompile` целевой объект определен как пустая цель в *Microsoft.CppBuild.targets*, если только он переопределяется атрибутом набор инструментов, не выполняет никаких действий реальные сборки. Можно переопределить целевые объекты набора инструментов `ClCompile` целевой, то есть они могут содержать другую `ClCompile` определения после импорта *Microsoft.CppBuild.targets*: 
+Так как `ClCompile` целевого пуст, если только он переопределяется атрибутом набор инструментов, не выполняет никаких действий реальные сборки. Можно переопределить целевые объекты набора инструментов `ClCompile` целевой, то есть они могут содержать другую `ClCompile` определения после импорта *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ ms.locfileid: "45552509"
 </Target>
 ```
 
-Несмотря на название `ClCompile`, который был создан, прежде чем Visual Studio реализована поддержка разных платформ, `ClCompile` целевой объект не потребуется вызывать CL.exe. Он также может вызвать другие компиляторы, Clang и gcc с помощью соответствующих задач MSBuild.
+Несмотря на свое название, который был создан до Visual Studio реализована поддержка разных платформ, `ClCompile` целевой объект не потребуется вызывать CL.exe. Он также может вызвать другие компиляторы, Clang и gcc с помощью соответствующих задач MSBuild.
 
 `ClCompile` Целевому серверу должно быть не все зависимости, за исключением `SelectClCompile` целевой объект, который необходим для команды компиляции отдельного файла для работы в интегрированной среде разработки.
 
@@ -289,7 +289,7 @@ Microsoft.Cpp.Common.Tasks.dll реализует эти задачи:
 
 1. Если требуется повысить производительность задачи или достаточно более сложные функции, используйте регулярное MSBuild [написание задач](../msbuild/task-writing.md) процесса.
 
-   Если не все входные и выходные данные средства перечислены в командной строке средства, как в `CL`, `MIDL`, и `RC` случаях и автоматического входных и выходных данных файла отслеживания, а также создания файла .tlog, создать производный задачи из `TrackedVCToolTask`.
+   Если не все входные и выходные данные средства перечислены в командной строке средства, как в `CL`, `MIDL`, и `RC` случаи и при необходимости автоматическое входных и выходных данных файла отслеживания, а также создания файла .tlog производными ваша задача `Microsoft.Build.CPPTasks.TrackedVCToolTask`класса. В настоящее время, пока есть документация по базе [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) класса, примеры и документацию, сведения о отсутствуют `TrackedVCToolTask` класса. Если это особый интерес, добавить свой голос к запросу на [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Инкрементные сборки и проверки наличия обновлений
 
@@ -428,7 +428,7 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Расширяемость проектов в Интегрированной среде разработки Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Расширяемость проектов Visual C++ в Интегрированной среде разработки Visual Studio
 
 Система проектов Visual C++ основана на [система проектов VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)и использует точки расширения. Тем не менее реализации иерархии проекта в Visual C++ и не основан на CPS, поэтому расширяемость иерархии ограничен элементов проекта.
 
@@ -656,6 +656,6 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) предоставляет обработчик построения и расширяемый формат на основе XML для файлов проекта. Вы должны быть знакомы с basic [основные возможности MSBuild](../msbuild/msbuild-concepts.md) и с тем, как [MSBuild для Visual C++](/cpp/build/msbuild-visual-cpp-overview) система проектов works для расширения Visual C++.
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) предоставляет расширение API-интерфейсы, используемые CPS и система проектов Visual C++. Обзор использования MEF, CPS, см. в разделе [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) предоставляет расширение API-интерфейсы, используемые CPS и система проектов Visual C++. Обзор использования MEF, CPS, см. в разделе [CPS и MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) в [VSProjectSystem Обзор MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Можно настроить существующие системы сборки для добавления этапов построения или новых типов файлов. Дополнительные сведения см. в разделе [Общие сведения о MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) и [работа со свойствами проекта](/cpp/ide/working-with-project-properties).
