@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957673f9e6701cc2148f6b29cb8e39fcfb8579e1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3faf3e42442db03bbb40bbc3e726b909956d4187
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251612"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370873"
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "39251612"
  [Контекст оценки](../../extensibility/debugger/evaluation-context.md)  
  Предоставляет аргументы, передаваемые во время DE вызывает средство оценки выражений (EE).  
   
- [Пример MyCEE](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Пример MyCEE](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Демонстрирует реализацию подход к созданию вычислитель выражений для языка MyC.  
   
 ## <a name="see-also"></a>См. также  

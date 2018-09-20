@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498919"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370722"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проектов
 Типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использовать *фабрики проектов* для создания экземпляров объектов проекта. Фабрику проекта похоже на стандартный класс фабрики для создаваемых посредством функции CoCreateInstance COM-объектов. Тем не менее объекты проекта не создаваемых посредством функции CoCreateInstance; они могут создаваться только с помощью фабрики проектов.  
@@ -28,7 +28,7 @@ ms.locfileid: "39498919"
   
  Вы можете реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейса в класс в проекте. Как правило он располагается в свой собственный модуль.  
   
- Пример реализации `IVsProjectFactory` интерфейсом, см. в разделе *PrjFac.cpp*, который содержится в [базовый проект](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) каталог образцов.  
+ Пример реализации `IVsProjectFactory` интерфейсом, см. в разделе *PrjFac.cpp*, который содержится в [базовый проект](https://www.microsoft.com/download/details.aspx?id=55984) каталог образцов.  
   
  Проекты, поддерживающие статистически владелец должен сохранять ключ владельца в своем файле проекта. При <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> был вызван над проектом с помощью ключа владельца, принадлежащий проект преобразует его владелец ключа в фабрику проекта, затем вызывает GUID `CreateProject` метод данной фабрикой проекта, чтобы сделать фактическое создание.  
   
