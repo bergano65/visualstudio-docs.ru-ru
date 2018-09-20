@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512269"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370995"
 ---
 # <a name="context-parameters"></a>Контекстные параметры
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), можно добавить к мастеров **новый проект**, **Добавление нового элемента**, или **добавить проект Sub** диалоговым окнам. Добавлена мастеров можно найти на **файл** меню или щелкнув правой кнопкой мыши проект в **обозревателе решений**. Интегрированной среды разработки параметры контекста передается в реализацию мастера. Параметры контекста определять состояние проекта при интегрированной среды разработки вызывает мастера.  
@@ -28,7 +28,7 @@ ms.locfileid: "39512269"
   
 ## <a name="context-parameters-for-new-project"></a>Контекстные параметры для нового проекта  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardNewProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
@@ -40,7 +40,7 @@ ms.locfileid: "39512269"
   
 ## <a name="context-parameters-for-add-new-item"></a>Контекстные параметры для добавления нового элемента  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddItem>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
@@ -51,7 +51,7 @@ ms.locfileid: "39512269"
   
 ## <a name="context-parameters-for-add-sub-project"></a>Контекстные параметры для добавления проекта Sub  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddSubProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
@@ -67,4 +67,4 @@ ms.locfileid: "39512269"
  [Пользовательские параметры](../../extensibility/internals/custom-parameters.md)   
  [Мастеры](../../extensibility/internals/wizards.md)   
  [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Контекстные параметры для запуска мастеров](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Контекстные параметры для запуска мастеров](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

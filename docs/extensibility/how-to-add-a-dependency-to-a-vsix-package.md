@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b4bf86df74a60dbeabef5c6f375354c5a945aa
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 84865bf354bd1822ca872ed5f0df89a4330fb690
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636692"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371047"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Способ: добавить зависимость в пакет VSIX
 
@@ -52,6 +52,6 @@ ms.locfileid: "39636692"
 
 ## <a name="see-also"></a>См. также
 
- [Справочник по схеме 1.0 расширение VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Подготовка расширения для развертывания установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
