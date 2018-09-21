@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498676"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495249"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство: Создание базового редактора и регистрации файла тип редактора
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора при создании файла с *.myext* загружается расширение имени файла.  
@@ -37,7 +37,7 @@ ms.locfileid: "39498676"
   
 ### <a name="to-create-the-vspackage"></a>Чтобы создать VSPackage  
   
--   Запуск [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и создайте [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: создание команды меню VSPackage](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Запуск [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и создайте [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: создание команды меню VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Чтобы добавить фабрики редактора  
   

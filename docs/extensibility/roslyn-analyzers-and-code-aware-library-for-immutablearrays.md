@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637725"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495925"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и кода-библиотека для immutablearrays с
 
@@ -307,13 +307,13 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 ## <a name="talk-video-and-finish-code-project"></a>Обсуждение видео и завершить проект кода
 
-Этот пример разработан и рассматривается далее в [в этом докладе](http://channel9.msdn.com/events/Build/2015/3-725).  Беседа демонстрирует работу анализатора, а также для его создания.
+Этот пример разработан и рассматривается далее в [в этом докладе](https://channel9.msdn.com/events/Build/2015/3-725).  Беседа демонстрирует работу анализатора, а также для его создания.
 
 Вы увидите готовый код [здесь](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  Вложенные папки *DoNotUseImmutableArrayCollectionInitializer* и *DoNotUseImmutableArrayCtor* иметь файл C# для поиска проблем и файл C#, реализующий код исправления, которые показывают в Visual Studio лампочки пользовательского интерфейса.  Обратите внимание, что готовый код имеет немного дополнительные абстракции, чтобы избежать выборка ImmutableArray\<T > снова и снова типа object.  Она использует вложенные действия, зарегистрированного для сохранения типа объекта в контексте, который доступен всякий раз, когда действия sub (анализ создания объектов и анализировать инициализации коллекции) выполнения.
 
 ## <a name="see-also"></a>См. также
 
-* [\\\Build 2015 ток](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\\Build 2015 ток](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Полный код на GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Несколько примеров на GitHub, сгруппированы в три вида анализаторы](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Другие документы на сайте GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

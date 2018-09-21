@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510670"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495938"
 ---
 # <a name="vspackage-setup-scenarios"></a>Сценарии установки VSPackage
 
@@ -31,7 +31,7 @@ ms.locfileid: "39510670"
 
 ### <a name="make-your-components-independent"></a>Создание независимых компонентов
 
-После идентификации и заполнить компонента, назначить `GUID`и развернуть компонент, нельзя изменить его композиции. При изменении компонента композиции, итоговый компонент должен быть компонента с новым `GUID`. Учитывая эти факты, наибольшую гибкость управления версиями является обеспечиваемый что делает каждый компонент независимые, проводить более единицы. Дополнительные сведения о правила, управляющие компоненты, см. в разделе [изменения кода компонент](/windows/desktop/Msi/changing-the-component-code) и [что произойдет, если компонент правила разбиваются?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+После идентификации и заполнить компонента, назначить `GUID`и развернуть компонент, нельзя изменить его композиции. При изменении компонента композиции, итоговый компонент должен быть компонента с новым `GUID`. Учитывая эти факты, наибольшую гибкость управления версиями является обеспечиваемый что делает каждый компонент независимые, проводить более единицы. Дополнительные сведения о правила, управляющие компоненты, см. в разделе [изменения кода компонент](/windows/desktop/Msi/changing-the-component-code) и [что произойдет, если компонент правила разбиваются?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Не следует смешивать общие и закрытые ресурсы в компоненте
 
@@ -77,7 +77,7 @@ ms.locfileid: "39510670"
 
 ![Установщик обновления пакета VS Side-by-Side VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Дополнительные сведения о развертывании side-by-side сборок см. в разделе [Упрощение развертывания и решению осложнения с библиотеками DLL в .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Дополнительные сведения о развертывании side-by-side сборок см. в разделе [Упрощение развертывания и решению осложнения с библиотеками DLL в .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>См. также
 

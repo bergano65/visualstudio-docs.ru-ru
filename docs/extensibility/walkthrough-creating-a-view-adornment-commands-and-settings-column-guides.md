@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499995"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496107"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Пошаговое руководство: Создание оформления представления, команд и параметров (направляющие столбцов)
 Вы можете расширить редактор текста или кода Visual Studio с командами и эффектов представления. В этой статье показано, как приступить к работе с компонентом популярное расширение, направляющие столбцов. Направляющие столбцов являются визуально света линий, рисуемых в представлении текстового редактора, чтобы помочь в управлении код, чтобы ширина определенных столбцов. В частности форматированный код может быть важно для примеры включают в документах, в блогах, или отчеты об ошибках.  
@@ -35,7 +35,7 @@ ms.locfileid: "39499995"
   
 -   Добавить поддержку для вызова команд из командного окна Visual Studio  
   
- Вы можете опробовать версию функции направляющие столбец с данной коллекцией Visual Studio[расширение](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Вы можете опробовать версию функции направляющие столбец с данной коллекцией Visual Studio[расширение](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Примечание**: В этом пошаговом руководстве, вставьте значительную кода на несколько файлов, создаваемым шаблонами расширения Visual Studio. Но вскоре в этом пошаговом руководстве будет ссылаться на полноценное решение на github с другими примерами расширения. Полный код несколько отличается, у нее есть значки реальные команды вместо использования generictemplate значки.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Готовый код проекта  
  Скоро будет проект github примеров расширения среды Visual Studio и завершенного проекта будет здесь. В этой статье будут обновляться для указания существует, когда это происходит. Готовый пример проекта могут иметь разные идентификаторы GUID и будет иметь полоса различными растровыми изображениями для значки команд.  
   
- Вы можете опробовать версию функции направляющие столбец с данной коллекцией Visual Studio[расширение](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Вы можете опробовать версию функции направляющие столбец с данной коллекцией Visual Studio[расширение](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-editor.md)   
