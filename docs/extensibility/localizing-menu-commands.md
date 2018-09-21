@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638034"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495457"
 ---
 # <a name="localize-menu-commands"></a>Локализация команд меню
 Можно предоставить локализованный текст для команды меню и панели инструментов, создание локализованных *.vsct* файлы и локализованных *.resx* файлы для пакета VSPackage, а затем обновить файлы проекта для включения изменения.  
@@ -37,7 +37,7 @@ ms.locfileid: "39638034"
   
 2.  Создайте копию *filename.en US.vsct* для каждого языка локализации.  
   
-     Имя каждой копии *filename. {} Языковой стандарт} .vsct*, где *{языковой стандарт}* — это имя определенного языка и региональных параметров. Список значений имени языка и региональных параметров, см. в разделе [идентификаторы, назначаемые Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Имя каждой копии *filename. {} Языковой стандарт} .vsct*, где *{языковой стандарт}* — это имя определенного языка и региональных параметров. Список значений имени языка и региональных параметров, см. в разделе [идентификаторы, назначаемые Microsoft](/windows/uwp/publish/supported-languages).  
   
      Эти *имя файла. Locale.vsct* файлы будут содержать текст локализованного меню для своего пакета.  
   

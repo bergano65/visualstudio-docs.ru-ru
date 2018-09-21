@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586812"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495691"
 ---
 # <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
 Этот раздел содержит сведения о пространствах имен, связанные пространства имен и другие области интересов Visual Studio для разработчиков, использующих пакет SDK для Visual Studio.  
@@ -223,7 +223,7 @@ ms.locfileid: "39586812"
  <xref:Microsoft.VisualStudio.Threading>  
  Используется для управления потоками Visual Studio.  
   
- [Пространство имен Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) для подключенными службами Visual Studio.  
+ [Пространство имен Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) для подключенными службами Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) перечисления  
  Указывает флаги узла IntelliSense.  
@@ -231,7 +231,7 @@ ms.locfileid: "39586812"
  [Справочник по схемам XML VSCT](../extensibility/vsct-xml-schema-reference.md)  
  Таблица элементов схемы Visual Studio Command Table с разрешенный дочерний элементы и атрибуты для каждого.  
   
- [Идентификаторы GUID и константы](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID и константы](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  Предоставляет список идентификаторов GUID, используемый на протяжении всего пакета SDK.  
   
  [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md)  

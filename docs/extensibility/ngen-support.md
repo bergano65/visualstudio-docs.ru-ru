@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639494"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495483"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Поддержка NGen в VSIX v3
 
@@ -26,7 +26,7 @@ ms.locfileid: "39639494"
 
 >Генератор образов в машинном (*Ngen.exe*) — это средство повышения быстродействия управляемых приложений. *Ngen.exe* создает образы в машинном коде, которые файлов, содержащих скомпилированный для конкретного процессора машинный код и устанавливает их в кэш образов в машинном коде на локальном компьютере. Среда выполнения может использовать образы в машинном коде, находящиеся в кэше, вместо использования JIT-компилятора для компиляции исходной сборки.
 >
->из [Ngen.exe (генератор образов в машинном коде)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>из [Ngen.exe (генератор образов в машинном коде)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 Чтобы «ngen», сборка VSIX необходимо установить «для каждого экземпляра на уровне компьютера». Эту функцию можно включить, установив флажок «все пользователи» `extension.vsixmanifest` конструктора:
 
@@ -41,7 +41,7 @@ ms.locfileid: "39639494"
 1. **NGen** (логическое) — значение true, если установщик Visual Studio будет «ngen» сборки.
 2. **Приложение NGen** (строка) — Ngen предоставляет возможность использования приложения *app.config* файла для разрешения зависимостей сборки. Это значение должно быть присвоено приложения, *app.config* вы хотите использовать (относительно каталога установки Visual Studio).
 3. **Архитектура NGen** (enum) — архитектура скомпилировать в собственном коде сборки. Возможные варианты::. NotSpecified b. X86 c. X64 d. Все
-4. **NGen Priority** (целое число от 1 до 3) — уровень приоритета Ngen описан в [уровни приоритета Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+4. **NGen Priority** (целое число от 1 до 3) — уровень приоритета Ngen описан в [уровни приоритета Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Ниже приведен краткий обзор **свойства** окно в действии:
 

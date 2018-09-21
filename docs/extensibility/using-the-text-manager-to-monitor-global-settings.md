@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0378d4c8c021cb47362220b49c8d7cb5a4ebc82
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2a90d7d900054ee1ba8dec1a278d37d5898985dd
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079791"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495431"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Использование диспетчера текстов для наблюдения за глобальные параметры
 Если реализовать базовый редактор, необходимо отслеживать изменения, сделанные глобальные параметры, так как эти изменения могут повлиять на ваш экземпляр редактора. Можно отслеживать изменения путем прослушивания события, вызванные диспетчера текстов. Например при указании глобальных предпочтение внешний вид или поведение компонента в базовом редакторе, например его объект данных документа, диспетчер текстовых сохраняет эти данные и передает их все затронутые этой проблемой клиенты.  
@@ -43,4 +43,4 @@ ms.locfileid: "39079791"
   
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   
- [Возможности редактора](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+ [Возможности редактора](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

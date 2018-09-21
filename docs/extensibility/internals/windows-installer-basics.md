@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513430"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495548"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 Установщик Windows устанавливает и удаляет приложения или программных продуктов на компьютере пользователя, выполнения этих задач в блоках, именуемых компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки с помощью установщика Windows.  
@@ -75,4 +75,4 @@ ms.locfileid: "39513430"
 -   Ресурс не с версиями когда-нибудь должен поставляться в несколько WIC.  
   
 ## <a name="see-also"></a>См. также  
- [Что произойдет, если правила компонентов не работают?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Что произойдет, если правила компонентов не работают?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

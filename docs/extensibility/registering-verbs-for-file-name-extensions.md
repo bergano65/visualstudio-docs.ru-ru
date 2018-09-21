@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639738"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495262"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 Сопоставление расширения имени файла с приложением, как правило, имеет предпочитаемым действием, которое происходит при двойном щелчке файла. Этот предпочитаемый действия связанного действия, например открытым, соответствующее действие.  
   
- Вы можете зарегистрировать команд, которые связаны с программный идентификатор (ProgID) для расширения с помощью ключа оболочки, расположенных в **HKEY_CLASSES_ROOT\{progid} \shell**. Дополнительные сведения см. в разделе [типы файлов](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Вы можете зарегистрировать команд, которые связаны с программный идентификатор (ProgID) для расширения с помощью ключа оболочки, расположенных в **HKEY_CLASSES_ROOT\{progid} \shell**. Дополнительные сведения см. в разделе [типы файлов](/windows/desktop/shell/fa-file-types).  
   
 ## <a name="register-standard-verbs"></a>Зарегистрировать стандартные команды  
  Операционная система распознает следующие стандартные команды:  

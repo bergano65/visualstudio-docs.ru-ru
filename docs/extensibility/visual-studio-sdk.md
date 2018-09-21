@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586779"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495821"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio поможет вам расширить возможности Visual Studio или интегрировать новые возможности в Visual Studio. Вы можете предоставлять свои расширения другим пользователям, а также в Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:  
@@ -68,7 +68,7 @@ ms.locfileid: "39586779"
 ## <a name="other-visual-studio-sdk-resources"></a>Другие ресурсы пакета SDK для Visual Studio  
  Если у вас вопросы о VSSDK или хотите поделиться опытом разработки расширений, можно использовать [форум расширяемости Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) или [комнаты чата Gitter ExtendVS](https://gitter.im/Microsoft/extendvs).  
   
- Дополнительные сведения в [VSX Arcana блог](http://blogs.msdn.com/b/vsx/) и ряд блогов, написанные специалистами MVP:  
+ Дополнительные сведения в [VSX Arcana блог](https://blogs.msdn.microsoft.com/vsx/) и ряд блогов, написанные специалистами MVP:  
   
 -   [Избранные расширения Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

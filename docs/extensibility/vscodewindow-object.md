@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9ef7d4b190a9b2c1a487fb70df33726ca9b3ed4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: dcd2bf5768b26237c5bc9301de9480b549ce01de
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586278"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495366"
 ---
 # <a name="vscodewindow-object"></a>Объект VSCodeWindow
 Окно кода — это окно специализированные документов, который может включать одно или несколько представлений текста, обычно <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объекта.  
@@ -30,7 +30,7 @@ ms.locfileid: "39586278"
   
  В следующей таблице приведены интерфейсы <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> объекта.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Предоставляет универсальный доступ механизм для поиска службы, определяющий глобальный уникальный идентификатор (GUID).|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Представляет несколько дочерних интерфейса (MDI) документа, содержащий одно или несколько представлений кода.|  
@@ -38,4 +38,4 @@ ms.locfileid: "39586278"
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [Изменение фигур](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Изменение фигур](https://www.microsoft.com/download/details.aspx?id=55984)

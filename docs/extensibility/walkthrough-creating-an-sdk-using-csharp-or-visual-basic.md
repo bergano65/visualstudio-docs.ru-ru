@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497879"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495951"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство: Создание пакета SDK, с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математической библиотеки с помощью Visual C# и затем пакета SDK в Visual Studio Extension (VSIX). Вы выполните следующие процедуры:  
@@ -93,7 +93,7 @@ ms.locfileid: "39497879"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ ms.locfileid: "39497879"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ ms.locfileid: "39497879"
   
 6.  В области сведений выберите **пакета SDK для простой математической** расширения.  
   
-     Отображение дополнительных сведений о вашем пакете SDK. Вы можете выбрать **Подробнее** ссылку, чтобы открыть http://www.msdn.microsoft.com, как указано в файле SDKManifest.xml ранее в этом пошаговом руководстве.  
+     Отображение дополнительных сведений о вашем пакете SDK. Вы можете выбрать **Подробнее** ссылку, чтобы открыть https://msdn.microsoft.com/, как указано в файле SDKManifest.xml ранее в этом пошаговом руководстве.  
   
 7.  В **диспетчер ссылок** выберите **пакета SDK для простой математической** , а затем нажать **ОК** кнопки.  
   
@@ -243,5 +243,5 @@ ms.locfileid: "39497879"
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Создание пакета SDK, с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Пошаговое руководство: Создание пакета SDK, с помощью JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Пошаговое руководство: Создание пакета SDK, с помощью JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [Создание пакета средств разработки программного обеспечения](../extensibility/creating-a-software-development-kit.md)
