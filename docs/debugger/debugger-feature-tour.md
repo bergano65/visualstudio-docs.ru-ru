@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433552"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542420"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Сначала посмотрим, отладчик Visual Studio
 
@@ -211,7 +211,7 @@ F10 отладчик без шаг с заходом в функции или м
 
 ![Шаг назад и вперед кнопки](../debugger/media/intellitrace-step-back-icons-description.png  "кнопки шаг назад и вперед")
 
-Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Дополнительные сведения см. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md) страницы.
 
 ## <a name="next-steps"></a>Следующие шаги
 
