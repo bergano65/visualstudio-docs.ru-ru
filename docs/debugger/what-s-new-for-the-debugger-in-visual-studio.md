@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433458"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542444"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности отладчика в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "37433458"
 
     ![Шаг назад и вперед кнопки](../debugger/media/intellitrace-step-back-icons-description.png  "кнопки шаг назад и вперед")
 
-    Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+    Дополнительные сведения см. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md) страницы.
 
 - **Помощника по исправлению ошибок** заменяет помощник по исключениям и отображается в немодальном диалоговом окне, где произошла ошибка. **Помощника по исправлению ошибок** обеспечивает более быстрый доступ к какие-либо внутренние исключения, дополнительный анализ отладчиком (если доступно) и немедленный доступ к **параметры исключений** для исключения. Помощник по исправлению ошибок можно также перетаскивать в представление с плавающей запятой, если он блокирует то, что необходимо просмотреть.
 

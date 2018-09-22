@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496016"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542460"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 |||
 |-|-|
-|**Отладка приложения с помощью IntelliTrace:**<br /><br /> — Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления данных, собираемых IntelliTrace.|- [Просмотр моментальных снимков по протоколу шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)<br />- [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />- [Отладка с ведением журнала](../debugger/historical-debugging.md)|
+|**Отладка приложения с помощью IntelliTrace:**<br /><br /> — Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления данных, собираемых IntelliTrace.|- [Проверьте предыдущие состояния приложения, с помощью IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />- [Отладка с ведением журнала](../debugger/historical-debugging.md)|
 |**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|- [Сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Сбор данных IntelliTrace из развернутых приложений**|- [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Запуск отладки из файла журнала IntelliTrace (ITRACE-файл).**|- [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 Вы можете настроить IntelliTrace для сбора моментальных снимков в каждой точке останова и отладчика шаг события. IntelliTrace записывает состояние полного приложения в каждый моментальный снимок, который позволяет просматривать сложные переменные и вычисления выражений.
 
-См. в разделе [просмотреть моментальные снимки с помощью шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+См. в разделе [проверять предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md).
 
 **Сбор сведений о вызовах функции**
 
