@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513178"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371164"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "39513178"
 
 |||||
 |-|-|-|-|
-|[Анализ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Правка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Проект](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+|[Анализ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Правка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Архитектура](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Контекстные меню редактора](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Контекстные меню проекта и решения](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Обозреватель тестов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Сборка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Файл](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Рефакторинг](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Инструменты](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Контекстные меню представления классов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Справка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Обозреватель решений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Вид](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
@@ -761,12 +761,6 @@ ms.locfileid: "39513178"
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT+СТРЕЛКА ВПРАВО**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**SHIFT+ALT+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**SHIFT+ALT+L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Редактор сведений Team Foundation Server
-
-|Команда|Сочетание клавиш|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Обозреватель тестов
