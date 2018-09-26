@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384192"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029112"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
-**Обновлено для [выпуска 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Обновлено для [выпуска 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Хотите обновить предыдущую версию Visual Studio? Visual Studio 2017 — это лучший инструмент для разработки любого приложения под любую платформу. Используйте Visual Studio 2017 для разработки приложений для Android, iOS, Windows, Linux, а также веб-приложений и облачных приложений. Быстро пишите код, выполняйте отладку и диагностику с легкостью, часто тестируйте и уверенно создавайте выпуски решений. Visual Studio можно расширить и настроить, создав собственные расширения. Система управления версиями в этом выпуске делает разработку гибкой, а совместную работу — эффективной.
 
@@ -42,7 +42,7 @@ ms.locfileid: "44384192"
 * **[Разработка для сценариев ИИ](#ai-development)**. Благодаря инструментам Visual Studio Tools for AI вы получаете эффективные средства для оптимизации инновационных разработок в сфере искусственного интеллекта на основе среды Visual Studio. Решения для создания, тестирования и развертывания ИИ и глубинного обучения легко интегрируются с машинным обучением Azure и предоставляют широкие возможности для экспериментов.
 
 > [!NOTE]
-> Полный список новых возможностей и функций Visual Studio 2017 см. в [этой](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) статье. Ознакомиться с будущими возможностями вы можете в статье [Предварительные заметки о выпуске](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Полный список новых возможностей и функций Visual Studio 2017 см. в [этой](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) статье. Ознакомиться с будущими возможностями вы можете в статье [Предварительные заметки о выпуске](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Здесь приведены более подробные сведения о некоторых самых важных усовершенствованиях и новых функциях в Visual Studio 2017.
 
@@ -50,7 +50,7 @@ ms.locfileid: "44384192"
 
 ### <a name="a-new-setup-experience"></a>Новые возможности установки
 
-[Скачайте Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) или [ознакомьтесь с требованиями к системе Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
+[Скачайте Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) или [ознакомьтесь с требованиями к системе Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017).
 
  Visual Studio упрощает и ускоряет установку необходимых вам компонентов в любое время. Удаление тоже происходит без ошибок.
 
@@ -381,7 +381,7 @@ Visual Studio перемещает свои расширения, а также 
 
 ## <a name="see-also"></a>См. также
 
-* [Заметки о выпуске Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Заметки о выпуске Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Новые возможности C#](/dotnet/csharp/whats-new)
 * [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)

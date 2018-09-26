@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283344"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496068"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
@@ -94,14 +94,6 @@ ms.locfileid: "44283344"
 - В главном меню Visual Studio выберите **Представление > Обозреватель проектов Unity**. Сочетание клавиш: **ALT**+**SHIFT**+**E**
 
      ![Изображение окна обозревателя проектов Unity](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Список ошибок Unity
-
- Не выходя из среды Visual Studio, можно просматривать сообщения консоли Unity, когда среда подключена к экземпляру Unity. К таким сообщениям относятся ошибки и предупреждения из Unity. Сообщения отображаются в Visual Studio в окне **Список ошибок**: сообщения об ошибках из Unity отображаются на вкладке **Ошибки**, предупреждения — на вкладке **Предупреждения**, а другие сообщения (например, сообщения, отправленные с помощью API Unity Debug.Log) — на вкладке **Сообщения**.
-
- Для просмотра сообщений проект Unity должен быть подключен к Visual Studio в соответствии с инструкциями в разделе [Отладка Unity](#unity-debugging).
-
- Если вы не хотите, чтобы сообщения об ошибках, предупреждения и другие сообщения из Unity отображались в Visual Studio в окне **Список ошибок**, их можно отключить в меню "Конфигурация".
 
 ## <a name="unity-debugging"></a>Отладка Unity
 
