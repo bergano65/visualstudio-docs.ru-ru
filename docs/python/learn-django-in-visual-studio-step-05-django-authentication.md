@@ -198,9 +198,9 @@ ms.locfileid: "42627154"
 
 1. По завершении остановите работу сервера и снова зафиксируйте изменения в системе управления версиями.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Вопрос. В чем назначение тега {% crsf_token %}, который отображается в элементах \<form\>?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Вопрос. В чем назначение тега {% csrf_token %}, который отображается в элементах \<form\>?
 
-Ответ. Тег `{% crsf_token %}` содержит встроенную в Django функцию [ защиты от подделки межсайтовых запросов (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (документация Django). Обычно этот тег добавляется в каждый элемент, для которого используются методы запросов POST, PUT или DELETE, такой как форма. С помощью функции отображения в шаблон (`render`) затем вставляются необходимые средства защиты.
+Ответ. Тег `{% csrf_token %}` содержит встроенную в Django функцию [ защиты от подделки межсайтовых запросов (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (документация Django). Обычно этот тег добавляется в каждый элемент, для которого используются методы запросов POST, PUT или DELETE, такой как форма. С помощью функции отображения в шаблон (`render`) затем вставляются необходимые средства защиты.
 
 ## <a name="next-steps"></a>Следующие шаги
 
