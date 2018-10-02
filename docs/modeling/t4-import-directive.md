@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6b0479bf427930d19b12fa0de5728f26e7cdb10d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510182"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857858"
 ---
 # <a name="t4-import-directive"></a>Директива Import T4
 
-В блоках кода [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстового шаблона T4 `import` директива позволяет ссылаться на элементы в другом пространстве имен без указания полного имени. Она эквивалентна директиве `using` в C# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+В блоках кода текстового шаблона Visual Studio T4 `import` директива позволяет ссылаться на элементы в другом пространстве имен без указания полного имени. Она эквивалентна директиве `using` в C# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
 Общие сведения о создании текстовых шаблонов T4 см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 

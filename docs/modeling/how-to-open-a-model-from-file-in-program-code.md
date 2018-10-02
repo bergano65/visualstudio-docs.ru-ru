@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566555"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860424"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 Модели DSL можно открыть в любом приложении.
 
- Из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширение ModelBus можно использовать для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Из расширения Visual Studio можно использовать ModelBus для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Требуемая версия .NET Framework
  Задайте **требуемой версии .NET framework** проекта приложения для **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Чтобы задать требуемую версию .NET framework
 
-1.  Откройте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект для приложения, в котором вы хотите чтение модели DSL.
+1.  Откройте проект Visual Studio для приложения, в котором вы хотите чтение модели DSL.
 
 2.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "39566555"
 >  Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.
 
 ## <a name="references"></a>Ссылки
- Необходимо добавить эти ссылки на ваш [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект приложения:
+ Необходимо добавить эти ссылки в проект приложения Visual Studio:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

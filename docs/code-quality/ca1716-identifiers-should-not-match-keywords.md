@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550613"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858197"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: идентификаторы не должны совпадать с ключевыми словами
 |||
@@ -51,4 +51,4 @@ ms.locfileid: "45550613"
  Выберите имя, которое не отображается в списке ключевых слов.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно подавить предупреждение из этого правила, если вы уверены, что идентификатор не будет запутывания пользователей API-интерфейса, и что библиотеку можно использовать в некоторых языках [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Можно подавить предупреждение из этого правила, если вы уверены, что идентификатор не будет запутывания пользователей API-интерфейса, и что библиотеки можно использовать в некоторых языках платформы .NET Framework.

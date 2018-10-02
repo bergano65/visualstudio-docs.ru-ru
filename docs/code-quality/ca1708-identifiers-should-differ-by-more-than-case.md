@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552062"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860164"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: идентификаторы должны отличаться не только регистром
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552062"
  Выберите имя, которое является уникальным, при сравнении с другими идентификаторами без учета регистра.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Библиотека может стать недоступной в некоторых языках [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Для этого правила отключать вывод предупреждений не следует. Библиотека может стать недоступной в некоторых языках платформы .NET Framework.
 
 ## <a name="example-of-a-violation"></a>Пример нарушения
  В следующем примере показано нарушение этого правила.
