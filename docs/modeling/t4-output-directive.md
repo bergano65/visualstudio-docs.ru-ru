@@ -9,22 +9,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953540"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860203"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
 
-В текстовых шаблонах [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `output` используется для определения расширения файла и кодировки преобразованного файла.
+В текстовых шаблонах Visual Studio `output` директива используется для определения расширение имени файла и кодировки преобразованного файла.
 
- Например если ваш [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект включает файл шаблона с именем **MyTemplate.tt** которого содержит следующую директиву:
+ Например, если проект Visual Studio включает в себя файл шаблона с именем **MyTemplate.tt** которого содержит следующую директиву:
 
  `<#@output extension=".cs"#>`
 
- затем [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создаст файл с именем **MyTemplate.cs**
+ Затем Visual Studio создаст файл с именем **MyTemplate.cs**
 
  Директива `output` не требуется в текстовых шаблонах времени выполнения (предварительно обработанных). Вместо этого приложение получает созданную строку, вызывая `TextTransform()`. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
