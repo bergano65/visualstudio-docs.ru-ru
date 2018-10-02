@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612718"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860398"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-странице будет содержать "\<html >...» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  Дополнительные сведения см. в разделе [директива Import T4](../modeling/t4-import-directive.md).
 
-###  <a name="Include"></a> Включение кода и текста
+### <a name="Include"></a> Включение кода и текста
  Директива `include` вставляет текст из другого файла шаблона. Например, эта директива вставляет содержимое файла `test.txt`:
 
 ```
@@ -275,7 +275,7 @@ Content of MyFile.txt is:
 |----------|-----------|
 |Создание шаблона.|[Рекомендации по написанию текстовых шаблонов T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Создание текста с помощью программного кода.|[Структура шаблона текста](../modeling/writing-a-t4-text-template.md)|
-|Создание файлов в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Запуск создания текста за пределами [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Создание файлов в решении Visual Studio.|[Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Запуск создания текста за пределами Visual Studio.|[Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
