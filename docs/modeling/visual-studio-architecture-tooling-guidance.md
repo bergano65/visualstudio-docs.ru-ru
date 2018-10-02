@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b666a4870cccdd653ad77dc50a9096f1da17723d
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: aba2064ddac03f4370028a928469c7d2acee4850
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623886"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857942"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 
 Это руководство по архитектуре средств — это загружаемый пакет практических рекомендаций по использованию средств моделирования в Visual Studio 2010. Дают общее представление об использовании всех средств моделирования интегрированным образом и рассматриваются наиболее распространенные сценарии, в которых используются средства.
 
-Содержимое было создано [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ALM Rangers, специальной группой, входят члены [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] группой разработчиков, службы Microsoft, Microsoft Most Valued Professionals (MVP), и [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] руководители сообщества.
+Содержимое было создано по Visual Studio ALM Rangers, специальной группой, входят члены команды разработчиков Visual Studio, Microsoft Services, Microsoft Most Valued Professionals (MVP) и руководители сообщества Visual Studio.

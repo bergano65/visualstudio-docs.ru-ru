@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950736"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858253"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
-В текстовом шаблоне времени проектирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `assembly` загружает сборку, чтобы в коде шаблона можно было использовать ее типы. Это дает эффект, аналогичный добавлению ссылки на сборку в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+В Visual Studio во время разработки текстового шаблона `assembly` директива загружает сборку, чтобы код шаблона можно использовать ее типы. Действует аналогично добавлению ссылки на сборку в проект Visual Studio.
 
- Общие сведения о создании текстовых шаблонов, см. [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
+ Общие сведения о создании текстовых шаблонов, см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавьте нужные сборки в **ссылки** из вашего [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта.
+>  В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавить нужные сборки **ссылки** проекта Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Использование директивы Assembly
  Синтаксис директивы таков:
@@ -38,13 +38,13 @@ ms.locfileid: "31950736"
 
 -   абсолютный путь к сборке;
 
- Синтаксис `$(variableName)` можно использовать для ссылки на переменные [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], такие как `$(SolutionDir)`, а синтаксис `%VariableName%` — для ссылки на переменные среды. Пример:
+ Можно использовать `$(variableName)` синтаксис, чтобы ссылаться на переменные Visual Studio, такие как `$(SolutionDir)`, и `%VariableName%` для ссылки на переменные среды. Пример:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого, включите необходимые ссылки в **ссылки** раздел вашей [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого, включите необходимые ссылки в **ссылки** раздел проекта Visual Studio. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Стандартные сборки
  Следующие сборки загружаются автоматически, поэтому для них не нужно создавать директивы сборки:
@@ -65,8 +65,8 @@ ms.locfileid: "31950736"
 
 -   Сборка, содержащая DSL.
 
-##  <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio
- Макросы Visual Studio, такие как $ (solutiondir) не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
+## <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio
+ Макросы Visual Studio, например $ (solutiondir) не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
 
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.
 

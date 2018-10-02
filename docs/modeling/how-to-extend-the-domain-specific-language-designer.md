@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176080"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860372"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 
@@ -68,19 +68,19 @@ ms.locfileid: "39176080"
 
 ## <a name="test-and-deployment"></a>Тестирование и развертывание
 
-Чтобы протестировать любой из расширения в этом разделе, постройте и запустите решение. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . В этом случае откройте решение DSL. Измените схему DslDefinition. Можно увидеть расширение поведения.
+Чтобы протестировать любой из расширения в этом разделе, постройте и запустите решение. Откроется экспериментальный экземпляр Visual Studio. В этом случае откройте решение DSL. Измените схему DslDefinition. Можно увидеть расширение поведения.
 
-Для развертывания расширения к главному [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]и к другим компьютерам, выполните следующие действия:
+Для развертывания расширения основной Visual Studio и к другим компьютерам, выполните следующие действия.
 
 1.  Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix
 
 2.  Скопируйте этот файл на конечном компьютере и проводника Windows (или проводника), дважды щелкните его.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Откроется диспетчер расширений, убедитесь, что расширение установлено.
+     Откроется диспетчер расширений Visual Studio, убедитесь, что расширение установлено.
 
 Чтобы удалить расширение, выполните следующие действия.
 
-1.  в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]на **средства** меню, щелкните **Диспетчер расширений**.
+1.  В Visual Studio на **средства** меню, щелкните **Диспетчер расширений**.
 
 2.  Выберите расширение и удалите его.
 

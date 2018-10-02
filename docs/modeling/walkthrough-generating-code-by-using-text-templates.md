@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566587"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859800"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Пошаговое руководство. Формирование кода с помощью текстовых шаблонов
 
@@ -30,7 +30,7 @@ ms.locfileid: "39566587"
 В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.
 
 > [!NOTE]
-> Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
+> Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящий в состав Visual Studio может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
 
 Ниже приведен пример файла:
 
@@ -142,7 +142,7 @@ namespace MyProject
 
 3.  В директиве template файла измените значение атрибута `hostspecific` на `true`.
 
-     Это изменение позволит коду шаблона получить доступ к службам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Это изменение позволит коду шаблона получить доступ к службам Visual Studio.
 
 4.  В директиве output измените значение атрибута расширения на ".cs", чтобы шаблон создал файл C#. В проекте Visual Basic следовало бы изменить его на ".vb".
 
@@ -272,7 +272,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Доступ к API Visual Studio
 
-Задание атрибута `hostspecific` директивы `<#@template#>` позволяет шаблону получить доступ к API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Благодаря этому шаблон может получить сведения о расположении файлов проекта, чтобы избежать использования абсолютного пути к файлу в коде шаблона.
+Установка `hostspecific` атрибут `<#@template#>` позволяет шаблону получить доступ к Visual Studio API. Благодаря этому шаблон может получить сведения о расположении файлов проекта, чтобы избежать использования абсолютного пути к файлу в коде шаблона.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
