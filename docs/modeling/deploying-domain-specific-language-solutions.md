@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ec3cad57ad4838ee2760e32afba9cc2ccdf49f85
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 691333abbb943cb3cc9ac3b94616a9f1d0522a1f
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949137"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857955"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Развертывание решений на доменных языках
-Доменный язык можно установить на локальном компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должна быть установлена на конечном компьютере.
+Доменный язык можно установить на своем компьютере или на других компьютерах. Visual Studio должна быть установлена на конечном компьютере.
 
 -   [Развертывание доменного языка с использование MSI и VSIX](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 
