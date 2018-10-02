@@ -9,26 +9,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774782"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859358"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
-Доменный язык можно установить на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должна быть установлена на конечном компьютере.
+Доменный язык можно установить на своем компьютере или на других компьютерах. Visual Studio должна быть установлена на конечном компьютере.
 
-##  <a name="which"></a> Выбор между VSIX и MSI развертывания
+## <a name="which"></a> Выбор между VSIX и MSI развертывания
  Развертывание доменного языка двумя способами.
 
 |Метод|Преимущества|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения)|Значительно облегчает развертывание: копирования и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|
-|MSI (файл установщика)|— Позволяет пользователю открыть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на целевом компьютере.<br />— Связывает XSD (XML schema) с типом файла DSL. Это позволяет избежать предупреждения при загрузке файла в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Проект установки необходимо добавить в решение для создания файла MSI.<br /><br /> Дополнительные сведения см. в разделе [развертывание доменного языка с помощью MSI-файл](#msi).|
+|VSX (расширение Visual Studio)|Значительно облегчает развертывание: копирования и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|
+|MSI (файл установщика)|-Позволяет пользователю открыть Visual Studio, дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на целевом компьютере.<br />— Связывает XSD (XML schema) с типом файла DSL. Это позволяет избежать предупреждения при загрузке файла в Visual Studio.<br /><br /> Проект установки необходимо добавить в решение для создания файла MSI.<br /><br /> Дополнительные сведения см. в разделе [развертывание доменного языка с помощью MSI-файл](#msi).|
 
-##  <a name="Installing"></a> Установка и удаление доменного языка с помощью VSX
- При установке DSL с помощью данного метода, пользователь может открыть файл DSL изнутри [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], но не удалось открыть файл из проводника Windows.
+## <a name="Installing"></a> Установка и удаление доменного языка с помощью VSX
+ При установке DSL с помощью данного метода, пользователь может открыть файл DSL из Visual Studio, но не удалось открыть файл из проводника Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Чтобы установить DSL с помощью VSX
 
@@ -42,7 +42,7 @@ ms.locfileid: "43774782"
 
     -   На конечном компьютере должен быть один из выпусков [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , поддерживающий доменных языков во время выполнения. Дополнительные сведения см. в разделе [поддерживается Visual Studio Editions визуализации и моделирования SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   На конечном компьютере должен быть один из выпусков [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] указано в **DslPackage\source.extensions.manifest**.
+    -   На конечном компьютере должен быть один из выпусков Visual Studio, указанных в **DslPackage\source.extensions.manifest**.
 
 3.  На целевом компьютере, дважды щелкните **.vsix** файл.
 
@@ -50,7 +50,7 @@ ms.locfileid: "43774782"
 
 4.  Запустите или перезапустите [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-5.  Чтобы проверить DSL, используйте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для создания файла с расширением, которое было определено для DSL.
+5.  Чтобы проверить DSL, Visual Studio можно используйте для создания файла с расширением, которое было определено для DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Удаление доменного языка, установленного с помощью VSX
 
@@ -64,12 +64,12 @@ ms.locfileid: "43774782"
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Развертывание доменного языка в MSI
+## <a name="msi"></a> Развертывание доменного языка в MSI
  Определив файл MSI (установщик Windows) для DSL, можно разрешить пользователям открывать файлы DSL из проводника Windows. Значок и краткое описание также можно связать с расширением имени файла. Кроме того MSI-ФАЙЛ можно установить схему XSD, который может использоваться для проверки файлов DSL. Если требуется, можно добавить другие компоненты в MSI-ФАЙЛ, который будет установлен в то же время.
 
  Дополнительные сведения о MSI-файлы и другие варианты развертывания, см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).
 
- Чтобы создать MSI-ФАЙЛ, добавьте проект установки, чтобы ваши [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. Самый простой способ создания проекта установки является использование шаблона CreateMsiSetupProject.tt, который можно загрузить из [сайте VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Чтобы создать MSI-ФАЙЛ, добавьте проект установки в решение Visual Studio. Самый простой способ создания проекта установки является использование шаблона CreateMsiSetupProject.tt, который можно загрузить из [сайте VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Развертывание доменного языка в MSI
 
@@ -101,7 +101,7 @@ ms.locfileid: "43774782"
 
 5.  Добавить **CreateMsiSetupProject.tt** в проект Dsl.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет создан файл с именем **CreateMsiSetupProject.vdproj**.
+     Visual Studio создаст файл с именем **CreateMsiSetupProject.vdproj**.
 
 6.  В проводнике Windows, скопируйте Dsl\\\*.vdproj в новую папку с именем установки.
 
@@ -125,7 +125,7 @@ ms.locfileid: "43774782"
 
     -   В представлении списка в обозревателе Windows он отобразится значок и описание, которое было определено.
 
-    -   Если дважды щелкнуть файл, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] начинается и открывает файл DSL в редакторе DSL.
+    -   Когда дважды щелкните файл, запуска Visual Studio и открывает файл DSL в редакторе DSL.
 
  При желании можно создать проект установки вручную, вместо того чтобы использовать текстовый шаблон. Пошаговое руководство, которое включает в себя этой процедуры см. в разделе с главой 5 [визуализации и моделирования SDK лаборатории](http://go.microsoft.com/fwlink/?LinkId=208878).
 

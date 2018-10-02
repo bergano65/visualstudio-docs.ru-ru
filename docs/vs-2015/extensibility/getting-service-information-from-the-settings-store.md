@@ -1,0 +1,93 @@
+---
+title: Получение сведений о службе из Store параметры | Документация Майкрософт
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
+caps.latest.revision: 5
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0328842e3698015bceb8e24663d218e4cd3c5dfa
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47571861"
+---
+# <a name="getting-service-information-from-the-settings-store"></a>Получение сведений о службе из хранилища параметров
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Последнюю версию этого раздела можно найти в [получения сведений о службе из Store параметры](https://docs.microsoft.com/visualstudio/extensibility/getting-service-information-from-the-settings-store).  
+  
+Параметры хранилища можно использовать для поиска всех доступных служб или требуется определить, установлена ли определенная служба. Необходимо знать тип класса службы.  
+  
+### <a name="to-list-the-available-services"></a>Чтобы получить список доступных служб  
+  
+1.  Создайте проект VSIX с именем FindServicesExtension, а затем добавьте пользовательскую команду с именем FindServicesCommand. Дополнительные сведения о том, как создать настраиваемую команду см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+  
+2.  В FindServicesCommand.cs, добавьте следующие операторы using:  
+  
+    ```vb  
+    using System.Collections.Generic;  
+    using Microsoft.VisualStudio.Settings;  
+    using Microsoft.VisualStudio.Shell.Settings;  
+    using System.Windows.Forms;  
+    ```  
+  
+3.  Получите хранилище параметров конфигурации, а затем найдите вложенную коллекцию, с именем службы. Эта коллекция содержит все доступные службы. В методе MenuItemCommand удалите существующий код и замените его следующим кодом:  
+  
+    ```  
+    private void MenuItemCallback(object sender, EventArgs e)  
+    {  
+        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+        string message = "Available services:\n";  
+        IEnumerable<string> collection = configurationSettingsStore.GetSubCollectionNames("Services");  
+        int n = 0;  
+        foreach (string service in collection)  
+        {  
+            message += configurationSettingsStore.GetString("Services\\" + service, "Name", "Unknown") + "\n";  
+        }  
+  
+        MessageBox.Show(message);  
+    }  
+    ```  
+  
+4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+  
+5.  В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
+  
+     Вы должны увидеть окно сообщения со списком всех служб.  
+  
+     Чтобы проверить эти параметры, можно использовать редактор реестра.  
+  
+## <a name="finding-a-specific-service"></a>Поиск определенной службы  
+ Можно также использовать <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> метод, чтобы определить, установлена ли определенная служба. Необходимо знать тип класса службы.  
+  
+1.  В MenuItemCallback проекта, созданного в предыдущей процедуре, найдите в магазине параметры конфигурации `Services` коллекции, которая содержит вложенную коллекцию, с именем, идентификатор GUID службы. В этом случае мы будем искать службу справки.  
+  
+    ```  
+    private void MenuItemCallback(object sender, EventArgs e)  
+    {  
+        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+        string helpServiceGUID = typeof(SVsHelpService).GUID.ToString("B").ToUpper();  
+        bool hasHelpService = configurationSettingsStore.CollectionExists("Services\\" + helpServiceGUID);  
+        string message = "Help Service Available: " + hasHelpService;  
+  
+        MessageBox.Show(message);  
+    }  
+    ```  
+  
+2.  Выполните сборку решения и запустите отладку.  
+  
+3.  В экспериментальном экземпляре на **средства** меню, щелкните **вызвать FindServicesCommand**.  
+  
+     Вы увидите сообщение с текстом **помочь доступные службы:** следуют **True** или **False**. Чтобы проверить этот параметр, можно использовать редактор реестра, как показано в предыдущих шагах.
+

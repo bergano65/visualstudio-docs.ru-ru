@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546763"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859410"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: не следует передавать литералы в виде локализованных параметров
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546763"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод передает строковый литерал в качестве параметра конструктору или методу в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] классов библиотеки и строка должна быть локализуемой.
+ Метод передает строковый литерал в качестве параметра конструктору или методу в библиотеке классов .NET Framework, и эта строка должна быть локализуемой.
 
  Это предупреждение возникает в том случае, если строковый литерал передается как значение параметра или свойства, а также один или несколько из следующих условий верно:
 
