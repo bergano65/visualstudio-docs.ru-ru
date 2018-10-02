@@ -1,0 +1,1 @@
+[Скачайте Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=524433) или [сравните выпуски Visual Studio](https://www.visualstudio.com/vs-2015-product-editions)
