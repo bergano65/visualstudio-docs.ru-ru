@@ -1,0 +1,1 @@
+построение Team Foundation
