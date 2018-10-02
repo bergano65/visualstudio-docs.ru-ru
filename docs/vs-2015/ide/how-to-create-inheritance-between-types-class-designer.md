@@ -1,0 +1,66 @@
+---
+title: Практическое руководство. Создание наследования между типами (конструктор классов) | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.classdesigner.inheritanceline
+helpviewer_keywords:
+- inheritance, relationship defining
+- relationships, defining inheritance
+ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
+caps.latest.revision: 34
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: cd1b47ca4be4b68c1ddf3d4b75fcdfd25407705c
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47569821"
+---
+# <a name="how-to-create-inheritance-between-types-class-designer"></a>Практическое руководство. Создание наследования между типами (конструктор классов) 
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Последнюю версию этого раздела можно найти в [как: Создание наследования между типами (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-create-inheritance-between-types-class-designer).  
+  
+Чтобы создать отношение наследования между двумя типами на диаграмме классов, используя Конструктор классов, соедините базовый тип с производными типами. Отношение наследования может существовать между двумя классами, между классом и интерфейсом или между двумя интерфейсами.  
+  
+### <a name="to-create-an-inheritance-between-types"></a>Создание наследования между типами  
+  
+1.  В Обозревателе решений выберите проект и откройте файл схемы классов (CD-файл).  
+  
+     Если диаграмма классов не существует, создайте ее. См. раздел [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+  
+2.  На **панели инструментов** в разделе **Конструктор классов** щелкните элемент **Наследование**.  
+  
+3.  На диаграмме классов нарисуйте линию наследования между нужными типами, начав с:  
+  
+    -   производного класса, связав его с базовым классом;  
+  
+    -   класса реализации, связав его с реализованным интерфейсом;  
+  
+    -   расширяемого интерфейса, связав его с расширенным интерфейсом.  
+  
+4.  Если производный тип основан на универсальном типе, можно щелкнуть линию наследования. В окне **Свойства** задайте свойство **Аргументы типа** в соответствии с типом, который необходим для универсального типа.  
+  
+    > [!NOTE]
+    >  Если родительский абстрактный класс содержит хотя бы один абстрактный член, то все абстрактные члены реализуются как неабстрактные наследующие классы.   
+    >   
+    >  Хотя вы можете визуализировать существующие универсальные типы, создавать новые универсальные типы нельзя. Вы также не можете изменить параметры существующих универсальных типов.  
+  
+## <a name="see-also"></a>См. также  
+ [Наследование](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
+ [Основы наследования](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Классы Visual C++ в конструкторе классов](../ide/visual-cpp-classes-in-class-designer.md)
+
+
+
