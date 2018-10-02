@@ -1,0 +1,67 @@
+---
+title: Команды меню | Документация Майкрософт
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- Spy++, menu commands
+- menu commands, Spy++
+ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
+caps.latest.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb0c10af095e0829cbeaddf11b194b3bd29a1c62
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47558761"
+---
+# <a name="menu-commands"></a>Команды меню
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Последнюю версию этого раздела можно найти в [команды меню](https://docs.microsoft.com/visualstudio/debugger/menu-commands).  
+  
+Разделы справки в этом разделе перечислены команды, доступные в меню Spy ++.  
+  
+## <a name="in-this-section"></a>В этом разделе  
+ [Команды меню Spy](../debugger/spy-menu-commands.md)  
+ Описание всех команд, доступных из **Spy** меню.  
+  
+ [Команды меню "Дерево"](../debugger/tree-menu-commands.md)  
+ Описание всех команд, доступных из **дерева** меню.  
+  
+ [Команды меню "Поиск"](../debugger/search-menu-commands.md)  
+ Описание всех команд, доступных из **поиска** меню.  
+  
+ [Команды меню "Вид"](../debugger/view-menu-commands.md)  
+ Описание всех команд, доступных из **представление** меню.  
+  
+ [Команды меню "Сообщения"](../debugger/messages-menu-commands.md)  
+ Описание всех команд, доступных из **сообщений** меню.  
+  
+ [Команды меню "Окно"](../debugger/window-menu-commands.md)  
+ Описание всех команд, доступных из **окно** меню.  
+  
+ [Команды меню "Справка"](../debugger/help-menu-commands.md)  
+ Описание всех команд, доступных из **помочь** меню.  
+  
+## <a name="related-sections"></a>Связанные разделы  
+ [Использование Spy++](../debugger/using-spy-increment.md)  
+ Представлены средства Spy ++ и рассказывается, как он может использоваться.  
+  
+ [Представления Spy++](../debugger/spy-increment-views.md)  
+ Описание представления дерева Spy ++ окон, сообщений, процессов и потоков.  
+  
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)  
+ Включает этот раздел и разделы с описанием каждого Spy ++ диалогового окна.
+
+
+

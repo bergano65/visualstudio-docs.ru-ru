@@ -1,0 +1,1 @@
+Visual Studio Industry Partner (программа VSIP)
