@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545597"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858948"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: сборки должны иметь допустимые строгие имена
 
@@ -66,9 +66,9 @@ ms.locfileid: "45545597"
 
 Используйте один из следующих процедур.
 
-- Используйте средство компоновщик сборок (Al.exe), предоставляемого [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+- Используйте средство компоновщик сборок (Al.exe), предоставляемых .NET Framework SDK.
 
-- Для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v1.0 и v1.1, используйте либо <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> атрибута.
+- Для .NET Framework v1.0 и v1.1, использовать <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> атрибута.
 
 - Для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], либо использовать `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) параметров компоновщика с ++).
 
@@ -92,7 +92,7 @@ ms.locfileid: "45545597"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Подписать сборку строгим именем вне Visual Studio
 
-Используйте средство строгих имен (Sn.exe), предоставляемый [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) (Sn.exe: средство строгих имен).
+Используйте средство строгих имен (Sn.exe), предоставляемый .NET Framework SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) (Sn.exe: средство строгих имен).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
