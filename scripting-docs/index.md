@@ -8,12 +8,12 @@ ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: a21f4ab29f498d89ffd577b5776669def319e3af
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: bc71a896022ea57a3867143ceb0a0d9e96b83149
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42625851"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243934"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 
@@ -82,6 +82,24 @@ Visual Studio предоставляет несколько различных �
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="https://docs.microsoft.com/aspnet/core/client-side/spa/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and a JavaScript framework">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Создание приложения с помощью ASP.NET и AngularJS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
@@ -117,26 +135,7 @@ Visual Studio предоставляет несколько различных �
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/aspnet/core/client-side/angular">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and AngularJS">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения с помощью ASP.NET и AngularJS</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    </li>
-        <li>
+    <li>
         <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017">
         <div class="cardSize">
             <div class="cardPadding">
