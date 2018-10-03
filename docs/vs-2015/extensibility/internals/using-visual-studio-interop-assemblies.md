@@ -1,0 +1,144 @@
+---
+title: С помощью сборок взаимодействия Visual Studio | Документация Майкрософт
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio, interop assemblies
+- interop assemblies, Visual Studio
+- managed VSPackages, interop assemblies
+ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
+caps.latest.revision: 34
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47570346"
+---
+# <a name="using-visual-studio-interop-assemblies"></a>Использование сборок взаимодействия Visual Studio
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+Последнюю версию этого раздела можно найти в [с помощью сборок взаимодействия Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies).  
+  
+Visual Studio взаимодействия сборки позволяют управляемые приложения для доступа к COM-интерфейсы, позволяющие расширять Visual Studio. Существуют некоторые различия между прямой COM-интерфейсы и их взаимодействия версий. Например сопоставление значений HRESULT, обычно представлены в виде значений типа int и необходимо обрабатывать в так же, как исключения и параметры (особенно выходных параметров) обрабатываются по-разному.  
+  
+## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Обработка значений HRESULT, возвращаемых в управляемый код из COM  
+ При вызове COM-интерфейса из управляемого кода проверьте значение HRESULT и при необходимости создайте исключение. <xref:Microsoft.VisualStudio.ErrorHandler> Класс содержит <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> переданного ему метод, который создает исключение COM, в зависимости от значения HRESULT.  
+  
+ По умолчанию <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> создает исключение каждый раз, когда он передается значение HRESULT, которое имеет значение меньше нуля. В случаях, когда такие HRESULT являются допустимыми, и исключение не должно вызываться, должны быть переданы дополнительные значения HRESULT <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> после проверки на значения. Если проверяемое значение HRESULT совпадают со значениями HRESULT, явно переданных <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, исключение не создается.  
+  
+> [!NOTE]
+>  <xref:Microsoft.VisualStudio.VSConstants> Класс содержит константы для общих значений HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.S_OK> и <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, и [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] значения HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> и <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> также предоставляет <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> и <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> методы, которые соответствуют макросы SUCCEEDED и FAILED в COM.  
+  
+ Например, рассмотрим следующий вызов функции, в котором <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> является допустимым возвращаемым значением, но любое другое значение HRESULT меньше нуля представляет ошибку.  
+  
+ [!code-csharp[VSSDKHRESULTInformation#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#1)]
+ [!code-vb[VSSDKHRESULTInformation#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#1)]  
+  
+ Если имеются несколько допустимых возвращаемых значений, дополнительные значения HRESULT можно просто добавить в список в вызове <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>.  
+  
+ [!code-csharp[VSSDKHRESULTInformation#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#2)]
+ [!code-vb[VSSDKHRESULTInformation#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#2)]  
+  
+## <a name="returning-hresults-to-com-from-managed-code"></a>Возврат значений HRESULT в COM из управляемого кода  
+ Если исключение не возникает, управляемый код возвращает <xref:Microsoft.VisualStudio.VSConstants.S_OK> функции COM, который вызвал ее. COM-взаимодействие поддерживает общие исключения, которые являются строго типизированными в управляемом коде. Например, метод, принимающий недопустимый `null` создает исключение аргумента <xref:System.ArgumentNullException>.  
+  
+ Если нет уверенности, какие исключения, но вы знаете значение HRESULT нужно вернуть в COM, можно использовать <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> метод для создания соответствующего исключения. Это работает даже с нестандартными ошибками, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> пытается сопоставить значение HRESULT переданное ему со строго типизированным исключением. Если это ему не удается, он создает универсальное исключение COM. Конечным результатом является то, что значение HRESULT передается <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> из управляемого кода возвращается функции COM, который вызвал ее.  
+  
+> [!NOTE]
+>  Исключения снижают производительность и предназначены для указания на аномальные состояния программы. Часто наступающие условия следует обрабатывать внутри программы без создания исключений.  
+  
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown параметров, передаваемых в качестве типа void **  
+ Поиск [параметров, которые определены как тип out] `void **` в модели COM интерфейс, но, определяются как `[``iid_is``]` в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прототип метода сборки взаимодействия.  
+  
+ В некоторых случаях COM-интерфейс приводит к возникновению ошибки `IUnknown` объекта и COM-интерфейса затем передает его в качестве типа `void **`. Эти интерфейсы являются особенно важно, поскольку если переменная определена как [out] в IDL-ФАЙЛЕ, то `IUnknown` объект с подсчетом ссылок с `AddRef` метод. Если объект обрабатывается неправильно, возникает утечка памяти.  
+  
+> [!NOTE]
+>  `IUnknown` Объекта создается с COM-интерфейса и возвращается в переменную [out] вызывает утечку памяти, если он не освобождается явно.  
+  
+ Управляемые методы, обрабатывающие такие объекты следует относиться <xref:System.IntPtr> как указатель на `IUnknown` объекта и вызовите <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод для получения объекта. Вызывающий объект затем необходимо привести возвращаемое значение к любой из этих типов. Когда объект больше не нужен, вызовите <xref:System.Runtime.InteropServices.Marshal.Release%2A> для его освобождения.  
+  
+ Ниже приведен пример вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> метод и обработка `IUnknown` объекта правильно:  
+  
+```  
+MyClass myclass;  
+Object object;  
+IntPtr pObj;  
+Guid iid = Typeof(MyClass).Guid;  
+int hr = windowFrame.QueryViewInterface(ref iid, out pObj);     
+if (NativeMethods.Succeeded(hr))   
+{  
+    try   
+    {  
+        object = Marshal.GetObjectForIUnknown(pObj);  
+        myclass = object;  
+    }  
+    finally   
+    {  
+        Marshal.Release(pObj);  
+    }  
+}  
+else   
+{  
+    // error calling QueryViewInterface  
+}  
+```  
+  
+> [!NOTE]
+>  Следующие методы известны для передачи `IUnknown` объекта указатели как тип <xref:System.IntPtr>. Их необходимо обработайте, как описано в этом разделе.  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+  
+## <a name="optional-out-parameters"></a>Необязательные [параметры out]  
+ Найдите параметры, которые определяются как [out] тип данных (`int`, `object`, и так далее) в модели COM интерфейс, но, определяются как массивы одного типа данных в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прототип метода сборки взаимодействия.  
+  
+ Некоторые COM интерфейсы, такие как <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, обрабатывать [out] Параметры как необязательные. Если объект не требуется, возвращают данные COM-интерфейсы `null` указатель в качестве значения этого параметра вместо создания [out] объект. Это сделано намеренно. Для этих интерфейсов `null` указатели считаются как часть правильное поведение пакета VSPackage, и никакие ошибки не возвращаются.  
+  
+ Поскольку среда CLR не поддерживает значение параметра [out] быть `null`, часть предусмотрено для сохранения этих интерфейсов не является напрямую доступен в рамках управляемого кода. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Методы сборки взаимодействия для затронутых решить эту проблему путем определения соответствующих параметров как массивы, поскольку среда CLR позволяет передачу `null` массивов.  
+  
+ Управляемые реализации этих методов следует помещать `null` массива в качестве параметра при отсутствии ничего не возвращается. В противном случае создайте одноэлементный массив соответствующего типа и поместите возвращаемое значение в массиве.  
+  
+ Управляемые методы для получения сведений из интерфейсов с необязательным [out] Параметры получает параметр в виде массива. Просто проверьте значение первого элемента массива. Если это не `null`, обрабатывать первого элемента так же, как исходный параметр.  
+  
+## <a name="passing-constants-in-pointer-parameters"></a>Передача константы в параметры-указатели  
+ Найдите параметры, определенные как [in] указатели в COM-интерфейса, однако, определяются как <xref:System.IntPtr> введите [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прототип метода сборки взаимодействия.  
+  
+ Аналогичная проблема возникает, когда COM-интерфейс передает специальное значение, например 0, -1 или – 2, а не указатель объекта. В отличие от [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], среда CLR не поддерживает константы для приведения как объекты. Вместо этого [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] сборку взаимодействия определяет параметр как <xref:System.IntPtr> типа.  
+  
+ Управляемые реализации этих методов следует воспользоваться тот факт, <xref:System.IntPtr> класс имеет оба `int` и `void *` конструкторы для создания <xref:System.IntPtr> из объекта или целой константой в соответствии с потребностями.  
+  
+ Управляемые методы, которые получают <xref:System.IntPtr> параметры этого типа следует использовать <xref:System.IntPtr> введите операторы преобразования для обработки результатов. Сначала преобразуйте <xref:System.IntPtr> для `int` и его проверка относительно соответствующих целочисленные константы. Если значения не совпадают, преобразовать его в объект нужного типа и продолжить.  
+  
+ В качестве примера, см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
+  
+## <a name="ole-return-values-passed-as-out-parameters"></a>OLE возвращают значения, переданные как [параметры out]  
+ Поиск методов, которые имеют `retval` возвращаемое значение в COM-интерфейса, однако, иметь `int` возвращаемое значение и дополнительный [параметру-массиву в out] [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прототип метода сборки взаимодействия. Следует четко понимать, что эти методы требуют специальной обработки, так как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прототипы метод сборку взаимодействия имеют один параметр больше, чем методы интерфейса COM.  
+  
+ Многие COM-интерфейсы, которые имеют дело с действием OLE сведения о состоянии OLE обратной отправки вызывающей программе, хранящиеся в `retval` возвращаемое значение интерфейса. Вместо того чтобы использовать возвращаемое значение, соответствующее [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] методы сборки взаимодействия отправляет данные обратно вызывающей программе, хранящиеся в [out] массив параметров.  
+  
+ Управляемые реализации этих методов необходимо создать одноэлементный массив одного типа в качестве параметра [out] и поместить его в параметре. Значение элемента массива должен быть таким же, как соответствующие COM `retval`.  
+  
+ Управляемые методы, которые вызывают интерфейсы этого типа следует извлечь первый элемент из массива [out]. Этот элемент может рассматриваться как будто `retval` возвращаемое значение из соответствующего COM-интерфейса.  
+  
+## <a name="see-also"></a>См. также  
+ [Взаимодействие с неуправляемым кодом](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+

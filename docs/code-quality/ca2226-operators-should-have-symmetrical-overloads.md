@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549775"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860333"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: перегрузки операторов должны быть симметричны
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45549775"
  Чтобы устранить нарушение этого правила, реализовать как операторы равенства и неравенства, или удалите тот, который присутствует.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Тип не будет работать таким образом, согласуется с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Для этого правила отключать вывод предупреждений не следует. Тип не будет работать таким образом, согласуется с .NET Framework.
 
 ## <a name="related-rules"></a>Связанные правила
  [CA1046: не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

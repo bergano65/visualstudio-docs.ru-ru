@@ -1,0 +1,58 @@
+---
+title: IDiaFrameData::get_lengthSavedRegisters | Документация Майкрософт
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaFrameData::get_lengthSavedRegisters method
+ms.assetid: dfda4e91-9bfa-4b9d-9133-b73015bfa4d5
+caps.latest.revision: 11
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c7a06e788f8dbd16825d6f508749227dc8477fab
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47562417"
+---
+# <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+Последнюю версию этого раздела можно найти в [IDiaFrameData::get_lengthSavedRegisters](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters).  
+  
+Возвращает число байтов, сохраненных регистров в стек.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT get_lengthSavedRegisters (   
+   DWORD* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `pRetVal`  
+ [out] Возвращает число байтов, сохраненных регистров.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+  
+## <a name="remarks"></a>Примечания  
+ Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).  
+  
+## <a name="see-also"></a>См. также  
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+
+
+

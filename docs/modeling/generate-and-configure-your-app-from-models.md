@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176815"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858507"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Создание и настройка приложения на основе моделей
 Вы можете создавать или настраивать части приложения на основе модели.
@@ -22,7 +22,7 @@ ms.locfileid: "39176815"
  Модель представляет требования более непосредственно, чем код. Выводя поведение приложения непосредственно из модели, можно реагировать на изменение требований намного быстрее и надежнее, чем путем обновления кода. Хотя для настройки такого вывода требуется проделать определенную начальную работу, эти затраты окупятся, если ожидаются изменения требований или планируется создание нескольких версий продукта.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Создание кода приложения на основе модели
- Самый простой способ создания кода — это использование текстовых шаблонов. При создании кода, в том же [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения, в которой можно хранить в модели. Дополнительные сведения:
+ Самый простой способ создания кода — это использование текстовых шаблонов. При создании кода, в том же решении Visual Studio, в которой можно хранить в модели. Дополнительные сведения:
 
 -   [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
