@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542617"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243956"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Проверьте предыдущие состояния приложения, используя шаг назад в IntelliTrace в Visual Studio
 
@@ -105,7 +105,9 @@ IntelliTrace в режиме только для событий позволяю
 ## <a name="known-issues"></a>Известные проблемы  
 * Если вы используете режим события и моментальные снимки IntelliTrace в версиях Windows старше, чем Windows 10 Fall Creators Update (RS3) и целевой платформы отладки приложения имеет значение x86, IntelliTrace не создает моментальные снимки.
 
-    Решение
+    Обходные решения:
+    * Если вы являетесь Юбилейное обновление Windows 10 (RS1) и более ранних версий версии 10.0.14393.2273, [установить KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Если вы являетесь в Windows 10 Creators Update (RS2) и ниже версии 10.0.15063.1112, [установить KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Установка или обновление до Windows 10 Fall Creators Update (RS3). 
     * Кроме того: 
         1. Установите набор инструментов VC++ 2015.3 версии 140 для классического компонента (x86, x64) из установщика Visual Studio.
