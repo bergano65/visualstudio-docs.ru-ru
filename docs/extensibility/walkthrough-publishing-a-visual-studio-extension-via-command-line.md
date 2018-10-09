@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082146"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863908"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Пошаговое руководство: Публикация расширения Visual Studio с помощью командной строки
 
-В этом пошаговом руководстве показано, как для публикации расширения Visual Studio в Visual Studio Marketplace с помощью командной строки. При добавлении расширения в Marketplace, разработчики могут использовать **расширения и обновления** диалоговое окно для поиска новых и обновленных расширений.
+В этом пошаговом руководстве показано, как для публикации расширения Visual Studio в Visual Studio Marketplace с помощью командной строки. При добавлении расширения в Marketplace, разработчики могут использовать [ **расширения и обновления** ](../ide/finding-and-using-visual-studio-extensions.md) диалоговое окно для поиска новых и обновленных расширений.
 
 VsixPublisher.exe является средством командной строки для публикации расширений Visual Studio в Marketplace. Он может осуществляться из ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Являются команд, доступных в это средство: **публикации**, **createPublisher**, **deletePublisher**, **deleteExtension**,  **Имя входа**, **выхода**.
 
