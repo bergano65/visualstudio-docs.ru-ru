@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511996"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48864002"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Шрифт среды разработки
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Шрифт среды полужирным текстом должны следовать высота междустрочный интервал и заполнение.  
   
 ## <a name="see-also"></a>См. также  
- [MSDN: Шрифты (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Текста пользовательского интерфейса (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: Шрифты (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Текста пользовательского интерфейса (Windows)](/windows/desktop/uxguide/text-ui)

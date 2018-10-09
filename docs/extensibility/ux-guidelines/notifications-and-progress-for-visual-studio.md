@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512243"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863958"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Уведомления и ход выполнения для Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Системы отправки уведомлений  
@@ -213,7 +213,7 @@ ms.locfileid: "39512243"
  "Счетчик" (также называется «кольца хода выполнения») является индикатором неопределенном хода выполнения, в основном используется по отношению к контекстные пользовательского интерфейса. Отобразить счетчик в непосредственной близости от его связанное содержимое, например заголовка текстового категории, обмена сообщениями или элемент управления.  
   
 ##### <a name="cursor-feedback"></a>Курсор обратной связи  
- Для операций, которые принимают между 2 – 7 секунд курсор отзыв. Как правило это означает, с помощью курсор ожидания, предоставляемые операционной системой. Инструкции см. в статье MSDN [Cursors.Wait свойство](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Для операций, которые принимают между 2 – 7 секунд курсор отзыв. Как правило это означает, с помощью курсор ожидания, предоставляемые операционной системой. Инструкции см. в статье MSDN [Cursors.Wait свойство](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Расположение индикатора хода выполнения  
   
