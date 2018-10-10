@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560926"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880793"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Продукты и службы, поддерживающие специальные возможности (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "47560926"
   
  Веб-адреса могут меняться, поэтому, возможно, вам не удастся подключиться к указанному здесь сайту.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Служба технической поддержки для людей с нарушениями слуха  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Служба технической поддержки для людей с нарушениями слуха  
  Для пользователей с нарушениями слуха полный доступ к службе технической и информационной поддержки по продуктам корпорации Microsoft возможен посредством службы передачи текста по телефону (TTY/TDD).  
   
  Для получения информационной поддержки свяжитесь с центром информации по продажам корпорации Microsoft (Microsoft Sales Information Center) по телефону (800) 892-5234 в рабочие дни с 6:30 до 17:30 по тихоокеанскому времени с понедельника по пятницу (кроме праздничных дней).  

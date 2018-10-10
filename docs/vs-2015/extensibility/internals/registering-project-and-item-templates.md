@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559562"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880088"
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "47559562"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|name|Тип|Описание|  
+|name|Тип|Описание:|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Имя по умолчанию для проектов такого рода.|  
 |DisplayName|REG_SZ|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -64,7 +64,7 @@ ms.locfileid: "47559562"
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание|  
+|name|Тип|Описание:|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Идентификатор ресурса для шаблонов добавить элемент.|  
 |TemplatesDir|REG_SZ|Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера.|  
@@ -91,7 +91,7 @@ ms.locfileid: "47559562"
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание|  
+|name|Тип|Описание:|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
 |CommonOpenFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  

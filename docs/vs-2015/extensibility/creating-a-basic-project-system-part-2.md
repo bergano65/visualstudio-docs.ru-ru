@@ -17,12 +17,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 324eb3c0af582e32318980dac675ac483f86f31f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571909"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880205"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание системы базового проекта. Часть 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "47571909"
   
 1.  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], откройте SimpleProject решение, которое вы создали, следуя [Создание базовой системы проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  Найдите в файле SimpleProjectPackage.cs ProvideProjectFactory атрибута. Замените второй параметр (имя проекта) со значением null, а четвертый параметр (путь к папке шаблонов проектов)». \\\NullPath», как показано ниже.  
+2.  В файле SimpleProjectPackage.cs Найдите атрибут ProvideProjectFactory. Замените второй параметр (имя проекта) со значением null, а четвертый параметр (путь к папке шаблонов проектов)». \\\NullPath», как показано ниже.  
   
     ```  
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  

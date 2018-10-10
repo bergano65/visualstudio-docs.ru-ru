@@ -15,12 +15,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c85bdfd08fb3d2ad06c9dfd17b46a31fe4ed74d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0f068a40fc4cbac2cd261fe295e6e8b0fb53b2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569738"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878983"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "47569738"
  Если при возникновении проблем, с помощью Visual Studio, такие как сбои, низкая производительность, непредвиденное поведение и т. д., сообщите о проблеме с нами, щелкнув правой кнопкой мыши значок отзыва рядом с полем **быстрого запуска**, или выбрав  **Справка &#124; отправить отзыв &#124; сообщить о проблеме** в главном меню. Дополнительные сведения см. в разделе [как сообщить о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Я хочу внести предложение по поводу возможностей Visual Studio  
- Если мы можем что-то сделать лучше, сообщите нам об этом! Выберите пункт **Внести предложение** , чтобы предложить функцию или изменение группе Visual Studio. Ваше предложение будет автоматически опубликовано в [UserVoice](https://visualstudio.uservoice.com) , где другие смогут проголосовать за него.  
+ Если мы можем что-то сделать лучше, сообщите нам об этом! Выберите пункт **Внести предложение** , чтобы предложить функцию или изменение группе Visual Studio. Ваше предложение будет автоматически опубликовано в [UserVoice](https://visualstudio.uservoice.com), где другие смогут проголосовать за него.  
   
 ## <a name="rate-this-product"></a>Оценить этот продукт  
  В предварительных версиях Visual Studio есть пункт меню **Оценить продукт** , который позволяет отправить отзыв о качестве сборки, которую вы используете. Он будет отсутствовать в выпущенных версиях продукта.  

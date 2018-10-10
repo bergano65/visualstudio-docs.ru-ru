@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568245"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880484"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ ms.locfileid: "47568245"
  Если при запуске эмулятора вы еще не являетесь членом группы администраторов Hyper-V, вам будет предложено присоединиться к группе (диалоговое окно ссылается на эмулятор Windows Phone). Для входа в состав группы требуются права администратора.  
   
 > [!IMPORTANT]
->  После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.  
+> После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.  
   
  ![Присоединение к группе безопасности администраторов Hyper&#45;V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы". Более подробную информацию см. в разделе [Добавление учетной записи пользователя в группу](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Сведения в этом разделе для Windows 7 также применимы к Windows 8.)  
-  
+ Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы".
+ 
 ##  <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается  
  При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: "Ошибка при развертывании приложения". Повторите попытку.  
   

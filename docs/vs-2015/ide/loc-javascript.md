@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ae2e4459a0da2dbcd096869cf49687c84a68b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca964bca83796e56bf3f7d7b53fb6344c05b8b4
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568822"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880179"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;Loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
   
 Указывает расположение и тип расширения файла, который содержит локализованные сведения IntelliSense.  
   

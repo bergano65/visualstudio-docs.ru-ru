@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561660"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879366"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "47561660"
   
  С помощью заранее определенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны четыре группы ссылок:  
   
--   Неявные (Windows *версии*), для [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] приложений с использованием JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], использующих JavaScript.  
+-   Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], использующих JavaScript.  
   
 -   Неявные (Интернет), для проектов HTML5. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для данных типов проектов.  
   

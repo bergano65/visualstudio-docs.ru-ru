@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570100"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880933"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47570100"
   
 Если вы разрабатываете пользовательский интерфейс, в котором используются стандартные элементы оболочки Visual Studio, или вам нужно обеспечить согласованность элемента интерфейса с аналогичными функциями, используйте существующие имена токенов в файлах определения пакетов для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.  
   
- В этом разделе описываются стандартные элементы пользовательского интерфейса и используемые ими имена токенов, на которые можно ссылаться при разработке похожего пользовательского интерфейса. Сведения о том, как получить доступ к этим токенам цветов см. в разделе [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ В этом разделе описываются стандартные элементы пользовательского интерфейса и используемые ими имена токенов, на которые можно ссылаться при разработке похожего пользовательского интерфейса. Более подробные сведения о доступе к этим токенам цветов см. в разделе [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Используйте имена токенов правильно.  
   
@@ -561,7 +561,7 @@ ms.locfileid: "47570100"
 ####  <a name="BKMK_CommandComboBox"></a> Поле со списком  
   
 > [!IMPORTANT]
->  Поле со списком похоже на раскрывающийся список, но включает область для ввода и редактирования текста. Если раскрывающийся список не включает область для ввода и редактирования текста, используйте токены цветов, найти в разделе [раскрывающегося списка](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
+>  Поле со списком похоже на раскрывающийся список, но включает область для ввода и редактирования текста. Если раскрывающийся список не включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
   
  ![Красная линия со списком](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ ms.locfileid: "47570100"
 ####  <a name="BKMK_CommandDropDown"></a> Раскрывающегося списка  
   
 > [!IMPORTANT]
->  Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, найти в разделе [поле со списком](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
+>  Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
   
  ![DROP&#45;вниз красная линия](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ ms.locfileid: "47570100"
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Разворачивающаяся кнопка  
- Для разворачивающихся кнопок используются многие имена токенов, определенные для других элементов управления панели команд, таких как кнопки, меню и текст панели команд. Все необходимые имена токенов для действий и кнопок раскрывающихся списков приводятся здесь еще раз для удобства. Раскрывающегося списка списки разворачивающихся кнопок являются реализацией панели команд [меню](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
+ Для разворачивающихся кнопок используются многие имена токенов, определенные для других элементов управления панели команд, таких как кнопки, меню и текст панели команд. Все необходимые имена токенов для действий и кнопок раскрывающихся списков приводятся здесь еще раз для удобства. Раскрывающиеся списки разворачивающихся кнопок являются реализацией [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)панели команд.  
   
  ![Красная линия разворачивающейся кнопки](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ ms.locfileid: "47570100"
  Цвет совпадает с цветом фона.  
   
 #### <a name="document-overflow-button"></a>Кнопка переполнения документа  
- Кнопка переполнения документа присутствует, если открыт один или несколько документов, вне зависимости от того, имеется ли в текущей конфигурации пространство по вертикали для размещения всех вкладок документов. Выберите в раскрывающемся меню переполнения документа, которая управляется **CommandBarMenu** цвета (см. в разделе [меню](../../misc/shared-colors.md#BKMK_CommandMenus)), отображает список всех открытых документах, как видимых, так и скрытых и глиф переполнения меняется в зависимости от того, отображаются все открытые документы в канале вкладок.  
+ Кнопка переполнения документа присутствует, если открыт один или несколько документов, вне зависимости от того, имеется ли в текущей конфигурации пространство по вертикали для размещения всех вкладок документов. В раскрывающемся меню переполнения документа, к которому применяются цвета **CommandBarMenu** (см. раздел [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), приводится список всех открытых документов, как видимых, так и скрытых. Глиф переполнения меняется в зависимости от того, отображаются ли все открытые документы в канале вкладок.  
   
  ![Красная линия переполнения](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ ms.locfileid: "47570100"
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Полоса прокрутки  
- Полосы прокрутки оформляются средой Visual Studio, и применять к ним темы не нужно. Однако может потребоваться использовать цвета, применяемые в полосах прокрутки, чтобы ваш пользовательский интерфейс был согласован с этой частью среды Visual Studio.  
+ Полосы прокрутки оформляются средой Visual Studio, и применять к ним темы не нужно. Тем не менее вы решите, что вы хотите использовать цвета, применяемые в полосах прокрутки, чтобы пользовательский Интерфейс был согласован с этой частью среды Visual Studio.  
   
  ![Красная линия полосы прокрутки](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   
@@ -3348,7 +3348,7 @@ ms.locfileid: "47570100"
  Не используйте:  
  -   для других элементов пользовательского интерфейса, не являющихся раскрывающимися списками или полями со списком;  
   
--   для [раскрывающегося списка](../../misc/shared-colors.md#BKMK_CommandDropDown) или [поле со списком](../../misc/shared-colors.md#BKMK_CommandComboBox) на панели команд.  
+-   для [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) или [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) на панели команд.  
   
  **Default**  
   
@@ -3698,7 +3698,7 @@ ms.locfileid: "47570100"
  Нет  
   
 ## <a name="manifest-designer"></a>Конструктор манифеста  
- Конструктор манифеста призван упростить редактирование файла манифеста в проектах Windows 8 и Windows Phone 8. Хотя общего готового шаблона нет, рекомендуется обеспечивать соответствие макету и цветам вкладок ориентации и навигации, а также общей структуре. Дополнительные сведения о макете см. в разделе [макет для Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ Конструктор манифеста призван упростить редактирование файла манифеста в проектах Windows 8 и Windows Phone 8. Хотя общего готового шаблона нет, рекомендуется обеспечивать соответствие макету и цветам вкладок ориентации и навигации, а также общей структуре. Дополнительные сведения о макете см. в разделе [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
  ![Красная линия конструктора манифеста](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
@@ -4156,25 +4156,25 @@ ms.locfileid: "47570100"
   
  `TreeView.SelectedItemActive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Border  
   
  `TreeView.FocusVisualBorder`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Передний план (глиф)  
   
  `TreeView.SelectedItemActive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Передний план (текст)  
   
  `TreeView.SelectedItemActive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  ![Родительский узел панели инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ ms.locfileid: "47570100"
   
  `TreeView.SelectedItemInactive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Border  
   
@@ -4198,11 +4198,11 @@ ms.locfileid: "47570100"
   
  `TreeView.SelectedItemInactive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории  
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Передний план (текст)  
   
  `TreeView.SelectedItemInactive`  
   
- Из [представление в виде дерева](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) категории
+ Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
