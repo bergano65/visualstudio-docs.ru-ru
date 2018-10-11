@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbc4d9b85a3eb8e0fe5f3a890a76bae4695912e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557777"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880673"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Настройка IntelliSense для RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
   
 Начиная с обновления 4 для Visual Studio 2013, поддерживается RequireJS — популярный загрузчик файлов и модулей JavaScript. RequireJS упрощает определение зависимостей между модулями кода и динамическую загрузку модулей по необходимости. При написании кода JavaScript, использующего RequireJS, IntelliSense предлагает модули, на которые вы ссылались из определения модуля или с помощью вызовов `require()` из кода.  
   

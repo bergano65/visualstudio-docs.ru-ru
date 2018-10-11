@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558181"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880829"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "47558181"
 С помощью служебной программы командной строки «Визуализатор параллелизма» (CVCollectionCmd.exe) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio. Эти средства можно использовать на компьютерах без установленной среды Visual Studio.  
   
 > [!NOTE]
->  Начиная с версии Visual Studio 2013 визуализатор параллелизма — это дополнительное расширение. (Ранее он входил в состав Visual Studio.) Скачать [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) можно в Центре загрузки.  
+>  Начиная с версии Visual Studio 2013 визуализатор параллелизма — это дополнительное расширение. (Ранее он входил в состав Visual Studio.) Скачать [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) можно в Центре загрузки.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Скачать программу командной строки "Визуализатор параллелизма"  
- Чтобы скачать и установить служебную программу командной строки, перейдите на страницу [Средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) и следуйте инструкциям. По умолчанию CVCollectionCmd.exe устанавливается в папке %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ на компьютерах с архитектурой x64).  
+ Чтобы скачать и установить служебную программу командной строки, перейдите на страницу [Средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) и следуйте инструкциям. По умолчанию CVCollectionCmd.exe устанавливается в папке %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ на компьютерах с архитектурой x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Сбор трассировок с помощью CVCollectionCmd  
  Вы можете собирать трассировки, запустив приложение в CVCollectionCmd или приложив его к CVCollectionCmd. Возможные варианты см. в справочнике по командам ниже. Пример  
