@@ -1,7 +1,7 @@
 ---
 title: Использование Visual Studio на виртуальной машине Azure
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 07/10/2018
+ms.date: 09/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 5061265467f7fab653e3266d5c25ccf0c9ef43da
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42627053"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550298"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -34,9 +34,9 @@ ms.locfileid: "42627053"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 — последняя версия (15.8)                    |    Enterprise, Community     |      Версия 15.8.0     |
-| Visual Studio 2017: последняя предварительная версия (версия 15.8, предварительная версия 5) |    Enterprise, Community     |      Версия 15.8.5     |
-|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.17    |
+| Visual Studio 2017 — последняя версия (15.8)                    |    Enterprise, Community     |      Версия 15.8.4     |
+| Visual Studio 2017: последняя предварительная версия (версия 15.9, предварительная версия 2) |    Enterprise, Community     |      Версия 15.9       |
+|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.18    |
 |   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01  |
 |         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек |
 

@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135619"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028940"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -39,9 +39,9 @@ ms.locfileid: "46135619"
 
 1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** появилось **ASP.NET Core 2.0**. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
 
-  ![Просмотрите анимированный GIF-файл, демонстрирующий создание проекта ASP.NET Core в Visual Studio на C#.](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Просмотрите анимированный GIF-файл, демонстрирующий создание проекта ASP.NET Core в Visual Studio на C#.](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Через некоторое время файл проекта откроется в Visual Studio.
+   Через некоторое время файл проекта откроется в Visual Studio.
 
    > [!NOTE]
    > Если категория шаблона проекта **.NET Core** отсутствует, выберите слева ссылку **Открыть Visual Studio Installer**.
@@ -58,13 +58,15 @@ ms.locfileid: "46135619"
 
 Далее вы создадите и запустите веб-приложение "Hello World". Ниже описывается порядок действий.
 
-1. В **обозревателе решений** разверните папку **Страницы** и выберите **About.cshtml**.
+1. В Visual Studio в разделе **Обозреватель решений** разверните папку **Страницы**. Затем выберите **About.cshtml**.
 
-   Этот файл соответствует странице веб-приложения с именем **О программе**.
+   ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Этот файл соответствует странице с заголовком **О программе** веб-приложения, которое запускается в веб-браузере.
 
    ![Страница "О программе" в веб-приложении](../ide/media/csharp-aspnet-about-page.png)
 
-1. Измените текст для чтения "дополнительная информация" на **Hello World!**.
+1. В редакторе кода Visual Studio измените текст additional information (дополнительные сведения) на **Hello World!**.
 
 1. В **обозревателе решений** разверните **About.cshtml** и выберите **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ ms.locfileid: "46135619"
 
 1. Выберите **IIS Express** или нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
 
-  ![Просмотрите анимированный GIF-файл, демонстрирующий создание и запуск веб-приложения ASP.NET Core в Visual Studio на C#.](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Просмотрите анимированный GIF-файл, демонстрирующий создание и запуск веб-приложения ASP.NET Core в Visual Studio на C#.](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"**, закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
 
-1. Проверьте, содержится ли на странице **О программе** обновленный текст.
+1. В веб-браузере убедитесь, что страница **О программе** содержит введенный вами текст.
 
 1. Закройте веб-браузер.
 

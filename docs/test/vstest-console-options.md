@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279691"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612666"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -54,6 +54,10 @@ ms.locfileid: "44279691"
 |**/ListSettingsProviders**|Перечисление установленных поставщиков параметров тестирования.|
 |**/Blame**|Отслеживает тесты во время их выполнения, и в случае сбоя тестового хост-процесса выдает имена тестов в последовательности выполнения до теста, работавшего во время сбоя, включительно. Эти выходные данные облегчают изоляцию теста, ставшего причиной неполадки, и дальнейшую диагностику. [Дополнительные сведения](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*имя файла*]**|Записывает диагностические журналы трассировки в указанный файл.|
+|**/ResultsDirectory:[*path*]**|По указанному пути будет создан каталог с результатами теста, если этот путь не существует.<br />Пример: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|Идентификатор родительского процесса, отвечающего за запуск текущего процесса.|
+|**/Port:[*port*]**|Порт для подключения через сокет и получения сообщений о событиях.|
+|**/Collect:[*dataCollector friendlyName*]**|Включает сборщик данных для тестового запуска. [Дополнительные сведения](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Регистр в параметрах и значениях не учитывается.

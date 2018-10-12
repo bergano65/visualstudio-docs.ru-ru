@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468820"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551758"
 ---
 # <a name="profile-python-code"></a>Профилирование кода Python
 
@@ -45,4 +45,4 @@ ms.locfileid: "39468820"
 
 Вместо этого используйте профилировщик Visual Studio .NET, запустив *ipy.exe* непосредственно в качестве целевого приложения с аргументами, чтобы запустить нужный скрипт загрузки. Включите в командную строку параметр `-X:Debug`, чтобы обеспечить отладку и профилирование для всего кода Python. Этот аргумент создает отчет о производительности, где указано время, затраченное на среду выполнения IronPython и основной код. Для вашего кода используются искаженные имена.
 
-Кроме того, IronPython имеет некоторые встроенные средства профилирования, но пока для них нет хорошего средства визуализации. В разделе [о профилировщике IronPython](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (на сайте блогов MSDN) вы можете узнать, какие средства доступны.
+Кроме того, IronPython имеет некоторые встроенные средства профилирования, но пока для них нет хорошего средства визуализации. В разделе [о профилировщике IronPython](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (на сайте блогов MSDN) вы можете узнать, какие средства доступны.

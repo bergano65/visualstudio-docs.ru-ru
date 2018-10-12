@@ -1,26 +1,26 @@
 ---
-title: Средства тестирования для разработчика в Visual Studio
+title: Инструменты тестирования для разработчиков
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 83339ebabd3bb8a00f56b90ba9f162084bd43043
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282856"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370644"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Инструменты, сценарии и возможности тестирования для разработчика
 
-Вы можете поддерживать работоспособность кода с помощью модульных тестов. Visual Studio предоставляет разработчикам обширный набор эффективных средств и методов для тестирования приложений:
+Вы можете поддерживать работоспособность кода с помощью модульных тестов. Visual Studio предоставляет разработчикам обширный набор эффективных средств и методов для тестирования приложений.
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Предотвращение регрессий и обеспечение объема протестированного кода с помощью IntelliTest
 
@@ -38,16 +38,14 @@ ms.locfileid: "44282856"
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Тестирование пользовательского интерфейса с помощью закодированного теста и Selenium
 
-Вы можете протестировать пользовательский интерфейс с помощью лучших в своем роде или одобренных сообществом тестов.
-Закодированные тесты пользовательского интерфейса позволяют создать полностью автоматические тесты для проверки функциональности и поведения пользовательского интерфейса приложения.
-Они автоматизируют тестирование пользовательского интерфейса в разных технологиях, включая приложения универсальной платформы Windows на основе XAML, приложения браузера и приложения SharePoint.
+Вы можете протестировать пользовательский интерфейс с помощью лучших в своем роде или одобренных сообществом тестов. Закодированные тесты пользовательского интерфейса позволяют создать полностью автоматические тесты для проверки функциональности и поведения пользовательского интерфейса приложения. Они автоматизируют тестирование пользовательского интерфейса в разных технологиях, включая приложения универсальной платформы Windows на основе XAML, приложения браузера и приложения SharePoint.
 
 Если вам нужны лучшие в своем роде закодированные тесты пользовательского интерфейса или универсальные тесты на основе браузера с использованием Selenium, Visual Studio предоставляет все необходимые для этого инструменты.
 
 ![Тестирование пользовательского интерфейса с помощью закодированных тестов](media/devtest-codeduitest.png)
 
 * [Использование автоматизации пользовательского интерфейса для тестирования кода](use-ui-automation-to-test-your-code.md)
-* [Начало работы по созданию, изменению и обслуживанию закодированного теста пользовательского интерфейса](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [Руководство по созданию, изменению и обслуживанию закодированного теста пользовательского интерфейса](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Тестирование приложений UWP с помощью закодированных тестов пользовательского интерфейса](test-uwp-app-with-coded-ui-test.md)
 * [Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Введение в использование закодированных тестов пользовательского интерфейса с помощью Visual Studio Enterprise (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
@@ -60,21 +58,19 @@ ms.locfileid: "44282856"
 
 Покрытие кода возможно при выполнении методов тестов с помощью обозревателя тестов. В таблице результатов отображается процент кода, который был выполнен в каждой сборке, классе и методе. Кроме того, редактор исходного кода показывает, какой код был протестирован.
 
-![Тестирование с помощью Azure Test Plans и Team Foundation Server](media/devtest-codecoverage.png)
-
-* [Использование покрытия кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Использование параметра объема протестированного кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Модульное тестирование, объем протестированного кода и анализ клонов кода с помощью Visual Studio (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Настройка анализа объема протестированного кода](customizing-code-coverage-analysis.md)
 
-## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Модульное тестирование на любой платформе с помощью высокопроизводительного обозревателя тестов
+## <a name="test-explorer"></a>Обозреватель тестов
 
-Обозреватель тестов помогает разработчикам создавать модульные тесты, управлять ими и применять их с максимальной выгодой.
+**Обозреватель тестов** помогает разработчикам создавать и запускать модульные тесты, а также управлять ими.
 
 ![Обозреватель тестов Visual Studio](media/devtest-testexplorer.png)
 
 * [Приступая к работе с модульным тестированием](unit-test-your-code.md)
 * [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)
-* [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
+* [Вопросы и ответы по обозревателю тестов](test-explorer-faq.md)
 * [Установка платформ модульного тестирования сторонних поставщиков](install-third-party-unit-test-frameworks.md)
 
 Visual Studio является расширяемой системой и позволяет использовать сторонние адаптеры модульного тестирования, такие как NUnit и xUnit.net. Кроме того, функция клонов кода обеспечивает высокое качество программного обеспечения, помогая определить блоки семантически сходного кода, которые являются кандидатами для совместного исправления ошибок или рефакторинга.
@@ -87,3 +83,4 @@ Visual Studio является расширяемой системой и поз
 * [Ускорение модульных тестов в Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Параллельное и контекстное выполнение модульных тестов](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Модульное тестирование, объем протестированного кода и анализ клонов кода с помощью Visual Studio (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)

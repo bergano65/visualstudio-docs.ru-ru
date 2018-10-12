@@ -9,12 +9,12 @@ description: Сведения об активации учебной подпи�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279171"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542355"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279171"
     > [!div class="mx-imgBorder"]
     > ![Установка расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Затем выберите нужную организацию Azure DevOps Services и нажмите кнопку **Подтвердить**.  (Если вы еще не настроили Azure DevOps Services, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте преимущество Azure DevOps Services.)
+    - Затем выберите нужную организацию Azure DevOps и нажмите кнопку **Подтвердить**.  (Если вы еще не настроили Azure DevOps Services, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте преимущество Azure DevOps Services.)
 
     > [!div class="mx-imgBorder"]
     > ![Учетная запись для подтверждения преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ ms.locfileid: "44279171"
     > [!div class="mx-imgBorder"]
     > ![Установка преимущества WhiteSource завершена](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Откройте панель мониторинга проекта Azure DevOps Services, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
+5.  Откройте панель мониторинга проекта Azure DevOps, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![Добавление расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

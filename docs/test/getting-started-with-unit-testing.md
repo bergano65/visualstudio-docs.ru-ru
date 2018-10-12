@@ -1,22 +1,22 @@
 ---
-title: Приступая к работе с модульным тестированием в Visual Studio
+title: Приступая к работе с модульным тестированием
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370811"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -103,9 +103,7 @@ ms.locfileid: "39469071"
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
-Чтобы определить, какая часть кода проекта в действительности тестируется закодированными тестами, такими как модульные тесты, можно воспользоваться возможностью покрытия кода в Visual Studio. Для обеспечения эффективной защиты от ошибок тесты должны выполнять ("покрывать") большую часть кода. Чтобы узнать, как это сделать, см. статью [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
-
-![Использование покрытия кода для определения объема протестированного кода](media/codecoverage.png)
+Чтобы определить, какая часть кода проекта в действительности тестируется закодированными тестами, такими как модульные тесты, можно воспользоваться возможностью покрытия кода в Visual Studio. Для эффективного обнаружения ошибок тесты должны выполнять значительную часть кода. Чтобы узнать, как это сделать, см. статью [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-different-unit-test-framework"></a>Использование другой платформы модульного тестирования
 

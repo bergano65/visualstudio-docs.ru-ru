@@ -1,5 +1,5 @@
 ---
-title: Руководство по работе с Python. Шаг 2 — создание и выполнение кода
+title: Руководство по работе с Python. Шаг 2 — написание и запуск кода
 description: Шаг 2 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описано редактирование кода и запуск проекта.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91e30cbc9db895b75c909f5c68d12347d5145ece
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513124"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549982"
 ---
 # <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
 

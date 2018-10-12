@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d9515d208f2ab4bb8c429d5063e5134676c71c24
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785961"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101076"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio 2017
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -147,12 +147,7 @@ ms.locfileid: "38785961"
 
 В этом руководстве мы используем Visual Studio 2017.
 
-Если вам не удается, откройте страницу при загрузке удаленного отладчика, см. в разделе [разблокировать на загрузку файла](../debugger/remote-debugging.md#unblock_msvsmon) для справки.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> В некоторых сценариях может быть наиболее эффективным для запуска удаленного отладчика из общей папки. Дополнительные сведения см. в разделе [запуск удаленного отладчика из общей папки](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612692"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101047"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Учебник: Сведения об отладке, с помощью Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "45612692"
 |---------|---------|
 |  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    [Ознакомьтесь с видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) по отладке, показаны аналогичные действия. |
 
-Несмотря на то что демонстрационного приложения C# и C++, средства применимы к Visual Basic, JavaScript и других языков, поддерживаемых Visual Studio (за исключением оговоренных случаев). Снимки экрана написаны на C#. Для переключения между C# и C++ примера кода в этой статье, используйте фильтр язык в правом верхнем углу этой страницы.
+Несмотря на то что демонстрационного приложения C# и C++, средства применимы к Visual Basic, JavaScript и других языков, поддерживаемых Visual Studio (за исключением оговоренных случаев). Снимки экрана написаны на C#.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -60,6 +60,9 @@ ms.locfileid: "45612692"
 3. Введите имя, например **get работы Отладка** и нажмите кнопку **ОК**.
 
     Visual Studio создаст проект.
+
+    > [!NOTE]
+    > Для переключения между C# и C++ примера кода в этой статье, используйте фильтр язык в правом верхнем углу этой страницы.
 
 4. В *Program.cs* (C#) или *работы debugging.cpp get* (C++), замените код
 
