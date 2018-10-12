@@ -17,7 +17,7 @@
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
-#### [Azure DevOps Services](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Деньги на счете в Azure](vs-azure.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Обучение Xamarin University](vs-xamarin.md)
 #### [Подписка на журнал MSDN](vs-msdn.md)
