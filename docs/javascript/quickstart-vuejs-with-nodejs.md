@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание первого приложения Vue.js с помощью Visual Studio
 description: В этом кратком руководстве вы создадите приложение Vue.js в Visual Studio с помощью инструментов Node.js для Visual Studio
-ms.date: 11/15/2017
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131912"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168361"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого приложения Vue.js с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите и запустите простое веб-приложение Vue.js. Установите Visual Studio 2017 бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
 > [!IMPORTANT]
-> Для выполнения инструкций из этой статьи вам потребуется шаблон Vue.js, который доступен начиная с версии Visual Studio 2017 15.8, предварительная версия 3.
+> Для выполнения инструкций из этой статьи вам потребуется шаблон Vue.js, который доступен, начиная с версии Visual Studio 2017 15.8.
 
 ## <a name="create-a-project"></a>Создание проекта
 

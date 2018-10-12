@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284189"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542498"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "44284189"
 
 - **Продление пробного периода Visual Studio**. Пробный период Visual Studio Professional и Visual Studio Enterprise продлевается с 30 до 90 дней.
 
-- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской Visual Studio или организацией Azure DevOps Services**. См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской Visual Studio или организацией Azure DevOps** . См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Автоматическое подключение к таким службам, как Azure и Azure DevOps Services**, в интегрированной среде разработки без повторного запроса учетных данных одной и той же учетной записи.
 

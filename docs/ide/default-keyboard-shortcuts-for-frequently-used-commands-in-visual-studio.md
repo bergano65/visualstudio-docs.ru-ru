@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512552"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370982"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -150,7 +150,7 @@ ms.locfileid: "39512552"
 |View.ObjectBrowser|**CTRL+ALT+J** [глобальный]|
 |View.Output|**CTRL+ALT+O** [глобальный]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer, редактор сведений Team Foundation Build]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**CTRL+ALT+S** [глобальный]|
 |View.ShowSmartTag|**CTRL+.** [Global]<br /><br /> или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|
 |View.SolutionExplorer|**CTRL+ALT+L** [глобальный]|

@@ -1,7 +1,7 @@
 ---
 title: Установка поддержки Python
 description: Инструкции по установке средств Python для Visual Studio (PTVS) в Visual Studio 2017, 2015, 2013, 2012 и 2010, включая параметры и расположения установки.
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627293"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168374"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -25,8 +25,6 @@ ms.locfileid: "42627293"
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
-
-Для Visual Studio 2015 и более ранних версий требуется отдельно [установить любой интерпретатор Python](installing-python-interpreters.md) (Python 3.5 или более ранней версии; версия 3.6 не поддерживается, и будет выводиться сообщение **Неподдерживаемая версия Python 3.6**). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
 Чтобы быстро проверить поддержку Python после установки, откройте **интерактивное окно Python**. Для этого нажмите клавиши **ALT**+**I** и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
@@ -96,7 +94,7 @@ ms.locfileid: "42627293"
 
     ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)
 
-1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](installing-python-interpreters.md). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](installing-python-interpreters.md). Visual Studio 2015 поддерживает только Python версии 3.5 и более ранних. При использовании более поздних версий отображается сообщение об ошибке, например **Неподдерживаемая версия Python 3.6**). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 и более ранние версии
 

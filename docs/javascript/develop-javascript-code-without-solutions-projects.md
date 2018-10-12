@@ -2,7 +2,7 @@
 title: Написание кода JavaScript в Visual Studio без решения или проекта
 description: Visual Studio поддерживает создание кода без зависимости от файла проекта или файла решения
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774608"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168335"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -28,7 +28,7 @@ Visual Studio 2017 представляет возможность [разраб
 Чтобы приступить к работе, нажмите **Открыть папку** на начальной странице, которая отображается при открытии Visual Studio, или выберите **Файл** > **Открыть** > **Папка** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
 
 > [!IMPORTANT]
-> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8, предварительная версия 3.
+> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8.
 
 ## <a name="npm-integration"></a>Интеграция npm
 

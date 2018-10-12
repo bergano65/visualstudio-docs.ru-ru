@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320635"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370969"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -36,7 +36,7 @@ ms.locfileid: "44320635"
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования
 
-Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Прокрутите страницу вниз и найдите раздел *Агенты для Visual Studio 2017*. Выберите *агент* или *контроллер* и нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
+Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Найдите пункт *Agents для Visual Studio 2017*, выберите *Agent* или *Controller*, а затем нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
 
 Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://visualstudio.microsoft.com/vs/older-downloads/).
 
@@ -63,7 +63,7 @@ ms.locfileid: "44320635"
 В следующей таблице описаны сценарии, поддерживаемые инструментарием "Agents для Visual Studio 2013" и альтернативными решениями для Team Foundation Server (TFS) 2015 и Azure Test Plans:
 
 | Сценарии, поддерживаемые Agents для Visual Studio 2013 | Альтернатива в TFS и Azure Test Plans |
-| --- | --- |
+| - | - |
 | Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [конвейер сборки](/azure/devops/pipelines/index?view=vsts) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
 | Нагрузочные тесты (тестирование производительности) с использованием удаленных локальных компьютеров | Используйте обновление 5 для контроллеров и агентов тестирования 2013 для локального выполнения нагрузочных тестов. |
 | Удаленное выполнение автоматических тестов из Microsoft Test с использованием лабораторной среды | Сейчас альтернативы этому сценарию не существует. Мы рекомендуем использовать задачу "Запуск функциональных тестов" в определениях сборок и выпусков (не в сборке XAML) для удаленного выполнения тестов. |

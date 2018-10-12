@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc0fcb1983d6cfa7a3fe9e1fffff7070c3caf3e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: faa0e17537f8f5b5e10b4d133615e3d82471c629
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36302862"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495886"
 ---
-# <a name="talk-to-us"></a>Обращайтесь к нам
+# <a name="visual-studio-product-feedback"></a>Отзыв о продукте Visual Studio
 
 Нас интересуют ваши идеи по улучшению наших продуктов и документации. Мы не всегда можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту или группе.
 

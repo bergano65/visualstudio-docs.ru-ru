@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552114"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029151"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -30,7 +30,7 @@ Visual Studio является мощной интегрированной ср�
 
 - Следуйте [инструкциям по установке](installing-python-support-in-visual-studio.md), чтобы настроить рабочую нагрузку Python.
 - Эта статья познакомит вас с возможностями Python в Visual Studio. Вы также можете [просмотреть серию видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) об основах использования Python в Visual Studio (всего 22 мин).
-- Выполните одно или несколько кратких руководств, чтобы создать проект. Если вы не уверены, начните с [создания веб-приложения на платформе Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
+- Выполните одно или несколько кратких руководств, чтобы создать проект. Если вы не уверены, начните с [создания веб-приложения на платформе Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Пройдите руководство [Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md), в котором описана полная процедура.
 
 ## <a name="support-for-multiple-interpreters"></a>Поддержка нескольких интерпретаторов
@@ -45,7 +45,7 @@ Visual Studio является мощной интегрированной ср�
 
 - Видео (2 мин 35 с). [Управление окружениями Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Документация. [Управление окружениями Python](managing-python-environments-in-visual-studio.md)
-- Документы: [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)
+- Документация. [Справочник по окружениям Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Многофункциональное редактирование, IntelliSense и понимание кода
 
