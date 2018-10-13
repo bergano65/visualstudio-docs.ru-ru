@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: шаг с выходом из управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 682d4f9c8973f8deee65efa0cd8c0d78061ee00a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2648d73887f79f9b71770164a620bb1a8d674622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279439"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Практическое руководство. Выход из пошагового выполнения управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: шаг с выходом из управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов](https://docs.microsoft.com/visualstudio/debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window).  
-  
 Если код имеет машинные фреймы, которых нет в **стек вызовов** окна, шаг с выходом из управляемого кода может привести к непредвиденным результатам. Чтобы избежать этого, можно использовать точку останова, а не **шаг с выходом**.  
   
 > [!NOTE]

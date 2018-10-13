@@ -1,7 +1,7 @@
 ---
 title: Связывание обновлений модели UML с использованием транзакций | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274265"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Связывание обновлений модели UML с использованием транзакций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обновлений модели UML ссылку с помощью транзакций](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
-При определении расширения для конструкторов UML в Visual Studio, можно сгруппировать несколько изменений в одной транзакции вызывается *связанный контекст отмены*. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+При определении расширения для конструкторов UML в Visual Studio, можно сгруппировать несколько изменений в одной транзакции вызывается *связанный контекст отмены*. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  По умолчанию пользователь может по отдельности отменять каждое изменение, которое ваш код вносит в модель. Например, если вы определяете команду меню, которая меняет местами названия двух классов UML, пользователь может вызвать эту команду и затем выполнить одну операцию отмены. Приведет к отмене изменения только для для одного имени из двух, в результате чего модель будет находиться в непредвиденном состоянии.  
   

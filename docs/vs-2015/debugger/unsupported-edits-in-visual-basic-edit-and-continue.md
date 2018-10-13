@@ -1,7 +1,7 @@
 ---
 title: Изменения, не поддерживаемые в Visual Basic, изменить и продолжить | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296326"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Изменения, не поддерживаемые в режиме "Изменить и продолжить" Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [неподдерживаемые изменения в Visual Basic, изменить и продолжить](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 Операция "Изменить и продолжить" позволяет остановить выполнение программы в режиме приостановки выполнения, внести изменения в исполняемый код и возобновить выполнение программы с учетом внесенных изменений. Изменения в объявляющем коде, меняющие общедоступную (public) структуру класса, в общем случае запрещены, но разрешено большинство возможных изменений в теле метода или свойства, а также в объявлениях со спецификатором доступа private в пределах класса.  
   
  Если требуется внести изменение, которое не поддерживается операцией "Изменить и продолжить", следует остановить отладку, внести необходимые изменения и начать новый сеанс отладки.  

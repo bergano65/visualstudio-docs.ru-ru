@@ -1,7 +1,7 @@
 ---
 title: Файл DslDefinition.dsl | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306128"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [файл DslDefinition.dsl](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 В этом разделе описывается структура файла DslDefinition.dsl в проекте Dsl [!INCLUDE[dsl](../includes/dsl-md.md)] решение, которое определяет *предметно ориентированного языка*. Файл DslDefinition.dsl описывает классы и взаимосвязь доменного языка, а также схема, фигуры, соединители, формат сериализации, и **элементов** доменного языка и его средства для изменения. В решении доменного языка код, который определяет эти инструменты, генерируется согласно информации из файла DslDefinition.dsl.  
   
  Как правило, используется *конструктора доменного языка* для редактирования файла DslDefinition.dsl. В необработанном виде файл DslDefinition.dsl представляет собой XML, и его можно открыть в редакторе XML. Это позволит вам понять, какая информация содержится в файле и как она организована в целях отладки и расширения.  

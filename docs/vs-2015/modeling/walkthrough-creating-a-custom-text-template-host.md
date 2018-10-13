@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Создание пользовательского хост текстовых шаблонов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2edd9d355fb9372ea954e2ec25c92164319297c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304230"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: Создание пользовательского хост-класса шаблона текста](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-text-template-host).  
-  
 Объект *текстового шаблона**узла* предоставляет среду, которая включает *преобразования текстовых шаблонов* для запуска. Ведущее приложение отвечает за управление взаимодействием этого процессора с файловой системой. Подсистема или *процессора директив* , требуется файл или сборка, могут запросить ресурс с узла. В ответ ведущее приложение просмотрит каталоги и глобальный кэш сборок в поиске запрошенного ресурса. Дополнительные сведения см. в разделе [процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md).  
   
- Можно написать пользовательский узел, если вы хотите использовать *преобразования текстового шаблона* функциональные возможности из-за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или если вы хотите интегрировать эти функциональные возможности в пользовательские средства. Для создания пользовательского основного приложения необходимо создать класс, наследующий от <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Документацию по отдельным методам см. в разделе <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
+ Можно написать пользовательский узел, если вы хотите использовать *преобразования текстового шаблона* функциональные возможности из-за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или если вы хотите интегрировать эти функциональные возможности в пользовательские средства. Для создания пользовательского ведущего приложения необходимо создать класс, наследующий от <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Документацию по отдельным методам см. в разделе <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
 >  При создании расширения или пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно воспользоваться службой создания текстовых шаблонов, а не создавать собственный узел. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  

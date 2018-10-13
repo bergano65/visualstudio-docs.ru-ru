@@ -1,7 +1,7 @@
 ---
 title: Проекты вложения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a454877a5cb7638edaff8263b6505de16ee9c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294259"
 ---
 # <a name="nesting-projects"></a>Проекты вложения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вложенные проекты](https://docs.microsoft.com/visualstudio/extensibility/internals/nesting-projects).  
-  
 Разработчикам корпоративных приложений, которые используют пакет VS можно удобно Группировать схожие типы проектов вместе в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью *проекта вложенности*. Например проект корпоративных шаблонов использует вложенные проекты в проекты группы на категории. Фасадной проекты, проекты веб-интерфейса и т. д., группируются вместе в одной категории.  
   
  В этом случае не ограничено число проектов, которые разработчик можно вложить в разделе каждого родительского проекта, несмотря на то, что разработчик может предоставить программным способом ограничения. Этот тип группирования также могут быть созданы рекурсивной, в этом случае проекты совпадает с типом дочернего проекта может быть вложен в узел дочерних станет подпроектом дочерний элемент, являющийся подпроект родительского элемента.  

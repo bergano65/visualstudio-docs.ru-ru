@@ -1,7 +1,7 @@
 ---
 title: Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 49dbf5abbf3908f1b4dda5131f3f8dcdf4426243
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d6933a484344a5064d39e3897ea503d0f484af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290411"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [внесения закодированного пользовательского интерфейса тесты ожидания для конкретного события во время воспроизведения](https://docs.microsoft.com/visualstudio/test/making-coded-ui-tests-wait-for-specific-events-during-playback).  
-  
 При воспроизведении закодированного теста ИП вы можете подождать возникновения определенных событий, например открытия окна, исчезновения строки хода выполнения и т. д. Чтобы сделать это, используйте соответствующий метод UITestControl.WaitForControlXXX(), как описано в следующей таблице. Пример закодированного теста пользовательского интерфейса, который ожидает включения элемента управления с помощью метода <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, см. в разделе [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Требования**  

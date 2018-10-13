@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Инкрементное построение | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca1950a2c9ef7ee69c3f26bca1d2fe4ddf010e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275058"
 ---
 # <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементное построение
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: инкрементная сборка](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-incrementally).  
-  
   
 При сборке большого проекта важно, чтобы созданные ранее компоненты, которые все еще актуальны, не перестраивались. Если каждый раз создаются все целевые объекты, каждая сборка будет занимать много времени. Для выполнения инкрементных построений (сборки, в которых перестраиваются только те целевые объекты, которые не были построены ранее, или устаревшие целевые объекты) [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. Однако должно быть однозначное сопоставление между входными и выходными данными. Чтобы целевые объекты могли идентифицировать это прямое сопоставление, можно использовать преобразования. Дополнительные сведения о преобразованиях см. в статье [Преобразования](../msbuild/msbuild-transforms.md).  
   

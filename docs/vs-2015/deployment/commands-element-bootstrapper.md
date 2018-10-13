@@ -1,7 +1,7 @@
 ---
 title: '&lt;Команды&gt; элемент (загрузчик) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5802aae6b3476eb9688da484e6ec36b818c2d61a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276579"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Команды&gt; элемент (установщик)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;команды&gt; элемент (загрузчик)](https://docs.microsoft.com/visualstudio/deployment/commands-element-bootstrapper).  
-  
 `Commands` Элемент реализует тесты, описываемого элементов, расположенных под `InstallChecks` элемент и объявляет пакет, который [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] загрузчик должен установить, если тест не пройден.  
   
 ## <a name="syntax"></a>Синтаксис  

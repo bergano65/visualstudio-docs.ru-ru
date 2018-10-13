@@ -1,7 +1,7 @@
 ---
 title: Настройка сеансов анализа производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285341"
 ---
 # <a name="configuring-performance-sessions"></a>Настройка сеансов анализа производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка сеансов анализа производительности](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions).  
-  
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяют собирать большой объем данных о производительности для приложений различных типов. В данном разделе описывается, как использовать мастер производительности и свойства сеанса анализа производительности и целевого двоичного файла для настройки средств профилирования для сбора интересующих вас данных. Свойства конфигурации средств профилирования могут также использоваться для управления объемом данных, собираемых в ходе сеанса профилирования. Дополнительные сведения см. в статье [Controlling Data Collection](../profiling/controlling-data-collection.md) (Управление сбором данных).  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Определение обработчика связей рабочего элемента | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290424"
 ---
 # <a name="define-a-work-item-link-handler"></a>Определение обработчика связей рабочего элемента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение обработчика связей рабочего элемента](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Разработчик может создать расширение интеграции Visual Studio, реагирующее на создание или удаление пользователем связи между элементом модели UML и рабочим элементом. Например, если пользователь решит связать новый рабочий элемент с элементом модели, код расширения может заполнить поля рабочего элемента значениями, полученными из модели.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Настройка решения расширения UML  
@@ -163,11 +161,11 @@ namespace WorkItems
   
 1.  Нажмите клавишу **F5**или выберите команду **Начать отладку** в меню **Отладка**.  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается, убедитесь, что проект VSIX запускаемым проектом решения.  
   
-2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте проект моделирования и схему моделирования.  
+2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования.  
   
 3.  Создайте элемент модели (например, класс UML) и присвойте ему имя.  
   

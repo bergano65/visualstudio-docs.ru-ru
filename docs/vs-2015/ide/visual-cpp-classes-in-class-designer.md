@@ -1,7 +1,7 @@
 ---
 title: Классы Visual C++ в конструкторе классов | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884d8cc74ea550c804aa6dd6ac735eb6f70be789
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285692"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [классы Visual C++ в конструкторе классов](https://docs.microsoft.com/visualstudio/ide/visual-cpp-classes-in-class-designer).  
-  
 Конструктор классов поддерживает классы C++ и визуализирует собственные классы C++ так же, как фигуры классов Visual Basic и Visual C#. Отличие состоит в том, что классы C++ могут обладать отношениями множественного наследования. Фигуру класса можно развернуть, чтобы отобразить дополнительные поля и методы класса, а также свернуть в целях экономии места.  
   
 > [!NOTE]

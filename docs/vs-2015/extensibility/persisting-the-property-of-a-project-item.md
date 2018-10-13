@@ -1,7 +1,7 @@
 ---
 title: Сохранение свойства элемента проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285107"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Сохранение свойства элемента проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сохранение свойства элемента проекта](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item).  
-  
 Вы можете сохранить свойства, добавляемого элемента проекта, такие как автор исходного файла. Это можно сделать путем сохранения свойства в файле проекта.  
   
  Первым шагом для сохранения свойства в файл проекта является для получения иерархии проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс. Этот интерфейс можно получить с помощью службы автоматизации или с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. После получения интерфейс, его можно использовать для определения, какой элемент проекта выбран в данный момент. Получив идентификатор элемента проекта, можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> для добавления свойства.  

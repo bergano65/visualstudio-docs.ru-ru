@@ -1,7 +1,7 @@
 ---
 title: Связывание точек останова | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19c1fc2857cf007f223f4cbb8e8bb307f972c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e89a671d8b243869639a5c3825233ff60b19c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283326"
 ---
 # <a name="binding-breakpoints"></a>Связывание точек останова
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [привязка точки останова](https://docs.microsoft.com/visualstudio/extensibility/debugger/binding-breakpoints).  
-  
 Если пользователь устанавливает точку останова, возможно, нажав клавишу F9, среда IDE формирует запрос и предлагает сеанса отладки, чтобы создать точку останова.  
   
 ## <a name="setting-a-breakpoint"></a>Установка точки останова  

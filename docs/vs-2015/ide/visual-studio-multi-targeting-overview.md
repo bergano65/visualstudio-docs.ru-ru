@@ -1,7 +1,7 @@
 ---
 title: Обзор настройки для различных версий в Visual Studio| Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277073"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Visual Studio Обзор многоплатформенного нацеливания](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 В этой версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно указать версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], необходимую для вашего приложения. Таким образом, если вы хотите использовать эту версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для продолжения разработки проекта, работу над которым начали в более ранней версии, вам не нужно изменять целевую версию платформы .NET Framework. Можно также создать решение, содержащее проекты, ориентированные на разные версии платформы. Нацеливание платформы также помогает гарантировать, что приложение использует только те функциональные возможности, которые доступны в указанной версии платформы.  
   
 > [!TIP]

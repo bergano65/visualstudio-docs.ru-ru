@@ -1,7 +1,7 @@
 ---
 title: Рекомендации по выгрузке и перезагрузке вложенных проектов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277567"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Рекомендации по выгрузке и перезагрузке вложенных проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вопросы выгрузка и перезагрузке вложенных проектов](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects).  
-  
 При реализации типов вложенных проектов, необходимо выполнить дополнительные действия, когда Вы выгрузите, а затем перезагрузить проекты. Чтобы правильно уведомлять прослушивателей событий решения, нужно правильно повысить `OnBeforeUnloadProject` и `OnAfterLoadProject` события.  
   
  Одна из причин, необходимо изменить эти события таким образом, что делает не системы управления исходным кодом (SCC), чтобы удалить элементы с сервера, а затем добавьте на их обратно как что-то новое, если имеется `Get` операции SCC. В этом случае загружается новый файл из SCC, и вам придется выгружать и загружать файлы, если они отличаются. Вызовы SCC `ReloadItem`. Реализации этого вызова является удаление проекта и повторно создайте его заново, реализовав `IVsFireSolutionEvents` для вызова `OnBeforeUnloadProject` и `OnAfterLoadProject`. При выполнении этой реализации, SCC получает сведения проекта была временно удалена и снова добавить. Таким образом SCC не работают с проекта, как в том случае, если проект был фактически удален с сервера, а затем добавить его.  

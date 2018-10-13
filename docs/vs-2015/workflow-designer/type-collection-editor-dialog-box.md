@@ -1,7 +1,7 @@
 ---
 title: Диалоговое окно «Редактор коллекции типов» | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 34b8129b5a0b1fe27a7e4e6c178ddace638e5ffc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298575"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Диалоговое окно редактора коллекций типов
 **Редактор коллекции типов** диалоговое окно используется для добавления известных типов для **отправки** и **Receive** действий. Это диалоговое окно также используется для добавления аргументов универсального типа для **InvokeMethod** действия. При использовании для **отправки** и **Receive** действия для добавления известных типов **редактор коллекции типов** диалоговое окно требует добавления типов должны быть уникальными. При добавлении дублирующего типа и подтверждении, нажав кнопку **ОК**, возвращается сообщение об ошибке. При использовании для **InvokeMethod** действия для добавления аргументов универсального типа, **редактор коллекции типов** диалоговое окно позволяет добавлять дублирующих типов.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] известных типах см. в разделе [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
+>  [!INCLUDE[crabout](../includes/crabout-md.md)] об известных типах см. в разделе [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **коллекция типов** диалоговое окно.  
   

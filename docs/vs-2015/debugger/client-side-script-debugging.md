@@ -1,7 +1,7 @@
 ---
 title: Отладка клиентского скрипта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288032"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладку скриптов на стороне клиента](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging).  
-  
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Открытие документов скрипта  
@@ -45,7 +43,7 @@ ms.locfileid: "47569181"
 ## <a name="manually-or-automatically-attaching-to-script"></a>Автоматическое присоединение к скрипту или присоединение к скрипту в ручном режиме  
  Чтобы начать отладку скрипта в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], отладчику необходимо выполнить присоединение к скрипту, для которого необходимо выполнить отладку. Присоединение может быть выполнено в ручном режиме или автоматически.  
   
- Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Для получения дополнительной информации см. [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Для получения дополнительной информации см. [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  Отладчик автоматически выполняет присоединение к скрипту при возникновении одного из следующих условий:  
   
@@ -67,14 +65,14 @@ ms.locfileid: "47569181"
 ## <a name="debugging-ajax-script-applications"></a>Отладка приложений Ajax-скриптов  
  Веб-приложения с включенной технологией Ajax делают сложным использование кода скрипта и ставят проблемы специальной отладки. Дополнительные сведения о методах отладки Ajax см. в разделе  
   
- [Отладка и трассировка Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)   
  [Переменной Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Окно интерпретации](../ide/reference/immediate-window.md)   
- [Отладка и трассировка Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
 
 
 

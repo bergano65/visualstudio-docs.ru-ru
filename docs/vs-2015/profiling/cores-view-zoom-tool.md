@@ -1,7 +1,7 @@
 ---
 title: Средство масштабирования представления "Ядра" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 204817e24df6eadd18dcffc7829ababfa94530c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291298"
 ---
 # <a name="cores-view-zoom-tool"></a>Средство масштабирования представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средство масштабирования представления "ядра"](https://docs.microsoft.com/visualstudio/profiling/cores-view-zoom-tool).  
-  
 Элемент управления "Масштаб" — это ползунок, позволяющий увеличивать и уменьшать временную шкалу, фокусируясь на нужных участках. Этот элемент управления выполняет масштабирование по центру текущего представления, поэтому перед масштабированием следует отрегулировать это представление.  
   
 ## <a name="other-ways-to-zoom"></a>Другие способы масштабирования  

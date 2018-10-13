@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Просмотр существующих типов (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a65ef57bfe044a1856a81e054f058bb89946a84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305292"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Практическое руководство. Просмотр существующих типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Просмотр существующих типов (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-view-existing-types-class-designer).  
-  
 Для просмотра существующего типа и его членов, добавьте его фигуру на диаграмму классов.  
   
  Можно просмотреть локальные и ссылочные типы. Локальный тип существует в текущем открытом проекте и доступен для чтения и записи. Ссылочный тип существует в другом проекте или в сборке, на которую имеется ссылка, и доступен только для чтения.  

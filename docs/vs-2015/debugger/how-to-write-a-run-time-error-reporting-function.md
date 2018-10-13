@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94bbc0ff7d5ca06ca4ff7f84e1f2cb85c254b197
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5de5ecabc9a07dce04a17394448da0deec65268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284821"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: написать функцию отчетов во время выполнения ошибки](https://docs.microsoft.com/visualstudio/debugger/how-to-write-a-run-time-error-reporting-function).  
-  
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
   
  В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.  

@@ -1,7 +1,7 @@
 ---
 title: Конфигурации для выходных данных проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304126"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [конфигурация проекта для вывода](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output).  
-  
 Каждая конфигурация может поддерживать набор процессов сборки, которые создают выходные элементы, такие как файлы исполняемого файла или ресурса. Эти элементы выходных данных для пользователя и могут быть помещены в группы, которые связывают связанных типов выходных данных, например исполняемые файлы (.exe, .dll, .lib) и исходных файлов (.idl, h-файлы).  
   
  Выходные элементы могут быть доступными через <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> методы и перечисления с <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> методы. При необходимости для группирования элементов выходных данных проекта следует реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> интерфейс.  

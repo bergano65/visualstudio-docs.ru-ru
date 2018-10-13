@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Указание событий сборки (Visual Basic) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc4c0efad510c511cde5d6803807a1fb1f8efd67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298900"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий построения (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Указание событий сборки (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-visual-basic).  
-  
 События сборки в Visual Basic можно использовать для выполнения скриптов, макросов или других действий в составе процесса компиляции. События перед сборкой происходят до компиляции; события после сборки происходят после компиляции.  
   
  События сборки указываются в диалоговом окне **События сборки**, которое можно открыть со страницы **Компиляция** **конструктора проектов**.  

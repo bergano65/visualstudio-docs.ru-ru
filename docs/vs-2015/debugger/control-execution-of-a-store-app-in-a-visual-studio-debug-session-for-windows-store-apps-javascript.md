@@ -1,7 +1,7 @@
 ---
 title: Управление выполнением приложения Store в сеансе отладки Visual Studio для приложений Windows Store (JavaScript) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275526"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Управление выполнением приложения Магазина в сеансе отладки Visual Studio для приложений Магазина Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [управления выполнением приложения Store в сеансе отладки Visual Studio для приложений Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 В этом кратком руководстве описывается процедура навигации по отладчику Visual Studio, а также способы просмотра состояния программы в сеансе.  
   
  Это краткое руководство предназначено для разработчиков, которые не знакомы с методами отладки с помощью Visual Studio, и для разработчиков, которые хотят узнать больше о навигации по сеансу отладки Visual Studio. Оно не предназначено для обучения самому искусству отладки. Функции в примере кода приводятся только для демонстрации процедур отладки, описанных в этом разделе. Они не отражают рекомендуемые методы разработки приложений и принципы оптимального кодирования. На самом деле вы быстро поймете, что и функции, и само приложение практически ничего не делают.  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Настройка анализа кода для веб-приложения ASP.NET | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b611e303c61e7be9586d6d746e5c859c8dbb5b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283911"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Практическое руководство. Настройка анализа кода для веб-приложения ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Настройка анализа кода для веб-приложения ASP.NET](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application).  
-  
 В [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] и [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] можно выбрать из списка анализа кода *наборов правил* для применения к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] веб-приложения. Набор правил по умолчанию — Microsoft минимальные правила. Вы можете выбрать другое правило, применяется для веб-сайта.  
   
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Настройка набора правил для проекта платформы веб-страниц ASP.NET  

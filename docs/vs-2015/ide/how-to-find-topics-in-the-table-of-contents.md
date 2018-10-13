@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Поиск разделов в содержании | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77c6221dc8362fb8a6bea6a272ca1e39d7fcd9af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292751"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Практическое руководство. Поиск разделов в содержании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: поиск разделов в содержании](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-table-of-contents).  
-  
 Для поиска информации используйте вкладку **Содержание**. Содержание — это расширяемый список, в который входят все разделы в установленных книгах. Сведения о специальных возможностях для навигации по содержанию см. в разделе [Сочетания клавиш (средство просмотра справки)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]

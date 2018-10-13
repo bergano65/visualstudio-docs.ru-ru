@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Отключение предупреждений компилятора | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286095"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отключение предупреждений компилятора](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings).  
-  
 Журнал сборки можно упорядочить, указав один или несколько видов предупреждений компилятора, которые не должны входить в журнал. Например, этот метод можно использовать для просмотра некоторых (не всех) сведений, которые автоматически создаются при установке таких уровней детализации ведения журнала сборки, как "Обычный", "Подробный" или "Диагностический". Дополнительные сведения о детализации см. в статье [Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Отключение некоторых предупреждений для Visual C# и F#  

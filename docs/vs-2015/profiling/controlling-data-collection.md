@@ -1,7 +1,7 @@
 ---
 title: Управление сбором данных | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6170ee5e93bcb8faeadd1d918468a44c4badb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306596"
 ---
 # <a name="controlling-data-collection"></a>Управление сбором данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление сбором данных](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection).  
-  
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяют управлять сбором данных в ходе сеанса анализа производительности и задавать профилируемые функции. В этом разделе описывается запуск и останов сбора данных с помощью окон **Обозреватель производительности** и **Управление сбором данных**, а также выбор объектов, для которых выполняется сбор данных профилирования.  
   
 ## <a name="common-tasks"></a>Общие задачи  

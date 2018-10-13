@@ -1,7 +1,7 @@
 ---
 title: Проверка модели UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292699"
 ---
 # <a name="validate-your-uml-model"></a>Проверка модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [проверка модели UML](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Некоторые модели UML, которые можно создать в Visual Studio, могут считаться в проекте недопустимыми. Например, в некоторых случаях нужно, чтобы вариант использования всегда был связан со схемой последовательностей, жизненные циклы которой представляют субъекты варианта использования. Можно установить или определить *ограничения* , помогут команде выполнить требования это такого рода. Ограничения могут применяться при сохранении или открытии модели пользователем, а также инициироваться с помощью команды меню.  
   
  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ограничения не предусмотрены, поскольку зависят от того, как команда интерпретирует и использует модели UML. При этом разработчик может определить собственные ограничения и установить ограничения, определенные другими пользователями. Чтобы узнать, как для определения ограничений и их упаковке для распространения, см. в разделе [определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md).  
