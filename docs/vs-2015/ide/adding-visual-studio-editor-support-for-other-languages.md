@@ -1,7 +1,7 @@
 ---
 title: Добавление поддержки редактора Visual Studio для других языков | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b08defef2be3888f9674b681d861b0948884795
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300512"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поддержку редактора Visual Studio, добавление других языков](https://docs.microsoft.com/visualstudio/ide/adding-visual-studio-editor-support-for-other-languages).  
-  
 Узнайте, каким образом редактор Visual Studio поддерживает возможности чтения и перемещения по разным языкам программирования и как можно добавить поддержку редактора Visual Studio для других языков.  
   
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Раскраска синтаксиса, завершение операторов и поддержка функции "Перейти к"  

@@ -1,7 +1,7 @@
 ---
 title: Выполнение средств профилирования с отладчиком и без него | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301487"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Выполнение средств профилирования с отладчиком и без него
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [выполнение средств профилирования с отладчиком и без него](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
-  
 Теперь в Visual Studio можно выбирать средства производительности. Некоторые из них (например, **Загрузка ЦП** и **Использование памяти**) можно использовать с отладчиком или без него. Средства производительности, используемые без отладчика, предназначены для выполнения в конфигурациях выпуска, а средства, интегрированные в отладчик, предназначены для выполнения в конфигурациях отладки.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Следует ли запускать средство с отладчиком или без него?  

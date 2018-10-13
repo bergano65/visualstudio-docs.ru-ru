@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: изменение стандартной команды меню в доменном языке | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 740e26434190857907af61170222922180abc9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302150"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: изменение стандартной команды меню в доменном языке](https://docs.microsoft.com/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language).  
-  
 Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы она исключала конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   
  Таким образом, чтобы изменить команду:  

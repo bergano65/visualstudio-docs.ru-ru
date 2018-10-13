@@ -1,7 +1,7 @@
 ---
 title: Расширение свойств | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303710"
 ---
 # <a name="extending-properties"></a>Расширение свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширение свойства](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Свойства** окно браузер универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы перечислить свойства времени разработки для текущего выбранного объекта в любое другое окно в интегрированной среде разработки (IDE).  
   
  **Свойства** окно, которое можно открыть, нажав клавишу F4 на клавиатуре или выбрав **окно "Свойства"** на **представление** меню, используется для просмотра и редактирования зависящие от конфигурации, во время разработки свойства и события выбранных объектов. Свойства, зависящие от конфигурации, связанные с решениями и проектами, которые отображаются на [страницы свойств](../../extensibility/internals/property-pages.md). Дополнительные сведения см. в разделе [NIB: свойства](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [управление параметры конфигурации](../../extensibility/internals/managing-configuration-options.md), и [NIB: управление элементами в проектах](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
@@ -96,5 +94,5 @@ ms.locfileid: "47557760"
  Объясняет, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] эффективно управляет элементов, таких как ссылки, подключения к данным, папки и файлы, которые необходимы на этапе разработки через решения и проекты.  
   
  [Расширение других частей Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Содержит сведения об использовании [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] служб для создания элементов пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ Объясняется использование служб [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] для создания элементов пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 

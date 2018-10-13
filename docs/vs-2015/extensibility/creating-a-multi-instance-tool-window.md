@@ -1,7 +1,7 @@
 ---
 title: Создание многоэкземплярного окна инструментов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286368"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Создание многоэкземплярного окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание многоэкземплярного окна инструментов](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Окно инструментов можно программировать таким образом, чтобы несколько экземпляров могут быть открыты одновременно. По умолчанию окна инструментов может иметь только один экземпляр открыть.  
   
  При использовании многоэкземплярного окна инструментов, можно отобразить несколько связанных источников информации, в то же время. Например, можно поместить несколько строк <xref:System.Windows.Forms.TextBox> контролировать многоэкземплярного окна инструментов, таким образом, чтобы несколько фрагментов кода одновременно доступны во время программирования сеанса. Кроме того, например, можно поместить <xref:System.Windows.Forms.DataGrid> управления и стрелку раскрывающегося списка в поле многоэкземплярного окна инструментов, чтобы одновременно может отслеживаться несколько источников данных в реальном времени.  

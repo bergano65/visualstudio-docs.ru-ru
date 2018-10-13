@@ -1,7 +1,7 @@
 ---
 title: 'CA1049: Типы, которым принадлежат собственные ресурсы должны быть высвобождаемыми | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a3a9e2bb8030fe5273e70da03e6df14bb9dd5607
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: fc832894d693cb7431c29a0f216dc533a0a5eeeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300668"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA1049: типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).
-
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|

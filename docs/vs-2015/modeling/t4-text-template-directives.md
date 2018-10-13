@@ -1,7 +1,7 @@
 ---
 title: T4 Директивы текстовых шаблонов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e079b21c3a85f883351808b8defda6d0d68619f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302176"
 ---
 # <a name="t4-text-template-directives"></a>Директивы текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [директивы текстовых шаблонов T4](https://docs.microsoft.com/visualstudio/modeling/t4-text-template-directives).  
-  
 Директивы представляют собой инструкции для процессора преобразования текстового шаблона.  
   
  Синтаксис директив таков:  
@@ -41,7 +39,7 @@ ms.locfileid: "47563640"
   
  Все значения атрибутов должны заключаться в двойные кавычки. Если значение само содержит двойные кавычки, их нужно предварять знаком \.  
   
- Как правило, директивы — это первый элемент файла шаблона или включенного файла. Их не следует помещать внутри блока кода `<#...#>` или после блока функции класса `<#+...#>`.  
+ Как правило, директивы — это первый элемент файла шаблона или включенного файла. Их не следует помещать внутри блока кода `<#...#>` или после блока возможности класса `<#+...#>`.  
   
  [Директива Template T4](../modeling/t4-template-directive.md)  
  ```  

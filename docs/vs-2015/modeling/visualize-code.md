@@ -1,7 +1,7 @@
 ---
 title: Визуализация кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b0913f88db43743abdc410f75cbfc0d56dc7b46b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303450"
 ---
 # <a name="visualize-code"></a>Визуализация кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [визуализация кода](https://docs.microsoft.com/visualstudio/modeling/visualize-code).  
-  
 Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Например:  
   
 -   Чтобы понять связи в коде, сопоставьте их визуально.  

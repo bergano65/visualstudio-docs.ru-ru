@@ -1,7 +1,7 @@
 ---
 title: Реализация поставщика порта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d14c2642d30ee46df0cd1b766540ae0b135e4d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180756"
 ---
 # <a name="implementing-a-port-supplier"></a>Реализация поставщика порта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [реализация поставщика порта](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-a-port-supplier).  
-  
 Поставщика порта предоставляет порты на запрос на диспетчер отладки сеансов (SDM). Поставщика порта должна быть реализована при отладке на компьютер без DCOM или если требуется поддержка нового устройства. Например чтобы обеспечивать отладку для сотовых телефонов, может реализовать поставщика порта, который обеспечивает порта, соединиться с мобильного телефона (возможно с помощью среды выполнения Интеграции или подключение ячейки) и перечисляет процессы и программы, работающие на телефоне.  
   
  Для отладки программ на компьютерах, на базе Windows (включая удаленную отладку) Visual Studio предоставляет поставщикам портов для машинный код и процессов Common Language Runtime (CLR), поэтому нет необходимости реализовать собственный поставщик порта в таких случаях.  

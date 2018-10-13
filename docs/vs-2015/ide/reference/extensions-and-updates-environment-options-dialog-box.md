@@ -1,7 +1,7 @@
 ---
 title: Страница "Расширения и обновления", папка "Среда", диалоговое окно "Параметры" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48af71d66b21c8175841c56f7d94a927f6e1a5a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0b51d3b5f61a256a440673b9770f10efecb7b0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181094"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Страница «Расширения и обновления», папка «Среда», диалоговое окно «Параметры»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширения и обновления, среда, диалоговое окно параметров](https://docs.microsoft.com/visualstudio/ide/reference/extensions-and-updates-environment-options-dialog-box).  
-  
   
 Эта страница служит для указания параметров выполнения обновлений в Visual Studio и параметров обновления и обнаружения расширений.  
   

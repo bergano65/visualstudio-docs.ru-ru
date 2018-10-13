@@ -1,7 +1,7 @@
 ---
 title: Создание примечаний к функции параметров и возвращаемых значений | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297171"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Аннотация параметров функции и возвращаемые значения](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 В этой статье описываются типичные способы использования заметок параметры простой функции — скалярных величин и указатели на структуры и классы и в большинстве буферов.  В этой статье также показано распространенных шаблонов использования для заметки. Дополнительные заметки, относящиеся к функции, см. в разделе [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Параметры-указатели  

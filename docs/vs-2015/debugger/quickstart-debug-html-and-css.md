@@ -1,7 +1,7 @@
 ---
 title: 'Краткое руководство: Отладка HTML и CSS | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225489"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Краткое руководство по отладке HTML и CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [краткое руководство: отладка HTML и CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Для приложений, созданных с использованием языка JavaScript, Visual Studio позволяет выполнять комплексную отладку, которая включает в себя функции, знакомые разработчикам Internet Explorer и Visual Studio. Эти функции поддерживаются для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], приложения Windows Phone Store и для приложений, созданных с помощью Visual Studio Tools для Apache Cordova  
+ Для приложений, созданных с использованием языка JavaScript, Visual Studio позволяет выполнять комплексную отладку, которая включает в себя функции, знакомые разработчикам Internet Explorer и Visual Studio. Эти возможности поддерживаются для приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], приложений Магазина Windows Phone и приложений, созданных с помощью инструментов Visual Studio для Apache Cordova.  
   
  С помощью интерактивной модели отладки, предоставляемой средствами проверки DOM, вы можете просмотреть и изменить визуализируемый код HTML и CSS. Все это можно делать без остановки и перезапуска отладчика.  
   
@@ -197,7 +195,7 @@ ms.locfileid: "47572838"
      ![Проводник DOM](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Можно также выбрать элемент DIV в левом нижнем углу окна консоли JavaScript, введя `select(fView)` в >> входные строки и нажмите клавишу ВВОД.  
+    >  Можно также выбрать элемент DIV в левом нижнем углу окна консоли JavaScript, введя `select(fView)` в строке ввода ">>" и нажав клавишу ВВОД.  
   
      Значения, отображаемые на вкладках в правой части проводника DOM, автоматически обновляются, отражая состояние текущего элемента в проводнике DOM.  
   
@@ -295,13 +293,13 @@ ms.locfileid: "47572838"
 ##  <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
  Инструменты Visual Studio для JavaScript, проводник DOM и окно консоли JavaScript поддерживаются в следующих платформах:  
   
--   Приложения Магазина Windows Phone и [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] на базе JavaScript и HTML  
+-   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и приложения для Магазина Windows Phone с использованием JavaScript и HTML  
   
 -   Internet Explorer 11 на платформе [!INCLUDE[win81](../includes/win81-md.md)]  
   
 -   Internet Explorer 10 на платформе [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Go [здесь](http://go.microsoft.com/fwlink/?LinkID=232448) для загрузки [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
+ Перейдите [сюда](http://go.microsoft.com/fwlink/?LinkID=232448) , чтобы скачать [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,9 +309,9 @@ ms.locfileid: "47572838"
  [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)   
  [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Команды консоли JavaScript](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Поддержка продукта и специальные возможности](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Поддержка и специальные возможности продукта](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 
 
 

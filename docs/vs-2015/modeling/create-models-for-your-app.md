@@ -1,7 +1,7 @@
 ---
 title: Создание моделей для приложения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563340"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301903"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание моделей для приложения](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система. Например, для описания и передачи пользовательских требований можно использовать схемы UML вариантов использования, деятельности, классов и последовательностей. Для описания функциональных возможностей системы и передачи сведений о них можно использовать схемы UML компонентов, классов, деятельности и последовательностей.  
   
  См. в разделе [видео Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  

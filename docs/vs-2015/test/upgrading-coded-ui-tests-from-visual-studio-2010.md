@@ -1,7 +1,7 @@
 ---
 title: Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010 | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298952"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обновление закодированных тестов пользовательского интерфейса из Visual Studio 2010](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010).  
-  
 Тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, которые созданы в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1, автоматически восстанавливаются при открытии их в Visual Studio 2012. Если тестовые проекты помещаются в систему управления версиями, файлы проектов извлекаются для этого восстановления. После восстановления эти тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, можно использовать в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 и [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].  
   
  **Требования**  

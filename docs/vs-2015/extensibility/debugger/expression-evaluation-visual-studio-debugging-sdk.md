@@ -1,7 +1,7 @@
 ---
 title: Вычисление выражений (пакет SDK для отладки Visual Studio) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd5fb9ac88b2535c897978cdd63f9cf0716d53a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e30f9a7579d511a6d2c1678d0980efdb7b8d2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238047"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Анализ выражений (пакет SDK для отладки Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вычисление выражений (Отладка SDK Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk).  
-  
 В режиме приостановки выполнения интегрированной среды разработки должен иметь возможность оценить простого выражения, включающие несколько переменных программы. Чтобы добиться этого, модуль отладки (DE) необходима возможность синтаксического анализа и вычислить это выражение, которое вводится в одно из окон интегрированной среды разработки.  
   
  Выражения создаются с помощью [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) на них метод, представленный итоговый [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс.  

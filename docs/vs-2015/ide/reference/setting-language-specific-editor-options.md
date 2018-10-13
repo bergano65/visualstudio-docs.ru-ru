@@ -1,7 +1,7 @@
 ---
 title: Настройка параметров языка редактора | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c51d1400ac3ff247bf79f5b36e8b3be9b53dcefe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2f8b540d61191b436c5d030729777dad8f84dc1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299095"
 ---
 # <a name="setting-language-specific-editor-options"></a>Настройка параметров языка редактора
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [параметров редактора языковой параметр](https://docs.microsoft.com/visualstudio/ide/reference/setting-language-specific-editor-options).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предлагает различные параметры текстового редактора, которые можно применить к определенным языкам программирования.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Подготовка к отладке: Windows Forms приложений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7f362db7c0ba56db2b5b5f2362ea7755e3076a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262162"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: приложения Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Подготовка к отладке: приложения Windows Forms](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-windows-forms-applications).  
-  
 Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не вызывает никаких затруднений. Дополнительные сведения см. в разделе [Создание проекта приложения Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры можно изменить в  **\<имя проекта > страницы свойств** диалоговое окно (**Мой проект** в Visual Basic).  

@@ -1,7 +1,7 @@
 ---
 title: Счетчики ЦП и Windows | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a50dc0669b649a68a34402ed93ddc858e179cb57
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301825"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Windows счетчики ЦП и](https://docs.microsoft.com/visualstudio/profiling/cpu-and-windows-counters).  
-  
 Профилировщик Visual Studio позволяет собирать данные о производительности, которые были сформированы операционной системой (счетчиками Windows), и данные о производительности, которые были сформированы процессором (счетчиками ЦП).  
   
  **Требования**  

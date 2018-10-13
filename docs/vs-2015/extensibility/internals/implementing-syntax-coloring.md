@@ -1,7 +1,7 @@
 ---
 title: Реализация цветовой маркировки синтаксиса | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570551"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259259"
 ---
 # <a name="implementing-syntax-coloring"></a>Реализация цветовой маркировки синтаксиса
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [реализация цветовой подсветки синтаксиса](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Если служба языка предоставляет цветовое выделение синтаксиса, средство синтаксического анализа преобразует строку текста в массив цветных элементов и возвращает типы маркеров, соответствующий эти цветных элементов. Средство синтаксического анализа должна возвращать маркера типов, входящих в список цветных элементов. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Отображает каждого цветного элемента в окне кода, в соответствии с атрибуты, присвоенные этим объектом палитры к соответствующему типу маркера.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Указывает интерфейс средства синтаксического анализа, и средство синтаксического анализа реализации полностью зависит от вас. Тем не менее средство синтаксического анализа реализацию по умолчанию предоставляется в проекте языковой пакет Visual Studio. Для управляемого кода managed package framework (MPF) обеспечивает полную поддержку для выделения текста цветом.  

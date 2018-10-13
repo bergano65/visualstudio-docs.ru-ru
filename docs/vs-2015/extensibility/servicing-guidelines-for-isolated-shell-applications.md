@@ -1,7 +1,7 @@
 ---
 title: Обслуживание, касающиеся изолированных приложений оболочки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208394"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Рекомендации по обслуживанию для приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обслуживания, касающиеся приложений изолированной оболочки](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications).  
-  
 При распространении приложения Visual Studio, в изолированной оболочки, необходимо для предоставления обновлений программного обеспечения для приложения после его установки. Чтобы сделать это, необходимо установить приложение с помощью файла установщика Microsoft (MSI). Этот тип установки позволяет загрузить обновления программного обеспечения, предоставляемые корпорацией Майкрософт распространять веб-и использовать пользователи без пользовательского интерфейса.  
   
 ## <a name="servicing-requirements"></a>Требования к обслуживанию  

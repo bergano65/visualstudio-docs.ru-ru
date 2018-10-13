@@ -1,7 +1,7 @@
 ---
 title: Средства в Visual Studio с моделью EDM | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 487b3ecd6f9b7fbdc7065e8d69e9e64e939f565e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290476"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Средства модели EDM в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средств модели EDM в Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/entity-data-model-tools-in-visual-studio).  
-  
   
 Платформа Entity Framework — это технология объектно реляционного сопоставления, который позволяет разработчикам .NET работать с реляционными данными с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.  
   

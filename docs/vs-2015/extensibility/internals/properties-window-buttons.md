@@ -1,7 +1,7 @@
 ---
 title: Кнопки окна свойств | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176804"
 ---
 # <a name="properties-window-buttons"></a>Кнопки окна свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [кнопки окна свойств](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons).  
-  
 В зависимости от языка разработки и тип продукта, по умолчанию на панели инструментов отображаются определенные кнопки **свойства** окна. Во всех случаях **по категориям**, **Alphabetized**, **свойства**, и **страницы свойств** отображаются кнопки. В Visual C# и Visual Basic **события** также отображается кнопка ". В некоторых проектах Visual C++ **сообщения VC ++** и **переопределяет VC** отображаются кнопки. Дополнительные кнопки может отображаться для других типов проектов. Дополнительные сведения о кнопках в **свойства** окно, см. в разделе [окно "Свойства"](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Реализация кнопки окна свойств  

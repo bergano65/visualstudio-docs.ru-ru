@@ -1,7 +1,7 @@
 ---
 title: Использование наборов правил для задания выполняемых правил C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9466bf421ca5844d3d7083528fb1a27e3c488937
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230890"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Использование наборов правил для задания выполняемых правил C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование наборов правил для задания выполняемых правил C++](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).  
-  
 В [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] и [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], можно создавать и изменять пользовательский *набор правил* в соответствии с потребностями конкретного проекта, связанные с анализом кода. Создание набора настраиваемых правил C++, C/C++ проект должен быть открыт в Интегрированной среде разработки Visual Studio. В редакторе набора правил откройте набор стандартных правил и затем добавить или удалить определенные правила и при необходимости изменить действие, которое происходит, когда анализа кода определяет, нарушено правило.  
   
  Чтобы создать новое настраиваемое правило набор, сохраните его с помощью имени файла. Настраиваемый набор правил, автоматически назначается в проект.  

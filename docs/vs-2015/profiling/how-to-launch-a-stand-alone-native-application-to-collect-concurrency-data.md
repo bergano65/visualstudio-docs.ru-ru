@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Запуск автономного приложения в машинном коде с профилировщиком для сбора данных параллелизма при помощи командной строки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5060b22603f5cab408e6f15a9f33f104e76cd7bf
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2f9949254a86e729bd51ccb9896a74c2f83b2568
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301225"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения в машинном коде с профилировщиком для сбора данных параллелизма при помощи командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: запуск автономного собственного приложения с Profiler для сбора данных параллелизма с помощью командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line).  
-  
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для запуска автономного (клиентского) приложения в машинном коде и сбора данных о параллелизме потоков и процессов.  
   
  Сеанс профилирования состоит из следующих этапов:  

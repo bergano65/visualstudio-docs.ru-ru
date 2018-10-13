@@ -1,7 +1,7 @@
 ---
 title: Установка и настройка средств для разработки с помощью iOS | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,20 +16,18 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 84ff5fbd829fa47452ba258d431dcc0d0148ebf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295286"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [установить And Configure Tools to Build using iOS](https://docs.microsoft.com/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios).  
   
-  
-Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
+Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
   
 > [!NOTE]
 >  Информацию об использовании размещенных в облаке служб Mac вместо компьютера Mac см. в статье [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/). Приведенные инструкции предназначены для разработки с помощью инструментов Visual Studio для Apache Cordova. При разработке с помощью Visual C++ для разработки кроссплатформенных мобильных приложений заменяйте vcremote в инструкциях на vs-mda-remote.  

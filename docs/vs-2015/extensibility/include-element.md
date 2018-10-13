@@ -1,7 +1,7 @@
 ---
 title: Включите элемент | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dd762d9232443230dae29e94efd78f2e67d66f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fdc57962b101b864370e2a70fdc6327ef7e6110
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302333"
 ---
 # <a name="include-element"></a>Элемент Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [включают элемент](https://docs.microsoft.com/visualstudio/extensibility/include-element).  
-  
 Элемент Include указывает файл, который можно найти на указанном экземпляре включить путь для вставки в текущем файле.  Все символы и типы, определенные станут частью скомпилированного результата.  
   
 ## <a name="syntax"></a>Синтаксис  

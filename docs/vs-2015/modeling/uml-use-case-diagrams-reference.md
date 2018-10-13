@@ -1,7 +1,7 @@
 ---
 title: 'UML-схемы вариантов использования: Ссылаться | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256312"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML-схемы вариантов использования: справочные материалы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемах вариантов использования UML: Справочник по](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 В Visual Studio *схема вариантов использования* обобщает, кто использует приложение или систему, и их возможности с ним. Для создания схемы UML вариантов использования, на **архитектура** меню, щелкните **создать схему UML или схему слоев**.  
   
  Схема вариантов использования выступает в качестве ориентира для описания пользовательских требований. Она описывает отношения между требованиями, пользователями и основными компонентами. Она не описывает требования подробно; они могут быть описаны в отдельных схемах или документах, которые могут быть связаны с каждым вариантом использования. Сведения о как схемы вариантов использования может помочь вам понять, обсудить и потребности пользователей, см. в разделе [моделирование требований пользователей](../modeling/model-user-requirements.md).  

@@ -1,7 +1,7 @@
 ---
 title: Шаг 8. Настройка головоломки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e630a3d065e196d33919045316fad27c912750
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260147"
 ---
 # <a name="step-8-customize-the-quiz"></a>Шаг 8. Настройка головоломки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 8: Настройка головоломки](https://docs.microsoft.com/visualstudio/ide/step-8-customize-the-quiz).  
-  
 В последней части этого руководства рассматривается несколько способов изменения викторины и приводятся дополнительные сведения по уже изученным вами вопросам. Например, можно подумать, как программа создает случайные задачи на деление, для которых ответ никогда не будет дробью. В качестве дополнительного занятия измените цвет элемента управления `timeLabel` и дайте игроку викторины подсказку.  
   
 ### <a name="to-customize-the-quiz"></a>Настройка викторины  
