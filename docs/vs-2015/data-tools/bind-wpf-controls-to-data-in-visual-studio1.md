@@ -1,7 +1,7 @@
 ---
 title: Привязка элементов управления WPF к данным в Visual Studio 1 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f07087ce1f7637e63bd2d99aeb2cb125265a2d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237020"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элементы управления WPF, привязка к данным в Visual Studio — часть 1 | Документация Microsoft](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-data-in-visual-studio).  
-  
   
 Для пользователей приложения данные можно отображать путем привязки данных к элементам управления [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Чтобы создать эти элементы управления с привязкой к данным, можно перетаскивать элементы из **источников данных** окна на [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В этом разделе описываются некоторые из наиболее распространенных задач, инструментов и классов, которые можно использовать для создания связанных с данными приложений [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)].  
   

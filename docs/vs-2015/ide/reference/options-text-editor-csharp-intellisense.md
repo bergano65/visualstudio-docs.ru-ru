@@ -1,7 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"C#\", IntelliSense | Документы Майкрософт"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12379f84ad9807e1a94c38c60b13a580b1fde5dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262175"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [параметры, текстовый редактор, C#, IntelliSense](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-intellisense).  
-  
   
 Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для Visual C#. Чтобы получить доступ к странице свойств **IntelliSense**, щелкните **Параметры** в меню **Сервис**, затем щелкните **C#** в папке **Текстовый редактор** и выберите **IntelliSense.**  
   

@@ -1,7 +1,7 @@
 ---
 title: Создание папок родительского контейнера для решений | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307720"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Создание папок родительского контейнера для решений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание папок родительского контейнера для решений](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 В API подключаемых модулей исходный элемент управления версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
   
  В API подключаемых модулей исходный элемент управления версии 1.1 если пользователь добавил многопроектное решение в систему управления версиями, пользователю было предложено указать один элемент управления источника, назначения для каждого веб-проекта.  

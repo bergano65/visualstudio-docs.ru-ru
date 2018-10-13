@@ -1,7 +1,7 @@
 ---
 title: Поддержка проекта и свойства конфигурации | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294350"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поддержка проекта и свойства конфигурации](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties).  
-  
 **Свойства** окно в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) может отображать свойства проекта и конфигурации. Страницы свойств можно предоставить для типа проекта, таким образом, пользователь может задать свойства для вашего приложения.  
   
  Выбрав узел проекта в **обозревателе решений** и выбрав **свойства** на **проекта** меню, можно открыть диалоговое окно, которое включает в себя проект и конфигурации свойства. В [!INCLUDE[csprcs](../../includes/csprcs-md.md)] и [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]и типы, производные от этих языков, это диалоговое окно с вкладками в виде страницы проекта [Общие, среда, диалоговое окно параметров](../../ide/reference/general-environment-options-dialog-box.md). Дополнительные сведения см. в разделе [не в сборке: пошаговое руководство: предоставление доступа к проекта и свойства конфигурации (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  

@@ -1,7 +1,7 @@
 ---
 title: Управление внешними инструментами | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -62,18 +62,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55fdcd6da677eb34c8aee45787880781d58260a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244495"
 ---
 # <a name="managing-external-tools"></a>Управление внешними инструментами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [управление внешними инструментами](https://docs.microsoft.com/visualstudio/ide/managing-external-tools).  
-  
 Внешние инструменты можно вызвать прямо из Visual Studio. Несколько инструментов по умолчанию доступны в меню **Сервис**, однако вы можете самостоятельно добавлять другие исполняемые файлы.  
   
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Инструменты, доступные в меню «Сервис» Visual Studio  

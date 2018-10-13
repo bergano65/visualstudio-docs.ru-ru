@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Установка параметров отладчика | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215557"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. Установка параметров отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Укажите параметры отладчика](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings).  
-  
 В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно задать различные параметры поведения отладчика, включая способ отображения переменных, возможность представления или непредставления некоторых предупреждающих сообщений, размещение точек останова и влияние останова на работу программы. Можно указать параметры отладчика в **параметры** диалоговое окно.  
   
 ### <a name="to-set-debugger-options"></a>Чтобы задать параметры отладчика  
@@ -50,7 +48,7 @@ ms.locfileid: "47572426"
   
 3.  В **Отладка** папку, выберите нужную категорию необходимые параметры.  
   
-     Самые распространенные параметры находятся в папке **Общие** категории. Дополнительные сведения см. в разделе [General, Debugging, диалоговое окно параметров](../debugger/general-debugging-options-dialog-box.md).  
+     Самые распространенные параметры находятся в папке **Общие** категории. Для получения дополнительной информации см. [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Установите или снимите флажки нужных и ненужных параметров, соответственно. Для получения справки о параметрах нажмите клавишу F1  
   

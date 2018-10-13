@@ -1,7 +1,7 @@
 ---
 title: 'Схемы слоев: Ссылаться | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248317"
 ---
 # <a name="layer-diagrams-reference"></a>Схемы слоев: справочные материалы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемы зависимостей: ссылка](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 В Visual Studio, можно использовать *схему слоев* для визуализации высокоуровневой логической архитектуры системы. Схема слоев упорядочивает физические артефакты системы в логические, абстрактные группы, называемые *слои*. Слои описывают основные компоненты системы или задачи, выполняемые этими артефактами. Каждый слой может также содержать вложенные слои, описывающие более подробные задачи.  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

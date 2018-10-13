@@ -1,7 +1,7 @@
 ---
 title: Вкладка "Общие", "Свойства потока" диалогового окна | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307707"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Вкладка "Общие" диалогового окна "Свойства потока"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вкладка "Общие", свойства потоков](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box).  
-  
 Это диалоговое окно используется для получения дополнительных сведений о конкретном потоке. Чтобы отобразить это диалоговое окно, перемещение фокуса к [представление "Потоки"](../debugger/threads-view.md) окно "или" Открыть [представления сообщений](../debugger/messages-view.md) и развернуть сообщение. Выберите любой узел потока в дереве, а затем выберите **свойства** из **представление** меню.  
   
  **Свойства потока** диалоговое окно содержит одну область **Общие** вкладки. Доступны следующие параметры:  

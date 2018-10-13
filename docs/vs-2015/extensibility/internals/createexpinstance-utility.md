@@ -1,7 +1,7 @@
 ---
 title: Служебная программа CreateExpInstance | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9b08ba5ac68a09f6c44937634375add3065e5e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e5b47a329e9ff1c9a8c34fa8476ae1b2fb909c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234975"
 ---
 # <a name="createexpinstance-utility"></a>Служебная программа CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [CreateExpInstance Utility](https://docs.microsoft.com/visualstudio/extensibility/internals/createexpinstance-utility).  
-  
 Служебная программа CreateExpInstance для создания, сброс, или удалите экспериментальный экземпляр Visual Studio. Экспериментальный экземпляр можно использовать для отладки и тестирования расширений Visual Studio без изменения базовой продукта.  
   
 ## <a name="syntax"></a>Синтаксис  

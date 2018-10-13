@@ -1,7 +1,7 @@
 ---
 title: Установка платформ модульного тестирования сторонних поставщиков | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0f17f4c49c88b341c6ccc7583f7069c8b5142a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301123"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Установка платформ модульного тестирования сторонних поставщиков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Установка сторонних платформ тестирования](https://docs.microsoft.com/visualstudio/test/install-third-party-unit-test-frameworks).  
-  
 Обозреватель тестов Visual Studio может запускать любую платформу модульного тестирования, разработавшую интерфейс адаптера для обозревателя. Программа установки платформы устанавливает двоичные файлы и добавляет шаблоны проекта Visual Studio для поддерживаемых языков. При создании проекта с шаблоном платформа регистрируется с помощью обозревателя тестов. Решение Visual Studio может содержать проекты модульного тестирования, которые используют разные платформы, предназначенные для разных языков. Обозреватель тестов выполняет их все.  
   
  **Требования**  

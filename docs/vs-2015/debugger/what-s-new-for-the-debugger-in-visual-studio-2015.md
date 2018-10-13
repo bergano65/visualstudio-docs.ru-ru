@@ -1,7 +1,7 @@
 ---
 title: Новые возможности отладчика в Visual Studio 2015 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188621"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Новые возможности отладчика в Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [новые возможности отладчика](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio).  
-  
 Сведения о всех новых возможностях отладки и диагностики в Visual Studio 2015 с обновлением 1 см. в [заметках о выпуске Visual Studio 2015 с обновлением 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Сведения о всех новых возможностях отладки и диагностики в Visual Studio 2015 RTM см. в [заметках о выпуске Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#debug).  
@@ -43,7 +41,7 @@ ms.locfileid: "47593124"
 ## <a name="visual-studio-2015-update-1-changes"></a>Изменения в Visual Studio 2015 с обновлением 1  
  Компонент C++ "Изменить и продолжить" поддерживает дополнительные функции. Дополнительные сведения см. в разделе [изменить и продолжить (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- Для отладки нарушений доступа Visual C++ новое диалоговое окно исключения указывает указатель, который вызвал исключение. Дополнительные сведения см. в разделе [как отладить нарушение доступа?](../debugger/how-can-i-debug-an-access-violation-q.md) и [улучшения отладки нарушения прав доступа C++ в Visual Studio 2015 с обновлением 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ Для отладки нарушений доступа Visual C++ новое диалоговое окно исключения указывает указатель, который вызвал исключение. Дополнительные сведения см. в разделах [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) и [Улучшения отладки нарушения прав доступа C++ в Visual Studio 2015 г. с обновлением 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Изменения пользовательского интерфейса отладчика и сочетаний клавиш в Visual Studio 2015 RTM  
  Пользовательский интерфейс исключений и точек останова значительно изменился.  

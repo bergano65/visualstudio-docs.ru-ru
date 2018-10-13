@@ -1,7 +1,7 @@
 ---
 title: Элемент Task (MSBuild) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acfac627ffbfa858a955913c2ba40c34367eaef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d9d616e9b3520d3592f3e34a5aa3b95a2c5f722
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304204"
 ---
 # <a name="task-element-msbuild"></a>Элемент Task (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элемент Task (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/task-element-msbuild).  
-  
   
 Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Имя элемента определяется именем создаваемой задачи.  
   

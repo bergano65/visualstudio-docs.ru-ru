@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: daa91fb99f11a3a41f80f7b9aa47c5cec0895f2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75964e2837e456ff67be5b3609b95d8be677e81a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299628"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [DEBUGREF_INFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debugref-info-flags).  
-  
 Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.  
   
 ## <a name="syntax"></a>Синтаксис  

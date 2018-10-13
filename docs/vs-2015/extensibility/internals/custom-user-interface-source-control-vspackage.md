@@ -1,7 +1,7 @@
 ---
 title: Настраиваемый пользовательский интерфейс (пакет VSPackage управления версиями) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303957"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [настраиваемый пользовательский интерфейс (пакет VSPackage управления версиями)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage).  
-  
 VSPackage объявляет элементами меню и состояние по умолчанию в файле Visual Studio Command Table (.vsct). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Интегрированной среды разработки (IDE) отображается пунктов меню в состояние по умолчанию, пока не загружается VSPackage. Как следствие <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  
   
  VSPackage может задать раздел реестра, чтобы пакет VSPackage может загружаться автоматически в зависимости от контекста команд пользовательского интерфейса пользователя, несмотря на то, что обычно системы управления версиями по запросу, а не просто переключая таблицы к конкретному контексту пользовательского интерфейса должен загрузиться проект VSPackage. Дополнительные сведения о разделе реестра AutoLoadPackages см. в разделе [пакеты VSPackage, управление](../../extensibility/managing-vspackages.md).  

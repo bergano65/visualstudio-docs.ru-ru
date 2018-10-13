@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Реализация интерфейса (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3626d35867902f96b7f3d48d0b7528fa16fc7a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bbe5eec0a512dafd6689f1420e721d6a2a63e1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189856"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Практическое руководство. Реализация интерфейса (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: реализация интерфейса (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-implement-an-interface-class-designer).  
-  
 В конструкторе классов можно реализовать интерфейс на диаграмме классов путем подключения его к классу, который предоставляет код для методов интерфейса. Конструктор классов создает реализацию интерфейса и отображает связь между интерфейсом и классом в виде отношения наследования. Вы можете реализовать интерфейс, нарисовав между интерфейсом и классом линию наследования или перетащив интерфейс из представления классов.  
   
 > [!TIP]

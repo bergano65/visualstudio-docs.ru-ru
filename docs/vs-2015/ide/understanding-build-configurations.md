@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о конфигурациях сборок | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304139"
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [конфигурациях сборки](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations).  
-  
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.  
   
 > [!NOTE]

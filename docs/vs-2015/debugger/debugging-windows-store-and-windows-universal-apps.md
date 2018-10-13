@@ -1,7 +1,7 @@
 ---
 title: Отладка приложений Windows Store и Windows Universal | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5a49fc3a92c5108a53ae7e355d9d69b25dac6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85fd9f205b40bd04398833885d5e07e14c1866f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256117"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Отладка приложений для Магазина Windows и универсальных приложений для Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Windows универсальные приложения Windows Store Отладка](https://docs.microsoft.com/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
-  
 Отладчик Visual Studio обеспечивает полную поддержку отладки приложений Windows Store.  
   
  Сведения об отладке Windows универсальных приложений см. в разделе [развертывание и отладка приложений универсальной платформы Windows](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  

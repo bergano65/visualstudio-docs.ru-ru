@@ -1,7 +1,7 @@
 ---
 title: Обновление модели UML из фонового потока | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216857"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Обновление модели UML из фонового потока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обновление модели UML из фонового потока](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread).  
-  
 Иногда бывает полезно вносить изменения в модель в фоновом потоке. Например, при загрузке сведений из медленного внешнего ресурса можно использовать фоновый поток для контроля обновлений. Это позволит пользователю видеть обновления по мере их появления.  
   
  Однако следует помнить, что хранилище UML не является потокобезопасным. Важно принять указанные ниже меры предосторожности.  

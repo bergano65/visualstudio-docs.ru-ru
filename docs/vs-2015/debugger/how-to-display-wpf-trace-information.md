@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отображение данных трассировки WPF | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07cdebcc636f768c7caf2437af55f20283db7b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec7a25cc9a9b72af9a659ee0f958607c750905fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239464"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Практическое руководство. Отображение данных трассировки WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отображение сведений о трассировке WPF](https://docs.microsoft.com/visualstudio/debugger/how-to-display-wpf-trace-information).  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно получать сведения о трассировке отладки от приложений WPF и отображать эти сведения в **вывода** окна. Чтобы отобразить сведения о трассировке отладки, необходимо включить трассировку WPF.  
   
  Трассировку WPF можно включить через файл App.Config или программным образом с помощью класса <xref:System.Diagnostics.PresentationTraceSources>. Более простой способ включения трассировки WPF — с помощью **параметры** окна. Трассировка WPF не поддерживается для веб-приложений.  

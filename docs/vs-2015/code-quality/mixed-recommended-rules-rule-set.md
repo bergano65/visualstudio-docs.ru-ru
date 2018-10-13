@@ -1,7 +1,7 @@
 ---
 title: Набор правил смешанной рекомендуемые правила | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299407"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для смешанных сред"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [смешанной рекомендуемые правила набора правил](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set).  
-  
 Microsoft смешанной рекомендуемые правила сосредоточиться на наиболее важными и распространенными проблемами в проектах C++, которые поддерживают среда CLR, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов C++, которые поддерживают среда CLR. Этот набор правил предназначен быть перенастроены с помощью Visual Studio Professional edition и более поздних версий.  
   
 |Правило|Описание|  

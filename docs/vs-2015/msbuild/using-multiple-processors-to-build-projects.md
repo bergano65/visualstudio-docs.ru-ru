@@ -1,7 +1,7 @@
 ---
 title: Использование нескольких процессоров при сборке проектов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67ba27b59fe134e226d5cc2b752d8d0ae26f7aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199918"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [с использованием нескольких процессоров для сборки проектов](https://docs.microsoft.com/visualstudio/msbuild/using-multiple-processors-to-build-projects).  
-  
   
 В MSBuild реализована поддержка систем с несколькими процессорами или многоядерными процессорами. Для каждого доступного процессора создается отдельный процесс сборки. Например, если в системе есть четыре процессора, создается четыре процесса сборки. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может обрабатывать эти сборки одновременно, что позволяет сократить продолжительность операции. При этом параллельная сборка несколько изменяет процедуру выполнения процессов сборки. Такие изменения и рассматриваются в этой статье.  
   

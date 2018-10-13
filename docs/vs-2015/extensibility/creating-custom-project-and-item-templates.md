@@ -1,7 +1,7 @@
 ---
 title: Создание пользовательских проектов и шаблонов элементов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304633"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Создание пользовательских шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание настраиваемых шаблонов проектов и элементов](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 Пакет SDK для Visual Studio включает шаблоны проектов, создание настраиваемого шаблона проекта и пользовательского шаблона элемента. Эти шаблоны включают некоторые распространенные подстановки параметров и сборки как ZIP-файлы. Они не были развернуты автоматически, и они недоступны в экспериментальном экземпляре. ZIP-файл необходимо скопировать файл в расположение  
   
  Шаблоны создания шаблонов позволяют включать шаблоны в большего расширения. Это позволяет реализовать систему управления версиями на исходные файлы и создавать группы шаблона проектов в одном пакете VSIX.  

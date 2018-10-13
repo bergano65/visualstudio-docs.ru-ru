@@ -1,7 +1,7 @@
 ---
 title: Возможности оболочки конструктора рабочих процессов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e0ac119908003efdbdbda4c01bce18de4a5f0faa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275305"
 ---
 # <a name="workflow-designer-shell-features"></a>Возможности оболочки конструктора рабочих процессов
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] состоит из трех основных областей пользовательского интерфейса: область конструктора, строкой навигатора над ней и оболочкой под ней. Строка навигатора, размещенная в верхней части экрана, используется для отображения предков текущего корневого действия. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Практическое: использовать Навигатор](../workflow-designer/how-to-use-breadcrumb-navigation.md). Область конструктора, расположенная в центре экрана, используется для создания рабочих процессов. Оболочка, расположенная в нижней части экрана, содержит несколько кнопок, предназначенных для управления текущим представлением.  

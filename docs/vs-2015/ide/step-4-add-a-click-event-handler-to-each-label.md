@@ -1,7 +1,7 @@
 ---
 title: Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252035"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Step 4: Добавление обработчика событий Click к каждой метке](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label).  
-  
 Игра "Подбери пару!" работает следующим образом.  
   
 1.  Когда игрок выбирает один из квадратов со скрытым значком, программа показывает значок игроку, изменяя цвет значка на черный.  

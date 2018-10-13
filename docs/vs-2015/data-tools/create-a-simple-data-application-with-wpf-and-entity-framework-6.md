@@ -1,7 +1,7 @@
 ---
 title: Создание простых данных приложения с помощью WPF и Entity Framework 6 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0014df0770bb7fdb697ee05d61b1543044988ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299186"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простых данных приложения с помощью WPF и Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание простых данных приложения с помощью WPF и Entity Framework 6](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6).  
-  
   
 Этом пошаговом руководстве показано, как создать приложение основные «формы поверх данных» в Visual Studio с помощью SQL Server LocalDB, базы данных "Борей", Entity Framework 6 и Windows Presentation Foundation. Показано, как выполнять основные привязку данных с основного / подробного представления, и она также содержит настраиваемые «привязка навигатора» с помощью кнопок «Переместить вперед», «Переместить назад,» «Перейти к началу,» «переместить в конец,» «Обновить» и «Удалить».  
   

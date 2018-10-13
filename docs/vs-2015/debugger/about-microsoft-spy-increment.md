@@ -1,7 +1,7 @@
 ---
 title: О Microsoft Spy ++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0f3520a33d798741c1afc1546abcc7d3898b85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2392346e8811bf417e845774cf4d01d0a1569c67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301773"
 ---
 # <a name="about-microsoft-spy"></a>О Microsoft Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [о Microsoft Spy ++](https://docs.microsoft.com/visualstudio/debugger/about-microsoft-spy-increment).  
-  
 Это диалоговое окно используется для отображения об авторских правах, версии, владельца и другие сведения о программе Spy ++.
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: Удаленный компьютер не отображается в диалоговом окне удаленных подключений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 552be1e38cdb7401af36b287b23091d754c35980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7b849ea60c48bc5127ddd50167415629daec4e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185163"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Ошибка "Удаленный компьютер не отображается в диалоговом окне удаленных подключений"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: удаленный компьютер не отображается в диалоговом окне удаленных подключений](https://docs.microsoft.com/visualstudio/debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog).  
-  
 Если удаленный компьютер не отображается в диалоговом окне "Удаленные подключения", проверьте указанные ниже наиболее вероятные причины.  
   
- Если вы используете режим совместимости управляемого кода, ознакомьтесь с документацией Visual Studio 2010: [Устранение неполадок удаленной отладки в Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  
+ Если вы используете режим совместимости управляемого кода, обратитесь к документации по Visual Studio 2010: [Устранение неполадок удаленной отладки в Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  
   
 ### <a name="common-causes-for-this-error"></a>Распространенные причины этой ошибки  
   

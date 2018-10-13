@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: Отладка в смешанном режиме для процессов IA64 не поддерживается | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a23ea4029134d8650acf0f443ee68a3f2ad6325c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1635b6f31685df1dd564de59a7323dc2ba215b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231170"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Ошибка: для процессов IA64 отладка в смешанном режиме не поддерживается
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: отладка в смешанном режиме для процессов IA64 не поддерживается](https://docs.microsoft.com/visualstudio/debugger/error-mixed-mode-debugging-for-ia64-processes-is-unsupported).  
-  
 Отладчик [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не поддерживает отладку смеси управляемого и неуправляемого кода для процессов на базе Itanium.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  

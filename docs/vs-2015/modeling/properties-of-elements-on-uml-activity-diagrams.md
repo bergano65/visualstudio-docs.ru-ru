@@ -1,7 +1,7 @@
 ---
 title: Свойства элементов на схемах деятельности UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269996"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Свойства элементов на схемах деятельности UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства элементов на схемах деятельности UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams).  
-  
 На UML-схеме деятельности каждый элемент имеет свойства. Чтобы просмотреть свойства элемента, щелкните правой кнопкой мыши элемент на схеме или в **Обозреватель моделей UML** и нажмите кнопку **свойства**. Свойства отображаются в **свойства** окна.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Экспорт схем классов как изображений (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b16e8d580d80a6113e123a09292eafbcf32911c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd4e306f2dc8dcb31766f78c644769087eba9819
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240530"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Практическое руководство. Экспорт схем классов как изображений (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Экспорт схем классов как изображений (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-export-class-diagrams-as-images-class-designer).  
-  
 Чтобы экспортировать схему классов, созданную на основе кода в проекте, сохраните ее как изображение. Если вместо этого нужно экспортировать схемы класса UML, см. статью [Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md).  
   
 1.  Откройте файл со схемой классов (CD).  

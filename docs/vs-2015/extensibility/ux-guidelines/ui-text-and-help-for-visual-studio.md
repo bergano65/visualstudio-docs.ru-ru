@@ -1,7 +1,7 @@
 ---
 title: Текст пользовательского интерфейса и справки для Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3e8f7541c83372c0d822c3db4bc0e20b3af1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303820"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Текст пользовательского интерфейса и справки для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [текст пользовательского интерфейса и справки для Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ui-text-and-help-for-visual-studio).  
-  
 ##  <a name="BKMK_UITextAndTerminology"></a> Текст пользовательского интерфейса и терминология  
  Понятный текст крайне важно для эффективной пользовательского интерфейса. Пользователям программного обеспечения, как правило, для чтения метки во-первых, а именно те лучше всего подходят для выполнения поставленной задачи. Статический текст читается с частотой меньше. Планирование пользователям запускать свои сеансы работы с быстрой проверки всего окна, следуют чтения пользовательского интерфейса в этом примерном порядке:  
   

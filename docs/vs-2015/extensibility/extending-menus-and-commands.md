@@ -1,7 +1,7 @@
 ---
 title: Расширение меню и команд | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 158759d2511b6ba1209a045a898969fce774e0a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20ec62586f9a725c1a33da60986d3c8729f0e402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560721"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261005"
 ---
 # <a name="extending-menus-and-commands"></a>Расширение меню и команд
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширение меню и команд](https://docs.microsoft.com/visualstudio/extensibility/extending-menus-and-commands).  
-  
 Команды можно добавить действия и процессов в Visual Studio. В большинстве случаев команды отображаются в меню и панелей инструментов. Шаблон проекта VSPackage показан способ реализации очень простой команды. Немного больше времени, но по-прежнему простую реализацию, см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
  Дополнительные сведения о командах, меню и панелей инструментов Visual Studio, см. в разделе [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).  

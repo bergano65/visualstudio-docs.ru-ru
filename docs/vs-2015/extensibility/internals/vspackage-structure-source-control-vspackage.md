@@ -1,7 +1,7 @@
 ---
 title: Структура VSPackage (пакет VSPackage управления версиями) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305036"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура VSPackage (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [структура VSPackage (пакет VSPackage управления версиями)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 Пакет SDK для пакета управления для источника предоставляет рекомендации по созданию пакетов VSPackage, который позволяет разработчику элемента управления источника интегрировать свой функции системы управления версиями с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среды. VSPackage — это компонент COM, который загружается по запросу обычно [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) на основе служб, которые объявляются с помощью пакета в записи в реестр. Каждый пакет VSPackage должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage обычно потребляет служб, предоставляемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки и предлагает некоторые службы.  
   
  VSPackage объявляет элементами меню и устанавливает состояние элемента по умолчанию с помощью файла .vsct. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Среда интегрированной разработки отобразит пункты меню в этом состоянии до загрузки VSPackage. Как следствие, реализацию VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  

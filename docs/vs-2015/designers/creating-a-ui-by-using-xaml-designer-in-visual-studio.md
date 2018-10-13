@@ -1,7 +1,7 @@
 ---
 title: Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a347820a0c6f2edf87d9a7f41e95a8c27f1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295032"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
-  
 Конструктор XAML в Visual Studio предоставляет визуальный интерфейс, помогающий создавать приложения Магазина Windows, Windows Phone, WPF и Silverlight на основе XAML. Вы можете создавать пользовательские интерфейсы для приложений, перетаскивая элементы управления из **области элементов** и задавая свойства в окне **Свойства** . Также можно изменить код XAML непосредственно в представлении XAML.  
   
  Расширенные задачи разработки XAML, такие как анимация и поведение, см. в разделе [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).  

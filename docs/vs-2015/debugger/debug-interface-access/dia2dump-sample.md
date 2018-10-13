@@ -1,7 +1,7 @@
 ---
 title: Пример файла Dia2dump | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410d4e8cf2a63c7d01058e501391f02543b1eee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300824"
 ---
 # <a name="dia2dump-sample"></a>Пример файла Dia2dump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пример файла Dia2dump](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-sample).  
-  
 Пример файла Dia2dump устанавливается вместе с Visual Studio и содержит исходного кода dia2dump.cpp. Скомпилированный исполняемый файл запускается из командной строки и отображает содержимое весь файл базы данных программы (PDB-файл).  
   
 ### <a name="to-install-the-sample"></a>Чтобы установить пример  

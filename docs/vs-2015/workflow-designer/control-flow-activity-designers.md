@@ -1,7 +1,7 @@
 ---
 title: Конструкторы действий потока управления | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303619"
 ---
 # <a name="control-flow-activity-designers"></a>Конструкторы действия управления потоком
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] включает определенное количество системных действий, которые могут быть использованы для построения рабочих процессов. В этом разделе содержатся действия, предусмотренные системой, и служащие для управления потоком в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.  

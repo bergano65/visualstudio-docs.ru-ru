@@ -1,7 +1,7 @@
 ---
 title: Развертывание компонентов COM с помощью ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560466"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246848"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развертывание компонентов COM с помощью ClickOnce](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Развертывание старыми COM-компонентами традиционно трудной задачей. Компоненты должны быть глобально зарегистрированы и таким образом может привести к нежелательным побочным эффектам между перекрывающимися приложениями. Такой ситуации, обычно не проблема в приложениях .NET Framework, так как компоненты полностью изолированы в приложение или side-by-side совместимы. Visual Studio позволяет развертывать изолированные компоненты COM в Windows XP или более поздней версии операционной системы.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] обеспечивает простой и безопасный механизм для развертывания приложений .NET. Тем не менее если приложения используют старыми COM-компонентами, необходимо будет выполнить дополнительные действия для его развертывания. В этом разделе описывается, как развертывать изолированные компоненты COM и ссылаться на собственные компоненты (например, из Visual Basic 6.0 или Visual C++).  
@@ -69,7 +67,7 @@ ms.locfileid: "47560466"
   
 1.  С помощью Visual Basic 6.0, из **файл** меню, щелкните **New**, затем **проекта**.  
   
-2.  В **новый проект** выберите **Visual Basic** узел и выберите **ActiveX DLL** проекта. В поле **Имя** введите `VB6Hello`.  
+2.  В **новый проект** выберите **Visual Basic** узел и выберите **ActiveX DLL** проекта. В поле **Имя файла** введите `VB6Hello`.  
   
     > [!NOTE]
     >  Поддерживаются только типы проектов ActiveX DLL и элемент управления ActiveX с COM без регистрации; Типы проектов ActiveX EXE и документ ActiveX не поддерживаются.  
@@ -95,7 +93,7 @@ ms.locfileid: "47560466"
   
 1.  С помощью Visual Basic из **файл** меню, щелкните **New**, затем **проекта**.  
   
-2.  В **новый проект** выберите **Visual Basic** узел и выберите **приложения Windows**. В поле **Имя** введите `RegFreeComDemo`.  
+2.  В **новый проект** выберите **Visual Basic** узел и выберите **приложения Windows**. В поле **Имя файла** введите `RegFreeComDemo`.  
   
 3.  В **обозревателе решений**, нажмите кнопку **Показать все файлы** кнопку, чтобы отобразить ссылки проекта.  
   
