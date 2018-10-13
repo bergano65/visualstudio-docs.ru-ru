@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: задание свойств анализа кода для проектов C / C++ | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c0b396394e003f97c60a65ee37b94810e692e28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224826"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Задание свойств анализа кода для проектов C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: значение свойства анализа кода для проектов C/C++](https://docs.microsoft.com/visualstudio/code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects).  
-  
 Можно настроить средство анализа кода правил для анализа кода для каждой конфигурации проекта. Кроме того можно направить анализ кода, чтобы отключить предупреждения из кода, который был создан и добавлен в проект с помощью стороннего средства.  
   
 ## <a name="code-analysis-property-page"></a>Страница свойств анализа кода  

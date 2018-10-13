@@ -1,7 +1,7 @@
 ---
 title: Активация приостановки, возобновления и фоновых событий для приложений Windows Store в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214764"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Практическое руководство. Вызов событий приостановки, возобновления и фоновых событий для приложений для Магазина Windows в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [активация приостановки, возобновления и фоновых событий для приложений Windows Store в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio).  
-  
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
   
  Кроме того, в этом разделе описывается, как отладить **Фоновые задачи**. Фоновые задачи позволяют выполнять определенные операции в фоновом процессе, даже если приложение не выполняется. Можно использовать отладчик, чтобы перевести приложение в режим отладки, а затем, не запуская пользовательский интерфейс, запустить фоновую задачу и начать ее отладку.  
@@ -135,7 +133,7 @@ ms.locfileid: "47569718"
  [Тестирование приложений Магазина с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Жизненный цикл приложения](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Запуск, возобновление и многозадачность](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
 
 
 

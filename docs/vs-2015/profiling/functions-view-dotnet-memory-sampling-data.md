@@ -1,7 +1,7 @@
 ---
 title: Представление "Функции" — данные выборки памяти .NET | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac8c19c02754d17a8af3b5472ecd580948793962
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6382849660d7dea44286fc467d497502caef6180
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224800"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление "функции" — данные выборки памяти .NET](https://docs.microsoft.com/visualstudio/profiling/functions-view-dotnet-memory-sampling-data).  
-  
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных с помощью методов выборки, представлены функции, выделявшие память в процессе профилирования, а также указан размер и количество выделенных блоков.  
   
 |Столбец|Описание|  

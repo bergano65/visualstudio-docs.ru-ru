@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: создать консольные приложения рабочих процессов конечного автомата (для прежних версий) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ac1d941fb206b6567084ea657280dc2b35ccf365
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211501"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Как создать консольные приложения рабочих процессов конечных автоматов (для прежних версий)
 Выполните следующие шаги для создания проекта консольного приложения рабочего процесса конечного автомата с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Реализация пользовательских категорий и отображаемые элементы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218677"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Реализация пользовательских категорий и отображаемые элементы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [реализации пользовательских категорий и отображаемые элементы](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items).  
-  
 VSPackage может предоставить контроль над шрифты и цвета текста для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.  
   
  Пользовательские категории и отображаемые элементы находятся на **шрифты и цвета** страницу свойств. Чтобы открыть **шрифты и цвета** свойство страницы на **средства** меню, щелкните **параметры**. Разверните **среды** и нажмите кнопку **шрифты и цвета**.  

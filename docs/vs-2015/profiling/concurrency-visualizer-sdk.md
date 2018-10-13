@@ -1,7 +1,7 @@
 ---
 title: Пакет SDK визуализатора параллелизма | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bce206e362b64bfd27f90e7f6be11fec0d0de3e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78d848f5d075ed0d5cd835f4af3daf964603c371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207939"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пакета SDK визуализатора параллелизма](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-sdk).  
-  
 Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
 ## <a name="properties"></a>Свойства  

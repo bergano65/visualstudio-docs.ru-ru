@@ -1,7 +1,7 @@
 ---
 title: Представление "Модули" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baf208e30a96efa73e0524fc10a761ac01c316e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c84b71772c42bf11b90005a6951aadbc4b222e53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239217"
 ---
 # <a name="modules-view"></a>Представление "Модули"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление "Модули"](https://docs.microsoft.com/visualstudio/profiling/modules-view).  
-  
 В представлении "Модули" перечисляются модули данных профилирования. Каждый модуль представляет собой корневой узел иерархического дерева. Профилируемые функции модуля указываются в узле модуля. Если данные профилирования собирались с помощью метода выборки, сведения о строке указываются в узле функции, а данные указателя на инструкцию — в узле строки.  
   
  Чтобы отобразить или свернуть данные о производительности модуля, следует развернуть или скрыть имя модуля.  

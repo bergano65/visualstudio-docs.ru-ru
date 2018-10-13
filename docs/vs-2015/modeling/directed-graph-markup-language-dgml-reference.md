@@ -1,7 +1,7 @@
 ---
 title: Справочник по языку разметки графов (DGML) направлены | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a8059d30a5fddf29e7e20f3cb0e87d6da35e72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214673"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [язык разметки с направленных графов (DGML) ссылку](https://docs.microsoft.com/visualstudio/modeling/directed-graph-markup-language-dgml-reference).  
-  
 Язык разметки направленных графов (Directed Graph Markup Language, DGML) описывает информацию, которая используется для визуализации и выполнения анализов сложности, а также служит форматом, в котором Visual Studio хранит карты кодов. Для описания циклических и ациклических направленных графов в DGML используется простой XML-код. Направленный граф представляет собой набор узлов, соединенных ссылками или границами. Узлы и ссылки могут быть использованы для представления сетевых структур, например элементов программного проекта.  
   
  Обратите внимание, что некоторые версии Visual Studio поддерживают только некоторые возможности DGML см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

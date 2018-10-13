@@ -1,7 +1,7 @@
 ---
 title: Создание модульных тестов для кода с помощью IntelliTest | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee613343f184019c546c0fd9fae0f5ecd355a12b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226516"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание модульных тестов для кода с помощью IntelliTest](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest).  
-  
 IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде. Например, анализируются операторы if, утверждения и все операции, которые могут вызывать исключения. Этот анализ используется в целях создания данных теста для параметризованного модульного теста для каждого из методов, создающих модульные тесты с высоким покрытием кода.  
   
  При запуске IntelliTest легко увидеть, какие тесты завершились сбоем, и добавить код для их исправления. Вы можете выбрать, какие созданные тесты следует сохранить в тестовый проект, чтобы предоставить набор регрессий. Изменив код, необходимо перезапустить IntelliTest, чтобы синхронизировать созданные тесты с изменениями в коде.  

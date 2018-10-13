@@ -1,7 +1,7 @@
 ---
 title: Задача RegisterAssembly | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5bbca089b15979df11c4eda73a46c6a6436b53d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ca8def8de6a290822a6736f70a401ed7e0cf9bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230247"
 ---
 # <a name="registerassembly-task"></a>Задача RegisterAssembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача RegisterAssembly](https://docs.microsoft.com/visualstudio/msbuild/registerassembly-task).  
-  
   
 Cчитывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), но не идентично ему.  
   

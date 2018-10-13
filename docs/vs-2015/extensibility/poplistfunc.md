@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224553"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc).  
-  
 Этот обратный вызов передается [SccPopulateList](../extensibility/sccpopulatelist-function.md) Интегрированной средой разработки и используется подключаемый модуль системы управления версиями, чтобы обновить список файлов или каталогов (также указан для `SccPopulateList` функции).  
   
  Когда пользователь выбирает **получить** команды в интегрированной среде разработки, среда интегрированной разработки отобразит список всех файлов, которые пользователь может получить. К сожалению интегрированной среды разработки не знает точный список всех файлов, которые пользователь может получить; только подключаемый модуль имеет этот список. Если другим пользователям добавления файлов в проект элемента управления исходного кода, эти файлы должны появиться в списке, но интегрированной среды разработки не знает о них. IDE формирует список файлов, которые он считает, что пользователь может получить. Прежде чем он отображает этот список для пользователя, он вызывает [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` предоставляя подключаемый модуль системы управления версиями возможность добавлять и удалять файлы из списка.  

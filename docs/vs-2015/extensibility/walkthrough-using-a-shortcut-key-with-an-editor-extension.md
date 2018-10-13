@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Использование сочетаний клавиш в расширении редактора | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8497b4b8192c4ad888c850b9ec2ab37c89f334
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232418"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Использование сочетания клавиш в расширении редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: использование сочетаний клавиш в расширении редактора](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension).  
-  
 Можно ответить на сочетания клавиш в расширении редактора. Следующее пошаговое руководство демонстрирует добавление оформления представления для текстового представления с помощью сочетания клавиш. В этом пошаговом руководстве основан на шаблоне редактор оформление окна просмотра, а также вы можете добавить оформления с помощью + символ.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -57,7 +55,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Определение фильтра команды  
  Фильтр команд представляет собой реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, который обрабатывает команду путем создания экземпляра оформления.  
   
-1.  Добавьте файл класса и назовите его `KeyBindingCommandFilter`.  
+1.  Добавьте файл класса с именем `KeyBindingCommandFilter`.  
   
 2.  Добавьте следующие инструкции using.  
   

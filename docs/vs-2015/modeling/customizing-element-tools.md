@@ -1,7 +1,7 @@
 ---
 title: Настройка средств элемента | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 91866f93f5a5a10f3a4295c21ee5e2046853ff4c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220510"
 ---
 # <a name="customizing-element-tools"></a>Настройка средств элемента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка средств элемента](https://docs.microsoft.com/visualstudio/modeling/customizing-element-tools).  
-  
 В некоторых определениях DSL единую концепцию представляют группу элементов. Например при создании модели, в котором компонент имеет фиксированный набор портов, всегда требуется порты, которые нужно создать в то же время, как их родительского компонента. Таким образом необходимо настроить средство создания элемента, таким образом, чтобы он создает группу элементов, вместо одного. Для этого можно настроить способ инициализации средства создания элемента.  
   
  Также можно переопределить, что происходит, когда средство перетаскивается на диаграмму или элемент.  

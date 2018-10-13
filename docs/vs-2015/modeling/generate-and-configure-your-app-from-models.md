@@ -1,7 +1,7 @@
 ---
 title: Создание и настройка приложения на основе моделей | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240647"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Создание и настройка приложения на основе моделей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание и настройка приложения на основе моделей](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models).  
-  
 Вы можете создавать или настраивать части приложения на основе модели. Модель может быть создана на языке UML или DSL.  
   
  Модель представляет требования более непосредственно, чем код. Выводя поведение приложения непосредственно из модели, можно реагировать на изменение требований намного быстрее и надежнее, чем путем обновления кода. Хотя для настройки такого вывода требуется проделать определенную начальную работу, эти затраты окупятся, если ожидаются изменения требований или планируется создание нескольких версий продукта.  

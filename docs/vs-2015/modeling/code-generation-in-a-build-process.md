@@ -1,7 +1,7 @@
 ---
 title: Создание кода в процессе построения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208654"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [создание кода в процессе построения](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process).
-
 Преобразование текста может вызываться как часть процесса построения решения Visual Studio. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).
 
 Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При построении решения в Visual Studio текстового шаблона можно получить доступ к API Visual Studio (EnvDTE) Если [hostspecific = «true»](../modeling/t4-template-directive.md) атрибут имеет значение. Однако это не так при сборке решения из командной строки или при запуске с помощью Visual Studio сборки на сервере. В таких случаях сборка выполняется в MSBuild и используется другой узел T4.

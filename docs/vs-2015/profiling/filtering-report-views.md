@@ -1,7 +1,7 @@
 ---
 title: Фильтрация представлений отчетов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5fe6ce49a9ffee4230cfd4c0528b53761bc1caf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238294"
 ---
 # <a name="filtering-report-views"></a>Фильтрация представлений отчетов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Фильтрация представлений отчетов](https://docs.microsoft.com/visualstudio/profiling/filtering-report-views).  
-  
 Чтобы ограничить данные профилирования, отображаемые в представлениях отчета о производительности и экспортируемые в файлы отчетов, можно применить фильтры к файлам данных профилирования. Отчет можно ограничить данными, полученными между двумя метками времени. Кроме того, можно ограничиться данными определенных процессов или потоков. Фильтры можно сохранить в файле, а затем создать фильтр в другом файле данных профилирования, импортировав в него сохраненный фильтр.  
   
  Кроме того, отчет можно ограничить определенным отрезком времени, воспользовавшись графической временной шкалой в представлении сводки. См. раздел [Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  

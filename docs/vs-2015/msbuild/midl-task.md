@@ -1,7 +1,7 @@
 ---
 title: Задача MIDL | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215791"
 ---
 # <a name="midl-task"></a>Задача MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача MIDL](https://docs.microsoft.com/visualstudio/msbuild/midl-task).  
-  
   
 Запускает компилятор с языка MIDL — midl.exe. Дополнительные сведения см. в разделе "Справочник по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -68,7 +66,7 @@ ms.locfileid: "47592908"
   
 -   **ApplicationConfigurationMode**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, то в IDL-файле разрешается использовать некоторые ключевые слова ACF.  
   
@@ -132,7 +130,7 @@ ms.locfileid: "47592908"
   
 -   **ErrorCheckAllocations**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить ошибки нехватки памяти.  
   
@@ -140,7 +138,7 @@ ms.locfileid: "47592908"
   
 -   **ErrorCheckBounds**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить совместимо-переменные и переменные массивы на соответствие требованиям к размеру передаваемых данных.  
   
@@ -148,7 +146,7 @@ ms.locfileid: "47592908"
   
 -   **ErrorCheckEnumRange**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить допустимость значения перечисления.  
   
@@ -156,7 +154,7 @@ ms.locfileid: "47592908"
   
 -   **ErrorCheckRefPointers**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить, что в клиентские заглушки не передаются пустые указатели.  
   
@@ -164,7 +162,7 @@ ms.locfileid: "47592908"
   
 -   **ErrorCheckStubData**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, создается заглушка, которая перехватывает исключения демаршалинга на стороне сервера и передает их обратно клиенту.  
   
@@ -202,7 +200,7 @@ ms.locfileid: "47592908"
   
 -   **GenerateStublessProxies**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение`true`, создаются полностью преобразованные заглушки вместе с прокси-серверами без заглушек для объектных интерфейсов.  
   
@@ -210,7 +208,7 @@ ms.locfileid: "47592908"
   
 -   **GenerateTypeLibrary**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, файл библиотеки типов (с расширением TLB) не создается.  
   
@@ -226,7 +224,7 @@ ms.locfileid: "47592908"
   
 -   **IgnoreStandardIncludePath**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, задача MIDL выполняет поиск только в тех каталогах, которые заданы ключом **AdditionalIncludeDirectories**, игнорируя текущий каталог и каталоги, указанные в переменной среды INCLUDE.  
   
@@ -250,7 +248,7 @@ ms.locfileid: "47592908"
   
 -   **MkTypLibCompatible**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, необходимо использовать формат входного файла, совместимый с mktyplib.exe версии 2.03.  
   
@@ -322,7 +320,7 @@ ms.locfileid: "47592908"
   
 -   **SuppressCompilerWarnings**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, отменяются предупреждающие сообщения от задачи MIDL.  
   

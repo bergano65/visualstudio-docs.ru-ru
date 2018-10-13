@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237657"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отображение отображение подсказок](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips).  
-  
 Кратких сведений является функцией IntelliSense, отображающий сигнатуры методов и описания, когда пользователь перемещает указатель на имя метода. Характеристики на основе языка, например кратких сведений можно реализовать путем определения идентификаторов, для которых вы хотите предоставить описания кратких сведений, а также Создание всплывающей подсказки, в которой для отображения содержимого. Кратких сведений можно определить в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и отображения кратких сведений для только этого типа или можно отобразить кратких сведений для существующих типов (например, «text»). В этом пошаговом руководстве показано, как для отображения кратких сведений для типа содержимого «text».  
   
  В примере кратких сведений в этом пошаговом руководстве отображает всплывающие подсказки при наведении указателя мыши на имени метода. Такой подход требует реализации этих четырех интерфейсов:  
@@ -61,7 +59,7 @@ ms.locfileid: "47568737"
   
 #### <a name="to-implement-the-quickinfo-source"></a>Для реализации источник кратких сведений  
   
-1.  Добавьте файл класса и назовите его `TestQuickInfoSource`.  
+1.  Добавьте файл класса с именем `TestQuickInfoSource`.  
   
 2.  Добавьте ссылку на Microsoft.VisualStudio.Language.IntelliSense.  
   
@@ -160,7 +158,7 @@ ms.locfileid: "47568737"
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  Импорт <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> как свойство.  
+2.  Импортируйте <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> как свойство.  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

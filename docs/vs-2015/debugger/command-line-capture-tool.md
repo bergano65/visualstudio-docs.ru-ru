@@ -1,7 +1,7 @@
 ---
 title: Программу командной строки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2c646af7102bd6a5017b1afb522448d4e6b1d8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210552"
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [программа командной строки для захвата](https://docs.microsoft.com/visualstudio/debugger/graphics/command-line-capture-tool).  
-  
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.  
   
 ## <a name="syntax"></a>Синтаксис  

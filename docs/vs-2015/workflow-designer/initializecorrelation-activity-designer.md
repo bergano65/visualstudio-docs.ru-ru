@@ -1,7 +1,7 @@
 ---
 title: Конструктор действия InitializeCorrelation | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 314b5de716017d4c5c40653eed678626f00c20ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9dd9d622785fbfebd8560daf9bf459716381ddbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234030"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Конструктор действия InitializeCorrelation
 **InitializeCorrelation** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.InitializeCorrelation> действие, которое используется для соотнесения сообщений перед их отправкой или получением.  

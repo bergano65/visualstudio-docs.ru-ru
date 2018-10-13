@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time, отладка, диалоговое окно параметров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8675bc383a492f4d7ca762fa052a0e6174fe01bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207497"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Just-In-Time, отладка, диалоговое окно параметров](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-options-dialog-box).  
-  
 Чтобы получить доступ к **Just-In-Time** перейдите к странице **средства** меню и выберите пункт **параметры**. В **параметры** диалогового окна разверните узел **Отладка** узел и выберите **Just-In-Time**. Эта страница позволяет включить JIT-отладку для управляемого кода, машинного кода и скриптов. Дополнительные сведения см. в разделе [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  JIT-отладку можно разрешить для программ следующих типов:  

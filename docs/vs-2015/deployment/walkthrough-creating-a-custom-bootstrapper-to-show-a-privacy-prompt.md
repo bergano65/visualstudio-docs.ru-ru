@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Создание пользовательского загрузчика для отображения подсказки заявления о конфиденциальности | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217968"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: создание Custom Bootstrapper to Show a Privacy Prompt](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt).  
-  
 Можно настроить приложений ClickOnce для автоматического обновления при появлении сборок с более новые версии файла и версии сборки. Чтобы убедиться в том, что пользователи согласны такое поведение, можно отобразить предупреждением о конфиденциальности на них. После этого можно разрешить приложению для автоматического обновления. Если приложение не может быть автоматическое обновление, он не устанавливаются.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

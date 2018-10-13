@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Подключение профилировщика к веб-приложению ASP.NET для сбора данных по использованию памяти с помощью командной строки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 145ff7018077fcdbff7354ddcf514688d925443d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d9ba085eaf6aa66250008c30e13442857569b6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227298"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: присоединение Profiler к веб-приложению ASP.NET для сбора данных памяти с помощью командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line).  
-  
 В этом разделе описан порядок использования программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.  
   
 > [!NOTE]

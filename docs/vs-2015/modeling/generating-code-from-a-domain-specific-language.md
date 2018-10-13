@@ -1,7 +1,7 @@
 ---
 title: Создание кода из доменного языка | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fbe7e40a277174eb556a61b50eb88279adebfb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232002"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание кода из доменного языка](https://docs.microsoft.com/visualstudio/modeling/generating-code-from-a-domain-specific-language).  
-  
 Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] предоставляет эффективный способ создания кода, документов, файлов конфигурации и другие артефакты из данных, представленных в модели. С помощью [!INCLUDE[dsl](../includes/dsl-md.md)], можно создать набор классов, представляющих данные и вы можете использовать текстовые шаблоны в классах, имена и свойства отражают эти данные.  
   
  Например Fabrikam имеется файл XML, имена заказчиков и адресов электронной почты. Разработчики создать модель, в котором клиент — это класс, с помощью свойства name и e-mail. Они создания нескольких текстовых шаблонов для обработки данных, включая этот фрагмент, который создает таблицу из всех клиентов как часть HTML-страницу:  

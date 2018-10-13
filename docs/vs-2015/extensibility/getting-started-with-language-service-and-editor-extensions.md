@@ -1,7 +1,7 @@
 ---
 title: Приступая к работе с расширениями редактора и языковой службы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227010"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и языковой службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Приступая к работе с расширениями редактора и языковой службы](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions).  
-  
 Для добавления функций языка, таких как структурирование, парные фигурные скобки, IntelliSense и лампочки, чтобы выбранном языке программирования или к любому типу содержимого можно использовать расширения редактора. Вы также можете настроить внешний вид и поведение редактора в Visual Studio, например текст конструкций, поля, элементы оформления и других визуальных элементов. Также можно определить свой собственный тип содержимого и затем указать внешний вид и поведение представления текста, в которых отображается содержимое.  
   
  Чтобы приступить к созданию расширения редактора, используйте редактор шаблоны проектов, которые устанавливаются как часть пакета SDK для Visual Studio. Пакет SDK для Visual Studio — это загружаемый набор средств, которые упрощают процесс разработки расширений Visual Studio, либо с помощью пакетов VSPackage, либо с помощью Managed Extensibility Framework (MEF).  

@@ -1,7 +1,7 @@
 ---
 title: Проектирование таблицы команд XML (. Файлы Vsct) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b72438998b75fcebc7cccae082e3e9db4ac13b69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229389"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Проектирование таблицы команд XML (. Файлы Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [проектирование таблицы команд XML (. Файлы Vsct)](https://docs.microsoft.com/visualstudio/extensibility/internals/designing-xml-command-table-dot-vsct-files).  
-  
 Команда table (.vsct) XML-файл описывает макет и внешний вид элементов команду для VSPackage. Команда элементы включают кнопки, поля со списком, меню, панелей инструментов и группы элементов команды. В этом разделе описывается файлов таблицы команд XML, как они влияют на элементы команды и меню и способах их создания.  
   
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Команды, меню, группы и vsct-файл  

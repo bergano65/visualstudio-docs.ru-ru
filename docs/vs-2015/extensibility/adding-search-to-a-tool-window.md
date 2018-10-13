@@ -1,7 +1,7 @@
 ---
 title: Добавление поиска в окно инструментов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bdee40e2af2e09844314cd1727f480b3cd33462
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206925"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Добавление поиска в окно инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление поиска в окно инструментов](https://docs.microsoft.com/visualstudio/extensibility/adding-search-to-a-tool-window).  
-  
 При создании или обновлении расширения окна инструментов, можно добавить функций поиска, появляющийся в Visual Studio. Эта функция включает в себя следующие компоненты:  
   
 -   Поле поиска, которое всегда находится в настраиваемые области панели инструментов.  
@@ -57,7 +55,7 @@ ms.locfileid: "47572655"
   
 ## <a name="to-create-a-vsix-project"></a>Создание проекта VSIX  
   
-1.  Создайте проект VSIX с именем `TestToolWindowSearch` с окном инструментов с именем **TestSearch**. Если вам нужна помощь, таким образом, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1.  Создайте проект VSIX с именем `TestToolWindowSearch` с окном инструментов с именем **TestSearch**. Если вам необходима помощь, см. раздел [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="to-create-a-tool-window"></a>Создать окно инструментов  
   

@@ -1,7 +1,7 @@
 ---
 title: '&lt;зависимость&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214932"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;зависимость&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;зависимостей&gt; элемент (развертывание ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment).  
-  
 Определяет версию приложения для установки и расположение манифеста приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -97,7 +95,7 @@ ms.locfileid: "47563696"
 |`size`|Необязательный. Размер манифеста приложения, в байтах.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Обязательно. Этот элемент является дочерним по отношению к элементу `dependentAssembly`. Содержание `assemblyIdentity` должен быть таким же, как описано в разделе [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест приложения. В следующей таблице показаны атрибуты `assemblyIdentity` элемент.  
+ Обязательно. Этот элемент является дочерним по отношению к элементу `dependentAssembly` . Содержание `assemblyIdentity` должен быть таким же, как описано в разделе [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест приложения. В следующей таблице показаны атрибуты `assemblyIdentity` элемент.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -109,12 +107,12 @@ ms.locfileid: "47563696"
 |`type`|Необязательный. Для обеспечения обратной совместимости с Windows side-by-side установить технологии. Единственное допустимое значение — `win32`.|  
   
 ## <a name="hash"></a>hash  
- `hash` Элемент является необязательного дочернего элемента `file` элемент. `hash` Элемент не имеет атрибутов.  
+ `hash` Элемент является необязательного дочернего элемента `file` элемент. У элемента `hash` нет атрибутов.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] использует алгоритма хэш всех файлов в приложении как средство проверки безопасности, чтобы убедиться, что ни один из файлов был изменен после развертывания. Если `hash` элемент не включен, эта проверка не выполняется. Таким образом, пропуск `hash` элемента не рекомендуется.  
   
 ## <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
- `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемент. `dsig:Transforms` Элемент не имеет атрибутов.  
+ `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемент. У элемента `dsig:Transforms` нет атрибутов.  
   
 ## <a name="dsigtransform"></a>DSIG:Transform  
  `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемент. В следующей таблице показаны атрибуты `dsig:Transform` элемент.  
@@ -131,7 +129,7 @@ ms.locfileid: "47563696"
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственное значение, используемое [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] является `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
- `dsig:DigestValue` Элемент является обязательным дочерним элементом `hash` элемент. `dsig:DigestValue` Элемент не имеет атрибутов. Его текстовое значение является хэшем для указанного файла.  
+ `dsig:DigestValue` Элемент является обязательным дочерним элементом `hash` элемент. У элемента `dsig:DigestValue` нет атрибутов. Его текстовое значение является хэшем для указанного файла.  
   
 ## <a name="remarks"></a>Примечания  
  Манифесты развертывания обычно имеют один `assemblyIdentity` элемент, который определяет имя и версию манифеста приложения.  

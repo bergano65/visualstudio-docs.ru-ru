@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: создание. Vsct-файл из существующего. Руководитель технологического отдела компании файл | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82cf711d33b3b3ca5150378e7111a2a21c8c03cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235746"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое руководство. Создание файла VSCT на основе существующего файла CTO
 Вы можете создать файл VSTC на основе XML из существующего двоичного CTO-файла. Это позволяет воспользоваться преимуществами нового формата компилятора таблицы команд. Этот процесс работает, даже если файл CTO был скомпилирован из файла CTC. Файл VSCT можно изменить и скомпилировать в другой файл CTO.  
@@ -32,9 +32,9 @@ ms.locfileid: "47592708"
   
 3.  В командной строке Visual Studio перейдите в каталог, содержащий файлы CTO и CTSYM.  
   
-4.  Тип **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**  _symfilename_**.ctsym**.  
+4.  Введите **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
   
-     `ctofilename` Имя файла cto, `vsctfilename` — это имя файла vsct, который вы хотите создать, и `symfilename` имя файла ctsym.  
+     `ctofilename` — это имя файла CTO, `vsctfilename` — имя файла VSCT, который нужно создать, а `symfilename` — имя файла CTSYM.  
   
      В результате этого процесса будет создан файл компилятора таблицы команд XML. Этот файл можно изменить и скомпилировать с помощью vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
   

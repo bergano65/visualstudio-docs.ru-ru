@@ -1,7 +1,7 @@
 ---
 title: Блок | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d4a62541ce214bc6965a025fb992ca217d511cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c340f81f3325c66275c538b605a7c6eed66f9dfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230845"
 ---
 # <a name="block"></a>Block
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [блок](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/block).  
-  
 Каждый блок кода определяется `SymTagBlock` символов. Блок символы используются для идентификации вложенных областей внутри функции.  
   
 ## <a name="properties"></a>Свойства  

@@ -1,7 +1,7 @@
 ---
 title: Доступ к локальным и удаленным данным в приложениях ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218847"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [доступ к локальным и удаленным данным в приложениях ClickOnce](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
-  
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.  
   
 ## <a name="local-data"></a>Локальные данные  
@@ -53,7 +51,7 @@ ms.locfileid: "47572443"
 >  Если приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] удаляется, его каталог данных также удаляется. Никогда не используйте каталог данных для хранения управляемых конечным пользователем данных, например документов.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Маркировка файлов данных в рассылке ClickOnce  
- Чтобы поместить существующий файл внутрь каталога данных, необходимо пометить существующий файл как файл данных в файле манифеста приложения вашего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Для получения дополнительной информации см. [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Чтобы поместить существующий файл внутрь каталога данных, необходимо пометить существующий файл как файл данных в файле манифеста приложения вашего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Для получения дополнительной информации см. [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Чтение и запись в каталоге данных  
  Для чтения из каталога данных нужно, чтобы приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] запросило разрешение на чтение; аналогично для записи в каталог требуется разрешение на запись. Ваше приложение получит это разрешение автоматически, если оно настроено для работы с полным доверием. Дополнительные сведения о повышении уровня разрешений приложения с использованием повышение уровня разрешений или развертывания надежных приложений, см. в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -77,14 +75,14 @@ ms.locfileid: "47572443"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] заменяет старую версию файла новой версией сервера, если значение хэша для файла данных в старой версии приложения отличается от значения в новой. Кроме того, если в более ранней версии приложения был создан новый файл, который имеет то же имя, что и файл, включенный в развертывание новой версии, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] перезапишет файл старой версии и использует новый. В обоих случаях старые файлы будут включены в подкаталог внутри каталога данных с именем `.pre`, так что приложение по-прежнему будет иметь доступ к старым данным в целях миграции.  
   
- Если требуется более контролируемая миграция данных, можно использовать API развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], чтобы выполнить пользовательскую миграцию из старого каталога данных в новый. Необходимо будет проверить наличие доступной загрузки, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>, загрузить обновление с использованием <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> или <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>, а затем самостоятельно выполнить действия по пользовательской миграции данных по окончании обновления.  
+ Если требуется более контролируемая миграция данных, можно использовать API развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , чтобы выполнить пользовательскую миграцию из старого каталога данных в новый. Необходимо будет проверить наличие доступной загрузки, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>, загрузить обновление с использованием <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> или <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>, а затем самостоятельно выполнить действия по пользовательской миграции данных по окончании обновления.  
   
 ### <a name="isolated-storage"></a>Изолированное хранилище  
  Изолированное хранилище предоставляет API для создания файлов с использованием простого API и осуществления доступа к ним. Фактическое расположение хранимых файлов скрыто от разработчика и пользователя.  
   
  Изолированное хранилище работает во всех версиях [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Изолированное хранилище также работает в приложениях с частичным доверием, предоставлять дополнительные разрешения не требуется. Изолированное хранилище следует использовать, если приложение должно выполняться с частичным доверием, но при этом обслуживать данные приложения.  
   
- Дополнительные сведения см. в разделе [изолированное хранилище](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Для получения дополнительной информации см. [Изолированное хранилище](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Другие локальные файлы  
  Если приложение должно работать с данными конечных пользователей или сохранять такие данные (отчеты, изображения, музыку и т. д.), приложению потребуется разрешение <xref:System.Security.Permissions.FileIOPermission> для чтения и записи данных в локальной файловой системе.  
@@ -93,7 +91,7 @@ ms.locfileid: "47572443"
  На некотором этапе приложению, скорее всего, необходимо будет извлечь сведения с удаленного веб-сайта, например клиентские данные или информацию о рынке. В этом разделе рассматриваются наиболее распространенные методы получения удаленных данных.  
   
 ### <a name="accessing-files-by-using-http"></a>Доступ к файлам по протоколу HTTP  
- Доступ к данным на веб-сервере можно осуществлять с использованием класса <xref:System.Net.WebClient> или <xref:System.Net.HttpWebRequest> в пространстве имен <xref:System.Net> . Эти данные могут представлять собой статичные файлы или приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], возвращающие необработанные текстовые данные или данные XML. Если формат данных отличается от XML, самым быстрым способом извлечения данных будет использование класса <xref:System.Xml.XmlDocument> , метод <xref:System.Xml.XmlDocument.Load%2A> которого принимает URL-адрес в качестве аргумента. Например, см. в разделе [считывание XML-документа в DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Доступ к данным на веб-сервере можно осуществлять с использованием класса <xref:System.Net.WebClient> или <xref:System.Net.HttpWebRequest> в пространстве имен <xref:System.Net> . Эти данные могут представлять собой статичные файлы или приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], возвращающие необработанные текстовые данные или данные XML. Если формат данных отличается от XML, самым быстрым способом извлечения данных будет использование класса <xref:System.Xml.XmlDocument> , метод <xref:System.Xml.XmlDocument.Load%2A> которого принимает URL-адрес в качестве аргумента. Пример см. в разделе [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Необходимо помнить о соображениях безопасности, когда приложение осуществляет доступ к удаленным данным через HTTP. По умолчанию доступ вашего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] к сетевым ресурсам может быть ограничен в зависимости от использованного способа развертывания приложения. Эти ограничения применяются, чтобы не допустить доступа вредоносных программ к привилегированным удаленным данным или использования компьютера пользователя для атаки на другие компьютеры в сети.  
   

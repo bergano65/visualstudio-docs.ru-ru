@@ -1,7 +1,7 @@
 ---
 title: 'CA3077: Небезопасная обработка в структуре API, XML-документ и средства чтения текста XML | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 175d655c2283dfe764564d42b6893b12d1f09e22
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e70b31b86d8eb19f2d6dd437feea34a499ed7747
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233538"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: небезопасная обработка в структуре API средств чтения документов и текста XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA3077: обработка небезопасных в структуре API, XML-документ и средства чтения текста XML](https://docs.microsoft.com/visualstudio/code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
@@ -36,7 +33,7 @@ ms.locfileid: "47591884"
  При разработке API, производных от XMLDocument и XMLTextReader, обратите внимание на <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Использование небезопасных экземпляров DTDProcessing при ссылке на источники внешних сущностей или их разрешении, а также при задании небезопасных значений в XML может привести к раскрытию информации.
 
 ## <a name="rule-description"></a>Описание правила
- Объект [определения типа документа (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) является одним из двух способов определения допустимости документа, синтаксический анализатор XML в соответствии с определением [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных [раскрытие информации](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) угроз, которые могут привести к [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) атак. Это правило активируется, если:
+ [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
 
 -   <xref:System.Xml.XmlDocument> или <xref:System.Xml.XmlTextReader> классы используют значения сопоставителя по умолчанию для обработки DTD.
 

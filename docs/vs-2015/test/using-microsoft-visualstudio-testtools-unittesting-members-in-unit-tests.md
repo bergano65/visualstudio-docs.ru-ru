@@ -1,7 +1,7 @@
 ---
 title: Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,15 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ef2c5f81f868f2b5d7eac68030b842bd1c45067c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216657"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [использование элементов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests).
-
 Платформа модульного тестирования поддерживает выполнение модульных тестов в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Используйте классы и элементы в пространстве имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> при написании модульных тестов. Они используются как при создании модульных тестов с нуля, так и при доработке тестов, созданных из проверяемого кода.
 
 ## <a name="groups-of-elements"></a>Группы элементов

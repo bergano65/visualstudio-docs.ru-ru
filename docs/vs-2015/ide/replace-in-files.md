@@ -1,7 +1,7 @@
 ---
 title: Замена в файлах | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e693e1166a1612ae8ca82f5d1e8c0e742539da0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228830"
 ---
 # <a name="replace-in-files"></a>Заменить в файлах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [заменить в файлах](https://docs.microsoft.com/visualstudio/ide/replace-in-files).  
-  
 Заменить в файлах ** позволяет найти код, указанный набор файлов для строки или выражения и измените все или некоторые из найденных совпадений. Найденные совпадения и предпринятые действия перечисляются в окне **Результаты поиска**, выбранном в разделе **Параметры результатов**.  
   
 > [!NOTE]

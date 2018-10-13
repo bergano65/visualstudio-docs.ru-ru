@@ -1,7 +1,7 @@
 ---
 title: Обеспечение безопасности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230806"
 ---
 # <a name="maintaining-security"></a>Обеспечение безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поддержание безопасности](https://docs.microsoft.com/visualstudio/ide/maintaining-security).  
-  
 Часто считается, что ценой безопасности является постоянная бдительность. Даже если на этапе разработки приложения все проблемы безопасности были решены, следует предполагать наличие слабых мест в системе безопасности после развертывания. Аудит приложения и анализ журналов событий позволяет обнаружить некоторые недостатки, которые ранее не были видны.  
   
  Кроме того, необходимо не только следить за безопасностью отдельного приложения, но и знать обо всех текущих угрозах и слабых местах системы безопасности платформы, на которой работает приложение, и других продуктов, от которых зависит работа приложения.  

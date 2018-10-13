@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::CauseBreak | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d50452e234ea56631c1c77eabff372a63f01e4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86bf7f1a9dc34ef6283d57dac99ffe71896bca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229187"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugProcess2::CauseBreak](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-causebreak).  
-  
 Запросы, что следующий программу, которая выполнение кода в этом процессе halt и отправить [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) объект события.  
   
 ## <a name="syntax"></a>Синтаксис  

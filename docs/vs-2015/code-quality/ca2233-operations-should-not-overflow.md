@@ -1,7 +1,7 @@
 ---
 title: 'CA2233: Операции не должно быть переполнений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2cb9dbf5f88921d20b4923c3800dd02d096034a8
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 32707a891cfe99eecc4d6cba16ec5c04bdd3c100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235447"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: в операциях не должно быть переполнений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA2233: операциях не должно быть переполнений](https://docs.microsoft.com/visualstudio/code-quality/ca2233-operations-should-not-overflow).
-
 |||
 |-|-|
 |TypeName|OperationsShouldNotOverflow|

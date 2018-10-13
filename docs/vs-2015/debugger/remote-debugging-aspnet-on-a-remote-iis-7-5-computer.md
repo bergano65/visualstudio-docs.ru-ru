@@ -1,31 +1,29 @@
 ---
 title: Удаленная отладка ASP.NET на удаленном IIS 7.5 компьютера | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239854"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [удаленной отладке ASP.NET на удаленном компьютере IIS](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer).  
-  
 Развертывание веб-приложения ASP.NET на компьютере с Windows Server со службами IIS и настроить его для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2015 MVC 4.5.2 развертывания в IIS и подключить удаленный отладчик из Visual Studio.
 
 Эти процедуры протестированы на эти конфигурации сервера:
@@ -38,7 +36,7 @@ ms.locfileid: "47562517"
 
 Инструкции по загрузке удаленного отладчика на компьютере с Windows Server, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
 
-Для удаленной отладки приложений ASP.NET, можно запустить приложение удаленный отладчик с правами администратора или запустить удаленный отладчик как службу. Сведения о запуске удаленного отладчика в качестве службы можно найти в [удаленной отладки](../debugger/remote-debugging.md).
+Для удаленной отладки приложений ASP.NET, можно запустить приложение удаленный отладчик с правами администратора или запустить удаленный отладчик как службу. Подробную информацию о запуске удаленного отладчика в качестве службы можно найти в разделе [Remote Debugging](../debugger/remote-debugging.md).
 
 После установки, убедитесь, что удаленный отладчик запущен на целевом компьютере. (Если это не так, найдите **удаленный отладчик** в **запустить** меню. ) В окне удаленного отладчика выглядит следующим образом. (4020 — номер порта по умолчанию)
 

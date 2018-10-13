@@ -1,7 +1,7 @@
 ---
 title: Предварительная загрузка контента для приложений Windows Store | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b01e0cd841c6239a7f2ef76f964482348ee16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561822"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211451"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Предварительная загрузка контента для приложений Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [предварительная загрузка контента для приложений Windows Store](https://docs.microsoft.com/visualstudio/debugger/prefetch-content-for-windows-store-apps).  
-  
 Применяется только к Windows] (.. /Image/windows_only_content.PNG «windows_only_content»)  
   
  Для ускорения приложения Windows Store, вы можете запросить Windows для предварительной загрузки некоторых веб-содержимого, например веб-страниц или изображений, в приложения [WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)кэша. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить. См. в Windows SDK [примере предварительной загрузки содержимого](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) примеры добавления функциональности ContentPrefetcher в приложение.  

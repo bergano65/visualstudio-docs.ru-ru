@@ -1,7 +1,7 @@
 ---
 title: Фильтр представления отчетов о производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1568ec12a635014239a1533bf00df09a1e63ac14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63855aeb4b4e2d48db045354b0134056684dedf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228179"
 ---
 # <a name="performance-report-view-filter"></a>Фильтр представления отчетов о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [фильтр представления отчетов о производительности](https://docs.microsoft.com/visualstudio/profiling/performance-report-view-filter).  
-  
 Окно фильтра представления отчета профилировщика расположено в верхней части окна отчета о производительности. Если оно не отображается, нажмите кнопку **Показать фильтр**.  
   
  Для уточнения результатов можно изменить любое из предложений фильтра. Ниже приведены столбцы, доступные для построителя фильтров.  

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор сведений о времени с помощью профилировщика из командной строки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d9c7083b46b6f59d28c56724722b2ea591e971b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9b6f8bb825f6646e59d965d688edcaf8880f6b46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211133"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор данных о времени с помощью профилировщика из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: инструментирование автономного компонента .NET Framework и сбор данных о времени с Profiler из командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line).  
-  
 В этой статье описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования таких компонентов .NET Framework, как EXE- или DLL-файлы, а также для сбора подробных сведений о времени.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetRegistryRoot | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bb1eef7f2cc3b43e5771f96094db58a20490677
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 36d65fb11ea27e44b4680f7e5a23e1427a6abeee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210695"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugEngine2::SetRegistryRoot](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-setregistryroot).  
-  
 Задает корневой элемент реестра для обработчика отладки (DE).  
   
 ## <a name="syntax"></a>Синтаксис  

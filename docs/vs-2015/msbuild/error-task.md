@@ -1,7 +1,7 @@
 ---
 title: Задача Error | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a7579a448a113c51a58e492da6ea9e7e4ca9ede
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff957a54c27c4ae4860e31e4fb7001b7f831ab3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212723"
 ---
 # <a name="error-task"></a>Задача Error
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Ошибка задачи](https://docs.microsoft.com/visualstudio/msbuild/error-task).  
-  
   
 Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  
   

@@ -1,7 +1,7 @@
 ---
 title: Создание собственной начальной страницы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: 87195c318f6bdc04dc0cfde54c35577142661224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232080"
 ---
 # <a name="creating-your-own-start-page"></a>Создание собственной начальной страницы
 Настраиваемую начальную страницу можно создать с помощью шаблона проекта начальной страницы или путем создания пустой начальной страницы.  
@@ -61,7 +61,7 @@ ms.locfileid: "47557935"
   
 2.  Откройте файл StartPage.xaml.  
   
-3.  Удалить все содержимое страницы, оставив только внешние элементы xml и сетке <xref:System.Windows.Controls.Grid> элемент, таким образом, чтобы свой файл XAML аналогичный приведенному ниже.  
+3.  Удалите все содержимое страницы, оставив только внешние элементы XML и содержащий элемент сетки <xref:System.Windows.Controls.Grid>. В результате XAML-файл должен выглядеть так, как показано в примере ниже.  
   
     ```xaml
        <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -102,7 +102,7 @@ ms.locfileid: "47557935"
   
      Откроется работающая начальная страница. Чтобы увидеть изменения, необходимо закрыть экспериментальный экземпляр, повторно скопировать все измененные файлы, а затем снова открыть экспериментальный экземпляр.  
   
- Чтобы предоставить доступ к настраиваемой начальной странице, отправьте файл VSIX из каталога bin\debug на веб-сайт [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , на другой веб-сайт или в общую папку в интрасети. Дополнительные сведения см. в разделе [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+ Чтобы предоставить доступ к настраиваемой начальной странице, отправьте файл VSIX из каталога bin\debug на веб-сайт [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , на другой веб-сайт или в общую папку в интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   

@@ -1,7 +1,7 @@
 ---
 title: Учетные записи пользователей и обновления | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222431"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [учетные записи пользователей и обновления](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates).  
-  
 Среда Visual Studio сама по себе является интегрированной средой, связанной с другими средами. С помощью входа в среду вы получаете доступ ко всем службам, связанным с вашей учетной записью пользователя, а также всем учетным записям, связанным с этой учетной записью. Параметры вашей учетной записи переносятся при каждом использовании Visual Studio. Вы можете настроить уровни разрешений в определенном экземпляре Visual Studio для отдельных пользователей. Также Visual Studio сообщает вам о доступности какого-либо обновления для компонента вашей установки, например пакета SDK.  
   
 ## <a name="in-this-section"></a>Содержание раздела  

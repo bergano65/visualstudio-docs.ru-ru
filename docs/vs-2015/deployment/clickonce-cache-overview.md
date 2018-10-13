@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о кэше ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5fb0bcd8c589f8ade12f8da0c4151e1f2894dd1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217299"
 ---
 # <a name="clickonce-cache-overview"></a>Общие сведения о кэше ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Общие сведения о кэше ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-cache-overview).  
-  
 Все [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, являются ли они установлены локально или размещенного в сети, хранятся на клиентском компьютере в [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]приложения *кэша*. Объект [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] кэша — это семейство скрытых каталогов в каталоге локальные параметры папки Documents and Settings текущего пользователя. Этот кэш содержит файлы приложения, включая сборки, файлы конфигурации, приложения и параметры пользователя и каталог данных. Кэш также отвечает за перенос каталог данных приложения до последней версии. Дополнительные сведения о миграции данных см. в разделе [доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Предоставляя единое расположение для хранения приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] берет на себя задачи управления физической установкой приложения от пользователя. Кэш также помогает изолировать приложения путем хранения сборок и файлов данных для всех приложений и их разных версий отдельно друг от друга. Например, при обновлении [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, версия и ее ресурсы данных, поставляемых с их собственными каталогами в кэше.  

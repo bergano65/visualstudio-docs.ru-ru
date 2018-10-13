@@ -1,7 +1,7 @@
 ---
 title: Анализ качества приложений с помощью средств анализа кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1b62ac482d18bc8844045d90d32f4d48416daeca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216701"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Анализ качества приложений с помощью средств анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Анализ качества приложений с помощью средств анализа кода](https://docs.microsoft.com/visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools).  
-  
 В этом разделе  
  [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  Функция анализа управляемого кода Visual Studio позволяет получить такие сведения об управляемых сборках, как нарушение правил программирования и разработки, изложенные в руководствах по разработке Microsoft .NET Framework. В предупреждающих сообщениях указываются все проблемы, связанные с программированием и разработкой, и, по возможности, сведения о методах их устранения.  

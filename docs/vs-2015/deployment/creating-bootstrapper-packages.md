@@ -1,7 +1,7 @@
 ---
 title: Создание пакетов загрузчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208917"
 ---
 # <a name="creating-bootstrapper-packages"></a>Создание пакетов загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание пакетов загрузчика](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages).  
-  
 Программа установки — это общий установщик, который можно настроить на обнаружение и установку распространяемых компонентов, таких как файлы установщика Windows (.MSI) и исполняемые программы. Установщик также называется начальным загрузчиком. Он программируется с помощью набора XML манифестов, определяющих метаданные для управления установкой компонента.  
   
  Сначала начальный загрузчик проверяет, установлены ли необходимые компоненты. Если нет, то начальный загрузчик показывает лицензионные соглашения. Как только конечный пользователь примет условия лицензионного соглашения, начнется установка необходимых компонентов. Если все необходимые компоненты обнаружены, начальный загрузчик просто запустит установщик приложения.  
@@ -133,7 +131,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Диалоговое окно необходимых компонентов](../ide/reference/prerequisites-dialog-box.md)   
+ [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
  [Продукт и справочник по схемам пакета](../deployment/product-and-package-schema-reference.md)   
  [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](http://go.microsoft.com/fwlink/?LinkId=107537)
 
