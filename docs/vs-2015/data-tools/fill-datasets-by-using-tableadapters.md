@@ -1,7 +1,7 @@
 ---
 title: Заполнение наборов данных с помощью адаптера таблицы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251855"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнение наборов данных с помощью адаптера таблицы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [заполнения набора данных с помощью адаптера таблицы](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters).  
-  
   
 Компонент адаптера таблицы заполняет набор данных данными из базы данных, на основе один или несколько запросов или хранимых процедур, которые можно указать. Адаптеры таблиц можно также выполнить добавляет, обновления и удаления в базе данных, чтобы сохранить изменения, внесенные в набор данных. Можно также выполнять глобальные команды, которые не связаны с любой конкретной таблицы.  
   

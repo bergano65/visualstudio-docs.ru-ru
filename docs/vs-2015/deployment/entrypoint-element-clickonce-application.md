@@ -1,7 +1,7 @@
 ---
 title: '&lt;entryPoint&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255323"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; элемент (приложение ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;entryPoint&gt; элемент (приложение ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application).  
-  
 Идентифицирует сборку, которая должна быть выполнена, когда это [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение запускается на клиентском компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -61,15 +59,15 @@ ms.locfileid: "47572228"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `entryPoint` обязателен и находится в пространстве имен `urn:schemas-microsoft-com:asm.v2`. Может существовать только один `entryPoint` элементу, определенному в манифесте приложения.  
+ Элемент `entryPoint` является обязательным и находится в пространстве имен `urn:schemas-microsoft-com:asm.v2` . Может существовать только один `entryPoint` элементу, определенному в манифесте приложения.  
   
- `entryPoint` Элемент имеет следующий атрибут.  
+ Элемент `entryPoint` имеет перечисленные ниже атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`name`|Необязательный. Это значение не используется платформой .NET Framework.|  
   
- `entryPoint` содержит следующие элементы.  
+ У элемента`entryPoint` имеются перечисленные ниже элементы.  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  Обязательно. Роль `assemblyIdentity` и его атрибуты, определенные в [ \<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md).  
@@ -122,7 +120,7 @@ ms.locfileid: "47572228"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отображение предложений лампочки | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252503"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Пошаговое руководство. Отображение предложений лампочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отображение предложений лампочки](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions).  
-  
 Лампочки являются значков, используемых в редакторе Visual Studio, развернуть, чтобы отобразить набор действий, например исправления для проблем, обозначенных в анализаторов кода, встроенные или рефакторинга кода.  
   
  В редакторах Visual C# и Visual Basic можно также использовать платформы компилятора .NET («Roslyn») для записи и упаковки собственные анализаторы кода с действиями, которые автоматически отображают лампочки. Дополнительные сведения:  
@@ -228,14 +226,14 @@ ms.locfileid: "47573256"
   
 1.  В проекте, добавьте ссылку на Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll и набор **Копировать локально** для `False`.  
   
-2.  Создайте два класса с именем первого `UpperCaseSuggestedAction` и второй с именем `LowerCaseSuggestedAction`. В обоих классах реализован интерфейс <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Создайте два класса с именами `UpperCaseSuggestedAction` и `LowerCaseSuggestedAction`. В обоих классах реализован интерфейс <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Эти два класса похожи, за исключением того, что один из них вызывает <xref:System.String.ToUpper%2A> и другие вызовы <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.  
+     Эти два класса похожи за тем исключением, что один из них вызывает <xref:System.String.ToUpper%2A>, а другой вызывает <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.  
   
 3.  Добавьте следующие операторы using для этих классов:  
   
@@ -325,7 +323,7 @@ ms.locfileid: "47573256"
     }  
     ```  
   
-9. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> метод, заменив текст в диапазоне на эквивалентный символ верхнего регистра.  
+9. Реализуйте метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>, заменив текст в диапазоне на эквивалентный текст в верхнем регистре.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

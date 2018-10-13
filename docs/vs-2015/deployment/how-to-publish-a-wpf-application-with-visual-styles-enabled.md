@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: публикация приложения WPF с включенными визуальными стилями | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250215"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: публикация приложения WPF с поддержкой Visual стили](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled).  
-  
 Визуальные стили включить внешний вид стандартные элементы управления для меняться в зависимости от темы, выбранного пользователем. По умолчанию визуальные стили не включены для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальных стилей для приложения WPF и публикации решения приводит к ошибке. В этом разделе описывается устранение этой ошибки и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [наглядное представление стили](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Дополнительные сведения о сообщении об ошибке, см. в разделе [Устранение определенных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Чтобы устранить эту ошибку и опубликовать решение, необходимо выполнить следующие задачи:  

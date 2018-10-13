@@ -1,7 +1,7 @@
 ---
 title: Средства набора данных в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -56,18 +56,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d01dd2de60285d669f5a36a2f6ddf7a08449dad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254349"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Средства набора данных в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средства набора данных в Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio).  
-  
   
 ПРИМЕЧАНИЕ.]
 >  Наборы данных и связанные классы являются устаревших технологий .NET из спам, позволяют приложениям работать с данными в памяти, а приложения отключаются от базы данных. Они особенно полезны для приложений, которые позволяют пользователям изменять данные и сохранять изменения в базе данных. Несмотря на то, что наборы данных оказались очень успешной технологии, рекомендуется новых приложений .NET использовать Entity Framework. Entity Framework предоставляет более естественный способ работы с табличными данными как объектные модели, и он имеет более простой интерфейс программирования.  

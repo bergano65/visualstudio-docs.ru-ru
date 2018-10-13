@@ -1,7 +1,7 @@
 ---
 title: Для процессов IA64 отладка в смешанном режиме не поддерживается. | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3777ce079aea853400896408542380c5e2d16ef5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1c35a2801c79b4775b1e58b8c8c3c74c194fd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262682"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Для процессов IA64 отладка в смешанном режиме не поддерживается.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [для процессов IA64 отладка в смешанном режиме не поддерживается.](https://docs.microsoft.com/visualstudio/debugger/mixed-mode-debugging-for-ia64-processes-is-unsupported).  
-  
 Visual Studio не поддерживает отладку управляемого и машинного кода в процессах IA64 в смешанном режиме. Таким образом, при выполнении отладки переход из управляемого кода в неуправляемый невозможен (как и обратный переход).  
   
 ### <a name="workarounds"></a>Методы обхода проблемы  

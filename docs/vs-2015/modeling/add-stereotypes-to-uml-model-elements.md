@@ -1,7 +1,7 @@
 ---
 title: Добавление стереотипов к элементам модели UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570250"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259718"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Добавление стереотипов к элементам модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элементам модели стереотипы добавить для UML](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 Вы можете добавить стереотип в элемент модели UML, чтобы указать для него заметку и предоставить ему специальные свойства. Чтобы добавить стереотип в элемент модели, стереотип должен быть определен в профиле, который следует связать с пакетом или моделью, содержащей соответствующий элемент модели. Каждый стереотип можно добавить только для определенных видов элементов модели, таких как классы, варианты использования или компоненты UML.  
   
  Например, если вы хотите определить класс UML со стереотипом спецификации, необходимо создать его внутри пакета или модели, связанных со стандартным профилем L2.  

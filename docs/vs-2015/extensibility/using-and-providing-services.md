@@ -1,7 +1,7 @@
 ---
 title: Использование и предоставление служб | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facf0bb9968e3ffbc9a68eb8eee906f300eb1859
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2aca4c0d9ce518410250b8274d70e17d27ab859
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247615"
 ---
 # <a name="using-and-providing-services"></a>Использование и предоставление служб
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование и предоставление службы](https://docs.microsoft.com/visualstudio/extensibility/using-and-providing-services).  
-  
 Служба представляет собой контракт между двух пакетов VSPackage. Один пакет VSPackage предоставляет определенный набор интерфейсов для другого пакета VSPackage для использования. Например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предлагает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службы любой пакет VSPackage он загружает. Эта служба предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
  Пакеты VSPackage может предложить службы с помощью среды <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> интерфейс...  
@@ -58,5 +56,5 @@ ms.locfileid: "47573214"
  Описание распространенных проблем и представляет их решения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
+ [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
 

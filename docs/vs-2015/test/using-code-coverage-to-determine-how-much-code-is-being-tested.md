@@ -1,7 +1,7 @@
 ---
 title: Использование покрытия кода для определения объема тестируемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5062d19de4c76cd1cd1616cb0b5e0c98130cda30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253175"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование покрытия кода, чтобы определить, каким образом кода тестируется](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).  
-  
 Чтобы определить, какая часть кода проекта в действительности тестируется закодированными тестами, такими как модульные тесты, можно воспользоваться возможностью покрытия кода в Visual Studio. Для обеспечения эффективной защиты от ошибок тесты должны выполнять ("покрывать") большую часть кода.  
   
  Анализ покрытия кода может применяться и к управляемому (CLI), и к неуправляемому (машинному) коду.  

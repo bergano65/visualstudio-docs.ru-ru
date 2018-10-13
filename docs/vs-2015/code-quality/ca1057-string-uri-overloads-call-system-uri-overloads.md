@@ -1,7 +1,7 @@
 ---
 title: 'CA1057: Перегрузки строковых параметров URI вызывают перегрузки System.Uri | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7cb8f559e4290c27c7b241bc15daf6ff79298372
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e428d0a6353eb5f8f8827dcf5581a41c6ab9a467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263787"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: перегрузки строковых параметров URI вызывают перегрузки System.Uri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA1057: строка URI вызывают перегрузки System.Uri](https://docs.microsoft.com/visualstudio/code-quality/ca1057-string-uri-overloads-call-system-uri-overloads).
-
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|

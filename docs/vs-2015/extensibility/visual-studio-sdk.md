@@ -1,7 +1,7 @@
 ---
 title: Пакет SDK для Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7554bf39960a55a566b366abc328f54199bd4367
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260205"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пакет SDK для Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk).  
-  
 Пакет SDK для Visual Studio поможет вам расширить возможности Visual Studio или интегрировать новые возможности в Visual Studio. Вы можете предоставлять свои расширения другим пользователям, а также в коллекции Visual Studio. Ниже перечислены некоторые из способов расширения Visual Studio:  
   
 -   Добавление команд, кнопки, меню и других элементов пользовательского интерфейса в интегрированную среду разработки  

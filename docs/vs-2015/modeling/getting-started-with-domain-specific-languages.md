@@ -1,7 +1,7 @@
 ---
 title: Приступая к работе с доменными языками | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 128c96c6bd400f74ac698df550fdba70ffec2eed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251983"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Приступая к работе с доменными языками](https://docs.microsoft.com/visualstudio/modeling/getting-started-with-domain-specific-languages).  
-  
 В этом разделе приводятся основные концепции в определении и использовании доменный язык (DSL), созданных с помощью пакета SDK моделирования для Visual Studio.  
   
  Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [пакет и пакет SDK моделирования](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -115,7 +113,7 @@ ms.locfileid: "47557571"
   
      DSL, сборок и является в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Экспериментальный экземпляр принимает его параметры из отдельное поддерево реестра, где [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] зарегистрировать расширения для целей отладки. Обычный экземпляров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не имеют доступа к расширениям, зарегистрированы.  
+     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Экспериментальный экземпляр принимает его параметры из отдельное поддерево реестра, где [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] зарегистрировать расширения для целей отладки. Обычный экземпляров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не имеют доступа к расширениям, зарегистрированы.  
   
 3.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], откройте файл модели, с именем **теста** из **обозревателе решений**.  
   

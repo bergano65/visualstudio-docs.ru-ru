@@ -1,7 +1,7 @@
 ---
 title: Исходный код недоступен | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266088"
 ---
 # <a name="no-source-available"></a>Исходный код недоступен
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [нет источника доступных](https://docs.microsoft.com/visualstudio/debugger/no-source-available).  
-  
 Проект не содержит исходного кода для кода, который вы пытаетесь просмотреть. Обычная причина — двойной щелчок модуля, который не содержит исходный код в **Call Stack Window** или **окна "Потоки"**. Можно продолжить отладку, но невозможно использовать окно с исходным кодом для установки точек останова и выполнения других действий в этом месте. Если вам нужно установить точку останова, используйте **Дизассемблированный** вместо этого.  
   
  На страницах свойств решения можно поменять каталоги, в которых отладчик ищет исходные файлы, и указать отладчику пропускать выбранные исходные файлы. См. в разделе [отладка диалоговое окно страниц свойств источника файлы, общие свойства решения](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  

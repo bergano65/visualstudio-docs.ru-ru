@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262266"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 Объект [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания можно проверить ряд необходимых условий, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] для запуска приложения. К ним относятся требуемая Минимальная версия [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], тем не менее, не может выполнить любые из этих предварительных требований; Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее, почему произошел сбой установки.  
   
  Существует два способа установки необходимых компонентов. Вы можете установить их, используя приложение начальной загрузки. Кроме того можно указать URL-адрес поддержки для определенных необходимых компонентов, который отображается для пользователей в диалоговом окне, если не найден необходимый компонент. Страница ссылается на этот URL-адрес может содержать ссылки на инструкции по установке этот необходимый компонент. Если приложение не указывает URL-адрес поддержки для отдельного предварительного условия, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] отображает URL-адрес поддержки, указанной в манифесте развертывания для приложения в целом, если он определен.  

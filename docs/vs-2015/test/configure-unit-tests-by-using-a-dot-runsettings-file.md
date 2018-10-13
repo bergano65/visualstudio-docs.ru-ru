@@ -1,7 +1,7 @@
 ---
 title: Настройка модульных тестов с помощью файла .runsettings | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255623"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка модульных тестов с помощью файла .runsettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).  
-  
 Модульные тесты в Visual Studio можно настроить с помощью *RUNSETTINGS-файла. (Имя файла не имеет значения, если вы используете расширение RUNSETTINGS.) Например, можно изменить платформу .NET Framework, в которой выполняются тесты, каталог, в который отправляются результаты теста, и данные, собранные во время тестового запуска.  
   
  Если вам не требуется специальная конфигурация, *RUNSETTINGS-файл не нужен. Чаще всего он используется для настройки [объема протестированного кода](../test/customizing-code-coverage-analysis.md).  

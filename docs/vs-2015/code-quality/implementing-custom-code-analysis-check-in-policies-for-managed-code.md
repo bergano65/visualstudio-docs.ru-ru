@@ -1,7 +1,7 @@
 ---
 title: Реализация пользовательских политик анализом кода возврата для управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268974"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Реализация пользовательских политик возврата с анализом кода для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [реализации анализа кода пользовательских политик возврата для управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Анализ кода, политика возврата указывает набор правил, которые члены командного проекта необходимо запустить на исходный код, прежде чем он возвращается систему управления версиями. Корпорация Майкрософт предоставляет набор стандартных *наборов правил* этой группы правил анализа кода в функциональных областей. *Пользовательские политики возврата наборов правил* указать набор правил анализа кода, относящиеся к командному проекту. Набор правил хранится в RULESET-файл.  
   
  Политики возврата задаются на уровне командного проекта и заданной расположением RULESET-файла в дерево системы управления версиями. Существуют ограничения на расположение элемента управления версии набора настраиваемых правил политики группы отсутствуют.  

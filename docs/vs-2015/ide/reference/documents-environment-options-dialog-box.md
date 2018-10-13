@@ -1,7 +1,7 @@
 ---
 title: Страница "Документы", папка "Среда", диалоговое окно "Параметры" | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bdb4133e25e4b10933d901a7e607cd03113702ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246211"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Страница "Документы", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документы, среда, диалоговое окно "Параметры"](https://docs.microsoft.com/visualstudio/ide/reference/documents-environment-options-dialog-box).  
-  
   
 Используйте эту страницу диалогового окна **Параметры** для управления отображением документов в интегрированной среде разработки (IDE), а также внешними изменениями, вносимыми в документы и файлы. Чтобы перейти к этому диалоговому окну, щелкните пункт **Параметры** в меню **Сервис**, а затем разверните узел **Среда** и выберите пункт **Документы**. Если страница **Документы** отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.  
   

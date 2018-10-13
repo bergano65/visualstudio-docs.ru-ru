@@ -1,7 +1,7 @@
 ---
 title: Руководство по окну справки для администраторов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256962"
 ---
 # <a name="help-viewer-administrator-guide"></a>Руководство администратора Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [руководство администратора средства просмотра справки](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide).  
-  
 Средство просмотра справки позволяет управлять локальными установленными копиями справки для сетевых сред с доступом к Интернету или без него. Локальное содержимое справки настраивается для каждого компьютера. По умолчанию пользователи должны иметь права администратора для обновления своей локальной установленной справки.  
   
  Если сетевая среда позволяет клиентам получить доступ в Интернет, средство просмотра справки позволяет выполнять скрипты командной строки, чтобы развертывать локальное содержимое справки из Интернета.  

@@ -1,7 +1,7 @@
 ---
 title: Построение ClickOnce-приложений из командной строки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271036"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [построение ClickOnce-приложений из командной строки](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line).  
-  
 В [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], можно построить проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле, можно перестроить проект, созданный с помощью [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] установлен. Благодаря этому можно воспроизвести с помощью автоматизированного процесса сборки, например, при построении центра лабораторий или с помощью расширенные методы написания сценариев вне области построения самого проекта.  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>Использование MSBuild для воспроизведения развертывания приложений ClickOnce  

@@ -1,7 +1,7 @@
 ---
 title: Скорость реагирования пользовательского интерфейса HTML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269104"
 ---
 # <a name="html-ui-responsiveness"></a>Скорость реагирования ИП HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ HTML скорости отклика пользовательского интерфейса в приложениях UWP](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness).  
-  
 В этом разделе описаны способы изолирования проблем производительности в приложения с помощью профилировщика скорости реагирования ИП — средства производительности, доступного для универсальных приложений Windows.  
   
  Профилировщик отклика пользовательского интерфейса позволяет выявить проблемы с откликом пользовательского интерфейса или побочные эффекты платформы, которые обычно возникают со следующими симптомами.  

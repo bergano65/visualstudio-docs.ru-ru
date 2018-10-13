@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Создание фрагмента кода | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2827b81c15a7ca9eb402c228cfa54635c9fcf2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572043"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267752"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: создание фрагмента кода](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-code-snippet).  
-  
 Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Можно добавить фрагмент в папку установки Visual Studio с помощью кнопки импорта на диспетчере фрагментов кода (**инструменты/Диспетчер фрагментов кода**).  
   
 > [!TIP]

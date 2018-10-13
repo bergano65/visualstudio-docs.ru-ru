@@ -1,7 +1,7 @@
 ---
 title: Вывод вкладки, сообщения "диалогового окна" Параметры "| Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e2e8d33df976944259f431430bb3e491a1acf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f4604754dcbb0d250fb14188a2fa3cc889a03f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247994"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Вкладка "Вывод" диалогового окна "Параметры сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вкладка «Вывод», диалоговое окно "Параметры сообщения"](https://docs.microsoft.com/visualstudio/debugger/output-tab-message-options-dialog-box).  
-  
 Используйте **вывода** tab, чтобы указать, какие данные из каждого сообщения в список в [представления сообщений](../debugger/messages-view.md). Для отображения [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), выберите **сообщений журнала** из **Spy** меню.  
   
  Следующие параметры доступны на **вывода** вкладке:  

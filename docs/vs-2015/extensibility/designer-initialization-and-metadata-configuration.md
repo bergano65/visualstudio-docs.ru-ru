@@ -1,7 +1,7 @@
 ---
 title: Инициализация конструктора и конфигурация метаданных | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260894"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Инициализация конструктора и конфигурация метаданных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [инициализации конструктора и конфигурация метаданных](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration).  
-  
 Манипуляции метаданных и фильтрация атрибутов, связанных с конструктором или конструктор компонентов предоставляет механизм для приложений определить, какие средства используются в определенный конструктором для обработки разных <xref:System.Type> объектов (таких как структуры данных классы или графический сущностей), когда доступен конструктор, и как интегрированной среде разработки Visual Studio настроена для поддержки конструктора (для экземпляра, который **элементов** вкладки или категории доступна).  
   
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Предоставляет несколько механизмов для упрощения управления инициализации конструктора или конструктор компонентов и манипуляции метаданных пакетом VSPackage.  

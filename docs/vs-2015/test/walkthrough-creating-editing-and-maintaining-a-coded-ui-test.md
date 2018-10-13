@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c438d507a404f75e77c7a4d9434b273a9d5c5876
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257534"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: создание, изменение и обслуживание закодированного теста пользовательского интерфейса](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test).  
-  
 В этом пошаговом руководстве создается простое приложение Windows Presentation Foundation (WPF), чтобы с его помощью продемонстрировать создание, редактирование и обслуживание закодированного теста пользовательского интерфейса. В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.  
   
 ## <a name="prerequisites"></a>Предварительные требования  

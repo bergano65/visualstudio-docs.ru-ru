@@ -1,7 +1,7 @@
 ---
 title: Страница "Подписывание" в конструкторе проектов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eef35adac40b51e1ec46404d9b0da5cbe22f7509
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263949"
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [страница подписывания, конструктор проектов](https://docs.microsoft.com/visualstudio/ide/reference/signing-page-project-designer).  
-  
   
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).  
   

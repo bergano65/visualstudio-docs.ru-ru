@@ -1,7 +1,7 @@
 ---
 title: Определение обработчика жестов на схеме моделирования | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248088"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение обработчика жестов на схеме моделирования](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 В Visual Studio можно определить команды, которые выполняются, когда пользователь дважды щелкает элементы на схеме UML или перетаскивает элементы на эту схему. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) и распространить их другим пользователям Visual Studio.  
   
  Так как это поведение уже является встроенным для типа схемы и типа элемента, который нужно перетащить, его расширение и перезапись могут быть невозможны.  
   
 ## <a name="requirements"></a>Требования  
- См. в разделе [требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -59,7 +57,7 @@ ms.locfileid: "47592700"
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Создание отдельного проекта библиотеки классов (DLL) для обработчика жестов  
   
-1.  Создайте проект библиотеки классов либо в новом решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], либо в уже существующем.  
+1.  Создайте проект библиотеки классов либо в новом решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , либо в уже существующем.  
   
     1.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
@@ -79,7 +77,7 @@ ms.locfileid: "47592700"
   
      `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md).  
+     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md).  
   
 3.  Добавьте файл класса в проект и вставьте в него указанный ниже код.  
   
@@ -242,17 +240,17 @@ ms.locfileid: "47592700"
   
 1.  Нажмите клавишу **F5**или выберите в меню **Отладка** пункт **Начать отладку**.  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
+     **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
   
     -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
   
-    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка, содержащаяся в **запуск внешней программы** поле — это полный путь [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:  
+    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь в том, что строка в поле Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; обычно она имеет следующий вид:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте проект моделирования и схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса обработчика жестов.  
+2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса обработчика жестов.  
   
 3.  Дважды щелкните в любом месте схемы. Будет вызван обработчик двойного щелчка.  
   
@@ -279,7 +277,7 @@ ms.locfileid: "47592700"
 |-|-|  
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Чтобы разрешить перетаскивание исходного элемента, на который ссылается `true` , на данный целевой объект, этот метод должен возвращать значение `dragEvent` .<br /><br /> Этот метод не должен вносить изменения в модель. Метод должен работать быстро, так как используется для определения состояния указателя по мере того, как пользователь перемещает мышь.|  
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Обновите модель на основе исходного объекта, на который ссылается `dragEvent`, и целевого объекта.<br /><br /> Метод вызывается, когда пользователь отпускает кнопку мыши после перетаскивания.|  
-|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` — это фигура, которую дважды щелкнул пользователь.|  
+|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` — это фигура, которую дважды щелкнул пользователь.|  
   
  Можно создать обработчики, способные принимать не только UML, но и другие элементы, такие как файлы, узлы в представлении классов .NET и т. д. Пользователь может перетащить любые из этих элементов на схему UML при условии, что создан метод `OnDragDrop` , который может декодировать сериализованную форму этих элементов. Методы декодирования различаются в зависимости от типа элемента.  
   
@@ -327,7 +325,7 @@ ms.locfileid: "47592700"
      Если исходным объектом является UML элемент, перетащенный из обозревателя моделей UML или из другой схемы UML, см. [элементов модели получения UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Написание кода методов  
- Дополнительные сведения о написании кода для чтения и обновления модели см. в разделе [программирование с UML API](../modeling/programming-with-the-uml-api.md).  
+ Более подробную информацию о создании кода для чтения и обновления модели см. в разделе [Programming with the UML API](../modeling/programming-with-the-uml-api.md).  
   
  Сведения о доступе к сведения о модели в операции перетаскивания, см. в разделе [элементов модели получения UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -366,7 +364,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 2.  Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.  
   
-     На конечном компьютере должен быть один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , указанной в **source.extension.vsixmanifest**.  
+     На конечном компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , заданный в **source.extension.vsixmanifest**.  
   
 3.  На целевом компьютере откройте файл **.vsix** .  
   

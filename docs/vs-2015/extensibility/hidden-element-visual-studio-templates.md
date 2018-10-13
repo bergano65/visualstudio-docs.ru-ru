@@ -1,7 +1,7 @@
 ---
 title: Скрыт элемент (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee63ae5e1573e86bf3b53e4543cf1398f819f018
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be8ff4e506c03d587f788a1fb7dbefd4efc09365
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263371"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Элемент Hidden (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [скрыт элемент (шаблоны Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/hidden-element-visual-studio-templates).  
-  
 Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
  \<VSTemplate >  
