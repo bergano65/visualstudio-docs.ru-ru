@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Установка имени потока в машинном коде | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b369aaef3134c64ddabbc03d8f7391bcdea3647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191689"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имен потока в машинном коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Установка имени потока в машинном коде](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-native-code).  
-  
 Для задания имени потока в программе используйте функцию `SetThreadName` , как показано в следующем примере. Обратите внимание, что имя потока копируется в поток, чтобы можно было освободить память для параметра `threadName` .  
   
 ## <a name="example"></a>Пример  

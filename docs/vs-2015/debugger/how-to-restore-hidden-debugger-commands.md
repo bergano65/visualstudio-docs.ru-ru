@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: восстановление скрытых команд отладчика | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61021e902befc29d90505e3e9c28f1b9dde3ded3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc832be84dfaef1b4f7d47cd2c18cb2526c43170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187135"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Практическое руководство. Восстановление скрытых команд отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: восстановление скрытых команд отладчика](https://docs.microsoft.com/visualstudio/debugger/how-to-restore-hidden-debugger-commands).  
-  
 При установке Visual Studio будет предложено выбрать набор параметров IDE по умолчанию для вашего основного языка программирования. Параметры IDE по умолчанию для некоторых языков могут скрыть определенные команды отладчика.  
   
  Если нужно использовать скрытую ими возможность отладчика, можно добавить команду обратно в меню с помощью следующей процедуры.  

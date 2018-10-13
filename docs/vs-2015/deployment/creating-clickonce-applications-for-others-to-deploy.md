@@ -1,7 +1,7 @@
 ---
 title: Создание приложений ClickOnce для других пользователей для развертывания | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b8f4736066501324d5428fd2634dfacd8c6537a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181523"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Создание приложений ClickOnce для развертывания другими
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание приложений ClickOnce для других пользователей для развертывания](https://docs.microsoft.com/visualstudio/deployment/creating-clickonce-applications-for-others-to-deploy).  
-  
 Не все разработчики, создающие развертывания ClickOnce планируете развертывать приложения сами. Многие из них достаточно упаковать свои приложения с помощью ClickOnce, который затем передается файлы клиенту, например большой корпорации. Клиент становится ответственным за размещение приложения в своей сети. В этом разделе рассматриваются некоторые из проблем, возникающих в таких развертываний в версиях .NET Framework, предшествовавших версии 3.5. Затем он описывает новое решение, предоставляемое с помощью новой функции «использовать манифест для доверия» в .NET Framework 3.5. В заключение приводятся рекомендуемые стратегии создания развертываний ClickOnce для клиентов, которые все еще используете более ранние версии платформы .NET Framework.  
   
 ## <a name="issues-involved-in-creating-deployments-for-customers"></a>Проблемы, связанные с созданием развертываний для клиентов  

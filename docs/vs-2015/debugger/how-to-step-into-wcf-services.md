@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: пошаговая отладка служб WCF | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b779c8bc2e6da3975f1f70265482c706c9141375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 205dc10829227d2bb2f151687d7b4d4defbe03fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184957"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Практическое руководство. Пошаговая отладка служб WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: пошаговая отладка служб WCF](https://docs.microsoft.com/visualstudio/debugger/how-to-step-into-wcf-services).  
-  
 В [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] можно выполнить пошаговую отладку службы WFC. Если служба WFC находится в том же решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], что и клиент, можно задавать точки останова внутри службы WCF.  
   
  Для начала работы необходимо включить отладку в файле app.config или Web.config. Сведения о том, как включить отладку и ограничениях на пошаговую отладку в службах WCF, см. в разделе [ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md).  

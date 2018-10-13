@@ -1,7 +1,7 @@
 ---
 title: Устаревший код сообщения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e57eb23dc98cee800a2f25b685b001d3232d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93d9b6900ed3e1331f61495e4e80b96d446d410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179625"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Предупреждение о необходимости обновления кода - диалоговое окно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [устаревший код сообщения](https://docs.microsoft.com/visualstudio/debugger/stale-code-warning-dialog-box).  
-  
 Это диалоговое окно отображается после внесения изменений в машинный код, который **изменить и продолжить** не удалось немедленно применить. В результате часть машинного кода в текущем кадре стека является устаревшей. Дополнительные сведения см. в разделе [как: работа с устаревшим кодом](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Больше не показывать это диалоговое окно**  

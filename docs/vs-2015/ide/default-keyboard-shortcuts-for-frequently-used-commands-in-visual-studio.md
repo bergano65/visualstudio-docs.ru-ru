@@ -1,7 +1,7 @@
 ---
 title: Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f82e7ff45d21639c673ef36eff603a0c8a567d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89b7734e894d834698fc36aacde386691c312263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181828"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сочетания клавиш по умолчанию для часто используемых команд в Visual Studio](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio).  
-  
 Для доступа к часто используемым командам Visual Studio можно использовать следующие сочетания клавиш по умолчанию. Полный список команд, которые имеют сочетания клавиш по умолчанию, см. в разделе [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]

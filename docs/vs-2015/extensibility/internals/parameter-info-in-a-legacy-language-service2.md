@@ -1,7 +1,7 @@
 ---
 title: Сведения о параметрах в языковой службы прежних версий2 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200035"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сведения о параметрах в языковой службы прежних версий2](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2).  
-  
 Сведения о параметрах IntelliSense — tooltip, отображающий сигнатура метода, когда пользователь вводит в списке параметров начального символа (обычно открывающей круглой скобкой) для списка параметров метода. Каждый параметр вводится и имеет тип разделителя параметра (обычно запятой), подсказка обновляется для отображения следующего параметра полужирным шрифтом.  
   
  Классы управляемых пакетов framework (MPF) поддерживает управление сведения о параметрах всплывающей подсказки. Средство синтаксического анализа определяется, параметр запуска, параметр рядом, и параметр конечных символов и его необходимо указать список сигнатур методов и связанными с ними параметрами.  

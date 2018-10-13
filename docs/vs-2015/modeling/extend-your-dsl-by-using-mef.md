@@ -1,7 +1,7 @@
 ---
 title: Расширение доменного языка с помощью MEF | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 378aab6aaac3c45dc0a912dc62f5ebf55fffd46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194139"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширение доменного языка с помощью MEF](https://docs.microsoft.com/visualstudio/modeling/extend-your-dsl-by-using-mef).  
-  
 Доменный язык (DSL) можно расширить с помощью Managed Extensibility Framework (MEF). Вы или другие разработчики смогут создавать расширения для DSL без изменения определения DSL и программного кода. К таким расширениям относятся команды меню, обработчики перетаскивания и вставки и проверки. Пользователи будут иметь возможность установки вашего DSL, а затем при необходимости установить расширения для него.  
   
  Кроме того при включении MEF в DSL, он может быть проще писать некоторые функции вашего DSL, даже если все они создаются вместе с DSL.  

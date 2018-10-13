@@ -1,7 +1,7 @@
 ---
 title: T4 Вывода директива | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0eaa2d8e3fc257e14e04bad3cac706b8a3bc92a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198527"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [директива Output T4](https://docs.microsoft.com/visualstudio/modeling/t4-output-directive).  
-  
 В текстовых шаблонах [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] директива `output` используется для определения расширения файла и кодировки преобразованного файла.  
   
  Например если ваш [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект содержит файл шаблона с именем **MyTemplate.tt** которого содержит следующую директиву:  

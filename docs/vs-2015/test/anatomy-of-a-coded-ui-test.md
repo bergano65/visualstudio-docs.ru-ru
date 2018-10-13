@@ -1,7 +1,7 @@
 ---
 title: Составляющие закодированного теста пользовательского интерфейса | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c9fea94f0298212bb8c3909d4227936437b8f24c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202752"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [составляющие закодированного теста пользовательского интерфейса](https://docs.microsoft.com/visualstudio/test/anatomy-of-a-coded-ui-test).  
-  
 При создании закодированного теста пользовательского интерфейса в проекте закодированного теста пользовательского интерфейса к решению добавляются несколько файлов. В этом разделе мы будем использовать пример закодированного теста пользовательского интерфейса для исследования этих файлов.  
   
  **Требования**  

@@ -1,7 +1,7 @@
 ---
 title: Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38374893aea62af1b664065edf0ca9195f3dd301
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189297"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Диалоговое окно "Параметры",  проекты и решения, сборка и запуск
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [диалоговое окно "Параметры", проекты и решения, построения и выполнения](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run).  
-  
   
 В этом диалоговом окне можно указать максимальное число проектов Visual C++ или Visual C#, которые могут одновременно создаваться, некоторые поведения построения по умолчанию, а также некоторые параметры журнала построения. Чтобы открыть **параметры** диалоговое окно, выберите **средства**, **параметры** в строке меню. Для доступа к этому набору параметров, разверните **проекты и решения**, а затем выберите **сборка и запуск**.  
   

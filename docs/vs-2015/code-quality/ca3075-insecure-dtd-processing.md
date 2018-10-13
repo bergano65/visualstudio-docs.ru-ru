@@ -1,7 +1,7 @@
 ---
 title: 'CA3075: Обработка небезопасных DTD | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201582"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA3075: обработка небезопасных DTD](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -36,7 +33,7 @@ ms.locfileid: "47591261"
  Если вы используете небезопасные экземпляры <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> или ссылаетесь на источники внешних сущностей, средство синтаксического анализа может принять недоверенные входные данные и раскрыть конфиденциальную информацию злоумышленникам.
 
 ## <a name="rule-description"></a>Описание правила
- Объект [определения типа документа (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) является одним из двух способов определения допустимости документа, синтаксический анализатор XML в соответствии с определением [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных [раскрытие информации](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) угроз, которые могут привести к [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) атак. Это правило активируется, если:
+ [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
 
 -   обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
 
@@ -70,7 +67,7 @@ ms.locfileid: "47591261"
 
  .NET 4 и более поздней версии
 
--   Не включайте dtdprocessing при работе с недоверенными источниками, задав свойства DtdProcessing значение [запретить или игнорировать](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+-   Не включайте DtdProcessing при работе с недоверенными источниками, задав для свойства  DtdProcessing  значение [Запретить или игнорировать](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
 
 -   Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.
 

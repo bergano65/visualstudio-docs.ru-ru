@@ -1,7 +1,7 @@
 ---
 title: 'Схемы классов UML: Рекомендации | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181783"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-схемы классов: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [UML-схемы классов: правила](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 В Visual Studio, можно использовать *UML-схему классов* для описания типов данных и их связей отдельно от реализации. Схема позволяет сконцентрироваться на логических аспектах классов, а не их реализации.  
   
  Чтобы создать схему классов UML на **архитектура** меню, выберите **создать схему UML или схему слоев**.  

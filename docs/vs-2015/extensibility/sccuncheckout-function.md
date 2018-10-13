@@ -1,7 +1,7 @@
 ---
 title: Функция SccUncheckout | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b74e4c2ebc672af11133c0afd1237cc27169ca6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f5c96312e2b18f1f428c1a912aee6a23bea728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185631"
 ---
 # <a name="sccuncheckout-function"></a>Функция SccUncheckout
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [функция SccUncheckout](https://docs.microsoft.com/visualstudio/extensibility/sccuncheckout-function).  
-  
 Эта функция отменяет предыдущей операции извлечения, благодаря чему восстанавливается содержимое выбранного файла или файлов в состояние до извлечения. Все изменения, внесенные в файл с момента извлечения будут утеряны.  
   
 ## <a name="syntax"></a>Синтаксис  

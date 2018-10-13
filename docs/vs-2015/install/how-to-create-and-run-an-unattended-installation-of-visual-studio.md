@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание и выполнение автоматической установки Visual Studio | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173853"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "47570263"
 Приложение установки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно запустить в режиме автоматической установки (т. е. настроенной тихой установки) через интрасеть вместо выполнения установки с носителя, например DVD-диска. В этом разделе описывается Подготовка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для этого типа установки из общей сетевой папки.  
   
 ## <a name="creating-a-network-image"></a>Создание сетевого образа  
- Создайте сетевой образ носителя [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Создайте сетевой образ носителя [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 #### <a name="to-create-a-network-image"></a>Создание сетевого образа  
   
@@ -60,7 +60,7 @@ ms.locfileid: "47570263"
 >  Еще один способ — просто пропустить необязательный дочерний элемент. Иными словами, не включайте элементы с пометкой "Selected="no"". Однако все элементы с пометкой "Selected="yes"" необходимо по-прежнему поместить в конце файла AdminDeployment.xml.  
   
 > [!IMPORTANT]
->  Во время установки компьютер может автоматически перезагружаться один или несколько раз. После перезапуска необходимо снова войти в систему с той же учетной записью пользователя, с которой вы входили для выполнения установки до перезагрузки компьютера. Автоматических перезагрузок можно избежать, если предварительно установить необходимые компоненты до запуска автоматической установки. Дополнительные сведения см. в подразделе под названием «Установка без перезапуска» в [руководства администратора Visual Studio](../install/visual-studio-administrator-guide.md).  
+>  Во время установки компьютер может автоматически перезагружаться один или несколько раз. После перезапуска необходимо снова войти в систему с той же учетной записью пользователя, с которой вы входили для выполнения установки до перезагрузки компьютера. Автоматических перезагрузок можно избежать, если предварительно установить необходимые компоненты до запуска автоматической установки. Более подробную информацию см. в подразделе под названием "Установка без перезапуска" в разделе [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
   
  Схема файла AdminDeployment содержит следующие элементы:  
   
@@ -111,7 +111,7 @@ ms.locfileid: "47570263"
   
 -   Откройте **Панель управления**и выберите **Программы и компоненты**.  
   
--   Выберите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а затем выберите **изменение**.  
+-   Выберите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], затем выберите **Изменить**.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Изменение параметров AdminDeployment на клиентском компьютере после установки Visual Studio  
   

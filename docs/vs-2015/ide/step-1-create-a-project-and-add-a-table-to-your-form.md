@@ -1,7 +1,7 @@
 ---
 title: Шаг 1. Создание проекта и добавление таблицы в форму | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204468"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Шаг 1. Создание проекта и добавление таблицы в форму
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 1: Создание проекта и Добавление таблицы в форму](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form).  
-  
 Первым шагом создания игры "Подбери пару!" является создание проекта и добавление таблицы в форму. Таблица помогает равномерно распределить значки по сетке 4x4. Можно также задать несколько свойств, чтобы улучшить внешний вид игрового поля.  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Создание проекта и добавление таблицы в форму  

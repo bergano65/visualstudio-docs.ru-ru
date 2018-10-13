@@ -1,7 +1,7 @@
 ---
 title: Просмотр структуры кода | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49f424e62517c42ac7a48fcdeb4d16c25f70eba1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173619"
 ---
 # <a name="viewing-the-structure-of-code"></a>Просмотр структуры кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Просмотр структуры кода](https://docs.microsoft.com/visualstudio/ide/viewing-the-structure-of-code).  
-  
 Вы можете проверить объекты и элементы в проектах Visual Studio, а также объекты и элементы в компонентах .NET Framework, компонентах COM, библиотеках динамической компоновки (DLL) и библиотеках типов (TLB).  
   
  В следующих разделах данного документа описываются различные окна структуры кода.  

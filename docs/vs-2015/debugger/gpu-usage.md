@@ -1,7 +1,7 @@
 ---
 title: Использование GPU | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a917f8c9b775a8dbd85554bd703aaa9e1ad10f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194132"
 ---
 # <a name="gpu-usage"></a>Использование GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [GPU Usage](https://docs.microsoft.com/visualstudio/profiling/gpu-usage).  
-  
 Используйте инструмент учета использования GPU в концентраторе производительности и диагностики Visual Studio, чтобы получить более полное представление о высокоуровневом использовании оборудования в вашем приложении Direct3D. С его помощью можно определить, привязана ли производительность приложения к ЦП или GPU, и понять, как более эффективно использовать оборудование платформы. Инструмент учета использования GPU поддерживает приложения, использующие Direct3D 12, Direct3D 11 и Direct3D 10 и не поддерживает другие графические API, например Direct2D или OpenGL.  
   
  Это окно **GPU Usage Report** (Отчет об использовании GPU):  

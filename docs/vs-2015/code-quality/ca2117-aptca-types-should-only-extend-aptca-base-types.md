@@ -1,7 +1,7 @@
 ---
 title: 'CA2117: APTCA-типы должны расширять только базовые APTCA-типы | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b14aca0631d45962f2fe1139157e7b3c779681e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171461"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-типы должны расширять только базовые APTCA-типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA2117: APTCA-типы должны расширять только базовые APTCA-типы](https://docs.microsoft.com/visualstudio/code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types).
-
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|

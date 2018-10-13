@@ -1,7 +1,7 @@
 ---
 title: Выполнение модульных тестов для расширений UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205073"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Выполнение модульных тестов для расширений UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [выполнение модульных тестов для расширений UML](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Чтобы сохранить стабильность кода при последующих изменениях, рекомендуется создать модульные тесты и выполнить их в составе обычного процесса сборки. Дополнительные сведения см. в статье [Модульное тестирование кода](../test/unit-test-your-code.md). Чтобы настроить тесты для расширений моделирования Visual Studio, вам потребуются некоторые основные сведения. В общем процедура включает перечисленные ниже задачи.  
   
 -   [Настройка модульного теста для расширений VSIX](#Host)  
@@ -51,7 +49,7 @@ ms.locfileid: "47563310"
  Пример модульного тестирования расширения UML можно найти в галерее примеров кода на странице [UML — быстрый текстовый ввод](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Требования  
- См. в разделе [требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -66,7 +64,7 @@ ms.locfileid: "47563310"
   
     2.  **Проект модульного теста.** Дополнительные сведения см. в статье [Модульное тестирование кода](../test/unit-test-your-code.md).  
   
-2.  Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которое содержит проект моделирования UML. Вы будете использовать это решение как исходное состояние тестов. Его необходимо отделить от решения, в котором создано расширение UML и его модульные тесты. Дополнительные сведения см. в разделе [UML Создание проектов и схем моделирования](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2.  Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которое содержит проект моделирования UML. Вы будете использовать это решение как исходное состояние тестов. Его необходимо отделить от решения, в котором создано расширение UML и его модульные тесты. Дополнительные сведения см. в разделе [UML Создание проектов и схем моделирования](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 3.  **В проекте расширения UML**внесите изменения в CSPROJ-файл в текстовом режиме и убедитесь, что в следующих строках отображается значение `true`:  
   

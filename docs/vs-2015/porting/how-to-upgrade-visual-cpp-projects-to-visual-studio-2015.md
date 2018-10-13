@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: обновление проектов Visual C++ для Visual Studio 2015 | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8fcc3e835e2a8cb6613dc78e67383f534f97f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188575"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Практическое руководство. Обновление проектов Visual C++ до Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "47571352"
   
  Если вы не получили запрос на обновление проекта, возможно, не нужно ничего предпринимать для обновления проекта.  
   
--   Если проект (VCPROJ-файл) был создан в версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], более ранней, чем [!INCLUDE[vs2010](../includes/vs2010-md.md)], необходимо обновить проект.  
+-   Если проект (VCPROJ-файл) был создан в версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , более ранней, чем [!INCLUDE[vs2010](../includes/vs2010-md.md)], необходимо обновить проект.  
   
 -   Если проект (VCXPROJ-файл) создан в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], возможны два варианта.  
   
-    -   Можно пропустить обновление. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] загружает проект, не внося никаких изменений, если имеется доступ к средствам Visual C++ в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] с пакетом обновления 1 (SP1), [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Доступ к указанным средствам можно предоставить, установив версию Visual Studio, в которой был создан проект, на той же машине, где установлена [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Дополнительные сведения см. в разделе [Установка версий Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).  
+    -   Можно пропустить обновление. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] загружает проект, не внося никаких изменений, если имеется доступ к средствам Visual C++ в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] с пакетом обновления 1 (SP1), [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Доступ к указанным средствам можно предоставить, установив версию Visual Studio, в которой был создан проект, на той же машине, где установлена [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Для получения дополнительной информации см. [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).  
   
     -   Проект можно обновить, разрешив [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] внести изменения, описанные далее в этом разделе. Если в решении имеется более одного проекта Visual C++, необходимо обновить все проекты.  
   
@@ -52,7 +52,7 @@ ms.locfileid: "47571352"
   
 -   Меняет проект так, что в нем используются библиотеки и компилятор [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] (PlatformToolset = VisualStudio v140).  
   
--   Для [!INCLUDE[cppcli](../includes/cppcli-md.md)] проекты, TargetFrameworkVersion заменяется на .NET Framework 4.5.2.  
+-   Для проектов [!INCLUDE[cppcli](../includes/cppcli-md.md)] TargetFrameworkVersion заменяется на .NET Framework 4.5.2.  
   
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Продолжение работы с пользовательским набором PlatformToolset  
  Если требуется работать с пользовательским набором PlatformToolset в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], набор инструментов должен находиться в папке %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x86 или в папке %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x64. Сведения о создании пользовательского набора PlatformToolset см. в разделе [Настройка для различных версий для C++](http://go.microsoft.com/fwlink/?LinkId=248587) в блоге группы Visual C++.  

@@ -1,7 +1,7 @@
 ---
 title: Обновление приложения (JavaScript) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca647572eac68dcf70d21b7ed687212a0229568f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c38083a1a8e0255891b29ae23e5cf36d066e27a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180574"
 ---
 # <a name="refresh-an-app-javascript"></a>Обновление приложения (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обновление приложения (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/refresh-an-app-javascript).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
  Внесения изменений в код во время отладки, а затем обновите app Store, с использованием JavaScript, нажав **обновить Windows приложение** , нажмите кнопку **Отладка** панели инструментов. Нажатие этой кнопки перезапускает приложение без остановки и перезапуска отладчика. Возможность обновления позволяет вносить изменения в код HTML, CSS и JavaScript и сразу видеть результат. Эта возможность поддерживается как для приложений Магазина Windows, так и для приложений Магазина Windows Phone.  

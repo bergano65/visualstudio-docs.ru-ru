@@ -1,7 +1,7 @@
 ---
 title: Создание обработчиков директив текстовых шаблонов T4 пользовательских | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176934"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание пользовательских обработчиков текстовых шаблонов T4 директива](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors).  
-  
 *Процесс преобразования текстового шаблона* принимает *текстового шаблона* файл на входе и создает текстовый файл на выходе. *Модуль преобразования текстового шаблона* элементов управления, процесс, а также модуль взаимодействует с узлом преобразования текстового шаблона и один или несколько текстового шаблона *процессоры директив* для завершения процесс. Дополнительные сведения см. в разделе [процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md).  
   
  Для создания пользовательского процессора директив создается класс, наследующий <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> либо <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

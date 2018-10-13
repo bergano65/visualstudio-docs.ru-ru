@@ -1,7 +1,7 @@
 ---
 title: Создание и управление ими модальные диалоговые окна | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49db22686481abd824b94178c854d681a1373db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177259"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Создание модальных диалоговых окон и управление ими
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание и управление модальные диалоговые окна](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
-  
 При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно окна отключен во время отображения диалогового, а затем повторно включить родительского окна, после закрытия окно. Если этого не сделать, появляется сообщение об ошибке: «Microsoft Visual Studio не может завершить работу модального диалогового окна является активным. Закройте это окно и повторите попытку.»  
   
  Это можно сделать двумя способами. Если диалоговое окно WPF, рекомендуется наследование из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем вызвать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> отображать диалоговое окно. После этого вы не обязательно должны управлять модальное состояние родительского окна.  

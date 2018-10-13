@@ -1,7 +1,7 @@
 ---
 title: С помощью модели автоматизации | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da79ac654f37b8f9fd9ceaa1eac3df09204f7196
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51579a61cad76cd3164a8ddce739511e7a81d622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203181"
 ---
 # <a name="using-the-automation-model"></a>Использование модели автоматизации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [с помощью модели автоматизации](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-automation-model).  
-  
 После подключения VSPackage в службу автоматизации, можно получить свойства и методы, вызвав <xref:EnvDTE.DTEClass.GetObject%2A> метод <xref:EnvDTE._DTE> объекта, передав строку, представляющую объект, который нужно получить.  
   
 ## <a name="obtaining-project-objects"></a>Получение объектов проекта  

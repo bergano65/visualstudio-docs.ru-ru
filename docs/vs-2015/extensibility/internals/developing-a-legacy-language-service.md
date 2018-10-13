@@ -1,7 +1,7 @@
 ---
 title: Разработка языковой службы прежних | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77ec89cb7c9e2b62bc31dce0763ea5fac419e23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 253bd334abd15fc19b1937c7c2c096ba026ad882
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172150"
 ---
 # <a name="developing-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [разработка языковой службы прежних](https://docs.microsoft.com/visualstudio/extensibility/internals/developing-a-legacy-language-service).  
-  
 Этот раздел содержит ссылки на разделы, которые помогут вам создать языковой службы прежних версий.  
   
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).  

@@ -1,7 +1,7 @@
 ---
 title: Добавление проекта и шаблоны элементов проектов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ca77f2cfeb6dbab7a8d9be33bf7ba822f25d2a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81aa673eb42bf28368d01baf6a2dfb0e43a1f3b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199892"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Добавление проекта и шаблонов элементов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [добавление проектов и шаблонов элементов проекта](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-project-and-project-item-templates).  
-  
 При создании собственных типов проектов, вы должны предоставить поддержку для добавления новых проектов и элементов проекта с помощью стандарта [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированных диалоговые окна Интегрированной среды разработки. В следующих разделах рассматриваются различные методы для добавления проектов и элементов проектов.  
   
 ## <a name="in-this-section"></a>В этом разделе  

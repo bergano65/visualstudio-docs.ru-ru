@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::Clone | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b204456606fbdde8eb86f9421264b92f25c980d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11abe7701e01265c7b7b653eb71ab6011e78b44d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176323"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IEnumDebugModules2::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2-clone).  
-  
 Возвращает копию текущего перечисления как отдельный объект.  
   
 ## <a name="syntax"></a>Синтаксис  

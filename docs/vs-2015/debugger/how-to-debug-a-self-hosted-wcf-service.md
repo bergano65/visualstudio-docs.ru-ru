@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отладка резидентной службы WCF | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1e87af205a88e84942eb4958876c2030a175065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8f1fee46a1df931842992df1daa38942ca07bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182251"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Практическое руководство. Отладка резидентной службы WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отладка резидентной службы](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-a-self-hosted-wcf-service).  
-  
 Объект *резидентная служба* — это служба WCF, которая не запускается внутри IIS, узла службы WCF, или [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server. Самый простой способ отладки резидентной WCF — Настройка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для запуска сервера и клиента, при выборе **начать отладку** на **Отладка** меню.  
   
  Если служба WCF является резидентной внутри или является процессом, который не может быть запущен таким же образом, как служба NT, использовать этот метод нельзя. Вместо этого можно выполнить одно из следующих действий:  

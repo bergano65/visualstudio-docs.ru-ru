@@ -1,7 +1,7 @@
 ---
 title: Использование библиотеки отладки CRT | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b0923153d5e4d0a3c5e4eb33a97e31fd3b2802
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199524"
 ---
 # <a name="crt-debug-library-use"></a>Работа с библиотекой отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование библиотеки отладки CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debug-library-use).  
-  
 Библиотека CRT предоставляет расширенную отладочную поддержку. Чтобы использовать отладочные библиотеки CRT, необходимо связать с [/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) и скомпилируйте его с **/MDd**, **/MTd**, или **/LDd**.  
   
 ## <a name="remarks"></a>Примечания  

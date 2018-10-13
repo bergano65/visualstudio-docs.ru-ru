@@ -1,7 +1,7 @@
 ---
 title: Управление ссылками в проекте | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa9b96370d6b0e1b39b414eeee737a32bfefcd34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195602"
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "47572148"
 >  Все проекты в Visual Studio содержат неявную ссылку на `System.Core`, даже если параметр `System.Core` удален из списка ссылок.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Ссылки на общие компоненты во время выполнения  
- Во время выполнения компоненты должны быть в выходном пути проекта или в [глобальный кэш сборок](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Если проект содержит ссылку на объект, который не находится ни в одном из этих расположений, необходимо скопировать ссылку на выходной путь проекта во время сборки проекта. Свойство <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> указывает, следует ли делать копию. Если значение **True**, ссылка копируется в каталог проекта во время сборки проекта. Если значение **False**, ссылка не копируется.  
+ Во время выполнения компоненты должны быть в выходном пути проекта или в [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Если проект содержит ссылку на объект, который не находится ни в одном из этих расположений, необходимо скопировать ссылку на выходной путь проекта во время сборки проекта. Свойство <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> указывает, следует ли делать копию. Если значение **True**, ссылка копируется в каталог проекта во время сборки проекта. Если значение **False**, ссылка не копируется.  
   
  При развертывании приложения, которое содержит ссылку на пользовательский компонент, зарегистрированный в GAC, компонент не будет развернут в приложении независимо от параметра <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . В более ранних версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно было задать свойство <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> в ссылке, чтобы обеспечить развертывание сборки. Теперь необходимо вручную добавить сборку в папку \Bin. Далее весь пользовательский код будет тщательно проверен, что снизит вероятность публикации неизвестного пользовательского кода.  
   
@@ -124,5 +124,5 @@ ms.locfileid: "47572148"
 ## <a name="see-also"></a>См. также  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Программирование с использованием сборок](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

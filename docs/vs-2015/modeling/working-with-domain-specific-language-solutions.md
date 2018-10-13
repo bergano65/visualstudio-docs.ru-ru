@@ -1,7 +1,7 @@
 ---
 title: Работа с решениями на предметно ориентированного языка | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bab89088ec189e99b1856977f8ea4915cae999e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190298"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Работа с решениями на доменных языках
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [работа с решениями на доменных языках](https://docs.microsoft.com/visualstudio/modeling/working-with-domain-specific-language-solutions).  
-  
 Доменный язык (DSL) создается с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решения. В этом разделе — о том, как установить и настроить решение.  
   
 ## <a name="in-this-section"></a>Содержание раздела  

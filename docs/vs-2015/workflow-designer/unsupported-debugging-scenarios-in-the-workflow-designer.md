@@ -1,7 +1,7 @@
 ---
 title: Не поддерживается отладка сценариев в конструкторе рабочих процессов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 651777d3488460394b79488d3d0fc67ff286bbfb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aece5a71965a1935218027dd97b1b8363a646388
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184487"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Неподдерживаемые сценарии отладки в конструкторе рабочих процессов
-В конструкторе рабочих процессов в [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] добавлено множество новых функций, но при этом существует несколько сценариев отладки, которые он не поддерживает. В этом документе описаны сценарии отладки, не поддерживаемые конструктором рабочих процессов.  
+В конструкторе рабочих процессов в [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] добавлено множество новых возможностей, но при этом существует несколько сценариев отладки, которые он не поддерживает. В этом документе описаны сценарии отладки, не поддерживаемые конструктором рабочих процессов.  
   
 -   После изменения кода выполнение не может быть продолжено.  
   

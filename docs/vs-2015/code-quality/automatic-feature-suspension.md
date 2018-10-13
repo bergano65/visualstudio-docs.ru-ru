@@ -1,7 +1,7 @@
 ---
 title: Автоматическая приостановка функции | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 281a4cbfb7bb1564af698cf4e745d56207f3e58e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178182"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [Автоматическая приостановка функции](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension).
-
 Если ваш доступной системной памяти падает до 200 МБ или меньше, Visual Studio отображает следующее сообщение в редакторе кода.
 
  ![Текст предупреждения, приостановка полный анализ решения](../code-quality/media/fsa-alert.png "FSA_Alert")

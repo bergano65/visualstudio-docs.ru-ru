@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание основанного на геометрии шейдера градиента | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1e9ef91ad2d7714ca5f589aeccff61967c27e46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195979"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Практическое руководство. Создание основанного на геометрии шейдера градиента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создание основанного на геометрии шейдера градиента](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-geometry-based-gradient-shader).  
-  
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания основанного на геометрии шейдера градиента. Этот шейдер масштабирует постоянное значение цвета RGB по высоте каждой точки объекта в абсолютном пространстве.  
   
  В этом документе описаны следующие действия.  

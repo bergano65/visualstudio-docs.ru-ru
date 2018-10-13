@@ -1,7 +1,7 @@
 ---
 title: Правила производительности использования в .NET Framework | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ddb790042e263b3d2eb8a9d7db3f73cd023db79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f1fee0c059189c2a120dfb83556ec94f119a2f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197630"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Правила производительности использования в .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [правила производительности использования в .NET Framework](https://docs.microsoft.com/visualstudio/profiling/dotnet-framework-usage-performance-rules).  
-  
 Правила производительности в категории "Использование .NET Framework" определяют конкретные методы, которые можно оптимизировать, а также более общие шаблоны использования, такие как сборка мусора и конфликты блокировки, которые можно расследовать для решения проблем производительности.  
   
 |||  
