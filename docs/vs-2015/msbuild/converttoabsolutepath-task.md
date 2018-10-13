@@ -1,7 +1,7 @@
 ---
 title: Задача ConvertToAbsolutePath | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8438fcbbfffea57d3238b6a81b2cfa9e11118653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2588d05158773ad50650813e9728bb3ccb772a25
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285185"
 ---
 # <a name="converttoabsolutepath-task"></a>Задача ConvertToAbsolutePath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача ConvertToAbsolutePath](https://docs.microsoft.com/visualstudio/msbuild/converttoabsolutepath-task).  
-  
   
 Преобразует относительный путь или ссылку в абсолютный путь.  
   

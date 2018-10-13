@@ -1,7 +1,7 @@
 ---
 title: Модель языковой службы прежних | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ccea832f1979601a764c0b979b0f7d4d72bd796
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294038"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [модель языковой службы прежних](https://docs.microsoft.com/visualstudio/extensibility/internals/model-of-a-legacy-language-service).  
-  
 Языковая служба определяет элементы и функции для конкретного языка и используется для предоставления редактора с информацией для данного языка. Например редактор должен знать, элементы и ключевые слова языка для поддержки выделения синтаксиса цветом.  
   
  Языковая служба тесно сотрудничает с текстовым буфером, управляется редактора и представления, которая содержит редактор. Microsoft IntelliSense **краткие сведения** параметр является примером возможность, предоставляемая языковой службы.  

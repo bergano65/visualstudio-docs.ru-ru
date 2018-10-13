@@ -1,7 +1,7 @@
 ---
 title: Команда CodeIndex | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cba75356495a593917bd55cad6a5ceafd70a0383
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282364"
 ---
 # <a name="codeindex-command"></a>Команда CodeIndex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команда CodeIndex](https://docs.microsoft.com/visualstudio/ide/codeindex-command).  
-  
 Команда **CodeIndex** используется для управления индексацией кода на сервере Team Foundation Server. Например, может потребоваться сбросить индекс, чтобы исправить данные CodeLens, или отключить индексацию, чтобы разобраться с проблемами производительности сервера.  
   
  **Необходимые разрешения**  

@@ -1,7 +1,7 @@
 ---
 title: Поддержка представления нескольких документов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282705"
 ---
 # <a name="supporting-multiple-document-views"></a>Поддержка представления нескольких документов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Supporting Multiple Document Views](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views).  
-  
 Можно предоставить несколько представлений документа, создав разделяют данные документа и объекты представления документа для редактора. Приведены в некоторых случаях, в которых может потребоваться дополнительный документ-представление.  
   
 -   Поддержка новых окон: требуется редактора, чтобы предоставить два или несколько представлений одного типа, таким образом, чтобы пользователь, имеющий уже открыт в редакторе окно можно открыть новое окно, выбрав **новое окно** команду **окно** меню.  

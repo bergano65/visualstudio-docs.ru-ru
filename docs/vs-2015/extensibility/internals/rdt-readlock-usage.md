@@ -1,7 +1,7 @@
 ---
 title: Использование RDT_ReadLock | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87f92f525d94ac81231272658c26f7484d93bef8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297795"
 ---
 # <a name="rdtreadlock-usage"></a>Использование RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование RDT_ReadLock](https://docs.microsoft.com/visualstudio/extensibility/internals/rdt-readlock-usage).  
-  
 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> — Это флаг, предоставляющий логику для блокировка документа на в выполняющихся документа таблицы (RDT), который является список всех документов, открытых в настоящий момент в Интегрированной среде разработки Visual Studio. Этот флаг определяет при открытии документов и является ли документ видимым в пользовательском интерфейсе или принудительное незаметно в памяти.  
   
  Как правило, используется <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> когда верно одно из следующих:  

@@ -1,7 +1,7 @@
 ---
 title: Создание наборов правил анализа пользовательского кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273589"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Создание настраиваемых наборов правил анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создания наборов правил анализа пользовательского кода](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Применение правил анализа кода для проекта управляемого кода, указав набор правил, содержащий одно или несколько правил. Стандартными наборами правил Майкрософт входят группы правил, которые упорядочены по функции и глубине. Например Microsoft базовые нормы и правила разработки и Майкрософт расширенные нормы и правила разработки содержат правила, сосредоточиться на удобство использования и выявляйте проблемы, с акцентом на правила именования в расширенном наборе правил.  
   
  Также можно создать настраиваемый набор правил, объединяющий два или несколько стандартных наборов правил или определяющий правил в один или несколько наборов стандартное правило. Можно сохранить настраиваемое правило устанавливает RULESET-файл и можно указать их в нескольких проектах кода.  

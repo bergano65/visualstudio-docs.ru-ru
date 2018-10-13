@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: создайте консольное приложение рабочего процесса | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251671"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Как создать консольное приложение рабочего процесса
 Маркер [!INCLUDE[wf](../includes/wf-md.md)] позволяет создавать рабочие процессы для выполнения системных или пользовательских процессов. Маркер [!INCLUDE[wfd1](../includes/wfd1-md.md)] позволяет создать область конструктора для создания таких рабочих процессов. [!INCLUDE[wfd2](../includes/wfd2-md.md)] позволяет создавать рабочие процессы в среде [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также интегрируется в другие приложения, где размещается конструктор.  

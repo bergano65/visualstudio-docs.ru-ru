@@ -1,7 +1,7 @@
 ---
 title: Задача ResolveNativeReference | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06171281706b2395cbac0c98b5b8a76c4da363c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a874055e5af1a0aafd48296a99f12a83d56369f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281315"
 ---
 # <a name="resolvenativereference-task"></a>Задача ResolveNativeReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача ResolveNativeReference](https://docs.microsoft.com/visualstudio/msbuild/resolvenativereference-task).  
-  
   
 Разрешает машинные ссылки. Реализует класс <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Этот класс поддерживает инфраструктуру .NET Framework, которая не предназначена для использования непосредственно из программного кода.  
   

@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_DATA | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1139663c24e8341bd7f46131355ef32a05e0c074
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d1e8a0fc50da8f66583de1f3c50e9926ff266bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237345"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [BP_RESOLUTION_DATA](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-resolution-data).  
-  
 Описывает результат привязки точки останова по данным.  
   
 ## <a name="syntax"></a>Синтаксис  

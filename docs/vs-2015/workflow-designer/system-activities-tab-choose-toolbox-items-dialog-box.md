@@ -1,7 +1,7 @@
 ---
 title: Вкладка "System.Activities" Выбор элементов панели элементов-диалоговое окно | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292049"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»
 На этой вкладке **Выбор элементов панели элементов** диалоговое окно отображает список [!INCLUDE[wf](../includes/wf-md.md)] действий, шаблонов и элементов, доступных пользователю. Чтобы открыть этот список, выберите **Выбор элементов панели элементов** из **средства** меню или щелкнув правой кнопкой мыши **элементов** и выбрав **Выбор элементов**для отображения **Выбор элементов панели элементов** диалоговое окно, а затем выберите его **System.Activities** вкладки. По умолчанию список содержит действия рабочих процессов из сборок System.Activities, System.ServiceModel.Activities и System.Activities.Core.Presentation; Однако только системные действия и действия, добавленные с помощью других сборок, отображаемых в **элементов** проверяются по умолчанию. Недавно добавленные действия автоматически отмечаются и появляются в **элементов** при нажатии кнопки **ОК** в диалоговом окне. Кроме того, эти элементы появляются в **элементов** в новой категории, соответствующее пространству имен, в котором находится действие, элемент или шаблон.  

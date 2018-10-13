@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отключение предупреждений анализа созданного кода | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 81bb371a3e16236e22ab3a1fd4ac5ab431f61512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07858183af427e2b67e1e0f63d1f8889caf72fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293752"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Практическое руководство. Отключение предупреждений анализа созданного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отключение предупреждений анализа кода для созданного кода](https://docs.microsoft.com/visualstudio/code-quality/how-to-suppress-code-analysis-warnings-for-generated-code).  
-  
 Компиляторы управляемого кода часто создают код, который добавляется в проект для упрощения разработки кода. Кроме того разработчики часто используют сторонние средства для быстрой разработки приложений. Эти средства также создают код, который добавляется в проект.  
   
  Может потребоваться нарушения правил, обнаруживаемых при анализе в созданном коде см. в разделе. Тем не менее может не потребоваться увидеть их, если не может просматривать и поддерживать код, который содержит нарушения.  

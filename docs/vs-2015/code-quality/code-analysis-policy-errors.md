@@ -1,7 +1,7 @@
 ---
 title: Ошибки политики анализа кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff0e93d7259217cec67ab1ecd52073860089eaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8e429c7f8ee54ab2c7f0bad08129542d4ce87d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286382"
 ---
 # <a name="code-analysis-policy-errors"></a>Ошибки политики анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибки политики анализа кода](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-policy-errors).  
-  
 Если не выполняется политика анализа кода во время возврата возникать следующие ошибки:  
   
  **Параметры анализа кода для одного или нескольких проектов несовместимы с политикой анализа кода.**  

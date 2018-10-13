@@ -1,7 +1,7 @@
 ---
 title: Выполнение обновлений приложения службой ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8011447de248c2dbcdbd513dc4e51106ceb3a568
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c2e135a2b872ecd389149626ac09caf02734f40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298029"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Выполнение обновлений приложения службой ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как ClickOnce выполняет обновления приложения](https://docs.microsoft.com/visualstudio/deployment/how-clickonce-performs-application-updates).  
-  
 ClickOnce использует сведения о версии файла, указанного в манифесте развертывания приложения, чтобы решить, следует ли обновить файлы приложения. После того как обновление начнется, ClickOnce использует метод, который называется *исправление файлов* во избежание избыточного загрузку файлов приложения.  
   
 ## <a name="file-patching"></a>Исправление файлов  

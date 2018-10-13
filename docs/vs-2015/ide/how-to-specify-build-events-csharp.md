@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Указание событий сборки (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297301"
 ---
 # <a name="how-to-specify-build-events-c"></a>Практическое руководство. Назначение событий построения (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Указание событий сборки (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Используйте события сборки для указания команд, которые выполняются до начала сборки или после ее завершения. События сборки выполняются, только если сборка успешно достигает этих точек в процессе сборки.  
   
  При сборке проекта события перед сборкой добавляются в файл с именем PreBuildEvent.bat, а события после сборки — в файл с именем PostBuildEvent.bat. Если вы хотите обеспечить проверку ошибок, добавьте собственные команды проверки ошибок в шаги сборки.  

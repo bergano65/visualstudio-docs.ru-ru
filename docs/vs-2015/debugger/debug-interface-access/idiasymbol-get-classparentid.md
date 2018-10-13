@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_classParentId | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84e3759a0eb8ab59a0fa96f9603b8dd8e99d09ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ba7749a326222da0b893360567a27de22b67783
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278048"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaSymbol::get_classParentId](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-classparentid).  
-  
 Получает идентификатор родительского класса символа.  
   
 ## <a name="syntax"></a>Синтаксис  

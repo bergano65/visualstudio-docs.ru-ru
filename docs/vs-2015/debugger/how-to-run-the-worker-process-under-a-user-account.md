@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: выполнение рабочего процесса с учетной записью пользователя | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280193"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: запустить рабочий процесс в учетной записи пользователя](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account).  
-  
 Для настройки компьютера, чтобы можно было выполнить рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe или w3wp.exe) с учетной записью пользователя, выполните следующие действия.  
   
 ## <a name="procedure"></a>Процедура  
@@ -49,7 +47,7 @@ ms.locfileid: "47560215"
   
 3.  Сохраните файл machine.config.  
   
-4.  По умолчанию в [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)] установлены службы IIS 6.0. Соответствующий рабочий процесс — w3wp.exe. Чтобы выполнить в режиме IIS 6.0 с aspnet_wp.exe в качестве рабочего процесса, необходимо выполнить следующие действия:  
+4.  По умолчанию в [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]установлены службы IIS 6.0. Соответствующий рабочий процесс — w3wp.exe. Чтобы выполнить в режиме IIS 6.0 с aspnet_wp.exe в качестве рабочего процесса, необходимо выполнить следующие действия:  
   
     1.  Нажмите кнопку **Пуск**, щелкните пункт **Администрирование** , затем выберите пункт **Службы IIS**.  
   
@@ -73,7 +71,7 @@ ms.locfileid: "47560215"
     net start w3svc  
     ```  
   
-6.  Найдите папку Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files, которая находится по тому же пути, что и папка CONFIG. Щелкните правой кнопкой мыши временный [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] файлы, папки и выберите **свойства** в контекстном меню.  
+6.  Найдите папку Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files, которая находится по тому же пути, что и папка CONFIG. Щелкните правой кнопкой мыши папку Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files и выберите в контекстном меню пункт **Свойства** .  
   
 7.  В диалоговом окне **Свойства: Temporary ASP.NET Files** перейдите на вкладку **Безопасность** .  
   

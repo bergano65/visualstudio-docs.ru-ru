@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: флаг и снять отметку с потока | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289137"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Практическое руководство. Установка и снятие отметки для потока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: по](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Поток, которому требуется уделить особое внимание, помечая его с ним значок в можно пометить **потоков**, **Параллельные стеки**, **контроль параллельных данных**, и **GPU Потоки** windows. С помощью этого значка можно будет отличать помеченные потоки от остальных.  
   
  Отмеченные потоки также имеют специальную обработку в **потоков** списке **место отладки** панели инструментов. В списке могут отображаться все потоки или только помеченные. При пометке потока **поток** список автоматически переключается на показ только помеченных потоков, но можно переключить его обратно в режим показа всех потоков.  

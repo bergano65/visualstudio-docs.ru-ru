@@ -1,7 +1,7 @@
 ---
 title: Приложения Windows Store выполнения на удаленном компьютере | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289579"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Запуск приложений Магазина Windows на удаленном компьютере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [приложения Windows Store выполнения на удаленном компьютере](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Применяется только к Windows] (.. /Image/windows_only_content.PNG «windows_only_content»)  
   
  Инструменты удаленной отладки Visual Studio позволяют запускать, отлаживать и тестировать приложение для Магазина Windows, выполняемое на одном устройстве, с другого компьютера, на котором выполняется Visual Studio. Запуск на удаленном устройстве может быть особенно эффективным, если компьютер с Visual Studio не поддерживает функции, связанные с приложениями для Магазина Windows, например сенсорный ввод, геолокацию и физическую ориентацию. В этом разделе описаны процедуры настройки и запуска удаленных сеансов.  

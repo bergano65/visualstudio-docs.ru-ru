@@ -1,7 +1,7 @@
 ---
 title: Способ определения доменного языка | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295182"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [способ определения доменного языка](https://docs.microsoft.com/visualstudio/modeling/how-to-define-a-domain-specific-language).  
-  
 Чтобы определить доменный язык (DSL), необходимо создать решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.  
   
  Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [пакет и пакет SDK моделирования](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -242,7 +240,7 @@ ms.locfileid: "47592937"
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Определение класса элементов, которые отображаются на схеме в виде фигур  
   
-1.  **Определите и протестируйте класс домена, как описано в разделе**[определение классов доменов](#classes) **.**   
+1.  **Определите и протестируйте класс домена, как описано в разделе**[определение классов доменов](#classes) **.**  
   
     -   Родителем класса должен быть корневой класс. Это значит, что между корневым классом и новым классом домена должно существовать отношение внедрения.  
   

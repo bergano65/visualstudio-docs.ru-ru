@@ -1,7 +1,7 @@
 ---
 title: Разработка. Файлы Vsct | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283677"
 ---
 # <a name="authoring-vsct-files"></a>Разработка. Файлы Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание и настройка. Файлы Vsct](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 В этом документе показано, как создать vsct-файл для добавления элементов меню, панелей инструментов и других элементов пользовательского интерфейса (UI) в среду разработки Visual Studio (IDE). При добавлении элементов пользовательского интерфейса в Visual Studio пакет (пакет VSPackage) уже не поддерживает vsct-файл, выполните следующие действия.  
   
  Для новых проектов рекомендуется использовать шаблон пакета Visual Studio, так как он создает vsct-файл, в зависимости от сделанного выбора, уже имеет необходимые элементы для команды меню, окна инструментов или специализированный редактор. Можно изменить этот vsct-файл в соответствии с требованиями вашего VSPackage. Дополнительные сведения об изменении файла vsct, см. в примерах в [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  

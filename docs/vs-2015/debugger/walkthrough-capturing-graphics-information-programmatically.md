@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Запись графических сведений программными средствами | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298159"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: захват графики сведения программным образом](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically).  
-  
 С помощью диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно программно захватывать графические данные из приложения Direct3D.  
   
  Программный захват полезен в следующих сценариях.  
@@ -113,7 +111,7 @@ ms.locfileid: "47559780"
     ```  
   
     > [!NOTE]
-    >  Если `DXGIGetDebugInterface1` возвращает `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), убедитесь, что приложение запущено в режиме диагностики графики (Alt + F5 в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    >  Если файл `DXGIGetDebugInterface1` возвращает `E_NOINTERFACE` , (`error: E_NOINTERFACE No such interface supported`), убедитесь, что приложение запущено в диагностике графики (клавиши ALT+F5 в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Захват графической информации  
  Получив допустимый интерфейс `IDXGraphicsAnalysis` , можно использовать `BeginCapture` и `EndCapture` для захвата графических данных.  
@@ -207,7 +205,7 @@ ms.locfileid: "47559780"
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Запись графических сведений](../debugger/walkthrough-capturing-graphics-information.md)   
- [Захват графической информации](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Программа командной строки для захвата](../debugger/command-line-capture-tool.md)
 
 

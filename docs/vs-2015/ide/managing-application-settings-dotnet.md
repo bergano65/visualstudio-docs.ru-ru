@@ -1,7 +1,7 @@
 ---
 title: Управление параметрами приложения (.NET) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289514"
 ---
 # <a name="managing-application-settings-net"></a>Управление параметрами приложения (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление параметрами приложения (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 Параметры приложений позволяют динамически хранить данные приложения. Параметры позволяют хранить на клиентском компьютере информацию, которая не должна быть включена в код приложения (например, строку подключения), настройки пользователя и другие сведения, необходимые во время выполнения.  
   
  Параметры приложения заменяют динамические свойства, используемые в более ранних версиях Visual Studio.  

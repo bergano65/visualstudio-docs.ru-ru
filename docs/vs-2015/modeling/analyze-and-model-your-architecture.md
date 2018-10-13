@@ -1,14 +1,14 @@
 ---
 title: Анализ и моделирование архитектуры | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278360"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ и моделирование архитектуры](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture).  
-  
 Чтобы приложение соответствовало требованиям пользователей, используйте для его проектирования и моделирования инструменты моделирования и разработки архитектуры Visual Studio. Visual Studio поможет вам визуализировать структуру, поведение и отношения кода и разобраться в имеющемся программном коде.  
   
  Программа позволяет создавать модели с разным уровнем детализации на протяжении всего жизненного цикла приложения. Отслеживайте требования, задачи, тестовые случаи, ошибки или другие типы работ, сопряженные с вашими моделями, связывая элементы модели с рабочими элементами Team Foundation Server и планом разработки. См. в разделе [сценарий: изменение проекта с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).  

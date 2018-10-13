@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отсутствие объектов вследствие неправильной настройки конвейера | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293531"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Пошаговое руководство. Отсутствие объектов вследствие неправильной настройки конвейера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отсутствует объектов из-за неправильно конвейера](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline).  
-  
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] исследовать объект, который отсутствует из-за незаданного шейдера пикселей.  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
@@ -50,7 +48,7 @@ ms.locfileid: "47569908"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Анализ кадра в журнале графики  
   
-1.  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] загрузите документ журнала графики, содержащий кадр, на котором видно, что объект отсутствует. Откроется новая вкладка журнала графики в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В верхней части этой вкладки находится вывод целевого объекта отрисовки для выбранного кадра. В нижней части находится **Список кадров**, в котором каждый захваченный кадр отображается как эскиз.  
+1.  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]загрузите документ журнала графики, содержащий кадр, на котором видно, что объект отсутствует. Появляется новая вкладка журнала графики в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В верхней части этой вкладки находится вывод целевого объекта отрисовки для выбранного кадра. В нижней части находится **Список кадров**, в котором каждый захваченный кадр отображается как эскиз.  
   
 2.  В **списке кадров**выберите кадр, который демонстрирует, что объект не отображается. Однобуферная прорисовка обновляется, и в ней отображается выбранный кадр. В этом сценарии вкладка журнала графики выглядит следующим образом:  
   

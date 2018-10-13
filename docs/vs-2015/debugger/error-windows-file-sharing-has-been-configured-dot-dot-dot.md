@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: Совместное использование файлов Windows настроено... | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fc4d3fb02b1c7c9d5003f82fbe42be73c93d6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 579234bd705975876e9adebd4a784f0af6c01375
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298223"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Ошибка: совместное использование файлов Windows настроено...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: совместное использование файлов Windows настроено... ](https://docs.microsoft.com/visualstudio/debugger/error-windows-file-sharing-has-been-configured-dot-dot-dot).  
-  
 Совместное использование файлов Windows настроено, поэтому подключение к компьютеру происходит с помощью другого имени пользователя. Это несовместимо с удаленной отладкой  
   
  Текущая настройка совместного использования файлов настроена на подключение к удаленному компьютеру с использованием различных имен пользователей. В этом случае невозможно выполнить удаленную отладку.  

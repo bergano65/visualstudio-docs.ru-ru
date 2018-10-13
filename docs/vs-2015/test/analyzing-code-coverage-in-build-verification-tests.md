@@ -1,7 +1,7 @@
 ---
 title: Анализ объема протестированного кода в тестах проверки сборки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0cbcf51d6b7eb3229366216a86d191d5946f30f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 530ccfb44cc93ebcc5777cc1bdc8ecc038076c62
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284782"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Анализ покрытия кода в тестах проверки построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ покрытия кода в тестах проверки построения](https://docs.microsoft.com/visualstudio/test/analyzing-code-coverage-in-build-verification-tests).  
-  
 Анализ объема протестированного кода в Microsoft Visual Studio показывает, какое количество кода работает с автоматическими тестами. Дополнительные сведения см. в разделе [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
  При проверке кода тесты будут выполняться на сервере сборки вместе с другими тестами от других членов команды. (Сведения о настройке см. в разделе [Выполнение тестов в построениях](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Анализировать объем протестированного кода в службе сборки полезно, так как это дает наиболее актуальную и исчерпывающую картину объема во всем проекте. Сюда также входят автоматические системные тесты и другие закодированные тесты, которые обычно не выполняются на компьютерах разработчиков.  

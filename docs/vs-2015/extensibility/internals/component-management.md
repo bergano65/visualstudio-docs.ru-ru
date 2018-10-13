@@ -1,7 +1,7 @@
 ---
 title: Управление компонентами | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280336"
 ---
 # <a name="component-management"></a>Управление компонентами
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление компонентами](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management).  
-  
 Единицы задач в установщике Windows, называются компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки, использующих установщик Windows.  
   
  Несмотря на то, что несколько продуктов можно использовать для создания установки вашего VSPackage, данного обсуждения предполагается использование файлов установщика Windows (MSI). При создании установщика, необходимо правильно управлять развертывания файлов таким образом, правильный подсчет ссылок на происходит все время. Следовательно различные версии продукта будет не мешать или прервать друг с другом в наборе операций установки и удаления сценариев.  

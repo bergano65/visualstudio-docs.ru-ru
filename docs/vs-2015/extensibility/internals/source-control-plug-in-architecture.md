@@ -1,7 +1,7 @@
 ---
 title: Исходная архитектура подключаемого модуля управления | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282351"
 ---
 # <a name="source-control-plug-in-architecture"></a>Архитектура подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [архитектура подключаемого модуля системы управления версиями](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture).  
-  
 Можно добавить поддержки системы управления версиями для [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE), реализация и присоединение подключаемый модуль системы управления версиями. Интегрированной среды разработки подключается к системе управления версиями, подключаемый модуль с помощью четко определенных API подключаемых модулей для исходного элемента управления. Интегрированная среда разработки предоставляет возможности управления версии из системы управления версиями, предоставление пользовательского интерфейса (UI), состоящий из панели инструментов и команды меню. Подключаемый модуль системы управления версиями реализует функции системы управления версиями.  
   
 ## <a name="source-control-plug-in-resources"></a>Подключаемый модуль ресурсов исходного элемента управления  

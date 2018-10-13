@@ -1,7 +1,7 @@
 ---
 title: Привязка элементов управления к данным в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85bfcb03ea2f383d8f1517d17c866c2320891aaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a4143777e51a03867e94f1d4ebdd9c8182a5401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291576"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [привязка элементов управления к данным в Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).  
-  
   
 Для пользователей приложения данные можно отображать путем привязки данных к элементам управления. Можно создать эти элементы управления с привязкой к данным путем перетаскивания элементов из **источников данных** окна на рабочую область конструирования или элементов управления на поверхности в Visual Studio.  
   

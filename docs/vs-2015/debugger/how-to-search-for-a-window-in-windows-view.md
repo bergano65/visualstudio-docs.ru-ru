@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Поиск окна в представлении Windows | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 043e3e92004eb5b0995bc285e90a138f4dc902f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd33d8c7414d4db989533475a328ca8abf2ffdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568721"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295065"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Практическое руководство. Поиск окна в представлении окон
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Поиск окна в представлении Windows](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-window-in-windows-view).  
-  
 Отдельного окна в представлении Windows можно найти с помощью дескриптора, заголовок, класс или сочетание заголовка и класса в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне будут отображаться атрибуты выбранного окна в дереве окон.  
   
  Начните с разворачивания дерева до второго уровня (все окна, являющиеся дочерними для рабочего стола), таким образом, можно определить уровень рабочего стола windows по имени класса и заголовок. После выбора окна уровня рабочего стола, вы можно развернуть, чтобы найти конкретного дочернего окна.  

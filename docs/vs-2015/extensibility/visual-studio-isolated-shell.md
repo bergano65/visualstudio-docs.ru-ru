@@ -1,7 +1,7 @@
 ---
 title: Изолированная оболочка Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286069"
 ---
 # <a name="visual-studio-isolated-shell"></a>Изолированная оболочка Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [изолированной оболочки Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 Изолированная оболочка Visual Studio позволяет создавать автономные приложения, которые могут выполняться side-by-side с другими версиями Visual Studio. Это используется главным образом для размещения специализированные средства, которые можно использовать службы Visual Studio, но также имеют настроенными внешним видом и фирменной символики. Функции Visual Studio и группы команд меню можно легко включать и отключать. Названия приложения, приложения значки и экраны-заставки можно полностью настраивать. Список настраиваемых функций, см. в разделе [Настройка изолированной оболочки](../extensibility/customizing-the-isolated-shell.md).  
   
  Для работы с проектом изолированной оболочки, необходимо установить пакет SDK для Visual Studio. Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
