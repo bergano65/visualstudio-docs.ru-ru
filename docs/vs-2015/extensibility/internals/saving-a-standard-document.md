@@ -1,7 +1,7 @@
 ---
 title: Сохранение стандартного документа | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: baf51889f81fdb0e0b542d13a7692d1170f72aea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c13e2af373025cc264f9bec34f426fb8f9b75d66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267518"
 ---
 # <a name="saving-a-standard-document"></a>Сохранение стандартного документа
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Сохранение стандартного документа](https://docs.microsoft.com/visualstudio/extensibility/internals/saving-a-standard-document).  
-  
 Эти задачи выполняет среда сохранение, сохранение и сохранить все команды. Когда пользователь выбирает **Сохранить**, **Сохранить как**, или **сохранить все** из **файл** меню или закрывает решение, в результате чего  **Сохранить все**, происходит следующее.  
   
  ![Стандартный редактор](../../extensibility/internals/media/public.gif "открытый")  

@@ -1,7 +1,7 @@
 ---
 title: Поддержка веб-сайтов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 128c5d94bbb508e6cf168f3de5662ba88b9d6193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4272c6a89864f72d4f823b53283d9d18fafaae0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263813"
 ---
 # <a name="web-site-support"></a>Поддержка веб-сайтов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [веб-сайта поддержки](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support).  
-  
 Систему проектов веб-сайта — это система, создающий веб-проектов. Веб-проектов, в свою очередь, создайте веб-приложений. Проект веб-сайта создает один исполняемый файл для каждого веб-страницы, который связан код. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке/App_Code.  
   
  Системы проектов веб-сайте создаются путем добавления шаблоны и атрибуты регистрации в существующей системе проекта. Один из этих атрибутов выбирает поставщика IntelliSense для языка. Реализация поставщика IntelliSense обрабатывает ссылки и вызывает компилятор языка, когда запрашивается смарт-веб-страницы, не кэшируется.  

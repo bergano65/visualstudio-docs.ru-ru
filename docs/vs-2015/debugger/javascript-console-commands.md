@@ -1,7 +1,7 @@
 ---
 title: Команды консоли JavaScript | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0bc4597c5be26e25f79edc0784bb1fddd9baa76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263423"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команды консоли JavaScript](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладка приложения](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
@@ -69,7 +67,7 @@ ms.locfileid: "47570585"
 |`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях Магазина, использующих JavaScript.|Не поддерживается.|  
 |`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях Магазина, использующих JavaScript.|Не поддерживается.|  
 |`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях Магазина, использующих JavaScript.|Не поддерживается.|  
-|`select(element)`|Выбирает заданный элемент HTML `element` в [проводника DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Выбирает заданный элемент HTML `element` в [проводнике DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Запускает таймер, определяемый дополнительным параметром `name` . При применении с командой `console.timeEnd`вычисляет время, прошедшее между моментами действия команд `time` и `timeEnd`, и отправляет результат (в мс) на консоль, используя строку `name` в качестве префикса. Используется для включения инструментирования кода приложения для измерения производительности.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Останавливает таймер, определяемый дополнительным параметром `name` . См. консольную команду `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Отправляет данные трассировки стека в окно консоли. Трассировка включает весь стек вызовов, в частности имя файла, номер строки и номер столбца.|`console.trace();`|  
@@ -84,7 +82,7 @@ ms.locfileid: "47570585"
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  
 |`$$(selector)`|Возвращает массив элементов, соответствующих указанному селектору, при помощи синтаксиса селектора CSS. Это команда быстрого доступа к `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Позволяет изменить контекст для оценки выражений с назначенного по умолчанию окна верхнего уровня страницы на окно заданного фрейма. Вызов `cd()` без параметров возвращает контекст в окно верхнего уровня.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Выбирает указанный элемент в [проводника DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Выбирает указанный элемент в [проводнике DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Возвращает визуализатор для заданного объекта. Визуализатор можно использовать для изучения свойств в окне консоли.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Проверка наличия консольной команды  

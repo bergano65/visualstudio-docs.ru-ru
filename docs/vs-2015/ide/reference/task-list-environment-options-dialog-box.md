@@ -1,7 +1,7 @@
 ---
 title: Страница "Список задач", папка "Среда", диалоговое окно "Параметры" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d96543e5f8cc7d1513f335fc6a54f669dfa5f356
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17404838fc567d37f23c683f6b8f83b7529a3dc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252543"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Страница "Список задач", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Task List, Environment, параметры](https://docs.microsoft.com/visualstudio/ide/reference/task-list-environment-options-dialog-box).  
-  
   
 На странице "Параметры" можно добавлять, удалять и изменять токены комментариев, используемые при создании напоминаний **списка задач**. Чтобы отобразить эти параметры, выберите **Параметры** в меню **Сервис**, разверните папку **Среда** и выберите **Список задач**.  
   

@@ -1,7 +1,7 @@
 ---
 title: Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5911a574bb10e284cfd9aa2a58cff9fddba5c7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247667"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](https://docs.microsoft.com/visualstudio/profiling/rapid-web-site-profiling-with-vsperfaspnetcmd).  
-  
 Средство командной строки **VSPerfASPNETCmd** позволяет без труда профилировать веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. У этой программы меньше параметров по сравнению с программой командной строки [VSPerfCmd](../profiling/vsperfcmd.md), в ней не нужно задавать переменные среды и не требуется перезагрузка компьютера. Средство **VSPerfASPNETCmd** предпочтительнее использовать для профилирования с помощью отдельного профилировщика. Дополнительные сведения см. в разделе [Практическое руководство. Установка изолированного профилировщика](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
@@ -103,7 +101,7 @@ ms.locfileid: "48880686"
 ## <a name="additional-options"></a>Дополнительные параметры  
  Во все команды, перечисленные ранее в этом разделе, за исключением команды **vsperfaspnetcmd/shutdown**, можно добавить любой из следующих параметров.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |------------|-----------------|  
 |**/Output:** `VspFile`|По умолчанию файл данных профилирования (VSP) создается в текущем каталоге с именем файла **PerformanceReport.vsp**. Параметр /output позволяет задать другое расположение, имя файла или и то, и другое.|  
 |**/PackSymbols:Off**|По умолчанию VsPerfASPNETCmd встраивает символы (имена функций и параметров и т. п.) в VSP-файл. Встраивание символов может привести к существенному увеличению файла данных профилирования. При обращении к PDB-файлам, содержащим такие символы, в процессе анализа данных следует воспользоваться параметром /packsymbols:off, чтобы отключить встраивание символов.|

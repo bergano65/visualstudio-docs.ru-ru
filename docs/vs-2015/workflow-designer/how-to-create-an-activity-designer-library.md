@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: создать библиотеку конструкторов действий | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 128c36a4aca22cb2da08c3d88162fed658f27de4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258275"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Как создать библиотеку конструкторов действий
 Конструкторы пользовательских действий позволяют создать пользовательский интерфейс для стандартного или пользовательского действия. Вы управляете сложностью пользовательского интерфейса и можете создать более одного конструктора операций для конкретного действия. Этот сценарий позволяет создать конструкторы, специально созданные для нескольких аудиторий.  

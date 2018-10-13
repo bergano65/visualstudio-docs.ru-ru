@@ -1,7 +1,7 @@
 ---
 title: Обозреватель производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248486"
 ---
 # <a name="performance-explorer"></a>Обозреватель производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Обозреватель производительности](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяют разработчикам измерять, оценивать и исправлять проблемы производительности в своем коде. Эти средства полностью интегрированы в среду IDE для обеспечения более простого и понятного взаимодействия с пользователем.  
   
  Процесс профилирования приложения достаточно прост. Сначала создается новый сеанс производительности. В Visual Studio Team System Development Edition для создания нового сеанса производительности можно использовать мастер сеансов производительности. После завершения сеанса производительности собранные во время профилирования данные сохраняются в VSP-файл. Этот VSP-файл можно просмотреть в среде IDE. Существует несколько представлений отчетов, помогающих визуализировать и выявлять проблемы на основе собранных данных.  

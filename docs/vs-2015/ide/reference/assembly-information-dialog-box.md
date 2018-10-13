@@ -1,7 +1,7 @@
 ---
 title: Диалоговое окно "Сведения о сборке" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a6af96afbba5e60d950947470f98e2c633caf24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8526dfbe970c43e1ab55534c13a1e6708b2b4693
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564144"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248031"
 ---
 # <a name="assembly-information-dialog-box"></a>Диалоговое окно "Сведения о сборке"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [диалоговое окно сведений о сборке](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box).  
-  
   
 Диалоговое окно **Сведения о сборке** используется для указания значений глобальных атрибутов сборки [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], хранящихся в файле AssemblyInfo, который автоматически создается в проекте. В **обозревателе решений** этот файл находится в узле **Мой проект** в [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (чтобы увидеть его, щелкните **Показать все файлы**), а именно, в разделе **Свойства** в [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Подробнее об атрибутах сборки см. в разделе [Атрибуты](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   

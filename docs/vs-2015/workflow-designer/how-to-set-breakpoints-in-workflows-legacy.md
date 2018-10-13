@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: задайте точки останова в рабочих процессах (для прежних версий) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ac587b238d52e8955a4fe70cabc89444b39c712d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252555"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Как задать точки останова в рабочих процессах (для прежних версий)
 В этом разделе описывается задание точек останова в приложениях [!INCLUDE[wf](../includes/wf-md.md)], построенных с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий. Используйте средство [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, если приложение [!INCLUDE[wf2](../includes/wf2-md.md)] должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

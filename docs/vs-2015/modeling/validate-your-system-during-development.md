@@ -1,7 +1,7 @@
 ---
 title: Проверка системы во время разработки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262188"
 ---
 # <a name="validate-your-system-during-development"></a>Проверка системы в ходе разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [проверка системы во время разработки](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio помогает привести в соответствие программное обеспечение, требования пользователей и архитектуру системы.  
   
  Чтобы узнать, какие версии Visual Studio поддерживают каждую функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -37,7 +35,7 @@ Visual Studio помогает привести в соответствие пр
   
 |**Задачи**|**Связанные разделы**|  
 |---------------|---------------------------|  
-|**Убедитесь, что ваша модель становится согласованные:**<br /><br /> В зависимости от способа использования и интерпретации моделей в проекте может оказаться полезным запретить некоторые сочетания элементов. Например, в качестве ограничения для классов UML можно потребовать их обязательной совместимости с [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Подобные ограничения можно определять в расширениях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|-   [Проверка модели UML](../modeling/validate-your-uml-model.md)<br />-   [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)|  
+|**Убедитесь, что ваша модель становится согласованные:**<br /><br /> В зависимости от способа использования и интерпретации моделей в проекте может оказаться полезным запретить некоторые сочетания элементов. Например, в качестве ограничения для классов UML можно потребовать их обязательной совместимости с [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Подобные ограничения можно определять в расширениях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|-   [Проверка модели UML](../modeling/validate-your-uml-model.md)<br />-   [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)|  
 |**Убедитесь, что программное обеспечение соответствует требованиям пользователей**:<br /><br /> Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований.|-   [Разработка тестов из модели](../modeling/develop-tests-from-a-model.md)|  
 |**Убедитесь, что программное обеспечение соответствует предполагаемой структуре системы:**<br /><br /> Схемы слоев описывают предполагаемые зависимости между компонентами приложения. В процессе разработки можно следить за тем, чтобы фактические зависимости в коде соответствовали предполагаемой структуре.|-   [Создание схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)|  
   

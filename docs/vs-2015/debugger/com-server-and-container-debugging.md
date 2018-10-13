@@ -1,7 +1,7 @@
 ---
 title: Отладка COM-сервера и контейнеров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263065"
 ---
 # <a name="com-server-and-container-debugging"></a>Отладка сервера и контейнеров COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладка контейнера COM-сервера и](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging).  
-  
 Приложения COM выполняют множество задач без прямого вмешательства программиста. Связь между DLL-файлами, использование счетчиков объектов и операции с буфером обмена — только несколько областей, где можно столкнуться с неожиданностями. В случае их возникновения прежде всего необходимо установить источник проблемы.  
   
  Отладчик Visual Studio поддерживает пошаговое выполнение с заходом в контейнеры и серверы и без него. В том числе поддерживается пошаговое выполнение с заходом в вызовы удаленных процедур (RPC).  

@@ -1,7 +1,7 @@
 ---
 title: Инкрементные сборки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6285b0283a477ec7d658c89cf44c29e386def466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251463"
 ---
 # <a name="incremental-builds"></a>Инкрементные построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [инкрементные сборки](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds).  
-  
   
 Инкрементные сборки — это сборки, оптимизированные таким образом, чтобы целевые объекты с выходными файлами, которые актуальны в отношении соответствующих входных файлов, не выполнялись. Целевой элемент может иметь оба атрибута `Inputs` и `Outputs`, указывающих, какие элементы целевой объект ожидает в качестве входных данных и какие элементы создает в качестве выходных. MSBuild пытается найти однозначное соответствие между значениями этих атрибутов. Если однозначное соответствие существует, MSBuild сравнивает метку времени каждого входного элемента с меткой времени соответствующего выходного элемента. Выходные файлы без однозначного соответствия сравниваются со всеми входными файлами. Элемент считается актуальным, если возраст его выходного файла меньше или равен возрасту его входных файлов.  
   

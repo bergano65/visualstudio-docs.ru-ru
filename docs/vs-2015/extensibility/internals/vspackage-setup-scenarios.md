@@ -1,7 +1,7 @@
 ---
 title: Сценарии установки VSPackage | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253062"
 ---
 # <a name="vspackage-setup-scenarios"></a>Сценарии установки VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сценарии установки VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios).  
-  
 Очень важно для разработки VSPackage установщик для обеспечения гибкости. Например может понадобиться в будущем выпуске исправления безопасности, или можно изменить бизнес-стратегии, которые требуют поддержки тщательного управления версиями side-by-side.  
   
  В [поддержка нескольких версий Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), можно узнать преимущества и проблемы с поддержкой установок side-by-side [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с совместно используемой или side-by-side установок VSPackage. Короче говоря, пакеты VSPackage side-by-side дают наибольшую гибкость для поддержки новых возможностей [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

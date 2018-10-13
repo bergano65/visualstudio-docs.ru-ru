@@ -1,7 +1,7 @@
 ---
 title: Подключение к программе | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab866d46e99c6cdee8300bc194468b115ab59e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30805988b00fa2c25057f75ebdc3b6359444ab5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265938"
 ---
 # <a name="attaching-directly-to-a-program"></a>Присоединение непосредственно к программе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [присоединение непосредственно к программе](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-directly-to-a-program).  
-  
 Пользователи, желающие Отладка программ в процессе, который обычно уже запущена, выполните следующие действия:  
   
 1.  В Интегрированной среде разработки выберите **отладить процессы** команду **средства** меню.  

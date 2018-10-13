@@ -1,7 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, \"Форматирование\" | Документы Майкрософт"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a5a69d556beb8ebf3d3f75720614f7258b1780
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271054"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>"Параметры", "Текстовый редактор", JavaScript, "Форматирование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в ["Параметры", "Текстовый редактор, JavaScript, форматирование](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-formatting).  
-  
   
 Используйте страницу **Форматирование** диалогового окна **Параметры** для задания параметров форматирования для кода в редакторе кода. Чтобы открыть эту страницу, выберите в меню **Сервис** пункт **Параметры**, а затем разверните узел **Текстовый редактор**, **JavaScript** и **Форматирование**.  
   

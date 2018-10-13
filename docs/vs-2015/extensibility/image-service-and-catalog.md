@@ -1,7 +1,7 @@
 ---
 title: Изображение каталог и служба | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265217"
 ---
 # <a name="image-service-and-catalog"></a>Каталог и служба образов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [каталог и служба образов](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Это руководство содержит инструкции и рекомендации по внедрению служба изображений Visual Studio и каталог образа, появившихся в Visual Studio 2015.  
   
  Служба образов, появившихся в Visual Studio 2015 позволяет разработчикам быстро рекомендации изображения для устройства и пользователя выбранная тема для отображения изображения, включая правильный темы для контекста, в котором они отображаются. Внедрение службы образов позволит избежать точки большой проблемой, связанные с обслуживание средств, HDPI масштабирование и темы.  

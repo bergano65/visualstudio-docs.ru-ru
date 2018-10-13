@@ -1,7 +1,7 @@
 ---
 title: Поддерживаемые изменения кода (C#) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 655d80792bf1a2ab6c1af658bcfb6fb3648f5d10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02777efc206fed14c32a2cc73d31e475fd9e2064
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262571"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поддерживаемые изменения кода (C#)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-csharp).  
-  
 Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода. Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут. Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.  
   
  Следующие изменения в коде C# не могут быть применены во время сеанса отладки.  

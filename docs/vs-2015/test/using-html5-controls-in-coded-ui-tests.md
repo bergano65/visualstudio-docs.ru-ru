@@ -1,7 +1,7 @@
 ---
 title: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdab12cf241914d1f41581ae5434ae1776ec2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254466"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса](https://docs.microsoft.com/visualstudio/test/using-html5-controls-in-coded-ui-tests).  
-  
 Закодированные тесты ИП поддерживают некоторые элементы управления HTML5 в Internet Explorer 9 и Internet Explorer 10.  
   
  **Требования**  

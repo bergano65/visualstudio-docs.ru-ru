@@ -1,7 +1,7 @@
 ---
 title: Страница "Безопасность" в конструкторе проектов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb9047f0fb3ebf3eb582220ec91d08612b8b9bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267817"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [страница «безопасность», конструктор проектов](https://docs.microsoft.com/visualstudio/ide/reference/security-page-project-designer).  
-  
   
 Страница **Безопасность** в **конструкторе проектов** позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Дополнительные сведения см. в статье [Управление доступом для кода для приложения ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
   

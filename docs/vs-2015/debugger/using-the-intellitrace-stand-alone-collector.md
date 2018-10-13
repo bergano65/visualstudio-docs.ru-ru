@@ -1,7 +1,7 @@
 ---
 title: Использование автономного сборщика данных IntelliTrace | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267479"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Использование автономного сборщика данных IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование автономного сборщика данных IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 **Автономный сборщик IntelliTrace** позволяет собирать диагностические данные IntelliTrace для приложений на производственных серверах или в других средах без установки Visual Studio на целевом компьютере и без изменения среды в целевой системе. Автономный сборщик IntelliTrace работает в веб-приложениях, а также приложениях SharePoint, WPF и Windows Forms. По окончании сбора данных просто удалите сборщик.  
   
  Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео на канале 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  
@@ -390,7 +388,7 @@ ms.locfileid: "47563332"
   
 -   Из сеанса отладки в Visual Studio Enterprise IntelliTrace, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   
--   В сеансе тестирования в Microsoft Test Manager, см. в разделе [как: сбор данных IntelliTrace для отладки сложных проблем](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
+-   В сеансе тестирования в Microsoft Test Manager см. [Практическое руководство. Сбор данных IntelliTrace для отладки сложных проблем](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
   
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?  
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)  

@@ -1,7 +1,7 @@
 ---
 title: Добавление расширений в определения доменных ЯЗЫКОВ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3b8cb28edb6959511a0cfdf157e323d6706e5f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261083"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Добавление расширений в определения доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление расширений в определения доменных ЯЗЫКОВ](https://docs.microsoft.com/visualstudio/modeling/adding-extensions-to-dsl-definitions).  
-  
 Расширение определения DSL позволяет создать пакет расширений для доменного языка (DSL). Расширение доменного языка, которое содержится в Visual Studio Integration Extension (VSIX), можно установить на компьютере пользователя в так же, как DSL. Дополнительные возможности можно динамически включать и отключать во время выполнения. Могут не быть специально разработан для расширения DSL и расширения можно реализовать более поздней версии или третьими лицами без изменения расширенной DSL.  
   
  Дополнительные возможности можно включают следующее:  

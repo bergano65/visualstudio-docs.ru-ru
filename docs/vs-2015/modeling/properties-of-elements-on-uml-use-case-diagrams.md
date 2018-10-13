@@ -1,7 +1,7 @@
 ---
 title: Схемы вариантов использования свойства элементов на UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd23baadfca51bf669336ab96bf00ee5d4594a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a498b31b6b0585285868d4a6668825db6543aced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251138"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Свойства элементов на схемах вариантов использования UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемы вариантов использования свойства элементов на UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-use-case-diagrams).  
-  
 На схеме вариантов использования UML каждый элемент имеет свойства. Чтобы просмотреть свойства элемента, щелкните правой кнопкой мыши элемент на схеме или в **Обозреватель моделей UML** и нажмите кнопку **свойства**. Свойства отображаются в **свойства** окна.  
   
 > [!NOTE]

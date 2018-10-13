@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::put_loadAddress | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e39ac68468113f371c032f2f29b4613fa229a3b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cec66d9d7287c6432c02c0ec2a1c38f903811c44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259459"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaSession::put_loadAddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-put-loadaddress).  
-  
 Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов.  
   
 ## <a name="syntax"></a>Синтаксис  

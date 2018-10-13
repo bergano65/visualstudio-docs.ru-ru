@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о платформах построения | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7470e082fa7f3877464081c01e7969f786f0b219
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a25dd219a7fc2f99a75ad7b8a6a1e94cd82e2ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246837"
 ---
 # <a name="understanding-build-platforms"></a>Общие сведения о платформах построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [платформах сборки](https://docs.microsoft.com/visualstudio/ide/understanding-build-platforms).  
-  
 Можно сохранять различные версии решения и свойств проекта, которые применяются к разным целевым платформам. Например, можно создать конфигурацию отладки, предназначенную для платформы x86, и конфигурацию отладки, предназначенную для платформы x64. Можно быстро изменить активную среду так, чтобы без труда создавать несколько конфигураций.  
   
 ## <a name="in-this-section"></a>В этом разделе  

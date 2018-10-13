@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Связывание типа контента с расширением имени файла | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261733"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа контента с расширением имени файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: связывание типа контента с расширением имени файла](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension).  
-  
 Можно определить свой собственный тип содержимого и связать его расширение имени файла с помощью Managed Extensibility Framework (MEF) расширения редактора. В некоторых случаях расширение имени файла уже был определен на языковой службе; Тем не менее использовать его в MEF по-прежнему необходимо связать его с типом содержимого.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -40,7 +38,7 @@ ms.locfileid: "47573283"
   
 ## <a name="defining-the-content-type"></a>Определение типа содержимого  
   
-1.  Добавьте файл класса и назовите его `FileAndContentTypes`.  
+1.  Добавьте файл класса с именем `FileAndContentTypes`.  
   
 2.  Добавьте ссылки на следующие сборки:  
   
