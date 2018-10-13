@@ -1,7 +1,7 @@
 ---
 title: Распространение приложений изолированной оболочки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7388a5b723b5346f1f653024215c16ba474fa48a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05e6a88c9da52492a49462880a04e578feadb5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305816"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Распространение приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [распространение приложений изолированной оболочки](https://docs.microsoft.com/visualstudio/extensibility/distributing-isolated-shell-applications).  
-  
 Чтобы создать приложение изолированной оболочки, необходимо установить Visual Studio и Visual Studio SDK. Распространение приложения на компьютерах других пользователей или клиентов, необходимо включить специальные распространяемого пакета для изолированной оболочки.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Предварительные требования для распространения приложений изолированной оболочки  

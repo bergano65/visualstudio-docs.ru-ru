@@ -1,7 +1,7 @@
 ---
 title: Создание таблиц подстановки в приложениях WPF | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561048"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303346"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание таблиц подстановки в приложениях WPF](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications).  
-  
   
 Термин *таблицы подстановки* (иногда называется *подстановочной привязкой*) описывает элемент управления, отображающий сведения из таблицы данных, на основе значения поля внешнего ключа в другой таблице. Можно создать таблицу подстановки, перетащив главного узла родительской таблицы или объекта в **источников данных** окно в элемент управления, который уже привязан к столбцу или свойству в связанной дочерней таблице.  
   
@@ -46,7 +44,7 @@ ms.locfileid: "47561048"
   
 1.  Добавьте один из следующих типов источников данных с помощью связанных данных в проект:  
   
-    -   Набор данных или модели EDM. Дополнительные сведения см. в разделе [как: подключение к данным в базе данных](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Набор данных или модели EDM. Дополнительные сведения см. в разделе [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
   
     -   Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [как: подключение к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
   

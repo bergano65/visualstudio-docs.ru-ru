@@ -1,7 +1,7 @@
 ---
 title: Интеграция XML-литералов с обозревателем XML-схемы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4089c34ab4ef65f4c0b468000dd06def5af4559e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295884"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Интеграция XML-литералов с обозревателем XML-схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [интеграции XML-литералов с обозревателем XML-схемы](https://docs.microsoft.com/visualstudio/xml-tools/integration-of-xml-literals-with-xml-schema-explorer).  
-  
   
 Visual Basic поддерживает XML-литералы, что означает, что может включать XML-фрагменты непосредственно в код Visual Basic. Дополнительные сведения см. в разделе [Общие сведения о литералах XML](http://go.microsoft.com/fwlink/?LinkId=140325).  
   

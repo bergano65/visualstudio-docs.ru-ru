@@ -1,7 +1,7 @@
 ---
 title: Диалоговое окно параметров сообщения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0960c9fe2454affc38766da42a5035b3d95896d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7824ce5a0e65b762d992392b0d9b0e267d85e236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286524"
 ---
 # <a name="message-options-dialog-box"></a>Диалоговое окно "Параметры сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [диалоговое окно "Параметры сообщения"](https://docs.microsoft.com/visualstudio/debugger/message-options-dialog-box).  
-  
 Используйте это диалоговое окно для выбора сообщений, отображаемых в [представления сообщений](../debugger/messages-view.md). Чтобы отобразить это диалоговое окно, выберите **сообщений журнала** из **Spy** меню.  
   
 ## <a name="in-this-section"></a>В этом разделе  

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание шейдера текстуры с использованием оттенков серого | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304802"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Практическое руководство. Создание шейдера текстуры с использованием оттенков серого
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создание шейдера текстуры с использованием оттенков серого](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader).  
-  
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера текстуры с использованием оттенков серого. Этот шейдер изменяет значение цвета RGB в образце текстуры, а затем использует его вместе с неизмененным значением альфа-фактора, чтобы задать окончательный цвет.  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>Создание шейдера текстуры с использованием оттенков серого  

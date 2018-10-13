@@ -1,7 +1,7 @@
 ---
 title: Отладка ядра | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282689"
 ---
 # <a name="debug-engine"></a>Модуль отладки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [модуль отладки](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine).  
-  
 Отладчик (DE) работает с интерпретатором или операционной системы, для предоставления служб отладки, например выполнения элемента управления, точки останова и оценки выражений. DE несет ответственность за наблюдение за состоянием отлаживаемой программы. В этой ситуации DE использует любые методы доступны на него в поддерживаемую среду выполнения, ли из ЦП или с помощью интерфейсов API, предоставляемый средой выполнения.  
   
  Например общеязыковой среды выполнения (CLR) предоставляет механизмы для наблюдения за выполняющейся программе через интерфейсы ICorDebugXXX. DE, который поддерживает среду CLR использует соответствующие интерфейсы ICorDebugXXX для отслеживания отлаживаемой программы управляемого кода. Он передает любые изменения состояния для диспетчер отладки сеансов (SDM), который перенаправляет эти сведения в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки.  

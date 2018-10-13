@@ -1,7 +1,7 @@
 ---
 title: Приступая к работе с Python | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47593257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275292"
 ---
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Python в Visual Studio](https://docs.microsoft.com/visualstudio/python/python-in-visual-studio).  
-  
 Инструменты Python для Visual Studio (PTVS), — это бесплатный, [открытый](https://github.com/Microsoft/ptvs) подключаемый модуль для Visual Studio, который получить мощные Разработка на Python.  
   
 ## <a name="python-the-language"></a>Язык Python.

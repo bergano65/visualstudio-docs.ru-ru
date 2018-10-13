@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Создание глифа поля | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271002"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Пошаговое руководство. Создание глифа поля
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: создание глифа поля](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph).  
-  
 Можно настроить внешний вид поля редактора с помощью расширения пользовательского редактора. В этом пошаговом руководстве помещает пользовательского глифа в поле индикаторов, каждый раз, когда отображается слово «todo» в комментарии к коду.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -45,7 +43,7 @@ ms.locfileid: "47562879"
   
 #### <a name="to-define-the-glyph"></a>Для определения глифа  
   
-1.  Добавьте файл класса и назовите его `TodoGlyphFactory`.  
+1.  Добавьте файл класса с именем `TodoGlyphFactory`.  
   
 2.  Добавьте следующий код с помощью объявлений.  
   

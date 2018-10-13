@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Добавление схем классов в проекты (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0264aa4a514b8e508ef9d06ba75f212b629b99c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271392"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Практическое руководство. Добавление схем классов в проекты (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: добавление схем классов в проекты (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-add-class-diagrams-to-projects-class-designer).  
-  
 Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект Visual C# .NET, Visual Basic .NET или C++ диаграмму классов. Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.  
   
  Диаграммы классов не могут быть созданы для проектов с общим кодом для нескольких приложений. Сведения о создании схем классов UML см. в разделе [Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  

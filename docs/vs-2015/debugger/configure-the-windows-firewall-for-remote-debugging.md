@@ -1,7 +1,7 @@
 ---
 title: Настройка брандмауэра Windows для удаленной отладки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273888"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Настройка брандмауэра Windows для удаленной отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка брандмауэра Windows для удаленной отладки](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging).  
-  
 В этом разделе описывается настройка брандмауэра для обеспечения удаленной отладки на компьютерах со следующими операционными системами:  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ ms.locfileid: "47557950"
 8.  Новое правило должно появиться в списке **Правила для входящих подключений** или **Правила для исходящих подключений** .  
   
 ## <a name="see-also"></a>См. также  
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Запись графических сведений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273017"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Запись графических сведений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: захват графической информации](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information).  
-  
-В этом пошаговом руководстве демонстрируется использование [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] диагностики графики вручную захватывать графические данные из приложения Direct3D.  
+В этом пошаговом руководстве показано, как с помощью диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] вручную захватывать графические данные из приложения Direct3D.  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
@@ -39,7 +37,7 @@ ms.locfileid: "47559517"
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Включение захвата графических данных после загрузки проекта или решения  
   
-1.  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], загрузить приложение, которое требуется захватывать графические данные из файла проекта или решения.  
+1.  В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]загрузите файл проекта или решения файла для приложения, из которого нужно захватывать графические данные.  
   
 2.  На панели инструментов "Диагностика графики" нажмите кнопку **Начать диагностику**.  
   
@@ -69,7 +67,7 @@ ms.locfileid: "47559517"
 -   Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>См. также  
- [Захват графической информации](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 

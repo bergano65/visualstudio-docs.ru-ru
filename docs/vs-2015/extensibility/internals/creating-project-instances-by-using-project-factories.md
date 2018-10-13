@@ -1,7 +1,7 @@
 ---
 title: Создание экземпляров проекта с помощью фабрик проектов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288344"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание экземпляров с помощью проекта фабрик проектов](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories).  
-  
 Типы проектов в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использовать *фабрики проектов* для создания экземпляров объектов проекта. Фабрику проекта похоже на стандартный класс фабрики для создаваемых посредством функции CoCreateInstance COM-объектов. Тем не менее, объекты проекта не создаваемых посредством функции CoCreateInstance: они могут создаваться только с помощью фабрики проектов.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE вызывает фабрики проектов, которые реализованы в пакете VSPackage, когда пользователь загружает существующий проект или создает новый проект в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Новый объект проекта предоставляет интегрированную среду разработки достаточно сведений для заполнения в обозревателе решений. Новый объект проекта также обеспечивает необходимые интерфейсы для поддержки всех соответствующих действий пользовательского интерфейса, инициированные интегрированной среды разработки.  

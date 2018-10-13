@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отладка исполняемого файла, не в состав решения Visual Studio | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278793"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отладка исполняемого файла не в состав решения Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).  
-  
 Иногда требуется отладка исполняемого файла, не являющегося частью проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это может быть исполняемый файл, созданный вами без использования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или полученный от кого–нибудь еще.  
   
  Стандартным решением этой проблемы является запуск исполняемого файла (не из Visual Studio) и присоединение к нему с использованием отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе[подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
@@ -68,9 +66,9 @@ ms.locfileid: "47572338"
 5.  Запустите исполняемый файл, выбрав команду выполнения, такие как **запустить**, из **Отладка** меню.  
   
     > [!NOTE]
-    >  Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту функцию, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    >  Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту возможность, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
-     При отладке исполняемого файла без исходного кода доступные функции отладки ограничены, независимо от того, происходит ли присоединение к исполняемому файлу или же исполняемый файл добавляется в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если исполняемый файл был скомпонован без отладочной информации в совместимом формате, доступные функции крайне ограничены. Если имеется исходный код,лучшим решением является его импорт в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создание отладочной сборки исполняемого файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     При отладке исполняемого файла без исходного кода доступные возможности отладки ограничены, независимо от того, происходит ли присоединение к исполняемому файлу или же исполняемый файл добавляется в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если исполняемый файл был скомпонован без отладочной информации в совместимом формате, доступные функции крайне ограничены. Если имеется исходный код,лучшим решением является его импорт в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создание отладочной сборки исполняемого файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   

@@ -1,7 +1,7 @@
 ---
 title: Представление процессов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288994"
 ---
 # <a name="processes-view"></a>Представление процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление процессов](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 В представлении процессов дерево всех активных процессов в системе. Отображаются имя процесса идентификатор и модуль. В представлении процессов следует используйте, если вы хотите изучить процесс конкретной системе, который обычно соответствует исполняемой программой. Процессы идентифицируются по именам модулей, или они обозначены «системные процессы».  
   
  Microsoft Windows поддерживает несколько процессов. Каждый процесс может иметь один или несколько потоков и каждый поток может иметь одно или несколько окон верхнего уровня. Каждое окно верхнего уровня может принадлежать ряд windows. Объект "+" символа означает, что уровень свернут. Свернутое представление состоит из одной строке для каждого процесса. Щелкните знак ", чтобы повысить уровень" + ".  

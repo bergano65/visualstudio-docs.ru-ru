@@ -1,7 +1,7 @@
 ---
 title: Задача AL (компоновщик сборок) |Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280479"
 ---
 # <a name="al-assembly-linker-task"></a>Задача AL (компоновщик сборок)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача AL (компоновщик сборок)](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task).  
-  
   
 Задача AL включает AL.exe — инструмент, распространяемый с [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Этот компоновщик сборок используется для создания сборки с манифестом из одного или нескольких файлов, являющихся модулями или файлами ресурсов. Компиляторы и среды разработки обеспечивают указанные возможности, в связи с чем необходимость в непосредственном использовании этого задания возникает достаточно редко. Компоновщик сборок особенно полезен, если нужно создать единую сборку из нескольких файлов компонентов, например при разработке на нескольких языках. Эта задача не объединяет модули в один файл сборки. Отдельные модули должны оставаться распределенными и доступными для правильной загрузки результирующей сборки. Дополнительные сведения об инструменте AL.exe см. в статье [Al.exe (компоновщик сборок)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   

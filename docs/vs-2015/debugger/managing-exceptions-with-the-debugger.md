@@ -1,7 +1,7 @@
 ---
 title: Управление исключениями с помощью отладчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285926"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Управление исключениями с помощью отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление исключениями с помощью отладчика Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Исключение указывает на состояние ошибки, возникающее при выполнении программы. Вы можете и должны предоставить обработчики, реагирующие на наиболее важные исключения. Важно знать, как настроить отладчик для останова исключений, которые требуется просмотреть.  
   
  При возникновении исключения отладчик записывает его сообщение в окно «Вывод». Он может прервать выполнение в следующих случаях:  
@@ -58,7 +56,7 @@ ms.locfileid: "47563323"
   
 -   если отладчик настроен на прерывание выполнения сразу же после возникновения исключения, до вызова любого обработчика;  
   
--   Если вы задали [Just My Code](../debugger/just-my-code.md), и отладчик настроен на прерывание по любому исключению, не обрабатываемому в коде пользователя.  
+-   если задан параметр [Just My Code](../debugger/just-my-code.md)и отладчик настроен на прерывание по любому исключению, не обрабатываемому в коде пользователя.  
   
 > [!NOTE]
 >  В ASP.NET существует обработчик исключений верхнего уровня, отображающий станицы ошибок в браузере. Он не прерывает выполнение до тех пор, пока не будет включен параметр **Только мой код** . Пример см. в разделе [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) ниже.  

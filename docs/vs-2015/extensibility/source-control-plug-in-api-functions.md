@@ -1,7 +1,7 @@
 ---
 title: Источник функции API подключаемого модуля управления | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293043"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [функции API подключаемого модуля управления источника](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions).  
-  
 API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны быть реализованы системы управления версиями, подключаемый модуль, в соответствии с этого API. Подписи каждой функции и семантики, связанные с битовых флагов, и другие параметры, описаны в этой справке.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>Инициализация и функций по обслуживанию  

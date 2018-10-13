@@ -1,7 +1,7 @@
 ---
 title: Анализ качества кода Visual Basic и C# в приложениях Store, с помощью функций анализа статического кода Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0d8909e63cbff6824b0664fd36039258940dad9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306118"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода Visual Basic и C# в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [качества в приложениях Store, с помощью функций анализа статического кода Visual Studio кода анализа Visual Basic и C#](https://docs.microsoft.com/visualstudio/test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
  Средство анализа кода в Visual Studio Express анализирует код с целью найти общие дефекты и нарушения рекомендаций программирования. Предупреждения, возникающие в ходе анализа кода, отличаются от ошибок и предупреждений компилятора, потому что средство анализа кода выполняет поиск конкретных шаблонов кода, которые являются допустимыми, но, тем не менее, могут вызвать проблемы при использовании кода вами или другими специалистами. Анализ кода позволяет находить дефекты в коде, которые невозможно обнаружить в процессе тестирования. Регулярный запуск средства анализа кода в процессе разработки позволяет создать приложение более высокого качества.  

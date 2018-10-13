@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание общего выходного каталога | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a132f604e1890c0d7144ca0b280fc46d7cd7fea3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e53b6e110040763c93c2786e81d82f105fa5eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292062"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Практическое руководство. Создание общего выходного каталога
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Создание общего выходного каталога](https://docs.microsoft.com/visualstudio/ide/how-to-build-to-a-common-output-directory).  
-  
 По умолчанию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает каждый проект в отдельной папки внутри решения. Вы можете изменить пути вывода сборки для проекта, чтобы принудительно поместить все выходные данные в одну папку.  
   
 ### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Помещение всех выходных данных решения в общий каталог  

@@ -1,7 +1,7 @@
 ---
 title: Визуализатор параллелизма | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e265562b325352b42741ca505233a64e0ac1af
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5ac795c2068a27d673b6c603d4ef8c7d3be056cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304191"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [визуализатор параллелизма](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer).  
-  
 ПРИМЕЧАНИЕ.]
 >  Визуализатор параллелизма — это дополнительное расширение Visual Studio. Загрузите визуализатор параллелизма и средства сбора данных визуализатора параллелизма по следующим ссылкам:  
 >   
@@ -50,7 +48,7 @@ ms.locfileid: "48879347"
   
 ## <a name="related-topics"></a>Связанные разделы  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Представление "Использование"](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|  
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|  
