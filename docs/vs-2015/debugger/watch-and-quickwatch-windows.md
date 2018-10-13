@@ -1,7 +1,7 @@
 ---
 title: Посмотрите, как и Windows "Быстрая проверка" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173632"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Окна "Контрольные значения" и "Быстрая проверка"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Установка контрольных значений для переменных в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Можно использовать **Watch** (**отладка / Windows / контрольные значения / смотреть (1, 2, 3, 4)**) и **"Быстрая проверка"** (щелкните правой кнопкой мыши на переменную / **Отладка / "Быстрая проверка"**) для наблюдения за переменными и выражениями во время сеанса отладки.  Отличие в том, что в окне **Контрольные значения** могут одновременно выводиться несколько переменных, а в окне **Быстрая проверка** — только одна.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Наблюдение за одной переменной с помощью окна "Быстрая проверка"  

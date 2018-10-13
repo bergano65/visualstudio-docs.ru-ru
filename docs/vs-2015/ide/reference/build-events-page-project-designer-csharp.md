@@ -1,7 +1,7 @@
 ---
 title: Страница "События сборки" в конструкторе проектов (C#) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86ada1d23490c4e154cbdb7ba17f81acbee1796a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571410"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223101"
 ---
 # <a name="build-events-page-project-designer-c"></a>Страница "Событий построения" в конструкторе проектов (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [события страница "сборка", конструктор проектов (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-events-page-project-designer-csharp).  
-  
   
 Страница **События сборки** в **конструкторе проектов** позволяет задать инструкции по конфигурации сборки. На ней также можно указать условия, при которых будут выполняться события, следующие после сборки. Дополнительные сведения см. в статьях [Практическое руководство. Указание событий сборки (C#)](../../ide/how-to-specify-build-events-csharp.md) и [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   

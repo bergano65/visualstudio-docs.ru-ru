@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Профилирование кода JavaScript в веб-страницах | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a54321b835cad9f37983a386c93f46e26bbdd5ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176479"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript в веб-страницах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: профилирования кода JavaScript на веб-страницах](https://docs.microsoft.com/visualstudio/profiling/how-to-profile-javascript-code-in-web-pages).  
-  
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] могут собирать данные о производительности для кода JavaScript, который выполняется в веб-приложении [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], на произвольной веб-странице или в приложении JavaScript путем использования метода профилирования инструментирования.  
   
  **Требования**  

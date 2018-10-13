@@ -1,7 +1,7 @@
 ---
 title: Задание фонового изображения схемы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240556"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задание фонового изображения схемы](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 С помощью пользовательского кода в пакете SDK для визуализации и моделирования в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно установить фоновое изображение для сгенерированного конструктора.  
   
 ## <a name="setting-the-background-image"></a>Установка фонового изображения  
@@ -52,7 +50,7 @@ ms.locfileid: "47561697"
   
 11. Если файла Resources.Designer.cs нет, выберите файл Resources.resx в **обозревателе решений**.  
   
-12. В **свойства** окне `Custom Tool` свойства `ResXFileCodeGenerator`.  
+12. В окне **Свойства** присвойте свойству `Custom Tool` значение `ResXFileCodeGenerator`.  
   
 13. В **обозревателе решений**щелкните правой кнопкой мыши проект Dsl, выберите **добавить**и нажмите кнопку **новую папку**.  
   

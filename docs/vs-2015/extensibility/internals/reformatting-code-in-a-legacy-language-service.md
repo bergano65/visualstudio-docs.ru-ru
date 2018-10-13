@@ -1,7 +1,7 @@
 ---
 title: Переформатирование кода в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5361706e4dbb3c009de903a53cc78fcb7b93634
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53cdbc963c7701d0073634ef133c2ef2d54fa9a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211033"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Переформатирование кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [переформатирование кода в языковой службе прежних версий](https://docs.microsoft.com/visualstudio/extensibility/internals/reformatting-code-in-a-legacy-language-service).  
-  
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] исходный код может быть переформатирован, нормализация использование отступов и пробелов. Это могут быть Вставка или удаление пробелы или знаки табуляции в начале каждой строки, добавляя новые между строками или заменив пробелы, символы табуляции или знаки табуляции пробелами.  
   
 > [!NOTE]

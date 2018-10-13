@@ -1,7 +1,7 @@
 ---
 title: Моделирование требований пользователей | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215830"
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [моделирование требований пользователей](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
-  
 Visual Studio помогает понимать и обсуждать потребности пользователей, а также информировать о них других. Для этого можно составлять схемы о деятельности пользователей и о том, как система помогает им в достижении целей. Модель требований — это набор этих схем, каждая из которых иллюстрирует отдельный аспект потребностей пользователей. Демонстрационные видеоматериалы см. в разделе [Моделирование бизнес-среды](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -143,7 +141,7 @@ Visual Studio помогает понимать и обсуждать потре
 |Элементы концептуальной схемы классов|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|  
 |Разработка кода на основе концептуальных классов|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
- В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира. Следующие [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширение делает Ненаправленные стрелки стрелками по умолчанию: [образец: возможности моделирования домена UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира. Следующее расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] делает ненаправленные стрелки стрелками по умолчанию: [Образец: возможности моделирования домена UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.  

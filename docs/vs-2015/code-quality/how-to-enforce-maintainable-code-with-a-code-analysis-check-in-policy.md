@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: обеспечение простоты поддержки кода с политику возврата с анализом кода | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174855"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Практическое руководство. Обеспечение простоты поддержки кода с помощью политики возврата с анализом кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: принудительное применение поддерживаемого кода с политикой анализа кода возврата](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy).  
-  
 Разработчики могут использовать средство метрики кода для измерения сложности и удобства поддержки кода, но они не могут вызывать метрики кода как часть политики возврата. Тем не менее команда может включить правила анализа кода, проверка соответствия кода стандартам метрик кода и принудительное применение правил с помощью политик возврата. Дополнительные сведения о метриках кода см. в разделе [значения метрик кода](../code-quality/code-metrics-values.md).  
   
  Разработчики могут включить глубина наследования, Связанность классов, индекс удобства поддержки и сложность правил для обеспечения простоты поддержки кода с помощью политик возврата анализа кода. Все четыре этих правил можно найти в категории «Правила удобства поддержки» в редактор политики анализа кода.  

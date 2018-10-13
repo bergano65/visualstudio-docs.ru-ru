@@ -1,7 +1,7 @@
 ---
 title: Разработка тестов на основе модели | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d64356c9b5fe4e70c928303633a35d6cb4cc045b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236760"
 ---
 # <a name="develop-tests-from-a-model"></a>Разработка тестов на основе модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Разработка тестов из модели](https://docs.microsoft.com/visualstudio/modeling/develop-tests-from-a-model).  
-  
 Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований. Если вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)], также поддерживаются ссылки между моделями и тестами.  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эти функции, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

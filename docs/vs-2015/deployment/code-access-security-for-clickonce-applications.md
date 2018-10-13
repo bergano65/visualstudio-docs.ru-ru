@@ -1,7 +1,7 @@
 ---
 title: Управление доступом для кода для приложений ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197981"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Управление доступом для кода для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [доступом для кода для приложений ClickOnce](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 Приложения ClickOnce основаны на платформе .NET Framework, и к ним могут применяться ограничения управления доступом для кода. Важно понимать влияние управления доступом для кода, чтобы писать приложения ClickOnce соответствующим образом.  
   
  Управление доступом для кода — это механизм в платформе .NET Framework, позволяющий ограничить доступ кода к защищенным ресурсам и операциям. Следует настроить разрешения управления доступом для кода для приложения ClickOnce, чтобы использовать зону, подходящую для расположения установщика приложения. В большинстве случаев вы можете выбрать зону **Интернет** для ограниченного набора разрешений или зону **Локальная интрасеть** для более обширного набора разрешений.  
@@ -105,7 +103,7 @@ ms.locfileid: "47558951"
  [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
  [Страница "Безопасность" в конструкторе проектов](../ide/reference/security-page-project-designer.md)
 

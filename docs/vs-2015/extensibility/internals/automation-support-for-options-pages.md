@@ -1,7 +1,7 @@
 ---
 title: Поддержка автоматизации страниц параметров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f7a9a9cf13a50cf13817b4c3b12bd1da1e8370b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd74c98b3ad2951437e8d0acdfb98c02e5dfa5e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220861"
 ---
 # <a name="automation-support-for-options-pages"></a>Поддержка автоматизации страниц параметров
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Поддержка автоматизации страниц параметров](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-support-for-options-pages).  
-  
 Пакеты VSPackage могут предоставлять пользовательскую **параметры** диалоговых окон для **средства** меню (страницы параметров средств) в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и их можно сделать доступными для модели автоматизации.  
   
 ## <a name="tools-options-pages"></a>Страницы параметров средств  

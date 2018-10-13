@@ -1,7 +1,7 @@
 ---
 title: Развертывание и безопасность технологии ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: be076232ee9214ad0039421c7c5610fad3f4c3b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232106"
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развертывание и безопасность технологии ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это технология развертывания, которая позволяет создавать самостоятельно обновляющиеся приложения Windows, которые могут устанавливаться и запускаться с минимальным вмешательством пользователя. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проектами с помощью Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++, см. в разделе [развертывание ClickOnce для приложений Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] предназначена для решения трех основных проблем развертывания:  
@@ -107,9 +105,9 @@ ms.locfileid: "47563299"
 |[Страница публикации в конструкторе проектов](../ide/reference/publish-page-project-designer.md)|Создания и изменения манифестов приложения и развертывания для приложений Visual Basic и Visual C#.|  
 |[Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Создает манифестов приложения и развертывания для приложений Visual Basic, Visual C# и Visual C++.<br /><br /> Подписывает и повторного подписывания манифестов приложения и развертывания.<br /><br /> Можно запустить из пакетных сценариев и командной строке.|  
 |[MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Создания и изменения манифестов приложения и развертывания.<br /><br /> Подписывает и повторного подписывания манифестов приложения и развертывания.|  
-|[Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Создает манифест приложения.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справочник по MSBuild](../msbuild/msbuild-reference.md).|  
-|[Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Создает манифест развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справочник по MSBuild](../msbuild/msbuild-reference.md).|  
-|[Задача SignFile](../msbuild/signfile-task.md)|Знаками манифестов приложения и развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справочник по MSBuild](../msbuild/msbuild-reference.md).|  
+|[Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Создает манифест приложения.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|  
+|[Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Создает манифест развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|  
+|[Задача SignFile](../msbuild/signfile-task.md)|Знаками манифестов приложения и развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Разработка приложения для создания манифестов приложения и развертывания.|  
   
  В следующей таблице показаны версии .NET Framework, необходимые для поддержки приложений ClickOnce в следующих браузерах.  

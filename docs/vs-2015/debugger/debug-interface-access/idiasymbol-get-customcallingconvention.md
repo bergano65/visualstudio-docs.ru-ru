@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_customCallingConvention | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b8e9595f325186f855a25839aaaab005f9f0057
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8cd5fde8414b6a83fd45e559e6e2580de546fe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184604"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaSymbol::get_customCallingConvention](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-customcallingconvention).  
-  
 Получает флаг, указывающий, имеет ли функция пользовательское соглашение об именовании.  
   
 ## <a name="syntax"></a>Синтаксис  

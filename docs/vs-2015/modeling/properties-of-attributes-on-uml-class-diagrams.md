@@ -1,7 +1,7 @@
 ---
 title: Свойства атрибутов на UML схемах классов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173079"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Свойства атрибутов на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемах классов свойства атрибутов на UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams).  
-  
 На схеме классов UML можно добавлять *атрибуты* в классы и интерфейсы. Атрибут определяет значения, которые могут присваиваться экземплярам класса или интерфейса.  
   
  Чтобы добавить атрибут, щелкните класс или интерфейс правой кнопкой мыши и выберите команду **Добавить**, а затем **Атрибут**.  

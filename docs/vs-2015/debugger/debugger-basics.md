@@ -1,7 +1,7 @@
 ---
 title: Основы отладки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69197e3eca71398872343eff3e5d36e9649ead6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c54038d662acb772e5437cdc6ab9443634d33b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208173"
 ---
 # <a name="debugger-basics"></a>Основы отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [основы отладки](https://docs.microsoft.com/visualstudio/debugger/debugger-basics). 
-
 Отладчик Visual Studio позволяет наблюдать за поведением программы во время выполнения и искать таким образом логические ошибки. Отладчик работает со всеми языками программирования Visual Studio и библиотеками. С помощью отладчика можно прерывать выполнение для пошагового выполнения кода и оценки переменных в приложении.
   
 ## <a name="in-this-section"></a>В этом разделе  

@@ -1,7 +1,7 @@
 ---
 title: Параметров сборки взаимодействия Visual Studio маршалинг | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195023"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Маршалинг параметров сборки взаимодействия Visual Studio
 Пакеты VSPackage, написаны в управляемом коде может возникнуть необходимость вызвать либо вызываться неуправляемым кодом COM. Как правило аргументы метода преобразования или маршалинга, автоматически, упаковщик взаимодействия. Тем не менее иногда аргументы нельзя преобразовать простым способом. В таких случаях параметры прототип метода сборки взаимодействия, используются для сопоставления параметров функции COM как можно точнее. Дополнительные сведения см. в разделе [маршалинг взаимодействия](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  

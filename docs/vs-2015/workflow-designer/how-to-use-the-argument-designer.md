@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использовать конструктор аргументов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: eaff53dc04c0ad2367147ae91c7de756e5ca4366
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206626"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
 По сравнению с предыдущими версиями [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], конструктор аргументов упрощает передачу данных в действие и из действия. Конструктор нажав **аргументы** кнопку в левом нижнем углу поля визуальной разработки. Конструктор содержит список аргументов, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **значение по умолчанию** столбца. Каждый аргумент содержит имя, направление передачи свойства (IN, OUT или IN/OUT), тип и значение выражения по умолчанию (если такое существует). Имя и значение выражения по умолчанию представляют собой изменяемые текстовые поля, а тип и направление - раскрывающееся меню. [!INCLUDE[crabout](../includes/crabout-md.md)] аргументы, см. в разделе [переменных и аргументов](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  

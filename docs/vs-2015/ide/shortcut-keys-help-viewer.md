@@ -1,7 +1,7 @@
 ---
 title: Сочетания клавиш (окно справки) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0597637e0611a9a444a9fc763e7479daa787dd85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbeac2d261e24fe8ed7df406045ce7d3d6d0fe3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195641"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Сочетания клавиш (средство просмотра справки)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сочетания клавиш (средство просмотра справки)](https://docs.microsoft.com/visualstudio/ide/shortcut-keys-help-viewer).  
-  
 Навигацию в окне справки (Майкрософт) можно выполнять с помощью сочетаний клавиш, которые представлены в следующей таблице.  
   
 |Область|Нажатие клавиш|Действие|  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Отладка исходного кода .NET Framework | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240621"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Практическое руководство. Отладка исходного кода .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Отладка исходного кода .NET Framework](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source).  
-  
 Самую последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предусмотрены новые возможности для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] отладки. Для отладки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] источника, необходимо иметь доступ к символам отладки для кода. Также необходимо включить пошаговое выполнение [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] источника.  
   
  Вы можете включить [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] пошаговое выполнение и загрузки отладочных символов в **параметры** диалоговое окно. При включении загрузки символов можно выбрать один из двух вариантов: загрузить символы немедленно или просто включить эту возможность для загрузки символов в дальнейшем. Если не загружать символы сразу же, они будут загружены в начале следующего сеанса отладки приложения. Можно также выполнить вручную из **модули** окна или **стек вызовов** окна.  

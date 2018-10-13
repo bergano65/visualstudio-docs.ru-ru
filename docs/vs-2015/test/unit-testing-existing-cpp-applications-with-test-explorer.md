@@ -1,7 +1,7 @@
 ---
 title: Модульное тестирование существующих приложений C++ с использованием обозревателя тестов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172462"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Модульное тестирование существующих приложений C++ с использованием обозревателя тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [модульное тестирование существующих приложений C++ с использованием обозревателя тестов](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Перед изменением существующего приложения рекомендуется убедиться, что оно хорошо охвачено модульными тестами. Это уменьшает шансы того, что будущие изменения создадут новые ошибки. Если приложение не содержит модульные тесты, их можно добавить с помощью методик, продемонстрированных в этом разделе. В этом разделе описывается добавление модульных тестов для существующего кода Visual C++, начиная с выбора метода тестирования кода и заканчивая созданием, кодированием и выполнением тестов.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Определение способа тестирования кода  

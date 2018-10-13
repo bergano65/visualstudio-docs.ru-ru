@@ -1,7 +1,7 @@
 ---
 title: Свойства определения доменного языка | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5c5ebb4672cdbb82692dc01339409ef7fa91c2d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b4325d2329bbaf402dcf2f059c51b5a796bdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197370"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Свойства определения доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства определения доменного языка](https://docs.microsoft.com/visualstudio/modeling/properties-of-a-dsl-definition).  
-  
 Определение свойств DslDefinition *доменный язык* определения свойств, таких как нумерация версий. Свойства DslDefinition отображаются в **свойства** окна, щелкнув пустую область схемы в *конструктора доменного языка*.  
   
  Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  

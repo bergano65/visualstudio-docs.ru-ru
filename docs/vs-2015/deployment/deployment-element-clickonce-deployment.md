@@ -1,7 +1,7 @@
 ---
 title: '&lt;развертывание&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231549"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;развертывание&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;развертывания&gt; элемент (развертывание ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment).  
-  
 Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -68,7 +66,7 @@ ms.locfileid: "47568440"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `deployment` обязателен и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1`. Элемент имеет следующие атрибуты.  
+ Элемент `deployment` является обязательным и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1` . Элемент имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -81,12 +79,12 @@ ms.locfileid: "47568440"
  `deployment` Элемент также содержит следующие дочерние элементы.  
   
 ## <a name="subscription"></a>subscription  
- Необязательный. Содержит `update` элемент. `subscription` Элемент не имеет атрибутов. Если `subscription` элемент не существует, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения никогда не будет проверять наличие обновлений. Если `install` атрибут `deployment` элемент является `false`, `subscription` элемент обрабатывается, так как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, запускаемое из сети, всегда использует последнюю версию.  
+ Необязательный. Содержит `update` элемент. У элемента `subscription` нет атрибутов. Если `subscription` элемент не существует, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения никогда не будет проверять наличие обновлений. Если `install` атрибут `deployment` элемент является `false`, `subscription` элемент обрабатывается, так как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, запускаемое из сети, всегда использует последнюю версию.  
   
 ## <a name="update"></a>обновить  
  Обязательно. Этот элемент является дочерним элементом `subscription` элемент и содержит либо `beforeApplicationStartup` или `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.  
   
- `update` Элемент не имеет атрибутов.  
+ У элемента `update` нет атрибутов.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Необязательный. Этот элемент является дочерним элементом `update` элемента и не имеет атрибутов. Когда `beforeApplicationStartup` существует элемент, приложение будет заблокирован при [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] проверяет наличие обновлений, если клиент находится в сети. Если этот элемент не существует, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] будет проверять наличие обновлений, основываясь на значениях, заданных для `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.  

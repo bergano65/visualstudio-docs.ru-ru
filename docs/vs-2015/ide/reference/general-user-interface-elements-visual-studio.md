@@ -1,7 +1,7 @@
 ---
 title: Общие элементы пользовательского интерфейса (Visual Studio) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff98fb47f90869dda1a469bb3bfd224c0f4c16a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214648"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Общие элементы пользовательского интерфейса (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [Общие элементы пользовательского интерфейса (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio).
-
 В этом разделе описываются некоторые элементы пользовательского интерфейса интегрированной среды разработки (IDE).
 
 ## <a name="in-this-section"></a>В этом разделе

@@ -1,7 +1,7 @@
 ---
 title: Пример расширения Excel. Класс TechnologyManager | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190584"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пример расширения Excel: класс TechnologyManager](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Этот класс расширяет класс <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> и отвечает за предоставление основных служб для расширения [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Базовый класс содержит множество методов, однако в этом примере используется только их подмножество.  
   
  Некоторые методы лишь возвращают значение свойства. Многие методы используются разработчиками для переопределения алгоритмов по умолчанию, встроенных в модуль закодированных тестов пользовательского интерфейса. Эти методы выдают исключение <xref:System.NotSupportedException> или возвращают значение `null`, в результате чего средой используется алгоритм по умолчанию.  

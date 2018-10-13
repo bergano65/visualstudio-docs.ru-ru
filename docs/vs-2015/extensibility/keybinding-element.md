@@ -1,7 +1,7 @@
 ---
 title: Элемент KeyBinding | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231822"
 ---
 # <a name="keybinding-element"></a>Элемент KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элемент KeyBinding](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element).  
-  
 Элемент KeyBinding указывает сочетания клавиш для команд.  
   
  Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — CTRL + S для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойную привязку клавиш — CTRL + K, CTRL + K, чтобы установить закладку.  

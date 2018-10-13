@@ -1,7 +1,7 @@
 ---
 title: Встроенная активация | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232197"
 ---
 # <a name="in-place-activation"></a>Активация на месте
 Если в представлении редактора размещаются элементы ActiveX или другие активные элементы управления, представление редактора следует реализовать как элемент ActiveX или как активный объект данных документа с помощью модели встроенной активации.  
@@ -51,7 +51,7 @@ ms.locfileid: "47568915"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Просмотр|Основное средство, с помощью которого внедренный объект предоставляет основные функциональные возможности своему контейнеру и взаимодействует с ним.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|Просмотр|Управляет активацией и деактивацией встроенных объектов и определяет, какая часть встроенного объекта должна быть видимой.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|Просмотр|Предоставляет прямой канал связи между встроенным объектом, внешней рамкой окна связанного приложения и окном документа в приложении, которое содержит внедренный объект.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Просмотр|Реализует объект ActiveX. Обратите внимание, что методы класса <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> и `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` что разделяют данные документа и представление не используются в интегрированной среде разработки.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Просмотр|Реализует объект ActiveX. Обратите внимание, что методы <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> и `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` , которые разделяют данные документа и представление, не используются в интегрированной среде разработки.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Представление и данные|Позволяет объекту данных документа, объекту представления документа или им обоим принимать участие в обработке команд.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Просмотр|Обеспечивает обновление строки состояния.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Просмотр|Обеспечивает добавление элементов на панель элементов.|  

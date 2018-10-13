@@ -1,7 +1,7 @@
 ---
 title: Страница "Общие", папка "Среда", диалоговое окно "Параметры" | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18ebb4744d7694480f5ff5a34d4f3812d5bb3c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206886"
 ---
 # <a name="general-environment-options-dialog-box"></a>Страница "Общие", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Общие, среда, диалоговое окно параметров](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box).  
-  
   
 Используйте эту страницу для изменения цветовых тем, параметров строки состояния, сопоставлений расширений файлов и т. д. для интегрированной среды разработки (IDE). Чтобы открыть диалоговое окно **Параметры**, щелкните меню **Сервис**, выберите **Параметры**, откройте папку **Среда** и выберите страницу **Общие**. Если этой страницы нет в списке, установите флажок **Показать все параметры** в диалоговом окне **Параметры**.  
   

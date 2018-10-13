@@ -1,7 +1,7 @@
 ---
 title: Специальные возможности средства просмотра справки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242142"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [специальные возможности средства просмотра справки](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer).  
-  
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В этот раздел входит информация о функциях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) 2.2 для людей с разными физическими возможностями.  
   
 ## <a name="keyboard-access"></a>Доступ с клавиатуры  

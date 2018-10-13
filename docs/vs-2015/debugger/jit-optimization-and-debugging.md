@@ -1,7 +1,7 @@
 ---
 title: JIT-компилятора отладка и оптимизация | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201996"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-отладка и оптимизация
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [JIT-оптимизацию и отладка](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 При отладке управляемого приложения, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по умолчанию подавляет оптимизацию just-in-time (JIT) кода. Подавление JIT-оптимизации означает, что отлаживается не оптимизированный код. Код выполняется немного медленнее, поскольку он не оптимизирован, но отладка получается гораздо более тщательной. Отладка оптимизированного кода сложнее и рекомендуется, только если ошибки возникают в оптимизированном коде, но не могут быть воспроизведены в не оптимизированной версии.  
   
  JIT-оптимизация контролируется в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по **Отключить JIT-оптимизацию при загрузке модуля** параметр. Этот параметр можно найти на **Общие** странице в разделе **Отладка** узел в **параметры** диалоговое окно.  

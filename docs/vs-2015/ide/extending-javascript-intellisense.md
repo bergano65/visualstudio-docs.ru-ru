@@ -1,7 +1,7 @@
 ---
 title: Расширение IntelliSense для JavaScript | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214257"
 ---
 # <a name="extending-javascript-intellisense"></a>Расширение IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
-  
 Функция расширения JavaScript IntelliSense позволяет настраивать результатов IntelliSense в редакторе JavaScript для сторонних библиотек. Это может улучшить работу с разработчикам, использующим эти библиотеки.  
   
  Языковая служба JavaScript предоставляет возможности IntelliSense для сторонних библиотек JavaScript, которые добавляются в проект. Большинство библиотек завершение операторов предоставляется автоматически службой языка. Ниже показан пример завершения операторов:  
@@ -100,7 +98,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ##  <a name="intellisenseObject"></a> Объект IntelliSense  
  В следующей таблице показаны функции, которые доступны для `intellisense` объекта. `intellisense` Объект доступен только во время разработки.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |`addEventListener(type, handler);`|Добавляет обработчик событий для события IntelliSense.<br /><br /> `type` — Это строковое значение. Допустимые значения: `statementcompletion`, `signaturehelp`, и `statementcompletionhint`.<br /><br /> `handler` Представляет функцию обработчика событий, получающий объект события одного из следующих типов:<br /><br /> -   `CompletionEvent`, используемый для `statementcompletion` событий.<br />-   `SignatureHelpEvent`, используемый для `signaturehelp` событий.<br />-   `CompletionHintEvent`, используемый для `statementcompletionhint` событий.<br /><br /> Примеры, использующие эту функцию, см. в разделе [примеры кода](#CodeExamples).|  
 |`annotate(obj, doc);`|Указывает документацию для объекта путем копирования комментарии от одного объекта к другому объекту.<br /><br /> `obj` Указывает объект, для которого необходимо скопировать в документации.<br /><br /> `doc` Указывает объект, из которого необходимо скопировать в документации.<br /><br /> Пример, в котором показано, как использовать эту функцию, см. в разделе [Добавление заметок IntelliSense](#Annotations).|  

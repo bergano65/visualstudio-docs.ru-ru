@@ -1,7 +1,7 @@
 ---
 title: Создание подключаемого модуля системы управления версиями | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9e9687459759e6b04938adfc8695322288f48d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 963e721c2718b3b7cc4786f7a5dd3d5cde38910c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197071"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Создание подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание подключаемого модуля управления источника](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-a-source-control-plug-in).  
-  
 Пакет SDK для Visual Studio предоставляет ресурсы, которые позволяют добавлять возможности элемента управления источника для [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE). Он позволяет использовать библиотеку DLL для подключаемого модуля, который соответствует с API подключаемых модулей управления источника, приведенные в этой документации.  
   
 ## <a name="in-this-section"></a>В этом разделе  

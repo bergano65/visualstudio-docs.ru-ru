@@ -1,7 +1,7 @@
 ---
 title: Создание базы данных SQL с помощью конструктора | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220757"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Создание базы данных SQL с помощью конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создать базу данных SQL с помощью конструктора](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).  
-  
   
 Можно изучить основные задачи, например добавление таблиц и указания столбцов, с помощью Visual Studio для создания и обновления файла локальной базы данных в SQL Server Express LocalDB. Изучив данное пошаговое руководство, вы можете ознакомиться с расширенными функциональными возможностями, используя свою локальную базу данных в качестве отправной точки для работы с другими пошаговыми руководствами, требующими использование базы данных.  
   

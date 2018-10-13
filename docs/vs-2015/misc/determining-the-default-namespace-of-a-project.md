@@ -1,7 +1,7 @@
 ---
 title: Определение пространства имен по умолчанию проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: 27919985c09356764533e736899dc6a7cb5d0090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223331"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Определение пространства имен по умолчанию для проекта
 Для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], если `CustomToolNamespace` входного файла, то значение параметра установлено свойство `CustomToolNamespace` становится значением параметра пространство имен по умолчанию, передаваемый <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> метод. В противном случае `wszDefaultNamespace` параметр, передаваемый `Generate` всегда равно корневое пространство имен. Дополнительные сведения о пространствах имен см. в разделе [ключевые слова пространства имен](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о значениях выборочных данных | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60087d2788cd4b46b77d670cf430bf0e0198b6f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221394"
 ---
 # <a name="understanding-sampling-data-values"></a>Общие сведения о значениях выборочных данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [основные сведения о значениях выборочных данных](https://docs.microsoft.com/visualstudio/profiling/understanding-sampling-data-values).  
-  
 При профилировании с использованием метода *выборки* средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] работа процессора компьютера прерывается через заданные интервалы времени. При этом выполняется сбор данных из стека вызовов функций. *Стек вызовов* — это динамическая структура, в которой хранится информация о функциях, выполняющихся в процессоре.  
   
  **Требования**  

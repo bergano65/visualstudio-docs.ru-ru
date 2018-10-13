@@ -1,7 +1,7 @@
 ---
 title: Создание кода в редакторе кода и текста | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220536"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Создание кода в редакторе кода и текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [написание кода в редакторе кода и текста](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 Редактор Visual Studio предоставляет множество функций, облегчающих написание кода и управление им. Используя структуру, вы можете разворачивать и сворачивать различные блоки кода. Узнать более подробно об используемом коде можно с помощью технологии IntelliSense, окна **Обозреватель объектов**и иерархии вызовов. Внутри кода можно перемещаться с помощью таких функций, как **Перейти к**, **Перейти к определению**и **Найти все ссылки**. Вставлять блоки кода можно с помощью фрагментов кода. Код также можно создавать с помощью функций, таких как **Создание в результате использования**. Если вы никогда не работали в редакторе Visual Studio 2015, см. краткий обзор в разделе [Редактирование кода](https://www.visualstudio.com/features/ide-vs) .  
 
  Код можно просматривать различными способами. Для просмотра имеющихся в решении классов можно открыть окно **Представление классов** или развернуть узлы в **Обозревателе решений** под интересующими файлами классов.  

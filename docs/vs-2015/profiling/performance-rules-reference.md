@@ -1,7 +1,7 @@
 ---
 title: Справочник по правилам производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8f96819c5d6f8e2be1c7f92e53ebbb29d075886
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9276f567f0edf91111853e417f1f8dff1eb2a4df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227101"
 ---
 # <a name="performance-rules-reference"></a>Справочник по правилам производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по правилам производительности](https://docs.microsoft.com/visualstudio/profiling/performance-rules-reference).  
-  
 Правила производительности средств профилирования предоставляют дополнительные предупреждения и сведения о производительности приложения. Правила производительности используются для анализа данных в сеансе профилирования, собранных из таких источников, как Windows и счетчики производительности процессора. Сообщения правил отображаются в окне вывода ошибок интегрированной среды разработки [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Сообщения указываются с одним из следующих уровней правила.  
   
 |||  

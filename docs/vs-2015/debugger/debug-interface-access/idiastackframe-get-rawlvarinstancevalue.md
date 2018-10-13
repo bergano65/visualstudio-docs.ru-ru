@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_rawLVarInstanceValue | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aca4ea4468409937cd0b90b7c2201898a9f93a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 440a780ccd92a6f8f46f74c462e4adfc591c97ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175517"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaStackFrame::get_rawLVarInstanceValue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue).  
-  
 Этот метод получает значение указанной локальной переменной в виде необработанных байт.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -54,7 +52,7 @@ HRESULT get_rawLVarInstanceValue(
  [out] Возвращает фактическое число байтов, сохраненных в буфере.  
   
  `pbData`  
- [out] Буфер для заполниться данными. Это не может быть `NULL`.  
+ [out] Буфер для заполниться данными. Не может иметь значение `NULL`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  

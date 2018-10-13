@@ -1,7 +1,7 @@
 ---
 title: Сбор подробных данных по времени для служб с использованием метода инструментирования из командной строки профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a522872e5f422638635550b816ef20050e800ef9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27856554630bcdedc162023a9a1fa3e80a5f1e8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180457"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Сбор подробных сведений о времени для служб с помощью метода инструментирования из командной строки Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line).  
-  
 В этом разделе описываются процедуры и параметры сбора подробных данных по производительности для служб Windows с помощью метода инструментирования из командной строки.  
   
 ## <a name="common-tasks"></a>Общие задачи  

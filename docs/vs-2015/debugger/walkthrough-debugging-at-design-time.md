@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отладка во время разработки | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63fca37bbb55f99ecb99a18596c128451bd807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227237"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Пример. Отладка во время разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отладка во время разработки](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-at-design-time).  
-  
 Можно использовать Visual Studio **Интерпретация** окне, чтобы выполнить функцию или подпрограмму, когда приложение не запущено. Если в функции или подпрограмме есть точка останова, Visual Studio прервет выполнение на соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Эта возможность называется отладкой времени разработки.  
   
  В следующей процедуре показано, как можно использовать эту возможность.  

@@ -1,7 +1,7 @@
 ---
 title: Рисование фигур и контуров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188192"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Рисование фигур и контуров](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths).  
-  
 В конструкторе XAML *фигура* — это именно тот объект, который соответствует вашим представлениям. Например, прямоугольник, круг или эллипс. Объект *контур* является более универсальной версией фигуры. Можно, например, изменить эти объекты или объединить их в форме новых фигур.  
   
  Для фигур и контуров используется векторная графика, поэтому их легко масштабировать для дисплеев с высоким разрешением. Если вы хотите узнать больше о векторной графике, ознакомьтесь с видео о том, [что такое векторная графика](https://www.youtube.com/watch?v=MoCSwF0n-io) , или статьей о [векторной графике](http://www.webopedia.com/TERM/V/vector_graphics.html).  

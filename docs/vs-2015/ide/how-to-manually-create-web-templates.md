@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание веб-шаблонов вручную | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d84a71d54f178574e7aba719f4189b35312ec03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220874"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: вручную создать веб-шаблонов](https://docs.microsoft.com/visualstudio/ide/how-to-manually-create-web-templates).  
-  
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл VSTEMPLATE должен указывать, что это веб-шаблон, а также задавать язык программирования.  
   
 > [!NOTE]

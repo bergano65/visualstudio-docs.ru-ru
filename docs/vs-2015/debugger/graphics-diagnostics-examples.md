@@ -1,7 +1,7 @@
 ---
 title: Примеры диагностики графики | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee2476b8456492db52bcf802c127a22b5faec7e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02b8c3d8d21e19f671901a353af00163c17025fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188543"
 ---
 # <a name="graphics-diagnostics-examples"></a>Примеры диагностики графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [примеры диагностики графики](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-diagnostics-examples).  
-  
 В приведенных ниже примерах показано, как выполнить отладку проблем отрисовки в приложениях на основе DirectX с помощью диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="capturing-graphics-information"></a>Захват графической информации  

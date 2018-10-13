@@ -1,7 +1,7 @@
 ---
 title: Сведения о времени выполнения элемента управления источника | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca2d6830a9feb61c088274761995eeb227b1d661
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38b086f578d71c291ef12cb7b90e3ba1ce1ee89f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212438"
 ---
 # <a name="source-control-runtime-details"></a>Сведения о среде выполнения системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сведения о времени выполнения элемента управления источника](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-runtime-details).  
-  
 Проект добавляется в систему управления версиями, когда пользователь добавляет файл в проект в систему управления версиями или через контроллеров автоматизации, таких как мастер. Проект не содержит для себя что это в системе управления версиями; он поддерживает системы управления версиями, но необходимо добавить к нему вручную.  
   
 ## <a name="registering-with-a-source-control-package"></a>Регистрация пакета системы управления версиями  

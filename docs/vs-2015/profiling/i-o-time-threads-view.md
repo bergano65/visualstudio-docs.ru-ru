@@ -1,7 +1,7 @@
 ---
 title: Время ввода-вывода (представление "Потоки") | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25512da43fc32b42c2a1f79e3c8dbe992ea30ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55050ad6ed805c2996cfc52561b17e2614a6ee12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236799"
 ---
 # <a name="io-time-threads-view"></a>Время ввода-вывода (представление "Потоки")
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ввод вывод времени (представление "Потоки")](https://docs.microsoft.com/visualstudio/profiling/i-o-time-threads-view).  
-  
 Эти сегменты на временной шкале связаны с периодами времени блокирования, занесенными в категорию ввода-вывода. Это означает, что поток ожидает завершения операции ввода-вывода. Поток может быть заблокирован в интерфейсе API или на время ожидания ядра, связанного с вводом-выводом, которое визуализатор параллелизма интерпретирует как ввод-вывод. Такие API-интерфейсы, как `CreateFile()`, `ReadFile()`, и `WSARecv()`, попадают в эту группу.  
   
 ## <a name="see-also"></a>См. также  

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::Reset | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af060c0375eaf18c3b7bc22e839ddd39fb647248
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2b5c6fae674e6db303f636a39395b5477c7685a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205547"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IEnumDebugModules2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2-reset).  
-  
 Выполняет сброс перечисления к первому элементу.  
   
 ## <a name="syntax"></a>Синтаксис  

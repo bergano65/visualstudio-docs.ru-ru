@@ -1,7 +1,7 @@
 ---
 title: С помощью Visual Studio ModelBus в текстовом шаблоне | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189401"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [с помощью Visual Studio ModelBus в текстовом шаблоне](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template).  
-  
 Если вы напишете текстовые шаблоны, считывающие модель, содержащую [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ссылки ModelBus, может потребоваться разрешения ссылок для доступа к целевой модели. В этом случае необходимо адаптировать текстовые шаблоны и на которую указывает ссылка предметно ориентированных языков (DSL):  
   
 -   DSL, который является целевым объектом ссылки должен иметь адаптер ModelBus, настроенный для доступа на основе текстовых шаблонов. Если вы также получить доступ к DSL из другого кода, изменена конфигурация адаптера не требуется в дополнение к стандартный адаптер ModelBus.  

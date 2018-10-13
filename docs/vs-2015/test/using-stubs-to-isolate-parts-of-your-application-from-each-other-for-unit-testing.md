@@ -1,7 +1,7 @@
 ---
 title: Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b83a9e73661e6b8c525a800376453cf8cff6a53c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182187"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing).  
-  
 Типы заглушки * — это один из двух технологий, которые платформа Microsoft Fakes предоставляет для более простого изолирования тестируемого от других компонентов, которые он вызывает компонент. Заглушка — это небольшая часть кода, которая заменяет собой другой компонент во время тестирования. Преимущество использования заглушки заключается в том, что она возвращает последовательные результаты, упрощая написание теста. Тесты можно выполнять, даже если другие компоненты пока не работают.  
   
  Обзор и рекомендации по быстрому началу работы с Fakes см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  

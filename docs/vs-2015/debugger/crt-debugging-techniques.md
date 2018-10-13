@@ -1,7 +1,7 @@
 ---
 title: Методы отладки CRT | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2743c7185f09f19353ca5fedab0327593dc33bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34d9f1036349798b56306c41eddbc4f71cfffac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238749"
 ---
 # <a name="crt-debugging-techniques"></a>Методы отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [методы отладки CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debugging-techniques).  
-  
 Эти методы могут пригодиться при отладке программы с использованием библиотеки времени выполнения языка С (CRT).  
   
 ## <a name="in-this-section"></a>В этом разделе  

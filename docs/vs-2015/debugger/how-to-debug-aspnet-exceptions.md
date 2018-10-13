@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Отладка исключений ASP.NET | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178533"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Практическое руководство. Отладка исключений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Отладка исключений ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions).  
-  
 Отладка исключений является важной частью разработки надежного [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] приложения. Общие сведения об отладке исключений находится в [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).  
   
  Для отладки необработанных [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] исключения, убедитесь, что отладчик останавливается на них. Среда выполнения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] имеет обработчик исключений верхнего уровня. Поэтому отладчик по умолчанию никогда не прерывается при возникновении необработанных исключений. Чтобы переключиться в режим отладчика при возникновении исключения, необходимо выбрать **прерывание выполнения при исключение: исключение** для этого конкретного исключения в **исключения** диалоговое окно.  

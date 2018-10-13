@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Создание кода с помощью текстовых шаблонов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229376"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: создание кода с помощью текстовых шаблонов](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates).  
-  
 Создание кода позволяет создавать программный код, который является строго типизированным, но при этом может быть легко изменен при изменении исходной модели. Сравните это с альтернативным методом написания полностью универсальной программы, принимающей файл конфигурации. Он является более гибким, однако в результате получается код, который труден для чтения и редактирования, а также не отличается высокой производительностью. Данное преимущество рассматривается в этом пошаговом руководстве.  
   
 ## <a name="typed-code-for-reading-xml"></a>Типизированный код для чтения XML-файла  

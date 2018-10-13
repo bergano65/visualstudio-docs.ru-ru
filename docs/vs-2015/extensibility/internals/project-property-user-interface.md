@@ -1,7 +1,7 @@
 ---
 title: Пользовательский интерфейс свойств проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9418603e13fad91aa9d40c2d05f6ebc1d83a5e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172295"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пользовательский интерфейс свойств проекта](https://docs.microsoft.com/visualstudio/extensibility/internals/project-property-user-interface).  
-  
 Подтип проекта можно использовать элементы в проекте **страницы свойств** диалоговое окно, так как они предоставляются по базовому проекту, скрыть или сделать доступным только для чтения элементы управления и целые страницы, передаваемой или добавьте страницы подтипа проекта **Страницы свойств** диалоговое окно.  
   
 ## <a name="extending-the-project-property-dialog-box"></a>Расширение диалоговое окно свойств проекта  

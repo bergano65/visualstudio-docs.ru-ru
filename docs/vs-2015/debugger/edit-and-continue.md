@@ -1,7 +1,7 @@
 ---
 title: Изменить и продолжить | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175725"
 ---
 # <a name="edit-and-continue"></a>Изменить и продолжить
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [изменить и продолжить](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue).  
-  
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы с помощью команды **Продолжить** или **шаг**изменить и продолжить автоматически применяет изменения кода, с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.  
   
  Этот раздел содержит следующие подразделы:  

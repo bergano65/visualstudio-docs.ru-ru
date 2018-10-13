@@ -1,7 +1,7 @@
 ---
 title: T4 Директива Include | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,19 +12,17 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233991"
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [директива Include T4](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
-В текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно включить текст из другого файла, воспользовавшись директивой `<#@include#>`. Директивы `include` можно разместить в любом месте текстового шаблона перед первым блоком функций класса `<#+ ... #>`. Включенные файлы также могут содержать директивы `include` и другие директивы. Это позволяет использовать один и тот же код шаблона и стандартный текст в нескольких шаблонах.  
+В текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно включить текст из другого файла, воспользовавшись директивой `<#@include#>`. Директивы `include` можно разместить в любом месте текстового шаблона перед первым блоком возможностей класса `<#+ ... #>`. Включенные файлы также могут содержать директивы `include` и другие директивы. Это позволяет использовать один и тот же код шаблона и стандартный текст в нескольких шаблонах.  
   
 ## <a name="using-include-directives"></a>Использование директив Include  
   

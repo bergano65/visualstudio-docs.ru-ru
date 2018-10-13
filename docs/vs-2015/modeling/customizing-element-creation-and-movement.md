@@ -1,7 +1,7 @@
 ---
 title: Настройка создания и перемещения элементов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203532"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Настройка создания и перемещения элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка создания и перемещения элементов](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement).  
-  
 Вы можете разрешить элемент перетаскивать с панели инструментов или в Вставка на другой, или операции перемещения. С помощью связей, которые вы укажите, может иметь перемещенные элементы, связанные с целевыми элементами.  
   
  Директивы слияния элементов (EMD) указывает, что происходит, когда один элемент модели является *объединенных* в другой элемент модели. Это происходит, когда:  

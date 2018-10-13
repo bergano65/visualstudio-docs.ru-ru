@@ -1,7 +1,7 @@
 ---
 title: Анализ энергопотребления приложениями Магазина | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b204a31e5efe9c7870a02e9eb7a0a48c19d4c6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189258"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Анализ энергопотребления приложениями Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ использования энергии приложениями Store](https://docs.microsoft.com/visualstudio/profiling/analyze-energy-use-in-store-apps).  
-  
 Профилировщик **Расход энергии** Visual Studio позволяет анализировать расход энергии приложениями Магазина Windows на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих на своих аккумуляторах. На устройстве, работающем от аккумулятора, приложение с большим энергопотреблением может вызывать такое недовольство пользователя, что он в конце концов удалит его. Оптимизация расхода энергии позволяет улучшить восприятие приложения пользователями и повысить степень его использования.  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Что такое профилировщик "Расход энергии", как он работает и что измеряет  

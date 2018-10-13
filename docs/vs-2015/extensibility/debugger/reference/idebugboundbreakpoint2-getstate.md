@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetState | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf794faf53de74b27425bf7d81b59d3059ec279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9552f0dec97c4b43cc06a9c8e78828e7ea6fde2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205950"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugBoundBreakpoint2::GetState](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-getstate).  
-  
 Получает состояние данная связанная точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  

@@ -1,7 +1,7 @@
 ---
 title: Создание настраиваемых представлений собственных объектов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236539"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Создание настраиваемых представлений собственных объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание настраиваемых представлений собственных объектов](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
 Платформа Visual Studio Natvis позволяет настраивать то, как Visual Studio отображает собственные типы в окнах переменных отладчика (таких как окна **контрольных значений**, **локальных переменных**и **подсказок по данным** ).  
   
  Natvis заменяет файл **autoexp.dat** , который использовался в предыдущих версиях Visual Studio, и обеспечивает синтаксис XML, улучшенную диагностику, управление версиями и поддержку нескольких файлов.  
@@ -356,7 +354,7 @@ ms.locfileid: "47571931"
 -   Если узел `Expand` указан без дочерних узлов в нем, тип нельзя будет развернуть в окнах отладчика.  
   
 ####  <a name="BKMK_Item_expansion"></a> Расширение элемента  
- Элемент `Item` — самый простой и самый распространенный элемент для использования в узле `Expand` . `Item` определяет один дочерний элемент. Например, предположим, что имеется класс `CRect` с `top`, `left`, `right`и `bottom` в качестве его полей и следующая запись визуализации:  
+ Элемент `Item` — самый простой и самый распространенный элемент для использования в узле `Expand` . `Item` определяет один дочерний элемент. Например, предположим, что имеется класс `CRect` с `top`, `left`, `right` и `bottom` в качестве его полей и следующая запись визуализации:  
   
 ```xml  
 <Type Name="CRect">  

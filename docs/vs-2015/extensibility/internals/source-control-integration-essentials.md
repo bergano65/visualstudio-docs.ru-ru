@@ -1,7 +1,7 @@
 ---
 title: Источника Essentials Интеграция управления | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232366"
 ---
 # <a name="source-control-integration-essentials"></a>Основные элементы интеграции системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Essentials интеграции управления источника](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] поддерживает два типа интеграция системы управления версиями: подключаемый модуль источника управления, который предоставляет базовые функциональные возможности и построен с использованием источника управления Plug-in API (прежнее название MSSCCI API) и интеграции решения управления исходный пакет VSPackage, предоставляет функциональные возможности более надежной.  
   
 ## <a name="source-control-plug-in"></a>Подключаемый модуль системы управления версиями  

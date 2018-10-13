@@ -1,7 +1,7 @@
 ---
 title: Определение политики блокировки для создания сегментов, доступных только для чтения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231417"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Определение политики блокировки для создания сегментов только для чтения](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments).  
-  
 API неизменности [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK дает возможность программе блокировки всех или части модели доменного языка (DSL), чтобы его можно читать но не изменяется. Этот параметр только для чтения может использоваться, например, таким образом, пользователь может запросить коллеги аннотировать и просматривать модель DSL, но запретить их изменять исходный.  
   
  Кроме того, как автор доменного языка с, можно определить *политика блокировки.* Политики блокировки определяет, какие виды блокировок разрешено, запрещено или обязательным. Например при публикации DSL, могут потребовать сторонних разработчиков, расширить ее с помощью новых команд. Но можно также использовать политики блокировки для предотвращения их изменений состояния только для чтения указанные части модели.  

@@ -1,7 +1,7 @@
 ---
 title: Добавление каталогов в диалоговое окно нового проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190493"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Добавление каталогов в диалоговое окно "Создание проекта"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [добавления каталогов в диалоговое окно нового проекта](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box).  
-  
 При создании новых типов проектов, вы также можете зарегистрировать новый каталог в **новый проект** диалоговое окно, чтобы отобразить их для использования в качестве шаблонов. В следующем примере объясняется, как зарегистрировать новый каталог, а также называется узлом. В примере шаблонов, предоставляемых VSPackage CLSID_Package регистрируются. В результате в левой части **новый проект** диалоговое окно предлагает добавленный узел с именем определяется Folder_Label_ResID ресурсов. Этот ресурс загружается из вспомогательной Библиотеки VSPackage.  
   
  **Папку** значение представляет GUID папки, в которой отображается узел Folder_Label_ResID. В примере, представляет идентификатор GUID **другие проекты** папку в **типы проектов** области **новый проект** диалоговое окно. Если **другие проекты** значение отсутствует, то она позиционируется на верхнем уровне.  

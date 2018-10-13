@@ -1,7 +1,7 @@
 ---
 title: Справочные сведения о задачах MSBuild | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b7b413d403f2b85cc5c8e792cbee19488f8f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193996"
 ---
 # <a name="msbuild-task-reference"></a>Справочные сведения о задачах MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [справочные сведения о задачах MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task-reference).  
-  
   
 Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. После установки [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Дополнительные сведения см. в статье [Задачи MSBuild, относящиеся к Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   

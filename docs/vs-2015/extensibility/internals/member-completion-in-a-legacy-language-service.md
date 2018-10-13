@@ -1,7 +1,7 @@
 ---
 title: Завершение участников в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240816"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Завершение участников в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [завершение участников в языковой службе прежних версий](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service).  
-  
 Завершения члена IntelliSense можно всплывающей подсказки, которая отображает список возможных членов в конкретной области, например класс, структуру, перечисление или пространства имен. Например в C#, если пользователь вводит «this» через точку список всех членов класса или структуры в текущей области представлены в список, из которого пользователь может выбрать.  
   
  Managed package framework (MPF) предоставляет поддержку всплывающей подсказки и управления списком в подсказке; все, что нужно — сотрудничество из синтаксического анализатора для предоставления данных, отображаемых в списке.  

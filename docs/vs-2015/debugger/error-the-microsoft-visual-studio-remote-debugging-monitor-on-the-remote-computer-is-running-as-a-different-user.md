@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере запущен от имени другого пользователя | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5256feb22e09eb75fa8f4d5a50e8beafeec8f97d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba0c145f94e0d4213cdc859edb3b43710d96d257
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205755"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Ошибка: монитор удаленной отладки Visual Studio на удаленном компьютере запущен от имени другого пользователя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: The Microsoft Visual Studio запущен монитор удаленной отладки на удаленном компьютере от имени другого пользователя](https://docs.microsoft.com/visualstudio/debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user).  
-  
 При выполнении удаленной отладки может появиться следующее сообщение об ошибке:  
   
  На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя.  
@@ -58,7 +56,7 @@ ms.locfileid: "47563922"
   
 ## <a name="see-also"></a>См. также  
  [Ошибки удаленной отладки и устранения неполадок](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

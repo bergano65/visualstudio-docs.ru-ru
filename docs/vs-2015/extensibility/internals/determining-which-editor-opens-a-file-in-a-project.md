@@ -1,7 +1,7 @@
 ---
 title: Определение того, какой редактор открывает файл в проекте | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241037"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Определение редактора, с помощью которого откроется файл в проекте
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определить, какой редактор открывает файл в проекте](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project).  
-  
 Когда пользователь открывает файл в проект, среда переходит в процессе опроса, со временем открыть соответствующий редактор или конструктор для этого файла. Начальной процедуру, чтобы позволить среде одинаков для стандартных и пользовательских редакторов. В среде используется различных критериев, при опросе с целью какой редактор для открытия файла и VSPackage необходимо согласовать со средой во время этого процесса.  
   
  Например, когда пользователь выбирает **откройте** команду **файл** меню, а затем нажмет `filename`.rtf (или любой другой файл с расширением .rtf), среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Реализация для каждого проекта, в конечном итоге перебирать все экземпляры проекта в решении. Проекты возвращают набор флагов, определяющих утверждений в документе по приоритету. С помощью самым высоким приоритетом, среда вызывает соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод. Дополнительные сведения о процессе опроса [добавление проектов и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  

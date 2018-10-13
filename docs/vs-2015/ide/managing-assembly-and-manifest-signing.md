@@ -1,7 +1,7 @@
 ---
 title: Управление сборками и подписывание манифестов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172748"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Управление сборками и подписывание манифестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление сборками и манифеста подписывание](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing).  
-  
 Подпись строгим именем предоставляет программному компоненту глобальный уникальный идентификатор. Строгие имена используются, чтобы гарантировать, что сборка не может быть подделана кем-то другим, и убедиться, что компоненты зависимостей и операторы конфигурации соотносятся с корректным компонентом и версией.  
   
  Строгое имя состоит из удостоверения сборки (простое текстовое имя, номер версии и сведения о языке и региональных параметрах), а также открытого ключа и цифровой подписи.  

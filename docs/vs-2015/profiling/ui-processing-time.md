@@ -1,7 +1,7 @@
 ---
 title: Время обработки пользовательского интерфейса | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e35f5f37b0eced2822cb4b019732210bec94495
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15b1e69f8b37662f816a97571fb4020e9723f0ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173515"
 ---
 # <a name="ui-processing-time"></a>Время обработки пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [время обработки пользовательского интерфейса](https://docs.microsoft.com/visualstudio/profiling/ui-processing-time).  
-  
 Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории "Обработка UI". Это означает, что поток переносит сообщения Windows или выполняет другие операции пользовательского интерфейса. В это время поток был заблокирован в интерфейсе API, который визуализатор параллелизма интерпретирует как обработку пользовательского интерфейса. К этой группе относятся такие интерфейсы API, как `GetMessage()` и `MsgWaitForMultipleObjects()`.  
   
  Если предварительно заданные блокирующие интерфейсы API отсутствуют, просмотрите стеки вызовов и отчеты профилирования, чтобы определить изначальную причину задержки.  
