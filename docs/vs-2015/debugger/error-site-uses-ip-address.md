@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: Узел использует IP-адрес | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93d64f06db4b1f070da4f0963ed879ef64e4cb33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62d975903bc29835cbf43a21e38fe727a37aec9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306362"
 ---
 # <a name="error-site-uses-ip-address"></a>Ошибка: веб-узел использует IP-адрес
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: узел использует IP-адрес](https://docs.microsoft.com/visualstudio/debugger/error-site-uses-ip-address).  
-  
 Эта ошибка возникает, если в отладчике выполняется попытка автоматического присоединения к веб-приложению, которое использует IP-адрес. Это происходит при изменении **Идентификация веб-сайта** для **определенный IP-адрес** в службах IIS.  
   
  Для работы автопривязки необходимо создать проект с определенным IP-адресом вместо имени компьютера. В противном случае имя машины будет заменено отладчиком на имя "localhost". Это вызовет сбой отправки команды службам IIS.  

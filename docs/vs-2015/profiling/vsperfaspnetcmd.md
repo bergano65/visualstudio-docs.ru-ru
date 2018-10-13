@@ -1,7 +1,7 @@
 ---
 title: VSPerfASPNetCmd | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a074edba64f9742f9761754279be35f5c621be2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eb58532e6198198b43bbcf6c24d6afefa95b935
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306557"
 ---
 # <a name="vsperfaspnetcmd"></a>Средство VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [VSPerfASPNetCmd](https://docs.microsoft.com/visualstudio/profiling/vsperfaspnetcmd).  
-  
 Средство командной строки **VSPerfASPNetCmd.exe** позволяет профилировать веб-сайты ASP.Net без необходимости определять переменные среды или перезагружать компьютер. **VSPerfASPNetCmd.exe** можно использовать вместо [VSPerfCmd](../profiling/vsperfcmd.md) при профилировании веб-сайтов ASP.NET, если вам не требуется дополнительные функции, предоставляемые **VSPerCmd**. Дополнительные сведения о команде **VSPerfASPNetCmd** см. в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd). **VSPerfASPNETCmd** будет оптимальным вариантом, если необходим автономный профилировщик для профилирования веб-сайта ASP.NET.  
   
 ## <a name="syntax"></a>Синтаксис  

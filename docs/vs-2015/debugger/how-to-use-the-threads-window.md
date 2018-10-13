@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использование окна потоков | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306258"
 ---
 # <a name="how-to-use-the-threads-window"></a>Практическое руководство. Использование окна потоков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладка многопоточного приложения, с помощью окна потоков](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 В **потоков** окна, можно проверить и работа с потоками в приложении, в котором производится отладка.  
   
  **Потоков** окно содержит таблицу, где каждая строка представляет поток в приложении. По умолчанию в таблице перечисляются все потоки приложения, но можно фильтровать этот список, чтобы в нем показывались только нужные потоки. В каждом столбце содержится свой тип сведений. Можно также скрывать некоторые столбцы. Если отображаются все столбцы, то в них имеются следующие сведения (слева направо):  

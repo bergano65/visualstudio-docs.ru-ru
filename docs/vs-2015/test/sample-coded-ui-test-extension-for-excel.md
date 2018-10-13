@@ -1,7 +1,7 @@
 ---
 title: Пример расширения закодированного теста пользовательского интерфейса для Excel | Документ Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4da574b77d8dd2b1b14ccb0b04e449799338620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ccc315b62ffa2e7c70f992a560e55c80eb86dc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306622"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Пример расширения закодированного теста пользовательского интерфейса для Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширения закодированного теста пользовательского интерфейса пример Excel](https://docs.microsoft.com/visualstudio/test/sample-coded-ui-test-extension-for-excel).  
-  
 Компонент расширения примера выполняется в процессе закодированного теста пользовательского интерфейса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и в некотором смысле является иерархическим с базовым классом `ExtensionPackage`. Классы `TechnologyManager`, `ActionFilter` и `PropertyProvider` находятся на следующем уровне, а элементы управления — на верхнем уровне.  
   
  ![Архитектура расширения тестов в Excel](../test/media/excel-extarch.png "Excel_ExtArch")  

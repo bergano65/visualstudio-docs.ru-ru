@@ -1,7 +1,7 @@
 ---
 title: Visual Studio data tools для C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306193"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Visual Studio data tools для C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 Часто, когда вы обращаетесь к источникам данных для машинного кода C++ можно обеспечивают наибольшую производительность. Тем не менее данные, инструментарий для приложений на C++ в Visual Studio не полна, как и для приложений .NET. Например windows источников данных не может использоваться для перетаскивания источников данных в область конструктора C++. Если вам нужна объектно реляционного слоя, имеется возможность использовать сторонние продукты или написать собственный.  То же самое касается функциональность привязки к данным, несмотря на то, что приложения, использующие библиотеку классов Microsoft Foundation можно использовать некоторые классы баз данных вместе с документами и представлениями, для хранения данных в памяти и отображения ее пользователю. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

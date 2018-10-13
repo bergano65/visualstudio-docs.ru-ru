@@ -1,7 +1,7 @@
 ---
 title: Регистрация и выбор (пакет VSPackage управления версиями) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef8cf369d2660523bdfe4ad6eaa83be5748eedf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305790"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбор (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [регистрация и выбор (пакет VSPackage управления версиями)](https://docs.microsoft.com/visualstudio/extensibility/internals/registration-and-selection-source-control-vspackage).  
-  
 Системы управления версиями, необходимо зарегистрировать VSPackage, чтобы предоставлять его для [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Если более одной системы управления версиями VSPackage зарегистрирован, пользователь может выбрать какие VSPackage для загрузки в нужное время. См. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md) узнать больше о пакеты VSPackage и их регистрации.  
   
 ## <a name="registering-a-source-control-package"></a>Регистрация пакета системы управления версиями  

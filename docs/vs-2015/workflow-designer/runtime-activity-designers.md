@@ -1,7 +1,7 @@
 ---
 title: Конструкторы действий среды выполнения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b25db3bc67ca05cd123c0e4d4b0a15c43a568d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4385a692167fcfa0c39cb5c5f2bc18c7695733e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306869"
 ---
 # <a name="runtime-activity-designers"></a>Конструкторы действий среды выполнения
 Конструкторы действий времени выполнения служат для сохранения и завершения действий рабочего процесса. В подразделах этого раздела описывается использование конструкторов действий [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

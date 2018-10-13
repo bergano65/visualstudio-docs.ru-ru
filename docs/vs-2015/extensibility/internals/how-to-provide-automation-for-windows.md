@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Автоматизация для Windows | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6fad49e2841186cea677a165bdb48c4a1af5b41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9dd3dee875cfe7af7e482204130abc53bcaba616
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305751"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Практическое: Автоматизация для Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите автоматизации для Windows](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-automation-for-windows).  
-  
 Вы можете предоставить автоматизация для окон документов и средств. Предоставление автоматизации рекомендуется всякий раз, когда вы хотите сделать объекты автоматизации доступными в окне и среде уже не предоставить объект готовые службы автоматизации, как в случае со списком задач.  
   
 ## <a name="automation-for-tool-windows"></a>Модель автоматизации для инструментов Windows  
