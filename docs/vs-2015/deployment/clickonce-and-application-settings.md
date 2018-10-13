@@ -1,7 +1,7 @@
 ---
 title: ClickOnce и параметры приложения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176998"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce и параметры приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ClickOnce и параметры приложения](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Параметры приложения для Windows Forms позволяет легко создавать, хранить и поддерживать настраиваемые приложения и параметры пользователя на стороне клиента. В следующем документе описано, как файлы параметров приложения работают в приложении ClickOnce, и как ClickOnce переносит параметры при обновлении до следующей версии.  
   
  Приведенные ниже сведения относятся только к поставщику параметров приложения по умолчанию, <xref:System.Configuration.LocalFileSettingsProvider> класса. При указании пользовательского поставщика, этим поставщиком определяется, как он хранит свои данные и как его обновляет его параметры между версиями. Дополнительные сведения о поставщиках параметров приложений см. в разделе [архитектура параметров приложения](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  

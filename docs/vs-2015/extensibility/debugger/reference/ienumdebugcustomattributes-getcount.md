@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::GetCount | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1f8542b36cbc81f94234f313d58f6bfa2083c07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7456719cefca9fbf491d8cc301640bc44b22333
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195030"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IEnumDebugCustomAttributes::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugcustomattributes-getcount).  
-  
 Получает число настраиваемых атрибутов в перечислителе.  
   
 ## <a name="syntax"></a>Синтаксис  

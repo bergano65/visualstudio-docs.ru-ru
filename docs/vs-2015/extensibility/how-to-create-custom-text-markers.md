@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание настраиваемых текстовых маркеров | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0467c2516e0d4aab94c36245fd6c24d871ac03cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181627"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Практическое: Создание настраиваемых текстовых маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создать настраиваемые текстовые метки](https://docs.microsoft.com/visualstudio/extensibility/how-to-create-custom-text-markers).  
-  
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:  
   
 -   Регистрация нового текстового маркера, доступа к ней другие средства  

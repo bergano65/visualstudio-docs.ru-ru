@@ -1,7 +1,7 @@
 ---
 title: Окно выходных данных | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fa3297ca0b3843fcc427bdad4f380828ad441d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189908"
 ---
 # <a name="output-window"></a>Окно выходных данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [окно вывода](https://docs.microsoft.com/visualstudio/ide/reference/output-window).  
-  
   
 Окно **Вывод** может отображать сообщения о состоянии для различных функций в интегрированной среде разработки (IDE). Чтобы открыть окно **Вывод**, в строке меню выберите **Представление/Вывод** (или нажмите клавиши CTRL+ALT+O).  
   

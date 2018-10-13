@@ -1,7 +1,7 @@
 ---
 title: Внутри Visual Studio SDK | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214712"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [внутри Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk).  
-  
 В этом разделе содержатся подробные сведения о расширениях Visual Studio, включая архитектуры Visual Studio, компоненты, службы, схемы, служебные программы и т. п.  
   
 ## <a name="extensibility-architecture"></a>Архитектура расширения  
@@ -38,7 +36,7 @@ ms.locfileid: "47560123"
 Обобщенный схема архитектуры в Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
- Пакеты VSPackage — это программные модули, которые образуют и расширяют среду Visual Studio с помощью элементов пользовательского интерфейса, служб, проектов, редакторов и конструкторов. Пакеты VSPackage являются центральным элементом архитектуры Visual Studio. Дополнительные сведения см. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md).  
+ Пакеты VSPackage — это программные модули, которые образуют и расширяют среду Visual Studio с помощью элементов пользовательского интерфейса, служб, проектов, редакторов и конструкторов. Пакеты VSPackage являются центральным элементом архитектуры Visual Studio. Дополнительные сведения см. в разделе [VSPackages](../../extensibility/internals/vspackages.md).  
   
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Оболочка Visual Studio предоставляет основные функциональные возможности и поддержки взаимодействия между его компонент пакетов VSPackage и расширения MEF. Дополнительные сведения см. в разделе [оболочки Visual Studio](../../extensibility/internals/visual-studio-shell.md).  

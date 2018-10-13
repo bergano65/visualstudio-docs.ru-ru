@@ -1,7 +1,7 @@
 ---
 title: Развертывание приложений Windows Store из Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196109"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Развертывание приложений для Магазина Windows из Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развернуть Windows Store apps из Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Применяется только к Windows] (.. /Image/windows_only_content.PNG «windows_only_content»)  
   
  Функциональность развертывания Visual Studio выполняет сборку и регистрацию приложений Магазина Windows, созданных с помощью Visual Studio на целевом устройстве. Конкретный способ регистрации зависит от того, является ли целевое устройство локальным или удаленным:  
@@ -112,7 +110,7 @@ ms.locfileid: "47562187"
  Вы можете задать следующие параметры развертывания на странице свойств "Отладка" запускаемого проекта.  
   
  **Разрешить замыкание на себя в локальной сети**  
- Из соображений безопасности приложению [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], установленному стандартным образом, не разрешается выполнять сетевые вызовы к устройству, на котором оно установлено. По умолчанию Visual Studio создает для развертываемого приложения исключение из этого правила. Это исключение позволяет тестировать процедуры обмена данными на одном компьютере. Прежде чем отправлять приложение в [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], необходимо протестировать приложение без этого исключения.  
+ Из соображений безопасности приложению [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , установленному стандартным образом, не разрешается выполнять сетевые вызовы к устройству, на котором оно установлено. По умолчанию Visual Studio создает для развертываемого приложения исключение из этого правила. Это исключение позволяет тестировать процедуры обмена данными на одном компьютере. Прежде чем отправлять приложение в [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], необходимо протестировать приложение без этого исключения.  
   
  Чтобы удалить исключение сетевого замыкания на себя из приложения, выполните следующие действия:  
   

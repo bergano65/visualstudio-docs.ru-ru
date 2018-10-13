@@ -1,7 +1,7 @@
 ---
 title: Задача CL | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10c5d6ed0e4b992f5b573cd46bd1248d8d24d90
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddc31a98419553228b099e2dfb8652992b884176
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234836"
 ---
 # <a name="cl-task"></a>Задача CL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [CL-задача](https://docs.microsoft.com/visualstudio/msbuild/cl-task).  
-  
   
 Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
@@ -545,7 +543,7 @@ ms.locfileid: "47592820"
   
      Определяет символ предобработки для исходного файла.  
   
-     Для получения дополнительной информации см. раздел [Определения препроцессора (/D)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+     Для получения дополнительной информации см. [/D (Preprocessor Definitions)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 -   **PreprocessOutput**  
   

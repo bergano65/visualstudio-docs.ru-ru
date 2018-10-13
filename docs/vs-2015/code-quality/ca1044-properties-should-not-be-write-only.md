@@ -1,7 +1,7 @@
 ---
 title: 'CA1044: Свойства не должны быть доступны только на запись | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 732af1dcdeff669723f717dabe035a38640a8bf3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 48bfc0d7df27cd168153172b08b81e217d5e78f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184585"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: свойства не должны быть доступны только на запись
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA1044: свойства не должны быть доступны только для записи](https://docs.microsoft.com/visualstudio/code-quality/ca1044-properties-should-not-be-write-only).
-
 |||
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|

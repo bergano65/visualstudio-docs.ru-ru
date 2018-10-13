@@ -1,7 +1,7 @@
 ---
 title: Установка Visual C++ для разработки кроссплатформенных мобильных приложений | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 6f341ad8c750286f8f15297c15dcdc8340ee7596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203870"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Install Visual C++ for Cross-Platform Mobile Development](https://docs.microsoft.com/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development).  
-  
   
 Visual C++ для разработки кросс-платформенных мобильных приложений] (http://go.microsoft.com/fwlink/p/?LinkId=536383) — это устанавливаемый компонент Visual Studio 2015. Он включает в себя кроссплатформенные шаблоны Visual Studio, и вместе с ним устанавливаются кроссплатформенные средства и пакеты SDK, что позволяет быстро приступить к работе, не ища, не скачивая и не настраивая их самостоятельно. Эти средства можно использовать в Visual Studio для быстрого создания, редактирования, отладки и тестирования кроссплатформенных проектов. В этом разделе описывается установка средств и программного обеспечения сторонних разработчиков, необходимых для разработки кроссплатформенных приложений с помощью Visual Studio. Обзор компонента см. в статье [Visual C++ для разработки кросс-платформенных мобильных приложений](http://go.microsoft.com/fwlink/p/?LinkId=536387).  
   

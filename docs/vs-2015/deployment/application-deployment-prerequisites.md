@@ -1,7 +1,7 @@
 ---
 title: Предварительные условия для развертывания приложения | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217936"
 ---
 # <a name="application-deployment-prerequisites"></a>Предварительные условия для развертывания приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [предварительные условия для развертывания приложения](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Чтобы обеспечить успешную установку и запуск приложения, необходимо, в первую очередь, убедиться, что компоненты, от которых зависит приложение, уже установлены на целевом компьютере. Например, большинство приложений, которые создаются при помощи [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], имеют зависимость от [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], поэтому перед установкой приложения на целевом компьютере должна быть установлена правильная версия среды CLR.  
   
  Можно выбрать эти компоненты в **Prerequisites Dialog Box** и установить .NET Framework и другие распространяемые пакеты в ходе установки. Такой подход известен как *начальная загрузка*. Далее, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает исполняемую программу Windows с именем Setup.exe, также известный как *загрузчика*. Начальный загрузчик установит необходимые компоненты перед запуском приложения. Дополнительные сведения о выборе необходимых компонентов, см. в разделе [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  

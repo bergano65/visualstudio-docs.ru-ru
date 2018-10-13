@@ -1,7 +1,7 @@
 ---
 title: Набор расширенные правила определения правильности правил для управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187434"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [набор расширенные правила определения правильности правил для управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code).  
-  
 Набор правил расширенные правила определения правильности Майкрософт развертывает ошибок использования логики и платформы, имена которых присутствуют в процессе анализа кода. Дополнительный акцент делается на определенных сценариях, таких как COM-взаимодействие и мобильные приложения. Рекомендуется включить это правило, если один из этих сценариев применяется к вашему проекту или для поиска дополнительных ошибок в проекте.  
   
  Расширенные правила определения правильности Майкрософт набор правил содержит правила, заданные в правиле базовые правила определения правильности Майкрософт. Базовые правила определения правильности включения правил, заданных в правиле минимальные правила и рекомендации Майкрософт. Дополнительные сведения см. в разделе [набор базовые правила определения правильности правил для управляемого кода](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) и [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

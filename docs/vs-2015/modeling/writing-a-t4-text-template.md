@@ -1,7 +1,7 @@
 ---
 title: Написание текстового шаблона T4 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231638"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [написание текстового шаблона T4](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template).  
-  
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-странице будет содержать "\<html >...» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.  
   
  Эта структура упрощает разработку шаблона, так как можно начать с прототипа созданного файла и постепенно вставлять блоки управления, которые будут обеспечивать изменение результата.  

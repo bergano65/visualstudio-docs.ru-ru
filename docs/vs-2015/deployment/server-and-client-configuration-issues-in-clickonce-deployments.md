@@ -1,7 +1,7 @@
 ---
 title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231534"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Server вопросы настройки и клиента в развертываниях ClickOnce](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.  
   
  Кроме того, некоторые веб-серверы и веб-приложения, такие как [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], содержат список файлов и типов файлов, которые не удается загрузить. Например [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] предотвращает загрузку всех файлов Web.config. Эти файлы могут содержать конфиденциальные сведения, такие как имена пользователей и пароли.  

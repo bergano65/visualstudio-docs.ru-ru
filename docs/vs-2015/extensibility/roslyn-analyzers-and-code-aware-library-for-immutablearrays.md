@@ -1,7 +1,7 @@
 ---
 title: Анализаторы Roslyn и кода-библиотека для immutablearrays с | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173359"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и библиотека для ImmutableArrays с поддержкой кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализаторов Roslyn и кода-библиотека для immutablearrays с](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) («Roslyn») позволяет создавать библиотеки с кодом.  С кодом библиотеки не предоставляет функциональные возможности, которые можно использовать и набор инструментов (анализаторов Roslyn), чтобы помочь вам использовать библиотеку в лучшим способом избежать ошибок.  В этом разделе показано, как создавать реальные анализатор Roslyn для перехвата распространенных ошибок при использовании [NIB: неизменяемые коллекции](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) пакет NuGet.  В примере также как обеспечить исправление кода для решения проблемы кода, обнаруженных анализатором.  Пользователи увидят средства исправления кода в Visual Studio лампочки пользовательского интерфейса и автоматически применить исправление кода.  
   
 ## <a name="getting-started"></a>Начало работы  
@@ -32,7 +30,7 @@ ms.locfileid: "47563498"
   
 -   Visual Studio 2015 (не экспресс-выпуск) или более поздней версии.  Можно воспользоваться бесплатным [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)  
   
--   [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  Можно также, при установке Visual Studio, проверить средства расширения Visual Studio в общих средствах для установки пакета SDK, в то же время.  Если вы уже установили Visual Studio, можно также установить этот пакет SDK, выбрав в главном меню **файл &#124; New &#124;проекта...** C# в области навигации слева, затем и указав и расширяемость.  При выборе "**Установка средств расширения Visual Studio**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.  
+-   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Можно также, при установке Visual Studio, проверить средства расширения Visual Studio в общих средствах для установки пакета SDK, в то же время.  Если вы уже установили Visual Studio, можно также установить этот пакет SDK, выбрав в главном меню **файл &#124; New &#124;проекта...** C# в области навигации слева, затем и указав и расширяемость.  При выборе "**Установка средств расширения Visual Studio**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.  
   
 -   [Платформа компилятора .NET («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  Вы также можете установить этот пакет SDK, выбрав в главном меню **файл &#124; New &#124; проекта...** , нажимая кнопку **C#** в левой области навигации, а затем выбирая **расширяемости**.  При выборе "**скачивание пакета SDK для платформы компилятора .NET**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.  Этот пакет SDK включает в себя [визуализаторе синтаксиса Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Этот очень полезное средство поможет вам понять, какие типы модели кода следует искать в ваш анализатор.  Вызовы инфраструктуры анализатора в код для конкретного кода типов моделей, поэтому ваш код выполняется при необходимости и сосредоточиться только на анализ соответствующий код.  
   

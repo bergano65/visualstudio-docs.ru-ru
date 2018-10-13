@@ -1,7 +1,7 @@
 ---
 title: Связывание варианта использования с документами и схемами | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232535"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Связывание варианта использования с документами и схемами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [связывание варианта использования с документами и схемами](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams).  
-  
 Вариант использования на схеме вариантов использования можно связать с другой схемой или документом. Например, можно связать вариант использования со следующими схемами и документами:  
   
 -   схемой последовательностей, на которой показано, как взаимодействия между пользователями и системой или ее основными компонентами позволяют достигать целей варианта использования;  

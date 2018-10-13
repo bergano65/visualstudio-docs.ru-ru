@@ -1,7 +1,7 @@
 ---
 title: 'Исключениями: System.ServiceModel.Security.MessageSecurityException | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241234"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Разрешение вопросов, связанных с исключениями: System.ServiceModel.Security.MessageSecurityException
 Объект <xref:System.ServiceModel.Security.MessageSecurityException> исключение создается, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение не защищено правильно или было изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:  
@@ -37,7 +37,7 @@ ms.locfileid: "47572329"
  **Устранение проблем с проверкой подлинности NTLM при использовании ASP.Net Development Server.**  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server обычно отключает безопасность Windows NT Challenge/Response (NTLM), что разрешает анонимный доступ. По умолчанию при выполнении сеанса служб терминалов или использовании удаленного подключения безопасность NTLM включена. Когда NTLM включена, все запросы к localhost проверяются по учетным данным пользователя или процесса, запустившего [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server. Это снижает угрозу безопасности. Однако WCF также выполняет собственную проверку подлинности и не разрешает учетной записи, не относящейся к администраторам, пользоваться службами WCF.  
   
- Если удаленный пользователь может запустить веб – узел с помощью [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server, а также работать с веб – службой или службой WCF, можно создать пользовательскую привязку службы или отключить безопасность NTLM.  
+ Если удаленный пользователь может запустить веб–узел с помощью [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server, а также работать с веб–службой или службой WCF, можно создать пользовательскую привязку службы или отключить безопасность NTLM.  
   
 > [!IMPORTANT]
 >  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  

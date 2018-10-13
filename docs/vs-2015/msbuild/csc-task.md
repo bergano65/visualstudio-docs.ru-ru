@@ -1,7 +1,7 @@
 ---
 title: Задача Csc | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c02e01e2003d2a7bb618f0c4c2dc00752c4e178
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 657535e73294508ac59330cd379c1c6bd192a0b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237384"
 ---
 # <a name="csc-task"></a>Задача Csc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача Csc](https://docs.microsoft.com/visualstudio/msbuild/csc-task).  
-  
   
 Использует программу-оболочку для файла CSC.exe и создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения о программе CSC.EXE см. в разделе [Параметры компилятора C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).  
   

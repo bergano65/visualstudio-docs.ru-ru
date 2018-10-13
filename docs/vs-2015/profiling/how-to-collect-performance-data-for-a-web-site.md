@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185917"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: сбора данных о производительности для веб-сайта](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Для сбора данных о производительности веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] можно использовать **Мастер производительности**. Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], или веб-сайт [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
@@ -93,7 +91,7 @@ ms.locfileid: "47572251"
   
     -   Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.  
   
-     Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+     Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 6.  На третьей странице мастера можно добавить данные профилирования уровневого взаимодействия (TIP) и/или данных из скриптов JavaScript, выполняющихся на веб-страницах.  
   

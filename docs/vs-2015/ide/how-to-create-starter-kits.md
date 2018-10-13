@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание начальных наборов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9bafe28889bf652b3c66f04e9489a3042a1621
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243392"
 ---
 # <a name="how-to-create-starter-kits"></a>Практическое руководство. Создание начальных наборов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создание начальных наборов](https://docs.microsoft.com/visualstudio/ide/how-to-create-starter-kits).  
-  
 Начальный набор содержит код всего приложения, а также документацию о том, как изменять и расширять это приложение. Создание начального набора мало чем отличается от создания обычного шаблона проекта. Единственное отличие состоит в том, что начальный набор содержит файлы документации, которые открываются при создании проекта на основе данного начального набора.  
   
 ## <a name="designing-and-developing-a-starter-kit"></a>Проектирование и разработка начального набора  

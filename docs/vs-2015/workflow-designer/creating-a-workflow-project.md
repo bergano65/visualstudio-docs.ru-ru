@@ -1,7 +1,7 @@
 ---
 title: Создание проекта рабочего процесса | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: faa63966d0f23aaf8d0392b968f9ec420e02d348
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236721"
 ---
 # <a name="creating-a-workflow-project"></a>Создание проекта рабочего процесса
 Рабочие процессы, службы рабочего процесса [!INCLUDE[indigo1](../includes/indigo1-md.md)], настраиваемые действия и настраиваемые конструкторы действий можно создавать с помощью шаблонов проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В этом разделе описано создание библиотек и приложений с помощью шаблонов проектов, доступных в среде [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

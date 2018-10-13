@@ -1,7 +1,7 @@
 ---
 title: Привязка данных WPF с помощью LINQ to XML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65ee531be414bd530621dcafed83577963b6b215
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78e30d010621397d12c5580fdc6089aea0d2f5e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176947"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Привязка данных WPF с помощью LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [привязке данных WPF с помощью LINQ to XML](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml).  
-  
 В этом разделе приводятся сведения об использовании LINQ to XML в качестве источника данных для привязки данных в приложениях Windows Presentation Foundation (WPF). Такая организация работы основана на использовании особых *динамических свойств* классов <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> и <xref:System.Xml.Linq.XElement?displayProperty=fullName>. Сведения о динамических свойствах приведены также в этом разделе.  
   
 ## <a name="in-this-section"></a>В этом разделе  

@@ -1,7 +1,7 @@
 ---
 title: Создание экземпляра базового редактора с помощью API прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaed9c7860153beee6d02bd02242697f10647e0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246042"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Создание экземпляра базового редактора с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание экземпляра Core редактора с помощью API прежних версий](https://docs.microsoft.com/visualstudio/extensibility/instantiating-the-core-editor-by-using-the-legacy-api).  
-  
 Редактор несет ответственность за изменения функции, такие как вставки, удаления, копирования и вставки текста. Оно объединяет эти функции с образы, предоставляемые службы языка, такие как выделение цветом текста, отступы и завершение операторов IntelliSense.  
   
  Можно создать экземпляр базовым редактором в одном из трех способов:  

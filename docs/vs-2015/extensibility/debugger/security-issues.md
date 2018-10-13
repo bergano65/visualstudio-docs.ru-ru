@@ -1,7 +1,7 @@
 ---
 title: Проблемы безопасности | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0459f7e91fbced71dda0bb401ffe056b5cd49f52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219379"
 ---
 # <a name="security-issues"></a>Проблемы безопасности
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [проблемы безопасности](https://docs.microsoft.com/visualstudio/extensibility/debugger/security-issues).  
-  
 Чтобы отладить программу, с помощью Visual Studio, только разрешения, необходимые являются те же, что разработчику необходимо запустить программу. Это включает в себя удаленной отладки для большинства ситуаций (некоторых ситуаций, связанных с других служб, таких как службы IIS, может потребоваться более высокий уровень разрешений).  
   
  Во время работы Visual Studio, диспетчер отладки процессов (PDM) отслеживает отладки процессов на локальном компьютере. Удаленно программу под названием msvsmon.exe запускается разработчиком для обработки удаленной отладки и предоставления PDM. (Обратите внимание, что msvsmon.exe не является службой и позволяет включить удаленную отладку на этом компьютере должна быть запущена вручную.) Когда Visual Studio (или msvsmon.exe) не запущена, процессы не отслеживаются для отладки.  

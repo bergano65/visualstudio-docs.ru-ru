@@ -1,7 +1,7 @@
 ---
 title: Изменить и продолжить ошибок и предупреждений (C#) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -66,12 +66,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 98ee36f703af67b3f6ede230203676a30acf19d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 277208c47a51b1320a29d7cac869b0e786b7b291
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175959"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Ошибки и предупреждения режима "Изменить и продолжить" (C#)
 Были внесены изменения в раздел кода, изменение которого не допускается при использовании операции "Изменить и продолжить" языка Visual C#.  
@@ -80,7 +80,7 @@ ms.locfileid: "47572446"
   
  Изменения в объявляющем коде, меняющие общедоступную (public) структуру класса, в общем случае запрещены. Кроме того, не разрешены некоторые виды изменений в теле метода или свойства, а также в объявлениях со спецификатором доступа private в пределах класса. Операция "Изменить и продолжить" по возможности помечает запрещенный к изменению код светло-серым и отображает сообщение об ошибке.  
   
- Дополнительные сведения об изменениях, поддерживаемых операцией Edit и Continue для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [поддерживаемые изменения кода (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)на веб-сайте MSDN.  
+ Дополнительные сведения об изменениях, поддерживаемых операцией "Изменить и продолжить" для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)на веб-сайте MSDN.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   

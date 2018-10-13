@@ -1,7 +1,7 @@
 ---
 title: 'Краткое руководство: Отладка JavaScript с помощью консоли | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205521"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Краткое руководство. Отладка JavaScript с помощью консоли
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [краткое руководство: Отладка JavaScript с помощью консоли](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений Магазина, созданных с использованием JavaScript. Эти функции поддерживаются для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений Windows Phone Store приложений и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений Магазина, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложений Магазина Windows Phone и приложений, созданных с помощью инструментов Visual Studio для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  Окно консоли JavaScript предоставляет вам следующие возможности:  
   
@@ -168,15 +166,15 @@ ms.locfileid: "47560491"
   
      Приложение выполняется, но изображения отсутствуют. Ошибки APPHOST в окне консоли JavaScript указывают на отсутствие изображений.  
   
-9. С помощью `FlipView` приложение, работающее в симуляторе или эмуляторе телефона введите `Data.items` в строке ввода окна консоли (рядом с полем «>>» символ) и нажмите клавишу ВВОД.  
+9. Приложение `FlipView` должно выполняться в симуляторе или эмуляторе телефона; введите `Data.items` в строке ввода окна консоли (рядом с символом ">>") и нажмите клавишу ВВОД.  
   
-     В окне консоли отображается визуализатор для объекта `items` . Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.  
+     В окне консоли отображается визуализатор для объекта `items`. Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.  
   
      ![Окно консоли JavaScript](../debugger/media/js-console-window.png "JS_Console_Window")  
   
      Также обратите внимание на то, что в объекте `items._data` существует намного больше элементов, чем ожидалось.  
   
-10. В командной строке введите `Data.items.push` и нажмите клавишу ВВОД. В окне консоли отображается визуализатор для функции `push`, которая реализована в файле проекта [!INCLUDE[winjs_long](../includes/winjs-long-md.md)]. В этом приложении мы используем `push` для добавления надлежащих элементов. Выполнив небольшой анализ с помощью IntelliSense, можно установить, что следует использовать `setAt` для замены изображений по умолчанию.  
+10. В командной строке введите `Data.items.push` и нажмите клавишу ВВОД. В окне консоли отображается визуализатор для функции `push` , которая реализована в файле проекта [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] . В этом приложении мы используем `push` для добавления надлежащих элементов. Выполнив небольшой анализ с помощью IntelliSense, можно установить, что следует использовать `setAt` для замены изображений по умолчанию.  
   
 11. Чтобы устранить эту проблему в интерактивном режиме без остановки сеанса отладки, откройте файл default.js и выберите этот код функции `updateImages` :  
   
@@ -284,13 +282,13 @@ ms.locfileid: "47560491"
   
 ## <a name="see-also"></a>См. также  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Команды консоли JavaScript](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)   
- [Поддержка продукта и специальные возможности](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Поддержка и специальные возможности продукта](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 
 
 

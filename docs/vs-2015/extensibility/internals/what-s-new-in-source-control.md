@@ -1,7 +1,7 @@
 ---
 title: Что&#39;возможности системы управления версиями | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217061"
 ---
 # <a name="what39s-new-in-source-control"></a>Что&#39;возможности системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [что&#39;возможности системы управления версиями](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control).  
-  
 В [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] может обеспечить решение управления интегрирована источника путем реализации пакета VSPackage системы управления версиями. В этом разделе описаны возможности системы управления версиями пакетов VSPackage и общие сведения о реализации действий.  
   
 ## <a name="the-source-control-vspackage"></a>Пакет VSPackage управления версиями  

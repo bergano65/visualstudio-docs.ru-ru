@@ -1,7 +1,7 @@
 ---
 title: Разблокирование Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1da2baf294035563da3f4bf2b915cc02b8496a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568608"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198865"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Разблокирование Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [разблокирование Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio).  
-  
 Вы можете работать с ознакомительной версией Visual Studio бесплатно в течение 30 дней. При входе в интегрированную среду разработки пробный период можно продлить на 90 дней. Чтобы продолжить использование Visual Studio, разблокируйте ее. Для этого:  
   
 1.  используйте подписку;  

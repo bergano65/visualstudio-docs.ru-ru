@@ -1,7 +1,7 @@
 ---
 title: Отображение данных в Blend | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dda286da7f3471932d0ae583f2da29d1bf7a5205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96784fbd5fa4934246a58aa76e4938ceea1bc826
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231274"
 ---
 # <a name="display-data-in-blend"></a>Отображение данных в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отображение данных в Blend](https://docs.microsoft.com/visualstudio/designers/display-data-in-blend).  
-  
 При настройке макета страниц вы можете просмотреть демонстрационные данные в конструкторе. Демонстрационные данные можно создать с нуля или с помощью существующего класса. Вы также можете подключиться к *динамическим данным* , которые появятся в вашем приложении при его запуске.  
   
  **Содержание раздела**  

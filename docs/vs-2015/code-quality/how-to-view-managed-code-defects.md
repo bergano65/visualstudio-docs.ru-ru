@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: просмотр дефектов управляемого кода | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9de19a3d371a832ad8d8fa52d7bb2bd9b06363e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f0dff4744e3c77ed94afe78396008a3de7646c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239425"
 ---
 # <a name="how-to-view-managed-code-defects"></a>Практическое руководство. Просмотр дефектов управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: представление управляемого количества дефектов в коде](https://docs.microsoft.com/visualstudio/code-quality/how-to-view-managed-code-defects).  
-  
 В анализе кода ошибки, предупреждения и сообщения отображаются в окне анализа кода. В окне анализа кода открывается автоматически при выполнении анализа кода для проекта или решения.  
   
  В окне анализа кода вы можете:  

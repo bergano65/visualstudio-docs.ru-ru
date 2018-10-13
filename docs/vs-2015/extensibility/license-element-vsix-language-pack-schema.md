@@ -1,7 +1,7 @@
 ---
 title: Лицензии элемент (схема языкового пакета VSIX) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecf1913878137d84346275beccb512027f74f8f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66aa5d8166ce39dee80e23af20365eca6f5f8fee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172267"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Элемент License (схема языкового пакета VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элемент License (схема языкового пакета VSIX)](https://docs.microsoft.com/visualstudio/extensibility/license-element-vsix-language-pack-schema).  
-  
 Необязательный. Путь к локализованной версии файла лицензии для расширения.  
   
 ## <a name="syntax"></a>Синтаксис  

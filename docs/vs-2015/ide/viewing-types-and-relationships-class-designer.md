@@ -1,7 +1,7 @@
 ---
 title: Просмотр типов и отношений (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240764"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Просмотр типов и отношений (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Просмотр типов и отношений (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 Конструктор классов использует диаграммы классов для отображения сведений о типах, например, о составляющих их элементах и отношениях между ними. Визуализация этих сущностей фактически является динамическим представлением кода. Это означает, что можно изменять типы в конструкторе, а затем просматривать эти правки в исходном коде сущности. Аналогичным образом, диаграмма классов синхронизируется с изменениями, вносимыми для сущностей в коде.  
   
 > [!NOTE]

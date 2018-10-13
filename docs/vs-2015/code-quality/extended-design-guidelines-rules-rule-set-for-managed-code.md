@@ -1,7 +1,7 @@
 ---
 title: Набор расширенные нормы и правила разработки правил для управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207822"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные нормы и правила разработки" для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [набора правил расширенные нормы и правила разработки для управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Набор правил Майкрософт расширенные нормы и правила разработки расширяет базовые нормы и правила разработки для повышения удобства использования и удобства сопровождения проблемах. Дополнительный акцент делается на рекомендации по именованию. Рекомендуется включить это правило, если проект содержит библиотечный код или если требуется достичь высочайших стандартов в написании кода, который легко поддерживать.  
   
  Расширенные правила и рекомендации включают все Microsoft базовые нормы и правила разработки. Базовые нормы и правила разработки включают все минимально рекомендуемые правила Майкрософт. Дополнительные сведения см. в разделе [набора правил базовые нормы и правила разработки для управляемого кода](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) и [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

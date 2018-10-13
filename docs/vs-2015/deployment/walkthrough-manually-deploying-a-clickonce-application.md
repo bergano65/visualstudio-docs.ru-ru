@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Развертывание вручную приложения ClickOnce | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236175"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Разбор примера: развертывание вручную приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: развертывание вручную приложения ClickOnce](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).  
-  
 Если Visual Studio нельзя использовать для развертывания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, или если необходимо использовать дополнительные функции развертывания, например технологии развертывания доверенных приложений следует использовать средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью командной строки версии (Mage.exe) или графической версии (MageUI.exe) Manifest Generation and Editing Tool.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -217,7 +215,7 @@ ms.locfileid: "47592897"
  [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

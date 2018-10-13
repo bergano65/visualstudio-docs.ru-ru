@@ -1,7 +1,7 @@
 ---
 title: Проект подтипы разработки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243827"
 ---
 # <a name="project-subtypes-design"></a>Разработка подтипов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [подтипов проекта](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design).  
-  
 Подтипов проекта позволяют пакеты VSPackage расширяют проектов на основании Microsoft Build Engine (MSBuild). Использование статистической обработки позволяет повторно использовать основную часть реализации в системе проектов core управляемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , но по-прежнему настройки поведения для конкретного сценария.  
   
  Следующие разделы подробно описаны основные проектирование и реализацию подтипов проекта.  

@@ -1,7 +1,7 @@
 ---
 title: Параметры командной строки для команды Devenv | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215038"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [командной строки devenv](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 Команда Devenv позволяет задавать из командной строки различные параметры для интегрированной среды разработки (IDE), а также для сборки, отладки и развертывания проектов. Используйте эти параметры для запуска IDE из файла скрипта или из BAT-файла, например скрипта сборки программы в ночное время, либо для запуска IDE в особой конфигурации.  
   

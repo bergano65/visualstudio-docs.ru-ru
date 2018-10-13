@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Присоединение Profiler к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8e2d186fbd0d3226ee3a1b023345ea8369cb627
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 665a04990704797e1396b70cbc8c269f16a9f193
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244131"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: присоединение Profiler для автономного приложения .NET Framework и сбор статистики приложения с помощью командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line).  
-  
 В этом разделе описывается, как с помощью Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.  
   
 > [!NOTE]

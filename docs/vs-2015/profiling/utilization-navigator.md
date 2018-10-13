@@ -1,7 +1,7 @@
 ---
 title: Навигатор использования | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238593"
 ---
 # <a name="utilization-navigator"></a>Навигатор использования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [навигатор использования](https://docs.microsoft.com/visualstudio/profiling/utilization-navigator).  
-  
 Вы можете применять навигатор использования в визуализаторе параллелизма для выбора интервала времени в трассировке. Визуализатор параллелизма показывает загруженность ядер ЦП целевым процессом во времени. Это облегчает просмотр шаблонов загрузки ЦП, а также позволяет сравнить данные загрузки и данные в других представлениях. Навигатор использования отображается в верхней части каждого представления в визуализаторе параллелизма. На рисунке ниже показан навигатор использования.  
   
  ![Навигатор использования с выбранным отрезком времени](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  

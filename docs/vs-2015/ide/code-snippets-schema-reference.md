@@ -1,7 +1,7 @@
 ---
 title: Справочник по схеме фрагментов кода | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188137"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по схеме фрагментов кода](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Фрагменты кода IntelliSense — это предварительно созданные готовые части кода, которые можно вставить в приложение в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Фрагменты кода повышают производительность за счет сокращения времени, затрачиваемого на ввод повторяющихся частей кода и поиск примеров. С помощью схемы XML фрагментов кода IntelliSense вы можете создавать собственные фрагменты и добавлять их к фрагментам, которые уже есть в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Элементы схемы фрагментов кода IntelliSense  

@@ -1,7 +1,7 @@
 ---
 title: Привязка элементов управления Windows Forms к данным | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f454e1eb6e754327a50b22a4aefdc5e4afa0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237475"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Привязка элементов управления Windows Forms к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [управляет привязки Windows Forms к данным](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data).  
-  
   
 Источники данных можно привязать к элементам управления путем перетаскивания объектов из **источников данных** окна на форму Windows или на существующий элемент управления в форме. Прежде чем перетащить элементы, можно задать тип элемента управления, который вы хотите привязать к. В зависимости от того, самостоятельно, или отдельного столбца выбраны таблицы отображаются разные значения.  Можно также задать пользовательские значения. Для таблицы «Подробности» означает, что каждый столбец привязан к отдельным элементом управления.  
   

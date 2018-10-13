@@ -1,7 +1,7 @@
 ---
 title: Подавление предупреждений при помощи атрибута SuppressMessage | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205963"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Подавление предупреждений при помощи атрибута SuppressMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [подавления предупреждений при помощи атрибута SuppressMessage](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute).  
-  
 Часто полезно указать, что предупреждение неприменимо, чтобы члены группы знали, что код прошел проверку и выяснилось, что предупреждение должны подавляться. В исходном коде (ISS) позволяет разработчику расположить атрибут, подавляющий предупреждение недалеко от расположения, который создает предупреждение. Можно добавить такой атрибут непосредственно к исходному файлу, или можно использовать контекстное меню в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки.  
   
 ## <a name="in-this-section"></a>В этом разделе  

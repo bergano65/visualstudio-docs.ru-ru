@@ -1,7 +1,7 @@
 ---
 title: Добавление значков в команды меню | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184526"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Добавление значков в команды меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [добавление значков команды меню](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands).  
-  
 Команды могут отображаться на меню и панелей инструментов. На панели инструментов довольно часто команду, чтобы увидеть с помощью просто значок (для экономии места) при меню, что команды обычно отображается значок и текст.  
   
  Значки являются 16 х 16 пикселей и может быть 8-битовую глубину цвета (256 цветов) или глубиной цвета 32 бита (значение true, цвет). 32-разрядные цветные значки являются предпочтительными. Значки обычно располагаются в одной строке по горизонтали в одном точечном рисунке, несмотря на то, что допускаются несколько точечных рисунков. Это растровое изображение объявляется в vsct-файл, а также отдельные значки, доступных в точечном рисунке. Ознакомьтесь со справочником для [элемент Bitmaps](../extensibility/bitmaps-element.md) для получения дополнительных сведений.  

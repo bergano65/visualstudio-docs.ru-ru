@@ -1,7 +1,7 @@
 ---
 title: '&lt;PARAM&gt; (JavaScript) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9594fee9fe94387ddc0e4da07611344d40e5ee1e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bccb790a374e9ce6b197927760f9c3cc15d5a7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198045"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;PARAM&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
-  
 Указывает сведения о документации для параметра в функции или метода.  
   
 ## <a name="syntax"></a>Синтаксис  

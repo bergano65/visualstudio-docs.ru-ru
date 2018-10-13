@@ -1,7 +1,7 @@
 ---
 title: Регистрация расширений имен файлов для развертываний Side-By-Side | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e80aa90c5fcb6d223e63df6ed740e0295dd3adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d16c6475675fbf563f8228a6e05dfb81f739485
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211423"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Регистрация расширений имен файлов для параллельных развертываний
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Регистрация расширений имен файлов для развертываний Side-By-Side](https://docs.microsoft.com/visualstudio/extensibility/registering-file-name-extensions-for-side-by-side-deployments).  
-  
 Для пакетов VSPackage, развернутых в среде side-by-side, необходимо зарегистрировать расширения имен файлов, чтобы связать файлы с правильной версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если вы не используете расширение имени файла с конкретной версией, регистрация позволяет пользователям откройте проект и элемент файлы проекта в соответствующую версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -44,5 +42,5 @@ ms.locfileid: "47572736"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Поддержка нескольких версий Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- Описывает проблемы, связанные с несколькими версиями [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и VSPackage во время разработки и развертывания для конечных пользователей.
+ Описываются проблемы, связанные с несколькими версиями [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и VSPackage во время разработки и развертывания для конечных пользователей.
 

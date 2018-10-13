@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_baseType | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b001c2a72d4f9633d497cd40df9af70048d6c04a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e359bdd2e97a3c1b31986a8ef7455590b5b2335e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221966"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaSymbol::get_baseType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-basetype).  
-  
 Возвращает базовый тип для этого символа *.*  
   
 ## <a name="syntax"></a>Синтаксис  

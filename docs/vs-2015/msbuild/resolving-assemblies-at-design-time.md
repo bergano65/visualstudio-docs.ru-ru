@@ -1,7 +1,7 @@
 ---
 title: Разрешение сборок во время разработки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b54d2c3dc69e33ba732f8b31b36d896c90e8b774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224657"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [разрешение сборок во время разработки](https://docs.microsoft.com/visualstudio/msbuild/resolving-assemblies-at-design-time).  
-  
   
 Когда вы добавляете ссылку на сборку с помощью вкладки .NET или диалога добавления ссылки, эта ссылка указывает на промежуточную ссылочную сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке .NET перечислены все ссылочные сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующих сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  
   

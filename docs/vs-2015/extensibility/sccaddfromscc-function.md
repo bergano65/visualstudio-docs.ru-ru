@@ -1,7 +1,7 @@
 ---
 title: Функция SccAddFromScc | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1dd8ee409fd1facae82a8b8c6eeb418a68b4a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 759bc4d64419959812a07bac90bceb940dea4391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220739"
 ---
 # <a name="sccaddfromscc-function"></a>Функция SccAddFromScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [функция SccAddFromScc](https://docs.microsoft.com/visualstudio/extensibility/sccaddfromscc-function).  
-  
 Эта функция позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями и следовательно, сделать частью текущего проекта, эти файлы. Например эту функцию можно получить общего файла заголовка в текущий проект без копирования файла. Возвращаемый массив файлов, `lplpFileNames`, содержащий список файлов, которые пользователю нужно добавить в проект интегрированной среды разработки.  
   
 ## <a name="syntax"></a>Синтаксис  

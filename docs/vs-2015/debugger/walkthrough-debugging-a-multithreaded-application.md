@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отладка многопоточных приложений | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186203"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Пошаговое руководство. Отладка многопоточных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладка многопоточного приложения, с помощью окна потоков](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] предоставляет улучшенное **потоков** окна и других пользовательского интерфейса усовершенствования для упрощения отладки многопоточных приложений. Выполнение данного пошагового руководства занимает лишь несколько минут, но оно позволит ознакомиться с новыми возможностями интерфейса для отладки многопоточных приложений.  
   
  Чтобы начать работу с данным пошаговым руководством, необходим проект многопоточного приложения. Выполните следующие действия для создания этого проекта.  

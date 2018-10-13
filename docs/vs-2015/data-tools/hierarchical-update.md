@@ -1,7 +1,7 @@
 ---
 title: Иерархическое обновление | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239386"
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [иерархическое обновление](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update).  
-  
   
 Иерархическое обновление * — это процесс сохранения обновленных данных (из набора данных двух или более связанных таблиц) обратно в базу данных, сохраняя ограничения ссылочной целостности. *Ссылочная целостность* ссылается на правила целостности, заданные с помощью ограничений в базе данных, которые управляют поведением вставки, обновления и удаления связанных записей. Например это целостность данных обеспечивает создание записи клиента перед предоставлением заказы, должен быть создан для этого клиента.  Дополнительные сведения о связях в наборах данных см. в разделе [отношения в наборах данных](../data-tools/relationships-in-datasets.md)  
   
@@ -124,9 +122,9 @@ ms.locfileid: "47559415"
 |Член|Описание|  
 |------------|-----------------|  
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|  
-|Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|  
+|Свойство`BackUpDataSetBeforeUpdate` |Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|  
 |*tableName* `TableAdapter` свойство|Представляет `TableAdapter`. Созданный `TableAdapterManager` содержит свойство для каждого `TableAdapter` он управляет. Например, набор данных с таблицей Customers и Orders создается с `TableAdapterManager` , содержащий `CustomersTableAdapter` и `OrdersTableAdapter` свойства.|  
-|Свойство `UpdateOrder`|Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных. Дополнительные сведения см. в разделе [как: задать порядок при выполнения иерархического обновления](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|Свойство`UpdateOrder` |Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных. Дополнительные сведения см. в разделе [как: задать порядок при выполнения иерархического обновления](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>См. также  
  [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

@@ -1,7 +1,7 @@
 ---
 title: Обнаружение утечек памяти, с помощью библиотеки CRT | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198085"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Обнаружение утечек памяти с помощью библиотеки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поиск памяти утечек с помощью CRT библиотеки](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Утечки памяти, определяемые как сбой при освобождении ранее выделенной памяти, — это одна из наиболее трудно обнаруживаемых ошибок в приложениях C/C++. Небольшая утечка памяти сначала может остаться незамеченной, но постепенно нарастающая утечка памяти может приводить к различным симптомам, от снижения производительности до аварийного завершения приложения из-за нехватки памяти. Более того, приложение, в котором происходит утечка памяти, может использовать всю доступную память и привести к аварийному завершению другого приложения, в результате чего может быть непонятно, какое приложение отвечает за сбой. Даже безобидная на первый взгляд утечка памяти может быть признаком других проблем, требующих устранения.  
   
  Отладчик [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и библиотеки времени выполнения C (CRT) предоставляют средства для обнаружения утечек памяти.  

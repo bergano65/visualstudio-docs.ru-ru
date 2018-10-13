@@ -1,7 +1,7 @@
 ---
 title: Страницы свойств | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 544f69a8cfa90c7977a2861452fa47a570eb0bbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181069"
 ---
 # <a name="property-pages"></a>Страницы свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [страницы свойств](https://docs.microsoft.com/visualstudio/extensibility/internals/property-pages).  
-  
 Пользователи могут просматривать и изменять зависящие от конфигурации и - не зависят от свойств проекта с помощью страницы свойств. Объект **страницы свойств** кнопка включена в **свойства** окне или на панели инструментов обозревателя решений для объектов, которые предоставляют вид страницы свойств для выбранного объекта. Страницы свойств, создаваемые в среде и доступны для решения и проекты. Они тем не менее, также могут быть доступны для элементов проекта, которые делают использование свойств зависимости от конфигурации. Эта возможность может быть использовано, когда файлы проекта требуют параметров коммутатора компилятора было создано правильно.  
   
 ## <a name="using-property-pages"></a>Использование страниц свойств  

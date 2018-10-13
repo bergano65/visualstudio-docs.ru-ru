@@ -1,7 +1,7 @@
 ---
 title: 'DA0005: частые коллекции GC2 | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31a59bf1f53e2757aa5b26019c36f578cbc3f3c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccbd030fe6f6ec48e37da22be896bd9fb3a5c8ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237722"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: частые коллекции GC2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [DA0005: частые GC2 коллекций](https://docs.microsoft.com/visualstudio/profiling/da0005-frequent-gc2-collections).  
-  
 Идентификатор правила | DA0005 |  
 | Категория |. Использование .NET Framework |  
 | Метод профилирования |. Памяти .NET |  

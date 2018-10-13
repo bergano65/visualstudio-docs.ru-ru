@@ -1,7 +1,7 @@
 ---
 title: Экспорт схем UML в файлы изображений | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228362"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Экспорт схем UML в файлы изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Экспорт UML-схемы в файлы изображений](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files).  
-  
 Вы можете экспортировать документ UML из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] изображения, которое находится под управлением программы. Например, это может потребоваться в рамках автоматического создания документов.  
   
  Если требуется вручную экспортировать документ в изображение, можно скопировать и вставить фигуры из схемы в другие программы, такие как Word. Кроме того, можно распечатать документы в формате XPS. Дополнительные сведения см. в разделе [Экспорт схем как образы](../modeling/export-diagrams-as-images.md).  

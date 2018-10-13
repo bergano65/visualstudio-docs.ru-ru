@@ -1,7 +1,7 @@
 ---
 title: Персонализация интегрированной среды разработки Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220004"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Персонализация Интегрированной среды разработки Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 В этом разделе содержатся сведения о различных способах индивидуальной настройки Visual Studio в соответствии с личным стилем и требованиями к разработке. Можно определить и сохранить несколько макетов окон и переключаться между ними. Например, можно определить макет для кодирования и макет для отладки. Можно настроить цвета, шрифты и форматирование в редакторе кода для каждого языка. Можно выбрать цветовую тему среды — синяя, темная или светлая — или создать пользовательские темы, загрузив и установив редактор тем Visual Studio из коллекции кодов Visual Studio. Доступ ко многим другим параметрам можно получить в [диалоговом окне "Параметры среды"](../ide/reference/environment-options-dialog-box.md).  
   
  Целый ряд параметров поддерживает возможность перемещения по экземплярам Visual Studio. Дополнительные сведения см. в статье [Синхронизированные параметры](../ide/synchronized-settings-in-visual-studio.md).  
