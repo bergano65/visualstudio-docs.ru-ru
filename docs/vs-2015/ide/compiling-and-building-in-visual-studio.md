@@ -1,7 +1,7 @@
 ---
 title: Компиляция и сборка в Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229233"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [компиляция и сборка в Visual Studio](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 Visual Studio можно использовать для построения приложений и создания сборок и исполняемых программ через короткие интервалы во время цикла разработки. Частой сборкой кода можно определить ошибки времени компиляции, например неверный синтаксис, неправильно писанные ключевые слова и несоответствия типов, раньше. Кроме того, вы можете найти и исправить ошибки во время выполнения, например логические и семантические ошибки, с помощью частой сборки и запуска отладочных версий кода.  
   
  Когда у вас будет полностью доработанный и отлаженный проект или решение, вы сможете скомпилировать его компоненты в сборку выпуска. По умолчанию сборка выпуска оптимизирована и реализована так, чтобы быть меньше и быстрее, чем отладочная версия кода. Дополнительные сведения см. в статье [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).  

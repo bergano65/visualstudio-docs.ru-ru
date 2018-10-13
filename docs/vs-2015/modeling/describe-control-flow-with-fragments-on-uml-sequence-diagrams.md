@@ -1,7 +1,7 @@
 ---
 title: Описание потока управления с использованием фрагментов на схемах последовательностей UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260225"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Описание потока управления с использованием фрагментов на схемах последовательностей UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Описание потока управления с использованием фрагментов на схемах последовательностей UML](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams).  
-  
 На схеме последовательностей UML в Visual Studio *объединенные фрагменты* позволяют показывать циклы, ветви и другие альтернативные элементы.  
   
  Объединенный фрагмент состоит из одного или нескольких *операндов взаимодействия*, каждый из которых включает одно или несколько сообщений, использований взаимодействия или объединенных фрагментов.  
   
 > [!NOTE]
->  Этот раздел посвящен фрагментам на схемах последовательностей. Дополнительные сведения о чтении UML-схемы последовательностей, см. в разделе [схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md). Дополнительные сведения о рисовании схем последовательностей UML см. в разделе [UML-схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Этот раздел посвящен фрагментам на схемах последовательностей. Дополнительные сведения о чтении UML-схемы последовательностей, см. в разделе [схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md). Подробнее о рисовании схем последовательностей UML см. в разделе [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Объединенный фрагмент с двумя операндами взаимодействия](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

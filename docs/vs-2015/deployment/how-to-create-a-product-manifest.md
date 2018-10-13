@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: создание манифеста продукта | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b9eda8832f2cff1e6b05fa050bf4bf1e42f26a38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270092"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Практическое руководство. Создание манифеста продукта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Create a Product Manifest](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-product-manifest).  
-  
 Чтобы развернуть необходимые условия для приложения, можно создать пакет начального загрузчика. Пакет начального загрузчика содержит один файл манифеста продукта манифест пакета для каждого языкового стандарта. Манифест пакета содержит локализованные компоненты пакета. Сюда входят строки, условия лицензии и языковые пакеты.  
   
  Дополнительные сведения о манифестах продуктов, см. в разделе [как: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md).  

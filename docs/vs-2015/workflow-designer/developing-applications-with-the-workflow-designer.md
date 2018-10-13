@@ -1,7 +1,7 @@
 ---
 title: Разработка приложений с помощью конструктора рабочих процессов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6a010a0df75e683ad26ac0ca297a0ab817bd22cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259159"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Разработка приложений с помощью конструктора рабочего процесса
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] - это визуальный конструктор и отладчик для графического создания и отладки приложений [!INCLUDE[wf](../includes/wf-md.md)] в [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], размещенном в среде разработки [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Он позволяет создавать сложные приложения рабочего процесса, библиотеки действий и службы [!INCLUDE[indigo1](../includes/indigo1-md.md)] с помощью шаблонов и конструкторов действий. [!INCLUDE[crabout](../includes/crabout-md.md)] рабочие процессы, см. в разделе [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -63,7 +63,7 @@ ms.locfileid: "47557930"
  Описывает, как выполнить традиционные процедуры отладки, а также отладку XAML и выражений.  
   
  [Справка по пользовательскому интерфейсу конструктора рабочих процессов](../workflow-designer/workflow-designer-ui-help.md)  
- Содержит разделы контекстной справки для диалоговых окон, входящих в [!INCLUDE[wfd1](../includes/wfd1-md.md)], а также руководство по функциям оболочки конструктора, сочетаниям клавиш и сообщениям об ошибке.  
+ Содержит разделы контекстной справки для диалоговых окон, входящих в [!INCLUDE[wfd1](../includes/wfd1-md.md)], а также руководство по возможностям оболочки конструктора, сочетаниям клавиш и сообщениям об ошибке.  
   
  [Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Содержит руководство по использованию конструктора прежних версий, предназначенного для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

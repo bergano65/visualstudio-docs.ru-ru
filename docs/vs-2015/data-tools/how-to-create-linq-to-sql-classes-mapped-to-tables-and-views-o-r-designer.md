@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание LINQ to SQL classes, сопоставленных с таблицами и представлениями (реляционный конструктор объектов) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269547"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Практическое: Создание LINQ to SQL classes, сопоставленных с таблицами и представлениями (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [как: создание классов LINQ to SQL сопоставленных с таблицами и представлениями (реляционный конструктор объектов)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer).
-
 Классы LINQ to SQL, которые сопоставляются таблицам БД или представлениям, называются *классы сущностей*. Класс сущностей сопоставляется с записью, тогда как отдельные свойства класса сущности сопоставляются с отдельными столбцами, образующими запись. Создайте классы сущностей, которые основаны на таблицами БД или представлениями, путем перетаскивания таблиц или представлений из **обозревателя серверов**/**обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Создает классы и применяет специфические [! LINQ к SQL атрибуты для включения [! Функции LINQ to SQL (при этом обмен данными и возможности редактирования <xref:System.Data.Linq.DataContext>). Подробные сведения о [! Классы LINQ to SQL, см. в разделе [LINQ to SQL объектной модели](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]

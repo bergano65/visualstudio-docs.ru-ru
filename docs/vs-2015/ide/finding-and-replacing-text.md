@@ -1,7 +1,7 @@
 ---
 title: Поиск и замена текста | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273446"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поиск и замена текста](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text).  
-  
 С помощью элементов управления **Поиск и замена** или **Поиск и замена в файлах** можно найти и заменить текст в редакторе кода Visual Studio и некоторых текстовых окнах вывода, таких как **Результаты поиска**. Также можно искать и заменять текст в некоторых окнах конструктора, таких как конструктор XAML и конструктор Windows Forms, а также окнах инструментов.  
   
  В качестве области поиска можно задать текущий документ, текущее решение или пользовательский набор папок. Вы также можете указать набор расширений имен файлов для поиска по нескольким файлам. Синтаксис поиска можно настроить с помощью регулярных выражений .NET.  

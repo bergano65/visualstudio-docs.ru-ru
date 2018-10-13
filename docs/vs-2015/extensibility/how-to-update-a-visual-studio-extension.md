@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: обновление расширения Visual Studio | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3675b8f342601ee3b79169a6c39e849686d7c12e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254908"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Практическое: обновление расширения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: обновление расширения Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension).  
-  
 Расширение Visual Studio на компьютере можно обновить с помощью **расширения и обновления** для установки новой версии. Если вы создаете обновленную версию расширения, можно обозначить ее как обновленную, увеличив номер версии в манифесте VSIX.  
   
  Обновления устанавливаются в том случае, когда манифест VSIX входящих расширения имеет такое же `ID` установленной версией и использовать дополнительные услуги `Version` номер. Если `Version` значения совпадают, или ниже, пакет не может быть установлен. Если `ID` значения не совпадают, пакет, который еще не установили распознается как отдельное расширение.  

@@ -1,7 +1,7 @@
 ---
 title: Совместное использование классов в различных доменных языков с помощью библиотеки DSL | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4ec7820be2cc4f308582e71f3ba64ded5c296e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241527"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [совместное использование классов в различных доменных языков с помощью библиотеки DSL](https://docs.microsoft.com/visualstudio/modeling/sharing-classes-between-dsls-by-using-a-dsl-library).  
-  
 В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, можно создать неполное определение DSL, можно импортировать в другой DSL. Это позволяет вынести общие компоненты в аналогичные модели.  
   
 ## <a name="creating-and-using-dsl-libraries"></a>Создание и использование библиотеки DSL  

@@ -1,7 +1,7 @@
 ---
 title: Создание страницы параметров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bd04ea51fb73f6f095c9f5bcddce735deb06066e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219704"
 ---
 # <a name="creating-an-options-page"></a>Создание страницы параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание страницы параметров](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page).  
-  
 В этом пошаговом руководстве создается простой Сервис/Параметры страницы, использующей таблицу свойств для проверки и задать свойства.  
   
  Чтобы эти свойства, чтобы сохранить и восстановить их из файла параметров, выполните следующие действия и затем см. в разделе [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

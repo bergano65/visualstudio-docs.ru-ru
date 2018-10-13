@@ -1,7 +1,7 @@
 ---
 title: Отладка макета с использованием проводника DOM | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272625"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Отладка макета с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [макета отладки с использованием проводника DOM](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- **Макета** вкладку проводника DOM отображается [Рамочная модель CSS](http://go.microsoft.com/fwlink/?LinkID=238778) для выбранного элемента в [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, приложения Windows Phone Store или приложении, созданном с помощью средств Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
+ На вкладке **Макет** проводника DOM отображается [рамочная модель CSS](http://go.microsoft.com/fwlink/?LinkID=238778) для выбранного элемента в приложении [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложении Магазина Windows Phone или приложении, созданном с помощью инструментов Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
   
 > [!TIP]
 >  Изменения, вносимые на вкладке **Макет** , не являются постоянными. Вы можете внести постоянные изменения в исходный код, а затем обновить приложение, нажав кнопку **Обновить приложение Windows** (только для приложений Магазина Windows и Магазина Windows Phone) на панели инструментов «Отладка». Это позволит избежать перезапуска отладчика.  

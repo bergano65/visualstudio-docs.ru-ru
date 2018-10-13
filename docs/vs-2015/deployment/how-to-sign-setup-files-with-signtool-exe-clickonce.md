@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: входа файлов установки с помощью SignTool.exe (ClickOnce) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ad234b1c21030032428265e9c03528a165cba8c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179313"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: подписывание файлов установки с SignTool.exe (ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/how-to-sign-setup-files-with-signtool-exe-clickonce).  
-  
 Чтобы подписать программу установки (setup.exe), можно использовать SignTool.exe. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.  
   
  По умолчанию ClickOnce включает подписанные манифесты и подписанную программу установки. Если вы собираетесь изменить параметры программы установки в дальнейшем, ее следует подписать позже. Если вы измените параметры после того, как программа установки будет подписана, подпись будет повреждена.  

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Разделение класса на разделяемые классы (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245483"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Практическое руководство. Разделение класса в разделяемые классы (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: разделение класса на разделяемые классы (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 Объявление класса или структуры можно распределить по нескольким объявлениям с помощью ключевого слова `Partial` в Visual Basic или `partial` в Visual C#. Можно использовать столько частичных объявлений, сколько необходимо, как сразу в нескольких исходных файлах, так и только в одном. Однако все объявления должны находиться в одной сборке и одном пространстве имен.  
   
  Разделяемые классы могут быть очень полезны. Например, при работе над большими проектами разделение класса на несколько файлов позволяет работать с ним сразу нескольким разработчикам. При работе с кодом, созданным Visual Studio, класс можно изменить без повторного создания исходного файла. (Примеры кода, создаваемого Visual Studio: Windows Forms и программы-оболочки веб-служб.) Это позволяет составить код с использованием автоматически генерируемых классов, не изменяя файл, созданный Visual Studio.  

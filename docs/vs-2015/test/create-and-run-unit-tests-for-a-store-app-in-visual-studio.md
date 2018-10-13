@@ -1,7 +1,7 @@
 ---
 title: Создание и запуск модульных тестов для приложений Магазина в Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249513"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Создание и запуск модульных тестов для приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создания и выполнения модульных тестов для приложения в Visual Studio Store](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Инструменты модульного тестирования Visual Studio 2012 Express для Windows 8 предназначены для разработчиков и групп, внедряющих модульное тестирование в свои методики разработки программного обеспечения. Модульные тесты предоставляют разработчикам и тест-инженерам эффективный и удобный способ поиска логических ошибок в методах классов в проектах Visual C#, Visual Basic и Visual C++.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'Подготовка к отладке: C#, F # и Visual Basic типы проектов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70bdc94339af45295599adac8fab03fbe30a93a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274915"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: типы проектов C#, F# и Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Подготовка к отладке: C#, F # и типы проектов Visual Basic](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types).  
-  
 В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.  

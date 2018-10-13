@@ -1,7 +1,7 @@
 ---
 title: Основные сведения о SAL | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253257"
 ---
 # <a name="understanding-sal"></a>Основные сведения о языке SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [основные сведения о SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 Языка заметок исходного кода (SAL) для Microsoft предоставляет набор заметок, которые можно использовать для описания того, как функция использует свои параметры, какие предположения о них она делает и гарантии предоставляет при завершении. Примечания определены в файле заголовка `<sal.h>`. Для изменения анализа функций анализа кода Visual Studio для C++ использует примечания SAL. Дополнительные сведения о SAL 2.0 для разработки драйверов Windows, см. в разделе [заметок SAL 2.0 для Windows драйверы](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  В собственном коде C и C++ обеспечивают только ограниченной для разработчиков постоянно выразить намерение и неизменность. С помощью заметки SAL, можно описать функций более подробно, что разработчикам, использующим их можно лучше понять их использование.  

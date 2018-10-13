@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55133fcd8126a5f77a670742b84ff83d9662520c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243923"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: построение одинаковых исходных файлов с различными параметрами](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-the-same-source-files-with-different-options).  
-  
   
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.  
   

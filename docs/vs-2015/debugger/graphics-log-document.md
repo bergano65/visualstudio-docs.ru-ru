@@ -1,7 +1,7 @@
 ---
 title: Документ журнала графики | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261564"
 ---
 # <a name="graphics-log-document"></a>Окно журнала графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документ журнала графики](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document).  
-  
 Документ журнала графики — это запись событий графики, возникших во время выполнения приложения в сеансе диагностики графики. После регистрации данных можно просмотреть журнал в анализаторе графики Visual Studio для диагностики проблем отрисовки и производительности.  
   
  Документ журнала графики выглядит в анализаторе графики следующим образом:  

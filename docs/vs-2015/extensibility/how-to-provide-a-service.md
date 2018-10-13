@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: предоставить службу | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18cb5c28ab70b652b860d76fc6b7ad92e7262bf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265009"
 ---
 # <a name="how-to-provide-a-service"></a>Практическое: предоставить службу
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: предоставить службу](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-a-service).  
-  
 VSPackage может предоставлять службы, которые можно использовать в других пакетов VSPackage. Для предоставления службы, VSPackage должен зарегистрировать службу с помощью Visual Studio и добавить службу.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Класс реализует оба <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> и <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> содержит методы обратного вызова, которые предоставляют службы по запросу.  

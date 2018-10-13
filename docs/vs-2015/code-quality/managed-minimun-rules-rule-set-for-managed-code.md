@@ -1,7 +1,7 @@
 ---
 title: Набор управляемых правил минимальный правила для управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cca9670f65ef517a4697fc0752c65cbafbaa3b16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f67b9e28069a1717ad500b7e8895a363db715fda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251071"
 ---
 # <a name="managed-minimun-rules-rule-set-for-managed-code"></a>Набор правил "Минимальные правила для управляемого кода"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [набор правил управляемых минимальный правила для управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/managed-minimun-rules-rule-set-for-managed-code).  
-  
 Минимальные правила общего доступа к управляемых сосредоточиться на наиболее важными проблемами в коде, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов.  
   
 |Правило|Описание|  

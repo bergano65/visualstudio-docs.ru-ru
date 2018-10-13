@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: указание версии платформы .NET Framework для отладки | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272965"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Практическое руководство. Установка версии платформы .NET Framework для отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите .NET Framework версии для отладки](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 Отладчик [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] поддерживает отладку как текущей версии платформы Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], так и старых версий платформы. При запуске приложения из Visual Studio, отладчик всегда может определить правильную версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] для отладки приложения. Если приложение уже выполняется и используется **присоединить к**, отладчик не всегда можно определить более старой версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. В этом случае появится сообщение об ошибке следующего содержания:  
   
  Отладчик сделал неверное предположение о версии платформы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], которую приложение собирается использовать.  

@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отображение парных скобок | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247836"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Пошаговое руководство. Отображение парных фигурных скобок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отображение соответствия фигурных скобок](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Вы можете реализовать на базе языка функции, такие как парные фигурные скобки путем определения фигурные скобки, которые вы хотите обеспечить поиск и затем добавление тег текстовой метки в парные фигурные скобки, когда курсор находится на одном фигурных скобок. Фигурные скобки можно определить в контексте языка, можно определить тип имени собственного файла расширения и содержимого и применить теги к только этого типа или можно применить теги к существующий тип контента (например, «text»). Следующие пошаговом руководстве показано, как применить парные фигурные скобки теги к типу содержимого «text».  
   
 ## <a name="prerequisites"></a>Предварительные требования  

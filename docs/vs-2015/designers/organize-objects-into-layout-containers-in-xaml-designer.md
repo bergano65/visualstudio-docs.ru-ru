@@ -1,7 +1,7 @@
 ---
 title: Упорядочивание объектов в макеты-контейнеры в конструкторе XAML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219561"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [упорядочивание объектов в макеты-контейнеры в конструкторе XAML](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Представьте, как бы вы хотели расположить на странице такие объекты, как изображения, кнопки и видеозаписи. Возможно, необходимо отобразить их в строку или в столбец, в одну линию по вертикали или по горизонтали или в фиксированных позициях.  
   
  После того как вы распланировали структуру страницы, выберите панель макета. Создание любой страницы начинается с одного и того же, поскольку вам необходима база, для которой будут добавляться все объекты. По умолчанию это **сетки** , но его можно изменить.  
@@ -109,7 +107,7 @@ ms.locfileid: "47561379"
   
 -   [Border](#Border)  
   
--   [Popup](#Popup)  
+-   [Контекстное меню](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

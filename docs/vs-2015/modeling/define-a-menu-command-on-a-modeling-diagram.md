@@ -1,7 +1,7 @@
 ---
 title: Определение команды меню на схеме моделирования | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193158"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение команды меню на схеме моделирования](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 В Visual Studio можно определить дополнительные пункты контекстных меню схемы UML. Вы можете управлять отображением и доступностью команды в контекстном меню любого элемента на схеме, а также написать код, который запускается при выборе пункта меню пользователем. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) и предоставить их другим пользователям Visual Studio.  
   
 ## <a name="requirements"></a>Требования  
- См. в разделе [требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -221,17 +219,17 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 1.  Нажмите клавишу **F5**или выберите команду **Начать отладку** в меню **Отладка**.  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
+     **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
   
     -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
   
-    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка, содержащаяся в **запуск внешней программы** поле — это полный путь [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:  
+    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь в том, что строка в поле Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; обычно она имеет следующий вид:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте проект моделирования и схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса команды меню.  
+2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса команды меню.  
   
 3.  Откройте контекстное меню в любом месте схемы. Команда должна появиться в меню.  
   
@@ -258,7 +256,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 2.  Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.  
   
-     На конечном компьютере должен быть один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , указанной в **source.extension.vsixmanifest**.  
+     На конечном компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , заданный в **source.extension.vsixmanifest**.  
   
 3.  На конечном компьютере откройте файл **.vsix** , например дважды щелкнув его.  
   
@@ -279,7 +277,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
  *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [версия]**  
   
 ##  <a name="MenuExample"></a> Пример  
- В приведенном ниже примере показан код для команды меню, позволяющий поменять местами имена двух элементов на схеме классов. Этот код должен быть встроен в проект расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и установлен в соответствии с описанием, приведенным в предыдущих разделах.  
+ В приведенном ниже примере показан код для команды меню, позволяющий поменять местами имена двух элементов на схеме классов. Этот код должен быть встроен в проект расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и установлен в соответствии с описанием в предыдущих разделах.  
   
 ```  
 using System.Collections.Generic; // for IEnumerable  

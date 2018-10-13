@@ -1,7 +1,7 @@
 ---
 title: Расширение редактора и языковых служб | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8102b8fb4afc02ca0540d75b3c0d08ef75b964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a7233a89dbda0ebd333979de752296df45bf712
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259199"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Расширение редактора и языковых служб
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [расширение редактора и языковых служб](https://docs.microsoft.com/visualstudio/extensibility/extending-the-editor-and-language-services).  
-  
 Можно добавить собственный редактор компонентов службы языка (например, технология IntelliSense) и расширить большинство функций уровней в редакторе кода Visual Studio.  Полный список можно расширить, см. в разделе [языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md).  
   
  Большинство функций редактора расширения с помощью Managed Extensibility Framework (MEF). Например, если функцию редактора, который требуется расширить раскраску синтаксических конструкций, можно написать MEF *компонента* , определяющий классификации, для которых требуется настроить различные цвета и способ их обработки. Этот редактор также поддерживает несколько расширений разным функциям.  

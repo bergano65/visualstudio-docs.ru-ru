@@ -1,7 +1,7 @@
 ---
 title: Расширение моделей и схем UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179131"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [моделей и схем UML, расширение](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
-В этом разделе приведены сводные сведения о способах расширения инструментов моделирования UML, входящих в состав Visual Studio. Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели и средства, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+В этом разделе приведены сводные сведения о способах расширения инструментов моделирования UML, входящих в состав Visual Studio. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  В рассматриваемом ниже примере компания Fabrikam разрабатывает и устанавливает систему оформления и обработки багажа в аэропортах. Разные проекты для аэропортов имеют множество сходных черт как в отношении базового оборудования , так и в отношении программного обеспечения, которое им управляет. Однако существует и несколько факторов, которые значительно различаются, например конфигурация конвейерных лент, стойки регистрации, ячейки для хранения и другое оборудование для оформления и обработки багажа.  
   
@@ -41,7 +39,7 @@ ms.locfileid: "47557811"
   
 ##  <a name="Requirements"></a> Требования  
   
--   [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+-   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 -   [Пакет SDK моделирования для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   

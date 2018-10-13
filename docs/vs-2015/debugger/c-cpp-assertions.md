@@ -1,7 +1,7 @@
 ---
 title: Утверждения C / C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267693"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [утверждения C/C++](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions).  
-  
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не соблюдается, утверждение признается ложным, выполнение программы прерывается и [диалоговое окно](../debugger/assertion-failed-dialog-box.md) отображается.  
   
  Язык Visual C++ поддерживает операторы утверждений, основанные на следующих конструкциях:  

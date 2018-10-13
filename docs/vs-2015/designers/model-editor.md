@@ -1,7 +1,7 @@
 ---
 title: Редактор моделей | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264054"
 ---
 # <a name="model-editor"></a>Редактор моделей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [редактора моделей](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 В данном документе представлены инструкции по применению редактора моделей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для просмотра, создания и изменения трехмерных моделей.  
   
  С помощью редактора моделей можно создавать базовые трехмерные модели с нуля, а также просматривать и изменять более сложные трехмерные модели, созданные с помощью полноценных средств 3D-моделирования. Редактор моделей поддерживает несколько форматов трехмерных моделей, которые используются при разработке приложений DirectX.  
@@ -317,7 +315,7 @@ ms.locfileid: "47572503"
 |Заголовок|Описание|  
 |-----------|-----------------|  
 |[Работа с трехмерными ресурсами для игр и приложений](../designers/working-with-3-d-assets-for-games-and-apps.md)|Обзор предусмотренных в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] средств для работы с графическими активами, такими как текстуры и изображения, трехмерные модели и эффекты шейдеров.|  
-|[Редактор изображений](../designers/image-editor.md)|Описывает способ использования редактора изображений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с текстурами и изображениями.|  
+|[Image Editor](../designers/image-editor.md)|Описывает способ использования редактора изображений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с текстурами и изображениями.|  
 |[Конструктор шейдеров](../designers/shader-designer.md)|Описывает способ использования конструктора шейдеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для работы с шейдерами.|
 
 

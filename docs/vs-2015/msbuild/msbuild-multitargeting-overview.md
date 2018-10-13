@@ -1,7 +1,7 @@
 ---
 title: 'MSBuild: обзор настройки для различных версий | Документация Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 858c06ba61d44e7e7ddceed5d6378aaeafcc47bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243832"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild: обзор настройки для различных версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [MSBuild: Обзор](https://docs.microsoft.com/visualstudio/msbuild/msbuild-multitargeting-overview).  
-  
   
 С помощью MSBuild можно компилировать приложение для его запуска на любой из нескольких версий платформы .NET Framework, а также на любой из нескольких системных платформ. Например, можно компилировать приложение для запуска в .NET Framework 2.0 на 32-разрядной платформе, а также компилировать то же приложение для запуска в .NET Framework 4.5 на 64-разрядной платформе.  
   

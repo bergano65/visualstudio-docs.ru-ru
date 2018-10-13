@@ -1,14 +1,14 @@
 ---
 title: Руководство по профилированию производительности для начинающих | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -20,18 +20,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6bd3085e3aef314d8768656eb66e61647b1676
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f69ae132a47f81438abb43bd11b04fee869aa66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226685"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Руководство по профилированию производительности для начинающих
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [руководство по профилированию для производительности в Visual Studio](https://docs.microsoft.com/visualstudio/profiling/beginners-guide-to-performance-profiling).  
-  
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура показывает, как использовать данные **выборки**.  
   
  **Выборка** представляет собой статистический метод профилирования, показывающий функции, которые выполняют основную часть работы в пользовательском режиме приложения. С выборки удобно начать поиск областей, позволяющих ускорить работу приложения.  

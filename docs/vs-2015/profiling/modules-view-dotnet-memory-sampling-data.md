@@ -1,7 +1,7 @@
 ---
 title: Представление "Модули" — данные выборки памяти .NET | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185397"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Представление "Модули" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление "Модули" — данные выборки памяти .NET](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data).  
-  
 В представлении "Модули" данных о выделении памяти .NET, собранных при помощи метода выборки, данные об использовании памяти группируются по модулям, которые выполнялись во время сеанса профилирования. Каждый модуль представляет собой корневой узел иерархического дерева. Функции модуля указываются в узле модуля.  
   
  Номера строк в исходном файле, соответствующих выделяющим память операторам, перечисляются в узле функции, а адреса инструкций, которые выполняли это выделение, указываются в узле строки. Инклюзивные и эксклюзивные значения для данных строки и данных инструкции всегда совпадают.  

@@ -1,7 +1,7 @@
 ---
 title: Использование окна задач | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226204"
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование окна задач](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 **Задачи** напоминает окно **потоков** окна, за исключением того, что он отображается информация о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), или [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке. См. в разделе [асинхронное программирование в JavaScript (приложения Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Дополнительные сведения.  
   
  В управляемом коде, можно использовать **задачи** окно при работе с <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов или с **await** и **async** ключевые слова (**Await** и **Async** в VisualBasic). Дополнительные сведения о задачах в управляемом коде, см. в разделе [параллельного программирования](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  

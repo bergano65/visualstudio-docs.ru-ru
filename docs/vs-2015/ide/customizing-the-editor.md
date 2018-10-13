@@ -1,7 +1,7 @@
 ---
 title: Настройка редактора | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259333"
 ---
 # <a name="customizing-the-editor"></a>Настройка редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка редактора](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor).  
-  
 Вы можете настроить форматирование, вкладки, шрифты и цвета, IntelliSense и многие другие возможности общего редактора или редактора для конкретного языка, изменив параметры. Дополнительные сведения об этих параметрах см. в разделе [Диалоговое окно "Параметры текстового редактора"](../ide/reference/text-editor-options-dialog-box.md) или введите `Editor` на панели **быстрого запуска**. Вы также можете изменить способ отображения окон редактора.  
   
 ## <a name="in-this-section"></a>В этом разделе  

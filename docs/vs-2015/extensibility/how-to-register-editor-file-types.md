@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: регистрация типов файлов в редакторе | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198319"
 ---
 # <a name="how-to-register-editor-file-types"></a>Практическое: регистрация редактор типов файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: регистрация типов файлов редактор](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 Самый простой способ зарегистрировать редактор типов файлов — с помощью регистрации атрибутов, предоставляемых в составе [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] классы managed package framework (MPF). При реализации пакета в машинный код [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], можно также написать скрипт реестра, который регистрирует редактора и связанные расширения.  
   
 ## <a name="registration-using-mpf-classes"></a>Регистрацию с помощью классы MPF  
@@ -50,7 +48,7 @@ ms.locfileid: "47569386"
   
      `NameResourceID` определяется в файле Resources.h BasicEditorUI проекта и определяющее редактор редактором «My».  
   
-2.  Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+2.  Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      В реализации <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> мы вызываем метод <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> метод и передайте экземпляр фабрикой редактора, как показано ниже.  
   

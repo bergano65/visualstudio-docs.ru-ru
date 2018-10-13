@@ -1,7 +1,7 @@
 ---
 title: Определение пакетов и пространств имен | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4d45d5aab1326fd2ee4be0c0b27be5c4ea526a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219418"
 ---
 # <a name="define-packages-and-namespaces"></a>Определение пакетов и пространств имен
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение пакетов и пространств имен](https://docs.microsoft.com/visualstudio/modeling/define-packages-and-namespaces).  
-  
 В Visual Studio *пакета* — это контейнер для определений элементов UML, таких как классы, варианты использования и компоненты. Пакет также может содержать другие пакеты.  
   
  В обозревателе моделей UML все определения внутри пакета вложены в него. Модель UML представляет собой пакет и формирует корень дерева.  

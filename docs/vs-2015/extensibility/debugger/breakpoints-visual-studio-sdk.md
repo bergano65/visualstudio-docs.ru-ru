@@ -1,7 +1,7 @@
 ---
 title: Точки останова (пакет SDK для Visual Studio) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 194551141ed6d56344a4ed49962df41fd3b8d2ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13c7206bfdf97e5833c78d4010ecca547a0d83ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199086"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Точки останова (пакет SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [точки останова (Visual Studio SDK)](https://docs.microsoft.com/visualstudio/extensibility/debugger/breakpoints-visual-studio-sdk).  
-  
 Существует три типа точек останова: ожидание "," граница "и" error.  
   
  **В ожидании точки останова:**  

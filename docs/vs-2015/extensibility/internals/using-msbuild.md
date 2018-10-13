@@ -1,7 +1,7 @@
 ---
 title: С помощью MSBuild | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229337"
 ---
 # <a name="using-msbuild"></a>Использование MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild).  
-  
 MSBuild предоставляет строго определенными, расширяемый формат XML для создания файлов проекта, полного описания элементов проекта для построения, задачи сборки и конфигураций сборки.  
   
  Пример end-to-end языка системы проекта, основанные на MSBuild, см. в разделе Пример IronPython, глубокое погружение в[примеры VSSDK](../../misc/vssdk-samples.md).  

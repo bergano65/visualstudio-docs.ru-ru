@@ -1,7 +1,7 @@
 ---
 title: Общие элементы проектов MSBuild | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b119cae4013bd1be5657224ad54de54c10321848
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238411"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Общие элементы проектов MSBuild](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items).  
-  
   
 В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] имеют по несколько общих элементов. Эти элементы определены в файле в microsoft.build.commontypes.xsd.  
   

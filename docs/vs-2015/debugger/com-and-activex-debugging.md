@@ -1,7 +1,7 @@
 ---
 title: Отладка COM и ActiveX | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e874daab692c918a39980d207ccea7a88f50f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fca2af4745ffa932431d65771ae6c4e1761199d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246926"
 ---
 # <a name="com-and-activex-debugging"></a>Отладка COM и ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладка COM и ActiveX](https://docs.microsoft.com/visualstudio/debugger/com-and-activex-debugging).  
-  
 В этом подразделе представлены советы по отладке приложений COM и элементов управления ActiveX.  
   
 ## <a name="in-this-section"></a>В этом разделе  

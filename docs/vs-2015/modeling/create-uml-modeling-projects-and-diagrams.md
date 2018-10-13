@@ -1,7 +1,7 @@
 ---
 title: Создание проектов моделирования UML и схем | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250488"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Создание проектов и схем моделирования UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [UML Создание проектов и схем моделирования](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 Модели UML помогают понять, обсудить и спроектировать системы программного обеспечения. Visual Studio предоставляет шаблоны для пяти наиболее часто используемых схем UML: действия, класса, компонента, последовательности и варианта использования. В дополнение, можно создавать схемы слоев, которые помогают определить структуру системы.  
   
  Схемы моделирования UML и схемы слоев могут существовать только внутри проекта моделирования. Каждый проект моделирования содержит совместную модель UML и несколько схем UML. Каждая схема представляет собой частичный вид модели. Модель UML содержит все элементы схем UML, при этом ее можно открыть при помощи Обозревателя модели UML. Сведения о моделях и их взаимосвязи со схемами см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md). Информацию о модели проектов в системе управления версиями, см. в разделе [моделями и схемами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md) и [структуры решения моделирования](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ ms.locfileid: "47571869"
   
 -   Схемы классов, которые создаются в качестве видов исходного кода. Они не связаны с схемами класса UML. Дополнительные сведения см. в разделе [проектирование и Просмотр классов и типов](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Карты кода. См. в разделе [сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md).  
+-   Карты кода. См. раздел [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Схемы, которые не относятся к схемам UML или схемам слоев, таким как доменные языки.  
   

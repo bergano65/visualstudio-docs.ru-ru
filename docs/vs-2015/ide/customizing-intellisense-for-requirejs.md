@@ -1,7 +1,7 @@
 ---
 title: Настройка IntelliSense для RequireJS | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246718"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Настройка IntelliSense для RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
-  
 Начиная с обновления 4 для Visual Studio 2013, поддерживается RequireJS — популярный загрузчик файлов и модулей JavaScript. RequireJS упрощает определение зависимостей между модулями кода и динамическую загрузку модулей по необходимости. При написании кода JavaScript, использующего RequireJS, IntelliSense предлагает модули, на которые вы ссылались из определения модуля или с помощью вызовов `require()` из кода.  
   
  По умолчанию среда Visual Studio предлагает простейшую конфигурацию для RequireJS, поэтому обычно следует настроить собственные параметры конфигурации (то есть определить псевдонимы для библиотек). В этом разделе описываются различные способы настройки Visual Studio для работы с уникальной конфигурацией проекта.  

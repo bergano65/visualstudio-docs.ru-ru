@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Укажите, какие файлы публикуются с помощью ClickOnce | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268324"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Практическое руководство. Задание файлов, публикуемых с помощью ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите которой файлы публикуются с помощью ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce).  
-  
 При публикации [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] вместе с приложением развертываются файлы приложений, отличных от кода в проекте. В некоторых случаях вы не хотите или нужно опубликовать определенные файлы, или может потребоваться установить определенные файлы, на основе условий. Visual Studio предоставляет возможности для исключения файлов, пометке файлов как файлов данных или необходимых компонентов и создании групп файлов для условной установки.  
   
  Файлы для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения осуществляется в **файлы приложения** окне доступен из **публикации** странице **конструктор проектов**.  

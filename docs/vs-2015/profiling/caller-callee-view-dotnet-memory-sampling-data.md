@@ -1,7 +1,7 @@
 ---
 title: Представление "Вызывающий/вызываемый" — данные выборки памяти .NET   Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04ba2a522c6accb9dcb5e316ea8c63beb260e739
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85aaa285a190ae1167a86b32583d4349f3a78d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243052"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление "Вызывающий-вызываемый" — данные выборки памяти .NET](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-dotnet-memory-sampling-data).  
-  
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице, в которой указываются данные профилирования памяти выбранной функции. Значения включают все вызовы функции, попавшие в выборку.  

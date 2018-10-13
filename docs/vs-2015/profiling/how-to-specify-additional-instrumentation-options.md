@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Указание дополнительных параметров инструментирования | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1726a8ad414ca6450f056044d520f73021c59f46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7988eb9c3a4893e4a74021a094bf877f1fe32fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254323"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Практическое руководство. Указание дополнительных параметров инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите дополнительные параметры инструментирования](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-additional-instrumentation-options).  
-  
 Инструментирование двоичных файлов можно выполнять в интегрированной среде разработки (IDE) [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] или с помощью средств командной строки. Если инструментирование двоичных файлов выполняется в интегрированной среде разработки, вы можете управлять объемом данных, собираемых во время инструментирование, указав дополнительные параметры инструментирования для программы [VSInstr](../profiling/vsinstr.md). Эти параметры доступны в сеансе или целевом уровне. Например, для включения или исключения конкретных функций во время процесса инструментирования используется дополнительный параметр инструментирования на целевом уровне.  
   
  **Требования**  

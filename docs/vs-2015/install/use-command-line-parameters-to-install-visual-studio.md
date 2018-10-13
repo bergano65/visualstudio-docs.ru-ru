@@ -1,7 +1,7 @@
 ---
 title: Использование параметров командной строки для установки Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aa129021ef18cba3236624283872a2933c9ef80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6266626d2eb60b64f1923a0c3f54d39c9b20072a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268610"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "47561965"
 |**/qb**<br /><br /> **/passive**|Отображение хода выполнения без запроса ввода данных пользователем.|  
 |**/repair**|Восстановление Visual Studio.|  
 |**/ SuppressRefreshPrompt**|Блокировка отображения диалогового окна "Доступно обновление" в мастере установки: таким образом обеспечивается автоматическое принятие мастером установки любых обязательных или рекомендуемых обновленных версий.|  
-|**/u**<br /><br /> **/ Uninstall**|Удаление [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|**/u**<br /><br /> **/ Uninstall**|Удаляет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |**/ Uninstall/force**<br /><br /> **/ Force /u**|Удаление ПО Visual Studio и всех его компонентов, используемых совместно с другими продуктами. **Предупреждение:** при использовании этого параметра другие продукты, которые установлены на одном компьютере могут перестать правильно работать.|  
   
 ## <a name="see-also"></a>См. также  

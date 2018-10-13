@@ -1,7 +1,7 @@
 ---
 title: Использование наборов правил для группировки правил анализа кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220588"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование наборов правил для группировки правил анализа кода](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).  
-  
 При настройке анализа кода в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], или [!INCLUDE[vsPro](../includes/vspro-md.md)], можно выбрать из списка встроенных Microsoft *наборов правил*. Набор правил — это логическая группа правил анализа кода, которые определяют целевые задачи и определенные условия. Например можно применить набор правил, предназначенный для проверки кода для общедоступных API, или применить набора правил, который включает в себя минимально рекомендуемые правила. Можно также применить набора правил, который содержит все правила.  
   
  Вы можете настроить правило, в набор путем добавления или удаления правила, или изменить правила будет отображаться в **список ошибок** окно как предупреждения или ошибки. Настраиваемые наборы правил может соответствовать потребностям конкретной среды разработки. При настройке набора правил, страница набора правил предоставляет средства, помогающие в процессе поиска и фильтрации.  

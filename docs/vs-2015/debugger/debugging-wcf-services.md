@@ -1,7 +1,7 @@
 ---
 title: Отладка служб WCF | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b47ac0d54f69ef4976c9f6a60b087247e1421e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d556f8a35cff99c1098323a9e2911af20bd2277c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258702"
 ---
 # <a name="debugging-wcf-services"></a>Отладка служб WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладка служб WCF](https://docs.microsoft.com/visualstudio/debugger/debugging-wcf-services).  
-  
 В этом разделе  
  [Ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md)  
  Описаны ограничения по отладке WCF.  

@@ -1,7 +1,7 @@
 ---
 title: Инструменты Visual Studio для Unity | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 21aa67a7908cd5d037a51f72d7b95017df44e074
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18abe24c5c4323ce3e54239cf6ac0dd8de276711
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274369"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-tools-for-unity).  
-  
   
 В этом разделе мы рассмотрим набор средств Visual Studio для Unity, представляющих собой бесплатное расширение Visual Studio, которое делает данную систему мощным средством для создания игр с помощью Unity.  
   

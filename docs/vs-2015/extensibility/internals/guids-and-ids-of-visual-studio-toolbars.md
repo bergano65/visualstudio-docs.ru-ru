@@ -1,7 +1,7 @@
 ---
 title: Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24e406f0d7e4fe9782ccba56aa33dfbb4b658fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa336f6187611a8ad54866f18cc1f46996daf07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275084"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [идентификаторы GUID и идентификаторы из Visual Studio панелей инструментов](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-toolbars).  
-  
 В этом разделе перечисляются значения GUID и идентификатор панели инструментов, включенных в среде разработки Visual Studio (IDE) и групп они содержат. Эти значения определены в файлах .vsct, установленные как часть Visual Studio SDK. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]

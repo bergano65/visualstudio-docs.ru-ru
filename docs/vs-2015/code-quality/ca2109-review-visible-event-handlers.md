@@ -1,7 +1,7 @@
 ---
 title: 'CA2109: Проверьте видимые обработчики событий | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a9cc3303432eebc18bbe68d8c8fefcdd4898daca
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 42699d257aaf42c68830bed958458fb92b67e1f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182667"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: проверьте видимые обработчики событий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [CA2109: проверьте видимые обработчики событий](https://docs.microsoft.com/visualstudio/code-quality/ca2109-review-visible-event-handlers).
-
 |||
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|

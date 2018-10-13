@@ -1,7 +1,7 @@
 ---
 title: Задача ResolveComReference | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97410c97c1625b4729e035e66d5d943afcd5924a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179365"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача ResolveComReference](https://docs.microsoft.com/visualstudio/msbuild/resolvecomreference-task).  
-  
   
 Принимает список из одного или нескольких имен библиотек типов или TLB-файлов и определяет местоположение этих библиотек типов на диске.  
   

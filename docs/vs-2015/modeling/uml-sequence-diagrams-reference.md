@@ -1,7 +1,7 @@
 ---
 title: 'UML-схемы последовательностей: Ссылаться | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195134"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML-схемы последовательностей: справочные материалы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемы последовательностей UML: Справочник по](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 В Visual Studio *схема последовательностей* показывает взаимодействие, которое представляет последовательность сообщений между экземплярами классов, компонентов, подсистем или субъектов. Время увеличивается вниз по диаграмме, на которой показывается переход управления от одного участника к другому. Схемы последовательностей служат для визуализации экземпляров и событий, а не классов и методов. На схеме может быть несколько экземпляров одного типа. Также может быть несколько вхождений одного сообщения.  
   
  Схемы последовательностей UML являются частью модели UML и существуют только в проектах моделирования UML. Чтобы создать схему последовательностей UML на **архитектура** меню, щелкните **создать схему UML или схему слоев**. Дополнительные сведения о том, как создать и нарисовать [UML-схемы последовательностей](../modeling/uml-sequence-diagrams-guidelines.md) или [схем моделирования UML](../modeling/edit-uml-models-and-diagrams.md) в целом.  

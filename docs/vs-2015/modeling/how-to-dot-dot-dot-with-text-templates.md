@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство по текстовым шаблонам | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231508"
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как по текстовым шаблонам](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates).  
-  
 Текстовые шаблоны в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предоставляют удобный способ создания текста любого рода. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания этих код проекта. Этот раздел содержит описание наиболее часто задаваемые «Практические советы...?» вопросы.  
   
  В этом разделе несколько ответов, которым предшествует маркеры являются альтернативными предложениями.  

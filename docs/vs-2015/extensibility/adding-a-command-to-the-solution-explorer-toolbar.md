@@ -1,7 +1,7 @@
 ---
 title: Добавление команды на панели инструментов обозревателя решений | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254403"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панель инструментов обозревателя решений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление команды на панели инструментов обозревателя решений](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 В этом пошаговом руководстве показано, как добавить кнопку **обозревателе решений** панели инструментов.  
   
  Любую команду на панели инструментов или меню называется кнопки в Visual Studio. При нажатии кнопки выполняется код в обработчик команд. Обычно связанные команды группируются вместе для формирования одной группы. Меню или панели инструментов действуют как контейнеры для групп. Приоритет определяет порядок, в котором отображаются отдельные команды в группе, в меню или на панели инструментов. Кнопки можно запретить отображение на панели инструментов или меню, контролируя его видимость. Команда, которая указана в `<VisibilityConstraints>` раздел файла vsct, появляется только в связанного контекста. Видимость нельзя применять к группам.  

@@ -1,7 +1,7 @@
 ---
 title: Диалоговое окно "Свойства потока" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00cf70e0373f6791397234d9a5a329e57a5d46ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37eee1a82fab77238b992ee391a782c5af34d7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271704"
 ---
 # <a name="thread-properties-dialog-box"></a>Диалоговое окно "Свойства потока"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства потока](https://docs.microsoft.com/visualstudio/debugger/thread-properties-dialog-box).  
-  
 Используйте это диалоговое окно поиска дополнительных сведений о конкретном потоке. Чтобы отобразить это диалоговое окно, перемещение фокуса к [представление "Потоки"](../debugger/threads-view.md) окно "или" Открыть [представления сообщений](../debugger/messages-view.md) и развернуть сообщение. Выберите любой узел потока в дереве, а затем выберите **свойства** из **представление** меню.  
   
  **Общие** вкладка — отображается единственная вкладка. В операционных системах Windows 98 и Windows 95 измененную версию на этой вкладке отображается.  

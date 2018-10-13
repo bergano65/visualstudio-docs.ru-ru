@@ -1,7 +1,7 @@
 ---
 title: Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269626"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сбор данных памяти из служб .NET Framework с помощью командной строки Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] с использованием метода выборки в командной строке.  
   
 ## <a name="common-tasks"></a>Общие задачи  

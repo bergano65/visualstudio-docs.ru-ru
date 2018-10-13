@@ -1,7 +1,7 @@
 ---
 title: Пример проекта для создания модульных тестов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 846783e398fc07ef4ddfff4ea1bca05f840bca81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248590"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Пример проекта для создания модульных тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пример проекта для создания модульных тестов](https://docs.microsoft.com/visualstudio/test/sample-project-for-creating-unit-tests).  
-  
 Этот пример кода предназначен для использования в указанных ниже пошаговых руководствах.  
   
 -   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  

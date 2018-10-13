@@ -1,7 +1,7 @@
 ---
 title: Создание комментариев XML-документации для JavaScript IntelliSense | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220562"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Создание комментариев XML-документации для JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [документация по Visual Studio 2017](/visualstudio/).  
-  
 *Комментарии XML-документации* являются JavaScript комментарии, добавленные в скрипт для предоставления сведений об элементах кода, например функции, поля и переменные. В Visual Studio эти текстовые описания отображаются с IntelliSense при создании ссылки функции скрипта.  
   
  Здесь представлен базового учебника по использованию комментариев XML-документации. Дополнительные сведения об использовании других элементов, таких как [ \<var >](../ide/var-javascript.md) и [ \<значение >](../ide/value-javascript.md)и Дополнительные примеры кода, см. в разделе [комментарии XML-документации ](../ide/xml-documentation-comments-javascript.md). Сведения о предоставлении сведения IntelliSense для асинхронного обратного вызова, таких как `Promise`, см. в разделе [ \<возвращает >](../ide/returns-javascript.md).  

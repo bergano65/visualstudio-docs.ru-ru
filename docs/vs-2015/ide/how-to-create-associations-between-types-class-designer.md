@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание ассоциаций между типами (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86f380525eef965de87c2f7e40a61e033a9ea46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247888"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Практическое руководство. Создание ассоциаций между типами (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создание ассоциаций между типами (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-create-associations-between-types-class-designer).  
-  
 Линии связи в конструкторе классов показывают отношения между классами в схеме. Линия связи представляет класс, который является типом "свойство" или "поле" другого класса в проекте. Линии связи обычно используются для иллюстрации наиболее важных отношений между классами в проекте.  
   
  Можно отобразить все поля и свойства как ассоциации, но более рационально отображать как ассоциации только самые важные члены, в зависимости от того, что требуется акцентировать на схеме. (Менее важные члены можно отобразить как обычные члены или скрыть их совсем.)  
