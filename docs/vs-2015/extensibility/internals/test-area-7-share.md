@@ -1,7 +1,7 @@
 ---
 title: 'Область тестирования 7: Совместно использовать | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31ef127e53a43cf018da5b78ed79a6b2145815da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228128"
 ---
 # <a name="test-area-7-share"></a>Область тестирования 7. Предоставление общего доступа
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [7 область тестирования: общий ресурс](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-7-share).  
-  
 Эта область тестирования охватывает элементы управления доступом между расположениями через **общего ресурса** команды.  
   
  Операция hhare является очевидным дублирование файлов и папок между двух или больше расположениях в исходной иерархии файл элемента управления. Дублирование действительно выполняется на сервере, но пользователь видеть один и тот же файл в двух или нескольких указанных расположениях. Каждый раз, когда изменения вносятся какие-либо общие элементы, эти изменения отражены в других общих папках.  

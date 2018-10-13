@@ -1,7 +1,7 @@
 ---
 title: Создание и использование политик возврата с анализом кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238359"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Создание и использование политик возврата с анализом кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание и использование анализа кода возврата политик](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 При использовании управления версиями Team Foundation (TFVC), можно создать политику возврата с анализом кода для .NET Framework и проекты машинного кода (C/C++) в командном проекте. Политика возврата анализа кода можно использовать для управления и повышения качества кода, возвращаемого в базу кода.  
   
  Политика выполняется, если локальное построение актуально и анализ кода был выполнен в самым последним исходным файлам. Как минимум правила анализа кода, которые включены в проект кода может содержать те же правила, которые определены в политике возврата проекта team. Правила, которые были указаны как ошибки в параметрах командного проекта также должен быть указан как ошибки в проекте кода  

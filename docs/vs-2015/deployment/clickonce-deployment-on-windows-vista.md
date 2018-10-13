@@ -1,7 +1,7 @@
 ---
 title: Развертывание ClickOnce в Windows Vista | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224514"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развертывание ClickOnce в Windows Vista](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
-  
 Создание приложений в Visual Studio для контроля учетных записей (UAC) на Windows Vista обычно создается внедренный манифест, как двоичные данные в кодировке XML в исполняемый файл приложения. Так как для приложений ClickOnce и COM без регистрации требуется внешний манифест, Visual Studio создает файл для этих типов проектов, содержащий данные UAC вместо внедренного манифеста. По умолчанию Visual Studio использует сведения из файла app.manifest для создания внешнего манифеста UAC (для развертывания ClickOnce и COM без регистрации), или внедрить в исполняемый файл приложения (для всех остальных случаях). Visual Studio предоставляет следующие возможности для создания манифеста:  
   
 -   Использование внедренного манифеста. Внедрение данных UAC в исполняемый файл приложения и запуск от имени обычного пользователя.  

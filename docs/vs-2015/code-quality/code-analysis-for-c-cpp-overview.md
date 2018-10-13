@@ -1,7 +1,7 @@
 ---
 title: Анализ кода для C / C++ Обзор | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6764e39d55ebe2ce11776035f25d6fdf69be081
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42de573efcc44437eddf0e7d098681d05c094131
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222044"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Общие сведения об анализе кода в C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ кода для C/C++ Обзор](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
-  
 Средство анализа кода C/C++ предоставляет сведения о возможных дефектах в исходном коде C/C++. Наиболее распространенные ошибки, обнаруживаемые этим средством: переполнение буфера, неинициализированная память, разыменование пустых указателей, а также утечка памяти и ресурсов.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Интеграция в интегрированную среду разработки  

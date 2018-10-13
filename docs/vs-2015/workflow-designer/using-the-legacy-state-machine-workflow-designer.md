@@ -1,7 +1,7 @@
 ---
 title: Используя конструктор рабочих процессов конечных автоматов для прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231690"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Использование конструктора рабочих процессов конечного автомата для прежних версий
 При создании нового проекта рабочего процесса компьютера в [!INCLUDE[vs2010](../includes/vs2010-md.md)] , ориентированного [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], вы можете использовать любой **консольное приложение рабочего процесса компьютера состояние** или  **Состояние рабочего процесса библиотека машинного** шаблонов проекта прежних версий. Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Сведения о предыдущих версий шаблонах проектов конечного автомата, см. в разделе [как: создать состояние машины консольные приложения рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как: Создание библиотеки рабочего процесса автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

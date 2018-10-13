@@ -1,7 +1,7 @@
 ---
 title: В обзоре подавления источника | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209044"
 ---
 # <a name="in-source-suppression-overview"></a>Общие сведения о подавлении в исходном коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [в обзор исходного кода для подавления](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview).  
-  
 Подавление в исходном коде является возможность игнорировать нарушения анализа кода в управляемом коде, добавив **SuppressMessage** атрибута в сегменты кода, вызывающие нарушения. **SuppressMessage** атрибут является условным атрибутом, который включается в метаданные промежуточного языка сборки управляемого кода только в том случае, если символ компиляции CODE_ANALYSIS определен во время компиляции.  
   
  В управляемом коде C++/CLI для добавления этого атрибута используйте макрос CA_SUPPRESS_MESSAGE или CA_GLOBAL_SUPPRESS_MESSAGE в файле заголовка.  

@@ -1,7 +1,7 @@
 ---
 title: Функция SccGetVersion | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b5c5e5e6035d6ce0b81ba747efa3cea65ab2f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4f2df5db784213d6404253b885d5933de120c7b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230065"
 ---
 # <a name="sccgetversion-function"></a>Функция SccGetVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [функция SccGetVersion](https://docs.microsoft.com/visualstudio/extensibility/sccgetversion-function).  
-  
 Эта функция возвращает номер версии API подключаемых модулей управления источника, поддерживает подключаемый модуль системы управления версиями.  
   
 ## <a name="syntax"></a>Синтаксис  

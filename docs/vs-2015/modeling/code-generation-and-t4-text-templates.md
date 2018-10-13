@@ -1,7 +1,7 @@
 ---
 title: Создание кода и текстовые шаблоны T4 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229831"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание кода и текстовые шаблоны T4](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
-В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], *текстового шаблона T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../includes/csprcs-md.md)] или [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.  
+В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] *текстовый шаблон T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../includes/csprcs-md.md)] или [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.  
   
  Существует два типа текстовых шаблонов T4.  
   
@@ -58,7 +56,7 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- Приложение может выполняться на компьютере, который не имеет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установлен.  
+ Приложение может выполняться на компьютере, на котором не установлен [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
  Чтобы создать шаблон времени выполнения, добавьте в проект файл **предварительно обработанного текстового шаблона** . Также можно добавить текстовый файл и установить для его свойства **Пользовательское средство** значение **TextTemplatingFilePreprocessor**.  
   
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  Создание кода и других ресурсов на основе модели позволяет обновлять приложение посредством обновления модели.  
   
  [Создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md)  
- Если вы установили [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, можно обеспечить, то созданное программное поддерживает в актуальном с изменениями в модели.  
+ Если установлен пакет SDK для визуализации и моделирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , то созданное программное обеспечение будет обновляться в соответствии с изменениями в модели.  
   
  [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)  
  Синтаксис файла текстового шаблона.  

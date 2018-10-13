@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: включение отладки для приложений ASP.NET | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235941"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Практическое руководство. Включение отладки для приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: включение отладки для приложений ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Для включения отладки необходимо включить ее на странице **Свойства проекта** и в файле web.config приложения.  
   
 > [!NOTE]  
@@ -92,7 +90,7 @@ ms.locfileid: "47572843"
   
 Например, можно указать значение `debug="true"` в файле www.microsoft.com/aaa/Web.config, и любые приложения в папке aaa, а также любом подкаталоге aaa будут наследовать этот параметр. Поэтому, если приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] находится по адресу www.microsoft.com/aaa/bbb, то оно будет наследовать эту настройку, а также ее будут наследовать любые приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] из каталогов www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd и т. д. Единственное исключение — случай, когда одно из приложений переопределяет настройку посредством собственного файла Web.config, находящегося ниже по иерархии.  
   
-Включение режима отладки сильно отразится на производительности приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Режим отладки следует отключить перед развертыванием конечного приложения или перед оценкой его производительности.  
+Включение режима отладки сильно отразится на производительности приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Режим отладки следует отключить перед развертыванием конечного приложения или перед оценкой его производительности.  
   
 ## <a name="see-also"></a>См. также  
 [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  

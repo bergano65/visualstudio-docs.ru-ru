@@ -1,7 +1,7 @@
 ---
 title: Отложенная загрузка документов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240920"
 ---
 # <a name="delayed-document-loading"></a>Отложенная загрузка документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отложенной загрузке документа](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading).  
-  
 При повторном открытии решения Visual Studio, большая часть указанных документах не загружаются. Рамка окна документа создается в состоянии ожидания инициализации, а заполнитель документ (кадр заглушки) помещается в таблице выполняющихся документов (RDT).  
   
  Расширение может привести к документы проекта без необходимости загрузки путем запроса элементов в документах, прежде чем они будут загружены. Это может увеличить общий объем памяти для Visual Studio.  

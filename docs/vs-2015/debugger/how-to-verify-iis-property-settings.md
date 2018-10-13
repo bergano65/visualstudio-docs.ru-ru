@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: проверка параметров свойства IIS | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46daaa21a75e221a3174092032c3b7b99dee7d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38e647c25268b8d7c9e55fe1ee30f933a66f9f72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236149"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Практическое руководство. Проверка параметров свойства IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: проверка параметров свойства IIS](https://docs.microsoft.com/visualstudio/debugger/how-to-verify-iis-property-settings).  
-  
 Можно задать свойства для веб-приложения с помощью средства администрирования IIS. Чтобы приложение выполнялось, эти свойства должны быть заданы правильно. Поэтому проверка этих параметров часто является необходимым шагом в устранении неполадок.  
   
 > [!NOTE]

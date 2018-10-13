@@ -1,7 +1,7 @@
 ---
 title: Добавление контроллера меню на панель инструментов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231183"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Добавление контроллера меню на панель инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление контроллера меню на панель инструментов](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar).  
-  
 Это пошаговое руководство построено [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) Пошаговое руководство и показано, как добавить контроллер меню в панели инструментов окна инструментов. Показанные здесь шаги также может применяться к панели инструментов, которая создается в [Добавление панели инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.  
   
  Контроллер меню — элемент управления split. В левой части меню контроллера показана команда последний использованный и его можно было выполнить, щелкнув его. В правой части контроллер меню — это стрелка, при нажатии открывается список дополнительных команд. При выбора команды в списке, выполняется команда, и он заменяет команды слева контроллера меню. В этом случае контроллер меню работает, как кнопки, всегда отображает последнее использованное команды из списка.  

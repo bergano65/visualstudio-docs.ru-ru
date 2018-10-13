@@ -1,7 +1,7 @@
 ---
 title: Поддержка пользовательских параметров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,23 +17,21 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215661"
 ---
 # <a name="support-for-user-settings"></a>Поддержка параметров пользователя
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Поддержка пользовательских параметров](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings).  
-  
 VSPackage может определять одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает **параметры импорта и экспорта** команды **средства** меню. Чтобы включить этот сохраняемость, используйте API параметров в [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  Запись реестра, который называется точки настраиваемых параметров и GUID определяет категорию параметров VSPackage. VSPackage может поддерживать несколько категорий параметров, каждый из которых определяется точки настраиваемых параметров.  
   
--   Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Дополнительные сведения см. в разделе [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+-   Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 -   Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.  
   

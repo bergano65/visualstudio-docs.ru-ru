@@ -1,7 +1,7 @@
 ---
 title: Elements (динамическое свойство XElement) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75cb7f8f6a5259151679ecee84bbeb5db336782f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b65f32cc4146f275ec77a5942bdfef3fcf493b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237293"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (динамическое свойство XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Elements (динамическое свойство XElement)](https://docs.microsoft.com/visualstudio/designers/elements-xelement-dynamic-property).  
-  
 Получает индексатор, который используется для извлечения дочернего элемента текущего элемента с заданным развернутым именем.  
   
 ## <a name="syntax"></a>Синтаксис  

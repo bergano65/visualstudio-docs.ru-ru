@@ -1,7 +1,7 @@
 ---
 title: Определение профиля для расширения UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221264"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Определение профиля для расширения UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение профиля для расширения UML](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 Вы можете определить *профиля UML* настраивать стандартные элементы модели для определенных целей. Профиль определяет один или несколько *стереотипов UML*. Стереотип можно использовать, чтобы пометить тип как представляющий определенный вид объекта. Стереотип также может расширять список свойств элемента.  
   
  В поддерживаемых выпусках Visual Studio установлено несколько профилей. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Дополнительные сведения об этих профилях и о том, как применять стереотипы, см. в разделе [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  

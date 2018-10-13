@@ -1,7 +1,7 @@
 ---
 title: Создание настраиваемых визуализаторов данных | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217637"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Создание настраиваемых визуализаторов данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пользовательских создавать визуализаторы данных](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
 Визуализаторы – это компоненты [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] пользовательского интерфейса отладчика. Объект *визуализатор* создает диалоговое окно или другой интерфейс для отображения переменной или объекта способом, подходящим для этого типа данных. Например, HTML-визуализатор интерпретирует строку HTML и отображает результат в том виде, в каком она будет выглядеть в окне браузера; визуализатор точечных рисунков распознает структуру точечного рисунка и отображает его. Некоторые визуализаторы позволяют не только просматривать, но и редактировать данные.  
   
  Отладчик [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] включает шесть стандартных визуализаторов. Это текст, HTML, XML и JSON визуализаторы, которые работают со строковыми объектами; Визуализатор дерева WPF для отображения свойств визуального дерева объекта WPF; и средство визуализации наборов данных, который работает с объектами DataSet, DataView и DataTable. В будущем могут появиться дополнительные визуализаторы, которые будут доступны для загрузки из корпорации Майкрософт, а также сайтов сторонних компаний и сообщества. Кроме того, вы можете создавать собственные визуализаторы и устанавливать их в отладчик [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  

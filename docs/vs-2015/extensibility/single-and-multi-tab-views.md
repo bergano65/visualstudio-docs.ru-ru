@@ -1,7 +1,7 @@
 ---
 title: Представления одной и несколькими вкладками | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236006"
 ---
 # <a name="single-and-multi-tab-views"></a>Представления с одной и несколькими вкладками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [одним и несколькими вкладками представления](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views).  
-  
 Редактор можно создавать различные типы представлений. Одним из примеров является окном редактора кода, другой — это конструктор форм.  
   
  Представление с несколькими вкладками — представление, которое содержится несколько вкладок. Например, в редакторе HTML есть две вкладки в нижней: **разработки** и **источника**, каждая логическое представление. В конструкторе отображаются готовой веб-страницы, а другой код HTML, который состоит из веб-страницы.  

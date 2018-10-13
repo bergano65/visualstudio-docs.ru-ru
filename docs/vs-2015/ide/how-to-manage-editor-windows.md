@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Управление окнами редактора | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbbfddabe4d2760724834b365e6a55eb7ca293aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db6df2e7a3e7b0df1859c6a36871758ccf1d30db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225671"
 ---
 # <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: управление Windows редактор](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-windows).  
-  
 Вы можете работать с кодом сразу в нескольких расположениях. Для этого можно разделить окно редактора или открыть несколько его экземпляров.  
   
 > [!NOTE]

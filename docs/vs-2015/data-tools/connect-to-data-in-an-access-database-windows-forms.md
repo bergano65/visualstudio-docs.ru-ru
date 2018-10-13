@@ -1,7 +1,7 @@
 ---
 title: Подключение к данным в базе данных Access (Windows Forms) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ddab545909730a4fe7f94adf59c6cee74c86409
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207354"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [подключение к данным в базе данных Access (Windows Forms)](https://docs.microsoft.com/visualstudio/data-tools/connect-to-data-in-an-access-database-windows-forms).  
-  
   
 Можно подключиться к базе данных (MDF-файла или ACCDB-файла) с помощью Visual Studio. После определения соединения, данные отображаются в **источников данных** окна. Здесь можно перетаскивать таблицы и представления на формы. Если вы хотите понять, как система проектов в Visual Studio управляет эти файлы локальной базы данных, см. в разделе [как: управление локальные файлы данных, в проект](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
   

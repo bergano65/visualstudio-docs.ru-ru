@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08817b551d015481000d3151fb054ee5803ee6f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229402"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: найдите и упорядочение шаблонов проектов и элементов](https://docs.microsoft.com/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates).  
-  
 Чтобы шаблоны отображались в диалоговых окнах **Новый проект** и **Добавление нового элемента**, файлы шаблонов следует помещать в расположение, которое Visual Studio распознает. Для шаблонов можно создать пользовательские подкатегории, которые также отображаются в пользовательском интерфейсе.  
   
 ## <a name="locating-templates"></a>Расположение шаблонов  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отладка ClickOnce-приложения с ограниченными разрешениями | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7733eeefc758f5e5cd6940108ef6ade645893407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01cf2be1bef794f5aeb74b86d041408fa40ce4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209538"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отладка ClickOnce-приложения с ограниченными разрешениями](https://docs.microsoft.com/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions).  
-  
 Как разработчик вы, скорее всего, работаете на компьютере разработчика с разрешениями полного доверия и поэтому не увидите те исключения безопасности, возникающие при отладке приложения ClickOnce, с которыми может столкнуться конечный пользователь, работающий с ограниченными разрешениями.  
   
  Чтобы перехватывать такие исключения, необходимо выполнять отладку приложения с теми же разрешениями, которые имеет конечный пользователь. Отладку с ограниченными разрешениями можно включить на странице **Безопасность** **конструктора проектов**.  

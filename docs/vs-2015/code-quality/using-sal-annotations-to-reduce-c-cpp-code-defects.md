@@ -1,7 +1,7 @@
 ---
 title: Использование аннотаций SAL для сокращения количества дефектов кода C / C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207018"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [использование аннотаций SAL для сокращения количества дефектов кода C/C++](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
 SAL является языка заметок для исходного кода Microsoft. С помощью заметок исходного кода, можно сделать целью за ваш код явной. Эти заметки также включить средства автоматического статического анализа, чтобы более точно, анализ кода с помощью значительно меньше ложных положительных и ложных отрицательных результатов.  
   
  Статьи в этом разделе документации обсуждаются аспекты SAL, предоставить ссылку на синтаксисе SAL и приводятся примеры его использования.  

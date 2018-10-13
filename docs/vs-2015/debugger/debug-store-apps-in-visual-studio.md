@@ -1,7 +1,7 @@
 ---
 title: Store отладки приложений в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219145"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Отладка приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Store отладки приложений в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio).  
-  
 Отладчик Visual Studio позволяет вам управлять выполнением программы и изучать ее состояние. Вы можете использовать отладчик, чтобы найти причину неполадок в приложении Магазина Windows и понять, как именно это приложение работает. Когда вы приостанавливаете выполнение в отладчике, Visual Studio отображает исходный файл, содержащий выполняемый код, и выделяет выполняемый оператор. Вы можете просмотреть значение переменных, стек вызовов выполняемых функций и другие аспекты состояния программы. Вы можете продолжить выполнение (пошаговое) программы по одному оператору за раз, чтобы определить, как именно операторы изменяют значения в программе. В приложениях на JavaScript вы можете просмотреть и контролировать DOM на странице.  
   
 ## <a name="in-this-section"></a>Содержание раздела  

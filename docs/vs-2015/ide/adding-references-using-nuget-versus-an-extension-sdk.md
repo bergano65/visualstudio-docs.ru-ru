@@ -1,7 +1,7 @@
 ---
 title: Добавление ссылок с использованием NuGet или расширения SDK | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54197aa4f8074c206e05e41d2b70d81a76c38f1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235811"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление ссылок с использованием NuGet или расширения SDK](https://docs.microsoft.com/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk).  
-  
 Можно предоставить пакет для использования в проектах Visual Studio, используя либо расширения NuGet для Visual Studio, либо пакет средств разработки программного обеспечения (SDK). В этом разделе описываются сходства и различия между двумя механизмами, которые помогут вам выбирать наиболее подходящий вариант для решения ваших задач.  
   
 -   NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. на странице [NuGet Overview](http://go.microsoft.com/fwlink/?LinkId=254877).  

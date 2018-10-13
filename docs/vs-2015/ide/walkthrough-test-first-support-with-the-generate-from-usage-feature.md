@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Основанная на тестировании поддержка с помощью возможности "Создание в результате использования" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232847"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании поддержка с помощью возможности "Создание в результате использования"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: основанная на тестировании поддержка с помощью создать из компонента использования](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 В этом разделе демонстрируется использование функции [Создание в результате использования](../misc/generate-from-usage.md), которая поддерживает разработку на основе тестирования.  
   
  *Разработка на основе тестирования* является подходом к созданию программного обеспечения, в рамках которого на основе спецификаций продукта создаются модульные тесты, а затем создается исходный код, который приводит к успешному выполнению тестов. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] поддерживает разработку на основе тестирования путем создания новых типов и членов в исходном коде при их первом упоминании в тестовых случаях до их определения.  

@@ -1,7 +1,7 @@
 ---
 title: Конфигурации для построения проекта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221121"
 ---
 # <a name="project-configuration-for-building"></a>Конфигурация проекта для сборки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [конфигурация проекта для сборки](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 Список конфигураций решения для данного решения осуществляется в диалоговом окне конфигурации решения.  
   
  Пользователь может создать дополнительные конфигурации решения, каждый с уникальным именем. Когда пользователь создает новую конфигурацию решения, интегрированной среды разработки по умолчанию в соответствующее имя конфигурации, в проектах или отладки Если соответствующие имя не существует. Пользователь может изменить выбор для удовлетворения конкретных требований, при необходимости. Единственным исключением из этого поведения при проект поддерживает конфигурацию, которая совпадает с именем новой конфигурации решения. Например предположим, что решение содержит Project1 и Project2. Project1 имеет проекта конфигурации отладки, розничной торговли и MyConfig1. Project2 имеет проекта конфигурации отладки, розничной торговли и MyConfig2.  

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData::get__NewEnum | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a38953d782c8516e982138e9d48a41cb42001325
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfcc07f9866b444122343ea10b3181848789669b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211572"
 ---
 # <a name="idiaenumframedatagetnewenum"></a>IDiaEnumFrameData::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaEnumFrameData::get__NewEnum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-get-newenum).  
-  
 Извлекает <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версии этот перечислитель.  
   
 ## <a name="syntax"></a>Синтаксис  

@@ -1,7 +1,7 @@
 ---
 title: Справочник (программный захват) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230351"
 ---
 # <a name="reference-programmatic-capture"></a>Справочник (программный захват)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ссылки (программный захват)](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture).  
-  
 Диагностика графики поддерживает управление функциями записи через API программного захвата. Этот API можно использовать для переключения и добавления сообщений на головной дисплей, инициализации и создания файлов журнала графики, а также для захвата графических данных.  
   
 ## <a name="programmatic-capture-apis"></a>API программного захвата  
@@ -48,7 +46,7 @@ ms.locfileid: "47568529"
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
-|[Захват графической информации](../debugger/capturing-graphics-information.md)|Показывает, как захватывать графическую информацию из приложения DirectX для использования инструментов диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], помогающих выявлять проблемы отрисовки.|  
+|[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|Показывает, как захватывать графическую информацию из приложения DirectX для использования инструментов диагностики графики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], помогающих выявлять проблемы отрисовки.|  
 |[Обзор набора средств Visual Studio для Unity](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|Показывает, каким образом диагностика графики помогает отлаживать ошибки отрисовки в играх и приложениях DirectX.|
 
 

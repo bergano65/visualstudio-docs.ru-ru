@@ -1,7 +1,7 @@
 ---
 title: '&lt;зависимость&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233861"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;зависимость&gt; элемент (приложение ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;зависимостей&gt; элемент (приложение ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application).  
-  
 Определяет зависимость платформы или сборки, необходимые для приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -112,10 +110,10 @@ ms.locfileid: "47557707"
 |`description`|Необязательный. Описание операционной системы, описываемых в удобное для восприятия форме `dependentOS` элемент.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Обязательно. Этот элемент является дочерним по отношению к элементу `dependentOS` и содержит элемент `os`. Этот элемент не содержит атрибуты.  
+ Обязательно. Этот элемент является дочерним по отношению к элементу `dependentOS` и содержит элемент `os` . Этот элемент не содержит атрибуты.  
   
 ### <a name="os"></a>ОС  
- Обязательно. Этот элемент является дочерним по отношению к элементу `osVersionInfo`. Этот элемент содержит следующие атрибуты.  
+ Обязательно. Этот элемент является дочерним по отношению к элементу `osVersionInfo` . Этот элемент содержит следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -152,29 +150,29 @@ ms.locfileid: "47557707"
 |`language`|Необязательный. Определяет две части кодов языка, например EN-US, сборки.|  
   
 ### <a name="hash"></a>hash  
- `hash` Элемент является необязательного дочернего элемента `assemblyIdentity` элемент. `hash` Элемент не имеет атрибутов.  
+ `hash` Элемент является необязательного дочернего элемента `assemblyIdentity` элемент. У элемента `hash` нет атрибутов.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] использует алгоритма хэш всех файлов в приложении в качестве проверки безопасности, чтобы убедиться, что ни один из файлов был изменен после развертывания. Если `hash` элемент не включен, эта проверка не выполняется. Таким образом, пропуск `hash` элемента не рекомендуется.  
   
 ### <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
- `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемент. `dsig:Transforms` Элемент не имеет атрибутов.  
+ `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемент. У элемента `dsig:Transforms` нет атрибутов.  
   
 ### <a name="dsigtransform"></a>DSIG:Transform  
- `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемент. `dsig:Transform` Элемент имеет следующие атрибуты.  
+ `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемент. Элемент `dsig:Transform` имеет перечисленные ниже атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственное значение, используемое [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] является `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
- `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемент. `dsig:DigestMethod` Элемент имеет следующие атрибуты.  
+ `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемент. Элемент `dsig:DigestMethod` имеет перечисленные ниже атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственное значение, используемое [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] является `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ### <a name="dsigdigestvalue"></a>DSIG:DigestValue  
- `dsig:DigestValue` Элемент является обязательным дочерним элементом `hash` элемент. `dsig:DigestValue` Элемент не имеет атрибутов. Его текстовое значение является хэшем для указанного файла.  
+ `dsig:DigestValue` Элемент является обязательным дочерним элементом `hash` элемент. У элемента `dsig:DigestValue` нет атрибутов. Его текстовое значение является хэшем для указанного файла.  
   
 ## <a name="remarks"></a>Примечания  
  Все сборки, используемый в приложении должна быть определена соответствующая `dependency` элемент. Зависимые сборки не включают сборки, которые должны быть предварительно установлены в глобальном кэше сборок как сборки платформы.  

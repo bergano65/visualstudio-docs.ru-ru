@@ -1,7 +1,7 @@
 ---
 title: Просмотр прослушивателей событий DOM | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223305"
 ---
 # <a name="view-dom-event-listeners"></a>Просмотр прослушивателей событий DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Просмотр прослушивателей событий DOM](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
  **События** вкладке проводника DOM отображаются события, связанные с элементом DOM. Каждый узел верхнего уровня в **события** вкладка представляет событие, которое содержит активные подписчики. Узел верхнего уровня содержит вложенные узлы, представляющие зарегистрированные прослушиватели событий для указанного события. Помимо просмотра прослушивателей событий, этой вкладкой можно пользоваться для перехода к расположению прослушивателя событий в коде JavaScript. Информация, содержащаяся в данном разделе, относится к приложениям Магазина на базе HTML и JavaScript.  
@@ -62,7 +60,7 @@ ms.locfileid: "47558964"
   
 6.  В проводнике DOM выберите `Find` в правом верхнем углу.  
   
-7.  Тип `ListView`, и нажмите клавишу ВВОД.  
+7.  Введите команду `ListView`и нажмите клавишу ВВОД.  
   
 8.  При необходимости выберите **Далее** кнопку, чтобы найти `DIV` , представляющего `ListView` управления (этот элемент имеет `data-win-control` значение `WinJS.UI.ListView`).  
   

@@ -1,7 +1,7 @@
 ---
 title: Анимирование объектов в конструкторе XAML | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 481ba0f156f6ea6cc43d9df19eedcb84ab864cbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230091"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Анимирование объектов в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анимирование объектов в конструкторе XAML](https://docs.microsoft.com/visualstudio/designers/animate-objects-in-xaml-designer).  
-  
 Вы можете создавать короткие анимации, которые перемещают объекты или позволяют им исчезать и появляться.  
   
  Чтобы начать работу, создайте *раскадровку*. Раскадровка содержит одну или несколько *временных шкал*. Задайте *опорные кадры* на временной шкале, чтобы отметить изменения свойств. Затем при запуске анимации Blend интерполирует изменения свойств за указанный период времени. Результатом является плавный переход. Вы можете анимировать любое свойство, которое принадлежит к объекту, даже если оно не является визуальным.  

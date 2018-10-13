@@ -1,7 +1,7 @@
 ---
 title: Рефакторинг классов и типов (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207966"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Рефакторинг классов и типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [рефакторинг классов и типов (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer).  
-  
 В ходе рефакторинга кода вы лучше понимаете, поддерживаете и делаете свою работу более эффективно благодаря изменению его внутренней структуры, а также способа разработки его объектов, но не его внешнего поведения. При рефакторинге кода на Visual C# .NET, Visual Basic .NET или C++ в своем проекте Visual Studio для уменьшения объема выполняемых работ, а также вероятности появления ошибок, используйте конструктор классов и окно «Сведения о классе».  
   
 > [!NOTE]

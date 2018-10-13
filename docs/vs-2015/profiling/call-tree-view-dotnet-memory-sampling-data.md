@@ -1,7 +1,7 @@
 ---
 title: Представление "Дерево вызовов" — данные выборки памяти .NET | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c24cec082e7935275d776832d96a63e910c7997a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc2f0354a01bc2f706e2ddec6c21b1513f8d5778
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212879"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Представление "Дерево вызовов" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [дерева представление вызовов — данные выборки памяти .NET](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-sampling-data).  
-  
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении. Корнем дерева является точка входа в приложение или компонент. В каждом узле функции указаны все вызванные им функции, а также данные о выделении памяти .NET, связанные с этими вызовами функций.  
   
  Значения в представлении "Дерево вызовов" приведены для экземпляров функций, вызванных родительской функцией в дереве вызовов. Процентные значения вычисляются в ходе сравнения значений для экземпляров функции с общим числом или размером выделений в сеансе профилирования.  

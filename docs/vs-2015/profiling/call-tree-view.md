@@ -1,7 +1,7 @@
 ---
 title: Представление "Дерево вызовов" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225450"
 ---
 # <a name="call-tree-view"></a>Представление "Дерево вызовов"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление дерева вызовов](https://docs.microsoft.com/visualstudio/profiling/call-tree-view).  
-  
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении. Корнем дерева является точка входа в приложение или компонент. В каждом узле функции перечислены все вызванные в ней функции и содержатся данные по производительности, связанные с этими вызовами функций.  
   
  Кроме того, можно развернуть представление "Дерево вызовов" и проанализировать путь выполнения функции, приведший к наибольшей задержке или встречавшийся наиболее часто. Чтобы отобразить самый активный путь, щелкните функцию правой кнопкой мыши и выберите команду **Развернуть критический путь**.  

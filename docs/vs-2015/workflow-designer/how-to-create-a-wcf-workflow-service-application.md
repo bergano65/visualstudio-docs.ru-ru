@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание приложения службы рабочего процесса WCF | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 22531f171b07493f69bcf017634d9c6d299de844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228440"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Как создать приложение службы рабочего процесса WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] служебные приложения рабочего потока представляют собой распределенные службы коммуникаций, которые передают сообщения клиентам и обратно, из одного процесса в другой. В [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] реализация контракта службы на стороне службы выполняется декларативно с помощью действий рабочего процесса способом, аналогичным тому, который реализован в службах рабочих процессов .NET Framework 3.5.  

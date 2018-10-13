@@ -1,7 +1,7 @@
 ---
 title: Использование ЦП | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a8bd6cb34bf125ada7a880ca2802802fbcc579d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208701"
 ---
 # <a name="cpu-usage"></a>Использование ЦП
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ использования ЦП в Visual Studio](https://docs.microsoft.com/visualstudio/profiling/cpu-usage).  
-  
 Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Использование ЦП** показывает, где ЦП тратит время при выполнении кода Visual C++, Visual C#/Visual Basic и JavaScript.  
   
  Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Во время отладки можно включать и выключать профилирование ЦП и просматривать результаты при остановке выполнения, например в точке останова. Дополнительные сведения см. в разделе [Профилирование ЦП в отладчике в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  

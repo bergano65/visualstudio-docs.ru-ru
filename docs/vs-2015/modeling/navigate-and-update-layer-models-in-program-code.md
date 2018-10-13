@@ -1,7 +1,7 @@
 ---
 title: Переход и обновление моделей слоев в коде программы | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214939"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Перемещение по моделям слоев в коде программы и их обновление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Navigate и обновления уровня модели в программном коде](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code).  
-  
 В этом разделе рассматриваются элементы и отношения в моделях слоев, к которым можно перейти и которые можно обновить с помощью программного кода. Дополнительные сведения о схемах слоев с точки зрения пользователя см. в разделе [схемы слоев: ссылка](../modeling/layer-diagrams-reference.md) и [схемы слоев: рекомендации по](../modeling/layer-diagrams-guidelines.md).  
   
  Модель <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>, описываемая в этом разделе, является интерфейсом более общей модели <xref:Microsoft.VisualStudio.GraphModel>. Если вы создаете [расширение команды или жеста меню](../modeling/add-commands-and-gestures-to-layer-diagrams.md), использовать `Layer` модели. Если вы создаете [расширения проверки слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.  

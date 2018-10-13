@@ -1,7 +1,7 @@
 ---
 title: Основные сведения об установщике Windows | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a15d47971a7f500d1f709dfb248838f84065f21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223058"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [основные сведения об установщике Windows](https://docs.microsoft.com/visualstudio/extensibility/internals/windows-installer-basics).  
-  
 Установщик Windows устанавливает и удаляет приложения или программных продуктов на компьютере пользователя, выполнения этих задач в блоках, именуемых компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки с помощью установщика Windows.  
   
  Полную документацию по установщика Windows, см. в разделе Platform SDK [установщика Windows](http://msdn.microsoft.com/library/aa372866.aspx).  

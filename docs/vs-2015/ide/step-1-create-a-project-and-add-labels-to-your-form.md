@@ -1,7 +1,7 @@
 ---
 title: Шаг 1. Создание проекта и добавление в форму элементов управления Label | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207003"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Шаг 1. Создание проекта и добавление в форму элементов управления Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 1: Создание проекта и добавление меток в форму](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-labels-to-your-form).  
-  
 Первые шаги разработки этой головоломки предполагают создание проекта, добавление меток, кнопки и других элементов управления в форму. Также вам предстоит задать свойства для каждого добавляемого элемента управления. Проект будет содержать форму, элементы управления и добавленный в следующих уроках учебника код. Кнопка запускает головоломку, метки служат для отображения задач, входящих в головоломку, а остальные элементы управления служат для отображения ответов и времени, оставшегося на решение головоломки.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Создание и применение ресурса | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236513"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Практическое руководство. Создание и применение ресурса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание и применение ресурса](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource).  
-  
 Стили и шаблоны элементов в конструкторе XAML хранятся в сущностях, допускающих многократное применение, которые называют ресурсами. Стили позволяют задавать свойства элемента и использовать их повторно для согласованного внешнего вида нескольких элементов. Шаблон [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) определяет внешний вид элемента управления и может также применяться в качестве ресурса. Дополнительные сведения см. в статьях [Краткое руководство: использование стилей для элементов управления (XAML)](http://go.microsoft.com/fwlink/?LinkID=248239) и [Краткое руководство: шаблоны элементов управления (XAML)](http://go.microsoft.com/fwlink/?LinkID=247982).  
   
  Когда вы создаете новый ресурс из существующего свойства, [Style](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) или `ControlTemplate`, диалоговое окно **Создание ресурса** позволяет определить ресурс на уровне приложения, документа или элемента. Эти уровни определяют, где можно использовать ресурс. Например, если определить ресурс на уровне элемента, его можно будет применять только к элементу, в котором он создан. Также можно сохранить ресурс в словаре ресурсов, представляющем собой отдельный файл, который можно повторно использовать в другом проекте.  

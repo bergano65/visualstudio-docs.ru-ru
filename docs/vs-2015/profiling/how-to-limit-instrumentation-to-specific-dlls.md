@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Ограничение инструментирования указанными библиотеками DLL | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234524"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Практическое руководство. Ограничение инструментирования указанными библиотеками DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Ограничение инструментирования указанными библиотеками DLL](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 С помощью метода профилирования "Инструментирование" можно ограничить сбор данных профилирования одной или несколькими библиотеками DLL приложения. Для профилирования одной или нескольких библиотек DLL в приложении создайте сеанс анализа производительности, включающий DLL-файлы в качестве целевых объектов. Вы можете указать библиотеки DLL, которые требуется профилировать, как проекты в решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или как независимые двоичные файлы.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Ограничение инструментирования указанными библиотеками DLL в решении Visual Studio  
