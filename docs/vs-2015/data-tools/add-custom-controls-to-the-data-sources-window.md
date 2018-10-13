@@ -1,7 +1,7 @@
 ---
 title: Добавление пользовательских элементов управления в окно "Источники данных" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183642"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [добавлять пользовательские элементы управления окна "Источники данных"](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window).  
-  
   
 При перетаскивании элемента из **источников данных** окно в рабочую область конструирования для создания элемента управления с привязкой данных, можно выбрать тип элемента управления, который создается. Каждый элемент в окне имеет стрелку раскрывающегося списка, который отображает элементы управления, вы можете выбрать один из. Набор элементов управления, связанного с каждым элементом определяется типом данных элемента. Если элемент управления, который вы хотите создать не отображается в списке, необходимо выполнить инструкции в этом разделе, чтобы добавить элемент управления в список.  
   

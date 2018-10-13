@@ -1,7 +1,7 @@
 ---
 title: Справочник по API SDK моделирования для Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65f8fffbe86bfb80916aa62d3f148795a3c279d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7cb71263ec8c375ce7263b0b0ebf393cccde99be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211579"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Справка по API SDK моделирования для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по API для пакет SDK моделирования для Visual Studio](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-modeling-sdk-for-visual-studio).  
-  
 Пакет SDK моделирования и визуализации Visual Studio предоставляет платформу, на котором строятся на предметно ориентированных языков (DSL) и средства UML.  
   
 > [!NOTE]

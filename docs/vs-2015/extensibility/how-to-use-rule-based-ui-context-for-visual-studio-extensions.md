@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194705"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Практическое: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: контекст пользовательского интерфейса на основе использования правил для расширений Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions).  
-  
 Visual Studio позволяет загружать пакеты VSPackage, при некоторых известных <xref:Microsoft.VisualStudio.Shell.UIContext>активируются s. Тем не менее эти контексты пользовательского интерфейса не являются очень точно детального, оставляя разработчикам расширений нет другого выбора, но Выбор доступного контекста пользовательского интерфейса, который активирует перед запятой им это действительно требуется для загрузки VSPackage. Список известных контекстов пользовательского интерфейса, см. в разделе <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Загрузка пакетов может повлиять на производительность и загружая их раньше, чем они нужны не рекомендуется. Visual Studio 2015 представляет концепцию основанном на правилах контекстов пользовательского интерфейса, механизм, позволяющий разработчикам расширений определить точные условия, при которых активируется контекст пользовательского интерфейса и загружаются связанные пакеты VSPackage.  

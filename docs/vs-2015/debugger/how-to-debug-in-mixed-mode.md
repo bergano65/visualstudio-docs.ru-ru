@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отладка в смешанном режиме | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ce056b60a3e080490a2ad60f4aee5a7b5c8dd63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c13babd3e54d11c7a32e83f645dc2ab9d12b4f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226152"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отладка в смешанном режиме](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-in-mixed-mode).  
-  
 Далее описывается отладка управляемого и машинного кода, также называемая отладкой в смешанном режиме. Для этого существует два скрипта, в зависимости от того, написана ли в машинном коде DLL-библиотека или приложение:  
   
 -   Приложение, вызывающее DLL-библиотеку, написано в машинном коде. В этом случае DLL-библиотека является управляемой, и для отладки должны быть включены оба отладчика — управляемый и машинного кода. Это можно проверить в  **\<проект > страницы свойств** диалоговое окно. Способ выполнения этой операции зависит от того, откуда была запущена отладка: из проекта DLL или из проекта вызывающего приложения.  

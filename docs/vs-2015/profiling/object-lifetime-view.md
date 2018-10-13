@@ -1,7 +1,7 @@
 ---
 title: Представление "Время жизни объекта" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202856"
 ---
 # <a name="object-lifetime-view"></a>Представление "Время существования объектов"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представление "время существования объектов"](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 Представление "Время жизни объекта" доступно, только если на страницах свойств сеансов производительности установлен флажок **Also collect .NET object lifetime data** (Также собирать данные о времени жизни объектов .NET).  
   
  Сборщик мусора [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] управляет выделением и освобождением памяти для приложения. Для оптимизации производительности сборщика мусора управляемая куча делится на три поколения: 0, 1 и 2. Сборщик мусора среды выполнения хранит новые объекты в поколении 0. Уровень объектов, оставшихся после сборок мусора, повышается, и они сохраняются в поколениях 1 и 2.  

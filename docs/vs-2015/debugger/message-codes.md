@@ -1,7 +1,7 @@
 ---
 title: Сообщений с кодами. | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d995a884b8d223a4415549739c9701fd72886a56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33707cf748ff19af4780d4ded7f74ebf52d007d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209781"
 ---
 # <a name="message-codes"></a>Коды сообщений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [коды сообщений](https://docs.microsoft.com/visualstudio/debugger/message-codes).  
-  
 Каждая строка сообщения, отображаемая в [представления сообщений](../debugger/messages-view.md) содержит «P», элемента, "элемента," или «R». Эти коды имеют следующий смысл:  
   
 |Код|Значение|  

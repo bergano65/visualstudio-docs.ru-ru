@@ -1,7 +1,7 @@
 ---
 title: Отладка потоков и процессов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191494"
 ---
 # <a name="debug-threads-and-processes"></a>Отладка потоков и процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладки потоков и процессов](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes).  
-  
 Потоки * и *процессы* — это связанные понятия в вычислительной технике. Оба представляют из себя последовательность инструкций, которые должны выполняться в определенном порядке. Инструкции в отдельных потоках или процессах, однако, могут выполняться параллельно.  
   
  Процессы существуют в операционной системе и соответствуют тому, что пользователи видят как программы или приложения. Поток, с другой стороны, существует внутри процесса. По этой причине потоки иногда называются *облегченные процессы*. Каждый процесс состоит из одного или более потоков.  

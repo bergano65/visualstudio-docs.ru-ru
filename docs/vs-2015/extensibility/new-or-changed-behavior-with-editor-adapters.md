@@ -1,7 +1,7 @@
 ---
 title: Нового или измененного поведения с помощью редактора адаптеров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce1cc8c95fcd2c6a34342b71c1c94bf5930e0e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 740fc83a9ded8ad35b93120d6fdec5767ceeea82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178962"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Нового или измененного поведения с помощью редактора адаптеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создать или изменить поведение с помощью редактора адаптеров](https://docs.microsoft.com/visualstudio/extensibility/new-or-changed-behavior-with-editor-adapters).  
-  
 Если при обновлении кода, написанного для более ранних версиях базовый редактор Visual Studio, и вы планируете использовать адаптеры редактора (или оболочки совместимости) вместо того чтобы использовать новый интерфейс API, следует иметь в виду следующие различия в поведении адаптеров редактора по отношению к предыдущей базовым редактором.  
   
 ## <a name="features"></a>Функции  

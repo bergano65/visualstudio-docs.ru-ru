@@ -1,7 +1,7 @@
 ---
 title: Сбор данных об использовании памяти .NET Framework для автономных приложений с помощью средств командной строки профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fb43237b030cb5c8d4dea040b5f9fc480bc7fe9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 069d930a4670cac87e31720a38afc6c857769909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193085"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Сбор данных памяти .NET Framework для автономных приложений с помощью средств командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сбор данных памяти .NET Framework для автономных приложений с помощью командной строки Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для клиентского (автономного) приложения .NET с использованием метода выборки в командной строке.  
   
 ## <a name="common-tasks"></a>Общие задачи  

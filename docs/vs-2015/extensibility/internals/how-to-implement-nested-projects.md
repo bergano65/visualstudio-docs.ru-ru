@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: реализация вложенных проектов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173580"
 ---
 # <a name="how-to-implement-nested-projects"></a>Практическое: реализация вложенных проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: реализация вложенных проектов](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects).  
-  
 При создании типа проекта, вложенного в существует, несколько дополнительных шагов, которые должны быть реализованы. На некоторых те же обязанности, решение содержит его проектов вложенные (дочерние) принимает родительского проекта. Родительский проект — это контейнер, аналогичную решения проектов. В частности есть несколько событий, которые должны вызываться в решении и родительские проекты для построения иерархии вложенных проектов. Эти события описаны в процесс для создания вложенных проектов.  
   
 ### <a name="to-create-nested-projects"></a>Для создания вложенных проектов  

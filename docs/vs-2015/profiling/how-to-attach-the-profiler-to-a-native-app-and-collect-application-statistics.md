@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Присоединение профилировщика к автономному приложению в машинном коде и сбор статистики приложения с помощью командной строки | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0534686b5cb90bde9bf846c62ea82ffa56bf0249
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9e618065a20edf6294bc86297558e294606f3da7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204944"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению в машинном коде и сбор статистики приложения с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: присоединение Profiler для автономного приложения в машинном коде и сбор статистики приложения с помощью командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line).  
-  
 В этом разделе описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], выполняемых из командной строки, присоединить профилировщик к автономному приложению в машинном коде и собрать статистические данные о производительности с использованием метода выборки.  
   
 > [!NOTE]

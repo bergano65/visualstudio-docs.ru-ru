@@ -1,7 +1,7 @@
 ---
 title: Справочник по пакету SDK для Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232067"
 ---
 # <a name="visual-studio-sdk-reference"></a>Справочник по пакету SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 Этот раздел содержит сведения о пространствах имен, связанные пространства имен и другие области интересов Visual Studio для разработчиков, использующих пакет SDK для Visual Studio.  
   
 ## <a name="in-this-section"></a>В этом разделе
@@ -314,6 +312,6 @@ ms.locfileid: "47559670"
  Используется для MSBuild.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
+ [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
  Включает в себя документацию, примеры и код, чтобы помочь вам в разработке продуктов, которые интегрируются с Visual Studio.
 

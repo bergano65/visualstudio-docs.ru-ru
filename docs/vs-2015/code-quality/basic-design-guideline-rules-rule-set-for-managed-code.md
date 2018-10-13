@@ -1,7 +1,7 @@
 ---
 title: Базовое правило нормы и правила разработки, задайте для управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184721"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [набора правил базовые нормы и правила разработки для управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 Можно использовать базовые правила и рекомендации по разработке Microsoft набора правил в сосредоточиться на создании кода проще для понимания и использования. Следует включить это правило, если проект содержит библиотечный код или если вы хотите принудительное применение рекомендаций для кода, который легко поддерживать.  
   
  Базовые нормы и правила разработки включают все правила в наборе правил минимальные правила Майкрософт. Список правил в минимальном, см. в разделе [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Переключение между записью члена и записью ассоциации (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0659d024f74f154811c51248d523b8826824431f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ed7ee328e65f0e76426a21db8f2481e590b0546
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173612"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: изменение между представлением в виде членов и представлением в виде ассоциации (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-change-between-member-notation-and-association-notation-class-designer).  
-  
 В конструкторе классов можно изменить способ представления не схеме классов отношения связи между двумя типами из записи члена с записью ассоциации, и наоборот. Члены отображаются в виде линий связи и часто дают более наглядное представление взаимосвязи типов.  
   
 > [!NOTE]
