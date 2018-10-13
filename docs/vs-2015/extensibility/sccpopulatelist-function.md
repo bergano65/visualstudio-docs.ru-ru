@@ -1,7 +1,7 @@
 ---
 title: Функция SccPopulateList | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e37b011da322639c2393d8fea1fb7eeaefac729
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03fedd4854103186eb9d6f034d11a8e0f8b11c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279569"
 ---
 # <a name="sccpopulatelist-function"></a>Функция SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [функция SccPopulateList](https://docs.microsoft.com/visualstudio/extensibility/sccpopulatelist-function).  
-  
 Эта функция обновляет список файлов для команды управления определенного источника и предоставляет состояние системы управления версиями на все заданные файлы.  
   
 ## <a name="syntax"></a>Синтаксис  

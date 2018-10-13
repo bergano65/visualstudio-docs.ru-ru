@@ -1,7 +1,7 @@
 ---
 title: Отладка в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296456"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Последнюю версию этого раздела можно найти в [отладки в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).
-
 Отладчик Visual Studio позволяет вести наблюдение за поведением программы во время выполнения и выявлять проблемы. Отладчик работает со всеми языками программирования Visual Studio и библиотеками. С помощью отладчика можно прерывать или приостанавливать выполнение программы с целью проверки кода, вычислять и редактировать значения переменных программы, отслеживать состояние регистров, просматривать инструкции, созданные из исходного кода, а также просматривать область памяти, используемую приложением.  
   
  Краткие сведения об отладке и диагностике в Visual Studio см. в разделе [Отладка, профилирование и диагностика](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).  

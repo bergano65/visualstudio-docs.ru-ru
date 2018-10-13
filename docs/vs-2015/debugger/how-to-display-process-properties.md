@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отображение свойств процесса | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb77bcc22ab4e507f5b35d29c191efe26e9ad3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296079"
 ---
 # <a name="how-to-display-process-properties"></a>Практическое руководство. Отображение свойств процесса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отображение свойств процесса](https://docs.microsoft.com/visualstudio/debugger/how-to-display-process-properties).  
-  
 Чтобы получить дополнительные сведения о процессах, перечисленных в [представление процессов](../debugger/processes-view.md), использовать [диалоговое окно "Свойства процесса"](../debugger/process-properties-dialog-box.md).  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Чтобы открыть диалоговое окно "Свойства процесса"  

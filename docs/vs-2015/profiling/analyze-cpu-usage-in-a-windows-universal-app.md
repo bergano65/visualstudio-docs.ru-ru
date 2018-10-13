@@ -1,7 +1,7 @@
 ---
 title: Анализ загрузки ЦП в универсальных приложениях для Windows | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250722"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Анализ загрузки ЦП в универсальных приложениях для Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ использования ЦП в универсальных приложениях Windows](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
  Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Загрузка ЦП** показывает, в какой части кода затрачивается больше всего ресурсов ЦП. Чтобы сконцентрироваться на определенных сценариях использования ЦП можно запускать с [скорость реагирования ИП XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) средство, [расход энергии](../profiling/analyze-energy-use-in-store-apps.md) средства или оба средства в рамках одного сеанса диагностики.  

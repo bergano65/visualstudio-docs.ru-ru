@@ -1,7 +1,7 @@
 ---
 title: Окно "Свойства" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88ff9388a7d23543a32368e763b5efb7abbdc8cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282377"
 ---
 # <a name="properties-window"></a>Окно свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [окно "Свойства"](https://docs.microsoft.com/visualstudio/ide/reference/properties-window).  
-  
   
 В этом окне можно просматривать и изменять свойства времени разработки и события выбранных объектов, которые находятся в редакторах и конструкторах. Кроме того, в окне **Свойства** можно редактировать и просматривать свойства файлов, проектов и решений. Окно **Свойства** можно открыть из меню **Вид**. Кроме того, его можно открыть, нажав клавишу F4 или набрав слово **Свойства** в окне **Быстрый запуск**.  
   

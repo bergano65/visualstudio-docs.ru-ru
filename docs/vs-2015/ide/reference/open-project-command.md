@@ -1,7 +1,7 @@
 ---
 title: Команда "Открыть проект" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c8f70d5605f4ee47171992e3a94c145cbdc8785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b25ee0e6ba4dfa5c29d5a009087afb55509d0c08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557923"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263925"
 ---
 # <a name="open-project-command"></a>Команда Open Project
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команды Открыть проект](https://docs.microsoft.com/visualstudio/ide/reference/open-project-command).  
-  
   
 Открывает существующий проект.  
   
@@ -63,7 +61,7 @@ File.OpenProject filename
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

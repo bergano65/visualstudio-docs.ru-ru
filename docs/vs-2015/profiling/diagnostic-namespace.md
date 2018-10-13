@@ -1,7 +1,7 @@
 ---
 title: Пространство имен diagnostic | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3959d7f5399073e3d27131ffcd73541c882d9cdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b52f7cceee8eddc2d5643661d0d820afef10e504
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297294"
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пространство имен diagnostic](https://docs.microsoft.com/visualstudio/profiling/diagnostic-namespace).  
-  
 Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.  
   
 ## <a name="syntax"></a>Синтаксис  

@@ -1,7 +1,7 @@
 ---
 title: Фрагменты кода Visual C# | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297418"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [фрагменты кода Visual C#](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Фрагменты кода — это готовые фрагменты кода, которые можно быстро вставлять в свой код. Например, фрагмент кода `for` создает пустой цикл `for`. Некоторые фрагменты кода являются окружающими, т. е. позволяют сначала выбрать строки кода, а затем фрагмент кода, в который будут включены выбранные строки. Например, если выбрать строки кода и затем активировать фрагмент кода `for`, будет создан блок цикла `for`, внутри которого будут находиться выбранные строки кода. Фрагменты кода ускоряют, упрощают написание программ и делают этот процесс более надежным.  
   
  Можно вставить фрагмент кода в месте расположения курсора или вставить окружающий фрагмент кода вокруг выделенного в данный момент кода. Меню вставки фрагмента кода вызывается с помощью команд **Вставить фрагмент кода** или **Окружить** из меню **IntelliSense** или с помощью сочетаний клавиш CTRL+K и затем X или CTRL+K и затем S, соответственно.  

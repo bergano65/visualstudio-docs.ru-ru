@@ -1,7 +1,7 @@
 ---
 title: Использование escape-последовательностей в текстовых шаблонах | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24e2629001d7c426193059175eab64ea0ab8dacf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be273c8cf69094a640ea7210bdbdc50005841a49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296547"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Использование escape-последовательностей в текстовых шаблонах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [с помощью escape-последовательностей в текстовых шаблонах](https://docs.microsoft.com/visualstudio/modeling/using-escape-sequences-in-text-templates).  
-  
 Можно использовать escape-последовательностей в текстовых шаблонов для создания тегов текстового шаблона и (в C# только для кода) для управления escape-символы и кавычки.  
   
  Чтобы распечатать открывающие и закрывающие теги для стандартного блока в выходном файле, escape-теги следующим образом:  

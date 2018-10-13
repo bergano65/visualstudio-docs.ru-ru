@@ -1,7 +1,7 @@
 ---
 title: Обзор диагностики графики Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2321e590591d6c3d80b41c58147820cf0248f403
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285744"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Обзор диагностики графики Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Общие сведения для диагностики графики Visual Studio](https://docs.microsoft.com/visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics).  
-  
 Visual Studio *диагностики графики* — это набор средств для регистрации и последующего анализа проблем отрисовки и производительности в приложениях Direct3D. Диагностику графики можно использовать для приложений, которые выполняются локально на компьютере под управлением Windows, в эмуляторе устройства Windows либо на удаленном компьютере или устройстве.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Использование диагностики графики для отладки проблемы отрисовки  
@@ -42,7 +40,7 @@ Visual Studio *диагностики графики* — это набор ср
  Windows 10 также продолжает поддерживать предыдущие версии Direct3D, а также основанные на них игры и приложения. Диагностика графики в Visual Studio 2015 продолжает поддерживать Direct3D 10 и Direct3D 11 в Windows 10, а также в Windows 8.1.  
   
 ### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 и Direct3D 11.2  
- В DirectX 11.2 в [!INCLUDE[win81](../includes/win81-md.md)] появились новые функции, поддерживающие захват графических данных во время выполнения. [!INCLUDE[win81](../includes/win81-md.md)] использует новый режим захвата во время выполнения, известный как *надежный захват*— исключительно для всех версий DirectX, [!INCLUDE[win81](../includes/win81-md.md)] поддерживает. Надежный захват также поддерживает новые возможности Direct3D 11.2.  
+ В DirectX 11.2 в [!INCLUDE[win81](../includes/win81-md.md)] появились новые возможности, поддерживающие захват графических данных во время выполнения. [!INCLUDE[win81](../includes/win81-md.md)] использует новый режим захвата во время выполнения, известный как *надежный захват*— исключительно для всех версий DirectX, [!INCLUDE[win81](../includes/win81-md.md)] поддерживает. Надежный захват также поддерживает новые возможности Direct3D 11.2.  
   
 ### <a name="limited-direct2d-support"></a>Ограниченная поддержка Direct2D  
  Поскольку Direct2D является API пользовательского режима, основанным на Direct3D, диагностику графики можно использовать для отладки проблем отрисовки в приложениях, использующих технологию Direct2D. Однако поскольку регистрируются только базовые события Direct3D, а не события Direct2D более высокого уровня, события Direct2D не будут отображаться в списке событий графики. Кроме того, поскольку связь между событиями Direct2D и результирующими событиям Direct3D не всегда очевидна, отладка проблем отрисовки в приложениях с Direct2D с помощью диагностики графики может быть не очень удобной. Тем не менее диагностику графики можно использовать для получения информации о низкоуровневых проблемах отрисовки в приложениях, использующих Direct2D.  

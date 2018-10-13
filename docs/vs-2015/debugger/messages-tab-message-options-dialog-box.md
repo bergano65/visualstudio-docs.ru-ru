@@ -1,7 +1,7 @@
 ---
 title: Вкладка "сообщения", диалоговое окно "Параметры сообщения" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8048c63ed9b9f049ed171002dfcc612fc9361569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298549"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Вкладка "Сообщения" диалогового окна "Параметры сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вкладка "сообщения", диалоговое окно "Параметры сообщения"](https://docs.microsoft.com/visualstudio/debugger/messages-tab-message-options-dialog-box).  
-  
 Используйте **сообщений** tab, чтобы выбрать список типов сообщений [представления сообщений](../debugger/messages-view.md)и для указания условий поиска сообщений. Для отображения [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), выберите **сообщений журнала** из **Spy** меню.  
   
  Как правило, сначала выберите **группы сообщений**и настраивать их выделение, выбрав отдельные **сообщения для просмотра**. **Все** кнопку выбора всех типов сообщений и **None** кнопка отменяет выделение всех типов.  

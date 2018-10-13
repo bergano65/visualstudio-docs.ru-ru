@@ -1,7 +1,7 @@
 ---
 title: Управление каналами | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48507f8133466c7ab48ba2992434c751a8e32014
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a12c6f58b383f5aa0301f826238839d265cdec2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269169"
 ---
 # <a name="manage-channels"></a>Управление каналами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [управление каналы](https://docs.microsoft.com/visualstudio/profiling/manage-channels).  
-  
 В представлении **Потоки** в визуализаторе параллелизма можно организовать для процесса каналы для изучения определенных шаблонов. Вы можете сортировать каналы, перемещать их вверх и вниз, скрывать и отображать.  
   
 ## <a name="sort-by"></a>Порядок сортировки  

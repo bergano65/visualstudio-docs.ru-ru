@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание элемента управления панели элементов, использующего Windows Forms | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: f052c881bc9ca7180d5d9132b1acd4377bf5f6da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263722"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms
-Шаблон элемента управления панели элементов Windows Forms, включенный в [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] позволяет создавать элементы управления Windows Forms, которые автоматически добавляются в **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления **панели элементов** , который можно передавать другим пользователям.  
+Шаблон элемента управления панели элементов Windows Forms, включенный в [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] , позволяет создавать элементы управления Windows Forms, которые автоматически добавляются в **панель элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления **панели элементов** , который можно передавать другим пользователям.  
   
 > [!NOTE]
 >  Чтобы узнать, как загрузить пакет SDK для Visual Studio, посетите [Центр по разработке для расширяемости Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) на веб-сайте MSDN.  

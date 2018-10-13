@@ -1,7 +1,7 @@
 ---
 title: Отладка многопоточных приложений в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff0030baec409ae54dc5ebb219f5419e583a0efd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298146"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Отладка многопоточных приложений в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio).  
-  
 Поток — это последовательность инструкций, которой операционная система выделяет время процессора. Каждый процесс, выполняющийся в операционной системе, состоит по крайней мере из одного потока. Процессы, имеющие более одного потока, называются многопоточными.  
   
  Компьютеры с несколькими процессорами или с многоядерными процессорами и Hyper-Threading-процессы могут выполнять несколько потоков в одно и то же время. Параллельная обработка нескольких потоков может значительно повысить производительность программы, но также может сделать отладку намного сложнее, так как появляется необходимость следить за несколькими потоками.  
@@ -114,7 +112,7 @@ ms.locfileid: "47570316"
   
 ## <a name="see-also"></a>См. также  
  [Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)   
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

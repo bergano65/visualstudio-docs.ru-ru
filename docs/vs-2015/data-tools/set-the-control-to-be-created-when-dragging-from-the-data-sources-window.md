@@ -1,7 +1,7 @@
 ---
 title: Задать для элемента управления создается при перетаскивании из окна "Источники данных" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d869f226206923a6e45646611b715786bfc5995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293687"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задать для элемента управления создается при перетаскивании из окна источников данных](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
-  
   
 Созданием элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окно конструктора WPF или Windows Forms. Каждый элемент в **источников данных** окно имеет элемент управления по умолчанию, который создается при перетаскивании в конструктор. Тем не менее вы можете создать другой элемент управления.  
   

@@ -1,7 +1,7 @@
 ---
 title: Конструкторы действий коллекций | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6188660725967c301f0d2a6ad838769b30f2f1eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9324c49cd05d82feab670ee3b0f9d4e261ca24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291997"
 ---
 # <a name="collection-activity-designers"></a>Конструкторы действий коллекций
 Конструкторы операций коллекции используются для создания и настройки действий, используемых для управления коллекциями. В подразделах, содержащихся в данном разделе и перечисленных в следующей таблице, содержатся указания по использованию конструкторов операций и шаблонов [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Свойства доменных свойств | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c1bd47ce583c790fdc90a4135184b21a932f449
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293115"
 ---
 # <a name="properties-of-domain-properties"></a>Свойства доменных свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства свойства домена](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-properties).  
-  
 Объект *свойства домена* — это функция элемента модели, который может содержать значение. Например, класс домена `Person` может иметь свойства `Name` и `BirthDate`. В определении доменного языка свойства домена перечислены в поле класса домена на схеме и в разделе класса домена в Обозревателе доменного языка. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).  
   
 > [!NOTE]

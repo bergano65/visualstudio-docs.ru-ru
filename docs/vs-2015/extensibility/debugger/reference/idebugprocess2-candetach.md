@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::CanDetach | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46a9a877269b3bdb56b9bfb8e8d8279de85ab25f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66ff1c80a8b0a82f38185e7c42fadda79a8fd63c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285601"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugProcess2::CanDetach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-candetach).  
-  
 Определяет, если диспетчер отладки сеансов (SDM) можно отсоединить процесс.  
   
 ## <a name="syntax"></a>Синтаксис  

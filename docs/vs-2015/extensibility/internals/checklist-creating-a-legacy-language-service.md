@@ -1,7 +1,7 @@
 ---
 title: 'Контрольный список: Создание языковой службы прежних версий | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d04e163e45c9a5932375ffec0f0e75ef8254cfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eaf68ccc9a40e0ead91ab6d46cde0ec2cf5cbce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242792"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [контрольный список: создание языковой службы прежних версий](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-a-legacy-language-service).  
-  
 Следующий контрольный список перечислены основные шаги, необходимые для создания службы языка для [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] базовым редактором. Чтобы интегрировать службы языка в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [записи вычислитель выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширения отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Инструкции по созданию языковой службы  

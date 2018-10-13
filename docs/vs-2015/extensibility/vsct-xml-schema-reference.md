@@ -1,7 +1,7 @@
 ---
 title: Справочник по схемам VSCT XML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293063"
 ---
 # <a name="vsct-xml-schema-reference"></a>Справочник по схемам XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по схемам XML VSCT](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference).  
-  
 Таблица элементов схемы компилятора таблицы команд, с допустимые дочерние элементы и атрибуты для каждого.  
   
  Файл конфигурации (.vsct) таблицы команд на основе XML определяет командных элементов, предоставляемых VSPackage интегрированной среде разработки (IDE). Эти элементы включают элементы меню, меню, панелей инструментов и поля со списком.  

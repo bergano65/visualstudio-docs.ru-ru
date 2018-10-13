@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отладка параллельного приложения | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279777"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Пошаговое руководство. Отладка параллельного приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отладка параллельного приложения](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
-  
 В этом пошаговом руководстве показано, как использовать **параллельных задач** и **Параллельные стеки** windows для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотеки параллельных задач (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) или [среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Показаны после прерывания выполнения программы, как использовать **параллельных задач** и **Параллельные стеки** windows, чтобы изучить его.  
   
  В этом пошаговом руководстве рассматриваются следующие задачи:  

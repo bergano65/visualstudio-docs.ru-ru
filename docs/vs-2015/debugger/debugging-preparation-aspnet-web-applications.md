@@ -1,7 +1,7 @@
 ---
 title: 'Подготовка к отладке: Веб-приложений ASP.NET | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292894"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Подготовка к отладке: веб-приложения ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Подготовка к отладке: веб-приложений ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Веб-сайт шаблон создает приложение веб-форму. При создании веб-узла с помощью этого шаблона [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] задает отладочные настройки по умолчанию. В **свойства проекта** диалоговом окне можно указать, следует ли веб-страницу стартовой. При запуске отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]веб-сайта с этими параметрами по умолчанию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускает Internet Explorer и присоединит отладчик к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] рабочий процесс (aspnet_wp.exe или w3wp.exe). Дополнительные сведения см. в разделе [требования к системе](../debugger/aspnet-debugging-system-requirements.md).  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Веб-сайт шаблон создает приложение веб-форму. При создании веб-узла с помощью этого шаблона [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] задает отладочные настройки по умолчанию. В **свойства проекта** диалоговом окне можно указать, следует ли веб-страницу стартовой. При запуске отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]веб-сайта с этими параметрами по умолчанию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускает Internet Explorer и присоединит отладчик к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] рабочий процесс (aspnet_wp.exe или w3wp.exe). Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Создание приложения Web Forms  
   

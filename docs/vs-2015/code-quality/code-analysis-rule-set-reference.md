@@ -1,7 +1,7 @@
 ---
 title: Справочник по набору правил анализа кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279166"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Справочник по набору правил анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Справочник по набору правил анализа кода](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference).  
-  
 При настройке анализа кода для проектов управляемого кода в [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], или [!INCLUDE[vsPro](../includes/vspro-md.md)]появится список встроенных *наборов правил*. Вы можете использовать один из стандартных наборов правил или настроить набор правил в соответствии с требованиями проекта.  
   
 ## <a name="available-rule-sets"></a>Доступные наборы правил  

@@ -1,7 +1,7 @@
 ---
 title: Доступ к Visual Studio или другим ведущим приложениям из текстового шаблона | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298484"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Обращение к Visual Studio или другим ведущим приложениям из текстового шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [доступ к Visual Studio или другие узлы из текстового шаблона](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template).  
-  
 В текстовом шаблоне, можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон, такой как [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Это относится к шаблонам обычный текст, не предварительно обработанных текстовых шаблонах.  

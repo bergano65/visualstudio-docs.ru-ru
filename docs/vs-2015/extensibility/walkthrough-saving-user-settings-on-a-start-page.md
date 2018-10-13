@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Сохранение пользовательских параметров на начальной странице | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283666"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Пошаговое руководство. Сохранение пользовательских параметров на начальной странице
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: сохранение параметров пользователя на начальной странице](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page).  
-  
 Можно сохранить пользовательские параметры для начальной страницы. Перечисленные в этом пошаговом руководстве, можно создать элемент управления, который сохраняет параметр в реестр, когда пользователь нажимает кнопку и затем получает задание каждый раз при загрузке страницы запуска. Шаблон проекта начальной страницы включает настраиваемый пользовательский элемент управления, и запустить страницу XAML по умолчанию вызывает этот элемент управления, у вас нет сам изменение начальной страницы.  
   
  Хранилище параметров, экземпляр которого создается в этом пошаговом руководстве является экземпляром класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> интерфейс, который считывает и записывает в следующий раздел реестра при вызове: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  

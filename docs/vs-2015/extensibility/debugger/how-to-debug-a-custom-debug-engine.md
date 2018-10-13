@@ -1,7 +1,7 @@
 ---
 title: 'Практическое руководство: Отладка пользовательского модуля отладки | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247238"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Практическое руководство. Отладка пользовательского модуля отладки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [How To: отладка механизм отладки пользовательских](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine).  
-  
 Тип проекта запускает отладчик (DE) из <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> метод. Это означает, что DE запускается под управлением экземпляра [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] управление типа проекта. Тем не менее этот экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] не удается выполнить отладку DE. Ниже описываются шаги, чтобы можно было отлаживать ваши пользовательские DE.  
   
 > [!NOTE]

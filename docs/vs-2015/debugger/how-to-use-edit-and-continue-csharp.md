@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Edit и Continue (C#) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4305c39c62dfcc927ea7295ceec786d3da40f56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 536a54958154a8ec4741ea979f70caf7183dbd12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298341"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Практическое руководство. Использование режима "Изменить и продолжить" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: изменить и продолжить (C#)](https://docs.microsoft.com/visualstudio/debugger/how-to-use-edit-and-continue-csharp).  
-  
 С помощью операции "Изменить и продолжить" для С# в процессе отладки можно вносить изменения в код в режиме приостановки выполнения. Изменения могут применяться без необходимости остановки и повторного запуска сеанса отладки.  
   
  Изменить и продолжить вызывается автоматически можно внести изменения в режиме приостановки выполнения, а затем выполнения отладчика команды, такие как **Продолжить**, **шаг**, или **задать следующий оператор**, или вычислите функцию в окне отладчика.  

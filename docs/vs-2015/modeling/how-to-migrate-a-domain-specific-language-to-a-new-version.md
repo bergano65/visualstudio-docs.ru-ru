@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: перенос доменного языка в новой версии | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad5204b4a90018d935028dc517c09ac608043c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269429"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: перенос доменного языка в новой версии](https://docs.microsoft.com/visualstudio/modeling/how-to-migrate-a-domain-specific-language-to-a-new-version).  
-  
 Вы можете перенести проекты, определение и использование предметно ориентированного языка для [!INCLUDE[vs2010](../includes/vs2010-md.md)] из версии [!INCLUDE[dsl](../includes/dsl-md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
   
  Средство миграции предоставляется как часть [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]. Средство преобразует [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проектов и решений, использующих или определите средства доменного языка.  

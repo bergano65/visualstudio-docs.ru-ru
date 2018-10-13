@@ -1,7 +1,7 @@
 ---
 title: Безопасность отладчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290502"
 ---
 # <a name="debugger-security"></a>Безопасность отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [безопасность отладчика](https://docs.microsoft.com/visualstudio/debugger/debugger-security).  
-  
 Возможность отладки других процессов предоставляет очень широкие возможности, которые отсутствуют при обычной работе. В особенности это относится к удаленной отладке. Злонамеренный отладчик способен причинить масштабные повреждения отлаживаемой машине.  
   
  Тем не менее, многие разработчики не осознают, что угроза безопасности может также распространяться и в обратном направлении. Вредоносный код в отлаживаемом процессе может подвергнуть опасности компьютер, на котором выполняется отладчик: есть ряд способов использования слабых мест защиты, против которых необходимо принимать меры.  
@@ -91,7 +89,7 @@ ms.locfileid: "47571225"
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
  [Предупреждение безопасности. Присоединение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Предупреждение о безопасности: отладчик должен выполнить команду, для которой не установлено доверие](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
 
 
 

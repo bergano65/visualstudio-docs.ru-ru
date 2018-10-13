@@ -1,7 +1,7 @@
 ---
 title: Уведомление порта | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81b27b4da563c01c809203690c05702530f58416
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263553"
 ---
 # <a name="notifying-the-port"></a>Уведомление порта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [уведомление порта](https://docs.microsoft.com/visualstudio/extensibility/debugger/notifying-the-port).  
-  
 После запуска программы, порт должен быть уведомлен, следующим образом:  
   
 1.  Порт, получив новый узел программы, он отправляет событие создания сеанса отладки. Событие несет с собой интерфейс, который представляет программу.  

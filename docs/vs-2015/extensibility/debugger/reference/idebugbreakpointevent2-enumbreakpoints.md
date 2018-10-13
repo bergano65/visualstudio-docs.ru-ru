@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointEvent2::EnumBreakpoints | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cc88853e24a40908c82748e4a811f86a58a37db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c3c6edbd29d8c12acb6ad4a7911f49315a64eea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295364"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugBreakpointEvent2::EnumBreakpoints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints).  
-  
 Создает перечислитель для всех точек останова, триггерами и текущей позиции кода.  
   
 ## <a name="syntax"></a>Синтаксис  

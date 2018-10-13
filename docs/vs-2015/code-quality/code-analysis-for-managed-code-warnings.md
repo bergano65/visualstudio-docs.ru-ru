@@ -1,7 +1,7 @@
 ---
 title: Анализ кода для предупреждений управляемого кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278919"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Анализ для предупреждений управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ кода для предупреждений управляемого кода](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
-  
 Средство анализа управляемого кода выдает предупреждения, указывающие на нарушение правил в библиотеках управляемого кода. Предупреждения организованы по областям правил, например проектирование, локализация, производительность и безопасность. Каждое предупреждение указывает на нарушение правила анализа управляемого кода. В этом разделе представлены подробные описания и примеры для каждого предупреждения анализа управляемого кода.  
   
  Следующая таблица показывает тип сведений, предоставляемых для каждого предупреждения.  
@@ -56,12 +54,12 @@ ms.locfileid: "47563657"
 |-|-|  
 |[Предупреждения по идентификатору CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Все предупреждения по идентификатору CheckId|  
 |[Предупреждения криптографии](../code-quality/cryptography-warnings.md)|Предупреждения, поддерживающие более безопасные библиотеки и приложения посредством правильного использования криптографии.|  
-|[Предупреждения конструктора](../code-quality/design-warnings.md)|Предупреждения, поддерживающие правильную структуру библиотеки в соответствии с [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] рекомендации по проектированию.|  
+|[Предупреждения конструктора](../code-quality/design-warnings.md)|Предупреждения, поддерживающие правильную структуру библиотеки в соответствии с рекомендациями по проектированию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|  
 |[Предупреждения глобализации](../code-quality/globalization-warnings.md)|Предупреждения, поддерживающие международные библиотеки и приложения.|  
 |[Предупреждения взаимодействия](../code-quality/interoperability-warnings.md)|Предупреждения, поддерживающие взаимодействие с COM-клиентами.|  
 |[Предупреждения удобства обслуживания](../code-quality/maintainability-warnings.md)|Предупреждения, поддерживающие сопровождение библиотек и приложений.|  
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|Предупреждения, поддерживающие эффективное энергопотребление.|  
-|[Предупреждения именования](../code-quality/naming-warnings.md)|Предупреждения, поддерживающие соблюдение соглашений об именовании из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] рекомендации по проектированию.|  
+|[Предупреждения именования](../code-quality/naming-warnings.md)|Предупреждения, поддерживающие соблюдение соглашений об именовании в соответствии с рекомендациями по проектированию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|  
 |[Предупреждения производительности](../code-quality/performance-warnings.md)|Предупреждения, поддерживающие высокоэффективные международные библиотеки и приложения.|  
 |[Portability Warnings](../code-quality/portability-warnings.md)|Предупреждения, поддерживающие возможность переноса между различными платформами.|  
 |[Предупреждения надежности](../code-quality/reliability-warnings.md)|Предупреждения, поддерживающие безотказность библиотек и приложений, например посредством правильного использования памяти и потоков.|  

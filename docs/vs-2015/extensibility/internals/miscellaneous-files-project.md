@@ -1,7 +1,7 @@
 ---
 title: Проект прочих файлов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdcbe1901deb472969c993b826660d03d12b2cf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dd7ce7dacfaa581d3b3757b33ad0d7af51d264
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258405"
 ---
 # <a name="miscellaneous-files-project"></a>Проект прочих файлов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [прочих файлов](https://docs.microsoft.com/visualstudio/extensibility/internals/miscellaneous-files-project).  
-  
 При открытии элементов проекта, интегрированная среда разработки присваивает проекта прочих файлов любые элементы, которые не являются членами всех проектов в решении.  
   
  Проекты играют важную роль при определении того, какой редактор используется в том случае, когда пользователь открывает элемент проекта. Проект может разрабатываться для открытия определенных файлов с помощью редактора определенного проекта или стандартного редактора.  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: используйте окно "Стек вызовов" | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271665"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Практическое руководство. Использование окна стека вызова
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [просмотреть стек вызовов в отладчике в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 С помощью **стек вызовов** окне можно просматривать вызовы функций и процедур, которые в настоящее время находятся в стеке.  
   
  **Стек вызовов** окне отображается имя каждой функции и язык программирования, который создается на языке. Имя функции или процедуры может сопровождаться дополнительной информацией, такой как имя модуля, номер строки, а также имена, типы и значения параметров. Отображение этих дополнительных сведений может быть включено или отключено.  

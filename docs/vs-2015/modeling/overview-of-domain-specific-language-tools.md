@@ -1,7 +1,7 @@
 ---
 title: Обзор средств доменных языков | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 694ebbc73b531f4fab1c8b2f9621e14f4145bd70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273264"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Обзор из доменного языка средства](https://docs.microsoft.com/visualstudio/modeling/overview-of-domain-specific-language-tools).  
-  
 Средства доменного языка (DSL Tools), который размещаются в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], позволяют проектировать доменный язык и создаст все, что пользователи должны иметь для создания моделей, основанных на языке.  
   
  Средства доменного языка включает следующие средства:  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использование окна потоков GPU | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a747ec02e8b47649e42ec8fcb600de97f549c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236812"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Практическое руководство. Использование окна потоков GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Просмотр потоки GPU в отладчике](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-gpu-threads-window).  
-  
 С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в разделе [Обзор C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  В окне "Потоки GPU" имеется таблица, каждая строка которой представляет набор потоков GPU, имеющих одинаковые значения в каждом столбце. Элементы, содержащиеся в столбцах, можно сортировать, переупорядочивать, удалять и группировать. С помощью окна "Потоки GPU" можно помечать потоки и снимать с них пометки, можно замораживать (приостанавливать) и размораживать (возобновлять) потоки. Окно "Потоки GPU" содержит следующие столбцы:  

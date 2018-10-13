@@ -1,7 +1,7 @@
 ---
 title: Новые возможности средств профилирования | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290164"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Что&#39;s средств профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [новые возможности профилирования](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Сведения о всех новых возможностях отладки и диагностики в Visual Studio 2015 с обновлением 1 см. в [заметках о выпуске Visual Studio 2015 с обновлением 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Информацию о новых возможностях отладки и диагностики в Visual Studio 2015 см. в [заметках о выпуске Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
@@ -42,7 +40,7 @@ ms.locfileid: "47559974"
  Теперь средства диагностики можно запустить во время отладки с помощью нового окна **Diagnostic Tools** (Средства диагностики). Это окно открывается автоматически, но его также можно открыть с помощью нового элемента меню **Показать средства диагностики** (сочетание клавиш **CTRL+ALT+F2**).  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Изменения в диагностике без использования пользовательского интерфейса отладки и в сочетаниях клавиш  
- Чтобы выполнить диагностику без отладки, перейдите к статье **отладка / средств Начать диагностику без отладки** или **отладка / Profiler / Profiler производительности...** . В Visual Studio 2013 этот элемент находился в **анализ / производительность и диагностика** или **отладка / производительность и диагностика**.  
+ Чтобы выполнить диагностику без отладки, перейдите к статье **отладка / средств Начать диагностику без отладки** или **отладка / Profiler / Profiler производительности...** . В Visual Studio 2013 этот элемент находился в меню **Анализ/Производительность и диагностика** или **Отладка/Производительность и диагностика**.  
   
  **Обозреватель производительности** теперь находится в меню **Отладка/Профилировщик/Обозреватель производительности**. В Visual Studio 2013 этот элемент находился в меню **Анализ/Профилировщик**.  
   

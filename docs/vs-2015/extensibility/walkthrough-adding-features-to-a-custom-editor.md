@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Добавление функций в специализированный редактор | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283066"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление функций в специализированный редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: добавление функций в специализированный редактор](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor).  
-  
 После создания настраиваемого редактора, можно добавить дополнительные функции к нему.  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>Чтобы создать редактор для VSPackage  
@@ -128,7 +126,7 @@ ms.locfileid: "47568931"
   
 13. Предоставляют объектную модель автоматизации из редактора, реализовав `IDispatch` интерфейс.  
   
-     Дополнительные сведения см. в разделе [участвующая в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md).  
+     Для получения дополнительной информации см. [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
   

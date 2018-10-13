@@ -1,7 +1,7 @@
 ---
 title: Рекомендации по написанию текстовых шаблонов T4 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5e9d2bfcd0e036f3775de768edff320dfcf44066
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272237"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Рекомендации по написанию текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [рекомендации по текстовым шаблонам T4 записи](https://docs.microsoft.com/visualstudio/modeling/guidelines-for-writing-t4-text-templates).  
-  
 Эти общие рекомендации могут быть полезны при создании программного кода или других ресурсов приложения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Они не являются фиксированными правилами.  
   
 ## <a name="guidelines-for-design-time-t4-templates"></a>Рекомендации для шаблонов времени разработки T4  

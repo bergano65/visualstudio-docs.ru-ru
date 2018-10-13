@@ -1,7 +1,7 @@
 ---
 title: Краткие сведения в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ba5d6d2c08d6b4d39efe9d662dda7a0e324cbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1dab76881ac7cd4fe5cba36ec79dc48f4c1ecf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250691"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Краткие сведения в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [краткие сведения в языковой службе прежних версий](https://docs.microsoft.com/visualstudio/extensibility/internals/quick-info-in-a-legacy-language-service).  
-  
 Краткие сведения IntelliSense отображаются сведения об идентификаторе в источнике, когда пользователь помещает курсор в идентификаторе и выбирает **краткие сведения** из **IntelliSense** меню или удерживает указатель мыши курсор над ним. В этом случае отображаются с информацией о идентификатор всплывающей подсказки. Эти сведения обычно состоит из идентификатора типа. Когда отладчик активен, эта информация может включать текущее значение. Модуль отладки предоставляет значения выражения, хотя языковая служба обрабатывает только идентификаторы.  
   
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение отображение подсказок](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
