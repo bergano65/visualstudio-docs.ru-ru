@@ -1,7 +1,7 @@
 ---
 title: Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок" | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c45ee51c36b589a88be3cff187038835134d316
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203272"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 8: написание кода для показа изображения обработчика событий кнопки](https://docs.microsoft.com/visualstudio/ide/step-8-write-code-for-the-show-a-picture-button-event-handler).  
-  
 На этом шаге выполняется создание кнопки **Показать рисунок**, которая работает следующим образом.  
   
 -   Когда пользователь нажимает эту кнопку, программа открывает диалоговое окно **Открыть файл**.  

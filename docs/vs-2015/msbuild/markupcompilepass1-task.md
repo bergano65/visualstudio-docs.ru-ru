@@ -1,7 +1,7 @@
 ---
 title: Задача MarkupCompilePass1 | Документация Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adef6f05be4c3c4bf24a3f5a232fff082ea69a2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189362"
 ---
 # <a name="markupcompilepass1-task"></a>Задача MarkupCompilePass1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [задача MarkupCompilePass1](https://docs.microsoft.com/visualstudio/msbuild/markupcompilepass1-task).  
-  
   
 Задача <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> преобразует нелокализуемые файлы проекта [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] в скомпилированный двоичный формат.  
   
@@ -44,7 +42,7 @@ ms.locfileid: "47557946"
 |Параметр|Описание|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит полный список файлов, созданных задачей <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>.|  
-|`AlwaysCompileMarkupFilesInSeparateDomain`|Необязательный параметр типа **Boolean**.<br /><br /> Указывает, следует ли запускать задачу в отдельном <xref:System.AppDomain>. Если этот параметр возвращает **false**, задача выполняется в том же <xref:System.AppDomain>, что и [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]. Это позволяет выполнить задачу быстрее. Если этот параметр возвращает значение **true**, то задача выполняется во втором <xref:System.AppDomain>, который изолирован от [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] и работает медленнее.|  
+|`AlwaysCompileMarkupFilesInSeparateDomain`|Необязательный параметр **Boolean** .<br /><br /> Указывает, следует ли запускать задачу в отдельном <xref:System.AppDomain>. Если этот параметр возвращает **false**, задача выполняется в том же <xref:System.AppDomain>, что и [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]. Это позволяет выполнить задачу быстрее. Если этот параметр возвращает значение **true**, то задача выполняется во втором <xref:System.AppDomain>, который изолирован от [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] и работает медленнее.|  
 |`ApplicationMarkup`|Необязательный параметр **ITaskItem[]**.<br /><br /> Задает имя файла определения приложения [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
 |`AssembliesGeneratedDuringBuild`|Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые изменяются в процессе сборки. Например, решение [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] может содержать один проект, который ссылается на выходные данные компиляции другого проекта. В этом случае выходные данные компиляции второго проекта можно добавить в параметр **AssembliesGeneratedDuringBuild**.<br /><br /> Примечание. Параметр **AssembliesGeneratedDuringBuild** должен содержать ссылки на полный набор сборок, созданных решением сборки.|  
 |`AssemblyName`|Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] с именем **WinExeAssembly.exe**, то параметр **AssemblyName** имеет значение **WinExeAssembly**.|  
@@ -70,7 +68,7 @@ ms.locfileid: "47557946"
 |`RootNamespace`|Необязательный параметр типа **String**.<br /><br /> Задает корневое пространство имен для классов, которые находятся внутри проекта. **RootNamespace** также используется как пространство имен по умолчанию для созданного файла управляемого кода, если соответствующий файл [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] не содержит атрибут `x:Class`.|  
 |`SourceCodeFiles`|Необязательный параметр **ITaskItem[]**.<br /><br /> Задает список файлов кода для текущего проекта. В этот список не входят файлы управляемого кода, созданные для определенного языка.|  
 |`UICulture`|Необязательный параметр типа **String**.<br /><br /> Задает вспомогательную сборку для языка и региональных параметров пользовательского интерфейса, в которую внедряются созданные двоичные файлы [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. Если значение для **UICulture** не задано, созданные двоичные файлы [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] внедряются в основную сборку.|  
-|`XAMLDebuggingInformation`|Необязательный параметр типа **Boolean**.<br /><br /> Если он имеет значение **true**, для помощи в отладке создается диагностическая информация, которая помещается в скомпилированный элемент [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
+|`XAMLDebuggingInformation`|Необязательный параметр **Boolean** .<br /><br /> Если он имеет значение **true**, для помощи в отладке создается диагностическая информация, которая помещается в скомпилированный элемент [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
   
 ## <a name="remarks"></a>Примечания  
  Задача <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> обычно компилирует [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] в двоичный формат и создает файлы кода. Если файл [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] содержит ссылки на типы, заданные в том же самом проекте, его компиляция в двоичный формат откладывается **MarkupCompilePass1** до второго этапа компиляции разметки (**MarkupCompilePass2**). Компиляция таких файлов должна быть отложена, так как им необходимо дождаться компиляции локально определенных типов, на которые имеются ссылки. Однако, если в файле [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] есть атрибут `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> создает для него языковую версию файла кода.  

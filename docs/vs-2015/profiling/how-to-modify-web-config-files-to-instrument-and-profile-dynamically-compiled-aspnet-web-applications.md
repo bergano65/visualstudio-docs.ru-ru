@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176310"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: изменение файлов Web.Config для инструментирования и профиль динамически скомпилированные веб-приложений ASP.NET](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
  В этом разделе описывается внесение изменений в файл конфигурации web.config для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -148,7 +146,7 @@ ms.locfileid: "47570255"
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**значение**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
   
@@ -157,7 +155,7 @@ ms.locfileid: "47570255"
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**значение**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` — это путь к исполняемым файлам профилировщика. Если [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установлен в папку по умолчанию, значением будет **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**.  
   

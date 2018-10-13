@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38702e7f296640ff43caeb18380aad95636df30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4362db36cb4b4695b667fc680dad58ce4092eced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571294"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178013"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: инструментирования профилирования с помощью командной строки](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-instrumentation).  
-  
 Это пошаговое руководство описывает профилирование автономного приложения [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] для сбора подробных сведений о времени и количестве вызовов с помощью метода инструментирования средств профилирования. В этом пошаговом руководстве выполняются следующие задачи:  
   
 -   использование программы командной строки [VSInstr](../profiling/vsinstr.md) для создания инструментированных двоичных файлов;  

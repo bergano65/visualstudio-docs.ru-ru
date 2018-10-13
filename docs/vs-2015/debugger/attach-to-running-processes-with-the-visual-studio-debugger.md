@@ -1,7 +1,7 @@
 ---
 title: Присоединение к выполняемым процессам с помощью отладчика Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d0f92e857122b0fe23f5f1afe80b4d86f8b8af7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176778"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ ms.locfileid: "47570260"
 
 ## <a name="additional-info"></a>Дополнительные сведения
 
-Во время отладки можно подключиться к нескольким программам, но в любой момент времени только одна из них активна в отладчике. Можно выбрать текущую программу в панели инструментов **Место отладки** или окне **Процессы** . Дополнительные сведения см. в разделе [как: Установка текущей программы](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Во время отладки можно подключиться к нескольким программам, но в любой момент времени только одна из них активна в отладчике. Можно выбрать текущую программу в панели инструментов **Место отладки** или окне **Процессы** . Дополнительные сведения см. в разделе [Практическое руководство: Установка текущей программы](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
 Если попытаться подключиться к процессу, работающему под управлением ненадежной учетной записи, появится диалоговое окно подтверждения с предупреждением безопасности. Дополнительные сведения см. в разделе [предупреждение системы безопасности: присоединение к процессу, принадлежит недоверенному пользователю не может быть опасно. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
@@ -138,10 +138,10 @@ ms.locfileid: "47570260"
 |Отладка приложения универсальной Windows (UWP), OneCore, HoloLens и IoT, вы не запускали из Visual Studio|Отладка установленного пакета приложения|Н/Д|Используйте **отладка: другие целевые объекты отладки / Debug пакет установленные приложения** вместо **присоединение к процессу**|
   
 > [!WARNING]
->  Для присоединения к универсальному приложению Windows, которое написано на JavaScript, сначала необходимо включить отладку для приложения. См. в разделе [подключить отладчик](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) в центре разработки для Windows.  
+>  Для присоединения к универсальному приложению Windows, которое написано на JavaScript, сначала необходимо включить отладку для приложения. См. раздел [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) в Центре разработчика Windows.  
   
 > [!NOTE]
->  Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически путем связывания с [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) параметр компоновщика.
+>  Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) компоновщика.
 
 ## <a name="what-debugger-features-can-i-use"></a>Какие возможности отладчика можно использовать?
 
@@ -183,7 +183,7 @@ ms.locfileid: "47570260"
 ## <a name="see-also"></a>См. также  
  [Отладка нескольких процессов](../debugger/debug-multiple-processes.md)   
  [Отладка Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

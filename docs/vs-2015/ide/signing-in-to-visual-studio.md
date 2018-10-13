@@ -1,7 +1,7 @@
 ---
 title: Вход в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6caed797e739b04d356adcc042cbe437d19cb515
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cf27eea0b51750651e5511344f1a83820632609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185436"
 ---
 # <a name="signing-in-to-visual-studio"></a>Вход в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [вход в Visual Studio](https://docs.microsoft.com/visualstudio/ide/signing-in-to-visual-studio).  
-  
 Процесс разработки в Visual Studio можно оптимизировать и персонализировать, если настроена учетная запись персонализации при входе в среду IDE.  
   
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Почему нужно выполнять вход в Visual Studio?  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio и Xamarin | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a45ce4e6f319dffbb59f8f2040ad815f0e01e71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199580"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio и Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Visual Studio и Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-and-xamarin).  
-  
   
 Xamarin — это платформа разработки мобильных приложений для создания нативных приложений iOS, Android и Windows из общего кода C# или .NET, которая позволяет многократно использовать между платформами от 75 % до почти 100 % кода. Приложения, написанные с помощью Xamarin и C#, имеют полный доступ к интерфейсам API базовой платформы и возможность создавать собственные пользовательские интерфейсы, а также компилировать код в пакеты конкретных платформ, поэтому влияние на производительность во время выполнения является незначительным. (Примечание. Xamarin также поддерживает F#, но в этой документации основное внимание уделяется C#. Visual Basic пока не поддерживается.)  
   

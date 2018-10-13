@@ -1,7 +1,7 @@
 ---
 title: Службы Windows Communication Foundation и WCF Data Services в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1a26e3a119f89f89ea71997b1463bc8d3fa8daf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b6ddc1d0e8e3a3caaee89547874e9e38115a17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194692"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [службы Windows Communication Foundation и WCF Data Services в Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio).  
-  
   
 Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные служб из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).  
   

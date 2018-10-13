@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использование визуализатора дерева WPF | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e99bdaac9feb343c594e808433d686e5d607b45
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c8eb0bae29db30c5ba3a305707d886b01b5c34d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188341"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Практическое руководство. Использование визуализатора дерева WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: использование визуализатора дерева WPF](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-wpf-tree-visualizer).  
-  
 Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьях см. в разделе [деревья в WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
  При открытии визуализатора дерева WPF отобразятся две панели: **визуального дерева** в левой части и **свойства** _имя_**:**  _Тип_ на правой панели. Выберите любой объект в **визуального дерева** области и **свойства** _имя_**:**_тип_ область автоматически обновляется для отображения свойств для этого объекта.  

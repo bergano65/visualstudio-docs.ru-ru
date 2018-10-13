@@ -1,7 +1,7 @@
 ---
 title: Создание категории параметров | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91c46e5a222526dd68d98be0c855067cd96b10f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1a59e2c185460ffd9b9326c8458681f5953de76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186153"
 ---
 # <a name="creating-a-settings-category"></a>Создание категории параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Creating a Settings Category](https://docs.microsoft.com/visualstudio/extensibility/creating-a-settings-category).  
-  
 В этом пошаговом руководстве вы создать категорию параметров Visual Studio и использовать его для сохранения значений и восстановить значения из файла параметров. Категория параметров — это группа связанных свойств, которые отображаются в виде «точки настраиваемых параметров;» то есть как флажок в **Импорт и экспорт параметров** мастера. (Его можно найти на **средства** меню.) Параметры будут сохранены или восстановлены как категория, и отдельные параметры не отображаются в мастере. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Создание категории параметров, производный от класса <xref:Microsoft.VisualStudio.Shell.DialogPage> класса.  

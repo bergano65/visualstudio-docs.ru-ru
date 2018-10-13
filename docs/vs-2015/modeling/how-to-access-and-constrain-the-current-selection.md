@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: и текущее выделение ограничение доступа к | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187581"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Практическое руководство. Предоставление и ограничение доступа к текущему выделению
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: и текущее выделение ограничение доступа к](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection).  
-  
 При написании обработчика команды или жеста для вашего доменного языка, можно определить, какой элемент пользователь щелкнул правой кнопкой мыши. Можно также предотвратить некоторые формы или поля выбора. Например можно упорядочить, что когда пользователь щелкает значок декоратор, фигура, содержащая его вместо него будет выбран. Ограничение выбора таким образом уменьшает количество обработчиков, которые необходимо написать. Он также упрощает для пользователей, потому что можно щелкните в любом месте фигуры без необходимости избежать декоратора.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>Доступ к текущее выделение из обработчика команд  
@@ -43,10 +41,10 @@ ms.locfileid: "47571346"
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Возвращает `true` Если диаграммы, выбранных в конструкторе моделей, в противном случае — `false`.|  
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в конструкторе моделей, в противном случае — `false`.|  
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в активном окне; в противном случае `false`.|  
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|  
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|  
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Получает основной элемент выделения в конструкторе моделей.|  
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Получает основной элемент выделения в активном окне.|  
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|  
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|  
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> |Получает основной элемент выделения в конструкторе моделей.|  
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> |Получает основной элемент выделения в активном окне.|  
   
 2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класс предоставляет доступ к <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> объект, представляющий окно конструктора моделей и предоставляет дополнительный доступ выбранных элементов в конструкторе моделей.  
   

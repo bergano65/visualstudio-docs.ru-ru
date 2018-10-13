@@ -1,7 +1,7 @@
 ---
 title: Шаг 7. Добавление задач на умножение и деление | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83c85dfdca66e9df3634f84795042b331bf3f760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c0c2b069ebb75cbe4547528317544172b1d7ae2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195160"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 7: Добавление умножение и деление](https://docs.microsoft.com/visualstudio/ide/step-7-add-multiplication-and-division-problems).  
-  
 В седьмой части этого учебника вам предстоит добавить задачи на умножение и деление. Сначала, однако, необходимо подумать, как внести это изменение. Рассмотрим начальный шаг, который предполагает сохранение значений.  
   
 ### <a name="to-add-multiplication-and-division-problems"></a>Добавление задач на умножение и деление  

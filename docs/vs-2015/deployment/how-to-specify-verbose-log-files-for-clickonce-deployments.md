@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Указание подробных файлов журнала для развертываний ClickOnce | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b30260267fca5b7de16316e84082fc3b464f7deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27efe283c8484412cc5d3c697560a393b3eddbc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171813"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: укажите подробных файлов журнала для развертываний ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-verbose-log-files-for-clickonce-deployments).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся подробные сведения, относящиеся к установке, инициализации, обновление и удаление [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания. Для более подробной информации, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] операции записи в файлы журнала, используйте редактор реестра (**regedit.exe**) для указания уровня детализации.  
   
 > [!CAUTION]

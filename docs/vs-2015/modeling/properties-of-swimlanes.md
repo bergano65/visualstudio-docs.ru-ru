@@ -1,7 +1,7 @@
 ---
 title: Свойства дорожек | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd274d1de99ab4a9dac6dd6c045ef6d313fe9bb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189940"
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства из дорожки](https://docs.microsoft.com/visualstudio/modeling/properties-of-swimlanes).  
-  
 Дорожки можно добавить в диаграмму. Дорожки разделить схему на вертикальной или горизонтальной области. Можно определить другие фигуры, для отображения внутри дорожки. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Дорожки имеют свойства, которые перечислены в следующей таблице.  

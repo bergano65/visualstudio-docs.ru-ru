@@ -1,7 +1,7 @@
 ---
 title: '&lt;Строки&gt; элемент (загрузчик) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76946d04bb8afbe70c599516fc110fcccc8f87c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bd559054202d59fd4ca035b7d72cd89a872c544
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177363"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (установщик)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ &lt;строки&gt; элемент (загрузчик)](https://docs.microsoft.com/visualstudio/deployment/strings-element-bootstrapper).  
-  
 Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.  
   
 ## <a name="syntax"></a>Синтаксис  

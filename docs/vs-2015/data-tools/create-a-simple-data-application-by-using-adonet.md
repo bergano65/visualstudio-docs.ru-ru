@@ -1,7 +1,7 @@
 ---
 title: Создание приложения простой данных с помощью ADO.NET | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204313"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание приложения простой данных с помощью ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Создание простых данных приложения с помощью ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 При создании приложения, которое работает с данными в базе данных, необходимо выполнить такие основные задачи, как определение строк подключения, вставка данных и выполнение хранимых процедур. Перечисленные в этом разделе, вы можете узнать, как взаимодействовать с базой данных из простого приложения Windows Forms «формы поверх данных» с помощью Visual C# или Visual Basic и ADO.NET.  Все технологии данных .NET, включая наборы данных, LINQ to SQL и Entity Framework — в конечном счете выполните действия, которые очень похожи тем, что показано в этой статье.  
   
@@ -221,7 +219,7 @@ ms.locfileid: "47563755"
   
     |Комментарий|Описание|  
     |-------------|-----------------|  
-    |Util-1|Добавление `System.Configuration` пространства имен.|  
+    |Util-1|Добавление пространства имен `System.Configuration`|  
     |Util-2|Определение переменной `returnValue` и ее инициализация значением `null` (C#) или `Nothing` (Visual Basic).|  
     |Util-3|Несмотря на то, что вы ввели `connString` как имя строки подключения в **свойства** окно, необходимо указать `"SimpleDataApp.Properties.Settings.connString"` (C#) или `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) в коде.|  
   

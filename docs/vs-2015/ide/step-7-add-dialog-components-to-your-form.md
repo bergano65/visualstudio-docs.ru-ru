@@ -1,7 +1,7 @@
 ---
 title: Шаг 7. Добавление компонентов диалогового окна в форму | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192950"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Шаг 7. Добавление компонентов Dialog в форму
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [шаг 7: Добавление компонентов диалогового окна в форму](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form).  
-  
 Чтобы программа могла открывать графические файлы и изменять цвет фона, на данном шаге следует добавить в форму компоненты **OpenFileDialog** и **ColorDialog**.  
   
  В некотором смысле компонент похож на элемент управления. Для добавления компонента в форму используется панель элементов, его свойства настраиваются в окне **Свойства**. Но в отличие от элемента управления, добавление в форму компонента не добавляет в форму элемент, который может видеть пользователь. Вместо этого, компонент предоставляет определенное поведение, которое можно включать в коде. Это компонент, который открывает диалоговое окно **Открыть файл**.  

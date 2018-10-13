@@ -1,7 +1,7 @@
 ---
 title: Отладка рабочих процессов с удаленного компьютера (для прежних версий) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 458f5d2a8d2be83f465f9b96ac9ff9dd1eca2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b3627b6d62b1f4d237c2f2013d332be56b58fc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191599"
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Отладка рабочих процессов с удаленного компьютера (для прежних версий)
 В данном разделе описывается отладка удаленных приложений [!INCLUDE[wf](../includes/wf-md.md)] более ранней версии, построенных с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии. Используйте средство [!INCLUDE[wfd2](../includes/wfd2-md.md)] более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

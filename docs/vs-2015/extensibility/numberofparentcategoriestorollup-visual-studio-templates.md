@@ -1,7 +1,7 @@
 ---
 title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a6316fa5edb358d6faecd85561c27d6eee131ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32806124c556ff389b3451d9c74ff72ce3a0ef78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188259"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/numberofparentcategoriestorollup-visual-studio-templates).  
-  
 Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
   
  \<VSTemplate >  

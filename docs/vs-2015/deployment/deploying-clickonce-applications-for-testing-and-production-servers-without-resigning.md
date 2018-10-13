@@ -1,7 +1,7 @@
 ---
 title: Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 384292be2f08eef453dba5623783ef8865107d54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180223"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развертывание ClickOnce приложений для тестирования и рабочих серверов без Resigning](https://docs.microsoft.com/visualstudio/deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning).  
-  
 В этом разделе описана новая функция ClickOnce, введенная в .NET Framework версии 3.5, которая включает развертывание приложений ClickOnce из нескольких мест сети без повторного подписывания приложения ClickOnce или манифесты.  
   
 > [!NOTE]

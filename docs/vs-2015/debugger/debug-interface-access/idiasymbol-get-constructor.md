@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_constructor | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b824a210f122cfd8af1759ee4f426b1a0a40331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2e42e024cf2f1b5a367b8065eef69285e05fbf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206041"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaSymbol::get_constructor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-constructor).  
-  
 Получает флаг, указывающий, имеет ли тип пользовательских данных, конструктор или деструктор.  
   
 ## <a name="syntax"></a>Синтаксис  

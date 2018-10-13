@@ -1,7 +1,7 @@
 ---
 title: Отладка приложений ASP.NET и AJAX | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81ca66b7f7d4dde596b465211cb92cec5e695ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205209"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Отладка приложений ASP.NET и AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [приложений отладки ASP.NET и AJAX](https://docs.microsoft.com/visualstudio/debugger/debugging-aspnet-and-ajax-applications).  
-  
 Отладка веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] подобна отладке приложений Windows Form или отладке любого другого приложения Windows, поскольку оба типа приложений содержат элементы управления и события. Однако существуют основные различия между двумя типами приложений:  
   
 -   Выполнять отслеживание состояния более сложно, чем в веб-приложении.  
@@ -53,7 +51,7 @@ ms.locfileid: "47571288"
  [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)  
  Объясняется, почему для отладки исключений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] должен быть включен режим "Только мой код".  
   
- [Отладка и трассировка Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Обсуждаются некоторые методы и средства, которые могут помочь в отладке кода AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

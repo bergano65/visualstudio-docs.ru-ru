@@ -1,7 +1,7 @@
 ---
 title: Вспомогательные средства просмотра символов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c406cdf7b975e37522bccc0d45687593b1a35ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187321"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства просмотра символов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средства просмотра символов, которые поддерживают](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools).  
-  
 **Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства просмотра представлений иерархическом дереве символов и отображения связей между символы в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальных элементов языка, содержащиеся в различных компонентов. Компоненты включают проекты Visual Studio, внешних [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] компоненты и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).  
   
 ## <a name="symbol-browsing-libraries"></a>Библиотеки просмотра символов  

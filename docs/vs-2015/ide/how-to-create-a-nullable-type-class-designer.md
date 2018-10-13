@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов) | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179430"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: создать тип, допускающий значение NULL (конструктор классов)](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Определенные типы значений не всегда имеют или требуют определенное значение. Это распространенная практика в базах данных, где некоторым полям нельзя назначить любое значение. Например, полю базы данных можно присвоить значение NULL, чтобы указать, что ему еще не было назначено значение.  
   
  *Тип, допускающий значение NULL* является типом значений, который можно расширить, чтобы он принял стандартный набор значений для этого типа, а также значение NULL. Например, для допускающего значение NULL `Int32`, который также обозначается как Nullable\<Int32>, можно назначить любое значение от -2 147 483 648 до 2 147 483 647 или значение NULL. Для Nullable\<bool> можно назначить значения `True`, `False` или NULL (без значения).  

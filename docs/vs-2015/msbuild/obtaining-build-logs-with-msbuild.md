@@ -1,7 +1,7 @@
 ---
 title: Получение журналов построения с помощью MSBuild | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6d3981b2c671eda2a121f698835dd7932894bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176011"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Получение журналов построения с помощью MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [получение журналов сборки с помощью MSBuild](https://docs.microsoft.com/visualstudio/msbuild/obtaining-build-logs-with-msbuild).  
-  
   
 С помощью параметров MSBuild можно указать объем данных сборки для проверки и необходимость сохранения данных сборки в один или несколько файлов. Можно также указать пользовательское средство ведения журналов для сбора данных сборки. Сведения о параметрах командной строки MSBuild, не рассматриваемых в этом разделе, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
   

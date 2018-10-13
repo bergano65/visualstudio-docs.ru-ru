@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource::get_objectFilename | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4bfe0076614b58739fbc8a00599f66021b2e80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6c27b631beb0165548087156f2d6c0c9cf7558e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176589"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDiaInjectedSource::get_objectFilename](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-objectfilename).  
-  
 Извлекает имя объектного файла, к которому был скомпилирован источника.  
   
 ## <a name="syntax"></a>Синтаксис  

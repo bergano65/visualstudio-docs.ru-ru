@@ -1,7 +1,7 @@
 ---
 title: Справочник по пользовательскому интерфейсу отладчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8059274914093f0beaa22b3e4841c7b2cf44e6a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d872d338bd44a561b71266243a07faa607bdcdaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206327"
 ---
 # <a name="debugging-user-interface-reference"></a>Справочник по пользовательскому отладочному интерфейсу
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладки Справочник по пользовательскому интерфейсу](https://docs.microsoft.com/visualstudio/debugger/debugging-user-interface-reference).  
-  
 Во время выполнения отладки приложения могут отобразиться следующие диалоговые окна.  
   
  С помощью модели расширения среды Visual Studio можно автоматизировать многие возможности отладчика. Дополнительные сведения см. в разделе "Пакет SDK для отладки Visual Studio".  

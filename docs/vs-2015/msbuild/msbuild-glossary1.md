@@ -1,7 +1,7 @@
 ---
 title: MSBuild Glossary1 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7cb29382e832136def16456dd1df83ab63e0fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8142f5cf6afdc252a3a00ca94983ffe94be1fb67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199996"
 ---
 # <a name="msbuild-glossary1"></a>MSBuild Glossary1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [глоссарий MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-glossary).  
-  
   
 Эти термины используются для описания платформы Microsoft Build Engine (MSBuild) и ее компонентов.  
   

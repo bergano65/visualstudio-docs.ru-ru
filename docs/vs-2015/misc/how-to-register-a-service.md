@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: регистрация службы | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: douge
-ms.openlocfilehash: a242a13893c7cd303adfe266c9609b7a71d251ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206262"
 ---
 # <a name="how-to-register-a-service"></a>Практическое руководство. Регистрация службы
 Платформа Managed Package Framework (MPF) предоставляет атрибуты для управления регистрацией управляемых служб. Служебная программа RegPkg использует эти атрибуты для регистрации службы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -30,7 +30,7 @@ ms.locfileid: "47561930"
  [!code-csharp[VSSDKRegisterService#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#1)]
  [!code-vb[VSSDKRegisterService#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#1)]  
   
- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> Регистрирует службу SMyGlobalService [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения о <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> и <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+ <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> регистрирует службу SMyGlobalService в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения о <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> и <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
  Чтобы зарегистрировать службу, которая заменяет другую службу с тем же именем, используйте <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> вместо <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "47561930"
  [!code-csharp[VSSDKRegisterService#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#2)]
  [!code-vb[VSSDKRegisterService#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#2)]  
   
- <xref:System.Runtime.InteropServices.ComVisibleAttribute> Необходим для получения интерфейса из неуправляемого кода.  
+ Атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> необходим для получения интерфейса из неуправляемого кода.  
   
 > [!NOTE]
 >  Хотя можно использовать один и тот же тип или идентификатор GUID как для службы, так и для интерфейса, мы рекомендуем разделять их, так как служба может предоставлять различные интерфейсы.  

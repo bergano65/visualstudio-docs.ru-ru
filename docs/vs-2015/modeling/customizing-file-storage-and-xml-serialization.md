@@ -1,7 +1,7 @@
 ---
 title: Настройка хранилища файлов и XML-сериализации | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183024"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Настройка хранилища файлов и XML-сериализации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка хранилища файлов и XML-сериализации](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Когда пользователь сохраняет экземпляр, или *модели*, доменного языка (DSL) в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], создается или обновляется в XML-файл. Файл может быть перезагружен для повторного создания модели в Store.  
   
  Вы можете настроить схему сериализации, Настройка параметров в разделе **поведение сериализации Xml** в обозревателе DSL. Узел в разделе **поведение сериализации Xml** для каждого доменного класса, свойства и отношения. Связи находятся в своих классов источника. Кроме того, существуют также узлы, соответствующие фигуры, соединителя и схемы классов.  

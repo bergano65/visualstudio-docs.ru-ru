@@ -1,7 +1,7 @@
 ---
 title: команды MenuCommand и OleMenuCommands | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: b60f56c0622750751848e0d6492c4235c9458e9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193587"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
 Вы можете создавать команды меню на основе объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализовывать соответствующие обработчики событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -71,7 +71,7 @@ ms.locfileid: "47559552"
      
     1.  Задайте поля `guid` и `id` , чтобы они соответствовали GUID:ID новой команды.  
   
-    2.  Задайте атрибут `priority` .  
+    2.  Задайте атрибут `priority`.  
   
          Атрибут `priority` используется VSCT-файлом для определения расположения кнопки среди других объектов в родительской группе.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "47559552"
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
-     Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand> . Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+     Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand>. Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Команды, созданные шаблоном проекта, по умолчанию передаются в объект <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> метода `Initialize()` класса пакета.  
   
@@ -210,7 +210,7 @@ ms.locfileid: "47559552"
   
 1.  Получите <xref:Microsoft.VisualStudio.VSConstants.S_OK> для допустимых команд.  
   
-2.  Задайте элемент `cmdf` параметра `prgCmds` .  
+2.  Задайте элемент `cmdf` параметра `prgCmds`.  
   
      Значение элемента `cmdf` — это логическое объединение значений из перечисления <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> с помощью логического оператора ИЛИ (`|`).  
   
@@ -238,7 +238,7 @@ ms.locfileid: "47559552"
   
          `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   Если команда использует флаг `TEXTCHANGES` , задайте в элементе `rgwz` параметра `pCmdText` новый текст команды, а в элементе `cwActual` параметра `pCmdText` — размер командной строки.  
+    -   Если команда использует флаг `TEXTCHANGES`, задайте в элементе `rgwz` параметра `pCmdText` новый текст команды, а в элементе `cwActual` параметра `pCmdText` — размер командной строки.  
   
      В состояниях ошибок метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> должен обрабатывать следующие ошибки.  
   

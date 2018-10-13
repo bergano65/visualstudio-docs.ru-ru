@@ -1,7 +1,7 @@
 ---
 title: Импорт проекта XCode | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 793702d2d4c2f688f62fc956648d7df811b4b87d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 792107fca4aab5390101b8be64b4ea2d1c4f286a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175582"
 ---
 # <a name="import-an-xcode-project"></a>Импорт проекта XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Импорт проекта XCode](https://docs.microsoft.com/visualstudio/cross-platform/import-an-xcode-project).  
-  
   
 Microsoft Visual C++ для разработки кроссплатформенных мобильных приложений позволяет переносить в Visual Studio проекты XCode. После переноса проекта вы сможете создать кроссплатформенные библиотеки и совместно использовать код в нескольких проектах. Мастер импорта из XCode упрощает процесс импорта проектов и отделение кода C++ в целевых объектах XCode для использования в качестве статической библиотеки или проекта общего кода. Вы можете управлять своим кодом, связанным с iOS, в Visual Studio и по-прежнему использовать XCode для раскадровки и сборки проекта. Сведения о том, как легко переместить код между Visual Studio и XCode см. в разделе "Перенос изменений в коде между XCode и Visual Studio".  
   

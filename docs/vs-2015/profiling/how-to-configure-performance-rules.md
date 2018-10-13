@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Настройка правил производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d44958cc52be8d9a16d7600d74af6f68baa2e552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2131a2857c5611f1653d305f63c07fcca1a3953f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199619"
 ---
 # <a name="how-to-configure-performance-rules"></a>Практическое руководство. Настройка правил производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Настройка правил производительности](https://docs.microsoft.com/visualstudio/profiling/how-to-configure-performance-rules).  
-  
 В предупреждении о производительности средств профилирования Visual Studio указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для сбора более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Некоторые предупреждения могут не соответствовать интересующим вас сценариям, а другие могут быть созданы ошибочно. Можно настроить вывод или блокировку конкретных предупреждений о производительности.  
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Настройка предупреждений о производительности профилировщика  

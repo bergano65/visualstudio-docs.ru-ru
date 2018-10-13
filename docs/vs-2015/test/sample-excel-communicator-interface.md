@@ -1,7 +1,7 @@
 ---
 title: Пример интерфейса коммуникатора в Excel | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a1f544734cd00361162c461cd2b1682204075e10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ffbfe7c8d69ecca2ff90dc1d01af2eb15d7d277
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194445"
 ---
 # <a name="sample-excel-communicator-interface"></a>Пример интерфейса коммуникатора в Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [пример интерфейса коммуникатора в Excel](https://docs.microsoft.com/visualstudio/test/sample-excel-communicator-interface).  
-  
 Пример интерфейса `IExcelUICommunication` используется в объекте `ExcelUICommunicator` в проекте `ExcelAddIn`.  
   
 ## <a name="iexceluicommunication-interface"></a>Интерфейс IExcelUICommunication  

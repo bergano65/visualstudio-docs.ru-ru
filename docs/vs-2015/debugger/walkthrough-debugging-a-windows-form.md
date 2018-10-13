@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отладка в Windows Forms | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf2fd93c76d4be7c032518148acad27b4937f3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 665f2513d96b58a541970252c81848c20672f48b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180262"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пример. Отладка в Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отладка в Windows Forms](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-windows-form).  
-  
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.  
   
  Для начала необходимо закрыть и открыть решения.  

@@ -1,7 +1,7 @@
 ---
 title: Отображение модели UML на схемах | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173164"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отображение модели UML на схемах](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams).  
-  
-В программном коде для расширения Visual Studio можно управлять отображением элементов модели на схемах. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+В программном коде для расширения Visual Studio можно управлять отображением элементов модели на схемах. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  В этом разделе.  
  -   [Отображение элемента на схеме](#Display)  

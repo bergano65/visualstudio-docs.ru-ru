@@ -1,7 +1,7 @@
 ---
 title: Запись в Store параметры пользователя | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fc5f38f8831dec53b907d83571574742f3d491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90d34ebf751ee62fd7779a92214f42779cf84b59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202050"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Запись в хранилище параметров пользователя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [записи Store параметры пользователя](https://docs.microsoft.com/visualstudio/extensibility/writing-to-the-user-settings-store).  
-  
 Пользовательские параметры, доступные для записи параметров, такие как в **Сервис / Параметры** диалоговое окно свойств windows и некоторых других диалоговых окон. Расширения Visual Studio может использовать для хранения небольших объемов данных. В этом пошаговом руководстве показано, как добавить Блокнот для Visual Studio в качестве внешнего инструмента, чтение и запись в хранилище параметров пользователя.  
   
 ### <a name="backing-up-your-user-settings"></a>Резервное копирование параметров пользователя  

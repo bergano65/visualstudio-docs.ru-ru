@@ -1,7 +1,7 @@
 ---
 title: Параметры проекта отладчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5530d4cbdbb4f9a28f7b6b92dd487d598349019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2336002552c2fa0772941d4812914b4756ebd40b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195563"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [параметры проекта отладчика](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings).  
-  
 Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .  
   
  В этом разделе описываются доступные параметры и способы их установки.  
@@ -58,7 +56,7 @@ ms.locfileid: "47561168"
  Список свойств, доступных в диалоговом окне **Страницы свойств** для веб-проектов.  
   
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- Список свойств, доступных в **страницы свойств** диалоговое окно для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проектов.  
+ Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
@@ -68,7 +66,7 @@ ms.locfileid: "47561168"
  Описываются способы отладки приложений для Магазина Windows (Центр разработки для Windows).  
   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)  
- Описание параметров отладчика и подготовки, необходимой для отладки программы отладчиком [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Описание параметров отладчика и подготовки, необходимой для отладки программы отладчиком [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)

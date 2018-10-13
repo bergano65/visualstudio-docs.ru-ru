@@ -1,7 +1,7 @@
 ---
 title: Создание элементов и отношений в моделях UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 55d1a54fad3a420c60cf69bc93d29a675f9e802e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0e68a3701d4455c0a627bd275eaab2cd857abc1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198553"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Создание элементов и отношений в моделях UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создание элементов и отношений в моделях UML](https://docs.microsoft.com/visualstudio/modeling/create-elements-and-relationships-in-uml-models).  
-  
 В программном коде расширения Visual Studio можно создавать и удалять элементы и отношения.  
   
 ## <a name="create-a-model-element"></a>Создание элемента модели  

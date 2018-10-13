@@ -1,7 +1,7 @@
 ---
 title: Изменение данных в наборах данных | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a581608c0be728b3f6686cbfb7ad5f7abe750e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184852"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [изменение данных в наборах данных](https://docs.microsoft.com/visualstudio/data-tools/edit-data-in-datasets).  
-  
   
 Изменение данных в таблицах данных, примерно так же, что изменения данных в таблице в любой базе данных. Процесс может включать Вставка, обновление и удаление записей в таблице. В форме привязкой к данным можно указать, какие поля являются изменяемых пользователем. В этом случае инфраструктура привязки данных обрабатывает все отслеживания изменений, чтобы изменения могли быть отправлены в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным способом внесения изменений в данных, необходимо использовать объекты и методы, выполняющие отслеживание изменений для вас.  
   

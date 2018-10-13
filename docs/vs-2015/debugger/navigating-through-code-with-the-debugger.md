@@ -1,14 +1,14 @@
 ---
 title: Навигация по коду с помощью отладчика | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186164"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Навигация по коду с помощью отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [перемещение по коду с помощью отладчика в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).  
-  
 Ознакомиться с командами и сочетания клавиш для перемещения по коду в отладчике, и, чтобы быстрее и проще находить и устранять неполадки в работе приложения. Срок действия кода в отладчике перейти, вы можете [проверять состояние приложения](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables) или Дополнительные сведения о процессе его выполнения.  
   
 ## <a name="start-debugging"></a>Начать отладку  

@@ -1,7 +1,7 @@
 ---
 title: Средства LINQ to SQL в Visual Studio 2 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195381"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Средства LINQ to SQL в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средства LINQ to SQL в Visual Studio 2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 LINQ to SQL была первой технологии объектно реляционного сопоставления, выпускаемых корпорацией Майкрософт. Он хорошо работает в основных сценариях и по-прежнему будет поддерживаться в Visual Studio, но больше не находится в активной разработке. Используйте LINQ to SQL, при обслуживании с устаревшим приложением, оно уже используется, или в простых приложений, использующих SQL Server и не требуют сопоставление нескольких таблиц. Как правило новые приложения должны использовать Entity Framework, когда требуется уровень объектно реляционным модулем сопоставления.  
   
@@ -93,7 +91,7 @@ LINQ to SQL была первой технологии объектно реля
  Описывает настройку <xref:System.Data.Linq.DataContext> для использования хранимых процедур при сохранении данных обратно в базу данных из классов сущностей.  
   
  [Практическое руководство. Изменение типа значений, возвращаемых методом DataContext (реляционный конструктор объектов)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
- Описывает задание типа возврата метода <xref:System.Data.Linq.DataContext>, чтобы он был типом класса сущностей или автоматически генерируемым типом, создаваемым реляционным конструктором объектов.  
+ Описывает задание типа возвращаемого значения метода <xref:System.Data.Linq.DataContext>, чтобы он был типом класса сущностей или автоматически генерируемым типом, создаваемым реляционным конструктором объектов.  
   
  [Практическое руководство. Добавление проверки в классы сущностей](../data-tools/how-to-add-validation-to-entity-classes.md)  
  Описывает способы генерации частичных методов, которые способны добавлять код в процессе изменений свойств и обновлений классов сущностей.  

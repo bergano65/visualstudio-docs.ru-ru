@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание проектов рабочих процессов (для прежних версий) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6fb33b391f05baf91a4c35be0d949f66a885e228
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15be712dd0bd1cf2a5f91f566860709fa49e6709
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196635"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Как создавать проекты рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта [!INCLUDE[wf](../includes/wf-md.md)], ориентированного на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. В этой процедуре используется средство [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии, поставляемое вместе с [!INCLUDE[vs2010](../includes/vs2010-md.md)].  

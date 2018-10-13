@@ -1,7 +1,7 @@
 ---
 title: Run Windows Store приложений в симуляторе | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190727"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Запуск приложений для Магазина Windows в симуляторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Windows Store выполнения приложений в симуляторе](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 Симулятор Visual Studio для приложений для Магазина Windows является приложением рабочего стола, которое имитирует приложение для Магазина Windows. Вы можете запускать приложения и имитировать общие события касания и поворота экрана на компьютере разработки. Вы также можете выбирать физический размер и разрешение экрана, которые требуется моделировать, и имитировать свойства сетевых подключений.  
   
  Имитатор предоставляет среду, в которой можно проектировать, разрабатывать, отлаживать и тестировать приложения для Магазина Windows. Однако прежде чем публиковать приложение в Магазине Windows, его необходимо протестировать на настоящем устройстве.  
@@ -104,7 +102,7 @@ ms.locfileid: "47568638"
  Размер и разрешение экрана указываются в виде *Ширина экрана в дюймах, ширина в пикселях X высота в пикселях*. Обратите внимание на то, что имитируется и размер, и разрешение экрана. Координаты расположения в симуляторе преобразуются в координаты выбранного размера и разрешения устройства.  
   
 > [!NOTE]
->  Можно сохранить масштабированные версии точечных рисунков в приложении, и Windows загрузит правильный рисунок для текущего масштаба. Дополнительные сведения см. в разделе [адаптивное проектирование 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Однако, если изменить разрешение симулятора таким образом, чтобы ОС Windows выбрала другое изображение для соответствия разрешению, необходимо остановить и перезапустить сеанс отладки для просмотра нового изображения.  
+>  Можно сохранить масштабированные версии точечных рисунков в приложении, и Windows загрузит правильный рисунок для текущего масштаба. Дополнительные сведения см. в разделе [Адаптивное проектирование 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Однако, если изменить разрешение симулятора таким образом, чтобы ОС Windows выбрала другое изображение для соответствия разрешению, необходимо остановить и перезапустить сеанс отладки для просмотра нового изображения.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Создание снимка приложения для представления в Магазин Windows  
  При отправке приложения в Магазин Windows необходимо включить его снимки экрана.  
@@ -119,9 +117,9 @@ ms.locfileid: "47568638"
      ![Контекстное меню параметров снимка экрана](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений  
- Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API-интерфейсы позволяют реагировать на [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) и [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) события, в которых вход. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) позволяют реагировать на события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) и [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) , на которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
- Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых, имитатор может имитировать свойства сети, выполняемую с помощью [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) объект, возвращаемый [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых подключений, имитатор может имитировать свойства сети, представляемые с помощью объекта [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) , который возвращается методом [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
  Для имитации свойств сети выполните следующие действия.  
   
@@ -131,15 +129,15 @@ ms.locfileid: "47568638"
   
      Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
   
-3.  Введите **Имя профиля** для сымитированной сети. Мы рекомендуем использовать уникальное имя, которое можно использовать для идентификации имитации в [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) свойство [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) объекта.  
+3.  Введите **Имя профиля** для сымитированной сети. Рекомендуется ввести уникальное имя, которое можно использовать для идентификации имитации в свойстве [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) объекта [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
   
-4.  Выберите [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) значение для профиля из **тип стоимости сети** списка.  
+4.  Выберите для профиля значение [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) из списка **Тип стоимости сети** .  
   
-5.  Из **флаг состояния лимита данных** списка, можно задать [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) свойство или [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)присваивается значение true, или же вы можете  **Лимит данных не** оба значения задавать значение false.  
+5.  Из списка **Флаг состояния лимита данных** можно задать для свойства [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) или [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)значение true или выбрать **Лимит данных не достигнут** , чтобы установить для обоих свойств значение false.  
   
-6.  Из **состояние роуминга** списке [перемещаемых](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) свойство.  
+6.  Из списка **Состояние роуминга** установите свойство [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
   
-7.  Выберите **задание свойств** для имитации свойств сети путем активации переднего плана [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) событий и фона [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) типа  **NetworkStateChange**.  
+7.  Выберите **Задать свойства** для имитации свойств сети путем активации события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) переднего плана и фонового триггера [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) типа **NetworkStateChange**.  
   
  **Дополнительные сведения об управлении сетевыми подключениями**  
   

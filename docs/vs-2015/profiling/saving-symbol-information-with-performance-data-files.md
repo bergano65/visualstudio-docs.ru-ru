@@ -1,7 +1,7 @@
 ---
 title: Сохранение символьной информации с файлами данных профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98d8a981a1f186c87940cf0a63f5c72d91d56b1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199776"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сохранение символьной информации с файлами данных профилировщика](https://docs.microsoft.com/visualstudio/profiling/saving-symbol-information-with-performance-data-files).  
-  
 Если для анализа файлов используется интегрированная среда разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], то при необходимости перенести VSP-файл на другой компьютер необходимо задать параметры проекта для анализа производительности таким образом, чтобы символы сохранялись или *сериализовывались* в файле отчета. Это увеличивает размер файла отчета. Сериализация символов необходима по двум причинам:  
   
 -   чтобы внедрить символы кода в отчет о производительности до того, как целевые сборки будут удалены из местоположения, выбранного для временного хранения;  

@@ -1,7 +1,7 @@
 ---
 title: Элемент CustomParameter (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d968f255607bd0d98dc83945bfcb555400a1573a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9540b42497b15eace2ed7a54ef9c26f76c0576a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198852"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Элемент CustomParameter (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [элемент CustomParameter (шаблоны Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/customparameter-element-visual-studio-templates).  
-  
 Содержит имя пользовательского параметра и значение, используемое при создании проекта или элемента из шаблона.  
   
 ## <a name="syntax"></a>Синтаксис  

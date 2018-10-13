@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bde4bb7bf0e6fc9b5dafdc444507e985a756c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178702"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое: доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: доступ к встроенной шрифтов и цветовой схемы](https://docs.microsoft.com/visualstudio/extensibility/how-to-access-the-built-in-fonts-and-color-scheme).  
-  
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.  
   
  Чтобы использовать встроенные шрифтов и цветов схемы, пакет VSPackage должен удовлетворять следующим требованиям:  
