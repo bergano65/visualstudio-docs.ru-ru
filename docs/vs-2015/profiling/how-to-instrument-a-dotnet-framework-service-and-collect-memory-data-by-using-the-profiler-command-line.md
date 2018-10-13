@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти с помощью командной строки профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc463439259ac5eaabe0d0fe29e3afbde9352b3a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e95af5e44e0d073e16f735d69b83bd2f6c834366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227699"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти с помощью командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: инструментирование службы .NET Framework и сбора данных памяти с помощью командной строки Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line).  
-  
 Этот раздел описывает использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования службы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и сбора данных об использовании памяти. Вы можете собирать данные о выделении памяти или данные как о времени существования объекта, так и о выделении памяти.  
   
 > [!NOTE]
@@ -59,7 +57,7 @@ ms.locfileid: "48880049"
   
     -   **/globaltracegc** и **/globaltracegclife** обеспечивают сбор данных о выделении памяти и времени существования объектов.  
   
-        |Параметр|Описание:|  
+        |Параметр|Описание|  
         |------------|-----------------|  
         |**/globaltracegc**|Собирает только данные о выделении памяти.|  
         |**/globaltracegclife**|Собирает данные о выделении памяти и времени существования объектов.|  
@@ -81,7 +79,7 @@ ms.locfileid: "48880049"
     > [!NOTE]
     >  Параметры **/user** и **/crosssession** обычно являются обязательными для служб.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
     |[/crossession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**.|  
@@ -107,7 +105,7 @@ ms.locfileid: "48880049"
   
 -   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

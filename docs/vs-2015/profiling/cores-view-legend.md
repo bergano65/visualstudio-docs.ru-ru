@@ -1,7 +1,7 @@
 ---
 title: Легенда представления "Ядра" | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6416b9bf96b3a23fce72df56190df9dfd5847531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d28cef1493371fc55fc15c38a1e493d0cad0621
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176258"
 ---
 # <a name="cores-view-legend"></a>Легенда представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Легенда представления "ядра"](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend).  
-  
 В легенде представления "Ядра" каждый поток обозначается с помощью цвета и имени. Она включает в себя столбцы, которые показывают количество переключений контекста между ядрами и процент переключений контекста между ядрами. Строки в легенде сортируются по количеству переключений контекста между ядрами по убыванию.  
   
  Допускается выбор строк в условных обозначениях для фильтрации потоков, которые отображаются на временной шкале. На временной шкале отображаются только выбранные потоки. Если строки не выбраны, на временной шкале будут отображены все строки.  

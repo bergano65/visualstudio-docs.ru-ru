@@ -1,14 +1,14 @@
 ---
 title: "\"Видимые\" и \"Локальные\" Windows | Документация Майкрософт"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191325"
 ---
 # <a name="autos-and-locals-windows"></a>Окна "Видимые" и "Локальные"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [проверки переменных в отладчике в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 Окна **Видимые** (во время отладки нажмите клавиши **CTRL+ALT+V, A**или выберите пункт **Отладка &gt; Окна &gt; Видимые**) и **Локальные** (во время отладки нажмите клавиши **CTRL+ALT+V, L**или выберите пункт **Отладка &gt; Окна &gt; Локальные**) очень полезны, если вам нужно просмотреть значения переменных во время отладки. В окне **Локальные** отображаются переменные, которые определены в локальной области, которой обычно является функция или метод, выполняемые в текущий момент. В окне **Видимые** отображаются переменные, используемые вокруг текущей строки (места, где остановилось выполнение отладчика). Отображаемые переменные зависят от используемого языка. См. в разделе, какие переменные отображаются в окне "Видимые"? ниже.  
   
  Более подробную информацию об основных принципах отладки см. в разделе [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  

@@ -1,7 +1,7 @@
 ---
 title: Управление видимостью значка или декоратора | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207861"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Управление видимостью значка или декоратора](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 Объект *декоратор* значок или строку текста, который отображается на фигуре в доменный язык (DSL). Можно внести декоратора отображаются и исчезают в зависимости от состояния свойства в модели. Например в форму, представляющую человека, можно создать различные значки, которые отображаются в зависимости от пола человека, число дочерних объектов и т. д.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора  

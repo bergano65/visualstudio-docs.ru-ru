@@ -1,7 +1,7 @@
 ---
 title: Компилятор цветов VSIX | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207328"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [компилятор цветов VSIX](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler).  
-  
 Средство компилятор цветов расширений Visual Studio — консольное приложение, которое принимает XML-файл, представляющий цвета для существующих тем Visual Studio и преобразует его в .pkgdef файл, чтобы эти цвета можно использовать в Visual Studio. Так как это упрощает сравнение различий между XML-файлы, это средство используется для управления настраиваемых цветов в системе управления версиями. Его также можно связать сред построения, чтобы выходные данные сборки является допустимым pkgdef-файл.  
   
  **Тема XML-схемы**  

@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: поиск процесса в представлении процессов | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222902"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. Поиск процесса в представлении процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: поиск процесса в представлении процессов](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view).  
-  
 Можно найти конкретный процесс в представлении процессов с помощью его процесса идентификатор или строку модуля в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне будут отображаться атрибуты выбранного процесса в дерево процесса.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Поиск процесса в представлении процессов  

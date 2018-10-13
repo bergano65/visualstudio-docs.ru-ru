@@ -1,7 +1,7 @@
 ---
 title: Настройка макетов окон в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7f581c920a0f42105c1409e320b941a12dbc5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218820"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Настройка макетов окон в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка макетов окон в Visual Studio](https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
-  
 В Visual Studio можно настроить расположение, размер и поведение окон, что позволит создать макеты окон, оптимально подходящие для различных рабочих процессов разработки. После того как макет будет настроен, интегрированная среда разработки запомнит его. Например, если после изменения места прикрепления окна **обозревателя решений** закрыть Visual Studio, во время следующего запуска окно **обозревателя решений** будет закреплено в том же месте, даже если работа будет продолжена на другом компьютере. Настраиваемому макету также можно присвоить имя, сохранить его, а затем переключаться между макетами с помощью одной команды. Например, можно создать один макет для редактирования, а другой —для отладки и переключаться между ними с помощью команды меню **Окно | Применить макет окна**.  
   
 ## <a name="kinds-of-windows"></a>Типы окон  

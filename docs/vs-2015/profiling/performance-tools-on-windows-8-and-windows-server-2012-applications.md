@@ -1,7 +1,7 @@
 ---
 title: Средства производительности в приложениях Windows 8 и Windows Server 2012 | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195524"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [средства производительности в приложениях Windows 8 и Windows Server 2012](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. В этом разделе описаны изменения средств производительности на платформах Windows 8 и Windows Server 2012.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ ms.locfileid: "47593089"
   
  **Сбор данных об уровневом взаимодействии на удаленном компьютере**  
   
- Чтобы собрать данные об уровневом взаимодействии на удаленном компьютере, необходимо скопировать **vs\_профилировщика\_**_\<платформы >_ **\_**  _\<Языка >_**.exe** файла из _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**папку Visual Studio компьютера на удаленный компьютер и установить его. Нельзя использовать средства профилирования в [инструменты удаленной отладки для Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) загрузить пакет.  
+ Чтобы собрать данные об уровневом взаимодействии на удаленном компьютере, необходимо скопировать **vs\_профилировщика\_**_\<платформы >_ **\_**  _\<Языка >_**.exe** файла из _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**папку Visual Studio компьютера на удаленный компьютер и установить его. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .  
   

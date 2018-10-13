@@ -1,7 +1,7 @@
 ---
 title: Профилирование и безопасность Windows Vista | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736e7a04813a6c56d6cab6d1886171e321d583cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185908"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Профилирование и безопасность Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [профилирование и безопасность в Windows Vista](https://docs.microsoft.com/visualstudio/profiling/profiling-and-windows-vista-security).  
-  
 В зависимости от параметров разрешений на доступ пользователей [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], предоставленных администратором компьютера, отдельный пользователь может иметь разрешение безопасности для профилирования процесса на этом компьютере. Возможные различия между пользователями проиллюстрированы в следующих примерах:  
   
 -   Некоторые пользователи могут воспользоваться расширенными возможностями профилирования, если администратор задал драйвер и запускаемую службу.  

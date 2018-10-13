@@ -1,7 +1,7 @@
 ---
 title: Конструктор действия FinalState | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ecbbded923645a1b2bf6eafe9bbe038e0cb3b29c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48c44dc585ce1c9cf4e7b29970b4014f128b873d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209174"
 ---
 # <a name="finalstate-activity-designer"></a>Конструктор FinalState Activity
 Конструктор <xref:System.Activities.Core.Presentation.FinalState> используется для создания <xref:System.Activities.Statements.State>, которое завершает экземпляр конечного автомата.  
   
 ## <a name="using-the-finalstate-activity-designer"></a>Использование конструктора действий FinalState  
- **FinalState** конструктор используется для создания <xref:System.Activities.Statements.State> , предварительно настраиваемого как завершающее состояние конечного автомата. Объект <xref:System.Activities.Statements.State> , созданного при помощи <xref:System.Activities.Core.Presentation.FinalState> имеет конструктор действия его <xref:System.Activities.Statements.State.IsFinal%2A> свойство значение **true**, не имеет <xref:System.Activities.Statements.State.Exit%2A> действия и не переходы, исходящие из него. Чтобы использовать <xref:System.Activities.Core.Presentation.FinalState> конструктора действий, чтобы добавить <xref:System.Activities.Statements.State> действие, которое предварительно настроенного как завершающее состояние конечного автомата, перетащите **FinalState** конструктор из **конечный автомат**раздел **элементов** и поместите его в конструктор рабочего процесса. Конструктор действий <xref:System.Activities.Core.Presentation.FinalState> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при помещении конструктора действий <xref:System.Activities.Core.Presentation.FinalState> на поверхность. Дополнительные сведения о создании переходов см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).  
+ **FinalState** конструктор используется для создания <xref:System.Activities.Statements.State> , предварительно настраиваемого как завершающее состояние конечного автомата. Объект <xref:System.Activities.Statements.State> , созданного при помощи <xref:System.Activities.Core.Presentation.FinalState> имеет конструктор действия его <xref:System.Activities.Statements.State.IsFinal%2A> свойство значение **true**, не имеет <xref:System.Activities.Statements.State.Exit%2A> действия и не переходы, исходящие из него. Чтобы использовать <xref:System.Activities.Core.Presentation.FinalState> конструктора действий, чтобы добавить <xref:System.Activities.Statements.State> действие, которое предварительно настроенного как завершающее состояние конечного автомата, перетащите **FinalState** конструктор из **конечный автомат**раздел **элементов** и поместите его в конструктор рабочего процесса. Конструктор действий <xref:System.Activities.Core.Presentation.FinalState> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при сбросе конструктора действий <xref:System.Activities.Core.Presentation.FinalState> на поверхность. Дополнительные сведения о создании переходов см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).  
   
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Свойства действия состояния в конструкторе рабочих процессов  
  В следующей таблице приведены свойства, которые можно задать с помощью конструктора <xref:System.Activities.Core.Presentation.FinalState>, и описано их использование в конструкторе. Некоторые из этих свойств можно изменить в таблице свойств, а некоторые из них ― в области конструктора.  

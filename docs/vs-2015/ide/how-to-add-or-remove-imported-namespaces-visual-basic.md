@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70f5187300c3c7d661055f78911bdedb926fdc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196408"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Добавление или удаление Импортируемые пространства имен (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-imported-namespaces-visual-basic).  
-  
 Импорт пространства имен позволяет использовать элементы из этого пространства имен в коде без полного определения элемента. Например, если требуется получить доступ к методу `Create` в классе `System.Messaging.MessageQueue`, можно импортировать пространство имен `System.Messaging` и просто обращаться к необходимому элементу в коде в виде `MessageQueue.Create`.  
   
  Для управления импортированными пространствами имен служит страница **Ссылки** **конструктора проектов**. Импортированные пространства имен, указанные в этом окне, передаются непосредственно в компилятор (`/imports`) и применяются ко всем файлам в проекте. Примените инструкцию `Imports` для использования пространства имен в одном файле исходного кода.  

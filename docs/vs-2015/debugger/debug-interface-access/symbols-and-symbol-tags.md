@@ -1,7 +1,7 @@
 ---
 title: Символы и теги символов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04dfbe961b122ded6ddb5ff19d70091ba6c408c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189791"
 ---
 # <a name="symbols-and-symbol-tags"></a>Символы и теги символов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [символы и теги символов](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbols-and-symbol-tags).  
-  
 Отладочной информации о скомпилированную программу хранится в PDB-файл программы, как символы, которые доступны с помощью API пакета SDK для отладки Interface Access (DIA). Все символы имеют [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) и [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) свойство. `symTag` Свойство указывает типа символа, в соответствии с определением [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления. `symIndexId` Свойство `DWORD` значение, содержащее уникальный идентификатор для каждого вхождения символа.  
   
  Символы также имеют свойства, которые можно указать дополнительные сведения о символ, а также ссылки на другие символы, чаще всего [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) или [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). При запросе свойство, которое содержит ссылку, возвращается в виде ссылки [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Такие свойства всегда сопоставляются с другим свойством с одинаковыми именами и суффиксом, содержащим «Id», например, [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) и [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Таблицы в [расположения символов](../../debugger/debug-interface-access/symbol-locations.md), [лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), и [класс иерархия символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) структуры свойства для каждого из различных типов объекта символы. Эти свойства могут иметь соответствующие сведения о или ссылки на другие символы. Так как `*Id` свойства — это просто числовые идентификаторы порядковый номер их связанных свойств, они исключаются из дальнейшего обсуждения. Они известны только в том случае, при необходимости для получения параметра.  

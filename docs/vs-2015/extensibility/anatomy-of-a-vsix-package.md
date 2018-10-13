@@ -1,7 +1,7 @@
 ---
 title: Составляющие пакета VSIX | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181464"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [составляющие пакета VSIX](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package).  
-  
 Пакет VSIX является VSIX-файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, используемый для классификации и установить расширения Visual Studio. Эти метаданные содержатся в манифест VSIX и файл [Content_Types] .xml. Пакет VSIX также может содержать один или несколько файлов Extension.vsixlangpack для предоставления текста локализованной установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  
   
  Формат пакета VSIX соответствует стандарту Open Packaging Conventions (OPC). Пакет содержит двоичные файлы и вспомогательные файлы, а также файл [Content_Types] .xml и .vsix файл манифеста. Один пакет VSIX может содержать выходные данные из нескольких проектов или даже несколькими пакетами, которые имеют свои собственные манифестов.  

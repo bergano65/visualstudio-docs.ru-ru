@@ -1,7 +1,7 @@
 ---
 title: Использование трехмерных ресурсов в игре или приложении | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226314"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Использование трехмерных ресурсов в игре или приложении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Использование трехмерных ресурсов в вашей игре или приложении](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 В этой статье описано использование [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для обработки трехмерных активов и включения их в состав сборок.  
   
  После создания трехмерных активов с помощью средств в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] эти активы нужно использовать в приложении. Однако сначала их необходимо преобразовать в формат, поддерживаемый DirectX. Чтобы упростить преобразование активов, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предоставляет настройки сборки для каждого из создаваемых видов активов. Для включения активов в состав сборки достаточно настроить проект на использование настроек сборки, добавить активы в проект и настроить их на использование подходящей настройки сборки. После этого вы можете загрузить активы в приложение и использовать их, создавая и заполняя ресурсы DirectX аналогично любому другому приложению DirectX.  

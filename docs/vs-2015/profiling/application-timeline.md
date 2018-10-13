@@ -1,7 +1,7 @@
 ---
 title: Временная шкала приложения | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2310b6f1fc6808d64d3b51b488bf4e4c4726e689
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df71c984c017b731e5168d6079415ee26543bbbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558182"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226791"
 ---
 # <a name="application-timeline"></a>Временная шкала приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализировать потребление ресурсов в приложениях XAML в Visual Studio](https://docs.microsoft.com/visualstudio/profiling/application-timeline).  
-  
 Используйте профилировщик **Временная шкала приложения** , чтобы найти и исправить проблемы производительности в работе приложений XAML, связанные с взаимодействием. Это средство помогает улучшить производительность приложений XAML, предоставляя подробные сведения об использовании ресурсов приложений. Вы можете проанализировать время, затраченное приложением на подготовку кадров пользовательского интерфейса (макет и обработка), обработку запросов от сети и дисков, а также на такие сценарии, как запуск приложения, загрузка страницы и изменение размера окон.  
   
  **Временная шкала приложения** — это одно из средств, которое можно запустить, выбрав **Отладка | Профилировщик производительности**.  

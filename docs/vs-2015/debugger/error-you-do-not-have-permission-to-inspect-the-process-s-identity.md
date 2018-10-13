@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: У вас нет разрешения на изучение процесса&#39;удостоверений s | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4aafd6215c868ff93108e3b170999a8d028e2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7577ac0c2d6b876c3055a90a915e48ea2177bc5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196915"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Ошибка: У вас нет разрешения на изучение процесса&#39;s удостоверений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: у вас нет разрешения на изучение процесса&#39;удостоверений s](https://docs.microsoft.com/visualstudio/debugger/error-you-do-not-have-permission-to-inspect-the-process-s-identity).  
-  
 У вас нет разрешения на идентификацию процесса. Это может быть следствием системной конфигурации.  
   
  Отладчику не удалось идентифицировать процесс, что является необходимым для отладки. Наиболее вероятной причиной является отключение служб терминалов. По умолчанию службы терминалов включены. Выполните следующие действия, чтобы включить их снова.  

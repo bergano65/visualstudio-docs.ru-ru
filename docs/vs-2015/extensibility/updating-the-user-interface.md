@@ -1,7 +1,7 @@
 ---
 title: Обновление пользовательского интерфейса | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181045"
 ---
 # <a name="updating-the-user-interface"></a>Обновление пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обновление пользовательского интерфейса](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 После выполнения команды, можно добавить код для обновления пользовательского интерфейса с состоянием новых команд.  
   
  В типичном приложении Win32 при этом набор команд можно постоянно опрашивать и состояние отдельных команд может быть скорректирован пользователь просматривает их. Тем не менее поскольку [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] оболочки можно размещать неограниченное число пакетов VSPackage, обширные опроса может уменьшить время отклика, особенно опроса через сборки взаимодействия между управляемым кодом и COM.  
