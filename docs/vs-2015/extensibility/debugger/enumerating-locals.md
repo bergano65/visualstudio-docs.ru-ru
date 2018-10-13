@@ -1,7 +1,7 @@
 ---
 title: Перечисление локальных переменных | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e46454fcd23be2311e4d5d809f5041cf6f7f186
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0bb520ba175b6084bee0634a79af12b5f2f79329
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306427"
 ---
 # <a name="enumerating-locals"></a>Перечисление локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [перечисление "Локальные"](https://docs.microsoft.com/visualstudio/extensibility/debugger/enumerating-locals).  
-  
 > [!IMPORTANT]
 >  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   

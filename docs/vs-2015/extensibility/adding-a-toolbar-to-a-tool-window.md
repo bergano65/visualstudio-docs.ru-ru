@@ -1,7 +1,7 @@
 ---
 title: Добавление панели инструментов в окно инструментов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 49
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f35ed0f74f8d3fad711f7c1dd4158072b786eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e55508759d1395b1b3218d7e32af9121922da28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306414"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Добавление панели инструментов в окно инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Добавление панели инструментов в окно инструментов](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar-to-a-tool-window).  
-  
 В этом пошаговом руководстве показано, как добавить панель инструментов в окно инструментов.  
   
  Панель инструментов представляет собой горизонтальную или вертикальную полосу, содержащую кнопки, привязанный к командам. Длина в панели инструментов окна инструментов совпадает всегда ширины или высоты окна инструментов, в зависимости от место закрепления панели инструментов.  

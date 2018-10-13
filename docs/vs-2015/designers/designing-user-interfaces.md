@@ -1,7 +1,7 @@
 ---
 title: Разработка пользовательских интерфейсов | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fed919390bfd63018b0d5aed46fcb17a38a39fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe7b4742867b36852bbac15ad7ba1e10a77daf0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306674"
 ---
 # <a name="designing-user-interfaces"></a>Разработка пользовательских интерфейсов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Разработка пользовательских интерфейсов](https://docs.microsoft.com/visualstudio/designers/designing-user-interfaces).  
-  
 Можно создать и разработать пользовательский интерфейс приложения с помощью различных средств в Visual Studio.  
   
 |Для получения дополнительных сведений о|См.|  

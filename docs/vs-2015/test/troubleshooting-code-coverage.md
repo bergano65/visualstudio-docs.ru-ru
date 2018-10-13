@@ -1,7 +1,7 @@
 ---
 title: Устранение неполадок с покрытием кода | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306056"
 ---
 # <a name="troubleshooting-code-coverage"></a>Устранение неполадок с покрытием кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Устранение неполадок с покрытием кода](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage).  
-  
 Средство анализа покрытия кода в Visual Studio выполняет сбор данных для машинных и управляемых сборок (DLL- или EXE-файлы). Однако в некоторых случаях в окне результатов покрытия кода отображается ошибка, похожая на ошибку "Созданы пустые результаты: ...". Существует несколько возможных причин, по которым это может произойти. Сведения в этом разделе помогут устранить эту проблему.  
   
 ## <a name="what-you-should-see"></a>Отображаемые сведения  

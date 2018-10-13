@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Создание консольного приложения последовательного рабочего процесса (для прежних версий) | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0882a39dfae5639fcfc72adc7ccd976f4d93e30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e467e4a574263eaa35640bc99f99c1f599a74df9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306323"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Как создавать консольные приложения последовательных рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта консольного приложения последовательного рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

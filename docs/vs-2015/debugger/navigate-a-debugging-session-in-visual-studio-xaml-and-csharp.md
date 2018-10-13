@@ -1,7 +1,7 @@
 ---
 title: Навигация по сеансу отладки в Visual Studio (Xaml и C#) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306310"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Навигация по сеансу отладки в Visual Studio (XAML и C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Навигация по сеансу отладки в Visual Studio (Xaml и C#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 В этом кратком руководстве описана процедура навигации по сеансам отладки, а также способы просмотра и изменения состояния программы в сеансе.  
   
  Это краткое руководство предназначено для разработчиков, которые не знакомы с методами отладки с помощью Visual Studio, и для разработчиков, которые хотят узнать больше о навигации по сеансу отладки Visual Studio. Оно не предназначено для обучения самому искусству отладки. Методы, содержащиеся в образце кода, предназначены исключительно для того, чтобы продемонстрировать процедуры отладки, описанные в данном разделе. При создании этих методов не применяются рекомендации по проектированию приложения или функций. На самом деле вы быстро поймете, что и методы, и само приложение практически ничего не делают.  

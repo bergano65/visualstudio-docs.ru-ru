@@ -1,7 +1,7 @@
 ---
 title: Регистрация шаблонов проектов и элементов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306817"
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [регистрации проекта и шаблонов элементов](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates).  
-  
 Типы проектов необходимо регистрировать каталоги, где находятся их шаблонов проектов и элементов проекта. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует сведения о регистрации, связанные с типами вашего проекта, чтобы определить, что нужно показывать в **Добавление нового проекта** и **Добавление нового элемента** диалоговым окнам.  
   
  Дополнительные сведения о шаблонах см. в разделе [добавление проектов и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
@@ -46,7 +44,7 @@ ms.locfileid: "48880088"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Имя по умолчанию для проектов такого рода.|  
 |DisplayName|REG_SZ|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -64,7 +62,7 @@ ms.locfileid: "48880088"
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Идентификатор ресурса для шаблонов добавить элемент.|  
 |TemplatesDir|REG_SZ|Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера.|  
@@ -91,7 +89,7 @@ ms.locfileid: "48880088"
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
 |CommonOpenFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
