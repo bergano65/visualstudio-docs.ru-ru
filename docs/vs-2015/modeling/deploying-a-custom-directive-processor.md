@@ -1,7 +1,7 @@
 ---
 title: Развертывание пользовательского обработчика директив | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251957"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [развертывание пользовательского процессора директив](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor).  
-  
 Для использования пользовательского процессора директив в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на любом компьютере необходимо зарегистрировать его одним из описанных в этом разделе способов.  
   
  Альтернативные методы таковы:  
@@ -159,7 +157,7 @@ ms.locfileid: "47559648"
   
  Убедитесь, что pkgdef-файл содержится в папке построения, которой обычно является bin\Debug или bin\Release. Если там нет этого файла, откройте CSPROJ-файл в текстовом редакторе и удалите следующий узел: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
   
- Дополнительные сведения см. в разделе [пакетов VSPackage](../extensibility/internals/vspackages.md).  
+ Дополнительные сведения см. в разделе [VSPackages](../extensibility/internals/vspackages.md).  
   
 ## <a name="setting-a-registry-key"></a>Создание раздела реестра  
  Данный способ установки пользовательского процессора директив рекомендуется использовать в последнюю очередь. Он не предусматривает удобного способа включения и отключения процессора директив и способа передачи процессора директив другим пользователям.  

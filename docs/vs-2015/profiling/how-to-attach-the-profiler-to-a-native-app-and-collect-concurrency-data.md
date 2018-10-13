@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор данных параллелизма при помощи командной строки | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e001f6ccc1a421941dd6c9d4fce1245919c0d08
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: df5100f91c1151c60d12f08571fd00c775aa59dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250176"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор данных параллелизма при помощи командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: присоединение Profiler к автономного приложения в машинном коде и сбора данных параллелизма при помощи командной строки](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line).  
-  
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для подключения профилировщика к выполняющемуся автономному приложению (C/C++) в машинном коде и сбора данных о конфликтах потоков.  
   
 > [!NOTE]

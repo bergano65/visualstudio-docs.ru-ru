@@ -1,7 +1,7 @@
 ---
 title: Отправка событий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65c86cb8028d5c310de6f48c753d862865ea7a46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270755"
 ---
 # <a name="sending-events"></a>Отправка событий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отправки событий](https://docs.microsoft.com/visualstudio/extensibility/debugger/sending-events).  
-  
 Механизм для обмена данными между отладчиком и модуль отладки (DE) — это модель событий, в зависимости от DCOM. События отправляются в виде COM-объектов, и каждое событие имеет параметры, которые определяют следующее:  
   
 -   DE, который вызвал событие.  

@@ -1,7 +1,7 @@
 ---
 title: Параметр Timer | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a17f756a293ba8909054043713a14340ff9bf39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acca8f8bf77c465873bae25a61de18230a038234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247704"
 ---
 # <a name="timer"></a>Таймер
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [таймера](https://docs.microsoft.com/visualstudio/profiling/timer).  
-  
 Параметр **Timer** программы VSPerfCmd.exe задает событие профилирования, выборка которого производится в соответствии с циклами тактовой частоты ЦП, и при необходимости изменяет число циклов в интервале выборки (значение по умолчанию — 10 000 000). На процессоре с частотой 1 ГГц 10 000 000 циклов — это приблизительно 100 выборок в секунду. Минимальное число циклов, которое можно указать — 50 000.  
   
  Параметр **Timer** можно использовать только при применении метода профилирования с выборкой, а также только в командной строке, которая содержит параметр **Launch** или **Attach**.  

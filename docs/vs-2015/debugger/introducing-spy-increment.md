@@ -1,7 +1,7 @@
 ---
 title: Введение в Spy ++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276267"
 ---
 # <a name="introducing-spy"></a>Введение в Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [введение в Spy ++](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment).  
-  
 Spy++ позволяет выполнять следующие задачи:  
   
 -   Отображение графического дерева связей между системными объектами. К ним относятся [процессы](../debugger/processes-view.md), [потоки](../debugger/threads-view.md)и [окна](../debugger/windows-view.md).  
@@ -40,7 +38,7 @@ Spy++ позволяет выполнять следующие задачи:
   
 -   Использование [инструмента поиска](../debugger/how-to-use-the-finder-tool.md) для выбора окна посредством позиционирования указателя мыши.  
   
--   Задайте **параметры сообщения** с помощью параметров выбора для сложных сообщений журнала.  
+-   Задание **параметров сообщений** с помощью параметров выбора для комплексного ведения журналов сообщений.  
   
  Для ускорения работы в Spy++ предусмотрены гиперссылки и панель инструментов. Программа также предоставляет команду **Обновить** для обновления активного представления, средство **Поиск окон** для упрощения работы, а также диалоговое окно **Шрифт** для настройки окон представлений. Кроме того, Spy++ позволяет сохранять и восстанавливать настройки пользователя.  
   

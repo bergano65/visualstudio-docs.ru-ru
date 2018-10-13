@@ -1,7 +1,7 @@
 ---
 title: 'Схемы слоев: Рекомендации | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202583"
 ---
 # <a name="layer-diagrams-guidelines"></a>Схемы слоев: рекомендации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [схемы зависимостей: рекомендации по](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Описание архитектуры приложения на высоком уровне путем создания *схемы слоев* в Visual Studio. Чтобы убедиться в том, что код соответствует этой структуре, проверьте его с помощью схемы слоев. В процесс сборки также можно включить проверку слоев. См. в разделе [видео Channel 9: проектирования и проверки архитектуры с использованием схем слоев](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

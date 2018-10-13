@@ -1,7 +1,7 @@
 ---
 title: Словарь визуального языка для Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267635"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Словарь визуального языка для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Visual словарь языка для Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio использует общий язык visual, чтобы продемонстрировать основные понятия, которые являются составными частями его иллюстрациях и других визуальных представлений. При разработке новых значков, позволяет определить основные понятия, которые вы хотите передать в свой собственный образ данного словаря.  
   
  **Общие рекомендации**  
@@ -313,7 +311,7 @@ Visual Studio использует общий язык visual, чтобы про
 |-------------|---------------|--------------------|  
 |**Запись**|![Значок «запись»](../../extensibility/ux-guidelines/media/vld-c-record.png "VLD_C_Record")|![Значок экрана записи](../../extensibility/ux-guidelines/media/vld-c-record-recordscreen.png "VLD_C_Record_RecordScreen") запись экрана ![записанный тест сеанса значок перехода к](../../extensibility/ux-guidelines/media/vld-c-record-gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession") перейти к записанные тестового сеанса|  
 |**Повтор**|![Значок "Вернуть"](../../extensibility/ux-guidelines/media/vld-c-redo.png "VLD_C_Redo")||  
-|**Ссылка**|![Значок ссылки](../../extensibility/ux-guidelines/media/vld-c-reference.png "VLD_C_Reference")|![Значок неработающей ссылки](../../extensibility/ux-guidelines/media/vld-c-reference-brokenreference.png "VLD_C_Reference_BrokenReference") неработающие ссылки ![перейти к ссылке значок](../../extensibility/ux-guidelines/media/vld-c-reference-gotoreference.png "VLD_C_Reference_GoToReference") перейти к Справочник по ![значок ссылки модуля слияния](../../extensibility/ux-guidelines/media/vld-c-reference-mergemodulereference.png "VLD_C_Reference_MergeModuleReference") слияния ссылки на модуль|  
+|**Ссылки**|![Значок ссылки](../../extensibility/ux-guidelines/media/vld-c-reference.png "VLD_C_Reference")|![Значок неработающей ссылки](../../extensibility/ux-guidelines/media/vld-c-reference-brokenreference.png "VLD_C_Reference_BrokenReference") неработающие ссылки ![перейти к ссылке значок](../../extensibility/ux-guidelines/media/vld-c-reference-gotoreference.png "VLD_C_Reference_GoToReference") перейти к Справочник по ![значок ссылки модуля слияния](../../extensibility/ux-guidelines/media/vld-c-reference-mergemodulereference.png "VLD_C_Reference_MergeModuleReference") слияния ссылки на модуль|  
 |**Обновление**|![Значок обновления](../../extensibility/ux-guidelines/media/vld-c-refresh.png "VLD_C_Refresh")|![Значок обновления облачной службы](../../extensibility/ux-guidelines/media/vld-c-refresh-refreshcloudservice.png "VLD_C_Refresh_RefreshCloudService") обновления облачной службы ![значок обновления кэша](../../extensibility/ux-guidelines/media/vld-c-refresh-cacherefreshing.png "VLD_C_Refresh_CacheRefreshing")Обновления кэша|  
 |**Связь** ветви|![Значок связи](../../extensibility/ux-guidelines/media/vld-c-relationship.png "VLD_C_Relationship")|![Значок отношения define](../../extensibility/ux-guidelines/media/vld-c-relationship-definerelationship.png "VLD_C_Relationship_DefineRelationship") определить связь ![значок добавления отношения](../../extensibility/ux-guidelines/media/vld-c-relationship-addrelationship.png "VLD_C_Relationship_AddRelationship") Добавить связь ![родительского&#45;значок дочерних](../../extensibility/ux-guidelines/media/vld-c-relationship-parentchild.png "VLD_C_Relationship_ParentChild") родители потомки|  
 |**Удаленный**|![Значок удаленного](../../extensibility/ux-guidelines/media/vld-c-remote.png "VLD_C_Remote")|![Значок удаленной ветви](../../extensibility/ux-guidelines/media/vld-c-remote-remotebranch.png "VLD_C_Remote_RemoteBranch") удаленной ветви ![значок удаленного рабочего стола](../../extensibility/ux-guidelines/media/vld-c-remote-remotedesktop.png "VLD_C_Remote_RemoteDesktop") удаленного рабочего стола|  

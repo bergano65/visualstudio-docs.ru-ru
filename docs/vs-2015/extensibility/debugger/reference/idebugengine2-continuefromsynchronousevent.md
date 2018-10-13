@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::ContinueFromSynchronousEvent | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30fa937393935765992e87c1c93a579a47f6cc7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d85e46e609344e20addd8dd732a12012175fbca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269197"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugEngine2::ContinueFromSynchronousEvent](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent).  
-  
 Вызывается диспетчером сеанса отладки (SDM), чтобы указать, что событие синхронной отладки, ранее отправленные модуль отладки (DE) SDM, были получены и обработаны.  
   
 ## <a name="syntax"></a>Синтаксис  

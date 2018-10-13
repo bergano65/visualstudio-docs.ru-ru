@@ -1,7 +1,7 @@
 ---
 title: Свойства доменных ролей | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6dc3f92bf1f9788f501b96540b35006ff112267b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244092"
 ---
 # <a name="properties-of-domain-roles"></a>Свойства доменных ролей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства доменных ролей](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-roles).  
-  
 Свойства в следующей таблице сопоставлены роли домена. Сведения о роли домена, см. в разделе [Общие сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Свойство.|Описание|Значение по умолчанию|  

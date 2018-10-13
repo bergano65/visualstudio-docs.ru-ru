@@ -1,7 +1,7 @@
 ---
 title: Публикация приложений ClickOnce | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265646"
 ---
 # <a name="publishing-clickonce-applications"></a>Публикация ClickOnce-приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [публикация приложений ClickOnce](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications).  
-  
 При первой публикации приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] установка свойств публикации выполняется с помощью мастера публикации. В мастере доступно только несколько свойств. Для всех остальных свойств устанавливаются значения по умолчанию.  
   
  Последующие изменения свойств публикации выполняются на **публикации** странице в **конструктор проектов**.  

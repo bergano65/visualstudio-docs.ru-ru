@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: рабочий процесс веб-узла был завершен службами IIS | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81396165841b0c23a317a857e73d7adbf88971dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66ed595d5c6bf23e6c9525c1043a74592c3fb48e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272913"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Ошибка: Рабочий процесс веб-узла был завершен службами IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [ошибка: рабочий процесс веб-узла был завершен службами IIS](https://docs.microsoft.com/visualstudio/debugger/error-web-site-worker-process-has-been-terminated-by-iis).  
-  
 Отладчик остановил выполнение кода на веб–узле. Службы ISS при этом полагают, что рабочий процесс перестал отвечать. Поэтому службы IIS прекратили выполнение рабочего процесса.  
   
  Чтобы продолжить отладку, необходимо настроить IIS на разрешение продолжения рабочего процесса. Такое сообщение об ошибке не появляется при использовании версий IIS, предшествующих IIS 7.  

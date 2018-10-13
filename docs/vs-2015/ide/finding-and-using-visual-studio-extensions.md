@@ -1,7 +1,7 @@
 ---
 title: Поиск и использование расширений Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e05d9cf092d3f6cca3d7ef674c3f2bf137a0896f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268181"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Поиск и использование расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [поиск и использование расширений Visual Studio](https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions).  
-  
 Расширения Visual Studio — это пакеты кода, которые выполняются в Visual Studio и предоставляют новые или улучшенные функции Visual Studio. Дополнительные сведения о расширениях Visual Studio см. здесь: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  С помощью диалогового окна **Расширения и обновления** можно установить расширения и примеры Visual Studio с веб-сайтов и из других источников, а затем включить, отключить, обновить или удалить их. (**Сервис/расширения и обновления**, или введите **Расширения** в окне **Быстрый запуск** ). В диалоговом окне также показаны обновления для установленных образцов и расширений. Можно также загрузить расширения с веб-сайтов или получить их у других разработчиков.  

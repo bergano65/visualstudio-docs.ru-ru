@@ -1,7 +1,7 @@
 ---
 title: Работа с несколькими учетными записями пользователей | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176271"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [работать с несколькими учетными записями](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts).  
-  
 Если у вас несколько учетных записей Майкрософт и рабочих учетных записей, их все можно добавить в Visual Studio, чтобы ресурсы всех учетных записей были доступны из любой учетной записи, с помощью которой выполнен вход. На момент выхода Visual Studio 2015 RTM службы Azure, Application Insights, Team Foundation Server и Office 365 поддерживают упрощенную процедуру входа в систему. С течением времени будут доступны дополнительные службы.  
   
  Учетные записи, добавленные на одном компьютере, будут перемещаться вместе с вами, если вход в Visual Studio выполняется с другого компьютера. Обратите внимание, что, несмотря на перемещение имен учетных записей, учетные данные не перемещаются. Таким образом, при первом использовании ресурсов на новом компьютере вам будет предложено ввести учетные данные для этих учетных записей.  

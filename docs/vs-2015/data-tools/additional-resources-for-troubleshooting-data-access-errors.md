@@ -1,7 +1,7 @@
 ---
 title: Дополнительные ресурсы для устранения неполадок данных с ошибками доступа к | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -234,18 +234,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3971ac35e308c134fbf0f25fc2ed05e741616e8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263027"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения ошибки доступа к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [дополнительные ресурсы для устранения неполадок данных с ошибками доступа к](https://docs.microsoft.com/visualstudio/data-tools/additional-resources-for-troubleshooting-data-access-errors).  
-  
   
 На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены данные ссылки на форумы в сети MSDN.  
   

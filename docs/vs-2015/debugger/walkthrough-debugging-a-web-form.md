@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Отладка веб-формы | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,22 +28,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275136"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: отладка веб-формы](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form).  
-  
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], также известных как веб-формы. Оно показано, как для запуска и остановки выполнения, задавать точки останова и просматривать переменные в **Watch** окна.  
   
 > [!NOTE]
->  Для выполнения данного руководства необходимо обладать правами администратора на сервере. По умолчанию процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe или w3wp.exe, выполняется как процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо обладать правами администратора на компьютере, на котором выполняется [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения см. в разделе [требования к системе](../debugger/aspnet-debugging-system-requirements.md).  
+>  Для выполнения данного руководства необходимо обладать правами администратора на сервере. По умолчанию процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe или w3wp.exe, выполняется как процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо обладать правами администратора на компьютере, на котором выполняется [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

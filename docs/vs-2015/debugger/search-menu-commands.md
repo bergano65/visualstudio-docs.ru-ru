@@ -1,7 +1,7 @@
 ---
 title: Поиск команды меню | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4781251bb367c06424979d053ec795316f1d817c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfa037cd2bb6555b8249e0cd405d301156391638
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272393"
 ---
 # <a name="search-menu-commands"></a>Команды меню "Поиск"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команды меню "Поиск"](https://docs.microsoft.com/visualstudio/debugger/search-menu-commands).  
-  
 **Поиска** меню доступны команды для поиска конкретного окна.  
   
  **Найти окно/процесс/поток/сообщение**  

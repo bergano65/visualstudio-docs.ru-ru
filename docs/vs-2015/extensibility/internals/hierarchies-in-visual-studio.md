@@ -1,7 +1,7 @@
 ---
 title: Иерархии в Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250657"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Иерархии в Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [иерархий в Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Интегрированной среды разработки (IDE) выводит проект как *иерархии*. В интегрированной среде разработки иерархия представляет собой дерево узлов, где каждый узел имеет набор связанных свойств. Объект *проекта иерархии* — это контейнер, в которой хранятся элементы проекта, связей элементов и связанных свойств элементов и команд.  
   
  В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], управление иерархий проектов с помощью интерфейса иерархии, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Интерфейс перенаправляет команды, вызываемой из элементов проекта для в соответствующее окно иерархии вместо стандартного обработчика команд.  

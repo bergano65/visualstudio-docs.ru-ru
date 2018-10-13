@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: Включение автозапуска при установке с компакт-диска | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7a0f7228e4340763104f38dc56e5e8603ed85408
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273147"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Практическое руководство. Включение автозапуска при установке с компакт-диска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Включение автозапуска для компакт-диска установки](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-autostart-for-cd-installations).  
-  
 При развертывании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения с помощью съемного носителя, например компакт-диска или DVD-диска, вы можете включить `AutoStart` таким образом, чтобы [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение запускается автоматически при вставке носителя.  
   
  `AutoStart` можно включить на **публикации** странице **конструктор проектов**.  

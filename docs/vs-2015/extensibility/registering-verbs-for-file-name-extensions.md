@@ -1,7 +1,7 @@
 ---
 title: Регистрация команд для расширений имен файлов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196330"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [регистрации команд для расширений имен файлов](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions).  
-  
 Сопоставление расширения имени файла с приложением, как правило, имеет предпочитаемым действием, которое происходит при двойном щелчке файла. Этот предпочитаемый действия связанного действия, например открытым, соответствующее действие.  
   
  Вы можете зарегистрировать команд, которые связаны с программный идентификатор (ProgID) для расширения с помощью оболочки раздел, расположенный в HKEY_CLASSES_ROOT\\*progid*\shell. Дополнительные сведения см. в разделе [типы файлов](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  

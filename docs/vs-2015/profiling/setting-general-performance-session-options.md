@@ -1,7 +1,7 @@
 ---
 title: Настройка общих параметров сеанса производительности | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256780"
 ---
 # <a name="setting-general-performance-session-options"></a>Настройка общих параметров сеанса производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [параметр общих параметров сеанса производительности](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options).  
-  
 Вы можете настроить соглашения об именовании данных профилирования и методов сбора для сеанса производительности Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на странице **Общие** в диалоговом окне свойств сеанса. Чтобы открыть это диалоговое окно из **обозревателя производительности**, щелкните правой кнопкой мыши сеанс анализа производительности и выберите пункт **Свойства**.  
   
  **Требования**  

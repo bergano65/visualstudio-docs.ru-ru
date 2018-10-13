@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetProcess | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82ff7e571c9f9240dcf4febf9adf2360cc058519
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ef273dd23d7d9cd5954e25db18bf4ef60a5e0e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243351"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IDebugPort2::GetProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-getprocess).  
-  
 Получает указанный процесс, работающий с портом.  
   
 ## <a name="syntax"></a>Синтаксис  

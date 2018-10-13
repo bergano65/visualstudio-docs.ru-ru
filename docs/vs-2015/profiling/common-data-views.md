@@ -1,7 +1,7 @@
 ---
 title: Представления общих данных | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255883"
 ---
 # <a name="common-data-views"></a>Представления общих данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [представления общих данных](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.  
   
 ## <a name="in-this-section"></a>В этом разделе  

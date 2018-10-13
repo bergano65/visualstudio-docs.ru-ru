@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: использовать XML-фрагменты | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245860"
 ---
 # <a name="how-to-use-xml-snippets"></a>Как использовать XML-фрагменты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: использование XML-фрагменты](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets).  
-  
   
 Можно вызывать XML-фрагменты с помощью следующих двух команд из контекстного меню XML Editor. **Вставить фрагмент** команда вставляет фрагмент кода XML в позиции курсора. **Окружить** команда создает оболочку для XML-фрагмент вокруг выбранного текста. Для каждого XML-фрагмента имеются назначенные типы фрагментов. Типы фрагментов определяют ли фрагмент доступен с **вставить фрагмент** команде **окружить** или для обеих команд.  
   

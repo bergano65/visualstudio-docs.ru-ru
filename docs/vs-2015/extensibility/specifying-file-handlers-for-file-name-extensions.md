@@ -1,7 +1,7 @@
 ---
 title: Указание обработчиков файлов для расширений имен файлов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7805cd0f146289e6993971805107faca5cf42920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198436"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Указание обработчиков файлов для расширений имен файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [указание обработчиков файлов для расширений имен файлов](https://docs.microsoft.com/visualstudio/extensibility/specifying-file-handlers-for-file-name-extensions).  
-  
 Существует ряд способов для определения приложения, который обрабатывает файл, который имеет расширение определенного файла. Команды OpenWithList и подключу можно двумя способами указание обработчиков файлов в запись реестра для расширения файла.  
   
 ## <a name="openwithlist-verb"></a>Команда OpenWithList  

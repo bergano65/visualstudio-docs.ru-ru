@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Связывание основного приложения с генерируемым обработчиком директив | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251943"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: подключение узла к процессора директив создается](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor).  
-  
 Вы можете написать собственный узел, который обрабатывает текстовые шаблоны. Демонстрируется базовый пользовательского ведущего приложения в [Пошаговое руководство: Создание пользовательского хост текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md). Можно расширить для добавления функций, таких как создание нескольких выходных файлов, на которых размещены.  
   
  В этом пошаговом руководстве разверните вашего пользовательского ведущего приложения так, чтобы она поддерживала текстовые шаблоны, которые вызывают процессоры директив. При определении доменного языка, он создает *процессора директив* для доменной модели. Процессор директив помогает пользователям создавать шаблоны, которые обращаются к модели, уменьшая необходимость создать сборку и импортировать директивы в шаблонах.  

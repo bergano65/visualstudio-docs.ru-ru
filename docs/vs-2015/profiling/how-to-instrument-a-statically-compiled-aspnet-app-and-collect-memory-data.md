@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор данных по использованию памяти с помощью командной строки профилировщика | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cde707310ba6a1ac8eaab4e278b5c51a61d8133
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 271767db2d1648ca5825d7d2615e99f36704c082
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198787"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: инструментирование статически скомпилированные веб-приложения ASP.NET и сбор данных памяти с помощью командной строки Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line).  
-  
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования предварительно скомпилированного веб-компонента или веб-сайта [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и сбора данных по выделению памяти .NET, времени существования объектов и подробных сведений об использовании времени.  
   
 > [!NOTE]
@@ -74,7 +72,7 @@ ms.locfileid: "48880907"
     > [!NOTE]
     >  Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Задает необязательный домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, который выполнил вход в систему. Имя указывается в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
     |[/crossession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**.|  
@@ -92,7 +90,7 @@ ms.locfileid: "48880907"
   
 -   Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

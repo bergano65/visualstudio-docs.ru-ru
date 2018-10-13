@@ -1,7 +1,7 @@
 ---
 title: Структурирование в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263228"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Структурирование в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [структурирование в языковой службе прежних версий](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service).  
-  
 Структурирование позволяет свернуть сложную программу в обзор или структуры. Например в C# можно свернуть все методы в одну строку, содержащую только сигнатуру метода. Кроме того структуры и классы можно свернуть, чтобы отобразить только имена структур и классов. Из единственного метода сложную логику можно свернуть, чтобы показать Общая последовательность действий, отображая только первая часть инструкции, такие как `foreach`, `if`, и `while`.  
   
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: структурирование](../../extensibility/walkthrough-outlining.md).  

@@ -1,7 +1,7 @@
 ---
 title: Продукт и справочник по схемам пакета | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271041"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [продукта и справочник по схемам пакета](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.  
   
  Файл продукта и пакета состоит из верхнего уровня `Product` или `Package` элемент, каждый из которых содержит следующие элементы.  
@@ -169,7 +167,7 @@ ms.locfileid: "47571952"
   
 ## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

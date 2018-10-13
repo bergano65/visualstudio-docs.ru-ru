@@ -1,7 +1,7 @@
 ---
 title: Отладка стилей CSS с использованием проводника DOM | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220747"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Отладка стилей CSS с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [стилей CSS, отладка с использованием проводника DOM](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer).  
-  
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
  При отладке приложений Магазина Windows, приложений Магазина Windows Phone и приложений, созданных с помощью инструментов Visual Studio для Apache Cordova, можно просматривать и изменять правила CSS для выбранных элементов DOM и их дочерних элементов.  
@@ -58,7 +56,7 @@ ms.locfileid: "47570972"
 >  Изменения, вносимые для стилей на вкладках **Стили** и **Вычисленные** , не являются окончательными. При остановке отладки они удаляются. Чтобы изменить исходный код и перезагрузить страницы, не останавливая и не перезапуская отладчик, обновите приложение с помощью ![кнопкой "Обновить Windows-приложение"](../debugger/media/js-refresh.png "JS_Refresh") кнопки (**приложения обновления Windows** ) на **Отладка** инструментов (Windows Store и Windows Phone Store только для приложений). Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Пример исправления правила CSS  
- В этом примере продемонстрированы процедуры проверки правил CSS и отладки проблем со стилями. Предположим, нам нужно изменить цвет шрифта, используемого для заголовков групп в приложении, созданном на базе шаблона приложения с разделением [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
+ В этом примере продемонстрированы процедуры проверки правил CSS и отладки проблем со стилями. Предположим, нам нужно изменить цвет шрифта, используемого для заголовков групп в приложении, созданном на базе шаблона приложения с разделением [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
   
 > [!NOTE]
 >  В этом примере показано приложение Магазина Windows, но все сведения о компонентах проводника DOM справедливы и для приложения Магазина Windows Phone, а также, за исключением вкладки "Изменения", для приложения, созданного с помощью инструментов Visual Studio для Apache Cordova.  
@@ -167,7 +165,7 @@ ms.locfileid: "47570972"
  [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)   
- [Поддержка продукта и специальные возможности](http://go.microsoft.com/fwlink/?LinkId=253502)
+ [Поддержка и специальные возможности продукта](http://go.microsoft.com/fwlink/?LinkId=253502)
 
 
 

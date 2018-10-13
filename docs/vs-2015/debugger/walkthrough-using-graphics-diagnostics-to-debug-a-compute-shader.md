@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Использование диагностики графики для отладки вычислительного шейдера | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250150"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: использование диагностики графики для отладки вычислительного шейдера](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader).  
-  
 В этом пошаговом руководстве демонстрируется использование инструментов диагностики графики Visual Studio для анализа вычислительного шейдера, который выдает неверные результаты.  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
@@ -41,7 +39,7 @@ ms.locfileid: "47571938"
   
  ![Имитация жидкости ведет себя неправильно. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- Сведения о том, как записывать проблемы с графикой в журнал графики, см. в разделе [захват графической информации](../debugger/capturing-graphics-information.md).  
+ Сведения о том, как записывать проблемы с графикой в журнал графики, см. в статье [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Исследование  
  Вы можете использовать инструменты диагностики графики для загрузки файла журнала графики, чтобы можно было просмотреть записанные кадры.  

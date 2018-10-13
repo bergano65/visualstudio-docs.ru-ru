@@ -1,7 +1,7 @@
 ---
 title: Настройка текста полей и изображениями | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271132"
 ---
 # <a name="customizing-text-and-image-fields"></a>Настройка полей с текстом и изображениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка текст и изображение поля](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 При определении текстовый декоратор фигуры, он представлен TextField. Примеры инициализацию TextFields и других которым ShapeFields проверьте Dsl\GeneratedCode\Shapes.cs в решение DSL.  
   
  TextField — это объект, который управляет область внутри фигуры, такие как пространство, назначенное метку. Один экземпляр TextField совместно используется много фигур того же класса. Текст подписи отдельно для каждого экземпляра экземпляра TextField не хранит: вместо этого `GetDisplayText(ShapeElement)` метод принимает форму в качестве параметра, а также выполнять поиск текста, зависит от текущего состояния фигуры и его элемента модели.  

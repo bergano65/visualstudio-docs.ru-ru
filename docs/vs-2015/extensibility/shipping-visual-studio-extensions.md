@@ -1,7 +1,7 @@
 ---
 title: Доставка расширений Visual Studio | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260194"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Примечание**: The Visual Studio из галереи заменяется в Visual Studio Marketplace. См. в разделе последнюю версию этого раздела за сведениями.
 
-Последнюю версию этого раздела можно найти в [доставка расширений Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 После завершения разработки расширения, можно установить его на других компьютерах, поделиться с друзьями и коллегами или опубликовать его в коллекции Visual Studio. В этом разделе мы расскажем, все, что необходимо сделать, чтобы публикуйте и обслуживайте расширения: работа с VSIX-файлы, публикации, локализация и обновления.  
   

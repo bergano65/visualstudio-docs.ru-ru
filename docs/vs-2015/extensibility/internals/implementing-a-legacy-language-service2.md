@@ -1,7 +1,7 @@
 ---
 title: Реализация языковой службы прежних версий2 | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b812fd0cc54f117e89d09f151293eec1cf6fe8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253127"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [реализации языковой службы прежних версий2](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-a-legacy-language-service2).  
-  
 Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>;  
+-   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
   
 -   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
   

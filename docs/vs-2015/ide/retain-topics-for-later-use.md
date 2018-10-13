@@ -1,7 +1,7 @@
 ---
 title: Сохранение разделов для дальнейшего использования | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a457a27be79f925039031ebcf2657085ab1b4a5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2df1a95dacf7dc57817a6167cebc48d42d275cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275123"
 ---
 # <a name="retain-topics-for-later-use"></a>Сохранение разделов для дальнейшего использования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Сохранение разделов для последующего использования](https://docs.microsoft.com/visualstudio/ide/retain-topics-for-later-use).  
-  
 Полезные статьи можно сохранить, скопировав и вставив их в текстовый файл, распечатав или добавив в избранное. Например, можно сохранить материалы справки на будущее, открыв контекстное меню для соответствующей темы и выбрав команду **Копировать**, **Печать**, **Предварительный просмотр** или **Добавить в избранное**.  
   
 ## <a name="using-the-favorites-tab"></a>Использование вкладки "Избранное"  

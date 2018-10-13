@@ -1,7 +1,7 @@
 ---
 title: Учебное руководство 2. Создание математической головоломки с ограничением по времени | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ec4c1bd1c01229ab0c8f32a78e2b7483a1efc06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205079"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание ограниченной по времени математической головоломки
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание математической головоломки с ограничением по времени
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Учебное руководство 2: создание, истекло время ожидания Математическая головоломка](https://docs.microsoft.com/visualstudio/ide/tutorial-2-create-a-timed-math-quiz).  
-  
 В этом учебнике вам предстоит создать головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Вы научитесь:  
   
 -   Создавать случайные числа с помощью класса `Random`.  

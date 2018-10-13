@@ -1,7 +1,7 @@
 ---
 title: Начало разработки в Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261512"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [начало разработки в Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio).  
-  
 Вас приветствует Visual Studio! После того как вы [скачаете](http://www.visualstudio.com/community) продукт, сведения на этих страницах помогут вам начать работу по созданию кода.  
   
 -   **[Создание веб-приложений](https://www.visualstudio.com/features/modern-web-tooling-vs):** средства для создания и развертывания современных веб-приложений.  
@@ -40,7 +38,7 @@ ms.locfileid: "47568349"
   
 -   **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**: начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.  
   
-     Загрузить пример:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (собственный пользовательский Интерфейс) или [пример Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский Интерфейс Xamarin.Forms) &#124; [пройти обучение](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Обзор документы](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [ознакомьтесь с видео                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Загрузить пример:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (собственный пользовательский Интерфейс) или [пример Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский Интерфейс Xamarin.Forms) &#124; [пройти обучение](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Обзор документы](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [ознакомьтесь с видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[Создание кроссплатформенных приложений и библиотек на C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Перейдите сюда, чтобы начать создавать приложения и библиотеки C++, которые работают на Android, iOS и универсальной платформе Windows.  
   

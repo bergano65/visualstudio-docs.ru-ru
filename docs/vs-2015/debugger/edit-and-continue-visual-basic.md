@@ -1,7 +1,7 @@
 ---
 title: Изменить и продолжить (Visual Basic) | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265131"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [изменить и продолжить (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
-  
 "Изменить и продолжить" — это режим [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.  
   
  Можно использовать режим "Изменить и продолжить" всякий раз в режиме приостановки. В режиме приостановки указатель инструкций (желтая стрелка в окне исходного кода) указывает на строку, которая будет выполнена следующей и которая является исполняемой инструкцией в теле метода или свойства. В режиме приостановки можно вносить практически любые изменения в исполняемые инструкции, и они будут включены в проект. В режиме приостановки, однако, в общем случае запрещено изменение объявлений — открытых методов, открытых полей, объявлений классов.  

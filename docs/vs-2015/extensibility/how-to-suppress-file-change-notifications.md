@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отключить уведомления об изменении файла | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257521"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Практическое: отключить уведомления об изменении файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отключить уведомления об изменении файла](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 При изменении физического файла, представляющий текстовый буфер, откроется диалоговое окно с сообщением **вы хотите сохранить изменения следующих элементов?** Это называется уведомления об изменении файла. Если много изменений будут в файл, тем не менее, это диалоговое окно, отображающее снова и снова может быстро стать раздражает.  
   
  Программным способом, можно отключить это диалоговое окно, используя следующую процедуру. Таким образом, можно перезагрузить файл немедленно без необходимости запрашивать пользователя, чтобы сохранить изменения, каждый раз.  

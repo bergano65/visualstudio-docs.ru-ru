@@ -1,7 +1,7 @@
 ---
 title: Маркеры сообщений | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2487466518622ebd1b2a52c4e4697be23a40d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269952"
 ---
 # <a name="message-markers"></a>Маркеры сообщений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [маркеры сообщений](https://docs.microsoft.com/visualstudio/profiling/message-markers).  
-  
 Маркер сообщения представляет выходные данные журнала. Сообщение — это строка, созданная конкретным потоком в определенное время. Сообщения можно экспортировать в текстовый файл для использования с другими средствами. Наведите указатель на сообщении в визуализаторе параллелизма, чтобы просмотреть строку сообщения. Все маркеры сообщений можно просмотреть в [отчете по маркерам](../profiling/markers-report.md).  На следующем рисунке показан маркер сообщения.  
   
 ## <a name="message-aggregation-markers"></a>Маркеры объединенных сообщений  

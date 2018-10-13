@@ -1,7 +1,7 @@
 ---
 title: 'Практическое: отладка в высокопроизводительном кластере | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ce148ab317b14aad6cd1e2c48a6f9245c81df98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5d57e1ff9a4ab082698b1c5d31b09a668cdc1c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47570367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262554"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Практическое руководство. Отладка в высокопроизводительном кластере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: отладка в высокопроизводительном кластере](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-on-a-high-performance-cluster).  
-  
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
   
  При отладке на кластере высокой производительности можно использовать все окна отладки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и методы, которые доступны для удаленной отладки. Однако, так как отладка происходит удаленно, то внешнее окно консоли не доступно.  

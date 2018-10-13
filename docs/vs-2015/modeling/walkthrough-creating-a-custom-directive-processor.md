@@ -1,7 +1,7 @@
 ---
 title: 'Пошаговое руководство: Создание пользовательского процессора директив | Документация Майкрософт'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6e9a46f5f686182fe78164499a8370e96ba87a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274694"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Пошаговое руководство: Создание пользовательского процессора директив](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-directive-processor).  
-  
 Директивы процессоров * работы путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.  
   
  Можно написать собственные пользовательские процессоры директив. Это позволяет настраивать текстовые шаблоны. Для создания пользовательского процессора директив создается класс, наследующий <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> либо <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

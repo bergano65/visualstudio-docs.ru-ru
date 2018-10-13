@@ -1,7 +1,7 @@
 ---
 title: Миграция языковой службы прежних | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a9cd6edb18f33a87f81d36feea55a26c0ed1e78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561674"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247315"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [миграция языковой службы прежних](https://docs.microsoft.com/visualstudio/extensibility/internals/migrating-a-legacy-language-service).  
-  
 Можно перенести языковой службы прежних версий до более поздней версии Visual Studio путем обновления проекта и добавление в проект файл source.extension.vsixmanifest. Сама служба языка будет продолжать работать по-прежнему, так как в редакторе Visual Studio адаптирует его.  
   
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).  

@@ -1,7 +1,7 @@
 ---
 title: Настройка модели с помощью профилей и стереотипов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dd494b475b5d9068597857a2f4df12e5fed8e2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a64fa754d2693f6ea469eb2ec211935c896ebb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254950"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Настройка модели с помощью профилей и стереотипов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [Настройка модели с помощью профилей и стереотипов](https://docs.microsoft.com/visualstudio/modeling/customize-your-model-with-profiles-and-stereotypes).  
-  
 В Visual Studio стандартные элементы модели UML, например классы и компоненты, можно адаптировать для определенных целей. Можно применить *стереотип* к элементу модели, можно изменить список свойств этого элемента. Стереотипы определяются в коллекциях, которые называются *профили*.  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

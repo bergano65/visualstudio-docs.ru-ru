@@ -1,7 +1,7 @@
 ---
 title: Использование сети | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e324f81d4f7580a25f0f2b5c1850c1343a85c6ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227751"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [анализ использования сети для приложений UWP в Visual Studio](https://docs.microsoft.com/visualstudio/profiling/network-usage).  
-  
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
   
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
@@ -38,7 +36,7 @@ ms.locfileid: "47564278"
   
 1.  Откройте проект в Visual Studio.  
   
-2.  В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
+2.  В меню выберите **Отладка, Профилировщик производительности**. Выберите Сеть и нажмите кнопку **Запуск**.  
   
 3.  Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
   

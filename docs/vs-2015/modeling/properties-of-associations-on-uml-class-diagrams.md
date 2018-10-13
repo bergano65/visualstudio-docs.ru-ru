@@ -1,7 +1,7 @@
 ---
 title: Свойства ассоциаций на UML схемах классов | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252074"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Свойства ассоциаций на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [свойства ассоциаций на UML схемах классов](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 В схеме классов UML, можно нарисовать *ассоциации* между любой парой типов. Тип — это класс, интерфейс или перечисление.  
   
  Ассоциация показывает, что разрабатываемая система содержит определенные связи между экземплярами связанных типов. Как правило, ассоциация не сообщает никаких сведений о реализации связей. Например, это могут быть указатели, строки в таблице, имена в XML, на которые даются перекрестные ссылки, и т. д.  

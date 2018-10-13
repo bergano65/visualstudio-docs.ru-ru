@@ -1,7 +1,7 @@
 ---
 title: Основные сведения о коде доменных ЯЗЫКОВ | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d92a14466b7ca915b70bd0cad096266160e5994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47561596"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251164"
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [основные сведения о коде доменных ЯЗЫКОВ](https://docs.microsoft.com/visualstudio/modeling/understanding-the-dsl-code).  
-  
 Доменный язык (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.  
   
 ## <a name="the-example-solution-component-diagrams"></a>Пример решения: схемы компонентов  

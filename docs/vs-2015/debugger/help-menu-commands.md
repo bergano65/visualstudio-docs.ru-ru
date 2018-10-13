@@ -1,7 +1,7 @@
 ---
 title: Команды меню "Справка" | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20c1b07f535e6976c2bd95f29eb76bafdca5e0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e3d2c63c64a0204962137a5a051c8682ac4794f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255792"
 ---
 # <a name="help-menu-commands"></a>Команды меню "Справка"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команды меню справки](https://docs.microsoft.com/visualstudio/debugger/help-menu-commands).  
-  
 **Помочь** меню предоставляет команды, чтобы открыть файлы справки.  
   
- **Индекс**  
+ **Index**  
  Открывает экран содержимое справки по Spy ++.  
   
  **Использование справки**  

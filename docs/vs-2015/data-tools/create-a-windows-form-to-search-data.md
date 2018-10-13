@@ -1,7 +1,7 @@
 ---
 title: Создайте форму Windows для поиска данных | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a64377e2689ca4e5111f316c13808aee6cfb59be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47569728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270625"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Создание формы Windows Forms для поиска данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [создать форму Windows для поиска данных](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-form-to-search-data).  
-  
   
 Довольно распространенным сценарием приложения является отображение выбранных данных на форме. Например, вам может потребоваться отобразить заказы для определенного клиента или сведения о конкретном заказе. В таком сценарии пользователь вводит в форму информацию, после чего выполняется запрос, включающий в себя эти введенные пользователем данные в качестве параметра; таким образом, данные выбираются на основе параметризированного запроса. Запрос возвращает только те данные, которые удовлетворяют введенным пользователем условиям. Это пошаговое руководство показывает, как создать запрос, возвращающий клиентов из определенного города, и изменить пользовательский интерфейс, чтобы пользователи могли ввести название города и нажать кнопку для выполнения запроса.  
   

@@ -1,7 +1,7 @@
 ---
 title: Диалоговом окне схем XML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d388dc928b2f15c084034831a4b05f9d6420a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47560709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251697"
 ---
 # <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схемы»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [диалоговом окне схем XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schemas-dialog-box).  
-  
   
 **XML-схем** диалоговое окно используется для выбора какие схем XML схеме определения языка XSD для связывания с XML-документа. Можно выбрать схему из кэша схем или указать схему, которая не находится в кэше. Выбранные схемы считаются частью набора схем. Наборы схем применяются в технологии IntelliSense, а также служат для проверки правильности XML-документов.  
   

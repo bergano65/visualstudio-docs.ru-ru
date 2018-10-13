@@ -1,7 +1,7 @@
 ---
 title: Рабочая область конструктора схем XML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47559167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240959"
 ---
 # <a name="xml-schema-designer-workspace"></a>Рабочая область конструктора XML-схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [рабочей области конструктора схем XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace).  
-  
   
 Конструктор XML-схем (конструктор XSD) является графическим инструментом, позволяющим просматривать XML-схемы. В дополнение к [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), который позволяет просматривать и перемещаться по дереву XML-схемы и выполнять поиск, конструктор XSD предоставляет три представления, которые позволяют изучить более подробно XSD-схемы. Начальное представление является точкой запуска конструктора XSD; из начального представления можно переходить к другим представлениям конструктора XSD и просматривать подробные сведения о наборе схем. Представление графика позволяет просматривать общие сведения о наборе схем и связях между узлами схемы. Представление модели содержимого предоставляет графическое представление подробных сведений о локальных и глобальных узлах схемы, включая простые и сложные типы, элементы, группы, атрибуты и группы атрибутов.  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273095"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Шрифт среды разработки
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Возвращает логическое значение? (обнуляемое логическое значение) с `DialogResult`, который можно использовать при необходимости. Возвращает значение true, если диалоговое окно было закрыто с **ОК**.  
   
- Если необходимо отображать пользовательский Интерфейс WPF, это не окно сообщения, а также размещается в отдельном `HwndSource`, например всплывающее окно или дочернего окна WPF в окне Win32/WinForms родительского окна, необходимо задать `FontFamily` и `FontSize` на корневой элемент WPF e реализовать. (Оболочки задает свойства в главном окне, но они не наследуются за `HWND`). Оболочка предоставляет ресурсы, к которым могут быть связаны свойства, следующим образом:  
+ Если необходимо отображать пользовательский Интерфейс WPF, это не окно сообщения, а также размещается в отдельном `HwndSource`, например всплывающее окно или дочернего окна WPF родительского окна Win32/WinForms, необходимо задать `FontFamily` и `FontSize` в корневом элементе элемента WPF. (Оболочки задает свойства в главном окне, но они не наследуются за `HWND`). Оболочка предоставляет ресурсы, к которым могут быть связаны свойства, следующим образом:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

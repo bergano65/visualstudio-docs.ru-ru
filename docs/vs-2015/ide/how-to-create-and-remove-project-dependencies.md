@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание и удаление зависимостей проекта | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3626cc4c13600b0a6f20cc40713bd77f4527a3ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247713"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Практическое руководство. Создание и удаление зависимостей проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [как: Создание и удаление зависимостей проекта](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-remove-project-dependencies).  
-  
 При создании решения, содержащего несколько проектов, может потребоваться выполнить сначала сборку отдельных проектов для создания кода, используемого последующими проектами. Когда проект использует исполняемый код, создаваемый другим проектом, последний называется зависимостью первого. Такие отношения зависимости можно определить в диалоговом окне **Зависимости проектов**.  
   
 ### <a name="to-assign-dependencies-to-projects"></a>Назначение зависимостей проектам  

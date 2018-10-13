@@ -1,7 +1,7 @@
 ---
 title: Перечислитель кода состояния каталога | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24f6dde65def4569eb8163d281f872011be0275c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47571465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264079"
 ---
 # <a name="directory-status-code-enumerator"></a>Перечислитель кода состояния каталога
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [перечислитель кода состояния каталога](https://docs.microsoft.com/visualstudio/extensibility/directory-status-code-enumerator).  
-  
 `SccDirStatus` Перечислитель содержит именованные константы, определяющие состояние каталога в системе управления версиями. Это перечисление используется с [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Это была введена в версии 1.2 API подключаемых модулей управления источника.  
   
 ## <a name="syntax"></a>Синтаксис  

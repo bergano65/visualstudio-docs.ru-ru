@@ -1,7 +1,7 @@
 ---
 title: Отладчик шейдеров HLSL | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1f2fe68cf380016adf4efc6b731b29843503638
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174191"
 ---
 # <a name="hlsl-shader-debugger"></a>Отладчик HLSL шейдера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [отладчик шейдеров HLSL](https://docs.microsoft.com/visualstudio/debugger/graphics/hlsl-shader-debugger).  
-  
 Отладчик HLSL в анализаторе графики Visual Studio помогает понять, как работает код шейдера HLSL в реальных условиях использования приложения.  
   
  Это отладчик HLSL:  

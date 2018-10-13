@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194718"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [IntelliSense для JavaScript](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense помогает быстрее писать код, допуская при этом меньше ошибок, что достигается благодаря предоставлению сведений в процессе программирования. В ходе работы со скриптом клиента редактора JavaScript IntelliSense выводит списки доступных объектов, функций, свойств и параметров в зависимости от текущего контекста. Вариант кода можно выбрать из всплывающего списка, формируемого IntelliSense для завершения кода.  
   
  С помощью IntelliSense выполнение следующих задач становится проще:  

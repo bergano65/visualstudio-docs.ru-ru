@@ -1,7 +1,7 @@
 ---
 title: Команды конструктора | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47572694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252472"
 ---
 # <a name="command-design"></a>Конструктор команд
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [конструктор команд](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design).  
-  
 При добавлении команды VSPackage, необходимо указать которых может отображаться, когда он становится доступен, и способ их обработки.  
   
 ## <a name="defining-commands"></a>Определение команд  
- Чтобы определить новые команды, включите файл Visual Studio Command Table (.vsct) в проект VSPackage. Если вы создали VSPackage с помощью шаблона пакета Visual Studio, проект содержит один из этих файлов. Дополнительные сведения см. в разделе [Visual Studio Command Table (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Чтобы определить новые команды, включите файл Visual Studio Command Table (.vsct) в проект VSPackage. Если вы создали VSPackage с помощью шаблона пакета Visual Studio, проект содержит один из этих файлов. Дополнительные сведения см. в разделе [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
  Visual Studio объединяет все файлы .vsct, найденную может отображать его команды. Поскольку эти файлы отличаются от двоичных VSPackage, загрузить пакет, чтобы найти команды имеет Visual Studio. Дополнительные сведения см. в разделе [как пакеты VSPackage добавить элементы пользовательского интерфейса](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   

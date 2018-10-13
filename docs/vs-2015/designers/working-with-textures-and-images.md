@@ -1,7 +1,7 @@
 ---
 title: Работа с текстурами и изображениями | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250501"
 ---
 # <a name="working-with-textures-and-images"></a>Работа с текстурами и изображениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [работа с текстурами и изображениями](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images).  
-  
 Редактор изображений в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно использовать для создания и редактирования текстур и изображений. Редактор изображений поддерживает широкий диапазон форматов изображений и текстур, аналогичных тем, которые используются при разработке приложений DirectX.  
   
 > [!NOTE]
@@ -56,7 +54,7 @@ ms.locfileid: "47558377"
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
-|[Редактор изображений](../designers/image-editor.md)|Сведения об использовании редактора изображений для работы с текстурами и изображениями.|  
+|[Image Editor](../designers/image-editor.md)|Сведения об использовании редактора изображений для работы с текстурами и изображениями.|  
 |[Примеры редактора изображений](../designers/image-editor-examples.md)|Раздел содержит ссылки на статьи, в которых демонстрируется использование редактора изображений для выполнения распространенных задач обработки изображений.|
 
 

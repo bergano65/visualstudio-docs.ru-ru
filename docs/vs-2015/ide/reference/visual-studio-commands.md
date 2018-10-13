@@ -1,7 +1,7 @@
 ---
 title: Команды Visual Studio | Документы Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28d7bcbb9f25667ba3e03cbad8935e8eef203036
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b1c3756075bb4a5892b9d57c0e6ba497eea3d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47563751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228141"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [команды Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-commands).  
-  
   
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.  
   
@@ -78,7 +76,7 @@ ms.locfileid: "47563751"
 |[Задать текущий кадр стека](../../ide/reference/set-current-stack-frame-command.md)|Позволяет просматривать определенный кадр стека.|  
 |[Задать текущий поток](../../ide/reference/set-current-thread-command.md)|Позволяет просматривать определенный поток.|  
 |[Задать основание системы счисления](../../ide/reference/set-radix-command.md)|Определяет количество байтов для просмотра.|  
-|[Оболочка](../../ide/reference/shell-command.md)|Запускает программы изнутри [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], как если бы команда выполнялась из командной строки.|  
+|[Оболочка](../../ide/reference/shell-command.md)|Запускает программы изнутри [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , как если бы команда выполнялась из командной строки.|  
 |[Команда ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Отображает URL-адрес, указанный в окне браузера внутри или вне интегрированной среды разработки (IDE).|  
 |[Запуск](../../ide/reference/start-command.md)|Начинает процесс отладки и позволяет указать способ обработки ошибок.|  
 |[Путь](../../ide/reference/symbol-path-command.md)|Задает список каталогов для поиска символов отладчиком.|  
@@ -88,7 +86,7 @@ ms.locfileid: "47563751"
 ## <a name="see-also"></a>См. также  
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

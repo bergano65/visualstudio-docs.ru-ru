@@ -1,7 +1,7 @@
 ---
 title: Определение ограничений проверки для моделей UML | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,33 +14,31 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176544"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Определение ограничений проверки для моделей UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение ограничений проверки для моделей UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Вы можете определить ограничения проверки, чтобы узнать, соответствует ли модель заданному условию. Например, можно определить ограничение, чтобы убедиться в том, что пользователь не создает цикл отношений наследования. Ограничение вызывается, когда пользователь пытается открыть или сохранить модель, но также может вызываться вручную. Если происходит сбой ограничения, в окно ошибок добавляется заданное вами сообщение об ошибке. Вы можете упаковать эти ограничения в расширение Visual Studio Integration Extension ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) и распространить их другим пользователям Visual Studio.  
   
  Можно также определить ограничения, проверяющие модель на соответствие внешним ресурсам, таким как базы данных. Если вы хотите проверить код программы по схеме слоев, см. в разделе [Добавление пользовательской проверки архитектуры в схемы слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="requirements"></a>Требования  
- См. в разделе [требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="applying-validation-constraints"></a>Применение ограничений проверки  
  Ограничения проверки применяются в трех случаях: при сохранении модели, при открытии модели и при выборе пункта **Проверить модель UML** в меню **Архитектура** . В каждом случае применяются только те ограничения, которые были определены для этого варианта, хотя обычно каждое из ограничений применяется в нескольких случаях.  
   
- Ошибки проверки регистрируются в окне ошибок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], кроме того, можно дважды щелкнуть ошибку для выбора элементов модели с такой ошибкой.  
+ Ошибки проверки регистрируются в окне ошибок [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Кроме того, можно дважды щелкнуть ошибку для выбора элементов модели с такой ошибкой.  
   
  Дополнительные сведения о применении проверки см. в разделе [проверка модели UML](../modeling/validate-your-uml-model.md).  
   
@@ -120,7 +118,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Эта процедура не требуется, если класс проверки создан со своим собственным расширением VSIX на основе шаблона проекта проверки.  
   
-2.  В проекте класса проверки добавьте ссылки на следующие сборки [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]:  
+2.  В проекте класса проверки добавьте ссылки на следующие сборки [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] :  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -190,17 +188,17 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Нажмите клавишу **F5**или выберите команду **Начать отладку** в меню **Отладка**.  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
+     **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
   
     -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
   
-    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка, содержащаяся в **запуск внешней программы** поле — это полный путь [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:  
+    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь в том, что строка в поле Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; обычно она имеет следующий вид:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте проект моделирования и схему моделирования.  
+2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования.  
   
 3.  Чтобы настроить тест для примера ограничения, приведенного в предыдущем разделе, выполните указанные ниже действия.  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- См. в разделе [программирование с UML API](../modeling/programming-with-the-uml-api.md) сведения о методах и типах, можно использовать для чтения модели и навигации по.  
+ В разделе [Programming with the UML API](../modeling/programming-with-the-uml-api.md) приведены сведения о методах и типах, которые можно использовать для чтения модели и навигации по ней.  
   
 ### <a name="about-validation-constraint-methods"></a>Сведения о методах ограничения проверки  
  Каждое ограничение проверки определяется методом следующей формы:  
@@ -381,7 +379,7 @@ context.LogError(... , usecase);
   
 2.  Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.  
   
-    -   На конечном компьютере должен быть один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , указанной в **source.extension.vsixmanifest**.  
+    -   На конечном компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , заданный в **source.extension.vsixmanifest**.  
   
 3.  На целевом компьютере откройте файл **.vsix** .  
   

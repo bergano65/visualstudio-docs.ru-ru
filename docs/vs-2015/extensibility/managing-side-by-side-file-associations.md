@@ -1,7 +1,7 @@
 ---
 title: Управление сопоставлениями файлов Side-by-Side | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47558826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253985"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Управление параллельными сопоставлениями файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [сопоставления файлов Side-by-Side управление](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations).  
-  
 Если пакет VSPackage предоставляет сопоставления файлов, необходимо решить, как обрабатывать side-by-side установок, в котором на конкретную версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] должны вызываться для открытия файла. Несовместимые форматы файлов комплексной проблему.  
   
  Пользователи ожидают, что новая версия продукта для обеспечения совместимости с более ранними версиями, таким образом, чтобы существующие файлы могут загружаться в новой версии без потери данных. В идеальном случае VSPackage можно как загрузить и сохранить в форматах, более ранних версий. Если это не так, следует предлагать выполнить обновление до новой версии пакета VSPackage формат файла. Недостатком этого подхода является то, что обновленный файл невозможно открыть в более ранней версии.  
