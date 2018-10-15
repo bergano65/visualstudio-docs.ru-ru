@@ -1,7 +1,7 @@
 ---
 title: Определение и Установка расширения моделирования | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234407"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Определение и установка расширения моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [определение и Установка расширения моделирования](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 В Visual Studio можно определять расширения для схем моделирования. Таким образом можно адаптировать схемы и модели под свои потребности. Например, можно определить команды меню, профили UML, ограничения проверки и элементы панели элементов. В одном расширении можно определить несколько компонентов. Можно также предоставить эти расширения другим пользователям Visual Studio в виде [Visual Studio Integration Extension (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Расширение VSIX можно создать с помощью проекта VSIX в Visual Studio.  
   
 ## <a name="requirements"></a>Требования  
- См. в разделе [требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-modeling-extension-solution"></a>Создание решения расширения моделирования  
  Чтобы определить расширение моделирования, необходимо создать решение, содержащее перечисленные ниже проекты.  
@@ -102,7 +100,7 @@ ms.locfileid: "47592684"
   
 #### <a name="to-run-an-extension-during-its-development"></a>Запуск расширения во время его разработки  
   
-1.  В [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Отладка** меню, выберите **начать отладку**.  
+1.  В меню **Отладка** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] выберите пункт **Начать отладку**.  
   
      Выполняется сборка проекта, и новый экземпляр [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] запускается в экспериментальном режиме.  
   

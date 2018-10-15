@@ -25,6 +25,7 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### [Подписка на Office 365 для разработчиков](vs-office-dev.md)
+#### [Подписка на Office 365](vs-office365.md)
 #### [Power BI Pro ](vs-pbi.md)
 #### [Современные требования для TFS](vs-modernreq.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
