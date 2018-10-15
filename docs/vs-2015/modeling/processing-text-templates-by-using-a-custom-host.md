@@ -1,7 +1,7 @@
 ---
 title: Обработка текстовых шаблонов с помощью пользовательского хост | Документация Майкрософт
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47562938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303463"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Обработка текстовых шаблонов с помощью пользовательского хост-класса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этого раздела можно найти в [обработки текстовых шаблонов с помощью пользовательского хост-](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host).  
-  
 *Преобразования текстового шаблона* обработки принимает *текстового шаблона* файл на входе и создает текстовый файл на выходе. Можно вызывать процессор преобразования текста из расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или из отдельного приложения, которые выполняется на компьютере, на котором установлена [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Тем не менее, необходимо предоставить *основное приложение текстовых шаблонов*. Этот класс подключает шаблон к среде, находя ресурсы, такие как сборки и включаемые файлы, и работает с выводом и сообщениями об ошибках.  
   
 > [!TIP]
@@ -59,7 +57,7 @@ string output = engine.ProcessTemplate(templateString, host);
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
- Показано, как создать основное приложение текстового шаблона, которое делает функциональные возможности текстовых шаблонов доступными вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Показано, как создать ведущее приложение текстового шаблона, которое делает функциональные возможности текстовых шаблонов доступными вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
