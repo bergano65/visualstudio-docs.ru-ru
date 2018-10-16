@@ -1,5 +1,5 @@
 ---
-title: Доступ к слои текста с помощью API прежних версий | Документы Microsoft
+title: Доступ к слои текста с помощью API прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21b31940f1e1ebca767b9d3f0cf5ab802181bda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078671"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Доступ к слои текста с помощью API прежних версий
-Слой текста обычно включает в себя некоторые аспекты макет текста. Например слой «функции в раз» скрытие текста до и после функции, содержащее знак вставки (курсора).  
+# <a name="access-text-layers-by-using-the-legacy-api"></a>Уровни доступа текста с помощью предыдущих версий API
+Текстовый слой обычно включает в себя некоторые аспекты макета текста. Например уровень «функция в a-time» скрывает текст до и после функции, содержащей курсор (точка вставки текста).  
   
- Текстового слоя располагается между буфера и представления, и он изменяет способ представления видит содержимое буфера.  
+ Текстовый слой располагается между буфером и представлением, и он изменяет способ представления видит содержимое буфера.  
   
-## <a name="text-layer-information"></a>Текстовая информация слоя  
+## <a name="text-layer-information"></a>Сведения слоя текста  
  В следующем списке описываются принципы работы слои текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   Текст в текстового слоя можно снабженных Цветовая подсветка синтаксиса и маркеры.  
+-   Текст в текстовый слой можно оформить с выделение синтаксиса цветом и маркерами.  
   
 -   В настоящее время не могут реализовывать собственные слои.  
   
--   Предоставляет слой <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, который является производным от <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Буфер текста также реализуется как уровень, который дает возможность просматривать полиморфно выполнение базовых уровнях.  
+-   Предоставляет слой <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, который является производным от <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Текстовый буфер, сам также реализуется как уровень, который дает возможность просматривать полиморфно дело базовых уровней.  
   
--   Любое количество уровней может лежать между представлением и размер буфера. Каждый слой работает только с уровня и представлении главным образом посвящена самого верхнего уровня. (Это представление обязательно некоторые сведения о буфере).  
+-   Любое количество уровней может лежать между представлением и буфера. Каждый уровень имеет дело только с уровнем ниже, а представление главным образом посвящена самый высокий уровень. (Представления имеют некоторые сведения о буфере).  
   
--   Слой может повлиять на только слои, расположенные под ней. Оно не влияет на слои над ним помимо исходящие стандартные события.  
+-   Слой может повлиять на только те слои, которые ниже его. Оно не влияет на слои над ним за исходящий стандартные события.  
   
--   В редакторе скрытый текст, синтетические текст и перенос по словам реализуются как слои. Скрытые и синтетические текста можно реализовать без непосредственного взаимодействия с слои. Дополнительные сведения см. в разделе [структуризация в языковую службу прежних версий](../extensibility/internals/outlining-in-a-legacy-language-service.md) и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+-   В редакторе скрытый текст, синтетического текста и перенос по словам реализуются как слои. Вы можете реализовать скрытых и синтетические текста без непосредственного взаимодействия с слои. Дополнительные сведения см. в разделе [структурирование в языковой службы прежних версий](../extensibility/internals/outlining-in-a-legacy-language-service.md) и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Каждый слой текст имеет свой собственный локальной системе координат, доступных через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> интерфейса. Уровень переноса строки, например, могут содержаться две строки, а основной текстовый буфер может содержать только одну строку.  
+-   Каждый слой текста имеет свой собственный локальной системе координат, которая доступна посредством <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> интерфейс. Уровень переноса строки, например, могут содержаться две строки, а в базовом текстовом буфере могут содержать только одну строку.  
   
--   Представление взаимодействует со слоями через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> интерфейса. Этот интерфейс можно используйте для согласования координат представления с координатами буфер.  
+-   Представление взаимодействует со слоями через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> интерфейс. Этот интерфейс можно используйте для согласования координатах представления с координатами буфера.  
   
--   Любой слоев, такие как слой искусственных текста, рассчитанная текста необходимо предоставить локальной реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
+-   Любого уровня, такие как слой синтетического текста, который создает текст необходимо предоставить реализацию локального <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Помимо <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, необходимо реализовать текстового слоя <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> и инициировать события в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> интерфейса.  
+-   Помимо <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, слой текста необходимо реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> и порождают события в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> интерфейс.  
   
 ## <a name="see-also"></a>См. также  
- [Синтаксис, выделение цветом в редакторах](../extensibility/syntax-coloring-in-custom-editors.md)   
- [С помощью текстовых маркеров с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Настройка меню и редактор элементов управления с помощью API прежних версий](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+ [Цветовая маркировка синтаксиса в специализированных редакторах](../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Настройка меню и редактор элементов управления с помощью предыдущих версий API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691190"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -120,7 +121,7 @@ ms.lasthandoff: 05/14/2018
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>См. также  
+## <a name="see-also"></a>См. также  
   
 |Заголовок|Описание:|  
 |-----------|-----------------|  

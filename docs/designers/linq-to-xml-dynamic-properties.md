@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab219b0babbb423c10a08f1f9c4888ad70aff12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abad2e8966bfc9fc2926c1ca985e1cb5450f1d68
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978142"
 ---
-# <a name="linq-to-xml-dynamic-properties"></a>Динамические свойства LINQ to XML
+# <a name="linq-to-xml-dynamic-properties"></a>Динамические свойства LINQ to XML
 
 В этом разделе приведены справочные сведения о динамических свойствах в LINQ to XML. В частности, эти свойства представляются классами <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, которые находятся в пространстве имен <xref:System.Xml.Linq>.
 
@@ -38,6 +39,6 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
 - [Общие сведения о привязке данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
 - [Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a8b3ce1b0b0bc646f6a4d28031be51920da776cd
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995911"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Изменение расположения установки в Visual Studio 2017
 
@@ -51,16 +52,7 @@ ms.lasthandoff: 05/10/2018
  > [!NOTE]
  > Некоторые средства и пакеты SDK имеют другие правила расположения установки. Эти средства и пакеты SDK будут установлены на системном диске, даже если вы выбрали другое расположение.
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio воспользуйтесь инструкцией по [устранению неполадок и исправлению ошибок в ходе установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Вы можете также связаться с нами для помощи по установке в [интерактивном чате](https://www.visualstudio.com/vs/support/#talktous) (только английский язык). Дополнительные сведения см. на [странице Visual Studio "Свяжитесь с нами"](https://www.visualstudio.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 

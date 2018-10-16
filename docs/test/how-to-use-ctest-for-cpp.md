@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380529"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Использование CTest для C++ в Visual Studio
 
@@ -29,16 +30,16 @@ ms.lasthandoff: 04/26/2018
 
 На следующем рисунке показаны результаты выполнения CTest с использованием платформы Google Test.
 
-![CTest и платформа Google Test в VS 2017 версии 15.6](media/ctest-test-explorer.png "CTest and Google Test in Test Explorer")
+![Выполнение CTest с помощью платформы Google Test в VS2017 15.6](media/ctest-test-explorer.png)
 
 Если вы используете CTest, но не используете адаптеры Google или Boost, результаты будут доступны на уровне CTest, а не на отдельном уровне метода проверки. Вы сможете выполнять отладку и использовать пошаговый режим для исполняемых файлов CTest, но без трассировки стека для отдельных тестов.
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>Выполнение тестов (Visual Studio 2017 версии 15.5)
 
-В **Visual Studio 2017 версии 15.5** инструмент CTest не интегрируется с **обозревателем тестов**. Вы можете выполнять тесты из главного меню CMake или из контекстного меню файла **CMakeLists.txt** в **обозревателе решений**. Результаты тестов направляются в **окно вывода** Visual Studio.
+В **Visual Studio 2017 версии 15.5** инструмент CTest не интегрируется с **обозревателем тестов**. Вы можете выполнять тесты из главного меню CMake или из контекстного меню файла *CMakeLists.txt* в **обозревателе решений**. Результаты тестов направляются в **окно вывода** Visual Studio.
 
-![Выполнение тестов CTest в VS 2017 15.5](media/cpp-cmake-run-tests.png "Run CTest tests in 15.5")
+![Выполнение тестов CTest в VS2017 15.5](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>См. также
 
-[Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
+[Написание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)

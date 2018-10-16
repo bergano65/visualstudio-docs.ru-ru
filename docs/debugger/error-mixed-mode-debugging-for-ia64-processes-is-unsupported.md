@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471363"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Ошибка: для процессов IA64 отладка в смешанном режиме не поддерживается
 Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не поддерживает отладку смеси управляемого и неуправляемого кода для процессов на базе Itanium.  

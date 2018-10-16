@@ -1,5 +1,5 @@
 ---
-title: 'CA1401 методы: Вызывает P не должны быть видимыми'
+title: 'CA1401: методы P-Invoke не должны быть видимыми'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,15 +14,20 @@ ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c2aaadb0570e47e5ef41614925c20f8dc30f1620
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c1d4d9cc5e1550dee87609e5ef0e99dcd9d0cf5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548631"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: методы P/Invoke не должны быть видимыми
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
@@ -31,13 +36,13 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный метод в открытом типе имеет <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибут (также реализован `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Открытый или защищенный метод в открытом типе имеет <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибут (также реализуется `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Описание правила
- Методы, помеченные с <xref:System.Runtime.InteropServices.DllImportAttribute> атрибута (или методы, определенные с помощью `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) использовать службы вызова платформы для доступа к неуправляемому коду. Такие методы не следует делать видимыми. Сохраняя эти методы private или internal, вы убедитесь, что библиотека не может использоваться для прорыва безопасности путем предоставления вызывающим объектам доступ к неуправляемым API, которые в противном случае они не вызвать.
+ Методы, помеченные атрибутом <xref:System.Runtime.InteropServices.DllImportAttribute> атрибут (или методы, определенные с помощью `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) использовать службы вызова платформы для доступа к неуправляемому коду. Такие методы не следует делать видимыми. Сохраняя эти методы закрытым или внутренним, вы убедитесь, что библиотека не может использоваться для нарушения безопасности, позволяя вызывающим объектам доступ к неуправляемым API, которые в противном случае они не отвечает.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, измените уровень доступа метода.
+ Чтобы устранить нарушение этого правила, измените уровень доступа для метода.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

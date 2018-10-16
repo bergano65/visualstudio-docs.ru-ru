@@ -1,13 +1,13 @@
 ---
-title: "Исключение возникло, но не перехвачено | Документы Microsoft"
-ms.custom: 
+title: Исключение возникло, но не перехвачено | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633124"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Исключение возникло, но не перехвачено
 Вы включены `throw` инструкции в коде, но он не был включен в **повторите** блока, возникла не связан или **перехватывать** блок для перехвата ошибок. Исключения из среды **повторите** с помощью **throw** инструкции и перехватываются за пределами **повторите** блоке с **перехватывать** инструкция.  

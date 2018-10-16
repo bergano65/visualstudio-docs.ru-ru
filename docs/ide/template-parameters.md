@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178638"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -120,3 +121,4 @@ namespace $safeprojectname$
 
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

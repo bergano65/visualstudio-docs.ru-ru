@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::AddTypeLib | Документы Microsoft"
-ms.custom: 
+title: IActiveScript::AddTypeLib | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddTypeLib
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640874"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Добавляет библиотеку типов в пространство имен для скрипта. Это похоже на `#include` директив в C/C++. Он позволяет набор стандартных элементов, таких как определения классов `typedefs`и именованных констант для добавления среды выполнения, которые доступны для скрипта.  

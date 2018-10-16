@@ -3,20 +3,22 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Документация по разработке мобильных приложений на C++ | Документация Майкрософт
 description: Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232024"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
-Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
+Создавайте в Visual Studio приложения на C++ непосредственно для устройств с iOS, Android и Windows.
 
 <ul class="panelContent cardsF">
     <li>
@@ -26,12 +28,12 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Install Visual C++ for Cross-Platform Mobile Development</h3>
-                        <p>Настройте средства, необходимые для создания кроссплатформенных мобильных приложений.</p>
+                        <h3>Установка Visual C++ для разработки кроссплатформенных мобильных приложений</h3>
+                        <p>Подготовьте все необходимые инструменты для создания кроссплатформенных мобильных приложений.</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
@@ -64,12 +66,12 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>Примеры для начала разработки кроссплатформенных мобильных приложений.</p>
+                        <h3>Примеры разработки кроссплатформенных мобильных приложений</h3>
+                        <p>Наши примеры помогут вам начать разрабатывать кроссплатформенные мобильные приложения.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +90,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE and Tools for Visual C++ Development</a> (Интегрированная среда и средства разработки Visual C++)<p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Интегрированная среда разработки и средства разработки Visual C++</a><p>
                     </div>
                 </div>
             </div>
@@ -100,7 +102,7 @@ ms.lasthandoff: 04/16/2018
                 <div class="card">
                     <div class="cardText">
                         <h3>Платформы</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Universal Windows Apps (C++)</a> (Универсальные приложения Windows (C++))</p>
+                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
                         <p><a href="https://developer.apple.com/reference">Документация по API для iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Документация по API для Android</a></p>
                     </div>

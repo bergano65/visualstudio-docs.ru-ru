@@ -1,6 +1,6 @@
 ---
-title: Установка агентов и контроллеров тестирования для Visual Studio
-ms.date: 03/02/2018
+title: Установка агентов и контроллеров тестирования
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,31 +11,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370969"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
-Для сценариев тестирования, в которых используются Visual Studio и Visual Studio Team Services (VSTS) или Team Foundation Server (TFS), контроллер тестирования не требуется. Инструментарий "Agents для Visual Studio" позволяет выполнять оркестрацию путем обмена данными с VSTS или TFS. В сценарии может предполагаться непрерывное тестирование для рабочих процессов сборки и выпуска в VSTS или TFS.
+Для сценариев тестирования, в которых используются Visual Studio и Azure Test Plans или Team Foundation Server (TFS), контроллер тестирования не требуется. Agents для Visual Studio позволяет выполнять оркестрацию путем обмена данными с Azure Test Plans или TFS. В сценарии может предполагаться непрерывное тестирование для рабочих процессов сборки и выпуска в Azure Test Plans или TFS.
 
 Также рекомендуем обратить внимание на процесс [управления сборками и выпусками](use-build-or-rm-instead-of-lab-management.md). Возможно, для вас он будет удобнее, чем управление лабораториями.
 
 ## <a name="system-requirements"></a>Требования к системе
 
+В следующей таблице указаны требования к системе для установки агента тестирования или контроллера тестирования для Visual Studio 2017:
+
 | Элемент | Требования |
 | ---- | ------------ |
-| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows XP с пакетом обновления 3 (SP3)<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008, выпуск 2 с пакетом обновления 1 |
-| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008, выпуск 2 с пакетом обновления 1 |
+| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
+| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4,5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования
 
-Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Прокрутите страницу вниз и найдите раздел *Агенты для Visual Studio 2017*. Выберите *агент* или *контроллер* и нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
+Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Найдите пункт *Agents для Visual Studio 2017*, выберите *Agent* или *Controller*, а затем нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
 
-Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://www.visualstudio.com/vs/older-downloads/).
+Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Эти установщики доступны в виде ISO-файлов, что упрощает установку на виртуальных машинах.
 
@@ -55,13 +58,13 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Обновление агентов тестирования Visual Studio 2013
 
-Рекомендуем использовать агенты для Visual Studio во всех сценариях нового автоматического тестирования. Вы можете использовать задачу *Deploy Test Agents* (Развертывание агентов тестирования) в определении сборки, чтобы скачать и установить агенты тестирования на компьютере.
+Рекомендуем использовать агенты для Visual Studio во всех сценариях нового автоматического тестирования. Вы можете использовать задачу *Deploy Test Agents* (Развертывание агентов тестирования) в конвейере сборки, чтобы скачать и установить агенты тестирования на компьютере.
 
-В следующей таблице описаны сценарии, поддерживаемые инструментарием "Agents для Visual Studio 2013" и альтернативными решениями для Team Foundation Server (TFS) 2015 и VSTS:
+В следующей таблице описаны сценарии, поддерживаемые инструментарием "Agents для Visual Studio 2013" и альтернативными решениями для Team Foundation Server (TFS) 2015 и Azure Test Plans:
 
-| Сценарии, поддерживаемые Agents для Visual Studio 2013 | Альтернатива в TFS и VSTS |
-| --- | --- |
-| Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [определение сборки](/vsts/build-release/) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
+| Сценарии, поддерживаемые Agents для Visual Studio 2013 | Альтернатива в TFS и Azure Test Plans |
+| - | - |
+| Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [конвейер сборки](/azure/devops/pipelines/index?view=vsts) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
 | Нагрузочные тесты (тестирование производительности) с использованием удаленных локальных компьютеров | Используйте обновление 5 для контроллеров и агентов тестирования 2013 для локального выполнения нагрузочных тестов. |
 | Удаленное выполнение автоматических тестов из Microsoft Test с использованием лабораторной среды | Сейчас альтернативы этому сценарию не существует. Мы рекомендуем использовать задачу "Запуск функциональных тестов" в определениях сборок и выпусков (не в сборке XAML) для удаленного выполнения тестов. |
 | Разработчики, выполняющие удаленные тесты в Visual Studio | Больше не поддерживается. |

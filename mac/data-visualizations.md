@@ -1,16 +1,17 @@
 ---
 title: Отладка — визуализации данных
 description: Отладка — это типичная и неотъемлемая часть программирования. Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья рассматривает различные визуализации данных, которые можно просматривать при проверке объектов в отладчике.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5ee16324a312eca79de2f3b356a5f3be941f5e7b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224234"
 ---
 # <a name="data-visualizations"></a>Визуализации данных
 

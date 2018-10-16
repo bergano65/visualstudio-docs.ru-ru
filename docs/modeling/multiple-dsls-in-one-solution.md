@@ -9,22 +9,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b0719e4397fed7b850454140462c6e0ed4148da9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce16cba80962c68d2480e934e2816be4fe77ab1f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775881"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 Несколько доменных языков можно упаковать как часть единого решения, чтобы устанавливать их вместе.
 
- Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика и перетащите](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка функции копирования](../modeling/customizing-copy-behavior.md).
+ Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка поведения копирования](../modeling/customizing-copy-behavior.md).
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Построение нескольких доменных языков в одном решении
 
 1.  Создайте два или несколько доменных языков и проект VSIX, а затем добавьте все проекты в одно решение.
 
-    -   Для создания нового проекта VSIX: В **новый проект** диалогового окна выберите **Visual C#**, **расширяемости**, **проект VSIX**.
+    -   Для создания нового проекта VSIX: В **новый проект** диалоговом окне выберите **Visual C#**, **расширяемости**, **проект VSIX**.
 
     -   Создайте одно или несколько решений доменного языка в каталоге решений VSIX.
 
@@ -32,9 +33,9 @@ ms.lasthandoff: 04/26/2018
 
          Убедитесь, что каждый доменный язык создается с разным расширением имени файла.
 
-    -   Изменять имена **Dsl** и **DslPackage** проектов, чтобы все они отличаются. Примеры: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+    -   Изменять имена **Dsl** и **DslPackage** проектов, чтобы они отличались. Примеры: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-    -   В каждом **DslPackage\*\source.extension.tt**, обновить эту строку в правильное имя проекта Dsl:
+    -   В каждом **DslPackage\*\source.extension.tt**, обновить эту строку на правильное имя проекта Dsl:
 
          `string dslProjectName = "Dsl2";`
 
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/26/2018
 
 2.  Объедините манифесты VSIX доменных языков:
 
-    1.  Откройте * YourVsixProject ***\source.extension.manifest**.
+    1.  Откройте _YourVsixProject_**\source.extension.manifest**.
 
-    2.  Для каждого DSL выберите **Добавление содержимого** и добавьте:
+    2.  Для каждого доменного языка выберите **добавить содержимое** и добавьте:
 
         -   `Dsl*` проект в качестве **компонент MEF**
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  Постройте решение.
 
- Получившийся проект VSIX установит оба доменных языка. Можно проверить их, нажав клавишу F5 или развернуть * YourVsixProject ***\bin\Debug\\\*.vsix**.
+ Получившийся проект VSIX установит оба доменных языка. Можно протестировать с помощью клавиши F5 или развернуть _YourVsixProject_**\bin\Debug\\\*.vsix**.
 
 ## <a name="see-also"></a>См. также
 

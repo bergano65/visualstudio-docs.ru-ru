@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a156e7acfdb68d1fa523263835eeee4a573ff78
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669573"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Метод `SuspendProfile` увеличивает значение счетчика приостановки и возобновления для указанного уровня профилирования.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Если состояние начала и остановки, а также состояние приостановки и возобновления включены, состояние профилирования для данного уровня включено. Для профилируемого потока состояния глобального уровня, уровня процесса и уровня потока должны быть включены.  
   
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Сведения о функции  
- Заголовок: объявлен в файле VSPerf.h  
+ Заголовок: объявлен в файле *VSPerf.h*  
   
- Библиотека импорта: VSPerf.lib  
+ Библиотека импорта: *VSPerf.lib*  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано использование метода SuspendProfile. В нем предполагается, что ранее для потока или процесса, определенного идентификатором [PROFILE_CURRENTID](../profiling/profile-currentid.md), был вызван метод StartProfile.  

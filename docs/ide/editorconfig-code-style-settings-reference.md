@@ -1,6 +1,6 @@
 ---
 title: Параметры соглашений о написании кода .NET в EditorConfig в Visual Studio
-ms.date: 02/28/2018
+ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -11,23 +11,25 @@ helpviewer_keywords:
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
-ms.author: kaseyu
+ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266005"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496055"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
-В Visual Studio 2017 вы можете определить и поддерживать согласованный стиль кода в своей базе кода с помощью файла [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig содержит несколько ключевых свойств форматирования, таких как `indent_style` и `indent_size`. В Visual Studio параметры соглашений о написании кода .NET можно настроить в файле EditorConfig. Файлы EditorConfig позволяют включить или отключить отдельные соглашения о написании кода .NET и настроить строгость применения этих соглашений через уровень серьезности. Дополнительные сведения об использовании EditorConfig для обеспечения согласованности базы кода см. в статье [Создание портативных настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md). Вы также можете изучить [файл EDITORCONFIG платформы компиляторов .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig) в качестве примера.
+В Visual Studio 2017 вы можете определить и поддерживать согласованный стиль кода в своей базе кода с помощью файла [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig содержит несколько ключевых свойств форматирования, таких как `indent_style` и `indent_size`. В Visual Studio параметры соглашений о написании кода .NET можно настроить в файле EditorConfig. Файлы EditorConfig позволяют включить или отключить отдельные соглашения о написании кода .NET и настроить строгость применения этих соглашений через уровень серьезности. Дополнительные сведения об использовании EditorConfig для обеспечения согласованности базы кода см. в статье [Создание портативных настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md).
+
+См. пример EDITORCONFIG-файла в конце этого документа.
 
 В .NET поддерживаются следующие три категории соглашений о написании кода.
 
@@ -47,7 +49,7 @@ ms.locfileid: "34266005"
 
 Правила для языковых соглашений имеют следующий формат:
 
-`options_name = false|true : none|suggestion|warning|error`
+`options_name = false|true : none|silent|suggestion|warning|error`
 
 Для каждого правила языкового соглашения нужно указать **true** (предпочитать этот стиль) или **false** (не предпочитать этот стиль), а также уровень **серьезности** . Серьезность означает требуемый уровень применения для этого стиля.
 
@@ -55,10 +57,11 @@ ms.locfileid: "34266005"
 
 Серьезность | Действие
 :------- | ------
-none или silent | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле.
-suggestion | При несоблюдении этого правила стиля пользователю выводится предложение. Предложения отображаются в виде трех серых точек под первыми двумя символами.
-предупреждение | При несоблюдении этого правила стиля выводится предупреждение компилятора.
-error | При несоблюдении этого правила стиля выводится ошибка компилятора.
+`none` | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле. Правила с уровнем серьезности `none` никогда не появляются в меню **Быстрые действия и операции рефакторинга**. В большинстве случаев это воспринимается как "отключено" или "игнорируется".
+`silent` (также `refactoring` в Visual Studio 2017 версии 15.8) | При нарушении этого правила пользователю не выводится никаких данных. Однако функции создания кода будут генерировать код в этом стиле. Правила с уровнем серьезности `silent` участвуют в очистке, а также появляются в меню **Быстрые действия и операции рефакторинга**.
+`suggestion` | При несоблюдении этого правила стиля пользователю выводится предложение. Предложения отображаются в виде трех серых точек под первыми двумя символами.
+`warning` | При несоблюдении этого правила стиля выводится предупреждение компилятора.
+`error` | При несоблюдении этого правила стиля выводится ошибка компилятора.
 
 В следующем списке приведены допустимые правила языковых соглашений:
 
@@ -75,12 +78,22 @@ error | При несоблюдении этого правила стиля в�
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - dotnet\_style\_readonly\_field
+    - [Предпочтения относительно круглых скобок](#parentheses)
+        - dotnet\_style\_parentheses\_in\_arithmetic\_binary\_operators
+        - dotnet\_style\_parentheses\_in\_other\_binary\_operators
+        - dotnet\_style\_parentheses\_in\_other\_operators
+        - dotnet\_style\_parentheses\_in\_relational\_binary\_operators
     - [Настройки уровня выражений](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_prefer\_inferred\_tuple_names
-        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+        - dotnet\_style\_prefer\_inferred\_tuple_names
+        - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
+        - dotnet\_style\_prefer\_auto\_properties
+        - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+        - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
+        - dotnet\_style\_prefer\_conditional\_expression\_over\_return
     - [Настройки проверки Null](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
@@ -239,7 +252,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 и IDE0014 | C# и Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 и IDE0014 | C# и Visual Basic | true:none |
 | dotnet_style_predefined_type_for_member_access | IDE0013 и IDE0015 | C# и Visual Basic | true:none |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
@@ -299,15 +312,16 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>Предпочтения для модификаторов
 
-Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа или указывается предпочтительный порядок сортировки.
+Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа, указывается предпочтительный порядок сортировки или требуется модификатор только для чтения.
 
 В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Версия Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# и Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# и Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# и Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
@@ -316,7 +330,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | Значение | Описание: |
 | ----- |:----------- |
 | always | Сделать предпочтительным указание модификаторов доступа |
-| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. На данный момент это поведение соответствует параметру **always** и будет впоследствии использоваться для проверки при добавлении методов интерфейса C# по умолчанию. |
+| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. Это аналогично **always** и добавлено для будущих проверок, если C# в добавятся методы интерфейса по умолчанию. |
 | never | Предпочитать не указывать модификаторы доступа |
 
 Примеры кода:
@@ -326,13 +340,13 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 // dotnet_style_require_accessibility_modifiers = for_non_interface_members
 class MyClass
 {
-    private const string thisFieldIsConst= "constant";
+    private const string thisFieldIsConst = "constant";
 }
 
 // dotnet_style_require_accessibility_modifiers = never
 class MyClass
 {
-    const string thisFieldIsConst= "constant";
+    const string thisFieldIsConst = "constant";
 }
 ```
 
@@ -365,12 +379,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- Если это правило имеет значение **true**, укажите, что поля должны иметь метку `readonly` (C#) или `ReadOnly` (Visual Basic), если они встроены или находятся внутри конструктора.
+- Если это правило имеет значение **false**, укажите, что неважно, будут ли поля иметь метку `readonly` (C#) или `ReadOnly` (Visual Basic).
+
+Примеры кода:
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]
@@ -379,6 +416,122 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 # Visual Basic code style settings:
 [*.vb]
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+```
+
+#### <a name="parentheses"></a>Предпочтения относительно круглых скобок
+
+Правила стилей в этом разделе относятся к предпочтениям относительно круглых скобок, включая использование круглых скобок для арифметических, реляционных и других бинарных операторов.
+
+В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+
+| Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Версия Visual Studio 2017 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# и Visual Basic | always_for_clarity:none | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# и Visual Basic | always_for_clarity:none | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# и Visual Basic | always_for_clarity:none | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# и Visual Basic | never_if_unnecessary:none | 15.8 |
+
+**dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators**
+
+- Когда для этого правила установлено **always_for_clarity**, выбирайте скобки для указания приоритета арифметического оператора (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`).
+- Когда для этого правила установлено **never_if_unnecessary**, не используйте круглые скобки, если приоритет арифметического оператора (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) очевиден.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+var v = a + (b * c);
+
+// dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+var v = a + b * c;
+```
+
+```vb
+' dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+Dim v = a + (b * c)
+
+' dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+Dim v = a + b * c
+```
+
+**dotnet\_style\_parentheses\_in\_relational\_binary_operators**
+
+- Когда для этого правила установлено **always_for_clarity**, выбирайте скобки для указания приоритета оператора отношений (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`).
+- Когда для этого правила установлено **never_if_unnecessary**, не используйте круглые скобки, если приоритет оператора отношений (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) очевиден.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+var v = (a < b) == (c > d);
+
+// dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+var v = a < b == c > d;
+```
+
+```vb
+' dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+Dim v = (a < b) = (c > d)
+
+' dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+Dim v = a < b = c > d
+```
+
+**dotnet\_style\_parentheses\_in\_other\_binary_operators**
+
+- Когда для этого правила установлено **always_for_clarity**, выбирайте скобки для указания приоритета другого бинарного оператора (`&&`, `||`, `??`).
+- Когда для этого правила установлено **never_if_unnecessary**, не используйте круглые скобки, если приоритет другого бинарного оператора (`&&`, `||`, `??`) очевиден.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+var v = a || (b && c);
+
+// dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+var v = a || b && c;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+Dim v = a OrElse (b AndAlso c)
+
+' dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+Dim v = a OrElse b AndAlso c
+```
+
+**dotnet\_style\_parentheses\_in\_other_operators**
+
+- Когда для этого правила установлено **always_for_clarity**, выбирайте скобки для указания приоритета оператора.
+- Когда для этого правила установлено **never_if_unnecessary**, не используйте круглые скобки, если приоритет оператора очевиден.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_parentheses_in_other_operators = always_for_clarity
+var v = (a.b).Length;
+
+// dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+var v = a.b.Length;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_operators = always_for_clarity
+Dim v = (a.b).Length
+
+' dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+Dim v = a.b.Length
+```
+
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
 ```
 
 #### <a name="expression_level"></a>Настройки уровня выражений
@@ -393,7 +546,11 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 | dotnet_style_collection_initializer | IDE0028 | C# и Visual Basic | true:suggestion | Первый выпуск |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ и Visual Basic 15+ | true:suggestion | Первый выпуск |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ и Visual Basic 15+ | true:suggestion | 15,6 |
-| dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# и Visual Basic | true:suggestion | 15,6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# и Visual Basic | true:suggestion | 15,6 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# и Visual Basic | true:none | 15.7 |
+| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# и Visual Basic | true:suggestion | 15.7 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# и Visual Basic | true:none | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# и Visual Basic | true:none | 15.8 |
 
 **dotnet\_style\_object_initializer**
 
@@ -491,6 +648,14 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
+```vb
+' dotnet_style_prefer_inferred_tuple_names = true
+Dim tuple = (name, age)
+
+' dotnet_style_prefer_inferred_tuple_names = false
+Dim tuple = (name:=name, age:=age)
+```
+
 **dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
 
 - Если это правило имеет значение **true**, предпочтение отдается выводимым именам автономных членов типа.
@@ -507,6 +672,153 @@ var anon = new { age = age, name = name };
 
 ```
 
+```vb
+' dotnet_style_prefer_inferred_anonymous_type_member_names = true
+Dim anon = New With {name, age}
+
+' dotnet_style_prefer_inferred_anonymous_type_member_names = false
+Dim anon = New With {.name = name, .age = age}
+
+```
+
+**dotnet\_style\_prefer\_auto\_properties**
+
+- Если для этого правила задано значение **true**, автосвойства имеют приоритет перед другими свойствами с закрытыми резервными полями.
+- Если для этого правила задано значение **false**, свойства с закрытыми резервными полями имеют приоритет перед автосвойствами.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_auto_properties = true
+private int Age { get; }
+
+// dotnet_style_prefer_auto_properties = false
+private int age;
+
+public int Age
+{
+    get
+    {
+        return age;
+    }
+}
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+Public ReadOnly Property Age As Integer
+
+' dotnet_style_prefer_auto_properties = false
+Private _age As Integer
+
+Public ReadOnly Property Age As Integer
+    Get
+        return _age
+    End Get
+End Property
+```
+
+**dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method**
+
+- Если для этого правила задано значение **true**, проверка значений null с сопоставлением шаблонов имеет приоритет перед object.ReferenceEquals.
+- Если для этого правила задано значение **false**, object.ReferenceEquals имеет приоритет перед проверкой значений null с сопоставлением шаблонов.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_auto_properties = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
+
+
+**dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
+
+- Если это правило имеет значение **true**, предпочтение отдается назначениям с тернарным условием вместо оператора if-else.
+- Если это правило имеет значение **false**, предпочтение отдается назначениям с оператором if-else, а не тернарному условию.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_assignment = true
+string s = expr ? "hello" : "world";
+
+// dotnet_style_prefer_conditional_expression_over_assignment = false
+string s;
+if (expr)
+{
+    s = "hello";
+}
+else
+{
+    s = "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_assignment = true
+Dim s As String = If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_assignment = false
+Dim s As String
+If expr Then
+    s = "hello"
+Else
+    s = "world"
+End If
+```
+
+**dotnet\_style\_prefer\_conditional\_expression\_over_return**
+
+- Если это правило имеет значение **true**, предпочтение отдается операторам return для использования тернарного условия вместо оператора if-else.
+- Если это правило имеет значение **false**, предпочтение отдается операторам return для использования оператора if-else, а не тернарному условию.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_return = true
+return expr ? "hello" : "world"
+
+// dotnet_style_prefer_conditional_expression_over_return = false
+if (expr)
+{
+    return "hello";
+}
+else
+{
+    return "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_return = true
+Return If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_return = false
+If expr Then
+    Return "hello"
+Else
+    Return "world"
+End If
+```
+
 В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
@@ -517,6 +829,9 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
 
 #### <a name="null_checking"></a>Параметры проверки NULL
@@ -771,7 +1086,7 @@ public int Age { get { return _age; }}
 
 ```csharp
 // csharp_style_expression_bodied_indexers = true
-public T this[int i] => _value[i];
+public T this[int i] => _values[i];
 
 // csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
@@ -1095,6 +1410,12 @@ csharp_prefer_braces = true:none
         - csharp_space_between_method_declaration_parameter_list_parentheses
         - csharp_space_between_method_call_parameter_list_parentheses
         - csharp_space_between_parentheses
+        - csharp_space_before_colon_in_inheritance_clause
+        - csharp_space_after_colon_in_inheritance_clause
+        - csharp_space_around_binary_operators
+        - csharp_space_between_method_declaration_empty_parameter_list_parentheses
+        - csharp_space_between_method_call_name_and_opening_parenthesis
+        - csharp_space_between_method_call_empty_parameter_list_parentheses
     - [Параметры переноса](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1166,7 +1487,7 @@ dotnet_sort_system_directives_first = true
 
 | Значение | Описание:
 | ------------- |:-------------|
-| accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection, properties, types.<br>(При использовании нескольких значений разделяйте их с помощью ",".) | Требовать, чтобы фигурные скобки для указанных элементов кода размещались в новой строке (стиль Олмана). |
+| accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>(При использовании нескольких значений разделяйте их с помощью ",".) | Требовать, чтобы фигурные скобки для указанных элементов кода размещались в новой строке (стиль Олмана). |
 | все | Требовать, чтобы фигурные скобки для всех выражений размещались в новой строке (стиль Олмана). |
 | Нет | Требовать, чтобы фигурные скобки для всех выражений размещались в строке выражения (стиль Кернигана и Ритчи). |
 
@@ -1501,6 +1822,12 @@ csharp_indent_labels = flush_left
 | csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | False | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
 | csharp_space_between_parentheses |  C# | False | 15.3  |
+| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | False | 15.7  |
+| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | False | 15.7  |
+| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | False | 15.7  |
 
 **csharp\_space\_after_cast**
 
@@ -1587,6 +1914,186 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
+**csharp\_space\_before\_colon\_in\_inheritance_clause**
+
+- Если для этого правила задано значение **true**, обязательно наличие пробела перед двоеточием для баз или интерфейсов в объявлении типа.
+- Если для этого правила задано значение **false**, обязательно _отсутствие_ пробела перед двоеточием для баз или интерфейсов в объявлении типа.
+
+Примеры кода:
+
+```csharp
+// csharp_space_before_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I
+{
+
+}
+
+// csharp_space_before_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C: I
+{
+
+}
+```
+
+**csharp\_space\_after\_colon\_in\_inheritance_clause**
+
+- Если для этого правила задано значение **true**, обязательно наличие пробела после двоеточия для баз или интерфейсов в объявлении типа.
+- Если для этого правила задано значение **false**, обязательно _отсутствие_ пробела после двоеточия для баз или интерфейсов в объявлении типа.
+
+Примеры кода:
+
+```csharp
+// csharp_space_after_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I
+{
+
+}
+
+// csharp_space_after_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C :I
+{
+
+}
+```
+
+**csharp\_space\_around\_binary_operators**
+
+Это правило принимает одно из значений, описанных в следующей таблице.
+
+| Значение | Описание: |
+| ----- |:------------|
+| before_and_after | Вставлять пробел до и после бинарных операторов |
+| Нет | Удалять пробелы до и после бинарных операторов |
+| игнорировать | Игнорировать пробелы вокруг бинарных операторов |
+
+Если пропустить это правило или использовать значение, отличное от `before_and_after`, `none` или `ignore`, этот параметр не применяется.
+
+Примеры кода:
+
+```csharp
+// csharp_space_around_binary_operators = before_and_after
+return x * (x - y);
+
+// csharp_space_around_binary_operators = none
+return x*(x-y);
+
+// csharp_space_around_binary_operators = ignore
+return x  *  (x-y);
+```
+
+**csharp_space_between_method_declaration_empty_parameter_list_parentheses**
+
+- Если для этого правила задано значение **true**, необходимо вставлять пробел между скобками пустого списка параметров при объявлении метода.
+- Если для этого правила задано значение **false**, необходимо удалить пробел между скобками пустого списка параметров при объявлении метода.
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = true
+void Goo( )
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_name_and_opening_parenthesis**
+
+- Если для этого правила задано значение **true**, необходимо вставлять пробел между именем вызываемого метода и открывающей скобкой.
+- Если для этого правила задано значение **false**, необходимо удалить пробел между именем вызываемого метода и открывающей скобкой.
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_call_name_and_opening_parenthesis = true
+void Goo()
+{
+    Goo (1);
+}
+
+void Goo(int x)
+{
+    Goo ();
+}
+
+// csharp_space_between_method_call_name_and_opening_parenthesis = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_empty_parameter_list_parentheses**
+
+- Если для этого правила задано значение **true**, необходимо вставлять пробел между скобками пустого списка аргументов.
+- Если для этого правила задано значение **false**, необходимо удалить пробел между скобками пустого списка аргументов.
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
 Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
@@ -1597,6 +2104,12 @@ csharp_space_after_keywords_in_control_flow_statements = true
 csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
 ```
 
 #### <a name="wrapping"></a>Параметры переноса
@@ -1651,6 +2164,163 @@ public int MyProperty
 [*.cs]
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
+```
+
+## <a name="example-editorconfig-file"></a>Пример файла EditorConfig
+
+Чтобы помочь вам приступить к работе, ниже приведен пример файла *.editorconfig* с параметрами по умолчанию.
+
+```EditorConfig
+###############################
+# Core EditorConfig Options   #
+###############################
+
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+###############################
+# .NET Coding Conventions     #
+###############################
+
+[*.{cs,vb}]
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# this. preferences
+dotnet_style_qualification_for_field = false:none
+dotnet_style_qualification_for_property = false:none
+dotnet_style_qualification_for_method = false:none
+dotnet_style_qualification_for_event = false:none
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true:none
+dotnet_style_predefined_type_for_member_access = true:none
+
+# Parentheses preferences
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+
+# Modifier preferences
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_readonly_field = true:suggestion
+
+# Expression-level preferences
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+
+###############################
+# Naming Conventions          #
+###############################
+
+# Style Definitions
+dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
+
+# Use PascalCase for constant fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds            = field
+dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
+dotnet_naming_symbols.constant_fields.required_modifiers          = const
+
+###############################
+# C# Coding Conventions       #
+###############################
+
+[*.cs]
+# var preferences
+csharp_style_var_for_built_in_types = true:none
+csharp_style_var_when_type_is_apparent = true:none
+csharp_style_var_elsewhere = true:none
+
+# Expression-bodied members
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:none
+csharp_style_expression_bodied_indexers = true:none
+csharp_style_expression_bodied_accessors = true:none
+
+# Pattern matching preferences
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+
+# Null-checking preferences
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+
+# Modifier preferences
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Expression-level preferences
+csharp_prefer_braces = true:none
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+
+###############################
+# C# Formatting Rules         #
+###############################
+
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_labels = flush_left
+
+# Space preferences
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+
+# Wrapping preferences
+csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_blocks = true
+
+###############################
+# VB Coding Conventions       #
+###############################
+
+[*.vb]
+# Modifier preferences
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
 ## <a name="see-also"></a>См. также

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815617"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка изолированного профилировщика
+# <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.  
   
 > [!NOTE]
@@ -27,12 +28,12 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Установка автономного профилировщика  
   
-1.  Найдите установщик автономного профилировщика (vs_profiler.exe) на установочном носителе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в каталоге, включающем папки \Standalone Profiler, и запустите его.  
+1.  Найдите установщик автономного профилировщика (*vs_profiler.exe*) на установочном носителе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в каталоге, включающем путь *\Standalone Profiler*, и запустите его.  
   
-2.  Добавьте пути к файлам vsintr.exe и msdis150.dll в системный путь.  
+2.  Добавьте пути к файлам *vsintr.exe* и *msdis150.dll* в системный путь.  
   
     > [!NOTE]
-    >  При установке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] по умолчанию файлы vsinstr.exe и msdis150.dll находятся в папке \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
+    >  При установке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] по умолчанию файлы *vsinstr.exe* и *msdis150.dll* находятся в папке *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
   
 3.  В командной строке введите **VSInstr**.  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Пошаговое руководство. Профилирование из командной строки с помощью выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Пошаговое руководство. Профилирование из командной строки с помощью метода выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

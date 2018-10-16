@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471048"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 "Изменить и продолжить" — это режим [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.  

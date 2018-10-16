@@ -1,11 +1,11 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Feedback Client 2017
-description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для предоставления подробных отзывов о Visual Studio Team Services или Team Foundation Server
+description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для предоставления подробных отзывов об Azure DevOps Services или Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: acdadad76c9cbf833003e5b0652c06b563a0d551
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281563"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client 2017
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/07/2018
 
 **Идентификатор.** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы о Visual Studio Team Services или Team Foundation Server.
+**Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы об Azure DevOps Services или Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -58,16 +59,7 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 

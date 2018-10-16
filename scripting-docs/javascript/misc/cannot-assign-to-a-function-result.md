@@ -1,13 +1,13 @@
 ---
-title: "Нельзя назначить результату функции | Документы Microsoft"
-ms.custom: 
+title: Нельзя назначить результату функции | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5003
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632984"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Нельзя назначить результату функции
 Предпринята попытка присвоить значение результату функции. Результатом выполнения функции может быть присвоен переменной, но он не может использоваться как переменная. Если вы хотите присвоить новое значение самой функции, опустить скобки (оператор вызова функции). В следующем примере показано ситуации, в которых возникает эта ошибка.  

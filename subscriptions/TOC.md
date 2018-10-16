@@ -1,4 +1,5 @@
 # [Подписки Visual Studio](index.md)
+## [Новые возможности](whats-new-in-subscriptions.md)
 ## Возможности для подписчиков
 ### [Использование портала для подписчиков](using-the-subscriber-portal.md)
 #### [Активация розничной подписки](activate-store-subscriptions.md)
@@ -16,7 +17,7 @@
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Деньги на счете в Azure](vs-azure.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -24,17 +25,18 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### [Подписка на Office 365 для разработчиков](vs-office-dev.md)
+#### [Подписка на Office 365](vs-office365.md)
 #### [Power BI Pro ](vs-pbi.md)
 #### [Современные требования для TFS](vs-modernreq.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
-### Профессиональное развитие
+### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Обучение Xamarin University](vs-xamarin.md)
 #### [Подписка на журнал MSDN](vs-msdn.md)
-### Преимущества поддержки
+### [Преимущества поддержки](technical-support.md)
 #### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
 #### [Сообщество Azure](vs-azure-community.md)
 #### [Техническая поддержка](vs-tech-support.md)
@@ -47,6 +49,8 @@
 #### [Для корпоративного лицензирования](volume-license-admins.md)
 ##### [Вопросы и ответы по переносу администрирования VLSC](vlsc-admin-faq.md)
 ##### Подключение организации
+###### [Подключение организации после перехода на новый портал администрирования](post-migration-onboarding.md)
+###### [Переход на Open и Open License](open-migration.md)
 ###### [Сообщения электронной почты по подключению](volume-license-onboarding-email.md)
 ###### [Поиск номера PCN](find-pcn.md)
 ###### [Поиск основного контактного лица](find-primary-contact.md)
@@ -64,7 +68,7 @@
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
 ## Приобретение подписок на Visual Studio
-### [Сравнение вариантов подписок](https://www.visualstudio.com/vs/pricing)
+### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы
 #### [Обзор набора средств Visual Studio для Unity](vscloud-overview.md)
 #### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
@@ -75,8 +79,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## Ресурсы
 ### [Технический документ по лицензированию Visual Studio](http://aka.ms/vslicensing)
-### [Сравнение вариантов подписок и цен на них](https://www.visualstudio.com/vs/pricing)
-### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Поддержка по администрированию и подпискам Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
+### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Условия корпоративного лицензирования](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Соглашение Microsoft Products and Services Agreement (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

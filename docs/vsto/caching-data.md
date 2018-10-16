@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264373"
 ---
 # <a name="cache-data"></a>Кэширование данных
   Можно кэшировать объекты данных в настройке на уровне документа, чтобы данные были доступны автономно или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта, объект должен иметь тип данных, отвечающий определенным требованиям. Многих распространенных типов данных в платформе .NET Framework этих требований, включая <xref:System.String>, <xref:System.Data.DataSet>, и <xref:System.Data.DataTable>.  

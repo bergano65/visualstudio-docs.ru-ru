@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571444"
 ---
 # <a name="active-script-profiling-overview"></a>Обзор профилирования активных скриптов
 [Интерфейсы профилировщика активных скриптов](../winscript/reference/active-script-profiler-interfaces.md) обеспечивают профилирование обработчика скриптов. Профилирование активных скриптов состоит из следующих частей:  

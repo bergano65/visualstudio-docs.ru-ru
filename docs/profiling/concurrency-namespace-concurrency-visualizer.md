@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548142"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Пространство имен Concurrency (визуализатор параллелизма)
 Пространство имен `Concurrency` предоставляет классы и функции, предоставляющие доступ к среде выполнения с параллелизмом, которая является платформой параллельного программирования для C++. Дополнительные сведения см.в статье [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime) (Среда выполнения с параллелизмом).  

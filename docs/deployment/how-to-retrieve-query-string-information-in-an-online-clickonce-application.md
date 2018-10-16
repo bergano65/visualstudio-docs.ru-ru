@@ -1,5 +1,5 @@
 ---
-title: 'Как: извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документы Microsoft'
+title: 'Практическое: извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d20cf156cfdb6aaa18e37160dbf027bb3fb519
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282456"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое: извлечение сведений строки запроса в интерактивном приложении ClickOnce
 *Строка запроса* — это часть URL-адреса, начинающаяся с вопросительного знака (?) и содержащая произвольные сведения в форме *имя=значение*. Предположим, что имеется приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с именем `WindowsApp1` , размещенное в `servername`, и вы хотите передать значение для переменной `username` при запуске приложения. URL-адрес может выглядеть следующим образом:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  Прежде чем принять решение о включении этой функции, ознакомьтесь с подразделом "Безопасность" ниже.  
   
- Дополнительные сведения о создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью Mage.exe или MageUI.exe, в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Сведения о создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью *Mage.exe* или *MageUI.exe*, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), аргументы командной строки можно передать автономному приложению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Если требуется передать аргументы в приложение, можно передать параметры в файл ярлыка с помощью расширения .APPREF-MS.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/19/2018
   
 1.  Откройте окно командной строки платформы .NET и введите:  
   
-    ```  
+    ```cmd  
     MageUI  
     ```  
   
@@ -76,8 +77,8 @@ ms.lasthandoff: 04/19/2018
   
  Если приложение работает только в сети, оно всегда будет активироваться через URL-адрес. Но даже в этом случае приложение должно обеспечивать правильную работу в ситуациях, когда параметры строки запроса отсутствуют или повреждены.  
   
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
- Разрешайте передачу параметров URL-адреса в свое приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] только в том случае, если вы планируете очищать входные данные от любых вредоносных символов перед использованием. При отсутствии фильтрации SQL-запросов к базе данных строка с внедренными кавычками, символами косой черты или точками с запятой может, например, выполнять произвольные операции с данными. Дополнительные сведения о безопасности строки запроса см. в разделе [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+## <a name="net-framework-security"></a>безопасность платформы .NET Framework  
+ Разрешайте передачу параметров URL-адреса в свое приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] только в том случае, если вы планируете очищать входные данные от любых вредоносных символов перед использованием. При отсутствии фильтрации SQL-запросов к базе данных строка с внедренными кавычками, символами косой черты или точками с запятой может, например, выполнять произвольные операции с данными. Дополнительные сведения о безопасности строки запроса см. в разделе [скриптов Обзор](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -23,25 +23,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281680"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Как отладить функции Windows API?
 Если нужно отладить функцию Windows API с загруженными символами NT, необходимо выполнить следующие действия.  
   
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Установка точки останова в функции Windows API с загруженными символами NT  
   
--   Введите имя функции вместе с именем DLL-файла, в котором эта функция находится. В 32-разрядном коде используйте декорированную форму имени функции. Чтобы задать точку останова на **MessageBeep**, например, необходимо ввести следующее.  
+-   Введите имя функции вместе с именем DLL-файла, в котором эта функция находится. В 32-разрядном коде используйте декорированную форму имени функции. Чтобы задать точку останова на **MessageBeep**, например, нужно указать следующее.  
   
-    ```  
+    ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Сведения о получении декорированного имени см [Просмотр декорированные имена](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Чтобы получить декорированное имя, см. в разделе [Просмотр декорированные имена](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>См. также  
- [Часто задаваемые вопросы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
+ [Часто задаваемые вопросы отладки машинного кода](../debugger/debugging-native-code-faqs.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

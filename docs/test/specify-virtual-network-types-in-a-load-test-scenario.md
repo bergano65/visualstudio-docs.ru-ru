@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380232"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Определение типов виртуальных сетей в сценарии нагрузочного теста
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  По завершении удаления сетей нажмите кнопку **ОК**.
 
-## <a name="about-the-mix-control"></a>Элемент управления набором тестов
+## <a name="about-the-mix-control"></a>Элемент управления тестовым набором
 
  Элемент управления набором позволяет изменять процентное распределение нагрузки между тестами, типами браузеров или типами сетей в сценарии нагрузочного теста. Процентные доли изменяются с помощью ползунков. Изменение набора типов сетей определяет вероятность, с которой виртуальный пользователь работает с заданным типом сети в сценарии нагрузочного теста.
 

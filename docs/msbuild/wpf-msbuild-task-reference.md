@@ -20,16 +20,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acdaddc132a40c37bc489b07ae3b7f2843b215
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53f723644744001e39967186d0eeec74bf7d3bd7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153804"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Справочные сведения о задачах WPF для MSBuild
 Процесс сборки Windows Presentation Foundation (WPF) расширяет Microsoft Build Engine с помощью дополнительного набора задач сборки, включая задачи компиляции разметки и обработки ресурсов.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [FileClassifier](../msbuild/fileclassifier-task.md)  
  Классифицирует набор исходных ресурсов как ресурсов, которые будут внедрены в сборку. Если ресурс является нелокализуемым, он внедряется в основную сборку приложения, в противном случае — во вспомогательную сборку.  
   
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/19/2018
  Выполняет слияние атрибутов локализации и примечаний одного или нескольких файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в один файл для всей сборки.  
   
  [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)  
- Внедряет один или несколько ресурсов (файлов JPG, ICO, BMP, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате и других) в RESOURCES-файл.  
+ Внедряет один или несколько ресурсов (файлов *JPG*, *ICO*, *BMP*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате и других) в *RESOURCES-файл*.  
   
  [UidManager](../msbuild/uidmanager-task.md)  
  Проверяет, обновляет или удаляет уникальные идентификаторы (UID) для локализации всех элементов [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], включенных в исходные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Добавляет элемент **\<hostInBrowser />** в манифест приложения (*имя_проекта*.exe.manifest) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
+ Добавляет элемент **\<hostInBrowser />** в манифест приложения (*\<имя_проекта>.exe.manifest*) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [MSBuild](../msbuild/msbuild.md)

@@ -14,10 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e229b09e5c739fb0f1096beb253156765f653cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "24623714"
 ---
 > [!NOTE]
->  В [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], можно подключиться к базе данных SQL Server либо из **обозреватель объектов SQL Server** или **подключения к данным** узел в **обозревателя серверов**. **Обозреватель объектов SQL Server** обеспечивает представление, аналогичное окну SQL Server Management Studio. Чтобы открыть этот обозреватель из строки меню, выберите **представление**, **обозреватель объектов SQL Server**. Дополнительные сведения см. в разделе [разработка подключенной базы данных](http://go.microsoft.com/fwlink/?LinkId=233646).
+>  В [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], можно подключаться к базе данных SQL Server из **обозреватель объектов SQL Server** или **подключения к данным** узел в **обозревателя серверов**. **Обозреватель объектов SQL Server** обеспечивает представление, аналогичное окну SQL Server Management Studio. Чтобы открыть этот обозреватель из строки меню, выберите **представление**, **обозреватель объектов SQL Server**. Дополнительные сведения см. в разделе [разработка подключенной базы данных](http://go.microsoft.com/fwlink/?LinkId=233646).

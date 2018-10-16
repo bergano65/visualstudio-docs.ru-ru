@@ -9,17 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9e9471d3ddfe61e200bc3aefc3d20ed2013120ce
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751784"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382142"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Использование эмуляторов для изоляции модульных тестов приложений SharePoint 2010
+
 Пакет Microsoft.SharePoint.Emulators предоставляет набор библиотек, которые позволяют создавать изолированные модульные тесты для приложений Microsoft SharePoint 2010. Эмуляторы используют [оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) платформы изоляции [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) для создания упрощенных объектов в памяти, которые имитируют наиболее распространенные объекты и методы API SharePoint. Оболочки совместимости Fakes используются, например, когда невозможно эмулировать метод SharePoint или требуется изменить стандартное поведение эмулятора.
 
- Существующие классы и методы теста можно легко преобразовать для выполнения в контексте эмулятора. Эта возможность позволяет создавать тесты двойного назначения. Тест двойного назначения можно использовать как тест интеграции для реального API SharePoint и как изолированный модульный тест, использующий эмуляторы.
+Существующие классы и методы теста можно легко преобразовать для выполнения в контексте эмулятора. Эта возможность позволяет создавать тесты двойного назначения. Тест двойного назначения можно использовать как тест интеграции для реального API SharePoint и как изолированный модульный тест, использующий эмуляторы.
 
 ##  <a name="BKMK_Requirements"></a> Требования
 
@@ -29,25 +30,27 @@ ms.locfileid: "34751784"
 
 -   Пакет NuGet эмуляторов Microsoft SharePoint
 
- Также следует ознакомиться с [основами модульного тестирования в Visual Studio](../test/unit-test-basics.md) и принципами работы [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
+Также следует ознакомиться с [основами модульного тестирования в Visual Studio](../test/unit-test-basics.md) и принципами работы [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> Пример AppointmentsWebPart
- Веб-часть AppointmentsWebPart позволяет просматривать список встреч SharePoint и управлять им.
 
- ![Веб-часть встреч](../test/media/ut_emulators_appointmentswebpart.png)
+Веб-часть AppointmentsWebPart позволяет просматривать список встреч SharePoint и управлять им.
 
- В этом примере мы протестируем два метода веб-части.
+![Веб-часть встреч](../test/media/ut_emulators_appointmentswebpart.png)
+
+В этом примере мы протестируем два метода веб-части.
 
 -   Метод `ScheduleAppointment` проверяет значения элементов списка, передаваемые в метод, и создает новую запись в списке на указанном веб-сайте SharePoint.
 
 -   Метод `GetAppointmentsForToday` возвращает сведения о сегодняшних встречах.
 
-##  <a name="BKMK_Converting_an_existing_test"></a> Преобразование существующего теста
- Как правило, при тестировании метода в компоненте SharePoint метод теста создает временный сайт в SharePoint Foundation и добавляет в него компоненты SharePoint, которые требуются для тестируемого кода. Затем метод теста создает и проверяет экземпляр компонента. В конце теста сайт будет ликвидирован.
+##  <a name="convert-an-existing-test"></a>Преобразование существующего теста
 
- Метод `ScheduleAppointment` нашего тестируемого кода, вероятно, является одним из первых методов, написанных для компонента:
+Как правило, при тестировании метода в компоненте SharePoint метод теста создает временный сайт в SharePoint Foundation и добавляет в него компоненты SharePoint, которые требуются для тестируемого кода. Затем метод теста создает и проверяет экземпляр компонента. В конце теста сайт будет ликвидирован.
 
-```
+Метод `ScheduleAppointment` нашего тестируемого кода, вероятно, является одним из первых методов, написанных для компонента:
+
+```csharp
 // method under test
 public bool ScheduleAppointment(SPWeb web, string listName, string name,
     string phone, string email, string age, DateTime date, out string errorMsg)
@@ -76,13 +79,11 @@ public bool ScheduleAppointment(SPWeb web, string listName, string name,
     item.Update();
     return true;
 }
-
 ```
 
- Первый тест функций в методе `ScheduleAppointment` может выглядеть следующим образом.
+Первый тест функций в методе `ScheduleAppointment` может выглядеть следующим образом.
 
 ```csharp
-
 [TestMethod]
 public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 {
@@ -106,28 +107,29 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
- Хотя этот метод и выполняет проверку того, что метод `ScheduleAppointment` правильно добавляет новую запись в список, это скорее тест интеграции веб-части, чем проверка определенного поведения кода. Внешние зависимости для SharePoint и API SharePoint могут вызвать сбой теста, причиной которого не будет являться пользовательский код в методе `ScheduleAppointment`. Затраты на создание и удаление сайта SharePoint также могут сделать тест слишком медленным для того, чтобы его может было использовать как обычную составляющую процесса написания кода. Выполнение установки и удаления сайта для каждого метода теста только усложняет проблему создания эффективных модульных тестов для разработчиков.
+Хотя этот метод и выполняет проверку того, что метод `ScheduleAppointment` правильно добавляет новую запись в список, это скорее тест интеграции веб-части, чем проверка определенного поведения кода. Внешние зависимости для SharePoint и API SharePoint могут вызвать сбой теста, причиной которого не будет являться пользовательский код в методе `ScheduleAppointment`. Затраты на создание и удаление сайта SharePoint также могут сделать тест слишком медленным для того, чтобы его может было использовать как обычную составляющую процесса написания кода. Выполнение установки и удаления сайта для каждого метода теста только усложняет проблему создания эффективных модульных тестов для разработчиков.
 
- Эмуляторы Microsoft SharePoint предоставляют набор объектов и метод удваивания, которые имитируют поведение наиболее распространенных API SharePoint. Эмулированные методы являются упрощенными реализациями API SharePoint, для запуска которых не требуется SharePoint. Используя Microsoft Fakes для перенаправления вызовов API SharePoint в метод удваивания эмуляторов SharePoint, можно изолировать тесты и гарантировать тестирование нужного кода. При вызове методов SharePoint, которые не эмулируются, можно использовать Fakes непосредственно для создания требуемого поведения.
+Эмуляторы Microsoft SharePoint предоставляют набор объектов и метод удваивания, которые имитируют поведение наиболее распространенных API SharePoint. Эмулированные методы являются упрощенными реализациями API SharePoint, для запуска которых не требуется SharePoint. Используя Microsoft Fakes для перенаправления вызовов API SharePoint в метод удваивания эмуляторов SharePoint, можно изолировать тесты и гарантировать тестирование нужного кода. При вызове методов SharePoint, которые не эмулируются, можно использовать Fakes непосредственно для создания требуемого поведения.
 
 ###  <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> Добавление пакета эмуляторов в тестовый проект
- Чтобы добавить эмуляторы SharePoint в тестовый проект, выполните следующие действия.
 
-1.  Выберите тестовый проект в обозревателе решений.
+Чтобы добавить эмуляторы SharePoint в тестовый проект, выполните следующие действия.
+
+1.  Выберите тестовый проект в **обозревателе решений**.
 
 2.  Выберите в контекстном меню команду **Управление пакетами NuGet**.
 
 3.  Найдите категорию **В сети** для `Microsoft.SharePoint.Emulators`и выберите **Установить**.
 
- ![Пакет NuGet эмуляторов SharePoint](../test/media/ut_emulators_nuget.png)
+![Пакет NuGet эмуляторов SharePoint](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Запуск метода теста с эмуляцией
- При установке пакета в проекты добавляются ссылки на необходимые библиотеки. Чтобы упростить использование эмуляторов в существующем тестовом классе, добавьте пространства имен `Microsoft.SharePoint.Emulators` и `Microsoft.QualityTools.Testing.Emulators`.
 
- Для включения эмуляции в методах теста заключите тело метода в оператор `using`, который создает объект `SharePointEmulationScope`. Пример:
+При установке пакета в проекты добавляются ссылки на необходимые библиотеки. Чтобы упростить использование эмуляторов в существующем тестовом классе, добавьте пространства имен `Microsoft.SharePoint.Emulators` и `Microsoft.QualityTools.Testing.Emulators`.
+
+Для включения эмуляции в методах теста заключите тело метода в оператор `using`, который создает объект `SharePointEmulationScope`. Пример:
 
 ```csharp
-
 [TestMethod]
 public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 {
@@ -151,20 +153,19 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
         Assert.IsTrue(success);
     }
 }
-
 ```
 
- При выполнении метода теста среда выполнения эмулятора вызывает Microsoft Fakes для динамической вставки кода в методы SharePoint для отклонения вызовов этих методов и перенаправления их делегатам, которые объявлены в библиотеке Microsoft.SharePoint.Fakes.dll. Microsoft.SharePoint.Emulators.dll реализует делегаты для эмулированных методов, точно воспроизводя фактическое поведение SharePoint. Когда метод теста или тестируемый компонент вызывает метод SharePoint, реализуется поведение эмуляции.
+При выполнении метода теста среда выполнения эмулятора вызывает Microsoft Fakes для динамической вставки кода в методы SharePoint для отклонения вызовов этих методов и перенаправления их делегатам, которые объявлены в библиотеке *Microsoft.SharePoint.Fakes.dll*. *Microsoft.SharePoint.Emulators.dll* реализует делегаты для эмулированных методов, точно воспроизводя фактическое поведение SharePoint. Когда метод теста или тестируемый компонент вызывает метод SharePoint, реализуется поведение эмуляции.
 
- ![Поток выполнения эмулятора](../test/media/ut_emulators_flowchart.png)
+![Поток выполнения эмулятора](../test/media/ut_emulators_flowchart.png)
 
-##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Создание классов и методов двойного назначения
- Чтобы создать методы, которые можно использовать для тестов интеграции реальных API SharePoint и изолированных модульных тестов, использующих эмуляторы, воспользуйтесь перегруженным конструктором `SharePointEmulationScope(EmulationMode)` для создания оболочки для кода метода теста. Два значения перечисления `EmulationMode` указывают, использует ли область эмуляторы (`EmulationMode.Enabled`) или API SharePoint (`EmulationMode.Passthrough`).
+##  <a name="create-dual-use-classes-and-methods"></a>Создание классов и методов двойного назначения
 
- Ниже приведен пример преобразования предыдущего теста в тест двойного назначения.
+Чтобы создать методы, которые можно использовать для тестов интеграции реальных API SharePoint и изолированных модульных тестов, использующих эмуляторы, воспользуйтесь перегруженным конструктором `SharePointEmulationScope(EmulationMode)` для создания оболочки для кода метода теста. Два значения перечисления `EmulationMode` указывают, использует ли область эмуляторы (`EmulationMode.Enabled`) или API SharePoint (`EmulationMode.Passthrough`).
+
+Ниже приведен пример преобразования предыдущего теста в тест двойного назначения.
 
 ```csharp
-
 // class level field specifies emulation mode
 private const EmulationMode emulatorMode = EmulationMode.Enabled;
 
@@ -193,7 +194,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
-## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>Использование атрибутов TestInitialize и TestCleanup для создания класса тестирования двойного применения
+## <a name="use-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a>Использование атрибутов TestInitialize и TestCleanup для создания тестового класса двойного назначения
 
 При запуске всех или большинства тестов в классе с помощью `SharePointEmulationScope` можно воспользоваться преимуществами методов уровня класса, чтобы задать режим эмуляции.
 
@@ -201,11 +202,11 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 -   Задание `EmulationMode` на уровне класса позволяет автоматизировать смену режима между `EmulationMode.Enabled` и `EmulationMode.Passthrough`.
 
- Метод класса с атрибутом `[TestInitialize]` выполняется в начале каждого метода теста, а метод с атрибутом `[TestCleanup]` выполняется в конце каждого метода теста. Можно объявить частное поле для объекта `SharePointEmulationScope` на уровне класса, инициализировать его в методе с атрибутом `TestInitialize`, а затем удалить объект в методе с атрибутом `TestCleanup`.
+Метод класса с атрибутом `[TestInitialize]` выполняется в начале каждого метода теста, а метод с атрибутом `[TestCleanup]` выполняется в конце каждого метода теста. Можно объявить частное поле для объекта `SharePointEmulationScope` на уровне класса, инициализировать его в методе с атрибутом `TestInitialize`, а затем удалить объект в методе с атрибутом `TestCleanup`.
 
- Можно использовать любой метод, который выбран для автоматизации выбора `EmulationMode`. Один из способов — проверка наличия определенного символа с помощью директив препроцессора. Например, для выполнения методов теста в классе с помощью эмуляторов можно определить символ, например `USE_EMULATION`, в файле тестового проекта или в командной строке сборки. Если этот символ определен, объявляется константа `EmulationMode` уровня класса и для нее задается значение `Enabled`. В противном случае значение константы — `Passthrough`.
+Можно использовать любой метод, который выбран для автоматизации выбора `EmulationMode`. Один из способов — проверка наличия определенного символа с помощью директив препроцессора. Например, для выполнения методов теста в классе с помощью эмуляторов можно определить символ, например `USE_EMULATION`, в файле тестового проекта или в командной строке сборки. Если этот символ определен, объявляется константа `EmulationMode` уровня класса и для нее задается значение `Enabled`. В противном случае значение константы — `Passthrough`.
 
- Ниже приведен пример тестового класса, который демонстрирует использование директив препроцессора и методов с атрибутами `TestInitialize` и `TestCleanup` для задания режима эмуляции.
+Ниже приведен пример тестового класса, который демонстрирует использование директив препроцессора и методов с атрибутами `TestInitialize` и `TestCleanup` для задания режима эмуляции.
 
 ```csharp
 //namespace declarations
@@ -258,18 +259,19 @@ namspace MySPAppTests
 }
 ```
 
-##  <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> Обработка неэмулированных методов SharePoint
- Не все типы SharePoint можно эмулировать, как и не все методы в некоторых эмулированных типах. Если тестируемый код вызывает метод SharePoint, который не эмулируется, метод вызывает исключение `NotSupportedException`. При возникновении исключения для метода SharePoint необходимо добавить оболочку совместимости Fakes.
+##  <a name="handle-non-emulated-sharepoint-methods"></a>Обработка неэмулированных методов SharePoint
 
- **Настройка Fakes в Sharepoint**
+Не все типы SharePoint можно эмулировать, как и не все методы в некоторых эмулированных типах. Если тестируемый код вызывает метод SharePoint, который не эмулируется, метод вызывает исключение `NotSupportedException`. При возникновении исключения для метода SharePoint необходимо добавить оболочку совместимости Fakes.
 
- Явный вызов оболочек совместимости Microsoft Fakes
+**Настройка Fakes в Sharepoint**
 
-1.  Чтобы создать оболочку совместимости для класса SharePoint, который не эмулируется, измените файл Microsoft.SharePoint.fakes и добавьте класс в список классов с оболочками. См. раздел [Настройка создания кода заглушек и оболочек](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) в статье [Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
+Явный вызов оболочек совместимости Microsoft Fakes
+
+1.  Чтобы создать оболочку совместимости для класса SharePoint, который не эмулируется, измените файл *Microsoft.SharePoint.fakes* и добавьте класс в список классов с оболочками. См. раздел [Настройка создания кода заглушек и оболочек](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) в статье [Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
 
      ![Папка Fakes в обозревателе решений](../test/media/ut_emulators_fakesfilefolder.png)
 
-2.  Перестройте тестовый проект по крайней мере один раз после установки пакета эмуляторов Microsoft SharePoint и после редактирования файла Microsoft.SharePoint.Fakes. При сборке проекта создается и заполняется папка **FakesAssembly** в корневой папке проекта на диске.
+2.  Выполните повторную сборку тестового проекта по крайней мере один раз после установки пакета эмуляторов Microsoft SharePoint и после редактирования файла *Microsoft.SharePoint.Fakes*. При сборке проекта создается и заполняется папка **FakesAssembly** в корневой папке проекта на диске.
 
      ![Папка FakesAssembly](../test/media/ut_emulators_fakesassemblyfolder.png)
 
@@ -277,9 +279,9 @@ namspace MySPAppTests
 
 4.  (Необязательно.) Добавьте директиву пространства имен для тестового класса для `Microsoft.QualityTools.Testing.Fakes`, `Microsoft.SharePoint.Fakes` и всех вложенных пространств имен `Microsoft.SharePoint.Fakes`, которые вы собираетесь использовать.
 
- **Реализация делегата оболочки совместимости для метода SharePoint**
+**Реализация делегата оболочки совместимости для метода SharePoint**
 
- В нашем примере проекта метод `GetAppointmentsForToday` вызывает метод [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) API-интерфейса SharePoint.
+В нашем примере проекта метод `GetAppointmentsForToday` вызывает метод [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) API-интерфейса SharePoint.
 
 ```csharp
 // method under test
@@ -296,16 +298,14 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
     }
     return result.ToString();
 }
-
 ```
 
- Версия `SPList.GetItems(SPQuery)` перегруженного метода `GetItems` не эмулируется. Таким образом, простое создание оболочки для существующего теста для `GetAppointmentsForToday` в `SharePoint.Emulation.Scope` завершится сбоем. Для создания работающего теста потребуется написать реализацию делегата Fakes `ShimSPList.GetItemsSPQuery`, который возвращает результаты для повторного тестирования.
+Версия `SPList.GetItems(SPQuery)` перегруженного метода `GetItems` не эмулируется. Таким образом, простое создание оболочки для существующего теста для `GetAppointmentsForToday` в `SharePoint.Emulation.Scope` завершится сбоем. Для создания работающего теста потребуется написать реализацию делегата Fakes `ShimSPList.GetItemsSPQuery`, который возвращает результаты для повторного тестирования.
 
- Ниже показаны изменения существующего метода теста, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, реализующего делегат Fakes. Необходимые изменения поясняются в следующих комментариях.
+Ниже показаны изменения существующего метода теста, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, реализующего делегат Fakes. Необходимые изменения поясняются в следующих комментариях.
 
 > [!IMPORTANT]
 > Методы теста, которые явно создают оболочки совместимости Fakes, создают исключение `ShimNotSupported` при выполнении теста в контексте `EmulationMode.Passthrough`. Во избежание этой проблемы следует использовать переменную для задания значения `EmulationMode` и заключить код Fakes в оператор `if`, тестирующий значение.
-
 
 ```csharp
 // class level field to set emulation mode
@@ -343,13 +343,13 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
         Assert.IsFalse(result.Contains("Name: Francis Totten"));
     }
 }
-
 ```
 
- В этом методе сначала проверяется включение эмуляции. Если эмуляция включена, мы создаем объект оболочки совместимости Fakes для списка `SPList`, а затем создаем и назначаем метод его делегату `GetItemsSPQuery`. Делегат использует метод Fakes `Bind`, чтобы добавить правильный элемент списка в коллекцию `ShimSPListItemCollection`, возвращаемую вызывающим объектом.
+В этом методе сначала проверяется включение эмуляции. Если эмуляция включена, мы создаем объект оболочки совместимости Fakes для списка `SPList`, а затем создаем и назначаем метод его делегату `GetItemsSPQuery`. Делегат использует метод Fakes `Bind`, чтобы добавить правильный элемент списка в коллекцию `ShimSPListItemCollection`, возвращаемую вызывающим объектом.
 
-##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Создание тестов эмуляции с нуля и сводка
- Хотя способы создания тестов эмуляции и двойного назначения, описанные в предыдущих разделах, предполагают преобразование существующих тестов, их также можно использовать для написания тестов с нуля. Эти способы представлены в следующем списке.
+##  <a name="write-emulation-tests-from-scratch-and-a-summary"></a>Создание тестов эмуляции с нуля и сводка
+
+Хотя способы создания тестов эмуляции и двойного назначения, описанные в предыдущих разделах, предполагают преобразование существующих тестов, их также можно использовать для написания тестов с нуля. Эти способы представлены в следующем списке.
 
 -   Для использования эмуляторов в тестовом проекте добавьте пакет NuGet Microsoft.SharePoint.Emulators в проект.
 
@@ -364,7 +364,8 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 -   Если все или большинство методов теста в тестовом классе выполняются в контексте эмуляции, можно использовать метод уровня класса с атрибутом `TestInitialize` для создания объекта `SharePointEmulationScope` и поле уровня класса для задания режима эмуляции. Это позволит автоматизировать изменение режима эмуляции. Затем используйте метод с атрибутом `TestCleanup`, чтобы удалить объект области.
 
 ##  <a name="BKMK_Example"></a> Пример
- Ниже приведен последний пример с использованием способов эмуляции SharePoint, описанных выше.
+
+Ниже приведен последний пример с использованием способов эмуляции SharePoint, описанных выше.
 
 ```csharp
 using System;
@@ -480,11 +481,11 @@ namspace MySPAppTests
 
     }
 }
-
 ```
 
 ##  <a name="BKMK_Emulated_SharePoint_types"></a> Эмулированные типы SharePoint
- [Microsoft.SharePoint.SPField](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
+
+[Microsoft.SharePoint.SPField](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
 
  [Microsoft.SharePoint.SPFieldIndex](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)
 
@@ -550,4 +551,4 @@ namspace MySPAppTests
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-- [Разработка решений SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
+- [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

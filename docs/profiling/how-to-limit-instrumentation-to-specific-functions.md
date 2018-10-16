@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844782"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Практическое руководство. Ограничение инструментирования указанными функциями
 Можно ограничить инструментирование и сбор данных одной или несколькими функциями, задав параметры на странице **Дополнительно** **сеанса анализа производительности** или страниц свойств целевого двоичного файла.  
@@ -69,4 +70,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Практическое руководство. Ограничение инструментирования указанными библиотеками DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Практическое руководство. Определение дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)

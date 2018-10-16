@@ -14,15 +14,21 @@ ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 025905d77463bfbad59848ec876512dea311f619
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 80d40dd60b0a6b6e507b903fd7a6185c5419422e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551696"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: не объявляйте изменяемые ссылочные типы, доступные только для чтения
+
 |||
 |-|-|
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
@@ -34,20 +40,20 @@ ms.lasthandoff: 04/26/2018
  Видимый извне тип содержит видимое извне и доступное только для чтение поле, являющееся изменяемым ссылочным типом.
 
 ## <a name="rule-description"></a>Описание правила
- Изменяемый тип — это тип, экземпляр которого может быть изменен. <xref:System.Text.StringBuilder?displayProperty=fullName> Класса является примером изменяемым ссылочным типом. Он содержит члены, которые могут изменять значение экземпляра класса. Пример неизменяемого ссылочного типа — <xref:System.String?displayProperty=fullName> класса. После его создания, его значение изменить нельзя.
+ Изменяемый тип — это тип, экземпляр которого может быть изменен. <xref:System.Text.StringBuilder?displayProperty=fullName> Класс является примером изменяемый ссылочный тип. Он содержит члены, которые можно изменить значение экземпляра класса. Примером неизменяемого ссылочного типа является <xref:System.String?displayProperty=fullName> класса. После его создания экземпляра, его значение изменить нельзя.
 
- Модификатор доступа только для чтения ([readonly](/dotnet/csharp/language-reference/keywords/readonly) в C# [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], и [const](/cpp/cpp/const-cpp) в C++) для ссылочного типа поля (указателя в C++) запрещает поля заменены другой экземпляр ссылочного типа. Однако модификатор не запрещает данных экземпляра поля изменяется посредством ссылочного типа.
+ Модификатор доступа только для чтения ([readonly](/dotnet/csharp/language-reference/keywords/readonly) в C# [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], и [const](/cpp/cpp/const-cpp) в C++) на ссылочный тип поля (указатель в C++) позволяет предотвратить поле заменены другой экземпляр ссылочного типа. Однако модификатор не препятствует данных экземпляра поля изменению посредством ссылочного типа.
 
- Поля-массивы только для чтения будут исключены из этого правила, но вместо этого вызывают нарушение [CA2105: поля массивов не должны считываться только](../code-quality/ca2105-array-fields-should-not-be-read-only.md) правило.
+ Поля только для чтения массивов будут исключены из этого правила, но вместо этого приведет к нарушению [CA2105: поля массивов не должны считываться только](../code-quality/ca2105-array-fields-should-not-be-read-only.md) правило.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, удалите модификатор доступа только для чтения, или, если допустима критическое изменение, замените поле неизменяемым типом.
+ Чтобы устранить нарушение этого правила, удалите модификатор только для чтения, или, если допустима критическое изменение, замените поле неизменяемый тип.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила, если тип является неизменяемым.
+ Его можно безопасно подавить предупреждение из этого правила, если тип поля является неизменяемым.
 
 ## <a name="example"></a>Пример
- Следующий пример показывает объявление поля, которая приводит к нарушению данного правила.
+ В следующем примере объявление поля, которое вызывает нарушение этого правила.
 
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]

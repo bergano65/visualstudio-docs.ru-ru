@@ -2,14 +2,15 @@
 title: Подключенные службы
 description: Добавление хранилища данных Azure, проверка подлинности и push-уведомления в мобильных приложениях в среде Visual Studio для Mac
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: d907684982f29947243b3b33aec1e18dbf95a101
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223912"
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство по подключенным службам
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/10/2018
 
 8. Следуйте инструкциям документации в разделе **Следующие шаги**, чтобы добавить в ваше приложение данные, автономную синхронизацию, проверку подлинности и push-уведомления:
 
-    [![Ознакомьтесь с инструкциями в разделе "Следующие шаги"](media/connected-services-image008-sml.png "Ознакомьтесь с инструкциями в разделе "Следующие шаги"")](media/connected-services-image008.png#lightbox)
+    [![Ознакомьтесь с инструкциями в разделе "Следующие шаги"](media/connected-services-image008-sml.png "Ознакомьтесь с инструкциями в разделе \"Следующие шаги\"")](media/connected-services-image008.png#lightbox)
 
 9. Если у вас нет ни одной существующей службы приложений, можно создать новые службы в Visual Studio для Mac.
   Нажмите кнопку **Создать** в левом нижнем углу списка служб, чтобы открыть диалоговое окно**Новая служба приложений**:

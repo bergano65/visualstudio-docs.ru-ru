@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8538ffdb1093accc8446d072ecc980586b73ee7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077663"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Как использовать резервные символы XML в файлах проектов
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Как использовать зарезервированные символы XML в файлах проектов
 При создании файлов проекта вам может потребоваться использовать зарезервированные символы XML, например, в значениях свойств или параметров задачи. Однако некоторые зарезервированные символы необходимо заменить именованными сущностями, чтобы файл проекта можно было проанализировать.  
   
-## <a name="using-reserved-characters"></a>Использование зарезервированных символов  
+## <a name="use-reserved-characters"></a>Использование зарезервированных знаков  
  В следующей таблице описаны зарезервированные символы XML, которые требуется заменить именованными сущностями, чтобы файл проекта можно было проанализировать.  
   
 |Зарезервированный символ|Именованная сущность|  

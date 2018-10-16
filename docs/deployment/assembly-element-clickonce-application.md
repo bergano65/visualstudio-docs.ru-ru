@@ -1,5 +1,5 @@
 ---
-title: '&lt;сборка&gt; элемент (приложение ClickOnce) | Документы Microsoft'
+title: '&lt;сборка&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077094"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;сборка&gt; элемент (приложение ClickOnce)
 Элемент верхнего уровня для манифеста приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/07/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `assembly` Элемент является корневым элементом и является обязательным. Должен быть первый элемент автономной `assemblyIdentity` элемента. Элементы манифеста должны быть в одном из следующих пространств имен:  
+ `assembly` Элемент является корневым элементом и является обязательным. Его первый содержащийся элемент должен быть `assemblyIdentity` элемент. Элементы манифеста должен находиться в одном из следующих пространств имен:  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -45,18 +46,18 @@ ms.lasthandoff: 05/07/2018
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- Дочерние элементы сборки также необходимо включить в этих пространствах имен путем наследования или добавление тегов.  
+ Дочерние элементы сборки также необходимо включить в эти пространства имен путем наследования или маркировки.  
   
- `assembly` Элемент имеет указанный ниже атрибут.  
+ `assembly` Элемент имеет следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`manifestVersion`|Обязательно. `manifestVersion` Атрибуту должно быть присвоено `1.0`.|  
+|`manifestVersion`|Обязательно. `manifestVersion` Атрибута должно быть присвоено `1.0`.|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показан `assembly` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
+ В следующем примере кода показано `assembly` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

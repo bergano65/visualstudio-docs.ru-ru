@@ -1,9 +1,9 @@
 ---
-title: Команды консоли JavaScript в Visual Studio | Документы Microsoft
+title: Команды консоли JavaScript в Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
@@ -14,15 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282213"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры, демонстрирующие способы использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения в этом разделе относятся UWP приложений и приложений, созданных с помощью средств Visual Studio для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладки приложения](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения этого раздела применяются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладка приложения](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах F12 для Internet Explorer, см. в разделе [в этом разделе](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
@@ -51,9 +52,9 @@ ms.lasthandoff: 04/18/2018
 |`groupEnd()`|Завершает текущую группу.<br /><br /> Требования:<br /><br /> Visual Studio 2013|См. пример для команды `group` .|  
 |`info(message)`|Отправляет `message` в окно консоли. Перед сообщением стоит символ "Информация".|`console.info("info message");`<br /><br /> Дополнительные примеры см. в разделе [Formatting console.log output](#ConsoleLog) далее в этой статье.|  
 |`log(message)`|Отправляет `message` в окно консоли.<br /><br /> При передаче объекта эта команда отправляет указанный объект в окно консоли и отображает его в визуализаторе объекта. Визуализатор можно использовать для изучения свойств в окне консоли.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|  
-|`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|  
-|`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|  
+|`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
+|`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
+|`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
 |`select(element)`|Выбирает заданный элемент HTML `element` в [проводника DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Запускает таймер, определяемый дополнительным параметром `name` . При применении с командой `console.timeEnd`вычисляет время, прошедшее между моментами действия команд `time` и `timeEnd`, и отправляет результат (в мс) на консоль, используя строку `name` в качестве префикса. Используется для включения инструментирования кода приложения для измерения производительности.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Останавливает таймер, определяемый дополнительным параметром `name` . См. консольную команду `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  

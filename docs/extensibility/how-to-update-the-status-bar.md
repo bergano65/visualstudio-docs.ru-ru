@@ -1,5 +1,5 @@
 ---
-title: 'Как: обновление строки состояния | Документы Microsoft'
+title: 'Практическое: обновления строки состояния | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5f7e6849736f0fc226c51f69a1526aca8e971a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499956"
 ---
-# <a name="how-to-update-the-status-bar"></a>Как: обновление строки состояния
-**Строка состояния** находится панель элементов управления в нижней части многих приложений windows, содержащий один или несколько строк текста состояния или индикаторы.  
+# <a name="how-to-update-the-status-bar"></a>Практическое: обновления строки состояния
+**Строки состояния** находится на панели элементов управления в нижней части многие приложения windows, содержащий один или несколько строк текста состояния или индикаторы.  
   
-### <a name="to-update-the-status-bar"></a>Для обновления строки состояния  
+## <a name="to-update-the-status-bar"></a>Для обновления строки состояния  
   
-1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> для каждого отдельного представления объекта (DocView), предоставляющий редактора, таких как представление формы и представление кода.  
+1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> на каждый объект отдельного представления (DocView), предоставляемых редактора, таких как представление формы и представление кода.  
   
-2.  При вызове метода IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, обновить сведения в **строка состояния** , вызвав методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
+2.  При вызове метода интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, обновить сведения в **строки состояния** , вызывая методы класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
   
     > [!NOTE]
-    >  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> только при первоначальной активации окна документа. В течение времени, которое является активной в окне документа, необходимо обновить **строка состояния** сведения, что состояние изменения редактора.  
+    >  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> только при первоначальной активации окна документа. В течение времени, который активен в окне документа, необходимо обновить **строки состояния** сведения, что состояние изменения редактора.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
- Объект **строка состояния** содержит четыре отдельные поля:  
+ Объект **строки состояния** содержит четыре отдельные поля:  
   
 -   Текст состояния  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
  Интегрированная среда разработки автоматически вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> реализации при активации окна документа.  
   
- Разработчик VSPackage, отвечает за обновление текст состояния в строке состояния. IDE сбрасывает эту строку, чтобы все «ГОТОВО», если текстовое поле состояния имеет значение пустой текст ("») в состоянии простоя.  
+ Средство реализации VSPackage несет ответственность за обновление текст состояния в строке состояния. Интегрированной среды разработки сбрасывает эту строку, чтобы «ГОТОВ», если в текстовом поле состояния имеет значение пустой текст ("») во время простоя.  
   
 ## <a name="see-also"></a>См. также  
  [Строки состояния](/cpp/mfc/status-bars)

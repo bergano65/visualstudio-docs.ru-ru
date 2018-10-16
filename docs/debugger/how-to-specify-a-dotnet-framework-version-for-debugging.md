@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476677"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Практическое руководство. Установка версии платформы .NET Framework для отладки
 Отладчик [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] поддерживает отладку как текущей версии платформы Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], так и старых версий платформы. При запуске приложения из Visual Studio, отладчик всегда может определить правильную версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для отлаживаемого приложения. Если приложение уже запущено и используется **присоединить**, отладчик не всегда можно определить более старой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. В этом случае появится сообщение об ошибке следующего содержания:  

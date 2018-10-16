@@ -1,10 +1,9 @@
 ---
-title: Поиск в коде с использованием команд перехода
-ms.date: 09/26/2017
+title: Переход к файлу, переход к символу, переход к строке
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447197"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626878"
 ---
 # <a name="find-code-using-go-to-commands"></a>Поиск в коде с использованием команд перехода
 
@@ -56,12 +55,13 @@ ms.locfileid: "34447197"
 Чтобы сузить область поиска до определенного типа элемента кода, можно указать префикс в поле поиска или выбрать один из пяти значков фильтра:
 
 Префикс | Значок | Сочетание клавиш | Описание:
-:----: | ---- | -------- | ---
-\#     | ![Значок символа](media/gotoall_symbolicon.png) | **CTRL**+**1**, **CTRL**+**S** | Переход к указанному символу
-f      | ![Значок файла](media/gotoall_fileicon.png)     | **CTRL**+**1**, **CTRL**+**F** | Переход к указанному файлу
-m      | ![Значок члена](media/gotoall_membericon.png) | **CTRL**+**1**, **CTRL**+**M** | Переход к указанному члену
-t      | ![Значок типа](media/gotoall_typeicon.png)     | **CTRL**+**1**, **CTRL**+**T** | Переход к указанному типу
-:      | ![Значок строки](media/gotoall_lineicon.png)     | **CTRL**+**G**         | Переход к строке с указанным номером
+:-: | - | - | -
+:| ![Значок строки](media/gotoall-line-icon.png) | **CTRL**+**G**         | Переход к строке с указанным номером
+f| ![Значок файлов](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Переход к указанному файлу
+r| ![Значок последних файлов](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Переход к указанному, недавно просмотренному файлу
+t| ![Значок типов](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Переход к указанному типу
+m| ![Значок членов](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**M** | Переход к указанному члену
+\#| ![Значок символов](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **CTRL**+**S** | Переход к указанному символу
 
 ### <a name="filter-to-a-specific-location"></a>Фильтрация определенного расположения
 

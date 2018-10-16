@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5a23ed3a56c0d4b8daf8086e07ae04206c52ac4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379716"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Создание закодированного теста пользовательского интерфейса для приложения SharePoint
 
-[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md) для приложений SharePoint происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе веб-редактирования. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.
+[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md) для приложений SharePoint происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе **веб-редактирования**. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.
 
 ![веб-части SharePoint](../test/media/cuit_sharepoint.png)
 
@@ -93,8 +94,8 @@ uiGridKeyboardInputEdit.Text=value;
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](/office-dev/office-dev/create-sharepoint-solutions)
-- [Verifying and Debugging SharePoint Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)
-- [Building and Debugging SharePoint Solutions](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
-- [Profiling the Performance of SharePoint Applications](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

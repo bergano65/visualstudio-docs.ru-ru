@@ -1,7 +1,7 @@
 ---
 title: Использование Visual Studio на виртуальной машине Azure
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 03/03/2018
+ms.date: 09/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 5061265467f7fab653e3266d5c25ccf0c9ef43da
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550298"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -33,9 +34,9 @@ ms.lasthandoff: 05/10/2018
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 — последняя версия (15.7)                    |    Enterprise, Community     |      Версия 15.7.0     |
-| Visual Studio 2017: последняя предварительная версия (версия 15.8, предварительная версия 1) |    Enterprise, Community     |      Версия 15.8.1     |
-|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.13    |
+| Visual Studio 2017 — последняя версия (15.8)                    |    Enterprise, Community     |      Версия 15.8.4     |
+| Visual Studio 2017: последняя предварительная версия (версия 15.9, предварительная версия 2) |    Enterprise, Community     |      Версия 15.9       |
+|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.18    |
 |   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01  |
 |         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек |
 
@@ -58,14 +59,14 @@ ms.lasthandoff: 05/10/2018
 
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
-       add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^
-       add Microsoft.Net.Component.4.6.2.SDK ^
-       add Microsoft.Net.Component.4.6.2.TargetingPack ^
-       add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
-       add Microsoft.VisualStudio.Component.FSharp ^
-       add Component.GitHub.VisualStudio ^
-       add Microsoft.VisualStudio.Component.LinqToSql
+       --add Microsoft.Net.Component.4.7.SDK ^
+       --add Microsoft.Net.Component.4.7.TargetingPack ^
+       --add Microsoft.Net.Component.4.6.2.SDK ^
+       --add Microsoft.Net.Component.4.6.2.TargetingPack ^
+       --add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
+       --add Microsoft.VisualStudio.Component.FSharp ^
+       --add Component.GitHub.VisualStudio ^
+       --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
 Если образы не включают в себя требуемый компонент Visual Studio, сообщите об этом с помощью средства обратной связи (в правом верхнем углу страницы).

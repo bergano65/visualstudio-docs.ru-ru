@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481714"
 ---
 # <a name="how-to-display-process-properties"></a>Практическое руководство. Отображение свойств процесса
 Для получения дополнительных сведений о процессах, перечисленных в [представление процессов](../debugger/processes-view.md), используйте [диалоговое окно "Свойства процесса"](../debugger/process-properties-dialog-box.md).  

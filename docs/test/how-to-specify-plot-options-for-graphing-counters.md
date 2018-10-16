@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750926"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382325"
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>Практическое руководство. Определение параметров построения для отображения счетчиков
 
@@ -25,7 +25,7 @@ ms.locfileid: "34750926"
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Задание параметров построения диаграмм
 
-1.  В анализаторе тестовой нагрузки нажмите кнопку **Диаграммы** на панели инструментов нагрузочных тестов.
+1.  В **анализаторе тестовой нагрузки** нажмите на панели инструментов кнопку **Диаграммы**.
 
      Результаты нагрузочных тестов будут отображены в представлении диаграмм.
 
@@ -52,5 +52,4 @@ ms.locfileid: "34750926"
 ## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Практическое руководство. Создание пользовательских диаграмм](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Практическое руководство. Создание пользовательских графов](../test/how-to-create-custom-graphs-in-load-test-results.md)

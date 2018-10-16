@@ -10,13 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3082ca9f03ddd56f000fcaea18525c0f61903512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547858"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: не используйте ненадежные алгоритмы шифрования
+
 |||
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
@@ -25,70 +27,71 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 > [!NOTE]
->  Это предупреждение последний раз обновлялось в ноябре 2015 г.
+> Это предупреждение последний раз обновлялось в ноябре 2015 г.
 
 ## <a name="cause"></a>Причина
- Алгоритмы шифрования, такие как <xref:System.Security.Cryptography.TripleDES> , и алгоритмы хэширования, такие как <xref:System.Security.Cryptography.SHA1> и <xref:System.Security.Cryptography.RIPEMD160> , считаются ненадежными.
 
- Эти алгоритмы шифрования не обеспечивают безопасность в той же степени, что более современные аналоги. Криптографические алгоритмы хэширования <xref:System.Security.Cryptography.SHA1> и <xref:System.Security.Cryptography.RIPEMD160> обеспечивают меньшую устойчивость к конфликтам, чем более современные алгоритмы хэширования. Алгоритм шифрования <xref:System.Security.Cryptography.TripleDES> предоставляет меньшее число битов защиты, чем более современные алгоритмы шифрования.
+Алгоритмы шифрования, такие как <xref:System.Security.Cryptography.TripleDES> , и алгоритмы хэширования, такие как <xref:System.Security.Cryptography.SHA1> и <xref:System.Security.Cryptography.RIPEMD160> , считаются ненадежными.
+
+Эти алгоритмы шифрования не обеспечивают безопасность в той же степени, что более современные аналоги. Криптографические алгоритмы хэширования <xref:System.Security.Cryptography.SHA1> и <xref:System.Security.Cryptography.RIPEMD160> обеспечивают меньшую устойчивость к конфликтам, чем более современные алгоритмы хэширования. Алгоритм шифрования <xref:System.Security.Cryptography.TripleDES> предоставляет меньшее число битов защиты, чем более современные алгоритмы шифрования.
 
 ## <a name="rule-description"></a>Описание правила
- Ненадежные алгоритмы шифрования и функции хэширования еще используются сегодня по ряду причин, но они не должны использоваться для обеспечения конфиденциальности данных, которые они защищают.
 
- Правило срабатывает при обнаружении алгоритмов 3DES, SHA1 или RIPEMD160 в коде и выдает предупреждение для пользователя.
+Ненадежные алгоритмы шифрования и функции хэширования еще используются сегодня по ряду причин, но они не должны использоваться для обеспечения конфиденциальности данных, которые они защищают.
+
+Правило срабатывает при обнаружении алгоритмов 3DES, SHA1 или RIPEMD160 в коде и выдает предупреждение для пользователя.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Используйте более криптографически надежные варианты.
 
--   Для шифрования TripleDES используйте шифрование <xref:System.Security.Cryptography.Aes> .
+Используйте более надежные варианты шифрования.
 
--   Для функций хэширования SHA1 или RIPEMD160 используйте функции в [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) семейство (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Для шифрования TripleDES используйте шифрование <xref:System.Security.Cryptography.Aes> .
+
+- Для функций хэширования SHA1 или RIPEMD160 используйте функции в [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) семейства (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила, когда для необходимого уровня защиты данных не требуется гарантия безопасности.
 
-## <a name="pseudo-code-example"></a>Пример псевдокода
- На момент написания этой статьи следующий пример псевдокода иллюстрирует шаблон, обнаруживаемый этим правилом.
+Отключайте предупреждение из этого правила, когда для необходимого уровня защиты данных не требуется гарантия безопасности.
+
+## <a name="pseudo-code-examples"></a>Примеры псевдокода
+
+На момент написания этой статьи следующий пример псевдокода иллюстрирует шаблон, обнаруживаемый этим правилом.
 
 ### <a name="sha-1-hashing-violation"></a>Нарушение хэширования SHA-1
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA1.Create();
-
 ```
 
-### <a name="solution"></a>Решение
+Решение:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
-### <a name="ripemd160-br-br-hashing-violation"></a>RIPEMD160 <br /><br />Нарушение хэширования
+### <a name="ripemd160-hashing-violation"></a>Нарушение хэширования RIPEMD160
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = RIPEMD160Managed.Create();
-
 ```
 
-### <a name="solution"></a>Решение
+Решение:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
 ### <a name="tripledes-encryption-violation"></a>Нарушение шифрования TripleDES
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (TripleDES encAlg = TripleDES.Create())
@@ -97,9 +100,9 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>Решение
+Решение:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (AesManaged encAlg = new AesManaged())

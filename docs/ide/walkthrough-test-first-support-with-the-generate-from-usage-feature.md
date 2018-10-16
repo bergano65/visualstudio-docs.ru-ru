@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448341"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748196"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
@@ -42,7 +42,7 @@ ms.locfileid: "34448341"
 
 3.  В центральной области выберите элемент **Проект модульного теста** и примите имя по умолчанию `UnitTestProject1`. На рисунке ниже показано диалоговое окно, отображаемое в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Диалоговое окно в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выглядит похоже.
 
-     ![Диалоговое окно "Новый тестовый проект"](../ide/media/newproject_test.png "NewProject_Test")
+     ![Диалоговое окно «Новый тестовый проект»](../ide/media/newproject_test.png)
 
 4.  Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Создание проекта**.
 
@@ -67,9 +67,9 @@ ms.locfileid: "34448341"
 
 3.  Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано на приведенных ниже снимках экрана. Появится волнистая линия подчеркивания, свидетельствующая об ошибке во время компиляции, а в левом поле (только для C#) или непосредственно под волнистой линией, если навести на нее указатель мыши, появится значок [Быстрые действия](../ide/quick-actions.md) в виде лампочки.
 
-     ![Быстрые действия в Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Быстрые действия в Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Быстрые действия в C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Быстрые действия в C&#35;](../ide/media/genclass_underline.png)
 
 4.  Щелкните значок **быстрых действий**. Появится сообщение об ошибке, в котором указывается, что тип `Automobile` не определен. Также будет предложено несколько решений.
 
@@ -77,7 +77,7 @@ ms.locfileid: "34448341"
 
 6. В списке **Проект** выберите элемент **GFUDemo\_VB** или **GFUDemo_CS**, чтобы среда Visual Studio добавила файл в проект библиотеки классов, а не в тестовый проект. Выберите параметр **Создать новый файл**, если он еще не выбран, и присвойте файлу имя *Automobile.cs* или *Automobile.vb*.
 
-     ![Диалоговое окно "Сформировать новый тип"](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Диалоговое окно "Сформировать новый тип"](../ide/media/genotherdialog.png)
 
 6.  Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно и создать файл.
 
@@ -134,7 +134,7 @@ ms.locfileid: "34448341"
 
      Окно **Результаты теста** показано на рисунке ниже.
 
-     ![Результаты теста, завершившегося ошибкой](../ide/media/testsfailed.png "TestsFailed")
+     ![Результаты теста, завершившегося ошибкой](../ide/media/testsfailed.png)
 
 2.  В окне **Результаты теста** дважды щелкните каждую строку результата теста для перехода к месту тестирования.
 
@@ -156,7 +156,7 @@ ms.locfileid: "34448341"
 
      Результат на этот раз положительный. Окно **Результаты теста** показано на рисунке ниже.
 
-     ![Результаты теста, завершившегося успешно](../ide/media/testspassed.png "TestsPassed")
+     ![Результаты теста, пройденного успешно](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>См. также
 

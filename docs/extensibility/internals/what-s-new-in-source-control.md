@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137772"
 ---
 # <a name="what39s-new-in-source-control"></a>Что&#39;новые возможности системы управления версиями
 В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] может обеспечить решение управления глубокий уровень интеграции источника, реализовав VSPackage системы управления версиями. В этом разделе описаны возможности системы управления версиями пакетов VSPackage и общие сведения о реализации действий.  

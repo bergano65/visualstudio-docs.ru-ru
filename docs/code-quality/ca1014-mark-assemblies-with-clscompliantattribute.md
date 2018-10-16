@@ -14,15 +14,21 @@ ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e5a43a402bb215a939b37354dd30f24e4d5d14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3375d3a88a9776190887252cff7c2f9accb5fd4e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547283"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: помечайте сборки атрибутом CLSCompliantAttribute
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithClsCompliant|
@@ -31,25 +37,27 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Сборка не имеет <xref:System.CLSCompliantAttribute?displayProperty=fullName> атрибут, применяемый к нему.
+ Сборка не имеет <xref:System.CLSCompliantAttribute?displayProperty=fullName> атрибут, примененный к нему.
 
 ## <a name="rule-description"></a>Описание правила
- Спецификация среды CLS определяет ограничения по именованию, типам данных и правилам, которым должны соответствовать сборки, предназначенные для использования в нескольких языках программирования. Для правильной разработки все сборки должны явным образом указывать CLS-совместимости с <xref:System.CLSCompliantAttribute>. Если атрибут отсутствует в сборке, сборка несовместима.
+ Спецификация среды CLS определяет ограничения по именованию, типам данных и правилам, которым должны соответствовать сборки, предназначенные для использования в нескольких языках программирования. Хороший проект определяет, что все сборки явным образом указывать совместимость с CLS с <xref:System.CLSCompliantAttribute>. Если атрибут отсутствует в сборке, сборка не является совместимым.
 
- Это возможность CLS-совместимые сборки содержат типы или члены, которые не являются совместимыми типов.
+ Это возможность CLS-совместимые сборки содержат типы или члены, которые не соответствуют типов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, добавьте атрибут к сборке. Вместо пометки всю сборку как несовместимые, следует определить, какие типы или члены типов не являются совместимыми и пометить их таким образом. Если это возможно необходимо предоставить CLS-совместимая альтернатива для несовместимых элементов, чтобы все функциональные возможности сборки доступны широкой аудитории.
+ Чтобы устранить нарушение этого правила, добавьте атрибут к сборке. Вместо пометки всей сборки считается несоответствующим, следует определить, какие типы или члены типов не являются совместимыми и пометить их таким образом. Если это возможно необходимо предоставить CLS-совместимая альтернатива для несовместимых элементов таким образом, чтобы максимально широкой аудиторией доступны все функции сборки.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Если требуется, чтобы сборка была совместимой, примените атрибут и присвойте ему значение `false`.
+ Для этого правила отключать вывод предупреждений не следует. Если не хотите, чтобы сборка должна быть совместимым, примените атрибут и присвойте ему значение `false`.
 
 ## <a name="example"></a>Пример
- В следующем примере показано сборку, которая имеет <xref:System.CLSCompliantAttribute?displayProperty=fullName> применен атрибут, объявляющий CLS-совместимыми.
+ В следующем примере показано сборку, которая имеет <xref:System.CLSCompliantAttribute?displayProperty=fullName> применен атрибут, который они объявлены CLS-совместимыми.
 
  [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
  [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
  [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.CLSCompliantAttribute?displayProperty=fullName> [Независимость от языка и независимые от языка компоненты](/dotnet/standard/language-independence-and-language-independent-components)
+
+- <xref:System.CLSCompliantAttribute?displayProperty=fullName>
+- [Независимость от языка и независимые от языка компоненты](/dotnet/standard/language-independence-and-language-independent-components)

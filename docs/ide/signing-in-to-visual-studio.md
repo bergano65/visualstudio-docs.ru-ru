@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542498"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
 Выполняя вход, вы можете использовать расширенный спектр возможностей Visual Studio. Например, после входа вы, помимо прочего, можете синхронизировать настройки между устройствами, продлевать срок действия пробной версии и автоматически подключаться к службе Azure.
 
-Ниже приведен полный список возможностей, которые вы получаете после входа:  
+Ниже приведен полный список возможностей, которые вы получаете после входа:
 
 - **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
 
@@ -35,9 +36,9 @@ ms.lasthandoff: 04/26/2018
 
 - **Продление пробного периода Visual Studio**. Пробный период Visual Studio Professional и Visual Studio Enterprise продлевается с 30 до 90 дней.
 
-- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской MSDN или Visual Studio Team Services**. См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской Visual Studio или организацией Azure DevOps** . См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-- **Автоматическое подключение к таким службам, как Azure и Visual Studio Team Services**, в интегрированной среде разработки без повторного запроса учетных данных одной и той же учетной записи.
+- **Автоматическое подключение к таким службам, как Azure и Azure DevOps Services**, в интегрированной среде разработки без повторного запроса учетных данных одной и той же учетной записи.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Вход в Visual Studio
 
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Если у вас возникли проблемы при входе, ознакомьтесь со справкой на странице [поддержки учетных записей](https://www.visualstudio.com/subscriptions/support/).
+Если у вас возникли проблемы при входе, ознакомьтесь со справкой на странице [поддержки учетных записей](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>См. также
 
-* [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

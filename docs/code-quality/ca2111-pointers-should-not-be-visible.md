@@ -16,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7688910275414f1421fe81dffc5bc3efcd1d93
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a08d15ec491bb78c2d9398c8e689015c9523a3c1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546828"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: указатели не должны быть видимыми
+
 |||
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
@@ -34,18 +36,18 @@ ms.lasthandoff: 04/26/2018
  Открытый или защищенный <xref:System.IntPtr?displayProperty=fullName> или <xref:System.UIntPtr?displayProperty=fullName> поле не только для чтения.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.IntPtr> и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, что приведет к предоставлению доступа к произвольным областям памяти или сбоям приложения или системы.
+ <xref:System.IntPtr> и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, потенциально разрешение доступа к произвольным областям памяти или вызывая сбои приложения или системы.
 
- Если вы собираетесь безопасный доступ к типу, содержащему поле указателя, см. раздел [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Если для защиты доступа к тип, содержащий поле указателя, см. в разделе [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Обеспечьте безопасность указателя, сделав ее только для чтения, внутренним или закрытым.
+ Обеспечьте безопасность указателя, сделав его только для чтения, внутренний или закрытый.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте предупреждение из этого правила, если не следует полагаться на значение указателя.
 
 ## <a name="example"></a>Пример
- В следующем коде показано указатели, которые нарушают и удовлетворяют правилу. Обратите внимание, что не частных указателей также нарушать правило [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ В следующем коде показано указатели, которые нарушают и удовлетворяют правилу. Обратите внимание на то, что не частных указателей также нарушают правило [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
@@ -55,4 +57,6 @@ ms.lasthandoff: 04/26/2018
  [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>См. также
- <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>
+
+- <xref:System.IntPtr?displayProperty=fullName>
+- <xref:System.UIntPtr?displayProperty=fullName>

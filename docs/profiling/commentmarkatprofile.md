@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bd01f6ad180c85e48c51925de094df94aaa335
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233702"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-Метод `CommentMarkAtProfile` вставляет значение метки времени, числовую метку и строку комментария в VSP-файл. Значение метки времени можно использовать для синхронизации внешних событий. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию CommentMarkAtProfile.  
+Метод `CommentMarkAtProfile` вставляет значение метки времени, числовую метку и строку комментария в *VSP*-файл. Значение метки времени можно использовать для синхронизации внешних событий. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию CommentMarkAtProfile.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -64,14 +65,14 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 >  Методы CommentMarkAtProfile следует использовать только при профилировании с инструментированием.  
   
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Сведения о функции  
   
 |||  
 |-|-|  
-|**Заголовок**|Включение VSPerf.h|  
-|**Библиотека**|Использование VSPerf.lib|  
+|**Заголовок**|Включение *VSPerf.h*|  
+|**Библиотека**|Использование *VSPerf.lib*|  
 |**Юникод**|Функция реализована как CommentMarkAtProfileW (Юникод) и CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Пример  

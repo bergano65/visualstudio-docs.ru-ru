@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144373"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля управления источника
 API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны реализовывать системы управления версиями в соответствии с этот API. Подписи каждой функции и семантику, связанные с битовые флаги и другие параметры описаны в этой справке.  
@@ -85,7 +86,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="requirements"></a>Требования  
  Заголовок: scc.h  
   
- (В пакет SDK для среды общие папки, по умолчанию включает *[диск]*\Program Files\VSIP 8.0\EnvSDK\common\inc; также показан в папку с образцом MSSCCI VSIP *[диск]*\Program Files\VSIP 8.0\MSSCCI).  
+ (В пакет SDK для среды общие папки, по умолчанию включает *[диск]* \Program Files\VSIP 8.0\EnvSDK\common\inc; также показан в папку с образцом MSSCCI VSIP *[диск]* \Program Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>См. также  
  [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   

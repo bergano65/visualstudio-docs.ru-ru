@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919681"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
 В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [C++ основные рекомендации в данный момент](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрый запуск: анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

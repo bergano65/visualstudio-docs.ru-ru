@@ -20,17 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26adf9bd97e10e25402db100ebb0140917ac6143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cf333c5339ce9a4d6046fb5156e37157004491b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177884"
 ---
-# <a name="assignculture-task"></a>Задача AssignCulture
-Эта задача принимает список элементов, которые могут содержать допустимую строку идентификатора языка и региональных параметров .NET в составе имени файла, и создает элементы, которые имеют метаданные `Culture`, содержащие соответствующий идентификатор языка и региональных параметров. Например, имя файла Form1.fr-fr.resx содержит идентификатор языка и региональных параметров "fr-fr", поэтому эта задача выдает элемент с тем же именем файла и метаданными `Culture`, равными `fr-fr`. Задача также выдает список имен файлов, из которых удалено указание языка и региональных параметров.  
+# <a name="assignculture-task"></a>AssignCulture - задача
+Эта задача принимает список элементов, которые могут содержать допустимую строку идентификатора языка и региональных параметров .NET в составе имени файла, и создает элементы, которые имеют метаданные `Culture`, содержащие соответствующий идентификатор языка и региональных параметров. Например, имя файла *Form1.fr-fr.resx* содержит идентификатор языка и региональных параметров "fr-fr", поэтому эта задача выдает элемент с тем же именем файла и метаданными `Culture`, равными `fr-fr`. Задача также выдает список имен файлов, из которых удалено указание языка и региональных параметров.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `AssignCulture`.  
+ В следующей таблице приводятся параметры задачи `AssignCulture` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/19/2018
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает список файлов с внедренными именами языка и региональных параметров для назначения.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример выполняет задачу `AssignCulture` с коллекцией элементов `ResourceFiles`.  
@@ -73,10 +74,10 @@ ms.lasthandoff: 04/19/2018
   
 |Коллекция элементов|Описание|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (без дополнительных метаданных)|  
-|`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (без дополнительных метаданных)|  
-|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`без дополнительных метаданных)|  
+|`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (без дополнительных метаданных)|  
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|  
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (без дополнительных метаданных)|  
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (без дополнительных метаданных)|  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

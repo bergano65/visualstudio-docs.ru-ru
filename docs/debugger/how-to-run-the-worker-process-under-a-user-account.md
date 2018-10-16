@@ -1,5 +1,5 @@
 ---
-title: 'Как: выполнение рабочего процесса с учетной записью пользователя | Документы Microsoft'
+title: 'Практическое: выполнение рабочего процесса с учетной записью пользователя | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,17 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057191"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
 Для настройки компьютера, чтобы можно было выполнить рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe или w3wp.exe) с учетной записью пользователя, выполните следующие действия.  
 
  > [!IMPORTANT]
- > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
+ > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) с удостоверением, для каждого пула приложений.
   
 ## <a name="procedure"></a>Процедура  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/18/2018
   
 1.  Откройте файл machine.config в папке CONFIG данного компьютера, согласно пути, указанному при установке среды выполнения.  
   
-2.  Найти &lt;processModel&gt; и измените атрибуты пользователя и пароль для имени и пароля учетной записи пользователя, необходимо выполнить aspnet_wp.exe.  
+2.  Найти &lt;processModel&gt; раздел и измените атрибуты пользователя и пароль для имени и пароля учетной записи пользователя, необходимо выполнить aspnet_wp.exe.  
   
 3.  Сохраните файл machine.config.  
   
@@ -57,12 +58,12 @@ ms.lasthandoff: 04/18/2018
   
 5.  Откройте командную строку Windows и перезапустите сервер с помощью команды:  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     Или...  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  

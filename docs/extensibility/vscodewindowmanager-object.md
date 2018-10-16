@@ -1,5 +1,5 @@
 ---
-title: Объект VSCodeWindowManager | Документы Microsoft
+title: Объект VSCodeWindowManager | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc4f01240f5f969b91bb3f4cfe46f74a9abb643e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586743"
 ---
 # <a name="vscodewindowmanager-object"></a>Объект VSCodeWindowManager
-Языковая служба реализует диспетчера окон кода и отвечает за управление оформлений (например, панель раскрывающегося списка). Дополнительные сведения см. в разделе [Настройка окна кода с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+Языковая служба реализует диспетчер окон кода и отвечает за управление оформлений (например, панель раскрывающегося списка). Дополнительные сведения см. в разделе [Настройка кода Windows с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
- В следующей таблице показаны интерфейсы в `VSCodeWindowManager` объекта.  
+ В следующей таблице показаны интерфейсы `VSCodeWindowManager` объекта.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Позволяет оформлений (например, раскрывающийся список панелей) будет добавлен или удален из окна кода.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Позволяет быть добавляемые или удаляемые из окна кода элементы оформления (например раскрывающиеся панели).|  
   
 ## <a name="see-also"></a>См. также  
- [Настройка окна кода с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+ [Настройка кода windows с помощью предыдущих версий API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

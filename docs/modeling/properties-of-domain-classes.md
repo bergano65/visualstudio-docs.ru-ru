@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949027"
 ---
 # <a name="properties-of-domain-classes"></a>Свойства доменных классов
 Доменные классы имеют свойства, в следующей таблице. Сведения о классах домена см. в разделе [Общие сведения о моделях, классы и отношения](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).

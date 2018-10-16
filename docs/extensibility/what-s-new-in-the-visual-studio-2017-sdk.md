@@ -1,5 +1,5 @@
 ---
-title: Что&#39;новые возможности Visual Studio SDK 2017 г. | Документы Microsoft
+title: Что&#39;возможности пакета SDK для Visual Studio 2017 | Документация Майкрософт
 ms.custom: ''
 ms.date: 10/31/2017
 ms.technology:
@@ -11,41 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc1f12a5a6c7368bc47e8f4e924d109dcf87f57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566912"
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Что&#39;новые возможности Visual Studio SDK 2017 г.
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2017
 
-Пакет SDK для Visual Studio имеет следующие новые и обновленные средства для Visual Studio 2017 г.
+Пакет SDK для Visual Studio имеет следующие новые и обновленные функции для Visual Studio 2017.
 
 ## <a name="vsix-v3-format"></a>Формат VSIX v3
 
-Для поддержки новой упрощенная установки Visual Studio 2017 г., формат манифеста расширения VSIX обновлена до версии 3 (VSIX v3).
+Чтобы обеспечить поддержку установки нового облегченные версии Visual Studio 2017, формат манифеста расширения VSIX был обновлен до версии 3 (VSIX v3).
 
 Новый формат имеет поддержку:
 
-* Явно объявив необходимые условия для выявления и установленные VSIXInstaller.
-* Ngen'ing сборки при установке расширения.
-* Установка средств за пределами корневого обычные расширения.
+* Явно объявив необходимые условия для выявления и установленные установщик VSIX.
+* NGen сборки на время ожидания установки расширения.
+* Установка ресурсами за пределами корневого обычные расширения.
 
-Дополнительные сведения об этих изменениях, см. в следующих разделах:
+Дополнительные сведения об этих изменениях, см. в разделах:
 
-* [Изменения расширяемости для 2017 г.](breaking-changes-2017.md)
+* [Изменения в расширяемости для 2017 г.](breaking-changes-2017.md)
 * [Поддержка NGen в VSIX v3](ngen-support.md)
 * [Установка за пределами папки расширений](set-install-root.md)
-* [Вопросы и ответы для расширяемости Visual Studio 2017 г.](faq-2017.md)
+* [Часто задаваемые вопросы по расширяемости Visual Studio 2017](faq-2017.md)
 
-## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Перенос проекта расширения для Visual Studio 2017 г.
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Перенос проектов расширяемости в Visual Studio 2017
 
-Узнать, как обновление Visual Studio 2017 г расширяемости проектов и манифесты VSIX, см. [как: перенос проектов расширяемости для Visual Studio 2017 г](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Сведения об обновлении проектов расширяемости и манифесты VSIX для Visual Studio 2017, см. в разделе [как: перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
-## <a name="custom-project-and-item-templates"></a>Пользовательские шаблоны проектов и элементов
+## <a name="custom-project-and-item-templates"></a>Настраиваемые шаблоны проектов и элементов
 
-Начиная с Visual Studio 2017 г., проверка на наличие пользовательский проект и шаблоны элементов больше не выполняется. Вместо этого расширения необходимо указать файлы манифеста шаблона, описывающие эти шаблоны расположения установки. Можно использовать Visual Studio 2017 г. Чтобы обновить расширения VSIX. При развертывании расширения с помощью MSI, необходимо создать файлы манифеста шаблона вручную. Дополнительные сведения см. в разделе [обновление пользовательских шаблонов проектов и элементов для Visual Studio 2017 г](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Схема манифеста шаблона документирован в [Visual Studio манифеста Справочник по схеме шаблонов](../extensibility/visual-studio-template-manifest-schema-reference.md).
+Начиная с Visual Studio 2017, сканирование на наличие шаблонов пользовательских проектов и элементов больше не выполняется. Вместо этого расширения необходимо указать файлы манифеста, которые описывают расположение установки из этих шаблонов. Visual Studio 2017 можно использовать, чтобы обновить расширения VSIX. При развертывании расширения с помощью MSI, необходимо создать файлы манифеста шаблонов вручную. Дополнительные сведения см. в разделе [обновление настраиваемых шаблонов проектов и элементов для Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Шаблон манифеста документирована в [Справочник по схемам манифеста шаблонов Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="updated-extension-performance-guidelines"></a>Рекомендации по производительности обновленного расширения
 
-Новая [как: диагностики производительности расширение](how-to-diagnose-extension-performance.md) подраздела [управления пакеты VSPackage](managing-vspackages.md) показано, как обнаруживать и анализировать воздействие расширения в Visual Studio при запуске и решение загрузить раз.
+Доступна новая [как: Диагностика производительности расширения](how-to-diagnose-extension-performance.md) статьи в разделе [управления пакеты VSPackage](managing-vspackages.md) демонстрирует, как обнаруживать и анализировать влияние расширения на Visual Studio запуска и загрузки решения раз.

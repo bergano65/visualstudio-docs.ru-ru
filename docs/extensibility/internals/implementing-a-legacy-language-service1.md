@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129340"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация службы языка для прежних версий
 Классы managed package framework (MPF) можно использовать для реализации прежних версий языковую службу, поддерживает широкий набор функций, например выделение синтаксиса, парные фигурные скобки и завершения IntelliSense.  

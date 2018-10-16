@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98e1cc8b3ce016580e477dfa648a493df1c1e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154984"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
 Содержит определяемое пользователем имя свойства и значение. Каждое свойство, используемое в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должно быть указано в качестве дочернего для элемента `PropertyGroup`.  
@@ -32,13 +33,13 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <Property Condition="'String A' == 'String B'">  
     Property Value  
 </Property>  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/19/2018
  Этот текст указывает значение свойства и может содержать XML.  
 
 ## <a name="remarks"></a>Примечания  
- Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в "build\classes", если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](../msbuild/msbuild-properties.md) (Свойства MSBuild).  
+ Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в *build\classes*, если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](../msbuild/msbuild-properties.md) (Свойства MSBuild).  
 
 ## <a name="example"></a>Пример  
  В следующем коде свойству `Optimization` задается значение `false`, а свойству `DefaultVersion` — значение `1.0`, если свойство `Version` является пустым.  

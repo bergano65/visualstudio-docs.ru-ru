@@ -1,5 +1,5 @@
 ---
-title: Необходимые интерфейсы поставщика порта | Документы Microsoft
+title: Необходимые интерфейсы поставщика порта | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34627effce5e2f0d1401da683536548a32d3f6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252418"
 ---
-# <a name="required-port-supplier-interfaces"></a>Требуемый порт интерфейсы поставщика
-Необходимо реализовать поставщика порта [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) интерфейса.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
+# <a name="required-port-supplier-interfaces"></a>Интерфейс поставщика необходимого порта
+Поставщика порта необходимо реализовать [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) интерфейс.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
- Поскольку поставщика порта предоставляет портов, он также реализовать их. Таким образом он должен реализовать следующие интерфейсы:  
+ Поставщика порта предоставляет порты и реализует их. Таким образом его необходимо запустить следующие интерфейсы:  
   
 -   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
-     Описывает порт и предназначенный для перечисления всех процессов, запущенных на порту.  
+     Описание порта и перечисляет все процессы, запущенные на порт.  
   
 -   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
-     Обеспечивает запуск и завершение процессов на порту.  
+     Предоставляет для запуска и завершения процессов в порт.  
   
 -   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     Предоставляет механизм для программы, запущенные в контексте этого порта уведомлять его создание узла программы и удаления. Дополнительные сведения см. в разделе [узлов программы](../../extensibility/debugger/program-nodes.md).  
+     Предоставляет механизм для программ, работающих в контексте этого порта уведомлять его создание узла программы и удаления. Дополнительные сведения см. в разделе [программировать узлы](../../extensibility/debugger/program-nodes.md).  
   
 -   `IConnectionPointContainer`  
   
-     Предоставляет точку соединения для [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
+     Предоставляет точку подключения для [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
   
-## <a name="port-supplier-operation"></a>Порт поставщика операции  
- [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) приемник получает уведомления, когда обработка и программы создаются и удаляются через порт. Порт, необходимое для отправки [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) при создании процесса и [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) при уничтожении процесса по порту. Порт также должен отправлять [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) при создании программы и [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) при уничтожении программы в процесс, запущенный на порт.  
+## <a name="port-supplier-operation"></a>Операции поставщика порта  
+ [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) приемник получает уведомления, когда обработка и программы создаются и удаляются через порт. Для отправки требуется порт [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) при создании процесса и [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) при уничтожении процесса на порте. Порт для отправки также требуется [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) при создании программы и [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) при уничтожении программы в процесс, выполняющийся в порт.  
   
  Порт обычно программа отправляет создавать и удалять события в ответ на [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) и [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) методы, соответственно.  
   
- Поскольку порт можно запустить и завершить процессы физических и логических программы, эти интерфейсы также должен быть реализован ядром отладки:  
+ Так как порт можно запустить и завершить процессы физических и логических программы, необходимо реализовать следующие интерфейсы ядром отладки:  
   
 -   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-     Описывает физические процесс. По крайней мере должны быть реализованы следующие методы:  
+     Описывает процесс физического. По крайней мере должны быть реализованы следующие методы:  
   
     -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-     Предоставляет способ для SDM для присоединения и отсоединения сам из процесса.  
+     Предоставляет способ для SDM, подключать и отключать сам из процесса.  
   
 -   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   

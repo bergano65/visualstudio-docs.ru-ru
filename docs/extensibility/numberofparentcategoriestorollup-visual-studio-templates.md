@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639517"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
-Указывает количество родительских категорий, которые будут отображаться в **новый проект** диалоговое окно.  
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
+Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
   
  \<VSTemplate >  
  \<TemplateData >  
- \<NumberOfParentCategoriesToRollUp >  
+ \<Элемент NumberOfParentCategoriesToRollUp >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 </NumberOfParentCategoriesToRollUp>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -48,20 +49,20 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  `integer` Значение является обязательным.  
   
- Это значение указывает количество родительских категорий, которые будут отображаться в **новый проект** диалоговое окно.  
+ Это значение указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
  `NumberOfParentCategoriesToRollUp` — это необязательный элемент.  
   
 ## <a name="example"></a>Пример  
- В этом примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows. Если шаблон с этими метаданными помещается два уровня папок ниже верхнего уровня [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] узел, шаблон будет отображаться в узле верхнего уровня в **новый проект** диалоговое окно. Если `NumberOfParentCategoriesToRollUp` не задано, шаблон появляется только в узле в котором он расположен физически.  
+ В этом примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows. Если шаблон с этими метаданными помещается двухуровневые папки ниже верхнего уровня [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] узел, шаблон будет отображаться в узле верхнего уровня в **новый проект** диалоговое окно. Если `NumberOfParentCategoriesToRollUp` не задано, шаблон появляется только в узле в котором он расположен физически.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +90,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

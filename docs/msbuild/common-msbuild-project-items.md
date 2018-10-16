@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152559"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
-В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле в Microsoft.Build.CommonTypes.xsd.  
+В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле  *Microsoft.Build.CommonTypes.xsd*.  
   
 ## <a name="common-items"></a>Общие элементы  
  Ниже приведен список общих элементов проекта.  
@@ -77,6 +78,7 @@ ms.lasthandoff: 04/19/2018
 |name|Необязательная строка. Отображаемое имя ссылки.|  
 |Проект|Необязательная строка. Идентификатор GUID для ссылки в формате {12345678-1234-1234-1234-1234567891234}.|  
 |Пакет|Необязательная строка. Путь к файлу проекта, на который указывает ссылка.|  
+|ReferenceOutputAssembly|Необязательный логический атрибут. Если задано значение `false`, в [ссылку](#Reference) на проект не включаются его выходные данные. Но по-прежнему обеспечивается создание других проектов перед этим проектом. По умолчанию — `true`.|
   
 ### <a name="compile"></a>Компилятор  
  Представляет исходные файлы для компилятора.  

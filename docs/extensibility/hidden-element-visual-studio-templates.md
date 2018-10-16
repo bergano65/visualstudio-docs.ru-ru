@@ -1,5 +1,5 @@
 ---
-title: Скрытые элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Скрыт элемент (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498266"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Элемент Hidden (шаблоны Visual Studio)
 Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
 <Hidden> true/false </Hidden>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -45,19 +46,19 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, означающее ли шаблон будет отображаться в **новый проект** или **Добавление нового элемента** диалоговым окнам.  
+ Этот текст должен быть либо `true` или `false`, указывающее, ли шаблон будет отображаться в **новый проект** или **Добавление нового элемента** диалоговым окнам.  
   
 ## <a name="remarks"></a>Примечания  
  `Hidden` — это необязательный элемент.  
   
- Если указано, другие дочерние элементы элемента `TemplateData` элемент являются обязательными.  
+ Если указан, никакие другие дочерние элементы `TemplateData` элемента являются обязательными.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
@@ -88,5 +89,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -11,19 +11,20 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667136"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>Использование контейнеров Docker с инструментами R для Visual Studio
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Использование контейнеров Docker с инструментами R для Visual Studio
 
 Инструменты R для Visual Studio (RTVS) версии 1.3 и более поздних версий при наличии [Docker для Windows](https://www.docker.com/docker-windows) поддерживают работу с контейнерами Docker.
 
-## <a name="creating-a-container"></a>Создание контейнера
+## <a name="create-a-container"></a>Создание контейнера
 
-1. Нажмите кнопку **Контейнеры…** в правой части окна **Рабочие области** (**"Инструменты R" > "Windows" > "Рабочие области"**). Если у вас не установлено решение Docker для Windows, окно сообщит вам об этом и предоставит ссылку для загрузки. Установка Docker может потребовать перезагрузки компьютера.
+1. Нажмите кнопку **Контейнеры** в правой части окна **Рабочие области** (**Инструменты R** > **Windows** > **Рабочие области**). Если у вас не установлено решение Docker для Windows, окно сообщит вам об этом и предоставит ссылку для загрузки. Установка Docker может потребовать перезагрузки компьютера.
 
     ![Окно "Рабочие области" в инструментах R для Visual Studio (VS2017) с командой "Контейнеры"](media/container-workspaces-window.png)
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/19/2018
 
     ![Окно "Контейнеры" с созданным контейнером](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>Подключение к контейнеру
+## <a name="connect-to-a-container"></a>Подключение к контейнеру
 
 1. Раздел **Локальные работающие контейнеры** окна **Рабочие области** показывает контейнеры с запущенной управляющей программой RTVS на порте 5444. (Сведения о настройке управляющей программы см. в разделе [Удаленная служба R для Linux](setting-up-remote-r-service-on-linux.md).)
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/19/2018
 
     ![Окно "Рабочие области" и окно REPL, открытые для контейнера](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>Использование пользовательских образов
+## <a name="use-custom-built-images"></a>Использование пользовательских образов
 
 RTVS поддерживает обнаружение и управление для контейнеров, созданных с помощью пользовательских образов, например образа microsoft/rtvs, описываемого в файле Docker ниже. Используемый здесь базовый образ содержит предустановленные rtvs-daemon, R 3.4.2 и общие пакеты R. **Примечание**. Измените показанные здесь имя пользователя и пароль.
 

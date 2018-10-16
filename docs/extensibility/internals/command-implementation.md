@@ -1,5 +1,5 @@
 ---
-title: Команда реализации | Документы Microsoft
+title: Команда реализации | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed14a65e2839039a9f5c3075dd68498c948a4fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510443"
 ---
 # <a name="command-implementation"></a>Реализация команды
-Реализация команды в VSPackage, необходимо выполнить следующие задачи:  
+Чтобы реализовать команду в VSPackage, необходимо выполнить следующие задачи:  
   
-1.  В vsct-файле настройте группу команд и добавить команду. Дополнительные сведения см. в разделе [Visual Studio Command Table (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)"  
+1.  В *.vsct* файл, настройте группу команд и добавьте к нему команду. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
   
-2.  Команда регистрации в Visual Studio.  
+2.  Регистрация команды с помощью Visual Studio.  
   
 3.  Реализуйте команду.  
+    
+Способ регистрации и реализовывать команды в следующих разделах.  
   
- Следующие разделы описывают для регистрации и реализации команд.  
-  
-## <a name="registering-commands-with-visual-studio"></a>Регистрация команд с помощью Visual Studio  
- Если команда является отображение в меню, необходимо добавить <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> VSPackage и используйте в качестве значения, либо имя меню, либо его идентификатора ресурса.  
+## <a name="register-commands-with-visual-studio"></a>Регистрация команд с помощью Visual Studio  
+ Если вашей команды — это меню, необходимо добавить <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> в свой пакет VSPackage и использовать как значение имени меню или его идентификатор ресурса.  
   
 ```  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -55,43 +56,44 @@ if ( null != mcs )
   
 ```  
   
-## <a name="implementing-commands"></a>Реализация команды  
- Существует несколько способов реализации команд. Статического меню команду, которая является командой, которая всегда отображается одинаково, так и в том же меню, создать команду с помощью <xref:System.ComponentModel.Design.MenuCommand> как показано в примерах в предыдущем разделе. Чтобы создать статические команду, необходимо предоставить обработчик событий, который отвечает за выполнение команды. Так как команда всегда включена и видимым, у вас показывают его состояние в Visual Studio. Если вы хотите изменить состояние команды в зависимости от определенных условий, можно создать команду как экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> класса и в его конструкторе предоставить обработчик событий, чтобы выполнить команду и обработчика состояния запроса для уведомления Visual Studio при изменении состояния команды. Вы также можете реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> как часть класса команд или можно реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Если команду предоставляется как часть проекта. Два интерфейса и <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> все класса имеют методы, уведомляющие Visual Studio об изменении состояния команды и другие методы, которые обеспечивают выполнение команды.  
+## <a name="implement-commands"></a>Реализация команд  
+ Существует ряд способов реализации команд. Команду статического меню, что является команда, которая всегда отображается одинаково, так и в том же меню, создать команду с помощью <xref:System.ComponentModel.Design.MenuCommand> как показано в примерах в предыдущем разделе. Чтобы создать статических команд, необходимо предоставить обработчик событий, который отвечает за выполнение команды. Так как команда всегда включена и отображается, у вас нет для предоставления его состояние в Visual Studio. Если вы хотите изменить состояние команды в зависимости от определенных условий, можно создать команду как экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> класса и в его конструктор предоставить обработчик событий, чтобы выполнить команду и `QueryStatus` обработчик для уведомления Visual Studio при изменении состояния команды. Вы также можете реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> как можно реализовать класс команд или <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Если команды предоставляется как часть проекта. Эти два интерфейса и <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> класса все имеют методы, которые уведомления Visual Studio об изменении состояния команды и другие методы, которые обеспечивают выполнение команды.  
   
- При добавлении команды служба команд, он становится одним из цепочки команд. При реализации методов уведомления и выполнения состояние для команды аккуратно для предоставления только для этой конкретной команды и передачи во всех остальных случаях на другие команды в цепочке. Если не удалось передать команду (как правило, возвращая <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio, могут перестать правильно работать.  
+ При добавлении команды службу команд, он становится одним из цепочки команд. При реализации состояния уведомления и выполнение методов для команды, будьте внимательны обеспечить только для этой конкретной командой и для передачи всех остальных случаях на другие команды в цепочке. Если не удалось передать команду (как правило, возвращая <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio может перестать работать должным образом.  
   
-## <a name="query-status-methods"></a>Методы запросов состояния  
- При реализации либо <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метода или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> метод, проверяют идентификатор GUID для набора команд, которому принадлежит команды и идентификатор команды. Соблюдайте следующие правила.  
+## <a name="querystatus-methods"></a>Методы QueryStatus  
+ Если вы реализуете либо <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> метод, проверка идентификатора GUID набора команд, которому принадлежит команды и идентификатор команды. Соблюдайте следующие правила.  
   
--   Если идентификатор GUID не распознается, одного из методов реализации должен возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
+-   Если идентификатор GUID не распознан, реализации любого из этих методов должны возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
   
--   Если реализации одного из методов распознает идентификатор GUID, но команда не реализован, то метод должен вернуть <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
+-   Если реализации любого из этих методов распознает идентификатор GUID, но команда не реализована, то этот метод должен возвращать <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
--   Если реализации одного из методов распознает GUID и команды, то метод должен установить флаги команды поле каждой команды (в `prgCmds` параметра) с помощью следующих <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> флаги:  
+-   Если реализации любого из этих методов распознает как идентификатор GUID, так и команды, то метод должен настроить поле флаги команды каждой из команд (в `prgCmds` параметра) с помощью следующих <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> флаги:  
   
-    -   OLECMDF_SUPPORTED - Если команда поддерживается.  
+    -   `OLECMDF_SUPPORTED`: Команда поддерживается.  
   
-    -   OLECMDF_INVISIBLE - Если команда не должны быть видимыми.  
+    -   `OLECMDF_INVISIBLE`: Команда не должны быть видимыми.  
   
-    -   OLECMDF_LATCHED - Если команда включена и отображается для были проверены.  
+    -   `OLECMDF_LATCHED`: Команда включена и появляется указатель были проверены.  
   
-    -   OLECMDF_ENABLED - Если команда включена.  
+    -   `OLECMDF_ENABLED`: Команда включена.  
   
-    -   OLECMDF_DEFHIDEONCTXTMENU - Если команда должен быть скрыт, если он появляется в контекстном меню.  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`: Команды должен быть скрыт, если он отображается в контекстном меню.  
   
-    -   OLECMDF_NINCHED - Если команда контроллер меню, не включен, но его список раскрывающегося меню не пуста и по-прежнему доступен. (Этот флаг используется редко.)  
+    -   `OLECMDF_NINCHED`: Команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)  
   
--   Если команда был определен в vsct-файле с `TextChanges` флаг, установите следующие параметры:  
+-   Если команда было определено в *.vsct* файл с `TextChanges` флаг, задайте следующие параметры:  
   
-    -   Задать `rgwz` элемент `pCmdText` параметр новый текст команды.  
+    -   Задайте `rgwz` элемент `pCmdText` параметр новый текст команды.  
   
-    -   Задать `cwActual` элемент `pCmdText` параметра размер командной строки.  
+    -   Задайте `cwActual` элемент `pCmdText` размер командной строки.  
   
- Также убедитесь, что текущего контекста не является функцией автоматизации, если команда специально предназначен для обработки функций автоматизации.  
+
+Кроме того убедитесь, что текущий контекст не функцию автоматизации, если команда специально предназначен для обработки функций автоматизации.  
   
- Чтобы указать, что поддерживается определенной команды, возвращают <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Другие команды возвращают <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
+Чтобы указать, что вы поддерживают определенной команды, вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Для всех остальных команды возвращают <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
- В следующем примере метод состояние запроса сначала гарантирует, что контекст не функцию автоматизации, а затем находит правильный набор команд GUID и идентификатор команды. Саму команду устанавливается поддерживается и включен. Другие команды не поддерживаются.  
+В следующем примере `QueryStatus` метод сначала гарантирует, что контекст не является функцией службы автоматизации, а затем находит правильный идентификатор GUID набора команд и идентификатор команды. Включены также поддерживаться присваивается в саму команду. Другие команды не поддерживаются.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -114,9 +116,9 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Методы выполнения  
- Реализация метода execute напоминает реализации метода состояние запроса. Во-первых убедитесь, что контекст не функцию автоматизации. Проверьте идентификатор GUID и идентификатор команды. Если идентификатор GUID или идентификатор команды не распознан, возвращают <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
+ Реализация `Exec` метод похож на реализацию `QueryStatus` метод. Во-первых убедитесь, что контекст не функцию автоматизации. Проверьте идентификатор GUID и идентификатор команды. Если идентификатор GUID или Неизвестный идентификатор команды, возвращается <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
- Обработать команду, выполнять его и вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> после успешного выполнения. Команда отвечает за обнаружение ошибок и уведомления; Таким образом возвращается код ошибки, если происходит сбой выполнения. В следующем примере показано, как метод выполнения должен быть реализован.  
+ Для обработки команды, выполнить его и возвращать <xref:Microsoft.VisualStudio.VSConstants.S_OK> успешное завершение выполнения. Команда отвечает за обнаружение ошибок и уведомления; Таким образом возвращают код ошибки, если происходит сбой выполнения. В следующем примере показано, как должны быть реализованы в метод выполнения.  
   
 ```  
 public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -138,4 +140,4 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

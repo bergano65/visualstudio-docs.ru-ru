@@ -2,7 +2,7 @@
 title: Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером | Документация Майкрософт
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280588"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/14/2018
 | download.visualstudio.com | Настройка расположения для скачивания пакетов |
 | dl.xamarin.com | Настройка расположения для скачивания пакетов |
 | visualstudiogallery.msdn.microsoft.com | Расположение для скачивания расширений Visual Studio |
-| www.visualstudio.com | Расположение документации |
+| visualstudio.microsoft.com | Расположение документации |
 | docs.microsoft.com | Расположение документации |
 | msdn.microsoft.com | Расположение документации |
 | www.microsoft.com | Расположение документации |
@@ -112,12 +113,13 @@ ms.lasthandoff: 05/14/2018
 | Проверка <br>обновлений CLI <br>службы "Функции Azure" | functionscdn.azureedge.net | https | 443 | Используется для проверки наличия обновленных версий CLI службы "Функции Azure". Если эта конечная точка отключена, будет использоваться кэшированная копия CLI (или копия, передаваемая компонентом "Функции Azure") |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | HTTP используется для скачивания Gradle во время сборки. HTTPS используется для включения подключаемых модулей Cordova в проекты|
 | Cloud Explorer | 1. & #60;Конечная точка кластера& #62; <br>Service Fabric. <br>2. &#60;Конечная точка управления&#62;<br>Cloud Explorer общего назначения. <br>3. &#60;Конечная точка Graph&#62;<br>Cloud Explorer общего назначения.<br>4. &#60;Конечная точка учетной записи хранения&#62;:<br>узлы хранилища. <br>5. &#60;URL-адреса портала Azure&#62;:<br>Cloud Explorer общего назначения. <br>6. &#60;Конечные точки хранилища ключей&#62;: <br>узлы виртуальной машины Azure Resource Manager.<br>7. &#60;Общедоступный IP-адрес кластера&#62;:<br>удаленная отладка и трассировка ETW Service Fabric. |   <br>1. https.<br>2. https.<br>3. https.<br>4. https.<br>5. https.<br>6. https.<br>7. tcp| 1. 19080.<br>2. 443. <br>3. 443. <br>4. 443. <br>5. 443. <br>6. 443. <br>7. Динамический порт.   | 1. Пример: test12.eastus.cloudapp.com.<br>2. Позволяет извлекать данные о подписках и ресурсах, а также управлять ресурсами Azure.<br>3. Позволяет извлекать данные о подписках Azure Stack<br>4. Позволяет управлять ресурсами службы хранения (пример: mystorageaccount.blob.core.windows.net).<br>5. Пункт контекстного меню "Открыть на портале" (позволяет открыть элемент ресурса на портале Azure)<br>6. Позволяет создавать и использовать хранилища ключей для отладки виртуальной машины (пример: myvault.vault.azure.net) <br><br>7. Динамически выделяет блок портов с учетом числа узлов в кластере и доступных портов. <br><br>Блок портов выполняет три попытки получения узлов минимум с 10 портами.<br><br>При трассировке потоковой передачи выполняется попытка получить блок портов, начиная с 810. Если какой-либо из этих блоков портов уже используется, выполняется попытка получить следующий блок и т. д. (Если подсистема балансировки нагрузки пуста, скорее всего, будут использоваться порты, начиная с 810.) <br><br>Точно так же для отладки резервируется четыре блока портов: <br>— connectorPort: 30398; <br>— forwarderPort: 31398; <br>— forwarderPortx86: 31399;<br>— fileUploadPort: 32398.<br>|
-| Облачные службы | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;пользовательская облачная служба&#62;.cloudapp.net <br> &#60;пользовательская виртуальная машина&#62;.&#60;region&#62;.azure.com | 1. rdp. <br><br> 2. https. <br><br> 3. https. <br><br> 4. https. <br><br> 5. https. <br><br>6. tcp. | 1. 3389. <br><br> 2. 443. <br><br> 3. 443. <br><br>4. 443. <br><br>5. 443. <br><br> 6. а) 30398 <br> 6. б) 30400 <br> 6. в) 31398 <br> 6. г) 31400 <br> 6. д) 32398 <br> 6. е) 32400 | 1.  Удаленный рабочий стол для виртуальной машины облачных служб <br><br> 2.  Компонент учетной записи хранения для диагностики закрытой конфигурации <br><br> 3.  порталу Azure <br><br> 4. Обозреватель сервера — служба хранилища Azure. & #42; — это имя пользовательской учетной записи хранения  <br><br> 5.  Ссылки для открытия портала. &#47; скачивания сертификата подписки &#47; публикации файла настроек <br><br>6. а) Локальный порт соединителя для удаленной отладки облачной службы и виртуальной машины<br> 6. б) Общий порт соединителя для удаленной отладки облачной службы и виртуальной машины <br> 6. в) Локальный порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины <br> 6. г) Общий порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины  <br> 6. д) Локальный порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины <br> 6. е) Общий порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины |
+| Облачные службы | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;пользовательская облачная служба&#62;.cloudapp.net <br> &#60;пользовательская виртуальная машина&#62;.&#60;region&#62;.azure.com | 1. rdp. <br><br> 2. https. <br><br> 3. https. <br><br> 4. https. <br><br> 5. https. <br><br>6. tcp. | 1. 3389. <br><br> 2. 443. <br><br> 3. 443. <br><br>4. 443. <br><br>5. 443. <br><br> 6. а) 30398 <br> 6. б) 30400 <br> 6. в) 31398 <br> 6. г) 31400 <br> 6. д) 32398 <br> 6. е) 32400 | 1.  Удаленный рабочий стол для виртуальной машины облачных служб <br><br> 2.  Компонент учетной записи хранения для диагностики закрытой конфигурации <br><br> 3.  порталу Azure <br><br> 4. Обозреватель сервера — служба хранилища Azure. &#42; — это имя пользовательской учетной записи хранения  <br><br> 5.  Ссылки для открытия портала. &#47; скачивания сертификата подписки &#47; публикации файла настроек <br><br>6. а) Локальный порт соединителя для удаленной отладки облачной службы и виртуальной машины<br> 6. б) Общий порт соединителя для удаленной отладки облачной службы и виртуальной машины <br> 6. в) Локальный порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины <br> 6. г) Общий порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины  <br> 6. д) Локальный порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины <br> 6. е) Общий порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины |
 | Service Fabric. | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Документация <br><br> 2. Функция создания кластера <br><br>3. Символ &#42; обозначает имя хранилища ключей Azure (пример: test11220180112110108.vault.azure.net)  <br><br>  4. Символ &#42; обозначает динамическую конечную точку (пример: vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Снимок <br>Отладчик | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (в зависимости от версии Visual Studio) | 1. Запрос JSON-файла для размера SKU службы приложений <br>2. Различные вызовы Azure RM <br>3. Вызов первоначальной загрузки сайта  <br>4. Целевая конечная точка клиента службы консоли Kudu для службы приложений <br>5. Запрос версии расширения сайта, опубликованного на nuget.org <br>6. Канал удаленной отладки |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Используется для просмотра, отправки, выполнения и администрирования заданий ASA <br><br> Используется для просмотра кластеров HDI, а также для отправки, диагностики и отладки заданий HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Используется для компиляции, отправки, просмотра, диагностики и отладки заданий. Также используется для просмотра файлов ADLS, а также отправки и скачивания файлов |
-|Служба упаковки | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены *.npmjs.org, *.nuget.org и *.nodejs.org требуются только для определенных сценариев, которые включают задачи сборки (например, установщик средств NuGet или Node) или в случае, если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
+| Служба упаковки | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены *.npmjs.org, *.nuget.org и *.nodejs.org требуются только для определенных сценариев, которые включают задачи сборки (например, установщик средств NuGet или Node) или в случае, если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Используется для подключения с помощью Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Устранение ошибок сети
@@ -126,15 +128,18 @@ ms.lasthandoff: 05/14/2018
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Ниже перечислены дополнительные варианты:
+Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+Ниже приведены несколько дополнительных вариантов:
+
+* Вы можете сообщить о проблемах с продуктом, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в IDE Visual Studio.
+* Оставить предложение по продукту можно на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Описание проблем с продуктом и их решение можно найти в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя свою учетную запись [GitHub](https://github.com/) в [обсуждении Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>См. также
 
+* [Создание сетевой установки Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Исправление ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-* [Установка Visual Studio 2017](install-visual-studio.md)
+

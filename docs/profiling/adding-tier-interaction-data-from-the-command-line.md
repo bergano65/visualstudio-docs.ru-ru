@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262911"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775037"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Добавление данных о взаимодействии уровней из командной строки
 
@@ -33,7 +33,7 @@ ms.locfileid: "34262911"
 
 **Сбор данных об уровневом взаимодействии на удаленном компьютере**
 
-Чтобы собирать сведения об уровневом взаимодействии, на удаленный компьютер, необходимо скопировать и установить файл **vs_profiler_***\<платформа>***_***\<язык>***.exe** из папки *%VSInstallDir%***\Team Tools\Performance Tools\Setups*, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
+Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
 
 **Отчеты TIP**
 
@@ -156,4 +156,4 @@ ms.locfileid: "34262911"
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Дополнительные сведения о программе VSPerfASPNETCmd см. в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).
+Дополнительные сведения о команде VSPerfASPNETCmd см. в статье [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

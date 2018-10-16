@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151185"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Возобновляет отслеживание в текущем контексте.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp  
 HRESULT WINAPI ResumeTracking();  
 ```  
   
@@ -36,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было возобновлено. Если отслеживание нельзя возобновить, так как контекст был недоступен, возвращается **E_FAIL**.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h  
+ **Заголовок:** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [SuspendTracking](../msbuild/suspendtracking.md)

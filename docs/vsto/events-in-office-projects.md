@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448718"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.  

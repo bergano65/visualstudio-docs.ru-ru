@@ -4,16 +4,18 @@ author: jasongroce
 ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: "Документация по расширению среды Visual Studio | Документация Майкрософт"
-description: "Сведения о расширяемости Visual Studio."
-ms.workload: apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+title: Документация по расширению среды Visual Studio | Документация Майкрософт
+description: Сведения о расширяемости Visual Studio.
+ms.workload:
+- apexprodleads
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500301"
 ---
-# <a name="visual-studio-extensibility-documentation"></a>Документация по расширению среды Visual Studio
+# <a name="visual-studio-extensibility-documentation"></a>Документация по расширению среды Visual Studio
 
 В Visual Studio предусмотрено множество возможностей расширяемости. Можно расширять среду Visual Studio, добавлять анализаторы исходного кода для компилятора Roslyn и даже создавать собственные пакеты SDK.
 

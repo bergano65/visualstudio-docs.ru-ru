@@ -1,5 +1,5 @@
 ---
-title: 'Как: предоставляют контекст для редакторов | Документы Microsoft'
+title: 'Практическое: предоставить контекст для редакторов | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,75 +13,76 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6880d50f7e56b63f54c627726c3339028d519e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36ec73ef7b414519f0939c47c167f0e89c1e0941
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638955"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Как: предоставляют контекст для редакторов
-Контекст для редактора активна только в том случае, если редактор имеет фокус или находится в фокусе непосредственно перед фокус переместился в окно инструментов. Может предоставить контекст для редактора следующим образом:  
+# <a name="how-to-provide-context-for-editors"></a>Практическое: предоставить контекст для редакторов
+Контекст редактора, активен только в том случае, когда редактор имеет фокус, или имевшему непосредственно перед фокус был перемещен в окно инструментов. Можно предоставить контекст для редактора, выполнив следующие задачи:  
   
 1.  Создайте контейнер контекста.  
   
-2.  Публикация контейнера контекста идентификатора элемента выбора (SEID).  
+2.  Опубликуйте контейнер контекста идентификатора элемента выбора (идентификатор SEID).  
   
-3.  Ведение контекст, в контейнере.  
+3.  Поддерживать контекст, в контейнере.  
   
- Эти задачи описаны в следующих процедурах. Дополнительные сведения о предоставлении контекста см. в разделе **надежные программирования** далее в этом разделе.  
+ Эти задачи, охватываются следующие процедуры. Дополнительные сведения о предоставлении контекста см. в разделе **надежные программирования** далее в этой статье.  
   
-### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Чтобы создать контейнер контекст для редактор или конструктор  
+## <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Чтобы создать контейнер контекста для редактор или конструктор  
   
-1.  Вызовите `QueryService` на ваш <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс для <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> службы.  
+1.  Вызовите `QueryService` на вашей <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс для <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> службы.  
   
-     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> возвращается.  
+     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> возвращается интерфейс.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> метод для создания нового контекста или подконтекст контейнера.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> метод, чтобы создать новый контейнер контекста или подконтекста.  
   
-     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> возвращается.  
+     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> возвращается интерфейс.  
   
-3.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> метод, чтобы добавить атрибуты, ключевые слова для поиска или ключевые слова справки F1 для контекста или подконтекст контейнере.  
+3.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> метод для добавления атрибутов, ключевые слова для поиска, или **F1** ключевые слова в контейнер контекста или подконтекста.  
   
-4.  При создании контейнера подконтекст вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> метод, чтобы связать контейнер подконтекст контекст родительского контейнера.  
+4.  При создании контейнера вложенного контекста, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> метод, чтобы связать контейнер вложенного контекста в контейнере родительского контекста.  
   
-5.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> получать уведомления при **динамической справки** окно является обновление.  
+5.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> для получения уведомления при **динамической справки** окно сейчас обновить.  
   
-     Наличие **динамической справки** окна вызова редактора готовности обновление дает возможность отложить изменять контекст, пока происходит обновление. Это может повысить производительность, поскольку он позволяет отложить выполнение длительных алгоритмы пока не станет доступен время простоя системы.  
+     Наличие **динамической справки** окно вызов редактора готовности обновление дает возможность отложить изменение контекста, пока не происходит обновление. Это может повысить производительность, так как он позволяет отложить выполнения длительной алгоритмов, пока не станет доступна время простоя системы.  
   
-### <a name="to-publish-the-context-bag-to-the-seid"></a>Для публикации в контейнере контекста SEID  
+## <a name="to-publish-the-context-bag-to-the-seid"></a>Чтобы опубликовать контейнер контекста в идентификатор seid  
   
-1.  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> службы для возврата указателя на <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> интерфейса.  
+1.  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> службу, чтобы вернуть указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> интерфейс.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, указав идентификатор элемента (`elementid` параметра) значение SEID_UserContext для указания, что контекст передает глобальном уровне.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, указав идентификатор элемента (`elementid` параметр) значение SEID_UserContext, чтобы указать, что вы передаете контекста на глобальном уровне.  
   
-3.  Когда редактор или конструктор становится активным, значения в его <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> объекта распространяются на глобального выделения. Требуется только для завершения этого процесса, один раз за сеанс и затем сохраните указатель на глобальном контексте, созданные при вызове <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3.  Когда редактор или конструктор становится активным, значения в его <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> объекта передаются глобального выделения. Требуется только для завершения этого процесса, один раз за сеанс и как сохранить указатель на глобальном контексте, созданного при вызове <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
   
-### <a name="to-maintain-the-context-bag"></a>Для поддержания контейнера контекста  
+## <a name="to-maintain-the-context-bag"></a>Чтобы сохранить контейнер контекста  
   
 1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> чтобы убедиться, что **динамической справки** окно вызывает редактор или конструктор, перед обновлением.  
   
-     Для каждого контейнера контекста, вызванным <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> после создания контейнера контекста и внедрила <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, вызовы IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> известить поставщик контекста будет обновляться в контейнере контекста. Этот вызов можно использовать для изменения атрибутов и ключевые слова в контейнере контекста и в любой пакеты подконтекст перед **динамической справки** происходит обновление окна.  
+     Для каждого контейнера контекста, которая называется <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> после контейнер контекста создается и реализовал <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, вызовы IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> для уведомления о поставщике контекста, что контейнер контекста будут обновлены. Этот вызов можно использовать для изменения атрибутов и ключевых слов в контейнере контекста, а также в любой подконтекстов перед **динамической справки** происходит обновление окна.  
   
-2.  Вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> на наборе контекста для указания, что редактор или конструктор имеет новый контекст.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> на контейнер контекста для указания, что редактор или конструктор имеет новый контекст.  
   
-     Когда **динамической справки** вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , чтобы указать, что он обновляется, редактора или конструктора можно обновить контекста, необходимые для контекста родительского контейнера и все контейнеры подконтекст в это время.  
+     При **динамической справки** вызовы в окна <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> чтобы указать, что он обновляется, редактора или конструктора в это время можно обновить контекст соответствующим образом для любой подконтекстов и родительским контейнером контекста.  
   
     > [!NOTE]
-    >  `SetDirty` Флаг автоматически присваивается `true` каждый раз, когда добавляется или удаляется из контейнера контекста контекста. **Динамической справки** окна вызывает только <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> на наборе контекст Если `SetDirty` флаг имеет значение `true`. Задается равным `false` после обновления.  
+    >  `SetDirty` Флаг автоматически присваивается `true` каждый раз, когда добавляется или удаляется из контейнера контекстов контекста. **Динамической справки** окно вызывает только <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> на контейнер контекста при `SetDirty` флаг имеет значение `true`. Он сбрасывается до `false` после обновления.  
   
-3.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> Чтобы добавить контекст к коллекции активный контекст или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> для удаления контекста.  
+3.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> Чтобы добавить контекст в активном контексте коллекцию или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> удаляемый контекст.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
- При написании собственного редактора необходимо выполнить все три процедуры, описанные в этом разделе, чтобы обеспечить контекст для редактора.  
+ Если вы создаете собственный редактор, необходимо выполнить все три процедуры, описанные в этой статье, чтобы предоставить контекст для редактора.  
   
 > [!NOTE]
->  Чтобы правильно активировать окно редактора или конструктора и убедитесь, что маршрутизация команд обновлена должным образом, необходимо вызвать метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> вносить активному окну в компоненте.  
+>  Чтобы правильно активировать окно редактора или конструктора и убедитесь, что команда правильное обновление маршрутизации, необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> этот компонент, чтобы сделать его окну.  
   
- SEID — это коллекция свойств, изменение на основе выделения. SEID информация доступна через глобального выделения. Глобального выделения, встроены в события, вызванные <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> интерфейс, и список всех, выбрал (текущий редактор, текущее окно инструментов, текущей иерархии и т. д.).  
+ Идентификатор SEID — это коллекция свойств, которые изменяются на основании выбора. Идентификатор SEID информация доступна через глобального выделения. Глобального выделения подключен в события, вызванные <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> интерфейс, и список всего содержимого, выбрал (текущий редактор, окно текущего средства, текущей иерархии и т. д.).  
   
- Редакторы и конструкторы в контексте которого можно изменить каждый раз, когда курсор перемещается в word, неэффективно постоянного обновления контейнера контекста. Чтобы сделать обновление более эффективно любое время, определение курсора, перемещение в редакторе и окно «конструктор», можно вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>. Это позволит дождитесь изменения контекста времени простоя и служба контекста IDE отправляет уведомление в редактор или конструктор, **динамической справки** окна обновляется. Этот подход используется в процедуре «Ведение контейнера контекста» в этом разделе.  
+ Для редакторов и конструкторов в какой контекст может меняться всякий раз, когда курсор перемещается в word, неэффективно постоянного обновления контейнера контекста. Чтобы сделать обновление более эффективно любое время, определение курсора, перемещение в пределах окна редактора или конструктора, можно вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>. Благодаря этому удерживать изменения контекста, пока есть время простоя и IDE контекст службы отправляет уведомление в редактор или конструктор, **динамической справки** окно обновляется. Этот подход используется в **для поддержания контейнер контекста** процедуру в этой статье.  
   
- После предоставления контекста для действий в редактор или конструктор, должен предоставить конкретных ключевое слово F1, чтобы пользователи могли получить справку для самого конструктора или редактора.  
+ После предоставления контекста для действий в свой редактор или конструктор, следует указать определенный **F1** ключевое слово, чтобы пользователи могли получить справку по редактора или конструктора, сам.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>   

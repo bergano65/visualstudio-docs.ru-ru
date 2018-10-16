@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265554"
 ---
 # <a name="create-outlook-form-regions"></a>Создание областей форм Outlook
   Для настройки форм Microsoft Office Outlook можно использовать области формы. Visual Studio предоставляет расширенные средства, которые упрощают процесс проектирования, разработки и отладки областей формы.  

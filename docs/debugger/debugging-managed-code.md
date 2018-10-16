@@ -1,5 +1,5 @@
 ---
-title: Отладка управляемого кода | Документы Microsoft
+title: Отладка управляемого кода | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,20 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227dfcf82a179a83428900f75d0b5c9b85248479
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179483"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 
-В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. Дополнительные сведения см. в разделе [с помощью отладчика](../debugger/debugger-basics.md).
+В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. Дополнительные сведения см. в разделе [использование отладчика](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="in-this-section"></a>В этом разделе
 
 [Диагностические сообщения в окне вывода](../debugger/diagnostic-messages-in-the-output-window.md)  
-Описывает <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace> классы, с которыми может записать события времени выполнения для **вывода** окна. Эти классы содержат методы вывода, позволяющие выводить сведения без прерывания выполнения программы, и выводить сведения, которые также прерывают выполнение при невыполнении заданного условия.
+Описывает <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace> классы, с помощью которых можно написать сообщения времени выполнения для **вывода** окна. Эти классы содержат методы вывода, позволяющие выводить сведения без прерывания выполнения программы, и выводить сведения, которые также прерывают выполнение при невыполнении заданного условия.
 
 [Утверждения в управляемом коде](../debugger/assertions-in-managed-code.md)  
 Описывает утверждения в управляемом коде, которые проверяют условия, заданные в качестве аргументов методов `Assert`. Кроме того, этот раздел содержит пример кода, содержащий сведения об использовании методов классов <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>, вопросы, касающиеся отладочной и выпускаемой версий кода, побочных эффектов, аргументов утверждений, настройки поведения утверждений и файлов конфигурации.
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/18/2018
 Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.
 
 [Ошибка. Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], или система Windows NT, который был запущен в режиме отладки.
+Описание сообщения об ошибке, возникающее при попытке произвести отладку управляемого кода на [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], или система Windows NT, который был запущен в режиме отладки.
 
 [JIT-отладка и оптимизация](../debugger/jit-optimization-and-debugging.md)  
 Описывает эффекты по оптимизации по отладке JIT.
@@ -58,11 +59,11 @@ ms.lasthandoff: 04/18/2018
 Описывает методы отладки LINQ запросов.
 
 [Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
-Описывает использование **параллельные задачи** и **Параллельные стеки** средства windows для отладки параллельного приложения.
+Описывает использование **параллельных задач** и **Параллельные стеки** средство windows для отладки параллельного приложения.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[IntelliTrace](../debugger/intellitrace.md) поиск ошибок более быстрым и удобным путем записи журнала выполнения приложения с помощью IntelliTrace. Перемещайтесь вперед или назад между различными записанными событиями и вызовами для определения состояния приложения в соответствующие моменты времени. Производите отладку приложения, не устанавливая множество точек останова и не перезапуская приложение слишком часто. Требуется Visual Studio Enterprise.
+[IntelliTrace](../debugger/intellitrace.md) поиска ошибок быстрее и проще, путем записи журнала выполнения приложения с помощью IntelliTrace. Перемещайтесь вперед или назад между различными записанными событиями и вызовами для определения состояния приложения в соответствующие моменты времени. Производите отладку приложения, не устанавливая множество точек останова и не перезапуская приложение слишком часто. Требуется Visual Studio Enterprise.
 
 [Трассировка и инструментирование приложений](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 Описание трассировки приложений, позволяющей отследить ход выполнения приложения, и инструментирования приложений, размещающего операторы трассировки в стратегически важных местах кода. Кроме того, в данном разделе представлены ссылки на руководство по оборудованию и трассировке, а также по переключателям трассировки, слушателям трассировки, коду трассировки в приложении, добавлению оператора трассировки в код приложения и условной компиляции с использованием атрибутов <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>.
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/18/2018
 [/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
 Описание параметра компоновщика, который добавляет <xref:System.Diagnostics.DebuggableAttribute> в код, написанный на языке C++. Этот атрибут необходим для использования таких возможностей отладчика, как, например, "присоединить с C++".
 
-[Отладка служебных приложений Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
+[Отладка приложений служб Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
 Рекомендации по отладке служебных приложений Windows, включая настройку, подключение к процессу, отладку кода в методе `OnStart` службы и кода в методе Main, задание точек останова и использование диспетчера управления службами для запуска, остановки, приостановки и продолжения выполнения службы пользователя.
 
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)  
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/18/2018
 
 ## <a name="see-also"></a>См. также
 
-[Пошаговое руководство: Отладка пользовательских Windows Forms элементов управления во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[Пошаговое руководство: Отладка пользовательских Windows Forms элементы управления во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [безопасность отладчика](../debugger/debugger-security.md)
 [отладки в Visual Studio](../debugger/index.md) 
- [ Обзор возможностей отладчика](../debugger/debugger-feature-tour.md)
+ [ Обзор функций отладчика](../debugger/debugger-feature-tour.md)

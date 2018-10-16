@@ -16,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6809534d14b58d60759133e972b5220fcfd58d61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551711"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: не перегружайте оператор равенства для ссылочных типов
+
 |||
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
@@ -31,35 +33,42 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или вложенный открытый ссылочный тип перегружает оператор равенства.
+ Открытом или вложенном открытый ссылочный тип перегружает оператор равенства.
 
 ## <a name="rule-description"></a>Описание правила
  Реализация оператора равенства по умолчанию почти всегда правильно работает для ссылочных типов. По умолчанию две ссылки равны, если они указывают на один объект.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, удалите реализацию оператора равенства.
+ Чтобы устранить нарушение этого правила, удалите реализацию оператора равенства.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно отключать предупреждение из этого правила, если ссылочный тип ведет себя как встроенный тип значения. Это может применяться для выполнения сложения или вычитания для экземпляров типа, правильность, возможно, для реализации оператора равенства и отключение нарушение.
+ Его можно безопасно подавить предупреждение из этого правила, если ссылочный тип ведет себя как встроенного типа значения. Если он имеет значение для выполнения сложения или вычитания для экземпляров типа, верно, вероятно, реализует оператор равенства и подавить нарушение.
 
 ## <a name="example"></a>Пример
- В следующем примере показано поведение по умолчанию при сравнении двух ссылок.
+ Следующий пример демонстрирует поведение по умолчанию при сравнении двух ссылок.
 
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Пример
- В следующем приложении сравниваются несколько ссылок.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+Следующее приложение сравниваются несколько ссылок.
 
- В этом примере формируются следующие данные:
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **= новый (2,2) и b = равны новый (2,2)? Не**
-**c и которых равны? Да**
-**b и являются ==? Не**
-**c и являются ==? Да**
+В этом примере выводятся следующие данные:
+
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
 ## <a name="related-rules"></a>Связанные правила
- [CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+[CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>См. также
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Операторы равенства](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Операторы равенства](/dotnet/standard/design-guidelines/equality-operators)

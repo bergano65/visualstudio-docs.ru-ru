@@ -7,11 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: c9d997985d4e19b68a326b3b69e28875942b8bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68dfbdab841e425926268e40345d0370e4aeee87
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542368"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 
@@ -29,7 +30,25 @@ ms.lasthandoff: 04/18/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Обзор возможностей отладчика</h3>
+                        <h3>Начало работы с отладчиком</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_debug.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Отладка для начинающих</h3>
                     </div>
                 </div>
             </div>
@@ -47,7 +66,7 @@ ms.lasthandoff: 04/18/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Начало работы с отладчиком</h3>
+                        <h3>Обучение отладке</h3>
                     </div>
                 </div>
             </div>
@@ -91,7 +110,7 @@ ms.lasthandoff: 04/18/2018
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/view-historical-application-state">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -101,7 +120,7 @@ ms.lasthandoff: 04/18/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Просмотр моментальных снимков IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>Проверка предыдущих состояний приложения (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
@@ -187,7 +206,7 @@ ms.lasthandoff: 04/18/2018
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

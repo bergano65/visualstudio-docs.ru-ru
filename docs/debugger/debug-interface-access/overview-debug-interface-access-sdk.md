@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471444"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Общие сведения (SDK для доступа к интерфейсу отладки)
 Используйте пакет SDK для доступа к данным Microsoft отладки. Пакет SDK для доступа к интерфейсу отладки предоставляет набор API, который избавляет от необходимости переписать всякий раз, когда Майкрософт изменяет формат отладочной информации на базе COM. ПАКЕТ SDK для также позволяет считывать из набора select для предыдущих версий отладочной информации в PDB-файл и .dbg файлах, создаваемых [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 и более поздних версиях.  

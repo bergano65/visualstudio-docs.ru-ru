@@ -1,5 +1,5 @@
 ---
-title: Отладка ошибок и предупреждений диалоговым окнам | Документы Microsoft
+title: Отладка ошибок и предупреждений диалоговым окнам | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,11 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279059"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.  
@@ -41,13 +42,13 @@ ms.lasthandoff: 04/18/2018
   
  [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Сбой при применении изменений кода-диалоговое окно](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Не удалось применить изменения кода-диалоговое окно](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Диалоговое окно отладчика Microsoft Visual Studio (создание исключения)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [Нет исходного кода для текущего расположения диалогового](../debugger/no-source-available.md)  
+ [Исходный код недоступен текущего диалогового окна "Расположение"](../debugger/no-source-available.md)  
   
- [Диалоговое окно не символьных данных](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Диалоговое окно не символьная информация](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Диалоговое окно "Разрешение неоднозначности"](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -62,10 +63,10 @@ ms.lasthandoff: 04/18/2018
   
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Ошибки присоединения](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Ошибки присоединения](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [Устранение неполадок настройки отладки SQL](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Устранение неполадок настройки отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
- [Часто задаваемые вопросы по отладке Visual C++](../debugger/debugging-native-code-faqs.md)  
+ [Часто задаваемые вопросы отладки Visual C++](../debugger/debugging-native-code-faqs.md)  
   
  [Безопасность отладчика](../debugger/debugger-security.md)

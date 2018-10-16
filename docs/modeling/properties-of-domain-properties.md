@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951444"
 ---
 # <a name="properties-of-domain-properties"></a>Свойства доменных свойств
 Объект *свойства домена* — это функция элемента модели, который может содержать значение. Например, класс домена `Person` может иметь свойства `Name` и `BirthDate`. В определении доменного языка свойства домена перечислены в поле класса домена на схеме и в разделе класса домена в Обозревателе доменного языка. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).

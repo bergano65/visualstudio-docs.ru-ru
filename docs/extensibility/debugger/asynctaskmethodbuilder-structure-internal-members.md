@@ -1,5 +1,5 @@
 ---
-title: Структура AsyncTaskMethodBuilder - внутренние члены | Документы Microsoft
+title: 'AsyncTaskMethodBuilder внутренние элементы: структура | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecb114c1c05a4e31d58746948cec76317012328e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 130a3236752fba85c611619fb3cae70e00c76ec9
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150970"
 ---
-# <a name="asynctaskmethodbuilder-structure---internal-members"></a>Структура AsyncTaskMethodBuilder - внутренние элементы
-В этом разделе описывает внутренние элементы <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> класса. Общие сведения об этом классе см. в разделе <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> справочном разделе.  
+# <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder внутренние элементы: структура
+В этом разделе описывается внутренним членам объектов <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> класс. Общие сведения об этом классе см. в разделе <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> справочника.  
   
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не удается получить доступ к эти внутренние члены из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как при отсутствии доступа к этим внутренним членам платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder  
        extends System.ValueType  
        implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
@@ -39,10 +40,10 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="internal-members"></a>Внутренние элементы  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
-|[Свойство ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Возвращает объект, который может использоваться для уникальной идентификации этого конструктора в режим отладчика.|  
-|[поле m_builder](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Представляет обычный построитель объект делегирует этот экземпляр не являющимися универсальными.|  
+|[Свойство ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Возвращает объект, который может использоваться для уникальной идентификации этого построителя к отладчику.|  
+|[поле m_builder](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Представляет обычный построитель объект, к которому делегирует этот экземпляр не являющегося универсальным.|  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   

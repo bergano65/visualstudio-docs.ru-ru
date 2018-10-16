@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное связывание веб-страницы с папкой Outlook | Документы Microsoft'
+title: 'Практическое: программное связывание веб-страницы с папкой Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5495066b05ded6fc49dfe92ed489932d8c75b24d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb1ef525917288dc44609b899611db884da9073
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256469"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Практическое руководство. Программное связывание веб-страницы с папкой Outlook
-  В этом примере проверяется для папки с именем `HtmlView` в Microsoft Office Outlook. Если папка не существует, код создаст папку и присваивает ему веб-страницы. Если папка существует, код отображает содержимое папки.  
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Практическое: программное связывание веб-страницы с папкой Outlook
+  В этом примере проверяется для папки с именем `HtmlView` в Microsoft Office Outlook. Если папка не существует, код создает папку и присваивает ему веб-страницы. Если папка существует, код отображает содержимое папки.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с папками](../vsto/working-with-folders.md)   
- [Как: программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+ [Практическое: программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Практическое: программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

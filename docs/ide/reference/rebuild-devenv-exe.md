@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704659"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Удаляет и затем выполняет сборку заданной конфигурации решения.

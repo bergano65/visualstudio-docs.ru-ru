@@ -1,5 +1,5 @@
 ---
-title: Отладка веб-приложений | Документы Microsoft
+title: Отладка веб-приложений | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178921"
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
 В этом подразделе описана отладка нескольких типов веб-приложений.  
@@ -40,6 +41,6 @@ ms.lasthandoff: 04/18/2018
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
- [Основы отладки](../debugger/debugger-basics.md)   
+ [Основы отладки](../debugger/getting-started-with-the-debugger.md)   
  [Отладка в Visual Studio](../debugger/index.md)  
  [Обзор функций отладчика](../debugger/debugger-feature-tour.md)

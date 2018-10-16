@@ -1,5 +1,5 @@
 ---
-title: Предварительные условия для 64-разрядных приложений развертывания | Документы Microsoft
+title: Предварительные условия для 64-разрядных приложений развертывания | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,14 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10a5883e655fc5ee8a37bbe61f531b6b266ebb55
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281900"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>Предварительные условия для развертывания 64-разрядных приложений
-Развертывание приложений ClickOnce поддерживает установку приложений на 64-разрядные платформы. Целевыми платформами являются **x86** для 32-разрядных платформах **x64** для компьютеров, поддерживающих наборы инструкций AMD64 и EM64T и **Itanium** для 64-разрядного процессора Itanium.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>Развернуть необходимые компоненты для 64-разрядных приложений
+Развертывание приложений ClickOnce поддерживает установку приложений на 64-разрядные платформы. Целевыми платформами являются **x86** для 32-разрядных платформах **x64** для компьютеров, поддерживающих наборы инструкций AMD64 и EM64T, а **Itanium** для 64-разрядного процессора Itanium.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  В следующей таблице перечислены распространяемые компоненты, которые можно использовать в качестве необходимых компонентов для установки 64-разрядных приложений.  
@@ -38,11 +39,11 @@ ms.lasthandoff: 04/19/2018
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)]|Да|Нет|  
 |Библиотеки среды выполнения Visual C++ 2010 (IA64)|Нет|Да|  
-|Библиотеки среды выполнения Visual C++ 2010 (x64)|Да|Нет|  
+|Библиотеки времени выполнения Visual C++ 2010 (x64)|Да|Нет|  
 |Microsoft .NET Framework 4 (x86 и x64)|Да||  
 |Клиентский профиль Microsoft .NET Framework 4 (x86 и x64)|Да||  
   
 ## <a name="see-also"></a>См. также  
  [Развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md)   
- [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64-разрядные приложения](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [Практическое: Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [64-разрядные приложения](/dotnet/framework/64-bit-apps)

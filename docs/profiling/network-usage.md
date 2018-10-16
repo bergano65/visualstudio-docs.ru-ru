@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267806"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669141"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети в приложениях UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
@@ -77,4 +77,4 @@ ms.locfileid: "34267806"
  [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети)  
  [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

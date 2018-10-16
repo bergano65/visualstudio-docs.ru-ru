@@ -19,17 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384296"
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
 Предлагаем ознакомиться с новым способом установки Visual Studio. В последней версии стало проще выбирать и устанавливать только нужные компоненты. Мы также сократили минимальные требования к месту на диске, поэтому установка Visual Studio выполняется еще быстрее и с меньшим влиянием на функционирование системы.
 
-Хотите ознакомиться с другими новыми возможностями этой версии? Обратитесь к [заметкам о выпуске](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+Хотите ознакомиться с другими новыми возможностями этой версии? Обратитесь к [заметкам о выпуске](/visualstudio/releasenotes/vs2017-relnotes).
 
 Готовы к установке? Мы последовательно опишем каждое действие.
 
@@ -37,19 +38,19 @@ ms.lasthandoff: 05/22/2018
 
 Перед началом установки Visual Studio:
 
-1. Проверьте [требования к системе](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Так вы узнаете, поддерживает ли ваш компьютер Visual Studio 2017.
+1. Проверьте [требования к системе](/visualstudio/productinfo/vs2017-system-requirements-vs). Так вы узнаете, поддерживает ли ваш компьютер Visual Studio 2017.
 2. Примените актуальные обновления Windows. Эти обновления гарантируют, что на компьютере установлены последние обновления для системы безопасности и необходимые системные компоненты для Visual Studio.
 3. Перезагрузите систему. Перезагрузка гарантирует, что ожидающие установки или обновления компоненты не будут препятствовать установке Visual Studio.
 4. Освободите место. Удалите ненужные файлы и приложения с системного диска. Например, запустите приложение очистки диска.
 
-Сведения об использовании предыдущих версий Visual Studio параллельно с Visual Studio 2017 см. в разделе [Совместимость с предыдущими версиями](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Сведения об использовании предыдущих версий Visual Studio параллельно с Visual Studio 2017 см. в разделе [Совместимость с предыдущими версиями](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ## <a name="step-2---download-visual-studio"></a>Шаг 2.Скачивание Visual Studio
 
 Теперь скачайте файл начального загрузчика Visual Studio. Для этого нажмите кнопку ниже, выберите нужный выпуск Visual Studio 2017, щелкните **Сохранить**, а затем **Открыть папку**.
 
  > [!div class="button"]
- > [Скачивание Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Скачивание Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/22/2018
 
   Если появляется оповещение системы контроля учетных записей, нажмите кнопку **Да**.
 
-2. Мы попросим вас принять [условия лицензии](https://www.visualstudio.com/license-terms/) и [заявление о конфиденциальности](https://go.microsoft.com/fwlink/?LinkID=824704) корпорации Майкрософт. Нажмите кнопку **Продолжить**.  
+2. Мы попросим вас принять [условия лицензии](https://visualstudio.microsoft.com/license-terms/) и [заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement) корпорации Майкрософт. Нажмите кнопку **Продолжить**.
 
    ![Условия лицензии и заявление о конфиденциальности](media/vs2017-privacy-and-license-terms.PNG "Условия лицензии и заявление о конфиденциальности корпорации Майкрософт")
 
@@ -80,16 +81,16 @@ ms.lasthandoff: 05/22/2018
 
  ![Выбор рабочей нагрузки в диалоговом окне программы установки Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
-     Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.  
+     Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.
 
 2. Выбрав нужные рабочие нагрузки, нажмите кнопку **Установить**.
 
     Далее будут отображаться экраны состояния, на которых демонстрируется ход установки Visual Studio.
 
-3. После установки новых рабочих нагрузок и компонентов нажмите кнопку **Запуск**.  
+3. После установки новых рабочих нагрузок и компонентов нажмите кнопку **Запуск**.
 
 > [!TIP]
-> В любой момент после установки можно установить рабочие нагрузки или компоненты, которые не были установлены изначально. Если среда Visual Studio открыта, выберите пункт **Сервис** > **Получить средства и компоненты...**; откроется Visual Studio Installer. **Visual Studio Installer** можно также открыть из меню "Пуск". Здесь можно выбрать рабочие нагрузки или компоненты, которые нужно установить, а затем нажать кнопку **Изменить**.  
+> В любой момент после установки можно установить рабочие нагрузки или компоненты, которые не были установлены изначально. Если среда Visual Studio открыта, выберите пункт **Сервис** > **Получить средства и компоненты...**; откроется Visual Studio Installer. **Visual Studio Installer** можно также открыть из меню "Пуск". Здесь можно выбрать рабочие нагрузки или компоненты, которые нужно установить, а затем нажать кнопку **Изменить**.
 
 |         |         |
 |---------|---------|
@@ -137,16 +138,7 @@ ms.lasthandoff: 05/22/2018
    Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), щелкните **Установленные**, разверните узел **Visual C++**, а затем выберите тип проекта C++, который нужно создать. <br><br>
    Чтобы [создать приложение C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), щелкните **Установленные**, разверните узел **Visual C#**, а затем выберите тип проекта C#, который нужно создать.
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>См. также
 
@@ -154,6 +146,5 @@ ms.lasthandoff: 05/22/2018
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
 * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Руководство администратора Visual Studio 2017](visual-studio-administrator-guide.md)
-  * [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Установка средств сборки в контейнер](build-tools-container.md)
+* [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Настройка и установка Visual Studio для Mac](/visualstudio/mac/installation)

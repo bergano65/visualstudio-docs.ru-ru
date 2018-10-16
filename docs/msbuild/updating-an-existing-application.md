@@ -1,28 +1,46 @@
-# <a name="updating-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
+---
+title: Обновление существующего приложения до MSBuild 15 | Документация Майкрософт
+ms.custom: ''
+ms.date: 11/04/2016
+ms.technology: msbuild
+ms.topic: conceptual
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39152263"
+---
+# <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
 До версии 15.0 платформа MSBuild загружалась из глобального кэша сборок, а расширения MSBuild устанавливались в реестре. Благодаря этому все приложения использовали одну и ту же версию MSBuild и имели доступ к одним и тем же наборам инструментов, однако это делало невозможной параллельную установку разных версий Visual Studio.
 
-Чтобы установка происходила быстрее, занимала меньше места и могла производиться параллельно, в Visual Studio 2017 платформа MSBuild больше не помещается в глобальный кэш сборок и реестр не изменяется. Недостатком является то, что приложения, которым необходимо использовать API MSBuild для анализа или сборки проектов, больше не могут автоматически полагаться на установку Visual Studio.
+Для более быстрой, меньшей по размеру, а также параллельной установки в Visual Studio 2017 платформа MSBuild больше не помещается в глобальный кэш сборок и реестр не изменяется. Недостатком является то, что приложения, которым необходимо использовать API MSBuild для анализа или сборки проектов, не могут неявно использовать установку Visual Studio.
 
-## <a name="using-msbuild-from-visual-studio"></a>Использование MSBuild из Visual Studio
+## <a name="use-msbuild-from-visual-studio"></a>Использование MSBuild из Visual Studio
 
-Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или MSBuild.exe, следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
+Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или *MSBuild.exe*, следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
 
-## <a name="using-microsoftbuildlocator"></a>Использование пакета Microsoft.Build.Locator
+## <a name="use-microsoftbuildlocator"></a>Использование пакета Microsoft.Build.Locator
 
-Если вы распространяете пакет `Microsoft.Build.Locator.dll` вместе с приложением, распространять другие сборки MSBuild не требуется.
+Если вы распространяете пакет *Microsoft.Build.Locator.dll* вместе с приложением, распространять другие сборки MSBuild не требуется.
 
 Чтобы обновить проект для использования MSBuild 15 и API локатора, необходимо внести в проект ряд изменений, которые описаны ниже. Чтобы ознакомиться с примером изменений, необходимых для обновления проекта, просмотрите [список фиксаций, внесенных в пример проекта, в репозитории MSBuildLocator](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15).
 
 ### <a name="change-msbuild-references"></a>Изменение ссылок на MSBuild
 
-Чтобы платформа MSBuild загружалась из центрального расположения, ее сборки не следует распространять вместе с приложением.
+Чтобы убедиться, что платформа MSBuild загружается из центрального расположения, ее сборки не следует распространять вместе с приложением.
 
 Изменения, которые необходимо внести в проект, чтобы избежать загрузки MSBuild из центрального расположения, зависят от того, как проект ссылается на MSBuild.
 
-#### <a name="using-nuget-packages-preferred"></a>Использование пакетов NuGet (предпочтительный способ)
+#### <a name="use-nuget-packages-preferred"></a>Использование пакетов NuGet (предпочтительный способ)
 
-В этих инструкциях предполагается, что вы используете [ссылки NuGet в стиле `PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files).
+В этих инструкциях предполагается, что вы используете [ссылки NuGet в стиле PackageReference](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files).
 
 Измените файлы проекта так, чтобы они ссылались на сборки MSBuild из пакетов NuGet. Задайте тег `ExcludeAssets=runtime`, чтобы сообщить диспетчеру NuGet, что сборки требуются только во время сборки и их не следует копировать в выходной каталог.
 
@@ -37,9 +55,9 @@
 </ItemGroup>
 ```
 
-#### <a name="using-extension-assemblies"></a>Использование сборок расширений
+#### <a name="use-extension-assemblies"></a>Использование сборок расширений
 
-Если использовать пакеты NuGet невозможно, можно ссылаться на сборки MSBuild, распространяемые вместе с Visual Studio. При прямой ссылке на платформу MSBuild она не должна копироваться в выходной каталог. Для этого следует присвоить свойству `Copy Local` значение `False`. В файле проекта это будет выглядеть следующим образом:
+Если использовать пакеты NuGet невозможно, можно ссылаться на сборки MSBuild, распространяемые вместе с Visual Studio. При прямой ссылке на платформу MSBuild она не должна копироваться в выходной каталог. Для этого следует присвоить свойству `Copy Local` значение `False`. В файле проекта этот параметр будет выглядеть следующим образом:
 
 ```xml
     <Reference Include="Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -49,11 +67,11 @@
 
 #### <a name="binding-redirects"></a>Переадресации привязок
 
-При ссылке на пакет Microsoft.Build.Locator приложение автоматически использует необходимые переадресации привязок со всех версий сборок MSBuild на версию `15.1.0.0`.
+При ссылке на пакет Microsoft.Build.Locator необходимо убедиться, что приложение автоматически использует необходимые переадресации привязок со всех версий сборок MSBuild на версию `15.1.0.0`.
 
-### <a name="ensure-output-clean"></a>Очистка выходных данных
+### <a name="ensure-output-is-clean"></a>Очистка выходных данных
 
-Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок `Microsoft.Build.*.dll` (кроме сборки `Microsoft.Build.Locator.dll`, которая будет добавлена в следующем шаге).
+Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll*, кроме сборки *Microsoft.Build.Locator.dll*, которая будет добавлена в следующем шаге.
 
 ### <a name="add-package-reference"></a>Добавление ссылки на пакет
 
@@ -69,9 +87,9 @@
 
 Добавьте вызов API Locator перед вызовом любых методов, использующих MSBuild.
 
-Самый простой способ сделать это — добавить вызов
+Самый простой способ добавить вызов к API Locator — это добавить вызов
 
-```c#
+```csharp
 MSBuildLocator.RegisterDefaults();
 ```
 

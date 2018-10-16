@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475539"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Просмотр дизассемблированного кода в отладчике Visual Studio
 Эта функция доступна только в том случае, если включена отладка на уровне адреса **параметры** диалоговом **Отладка** узла. Она недоступна для отладки скриптов и SQL.  

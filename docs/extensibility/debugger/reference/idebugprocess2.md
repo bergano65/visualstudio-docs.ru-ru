@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121379"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Этот интерфейс представляет процесс, запущенный на порт. Если порт находится локальный порт, затем `IDebugProcess2` обычно представляет физического процесса на локальном компьютере.  

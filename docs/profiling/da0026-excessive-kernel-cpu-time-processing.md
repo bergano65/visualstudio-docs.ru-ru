@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7f38bbf0655099e3c90f3893c34be39ef4b28
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4a571b0eee0a0cdd4b6e232dc13bd8e8923da805
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750185"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: обработка чрезмерного времени ядра ЦП
 |||  

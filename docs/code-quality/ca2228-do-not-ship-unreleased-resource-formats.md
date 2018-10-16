@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f444779fc5db725c090f96ec51a86d8427a14d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ea3a470ab6b6d9cf3e7daeaf24cd82d0f7ac387
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858514"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: не следует поставлять невыпущенные форматы ресурсов
 |||
@@ -31,13 +32,13 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Файл ресурсов был создан с помощью версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , в настоящее время не поддерживается.
+ Файл ресурсов был создан с помощью версии .NET Framework, в настоящее время не поддерживается.
 
 ## <a name="rule-description"></a>Описание правила
- Файлы ресурсов, созданные с помощью предварительных версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] может не работать в поддерживаемых версиях платформы .NET Framework.
+ Файлы ресурсов, которые были созданы с помощью предварительных версий платформы .NET Framework может стать недоступной в поддерживаемых версиях платформы .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, постройте ресурс с помощью поддерживаемой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
+ Чтобы устранить нарушение этого правила, ресурс сборки с помощью поддерживаемой версии .NET Frameworkk.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

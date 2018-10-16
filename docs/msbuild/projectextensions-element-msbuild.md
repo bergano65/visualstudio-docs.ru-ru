@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd8a43aa07feba8253e76ac99474e9822ce27ce
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c977578a01c6d0af62f328e44a617ff2e00fe128
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150860"
 ---
 # <a name="projectextensions-element-msbuild"></a>Элемент ProjectExtensions (MSBuild)
 Позволяет хранить в файлах проектов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] информацию, не относящуюся к [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Все, что находится внутри элемента `ProjectExtensions`, будет игнорироваться [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -34,13 +35,13 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <ProjectExtensions>  
     Non-MSBuild information to include in file.  
 </ProjectExtensions>  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  

@@ -20,17 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c717cc1bc744438afd277e5f154fdcd8852e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e874b29db1e74c554673c21709d9d230dc19827
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178479"
 ---
-# <a name="warning-task"></a>Задача Warning
+# <a name="warning-task"></a>Warning - задача
 Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице описаны параметры задачи `Warning`.  
+ В следующей таблице приводятся параметры задачи `Warning` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -42,9 +43,9 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remarks"></a>Примечания  
  Задача `Warning` позволяет проектам [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] проверять наличие необходимой конфигурации или необходимого свойства перед переходом к следующему шагу сборки.  
   
- Если параметр `Condition` задачи `Warning` равен `true`, значение параметра `Text` записывается в журнал, а процесс сборки продолжается. Если параметр `Condition` не существует, текст предупреждения записывается в журнал. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Если параметр `Condition` задачи `Warning` равен `true`, значение параметра `Text` записывается в журнал, а процесс сборки продолжается. Если параметр `Condition` не существует, текст предупреждения записывается в журнал. Дополнительные сведения см. в статье о [получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример кода проверяет свойства, заданные в командной строке. Если заданные свойства отсутствуют, проект инициирует событие предупреждения и регистрирует в журнале значение параметра `Text` задачи `Warning`.  
@@ -64,5 +65,5 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

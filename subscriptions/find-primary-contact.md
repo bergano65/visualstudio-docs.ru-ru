@@ -9,11 +9,12 @@ description: Подписки Visual Studio — определение осно
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a50fef244d7b656271adf36544166c9f8256c1ae
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 2a9108009e497a4685659cdc904e77352f94365a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637985"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Определение основного контактного лица, связанного с подписками Visual Studio
 
@@ -21,17 +22,16 @@ ms.lasthandoff: 04/06/2018
 
 1. Чтобы определить основное контактное лицо, посетите сервисный центр корпоративного лицензирования по адресу https://www.Microsoft.com/licensing/servicecenter и щелкните **Войти**.
 
-    ![Вход в VLSC](_img/locate-primary-contact/vlsc-sign-in.png)
-
 2. На вкладке лицензий в раскрывающемся списке выберите **Схема связей**.
-
-    ![Выберите связь](_img/locate-primary-contact/vlsc-relationship.png)
-
+    > [!div class="mx-imgBorder"]
+    > ![Выбор связей](_img/locate-primary-contact/vlsc-relationship.png)
+   
 3. Выберите номер требуемого соглашения. 
-
-    ![Выбор соглашения](_img/locate-primary-contact/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Выбор соглашения](_img/locate-primary-contact/vlsc-agreement.png)
 
 4. Откройте вкладку **Контакты**.  В списке контактов, связанных с соглашением, отобразится основное контактное лицо. 
+    > [!div class="mx-imgBorder"]
+    > ![Выбор контактов](_img/locate-primary-contact/vlsc-contacts.png)
 
-    ![Выбор контактов](_img/locate-primary-contact/vlsc-contacts.png)
- 
+

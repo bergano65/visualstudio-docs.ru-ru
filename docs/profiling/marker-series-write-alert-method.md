@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae17a44b37536359a5f09fd75fda82ce34b50c3
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237371"
 ---
 # <a name="markerserieswritealert-method"></a>Метод marker_series::write_alert
 Записывает оповещение в файл трассировки визуализатора параллелизма.  
@@ -37,7 +38,7 @@ void write_alert(
  Строка составного формата, содержащая текст, перемежаемый нулями или другими элементами форматирования, которые соответствуют объектам в списке аргументов.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkersobj.h  
+ **Заголовок:** *cvmarkersobj.h*  
   
  **Пространство имен:** Concurrency::diagnostic  
   

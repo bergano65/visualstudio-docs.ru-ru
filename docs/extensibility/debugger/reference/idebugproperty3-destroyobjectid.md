@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122942"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Уничтожает уникальный идентификатор, связанный с этим свойством, указывающее, что вызывающий объект больше не прослушивает для идентификации этого свойства уникально от всех других свойств.  

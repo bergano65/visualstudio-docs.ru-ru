@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData | Документы Microsoft
+title: IDiaEnumDebugStreamData | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5fe2d4a627b9d607607ba53c3962d244c5c369
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058286"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-Предоставляет доступ для записи в поток данных отладки.  
+Предоставляет доступ к записям в поток данных отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,25 +33,25 @@ IDiaEnumDebugStreamData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumDebugStreamData`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
-|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Возвращает число записей в потоке данных отладки.|  
-|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Извлекает имя Отладка потока данных.|  
-|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Возвращает указанную запись.|  
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Извлекает указанное число записей из перечисляемого последовательности.|  
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Пропускает заданное число записей в последовательности, перечисленные.|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|  
+|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Возвращает число записей в поток данных отладки.|  
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Получает имя потока данных отладки.|  
+|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Извлекает указанную запись.|  
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Извлекает указанное число записей в перечисленной последовательности.|  
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Пропускает указанное число записей в перечисленной последовательности.|  
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Создает перечислитель, содержащий нумерованный последовательность, совпадающую с текущего перечислителя.|  
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Создает перечислитель, содержащий же перечисленной последовательности, что и текущий перечислитель.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот интерфейс представляет поток записей в поток данных отладки. Размер и интерпретацию каждой записи является зависимым от записи, получается из потока данных. Фактически этот интерфейс предоставляет доступ к байт необработанные данные в файле символов.  
+ Этот интерфейс предоставляет поток записи в поток данных отладки. Размер и интерпретацию каждой записи зависит от записи, получается из потока данных. Фактически, этот интерфейс предоставляет доступ к байты необработанных данных в файл символов.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Вызовите [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) или [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) методов получения `IDiaEnumDebugStreamData` объекта.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить доступ к одном потоке данных и ее записи.  
+ В этом примере показано, как получить доступ к один поток данных и ее записи.  
   
 ```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  
@@ -108,7 +109,7 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

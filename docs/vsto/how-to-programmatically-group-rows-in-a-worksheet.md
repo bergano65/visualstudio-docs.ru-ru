@@ -1,5 +1,5 @@
 ---
-title: 'Как: программная группировка строк на листе | Документы Microsoft'
+title: 'Практическое: программная группировка строк на листах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,23 +23,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 894e3971c257a6461aa975a9d6bb1cf933234440
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258740"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Практическое руководство. Программная группировка строк на листах
-  Можно группировать одного или нескольких полных строк. Чтобы создать группу на листе, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> управления или собственный объект диапазона Excel.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Практическое: программная группировка строк на листах
+  Вы можете сгруппировать один или несколько целых строк. Чтобы создать группу на листе, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>С помощью элемента управления NamedRange  
- При добавлении <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в проекте уровня документа во время разработки, можно использовать элемент управления программным образом создать группу. В следующем примере предполагается, что имеются три <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления на том же листе: `data2001`, `data2002`, и `dataAll`. Каждый именованный диапазон относится к целой строки на листе.  
+## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange  
+ Если вы добавите <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в проекте уровня документа во время разработки, можно использовать элемент управления программными средствами создать группу. В следующем примере предполагается, что существует три <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления в том же листе: `data2001`, `data2002`, и `dataAll`. Каждый именованный диапазон относится к целой строке на листе.  
   
-#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Создание группы элементов управления NamedRange на листе  
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Чтобы создать группу элементов управления NamedRange на лист  
   
-1.  Сгруппировать три именованных диапазонов, вызвав <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> метод для каждого диапазона. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
+1.  Сгруппировать три именованных диапазонов, вызвав <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> метод каждого диапазона. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
@@ -47,12 +48,12 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Разгруппирование строк, вызвать <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> метод.  
   
-## <a name="using-native-excel-ranges"></a>Использование собственных диапазонов Excel  
- В коде предполагается, что имеется три диапазона Excel с именем `data2001`, `data2002`, и `dataAll` на листе.  
+## <a name="use-native-excel-ranges"></a>Использование собственного диапазонах Excel  
+ В коде предполагается, что у вас есть три диапазона Excel с именем `data2001`, `data2002`, и `dataAll` на рабочем листе.  
   
-#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Создание группы диапазонов Excel на листе  
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Чтобы создать группу диапазонов Excel на листе  
   
-1.  Сгруппировать три именованных диапазонов, вызвав <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> метод для каждого диапазона. В следующем примере предполагается, что имеются три <xref:Microsoft.Office.Interop.Excel.Range> элементов управления с именем `data2001`, `data2002`, и `dataAll` на одном листе. Каждый именованный диапазон относится к целой строки на листе.  
+1.  Сгруппировать три именованных диапазонов, вызвав <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> метод каждого диапазона. В следующем примере предполагается, что существует три <xref:Microsoft.Office.Interop.Excel.Range> элементов управления с именем `data2001`, `data2002`, и `dataAll` на одном листе. Каждый именованный диапазон относится к целой строке на листе.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Как: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Практическое: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

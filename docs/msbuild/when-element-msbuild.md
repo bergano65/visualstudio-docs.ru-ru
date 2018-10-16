@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a1587a429c92fe1bac5d2cd0bcd63c0f27a68c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152432"
 ---
 # <a name="when-element-msbuild"></a>Элемент When (MSBuild)
 Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <When Condition="'StringA'=='StringB'">  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
 </When>  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  

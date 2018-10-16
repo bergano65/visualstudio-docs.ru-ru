@@ -13,15 +13,20 @@ ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 195f64d6ccb06c551c729d1b1b640e42e689654f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550535"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: абстрактные типы не должны иметь конструкторы
+
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
@@ -36,19 +41,19 @@ ms.lasthandoff: 04/26/2018
  Конструкторы абстрактных типов могут быть вызваны только производными типами. Открытые конструкторы создают экземпляры типа. Невозможно создавать экземпляры абстрактного типа; абстрактный тип с открытым конструктором является недопустимым.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, сделайте конструктор защищенным или не объявляйте тип абстрактным.
+ Чтобы устранить нарушение этого правила, защищать конструктор, или не объявите тип как абстрактный.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Абстрактный тип имеет открытый конструктор.
+ Для этого правила отключать вывод предупреждений не следует. Абстрактный тип имеет открытый конструктор без параметров.
 
 ## <a name="example"></a>Пример
- Следующий пример содержит абстрактный тип, нарушающий это правило.
+ Следующий пример содержит абстрактный тип, который нарушает это правило.
 
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
  [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
 ## <a name="example"></a>Пример
- В следующем примере предыдущее нарушение устраняется путем изменения специальные возможности конструктора из `public` для `protected`.
+ В следующем примере устраняется нарушение устраняется путем изменения специальных возможностей конструктора из `public` для `protected`.
 
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
  [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

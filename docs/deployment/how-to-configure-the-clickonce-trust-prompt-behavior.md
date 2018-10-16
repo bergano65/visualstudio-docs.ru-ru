@@ -1,5 +1,5 @@
 ---
-title: 'Как: Настройка поведения запроса о доверии ClickOnce | Документы Microsoft'
+title: 'Практическое: Настройка поведения запроса о доверии ClickOnce | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,24 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774811"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
-Можно настроить запрос о доверии ClickOnce для элемента управления пользователи получают возможность установки приложения ClickOnce, таких как приложения Windows Forms, приложениях Windows Presentation Foundation, консольные приложения, браузера WPF приложений и решений Office. Настроить запрос о доверии при установке разделов реестра на компьютере для каждого конечного пользователя.  
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое: Настройка поведения запроса о доверии ClickOnce
+Запрос о доверии ClickOnce для элемента управления можно настроить ли конечные пользователи получают возможность установки приложения ClickOnce, таких как приложения Windows Forms, приложения Windows Presentation Foundation, консольные приложения, браузере WPF приложения и решения Office. Настроить запрос о доверии путем задания разделов реестра на компьютере каждого конечного пользователя.  
   
- В следующей таблице показаны параметры конфигурации, которые могут применяться к каждой из пяти зон (Интернета, UntrustedSites, MyComputer, локальная интрасеть и TrustedSites).  
+ В следующей таблице показаны параметры конфигурации, которые могут применяться к каждому из пяти зон (Интернет, UntrustedSites, MyComputer, LocalIntranet и TrustedSites).  
   
 |Параметр|Значение параметра реестра|Описание|  
 |------------|----------------------------|-----------------|  
-|Разрешение запроса о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается, чтобы конечным пользователям можно предоставить доверие приложения ClickOnce.|  
+|Разрешение запроса о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается таким образом, чтобы конечным пользователям можно предоставить доверие для приложений ClickOnce.|  
 |Ограничение запроса о доверии.|`AuthenticodeRequired`|Запрос о доверии ClickOnce отображается только в том случае, если приложение ClickOnce подписано сертификатом, который идентифицирует издателя.|  
 |Отключите запрос о доверии.|`Disabled`|Запрос о доверии ClickOnce не отображается для любого приложения ClickOnce, не имеющие явно доверенным сертификатом.|  
   
- В следующей таблице показано поведение по умолчанию для каждой зоны. Столбец приложений относится приложения Windows Forms, приложениях Windows Presentation Foundation, приложения браузера WPF и консольных приложений.  
+ В следующей таблице показаны поведение по умолчанию для каждой зоны. Столбец приложений относится к приложений Windows Forms, приложения Windows Presentation Foundation, приложения браузера WPF и консольных приложений.  
   
 |Зоны|Приложения|решения Office|  
 |----------|------------------|----------------------|  
@@ -47,22 +48,22 @@ ms.lasthandoff: 04/19/2018
 |`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- Эти параметры можно переопределить, включая, ограничивая или отключение запроса о доверии ClickOnce.  
+ Эти параметры можно переопределить путем включения, ограничение или отключение запрос о доверии ClickOnce.  
   
-## <a name="enabling-the-clickonce-trust-prompt"></a>Включение запрос о доверии ClickOnce  
- Разрешение запроса о доверии для зоны, если нужно конечным пользователям будет предложена возможность установки и запуска приложения ClickOnce из этой зоны.  
+## <a name="enable-the-clickonce-trust-prompt"></a>Включить запрос о доверии ClickOnce  
+ Включите запрос о доверии для зоны, если нужно, чтобы конечные пользователи могут быть представлены с параметром установки и запуска приложения ClickOnce из этой зоны.  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Чтобы включить запрос о доверии ClickOnce при помощи редактора реестра  
+#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Чтобы включить запрос о доверии ClickOnce с помощью редактора реестра  
   
 1.  Откройте редактор реестра:  
   
     1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
   
-    2.  В **откройте** введите `regedit32`, а затем нажмите кнопку **ОК**.  
+    2.  В **откройте** введите `regedit`, а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Если ключ не существует, создайте его.  
   
@@ -76,13 +77,13 @@ ms.lasthandoff: 04/19/2018
     |`LocalIntranet`|`Enabled`|  
     |`TrustedSites`|`Enabled`|  
   
-     Для решений Office `Internet` имеет значение по умолчанию `AuthenticodeRequired` и `UntrustedSites` имеет значение `Disabled`. Во всех прочих случаях `Internet` имеет значение по умолчанию `Enabled`.  
+     Для решений Office `Internet` имеет значение по умолчанию `AuthenticodeRequired` и `UntrustedSites` имеет значение `Disabled`. Для всех остальных `Internet` имеет значение по умолчанию `Enabled`.  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Чтобы включить запрос о доверии ClickOnce программными средствами  
+#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Программное Включение запрос о доверии ClickOnce  
   
 1.  Создайте консольное приложение Visual Basic или Visual C# в Visual Studio.  
   
-2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
+2.  Откройте *Program.vb* или *Program.cs* файл для редактирования и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,8 +109,8 @@ ms.lasthandoff: 04/19/2018
   
 3.  Выполните сборку и запуск приложения.  
   
-## <a name="restricting-the-clickonce-trust-prompt"></a>Ограничение запроса о доверии ClickOnce  
- Ограничение запроса о доверии, чтобы решения должны быть подписаны сертификатом Authenticode, идентифицирующим пользователям предлагается решение о доверии.  
+## <a name="restrict-the-clickonce-trust-prompt"></a>Ограничить запрос о доверии ClickOnce  
+ Ограничения запрос о доверии, таким образом, чтобы решения, которые должны быть подписаны с сертификатом Authenticode, идентифицирующим пользователям предлагается решение о доверии.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Чтобы ограничить запрос о доверии ClickOnce с помощью редактора реестра  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Если ключ не существует, создайте его.  
   
@@ -135,11 +136,11 @@ ms.lasthandoff: 04/19/2018
     |`LocalIntranet`|`AuthenticodeRequired`|  
     |`TrustedSites`|`AuthenticodeRequired`|  
   
-#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Ограничение запроса о доверии ClickOnce программными средствами  
+#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Чтобы ограничить запрос о доверии ClickOnce программными средствами  
   
 1.  Создайте консольное приложение Visual Basic или Visual C# в Visual Studio.  
   
-2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
+2.  Откройте *Program.vb* или *Program.cs* файл для редактирования и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,10 +166,10 @@ ms.lasthandoff: 04/19/2018
   
 3.  Выполните сборку и запуск приложения.  
   
-## <a name="disabling-the-clickonce-trust-prompt"></a>Отключение запрос о доверии ClickOnce  
- Запрос о доверии можно отключить, чтобы конечные пользователи не получают возможность установки решения, которые уже не доверенным в политике безопасности.  
+## <a name="disable-the-clickonce-trust-prompt"></a>Отключить запрос о доверии ClickOnce  
+ Запрос о доверии можно отключить, чтобы конечные пользователи не получают возможность установить решения, которые уже не доверенным в политике безопасности.  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Чтобы отключить запрос о доверии ClickOnce при помощи редактора реестра  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Чтобы отключить запрос о доверии ClickOnce с помощью редактора реестра  
   
 1.  Откройте редактор реестра:  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Если ключ не существует, создайте его.  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 04/19/2018
   
 1.  Создайте консольное приложение Visual Basic или Visual C# в Visual Studio.  
   
-2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
+2.  Откройте *Program.vb* или *Program.cs* файл для редактирования и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -225,12 +226,12 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
- [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Как: Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Практическое: включить параметры безопасности ClickOnce-приложений](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое: Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Практическое: Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Практическое: отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Практическое: Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Практическое: повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

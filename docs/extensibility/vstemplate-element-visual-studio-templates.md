@@ -1,5 +1,5 @@
 ---
-title: Элемент VSTemplate (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент VSTemplate (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586756"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Элемент VSTemplate (шаблоны Visual Studio)
-Содержит все метаданные шаблона проекта, шаблона элемента или начального набора.  
+Содержит все метаданные шаблона проекта, шаблон элемента или комплект для начала работы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
     <TemplateData>    </TemplateData>  
     <TemplateContent>    </TemplateContent>  
@@ -34,21 +35,21 @@ ms.lasthandoff: 04/16/2018
 </VSTemplate>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Type`|Обозначает шаблон как шаблон проекта или шаблона элемента. Этот атрибут может иметь значение `Project` или `Item`.|  
 |`Version`|Указывает номер версии для шаблона. Шаблоны в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] имеют `Version` значение атрибута `3.0.0`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, категорию шаблона и определяет его отображение в **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, категорию шаблона и определяет, отображается ли он в **новый проект** или **Добавление нового элемента** диалоговое окно.|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Необязательный элемент.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Необязательный элемент.|  
@@ -57,12 +58,12 @@ ms.lasthandoff: 04/16/2018
  Отсутствует.  
   
 ## <a name="remarks"></a>Примечания  
- `VSTemplate` Элемент является корневым элементом VSTEMPLATE-файлов.  
+ `VSTemplate` Элемент является корневым элементом *.vstemplate* файлов.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,5 +88,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

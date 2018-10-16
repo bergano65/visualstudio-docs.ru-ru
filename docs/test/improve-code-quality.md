@@ -12,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321064"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Средства тестирования Visual Studio
 
@@ -37,12 +38,11 @@ ms.lasthandoff: 04/26/2018
 - [Нагрузочное тестирование](../test/quickstart-create-a-load-test-project.md) позволяет моделировать нагрузку на серверное приложение посредством выполнения модульных тестов и веб-тестов производительности.
 
 > [!NOTE]
-> Модульное тестирование доступно во всех выпусках Visual Studio. Другие средства тестирования, такие как Live Unit Testing, IntelliTest и закодированные тесты пользовательского интерфейса, доступны только в выпуске Visual Studio Enterprise. Дополнительные сведения о выпусках см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Модульное тестирование доступно во всех выпусках Visual Studio. Другие средства тестирования, такие как Live Unit Testing, IntelliTest и закодированные тесты пользовательского интерфейса, доступны только в выпуске Visual Studio Enterprise. Дополнительные сведения о выпусках см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Связанные сценарии
 
-* [Произвольное и ручное тестирование (VSTS)](/vsts/manual-test/)
-* [Нагрузочное тестирование (VSTS)](/vsts/load-test/index)
-* [Непрерывное тестирование (VSTS)](/vsts/build-release/test/index)
-* [Общие сведения о DevOps для Team Services и TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Произвольное и ручное тестирование (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [Нагрузочное тестирование (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [Непрерывное тестирование (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Средства анализа кода](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

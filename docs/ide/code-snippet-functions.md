@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512139"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
-С фрагментами кода C# можно использовать три функции. Функции указываются в элементе [Function](../ide/code-snippets-schema-reference.md#function) фрагмента кода. Сведения о создании фрагментов кода см. в статье [Фрагменты кода](../ide/code-snippets.md).
+С фрагментами кода C# можно использовать три функции. Функции указываются в элементе [Function](../ide/code-snippets-schema-reference.md#function-element) фрагмента кода. Сведения о создании фрагментов кода см. в статье [Фрагменты кода](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Функции
 
@@ -30,9 +31,9 @@ ms.lasthandoff: 04/26/2018
 
 |Функция|Описание:|Язык|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
+|`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|
+|`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|C#|
 
 ## <a name="example"></a>Пример
 
@@ -158,5 +159,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Элемент Function](../ide/code-snippets-schema-reference.md#function)
+- [Элемент Function](../ide/code-snippets-schema-reference.md#function-element)
 - [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

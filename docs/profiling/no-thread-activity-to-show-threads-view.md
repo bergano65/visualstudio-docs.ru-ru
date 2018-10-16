@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab1aab1be9fa8ebb8667a7cf7c524da71fa013d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257882"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Нет активности потоков для отображения (представление "Потоки")
 В этой области отображаются данные о нескрытых потоках в текущем видимом диапазоне времени.  

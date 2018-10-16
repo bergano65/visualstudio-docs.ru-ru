@@ -1,7 +1,7 @@
 ---
 title: Эмулятор Visual Studio для Android | Документация Майкрософт
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,19 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283670"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
+
 Эмулятор Visual Studio для Android — это приложение для настольного компьютера, которое эмулирует устройство Android. Он предоставляет виртуализированную среду, в которой доступны возможности отладки и тестирования приложений для Android без использования физического устройства. Он также предлагает изолированную среду для прототипов ваших приложений.  
 
 > [!IMPORTANT]
 > В большинстве случаев мы рекомендуем использовать эмулятор Google Android вместо эмулятора Android для Visual Studio:
-> - Когда требуются образы эмулятора Android для Visual Studio с Android 7.0 или более поздние версии (мы не планируем публиковать образы Android 6.0 и более ранних версий).
-> - При использовании Инструментов Visual Studio для Apache Cordova. Дополнительные сведения см. в статье [Запуск приложения Apache Cordova на Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> - Эмулятор Android для Visual Studio не поддерживается в версиях старше Visual Studio 2015.
+> - Образы эмулятора версии, старше Android 6.0, не доступны для эмулятора Android для Visual Studio.
+> - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
+>
+> Дополнительные сведения о настройке и использовании Google Android Emulator см. в [этой статье](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
   
@@ -45,7 +51,7 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Requirements"></a> Требования к системе и обратная совместимость  
  Важные сведения о требованиях к оборудованию, программному обеспечению и конфигурации для эмулятора Visual Studio для Android см. в следующих разделах.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
   
@@ -62,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
  Чтобы понять возможности сетевого подключения эмулятора, примите его за аналог подключения Wi-Fi с телефона Android к той же сети. Если приложение, запущенное на телефоне, может обращаться к сетевому ресурсу через подключение Wi-Fi, приложению в эмуляторе также будет доступен тот же сетевой ресурс.  
   
- Дополнительные сведения о требованиях к сети см. в разделе [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+ Дополнительные сведения о требованиях к сети см. в статье [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
  Сведения об устранении сетевых проблем см. в разделе [Устранение неполадок в эмуляторе Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
@@ -78,7 +84,7 @@ ms.lasthandoff: 04/16/2018
  После установки набора профилей, которые будут являться целевыми, новые профили можно запускать непосредственно из диспетчера с помощью зеленой кнопки **Воспроизведение**. Они также будут отображаться в раскрывающемся меню целевого объекта отладки в кроссплатформенном мобильном проекте Visual Studio любого типа.  
   
 ##  <a name="FeaturesTest"></a> Возможности, которые можно тестировать в эмуляторе  
- Подробные сведения о возможностях, которые можно протестировать в эмуляторе, см. в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Подробные сведения о возможностях, которые можно протестировать в эмуляторе, см. в этой [записи блога](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).  
   
 ##  <a name="FeaturesNonTest"></a> Возможности, которые нельзя тестировать в эмуляторе  
  В следующем списке приведены возможности и компоненты платформы Android, которые **нельзя** тестировать в эмуляторе. Эти возможности и компоненты необходимо проверять на физическом устройстве.  

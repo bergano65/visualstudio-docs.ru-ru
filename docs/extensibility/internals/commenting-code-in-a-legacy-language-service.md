@@ -1,5 +1,5 @@
 ---
-title: Комментирования кода в языковую службу прежних версий | Документы Microsoft
+title: Комментирование кода синтаксиса в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b573b464c26c3864cece697191cf03545ada779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510466"
 ---
-# <a name="commenting-code-in-a-legacy-language-service"></a>Комментирования кода в языковую службу прежних версий
-Языки программирования обычно предоставляют возможность добавлять заметки или код в комментарий. Комментарий — это часть текста, который предоставляет дополнительные сведения о коде, но игнорируется во время компиляции или интерпретации.  
+# <a name="comment-code-in-a-legacy-language-service"></a>Комментарий кода в языковой службы прежних версий
+Языки программирования обычно предоставляют средства для заметок или закомментируйте код. Комментарий — это раздел текста, который предоставляет дополнительные сведения о коде, но игнорируется во время компиляции или интерпретации.  
   
- Классы managed package framework (MPF) обеспечивают поддержку комментирования и идет раскомментирование выбранного текста.  
+ Классы управляемых пакетов framework (MPF) обеспечивают поддержку закомментирование и раскомментирование выбранного текста.  
   
-## <a name="comment-styles"></a>Стили комментария  
- Существует два общих стиля комментариев:  
+## <a name="comment-styles"></a>Стили комментарий  
+Существует два общих стиля комментариев:  
+   
+1.  Комментарии, строки, где расположено в одной строке.  
   
-1.  Комментарии строки, где комментария в одной строке.  
+2.  Комментарии блока, где комментарии могут включать несколько строк.  
   
-2.  Блок комментариев, где комментарий может включать несколько строк.  
+
+Строки комментариев обычно имеют начальный символ (или символы), при комментариев блоке имеют начального и конечного знаков. Например, в C# строка комментария начинается с `//`, и начало комментария начинается с `/*` и заканчивается `*/`.  
   
- Комментарии строки обычно имеют начальный символ (или символы), при блок комментариев начального и конечного символов. Например, в C# строка комментария начинается с / /, и блочного комментария начинается с / * и заканчивается \*/.  
+Когда пользователь выбирает команду **выделенный фрагмент в комментарий** из **изменить** > **Дополнительно** меню, команда отправляется <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класса. Когда пользователь выбирает команду **Раскомментировать выделенный фрагмент**, отправляется команда <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
   
- Когда пользователь выбирает команду **выделенного фрагмента в комментарий** из **изменить** -> **Дополнительно** меню выберите команду направляется в <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класса. Когда пользователь выбирает команду **раскомментируйте выбора**, отправляется команда <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
+## <a name="support-code-comments"></a>Комментарии к коду поддержки  
+ У вас есть комментарии язык службы поддержки кода с помощью параметра `EnableCommenting` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Этот параметр задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Дополнительные сведения о настройке языка функции службы, см. в разделе [регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
-## <a name="supporting-code-comments"></a>Поддержка комментарии к коду  
- У вас есть комментарии языковой службы поддержки кода с помощью параметра `EnableCommenting` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Это задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Дополнительные сведения об установке компонентов servicce языка в разделе [регистрации службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
-  
- Необходимо также переопределить <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод для возврата <xref:Microsoft.VisualStudio.Package.CommentInfo> структуру с символы комментария для выбранного языка. C#-по умолчанию используются символы комментария стиль строки.  
+ Необходимо также переопределить <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод для возврата <xref:Microsoft.VisualStudio.Package.CommentInfo> структуру с символы комментария для вашего языка. C#-по умолчанию используются символы комментария строки стиля.  
   
 ### <a name="example"></a>Пример  
  Ниже приведен пример реализации <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод.  
@@ -64,5 +66,5 @@ namespace MyLanguagePackage
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Возможности службы прежних версий языка](../../extensibility/internals/legacy-language-service-features1.md)   
- [Регистрация службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)
+ [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)

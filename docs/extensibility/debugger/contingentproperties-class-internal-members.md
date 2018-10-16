@@ -1,5 +1,5 @@
 ---
-title: Класс ContingentProperties - внутренние члены | Документы Microsoft
+title: 'Внутренние элементы: класс ContingentProperties | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44bec34394df6f976416a827d7eb5d67cb99f6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204418"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Класс ContingentProperties - внутренние элементы
+# <a name="contingentproperties-class---internal-members"></a>Внутренние элементы: класс ContingentProperties
 Содержит дополнительные свойства для <xref:System.Threading.Tasks.Task> объекта.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не удается получить доступ к эти внутренние члены из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как при отсутствии доступа к этим внутренним членам платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
@@ -40,12 +41,12 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="fields"></a>Поля  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[m_children](../../extensibility/debugger/m-children-field.md)|Список дочерних задач, которые зарегистрированы с помощью этой задачи.|  
   
 ## <a name="remarks"></a>Примечания  
- Платформа .NET Framework инициализирует поля этого класса, только в том случае, если они требуются.  
+ .NET Framework инициализирует поля этого класса, только в том случае, когда они нужны.  
   
 ## <a name="see-also"></a>См. также  
  [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

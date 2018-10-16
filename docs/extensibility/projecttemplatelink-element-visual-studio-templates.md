@@ -1,5 +1,5 @@
 ---
-title: Элемент ProjectTemplateLink (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент ProjectTemplateLink (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ebc56e03a6582ab37126097db5f79ed9c5f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495977"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Элемент ProjectTemplateLink (шаблоны Visual Studio)
-Задает путь к VSTEMPLATE-файлу для одного проекта в многопроектном шаблоне.  
+Указывает путь к *.vstemplate* файлу для одного проекта в многопроектном шаблоне.  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -38,13 +39,13 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <ProjectTemplateLink ProjectName="Name">  
     PathToTemplateFile  
 </ProjectTemplateLink>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`ProjectName`|Необязательный атрибут.<br /><br /> Задает имя каждого отдельного проекта в многопроектном шаблоне. **Новый проект** диалоговое окно не может присваивать имена отдельным проектам.|  
-|`CopyParameters`|Включает копирование всех переменных в шаблоне основной группы в каждый из связанных шаблонов.<br /><br /> Параметры в связанных шаблонах имеют префикс `"$ext_*$"`. Например, если в шаблоне родительской группы параметр `$projectname$` имеет значение **ExampleProject1**, когда связанного шаблона должно быть выполнено, он получает параметр `$ext_projectname$`, который является копией `$projectname$`параметров из шаблона родительской группы.<br /><br /> Это позволяет связанным шаблонам совместно использовать некоторые общие параметры, которые можно удобным образом создавать в шаблоне родительской группы.<br /><br /> Этот атрибут является необязательным и для него автоматически устанавливается значение по умолчанию `false`, если он не включен.<br /><br /> Представлено в обновлении 2 для Visual Studio 2013. Ссылки на версию другого продукта, в разделе [ссылки на сборки, представленные в Visual Studio 2013 SDK с обновлением 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Включает копирование всех переменных в шаблоне основной группы в каждый из связанных шаблонов.<br /><br /> Параметры в связанных шаблонах имеют префикс `"$ext_*$"`. Например, если в шаблоне родительской группы параметр `$projectname$` имеет значение **ExampleProject1**, когда связанный шаблон возвращает своей очереди, который будет выполнен, он получает параметр `$ext_projectname$`, который является копией `$projectname$`параметра в шаблоне родительской группы.<br /><br /> Это позволяет связанным шаблонам совместно использовать некоторые общие параметры, которые можно удобным образом создавать в шаблоне родительской группы.<br /><br /> Этот атрибут является необязательным и для него автоматически устанавливается значение по умолчанию `false`, если он не включен.<br /><br /> Представлено в обновлении 2 для Visual Studio 2013. Чтобы сослаться на правильной версии продукта, см. в разделе [ссылки на сборки, представленные в Visual Studio 2013 SDK с обновлением 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -67,13 +68,13 @@ ms.lasthandoff: 04/16/2018
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст указывает путь к VSTEMPLATE-файлу шаблона.  
+ Этот текст указывает путь к *.vstemplate* файла шаблона.  
   
 ## <a name="remarks"></a>Примечания  
- Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Элемент `ProjectTemplateLink` используется для указания расположения VSTEMPLATE-файла для одного или нескольких проектов шаблона. VSTEMPLATE-файл многопроектного шаблона содержит по одному элементу `ProjectTemplateLink` на каждый проект в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
+ Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectTemplateLink` Элемент используется, чтобы указать расположение *.vstemplate* файл для одного из проектов в этом шаблоне. *.Vstemplate* файл многопроектного шаблона содержит один `ProjectTemplateLink` элемент для каждого проекта в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если атрибут `ProjectName` не существует, имя VSTEMPLATE-файла используется в качестве имени проекта.  
+ В этом примере показан простой корневой многопроектных *.vstemplate* файл. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если `ProjectName` атрибут не существует, имя *.vstemplate* файл используется в качестве имени проекта.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -98,6 +99,6 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)
+ [Практическое: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)

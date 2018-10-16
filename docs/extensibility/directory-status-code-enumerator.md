@@ -1,5 +1,5 @@
 ---
-title: Перечислитель код состояния каталога | Документы Microsoft
+title: Перечислитель кода состояния каталога | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638470"
 ---
-# <a name="directory-status-code-enumerator"></a>Перечислитель код состояния каталога
-`SccDirStatus` Перечислитель содержит именованные константы, определяющие состояние каталога в системе управления версиями. Это перечисление используется методом [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Это впервые появилась в версии 1.2 API подключаемых модулей управления источника.  
+# <a name="directory-status-code-enumerator"></a>Перечислитель кода состояния каталога
+`SccDirStatus` Перечислитель содержит именованные константы, определяющие состояние каталога в системе управления версиями. Это перечисление используется с [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Это была введена в версии 1.2 API подключаемых модулей управления источника.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,11 +43,11 @@ enum SccDirStatus {
  Каталог не существует в системе управления версиями.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Каталог находится в системе управления версиями.  
+ Каталог находится внутри системы управления версиями.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Проект, соответствующий в этот каталог пуст.  
+ Проект, соответствующий в этот каталог является пустым.  
   
 ## <a name="see-also"></a>См. также  
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
+ [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

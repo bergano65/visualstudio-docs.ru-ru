@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4100e26d07b9dc76f9947e4f5a5f7db3a901abe2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924415"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (динамическое свойство XElement)
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```xaml
 elem.Elements[{namespaceName}localName]
 ```
 
@@ -43,6 +44,6 @@ elem.Elements[{namespaceName}localName]
 
 ## <a name="see-also"></a>См. также
 
-- [Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)
+- [Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)
 - [Элемент](../designers/element-xelement-dynamic-property.md)
 - [Descendants (динамическое свойство XElement)](../designers/descendants-xelement-dynamic-property.md)

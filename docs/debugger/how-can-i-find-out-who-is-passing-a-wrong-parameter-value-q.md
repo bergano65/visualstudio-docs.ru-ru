@@ -23,11 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46497e45acb4663822b1a7bc6e4ad5a4f09af11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284176"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Как определить, откуда передается неправильное значение параметра?
 ## <a name="problem-description"></a>Описание проблемы  
@@ -41,17 +42,17 @@ ms.lasthandoff: 04/18/2018
   
 2.  Щелкните правой кнопкой мыши точку останова и выберите **условие**.  
   
-3.  В **условие точки останова** диалоговое окно, нажмите кнопку **условие** флажок. В разделе [дополнительные точки останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  В **условие точки останова** диалоговое окно, щелкните **условие** "флажок". См. в разделе [дополнительные точки останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Введите в текстовое поле выражение, например `Var==3`, где `Var` представляет собой имя параметра, который содержит неправильное значение, а `3` — это неправильное значение, переданное параметру.  
   
-5.  Выберите **имеет значение True** переключатель и нажмите кнопку **ОК** кнопки.  
+5.  Выберите **имеет значение True** кнопку-переключатель и нажмите кнопку **ОК** кнопки.  
   
 6.  Запустите программу повторно. Точка останова заставит программу прервать выполнение на начале функции, когда параметр `Var` получит значение `3`.  
   
 7.  Затем в окне "Стек вызовов" можно найти вызывающую функцию, чтобы перейти к ее исходному коду. Дополнительные сведения см. в разделе [как: использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>См. также  
- [Часто задаваемые вопросы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Точки останова](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Часто задаваемые вопросы отладки машинного кода](../debugger/debugging-native-code-faqs.md)   
+ [Точки останова](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

@@ -1,9 +1,9 @@
 ---
-title: Параметры проекта отладчика | Документы Microsoft
+title: Параметры проекта отладчика | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152990"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
 Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .  
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/18/2018
  Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  В этом разделе описывается, как отладчик использует файлы символов и исходные файлы для отображения отладочной информации.  
   
  [Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
- Описание способов отладки приложения UWP. (Центр разработки для Windows).  
+ В этой статье описывается отладка приложений UWP. (Центр разработки для Windows).  
   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)  
  Описание параметров отладчика и подготовки, необходимой для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  

@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691151"
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)
-С помощью служебной программы командной строки «Визуализатор параллелизма» (CVCollectionCmd.exe) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio. Эти средства можно использовать на компьютерах без установленной среды Visual Studio.  
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)
+С помощью служебной программы командной строки "Визуализатор параллелизма" (*CVCollectionCmd.exe*) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio. Эти средства можно использовать на компьютерах без установленной среды Visual Studio.  
   
 > [!NOTE]
 >  Начиная с версии Visual Studio 2013 визуализатор параллелизма — это дополнительное расширение. (Ранее он входил в состав Visual Studio.) Скачать [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) можно в Центре загрузки.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Скачать программу командной строки "Визуализатор параллелизма"  
- Чтобы скачать и установить служебную программу командной строки, перейдите на страницу [Средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) и следуйте инструкциям. По умолчанию CVCollectionCmd.exe устанавливается в папке %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ на компьютерах с архитектурой x64).  
+ Чтобы скачать и установить служебную программу командной строки, перейдите на страницу [Средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) и следуйте инструкциям. По умолчанию *CVCollectionCmd.exe* устанавливается в папке %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ на компьютерах с архитектурой x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Сбор трассировок с помощью CVCollectionCmd  
  Вы можете собирать трассировки, запустив приложение в CVCollectionCmd или приложив его к CVCollectionCmd. Возможные варианты см. в справочнике по командам ниже. Пример  
@@ -51,13 +52,13 @@ ms.lasthandoff: 05/14/2018
 |Процесс|Указывает процесс, присоединяемый при выполнении команды Attach, или процесс в анализируемой трассировке при выполнении команды Analyze. Применяется к командам Attach и Analyze.|PID или имя процесса.|Отсутствует.|  
 |Config|Указывает путь файла конфигурации, если требуется собирать нестандартные параметры.   Применяется к командам Launch, Attach и Analyze.|Путь каталога или относительный путь XML-файла конфигурации.|Отсутствует.|  
   
-## <a name="customizing-configuration-settings"></a>Настройка параметров конфигурации  
+## <a name="customize-configuration-settings"></a>Настройка параметров конфигурации  
  Если вы используете CVCollectionCmd для сбора трассировок и хотите настроить параметры сбора данных, укажите их в файле конфигурации.  
   
 > [!NOTE]
 >  Если вы используете Visual Studio для сбора трассировок, не изменяйте файл конфигурации напрямую.  Вместо этого воспользуйтесь диалоговым окном [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  
   
- Чтобы изменить параметры сбора, создайте файл конфигурации на компьютере, где будет выполняться программа CVCollectionCmd. Вы можете создать файл конфигурации с нуля или скопировать файл конфигурации с компьютера, на котором установлена среда Visual Studio, и изменить его. Имя файла — `UserConfig.xml` , он расположен в папке **Local AppData** . При запуске программы используйте параметр Config вместе с командами Launch, Attach или Analyze.  В параметре, связанном с параметром Config, укажите путь к файлу конфигурации.  
+ Чтобы изменить параметры сбора, создайте файл конфигурации на компьютере, где будет выполняться программа CVCollectionCmd. Вы можете создать файл конфигурации с нуля или скопировать файл конфигурации с компьютера, на котором установлена среда Visual Studio, и изменить его. Имя файла — *UserConfig.xml*, он расположен в папке *Local AppData*. При запуске программы используйте параметр Config вместе с командами Launch, Attach или Analyze.  В параметре, связанном с параметром Config, укажите путь к файлу конфигурации.  
   
 ### <a name="configuration-file-tags"></a>Теги файла конфигурации  
  Файл конфигурации использует формат XML. Ниже приведены допустимые теги и значения.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139127"
 ---
 # <a name="sccinitialize-function"></a>Функция SccInitialize
 Эта функция инициализирует подключаемый модуль системы управления версиями и предоставляет возможности и ограничения для интегрированной среды разработки (IDE).  

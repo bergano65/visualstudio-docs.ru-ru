@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98b56eece1a51db94482a0a58d54ca877e47e0c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669360"
 ---
 # <a name="summary-view---net-memory-data"></a>Представление "Сводка" — данные в памяти .NET
 В представлении "Сводка" приводится информация о функциях .NET и типах, которым была выделена наибольшая часть памяти, а также о типах, созданных наибольшее число раз в течение сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).  
@@ -49,5 +50,5 @@ ms.lasthandoff: 04/19/2018
 |**Экземпляры в %**|Процент общего числа объектов .NET, созданных во время сеанса профилирования, которые являются экземплярами этого типа.|  
   
 ## <a name="see-also"></a>См. также  
- [Представление "Сводка"](../profiling/summary-view-sampling-data.md)   
- [Представление "Сводка"](../profiling/summary-view-instrumentation-data.md)
+ [Представление "Сводка" — данные выборки](../profiling/summary-view-sampling-data.md)   
+ [Представление "Сводка" — данные инструментирования](../profiling/summary-view-instrumentation-data.md)

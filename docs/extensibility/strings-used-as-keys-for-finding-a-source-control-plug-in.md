@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137678"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, которые используются в качестве ключа для поиска подключаемый модуль системы управления версиями
 Следующие строки являются ключевыми для доступа к реестру для поиска сведений о системы управления версиями подключаемого модуля.  

@@ -19,56 +19,56 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2829e1dffa0975a1970b8727f9baf79febf9b32c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745533"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174891"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
-В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В этом пошаговом руководстве вы создадите приложение Windows Forms. Мастер настройки источника данных будет использоваться для создания набора данных для двух таблиц в базе данных Northwind. Вы добавите с привязкой к данным элементы управления в форму Windows Forms, и будет изменена код BindingNavigator кнопку Сохранить обновление базы данных внутри области TransactionScope.
+В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В этом пошаговом руководстве вы создадите в приложении Windows Forms. Мастер настройки источника данных используется для создания набора данных для двух таблиц в базе данных Northwind. Вы добавите с привязкой к данным элементы управления в форму Windows, а вы измените код BindingNavigator кнопка "Сохранить" для обновления базы данных, в класс TransactionScope.
 
 ## <a name="prerequisites"></a>Предварительные требования
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
 
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **разработки настольных приложений .NET** рабочей нагрузки, или в отдельных компонентов.
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. В установщике Visual Studio, SQL Server Express LocalDB можно установить как часть **разработка классических приложений .NET** рабочей нагрузки, или в качестве отдельного компонента.
 
-2.  Установка образца базы данных Northwind, выполните следующие действия:
+2.  Установка образца базы данных "Борей", выполнив следующие действия:
 
-    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .
+    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранение и обработка данных** рабочей нагрузки в установщике Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на локальном экземпляре LocalDB и выберите **новый запрос**.
 
        Откроется окно редактора запросов.
 
-    2. Копировать [сценарий Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот скрипт T-SQL создает базу данных Northwind с нуля и заполняет ее данными.
+    2. Копировать [скрипт Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот сценарий T-SQL создает базу данных "Борей" с нуля и заполняет ее данными.
 
-    3. Вставьте скрипт T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.
+    3. Вставьте сценарий T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.
 
-       Через некоторое время завершения выполнения запроса и создания базы данных "Борей".
+       Через некоторое время выполнения запроса отобразятся и создания базы данных Northwind.
 
-## <a name="create-a-windows-forms-application"></a>Создайте приложение Windows Forms
+## <a name="create-a-windows-forms-application"></a>Создание приложения Windows Forms
  Первым шагом является создание **приложение Windows Forms**.
 
 #### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows
 
-1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
+1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
+2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
-3. В средней области выберите **приложение Windows Forms** тип проекта.
+3. В средней области выберите **приложения Windows Forms** тип проекта.
 
 4. Назовите проект **SavingDataInATransactionWalkthrough**, а затем выберите **ОК**.
 
-     **SavingDataInATransactionWalkthrough** создается и добавляется в проект **обозревателе решений**.
+     **SavingDataInATransactionWalkthrough** проекта создается и добавляется к **обозревателе решений**.
 
 ## <a name="create-a-database-data-source"></a>Создание источника данных базы данных
- Этот шаг использует **мастер настройки источника данных** для создания источника данных, на основе `Customers` и `Orders` таблицы в базе данных Northwind.
+ Этот шаг использует **мастер настройки источника данных** для создания источника данных на основе `Customers` и `Orders` таблиц в базе данных Northwind.
 
 #### <a name="to-create-the-data-source"></a>Создание источника данных
 
-1.  На **данные** последовательно выберите пункты **Показать источники данных**.
+1.  На **данных** меню, выберите **Показать источники данных**.
 
-2.  В **источники данных** выберите **добавить новый источник данных** запуск **мастер настройки источника данных**.
+2.  В **источников данных** выберите **добавить новый источник данных** запустить **мастер настройки источника данных**.
 
 3.  На **Выбор типа источника данных** выберите **базы данных**, а затем выберите **Далее**.
 
@@ -78,30 +78,30 @@ ms.locfileid: "34745533"
 
          - или -
 
-    -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно и создать подключение к базе данных Northwind.
+    -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно и создать подключение к базе данных "Борей".
 
-5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.
+5.  Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.
 
-6.  На **Сохранение строки подключения в файле конфигурации приложения** выберите **Далее**.
+6.  На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.
 
-7.  На **Выбор объектов базы данных** экрана, разверните **таблиц** узла.
+7.  На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.
 
-8.  Выберите `Customers` и `Orders` таблицы, а затем выберите **Готово**.
+8.  Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.
 
-     **NorthwindDataSet** добавляется в проект и `Customers` и `Orders` таблицы отображаются в **источники данных** окна.
+     **NorthwindDataSet** добавляется в проект и `Customers` и `Orders` таблицы отображаются в **источников данных** окна.
 
 ## <a name="add-controls-to-the-form"></a>Добавление элементов управления в форму
- Можно создать элементы управления с привязкой к данным путем перетаскивания элементов из **источники данных** на форму.
+ Созданием элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окна на форму.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Создание данных с привязкой к элементам управления в форме Windows
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Создание привязкой к данным элементы управления в форме Windows
 
--   В **источники данных** окна, разверните **клиентов** узла.
+-   В **источников данных** окне разверните **клиентов** узла.
 
--   Перетащите главный **клиентов** узел из **источники данных** окна на **Form1**.
+-   Перетащите главный **клиентов** узел из **источников данных** окна на **Form1**.
 
      На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. Объект [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.
 
--   Перетащите связанный **заказов** узла (не главный **заказов** узла, но под узлом связанной дочерней таблицы **факс** столбца) на форму под  **CustomersDataGridView**.
+-   Перетащите связанный **заказы** узла (не главный **заказы** узла, но ниже узла связанной дочерней таблицы **факсов** столбец) на форму под  **CustomersDataGridView**.
 
      На форме появляется <xref:System.Windows.Forms.DataGridView>. `OrdersTableAdapter` И <xref:System.Windows.Forms.BindingSource> отображаются в области компонентов.
 
@@ -110,14 +110,14 @@ ms.locfileid: "34745533"
 
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Порядок добавления ссылки на DLL-файл System.Transactions
 
-1.  На **проекта** последовательно выберите пункты **добавить ссылку**.
+1.  На **проекта** меню, выберите **добавить ссылку**.
 
 2.  Выберите **System.Transactions** (на **.NET** вкладку), а затем выберите **ОК**.
 
      Ссылку на **System.Transactions** добавляется в проект.
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Изменение кода в кнопке saveitem объекта BindingNavigator
- Для первой таблицы, перетащенной на форму, добавлен код по умолчанию для `click` кнопку событий сохранения <xref:System.Windows.Forms.BindingNavigator>. Для обновления дополнительных таблиц вам необходимо добавить такой код вручную. В данном пошаговом руководстве мы выполнили рефакторинг имеющегося кода сохранения из сохранения обработчика события щелчка кнопки. Мы также создать несколько дополнительных методов для предоставления определенной функциональности обновления основанной на потребности в добавлении или удалении строки.
+ Для первой таблицы, перетащенной на форму, код добавляется по умолчанию для `click` кнопку событий сохранения <xref:System.Windows.Forms.BindingNavigator>. Для обновления дополнительных таблиц вам необходимо добавить такой код вручную. В этом пошаговом руководстве мы выполнили рефакторинг имеющегося кода сохранения из сохранения обработчик событий нажатия кнопки. Также мы создадим несколько дополнительных методов для предоставления определенной функциональности обновления зависимости от строки должен ли быть добавлены или удалены.
 
 #### <a name="to-modify-the-auto-generated-save-code"></a>Изменение автоматически сформированного кода сохранения
 
@@ -140,28 +140,28 @@ ms.locfileid: "34745533"
 
 #### <a name="to-delete-existing-orders"></a>Удаление существующих заказов
 
--   Добавьте следующие `DeleteOrders` метод **Form1**:
+-   Добавьте следующий `DeleteOrders` метод **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 #### <a name="to-delete-existing-customers"></a>Удаление существующих клиентов
 
--   Добавьте следующие `DeleteCustomers` метод **Form1**:
+-   Добавьте следующий `DeleteCustomers` метод **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 #### <a name="to-add-new-customers"></a>Добавление новых клиентов
 
--   Добавьте следующие `AddNewCustomers` метод **Form1**:
+-   Добавьте следующий `AddNewCustomers` метод **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 #### <a name="to-add-new-orders"></a>Добавление новых заказов
 
--   Добавьте следующие `AddNewOrders` метод **Form1**:
+-   Добавьте следующий `AddNewOrders` метод **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -174,5 +174,5 @@ ms.locfileid: "34745533"
 
 ## <a name="see-also"></a>См. также
 
-- [Как: сохранение данных с помощью транзакции](../data-tools/save-data-by-using-a-transaction.md)
+- [Практическое: сохранение данных с помощью транзакции](../data-tools/save-data-by-using-a-transaction.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

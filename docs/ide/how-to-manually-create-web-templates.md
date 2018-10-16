@@ -12,18 +12,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178947"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл *VSTEMPLATE* должен указывать, что это веб-шаблон, а также задавать язык программирования.
 
 > [!NOTE]
-> Веб-шаблоны должны содержать пустой файл *WEBPROJ*, на который должна быть добавлена ссылка в файле *VSTEMPLATE* в атрибуте `File` элемента `Project`. Несмотря на то, что для веб-проектов не требуется файл проекта *PROJ*, необходимо создать этот файл-заглушку для правильной работы веб-шаблона.
+> Веб-шаблоны должны содержать пустой файл *WEBPROJ*, на который должна быть добавлена ссылка в файле *VSTEMPLATE* в атрибуте `File` элемента `Project`. Для веб-проектов не требуется файл проекта *PROJ*. Но необходимо создать этот файл-заглушку для правильной работы веб-шаблона.
 
 ## <a name="to-manually-create-a-web-template"></a>Создание веб-шаблонов вручную
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/26/2018
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
-        <Description>A simple Web template</Description>
+        <Description>A simple web template</Description>
         <Icon>icon.ico</Icon>
         <ProjectType>Web</ProjectType>
         <ProjectSubType>CSharp</ProjectSubType>

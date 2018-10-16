@@ -1,5 +1,5 @@
 ---
-title: Buildprojectonload-элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент buildProjectOnload (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154162"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload - элемент (шаблоны Visual Studio)
-Создает только новые проекты можно создавать и добавлять их в решение. Всего решения не создается.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Элемент buildProjectOnload (шаблоны Visual Studio)
+Основана только новые проекты, как создать и добавить их в решение. Все решение не создается.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 <BuildProjectOnLoad> true/false </BuildOnLoad>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -41,9 +42,9 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|TemplateData|Относит шаблон и определяет, как он выглядит в оба **новый проект** и **Добавление нового элемента** диалоговым окнам.|  
+|`TemplateData`|Определяет, демонстрирующая ее отображение в обоих категорию шаблона и **новый проект** и **Добавление нового элемента** диалоговым окнам.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
  `BuildProjectOnLoad` — это необязательный элемент. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
- Следующий пример иллюстрирует метаданные для шаблона Visual C#.  
+ В следующем примере метаданные для шаблона Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

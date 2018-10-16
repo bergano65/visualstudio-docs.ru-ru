@@ -3,13 +3,14 @@ title: Инструменты Visual Studio для Mac для Unity
 description: Введение в расширение инструментов Visual Studio для Unity
 author: dantogno
 ms.author: v-davian
-ms.date: 07/17/2017
+ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279854"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Инструменты Visual Studio для Mac для Unity
 
@@ -17,13 +18,15 @@ ms.lasthandoff: 05/23/2018
 
 Инструменты Visual Studio для Mac для Unity представляют собой бесплатное расширение Visual Studio, которое превращает Visual Studio для Mac в эффективное средство для разработки кроссплатформенных игр и приложений с помощью платформы Unity.
 
-## <a name="overview"></a>Обзор 
+Интеграция с Unity включена в стандартную версию Visual Studio для Mac, и, начиная с Unity 2018.1, Visual Studio для Mac является интегрированной средой разработки на C# по умолчанию для проектов Unity.
+
+## <a name="overview"></a>Обзор
 
 Ниже приведены некоторые ключевые функции инструментов Visual Studio для Mac для Unity:
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Совместимо с выпуском Visual Studio для Mac Community
 
-[Выпуск Visual Studio для Mac Community](https://www.visualstudio.com/) предоставляется бесплатно.
+[Visual Studio для Mac Community Edition](https://visualstudio.microsoft.com/) поставляется бесплатно и включает установочные файлы Unity, начиная с версии Unity 2018.1. Дополнительную информацию см. в [документации по установке ](setup-vsmac-tools-unity.md) инструментов Visual Studio для Mac для Unity.
 
 ### <a name="intellisense-for-unity-messages"></a>IntelliSense для сообщений Unity
 
@@ -33,13 +36,10 @@ IntelliSense позволяет легко и быстро [реализоват
 
 Инструменты Visual Studio для Mac для Unity поддерживают все функции [отладки](using-vsmac-tools-unity.md#unity-debugging), характерные для Visual Studio:
 
-*   Задавайте точки останова, включая условные.
-
-*   Оценивайте сложные выражения в окне "Контрольные значения".
-
-*   Проверяйте и изменяйте значения переменных и аргументов.
-
-*   Детализируйте сложные объекты и структуры данных.
+* Задавайте точки останова, включая условные.
+* Оценивайте сложные выражения в окне "Контрольные значения".
+* Проверяйте и изменяйте значения переменных и аргументов.
+* Детализируйте сложные объекты и структуры данных.
 
 ### <a name="powerful-refactoring-and-context-actions"></a>Эффективный рефакторинг и контекстные действия
 

@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 935df371b912d51ef6a5d88fdae4e9e11c449049
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3506e87c1468ff66143b672dca95cd70b0b3dff
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177413"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Конц текущего контекста отслеживания.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp  
 HRESULT WINAPI EndTrackingContext();  
 ```  
   
@@ -36,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был закончен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h  
+ **Заголовок:** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

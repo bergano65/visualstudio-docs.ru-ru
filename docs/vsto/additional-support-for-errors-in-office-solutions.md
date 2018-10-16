@@ -64,6 +64,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267836"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Дополнительные сведения об ошибках в решениях Office
   Можно использовать следующие ресурсы помогут вам найти ответы на вопросы, возникающих при разработке решений Office в Visual Studio.  

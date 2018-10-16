@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079703"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для построения
+# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.  
   
-## <a name="specifying-inputs"></a>Указание входных данных  
+## <a name="specify-inputs"></a>Указание входных данных  
  Элементы представляют собой входные данные для сборки. Дополнительные сведения об элементах см. в разделе [Элементы](../msbuild/msbuild-items.md).  
   
  Чтобы включить файлы в сборку, их необходимо включить в список элементов в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. В список элементов можно добавить несколько файлов, как по отдельности, так и с помощью подстановочных знаков (чтобы включить несколько файлов одновременно).  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
      `<CSFile Include="form1.cs"/>`  
   
-     - или  
+     или 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -47,44 +48,44 @@ ms.lasthandoff: 04/19/2018
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - или  
+     или 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>Указание входных данных с помощью подстановочных знаков  
+## <a name="specify-inputs-with-wildcards"></a>Указание входных данных с помощью подстановочных знаков  
  Подстановочные знаки можно использовать для рекурсивного включения всех файлов или только определенных файлов из подкаталогов в качестве входных данных для сборки. Дополнительные сведения о подстановочных знаках см. в разделе [Элементы](../msbuild/msbuild-items.md).  
   
- В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге Project):  
+ В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге *Project*):  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех JPG-файлов в каталоге Images и подкаталогах  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG*-файлов в каталоге *Images* и подкаталогах  
   
 -   Используйте следующий атрибут `Include`.  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех JPG-файлов, начинающихся со слога img  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG*-файлов, начинающихся со слога *img*  
   
 -   Используйте следующий атрибут `Include`.  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Включение всех файлов в каталогах с именами, которые оканчиваются слогом jpgs  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Включение всех файлов в каталогах с именами, которые оканчиваются слогом *jpgs*  
   
 -   Используйте один из следующих атрибутов `Include`.  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - или  
+     или
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>Передача элементов в задачу  
+## <a name="pass-items-to-a-task"></a>Передача элементов в задачу  
  В файле проекта используйте в задачах запись @(), чтобы указать весь список элементов в качестве входных данных для сборки. Эту запись можно использовать при перечислении файлов по отдельности или при использовании подстановочных знаков.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Использование всех файлов Visual C# или Visual Basic в качестве входных данных  
@@ -93,12 +94,12 @@ ms.lasthandoff: 04/19/2018
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - или  
+     или 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Чтобы указать входные данные для построения, необходимо использовать знаки подстановки в элементах; нельзя указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.  
+>  Чтобы указать входные данные для сборки, нужно использовать подстановочные знаки в элементах; невозможно указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.  
 >   
 >  `<CSC Sources="*.cs">...</CSC>`  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="example"></a>Пример  
- В примере ниже используется подстановочный знак для включения всех CS-файлов.  
+ В примере ниже используется подстановочный знак для включения всех *CS*-файлов.  
   
 ```xml  
 <Project DefaultTargets="Compile"  

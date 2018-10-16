@@ -1,1 +1,0 @@
-Магазин Windows Phone

@@ -1,16 +1,16 @@
 ---
-title: "Интерфейс IDebugStackFrameSniffer | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IDebugStackFrameSniffer | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStackFrameSniffer interface
 ms.assetid: 5669598e-a6bd-4694-9cb2-bd908be72bed
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726804"
 ---
 # <a name="idebugstackframesniffer-interface"></a>Интерфейс IDebugStackFrameSniffer
 Предоставляет способ для перечисления логических стека, известные компонентом. Обработчики скриптов обычно реализуют этот интерфейс. Диспетчер отладки процесса использует этот интерфейс, чтобы найти все кадры стека, связанные с данного потока.  

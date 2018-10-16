@@ -1,3 +1,3 @@
-  **Применимость**. Информация в этой статье относится к проектам уровня документа и проектам надстроек VSTO для следующих приложений: Excel, InfoPath 2013 и InfoPath 2010, Outlook, PowerPoint, Project, Visio и Word.\-\- Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Применяется к:** сведения в этом разделе относятся к документу\-уровень проектов и добавить VSTO\-в проектах для следующих приложений: Excel; InfoPath 2013 и InfoPath 2010; Outlook; PowerPoint; Проект; Visio; Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../../vsto/features-available-by-office-application-and-project-type.md).
 
   

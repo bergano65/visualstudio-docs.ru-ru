@@ -15,13 +15,17 @@ ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c312f237f6cd728b07833af6db94825c785b982e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7965665ea59da6833a01885201a25f1e24b80ca
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547387"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals
 |||
@@ -35,7 +39,7 @@ ms.lasthandoff: 04/26/2018
  Тип значения переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не реализует оператор равенства.
 
 ## <a name="rule-description"></a>Описание правила
- В большинстве языков программирования отсутствует реализация по умолчанию для типов значений оператора равенства (==). Если язык программирования поддерживает перегрузки операторов, следует рассмотреть, реализации оператора равенства. Его поведение должно быть идентично <xref:System.Object.Equals%2A>.
+ В большинстве языков программирования отсутствует реализация по умолчанию от оператора равенства (==) для типов значений. Если язык программирования поддерживает перегрузки операторов, следует реализовать оператор равенства. Его поведение должно быть идентично <xref:System.Object.Equals%2A>.
 
  Оператор проверки на равенство по умолчанию нельзя использовать в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object.Equals в реализации. Пример:
 
@@ -54,13 +58,13 @@ return left.Equals(right);
 ```
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, реализуйте оператор равенства.
+ Чтобы устранить нарушение этого правила, реализуйте оператор равенства.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила; Тем не менее Корпорация Майкрософт рекомендует по возможности укажите оператор равенства.
+ Его можно безопасно подавить предупреждение из этого правила; Тем не менее мы рекомендуем по возможности укажите оператор равенства.
 
 ## <a name="example"></a>Пример
- В следующем примере определяется тип, нарушающий это правило.
+ В следующем примере определяется тип, который нарушает это правило.
 
  [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
@@ -76,4 +80,5 @@ return left.Equals(right);
  [CA2218: переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 ## <a name="see-also"></a>См. также
- <xref:System.Object.Equals%2A?displayProperty=fullName>
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>

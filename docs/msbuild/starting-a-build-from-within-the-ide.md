@@ -12,21 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154454"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
-Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. Эта статья описывает причины этого требования, а также соответствующую процедуру.  
+# <a name="start-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
+Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. В этой статье описаны причины этого требования, а также соответствующая процедура.  
   
 ## <a name="parallel-builds-and-threads"></a>Параллельные сборки и потоки  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, однако такие системы не должны вызывать функции сборки из обратных вызовов, предоставляемых диспетчеру сборок.  
   
- Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.  
+ Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это требование означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Использование IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>Использование IVSBuildManagerAccessor  
  Следующий код описывает метод, который система проектов может использовать для запуска сборки:  
   
 ```csharp

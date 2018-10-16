@@ -1,16 +1,17 @@
 ---
 title: Установка Visual Studio для Mac
 description: Инструкции по установке Visual Studio для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224043"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/23/2018
 
 ## <a name="install"></a>Установка
 
-1. Скачайте Visual Studio для Mac на сайте [https://www.visualstudio.com/](https://www.visualstudio.com/).
+1. Скачайте Visual Studio для Mac на сайте [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/).
 
 2. После скачивания пакета установщика щелкните файл **VisualStudioInstaller.dmg**, чтобы подключить установщик, а затем запустите его, дважды щелкнув логотип, как показано на следующем рисунке:
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/23/2018
   ![Открытие Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://www.visualstudio.com/vs/).
+Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://visualstudio.microsoft.com/vs/).
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером

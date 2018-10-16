@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468812"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег (низкий подробности) и `SymTagCompilandDetails` тег (высокий уровень детализации). `SymTagCompilandDetails` требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о компилируемого объекта, который недоступен с `SymTagCompiland` символов.  

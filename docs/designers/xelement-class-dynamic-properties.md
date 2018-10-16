@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b81821c6a0af0b8fa769c4ef7958b921cee91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077107"
 ---
-# <a name="xelement-class-dynamic-properties"></a>Динамические свойства класса XElement
+# <a name="xelement-class-dynamic-properties"></a>Динамические свойства класса XElement
 
 Этот раздел описывает динамические свойства класса <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 |Раздел|Описание:|
 |-----------|-----------------|
@@ -34,5 +35,5 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement?displayProperty=fullName>
-- [Динамические свойства LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
+- [Динамические свойства LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
 - [Динамические свойства класса XAttribute](../designers/xattribute-class-dynamic-properties.md)

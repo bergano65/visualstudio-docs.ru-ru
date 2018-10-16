@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133193"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Создание нового проекта: За кулисами, часть 2
 В [Создание нового проекта: В механизме, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, как **новый проект** диалоговое окно заполняется значениями. Предположим, что вы выбрали **приложения Windows Visual C#**, заполненных **имя** и **расположение** текстовые поля и выборе ОК.  

@@ -14,15 +14,20 @@ ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eefb3fdb207ecacca4998168509e8c5b9b1a2f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: efaac5fc5b5f8784d204c31e537a5279a81e2699
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548320"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: базовые типы, относящиеся к типу видимых COM-клиенту, должны быть видимыми для COM
+
 |||
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
@@ -31,22 +36,24 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|DependsOnFix|
 
 ## <a name="cause"></a>Причина
- Видимый тип объектов модели компонентов (COM) является производным от типа, который не является видимым для COM.
+ Отображается тип объектов модели компонентов (COM) является производным от типа, который не является видимыми для COM.
 
 ## <a name="rule-description"></a>Описание правила
- Когда видимым для модели COM тип добавляет участников в новой версии, необходимо придерживаться строгим правилам, чтобы избежать нарушения COM-клиенты, которые привязаны к текущей версии. Тип, невидимый для COM, следование не должен следовать правилам управления версиями COM при добавлении новых членов. Однако если видимыми для COM тип является производным от типа невидимой COM и предоставляет интерфейс класса <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ClassInterfaceType> (по умолчанию), все открытые члены базового типа (если только они специально помечены как COM невидимым, который излишне) предоставляются COM. Если базовый тип добавляет новые члены в последующих версиях, могут нарушать работу всех клиентов COM, связанных с интерфейсом класса производного типа. Видимые COM-типы должны наследовать только от видимых COM типах снижения риска нарушения COM-клиентам.
+ Когда видимым для модели COM тип добавляет члены в новой версии, необходимо придерживаться строгих правил, чтобы избежать нарушения COM-клиентам, которые привязаны к текущей версии. Тип, невидимый для COM предполагается, что он не должны удовлетворять правилам управления версиями COM при добавлении новых членов. Однако если видимыми для COM тип является производным от типа невидимым COM и предоставляет интерфейс <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ClassInterfaceType> (по умолчанию), все открытые члены базового типа (если только они специально помечены как COM невидимым, который будет избыточное) предоставляются COM. Если базовый тип добавляет новые члены в более поздние версии, могут нарушать работу всех клиентов COM, которые привязаны к интерфейсу класса, производного типа. Видимые COM-типы должны наследовать только от видимых COM типах чтобы уменьшить вероятность нарушения работы клиентов COM.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, сделайте базовые типы видимыми для COM или производный тип COM невидимой.
+ Чтобы устранить нарушение этого правила, сделайте видимыми для COM базовых типов или производного типа COM невидимым.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип, нарушающий правило.
+ В примере показан тип, который нарушает правило.
 
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Взаимодействие с неуправляемым кодом](/dotnet/framework/interop/index)
+
+- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>
+- [Взаимодействие с неуправляемым кодом](/dotnet/framework/interop/index)

@@ -1,5 +1,5 @@
 ---
-title: Источники событий (Visual Studio SDK) | Документы Microsoft
+title: Источники событий (пакет SDK для Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232661"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Источники событий (SDK для Visual Studio)
-Существует два источника событий: модуль отладки (DE) и сеанс отладки manager (SDM). События, отправляемые из Развернутой иметь механизм отличное от NULL, тогда как события, отправляемые из SDM NULL engine.  
+# <a name="event-sources-visual-studio-sdk"></a>Источники событий (Visual Studio SDK)
+Существует два источника событий: модуль отладки (DE) и сеанс отладки Manager (SDM). События, отправляемые с Развернутой имеют механизм отличное от NULL, а события, отправляемые с SDM ядра NULL.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из DE для SDM.  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  

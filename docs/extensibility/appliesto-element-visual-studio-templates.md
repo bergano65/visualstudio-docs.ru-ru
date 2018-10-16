@@ -1,5 +1,5 @@
 ---
-title: Элемент AppliesTo (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент AppliesTo (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,18 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f399e0b054b5f9b112733399d644e1357837049
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280737"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Элемент AppliesTo (шаблоны Visual Studio)
 Задает необязательное выражение, которое будет соответствовать одной или нескольким возможностям. (см. <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Возможности предоставляются типами проектов через иерархию в виде свойства <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. Таким образом шаблон может использоваться в нескольких типах проектов, имеющих общие применимые возможности.  
   
  Этот элемент является необязательным. В файле шаблона может быть не более одного экземпляра этого элемента. Этот элемент позволяет шаблону элемента быть применимым на основании возможностей выбранного в данный момент активного проекта. Его нельзя использовать, чтобы создать шаблон элемента неприменимым. Если `AppliesTo` отсутствует или выражение не проходит проверку применимости, `TemplateID` или `TemplateGroupID` используются, чтобы сделать шаблон применимым, как в предыдущих версиях продукта.  
   
- Представлено в обновлении 2 для Visual Studio 2013. Для ссылки на правильную версию, см. [ссылки на сборки, представленные в Visual Studio 2013 SDK с обновлением 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Представлено в обновлении 2 для Visual Studio 2013. Чтобы сослаться на правильную версию, см. в разделе [ссылки на сборки, представленные в Visual Studio 2013 SDK с обновлением 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
 <AppliesTo>Capability1</AppliesTo>   
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Выражение возможности, такие как "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)».  
   
--   «&#124;» Является оператором OR.  
+-   "&#124;" — Оператор OR.  
   
 -   Символы "&" и "+" являются операторами AND.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Значение NULL или пустое выражение считается совпадением.  
   
--   Возможности проекта могут содержать любой символ, кроме следующих зарезервированных символов: «'' :;,+-*/\\! ~&#124;& %$@^()={} [] <>? \t\b\n\r  
+-   Возможности проекта могут содержать любой символ, кроме следующих зарезервированных символов: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано три разных шаблона. `Template1` применяется ко всем типам проектов C# или к любому другому типу проектов, который поддерживает возможность `WindowsAppContainer`. `Template2` применяется ко всем проектам C# любого типа. `Template3` применяется к проектам C#, которые не являются проектами `WindowsAppContainer`.  
@@ -99,5 +100,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

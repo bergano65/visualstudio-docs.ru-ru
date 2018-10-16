@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477825"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Контекстные меню (обозреватель XML-схем)
 

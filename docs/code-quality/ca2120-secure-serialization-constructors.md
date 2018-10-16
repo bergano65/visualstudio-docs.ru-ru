@@ -16,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 449258d04b6a47fef42c56637a4de48a4e5d1d12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548508"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: обеспечьте безопасность конструкторов сериализации
+
 |||
 |-|-|
 |TypeName|SecureSerializationConstructors|
@@ -31,10 +33,10 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, не является делегатом или интерфейс и объявлен в сборке, которая позволяет частично доверенным вызывающим объектам. Тип имеет конструктор, принимающий <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> объекта и <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> объекта (сигнатура конструктора сериализации). Этот конструктор не защищен проверкой безопасности, однако один или несколько обычных конструкторов этого типа защищена.
+ Тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, не является делегатом или интерфейс и объявлен в сборке, которая позволяет частично доверенным вызывающим объектам. Тип имеет конструктор, принимающий <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> объекта и <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> объекта (сигнатура конструктора сериализации). Этот конструктор не защищен проверкой безопасности, но один или несколько обычных конструкторов в типе защищена.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило распространяется на типы, поддерживающие пользовательской сериализации. Тип поддерживает пользовательской сериализации, если он реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейса. Конструктор сериализации является обязательным и используется для отмены сериализации или повторного создания объектов, которые были сериализованы с помощью <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метод. Поскольку конструктор сериализации выделяет и инициализирует объекты, проверки безопасности, применяемые для обычных конструкторов, также должны присутствовать на конструктор сериализации. Если вы нарушение этого правила, вызывающих объектов, которые не в противном случае может создать экземпляр использовать конструктор сериализации для этого.
+ Это правило относится к типы, поддерживающие пользовательской сериализации. Тип поддерживает пользовательской сериализации, если он реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс. Конструктор сериализации является обязательным и используется для десериализации или повторного создания объектов, которые были сериализованы с помощью <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метод. Поскольку конструктор сериализации выделяет и инициализирует объекты, проверки безопасности, которые присутствуют в обычных конструкторов также должны присутствовать на конструктор сериализации. При нарушении этого правила, вызывающих объектов, которые не в противном случае может создать экземпляр может использовать конструктор сериализации для этого.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение данного правила, Защитите конструктор сериализации с помощью требований безопасности, которые идентичны для защиты других конструкторов.
@@ -43,7 +45,7 @@ ms.lasthandoff: 04/26/2018
  Не отключайте нарушение правила.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип, нарушающий правило.
+ В примере показан тип, который нарушает правило.
 
  [!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]
 
@@ -53,4 +55,7 @@ ms.lasthandoff: 04/26/2018
  [CA2237: пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>См. также
- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
+
+- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

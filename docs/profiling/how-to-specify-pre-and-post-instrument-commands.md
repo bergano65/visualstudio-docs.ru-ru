@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844642"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
  **32-разрядные компьютеры**
 
-На 32-разрядных компьютерах каталог средств профилирования по умолчанию — диск\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.
+На 32-разрядных компьютерах каталог средств профилирования по умолчанию — *диск\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
 
 **64-разрядные компьютеры**
 
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/19/2018
 
 - Для 32-разрядных приложений каталог средств профилирования по умолчанию:
 
-     *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *диск\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - Для 64-разрядных приложений каталог средств профилирования по умолчанию:
 
-     *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *диск\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>Указание команд, предшествующих инструментированию
 

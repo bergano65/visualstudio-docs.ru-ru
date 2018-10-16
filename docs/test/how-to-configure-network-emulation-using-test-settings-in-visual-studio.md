@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66877397912fca0fbd3996c2dab146b040a047b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320661"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка эмуляции сети с использованием параметров тестирования в Visual Studio
 
@@ -84,4 +85,4 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>См. также
 
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
-- [Выполнение тестов вручную (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Выполнение тестов вручную (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

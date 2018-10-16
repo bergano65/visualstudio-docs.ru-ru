@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131276"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и денежные единицы в Интегрированной среде разработки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) хранит сведения о пользователях в данный момент выбранные объекты с помощью выбора *контекста*. С контекстом выбора пакеты VSPackage могут участвовать в валюте отслеживания двумя способами:  

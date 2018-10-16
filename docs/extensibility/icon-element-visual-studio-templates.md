@@ -1,5 +1,5 @@
 ---
-title: Элемент Icon (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент Icon (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499296"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Элемент Icon (шаблоны Visual Studio)
-Указывает путь и имя файла изображения, который служит в качестве значок, который появляется в любом **новый проект** или **Добавление нового элемента** диалоговом для шаблона.  
+Указывает путь и имя файла, файла образа, который служит в качестве значок, который отображается в либо **новый проект** или **Добавление нового элемента** диалоговом окне для шаблона.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -40,14 +41,14 @@ ms.lasthandoff: 04/16/2018
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, который определяет пакет Visual Studio.|  
+|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, указывающий пакет Visual Studio.|  
 |`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Указывает идентификатор ресурса Visual Studio.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -95,5 +96,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

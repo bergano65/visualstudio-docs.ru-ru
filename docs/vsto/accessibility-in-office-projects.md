@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262323"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
   Microsoft Visual Studio и Microsoft Office содержат многие специальные возможности, которые позволяют создавать пользовательские решения, отвечающие требованиям стандартных специальных возможностей. Корпорация Майкрософт публикует рекомендации по специальным возможностям в Интернете. Дополнительные сведения см. в разделе [веб-сайте специальных возможностей](http://go.microsoft.com/fwlink/?LinkID=37113).  

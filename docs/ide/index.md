@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fafcbd925d144cb619696da105f51e2f00db1421
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384179"
 ---
 # <a name="visual-studio-documentation"></a>Документация по Visual Studio
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/04/2018
     </li>
 </ul>
 
-<h2>Испытайте Visual Studio в действии с помощью кратких руководств</h2>
+## <a name="experience-visual-studio-with-5-minute-quickstarts"></a>Испытайте Visual Studio в действии с помощью кратких руководств
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -245,7 +246,7 @@ ms.lasthandoff: 05/04/2018
     </li>
 </ul>
 
-<h2>Учебники для подробного ознакомления</h2>
+## <a name="go-deeper-with-tutorials"></a>Учебники для подробного ознакомления
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
@@ -259,7 +260,7 @@ src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span>
 
 <div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt="C++ tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
+<div class="ico48Link"><a href="/visualstudio/javascript/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt="Python tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>

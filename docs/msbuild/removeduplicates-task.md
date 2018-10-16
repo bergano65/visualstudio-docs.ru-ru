@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 596c066018a5f6f731c4ca0cefbefae458646ec1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153076"
 ---
-# <a name="removeduplicates-task"></a>Задача RemoveDuplicates
+# <a name="removeduplicates-task"></a>RemoveDuplicates - задача
 Удаляет повторяющиеся элементы из указанной коллекции элементов.  
   
 ## <a name="parameters"></a>Параметры  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remarks"></a>Примечания  
  Эта задача не учитывает регистр, а также не сравнивает метаданные элементов при определении повторяющихся элементов.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В этом примере показано использование задачи `RemoveDuplicates` для удаления повторяющихся элементов из коллекции элементов `MyItems`. После завершения задачи коллекция элементов `FilteredItems` содержит один элемент.  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/19/2018
 </Project>  
 ```  
 
- В примере ниже видно, что в задаче `RemoveDuplicates` сохраняется порядок входных элементов. По завершении задачи в коллекции элементов `FilteredItems` содержатся элементы MyFile2.cs, MyFile1.cs и MyFile3.cs в указанном порядке.  
+ В примере ниже видно, что в задаче `RemoveDuplicates` сохраняется порядок входных элементов. По завершении задачи в коллекции элементов `FilteredItems` содержатся элементы *MyFile2.cs*, *MyFile1.cs* и *MyFile3.cs* в указанном порядке.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

@@ -1,5 +1,5 @@
 ---
-title: 'Как: ошибка во время выполнения, функцию отчетов записи | Документы Microsoft'
+title: 'Практическое: написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a29b8ec34a33ea43ede68ea477138cca58e16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057877"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/18/2018
   
 ## <a name="example"></a>Пример  
   
-```  
+```cpp
 #include <stdio.h>  
 int errorhandler = 0;  
 void configureMyErrorFunc(int i)  
@@ -64,7 +65,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ## <a name="example"></a>Пример  
  В следующем примере показана более сложная настраиваемая функция, сообщающая об ошибках. В данном примере оператор переключателя обрабатывает ошибки различных типов, как определено в параметре `reportType` функции `_CrtDbgReportW`. Поскольку `_CrtDbgReportW` заменяется, использовать `_CrtSetReportMode` нельзя. Функция должна обрабатывать выходные данные. Первый аргумент-переменная в этой функции принимает номер ошибки, возникшей во время выполнения. Дополнительные сведения см. в разделе [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
-```  
+```cpp
 #include <windows.h>  
 #include <stdarg.h>  
 #include <rtcapi.h>  
@@ -109,7 +110,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ## <a name="example"></a>Пример  
  Используйте `_RTC_SetErrorFuncW`для установки настраиваемой функции вместо `_CrtDbgReportW`. Дополнительные сведения см. в разделе [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` является предшествующей функцией, сообщающей об ошибках, которую можно сохранить и, при необходимости, восстановить:  
   
-```  
+```cpp
 #include <rtcapi.h>  
 int main()  
 {  

@@ -1,11 +1,11 @@
 ---
-title: "IDispError::GetHelpInfo | Документы Microsoft"
-ms.custom: 
+title: IDispError::GetHelpInfo | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispError.GetHelpInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDispError::GetHelpInfo
 ms.assetid: a146df13-eda4-4e56-8bf0-cf9886a2150f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728014"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Возвращает путь к файлу справки и идентификатор контекста раздела справки, который описывает ее, если это возможно.  

@@ -19,11 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469156"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Вы можете добавить фрагмент в папку установки Visual Studio с помощью кнопки **Импорт** в **диспетчере фрагментов кода** (**Сервис** > **Диспетчер фрагментов кода**).
@@ -33,8 +34,7 @@ ms.lasthandoff: 05/03/2018
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/03/2018
 
 2.  Введите заголовок фрагмента, например "Hello World VB", в элементе **Title**.
 
-3.  Укажите язык фрагмента в атрибуте **Languages** элемента **Code**. Для этого примера используйте значение "VB".
+3.  Укажите язык фрагмента кода в атрибуте **Language** элемента **Code**. Для этого примера используйте значение "VB".
 
 4.  Добавьте какой-нибудь код в раздел **CDATA** внутри элемента **Code**, например:
 
@@ -190,7 +190,7 @@ ms.lasthandoff: 05/03/2018
     </Imports>
     ```
 
-4.  Для объявления литеральной замены для строки подключения SQL добавьте элемент **Declarations** под элементом **Snippet**, а в нем добавьте элемент **Literal** с вложенными элементами для идентификатора, подсказки и значения по умолчанию:
+4.  Для объявления литеральной замены для строки подключения SQL добавьте элемент **Declarations** под элементом **Snippet**, а в него добавьте элемент **Literal** с вложенными элементами для идентификатора, подсказки и значения по умолчанию:
 
     ```xml
     <Declarations>

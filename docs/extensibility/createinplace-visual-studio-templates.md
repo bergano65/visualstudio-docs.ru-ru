@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (шаблоны Visual Studio) | Документы Microsoft
+title: CreateInPlace (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231402"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (шаблоны Visual Studio)
-Указывает, нужно ли создать проект и выполнить замену в указанном расположении или выполнить замену во временном местоположении и сохраните проект в указанном расположении.  
+Указывает, следует ли создать проект и выполнить замену в указанном расположении, или выполнить замену во временном расположении и сохраните проект в указанное расположение.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 <CreateInPlace> true/false </CreateInPlace>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -46,14 +47,14 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true`, либо `false`. Если `true`, создается проект и выполняется замена параметров в расположении, указанном в **новый проект** диалоговое окно. Если `false`, выполняется замена параметров во временном местоположении и проект копируется в указанное расположение.  
+ Этот текст должен быть либо `true`, либо `false`. Если `true`, создается проект и выполняется замена параметров в расположении, указанном в **новый проект** диалоговое окно. Если `false`, выполняется замена параметров в во временную папку и проект копируется в указанное расположение.  
   
 ## <a name="remarks"></a>Примечания  
  `CreateInPlace` — это необязательный элемент. Значение по умолчанию — `true`.  

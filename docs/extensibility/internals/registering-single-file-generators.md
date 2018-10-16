@@ -1,5 +1,5 @@
 ---
-title: Регистрация генераторы одиночных файлов | Документы Microsoft
+title: Регистрация генераторов одного файла | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,20 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9b7d16a9e473028d85540f4447d9981382be0fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0040a31589dd5efb48955d9143cb2febdb9eff02
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495561"
 ---
-# <a name="registering-single-file-generators"></a>Регистрация генераторы одиночных файлов
-Чтобы сделать доступным пользовательский инструмент [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо зарегистрировать его таким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно создать его экземпляр и связывает его с определенным типом проекта.  
+# <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
+Чтобы сделать доступным в пользовательский инструмент [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо зарегистрировать его таким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно создать его экземпляр, который связывается с определенным типом проекта.  
   
 ### <a name="to-register-a-custom-tool"></a>Чтобы зарегистрировать пользовательский инструмент  
   
-1.  Регистрация пользовательского инструмента DLL либо в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] локального реестра или в разделе HKEY_CLASSES_ROOT реестра системы.  
+1.  Либо зарегистрировать настраиваемый инструмент DLL в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] локальный реестр или в системном реестре, в разделе HKEY_CLASSES_ROOT.  
   
-     Например, вот сведения о регистрации для управляемых MSDataSetGenerator пользовательский инструмент, который поставляется вместе с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
+     Например, вот регистрационные данные для управляемого MSDataSetGenerator пользовательский инструмент, который поставляется вместе с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]  
@@ -38,19 +39,19 @@ ms.lasthandoff: 04/16/2018
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive в генераторы\\*GUID* где *GUID* определяется GUID системы проекта конкретного языка или службой. Имя ключа становится программное имя пользовательского средства. Ключ пользовательское средство имеет следующие значения:  
+2.  Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:  
   
     -   (Значение по умолчанию)  
   
-         Необязательный. Предоставляет понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.  
+         Необязательный. Понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.  
   
     -   CLSID  
   
-         Обязательно. Указывает идентификатор библиотеки классов из COM-компонент, реализующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Обязательно. Задает идентификатор для библиотеки классов из COM-компонент, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Обязательно. Указывает ли типы из файлов, созданных этот пользовательский инструмент, становятся доступными для визуальных конструкторов. Значение этого параметра требуется для типов, не доступен для визуальных конструкторов (нуль) 0 или 1 (один) для типов, доступных для визуальных конструкторов.  
+         Обязательно. Указывает ли типы из файлов, созданных этим настраиваемым инструментом становятся доступными для визуальных конструкторов. Значение этого параметра должно быть (нуль) 0 для типов, не доступен для визуальных конструкторов или 1 (один) для типов, доступных для визуальных конструкторов.  
   
     > [!NOTE]
     >  Необходимо зарегистрировать пользовательский инструмент отдельно для каждого языка, для которого требуется пользовательский инструмент доступен.  
@@ -71,6 +72,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
- [Реализация генераторы одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
- [Предоставление типов для визуальных конструкторов](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Введение на BuildManager объект](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [Знакомство с объектом BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

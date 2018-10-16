@@ -1,5 +1,5 @@
 ---
-title: Устаревшие интерфейсы в редакторе | Документы Microsoft
+title: Устаревшие интерфейсы в редакторе | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,37 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64e867430c2ae55f530bdb66844240a887bd5545
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 867bef2ddf1463005e1d6b0d9ca6c508ede97014
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079511"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Устаревшие интерфейсы в редакторе
-Чтобы открыть редактор Visual Studio с устаревшими интерфейсами. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочки*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Код будет более эффективны и могут использовать новые технологии, такие как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).  
+В редакторе Visual Studio доступны из устаревшие интерфейсы. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочек*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Ваш код будет демонстрировать лучшие показатели и использовании новых технологий, таких как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).  
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Адаптация кода прежних версий в редактор](../extensibility/adapting-legacy-code-to-the-editor.md)|Объясняется, как адаптировать код в новый редактор.|  
+|[Адаптировать устаревшего кода в редакторе](../extensibility/adapting-legacy-code-to-the-editor.md)|Объясняется, как адаптировать код в новый редактор.|  
 |[Нового или измененного поведения с помощью редактора адаптеров](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|Объясняет, как поведение редактора адаптеров отличается от более ранних версий редактора.|  
-|[В редакторе Core](../extensibility/inside-the-core-editor.md)|Описывает различные компоненты более ранних версиях редактора.|  
-|[При создании экземпляра базового редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Объясняется, как использовать устаревший API для создания базового редактора.|  
-|[Редактор фабрики](../extensibility/editor-factories.md)|Объясняется, как использовать редактор фабрики с помощью предыдущих версий API.|  
-|[Как: регистрация редактор типов файлов](../extensibility/how-to-register-editor-file-types.md)|Объясняется, как связать расширение имени файла с редактором.|  
-|[Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Объясняется, как создать ядро редактора и связать его расширение имени файла.|  
-|[Как: предоставляют контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)|Описание способов предоставления контекста для редактора.|  
-|[Службы языка и базового редактора](../extensibility/language-services-and-the-core-editor.md)|Описывается взаимодействие между языковой службы и редактор.|  
-|[Доступ к буфер текста с помощью API прежних версий](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Описание способов доступа к буферу текста с помощью предыдущих версий API.|  
-|[Доступ к theText представления с помощью API прежних версий](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Описание способов доступа к представления текста с помощью предыдущих версий API.|  
-|[Настройка окна кода с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)|Описываются способы настройки windows кода с помощью предыдущих версий API.|  
-|[Доступ к слои текста с помощью API прежних версий](../extensibility/accessing-text-layers-by-using-the-legacy-api.md)|Описание способов доступа к различные уровни текста с помощью предыдущих версий API.|  
-|[С помощью текстовых маркеров с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)|Описание способов добавления текстовых маркеров с помощью предыдущих версий API.|  
-|[Настройка меню и редактор элементов управления с помощью API прежних версий](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Объясняется, как настроить редактор элементов управления с помощью предыдущих версий API.|  
-|[Управление отмены и повтора, с помощью API прежних версий](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Объясняется, как управлять отмены и повтора с помощью предыдущих версий API.|  
-|[Как: реализовать поиск и замена механизм](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Объясняется, как управлять поиска и замены с помощью предыдущих версий API.|  
-|[Как: отключить уведомления об изменении файлов](../extensibility/how-to-suppress-file-change-notifications.md)|Объясняется, как отключить уведомления об изменении файлов с помощью предыдущих версий API.|  
-|[Создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)|Описание способов создания специальных редакторов и конструкторов.|  
-|[Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)|Содержит ссылки на документы, посвященные функции, которые обеспечивают возможности настройки в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора, добавляя поддержку языковой службы.|  
-|[Шрифты и цвета](../extensibility/using-fonts-and-colors.md)|Описание способов использования шрифты и цвета с устаревшими интерфейсами.|
+|[В редакторе](../extensibility/inside-the-core-editor.md)|Описывает различные компоненты более ранних версиях редактора.|  
+|[Создать экземпляр базового редактора с помощью предыдущих версий API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Объясняется, как использовать старый API для создания базового редактора.|  
+|[Фабрики редакторов](../extensibility/editor-factories.md)|В этой статье описывается использование фабрик редактора с помощью предыдущих версий API.|  
+|[Практическое: регистрация редактор типов файлов](../extensibility/how-to-register-editor-file-types.md)|Объясняется, как связать расширение имени файла в редакторе.|  
+|[Пошаговое руководство: Создание основной редактор и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Объясняется, как создать основной редактор и связать расширение имени файла к нему.|  
+|[Практическое: предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)|Описание способов предоставления контекста для редактора.|  
+|[Языковые службы и базовым редактором](../extensibility/language-services-and-the-core-editor.md)|Описание взаимодействия между языковой службы и редактор.|  
+|[Доступ к текстового буфера, используя старый API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Объясняется, как получить доступ к текстового буфера, используя старый API.|  
+|[Представление theText доступ с помощью предыдущих версий API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Объясняется, как получить доступ к представление текста с помощью предыдущих версий API.|  
+|[Настраивать код windows с помощью предыдущих версий API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)|Объясняется, как настраивать код windows с помощью предыдущих версий API.|  
+|[Уровни доступа текста с помощью предыдущих версий API](../extensibility/accessing-text-layers-by-using-the-legacy-api.md)|Объясняется, как получить доступ к различных уровней текста с помощью предыдущих версий API.|  
+|[Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)|Описание способов добавления меток текста с помощью предыдущих версий API.|  
+|[Настройка меню и редактор элементов управления с помощью предыдущих версий API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Объясняет, как настраивать элементы управления редактора, используя старый API.|  
+|[Управление отмены и повтора с помощью предыдущих версий API](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Объясняется, как управлять отмены и повтора с помощью предыдущих версий API.|  
+|[Практическое: реализовать найти и заменить механизм](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Объясняется, как управлять поиска и замены с помощью предыдущих версий API.|  
+|[Практическое: отключить уведомления об изменении файла](../extensibility/how-to-suppress-file-change-notifications.md)|Объясняется, как отключить уведомления об изменении файла с помощью предыдущих версий API.|  
+|[Создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)|В этой статье описывается создание специализированных редакторов и конструкторов.|  
+|[Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)|Содержит ссылки на документы о функциях, которые предоставляют возможности настройки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базовым редактором, добавляя поддержку языковой службы.|  
+|[Использовать шрифты и цвета](../extensibility/using-fonts-and-colors.md)|В этой статье описывается использование шрифтов и цветов с устаревшими интерфейсами.|

@@ -1,5 +1,5 @@
 ---
-title: 'Как: создание расширения проекта SharePoint | Документы Microsoft'
+title: 'Практическое: создание расширения проекта SharePoint | Документация Майкрософт'
 ms.custom: ''
 ms.date: 04/28/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a47e7c4fbd78241d52b30ed80ab59eb548ab97d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119441"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>Практическое руководство. Создание расширения проекта SharePoint
+# <a name="how-to-create-a-sharepoint-project-extension"></a>Практическое: создание расширения проекта SharePoint
   Создание расширения проекта, если вы хотите добавить функциональность в любой проект SharePoint, который открыт в Visual Studio. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
 
 ### <a name="to-create-a-project-extension"></a>Создание проекта расширения  
@@ -38,12 +39,12 @@ ms.lasthandoff: 04/16/2018
 
 3.  Создайте класс, реализующий интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.  
 
-4.  Добавить <xref:System.ComponentModel.Composition.ExportAttribute> к классу. Этот атрибут позволяет Visual Studio находить и загружать вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> тип в конструктор атрибута.  
+4.  Добавить <xref:System.ComponentModel.Composition.ExportAttribute> к классу. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> тип конструктору атрибута.  
 
-5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метод помощью членов *projectService* параметра для определения поведения расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейса.  
+5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метода, используйте членами *projectService* параметра для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейс.  
 
 ## <a name="example"></a>Пример  
- В следующем примере кода показано, как для создания простого проекта расширения, который обрабатывает большую часть событий проекта SharePoint, которые определены в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейса. Чтобы протестировать код, создайте проект SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и затем добавить несколько проектов в решении, измените значения свойства проекта, удаления или исключения или проекта. Расширение уведомляет о событиях, написав сообщения **вывода** окна и **список ошибок** окна.  
+ В следующем примере кода показано, как создать модуль простой проект, который обрабатывает большую часть событий проекта SharePoint, которые определяются <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> интерфейс. Чтобы протестировать код, создайте проект SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и затем добавить несколько проектов в решение, измените значения свойства проекта, удаления или исключения или проекта. Расширение уведомляет о событиях, написав сообщения **вывода** окна и **список ошибок** окна.  
 
   ```vb  
     Imports Microsoft.VisualStudio.SharePoint
@@ -187,22 +188,22 @@ ms.lasthandoff: 04/16/2018
   }  
   ```  
 
-В этом примере используется служба проекта SharePoint для записи сообщения для **вывода** окна и **список ошибок** окна. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+В этом примере используется служба проекта SharePoint для записи сообщения в **вывода** окна и **список ошибок** окна. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
 
- Примеры, демонстрирующие способы обработки <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> события, см. [как: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) и [как: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ Примеры, демонстрирующие способ обработки <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> события, см. в разделе [как: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) и [как: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
 
-## <a name="compiling-the-code"></a>Компиляция кода  
- Для этого примера требуются ссылки на следующие сборки:  
+## <a name="compile-the-code"></a>Компиляция кода  
+ В этом примере требуются ссылки на следующие сборки:  
 
 -   Microsoft.VisualStudio.SharePoint  
 
 -   System.ComponentModel.Composition  
 
-## <a name="deploying-the-extension"></a>Развертывание расширения  
- Чтобы развернуть расширение, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывание расширений для средств SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Развертывание расширения  
+ Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [средства развертывания расширений для SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Как: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Как: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Пошаговое руководство. Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [Практическое: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Практическое: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Пошаговое руководство: Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

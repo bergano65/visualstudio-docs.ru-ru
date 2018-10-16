@@ -1,5 +1,5 @@
 ---
-title: Элемент ProjectCollection (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент ProjectCollection (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0336859833762d80cc702e844600ded84dbc5d8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c91c470a9478c7015972be66afe5f41174073047
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637004"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Элемент ProjectCollection (шаблоны Visual Studio)
 Указывает организацию и содержимое многопроектных шаблонов.  
@@ -31,14 +32,14 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <ProjectCollection>  
     <ProjectTemplateLink> ... </ProjectTemplateLink>  
     <SolutionFolder> ... </SolutionFolder>  
 </ProjectCollection>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -46,14 +47,14 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает проекта в многопроектном шаблоне.|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Группирует проекты в многопроектных шаблонах.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
  Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectCollection` Элемент используется для указания проектов содержат в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если атрибут `ProjectName` не существует, имя VSTEMPLATE-файла используется в качестве имени проекта.  
+ В этом примере показан простой корневой многопроектных *.vstemplate* файл. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если `ProjectName` атрибут не существует, имя *.vstemplate* файл используется в качестве имени проекта.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -86,6 +87,6 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)
+ [Практическое: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)

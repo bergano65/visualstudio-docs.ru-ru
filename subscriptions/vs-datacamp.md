@@ -3,18 +3,18 @@ title: Повысьте свои навыки обработки и анализ
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/2018
 ms.topic: Get-Started-Article
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448692"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282420"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -22,44 +22,49 @@ ms.locfileid: "34448692"
 
 Срок действия преимущества DataCamp зависит от подписки Visual Studio.
 
-## <a name="activation-steps"></a>Процедура активации  
+## <a name="activation-steps"></a>Процедура активации
 
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку преимущества DataCamp в категории "Профессиональное развитие" и нажмите кнопку **Активировать**.
-
-    ![Плитка преимущества DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Плитка преимущества DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. На странице DataCamp можно создать учетную запись.  Вы можете ввести адрес электронной почты и пароль либо выбрать вход с помощью существующей учетной записи Facebook, LinkedIn или Google.  Указав данные для входа, нажмите кнопку **Начать работу**.
-
-    ![Создание учетной записи DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Создание учетной записи DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "ОЙ!"  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.  
+    > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "ОЙ!"  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
 
 4. Когда учетная запись будет создана, вы можете выбрать схему обучения.  Возможны следующие значения.
     - Изучение языка R для обработки и анализа данных
     - Начать изучение Python для обработки и анализа данных
     - Развитие навыков обработки и анализа данных
 
-    Чтобы приступить, выберите нужную схему.   
 
-     ![Выбор схемы в DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
+    Чтобы приступить, выберите нужную схему.
+    > [!div class="mx-imgBorder"]
+    > ![Выбор схемы в DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
-5. После выбора схемы обучения вы можете уточнить ее, выбрав цель.  Например, если вы выбрали "Развитие навыков обработки и анализа данных", будут доступны представленные ниже варианты. Выберите вариант или щелкните **Я сомневаюсь.  Покажите все карьерные пути**, чтобы создать более широкую схему. 
+5. После выбора схемы обучения вы можете уточнить ее, выбрав цель.  Например, если вы выбрали "Развитие навыков обработки и анализа данных", будут доступны представленные ниже варианты. Выберите вариант или щелкните **Я сомневаюсь.  Покажите все карьерные пути**, чтобы создать более широкую схему.
+    > [!div class="mx-imgBorder"]
+    > ![Набор навыков обработки и анализа данных в DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
 
-    ![Набор навыков обработки и анализа данных в DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
 
+6. В зависимости от выбранной схемы и параметров вы увидите ряд карьерных путей.  Нажмите кнопку **Регистрация** для выбранного пути.
+    > [!div class="mx-imgBorder"]
+    > ![Карьерный путь в DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
-6. В зависимости от выбранной схемы и параметров вы увидите ряд карьерных путей.  Нажмите кнопку **Регистрация** для выбранного пути. 
+7. После регистрации для прохождения пути откроется первый курс.  Вы увидите учебник, в котором объясняется, как работать с курсом, в том числе переходить по нему и выполнять упражнения.
 
-    ![Карьерный путь в DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+    > [!div class="mx-imgBorder"]
+    > ![Начало работы с DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
-7. После регистрации для прохождения пути откроется первый курс.  Вы увидите учебник, в котором объясняется, как работать с курсом, в том числе переходить по нему и выполнять упражнения.  
+Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [http://www.datacamp.com](http://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**.
 
-    ![Начало работы с DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
-
-Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [http://www.datacamp.com](http://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**. ![Продолжение обучения в DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> [!div class="mx-imgBorder"]   
+> ![Продолжение обучения в DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Право на участие
 
@@ -78,13 +83,14 @@ ms.locfileid: "34448692"
 <sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, Microsoft Valued Partner (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
-Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
     - [Сообщество DataCamp](https://www.datacamp.com/community/tutorials), форумы и руководства.
-    - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.  
+    - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.
     - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 
+-  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

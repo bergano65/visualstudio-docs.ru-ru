@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee84fdab07bd88027dc00be80b1acc009658d8ad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844330"
 ---
 # <a name="just-my-code-threads-view"></a>Только мой код (представление "Потоки")
 При выборе этого параметра вы отфильтруете стек вызовов, чтобы показывать только код и один уровень вызываемых функций.  

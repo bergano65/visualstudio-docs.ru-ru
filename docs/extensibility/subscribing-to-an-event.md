@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141907"
 ---
 # <a name="subscribing-to-an-event"></a>Подписка на событие
 В этом пошаговом руководстве описывается создание окна инструментов, которое реагирует на события в запущенной таблице документов (RDT). Окно инструментов размещается пользовательский элемент управления, реализующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Метод подключает интерфейс к событиям.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255610"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
 Представление профиля содержит отчеты, основанные на текущем видимом временном диапазоне и каналах. Для просмотра подробных сведений для разных подмножеств данных щелкните элементы в условных обозначениях.  

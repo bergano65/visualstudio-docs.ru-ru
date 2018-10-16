@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472036"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Ошибка: У вас разрешения для отслеживания процесса&#39;удостоверение s
 У вас нет разрешения на идентификацию процесса. Это может быть следствием системной конфигурации.  

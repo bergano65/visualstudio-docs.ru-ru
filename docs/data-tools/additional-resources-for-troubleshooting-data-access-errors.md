@@ -1,6 +1,6 @@
 ---
-title: Дополнительные ресурсы для устранения ошибки доступа к данным
-ms.date: 11/04/2016
+title: Данные доступа к форумам
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,36 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089080"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения ошибки доступа к данным
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Устранение ошибок доступа к данным на форумах
 
-На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. Ниже перечислены связанные с данными доступные форумы MSDN.
+На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. Ниже приведены некоторые форумы, связанные с данными на сайте MSDN.
 
- [Элементы управления Windows Forms данных и привязки данных](http://go.microsoft.com/fwlink/?LinkId=160179) форум для вопросов и общих обсуждений проблем доступа к данным в формах Windows Forms.
+- [Элементы управления Windows Forms данных и привязки данных](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [Форум по наборам данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180) форум для вопросов и общих обсуждений проблем, связанных наборов данных.
+- [Форум по наборам данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [ADO.NET Entity Framework и LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) форум для вопросов и общих обсуждений проблем, связанных приложений Entity Framework и LINQ to Entities языка.
+- [ADO.NET Entity Framework и LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [Форум по службам данных WCF](http://go.microsoft.com/fwlink/?LinkId=160181) форум для вопросов и общих обсуждений проблем, связанных служб данных.
+- [Форум по WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [Форум доступа к данным SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) форум для вопросов и общих обсуждений проблем доступа к данным в Microsoft SQL Server.
+- [Форум по доступу к данным SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [Форум LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) форум для вопросов и общих обсуждений проблем, связанных Linq to SQL.
+- [Форум LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [Форум по поставщиков данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) форум для вопросов и общих обсуждений проблем, связанных разные поставщики данных .NET Framework.
+- [Форум по поставщиков данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- Сведения о решении проблем с подключением к SQL Server см. в разделе [Устранение неполадок подключения к SQL Server Database Engine как](http://go.microsoft.com/fwlink/?LinkID=246151).
+Сведения о том, как устранить неполадки подключения к SQL Server, см. в разделе [Устранение неполадок при подключении к ядру СУБД SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>См. также
 

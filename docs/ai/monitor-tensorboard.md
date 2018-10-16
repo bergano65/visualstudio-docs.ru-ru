@@ -1,10 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 49882db50ed60b1e76d5e791251b11a9f7072274
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: bf253a6dcad4ed87c8f028ed9b7e33962027eb75
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281576"
 ---
 # <a name="monitor-with-tensorboard"></a>Отслеживание с помощью TensorBoard
 
@@ -14,6 +15,6 @@ TensorBoard позволяет визуально отслеживать про�
 
     ![Запуск TensorBoard](media\monitor-tensorboard\run-tensorboard.png)
 
-1. Обратите внимание на уменьшение числа ошибок со временем, что означает повышение качества
+1. Обратите внимание на уменьшение числа ошибок со временем, что означает повышение качества.
 
     ![Запуск TensorBoard](media\monitor-tensorboard\tensorboard.png)

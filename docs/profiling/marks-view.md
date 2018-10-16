@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1008f09e7511a26613b6cb5984513c1d049f61ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237631"
 ---
 # <a name="marks-view"></a>Представление меток
 Представление меток указывает выборки и события трассировки событий Windows, вставленные в приложение.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
  Ниже приведены определения столбцов, доступных в представлении меток.  
   
  **Идентификатор метки**  
- Уникальный метки профилирования.  
+ Уникальный идентификатор метки профилирования.  
   
  **Имя метки**  
  Имя события.  

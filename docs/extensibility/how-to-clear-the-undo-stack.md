@@ -1,5 +1,5 @@
 ---
-title: 'Как: очистить стек отмены | Документы Microsoft'
+title: 'Практическое: очистить стек отмены | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370488"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Как: очистить стек отмены
+# <a name="how-to-clear-the-undo-stack"></a>Практическое: очистить стек отмены
 Следующую процедуру ниже объясняется, как очистить стек отмены.  
   
-### <a name="to-clear-the-undo-stack"></a>Чтобы очистить стек отмены  
+## <a name="to-clear-the-undo-stack"></a>Чтобы очистить стек отмены  
   
-1.  Чтобы очистить стек отмены использование [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) метод. Ниже приведен пример этого:  
+1.  Снимите флажок использовать стек отмены [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) метод. Ниже приведен пример этого:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Как: реализации управления отмены](../extensibility/how-to-implement-undo-management.md)
+ [Практическое: реализуйте механизмы управления отменой](../extensibility/how-to-implement-undo-management.md)

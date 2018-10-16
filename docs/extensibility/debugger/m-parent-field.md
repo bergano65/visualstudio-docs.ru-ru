@@ -1,5 +1,5 @@
 ---
-title: m_parent поле | Документы Microsoft
+title: m_parent поле | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c50bb06a7aa87e06768e55849ca1e7c2bd4d1c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2246a846324710cee0cb49913c1debd3bad0436
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231133"
 ---
-# <a name="mparent-field"></a>m_parent поля
+# <a name="mparent-field"></a>поле m_parent
 Резервное поле для <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` свойство.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .field private initonly class System.Threading.Tasks.Task m_parent  
 ```  
   
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="see-also"></a>См. также  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
+title: Расширение закодированных тестов пользовательского интерфейса и записей действий
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,64 +9,25 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9a98481123e26a72a1553d01c29d8e7ee023faaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97d49c44a2ab7b81a0241366ec9cc6e74401d6f5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180494"
 ---
-# <a name="extend-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
+# <a name="extend-coded-ui-tests-and-action-recordings"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий
 
-Платформа тестирования для закодированных пользовательских интерфейсов и записей действий поддерживает не все пользовательские интерфейсы. Возможно, пользовательский интерфейс, который вы хотите протестировать, не поддерживается. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса или запись действия для электронной таблицы [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Тем не менее можно создать собственное расширение для платформы закодированных тестов пользовательского интерфейса, которое будет поддерживать определенный пользовательский интерфейс, используя расширяемость такой платформы. В следующем разделе представлен пример расширения платформы для поддержки создания закодированных тестов пользовательского интерфейса и записей действий для [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Дополнительные сведения о поддерживаемых платформах см. в статье [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
-
-В этом разделе представлено расширение закодированного теста пользовательского интерфейса, которое может записывать и воспроизводить тесты листов Excel. В этом разделе и в комментариях к коду рассматривается каждая часть расширения для разработчиков, которые хотят создать такое расширение.
+Платформа тестирования для закодированных пользовательских интерфейсов и записей действий поддерживает не все пользовательские интерфейсы. Возможно, пользовательский интерфейс, который вы хотите протестировать, не поддерживается. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса или запись действия для электронной таблицы Microsoft Excel. Тем не менее можно создать собственное расширение для платформы закодированных тестов пользовательского интерфейса, которое будет поддерживать определенный пользовательский интерфейс, используя расширяемость такой платформы.
 
 ![Архитектура теста пользовательского интерфейса](../test/media/ui_testarch.png)
 
-## <a name="download-the-sample"></a>Загрузка примера
+## <a name="sample-extension-to-test-microsoft-excel"></a>Пример расширения для тестирования Microsoft Excel
 
-Этот пример состоит из четырех проектов в решении `CodedUIExtensibilitySample.sln`:
-
--   CodedUIextensibilitySample;
-
--   ExcelCodedUIAddInHelper;
-
--   ExcelUICommunicationHelper;
-
--   SampleTestProject.
-
-Скачайте образец из этой [записи блога](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introducing-sample-excel-extension/).
+Эта [публикация блога](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introducing-sample-excel-extension/) содержит ссылку на [пример расширения](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip) для платформы закодированных тестов пользовательского интерфейса. Вы также можете просмотреть всю [серию публикаций блога, посвященную расширяемости закодированных тестов пользовательского интерфейса](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/series-on-coded-ui-test-extensibility/).
 
 > [!NOTE]
-> Образец предназначен для использования с Microsoft Excel 2010. Пример может работать с другими версиями Microsoft Excel, но в настоящее время это не поддерживается.
-
-## <a name="details-about-the-sample"></a>Сведения о примере
-
-В следующих разделах приведены сведения о примере и его структуре.
-
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Надстройка Microsoft Excel: ExcelCodedUIAddinHelper
- Этот проект включает надстройку, которая выполняется в процессе Excel. Краткие сведения о проекте надстройки см. в статье [Пример надстройки Excel для закодированного тестирования пользовательского интерфейса](../test/sample-excel-add-in-for-coded-ui-testing.md).
-
- Дополнительные сведения см. в статье [Walkthrough: Creating Your First VSTO Add-in for Excel](http://msdn.microsoft.com/Library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) (Пошаговое руководство. Создание первой надстройки уровня приложения для Excel).
-
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Взаимодействие с пользовательским интерфейсом Excel: ExcelUIcommunicationHelper
- В этот проект входит `IExcelUICommunication` интерфейс и классы информации, которые используются для передачи данных между платформой закодированных тестов пользовательского интерфейса и Excel. Дополнительные сведения см. в статье [Sample Excel Communicator Interface](../test/sample-excel-communicator-interface.md) (Пример интерфейса Excel Communicator).
-
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Расширение закодированного пользовательского интерфейса: CodedUIExentsibilitySample
- В этот проект входят пользовательские классы, которые используются в тестах листа Excel. Код для каждого из этих классов вполне очевиден. Тем не менее для каждого пользовательского класса представлено краткое описание. Дополнительные сведения см. в статье [Пример расширения закодированного теста пользовательского интерфейса для Excel](../test/sample-coded-ui-test-extension-for-excel.md).
-
-### <a name="deploying-your-add-in-and-extension"></a>Развертывание надстройки и расширения
- После создания всех проектов и объектов запустите предоставленный файл `CopyDrop.bat` от имени администратора. Этот файл копирует DLL- и PDB-файлы `ExcelCodedUIAddinHelper` в следующее расположение:
-
- "`%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\<version number>\UITestExtensionPackages\*.*`", где номер версии может быть 11.0, 12.0 и т. д. в зависимости от используемой версии Visual Studio.
-
- DLL- и PDB-файлы `ExcelUICommunicationHelper` копируются в `"%ProgramFiles(x86)%\Microsoft Visual Studio <version number>\Common7\IDE\PrivateAssemblies"`.
-
- Возможно, понадобится изменить точные пути для копирования, но дополнительные установки не потребуются. На 64-разрядном компьютере используйте 32-разрядную командную строку Visual Studio Enterprise для запуска файла `CopyDrop.bat`.
-
-### <a name="testing-excel-with-the-sampletestproject"></a>Тестирование Excel с помощью SampleTestProject
-
-Тест можно запустить в предоставленном тестовом проекте, где используется определенная версия Excel, которая может у вас отсутствовать, или можно создать собственный тестовый проект и записать свой тест. Дополнительные сведения см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md).
+> Образец предназначен для использования с Microsoft Excel 2010. Он может поддерживать (или не поддерживать) другие версии Microsoft Excel.
 
 ## <a name="see-also"></a>См. также
 
@@ -74,6 +35,6 @@ ms.lasthandoff: 04/26/2018
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
+- [Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
 - [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)
 - [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

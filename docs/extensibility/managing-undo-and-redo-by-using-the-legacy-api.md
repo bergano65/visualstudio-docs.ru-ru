@@ -1,5 +1,5 @@
 ---
-title: Управление отмены и возврата с помощью прежних версий API | Документы Microsoft
+title: Управление отменять и повторять с помощью API прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,27 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93bb65fa9865c5ca7386925d2c145f2acbc0993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be60b3f0dd45a40663770b4b0debe8023e277f32
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638076"
 ---
-# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>Управление отмены и повтора, с помощью API прежних версий
-Редакторы должен поддерживать операции отмены, позволяющих пользователям отменить их последние изменения, если они изменяют код. Большинство редакторов, реализованных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] может иметь отмены, предоставляемый автоматически интегрированной среды разработки (IDE).  
+# <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>Управление отмены и повтора с помощью предыдущих версий API
+Редакторы должен поддерживать операции отмены, которые пользователи могут отменить их последние изменения в том случае, если изменят код. Большинство редакторов, реализованных в разделе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] может иметь возможность отмены изменений, автоматически предоставляемых интегрированной среде разработки (IDE).  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Как: реализации управления отмены](../extensibility/how-to-implement-undo-management.md)  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Практическое: реализуйте механизмы управления отменой](../extensibility/how-to-implement-undo-management.md)  
  Предоставляет возможность отмены изменений для редакторов с одним или несколькими представлениями.  
   
- [Как: очистить стек отмены](../extensibility/how-to-clear-the-undo-stack.md)  
+ [Практическое: очистить стек отмены](../extensibility/how-to-clear-the-undo-stack.md)  
  Описывает, как очистить стек отмены.  
   
- [Как: использовать связанный откат управления](../extensibility/how-to-use-linked-undo-management.md)  
- Включает управление связанный откат в редактор.  
+ [Практическое: использование связанного механизмы управления отменой](../extensibility/how-to-use-linked-undo-management.md)  
+ Включает связанный откат управления в редакторе.  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>  
- Обеспечивает управление отмены для редактора, который поддерживает несколько представлений.  
-  
-## <a name="related-sections"></a>Связанные разделы
+ Предоставляет механизмы управления отменой для редактора, который поддерживает несколько представлений.  

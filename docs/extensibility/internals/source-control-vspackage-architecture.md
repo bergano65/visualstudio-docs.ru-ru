@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131898"
 ---
 # <a name="source-control-vspackage-architecture"></a>Архитектура VSPackage исходного элемента управления
 Пакет системы управления версиями, пакет VSPackage, который использует службы, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет интегрированную среду разработки. В ответ пакета системы управления версиями обеспечивает его функциональные возможности, что в систему управления версиями. Кроме того, пакет управления версиями является альтернативой более универсально, чем для интеграции системы управления версиями в подключаемый модуль системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

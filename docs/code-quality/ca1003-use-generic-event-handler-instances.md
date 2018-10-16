@@ -14,15 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551636"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: используйте экземпляры обработчика универсальных событий
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -31,25 +36,25 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип содержит делегат, возвращающий значение void, сигнатура которого содержит два параметра (первый — объект, а второй тип, который может быть назначен EventArgs) и включенная сборка предназначена [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Тип содержит делегат, возвращающий значение void, сигнатура которого содержит два параметра (первый объект, а второй — тип, который может быть назначен EventArgs) и включенная сборка предназначена [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Описание правила
- Прежде чем [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], для передачи пользовательских сведений в обработчик событий, новый делегат требовалось объявлять, указанный класс, который является производным от <xref:System.EventArgs?displayProperty=fullName> класса. Это характерно для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], который появился <xref:System.EventHandler%601?displayProperty=fullName> делегата. Этот универсальный делегат позволяет любой класс, производный от <xref:System.EventArgs> должна использоваться вместе с обработчик события.
+ Прежде чем [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], чтобы передать пользовательские данные в обработчик событий, новый делегат пришлось объявить, задает класс, который является производным от <xref:System.EventArgs?displayProperty=fullName> класса. Это больше не имеет значение true, если в [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], который появился <xref:System.EventHandler%601?displayProperty=fullName> делегировать. Этот универсальный делегат позволяет любой класс, производный от <xref:System.EventArgs> должна использоваться вместе с обработчик событий.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, удалите делегат и замените его использование с помощью <xref:System.EventHandler%601?displayProperty=fullName> делегата. Если делегат является автоматически [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] компилятора, измените синтаксис в объявлении события для использования <xref:System.EventHandler%601?displayProperty=fullName> делегата.
+ Чтобы устранить нарушение этого правила, удалите делегат и замените его использование с помощью <xref:System.EventHandler%601?displayProperty=fullName> делегировать. Если делегат является автоматически создано [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] компилятора, измените синтаксис объявления событий следует использовать <xref:System.EventHandler%601?displayProperty=fullName> делегировать.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано делегат, который нарушает правило. В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] примере комментариях описано, как изменить пример в соответствии с правилом. Например, C# ниже приведен пример, показывающий измененный код.
+ В следующем примере показано делегат, который нарушает правило. В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] примере комментариев описано, как изменить пример в соответствии с правилом. Например C# ниже приведен пример, показывающий измененный код.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>Пример
- В следующем примере удаляется объявление делегата из предыдущего примера, соответствующий этому правилу, которое заменяет его использование в `ClassThatRaisesEvent` и `ClassThatHandlesEvent` методов с помощью <xref:System.EventHandler%601?displayProperty=fullName> делегата.
+ В следующем примере удаляется объявление делегата из предыдущего примера, соответствующий этому правилу, и заменяет его использование в `ClassThatRaisesEvent` и `ClassThatHandlesEvent` методы с помощью <xref:System.EventHandler%601?displayProperty=fullName> делегировать.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -69,4 +74,5 @@ ms.lasthandoff: 04/26/2018
  [CA1007: используйте универсальные объекты, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>См. также
- [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)
+
+- [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)

@@ -33,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692617"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674289"
 ---
 # <a name="office-project-templates-overview"></a>Общие сведения о шаблонах проектов Office
   Средства разработки для Microsoft Office в Visual Studio включают в себя шаблоны проектов, предназначенные для создания указанных ниже типов решений Office.  
@@ -47,7 +47,7 @@ ms.locfileid: "34692617"
   
 -   [Надстройки VSTO](#AppLevel)  
   
- Подробное сравнение решений Office этих типов см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ Подробное сравнение решений Office этих типов, см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Шаблоны проектов Office доступны в диалоговом окне **Создать проект** в узле **Office** узлов языков программирования **Visual C#** и **Visual Basic** . Каждый шаблон создает для целевого приложения проект с соответствующей конфигурацией, включая ссылки на сборку и параметры отладки.  
   
@@ -84,7 +84,7 @@ ms.locfileid: "34692617"
   
  Сведения о том, как приступить к работе над проектами этих типов, см. в указанных ниже разделах.  
   
--   [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)  
+-   [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)  
   
 -   [Решения Word](../vsto/word-solutions.md)  
   
@@ -135,15 +135,15 @@ ms.locfileid: "34692617"
   
 -   [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Пошаговое руководство: Создание вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
 -   [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Пошаговое руководство: Создание вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
 -   [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>Сравнение шаблонов документов  
+## <a name="document-vs-template-solutions"></a>Документирование и шаблон решения  
  При разработке решения для документа Word или книги Excel следует выбрать оптимальный способ обеспечения доступа к документу для пользователей.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -166,13 +166,13 @@ ms.locfileid: "34692617"
 ## <a name="word-templates"></a>Шаблоны Word  
  Если шаблон Microsoft Office Word имеет расширения управляемого кода, сборка проекта не вызывается, если этот шаблон подключен как глобальный шаблон или загружен из каталога автозагрузки Word. Кроме того, документ не распознает формат шаблона, являющегося частью решения Office.  
   
-## <a name="excel-add-ins-xla-files"></a>Надстройки Excel (XLA-файлы)  
- Проекта Office для создания надстройки VSTO для Excel (XLA-файла) не предусмотрено. Можно сохранить книгу как XLA-файл, но эта операция не поддерживается и не рекомендуется. При сохранении книга, имеющая расширения управляемого кода как **Microsoft Office Excel Add-In (\*.xla)** файл, можно выбрать его в **надстройки** диалоговое окно «», чтобы применить ее к другой книге. В некоторых случаях после применения надстройки VSTO код будет выполняться в целевой книге, но такое решение Office не поддерживается.  
+## <a name="excel-add-ins-xla-files"></a>Надстроек Excel (XLA-файлов)  
+ Нет Office проекта по созданию надстройки VSTO для Excel (*.xla* файла). Можно сохранить книгу как XLA-файл, но эта операция не поддерживается и не рекомендуется. Если вы сохраните книгу, имеющую расширения управляемого кода как **Microsoft Office Excel Add-In (\*.xla)** файл, можно выбрать его в **Add-Ins** диалоговое окно, чтобы применить к другой книге. В некоторых случаях код будет выполняться в целевой книге, после применения надстройки VSTO, но такое решение Office не поддерживается.  
   
 ## <a name="see-also"></a>См. также  
- [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
- [Разработки решений Office](../vsto/developing-office-solutions.md)   
- [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Разработка решений Office](../vsto/developing-office-solutions.md)   
+ [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747871"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Шаг 2. Создание задачи на сложение случайных чисел
 Во второй части этого урока вам предстоит реализовать логику головоломки, добавив арифметические задачи на основе случайных чисел. Также необходимо будет создать метод с именем `StartTheQuiz()`, который проставляет числа для задач и запускает таймер обратного отсчета. Далее в этом уроке вы добавите задачи на вычитание, умножение и деление.
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/28/2018
 
      Обратите внимание, что при вводе точки (.) после слова `randomizer` в коде открывается окно IntelliSense, в котором отображаются все методы объекта Random, которые можно вызвать. Например, IntelliSense указывает метод `Next()`, как показано ниже.
 
-     ![Метод Next](../ide/media/express_randomwhite.png "Express_RandomWhite")Метод Next
+     ![Next method](../ide/media/express_randomwhite.png) Метод Next
 
      При вводе точки после объекта IntelliSense отображает список членов объекта, таких как свойства, методы и события.
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/28/2018
 
      Появляется задача на сложение случайных чисел, как показано на рисунке ниже.
 
-     ![Задача на сложение случайных чисел](../ide/media/express_additionproblem.png "Express_AdditionProblem")Задача на сложение случайных чисел
+     ![Random addition problem](../ide/media/express_additionproblem.png) Задача на сложение случайных чисел
 
      В следующем шаге руководства вам предстоит добавить сумму.
 

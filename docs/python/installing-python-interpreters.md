@@ -1,7 +1,7 @@
 ---
 title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
-ms.date: 02/20/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548973"
 ---
-# <a name="installing-python-interpreters"></a>Установка интерпретаторов Python
+# <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
 По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3, Anaconda 2 и Anaconda 3, как описано в руководстве по [установке](installing-python-support-in-visual-studio.md).
 
@@ -25,23 +26,23 @@ ms.lasthandoff: 05/07/2018
 
 Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
 
-Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (в соответствии с [описанием регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (согласно [описанию регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)). Установки Python обычно находятся в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-разрядная версия) и **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64-разрядная версия), затем в узлах для распределения, таких как **PythonCore** (CPython) и **ContinuumAnalytics** (Anaconda).
 
 Если Visual Studio не сможет обнаружить установленное окружение, см. раздел [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio отображает все известные окружения в окне [Окружения Python](managing-python-environments-in-visual-studio.md) и автоматически обнаруживает обновления для существующих интерпретаторов.
+Visual Studio отображает все известные окружения в окне [**Окружения Python**](managing-python-environments-in-visual-studio.md) и автоматически обнаруживает обновления для существующих интерпретаторов.
 
 | Интерпретатор | Описание: |
 | --- | --- |
-| [CPython](https://www.python.org/) | Собственный и самый используемый интерпретатор доступен в 32- и 64-разрядных версиях (рекомендуется 32-разрядная). Он предоставляет последние возможности языка, максимальную совместимость пакета Python, полную поддержку отладки и взаимодействие с [IPython](http://ipython.org/). См. также статью о [сравнении Python 2 и Python 3](http://wiki.python.org/moin/Python2orPython3). Имейте в виду, что Visual Studio 2015 и более ранние версии не поддерживают Python 3.6 и в них может появиться ошибка "Не поддерживаемая версия Python 3.6". Используйте Python 3.5 или более раннюю версию. |
+| [CPython](https://www.python.org/) | Собственный и самый используемый интерпретатор доступен в 32- и 64-разрядных версиях (рекомендуется 32-разрядная). Он предоставляет последние возможности языка, максимальную совместимость пакета Python, полную поддержку отладки и взаимодействие с [IPython](http://ipython.org/). См. также статью о [сравнении Python 2 и Python 3](https://wiki,python.org/moin/Python2orPython3). Имейте в виду, что Visual Studio 2015 и более ранние версии не поддерживают Python 3.6, и в них может появиться ошибка **Неподдерживаемая версия Python 3.6**. Используйте Python 3.5 или более раннюю версию. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Реализация .NET для Python (доступна 32- и 64-разрядная версия), обеспечивающая взаимодействие с C#, F# и Visual Basic, доступ к API-интерфейсам .NET, стандартную отладку Python (но не отладку в смешанном режиме C++) и отладку в смешанном режиме IronPython и C#. Однако IronPython не поддерживает виртуальные среды. |
 | [Anaconda](https://www.continuum.io) | Открытая платформа для анализа и обработки данных на базе Python, которая включает в себя последнюю версию CPython и большинство пакетов со сложной установкой. Рекомендуем использовать этот интерпретатор, если вы не можете определиться. |
-| [PyPy](http://www.pypy.org/) | Реализация JIT для Python с высокопроизводительной трассировкой, которая хорошо подходит для долго выполняющихся программ и ситуаций, когда вы обнаружили проблемы с производительностью, которые не удается устранить другими способами. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
+| [PyPy](https://www.pypy.org/) | Реализация JIT для Python с высокопроизводительной трассировкой, которая хорошо подходит для долго выполняющихся программ и ситуаций, когда вы обнаружили проблемы с производительностью, которые не удается устранить другими способами. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
 | [Jython](http://www.jython.org/) | Реализация Python на виртуальной машине Java (JVM). Аналогично IronPython, код, выполняемый в Jython, может взаимодействовать с классами и библиотеками Java, но не может использовать многие библиотеки, предназначенные для CPython. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
 
 Сведения о новых способах обнаружения сред Python см. в статье [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (Обнаружение среды PTVS) на сайте github.com.
 
-## <a name="moving-an-interpreter"></a>Перемещение интерпретатора
+## <a name="move-an-interpreter"></a>Перемещение интерпретатора
 
 Если вы переместите существующий интерпретатор в новое расположение с помощью средств файловой системы, Visual Studio не сможет отследить изменение автоматически.
 
@@ -58,8 +59,8 @@ Visual Studio отображает все известные окружения 
 
 ## <a name="see-also"></a>См. также
 
-- [Управление окружениями Python](managing-python-environments-in-visual-studio.md)
+- [Управление средами Python](managing-python-environments-in-visual-studio.md)
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
-- [Использование requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
+- [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
 - [Пути поиска](search-paths.md)
 - [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)

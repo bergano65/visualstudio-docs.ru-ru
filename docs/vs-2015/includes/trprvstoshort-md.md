@@ -1,0 +1,1 @@
+Набор инструментов Visual Studio Tools для Office

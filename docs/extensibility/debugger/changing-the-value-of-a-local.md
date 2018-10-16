@@ -1,5 +1,5 @@
 ---
-title: Изменение значения локального | Документы Microsoft
+title: Изменение значения локальной переменной | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 422d1702f319db6da21892bcaa1bd50adad7909d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 788f496f2afeb3b6392cb165d243a9d83f8ea005
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151077"
 ---
-# <a name="changing-the-value-of-a-local"></a>Изменение значения локального
+# <a name="change-the-value-of-a-local"></a>Изменение значения локальной переменной
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- При вводе нового значения в поле значения **локальные** окна, отладочный пакет передает строку, как типизированные вычислитель выражений (EE). EE оценивает этой строки, которая может содержать простое значение или выражение и сохраняет полученное значение в связанной локальной.  
+ Когда вводится новое значение в поле значения **"Локальные"** окна, размер пакета отладки передает строку, как ввели средству оценки выражений (EE). EE оценивает это строка, которая может содержать простое значение или выражение и сохраняет полученное значение в связанной локальной.  
   
- Это общая схема процесса изменения значения локального:  
+ Это Обзор процесса изменения значения локальной переменной:  
   
-1.  После пользователь вводит новое значение, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) на [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, связанный с локальной.  
+1.  После того как пользователь введет новое значение, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) на [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, связанный с локальной.  
   
 2.  Метод `IDebugProperty2::SetValueAsString` выполняет указанные ниже задачи.  
   
@@ -38,16 +39,16 @@ ms.lasthandoff: 04/16/2018
   
     3.  Преобразует значение в последовательность байтов.  
   
-    4.  Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) перевод значение байтов в памяти, доступ к ним отлаживаемой программы.  
+    4.  Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) расшифровка значения байтов памяти, поэтому отлаживаемой программы можно получить доступ к их.  
   
-3.  Visual Studio обновляет **локальные** отображения (в разделе [отображение локальные](../../extensibility/debugger/displaying-locals.md) подробные сведения).  
+3.  Visual Studio обновляет **"Локальные"** отображения (см. в разделе ["Локальные" Отображение](../../extensibility/debugger/displaying-locals.md) сведения).  
   
- Эта процедура также используется для изменения значения переменной в **Контрольные значения** окна, за исключением его `IDebugProperty2` объект, связанный со значением, используемый вместо локальной `IDebugProperty2` объект, связанный с локальным сам.  
+ Эта процедура также используется для изменения значения переменной в **Watch** окна, но является `IDebugProperty2` объект, связанный со значением локальная переменная, используется вместо `IDebugProperty2` объект, связанный с локальной сам.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Пример реализации изменяющихся значений](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
- В образце MyCEE использует для пошаговый процесс изменения значений.  
+ Использует образец MyCEE для пошаговое описание процесса изменения значений.  
   
 ## <a name="see-also"></a>См. также  
- [Написание выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)

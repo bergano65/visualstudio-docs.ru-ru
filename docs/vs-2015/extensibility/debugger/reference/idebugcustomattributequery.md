@@ -1,0 +1,50 @@
+---
+title: IDebugCustomAttributeQuery | Документация Майкрософт
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- IDebugCustomAttributeQuery interface
+ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
+caps.latest.revision: 8
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b1ffb957f15611562011b7d147a8388f09f11558
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208199"
+---
+# <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+Представляет запрос для настраиваемых атрибутов для метода или типа.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```  
+IDebugCustomAttributeQuery : IUnknown  
+```  
+  
+## <a name="methods"></a>Методы  
+ Этот интерфейс реализует следующие методы:  
+  
+|Метод|Описание|  
+|------------|-----------------|  
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Извлекает настраиваемый атрибут с заданным именем.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Определяет, в указанном определен пользовательский атрибут.|  
+  
+## <a name="requirements"></a>Требования  
+ Заголовок: Sh.h  
+  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
+

@@ -1,5 +1,5 @@
 ---
-title: Справочник по схеме шаблонов Visual Studio | Документы Microsoft
+title: Справочник по схеме шаблонов Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571524"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586343"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Справочник по схеме шаблонов Visual Studio
-Этот раздел содержит информацию об XML-элементах из VSTEMPLATE-файлов — файлов, в которых хранятся метаданные для шаблонов проектов, шаблонов элементов и начальных наборов.
+# <a name="visual-studio-template-schema-reference"></a>Справочник по схеме для Visual Studio шаблон
+Этот раздел содержит сведения о XML-элементы в *.vstemplate* файлы, которые представляют собой файлы, в которых хранятся метаданные для шаблонов проектов, шаблонов элементов и начальных наборов.
 
- Файл vstemplate.xsd можно использовать для проверки пользовательских VSTEMPLATE-файлов. Этот файл находится в... \\ *Папка установки visual Studio*\Xml\Schemas\1033\vstemplate.xsd.
+ Можно использовать *файл vstemplate.xsd* для проверки пользовательских *.vstemplate* файлов. Этот файл находится в *... \\ \<Папка установки visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Элемент|Дочерние элементы|Атрибуты|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Нет|Нет|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Нет|Нет|
 |[ASSEMBLY (шаблон)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[ASSEMBLY (расширение мастера)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -41,7 +41,7 @@ ms.locfileid: "34571524"
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[Описание](../extensibility/description-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
-|[Enablelocationbrowsebutton-элемент](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
+|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
 |[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Папка|name|
 ||[не рекомендуется]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
@@ -51,7 +51,7 @@ ms.locfileid: "34571524"
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
 |[Name](../extensibility/name-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
-|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
+|[Элемент NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Проект](../extensibility/project-element-visual-studio-templates.md)|Папка<br /><br /> ProjectItem|Файл<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
@@ -67,7 +67,7 @@ ms.locfileid: "34571524"
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Версия|
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Пакет|
-|[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
+|[Элемент ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|name|
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|

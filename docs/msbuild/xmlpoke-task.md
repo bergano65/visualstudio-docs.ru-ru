@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3295a5aee03badc52b980183e88f484e0d4bcc3a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231266"
 ---
-# <a name="xmlpoke-task"></a>Задача XmlPoke
+# <a name="xmlpoke-task"></a>XmlPoke - задача
 
 Задает в XML-файле значения, указанные в запросе XPath.
 
@@ -34,14 +35,51 @@ ms.lasthandoff: 05/04/2018
   
 |Параметр|Описание:|
 |---------------|-----------------|
-|`Namespaces`|Необязательный параметр `String` .<br /><br /> Задает пространства имен для префиксов запроса XPath.|
+|`Namespaces`|Необязательный параметр `String` .<br /><br /> Задает пространства имен для префиксов запроса XPath. `Namespaces` — это фрагмент кода XML, состоящий из элементов `Namespace` с атрибутами `Prefix` и `Uri`. Атрибут `Prefix` указывает префикс для привязки к пространству имен, указанному в атрибуте `Uri`. Не используйте пустой `Prefix`.|
 |`Query`|Необязательный параметр `String` .<br /><br /> Указывает запрос XPath.|
 |`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает значение, вставляемое в указанный путь.|
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входные данные XML в виде пути к файлу.|
 
 ## <a name="remarks"></a>Примечания
 
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+
+Ниже приведен файл sample.xml для изменения:
+
+```xml
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
+<Identity Name="Sample.Product " Publisher="CN=1234" Version="1.0.0.0" />
+<mp:PhoneIdentity PhoneProductId="456" PhonePublisherId="0" />
+</Package>
+```
+
+В этом примере, если вы хотите изменить `/Package/mp:PhoneIdentity/PhonePublisherId`, используйте
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Namespace>
+        <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />
+        <Namespace Prefix="mp" Uri="http://schemas.microsoft.com/appx/2014/phone/manifest" />
+        <Namespace Prefix="uap" Uri="http://schemas.microsoft.com/appx/manifest/uap/windows10" />
+    </Namespace>
+</PropertyGroup>
+
+<Target Name="Poke">
+  <XmlPoke
+    XmlInputPath="Sample.xml"
+    Value="MyId"
+    Query="/dn:Package/mp:PhoneIdentity/@PhoneProductId"
+    Namespaces="$(Namespace)"/>
+</Target>
+</Project>
+```
+
+`dn` используется здесь в качестве искусственного префикса пространства имен для пространства имен по умолчанию.
 
 ## <a name="see-also"></a>См. также
 

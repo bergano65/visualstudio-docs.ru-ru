@@ -1,5 +1,5 @@
 ---
-title: Отладчика, в Visual Studio | Документы Microsoft
+title: Отладчика Windows в Visual Studio | Документация Майкрософт
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -10,15 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178310"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения об окнах отладчика в Visual Studio
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
 
-В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При попадании в точку останова и выполнение останавливается, нажмите кнопку **Отладка > Windows**.
+В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. Когда будет достигнута точка останова и выполнение остановится, нажмите кнопку **Отладка > Windows**.
 
 ||||
 |-|-|-|
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/18/2018
 |Стеки вызовов|CTRL+ALT+C|[Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md)|
 |Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|
 |Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|
-|Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Получение запуска отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Получить работу отладку многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|
 |Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
 |Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
@@ -50,4 +51,4 @@ ms.lasthandoff: 04/18/2018
 
 ## <a name="see-also"></a>См. также
 
-[Основы отладки](../debugger/debugger-basics.md)
+[Основы отладки](../debugger/getting-started-with-the-debugger.md)

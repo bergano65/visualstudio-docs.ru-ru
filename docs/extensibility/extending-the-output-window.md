@@ -1,5 +1,5 @@
 ---
-title: Расширение в окне вывода | Документы Microsoft
+title: Расширение окна вывода | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9a8b260c1a3cab126d19f0cedc0c1e5362cf81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635873"
 ---
-# <a name="extending-the-output-window"></a>Расширение в окне вывода
-**Вывода** окна — это набор областей текста для чтения и записи. В Visual Studio есть этих встроенных панелей: **построения**, в какие проекты обмена сообщениями о сборках, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения о интегрированной среды разработки. Проекты получить ссылку на **построения** панели автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса и Visual Studio предоставляет прямой доступ к **Общие** области посредством <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Служба. Помимо встроенных панелей можно создавать и собственные пользовательские панели управления.  
+# <a name="extend-the-output-window"></a>Расширения в окне вывода
+**Вывода** окно — это набор панелей текста для чтения и записи. Visual Studio содержит эти встроенные панели: **построения**, в какие проекты обмена сообщениями о сборках, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения о интегрированной среды разработки. Проекты получить ссылку на **построения** области автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса, а также Visual Studio предлагает прямой доступ к **Общие** области через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Служба. Помимо встроенных панелей можно создать и управлять собственных настраиваемых панелей.  
   
- Можно управлять **вывода** напрямую с помощью окна <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс, который предлагаемых <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> службы, определяет методы для создания, извлечения и уничтожение **вывода** области окна. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс определяет методы для отображения панелей, скрытие области и управление их текст. Альтернативный способ управления **вывода** окно выполняется с помощью <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты в объектной модели автоматизации Visual Studio. Эти объекты инкапсулируют практически все функциональные возможности <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. Кроме того <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объектов добавить некоторые функции более высокого уровня для упрощения перечислить **вывода** области окна и извлечь текст из области.  
+ Вы можете управлять **вывода** непосредственно через окно <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс, который предлагается в <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> службы, определяет методы для создания, извлечения и уничтожение **вывода** области окна. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс определяет методы для отображение панелей, скрытие области и управление им текста. Альтернативный способ управления **вывода** – окно <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты в объектной модели автоматизации Visual Studio. Эти объекты инкапсулировать почти все функциональные возможности <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. Кроме того <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты добавляют некоторые задачу обеспечения высокоуровневой функциональности, чтобы упростить для перечисления **вывода** области окна и извлечение текста из области.  
   
-## <a name="creating-an-extension-that-uses-the-output-pane"></a>Создание расширения, использующего области вывода  
- Можно создать расширение, которое проверяет различные аспекты области вывода.  
+## <a name="create-an-extension-that-uses-the-output-pane"></a>Создайте расширение, которое использует область вывода  
+ Можно создать расширение, которое выполняет различные аспекты области вывода.  
   
-1.  Создайте проект VSIX с именем `TestOutput` с помощью команды меню с именем **TestOutput**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Создайте проект VSIX с именем `TestOutput` с помощью команды меню с именем **TestOutput**. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Добавьте следующие ссылки:  
   
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
     2.  EnvDTE80  
   
-3.  В TestOutput.cs, добавьте следующий код с помощью инструкции:  
+3.  В *TestOutput.cs*, добавьте следующий оператор using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  В TestOutput.cs удалите метод ShowMessageBox. Добавьте следующие заглушки метода:  
+4.  В *TestOutput.cs*, удалить `ShowMessageBox` метод. Добавьте следующие заглушку метода:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
   
-5.  В конструкторе TestOutput измените обработчик команд на OutputCommandHandler. Вот часть, которая добавляет команды:  
+5.  В конструкторе TestOutput измените обработчик команд для OutputCommandHandler. Вот часть, которая добавляет команды:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
   
-6.  В следующих разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Может вызывать эти методы тело метода OutputCommandHandler(). Например следующий код добавляет метод CreatePane(), приведенные в следующем разделе.  
+6.  В следующих разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Можно вызвать эти методы в теле `OutputCommandHandler()` метод. Например, следующий код добавляет `CreatePane()` метода, получая в следующем разделе.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -72,8 +73,8 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
   
-## <a name="creating-an-output-window-with-ivsoutputwindow"></a>Создание с IVsOutputWindow окно вывода  
- В этом примере показано, как создать новую **вывода** область окна с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> интерфейса.  
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>Создать окно вывода с IVsOutputWindow  
+ В этом примере показано, как создать новую **вывода** область окна с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> интерфейс.  
   
 ```csharp  
 void CreatePane(Guid paneGuid, string title,   
@@ -97,9 +98,9 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- При добавлении этого метода расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите **вывода** окна с заголовком, которое говорит **Показать выходные данные из: CreatedPane** и слова **это в области создания** в самой области.  
+ Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды вы должны увидеть **выходные данные** окно с заголовком, — говорит **Показать выходные данные из: CreatedPane** и слова **это в области создания** в самой области.  
   
-## <a name="creating-an-output-window-with-outputwindow"></a>Создание с OutputWindow окно вывода  
+## <a name="create-an-output-window-with-outputwindow"></a>Создать окно вывода с OutputWindow  
  В этом примере показано, как создать **вывода** область окна с помощью <xref:EnvDTE.OutputWindow> объекта.  
   
 ```csharp  
@@ -122,12 +123,12 @@ void CreatePane(string title)
 }  
 ```  
   
- Несмотря на то что <xref:EnvDTE.OutputWindowPanes> коллекции позволяет получать **вывода** область окна по заголовку, названия области не гарантируется уникальность. Когда вы сомневаюсь уникальность заголовок, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> метод для извлечения области правильный по его идентификатору GUID.  
+ Несмотря на то что <xref:EnvDTE.OutputWindowPanes> коллекции позволяет извлекать **вывода** области окна по его названию, названия панели не гарантируется уникальность. Когда вы сомневаюсь, уникальность заголовок, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> метод для извлечения области правильный по его идентификатору GUID.  
   
- Если добавить этот метод расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите в окне вывода с заголовком, которое говорит **Показать выходные данные от: DTEPane** и слова **добавлена панель DTE** в самой области.  
+ Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите окно вывода с заголовком, — говорит **Показать выходные данные из: DTEPane** и слова **добавлены области DTE** в самой области.  
   
-## <a name="deleting-an-output-window"></a>Удаление окно вывода  
- В этом примере показано, как удалить **вывода** области окна.  
+## <a name="delete-an-output-window"></a>Удалить окно вывода  
+ В этом примере показан способ удаления **вывода** область окна.  
   
 ```csharp  
 void DeletePane(Guid paneGuid)  
@@ -149,10 +150,10 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- При добавлении этого метода расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите в окне вывода с заголовком, которое говорит **Показать выходные данные от: Новая панель** и слова **добавлены созданные панели** в самой области. Если щелкнуть **TestOutput вызова** команду еще раз, удаляется области.  
+ Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите окно вывода с заголовком, — говорит **Показать выходные данные из: Новая панель** и слова **добавлены созданные панели** в самой области. Если щелкнуть **вызова TestOutput** команду еще раз, область удаляется.  
   
-## <a name="getting-the-general-pane-of-the-output-window"></a>Получение области Основные в окне вывода  
- В этом примере показано, как получить встроенной **Общие** области **вывода** окна.  
+## <a name="get-the-general-pane-of-the-output-window"></a>Получение области "Общие" окна вывода  
+ В этом примере показано, как получить встроенную **Общие** области **вывода** окна.  
   
 ```csharp  
 void GetGeneralPane()  
@@ -162,10 +163,10 @@ void GetGeneralPane()
 }  
 ```  
   
- При добавлении этого метода расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы должны увидеть **выходные данные** в окне отображаются слова **найти общие область** в области.  
+ Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите, что **выходные данные** окне отображаются слова **найти общие панель** в области.  
   
-## <a name="getting-the-build-pane-of-the-output-window"></a>Получение области построения в окне вывода  
- В этом примере показано, как найти в области построения и записи в файл. Поскольку по умолчанию не активирован в области построения, он активируется также.  
+## <a name="get-the-build-pane-of-the-output-window"></a>Получение области построения окна вывода  
+ В этом примере показано, как найти **построения** области и записи в него. Так как **построения** области не активирована по умолчанию, он активируется также.  
   
 ```csharp  
 void OutputTaskItemStringExExample(string buildMessage)  

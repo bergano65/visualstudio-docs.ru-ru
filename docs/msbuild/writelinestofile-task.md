@@ -20,17 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f321eadf4fa02d55e869dcc0d9c93b637a2d3ac3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341814"
 ---
-# <a name="writelinestofile-task"></a>Задача WriteLinesToFile
+# <a name="writelinestofile-task"></a>WriteLinesToFile - задача
 Записывает пути указанных элементов в заданный текстовый файл.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `WriteLinestoFile`.  
+ В следующей таблице приводятся параметры задачи `WriteLinestoFile` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remarks"></a>Примечания  
  Если `Overwrite` имеет значение `true`, создается файл, в него записывается содержимое, а затем файл закрывается. Если целевой файл уже существует, он будет переопределен. Если `Overwrite` имеет значение `false`, содержимое добавляется к файлу. Если конечный файл не существует, он создается.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В этом примере задача `WriteLinesToFile` используется для записи путей к элементам из коллекции `MyItems` в файл, указанный в коллекции элементов `MyTextFile`.  
@@ -64,6 +65,31 @@ ms.lasthandoff: 04/19/2018
     </Target>  
   
 </Project>  
+```
+
+В этом примере свойство с внедренными символами новой строки используется для записи текстового файла, содержащего несколько строк. Если запись в `Lines` содержит внедренные символы новой строки, новые строки включаются в выходной файл. Таким образом можно ссылаться на многострочные свойства.
+
+```xml  
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="WriteLaunchers" AfterTargets="CopyFilesToOutputDirectory">
+      <PropertyGroup>
+        <LauncherCmd>
+@ECHO OFF
+dotnet %~dp0$(AssemblyName).dll %*
+        </LauncherCmd>
+      </PropertyGroup>
+
+      <WriteLinesToFile
+        File="$(OutputPath)$(AssemblyName).cmd"
+        Overwrite="true"
+        Lines="$(LauncherCmd)" />
+  </Target>
+</Project>
 ```  
   
 ## <a name="see-also"></a>См. также  

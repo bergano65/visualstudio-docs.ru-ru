@@ -1,21 +1,22 @@
 ---
-title: Создание заглушек для методов модульного тестирования в Visual Studio
+title: Создание заглушек методов для модульных тестов
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c8f0f0aeab7256c15c423678de2cdc7e88b1eb2
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135553"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
@@ -31,9 +32,11 @@ ms.lasthandoff: 04/26/2018
 
 * является расширяемой и поддерживает выдачу тестов в формате MSTest, MSTest V2, NUnit, xUnit.
 
+* Еще не доступен в проектах .NET Core.
+
 ## <a name="get-started"></a>Начало работы
 
-Чтобы приступить к работе, выберите метод, тип или пространство имен в редакторе кода в проекте, которые нужно протестировать, откройте контекстное меню и выберите **Создать модульные тесты**. При этом открывается диалоговое окно **Создать модульные тесты**, где можно выбрать параметры для новых модульных тестов.
+Чтобы приступить к работе, выберите метод, тип или пространство имен в редакторе кода в проекте, которые нужно протестировать, откройте контекстное меню и выберите **Создать модульные тесты**. Открывается диалоговое окно **Создать модульные тесты**, где можно выбрать параметры для новых модульных тестов.
 
 ![Использование команды "Создать модульные тесты"](media/createunittestcommand.png)
 

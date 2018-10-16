@@ -1,5 +1,5 @@
 ---
-title: 'Как: создание расширения элемента проекта SharePoint | Документы Microsoft'
+title: 'Практическое: создание расширения элемента проекта SharePoint | Документация Майкрософт'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b556bd47f35bf9c346159690925f854587e1178
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119874"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Практическое руководство. Создание расширения элемента проекта SharePoint
-  Создание расширения элемента проекта, если вы хотите добавить функциональные возможности для элемента проекта SharePoint, который уже установлен в Visual Studio. Дополнительные сведения см. в разделе [расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md).  
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Практическое: создание расширения элемента проекта SharePoint
+  Создание расширения элемента проекта, если вы хотите добавить функциональные возможности для элемента проекта SharePoint, который уже установлен в Visual Studio. Дополнительные сведения см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).  
   
 ### <a name="to-create-a-project-item-extension"></a>Создание расширения элемента проекта  
   
@@ -38,34 +39,34 @@ ms.lasthandoff: 04/16/2018
   
 3.  Создайте класс, реализующий интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>.  
   
-4.  Добавьте в класс следующие атрибуты:  
+4.  Добавьте следующие атрибуты к классу:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Этот атрибут позволяет Visual Studio находить и загружать вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> тип в конструктор атрибута.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> тип конструктору атрибута.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. В расширение элемента проекта этот атрибут определяет элемент проекта, который требуется расширить. Передайте идентификатор элемента проекта в конструктор атрибута. Список идентификаторов элементов проекта, которые входят в состав Visual Studio см. в разделе [расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md).  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. В расширение элемента проекта этот атрибут определяет элемент проекта, который требуется расширить. Идентификатор элемента проекта, передайте конструктору атрибута. Список идентификаторов элементов проекта, которые входят в состав Visual Studio, см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).  
   
-5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод помощью членов *изменить* параметра для определения поведения расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> интерфейсов. Для доступа к экземпляр типа элемента проекта, расширении, обработку <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события, такие как <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
+5.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метода, используйте членами *параметра* для определения поведения вашего расширения. Этот параметр является <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объект, предоставляющий доступ к событиям, определенным в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> интерфейсов. Для доступа к определенного экземпляра типа элемента проекта, вы расширяете, обработку <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события, такие как <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода демонстрируется создание простого расширения для элемента проекта приемника событий. Каждый раз пользователь добавляет элемент проекта приемника событий в проект SharePoint, это расширение записывает сообщение в **вывода** окна и **список ошибок** окна.  
+ В следующем примере кода показано, как создать простое расширение для элемента проекта приемника событий. Каждый раз пользователь добавляет элемент проекта приемника событий в проект SharePoint, это расширение записывает сообщение **вывода** окна и **список ошибок** окна.  
   
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]  
   
- В этом примере используется служба проекта SharePoint для записи сообщения для **вывода** окна и **список ошибок** окна. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+ В этом примере используется служба проекта SharePoint для записи сообщения в **вывода** окна и **список ошибок** окна. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
- Для этого примера требуются ссылки на следующие сборки:  
+## <a name="compile-the-code"></a>Компиляция кода  
+ В этом примере требуются ссылки на следующие сборки:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>Развертывание расширения  
- Чтобы развернуть расширение, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывание расширений для средств SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Развертывание расширения  
+ Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
- [Пошаговое руководство. Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
+ [Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
   
   

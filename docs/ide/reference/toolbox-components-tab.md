@@ -4,6 +4,10 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
+f1_keywords:
+- VS.CHOOSEITEMS.FrameworkComponents
+- VS.CHOOSEITEMS.COMComponents
+- VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
@@ -11,80 +15,82 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a05ea5b06e985a21fbe45882ccfb36bfe194034
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6365ebc9c44d5d453e04a3579d1b87d766413f
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924321"
 ---
-# <a name="toolbox-components-tab"></a>Вкладка "Компоненты", панель элементов
+# <a name="toolbox-components-tab"></a>Панель элементов, вкладка "Компоненты"
 
-Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C#. В дополнение к компонентам .NET Framework, которые входят в состав Visual Studio (например, <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>), на этой вкладке можно добавить собственные или сторонние компоненты.
+Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C# для Windows Forms. В дополнение к компонентам .NET Framework, которые входят в состав Visual Studio (например, <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>), на этой вкладке можно добавить собственные или сторонние компоненты.
 
- Чтобы отобразить эту вкладку, в меню **Вид** выберите пункт **Панель элементов**. В **панели элементов** выберите вкладку **Компоненты**.
+Чтобы отобразить эту вкладку, откройте конструктор Windows Forms. Выберите **Представление** > **Панель элементов**. На **панели элементов** выберите вкладку **Компоненты**.
 
- **BackgroundWorker**
+## <a name="components"></a>Компоненты
 
- Создает экземпляр компонента `System.ComponentModel.BackgroundWorker`, который может выполнять операцию в отдельном выделенном потоке.
+**BackgroundWorker**
 
- **DirectoryEntry**
+Создает экземпляр компонента <xref:System.ComponentModel.BackgroundWorker>, который может выполнять операцию в отдельном выделенном потоке. Дополнительную информацию см. в разделе [Компонент BackgroundWorker](/dotnet/framework/winforms/controls/backgroundworker-component).
 
- Создает экземпляр компонента <xref:System.DirectoryServices.DirectoryEntry>, который инкапсулирует узел или объект в иерархии Active Directory и может использоваться для взаимодействия с поставщиками служб Active Directory.
+**DirectoryEntry**
 
- **DirectorySearcher**
+Создает экземпляр компонента <xref:System.DirectoryServices.DirectoryEntry>, который инкапсулирует узел или объект в иерархии Active Directory и может использоваться для взаимодействия с поставщиками служб Active Directory.
 
- Создает экземпляр компонента <xref:System.DirectoryServices.DirectorySearcher>, который можно использовать для выполнения запросов к Active Directory.
+**DirectorySearcher**
 
- **ErrorProvider**
+Создает экземпляр компонента <xref:System.DirectoryServices.DirectorySearcher>, который можно использовать для выполнения запросов к Active Directory.
 
- Создает экземпляр компонента `System.Windows.Forms.ErrorProvider`, который указывает конечному пользователю, что с элементом управления в форме связана ошибка.
+**ErrorProvider**
 
- **EventLog**
+Создает экземпляр компонента <xref:System.Windows.Forms.ErrorProvider>, который указывает конечному пользователю, что с элементом управления в форме связана ошибка. Дополнительную информацию см. в разделе [Компонент ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
- Создает экземпляр компонента <xref:System.Diagnostics.EventLog>, который можно использовать для взаимодействия с системой и пользовательскими журналами событий, включая запись событий в журнал и чтения данных журнала.
+**EventLog**
 
- **FileSystemWatcher**
+Создает экземпляр компонента <xref:System.Diagnostics.EventLog>, который можно использовать для взаимодействия с системой и пользовательскими журналами событий, включая запись событий в журнал и чтения данных журнала.
 
- Создает экземпляр компонента <xref:System.IO.FileSystemWatcher>, который можно использовать для отслеживания изменений в любом каталоге или файле, к которому имеется доступ.
+**FileSystemWatcher**
 
- **HelpProvider**
+Создает экземпляр компонента <xref:System.IO.FileSystemWatcher>, который можно использовать для отслеживания изменений в любом каталоге или файле, к которому имеется доступ.
 
- Создает экземпляр компонента `System.Windows.Forms.HelpProvider`, который обеспечивает для элементов управления всплывающее окно справки или окно оперативной справки.
+**HelpProvider**
 
- **ImageList**
+Создает экземпляр компонента <xref:System.Windows.Forms.HelpProvider>, который обеспечивает для элементов управления всплывающее окно справки или окно оперативной справки. Дополнительную информацию см. в разделе [Компонент HelpProvider](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
- Создает экземпляр компонента `System.Windows.Forms.ImageList`, который предоставляет методы для управления коллекцией объектов `System.Drawing.Image`.
+**ImageList**
 
- **MessageQueue**
+Создает экземпляр компонента <xref:System.Windows.Forms.ImageList>, который предоставляет методы для управления коллекцией объектов <xref:System.Drawing.Image>. Дополнительную информацию см. в разделе [Компонент ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
- Создает экземпляр компонента <xref:System.Messaging.MessageQueue>, который можно использовать для взаимодействия с очередями сообщений, включая чтение сообщений из очередей и запись их туда, обработка транзакций и выполнение задач администрирования очередей.
+**MessageQueue**
 
- **PerformanceCounter**
+Создает экземпляр компонента <xref:System.Messaging.MessageQueue>, который можно использовать для взаимодействия с очередями сообщений, включая чтение сообщений из очередей и запись их туда, обработка транзакций и выполнение задач администрирования очередей.
 
- Создает экземпляр компонента <xref:System.Diagnostics.PerformanceCounter>, который можно использовать для взаимодействия со счетчиками производительности Windows, включая создание новых категорий и экземпляров, чтения значений из счетчиков и выполнения вычислений на основе данных счетчиков.
+**PerformanceCounter**
 
- **Process**
+Создает экземпляр компонента <xref:System.Diagnostics.PerformanceCounter>, который можно использовать для взаимодействия со счетчиками производительности Windows, включая создание новых категорий и экземпляров, чтения значений из счетчиков и выполнения вычислений на основе данных счетчиков.
 
- Создает экземпляр компонента <xref:System.Diagnostics.Process>, который можно использовать для остановки, запуска и изменения данных, связанных с процессами в системе.
+**Process**
 
- **SerialPort**
+Создает экземпляр компонента <xref:System.Diagnostics.Process>, который можно использовать для остановки, запуска и изменения данных, связанных с процессами в системе.
 
- Создает экземпляр компонента `System.IO.Ports.SerialPort`, который предоставляет средства для синхронного и управляемого событиями ввода-вывода, доступа к состоянию подключения-отключения устройства, а также для доступа к свойствам драйвера последовательного порта.
+**SerialPort**
 
- **ServiceController**
+Создает экземпляр компонента <xref:System.IO.Ports.SerialPort>, который предоставляет средства для синхронного и управляемого событиями ввода-вывода, доступа к состоянию подключения-отключения устройства, а также для доступа к свойствам драйвера последовательного порта.
 
- Создает экземпляр компонента <xref:System.ServiceProcess.ServiceController>, который можно использовать для управления существующими службами, включая запуск и остановку служб, а также передачу им команд.
+**ServiceController**
 
- **Таймер**
+Создает экземпляр компонента <xref:System.ServiceProcess.ServiceController>, который можно использовать для управления существующими службами, включая запуск и остановку служб, а также передачу им команд.
 
- Создает экземпляр компонента <xref:System.Windows.Forms.Timer>, который можно использовать для добавления функций на основе времени для Windows-приложений. Дополнительную информацию см. в разделе [Компонент таймера](/dotnet/framework/winforms/controls/timer-component-windows-forms).
+**Таймер**
+
+Создает экземпляр компонента <xref:System.Windows.Forms.Timer>, который можно использовать для добавления функций на основе времени для Windows-приложений. Дополнительную информацию см. в разделе [Компонент Timer](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
 > [!NOTE]
 > Существует также системный <xref:System.Timers.Timer>, который можно добавить на **панель элементов**. Этот компонент <xref:System.Timers.Timer> оптимизирован для серверных приложений и Windows Forms. <xref:System.Windows.Forms.Timer> лучше всего подходит для использования в формах Windows Forms.
 
-
 ## <a name="see-also"></a>См. также
 
-- [Программирование с использованием компонентов](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
-- [Пошаговые руководства программирования компонентов](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)
+- [Элементы управления для использования в Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Выбор элементов панели элементов — компоненты WPF](choose-toolbox-items-wpf-components.md)
 - [Панель элементов](../../ide/reference/toolbox.md)

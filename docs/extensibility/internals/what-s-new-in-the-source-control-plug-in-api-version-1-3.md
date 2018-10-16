@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145013"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Что&#39;новые возможности источника управления подключаемого модуля API версии 1.3
 API подключаемых модулей управления исходной версии 1.3 появились следующие новые функции для предоставления более сложных элементов управления.  

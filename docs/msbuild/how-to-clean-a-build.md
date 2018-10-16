@@ -15,31 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079126"
 ---
-# <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка построения
+# <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка сборки
 При очистке сборки все промежуточные и выходные файлы удаляются, а остаются только файлы проекта и компонентов. Из файлов проекта и компонентов можно собрать новые экземпляры промежуточных и выходных файлов. Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], включает в себя задачу [Exec](../msbuild/exec-task.md), позволяющую запускать системные команды. Дополнительные сведения о библиотеке задач см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
   
-## <a name="creating-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
- По умолчанию файл EXE, создаваемый при компиляции проекта, помещается в один каталог с файлами проекта и исходными файлами. Однако чаще выходные элементы создаются в отдельном каталоге.  
+## <a name="create-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
+ По умолчанию файл *EXE*, создаваемый при компиляции проекта, помещается в один каталог с файлами проекта и исходными файлами. Однако чаще выходные элементы создаются в отдельном каталоге.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
   
-1.  Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем `BuiltApp` в каталоге, содержащем файлы проекта и исходные файлы:  
+1.  Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем *BuiltApp* в каталоге, содержащем файлы проекта и исходные файлы:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>Удаление выходных элементов  
+## <a name="remove-the-output-items"></a>Удаление выходных элементов  
  Прежде чем создавать экземпляры промежуточных и выходных файлов, попробуйте очистить все предыдущие экземпляры промежуточных и выходных файлов. Используйте задачу [RemoveDir](../msbuild/removedir-task.md), чтобы удалить с диска каталог и все содержащиеся в нем файлы и каталоги.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745715"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282889"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 
@@ -27,13 +27,13 @@ ms.locfileid: "34745715"
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных
 
-1. В меню **Файл** последовательно выберите пункты **Создать**> **Проект**.
+1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
 1. В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic**, разверните узел **Классическое приложение Windows** и выберите шаблон **Приложение WPF**.
 
 1. Укажите **BindingTest** в качестве имени проекта и нажмите кнопку **ОК**.
 
-1. Откройте файл MainWindow.xaml.cs (или MainWindow.xaml.vb) и добавьте следующий код. В C# добавьте код в пространстве имен `BindingTest` (перед последней закрывающей скобкой в файле). В Visual Basic просто добавьте новый класс.
+1. Откройте файл **MainWindow.xaml.cs** (или **MainWindow.xaml.vb**) и добавьте приведенный ниже код. В C# добавьте код в пространстве имен `BindingTest` (перед последней закрывающей скобкой в файле). В Visual Basic просто добавьте новый класс.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ ms.locfileid: "34745715"
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Привязка свойства ItemCount к элементу управления TextBlock
 
-1. В обозревателе решений откройте контекстное меню файла MainWindow.xaml и выберите **Конструктор представлений**.
+1. В обозревателе решений откройте контекстное меню файла **MainWindow.xaml** и выберите **Конструктор представлений**.
 
 1. На панели элементов выберите элемент управления [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), чтобы добавить его на форму.
 
@@ -102,4 +102,4 @@ ms.locfileid: "34745715"
 ## <a name="see-also"></a>См. также
 
 - [Создание пользовательского интерфейса с помощью конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Диалоговое окно "Добавление конвертера значений"](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Диалоговое окно "Добавление конвертера значений"](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

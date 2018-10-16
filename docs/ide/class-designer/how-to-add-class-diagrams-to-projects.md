@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901302"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Практическое руководство. Добавление схем классов в проекты
 
@@ -58,11 +59,14 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>Добавление диаграммы классов на основе существующих типов
 
-В **обозревателе решений** откройте контекстное меню файла класса и выберите пункт **Просмотр схемы класса**.
+В **обозревателе решений** откройте контекстное меню файла класса, щелкнув правой кнопкой мыши, и выберите пункт **Перейти к диаграмме классов**.
 
 - или -
 
 В **представлении классов** откройте контекстное меню пространства имен или типа и выберите пункт **Просмотр схемы класса**.
+
+> [!TIP]
+> Если **представление классов** не открыто, откройте его из меню **Вид**.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Отображение содержимого всего проекта в схеме классов
 

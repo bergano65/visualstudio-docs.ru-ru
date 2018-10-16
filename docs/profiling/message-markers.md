@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0ff0bfb8f4b7abf3abc7f31204d963c1f0a68b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 72b93d497a68ba09237c28fc56159c379b50c9c1
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254567"
 ---
 # <a name="message-markers"></a>Маркеры сообщений
 Маркер сообщения представляет выходные данные журнала. Сообщение — это строка, созданная конкретным потоком в определенное время. Сообщения можно экспортировать в текстовый файл для использования с другими средствами. Наведите указатель на сообщении в визуализаторе параллелизма, чтобы просмотреть строку сообщения. Все маркеры сообщений можно просмотреть в [отчете по маркерам](../profiling/markers-report.md).  На следующем рисунке показан маркер сообщения.  

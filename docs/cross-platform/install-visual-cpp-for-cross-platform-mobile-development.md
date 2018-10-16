@@ -12,20 +12,20 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454705"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251911"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++
 
-В Visual Studio можно создавать классические приложения Windows, приложения универсальной платформы Windows (UWP), приложений Linux и теперь приложения iOS и Android на языке C++. Рабочая нагрузка **Разработка мобильных приложений на языке C++** — это набор устанавливаемых компонентов в Visual Studio, который содержит шаблоны кроссплатформенных приложений iOS, Android и UWP. Вместе с ним устанавливаются кроссплатформенные средства и пакеты SDK, что позволяет быстро приступить к работе, не ища, не скачивая и не настраивая их самостоятельно. С помощью этих средств в Visual Studio можно быстро создавать, редактировать, отлаживать и тестировать кроссплатформенные проекты. В этом разделе описывается установка средств и программного обеспечения сторонних разработчиков, необходимых для разработки кроссплатформенных приложений на языке C++ с помощью Visual Studio. Обзор см. на странице [What’s New in Xcode 9](https://go.microsoft.com/fwlink/p/?LinkId=536383) (Новые возможности Xcode 9).
+В Visual Studio можно создавать классические приложения Windows, приложения универсальной платформы Windows (UWP), приложений Linux и теперь приложения iOS и Android на языке C++. Рабочая нагрузка **Разработка мобильных приложений на языке C++** — это набор устанавливаемых компонентов в Visual Studio, который содержит шаблоны кроссплатформенных приложений iOS, Android и UWP. Вместе с ним устанавливаются кроссплатформенные средства и пакеты SDK, что позволяет быстро приступить к работе, не ища, не скачивая и не настраивая их самостоятельно. С помощью этих средств в Visual Studio можно быстро создавать, редактировать, отлаживать и тестировать кроссплатформенные проекты. В этом разделе описывается установка средств и программного обеспечения сторонних разработчиков, необходимых для разработки кроссплатформенных приложений на языке C++ с помощью Visual Studio. Обзор см. на странице [Кроссплатформенная разработка для мобильных устройств на Visual C++](https://go.microsoft.com/fwlink/p/?LinkId=536383).
 
 ## <a name="requirements"></a>Требования
 
-- Требования для установки семейства продуктов Microsoft Visual Studio см. в [этой статье](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+- Требования для установки семейства продуктов Visual Studio см. в [этой статье](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Если вы используете Windows 7 или Windows Server 2008 R2, вы можете писать код для классических приложений Windows, приложений и библиотек Android Native Activity, а также приложений и библиотек кода для iOS, но не для приложений Windows Phone и UWP.
@@ -40,7 +40,7 @@ ms.locfileid: "34454705"
 
 ## <a name="get-the-tools"></a>Получение инструментов
 
-Рабочая нагрузка "Разработка мобильных приложений на языке C++" доступна в выпусках Visual Studio Community, Professional и Enterprise. Чтобы получить Visual Studio, перейдите на страницу [скачиваемых файлов этого средства](https://go.microsoft.com/fwlink/p/?linkid=517106). Средства разработки кроссплатформенных мобильных приложений доступны в Visual Studio 2015 с обновлением 2 и более поздних версиях.
+Рабочая нагрузка "Разработка мобильных приложений на языке C++" доступна в выпусках Visual Studio Community, Professional и Enterprise. Чтобы получить Visual Studio, перейдите на страницу [скачиваемых файлов этого продукта](https://go.microsoft.com/fwlink/p/?linkid=517106). Средства разработки кроссплатформенных мобильных приложений доступны в Visual Studio 2015 с обновлением 2 и более поздних версиях.
 
 ## <a name="install-the-tools"></a>Установка инструментов
 
@@ -105,7 +105,7 @@ ms.locfileid: "34454705"
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-Компонент "Visual C++ для разработки кросс-платформенных мобильных приложений" позволяет редактировать, отлаживать и развертывать код iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент на компьютере Mac. Подробные инструкции по установке, а также сведения о необходимых компонентах и параметрах настройки см. в разделе [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md). Если вы не выполняете сборку для iOS, этот шаг можно пропустить.
+Компонент "Visual C++ для разработки кросс-платформенных мобильных приложений" позволяет редактировать, отлаживать и развертывать код iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент на компьютере Mac. Подробные инструкции по установке, а также сведения о необходимых компонентах и параметрах настройки см. в статье [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Если вы не выполняете сборку для iOS, этот шаг можно пропустить.
 
 ## <a name="install-or-update-dependencies-manually"></a>Установка или обновление зависимостей вручную
 
@@ -118,23 +118,23 @@ ms.locfileid: "34454705"
 
 - [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   По умолчанию установщик помещает средства Java в каталог C:\Program Files (x86)\Java.
+   По умолчанию установщик помещает средства Java в каталог *C:\Program Files (x86)\Java*.
 
 - [Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
-   Во время установки обновите API-интерфейсы требуемым образом. Убедитесь, что установлен как минимум пакет SDK для Android 5.0 Lollipop (уровень API 21). По умолчанию установщик помещает пакет SDK Android в каталог C:\Program Files (x86)\Android\android-sdk.
+   Во время установки обновите API-интерфейсы требуемым образом. Убедитесь, что установлен как минимум пакет SDK для Android 5.0 Lollipop (уровень API 21). По умолчанию установщик помещает пакет SDK Android в каталог *C:\Program Files (x86)\Android\android-sdk*.
 
    Чтобы обновить пакет SDK и установить дополнительные инструменты и уровни API, можно повторно запустить диспетчер пакетов SDK в каталоге SDK Android. Если запустить диспетчер пакетов SDK, не используя команду **Запуск от имени администратора** , обновления могут не установиться. Если при сборке приложений Android возникают проблемы, проверьте наличие обновлений для установленных пакетов SDK в диспетчере пакетов SDK.
 
-   Для использования некоторых эмуляторов Android, входящих в пакет SDK для Android, нужно установить дополнительные драйверы Intel HAXM. Для успешной установки драйверов Intel HAXM может потребоваться удалить компонент Hyper-V из Windows. Для использования эмуляторов Windows Phone и эмулятора Microsoft Visual Studio для Android компонент Hyper-V потребуется восстановить. Дополнительные сведения см. в статье [Аппаратное ускорение эмулятора Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+   Для использования некоторых эмуляторов Android, входящих в пакет SDK для Android, нужно установить дополнительные драйверы Intel HAXM. Для успешной установки драйверов Intel HAXM может потребоваться удалить компонент Hyper-V из Windows. Для использования эмуляторов Windows Phone и эмулятора Microsoft Visual Studio для Android компонент Hyper-V потребуется восстановить. Дополнительные сведения см. в статье [Аппаратное ускорение эмулятора Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 - [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   По умолчанию программа установки помещает пакет Android NDK в каталог C:\ProgramData\Microsoft\AndroidNDK. Чтобы обновить установку NDK, можно повторно скачать и установить Android NDK.
+   По умолчанию программа установки помещает пакет Android NDK в каталог *C:\ProgramData\Microsoft\AndroidNDK*. Чтобы обновить установку NDK, можно повторно скачать и установить Android NDK.
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   По умолчанию установщик помещает Apache Ant в каталог C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps.
+   По умолчанию установщик помещает Apache Ant в каталог *C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps*.
 
 - [Эмулятор Microsoft Visual Studio для Android](https://aka.ms/vscomemudownload)
 

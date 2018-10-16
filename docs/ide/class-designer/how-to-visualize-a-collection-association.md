@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33995885"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Практическое руководство. Визуализация ассоциации коллекции в конструкторе классов
 

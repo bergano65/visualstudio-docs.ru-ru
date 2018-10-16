@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e22233d58cdb02194b5d5efe21bc397e9ae3a9c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154097"
 ---
 # <a name="sdk-element-msbuild"></a>Элемент SDK (MSBuild)
 Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -34,12 +35,12 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <Sdk Name="My.Custom.Sdk"
      Version="1.0.0" />  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  

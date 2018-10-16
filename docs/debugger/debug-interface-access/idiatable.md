@@ -1,5 +1,5 @@
 ---
-title: IDiaTable | Документы Microsoft
+title: IDiaTable | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c469bb3a1d8747a7f1dabfadec24dc991730c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b9b792876e281f73f4df0246734403812a72aea
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056414"
 ---
 # <a name="idiatable"></a>IDiaTable
 Перечисляет таблицы источника данных доступа к интерфейсу отладки.  
@@ -32,22 +33,22 @@ IDiaTable : IEnumUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaTable`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
-|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Возвращает имя таблицы.|  
-|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Возвращает число элементов в таблице.|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Извлекает ссылку на определенную запись индекс.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|  
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Извлекает имя таблицы.|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Получает число элементов в таблице.|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Извлекает ссылку на индекс определенной записи.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот интерфейс реализует `IEnumUnknown` методов перечисления в пространстве имен Microsoft.VisualStudio.OLE.Interop. `IEnumUnknown` Интерфейс перечисления является более эффективным для прохода по содержимое таблицы, чем [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) и [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md) методы.  
+ Этот интерфейс реализует `IEnumUnknown` методы перечисления в пространстве имен Microsoft.VisualStudio.OLE.Interop. `IEnumUnknown` Интерфейс перечисления является более эффективным для перебора содержимого таблицы чем [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) и [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md) методы.  
   
- Интерпретация `IUnknown` интерфейс возвращаемый либо `IDiaTable::Item` метода или `Next` метода (в пространстве имен Microsoft.VisualStudio.OLE.Interop) зависит от типа таблицы. Например если `IDiaTable` интерфейс представляет список подставляемого источников `IUnknown` интерфейса должны запрашиваться для [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) интерфейса.  
+ Интерпретация `IUnknown` интерфейс возвращаемый либо `IDiaTable::Item` метод или `Next` метод (в пространстве имен Microsoft.VisualStudio.OLE.Interop) зависит от типа таблицы. Например если `IDiaTable` интерфейс представляет список внедренного источников `IUnknown` интерфейса должны запрашиваться для [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Получить этот интерфейс, вызвав [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md) или [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md) методы.  
   
- Следующие интерфейсы реализуются с помощью `IDiaTable` интерфейса (то есть, вы можете запросить `IDiaTable` интерфейс для одного из следующих интерфейсов):  
+ Следующие интерфейсы реализуются с помощью `IDiaTable` интерфейса (то есть вы можете запросить `IDiaTable` интерфейс для одного из следующих интерфейсов):  
   
 -   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -64,10 +65,10 @@ IDiaTable : IEnumUnknown
 -   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>Пример  
- Первая функция `ShowTableNames`, отображаются имена всех таблиц в сеансе. Вторая функция `GetTable`, выполняет все таблицы для таблицы, который реализует указанный интерфейс. Третья функция `UseTable`, показано, как использовать `GetTable` функции.  
+ Первая функция, `ShowTableNames`, отображаются имена всех таблиц в сеансе. Вторая функция `GetTable`, выполняет все таблицы для таблицы, который реализует указанный интерфейс. Третья функция `UseTable`, показано, как использовать `GetTable` функции.  
   
 > [!NOTE]
->  `CDiaBSTR` Представляет класс-оболочку `BSTR` и автоматически обрабатывает освобождая строку, когда экземпляр выходит за пределы области.  
+>  `CDiaBSTR` — Это класс, который заключает в оболочку `BSTR` и автоматически обрабатывает освобождение строки, когда экземпляр выходит из области.  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  
@@ -136,7 +137,7 @@ void UseTable(IDiaSession *pSession)
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

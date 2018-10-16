@@ -12,21 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e72c5b5e43ca037a6d65e3e4980fdb0f89f000f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58aea13f99f225c01806186903b62a58362715b3
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755711"
 ---
 # <a name="sequence-activity-designer"></a>Конструктор действия Sequence
 
 Операция <xref:System.Activities.Statements.Sequence> содержит упорядоченную коллекцию дочерних действий, которые выполняются последовательно.
 
-Другой способ упорядоченно выполнить набор операций заключается в использовании операции <xref:System.Activities.Statements.Flowchart>. Рассмотрите возможность использования [блок-схема](../workflow-designer/flowchart-activity-designer.md) при наличии простой ветвление или циклы, который нужно смоделировать diagrammatically поток выполнения программы.
+Другой способ упорядоченно выполнить набор операций заключается в использовании операции <xref:System.Activities.Statements.Flowchart>. Рассмотрите возможность использования [блок-схема](../workflow-designer/flowchart-activity-designer.md) при наличии простого с ветвлением или выполнением программы, которую требуется диаграммное.
 
 ## <a name="using-the-sequence-activity-designer"></a>Использование конструктора действий Sequence
 
-Чтобы добавить <xref:System.Activities.Statements.Sequence> действие, перетащите **последовательности** конструктора действий из **элементов** и поместите его на поверхности конструктора рабочих процессов Windows. Чтобы добавить дочернюю операцию к <xref:System.Activities.Statements.Sequence> действие, перетащите другую операцию из **элементов** и поместите его на треугольник в диалоговом окне с текстом подсказки «Перетащить действие сюда».
+Чтобы добавить <xref:System.Activities.Statements.Sequence> действие, перетащите **последовательности** конструктор из **элементов** и поместите его в область конструктора рабочих процессов. Чтобы добавить дочернее действие к <xref:System.Activities.Statements.Sequence> действие, перетащите другую операцию из **элементов** и поместите его в треугольник в поле с текстом подсказки «Перетащить действие сюда».
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Свойства действия Sequence в конструкторе рабочих процессов
 

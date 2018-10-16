@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289284"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 
@@ -145,20 +146,10 @@ ms.lasthandoff: 05/10/2018
 
      ![Обновление Visual Studio 2017 с помощью установщика Visual Studio](media/update-visual-studio.png "Обновление Visual Studio 2017 с помощью установщика Visual Studio")
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
-* [Установка Visual Studio 2017](install-visual-studio.md)
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+* [Обновление Visual Studio для Mac](/visualstudio/mac/update)

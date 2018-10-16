@@ -1,5 +1,5 @@
 ---
-title: Работа с элементами календаря | Документы Microsoft
+title: Работа с элементами календаря
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,23 +21,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3caae91f24c3fbdefe24ae421fb80536b9d8ca56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 199665d7cce60034c2b998b6c67fbc1623c43307
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258597"
 ---
-# <a name="working-with-calendar-items"></a>Работа с элементами календаря
+# <a name="work-with-calendar-items"></a>Работа с элементами календаря
   Класс <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> содержит методы и свойства, применяемые для выполнения задач с элементами календаря.  
   
 |Задача|Процедура|  
 |----------|---------------|  
-|Создание встречи и добавление получателей.|[Практическое руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)|  
-|Удаление экземпляра повторяющейся встречи.|[Практическое руководство. Программное удаление встреч](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Создание папки календаря и добавление элемента встречи.|[Практическое руководство. Программное создание пользовательского календаря](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Создание приглашения на собрание и его отправка.|[Практическое руководство. Программное создание приглашения на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|Создание встречи и добавление получателей.|[Практическое: программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)|  
+|Удаление экземпляра повторяющейся встречи.|[Практическое: программное удаление встреч](../vsto/how-to-programmatically-delete-appointments.md)|  
+|Создание папки календаря и добавление элемента встречи.|[Практическое: программное создание пользовательского календаря](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|Создание приглашения на собрание и его отправка.|[Практическое: программное создание приглашения на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
- Дополнительные сведения о задачах и объектной модели Outlook см. в разделе [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md).  
+ Дополнительные сведения о задачах и объектной модели Outlook см. в разделе [обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами контактов](../vsto/working-with-contact-items.md)   

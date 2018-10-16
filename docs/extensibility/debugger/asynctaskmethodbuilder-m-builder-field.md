@@ -1,5 +1,5 @@
 ---
-title: Поле AsyncTaskMethodBuilder.m_builder | Документы Microsoft
+title: Поле AsyncTaskMethodBuilder.m_builder | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57e96fc107130469a7f2c73fe516a34caf8325a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5cada786753db5bc720f3b07cdc58108e7170001
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155377"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>Поле AsyncTaskMethodBuilder.m_builder
-Представляет обычный построитель объект делегирует этот экземпляр не являющимися универсальными.  
+Представляет обычный построитель объект, к которому делегирует этот экземпляр не являющегося универсальным.  
   
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp 
 .field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder  
 ```  
   

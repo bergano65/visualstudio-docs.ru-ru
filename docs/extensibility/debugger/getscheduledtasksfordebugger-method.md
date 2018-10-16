@@ -1,5 +1,5 @@
 ---
-title: Метод GetScheduledTasksForDebugger | Документы Microsoft
+title: Метод GetScheduledTasksForDebugger | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20cde88083acd38df780468927faec5fbd142b67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 648d48f34681865a34654ed9f82bd790d77b2395
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231168"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Метод GetScheduledTasksForDebugger
-Возвращает массив всех запланированных задач.  
+Извлекает массив всех запланированных заданий.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Массив всех запланированных задач. Каждая задача выполняется, или выполнение было завершено.  
+ Массив всех запланированных задач. Каждая задача выполняется или завершено выполнение.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод не является потокобезопасным и не должны использоваться одновременно с другим экземплярам <xref:System.Threading.Tasks.TaskScheduler> его следует вызывать из отладчика, только в том случае, если отладчик приостановил всех остальных потоков.  
+ Этот метод не является потокобезопасным и его не следует использовать одновременно с другими экземплярами <xref:System.Threading.Tasks.TaskScheduler>. Этот метод следует вызывайте из отладчика, только в том случае, если отладчик приостановил всех остальных потоков.  
   
 ## <a name="see-also"></a>См. также  
  [Класс TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

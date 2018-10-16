@@ -1,5 +1,5 @@
 ---
-title: Отладка 64-разрядных приложений | Документы Microsoft
+title: Отладка 64-разрядных приложений | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284085"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 Существует возможность отладки 64-разрядного приложения, которое выполняется на локальном или удаленном компьютере.  
@@ -54,8 +55,8 @@ ms.lasthandoff: 04/18/2018
 -   Программа не отвечает на запросы, или возникла проблема с производительностью Visual Studio. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. Сведения о том, как сообщить о проблеме, см. в статье [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
   
 ## <a name="see-also"></a>См. также  
- [64-разрядные приложения](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [64-разрядные приложения](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [Настройка программ для 64-разрядных систем](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Поддержка 64-разрядных интегрированной среды разработки Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Использование файлов дампа](../debugger/using-dump-files.md)   
  [Удаленная отладка](../debugger/remote-debugging.md)

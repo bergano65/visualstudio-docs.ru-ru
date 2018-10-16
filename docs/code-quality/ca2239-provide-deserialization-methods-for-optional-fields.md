@@ -14,15 +14,20 @@ ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d3e40c73a02c43ecfb13eda0abcfabcb0d3ad5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548586"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: предоставляйте методы десериализации для необязательных полей
+
 |||
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
@@ -31,19 +36,19 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип имеет поле, которое помечается <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> атрибут и тип не предоставляет методы обработки событий десериализации.
+ Тип имеет поле, которое помечено <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> атрибута и типа не предоставляет методы обработки событий десериализации.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Runtime.Serialization.OptionalFieldAttribute> Атрибут не оказывает влияния на сериализации; поля, помеченные атрибутом сериализуется. Тем не менее поле обрабатывается при десериализации и сохраняет значение по умолчанию, связанные с его типом. Требуется задать для поля в процессе десериализации следует объявлять обработчики событий десериализации.
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute> Атрибут не влияет на сериализацию; в поле, помеченное атрибутом сериализуется. Тем не менее поле обрабатывается при десериализации и сохраняет значение по умолчанию, связанные с его типом. Требуется задать для поля во время десериализации следует объявлять обработчики событий десериализации.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, добавьте методы в тип обработки событий десериализации.
+ Чтобы устранить нарушение этого правила, добавьте методы в тип обработки событий десериализации.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила, если поля, которые должны игнорироваться во время десериализации.
+ Его можно безопасно подавить предупреждение из этого правила, если поле должно игнорироваться во время процесса десериализации.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип с необязательным полем и событий десериализации методов обработки.
+ В примере показан тип с необязательным полем и событий десериализации методов обработки.
 
  [!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]
  [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]

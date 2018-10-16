@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint | Документы Microsoft'
+title: 'Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42636253"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   PowerPoint  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
 1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -66,25 +67,25 @@ ms.lasthandoff: 04/16/2018
   
 7.  Нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstPowerPointAddIn** проект и открывает **ThisAddIn** файл исходного кода в редакторе.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstPowerPointAddIn** проекту и откроется **ThisAddIn** файл кода в редакторе.  
   
-## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Написание кода, добавляющего текст в каждый новый слайд  
+## <a name="write-code-that-adds-text-to-each-new-slide"></a>Написание кода, добавляющего текст в каждый новый слайд  
  Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель PowerPoint для добавления текстового поля в каждый новый слайд. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
   
--   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели PowerPoint. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
+-   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели PowerPoint. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
   
--   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда PowerPoint загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда PowerPoint загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-text-box-to-each-new-slide"></a>Добавление текстового поля в каждый новый слайд  
+### <a name="to-add-a-text-box-to-each-new-slide"></a>Добавление текстового поля в каждый новый слайд  
   
-1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. В коде определяется обработчик события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> объекта <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
+1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событие <xref:Microsoft.Office.Interop.PowerPoint.Application> объекта.  
   
      Когда пользователь добавляет новый слайд в активную презентацию, этот обработчик событий добавляет текстовое поле в верхнюю часть нового слайда, а также добавляет в поле текст.  
   
      [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
      [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_PresentationNewSlide` к событию <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>.  
+2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код необходим для подключения `Application_PresentationNewSlide` обработчик событий с [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событий.  
   
      [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
@@ -92,16 +93,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application>, который представляет текущий экземпляр PowerPoint.  
   
--   Параметр `Sld` обработчика событий для события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>. Параметр `Sld` — это объект <xref:Microsoft.Office.Interop.PowerPoint.Slide>, который представляет новый слайд. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).  
+-   `Sld` Параметр обработчика событий для [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событий. Параметр `Sld` — это объект <xref:Microsoft.Office.Interop.PowerPoint.Slide>, который представляет новый слайд. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).  
   
-## <a name="testing-the-project"></a>Тестирование проекта  
+## <a name="test-the-project"></a>Тестирование проекта  
  При построении и запуске проекта убедитесь, что текстовое поле отображается в новых слайдах, добавляемых в презентацию.  
   
-#### <a name="to-test-the-project"></a>Тестирование проекта  
+### <a name="to-test-the-project"></a>Тестирование проекта  
   
 1.  Нажмите клавишу **F5** для построения и запуска проекта.  
   
-     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют PowerPoint обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [построение решений Office](../vsto/building-office-solutions.md).  
+     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют PowerPoint обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [решений Office построения](../vsto/building-office-solutions.md).  
   
 2.  В PowerPoint добавьте новый слайд в активную презентацию.  
   
@@ -111,31 +112,31 @@ ms.lasthandoff: 04/16/2018
   
 4.  Закройте PowerPoint.  
   
-## <a name="cleaning-up-the-project"></a>Очистка проекта  
+## <a name="clean-up-the-project"></a>Очистка проекта  
  Завершив разработку проекта, удалите с компьютера сборку надстройки VSTO, записи реестра и параметры безопасности. В противном случае надстройка VSTO будет запускаться при каждом открытии PowerPoint на компьютере разработчика.  
   
-#### <a name="to-clean-up-your-project"></a>Очистка проекта  
+### <a name="to-clean-up-your-project"></a>Очистка проекта  
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для PowerPoint, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах:  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO для PowerPoint. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Общие задачи программирования, которые можно выполнять в надстройках VSTO для PowerPoint. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 -   Использование объектной модели PowerPoint. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).  
   
 -   Настройка пользовательского интерфейса PowerPoint, например, путем добавления настраиваемой вкладки на ленту или создания собственной настраиваемой области задач. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
--   Построение и отладка надстроек VSTO для PowerPoint. Дополнительные сведения см. в разделе [построение решений Office](../vsto/building-office-solutions.md).  
+-   Построение и отладка надстроек VSTO для PowerPoint. Дополнительные сведения см. в разделе [решений Office построения](../vsto/building-office-solutions.md).  
   
 -   Развертывание надстроек VSTO для PowerPoint. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Решения PowerPoint](../vsto/powerpoint-solutions.md)   
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Построение решений Office](../vsto/building-office-solutions.md)   
+ [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
   

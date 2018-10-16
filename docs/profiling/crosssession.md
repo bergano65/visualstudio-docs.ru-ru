@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774623"
 ---
 # <a name="crosssession"></a>Параметр CrossSession
-Параметр VSPerfCmd.exe **CrossSession** позволяет профилировщику собирать данные из любого консольного сеанса. Параметр **CrossSession** используется с параметром **Start**.  
+Параметр *VSPerfCmd.exe* **CrossSession** позволяет профилировщику собирать данные из любого консольного сеанса. Параметр **CrossSession** используется с параметром **Start**.  
   
  Вместо **CrossSession** можно использовать сокращение **CS**.  
   
@@ -36,10 +37,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Start:** `Method`  
  Параметр **Start** инициализирует профилировщик для заданного метода профилирования.  
   
- **Attach:** *PID*[**,***PID*]  
+ **Attach:** _PID_[**,**_PID_]  
  Начинает профилирование указанных процессов.  
   
- **Detach**[**:***PID*[,*PID*]]  
+ **Detach**[**:**_PID_[,_PID_]]  
  Останавливает профилирование указанных процессов.  
   
 ## <a name="example"></a>Пример  

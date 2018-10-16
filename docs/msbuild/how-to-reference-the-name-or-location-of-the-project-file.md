@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477513"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079642"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Практическое руководство. Использование ссылки на имя или расположение файла проекта
 Имя или расположение проекта в файле проекта можно использовать без создания отдельного свойства. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет зарезервированные свойства, ссылающиеся на имя файла проекта, и другие свойства, связанные с проектом. Дополнительные сведения о зарезервированных свойствах см. в статье [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
-## <a name="using-the-msbuildprojectname-property"></a>Использование свойства MSBuildProjectName  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет некоторые зарезервированные свойства, которые можно использовать в файлах проекта, не определяя их каждый раз. Например, зарезервированное свойство `MSBuildProjectName` предоставляет ссылку на имя файла проекта.  
+## <a name="use-the-project-properties"></a>Использование свойств проекта
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет некоторые зарезервированные свойства, которые можно использовать в файлах проекта, не определяя их каждый раз. Например, зарезервированное свойство `MSBuildProjectName` предоставляет ссылку на имя файла проекта. Зарезервированное свойство `MSBuildProjectDirectory` предоставляет ссылку на расположение файла проекта.
   
-#### <a name="to-use-the-msbuildprojectname-property"></a>Использование свойства MSBuildProjectName  
+#### <a name="to-use-the-project-properties"></a>Использование свойств проекта
   
 -   Укажите ссылка на свойство в файле проекта с помощью нотации $() так же, как и для любого свойства. Пример:  
   
@@ -39,7 +39,7 @@ ms.locfileid: "34477513"
     <CSC Sources = "@(CSFile)"   
         OutputAssembly = "$(MSBuildProjectName).exe"/>  
     </CSC>  
-    ```  
+    ```          
   
  Преимущество использования зарезервированного свойства заключается в том, что любые изменения имени файла проекта применяются автоматически. В следующий раз при сборке проекта выходной файл будет иметь новое имя, и это не потребует никаких дополнительных действий с вашей стороны.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "34477513"
     <!-- Specify the inputs -->  
     <ItemGroup>  
         <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
+     </ItemGroup>  
     <Target Name = "Compile">  
         <!-- Run the Visual C# compilation using  
         input files of type CSFile -->  
@@ -73,7 +73,20 @@ ms.locfileid: "34477513"
     </Target>  
 </Project>  
 ```  
+
+## <a name="example"></a>Пример
+ В следующем примере файл проекта использует зарезервированное свойство `MSBuildProjectDirectory`, чтобы создать полный путь к файлу в расположении проекта.  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">     
+    
+    <!-- Build the path to a file in the root of the project -->  
+    <PropertyGroup>  
+        <NewFilePath>$([System.IO.Path]::Combine($(MSBuildProjectDirectory), `BuildInfo.txt`))</NewFilePath>
+    </PropertyGroup>  
+</Project>  
+```  
   
 ## <a name="see-also"></a>См. также  
 [MSBuild](../msbuild/msbuild.md)  
- [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

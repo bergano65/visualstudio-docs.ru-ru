@@ -18,11 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177702"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.
@@ -128,7 +129,7 @@ ms.lasthandoff: 05/07/2018
 - [Навигация по коду с помощью отладчика](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Основы отладки](../../debugger/debugger-basics.md)
+- [Основы отладки](../../debugger/getting-started-with-the-debugger.md)
 - [Пошаговое руководство. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

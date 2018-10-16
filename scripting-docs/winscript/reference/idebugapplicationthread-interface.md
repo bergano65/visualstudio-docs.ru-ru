@@ -1,16 +1,16 @@
 ---
-title: "Интерфейс IDebugApplicationThread | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IDebugApplicationThread | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThread interface
 ms.assetid: f869c328-4409-4b74-a6c3-9e63fc58c63d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725954"
 ---
 # <a name="idebugapplicationthread-interface"></a>Интерфейс IDebugApplicationThread
 Позволяет модули языка и узлам для обеспечения синхронизации потоков и настройка сведений о состоянии отладки конкретного потока. Этот интерфейс расширяет интерфейс `IRemoteDebugApplicationThread` интерфейс для предоставления без удаленного доступа в поток.  

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746836"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 На этом шаге будет создан набор парных символов для игры. Каждый символ добавляется в две случайные ячейки в TableLayoutPanel в форме. Для этого используются два оператора `new`, создающие два объекта. Первый является объектом <xref:System.Random>. Такой же объект использовался в игре "Математическая головоломка". Он используется в этом коде для случайного выбора ячейки в TableLayoutPanel. Второй объект, который может показаться вам новым, это объект <xref:System.Collections.Generic.List%601>, используемый для хранения случайно выбранных символов.
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/28/2018
 
 3.  При добавлении объекта List обратите внимание на открывшееся окно **IntelliSense**. Ниже приведен пример на языке Visual C#, но аналогичный текст отобразится и при добавлении списка в Visual Basic.
 
-     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png "Express_ListIntellisense") Окно IntelliSense
+     ![Properties window showing Click event](../ide/media/express_listintellisense.png) Окно IntelliSense
 
     > [!NOTE]
     >  Окно IntelliSense отображается только при вводе кода вручную. При копировании и вставке кода оно не отображается.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336075"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612705"
 ---
 # <a name="use-the-task-list"></a>Использование списка задач
 
@@ -65,9 +65,9 @@ ms.locfileid: "34336075"
 
 ### <a name="custom-tokens"></a>Пользовательские маркеры
 
-По умолчанию Visual Studio включает следующие маркеры: `HACK`, `TODO`, `UNDONE` и `NOTE`. Регистр в них не учитывается.
+По умолчанию Visual Studio включает следующие маркеры: `HACK`, `TODO`, `UNDONE` и `UnresolvedMergeConflict`. Регистр в них не учитывается. Можно также создавать пользовательские токены.
 
-Можно также создавать пользовательские токены. Создание пользовательского маркера:
+Создание пользовательского маркера:
 
 1. В меню **Сервис** выберите пункт **Параметры**.
 
@@ -77,9 +77,11 @@ ms.locfileid: "34336075"
 
    ![Список задач Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. В категории **Токены** в текстовом поле **Имя** введите имя маркера, например **BUG**.
+3. В текстовом поле **Имя** введите имя токена, например **BUG**.
 
-4. В раскрывающемся списке **Приоритет** выберите приоритет по умолчанию для нового токена. Нажмите кнопку **Добавить** .
+4. В раскрывающемся списке **Приоритет** выберите приоритет по умолчанию для нового токена.
+
+5. Выберите **Добавить**.
 
 ### <a name="c-todo-comments"></a>Комментарии TODO C++
 

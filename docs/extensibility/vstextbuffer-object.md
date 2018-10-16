@@ -1,5 +1,5 @@
 ---
-title: Объект VSTextBuffer | Документы Microsoft
+title: Объект VSTextBuffer | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,30 +16,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22e78efc93835aa6b0ac61bfb6cbe59ff0c9d4d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495353"
 ---
 # <a name="vstextbuffer-object"></a>Объект VSTextBuffer
-Объект текстового буфера представляет поток текст в кодировке Юникод, которая связана с файлом. Объект <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект может использоваться вне контекста базового редактора в случае мастер.  
+Объект текстового буфера представляет поток текста в формате Юникод, который связан с файлом. Объект <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект может использоваться вне контекста базового редактора, как показано в мастер.  
   
  В следующей таблице показаны интерфейсы `VSTextBuffer`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Стандартный интерфейс OLE. Используется главным образом для обработки в буфере отмены и повтора.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Стандартный интерфейс OLE.|  
-|[Интерфейс IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Стандартный интерфейс OLE.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Позволяет создавать сложные слова действий (действия, сгруппированные в единое один отмены и повтора).|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение документа данных управляется буфер текста.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Предоставляет базовые службы; используется многими клиентами.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Используется для поиска буфера.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Предоставляет чтения и записи с помощью двумерные координаты. Наследует от `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Обеспечивает чтение и запись возможности с помощью координат одномерный массив. Наследует от `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Предоставляет быстрый, поточно ориентированный последовательный доступ к текста в буфере.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Предоставляет доступ к общей коллекции свойств. Наиболее важные свойства — это имя, или моникер буфера. Случайные данные можно сохранить в буфере, с помощью этого интерфейса, создать GUID и использовать его в качестве ключа.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Стандартный OLE-интерфейс. Используется для обработки в буфере отмены и повтора.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Стандартный OLE-интерфейс.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Стандартный OLE-интерфейс.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Позволяет создавать действия соединения (то есть действия, сгруппированные в блок одной отмены и повтора).|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение данных документа, управляемых текстовым буфером.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Предоставляет базовые службы; Многие клиенты используют.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Используется для поиска в буфер.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Предоставляет возможности, используя двухмерные координаты чтения и записи. Наследует от `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Обеспечивает чтение и запись с помощью одноразмерных координат. Наследует от `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Обеспечивает быстрый, поточно ориентированный, последовательный доступ к текста в буфере.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Предоставляет доступ к общей коллекции свойств. Наиболее важным свойством является имя или моникер буфера. Случайные данные можно сохранить в буфере, с этим интерфейсом, создать GUID и использовать его в качестве ключа.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Поддерживает точки подключения для событий.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -48,4 +49,4 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Изменение фигур](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Изменение фигур](https://www.microsoft.com/download/details.aspx?id=55984)

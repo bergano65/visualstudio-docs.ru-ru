@@ -14,15 +14,20 @@ ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b861591355a47d38beec921a13643841b40e4465
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859488"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: не допускайте использования распечатанных атрибутов
+
 |||
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
@@ -31,27 +36,33 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип наследует от <xref:System.Attribute?displayProperty=fullName>, не является абстрактным и не является запечатанным (`NotInheritable` в Visual Basic).
+
+Открытый тип наследует от <xref:System.Attribute?displayProperty=fullName>, не является абстрактным и не является запечатанным (`NotInheritable` в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
- В библиотеке классов [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] предоставляются методы для извлечения пользовательских атрибутов. По умолчанию эти методы осуществляют поиск иерархии наследования атрибутов; например <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ищет указанный тип атрибута или любой тип атрибута, который расширяет тип указанного атрибута. Если запечатать атрибут устраняет поиск иерархии наследования и может повысить производительность.
+
+Библиотеки классов .NET Framework предоставляет методы для извлечения пользовательских атрибутов. По умолчанию эти методы осуществляют поиск иерархии наследования атрибутов. Например <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> производит поиск определенного типа атрибута или любой тип атрибута, который расширяет тип указанного атрибута. Запечатывание атрибута, поиск в иерархии наследования и может повысить производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, запечатайте атрибут или сделайте его абстрактным.
+
+Чтобы устранить нарушение данного правила, запечатайте атрибут или сделать абстрактным.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила. Это необходимо только в том случае, если иерархия атрибута определяется и запечатать атрибут или нельзя сделать абстрактным.
+
+Его можно безопасно подавить предупреждение из этого правила. Подавляет только в том случае, если при определении иерархии атрибутов и нельзя запечатать атрибут или сделать абстрактным.
 
 ## <a name="example"></a>Пример
- В следующем примере показано пользовательский атрибут, который соответствует данному правилу.
 
- [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
- [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
+В примере показан настраиваемый атрибут, который соответствует данному правилу.
+
+[!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
+[!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1019: необходимо определять методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018: помечайте атрибуты как AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019: необходимо определять методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018: помечайте атрибуты как AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>См. также
- [Атрибуты](/dotnet/standard/design-guidelines/attributes)
+
+- [Атрибуты](/dotnet/standard/design-guidelines/attributes)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt; элемент (загрузчик) | Документы Microsoft'
+title: '&lt;RelatedProducts&gt; элемент (загрузчик) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5701b88f3942301c8fdb6d674fc323e62a93589b
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815461"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077813"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (загрузчик)
-`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущего продукта.  
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
+`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,24 +52,24 @@ ms.locfileid: "34815461"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `RelatedProducts` Элемент является дочерним элементом `Product` элемента. Он не имеет атрибутов.  
+ `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` Элемент указывает, что текущего продукта зависит от данного продукта, и что данного продукта должен быть установлен до текущего. Он является дочерним элементом `RelatedProducts` элемента. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.  
+ `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.  
   
- `DependsOnProduct` имеет следующий атрибут.  
+ `DependsOnProduct` содержит следующий атрибут.  
   
 |Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в этом наборе необходимо предварительно установить текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.  
+ `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.  
   
 ## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` Элемент указывает, входит в состав текущая установка продукта и отдельная установка не требуется. Он является дочерним элементом `RelatedProducts` элемента. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.  
+ `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.  
   
- `IncludesProduct` имеет следующий атрибут.  
+ `IncludesProduct` содержит следующий атрибут.  
   
 |Атрибут|Описание:|  
 |---------------|-----------------|  
@@ -85,4 +85,4 @@ ms.locfileid: "34815461"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [\<Продукта > элемент](../deployment/product-element-bootstrapper.md)
+ [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)

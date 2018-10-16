@@ -1,5 +1,5 @@
 ---
-title: Справочник по SDK для Visual Studio | Документы Microsoft
+title: Справочник по пакету SDK для Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 656663c14b4c5b8b77645eb4fc0fd221e1786800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495691"
 ---
-# <a name="visual-studio-sdk-reference"></a>Справочник по SDK для Visual Studio
-Этот раздел содержит сведения о Visual Studio пространств имен, связанных пространств имен и других областей, представляющие интерес для разработчиков, использующих пакет SDK для Visual Studio.  
+# <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
+Этот раздел содержит сведения о пространствах имен, связанные пространства имен и другие области интересов Visual Studio для разработчиков, использующих пакет SDK для Visual Studio.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
- Устаревший взаимодействия интерфейсы, используемые для служб редактора и языка.  
+ Устаревшие интерфейсы взаимодействия используют для редактора и языковой службы.  
   
  <xref:Microsoft.VisualStudio.Editor>  
  Классы, используемые в новом редакторе.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
  Классы, используемые в новом редакторе.  
   
  <xref:Microsoft.VisualStudio.Text.Adornments>  
- Классы, используемые в новом редакторе для оформления.  
+ Классы для элементов оформления в новом редакторе.  
   
  <xref:Microsoft.VisualStudio.Text.Classification>  
  Классы, используемые в новом редакторе для классификации.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
  Классы, используемые в новом редакторе.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.DragDrop>  
- Классы, используемые в новый редактор для путем перетаскивания.  
+ Классы, используемые в новом редакторе для путем перетаскивания.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods>  
  Классы, используемые в новом редакторе.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
  Классы, используемые в новом редакторе для форматирования.  
   
  <xref:Microsoft.VisualStudio.Text.IncrementalSearch>  
- Классы, используемые в новом редакторе для добавочного поиска.  
+ Классы, используемые в новом редакторе для последовательного поиска.  
   
  <xref:Microsoft.VisualStudio.Text.Operations>  
  Классы, используемые в новом редакторе.  
@@ -76,19 +77,19 @@ ms.lasthandoff: 04/16/2018
  Классы, используемые в новом редакторе для проекции.  
   
  <xref:Microsoft.VisualStudio.Text.Tagging>  
- Классы, используемые в новом редакторе для маркировки.  
+ Классы, используемые в новом редакторе для добавления тегов.  
   
  <xref:Microsoft.VisualStudio.Utilities>  
  Классы, используемые в новом редакторе.  
   
  <xref:Microsoft.Internal.VisualStudio.PlatformUI>  
- В основном Майкрософт только для внутреннего использования.  
+ В первую очередь Microsoft только для внутреннего использования.  
   
  <xref:Microsoft.Internal.VisualStudio.Shell.Interop>  
  Только для внутреннего использования в корпорации Майкрософт.  
   
  <xref:Microsoft.VisualStudio>  
- Классы для констант Visual Studio и вспомогательных методов.  
+ Классы для константы Visual Studio и вспомогательных функций.  
   
  <xref:Microsoft.VisualStudio.CommandBars>  
  Классы для панели команд Visual Studio.  
@@ -97,19 +98,19 @@ ms.lasthandoff: 04/16/2018
  Классы, используемые для Managed Extensibility Framework (MEF) в Visual Studio.  
   
  <xref:Microsoft.VisualStudio.Designer.Interfaces>  
- Интерфейсы, используемые в конструкторах Visual Studio.  
+ Интерфейсы, используемые с конструкторами Visual Studio.  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>  
- Интерфейсы, используемые для конструктора проектов Visual Studio.  
+ Интерфейсы, используемые с помощью конструктора проектов Visual Studio.  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>  
  Классы, используемые для публикации приложений.  
   
  <xref:Microsoft.VisualStudio.OLE.Interop>  
- Взаимодействия интерфейсы, используемые в Visual Studio для компонентов OLE.  
+ Интерфейсы взаимодействия, используемых в Visual Studio для компонентов OLE.  
   
  <xref:Microsoft.VisualStudio.Package>  
- Классы, используемые для службы Visual Studio управляемых языков.  
+ Классы, используемые для Visual Studio управляемые службы языка.  
   
  <xref:Microsoft.VisualStudio.PlatformUI>  
  Классы, используемые в оболочке Visual Studio.  
@@ -220,36 +221,36 @@ ms.lasthandoff: 04/16/2018
  Используется для автоматизации C# и Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Threading>  
- Используется для работы с потоками в Visual Studio.  
+ Используется для управления потоками Visual Studio.  
   
- [Пространство имен Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) для Visual Studio подключенной службы.  
+ [Пространство имен Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) для подключенными службами Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) перечисления  
- Задает флаги узла IntelliSense.  
+ Указывает флаги узла IntelliSense.  
   
  [Справочник по схемам XML VSCT](../extensibility/vsct-xml-schema-reference.md)  
- Таблица элементов Visual Studio Command Table схемы с разрешенные дочерние элементы и атрибуты для каждого.  
+ Таблица элементов схемы Visual Studio Command Table с разрешенный дочерний элементы и атрибуты для каждого.  
   
- [Идентификаторы GUID и константы](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
- Предоставляет список идентификаторов GUID, используемые в пакете SDK.  
+ [GUID и константы](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ Предоставляет список идентификаторов GUID, используемый на протяжении всего пакета SDK.  
   
  [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md)  
- Содержит список идентификаторов для элементов пользовательского интерфейса, используемые в пакет SDK для среды.  
+ Предоставляет список идентификаторов для элементов пользовательского интерфейса, используемые в пакет SDK для среды.  
   
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)  
  Ссылки на разделы по API подключаемых модулей управления источника.  
   
  [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md)  
- Ссылки на разделы, посвященные как разработчики могут автоматизировать некоторые задачи из командной строки.  
+ Ссылки на разделы, посвященные, как разработчики могут автоматизировать несколько задач из командной строки.  
   
  [Обработка ошибок и возвращаемые значения](../extensibility/error-handling-and-return-values.md)  
- Описывается архитектура ошибки для пакетов VSPackage, который является таким же, как в других приложений для Windows.  
+ Описывается архитектура ошибка для пакетов VSPackage, который является такой же, как в других Windows программирования.  
   
  [Объекты](../extensibility/objects.md)  
  Предоставляет список объектов, которые используются в среде.  
   
  [Глоссарий](../extensibility/visual-studio-sdk-glossary.md)  
- Предоставляет список полезные термины и их определения для использования при чтении документации Visual Studio SDK.  
+ Предоставляет список полезные термины и их определения для использования при чтении документации пакета SDK для Visual Studio.  
   
  <xref:Microsoft.Build.BuildEngine>  
  Используется для MSBuild.  
@@ -301,4 +302,4 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
- Включает документацию, образцы и код, чтобы помочь вам в разработке продуктов, интегрированных с Visual Studio.
+ Включает в себя документацию, примеры и код, чтобы помочь вам в разработке продуктов, которые интегрируются с Visual Studio.

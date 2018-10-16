@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758236"
 ---
 # <a name="statemachine-activity-designer"></a>Конструктор действий StateMachine
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="using-the-statemachine-activity-designer"></a>Использование конструктора операций StateMachine
 
-Чтобы добавить <xref:System.Activities.Statements.StateMachine> действие, перетащите **StateMachine** конструктора действий из **конечного автомата** раздел **элементов** и поместите его в рабочий процесс Windows Область конструктора. Чтобы добавить состояние дочернего элемента к <xref:System.Activities.Statements.StateMachine> действие, перетащите <xref:System.Activities.Statements.State> или <xref:System.Activities.Core.Presentation.FinalState> из **элементов** и поместите его в **StateMachine**.
+Чтобы добавить <xref:System.Activities.Statements.StateMachine> действие, перетащите **StateMachine** конструктор из **конечный автомат** раздел **элементов** и поместите его в конструкторе рабочих процессов Рабочая область. Чтобы добавить состояние дочернего элемента к <xref:System.Activities.Statements.StateMachine> действие, перетащите <xref:System.Activities.Statements.State> или <xref:System.Activities.Core.Presentation.FinalState> из **элементов** и сбросьте его в **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Свойства действия StateMachine в конструкторе рабочих процессов
 

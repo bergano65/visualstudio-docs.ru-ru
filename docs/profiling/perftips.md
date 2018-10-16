@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669349"
 ---
 # <a name="perftips"></a>PerfTips
 С помощью подсказок *PerfTips* , отображаемых в отладчике Visual Studio, а также встроенных в отладчик **средств диагностики** вы можете отслеживать и анализировать производительность вашего приложения во время отладки.  
@@ -27,9 +28,9 @@ ms.lasthandoff: 04/19/2018
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Окно "Средства диагностики"  
- Точки останова и связанные с ними данные о времени отображаются в окне "Средства диагностики".  
+ Точки останова и связанные с ними данные о времени отображаются в окне **Средства диагностики**.  
   
- На рисунке ниже показано окно "Средства диагностики в Visual Studio 2015 с обновлением 1.  
+ На рисунке ниже показано окно **Средства диагностики** в Visual Studio 2015 с обновлением 1.  
   
  ![DiagnosticTools: обновление 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -57,4 +58,4 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
  [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34d06b3223b6c0bea059c333bd107068fd0adcee
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844876"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Представление указателей инструкций — данные выборки памяти .NET
 В представлении указателей инструкций данных профилирования выделения памяти .NET, собранных методом выборки, перечислены инструкции сборки, которые выделяли память в сеансе профилирования. Столбцы представления также показывают размер и число выделений.  

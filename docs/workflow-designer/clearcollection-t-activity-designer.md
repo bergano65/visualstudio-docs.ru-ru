@@ -12,26 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2422f7165e3f00e4059bc593c129c7723daed2f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757900"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > конструктора действий
 
 **ClearCollection\<T >** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.ClearCollection%601> действия.
 
 ## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > действия
- Действие <xref:System.Activities.Statements.ClearCollection%601> очищает указанную коллекцию, удаляя из нее все элементы.
+
+Действие <xref:System.Activities.Statements.ClearCollection%601> очищает указанную коллекцию, удаляя из нее все элементы.
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>С помощью ClearCollection\<T > конструктора действий
- **ClearCollection\<T >** конструктора действий можно найти в **коллекции** категории **элементов**, который нажав  **Панель элементов** вкладки конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **ClearCollection\<T >** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где размещаются действия, например как внутри <xref:System.Activities.Statements.Sequence>. Перемещение конструктора действий создает <xref:System.Activities.Statements.ClearCollection%601> действия по умолчанию <xref:System.Activities.Activity.DisplayName%2A> из ClearCollection < Int32\>. (По умолчанию *TypeArgument* — **Int32**. TypeArgument можно изменить в таблице свойств.) <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **ClearCollection < T\>**  конструктора или в **DisplayName** поле сетки свойств. Другие свойства следует изменять в таблице свойств.
+**ClearCollection\<T >** конструктора действий можно найти в **коллекции** категории **элементов**, который нажав  **Панель элементов** вкладке конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
+
+**ClearCollection\<T >** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где размещаются действия, например в <xref:System.Activities.Statements.Sequence>. Удаление конструктора действий создает <xref:System.Activities.Statements.ClearCollection%601> действие по умолчанию <xref:System.Activities.Activity.DisplayName%2A> из ClearCollection < Int32\>. (По умолчанию *TypeArgument* — **Int32**. TypeArgument можно изменить в сетке свойств.) <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **ClearCollection < T\>**  конструктора действий или в **DisplayName** поле таблицы свойств. Другие свойства следует изменять в таблице свойств.
 
 ### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > Свойства
- В следующей таблице показаны свойства <xref:System.Activities.Statements.ClearCollection%601> и описано их использование в конструкторе.
+
+В следующей таблице показаны свойства <xref:System.Activities.Statements.ClearCollection%601> и описано их использование в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

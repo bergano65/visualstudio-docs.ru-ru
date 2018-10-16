@@ -1,5 +1,5 @@
 ---
-title: Отправка события запуска после запуска | Документы Microsoft
+title: Отправка событий запуска после запуска | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6ffd1a47f4d1d82feecb35110151a8b32d7d245
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8439f4ff9e1195b558b44342a012ce319582eb69
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251170"
 ---
-# <a name="sending-startup-events-after-a-launch"></a>Отправка события запуска после запуска
-После прикрепления модуль отладки (DE) в программу она отправляет последовательность событий при запуске сеанса отладки.  
+# <a name="send-startup-events-after-a-launch"></a>Отправка событий запуска после запуска
+Когда модуль отладки (DE), подключенного к программе, он отправляет ряд событий запуска сеанса отладки.  
   
- Следующие события запуска отправляются обратно в сеансе отладки.  
+ Включать события запуска, отправляемые сеанса отладки:  
   
--   Обработчик события создания.  
+-   Событие создания ядра.  
   
--   События создания программы.  
+-   Событие создания программы.  
   
--   Создание и события загрузки модулей потока.  
+-   Создание и события загрузки модулей потоков.  
   
--   Событие завершения загрузки, отправляемых, когда код загружены и готовы к запуску, но перед выполнением любого кода  
+-   Нагрузки событие завершения, когда код будет загружен и готов к выполнению, а также перед выполнением любого кода. 
   
     > [!NOTE]
-    >  Когда это событие дальше, инициализируются глобальные переменные и запустите программы запуска.  
+    >  Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.  
   
--   Другие возможные потока создания и события загрузки модулей.  
+-   Возможные других потоков, создания и события загрузки модулей.  
   
--   Событие точки входа, которое сигнализирует, что программа достиг его главную точку входа, такие как **Main** или `WinMain`. Это событие обычно не отправляется Если DE присоединяет к программе, на котором уже выполняется.  
+-   Событие точки входа, которое сигнализирует, что программа достиг основной точки входа, такие как **Main** или `WinMain`. Это событие не отправляется как правило, если DE присоединяет к программе, на котором уже выполняется.  
   
- Программно, DE в первый раз отправляет диспетчера сеанса отладки (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) интерфейс, который представляет событие создания подсистемы, за которым следует [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , который представляет событие создания программы.  
+ Программно, DE сначала отправляет диспетчер отладки сеансов (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) интерфейс, который представляет событие создания ядра, за которым следует [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , который представляет событие создания программы.  
   
- Это обычно следуют одна или несколько [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) события создания потоков и [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) события загрузки модулей.  
+ Эти события обычно следуют одна или несколько [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) события создания потоков и [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) события загрузки модулей.  
   
- Если код загружены и готовы к запуску, но перед выполнением любого кода DE отправляет SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) событие завершения нагрузки. Наконец, если программа не запущена, DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) входа точечное событие сигналов, что программа достиг его главную точку входа и готов для отладки.  
+ Когда код загружены и готовы к запуску, но до выполнения любого кода, DE отправляет SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) событие завершения загрузки. Наконец, если программа не запущена, DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) запись точечное событие, сигнализации, что программа достиг основной точки входа и готов для отладки.  
   
 ## <a name="see-also"></a>См. также  
- [Элемент управления, выполнения](../../extensibility/debugger/control-of-execution.md)   
+ [Элемент управления выполнения](../../extensibility/debugger/control-of-execution.md)   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

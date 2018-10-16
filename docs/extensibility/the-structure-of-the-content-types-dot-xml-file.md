@@ -1,5 +1,5 @@
 ---
-title: Структура файл [Content_types] .xml | Документы Microsoft
+title: Структура файл [Content_types] .xml | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49ba65f92143f47432cac874ebfd539f9b2da0f5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495585"
 ---
-# <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файл [Content_types] .xml
+# <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
   
 > [!NOTE]
->  Несмотря на то, что этот раздел относится только к [указывается] XML-файлы, используемые в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: новый стандартный для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
+>  Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: новый стандартный для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
- В следующих разделах описаны корневой элемент и его атрибуты и дочерние элементы.  
+ В следующих разделах корневого элемента и его атрибуты и дочерние элементы.  
   
 ### <a name="root-element"></a>Корневой элемент  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
-### <a name="attribute-name-attribute"></a>{Имя_атрибута} Атрибут  
+### <a name="attribute-name-attribute"></a>{Атрибут name} Атрибут  
   
 |Значение|Описание|  
 |-----------|-----------------|  
@@ -54,39 +55,39 @@ ms.lasthandoff: 04/16/2018
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|`Default`|Описывает тип содержимого в пакете VSIX. Каждому типу файла в пакете должно иметь свой собственный `Default` элемента.|  
+|`Default`|Описывает тип содержимого в пакете VSIX. Каждый тип файла в пакете должно иметь свой собственный `Default` элемент.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Extension`|Расширение имени файла в пакете VSIX.|  
+|`Extension`|Расширение имени файла, файла в пакете VSIX.|  
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  
   
-### <a name="attribute-name-attribute"></a>{Имя_атрибута} Атрибут  
- Visual Studio распознает следующие `ContentType` значения для соответствующего `Extension` типов.  
+### <a name="attribute-name-attribute"></a>{Атрибут name} Атрибут  
+ Visual Studio распознает следующие `ContentType` значения для связанного `Extension` типов.  
   
 |Расширение|ContentType|  
 |---------------|-----------------|  
-|txt|text/plain.|  
-|pkgdef|text/plain.|  
+|txt|text/plain|  
+|pkgdef|text/plain|  
 |xml|text/xml|  
 |VSIXMANIFEST|text/xml|  
 |htm или html|text/html|  
-|Формат RTF|приложения, rtf|  
-|PDF|приложения/pdf|  
+|RTF|приложение или rtf|  
+|PDF-файл|Application/pdf|  
 |GIF|изображение/gif|  
 |JPG или jpeg|изображение или jpg|  
-|TIFF|изображения и tiff.|  
-|vsix|приложение или zip|  
-|ZIP|приложение или zip|  
+|TIFF|изображение/tiff|  
+|vsix|Application/zip|  
+|ZIP|Application/zip|  
 |dll|application/octet-stream|  
 |все другие типы файлов|application/octet-stream|  
   
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
- Следующий файл [Content_Types] .xml описывает типичные пакет VSIX.  
+ Следующий файл [Content_Types] .xml описывает типичные пакета VSIX.  
   
 ### <a name="code"></a>Код  
   
@@ -103,5 +104,5 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Справочник по схеме 1.0 расширение VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: Новый стандарт упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207)

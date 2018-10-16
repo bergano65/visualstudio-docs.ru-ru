@@ -16,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 696eed674dd2b85ec048290ba88084751230635d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547523"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: не вызывайте зарезервированные типы исключений
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -31,60 +33,65 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Метод создает тип исключения, слишком общими, или, зарезервированные для среды выполнения.
+
+Метод создает тип исключения, который является слишком общим или, зарезервированные для среды выполнения.
 
 ## <a name="rule-description"></a>Описание правила
- Указанные ниже типы исключений имеют слишком общий характер для предоставляет достаточно сведений для пользователя:
 
--   <xref:System.Exception?displayProperty=fullName>
+Следующие типы исключений имеют слишком общий характер, чтобы предоставляет достаточно сведений для пользователя:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
- Указанные ниже типы исключений являются зарезервированными и должно выдаваться только средой CLR:
+- <xref:System.SystemException?displayProperty=fullName>
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+Следующие типы исключений зарезервированы и должен быть создан только действием среда CLR:
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
- **Не создавайте общих исключений**
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- Если вы вызываете исключения общего типа, таких как <xref:System.Exception> или <xref:System.SystemException> в библиотеке или платформе, вынуждает объекты-получатели перехватывать все исключения, включая неизвестные исключения, которые они не известны способы их обработки.
+**Не создавайте общих исключений**
 
- Вместо этого исключение более производный тип, который уже существует в структуре, или создать собственный тип, производный от <xref:System.Exception>.
+Если вы throw исключения общего типа, таких как <xref:System.Exception> или <xref:System.SystemException> в библиотеке или платформе, вынуждает объекты-получатели перехватывать все исключения, включая неизвестных исключений, которые они не знают, как обрабатывать.
 
- **Создание конкретных исключений**
+Вместо этого создать более производный тип, уже существует в структуре или создать собственный тип, производный от <xref:System.Exception>.
 
- В следующей таблице показаны параметры и исключения, которые могут вызывать при проверке параметров, включая значение параметра в метод доступа set свойства:
+**Генерировать определенные исключения**
+
+В следующей таблице показаны параметры и исключения, которые могут вызывать при проверке параметров, включая значение параметра в методе доступа set свойства:
 
 |Описание параметра|Исключение|
 |---------------------------|---------------|
-|`null` Ссылка|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|Вне диапазона допустимых значений (таких как индекс для коллекции или списка)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|`null` Справочник по|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|За пределами допустимого диапазона значений (таких как индекс для коллекции или перечня)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Недопустимый `enum` значение|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |Содержит формат, который не соответствует спецификациям параметров метода (например, строка формата для `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|В противном случае значение недопустимо|<xref:System.ArgumentException?displayProperty=fullName>|
+|В противном случае недопустим|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Когда операция недопустима для текущего состояния объекта throw <xref:System.InvalidOperationException?displayProperty=fullName>
+Когда операция недопустима для текущего состояния объекта throw <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Исключение при выполнении операции на объекте, который был удален <xref:System.ObjectDisposedException?displayProperty=fullName>
+Исключение при выполнении операции над объект, который был удален <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Когда операция не поддерживается (например, в переопределенном **методы Stream.Write** в поток открыт для чтения) throw <xref:System.NotSupportedException?displayProperty=fullName>
+Если операция не поддерживается (например, в переопределенный **методы Stream.Write** в Stream, открыт для чтения) throw <xref:System.NotSupportedException?displayProperty=fullName>
 
- Исключение при преобразовании приведет к переполнению, (например, в явной перегрузке оператора приведения) <xref:System.OverflowException?displayProperty=fullName>
+Если преобразование может привести к переполнению (например, перегрузка оператора явного приведения) исключение <xref:System.OverflowException?displayProperty=fullName>
 
- В других случаях рекомендуется создать свой собственный тип, производный от <xref:System.Exception> и создает исключение, которое.
+В других случаях, рекомендуется создать собственный тип, производный от <xref:System.Exception> и создает исключение, которое.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, измените тип вызванного исключения для определенного типа, который не является одним из зарезервированных типов.
+
+Чтобы устранить нарушение этого правила, измените тип вызванного исключения для определенного типа, который не является одним из зарезервированных типов.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1031: не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+
+- [CA1031: не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)

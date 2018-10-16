@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576447"
 ---
 # <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами оценки производительности
 Этот раздел содержит обзор основные понятий и задач, выполняемых при сборе, просмотре и анализе производительности кода с помощью средств оценки производительности Visual Studio.  

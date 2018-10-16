@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476352"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Запись графических сведений
 В этом пошаговом руководстве показано, как с помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] вручную захватывать графические данные из приложения Direct3D.  

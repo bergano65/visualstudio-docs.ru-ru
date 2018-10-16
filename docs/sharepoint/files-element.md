@@ -1,5 +1,5 @@
 ---
-title: Файлы элемент | Документы Microsoft
+title: Файлы элемент | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766910"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327298"
 ---
 # <a name="files-element"></a>Files - элемент
   Указывает файлы для развертывания с элементом проекта SharePoint, например элементов компонента файлов и выходных данных зависимого вне SharePoint проектов.  
@@ -47,8 +47,8 @@ ms.locfileid: "34766910"
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Необязательный **ProjectItemFileType** элемента.<br /><br /> Представляет файл SharePoint, таких как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Необязательный **ProjectOutputFileType** элемента.<br /><br /> Представляет выходные данные проекта для включения с элементом проекта при его развертывании в SharePoint.|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Необязательный **ProjectItemFileType** элемент.<br /><br /> Представляет файл SharePoint, такие как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Необязательный **ProjectOutputFileType** элемент.<br /><br /> Представляет выходные данные проекта для включения с элементом проекта при его развертывании в SharePoint.|  
   
 ### <a name="parent-elements"></a>Родительские элементы
   
@@ -63,9 +63,9 @@ ms.locfileid: "34766910"
 |**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым.**|Нет|  
+|**Может быть пустым**|Нет|  
   
 ## <a name="see-also"></a>См. также
- [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

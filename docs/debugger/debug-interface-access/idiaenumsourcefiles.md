@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles | Документы Microsoft
+title: IDiaEnumSourceFiles | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f0e1c751f9ab106be74418bc3d9e6b9a53b0c5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 33960cf8cfde8d781d52e0519911093019a93941
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511028"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Перечисляет различные исходные файлы, содержащиеся в источнике данных.  
@@ -26,33 +27,33 @@ ms.lasthandoff: 04/18/2018
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaEnumSourceFiles : IUknown  
+IDiaEnumSourceFiles : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumSourceFiles`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|  
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Возвращает число исходных файлов.|  
-|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Получает исходный файл с помощью индекса.|  
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Извлекает исходный файл с помощью индекса.|  
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Извлекает указанное число исходных файлов в последовательности перечисления.|  
 |[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Пропускает указанное число исходных файлов в последовательности перечисления.|  
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
   
 ## <a name="remarks"></a>Примечания  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Получить этот интерфейс, вызвав `QueryInterface` метод [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объекта. Дополнительные сведения см.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса доступа к интерфейсу отладки. Пример доступа к информация об исходном файле, в разделе [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) интерфейса.  
+ В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса доступа к интерфейсу отладки. Пример доступа к данные исходного файла, см. в разделе [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) интерфейс.  
   
 ```C++  
   
-IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)  
+IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)  
 {  
     IDiaEnumSourceFiles * pUnknown    = NULL;  
     REFIID                iid         = __uuidof(IDiaEnumSourceFiles);  
@@ -85,7 +86,7 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

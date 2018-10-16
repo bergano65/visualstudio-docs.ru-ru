@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550509"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: не используйте приоритет процессов в состоянии ожидания
 |||
@@ -34,10 +35,10 @@ ms.lasthandoff: 04/26/2018
  Это правило возникает, если процессы `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Описание правила
- Не задавайте для приоритета процесса значение Idle. Процессы, имеющие `System.Diagnostics.ProcessPriorityClass.Idle` будут занимать ЦП, который иначе простаивал бы, и тем самым блокировать работу standby.
+ Не задавайте для приоритета процесса значение Idle. Процессы, имеющие `System.Diagnostics.ProcessPriorityClass.Idle` будут занимать ЦП, когда он иначе простаивал бы и тем самым блокировать работу standby.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Значение процессов `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это правило следует отключить только в том случае, если требуется приоритет процессов и аспекты мобильности можно безопасно пропустить.
+ Это правило должны подавляться только в том случае, если требуется приоритет процессов и аспекты мобильности можно безопасно проигнорировать.

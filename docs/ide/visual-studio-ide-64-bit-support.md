@@ -18,6 +18,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425742"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Поддержка 64-разрядных сред IDE Visual Studio
 

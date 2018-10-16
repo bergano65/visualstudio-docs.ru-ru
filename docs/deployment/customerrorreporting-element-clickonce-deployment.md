@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt; элемент (развертывание ClickOnce) | Документы Microsoft'
+title: '&lt;customErrorReporting&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,32 +16,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c060c419fa72bb5914491a8ee666a9b1a2c6a622
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080357"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; элемент (развертывание ClickOnce)
 Задает отображаемый в случае ошибки URI.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <customErrorReporting  
    uri  
 />  
 ```  
   
 ## <a name="remarks"></a>Примечания  
- Этот элемент является необязательным. Без него [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает диалоговое окно ошибки, показывающая стека исключений. Если `customErrorReporting` элемент присутствует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет отображаться вместо URI, обозначенном `uri` параметра. Целевой URI будет включать класс внешних исключений, класс внутренних исключений и во внутреннем сообщении исключения в качестве параметров.  
+ Этот элемент является необязательным. Без него [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает диалоговое окно ошибки, отображение стека исключений. Если `customErrorReporting` элемент присутствует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] вместо отобразит этот URI, обозначается `uri` параметра. Универсальный код ресурса будет включить внешнее исключение класса, класс внутреннее исключение и сообщение внутреннего исключения в качестве параметров.  
   
- Этот элемент используется для добавления в приложение функций создания отчетов. Поскольку сформированный URI включает сведения о типе ошибки, веб-сайта можно проанализировать эти сведения и отобразить, например, об устранении.  
+ Этот элемент используется для добавления функций создания отчетов в приложение. Поскольку сформированный URI включает сведения о типе ошибки, веб-сайт можно проанализировать эти сведения и отображения, например, об устранении.  
   
 ## <a name="example"></a>Пример  
- В следующем фрагменте кода показано `customErrorReporting` элемента вместе с сформированный URI, он может выдавать.  
+ В следующем фрагменте представлен `customErrorReporting` элемента, сформированный URI может привести к его.  
   
-```  
+```xml
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
   
 Example Generated Error:  

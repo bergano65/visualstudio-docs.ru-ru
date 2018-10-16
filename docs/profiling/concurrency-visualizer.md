@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc0864db659642336368d20a314057d63859c30
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669693"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 > [!NOTE]
@@ -55,4 +56,4 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: Параллельные внутри расширения для платформы .NET Framework | Документы Microsoft
+title: Параллельная внутренние компоненты расширений для .NET Framework | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4936efe50023ed1e193d0c2ec0d9c3423ac5cc64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b4106509f62f1929f20283bc86c7930c22d39b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251089"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>Внутри параллельной расширения для платформы .NET Framework
-Этот раздел описывает внутренние типы, методы и поля из классов, которые помогают реализовать пользовательские отладчик для параллельных расширений для .NET Framework.  
+# <a name="parallel-extension-internals-for-the-net-framework"></a>Внутренние компоненты параллельных расширений для .NET Framework
+В этом разделе описываются внутренние типы, методы и поля классов, которые помогут вам реализовать пользовательского отладчика по параллельным расширениям для .NET Framework.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)  
- Описывает внутренние данные-члены <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса.  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)  
+ Описывает внутренние данные элементы <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса.  
   
  [Класс TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- Описывает внутренние данные-члены <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класса.  
+ Описывает внутренние данные элементы <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класса.  
   
  [Класс ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- Описывает внутренние данные-члены `System.Threading.Tasks.ContingentProperties` класса.  
+ Описывает внутренние данные элементы `System.Threading.Tasks.ContingentProperties` класса.  
   
  [Структура AsyncTaskMethodBuilder](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
- Описывает внутренние элементы <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> структуры.  
+ Описывает внутренним членам объектов <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> структуры.  
   
  [AsyncTaskMethodBuilder\<TResult > структуры](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)  
- Описывает внутренние элементы <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> структуры.  
+ Описывает внутренним членам объектов <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> структуры.  
   
  [Структура AsyncVoidMethodBuilder](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
- Описывает внутренние элементы <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> структуры.  
+ Описывает внутренним членам объектов <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> структуры.  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Расширения отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
+ [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
  [Параллельное программирование](/dotnet/standard/parallel-programming/index)

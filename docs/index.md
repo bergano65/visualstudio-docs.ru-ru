@@ -4,11 +4,12 @@ hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443623"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -20,7 +21,7 @@ ms.lasthandoff: 05/22/2018
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/setup-install.svg" src="./images/setup-install.png" alt="" />
+                                        <img data-hoverimage="./images/setup-install.svg" src="./images/setup-install.png" alt="Setup icon with gears" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/getstarted.svg" src="./images/getstarted.png" alt="" />
+                                        <img data-hoverimage="./images/getstarted.svg" src="./images/getstarted.png" alt="Get started icon" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -58,7 +59,7 @@ ms.lasthandoff: 05/22/2018
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/whatsnew.svg" src="./images/whatsnew.png" alt="" />
+                                        <img data-hoverimage="./images/whatsnew.svg" src="./images/whatsnew.png" alt="What's new icon" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -75,6 +76,182 @@ ms.lasthandoff: 05/22/2018
         <h1>Документация по Visual Studio</h1>
         <ul class="pivots">
             <li>
+                <li>
+                <a href="#get-started">Начало работы</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Научитесь использовать Visual Studio</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Начать интерактивный обзор</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Написание и редактирование кода</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Сборка кода</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Отладка кода</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Тестирование кода</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Доступ к данным — локально или в облаке</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Начните работу с помощью руководства</h3>
+                                                <h4>Выбор языка программирования</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ icon">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="C# icon">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB icon">
+Visual Basic </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python icon">
+Python</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
+Node.js</a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Попробуйте 5-минутное краткое руководство</h3>
+                                                <h4>Создайте приложение "Hello, World" на языке по своему усмотрению.</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="C# logo">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
+                                                                        <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
+F# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
+Visual Basic </a>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ logo">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python logo">
+Python </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js logo">
+Node.js </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Или выберите, что вы хотите разрабатывать</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
+Универсальное приложение для Windows</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
+Классическое приложение Windows</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="Mobile phone icon">
+Мобильное приложение</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
+Игра Unity</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
+Веб-приложение с ASP.NET Core</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li>
                 <a href="#features">Задачи</a>
                 <ul id="features">
                     <li>
@@ -87,7 +264,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-1.svg" src="./images/vs_features-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-1.svg" src="./images/vs_features-1.svg" alt="Software features graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -106,7 +283,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-2.svg" src="./images/vs_features-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-2.svg" src="./images/vs_features-2.svg" alt="Construction graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -125,7 +302,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-3.svg" src="./images/vs_features-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-3.svg" src="./images/vs_features-3.svg" alt="Software debugging graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -144,7 +321,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-4.svg" src="./images/vs_features-4.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-4.svg" src="./images/vs_features-4.svg" alt="Testing graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -163,7 +340,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-5.svg" src="./images/vs_features-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-5.svg" src="./images/vs_features-5.svg" alt="Deployment graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -176,13 +353,13 @@ ms.lasthandoff: 05/22/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="Version control graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -195,18 +372,18 @@ ms.lasthandoff: 05/22/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="DevOps graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Создавайте приложения в непрерывном режиме и публикуйте их в облаке, а также реализуйте рекомендации Agile с VSTS.</p>
+                                                    <p>Воспользуйтесь возможностью непрерывной разработки и публикации приложений в облаке и реализуйте принципы Agile с помощью Azure DevOps Services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +397,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-7.svg" src="./images/vs_features-7.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-7.svg" src="./images/vs_features-7.svg" alt="Software performance graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -240,7 +417,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-8.svg" src="./images/vs_features-8.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-8.svg" src="./images/vs_features-8.svg" alt="Software extensions graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -259,7 +436,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="Software data graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -278,12 +455,31 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="" />
+                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="Collaboration graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Совместная работа</h3>
                                                     <p>Совместное использование, редактирование и отладка кода в среде для совместной работы в режиме реального времени. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="Containers graphic" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка с помощью контейнеров</h3>
+                                                    <p>Используйте контейнеры для изоляции модульных компонентов и улучшения масштабируемости.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -306,7 +502,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Csharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Csharp.svg" alt="C# logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -325,7 +521,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_vb.svg" alt="" />
+                                                    <img src="/media/logos/logo_vb.svg" alt="VB logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -344,7 +540,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Cplusplus.svg" alt="" />
+                                                    <img src="/media/logos/logo_Cplusplus.svg" alt="C++ logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -363,7 +559,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Fsharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Fsharp.svg" alt="F# logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -382,7 +578,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_js.svg" alt="" />
+                                                    <img src="/media/logos/logo_js.svg" alt="JavaScript logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -401,7 +597,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_TS.svg" alt="" />
+                                                    <img src="/media/logos/logo_TS.svg" alt="TypeScript logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -420,7 +616,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Python.svg" alt="" />
+                                                    <img src="/media/logos/logo_Python.svg" alt="Python logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -439,7 +635,7 @@ ms.lasthandoff: 05/22/2018
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_R.svg" alt="" />
+                                                    <img src="/media/logos/logo_R.svg" alt="R logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -475,7 +671,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="Web development graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -494,7 +690,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="Cloud graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -513,7 +709,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="Python graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -532,7 +728,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
+                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="Node.js logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -551,7 +747,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="Data storage graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -570,7 +766,7 @@ ms.lasthandoff: 05/22/2018
                                       <div class="card">
                                         <div class="cardImageOuter">
                                           <div class="cardImage bgdAccent1 cardScaleImage">
-                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="Data science graphic" />
                                         </div>
                                         </div>
                                           <div class="cardText">
@@ -589,7 +785,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="Microsoft Office logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -618,7 +814,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="UWP graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -637,7 +833,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="Windows computer graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -656,7 +852,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="Windows computer with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -685,7 +881,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="Mobile development graphic with .NET logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -704,7 +900,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="Game development graphic with Unity logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -723,7 +919,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="Mobile development graphic with JavaScript logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -742,7 +938,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="Mobile development graphic with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -761,7 +957,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="Game development graphic with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -785,7 +981,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="Toolbox and Visual Studio logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -804,7 +1000,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="Linux penguin and C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -823,7 +1019,7 @@ ms.lasthandoff: 05/22/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="Cross-platform development graphic with  .NET logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

@@ -19,17 +19,19 @@ f1_keywords:
 - _Field_size_bytes_full_
 - _Field_size_full_
 - _Field_size_full_opt_
+- _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 076631860035e41451741d49843d9282ec4c15f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228829"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
 Вы можете добавить примечание к структурам и членам классов, используя примечания, которые действуют как инварианты — предполагается, что они будут выполнены в любом вызове функции или функции входа и выхода, которая содержит включающую структуру в качестве значения параметров или результатов.
@@ -52,9 +54,11 @@ ms.lasthandoff: 04/26/2018
 
      Поле с размером в элементах (или байт), доступных для записи и чтения, как определено в `size`.
 
--   `_Struct_size_bytes_(size)`
+-   `_Field_z_`
 
-     Поле с размером в элементах (или байт), доступных для записи и чтения, как определено в `size`.
+     Поле, содержащее строку, завершающуюся символом null.
+
+-   `_Struct_size_bytes_(size)`
 
      Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа с количеством байт, указанным в `size`.  Пример:
 
@@ -68,11 +72,11 @@ ms.lasthandoff: 04/26/2018
 
     ```
 
-     Размер буфера в байтах параметра `pM` типа `MyStruct *` затем воспринимается как:
+     Размер буфера в байтах параметра `pM` типа `MyStruct *` затем принимается:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
 
 ## <a name="see-also"></a>См. также
- [Использовании аннотаций SAL для сокращения дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [основные сведения о SAL](../code-quality/understanding-sal.md) [Аннотация параметров функции и возвращаемых значений](../code-quality/annotating-function-parameters-and-return-values.md) [Аннотация поведения функций](../code-quality/annotating-function-behavior.md) [Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md) [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md) [встроенные функции](../code-quality/intrinsic-functions.md) [рекомендации и Примеры](../code-quality/best-practices-and-examples-sal.md)
+ [Использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [основные сведения о SAL](../code-quality/understanding-sal.md) [Аннотация параметров функции и возвращаемые значения](../code-quality/annotating-function-parameters-and-return-values.md) [Аннотация поведения функций](../code-quality/annotating-function-behavior.md) [Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md) [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md) [встроенные функции](../code-quality/intrinsic-functions.md) [рекомендации и Примеры](../code-quality/best-practices-and-examples-sal.md)

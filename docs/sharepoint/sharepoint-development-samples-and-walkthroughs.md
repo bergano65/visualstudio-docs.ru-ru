@@ -1,5 +1,5 @@
 ---
-title: Примеры разработки решений SharePoint и примеры | Документы Microsoft
+title: Примеры разработки решений SharePoint и пошаговые руководства | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 061ede31c0d3d0f72daf3417851aaa76adc3570d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119393"
 ---
-# <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по разработке решений SharePoint
-  Этот раздел содержит образцы приложений, пример кода и пошаговые руководства, которые иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.  
+# <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры разработки решений SharePoint и пошаговые руководства
+  Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.  
   
- Пример кода предназначен для использования в целях ознакомления и не должны использоваться в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.  
+ Пример кода предназначен для учебных целей и не следует использовать в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)|Описывает образцы приложений, которые демонстрируют, как использовать средства разработки SharePoint в Visual Studio.|  
-|[Пошаговые руководства по разработке решений SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|  
+|[Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)  
-  
   

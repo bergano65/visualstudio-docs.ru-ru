@@ -14,15 +14,20 @@ ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7efc13eaee32662688593ff0cb94d9c0cb7a8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8629262da35b9897b789b2fae853bff4eea1aa8f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551740"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: пометьте типы ISerializable атрибутом SerializableAttribute
+
 |||
 |-|-|
 |TypeName|MarkISerializableTypesWithSerializable|
@@ -31,19 +36,19 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Видимый извне тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс и тип не помечен атрибутом <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. Правило не учитывает производных типов, базовый тип которого не является сериализуемым.
+ Видимый извне тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс и тип не помечен атрибутом <xref:System.SerializableAttribute?displayProperty=fullName> атрибута. Правило не учитывает производных типов, базовый тип которого не может быть сериализован.
 
 ## <a name="rule-description"></a>Описание правила
- Распознаваемых общеязыковая среда выполнения как сериализуемый, типы должны быть отмечены <xref:System.SerializableAttribute> атрибута, даже если тип использует пользовательскую процедуру сериализации посредством реализации <xref:System.Runtime.Serialization.ISerializable> интерфейса.
+ Распознаваемых среда CLR как сериализуемый, типы должны быть помечены <xref:System.SerializableAttribute> атрибута, даже если тип использует пользовательскую процедуру сериализации посредством реализации <xref:System.Runtime.Serialization.ISerializable> интерфейс.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, примените <xref:System.SerializableAttribute> к типу атрибут.
+ Чтобы устранить нарушение этого правила, примените <xref:System.SerializableAttribute> к типу атрибута.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила для классов исключений, так как они должны быть сериализуемыми, для правильной работы в доменах приложений.
+ Не отключайте предупреждение из этого правила для классов исключений, так как они должны быть сериализуемыми, для правильной работы между доменами приложений.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип, нарушающий правило. Раскомментируйте <xref:System.SerializableAttribute> атрибут строки в соответствии с правилом.
+ В примере показан тип, который нарушает правило. Раскомментируйте <xref:System.SerializableAttribute> атрибут строки в соответствии с правилом.
 
  [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
  [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]

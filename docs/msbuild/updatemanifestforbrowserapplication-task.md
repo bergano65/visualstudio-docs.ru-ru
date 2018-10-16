@@ -20,26 +20,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f944d8546fd9124bc881f8421943d34a86698c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ef8b0abf2ed09a11dfacb80c5560413419dac2cb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180091"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Задача UpdateManifestForBrowserApplication
-Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения (*имя_проекта*.exe.manifest) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
+Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения (*\<имя_проекта>.exe.manifest*) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
   
 ## <a name="task-parameters"></a>Параметры задачи  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Обязательный параметр **ITaskItem[]**.<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|  
-|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />**. Если задано значение **true**, новый элемент `<`**hostInBrowser />** включается в элемент **\<entryPoint />**. Обратите внимание, что включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />**. Если указано значение **false**, манифест приложения не изменяется.|  
+|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />**. Если задано значение **true**, новый элемент **\<hostInBrowser />** включается в элемент **\<entryPoint />**. Включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />**. Если задано значение **false**, манифест приложения не изменяется.|  
   
 ## <a name="remarks"></a>Примечания  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] запускаются с помощью развертывания [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] и, следовательно, должны публиковаться с поддерживающими манифестами развертывания и приложения. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] создает манифест приложения с помощью задачи [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx).  
+ Приложения [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] запускаются с помощью развертывания [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] и, следовательно, должны публиковаться с соответствующими манифестами развертывания и приложения. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] создает манифест приложения с помощью задачи [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx).  
   
- Затем, чтобы настроить приложение для размещения из браузера, необходимо добавить в манифест приложения дополнительный элемент **\<hostInBrowser />**, как показано в следующем примере.  
+ Затем, чтобы настроить приложение для размещения из браузера, необходимо добавить в манифест приложения дополнительный элемент **\<hostInBrowser />**, как показано в примере ниже.  
   
 ```xml  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -78,5 +79,5 @@ ms.lasthandoff: 04/19/2018
  [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
  [Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

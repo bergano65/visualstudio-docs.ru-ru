@@ -1,7 +1,7 @@
 ---
 title: Текущая версия инструментов R
 description: Установка обновлений и проверка версии Инструментов R для Visual Studio.
-ms.date: 01/24/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,17 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 20811c10ddad6df18512f23aa1312f154c2e294b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230987"
 ---
 # <a name="rtvs-current-version"></a>Актуальная версия RTVS
 
-На момент последнего изменения этой страницы самой актуальной версией инструментов R для Visual Studio (RTVS) была версия **1.0.31108.1213**. Ваша версия может отличаться в зависимости от версии Visual Studio и того, используете ли вы канал предварительных версий.
-
-Чтобы проверить версию, в Visual Studio выберите **Справка > О программе** и прокрутите вниз до записи **Инструменты R для Visual Studio**.
+Чтобы проверить версию, в Visual Studio выберите **Справка** > **О программе** и прокрутите вниз до записи **Инструменты R для Visual Studio**:
 
 ![Проверка версии RTVS в Visual Studio (VS2017)](media/current-version.png)
 
@@ -30,4 +29,4 @@ ms.lasthandoff: 04/19/2018
 
 Требования к Visual Studio и Windows см. в разделе [Установка](installing-r-tools-for-visual-studio.md).
 
-Сведения об обновлениях для Microsoft R Open и Microsoft R Server см. в разделе [Продукты Microsoft R](http://aka.ms/rtvs-msft-r).
+Сведения об обновлениях для Microsoft R Open и Microsoft Machine Learning Server (ранее Microsoft R Server) см. в разделе [Продукты Microsoft R](http://aka.ms/rtvs-msft-r).

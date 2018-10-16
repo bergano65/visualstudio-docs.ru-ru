@@ -1,5 +1,5 @@
 ---
-title: PreviewImage-элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент PreviewImage (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638981"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage - элемент (шаблоны Visual Studio)
-Указывает изображение предварительного просмотра, как имя файла изображения предварительного просмотра, которое будет отображаться в любом **новый проект** или **Добавление нового элемента** диалоговое окно.  
+# <a name="previewimage-element-visual-studio-templates"></a>Элемент PreviewImage (шаблоны Visual Studio)
+Задает изображение для предварительного просмотра, в качестве имени файла, для предварительного просмотра изображения, которое будет отображаться в любом **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 <PreviewImage>"filename"</PreviewImage>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -44,18 +45,18 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен быть строка, представляющая имя файла.  
+ Этот текст должен быть строка, представляющая имя файла.  
   
 ## <a name="remarks"></a>Примечания  
  `PreviewImage` — это необязательный элемент.  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449030"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058595"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 Визуализатор параллелизма может отображать события EventSource в качестве маркеров и предоставляет возможность настройки того, как должны отображаться эти маркеры. Чтобы просмотреть маркеры EventSource, зарегистрируйте GUID поставщика трассировки событий Windows с помощью диалогового окна [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). У визуализатора параллелизма по умолчанию есть соглашения по представлению события EventSource как [маркеров флагов](../profiling/flag-markers.md), [маркеров интервалов](../profiling/span-markers.md) и [маркеров сообщений](../profiling/message-markers.md). Вы можете настраивать то, как отображаются события EventSource, путем добавления пользовательских полей в события. Дополнительные сведения о маркерах см. в разделе [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md). Дополнительные сведения о событиях EventSource см. в разделе <xref:System.Diagnostics.Tracing>.  
@@ -25,9 +25,9 @@ ms.locfileid: "34449030"
   
 ### <a name="marker-type"></a>Тип маркера  
   
-1.  События с [кодом](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
+1.  События с [кодом](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
   
-2.  Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
+2.  Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](/windows/desktop/WES/defining-severity-levels) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
   
 3.  Во всех остальных случаях это событие обрабатывается как сообщение.  
   

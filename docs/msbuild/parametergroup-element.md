@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7829df456540bc303993217c577bd6be3952a198
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152634"
 ---
 # <a name="parametergroup-element"></a>Элемент ParameterGroup
-Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask``TaskFactory`. Дополнительные сведения см. в статье [UsingTask Element (MSBuild)](../msbuild/usingtask-element-msbuild.md) (элемент UsingTask (MSBuild)).  
+Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -33,11 +34,11 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/19/2018
 
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[Параметр](../msbuild/parameter-element.md)|Содержит сведения о конкретном параметре для задачи, созданной `UsingTask``TaskFactory`. Имя элемента — это имя параметра.|  
+|[Параметр](../msbuild/parameter-element.md)|Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`. Имя элемента — это имя параметра.|  
 
 ### <a name="parent-elements"></a>Родительские элементы  
 

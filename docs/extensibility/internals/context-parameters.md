@@ -1,5 +1,5 @@
 ---
-title: Параметры контекста | Документы Microsoft
+title: Параметры контекста | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,56 +14,57 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6646e917b4cb94b4cd0534b513d148490cf69d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370995"
 ---
-# <a name="context-parameters"></a>Параметры контекста
-В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), можно добавить мастеров для **новый проект**, **Добавление нового элемента**, или **добавьте подпроекта** диалоговым окнам. Добавлены мастеров доступны на **файл** меню или щелкнув правой кнопкой мыши проект в **обозревателе решений**. Интегрированной среды разработки передает параметры контекста для реализации мастера. Параметры контекста определить состояние проекта, когда IDE вызывает мастер.  
+# <a name="context-parameters"></a>Контекстные параметры
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), можно добавить к мастеров **новый проект**, **Добавление нового элемента**, или **добавить проект Sub** диалоговым окнам. Добавлена мастеров можно найти на **файл** меню или щелкнув правой кнопкой мыши проект в **обозревателе решений**. Интегрированной среды разработки параметры контекста передается в реализацию мастера. Параметры контекста определять состояние проекта при интегрированной среды разработки вызывает мастера.  
   
- Мастера запуска интегрированной среды разработки, задав <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> флаг в вызове IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> метод для проекта. Если задано, проект необходимо вызвать `IVsExtensibility::RunWizardFile` метод для выполнения с помощью зарегистрированного мастер имя или идентификатор GUID и других параметров контекста, которые передает интегрированной среды разработки.  
+ Мастера запуска среды IDE, задав <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> флаг в вызове IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> метод для проекта. Если задано, проект, необходимо вызвать `IVsExtensibility::RunWizardFile` метод, который выполняется с помощью имя зарегистрированного мастера или идентификатор GUID и других параметров контекста, которые передает ему интегрированной среды разработки.  
   
 ## <a name="context-parameters-for-new-project"></a>Контекстные параметры для нового проекта  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardNewProject>) или идентификатор GUID, указывающий тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] реализации, идентификатор GUID для мастера — {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}.|  
+|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardNewProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
-|`LocalDirectory`|Локальное расположение рабочие файлы проекта.|  
-|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] процесса установки.|  
-|`FExclusive`|Логический флаг, указывающий, что проект следует закрыть открытые решения.|  
-|`SolutionName`|Имя файла решения без каталог или расширения .sln. Имя файла SUO также создается с помощью `SolutionName`. Если этот аргумент не является пустой строкой, мастер использует <xref:EnvDTE._Solution.Create%2A> перед добавлением проекта с <xref:EnvDTE._Solution.AddFromTemplate%2A>. Если это имя является пустой строкой, используйте <xref:EnvDTE._Solution.AddFromTemplate%2A> без вызова <xref:EnvDTE._Solution.Create%2A>.|  
-|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер как если бы **Готово** щелкают (`TRUE`).|  
+|`LocalDirectory`|Локальное расположение работы файлы проекта.|  
+|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] является установкой.|  
+|`FExclusive`|Логический флаг, который указывает, что проект должен закрыть открытые решения.|  
+|`SolutionName`|Имя файла решения без каталог или *.sln* расширения. *.Suo* также создается имя файла с помощью `SolutionName`. Если этот аргумент не является пустой строкой, то мастер использует <xref:EnvDTE._Solution.Create%2A> перед добавлением проекта с <xref:EnvDTE._Solution.AddFromTemplate%2A>. Если это имя является пустой строкой, используйте <xref:EnvDTE._Solution.AddFromTemplate%2A> без вызова <xref:EnvDTE._Solution.Create%2A>.|  
+|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер так, как если **Готово** щелкают (`TRUE`).|  
   
-## <a name="context-parameters-for-add-new-item"></a>Параметры контекста для добавления нового элемента  
+## <a name="context-parameters-for-add-new-item"></a>Контекстные параметры для добавления нового элемента  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddItem>) или идентификатор GUID, указывающий тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] реализации, идентификатор GUID для мастера — {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}.|  
+|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddItem>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
 |`ProjectItems`|Локальное расположение, которое содержит проект рабочих файлов.|  
-|`ItemName`|Имя элемента, который требуется добавить. Это имя является имя файла по умолчанию или имя файла, который пользователь из **добавить элементы** диалоговое окно. Имя основан на флаги, которые заданы в VSDir-файл. Имя может иметь значение null.|  
-|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] процесса установки.|  
-|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер как если бы **Готово** щелкают (`TRUE`).|  
+|`ItemName`|Имя элемента, который должен быть добавлен. Это имя является имя файла по умолчанию или имя файла, который пользователь вводит из **добавить элементы** диалоговое окно. Имя основывается на флаги, которые были заданы в *.vsdir* файла. Имя может быть значение null.|  
+|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] является установкой.|  
+|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер так, как если **Готово** щелкают (`TRUE`).|  
   
-## <a name="context-parameters-for-add-sub-project"></a>Параметры контекста для добавления проекта Sub  
+## <a name="context-parameters-for-add-sub-project"></a>Контекстные параметры для добавления проекта Sub  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddSubProject>) или идентификатор GUID, указывающий тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] реализации, идентификатор GUID для мастера — {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}.|  
+|`WizardType`|Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddSubProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}.|  
 |`ProjectName`|Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта.|  
-|`ProjectItems`|Указатель на `ProjectItems` коллекции, на котором работает мастер. Такой указатель передается мастер, в зависимости от выбранной иерархии проекта. Пользователь обычно выбирает папку для размещения элемента, а затем вызывает проекта **добавить элемент** диалоговое окно.|  
-|`LocalDirectory`|Локальное расположение рабочие файлы проекта.|  
-|`ItemName`|Имя элемента, который требуется добавить. Это имя является имя файла по умолчанию или имя файла, который пользователь из **добавить элементы** диалоговое окно. Имя основан на флаги, которые заданы в VSDir-файл. Имя может иметь значение null.|  
-|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] процесса установки.|  
-|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер как если бы **Готово** щелкают (`TRUE`).|  
+|`ProjectItems`|Указатель на `ProjectItems` коллекции, на котором работает мастер. Этот указатель передается к мастеру, в зависимости от выбранной иерархии проекта. Пользователь обычно выбирает папку для размещения элемента, а затем вызывает проекта **Добавление элемента** диалоговое окно.|  
+|`LocalDirectory`|Локальное расположение работы файлы проекта.|  
+|`ItemName`|Имя элемента, который должен быть добавлен. Это имя является имя файла по умолчанию или имя файла, который пользователь вводит из **добавить элементы** диалоговое окно. Имя основывается на флаги, которые были заданы в *.vsdir* файла. Имя может быть значение null.|  
+|`InstallationDirectory`|Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] установки.|  
+|`Silent`|Логическое значение, указывающее, следует ли автоматически запускать мастер так, как если **Готово** щелкают (`TRUE`).|  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
  [Пользовательские параметры](../../extensibility/internals/custom-parameters.md)   
  [Мастеры](../../extensibility/internals/wizards.md)   
- [Мастер (. Файл VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Контекстные параметры для запуска мастеров](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)   
+ [Контекстные параметры для запуска мастеров](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

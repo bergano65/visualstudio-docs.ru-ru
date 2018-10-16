@@ -18,13 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02de86564f6d7754b3c9db86d93577c374a72e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98f7793890bc938f6f1e89f653985b91a99393a9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548294"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: прозрачный код не должен ссылаться на элементы, критичные в плане безопасности
+
 |||
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
@@ -33,43 +35,53 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод:
 
--   обрабатывает тип критические исключения безопасности
+Прозрачный метод:
 
--   имеет параметр, который помечен как критический для безопасности тип
+- обрабатывает тип безопасности критические исключения
 
--   универсальный параметр с критические ограничения безопасности
+- имеет параметр, который помечен как критический тип безопасности
 
--   имеет локальную переменную критического для безопасности типа
+- универсальный параметр с критические ограничения безопасности
 
--   ссылается на тип, помеченный как безопасности критические
+- имеет локальную переменную типа критических безопасности
 
--   вызывает метод, помеченный как безопасности критические
+- ссылается на тип, помеченный как безопасности важных
 
--   ссылка на поле, помеченный как безопасности критические
+- вызывает метод, помеченный как безопасности важных
 
--   Возвращает тип, помеченный как безопасности критические
+- ссылается на поле, помеченный как безопасности важных
+
+- Возвращает тип, помеченный как безопасности важных
 
 ## <a name="rule-description"></a>Описание правила
- Элемент кода, который отмечен атрибутом <xref:System.Security.SecurityCriticalAttribute> атрибут является критически важным для безопасности. Прозрачный метод не может использовать элемент, критический с точки зрения безопасности. Если прозрачный тип пытается использовать тип, критический безопасности <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , или <xref:System.FieldAccessException> возникает.
+
+Элемент кода, который помечен атрибутом <xref:System.Security.SecurityCriticalAttribute> атрибут является критически важным для безопасности. Прозрачный метод не может использовать элемент, критический с точки зрения безопасности. Если прозрачный тип пытается использовать тип безопасности важных <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , или <xref:System.FieldAccessException> возникает.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, выполните одно из следующих действий.
 
--   Пометить элемент кода, использующего критический код безопасности с <xref:System.Security.SecurityCriticalAttribute> атрибута
+Чтобы устранить нарушение этого правила, выполните одно из следующих действий.
+
+- Пометить элемент кода, использующего защите важного кода с <xref:System.Security.SecurityCriticalAttribute> атрибут
 
      \- или -
 
--   Удалить <xref:System.Security.SecurityCriticalAttribute> атрибут из элементов кода, которые отмечены как безопасности критических и отметьте их атрибутом вместо <xref:System.Security.SecuritySafeCriticalAttribute> или <xref:System.Security.SecurityTransparentAttribute> атрибута.
+- Удалить <xref:System.Security.SecurityCriticalAttribute> атрибут из элементы кода, которые отмечены как безопасности важных и вместо этого пометьте их с помощью <xref:System.Security.SecuritySafeCriticalAttribute> или <xref:System.Security.SecurityTransparentAttribute> атрибута.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующих примерах прозрачный метод пытается выполнить ссылку критических универсальной коллекции безопасности, критические для безопасности поле и критический метод безопасности.
 
- [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
+В приведенных ниже примерах прозрачный метод предпринимается попытка ссылки на важные универсальная коллекция безопасности, безопасности полю и к критическому методу безопасности.
+
+[!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityTreatAsSafeAttribute> <xref:System.Security?displayProperty=fullName>
+
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityCriticalAttribute>
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityTreatAsSafeAttribute>
+- <xref:System.Security?displayProperty=fullName>

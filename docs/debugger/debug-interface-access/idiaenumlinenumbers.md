@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers | Документы Microsoft
+title: IDiaEnumLineNumbers | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0b457a0efef1c860be7174f012575aec64f99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057325"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Перечисляет различные номера строк, содержащихся в источнике данных.  
@@ -32,20 +33,20 @@ IDiaEnumLineNumbers : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumLineNumbers`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|  
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Возвращает число номеров строк.|  
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Возвращает номер строки, с помощью индекса.|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Возвращает указанное количество номеров строк в порядке перечисления.|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Пропускает указанное число номеров строк в порядке перечисления.|  
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Получает номер строки с помощью индекса.|  
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Возвращает указанное количество номеров строк в последовательности перечисления.|  
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Пропускает заданное число номеров строк в последовательности перечисления.|  
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
   
 ## <a name="remarks"></a>Примечания  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс можно получить путем вызова одного из следующих методов в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс:  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс получается путем вызова одного из следующих методов в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейса:  
   
 -   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
@@ -58,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaEnumLineNumbers` интерфейс из сеанса. В этом случае пример показывает способ получения строки номеров перечисления для функции (представленного `pSymbol`). Более полный пример использования номера строк см. в разделе [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) интерфейса.  
+ В этом примере показано, как получить `IDiaEnumLineNumbers` интерфейс из сеанса. В нашем примере показано, как получить перечисление номера строки для функции (представленный `pSymbol`). Более полный пример использования номера строк, см. в разделе [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) интерфейс.  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
@@ -91,7 +92,7 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

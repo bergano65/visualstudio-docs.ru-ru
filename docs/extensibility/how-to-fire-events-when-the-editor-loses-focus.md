@@ -1,5 +1,5 @@
 ---
-title: 'Как: инициируют события, когда редактор теряет фокус | Документы Microsoft'
+title: 'Практическое: инициируют события, когда редактор теряет фокус | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbdcf30443bc548fd8d182db301cbc7119d8ceae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639660"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Как: инициируют события, когда редактор теряет фокус
-Иногда бывает необходимо знать, когда редактор теряет фокус на фрейм окна. Например может потребоваться извлечь код из окна кода после редактор больше не занимается ее. Далее описаны действия для получения уведомлений о потере фокуса редактора.  
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Практическое: инициируют события, когда редактор теряет фокус
+Иногда бывает необходимо знать, когда редактор теряет фокус на рамку окна. Например может потребоваться для извлечения кода из окна кода после редакторе фокуса на нем. Следующая процедура описывает, как переходить для получения уведомлений о редакторе теряет фокус.  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Для порождения события в ответ на редактор теряет фокусировку  
+## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Чтобы активировать событие в ответ на редактор теряет фокус  
   
-1.  Мониторинг событий выбора, получая <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> объекта из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
+1.  Мониторинг событий выбора путем получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> объекта из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> и предоставить ему вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> объекта.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> и укажите его в ваш <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> объекта.  
   
 3.  При вызове <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>, искать `elementid==SEID_WindowFrame`.  
   
-4.  Тест `varValueNew` параметров для двух целей:  
+4.  Тест `varValueNew` параметр для двух целей:  
   
-    1.  Рамка окна, которую вы ищете.  
+    1.  Фрейм окна, которую вы ищете.  
   
-    2.  Точка, с которой программа теряет выделения до этого фрейма окна.
+    2.  Точка, по которому программа теряет выделение для этой рамки окна.

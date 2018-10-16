@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Создание первой надстройки VSTO для Word | Документы Microsoft'
+title: 'Пошаговое руководство: Создание первой надстройки VSTO для Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808902"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Пошаговое руководство. Создание первой надстройки VSTO для Word
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Пошаговое руководство: Создание первой надстройки VSTO для Word
   В этом вводном пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Word. Возможности, создаваемые в таком решении, доступны для самого приложения независимо от того, какие документы открыты.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
   
-#### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Создание нового проекта надстройки VSTO для Word в Visual Studio  
+### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Создание нового проекта надстройки VSTO для Word в Visual Studio  
   
 1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstWordAddIn** проект и открывает файл кода ThisAddIn в редакторе.  
   
-## <a name="writing-code-to-add-text-to-the-saved-document"></a>Написание кода для добавления текста в сохраняемый документ  
- Добавьте код в файл кода ThisAddIn. Новый код использует объектную модель Word для добавления стандартного текста в каждый сохраненный документ. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
+## <a name="write-code-to-add-text-to-the-saved-document"></a>Написать код для добавления текста в сохраненный документ  
+ Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель Word для добавления стандартного текста в каждый сохраненный документ. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
   
--   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Word. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
+-   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Word. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
   
--   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Добавление абзаца текста в сохраненный документ  
+### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Добавление абзаца текста в сохраненный документ  
   
 1.  В файле кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Новый код определяет обработчик событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>, которое возникает при сохранении документа.  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
     > [!NOTE]  
-    >  Этот код использует значение индекса 1 для доступа к первому абзацу в коллекции <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Хотя Visual Basic и Visual C# используют массивы, которые начинаются с 0, нижней границей массива для большинства коллекций в объектной модели Word является 1. Для получения дополнительной информации см. [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+    >  Этот код использует значение индекса 1 для доступа к первому абзацу в коллекции <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Хотя Visual Basic и Visual C# используют массивы, которые начинаются с 0, нижней границей массива для большинства коллекций в объектной модели Word является 1. Дополнительные сведения см. в разделе [написания кода в решениях Office](../vsto/writing-code-in-office-solutions.md).  
   
 2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_DocumentBeforeSave` к событию <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>.  
   
@@ -95,15 +96,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Поле `Application` класса `ThisAddIn`. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Word.Application>, который представляет текущий экземпляр Word.  
   
--   Параметр `Doc` обработчика событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Параметр `Doc` является объектом <xref:Microsoft.Office.Interop.Word.Document>, который представляет сохраненный документ. Для получения дополнительной информации см. [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+-   Параметр `Doc` обработчика событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Параметр `Doc` является объектом <xref:Microsoft.Office.Interop.Word.Document>, который представляет сохраненный документ. Дополнительные сведения см. в разделе [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
   
-## <a name="testing-the-project"></a>Тестирование проекта  
+## <a name="test-the-project"></a>Тестирование проекта  
   
-#### <a name="to-test-the-project"></a>Тестирование проекта  
+### <a name="to-test-the-project"></a>Тестирование проекта  
   
 1.  Нажмите клавишу **F5** для построения и запуска проекта.  
   
-     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Excel обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [построение решений Office](../vsto/building-office-solutions.md).  
+     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Excel обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [решений Office построения](../vsto/building-office-solutions.md).  
   
 2.  В Word сохраните активный документ.  
   
@@ -113,35 +114,35 @@ ms.lasthandoff: 04/16/2018
   
 4.  Закройте Word.  
   
-## <a name="cleaning-up-the-project"></a>Очистка проекта  
- Завершив разработку проекта, удалите с компьютера разработчика сборку надстройки VSTO, записи реестра и параметры безопасности. В противном случае надстройка VSTO будет запускаться при каждом открытии программы Word на компьютере разработчика.  
+## <a name="clean-up-the-project"></a>Очистка проекта  
+ Завершив разработку проекта, удалите с компьютера сборку надстройки VSTO, записи реестра и параметры безопасности. В противном случае надстройка VSTO будет запускаться при каждом открытии программы Word на компьютере разработчика.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Очистка завершенного проекта на компьютере разработчика  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Очистка завершенного проекта на компьютере разработчика  
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Word, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Задачи программирования, характерные для надстроек VSTO для Word: [решений Word](../vsto/word-solutions.md).  
+-   Задачи программирования, характерные для надстроек VSTO для Word: [Word решения](../vsto/word-solutions.md).  
   
--   С помощью объектной модели Word: [Общие сведения о модели объектов Word](../vsto/word-object-model-overview.md).  
+-   С помощью объектной модели Word: [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
   
--   Настройка пользовательского интерфейса Word, например добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Настройка пользовательского интерфейса Word, например, добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
--   Построение и отладка надстроек VSTO для Word: [построение решений Office](../vsto/building-office-solutions.md).  
+-   Построение и отладка надстроек VSTO для Word: [решений Office построения](../vsto/building-office-solutions.md).  
   
 -   Развертывание надстроек VSTO для Word: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Решения Word](../vsto/word-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Построение решений Office](../vsto/building-office-solutions.md)   
+ [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
   

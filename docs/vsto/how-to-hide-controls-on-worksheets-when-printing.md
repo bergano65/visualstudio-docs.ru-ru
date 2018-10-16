@@ -1,5 +1,5 @@
 ---
-title: 'Как: скрытие элементов управления на листах при печати | Документы Microsoft'
+title: 'Практическое: скрытие элементов управления на листах при печати'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,35 +18,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d02d823e707054fd17a5f3f892db41258b08081
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e240f4b4be5ce4092705615f060f4e0ef0076e3a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254482"
 ---
-# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Практическое руководство. Скрытие элементов управления на листах при печати
-  При печати документа Microsoft Office Excel, который содержит элементы управления Windows Forms, элементы управления видимы на распечатанном листе. Печать листа, можно скрыть элементы управления.  
+# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Практическое: скрытие элементов управления на листах при печати
+  При печати документа Microsoft Office Excel, который содержит элементы управления Windows Forms, элементы управления, отображаются при печати рабочего листа. Печать листа, можно скрыть элементы управления.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  Если скрыть элементы управления, которые отображают данные, такие как <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, данные в элементе управления не видны на распечатанном листе.  
+>  Если скрыть элементы управления, которые отображают данные, такие как <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, данные в элементе управления не видны на печати рабочего листа.  
   
 > [!NOTE]  
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Чтобы скрыть элементы управления, когда лист выводится на печать  
+## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Чтобы скрыть элементы управления, когда лист печатается  
   
-1.  Создайте или откройте проект Excel в Visual Studio и убедитесь, что **Sheet1** является видимым в конструкторе. Сведения о создании проектов см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте или откройте проект Excel в Visual Studio и убедитесь, что **Sheet1** является видимым в конструкторе. Сведения о создании проектов см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-2.  Из **стандартные элементы управления** вкладке **элементов**, перетащите <xref:Microsoft.Office.Tools.Excel.Controls.Button> управления в ячейку на `Sheet1`.  
+2.  Из **стандартные элементы управления** вкладке **элементов**, перетащите <xref:Microsoft.Office.Tools.Excel.Controls.Button> управления в ячейке на `Sheet1`.  
   
-3.  В **свойства** задайте <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> свойства **False**.  
+3.  В **свойства** окне <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> свойства **False**.  
   
 ## <a name="see-also"></a>См. также  
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Элементы управления в документах Office Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Как: Добавление элементов управления в документы Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Практическое руководство. Изменение размера элементов управления в ячейках листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
+ [Элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Практическое: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Практическое: изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
   
   

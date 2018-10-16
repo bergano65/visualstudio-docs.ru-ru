@@ -1,5 +1,5 @@
 ---
-title: VSG_NODEFAULT_INSTANCE | Документы Microsoft
+title: VSG_NODEFAULT_INSTANCE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d064f4a5b983058d9f1ad4428e2b37cf2e82dcf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4655b6105a940b7f2c742ba8bcd0812d0be5ab95
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433189"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 Определяет своим наличием, нужно ли экземпляр по умолчанию [класс VsgDbg](vsgdbg-class.md) класс, который предоставляет программный интерфейс захвата — предоставляется.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/18/2018
   
  Программный интерфейс захвата предоставляется посредством указателя с глобальной областью видимости — `g_pVsgDbg`.  
   
-```  
+```cpp
 VsgDbg *g_pVsgDbg;  
 ```  
   
@@ -44,7 +45,7 @@ VsgDbg *g_pVsgDbg;
 ## <a name="example"></a>Пример  
  В следующем примере показано, как отключить экземпляр по умолчанию:  
   
-```  
+```cpp
 // Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h  
 #define VSG_NODEFAULT_INSTANCE  
   

@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb2ef935015e7bd1058868b546543a789d7cec2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6f1712192f8d68131a9adbbc8eb6de5d85429ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150539"
 ---
-# <a name="unregisterassembly-task"></a>Задача UnregisterAssembly
+# <a name="unregisterassembly-task"></a>UnregisterAssembly - задача
 Отменяет регистрацию указанных сборок для целей COM-взаимодействия. Эта задача противоположна [задаче RegisterAssembly](../msbuild/registerassembly-task.md).  
   
 ## <a name="parameters"></a>Параметры  
@@ -62,6 +63,6 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [RegisterAssembly Task](../msbuild/registerassembly-task.md)  (Задача RegisterAssembly)  
+ [Задача RegisterAssembly](../msbuild/registerassembly-task.md)   
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

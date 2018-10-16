@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544851ca500e417cbc3010c23ad122a4ab1f2cc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151750"
 ---
 # <a name="parameter-element"></a>Элемент Parameter
-Содержит сведения о конкретном параметре для задачи, созданной `UsingTask``TaskFactory`.  Имя элемента — это имя параметра.  Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`.  Имя элемента — это имя параметра.  Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -35,22 +36,22 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <ParameterGroup ParameterType="SystemType"  
     Output="true/false"  
     Required="true/false" />  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  
 
 |Атрибут|Описание:|  
 |---------------|-----------------|  
-|`ParameterType`|Необязательный атрибут.<br /><br /> Тип параметра .NET, например System.String.|  
+|`ParameterType`|Необязательный атрибут.<br /><br /> Тип параметра .NET, например `System.String`.|  
 |`Output`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи параметром вывода. Значение по умолчанию `false`.|  
-|`Required`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи обязательным параметром. Значение по умолчанию `false`.|  
+|`Required`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи обязательным. Значение по умолчанию `false`.|  
 
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/19/2018
 
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask``TaskFactory`.|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`.|  
 
 ## <a name="example"></a>Пример  
  В следующем примере показано использование элемента `Parameter`.  

@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480457"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Как: Включение и отключение изменить и продолжить (C#, VB, C++)
 Можно отключить или включить изменить и продолжить в **параметры** диалогового окна во время разработки. Этот параметр невозможно изменить в процессе отладки.  

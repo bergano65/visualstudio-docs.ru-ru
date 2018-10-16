@@ -1,5 +1,5 @@
 ---
-title: Точка, билинейной, Трилинейной и анизотропной фильтрации текстур варианты | Документы Microsoft
+title: Варианты точечной, билинейной, Трилинейной и анизотропной фильтрации текстур варианты | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8002a0f85d2e2e04ff061c1f156b6c8528d85d07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93b809bbb4a26ac759478e84e85fdccf5b05771e
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433240"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Варианты точечной, билинейной, трилинейной и анизотропной фильтрации текстур
 Переопределяет режим фильтрации для соответствующих дискретизаторов текстур.  
@@ -55,17 +56,17 @@ ms.lasthandoff: 04/18/2018
   
 -   `D3D11_FILTER_ANISOTROPIC`  
   
- В **Точечная фильтрация текстур** variant, режим фильтрации приложения заменяется `D3D11_FILTER_MIN_MAG_MIP_POINT`, в **билинейная фильтрация текстур** variant, оно будет заменено `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; и в **трилинейная фильтрация текстур** variant, оно будет заменено `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+ В **Точечная фильтрация текстур** variant, режим фильтрации приложения заменяется `D3D11_FILTER_MIN_MAG_MIP_POINT`, в списке **билинейная фильтрация текстур** variant, он заменяется `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; и в **трилинейная фильтрация текстур** variant, он заменяется `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
- В **анизотропная фильтрация текстур** variant, режим фильтрации приложения заменяется `D3D11_FILTER_ANISOTROPIC`, а максимальная Анизотропия равно 16.  
+ В **анизотропная фильтрация текстур** variant, режим фильтрации приложения заменяется `D3D11_FILTER_ANISOTROPIC`, и анизотропию Max равно 16.  
   
 ## <a name="restrictions-and-limitations"></a>Ограничения  
- В Direct3D на функциональном уровне 9.1 максимальная анизотропия равна 2x. Поскольку **анизотропная фильтрация текстур** пытается использовать исключительно 16-кратную анизотропию, воспроизведение завершается сбоем при запуске анализа кадров на устройстве с функциональным уровнем 9.1. К современным устройствам, на которые распространяется это ограничение, относятся планшеты Surface RT и Surface 2 с ОС Windows на основе архитектуры ARM. Ограничение также может распространяться на более старые GPU, которые, однако, выходят из употребления и встречаются все реже.  
+ В Direct3D на функциональном уровне 9.1 максимальная анизотропия равна 2x. Так как **анизотропная фильтрация текстур** variant пытается использовать исключительно 16-кратную анизотропию, воспроизведение завершается сбоем при запуске анализа кадров на устройстве функциональным уровнем 9.1. К современным устройствам, на которые распространяется это ограничение, относятся планшеты Surface RT и Surface 2 с ОС Windows на основе архитектуры ARM. Ограничение также может распространяться на более старые GPU, которые, однако, выходят из употребления и встречаются все реже.  
   
 ## <a name="example"></a>Пример  
  **Точечная фильтрация текстур** можно воспроизвести с помощью следующего кода:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;  
   
 // ... other sampler description setup ...  
@@ -79,7 +80,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ## <a name="example"></a>Пример  
  **Билинейная фильтрация текстур** можно воспроизвести с помощью следующего кода:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -93,7 +94,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ## <a name="example"></a>Пример  
  **Трилинейная фильтрация текстур** можно воспроизвести с помощью следующего кода:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -107,7 +108,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ## <a name="example"></a>Пример  
  **Анизотропная фильтрация текстур** можно воспроизвести с помощью следующего кода:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  

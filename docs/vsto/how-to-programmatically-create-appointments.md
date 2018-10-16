@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное создание встреч | Документы Microsoft'
+title: 'Практическое: программное создание встреч'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15fc247e088e435e19ea42b5920fe01f62d66859
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39584841638a242ab06323736556bc22260f91d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257752"
 ---
-# <a name="how-to-programmatically-create-appointments"></a>Практическое руководство. Программное создание встреч
-  В этом примере Создание встречи и добавление получателей запроса подтверждения встречи.  
+# <a name="how-to-programmatically-create-appointments"></a>Практическое: программное создание встреч
+  В этом примере создает встречи и добавление получателей запроса подтверждения встречи.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами календаря](../vsto/working-with-calendar-items.md)   
- [Как: программное создание пользовательского календаря](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Практическое руководство. Программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+ [Практическое: программное создание пользовательского календаря](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
+ [Практическое: программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

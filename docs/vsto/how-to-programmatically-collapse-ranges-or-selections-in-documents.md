@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное свертывание диапазонов и выделений в документах | Документы Microsoft'
+title: 'Практическое: программное свертывание диапазонов и выделений в документах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d4ce27e141e03b6a3cc84b00321026052893ad9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87a4b490b7cc7b1942723e6033117571bf08cba6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673944"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Практическое руководство. Программное свертывание диапазонов и выделений в документах
-  Если вы работаете с объектом <xref:Microsoft.Office.Interop.Word.Range> или <xref:Microsoft.Office.Interop.Word.Selection> , может потребоваться изменить выделение на точку вставки перед вставкой текста, чтобы избежать перезаписи существующего текста. Как <xref:Microsoft.Office.Interop.Word.Range> и <xref:Microsoft.Office.Interop.Word.Selection> объекты имеют свернуть метод, который использует <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> значения перечисления:  
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Практическое: программное свертывание диапазонов и выделений в документах
+  Если вы работаете с объектом <xref:Microsoft.Office.Interop.Word.Range> или <xref:Microsoft.Office.Interop.Word.Selection> , может потребоваться изменить выделение на точку вставки перед вставкой текста, чтобы избежать перезаписи существующего текста. Как <xref:Microsoft.Office.Interop.Word.Range> и <xref:Microsoft.Office.Interop.Word.Selection> объекты имеют свернуть метод, который использует <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> значений перечисления:  
   
 -   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> сворачивает выделение к началу выделения. Это значение по умолчанию, если не указано значение перечисления.  
   
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-collapse-a-range-and-insert-new-text"></a>Сворачивание диапазона и вставка нового текста  
+## <a name="to-collapse-a-range-and-insert-new-text"></a>Сворачивание диапазона и вставка нового текста  
   
 1.  Создайте объект <xref:Microsoft.Office.Interop.Word.Range> , состоящий из первого абзаца в документе.  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
   
-     Приведенный ниже пример кода можно использовать в надстройке VSTO. В этом примере кода используется активный документ.  
+     Следующий пример кода можно использовать в надстройке VSTO. В этом примере кода используется активный документ.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
@@ -68,20 +69,20 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
  [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
- Можно предположить, что вставка нового предложения выполняется перед символом абзаца, но это не так, поскольку исходный диапазон включает символ абзаца. Дополнительные сведения см. в разделе [как: программными средствами исключить абзаца метки при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+ Можно предположить, что вставка нового предложения выполняется перед символом абзаца, но это не так, поскольку исходный диапазон включает символ абзаца. Дополнительные сведения см. в разделе [как: программное исключение знаков абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-#### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Сворачивание диапазона в настройке на уровне документа  
+### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Сворачивание диапазона в настройке на уровне документа  
   
 1.  В следующем примере показан полный метод для настройки на уровне документа. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.  
   
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]  
   
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
   
-#### <a name="to-collapse-a-range-in-an-vsto-add-in"></a>Сворачивание диапазона в надстройке VSTO  
+### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>Сворачивание диапазона в надстройке VSTO  
   
 1.  В следующем примере показан полный метод для надстройки VSTO. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]  
   
 ## <a name="see-also"></a>См. также  
- [Как: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Как: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Как: программное извлечение символов начала и завершения в диапазонах](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Как: программное исключение знаков абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Как: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Практическое руководство. Программный сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  
+ [Практическое: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Практическое: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Практическое: программное Извлечение знаков начала и завершения в диапазонах](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Практическое: программное исключение знаков абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Практическое: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Практическое: программно сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Как: Заполнение документов данными из базы данных | Документы Microsoft'
+title: 'Практическое: Заполнение документов данными из базы данных'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,64 +16,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bfbdb5b71a84ea2f3ab9a86cc2d2df33213e5a98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af068fc9cdacc0f681232ee4c7424d67d77f3a11
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756805"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>Практическое руководство. Заполнение документов данными из базы данных
-  Доступ к данным в проектах уровня документа для Microsoft Office можно получить таким же образом, как при доступе к данным в проектах Windows Forms. Используйте те же средства и код для получения данных из базы данных в ваше решение. Также можно использовать элементы управления Windows Forms для отображения данных.  
-  
- Кроме того, данные можно показать с помощью элементов управления ведущего приложения. Элементы управления ведущего приложения представляют собой управляемые объекты Microsoft Office Word, дополненные событиями и функциями привязки данных. Для получения дополнительной информации см. [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
-  
- [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
-  
- В следующем примере показано, как добавить элементы управления с привязкой к данным в проекты на уровне документа с помощью конструктора. Пример добавления элементов управления с привязкой к данным в проектах надстройки VSTO во время выполнения см. в разделе [Пошаговое руководство: простая привязка данных в VSTO надстройки проекта](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
-  
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [привязка данных к Word 2007 содержимого элементов управления с помощью средств Visual Studio для Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
-  
-## <a name="adding-a-control-to-a-document-at-design-time"></a>Добавление элемента управления в документ во время разработки  
-  
-#### <a name="to-populate-a-document-with-data-from-a-database"></a>Заполнение документа данными из базы данных  
-  
-1.  Откройте проект уровня документа Word в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и откройте документ в конструкторе.  
-  
-2.  Откройте **источники данных** окно и создать источник данных из базы данных. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
-  
-3.  Перетащите нужное поле из **источники данных** в ваш документ.  
-  
- В документ добавляется элемент управления содержимым. Тип элемента управления содержимым зависит от типа данных выбранного поля. Для получения дополнительной информации см. [Content Controls](../vsto/content-controls.md).  
-  
- Можно добавить другой элемент управления, выбрав поле данных в **источники данных** и выбрав другой элемент управления из раскрывающегося списка.  
-  
-## <a name="objects-in-the-project"></a>Объекты в проекте  
- Кроме элемента управления, в проект автоматически добавляются следующие объекты, связанные с данными.  
-  
--   Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
-  
--   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных. Для получения дополнительной информации см. [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview).  
-  
--   Адаптер таблицы, который подключает типизированный набор данных к базе данных. Дополнительные сведения см. в разделе [создайте и настройте адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   TableAdapterManager, который используется для координации адаптеров таблицы в наборе данных для реализации иерархических обновлений. Дополнительные сведения см. в разделе [иерархическое обновление](../data-tools/hierarchical-update.md) и [TableAdapterManager ссылка](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).  
-  
- При выполнении проекта элемент управления отображает первую запись в источнике данных. Вы можете использовать <xref:System.Windows.Forms.BindingSource>, чтобы позволить пользователям прокручивать записи.  
-  
-#### <a name="to-scroll-through-the-records"></a>Прокрутка записей  
-  
--   Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.  
-  
- Сведения о том, как отправлять обновления типизированному набору данных и базы данных см. в разделе [как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
-  
-## <a name="see-also"></a>См. также  
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Добавление новых источников данных](/visualstudio/data-tools/add-new-data-sources)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Как: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [С помощью локальной базы данных файлов решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Подключение к данным в приложениях Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
-  
-  
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>Практическое: Заполнение документов данными из базы данных
+
+Доступ к данным в проектах уровня документа для Microsoft Office можно получить таким же образом, как при доступе к данным в проектах Windows Forms. Используйте те же средства и код для получения данных из базы данных в ваше решение. Также можно использовать элементы управления Windows Forms для отображения данных.
+
+Кроме того, данные можно показать с помощью элементов управления ведущего приложения. Элементы управления ведущего приложения представляют собой управляемые объекты Microsoft Office Word, дополненные событиями и функциями привязки данных. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
+
+[!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
+
+В следующем примере показано, как добавить элементы управления с привязкой к данным в проекты на уровне документа с помощью конструктора. Пример добавления элементов управления с привязкой к данным в проектах надстройки VSTO во время выполнения, см. в разделе [Пошаговое руководство: простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+
+![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [привязка данных к содержимому Word 2007 элементы управления с помощью Visual Studio Tools для системы Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
+
+## <a name="add-a-control-to-a-document-at-design-time"></a>Добавление элемента управления в документ во время разработки
+
+### <a name="to-populate-a-document-with-data-from-a-database"></a>Заполнение документа данными из базы данных
+
+1.  Откройте проект уровня документа Word в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и откройте документ в конструкторе.
+
+2.  Откройте **источников данных** окно и создать источник данных из базы данных. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+
+3.  Перетащите поле из **источников данных** окно в документ.
+
+В документ добавляется элемент управления содержимым. Тип элемента управления содержимым зависит от типа данных выбранного поля. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
+
+Можно добавить другой элемент управления, выбрав поле данных в **источников данных** окна и затем выбрав другой элемент управления из раскрывающегося списка.
+
+## <a name="objects-in-the-project"></a>Объекты в проекте
+
+Кроме элемента управления, в проект автоматически добавляются следующие объекты, связанные с данными.
+
+-   Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+
+-   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных. Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+
+-   TableAdapter, который подключает типизированный набор данных в базу данных. Дополнительные сведения см. в разделе [Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md).
+
+-   TableAdapterManager, который используется для координации адаптеров таблиц в наборе данных для реализации иерархических обновлений. Дополнительные сведения см. в разделе [иерархическое обновление](../data-tools/hierarchical-update.md) и [ссылку TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+
+При выполнении проекта элемент управления отображает первую запись в источнике данных. Вы можете использовать <xref:System.Windows.Forms.BindingSource>, чтобы позволить пользователям прокручивать записи.
+
+### <a name="to-scroll-through-the-records"></a>Прокрутка записей
+
+-   Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+
+Сведения о том, как отправлять обновления типизированному набору данных и базе данных, см. в разделе [как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+
+## <a name="see-also"></a>См. также
+
+- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Добавление новых источников данных](../data-tools/add-new-data-sources.md)
+- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Практическое: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Практическое: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Использовать файлы локальной базы данных в общие сведения о решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

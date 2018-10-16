@@ -10,11 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542381"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Практическое руководство. Разблокирование Visual Studio
 
@@ -26,14 +27,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Разблокировка Visual Studio с помощью подписки
 
-Чтобы разблокировать Visual Studio с помощью подписки MSDN или Visual Studio Team Service, связанной с учетной записью Майкрософт, рабочей или школьной учетной записью, сделайте следующее:
+Чтобы разблокировать Visual Studio с помощью подписки Visual Studio или организации Azure DevOps, связанной с учетной записью Майкрософт, рабочей или школьной учетной записью, сделайте следующее:
 
 1. Нажмите кнопку **Войти** в верхнем правом углу IDE (или выберите **Файл** > **Параметры учетной записи**, чтобы открыть диалоговое окно **Параметры учетной записи**, и нажмите кнопку **Вход**).
 
-1. Введите учетные данные для учетной записи Майкрософт, рабочей или школьной учетной записи. Visual Studio выполняет поиск подписки Visual Studio или Visual Studio Team Services, связанной с вашей учетной записью.
+1. Введите учетные данные для учетной записи Майкрософт, рабочей или школьной учетной записи. Visual Studio выполняет поиск подписки Visual Studio или организации Azure DevOps, связанной с вашей учетной записью.
 
 > [!IMPORTANT]
-> Visual Studio автоматически ищет связанные подписки при подключении к учетной записи Visual Studio Team Services из окна **Team Explorer**. При подключении к учетной записи Visual Studio Team Services вы можете войти, используя учетную запись Майкрософт и рабочую или школьную учетную запись. Если подписка для этой учетной записи пользователя существует, Visual Studio автоматически разблокирует интегрированную среду разработки.
+> Visual Studio автоматически ищет связанные подписки при подключении к организации Azure DevOps из окна инструментов **Team Explorer**. При подключении к организации Azure DevOps вы можете войти, используя учетную запись Майкрософт либо рабочую или школьную учетную запись. Если подписка для этой учетной записи пользователя существует, Visual Studio автоматически разблокирует интегрированную среду разработки.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Разблокирование Visual Studio с помощью ключа продукта
 

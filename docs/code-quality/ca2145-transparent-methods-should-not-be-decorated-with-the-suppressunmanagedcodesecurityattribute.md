@@ -11,14 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
-- cplusplus
-ms.openlocfilehash: 06ea700534bfb5306699409cde22bad2177f67b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+- multiple
+ms.openlocfilehash: 9299cb67b8c08b9179375e0ce2e709f2554883b1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547413"
 ---
 # <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: прозрачные методы не должны быть снабжены атрибутом SuppressUnmanagedCodeSecurityAttribute
+
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity|
@@ -27,18 +29,21 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод, метод, который отмечен атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> метода или типа, содержащего метод помечается <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута.
+
+Прозрачный метод, метод, отмеченный атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> метода или типа, который содержит метод помечается <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута.
 
 ## <a name="rule-description"></a>Описание правила
- Методы, имеющие <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута имеют неявную проверку LinkDemand после любой метод, который вызывает ее. Для этой проверки LinkDemand требуется, чтобы вызывающий код был критическим с точки зрения безопасности. Пометка метода, который использует SuppressUnmanagedCodeSecurity с <xref:System.Security.SecurityCriticalAttribute> атрибут, делает это требование более очевидным для метода.
+
+Методы снабжены атрибутом <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута имеют неявную проверку LinkDemand, при любой метод, который ее вызывает. Для этой проверки LinkDemand требуется, чтобы вызывающий код был критическим с точки зрения безопасности. Пометка метода, который использует SuppressUnmanagedCodeSecurity с <xref:System.Security.SecurityCriticalAttribute> атрибут, делает это требование более очевидным для метода.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, пометьте метод или тип с <xref:System.Security.SecurityCriticalAttribute> атрибута.
+
+Чтобы устранить нарушение этого правила, пометьте метод или тип с <xref:System.Security.SecurityCriticalAttribute> атрибута.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+
+Для этого правила отключать вывод предупреждений не следует.
 
 ### <a name="code"></a>Код
- [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute_1.cs)]
 
-### <a name="comments"></a>Комментарии
+[!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute_1.cs)]

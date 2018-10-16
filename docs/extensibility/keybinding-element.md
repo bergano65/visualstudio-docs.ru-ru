@@ -1,5 +1,5 @@
 ---
-title: Элемент соответствующие клавиши | Документы Microsoft
+title: Элемент KeyBinding | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226a5913cbaa151689a886dc88986f7de8cc29f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495301"
 ---
-# <a name="keybinding-element"></a>Элемент соответствующие клавиши
-Элемент соответствующие клавиши указывает сочетания клавиш для команд.  
+# <a name="keybinding-element"></a>Элемент KeyBinding
+Элемент KeyBinding указывает сочетания клавиш для команд.  
   
- Команды могут иметь одного и обоих сочетания клавиш, связанных с ними. Пример одной привязки ключей — CTRL + S для **Сохранить** команды. Двойная сочетания клавиш требуют двух последовательных сочетаний клавиш для запуска команды. Пример двойного привязки ключей — CTRL + K, CTRL + K, чтобы установить закладку.  
+ Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — **Ctrl * +** K **,** Ctrl**+** K **, чтобы установить закладку.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 <Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -40,13 +41,13 @@ ms.lasthandoff: 04/16/2018
 |---------------|-----------------|  
 |guid|Обязательно.|  
 |id|Обязательно.|  
-|редактор|Обязательно. Редактор GUID показывает контекст редактирования, для которого это сочетание клавиш будет активным. Значение области действия глобальные привязки — «guidVSStd97».|  
-|key1|Обязательно. Допустимые значения включают все прочтения буквы и цифры, а также шестнадцатеричные значения двух цифр, знаком 0 x и [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD1|Необязательный. Любое сочетание CTRL, ALT и клавишу SHIFT, через пробел.|  
-|key2|Необязательный. Допустимые значения включают все прочтения буквы и цифры, а также шестнадцатеричные значения двух цифр, знаком 0 x и [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD2|Необязательный. Любое сочетание CTRL, ALT и клавишу SHIFT, через пробел.|  
-|эмулятор|Необязательный.|  
-|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|редактор|Обязательно. Идентификатор GUID редактора указывает контекст редактирования, для которого будет всегда активной это сочетание клавиш. Значение области действия глобального привязки — «guidVSStd97».|  
+|key1|Обязательно. Допустимыми являются все прочтения буквенно-цифровые символы, а также шестнадцатеричные значения из двух цифр, предшествует 0 x и [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|MOD1|Необязательный. Любое сочетание **Ctrl**, **Alt**, и **Shift** разделяются пробелами.|  
+|key2|Необязательный. Допустимыми являются все прочтения буквенно-цифровые символы, а также шестнадцатеричные значения из двух цифр, предшествует 0 x и [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|MOD2|Необязательный. Любое сочетание **Ctrl**, **Alt**, и **Shift** разделяются пробелами.|  
+|Эмулятор|Необязательный.|  
+|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Группирует элементы соответствующие клавиши и других группирований сочетания клавиш.|  
+|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Группирует элементы сочетание клавиш и другими признаками сочетания клавиш.|  
   
 ## <a name="example"></a>Пример  
   
@@ -73,5 +74,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Элемент привязки клавиш](../extensibility/keybindings-element.md)   
- [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Элемент KeyBindings](../extensibility/keybindings-element.md)   
+ [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

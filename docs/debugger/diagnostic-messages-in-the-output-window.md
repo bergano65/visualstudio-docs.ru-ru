@@ -1,5 +1,5 @@
 ---
-title: Отправить диагностические сообщения в окне вывода | Документы Microsoft
+title: Отправлять диагностические сообщения в окне вывода | Документация Майкрософт
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -28,14 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252301"
 ---
-# <a name="send-diagnostic-messages-to-the-output-window"></a>Отправить диагностические сообщения в окне вывода
-Можно написать сообщения во время выполнения для **вывода** окна с помощью `Debug` класса или `Trace` класса, которые входят в состав из <xref:System.Diagnostics> библиотеки классов. Класс Debug используется, если необходимо выводить сообщение только в отладочной версии программы. Класс Trace используется в том случае, если необходимо выводить сообщение и в отладочной версии программы, и в выпускаемой.  
+# <a name="send-diagnostic-messages-to-the-output-window"></a>Отправлять диагностические сообщения в окне вывода
+Можно написать сообщения времени выполнения для **вывода** окна с помощью <xref:System.Diagnostics.Debug> класса или <xref:System.Diagnostics.Trace> класса, которые являются частью из <xref:System.Diagnostics> библиотеки классов. Используйте <xref:System.Diagnostics.Debug> , если необходимо выводить сообщение только в *Отладка* версии программы. Используйте <xref:System.Diagnostics.Trace> , если необходимо выводить сообщение в обоих *Отладка* и *выпуска* версий.  
   
 ## <a name="output-methods"></a>Методы вывода  
  Классы <xref:System.Diagnostics.Trace> и <xref:System.Diagnostics.Debug> предоставляют следующие методы вывода:  

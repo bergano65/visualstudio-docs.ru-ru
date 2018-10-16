@@ -1,32 +1,36 @@
 ---
-title: "JavaScript в Visual Studio | Документация Майкрософт"
-ms.custom: 
+title: JavaScript в Visual Studio | Документация Майкрософт
+ms.custom: ''
 ms.date: 04/10/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
-caps.latest.revision: 
+caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280042"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
 JavaScript — полноправный язык в Visual Studio. При написании кода JavaScript в интегрированной среде разработки Visual Studio можно использовать большинство или все стандартные средства редактирования (фрагменты кода, IntelliSense и т. д.). Код JavaScript можно написать для многих типов приложений и служб.
+
+> [!NOTE]
+> Мы подключили помощь сообщества, чтобы сделать [веб-документы MDN](https://developer.mozilla.org/en-US/) централизованным ресурсом разработки в Интернете, перенаправляя все (более 500 страниц) справочные материалы по API JavaScript корпорации Майкрософт с сайта docs.microsoft.com в их аналоги в MDN. Подробные сведения см. в этом [объявлении](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a> Поддержка ECMAScript 2015 (ES6) и более поздних версий
 
@@ -182,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 Предположим, что у нас есть проект со следующей конфигурацией:
 
 - Исходные файлы проекта находятся в папке `wwwroot/js`
-- Файлы библиотек проекта находятся в папке `wwwrrot/lib`
+- Файлы библиотек проекта находятся в папке `wwwroot/lib`
 - `bootstrap`, `jquery`, `jquery-validation` и `jquery-validation-unobtrusive` указаны в `bower.json`
 - Инструменты `kendo-ui` вручную добавлены в папку библиотеки
 
@@ -251,7 +255,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ### <a name="intellisensejs-extensions"></a>Расширения `.intellisense.js`
 
-Ранее вы могли создавать [расширения IntelliSense](https://msdn.microsoft.com/en-us/library/hh874692.aspx), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
+Ранее вы могли создавать [расширения IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
 Разрабатывать эти расширения было довольно сложно, а устанавливать их и ссылаться на них — неудобно, поэтому новая языковая служба больше не поддерживает эти файлы.
 В качестве более простой альтернативы вы можете написать файл определения TypeScript, который обеспечит все те же возможности для IntelliSense, которые раньше предлагались расширениями `.intellisense.js`.
 Дополнительные сведения о создании файлов объявлений (`.d.ts`) см. [здесь](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

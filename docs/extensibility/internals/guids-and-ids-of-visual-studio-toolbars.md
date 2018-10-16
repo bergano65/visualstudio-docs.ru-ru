@@ -1,5 +1,5 @@
 ---
-title: Идентификаторы GUID и идентификаторов панелей инструментов Visual Studio | Документы Microsoft
+title: Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,26 +19,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499010"
 ---
-# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторов панелей инструментов Visual Studio
-В этом разделе перечисляются значения GUID и ID панелей инструментов, которые включены в среде разработки Visual Studio (IDE) и групп они содержат. Эти значения определяются в vsct-файлами, которые устанавливаются как часть пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и группы](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторы Visual Studio панелей инструментов
+В этом разделе перечисляются значения GUID и идентификатор панели инструментов, включенных в среде разработки Visual Studio (IDE) и групп они содержат. Эти значения определены в *.vsct* файлы, которые устанавливаются как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]
->  Многие из панели инструментов, доступные в Visual Studio не определены в Visual Studio, а также их GUID и ID значения не являются открытыми. В этом разделе перечислены только панелей инструментов, которые определены в пакет SDK для Visual Studio vsct-файлами.  
+>  Многие из панели инструментов, доступные в Visual Studio не определены, Visual Studio, а также их GUID и идентификатор значения не являются открытыми. В этом разделе перечислены только панели инструментов, которые определены в пакете SDK для Visual Studio *.vsct* файлов.  
   
- Дополнительные сведения о работе с объектами интегрированной среды разработки, которые определены в vsct-файлами см. в разделе [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
+ Дополнительные сведения о том, как работать с объектами интегрированной среды разработки, которые определены в *.vsct* файлы, см. в разделе [расширить меню и команд](../../extensibility/extending-menus-and-commands.md).  
   
- Панели инструментов по умолчанию, предоставляемые в Интегрированной среде разработки Visual Studio используйте GUID `guidSHLMainMenu`, за исключением случаев, в противном случае значение задано с использованием синтаксиса GUID: ID.  
+ Панели инструментов по умолчанию, предоставляемые Visual Studio IDE используйте GUID `guidSHLMainMenu`, за исключением случаев, указано с помощью `GUID:ID` синтаксис.  
   
-## <a name="ide-toolbars"></a>Панели инструментов интегрированной среды разработки  
- Следующие панели инструментов, предоставляемых Visual Studio IDE. Панели инструментов могут отображаться, выбирая их в **панели инструментов** подменю **средства** меню. Панели инструментов в окнах инструментов не включаются в этом разделе.  
+## <a name="ide-toolbars"></a>Панели инструментов IDE  
+ Следующие панели инструментов, предоставляемых Visual Studio IDE. Можно отобразить, выбрав их на панели инструментов **панелей инструментов** подменю **средства** меню. Панели инструментов окна инструментов не включаются в этом разделе.  
   
- Только группы может просматривать непосредственно из панели инструментов. Чтобы добавить группу, присвоено значение родительского GUID и ID на панели инструментов. Чтобы добавить кнопку на панель инструментов, присвоено значение родительской группы на панели инструментов.  
+ Только группы можно полученные непосредственно из панели инструментов. Чтобы добавить группу, установите его родительского GUID и идентификатор панели инструментов. Чтобы добавить кнопку на панель инструментов, присвоить его родительского группы на панели инструментов.  
   
 |Toolbar|ID|  
 |-------------|--------|  
@@ -49,40 +50,40 @@ ms.lasthandoff: 04/16/2018
 |Место отладки|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>Специальные панели инструментов  
- Определенные этих панелей инструментов в интегрированной среде разработки Visual Studio, однако они служат специализированных функций и не размещайте группы команд.  
+ Эти панели инструментов определяются с помощью Visual Studio IDE, но они будут выполнять специализированные функции и не размещайте группы команд.  
   
 |Toolbar|ID|  
 |-------------|--------|  
-|Добавление команды|IDM_VS_TOOL_ADDCOMMAND|  
+|Команда Add|IDM_VS_TOOL_ADDCOMMAND|  
 |Не определено|IDM_VS_TOOL_UNDEFINED|  
-|схема XML|IDM_VS_TOOL_SCHEMA|  
-|XML-данных|IDM_VS_TOOL_DATA|  
+|XML-схемы|IDM_VS_TOOL_SCHEMA|  
+|данные XML|IDM_VS_TOOL_DATA|  
   
-## <a name="groups-on-the-ide-toolbars"></a>Группы на панелях инструментов интегрированной среды разработки  
- Чтобы добавить кнопку на стандартной панели инструментов, установите одно из следующих групп с родительским. Группы с сортировкой по родительской панели инструментов.  
+## <a name="groups-on-the-ide-toolbars"></a>Группы на панели инструментов интегрированной среды разработки  
+ Чтобы добавить кнопку на стандартной панели инструментов, задайте одно из следующих групп с родительским. Группы сортируются по родительской панели инструментов.  
   
 ### <a name="standard-toolbar-groups"></a>Стандартная панель инструментов группы  
   
 |name|ID|  
 |----------|--------|  
 |Сохранение и открытие|IDG_VS_TOOLSB_SAVEOPEN|  
-|Вырезания или копирования|IDG_VS_TOOLSB_CUTCOPY|  
+|Вырезания или копирования данных|IDG_VS_TOOLSB_CUTCOPY|  
 |Отменить/Повторить|IDG_VS_TOOLSB_UNDOREDO|  
-|Запуск и сборки|IDG_VS_TOOLSB_RUNBUILD|  
+|Запуск/Build|IDG_VS_TOOLSB_RUNBUILD|  
 |Поиск|IDG_VS_TOOLSB_SEARCH|  
 |Windows|IDG_VS_TOOLSB_WINDOWS|  
 |Новые окна|IDG_VS_TOOLSB_NEWWINDOWS|  
-|Загрузки и сохранения|IDG_VS_WINDOWUI_LOADSAVE|  
+|Загрузки или сохранения|IDG_VS_WINDOWUI_LOADSAVE|  
 |Датчик|IDG_VS_TOOLSB_GAUGE|  
   
-### <a name="build-toolbar-groups"></a>Построение группы на панели инструментов  
+### <a name="build-toolbar-groups"></a>Формировать группы панели инструментов  
   
 |name|ID|  
 |----------|--------|  
-|Панель построения|IDG_VS_BUILDBAR|  
+|Панель сборки|IDG_VS_BUILDBAR|  
 |Отмена|IDG_VS_BUILD_CANCEL|  
   
-### <a name="text-editor-toolbar-groups"></a>Панель инструментов редактора текстов групп  
+### <a name="text-editor-toolbar-groups"></a>Группы панели инструментов текстового редактора  
   
 |name|ID|  
 |----------|--------|  
@@ -91,7 +92,7 @@ ms.lasthandoff: 04/16/2018
 |Комментарий|IDG_VS_EDITTOOLBAR_COMMENT|  
 |Закладки|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-### <a name="debug-toolbar-groups"></a>Отладка инструментов группы  
+### <a name="debug-toolbar-groups"></a>Отладка группы панели инструментов  
   
 |name|ID|  
 |----------|--------|  
@@ -100,17 +101,17 @@ ms.lasthandoff: 04/16/2018
 |Контрольное значение|IDG_DEBUG_TOOLBAR_WATCH|  
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
   
-### <a name="debug-location-toolbar-groups"></a>Расположение группы инструментов отладки  
+### <a name="debug-location-toolbar-groups"></a>Отладка расположение панели инструментов группы  
   
 |name|ID|  
 |----------|--------|  
 |Место отладки|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
 ## <a name="tool-window-toolbars"></a>Панели инструментов окна инструментов  
- Панели инструментов могут появляться непосредственно в Интегрированной среде разработки или в окнах инструментов **обозревателе решений**. Так как окна инструментов не определены в vsct-файлами, панели инструментов окна инструментов не имеют определенных родительских узлов. Вместо этого их следует разместить в коде. Следующая таблица показывает панели инструментов, которые отображаются в окнах инструментов в Интегрированной среде разработки и группы команд, содержащихся в них.  
+ Панели инструментов могут появляться непосредственно в интегрированной среде разработки или в окнах инструментов **обозревателе решений**. Так как окна инструментов не определены в *.vsct* файлы, панели инструментов окна инструментов не определили родительских элементов. Вместо этого они размещаются в коде. Следующая таблица показывает, панелей инструментов, которые отображаются в окнах инструментов в интегрированной среде разработки и группы команд, которые они содержат.  
   
 > [!NOTE]
->  Панели инструментов и группы используйте GUID `guidSHLMainMenu`, за исключением случаев, в противном случае значение задано с использованием синтаксиса GUID: ID. Если для панели инструментов указан идентификатор GUID, это также относится к групп, которые получены из панели инструментов.  
+>  Панели инструментов и группы используют идентификатор GUID `guidSHLMainMenu`, за исключением случаев, указано с помощью синтаксиса GUID: ID. Там, где для панели инструментов указан идентификатор GUID, оно также применяется в группы, которые получены из панели инструментов.  
   
 |Окно инструментов|Toolbar|Группы|  
 |-----------------|-------------|------------|  
@@ -133,10 +134,10 @@ ms.lasthandoff: 04/16/2018
 |Обозреватель вызовов|IDM_VS_TOOL_CALLBROWSER1... 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
 |Точки останова|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
 |Дизассемблированный код|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
-|Память 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
+|Память 1 – 4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
 |Процессы|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
 ## <a name="see-also"></a>См. также  
- [Контроллер меню добавляется на панель инструментов](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
- [Добавление панели инструментов в окне инструментов](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Добавить контроллер меню в панели инструментов](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+ [Добавление панели инструментов окна инструментов](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Меню идентификаторы GUID и идентификаторы Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

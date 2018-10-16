@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464889"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Обращается к введенного исходного кода, хранящийся в источнике данных для доступа к интерфейсу отладки.  

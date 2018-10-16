@@ -1,5 +1,5 @@
 ---
-title: Запуск отладчика | Документы Microsoft
+title: Запуск отладчика | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2606e0f6c7d5dfe17e4c82528c36b3f7cdc26c5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231120"
 ---
-# <a name="launching-the-debugger"></a>Запуск отладчика
-Запуск отладчика требуется отправить правильной последовательности, методов и событий с их соответствующие атрибуты.  
+# <a name="launch-the-debugger"></a>Запуск отладчика
+Запуск отладчика требуется отправить правильную последовательность методов и событий с использованием их соответствующие атрибуты.  
   
-## <a name="sequences-of-methods-and-events"></a>Последовательности, методов и событий  
+## <a name="sequences-of-methods-and-events"></a>Последовательности методы и события  
   
-1.  Диспетчер сеансов отладки (SDM) называется, выбрав **отладки** меню, а затем выберите **запустить**. В разделе [запустив программу](../../extensibility/debugger/launching-a-program.md) для получения дополнительной информации.  
+1.  Диспетчер отладки сеансов (SDM) называется, выбрав **Отладка** меню, а затем выбрать **запустить**. Дополнительные сведения см. в разделе [запускать программу](../../extensibility/debugger/launching-a-program.md).  
   
 2.  Вызовы SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод.  
   
-3.  На основе модели процесса отладки ядра (DE), `IDebugProgramNodeAttach2::OnAttach` метод возвращает одно из следующих методов, которые определяет дальнейший ход событий.  
+3.  На основе модели процесса отладки ядра (DE), `IDebugProgramNodeAttach2::OnAttach` метод возвращает одно из следующих методов, которые определяет, что будет дальше.  
   
-     Если `S_FALSE` возвращается, ядро отладки (DE) — для загрузки процессе виртуальной машины.  
+     Если `S_FALSE` возвращает модуль отладки (DE), будет необходимо загрузить процессе виртуальной машины.  
   
      - или -  
   
-     Если `S_OK` возвращается, DE является для загрузки в процессе из SDM. Затем SDM выполняет следующие задачи:  
+     Если `S_OK` возвращает, DE необходимо загрузить в процессе из SDM. SDM выполняет следующие задачи:  
   
-    1.  Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) для получения информация DE для поисковых систем.  
+    1.  Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.  
   
     2.  Совместно создает DE.  
   
-    3.  Вызовы [присоединения](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+    3.  Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 4.  Отправляет DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) для SDM с `EVENT_SYNC` атрибута.  
   
@@ -54,5 +55,5 @@ ms.lasthandoff: 04/16/2018
 8.  Отправляет DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) для SDM с `EVENT_SYNC` атрибута.  
   
 ## <a name="see-also"></a>См. также  
- [Вызов события отладчика](../../extensibility/debugger/calling-debugger-events.md)   
+ [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)   
  [Запуск программы](../../extensibility/debugger/launching-a-program.md)

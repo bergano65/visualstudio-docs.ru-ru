@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476635"
 ---
 # <a name="window-search-dialog-box"></a>Диалоговое окно "Поиск окна"
 Используйте это диалоговое окно предназначено для поиска и выбора узла для заданного окна в [представление окон](../debugger/windows-view.md). Чтобы отобразить это диалоговое окно предназначено, перемещение фокуса окну представления Windows. Выберите **Поиск окна** из **поиска** меню.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b968ead26d632c70f0b1adc8864600769629a90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3236530c1a7b92fd1cba1bdd61e3e1c0973b58c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669253"
 ---
 # <a name="synchronization-time"></a>Время синхронизации
 Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории синхронизации. Если поток помечается как заблокированный в процессе синхронизации, подразумевается одно из следующего:  
@@ -30,4 +31,4 @@ ms.lasthandoff: 04/19/2018
  Чтобы понять исходную причину события блокировки потока, внимательно просмотрите стеки вызовов блокировки и отчеты профилей.  
   
 ## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

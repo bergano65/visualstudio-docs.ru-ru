@@ -10,14 +10,14 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746628"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077819"
 ---
-# <a name="xaml-errors-and-warnings"></a>Ошибки и предупреждения XAML
+# <a name="xaml-errors-and-warnings"></a>Ошибки и предупреждения XAML
 
 В Visual Studio создаваемый код XAML анализируется при вводе. При обнаружении ошибки в строке кода появляется волнистая линия. Если навести на нее указатель мыши, отобразятся дополнительные сведения об ошибке или предупреждении. Для некоторых ошибок и предупреждений отображается значок лампочки быстрого действия. А если нажать клавиши **Ctrl**+**.**, появятся варианты устранения проблемы.
 

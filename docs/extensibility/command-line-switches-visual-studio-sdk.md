@@ -1,5 +1,5 @@
 ---
-title: Параметры командной строки (Visual Studio SDK) | Документы Microsoft
+title: Параметры командной строки (пакет SDK для Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,22 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3680163c4b61313c1bbc3b64b39640e9dcc88afa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 436839d9b6a5e55a91bcbad3ca9edc153782101d
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233065"
 ---
-# <a name="command-line-switches-visual-studio-sdk"></a>Параметры командной строки (SDK для Visual Studio)
-Devenv.exe, исполняемый объект, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), поддерживает параметры командной строки, специально предназначенных для разработки пакетов VSPackage. Пакеты VSPackage могут также предлагать свои собственные переключатели командной строки Devenv. Следующие разделы предоставляют сведения об использовании параметров командной строки в Интегрированной среде разработки.  
+# <a name="command-line-switches-visual-studio-sdk"></a>Параметры командной строки (Visual Studio SDK)
+*Devenv.exe*, исполняемый файл, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), поддерживает параметры командной строки специально для разработки пакетов VSPackage. Пакеты VSPackage могут также предлагать свои собственные переключатели командной строки Devenv. Ниже представлены сведения о том, как использовать параметры командной строки в интегрированной среде разработки.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Параметры командной строки для команды devenv для разработки VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
- Описание параметров командной строки Devenv, которые можно использовать для упрощения разработки VSPackage, отладки и развертывания.  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Параметры командной строки devenv для разработки VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
+ Описывает параметры командной строки Devenv, которые можно использовать для упрощения разработки VSPackage, отладки и развертывания.  
   
- [Добавление параметров командной строки](../extensibility/adding-command-line-switches.md)  
- Описывает, как реализовать, найти и прочитать пользователь ввел параметры командной строки для пакета.  
+ [Добавить параметры командной строки](../extensibility/adding-command-line-switches.md)  
+ Описывает способ реализации, искать и введенный пользователем параметров командной строки, для пакета.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)  
- Объясняет, как Devenv позволяет задавать различные параметры для интегрированной среды разработки и как можно скомпилировать, построения и отладки проектов из командной строки. Кроме того отсутствует информация о синтаксисе Devenv коммутаторов и таблице параметров.
+ [Параметры командной строки для devenv](../ide/reference/devenv-command-line-switches.md)  
+ Объясняет, как Devenv позволяет установить различные параметры для интегрированной среды разработки, а также как вы можете компилировать, сборки и отладки проектов из командной строки. Кроме того есть сведения о синтаксисе параметры команды Devenv и таблицы параметров.

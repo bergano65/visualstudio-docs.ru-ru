@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479907"
 ---
 # <a name="debugging-preparation-windows-services"></a>Подготовка к отладке: службы Windows
 Служба Windows – это программа, которая выполнятся в фоновом режиме в Microsoft Windows. Примерами таких служб является служба Telnet и служба времени Windows, изменяющая часы, отображаемые на рабочем столе. Служба Windows не может быть запущена из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; ее необходимо запускать из диспетчера управления службами. Дополнительные сведения см. в разделе [создание служб Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [отладка служб Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), и [приложения служб Windows](/dotnet/framework/windows-services/index).  

@@ -16,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be4efbd197a8146789b9646f6b5c467cc42815b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 143a094375871bf8073999f89d7fac5d6df01b4f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551864"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: следует высвобождать высвобождаемые поля
+
 |||
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
@@ -31,26 +33,28 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> , объявляет поля, которые относятся к типам, которые также реализуют <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Метод поля не вызывается <xref:System.IDisposable.Dispose%2A> метод объявляющего типа.
+ Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> объявляет поля, имеющие типы, которые также реализуют <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Не вызывается метод поля <xref:System.IDisposable.Dispose%2A> метод объявляющего типа.
 
 ## <a name="rule-description"></a>Описание правила
- Тип отвечает за освобождение все неуправляемые ресурсы; Это достигается путем реализации <xref:System.IDisposable>. Это правило проверяет, является ли удаляемого типа `T` объявляет поле `F` который является экземпляром освобождаемого типа `FT`. Для каждого поля `F`, правило пытается найти вызов `FT.Dispose`. Правило выполняет поиск методов, вызываемых `T.Dispose`и один уровень вниз (методы, вызываемые методы, вызываемые `FT.Dispose`).
+ Тип несет ответственность за освобождение все неуправляемые ресурсы; Это достигается путем реализации <xref:System.IDisposable>. Это правило проверяет, является ли уничтожаемого типа `T` объявляет поле `F` , являющийся экземпляром уничтожаемого типа `FT`. Для каждого поля `F`, правило пытается найти вызов `FT.Dispose`. Правило выполняет поиск методов, вызываемых `T.Dispose`и один уровень вниз (методы, вызываемые методы, вызываемые `FT.Dispose`).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, вызовите <xref:System.IDisposable.Dispose%2A> на поля, имеющие типы, реализующие <xref:System.IDisposable> Если вы несете ответственность за выделение и освобождение неуправляемых ресурсов, содержащихся в полях.
+ Чтобы устранить нарушение этого правила, вызовите <xref:System.IDisposable.Dispose%2A> для полей, типов, реализующих <xref:System.IDisposable> Если вы несете ответственность за выделение и освобождение неуправляемых ресурсов, содержащихся в полях.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила, если вы не отвечает для освобождения ресурсов, содержащихся в полях, или вызов <xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правила проверки.
+ Это безопасно подавить предупреждение из этого правила, если вы не несете ответственность за освобождение ресурсов, содержащихся в полях, или в том случае, если вызов <xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правило проверки.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип `TypeA` , реализующий <xref:System.IDisposable> (`FT` в описании previosu).
+ В следующем примере показано типом `TypeA` , реализующий <xref:System.IDisposable> (`FT` в обсуждении previosu).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип `TypeB` , нарушающий это правило, объявив поле `aFieldOfADisposableType` (`F` в описании выше) как удаляемого типа (`TypeA`) и не вызывает метод <xref:System.IDisposable.Dispose%2A> по полю. `TypeB` соответствует `T` в описании выше.
+ В следующем примере показано типом `TypeB` , нарушает это правило, объявив поле `aFieldOfADisposableType` (`F` в описании выше) как уничтожаемого типа (`TypeA`) без вызова <xref:System.IDisposable.Dispose%2A> по полю. `TypeB` соответствует `T` в предыдущем описании.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.IDisposable?displayProperty=fullName> [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)

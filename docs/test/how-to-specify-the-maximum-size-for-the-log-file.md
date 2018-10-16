@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7faf5402f495eefe64000c67048bcb85c9197388
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379401"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Практическое руководство. Указание максимального размера файла журнала для нагрузочных тестов
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="specify-the-maximum-log-file-size-for-load-test"></a>Указание максимального размера файла журнала для нагрузочного теста
 
-1.  Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config.
+1.  Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*.
 
 2.  Найдите параметр `<add key="LogSizeLimitInMegs" value="20"/>` в теге `<appSettings>`.
 
@@ -45,5 +46,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Изменение параметров ведения журнала нагрузочного теста](../test/modify-load-test-logging-settings.md)
+- [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)

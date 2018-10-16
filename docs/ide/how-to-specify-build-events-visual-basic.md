@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746212"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 
@@ -128,7 +129,7 @@ ms.lasthandoff: 05/07/2018
 
 1.  Создайте приложение Windows для проекта, который должен быть опубликован. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.
 
-2.  В диалоговом окне **Новый проект** в узле **Visual Basic** выберите  **Классический рабочий стол Windows**, а затем шаблон **Приложение Windows Forms**. Задайте для проекта имя `VBWinApp`.
+2.  В диалоговом окне **Новый проект** в узле **Visual Basic** выберите **Рабочий стол Windows**, а затем шаблон **Приложение Windows Forms**. Задайте для проекта имя `VBWinApp`.
 3.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните пункт **Свойства**.
 
 4.  В **конструкторе проектов** перейдите на страницу **Публикация** и для параметра **Расположение публикации** задайте значение *C:\TEMP*.

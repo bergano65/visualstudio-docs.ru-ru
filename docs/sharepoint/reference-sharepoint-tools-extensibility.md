@@ -1,5 +1,5 @@
 ---
-title: Ссылки (расширения средств SharePoint) | Документы Microsoft
+title: Ссылки (расширения средств SharePoint) | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75bbdadba08ecb16dd789242feb1b2e2a204981d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119361"
 ---
-# <a name="reference-sharepoint-tools-extensibility"></a>Справочные материалы (расширения средств SharePoint)
+# <a name="reference-sharepoint-tools-extensibility"></a>Справочник по (расширения средств SharePoint)
   Этот раздел содержит справочную документацию для расширения инструментов SharePoint в Visual Studio.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
- Содержит справочную документацию по схеме SPDATA-файл.  
+## <a name="in-this-section"></a>Содержание раздела
+ [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ Содержит справочную документацию по *.spdata* файл схемы.  
   
  [Справочник по API &#40;расширения средств SharePoint&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
  Содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.  
   
-## <a name="see-also"></a>См. также  
- [Расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  
+## <a name="see-also"></a>См. также
+ [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   

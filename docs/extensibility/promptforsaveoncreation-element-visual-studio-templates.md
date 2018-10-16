@@ -1,5 +1,5 @@
 ---
-title: Элемент PromptForSaveOnCreation (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент PromptForSaveOnCreation (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638447"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны проектов Visual Studio)
-Указывает, будет ли пользователю предлагается ввести место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть временного проекта создается).  
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны Visual Studio)
+Указывает, запрашивается ли пользователь в место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть будет создаваться временный проект.)  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -30,11 +31,11 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -45,22 +46,22 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться сохранения расположения при создании нового проекта.  
+ Этот текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться для сохранения расположение при создании нового проекта.  
   
 ## <a name="remarks"></a>Примечания  
  `PromptForSaveOnCreation` — это необязательный элемент. Значение по умолчанию — `false`.  
   
- Временные проекты, проекты, которые могут создавать и изменять без сохранения содержимого проекта на диске.  
+ Временный проект — это проекты, которые можно создавать и изменять без сохранения содержимого проекта на диске.  
   
 ## <a name="example"></a>Пример  
- В следующем примере задается значение `PromptForSaveOnCreation` равно `false`, которое указывает, чтобы разрешить проекта, который будет создан как временный проект.  
+ В следующем примере значение `PromptForSaveOnCreation` равным `false`, которое указывает, что проект может создаваться как временный проект.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,5 +89,5 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

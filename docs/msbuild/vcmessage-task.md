@@ -1,7 +1,7 @@
 ---
 title: Задача VCMessage | Документы Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8ef67a4fa19bd715e73e50fcc268aee7a4df5d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154143"
 ---
-# <a name="vcmessage-task"></a>Задача VCMessage
+# <a name="vcmessage-task"></a>VCMessage - задача
 Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке.  
   
 ## <a name="remarks"></a>Примечания  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|  
 |**Аргументы**|Необязательный параметр типа **String**.<br /><br /> Разделенный точками с запятой список отображаемых сообщений.|  
 |**Код**|Обязательный параметр **string**.<br /><br /> Номер ошибки, определяющий сообщение.|  
-|**Type**|Необязательный параметр типа **String**.<br /><br /> Задает тип выдаваемого сообщения. Укажите `"Warning"`, чтобы выдать предупреждающее сообщение, или `"Error"`, чтобы выдать сообщение об ошибке.|  
+|**Type**|Необязательный параметр типа **String**.<br /><br /> Задает тип выдаваемого сообщения. Укажите "Предупреждение", чтобы выдать предупреждающее сообщение, или "Ошибка", чтобы выдать сообщение об ошибке.|  
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

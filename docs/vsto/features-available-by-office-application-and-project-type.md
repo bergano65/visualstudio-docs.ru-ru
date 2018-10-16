@@ -1,5 +1,5 @@
 ---
-title: Тип функции, доступные по приложений Office и проектов
+title: Введите доступность функций по типам приложений и проектов
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4b0c4ea5ec07fec187c5fa377239cdec2ccceb5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674361"
 ---
-# <a name="features-available-by-office-application-and-project-type"></a>Тип функции, доступные по приложений Office и проектов
+# <a name="features-available-by-office-application-and-project-type"></a>Введите доступность функций по типам приложений и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:  
   
 -   Настройки на уровне документа.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
 |Настройки уровня документа.|Excel<br /><br /> Слово|  
 |Надстройки VSTO|Excel<br /><br /> InfoPath (только InfoPath 2013 и InfoPath 2010).<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Visio<br /><br /> Слово<br /><br /> Excel|  
   
-## <a name="features-available-in-different-project-types"></a>Функции, доступные в различных типах проектов  
+## <a name="features-available-in-different-project-types"></a>Функции, доступные в различных типов проектов  
  В следующей таблице показано, какие возможности доступны в каких типах проектов.  
   
 |Функция|Типы проектов, предоставляющие функцию|Дополнительные сведения|  
@@ -56,19 +57,19 @@ ms.lasthandoff: 05/22/2018
 |Панель действий.|Проекты уровня документа.|[Общие сведения о панели действий](../vsto/actions-pane-overview.md)|  
 |Развертывание ClickOnce.|Проекты VS и уровня документа.|[Развертывание решения Office](../vsto/deploying-an-office-solution.md)|  
 |Настраиваемые области задач.|Проекты надстроек VSTO для следующих приложений:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 и InfoPath 2010 только)<br />-Outlook<br />-PowerPoint<br />-Word|[Настраиваемые области задач](../vsto/custom-task-panes.md)|  
-|Пользовательские XML-части.|Проекты уровня документа.<br /><br /> Проекты уровня приложения для следующих приложений:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Общие сведения о пользовательских частей XML](../vsto/custom-xml-parts-overview.md)|  
+|Пользовательские XML-части.|Проекты уровня документа.<br /><br /> Проекты уровня приложения для следующих приложений:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)|  
 |Кэш данных.|Проекты уровня документа.|[Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md)|  
 |Предоставление объекта в надстройке VSTO другим решениям Microsoft Office.|Проекты надстроек VSTO.|[Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|Следующие элементы управления ведущего приложения:<br /><br /> — Создание диаграмм<br />-Элемент управления ListObject<br />-NamedRange<br />-Элементы управления содержимым<br />-Закладки|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для Word и Excel.|[Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)|  
+|Следующие элементы управления ведущего приложения:<br /><br /> -Диаграммы<br />-ListObject<br />-NamedRange<br />-Элементы управления содержимым<br />-Bookmark|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для Word и Excel.|[Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)|  
 |Следующие элементы управления ведущего приложения:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Проекты уровня документа.|[Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)|  
-|Развертывание нескольких проектов.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Развертывание нескольких решений Office в одном установщике ClickOnce](http://msdn.microsoft.com/en-us/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Развертывание нескольких проектов.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Развертывание нескольких решений Office в составе одного установщика ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Области формы Outlook.|Проекты надстроек VSTO для Outlook.|[Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Действия, выполняемые после развертывания.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Скопируйте документ на компьютере конечного пользователя после установки с помощью ClickOnce](http://msdn.microsoft.com/en-us/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Действия, выполняемые после развертывания.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Скопируйте документ на компьютер конечного пользователя после установки ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Настройки ленты.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для следующих приложений:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 и InfoPath 2010 только)<br />-Outlook<br />-PowerPoint<br />-Проект<br />-Visio<br />-Word|[Обзор ленты](../vsto/ribbon-overview.md)|  
 |Визуальный конструктор документов.|Проекты уровня документа.|[Проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>См. также  
- [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   

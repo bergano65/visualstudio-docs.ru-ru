@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749233"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175739"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 Это диалоговое окно позволяет изменять стандартное поведение редактора кода. Эти параметры также применяются к другим редакторам, основанным на редакторе кода, таким как представление исходного кода в конструкторе HTML. Чтобы открыть это диалоговое окно, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните подпапку **Все языки**, а затем выберите **Общие**.

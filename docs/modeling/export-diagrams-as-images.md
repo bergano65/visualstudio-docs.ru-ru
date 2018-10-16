@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858528"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
-В Visual Studio можно сохранить схем моделирования в форматах только для чтения, чтобы совместно использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используйте ту же версию Visual Studio.
+В Visual Studio можно сохранить схем моделирования в форматах только для чтения таким образом, вы можете использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используйте ту же версию Visual Studio.
 
- Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее части в другое приложение
 
@@ -34,11 +35,11 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде XPS-файла
 
-1.  На **файл** меню, нажмите кнопку **печати** Открытие **печати** диалоговое окно.
+1.  На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.
 
-2.  В **имя** выберите **записи XPS-документов Microsoft**, а затем нажмите кнопку **ОК**.
+2.  В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.
 
-3.  В **сохраните файл как** диалоговое окно, сохраните файл под именем **документа XPS (\*расширением XPS)** файла.
+3.  В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.
 
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
 

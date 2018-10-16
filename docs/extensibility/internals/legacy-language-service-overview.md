@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131753"
 ---
 # <a name="legacy-language-service-overview"></a>Общие сведения о службе языка прежних версий
 Языковая служба поддерживает возможности редактора, позволяет реализовать определенные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты. Классы Managed Package Framework (MPF) языка службы предоставляют полную поддержку для часто используемых функций и частичная поддержка других возможностей.  

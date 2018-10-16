@@ -1,5 +1,5 @@
 ---
-title: Customdatasignature-элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент CustomDataSignature (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f56f9b2ffcb09ea8399b6d949cc781f5a99e7c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500648"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature - элемент (шаблоны Visual Studio)
-Указывает текстовая сигнатура для поиска в пользовательских данных.  
+# <a name="customdatasignature-element-visual-studio-templates"></a>Элемент CustomDataSignature (шаблоны Visual Studio)
+Задает текст подписи для поиска пользовательских данных.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 <CustomDataSignature>"string"</CustomDataSignature>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -44,18 +45,18 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст является строка, которая содержит текстовую подпись, которая требуется для поиска в пользовательских данных.  
+ Текст — это строки, которая содержит текстовую подпись, которая необходим для поиска пользовательских данных.  
   
 ## <a name="remarks"></a>Примечания  
  `CustomDataSignature` — это необязательный элемент.  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

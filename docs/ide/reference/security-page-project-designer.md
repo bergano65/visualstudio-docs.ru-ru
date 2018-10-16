@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949583"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 

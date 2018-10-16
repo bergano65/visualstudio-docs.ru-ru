@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление пользовательских XML-частей для настроек на уровне документа'
+title: 'Практическое: Добавление пользовательских частей XML в настройках уровня документа'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,19 +20,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d29515e9e8a1320975fb343ae101db21924d9767
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675270"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Как: Добавление пользовательских XML-частей для настроек на уровне документа
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Практическое: Добавление пользовательских частей XML в настройках уровня документа
   XML-данные можно сохранять в книге Microsoft Office Excel или документе Microsoft Office Word путем создания настраиваемой XML-части в настройке на уровне документа. Дополнительные сведения см. в разделе [Общие сведения о частях XML настраиваемого](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Visual Studio не предоставляет проекты уровня документа для Microsoft Office PowerPoint. Сведения о добавлении пользовательской XML-части в презентацию PowerPoint с использованием надстройки VSTO см. в разделе [как: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+>  Visual Studio не предоставляет проекты уровня документа для Microsoft Office PowerPoint. Сведения о добавлении пользовательской XML-части в презентацию PowerPoint с помощью надстройки VSTO, см. в разделе [как: Добавление пользовательских XML-частей в документы с помощью VSTO Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Добавление пользовательской XML-части в книгу Excel  
   
@@ -60,6 +61,6 @@ ms.lasthandoff: 05/25/2018
  Для простоты в этом примере используется XML-строка, которая определена как локальная переменная в методе. Обычно следует получать XML из внешнего источника, например файла или базы данных.  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о пользовательских частей XML](../vsto/custom-xml-parts-overview.md)   
- [Как: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+ [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)   
+ [Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   

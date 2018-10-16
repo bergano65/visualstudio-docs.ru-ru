@@ -1,5 +1,5 @@
 ---
-title: 'Как: Создание настраиваемых текстовых маркеров | Документы Microsoft'
+title: 'Практическое: Создание настраиваемых текстовых маркеров | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c44a507cc291b203fc9ba330b248a854f61b81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636351"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Как: Создание настраиваемых текстовых маркеров
-Если требуется создать пользовательские текстовая метка выделить или организации кода, необходимо выполнить следующие действия:  
+# <a name="how-to-create-custom-text-markers"></a>Практическое: Создание настраиваемых текстовых маркеров
+Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:  
   
--   Регистрация текстового маркера доступа к нему другие средства  
+-   Зарегистрируйте текстового маркера доступа к ней другие средства.  
   
--   Реализация по умолчанию и конфигурации текстовой метки  
+-   Предоставляют реализации по умолчанию и конфигурация текстового маркера.  
   
--   Создать службу, которая может использоваться другими процессами, чтобы сделать использование текстовой метки  
+-   Создание службы, который может использоваться другими процессами, чтобы сделать использование текстового маркера.  
   
- Дополнительные сведения о том, как применить текстовая метка в область кода, в разделе [как: использование текстовых маркеров](../extensibility/how-to-use-text-markers.md).  
+ Сведения о способах применения текстового маркера в область кода, см. в разделе [как: использовать текстовые метки](../extensibility/how-to-use-text-markers.md).  
   
-### <a name="to-register-a-custom-marker"></a>Для регистрации пользовательских маркеров  
+## <a name="to-register-a-custom-marker"></a>Чтобы зарегистрировать пользовательский маркер  
   
 1.  Создайте запись реестра следующим образом:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >*маркеры \Text Editor\External\\*\<MarkerGUID >*  
+     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >*— `GUID` используется для идентификации добавляемого маркера  
+     *\<MarkerGUID >* является `GUID` используется для идентификации добавляемого маркера  
   
-     *\<Версия >* версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], например 8.0  
+     `<Version>` — Это версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], например 8.0  
   
-     *\<PackageGUID >* — это GUID пакета VSPackage, реализующий объект автоматизации.  
+     `<PackageGUID>` Идентификатор GUID пакета VSPackage реализует объект автоматизации.  
   
     > [!NOTE]
-    >  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* может быть переопределен с альтернативным корнем при инициализации оболочки Visual Studio, дополнительная информация [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
+    >  Путь к корневому каталогу **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии >** может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Создание четырех значений в группе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >*\Text Editor\External маркеры\\*\<MarkerGUID >*  
+2.  Создайте четыре значения в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
   
     -   (Значение по умолчанию)  
   
@@ -55,42 +56,42 @@ ms.lasthandoff: 04/16/2018
   
     -   Пакет  
   
-    -   `Default` является необязательным элементом типа REG_SZ. Если задано значение параметра является строкой, содержащей некоторые полезные идентификационные данные, например «Custom текстовая метка».  
+    -   `Default` является необязательным элементом типа REG_SZ. Если задано, значение параметра является строка, содержащая некоторые полезные идентификационные данные, например «Custom текстового маркера».  
   
-    -   `Service` запись типа REG_SZ содержащего строка GUID службы, которая предоставляет пользовательский текст маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат: {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Service` — запись типа REG_SZ, содержащий строку идентификатора GUID службы, которая предоставляет настраиваемые текстового маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` запись типа REG_SZ, содержащий идентификатор ресурса с именем пользовательского текстовой метки. Формат — #YYYY.  
+    -   `DisplayName` запись типа REG_SZ, содержащая идентификатор ресурса имени пользовательского текстового маркера. Формат — #YYYY.  
   
-    -   `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющего службу, создаваемых в рамках службы. Формат: {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющий службы отображается в узле службы. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-### <a name="to-create-a-custom-text-marker"></a>Для создания маркера пользовательского текста  
+## <a name="to-create-a-custom-text-marker"></a>Для создания маркера пользовательского текста  
   
 1.  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
-     Реализации этого интерфейса определяет поведение и внешний вид ваш тип пользовательского маркера.  
+     Реализации этого интерфейса определяет поведение и внешний вид вашего пользовательского типа маркера.  
   
-     Этот интерфейс называется  
+     Этот интерфейс вызывается, когда  
   
-    1.  Пользователь запускает интегрированную среду разработки в первый раз.  
+    1.  Пользователь запускает интегрированной среды разработки в первый раз.  
   
-    2.  Пользователь выбирает **сброс значения по умолчанию** под заголовком **шрифты и цвета** на странице свойств в **среды** папка на левой панели  **Параметры** диалоговое окно полученный от **средства** меню интегрированной среды разработки.  
+    2.  Пользователь выбирает **сбросить значение по умолчанию —** под кнопкой **шрифты и цвета** страницы свойств в **среды** папка на левой панели  **Параметры** получен диалоговое окно **средства** меню интегрированной среды разработки.  
   
-2.  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> метод, указывая, что `IVsPackageDefinedTextMarkerType` реализации должны быть возвращаются в зависимости от типа маркера GUID, указанный в вызове метода.  
+2.  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> метод, указывая, что `IVsPackageDefinedTextMarkerType` реализации должны быть возвращаются в зависимости от типа маркера идентификатор GUID, указанный в вызове метода.  
   
-     Окружение вызывает этот метод первый во время вашего типа пользовательских маркеров создается и указывает идентификатор GUID, определяющий тип пользовательского маркера.  
+     Среда вызывает этот метод первый раз создается вашего пользовательского типа маркера, а также указывает идентификатор GUID, указывающий тип пользовательского маркера.  
   
-### <a name="to-proffer-your-marker-type-as-a-service"></a>Чтобы proffer ваш тип маркера в качестве службы  
+## <a name="to-proffer-your-marker-type-as-a-service"></a>Предложить ваш тип маркера как услуга  
   
 1.  Вызовите <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
   
      Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> возвращается.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> метод, указывая GUID идентификации типа службы пользовательских маркеров и предоставляя указатель на вашу реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейса. Ваш <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> реализации должен возвращать указатель на вашу реализацию <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> интерфейса.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> метод, указывая идентификатор GUID службы тип пользовательского маркера идентификации и передачи указателя на вашу реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс. Ваш <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> реализация должна возвращать указатель на вашу реализацию <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> интерфейс.  
   
-     Уникальный файл cookie, указывающий, что возвращается к службе. Позже можно использовать этот файл cookie отменять пользовательских маркеров типа службы путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> интерфейс указано это значение файла cookie.  
+     Уникальный файл cookie, определяющий, что службы возвращается. Позже можно использовать этот файл cookie отозвать службу пользовательские маркеры типа путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> интерфейса, задав это значение файла cookie.  
   
 ## <a name="see-also"></a>См. также  
- [С помощью текстовых маркеров с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Как: Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)   
- [Как: реализовать маркеры ошибки](../extensibility/how-to-implement-error-markers.md)   
- [Как: использовать маркеры текста](../extensibility/how-to-use-text-markers.md)
+ [Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Практическое: Добавление стандартные текстовые метки](../extensibility/how-to-add-standard-text-markers.md)   
+ [Практическое: реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)   
+ [Практическое: использовать текстовые метки](../extensibility/how-to-use-text-markers.md)

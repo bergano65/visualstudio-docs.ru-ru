@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283496"
 ---
 # <a name="codeindex-command"></a>Команда CodeIndex
 
 Команда **CodeIndex** используется для управления индексацией кода на сервере Team Foundation Server. Например, может потребоваться сбросить индекс, чтобы исправить данные CodeLens, или отключить индексацию, чтобы разобраться с проблемами производительности сервера.
 
-**Необходимые разрешения**
+## <a name="required-permissions"></a>Необходимые разрешения
 
-Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. статью [Permissions and groups defined for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/permissions) (Разрешения и группы, определенные для Team Services и TFS).
+Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. статью [Разрешения и группы, определенные для Azure DevOps Services и TFS](/azure/devops/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Для выполнения этой команды необходимо открыть окно командной строки с повышенными привилегиями, даже если вы вошли в систему, используя учетные данные администратора. Также эту команду необходимо выполнять для Team Foundation с уровня приложения.
@@ -41,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Аргумент**|**Описание**|
 |------------------|---------------------|
-|`CollectionName`|Задает имя коллекции командных проектов. Если имя содержит пробелы, заключите его в кавычки, например "веб-сайт компании Fabrikam".|
-|`CollectionId`|Задает идентификационный номер коллекции командных проектов.|
+|`CollectionName`|Задает имя коллекции проектов. Если имя содержит пробелы, заключите его в кавычки, например "веб-сайт компании Fabrikam".|
+|`CollectionId`|Задает идентификационный номер коллекции проектов.|
 |`ServerPath`|Задает путь к файлу с кодом.|
 
 |**Параметр**|**Описание**|
@@ -55,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Удалить индекс кода и все индексированные данные. Не требует подтверждения, если используется параметр **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view | <`SizeInGBs`> | disable ]|Управляйте количеством временных данных, которые создает CodeLens при обработке наборов изменений. Ограничение по умолчанию составляет 2 ГБ.<br /><br /> -   **view**: отображение текущего ограничения на размер.<br />-   `SizeInGBs`: изменение ограничения на размер.<br />-   **disable**: удаление ограничения на размер.<br /><br /> Проверка этого ограничения выполняется перед тем, как CodeLens обрабатывает новый набор изменений. Если временные данные превышают данное ограничение, то CodeLens приостановит обработку ранних наборов изменений, но не новых. После того как данные будут очищены и их размер станет меньше указанного ограничения, элемент CodeLens перезапустит процесс обработки. Очистка выполняется автоматически раз в день. Это означает, что временные данные могут превысить ограничение перед выполнением очистки.|
 |**/indexHistoryPeriod**:[ view | all | <`NumberOfMonths`> ]|Управляйте длительностью индексирования журнала изменений. Это влияет на объем отображаемого журнала CodeLens. Ограничение по умолчанию составляет 12 месяцев. Это означает, что CodeLens показывает журнал изменений только за последние 12 месяцев.<br /><br /> -   **view**: отображение текущего количества месяцев.<br />-   **all**: индексирование всего журнала изменений.<br />-   `NumberOfMonths`: изменение количества месяцев, используемых для индексирования журнала изменений.|
-|**/collectionName:** `CollectionName`|задает имя коллекции командных проектов, для которой необходимо выполнить команду **CodeIndex**. Является обязательным, если не используется параметр **/CollectionId**.|
-|**/collectionId:** `CollectionId`|задает идентификационный номер коллекции командных проектов, для которой необходимо выполнить команду **CodeIndex**. Является обязательным, если не используется параметр **/CollectionName**.|
+|**/collectionName:** `CollectionName`|Задает имя коллекции проектов, для которой необходимо выполнить команду **CodeIndex**. Является обязательным, если не используется параметр **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Задает идентификационный номер коллекции проектов, для которой необходимо выполнить команду **CodeIndex**. Является обязательным, если не используется параметр **/CollectionName**.|
 
 ## <a name="examples"></a>Примеры
 
@@ -66,31 +67,31 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
  Просмотр состояния и конфигурации индексации кода:
 
 ```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
  Запуск индексации всех наборов изменений:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
  Остановка индексации созданных ранее наборов изменений и запуск индексации только новых наборов изменений:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
  Чтобы найти до 50 файлов с размером, превышающим 10 кБ:
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
  Исключение определенного файла из индексации и добавление его в список игнорируемых файлов:
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
  Чтобы просмотреть полный список файлов, которые не будут индексироваться:
@@ -102,28 +103,28 @@ TFSConfig CodeIndex /ignoreList:view
  Очистка индексированных данных и перезапуск индексации:
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  Чтобы сохранить весь журнал набора изменений:
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
  Чтобы удалить ограничение размера для временных данных элемента CodeLens и продолжения индексации независимо от размера временных данных:
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
  Удаление индекса кода с подтверждением:
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>См. также
 
 - [Поиск изменений кода и других журналов с помощью CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Управление конфигурацией сервера с помощью TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Управление конфигурацией сервера с помощью TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 221f8ceba5a82b25e78314579323f6a7d55cf984
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64c1ac7eb3f90444da702d699201a251aaba411c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077595"
 ---
 # <a name="msbuild-conditions"></a>Условия MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] поддерживает определенный набор условий, которые можно применять везде, где разрешен атрибут `Condition`. В следующей таблице описаны эти условия.  

@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84054917a47fc4d56c107965feebbc353e6de76f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1f7ea93011878e9e47a5daa843a71d904318ce4
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946525"
 ---
-# <a name="findunderpath-task"></a>Задача FindUnderPath
+# <a name="findunderpath-task"></a>FindUnderPath - задача
 Определяет, какие элементы в указанной коллекции имеют пути в указанной папке или на более низком уровне.  
   
 ## <a name="parameters"></a>Параметры  
@@ -41,10 +42,10 @@ ms.lasthandoff: 04/19/2018
 |`UpdateToAbsolutePaths`|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение true, пути к выходным элементам изменяются на абсолютные.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. По завершении выполнения задачи элемент `FilesNotFoundInPath` содержит файл `File1.txt`, а элемент `FilesFoundInPath` содержит файл `File2.txt`.  
+ В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt*, а элемент `FilesFoundInPath` содержит файл *File2.txt*.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

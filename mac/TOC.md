@@ -1,5 +1,4 @@
 # [Знакомство с Visual Studio для Mac](index.md)
-## [Преимущества Visual Studio для Mac по сравнению с Xamarin Studio](benefits-vsmac-over-xs.md)
 # [Обзор интегрированной среды разработки](ide-tour.md)
 
 # [Установка](installation.md)
@@ -22,6 +21,7 @@
 ## [Управление ссылками в проекте](managing-references-in-a-project.md)
 ### [Пошаговое руководство. Включение пакета NuGet в проект](nuget-walkthrough.md)
 ## [Управление ресурсами приложений](managing-app-resources.md)
+## [Инструкции по открытию нескольких решений или экземпляров](open-multiple-solutions.md)
 
 # [Редактор исходного кода](source-editor.md)
 ## [Рефакторинг](refactoring.md)
@@ -62,6 +62,8 @@
 ## [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)
 ### [Использование инструментов Unity](using-vsmac-tools-unity.md)
+### [Использование .NET 4.x в Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Специальные возможности](accessibility.md)
 

@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthor::GetInfoFromContext | Документы Microsoft"
-ms.custom: 
+title: IActiveScriptAuthor::GetInfoFromContext | Документация Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.GetInfoFromContext
@@ -14,18 +14,19 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::GetInfoFromContext
 ms.assetid: 9891b095-6eb5-4473-87c0-c2e5cd2afc1a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c13dbe51bb1150554275b5fbeacd00be2e445f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281251"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Возвращает введите сведения и позиций привязки для заданного символа в блок кода. Это дает сведения для элемента, IntelliSense, глобальных списков и подсказки по параметрам.  
+Возвращает тип сведений и положения привязки для заданного символа в блоке кода. Это предоставляет сведения для элемента, IntelliSense, глобальные списки и подсказки по параметрам.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,16 +47,16 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in] Адрес блока строка кода, используемый для формирования результатов сведения.  
+ [in] Адрес строки блока кода, используемый для формирования результатов сведения.  
   
  `cchCode`  
  [in] Длина блока кода.  
   
  `ichCurrentPosition`  
- [in] Позиция символа относительно начала блока.  
+ [in] Положение символа относительно начала блока.  
   
  `dwListTypesRequested`  
- [in] Типы списка, запросу. Может быть сочетанием следующих значений:  
+ [in] Типы списков, в запросе. Может быть сочетанием следующих значений:  
   
 |Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
@@ -65,30 +66,30 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Вызов списка параметров метода.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Глобальный список.|  
   
- Тип SCRIPT_CMPL_GLOBALLIST обрабатывается как элемент завершения по умолчанию, могут быть объединены с помощью оператора OR с другими элементами завершения. Скрипт создания engine сначала пытается получить информацию о типе для других элементы списков завершения заполнения. В случае неудачи ядро заполняет для SCRIPT_CMPL_GLOBALLIST.  
+ Тип SCRIPT_CMPL_GLOBALLIST обрабатывается как элемент завершения по умолчанию, которые могут быть объединены с помощью оператора OR с другими элементами завершения. Скрипт создания ядра сначала пытается заполнить сведения о типе для других элементов списка завершения. В случае неудачи для SCRIPT_CMPL_GLOBALLIST заполняет ядро.  
   
  `pdwListTypesProvided`  
  [out] Тип списка.  
   
  `pichListAnchorPosition`  
- [out] Начальный индекс, содержащий позицию текущего контекста. Начальный индекс отсчитывается относительно начала блока.  
+ [out] Начальный индекс контекст, содержащий текущую позицию. Начальный индекс отсчитывается от начала блока.  
   
- Заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST или SCRIPT_CMPL_GLOBALLIST. Для других типов запрошенный список результат не определен.  
+ Это поле заполняется только тогда, когда `dwListTypesRequested` включает в себя SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST или SCRIPT_CMPL_GLOBALLIST. Для других типов запрошенный список результат не определен.  
   
  `pichFuncAnchorPosition`  
- [out] Начальный индекс вызова функции, который содержит текущее положение. Начальный индекс отсчитывается относительно начала блока.  
+ [out] Начальный индекс вызов функции, которая содержит текущую позицию. Начальный индекс отсчитывается от начала блока.  
   
- Заполняется только в том случае, когда контекст, содержащий текущую позицию, вызов функции и когда `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST. В противном случае результат не определен.  
+ Это поле заполняется только в том случае, когда контекст, содержащий текущее положение является вызовом функции и когда `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST. В противном случае результат не определен.  
   
  `pmemid`  
- [out] MEMBERID в соответствии с определением типа в функции `IProvideMultipleClassInfo``ppunk` выходной параметр.  
+ [out] Идентификатор функции, как определяется типом в `IProvideMultipleClassInfo``ppunk` выходной параметр.  
   
- Заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
+ Это поле заполняется только тогда, когда `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
- [out] Индекс параметра, содержащего текущую позицию. Если текущее положение находится на имя функции, возвращается значение -1.  
+ [out] Индекс параметра, содержащего текущую позицию. Если текущая позиция находится на имя функции, возвращается значение -1.  
   
- `piCurrentParameter` Значение заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
+ `piCurrentParameter` Значение заполняется только тогда, когда `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
  Сведения о типе, который предоставляется в виде `IProvideMultipleClassInfo` объекта.  
@@ -103,5 +104,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IProvideMultipleClassInfo](https://msdn.microsoft.com/library/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo.aspx)   
+ [Интерфейс IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

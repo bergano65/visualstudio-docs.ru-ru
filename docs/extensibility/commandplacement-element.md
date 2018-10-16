@@ -1,5 +1,5 @@
 ---
-title: Элемент CommandPlacement | Документы Microsoft
+title: Элемент CommandPlacement | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232433"
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
-Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, полностью переопределять эти элементы для изменения внешнего вида пользовательского интерфейса не нужно.  
+Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, у вас нет полностью переопределить эти элементы, чтобы изменить внешний вид пользовательского интерфейса.  
   
- Дополнительные сведения см. в разделе [группы кнопок для повторного использования создание](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Дополнительные сведения см. в разделе [создание повторно используемых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,29 +34,29 @@ ms.lasthandoff: 05/17/2018
 </CommandPlacement>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор guid набора команд, как определено в [символы элемент](../extensibility/symbols-element.md).|  
-|id|Обязательно. Идентификатор меню, группу или команду, чтобы разместить, как определено в `Symbols Element`.|  
-|priority|Обязательно. Определяет положение визуального элемента родительского элемента.|  
-|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательно. Идентификатор guid набора команд, как определено в [элемент Symbols](../extensibility/symbols-element.md).|  
+|id|Обязательно. Идентификатор меню, группу или команду, чтобы поместить, как определено в `Symbols Element`.|  
+|priority|Обязательно. Определяет визуальную позицию элемента в его родительском элементе.|  
+|Условие|Необязательный. См. в разделе [условного Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|Родительский|Обязательно. Меню или группы, на котором размещается элемент должен располагаться.|  
+|Родительский|Обязательно. Меню или группы, на котором размещается элемент, чтобы разместить.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Определяет группы, CommandPlacements и CommandPlacement элементов.|  
+|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Указывает группы элементов CommandPlacements и CommandPlacement.|  
   
 ## <a name="example"></a>Пример  
   
@@ -70,4 +71,4 @@ ms.lasthandoff: 05/17/2018
   
 ## <a name="see-also"></a>См. также  
  [Элемент CommandPlacements](../extensibility/commandplacements-element.md)   
- [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

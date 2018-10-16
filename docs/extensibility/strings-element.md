@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143895"
 ---
 # <a name="strings-element"></a>Элемент строки
 Элемент строки должен содержать по крайней мере **ButtonText** дочерний элемент. Все дочерние элементы являются необязательными. Недопустимый XML символы, такие как «&» и "<" должны быть реализованы как сущности ("&amp;«и»&lt;" и т. д).  

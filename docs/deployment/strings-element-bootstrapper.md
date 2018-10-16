@@ -1,5 +1,5 @@
 ---
-title: '&lt;Строки&gt; элемент (загрузчик) | Документы Microsoft'
+title: '&lt;Строки&gt; элемент (загрузчик) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815448"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077676"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (загрузчик)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (установщик)
 Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,19 +42,19 @@ ms.locfileid: "34815448"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `Strings` Элемент является дочерним элементом `Package` элемента. Он не имеет атрибутов.  
+ `Strings` Элемент является дочерним элементом `Package` элемент. Он не имеет атрибутов.  
   
 ## <a name="string"></a>String  
- `String` Элемент является дочерним элементом `Strings` элемента. Объект `Strings` элемент может иметь один или несколько `String` элементов.  
+ `String` Элемент является дочерним элементом `Strings` элемент. Объект `Strings` элемент может иметь один или несколько `String` элементов.  
   
- `String` имеет следующий атрибут.  
+ `String` содержит следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`Name`|Обязательно. Имя строки.|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода задаются все англоязычные строки для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установщика.  
+ В следующем примере кода указывает, все строки на английском языке для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установщика.  
   
 ```xml  
 <Strings>  

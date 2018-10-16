@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764911"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
-В этом разделе описываются основные команды VSPerfReport, которые создают отчеты со значениями, разделенными запятыми (CSV), из файла данных профилирования с расширением VSP или VSPS. Описание всех параметров отчета см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
+В этой статье описываются основные команды VSPerfReport, которые создают отчеты со значениями, разделенными запятыми (*CSV*), из файла данных профилирования с расширением *VSP* или *VSPS*. Описание всех параметров отчета см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="report-commands"></a>Команды отчета  
  Используйте одну из приведенных ниже команд, чтобы создать отчет для заданного файла профилирования данных.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- Создает все отчеты, доступные для файла с расширением VSP или VSPS.  
+ Создает все отчеты, доступные для файла с расширением *VSP* или *VSPS*.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  Создает заданные типы отчетов.  

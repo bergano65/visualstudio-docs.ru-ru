@@ -1,5 +1,5 @@
 ---
-title: BasicType | Документы Microsoft
+title: BasicType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433084"
 ---
 # <a name="basictype"></a>BasicType
 Задает базовый тип символа.  
@@ -45,6 +46,8 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
@@ -56,34 +59,34 @@ enum BasicType {
  Базовый тип является `void`.  
   
  btChar  
- Базовый тип является `char` (тип C/C++).  
+ Базовый тип является `char` (C/C++ тип).  
   
  btWChar  
- Базовый тип является расширенных символов (Юникод) (`WCHAR`).  
+ Базовый тип представляет собой расширенный символ (Юникод) (`WCHAR`).  
   
  btInt  
- Базовый тип является `signed int` (тип C/C++).  
+ Базовый тип является `signed int` (C/C++ тип).  
   
  btUInt  
- Базовый тип является `unsigned int` (тип C/C++).  
+ Базовый тип является `unsigned int` (C/C++ тип).  
   
  btFloat  
  Базовый тип является числом с плавающей запятой (`FLOAT`).  
   
  btBCD  
- Базовый тип является десятичным закодированных двоичный файл (`BCD`).  
+ Базовый тип — это десятичное число закодированных двоичный файл (`BCD`).  
   
  btBool  
  Базовый тип является логическое значение (`BOOL`).  
   
  btLong  
- Базовый тип является `long int` (тип C/C++).  
+ Базовый тип является `long int` (C/C++ тип).  
   
  btULong  
- Базовый тип является `unsigned long int` (тип C/C++).  
+ Базовый тип является `unsigned long int` (C/C++ тип).  
   
  btCurrency  
- Базовый тип — это валюта.  
+ Базовый тип является валюты.  
   
  btDate  
  Базовый тип является даты и времени (`DATE`).  
@@ -92,13 +95,13 @@ enum BasicType {
  Базовый тип является структурой типа переменной (`VARIANT`).  
   
  btComplex  
- Базовый тип — это комплексное число.  
+ Базовый тип — комплексного числа.  
   
  btBit  
- Базовый тип — бит.  
+ Базовый тип — несколько.  
   
  btBSTR  
- Базовый тип является базовым или двоичные строки (`BSTR`).  
+ Базовый тип — строка базовый или binary (`BSTR`).  
   
  btHresult  
  Базовый тип является `HRESULT`.  

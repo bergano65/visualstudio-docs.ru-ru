@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297619"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -30,13 +31,13 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="supported-versions-of-visual-studio"></a>Поддерживаемые версии Visual Studio
 
-Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
+Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
 
 Инструменты RTVS в настоящее время не поддерживаются в Visual Studio для Mac.
 
 Если имеется только оболочка Visual Studio Shell, которая входит в состав таких продуктов, как Visual Studio Test Professional и SQL Server Management Studio, то RTVS не устанавливаются. В оболочке Visual Studio Shell отсутствуют необходимые компоненты для RTVS.
 
-## <a name="installing-rtvs-in-visual-studio-2017"></a>Установка RTVS в Visual Studio 2017
+## <a name="install-rtvs-in-visual-studio-2017"></a>Установка RTVS в Visual Studio 2017
 
 1. Запустите установщик Visual Studio и выберите вариант **Изменить** (подробные сведения см. в разделе [Изменение Visual Studio](../install/modify-visual-studio.md)). Если вы еще не установили Visual Studio, см. раздел [Установка Visual Studio](../install/install-visual-studio.md). В Windows 7 убедитесь, что в установщике отображается Visual Studio 2017 *версии 15.2 сборки 26430.12* или более поздней версии.
 
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/26/2018
 
 1. Настройте дополнительные параметры справа в разделе под тем же именем рабочей нагрузки. По умолчанию эта рабочая нагрузка включает поддержку F # и Python. Для R нужно выбрать по меньшей мере компоненты **Поддержка языка R**, **Поддержка времени выполнения для средств разработки R** и **Microsoft R Client**.
 
-RTVS устанавливается в каталог `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` — где `<version>` обычно `2017`, а `<edition>` — `Community`, `Professional` или `Enterprise`.
+RTVS устанавливается в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\<версия>\<выпуск>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, где *\<версия>* обычно `2017`, а *\<выпуск>*  — `Community`, `Professional` или `Enterprise`.
 
-## <a name="installing-rtvs-in-visual-studio-2015"></a>Установка RTVS в Visual Studio 2015
+## <a name="install-rtvs-in-visual-studio-2015"></a>Установка RTVS в Visual Studio 2015
 
 Если используется Visual Studio 2015, интерпретатор R и инструменты R необходимо установить отдельно.
 
@@ -88,6 +89,6 @@ RTVS устанавливается в каталог `%ProgramFiles(x86)%\Micro
 
 - [Начало работы с R](getting-started-with-r.md)
 - [Инструменты R. Примеры проектов](getting-started-samples.md)
-- [Получение справки](getting-started-help.md)
-- [Настройки параметров](options-for-r-tools-in-visual-studio.md)
+- [Справка в инструментах R](getting-started-help.md)
+- [Параметры инструментов R](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (прежнее название — R Server)](/machine-learning-server/)

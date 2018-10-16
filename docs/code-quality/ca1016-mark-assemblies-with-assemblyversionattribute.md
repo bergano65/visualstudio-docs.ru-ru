@@ -14,15 +14,21 @@ ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3080b5a45f61010f322ed183a8b5a7c23390de33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fbc3fa747171892066705ddc32a114cb34e1b02
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858179"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: помечать сборки атрибутом AssemblyVersionAttribute
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -31,26 +37,28 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Сборка имеет номер версии.
+
+Сборка имеет номер версии.
 
 ## <a name="rule-description"></a>Описание правила
- Удостоверение сборки состоит из следующих сведений:
 
--   Имя сборки
+Удостоверение сборки представляет собой следующую информацию:
 
--   Номер версии
+- Имя сборки
 
--   culture
+- Номер версии
 
--   Открытый ключ (для сборок со строгими именами).
+- culture
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] использует номер версии для уникального обозначения сборки и для привязки к типам в сборках со строгими именами. Номер версии используется наряду с политикой версий и издателя. По умолчанию приложения выполняются только с версией сборки, которая использовалась для их построения.
+- Открытый ключ (для сборок со строгими именами).
+
+.NET Framework использует номер версии для уникального обозначения сборки и для привязки к типам в сборках со строгими именами. Номер версии используется наряду с политикой версий и издателя. По умолчанию приложения выполняются только с версией сборки, которая использовалась для их построения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, добавить номер версии сборки с помощью <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> атрибута. См. следующий пример.
+ Чтобы устранить нарушение этого правила, добавьте номер версии сборки с помощью <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> атрибута. См. следующий пример.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила для сборок, используемых сторонними разработчиками, или в рабочей среде.
+ Не отключайте предупреждение из этого правила для сборок, используемых сторонними производителями или в рабочей среде.
 
 ## <a name="example"></a>Пример
  В следующем примере показано сборку, которая имеет <xref:System.Reflection.AssemblyVersionAttribute> применен атрибут.
@@ -60,4 +68,6 @@ ms.lasthandoff: 04/26/2018
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
 ## <a name="see-also"></a>См. также
- [Управление версиями сборок](/dotnet/framework/app-domains/assembly-versioning) [как: Создание политики издателя](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+
+- [Управление версиями сборок](/dotnet/framework/app-domains/assembly-versioning)
+- [Практическое руководство. Создание политики издателя](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

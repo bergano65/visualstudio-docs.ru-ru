@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468703"
 ---
 # <a name="property-functions"></a>Функции свойств
 
@@ -42,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Функции статичного свойства
 
-В скрипте построения можно получить доступ к статическим свойствам и методам многих системных классов. Чтобы получить значение статического свойства, используйте следующий синтаксис, где *Class* — это имя системного класса, а *Property* — это имя свойства.
+В скрипте построения можно получить доступ к статическим свойствам и методам многих системных классов. Чтобы получить значение статического свойства, используйте следующий синтаксис, где \<Class> — это имя системного класса, а \<Property> — это имя свойства.
 
 ```fundamental
 $([Class]::Property)
@@ -54,7 +55,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Чтобы вызвать статический метод, используйте следующий синтаксис, где *Class* — это имя системного класса, *Method* — это имя метода, а *(Parameters)* — это список параметров метода.
+Чтобы вызвать статический метод, используйте следующий синтаксис, где \<Class> — это имя системного класса, \<Method> — имя метода, а (\<Parameters)> — список параметров метода.
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -116,9 +117,9 @@ $([Class]::Method(Parameters))
 - System.IO.File::GetLastWriteTime
 - System.IO.File::ReadAllText
 
-### <a name="calling-instance-methods-on-static-properties"></a>Вызов методов экземпляра на статических свойствах
+### <a name="calling-instance-methods-on-static-properties"></a>Вызов методов экземпляра для статических свойств
 
-При доступе к статическому свойству, которое возвращает экземпляр объектов, можно вызывать методы экземпляра этого объекта. Чтобы вызвать метод экземпляра, используйте следующий синтаксис, где *Class* — это имя системного класса, *Property* — это имя свойства, *Method* — это имя метода, а *(Parameters)* — это список параметров метода.
+При доступе к статическому свойству, которое возвращает экземпляр объектов, можно вызывать методы экземпляра этого объекта. Чтобы вызвать метод экземпляра, используйте следующий синтаксис, где \<Class> — это имя системного класса, \<Property> — имя свойства, \<Method> — это имя метода, а (\<Parameters>) — список параметров метода.
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -134,7 +135,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>Функции свойства MSBuild
 
-Для обеспечения арифметической побитовой логической поддержки escape-символов можно использовать несколько статических методов из вашего построения. Получить доступ к этим методам можно с помощью следующего синтаксиса, где *Method* — это имя метода, а *Parameters* — это список параметров метода.
+Для обеспечения арифметической побитовой логической поддержки escape-символов можно использовать несколько статических методов из вашего построения. Получить доступ к этим методам можно с помощью следующего синтаксиса, где \<Method> — это имя метода, а (\<Parameters>) — список параметров метода.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -143,12 +144,12 @@ $([MSBuild]::Method(Parameters))
 Например, чтобы добавить два свойства с числовыми значениями, используйте следующий код.
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 Приведем список функций свойства MSBuild.
 
-|Подпись функции|Описание:|
+|Сигнатура функции|Описание:|
 |------------------------|-----------------|
 |Сложение double(double a, double b)|Сложение двух значений double.|
 |Сложение long(long a, long b)|Сложение двух значений long.|
@@ -260,7 +261,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-64-разрядная операционная система Windows ведет раздел реестра HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node, содержащий представление реестра HKEY_LOCAL_MACHINE\SOFTWARE для 32-разрядных приложений.
+64-разрядная операционная система Windows ведет раздел реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**, содержащий представление реестра **HKEY_LOCAL_MACHINE\SOFTWARE** для 32-разрядных приложений.
 
 По умолчанию 32-разрядное приложение, работающее на WOW64, получает доступ к 32-разрядному представлению реестра, а 64-разрядное приложение — к 64-разрядному представлению реестра.
 
@@ -278,7 +279,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-Получение данных SLRuntimeInstallPath из раздела ReferenceAssemblies, поиск сначала в 64-разрядном, а затем в 32-разрядном представлении реестра.
+В этом примере данные **SLRuntimeInstallPath** получаются из раздела **ReferenceAssemblies**, но сначала поиск выполняется в 64-разрядном представлении реестра, а затем — в 32-разрядном.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -340,4 +341,5 @@ Output:
 ## <a name="see-also"></a>См. также
 
 [Свойства MSBuild](../msbuild/msbuild-properties.md)
+
 [Общие сведения о MSBuild](../msbuild/msbuild.md)

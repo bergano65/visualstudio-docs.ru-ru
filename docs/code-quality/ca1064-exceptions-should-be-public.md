@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b60127eee3ea333e324c656961eaf383a6ef409f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6a47334da2879760142dd925917339a011890554
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547949"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: исключения должны быть открытыми
 |||
@@ -34,17 +35,17 @@ ms.lasthandoff: 04/26/2018
  Исключение не являющиеся открытыми наследует непосредственно от <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.
 
 ## <a name="rule-description"></a>Описание правила
- Внутреннее исключение видна только внутри своей внутренней области. После выхода исключения за пределы внутренней области для перехвата исключения можно использовать только базовое исключение. Если внутренне исключение унаследовано от <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>, внешний код не имеет достаточных сведений, чтобы знать, что делать с исключением.
+ Внутреннее исключение видна только внутри своей внутренней области. После выхода исключения за пределы внутренней области для перехвата исключения можно использовать только базовое исключение. Если внутренне исключение унаследовано от <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>, внешний код не будет иметь достаточно сведений, чтобы знать, что делать с исключением.
 
- Но если код содержит открытый исключение, которое затем используется как базовое значение для внутреннего исключения, резонно предположить, что код Далее out сможет правильно обработать базовое исключение. Открытые исключение будет содержать больше сведений, чем то, что обеспечивается <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.
+ Но если код содержит открытое исключение, которое затем используется как основа для внутреннего исключения, разумно предположить, что код, будут иметь возможность правильно обработать базовое исключение. Открытый исключение будет иметь больше информации, чем предлагает <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Сделать общедоступными исключение или извлечь внутреннего исключения из открытых исключение, которое не является <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.
+ Сделать открытым исключение, или являются производными внутреннее исключение из общедоступного исключение, которое не является <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Предупреждения из этого правила, если вы уверены, во всех случаях, что закрытый исключение будет перехвачено внутри своей внутренней области.
+ Предупреждения из этого правила, если имеется полная уверенность во всех случаях, что закрытый исключение будет перехвачено в рамках своей внутренней области.
 
 ## <a name="example"></a>Пример
- Это правило срабатывает в первом примере метода исключение FirstCustomException, поскольку класс исключений наследует непосредственно от Exception и является внутренним. Правило не работает в класс SecondCustomException, так как несмотря на то, что класс также наследует непосредственно от Exception, класс объявлен как открытый. Третий класс также не срабатывает правило, так как он не является производным непосредственно <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, или <xref:System.ApplicationException?displayProperty=fullName>.
+ Это правило срабатывает в первом примере метода исключение FirstCustomException, так как класс исключений наследует непосредственно от Exception и является внутренним. Правило не срабатывают в классе SecondCustomException, так как несмотря на то, что этот класс также наследует непосредственно от Exception, класс объявлен как открытый. Третий класс также не срабатывает правило, так как он не является производным непосредственно <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, или <xref:System.ApplicationException?displayProperty=fullName>.
 
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

@@ -1,15 +1,16 @@
 ---
 layout: HubPage
-hide_bc: ''
+hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 86d19020a46c0aeb4d1d5a5d2c72e6881a04ef0c
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44339675"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -51,8 +52,27 @@ ms.lasthandoff: 03/28/2018
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>Повысьте производительность работы участников группы с помощью инструментов и отчетов Agile. Создавайте, тестируйте и развертывайте проекты из системы управления версиями при помощи современных инструментов непрерывной интеграции и развертывания.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Team Foundation Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Team Foundation Server</h3>
+                                                    <p>Установка, обновление и управление локальными развертываниями</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,7 +118,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Центр приложений Visual Studio">
+                                <a href="/appcenter/" title="Центр приложений Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -117,7 +137,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Центр приложений Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Подписки на Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -135,7 +155,7 @@ ms.lasthandoff: 03/28/2018
                                     </div>
                                 </a>
                             </li>
-                        </ul>                       
+                        </ul>
                     </li>
                 </ul>
             </li>

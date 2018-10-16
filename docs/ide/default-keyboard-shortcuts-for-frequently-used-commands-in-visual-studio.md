@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370982"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|
-|Edit.CollapsetoDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
+|Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
 |Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
 |Edit.Copy|**CTRL+C** [глобальный]<br /><br /> или **CTRL+INSERT** [глобальный]|
@@ -149,7 +150,7 @@ ms.lasthandoff: 04/26/2018
 |View.ObjectBrowser|**CTRL+ALT+J** [глобальный]|
 |View.Output|**CTRL+ALT+O** [глобальный]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer, редактор сведений Team Foundation Build]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**CTRL+ALT+S** [глобальный]|
 |View.ShowSmartTag|**CTRL+.** [Global]<br /><br /> или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|
 |View.SolutionExplorer|**CTRL+ALT+L** [глобальный]|

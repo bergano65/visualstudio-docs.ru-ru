@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Сбор данных с использованием формы Windows Forms | Документы Microsoft'
+title: 'Пошаговое руководство: Сбор данных с использованием формы Windows'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6a844bd94500f719e5456252d3b923c1ff85960
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674343"
 ---
-# <a name="walkthrough-collecting-data-using-a-windows-form"></a>Пошаговое руководство. Сбор данных с использованием формы Windows Forms
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство: Сбор данных с помощью формы Windows
   В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-a-new-project"></a>Создание нового проекта  
+## <a name="create-a-new-project"></a>Создание нового проекта  
  Первым шагом является создание проекта книги Excel.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет проект **WinFormInput** в **обозреватель решений**.  
   
-## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Добавление элемента управления NamedRange в лист  
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>Добавление элемента управления NamedRange в лист  
   
-#### <a name="to-add-a-named-range-to-sheet1"></a>Добавление именованного диапазона в Sheet1  
+### <a name="to-add-a-named-range-to-sheet1"></a>Добавление именованного диапазона в Sheet1  
   
 1.  Выберите ячейку **A1** в `Sheet1`.  
   
@@ -60,14 +61,14 @@ ms.lasthandoff: 04/16/2018
   
      Поле **Имя** находится слева от строки формул над столбцом **A** листа.  
   
-3.  Нажмите клавишу ВВОД.  
+3.  Нажмите клавишу **ВВОД**.  
   
      Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> добавляется в ячейку **A1**. Видимые изменения на листе отсутствуют, но значение **formInput** появляется в поле **Имя** (над листом слева) и в окне **Свойства** при выборе ячейки **A1** .  
   
-## <a name="adding-a-windows-form-to-the-project"></a>Добавление в проект формы Windows Forms.  
+## <a name="add-a-windows-form-to-the-project"></a>Добавьте в проект форму Windows  
  Создайте форму Windows Form, чтобы запрашивать сведения у пользователя.  
   
-#### <a name="to-add-a-windows-form"></a>Добавление формы Windows Forms  
+### <a name="to-add-a-windows-form"></a>Добавление формы Windows Forms  
   
 1.  Выберите проект **WinFormInput** в **обозревателе решений**.  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
  Затем добавьте в `ThisWorkbook.vb` или `ThisWorkbook.cs` код для сбора информации от пользователя.  
   
-## <a name="displaying-the-windows-form-and-collecting-information"></a>Отображение формы Windows Forms и сбор информации  
+## <a name="display-the-windows-form-and-collecting-information"></a>Отображение формы Windows и сбора информации  
  Создайте экземпляр формы Windows `GetInputString` и отобразите его, а затем запишите информацию от пользователя в ячейку листа.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Отображение формы и сбор информации  
@@ -105,9 +106,9 @@ ms.lasthandoff: 04/16/2018
   
  Далее добавьте в форму код для обработки события нажатия кнопки.  
   
-## <a name="sending-information-to-the-worksheet"></a>Отправка информации в лист  
+## <a name="send-information-to-the-worksheet"></a>Отправлять сведения в журнале  
   
-#### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист  
+### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист  
   
 1.  Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.  
   
@@ -118,12 +119,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
   
-## <a name="testing"></a>Тестирование  
+## <a name="test"></a>Проверка  
  Теперь можно запустить проект. Появляется форма Windows Forms, и введенные данные отображаются в листе.  
   
-#### <a name="to-test-your-workbook"></a>Проверка книги  
+### <a name="to-test-your-workbook"></a>Проверка книги  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  Убедитесь, что форма Windows Forms появилась.  
   
@@ -134,16 +135,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы отображения формы Windows Forms и передачи данных в лист. Вам может потребоваться выполнить другие задачи, приведенные ниже.  
   
--   Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+-   Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
--   Изменение пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Изменения пользовательского интерфейса приложения Microsoft Office из настройки уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>См. также  
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
- [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
- [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)  
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
+ [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
+ [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)  
   
   

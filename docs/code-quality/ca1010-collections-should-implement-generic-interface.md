@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551003"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: коллекции должны реализовывать универсальный интерфейс
 |||
@@ -34,52 +35,52 @@ ms.lasthandoff: 04/26/2018
  Видимый извне тип реализует <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейса, но не реализует <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> интерфейс и включенная сборка предназначена [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Это правило не учитывает типы, реализующие <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Описание правила
- Чтобы расширить возможности использования коллекции, реализуйте один из универсальных интерфейсов коллекции. Затем данную коллекцию можно использовать для заполнения универсальных типов коллекции из следующего:
+ Чтобы расширить возможности использования коллекции, реализуйте один из универсальных интерфейсов коллекции. Вы можете использовать коллекцию для заполнения типы универсальных коллекций, таких как следующие:
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, реализуйте один из следующих универсальных интерфейсов коллекции:
+ Чтобы устранить нарушение этого правила, реализуйте один из следующих универсальных интерфейсов:
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Можно безопасно подавить предупреждение из этого правила; Тем не менее коллекция будет иметь более ограниченное использование.
+ Его можно безопасно подавить предупреждение из этого правила; Тем не менее коллекция будет иметь более ограниченное использование.
 
 ## <a name="example-violation"></a>Пример нарушения
 
 ### <a name="description"></a>Описание
- В следующем примере показано класс (ссылочный тип), производный от неуниверсальные `CollectionBase` класс, который нарушает это правило.
+ В примере показан класс (ссылочный тип), является производным от неуниверсального `CollectionBase` класс, который нарушает это правило.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>Комментарии
- Чтобы устранить нарушение этого нарушения, должны реализовывать универсальные интерфейсы или измените базовый класс для типа, который уже реализует оба универсальных и неуниверсальных интерфейсов, таких как `Collection<T>` класса.
+ Чтобы устранить нарушение этого нарушения, должны реализовывать универсальные интерфейсы или измените базовый класс для типа, который уже реализует обеих универсальных и неуниверсальных интерфейсов, таких как `Collection<T>` класса.
 
-## <a name="fix-by-base-class-change"></a>Устранить ошибку, измените базовый класс
+## <a name="fix-by-base-class-change"></a>Исправить путем замены базового класса
 
 ### <a name="description"></a>Описание
- В следующем примере нарушение устраняется путем изменения базового класса коллекции с неуниверсальные `CollectionBase` класса для универсального `Collection<T>` (`Collection(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) класса.
+ В следующем примере нарушение устраняется путем изменения базового класса коллекции с неуниверсального `CollectionBase` класса к общим `Collection<T>` (`Collection(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) класса.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
 ### <a name="comments"></a>Комментарии
- Изменение базового класса уже выпущенного класса считается критическим изменением для существующих пользователей.
+ Изменение базового класса уже выпущенного класса считается критическим изменением для существующих потребителей.
 
 ## <a name="fix-by-interface-implementation"></a>Исправление посредством реализации интерфейсов
 
 ### <a name="description"></a>Описание
- Следующий пример нарушение устраняется посредством реализации следующих универсальных интерфейсов: `IEnumerable<T>`, `ICollection<T>`, и `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, и `IList(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ В следующем примере устраняется нарушение путем реализации этих универсальных интерфейсов: `IEnumerable<T>`, `ICollection<T>`, и `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, и `IList(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]

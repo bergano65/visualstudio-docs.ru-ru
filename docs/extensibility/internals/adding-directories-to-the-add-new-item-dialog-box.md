@@ -1,5 +1,5 @@
 ---
-title: Добавление каталогов, чтобы добавить новый элемент-диалоговое окно | Документы Microsoft
+title: Добавление каталогов, чтобы добавить новый элемент-диалоговое окно | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,16 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8d9989e8cf4ec8f0eb714a26e73d89fba339b71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba535908b1c5ccb06f0f29490c0b87c377d6b2be
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498338"
 ---
-# <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Добавление каталогов, чтобы добавить новый элемент-диалоговое окно
-В следующем примере кода показано, как зарегистрировать новый набор каталогов для **Добавление нового элемента** диалоговое окно. Каталоги для **Добавление нового элемента** диалоговое окно различны для каждого проекта. Таким образом, зарегистрированных в подразделе проекты в каталоги \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
+# <a name="add-directories-to-the-add-new-item-dialog-box"></a>Добавить каталоги в диалоговом окне Добавление нового элемента
+В следующем примере кода показано, как зарегистрировать новый набор каталогов для **Добавление нового элемента** диалоговое окно. Каталоги для **Добавление нового элемента** диалоговое окно отличаются для каждого проекта. Таким образом, каталоги, зарегистрированные в разделе **проекты** подраздел, в **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
   
-## <a name="the-registry-script"></a>Скрипт реестра  
+## <a name="registry-script"></a>Скрипт реестра  
   
 ```  
 NoRemove Projects  
@@ -47,16 +48,16 @@ NoRemove Projects
 }  
 ```  
   
- Значение Template_Path указывает полный путь каталога, который содержит шаблоны проектов. Эти шаблоны могут быть VSZ-файлы или файлы описания шаблонов для клонирования.  
+ `%Template_Path%` Значение указывает полный путь к каталогу, содержащему шаблоны проектов. Эти шаблоны могут быть либо *.vsz* файлы или файлы описания шаблонов для клонирования.  
   
- Значение SortPriority указывает приоритет сортировки.  
+ `SortPriority` Значение указывает приоритет сортировки.  
   
-## <a name="adding-items-to-an-existing-project"></a>Добавление элементов к существующему проекту  
- Элементы можно также добавлять к существующему проекту. Например, для [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] проекта, можно добавить элементы в \<корневой > Папка \VC#\CSharpProjectItems\LocalProjectItems \Program Files\Microsoft Visual Studio. В этом случае `%GUID_Project%` — это GUID для проекта C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
+## <a name="add-items-to-an-existing-project"></a>Добавление элементов в существующий проект  
+ Можно также добавить элементы в существующий проект. Например, для [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] проекта, можно добавить элементы к  *\<корневой > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems* папки. В этом случае `%GUID_Project%` – идентификатор GUID для проекта C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
   
- Кроме того, можно расширить существующий проект запрограммировав подтипом проекта. С подтипом проекта вы можете расширить проекта без написания новый тип проекта. Дополнительные сведения о подтипы проекта см. в разделе [подтипы проекта](../../extensibility/internals/project-subtypes.md).  
+ Также можно расширить существующий проект запрограммировав подтипа проекта. Подтип проекта вы можете расширить проект без написания нового типа проекта. Дополнительные сведения о подтипов проекта, см. в разделе [подтипы проекта](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>См. также  
  [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Добавление элементов, чтобы добавить новый элемент диалоговые окна](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Добавление каталогов в диалоговое окно "Создание проекта"](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+ [Добавление элементов в диалоговом окне Добавление нового элемента](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Добавить каталоги в диалоговое окно нового проекта](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

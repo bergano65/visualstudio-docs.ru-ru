@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746316"
 ---
 # <a name="manage-project-and-solution-properties"></a>Управление свойствами проектов и решений
 
 У проектов есть свойства, которые определяют различные аспекты компиляции, отладки, тестирования и развертывания. Некоторые свойства являются общими для всех типов проектов, а некоторые — уникальными для конкретных языков или платформ. Чтобы получить доступ к свойствам проекта, щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите пункт **Свойства** либо введите слово "свойства" в поле **Быстрый запуск** в строке меню.
 
-![Контекстное меню проекта](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Контекстное меню проекта](../ide/media/vs2015_proj_prop_menu.gif)
 
 Проекты .NET также могут содержать узел свойств в дереве проекта.
 
-![Узел свойств в дереве обозревателя решений](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Узел свойств в дереве обозревателя решений](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>Свойства проекта
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
 В проектах C#, Visual Basic и F# свойства отображаются в **конструкторе проектов**. На следующем рисунке показана страница свойств **Сборка** для проекта WPF на C#:
 
-![Конструктор проектов Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Конструктор проектов Visual Studio](../ide/media/vs2015_proppage_build.png)
 
 Сведения о каждой из страниц свойств в **конструкторе проектов** см. в разделе [Справочник по свойствам проектов](../ide/reference/project-properties-reference.md).
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 Проекты C++ и JavaScript имеют другой пользовательский интерфейс для управления свойствами проекта. На этом рисунке показана страница свойств проекта C++ (страницы JavaScript выглядят аналогичным образом).
 
-![Свойства проекта Visual C++](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Свойства проекта Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
 Сведения о свойствах проекта C++ см. в разделе [Работа со свойствами проектов (C++)](/cpp/ide/working-with-project-properties). Дополнительные сведения о свойствах JavaScript см. в разделе [Страницы свойств (JavaScript)](../ide/reference/property-pages-javascript.md).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Как: чтение и запись в свойства документа | Документы Microsoft'
+title: 'Практическое: чтение из и запись в свойства документа'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675420"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Практическое руководство. Чтение и запись в свойства документа
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Практическое: чтение из и запись в свойства документа
   Свойства документа можно сохранять вместе с документом. Приложения Office содержат различные встроенные свойства, например автора, название и тему. В этом разделе показано, как задать свойства документа в Microsoft Office Excel и Microsoft Office Word.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как: доступ к настраиваемым свойствам и работа документа в Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как I: доступа и управления настраиваемых свойств документа в Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Настройка свойств документа в Excel  
+## <a name="set-document-properties-in-excel"></a>Набор свойств документа в Excel  
  Для работы со встроенными свойствами в Excel используйте следующие свойства.  
   
 -   В проекте на уровне документа используйте свойство <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> класса `ThisWorkbook` .  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  В следующем примере кода показано, как изменить встроенное свойство **Revision Number** в проекте на уровне документа.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>Изменение свойства «Номер редакции» в Excel  
+### <a name="to-change-the-revision-number-property-in-excel"></a>Изменение свойства «Номер редакции» в Excel  
   
 1.  Назначьте переменной встроенные свойства документа.  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Настройка свойств документа в Word  
+## <a name="set-document-properties-in-word"></a>Набор свойств документа в Word  
  Для работы со встроенными свойствами в Word используйте следующие свойства.  
   
 -   В проекте на уровне документа используйте свойство <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> класса `ThisDocument` .  
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
  В следующем примере кода показано, как изменить встроенное свойство **Subject** в проекте на уровне документа.  
   
-#### <a name="to-change-the-subject-property"></a>Изменение свойства темы  
+### <a name="to-change-the-subject-property"></a>Изменение свойства темы  
   
 1.  Назначьте переменной встроенные свойства документа.  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  Несмотря на то что вы работаете с Word и Excel и их объектами, Microsoft Office предоставляет список доступных встроенных свойств документа. В случае попытки доступа к неопределенному свойству возникает исключение.  
   
 ## <a name="see-also"></a>См. также  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
- [Практическое руководство. Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
+ [Практическое: Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

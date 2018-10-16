@@ -14,15 +14,21 @@ ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6379598194e3836ea3e77efa68741c2c4b596b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71c4428596281abf0ad606624bd67c40a490ee49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549382"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: свойства URI не должны быть строками
+
 |||
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
@@ -34,16 +40,16 @@ ms.lasthandoff: 04/26/2018
  Тип объявляет строковое свойство, имя которого содержит «uri», «Uri», «urn», «Urn», «url» или «Url».
 
 ## <a name="rule-description"></a>Описание правила
- Это правило разбивает имя свойства на токены, используя соглашения о регистре Pascal и проверяет равенство каждого маркера «uri», «Uri», «urn», «Urn», «url» или «Url». В случае совпадения правило предполагает, что свойство представляет универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. <xref:System.Uri?displayProperty=fullName> Класс предоставляет эти услуги надежным и безопасным способом.
+ Это правило разделяет имя свойства на токены, используя соглашения о регистре Pascal и проверяет, равно ли каждый токен «uri», «Uri», «urn», «Urn», «url» или «Url». Если есть совпадение имени, правиле предполагается, что свойство представляет универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. <xref:System.Uri?displayProperty=fullName> Класс предоставляет аналогичные услуги надежным и безопасным способом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, измените свойства на <xref:System.Uri> типа.
+ Чтобы устранить нарушение этого правила, измените значение свойства на <xref:System.Uri> типа.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это безопасно подавить предупреждение из этого правила, если свойство не представляет универсальный код Ресурса.
+ Его можно безопасно подавить предупреждение из этого правила, если свойство не представляет URI.
 
 ## <a name="example"></a>Пример
- В следующем примере показано тип `ErrorProne`, который нарушает это правило и тип, `SaferWay`, соответствующий этому правилу.
+ В следующем примере показано типом, `ErrorProne`, который нарушает это правило и тип, `SaferWay`, соответствующий этому правилу.
 
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]

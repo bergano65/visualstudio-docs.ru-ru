@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549356"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: не следует раскрывать универсальные списки
 |||
@@ -31,22 +32,22 @@ ms.lasthandoff: 04/26/2018
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип содержит Внешне видимый член, <xref:System.Collections.Generic.List%601?displayProperty=fullName> введите возвращает <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа или, подпись которого включает <xref:System.Collections.Generic.List%601?displayProperty=fullName> параметра.
+ Тип содержит видимое извне элемент, который <xref:System.Collections.Generic.List%601?displayProperty=fullName> введите возвращает <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа, либо, сигнатура которого содержит <xref:System.Collections.Generic.List%601?displayProperty=fullName> параметра.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> — Это универсальная коллекция, предназначенная для производительности и не для наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName> не содержит виртуальных членов, которые упрощают процесс изменить поведение унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должен быть предоставлен вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> является универсальной коллекцией, предназначенный для повышения производительности и не для наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName> не содержит виртуальных членов, которые упрощают процесс изменить поведение унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны предоставляться вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа в один из универсальных коллекций, которые предназначены для наследования.
+ Чтобы устранить нарушение этого правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа к одному из универсальных коллекций, которые разработаны для наследования.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила, если сборки, которая вызывает это предупреждение не рассчитан на всестороннее библиотеки многократного использования. Например можно с уверенностью отключить это предупреждение в приложении производительность где выигрыш от использования универсальные списки выигрыш в производительности.
+ Не отключайте предупреждение из этого правила, если сборку, которая выдает следующее предупреждение не должен быть многократно используемой библиотеки. Например можно с уверенностью отключить это предупреждение в приложении производительность где выигрыш от использования универсальные списки выигрыш в производительности.
 
 ## <a name="related-rules"></a>Связанные правила
  [CA1005: не используйте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

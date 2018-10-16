@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473823"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Практическое руководство. Поиск имени процесса ASP.NET
 Чтобы выполнить присоединение к выполняющемуся приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], необходимо знать имя процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]:  

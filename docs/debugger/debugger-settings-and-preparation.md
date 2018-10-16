@@ -1,9 +1,9 @@
 ---
-title: Отладчик, параметры и подготовка | Документы Microsoft
+title: Отладчик, параметры и подготовка | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282070"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
@@ -45,13 +46,10 @@ ms.lasthandoff: 04/18/2018
  Объясняется, как отладить исполняемый объект, который не был создан, как часть проекта Visual Studio.  
   
  [Практическое руководство. Отладка исходного кода Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Описано, как отладить исходный код из Microsoft Code Center Premium в проекте Visual Studio.  
+ В этой статье описывается отладка исходного кода из Microsoft Code Center Premium в проекте Visual Studio.  
   
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)  
  Описаны способы отладки 64-разрядных приложений.  
-  
- [Отладка и процесс размещения](../debugger/debugging-and-the-hosting-process.md)  
- Описываются различные аспекты процесса размещения.  
   
  [Практическое руководство. Установка версии платформы .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Описано, как задать раздел реестра для указания версии для использования в отладчике.  

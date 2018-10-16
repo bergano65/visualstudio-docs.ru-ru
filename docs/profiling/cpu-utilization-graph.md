@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbce376425d4e98d493aa3478e9cf00ac837a17
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 40bc0be19ffa0daa9a0ea786d7e06a4e9e7dfd4b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750133"
 ---
 # <a name="cpu-utilization-graph"></a>Граф использования ЦП
 На графе использования ЦП показывает уровень использования приложения с течением времени. Ось Х представляет время работы трассировки, а ось Y — количество логических ядер в системе. Этот граф не показывает, какое из ядер активно в заданный момент времени. Например, если два ядра были загружены на 50 процентов производительности в течение заданного периода времени, граф показал бы, что использовалось одно логическое ядро.  

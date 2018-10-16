@@ -1,5 +1,5 @@
 ---
-title: Доступ к локальным и удаленным данным в приложениях ClickOnce | Документы Microsoft
+title: Доступ к локальным и удаленным данным в приложениях ClickOnce | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2652a2da7abd0536c3e5cb60c7d36842b5430a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081242"
 ---
-# <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
+# <a name="access-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.  
   
 ## <a name="local-data"></a>Локальные данные  
@@ -38,30 +39,30 @@ ms.lasthandoff: 04/19/2018
 ### <a name="clickonce-data-directory"></a>Каталог данных ClickOnce  
  Каждое установленное на локальном компьютере приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] имеет каталог данных, который сохранен в папке пользователя Documents and Settings. Любой файл, включенный в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и помеченный как файл «данных», копируется в этот каталог при установке приложения. Файлы данных могут представлять собой данные любого типа. Чаще всего используются текстовые файлы, файлы XML и файлы базы данных, например MDB-файлы Microsoft Access.  
   
- Каталог данных предназначен для управляемых приложением данных, то есть данных, которые приложение явно сохраняет и обслуживает. Все статические, независимые файлы, которые не помечены как «данные» в манифесте приложения, помещаются в каталог приложения. В этом же каталоге находятся исполняемые файлы приложения (.exe) и сборки.  
+ Каталог данных предназначен для управляемых приложением данных, то есть данных, которые приложение явно сохраняет и обслуживает. Все статические, независимые файлы, которые не помечены как «данные» в манифесте приложения, помещаются в каталог приложения. Этот каталог является, где приложение исполняемого файла (*.exe*) находятся файлы и сборки.  
   
 > [!NOTE]
->  Если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] удаляется, его каталог данных также удаляется. Никогда не используйте каталог данных для хранения данных, управляемых конечным пользователям, например документов.  
+>  Если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] удаляется, его каталог данных также удаляется. Никогда не используйте каталог данных для хранения данных, управляемых конечных пользователей, таких как документы.  
   
-#### <a name="marking-data-files-in-a-clickonce-distribution"></a>Маркировка файлов данных в рассылке ClickOnce  
- Чтобы поместить существующий файл внутрь каталога данных, необходимо пометить существующий файл как файл данных в файле манифеста приложения вашего приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Для получения дополнительной информации см. [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+#### <a name="mark-data-files-in-a-clickonce-distribution"></a>Пометить файлы данных в рассылке ClickOnce  
+ Чтобы поместить существующий файл внутрь каталога данных, необходимо пометить существующий файл как файл данных в файле манифеста приложения вашего приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Дополнительные сведения см. в разделе [как: включение файла данных в приложении ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
-#### <a name="reading-from-and-writing-to-the-data-directory"></a>Чтение и запись в каталоге данных  
- Для чтения из каталога данных нужно, чтобы приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запросило разрешение на чтение; аналогично для записи в каталог требуется разрешение на запись. Ваше приложение получит это разрешение автоматически, если оно настроено для работы с полным доверием. Дополнительные сведения о повышении уровня разрешений для приложения с помощью повышение уровня разрешений или развертывания надежных приложений см. в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
+#### <a name="read-from-and-write-to-the-data-directory"></a>Чтение и запись в каталог данных  
+ Для чтения из каталога данных нужно, чтобы приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запросило разрешение на чтение; аналогично для записи в каталог требуется разрешение на запись. Ваше приложение получит это разрешение автоматически, если оно настроено для работы с полным доверием. Дополнительные сведения о повышении уровня разрешений приложения с использованием повышение уровня разрешений или развертывания надежных приложений, см. в разделе [безопасности ClickOnce-приложений](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
 >  Если в организации не используется развертывание надежных приложений и отключено повышение уровня разрешений, подтверждение разрешений завершится ошибкой.  
   
- Получив эти разрешения, ваше приложение сможет осуществлять доступ в каталог данных, используя вызовы метода в классах типа <xref:System.IO>. Можно получить путь к каталогу данных в приложении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в Windows Forms, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> , определенным в свойстве <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> развертывания <xref:System.Deployment.Application.ApplicationDeployment>. Это самый удобный и рекомендуемый способ доступа к данным. В следующем примере кода показано, как сделать это для текстового файла CSV.txt, включенного вами в развертывание в качестве файла данных.  
+ Получив эти разрешения, ваше приложение сможет осуществлять доступ в каталог данных, используя вызовы метода в классах типа <xref:System.IO>. Можно получить путь к каталогу данных в приложении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в Windows Forms, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> , определенным в свойстве <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> развертывания <xref:System.Deployment.Application.ApplicationDeployment>. Это самый удобный и рекомендуемый способ доступа к данным. В следующем примере кода показано, как сделать это для текстового файла с именем *CSV.txt* , который включен в развертывание в качестве файла данных.  
   
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [Практическое руководство. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Можно также получить путь к каталогу данных, используя соответствующие переменные в классе <xref:System.Windows.Forms.Application> , например <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
- Для выполнения операций с другими типами файлов могут потребоваться дополнительные разрешения. Например, если требуется использовать файл базы данных Access (.mdb), приложение должно подтвердить полное доверие, чтобы использовать релевантные классы <xref:System.Data> .  
+ Для выполнения операций с другими типами файлов могут потребоваться дополнительные разрешения. Например, если вы хотите использовать базу данных Access (*.mdb*) файл, приложение должно подтвердить полное доверие для использования в соответствующей \<xref:System.Data > классы.  
   
 #### <a name="data-directory-and-application-versions"></a>Каталог данных и версии приложения  
  Каждая версия приложения имеет свой собственный каталог данных, который изолирован от других версий. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создает этот каталог, независимо от того, включены ли в развертывание какие-либо файлы данных, чтобы приложению было доступно местоположение для создания новых файлов данных во время выполнения. При установке новой версии приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] копирует все существующие файлы данных из каталога данных предыдущей версии в каталог данных новой версии независимо от того, были ли они включены в первоначальное развертывание или созданы приложением.  
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remote-data"></a>Удаленные данные  
  На некотором этапе приложению, скорее всего, необходимо будет извлечь сведения с удаленного веб-сайта, например клиентские данные или информацию о рынке. В этом разделе рассматриваются наиболее распространенные методы получения удаленных данных.  
   
-### <a name="accessing-files-by-using-http"></a>Доступ к файлам по протоколу HTTP  
- Доступ к данным на веб-сервере можно осуществлять с использованием класса <xref:System.Net.WebClient> или <xref:System.Net.HttpWebRequest> в пространстве имен <xref:System.Net> . Эти данные могут представлять собой статичные файлы или приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , возвращающие необработанные текстовые данные или данные XML. Если формат данных отличается от XML, самым быстрым способом извлечения данных будет использование класса <xref:System.Xml.XmlDocument> , метод <xref:System.Xml.XmlDocument.Load%2A> которого принимает URL-адрес в качестве аргумента. Пример см. в разделе [Reading an XML Document into the DOM](/dotnet/standard/data/xml/reading-an-xml-document-into-the-dom).  
+### <a name="access-files-with-http"></a>Доступ к файлам с помощью HTTP  
+ Доступ к данным на веб-сервере можно осуществлять с использованием класса <xref:System.Net.WebClient> или <xref:System.Net.HttpWebRequest> в пространстве имен <xref:System.Net> . Эти данные могут представлять собой статичные файлы или приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , возвращающие необработанные текстовые данные или данные XML. Если формат данных отличается от XML, самым быстрым способом извлечения данных будет использование класса <xref:System.Xml.XmlDocument> , метод <xref:System.Xml.XmlDocument.Load%2A> которого принимает URL-адрес в качестве аргумента. Например, см. в разделе [считывания XML-документа в DOM](/dotnet/standard/data/xml/reading-an-xml-document-into-the-dom).  
   
  Необходимо помнить о соображениях безопасности, когда приложение осуществляет доступ к удаленным данным через HTTP. По умолчанию доступ вашего приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] к сетевым ресурсам может быть ограничен в зависимости от использованного способа развертывания приложения. Эти ограничения применяются, чтобы не допустить доступа вредоносных программ к привилегированным удаленным данным или использования компьютера пользователя для атаки на другие компьютеры в сети.  
   
@@ -96,17 +97,17 @@ ms.lasthandoff: 04/19/2018
 |Установка общей папки|Отсутствует доступ к веб-серверам|  
 |Установка с компакт-диска|Доступны любые веб-серверы|  
   
- Если приложению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не удается получить доступ к веб-серверу из-за ограничений безопасности, приложение должно подтвердить <xref:System.Net.WebPermission> для этого веб-сайта. Дополнительные сведения о повышении уровня разрешений безопасности для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Если приложению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не удается получить доступ к веб-серверу из-за ограничений безопасности, приложение должно подтвердить <xref:System.Net.WebPermission> для этого веб-сайта. Дополнительные сведения о повышении уровня разрешений безопасности для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, см. в разделе [безопасности ClickOnce-приложений](../deployment/securing-clickonce-applications.md).  
   
-### <a name="accessing-data-through-an-xml-web-service"></a>Доступ к данным через веб-службу XML  
+### <a name="access-data-through-an-xml-web-service"></a>Доступ к данным через веб-службы XML  
  Если предоставить данные в качестве веб-службы XML, можно осуществлять доступ к этим данным с помощью прокси-сервера веб-службы XML. Прокси-сервер является классом [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , созданным с помощью любого приложения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Операции веб-службы XML, такие как извлечение клиентов, размещение заказов и т. д., предоставляются как методы прокси-сервера. Благодаря этому пользоваться веб-службами гораздо проще, чем обычным текстом или файлами XML.  
   
  Если ваш веб-служба XML работает по протоколу HTTP, в отношении нее будут действовать те же ограничения безопасности, как и в отношении классов <xref:System.Net.WebClient> и <xref:System.Net.HttpWebRequest> .  
   
-### <a name="accessing-a-database-directly"></a>Непосредственный доступ к базе данных  
+### <a name="access-a-database-directly"></a>Прямой доступ к базе данных  
  Можно использовать классы в пространстве имен <xref:System.Data> для установки прямого подключения к серверу базы данных, например SQL Server в сети, однако при этом необходимо учитывать соображения безопасности. В отличие от HTTP-запросов запросы на подключение к базе данных всегда запрещены по умолчанию в режиме частичного доверия; такие разрешения будут предоставлены по умолчанию, только если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливается с компакт-диска. Это обеспечивает приложению полный уровень доверия. Чтобы включить доступ к конкретной базе данных SQL Server, приложение должно запросить для него разрешение <xref:System.Data.SqlClient.SqlClientPermission> ; чтобы включить доступ к базе данных, отличной от БД SQL Server, необходимо запросить разрешение <xref:System.Data.OleDb.OleDbPermission>.  
   
  В большинстве случаев осуществлять прямой доступ к базе данных не потребуется, поскольку доступ осуществляется через приложение веб-сервера, созданное в [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или веб-службе XML. Такой доступ к базе данных часто является оптимальным подходом, если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывается с веб-сервера. Доступ к серверу с частичным доверием можно осуществлять без повышения уровня разрешений вашего приложения.  
   
 ## <a name="see-also"></a>См. также  
- [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Практическое: включение файла данных в приложении ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

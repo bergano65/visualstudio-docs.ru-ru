@@ -1,5 +1,5 @@
 ---
-title: 'Как: использовать связанный откат управления | Документы Microsoft'
+title: 'Практическое: использовать связанный откат управления | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 255ad8de79b13a74816b2abd28281ac5de6f1932
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370566"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Как: использовать связанный откат управления
-Связанный откат позволяет пользователю одновременно отменить же изменения в нескольких файлах. Например для одновременного изменения текста в нескольких файлах программы, таких как файл заголовка и файл кода Visual C++ является связанный откат транзакции. Связанный откат возможностей встроена в реализации среды в диспетчер отмены и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> позволяет реализовать эту возможность. Связанный откат реализуется блок отмены родительской, который можно связать стеки отдельные отмены вместе, чтобы рассматриваться как один блок отмены. В следующем разделе подробно описана процедура использования связанный откат.  
+# <a name="how-to-use-linked-undo-management"></a>Практическое: использование связанного механизмы управления отменой
+Связанный откат позволяет пользователю одновременно отменить же изменения в нескольких файлах. Например для одновременного изменения текста в нескольких файлах программы, такие как файл заголовка и файл Visual C++, является связанную транзакцию отмены. Связанный откат возможности встроены в реализацию среды в диспетчер отмены, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> позволяет использовать эту возможность. Связанный откат реализуется родительский модуль отмены, которое связывает стеки отмены отдельной вместе, чтобы рассматриваться как один блок отмены. В следующем разделе подробно описана процедура использования связанный откат.  
   
-### <a name="to-use-linked-undo"></a>Чтобы использовать связанный откат  
+## <a name="to-use-linked-undo"></a>Чтобы использовать связанный откат  
   
 1.  Вызовите `QueryService` на `SVsLinkedUndoManager` для получения указателя на `IVsLinkedUndoTransactionManager`.  
   
-2.  Создать связанный откат начальной родительское подразделение, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Это задает начальную точку для набора стеки отмены, чтобы разделить на связанные стеки отмены. В `OpenLinkedUndo` метод, необходимо также указать, следует ли связанный откат strict или нестрогом. Не строго связанное поведение отмены означает, что некоторые документы с связанный откат элементов с общим родителем можно закрыть, а по-прежнему оставьте связан другой отменить одноуровневых элементов в их стеках. Строго связанное поведение отмены указывает, что все связанные того же уровня стеки отмены иметь отменяться вместе или не полностью. Добавить последующие связанные стеки отменить, вызвав [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) метод.  
+2.  Создания начальной родительская единица отмены, связанная с помощью вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Это задает начальную точку для набора стеки отмены быть сгруппированы в связанные стеки отмены. В `OpenLinkedUndo` метода также необходимо будет указать, следует ли связанный откат strict или не строгая. Не строго связанное поведение отмены означает, что некоторые документы с связанный откат элементов с общим родителем можно закрыть, и по-прежнему не другой связанной отменить одноуровневых элементов в их стеках. Строго связанное поведение отмены указывает, что все связанные того же уровня стеки отмены придется отменять друг с другом или вообще не. Добавление последующие связанные стеки отмены операций путем вызова [IOleUndoManager::Add](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-add) метод.  
   
-3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> для наката все единицы связанный откат как один.  
+3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> для наката всех единиц связанный откат как один.  
   
     > [!NOTE]
-    >  Для реализации управления связанный откат в редакторе, добавьте управления отмены. Дополнительные сведения о реализации управления связанный откат см. в разделе [как: реализуйте отменить управления](../extensibility/how-to-implement-undo-management.md).  
+    >  Чтобы реализовать управление связанный откат в редакторе, добавьте механизмы управления отменой. Дополнительные сведения о реализации управления связанный откат см. в разделе [как: реализуйте механизмы управления отменой](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
- [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
- [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   
- [Как: реализации управления отмены](../extensibility/how-to-implement-undo-management.md)
+ [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
+ [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
+ [Практическое: реализуйте механизмы управления отменой](../extensibility/how-to-implement-undo-management.md)

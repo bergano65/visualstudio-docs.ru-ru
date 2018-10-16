@@ -11,23 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978389"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
 
 Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Когда в диалоговом окне **Новый проект** создается проект, основанный на многопроектном шаблоне, каждый проект в шаблоне добавляется в решение.
 
-Многопроектный шаблон содержит два или несколько шаблонов проектов с корневым шаблоном типа `ProjectGroup`.
+Многопроектный шаблон содержит два или несколько шаблонов проектов с корневым шаблоном типа **ProjectGroup**.
 
 Многопроектные шаблоны ведут себя иначе, чем шаблоны для одного проекта. Они имеют следующие уникальные характеристики:
 
-- Отдельным проектам в многопроектном шаблоне невозможно назначить имена через диалоговое окно **Новый проект**. Вместо этого нужно использовать атрибут `ProjectName` элемента `ProjectTemplateLink` в файле *VSTEMPLATE*, чтобы указать имя для каждого проекта.
+- Отдельным проектам в многопроектном шаблоне невозможно назначить имена через диалоговое окно **Новый проект**. Вместо этого нужно использовать атрибут **ProjectName** элемента **ProjectTemplateLink** в файле *VSTEMPLATE*, чтобы указать имя для каждого проекта.
 
-- Многопроектные шаблоны могут содержать проекты для разных языков, но сам шаблон можно поместить только в одну категорию. Категория шаблона указывается в элементе `ProjectType` файла *VSTEMPLATE*.
+- Многопроектные шаблоны могут содержать проекты для разных языков, но сам шаблон можно поместить только в одну категорию. Категория шаблона указывается в элементе **ProjectType** файла *VSTEMPLATE*.
 
 Многопроектный шаблон должен включать следующие элементы, сжатые в *ZIP*-файл:
 
@@ -38,32 +39,32 @@ ms.lasthandoff: 04/26/2018
 Например, *ZIP*-файл многопроектного шаблона с двумя проектами может иметь следующие файлы и каталоги:
 
 - *MultiProjectTemplate.vstemplate*
-- *\Project1\Project1.vstemplate*
+- *\Project1\MyTemplate.vstemplate*
 - *\Project1\Project1.vbproj*
 - *\Project1\Class.vb*
-- *\Project2\Project2.vstemplate*
+- *\Project2\MyTemplate.vstemplate*
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
 Корневой файл *VSTEMPLATE* многопроектного шаблона отличается от однопроектного шаблона следующим образом:
 
-- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`, а не `Project`. Пример:
+- Атрибут **Тип** элемента **VSTemplate** имеет значение **ProjectGroup** вместо **Project**. Пример:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам *VSTEMPLATE* для включенных проектов. Пример:
+- Элемент **TemplateContent** содержит элемент **ProjectCollection**, который имеет один или несколько элементов **ProjectTemplateLink**, задающих пути к файлам *vstemplate* включенных проектов. Пример:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -94,7 +95,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В базовом каталоге создайте XML-файл с расширением *VSTEMPLATE*. Этот файл содержит метаданные для многопроектного шаблона. Пример структуры файла приведен ниже. Укажите относительный путь к файлу *VSTEMPLATE* каждого проекта.
 
-1. Выберите базовый каталог и в контекстном меню выберите пункты **Отправить** > **Сжатая ZIP-папка**.
+1. Выберите все файлы в базовом каталоге и в контекстном меню выберите пункты **Отправить в** > **Сжатая ZIP-папка**.
 
    Файлы и папки сжимаются в *ZIP*-файл.
 
@@ -104,10 +105,10 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="two-project-example"></a>Пример для двух проектов
 
-В этом примере показан простой корневой файл *VSTEMPLATE*, включающий несколько проектов. В этом примере шаблон содержит два проекта: `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемент `ProjectTemplateLink` указывает имя, которое задано проекту.
+В этом примере показан простой корневой файл *VSTEMPLATE*, включающий несколько проектов. В этом примере шаблон содержит два проекта: **Мое приложение Windows** и **Моя библиотека классов**. Атрибут **ProjectName** элемента **ProjectTemplateLink** задает имя, которое назначено проекту.
 
 > [!TIP]
-> Если атрибут `ProjectName` не указан, в качестве имени проекта используется имя файла *VSTEMPLATE*.
+> Если атрибут **ProjectName** не указан, в качестве имени проекта используется имя файла *VSTEMPLATE*.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -133,7 +134,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="example-with-solution-folders"></a>Пример с папками решений
 
-В этом примере используется элемент `SolutionFolder`, чтобы разделить проекты на две группы — `Math Classes` и `Graphics Classes`. Шаблон содержит четыре проекта, два из которых размещаются в отдельных папках решения.
+В этом примере используется элемент **SolutionFolder** для разделения проектов на две группы, **Math Classes** и **Graphics Classes**. Шаблон содержит четыре проекта, два из которых размещаются в отдельных папках решения.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

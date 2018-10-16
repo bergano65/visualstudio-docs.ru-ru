@@ -1,5 +1,5 @@
 ---
-title: Активация на месте | Документы Microsoft
+title: Встроенная активация | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -8,16 +8,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500349"
 ---
 # <a name="in-place-activation"></a>Активация на месте
 Если в представлении редактора размещаются элементы ActiveX или другие активные элементы управления, представление редактора следует реализовать как элемент ActiveX или как активный объект данных документа с помощью модели встроенной активации.  
   
-## <a name="support-for-menus-toolbars-and-commands"></a>Поддержка меню, панелей инструментов и команд  
+## <a name="support-for-menus-toolbars-and-commands"></a>Поддержка меню, панелей инструментов и команды  
  Visual Studio допускает использование в представлении редактора меню и панелей инструментов интегрированной среды разработки. Такие расширения называются *встроенными компонентами OLE*. Дополнительные сведения см. в разделах <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>.  
   
  При реализации элемента ActiveX можно размещать другие внедренные объекты. При реализации объекта данных документа рамка окна ограничивает возможность использования элементов ActiveX.  
@@ -25,18 +26,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 >  Интерфейсы <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> обеспечивают разделение данных и представления. Однако в Visual Studio такая возможность не поддерживается, и эти интерфейсы используются только для представления объекта представления документа.  
   
- Редакторы, использующие службу <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> , могут обеспечивать интеграцию с меню, панелями инструментов и командами путем вызова методов интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> , реализуемого службой <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Редакторы также могут предоставлять и другие функциональные возможности Visual Studio, такие как отслеживание выделения и управление отменой действий. Дополнительные сведения см. в разделе [создания пользовательских редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).  
+ Редакторы, использующие службу <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> , могут обеспечивать интеграцию с меню, панелями инструментов и командами путем вызова методов интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> , реализуемого службой <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Редакторы также могут предоставлять и другие функциональные возможности Visual Studio, такие как отслеживание выделения и управление отменой действий. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).  
   
-## <a name="objects-and-interfaces-used"></a>Используемые объекты и интерфейсы  
+## <a name="objects-and-interfaces-used"></a>Объекты и интерфейсы, используемые  
  Объекты, используемые для реализации встроенной активации, показаны на рисунке ниже.  
   
  ![В&#45;поместите редактор активации](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Редактор встроенной активации  
   
 > [!NOTE]
->  Из объектов, показанных на этой схеме, только объект `CYourEditorFactory` требуется для создания стандартного редактора. Если вы создаете настраиваемый редактор, реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> не нужно, так как ваш редактор, скорее всего, будет иметь собственный закрытый механизм сохраняемости. Дополнительные сведения см. в разделе [создания пользовательских редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).  
+>  Из объектов, показанных на этой схеме, только объект `CYourEditorFactory` требуется для создания стандартного редактора. Если вы создаете настраиваемый редактор, реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> не нужно, так как ваш редактор, скорее всего, будет иметь собственный закрытый механизм сохраняемости. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).  
   
- Все интерфейсы, реализуемые для создания редактора встроенной активации, показаны в одном объекте `CYourEditorDocument` , но такая конфигурация поддерживает только одно представление данных документа. Дополнительные сведения о поддержке нескольких представлений данных документа см. в разделе [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+ Все интерфейсы, реализуемые для создания редактора встроенной активации, показаны в одном объекте `CYourEditorDocument` , но такая конфигурация поддерживает только одно представление данных документа. Дополнительные сведения о поддержке нескольких представлений данных документа, см. в разделе [поддерживать несколько представлений документа](../extensibility/supporting-multiple-document-views.md).  
   
 |Интерфейс|Тип объекта|Использовать|  
 |---------------|--------------------|---------|  

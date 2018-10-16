@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077494"
 ---
 # <a name="import-element-msbuild"></a>Элемент Import (MSBuild)
 Импортирует содержимое одного файла проекта в другой файл проекта.  
@@ -34,12 +35,12 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remarks"></a>Примечания  
  С помощью элемента `Import` можно повторно использовать код, который является общим для нескольких файлов проекта. Это упрощает обслуживание кода, так как все изменения, внесенные в общий код, распространяются по всем проектам, которые его импортируют.  
 
- По соглашению общие импортируемые файлы проекта сохраняются с расширением TARGETS, но являются стандартными файлами проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] не запрещает импортировать проект с другим расширением файла, однако в целях согласованности рекомендуется использовать расширение TARGETS.  
+ По соглашению общие импортируемые файлы проекта сохраняются с расширением *TARGETS*, но являются стандартными файлами проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] не запрещает импортировать проект с другим расширением файла, однако в целях согласованности рекомендуется использовать расширение *TARGETS*.  
 
  Относительные пути в импортируемых проектах интерпретируются относительно каталога импортируемого проекта. Таким образом, если файл проекта импортируется в несколько файлов проектов, находящихся в разных расположениях, относительные пути в импортируемом файле проекта будут интерпретироваться по-разному для каждого импортируемого проекта.  
 
@@ -75,12 +76,12 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  Хотя операторы условного импорта работают в MSBuilds в командной строке, они не работают с MSBuild в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Проверка условных импортов выполняется с использованием значений конфигурации и платформы, задаваемых при загрузке проекта. Если впоследствии вносятся изменения, требующие перепроверки условий в файле проекта, например изменение платформы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] повторяет проверку условий для свойств и элементов, но не для импортов. Поскольку условия импорта не перепроверяются, импорт пропускается.  
 >   
->  Чтобы обойти это, поместите условные импорты в файлы TARGETS или поместите код в условный блок, такой как [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
+>  Чтобы обойти это, поместите условные импорты в файлы *TARGETS* или поместите код в условный блок, например [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Знаки подстановки  
  В .NET Framework 4 MSBuild позволяет использовать в атрибуте Project подстановочные знаки. При наличии подстановочных знаков все найденные совпадения сортируются (для обеспечения повторяемости), а затем импортируются в полученном порядке, как если бы он был задан явно.  
 
- Это удобно, если вы хотите предложить точку расширяемости, чтобы кто-то еще мог импортировать файл без явного добавления вами имени файла в импортируемый файл. Для этого Microsoft.Common.Targets содержит следующую строку в начале файла.  
+ Это удобно, если вы хотите предложить точку расширяемости, чтобы кто-то еще мог импортировать файл без явного добавления вами имени файла в импортируемый файл. Для этого *Microsoft.Common.Targets* содержит следующую строку в начале файла.  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  

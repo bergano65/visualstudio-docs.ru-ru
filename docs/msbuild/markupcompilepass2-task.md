@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b275a26da94e2d22bd3b347e7671b9fb3f3f333
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f37f4185daff3ef66d9e3192ad315a8db827625
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081467"
 ---
-# <a name="markupcompilepass2-task"></a>Задача MarkupCompilePass2
+# <a name="markupcompilepass2-task"></a>MarkupCompilePass2 - задача
 
 Задача <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> выполняет второй проход компиляции разметки на файлах [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], которые ссылаются на типы в том же проекте.
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Необязательный параметр типа **Boolean**.<br /><br /> Указывает, следует ли запускать задачу в отдельном <xref:System.AppDomain>. Если этот параметр возвращает **false**, задача выполняется в том же <xref:System.AppDomain>, что и [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]. Это позволяет выполнить задачу быстрее. Если этот параметр возвращает значение **true**, то задача выполняется во втором <xref:System.AppDomain>, который изолирован от [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] и работает медленнее.|
 |`AssembliesGeneratedDuringBuild`|Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые изменяются в процессе сборки. Например, решение Visual Studio может содержать один проект, который ссылается на выходные данные компиляции другого проекта. В этом случае выходные данные компиляции второго проекта можно добавить в **AssembliesGeneratedDuringBuild**.<br /><br /> Примечание. Элемент **AssembliesGeneratedDuringBuild** должен содержать ссылки на полный набор сборок, созданных решением сборки.|
-|`AssemblyName`|Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] с именем **WinExeAssembly.exe**, то параметр **AssemblyName** имеет значение **WinExeAssembly**.|
+|`AssemblyName`|Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] с именем *WinExeAssembly.exe*, то параметр **AssemblyName** имеет значение **WinExeAssembly**.|
 |`GeneratedBaml`|Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит список созданных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|
 |`KnownReferencePaths`|Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые не изменяются в процессе сборки. Сюда включаются сборки, расположенные в [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], в каталоге установки [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] и т. д.|
 |`Language`|Обязательный параметр **string**.<br /><br /> Задает управляемый язык, который поддерживает компилятор. Допустимые значения: **C#**, **VB**, **JScript** и **C++**.|
@@ -74,8 +75,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>См. также
 
 [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)  
+[Справочные сведения о задачах WPF для MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
 [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
-[Построение приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+[Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md)  
+[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
 [Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

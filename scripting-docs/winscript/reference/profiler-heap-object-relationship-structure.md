@@ -1,14 +1,14 @@
 ---
-title: "Структура PROFILER_HEAP_OBJECT_RELATIONSHIP | Документы Microsoft"
-ms.custom: 
+title: Структура PROFILER_HEAP_OBJECT_RELATIONSHIP | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 3ab3d986-3314-4c7b-a1c8-18ed691a8b9c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734214"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>Структура PROFILER_HEAP_OBJECT_RELATIONSHIP
 Представляет связь кучи объекта.  

@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное исключение знаков абзаца при создании диапазонов | Документы Microsoft'
+title: 'Практическое: программное исключение знаков абзаца при создании диапазонов'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673929"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Практическое руководство. Программное исключение знаков абзаца при создании диапазонов
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Практическое: программное исключение знаков абзаца при создании диапазонов
   При каждом создании объекта <xref:Microsoft.Office.Interop.Word.Range> на основе абзаца все непечатаемые символы, такие как знаки абзаца, включаются в диапазон. Можно вставить текст из исходного абзаца в целевой абзац. Если вы не хотите разделять целевой абзац на отдельные абзацы, то необходимо сначала удалить знаки абзаца из исходного абзаца. Кроме того, поскольку сведения о форматировании абзаца хранятся в знаке абзаца, вы можете не захотеть включать их при вставке диапазона в существующий абзац.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  В приведенной ниже процедуре объявляются две строковые переменные, извлекается содержимое первого и второго абзаца в активном документе, а потом их содержимое обменивается. Затем в примере демонстрируется удаление знака абзаца из диапазона с помощью метода <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> и вставка текста в абзаце.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>Управление структурой абзаца при вставке текста  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>Управление структурой абзаца при вставке текста  
   
 1.  Создайте две переменные диапазона для первого и второго абзаца и извлеките их содержимое при помощи свойства <xref:Microsoft.Office.Interop.Word.Range.Text%2A> .  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
      Исходное содержимое обоих диапазонов было сохранено в виде строк, поэтому можно восстановить исходное состояние документа.  
   
-8.  Перенастройте `firstRange` , чтобы включить знак абзаца, используя метод <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> для одной символьной позиции.  
+8.  Перенастроить `firstRange` для включения знак абзаца с помощью <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> метод для позиции 1 символа.  
   
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
@@ -101,16 +102,16 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Управление структурой абзаца при вставке текста в настройках уровня документа  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Управление структурой абзаца при вставке текста в настройках уровня документа  
   
 1.  В следующем примере показан полный метод для настройки на уровне документа. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` в своем проекте.  
   
      [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
   
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Управление структурой абзаца при вставке текста в надстройке VSTO  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>Управление структурой абзаца при вставке текста в надстройке VSTO  
   
 1.  В следующем примере показан полный метод для надстройки VSTO. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.  
   
@@ -118,11 +119,11 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
 ## <a name="see-also"></a>См. также  
- [Как: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Как: программное свертывание диапазонов и выделений в документах](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Как: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Как: программным образом сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Как: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Практическое: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Практическое: программное свертывание диапазонов и выделений в документах](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Практическое: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Практическое: программно сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Практическое: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

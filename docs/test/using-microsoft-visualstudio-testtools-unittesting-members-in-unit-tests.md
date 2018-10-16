@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381596"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Использование платформы MSTest в модульных тестах
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для упорядочивания вызовов
 
-Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в статье [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Атрибуты для сборок
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты для идентификации тестовых классов и методов
 
-Каждый тестовый класс должен иметь атрибут `TestClass`, а каждый тестовый метод — атрибут `TestMethod`. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Каждый тестовый класс должен иметь атрибут `TestClass`, а каждый тестовый метод — атрибут `TestMethod`. Дополнительные сведения см. в статье [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="assert-classes-and-related-exceptions"></a>Классы Assert и связанные с ними исключения
 
-С помощью модульных тестов можно проверить поведение конкретного приложения, используя различные виды утверждений, исключений и атрибутов. Дополнительные сведения см. в разделе [Использование классов Assert](../test/using-the-assert-classes.md).
+С помощью модульных тестов можно проверить поведение конкретного приложения, используя различные виды утверждений, исключений и атрибутов. Дополнительные сведения см. в статье [Использование классов Assert](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

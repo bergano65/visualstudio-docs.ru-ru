@@ -1,16 +1,16 @@
 ---
-title: "Интерфейс IDebugExpression | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IDebugExpression | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpression interface
 ms.assetid: 36c00ffb-7160-4c30-a2c9-c9d70c8213cd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727794"
 ---
 # <a name="idebugexpression-interface"></a>Интерфейс IDebugExpression
 Представляет асинхронно вычисленных выражений. Обработчики скриптов обычно реализуют этот интерфейс. Отладчик интегрированной среды разработки обычно использует этот интерфейс для включения немедленное выполнение окно или окно контрольных значений.  

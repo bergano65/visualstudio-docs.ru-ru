@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c5932e37d11fc1b49efb6464255858d0527535
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448767"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254814"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
-Средство VSPerfMon используется с целью сбора данных производительности для приложения. Как правило, оно запускается средством VSPerfCmd.exe. VSPerfMon выводит дополнительные сведения о присоединении или отсоединении процессов, недоступные при использовании средства VSPerfCmd. Для просмотра этих сведений средство VSPerfMon следует запустить в отдельном окне. Для вызова VSPerfMon используется следующий синтаксис:  
+Средство VSPerfMon используется с целью сбора данных производительности для приложения. Как правило, оно запускается средством *VSPerfCmd.exe*. VSPerfMon выводит дополнительные сведения о присоединении или отсоединении процессов, недоступные при использовании средства VSPerfCmd. Для просмотра этих сведений средство VSPerfMon следует запустить в отдельном окне. Для вызова VSPerfMon используется следующий синтаксис:  
   
 ```cmd  
 VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTPUT <file name> [/WINCOUNTER:cfg] [/USER [DOMAIN\]username]  

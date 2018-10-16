@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548740"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Как: Добавление элементов управления диаграммой на листы
   Можно добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в настройках уровня документа. Можно также добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления во время выполнения в надстройках VSTO.  

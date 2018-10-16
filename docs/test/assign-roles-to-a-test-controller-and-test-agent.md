@@ -1,5 +1,5 @@
 ---
-title: Назначение ролей контроллеру и агенту тестирования для выполнения автоматических тестов в Visual Studio
+title: Назначение ролей в контроллере тестирования и агенте тестирования для автоматического тестирования
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370735"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Создание и настройка параметра тестирования
 
-1.  В обозревателе решений щелкните правой кнопкой мыши папку **Элементы решения**, выберите команду **Добавить** и пункт **Создать элемент**.
+1.  В **обозревателе решений** щелкните правой кнопкой мыши папку **Элементы решения**, выберите команду **Добавить** и пункт **Создать элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  Выберите **Добавить**.
 
-     В обозревателе решений появится новый файл TestSettingDistributedTestWalkthrough.testsettings, расположенный в папке **Элементы решения**.
+     В **обозревателе решений** появится новый файл *TestSettingDistributedTestWalkthrough.testsettings*, расположенный в папке **Элементы решения**.
 
      Откроется диалоговое окно **Параметры тестирования**. Выбирается страница **Общее**.
 

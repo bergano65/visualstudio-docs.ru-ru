@@ -12,11 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586507"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Новые возможности в Live Unit Testing
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
 - **Надежность и производительность**. Live Unit Testing теперь обеспечивает более надежное определение системой ситуаций, когда проекты не загружены полностью, что позволяет избежать аварийного завершения работы. Улучшения процедуры сборки также позволяют предотвратить повторную оценку проектов MSBuild, если системе известно об отсутствии изменений в файле проекта.  
 
-- **Различные улучшения в пользовательском интерфейсе**. Параметр **Динамический набор тестов — включить/исключить** в списке жестов щелчка правой кнопки мыши, который мог вводить в заблуждение, был переименован во **Включить/исключить Live Unit Testing**. Параметр **Чистый сброс** был удален из меню **Тест**, **Live Unit Testing**. Чтобы получить к нему доступ, теперь нужно выбрать **Сервис**, **Параметры**, **Live Unit Testing**, а затем выбрать пункт **Удалить сохраняемые данные**.
+- **Различные улучшения в пользовательском интерфейсе**. Параметр **Динамический набор тестов — включить/исключить** в списке жестов щелчка правой кнопки мыши, который мог вводить в заблуждение, был переименован во **Включить/исключить Live Unit Testing**. Параметр **Чистый сброс** был удален из меню **Тест** > **Live Unit Testing**. Чтобы получить к нему доступ, теперь нужно выбрать **Сервис** > **Параметры** > **Live Unit Testing**, а затем выбрать пункт **Удалить сохраняемые данные**.
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Новые возможности Live Unit Testing в Visual Studio 2017 версии 15.3
 
@@ -64,6 +65,6 @@ ms.lasthandoff: 04/26/2018
    - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>См. также
-[Знакомство с Live Unit Testing](live-unit-testing-intro.md)   
-[Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md)
+- [Знакомство с Live Unit Testing](live-unit-testing-intro.md)   
+- [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md)
 

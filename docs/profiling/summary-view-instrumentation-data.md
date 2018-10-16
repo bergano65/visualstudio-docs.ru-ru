@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a62c7dc2d8f0e0e80b3cfd8ba74b968ebd2e116
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 606ba5ebe7c485adb33fbcfa6884ad5e625d821e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669301"
 ---
 # <a name="summary-view---instrumentation-data"></a>Представление "Сводка" — данные инструментирования
 В представлении "Сводка" приводится информация о создающих наибольшую нагрузку функциях в ходе сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).  
@@ -46,5 +47,5 @@ ms.lasthandoff: 04/19/2018
 |**Эксклюзивное время %**|Процент всего времени в данных профилирования, затраченного функцией на выполнение кода в теле самой функции. Не включается время выполнения функций, вызванных выбранной функцией.|  
   
 ## <a name="see-also"></a>См. также  
- [Представление "Сводка"](../profiling/summary-view-sampling-data.md)   
- [Представление "Сводка"](../profiling/summary-view-dotnet-memory-data.md)
+ [Представление "Сводка" — данные выборки](../profiling/summary-view-sampling-data.md)   
+ [Представление "Сводка" — данные в памяти .NET](../profiling/summary-view-dotnet-memory-data.md)

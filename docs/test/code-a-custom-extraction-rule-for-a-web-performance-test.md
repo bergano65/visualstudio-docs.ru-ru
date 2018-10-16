@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283214"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила извлечения для веб-теста производительности
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила извлечения для веб-теста производительности
 
 Можно создавать собственные правила извлечения. Для этого пользовательские правила необходимо наследовать от класса правил извлечения. Правила извлечения являются производными от базового класса <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  (Необязательно) Выполните построение нового проекта библиотеки классов.
 
-6.  (Необязательно) В тестовом проекте добавьте ссылку на проект библиотеки классов, содержащий пользовательское правило извлечения.
+6.  В тестовом проекте добавьте ссылку на проект библиотеки классов, содержащий пользовательское правило извлечения (необязательно).
 
 7.  В тестовом проекте откройте веб-тест производительности в **редакторе веб-тестов производительности**.
 

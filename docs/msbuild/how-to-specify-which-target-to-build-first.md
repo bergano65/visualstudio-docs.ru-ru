@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078804"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первого построения
 Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets`, атрибут `InitialTargets` или целевой объект не указан в командной строке с помощью параметра **/target**.  
   
-## <a name="using-the-initialtargets-attribute"></a>Использование атрибута InitialTargets  
+## <a name="use-the-initialtargets-attribute"></a>Использование атрибута InitialTargets  
  Атрибут `InitialTargets` элемента `Project` указывает целевой объект, который будет выполняться первым, даже если целевые объекты указаны в командной строке или в атрибуте `DefaultTargets`.  
   
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
   
      `<Project InitialTargets="Clean;Compile">`  
   
-## <a name="using-the-defaulttargets-attribute"></a>Использование атрибута DefaultTargets  
+## <a name="use-the-defaulttargets-attribute"></a>Использование атрибута DefaultTargets  
  Атрибут `DefaultTargets` элемента `Project` указывает, какой целевой объект или целевые объекты создаются, если целевой объект не задан явным образом в командной строке. Если целевые объекты указаны в обоих атрибутах `InitialTargets` и `DefaultTargets` и не указаны в командной строке, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет целевые объекты, указанные в атрибуте `InitialTargets`, а затем целевые объекты, указанные в атрибуте `DefaultTargets`.  
   
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию  
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/19/2018
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="using-the-target-switch"></a>Использование параметра /target  
+## <a name="use-the-target-switch"></a>Использование параметра /target  
  Если целевой объект по умолчанию не определен в файле проекта или вы не хотите использовать его, можно использовать параметр командной строки **/target**, чтобы указать другой целевой объект. Целевые объекты, заданные с помощью параметра **/target**, выполняются вместо целевых объектов, заданных в атрибуте `DefaultTargets`. Целевые объекты, заданные в атрибуте `InitialTargets`, всегда выполняются первыми.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь  

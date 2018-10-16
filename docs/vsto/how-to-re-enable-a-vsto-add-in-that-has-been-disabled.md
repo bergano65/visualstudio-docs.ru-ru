@@ -1,5 +1,5 @@
 ---
-title: 'Как: повторное включение надстройки VSTO, которая была отключена | Документы Microsoft'
+title: 'Практическое: повторное включение надстройки VSTO, которая была отключена'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25344d23e0c9f1d6d237d008b0f6b18372490d04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675132"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Практическое руководство. Повторное включение надстройки VSTO, которая была отключена
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Практическое: повторное включение надстройки VSTO, которая была отключена
   Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Если приложение не загружает надстройку VSTO при попытке выполнить отладку, возможно, вы жестко или мягко отключили надстройку VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
-## <a name="hard-disabled-vsto-add-ins"></a>Жестко отключенные надстройки VSTO  
- Жесткое отключение происходит, если надстройка VSTO вызывает неожиданное прекращение работы приложения. На компьютере разработчика оно применяется также в случае остановки отладчика во время выполнения обработчика событий <xref:Microsoft.Office.Tools.AddIn.Startup> в надстройке VSTO.  
+## <a name="hard-disabled-vsto-add-ins"></a>Жестко отключенные VSTO Add-ins  
+ Жесткое отключение происходит, когда надстройки VSTO вызывает неожиданное прекращение работы приложения. На компьютере разработчика оно применяется также в случае остановки отладчика во время выполнения обработчика событий <xref:Microsoft.Office.Tools.AddIn.Startup> в надстройке VSTO.  
   
-#### <a name="to-re-enable-a-vsto-add-in"></a>Повторное включение надстройки VSTO  
+### <a name="to-re-enable-a-vsto-add-in"></a>Повторное включение надстройки VSTO  
   
 1.  В приложении выберите вкладку **Файл** .  
   
@@ -51,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 7.  Нажмите кнопку **Закрыть**.  
   
-## <a name="soft-disabled-vsto-add-ins"></a>Мягко отключенные надстройки VSTO  
+## <a name="soft-disabled-vsto-add-ins"></a>Мягко отключенные VSTO Add-ins  
  Мягкое отключение применяется, если вызванная надстройкой VSTO ошибка не приводит к неожиданному завершению работы приложения. Надстройка VSTO отключается мягким способом, например, если выдает необработанное исключение во время выполнения обработчика событий <xref:Microsoft.Office.Tools.AddIn.Startup> .  
   
 > [!NOTE]  
 >  При повторном включении мягко отключенной надстройки VSTO приложение немедленно пытается загрузить надстройку VSTO. Если не была устранена проблема, которая первоначально вызвала мягкое отключение надстройки VSTO, приложение мягко отключит надстройку VSTO еще раз.  
   
-#### <a name="to-re-enable-an-vsto-add-in"></a>Повторное включение надстройки VSTO  
+### <a name="to-re-enable-a-vsto-add-in"></a>Повторное включение надстройки VSTO  
   
 1.  В приложении выберите вкладку **Файл** .  
   
@@ -76,8 +77,8 @@ ms.lasthandoff: 04/16/2018
 7.  Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
- [Построение решений Office](../vsto/building-office-solutions.md)   
+ [Создание решений Office](../vsto/building-office-solutions.md)   
  [Отладка проектов Office](../vsto/debugging-office-projects.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

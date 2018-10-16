@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457271"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Средство визуализации наборов данных - диалоговое окно
 Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.  

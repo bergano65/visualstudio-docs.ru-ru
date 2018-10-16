@@ -20,17 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14fa9047a4c51cb9e89dd45ff4f319523a8f82ee
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69b06ecb8f527602e5db6711ec7023881f7efc9e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946632"
 ---
-# <a name="converttoabsolutepath-task"></a>Задача ConvertToAbsolutePath
+# <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath - задача
 Преобразует относительный путь или ссылку в абсолютный путь.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `ConvertToAbsolutePath`.  
+ В следующей таблице приводятся параметры задачи `ConvertToAbsolutePath` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
 |`AbsolutePaths`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Список абсолютных путей для переданных элементов.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

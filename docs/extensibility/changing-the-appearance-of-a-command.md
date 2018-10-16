@@ -1,5 +1,5 @@
 ---
-title: Изменение внешнего вида команды | Документы Microsoft
+title: Изменение внешнего вида команды | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a19793f16991bc61636a929822757823728a926
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228777"
 ---
-# <a name="changing-the-appearance-of-a-command"></a>Изменение внешнего вида команды
-Пользователю можно отправить отзыв, изменение внешнего вида команды. Например может потребоваться команды выглядят иначе, когда она недоступна. Можно сделать команды доступна или недоступна, скрыть или отобразить их, или проверьте или снимите флажки возле них в меню.  
+# <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
+Пользователю можно предоставить отзыв, изменение внешнего вида команды. Например вы можете команду, чтобы выглядеть иначе, когда она недоступна. Можно сделать команды доступными или недоступными, скрыть или отобразить их, или проверить или снять их флажки в меню.  
   
  Чтобы изменить внешний вид команды, выполните одно из следующих действий.  
   
--   Укажите соответствующие флаги в определении команду в файл таблицы команд.  
+-   Укажите соответствующие флаги в определении команды в файл таблицы команд.  
   
 -   Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.  
   
--   Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты необработанных команд.  
+-   Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.  
   
  Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).  
   
-### <a name="to-change-the-appearance-of-a-menu-command"></a>Чтобы изменить внешний вид команды меню  
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Для изменения внешнего вида команды меню  
   
-1.  Следуйте инструкциям в [изменение текста команды меню](../extensibility/changing-the-text-of-a-menu-command.md) для создания пункта меню с именем `New Text`.  
+1.  Следуйте инструкциям в [изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md) для создания элемента меню с именем `New Text`.  
   
-2.  В файле ChangeMenuText.cs добавьте следующие инструкции с помощью:  
+2.  В *ChangeMenuText.cs* файл, добавьте следующий оператор using:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  В файле ChangeMenuTextPackageGuids.cs добавьте следующую строку:  
+3.  В *ChangeMenuTextPackageGuids.cs* добавьте следующую строку:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  В файле ChangeMenuText.cs замените код в методе ShowMessageBox следующее:  
+4.  В *ChangeMenuText.cs* файл, замените код метода ShowMessageBox следующим:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         var command = sender as OleMenuCommand;  
         if (command.Text == "New Text")  
-            ChangeMyCommand(command.CommandID.ID, false);}  
+            ChangeMyCommand(command.CommandID.ID, false);
     }  
     ```  
   
-5.  Получить команду, необходимо выполнить обновление из <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> объекта и задайте соответствующие свойства в объекте command. Например следующий метод делает указанную команду из команды VSPackage задать доступна или недоступна. Следующий код делает меню под названием `New Text` недоступна после была нажата.  
+5.  Получить команду, которая требуется обновить из <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> и задайте соответствующие свойства объекта команды. Например следующий метод делает указанной команды VSPackage набор команд доступна или недоступна. Следующий код делает меню под названием `New Text` недоступным после он был выполнен щелчок.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -76,18 +77,18 @@ ms.lasthandoff: 04/16/2018
             mc.Enabled = enableCmd;  
             cmdUpdated = true;  
         }  
-        return cmdUpdated;    }  
+        return cmdUpdated;
     }  
     ```  
   
 6.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
   
-7.  На **средства** меню, нажмите кнопку **ChangeMenuText вызова** команды. На этом этапе имя команды — **ChangeMenuText вызова**, поэтому обработчик команд не вызывает ChangeMyCommand().  
+7.  На **средства** меню, щелкните **вызова ChangeMenuText** команды. На этом этапе является имя команды **вызова ChangeMenuText**, поэтому не вызывает обработчик команд **ChangeMyCommand()**.  
   
-8.  На **средства** меню, вы увидите **новый текст**. Нажмите кнопку **новый текст**. Команда теперь должны быть недоступны.  
+8.  На **средства** меню, теперь вы увидите **новый текст**. Нажмите кнопку **новый текст**. Теперь нужно запретить команду.  
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
- [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

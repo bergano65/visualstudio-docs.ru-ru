@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eb8a61163ad731629e4d5e71d75d8c7b24ccf3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ba779446e3cfd450d50d71f21fd2e2434db158f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077053"
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (динамическое свойство XElement)
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```xaml
 elem.Value
 ```
 
@@ -37,5 +38,5 @@ elem.Value
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>
-- [Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)
+- [Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)
 - [XML](../designers/xml-xelement-dynamic-property.md)

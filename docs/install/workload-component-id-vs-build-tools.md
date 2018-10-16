@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 8634017862a12b3a399f003d6f16c9689b7aaa20
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 78a3e0e89635c90585416745ae20b3c6b3b6e8ba
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138536"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Каталог компонентов для Visual Studio Build Tools 2017
 
@@ -50,33 +51,58 @@ ms.lasthandoff: 05/07/2018
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.7.27520.0 | Обязательно
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.0.26621.2 | Обязательно
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.8.27825.0 | Обязательно
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 15.7.27617.1 | Обязательно
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки для разработки WCF | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.7.27604.0 | Обязательно
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.8.27729.1 | Обязательно
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Рекомендованное
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Рекомендованное
 Microsoft.VisualStudio.Component.AspNet45 | Дополнительные возможности ASP.NET | 15.7.27625.0 | Рекомендованное
-Microsoft.VisualStudio.Component.TypeScript.2.8 | Пакет SDK для TypeScript 2.8 | 15.0.27617.1 | Рекомендованное
+Microsoft.VisualStudio.Component.TypeScript.2.9 | Пакет SDK для TypeScript 2.9 | 15.0.27924.0 | Рекомендованное
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
+
+## <a name="data-storage-and-processing-build-tools"></a>Средства сборки для хранения и обработки данных
+
+**Идентификатор:** Microsoft.VisualStudio.Workload.DataBuildTools
+
+**Описание:** сборка проектов базы данных SQL Server
+
+### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
+
+Идентификатор компонента | name | Версия | Тип зависимости
+--- | --- | --- | ---
+Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Рекомендованное
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Рекомендованное
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Рекомендованное
+Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools — средства сборки | 15.8.27825.0 | Рекомендованное
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Рекомендованное
 
 ## <a name="net-desktop-build-tools"></a>Средства сборки классических приложений .NET
 
@@ -101,6 +127,7 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Рекомендованное
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 15.7.27625.0 | Рекомендованное
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки для разработки WCF | 15.6.27309.0 | Рекомендованное
 Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 15.6.27406.0 | Optional
@@ -108,13 +135,16 @@ Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 15.7.27604.0 | Optional
+Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 15.8.27825.0 | Optional
 
 ## <a name="msbuild-tools"></a>MSBuild Tools
 
@@ -140,22 +170,24 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn
 
 Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Обязательно
-Microsoft.NetCore.BuildTools.ComponentGroup | Средства сборки .NET Core | 15.7.27617.1 | Обязательно
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
+Microsoft.NetCore.BuildTools.ComponentGroup | Средства сборки .NET Core | 15.8.27906.1 | Обязательно
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
 
 ## <a name="nodejs-build-tools"></a>Средства сборки Node.js
 
 **Идентификатор:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Описание.** Разработка масштабируемых сетевых приложений с помощью Node.js, асинхронной управляемой событиями среды выполнения JavaScript.
+**Описание**. Задачи и целевые объекты MSBuild для создания масштабируемых сетевых приложений, использующих Node.js, асинхронную среду выполнения JavaScript, управляемую событиями.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
 Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.Node.Build | Поддержка Node.js | 15.6.27406.0 | Обязательно
+Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.TypeScript.2.6 | Пакет SDK для TypeScript 2.6 | 15.0.27729.1 | Рекомендованное
 
 ## <a name="officesharepoint-build-tools"></a>Средства сборки Office и SharePoint
 
@@ -174,22 +206,27 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.7.27520.0 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.6.27309.0 | Обязательно
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.8.27825.0 | Обязательно
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Средства сборки и разработки Office и SharePoint | 15.7.27617.1 | Обязательно
+Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Средства сборки и разработки Office и SharePoint | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.Workflow.BuildTools | Средства сборки Windows Workflow Foundation | 15.8.27906.1 | Обязательно
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки для разработки WCF | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.7.27604.0 | Обязательно
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.8.27729.1 | Обязательно
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Средства сборки набора средств Visual Studio для Office (VSTO) | 15.7.27617.1 | Рекомендованное
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
 
 ## <a name="universal-windows-platform-build-tools"></a>Инструменты для создания приложений универсальной платформы Windows
@@ -209,15 +246,22 @@ Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия v141 инструментов версии 14.14 для VC+  2017 версии 15.7 | 15.7.27625.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 15.7.27703.1 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.7.27703.1 | Рекомендованное
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия v141 инструментов версии 15.14 для VC++ 2017 версии 15.8 | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 15.8.27705.0 | Обязательно
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.8.27924.0 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="visual-c-build-tools"></a>Visual C++ Build Tools
 
@@ -230,12 +274,13 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для 
 Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные возможности Visual C++ Build Tools | 15.6.27406.0 | Обязательно
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные возможности Visual C++ Build Tools | 15.8.27729.1 | Обязательно
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия v141 инструментов версии 14.14 для VC+  2017 версии 15.7 | 15.7.27625.0 | Обязательно
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия v141 инструментов версии 15.14 для VC++ 2017 версии 15.8 | 15.8.27825.0 | Обязательно
 Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательно
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 15.7.27625.0 | Рекомендованное
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.7.27703.1 | Рекомендованное
+Microsoft.VisualStudio.Component.VC.CMake.Project | Инструменты Visual C++ для CMake | 15.8.27906.1 | Рекомендованное
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.8.27924.0 | Рекомендованное
 Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
@@ -244,7 +289,7 @@ Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL для x86 и x64 | 15.
 Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули для стандартной библиотеки (экспериментальная версия) | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Компиляторы и библиотеки Visual C++ для ARM64 | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
@@ -253,12 +298,41 @@ Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK д�
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP для C++ | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP для C++ | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Поддержка Windows XP для C++ | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Поддержка Windows XP для C++ | 15.8.27705.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
+
+## <a name="visual-studio-extension-development"></a>Разработка расширений Visual Studio
+
+**Идентификатор:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+
+**Описание**. Средства для создания надстроек и расширений для Visual Studio, включая новые команды, средства анализа кода и окна инструментов.
+
+### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
+
+Идентификатор компонента | name | Версия | Тип зависимости
+--- | --- | --- | ---
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Обязательно
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
+Microsoft.VisualStudio.Component.VSSDKBuildTools | Основные компоненты Visual Studio Build Tools | 15.8.27924.0 | Обязательно
+Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Необходимые компоненты для разработки расширений Visual Studio | 15.8.27729.1 | Обязательно
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Optional
+Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения Visual C++ для UWP | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL для x86 и x64 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия v141 инструментов версии 15.14 для VC++ 2017 версии 15.8 | 15.8.27825.0 | Optional
 
 ## <a name="web-development-build-tools"></a>Средства сборки для веб-разработчиков
 
@@ -272,9 +346,9 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Поддержка W
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.7.27520.0 | Обязательно
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.7.27604.0 | Обязательно
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 15.8.27729.1 | Обязательно
 Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 15.7.27617.1 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Рекомендованное
@@ -282,22 +356,27 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Рекомендованное
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Рекомендованное
 Microsoft.VisualStudio.Component.AspNet45 | Дополнительные возможности ASP.NET | 15.7.27625.0 | Рекомендованное
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Рекомендованное
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 15.7.27625.0 | Рекомендованное
-Microsoft.VisualStudio.Component.TypeScript.2.8 | Пакет SDK для TypeScript 2.8 | 15.0.27617.1 | Рекомендованное
+Microsoft.VisualStudio.Component.TypeScript.2.9 | Пакет SDK для TypeScript 2.9 | 15.0.27924.0 | Рекомендованное
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки для разработки WCF | 15.6.27309.0 | Рекомендованное
 Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
 
 ## <a name="mobile-development-with-net"></a>Разработка мобильных приложений на платформе .NET
@@ -324,12 +403,13 @@ Component.Android.SDK25 | Программа установки пакета SDK
 
 Идентификатор компонента | name | Версия
 --- | --- | ---
-Microsoft.VisualStudio.Component.TypeScript.2.0 | Пакет SDK для TypeScript 2.0 | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.1 | Пакет SDK для TypeScript 2.1 | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.2 | Пакет SDK для TypeScript 2.2 | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.3 | Пакет SDK для TypeScript 2.3 | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.0 | Пакет SDK для TypeScript 2.0 | 15.8.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.1 | Пакет SDK для TypeScript 2.1 | 15.8.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.2 | Пакет SDK для TypeScript 2.2 | 15.8.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.3 | Пакет SDK для TypeScript 2.3 | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.5 | Пакет SDK для TypeScript 2.5 | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.6 | Пакет SDK для TypeScript 2.6 | 15.0.27520.0
+Microsoft.VisualStudio.Component.TypeScript.2.7 | Пакет SDK для TypeScript 2.7 | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.8 | Пакет SDK для TypeScript 2.8 | 15.0.27729.1
 Microsoft.VisualStudio.Component.VC.ATL.ARM | Visual C++ ATL для ARM | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | Visual C++ ATL для ARM с устранением рисков Spectre | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | Visual C++ ATL для ARM64 | 15.7.27625.0
@@ -341,26 +421,19 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM | Visual C++ MFC для ARM | 15.7.2
 Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | Visual C++ MFC для ARM с устранением рисков Spectre | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | Visual C++ MFC для ARM64 | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | Поддержка Visual C++ MFC для ARM64 с устранением рисков Spectre | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Библиотеки версии 14.14 для VC++ 2017 версии 15.7 для Spectre (ARM) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Библиотеки версии 14.14 для VC++ 2017 версии 15.7 для Spectre (ARM64) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Библиотеки версии 14.14 для VC++ 2017 версии 15.7 для Spectre (x86 и x64) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | Набор инструментов v14.11 для VC++ 2017 версии 15.4 | 15.0.27406.0
-Microsoft.VisualStudio.Component.VC.Tools.14.12 | Набор инструментов версии 14.12 для VC++ 2017 версии 15.5 | 15.0.27406.0
-Microsoft.VisualStudio.Component.VC.Tools.14.13 | Набор инструментов версии 14.13 для VC++ 2017 версии 15.6 | 15.0.27625.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Библиотеки версии 15.14 для VC++ 2017 версии 15.8 для Spectre (ARM) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Библиотеки версии 14.15 для VC++ 2017 версии 15.8 для Spectre (ARM64) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Библиотеки версии 15.14 для VC++ 2017 версии 15.8 для Spectre (x86 и x64) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | Набор инструментов v14.11 для VC++ 2017 версии 15.4 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | Набор инструментов версии 14.12 для VC++ 2017 версии 15.5 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.13 | Набор инструментов версии 14.13 для VC++ 2017 версии 15.6 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.14 | Набор инструментов версии 14.14 для VC++ 2017 версии 15.7 | 15.0.27924.0
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
+* [Build Tools для Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017#build-tools-for-visual-studio-2017)
 * [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

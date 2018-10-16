@@ -1,5 +1,5 @@
 ---
-title: Как купить облачные подписки на Visual Studio Enterprise и Visual Studio Professional
+title: Как приобрести облачные подписки на Visual Studio
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -9,63 +9,68 @@ description: Вы можете арендовать Visual Studio Professional �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 878a335f5b576ee3ccf439b35e8a8adc861a9864
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495665"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 
-Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://www.visualstudio.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые облачные подписки.
+Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
 
-[Сравнение преимуществ облачных подписок и цены на них](https://www.visualstudio.com/vs/pricing/)
+[Сравнение преимуществ облачных подписок и цены на них](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Перед началом работы
 
-*   Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/).
-[Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
+*   Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
+
+## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Кто может приобрести облачные подписки на Visual Studio?
+Облачные подписки может приобрести любое лицо с доступом к подписке Azure уровня [владельца или участника](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0).  
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Как купить облачные подписки
 
 0.  Войдите в [Visual Studio Marketplace > Подписки](https://marketplace.visualstudio.com/subscriptions).
 
 0.  Выберите подписку, которую хотите купить, например:
-
-    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Покупка подписки на Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
 
 0.  Выберите подписку Azure, которая будет использоваться для выставления счетов. Если у вас нет подписки Azure, вы можете ее оформить.
-
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Выберите желаемую подписку Azure](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
 0.  Выберите число приобретаемых подписок.
-
-    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Укажите число подписок](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Если вы не хотите назначать подписки себе, снимите флажок **Назначить эту подписку на меня**.
 
 0.  Подтвердите и завершите покупку. Если вы назначили подписку себе, зайдите на [портал подписчиков Visual Studio](https://my.visualstudio.com), чтобы начать загрузку программного обеспечения и использовать другие преимущества для подписчиков.
 
-    <img alt="Finish purchase successfully" src="_img/buy-vs-subscriptions/buy-vs-sub-success.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Завершите покупку](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
 
-    <img alt="Go to Visual Studio subscriber portal" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Войдите на портал подписчиков Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png).
 
-    Если вы купили несколько подписок, перейдите на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com/), чтобы назначить подписки другим пользователям.
+Если вы купили несколько подписок, перейдите на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com), чтобы назначить подписки другим пользователям.
 
-    <img alt="Assign subscriptions to others" src="_img/buy-vs-subscriptions/buy-vs-sub-success-many.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Назначение подписок другим пользователям](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
 
-    <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Просмотр подписок](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Отмена продления приобретенных облачных подписок
-
+## <a name="manage-subscriptions"></a>Отмена продления приобретенных облачных подписок
 
 *   Чтобы изменить число приобретенных подписок, сделайте следующее:
 
-    <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Чтобы отменить подписки, измените их число на ноль (0).
-Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
+*   Чтобы отменить подписки, измените их число на ноль (0). Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Купить облачные подписки прямо сейчас
 
@@ -77,6 +82,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="related-resources"></a>Связанные ресурсы
 
 * [Портал администрирования подписок Visual Studio](https://manage.visualstudio.com/)
-* [Поддержка по подписке Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Поддержка по подписке Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 * [Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio](vscloud-billing-faq.md)
 * [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)

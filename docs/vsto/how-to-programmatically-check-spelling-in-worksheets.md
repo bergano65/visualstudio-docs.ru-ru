@@ -1,5 +1,5 @@
 ---
-title: 'Как: Программная проверка орфографии на листах | Документы Microsoft'
+title: 'Практическое: Программная проверка орфографии на листах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,25 +18,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 874a85063dae34f0fd650149583bade40ca60d29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674370"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Практическое руководство. Программная проверка орфографии на листах
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Практическое: Программная проверка орфографии на листах
   Вы можете программными средствами проверять орфографию слов в листе. Диалоговое окно **Орфография** автоматически появляется при появлении в листе слов с ошибками.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Проверка орфографии в листе в настройке уровня документа  
+## <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Проверка орфографии в листе в настройке уровня документа  
   
 1.  Вызовите метод <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> листа.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
      [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-an-vsto-add-in"></a>Проверка орфографии в листе в надстройке VSTO  
+## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>Проверка орфографии на листе в надстройке VSTO  
   
 1.  Вызовите метод <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> активного листа.  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Как: программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Практическое: программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   

@@ -1,15 +1,16 @@
 ---
-title: Общие сведения о конфигурациях сборки в Visual Studio для Mac
+title: Общие сведения о конфигурациях построения
 description: В этой статье описываются различные конфигурации сборки в Visual Studio для Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: b0ab3786f9bbb713fdc2b4726b29148c4bcd9f34
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224391"
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях сборки
 

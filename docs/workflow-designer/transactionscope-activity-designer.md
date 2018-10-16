@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктора операций TransactionScope
+title: Конструктор рабочих процессов - конструктор действия TransactionScope
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,31 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c8a5c610492f298d3f2ef6de35444c96f7310f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755802"
 ---
 # <a name="transactionscope-activity-designer"></a>Конструктор действия TransactionScope
 
 **TransactionScope** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.TransactionScope> действия.
 
 ## <a name="the-transactionscope-activity"></a>Действие TransactionScope
- Действие <xref:System.Activities.Statements.TransactionScope> выполняет вложенное действие за одну транзакцию. Транзакция фиксируется, после того как действие <xref:System.Activities.Statements.TransactionScope.Body%2A> и все другие участники транзакции успешно завершаются.
+
+Действие <xref:System.Activities.Statements.TransactionScope> выполняет вложенное действие за одну транзакцию. Транзакция фиксируется, после того как действие <xref:System.Activities.Statements.TransactionScope.Body%2A> и все другие участники транзакции успешно завершаются.
 
 ### <a name="using-the-transactionscope-activity-designer"></a>Использование конструктора операций TransactionScope
- **TransactionScope** конструктора действий можно найти в **транзакции** категории **элементов**, который нажав **элементов**  конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **TransactionScope** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.TransactionScope> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для TransactionScope. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **TransactionScope** конструктора или в **DisplayName** поле сетки свойств.
+Доступ **TransactionScope** конструктора действий в **транзакции** категории **элементов**. **TransactionScope** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.TransactionScope> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для TransactionScope. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **TransactionScope** конструктора действий или в **DisplayName** поле таблицы свойств.
 
 ### <a name="the-transactionscope-properties"></a>Свойства TransactionScope
- В следующей таблице показаны свойства <xref:System.Activities.Statements.TransactionScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> И <xref:System.Activities.Statements.TransactionScope.Body%2A> свойства могут быть изменены на поверхности конструктора рабочих процессов. Но другие свойства следует изменять в таблице свойств.
+
+В следующей таблице показаны свойства <xref:System.Activities.Statements.TransactionScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> И <xref:System.Activities.Statements.TransactionScope.Body%2A> свойства можно изменить на поверхности конструктора рабочих процессов. Но другие свойства следует изменять в таблице свойств.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.Activities.Statements.TransactionScope>. По умолчанию выбрано значение TransactionScope. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите действие из **элементов** в **текст** поле на **TransactionScope** конструктора действий с текстом подсказки «перетащить действие Сюда».|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите его из **элементов** в **текст** поле на **TransactionScope** конструктора действий с текстом подсказки «перетащить действие здесь».|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Да|Задает <xref:System.Transactions.IsolationLevel> для объекта <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Задает интервал времени (в формате 00:00:00, что означает часы:минуты:секунды), в течение которого транзакция должна завершиться. Значение по умолчанию - 1 минута (00:01:00).|
 |[System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Да|Задает значение, которое указывает, следует ли прерывать рабочий процесс, если прервана транзакция.|

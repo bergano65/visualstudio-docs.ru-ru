@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548171"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Рекомендации для создания областей формы Outlook
   Следующие сведения помогут вам оптимизировать области формы и предотвращать потенциальные проблемы.  

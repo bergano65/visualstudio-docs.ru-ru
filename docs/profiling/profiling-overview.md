@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669557"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Общие сведения о профилировании в Visual Studio
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* [Ознакомьтесь с обзором функций профилирования](../profiling/profiling-feature-tour.md), чтобы изучить различные способы измерения производительности приложения.
+* [Сначала ознакомьтесь со средствами профилирования](../profiling/profiling-feature-tour.md), чтобы изучить различные способы измерения производительности приложения.
 
 * [Анализируйте загрузку ЦП](../profiling/cpu-usage.md) для получения более подробных сведений о загрузке ЦП.
 

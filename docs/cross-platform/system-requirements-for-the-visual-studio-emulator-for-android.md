@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279405"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
 Эмулятор Visual Studio для Android выполняется в виде виртуальной машины в Hyper-V, технологии виртуализации для Windows 8 и более поздних версий. Чтобы запустить эмулятор, компьютер должен удовлетворять требованиям для запуска Hyper-V, как описано в этом разделе.  
   
  Программа установки пытается автоматически настроить при установке эмулятора. После успешной настройки необходимых компонентов эмулятор работает надлежащим образом. В противном случае необходимые компоненты потребуется включить вручную. Если нужно вручную настроить необходимые компоненты, используются те же действия и средства, которые описаны [здесь](/previous-versions/windows/apps/jj863509\(v=vs.105\)) для эмулятора Windows Phone.  
@@ -116,7 +117,7 @@ ms.lasthandoff: 04/16/2018
   
 |Требование|Проверка и включение этого необходимого компонента|  
 |-----------------|----------------------------------------------|  
-|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|  
+|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|  
 |Технология Hyper-V должна быть запущена.|Дополнительные сведения об управлении службами см. в следующих разделах.<br /><br /> -   [Запуск, остановка, приостановка, возобновление работы или перезапуск службы](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Настройка способа запуска службы](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  Необходимо быть членом локальной группы администраторов Hyper-V.  
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается  
  При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: "Ошибка при развертывании приложения". Повторите попытку.  
   
- Такая конфигурация не поддерживается. Информацию о связанных проблемах см. в разделе [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+ Такая конфигурация не поддерживается. Сведения о связанных проблемах см. в статье [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Files"></a> Для Hyper-V требуются несжатые и и незашифрованные файлы  
  На жестком диске, настроенном с файловой системой NTFS, файлы виртуальных жестких дисков, используемых Hyper-V, не должны быть сжаты или зашифрованы. Убедитесь, что следующие каталоги не сжаты и не зашифрованы.  
@@ -154,4 +155,4 @@ ms.lasthandoff: 04/16/2018
  Чтобы эмулятор мог эмулировать вызовы в GPU, например используемые OpenGL ES, компьютер должен иметь GPU, совместимый с DirectX и установленный с соответствующими драйверами DirectX.  
   
 ## <a name="see-also"></a>См. также  
- [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

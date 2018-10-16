@@ -1,16 +1,17 @@
 ---
 title: Расширение Visual Studio для Mac
 description: Возможности и функции Visual Studio для Mac можно расширить с помощью модулей, называемых пакетами расширения. В первой части этого руководства создается простой пакет расширения Visual Studio для Mac для вставки даты и времени в документ. Во второй части руководства описаны базовые принципы работы системы пакетов расширения, а также некоторые основные API, составляющие основу Visual Studio для Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224966"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -37,7 +38,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Пакеты расширения хранят метаданные о своем имени, версии, зависимостях и другие сведения в атрибутах C#. Add-in Maker создает два файла — `AddinInfo.cs` и `AssemblyInfo.cs` — для хранения и упорядочивания этих сведений. Пакеты расширения должны иметь в своем *атрибуте Addin* уникальный идентификатор и пространство имен:
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -55,7 +56,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 ## <a name="extensions-and-extension-points"></a>Расширения и точки расширения
 
-Точка расширения — это заполнитель, определяющий структуру данных (тип), тогда как расширение определяет данные, соответствующие структуре, которая указана конкретной точкой расширения. Точки расширения указывают, какой тип расширения они могут принять в своем объявлении. Расширения объявляются с помощью имен типов или путей расширения. Более подробные сведения о создании требуемой точки расширения см. в разделе [Ссылка на точку расширения](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots).
+Точка расширения — это заполнитель, определяющий структуру данных (тип), тогда как расширение определяет данные, соответствующие структуре, которая указана конкретной точкой расширения. Точки расширения указывают, какой тип расширения они могут принять в своем объявлении. Расширения объявляются с помощью имен типов или путей расширения. Более подробные сведения о создании требуемой точки расширения см. в разделе [Ссылка на точку расширения](https://github.com/mono/mono-addins/wiki/Extension-Points).
 
 Архитектура на базе точек расширения и расширений делает разработку в Visual Studio для Mac быстрой и модульной. 
 
@@ -69,7 +70,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Расширения команд определяются путем добавления записей в точку расширения `/MonoDevelop/Ide/Commands`. Мы определили расширение в `Manifest.addin.xml`, используя следующий код:
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -89,7 +90,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Расширение CommandItem, которое подключается к точке расширения `/MonoDevelop/Ide/MainMenu/Edit`, показано в следующем фрагменте кода:
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -101,7 +102,7 @@ CommandItem помещает команду, указанную в его атр
 
 `InsertDateHandler` является расширением класса `CommandHandler`. Он переопределяет два метода — `Update` и `Run`. Метод `Update` запрашивается каждый раз, когда команда отображается в меню или выполняется с помощью настраиваемых сочетаний клавиш. Изменив объект info, вы можете отключить команду, сделать ее невидимой, заполнить команды массива и т. п. Это метод `Update` отключает команды, если не удается найти активный *документ* с *TextEditor* для вставки текста:
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -110,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 Переопределять метод `Update` требуется лишь в том случае, когда имеется специальная логика для включения или скрытия команды. Метод `Run` выполняется каждый раз, когда пользователь выполняет команду, что в данном случае происходит, когда пользователь выбирает команду в меню правки. Этот метод вставляет дату и время в позиции курсора в текстовом редакторе:
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -121,7 +122,7 @@ protected override void Run ()
 
 Объявите тип Command в качестве члена перечисления в `DateInserterCommands`:
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

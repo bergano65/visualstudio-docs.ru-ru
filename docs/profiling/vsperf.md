@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446729"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477396"
 ---
 # <a name="vsperf"></a>VSPerf
 С помощью программы командной строки **VsPerf** можно выполнять следующие задачи:  
@@ -26,16 +26,7 @@ ms.locfileid: "34446729"
   
  Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
- В этом разделе описываются параметры, которые можно использовать с программой командной строки `vsperf.exe`. В нем содержатся следующие подразделы:  
-  
- [Только приложения универсальной платформы Windows](#BKMK_windows_store_apps_only)  
-  
- [Только классические приложения Windows 8 и приложения Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Все приложения](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Только приложения универсальной платформы Windows  
+## <a name="uwp-apps-only"></a>Только приложения универсальной платформы Windows  
  Эти параметры применяются только к приложениям универсальной платформы Windows.  
   
 |||  
@@ -46,7 +37,7 @@ ms.locfileid: "34446729"
 |**/noclr**|Необязательный. Не собирать данные среды CLR.<br /><br /> Используется только с параметром /package или /attach.<br /><br /> Оптимизация, управляемые символы разрешаться не будут.|  
 |**/listapps**|Вывод списка имен и полных имен пакетов для установленных приложений.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Только классические приложения Windows 8 и приложения Windows Server 2012  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Только классические приложения Windows 8 и приложения Windows Server 2012  
  Эти параметры не работают в приложениях универсальной платформы Windows.  
   
 |||  
@@ -55,7 +46,7 @@ ms.locfileid: "34446729"
 |**/args:{аргументы_исполняемого_файла}**|Задает аргументы командной строки для передачи целевому объекту **/launch**.|  
 |**/console**|Запускает целевой объект **/launch** в новом командном окне.|  
   
-##  <a name="BKMK_All_applications"></a> Все приложения  
+## <a name="all-applications"></a>Все приложения  
  Этот параметр применяется к любому приложению Windows 8 или Windows Server 2012.  
   
 |||  

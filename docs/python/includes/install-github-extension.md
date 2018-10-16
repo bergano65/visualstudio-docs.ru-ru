@@ -1,11 +1,12 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 07875f16be0c99c5b4c6d0c69eaf72ef293a3e69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62fc9607b6f54dc90d4eb8864cba3a0fb1e74779
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513602"
 ---
-1. Чтобы подключиться к репозиториям GitHub, запустите установщик Visual Studio, выберите вариант **Изменить** и перейдите на вкладку **Отдельные компоненты**. Прокрутите содержимое вниз до раздела **Средства для работы с кодом**, выберите компонент **Расширение GitHub для Visual Studio**, а затем выберите **Изменить**.
+Чтобы работать с репозиториями GitHub из Visual Studio, нужно установить расширение GitHub для Visual Studio. Для этого запустите установщик Visual Studio, выберите **Изменить** и откройте вкладку **Отдельные компоненты**. Прокрутите содержимое вниз до раздела **Средства для работы с кодом**, выберите компонент **Расширение GitHub для Visual Studio**, а затем выберите **Изменить**.
 
-    ![Выбор расширения GitHub в установщике Visual Studio](../media/installation-github-extension.png)
+![Выбор расширения GitHub в установщике Visual Studio](../media/installation-github-extension.png)

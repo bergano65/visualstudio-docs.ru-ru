@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags поле | Документы Microsoft
+title: m_stateFlags поле | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8842b4e7a3b6c0cb13b0c0d446e0e03b525ae903
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee0cdebe00acce67fc9032a4ba9e7e566ecd9786
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232082"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags поля
+# <a name="mstateflags-field"></a>поле m_stateFlags
 Хранит сведения о текущем состоянии <xref:System.Threading.Tasks.Task> объекта.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .field assembly int32 modreq(System.Runtime.CompilerServices.IsVolatile) m_stateFlags  
 ```  
   
@@ -50,4 +51,4 @@ ms.lasthandoff: 04/16/2018
 -   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
 ## <a name="see-also"></a>См. также  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
