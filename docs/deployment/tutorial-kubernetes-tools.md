@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701713"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356786"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы с Visual Studio Tools для Kubernetes
 
 В Visual Studio Tools Kubernetes помощи в упрощении разработки контейнерных приложений, предназначенных для Kubernetes. Visual Studio может автоматически создавать код конфигурации как файлы, необходимые для поддержки развертывания Kubernetes, такие как файлы Dockerfile и Helm диаграммы. Отладку кода в службе Azure Kubernetes (AKS) кластеру в оперативном режиме с помощью пространств разработки Azure или публиковать непосредственно в кластер AKS в Visual Studio.
+
+В этом учебнике с помощью Visual Studio, чтобы добавить поддержку Kubernetes в проект и опубликовать в AKS. Если вы заинтересованы в основном [пробелы разработки Azure](http://aka.ms/get-azds) для отладки и тестирования проекта, запущенного в AKS, то можете перейти к [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) вместо этого.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -28,9 +30,9 @@ ms.locfileid: "44701713"
 
 - [Kubernetes средства для Visual Studio](https://aka.ms/get-vsk8stools), которые доступны для загрузки.
 
-- [Docker для Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) на рабочей станции разработки (то есть когда вы запускаете Visual Studio), если вы хотите создать образы Docker, отладка контейнеров Docker, работающих локально, или опубликовать в AKS.
+- [Docker для Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) на рабочей станции разработки (то есть когда вы запускаете Visual Studio), если вы хотите создать образы Docker, отладка контейнеров Docker, работающих локально, или опубликовать в AKS. (Docker — *не* требуется для построения и отладка контейнеров Docker в AKS с помощью Azure Dev пробелы.)
 
-- Если вы хотите опубликовать AKS из Visual Studio:
+- Если вы хотите опубликовать AKS из Visual Studio (*не* необходимые для отладки в AKS с помощью пространств разработки Azure):
 
     1.  [AKS, средства публикации](https://aka.ms/get-vsk8spublish), которые доступны для загрузки.
 
@@ -78,11 +80,11 @@ ms.locfileid: "44701713"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Публикация в службу Azure Kubernetes (AKS)
 
-Все эти файлы в месте можно использовать Visual Studio IDE также создавать и отлаживать код приложения, так же, как у вас всегда есть.
+Все эти файлы в месте можно использовать Visual Studio IDE также создавать и отлаживать код приложения, так же, как у вас всегда есть. Можно также использовать [пробелы разработки Azure](http://aka.ms/get-azds) для быстрого запуска и отладки кода в кластере AKS в реальном времени. Дополнительные сведения см. на [руководстве пробелы разработки Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Получив ваш код, запущенный нужным образом, можно опубликовать непосредственно из Visual Studio в кластер AKS.
 
-Чтобы сделать это, сначала необходимо еще раз убедиться, что вы установили все, как описано в разделе [предварительные требования](#prerequisities) раздел элемента, для публикации в AKS и выполните все приведенные в ссылки действия командной строки. Затем настройте профиль публикации, который публикует образ контейнера в реестр контейнеров Azure (ACR). Затем AKS можно получить образ контейнера из ACR и развернуть его в кластер.
+Чтобы сделать это, сначала необходимо еще раз убедиться, что вы установили все, как описано в разделе [предварительные требования](#prerequisites) раздел элемента, для публикации в AKS и выполните все приведенные в ссылки действия командной строки. Затем настройте профиль публикации, который публикует образ контейнера в реестр контейнеров Azure (ACR). Затем AKS можно получить образ контейнера из ACR и развернуть его в кластер.
 
 1. В **обозревателе решений**, щелкните правой кнопкой мыши ваш *проекта* и выберите **публикации**.
 
@@ -119,3 +121,5 @@ ms.locfileid: "44701713"
 ## <a name="next-steps"></a>Следующие шаги
 
 Узнайте больше о разработке Kubernetes в Azure, считывая [документацией по AKS](/azure/aks).
+
+Дополнительные сведения о пространствах разработки Azure можно найти [документации пробелы разработки Azure](http://aka.ms/get-azds)
