@@ -155,7 +155,7 @@ rm -rf ~/.android/avd
 
 ## <a name="uninstall-xamarinios"></a>Удаление Xamarin.iOS
 
-Xamarin.iOS позволяет разрабатывать приложения iOS на языках C# и F # в Visual Studio для Mac.
+Xamarin.iOS позволяет разрабатывать приложения iOS на языках C# и F# в Visual Studio для Mac.
 
 Выполните следующие команды в терминале для удаления всех файлов Xamarin.iOS из файловой системы:
 
