@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938803"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Создание и настройка членов типа в конструкторе классов
 
 Можно добавить эти члены в типы на схеме классов и настроить данные члены в окне **Сведения о классах**:
 
 |**Type**|**Элементы, которые тип может содержать**|
-|--------------|--------------------------------|
+|--------------| - |
 |Класс|метод, свойство (для C# и Visual Basic), поле, событие (для C# и Visual Basic), конструктор (метод), деструктор (метод), константа|
 |Enum|член|
 |Интерфейс|метод, свойство, событие (для C# и Visual Basic)|
@@ -58,7 +58,7 @@ ms.locfileid: "33957701"
 ## <a name="common-tasks"></a>Типичные задачи
 
 |Задача|Справочные материалы|
-|----------|------------------------|
+|----------| - |
 |**Начало работы**. Перед созданием и настройкой членов типа необходимо открыть окно **Сведения о классах**.|- [Открытие окна "Сведения о классах"](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Примечания об использовании окна сведений о классах](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Отображение информации только для чтения](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Создание и изменение членов типа**. С помощью окна **Сведения о классах** можно создавать новые члены, изменять существующие члены, а также добавлять параметры в метод.|- [Создание членов](creating-and-configuring-type-members.md#create-members)<br />- [Изменение членов типов](creating-and-configuring-type-members.md#modify-type-members)<br />- [Добавление параметров в методы](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

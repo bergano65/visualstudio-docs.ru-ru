@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942452"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.  
@@ -28,28 +28,28 @@ ms.locfileid: "34815617"
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Установка автономного профилировщика  
   
-1.  Найдите установщик автономного профилировщика (*vs_profiler.exe*) на установочном носителе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в каталоге, включающем путь *\Standalone Profiler*, и запустите его.  
+1. Найдите установщик автономного профилировщика (*vs_profiler.exe*) на установочном носителе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в каталоге, включающем путь *\Standalone Profiler*, и запустите его.  
   
-2.  Добавьте пути к файлам *vsintr.exe* и *msdis150.dll* в системный путь.  
+2. Добавьте пути к файлам *vsintr.exe* и *msdis150.dll* в системный путь.  
   
-    > [!NOTE]
-    >  При установке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] по умолчанию файлы *vsinstr.exe* и *msdis150.dll* находятся в папке *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
+   > [!NOTE]
+   >  При установке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] по умолчанию файлы *vsinstr.exe* и *msdis150.dll* находятся в папке *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
   
-3.  В командной строке введите **VSInstr**.  
+3. В командной строке введите **VSInstr**.  
   
-    > [!NOTE]
-    >  Если отображаются сведения об использовании файла vsinstr.exe, установка выполнена правильно. Если выводится сообщение об ошибке, в котором указывается, что файл vsinstr.exe или одна из его зависимостей не найдены, проверьте правильность задания путей, как описано в шаге 2.  
+   > [!NOTE]
+   >  Если отображаются сведения об использовании файла vsinstr.exe, установка выполнена правильно. Если выводится сообщение об ошибке, в котором указывается, что файл vsinstr.exe или одна из его зависимостей не найдены, проверьте правильность задания путей, как описано в шаге 2.  
   
-4.  Настройте сервер символов, присвоив переменной **_NT_SYMBOL_PATH** значение **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**.  
+4. Настройте сервер символов, присвоив переменной **_NT_SYMBOL_PATH** значение **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**.  
   
-5.  После настройки сервера символов с помощью системных переменных среды запустите средства профилирования из нового окна командной строки. Это позволит применить новые переменные среды. В окне командной строки введите следующую команду:  
+5. После настройки сервера символов с помощью системных переменных среды запустите средства профилирования из нового окна командной строки. Это позволит применить новые переменные среды. В окне командной строки введите следующую команду:  
   
-     **start %COMSPEC%**  
+    **start %COMSPEC%**  
   
-    > [!NOTE]
-    >  Подробные инструкции по настройке пакета сервера символов см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+   > [!NOTE]
+   >  Подробные инструкции по настройке пакета сервера символов см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-6.  Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
+6. Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
   
 ## <a name="see-also"></a>См. также  
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
