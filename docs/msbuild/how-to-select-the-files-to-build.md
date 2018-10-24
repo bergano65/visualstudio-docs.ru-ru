@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820672"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.  
@@ -100,7 +100,7 @@ ms.locfileid: "39079703"
   
 > [!NOTE]
 >  Чтобы указать входные данные для сборки, нужно использовать подстановочные знаки в элементах; невозможно указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.  
->   
+> 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Пример  
