@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916768"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Рефакторинг для замены временной переменной
 
@@ -39,30 +39,30 @@ ms.locfileid: "31945614"
 
    - C#:
 
-    ![Выделенный код — C#](media/inline-highlight-cs.png)
+       ![Выделенный код — C#](media/inline-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Выделенный код — Visual Basic](media/inline-highlight-vb.png)
+       ![Выделенный код — Visual Basic](media/inline-highlight-vb.png)
 
-1. Затем выполните одно из следующих действий:
+2. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-     - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+      - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
-     - Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
+      - Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
 
-1. Выберите **Встроенная временная переменная** в контекстном меню окна предварительного просмотра.
+3. Выберите **Встроенная временная переменная** в контекстном меню окна предварительного просмотра.
 
    Переменная удаляется и заменяется значением переменной.
 
    - C#:
 
-    ![Встроенный результат — C#](media/inline-result-cs.png)
+      ![Встроенный результат — C#](media/inline-result-cs.png)
 
    - Visual Basic:
 
-    ![Встроенный результат — Visual Basic](media/inline-result-vb.png)
+      ![Встроенный результат — Visual Basic](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>См. также
 

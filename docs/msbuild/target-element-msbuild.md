@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918796"
 ---
 # <a name="target-element-msbuild"></a>Элемент Target (MSBuild)
 Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения.  
@@ -73,18 +73,18 @@ ms.locfileid: "39152465"
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Задача](../msbuild/task-element-msbuild.md)|Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Содержит набор определяемых пользователем элементов `Item`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `ItemGroup`. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md).|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|Вызывает один или несколько целевых объектов для выполнения, если атрибут `ContinueOnError` — ErrorAndStop (или `false`) для задачи, завершившейся ошибкой. Целевой объект может содержать нуль и более элементов `OnError`. Если элементы `OnError` присутствуют, они должны быть последними элементами в элементе `Target`.<br /><br /> Дополнительные сведения об атрибуте `ContinueOnError` см. в статье [Элемент Task (MSBuild)](../msbuild/task-element-msbuild.md).|  
+| Элемент | Описание: |
+| - | - |
+| [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Item`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `ItemGroup`. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md). |
+| [OnError](../msbuild/onerror-element-msbuild.md) | Вызывает один или несколько целевых объектов для выполнения, если атрибут `ContinueOnError` — ErrorAndStop (или `false`) для задачи, завершившейся ошибкой. Целевой объект может содержать нуль и более элементов `OnError`. Если элементы `OnError` присутствуют, они должны быть последними элементами в элементе `Target`.<br /><br /> Дополнительные сведения об атрибуте `ContinueOnError` см. в статье [Элемент Task (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+| Элемент | Описание |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="remarks"></a>Примечания  
  Первый целевой объект для выполнения задается во время выполнения. Целевые объекты могут иметь зависимости от других целевых объектов. Например, целевой объект для развертывания зависит от целевого объекта для компиляции. Обработчик [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет зависимости в том порядке, в котором они появляются в атрибуте `DependsOnTargets`, слева направо. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914831"
 ---
 # <a name="task-element-msbuild"></a>Элемент Task (MSBuild)
 Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Имя элемента определяется именем создаваемой задачи.  
@@ -60,9 +60,9 @@ ms.locfileid: "39153833"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Целевой объект](../msbuild/target-element-msbuild.md)|Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Элемент | Описание: |
+| - | - |
+| [Целевой объект](../msbuild/target-element-msbuild.md) | Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="remarks"></a>Примечания  
  Элемент `Task` в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает экземпляр задачи, устанавливает для него свойства и выполняет его. Элемент `Output` сохраняет выходные параметры в свойствах или элементах, которые будут использоваться в другом месте в файле проекта.  
