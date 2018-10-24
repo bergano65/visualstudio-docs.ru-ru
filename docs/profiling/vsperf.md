@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5c841e6930db8f65aaf93c314359656689ecfd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903547"
 ---
 # <a name="vsperf"></a>VSPerf
 С помощью программы командной строки **VsPerf** можно выполнять следующие задачи:  
   
-1.  профилирование приложений универсальной платформы Windows из командной строки, когда среда Visual Studio не установлена на устройстве;  
+1. профилирование приложений универсальной платформы Windows из командной строки, когда среда Visual Studio не установлена на устройстве;  
   
-2.  профилирование классических приложений Windows 8 и приложений Windows Server 2012 с помощью метода профилирования с выборкой.  
+2. профилирование классических приложений Windows 8 и приложений Windows Server 2012 с помощью метода профилирования с выборкой.  
   
- Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="uwp-apps-only"></a>Только приложения универсальной платформы Windows  
  Эти параметры применяются только к приложениям универсальной платформы Windows.  

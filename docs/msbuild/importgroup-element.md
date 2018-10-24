@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2410314cf6f32024b711e1d2b6eeeab8d920efae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885634"
 ---
 # <a name="importgroup-element"></a>Элемент ImportGroup
 Содержит коллекцию элементов `Import`, сгруппированных по необязательному условию. Дополнительные сведения см. в разделе [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -57,9 +57,9 @@ ms.locfileid: "39079249"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+| Элемент | Описание |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="example"></a>Пример  
  Следующий пример кода демонстрирует элемент `ImportGroup`.  
