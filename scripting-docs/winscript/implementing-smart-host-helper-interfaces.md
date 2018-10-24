@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909826"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Реализация вспомогательных интерфейсов промежуточных узлов
 [Интерфейс IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) значительно упрощает задачу по созданию промежуточного узла для активной отладки, так как предоставляет реализации многих необходимых для этого интерфейсов.  
   
  Чтобы стать промежуточным узлом, используя `IDebugDocumentHelper`, ведущему приложению нужно выполнить три действия:  
   
-1.  Создать диспетчер отладки процессов с помощью `CoCreate` и использовать [интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md), чтобы добавить приложение в список отлаживаемых.  
+1. Создать диспетчер отладки процессов с помощью `CoCreate` и использовать [интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md), чтобы добавить приложение в список отлаживаемых.  
   
-2.  Создать вспомогательный объект документа отладки для каждого объекта скрипта с помощью метода [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Проверить, что документ, родительский документ, текст и блоки скриптов определены.  
+2. Создать вспомогательный объект документа отладки для каждого объекта скрипта с помощью метода [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Проверить, что документ, родительский документ, текст и блоки скриптов определены.  
   
-3.  Реализовать [интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) для объекта, реализующего интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) (это необходимо для активных скриптов). Единственный нетривиальный метод для интерфейса `IActiveScriptSiteDebug` просто делегирует вспомогательному объекту.  
+3. Реализовать [интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) для объекта, реализующего интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) (это необходимо для активных скриптов). Единственный нетривиальный метод для интерфейса `IActiveScriptSiteDebug` просто делегирует вспомогательному объекту.  
   
- Кроме того, узел может реализовать [интерфейс IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md), если ему нужно дополнительно контролировать цвет синтаксиса, создание контекста документа и другие расширенные функции.  
+   Кроме того, узел может реализовать [интерфейс IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md), если ему нужно дополнительно контролировать цвет синтаксиса, создание контекста документа и другие расширенные функции.  
   
- Основным ограничением вспомогательного объекта промежуточного узла является то, что он может обрабатывать только документы, содержимое которых изменилось или сжалось после их добавления (хотя документы могут и увеличиваться). Однако для многих промежуточных узлов предоставляемой функциональности совершенно достаточно.  
+   Основным ограничением вспомогательного объекта промежуточного узла является то, что он может обрабатывать только документы, содержимое которых изменилось или сжалось после их добавления (хотя документы могут и увеличиваться). Однако для многих промежуточных узлов предоставляемой функциональности совершенно достаточно.  
   
- В следующих разделах каждый из шагов описан более подробно.  
+   В следующих разделах каждый из шагов описан более подробно.  
   
 ## <a name="create-an-application-object"></a>Создание объекта приложения  
  Прежде чем вспомогательный объект промежуточного узла можно будет использовать, нужно создать объект [интерфейса IDebugApplication](../winscript/reference/idebugapplication-interface.md), представляющий ваше приложение в отладчике.  

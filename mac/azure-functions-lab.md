@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919745"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Учебник. Начало работы с функциями Azure
 
@@ -34,17 +34,17 @@ ms.locfileid: "43224044"
 
 1. Запустите **Visual Studio для Mac**.
 
-1. Выберите **Файл > Новое решение**.
+2. Выберите **Файл > Новое решение**.
 
-1. В категории **Облако > Общие** выберите шаблон **Функции Azure**. Вы будете использовать C# для создания библиотеки классов .NET, в которой размещаются функции Azure. Нажмите кнопку **Далее**.
+3. В категории **Облако > Общие** выберите шаблон **Функции Azure**. Вы будете использовать C# для создания библиотеки классов .NET, в которой размещаются функции Azure. Нажмите кнопку **Далее**.
 
     ![Выбор шаблона функций Azure](media/azure-functions-lab-image1.png)
 
-1. Задайте **имя проекта** **AzureFunctionsLab** и нажмите **Создать**.
+4. Задайте **имя проекта** **AzureFunctionsLab** и нажмите **Создать**.
 
     ![именование и создание проекта функций azure](media/azure-functions-lab-image2.png)
 
-1. Разверните узлы на **панели решения**. Шаблон проекта по умолчанию включает ссылки NuGet на различные пакеты AzureWebJobs, а также на пакет Newtonsoft.Json. 
+5. Разверните узлы на **панели решения**. Шаблон проекта по умолчанию включает ссылки NuGet на различные пакеты AzureWebJobs, а также на пакет Newtonsoft.Json. 
 
      Также есть три файла:  
         - **host.json** для описания параметров глобальной конфигурации узла.  

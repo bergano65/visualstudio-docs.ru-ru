@@ -20,36 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec7f52701e0748e2433d26aedf1c7b0e5dd2927c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a9568b27b65045c1b3a4495adff83f0b972e342f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911269"
 ---
 # <a name="error-task"></a>Error - задача
 Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  
-  
+
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Error` .  
-  
-|Параметр|Описание:|  
-|---------------|-----------------|  
-|`Code`|Необязательный параметр `String` .<br /><br /> Код ошибки для связи с ошибкой.|  
-|`File`|Необязательный параметр `String` .<br /><br /> Имя файла, содержащего ошибку. Если имя файла не указано, используется файл, содержащий задачу Error.|  
-|`HelpKeyword`|Необязательный параметр `String` .<br /><br /> Ключевое слово справки, связанное с ошибкой.|  
-|`Text`|Необязательный параметр `String` .<br /><br /> Текст ошибки, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`.|  
-  
+
+
+| Параметр | Описание: |
+|---------------| - |
+| `Code` | Необязательный параметр `String` .<br /><br /> Код ошибки для связи с ошибкой. |
+| `File` | Необязательный параметр `String` .<br /><br /> Имя файла, содержащего ошибку. Если имя файла не указано, используется файл, содержащий задачу Error. |
+| `HelpKeyword` | Необязательный параметр `String` .<br /><br /> Ключевое слово справки, связанное с ошибкой. |
+| `Text` | Необязательный параметр `String` .<br /><br /> Текст ошибки, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`. |
+
 ## <a name="remarks"></a>Примечания  
  Задача `Error` позволяет передавать текст ошибок в средства ведения журнала и останавливать выполнение сборки в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
+
  Если результат вычисления параметра `Condition` оказывается равным `true`, сборка останавливается, а ошибка регистрируется в журнале. Если параметр `Condition` не существует, ошибка регистрируется в журнале, а выполнение сборки останавливается. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
-  
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
+
 ## <a name="example"></a>Пример  
  В следующем примере кода проверяется, что установлены все обязательные свойства. Если это не так, проект инициирует событие ошибки и регистрирует в журнале значение параметра `Text` задачи `Error`.  
-  
+
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="ValidateCommandLine">  
@@ -63,7 +64,7 @@ ms.locfileid: "39179717"
     ...  
 </Project>  
 ```  
-  
+
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

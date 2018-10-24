@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915247"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 
@@ -435,7 +435,6 @@ public class ShimMyClass : ShimBase<MyClass> {
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 Поведение также можно изменить глобально для всех экземпляров с оболочками совместимости, для которых свойство `InstanceBehavior` не было задано явно, путем задания статического свойства `ShimsBehaviors.Current`.
