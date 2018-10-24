@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835992"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
 
@@ -41,7 +41,7 @@ ms.locfileid: "34815929"
 
 - Некоторые пользователи могут запрещать доступ к профилированию всем остальным пользователям.
 
- Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).
+  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Профилирование проекта веб-сайта
 
@@ -79,11 +79,11 @@ ms.locfileid: "34815929"
 
 5. В поле **С какого локального URL-адреса или пути будет выполняться веб-приложение?** на третьей странице мастера введите URL-адрес для домашней страницы приложения и нажмите кнопку **Далее**.
 
-    - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **http://localhost/MySite/default.aspx**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.
+   - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **<http://localhost/MySite/default.aspx>**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.
 
-    - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.
+   - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.
 
-    - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.
+   - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.
 
      Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862467"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -33,31 +33,31 @@ ms.locfileid: "39380659"
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Создание пользовательского элемента управления с использованием проекта библиотеки элементов управления Windows
 
-1.  В меню **Файл** Visual Studio последовательно выберите пункты **Создать** и **Проект**.
+1. В меню **Файл** Visual Studio последовательно выберите пункты **Создать** и **Проект**.
 
-     Откроется диалоговое окно **Новый проект**.
+    Откроется диалоговое окно **Новый проект**.
 
-2.  В области **Установленные шаблоны** разверните узел **Visual Basic** или **Visual C#** в зависимости от используемого языка программирования и щелкните узел **Windows**.
+2. В области **Установленные шаблоны** разверните узел **Visual Basic** или **Visual C#** в зависимости от используемого языка программирования и щелкните узел **Windows**.
 
-    > [!NOTE]
-    > В этом примере используется Visual C#.
+   > [!NOTE]
+   > В этом примере используется Visual C#.
 
-3.  В списке шаблонов выберите пункт **Библиотека элементов управления Windows Forms**.
+3. В списке шаблонов выберите пункт **Библиотека элементов управления Windows Forms**.
 
-4.  В текстовом поле **Имя** введите имя, например `MessageEditors`, и нажмите кнопку **ОК**.
+4. В текстовом поле **Имя** введите имя, например `MessageEditors`, и нажмите кнопку **ОК**.
 
-    > [!NOTE]
-    > В этом примере используется имя MessageEditors.
+   > [!NOTE]
+   > В этом примере используется имя MessageEditors.
 
-     Проект добавляется в новое решение, и в конструкторе отображается объект <xref:System.Windows.Forms.UserControl> с именем *UserControl1.cs*.
+    Проект добавляется в новое решение, и в конструкторе отображается объект <xref:System.Windows.Forms.UserControl> с именем *UserControl1.cs*.
 
-5.  Перетащите объект <xref:System.Windows.Forms.RichTextBox> из категории **Стандартные элементы управления** области **Панель элементов** в область элемента управления UserControl1.
+5. Перетащите объект <xref:System.Windows.Forms.RichTextBox> из категории **Стандартные элементы управления** области **Панель элементов** в область элемента управления UserControl1.
 
-6.  Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
+6. Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
 
-7.  В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки Windows Forms и выберите пункт **Свойства**.
+7. В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки Windows Forms и выберите пункт **Свойства**.
 
-8.  В окне **Свойства** перейдите на вкладку **Приложение**.
+8. В окне **Свойства** перейдите на вкладку **Приложение**.
 
 9. В раскрывающемся списке **Требуемая версия .NET Framework** выберите значение **.NET Framework 4**.
 
@@ -95,9 +95,9 @@ ms.locfileid: "39380659"
 
 18. Добавьте следующие свойства для поддержки получения и задания текста в элементе управления RichTextBox1. Интерфейсом <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> используется свойство EditString, а интерфейсом <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> — свойство EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ ms.locfileid: "39380659"
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ ms.locfileid: "39380659"
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Добавление класса в проект библиотеки элементов управления Windows
 

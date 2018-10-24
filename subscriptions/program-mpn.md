@@ -9,12 +9,12 @@ description: Сведения о предлагаемых подписках, п
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876773"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -23,11 +23,13 @@ ms.locfileid: "44283578"
 Когда партнер получает компетенцию уровня Gold или Silver, он зарабатывает базовое число подписок Visual Studio Enterprise. Это базовое преимущество меняется, когда партнер получает хотя бы одну компетенцию уровня Gold. Подписка на Visual Studio Enterprise — это индивидуальное предложение, которое примерно соответствует [годовой облачной подписке на Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), но без некоторых преимуществ (многие из которых предлагаются партнерам отдельно как общие преимущества MPN, а не в рамках подписки на Visual Studio Enterprise, предлагаемой через MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Базовое преимущество Visual Studio за получение одной компетенции любого уровня
+
 | Компетенции, полученные только на уровне Silver               | По крайней мере одна компетенция, полученная на уровне Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 подписок на Visual Studio Enterprise                   | 10 подписок на Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Дополнительное преимущество Visual Studio для некоторых компетенций
+
 | Компетенция                                  | Дополнительные подписки, полученные за компетенцию уровня **Silver** | Дополнительные подписки, полученные за компетенцию уровня **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Разработка приложений                     | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
@@ -39,6 +41,7 @@ ms.locfileid: "44283578"
 Независимо от количества полученных компетенций, число подписок Visual Studio ограничено:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Ограничения для подписок Visual Studio, полученных за компетенции
+
 | Максимальное преимущество для партнеров с компетенциями только уровня Silver                   | Максимальное преимущество для партнеров хотя бы с одной компетенцией уровня Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 подписок на Visual Studio Enterprise в стране; 75 во всем мире          | 50 подписок на Visual Studio Enterprise в стране; 150 во всем мире         |

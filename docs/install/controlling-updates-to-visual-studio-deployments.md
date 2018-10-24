@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4f3843b7f3f8f19f0f375d6880d5d8be10bbd2
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830435"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Управление обновлением сетевых развертываний Visual Studio
 
@@ -31,40 +31,40 @@ ms.locfileid: "43139318"
 
 Чтобы напрямую контролировать места, в которых Visual Studio выполняет поиск обновлений, можно изменить расположения для поиска. Также можно контролировать версию, до которой пользователи выполняют обновление. Для этого выполните следующие действия.
 
- 1. Создайте автономный макет.
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. Скопируйте его в общую сетевую папку, в которой будете его размещать.
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. Измените в этом макете файл response.json, указав для параметра `channelUri` значение, указывающее на управляемую администратором копию файла channelManifest.json.
+1. Создайте автономный макет.
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. Скопируйте его в общую сетевую папку, в которой будете его размещать.
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. Измените в этом макете файл response.json, указав для параметра `channelUri` значение, указывающее на управляемую администратором копию файла channelManifest.json.
 
-  Не забудьте экранировать все символы обратной косой черты в этом значении, как показано в следующем примере:
+   Не забудьте экранировать все символы обратной косой черты в этом значении, как показано в следующем примере:
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- Теперь конечные пользователи могут выполнять установку Visual Studio из этой папки.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   Теперь конечные пользователи могут выполнять установку Visual Studio из этой папки.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 Когда администратор предприятия решит, что нужно обновить установки пользователей до новой версии Visual Studio, ему нужно [обновить расположение макета](update-a-network-installation-of-visual-studio.md), разместив в нем обновленные файлы, как показано далее.
 
- 1. Используйте команду, аналогичную следующей:
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. Убедитесь, что файл response.json в обновленном макете содержит все измененные вами значения параметров, в частности channelUri:
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- Все существующие копии Visual Studio, установленные из этого макета, ищут обновления в `\\server\share\VS2017\ChannelManifest.json`. Если файл channelManifest.json новее, чем существующий в пользовательской установке, Visual Studio уведомит пользователя о наличии доступного обновления.
+1. Используйте команду, аналогичную следующей:
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. Убедитесь, что файл response.json в обновленном макете содержит все измененные вами значения параметров, в частности channelUri:
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   Все существующие копии Visual Studio, установленные из этого макета, ищут обновления в `\\server\share\VS2017\ChannelManifest.json`. Если файл channelManifest.json новее, чем существующий в пользовательской установке, Visual Studio уведомит пользователя о наличии доступного обновления.
 
- Новые установки автоматически используют обновленную версию Visual Studio непосредственно из макета.
+   Новые установки автоматически используют обновленную версию Visual Studio непосредственно из макета.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Управление уведомлениями в интегрированной среде разработки Visual Studio
 

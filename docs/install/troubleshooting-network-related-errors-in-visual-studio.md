@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865788"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -55,19 +55,19 @@ ms.locfileid: "44281095"
 
 - Если вы хотите использовать учетные данные по умолчанию для прокси-сервера, сделайте следующее:
 
-    1. Найдите файл **devenv.exe.config** (файл конфигурации devenv.exe) в папке **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** или **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+  1. Найдите файл **devenv.exe.config** (файл конфигурации devenv.exe) в папке **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** или **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
-    1. В файле конфигурации найдите блок `<system.net>` и добавьте следующий код:
+  2. В файле конфигурации найдите блок `<system.net>` и добавьте следующий код:
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        В `proxyaddress="<http://<yourproxy:port#>` необходимо вставить правильный адрес прокси-сервера в сети.
+      В `proxyaddress="<http://<yourproxy:port#>` необходимо вставить правильный адрес прокси-сервера в сети.
 
-    OR
+     OR
 
 - Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
 
@@ -109,8 +109,8 @@ Visual Studio использует протокол TLS 1.2 для подклю�
 
 - &#42;.nuget.org (для подключений к NuGet)
 
- > [!NOTE]
- > Частные URL-адреса серверов NuGet могут быть не включены в этот список. Используемые вами серверы NuGet можно посмотреть в файле %APPData%\Nuget\NuGet.Config.
+  > [!NOTE]
+  > Частные URL-адреса серверов NuGet могут быть не включены в этот список. Используемые вами серверы NuGet можно посмотреть в файле %APPData%\Nuget\NuGet.Config.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

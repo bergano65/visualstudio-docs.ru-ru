@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831741"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 
@@ -64,66 +64,66 @@ ms.locfileid: "34746212"
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Чтобы создать команду EXE для изменения манифеста приложения
 
-1.  Создайте консольное приложение для команды. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.
+1. Создайте консольное приложение для команды. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.
 
-2.  В диалоговом окне **Новый проект** в узле **Visual Basic** выберите **Приложение Windows**, а затем шаблон **Консольное приложение**. Задайте для проекта имя `ChangeOSVersionVB`.
+2. В диалоговом окне **Новый проект** в узле **Visual Basic** выберите **Приложение Windows**, а затем шаблон **Консольное приложение**. Задайте для проекта имя `ChangeOSVersionVB`.
 
-3.  В *Module1.vb* добавьте следующую строку для других операторов `Imports` в верхней части файла:
+3. В *Module1.vb* добавьте следующую строку для других операторов `Imports` в верхней части файла:
 
-    ```vb
-    Imports System.Xml
-    ```
+   ```vb
+   Imports System.Xml
+   ```
 
-4.  Добавьте следующий код в `Sub Main`:
+4. Добавьте следующий код в `Sub Main`:
 
-    ```vb
-    Sub Main()
-       Dim applicationManifestPath As String
-       applicationManifestPath = My.Application.CommandLineArgs(0)
-       Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)
+   ```vb
+   Sub Main()
+      Dim applicationManifestPath As String
+      applicationManifestPath = My.Application.CommandLineArgs(0)
+      Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)
 
-       'Get version name
-       Dim osVersion As Version
-       If My.Application.CommandLineArgs.Count >= 2 Then
-          osVersion = New Version(My.Application.CommandLineArgs(1).ToString)
-       Else
-          Throw New ArgumentException("OS Version not specified.")
-       End If
-       Console.WriteLine("Desired OS Version: " & osVersion.ToString())
+      'Get version name
+      Dim osVersion As Version
+      If My.Application.CommandLineArgs.Count >= 2 Then
+         osVersion = New Version(My.Application.CommandLineArgs(1).ToString)
+      Else
+         Throw New ArgumentException("OS Version not specified.")
+      End If
+      Console.WriteLine("Desired OS Version: " & osVersion.ToString())
 
-       Dim document As XmlDocument
-       Dim namespaceManager As XmlNamespaceManager
-       namespaceManager = New XmlNamespaceManager(New NameTable())
-       With namespaceManager
-          .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")
-          .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")
-       End With
+      Dim document As XmlDocument
+      Dim namespaceManager As XmlNamespaceManager
+      namespaceManager = New XmlNamespaceManager(New NameTable())
+      With namespaceManager
+         .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")
+         .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")
+      End With
 
-       document = New XmlDocument()
-       document.Load(applicationManifestPath)
+      document = New XmlDocument()
+      document.Load(applicationManifestPath)
 
-       Dim baseXPath As String
-       baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"
+      Dim baseXPath As String
+      baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"
 
-       'Change minimum required OS Version.
-       Dim node As XmlNode
-       node = document.SelectSingleNode(baseXPath, namespaceManager)
-       node.Attributes("majorVersion").Value = osVersion.Major.ToString()
-       node.Attributes("minorVersion").Value = osVersion.Minor.ToString()
-       node.Attributes("buildNumber").Value = osVersion.Build.ToString()
-       node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()
+      'Change minimum required OS Version.
+      Dim node As XmlNode
+      node = document.SelectSingleNode(baseXPath, namespaceManager)
+      node.Attributes("majorVersion").Value = osVersion.Major.ToString()
+      node.Attributes("minorVersion").Value = osVersion.Minor.ToString()
+      node.Attributes("buildNumber").Value = osVersion.Build.ToString()
+      node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()
 
-       document.Save(applicationManifestPath)
-    End Sub
-    ```
+      document.Save(applicationManifestPath)
+   End Sub
+   ```
 
-    Команда принимает два аргумента. Первый аргумент — это путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно *<Projectname>.publish*). Вторым аргументом является новая версия операционной системы.
+   Команда принимает два аргумента. Первый аргумент — это путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно *<Projectname>.publish*). Вторым аргументом является новая версия операционной системы.
 
-5.  В меню **Сборка** выберите **Собрать решение**.
+5. В меню **Сборка** выберите **Собрать решение**.
 
-6.  Скопируйте файл *EXE* в каталог, например *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Скопируйте файл *EXE* в каталог, например *C:\TEMP\ChangeOSVersionVB.exe*.
 
- Затем вызовите эту команду в событие после сборки для изменения манифеста приложения.
+   Затем вызовите эту команду в событие после сборки для изменения манифеста приложения.
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Чтобы вызвать событие после сборки для изменения манифеста приложения
 

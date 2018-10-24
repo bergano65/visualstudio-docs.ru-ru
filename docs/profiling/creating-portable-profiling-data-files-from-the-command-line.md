@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841940"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Создание переносимых файлов данных профилирования в командной строке
 Чтобы упростить общий доступ к данным профилирования, вы можете использовать программу командной строки [VSPerfReport](../profiling/vsperfreport.md) в целях внедрения символов для сеанса профилирования в *VSP*-файл.  
@@ -31,16 +31,16 @@ ms.locfileid: "34815854"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Внедрение символов для сеанса профилирования в файл данных профилирования (*VSP*)  
   
--   В окне командной строки введите следующую команду:  
+- В окне командной строки введите следующую команду:  
   
-     \<Путь>**VSPerfReport \<** VSP-файл> **/PackSymbols**  
+   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/PackSymbols**  
   
-     По умолчанию *VSPS*-файл имеет базовое имя *VSP*-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.  
+   По умолчанию *VSPS*-файл имеет базовое имя *VSP*-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Создание сводного файла данных профилирования  
   
--   В окне командной строки введите следующую команду:  
+- В окне командной строки введите следующую команду:  
   
-     \<Путь>**VSPerfReport \<** VSP-файл> **/SummaryFile** [**/Output:**\<имя файла>]  
+   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/SummaryFile** [**/Output:**\<имя файла>]  
   
-     По умолчанию *VSPS*-файл имеет базовое имя *VSP*-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.
+   По умолчанию *VSPS*-файл имеет базовое имя *VSP*-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.

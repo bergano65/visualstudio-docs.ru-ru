@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847985"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. Настройка проекта для конкретной платформы
 
-Visual Studio позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в Visual Studio см. в статье [64-разрядные приложения](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+Visual Studio позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в Visual Studio см. в статье [64-разрядные приложения](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Нацеливание на платформы с помощью диспетчера конфигураций
 
@@ -59,15 +59,15 @@ Visual Studio позволяет настраивать приложения д�
 
 Способ выполнения этой задачи зависит от используемого языка программирования. Дополнительные сведения см. на следующих страницах:
 
--   Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] см. раздел [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] см. раздел [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
--   Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] см. статью [Страница "Сборка", конструктор проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] см. статью [Страница "Сборка", конструктор проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   Для проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] см. статью [/clr (компиляция CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Для проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] см. статью [/clr (компиляция CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>См. также
 
 - [Общие сведения о платформах построения](../ide/understanding-build-platforms.md)
 - [/platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64-разрядные приложения](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [64-разрядные приложения](/dotnet/framework/64-bit-apps)
 - [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

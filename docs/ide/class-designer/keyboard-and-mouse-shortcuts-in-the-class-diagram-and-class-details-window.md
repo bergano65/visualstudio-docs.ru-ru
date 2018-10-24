@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848505"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классах"
 
@@ -31,7 +31,7 @@ ms.locfileid: "33957318"
 В схемах классов поддерживаются следующие действия мыши.
 
 |Комбинации мыши|Контекст|Описание:|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |Двойной щелчок|Shape - элементы|Открывает редактор исходного кода.|
 |Двойной щелчок|Соединитель без описания операций|Интерфейс развертывания и свертывания без описания операций.|
 |Двойной щелчок|Метка соединителя без описания операций|Вызывает команду **Показать интерфейс**|
