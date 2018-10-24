@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930548"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
 На страницах папки **Среда** в окне **Параметры** можно указать параметры отображения и работы определенных элементов среды разработки. Для доступа к этим страницам выберите пункт **Параметры** в меню **Сервис**, а затем выберите **Среда**.
@@ -28,7 +28,7 @@ ms.locfileid: "31947941"
 
 
 |Дополнительные сведения|См.|
-|----------------------------------|---------|
+| - |---------|
 |Настройка отображения и поведения окон, меню и других элементов интегрированной среды разработки.|[Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)|
 |Изменение параметров автоматического сохранения и восстановления файлов.|[Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Настройка отображения документа и задание значений управляющих параметров, включая работу функции "Прочие файлы"|[Страница "Документы", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/documents-environment-options-dialog-box.md)|
