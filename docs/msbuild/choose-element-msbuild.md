@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895474"
 ---
 # <a name="choose-element-msbuild"></a>Элемент Choose (MSBuild)
 Вычисляет дочерние элементы для выбора одного набора элементов `ItemGroup` и/или элементов `PropertyGroup` для вычисления.  
@@ -64,11 +64,11 @@ ms.locfileid: "37945773"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`.|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-|[When](../msbuild/when-element-msbuild.md)|Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.|  
+| Элемент | Описание: |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`. |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [When](../msbuild/when-element-msbuild.md) | Указывает один из возможных блоков кода, который может выбрать элемент `Choose`. |
 
 ## <a name="remarks"></a>Примечания  
  Элементы `Choose`, `When` и `Otherwise` используются совместно, чтобы обеспечить выбор одного блока кода для выполнения из множества доступных вариантов. См. дополнительные сведения об [условных конструкциях](../msbuild/msbuild-conditional-constructs.md).  

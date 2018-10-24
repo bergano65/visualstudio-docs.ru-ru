@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: deaa0b37988e2df04bb7937c76f341af849698f0
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903118"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Создание переопределений для методов Equals и GetHashCode в Visual Studio
 
@@ -43,10 +43,10 @@ ms.locfileid: "44124974"
 1. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-     - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+      - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
-     - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-     - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с объявлением типа.
+      - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
+      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с объявлением типа.
 
    ![Создание переопределений — предварительный просмотр](media/overrides-preview-cs.png)
 

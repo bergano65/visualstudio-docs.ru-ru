@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1a6888ca35df54ff6073aefaf686327b4cd8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897190"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 
@@ -43,7 +43,7 @@ ms.locfileid: "31584936"
 
 - Если выполняется сбор сведений о типах, при выполнении команды vsperfreport добавьте параметр /SUMMARY:TYPE.
 
- Если не отображаются символы Windows или других программ Майкрософт, выполните указанные ниже действия.
+  Если не отображаются символы Windows или других программ Майкрософт, выполните указанные ниже действия.
 
 - Убедитесь в том, что задан путь к кэшу символов Windows. Чтобы задать путь к кэшу символов, выполните одно из указанных ниже действий.
 
