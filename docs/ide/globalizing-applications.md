@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b63a455ac1ff27bbdcf4434a6a70bc17b0a4893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ab77b58047c92cfbf692e014f041e34456a01e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31941750"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863586"
 ---
 # <a name="globalize-applications"></a>Глобализация приложений
 
@@ -31,8 +31,8 @@ ms.locfileid: "31941750"
 
 - В статье [Глобализация Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms) приведены ссылки на страницы справки о глобализации форм Windows Forms.
 
-- В статье о [глобализации и локализации](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) приведены ссылки на страницы справки о глобализации форм Windows Forms.
+- В статье о [глобализации и локализации](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) приведены ссылки на страницы справки о глобализации форм Windows Forms.
 
 - В статье [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) описаны основные принципы разработки программного обеспечения для международного рынка с использованием Visual Basic или C#.
 
-- В статье [Рекомендации по разработке международных приложений](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) содержатся сведения о программировании для международной аудитории, в частности рассматриваются вопросы конструирования и терминологии.
+- В статье [Рекомендации по разработке международных приложений](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) содержатся сведения о программировании для международной аудитории, в частности рассматриваются вопросы конструирования и терминологии.

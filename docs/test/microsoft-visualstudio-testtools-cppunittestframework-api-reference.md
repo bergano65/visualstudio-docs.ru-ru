@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820269"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -29,72 +29,73 @@ ms.locfileid: "44280926"
 ##  <a name="In_this_topic"></a> Содержание раздела
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [Создание тестовых классов и методов](#create_test_classes_and_methods)
+- [Создание тестовых классов и методов](#create_test_classes_and_methods)
 
--   [Инициализация и очистка](#Initialize_and_cleanup)
+- [Инициализация и очистка](#Initialize_and_cleanup)
 
-    -   [Методы тестов](#test_methods)
+  -   [Методы тестов](#test_methods)
 
-    -   [Тестовые классы](#test_classes)
+  -   [Тестовые классы](#test_classes)
 
-    -   [Модули тестов](#test_modules)
+  -   [Модули тестов](#test_modules)
 
--   [Создание атрибутов тестов](#create_test_attributes)
+- [Создание атрибутов тестов](#create_test_attributes)
 
-    -   [Атрибуты метода теста](#test_method_attributes)
+  - [Атрибуты метода теста](#test_method_attributes)
 
-    -   [Атрибуты тестового класса](#test_class_attributes)
+  - [Атрибуты тестового класса](#test_class_attributes)
 
-    -   [Атрибуты модуля теста](#test_module_attributes)
+  - [Атрибуты модуля теста](#test_module_attributes)
 
-    -   [Стандартные атрибуты](#pre_defined_attributes)
+  - [Стандартные атрибуты](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [Общие утверждения](#general_asserts)
+  - [Общие утверждения](#general_asserts)
 
-        -   [Проверка на равенство](#general_are_equal)
+    -   [Проверка на равенство](#general_are_equal)
 
-        -   [Проверка на неравенство](#general_are_not_equal)
+    -   [Проверка на неравенство](#general_are_not_equal)
 
-        -   [Ссылаются на один и тот же объект](#general_are_same)
+    -   [Ссылаются на один и тот же объект](#general_are_same)
 
-        -   [Не ссылаются на один и тот же объект](#general_are_not_same)
+    -   [Не ссылаются на один и тот же объект](#general_are_not_same)
 
-        -   [Имеет значение Null](#general_is_null)
+    -   [Имеет значение Null](#general_is_null)
 
-        -   [Имеет значение не Null](#general_is_not_null)
+    -   [Имеет значение не Null](#general_is_not_null)
 
-        -   [Условие имеет значение true](#general_is_True)
+    -   [Условие имеет значение true](#general_is_True)
 
-        -   [Условие имеет значение false](#general_is_false)
+    -   [Условие имеет значение false](#general_is_false)
 
-        -   [Не пройден](#general_Fail)
+    -   [Не пройден](#general_Fail)
 
-    -   [Утверждения среды выполнения Windows](#winrt_asserts)
+  - [Утверждения среды выполнения Windows](#winrt_asserts)
 
-        -   [Проверка на равенство](#winrt_are_equal)
+    -   [Проверка на равенство](#winrt_are_equal)
 
-        -   [Ссылаются на один и тот же объект](#winrt_are_same)
+    -   [Ссылаются на один и тот же объект](#winrt_are_same)
 
-        -   [Проверка на неравенство](#winrt_are_not_equal)
+    -   [Проверка на неравенство](#winrt_are_not_equal)
 
-        -   [Не ссылаются на один и тот же объект](#winrt_are_not_same)
+    -   [Не ссылаются на один и тот же объект](#winrt_are_not_same)
 
-        -   [Имеет значение Null](#winrt_is_null)
+    -   [Имеет значение Null](#winrt_is_null)
 
-        -   [Имеет значение не Null](#winrt_is_not_null)
+    -   [Имеет значение не Null](#winrt_is_not_null)
 
-    -   [Утверждения об исключениях](#exception_asserts)
+  - [Утверждения об исключениях](#exception_asserts)
 
-        -   [Ожидается исключение](#expect_exception)
+    - [Ожидается исключение](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Ведение журнала](#logger)
+    - [Ведение журнала](#logger)
 
-        -   [Запись сообщения](#write_message)
-    -    [Пример использования](#example)
+    - [Запись сообщения](#write_message)
+
+  - [Пример использования](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  Определяет *methodName* как метод теста. `TEST_METHOD` необходимо объявить в области класса метода.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  Определяет *methodName* в качестве метода, который выполняется перед выполнением каждого метода теста. `TEST_METHOD_INITIALIZE` может быть определен только один раз и должен находиться в тестовом классе.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  Определяет *methodName* в качестве метода, который выполняется после выполнения каждого метода теста. `TEST_METHOD_CLEANUP` может быть определен только один раз в тестовом классе и должен быть определен в его области.

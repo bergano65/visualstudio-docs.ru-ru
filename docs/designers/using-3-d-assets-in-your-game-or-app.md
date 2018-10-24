@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880682"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Использование трехмерных ресурсов в игре или приложении
 
@@ -41,7 +41,7 @@ ms.locfileid: "39081313"
 2.  В области **Доступные файлы настройки сборки** установите флажки, соответствующие тем типам активов, которые вы хотите использовать в своем проекте, в соответствии со следующей таблицей:
 
     |Тип актива|Имя настройки сборки|
-    |----------------|------------------------------|
+    |----------------| - |
     |Текстуры и изображения|**ImageContentTask(.targets, .props)**|
     |Трехмерные модели|**MeshContentTask(.targets, .props)**|
     |Шейдеры|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ ms.locfileid: "39081313"
 Ниже приведены три типа элемента конвейера содержимого и соответствующие им типы исходных и выходных файлов.
 
 |Тип элемента|Типы исходных файлов|Формат выходных файлов|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Конвейер содержимого изображения**|Формат *PNG* (Portable Network Graphics)<br /><br /> Формат JPEG (*JPG*, *JPEG*, *JPE*, *JFIF*)<br /><br /> Поверхность DirectDraw (*DDS*)<br /><br /> Формат *GIF* (Graphics Interchange Format)<br /><br /> Точечный рисунок (*BMP*, *DIB*)<br /><br /> Формат TIFF (*TIF*, *TIFF*)<br /><br /> Формат Targa (*TGA*)|Поверхность DirectDraw (*DDS*)|
 |**Конвейер содержимого сетки**|Файл обмена данными AutoDesk FBX (*FBX*)<br /><br /> Файл Collada DAE (*DAE*)<br /><br /> Файл Wavefront OBJ (*OBJ*)|Файл трехмерной сетки (*CMO*)|
 |**Конвейер содержимого шейдера**|Визуальный граф шейдера (*DGSL*)|Компилированный вывод шейдера (*CSO*)|

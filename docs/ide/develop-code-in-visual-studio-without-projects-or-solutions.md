@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812079"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 
@@ -64,9 +64,9 @@ ms.locfileid: "37117125"
 
    Теперь вы можете просмотреть папки и файлы в клонированном репозитории, а также просмотреть код и выполнить поиск по нему в редакторе кода Visual Studio, где доступна цветовая маркировка синтаксиса и другие возможности.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Значок кинокамеры для видео](../install/media/video-icon.png)|    [Посмотрите видео](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) о том, как клонировать и открывать код из репозитория GitHub в Visual Studio. |
+| ![Значок кинокамеры для видео](../install/media/video-icon.png)| [Посмотрите видео](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) о том, как клонировать и открывать код из репозитория GitHub в Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Выполнение и отладка кода
 

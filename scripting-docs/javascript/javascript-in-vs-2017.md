@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280042"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880802"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -64,7 +64,7 @@ TypeScript настраивается с помощью файла `tsconfig.jso
  В него следует добавить выходное расположение, а также не относящиеся к проекту папки, такие как `node_modules` или `temp`.
  - `enableAutoDiscovery`: этот параметр включает автоматическое обнаружение и скачивание файлов определений, как описано выше.
  - `compileOnSave`: этот параметр указывает компилятору, следует ли повторять компиляцию при каждом сохранении файла исходного кода в Visual Studio.
- - `typeAcquisition`: этот набор параметров управляет автоматическим получением типа (подробнее см. в [этом разделе](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto)).
+ - `typeAcquisition`: этот набор параметров управляет автоматическим получением типа (подробнее см. в [этом разделе](/visualstudio/ide/javascript-intellisense#Auto)).
 
 Чтобы преобразовать файлы JavaScript в модули CommonJS и поместить их в папку `./out`, можно использовать следующий файл `tsconfig.json`.
 

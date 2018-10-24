@@ -1,7 +1,7 @@
 ---
 title: Перенос, миграция и обновление проектов
 description: Ссылка на сведения о поддержке в Visual Studio 2017 проектов, созданных в предыдущих версиях Visual Studio, и том, как Visual Studio определяет потребность в миграции проекта.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280744"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325033"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -41,7 +41,7 @@ ms.locfileid: "44280744"
 
 В следующем списке описывается поддержка проектов Visual Studio 2017, созданных в более ранних версиях.
 
-Если тип проекта или файла отсутствует, просмотрите [статью о версии Visual Studio 2015](port-migrate-and-upgrade-visual-studio-projects.md) и воспользуйтесь параметром "Оставить отзыв о продукте" в нижней части этой страницы для предоставления сведений о проекте. (Если вы хотите получить ответ, оставьте отзыв о документации вместо анонимного ответа на вопрос "Была ли эта страница полезной?" )
+Если тип проекта или файла отсутствует, просмотрите [статью о версии Visual Studio 2015](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) и воспользуйтесь параметром "Оставить отзыв о продукте" в нижней части этой страницы для предоставления сведений о проекте. (Если вы хотите получить ответ, оставьте отзыв о документации вместо анонимного ответа на вопрос "Была ли эта страница полезной?" )
 
 | Тип проекта | Поддержка |
 | --- | --- |

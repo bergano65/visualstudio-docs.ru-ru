@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907044"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды devenv
 
@@ -61,7 +61,7 @@ ms.locfileid: "31951119"
 Перечисленные ниже параметры командной строки позволяют отображать интегрированную среду разработки и выполнять описанные задачи.
 
 |Параметр командной строки|Описание:|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Загружает исполняемый файл C++ под управлением отладчика. Этот параметр недоступен для исполняемых файлов Visual Basic или C#. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID or /l](../../ide/reference/lcid-devenv-exe.md)|Задает язык по умолчанию для среды IDE. Если указанный язык не включен в установку Visual Studio, то этот параметр игнорируется.|
@@ -77,7 +77,7 @@ ms.locfileid: "31951119"
 Следующие параметры командной строки не отображают интегрированную среду разработки.
 
 |Параметр командной строки|Описание:|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Отображает справку по параметрам devenv в **окне командной строки**.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Удаляет все файлы, созданные командой сборки, не затрагивая исходные файлы.<br /><br /> **Devenv myproj.csproj /clean**|
