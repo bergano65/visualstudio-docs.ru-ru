@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932433"
 ---
 # <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементная сборка
 При сборке большого проекта важно, чтобы созданные ранее компоненты, которые все еще актуальны, не перестраивались. Если каждый раз создаются все целевые объекты, каждая сборка будет занимать много времени. Для выполнения инкрементных построений (сборки, в которых перестраиваются только те целевые объекты, которые не были построены ранее, или устаревшие целевые объекты) [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. Однако должно быть однозначное сопоставление между входными и выходными данными. Чтобы целевые объекты могли идентифицировать это прямое сопоставление, можно использовать преобразования. Дополнительные сведения о преобразованиях см. в статье [Преобразования](../msbuild/msbuild-transforms.md).  
@@ -29,15 +29,15 @@ ms.locfileid: "39178973"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Указание входных и выходных данных для целевого объекта  
   
--   Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Пример:  
+- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Пример:  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. В следующем примере, если какой-либо файл в списке элементов `@(CSFile)` новее, чем файл *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] запустит целевой объект; в противном случае он будет пропущен.  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. В следующем примере, если какой-либо файл в списке элементов `@(CSFile)` новее, чем файл *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] запустит целевой объект; в противном случае он будет пропущен.  
   
 ```xml  
 <Target Name="Build"   
