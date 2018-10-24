@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fc62c4b48c6e2ee3ce959082f7f8ba6cb646c7
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542394"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863656"
 ---
 # <a name="features-of-visual-studio-2017"></a>Возможности Visual Studio 2017
 
@@ -100,7 +100,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Управление исходным кодом и совместная работа
 
-Вы можете управлять исходным кодом в репозиториях Git, размещенных любым поставщиком, в том числе и GitHub. С помощью [Azure DevOps Services](/azure/devops/index?view=vsts) можно управлять кодом, а также ошибками и рабочими элементами для всего проекта. Дополнительные сведения об управлении репозиториями Git в Visual Studio с использованием Team Explorer см. в статье [Приступая к работе с Git и Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). В Visual Studio также предусмотрены другие встроенные элементы управления исходным кодом. Дополнительные сведения о них см. в статье блога [Новые возможности Git в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Вы можете управлять исходным кодом в репозиториях Git, размещенных любым поставщиком, в том числе и GitHub. С помощью [Azure DevOps Services](/azure/devops/index) можно управлять кодом, а также ошибками и рабочими элементами для всего проекта. Дополнительные сведения об управлении репозиториями Git в Visual Studio с использованием Team Explorer см. в статье [Приступая к работе с Git и Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). В Visual Studio также предусмотрены другие встроенные элементы управления исходным кодом. Дополнительные сведения о них см. в статье блога [Новые возможности Git в Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Служба Azure DevOps Services — это облачные службы для планирования, размещения, автоматизации и развертывания программного обеспечения, а также совместной работы в группах. Службы Azure DevOps Services поддерживают репозитории Git (распределенное управление версиями) и систему управления версиями Team Foundation (централизованное управление версиями), а также конвейеры непрерывной сборки и выпуска (CI/CD) кода, хранящегося в системах управления версиями. Службы Azure DevOps Services также поддерживают методологии разработки программного обеспечения Agile, Scrum и CMMI.
 

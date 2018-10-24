@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839613"
 ---
 # <a name="import-element-msbuild"></a>Элемент Import (MSBuild)
 Импортирует содержимое одного файла проекта в другой файл проекта.  
@@ -55,10 +55,10 @@ ms.locfileid: "39077494"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
-|-------------|-----------------|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-|[ImportGroup](../msbuild/importgroup-element.md)|Содержит коллекцию элементов `Import` , сгруппированных по необязательному условию.|  
+| Элемент | Описание |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [ImportGroup](../msbuild/importgroup-element.md) | Содержит коллекцию элементов `Import` , сгруппированных по необязательному условию. |
 
 ## <a name="remarks"></a>Примечания  
  С помощью элемента `Import` можно повторно использовать код, который является общим для нескольких файлов проекта. Это упрощает обслуживание кода, так как все изменения, внесенные в общий код, распространяются по всем проектам, которые его импортируют.  
@@ -75,7 +75,7 @@ ms.locfileid: "39077494"
 
 > [!NOTE]
 >  Хотя операторы условного импорта работают в MSBuilds в командной строке, они не работают с MSBuild в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Проверка условных импортов выполняется с использованием значений конфигурации и платформы, задаваемых при загрузке проекта. Если впоследствии вносятся изменения, требующие перепроверки условий в файле проекта, например изменение платформы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] повторяет проверку условий для свойств и элементов, но не для импортов. Поскольку условия импорта не перепроверяются, импорт пропускается.  
->   
+> 
 >  Чтобы обойти это, поместите условные импорты в файлы *TARGETS* или поместите код в условный блок, например [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Знаки подстановки  

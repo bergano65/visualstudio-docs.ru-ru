@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c967fd06030fcedd89d95ec22ca806549f5fed4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897387"
 ---
 # <a name="how-to-set-permissions"></a>Практическое руководство. Установка разрешений
 
@@ -119,7 +119,7 @@ ms.locfileid: "34845357"
     vsperfcmd /admin:driver,autostart,on
     ```
 
- Указанные пользователи после входа в систему будут иметь возможность использовать средства профилирования без прав администратора.
+   Указанные пользователи после входа в систему будут иметь возможность использовать средства профилирования без прав администратора.
 
 ## <a name="see-also"></a>См. также
 

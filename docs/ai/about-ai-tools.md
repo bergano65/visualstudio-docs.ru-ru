@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 43411be41acf2e5bd2e40131dd06bf817bf87a38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31046229"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459703"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
 
@@ -28,19 +28,19 @@ ms.locfileid: "31046229"
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Разработка, отладка и развертывание моделей глубинного обучения и решений искусственного интеллекта
 Эффективные возможности Visual Studio позволяют ускорить инновации в области ИИ. Используйте встроенные функции редактора кода, такие как выделение синтаксических конструкций, IntelliSense и автоматическое форматирование текста. Вы можете тестировать приложение для глубинного обучения в локальной среде в интерактивном режиме, применяя пошаговую отладку локальных переменных и моделей.
 
-![интегрированная среда разработки для глубинного обучения](media\about\ide.png)
+![интегрированная среда разработки для глубинного обучения](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Быстрое начало работы с помощью коллекции образцов Машинного обучения Azure
 Благодаря интеграции инструментов Visual Studio для сценариев ИИ со службой Машинного обучения Azure вы можете легко просматривать коллекцию образцов экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ.
 
-![обозреватель образцов](media\about\gallery.png)
+![обозреватель образцов](media/about/gallery.png)
 
 [Дополнительные сведения о создании проектов из коллекции образцов](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Масштабирование зависимостей и процессов обучения моделей глубинного обучения в облаке
 Это расширение позволяет легко обучать модели на локальном компьютере или отправлять задания в облако благодаря интеграции с Машинным обучением Azure. Задания можно отправлять в различные целевые вычислительные узлы, такие как кластеры Spark, виртуальные машины GPU Azure и многие другие.
 
-![отправка задания](media\about\submitjobs.png)
+![отправка задания](media/about/submitjobs.png)
 
 [Дополнительные сведения об обучении моделей в облаке](tensorflow-vm.md)
 
