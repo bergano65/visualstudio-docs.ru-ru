@@ -18,51 +18,52 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f01ca83f4aee641f6bdcb8e1c7e1323aee374bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4546fc47ddb38fabcd0ff84926d942f6ae10d59e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874687"
 ---
 # <a name="calltarget-task"></a>CallTarget - задача
 Вызывает указанные целевые объекты в файле проекта.  
-  
+
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `CallTarget` .  
-  
-|Параметр|Описание:|  
-|---------------|-----------------|  
-|`RunEachTargetSeparately`|Необязательный входной параметр `Boolean`.<br /><br /> Если задано значение `true`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается по одному разу для каждого целевого объекта. Если задано значение `false`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается однократно для сборки всех целевых объектов. Значение по умолчанию — `false`.|  
-|`TargetOutputs`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит выходные данные всех собранных целевых объектов.|  
-|`Targets`|Необязательный параметр `String[]` .<br /><br /> Указывает один или несколько целевых объектов для сборки.|  
-|`UseResultsCache`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание**. При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки.|  
-  
+
+
+| Параметр | Описание: |
+|---------------------------| - |
+| `RunEachTargetSeparately` | Необязательный входной параметр `Boolean`.<br /><br /> Если задано значение `true`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается по одному разу для каждого целевого объекта. Если задано значение `false`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается однократно для сборки всех целевых объектов. Значение по умолчанию — `false`. |
+| `TargetOutputs` | Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит выходные данные всех собранных целевых объектов. |
+| `Targets` | Необязательный параметр `String[]` .<br /><br /> Указывает один или несколько целевых объектов для сборки. |
+| `UseResultsCache` | Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание**. При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки. |
+
 ## <a name="remarks"></a>Примечания  
  Если заданный в `Targets` целевой объект завершается сбоем, а `RunEachTargetSeparately` имеет значение `true`, задача продолжает сборку оставшихся целевых объектов.  
-  
+
  Если вы хотите выполнить сборку целевых объектов по умолчанию, используйте [задачу MSBuild](../msbuild/msbuild-task.md) и задайте для параметра `Projects` значение `$(MSBuildProjectFile)`.  
-  
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
+
 ## <a name="example"></a>Пример  
  Приведенный ниже пример вызывается `TargetA` из `CallOtherTargets`.  
-  
+
 ```xml  
 <Project DefaultTargets="CallOtherTargets"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
+
     <Target Name="CallOtherTargets">  
         <CallTarget Targets="TargetA"/>  
     </Target>  
-  
+
     <Target Name="TargetA">  
         <Message Text="Building TargetA..." />  
     </Target>  
-  
+
 </Project>  
 ```  
-  
+
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)

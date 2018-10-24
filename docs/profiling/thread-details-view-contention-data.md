@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849532"
 ---
 # <a name="thread-details-view---contention-data"></a>Представление "Сведения о потоке" — сведения о состязаниях
 Представление "Сведения о потоке" представляет собой временную шкалу событий блокировки в выбранном потоке сеанса профилирования, обусловленных состязаниями за ресурсы. Событие блокировки возникает, когда поток вынужден приостановить выполнение, так как другой поток заблокировал доступ к ресурсу.  
@@ -46,9 +46,9 @@ ms.locfileid: "34477357"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Просмотр или правка исходного кода функции в стеке вызовов  
   
--   В окне **Стек вызовов** щелкните имя функции.  
+- В окне **Стек вызовов** щелкните имя функции.  
   
- Исходный код функции должен быть частью текущего проекта.  
+  Исходный код функции должен быть частью текущего проекта.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Просмотр событий состязания за ресурсы во всех потоках сеанса профилирования  
   

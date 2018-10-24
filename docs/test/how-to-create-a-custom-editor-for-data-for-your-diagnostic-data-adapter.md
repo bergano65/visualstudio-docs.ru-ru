@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41008d1c2808a5a6e6428670a3e7dbbf1041caee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819343"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Практическое руководство. Создание специализированного редактора данных для адаптера диагностических данных
 
@@ -38,128 +38,128 @@ ms.locfileid: "44320544"
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>Для создания специализированного редактора для адаптера диагностических данных выполните следующие действия.
 
-1.  Создайте пользовательский элемент управления в проекте для адаптера диагностических данных. Это делается следующим образом.
+1. Создайте пользовательский элемент управления в проекте для адаптера диагностических данных. Это делается следующим образом.
 
-    1.  Щелкните правой кнопкой мыши проект кода, содержащий класс адаптера диагностических данных, и последовательно выберите **Добавить** и **Пользовательский элемент управления**.
+   1.  Щелкните правой кнопкой мыши проект кода, содержащий класс адаптера диагностических данных, и последовательно выберите **Добавить** и **Пользовательский элемент управления**.
 
-    2.  Для данного примера добавьте в форму метку с текстом **Имя файла данных:** и текстовое поле с именем **FileTextBox**, позволяющее пользователям вводить необходимые данные.
+   2.  Для данного примера добавьте в форму метку с текстом **Имя файла данных:** и текстовое поле с именем **FileTextBox**, позволяющее пользователям вводить необходимые данные.
 
-    > [!NOTE]
-    > В настоящее время поддерживаются только пользовательские элементы управления Windows Forms.
+   > [!NOTE]
+   > В настоящее время поддерживаются только пользовательские элементы управления Windows Forms.
 
-2.  Добавьте в раздел объявлений следующие строки кода.
+2. Добавьте в раздел объявлений следующие строки кода.
 
-    ```csharp
-    using System.Xml;
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    ```
+   ```csharp
+   using System.Xml;
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   ```
 
-3.  Преобразуйте данный пользовательский элемент управления в специализированный редактор.
+3. Преобразуйте данный пользовательский элемент управления в специализированный редактор.
 
-    1.  Щелкните правой кнопкой мыши пользовательский элемент управления в проекте кода и выберите команду **Просмотреть код**.
+   1.  Щелкните правой кнопкой мыши пользовательский элемент управления в проекте кода и выберите команду **Просмотреть код**.
 
-    2.  Настройте реализацию классом интерфейса редактора <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> следующим образом.
+   2.  Настройте реализацию классом интерфейса редактора <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> следующим образом.
 
-    ```csharp
-    public partial class MyDataConfigEditor :
-         UserControl, IDataCollectorConfigurationEditor
-    ```
+   ```csharp
+   public partial class MyDataConfigEditor :
+        UserControl, IDataCollectorConfigurationEditor
+   ```
 
-    1.  Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> в коде и выберите команду **Реализовать интерфейс**. Методы, которые необходимо реализовать для данного интерфейса, добавляются в класс.
+   1.  Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> в коде и выберите команду **Реализовать интерфейс**. Методы, которые необходимо реализовать для данного интерфейса, добавляются в класс.
 
-    2.  Добавьте объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> в пользовательский элемент управления для редактора, чтобы он определялся как редактор адаптера диагностических данных, заменив поля **Организация**, **Продукт** и **Версия** соответствующими сведениями об адаптере диагностических данных:
+   2.  Добавьте объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> в пользовательский элемент управления для редактора, чтобы он определялся как редактор адаптера диагностических данных, заменив поля **Организация**, **Продукт** и **Версия** соответствующими сведениями об адаптере диагностических данных:
 
-        ```csharp
-        [DataCollectorConfigurationEditorTypeUri(
-            "configurationeditor://MyCompany/MyConfigEditor/1.0")]
-        ```
+       ```csharp
+       [DataCollectorConfigurationEditorTypeUri(
+           "configurationeditor://MyCompany/MyConfigEditor/1.0")]
+       ```
 
-4.  Добавьте две закрытых переменных, как показано ниже.
+4. Добавьте две закрытых переменных, как показано ниже.
 
-    ```csharp
-    private DataCollectorSettings collectorSettings;
-    private IServiceProvider ServiceProvider { get; set; }
-    ```
+   ```csharp
+   private DataCollectorSettings collectorSettings;
+   private IServiceProvider ServiceProvider { get; set; }
+   ```
 
-5.  Добавьте код для инициализации редактора для адаптера диагностических данных. Используя данные в переменной settings, в поля пользовательского элемента управления можно добавлять значения по умолчанию. Это данные, находящиеся в элементе `<DefaultConfiguration>` в XML-файле конфигурации адаптера.
+5. Добавьте код для инициализации редактора для адаптера диагностических данных. Используя данные в переменной settings, в поля пользовательского элемента управления можно добавлять значения по умолчанию. Это данные, находящиеся в элементе `<DefaultConfiguration>` в XML-файле конфигурации адаптера.
 
-    ```csharp
-    public void Initialize(
-        IServiceProvider svcProvider,
-        DataCollectorSettings settings)
-    {
-        ServiceProvider = svcProvider;
-        collectorSettings = settings;
+   ```csharp
+   public void Initialize(
+       IServiceProvider svcProvider,
+       DataCollectorSettings settings)
+   {
+       ServiceProvider = svcProvider;
+       collectorSettings = settings;
 
-        // Display the default file name as listed in the settings file.
-        this.SuspendLayout();
-        this.FileTextBox.Text = getText(collectorSettings.Configuration);
-        this.ResumeLayout();
-    }
-    ```
+       // Display the default file name as listed in the settings file.
+       this.SuspendLayout();
+       this.FileTextBox.Text = getText(collectorSettings.Configuration);
+       this.ResumeLayout();
+   }
+   ```
 
-6.  Добавьте следующий код для сохранения данных из элементов управления редактора в формате XML, который использует API адаптера диагностических данных:
+6. Добавьте следующий код для сохранения данных из элементов управления редактора в формате XML, который использует API адаптера диагностических данных:
 
-    ```csharp
-    public DataCollectorSettings SaveData()
-    {
-        collectorSettings.Configuration.InnerXml =
-            String.Format(
-    @"<MyCollectorName
-        xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
-      <File FullPath=""{0}"" />
-    </MyCollectorName>",
-        FileTextBox.Text);
-        return collectorSettings;
-    }
-    ```
+   ```csharp
+   public DataCollectorSettings SaveData()
+   {
+       collectorSettings.Configuration.InnerXml =
+           String.Format(
+   @"<MyCollectorName
+       xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
+     <File FullPath=""{0}"" />
+   </MyCollectorName>",
+       FileTextBox.Text);
+       return collectorSettings;
+   }
+   ```
 
-7.  Если это важно, добавьте код проверки правильности данных в метод `VerifyData` или назначьте для этого метода возврат значения `true`.
+7. Если это важно, добавьте код проверки правильности данных в метод `VerifyData` или назначьте для этого метода возврат значения `true`.
 
-    ```csharp
-    public bool VerifyData()
-    {
-        // Not currently verifying data
-        return true;
-    }
-    ```
+   ```csharp
+   public bool VerifyData()
+   {
+       // Not currently verifying data
+       return true;
+   }
+   ```
 
-8.  (Необязательно) Можно добавить в метод `ResetToAgentDefaults()`, использующий закрытый метод `getText()`, код сброса данных на начальные значения, содержащиеся в XML-файле конфигурации.
+8. (Необязательно) Можно добавить в метод `ResetToAgentDefaults()`, использующий закрытый метод `getText()`, код сброса данных на начальные значения, содержащиеся в XML-файле конфигурации.
 
-    ```csharp
-    // Reset to default value from XML configuration
-    // using a custom getText() method
-    public void ResetToAgentDefaults()
-    {
-        this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
-    }
+   ```csharp
+   // Reset to default value from XML configuration
+   // using a custom getText() method
+   public void ResetToAgentDefaults()
+   {
+       this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
+   }
 
-    // Local method to read the configuration settings
-    private string getText(XmlElement element)
-    {
-        // Setup namespace manager with our namespace
-        XmlNamespaceManager nsmgr =
-            new XmlNamespaceManager(
-                element.OwnerDocument.NameTable);
+   // Local method to read the configuration settings
+   private string getText(XmlElement element)
+   {
+       // Setup namespace manager with our namespace
+       XmlNamespaceManager nsmgr =
+           new XmlNamespaceManager(
+               element.OwnerDocument.NameTable);
 
-        // Find all the "File" elements under our configuration
-        XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
+       // Find all the "File" elements under our configuration
+       XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
 
-        string result = String.Empty;
-        if (files.Count > 0)
-        {
-            XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
-            if (pathAttribute != null &&
-                !String.IsNullOrEmpty(pathAttribute.Value))
-            {
-                result = pathAttribute.Value;
-            }
-        }
+       string result = String.Empty;
+       if (files.Count > 0)
+       {
+           XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
+           if (pathAttribute != null &&
+               !String.IsNullOrEmpty(pathAttribute.Value))
+           {
+               result = pathAttribute.Value;
+           }
+       }
 
-        return result;
-    }
-    ```
+       return result;
+   }
+   ```
 
 9. Выполните построение решения. Скопируйте сборку адаптера диагностических данных и XML-файл конфигурации (`<diagnostic data adapter name>.dll.config`) в следующее расположение (в зависимости от каталога установки): *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
@@ -184,7 +184,7 @@ ms.locfileid: "44320544"
 
      Файл данных, указанный в редакторе, присоединяется к результатам тестов.
 
- Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) или [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+    Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) или [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>См. также
 

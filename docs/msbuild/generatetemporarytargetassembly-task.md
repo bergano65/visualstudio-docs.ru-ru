@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f771d71d6475ac9835ec21b36b44ce3cd131ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892952"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Задача GenerateTemporaryTargetAssembly
 Задача <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> создает сборку, если по меньшей мере одна страница [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
   
-|Параметр|Описание:|  
-|---------------|-----------------|  
-|`AssemblyName`|Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта, и которое также используется для временно создаваемой конечной сборки. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] с именем *WinExeAssembly.exe*, параметр **AssemblyName** имеет значение **WinExeAssembly**.|  
-|`CompileTargetName`|Обязательный параметр **string**.<br /><br /> Указывает имя целевого объекта [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)], который используется для создания сборок из файлов исходного кода. Для параметра **CompileTargetName** обычно используется значение **CoreCompile**.|  
-|`CompileTypeName`|Обязательный параметр **string**.<br /><br /> Задает тип компиляции, которую выполняет целевой объект, указанный в параметре **CompileTargetName**. Для целевого объекта **CoreCompile** этот параметр имеет значение **Compile**.|  
-|`CurrentProject`|Обязательный параметр **string**.<br /><br /> Указывает полный путь к файлу проекта [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] для проекта, которому требуется временная конечная сборка.|  
-|`GeneratedCodeFiles`|Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список файлов управляемого кода для определенного языка, созданных задачей [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
-|`IntermediateOutputPath`|Обязательный параметр **string**.<br /><br /> Указывает каталог, в котором создана временная конечная сборка.|  
-|`MSBuildBinPath`|Обязательный параметр **string**.<br /><br /> Указывает расположение файла *MSBuild.exe*, который необходим для компиляции временной конечной сборки.|  
-|`ReferencePath`|Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке.|  
-|`ReferencePathTypeName`|Обязательный параметр **string**.<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции (**CompileTargetName**), который задает список ссылок на сборку (**ReferencePath**). Мы рекомендуем использовать значение **ReferencePath**.|  
+| Параметр | Описание: |
+|--------------------------| - |
+| `AssemblyName` | Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта, и которое также используется для временно создаваемой конечной сборки. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] с именем *WinExeAssembly.exe*, параметр **AssemblyName** имеет значение **WinExeAssembly**. |
+| `CompileTargetName` | Обязательный параметр **string**.<br /><br /> Указывает имя целевого объекта [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)], который используется для создания сборок из файлов исходного кода. Для параметра **CompileTargetName** обычно используется значение **CoreCompile**. |
+| `CompileTypeName` | Обязательный параметр **string**.<br /><br /> Задает тип компиляции, которую выполняет целевой объект, указанный в параметре **CompileTargetName**. Для целевого объекта **CoreCompile** этот параметр имеет значение **Compile**. |
+| `CurrentProject` | Обязательный параметр **string**.<br /><br /> Указывает полный путь к файлу проекта [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] для проекта, которому требуется временная конечная сборка. |
+| `GeneratedCodeFiles` | Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список файлов управляемого кода для определенного языка, созданных задачей [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
+| `IntermediateOutputPath` | Обязательный параметр **string**.<br /><br /> Указывает каталог, в котором создана временная конечная сборка. |
+| `MSBuildBinPath` | Обязательный параметр **string**.<br /><br /> Указывает расположение файла *MSBuild.exe*, который необходим для компиляции временной конечной сборки. |
+| `ReferencePath` | Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке. |
+| `ReferencePathTypeName` | Обязательный параметр **string**.<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции (**CompileTargetName**), который задает список ссылок на сборку (**ReferencePath**). Мы рекомендуем использовать значение **ReferencePath**. |
   
 ## <a name="remarks"></a>Примечания  
  При первом проходе компиляции разметки, который выполняет процесс [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] компилируются в двоичный формат. Для этого компилятору требуется список сборок, на которые есть ссылки и которые содержат типы, используемые в файлах [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Но если файл [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] использует тип, который определен в том же проекте, соответствующая сборка для этого проекта не будет создана, пока не будет выполнена сборка проекта. Следовательно, ссылку на сборку во время первого прохода компиляции разметки предоставить невозможно.  

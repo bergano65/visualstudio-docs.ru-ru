@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908747"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
 
@@ -37,24 +37,24 @@ ms.locfileid: "31945926"
 
  Для улучшения результатов воспользуйтесь советами по форматированию:
 
--   Добавьте оператор `call` перед всеми событиями сборки, запускающими *BAT*-файлы.
+- Добавьте оператор `call` перед всеми событиями сборки, запускающими *BAT*-файлы.
 
-     Пример: `call C:\MyFile.bat`
+   Пример: `call C:\MyFile.bat`
 
-     Пример: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Пример: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Заключите пути к файлам в кавычки.
+- Заключите пути к файлам в кавычки.
 
-     Пример (для [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   Пример (для [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Разделите несколько команд с помощью разрывов строк.
+- Разделите несколько команд с помощью разрывов строк.
 
--   При необходимости включите подстановочные знаки.
+- При необходимости включите подстановочные знаки.
 
-     Пример: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+   Пример: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
-    > [!NOTE]
-    >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
+  > [!NOTE]
+  >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
 ## <a name="see-also"></a>См. также
 

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080318"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863859"
 ---
 # <a name="midl-task"></a>MIDL - задача
 Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -59,7 +59,7 @@ ms.locfileid: "39080318"
   
 -   **ApplicationConfigurationMode**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, то в IDL-файле разрешается использовать некоторые ключевые слова ACF.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "39080318"
   
 -   **ErrorCheckAllocations**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить ошибки нехватки памяти.  
   
@@ -131,7 +131,7 @@ ms.locfileid: "39080318"
   
 -   **ErrorCheckBounds**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить совместимо-переменные и переменные массивы на соответствие требованиям к размеру передаваемых данных.  
   
@@ -139,7 +139,7 @@ ms.locfileid: "39080318"
   
 -   **ErrorCheckEnumRange**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить допустимость значения перечисления.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "39080318"
   
 -   **ErrorCheckRefPointers**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, проверить, что в клиентские заглушки не передаются пустые указатели.  
   
@@ -155,7 +155,7 @@ ms.locfileid: "39080318"
   
 -   **ErrorCheckStubData**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, создается заглушка, которая перехватывает исключения демаршалинга на стороне сервера и передает их обратно клиенту.  
   
@@ -193,7 +193,7 @@ ms.locfileid: "39080318"
   
 -   **GenerateStublessProxies**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение`true`, создаются полностью преобразованные заглушки вместе с прокси-серверами без заглушек для объектных интерфейсов.  
   
@@ -201,7 +201,7 @@ ms.locfileid: "39080318"
   
 -   **GenerateTypeLibrary**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, файл библиотеки типов (с расширением *TLB*) не создается.  
   
@@ -217,7 +217,7 @@ ms.locfileid: "39080318"
   
 -   **IgnoreStandardIncludePath**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, задача MIDL выполняет поиск только в тех каталогах, которые заданы ключом **AdditionalIncludeDirectories**, игнорируя текущий каталог и каталоги, указанные в переменной среды INCLUDE.  
   
@@ -241,11 +241,11 @@ ms.locfileid: "39080318"
   
 -   **MkTypLibCompatible**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, необходимо использовать формат входного файла, совместимый с *mktyplib.exe* версии 2.03.  
   
-     Дополнительные сведения см. в описании параметра **/mktyplib203** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также статью [Синтаксис файла ODL](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) на веб-сайте MSDN.  
+     Дополнительные сведения см. в описании параметра **/mktyplib203** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также статью [Синтаксис файла ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) на веб-сайте MSDN.  
   
 -   **OutputDirectory**  
   
@@ -313,7 +313,7 @@ ms.locfileid: "39080318"
   
 -   **SuppressCompilerWarnings**  
   
-     Необязательный параметр типа **Boolean**.  
+     Необязательный параметр **Boolean** .  
   
      Если это значение `true`, отменяются предупреждающие сообщения от задачи MIDL.  
   

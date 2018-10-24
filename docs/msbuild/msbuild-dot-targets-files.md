@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835d6e80c650a18b3e595d1c6dc0c8bafd6b958a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3282495219e92da38fc90c9a98fa115791190d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834569"
 ---
 # <a name="msbuild-targets-files"></a>Файлы TARGETS в MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает в себя несколько *TARGETS*-файлов, содержащих элементы, свойства, целевые объекты и задачи для обычных сценариев. Эти файлы автоматически импортируются в большинство файлов проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для упрощения обслуживания и повышения удобочитаемости.  
@@ -37,11 +37,11 @@ ms.locfileid: "39080016"
 
 ## <a name="common-targets-files"></a>Общие файлы TARGETS  
 
-|Файл *TARGETS*|Описание:|  
-|-------------------|-----------------|  
-|*Microsoft.Common.targets*|Определяет этапы стандартного процесса сборки для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Импортированы с помощью файлов *Microsoft.CSharp.targets* и *Microsoft.VisualBasic.targets*, которые включают в себя следующий оператор: `<Import Project="Microsoft.Common.targets" />`|  
-|*Microsoft.CSharp.targets*|Определяет этапы стандартного процесса сборки для проектов Visual C#.<br /><br /> Импортированы с помощью файлов проекта Visual C# (с расширением *CSPROJ*), которые включают в себя следующий оператор: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
-|*Microsoft.VisualBasic.targets*|Определяет этапы стандартного процесса сборки для проектов Visual Basic.<br /><br /> Импортированы с помощью файлов проекта Visual Basic (с расширением *VBPROJ*), которые включают в себя следующий оператор: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
+| Файл *TARGETS* | Описание: |
+|---------------------------------| - |
+| *Microsoft.Common.targets* | Определяет этапы стандартного процесса сборки для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Импортированы с помощью файлов *Microsoft.CSharp.targets* и *Microsoft.VisualBasic.targets*, которые включают в себя следующий оператор: `<Import Project="Microsoft.Common.targets" />` |
+| *Microsoft.CSharp.targets* | Определяет этапы стандартного процесса сборки для проектов Visual C#.<br /><br /> Импортированы с помощью файлов проекта Visual C# (с расширением *CSPROJ*), которые включают в себя следующий оператор: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | Определяет этапы стандартного процесса сборки для проектов Visual Basic.<br /><br /> Импортированы с помощью файлов проекта Visual Basic (с расширением *VBPROJ*), которые включают в себя следующий оператор: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* является определяемым пользователем файлом, который содержит настройки для проектов в каталоге. Этот файл автоматически импортируется из *Microsoft.Common.targets*, пока свойству **ImportDirectoryBuildTargets** не будет назначено значение **false**.

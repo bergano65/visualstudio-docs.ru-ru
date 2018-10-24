@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854823"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Метод `CommentMarkAtProfile` вставляет значение метки времени, числовую метку и строку комментария в *VSP*-файл. Значение метки времени можно использовать для синхронизации внешних событий. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию CommentMarkAtProfile.  

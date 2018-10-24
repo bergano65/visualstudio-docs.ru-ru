@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821621"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
@@ -88,7 +88,7 @@ ms.locfileid: "39382681"
 3. В первом элементе **add** создайте следующие атрибуты и значения для подключения к базе данных Microsoft Access:
 
 |Атрибут|Значения|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
@@ -135,7 +135,7 @@ ms.locfileid: "39382681"
 4. В первом элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Access:
 
 |Атрибут|Значения|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|

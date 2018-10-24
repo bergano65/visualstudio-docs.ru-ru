@@ -14,29 +14,29 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 486c41c54e7935bcda27ad6bea18b3180aa0371e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882370"
 ---
 # <a name="windows-script-hosts"></a>Серверы скриптов Windows
 При реализации сервера скриптов Microsoft Windows можно с уверенностью предположить, что обработчик скриптов вызывает интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) только в контексте базового потока при условии, что узел выполняет следующие действия:  
   
--   выбирает базовый поток (обычно поток, который содержит цикл обработки сообщений);  
+- выбирает базовый поток (обычно поток, который содержит цикл обработки сообщений);  
   
--   создает обработчик скриптов в базовом потоке;  
+- создает обработчик скриптов в базовом потоке;  
   
--   вызывает методы обработчика скриптов только из базового потока, за исключением того, где специально разрешено, как в случаях [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) и [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md);  
+- вызывает методы обработчика скриптов только из базового потока, за исключением того, где специально разрешено, как в случаях [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) и [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md);  
   
--   вызывает объект диспетчеризации обработчика скриптов только из базового потока;  
+- вызывает объект диспетчеризации обработчика скриптов только из базового потока;  
   
--   гарантирует, что цикл обработки сообщений выполняется в базовом потоке, если указан дескриптор окна;  
+- гарантирует, что цикл обработки сообщений выполняется в базовом потоке, если указан дескриптор окна;  
   
--   гарантирует, что в модели объекта узла только исходные события в базовом потоке.  
+- гарантирует, что в модели объекта узла только исходные события в базовом потоке.  
   
- Этим правилам автоматически следуют все однопотоковые узлы. Описанная выше ограниченная модель намеренно является достаточно свободной, чтобы разрешать узлу прерывать зациклившийся скрипт путем вызова [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) из другого потока (инициированного обработчиком CTRL+BREAK или аналогичным) или дублировать скрипт в новый поток с помощью [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+  Этим правилам автоматически следуют все однопотоковые узлы. Описанная выше ограниченная модель намеренно является достаточно свободной, чтобы разрешать узлу прерывать зациклившийся скрипт путем вызова [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) из другого потока (инициированного обработчиком CTRL+BREAK или аналогичным) или дублировать скрипт в новый поток с помощью [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
 ## <a name="remarks"></a>Примечания  
  Ни одно из этих ограничений не применяется к узлу, который выбирает реализацию свободнопоточного интерфейса [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) и свободнопоточную объектную модель. Такой узел может использовать интерфейс [IActiveScript](../winscript/reference/iactivescript.md) из любого потока без ограничений.  
