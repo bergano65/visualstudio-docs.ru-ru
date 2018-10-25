@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetOwner | Документы Microsoft
+title: IDebugGenericParamField::GetOwner | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee4163c1353ad0dde97f0df2a20b06db0a0cb34c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ab96887c12d798bfc521519b444c164b6e661fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937167"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-Извлекает владельца этого универсального параметра типа или метода.  
+Возвращает имя типа или метода владельца этого универсального параметра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +42,10 @@ int GetOwner(
  [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта, которому принадлежит этот универсальный параметр.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)  

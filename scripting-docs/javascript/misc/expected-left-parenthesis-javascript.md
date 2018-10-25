@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; (&#39; (JavaScript) | Документы Microsoft
+title: Ожидается &#39;(&#39; (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31f611c2dc387a4aec574a3d5f8525b7b298d39d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942287"
 ---
-# <a name="expected-3939-javascript"></a>Ожидается &#39; (&#39; (JavaScript)
-Была предпринята попытка заключить выражение в круглые скобки, но не включали открывающей скобки. Некоторые выражения должны быть заключены в набор открывающих и закрывающих скобок. Обратите внимание на использование скобок в следующем примере.  
+# <a name="expected-3939-javascript"></a>Ожидается &#39;(&#39; (JavaScript)
+Предпринята попытка заключить выражение в круглые скобки, но не содержал открывающую скобку. Некоторые выражения должны быть заключены в набор открывающих и закрывающих скобок. Обратите внимание на использование скобок в следующем примере.  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -38,4 +38,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавьте левую скобку к выражению.
+-   Добавьте левую скобку вычисляемое выражение.

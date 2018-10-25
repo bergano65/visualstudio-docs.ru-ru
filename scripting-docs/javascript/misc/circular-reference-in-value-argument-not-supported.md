@@ -1,5 +1,5 @@
 ---
-title: Циклическая ссылка в аргументе значения не поддерживается | Документы Microsoft
+title: Циклическая ссылка в аргументе значения не поддерживается | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949428"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Циклическая ссылка в аргументе значения не поддерживается
 Предпринята попытка вызвать `JSON.stringify` со значением, которое является недопустимым. `value` Аргументов, массив или объект, содержит циклическую ссылку.  
@@ -35,7 +35,7 @@ ms.locfileid: "24633144"
 -   Удалите циклическую ссылку из аргумента.  
   
 ## <a name="example"></a>Пример  
- В данном примере кода приводит к ошибке времени выполнения, поскольку `john` содержит ссылку на `mary` и `mary` содержит ссылку на `john`. Чтобы удалить циклическую ссылку, либо удалите или не задано свойство `brother` из `mary` объекта или `sister` свойство из `john` объекта.  
+ В данном примере кода приводит к ошибке времени выполнения, поскольку `john` содержит ссылку на `mary` и `mary` содержит ссылку на `john`. Чтобы удалить циклическую ссылку, либо удалите или свойство `brother` из `mary` объекта или `sister` свойства из `john` объекта.  
   
 ```JavaScript  
 var john = new Object();  

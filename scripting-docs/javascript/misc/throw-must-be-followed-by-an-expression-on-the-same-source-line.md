@@ -1,5 +1,5 @@
 ---
-title: Throw требует после выражение на той же строке | Документы Microsoft
+title: Throw может стоять выражение на той же строке кода | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951058"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw требует после себя выражение на той же строке
-Вы использовали `throw` ключевое слово, но не соответствует его с помощью выражения, на той же строке. Объект `throw` оператор состоит из двух частей: `throw` ключевое слово, и выражение исключение. Например:  
+Вы использовали `throw` ключевое слово, но не соответствует его с помощью выражения в той же строке кода. Объект `throw` оператор состоит из двух частей: `throw` ключевое слово, и выражение исключение. Пример:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,13 +36,13 @@ if (denominator == 0) {
 }  
 ```  
   
- Эти два компонента не удается разделить.  
+ Вам не удается разделить эти два компонента.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что `throw` ключевое слово и выражение исключение появится на той же строке.  
+-   Убедитесь, что `throw` ключевое слово и выражение исключение появляется в той же строке.  
   
 ## <a name="see-also"></a>См. также  
- [Объект Error](../../javascript/reference/error-object-javascript.md)   
+ [Объект ошибки](../../javascript/reference/error-object-javascript.md)   
  [Оператор throw](../../javascript/reference/throw-statement-javascript.md)   
  [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949387"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -52,13 +52,13 @@ ms.locfileid: "39582399"
 
 Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
--   Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Модели данных в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Модели данных в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Привязка данных WPF. Дополнительные сведения см. в разделе [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview).
+- Привязка данных WPF. Дополнительные сведения см. в разделе [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Создание проекта службы
 
@@ -171,23 +171,23 @@ ms.locfileid: "39582399"
 
 Добавьте несколько кнопок в окно, изменив в XAML в конструкторе WPF. Позднее в рамках данного пошагового руководства вы добавите код, позволяющий пользователям просматривать и обновлять торговые записи с помощью этих кнопок.
 
-1.  В **обозревателе решений**, дважды щелкните **MainWindow.xaml**.
+1. В **обозревателе решений**, дважды щелкните **MainWindow.xaml**.
 
-     Открывается окно в Конструкторе WPF.
+    Открывается окно в Конструкторе WPF.
 
-2.  В представлении [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] конструктора добавьте следующий код между тегами `<Grid>`:
+2. В представлении [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] конструктора добавьте следующий код между тегами `<Grid>`:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Выполните построение проекта.
+3. Выполните построение проекта.
 
 ## <a name="create-the-data-bound-controls"></a>Создавать элементы управления с привязкой к данным
 

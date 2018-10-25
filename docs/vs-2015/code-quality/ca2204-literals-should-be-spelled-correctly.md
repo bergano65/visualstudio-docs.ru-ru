@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928448"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: литералы должны иметь правильное написание
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200364"
 ## <a name="rule-description"></a>Описание правила
  Это правило проверяет строковый литерал, который передается как значение параметра или свойства, если один или несколько из следующих условий верно:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Установлен атрибут параметра или свойства в значение true.
+- <xref:System.ComponentModel.LocalizableAttribute> Установлен атрибут параметра или свойства в значение true.
 
--   Имя параметра или свойства содержит «Text», «Message» или «Заголовок».
+- Имя параметра или свойства содержит «Text», «Message» или «Заголовок».
 
--   Строковый параметр, который передается методу Console.Write и Console.WriteLine называется «value» или «format».
+- Строковый параметр, который передается методу Console.Write и Console.WriteLine называется «value» или «format».
 
- Это правило анализирует литеральную строку на слова, маркирование составных слов и проверяет правильность написания всех слов и лексем. Сведения об алгоритме анализа см. в разделе [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Это правило анализирует литеральную строку на слова, маркирование составных слов и проверяет правильность написания всех слов и лексем. Сведения об алгоритме анализа см. в разделе [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
- По умолчанию используется английский (en) версия средства проверки орфографии.
+  По умолчанию используется английский (en) версия средства проверки орфографии.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение данного правила, исправьте Правописание слова или добавьте это слово в пользовательский словарь. Сведения о том, как использовать настраиваемые словари, см. в разделе [как: Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md).

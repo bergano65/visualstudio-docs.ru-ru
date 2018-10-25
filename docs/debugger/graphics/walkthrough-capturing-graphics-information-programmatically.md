@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933291"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 С помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно программно захватывать графические данные из приложения Direct3D.  
@@ -69,24 +69,24 @@ ms.locfileid: "39510430"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Получение интерфейса IDXGraphicsAnalysis  
   
--   Чтобы подключить интерфейс IDXGraphicsAnalysis к интерфейсу отладки DXGI, выполните указанный ниже код.  
+- Чтобы подключить интерфейс IDXGraphicsAnalysis к интерфейсу отладки DXGI, выполните указанный ниже код.  
   
-    ```cpp
-    IDXGraphicsAnalysis* pGraphicsAnalysis;  
-    HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
-    ```  
+  ```cpp
+  IDXGraphicsAnalysis* pGraphicsAnalysis;  
+  HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
+  ```  
   
-     Не забудьте установить флажок `HRESULT` возвращаемые [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) позволит добиться допустимый интерфейс перед их использованием:  
+   Не забудьте установить флажок `HRESULT` возвращаемые [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) позволит добиться допустимый интерфейс перед их использованием:  
   
-    ```cpp
-    if (FAILED(getAnalysis))  
-    {  
-        // Abort program or disable programmatic capture in your app.  
-    }  
-    ```  
+  ```cpp
+  if (FAILED(getAnalysis))  
+  {  
+      // Abort program or disable programmatic capture in your app.  
+  }  
+  ```  
   
-    > [!NOTE]
-    >  Если файл `DXGIGetDebugInterface1` возвращает `E_NOINTERFACE` , (`error: E_NOINTERFACE No such interface supported`), убедитесь, что приложение запущено в диагностике графики (клавиши ALT+F5 в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+  > [!NOTE]
+  >  Если файл `DXGIGetDebugInterface1` возвращает `E_NOINTERFACE` , (`error: E_NOINTERFACE No such interface supported`), убедитесь, что приложение запущено в диагностике графики (клавиши ALT+F5 в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Захват графической информации  
  Получив допустимый интерфейс `IDXGraphicsAnalysis` , можно использовать `BeginCapture` и `EndCapture` для захвата графических данных.  
@@ -118,5 +118,5 @@ ms.locfileid: "39510430"
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Запись графических сведений](walkthrough-capturing-graphics-information.md)   
- [Захват графической информации](capturing-graphics-information.md)   
+ [Capturing Graphics Information](capturing-graphics-information.md)   
  [Программа командной строки для захвата](command-line-capture-tool.md)

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950967"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Outlook. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какой элемент Outlook открыт. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "38778132"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   создание проекта надстройки VSTO для Outlook;  
+- создание проекта надстройки VSTO для Outlook;  
   
--   написание кода, использующего объектную модель Outlook для добавления текста в поле темы и текст нового электронного сообщения;  
+- написание кода, использующего объектную модель Outlook для добавления текста в поле темы и текст нового электронного сообщения;  
   
--   Построение и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
--   Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+- Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -78,24 +78,24 @@ ms.locfileid: "38778132"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Добавление текста в поле темы и текст каждого нового электронного сообщения  
   
-1.  В файле кода ThisAddIn объявите поле с именем `inspectors` в классе `ThisAddIn` . Поле `inspectors` содержит ссылку на коллекцию окон инспектора в текущем экземпляре Outlook. Эта ссылка не позволит сборщику мусора освободить память, содержащую обработчик событий для <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+1. В файле кода ThisAddIn объявите поле с именем `inspectors` в классе `ThisAddIn` . Поле `inspectors` содержит ссылку на коллекцию окон инспектора в текущем экземпляре Outlook. Эта ссылка не позволит сборщику мусора освободить память, содержащую обработчик событий для <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Замените метод `ThisAddIn_Startup` следующим кодом. Этот код присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+2. Замените метод `ThisAddIn_Startup` следующим кодом. Этот код присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Он присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+3. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Он присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     Когда пользователь создает сообщение, этот обработчик событий добавляет текст в строку темы и текст сообщения.  
+    Когда пользователь создает сообщение, этот обработчик событий добавляет текст в строку темы и текст сообщения.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- Для изменения каждого нового сообщения в приведенных выше примерах кода используются следующие объекты.  
+   Для изменения каждого нового сообщения в приведенных выше примерах кода используются следующие объекты.  
   
 -   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Outlook.Application> , который представляет текущий экземпляр Outlook.  
   

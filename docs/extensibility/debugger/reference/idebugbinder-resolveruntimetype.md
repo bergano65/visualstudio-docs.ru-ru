@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Документы Microsoft
+title: IDebugBinder::ResolveRuntimeType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa911dba9d56996e048326737c1dd99ca89c49c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2bfca2c360741b92c3a7ce3c4773671d8bf4d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928130"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Этот метод определяет тип объекта во время выполнения.  
+Этот метод определяет тип времени выполнения объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int ResolveRuntimeType(
   
 #### <a name="parameters"></a>Параметры  
  `pObject`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) разрешения.  
+ [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) разрешаться.  
   
  `ppResolved`  
  [out] Возвращает тип объекта в виде [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Тип объекта во время выполнения не всегда известен во время компиляции. Например применение полиморфизма аргумента могут передаваться функции как и базовый класс, например класс button. Фактический аргумент может быть производном классе, например класса radio button.  
+ Тип времени выполнения объекта не всегда известен во время компиляции. Например с помощью полиморфизма, аргумент могут передаваться функции как и базовый класс, например класса button. Фактический аргумент может быть производном классе, например класс radio button.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

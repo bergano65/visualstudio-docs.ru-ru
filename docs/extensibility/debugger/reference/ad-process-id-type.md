@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE | Документы Microsoft
+title: AD_PROCESS_ID_TYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8318efdc64adf9792e44ccf2f4ad4aa9f74dd67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fa934610778479551d411a4b231a4b190f29bcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937412"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-Указывает способ интерпретации идентификатор процесса в [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры.  
+Указывает способ интерпретации идентификатора процесса в [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,7 +47,7 @@ public enum enum_AD_PROCESS_ID {
  Идентификатор процесса — это идентификатор системы. Используйте `ProcessId.dwProcessId` поле [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры.  
   
  AD_PROCESS_ID_GUID  
- Идентификатор процесса — это GUID. Используйте `ProcessId.guidProcessId` поле `AD_PROCESS_ID` структуры.  
+ Идентификатор процесса представляет собой идентификатор GUID. Используйте `ProcessId.guidProcessId` поле `AD_PROCESS_ID` структуры.  
   
 ## <a name="remarks"></a>Примечания  
  Используется для `ProcessIdType` членом [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура, определяющая тип идентификатор процесса, который содержится в структуре. Определяет способ интерпретации `ProcessId` объединения в структуре.  

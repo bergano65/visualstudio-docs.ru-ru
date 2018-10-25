@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Документы Microsoft
+title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61cb7304f6fed3e2f3da55b94450c58bfc53334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39d50c7a6bb7f7101bfb7bb1860319d8c0dbdfe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949530"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Получает настраиваемые атрибуты байтов по заданному имени настраиваемого атрибута.  
+Получает настраиваемые атрибуты байтов, заданному имени настраиваемого атрибута.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,23 +45,23 @@ int GetCustomAttributeByName(
   
 #### <a name="parameters"></a>Параметры  
  `pszCustomAttributeName`  
- [in] Строка, содержащая имя искомого настраиваемого атрибута.  
+ [in] Строка, содержащая имя настраиваемого атрибута для поиска.  
   
  `ppBlob`  
- [in, out] Массив, который содержит байты настраиваемого атрибута.  
+ [in, out] Массив, который заполняется байты настраиваемого атрибута.  
   
  `pdwLen`  
  [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если настраиваемый атрибут не существует. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если настраиваемый атрибут не существует. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Задать `ppBlob` параметр в значение null для возврата количества атрибутов доступных байтов. Затем выделить память для массива и передать этот массив в для `ppBlob` параметра.  
+ Задайте `ppBlob` параметр в значение null для возврата количества атрибутов доступных байтов. Затем выделить память для массива и передать этот массив в для `ppBlob` параметра.  
   
- Байты атрибута представляют необработанные данные настраиваемого атрибута.  
+ Атрибут байты представляют необработанные данные настраиваемого атрибута.  
   
- Если `ppBlob` и `pdwLen` параметры устанавливаются в значение null, этот метод можно использовать для определения, существует ли просто настраиваемого атрибута. Альтернативы проще, однако является вызов [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) метод.  
+ Если `ppBlob` и `pdwLen` присвоено значение null, этот метод можно использовать для определения того, существует ли просто настраиваемого атрибута. Тем не менее, простой альтернативой является вызов [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   

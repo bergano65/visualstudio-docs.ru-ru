@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException | Документы Microsoft
+title: IDebugEngine2::RemoveSetException | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664111f28ef23e6bf78fc96f26808d1b7ccb7a85
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4880bfc80f27c362deb056b176492eb62ec6f975
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941559"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
-Удаляет указанное исключение, чтобы оно больше не обработано ядро отладки.  
+Удаляет указанное исключение, чтобы он больше не обрабатывается ядром отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,12 +44,12 @@ int RemoveSetException(
  [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение для удаления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Исключение удаления необходимо ранее заданные предыдущими вызовами метода [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) метод.  
+ Исключение удаления необходимо ранее заданные предыдущим вызовом [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) метод.  
   
- Чтобы удалить все исключения набор, вызовите [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) метод.  
+ Чтобы удалить все исключения набора, вызовите [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

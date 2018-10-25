@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928182"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Создание повторно используемых групп кнопок
 Группа команды — это коллекция команд, которые всегда отображаются вместе в меню или панели инструментов. Любую группу команды могут быть использованы повторно, присвоив его другой родительский элемент меню в разделе CommandPlacements *.vsct* файла.  
@@ -88,37 +88,37 @@ ms.locfileid: "39498858"
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Для размещения многократно используемых группу кнопок, меню  
   
-1.  Создает запись в `CommandPlacements` разделе. Значение GUID и идентификатор `CommandPlacement` элемент те группы и задайте родительскую GUID и идентификатора объекта в целевое расположение.  
+1. Создает запись в `CommandPlacements` разделе. Значение GUID и идентификатор `CommandPlacement` элемент те группы и задайте родительскую GUID и идентификатора объекта в целевое расположение.  
   
-     В разделе CommandPlacements должны размещаться только после команды раздела:  
+    В разделе CommandPlacements должны размещаться только после команды раздела:  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     Группа команд может быть включено на более чем с одним меню. Родительского меню может быть тот, который вы создали, предоставляемую [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (как описано в разделе *ShellCmdDef.vsct* или *SharedCmdDef.vsct*), или один, который определен в другом пакете VSPackage. Количество уровней родительских связей не ограничено до тех пор, пока родительского меню со временем подключен к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или контекстное меню, которая отображается в VSPackage.  
+    Группа команд может быть включено на более чем с одним меню. Родительского меню может быть тот, который вы создали, предоставляемую [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (как описано в разделе *ShellCmdDef.vsct* или *SharedCmdDef.vsct*), или один, который определен в другом пакете VSPackage. Количество уровней родительских связей не ограничено до тех пор, пока родительского меню со временем подключен к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или контекстное меню, которая отображается в VSPackage.  
   
-     Следующий пример помещает группе **обозревателе решений** справа от других кнопок панели инструментов.  
+    Следующий пример помещает группе **обозревателе решений** справа от других кнопок панели инструментов.  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

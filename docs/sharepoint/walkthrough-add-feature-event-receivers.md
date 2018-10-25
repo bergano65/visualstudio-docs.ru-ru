@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948785"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Пошаговое руководство: Добавление приемников событий компонентов
   Приемники событий приведены методы, которые выполняются при возникновении одного из следующих событий, связанных с функции в SharePoint.
 
--   Установки компонента.
+- Установки компонента.
 
--   Он активируется.
+- Он активируется.
 
--   Отключение компонента.
+- Отключение компонента.
 
--   Удаление компонента.
+- Удаление компонента.
 
- В этом пошаговом руководстве показано, как добавить приемник событий компонента в проекте SharePoint. Он демонстрирует следующие задачи:
+  В этом пошаговом руководстве показано, как добавить приемник событий компонента в проекте SharePoint. Он демонстрирует следующие задачи:
 
--   Создание пустого проекта с приемником событий компонента.
+- Создание пустого проекта с приемником событий компонента.
 
--   Обработка **FeatureDeactivating** метод.
+- Обработка **FeatureDeactivating** метод.
 
--   С помощью объектной модели project SharePoint добавить объявление в список объявлений.
+- С помощью объектной модели project SharePoint добавить объявление в список объявлений.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.

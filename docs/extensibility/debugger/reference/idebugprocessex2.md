@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Документы Microsoft
+title: IDebugProcessEx2 | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 479206b75325c1b7e6bba0e4cc4e9b53944d73d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fa10fb5ebe2f9a78d44997c29ae51bc02e2c842
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934942"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Этот интерфейс позволяет сеанса, диспетчер отладочной (SDM) уведомления процесса, присоединение или отсоединение от процесса.  
+Этот интерфейс позволяет сеанс отладки manager (SDM) рассылать уведомления процесса, присоединение или отсоединение от процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,15 +32,15 @@ IDebugProcessEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщик пользовательский порт реализует этот интерфейс на один и тот же объект как [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) интерфейс для:  
+ Пользовательский порт поставщик реализует этот интерфейс на один и тот же объект как [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) интерфейс, в следующем порядке:  
   
--   Поддержка отслеживания сеансы, подключенные к процессу  
+- Отслеживание поддержки сеансы, подключенные к процессу  
   
--   Поддержка автоматического присоединения через несколько обработчиков отладки  
+- Поддержка автоматического присоединения через несколько отладчиков  
   
- Пользовательский порт поставщика можно реализовать этот интерфейс, если он выбирает.  
+  Если он выбирает поставщика пользовательского порта можно реализовать этот интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
   
 -   Вызовы SDM [QueryInterface](/cpp/atl/queryinterface) на `IDebugProcess2` интерфейс для получения этого интерфейса.  
   
@@ -49,12 +49,12 @@ IDebugProcessEx2 : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Сообщает процесс, что сеанс теперь отлаживаемого процесса.|  
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Сообщает процесс, что сеанс больше не является отладка процесса.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет узлы программы список отладчики.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Информирует процесса о том, что сеанс теперь является отладка процесса.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Информирует процесса о том, что сеанс больше не является отладка процесса.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет узлы программы список обработчиков отладки.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот интерфейс является частным между SDM и процесса.  
+ Этот интерфейс является закрытым между SDM и процессом.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Portpriv.h  

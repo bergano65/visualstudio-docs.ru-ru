@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_PHYSICAL | Документы Microsoft
+title: UNMANAGED_ADDRESS_PHYSICAL | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbece46a5467aa6919e9bc3cf8025fef0db4f78d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abe391f2236290012dcc68f98880734b30d3e37f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950606"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Эта структура представляет физический адрес.  
@@ -44,7 +44,7 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
  64-разрядное смещение в физическое адресное пространство.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры при `dwKind` поле `DEBUG_ADDRESS_UNION` структуры задано значение `ADDRESS_KIND_UNMANAGED_PHYSICAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+ Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_UNMANAGED_PHYSICAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
@@ -54,5 +54,5 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

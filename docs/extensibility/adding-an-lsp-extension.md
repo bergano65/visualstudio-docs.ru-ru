@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938270"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -132,10 +132,10 @@ LSP, не поддерживает спецификацию на способ о
 
 4. Создание *.pkgdef* файл и добавьте строку, аналогичную следующей:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Щелкните правой кнопкой мыши файлы, а затем выберите **свойства**. Изменение **построения** действие **содержимого** и **включить в VSIX** присваивается значение true.
 
@@ -295,40 +295,40 @@ namespace MockLanguageExtension
 
 1. Добавить в JSON-файл (например, *MockLanguageExtensionSettings.json*) в проекте, который содержит параметры и их значения по умолчанию. Пример:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Щелкните правой кнопкой мыши на JSON-файл и выберите **свойства**. Изменение **построения** действие «Content» и «включить в VSIX "присваивается значение true.
 
 3. Реализовать ConfigurationSections и возвращения списка префиксов для параметров, определенных в JSON-файле (в Visual Studio Code, это будет указывать имя раздела конфигурации в файле package.json):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Добавьте файл pkgdef в проект (Добавить новый текстовый файл и измените расширение файла на .pkgdef). Файл pkgdef должен содержать эти сведения:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Щелкните правой кнопкой файл pkgdef и выберите **свойства**. Изменение **построения** действие **содержимого** и **включить в VSIX** присваивается значение true.
 
 6. Откройте *source.extension.vsixmanifest* файл и добавьте ресурс в **активов** вкладке:
 
-  ![Редактирование активов vspackage](media/lsp-add-vspackage-asset.png)
+   ![Редактирование активов vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Тип**: Microsoft.VisualStudio.VsPackage
-  * **Источник**: файл в файловой системе
-  * **Путь**: [путь к вашей *.pkgdef* файл]
+   * **Тип**: Microsoft.VisualStudio.VsPackage
+   * **Источник**: файл в файловой системе
+   * **Путь**: [путь к вашей *.pkgdef* файл]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Изменение параметров для рабочей области пользователя
 
@@ -336,16 +336,16 @@ namespace MockLanguageExtension
 2. Пользователь добавляет файл в *.vs* папку с именем *VSWorkspaceSettings.json*.
 3. Пользователь добавляет строки в *VSWorkspaceSettings.json* файла для параметра, предоставляемые сервером. Пример:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Включение трассировки диагностики
-Для вывода всех сообщений между клиентом и сервером, что может оказаться полезным при отладке проблем можно включить трассировку диагностики.  Чтобы включить диагностическую трассировку, выполните следующие действия.
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Включение трассировки диагностики
+   Для вывода всех сообщений между клиентом и сервером, что может оказаться полезным при отладке проблем можно включить трассировку диагностики.  Чтобы включить диагностическую трассировку, выполните следующие действия.
 
-1. Откройте или создайте файл параметров рабочей области *VSWorkspaceSettings.json* (см. в разделе «Пользователь редактирует параметров для рабочей области»).
-2. Добавьте следующую строку в файле параметров json:
+4. Откройте или создайте файл параметров рабочей области *VSWorkspaceSettings.json* (см. в разделе «Пользователь редактирует параметров для рабочей области»).
+5. Добавьте следующую строку в файле параметров json:
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-title: Ожидается объект даты | Документы Microsoft
+title: Ожидается объект даты | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947645"
 ---
 # <a name="date-object-expected"></a>Ожидается объект даты
-Предпринята попытка вызвать **Date.prototype.toString** или **Date.prototype.valueOf** метода объекта типа, отличного от `Date`. Объект вызова этого типа должен иметь тип `Date`. Например:  
+Предпринята попытка вызова **Date.prototype.toString** или **Date.prototype.valueOf** метод на объект типа, отличных от `Date`. Объект этого типа вызова должен иметь тип `Date`. Пример:  
   
 ```JavaScript  
 var o = new Object;  
@@ -38,7 +38,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **Date.prototype.toString** или **Date.prototype.valueOf** методов для объектов типа `Date`.  
+-   Вызывается только **Date.prototype.toString** или **Date.prototype.valueOf** методов в объектах типа `Date`.  
   
 ## <a name="see-also"></a>См. также  
  [Объект Date](../../javascript/reference/date-object-javascript.md)   

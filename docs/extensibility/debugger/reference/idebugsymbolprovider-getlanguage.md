@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Документы Microsoft
+title: IDebugSymbolProvider::GetLanguage | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947957"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Этот метод возвращает язык, который был использован для компиляции кода по адресу отладки.  
+Этот метод возвращает язык, который использовался для компиляции кода по адресу отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,19 +45,19 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Адрес объекта, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
+ [in] Адрес объекта, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
   
  `pguidLanguage`  
- [out] Возвращает `GUID` , задающий язык.  
+ [out] Возвращает `GUID` , указывающее язык.  
   
  `pguidLanguageVendor`  
  [out] Возвращает `GUID` , указывающий поставщика языка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Отладчик вызывает этот метод, чтобы получить сведения, необходимые для выбора правильного выражений.  
+ Отладчик вызывает этот метод, чтобы получить сведения, необходимые для выбора средство оценки выражений правильно.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

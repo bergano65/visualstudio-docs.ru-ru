@@ -13,12 +13,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 346362a6812882bd795b6180ac735e51f13e3530
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e450cd333c01e4e2e557013ef106337fe5a80a71
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937282"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,15 +107,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="setting-up-your-machine"></a>Настройка компьютера  
   
-1.  Убедитесь, что установлен Visual Studio 2012.1 или более поздней версии.  
+1. Убедитесь, что установлен Visual Studio 2012.1 или более поздней версии.  
   
-2.  Установите [Подключаемый модуль тестов пользовательского интерфейса Microsoft Visual Studio для Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
+2. Установите [Подключаемый модуль тестов пользовательского интерфейса Microsoft Visual Studio для Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
   
-3.  Установите [Fiddler](http://www.fiddler2.com/fiddler2/). Это средство для перехватывания и регистрации HTTP-трафика.  
+3. Установите [Fiddler](http://www.fiddler2.com/fiddler2/). Это средство для перехватывания и регистрации HTTP-трафика.  
   
-4.  Загрузите [проект fiddlerXap](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Распакуйте его, выполните его сборку и запустите скрипт "CopySLHelper.bat" для установки вспомогательной библиотеки DLL, необходимой для тестирования веб-части Silverlight во время использования инструмента Fiddler.  
+4. Загрузите [проект fiddlerXap](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Распакуйте его, выполните его сборку и запустите скрипт "CopySLHelper.bat" для установки вспомогательной библиотеки DLL, необходимой для тестирования веб-части Silverlight во время использования инструмента Fiddler.  
   
- После настройки компьютера, чтобы начать тестирование приложения SharePoint 2010 с веб-частями Silverlight, выполните следующие действия.  
+   После настройки компьютера, чтобы начать тестирование приложения SharePoint 2010 с веб-частями Silverlight, выполните следующие действия.  
   
 #### <a name="testing-silverlight-web-parts"></a>Тестирование веб-частей Silverlight  
   

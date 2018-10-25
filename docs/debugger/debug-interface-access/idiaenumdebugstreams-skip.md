@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Skip | Документы Microsoft
+title: IDiaEnumDebugStreams::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25252825a79149b4d5aa68ab20e69c0edd808ca8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 69cf0c16019cff61105be3b0de0c6c652de488d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933317"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
-Пропускает указанное число потоков отладки в последовательности перечисления.  
+Пропускает заданное число потоков отладки в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество потоков отладки в последовательность перечисления для пропуска.  
+ [in] Количество потоков отладки в последовательности перечисления для пропуска.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если нет дополнительных записей для пропуска.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
