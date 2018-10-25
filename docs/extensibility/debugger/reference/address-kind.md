@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND | Документы Microsoft
+title: ADDRESS_KIND | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53c93cb8e7d2c021c95c4b11047b5d699f7ae1c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3138b4151c1f78a05daf2320d5979d5c6e15db42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942300"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Указывает типы адресов.  
@@ -58,25 +58,25 @@ public enum enum_ADDRESS_KIND {
   
 ## <a name="terms"></a>Термины  
  ADDRESS_KIND_NATIVE  
- Собственный адрес, представленного [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) структуры.  
+ Собственный адрес, представленный [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) структуры.  
   
  ADDRESS_KIND_UNMANAGED_THIS_RELATIVE  
- Неуправляемый адрес относительно `this` (`Me` в Visual Basic) указателя и представлено [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) структуры.  
+ Неуправляемый адрес относительно `this` (`Me` в Visual Basic) указатель и представленный [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) структуры.  
   
  ADDRESS_KIND_UNMANAGED_PHYSICAL  
- Неуправляемые физическим адресом, представленного [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) структуры.  
+ Неуправляемый физический адрес, представленный [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) структуры.  
   
  ADDRESS_KIND_METHOD  
- Метод класса, представленный [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структуры.  
+ Метод класса, представленного [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структуры.  
   
  ADDRESS_KIND_FIELD  
  Поле класса, представленного [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) структуры.  
   
  ADDRESS_KIND_LOCAL  
- Адрес локальной переменной и представляется [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) структуры.  
+ Адрес для локальной переменной, а также представлен [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) структуры.  
   
  ADDRESS_KIND_PARAM  
- Параметр метода или функции, представленного [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структуры.  
+ Параметр метода или функции, представленной [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структуры.  
   
  ADDRESS_KIND_ARRAYELEM  
  Элемент массива, представленный [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структуры.  
@@ -85,7 +85,7 @@ public enum enum_ADDRESS_KIND {
  Возвращаемое значение, представленное [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) структуры.  
   
 ## <a name="remarks"></a>Примечания  
- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) возвращает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуру, которая содержит объединение множества возможных структур [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры. `dwKind` Поле `DEBUG_ADDRESS_UNION` структура содержит `ADDRESS_KIND` значение и описано, как интерпретировать поле объединения.  
+ [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) возвращает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры, который содержит объединение множества возможных структур [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры. `dwKind` Поле `DEBUG_ADDRESS_UNION` структуры содержит `ADDRESS_KIND` значение и описывается, как интерпретировать поле объединения.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  

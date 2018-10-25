@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950918"
 ---
 # <a name="visual-studio-debugging-samples"></a>Примеры отладки Visual Studio
 Двух примерах показано, как расширить с помощью отладчика Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
-  
--   Образец средства оценки выражений отладчика, управляемых языков включается в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окно, нажмите кнопку **примеры** щелкните **все** или **C#** в список языков, а затем щелкните **отладчик**.  
-  
--   Visual Studio отладки ядра, для собственного языков доступен пример в галерее кода MSDN. Дополнительные сведения см. в разделе [пример ядра отладки Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) на веб-сайте Майкрософт.
+
+- Образец средства оценки выражений отладчика, управляемых языков включается в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окно, нажмите кнопку **примеры** щелкните **все** или **C#** в список языков, а затем щелкните **отладчик**.  
+
+- Visual Studio отладки ядра, для собственного языков доступен пример в галерее кода MSDN. Дополнительные сведения см. в разделе [пример ядра отладки Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) на веб-сайте Майкрософт.

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942378"
 ---
 # <a name="customizing-text-and-image-fields"></a>Настройка полей с текстом и изображениями
 При определении текстовый декоратор фигуры, он представлен TextField. Примеры инициализацию TextFields и других которым ShapeFields проверьте Dsl\GeneratedCode\Shapes.cs в решение DSL.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  Существует несколько пар типа `Get` методы и `Default` свойства, такие как `DefaultMultipleLine/GetMultipleLine()`. Значение можно назначить свойство по умолчанию, чтобы изменить значение для всех экземпляров поля фигуры. Чтобы задать более высокое значение отличаться от экземпляра одной формы в другую или зависит от состояния фигуры или его элемента модели, переопределите `Get` метод.
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>Динамические настройки
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>Задает стиль
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>См. также

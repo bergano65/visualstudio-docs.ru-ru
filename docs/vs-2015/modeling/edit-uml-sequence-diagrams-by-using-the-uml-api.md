@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942001"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Редактирование схем последовательностей UML с помощью API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Обновление взаимодействия и его структуры  
  При обновлении взаимодействия всегда нужно завершать операцию обновлением структуры с помощью одного из следующих методов:  
   
--   `ISequenceDiagram.UpdateShapePositions()` регулирует положение фигур, которые недавно вставленных или перемещенных и их соседних фигуры.  
+- `ISequenceDiagram.UpdateShapePositions()` регулирует положение фигур, которые недавно вставленных или перемещенных и их соседних фигуры.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` перерисовывает всю схему. Параметр можно использовать для задания изменения положения жизненных циклов и/или сообщений.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` перерисовывает всю схему. Параметр можно использовать для задания изменения положения жизненных циклов и/или сообщений.  
   
- Это особенно важно при вставке новых элементов или перемещении существующих элементов. Они не будут находиться в правильном положении на схеме, пока вы не выполните одну из этих операций. Одну из этих операций необходимо вызывать лишь однократно в конце последовательности изменений.  
+  Это особенно важно при вставке новых элементов или перемещении существующих элементов. Они не будут находиться в правильном положении на схеме, пока вы не выполните одну из этих операций. Одну из этих операций необходимо вызывать лишь однократно в конце последовательности изменений.  
   
- Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Например:  
+  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Например:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

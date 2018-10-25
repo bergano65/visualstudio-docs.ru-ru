@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948945"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "49231534"
   
  Некоторые веб-серверы могут блокировать файлы с расширениями DLL-файл, config и mdf. Приложения на основе Windows, как правило, содержат файлы с некоторыми из этих расширений. Если пользователь попытается запустить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, обращающееся к заблокированного файла на веб-сервере, будет выдана ошибка. Вместо того, чтобы разблокировать все расширения файлов, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] публикует каждый файл приложения с расширением файла «.deploy» по умолчанию. Таким образом администратор должен только для настройки веб-сервер, чтобы разблокировать следующие три файла расширения:  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
+  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
   
- Вы должны будете настроить .manifest .application и .deploy, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], или если вы используете другой веб-сервер (например, Apache).  
+  Вы должны будете настроить .manifest .application и .deploy, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], или если вы используете другой веб-сервер (например, Apache).  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce и Secure Sockets Layer (SSL)  
  Объект [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение будет работать по протоколу SSL, за исключением случаев, когда Internet Explorer инициирует запрос SSL-сертификат. Запрос может инициироваться, когда существует проблема с сертификат, например когда имена узлов не совпадают или сертификата истек. Чтобы сделать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] работать через SSL-подключение, убедитесь, что сертификат находится в актуальном состоянии, а данные сертификата соответствует данные сайта.  
@@ -122,11 +122,11 @@ ms.locfileid: "49231534"
   
  Если развертывание выполняется с помощью сервера IIS, запустите inetmgr.exe и добавить новые типы файлов для веб-страницы по умолчанию:  
   
--   Для расширений .application и .manifest тип MIME должен быть «application/x-ms приложение». Для других типов файлов тип MIME должен быть «application/octet-stream».  
+- Для расширений .application и .manifest тип MIME должен быть «application/x-ms приложение». Для других типов файлов тип MIME должен быть «application/octet-stream».  
   
--   Если создать тип MIME с расширением «*», тип MIME «application/octet-stream», позволяющая тип разблокировать файл для загрузки файлов. (Тем не менее, блокируется в файл, который не удается загрузить типы, например .aspx, .asmx.)  
+- Если создать тип MIME с расширением «*», тип MIME «application/octet-stream», позволяющая тип разблокировать файл для загрузки файлов. (Тем не менее, блокируется в файл, который не удается загрузить типы, например .aspx, .asmx.)  
   
- Конкретные инструкции по настройке типы MIME в Windows Server, см. в статье базы знаний Майкрософт KB326965, «IIS 6.0 Does не служат неизвестные типы MIME» адресу [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Конкретные инструкции по настройке типы MIME в Windows Server, см. в статье базы знаний Майкрософт KB326965, «IIS 6.0 Does не служат неизвестные типы MIME» адресу [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Сопоставления типов содержимого  
  При публикации по протоколу HTTP, тип содержимого (также известный как тип MIME) для файла .application должно быть «application/x-ms приложение». Если у вас есть [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] установлен на сервере, это будет задано для вас автоматически. Если это не установлен, то необходимо создать ассоциацию MIME-типа для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] виртуального корня приложения (или всего сервера).  

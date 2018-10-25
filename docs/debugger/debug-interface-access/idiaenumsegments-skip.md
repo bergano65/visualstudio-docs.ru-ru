@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Skip | Документы Microsoft
+title: IDiaEnumSegments::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f90ec641ca3039a03ad27e4c012ea7580febe9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 595623b93bbca7d5818d242f1c1818d24ff48e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938894"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
-Пропускает указанное число сегментов в последовательности перечисления.  
+Пропускает заданное число сегментов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Количество сегментов в последовательность перечисления для пропуска.  
+ [in] Количество сегментов в последовательности перечисления для пропуска.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии не больше сегментов, чтобы пропустить.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии не больше сегментов, чтобы пропустить.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
