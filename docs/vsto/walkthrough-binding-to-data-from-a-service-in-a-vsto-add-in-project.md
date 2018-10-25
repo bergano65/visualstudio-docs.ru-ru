@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933187"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.  
@@ -31,13 +31,13 @@ ms.locfileid: "38808661"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Добавление <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемента управления в документ во время выполнения.  
+- Добавление <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемента управления в документ во время выполнения.  
   
--   Привязка <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемент управления к данным из веб-службы.  
+- Привязка <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемент управления к данным из веб-службы.  
   
--   Реагирование на событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .  
+- Реагирование на событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -86,7 +86,7 @@ ms.locfileid: "38808661"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]  
   
-2.  Добавьте следующий метод в класс `ThisAddIn` . Этот метод создает элемент управления содержимым в начале активного документа.  
+2.  Добавьте следующий метод в класс `ThisAddIn`. Этот метод создает элемент управления содержимым в начале активного документа.  
   
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  

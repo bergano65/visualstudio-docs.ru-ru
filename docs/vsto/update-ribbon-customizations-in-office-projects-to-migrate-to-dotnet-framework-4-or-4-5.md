@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937425"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если проект содержит настройку ленты, который был создан с помощью **Лента (визуальный конструктор)** элемента проекта, необходимо внести следующие изменения в код проекта, при изменении требуемой версии .NET framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или позже.  
@@ -119,18 +119,18 @@ ms.locfileid: "39252514"
   
  Существует два способа доступа к объекту <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:  
   
--   С помощью свойства фабрики класса ленты. Используйте этот подход в коде в классе ленты.  
+- С помощью свойства фабрики класса ленты. Используйте этот подход в коде в классе ленты.  
   
--   С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- В следующем примере кода показано, как создать <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> в классе ленты в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию.  
+  В следующем примере кода показано, как создать <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> в классе ленты в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  В следующей таблице перечислены элементы управления, которые можно создавать программно, и метод, используемый для создания элементов управления в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.  
   
 |Элемент управления|Метод RibbonFactory, используемый в проектах для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий|  
-|-------------|---------------------------------------------------------------------------------------------------------------|  
+|-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonCheckBox%2A>|  
@@ -155,7 +155,7 @@ ms.locfileid: "39252514"
  В следующей таблице перечислены события ленты и делегаты, связанные с ними в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.  
   
 |событие|Делегат, используемый в проектах для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |Событие <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> в созданном классе ленты|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
@@ -165,11 +165,11 @@ ms.locfileid: "39252514"
   
  Существует два способа доступа к объекту <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:  
   
--   С помощью свойства `Factory` класса ленты. Используйте этот подход в коде в классе ленты.  
+- С помощью свойства `Factory` класса ленты. Используйте этот подход в коде в классе ленты.  
   
--   С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- В следующем примере кода показано, как установить свойство `Position` вкладки в классе ленты в проекте, ориентированном на .NET Framework 3.5.  
+  В следующем примере кода показано, как установить свойство `Position` вкладки в классе ленты в проекте, ориентированном на .NET Framework 3.5.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  

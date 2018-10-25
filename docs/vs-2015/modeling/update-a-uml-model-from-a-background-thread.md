@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941000"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Обновление модели UML из фонового потока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ ms.locfileid: "49216857"
   
 #### <a name="to-run-the-example"></a>Запуск примера  
   
-1.  Создайте обработчик команд в проекте C#, как описано в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Создайте обработчик команд в проекте C#, как описано в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Убедитесь в том, что проект включает ссылки на следующие сборки:  
+2. Убедитесь в том, что проект включает ссылки на следующие сборки:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[версия]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[версия]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms.  
+   -   System.Windows.Forms.  
   
-3.  Добавьте в проект форму Windows с именем **ProgressForm**. Она должна показывать сообщение о том, что идет процесс обновления. Она не должна содержать других элементов управления.  
+3. Добавьте в проект форму Windows с именем **ProgressForm**. Она должна показывать сообщение о том, что идет процесс обновления. Она не должна содержать других элементов управления.  
   
-4.  Добавьте файл C#, содержащий код, приведенный после шага 7.  
+4. Добавьте файл C#, содержащий код, приведенный после шага 7.  
   
-5.  Постройте и запустите проект.  
+5. Постройте и запустите проект.  
   
-     Новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запустится в экспериментальном режиме.  
+    Новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запустится в экспериментальном режиме.  
   
-6.  Создайте или откройте схему классов UML в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Создайте или откройте схему классов UML в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Щелкните правой кнопкой мыши в схеме классов UML и нажмите кнопку **добавить несколько классов UML**.  
+7. Щелкните правой кнопкой мыши в схеме классов UML и нажмите кнопку **добавить несколько классов UML**.  
   
- Несколько новых полей классов отобразится на схеме один за другим с интервалом в полсекунды.  
+   Несколько новых полей классов отобразится на схеме один за другим с интервалом в полсекунды.  
   
 ```csharp  
 using System;  

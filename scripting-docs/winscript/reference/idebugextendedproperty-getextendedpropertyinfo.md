@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Документы Microsoft
+title: IDebugExtendedProperty::GetExtendedPropertyInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7109346dd8189395cfdd366ff622dfac00744382
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f314a9c777eef1716a382c74b9ea250846542da7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935478"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Извлекает расширенные сведения для расширенного свойства, являющегося больше сведений, чем более простой `IDebugProperty`.  
+Извлекает расширенные сведения для расширенного свойства, являющегося больше информации, чем более простой `IDebugProperty`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,7 +40,7 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- [in] Указывает EX_DBGPROP_INFO_FLAGS константы, которые определяют поля для заполнения `ExtendedDebugPropertyInfo` структуры.  
+ [in] Задает EX_DBGPROP_INFO_FLAGS константы, которые определяют поля для заполнения `ExtendedDebugPropertyInfo` структуры.  
   
  `nRadix`  
  [in] Основание системы счисления для использования в интерпретации все числовые данные.  
@@ -49,7 +49,7 @@ HRESULT GetExtendedPropertyInfo(
  [out] Возвращает `ExtendedDebugPropertyInfo` структура, описывающая свойства.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимую `HRESULT`, обычно `S_OK`.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
