@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize | Документы Microsoft
+title: IDebugObject::GetSize | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3a6880b7b3a09b92ca4dd9c31d01cb1c05d1620
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08dcc3306d812dafe99b22ec534a81b4420606c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926037"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 Возвращает размер объекта в байтах.  
@@ -44,7 +44,7 @@ int GetSize(
  [out] Возвращает размер в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Используйте [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) метод для извлечения значения как последовательность байтов.  

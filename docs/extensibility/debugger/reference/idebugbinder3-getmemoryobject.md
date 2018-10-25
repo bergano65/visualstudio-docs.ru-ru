@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Документы Microsoft
+title: IDebugBinder3::GetMemoryObject | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 580e9c801dec9d66a8cd5a403c338bac1385f3c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f73af4ee866ad41b93162090660ea34701f36710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896143"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Этот метод возвращает объект памяти, который представляет объем памяти, к которому привязан этот объект.  
+Этот метод извлекает объект памяти, который представляет этот объект привязан к памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,13 +48,13 @@ int GetMemoryObject(
  [in] Указывает, какое поле для получения для объекта памяти.  
   
  `uConstant`  
- [in] Представляет адрес памяти или значение для постоянного значения.  
+ [in] Представляет адрес памяти или значение для значения константы.  
   
  `ppObject`  
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий памяти, к которому привязан этот объект.  
+ [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

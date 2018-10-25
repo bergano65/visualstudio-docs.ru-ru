@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Документы Microsoft
+title: IDebugThread2::Resume | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f51fdb05fb44a23227a1a35fd6504f2d18aa804
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f41f26c824a779133a335c0d3d5080373b791d06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920993"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Возобновляет выполнение потока.  
@@ -41,15 +41,15 @@ int Resume (
   
 #### <a name="parameters"></a>Параметры  
  `pdwSuspendCount`  
- [out] Возвращает счетчик приостановок после завершения операции возобновления.  
+ [out] Возвращает счетчик приостановок после операции возобновления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- При каждом вызове функции этот метод уменьшает счетчик приостановок возобновляется пока не достигнет 0 в какое время выполнения. Этот счетчик приостановок отображается в **потоков** окон отладки.  
+ При каждом вызове этого метода уменьшает счетчик приостановок возобновляется пока не достигнет 0 в это время выполнения. Этот счетчик приостановок отображается в **потоков** окно отладки.  
   
- При каждом вызове этого метода, должны быть предыдущего вызова [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) метод. Счетчик приостановок определяет, сколько раз `IDebugThread2::Suspend` к текущему моменту вызова метода.  
+ Для каждого вызова этого метода, должно существовать предыдущего вызова [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) метод. Счетчик приостановок определяет, сколько раз `IDebugThread2::Suspend` моменту вызова метода.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

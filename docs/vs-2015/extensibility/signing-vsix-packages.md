@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915598"
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "49263890"
   
 #### <a name="to-use-the-vsixsigntool"></a>Чтобы использовать VSIXSignTool  
   
-1.  Добавление в проект VSIX.  
+1. Добавление в проект VSIX.  
   
-2.  Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **добавить &#124; управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении NuGet пакетов см. в разделе [Обзор NuGet](http://docs.nuget.org/) и [управление пакетами NuGet с помощью диалогового окна](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2. Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **добавить &#124; управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении NuGet пакетов см. в разделе [Обзор NuGet](http://docs.nuget.org/) и [управление пакетами NuGet с помощью диалогового окна](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
   
-3.  Поиск VSIXSignTool из VisualStudioExtensibility и установите пакет NuGet.  
+3. Поиск VSIXSignTool из VisualStudioExtensibility и установите пакет NuGet.  
   
-4.  Теперь можно запустить VSIXSignTool из расположения локальные пакеты проекта. См. справку командной строки средства для подписывания сценария (VSIXSignTool.exe /?).  
+4. Теперь можно запустить VSIXSignTool из расположения локальные пакеты проекта. См. справку командной строки средства для подписывания сценария (VSIXSignTool.exe /?).  
   
- Например подписать с помощью сертификата, защищенный файл пароля:  
+   Например подписать с помощью сертификата, защищенный файл пароля:  
   
- /F входа VSIXSignTool.exe \<certfile > /p \<пароль > \<VSIXfile >  
+   /F входа VSIXSignTool.exe \<certfile > /p \<пароль > \<VSIXfile >  
   
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

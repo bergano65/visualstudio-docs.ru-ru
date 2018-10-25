@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907252"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49291857"
   
 #### <a name="to-install-the-extension"></a>Установка расширения  
   
-1.  В проекте, который содержит **source.vsix.manifest**откройте **bin\\ \***  в проводнике.  
+1. В проекте, который содержит **source.vsix.manifest**откройте **bin\\\\*** в проводнике.  
   
-2.  Копировать  **\*.vsix** файл на компьютер, на котором требуется установить расширение.  
+2. Копировать  **\*.vsix** файл на компьютер, на котором требуется установить расширение.  
   
-3.  На конечном компьютере дважды щелкните VSIX-файл в проводнике.  
+3. На конечном компьютере дважды щелкните VSIX-файл в проводнике.  
   
-     Откроется установщик VSIX.  
+    Откроется установщик VSIX.  
   
 #### <a name="to-uninstall-the-extension"></a>Удаление расширения  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Документы Microsoft
+title: IDebugProgramProvider2::WatchForProviderEvents | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875142"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Позволяет получать уведомления о событиях порт процессу.  
+Позволяет процессу получать уведомления о событиях порт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,33 +56,33 @@ int WatchForProviderEvents(
 |Flag|Описание|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|  
-|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинг возвращается для каждого узла).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был присоединен к, но не запускается в отладчике.|  
-|`PFLAG_REASON_WATCH`|Вызывающий объект должен отслеживаться события. Если этот флаг не установлен. затем удаляется событие обратного вызова и вызывающий объект больше не будет получать уведомления.|  
+|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга значение возвращается для каждого узла).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|  
+|`PFLAG_REASON_WATCH`|Вызывающая сторона хочет слежения за событиями. Если этот флаг не установлен. затем удаляется событие обратного вызова, и вызывающий объект больше не получает уведомления.|  
   
  `pPort`  
- [in] Прослушивает порт вызывающего процесса.  
+ [in] Порт вызывающий процесс выполняется на.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую идентификатор процесса, в которой находится программа в вопросе.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.  
   
  `EngineFilter`  
- [in] Массив идентификаторов GUID для отладчики, связанных с процессом.  
+ [in] Массив идентификаторов GUID отладчиков, связанных с процессом.  
   
  `guidLaunchingEngine`  
- [in] Идентификатор GUID отладчик, запуск этого процесса (если таковые имеются).  
+ [in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).  
   
  `pEventCallback`  
  [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Когда вызывающий объект хочет удалить обработчик событий, которое было установлено с предыдущим вызовом этого метода, вызывающий объект передает те же параметры, как это было в первый раз, но оставляет `PFLAG_REASON_WATCH` флаг.  
+ Когда вызывающий объект хочет удалить обработчик событий, которое было установлено с предыдущего вызова этого метода, вызывающий объект передает те же параметры, как в первый раз, но оставляет `PFLAG_REASON_WATCH` флаг.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugEngine** объекта, который предоставляет [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugEngine** объекта, который предоставляет [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) интерфейс.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

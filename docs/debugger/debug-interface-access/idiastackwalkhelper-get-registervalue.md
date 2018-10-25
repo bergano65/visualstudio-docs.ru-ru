@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue | Документы Microsoft
+title: IDiaStackWalkHelper::get_registerValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccc491ec9e966b8d893b6d669aafc64ebc5c8cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: af5f68aaf5b2caed50d28a1a53022a095d478e60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887921"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
-Извлекает значение регистра.  
+Получает значение регистра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>Параметры  
  `index`  
- [in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) указание которой зарегистрироваться и получить значение из перечисления.  
+ [in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) указания, что Зарегистрируйтесь, чтобы получить значение из перечисления.  
   
  `pRetVal`  
  [out] Возвращает текущее значение регистра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Несмотря на размер `pRetVal` параметра реализацию следует хранить только регистр обычно содержат. Например 8-битный регистр содержит только младшие 8-битов заданного значения. Это значение 8-разрядного расширяется до 64 бит при возврате из этого метода.  
+ Несмотря на размер `pRetVal` параметра, следует хранить реализацию, что регистр обычно содержит только. Например 8-битным регистром содержит только младшие 8-битов заданного значения. Это 8-разрядное значение расширяется до 64-бит, при возврате из этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

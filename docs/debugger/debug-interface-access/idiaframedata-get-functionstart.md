@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_functionStart | Документы Microsoft
+title: IDiaFrameData::get_functionStart | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a54fd51b63bb53521b9f1e9c75f75e49d771b0ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6be173020e4aeb3b69197a038b4bc6d66c7eedc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908305"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Возвращает флаг, указывающий, является ли блок содержит точку входа функции.  
+Получает флаг, указывающий, содержит ли блок точку входа функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_functionStart (
  [out] Возвращает `TRUE` Если блок содержит точку входа; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Это возможно для кадра стека не является начала функции из-за рамки представляет встроенный метод или функция, вставляемых в функции.  
+ Это возможно для кадра стека, не будут включены начала функции, так как кадр представляет встроенный метод или функция, вставить в функцию.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

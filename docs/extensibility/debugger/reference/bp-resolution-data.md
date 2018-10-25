@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Документы Microsoft
+title: BP_RESOLUTION_DATA | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876091"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Описывает результат привязки точки останова по данным.  
@@ -47,19 +47,19 @@ public struct BP_RESOLUTION_DATA {
   
 ## <a name="members"></a>Участники  
  `bstrDataExpr`  
- Выражение данных, были связаны.  
+ Выражения данных, привязанный.  
   
  `bstrFunc`  
- Функции точки останова в данных привязка имени в (если таковые имеются).  
+ Функция точки останова в данных привязка имени в (если таковые имеются).  
   
  `bstrImage`  
- Имя модуля (например, MyModule.dll), точка останова для данных привязан в.  
+ Имя модуля (например, MyModule.dll), привязка точки останова в данных которых была в.  
   
  `dwFlags`  
  Значение из [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) перечисление, описывающее способ реализации точки останова в данных.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура является членом [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) структуру, которая находится в свою очередь, является членом [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры, возвращенный [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)метод.  
+ Эта структура является членом [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) структуры, который находится в свою очередь является членом [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структура, возвращенная [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)метод.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -69,7 +69,7 @@ public struct BP_RESOLUTION_DATA {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

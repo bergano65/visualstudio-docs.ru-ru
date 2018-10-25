@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878561"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ ms.locfileid: "49294272"
   
  Для развертывания расширения к главному [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]и к другим компьютерам, выполните следующие действия:  
   
-1.  Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix  
+1. Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix  
   
-2.  Скопируйте этот файл на конечном компьютере и проводника Windows (или проводника), дважды щелкните его.  
+2. Скопируйте этот файл на конечном компьютере и проводника Windows (или проводника), дважды щелкните его.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Откроется диспетчер расширений, убедитесь, что расширение установлено.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Откроется диспетчер расширений, убедитесь, что расширение установлено.  
   
- Чтобы удалить расширение, выполните следующие действия.  
+   Чтобы удалить расширение, выполните следующие действия.  
   
-1.  в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]на **средства** меню, щелкните **Диспетчер расширений**.  
+3. в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]на **средства** меню, щелкните **Диспетчер расширений**.  
   
-2.  Выберите расширение и удалите его.  
+4. Выберите расширение и удалите его.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Добавление команды контекстного меню  
  Чтобы команда меню быстрого доступа к отображаются на поверхности конструктора DSL или в окне обозревателя DSL, напишите класс, аналогичного следующему.  

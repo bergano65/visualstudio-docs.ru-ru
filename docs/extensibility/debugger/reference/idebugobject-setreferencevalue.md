@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Документы Microsoft
+title: IDebugObject::SetReferenceValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8941b09a18968fccba72c6e03a2fe612234909d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b597d7a62880e00a570a1971a6fec2becaaddca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908630"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Задает значение ссылки из этого объекта.  
+Задает значения этого объекта ссылки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int SetReferenceValue(
   
 #### <a name="parameters"></a>Параметры  
  `pObject`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект, представляющий значение ссылки на новый.  
+ [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект, представляющий новое значение ссылки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод делает этот [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта ссылку на значение объекта, указанного в `pObject` параметра отбрасывание все предыдущие ссылки. Обратите внимание, это `IDebugObject` объект уже должен быть ссылочным типом.  
+ Этот метод выполняет это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ссылка на объект на значение объекта, указанного в `pObject` параметра, извлекайте любой предыдущей ссылке. Обратите внимание, это `IDebugObject` объект уже должен быть ссылочным типом.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

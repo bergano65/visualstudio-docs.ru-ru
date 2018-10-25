@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892341"
 ---
 # <a name="memory-usage-without-debugging"></a>Использование памяти без отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Средство **Использование памяти** без отладки можно использовать для выполнения перечисленных далее задач.  
   
--   Мониторинг использования памяти приложением прямо в Visual Studio во время разработки сценария.  
+- Мониторинг использования памяти приложением прямо в Visual Studio во время разработки сценария.  
   
--   Создание подробных моментальных снимков состояния памяти вашего приложения одним щелчком.  
+- Создание подробных моментальных снимков состояния памяти вашего приложения одним щелчком.  
   
--   Сравнение моментальных снимков для поиска первопричины возникновения проблем с памятью.  
+- Сравнение моментальных снимков для поиска первопричины возникновения проблем с памятью.  
   
- В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
+  В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Запуск диагностического сеанса по использованию памяти  
   
@@ -76,13 +76,13 @@ ms.locfileid: "49267427"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Представления снимков инструмента "Использование памяти"  
  Представления снимков позволяют открывать подробные отчеты в новых окнах Visual Studio. Существует два вида представлений снимков:  
   
--   [Подробный отчет о снимках](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) отображает типы и экземпляры в одном моментальном снимке.  
+- [Подробный отчет о снимках](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) отображает типы и экземпляры в одном моментальном снимке.  
   
--   [Разностный отчет по снимкам (diff)](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) показывает сравнение типов и экземпляров на двух моментальных снимках.  
+- [Разностный отчет по снимкам (diff)](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) показывает сравнение типов и экземпляров на двух моментальных снимках.  
   
- ![Ссылки для просмотра снимков](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Ссылки для просмотра снимков](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Нумерованные элементы на изображении представления снимков являются ссылками, открывающими представления отчетов инструмента "Использование памяти".  
+  Нумерованные элементы на изображении представления снимков являются ссылками, открывающими представления отчетов инструмента "Использование памяти".  
   
 |||  
 |-|-|  

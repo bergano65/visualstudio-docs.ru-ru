@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Документы Microsoft
+title: DISASSEMBLY_STREAM_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a8735992574699ba2b108fc493e9003ca52c9b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9489b8c4399ae72bf7f6a70011eec347d870ca80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928338"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Указывает, какую информацию для получения по полю Дизассемблированный код.  
+Указывает, какую информацию нужно извлечь по полю Дизассемблированный код.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -66,50 +66,50 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
   
 ## <a name="members"></a>Участники  
  DSF_ADDRESS  
- Инициализация или использовать `bstrAddress` поле.  
+ Инициализация и использование `bstrAddress` поля.  
   
  DSF_ADDRESSOFFSET  
- Инициализация или использовать `bstrAddressOffset` поле.  
+ Инициализация и использование `bstrAddressOffset` поля.  
   
  DSF_CODEBYTES  
- Инициализация или использовать `bstrCodeBytes` поле.  
+ Инициализация и использование `bstrCodeBytes` поля.  
   
  DSF_OPCODE  
- Инициализация или использовать `bstrOpCode` поле.  
+ Инициализация и использование `bstrOpCode` поля.  
   
  DSF_OPERANDS  
- Инициализация или использовать `bstrOperands` поле.  
+ Инициализация и использование `bstrOperands` поля.  
   
  DSF_SYMBOL  
- Инициализация или использовать `bstrSymbol` поле.  
+ Инициализация и использование `bstrSymbol` поля.  
   
  DSF_CODELOCATIONID  
- Инициализация или использовать `uCodeLocationId` поле.  
+ Инициализация и использование `uCodeLocationId` поля.  
   
  DSF_POSITION  
- Инициализация или использовать `posBeg` и `posEnd` поля.  
+ Инициализация и использование `posBeg` и `posEnd` поля.  
   
  DSF_DOCUMENTURL  
- Инициализация или использовать `bstrDocumentUrl` поле.  
+ Инициализация и использование `bstrDocumentUrl` поля.  
   
  DSF_BYTEOFFSET  
- Инициализация или использовать `dwByteOffset` поле.  
+ Инициализация и использование `dwByteOffset` поля.  
   
  DSF_FLAGS  
- Инициализация или использовать `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) поля.  
+ Инициализация и использование `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) поля.  
   
  DSF_OPERANDS_SYMBOLS  
- Включить имена символов в `bstrOperands` поле.  
+ Включить имена символов в `bstrOperands` поля.  
   
  DSF_ALL  
  Указывает все поля для потока Дизассемблированный код.  
   
 ## <a name="remarks"></a>Примечания  
- Переданное в качестве параметра для [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод, чтобы указать, какие поля [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры должны быть инициализированы.  
+ Переданный в качестве параметра для [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод, чтобы указать, какие поля [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры должны быть инициализированы.  
   
- Используется для `dwFields` членом `DisassemblyData` структуры указывает, какие поля используются и допустимым при возврате структуры.  
+ Используется для `dwFields` членом `DisassemblyData` структура указывает, какие поля используются и допустимым при возвращении структуры.  
   
- Эти значения могут объединяться с помощью битового оператора `OR`.  
+ Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

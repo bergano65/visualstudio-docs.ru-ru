@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Документы Microsoft
+title: IDebugProcess3::DisableENC | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2da464c82332f6fc4f9bcd57ee8197e111e9fa0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc769e7386777dbf59dadbbe93b53bc9cac01ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875870"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Этот метод явно отключает Изменить и продолжить по этому процессу (и все программы содержит). Всегда должны возвращать поставщика пользовательских порта `E_NOTIMPL`.  
+Этот метод явно отключает Изменить и продолжить об этом процессе (и все программы, он содержит). Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,13 +43,13 @@ HRESULT DisableENC(
  [in] Значение из [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 > [!NOTE]
->  Всегда должны возвращать поставщика пользовательских порта `E_NOTIMPL`.  
+>  Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Примечания  
- Один раз изменить и продолжить отключена для процесса, его можно снова включить только путем перезапуска процесса.  
+ Один раз изменить и продолжить отключен для процесса, его можно снова включить только путем перезапуска процесса.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

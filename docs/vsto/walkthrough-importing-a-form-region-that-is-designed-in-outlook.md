@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1e3ae3a77edd39bed48ac4a5a92cce2e232c589
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903521"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Пошаговое руководство: Импорт области формы, разработанной в Outlook
   В этом пошаговом руководстве демонстрируется создание области формы в Microsoft Office Outlook, а также ее импорт в проект надстройки Outlook VSTO с помощью мастера **Создать область формы** . Создание области формы в Outlook позволяет добавить собственные элементы управления Outlook в область формы, связанную с данными Outlook. После импорта области формы можно обрабатывать события каждого элемента управления.  
@@ -30,13 +30,13 @@ ms.locfileid: "35674901"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   создание области формы с помощью конструктора областей формы Outlook;  
+- создание области формы с помощью конструктора областей формы Outlook;  
   
--   импорт области формы в проект надстройки Outlook VSTO;  
+- импорт области формы в проект надстройки Outlook VSTO;  
   
--   обработка событий элементов управления в области формы.  
+- обработка событий элементов управления в области формы.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -142,7 +142,7 @@ ms.locfileid: "35674901"
   
 3.  На странице **Выберите способ создания области формы** нажмите **Импортировать файл хранилища форм Outlook (.ofs)**, а затем кнопку **Обзор**.  
   
-4.  В **существующие расположение файлов области формы Outlook** диалоговое окно, перейдите к расположению *TaskFormRegion.ofs*выберите **TaskFormRegion.ofs**, нажмите кнопку **Откройте**, а затем нажмите кнопку **Далее**.  
+4.  В диалоговом окне **Расположение существующих файлов области формы Outlook** найдите размещение файла *TaskFormRegion.ofs*, выберите файл **TaskFormRegion.ofs**, нажмите кнопку **Открыть**, а затем кнопку **Далее**.  
   
 5.  На странице **Выберите тип области формы, которую следует создать** выберите **Заменить все**и нажмите кнопку **Далее**.  
   
@@ -155,53 +155,53 @@ ms.locfileid: "35674901"
      Объект *файл TaskFormRegion.cs* или *TaskFormRegion.vb* файл добавляется в проект.  
   
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>Обработка событий элементов управления в области формы  
- Теперь, когда у вас есть область формы в проект, можно добавить код, который обрабатывает `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` событий кнопки, которую вы добавили в область формы в Outlook.  
+ После импорта области формы в проект можно добавить код, который обрабатывает событие `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` кнопки, добавленной в область формы в Outlook.  
   
  Кроме того, можно добавить в событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> код, который обновляет элементы управления в области формы при ее появлении.  
   
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Обработка событий элементов управления в области формы  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши *файл TaskFormRegion.cs* или *TaskFormRegion.vb*, а затем нажмите кнопку **Просмотр кода**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши *файл TaskFormRegion.cs* или *TaskFormRegion.vb*, а затем нажмите кнопку **Просмотр кода**.  
   
-     *Файл TaskFormRegion.cs* или *TaskFormRegion.vb* откроется в редакторе кода.  
+    *Файл TaskFormRegion.cs* или *TaskFormRegion.vb* откроется в редакторе кода.  
   
-2.  Добавьте следующий код в класс `TaskFormRegion` . Этот код заполняет поле со списком в области формы строкой темы каждой задачи из папки задач Outlook.  
+2. Добавьте следующий код в класс `TaskFormRegion` . Этот код заполняет поле со списком в области формы строкой темы каждой задачи из папки задач Outlook.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3.  Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:  
+3. Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:  
   
-    -   Находит `Microsoft.Office.Interop.Outlook.TaskItem` в папке "задачи" путем вызова `FindTaskBySubjectName` вспомогательный метод и передачи темы необходимой задачи. вспомогательный метод `FindTaskBySubjectName` будет добавлен позже;  
+   - находит объект `Microsoft.Office.Interop.Outlook.TaskItem` в папке "Задачи" путем вызова вспомогательного метода `FindTaskBySubjectName` и передачи темы необходимой задачи; вспомогательный метод `FindTaskBySubjectName` будет добавлен позже;  
   
-    -   Добавляет `Microsoft.Office.Interop.Outlook.TaskItem.Subject` и `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` значения в список зависимых задач.  
+   - добавляет значения `Microsoft.Office.Interop.Outlook.TaskItem.Subject` и `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` в список зависимых задач;  
   
-    -   добавляет тему задачи в скрытое поле области формы. Значения в скрытом поле сохраняются как часть элемента Outlook.  
+   - добавляет тему задачи в скрытое поле области формы. Значения в скрытом поле сохраняются как часть элемента Outlook.  
   
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4.  Добавьте следующий код в класс `TaskFormRegion` . В этом коде представлен вспомогательный метод `FindTaskBySubjectName` , описанный в предыдущем шаге.  
+4. Добавьте следующий код в класс `TaskFormRegion` . В этом коде представлен вспомогательный метод `FindTaskBySubjectName` , описанный в предыдущем шаге.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
+    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
+    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5.  Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:  
+5. Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:  
   
-    -   обновляет список в области формы, используя текущее состояние завершения каждой зависимой задачи;  
+   - обновляет список в области формы, используя текущее состояние завершения каждой зависимой задачи;  
   
-    -   выполняет синтаксический анализ скрытого текстового поля, чтобы получить тему каждой зависимой задачи; Находит каждый `Microsoft.Office.Interop.Outlook.TaskItem` в *задачи* папку путем вызова `FindTaskBySubjectName` вспомогательный метод и передачи темы каждой задачи.  
+   - выполняет синтаксический анализ скрытого текстового поля, чтобы получить тему каждой зависимой задачи; Находит каждый `Microsoft.Office.Interop.Outlook.TaskItem` в *задачи* папку путем вызова `FindTaskBySubjectName` вспомогательный метод и передачи темы каждой задачи.  
   
-    -   Добавляет `Microsoft.Office.Interop.Outlook.TaskItem.Subject` и `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` значения в список зависимых задач.  
+   - добавляет значения `Microsoft.Office.Interop.Outlook.TaskItem.Subject` и `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` в список зависимых задач.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
   
-6.  Замените обработчик событий `TaskFormRegion_FormRegionShowing` следующим кодом. Этот код выполняет следующие задачи:  
+6. Замените обработчик событий `TaskFormRegion_FormRegionShowing` следующим кодом. Этот код выполняет следующие задачи:  
   
-    -   заполняет поле со списком области формы темами задач при появлении области формы;  
+   - заполняет поле со списком области формы темами задач при появлении области формы;  
   
-    -   вызывает вспомогательный метод `RefreshTaskListBox` при появлении области формы. В этом случае отображаются зависимые задачи, добавленные в список во время предыдущего открытия элемента.  
+   - вызывает вспомогательный метод `RefreshTaskListBox` при появлении области формы. В этом случае отображаются зависимые задачи, добавленные в список во время предыдущего открытия элемента.  
   
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
@@ -231,7 +231,7 @@ ms.locfileid: "35674901"
   
 8.  В поле со списком **Выберите задачу, которую нужно добавить в список зависимых задач** выберите пункт **Зависимая задача**, а затем нажмите кнопку **Добавить зависимую задачу**.  
   
-     В списке**Эта задача зависит от следующих задач** появится пункт **0% завершено — Зависимая задача** . Этот пример демонстрирует, что вы успешно обработано `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` события кнопки.  
+     В списке**Эта задача зависит от следующих задач** появится пункт **0% завершено — Зависимая задача** . Это означает, что обработка события `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` кнопки успешно выполнена.  
   
 9. Сохраните и закройте элемент **Основная задача** .  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Документы Microsoft
+title: IDebugCoreServer2::GetMachineUtilities_V7 | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f374d83af705d8e9376d8767c822af82ed4d4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 265c5b414c53fb6dfe43f63c1016204b8ff02c81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908669"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Этот метод возвращает программы компьютера для сервера.  
+Этот метод возвращает машины служебные программы для сервера.  
   
 > [!NOTE]
->  Этот метод устарел: не используйте ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] всегда возвращает `E_NOTIMPL` при вызове этого метода). Исторически сложилось так удалена.  
+>  Этот метод является устаревшим: не используйте ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] всегда возвращает `E_NOTIMPL` при вызове этого метода). Он сохраняется по историческим причинам.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetMachineUtilities_V7(
   
 #### <a name="parameters"></a>Параметры  
  `ppUtil`  
- [out] Возвращает `IDebugMDMUtil2_V7` интерфейс, представляющий сведения о машине служебные программы.  
+ [out] Возвращает `IDebugMDMUtil2_V7` интерфейс, который представляет сведения о машине служебные программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Всегда возвращает `E_NOTIMPL`, указывающее, что метод не реализован.  

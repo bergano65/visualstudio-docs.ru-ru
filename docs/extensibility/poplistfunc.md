@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600ad01047a977050c474c9af139e0d279fe8b5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 061f7b4d1c1fb9ddeb76444f058a95fe30abe47c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920876"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Этот обратный вызов передается [SccPopulateList](../extensibility/sccpopulatelist-function.md) Интегрированной средой разработки и используется подключаемый модуль системы управления версиями, чтобы обновить список файлов или каталогов (также указан для `SccPopulateList` функции).  
@@ -54,7 +54,7 @@ typedef BOOL (*POPLISTFUNC) (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`TRUE`|Подключаемый модуль можно продолжить вызов этой функции.|  
 |`FALSE`|Возникла проблема со стороны интегрированной среды разработки (например, из-за нехватки памяти). Подключаемый модуль должен остановить операцию.|  

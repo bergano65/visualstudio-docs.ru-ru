@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898646"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: попробуйте передать базовые типы в качестве параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -48,13 +49,13 @@ ms.locfileid: "49220159"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Его можно безопасно подавить предупреждение из этого правила
 
--   Если метод требует конкретные функции, предоставляемые производным типом
+- Если метод требует конкретные функции, предоставляемые производным типом
 
-     \- или -
+   \- или -
 
--   для принудительного применения, что только производный тип, или производного типа, передается в метод.
+- для принудительного применения, что только производный тип, или производного типа, передается в метод.
 
- В этом случае код будет более устойчивым из-за строгая проверка типов, предоставляемые компилятором и средой выполнения.
+  В этом случае код будет более устойчивым из-за строгая проверка типов, предоставляемые компилятором и средой выполнения.
 
 ## <a name="example"></a>Пример
  В следующем примере показан метод `ManipulateFileStream`, который может использоваться только с <xref:System.IO.FileStream> объект, который нарушает это правило. Второй метод `ManipulateAnyStream`, соответствующий этому правилу, заменив <xref:System.IO.FileStream> параметра с помощью <xref:System.IO.Stream>.
