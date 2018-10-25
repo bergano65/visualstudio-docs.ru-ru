@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907148"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ ms.locfileid: "49298952"
   
  После применения обновления улучшатся следующие функции средства закодированного теста пользовательского интерфейса [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 для Windows 8.  
   
--   Можно запустить закодированный тест пользовательского интерфейса для элементов управления Windows Presentation Foundation (WPF) на основе платформы Microsoft .NET Framework 4.5 на компьютере, на котором запущена Windows 8.  
+- Можно запустить закодированный тест пользовательского интерфейса для элементов управления Windows Presentation Foundation (WPF) на основе платформы Microsoft .NET Framework 4.5 на компьютере, на котором запущена Windows 8.  
   
--   Можно выполнить закодированный тест пользовательского интерфейса для 64-разрядного (x64) Internet Explorer 10 на компьютере, на котором запущена Windows 8.  
+- Можно выполнить закодированный тест пользовательского интерфейса для 64-разрядного (x64) Internet Explorer 10 на компьютере, на котором запущена Windows 8.  
   
- Обновление также содержит исправления для следующих проблем:  
+  Обновление также содержит исправления для следующих проблем:  
   
--   **Покрытия кода:** неспособность открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Покрытия кода:** неспособность открыть файл покрытия кода (.coverage), созданный Visual Studio 2012 в [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Затруднительные артефакты теста:** в вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Затруднительные артефакты теста:** в вашей команде есть артефакт теста, присвоенный недопустимому пользователю в Team Foundation Server (TFS) 2010. Например, пользователь покинул компанию, но по-прежнему обладает тестовым случаем, присвоенным ему. Обновление Team Foundation Server 2010 до Team Foundation Server 2012. Вы используете [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 для подключения к обновленным серверам Team Foundation Server. Вам не удается присвоить артефакт теста какому-либо пользователю Team Foundation Server с помощью [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).  
+- **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>См. также  
  [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915676"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Практическое: предоставить асинхронной службы Visual Studio
 Если вы хотите получить службы без блокировки потока пользовательского интерфейса, необходимо создать асинхронный и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>, добавьте службу с помощью специальных асинхронных методов асинхронной пакета.
@@ -104,11 +104,11 @@ ms.locfileid: "39639264"
 ## <a name="register-a-service"></a>Регистрация службы  
  Чтобы зарегистрировать службу, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> к пакету, который предоставляет службу. Различные регистрация синхронной службы, необходимо убедитесь, что пакет и служба поддерживает асинхронной загрузки:
   
--   Необходимо добавить **AllowsBackgroundLoading = true** поле <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> чтобы пакета можно асинхронно инициализировать Дополнительные сведения о PackageRegistrationAttribute, см. в разделе [регистрации и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+- Необходимо добавить **AllowsBackgroundLoading = true** поле <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> чтобы пакета можно асинхронно инициализировать Дополнительные сведения о PackageRegistrationAttribute, см. в разделе [регистрации и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   Необходимо добавить **IsAsyncQueryable = true** поле <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> чтобы экземпляр службы, может инициализироваться в асинхронном режиме.
+- Необходимо добавить **IsAsyncQueryable = true** поле <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> чтобы экземпляр службы, может инициализироваться в асинхронном режиме.
 
- Ниже приведен пример `AsyncPackage` с регистрацию асинхронная служба:
+  Ниже приведен пример `AsyncPackage` с регистрацию асинхронная служба:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

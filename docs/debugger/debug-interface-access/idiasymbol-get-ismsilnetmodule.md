@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMSILNetmodule | Документы Microsoft
+title: IDiaSymbol::get_isMSILNetmodule | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c902252e250c78e5712f5e91b8cc5404851cc6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904693"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-Возвращает флаг, указывающий, является ли модуль .netmodule (промежуточного языка Майкрософт (MSIL) модуль, который содержит только метаданные и нет машинных символов).  
+Получает флаг, указывающий, является ли модуль .netmodule (Microsoft Intermediate Language (MSIL) модуль, содержащий только метаданные и не собственных символов).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT get_isMSILNetmodule(
  [out] Возвращает `TRUE` Если модуль MSIL; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagCompilandDetails` символ типа (см. [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+ Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Требования  
   

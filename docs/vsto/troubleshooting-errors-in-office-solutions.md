@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917106"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Этот код вызывает следующие ошибки компиляции.  
   
--   Visual Basic: «класс «DocumentClass» не допускается ссылка при его сборка связана с использованием режима No-PIA.»  
+- Visual Basic: «класс «DocumentClass» не допускается ссылка при его сборка связана с использованием режима No-PIA.»  
   
--   Visual C#: «тип взаимодействия, «Microsoft.Office.Interop.Word.DocumentClass» не может быть внедрен. Используйте подходящий интерфейс".  
+- Visual C#: «тип взаимодействия, «Microsoft.Office.Interop.Word.DocumentClass» не может быть внедрен. Используйте подходящий интерфейс".  
   
- Чтобы устранить эту ошибку, измените код так, чтобы он ссылался на соответствующий интерфейс. Например, вместо того чтобы ссылаться на объект <xref:Microsoft.Office.Interop.Word.DocumentClass>, обращайтесь к экземпляру интерфейса <xref:Microsoft.Office.Interop.Word.Document>.  
+  Чтобы устранить эту ошибку, измените код так, чтобы он ссылался на соответствующий интерфейс. Например, вместо того чтобы ссылаться на объект <xref:Microsoft.Office.Interop.Word.DocumentClass>, обращайтесь к экземпляру интерфейса <xref:Microsoft.Office.Interop.Word.Document>.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

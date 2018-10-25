@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenPDB | Документы Microsoft
+title: IDiaLoadCallback::NotifyOpenPDB | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02069369e92862fffd90fcf4fe49c2d7e064f64e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1367d444a498c1c066cbdfb38ee4f2cec12c9a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915325"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
-Вызывается при открытии кандидата PDB-файл.  
+Вызывается, когда кандидат PDB-файл открыт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT NotifyOpenPDB (
   
 #### <a name="parameters"></a>Параметры  
  `pdbPath`  
- [in] Полный путь к PDB-файлу.  
+ [in] Полный путь к PDB-файл.  
   
  `resultCode`  
- [in] Код, который указывает на успешное завершение (`S_OK`) или сбоя загрузки применительно к этому файлу.  
+ [in] Код, который указывает на успешное завершение (`S_OK`) или Ошибка загрузки применительно к этому файлу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Код возврата, обычно учитывается.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Код возврата, обычно учитывается.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

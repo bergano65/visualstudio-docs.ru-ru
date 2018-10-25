@@ -1,5 +1,5 @@
 ---
-title: IDebugModOpt::GetModOpts | Документы Microsoft
+title: IDebugModOpt::GetModOpts | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7cf2239b77314646df8285d1a89953f9401fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db00126b72399610e0e270c1cd0f736171f52fce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903508"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-Получает список необязательных модификаторов.  
+Возвращает список необязательных модификаторов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,10 +50,10 @@ int GetModOpts(
  [out] Возвращает массив, содержащий параметры.  
   
  `pceltFetched`  
- [in, out] Число элементов, возвращаемых в `rgelt` массива.  
+ [in, out] Количество элементов, возвращаемых в `rgelt` массива.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

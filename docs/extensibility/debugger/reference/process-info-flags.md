@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Документы Microsoft
+title: PROCESS_INFO_FLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917028"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
-Описывает или задание свойств процесса.
+Описывающие или определяющие свойств процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -55,16 +55,16 @@ PIFLAG_DEBUGGER_ATTACHED
 Указывает, что отладка процесса с помощью отладчика. Возможно, она [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика, или он может быть некоторые другие отладчика, например, WinDbg.
 
 PIFLAG_PROCESS_STOPPED  
-Указывает, что процесс остановлен. Только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+Указывает, что процесс будет остановлен. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
 
 PIFLAG_PROCESS_RUNNING  
-Указывает, что процесс выполняется. Только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+Указывает, что процесс выполняется. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
 
 ## <a name="remarks"></a>Примечания
 
 Используется для `Flags` членом [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
 
-Эти флаги могут объединяться с битовой `OR`.
+Эти флаги могут быть объединены с побитовым объектом `OR`.
 
 ## <a name="requirements"></a>Требования
 

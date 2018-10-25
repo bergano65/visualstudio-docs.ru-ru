@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Документы Microsoft
+title: IDebugProperty3::DestroyObjectID | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db5ef80a1734aedb819c109aa4c27c40224886e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f776feafe86180c60df7cc69a2c4afb6a3070012
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917951"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Уничтожает уникальный идентификатор, связанный с этим свойством, указывающее, что вызывающий объект больше не прослушивает для идентификации этого свойства уникально от всех других свойств.  
+Уничтожает уникальный идентификатор, связанный с этим свойством, указывающее, что вызывающий объект больше не волнует для определения этого свойства уникально от всех других свойств.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,12 +38,12 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Если отладчик не требуется для поддержки уникальных идентификаторов для свойства (так как он уже отслеживает их однозначно внутренне), то он может просто возвращать `E_NOTIMPL` для этого метода.  
+ Если модуль отладки не требуется для поддержки уникальных идентификаторов для свойства (так как он уже отслеживает их однозначно внутренне), а затем может просто вернуть `E_NOTIMPL` для этого метода.  
   
- Уникальные идентификаторы создаются с помощью вызова [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) метод, когда вызывающий объект хочет убедитесь, что это свойство однозначно идентифицируется среди других свойств.  
+ Уникальные идентификаторы, созданные с помощью вызова [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) метод, когда вызывающий объект хочет убедиться, что это свойство однозначно идентифицируется среди всех остальных свойств.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

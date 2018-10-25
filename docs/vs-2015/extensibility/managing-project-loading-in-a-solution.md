@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914261"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Обнаружение и управление решением и загрузкой проекта  
  Чтобы обнаружить состояние загрузки проектов и решений, вызывается <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> со следующими значениями:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если решение и все его проекты загружаются, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если решение и все его проекты загружаются, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в настоящее время загружаются в фоновом режиме, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в настоящее время загружаются в фоновом режиме, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в настоящее время загружаются синхронно в результате пользовательской команды или других явную загрузку, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в настоящее время загружаются синхронно в результате пользовательской команды или других явную загрузку, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` возвращает `true` если оно в данный момент закрывается, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` возвращает `true` если оно в данный момент закрывается, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` возвращает `true` Если решение сейчас открыт, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` возвращает `true` Если решение сейчас открыт, в противном случае `false`.  
   
- Также можно обеспечить загрузку проектов и решений (независимо от того, каковы приоритеты загрузки проекта), путем вызова одного из следующих методов:  
+  Также можно обеспечить загрузку проектов и решений (независимо от того, каковы приоритеты загрузки проекта), путем вызова одного из следующих методов:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: этот метод приводит проектов в решении для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: этот метод приводит проектов в решении для загрузки перед возвращением метода.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: этот метод приводит проектов в `guidProject` для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: этот метод приводит проектов в `guidProject` для загрузки перед возвращением метода.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: этот метод приводит к проекту в `guidProjectID` для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: этот метод приводит к проекту в `guidProjectID` для загрузки перед возвращением метода.  
   
 > [!NOTE]
 >  . По умолчанию загружаются только проекты, которые имеют по требованию и приоритеты загрузки в фоновом режиме загружаются, но если <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> флаг передается в метод, за исключением тех, которые помечены для загрузки явно будут загружены все проекты.

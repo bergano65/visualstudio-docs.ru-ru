@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906927"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура VSPackage (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49305036"
   
  Семантика VSPackage включают:  
   
--   Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)  
+- Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)  
   
--   Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)  
+- Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)  
   
--   Регистрация пакета VSPackage с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Регистрация пакета VSPackage с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Пакет VSPackage системы управления версиями должны взаимодействовать с этими других [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] сущностей:  
+  Пакет VSPackage системы управления версиями должны взаимодействовать с этими других [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] сущностей:  
   
--   Проекты  
+- Проекты  
   
--   Редакторы  
+- Редакторы  
   
--   Решения  
+- Решения  
   
--   Windows  
+- Windows  
   
--   В таблице выполняющихся документов  
+- В таблице выполняющихся документов  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Службы среды Visual Studio, которые могут включать  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_access | Документы Microsoft
+title: IDiaSymbol::get_access | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae8a1d805e548ef2dfb4c30087ef4d57625894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904080"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 Получает модификатор доступа члена класса.  
@@ -34,10 +34,10 @@ HRESULT get_access (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает значение из [CV_access_e-перечисление](../../debugger/debug-interface-access/cv-access-e.md) перечисления, которое указывает модификатор доступа члена класса.  
+ [out] Возвращает значение из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) перечисление, указывающее модификатор доступа члена класса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
@@ -47,7 +47,7 @@ HRESULT get_access (
 |Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для v7.0|  
+|Версия:|ПАКЕТ SDK для версии 7.0|  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

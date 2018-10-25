@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_customCallingConvention | Документы Microsoft
+title: IDiaSymbol::get_customCallingConvention | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3d72e8561250ee49a19eec0974db0eeeba5660
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65475255af9607462bee4a76a58319481f42e56a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903105"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-Возвращает флаг, указывающий, является ли функция пользовательские соглашения о вызовах.  
+Получает флаг, указывающий, имеет ли функция пользовательское соглашение об именовании.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT get_customCallingConvention(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если функция содержит пользовательские соглашения о вызовах; в противном случае возвращает `FALSE`, функция имеет известных соглашение о вызовах.  
+ [out] Возвращает `TRUE` Если функция имеет пользовательское соглашение об именовании; в противном случае возвращает `FALSE`, функция имеет известных соглашение о вызовах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  

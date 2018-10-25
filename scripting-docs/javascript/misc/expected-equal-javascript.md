@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; = &#39; (JavaScript) | Документы Microsoft
+title: Ожидается &#39;=&#39; (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910001"
 ---
-# <a name="expected-3939-javascript"></a>Ожидается &#39; = &#39; (JavaScript)
-Была предпринята попытка создания переменной для использования с операторами условной компиляции, но не поместил знак равенства между переменной и значение, которое вы хотите назначить в него.  
+# <a name="expected-3939-javascript"></a>Ожидается &#39;=&#39; (JavaScript)
+Предпринята попытка создать переменную для использования с операторами условной компиляции, но не поместил знак равенства между переменной и значения, которое вы хотите назначить для него.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   

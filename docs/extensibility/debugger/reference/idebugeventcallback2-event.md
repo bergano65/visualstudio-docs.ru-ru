@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Документы Microsoft
+title: IDebugEventCallback2::Event | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea52b8be040df50da1585165599c4fdea635557
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc61f6a8b2a8a069d0fb921e4dbfe631088b2925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913323"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Отправляет уведомление о событиях отладки.  
@@ -56,13 +56,13 @@ int Event(
  [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , представляющий модуль отладки (DE), который отправляет это событие. Для заполнения этого параметра требуется DE.  
   
  `pProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, который представляет собой процесс, в котором происходит событие. Этот параметр будет заполнено диспетчером сеанса отладки (SDM). DE всегда передает значение null для этого параметра.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс, в котором происходит событие. Этот параметр заполняется диспетчером сеанса отладки (SDM). DE всегда передает значение null для этого параметра.  
   
  `pProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором возникает это событие. Для большинства событий этот параметр не является значение null.  
+ [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором происходит это событие. Для большинства событий этот параметр не имеет значение null.  
   
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором возникает это событие. Для события остановки, этот параметр не может быть значение null, кадр стека, полученное из этого параметра.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит это событие. Для события остановки, этот параметр не может иметь значение null, кадр стека при получении от этого параметра.  
   
  `pEvent`  
  [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , представляющий событие отладки.  
@@ -74,12 +74,12 @@ int Event(
  [in] Сочетание флагов из [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- При вызове этого метода `dwAttrib` параметра должно соответствовать значение, возвращенное [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) переданный метод, как он вызван для объекта события `pEvent` параметра.  
+ При вызове этого метода `dwAttrib` должен соответствовать значение, возвращаемое из [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) переданный метода, вызываемого на объекте события `pEvent` параметра.  
   
- Все события отладки учитываются асинхронно, независимо от того, событие сам асинхронной или нет. Когда DE вызывает этот метод, возвращаемое значение не определить, было ли обработано событие, только ли событие было получено. На самом деле в большинстве случаев это событие не была обработана при возвращении этим методом.  
+ Все события отладки учитываются асинхронно, независимо от того, ли событие сам является асинхронным, или нет. При использовании DE вызывает этот метод, возвращаемое значение указывает ли событие обработано, только ли получения события. На самом деле в большинстве случаев это событие не была обработана при возвращении данного метода.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

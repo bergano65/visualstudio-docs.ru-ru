@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::execute | Документы Microsoft
+title: IDiaFrameData::execute | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0645d2364712769a6b4f18ef14fbbcb503a51888
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918360"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-Выполняет развертывание стека и возвращает результаты в интерфейсе обход кадра стека.  
+Выполняет развертывание стека и возвращает результаты в интерфейсе стека кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT execute (
  [in] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект, содержащий состояние регистров кадра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|E_DIA_INPROLOG|Не удается выполнить кадра стека в кода пролога.|  
-|E_DIA_SYNTAX|Синтаксический анализ произошла ошибка в программе кадра.|  
-|E_DIA_FRAME_ACCESS|Не удается регистры доступа или памяти.|  
+|E_DIA_INPROLOG|Не удается выполнить кадр стека в код пролога.|  
+|E_DIA_SYNTAX|Выполните синтаксический анализ ошибка в программе кадра.|  
+|E_DIA_FRAME_ACCESS|Не удалось регистры доступа или памяти.|  
 |E_DIA_VALUE|Ошибка при вычислении значения (например, деление на ноль).|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается во время отладки для очистки стека. [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект реализован клиентским приложением для получения обновлений в регистры и предоставлять методы, используемые `execute` метод.  
+ Этот метод вызывается во время отладки для раскручивания стека. [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект реализуется клиентским приложением для получения обновлений в регистры и сообщать о способах, используемых `execute` метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

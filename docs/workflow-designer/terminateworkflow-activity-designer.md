@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктора операций TerminateWorkflow
+title: Конструктор рабочих процессов - конструктор действия TerminateWorkflow
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfd7438a14f0bcbedcf5cdc5add78020604c355
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f11cbf6ac5a0b19022794aaafd59afe96f51273b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908058"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Конструктор действия TerminateWorkflow
 
@@ -29,16 +29,16 @@ ms.locfileid: "31975563"
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Использование конструктора операций TerminateWorkflow
 
-**TerminateWorkflow** конструктора действий можно найти в **среды выполнения** категории **элементов**, который нажав **элементов** вкладка (либо выберите **элементов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+**TerminateWorkflow** конструктора действий можно найти в **среды выполнения** категории **элементов**, который нажав **панелиэлементов** вкладка (Кроме того, выберите **элементов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
-**TerminateWorkflow** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.TerminateWorkflow> действия по умолчанию **DisplayName** для TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **TerminateWorkflow** конструктора или в **DisplayName** поле сетки свойств.
+**TerminateWorkflow** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.TerminateWorkflow> действие по умолчанию **DisplayName** для TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **TerminateWorkflow** конструктора действий или в **DisplayName** поле таблицы свойств.
 
 ### <a name="the-terminateworkflow-properties"></a>Свойства TerminateWorkflow
 
 В следующей таблице показаны свойства <xref:System.Activities.Statements.TerminateWorkflow> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые из них можно изменить на поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.TerminateWorkflow>. Значение по умолчанию - TerminateWorkflow. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Исключение, которое будет создано при прерывании рабочего процесса. Задайте это свойство в таблице свойств.|
 |<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Причина, которая объясняет причину прерывания рабочего процесса. Задайте это свойство в таблице свойств.|
@@ -46,4 +46,4 @@ ms.locfileid: "31975563"
 ## <a name="see-also"></a>См. также
 
 - [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
-- [Сохранение](../workflow-designer/persist-activity-designer.md)
+- [Persist](../workflow-designer/persist-activity-designer.md)

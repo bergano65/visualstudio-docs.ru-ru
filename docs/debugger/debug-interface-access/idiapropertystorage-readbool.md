@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBOOL | Документы Microsoft
+title: IDiaPropertyStorage::ReadBOOL | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7ec4afc044af9d63fc65826e473d9036bf9ca3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3df4ce44c0cf0b3b09442dc695f73c415035e84a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904184"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Считывает `BOOL` значений в наборе свойств.  
+Считывает `BOOL` значения в наборе свойств.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,10 +41,10 @@ HRESULT ReadBOOL (
  [out] Возвращает значение свойства.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.  
   
 ## <a name="remarks"></a>Примечания  
- Согласованные результаты интерпретации `BOOL` чтобы для ненулевых значений являются `TRUE` и ноль является `FALSE`.  
+ Согласованные результаты интерпретировать `BOOL` значение таким образом, ненулевыми значениями `TRUE` а нулевое — `FALSE`.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

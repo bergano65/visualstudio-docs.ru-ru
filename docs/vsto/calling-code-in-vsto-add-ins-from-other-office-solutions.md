@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5403b1945739c39392ba31006ad932a7eccda4ff
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904652"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Вызов кода в надстройках VSTO из других решений Office
   Объект в надстройке VSTO можно предоставить другим решениям, включая другие решения Microsoft Office. Это полезно, если надстройка VSTO предоставляет службу, доступ к которой нужно предоставить другим решениям. Например если у вас есть надстройки VSTO для Microsoft Office Excel, которая выполняет вычисление финансовых данных из веб-службы, другие решения могут выполнять эти вычисления, вызывая надстройки VSTO для Excel во время выполнения.  
@@ -59,28 +59,28 @@ ms.locfileid: "39511555"
 2.  Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` . Верните экземпляр класса, который требуется предоставлять другим решениям.  
   
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Определите класс, который вы хотите предоставить другим решениям  
- Как минимум, класс, которому требуется предоставить доступ должен быть открытым, иметь <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут **true**, и он должен предоставлять [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) интерфейс.  
+ Как минимум, предоставляемый класс должен быть общим, для атрибута этого класса <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть задано значение **true**и он должен предоставлять интерфейс [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .  
   
- Рекомендуемый способ предоставления [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) интерфейс является выполните следующие действия:  
+ Предоставление интерфейса [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) рекомендуется выполнять следующим образом.  
   
-1.  Определите интерфейс, объявляющий члены, которые требуется предоставить другим решениям. Этот интерфейс можно определить в проекте надстройки VSTO. Однако может потребоваться определить его в отдельном проекте библиотеки класса, если класс потребуется предоставлять решениям, не основанным на VBA. Это позволит решениям, вызывающим вашу надстройку VSTO, ссылаться на интерфейс, не ссылаясь на проект надстройки VSTO.  
+1. Определите интерфейс, объявляющий члены, которые требуется предоставить другим решениям. Этот интерфейс можно определить в проекте надстройки VSTO. Однако может потребоваться определить его в отдельном проекте библиотеки класса, если класс потребуется предоставлять решениям, не основанным на VBA. Это позволит решениям, вызывающим вашу надстройку VSTO, ссылаться на интерфейс, не ссылаясь на проект надстройки VSTO.  
   
-2.  Примените атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> к этому интерфейсу и задайте для него значение **true**.  
+2. Примените атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> к этому интерфейсу и задайте для него значение **true**.  
   
-3.  Измените класс для реализации этого интерфейса.  
+3. Измените класс для реализации этого интерфейса.  
   
-4.  Применить <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> к классу атрибут и присвоить этому атрибуту значение **None** значение <xref:System.Runtime.InteropServices.ClassInterfaceType> перечисления.  
+4. Применить <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> к классу атрибут и присвоить этому атрибуту значение **None** значение <xref:System.Runtime.InteropServices.ClassInterfaceType> перечисления.  
   
-5.  Если вы хотите предоставить этот класс клиентам вне процесса, может также потребоваться сделайте следующее:  
+5. Если вы хотите предоставить этот класс клиентам вне процесса, может также потребоваться сделайте следующее:  
   
-    -   Создайте класс, производный от <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Дополнительные сведения см. в разделе [предоставлять классы клиентам вне процесса](#outofproc).  
+   -   Создайте класс, производный от <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Дополнительные сведения см. в разделе [предоставлять классы клиентам вне процесса](#outofproc).  
   
-    -   Задайте свойство **Регистрация для COM-взаимодействия** в проекте, в которым вы определили интерфейс. Это свойство необходимо, только в том случае, если вы хотите разрешить клиентам использовать раннее связывание для вызова надстройки VSTO.  
+   -   Задайте свойство **Регистрация для COM-взаимодействия** в проекте, в которым вы определили интерфейс. Это свойство необходимо, только в том случае, если вы хотите разрешить клиентам использовать раннее связывание для вызова надстройки VSTO.  
   
- Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
 ### <a name="expose-classes-to-vba"></a>Предоставление классов VBA  
  Если вы выполните приведенные выше действия, код VBA сможет вызывать только те методы, которые будут объявлены в интерфейсе. Код VBA не может вызывать остальные методы в классе, включая методы, получаемые классом из базовых классов, таких как <xref:System.Object>.  
@@ -105,13 +105,13 @@ ms.locfileid: "39511555"
 ## <a name="access-objects-from-other-solutions"></a>Доступ к объектам из других решений  
  Чтобы вызвать предоставляемый объект в вашей надстройке VSTO, выполните в клиентском решении указанные ниже действия.  
   
-1.  Получите объект <xref:Microsoft.Office.Core.COMAddIn>, представляющий предоставляемую надстройку VSTO. Клиенты могут получать доступ ко всем доступным надстройкам VSTO, используя свойство `Application.COMAddIns` в объектной модели ведущего приложения Office.  
+1. Получите объект <xref:Microsoft.Office.Core.COMAddIn>, представляющий предоставляемую надстройку VSTO. Клиенты могут получать доступ ко всем доступным надстройкам VSTO, используя свойство `Application.COMAddIns` в объектной модели ведущего приложения Office.  
   
-2.  Доступ к свойству COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> объекта. Это свойство возвращает предоставленный объект из надстройки VSTO.  
+2. Доступ к свойству COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> объекта. Это свойство возвращает предоставленный объект из надстройки VSTO.  
   
-3.  Вызовите члены предоставляемого объекта.  
+3. Вызовите члены предоставляемого объекта.  
   
- Способ использовать возвращаемое значение свойства COMAddIn.Object отличается для клиентов VBA и клиентов, не основанных на VBA. Для внепроцессных клиентов требуется дополнительный код, который позволит избежать возникновения состояния гонки.  
+   Способ использовать возвращаемое значение свойства COMAddIn.Object отличается для клиентов VBA и клиентов, не основанных на VBA. Для внепроцессных клиентов требуется дополнительный код, который позволит избежать возникновения состояния гонки.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Доступ к объектам из решений VBA  
  В следующем примере кода демонстрируется использование VBA для вызова метода, который предоставляется надстройкой VSTO. Этот макрос VBA вызывает метод с именем `ImportData` , определенный в надстройке VSTO, которая называется **ExcelImportData**. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
@@ -150,7 +150,7 @@ utilities.ImportData();
  [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
  [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isCTypes | Документы Microsoft
+title: IDiaSymbol::get_isCTypes | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27fc655497f4f8b8fdacb425a16dbe39de99a90a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17829a23ca50ba5c4638e3bb97e020ad99e42b0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916157"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
-Возвращает флаг, указывающий, содержит ли файл символов C типы.  
+Получает флаг, указывающий, содержит ли файл символов C типы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT get_isCTypes(
  [out] Возвращает `TRUE` Если файл символов содержит типы C; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagExe` символ типа (см. [Exe](../../debugger/debug-interface-access/exe.md)).  
+ Это свойство доступно из `SymTagExe` символ типа (см. в разделе [Exe](../../debugger/debug-interface-access/exe.md)).  
   
 ## <a name="requirements"></a>Требования  
   

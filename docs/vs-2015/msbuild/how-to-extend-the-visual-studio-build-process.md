@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899699"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Практическое руководство. Расширение процесса построения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ ms.locfileid: "49191637"
   
 #### <a name="to-override-a-predefined-target"></a>Переопределение предопределенного целевого объекта  
   
-1.  Выберите в Microsoft.Common.targets предварительно заданный целевой объект, который требуется переопределить. Приведенная ниже таблица содержит полный список целевых объектов, которые можно безопасно переопределить.  
+1. Выберите в Microsoft.Common.targets предварительно заданный целевой объект, который требуется переопределить. Приведенная ниже таблица содержит полный список целевых объектов, которые можно безопасно переопределить.  
   
-2.  Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Пример:  
+2. Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Пример:  
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  Выполните сборку файла проекта.  
+3. Выполните сборку файла проекта.  
   
- Следующая таблица показывает все целевые объекты в Microsoft.Common.targets, которые можно безопасно переопределить.  
+   Следующая таблица показывает все целевые объекты в Microsoft.Common.targets, которые можно безопасно переопределить.  
   
 |Целевое имя|Описание|  
 |-----------------|-----------------|  

@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898061"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Устранение неполадок SharePoint упаковки и развертывания
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "37119500"
 
  В следующей таблице показаны параметры для **Устранение конфликта развертывания** свойство.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |Автоматический|Обнаруживает и разрешает конфликты автоматически.|
 |Запрашивать|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|
@@ -59,13 +59,13 @@ ms.locfileid: "37119500"
 ## <a name="differences-between-f5-deployment"></a>Различия между развертываниями F5
  При использовании [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для развертывания проекта SharePoint на локальном сервере SharePoint с целью тестирования и отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выполняет некоторые дополнительные действия.
 
-1.  Сброс службы IIS во время выполнения развертывания.
+1. Сброс службы IIS во время выполнения развертывания.
 
-2.  Автоматическое назначение рабочих процессов.
+2. Автоматическое назначение рабочих процессов.
 
-3.  Задание в конструкторе пакетов порядка активации компонентов в соответствии с иерархией.
+3. Задание в конструкторе пакетов порядка активации компонентов в соответствии с иерархией.
 
- Можно добавить пользовательские действия по развертыванию дальнейших изменениях **F5** поведение. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Можно добавить пользовательские действия по развертыванию дальнейших изменениях **F5** поведение. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Задержка в отображении страницы SharePoint при развертывании визуальной веб-части
  Странице SharePoint требуется длительный промежуток времени для отображения при развертывании визуальной веб-части в папке Bin в [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] или [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. При изменении любых файлов каталога верхнего уровня [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], например, каталога Bin, происходит рекомпилирование всего веб-приложения. Это может привести к задержке рендеринга страницы SharePoint до 25 секунд.

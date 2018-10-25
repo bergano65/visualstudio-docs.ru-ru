@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumConstructors | Документы Microsoft
+title: IDebugClassField::EnumConstructors | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa525f50a0ffd18f136cfa23ae05a8e2ba193d0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a2824eff43103ee2f8c82fba6131325def0c8ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912727"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
-Создает перечислитель для конструкторов для этого класса.  
+Создает перечислитель для конструкторов для данного класса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,12 +49,12 @@ int EnumConstructors(
  [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список конструкторов. Возвращает значение null, если конструкторы отсутствуют.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если конструкторы отсутствуют. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если конструкторы отсутствуют. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Каждый элемент перечисления является [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) объект, описывающий метод конструктора.  
+ Каждый элемент перечисления является [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) объект, описывающий метод-конструктор.  
   
- Список конструкторы обычно не содержит конструкторы по умолчанию, предоставленные компилятором.  
+ Список конструкторов обычно не включает конструкторы по умолчанию, предоставленные с помощью компилятора.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
