@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6025a7f0eb472444ba92346cecf2bc4686bf2eef
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878808"
 ---
 # <a name="custom-colorable-items"></a>Настраиваемые цветные элементы
 Список типов можно переопределить для выделения цветом, такие как ключевые слова и комментарии, путем реализации пользовательских цветных элементов как часть службы вашего языка.  
@@ -41,31 +41,31 @@ ms.locfileid: "39499852"
   
 ## <a name="implement-custom-colorable-items"></a>Реализация пользовательских цветных элементов  
   
-1.  Определите, что необходимо цветом на вашем языке, например ключевое слово, оператор и идентификатор.  
+1. Определите, что необходимо цветом на вашем языке, например ключевое слово, оператор и идентификатор.  
   
-2.  Создайте перечисление эти цветных элементов.  
+2. Создайте перечисление эти цветных элементов.  
   
-3.  Свяжите типы маркеров, возвращен из синтаксического анализатора или сканера с помощью перечисляемые значения.  
+3. Свяжите типы маркеров, возвращен из синтаксического анализатора или сканера с помощью перечисляемые значения.  
   
-     Например значения, представляющие типы маркеров может быть те же значения в перечислении пользовательских цветных элементов.  
+    Например значения, представляющие типы маркеров может быть те же значения в перечислении пользовательских цветных элементов.  
   
-4.  В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод в вашей <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> объекта, заполнить список атрибутов со значениями из соответствующих типов маркеров, возвращен из синтаксического анализатора или сканера пользовательских цветных элементов перечисления.  
+4. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод в вашей <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> объекта, заполнить список атрибутов со значениями из соответствующих типов маркеров, возвращен из синтаксического анализатора или сканера пользовательских цветных элементов перечисления.  
   
-5.  В том же классе, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> интерфейс и его два метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5. В том же классе, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> интерфейс и его два метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6.  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+6. Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
-7.  Если вы хотите поддерживать значения цвета 24-разрядный или высокого уровня, также реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейс.  
+7. Если вы хотите поддерживать значения цвета 24-разрядный или высокого уровня, также реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейс.  
   
-8.  В объект службы языка, создайте список, содержащий ваш <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> , по одному для каждого цветного элемента, можно определить синтаксического анализатора или сканера.  
+8. В объект службы языка, создайте список, содержащий ваш <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> , по одному для каждого цветного элемента, можно определить синтаксического анализатора или сканера.  
   
-     Каждый элемент в списке доступны посредством соответствующее значение из перечисления пользовательских цветных элементов. Используйте значения перечисления в качестве индекса в списке. Первый элемент в списке никогда не осуществляется, так как он соответствует текст по умолчанию стиль [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] всегда обрабатывает сам. Вы можете компенсировать это, вставив цветного элемента заполнителя в начале списка.  
+    Каждый элемент в списке доступны посредством соответствующее значение из перечисления пользовательских цветных элементов. Используйте значения перечисления в качестве индекса в списке. Первый элемент в списке никогда не осуществляется, так как он соответствует текст по умолчанию стиль [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] всегда обрабатывает сам. Вы можете компенсировать это, вставив цветного элемента заполнителя в начале списка.  
   
 9. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метода, возвращает количество элементов в список пользовательских цветных элементов.  
   
 10. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метода возврата запрошенного цветного элемента из списка.  
   
- Пример реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейсов, см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    Пример реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейсов, см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>См. также  
  [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)   

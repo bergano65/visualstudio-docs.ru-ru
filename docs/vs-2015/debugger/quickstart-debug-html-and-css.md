@@ -26,12 +26,12 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873933"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Краткое руководство по отладке HTML и CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ ms.locfileid: "49225489"
   
  В этом разделе.  
   
--   [Проверка динамической модели DOM](#InspectingDOM)  
+- [Проверка динамической модели DOM](#InspectingDOM)  
   
--   [Selecting elements](#SelectingElements)  
+- [Selecting elements](#SelectingElements)  
   
- Дополнительные сведения об использовании проводника DOM см. в следующих разделах:  
+  Дополнительные сведения об использовании проводника DOM см. в следующих разделах:  
   
--   [Отладка стилей CSS с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
+- [Отладка стилей CSS с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)  
+- [Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)  
+- [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)  
   
--   [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)  
+- [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
--   [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)  
+- [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)  
   
- Сведения о других возможностях отладки JavaScript, таких как использование окна консоли JavaScript и задание точек останова, см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Сведения о других возможностях отладки JavaScript, таких как использование окна консоли JavaScript и задание точек останова, см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Проверка динамической модели DOM  
  Проводник DOM содержит представление отображаемой страницы. В проводнике можно менять значения и немедленно просматривать результаты. Это позволяет тестировать изменения без остановки и перезапуска отладчика. Исходный код в проекте не меняется, если разработчик выполняет какие-либо операции с этой страницей, используя данный метод, поэтому, найдя места для внесения исправлений в код, вы вносите исправления в исходный код.  
@@ -70,13 +70,13 @@ ms.locfileid: "49225489"
   
  Проводник DOM позволяет решать следующие задачи.  
   
--   Навигация по поддереву элементов DOM и проверка отображаемого кода HTML, CSS и JavaScript.  
+- Навигация по поддереву элементов DOM и проверка отображаемого кода HTML, CSS и JavaScript.  
   
--   Динамическое изменение атрибутов и стилей CSS отображаемых элементов с немедленным просмотром результатов.  
+- Динамическое изменение атрибутов и стилей CSS отображаемых элементов с немедленным просмотром результатов.  
   
--   Проверка применения стилей CSS к элементам страницы и трассировка примененных правил.  
+- Проверка применения стилей CSS к элементам страницы и трассировка примененных правил.  
   
- В процессе отладки приложений часто требуется выбрать те или иные элементы в проводнике DOM. При выборе элемента значения, отображаемые на вкладках с правой стороны проводника DOM, автоматически обновляются, отражая текущее состояние выбранного элемента в проводнике DOM. Вкладки следующие: **Стили**, **Вычисленные**, **Макет**. Приложения Магазина Windows также поддерживают вкладки **События** и **Изменения** . Дополнительные сведения о выборе элементов см. в разделе [Selecting elements](#SelectingElements).  
+  В процессе отладки приложений часто требуется выбрать те или иные элементы в проводнике DOM. При выборе элемента значения, отображаемые на вкладках с правой стороны проводника DOM, автоматически обновляются, отражая текущее состояние выбранного элемента в проводнике DOM. Вкладки следующие: **Стили**, **Вычисленные**, **Макет**. Приложения Магазина Windows также поддерживают вкладки **События** и **Изменения** . Дополнительные сведения о выборе элементов см. в разделе [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Если окно проводника DOM закрыто, выберите **Отладка**>**Окна** > **Проводник DOM** , чтобы повторно открыть его. Окно отображается только во время сеанса отладки скрипта.  
@@ -88,100 +88,100 @@ ms.locfileid: "49225489"
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Отладка путем проверки динамической модели DOM  
   
-1.  Создайте новое решение в Visual Studio, выбрав **Файл** > **Новый проект**.  
+1. Создайте новое решение в Visual Studio, выбрав **Файл** > **Новый проект**.  
   
-2.  Выберите **JavaScript** > **Магазин**, а затем выберите либо **Приложения Windows** , либо **Приложения Windows Phone**, затем выберите **Пустое приложение**.  
+2. Выберите **JavaScript** > **Магазин**, а затем выберите либо **Приложения Windows** , либо **Приложения Windows Phone**, затем выберите **Пустое приложение**.  
   
-3.  Введите имя проекта, например `FlipViewApp`, и нажмите кнопку **ОК** , чтобы создать приложение.  
+3. Введите имя проекта, например `FlipViewApp`, и нажмите кнопку **ОК** , чтобы создать приложение.  
   
-4.  Добавьте следующий код в элемент ТЕЛО файла default.html.  
+4. Добавьте следующий код в элемент ТЕЛО файла default.html.  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Откройте файл default.css и добавьте следующий код CSS:  
+5. Откройте файл default.css и добавьте следующий код CSS:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Замените код в файле default.js следующим кодом:  
+6. Замените код в файле default.js следующим кодом:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
-        };  
+           pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
+           pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
+           pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     На следующем рисунке показано, что именно мы хотим видеть, если запустим это приложение в эмуляторе телефона (аналогично выглядит в имитаторе). Тем не менее для доведения приложения до такого состояния нам потребуется сначала устранить несколько ошибок.  
+    На следующем рисунке показано, что именно мы хотим видеть, если запустим это приложение в эмуляторе телефона (аналогично выглядит в имитаторе). Тем не менее для доведения приложения до такого состояния нам потребуется сначала устранить несколько ошибок.  
   
-     ![Приложение FlipView с ожидаемым результатами](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
+    ![Приложение FlipView с ожидаемым результатами](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
   
-7.  Выберите либо **Имитатор** , либо **Emulator 8.1 WVGA 512MB (RU)** из раскрывающегося списка рядом с кнопкой **Начать отладку** на панели инструментов **Отладка** .  
+7. Выберите либо **Имитатор** , либо **Emulator 8.1 WVGA 512MB (RU)** из раскрывающегося списка рядом с кнопкой **Начать отладку** на панели инструментов **Отладка** .  
   
-     ![Список целевых объектов отладки выберите](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![Список целевых объектов отладки выберите](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Выберите **Отладка** > **Начать отладку**или нажмите клавишу F5, чтобы запустить приложение в режиме отладки.  
+8. Выберите **Отладка** > **Начать отладку**или нажмите клавишу F5, чтобы запустить приложение в режиме отладки.  
   
-     При этом приложение запустится в имитаторе или эмуляторе телефона, но экран будет практически пустым, поскольку в стилях имеется несколько ошибок. Первое изображение `FlipView` появляется в малом квадрате около середины экрана.  
+    При этом приложение запустится в имитаторе или эмуляторе телефона, но экран будет практически пустым, поскольку в стилях имеется несколько ошибок. Первое изображение `FlipView` появляется в малом квадрате около середины экрана.  
   
 9. Если приложение выполняется в имитаторе, выберите команду панели инструментов **Изменить разрешение** в правой части имитатора, чтобы настроить разрешение экрана 1280 х 800. Таким образом вы обеспечите соответствие значений, которые вы видите в имитаторе, значениям, отображаемым в перечисленных ниже шагах.  
   
@@ -234,15 +234,15 @@ ms.locfileid: "49225489"
   
      На вкладке **Макет** можно увидеть следующие значения.  
   
-    -   Для имитатора: 320 пикс. (смещение) и 320 пикс. (поле).  
+    - Для имитатора: 320 пикс. (смещение) и 320 пикс. (поле).  
   
-    -   Для эмулятора телефона: 100 пикс. (смещение) и 100 пикс. (поле).  
+    - Для эмулятора телефона: 100 пикс. (смещение) и 100 пикс. (поле).  
   
-     На следующем рисунке показано, как выглядит вкладка **Макет** , если используется эмулятор телефона (смещение и поле 100 пикс).  
+      На следующем рисунке показано, как выглядит вкладка **Макет** , если используется эмулятор телефона (смещение и поле 100 пикс).  
   
-     ![Вкладка макета проводника DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![Вкладка макета проводника DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
-     Это неправильно. На вкладке **Вычисленные** также отображаются те же значения полей.  
+      Это неправильно. На вкладке **Вычисленные** также отображаются те же значения полей.  
   
 21. Перейдите на вкладку **Стили** и найдите селектор CSS `#fView` . Здесь вы увидите значение 25 % для свойства **поле** .  
   
@@ -267,23 +267,23 @@ ms.locfileid: "49225489"
 ##  <a name="SelectingElements"></a> Selecting elements  
  Во время отладки приложения элементы модели DOM можно выбирать тремя способами:  
   
--   нажатием элементов непосредственно в окне проводника DOM (или с помощью клавиш со стрелками);  
+- нажатием элементов непосредственно в окне проводника DOM (или с помощью клавиш со стрелками);  
   
--   с помощью кнопки **Выбор элемента** (Ctrl+B);  
+- с помощью кнопки **Выбор элемента** (Ctrl+B);  
   
--   с помощью кнопки `select` , входящей в [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- с помощью кнопки `select` , входящей в [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
- При выборе элементов с помощью окна проводника DOM и наведении указателя мыши на элемент соответствующий элемент выделяется в запущенном приложении. Чтобы выбрать элемент, необходимо щелкнуть по нему в проводнике DOM (или воспользоваться для выбора элементов клавишами со стрелками). Элементы в проводнике DOM можно также выбирать с помощью кнопки **Выбрать элемент** . На следующем рисунке показана кнопка **Выбор элемента** .  
+  При выборе элементов с помощью окна проводника DOM и наведении указателя мыши на элемент соответствующий элемент выделяется в запущенном приложении. Чтобы выбрать элемент, необходимо щелкнуть по нему в проводнике DOM (или воспользоваться для выбора элементов клавишами со стрелками). Элементы в проводнике DOM можно также выбирать с помощью кнопки **Выбрать элемент** . На следующем рисунке показана кнопка **Выбор элемента** .  
   
- ![Нажмите кнопку "элемент" в проводнике DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![Нажмите кнопку "элемент" в проводнике DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
- При нажатии кнопки **Выбрать элемент** (или сочетания клавиш CTRL+B) меняется режим выделения, то есть элемент в проводнике DOM можно выделить, щелкнув по нему в запущенном приложении. По щелчку режим возвращается в нормальный режим выделения. При нажатии кнопки **Выбор элемента**приложение отображается на переднем плане, а вид курсора меняется в соответствии с новым режимом выделения. Если щелкнуть выделенный элемент, проводник DOM снова отображается на переднем плане, а указанный элемент выделен.  
+  При нажатии кнопки **Выбрать элемент** (или сочетания клавиш CTRL+B) меняется режим выделения, то есть элемент в проводнике DOM можно выделить, щелкнув по нему в запущенном приложении. По щелчку режим возвращается в нормальный режим выделения. При нажатии кнопки **Выбор элемента**приложение отображается на переднем плане, а вид курсора меняется в соответствии с новым режимом выделения. Если щелкнуть выделенный элемент, проводник DOM снова отображается на переднем плане, а указанный элемент выделен.  
   
- Перед нажатием **Выбрать элемент**можно задать, необходимо ли выделять элементы в запущенном приложении, с помощью кнопки **Отображать поля выделения веб-страницы** . Эта кнопка показана на следующем рисунке. По умолчанию выделение отображается.  
+  Перед нажатием **Выбрать элемент**можно задать, необходимо ли выделять элементы в запущенном приложении, с помощью кнопки **Отображать поля выделения веб-страницы** . Эта кнопка показана на следующем рисунке. По умолчанию выделение отображается.  
   
- ![Отображение веб-страницы выделенная кнопка](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![Отображение веб-страницы выделенная кнопка](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
- Если выделение элементов включено, элементы, на которые наводится указатель мыши в имитаторе, выделяются. Цвет выделения элементов соответствует рамочной модели, отображаемой на вкладке **Макет** проводника DOM.  
+  Если выделение элементов включено, элементы, на которые наводится указатель мыши в имитаторе, выделяются. Цвет выделения элементов соответствует рамочной модели, отображаемой на вкладке **Макет** проводника DOM.  
   
 > [!NOTE]
 >  В эмуляторе Windows Phone выделение элементов с помощью наведения поддерживается лишь частично.  
@@ -293,13 +293,13 @@ ms.locfileid: "49225489"
 ##  <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
  Инструменты Visual Studio для JavaScript, проводник DOM и окно консоли JavaScript поддерживаются в следующих платформах:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и приложения для Магазина Windows Phone с использованием JavaScript и HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и приложения для Магазина Windows Phone с использованием JavaScript и HTML  
   
--   Internet Explorer 11 на платформе [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 на платформе [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Internet Explorer 10 на платформе [!INCLUDE[win8](../includes/win8-md.md)]  
+- Internet Explorer 10 на платформе [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Перейдите [сюда](http://go.microsoft.com/fwlink/?LinkID=232448) , чтобы скачать [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
+  Перейдите [сюда](http://go.microsoft.com/fwlink/?LinkID=232448) , чтобы скачать [!INCLUDE[win8](../includes/win8-md.md)] и Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Документы Microsoft
+title: IDebugPendingBreakpoint2::CanBind | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e09bae8cfa6b4c2ba1b79ff74945e5256e23ed2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47a40691de66828a1b46067393cddaa7e303d118
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872607"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Определяет, можно привязать ли это ожидающая точка останова расположение кода.  
+Определяет ли этот ожидающая точка останова можно привязать к расположение кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,13 +45,13 @@ int CanBind (
  [out] Возвращает [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , содержащий список [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) объектов, если могут возникнуть ошибки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK.` возвращает `S_FALSE` , если не удается выполнить привязку точки останова, в этом случае ошибки возвращаются по `ppErrorEnum` параметр. В противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успешного выполнения возвращает `S_OK.` возвращает `S_FALSE` Если не удается привязать точку останова, в этом случае ошибки возвращаются по `ppErrorEnum` параметр. В противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод вызывается для определения того, что может произойти, если это ожидающее точка останова была привязана. Вызовите [привязки](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) метод фактически привязки ожидающая точка останова.  
+ Этот метод вызывается для определения того, что произошло бы, если это ожидающее точка останова был привязан. Вызовите [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) метод для реальной привязки ожидающая точка останова.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -142,4 +142,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

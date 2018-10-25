@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862363"
 ---
 # <a name="how-to-stop-code-changes"></a>Практическое руководство. Остановка внесения изменений в код
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49306349"
   
 ### <a name="to-stop-applying-code-changes"></a>Остановка внесения изменений в код  
   
--   Выберите **Остановить применение изменений кода** из **Отладка** меню.  
+- Выберите **Остановить применение изменений кода** из **Отладка** меню.  
   
- Этот пункт меню становится видимым только в процессе внесения изменений в код.  
+  Этот пункт меню становится видимым только в процессе внесения изменений в код.  
   
- При выборе этого параметра никакие изменения в коде не фиксируются.  
+  При выборе этого параметра никакие изменения в коде не фиксируются.  
   
 ## <a name="see-also"></a>См. также  
  [Изменить и продолжить](../debugger/edit-and-continue.md)   

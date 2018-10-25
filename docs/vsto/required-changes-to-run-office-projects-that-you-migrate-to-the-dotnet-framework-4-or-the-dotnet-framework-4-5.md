@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883488"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Изменения, необходимые для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET framework проекта Office изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии из более ранней версии платформы .NET Framework, необходимо выполнить следующие задачи, чтобы убедиться, что решение может выполняться на компьютере разработчика, так и на компьютерах конечных пользователей:  
   
--   Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.  
+- Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.  
   
--   Выполните **Очистить** команды в Visual Studio, чтобы иметь возможность запуска и отладки проекта на компьютере разработки.  
+- Выполните **Очистить** команды в Visual Studio, чтобы иметь возможность запуска и отладки проекта на компьютере разработки.  
   
--   Обновите платформу .NET Framework, необходимую для проекта.  
+- Обновите платформу .NET Framework, необходимую для проекта.  
   
--   Конечные пользователи также должны переустановить решение, если оно было развернуто с помощью технологии ClickOnce до того, как вы изменили целевую платформу.  
+- Конечные пользователи также должны переустановить решение, если оно было развернуто с помощью технологии ClickOnce до того, как вы изменили целевую платформу.  
   
- Дополнительные сведения о всех этих задачах см. в соответствующих разделах ниже.  
+  Дополнительные сведения о всех этих задачах см. в соответствующих разделах ниже.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Удаление атрибута SecurityTransparent из проектов, которые вы переносите из Visual Studio 2008  
  При обновлении проекта Office с версии Visual Studio 2008 и последующем изменении целевой платформы .NET Framework проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию атрибут <xref:System.Security.SecurityTransparentAttribute> необходимо удалить из проекта. Visual Studio не удаляет этот атрибут автоматически. Если не удалить этот атрибут, при компиляции проекта вы получите сообщение об ошибке.  

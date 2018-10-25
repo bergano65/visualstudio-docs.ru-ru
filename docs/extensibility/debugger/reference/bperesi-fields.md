@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Документы Microsoft
+title: BPERESI_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2280740766e20a048f57e58590cc529d98b85264
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9530e950ddd5dbf75fb10b5391dc658bdf899fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869942"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
-Определяет сведения получить о неудачных разрешении точки останова.  
+Указывает сведения, которые требуется получить сведения о неудачных разрешении точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,29 +52,29 @@ public enum enum_BPERESI_FIELDS {
   
 ## <a name="members"></a>Участники  
  PERESI_BPRESLOCATION  
- Инициализация или использовать `bpResLocation` поле (точки останова разрешения) [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры.  
+ Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры.  
   
  BPERESI_PROGRAM  
- Инициализация или использовать `pProgram` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализация и использование `pProgram` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_THREAD  
- Инициализация или использовать `pThread` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализация и использование `pThread` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_MESSAGE  
- Инициализация или использовать `bstrMessage` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализация и использование `bstrMessage` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_TYPE  
- Инициализация или использовать `dwType` (тип точки останова) поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализация и использование `dwType` (тип точки останова) поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_ALLFIELDS  
- Инициализация или использовать все поля `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализировать или использовать все поля `BP_ERROR_RESOLUTION_INFO` структуры.  
   
 ## <a name="remarks"></a>Примечания  
- Переданное в качестве параметра для [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод, чтобы указать, какие поля [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры должны быть инициализированы.  
+ Переданный в качестве параметра для [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод, чтобы указать, какие поля [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры должны быть инициализированы.  
   
- Эти значения также используются для указания того, какие поля в `BP_ERROR_RESOLUTION_INFO` структуры не используется и допустимым при возврате этой структуры.  
+ Эти значения также используются для указания, какие поля в `BP_ERROR_RESOLUTION_INFO` структуры не используются и допустимым при возвращении этой структуре.  
   
- Эти значения могут объединяться с помощью битового оператора `OR`.  
+ Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Compare | Документы Microsoft
+title: IDebugMemoryContext2::Compare | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9c72120a4153ed6d0d19a2cf2b7d3a9a9943801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be5c6dccecc8191030482c282033aa6159f2022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873907"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
-Сравнивает контекст памяти для каждого контекста в заданном массиве так, обозначенном флаги сравнения, возвращает индекс первого контекста, который соответствует.  
+Сравнивает контекста памяти для каждого контекста в заданном массиве так, как указывает флаги сравнения, возвращает индекс первого контекста, который соответствует.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,7 +48,7 @@ int Compare(
   
 #### <a name="parameters"></a>Параметры  
  `compare`  
- [in] Значение из [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисления, определяющее тип сравнения.  
+ [in] Значение из [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисление, определяющее тип сравнения.  
   
  `rgpMemoryContextSet`  
  [in] Массив ссылок на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объектов для сравнения.  
@@ -57,13 +57,13 @@ int Compare(
  [in] Число контекстов в `rgpMemoryContextSet` массива.  
   
  `pdwMemoryContext`  
- [out] Возвращает индекс первого контекст в памяти, который удовлетворяет условию сравнения.  
+ [out] Возвращает индекс первого контекста памяти, который удовлетворяет условию сравнения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_COMPARE_CANNOT_COMPARE` , если не удается сравнить двух контекстов.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_COMPARE_CANNOT_COMPARE` Если невозможно сравнить двух контекстах.  
   
 ## <a name="remarks"></a>Примечания  
- Не поддерживает все типы сравнений модуля отладки (DE), но он должен поддерживать по крайней мере `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` и `CONTEXT_SAME_SCOPE`.  
+ Для поддержки всех типов сравнений нет модуля отладки (DE), но он должен поддерживать по крайней мере `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` и `CONTEXT_SAME_SCOPE`.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   

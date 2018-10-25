@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857397"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Запуск приложений для Магазина Windows в симуляторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ ms.locfileid: "49190727"
   
  Для имитации свойств сети выполните следующие действия.  
   
-1.  В панели инструментов имитатора нажмите кнопку **Изменение свойств сети** .  
+1. В панели инструментов имитатора нажмите кнопку **Изменение свойств сети** .  
   
-2.  В диалоговом окне **Установка свойств сети** установите флажок **Использовать имитированные свойства сети**.  
+2. В диалоговом окне **Установка свойств сети** установите флажок **Использовать имитированные свойства сети**.  
   
-     Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
+    Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
   
-3.  Введите **Имя профиля** для сымитированной сети. Рекомендуется ввести уникальное имя, которое можно использовать для идентификации имитации в свойстве [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) объекта [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
+3. Введите **Имя профиля** для сымитированной сети. Рекомендуется ввести уникальное имя, которое можно использовать для идентификации имитации в свойстве [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) объекта [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
   
-4.  Выберите для профиля значение [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) из списка **Тип стоимости сети** .  
+4. Выберите для профиля значение [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) из списка **Тип стоимости сети** .  
   
-5.  Из списка **Флаг состояния лимита данных** можно задать для свойства [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) или [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)значение true или выбрать **Лимит данных не достигнут** , чтобы установить для обоих свойств значение false.  
+5. Из списка **Флаг состояния лимита данных** можно задать для свойства [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) или [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)значение true или выбрать **Лимит данных не достигнут** , чтобы установить для обоих свойств значение false.  
   
-6.  Из списка **Состояние роуминга** установите свойство [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
+6. Из списка **Состояние роуминга** установите свойство [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
   
-7.  Выберите **Задать свойства** для имитации свойств сети путем активации события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) переднего плана и фонового триггера [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) типа **NetworkStateChange**.  
+7. Выберите **Задать свойства** для имитации свойств сети путем активации события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) переднего плана и фонового триггера [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) типа **NetworkStateChange**.  
   
- **Дополнительные сведения об управлении сетевыми подключениями**  
+   **Дополнительные сведения об управлении сетевыми подключениями**  
   
- [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Пример информации по сети](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Пример информации по сети](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Реакция на системные события с фоновыми задачами](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Реакция на системные события с фоновыми задачами](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Вызов событий приостановки, возобновления и фоновых событий в приложениях для Магазина Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Вызов событий приостановки, возобновления и фоновых событий в приложениях для Магазина Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Навигация по симулятору с помощью клавиатуры  
  Вы можете перейти в панель инструментов имитатора, нажав сочетание клавиш **CTRL+ALT+стрелка вверх** , чтобы перенести фокус с окна имитатора в панель инструментов имитатора. Используйте клавиши **Стрелка вверх** и **Стрелка вниз** для перемещения между кнопками панели инструментов.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Документы Microsoft
+title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbec389acbe74079dd047cef6b8f7923eb9fa604
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16cfe840d63a552d1adcace0620fa1ee364ef4ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869968"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-Извлекает классы с помощью указанного атрибута в указанный модуль.  
+Извлекает классы, с помощью указанного атрибута в указанный модуль.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,16 +54,16 @@ int GetAttributedClassesinModule (
  [in] Уникальный идентификатор модуля.  
   
  `pstrAttribute`  
- [in] Строка атрибутов.  
+ [in] Строка атрибута.  
   
  `ppEnum`  
- [out] Возвращает перечисление атрибутами классов.  
+ [out] Возвращает перечисление классов с атрибутами.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(  

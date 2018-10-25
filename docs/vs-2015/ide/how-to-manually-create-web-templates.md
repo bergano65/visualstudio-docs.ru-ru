@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880758"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ ms.locfileid: "49220874"
   
 ### <a name="to-manually-create-a-web-template"></a>Создание веб-шаблонов вручную  
   
-1.  Создайте веб-проект.  
+1. Создайте веб-проект.  
   
-2.  Измените или удалите файлы в проекте или добавьте в него новые файлы.  
+2. Измените или удалите файлы в проекте или добавьте в него новые файлы.  
   
-3.  Создайте XML-файл и сохраните его, используя расширение VSTEMPLATE, в одном каталоге с проектом. Не добавляйте его в проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Создайте XML-файл и сохраните его, используя расширение VSTEMPLATE, в одном каталоге с проектом. Не добавляйте его в проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Создайте VSTEMPLATE-файл с XML-кодом, чтобы предоставить метаданные шаблона проекта. Дополнительные сведения см. в примере в следующем разделе.  
+4. Создайте VSTEMPLATE-файл с XML-кодом, чтобы предоставить метаданные шаблона проекта. Дополнительные сведения см. в примере в следующем разделе.  
   
-5.  Найдите в VSTEMPLATE-файле элемент `ProjectType` и задайте `Web` в качестве текстового значения.  
+5. Найдите в VSTEMPLATE-файле элемент `ProjectType` и задайте `Web` в качестве текстового значения.  
   
-6.  После элемента `ProjectType` добавьте элемент `ProjectSubType` и задайте язык программирования этого шаблона в качестве текстового значения. Этот язык программирования может принимать одно из следующих значений:  
+6. После элемента `ProjectType` добавьте элемент `ProjectSubType` и задайте язык программирования этого шаблона в качестве текстового значения. Этот язык программирования может принимать одно из следующих значений:  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      Пример:  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  Выберите файлы в шаблоне (включая VSTEMPLATE-файл), щелкните их правой кнопкой мыши, выберите пункт **Отправить**, а затем **Сжатая ZIP-папка**. Файлы сжимаются в ZIP-файл.  
+7. Выберите файлы в шаблоне (включая VSTEMPLATE-файл), щелкните их правой кнопкой мыши, выберите пункт **Отправить**, а затем **Сжатая ZIP-папка**. Файлы сжимаются в ZIP-файл.  
   
-8.  Поместите ZIP-файл шаблона в каталог шаблонов проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. По умолчанию это каталог \My Documents\Visual Studio *версия*\My Exported Templates\\.  
+8. Поместите ZIP-файл шаблона в каталог шаблонов проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. По умолчанию это каталог \My Documents\Visual Studio *версия*\My Exported Templates\\.  
   
 ## <a name="example"></a>Пример  
  Следующий пример показывает базовый VSTEMPLATE-файл для шаблона веб-проекта.  

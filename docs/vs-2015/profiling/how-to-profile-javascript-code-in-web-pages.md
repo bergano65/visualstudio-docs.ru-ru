@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1fd8a4e06db5eb56b8f218ee8e1667d8eb59632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872113"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript в веб-страницах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ ms.locfileid: "49176479"
   
 > [!WARNING]
 >  Для профилирования JavaScript в приложениях для Магазина Windows см. один из следующих разделов:  
->   
->  -   [Время выполнения функций JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [время выполнения функций JavaScript на удаленном устройстве](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
-> -   [Анализ данных о выполнении функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
-> -  
+> 
+> - [Время выполнения функций JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [время выполнения функций JavaScript на удаленном устройстве](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+>   -   [Анализ данных о выполнении функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   -  
   
  Вы можете использовать мастер профилирования для создания сеанса производительности. Укажите способ инструментирования, а затем выберите вариант профилирования JavaScript на странице "Инструментирование" диалогового окна свойств для сеанса производительности.  
   

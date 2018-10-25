@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Документы Microsoft
+title: IDebugExpressionEvaluator3::Parse2 | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64344d66bcdd0ab64f6dd1e944f161e286c132de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46f7b503cb1cc90ad1058761274e6974a11ee35a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867225"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Преобразует строку выражения проанализированный выражению, заданному символ поставщика и адрес вычисление кадра.  
+Преобразует строку выражения проанализированное выражение с учетом поставщик символов и адрес оценке кадра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,19 +53,19 @@ HRESULT Parse2 (
   
 #### <a name="parameters"></a>Параметры  
  `upstrExpression`  
- [in] Строка выражения для синтаксического анализа.  
+ [in] Строка выражения, который необходимо проанализировать.  
   
  `dwFlags`  
- [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выполнить синтаксический анализ выражения.  
+ [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.  
   
  `nRadix`  
- [in] Основание системы счисления, используемое для интерпретации все числовые данные.  
+ [in] Основание системы счисления для использования для интерпретации все числовые данные.  
   
  `pSymbolProvider`  
- [in] Интерфейс поставщика символа.  
+ [in] Интерфейс поставщика символов.  
   
  `pAddress`  
- [in] Адрес вычисление кадра.  
+ [in] Адрес оценке кадра.  
   
  `pbstrError`  
  [out] Возвращает ошибку в виде удобочитаемого текста.  
@@ -74,16 +74,16 @@ HRESULT Parse2 (
  [out] Возвращает позицию символа начинается ошибка в строке выражения.  
   
  `ppParsedExpression`  
- [out] Возвращает выражение, проанализированных в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
+ [out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод создает проанализированное выражение не фактического значения. Проанализированное выражение готовое к вычислению, то есть, преобразуется в значение.  
+ Этот метод создает проанализированное выражение, а не фактического значения. Проанализированное выражение готов для вычисления, то есть преобразовать в значение.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CEE** объекта, который предоставляет [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CEE** объекта, который предоставляет [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) интерфейс.  
   
 ```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  

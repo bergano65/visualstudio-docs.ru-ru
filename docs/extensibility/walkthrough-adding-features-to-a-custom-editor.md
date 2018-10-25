@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873023"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство: Добавление компонентов к пользовательского редактора
 После создания настраиваемого редактора, можно добавить дополнительные функции к нему.  
@@ -122,38 +122,38 @@ ms.locfileid: "39498945"
   
 13. Предоставляют объектную модель автоматизации из редактора, реализовав `IDispatch` интерфейс.  
   
-     Дополнительные сведения см. в разделе [участвующая в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md).  
+     Для получения дополнительной информации см. [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
   
--   Экземпляр редактора создается в том случае, когда вызывает интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод. Если редактор поддерживает несколько представлений, `CreateEditorInstance` создает данные документа и объекты представления документа. Если объект данных документа уже открыть, отличный от null `punkDocDataExisting` значение передается `IVsEditorFactory::CreateEditorInstance`. Реализации фабрики редактора необходимо определить, совместима ли существующий объект данных документа, запрашивая соответствующие интерфейсы на нем. Дополнительные сведения см. в разделе [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+- Экземпляр редактора создается в том случае, когда вызывает интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод. Если редактор поддерживает несколько представлений, `CreateEditorInstance` создает данные документа и объекты представления документа. Если объект данных документа уже открыть, отличный от null `punkDocDataExisting` значение передается `IVsEditorFactory::CreateEditorInstance`. Реализации фабрики редактора необходимо определить, совместима ли существующий объект данных документа, запрашивая соответствующие интерфейсы на нем. Дополнительные сведения см. в разделе [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
--   Если вы используете упрощенный способ внедрения, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс.  
+- Если вы используете упрощенный способ внедрения, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс.  
   
--   Если вы решили использовать активацию на месте, реализуйте следующие интерфейсы:  
+- Если вы решили использовать активацию на месте, реализуйте следующие интерфейсы:  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.  
+  > [!NOTE]
+  >  `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.  
   
-     Ваш `IOleCommandTarget` реализация обрабатывает команды, такие как **Вырезать**, **копирования**, и **вставить**. При реализации `IOleCommandTarget`, решить, является ли ваш редактор должен иметь собственную *.vsct* файл, чтобы определить свой собственный структура команды меню или если он может реализовывать стандартных команд, определенных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило редакторы использовать и расширять меню IDE и определить свои собственные панели инструментов. Тем не менее часто бывает редактора для определения собственных конкретных команд, помимо использования набора стандартных команд интегрированной среды разработки. Редактора необходимо объявить стандартные команды, он использует и затем определить новые команды, контекстные меню, меню верхнего уровня и панелей инструментов в *.vsct* файла. При создании активации на месте редактора, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и определить для редактора в меню и панелей инструментов *.vsct* файл, а не с помощью OLE 2 слияние меню.  
+   Ваш `IOleCommandTarget` реализация обрабатывает команды, такие как **Вырезать**, **копирования**, и **вставить**. При реализации `IOleCommandTarget`, решить, является ли ваш редактор должен иметь собственную *.vsct* файл, чтобы определить свой собственный структура команды меню или если он может реализовывать стандартных команд, определенных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило редакторы использовать и расширять меню IDE и определить свои собственные панели инструментов. Тем не менее часто бывает редактора для определения собственных конкретных команд, помимо использования набора стандартных команд интегрированной среды разработки. Редактора необходимо объявить стандартные команды, он использует и затем определить новые команды, контекстные меню, меню верхнего уровня и панелей инструментов в *.vsct* файла. При создании активации на месте редактора, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и определить для редактора в меню и панелей инструментов *.vsct* файл, а не с помощью OLE 2 слияние меню.  
   
--   Чтобы команды меню, которые частенько получает сильнейший в пользовательском Интерфейсе, следует использовать существующие команды в интегрированной среде разработки до изобретать новые команды. Общие команды определены в *SharedCmdDef.vsct* и *ShellCmdDef.vsct*. Эти файлы устанавливаются по умолчанию в подкаталоге VisualStudioIntegration\Common\Inc вашей [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] установки.  
+- Чтобы команды меню, которые частенько получает сильнейший в пользовательском Интерфейсе, следует использовать существующие команды в интегрированной среде разработки до изобретать новые команды. Общие команды определены в *SharedCmdDef.vsct* и *ShellCmdDef.vsct*. Эти файлы устанавливаются по умолчанию в подкаталоге VisualStudioIntegration\Common\Inc вашей [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] установки.  
   
--   `ISelectionContainer` можно выразить один или несколько выбранных элементов. Каждого выбранного объекта реализован в виде `IDispatch` объекта.  
+- `ISelectionContainer` можно выразить один или несколько выбранных элементов. Каждого выбранного объекта реализован в виде `IDispatch` объекта.  
   
--   IDE реализует `IOleUndoManager` как служба, доступная из <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> или объектом, который может быть создан через <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Пользовательский редактор реализует `IOleUndoUnit` интерфейс для каждого `Undo` действие.  
+- IDE реализует `IOleUndoManager` как служба, доступная из <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> или объектом, который может быть создан через <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Пользовательский редактор реализует `IOleUndoUnit` интерфейс для каждого `Undo` действие.  
   
--   В двух местах пользовательского редактора может предоставлять объекты автоматизации:  
+- В двух местах пользовательского редактора может предоставлять объекты автоматизации:  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>См. также  
  [Участие в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)   

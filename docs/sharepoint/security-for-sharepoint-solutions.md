@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878769"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Безопасность решений SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] включает в себя следующие функции для повышения безопасности приложений SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626137"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Атрибут AllowPartiallyTrustedCallers
  По умолчанию только приложения, полностью доверенной для среды выполнения система безопасности доступа кода (CAS) можно получить доступ к общей сборке управляемого кода. Пометка полностью доверенной сборке с атрибутом AllowPartiallyTrustedCallers позволяет частично доверенным сборкам для доступа к нему.
 
- Атрибут AllowPartiallyTrustedCallers добавляется любое решение SharePoint, не развертывается в системе глобальный кэш сборок ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Сюда входят изолированные решения или решения, развернутые в каталоге Bin приложения SharePoint. Дополнительные сведения см. в разделе [Version 1 Security Changes для Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) и [развертывание веб-частей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Атрибут AllowPartiallyTrustedCallers добавляется любое решение SharePoint, не развертывается в системе глобальный кэш сборок ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Сюда входят изолированные решения или решения, развернутые в каталоге Bin приложения SharePoint. Дополнительные сведения см. в разделе [Version 1 Security Changes для Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) и [развертывание веб-частей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Безопасен в отношении скриптов
  *Скрипт путем внедрения кода* — это Вставка потенциально вредоносного кода в элементы управления или веб-страниц. Для защиты сайтов SharePoint 2010 от внедрение скриптов участниками нельзя просматривать или изменять веб-частей и их свойствам по умолчанию. Это поведение управляется SafeControl атрибут с именем SafeAgainstScript. В [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], задайте этот атрибут в элементе проекта **записи безопасных элементов управления** подсвойств **безопасен в отношении скриптов**. Дополнительные сведения см. в разделе [сведениями развертывание пакетов и в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) и [как: Пометка элементов управления как безопасных](../sharepoint/how-to-mark-controls-as-safe-controls.md).

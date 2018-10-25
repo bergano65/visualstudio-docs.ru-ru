@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_scoped | Документы Microsoft
+title: IDiaSymbol::get_scoped | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c545c0d7f8a72ca4dc4f1fcc31aafe65c2bc5d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0018bfdbf52f92a35dff3a21fb5baf71aab6639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860011"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Возвращает флаг, который указывает, отображается ли определяемый пользователем тип в неглобальной лексической области видимости.  
+Получает флаг, указывающий, отображается ли определяемый пользователем тип в неглобальной лексической области.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT get_scoped (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип в неглобальной лексическую область видимости; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если определяемый пользователем тип в неглобальной лексической области действия; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  

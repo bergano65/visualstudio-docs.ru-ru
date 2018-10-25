@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Документы Microsoft
+title: IDebugEnumField::GetStringFromValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872763"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Этот метод получает имя константы перечисления, заданным значением.  
+Этот метод получает имя константы перечисления, учитывая его значение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>Параметры  
  `value`  
- [in] Значение, для которого нужно получить постоянное имя перечисления.  
+ [in] Значение, для которого необходимо получить имя перечисления констант.  
   
  `pbstrValue`  
  [out] Возвращает имя константы перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` , если значение не имеет связанного имени, либо возвращает код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если значение не имеет связанного имени, либо возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Если имеется более одного имени, связанного с тем же значением, будет возвращаться имя определяется в перечислении.  
+ Если имеется несколько имен, связанный с тем же значением, возвращается имя определяется в перечислении.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

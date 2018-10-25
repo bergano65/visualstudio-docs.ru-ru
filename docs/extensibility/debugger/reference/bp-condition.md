@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Документы Microsoft
+title: BP_CONDITION | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee951c5bc18fbf92f94f557c5ade4cd7f39159f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f638fe36131969c50e7572ac36ef54b3ad0d10e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873400"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 Описывает условия, при которых срабатывает точка останова.  
@@ -49,10 +49,10 @@ public struct BP_CONDITION {
   
 ## <a name="members"></a>Участники  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активного потока для приложения, которое содержит точку останова.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активный поток приложения, содержащего точку останова.  
   
  `styleCondition`  
- Значение из [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) перечисление, описывающее стиль условие для точки останова.  
+ Значение из [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) перечисление, описывающее стиль этого условия точки останова.  
   
  `bstrContext`  
  Расположение точки останова.  
@@ -76,7 +76,7 @@ public struct BP_CONDITION {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Документы Microsoft
+title: IDebugComPlusSymbolProvider2::GetTypesByName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098c04615629b844fae8022058d47455db9cd98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882449"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Извлекает объект типа с заданным именем.  
+Возвращает тип с заданным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,13 +53,13 @@ int GetTypesByName(
  [out] Перечислитель, который содержит тип или типы с заданным именем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для универсальных типов, имя для поиска в службе "список\<int >" или "список\<int, int >" будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметра будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) и определения на основе `guidModule` параметра.  
+ Для универсальных типов, имя для поиска в службе "списка\<int >" или "список\<int, int >" будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметра будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) сертификатов и различать на основе `guidModule` параметра.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

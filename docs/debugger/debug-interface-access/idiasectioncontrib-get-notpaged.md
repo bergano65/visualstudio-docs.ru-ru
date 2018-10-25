@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_notPaged | Документы Microsoft
+title: IDiaSectionContrib::get_notPaged | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db3836cceb020dba95703c40f8f450ae0bcbdea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28f494767820c59e7ece714768979b1778b79a8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869643"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Возвращает флаг, который указывает ли раздел может быть оповещен по пейджеру не хватает памяти.  
+Получает флаг, указывающий, может ли быть оповещен разделе не хватает памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT get_notPaged (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out, retval] Возвращает `TRUE` Если раздел не может быть оповещен по пейджеру; в противном случае, возвращает `FALSE`.  
+ [out, retval] Возвращает `TRUE` Если раздел может быть оповещен; в противном случае — значение, возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

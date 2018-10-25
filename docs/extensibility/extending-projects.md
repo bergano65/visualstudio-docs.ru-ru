@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864677"
 ---
 # <a name="extend-projects"></a>Расширения проектов
 Проекты и решения, способы, с помощью Visual Studio файлы кода и ресурсов организованы по единицы компиляции и развертывания. Можно найти дополнительные сведения о проектах в [проектов (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -36,7 +36,7 @@ ms.locfileid: "42902823"
  В этой статье описывается создание системе пользовательских проектов.  
   
  [Сохранить данные в файлах проектов](../extensibility/saving-data-in-project-files.md)  
- Объясняет, как добавлять в проект (*.* proj *) файлы.  
+ Объясняет, как добавлять в проект (<em>.</em> proj *) файлы.  
   
  [Проверка подтипов проекта во время выполнения](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Объясняется, как проверить подтип проекта во время выполнения.  

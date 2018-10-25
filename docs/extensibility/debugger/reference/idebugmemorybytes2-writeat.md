@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Документы Microsoft
+title: IDebugMemoryBytes2::WriteAt | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d1d79d88baf9688fe68ff44d59dcd4d19baf9f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2d164f0ef816285e2df4a9e49b09d55feb90d25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864275"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Записывает указанное число байтов памяти, начиная с указанного адреса.  
@@ -52,13 +52,13 @@ int WriteAt(
  [in] Число байтов для записи.  
   
  `rgbMemory`  
- [in] Запись байтов. Этот массив полагается равным по крайней мере `dwCount` размер байт.  
+ [in] Запись байтов. Этот массив предполагается, что по крайней мере `dwCount` байт размером.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если не все байты, может быть записан или возвращает код ошибки (обычно `E_FAIL`).  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если не все байты, может быть записан или возвращает код ошибки (обычно `E_FAIL`).  
   
 ## <a name="remarks"></a>Примечания  
- Если начальный адрес не находится в окне памяти, представленный этим [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта, запись не выполняется и код ошибки `E_FAIL` возвращается, даже если сумма для записи перекрывает области памяти.  
+ Если начальный адрес находится за пределами окна "память", представленный данным [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта, запись не выполняется и кодом ошибки `E_FAIL` возвращается, даже если перекрывается сумму для записи в области памяти.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

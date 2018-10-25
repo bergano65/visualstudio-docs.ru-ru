@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented | Документы Microsoft
+title: IDebugClassField::EnumInterfacesImplemented | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a8a313be7c24b4e3778a4e4890eaf2c5eb67b4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9119668cf4eb8ddb6196aec774acf171db04e868
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872685"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Создает перечислитель для интерфейсов, реализованных данным классом.  
@@ -41,13 +41,13 @@ int EnumInterfacesImplemented(
   
 #### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список интерфейсов, реализованных. Если интерфейсы не возвращает значение null.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список интерфейсов, реализованных. Возвращает значение null, если интерфейсы отсутствуют.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет интерфейсов, реализованных для данного класса. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет интерфейсы, реализованные в этом классе. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Каждый элемент перечисления является [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, описывающий интерфейс. Обратите внимание, что неуправляемый [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] код не использует интерфейсы как отдельная сущность, этот метод всегда возвращает значение null для неуправляемого [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] кода.  
+ Каждый элемент перечисления является [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) описывающий интерфейс. Обратите внимание, что неуправляемые [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] код не использует интерфейсы как отдельная сущность, этот метод всегда возвращает значение null для неуправляемого [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] кода.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

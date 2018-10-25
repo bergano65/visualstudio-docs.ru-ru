@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879107"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Устранение неполадок, связанных с расширениями для схем слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "49250072"
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>При нажатии клавиши F5 для отладки расширения команды, обработчики жестов, расширения проверки или пользовательские свойства не отображаются на схемах слоев в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-1.  Откройте решение расширения в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а затем на **построения** меню, щелкните **Перестроить решение**.  
+1. Откройте решение расширения в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а затем на **построения** меню, щелкните **Перестроить решение**.  
   
-2.  Нажмите клавишу **F5** или **CTRL + F5** запустить экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Откройте схему слоев и протестируйте расширение.  
+2. Нажмите клавишу **F5** или **CTRL + F5** запустить экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Откройте схему слоев и протестируйте расширение.  
   
- При необходимости выполните описанную ниже процедуру.  
+   При необходимости выполните описанную ниже процедуру.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Запускается старая версия расширения.  
   
-1.  Убедитесь в том, что не выполняется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Убедитесь в том, что не выполняется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Удалите следующую папку: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [версия]  
+2. Удалите следующую папку: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [версия]  
   
-    > [!NOTE]
-    >  % LocalAppData % — *DriveName*: \Users\\*UserName*\AppData\Local.  
+   > [!NOTE]
+   >  % LocalAppData % — *DriveName*: \Users\\*UserName*\AppData\Local.  
   
- При необходимости выполните описанную ниже процедуру.  
+   При необходимости выполните описанную ниже процедуру.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Отображается старая версия результатов проверки, либо не вызывается метод проверки.  
   

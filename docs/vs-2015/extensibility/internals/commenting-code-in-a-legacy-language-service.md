@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873478"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Комментирование кода синтаксиса в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49291906"
 ## <a name="comment-styles"></a>Стили комментарий  
  Существует два общих стиля комментариев:  
   
-1.  Комментарии, строки, где расположено в одной строке.  
+1. Комментарии, строки, где расположено в одной строке.  
   
-2.  Комментарии блока, где комментарии могут включать несколько строк.  
+2. Комментарии блока, где комментарии могут включать несколько строк.  
   
- Строки комментариев обычно имеют начальный символ (или символы), при комментариев блоке имеют начального и конечного знаков. Например, в C# строка комментария начинается с / /, и начало комментария начинается с / * и заканчивается \*/.  
+   Строки комментариев обычно имеют начальный символ (или символы), при комментариев блоке имеют начального и конечного знаков. Например, в C# строка комментария начинается с / /, и начало комментария начинается с / * и заканчивается \*/.  
   
- Когда пользователь выбирает команду **выделенный фрагмент в комментарий** из **изменить** -> **Дополнительно** меню, команда отправляется <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класса. Когда пользователь выбирает команду **Раскомментировать выделенный фрагмент**, отправляется команда <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
+   Когда пользователь выбирает команду **выделенный фрагмент в комментарий** из **изменить** -> **Дополнительно** меню, команда отправляется <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класса. Когда пользователь выбирает команду **Раскомментировать выделенный фрагмент**, отправляется команда <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
   
 ## <a name="supporting-code-comments"></a>Вспомогательные комментарии к коду  
  У вас есть комментарии язык службы поддержки кода с помощью параметра `EnableCommenting` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Этот параметр задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Дополнительные сведения о настройке языка servicce функций см. в разделе [регистрация языковой службы прежних](../../extensibility/internals/registering-a-legacy-language-service1.md)).  

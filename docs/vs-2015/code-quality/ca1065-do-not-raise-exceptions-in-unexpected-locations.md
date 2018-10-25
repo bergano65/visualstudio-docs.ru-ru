@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887611"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284691"
 ## <a name="rule-description"></a>Описание правила
  Методы, которые не должны вызывать исключения можно классифицировать следующим образом.
 
--   Методы Get свойства
+- Методы Get свойства
 
--   Методы доступа к событиям
+- Методы доступа к событиям
 
--   Методов Equals
+- Методов Equals
 
--   Методы GetHashCode
+- Методы GetHashCode
 
--   Методы ToString
+- Методы ToString
 
--   Статические конструкторы
+- Статические конструкторы
 
--   Методы завершения
+- Методы завершения
 
--   Удаления методов
+- Удаления методов
 
--   Операторы равенства
+- Операторы равенства
 
--   Операторы неявного приведения
+- Операторы неявного приведения
 
- В следующих разделах рассматриваются эти типы методов.
+  В следующих разделах рассматриваются эти типы методов.
 
 ### <a name="property-get-methods"></a>Методы Get свойства
  Свойства являются по сути интеллектуальные поля. Таким образом они должны ведут себя как поле насколько это возможно. Поля не вызывают исключений и свойства. Если у вас есть свойство, которое вызывает исключение, имеет смысл сделать его метод.
@@ -91,22 +92,22 @@ ms.locfileid: "49284691"
 ### <a name="equals-methods"></a>Методов Equals
  Следующие **равно** методы не должны вызывать исключения:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- **Равно** метод должен возвращать `true` или `false` вместо выдачи исключения. Например, если равно передается два несовместимых типов он должен просто вернуть `false` вместо выдачи <xref:System.ArgumentException>.
+  **Равно** метод должен возвращать `true` или `false` вместо выдачи исключения. Например, если равно передается два несовместимых типов он должен просто вернуть `false` вместо выдачи <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Методы GetHashCode
  Следующие **GetHashCode** методы обычно не должны вызывать исключения:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** всегда должны возвращать значение. В противном случае вы можете потерять элементы в хэш-таблице.
+  **GetHashCode** всегда должны возвращать значение. В противном случае вы можете потерять элементы в хэш-таблице.
 
- В версиях **GetHashCode** , которые принимают аргумент может вызвать исключение <xref:System.ArgumentException>. Тем не менее **Object.GetHashCode** никогда не должен создавать исключение.
+  В версиях **GetHashCode** , которые принимают аргумент может вызвать исключение <xref:System.ArgumentException>. Тем не менее **Object.GetHashCode** никогда не должен создавать исключение.
 
 ### <a name="tostring-methods"></a>Методы ToString
  Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> обеспечивает отображение сведений об объектах в строковом формате. Таким образом **ToString** не должны изменять состояние объекта и не должны вызывать исключения.
