@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836740"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панель инструментов обозревателя решений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ ms.locfileid: "49254403"
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Для отображения кнопки, когда один или несколько проектов будут открыты  
   
-1.  В `<Buttons>` разделе ToolbarButtonPackage.vsct, добавьте два флага команды для существующего `<Button>` элемент, между `<Strings>` и `<Icons>` теги.  
+1. В `<Buttons>` разделе ToolbarButtonPackage.vsct, добавьте два флага команды для существующего `<Button>` элемент, между `<Strings>` и `<Icons>` теги.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible` И `DynamicVisibility` флаги должны быть заданы так, записей в `<VisibilityConstraints>` разделе вступили в силу.  
+    `DefaultInvisible` И `DynamicVisibility` флаги должны быть заданы так, записей в `<VisibilityConstraints>` разделе вступили в силу.  
   
-2.  Создание `<VisibilityConstraints>` раздел, содержащий два `<VisibilityItem>` записей. Поместите новый раздел сразу после закрытия `</Commands>` тега.  
+2. Создание `<VisibilityConstraints>` раздел, содержащий два `<VisibilityItem>` записей. Поместите новый раздел сразу после закрытия `</Commands>` тега.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Каждый элемент видимость представляет условие, в котором отображается указанную кнопку. Чтобы применить несколько условий, необходимо создать несколько записей для одной кнопки.  
+    Каждый элемент видимость представляет условие, в котором отображается указанную кнопку. Чтобы применить несколько условий, необходимо создать несколько записей для одной кнопки.  
   
-3.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+3. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-     **Обозревателе решений** панель инструментов содержит кнопки зачеркивания.  
+    **Обозревателе решений** панель инструментов содержит кнопки зачеркивания.  
   
-4.  Откройте любое решение, содержащее проект.  
+4. Откройте любое решение, содержащее проект.  
   
-     На панели инструментов справа от существующей кнопки появляется кнопка «зачеркивание».  
+    На панели инструментов справа от существующей кнопки появляется кнопка «зачеркивание».  
   
-5.  На **файл** меню, щелкните **закрыть решение**. Кнопки исчезнет с панели инструментов.  
+5. На **файл** меню, щелкните **закрыть решение**. Кнопки исчезнет с панели инструментов.  
   
- Управляет видимостью кнопки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] до загрузки VSPackage. После загрузки VSPackage, VSPackage управляет видимостью кнопки.  Дополнительные сведения см. в разделе [команды MenuCommand и. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   Управляет видимостью кнопки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] до загрузки VSPackage. После загрузки VSPackage, VSPackage управляет видимостью кнопки.  Дополнительные сведения см. в разделе [команды MenuCommand и. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

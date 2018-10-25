@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880515"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы установить приложение оболочки необходимо выполнить следующие действия.  
   
--   Подготовка решения.  
+- Подготовка решения.  
   
--   Создание пакета установщика Windows (MSI) для вашего приложения.  
+- Создание пакета установщика Windows (MSI) для вашего приложения.  
   
--   Создайте начальный загрузчик программы установки.  
+- Создайте начальный загрузчик программы установки.  
   
- Пример кода в этом документе берутся из [пример развертывания оболочки](http://go.microsoft.com/fwlink/?LinkId=262245), который можно загрузить из коллекции кода на веб-сайте MSDN. В этом примере результаты выполнения этих этапов.  
+  Пример кода в этом документе берутся из [пример развертывания оболочки](http://go.microsoft.com/fwlink/?LinkId=262245), который можно загрузить из коллекции кода на веб-сайте MSDN. В этом примере результаты выполнения этих этапов.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения процедур, которые в этом разделе описываются следующие средства должны устанавливаться на компьютере.  
   
--   Пакет SDK для Visual Studio  
+- Пакет SDK для Visual Studio  
   
--   [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) версии 3.6  
+- [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) версии 3.6  
   
- Для примера также требуется Microsoft Visualization and Modeling SDK, где требуется не всем интерпретаторам команд.  
+  Для примера также требуется Microsoft Visualization and Modeling SDK, где требуется не всем интерпретаторам команд.  
   
 ## <a name="preparing-your-solution"></a>Подготовка решения  
  По умолчанию шаблоны Shell сборки для пакетов VSIX, но это поведение предусмотрено в первую очередь для целей отладки. При развертывании приложения оболочки, необходимо использовать пакеты MSI, чтобы разрешить доступ к реестру и перезагрузка во время установки. Чтобы подготовить приложение для развертывания MSI, выполните следующие действия.  

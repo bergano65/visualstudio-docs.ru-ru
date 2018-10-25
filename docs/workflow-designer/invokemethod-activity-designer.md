@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839574"
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
 
@@ -36,7 +36,7 @@ ms.locfileid: "36757770"
 В следующей таблице показаны <xref:System.Activities.Statements.InvokeMethod> свойства и показывается, как они используются в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые можно изменить в поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.InvokeMethod>. Значение по умолчанию - InvokeMethod.<br /><br /> Несмотря на то что <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется использовать один.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Да|Имя метода, вызываемого, когда выполняется действие. Вызываемый метод должен быть объявлен как **открытый**. Это свойство можно изменить в области конструктора и является обязательным.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Коллекция параметров вызванного метода. Параметры должны добавляться в коллекцию в том же порядке, в котором они представлены в сигнатуре метода. Для отображения **параметры** диалоговое окно, где можно задать это свойство, нажмите кнопку с многоточием в **параметры** поле таблицы свойств. Нажмите кнопку **создать аргумент** кнопку, чтобы добавить параметры.|
@@ -64,6 +64,6 @@ ms.locfileid: "36757770"
 ## <a name="see-also"></a>См. также
 
 - [Примитивы](../workflow-designer/primitives-activity-designers.md)
-- [назначить](../workflow-designer/assign-activity-designer.md)
-- [Задержка](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

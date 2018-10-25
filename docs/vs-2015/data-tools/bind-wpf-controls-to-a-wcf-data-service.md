@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812430"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ ms.locfileid: "49251840"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Создание модели данных с использованием сущностей (EDM), сформированной из данных в учебной базе данных AdventureWorksLT.  
+- Создание модели данных с использованием сущностей (EDM), сформированной из данных в учебной базе данных AdventureWorksLT.  
   
--   Создание [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , предоставляющего данные в модели EDM приложению WPF.  
+- Создание [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , предоставляющего данные в модели EDM приложению WPF.  
   
--   Создание набора элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окно в конструктор WPF.  
+- Создание набора элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окно в конструктор WPF.  
   
--   Создание кнопок для перехода вперед и назад по записям клиентов.  
+- Создание кнопок для перехода вперед и назад по записям клиентов.  
   
--   Создание кнопки, сохраняющий изменения данных в элементах управления для [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] и базовом источнике данных.  
+- Создание кнопки, сохраняющий изменения данных в элементах управления для [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] и базовом источнике данных.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
+  Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
   
--   Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Модели данных в [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Модели данных в [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Создание проекта службы  
  Начните работу с данным пошаговым руководством с создания проекта для [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ ms.locfileid: "49251840"
   
 #### <a name="to-create-the-data-bound-controls"></a>Порядок создания элементов управления с привязкой к данным  
   
-1.  В **источников данных** окно, щелкните стрелку раскрывающегося меню **SalesOrderHeaders** узел и выберите **сведения**.  
+1. В **источников данных** окно, щелкните стрелку раскрывающегося меню **SalesOrderHeaders** узел и выберите **сведения**.  
   
-2.  Разверните **SalesOrderHeaders** узла.  
+2. Разверните **SalesOrderHeaders** узла.  
   
-3.  В этом примере некоторые поля не будут отображаться, поэтому щелкните раскрывающееся меню рядом со следующих узлов и выберите **None**:  
+3. В этом примере некоторые поля не будут отображаться, поэтому щелкните раскрывающееся меню рядом со следующих узлов и выберите **None**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **столбец ROWGUID**  
+   - **столбец ROWGUID**  
   
      Это действие не позволяет Visual Studio создать элементы управления с привязкой к данным для этих узлов на следующем шаге. В этом пошаговом руководстве предполагается, что конечному пользователю не требуется просматривать эти данные.  
   
-4.  Из **источников данных** окно, перетащите **SalesOrderHeaders** узел на строку сетки под строкой с кнопками.  
+4. Из **источников данных** окно, перетащите **SalesOrderHeaders** узел на строку сетки под строкой с кнопками.  
   
-     Visual Studio создает XAML и код, который создает набор элементов управления, привязанных к данным в **продукта** таблицы. Дополнительные сведения о созданных XAML и кода, см. в разделе [элементы управления WPF, привязка к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio создает XAML и код, который создает набор элементов управления, привязанных к данным в **продукта** таблицы. Дополнительные сведения о созданных XAML и кода, см. в разделе [элементы управления WPF, привязка к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  В конструкторе щелкните текстовое поле рядом с полем **Customer ID** метки.  
+5. В конструкторе щелкните текстовое поле рядом с полем **Customer ID** метки.  
   
-6.  В **свойства** окно, выберите флажок рядом с полем **IsReadOnly** свойство.  
+6. В **свойства** окно, выберите флажок рядом с полем **IsReadOnly** свойство.  
   
-7.  Задайте **IsReadOnly** свойство для каждого из следующих полей:  
+7. Задайте **IsReadOnly** свойство для каждого из следующих полей:  
   
-    -   **Номер заказа на покупку**  
+   -   **Номер заказа на покупку**  
   
-    -   **Идентификатор заказа на продажу**  
+   -   **Идентификатор заказа на продажу**  
   
-    -   **Номер заказа на продажу**  
+   -   **Номер заказа на продажу**  
   
 ## <a name="load-the-data-from-the-service"></a>Загрузка данных из службы  
  Используйте прокси-объект службы для загрузки торговых данных из службы. Затем назначьте возвращенные данные в источник данных для <xref:System.Windows.Data.CollectionViewSource> в окне WPF.  

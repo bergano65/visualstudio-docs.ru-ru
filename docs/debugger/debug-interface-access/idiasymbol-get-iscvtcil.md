@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isCVTCIL | Документы Microsoft
+title: IDiaSymbol::get_isCVTCIL | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a959b145775bdc1ea5e6073e03b304ad33f84c83
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836467"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-Возвращает флаг, указывающий модуль было ли преобразование из модуля общих промежуточного языка (CIL) собственный модуль.  
+Получает флаг, указывающий модуль был ли преобразован из модуля общих промежуточного языка (CIL) модуль в машинном коде.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT get_isCVTCIL(
  [out] Возвращает `TRUE` Если модуль был преобразован из CIL в машинный код; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagCompilandDetails` символ типа (см. [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
+ Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
   
 ## <a name="requirements"></a>Требования  
   

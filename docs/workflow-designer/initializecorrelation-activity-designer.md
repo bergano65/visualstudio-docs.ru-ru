@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879887"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Конструктор действия InitializeCorrelation
 
@@ -42,7 +42,7 @@ ms.locfileid: "37117177"
 В следующей таблице показаны <xref:System.ServiceModel.Activities.InitializeCorrelation> свойства и показывается, как они используются в конструкторе. Эти свойства можно изменить в **свойства** окне или на поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>. По умолчанию используется InitializeCorrelation.<br /><br /> Несмотря на то что использование нестандартное значение для понятного имени <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> используется для привязки действий рабочих процессов в корреляции.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Словарь данных корреляции привязывает сообщения к данному экземпляру рабочего потока.<br /><br /> Используйте **инициализация корреляции** диалоговое окно для настройки <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Дополнительные сведения об использовании это диалоговое окно, см. в разделе [диалоговое окно редактора коллекции типа](../workflow-designer/type-collection-editor-dialog-box.md) статьи.|
@@ -52,6 +52,6 @@ ms.locfileid: "37117177"
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Отправить](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

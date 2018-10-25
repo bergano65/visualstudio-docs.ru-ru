@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824193"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Пошаговое руководство: Отображение отображение подсказок
 Кратких сведений является функцией IntelliSense, отображающий сигнатуры методов и описания, когда пользователь перемещает указатель на имя метода. Характеристики на основе языка, например кратких сведений можно реализовать путем определения идентификаторов, для которых вы хотите предоставить описания кратких сведений, а также Создание всплывающей подсказки, в которой для отображения содержимого. Кратких сведений можно определить в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и отображения кратких сведений для только этого типа или можно отобразить кратких сведений для существующих типов (например, «text»). В этом пошаговом руководстве показано, как для отображения кратких сведений для типа содержимого «text».  
   
  В примере кратких сведений в этом пошаговом руководстве отображает всплывающие подсказки при наведении указателя мыши на имени метода. Такой подход требует реализации этих четырех интерфейсов:  
   
--   исходный интерфейс  
+- исходный интерфейс  
   
--   интерфейс поставщика источника  
+- интерфейс поставщика источника  
   
--   интерфейс контроллера  
+- интерфейс контроллера  
   
--   интерфейс поставщика контроллера  
+- интерфейс поставщика контроллера  
   
- Поставщики источника и контроллера, компоненты Managed Extensibility Framework (MEF) и несут ответственность за экспортирование классов источника и контроллера и импорт служб и брокеры, такие как <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, который создает текст всплывающей подсказки буфер и <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, который запускает сеанс кратких сведений.  
+  Поставщики источника и контроллера, компоненты Managed Extensibility Framework (MEF) и несут ответственность за экспортирование классов источника и контроллера и импорт служб и брокеры, такие как <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, который создает текст всплывающей подсказки буфер и <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, который запускает сеанс кратких сведений.  
   
- В этом примере источник кратких сведений использует жестко список имен методов и описаний, но в полной реализации языковой службы и документацию по языку несут ответственность за предоставление этого содержимого.  
+  В этом примере источник кратких сведений использует жестко список имен методов и описаний, но в полной реализации языковой службы и документацию по языку несут ответственность за предоставление этого содержимого.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не нужно установить пакет SDK для Visual Studio из центра загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -55,7 +55,7 @@ ms.locfileid: "39500034"
   
 #### <a name="to-implement-the-quickinfo-source"></a>Для реализации источник кратких сведений  
   
-1.  Добавьте файл класса и назовите его `TestQuickInfoSource`.  
+1.  Добавьте файл класса с именем `TestQuickInfoSource`.  
   
 2.  Добавьте ссылку на *Microsoft.VisualStudio.Language.IntelliSense*.  
   
@@ -154,7 +154,7 @@ ms.locfileid: "39500034"
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  Импорт <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> как свойство.  
+2.  Импортируйте <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> как свойство.  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByName | Документы Microsoft
+title: IDiaSession::findAcceleratorInlineesByName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e95193b361dcfe0935d209bf1fc3687914e1c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 240315fed330c72a8fe180056642c9aff0fb96aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864053"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Возвращает перечисление символы для встроенные рамки, соответствующий имени заданной встроенной функции.  
+Возвращает перечисление символы для встроенных кадров, соответствующий имени функции задан встроенным.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,19 +34,19 @@ HRESULT findAcceleratorInlineeLinesByName (
   
 #### <a name="parameters"></a>Параметры  
  `name`  
- [in] Имя функции встроенного кода для поиска.  
+ [in] Имя функции встраиваемого метода для поиска.  
   
  `option`  
- [in] Параметры поиска имени, используемый при поиске встроенного кадры, соответствуют `name`. Дополнительные сведения см. в разделе [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md).  
+ [in] Параметры поиска имени, используемый при поиске для встроенных кадров, соответствуют свойствам `name`. Дополнительные сведения см. в разделе [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).  
   
  `ppResult`  
  [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Эта функция осуществляет поиск inlinees только внутри функции-заглушки сочетаний клавиш. Пропускает записи процедура собственного C++.  
+ Эта функция осуществляет поиск inlinees только внутри функции-заглушки сочетаний клавиш. Он игнорирует собственного C++ процедуру записи.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
