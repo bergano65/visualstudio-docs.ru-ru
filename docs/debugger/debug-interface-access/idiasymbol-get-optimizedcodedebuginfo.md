@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_optimizedCodeDebugInfo | Документы Microsoft
+title: IDiaSymbol::get_optimizedCodeDebugInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2032fab7263b3fff2645b5fccd5844a45dbb85e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0b722455bf333eccfef2e670b3a0ed1e09381e48
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918991"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
-Возвращает флаг, указывающий, содержит ли функция отладочную информацию, предназначенную для оптимизированного кода.  
+Получает флаг, указывающий, содержит ли функция отладочной информации, характерное для оптимизированного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_optimizedCodeDebugInfo(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если оптимизированной функции или метки, содержит данные отладки; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если Оптимизированная функция или метка содержит сведения об отладке; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   

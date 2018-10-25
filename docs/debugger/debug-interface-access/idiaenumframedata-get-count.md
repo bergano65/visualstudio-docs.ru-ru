@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::get_Count | Документы Microsoft
+title: IDiaEnumFrameData::get_Count | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a15df11cbdc5cc13aa991e5a7704929e65e29875
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 34cf638b9d0448adc6ec06a09f41a93e65fdc362
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923859"
 ---
 # <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
 Возвращает число элементов данных кадра.  
@@ -37,7 +37,7 @@ HRESULT get_Count (
  [out] Возвращает число элементов данных кадра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

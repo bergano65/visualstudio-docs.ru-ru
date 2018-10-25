@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_sourceFileName | Документы Microsoft
+title: IDiaSymbol::get_sourceFileName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e058061a7163ed5f14268c64e902214599bcc1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74c13470c39309264121aa88ad5bacd24511c7eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941390"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
-Возвращает имя файла объекта компиляции исходного файла.  
+Возвращает имя исходного файла единице компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_sourceFileName (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает имя файла объекта компиляции исходного файла.  
+ [out] Возвращает имя файла исходного файла единице компиляции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

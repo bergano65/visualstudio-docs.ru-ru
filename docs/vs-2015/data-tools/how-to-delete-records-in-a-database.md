@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938621"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Практическое руководство. Удаление записей из базы данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ ms.locfileid: "49210188"
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Для удаления записей из базы данных, использующей TableAdapter.Update-метод  
   
--   Удаление записей из нужной <xref:System.Data.DataTable> , удалив <xref:System.Data.DataRow> объекты из таблицы. Дополнительные сведения см. в разделе [как: удаление строк в таблице DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). После строки удаляются из <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>. Ниже показано, как удалить запись <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод для передачи изменения и удаления строки из базы данных. (В этом примере базы данных Northwind `Region` таблицы.)  
+- Удаление записей из нужной <xref:System.Data.DataTable> , удалив <xref:System.Data.DataRow> объекты из таблицы. Дополнительные сведения см. в разделе [как: удаление строк в таблице DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). После строки удаляются из <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>. Ниже показано, как удалить запись <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод для передачи изменения и удаления строки из базы данных. (В этом примере базы данных Northwind `Region` таблицы.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Если приложение использует объекты для хранения данных в приложении, можно использовать методы DBDirect адаптера таблицы для удаления данных непосредственно из базы данных. Вызов `Delete` метод удаляет записи из базы данных на основе значений параметров, переданный.  
+  Если приложение использует объекты для хранения данных в приложении, можно использовать методы DBDirect адаптера таблицы для удаления данных непосредственно из базы данных. Вызов `Delete` метод удаляет записи из базы данных на основе значений параметров, переданный.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Для удаления записей из базы данных, использующей TableAdapter.DELETE-метод  
   

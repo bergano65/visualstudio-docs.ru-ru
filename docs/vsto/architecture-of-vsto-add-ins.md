@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933447"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Архитектура надстроек VSTO
   Надстройки VSTO, созданные с помощью Office Developer Tools в Visual Studio, имеют архитектурные компоненты, предназначенные для обеспечения стабильности и безопасности и позволяющие им тесно взаимодействовать с Microsoft Office. В этой статье описываются следующие аспекты надстроек VSTO.  
   
--   [Понять надстроек VSTO](#UnderstandingAddIns)  
+- [Понять надстроек VSTO](#UnderstandingAddIns)  
   
--   [Компоненты надстроек VSTO](#AddinComponents)  
+- [Компоненты надстроек VSTO](#AddinComponents)  
   
--   [Как надстройки VSTO работают с приложениями Microsoft Office](#HowAddinsWork)  
+- [Как надстройки VSTO работают с приложениями Microsoft Office](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Общие сведения о создании надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+  Общие сведения о создании надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Понять надстроек VSTO  
  При использовании Office developer tools в Visual Studio для создания надстройки VSTO, можно создать сборку управляемого кода, которая загружается приложением Microsoft Office. После загрузки сборки надстройка VSTO может отвечать на события, возникающие в приложении (например, если пользователь выбирает пункт меню). Надстройка VSTO также может вызывать объектную модель для автоматизации и расширения приложения. Кроме того, она может использовать любой из классов в [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  

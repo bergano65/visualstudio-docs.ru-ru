@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918029"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -362,7 +362,7 @@ Windows использует несколько тем высокой контр
 
 Добавить в реестр с двумя значениями:
 
-| name | Тип | Данные | Описание: |
+| name | Тип | Данные | Описание |
 | --- | --- | --- | --- |
 | Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для идентификации категории |
 | Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage службы, которая поддерживает категории |
@@ -375,7 +375,7 @@ Windows использует несколько тем высокой контр
 
 Добавить в реестр с двумя значениями:
 
-| name | Тип | Данные | Описание: |
+| name | Тип | Данные | Описание |
 |--- | --- | --- | --- |
 | Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для идентификации категории |
 | Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage службы, которая поддерживает категории |
@@ -425,7 +425,7 @@ Windows использует несколько тем высокой контр
 
 - **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) интерфейс. Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [onfontchanged и задает](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) метод, если выбран новый шрифт.
 
- **OR**
+  **OR**
 
 - **опрос интегрированной среды разработки для изменения**. Это можно сделать через реализовать систему [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) интерфейс. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) метода можно получить данные шрифта и цвета для отображаемых элементов. Дополнительные сведения о параметры шрифта и цвета, см. в статье MSDN [параметры доступа к хранятся шрифта и цвета](../accessing-stored-font-and-color-settings.md).
 

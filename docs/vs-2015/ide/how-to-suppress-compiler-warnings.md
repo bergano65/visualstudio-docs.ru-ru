@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932316"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ ms.locfileid: "49286095"
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Отключение некоторых предупреждений для Visual Basic  
   
-1.  В **обозревателе решений** выберите проект, в котором вы хотите отключить предупреждения.  
+1. В **обозревателе решений** выберите проект, в котором вы хотите отключить предупреждения.  
   
-2.  В строке меню выберите **Проект**, затем — **Выгрузить проект**.  
+2. В строке меню выберите **Проект**, затем — **Выгрузить проект**.  
   
-3.  В **обозревателе решений**откройте контекстное меню для своего проекта и выберите **Правка**_имя_проекта_**.vbproj**.  
+3. В **обозревателе решений**откройте контекстное меню для своего проекта и выберите **Правка**_имя_проекта_**.vbproj**.  
   
-     Файл проекта откроется в редакторе кода.  
+    Файл проекта откроется в редакторе кода.  
   
-4.  Найдите элемент `<NoWarn></NoWarn>` в конфигурации сборки, используемый для построения.  
+4. Найдите элемент `<NoWarn></NoWarn>` в конфигурации сборки, используемый для построения.  
   
-     В следующем примере показан выделенный полужирным шрифтом элемент `<NoWarn></NoWarn>` для отладочной конфигурации сборки на платформе x86:  
+    В следующем примере показан выделенный полужирным шрифтом элемент `<NoWarn></NoWarn>` для отладочной конфигурации сборки на платформе x86:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Добавьте один или несколько номеров предупреждений в качестве значения элемента `<NoWarn>`. Если вы указываете несколько номеров предупреждений, разделяйте их запятыми, как показано в следующем примере.  
+5. Добавьте один или несколько номеров предупреждений в качестве значения элемента `<NoWarn>`. Если вы указываете несколько номеров предупреждений, разделяйте их запятыми, как показано в следующем примере.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Сохраните изменения в VBPROJ-файле.  
+6. Сохраните изменения в VBPROJ-файле.  
   
-7.  В строке меню выберите **Проект**, затем — **Перезагрузить проект**.  
+7. В строке меню выберите **Проект**, затем — **Перезагрузить проект**.  
   
-8.  В строке меню последовательно выберите пункты **Сборка**, **Перестроить решение**.  
+8. В строке меню последовательно выберите пункты **Сборка**, **Перестроить решение**.  
   
-     В окне **Вывод** указанные предупреждения больше не отображаются.  
+    В окне **Вывод** указанные предупреждения больше не отображаются.  
   
- Дополнительные сведения см. в статье [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Дополнительные сведения см. в статье [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md)   

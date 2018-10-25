@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928689"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ ms.locfileid: "49250624"
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Создание отчета о зависании Visual Studio во время отладки с помощью набора средств Visual Studio для Unity  
   
-1.  Откройте новый экземпляр Visual Studio.  
+1. Откройте новый экземпляр Visual Studio.  
   
-2.  Откройте диалоговое окно "Присоединение к процессу". В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Присоединение к процессу**.  
+2. Откройте диалоговое окно "Присоединение к процессу". В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Присоединение к процессу**.  
   
-3.  Присоедините отладчик к замороженному экземпляру Visual Studio. В диалоговом окне **Присоединение к процессу** выберите замороженный экземпляр Visual Studio в таблице **Доступные процессы** , а затем нажмите кнопку **Присоединить** .  
+3. Присоедините отладчик к замороженному экземпляру Visual Studio. В диалоговом окне **Присоединение к процессу** выберите замороженный экземпляр Visual Studio в таблице **Доступные процессы** , а затем нажмите кнопку **Присоединить** .  
   
-4.  Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Прервать все** или просто нажмите **CTRL+ALT+BREAK**.  
+4. Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Прервать все** или просто нажмите **CTRL+ALT+BREAK**.  
   
-5.  Создайте дамп потока. В окне командной строки введите следующую команду и нажмите клавишу **Ввод**.  
+5. Создайте дамп потока. В окне командной строки введите следующую команду и нажмите клавишу **Ввод**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.  
+    Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.  
   
-6.  Наконец, отправьте дамп потока по адресу [vstusp@microsoft.com](mailto:vstusp@microsoft.com), а также опишите, что вы делали, когда среда Visual Studio зависла.
+6. Наконец, отправьте дамп потока по адресу [vstusp@microsoft.com](mailto:vstusp@microsoft.com), а также опишите, что вы делали, когда среда Visual Studio зависла.
 

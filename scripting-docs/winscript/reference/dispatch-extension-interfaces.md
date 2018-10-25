@@ -1,5 +1,5 @@
 ---
-title: Интерфейсы расширения отправки | Документы Microsoft
+title: Интерфейсы расширения отправки | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,27 +15,27 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5617019d15648b3aabd5d06df0f3662c4883183
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940935"
 ---
 # <a name="dispatch-extension-interfaces"></a>Интерфейсы расширения отправки
 Файл заголовка DispEx.h предоставляет интерфейсы, перечисленные в этом разделе.  
-  
-## <a name="in-this-section"></a>Содержание  
- Для сервера сценариев Windows и обработчики скриптов Windows являются следующие интерфейсы.  
-  
--   [Интерфейсы ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)  
-  
--   [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
-  
--   [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)  
-  
--   [Интерфейс IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)  
-  
- Для сервера сценариев Windows доступны следующие интерфейсы:  
-  
--   [Интерфейс IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)
+
+## <a name="in-this-section"></a>В этом разделе  
+ Следующие интерфейсы предназначены для Microsoft Windows Script Host и обработчики сценариев Windows.  
+
+- [Интерфейсы ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)  
+
+- [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+
+- [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)  
+
+- [Интерфейс IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)  
+
+  Следующие интерфейсы характерные для сервера сценариев Windows:  
+
+- [Интерфейс IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)

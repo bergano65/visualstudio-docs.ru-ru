@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Документы Microsoft
+title: IDebugProgramPublisher2::SetDebuggerPresent | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5725d6e143f10cd3a3fae18398ec0cb08729fa34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942118"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Указывает издателя программы, отладчик присутствует и работает.  
+Указывает издателя программы, что отладчик присутствует и работает.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>Параметры  
  `fDebuggerPresent`  
- [in] Не равно нулю (`TRUE`), если отладчик присутствует, ноль (`FALSE`) Если это не так.  
+ [in] Ненулевое значение (`TRUE`), если отладчик присутствует, ноль (`FALSE`) Если это не так.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Наличие или отсутствие отладчик отражается в данных, возвращенных [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод: задается значение, возвращаемое существует или очищен во время предыдущего вызова для `SetDebuggerPresent` метод.  
+ Наличие или отсутствие отладчика отражается в данных, возвращаемых из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод: значение, возвращаемое существует задается или отменить с предыдущего вызова `SetDebuggerPresent` метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
