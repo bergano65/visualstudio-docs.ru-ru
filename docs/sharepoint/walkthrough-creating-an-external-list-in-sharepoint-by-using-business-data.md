@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913973"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -232,12 +232,12 @@ ms.locfileid: "42635545"
 
 5. В `ContactService` класса, замените `ReadList` метод следующим кодом. Этот код выполняет следующие задачи:
 
-    - Извлекает данные из таблицы Contacts базы данных AdventureWorks.
+   - Извлекает данные из таблицы Contacts базы данных AdventureWorks.
 
-    - Возвращает список сущностей, обратитесь в службу BDC.
+   - Возвращает список сущностей, обратитесь в службу BDC.
 
-    > [!NOTE]
-    > Замените значение `ServerName` поле с именем сервера.
+     > [!NOTE]
+     > Замените значение `ServerName` поле с именем сервера.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

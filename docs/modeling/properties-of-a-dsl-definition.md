@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893940"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Свойства определения доменного языка
 Определение свойств DslDefinition *доменный язык* определения свойств, таких как нумерация версий. Свойства DslDefinition отображаются в **свойства** окна, щелкнув пустую область схемы в *конструктора доменного языка*.
@@ -26,7 +26,7 @@ ms.locfileid: "47857707"
  DslDefinition имеет свойства, в следующей таблице.
 
 |Свойство.|Описание|Значение по умолчанию|
-|--------------|-----------------|-------------|
+|-|-|-|
 |Модификатор доступа|Определяет, является ли модификатор доступа для доменного класса открытым или внутренними.|public|
 |Настраиваемые атрибуты|Пользовательские атрибуты для доменного класса.<br /><br /> **Примечание** нажать кнопку обзора, чтобы добавить атрибут.|\<None >|
 |Название организации|Имя текущего имени компании в системном реестре.|Текущее имя компании|

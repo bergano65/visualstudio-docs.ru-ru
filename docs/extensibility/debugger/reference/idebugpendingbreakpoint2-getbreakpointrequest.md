@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Документы Microsoft
+title: IDebugPendingBreakpoint2::GetBreakpointRequest | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49e83eb882388ca69fac1da1ae43f488345fe141
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db1553295e3b8827330c78c1f6f35c21f1380cb4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921006"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Возвращает точку останова запрос, который использовался для создания этой ожидающая точка останова.  
+Возвращает точки останова запрос, который был использован для создания этого ожидающая точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +42,10 @@ int GetBreakpointRequest(
   
 #### <a name="parameters"></a>Параметры  
  `ppBPRequest`  
- [out] Возвращает [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, представляющий запроса точки останова, который использовался для создания этого ожидающих точек останова.  
+ [out] Возвращает [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, представляющий запроса точки останова, которая использовалась для создания данного ожидающих точек останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

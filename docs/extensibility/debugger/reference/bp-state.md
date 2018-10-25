@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Документы Microsoft
+title: BP_STATE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8908b61323c80891f93158046b9c7e821287d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0527cefeaed58e990d8474c25a522788e4dba6fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924256"
 ---
 # <a name="bpstate"></a>BP_STATE
-Задает существование связанная точка останова, а также указывает, включено ли.  
+Задает существование связанная точка останова, а также указывает, включена ли.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,13 +54,13 @@ public enum enum_BP_STATE {
  Указывает, что точка останова была удалена.  
   
  BPS_DISABLED  
- Указывает, что точка останова отключена.  
+ Указывает, что точка останова отключен.  
   
  BPS_ENABLED  
  Указывает, что точка останова включена.  
   
 ## <a name="remarks"></a>Примечания  
- Возвращенные [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.  
+ Возвращаемые [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

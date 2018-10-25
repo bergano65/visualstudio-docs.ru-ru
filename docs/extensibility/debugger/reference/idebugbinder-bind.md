@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Документы Microsoft
+title: IDebugBinder::Bind | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49e4254df9ec06813499237054ec916bb4b6c1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1210b84a52aa15d3c8e1bb73bc58d1fbe48a19d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920356"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Этот метод получает контекст памяти или объект, содержащий текущее значение символа.  
+Этот метод получает контекст в памяти или объект, содержащий текущее значение символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,7 +45,7 @@ int Bind(
   
 #### <a name="parameters"></a>Параметры  
  `pContainer`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , содержащий дочерние ссылается `pField`.  
+ [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , содержащая дочерние ссылается `pField`.  
   
  `pField`  
  [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющий символ.  
@@ -54,7 +54,7 @@ int Bind(
  [out] Возвращает `IDebugObject` , представляющий экземпляр символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

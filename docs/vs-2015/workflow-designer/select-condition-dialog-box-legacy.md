@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897775"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Диалоговое окно «Выбор условия» (для прежних версий)
 Здесь описывается, как использовать **выбрать условие** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  **Выбрать условие** диалоговое окно используется для выбора условия декларативного правила попытка присвоить свойству условия действия. Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Сведения о доступе к **выбрать условие** диалоговом окне см. в разделе [как: создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Сведения о доступе к **выбрать условие** диалоговом окне см. в разделе [как: создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- В следующей таблице описаны элементы пользовательского интерфейса (UI) **выбрать условие** диалоговое окно.  
+  В следующей таблице описаны элементы пользовательского интерфейса (UI) **выбрать условие** диалоговое окно.  
   
 |Элемент пользовательского интерфейса|Описание|  
 |----------------|-----------------|  

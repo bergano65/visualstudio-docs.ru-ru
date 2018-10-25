@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924841"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Практическое: изменение размера элементов управления Bookmark
   Размер элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> задается при его добавлении в документ Microsoft Office Word. Его также можно изменить позднее.  
@@ -30,21 +30,21 @@ ms.locfileid: "35673956"
   
  Существует три способа изменения размера закладки.  
   
--   Добавление или удаление текста в элементе управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Добавление или удаление текста в элементе управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     При добавлении текста в закладку размер закладки автоматически увеличивается, чтобы вместить новый текст. При удалении текста размер закладки автоматически уменьшается.  
+   При добавлении текста в закладку размер закладки автоматически увеличивается, чтобы вместить новый текст. При удалении текста размер закладки автоматически уменьшается.  
   
--   Изменение свойств <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Изменение свойств <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .и <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     Это удобно, когда вы изменяете размер только на несколько символов.  
+   Это удобно, когда вы изменяете размер только на несколько символов.  
   
--   Повторное создание элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Повторное создание элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     Это удобно, если нужно существенно изменить размер или положение закладки.  
+   Это удобно, если нужно существенно изменить размер или положение закладки.  
   
- В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения. Дополнительные сведения см. в разделе [как: Добавление закладки элементы управления в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения. Дополнительные сведения см. в разделе [как: Добавление закладки элементы управления в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Изменение свойств начала и окончания  
   

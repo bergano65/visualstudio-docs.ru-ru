@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName | Документы Microsoft
+title: IDebugThread2::GetName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ef4ff5a2e1896bccaab82b32c1244da9f1ca2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 670ee7b9fe8262e981f3c0abeb57710c2da9b0e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898477"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Возвращает имя потока.  
@@ -44,10 +44,10 @@ int GetName (
  [out] Возвращает имя потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Извлечь имя всегда является имя, которое может отображаться, и это имя Описание потока. Имя потока может быть производным от архитектуры во время выполнения, что поддерживает именованные потоки, или это может быть именем, состоящим из модуля отладки. Кроме того, можно задать имя потока, с помощью вызова [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) метод.  
+ Полученный именем всегда является имя, которое может отображаться, и это имя Описание потока. Имя потока может быть производным от архитектуры среды выполнения, что поддерживает именованные потоки, или его имя на основе обработчика отладки. Кроме того, можно задать имя потока, с помощью вызова [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

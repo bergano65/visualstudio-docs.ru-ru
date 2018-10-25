@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921998"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Пошаговое руководство: Фрагменты кода реализация
 Можно создавать фрагменты кода и включать их в расширении редактора, чтобы пользователи расширения их можно добавить в свой собственный код.  
@@ -27,13 +27,13 @@ ms.locfileid: "39566601"
   
  В этом пошаговом руководстве объясняется, как выполнять эти задачи:  
   
-1.  Создайте и зарегистрируйте фрагменты кода для конкретного языка.  
+1. Создайте и зарегистрируйте фрагменты кода для конкретного языка.  
   
-2.  Добавить **вставить фрагмент** команды в контекстное меню.  
+2. Добавить **вставить фрагмент** команды в контекстное меню.  
   
-3.  Реализуйте расширение фрагмента кода.  
+3. Реализуйте расширение фрагмента кода.  
   
- Это пошаговое руководство основано на [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Это пошаговое руководство основано на [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не устанавливайте Visual Studio SDK в центре загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -43,72 +43,72 @@ ms.locfileid: "39566601"
   
  Следующие шаги демонстрируют, как создавать фрагменты кода и связывать их с конкретный идентификатор GUID.  
   
-1.  Создайте следующую структуру каталогов:  
+1. Создайте следующую структуру каталогов:  
   
-     **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
   
-     где *% InstallDir %* — папка установки Visual Studio. (Несмотря на то, что этот путь обычно используется для установки фрагментов кода, можно указать любой путь.)  
+    где *% InstallDir %* — папка установки Visual Studio. (Несмотря на то, что этот путь обычно используется для установки фрагментов кода, можно указать любой путь.)  
   
-2.  Создайте в папке \1033\ *.xml* файл и назовите его **TestSnippets.xml**. (Несмотря на то, что это имя обычно используется для индекса файл фрагмента кода, можно указать любое имя, до тех пор, пока он имеет *.xml* расширение имени файла.) Добавьте следующий текст и удалить местозаполнитель GUID и добавлять свои собственные.  
+2. Создайте в папке \1033\ *.xml* файл и назовите его **TestSnippets.xml**. (Несмотря на то, что это имя обычно используется для индекса файл фрагмента кода, можно указать любое имя, до тех пор, пока он имеет *.xml* расширение имени файла.) Добавьте следующий текст и удалить местозаполнитель GUID и добавлять свои собственные.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Создайте файл в папку фрагментов, назовите его **тестирования**`.snippet`, а затем добавьте следующий текст:  
+3. Создайте файл в папку фрагментов, назовите его **тестирования**`.snippet`, а затем добавьте следующий текст:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- Ниже показано, как зарегистрировать фрагменты кода.  
+   Ниже показано, как зарегистрировать фрагменты кода.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Чтобы зарегистрировать фрагменты кода для определенного идентификатора GUID  
   

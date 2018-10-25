@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880563"
 ---
 # <a name="detecting-system-requirements"></a>Определение требований к системе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "49187481"
 ## <a name="detecting-visual-studio-editions"></a>Обнаружение выпуски Visual Studio  
  Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение раздела реестра Install (REG_DWORD) 1 в соответствующую папку, как показано в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:  
   
-1.  Предприятие  
+1. Предприятие  
   
-2.  Professional  
+2. Professional  
   
-3.  Сообщество  
+3. Сообщество  
   
- При установке «выше» edition добавляются разделы реестра для этого выпуска также, как и для выпусков «ниже». То есть если установлен выпуск Enterprise, ключ установки равен 1, для предприятия, а также в выпусках Professional и Community. Поэтому необходимо проверить только «высокий» выпуск, что нужно.  
+   При установке «выше» edition добавляются разделы реестра для этого выпуска также, как и для выпусков «ниже». То есть если установлен выпуск Enterprise, ключ установки равен 1, для предприятия, а также в выпусках Professional и Community. Поэтому необходимо проверить только «высокий» выпуск, что нужно.  
   
 > [!NOTE]
 >  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Visual Studio приведены в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  

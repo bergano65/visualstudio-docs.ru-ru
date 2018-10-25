@@ -18,12 +18,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc470e08511c7bda44bfda2012636b626ba41e83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925933"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,21 +122,21 @@ ms.locfileid: "49174633"
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве были показаны только небольшая часть действий, выполняемых с расширением Visual Studio. Ниже приведен краткий список прочего (довольно просто), которые можно выполнить с помощью расширений Visual Studio:  
   
-1.  Можно выполнять другие действия с помощью команды простого меню:  
+1. Можно выполнять другие действия с помощью команды простого меню:  
   
-    1.  Добавьте собственный значок: [добавление значков команды меню](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Добавьте собственный значок: [добавление значков команды меню](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  Изменить текст команды меню: [изменение текста команды меню](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Изменить текст команды меню: [изменение текста команды меню](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Добавить контекстное меню для команды: [привязка сочетания клавиш к пунктам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Добавить контекстное меню для команды: [привязка сочетания клавиш к пунктам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  Добавить различные команды, меню и панелей инструментов: [расширение меню и команд](../extensibility/extending-menus-and-commands.md)  
+2. Добавить различные команды, меню и панелей инструментов: [расширение меню и команд](../extensibility/extending-menus-and-commands.md)  
   
-3.  Добавление окна инструментов и расширения встроенных окон инструментов Visual Studio: [расширение и настройка средства Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Добавление окна инструментов и расширения встроенных окон инструментов Visual Studio: [расширение и настройка средства Windows](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  Добавьте IntelliSense, предложения кода и другие функции к существующим редакторов кода: [расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)  
+4. Добавьте IntelliSense, предложения кода и другие функции к существующим редакторов кода: [расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Добавьте параметры и свойства страницы и пользовательские параметры для расширения: [расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширение пользовательские настройки и параметры](../extensibility/extending-user-settings-and-options.md)  
+5. Добавьте параметры и свойства страницы и пользовательские параметры для расширения: [расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширение пользовательские настройки и параметры](../extensibility/extending-user-settings-and-options.md)  
   
- Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширение проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создания пользовательских редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или Реализация расширения в изолированной оболочки: [изолированной оболочки Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширение проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создания пользовательских редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или Реализация расширения в изолированной оболочки: [изолированной оболочки Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 

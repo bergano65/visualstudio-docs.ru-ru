@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken | Документы Microsoft
+title: IDebugComPlusSymbolProvider::GetNameFromToken | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920434"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Возвращает имя, связанное с указанным токеном заданный объект его метаданных.  
+Возвращает имя, связанное с заданным токеном, заданный его объект метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,16 +47,16 @@ int GetNameFromToken (
  [in] Объект, содержащий сведения о метаданных.  
   
  `dwToken`  
- [in] Токен должен называться.  
+ [in] Токен имел имя.  
   
  `pbstrName`  
- [out] Имя, которое соответствует маркер.  
+ [out] Имя, которое соответствует токену.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  

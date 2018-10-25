@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923788"
 ---
 # <a name="item-metadata-in-task-batching"></a>Метаданные элементов в пакетной обработке задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256988"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять задачи с использованием каждого пакета. Не так просто понять, какие именно элементы передаются с каким пакетом. В этом разделе рассматриваются наиболее распространенные сценарии, в которых используется пакетная обработка.  
   
--   Разделение списка элементов на пакеты  
+- Разделение списка элементов на пакеты  
   
--   Деление нескольких списков элементов на пакеты  
+- Деление нескольких списков элементов на пакеты  
   
--   Пакетная обработка одного элемента за раз  
+- Пакетная обработка одного элемента за раз  
   
--   Фильтрация списков элементов  
+- Фильтрация списков элементов  
   
- Дополнительные сведения о пакетной обработке с помощью [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] см. в статье [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md).  
+  Дополнительные сведения о пакетной обработке с помощью [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] см. в статье [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Разделение списка элементов на пакеты  
  Пакетная обработка позволяет разделить список элементов на различные пакеты на основе метаданных элементов и передать задаче каждый из пакетов отдельно. Это полезно при создании вспомогательных сборок.  

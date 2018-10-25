@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Документы Microsoft
+title: PROVIDER_FLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340531f9c943052c1abd51203f3937ccd111e314
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a44fa73a51f1f6da073c63be0873fbefc669b15d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910515"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
-Указывает нужные свойства необходимо получить от поставщика программы.  
+Задает требуемые свойства должны быть получены от поставщика программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,33 +57,33 @@ public enum enum_PROVIDER_FLAGS {
  Флаги не указан.  
   
  PFLAG_REMOTE_PORT  
- Вызывающий объект должен список программ на другом компьютере, чем [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ Вызывающий объект хочет список программ на разных компьютерах [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  PFLAG_DEBUGGEE  
- В настоящее время выполняется отладка процесса этим экземпляром [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ Процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запустить его.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запускать его.  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Просмотр событий.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] наблюдает за событиями.  
   
  PFLAG_GET_PROGRAM_NODES  
- Вызывающий объект должен `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.  
+ Вызывающий `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- Вызывающий объект должен `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.  
+ Вызывающий `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.  
   
 ## <a name="remarks"></a>Примечания  
  Эти флаги передаются следующие методы:  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- Эти значения могут быть объединены с помощью битового оператора `OR`.  
+  Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

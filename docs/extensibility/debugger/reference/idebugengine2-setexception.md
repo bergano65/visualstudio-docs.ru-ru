@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Документы Microsoft
+title: IDebugEngine2::SetException | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 371a5c45e7df725babab96587e5064e5290d80ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f200f02ec3a79c3ccdece3a4cc0ae5b10e2b491c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927604"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Указывает порядок обработки данного исключения отладчик (DE).  
+Указывает, как модуль отладки (DE) должен обрабатывать данного исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int SetException(
   
 #### <a name="parameters"></a>Параметры  
  `pException`  
- [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как отладить его.  
+ [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как выполнить его отладку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- DE удалось предложено остановить программу возникновения исключений во первый шанс обработки, вторую вероятность, либо не перезаписываются вообще.  
+ Чтобы остановить программу, генерации исключения в первый шанс обработки, второй вероятность того, можно было передать инструкцию DE или вообще не.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
