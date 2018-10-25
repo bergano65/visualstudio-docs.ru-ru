@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostId | Документы Microsoft
+title: IDebugProgramHost2::GetHostId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84225cf6d8f89bcf25f657b3f3b7dda74339272e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 74e4575eca8a9f67446a60737c051a574109b97e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831111"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Получает идентификатор процесса процесса, размещающего эту программу.  
+Получает идентификатор процесса для процесса, размещающего эту программу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetHostId(
  [in, out] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, которая заполняется информацией идентификатора процесса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

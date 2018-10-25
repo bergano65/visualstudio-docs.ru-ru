@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893680"
 ---
 # <a name="t4-import-directive"></a>Директива Import T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Стандартные импорты  
  Следующее пространство имен импортируется автоматически, поэтому для него не нужно создавать директиву импорта:  
   
--   `System`  
+- `System`  
   
- Кроме того, при использовании пользовательской директивы процессор директив может импортировать некоторые пространства имен автоматически.  
+  Кроме того, при использовании пользовательской директивы процессор директив может импортировать некоторые пространства имен автоматически.  
   
- Например, при создании шаблонов для доменного языка (DSL) не требуется создавать директивы импорта для следующих пространств имен:  
+  Например, при создании шаблонов для доменного языка (DSL) не требуется создавать директивы импорта для следующих пространств имен:  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   Пространство имен DSL  
+- Пространство имен DSL  
   
 ## <a name="see-also"></a>См. также  
  [Директива Assembly T4](../modeling/t4-assembly-directive.md)

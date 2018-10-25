@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByAddr | Документы Microsoft
+title: IDiaSymbol::findChildrenExByAddr | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0ec0f91cc8a16ab7078715872057c9cbe3fd3d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7398f3afdf8a6895d0feaec35ca33b95e9054060
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834868"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
-Получает дочерние элементы символа, которые являются допустимыми по заданному адресу.  
+Получает дочерние узлы символа, которые являются допустимыми с указанного адреса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,13 +38,13 @@ HRESULT findChildrenExByAddr (
   
 #### <a name="parameters"></a>Параметры  
  `symtag`  
- [in] Задает теги символов дочерних элементов, которые требуется получить, как определено в [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md). Значение `SymTagNull` для всех дочерних требуется получить.  
+ [in] Задает теги символов требуется получить дочерние элементы, как определено в [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Значение `SymTagNull` для всех дочерних элементов, требуется получить.  
   
  `name`  
- [in] Указывает имя дочерние элементы, которые требуется получить. Значение `NULL` для всех дочерних требуется получить.  
+ [in] Задает имя используемого дочерние элементы должны быть получены. Значение `NULL` для всех дочерних элементов, требуется получить.  
   
  `compareFlags`  
- [in] Задает параметры сравнения для применения к совпадению имен. Значения из [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md) перечисления может использоваться отдельно или в сочетании.  
+ [in] Задает параметры сравнения для применения к совпадению имен. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.  
   
  `address`  
  [in] Адрес символа.  
@@ -53,17 +53,17 @@ HRESULT findChildrenExByAddr (
  [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` Если хотя бы один дочерний символ найден, или возвращает `S_FALSE` , если дочерние элементы не были найдены; в противном случае возвращается код ошибки.  
+ Возвращает `S_OK` Если по крайней мере одного дочернего элемента этот символ найден, или возвращает `S_FALSE` дочерние элементы не найдены; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Локальные символы, которые возвращаются включают сведения о динамической диапазоне.  
+ Локальные символы, которые возвращаются включают сведения о динамической диапазона.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827590"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ ms.locfileid: "49215921"
   
  В более крупных организациях издатель и субъект развертывания часто являются двумя отдельными сущностями.  
   
--   Издатель группы, создающий приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+- Издатель группы, создающий приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
--   Средство развертывания группы, как правило, это ИТ-отдел, распространяющий приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] на настольных компьютерах в корпоративной среде организации.  
+- Средство развертывания группы, как правило, это ИТ-отдел, распространяющий приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] на настольных компьютерах в корпоративной среде организации.  
   
- Для того чтобы воспользоваться развертыванием надежных приложений, выполните следующие действия.  
+  Для того чтобы воспользоваться развертыванием надежных приложений, выполните следующие действия.  
   
 1.  Получите сертификат для издателя.  
   

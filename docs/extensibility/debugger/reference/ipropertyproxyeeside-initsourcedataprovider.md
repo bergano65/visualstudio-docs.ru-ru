@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Документы Microsoft
+title: IPropertyProxyEESide::InitSourceDataProvider | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ae2716fc76d77d1c670bb206168826c66c48ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41add9a334dd6e78a476134845db7d31664755c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871086"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Инициализирует исходные данные для этого объекта и возвращает объект, содержащий исходные данные.  
@@ -44,10 +44,10 @@ int InitSourceDataProvider(
  [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объекта  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод не выполняет все, что необходимо инициализировать объект, чтобы он мог вернуть [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) интерфейс для объекта данных. Это позволяет данных объекта для просмотра и, если это разрешено, изменять тип визуализатора.  
+ Этот метод не выполняет все, что необходим для инициализации объекта, поэтому он может возвращать [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) интерфейс для объекта данных. Благодаря этому данные объекта для просмотра и, если может, изменить тип визуализатора.  
   
 ## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

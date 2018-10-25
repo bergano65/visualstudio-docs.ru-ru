@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814563"
 ---
 # <a name="debugging-dll-projects"></a>Отладка проектов DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Следующие шаблоны создают DLL:  
   
--   Библиотека классов (C++, C# и Visual Basic)  
+- Библиотека классов (C++, C# и Visual Basic)  
   
--   (C++, C# и Visual Basic): Библиотека элементов управления Windows Forms  
+- (C++, C# и Visual Basic): Библиотека элементов управления Windows Forms  
   
-     Отладка библиотеки элементов управления Windows аналогична отладке проекта библиотеки классов. В большинстве случаев элемент управления Windows вызывается из другого проекта. При отладке вызывающего проекта можно осуществлять пошаговое выполнение элемента управления Windows, устанавливать точки останова и выполнять другие операции отладки. Дополнительные сведения см. в разделе [Элементы управления Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Отладка библиотеки элементов управления Windows аналогична отладке проекта библиотеки классов. В большинстве случаев элемент управления Windows вызывается из другого проекта. При отладке вызывающего проекта можно осуществлять пошаговое выполнение элемента управления Windows, устанавливать точки останова и выполнять другие операции отладки. Дополнительные сведения см. в разделе [Элементы управления Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# и Visual Basic): библиотека элементов управления веб  
+- (C# и Visual Basic): библиотека элементов управления веб  
   
-     Для получения дополнительной информации см. [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
+   Для получения дополнительной информации см. [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): Элементы управления ActiveX и Smart Device ActiveX библиотеки MFC  
+- (C++): Элементы управления ActiveX и Smart Device ActiveX библиотеки MFC  
   
-     Элементы управления ActiveX — это элементы управления, которые могут быть загружены через Интернет на компьютер клиента, а затем отображены и активированы на веб–страницах.  
+   Элементы управления ActiveX — это элементы управления, которые могут быть загружены через Интернет на компьютер клиента, а затем отображены и активированы на веб–страницах.  
   
-     Отладка элементов управления ActiveX аналогична отладке других типов элементов управления, поскольку они не могут быть запущены сами по себе, а должны быть внедрены в веб–страницу HTML. Дополнительные сведения см. в разделе [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
+   Отладка элементов управления ActiveX аналогична отладке других типов элементов управления, поскольку они не могут быть запущены сами по себе, а должны быть внедрены в веб–страницу HTML. Дополнительные сведения см. в разделе [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): MFC Smart Device DLL  
+- (C++): MFC Smart Device DLL  
   
-     Дополнительные сведения см. в разделе [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
+   Дополнительные сведения см. в разделе [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
   
- В этом разделе также содержатся сведения по следующим темам:  
+  В этом разделе также содержатся сведения по следующим темам:  
   
--   [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
+- [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
+- [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
   
- В этом разделе содержатся следующие подразделы, относящиеся к подготовке отладки библиотек классов:  
+  В этом разделе содержатся следующие подразделы, относящиеся к подготовке отладки библиотек классов:  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  Независимо от того, как выполняется отладка, сначала убедитесь, что собрана отладочная версия DLL, и что эта версия находится в том месте, в котором приложение и ожидает ее найти. Это может казаться очевидным, но если этот этап будет пропущен, приложение может найти другую версию этой DLL и загрузить ее. После этого программа продолжит выполнение, а вы будете удивляться, почему выполнение ни разу не прервалось на точке останова. В процессе отладки можно проверить, какую DLL загрузила программа, открыв в отладчике окно **Модули** . В окне **Модули** имеется список всех DLL или исполняемых файлов, загруженных в отлаживаемый процесс. Для получения дополнительной информации см. [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ ms.locfileid: "49267388"
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Отладка вызывающего приложения  
  Для отладки библиотеки DLL, запустите отладку вызывающего приложения — как правило, это исполняемый файл или веб–приложение. Есть несколько способов её отладки.  
   
--   Если для вызывающего приложения имеется проект, можно открыть этот проект и запустить выполнение из меню **Отладка** . Для получения дополнительной информации см. [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Если для вызывающего приложения имеется проект, можно открыть этот проект и запустить выполнение из меню **Отладка** . Для получения дополнительной информации см. [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Если вызывающее приложение — это существующая программа, уже развернутая на рабочем или тестовом компьютере и уже выполняемая, можно присоединиться к нему. Используйте этот метод, если DLL — это элемент управления, размещенный в Internet Explorer или на веб–странице. Для получения дополнительной информации см. [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Если вызывающее приложение — это существующая программа, уже развернутая на рабочем или тестовом компьютере и уже выполняемая, можно присоединиться к нему. Используйте этот метод, если DLL — это элемент управления, размещенный в Internet Explorer или на веб–странице. Для получения дополнительной информации см. [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   Можно выполнять отладку из проекта DLL. Дополнительные сведения см. в разделе [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- Можно выполнять отладку из проекта DLL. Дополнительные сведения см. в разделе [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Можно выполнять отладку из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. В этом случае окно **Интерпретация** выступает в качестве приложения.  
+- Можно выполнять отладку из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. В этом случае окно **Интерпретация** выступает в качестве приложения.  
   
- Перед запуском отладки этого вызывающего приложения нужно задать точку останова в библиотеке классов. Для получения дополнительной информации см. [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). При срабатывании точки останова можно пошагово проходить по коду, наблюдая действия в каждой строке, до тех пор, пока не будет выделена возникшая проблема. Для получения дополнительной информации см. [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Перед запуском отладки этого вызывающего приложения нужно задать точку останова в библиотеке классов. Для получения дополнительной информации см. [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). При срабатывании точки останова можно пошагово проходить по коду, наблюдая действия в каждой строке, до тех пор, пока не будет выделена возникшая проблема. Для получения дополнительной информации см. [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
  Чтобы отлаживать элемент управления веб–страницы, создайте страницу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , которая его содержит, если такая страница еще не существует. Затем следует расставить точки останова в коде веб–страницы и в коде элемента управления. Затем можно вызвать веб–страницу из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

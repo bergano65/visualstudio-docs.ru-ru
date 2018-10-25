@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872984"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "49202895"
   
  **Требования**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- В этом разделе представлено расширение закодированного теста пользовательского интерфейса, которое может записывать и воспроизводить тесты листов Excel. В этом разделе и в комментариях к коду рассматривается каждая часть расширения для разработчиков, которые хотят создать такое расширение.  
+  В этом разделе представлено расширение закодированного теста пользовательского интерфейса, которое может записывать и воспроизводить тесты листов Excel. В этом разделе и в комментариях к коду рассматривается каждая часть расширения для разработчиков, которые хотят создать такое расширение.  
   
- ![Архитектура тестов пользовательского интерфейса](../test/media/ui-testarch.png "UI_TestArch")  
-Общие сведения об архитектуре  
+  ![Архитектура тестов пользовательского интерфейса](../test/media/ui-testarch.png "UI_TestArch")  
+  Общие сведения об архитектуре  
   
 ## <a name="download-the-sample"></a>Загрузка примера  
  Этот пример состоит из четырех проектов в решении `CodedUIExtensibilitySample.sln`:  
   
--   CodedUIextensibilitySample;  
+- CodedUIextensibilitySample;  
   
--   ExcelCodedUIAddInHelper;  
+- ExcelCodedUIAddInHelper;  
   
--   ExcelUICommunicationHelper;  
+- ExcelUICommunicationHelper;  
   
--   SampleTestProject.  
+- SampleTestProject.  
   
- Скачайте образец из этой [записи блога](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Скачайте образец из этой [записи блога](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  Образец предназначен для использования с Microsoft Excel 2010. Пример может работать с другими версиями Microsoft Excel, но в настоящее время это не поддерживается.  

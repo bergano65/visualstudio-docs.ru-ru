@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::imageForVA | Документы Microsoft
+title: IDiaStackWalkHelper::imageForVA | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0986a6a0b4596671cb11b40b938848387124462f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4942a88378091d890507c1121f6863c309c40662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823039"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Возвращает дату начала исполняемый образ в памяти указанного виртуального адреса где-либо в области памяти исполняемого файла.  
+Возвращает дату начала исполняемый образ в памяти, выделяемый виртуальный адрес где-то в область памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT imageForVA(
   
 #### <a name="parameters"></a>Параметры  
  `vaContext`  
- [in] Виртуальный адрес в пространство исполняемого файла.  
+ [in] Виртуальный адрес, который лежит где-то в пространстве исполняемый файл.  
   
  `pvaImageStart`  
  [out] Возвращает начальный виртуальный адрес исполняемого образа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

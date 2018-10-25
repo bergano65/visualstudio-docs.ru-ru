@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Отладка в смешанном режиме поддерживается только при использовании платформы Microsoft .NET Framework 2.0 или более поздней | Документы Microsoft'
+title: 'Ошибка: Отладка в смешанном режиме поддерживается только при использовании Microsoft.NET Framework 2.0 или выше | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f1bfa33fbb936e609fa9b824a4863830c7ed466
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 992bd5be3f0db0ffc560d8479e6c7142c20bf031
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880160"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Ошибка: смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework 2.0 или выше
 Чтобы выполнить отладку смешанного собственного и управляемого кода, необходимо наличие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] версии 2.0, 3.0., 3.5 или 4. Отладка в смешанном режиме с более ранними версиями [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] не поддерживается.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Обновите [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] до версии 2.0, 3.0, 3.5 или 4.  
+- Обновите [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] до версии 2.0, 3.0, 3.5 или 4.  
   
 ## <a name="see-also"></a>См. также  
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

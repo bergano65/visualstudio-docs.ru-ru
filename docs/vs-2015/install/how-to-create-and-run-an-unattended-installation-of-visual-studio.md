@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885614"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ ms.locfileid: "49173853"
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Автоматическая установка на клиентском компьютере  
   
--   Откройте **запустить** меню, выберите **запуска**и введите \\ \\ *ServerName*\IDEinstall\vs_*продукта*.exe/adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- Откройте **запустить** меню, выберите **запуска**и введите \\ \\ *ServerName*\IDEinstall\vs_*продукта*.exe/adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     Например, можно указать следующую командную строку: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   Например, можно указать следующую командную строку: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Разрешение клиентам вручную устанавливать Visual Studio с предопределенными параметрами  
   
@@ -115,59 +115,59 @@ ms.locfileid: "49173853"
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Изменение параметров AdminDeployment на клиентском компьютере после установки Visual Studio  
   
-1.  Обновите файл AdminDeployment.xml по мере необходимости.  
+1. Обновите файл AdminDeployment.xml по мере необходимости.  
   
-2.  Нажмите кнопку **Пуск** и выберите **Выполнить**.  
+2. Нажмите кнопку **Пуск** и выберите **Выполнить**.  
   
-3.  Введите следующий текст: \\ \\ *ServerName*\IDEinstall\vs_*продукта*.exe/adminfile PathToAdmindeployment.xml файла  
+3. Введите следующий текст: \\ \\ *ServerName*\IDEinstall\vs_*продукта*.exe/adminfile PathToAdmindeployment.xml файла  
   
-     ДополнительныеПараметрыПоМереНеобходимости  
+    ДополнительныеПараметрыПоМереНеобходимости  
   
-     Например, можно указать следующую командную строку: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    Например, можно указать следующую командную строку: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- Восстановление является параметром по умолчанию после установки Visual Studio. Если восстановить Visual Studio с помощью обновленного/adminfile, будут переопределены текущие параметры развертывания администратора теми значениями, которые вызывает обновленный файл AdminDeployment.xml.  
+   Восстановление является параметром по умолчанию после установки Visual Studio. Если восстановить Visual Studio с помощью обновленного/adminfile, будут переопределены текущие параметры развертывания администратора теми значениями, которые вызывает обновленный файл AdminDeployment.xml.  
   
 ## <a name="updating-an-installation"></a>Обновление установки  
  Корпорация Microsoft выпустила несколько обновлений для Visual Studio 2015. В этом разделе объясняется, как обновить ваш образ для автоматической установки Visual Studio 2015, чтобы он включает в себя обновления.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Чтобы обновить автоматической установки Visual Studio  
   
-1.  Найдите файл Product.exe в существующий образ сети, щелкните его правой кнопкой мыши и нажмите кнопку **свойства**.  
+1. Найдите файл Product.exe в существующий образ сети, щелкните его правой кнопкой мыши и нажмите кнопку **свойства**.  
   
-2.  Нажмите кнопку **сведения** вкладке, а затем запишите **версия_продукта** свойство.  
+2. Нажмите кнопку **сведения** вкладке, а затем запишите **версия_продукта** свойство.  
   
-     ![Пример диалогового окна свойств в рамках автоматической установки Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "автоматической установки - диалоговое окно «Свойства»")  
+    ![Пример диалогового окна свойств в рамках автоматической установки Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "автоматической установки - диалоговое окно «Свойства»")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Если версия продукта 14.0.24720.0 или 14.0.24720.1, выполните следующие действия.  
-4.  1.  Запустите *Product.exe* /Layout *диска:* \IDEinstall на компьютере с доступом к Интернету. (Например, выполните: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Если версия продукта 14.0.24720.0 или 14.0.24720.1, выполните следующие действия.  
+4. 1.  Запустите *Product.exe* /Layout *диска:* \IDEinstall на компьютере с доступом к Интернету. (Например, выполните: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  После завершения / Layout, скопируйте новый образ в новое расположение.  
+   2.  После завершения / Layout, скопируйте новый образ в новое расположение.  
   
-    3.  Создать и изменить файл AdminDeployment.xml. Чтобы сделать это, используйте `/CreateAdminFile`  *\<расположение файла >* параметра командной строки. (Дополнительные сведения см. в разделе «Развертывание Visual Studio в автоматическом режиме» данной статьи.)  
+   3.  Создать и изменить файл AdminDeployment.xml. Чтобы сделать это, используйте `/CreateAdminFile`  *\<расположение файла >* параметра командной строки. (Дополнительные сведения см. в разделе «Развертывание Visual Studio в автоматическом режиме» данной статьи.)  
   
-    4.  На клиентском компьютере выполните следующую команду, чтобы обновить экземпляр Visual Studio, который был установлен ранее: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart».  
+   4.  На клиентском компьютере выполните следующую команду, чтобы обновить экземпляр Visual Studio, который был установлен ранее: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart».  
   
-         Например выполните: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>Для других значений версии продукта выполните следующие действия.  
-6.  1.  Запустите *Product.exe* /Layout *диска:* \IDEinstall на компьютере с доступом к Интернету. (Например, выполнить `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        Например выполните: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Для других значений версии продукта выполните следующие действия.  
+6. 1.  Запустите *Product.exe* /Layout *диска:* \IDEinstall на компьютере с доступом к Интернету. (Например, выполнить `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  После завершения / Layout, скопируйте новый образ в новое расположение. (Или вместо этого можно переопределить существующий образ сети).  
+   2.  После завершения / Layout, скопируйте новый образ в новое расположение. (Или вместо этого можно переопределить существующий образ сети).  
   
-    3.  Создание и изменение его файла AdminDeployment.xml. Чтобы сделать это, используйте `/CreateAdminFile`  *\<расположение файла >* параметра командной строки. (Дополнительные сведения см. в разделе «Развертывание Visual Studio в автоматическом режиме» данной статьи.)  
+   3.  Создание и изменение его файла AdminDeployment.xml. Чтобы сделать это, используйте `/CreateAdminFile`  *\<расположение файла >* параметра командной строки. (Дополнительные сведения см. в разделе «Развертывание Visual Studio в автоматическом режиме» данной статьи.)  
   
-    4.  Если скопировать изображение в новое расположение, необходимо запустить следующую команду на клиентском компьютере для обновления копии Visual Studio, который был установлен ранее: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart».  
+   4.  Если скопировать изображение в новое расположение, необходимо запустить следующую команду на клиентском компьютере для обновления копии Visual Studio, который был установлен ранее: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart».  
   
-         Например выполните: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        Например выполните: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  Если переопределить существующий образ сети, можно выполнить команду, как показано на предыдущем шаге, или можно сделать следующее:  
+   5.  Если переопределить существующий образ сети, можно выполнить команду, как показано на предыдущем шаге, или можно сделать следующее:  
   
-    6.  1.  Откройте **Панель управления**и выберите **Программы и компоненты**.  
+   6.  1.  Откройте **Панель управления**и выберите **Программы и компоненты**.  
   
-        2.  Выберите **Visual Studio**, а затем выберите **изменение**.  
+       2.  Выберите **Visual Studio**, а затем выберите **изменение**.  
   
-        3.  После запуска Visual Studio в режиме обслуживания выберите **изменить**.  
+       3.  После запуска Visual Studio в режиме обслуживания выберите **изменить**.  
   
-        4.  Последнее обновление должно отображаться на странице компонентов. Другие функции, которые вы хотите установить, нажмите кнопку **Далее**, а затем нажмите кнопку **обновление** для установки обновления и новые функции.  
+       4.  Последнее обновление должно отображаться на странице компонентов. Другие функции, которые вы хотите установить, нажмите кнопку **Далее**, а затем нажмите кнопку **обновление** для установки обновления и новые функции.  
   
 ## <a name="registering-the-product"></a>Регистрация продукта  
  После завершения установки вы можете зарегистрировать свою копию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] прямо из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

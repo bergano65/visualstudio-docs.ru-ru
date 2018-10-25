@@ -1,5 +1,5 @@
 ---
-title: DiaAddressMapEntry | Документы Microsoft
+title: DiaAddressMapEntry | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a29de8f18a9d3123d73210d0e362c2ae2d32641
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819060"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Описывает запись в сопоставлении адрес.  
@@ -35,23 +35,23 @@ struct DiaAddressMapEntry {
   
 ## <a name="elements"></a>Элементы  
  `rva`  
- Относительный виртуальный адрес (RVA) в образе A.  
+ Относительный виртуальный адрес (RVA) в образ A.  
   
  `rvaTo`  
  Относительный виртуальный адрес `rva` сопоставляется в образе б.  
   
 ## <a name="remarks"></a>Примечания  
- Сопоставление адресов предоставляет перевод из одного образа макета (A) в другую (Б). Массив `DiaAddressMapEntry` структуры, отсортированных по `rva` определяет сопоставление адресов.  
+ Сопоставление адреса предоставляет перевод из одного образа макета (A) в другую (Б). Массив `DiaAddressMapEntry` структур, отсортированных по `rva` определяет сопоставление адресов.  
   
- Для перевода адрес `addrA`, рисунке A в адрес `addrB`, в образе B, выполните следующие действия:  
+ Для преобразования адреса `addrA`, на рисунке объект с адресом, `addrB`, на рисунке B, выполните следующие действия:  
   
-1.  Поиск карты для записи, `e`, с наибольшим значением `rva` меньше или равно `addrA`.  
+1. Поиск карты для записи, `e`, с наибольшим значением `rva` меньше или равно `addrA`.  
   
-2.  Set `delta = addrA - e.rva`.  
+2. Задайте `delta = addrA - e.rva`.  
   
-3.  Set `addrB = e.rvaTo + delta`.  
+3. Задайте `addrB = e.rvaTo + delta`.  
   
- Массив `DiaAddressMapEntry` структуры передается [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод.  
+   Массив `DiaAddressMapEntry` структуры передается [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: dia2.h  

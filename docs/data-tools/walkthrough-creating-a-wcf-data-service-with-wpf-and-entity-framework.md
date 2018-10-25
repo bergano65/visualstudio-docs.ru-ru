@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838768"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство: Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простого [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , размещенного в [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] веб-приложения и последующий доступ к ней из приложения Windows Forms.
 
 В этом пошаговом руководстве вы:
 
--   Создание веб-приложения для размещения [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Создание веб-приложения для размещения [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Создание [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицы в базе данных "Борей".
+- Создание [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицы в базе данных "Борей".
 
--   Создайте таблицу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Создайте таблицу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Будет включена привязка данных к службе и создан пользовательский интерфейс.
+- Будет включена привязка данных к службе и создан пользовательский интерфейс.
 
--   При необходимости в приложение будут добавлены возможности фильтрации.
+- При необходимости в приложение будут добавлены возможности фильтрации.
 
 ## <a name="prerequisites"></a>Предварительные требования
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
@@ -66,7 +66,7 @@ ms.locfileid: "44281537"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Для создания веб-проекта
+### <a name="to-create-the-web-project"></a>Для создания веб-проекта
 
 1.  В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -78,7 +78,7 @@ ms.locfileid: "44281537"
 
 В следующем шаге вы создадите [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицы в базе данных "Борей".
 
-#### <a name="to-create-the-entity-data-model"></a>Создание модели EDM
+### <a name="to-create-the-entity-data-model"></a>Создание модели EDM
 
 1.  В строке меню выберите **Проект** > **Добавить новый элемент**.
 
@@ -101,12 +101,12 @@ ms.locfileid: "44281537"
 6.  Если базе данных требуется пароль, выберите **Да, включить конфиденциальные данные в строке подключения** переключатель, а затем выберите **Далее** кнопки.
 
     > [!NOTE]
-    >  Если отображается диалоговое окно, выберите **Да** для сохранения файла в проект.
+    > Если отображается диалоговое окно, выберите **Да** для сохранения файла в проект.
 
 7.  На **Выбор версии** выберите **Entity Framework 5.0** переключатель, а затем выберите **Далее** кнопки.
 
     > [!NOTE]
-    >  Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, необходимо установить пакет WCF Data Services Entity Framework Provider NuGet. См. в разделе [использование WCF Data Services 5.6.0 с Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, необходимо установить пакет WCF Data Services Entity Framework Provider NuGet. См. в разделе [использование WCF Data Services 5.6.0 с Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  На **Choose Your Database Objects** странице, разверните узел **таблиц** выберите **клиентов** флажок, а затем выберите **Готово** кнопка.
 
@@ -114,7 +114,7 @@ ms.locfileid: "44281537"
 
 На следующем шаге создайте и тестировать службу данных.
 
-#### <a name="to-create-the-data-service"></a>Создание службы данных
+### <a name="to-create-the-data-service"></a>Создание службы данных
 
 1.  В строке меню выберите **Проект** > **Добавить новый элемент**.
 
@@ -141,7 +141,7 @@ ms.locfileid: "44281537"
      XML-представление данных в `Customers` появляется таблица.
 
     > [!NOTE]
-    >  В некоторых случаях обозреватель Internet Explorer может неправильно интерпретировать данные как RSS-канал. Необходимо убедиться, что параметр, определяющий, отображаются ли RSS-каналы, отключен. Дополнительные сведения см. в разделе [Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md).
+    > В некоторых случаях обозреватель Internet Explorer может неправильно интерпретировать данные как RSS-канал. Необходимо убедиться, что параметр, определяющий, отображаются ли RSS-каналы, отключен. Дополнительные сведения см. в разделе [Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md).
 
 8.  Закройте окно браузера.
 
@@ -152,7 +152,7 @@ ms.locfileid: "44281537"
 
  На первом шаге добавьте в решение проект Windows Forms и задать его в качестве запускаемого проекта.
 
-#### <a name="to-create-the-client-application"></a>Создание клиентского приложения
+### <a name="to-create-the-client-application"></a>Создание клиентского приложения
 
 1.  В строке меню выберите файл, **добавить** > **новый проект**.
 
@@ -166,7 +166,7 @@ ms.locfileid: "44281537"
 
 На следующем шаге, добавьте ссылку на службу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-проекта.
 
-#### <a name="to-add-a-service-reference"></a>Добавление ссылки на службу
+### <a name="to-add-a-service-reference"></a>Добавление ссылки на службу
 
 1.  В строке меню выберите **проекта** > **Add Service Reference**.
 
@@ -178,7 +178,7 @@ ms.locfileid: "44281537"
 
 На следующем шаге настройки источника данных для обеспечения привязки данных к службе.
 
-#### <a name="to-enable-data-binding-to-the-service"></a>Включение привязки данных к службе
+### <a name="to-enable-data-binding-to-the-service"></a>Включение привязки данных к службе
 
 1.  В строке меню выберите **представление** > **Other Windows** > **источников данных**.
 
@@ -192,61 +192,60 @@ ms.locfileid: "44281537"
 
 В следующем шаге вы создадите пользовательский интерфейс, отображающий данные из службы.
 
-#### <a name="to-create-the-user-interface"></a>Создание пользовательского интерфейса
+### <a name="to-create-the-user-interface"></a>Создание пользовательского интерфейса
 
-1.  В **источников данных** окно, откройте контекстное меню для **клиентов** узел и выберите **копирования**.
+1. В **источников данных** окно, откройте контекстное меню для **клиентов** узел и выберите **копирования**.
 
-2.  В **Form1.vb** или **Form1.cs** конструкторе форм, откройте контекстное меню и выберите **вставить**.
+2. В **Form1.vb** или **Form1.cs** конструкторе форм, откройте контекстное меню и выберите **вставить**.
 
-     На форму добавится элемент управления <xref:System.Windows.Forms.DataGridView>, компонент <xref:System.Windows.Forms.BindingSource> и компонент <xref:System.Windows.Forms.BindingNavigator>.
+    На форму добавится элемент управления <xref:System.Windows.Forms.DataGridView>, компонент <xref:System.Windows.Forms.BindingSource> и компонент <xref:System.Windows.Forms.BindingNavigator>.
 
-3.  Выберите **CustomersDataGridView** элемента управления, а затем в **свойства** окно набора **закрепления** свойства **заполнения**.
+3. Выберите **CustomersDataGridView** элемента управления, а затем в **свойства** окно набора **закрепления** свойства **заполнения**.
 
-4.  В **обозревателе решений**, откройте контекстное меню для **Form1** узел и выберите **Просмотр кода** открыть редактор кода и добавьте следующий код `Imports` или `Using`инструкция в верхней части файла:
+4. В **обозревателе решений**, откройте контекстное меню для **Form1** узел и выберите **Просмотр кода** открыть редактор кода и добавьте следующий код `Imports` или `Using`инструкция в верхней части файла:
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  Добавьте следующий код в обработчик событий `Form1_Load`.
+5. Добавьте следующий код в обработчик событий `Form1_Load` .
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. В **обозревателе решений**, откройте контекстное меню для **NorthwindCustomers.svc** файл и выберите **просмотреть в браузере**. Internet Explorer открывает и отображает схему XML для службы.
 
-6.  В **обозревателе решений**, откройте контекстное меню для **NorthwindCustomers.svc** файл и выберите **просмотреть в браузере**. Internet Explorer открывает и отображает схему XML для службы.
+7. Скопируйте URL-адрес из адресной строки обозревателя Internet Explorer.
 
-7.  Скопируйте URL-адрес из адресной строки обозревателя Internet Explorer.
-
-8.  В коде, добавленном на этапе 4, выберите код `http://localhost:53161/NorthwindCustomers.svc/` и замените его только что скопированным URL-адресом.
+8. В коде, добавленном на этапе 4, выберите код `http://localhost:53161/NorthwindCustomers.svc/` и замените его только что скопированным URL-адресом.
 
 9. В строке меню выберите **Отладка** > **начать отладку** для запуска приложения. Сведения о клиенте отображается.
 
- Теперь в наличии имеется рабочее приложение, которое будет отображать список клиентов из службы NorthwindCustomers. При необходимости в отображении дополнительных данных посредством службы, свойство [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] можно изменить, чтобы включить дополнительные таблицы из базы данных Northwind.
+   Теперь в наличии имеется рабочее приложение, которое будет отображать список клиентов из службы NorthwindCustomers. При необходимости в отображении дополнительных данных посредством службы, свойство [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] можно изменить, чтобы включить дополнительные таблицы из базы данных Northwind.
 
 На следующем шаге необязательно вы узнаете, как для фильтрации данных, возвращаемых службой.
 
 ## <a name="adding-filtering-capabilities"></a>Добавление возможностей фильтрации
  На этом шаге вы Настройка приложения для фильтрации данных по городу клиента.
 
-#### <a name="to-add-filtering-by-city"></a>Добавление фильтрации по городу
+### <a name="to-add-filtering-by-city"></a>Добавление фильтрации по городу
 
 1.  В **обозревателе решений**, откройте контекстное меню для **Form1.vb** или **Form1.cs** узел и выберите **откройте**.
 

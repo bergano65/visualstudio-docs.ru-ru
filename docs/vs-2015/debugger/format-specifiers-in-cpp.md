@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894057"
 ---
 # <a name="format-specifiers-in-c"></a>Определители формата в C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49249825"
   
 > [!NOTE]
 >  Отладчик машинного кода Visual Studio переведен на новое ядро отладки. В рамках этого изменения был добавлен ряд новых описателей формата, а некоторые старые описатели были удалены. Прежний отладчик все еще используется при отладке взаимодействия (то есть смешанной отладке машинного и управляемого кода) с использованием C++/CLI. В подразделах этого раздела показаны описатели формата для каждого ядра отладки.  
->   
->  -   [Описатели формата](#BKMK_Visual_Studio_2012_format_specifiers) рассматриваются описатели формата в новом ядре отладки.  
-> -   [Описатели формата для отладки взаимодействия с использованием C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) рассматриваются описатели формата в прежнем ядре отладки.  
+> 
+> - [Описатели формата](#BKMK_Visual_Studio_2012_format_specifiers) рассматриваются описатели формата в новом ядре отладки.  
+>   -   [Описатели формата для отладки взаимодействия с использованием C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) рассматриваются описатели формата в прежнем ядре отладки.  
   
 ## <a name="using-format-specifiers"></a>Использование описателей формата  
  Предположим, что имеется следующий код:  

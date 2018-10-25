@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a9a57cacc8d8d37c13e7380f5b68c800c5c31075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee4eb0490e68f2ea4f83c728ed684b1e939467b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893755"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Перенос, миграция и обновление проектов Visual Studio в Visual Studio &quot;15&quot; RC
 При переходе к более новой версии Visual Studio, вы захотите знать, если необходимо изменить любой из решения, проекты, файлы и другие активы, созданные в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], или [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] перед их запуском в любом [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] или [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Эта страница поможет вам с этим. 
@@ -88,19 +88,19 @@ ms.locfileid: "49226191"
 ## <a name="troubleshooting-project-compatibility-issues"></a>Устранение проблем совместимости проектов  
  Ниже описаны некоторые меры, которые можно принять, если проект не открывается в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:  
   
--   При попытке открыть проект, который не поддерживается в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] и для которого не установлена соответствующая версия Visual Studio, может появляться сообщение о том, что тип проекта не поддерживается, а тип проекта может быть указан в поле **Неподдерживаемые проекты** в диалоговом окне **Анализ изменений проекта и решения**. Для устранения этой проблемы откройте страницу программ и компонентов на **панели управления**Windows, выберите **Visual Studio**, а затем выберите **Изменить**и **Восстановить**. Затем можно будет установить отсутствующую версию.  
+- При попытке открыть проект, который не поддерживается в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] или [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] и для которого не установлена соответствующая версия Visual Studio, может появляться сообщение о том, что тип проекта не поддерживается, а тип проекта может быть указан в поле **Неподдерживаемые проекты** в диалоговом окне **Анализ изменений проекта и решения**. Для устранения этой проблемы откройте страницу программ и компонентов на **панели управления**Windows, выберите **Visual Studio**, а затем выберите **Изменить**и **Восстановить**. Затем можно будет установить отсутствующую версию.  
   
--   При попытке открыть проект для классического приложения в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] возникает ошибка и отображается одно из следующих сообщений: "Этот выпуск Visual Studio поддерживает только приложения [!INCLUDE[win81](../includes/win81-md.md)]" или "Этот проект несовместим с текущим выпуском Visual Studio". Версия [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] предназначена для разработки, тестирования и развертывания приложений Магазина Windows, созданных для Windows 8.1. Чтобы открыть проект классического приложения, необходимо использовать выпуск Visual Studio, поддерживающий этот тип проекта.  
+- При попытке открыть проект для классического приложения в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] возникает ошибка и отображается одно из следующих сообщений: "Этот выпуск Visual Studio поддерживает только приложения [!INCLUDE[win81](../includes/win81-md.md)]" или "Этот проект несовместим с текущим выпуском Visual Studio". Версия [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] предназначена для разработки, тестирования и развертывания приложений Магазина Windows, созданных для Windows 8.1. Чтобы открыть проект классического приложения, необходимо использовать выпуск Visual Studio, поддерживающий этот тип проекта.  
   
-     Дополнительные сведения о выпусках Visual Studio см. в описании [продуктов Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332).  
+   Дополнительные сведения о выпусках Visual Studio см. в описании [продуктов Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332).  
   
--   При попытке открыть проект приложения для Магазина Windows в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, возникает ошибка. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop нельзя использовать для создания приложений для Магазина Windows. Если требуется создавать приложения для Магазина Windows, можно также установить [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. А для разработки приложений для всех платформ Microsoft и Интернета попробуйте Visual Studio Professional 2013.  
+- При попытке открыть проект приложения для Магазина Windows в [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, возникает ошибка. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop нельзя использовать для создания приложений для Магазина Windows. Если требуется создавать приложения для Магазина Windows, можно также установить [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. А для разработки приложений для всех платформ Microsoft и Интернета попробуйте Visual Studio Professional 2013.  
   
--   Если для проекта требуются функции, присутствующие только в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], его невозможно открыть в более ранней версии.  
+- Если для проекта требуются функции, присутствующие только в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], его невозможно открыть в более ранней версии.  
   
--   Если используется [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и необходимо открыть проект, созданный в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], возможно, удастся настроить систему проектов, чтобы она включала функции [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Сведения о том, как это сделать, см. в разделе [внесения пользовательских проектов следящее за версией](../misc/making-custom-projects-version-aware.md).  
+- Если используется [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и необходимо открыть проект, созданный в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], возможно, удастся настроить систему проектов, чтобы она включала функции [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Сведения о том, как это сделать, см. в разделе [внесения пользовательских проектов следящее за версией](../misc/making-custom-projects-version-aware.md).  
   
- Дополнительные сведения об устранении неполадок см. в статье базы знаний [Совместимость Visual Studio 2013](http://support.microsoft.com/kb/2863286) .  
+  Дополнительные сведения об устранении неполадок см. в статье базы знаний [Совместимость Visual Studio 2013](http://support.microsoft.com/kb/2863286) .  
   
 ##  <a name="file"></a> Файлы  
  В следующем списке указано, поддерживает ли [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] тот или иной тип файлов, можно ли открыть файл в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и Visual Studio 2010 с пакетом обновления 1 (SP1) и нужно ли изменить его, чтобы обеспечить совместимость.  

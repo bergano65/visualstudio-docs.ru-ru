@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873426"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] позволяет пакету VSPackage, например редактору или конструктору, управлять членством и внешним видом **панели элементов**.  
@@ -50,29 +50,29 @@ ms.locfileid: "49254415"
   
  При работе с этими интерфейсами важно учитывать ряд важных моментов.  
   
--   <xref:System.Drawing.Design.IToolboxService> доступен только пакетам VSPackage на основе Managed Package Framework.  
+- <xref:System.Drawing.Design.IToolboxService> доступен только пакетам VSPackage на основе Managed Package Framework.  
   
--   Добавлять элементы управления не может напрямую **элементов** с помощью <xref:System.Drawing.Design.IToolboxService>.  
+- Добавлять элементы управления не может напрямую **элементов** с помощью <xref:System.Drawing.Design.IToolboxService>.  
   
--   Пакет VSPackage должен использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> для добавления элементов управления или размещать элемент управления в элементе управления-оболочке, производной от <xref:System.Windows.Forms.AxHost>.  
+- Пакет VSPackage должен использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> для добавления элементов управления или размещать элемент управления в элементе управления-оболочке, производной от <xref:System.Windows.Forms.AxHost>.  
   
-     Visual Studio предоставляет средство `Aximp.exe` для автоматизации инкапсуляции элемента ActiveX в элементе управления, производном от <xref:System.Windows.Forms.AxHost>. Дополнительные сведения см. в разделе [Aximp.exe (Windows Forms ActiveX программа импорта элементов)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio предоставляет средство `Aximp.exe` для автоматизации инкапсуляции элемента ActiveX в элементе управления, производном от <xref:System.Windows.Forms.AxHost>. Дополнительные сведения см. в разделе [Aximp.exe (Windows Forms ActiveX программа импорта элементов)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> — это интерфейсы на базе COM, доступные через сборки взаимодействия.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> — это интерфейсы на базе COM, доступные через сборки взаимодействия.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> является производным от <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> и реализует все его методы.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> является производным от <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> и реализует все его методы.  
   
-     Объекты получают только экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
+   Объекты получают только экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> не является производным от <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и не реализует его методы.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> не является производным от <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и не реализует его методы.  
   
-     Объекты, которым требуются функциональные возможности обоих интерфейсов, должны получить их экземпляры из среды.  
+   Объекты, которым требуются функциональные возможности обоих интерфейсов, должны получить их экземпляры из среды.  
   
--   При работе с <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> сведения о канонических (нелокализованных) именах вкладок обрабатываются методами <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
+- При работе с <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> сведения о канонических (нелокализованных) именах вкладок обрабатываются методами <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
   
--   При использовании <xref:System.Drawing.Design.IToolboxService> управление локализованными сведениями, например именами категорий, осуществляется разработчиком.  
+- При использовании <xref:System.Drawing.Design.IToolboxService> управление локализованными сведениями, например именами категорий, осуществляется разработчиком.  
   
- Чтобы разрешить пользователям сохранять параметры **панели элементов** , доступ к которым они получают с помощью команды **Импорт и экспорт параметров** в меню **Сервис** интегрированной среды разработки, используйте механизм параметров. Дополнительные сведения об использовании параметров см. в разделе [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
+  Чтобы разрешить пользователям сохранять параметры **панели элементов** , доступ к которым они получают с помощью команды **Импорт и экспорт параметров** в меню **Сервис** интегрированной среды разработки, используйте механизм параметров. Дополнительные сведения об использовании параметров см. в разделе [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="see-also"></a>См. также  
  [Расширение панели элементов](../misc/extending-the-toolbox.md)

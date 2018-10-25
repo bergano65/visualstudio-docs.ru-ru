@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Документы Microsoft
+title: CONST_GUID_ARRAY | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18feedde988559ae4aff1455b7dfb1d8c6eb1e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b66713fa5929fc1397a5302732399c07c3f5a726
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885919"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
-Это структура, содержащая список `GUID`s.  
+Структура, содержащая список `GUID`s.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,9 +49,9 @@ public struct CONST_GUID_ARRAY {
  Массив `GUID`s.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура передается [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метода и возвращается из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) методы.  
+ Эта структура передается [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и возвращается из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) методы.  
   
- Для освобождения памяти, выделенной отвечает владельца экземпляра этой структуры.  
+ Владелец экземпляра этой структуры отвечает за освобождение памяти, выделенной.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -61,7 +61,7 @@ public struct CONST_GUID_ARRAY {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

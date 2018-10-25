@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843045"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "49253010"
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Добавление настраиваемого раздела конфигурации в файл app.config  
   
-1.  Корневым элементом файла app.config должен быть элемент `configuration`. Создайте элемент `configSections` в элементе `configuration`. `configSections` должен быть первым элементом в файле app.config.  
+1. Корневым элементом файла app.config должен быть элемент `configuration`. Создайте элемент `configSections` в элементе `configuration`. `configSections` должен быть первым элементом в файле app.config.  
   
-2.  В элементе `configSections` создайте элемент `section`.  
+2. В элементе `configSections` создайте элемент `section`.  
   
-3.  В элементе `section` добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.  
+3. В элементе `section` добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.  
   
- Элемент `section` должен выглядеть примерно следующим образом.  
+   Элемент `section` должен выглядеть примерно следующим образом.  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ ms.locfileid: "49253010"
 ## <a name="define-data-sources"></a>Определение источников данных  
  Раздел источников данных содержит четыре атрибута, которые используются тестовой подсистемой для получения данных из источника данных.  
   
--   `name` определяет удостоверение, используемое <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для указания источника данных для использования.  
+- `name` определяет удостоверение, используемое <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для указания источника данных для использования.  
   
--   `connectionString` определяет строку подключения, созданную в предыдущем разделе "Определение строк подключения".  
+- `connectionString` определяет строку подключения, созданную в предыдущем разделе "Определение строк подключения".  
   
--   `dataTableName` определяет таблицу или лист, которые содержат данные, используемые в тесте.  
+- `dataTableName` определяет таблицу или лист, которые содержат данные, используемые в тесте.  
   
--   `dataAccessMethod` определяет способ доступа к значениям данных в источнике данных.  
+- `dataAccessMethod` определяет способ доступа к значениям данных в источнике данных.  
   
- В этом разделе мы определим два источника данных для использования в модульном тесте.  
+  В этом разделе мы определим два источника данных для использования в модульном тесте.  
   
 #### <a name="to-define-data-sources"></a>Определение источников данных  
   

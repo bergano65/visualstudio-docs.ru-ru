@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2::GetAppDomainId | Документы Microsoft
+title: IDebugAlias2::GetAppDomainId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d24665526f4487f6d2f514f41eb2afbc291847c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07c04aff053b8ce304290fefa7f56f08b448f244
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836642"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
-Извлекает идентификатор домена приложения.  
+Извлекает идентификатор для домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,10 +43,10 @@ int GetAppDomainId (
  [out] Возвращает идентификатор домена приложения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Создается изменения идентификатор домена приложения при каждом перезапуске приложения и нового домена приложения.  
+ Изменение идентификатора домена приложения при каждом перезапуске приложения, а также новый домен приложения создается.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

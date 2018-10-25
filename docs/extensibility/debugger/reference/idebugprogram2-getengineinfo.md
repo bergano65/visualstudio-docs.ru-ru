@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo | Документы Microsoft
+title: IDebugProgram2::GetEngineInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7347ad8bb8bbe39208d8d4d562ac580d520cc5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a560b9c1f576ee35acec4a95ef1c0a3870423680
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860582"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Возвращает имя и идентификатор GUID модуля отладки (DE), выполнение программы.  
+Возвращает имя и идентификатор GUID для обработчика отладки (DE), выполнение программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,10 +46,10 @@ int GetEngineInfo(
  [out] Возвращает имя DE, выполнение программы.  
   
  `pguidEngine`  
- [out] Возвращает идентификатор GUID DE, выполнение программы.  
+ [out] Возвращает идентификатор GUID для DE, выполнение программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Каждый DE определяет собственный идентификатор GUID для идентификации.  

@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY | Документы Microsoft
+title: GUID_ARRAY | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1802d5784ad6e94aee4ff63fb51d2c92dbf164f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa68a3064cd40cca8c62f90c2f144a767ebb9e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855577"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
-Описывает массив уникальных идентификаторов для Доступные отладчики.  
+Описывает массив уникальных идентификаторов для доступных отладчиков.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,7 +43,7 @@ public struct GUID_ARRAY
   
 ## <a name="terms"></a>Термины  
  dwCount  
- Количество уникальных идентификаторов в массиве.  
+ Число уникальных идентификаторов в массиве.  
   
  Участники  
  Массив, содержащий уникальные идентификаторы.  
@@ -59,5 +59,5 @@ public struct GUID_ARRAY
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

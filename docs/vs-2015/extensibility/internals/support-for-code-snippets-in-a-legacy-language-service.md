@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847803"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  Когда языковая служба возвращает имя ярлыка, она вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> метод, чтобы получить имя файла и кода заголовок фрагмента. Языковая служба затем вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> для вставки фрагмента кода. Следующие методы вызываются средой Visual Studio в заданном порядке в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса во время вставки фрагмента кода:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Дополнительные сведения о получении списка фрагментов кода для языковой службы, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Дополнительные сведения о получении списка фрагментов кода для языковой службы, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Реализация класса ExpansionFunction  
  Функции расширения является именованную функцию, который внедряется в шаблон фрагмента и возвращает одно или несколько значений, которые следует поместить в поле. Чтобы обеспечить поддержку функций расширений в службе языка, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса и реализуйте <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> метод. Необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса для возвращения нового экземпляра версии <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класс для каждой функции расширения, вы поддерживаете. Если вы поддерживаете список возможных значений из функции расширения, необходимо также переопределить <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса для возвращения списка этих значений.  

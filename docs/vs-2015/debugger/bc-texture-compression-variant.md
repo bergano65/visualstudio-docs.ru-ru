@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837975"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "49203311"
 ## <a name="remarks"></a>Примечания  
  Текстуры сжимаются с использованием формата с блочным сжатием при каждом вызове `ID3DDevice::CreateTexture2D`, который создает исходную текстуру. В частности, текстуры сжимаются в указанных ниже случаях.  
   
--   Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
+- Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
   
-    -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
+  -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
   
-    -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
+  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
   
-    -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
+  -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
   
-    -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
+  -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
   
--   Исходные данные передаются в вызов метода `CreateTexture2D`.  
+- Исходные данные передаются в вызов метода `CreateTexture2D`.  
   
- Ниже перечислены поддерживаемые исходные форматы и форматы с блочным сжатием.  
+  Ниже перечислены поддерживаемые исходные форматы и форматы с блочным сжатием.  
   
 |Исходный формат|Сжатый формат|  
 |------------------------------|------------------------------|  

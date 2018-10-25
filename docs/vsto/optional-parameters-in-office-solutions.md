@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882578"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Необязательные параметры в решениях Office
   Многие методы в объектных моделях приложений Microsoft Office принимают необязательные параметры. При использовании Visual Basic для разработки решения Office в Visual Studio значение для необязательных параметров передавать не нужно, так как для каждого отсутствующего параметра автоматически используется значение по умолчанию. В большинстве случаев можно также опустить необязательные параметры в проектах Visual C#. Тем не менее, нельзя опускать необязательные **ref** параметры `ThisDocument` классов в проектах уровня документа Word.  
@@ -57,19 +57,19 @@ ms.locfileid: "35673878"
   
  При вызове методов класса `ThisDocument` следуйте приведенным ниже рекомендациям:  
   
--   Чтобы принять значение по умолчанию необязательного **ref** параметра, передайте `missing` параметр переменную. Переменная `missing` автоматически определяется в проектах Visual C# для Office, и ей назначается значение <xref:System.Type.Missing> в созданном коде проекта.  
+- Чтобы принять значение по умолчанию необязательного **ref** параметра, передайте `missing` параметр переменную. Переменная `missing` автоматически определяется в проектах Visual C# для Office, и ей назначается значение <xref:System.Type.Missing> в созданном коде проекта.  
   
--   Чтобы указать собственное значение для необязательного **ref** объявить объект, который присваивается значение, которое вы хотите указать параметр и затем передайте этот объект к параметру.  
+- Чтобы указать собственное значение для необязательного **ref** объявить объект, который присваивается значение, которое вы хотите указать параметр и затем передайте этот объект к параметру.  
   
- В следующем примере кода показано, как вызвать <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> метод, указав значение для *ignoreUppercase* параметра и принятие значений по умолчанию для остальных параметров.  
+  В следующем примере кода показано, как вызвать <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> метод, указав значение для *ignoreUppercase* параметра и принятие значений по умолчанию для остальных параметров.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- Если вы хотите написать код, который опускает необязательные **ref** параметры метода в `ThisDocument` класса, также можно вызвать тот же метод на <xref:Microsoft.Office.Interop.Word.Document> объект, возвращаемый <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> свойство и не указывайте параметры из этого метода. Это можно сделать, так как <xref:Microsoft.Office.Interop.Word.Document> — интерфейс, а не класс.  
+  Если вы хотите написать код, который опускает необязательные **ref** параметры метода в `ThisDocument` класса, также можно вызвать тот же метод на <xref:Microsoft.Office.Interop.Word.Document> объект, возвращаемый <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> свойство и не указывайте параметры из этого метода. Это можно сделать, так как <xref:Microsoft.Office.Interop.Word.Document> — интерфейс, а не класс.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передачи аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передавать параметры &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передачи аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передавать параметры &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>См. также  
  [Разработка решений Office](../vsto/developing-office-solutions.md)   

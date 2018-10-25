@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Next | Документы Microsoft
+title: IEnumDebugModules2::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6aec07561487b06a198dadd791e16b335fbe45e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ef553701f485d55df52da0e6a561a5926bddabe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877053"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 Возвращает следующий набор элементов из перечисления.  
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Число элементов для извлечения. Также указывает максимальный размер `rgelt` массива.  
+ [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.  
   
  `rgelt`  
- [in, out] Массив [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) элементы, которые должны заполняться в.  
+ [in, out] Массив [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) элементов для заполнения.  
   
  `pceltFetched`  
- [out] Возвращает количество элементов, фактически извлеченных в `rgelt`.  
+ [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше запрошенного числа элементов может быть возвращен; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   

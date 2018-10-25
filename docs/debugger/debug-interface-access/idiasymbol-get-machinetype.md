@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_machineType | Документы Microsoft
+title: IDiaSymbol::get_machineType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f001450f874969007e5f592824bc1a9d693e1cac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7969a82ac6103a81b7849bc9f983842c9ebd6e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876780"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
-Получает тип целевого Процессора.  
+Возвращает тип ЦП целевой объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_machineType (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает значение из [CV_CPU_TYPE_e-перечисление](../../debugger/debug-interface-access/cv-cpu-type-e.md) перечисление, указывающее целевой тип ЦП.  
+ [out] Возвращает значение из [перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) перечисление, указывающее тип ЦП целевой объект.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="see-also"></a>См. также  
  [Перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
