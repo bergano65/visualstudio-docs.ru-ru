@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetDocumentContext | Документы Microsoft
+title: IDebugCanStopEvent2::GetDocumentContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5b9bbd5127ac3cf7aef70744fc80ebc8372dfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8a8b26ceca3390466f3300d3692a7ee887ebd91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861037"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Возвращает контекст документ, описывающий расположение этого события.  
+Получает контекст документа, который описывает расположение этого события.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,15 +41,15 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>Параметры  
  `ppDocCxt`  
- [out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс, который представляет позицию в соответствующий файл исходного документа для текущего расположения в коде.  
+ [out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс, который представляет позицию в соответствующий файл исходного документа в текущей папке кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Как правило контекст документа может рассматриваться как положение в файле исходного кода.  
+ Как правило контекст документа может рассматриваться как позиция в исходном файле.  
   
- Чтобы получить контекст кода, который ориентировано на достижение код инструкции, вызовите [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) метод.  
+ Чтобы получить контекст кода, которая находится на достижение инструкций кода, вызовите [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

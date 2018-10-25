@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexType | Документы Microsoft
+title: IDiaSymbol::get_arrayIndexType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882410"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Извлекает интерфейс символ типа индекса массива символа.  
@@ -34,23 +34,23 @@ HRESULT get_arrayIndexType (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип массива индекс символа.  
+ [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип индекса массива символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- В некоторых языках можно указать тип, применяемый в качестве индекса в массиве. Этот метод возвращает символ указывает этого типа.  
+ В некоторых языках можно указать тип, используемый как индекс для массива. Этот тип символа, возвращаемого этим методом.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для v7.0|  
+|Версия:|ПАКЕТ SDK для версии 7.0|  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889364"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49177675"
   
  В этом разделе содержатся следующие подразделы.  
   
--   [Тестируемый метод](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Тестируемый метод](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Создание источника данных](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Создание источника данных](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Добавление TestContext в тестовый класс](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Добавление TestContext в тестовый класс](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Написание метода теста](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Написание метода теста](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Определение DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Определение DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Использование TestContext.DataRow для доступа к данным](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Использование TestContext.DataRow для доступа к данным](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Выполнение теста и просмотр результатов](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Выполнение теста и просмотр результатов](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Создание управляемого данными модульного теста включает в себя указанные ниже шаги.  
+  Создание управляемого данными модульного теста включает в себя указанные ниже шаги.  
   
 1.  Создайте источник данных, в котором содержатся значения, используемые в методе теста. Источник данных может быть любого типа, который зарегистрирован на компьютере, где выполняется тест.  
   
@@ -61,17 +61,17 @@ ms.locfileid: "49177675"
 ##  <a name="BKMK_The_method_under_test"></a> Тестируемый метод  
  Например, допустим, что были созданы следующие объекты:  
   
-1.  решение с именем `MyBank`, которое принимает и обрабатывает транзакции для различных типов счетов;  
+1. решение с именем `MyBank`, которое принимает и обрабатывает транзакции для различных типов счетов;  
   
-2.  проект в `MyBank` с именем `BankDb`, который управляет транзакциями для счетов;  
+2. проект в `MyBank` с именем `BankDb`, который управляет транзакциями для счетов;  
   
-3.  класс с именем `Maths` в проекте `DbBank`, выполняющий математические функции, позволяющие убедиться в том, что любая транзакция выгодна банку;  
+3. класс с именем `Maths` в проекте `DbBank`, выполняющий математические функции, позволяющие убедиться в том, что любая транзакция выгодна банку;  
   
-4.  проект модульного теста с именем `BankDbTests` для тестирования функциональности компонента `BankDb`;  
+4. проект модульного теста с именем `BankDbTests` для тестирования функциональности компонента `BankDb`;  
   
-5.  класс модульного теста с именем `MathsTests` для проверки функциональности класса `Maths`.  
+5. класс модульного теста с именем `MathsTests` для проверки функциональности класса `Maths`.  
   
- Мы проверяем метод в `Maths`, который складывает два целых числа с помощью цикла:  
+   Мы проверяем метод в `Maths`, который складывает два целых числа с помощью цикла:  
   
 ```  
 public int AddIntegers(int first, int second)  

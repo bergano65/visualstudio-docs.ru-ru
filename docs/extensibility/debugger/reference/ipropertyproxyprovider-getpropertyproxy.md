@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider::GetPropertyProxy | Документы Microsoft
+title: IPropertyProxyProvider::GetPropertyProxy | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d789c1020c9e4cdcaf8e472fbf2c3e481ac211b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83a4f1e68ff58e61feb1d185626c4d55c16f6589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836493"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-Извлекает интерфейс свойства прокси-сервера для идентификатора указанного прокси-сервера.  
+Извлекает интерфейс свойство прокси-сервера для идентификатора указанного прокси-сервера.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int GetPropertyProxy(
   
 #### <a name="parameters"></a>Параметры  
  `dwID`  
- [in] Идентификатор учетной записи-посредника для нужного свойства.  
+ [in] Идентификатор требуемого свойства прокси-сервера.  
   
  `proxy`  
  [out] Возвращает [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для поддержки визуализаторы внешнего типа, этот метод обычно перенаправляет вызов [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) метод. В разделе [Visualizing и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) сведения о том, как получить IEEVisualizerService.  
+ Чтобы обеспечить поддержку визуализаторы внешний тип, этот метод обычно перенаправляет вызов [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) метод. См. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) Дополнительные сведения о том, как получается IEEVisualizerService.  
   
 ## <a name="see-also"></a>См. также  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   

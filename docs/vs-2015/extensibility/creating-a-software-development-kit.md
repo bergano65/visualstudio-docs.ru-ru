@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852023"
 ---
 # <a name="creating-a-software-development-kit"></a>Создание пакета средств разработки для программного обеспечения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49268356"
   
  Существует два типа пакетов SDK:  
   
--   Пакеты SDK платформы, обязательные компоненты для разработки приложений для платформы. Например [!INCLUDE[win81](../includes/win81-md.md)] SDK, необходимые для разработки [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений.  
+- Пакеты SDK платформы, обязательные компоненты для разработки приложений для платформы. Например [!INCLUDE[win81](../includes/win81-md.md)] SDK, необходимые для разработки [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений.  
   
--   Пакеты SDK расширения, дополнительные компоненты, которые расширяют платформу, но не обязательно для разработки приложений для данной платформы.  
+- Пакеты SDK расширения, дополнительные компоненты, которые расширяют платформу, но не обязательно для разработки приложений для данной платформы.  
   
- В следующих разделах описаны общие инфраструктуры, пакеты SDK и как создать пакет SDK платформы и пакет SDK расширения.  
+  В следующих разделах описаны общие инфраструктуры, пакеты SDK и как создать пакет SDK платформы и пакет SDK расширения.  
   
--   [Пакеты SDK для платформы](#PlatformSDKs)  
+- [Пакеты SDK для платформы](#PlatformSDKs)  
   
--   [Пакеты SDK расширений](#ExtensionSDKs)  
+- [Пакеты SDK расширений](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Пакеты SDK для платформы  
  Пакеты SDK для платформы необходимы для разработки приложений для платформы. Например [!INCLUDE[win81](../includes/win81-md.md)] требуется пакет SDK для разработки приложений для [!INCLUDE[win81](../includes/win81-md.md)].  

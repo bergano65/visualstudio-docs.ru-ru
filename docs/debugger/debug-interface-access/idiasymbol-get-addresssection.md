@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_addressSection | Документы Microsoft
+title: IDiaSymbol::get_addressSection | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b4ed00e11cc994006ee91fd315e33fadbe6bd3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e62f6738d07b2f0e4463cd685bf3111cd7011a10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820029"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
-Получает раздел часть адреса размещения. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) равно `LocIsStatic`.  
+Получает раздел часть опции адрес. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsStatic`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,25 +34,25 @@ HRESULT get_addressSection (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает часть раздела адрес расположения.  
+ [out] Возвращает часть раздела опции адрес.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Для статических элементов, расположенных в библиотеке DLL внешних раздел, возвращаемый этим методом может быть 0, этот способ полагается на получение виртуальный адрес элемента. Виртуальные адреса допустимы только если [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс был вызван с ненулевой параметр, указывающий адрес загрузки библиотеки DLL.  
+ Для статических элементов, расположенных в внешней библиотеке DLL раздел, возвращаемого этим методом может быть 0, так как этот метод использует получение виртуального адреса элемента. Виртуальные адреса допустимы только если [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс был вызван с параметром ненулевое значение, указав адрес загрузки библиотеки DLL.  
   
- Чтобы получить часть смещения из адреса, вызовите [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) метод.  
+ Чтобы получить часть смещения адреса, вызовите [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) метод.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для v7.0|  
+|Версия:|ПАКЕТ SDK для версии 7.0|  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873491"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Практическое: предоставлять к коду VBA в проекте Visual C#
   Вы можете предоставлять код в проект Visual C# в Visual Basic для приложений (VBA), если требуется два вида код для взаимодействия друг с другом.  
@@ -39,56 +39,56 @@ ms.locfileid: "35257255"
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Для предоставления кода в проекте Visual C# код VBA  
   
-1.  Откройте или создайте проект уровня документа, который основан на документ, книгу Excel или шаблон Excel с поддержкой макросов и который уже содержит код VBA.  
+1. Откройте или создайте проект уровня документа, который основан на документ, книгу Excel или шаблон Excel с поддержкой макросов и который уже содержит код VBA.  
   
-     Дополнительные сведения о форматах файлов документов, поддерживающих макросы, см. в разделе [объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md).  
+    Дополнительные сведения о форматах файлов документов, поддерживающих макросы, см. в разделе [объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md).  
   
-    > [!NOTE]  
-    >  Эту функцию нельзя использовать в проектах шаблонов Word.  
+   > [!NOTE]  
+   >  Эту функцию нельзя использовать в проектах шаблонов Word.  
   
-2.  Убедитесь, что код VBA в документе может выполняться без вывода запроса на включение макросов. Чтобы разрешить выполнение кода VBA, расположение проекта Office можно добавить в список надежных расположений в параметрах Центра управления безопасностью для Word или Excel.  
+2. Убедитесь, что код VBA в документе может выполняться без вывода запроса на включение макросов. Чтобы разрешить выполнение кода VBA, расположение проекта Office можно добавить в список надежных расположений в параметрах Центра управления безопасностью для Word или Excel.  
   
-3.  Добавьте элемент, который вы хотите предоставить коду VBA в открытый класс в проекте, и объявите новый элемент как **открытый**.  
+3. Добавьте элемент, который вы хотите предоставить коду VBA в открытый класс в проекте, и объявите новый элемент как **открытый**.  
   
-4.  Примените следующий <xref:System.Runtime.InteropServices.ComVisibleAttribute> и <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> атрибуты к классу, который вы предоставляете коду VBA. Эти атрибуты делают класс видимым для модели COM, но без создания интерфейса класса.  
+4. Примените следующий <xref:System.Runtime.InteropServices.ComVisibleAttribute> и <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> атрибуты к классу, который вы предоставляете коду VBA. Эти атрибуты делают класс видимым для модели COM, но без создания интерфейса класса.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    [System.Runtime.InteropServices.ClassInterface(  
-        System.Runtime.InteropServices.ClassInterfaceType.None)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   [System.Runtime.InteropServices.ClassInterface(  
+       System.Runtime.InteropServices.ClassInterfaceType.None)]  
+   ```  
   
-5.  Переопределить **GetAutomationObject** метод из класса ведущего элемента в проекте для возврата экземпляра класса, который вы предоставляете коду VBA:  
+5. Переопределить **GetAutomationObject** метод из класса ведущего элемента в проекте для возврата экземпляра класса, который вы предоставляете коду VBA:  
   
-    -   Если вы предоставляете коду VBA класс ведущего элемента, переопределить **GetAutomationObject** метод, который принадлежит к этому классу и возвращает текущий экземпляр класса.  
+   - Если вы предоставляете коду VBA класс ведущего элемента, переопределить **GetAutomationObject** метод, который принадлежит к этому классу и возвращает текущий экземпляр класса.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return this;  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return this;  
+     }  
+     ```  
   
-    -   Если класс, который не является элементом узла коду VBA, переопределить **GetAutomationObject** метод любого ведущего элемента проекта и возвращать экземпляр класса элемента, отличных от имени компьютера. Например, в следующем коде предполагается, что вы предоставляете класс с именем `DocumentUtilities` коду VBA.  
+   - Если класс, который не является элементом узла коду VBA, переопределить **GetAutomationObject** метод любого ведущего элемента проекта и возвращать экземпляр класса элемента, отличных от имени компьютера. Например, в следующем коде предполагается, что вы предоставляете класс с именем `DocumentUtilities` коду VBA.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return new DocumentUtilities();  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return new DocumentUtilities();  
+     }  
+     ```  
   
      Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Извлечение интерфейса в классе, который вы предоставляете коду VBA. В **извлечение интерфейса** диалоговом окне выберите открытые элементы, которые требуется включить в объявлении интерфейса. Дополнительные сведения см. в разделе [интерфейс рефакторинг для извлечения](../ide/reference/extract-interface.md).
+6. Извлечение интерфейса в классе, который вы предоставляете коду VBA. В **извлечение интерфейса** диалоговом окне выберите открытые элементы, которые требуется включить в объявлении интерфейса. Дополнительные сведения см. в разделе [интерфейс рефакторинг для извлечения](../ide/reference/extract-interface.md).
   
-7.  Добавить **открытый** ключевое слово объявление интерфейса.  
+7. Добавить **открытый** ключевое слово объявление интерфейса.  
   
-8.  Сделать интерфейс видимым для COM, добавив следующий <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут.  
+8. Сделать интерфейс видимым для COM, добавив следующий <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   ```  
   
 9. Откройте документ (для Word) или лист (для Excel) в конструкторе в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   

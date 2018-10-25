@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881668"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое: программная Вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:  
@@ -94,39 +94,39 @@ ms.locfileid: "35257216"
   
 ### <a name="to-insert-text-using-the-typetext-method"></a>Вставка текста с помощью метода TypeText  
   
-1.  Объявите переменную объекта <xref:Microsoft.Office.Interop.Word.Selection> .  
+1. Объявите переменную объекта <xref:Microsoft.Office.Interop.Word.Selection> .  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  Отключите параметр **Overtype** , если он включен.  
+2. Отключите параметр **Overtype** , если он включен.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  Проверьте, находится ли текущее выделение у точки вставки.  
+3. Проверьте, находится ли текущее выделение у точки вставки.  
   
-     Если это так, код вставляет предложение с помощью <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>, а затем знак абзаца с помощью метода <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> .  
+    Если это так, код вставляет предложение с помощью <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>, а затем знак абзаца с помощью метода <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> .  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  Код в блоке **ElseIf** проверяет, является ли выделение обычным блоком выделения. Если это так, другой блок **If** проверяет, включен ли параметр **ReplaceSelection** . Если это так, код использует метод <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> выделения, чтобы свернуть его до точки вставки в начале выделенного блока текста. Вставьте текст и знак абзаца.  
+4. Код в блоке **ElseIf** проверяет, является ли выделение обычным блоком выделения. Если это так, другой блок **If** проверяет, включен ли параметр **ReplaceSelection** . Если это так, код использует метод <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> выделения, чтобы свернуть его до точки вставки в начале выделенного блока текста. Вставьте текст и знак абзаца.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  Если выделение не является точкой вставки или блоком выделенного текста, код в блоке **Else** не выполняет никаких действий.  
+5. Если выделение не является точкой вставки или блоком выделенного текста, код в блоке **Else** не выполняет никаких действий.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Можно также использовать <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> метод <xref:Microsoft.Office.Interop.Word.Selection> объект, который имитирует **Backspace** на клавиатуре. Но когда дело доходит до вставки и изменения текста, объект <xref:Microsoft.Office.Interop.Word.Range> предоставляет больше возможностей для управления.  
+   Можно также использовать <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> метод <xref:Microsoft.Office.Interop.Word.Selection> объект, который имитирует **Backspace** на клавиатуре. Но когда дело доходит до вставки и изменения текста, объект <xref:Microsoft.Office.Interop.Word.Range> предоставляет больше возможностей для управления.  
   
- В следующем примере показан полный код. Чтобы использовать этот пример, запустите код из класса `ThisDocument` или `ThisAddIn` в своем проекте.  
+   В следующем примере показан полный код. Чтобы использовать этот пример, запустите код из класса `ThisDocument` или `ThisAddIn` в своем проекте.  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>См. также  
  [Практическое: программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)   

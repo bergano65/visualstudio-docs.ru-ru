@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811585"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Мастер публикации (Разработка Office в Visual Studio)
   Используйте **мастера публикации** копируемые файлы решения в указанном расположении, создать файлы манифеста и создать программу установки.  
@@ -41,13 +41,13 @@ ms.locfileid: "35674475"
   
  Введите расположение как путь к диску, файловый ресурс, FTP-узла или URL-адрес веб-сайта или нажмите **Обзор** кнопку, чтобы перейдите к расположению. Путь может быть в этих форматах:  
   
--   Абсолютный или относительный путь в стандарт Windows форматирования, такие как *C:\Deploy\MyApplication* или *\MyApplication*.  
+- Абсолютный или относительный путь в стандарт Windows форматирования, такие как *C:\Deploy\MyApplication* или *\MyApplication*.  
   
--   Путь универсальными именами (UNC), такие как  *\\\ServerName\MyApplication\\*.  
+- Путь универсальными именами (UNC), такие как  *\\\ServerName\MyApplication\\*.  
   
--   URL-адрес веб-сайта, такие как http://www.microsoft.com/MyApplication.  
+- URL-адрес веб-сайта, такие как http://www.microsoft.com/MyApplication.  
   
- Расположение публикации по умолчанию — *http://localhost/projectname/* Если установлены службы IIS, или каталог publish\, если службы IIS не установлены.  
+  Расположение публикации по умолчанию — *http://localhost/projectname/* Если установлены службы IIS, или каталог publish\, если службы IIS не установлены.  
   
 > [!NOTE]  
 >  Если компьютер работает под управлением Windows Vista, существуют дополнительные рекомендации. Необходимо быть администратором на компьютере Windows Vista для использования параметра локальной публикации. Кроме того, по умолчанию всегда является *публикации\\*  каталог, независимо от того, что у вас есть установлены службы IIS.  

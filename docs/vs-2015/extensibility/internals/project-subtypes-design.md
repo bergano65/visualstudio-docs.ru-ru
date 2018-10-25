@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839431"
 ---
 # <a name="project-subtypes-design"></a>Разработка подтипов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49243827"
 ## <a name="project-subtype-design"></a>Проектирование подтип проекта  
  Инициализация подтипом проекта достигается за счет объединения основной <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> объектов. Объединение позволяет подтипа проекта для переопределения или изменения большинство возможностей базового проекта. Подтипов проекта получить первый шанс обработки свойств с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, команд с использованием <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>и проект элемента управления с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Также можно расширить подтипов проекта:  
   
--   Объекты конфигурации проекта.  
+- Объекты конфигурации проекта.  
   
--   Объекты, зависящие от конфигурации.  
+- Объекты, зависящие от конфигурации.  
   
--   Обзор конфигурациями объектов.  
+- Обзор конфигурациями объектов.  
   
--   Объекты автоматизации проекта.  
+- Объекты автоматизации проекта.  
   
--   Автоматизация свойства коллекций проектов.  
+- Автоматизация свойства коллекций проектов.  
   
- Дополнительные сведения о расширяемости для подтипов проекта, см. в разделе [свойства и методы, расширенные подтипами проектов](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Дополнительные сведения о расширяемости для подтипов проекта, см. в разделе [свойства и методы, расширенные подтипами проектов](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Файлы политики  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Среда предоставляет пример расширения базовой системы проектов с подтипом проекта, в своей реализации файлы политики. Файл политики позволяет формирование [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среды, управляя функциональные возможности, включая обозреватель решений **добавить проект** диалоговом окне **Добавление нового элемента** диалоговое окно и  **Свойства** диалоговое окно. Подтип политики переопределяет и расширяет эти функции через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> реализаций.  

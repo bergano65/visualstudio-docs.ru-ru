@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::Reset | Документы Microsoft
+title: IEnumDebugThreads2::Reset | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c1bf2f31d5f4efdd916bfa9a929df096284500f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c0f0ca55748fb0addef01b79ddf51220b541f49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848037"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
-Сбрасывает перечисления на первый элемент.  
+Выполняет сброс перечисления к первому элементу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- После вызова этого метода, при следующем вызове [Далее](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) метод возвращает первый элемент перечисления.  
+ После вызова этого метода, следующий вызов [Далее](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) метод возвращает первый элемент перечисления.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

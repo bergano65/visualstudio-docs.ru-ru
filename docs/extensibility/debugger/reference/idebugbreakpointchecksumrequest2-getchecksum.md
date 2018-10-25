@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Документы Microsoft
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecd6d0ed9c69cad1275a399ffacf402529eebf4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b78c5f44d8f73aa9bb2af5a5b2aa43d5b15bd7db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910528"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Возвращает контрольную сумму документа для запроса останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.  
+Извлекает контрольная сумма документа для запроса точки останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,10 +47,10 @@ public int GetChecksum(
  [out] Контрольная сумма документа для запроса точки останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано функцию, которая проверяет, соответствует ли контрольная сумма документ, в котором собирается привязываться, один из пользовательского интерфейса.  
+ В следующем примере функция, которая проверяет, соответствует ли контрольная сумма документа, который должен быть привязан, один из пользовательского интерфейса.  
   
 ```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

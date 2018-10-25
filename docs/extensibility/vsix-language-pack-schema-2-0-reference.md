@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855822"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме 2.0 VSIX языкового пакета
 
@@ -34,14 +34,16 @@ ms.locfileid: "39586226"
 ### <a name="packagelangaugepackmanifest-element"></a>Элемент PackageLangaugePackManifest
 
 В рамках `<PackageLanguagePackManifest>` элемент, должен существовать следующий элемент:
-|Заголовок|Описание:|
+
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<Metadata>`| Элемент-контейнер для всех метаданных локализованного пакета
 
 ### <a name="metadata-element"></a>Элемент метаданных
 
 В рамках `<Metadata>` элемент может иметь следующие элементы:
-|Заголовок|Описание:|
+
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<DisplayName>`|Локализованное имя модуля для установки|
 |`<Description>`|Локализованное описание устанавливаемое расширение|
@@ -68,7 +70,7 @@ ms.locfileid: "39586226"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показан способ предоставления поддержки локализованной установки для пакета VSIX.|
 |[Справочник по схеме 2.0 расширения VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое *.vsix* файл развертывания. Файл развертывания позволяет установить это расширение Visual Studio с помощью **расширения и обновления** диалоговое окно.|

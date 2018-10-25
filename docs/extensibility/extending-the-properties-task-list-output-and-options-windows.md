@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868694"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение windows свойства, список задач, выходные данные и параметры
 Можно получить доступ к любого окна инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашего окна инструментов в новую **параметры** страницы и новый параметр на **свойства** страницы, а также способ записи **список задач** и **вывода** windows.  
@@ -98,33 +98,33 @@ ms.locfileid: "39499881"
 ## <a name="create-an-options-page"></a>Создайте страницу параметров  
  Можно указать страницу в **параметры** диалоговое окно, чтобы пользователи могут изменять параметры для окна инструментов. Создание страницы параметров требует как класс, который описывает параметры и запись в *TodoListPackage.cs* или *TodoListPackage.vb* файла.  
   
-1.  Добавьте класс с именем `ToolsOptions.cs`. Сделать `ToolsOptions` наследовать класс от <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Добавьте класс с именем `ToolsOptions.cs`. Сделать `ToolsOptions` наследовать класс от <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Добавьте следующий оператор using:  
+2. Добавьте следующий оператор using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  На странице "Параметры" в этом пошаговом руководстве предоставляет только один параметр под названием DaysAhead. Добавьте закрытое поле с именем **daysAhead** и свойство с именем **DaysAhead** для `ToolsOptions` класса:  
+3. На странице "Параметры" в этом пошаговом руководстве предоставляет только один параметр под названием DaysAhead. Добавьте закрытое поле с именем **daysAhead** и свойство с именем **DaysAhead** для `ToolsOptions` класса:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Теперь необходимо убедиться в проект о странице "Параметры".  
+   Теперь необходимо убедиться в проект о странице "Параметры".  
   
 ### <a name="make-the-options-page-available-to-users"></a>Предоставления пользователям страницы параметров  
   

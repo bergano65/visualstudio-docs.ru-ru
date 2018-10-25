@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::GetSize | Документы Microsoft
+title: IDebugMemoryBytes2::GetSize | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fce2d9beecb6c2a51d64e229dcf386795ab55f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b0d6c40c9b73ce14d06ce59f9506ce13550d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898126"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Получает размер памяти в байтах, представленный этим [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта.  
+Чтобы получить размер в байтах, памяти, представленный этим [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +42,10 @@ int GetSize(
   
 #### <a name="parameters"></a>Параметры  
  `pqwSize`  
- [out] Возвращает размер в байтах пространства памяти.  
+ [out] Возвращает размер в байтах памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

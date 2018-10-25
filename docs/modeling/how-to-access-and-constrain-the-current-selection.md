@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d8fb0a2e5d218b76e972fc97a53afcd2f8ef3e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892926"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Практическое руководство. Предоставление и ограничение доступа к текущему выделению
 
-При написании обработчика команды или жеста для вашего доменного языка, можно определить, какой элемент, который пользователь щелкнул правой кнопкой мыши. Вы также можете запретить от выбранной фигуры и поля. Например можно расположить в том, что когда пользователь щелкает значок decorator, фигуру, которая содержит его вместо него будет выбран. Ограничить выбор таким образом уменьшает количество обработчиков, которые необходимо написать. Он также упрощает для пользователей, потому что можно щелкните в любом месте фигуры без необходимости избежать декоратор.
+При написании обработчика команды или жеста для вашего доменного языка, можно определить, какой элемент пользователь щелкнул правой кнопкой мыши. Можно также предотвратить некоторые формы или поля выбора. Например можно упорядочить, что когда пользователь щелкает значок декоратор, фигура, содержащая его вместо него будет выбран. Ограничение выбора таким образом уменьшает количество обработчиков, которые необходимо написать. Он также упрощает для пользователей, потому что можно щелкните в любом месте фигуры без необходимости избежать декоратора.
 
-## <a name="access-the-current-selection-from-a-command-handler"></a>Доступ к выделенной из обработчика команд
+## <a name="access-the-current-selection-from-a-command-handler"></a>Доступ к текущее выделение из обработчика команд
 
-Команда set-класс для доменного языка содержит обработчики команд для пользовательские команды. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Класс, от которого наследует класс набор команд для доменного языка, предоставляет несколько членов для доступа к текущей выделенной области.
+Класс набора команд для доменного языка содержит обработчики команд для ваши пользовательские команды. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Класс, от которого наследует класс набора команд для доменного языка, предоставляет несколько членов для доступа к текущего выделения.
 
-В зависимости от команды обработчик команд может потребоваться выбор в конструкторе моделей, обозреватель модели или активного окна.
+В зависимости от команды обработчик команд может потребоваться выделения в конструкторе моделей, обозреватель моделей или активного окна.
 
-### <a name="to-access-selection-information"></a>Для доступа к сведениям выделения
+### <a name="to-access-selection-information"></a>Для доступа к информации выбора
 
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Класс определяет следующие члены, которые могут использоваться для доступа к текущей выделенной области.
+1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Класс определяет следующие члены, которые могут использоваться для доступа к текущего выделения.
 
     |Член|Описание|
-    |------------|-----------------|
-    |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Возвращает `true` при выполнении любого из элементов, выбранных в конструкторе моделей фигура секции; в противном случае `false`.|
+    |-|-|
+    |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Возвращает `true` при выполнении любого из элементов, выбранных в конструкторе моделей фигурой секции; в противном случае `false`.|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Возвращает `true` Если диаграммы, выбранных в конструкторе моделей, в противном случае — `false`.|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в конструкторе моделей, в противном случае — `false`.|
-    |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Возвращает `true` если ровно один элемент выбран в активном окне; в противном случае — `false`.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Возвращает коллекцию элементов, выбранных в активном окне только для чтения.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Возвращает основной элемент выделения в конструкторе моделей.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Возвращает основной элемент выделения в активном окне.|
+    |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в активном окне; в противном случае `false`.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> |Получает основной элемент выделения в конструкторе моделей.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> |Получает основной элемент выделения в активном окне.|
 
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класс предоставляет доступ к <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> объект, представляющий окно конструктора моделей и предоставляет дополнительные права доступа выбранных элементов в конструкторе моделей.
+2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класс предоставляет доступ к <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> объект, представляющий окно конструктора моделей и предоставляет дополнительный доступ выбранных элементов в конструкторе моделей.
 
-3.  Кроме того созданный код определяет свойство окна инструментов проводника и свойство выбора проводника в команде задать класс для доменного языка.
+3.  Кроме того созданный код определяет свойство средство окно проводника и выбора Вот свойство проводника в команде задайте класс для доменного языка.
 
-    -   Свойство окна инструмента обозревателя возвращает экземпляр класса окна обозревателя средство для доменного языка. Класс окна инструментов обозревателя является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> класса и представляет Обозреватель моделей для доменного языка.
+    -   Свойство окна инструментов обозревателя возвращает экземпляр класса окна инструментов обозревателя для доменного языка. Класс окна инструментов обозревателя является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> класса и представляет обозреватель модели для доменного языка.
 
-    -   `ExplorerSelection` Свойство возвращает элемент, выбранный в окне обозревателя моделей для доменного языка.
+    -   `ExplorerSelection` Свойство возвращает выбранного элемента в окне обозревателя моделей для доменного языка.
 
 ## <a name="determine-which-window-is-active"></a>Определить, какое окно является активным
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Содержит интерфейс определяет члены, предоставляющие доступ к состоянию текущего выделения в оболочке. Вы можете получить <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> пакета класс или класс набор команд для доменного языка через объект `MonitorSelection` свойства, определенные в базовом классе каждого. Класс пакета является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> класс и команда set-класс является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класса.
+<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Содержит интерфейс определяет члены, которые предоставляют доступ к текущему состоянию выделения в оболочке. Вы можете получить <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> классу пакета или классе наборов команд для доменного языка через объект `MonitorSelection` свойства, определенные в базовом классе каждого из них. Класс пакета является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> класс и класс набора команд является производным от <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класса.
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Чтобы определить, является допустимым обработчиком команд активен тип окна
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Чтобы определить обработчик команд активен какой тип окна
 
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> возвращает <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> объект, предоставляющий доступ к состоянию текущего выделения в оболочке.
+1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> возвращает <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> объект, предоставляющий доступ к текущему состоянию выделения в оболочке.
 
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> интерфейс возвращает контейнер активное выделение, который может отличаться от активного окна.
+2.  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> интерфейс получает активный контейнер выделения, которое может отличаться от активного окна.
 
-3.  Добавьте следующие свойства для команды set-класс для вас доменный язык, чтобы определить, какой тип окна активен.
+3.  Добавьте следующие свойства в команду набора классов для вас доменный язык, чтобы определить, какой тип окна активен.
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -91,27 +91,27 @@ ms.locfileid: "31952366"
 
 ## <a name="constrain-the-selection"></a>Ограничения выбора
 
-Добавляя правила выбора, можно выбрать, какие элементы выбраны в том случае, когда пользователь выбирает элемент в модели. Например чтобы разрешить пользователю обрабатывать как единое целое число элементов, можно использовать правила выбора.
+Добавление правила выбора, вы можете управлять, какие элементы выбраны в том случае, когда пользователь выбирает элемент в модели. Например чтобы разрешить пользователю обрабатывать несколько элементов как единое целое, можно использовать правило выбора.
 
 ### <a name="to-create-a-selection-rule"></a>Чтобы создать правило выбора
 
 1.  Создайте файл пользовательского кода в проекте DSL
 
-2.  Определение класса правила выбора, который является производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> класса.
+2.  Определите класс правила выбора, который является производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> класса.
 
-3.  Переопределить <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> метод класса выбора правил для применения условия выбора.
+3.  Переопределить <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> метод класса правил выбора для применения условия выбора.
 
-4.  Добавьте определение разделяемого класса для класса ClassDiagram файл пользовательского кода.
+4.  Добавьте определение разделяемого класса для класса ClassDiagram в файл пользовательского кода.
 
-     `ClassDiagram` Класс является производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> класса и определяется в файле сформированного кода Diagram.cs, в проекте DSL.
+     `ClassDiagram` Класс является производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> класса и определен в файле сформированного кода Diagram.cs, в проекте DSL.
 
-5.  Переопределить <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> свойство `ClassDiagram` класса для возвращения выбора настраиваемого правила.
+5.  Переопределить <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> свойство `ClassDiagram` класса для возвращения правило пользовательского выбора.
 
-     Реализация по умолчанию <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> свойство возвращает объект правила выделения, нельзя изменить выбор.
+     Реализация по умолчанию <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> свойство возвращает объект правила выделения, не изменяет выделение.
 
 ### <a name="example"></a>Пример
 
-В следующем файле кода создает правило выбора, которая расширяется выделения, чтобы включить все экземпляры каждого домена формы, которые изначально был установлен.
+Следующий файл кода создает правило выбора, который расширяет выделение для включения всех экземпляров для каждой фигуры домена, которые изначально был выбран.
 
 ```csharp
 using System;

@@ -1,5 +1,5 @@
 ---
-title: Структура DebugPropertyInfo | Документы Microsoft
+title: Структура DebugPropertyInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874193"
 ---
 # <a name="debugpropertyinfo-structure"></a>Структура DebugPropertyInfo
-Описывает объект иерархический характер, который имеет имя, тип и значение. Используется для описания свойств отладки локальных переменных, параметров, Контрольные значения переменных и выражений и регистрирует.  
+Описывает объект иерархическую сущность, которая имеет имя, тип и значение. Он используется для описания свойств отладки локальных переменных, параметров, Контрольные значения переменных и выражений и регистрирует.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,9 +42,9 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  dwValidFields  
- Перечисляемого типа данных используется, чтобы указать, какие поля инициализируются.  
+ Тип перечислимых данных, можно указать, какие поля инициализируются.  
   
  bstrName  
  Имя свойства в контексте.  
@@ -53,13 +53,13 @@ typedef struct DebugPropertyInfo{
  Тип свойства как форматируемой строки.  
   
  bstrValue  
- Значение свойства как форматируемой строки.  
+ Значение свойства, как форматируемой строки.  
   
  bstrFullName  
  Полное имя свойства.  
   
  dwAttrib  
- Перечисление, указывающее флаги для атрибутов свойства отладки.  
+ Перечисление, содержащее флаги для атрибутов свойства отладки.  
   
  pDebugProp  
  `IDebugProperty` Описываемого сведения в этом `DebugPropertyInfo` структуры.  

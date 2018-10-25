@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907447"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 *Authenticode* — это технология Майкрософт, которая использует шифрование по отраслевому стандарту для подписания кода приложения цифровыми сертификатами, которые удостоверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.  
@@ -39,11 +39,11 @@ ms.locfileid: "39512214"
   
  Сертификат для подписывания кода можно получить одним из трех способов:  
   
--   приобрести у поставщика сертификатов;  
+- приобрести у поставщика сертификатов;  
   
--   получить от группы, которая отвечает за создание цифровых сертификатов в вашей организации.  
+- получить от группы, которая отвечает за создание цифровых сертификатов в вашей организации.  
   
--   Создать собственный сертификат с помощью командлета PowerShell New-SelfSignedCertificate, или с помощью *MakeCert.exe*, входящий в состав [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
+- Создать собственный сертификат с помощью командлета PowerShell New-SelfSignedCertificate, или с помощью *MakeCert.exe*, входящий в состав [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Как с помощью центров сертификации помогает пользователям  
  Сертификат, созданный с помощью New-SelfSignedCertificate или *MakeCert.exe* служебная программа, обычно называется *автосертификатом* или *тестовым сертификатом*. Сертификат этого типа работает во многом так же, как *.snk* файл будет работать в .NET Framework. Он состоит только из пары открытого и закрытого криптографических ключей и не содержит проверяемых сведений об издателе. Автосертификаты можно использовать для развертывания приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с высоким уровнем доверия в интрасети. Однако когда эти приложения выполняются на клиентском компьютере, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] идентифицирует их как поступающие от неизвестного издателя. По умолчанию приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , подписанные с помощью автосертификатов и развертываемые через Интернет, не могут использовать развертывание доверенных приложений.  
@@ -68,7 +68,7 @@ ms.locfileid: "39512214"
   
 ### <a name="store-certificates"></a>Сертификаты Store  
   
--   Вы можете хранить сертификаты по мере *.pfx* файла в файловой системе, или хранить их внутри контейнера ключей. Пользователь в домене Windows может иметь несколько контейнеров ключей. По умолчанию *MakeCert.exe* сохраняет сертификаты в личном контейнере ключей, если не указано, что сертификат должен храниться в *.pfx* вместо этого. *Mage.exe* и *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] средства для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, позволяют использовать сертификаты, хранящиеся в любом режиме.  
+- Вы можете хранить сертификаты по мере *.pfx* файла в файловой системе, или хранить их внутри контейнера ключей. Пользователь в домене Windows может иметь несколько контейнеров ключей. По умолчанию *MakeCert.exe* сохраняет сертификаты в личном контейнере ключей, если не указано, что сертификат должен храниться в *.pfx* вместо этого. *Mage.exe* и *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] средства для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, позволяют использовать сертификаты, хранящиеся в любом режиме.  
   
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   

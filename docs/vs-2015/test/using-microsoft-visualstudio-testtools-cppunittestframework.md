@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889611"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ ms.locfileid: "49291243"
 ##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [Создание тестовых классов и методов](#BKMK_Create_test_classes_and_methods)  
+- [Создание тестовых классов и методов](#BKMK_Create_test_classes_and_methods)  
   
--   [Инициализация и очистка](#BKMK_Initialize_and_cleanup)  
+- [Инициализация и очистка](#BKMK_Initialize_and_cleanup)  
   
-    -   [Методы тестов](#BKMK_Test_methods)  
+  -   [Методы тестов](#BKMK_Test_methods)  
   
-    -   [Тестовые классы](#BKMK_Test_classes)  
+  -   [Тестовые классы](#BKMK_Test_classes)  
   
-    -   [Модули тестов](#BKMK_Test_modules)  
+  -   [Модули тестов](#BKMK_Test_modules)  
   
--   [Создание атрибутов тестов](#BKMK_Create_test_attributes)  
+- [Создание атрибутов тестов](#BKMK_Create_test_attributes)  
   
-    -   [Атрибуты метода теста](#BKMK_Test_method_attributes)  
+  - [Атрибуты метода теста](#BKMK_Test_method_attributes)  
   
-    -   [Атрибуты тестового класса](#BKMK_Test_class_attributes)  
+  - [Атрибуты тестового класса](#BKMK_Test_class_attributes)  
   
-    -   [Атрибуты модуля теста](#BKMK_Test_module_attributes)  
+  - [Атрибуты модуля теста](#BKMK_Test_module_attributes)  
   
-    -   [Стандартные атрибуты](#BKMK_Pre_defined_attributes)  
+  - [Стандартные атрибуты](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [Общие утверждения](#BKMK_General_Asserts)  
+  - [Общие утверждения](#BKMK_General_Asserts)  
   
-        -   [Проверка на равенство](#BKMK_General_Are_Equal)  
+    -   [Проверка на равенство](#BKMK_General_Are_Equal)  
   
-        -   [Проверка на неравенство](#BKMK_General_Are_Not_Equal)  
+    -   [Проверка на неравенство](#BKMK_General_Are_Not_Equal)  
   
-        -   [Ссылаются на один и тот же объект](#BKMK_General_Are_Same)  
+    -   [Ссылаются на один и тот же объект](#BKMK_General_Are_Same)  
   
-        -   [Не ссылаются на один и тот же объект](#BKMK_General_Are_Not_Same)  
+    -   [Не ссылаются на один и тот же объект](#BKMK_General_Are_Not_Same)  
   
-        -   [Имеет значение Null](#BKMK_General_Is_Null)  
+    -   [Имеет значение Null](#BKMK_General_Is_Null)  
   
-        -   [Имеет значение не Null](#BKMK_General_Is_Not_Null)  
+    -   [Имеет значение не Null](#BKMK_General_Is_Not_Null)  
   
-        -   [Условие имеет значение true](#BKMK_General_Is_True)  
+    -   [Условие имеет значение true](#BKMK_General_Is_True)  
   
-        -   [Условие имеет значение false](#BKMK_General_Is_False)  
+    -   [Условие имеет значение false](#BKMK_General_Is_False)  
   
-        -   [Не пройден](#BKMK_General_Fail)  
+    -   [Не пройден](#BKMK_General_Fail)  
   
-    -   [Утверждения среды выполнения Windows](#BKMK_WinRT_Asserts)  
+  - [Утверждения среды выполнения Windows](#BKMK_WinRT_Asserts)  
   
-        -   [Проверка на равенство](#BKMK_WinRT_Are_Equal)  
+    -   [Проверка на равенство](#BKMK_WinRT_Are_Equal)  
   
-        -   [Ссылаются на один и тот же объект](#BKMK_WinRT_Are_Same)  
+    -   [Ссылаются на один и тот же объект](#BKMK_WinRT_Are_Same)  
   
-        -   [Проверка на неравенство](#BKMK_WinRT_Are_Not_Equal)  
+    -   [Проверка на неравенство](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [Не ссылаются на один и тот же объект](#BKMK_WinRT_Are_Not_Same)  
+    -   [Не ссылаются на один и тот же объект](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [Имеет значение Null](#BKMK_WinRT_Is_Null)  
+    -   [Имеет значение Null](#BKMK_WinRT_Is_Null)  
   
-        -   [Имеет значение не Null](#BKMK_WinRT_Is_Not_Null)  
+    -   [Имеет значение не Null](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [Утверждения об исключениях](#BKMK_Exception_Asserts)  
+  - [Утверждения об исключениях](#BKMK_Exception_Asserts)  
   
-        -   [Ожидается исключение](#BKMK_Expect_Exception)  
+    - [Ожидается исключение](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Ведение журнала](#BKMK_Logger)  
+    - [Ведение журнала](#BKMK_Logger)  
   
-        -   [Запись сообщения](#BKMK_Write_Message)  
+    - [Запись сообщения](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

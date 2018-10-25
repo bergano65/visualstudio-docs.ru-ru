@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCorPath | Документы Microsoft
+title: IDebugExpressionEvaluator2::SetCorPath | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ecff270a07d9f10c2a7df150989813179e58f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 64c031647382ccb9b4136fdd97d5cb60fc41997b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882379"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-Задает путь для общеязыковой среды выполнения (CLR), загружаемых в отладчике.  
+Задает путь к общеязыковой среды выполнения (CLR), загрузить в отладчик.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int SetCorPath(
   
 #### <a name="parameters"></a>Параметры  
  `pcstrCorPath`  
- [in] Путь к среде CLR загружен в отладчике.  
+ [in] Путь к CLR загружен в отладчик.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)  

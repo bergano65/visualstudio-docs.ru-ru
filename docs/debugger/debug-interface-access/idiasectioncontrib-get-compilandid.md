@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_compilandId | Документы Microsoft
+title: IDiaSectionContrib::get_compilandId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fbfcb02264440c97bdc47c104f026bfe1efe0a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 83b6a437dffb137775182c756a285cd59dddb04e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852808"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-Извлекает идентификатор объекта компиляции для раздела.  
+Извлекает идентификатор для раздела единице компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ HRESULT get_compilandId (
  [out] Возвращает идентификатор объекта компиляции для раздела.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

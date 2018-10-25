@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Документы Microsoft
+title: IDebugMemoryContext2::Subtract | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6cc7265def2d1a4b184f27865461706e62b98f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3303d86abed596f35f714c4389770c613fa09b6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896657"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Вычитает указанное значение в текущем контексте и возвращает новый контекст.  
+Вычитает указанное значение из текущего контекста и возвращает новый контекст.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,18 +44,18 @@ int Subtract(
   
 #### <a name="parameters"></a>Параметры  
  `dwCount`  
- [in] Число байтов памяти, для уменьшения.  
+ [in] Число байтов памяти, чтобы уменьшить.  
   
  `ppMemCxt`  
  [out] Возвращает новый [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Контекст памяти — это адрес, поэтому полученное значение вычитается из адреса создает новый адрес, который требуется новый интерфейс контекста.  
+ Контекст памяти — это адрес, поэтому значение вычитается из адреса создает новый адрес, который требуется новый интерфейс контекста.  
   
- Этот метод всегда должен создавать новый контекст, даже если Итоговый адрес находится вне области памяти, связанный с данным контекстом. Единственное исключение — если памяти не может быть выделено для нового контекста или `ppMemCxt` имеет значение null (который является ошибкой).  
+ Этот метод всегда должен создавать новый контекст, даже если Итоговый адрес находится вне области памяти, связанный с данным контекстом. Единственное исключение — если недостаточно памяти, выделяемой для нового контекста или `ppMemCxt` имеет нулевое значение (который является ошибкой).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e6061918df2110599731c0ac57340ae5319a8a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887314"
 ---
 # <a name="pickbranch-activity-designer"></a>Конструктор действия PickBranch
 Действие <xref:System.Activities.Statements.PickBranch> обеспечивает основанный на событиях путь выполнения в пределах действия <xref:System.Activities.Statements.Pick>, которое может быть вызвано входящим событием.  
@@ -34,21 +34,21 @@ ms.locfileid: "49301890"
   
  Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов** или с помощью контекстного меню на в рамках **выбрать** конструктора:  
   
-1.  **PickBranch** конструктор создает <xref:System.Activities.Statements.PickBranch> при перетаскивании из **элементов** в одну из ветвей **выбрать** конструктора действий на [!INCLUDE[wfd2](../includes/wfd2-md.md)] поверхности. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании **PickBranch** конструктора **выбрать** конструктора с помощью мыши **выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> будет добавлен в данном положении указателя мыши.  
+1. **PickBranch** конструктор создает <xref:System.Activities.Statements.PickBranch> при перетаскивании из **элементов** в одну из ветвей **выбрать** конструктора действий на [!INCLUDE[wfd2](../includes/wfd2-md.md)] поверхности. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании **PickBranch** конструктора **выбрать** конструктора с помощью мыши **выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> будет добавлен в данном положении указателя мыши.  
   
-2.  Щелкните правой кнопкой мыши **выбрать** конструктора действий (но не **PickBranch** конструктор) для получения контекстного меню и выберите **создать ветвь** Добавление нового <xref:System.Activities.Statements.PickBranch>. Обратите внимание, что новый <xref:System.Activities.Statements.PickBranch> добавляется справа от существующих <xref:System.Activities.Statements.PickBranch> объекты в **выбрать** конструктора.  
+2. Щелкните правой кнопкой мыши **выбрать** конструктора действий (но не **PickBranch** конструктор) для получения контекстного меню и выберите **создать ветвь** Добавление нового <xref:System.Activities.Statements.PickBranch>. Обратите внимание, что новый <xref:System.Activities.Statements.PickBranch> добавляется справа от существующих <xref:System.Activities.Statements.PickBranch> объекты в **выбрать** конструктора.  
   
- **PickBranch** конструктора можно расширить для отображения **триггера** и **действие** либо свернуть, щелкнув двойные стрелки справа от заголовка. Изменить <xref:System.Activities.Statements.PickBranch.Trigger%2A> и <xref:System.Activities.Statements.PickBranch.Action%2A> каждого <xref:System.Activities.Statements.PickBranch> , перетащив действия в **триггера** и **действие** соответствующих конструкторов.  
+   **PickBranch** конструктора можно расширить для отображения **триггера** и **действие** либо свернуть, щелкнув двойные стрелки справа от заголовка. Изменить <xref:System.Activities.Statements.PickBranch.Trigger%2A> и <xref:System.Activities.Statements.PickBranch.Action%2A> каждого <xref:System.Activities.Statements.PickBranch> , перетащив действия в **триггера** и **действие** соответствующих конструкторов.  
   
- <xref:System.Activities.Statements.PickBranch> Объекты в <xref:System.Activities.Statements.Pick.Branches%2A> коллекцию <xref:System.Activities.Statements.Pick> объекта, можно изменить порядок сортировки с помощью перетаскивания их в новое расположение в пределах **выбрать** конструктора. **Выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> добавляется в данном положении указателя мыши.  
+   <xref:System.Activities.Statements.PickBranch> Объекты в <xref:System.Activities.Statements.Pick.Branches%2A> коллекцию <xref:System.Activities.Statements.Pick> объекта, можно изменить порядок сортировки с помощью перетаскивания их в новое расположение в пределах **выбрать** конструктора. **Выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> добавляется в данном положении указателя мыши.  
   
- Существует два способа удаления <xref:System.Activities.Statements.PickBranch>.  
+   Существует два способа удаления <xref:System.Activities.Statements.PickBranch>.  
   
-1.  Выберите **PickBranch** конструкторе и удалите его.  
+3. Выберите **PickBranch** конструкторе и удалите его.  
   
-2.  Выберите **PickBranch** конструктора, щелкните правой кнопкой мыши, чтобы вызвать контекстное меню и выберите **удалить**.  
+4. Выберите **PickBranch** конструктора, щелкните правой кнопкой мыши, чтобы вызвать контекстное меню и выберите **удалить**.  
   
- Не забудьте выбрать **PickBranch** конструктора, как выбрать одно из действий внутри ее **триггера** или **действие** поля по ошибке Удаляет один из этих действий и не <xref:System.Activities.Statements.PickBranch> объекта.  
+   Не забудьте выбрать **PickBranch** конструктора, как выбрать одно из действий внутри ее **триггера** или **действие** поля по ошибке Удаляет один из этих действий и не <xref:System.Activities.Statements.PickBranch> объекта.  
   
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Свойства PickBranch в конструкторе рабочих процессов  
  В следующей таблице показаны наиболее полезные свойства действия <xref:System.Activities.Statements.PickBranch> и описано их использование в [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

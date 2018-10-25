@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894174"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство: Создание пользовательского рабочего процесса действия сайта
   В этом пошаговом руководстве демонстрируется создание настраиваемого действия для рабочих процессов на уровне сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Для всего сайта, а не только список на сайте применяются рабочие процессы уровня веб-сайта). Пользовательское действие создает резервную копию списка извещений и затем копирует содержимое списка извещений в него.  
   
  В этом пошаговом руководстве описаны следующие задачи.  
   
--   Создание рабочего процесса уровня веб-сайта.  
+- Создание рабочего процесса уровня веб-сайта.  
   
--   Создание пользовательского действия рабочего процесса.  
+- Создание пользовательского действия рабочего процесса.  
   
--   Создание и удаление списка SharePoint.  
+- Создание и удаление списка SharePoint.  
   
--   Копирование элементов из одного списка в другой.  
+- Копирование элементов из одного списка в другой.  
   
--   Отображение списка на панели быстрого запуска.  
+- Отображение списка на панели быстрого запуска.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
