@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846867"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Проверьте предыдущие состояния приложения, используя шаг назад в IntelliTrace в Visual Studio
 
@@ -106,17 +106,17 @@ IntelliTrace в режиме только для событий позволяю
 * Если вы используете режим события и моментальные снимки IntelliTrace в версиях Windows старше, чем Windows 10 Fall Creators Update (RS3) и целевой платформы отладки приложения имеет значение x86, IntelliTrace не создает моментальные снимки.
 
     Обходные решения:
-    * Если вы являетесь Юбилейное обновление Windows 10 (RS1) и более ранних версий версии 10.0.14393.2273, [установить KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Если вы являетесь в Windows 10 Creators Update (RS2) и ниже версии 10.0.15063.1112, [установить KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Установка или обновление до Windows 10 Fall Creators Update (RS3). 
-    * Кроме того: 
-        1. Установите набор инструментов VC++ 2015.3 версии 140 для классического компонента (x86, x64) из установщика Visual Studio.
-        2. Выполните сборку целевого приложения.
-        3. Из командной строки, воспользуйтесь средством editbin присвоить `Largeaddressaware` флаг для целевой исполняемый файл. Например, можно использовать эту команду (после обновления путь): «C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe» / LARGEADDRESSAWARE «C:\Path\To\Application\app.exe».
-        4. Чтобы начать отладку, нажмите клавишу **F5**. Теперь моментальные снимки на отладчик шагов и точек останова.
+  * Если вы являетесь Юбилейное обновление Windows 10 (RS1) и более ранних версий версии 10.0.14393.2273, [установить KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Если вы являетесь в Windows 10 Creators Update (RS2) и ниже версии 10.0.15063.1112, [установить KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Установка или обновление до Windows 10 Fall Creators Update (RS3). 
+  * Кроме того: 
+    1. Установите набор инструментов VC++ 2015.3 версии 140 для классического компонента (x86, x64) из установщика Visual Studio.
+    2. Выполните сборку целевого приложения.
+    3. Из командной строки, воспользуйтесь средством editbin присвоить `Largeaddressaware` флаг для целевой исполняемый файл. Например, можно использовать эту команду (после обновления путь): «C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe» / LARGEADDRESSAWARE «C:\Path\To\Application\app.exe».
+    4. Чтобы начать отладку, нажмите клавишу **F5**. Теперь моментальные снимки на отладчик шагов и точек останова.
 
-        > [!Note]
-        > `Largeaddressaware` Должен быть установлен флаг при каждом перестроении исполняемого файла с изменениями.
+       > [!Note]
+       > `Largeaddressaware` Должен быть установлен флаг при каждом перестроении исполняемого файла с изменениями.
 
 * Времени процесс приложения снимка приложения, использующего сохраненный файл, размещенный в памяти, процесс с моментальным снимком накладывает монопольную блокировку на файл, размещенный в памяти (даже после родительский процесс выпустила его блокировки). Другие процессы, по-прежнему могут читать, но не записать в файл, размещенный в памяти.
 

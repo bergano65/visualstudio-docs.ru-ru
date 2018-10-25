@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByRVA | Документы Microsoft
+title: IDiaSession::findInlineeLinesByRVA | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b614ce500ea2df5d8054c8b579b8ed7a7d3f3c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bf5b7ee1359ac4a7943187f9170df08eb9c7858c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875662"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Возвращает перечисление, которое позволяет клиенту итерации сведения о номерах строк для всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта и находятся в пределах указанного относительного виртуального адреса (RVA).  
+Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского элемента и содержатся в пределах указанного относительного виртуального адреса (RVA).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ HRESULT findInlineeLinesByRVA (
  [in] Указывает адрес как RVA.  
   
  `length`  
- [in] Указывает диапазон адресов, в байтах, покрывающие с этим запросом.  
+ [in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.  
   
  `ppResult`  
  [out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

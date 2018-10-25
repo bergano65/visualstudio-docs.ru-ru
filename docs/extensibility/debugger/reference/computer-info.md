@@ -1,5 +1,5 @@
 ---
-title: COMPUTER_INFO | Документы Microsoft
+title: COMPUTER_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9f81532608a4919707b5acafbde7ce1d8fe400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a52247f36f3628d91e83a89ded88a35c6ee8e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864222"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
-Описывает компьютер, на котором выполняется отладчик.  
+Описание компьютера, на котором выполняется отладчик.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -64,5 +64,5 @@ public struct COMPUTER_INFO
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

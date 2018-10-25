@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateArrayObject | Документы Microsoft
+title: IDebugFunctionObject::CreateArrayObject | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39695d37012f90d7e61c04f64ee1c05f11482373
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 150380d77b6e59cf6db822bca7f674759fb8a56f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873781"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-Создает объект массива. Этот массив может содержать либо примитив или экземпляр значений объектов.  
+Создает объект массива. Этот массив может содержать либо примитив или объект значения экземпляра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,25 +54,25 @@ int CreateArrayObject(
  [in] Указывает значение из [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) перечисление, указывающее тип объекта нового массива.  
   
  `pClassField`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий класс объекта, если создается массив объектов значения экземпляра. Если создается массив простых объектов, этот параметр является значение null.  
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий класс объекта, который, если создается массив объектов значениями экземпляра. Если создается массив простых объектов, этот параметр является значение null.  
   
  `dwRank`  
- [in] Число измерений массива или рангом.  
+ [in] Ранг или число измерений массива.  
   
  `dwDims`  
  [in] Размер каждого измерения массива.  
   
  `dwLowBounds`  
- [in] Источник для каждого измерения (обычно 0 или 1).  
+ [in] Источник каждого измерения (обычно 0 или 1).  
   
  `ppObject`  
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект, представляющий вновь созданный массив. Это на самом деле [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) объекта.  
+ [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект, представляющий только что созданный массив. На самом деле [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Вызовите этот метод, чтобы создать объект, представляющий параметр массива в функцию, который представляется [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейса.  
+ Вызовите этот метод, чтобы создать объект, представляющий параметру массива в функцию, который представляется [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::Evaluate | Документы Microsoft
+title: IDebugFunctionObject::Evaluate | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f717a61e79e9f91f9f79a32d1da5020b0084516
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908428"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Вызывает функцию и возвращает результирующее значение в виде объекта.  
+Вызывает функцию и возвращает результирующее значение как объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,22 +47,22 @@ int Evaluate(
   
 #### <a name="parameters"></a>Параметры  
  `ppParams`  
- [in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объектов, представляющих входные параметры. Каждый из этих параметров был создан с помощью одного из `Create` методы в [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейса.  
+ [in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекты, представляющие входные параметры. Каждый из этих параметров был создан с помощью одного из `Create` методы в [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
   
  `dwParams`  
  [in] Число параметров в `ppParams` массива.  
   
  `dwTimeout`  
- [in] Указывает максимальное время (в миллисекундах) ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
+ [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
   
  `ppResult`  
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет значение функции, как объект.  
+ [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющая значение функции в виде объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод настраивает и выполняет вызов функции, представленного [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объекта.  
+ Этот метод настраивает и выполняет вызов функции, представленной [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объекта.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

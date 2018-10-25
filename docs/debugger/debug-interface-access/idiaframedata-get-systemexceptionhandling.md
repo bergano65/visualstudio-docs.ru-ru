@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_systemExceptionHandling | Документы Microsoft
+title: IDiaFrameData::get_systemExceptionHandling | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218cc1c9bc9b031621df1d6a3722d698f82999e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882734"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-Возвращает флаг, который указывает, является ли система обработки исключений в силе.  
+Получает флаг, который указывает, является ли система обработки исключений в силе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_systemExceptionHandling (
   
 #### <a name="parameters"></a>Параметры  
  pRetVal  
- [out] Возвращает `TRUE` в случае обработки исключений системы действует; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если обработка исключений система является по сути, в противном случае — возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Обработка исключений системы более часто называется структурированной обработки исключений.  
+ Система обработки исключений обычно называется структурированной обработки исключений.  
   
  Чтобы определить, действует ли обработка исключений с ++, вызовите [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) метод.  
   

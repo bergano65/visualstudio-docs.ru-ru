@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Документы Microsoft
+title: IDebugProperty3::GetCustomViewerList | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a98a7ca4b2f1dcf25728bd0d2e3778be2d70ada
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d595666fc6099c8769c80f87d9089689c9075962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843942"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Получает список пользовательских средств просмотра, связанный с этим свойством.  
+Получает список пользовательских средств просмотра, связанных с данным свойством.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,27 +47,27 @@ int GetCustomViewerList(
   
 #### <a name="parameters"></a>Параметры  
  `celtSkip`  
- [in] Число средств просмотра, чтобы перейти к странице.  
+ [in] Количество представлений, чтобы пропустить.  
   
  `celtRequested`  
- [in] Количество представлений, чтобы получить (также определяет размер `rgViewers` массива).  
+ [in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).  
   
  `rgViewers`  
- [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур, которые должны заполняться в.  
+ [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.  
   
  `pceltFetched`  
  [out] Возвращает фактическое количество средств просмотра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для поддержки визуализаторами типов, этот метод передает вызов [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод можно добавлять в список соответствующих пользовательских средств просмотра.  
+ Для поддержки визуализаторов типов, этот метод передает вызов [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод можно добавить в список соответствующих пользовательских средств просмотра.  
   
- В разделе [тип визуализатора и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) сведения о различиях между визуализаторами типов и пользовательских средств просмотра.  
+ См. в разделе [визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Дополнительные сведения о различиях между визуализаторов типов и пользовательских средств просмотра.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  

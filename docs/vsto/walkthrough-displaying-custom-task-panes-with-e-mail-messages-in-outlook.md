@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcff4b5058d87f467e4b8e94637a1dc74cee98f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828472"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
   В этом пошаговом руководстве показано, как отобразить уникальный экземпляр настраиваемой области задач для каждого созданного или открытого сообщения электронной почты сообщения. Пользователи могут отображать или скрывать настраиваемую область задач с помощью кнопки на ленте каждого сообщения электронной почты.  
@@ -56,11 +56,11 @@ ms.locfileid: "35675105"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или Microsoft Outlook 2010.  
+- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или Microsoft Outlook 2010.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: использовать области задач в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: использовать области задач в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Создание проекта  
  Настраиваемые области задач реализуются в надстройках VSTO. Начните с создания проекта надстройки VSTO для Outlook.  
@@ -69,7 +69,7 @@ ms.locfileid: "35675105"
   
 1.  Создайте проект **надстройки Outlook** с именем **OutlookMailItemTaskPane**. Используйте шаблон проекта **Надстройка Outlook** . Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает *ThisAddIn.cs* или *ThisAddIn.vb* файл кода и добавляет **OutlookMailItemTaskPane** проект **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода *ThisAddIn.cs* или *ThisAddIn.vb* и добавляет проект **OutlookMailItemTaskPane** в **обозреватель решений**.  
   
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Проектирование пользовательского интерфейса настраиваемой области задач  
  Визуальный конструктор для настраиваемых областей задач не предусмотрен, но можно создать пользовательский элемент управления с нужным пользовательским интерфейсом. Настраиваемая область задач в этой надстройке VSTO имеет простой пользовательский интерфейс, содержащий элемент управления <xref:System.Windows.Forms.TextBox> . Далее в этом пошаговом руководстве вы добавите этот пользовательский элемент управления в настраиваемую область задач.  
@@ -97,7 +97,7 @@ ms.locfileid: "35675105"
   
 3.  Измените имя новой ленты на **ManageTaskPaneRibbon**и нажмите кнопку **Добавить**.  
   
-     *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* файл открывается в конструкторе лент, отобразятся вкладка по умолчанию и группы.  
+     В конструкторе ленты откроется файл *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* и отобразятся вкладка и группа, используемые по умолчанию.  
   
 4.  В конструкторе ленты щелкните группу **group1**.  
   
@@ -121,24 +121,24 @@ ms.locfileid: "35675105"
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Создание класса для управления окнами инспектора и настраиваемыми областями задач  
  Существует несколько случаев, в которых надстройка VSTO должна определить какая настраиваемая область задач связан с указанном сообщении электронной почты. Это следующие случаи.  
   
--   Когда пользователь закрывает сообщение электронной почты. В этом случае надстройка VSTO должна удалить соответствующую настраиваемую область задач, чтобы ресурсы, используемые этой надстройкой VSTO, были правильно освобождены.  
+- Когда пользователь закрывает сообщение электронной почты. В этом случае надстройка VSTO должна удалить соответствующую настраиваемую область задач, чтобы ресурсы, используемые этой надстройкой VSTO, были правильно освобождены.  
   
--   Когда пользователь закрывает настраиваемую область задач. В этом случае надстройка VSTO должна обновить состояние выключателя на ленте сообщения электронной почты.  
+- Когда пользователь закрывает настраиваемую область задач. В этом случае надстройка VSTO должна обновить состояние выключателя на ленте сообщения электронной почты.  
   
--   Когда пользователь щелкает выключатель на ленте. В этом случае надстройка VSTO должна скрыть или отобразить соответствующую область задач.  
+- Когда пользователь щелкает выключатель на ленте. В этом случае надстройка VSTO должна скрыть или отобразить соответствующую область задач.  
   
- Чтобы включить надстройки VSTO для отслеживания какая настраиваемая область задач связана с каждого открытого сообщения электронной почты, создайте пользовательский класс, который создает оболочку для пары <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> объектов. Этот класс создает новый объект настраиваемой области задач для каждого сообщения электронной почты, и удаляет настраиваемую область задач при закрытии соответствующего сообщения электронной почты.  
+  Чтобы включить надстройки VSTO для отслеживания какая настраиваемая область задач связана с каждого открытого сообщения электронной почты, создайте пользовательский класс, который создает оболочку для пары <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> объектов. Этот класс создает новый объект настраиваемой области задач для каждого сообщения электронной почты, и удаляет настраиваемую область задач при закрытии соответствующего сообщения электронной почты.  
   
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Создание класса для управления окнами инспектора и настраиваемыми областями задач  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши *ThisAddIn.cs* или *ThisAddIn.vb* файла и нажмите кнопку **Просмотр кода**.  
+1.  В **обозревателе решений**щелкните правой кнопкой мыши файл *ThisAddIn.cs* или *ThisAddIn.vb* и выберите в контекстном меню команду **Просмотреть код**.  
   
 2.  Добавьте следующие инструкции в начало файла.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]  
   
-3.  Добавьте следующий код, чтобы *ThisAddIn.cs* или *ThisAddIn.vb* файл за пределами `ThisAddIn` класса (для Visual C# добавьте этот код в `OutlookMailItemTaskPane` пространства имен). Класс `InspectorWrapper` управляет парой объектов <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> . Вы завершите определение этого класса в следующих шагах.  
+3.  Добавьте следующий код в файл *ThisAddIn.cs* или *ThisAddIn.vb* за пределами класса `ThisAddIn` (для Visual C# добавьте этот код в пространство имен `OutlookMailItemTaskPane` ). Класс `InspectorWrapper` управляет парой объектов <xref:Microsoft.Office.Interop.Outlook.Inspector> и <xref:Microsoft.Office.Tools.CustomTaskPane> . Вы завершите определение этого класса в следующих шагах.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]  
@@ -168,36 +168,36 @@ ms.locfileid: "35675105"
   
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Инициализация и освобождение ресурсов, используемых надстройкой VSTO  
   
-1.  В *ThisAddIn.cs* или *ThisAddIn.vb* файл, найдите определение `ThisAddIn` класса.  
+1. В файле *ThisAddIn.cs* или *ThisAddIn.vb* найдите определение класса `ThisAddIn` .  
   
-2.  Добавьте в класс `ThisAddIn` следующие объявления.  
+2. Добавьте в класс `ThisAddIn` следующие объявления.  
   
-    -   Поле `inspectorWrappersValue` содержит все объекты <xref:Microsoft.Office.Interop.Outlook.Inspector> и `InspectorWrapper` , которыми управляет надстройка VSTO.  
+   - Поле `inspectorWrappersValue` содержит все объекты <xref:Microsoft.Office.Interop.Outlook.Inspector> и `InspectorWrapper` , которыми управляет надстройка VSTO.  
   
-    -   Поле `inspectors` содержит ссылку на коллекцию окон инспектора в текущем экземпляре Outlook. Эта ссылка не позволит сборщику мусора освободить память, содержащую обработчик событий для события <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> , который вы объявите на следующем шаге.  
+   - Поле `inspectors` содержит ссылку на коллекцию окон инспектора в текущем экземпляре Outlook. Эта ссылка не позволит сборщику мусора освободить память, содержащую обработчик событий для события <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> , который вы объявите на следующем шаге.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3.  Замените метод `ThisAddIn_Startup` следующим кодом. Этот код присоединяет обработчик событий к событию <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> и передает каждый существующий объект <xref:Microsoft.Office.Interop.Outlook.Inspector> в данный обработчик событий. Если пользователь загружает надстройку VSTO, после запуска Outlook, надстройка VSTO использует эти сведения для создания настраиваемых областей задач для всех сообщений электронной почты, которые уже открыты.  
+3. Замените метод `ThisAddIn_Startup` следующим кодом. Этот код присоединяет обработчик событий к событию <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> и передает каждый существующий объект <xref:Microsoft.Office.Interop.Outlook.Inspector> в данный обработчик событий. Если пользователь загружает надстройку VSTO, после запуска Outlook, надстройка VSTO использует эти сведения для создания настраиваемых областей задач для всех сообщений электронной почты, которые уже открыты.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
   
-4.  Замените метод `ThisAddIn_ShutDown` следующим кодом. Этот код отсоединяет обработчик событий <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> и освобождает объекты, используемые надстройкой VSTO.  
+4. Замените метод `ThisAddIn_ShutDown` следующим кодом. Этот код отсоединяет обработчик событий <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> и освобождает объекты, используемые надстройкой VSTO.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
   
-5.  Добавьте следующий обработчик событий <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> в класс `ThisAddIn` . Если новый <xref:Microsoft.Office.Interop.Outlook.Inspector> содержит сообщение электронной почты, метод создает экземпляр нового `InspectorWrapper` объект для управления связью между сообщением электронной почты и соответствующей областью задач.  
+5. Добавьте следующий обработчик событий <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> в класс `ThisAddIn` . Если новый <xref:Microsoft.Office.Interop.Outlook.Inspector> содержит сообщение электронной почты, метод создает экземпляр нового `InspectorWrapper` объект для управления связью между сообщением электронной почты и соответствующей областью задач.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
   
-6.  Добавьте в класс `ThisAddIn` указанное ниже свойство. Это свойство предоставляет закрытое поле `inspectorWrappersValue` коду за пределами класса `ThisAddIn` .  
+6. Добавьте в класс `ThisAddIn` указанное ниже свойство. Это свойство предоставляет закрытое поле `inspectorWrappersValue` коду за пределами класса `ThisAddIn` .  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
 ## <a name="checkpoint"></a>Контрольная точка  
  Постройте проект, чтобы убедиться, что компиляция выполняется без ошибок.  
@@ -213,9 +213,9 @@ ms.locfileid: "35675105"
   
 1.  В конструкторе ленты дважды щелкните выключатель **Показать область задач** .  
   
-     Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* файл в редакторе кода.  
+     Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает файл *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* в редакторе кода.  
   
-2.  Добавьте следующие операторы в верхнюю часть *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* файла.  
+2.  Добавьте следующие инструкции в начале файла *ManageTaskPaneRibbon.cs* или *ManageTaskPaneRibbon.vb* .  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]  
@@ -230,29 +230,29 @@ ms.locfileid: "35675105"
   
 ### <a name="to-test-the-vsto-add-in"></a>Тестирование надстройки VSTO  
   
-1.  Нажмите клавишу **F5**.  
+1. Нажмите клавишу **F5**.  
   
-2.  В Outlook, нажмите кнопку **New** для создания нового сообщения электронной почты.  
+2. В Outlook, нажмите кнопку **New** для создания нового сообщения электронной почты.  
   
-3.  На ленте сообщения электронной почты, нажмите кнопку **Add-Ins** , а затем щелкните **Показать область задач** кнопки.  
+3. На ленте сообщения электронной почты, нажмите кнопку **Add-Ins** , а затем щелкните **Показать область задач** кнопки.  
   
-     Убедитесь, что область задач с заголовком **Моя область задач** отображается с сообщением электронной почты.  
+    Убедитесь, что область задач с заголовком **Моя область задач** отображается с сообщением электронной почты.  
   
-4.  В этой области задач введите в текстовом поле **Первая область задач** .  
+4. В этой области задач введите в текстовом поле **Первая область задач** .  
   
-5.  Закройте область задач.  
+5. Закройте область задач.  
   
-     Убедитесь, что состояние кнопки **Показать область задач** изменилось, и она больше не выглядит нажатой.  
+    Убедитесь, что состояние кнопки **Показать область задач** изменилось, и она больше не выглядит нажатой.  
   
-6.  Снова нажмите кнопку **Показать область задач** .  
+6. Снова нажмите кнопку **Показать область задач** .  
   
-     Убедитесь, что область задач открывается и текстовое поле по-прежнему содержит строку **Первая область задач**.  
+    Убедитесь, что область задач открывается и текстовое поле по-прежнему содержит строку **Первая область задач**.  
   
-7.  В Outlook, нажмите кнопку **New** создать второе сообщение электронной почты.  
+7. В Outlook, нажмите кнопку **New** создать второе сообщение электронной почты.  
   
-8.  На ленте сообщения электронной почты, нажмите кнопку **Add-Ins** , а затем щелкните **Показать область задач** кнопки.  
+8. На ленте сообщения электронной почты, нажмите кнопку **Add-Ins** , а затем щелкните **Показать область задач** кнопки.  
   
-     Убедитесь, что область задач с заголовком **Моя область задач** отображается с сообщением электронной почты, и текстовое поле в этой области задач будет пустым.  
+    Убедитесь, что область задач с заголовком **Моя область задач** отображается с сообщением электронной почты, и текстовое поле в этой области задач будет пустым.  
   
 9. В этой области задач введите в текстовом поле **Вторая область задач** .  
   
@@ -260,7 +260,7 @@ ms.locfileid: "35675105"
   
      Убедитесь, что область задач, которая связана с этим сообщением электронной почты, по-прежнему отображается **Первая область задач** в текстовом поле.  
   
- Эта надстройка VSTO также обрабатывает более сложные сценарии, которые вы можете попробовать. Например, можно проверить поведение при просмотре сообщений электронной почты с помощью **следующий элемент** и **предыдущий элемент** кнопки. Кроме того, можно проверить поведение при выгрузке надстройки VSTO, открыть несколько сообщений электронной почты и затем перезагрузите надстройки VSTO.  
+    Эта надстройка VSTO также обрабатывает более сложные сценарии, которые вы можете попробовать. Например, можно проверить поведение при просмотре сообщений электронной почты с помощью **следующий элемент** и **предыдущий элемент** кнопки. Кроме того, можно проверить поведение при выгрузке надстройки VSTO, открыть несколько сообщений электронной почты и затем перезагрузите надстройки VSTO.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:  

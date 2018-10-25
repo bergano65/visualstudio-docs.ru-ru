@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850429"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203675"
   
 #### <a name="to-execute-a-function-at-design-time"></a>Выполнение функции во время разработки  
   
-1.  Скопируйте следующий код в консольное приложение [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
+1. Скопируйте следующий код в консольное приложение [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  В меню **Отладка** выберите пункт **Окна** и щелкните **Интерпретация**.  
+2. В меню **Отладка** выберите пункт **Окна** и щелкните **Интерпретация**.  
   
-3.  Введите в окне **Интерпретация** `?MyFunction(2)` и нажмите клавишу ВВОД.  
+3. Введите в окне **Интерпретация** `?MyFunction(2)` и нажмите клавишу ВВОД.  
   
-     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.  
+    Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.  
   
- Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Вычисление выражений во время разработки нельзя использовать в типах проектов, требующих запуска среды выполнения, таких как проекты [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], веб-проекты, проекты для интеллектуальных устройств и проекты SQL.  
+   Вычисление выражений во время разработки нельзя использовать в типах проектов, требующих запуска среды выполнения, таких как проекты [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], веб-проекты, проекты для интеллектуальных устройств и проекты SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Вычисление выражений во время разработки в решениях с несколькими проектами  
  При определении контекста для вычисления выражений во время разработки [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ссылается на текущий выбранный проект в обозревателе решений. Если проект не выбран в обозревателе решений, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] пытается выполнить функцию для запускаемого проекта. Если функцию не удается вычислить в текущем контексте, выводится сообщение об ошибке. При попытке вычислить функцию в проекте, который не является запускаемым для решения, и появлении сообщения об ошибке попробуйте выбрать проект в обозревателей решений и повторить попытку вычисления.  

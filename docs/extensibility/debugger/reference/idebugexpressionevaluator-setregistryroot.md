@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Документы Microsoft
+title: IDebugExpressionEvaluator::SetRegistryRoot | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70b1730fc44deeb7e32433480f02f750c9bec193
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d327528d340bc5472278de13e83077cd2c28171b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840745"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Этот метод устанавливает корневой раздел реестра. Используется для отладки side-by-side.  
+Этот метод задает корень реестра. Используется для отладки side-by-side.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int SetRegistryRoot(
   
 #### <a name="parameters"></a>Параметры  
  `ustrRegistryRoot`  
- [in] Новый корневой раздел реестра.  
+ [in] Новый корень реестра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Корневой указанный раздел реестра обычно устанавливается, когда средство оценки выражений сначала создается точки в раздел реестра для определенной версии Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , где *X.Y* — номер версии).  
+ Корневой указанный раздел реестра обычно устанавливается, когда средство оценки выражений сначала создается экземпляр точки в раздел реестра для определенной версии Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , где *X.Y* — это номер версии).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

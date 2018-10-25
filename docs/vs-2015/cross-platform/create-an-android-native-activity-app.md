@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899933"
 ---
 # <a name="create-an-android-native-activity-app"></a>Создание приложения Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "49174009"
   
 #### <a name="to-create-a-new-project"></a>Создание проекта  
   
-1.  Запустите Visual Studio. В строке меню выберите **Файл**, **Создать**, **Проект**.  
+1. Запустите Visual Studio. В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
-2.  В диалоговом окне **Новый проект** в меню **Шаблоны**щелкните пункт **Visual C++**, **Кроссплатформенное приложение**, а затем выберите шаблон **Приложение Native-Activity (Android)** .  
+2. В диалоговом окне **Новый проект** в меню **Шаблоны**щелкните пункт **Visual C++**, **Кроссплатформенное приложение**, а затем выберите шаблон **Приложение Native-Activity (Android)** .  
   
-3.  Назначьте приложению имя, например `MyAndroidApp`, а затем нажмите кнопку **ОК**.  
+3. Назначьте приложению имя, например `MyAndroidApp`, а затем нажмите кнопку **ОК**.  
   
-     ![Создание проекта Native Activity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Создание проекта Native Activity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio создаст новое решение и откроет обозреватель решений.  
+    Visual Studio создаст новое решение и откроет обозреватель решений.  
   
-     ![Проект Native Activity в Solution Explorer](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Проект Native Activity в Solution Explorer](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- В новое решение приложения Android Native Activity входят два проекта.  
+   В новое решение приложения Android Native Activity входят два проекта.  
   
 -   **MyAndroidApp.NativeActivity** содержит ссылки и связующий код для запуска приложения как приложения Native Activity на Android. Реализация точек входа из связующего кода находится в файле main.cpp. Предварительно откомпилированные заголовки находятся в файле pch.h. Этот проект приложения Native Activity компилируется в общую библиотеку (SO-файл), которая передается в проект упаковки.  
   

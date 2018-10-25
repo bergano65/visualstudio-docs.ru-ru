@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906563"
 ---
 # <a name="powerpoint-solutions"></a>Решения PowerPoint
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office PowerPoint. Вы можете использовать надстройки VSTO для автоматизации PowerPoint, расширения и настройки пользовательского интерфейса PowerPoint.  
@@ -42,15 +42,15 @@ ms.locfileid: "35673995"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Автоматизация PowerPoint с помощью объектной модели PowerPoint  
  Объектная модель Word предоставляет различные типы, которые можно использовать для автоматизации Word. С их помощью можно написать код для выполнения распространенных задач:  
   
--   программное создание и форматирование презентаций;  
+- программное создание и форматирование презентаций;  
   
--   добавление и удаление слайдов из презентаций;  
+- добавление и удаление слайдов из презентаций;  
   
--   добавление и изменение фигур на слайде.  
+- добавление и изменение фигур на слайде.  
   
- Чтобы получить доступ к объектной модели PowerPoint из надстройки VSTO, используйте `Application` поле `ThisAddIn` в своем проекте. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application> , представляющий текущий экземпляр PowerPoint. Дополнительные сведения см. в разделе [программы VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+  Чтобы получить доступ к объектной модели PowerPoint из надстройки VSTO, используйте `Application` поле `ThisAddIn` в своем проекте. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application> , представляющий текущий экземпляр PowerPoint. Дополнительные сведения см. в разделе [программы VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- При вызове объектной модели PowerPoint используются типы, предоставляемые в основной сборке взаимодействия для PowerPoint. Основная сборка взаимодействия представляет собой мост между управляемым кодом в надстройке VSTO и объектной моделью COM в PowerPoint. Все типы в основной сборке взаимодействия PowerPoint определены в пространстве имен <xref:Microsoft.Office.Interop.PowerPoint> . Дополнительные сведения об основных сборках взаимодействия см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [основных сборок взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
+  При вызове объектной модели PowerPoint используются типы, предоставляемые в основной сборке взаимодействия для PowerPoint. Основная сборка взаимодействия представляет собой мост между управляемым кодом в надстройке VSTO и объектной моделью COM в PowerPoint. Все типы в основной сборке взаимодействия PowerPoint определены в пространстве имен <xref:Microsoft.Office.Interop.PowerPoint> . Дополнительные сведения об основных сборках взаимодействия см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [основных сборок взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> Использование документации по объектной модели PowerPoint  
  Полные сведения об объектной модели PowerPoint см. в справочнике по основной сборке взаимодействия PowerPoint и в справочнике по объектной модели VBA.  
@@ -80,7 +80,7 @@ ms.locfileid: "35673995"
  [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   

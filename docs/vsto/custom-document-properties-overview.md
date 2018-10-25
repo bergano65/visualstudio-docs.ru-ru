@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80a95bdce139ccaf1e18af8dd36aecc63f913c08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846438"
 ---
 # <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
 
@@ -51,7 +51,7 @@ ms.locfileid: "35675162"
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- *SolutionID* представляет собой идентификатор GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] используется для идентификации решения. *SolutionID* создается автоматически при сборке проекта. **Vstolocal** условие указывает на [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] что сборка должна быть загружена из той же папке, что документ.
+  *SolutionID* представляет собой идентификатор GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] используется для идентификации решения. *SolutionID* создается автоматически при сборке проекта. **Vstolocal** условие указывает на [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] что сборка должна быть загружена из той же папке, что документ.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString | Документы Microsoft
+title: IDebugReference2::SetValueAsString | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21d4e3f23ae8a66ff4bfa26bdaf6d906a2b008a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b4c7af3a7cedd56b72032ad51ecc6ef4df04d8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837936"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Задает значение ссылки из строки. Зарезервировано для будущего использования.  
@@ -48,7 +48,7 @@ int SetValueAsString (
  [in] Значение в виде строки.  
   
  `dwRadix`  
- [in] Основание системы счисления, используемое в любой числовой сведения о форматировании.  
+ [in] Основание системы счисления для использования в любой числовой сведения о форматировании.  
   
  `dwTimeout`  
  [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  

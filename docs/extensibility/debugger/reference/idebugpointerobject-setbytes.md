@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::SetBytes | Документы Microsoft
+title: IDebugPointerObject::SetBytes | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8234117d7965c4f2e471855d39ed0c3cee1f88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f3a496eb0212863f2ed08479216ac6ca546009f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891509"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Задает значение, на который указывает из серии последовательных байтов.  
+Задает значение, на который он указывает серию последовательных байтах.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,17 +53,17 @@ int SetBytes(
  [in] Число байтов для задания.  
   
  `pBytes`  
- [in] Массив байтов, представляющий новое значение. Это значение хранится в объект, начиная с заданного смещения.  
+ [in] Массив байтов, представляющий новое значение. Это значение хранится в объекте, начиная с заданного смещения.  
   
  `pdwBytes`  
- [out] Возвращает число байтов, фактически набора.  
+ [out] Возвращает число байтов, фактически задания.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется в том случае, если указатель, представленного этим экземпляром [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на тип-примитив или простого массива типов-примитивов (то есть, массив, может быть представлена простая последовательность байтов). Это `IDebugPointerObject` объект не может быть пустая ссылка (оно должно указывать на адрес в памяти).  
+ Этот метод используется в том случае, если указатель, представленного этим объектом [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на тип-примитив или простого массива типов-примитивов (то есть массив, могут быть представлены простые последовательности байтов). Это `IDebugPointerObject` объект не может быть пустая ссылка (оно должно указывать на адрес в памяти).  
   
 ## <a name="see-also"></a>См. также  
- [Метод GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
+ [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

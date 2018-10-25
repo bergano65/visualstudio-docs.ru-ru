@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Документы Microsoft
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3f89502beeb1e8165450c7c07f3f55f83dd39e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed77975e1a1d337354e7ac743e4b47e3c84ed701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855821"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Разрешает или запрещает вычисления выражения для данного потока, даже если программа остановлена.  
@@ -55,21 +55,21 @@ int WatchForExpressionEvaluationOnThread(
  [in] Указывает идентификатор потока.  
   
  `dwEvalFlags`  
- [in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, укажите, как будет выполняться вычисление.  
+ [in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, укажите, каким образом будет осуществляться вычисления.  
   
  `pExprCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки событий отладки, которые происходят во время вычисления выражения.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки события отладки, возникающие во время вычисления выражения.  
   
  `fWatch`  
- [in] Если ненулевое значение (`TRUE`), позволяет вычисление выражений в потоке, который определяется `dwTid`; в противном случае — нуль (`FALSE`) запрещает вычисление выражений в том же потоке.  
+ [in] Если ненулевое значение (`TRUE`), позволяет вычислять выражение в потоке, идентифицируемый `dwTid`; в противном случае — значение ноль (`FALSE`) запрещает вычисление выражений в этом потоке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Когда диспетчера сеанса отладки (SDM) запрашивает программы, обозначенную `pOriginatingProgram` параметр, чтобы вычислить выражение, уведомляет о всех остальных присоединенных программ путем вызова данного метода.  
+ Когда диспетчер отладки сеансов (SDM) запрашивает программы, идентифицируемый `pOriginatingProgram` параметр, чтобы вычислить выражение, он уведомляет всех остальных присоединенных программ путем вызова данного метода.  
   
- Вычисление выражения в одной программе может привести к коду выполняться в другой, из-за вычисление функции или оценки любого `IDispatch` свойства. По этой причине этот метод позволяет вычисления выражения для запуска и завершения, несмотря на то, что поток может быть остановлен в этой программе.  
+ Вычисление выражений в одной программе может вызвать код в другой, из-за вычисление функции или оценки любого `IDispatch` свойства. По этой причине этот метод позволяет вычисления выражения для запуска и завершения, несмотря на то, что поток может быть остановлена в этой программе.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

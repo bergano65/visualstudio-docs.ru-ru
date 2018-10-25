@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker | Документы Microsoft
+title: IDebugPortPicker::DisplayPortPicker | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb43ac1bdf173de8e7224f154ecb57cca53abd8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d05f49f8fa91a0b193be10169a4dcebcd561f92d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910580"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
-Отображает указанный диалоговое окно, позволяющий пользователю выбрать порт.  
+Отображает указанный диалоговое окно, которое позволяет пользователю выбрать порт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,10 +45,10 @@ public int DisplayPortPicker(
  [in] Дескриптор родительского диалогового окна.  
   
  `pbstrPortId`  
- [out] Строка идентификатора порт.  
+ [out] Строка идентификатора порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращаемое значение `S_FALSE` (или возвращаемое значение `S_OK` с `BSTR` значение `NULL`) указывает, что пользователь нажал **отменить**.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращаемое значение, равное `S_FALSE` (или возвращаемое значение, равное `S_OK` с `BSTR` присвоено `NULL`) указывает, что пользователь нажал **отменить**.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

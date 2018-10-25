@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870782"
 ---
 # <a name="content-definition-dialog-box"></a>Диалоговое окно «Определение содержимого»
 
@@ -25,8 +25,8 @@ ms.locfileid: "36757955"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **инициализация корреляции** диалоговое окно:
 
-|Элемент пользовательского интерфейса|Описание:|
-|----------------|-----------------|
+|Элемент пользовательского интерфейса|Описание|
+|-|-----------------|
 |**Сообщение**|Задает содержимое сообщения при помощи **сообщений данных** текстовом поле выражения и типа с помощью **тип сообщений** поле с раскрывающимся списком. По умолчанию **определение содержимого** использует <xref:System.ServiceModel.Activities.ReceiveMessageContent>, который ожидает <xref:System.ServiceModel.Channels.Message> или тип контракта сообщения в определении службы рабочих процессов.|
 |**Параметры**|Нажмите кнопку **параметры** переключатель, чтобы использовать <xref:System.ServiceModel.Activities.ReceiveParametersContent>, который ожидает контракт данных. Используйте сетку данных для задания универсальной коллекции пар «ключ/значение» <xref:System.Activities.OutArgument>, чьи значения присваиваются параметрам переменных в текущем рабочем процессе.|
 

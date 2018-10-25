@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883979"
 ---
 # <a name="making-commands-available"></a>Как сделать команды доступными
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ ms.locfileid: "49257911"
   
  Пятый области основных контекста — это состояние пользовательского интерфейса интегрированной среды разработки. Контексты пользовательского интерфейса определяются контекстом активной команды `GUID`s, следующим образом:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Эти идентификаторы GUID, помечаются как активное или неактивное, в зависимости от текущего состояния интегрированной среды разработки. Несколько контекстов пользовательского интерфейса может быть активен в то же время.  
+  Эти идентификаторы GUID, помечаются как активное или неактивное, в зависимости от текущего состояния интегрированной среды разработки. Несколько контекстов пользовательского интерфейса может быть активен в то же время.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Скрытие и отображение команд на основе контекста  
  Вы можно отобразить или скрыть команды пакета в интегрированной среде разработки без загрузки сам пакет. Для этого определения команды в vsct-файл пакета с помощью `DefaultDisabled`, `DefaultInvisible`, и `DynamicVisibility` команды флаги и добавление одного или нескольких [VisibilityItem](../../extensibility/visibilityitem-element.md) элементы [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел. Когда контекст указанную команду `GUID` становится активным, команда будет отображаться без загрузки пакета.  
@@ -113,13 +113,13 @@ ms.locfileid: "49257911"
   
  Команда имеет значение быть включена и отображается каждый раз, когда решение существует; то есть каждый раз, когда один из следующих контекст команды GUID активен:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- В примере обратите внимание на то, что каждый флаг команды — это отдельная [флаг команды](../../extensibility/command-flag-element.md) элемент.  
+  В примере обратите внимание на то, что каждый флаг команды — это отдельная [флаг команды](../../extensibility/command-flag-element.md) элемент.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

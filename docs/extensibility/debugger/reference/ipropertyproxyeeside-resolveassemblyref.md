@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Документы Microsoft
+title: IPropertyProxyEESide::ResolveAssemblyRef | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c95d33c2d31e5476153ddd0d0a9598f67080c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7711d185e92b0cc8a29070aa78a4acff835df33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846945"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Определяет расположение указанную управляемого ссылку на сборку.  
+Определяет расположение ссылки указанной управляемой сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,22 +52,22 @@ int ResolveAssemblyRef(
  [in] Имя сборки для решения.  
   
  `assemBytes`  
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанной со ссылкой.  
+ [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.  
   
  `assemPdb`  
  [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.  
   
  `assemLocation`  
- [out] Возвращает путь к местонахождению этой ссылки.  
+ [out] Возвращает путь данной ссылки.  
   
  `alr`  
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки для этой ссылки.  
+ [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод обычно не реализован пользовательских выражений.  
+ Обычно этот метод не реализован вычислителем пользовательское выражение.  
   
 ## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

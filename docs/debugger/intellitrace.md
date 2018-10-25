@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825425"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 ## <a name="IntelliTraceSupport"></a> Какие приложения можно отлаживать с помощью IntelliTrace?
 
-|||
-|-|-|
-|**Полная поддержка**|— Приложения Visual Basic и Visual C#, которые используют .NET Framework 2.0 или более поздней версии.<br/>Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br/>Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Ограниченная поддержка**|— Собственное приложения, предназначенные для поддержки Windows, Просмотр моментальных снимков, используя шаг назад в IntelliTrace. Поддерживаются только события отладчика и исключения.<br />— .NET core и приложений ASP.NET Core поддерживается для определенных событий только (контроллер MVC, ADO.NET и HTTPClicent) в локальной отладки. Автономный сборщик не поддерживается для приложений .NET Core и ASP.NET Core.<br />-Приложения F # на экспериментальной основе<br />— Приложения универсальной платформы Windows поддерживается только для событий|
-|**не поддерживается**|-Другие языки и скрипт<br />-Windows служб Silverlight, Xbox, или [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] приложений|
+| | |
+|---------------------| - |
+| **Полная поддержка** | — Приложения Visual Basic и Visual C#, которые используют .NET Framework 2.0 или более поздней версии.<br/>Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br/>Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Ограниченная поддержка** | — Собственное приложения, предназначенные для поддержки Windows, Просмотр моментальных снимков, используя шаг назад в IntelliTrace. Поддерживаются только события отладчика и исключения.<br />— .NET core и приложений ASP.NET Core поддерживается для определенных событий только (контроллер MVC, ADO.NET и HTTPClicent) в локальной отладки. Автономный сборщик не поддерживается для приложений .NET Core и ASP.NET Core.<br />-Приложения F # на экспериментальной основе<br />— Приложения универсальной платформы Windows поддерживается только для событий |
+| **не поддерживается** | -Другие языки и скрипт<br />-Windows служб Silverlight, Xbox, или [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] приложений |
 
 > [!NOTE]
 > Если вы хотите отладки процесса, который уже выполняется, вы можете собирать только события IntelliTrace (нет сведений о вызовах). Можно присоединить к процессу на локальном компьютере только 32-разрядная или 64-разрядной. События, произошедшие до присоединения к процессу не собираются.
@@ -77,7 +77,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 - Веб-приложения ASP.NET, размещенные в IIS, или приложения SharePoint 2010 и SharePoint 2013, работающие в развертывании при использовании Microsoft Monitoring Agent, как отдельно, так и вместе с System Center 2012. См. в разделе [использовать автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) и [мониторинг с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- Ниже приведено несколько примеров того, как IntelliTrace облегчает отладку.
+  Ниже приведено несколько примеров того, как IntelliTrace облегчает отладку.
 
 - Приложение имеет поврежденный файл данных, но вы не знаете, где произошло это событие.
 
@@ -111,11 +111,11 @@ IntelliTrace также может помочь в отладке ошибок, 
 
      По умолчанию для повышения производительности, IntelliTrace не записывает все возможные значения события отладчика. а только следующие:
 
-    - Значения в **"Локальные"** окна. Сохранить **"Локальные"** окно открытым, чтобы видеть эти значения.
+  - Значения в **"Локальные"** окна. Сохранить **"Локальные"** окно открытым, чтобы видеть эти значения.
 
-    - Значения в **"Видимые"** окно, только если **"Видимые"** открыто окно
+  - Значения в **"Видимые"** окно, только если **"Видимые"** открыто окно
 
-    - Значения в советах DataTips, отображаемые при наведении указателя мыши на переменную в окне исходного кода для просмотра ее значения. IntelliTrace не собирает значения в закрепленных советах DataTips.
+  - Значения в советах DataTips, отображаемые при наведении указателя мыши на переменную в окне исходного кода для просмотра ее значения. IntelliTrace не собирает значения в закрепленных советах DataTips.
 
     При включении режима события IntelliTrace и моментальные снимки IntelliTrace будет создание снимка процесс приложения по каждому отладчику **точки останова** и **шаг** событий. Это будет записывать значения в **"Локальные"**, **"Видимые"**, и **Watch** windows, независимо от того, является ли windows откройте или нет. Значения в какие-либо советы закрепленные данные также будут собираться.
 

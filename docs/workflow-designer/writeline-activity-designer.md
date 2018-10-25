@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b77ab2b9effc305469b3a4e489342f496a89997
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a512288d141823115361bf8eacfd179a74a1da1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876715"
 ---
 # <a name="writeline-activity-designer"></a>Конструктор действия WriteLine
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755954"
 В следующей таблице показаны свойства <xref:System.Activities.Statements.WriteLine> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые из них можно изменить на поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.WriteLine>. Значение по умолчанию WriteLine. Для значения <xref:System.Activities.Activity.DisplayName%2A> нет жестких требований, однако лучше всего всегда использовать такое значение.|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Текст для записи. Чтобы задать свойство, введите выражение Visual Basic в **текст** поле **WriteLine** действие конструктора или в сетке свойств.|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|Класс <xref:System.IO.TextWriter>, в который <xref:System.Activities.Statements.WriteLine> записывает <xref:System.Activities.Statements.WriteLine.Text%2A>. По умолчанию - консоль.|
@@ -44,6 +44,6 @@ ms.locfileid: "36755954"
 ## <a name="see-also"></a>См. также
 
 - [Примитивы](../workflow-designer/primitives-activity-designers.md)
-- [назначить](../workflow-designer/assign-activity-designer.md)
-- [Задержка](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

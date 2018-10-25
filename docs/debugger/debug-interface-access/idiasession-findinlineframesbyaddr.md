@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByAddr | Документы Microsoft
+title: IDiaSession::findInlineFramesByAddr | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696b73e9a6d84eff3aae7b3f0cbf393c1b935bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 237fdb31b223db1434ec4a2c936ed956e8e339d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899179"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Возвращает перечисление, которое позволяет клиенту проходить через все фреймы для данного адреса.  
+Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров по указанному адресу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT findInlineFramesByAddr (
  [in] `IDiaSymbol` Объект, представляющий родительский объект.  
   
  `isect`  
- [in] Указывает компонент раздел адреса.  
+ [in] Задает компонент прокрутки на разделе адреса.  
   
  `offset`  
- [in] Указывает компонент смещения адреса.  
+ [in] Задает компонент прокрутки на смещения адреса.  
   
  `ppResult`  
  [out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

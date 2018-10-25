@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900128"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint
   Следующие процедуры демонстрируют способы создания пользовательских столбцов сайта SharePoint, или *поля*, а также тип содержимого, который используют столбцы сайтов. Ниже также показан способ создания списка, использующего новый тип содержимого.  
   
  В этом пошаговом руководстве рассматриваются следующие задачи:  
   
--   [Создание пользовательских столбцов сайтов](#BKMK_CreatingCustSiteCols).  
+- [Создание пользовательских столбцов сайтов](#BKMK_CreatingCustSiteCols).  
   
--   [Создание пользовательского типа содержимого](#BKMK_CreateCustContType).  
+- [Создание пользовательского типа содержимого](#BKMK_CreateCustContType).  
   
--   [Создание списка](#BKMK_CreateList).  
+- [Создание списка](#BKMK_CreateList).  
   
--   [Создание списка](#BKMK_CreateList).  
+- [Создание списка](#BKMK_CreateList).  
   
--   [Тестирование приложения](#BKMK_TestApp).  
+- [Тестирование приложения](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  

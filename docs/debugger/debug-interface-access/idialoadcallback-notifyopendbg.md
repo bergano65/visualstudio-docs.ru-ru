@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenDBG | Документы Microsoft
+title: IDiaLoadCallback::NotifyOpenDBG | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c9395805b3fe12640164261d3ec916bd8067c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2a51692b7ff554e656690898993d9dfb4a0eda57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883254"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-Вызывается, когда файл .dbg кандидат был открыт.  
+Вызывается, когда был открыт файл .dbg кандидатов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ HRESULT NotifyOpenDBG (
  [in] Полный путь файла .dbg.  
   
  `resultCode`  
- [in] Код, который указывает на успешное завершение (`S_OK`) или сбоя загрузки применительно к этому файлу.  
+ [in] Код, который указывает на успешное завершение (`S_OK`) или Ошибка загрузки применительно к этому файлу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Код возврата, обычно учитывается.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Код возврата, обычно учитывается.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

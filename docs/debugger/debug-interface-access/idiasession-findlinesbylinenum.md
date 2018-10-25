@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByLinenum | Документы Microsoft
+title: IDiaSession::findLinesByLinenum | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464629"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878873"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Определяет единицу компиляции, которая указанный номер строки в файле исходного кода находится в пределах или рядом с числом строк.  
+Определяет число строк, строке с указанным номером в исходном файле расположенную в или рядом с ним единице компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,28 +38,28 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>Параметры  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий компилируемого объекта, в котором выполняется поиск для номеров строк. Этот параметр не может быть `NULL`.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий единицу компиляции, в котором осуществляется поиск номера строк. Этот параметр не может быть `NULL`.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющий исходный файл для поиска. Этот параметр не может быть `NULL`.  
+ [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объект, представляющий исходный файл для поиска. Этот параметр не может быть `NULL`.  
   
  `linenum`  
- [in] Указывает номер строки с единицы.  
+ [in] Указывает номер строки от единицы.  
   
 > [!NOTE]
->  Ноль нельзя использовать для указания всех строк (используйте [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) метод, чтобы найти все строки).  
+>  Нельзя использовать ноль для указания всех строк (использовать [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) метод для нахождения всех строк).  
   
  `column`  
- [in] Указывает номер столбца. Используйте ноль для указания всех столбцов. Столбец содержит смещение байтов в строку.  
+ [in] Указывает номер столбца. Использовать нуль для указания всех столбцов. Столбец — это смещение байтов в строку.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) получить objta со списком номеров строк.  
+ [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) получить objta, который содержит список номеров строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как открыть исходный файл, перечислять компилируемые объекты, добавленные в этот файл и найдите номера строки в исходном файле, с которой начинается каждую единицу компиляции.  
+ В следующем примере показано, как откройте исходный файл, перечислить единиц компиляции, порожденного этот файл и найдите номера строки в исходном файле, где запускается каждую единицу компиляции.  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
