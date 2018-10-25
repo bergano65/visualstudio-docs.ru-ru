@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905068"
 ---
 # <a name="remote-debugger-port-assignments"></a>Назначение портов удаленного отладчика
 Удаленный отладчик Visual Studio может работать как приложение или как фоновая служба. Если он работает как приложение, то использует порт, назначенный по умолчанию:  
 
--   Visual Studio 2017:4022
+- Visual Studio 2017:4022
 
--   Visual Studio 2015: 4020  
+- Visual Studio 2015: 4020  
   
--   Visual Studio 2013: 4018  
+- Visual Studio 2013: 4018  
   
--   Visual Studio 2012: 4016  
+- Visual Studio 2012: 4016  
   
- Иными словами, номер порта, назначаемый удаленному отладчику, увеличивается на 2 в каждой версии. При необходимости можно задать другой номер порта. В следующих подразделах будет описано, как задать номера портов.  
+  Иными словами, номер порта, назначаемый удаленному отладчику, увеличивается на 2 в каждой версии. При необходимости можно задать другой номер порта. В следующих подразделах будет описано, как задать номера портов.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Порт удаленного отладчика в 32-разрядных операционных системах  
  TCP 4022 (в Visual Studio 2017) является основной порт, которая требуется для всех сценариев. Его можно настроить из командной строки или в окне удаленного отладчика.  
@@ -59,4 +59,4 @@ ms.locfileid: "39151006"
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>См. также  
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

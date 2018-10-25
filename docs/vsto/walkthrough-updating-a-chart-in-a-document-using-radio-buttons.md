@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904678"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей
   В данном пошаговом руководстве описывается использование переключателей в настройке уровня документа для Microsoft Office Word, позволяющих пользователям выбирать стили диаграмм в документе.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258224"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   добавление диаграммы в документ проекта на уровне документа во время разработки;  
+- добавление диаграммы в документ проекта на уровне документа во время разработки;  
   
--   группировка переключателей путем их добавления в пользовательский элемент управления;  
+- группировка переключателей путем их добавления в пользовательский элемент управления;  
   
--   изменение стиля диаграммы при выбранном параметре.  
+- изменение стиля диаграммы при выбранном параметре.  
   
- Чтобы увидеть результат в виде готового кода, см. в разделе Пример элементов управления Word в [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
+  Чтобы увидеть результат в виде готового кода, см. в разделе Пример элементов управления Word в [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  

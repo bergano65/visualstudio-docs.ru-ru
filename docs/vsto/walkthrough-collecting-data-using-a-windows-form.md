@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900479"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство: Сбор данных с помощью формы Windows
   В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.  
@@ -70,41 +70,41 @@ ms.locfileid: "35674343"
   
 ### <a name="to-add-a-windows-form"></a>Добавление формы Windows Forms  
   
-1.  Выберите проект **WinFormInput** в **обозревателе решений**.  
+1. Выберите проект **WinFormInput** в **обозревателе решений**.  
   
-2.  В меню **Проект** выберите пункт **Добавить форму Windows**.  
+2. В меню **Проект** выберите пункт **Добавить форму Windows**.  
   
-3.  Дайте этой форме имя **GetInputString.vb** или **GetInputString.cs**, а затем нажмите кнопку **Добавить**.  
+3. Дайте этой форме имя **GetInputString.vb** или **GetInputString.cs**, а затем нажмите кнопку **Добавить**.  
   
-     Новая форма откроется в конструкторе.  
+    Новая форма откроется в конструкторе.  
   
-4.  Добавьте в форму <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> .  
+4. Добавьте в форму <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> .  
   
-5.  Выберите кнопку, найдите свойство **Текст** в окне **Свойства** и измените текст на **ОК**.  
+5. Выберите кнопку, найдите свойство **Текст** в окне **Свойства** и измените текст на **ОК**.  
   
- Затем добавьте в `ThisWorkbook.vb` или `ThisWorkbook.cs` код для сбора информации от пользователя.  
+   Затем добавьте в `ThisWorkbook.vb` или `ThisWorkbook.cs` код для сбора информации от пользователя.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Отображение формы Windows и сбора информации  
  Создайте экземпляр формы Windows `GetInputString` и отобразите его, а затем запишите информацию от пользователя в ячейку листа.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Отображение формы и сбор информации  
   
-1.  Щелкните правой кнопкой мыши файл **ThisWorkbook.vb** или **ThisWorkbook.cs** в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода**.  
+1. Щелкните правой кнопкой мыши файл **ThisWorkbook.vb** или **ThisWorkbook.cs** в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода**.  
   
-2.  В обработчике событий <xref:Microsoft.Office.Tools.Excel.Workbook.Open> `ThisWorkbook`добавьте следующий код для объявления переменной формы `GetInputString` , а затем отобразите эту форму.  
+2. В обработчике событий <xref:Microsoft.Office.Tools.Excel.Workbook.Open> `ThisWorkbook`добавьте следующий код для объявления переменной формы `GetInputString` , а затем отобразите эту форму.  
   
-    > [!NOTE]  
-    >  В C# необходимо добавить обработчик событий, как показано в событии <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  В C# необходимо добавить обработчик событий, как показано в событии <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Создайте метод с именем `WriteStringToCell` , который записывает текст в именованный диапазон. Этот метод вызывается из формы, и ввод пользователя передается в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, в ячейку **A1**.  
+3. Создайте метод с именем `WriteStringToCell` , который записывает текст в именованный диапазон. Этот метод вызывается из формы, и ввод пользователя передается в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, в ячейку **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Далее добавьте в форму код для обработки события нажатия кнопки.  
+   Далее добавьте в форму код для обработки события нажатия кнопки.  
   
 ## <a name="send-information-to-the-worksheet"></a>Отправлять сведения в журнале  
   

@@ -1,5 +1,5 @@
 ---
-title: Поддержка панели навигации в языковую службу прежних версий | Документы Microsoft
+title: Поддержка панели навигации в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3ca2b29ca942287180df45629c40a4f38e7a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918159"
 ---
-# <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковую службу прежних версий
-На панели навигации в верхней части редактора представления отображаются типы и члены в файле. В левом раскрывающемся списке отображаются типы и элементы отображаются в правом раскрывающегося списка. Когда пользователь выбирает тип, курсор помещается в первой строке типа. Когда пользователь выбирает элемент, курсор помещается в определении элемента. Раскрывающиеся списки будут обновлены в соответствии с текущей позиции курсора.  
+# <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
+На панели навигации в верхней части редактора представления отображает типы и члены в файле. В левом раскрывающемся списке отображаются типы и члены отображаются в правом раскрывающегося списка. Когда пользователь выбирает тип, курсор помещается в первой строке типа. Когда пользователь выбирает элемент, курсор помещается в определении элемента. Раскрывающиеся списки обновляются для отображения текущего положения курсора.  
   
 ## <a name="displaying-and-updating-the-navigation-bar"></a>Отображения и обновления на панели навигации  
- Для поддержки панели навигации, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса и реализовать <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод. При языковой службы предоставляется окно кода базовый <xref:Microsoft.VisualStudio.Package.LanguageService> класс создает экземпляры <xref:Microsoft.VisualStudio.Package.CodeWindowManager>, который содержит <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> объект, представляющий окно кода. <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Объект предоставляется новый <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Возвращает метод <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объекта. Если возвращается экземпляр вашего <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> вызовы вашего <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод для заполнения внутренний список и передает вашей <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объект [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] раскрывающийся список панели диспетчера. В раскрывающемся списке панели диспетчера, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> метод для вашего <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> для установления <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> объект, содержащий два раскрывающиеся строки.  
+ Для поддержки панели навигации, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса и реализуйте <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод. Когда службы вашего языка предоставляется окно кода, базовый <xref:Microsoft.VisualStudio.Package.LanguageService> создает экземпляр класса <xref:Microsoft.VisualStudio.Package.CodeWindowManager>, который содержит <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> объект, представляющий окно кода. <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Объект предоставляется новый <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> Метод получает <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объекта. Если возвращается экземпляр вашего <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класс, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> вызовы вашего <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> способ заполнения внутренний список и передает вашей <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объект [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] раскрывающейся панели диспетчера. В раскрывающемся списке панели manager, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> метод вашей <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> для установления <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> объект, содержащий два раскрывающиеся панели.  
   
- Когда курсор перемещается, <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> вызовы метода <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> метод. Базовый <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> вызовы метода <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод в вашей <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса для обновления состояния на панели навигации. Передайте набор <xref:Microsoft.VisualStudio.Package.DropDownMember> объекты в этот метод. Каждый объект представляет запись, в раскрывающемся списке.  
+ При перемещении курсора, <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> вызовы методов <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> метод. Базовый <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> вызовы методов <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод в вашей <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса для обновления состояния на панели навигации. Передать набор <xref:Microsoft.VisualStudio.Package.DropDownMember> объекты в этот метод. Каждый объект представляет запись в раскрывающемся списке.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>Содержимое панели навигации  
- На панели навигации обычно содержит список типов и список элементов. Список типов включает все типы, доступные в текущем файле исходного кода. Имена типов, которые включают сведения полное пространство имен. Ниже приведен пример кода C# с двумя типами:  
+ На панели навигации обычно содержит список типов и списком членов. Список типов представлены все типы, доступные в текущем исходном файле. Имена типов включают сведения о пространстве имен завершения. Ниже приведен пример кода C# с двумя типами:  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -47,48 +47,48 @@ namespace TestLanguagePackage
 }  
 ```  
   
- Отображает список типов `TestLanguagePackage.TestLanguageService` и `TestLanguagePackage.TestLanguageService.Tokens`.  
+ Отобразится список типов `TestLanguagePackage.TestLanguageService` и `TestLanguagePackage.TestLanguageService.Tokens`.  
   
- Список членов отображает доступные элементы типа, выбранного в списке типов. Использование в коде выше, если `TestLanguagePackage.TestLanguageService` — тип, который выбран, список элементов будет содержать закрытые члены `tokens` и `serviceName`. Внутренняя структура `Token` не отображается.  
+ В списке членов отображаются доступные члены типа, который выбран в списке типов. Использование в примере выше, если `TestLanguagePackage.TestLanguageService` — тип, который выбран, в список элементов будет содержать закрытые члены `tokens` и `serviceName`. Внутренняя структура `Token` не отображается.  
   
- Вы можете реализовать список элементов, чтобы сделать имя члена полужирным, когда курсор помещается внутри него. Члены могут также отображаться в серым цветом текста, указывающее на то, что они не находятся в области, в которой расположен курсор.  
+ Вы можете реализовать списка членов, чтобы сделать имя члена полужирным шрифтом, когда курсор помещается внутри него. Члены могут также отображаться в затененный текст, указывающее, что они не находятся в области, где в данный момент находится курсор.  
   
-## <a name="enabling-support-for-the-navigation-bar"></a>Включение поддержки для панели навигации  
- Чтобы включить поддержку на панели навигации, необходимо задать `ShowDropdownBarOption` параметр <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибут `true`. Этот параметр задает свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>. Для поддержки панели навигации, необходимо реализовать <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объекта в <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> метод <xref:Microsoft.VisualStudio.Package.LanguageService> класса.  
+## <a name="enabling-support-for-the-navigation-bar"></a>Поддержка панели навигации  
+ Чтобы включить поддержку для панели навигации, необходимо задать `ShowDropdownBarOption` параметр <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибут `true`. Этот параметр задает свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>. Для поддержки панели навигации, необходимо реализовать <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объекта в <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> метод <xref:Microsoft.VisualStudio.Package.LanguageService> класса.  
   
  В реализации <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> метод, если <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> свойству `true`, можно вернуть <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> объекта. Если вы не возвращают объект, на панели навигации не отображается.  
   
- Параметр для отображения на панели навигации можно задать пользователем, поэтому возможно, для этого элемента управления будут сброшены при открытом представление редактора. Пользователь должен закрыть и снова откройте окно редактора, чтобы изменения вступили в месте.  
+ Для отображения на панели навигации можно включить на пользователем, так что вполне возможно, для этого элемента управления нужно сбросить при открытом представлении редактора. Пользователь должен закрыть и снова открыть окно редактора, прежде чем изменения вступят в силу.  
   
 ## <a name="implementing-support-for-the-navigation-bar"></a>Реализация поддержки для панели навигации  
  <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Метод принимает два списка (по одному для каждого раскрывающегося списка) и два значения, представляющий текущее выделение в каждом списке. Списки и выбора значения могут быть обновлены, в этом случае <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод должен возвращать `true` для указания, что списки были изменены.  
   
- При изменении выделения в раскрывающийся список типов, необходимо обновить список членов в соответствии с новым типом. Элементы, отображаемые в списке элементов может быть как:  
+ При изменении выделения в раскрывающемся списке типов, необходимо обновить список членов в соответствии с новым типом. То, что отображается в списке элементов может быть либо:  
   
--   Список элементов для текущего типа.  
+- Список элементов для текущего типа.  
   
--   Всех членов, доступных в источнике файл, но со всеми элементами не в текущем типе, отображаются серым текстом. Пользователь по-прежнему можно выбрать элементы показаны серым цветом, поэтому их можно использовать для быстрого перемещения, но цвет указывает, что они не являются частью текущего выбранного типа.  
+- Все элементы, доступные в источнике файл, но со всеми членами не в текущем типе, отображаются серым шрифтом. Пользователь по-прежнему можно выбрать элементы закрашены серым, поэтому они могут использоваться для быстрой навигации, но цвет указывает, что они не являются частью текущего выбранного типа.  
   
- Реализация <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода, как правило, выполняет следующие действия:  
+  Реализация <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода обычно выполняет следующие действия:  
   
-1.  Получите список объявлений текущего файла исходного кода.  
+1.  Получение списка текущие объявления для исходного файла.  
   
-     Существует несколько способов заполнения списков. Один подход заключается в создании пользовательского метода в версии <xref:Microsoft.VisualStudio.Package.LanguageService> класс, который вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод синтаксического анализа пользовательские причину, которая возвращает список всех объявлений. Другой подход может быть вызов <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод непосредственно из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода с указанием причины пользовательских синтаксического анализа. Третий способ может быть кэширование объявления в <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса, возвращаемыми последней операции полного синтаксического анализа в <xref:Microsoft.VisualStudio.Package.LanguageService> класса и извлечения, из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
+     Существует ряд способов для заполнения списков. Один подход заключается в создании пользовательского метода в версии <xref:Microsoft.VisualStudio.Package.LanguageService> класса, который вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод с причиной пользовательского синтаксического анализа, который возвращает список всех объявлений. Другой подход может быть вызов <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> напрямую из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода с указанием причины пользовательского синтаксического анализа. Третий подход может быть кэшировать объявления в <xref:Microsoft.VisualStudio.Package.AuthoringScope> возвращается с последней операции полного синтаксического анализа в <xref:Microsoft.VisualStudio.Package.LanguageService> класса и извлечения, из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
   
-2.  Заполнение или обновить список типов.  
+2.  Заполнить или обновить список типов.  
   
-     Содержимое списка типов могут обновляться при изменении источника или если вы решили изменить стиль текста типов, в зависимости от текущей позиции курсора. Обратите внимание, что эта позиция передается <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
+     Содержимое списка типов могут обновляться при изменении источника или если вы собираетесь изменить стиль текста из типов, в зависимости от текущей позиции курсора. Обратите внимание, что эта позиция передается <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
   
-3.  Определение типа для выбора в списке типов, в зависимости от текущей позиции курсора.  
+3.  Определите тип для выбора в списке типов, в зависимости от текущей позиции курсора.  
   
-     Поиск объявлений, которые были получены на шаге 1, чтобы определить его тип, включающий текущей позиции курсора и найдите в списке типов для данного типа определить его индекс в списке типов.  
+     Можно искать объявления, которые были получены на шаге 1, чтобы найти тип, который содержит текущее положение курсора и найдите в списке типов для этого типа определить его индекс в списке типов.  
   
-4.  Заполнение или обновить список членов, в зависимости от выбранного типа.  
+4.  Заполнить или обновить список членов, в зависимости от выбранного типа.  
   
-     Отражает список элементов, отображаемых в **члены** раскрывающегося списка. Содержимое списка членов может потребоваться обновить при изменении источника или если отображаются только элементы выбранного типа и изменении выбранного типа. Если выбрано для отображения всех элементов в исходном файле, стиль текста каждого элемента в списке должен быть обновлен при изменении выбранного типа.  
+     Отражает список элементов, отображаемых в **члены** раскрывающегося списка. Содержимое списка членов может потребоваться обновляться в случае изменения источника или если отображаются только элементы выбранного типа и выбранного типа изменилось. Если выбрано для отображения всех элементов в исходном файле, стиль текста каждого элемента в списке должен обновляться, если текущий выбранный тип был изменен.  
   
-5.  Определите элемент, чтобы выбрать в списке элементов, в зависимости от текущей позиции курсора.  
+5.  Определите элемент для выбора в списке элементов, в зависимости от текущей позиции курсора.  
   
-     Поиск члена, который содержит текущее положение курсора в объявлениях, которые были получены на шаге 1, а затем выполнить поиск в списке членов для этого элемента определить его индекс в списке членов.  
+     Поиск объявлений, которые были получены на шаге 1 элемента, который содержит текущее положение курсора, а затем найдите в списке членов для этого элемента определить его индекс в списке членов.  
   
-6.  Возвращает `true` Если внесены изменения в списки или выбранные элементы в любом из списков.
+6.  Вернуть `true` Если внесены изменения в списки или выбранные элементы в любом из списков.

@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917561"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49258184"
   
 #### <a name="to-add-a-reference"></a>Добавление ссылки  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши узел "Ссылки" и выберите команду **Добавить ссылку**.  
+1. В **обозревателе решений** щелкните правой кнопкой мыши узел "Ссылки" и выберите команду **Добавить ссылку**.  
   
-2.  Укажите ссылки, которые требуется добавить, а затем нажмите кнопку **ОК**.  
+2. Укажите ссылки, которые требуется добавить, а затем нажмите кнопку **ОК**.  
   
- Будет открыт **Диспетчер ссылок** со списком доступных ссылок по группам. Тип проекта определяет, какая из следующих групп отображается:  
+   Будет открыт **Диспетчер ссылок** со списком доступных ссылок по группам. Тип проекта определяет, какая из следующих групп отображается:  
   
 -   "Сборки" с подгруппами "Платформа" и "Расширения";  
   
@@ -69,29 +69,29 @@ ms.locfileid: "49258184"
   
  Вкладка "Сборки" состоит из двух подразделов.  
   
-1.  В разделе "Платформа" перечислены все сборки, из которых состоит целевая платформа.  
+1. В разделе "Платформа" перечислены все сборки, из которых состоит целевая платформа.  
   
-    -   Объявленные сборки принадлежат к полной версии .NET Framework и перечисляются в списке .NET Framework, когда проект нацелен на профиль целевой версии .NET Framework. Объявленные сборки выделены серым, чтобы отличать их от сборок, существующих в целевом профиле .NET Framework проекта. Например, если проект нацелен на .NET Framework 4 Client, то в списке "Платформа" будут показаны объявленные сборки из .NET Framework 4. Когда пользователь добавляет объявленную сборку, он получает уведомление о том, что после закрытия диалогового окна **Диспетчер ссылок** проект будет перенацелен на .NET Framework 4 и объявленная сборка будет добавлена.  
+   -   Объявленные сборки принадлежат к полной версии .NET Framework и перечисляются в списке .NET Framework, когда проект нацелен на профиль целевой версии .NET Framework. Объявленные сборки выделены серым, чтобы отличать их от сборок, существующих в целевом профиле .NET Framework проекта. Например, если проект нацелен на .NET Framework 4 Client, то в списке "Платформа" будут показаны объявленные сборки из .NET Framework 4. Когда пользователь добавляет объявленную сборку, он получает уведомление о том, что после закрытия диалогового окна **Диспетчер ссылок** проект будет перенацелен на .NET Framework 4 и объявленная сборка будет добавлена.  
   
-    -   Проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] по умолчанию содержат ссылки на все сборки в целевом профиле [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] при создании проекта. В управляемых проектах доступный только для чтения узел в папке "Ссылки" в **Обозревателе решений** содержит ссылку на всю платформу .NET Framework. Соответственно, на вкладке "Платформа" не будут указаны никакие сборки из .NET Framework, а вместо них будет отображаться следующее сообщение: «Ссылки на все сборки .NET Framework уже заданы. С помощью обозревателя объектов исследуйте ссылки в Framework». Для проектов классических приложений на вкладке «Платформа» перечислены сборки из целевой версии .NET Framework, и пользователь должен добавить ссылки, которые требуются приложению.  
+   -   Проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] по умолчанию содержат ссылки на все сборки в целевом профиле [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] при создании проекта. В управляемых проектах доступный только для чтения узел в папке "Ссылки" в **Обозревателе решений** содержит ссылку на всю платформу .NET Framework. Соответственно, на вкладке "Платформа" не будут указаны никакие сборки из .NET Framework, а вместо них будет отображаться следующее сообщение: «Ссылки на все сборки .NET Framework уже заданы. С помощью обозревателя объектов исследуйте ссылки в Framework». Для проектов классических приложений на вкладке «Платформа» перечислены сборки из целевой версии .NET Framework, и пользователь должен добавить ссылки, которые требуются приложению.  
   
-2.  В разделе "Расширения" перечислены все сборки, разработанные внешними поставщиками компонентов и элементов управления для расширения целевой версии .NET Framework. В зависимости от назначения пользовательского приложения эти сборки могут понадобиться ему.  
+2. В разделе "Расширения" перечислены все сборки, разработанные внешними поставщиками компонентов и элементов управления для расширения целевой версии .NET Framework. В зависимости от назначения пользовательского приложения эти сборки могут понадобиться ему.  
   
-    -   Список расширений состоит из сборок, зарегистрированных в следующих местах:  
+   -   Список расширений состоит из сборок, зарегистрированных в следующих местах:  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         Например, если проект нацелен на .NET Framework 4 на 32-разрядных компьютерах, в списке "Расширения" будут указаны сборки, зарегистрированные в \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ и \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
+        Например, если проект нацелен на .NET Framework 4 на 32-разрядных компьютерах, в списке "Расширения" будут указаны сборки, зарегистрированные в \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ и \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
   
- Некоторые компоненты в списке могут не отображаться в зависимости от версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] проекта. Это может произойти в следующих случаях.  
+   Некоторые компоненты в списке могут не отображаться в зависимости от версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] проекта. Это может произойти в следующих случаях.  
   
 -   Компонент, использующий новую версию платформы .NET Framework, не совместим с проектом, нацеленным на более раннюю версию платформы .NET Framework.  
   
@@ -108,35 +108,35 @@ ms.locfileid: "49258184"
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Чтобы отобразить сборку в диалоговом окне "Добавление ссылки"  
   
--   Переместите или скопируйте сборку в одно из следующих расположений.  
+- Переместите или скопируйте сборку в одно из следующих расположений.  
   
-    -   Каталог текущего проекта. (Можно найти эти сборки, используя вкладку **Обзор** .)  
+  - Каталог текущего проекта. (Можно найти эти сборки, используя вкладку **Обзор** .)  
   
-    -   Другие каталоги проектов в одном решении. (Можно найти эти сборки, используя вкладку **Проекты**.)  
+  - Другие каталоги проектов в одном решении. (Можно найти эти сборки, используя вкладку **Проекты**.)  
   
-     \- или -  
+    \- или -  
   
--   Установите раздел реестра, определяющий положение отображаемых сборок.  
+- Установите раздел реестра, определяющий положение отображаемых сборок.  
   
-     Для 32-разрядной операционной системы добавьте один из следующих разделов реестра.  
+   Для 32-разрядной операционной системы добавьте один из следующих разделов реестра.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     Для 64-разрядной операционной системы добавьте один из следующих разделов реестра в 32-разрядный куст реестра.  
+    Для 64-разрядной операционной системы добавьте один из следующих разделов реестра в 32-разрядный куст реестра.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     *VersionMinimum* — это минимальная допустимая версия платформы .NET Framework. Если *VersionMinimum* — v3.0, папки, указанные в AssemblyFoldersEx, относятся к проектам, предназначенным для платформы .NET Framework 3.0 и более поздних версий.  
+    *VersionMinimum* — это минимальная допустимая версия платформы .NET Framework. Если *VersionMinimum* — v3.0, папки, указанные в AssemblyFoldersEx, относятся к проектам, предназначенным для платформы .NET Framework 3.0 и более поздних версий.  
   
-     *AssemblyLocation* — это каталог сборок, которые требуется отображать в диалоговом окне **Добавить ссылку**, например, C:\MyAssemblies\\.  
+    *AssemblyLocation* — это каталог сборок, которые требуется отображать в диалоговом окне **Добавить ссылку**, например, C:\MyAssemblies\\.  
   
-     Создание ключа реестра в узле HKEY_LOCAL_MACHINE позволяет всем пользователям видеть сборки в указанном расположении в диалоговом окне **Добавить ссылку**. Создание ключа реестра в узле HKEY_CURRENT_USER влияет только на настройки для текущего пользователя.  
+    Создание ключа реестра в узле HKEY_LOCAL_MACHINE позволяет всем пользователям видеть сборки в указанном расположении в диалоговом окне **Добавить ссылку**. Создание ключа реестра в узле HKEY_CURRENT_USER влияет только на настройки для текущего пользователя.  
   
-     Снова откройте диалоговое окно **Добавление ссылки**. Эти сборки должны отображаться на вкладке **.NET**. Если это не так, убедитесь, что сборки расположены в указанном каталоге *AssemblyLocation*, перезапустите Visual Studio и повторите попытку.  
+    Снова откройте диалоговое окно **Добавление ссылки**. Эти сборки должны отображаться на вкладке **.NET**. Если это не так, убедитесь, что сборки расположены в указанном каталоге *AssemblyLocation*, перезапустите Visual Studio и повторите попытку.  
   
 ## <a name="com-tab"></a>Вкладка COM  
  Вкладка COM содержит список всех COM-компонентов, ссылки на которые можно добавить. Если необходимо добавить ссылку на зарегистрированную DLL-библиотеку COM, содержащую внутренний манифест, сначала необходимо отменить регистрацию DLL-библиотеки. В противном случае среда разработки Visual Studio добавить ссылку как элемент управления ActiveX, а не как библиотеку DLL с машинным кодом.  
@@ -159,11 +159,11 @@ ms.locfileid: "49258184"
   
  Файл WinMD можно создать в Visual Studio одним из двух способов.  
   
--   **Проекты управляемых приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], которые могут выводить двоичные файлы WinMD путем настройки в свойствах проекта значения "Тип выходных данных = файл WinMD". Имя файла WinMD должно быть пространством имен надмножества всех пространств имен в нем. Например, если проект состоит из пространств имен A.B и A.B.C, возможные имена для выходные файлов WinMD — A.winmd и A.B.winmd. Если пользователь вводит в свойствах проекта значение имени сборки или пространства имен, которое не принадлежит к набору пространств имен проекта или не является их надмножеством, появляется предупреждение сборки: 'A.winmd' не является допустимым именем файла .winmd для этой сборки. Все типы в файле метаданных Windows должны находиться во вложенном пространстве имен имени файла. Типы, которые отсутствуют во вложенном пространстве имен имени файла, не будут обнаруживаться во время выполнения. В этой сборке наименьшим общим пространством имен является 'CSWSClassLibrary1'. Проекты классических приложений Visual Basic или Visual C# могут использовать только файлы WinMD, созданные с помощью пакетов SDK для [!INCLUDE[win8](../includes/win8-md.md)], называемые основными WinMD; эти проекты не могут создавать файлы WinMD.  
+- **Проекты управляемых приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], которые могут выводить двоичные файлы WinMD путем настройки в свойствах проекта значения "Тип выходных данных = файл WinMD". Имя файла WinMD должно быть пространством имен надмножества всех пространств имен в нем. Например, если проект состоит из пространств имен A.B и A.B.C, возможные имена для выходные файлов WinMD — A.winmd и A.B.winmd. Если пользователь вводит в свойствах проекта значение имени сборки или пространства имен, которое не принадлежит к набору пространств имен проекта или не является их надмножеством, появляется предупреждение сборки: 'A.winmd' не является допустимым именем файла .winmd для этой сборки. Все типы в файле метаданных Windows должны находиться во вложенном пространстве имен имени файла. Типы, которые отсутствуют во вложенном пространстве имен имени файла, не будут обнаруживаться во время выполнения. В этой сборке наименьшим общим пространством имен является 'CSWSClassLibrary1'. Проекты классических приложений Visual Basic или Visual C# могут использовать только файлы WinMD, созданные с помощью пакетов SDK для [!INCLUDE[win8](../includes/win8-md.md)], называемые основными WinMD; эти проекты не могут создавать файлы WinMD.  
   
--   **Собственные проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: собственный файл WinMD состоит только из метаданных. Его реализация находится в отдельном файле DLL. Двоичные файлы на базе машинного кода можно создать, выбрав шаблон проекта "Компонент среды выполнения Windows" в диалоговом окне **Создать проект** или создав пустой проект и изменив его свойства, чтобы создать файл WinMD. Если проект состоит из несвязанных пространств имен, возникает ошибка сборки, сообщающая пользователю о необходимости совместить пространства имен или запустить средство MSMerge.  
+- **Собственные проекты приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: собственный файл WinMD состоит только из метаданных. Его реализация находится в отдельном файле DLL. Двоичные файлы на базе машинного кода можно создать, выбрав шаблон проекта "Компонент среды выполнения Windows" в диалоговом окне **Создать проект** или создав пустой проект и изменив его свойства, чтобы создать файл WinMD. Если проект состоит из несвязанных пространств имен, возникает ошибка сборки, сообщающая пользователю о необходимости совместить пространства имен или запустить средство MSMerge.  
   
- Вкладка "Windows" состоит из двух подгрупп.  
+  Вкладка "Windows" состоит из двух подгрупп.  
   
 ### <a name="core-subgroup"></a>Подгруппа "Ядро"  
  В подгруппе "Ядро" указаны все файлы WinMD (для элементов среды выполнения Windows) в SDK целевой версии Windows.  

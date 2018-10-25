@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902468"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое: задание альтернативного местоположения для обновлений развертывания
 Вы можете установить ваш [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application из компакт-диске или в общей папке, а приложение должно проверять наличие периодических обновлений в Интернете. Таким образом, приложение может обновляться из Интернета после начальной установки, можно указать альтернативное расположение для обновлений в манифесте развертывания.  
@@ -46,16 +46,16 @@ ms.locfileid: "39079876"
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Задание альтернативного местоположения для обновлений с помощью Mage.exe  
   
-1.  Откройте командную строку .NET Framework.  
+1. Откройте командную строку .NET Framework.  
   
-2.  Задайте расположение обновления, используя следующую команду. В этом примере *HelloWorld.exe.application* — это путь к вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения, который всегда имеет расширение .application, и *http://adatum.com/Update/Path* является URL-адрес этого [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет проверять наличие обновлений приложения.  
+2. Задайте расположение обновления, используя следующую команду. В этом примере *HelloWorld.exe.application* — это путь к вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения, который всегда имеет расширение .application, и *<http://adatum.com/Update/Path>* является URL-адрес этого [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет проверять наличие обновлений приложения.  
   
-     **Mage-обновление HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
+    **Mage-обновление HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Сохраните файл.  
+3. Сохраните файл.  
   
-    > [!NOTE]
-    >  Теперь нужно повторно подписать файла с *Mage.exe*. Дополнительные сведения см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+   > [!NOTE]
+   >  Теперь нужно повторно подписать файла с *Mage.exe*. Дополнительные сведения см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
  Если установить приложение с автономного носителя, например компакт-диска, и компьютер находится в сети, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сначала проверяет URL-адрес, определяемое `<deploymentProvider>` тег в манифесте развертывания, чтобы определить, содержит ли расположение обновлений в более поздней версии приложение. В этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливает приложение непосредственно из него, а не из исходного каталога установки, и общеязыковой среды выполнения (CLR) определяет доверия для приложения уровня с помощью `<deploymentProvider>`. Если компьютер находится в автономном режиме, или `<deploymentProvider>` недоступен, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установки с компакт-диска, а среда CLR предоставляет доверие, на основе точки установки; для установки компакт-диска, это означает, приложение получает полного доверия. Все последующие обновления будут наследовать этот уровень доверия.  

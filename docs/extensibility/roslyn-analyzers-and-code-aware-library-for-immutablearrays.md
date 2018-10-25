@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907486"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и кода-библиотека для immutablearrays с
 
@@ -27,7 +27,7 @@ ms.locfileid: "46495925"
 Вам понадобятся следующие сборки этого примера:
 
 * Visual Studio 2015 (не экспресс-выпуск) или более поздней версии.  Можно воспользоваться бесплатным [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
-* [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  Можно также, при установке Visual Studio, проверить **средств расширения Visual Studio** под **Общие средства** установить пакет SDK, в то же время.  Если вы уже установили Visual Studio, можно также установить этот пакет SDK, выбрав в главном меню **файл** > **New** > **проекта**, Выбор **C#** в левой области навигации, а затем выбирая **расширяемости**.  При выборе "**Установка средств расширения Visual Studio**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Можно также, при установке Visual Studio, проверить **средств расширения Visual Studio** под **Общие средства** установить пакет SDK, в то же время.  Если вы уже установили Visual Studio, можно также установить этот пакет SDK, выбрав в главном меню **файл** > **New** > **проекта**, Выбор **C#** в левой области навигации, а затем выбирая **расширяемости**.  При выборе "**Установка средств расширения Visual Studio**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.
 * [Платформа компилятора .NET («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  Вы также можете установить этот пакет SDK, выбрав в главном меню **файл** > **New** > **проекта**, нажимая кнопку **C#** в левой области навигации, а затем выбирая **расширяемости**.  При выборе "**скачивание пакета SDK для платформы компилятора .NET**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.  Этот пакет SDK включает в себя [визуализаторе синтаксиса Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Этот очень полезное средство поможет вам понять, какие типы модели кода следует искать в ваш анализатор.  Вызовы инфраструктуры анализатора в код для конкретного кода типов моделей, поэтому ваш код выполняется при необходимости и сосредоточиться только на анализ соответствующий код.
 
 ## <a name="whats-the-problem"></a>В чем проблема?
@@ -82,7 +82,6 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Открыть новую строку в этот метод и тип «контекст». Чтобы просмотреть список завершения IntelliSense.  Вы увидите в списке завершения существует много `Register...` методы для обработки различных типов событий.  Например, первый, `RegisterCodeBlockAction`, обратный вызов кода для блока, который обычно расположены между фигурными скобками.  Регистрация для блока также обратный вызов в код для инициализатора поля, значение, заданное на атрибут или значение необязательного параметра.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Заглушки для унаследованных членов.** Теперь поместите курсор редактора в идентификаторе `CodeFixProvider` и нажмите клавишу **Ctrl**+**.** (точка) для заглушки для реализации этого абстрактного базового класса.  Это создает свойство и метод.

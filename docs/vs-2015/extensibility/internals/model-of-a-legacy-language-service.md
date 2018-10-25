@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907707"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49294038"
 ## <a name="a-minimal-language-service"></a>Услуга минимальный язык  
  Самая базовая служба языка содержит следующие два объекта:  
   
--   *Языковая служба* реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс. Языковая служба содержит сведения о языке, включая его имя, расширения имен файлов, диспетчер окон кода и палитры.  
+- *Языковая служба* реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс. Языковая служба содержит сведения о языке, включая его имя, расширения имен файлов, диспетчер окон кода и палитры.  
   
--   *Палитры* реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс.  
+- *Палитры* реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс.  
   
- Ниже концептуальной показаны модель службу языка basic.  
+  Ниже концептуальной показаны модель службу языка basic.  
   
- ![График языка модели службы](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Модель службы языка Basic  
+  ![График языка модели службы](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Модель службы языка Basic  
   
- Узлы окно документа *представление документа* редактора, в данном случае [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] базовым редактором. Представление документа и текстовый буфер, принадлежат редактора. Эти объекты работают с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] через окно документа в специализированных вызывается *окно кода*. Окно кода содержится в <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, который создается и управляется интегрированной среды разработки.  
+  Узлы окно документа *представление документа* редактора, в данном случае [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] базовым редактором. Представление документа и текстовый буфер, принадлежат редактора. Эти объекты работают с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] через окно документа в специализированных вызывается *окно кода*. Окно кода содержится в <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, который создается и управляется интегрированной среды разработки.  
   
- При загрузке файла с помощью данного расширения, редактора находит языковую службу, связанную с этим расширением и передает ему окно кода, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Служба возвращает язык *диспетчер окон кода*, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейс.  
+  При загрузке файла с помощью данного расширения, редактора находит языковую службу, связанную с этим расширением и передает ему окно кода, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Служба возвращает язык *диспетчер окон кода*, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейс.  
   
- Ниже приведены общие сведения о объектов в модели.  
+  Ниже приведены общие сведения о объектов в модели.  
   
 |Компонент|Object|Функция|  
 |---------------|------------|--------------|  

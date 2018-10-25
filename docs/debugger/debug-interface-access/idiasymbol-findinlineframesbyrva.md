@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByRVA | Документы Microsoft
+title: IDiaSymbol::findInlineFramesByRVA | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9b3778072ea3643bc672516ab16d318669ac85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 428b720fc20684d9bee7d25272ecaca0cbab13ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916885"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Возвращает перечисление, которое позволяет клиенту проходить через все фреймы для указанного относительного виртуального адреса (RVA).  
+Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный относительный виртуальный адрес (RVA).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,7 +38,7 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
  [out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare | Документы Microsoft
+title: IDebugDocumentContext2::Compare | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f41b0e5973af8e0cb65f093f51137059084c9792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af349d8568d50e2059ab33ad54b14f499c7b6afd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913466"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Сравнивает этот контекст документа документ контекстов в указанный массив.  
+Сравнивает этот контекст документа, в указанный массив контекстов документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,22 +47,22 @@ int Compare(
   
 #### <a name="parameters"></a>Параметры  
  `compare`  
- [in] Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисления, которое указывает тип сравнения.  
+ [in] Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисление, указывающее тип выполняемого сравнения.  
   
  `rgpDocContextSet`  
- [in] Массив [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, представляющие контекстов документа по сравнению с.  
+ [in] Массив [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, представляющие контекстов документа, с которым производится сравнение.  
   
  `dwDocContextSetLen`  
  [in] Длина массива контекстов документа для сравнения.  
   
  `pdwDocContext`  
- [out] Возвращает индекс в `rgpDocContextSet` массив контекст первый документ, который удовлетворяет условию сравнения.  
+ [out] Возвращает индекс в `rgpDocContextSet` массив первый контекст документа, который удовлетворяет условию сравнения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` Если найдено соответствие. Возвращает `S_FALSE` , если соответствие не найдено. В противном случае возвращается код ошибки.  
+ Возвращает `S_OK` Если найдено соответствие. Возвращает `S_FALSE` Если совпадений не найдено. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, передаваемые в массиве должен быть реализован один и тот же механизм отладки, реализующего `IDebugDocumentContext2` объекта вызова; в противном случае, сравнение не является допустимым.  
+ [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, передаваемые в массиве должны реализовываться тот же механизм отладки, который реализует `IDebugDocumentContext2` вызванный объект; в противном случае сравнение будет недопустимым.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

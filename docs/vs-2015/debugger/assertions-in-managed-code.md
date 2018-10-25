@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917704"
 ---
 # <a name="assertions-in-managed-code"></a>Утверждения в управляемом коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  Иначе для работы методов <xref:System.Diagnostics.Trace> требуется наличие одной из следующих строк в самом начале исходного файла:  
   
--   `#Const TRACE = True` — в Visual Basic  
+- `#Const TRACE = True` — в Visual Basic  
   
--   `#define TRACE` — в Visual C# и C++  
+- `#define TRACE` — в Visual C# и C++  
   
- Либо, как вариант, построение программы должно выполняться с параметром TRACE:  
+  Либо, как вариант, построение программы должно выполняться с параметром TRACE:  
   
--   `/d:TRACE=True` — в Visual Basic  
+- `/d:TRACE=True` — в Visual Basic  
   
--   `/d:TRACE` — в Visual C# и C++  
+- `/d:TRACE` — в Visual C# и C++  
   
- Если методы Debug требуется использовать в выпускной сборке программы на языках C# или Visual Basic, необходимо определить символ DEBUG в конфигурации выпуска.  
+  Если методы Debug требуется использовать в выпускной сборке программы на языках C# или Visual Basic, необходимо определить символ DEBUG в конфигурации выпуска.  
   
- C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. Тот же эффект достигается с помощью <xref:System.Diagnostics.Trace> класса с условной компиляции, такие как `#ifdef DEBUG`... `#endif`. Можно определить эти символы в  **\<проект > страницы свойств** диалоговое окно. Дополнительные сведения см. в разделе [изменение параметров проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [изменение параметров проекта для конфигурации отладки C++ или C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. Тот же эффект достигается с помощью <xref:System.Diagnostics.Trace> класса с условной компиляции, такие как `#ifdef DEBUG`... `#endif`. Можно определить эти символы в  **\<проект > страницы свойств** диалоговое окно. Дополнительные сведения см. в разделе [изменение параметров проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [изменение параметров проекта для конфигурации отладки C++ или C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Аргументы методов Assert  
  Методы <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> принимают до трех аргументов. Первый аргумент является обязательным и задает условие, которое требуется проверить. При вызове метода <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> или <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> только с одним аргументом `Assert` метод проверяет условие и, если результат ложен, выводит содержимое стека вызовов для **вывода** окна. В следующем примере показаны методы <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  

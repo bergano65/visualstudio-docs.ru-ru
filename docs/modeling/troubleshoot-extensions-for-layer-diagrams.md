@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899647"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Устранение неполадок, связанных с расширениями для схем зависимостей
 
@@ -25,22 +25,22 @@ ms.locfileid: "47860359"
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>При нажатии клавиши F5 для отладки расширения, команды, обработчики жестов, расширения проверки или пользовательские свойства не отображаются на диаграммах зависимостей в экспериментальном экземпляре Visual Studio
 
-1.  Откройте решение расширения в экспериментальном экземпляре Visual Studio, а на **построения** меню, щелкните **Перестроить решение**.
+1. Откройте решение расширения в экспериментальном экземпляре Visual Studio, а на **построения** меню, щелкните **Перестроить решение**.
 
-2.  Нажмите клавишу **F5** или **CTRL + F5** запустить экспериментальный экземпляр Visual Studio. Откройте схему зависимостей и протестируйте расширение.
+2. Нажмите клавишу **F5** или **CTRL + F5** запустить экспериментальный экземпляр Visual Studio. Откройте схему зависимостей и протестируйте расширение.
 
- При необходимости выполните описанную ниже процедуру.
+   При необходимости выполните описанную ниже процедуру.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Запускается старая версия расширения.
 
-1.  Убедитесь, что запущена не экспериментальный экземпляр Visual Studio.
+1. Убедитесь, что запущена не экспериментальный экземпляр Visual Studio.
 
-2.  Удалите следующую папку: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [версия]
+2. Удалите следующую папку: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [версия]
 
-    > [!NOTE]
-    > % LocalAppData % — *DriveName*: \Users\\*UserName*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % — *DriveName*: \Users\\*UserName*\AppData\Local.
 
- При необходимости выполните описанную ниже процедуру.
+   При необходимости выполните описанную ниже процедуру.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Отображается старая версия результатов проверки, либо не вызывается метод проверки.
 

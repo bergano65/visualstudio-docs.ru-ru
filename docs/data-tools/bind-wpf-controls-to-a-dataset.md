@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917531"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -58,15 +58,15 @@ ms.locfileid: "39131964"
 
 Создайте новый проект WPF, чтобы отображать записи продуктов.
 
-1.  Запустите Visual Studio.
+1. Запустите Visual Studio.
 
-2.  В меню **Файл** выберите пункт **Создать** > **Проект**.
+2. В меню **Файл** выберите пункт **Создать** > **Проект**.
 
-3.  Разверните **Visual Basic** или **Visual C#**, а затем выберите **Windows**.
+3. Разверните **Visual Basic** или **Visual C#**, а затем выберите **Windows**.
 
-4.  Выберите **приложение WPF** шаблона проекта.
+4. Выберите **приложение WPF** шаблона проекта.
 
-5.  В **имя** введите **AdventureWorksProductsEditor** , а затем выберите **ОК**.
+5. В **имя** введите **AdventureWorksProductsEditor** , а затем выберите **ОК**.
 
    Visual Studio создаст проект AdventureWorksProductsEditor.
 
@@ -126,23 +126,23 @@ ms.locfileid: "39131964"
 
 Добавьте несколько кнопок в окно, изменив в XAML в Конструкторе WPF. Позднее в рамках данного пошагового руководства вы добавите код, позволяющий пользователям выполнять прокрутку и сохранять изменения записей продуктов с помощью этих кнопок.
 
-1.  В **обозревателе решений**, дважды щелкните *MainWindow.xaml*.
+1. В **обозревателе решений**, дважды щелкните *MainWindow.xaml*.
 
-     Открывается окно в **конструктор WPF**.
+    Открывается окно в **конструктор WPF**.
 
-2.  В представлении [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] конструктора добавьте следующий код между тегами `<Grid>`:
+2. В представлении [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] конструктора добавьте следующий код между тегами `<Grid>`:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Выполните построение проекта.
+3. Выполните построение проекта.
 
 ## <a name="create-data-bound-controls"></a>Создание элементов управления с привязкой данных
 
@@ -190,14 +190,14 @@ ms.locfileid: "39131964"
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
 
-3.  Добавьте следующий код в обработчик событий `backButton_Click`.
+3.  Добавьте следующий код в обработчик событий `backButton_Click` .
 
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
 4.  Вернитесь в конструктор и дважды щелкните **>** кнопки.
 
-5.  Добавьте следующий код в обработчик событий `nextButton_Click`.
+5.  Добавьте следующий код в обработчик событий `nextButton_Click` .
 
      [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
@@ -210,7 +210,7 @@ ms.locfileid: "39131964"
 
      Visual Studio открывает файл кода и создает новую `saveButton_Click` обработчик событий для <xref:System.Windows.Controls.Primitives.ButtonBase.Click> событий.
 
-2.  Добавьте следующий код в обработчик событий `saveButton_Click`.
+2.  Добавьте следующий код в обработчик событий `saveButton_Click` .
 
      [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
      [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]

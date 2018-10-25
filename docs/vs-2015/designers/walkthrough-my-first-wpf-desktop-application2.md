@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899283"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ name = «введение» ></a> это пошаговое руководств
   
  Более подробную информацию об архитектуре и моделях программирования WPF см. в следующих разделах:  
   
--   [Архитектура WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [Архитектура WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Обзор XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Обзор XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Общие сведения о свойствах зависимости](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Общие сведения о свойствах зависимости](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Система макета](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Система макета](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Стили и шаблоны](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Стили и шаблоны](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Более подробную информацию о создании приложений см. в следующих разделах:  
+  Более подробную информацию о создании приложений см. в следующих разделах:  
   
--   [Обзор разработки приложений](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Обзор разработки приложений](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Обзор элементов управления](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Обзор элементов управления](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Общие сведения о привязке данных](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Общие сведения о привязке данных](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Документы в WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Документы в WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

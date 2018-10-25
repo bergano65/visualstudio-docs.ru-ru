@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isStatic | Документы Microsoft
+title: IDiaSymbol::get_isStatic | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ac087fbd967319d6b853a916c708a6f6a9a776
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a0cd30a8a1bcdab93f59c439cf27fce5049ebc09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899153"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
-Возвращает флаг, указывающий ли уровень функции или преобразователь был помечен как статический.  
+Получает флаг, указывающий ли на уровне функции или преобразователь был помечен как статический.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_isStatic(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если слой функции или преобразователь был помечен как статический; в противном случае, возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если на уровне функции или преобразователь был помечен как статический; в противном случае — значение, возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   

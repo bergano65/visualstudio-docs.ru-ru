@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Next | Документы Microsoft
+title: IDiaEnumDebugStreams::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 780aaca4d840d87df17572ec7d58cebc84e84d4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916234"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Извлекает указанное число потоков отладки в последовательности перечисления.  
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] **T**он номеров отладки потоков в перечислителе требуется получить.  
+ [in] **T**число потоков отладки в перечислителе требуется получить.  
   
  rgelt  
- [out] Возвращает массив [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объекты, которые представляют отладки потоков извлекаемых.  
+ [out] Возвращает массив [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объектов, представляющих отладочные выполняет потоковую передачу, извлекаемых.  
   
  pceltFetched  
- [out] Возвращает количество возвращаемых потоки отладки.  
+ [out] Возвращает количество возвращаемых потоков отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные потоки. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные потоки. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915936"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе Введение к службам с точки зрения Visual Studio. Полную документацию см. в разделе [служб данных WCF 4.5](/dotnet/framework/data/wcf/index).
@@ -234,16 +234,16 @@ Visual Studio предоставляет средства для работы с
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
-|-----------|-----------------|
-|[Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Предоставляет пошаговую демонстрацию создания и использования служб WCF в Visual Studio.|
-|[Пошаговое руководство: Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Пошаговая демонстрация того, как создать и использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в Visual Studio.|
-|[С помощью средств разработки WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|Описываются способы создания и тестирования служб WCF в Visual Studio.|
-||[Практическое: Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Описывает, как использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в Visual Studio.|
-|[Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md)|Приведены некоторые распространенные ошибки, которые могут возникнуть с помощью ссылок на службы и способов их устранения.|
-|[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF.|
-|[Пошаговое руководство: Создание данных n уровневого приложения](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.|
-|[Настроить ссылку на службу-диалоговое окно](../data-tools/configure-service-reference-dialog-box.md)|Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно.|
+| Заголовок | Описание |
+| - | - |
+| [Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Предоставляет пошаговую демонстрацию создания и использования служб WCF в Visual Studio. |
+| [Пошаговое руководство: Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Пошаговая демонстрация того, как создать и использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в Visual Studio. |
+| [С помощью средств разработки WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Описываются способы создания и тестирования служб WCF в Visual Studio. |
+| | [Практическое: Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md) | Приведены некоторые распространенные ошибки, которые могут возникнуть с помощью ссылок на службы и способов их устранения. |
+| [Отладка служб WCF](../debugger/debugging-wcf-services.md) | Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF. |
+| [Пошаговое руководство: Создание данных n уровневого приложения](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов. |
+| [Настроить ссылку на службу-диалоговое окно](../data-tools/configure-service-reference-dialog-box.md) | Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно. |
 
 ## <a name="reference"></a>Ссылка
 

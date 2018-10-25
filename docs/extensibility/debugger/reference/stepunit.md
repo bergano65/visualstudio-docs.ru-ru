@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT | Документы Microsoft
+title: STEPUNIT | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 993c92d457baa2008387aad2bc6749ce7ad9387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901116"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Указывает размер шага для пошагового выполнения.  
+Указывает единицу шага для пошагового выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,13 +46,13 @@ enum enum_STEPUNIT {
   
 ## <a name="members"></a>Участники  
  STEP_STATEMENT  
- Шаги инструкцией.  
+ Действия инструкцией.  
   
  STEP_LINE  
  Действия с помощью строки.  
   
  STEP_INSTRUCTION  
- Действия посредством команды.  
+ Действия по инструкциям.  
   
 ## <a name="remarks"></a>Примечания  
  Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.  

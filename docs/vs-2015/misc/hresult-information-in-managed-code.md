@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911854"
 ---
 # <a name="hresult-information-in-managed-code"></a>Информация HRESULT в управляемом коде
 В процессе взаимодействия между управляемым кодом и моделью COM могут возникать проблемы, если возвращаются значения HRESULT.  
   
  В COM-интерфейсе возвращаемое значение HRESULT может выполнять следующие функции:  
   
--   предоставлять сведения об ошибке (например, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>);  
+- предоставлять сведения об ошибке (например, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>);  
   
--   предоставлять сведения о состоянии нормального выполнения программы.  
+- предоставлять сведения о состоянии нормального выполнения программы.  
   
- Когда COM вызывает управляемый код, значения HRESULT могут вызывать указанные ниже проблемы.  
+  Когда COM вызывает управляемый код, значения HRESULT могут вызывать указанные ниже проблемы.  
   
--   Функции COM, возвращающие значения HRESULT меньше нуля (коды сбоев), создают исключения.  
+- Функции COM, возвращающие значения HRESULT меньше нуля (коды сбоев), создают исключения.  
   
--   Методы COM, регулярно возвращающие два или более разных кодов успешного выполнения, например <xref:Microsoft.VisualStudio.VSConstants.S_OK> и <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, невозможно различить.  
+- Методы COM, регулярно возвращающие два или более разных кодов успешного выполнения, например <xref:Microsoft.VisualStudio.VSConstants.S_OK> и <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, невозможно различить.  
   
- Так как многие функции COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] возвращают значения HRESULT меньше нуля или различные коды успешного выполнения, сборки взаимодействия [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] были написаны так, чтобы сигнатуры методов сохранялись. Все методы взаимодействия [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] имеют тип `int` . Значения HRESULT передаются через уровень взаимодействия без изменения и без создания исключений.  
+  Так как многие функции COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] возвращают значения HRESULT меньше нуля или различные коды успешного выполнения, сборки взаимодействия [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] были написаны так, чтобы сигнатуры методов сохранялись. Все методы взаимодействия [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] имеют тип `int` . Значения HRESULT передаются через уровень взаимодействия без изменения и без создания исключений.  
   
- Так как функция COM возвращает значение HRESULT в вызвавший ее управляемый метод, вызывающий метод должен проверить значение HRESULT и при необходимости создать исключения.  
+  Так как функция COM возвращает значение HRESULT в вызвавший ее управляемый метод, вызывающий метод должен проверить значение HRESULT и при необходимости создать исключения.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Обработка значений HRESULT, возвращаемых в управляемый код из COM  
  При вызове COM-интерфейса из управляемого кода проверьте значение HRESULT и при необходимости создайте исключение. Класс <xref:Microsoft.VisualStudio.ErrorHandler> содержит метод <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, который создает исключение COM в зависимости от переданного ему значения HRESULT.  

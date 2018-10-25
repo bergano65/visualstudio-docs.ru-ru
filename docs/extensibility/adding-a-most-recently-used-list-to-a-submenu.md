@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916534"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление недавно использовавшийся списка в подменю
 Это пошаговое руководство построено на демонстрации в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить в подменю динамический список. Список динамического формирует основу для создания списка наиболее недавно использовавшихся Элементов.  
@@ -38,9 +38,9 @@ ms.locfileid: "39081339"
   
 ## <a name="create-an-extension"></a>Создание расширения  
   
--   Выполните процедуры, описанные в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md) создать подменю, который изменяется в следующих процедурах.  
+- Выполните процедуры, описанные в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md) создать подменю, который изменяется в следующих процедурах.  
   
- Процедуры, описанные в этом пошаговом руководстве предполагается, что называется VSPackage `TopLevelMenu`, который является имя, которое используется в [добавить меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Процедуры, описанные в этом пошаговом руководстве предполагается, что называется VSPackage `TopLevelMenu`, который является имя, которое используется в [добавить меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Создать команду динамического элемента списка  
   

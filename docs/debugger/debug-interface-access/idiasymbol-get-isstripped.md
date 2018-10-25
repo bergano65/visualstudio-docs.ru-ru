@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isStripped | Документы Microsoft
+title: IDiaSymbol::get_isStripped | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79204e0082fdfb1920959e1c1b143bf04529ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772310c03bef7c645829bbe5c5877a5aa6cd22d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917509"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
-Возвращает флаг, указывающий, были ли закрытые символы удаляются из файла символов.  
+Получает флаг, указывающий, были ли закрытые символы удаляются из файла символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT get_isStripped(
  [out] Возвращает `TRUE` если закрытые символы были удалены из файла символов; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagExe` символ типа (см. [Exe](../../debugger/debug-interface-access/exe.md)).  
+ Это свойство доступно из `SymTagExe` символ типа (см. в разделе [Exe](../../debugger/debug-interface-access/exe.md)).  
   
 ## <a name="requirements"></a>Требования  
   
