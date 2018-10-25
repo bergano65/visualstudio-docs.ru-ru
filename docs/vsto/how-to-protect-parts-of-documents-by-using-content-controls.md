@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850364"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Практическое: защита частей документов с помощью элементов управления содержимым
   При защите части документа вы запрещаете пользователям изменять или удалять содержимое в ней. Для защиты частей документа Microsoft Office с помощью элементов управления содержимым можно использовать несколько способов:  
   
--   можно защитить элемент управления содержимым;  
+- можно защитить элемент управления содержимым;  
   
--   можно защитить часть документа, расположенного вне элемента управления содержимым.  
+- можно защитить часть документа, расположенного вне элемента управления содержимым.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> Защита элемента управления содержимым  
  Вы можете запретить пользователям изменять или удалять элемент управления содержимым, задав свойства элемента управления в проекте уровня документа во время разработки или во время выполнения.  
@@ -58,12 +58,12 @@ ms.locfileid: "35674826"
   
 1.  Задайте `LockContents` свойство элемента управления содержимым к **true** запретить пользователям изменять элемент управления, и задайте `LockContentControl` свойства **true** чтобы запретить пользователям удалять элемент управления.  
   
-     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте на уровне документа. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisDocument_Startup`.  
+     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте на уровне документа. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisDocument_Startup` .  
   
      [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
   
-     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте надстройки VSTO. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisAddIn_Startup`.  
+     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте надстройки VSTO. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisAddIn_Startup` .  
   
      [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
@@ -95,12 +95,12 @@ ms.locfileid: "35674826"
   
 1.  Программными средствами выберите область, которую требуется защитить, а затем вызовите метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> для создания <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
-     Следующий пример кода для проекта уровня документа добавляет текст в первый абзац документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisDocument_Startup`.  
+     Следующий пример кода для проекта уровня документа добавляет текст в первый абзац документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisDocument_Startup` .  
   
      [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
   
-     Следующий пример кода для проекта надстройки VSTO добавляет текст в первый абзац активного документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisAddIn_Startup`.  
+     Следующий пример кода для проекта надстройки VSTO добавляет текст в первый абзац активного документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisAddIn_Startup` .  
   
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  

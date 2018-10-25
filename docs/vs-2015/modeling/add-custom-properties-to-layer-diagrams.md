@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 517d9f40dc0c98ca8572c31ae256e81de864171e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844421"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Добавление пользовательских свойств в схемы слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49235161"
   
 > [!IMPORTANT]
 >  Чтобы свойства отображались, нужно внести описанное ниже изменение на каждом компьютере, на котором свойства слоев должны быть видимыми.  
->   
->  1.  Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте файл `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
-> 2.  Внутри элемента `Content` добавьте следующую запись:  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
->   
->      Введите следующие команды:  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  Перезапустите Visual Studio.  
+> 
+> 1. Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте файл `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
+>    2.  Внутри элемента `Content` добавьте следующую запись:  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
+> 
+>    Введите следующие команды:  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  Перезапустите Visual Studio.  
   
  **Убедитесь, что ваш код в проекте VSIX**  
   

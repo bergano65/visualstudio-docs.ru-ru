@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_container | Документы Microsoft
+title: IDiaSymbol::get_container | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a04a505b694d5ed4081b12a39815256ed68d3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822739"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-Эта функция извлекает указатель на символ, представляющий родительский/контейнер этот символ.  
+Эта функция извлекает указатель на символ, представляющий родительский/контейнер от этого символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT get_container(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает указатель на `IDiaSymbol` содержащую сведения о контейнере этот символ.  
+ [out] Возвращает указатель на `IDiaSymbol` содержащий сведения о контейнере от этого символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение S_FALSE или код ошибки.  

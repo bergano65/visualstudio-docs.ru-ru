@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e45c8ec2d7af5f1bfde5e145607728d3ff0bc85d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831787"
 ---
 # <a name="pickbranch-activity-designer"></a>Конструктор действия PickBranch
 
@@ -55,7 +55,7 @@ ms.locfileid: "36755564"
 В следующей таблице показаны наиболее полезных <xref:System.Activities.Statements.PickBranch> свойства и описывает их использование в конструкторе рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Понятное имя, отображаемое в заголовке **PickBranch** конструктора. Значение по умолчанию - Branch.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|Каждый <xref:System.Activities.Statements.PickBranch> содержит действие <xref:System.Activities.Statements.PickBranch.Trigger%2A>, которое может вызвать <xref:System.Activities.Statements.PickBranch.Action%2A>.|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Каждый <xref:System.Activities.Statements.PickBranch> содержит <xref:System.Activities.Statements.PickBranch.Action%2A>, которое выполняется при его запуске.|

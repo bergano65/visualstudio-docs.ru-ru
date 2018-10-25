@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812976"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ ms.locfileid: "49248088"
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Создание обработчика жестов в отдельном расширении VSIX  
   
-1.  В области **Проекты моделирования** диалогового окна **Новый проект**выберите **Расширение обработчика жестов**.  
+1. В области **Проекты моделирования** диалогового окна **Новый проект**выберите **Расширение обработчика жестов**.  
   
-2.  Откройте файл **.cs** в новом проекте и внесите в класс `GestureExtension` изменения, реализующие обработчик жестов.  
+2. Откройте файл **.cs** в новом проекте и внесите в класс `GestureExtension` изменения, реализующие обработчик жестов.  
   
-     Более подробную информацию см. в разделе [Реализация обработчика жестов](#Implementing).  
+    Более подробную информацию см. в разделе [Реализация обработчика жестов](#Implementing).  
   
-3.  Проверьте обработчик жестов, нажав клавишу F5. Более подробную информацию см. в разделе [Выполнение обработчика жестов](#Executing).  
+3. Проверьте обработчик жестов, нажав клавишу F5. Более подробную информацию см. в разделе [Выполнение обработчика жестов](#Executing).  
   
-4.  Установите обработчик жестов на другой компьютер, скопировав файл **bin\\\*\\\*.vsix** , созданный вашим проектом. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).  
+4. Установите обработчик жестов на другой компьютер, скопировав файл **bin\\\*\\\*.vsix** , созданный вашим проектом. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).  
   
- Ниже описана альтернативная процедура.  
+   Ниже описана альтернативная процедура.  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Создание отдельного проекта библиотеки классов (DLL) для обработчика жестов  
   
-1.  Создайте проект библиотеки классов либо в новом решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , либо в уже существующем.  
+1. Создайте проект библиотеки классов либо в новом решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , либо в уже существующем.  
   
-    1.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
+   1.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
-    2.  В разделе **Установленные шаблоны**разверните узел **Visual C#** или **Visual Basic**и выберите в среднем столбце пункт **Библиотека классов**.  
+   2.  В разделе **Установленные шаблоны**разверните узел **Visual C#** или **Visual Basic**и выберите в среднем столбце пункт **Библиотека классов**.  
   
-2.  Добавьте в проект следующие ссылки:  
+2. Добавьте в проект следующие ссылки:  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md).  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md).  
   
-3.  Добавьте файл класса в проект и вставьте в него указанный ниже код.  
+3. Добавьте файл класса в проект и вставьте в него указанный ниже код.  
   
-    > [!NOTE]
-    >  Измените пространство имен и имя класса в соответствии с вашими предпочтениями.  
+   > [!NOTE]
+   >  Измените пространство имен и имя класса в соответствии с вашими предпочтениями.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     Более подробную информацию о том, что следует помещать в методы, см. в разделе [Реализация обработчика жестов](#Implementing).  
+    Более подробную информацию о том, что следует помещать в методы, см. в разделе [Реализация обработчика жестов](#Implementing).  
   
- Команду меню необходимо добавить в проект VSIX, который выступает контейнером для установки команды. При необходимости в проект VSIX можно добавить и другие компоненты.  
+   Команду меню необходимо добавить в проект VSIX, который выступает контейнером для установки команды. При необходимости в проект VSIX можно добавить и другие компоненты.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Добавление отдельного обработчика жестов в проект VSIX  
   
@@ -238,25 +238,25 @@ ms.locfileid: "49248088"
   
 #### <a name="to-test-the-gesture-handler"></a>Проверка обработчика жестов  
   
-1.  Нажмите клавишу **F5**или выберите в меню **Отладка** пункт **Начать отладку**.  
+1. Нажмите клавишу **F5**или выберите в меню **Отладка** пункт **Начать отладку**.  
   
-     Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
+    Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
+    **Устранение неполадок**. Если новый экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается:  
   
-    -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
+   -   При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".  
   
-    -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь в том, что строка в поле Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; обычно она имеет следующий вид:  
+   -   В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь в том, что строка в поле Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; обычно она имеет следующий вид:  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса обработчика жестов.  
+2. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования. Используйте схему, которая относится к одному из типов, перечисленных в атрибутах вашего класса обработчика жестов.  
   
-3.  Дважды щелкните в любом месте схемы. Будет вызван обработчик двойного щелчка.  
+3. Дважды щелкните в любом месте схемы. Будет вызван обработчик двойного щелчка.  
   
-4.  Перетащите элемент из обозревателя UML на схему. Будет вызван обработчик перетаскивания.  
+4. Перетащите элемент из обозревателя UML на схему. Будет вызван обработчик перетаскивания.  
   
- **Устранение неполадок**. Если обработчик жестов не работает, убедитесь в следующем:  
+   **Устранение неполадок**. Если обработчик жестов не работает, убедитесь в следующем:  
   
 -   Проект обработчика жестов указан в качестве компонента MEF на вкладке **Активы** в **source.extensions.manifest** проекта VSIX.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>Удаление расширения  
   
-1.  В меню **Сервис** щелкните пункт **Расширения и обновления**.  
+1. В меню **Сервис** щелкните пункт **Расширения и обновления**.  
   
-2.  Разверните узел **Установленные расширения**.  
+2. Разверните узел **Установленные расширения**.  
   
-3.  Выберите расширение и щелкните **Удалить**.  
+3. Выберите расширение и щелкните **Удалить**.  
   
- Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:  
+   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [версия]**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [версия]**  
   
 ##  <a name="DragExample"></a> Пример  
  В приведенном ниже примере показано создание линий жизни на схеме последовательностей с использованием частей и портов компонента, перетащенных со схемы компонентов.  

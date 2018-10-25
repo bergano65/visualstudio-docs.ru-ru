@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Документы Microsoft
+title: MODULE_INFO_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc6bd76a4a9aecade72347613ed4f36968c65eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832859"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Задает флаги для модуля отладки.  
+Задает флаги для отладки модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -66,50 +66,50 @@ public enum enum_MODULE_INFO_FIELDS {
   
 ## <a name="members"></a>Участники  
  MIF_NONE  
- Инициализация или использовать ни одно из полей в структуре.  
+ Инициализировать или использовать ни одно из полей в структуре.  
   
  MIF_NAME  
- Инициализация или использовать `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.  
+ Инициализация и использование `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.  
   
  MIF_URL  
- Инициализация или использовать `m_bstrUrl` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_bstrUrl` в `MODULE_INFO` структуры.  
   
  MIF_VERSION  
- Инициализация или использовать `m_bstrVersion` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_bstrVersion` в `MODULE_INFO` структуры.  
   
  MIF_DEBUGMESSAGE  
- Инициализация или использовать `m_bstrDebugMessage` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_bstrDebugMessage` в `MODULE_INFO` структуры.  
   
  MIF_LOADADDRESS  
- Инициализация или использовать `m_addrLoadAddress` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_addrLoadAddress` в `MODULE_INFO` структуры.  
   
  MIF_PREFFEREDADDRESS  
- Инициализация или использовать `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.  
   
  MIF_SIZE  
- Инициализация или использовать `m_dwSize` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_dwSize` в `MODULE_INFO` структуры.  
   
  MIF_LOADORDER  
- Инициализация или использовать `m_dwLoadOrder` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_dwLoadOrder` в `MODULE_INFO` структуры.  
   
  MIF_TIMESTAMP  
- Инициализация или использовать `m_TimeStamp` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_TimeStamp` в `MODULE_INFO` структуры.  
   
  MIF_URLSYMBOLLOCATION  
- Инициализация или использовать `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.  
   
  MIF_FLAGS  
- Инициализация или использовать `m_dwModuleFlags` в `MODULE_INFO` структуры.  
+ Инициализация и использование `m_dwModuleFlags` в `MODULE_INFO` структуры.  
   
  MIF_ALLFIELDS  
- Инициализация или использовать все поля в `MODULE_INFO` структуры.  
+ Инициализация и использование всех полей в `MODULE_INFO` структуры.  
   
 ## <a name="remarks"></a>Примечания  
- Эти значения передаются в качестве аргумента для [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.  
+ Эти значения передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.  
   
- Эти значения также используются в `MODULE_INFO` структуры указывает, какие поля используются и допустимым.  
+ Эти значения также используются в `MODULE_INFO` структура указывает, какие поля используются и допустимым.  
   
- Эти флаги могут объединяться с битовой `OR`.  
+ Эти флаги могут быть объединены с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

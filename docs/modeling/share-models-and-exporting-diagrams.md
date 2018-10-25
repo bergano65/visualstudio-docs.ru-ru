@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842850"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 В Visual Studio есть несколько способов организовать совместное использование моделей и схем с коллегами.
@@ -46,7 +46,7 @@ ms.locfileid: "47858358"
 ## <a name="related-topics"></a>См. также
 
 |Заголовок|Описание|
-|-----------|-----------------|
+|-|-|
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Совместно используйте модели в рамках проекта большого или среднего размера.|
 |[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|Вы можете копировать части схем в приложения, например PowerPoint или Word, и печатать схемы в XPS-файлы.|
 |[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)|Обзор моделей и схем.|

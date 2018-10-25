@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetScope | Документы Microsoft
+title: IDebugDisassemblyStream2::GetScope | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a155c521370670ecf141177a29f70e67d812d68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 739c2515d402d4132b2fd5eb10c7ba2cbd5e04b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814848"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
-Возвращает область потока Дизассемблированный код.  
+Получает область потока Дизассемблированный код.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetScope(
  [out] Возвращает значение из [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) перечисление, описывающее область этого потока Дизассемблированный код.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Область Дизассемблированный код может быть функции или всего модуля, например.  

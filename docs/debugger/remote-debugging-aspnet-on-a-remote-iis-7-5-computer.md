@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826514"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
@@ -47,7 +47,7 @@ ms.locfileid: "49101096"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создавать приложения ASP.NET 4.5.2 приложения на компьютере с Visual Studio
   
-1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите ** Visual C# > веб > веб-приложение ASP.NET. В разделе шаблонов **ASP.NET 4.5.2** выберите шаблон **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
+1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В **ASP.NET 4.5.2</strong> выберите шаблоны **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
 
 2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
 

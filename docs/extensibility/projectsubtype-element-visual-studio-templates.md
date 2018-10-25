@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824340"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Элемент ProjectSubType (шаблоны Visual Studio)
 Разделяет разновидность значение, указанное в шаблоне `ProjectType` элемент.  
@@ -47,7 +47,7 @@ ms.locfileid: "39636146"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -61,15 +61,15 @@ ms.locfileid: "39636146"
   
  `ProjectSubType` Элемент предоставляет подкатегории для [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) элемент. Это значение может включать:  
   
--   `SmartDevice-NETCFv1`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 1.0.  
+- `SmartDevice-NETCFv1`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 1.0.  
   
--   `SmartDevice-NETCFv2`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
+- `SmartDevice-NETCFv2`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
   
- Если шаблон содержит `ProjectType` элемент со значением `Web`, `ProjectSubType` элемент указывает язык программирования шаблона. Этот элемент может иметь следующие значения:  
+  Если шаблон содержит `ProjectType` элемент со значением `Web`, `ProjectSubType` элемент указывает язык программирования шаблона. Этот элемент может иметь следующие значения:  
   
--   `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] веб-проекта или элемента.  
+- `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] веб-проекта или элемента.  
   
--   `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] веб-проекта или элемента.  
+- `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] веб-проекта или элемента.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано метаданные для шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения для устройства [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  

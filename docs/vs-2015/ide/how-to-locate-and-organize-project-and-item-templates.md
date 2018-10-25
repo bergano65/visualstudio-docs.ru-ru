@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830981"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ ms.locfileid: "49229402"
 ### <a name="installed-templates"></a>Установленные шаблоны  
  По умолчанию шаблоны, установленные вместе с продуктом, находятся в папке:  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*язык*\\*языковой стандарт*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*язык*\\*языковой стандарт*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*язык*\\*языковой стандарт\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*язык*\\*языковой стандарт\\*  
   
- Например, следующий каталог содержит шаблоны проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для английского языка:  
+  Например, следующий каталог содержит шаблоны проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для английского языка:  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Пользовательские шаблоны  
  По умолчанию пользовательские шаблоны расположены в папке:  
   
--   \My Documents\Visual Studio *версия*\Templates\ProjectTemplates\\*язык*\  
+- \My Documents\Visual Studio *версия*\Templates\ProjectTemplates\\*язык*\  
   
--   \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\*язык*\  
+- \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\*язык*\  
   
- Например, следующий каталог содержит настраиваемые шаблоны проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
+  Например, следующий каталог содержит настраиваемые шаблоны проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
- C:\Documents and Settings\UserName\My документов\\< версия Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My документов\\< версия Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
   
- Пользовательские шаблоны не включают подкаталог для локализованных шаблонов. Каталог по умолчанию для пользовательских шаблонов можно изменить в диалоговом окне **Параметры** в области **Среда\Проекты и решения**.  
+  Пользовательские шаблоны не включают подкаталог для локализованных шаблонов. Каталог по умолчанию для пользовательских шаблонов можно изменить в диалоговом окне **Параметры** в области **Среда\Проекты и решения**.  
   
 ## <a name="organizing-templates"></a>Упорядочение шаблонов  
  Категории в диалоговых окнах **Новый проект** и **Добавление нового элемента** отражают структуры каталогов, которые существуют в расположениях установленных и пользовательских шаблонов. Можно изменить эти структуры каталогов, чтобы упорядочить шаблоны удобным для вас образом.  
@@ -73,25 +73,25 @@ ms.locfileid: "49229402"
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Создание новых категорий установленных шаблонов проектов  
   
-1.  Создайте папку в папке языка, находящейся в каталоге установленного шаблона. Например, чтобы создать категорию Office для шаблонов проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], необходимо создать следующий каталог:  
+1. Создайте папку в папке языка, находящейся в каталоге установленного шаблона. Например, чтобы создать категорию Office для шаблонов проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], необходимо создать следующий каталог:  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Поместите все шаблоны для этой категории в новую папку.  
+2. Поместите все шаблоны для этой категории в новую папку.  
   
-3.  Закройте все экземпляры [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Закройте все экземпляры [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  В меню **Пуск** щелкните **Выполнить**, введите **cmd** и нажмите кнопку **ОК**.  
+4. В меню **Пуск** щелкните **Выполнить**, введите **cmd** и нажмите кнопку **ОК**.  
   
-5.  В командной строке перейдите в каталог, содержащий файл devenv.exe, и введите **devenv /installvstemplates**.  
+5. В командной строке перейдите в каталог, содержащий файл devenv.exe, и введите **devenv /installvstemplates**.  
   
-6.  Запустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Запустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
+7. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
-8.  Убедитесь, что категория Office появилась в разделе [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] области **Типы проектов** диалогового окна **Новый проект**.  
+8. Убедитесь, что категория Office появилась в разделе [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] области **Типы проектов** диалогового окна **Новый проект**.  
   
- Можно также сгруппировать подмножество шаблонов элементов проекта в пользовательской папке.  
+   Можно также сгруппировать подмножество шаблонов элементов проекта в пользовательской папке.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Создание новых категорий установленных шаблонов элементов  
   
@@ -120,17 +120,17 @@ ms.locfileid: "49229402"
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Создание новых категорий пользовательских шаблонов проектов  
   
-1.  Создайте папку в папке языка, находящейся в каталоге пользовательских шаблонов проектов. Например, чтобы создать категорию HelloWorld для шаблонов [!INCLUDE[csprcs](../includes/csprcs-md.md)], необходимо создать следующий каталог:  
+1. Создайте папку в папке языка, находящейся в каталоге пользовательских шаблонов проектов. Например, чтобы создать категорию HelloWorld для шаблонов [!INCLUDE[csprcs](../includes/csprcs-md.md)], необходимо создать следующий каталог:  
   
-     \My documents\\< версия Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My documents\\< версия Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Поместите все шаблоны для этой категории в новую папку.  
+2. Поместите все шаблоны для этой категории в новую папку.  
   
-3.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
+3. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
-4.  Убедитесь, что категория HelloWorld появилась в разделе [!INCLUDE[csprcs](../includes/csprcs-md.md)] области **Типы проектов** диалогового окна **Новый проект**.  
+4. Убедитесь, что категория HelloWorld появилась в разделе [!INCLUDE[csprcs](../includes/csprcs-md.md)] области **Типы проектов** диалогового окна **Новый проект**.  
   
- Можно также сгруппировать подмножество пользовательских шаблонов элементов в пользовательской папке.  
+   Можно также сгруппировать подмножество пользовательских шаблонов элементов в пользовательской папке.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Создание новых категорий пользовательских шаблонов элементов  
   

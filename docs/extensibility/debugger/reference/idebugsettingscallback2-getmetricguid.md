@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Документы Microsoft
+title: IDebugSettingsCallback2::GetMetricGuid | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9b1d9d96a390d36ad2b322cba088388daaca050
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7b45d5126f1fc437f54ed028ae7f2f5535c207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831150"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Получает уникальный идентификатор метрики с заданным именем.  
+Извлекает уникальный идентификатор метрики с заданным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,7 +57,7 @@ private int GetMetricGuid(
  [out] Возвращает уникальный идентификатор метрики.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Документы Microsoft
+title: StackFrameTypeEnum | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853941"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Указывает тип кадра стека.  
@@ -39,7 +39,7 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Элементы  
  `FrameTypeFPO`  
- Указатель кадра опустить; FPO сведения недоступны.  
+ Указатель на фреймы опустить; FPO сведения недоступны.  
   
  `FrameTypeTrap`  
  Кадр перехвата ядра.  
@@ -48,13 +48,13 @@ enum StackFrameTypeEnum {
  Кадр перехвата ядра.  
   
  `FrameTypeStandard`  
- Стандартная кадр стека EBP.  
+ Стандартный кадр стека EBP.  
   
  `FrameTypeFrameData`  
- Указатель кадра опустить; Сведения кадра данных недоступны.  
+ Указатель на фреймы опустить; Кадр данных сведения о доступных.  
   
  `FrameTypeUnknown`  
- Кадр, не имеет сведений о отладки.  
+ Кадр, который не поддерживает любой отладочной информации.  
   
 ## <a name="remarks"></a>Примечания  
  Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.  

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836441"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 При изменении или добавлении текстовых шаблонов в решении доменного языка, могут возникнуть ошибки, когда обработчик преобразует шаблон к исходному коду, или при компиляции созданного кода. Следующий пример демонстрирует некоторые из вещей, которые можно сделать, чтобы отладка текстового шаблона.
@@ -25,15 +25,15 @@ ms.locfileid: "39382543"
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка
  В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:
 
--   Имя: DebuggingTestLanguage
+- Имя: DebuggingTestLanguage
 
--   Шаблон решения: минимальный язык
+- Шаблон решения: минимальный язык
 
--   Расширение файла: .ddd
+- Расширение файла: .ddd
 
--   Название компании: Fabrikam
+- Название компании: Fabrikam
 
- Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Создание текстового шаблона
  Добавьте текстовый шаблон в решение.

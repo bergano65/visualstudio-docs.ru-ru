@@ -13,12 +13,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811950"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Пример расширения Excel. Классы Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "49179300"
 ## <a name="utilities-and-excelutilities-classes"></a>Классы Utilities и ExcelUtilities  
  Внутренний класс `ExcelUtilities` предоставляет некоторые константные значения, такие как имя технологии, а также метод, который определяет, действительно ли указанный дескриптор окна представляет лист Excel.  
   
- Класс `Utilities` содержит вспомогательные методы, которые возвращают различные сведения о пользовательском интерфейсе. Некоторые методы используют прямые вызовы внешних системных библиотек DLL, таких как **USER32.DLL** и **OLEACC.DLL**, для получения дескрипторов окон из пользовательского интерфейса **.**  
+ Класс `Utilities` содержит вспомогательные методы, которые возвращают различные сведения о пользовательском интерфейсе. Некоторые методы используют прямые вызовы внешних системных библиотек DLL, таких как **USER32.DLL** и **OLEACC.DLL**, для получения дескрипторов окон из пользовательского интерфейса<strong>.</strong>  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

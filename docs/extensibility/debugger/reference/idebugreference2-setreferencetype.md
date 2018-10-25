@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetReferenceType | Документы Microsoft
+title: IDebugReference2::SetReferenceType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c57ab701ead4a9e60a163c50f4f241fbe60a012b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f36192a194e1ced3815813f87925496d2ce07979
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843032"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Задает ссылочный тип. Зарезервировано для будущего использования.  
@@ -41,7 +41,7 @@ int SetReferenceType (
   
 #### <a name="parameters"></a>Параметры  
  `dwRefType`  
- [in] Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисления, которое указывает тип ссылки.  
+ [in] Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисление, указывающее ссылочный тип.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Всегда возвращает значение `E_NOTIMPL`.  

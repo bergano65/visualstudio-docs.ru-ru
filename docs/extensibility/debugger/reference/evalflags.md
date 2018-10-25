@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Документы Microsoft
+title: EVALFLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829967"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Указывает флаги, управляющие вычисления выражения.  
+Указывает флаги, определяющие вычисления выражения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,30 +54,30 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Участники  
  EVAL_RETURNVALUE  
- Указывает, вычисления и возвращаемое значение, если таковая имеется.  
+ Указывает, что возвращаемое значение, если таковое имеется, вычисляется.  
   
  EVAL_NOSIDEEFFECTS  
- Указывает, не допускается побочные эффекты.  
+ Указывает, что побочные эффекты не разрешается.  
   
  EVAL_ALLOWBPS  
  Указывает остановки точек останова.  
   
  EVAL_ALLOWERRORREPORT  
- Указывает отчетов для узла разрешаются. В основном используется для вычисления выражений в скрипте в Internet Explorer.  
+ Указывает отчетов к узлу разрешен об ошибках. В основном используется для вычисления выражений в скрипте в Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Принудительно вызывает функции для оценки в качестве адреса, вместо вызова функции.  
+ Функции силы для оценки в качестве адреса, вместо вызова функции.  
   
  EVAL_NOFUNCEVAL  
- Препятствует при вычислении функции. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться неправильно, адрес, а не значение.  
+ Запрещает вычисляется функция. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.  
   
  EVAL_NOEVENTS  
- Флаг, указывающий, не отправляются события, происходящие во время вычисления выражения для диспетчера сеанса отладки (SDM) или в интегрированную среду разработки.  
+ Флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.  
   
 ## <a name="remarks"></a>Примечания  
- Эти флаги передаются в качестве аргумента для [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) методы.  
+ Эти флаги передаются в качестве аргумента [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) методы.  
   
- Эти флаги могут объединяться с Побитовый оператор или.  
+ Эти флаги могут быть объединены с помощью побитового логического Сложения.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

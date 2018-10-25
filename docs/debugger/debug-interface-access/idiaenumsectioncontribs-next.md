@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Next | Документы Microsoft
+title: IDiaEnumSectionContribs::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f700ef7160cff643c2a60007d7b1f83ecbe4eeb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818956"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Извлекает указанное число вклады раздела в последовательности перечисления.  
+Извлекает указанное число разделе вклад в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,13 +39,13 @@ HRESULT Next(
  [in] Номер раздела вклад в перечислителе требуется получить.  
   
  rgelt  
- [out] Массив, который должен быть заполнен с [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) объекты, представляющие вклады нужный раздел.  
+ [out] Массив, который должен быть заполнен с [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) объекты, представляющие вклад нужный раздел.  
   
  pceltFetched  
- [out] Возвращает количество раздел вклад в выборке перечислитель.  
+ [out] Возвращает количество разделе вклад в выборке перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если публикации не несколько разделов. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` при публикации не дополнительные раздела. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

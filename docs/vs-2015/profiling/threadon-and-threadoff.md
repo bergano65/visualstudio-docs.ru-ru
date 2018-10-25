@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833405"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49249110"
   
  Подкоманды **ThreadOff** и **ThreadOn** также влияют на количество запусков и остановок потока, которое задается функциями интерфейса API профилирования.  
   
--   **ThreadOff** немедленно устанавливает значение 0 для счетчика запусков и остановок потока, вследствие чего профилирование приостанавливается.  
+- **ThreadOff** немедленно устанавливает значение 0 для счетчика запусков и остановок потока, вследствие чего профилирование приостанавливается.  
   
--   **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.  
+- **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.  
   
- Дополнительные сведения см. в статье [Profiling Tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
+  Дополнительные сведения см. в статье [Profiling Tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
   
 ## <a name="syntax"></a>Синтаксис  
   

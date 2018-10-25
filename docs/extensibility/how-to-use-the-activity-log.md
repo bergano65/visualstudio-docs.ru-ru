@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825820"
 ---
 # <a name="how-to-use-the-activity-log"></a>Практическое: использование журнала действий
 Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.  
@@ -47,15 +47,15 @@ ms.locfileid: "39498000"
   
 ## <a name="to-examine-the-activity-log"></a>Для просмотра журнала действий  
   
-1.  Запустите Visual Studio с [/Log](../ide/reference/log-devenv-exe.md) параметр командной строки для записи ActivityLog.xml на диск во время сеанса.
+1. Запустите Visual Studio с [/Log](../ide/reference/log-devenv-exe.md) параметр командной строки для записи ActivityLog.xml на диск во время сеанса.
 
-2.  После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:  
+3. Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
  Так как журнал действий — это служба, журнал действий недоступна в конструкторе пакета VSPackage.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839990"
 ---
 # <a name="combo-element"></a>Элемент поля со списком
 Определяет команды, которые отображаются в поле со списком. Существует четыре типа со списком, следующим образом: DropDownCombo, DynamicCombo, IndexCombo и MRUCombo.  
@@ -39,7 +39,7 @@ ms.locfileid: "39233130"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
 |id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
@@ -51,7 +51,7 @@ ms.locfileid: "39233130"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Необязательный. Родительский элемент кнопки.|  
 |CommandFlag|Обязательно. См. в разделе [элемент commandflag](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для кнопки.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Фильтрации<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
@@ -60,7 +60,7 @@ ms.locfileid: "39233130"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

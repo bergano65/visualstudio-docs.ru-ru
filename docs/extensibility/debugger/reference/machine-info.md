@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Документы Microsoft
+title: MACHINE_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6ee66149acb970287628289a15574894b8b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e548552b5acda6a3334b6d7df90b2aeab80c2e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847231"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
-Описывает конкретного компьютера.  
+Описание конкретного компьютера.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,13 +45,13 @@ public struct MACHINE_INFO {
   
 ## <a name="members"></a>Участники  
  `Fields`  
- Сочетание флагов из [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) перечисления, укажите, какие поля структуры инициализируются.  
+ Сочетание флагов из [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) перечисление, указать, какие поля структуры инициализируются.  
   
  `bstrName`  
  Имя компьютера. Аналогичен вызову [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
   
  `Flags`  
- Сочетание флагов из [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) перечисление, описывающее атрибуты машины.  
+ Сочетание флагов из [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) перечисление, описывающее атрибуты компьютера.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура возвращается путем вызова [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод.  
@@ -64,6 +64,6 @@ public struct MACHINE_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

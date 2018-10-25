@@ -16,12 +16,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8ca8cd0fdb112214cd2d0f5088bf745c2643570
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827315"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,14 +65,14 @@ ms.locfileid: "49294350"
   
  `SettingsPage` Класс и `Microsoft.VisualStudio.Package.ProjectNode` класс предлагают эти методы для сохранения свойств проекта и конфигурации:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` и `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` сохранения свойств проекта.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` и `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` сохранения свойств проекта.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` и `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` сохранения свойства конфигурации.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` и `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` сохранения свойства конфигурации.  
   
-    > [!NOTE]
-    >  Реализации `Microsoft.VisualStudio.Package.SettingsPage` и `Microsoft.VisualStudio.Package.ProjectNode` классы используют `Microsoft.Build.BuildEngine` (MSBuild) методы для получения и задания свойств проекта и конфигурации из файла проекта.  
+  > [!NOTE]
+  >  Реализации `Microsoft.VisualStudio.Package.SettingsPage` и `Microsoft.VisualStudio.Package.ProjectNode` классы используют `Microsoft.Build.BuildEngine` (MSBuild) методы для получения и задания свойств проекта и конфигурации из файла проекта.  
   
- Класс производным от `SettingsPage` должен реализовывать `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` и `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` для сохранения свойства конфигурацию проекта или файла проекта.  
+  Класс производным от `SettingsPage` должен реализовывать `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` и `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` для сохранения свойства конфигурацию проекта или файла проекта.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute и путь в реестре  
  Классы, производные от `SettingsPage` предназначены для совместно использоваться пакетов VSPackage. Чтобы облегчить VSPackage создать класс, производный от `SettingsPage`, добавьте `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` для класса, производного от `Microsoft.VisualStudio.Shell.Package`.  

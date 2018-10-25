@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816499"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Модульное тестирование библиотеки DLL на Visual C++ для приложений Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,56 +154,56 @@ ms.locfileid: "49244365"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Привязка тестового проекта к проекту библиотеки DLL  
   
-1.  Добавьте RooterLib в проект RooterLibTests.  
+1. Добавьте RooterLib в проект RooterLibTests.  
   
-    1.  В обозревателе решений выберите проект **RooterLibTests**, а затем в контекстном меню выберите пункт **Ссылки...**.  
+   1.  В обозревателе решений выберите проект **RooterLibTests**, а затем в контекстном меню выберите пункт **Ссылки...**.  
   
-    2.  В диалоговом окне свойств проекта RooterLib разверните узел **Общие свойства** и выберите узел **.NET Framework и ссылки**.  
+   2.  В диалоговом окне свойств проекта RooterLib разверните узел **Общие свойства** и выберите узел **.NET Framework и ссылки**.  
   
-    3.  Выберите команду **Добавить новую ссылку...**.  
+   3.  Выберите команду **Добавить новую ссылку...**.  
   
-    4.  В диалоговом окне **Добавление ссылки** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **RouterLib**.  
+   4.  В диалоговом окне **Добавление ссылки** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **RouterLib**.  
   
-2.  Включите файл заголовка RooterLib в файл **unittest1.cpp**.  
+2. Включите файл заголовка RooterLib в файл **unittest1.cpp**.  
   
-    1.  Откройте файл **unittest1.cpp**.  
+   1.  Откройте файл **unittest1.cpp**.  
   
-    2.  Добавьте следующий код ниже строки `#include "CppUnitTest.h"`:  
+   2.  Добавьте следующий код ниже строки `#include "CppUnitTest.h"`:  
   
-        ```cpp  
-        #include "..\RooterLib\RooterLib.h"  
-        ```  
+       ```cpp  
+       #include "..\RooterLib\RooterLib.h"  
+       ```  
   
-3.  Добавьте тест, который использует импортированную функцию. Добавьте следующий код в файл **unittest1.cpp**:  
+3. Добавьте тест, который использует импортированную функцию. Добавьте следующий код в файл **unittest1.cpp**:  
   
-    ```  
-    TEST_METHOD(BasicTest)  
-    {  
-        CRooterLib rooter;  
-        Assert::AreEqual(  
-            // Expected value:  
-            0.0,   
-            // Actual value:  
-            rooter.SquareRoot(0.0),   
-            // Tolerance:  
-            0.01,  
-            // Message:  
-            L"Basic test failed",  
-            // Line number - used if there is no PDB file:  
-            LINE_INFO());  
-    }  
+   ```  
+   TEST_METHOD(BasicTest)  
+   {  
+       CRooterLib rooter;  
+       Assert::AreEqual(  
+           // Expected value:  
+           0.0,   
+           // Actual value:  
+           rooter.SquareRoot(0.0),   
+           // Tolerance:  
+           0.01,  
+           // Message:  
+           L"Basic test failed",  
+           // Line number - used if there is no PDB file:  
+           LINE_INFO());  
+   }  
   
-    ```  
+   ```  
   
-4.  Постройте решение.  
+4. Постройте решение.  
   
-     Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.  
+    Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.  
   
-5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
+5. В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
+   Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения  
   
@@ -268,73 +268,73 @@ ms.locfileid: "49244365"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста  
   
-1.  Добавьте еще один тест в файл **unittest1.cpp**:  
+1. Добавьте еще один тест в файл **unittest1.cpp**:  
   
-    ```  
-    // Verify that negative inputs throw an exception.  
-     TEST_METHOD(NegativeRangeTest)  
-     {  
-       wchar_t message[200];  
-       CRooterLib rooter;  
-       for (double v = -0.1; v > -3.0; v = v - 0.5)  
-       {  
-         try   
-         {  
-           // Should raise an exception:  
-           double result = rooter.SquareRoot(v);  
-  
-           swprintf_s(message, L"No exception for input %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-         catch (std::out_of_range ex)  
-         {  
-           continue; // Correct exception.  
-         }  
-         catch (...)  
-         {  
-           swprintf_s(message, L"Incorrect exception for %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-       }  
-    };  
-  
-    ```  
-  
-2.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
-  
-     Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.  
-  
-     ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
-  
-3.  Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.  
-  
-    1.  Установите точку останова перед функцией `SquareRoot`.  
-  
-    2.  В контекстном меню непройденного теста выберите **Отладить выбранные тесты**.  
-  
-         Когда выполнение прекратится на точке останова, выполните код по шагам.  
-  
-    3.  Добавьте код в файл **RooterLib.cpp**, чтобы перехватить исключение:  
-  
-        ```  
-        #include <stdexcept>  
-        ...  
-        double CRooterLib::SquareRoot(double v)  
+   ```  
+   // Verify that negative inputs throw an exception.  
+    TEST_METHOD(NegativeRangeTest)  
+    {  
+      wchar_t message[200];  
+      CRooterLib rooter;  
+      for (double v = -0.1; v > -3.0; v = v - 0.5)  
+      {  
+        try   
         {  
-            //Validate the input parameter:  
-            if (v < 0.0)   
-            {  
-              throw std::out_of_range("Can't do square roots of negatives");  
-            }  
-        ...  
+          // Should raise an exception:  
+          double result = rooter.SquareRoot(v);  
   
-        ```  
+          swprintf_s(message, L"No exception for input %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+        catch (std::out_of_range ex)  
+        {  
+          continue; // Correct exception.  
+        }  
+        catch (...)  
+        {  
+          swprintf_s(message, L"Incorrect exception for %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+      }  
+   };  
   
-    1.  В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.  
+   ```  
   
- Теперь все тесты проходят успешно.  
+2. В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
- ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+    Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.  
+  
+    ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+  
+3. Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.  
+  
+   1.  Установите точку останова перед функцией `SquareRoot`.  
+  
+   2.  В контекстном меню непройденного теста выберите **Отладить выбранные тесты**.  
+  
+        Когда выполнение прекратится на точке останова, выполните код по шагам.  
+  
+   3.  Добавьте код в файл **RooterLib.cpp**, чтобы перехватить исключение:  
+  
+       ```  
+       #include <stdexcept>  
+       ...  
+       double CRooterLib::SquareRoot(double v)  
+       {  
+           //Validate the input parameter:  
+           if (v < 0.0)   
+           {  
+             throw std::out_of_range("Can't do square roots of negatives");  
+           }  
+       ...  
+  
+       ```  
+  
+   1.  В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.  
+  
+   Теперь все тесты проходят успешно.  
+  
+   ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов  
   

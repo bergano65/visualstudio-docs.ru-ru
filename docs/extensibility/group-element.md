@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813537"
 ---
 # <a name="group-element"></a>Элемент Group
 Определяет группу команды VSPackage.  
@@ -37,7 +37,7 @@ ms.locfileid: "39497112"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
 |id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
@@ -46,14 +46,14 @@ ms.locfileid: "39497112"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Необязательный. Родительский элемент кнопки.|  
 |Комментарий|Дополнительный комментарий.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|  
   

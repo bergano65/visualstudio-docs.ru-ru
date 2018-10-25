@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach | Документы Microsoft
+title: IDebugProgram2::Detach | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f2b007fa110c9ef5c344f488e710e3eaf4d097b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff18f393c609faed6f5aeadbec9903f2d5a5dab5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832541"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-Отсоединяет модуля отладки программы.  
+Отсоединяет модуля отладки из программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Отсоединенные программа продолжает выполнение, но он больше не участвуют в сеансе отладки. Когда отладчик отсоединяется, отправляются событий отладки программы.  
+ Отсоединенные программа продолжает работать, но он больше не является частью сеанса отладки. Как только отладчик отсоединяется, отправляются дальнейшие события отладки программы.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

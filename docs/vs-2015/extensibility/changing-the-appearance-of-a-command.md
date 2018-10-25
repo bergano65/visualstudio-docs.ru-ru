@@ -17,12 +17,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53b4470a3df4a1501145b476991a475bddae6813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834257"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Изменение внешнего вида команды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "49294727"
   
  Чтобы изменить внешний вид команды, выполните одно из следующих действий.  
   
--   Укажите соответствующие флаги в определении команды в файл таблицы команд.  
+- Укажите соответствующие флаги в определении команды в файл таблицы команд.  
   
--   Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.  
+- Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.  
   
--   Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.  
+- Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.  
   
- Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).  
+  Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Для изменения внешнего вида команды меню  
   

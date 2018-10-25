@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Документы Microsoft
+title: CONTEXT_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb634f59a3a7eb3b37e70dd87f48b22a07251d0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ed1b803905f403e68053c157b40ec30dc03fbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840068"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Эта структура описывает контекст памяти или контекст кода.  
@@ -53,16 +53,16 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Участники  
  dwFields  
- Сочетание флагов из он [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которое указывает, какие поля заполняются **.**  
+ Сочетание флагов из он [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисление, указывающее, какие поля заполняются<strong>.</strong>  
   
  bstrModuleUrl  
- Имя модуля, в которой находится контекст.  
+ Имя модуля, где находится контекст.  
   
  bstrFunction  
- Имя функции, в которой находится контекст.  
+ Имя функции, где находится контекст.  
   
  posFunctionOffset  
- Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая определяет смещение строки и столбца, связанный с контекстом кода функции.  
+ Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая определяет смещение строки и столбца функции, связанные с контекст кода.  
   
  bstrAddress  
  Адрес в коде, где находится данный контекст.  
@@ -76,7 +76,7 @@ public struct CONTEXT_INFO {
 ## <a name="remarks"></a>Примечания  
  Эта структура возвращается из вызова [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) метод.  
   
- Обычно эта структура используется поддержки **памяти** окон отладки.  
+ Обычно эта структура используется поддержки **памяти** окно отладки.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -86,7 +86,7 @@ public struct CONTEXT_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

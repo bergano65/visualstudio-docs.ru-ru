@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthProlog | Документы Microsoft
+title: IDiaFrameData::get_lengthProlog | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8033e0f769c0222dc8c3ee90d680ea6f2de279fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843084"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 Возвращает число байтов кода пролога в блоке.  
@@ -37,10 +37,10 @@ HRESULT get_lengthProlog (
  [out] Возвращает число байтов кода пролога.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Код пролога — это последовательность инструкций, который сохраняет регистры, задает состояние ЦП и устанавливает стека для функции.  
+ Кода пролога — это последовательность инструкций, который сохраняет регистры, задает состояние ЦП и устанавливает стека для функции.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

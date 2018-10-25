@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816005"
 ---
 # <a name="solutions-overview"></a>Обзор решений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49292669"
   
  При открытии решения, процесс выполняется.  
   
-1.  Среде считывает решения.  
+1. Среде считывает решения.  
   
-2.  Обнаружив среде `CLSID`, он загружает соответствующий пакет VSPackage.  
+2. Обнаружив среде `CLSID`, он загружает соответствующий пакет VSPackage.  
   
-3.  Если VSPackage загружается, среда вызывает метод `QueryInterface` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> интерфейса для интерфейса, который требует VSPackage.  
+3. Если VSPackage загружается, среда вызывает метод `QueryInterface` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> интерфейса для интерфейса, который требует VSPackage.  
   
-    1.  При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.  
+   1.  При чтении из SLN-файла, среда вызывает `QueryInterface` для `IVsPersistSolutionProps`.  
   
-    2.  При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.  
+   2.  При чтении из файла .suo, среда вызывает `QueryInterface` для `IVsPersistSolutionOpts`.  
   
- Определенные сведения, относящиеся к использованию этих файлов можно найти в [решение (. Файл SLN)](../../extensibility/internals/solution-dot-sln-file.md) и [пользовательских параметров решения (. SUO-) файл](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Определенные сведения, относящиеся к использованию этих файлов можно найти в [решение (. Файл SLN)](../../extensibility/internals/solution-dot-sln-file.md) и [пользовательских параметров решения (. SUO-) файл](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
 >  Если вы хотите создать новую конфигурацию решения, состоящий из двух проектов конфигураций и исключение в третьем из сборки, необходимо использовать пользовательский Интерфейс страницы свойств или автоматизации. Нельзя изменить диспетчер конфигураций построения решения и их свойств напрямую, но можно управлять с помощью диспетчер построения решения `SolutionBuild` от DTE класса в модели автоматизации. Дополнительные сведения о настройке решения, см. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md).  

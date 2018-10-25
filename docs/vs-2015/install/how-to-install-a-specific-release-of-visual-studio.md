@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827601"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Практическое руководство. Установка конкретного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ ms.locfileid: "49289930"
   
 > [!IMPORTANT]
 >  В зависимости от языка, который вы хотите использовать, необходимо заменить "enu" (для английского языка) одним из следующих значений.  
->   
->  -   chs (для китайского языка [упрощенное письмо])  
-> -   cht (для китайского языка [традиционное письмо])  
-> -   csy (для чешского языка)  
-> -   deu (для немецкого языка)  
-> -   esn (для испанского языка)  
-> -   fra (для французского языка)  
-> -   ita (для итальянского языка)  
-> -   jpa (для японского языка)  
-> -   kor (для корейского языка)  
-> -   plk (для польского языка)  
-> -   ptb (для португальского языка)  
-> -   rus (для русского языка)  
-> -   trk (для турецкого языка)  
+> 
+> - chs (для китайского языка [упрощенное письмо])  
+>   -   cht (для китайского языка [традиционное письмо])  
+>   -   csy (для чешского языка)  
+>   -   deu (для немецкого языка)  
+>   -   esn (для испанского языка)  
+>   -   fra (для французского языка)  
+>   -   ita (для итальянского языка)  
+>   -   jpa (для японского языка)  
+>   -   kor (для корейского языка)  
+>   -   plk (для польского языка)  
+>   -   ptb (для португальского языка)  
+>   -   rus (для русского языка)  
+>   -   trk (для турецкого языка)  
   
 ## <a name="see-also"></a>См. также  
  [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)
