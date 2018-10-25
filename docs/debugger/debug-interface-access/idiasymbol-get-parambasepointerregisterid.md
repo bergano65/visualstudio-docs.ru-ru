@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_paramBasePointerRegisterId | Документы Microsoft
+title: IDiaSymbol::get_paramBasePointerRegisterId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f707c94cc0fb22aa3f1a9aa1b9e91fc14a43a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0b74250c453f42b4591bb87ef0a281d74de3b489
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852886"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Извлекает идентификатор регистра, который содержит базовый указатель на параметры. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) равно `SymTagFunction`.  
+Извлекает идентификатор регистр, который содержит базовый указатель на параметры. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_paramBasePointerRegisterId (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает идентификатор регистра, который содержит базовый указатель на параметры.  
+ [out] Возвращает идентификатор регистр, который содержит базовый указатель на параметры.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -49,7 +49,7 @@ HRESULT get_paramBasePointerRegisterId (
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

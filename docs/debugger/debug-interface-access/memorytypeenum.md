@@ -1,5 +1,5 @@
 ---
-title: MemoryTypeEnum | Документы Microsoft
+title: MemoryTypeEnum | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 616bae99a4cb3ffafa4cdf773bce63576ed04e7a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4a8dcf657933cf62f3f2173bb89dadd1366b0cec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822947"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Указывает тип для доступа к памяти.  
+Указывает тип доступа к памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,16 +40,16 @@ enum MemoryTypeEnum {
  Доступ только кода памяти.  
   
  `MemTypeData`  
- Обращается к данным или стек памяти.  
+ Доступ к данных или стек памяти.  
   
  `MemTypeStack`  
- Доступ только стек памяти.  
+ Доступ только стека памяти.  
   
  `MemTypeAny`  
  Обращается к памяти любого типа.  
   
 ## <a name="remarks"></a>Примечания  
- Значения этого перечисления передаются [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) способ ограничить доступ к различным типам памяти.  
+ Значения в этом перечислении передаются [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) способ ограничить доступ к различным типам памяти.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: cvconst.h  

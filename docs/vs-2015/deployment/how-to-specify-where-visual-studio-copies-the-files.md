@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853809"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "49188660"
   
 ### <a name="to-specify-a-publishing-location"></a>Указание расположения публикации  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2. Нажмите кнопку **публикации** вкладки.  
   
-3.  В **расположение публикации** введите расположение публикации с помощью одного из следующих форматов:  
+3. В **расположение публикации** введите расположение публикации с помощью одного из следующих форматов:  
   
-    -   Чтобы опубликовать в общую папку или диск путь к файлу, введите путь, используя UNC-путь (\\\Server\ApplicationName) или путь к файлу (C:\Deploy\ApplicationName).  
+   - Чтобы опубликовать в общую папку или диск путь к файлу, введите путь, используя UNC-путь (\\\Server\ApplicationName) или путь к файлу (C:\Deploy\ApplicationName).  
   
-    -   Для публикации на FTP-сервер введите путь, используя формат ftp://ftp.microsoft.com/ApplicationName.  
+   - Для публикации на FTP-сервер введите путь, используя формат ftp://ftp.microsoft.com/ApplicationName.  
   
      Обратите внимание на то, что должен присутствовать текст в **расположение публикации** поле для просмотра (**...** ) для работы кнопки.  
   

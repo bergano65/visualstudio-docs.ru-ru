@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841426"
 ---
 # <a name="walkthrough-using-msbuild"></a>Пошаговое руководство. Использование MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266699"
   
 MSBuild является платформой сборки для корпорации Майкрософт и Visual Studio. Это практическое руководство содержит вводную информацию о стандартных блоках MSBuild и описывает способы записи и отладки проектов MSBuild, а также управления ими. Здесь рассматриваются следующие вопросы:  
   
--   создание файла проекта и работа с ним;  
+- создание файла проекта и работа с ним;  
   
--   использование свойств сборки;  
+- использование свойств сборки;  
   
--   использование элементов сборки.  
+- использование элементов сборки.  
   
- MSBuild можно запустить в Visual Studio или из командного окна. В этом пошаговом руководстве вы создадите файл проекта MSBuild с помощью Visual Studio. Вы отредактируете файл проекта в Visual Studio и с помощью окна командной строки выполните сборку проекта и просмотрите результаты.  
+  MSBuild можно запустить в Visual Studio или из командного окна. В этом пошаговом руководстве вы создадите файл проекта MSBuild с помощью Visual Studio. Вы отредактируете файл проекта в Visual Studio и с помощью окна командной строки выполните сборку проекта и просмотрите результаты.  
   
 ## <a name="creating-an-msbuild-project"></a>Создание проекта MSBuild  
  Система проектов Visual Studio основана на MSBuild. Это упрощает создание файла проекта с помощью Visual Studio. В этом разделе создается файл проекта Visual C#. Вместо него можно выбрать создание файла проекта Visual Basic. В контексте данного пошагового руководства различия между двумя файлами проекта незначительны.  
@@ -77,20 +77,20 @@ MSBuild является платформой сборки для корпора
   
  Создание приложения выполняется с помощью элементов [Целевой объект](../msbuild/target-element-msbuild.md) и [Задача](../msbuild/task-element-msbuild.md).  
   
--   Задача — это наименьшая единица работы или, другими словами, атом сборки. Задачи являются независимыми исполняемыми компонентами, которые могут иметь входные и выходные данные. Сейчас в проекте отсутствуют определенные задачи или задачи, на которые существуют ссылки. Процедура добавления задач в файл проекта описывается в следующих разделах. Дополнительные сведения см. в статье о [задачах](../msbuild/msbuild-tasks.md).  
+- Задача — это наименьшая единица работы или, другими словами, атом сборки. Задачи являются независимыми исполняемыми компонентами, которые могут иметь входные и выходные данные. Сейчас в проекте отсутствуют определенные задачи или задачи, на которые существуют ссылки. Процедура добавления задач в файл проекта описывается в следующих разделах. Дополнительные сведения см. в статье о [задачах](../msbuild/msbuild-tasks.md).  
   
--   Целевой объект представляет собой именованную последовательность задач. В конце файла проекта существует два целевых объекта, которые в настоящее время заключены в комментарии HTML: BeforeBuild и AfterBuild.  
+- Целевой объект представляет собой именованную последовательность задач. В конце файла проекта существует два целевых объекта, которые в настоящее время заключены в комментарии HTML: BeforeBuild и AfterBuild.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     Дополнительные сведения см. в статье о [целевых объектах](../msbuild/msbuild-targets.md).  
+   Дополнительные сведения см. в статье о [целевых объектах](../msbuild/msbuild-targets.md).  
   
- Узел "Проект" имеет необязательный атрибут DefaultTargets, выбирающий целевой объект по умолчанию для сборки, в этом случае — Build.  
+  Узел "Проект" имеет необязательный атрибут DefaultTargets, выбирающий целевой объект по умолчанию для сборки, в этом случае — Build.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild является платформой сборки для корпора
   
 #### <a name="to-add-a-target-and-a-task"></a>Добавление целевого объекта и задачи  
   
-1.  Добавьте следующие строки в файл проекта сразу после оператора Import:  
+1. Добавьте следующие строки в файл проекта сразу после оператора Import:  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     Будет создан целевой объект с именем HelloWorld. Обратите внимание, что во время редактирования файла проекта доступна поддержка Intellisense.  
+    Будет создан целевой объект с именем HelloWorld. Обратите внимание, что во время редактирования файла проекта доступна поддержка Intellisense.  
   
-2.  Добавьте строки в целевой объект HelloWorld, чтобы в результате раздел выглядел следующим образом:  
+2. Добавьте строки в целевой объект HelloWorld, чтобы в результате раздел выглядел следующим образом:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  Сохраните файл проекта.  
+3. Сохраните файл проекта.  
   
- Задача Message является одной из многих, входящих в комплект поставки MSBuild. Полный список доступных задач и сведения об их использовании см. в статье [Task Reference](../msbuild/msbuild-task-reference.md) (Справочные сведения о задачах).  
+   Задача Message является одной из многих, входящих в комплект поставки MSBuild. Полный список доступных задач и сведения об их использовании см. в статье [Task Reference](../msbuild/msbuild-task-reference.md) (Справочные сведения о задачах).  
   
- Задача Message принимает строковое значение атрибута Text в качестве входных данных и отображает его в устройстве вывода. Целевой объект HelloWorld выполняет задачу Message дважды: сначала для отображения Hello, а затем для отображения World.  
+   Задача Message принимает строковое значение атрибута Text в качестве входных данных и отображает его в устройстве вывода. Целевой объект HelloWorld выполняет задачу Message дважды: сначала для отображения Hello, а затем для отображения World.  
   
 ## <a name="building-the-target"></a>Создание целевого объекта  
  Запустите MSBuild из **командной строки Visual Studio**, чтобы создать целевой объект HelloWorld, определенный выше. Используйте параметр /target или /t для выбора целевого объекта.  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Задание значения свойства из командной строки  
   
-1.  В **командном окне** введите и выполните следующую строку:  
+1. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  Проанализируйте результат. Вы должны увидеть следующую строку:  
+2. Проанализируйте результат. Вы должны увидеть следующую строку:  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild создает свойство Configuration и присваивает ему значение Release.  
+   MSBuild создает свойство Configuration и присваивает ему значение Release.  
   
 ## <a name="special-characters"></a>Специальные символы  
  Некоторые символы имеют особое значение в файлах проекта MSBuild. К ним относятся точка с запятой (;) и звездочка (*). Чтобы использовать эти специальные символы в качестве литералов в файле проекта, их необходимо задать с помощью синтаксиса % xx, где xx представляет шестнадцатеричное значение ASCII символа.  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>Использование специальных символов в задаче Message  
   
-1.  В редакторе кода замените обе задачи Message следующей строкой:  
+1. В редакторе кода замените обе задачи Message следующей строкой:  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  Сохраните файл проекта.  
+2. Сохраните файл проекта.  
   
-3.  В **командном окне** введите и выполните следующую строку:  
+3. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Проанализируйте результат. Вы должны увидеть следующую строку:  
+4. Проанализируйте результат. Вы должны увидеть следующую строку:  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- Дополнительные сведения см. в статье [MSBuild Special Characters](../msbuild/msbuild-special-characters.md) (Специальные символы MSBuild).  
+   Дополнительные сведения см. в статье [MSBuild Special Characters](../msbuild/msbuild-special-characters.md) (Специальные символы MSBuild).  
   
 ## <a name="build-items"></a>Элементы сборки  
  Элемент — это часть данных, обычно имя файла, которая используется в качестве входных данных для системы сборки. Например, коллекцию элементов, представляющую исходные файлы, можно передать в задачу Compile, чтобы скомпилировать их в сборку.  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>Анализ значений типа элемента  
   
-1.  В редакторе кода замените целевую задачу HelloWorld следующим кодом:  
+1. В редакторе кода замените целевую задачу HelloWorld следующим кодом:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  Сохраните файл проекта.  
+2. Сохраните файл проекта.  
   
-3.  В **командном окне** введите и выполните следующую строку:  
+3. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Проанализируйте результат. Вы должны увидеть следующую строку:  
+4. Проанализируйте результат. Вы должны увидеть следующую строку:  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- По умолчанию значения типа элемента разделены точкой с запятой.  
+   По умолчанию значения типа элемента разделены точкой с запятой.  
   
- Чтобы изменить разделитель типа элемента, используйте следующий синтаксис, где ItemType — это тип элемента, а Separator — это строка из одного или нескольких разделительных символов:  
+   Чтобы изменить разделитель типа элемента, используйте следующий синтаксис, где ItemType — это тип элемента, а Separator — это строка из одного или нескольких разделительных символов:  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>Анализ метаданных элементов  
   
-1.  В редакторе кода замените задачу Message следующей строкой:  
+1. В редакторе кода замените задачу Message следующей строкой:  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  Сохраните файл проекта.  
+2. Сохраните файл проекта.  
   
-3.  В **командном окне** введите и выполните следующую строку:  
+3. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Проанализируйте результат. Должны отобразиться следующие строки:  
+4. Проанализируйте результат. Должны отобразиться следующие строки:  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- Обратите внимание, что фраза Compile.DependentUpon появляется несколько раз. Использование метаданных с таким синтаксисом в целевом объекте приводит к пакетной обработке. Пакетная обработка означает, что задачи в целевом объекте выполняются один раз для каждого уникального значения метаданных. Это является эквивалентом скрипта MSBuild общей конструкции программирования for loop. Дополнительные сведения см. в статье [Пакетная обработка](../msbuild/msbuild-batching.md).  
+   Обратите внимание, что фраза Compile.DependentUpon появляется несколько раз. Использование метаданных с таким синтаксисом в целевом объекте приводит к пакетной обработке. Пакетная обработка означает, что задачи в целевом объекте выполняются один раз для каждого уникального значения метаданных. Это является эквивалентом скрипта MSBuild общей конструкции программирования for loop. Дополнительные сведения см. в статье [Пакетная обработка](../msbuild/msbuild-batching.md).  
   
 ### <a name="well-known-metadata"></a>Стандартные метаданные  
  Всякий раз, когда элемент добавляется в список элементов, ему назначаются некоторые стандартные метаданные. Например %(Filename) возвращает имя файла любого элемента. Полный список стандартных метаданных см. в статье [Well-known Item Metadata](../msbuild/msbuild-well-known-item-metadata.md) (Стандартные метаданные элементов).  
   
 ##### <a name="to-examine-well-known-metadata"></a>Анализ стандартных метаданных  
   
-1.  В редакторе кода замените задачу Message следующей строкой:  
+1. В редакторе кода замените задачу Message следующей строкой:  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  Сохраните файл проекта.  
+2. Сохраните файл проекта.  
   
-3.  В **командном окне** введите и выполните следующую строку:  
+3. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Проанализируйте результат. Должны отобразиться следующие строки:  
+4. Проанализируйте результат. Должны отобразиться следующие строки:  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- Сравнивая два приведенных выше примера, можно увидеть, что, хотя не у каждого элемента в типе элемента Compile имеются метаданные DependentUpon, у всех элементов есть стандартные метаданные Filename.  
+   Сравнивая два приведенных выше примера, можно увидеть, что, хотя не у каждого элемента в типе элемента Compile имеются метаданные DependentUpon, у всех элементов есть стандартные метаданные Filename.  
   
 ### <a name="metadata-transformations"></a>Преобразования метаданных  
  Списки элементов могут быть преобразованы в новые списки элементов. Чтобы преобразовать список элементов, используйте следующий синтаксис, где ItemType — это имя типа элементов, а MetadataName — имя метаданных:  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>Преобразование элементов с помощью метаданных  
   
-1.  В редакторе кода замените задачу Message следующей строкой:  
+1. В редакторе кода замените задачу Message следующей строкой:  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  Сохраните файл проекта.  
+2. Сохраните файл проекта.  
   
-3.  В **командном окне** введите и выполните следующую строку:  
+3. В **командном окне** введите и выполните следующую строку:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Проанализируйте результат. Вы должны увидеть следующую строку:  
+4. Проанализируйте результат. Вы должны увидеть следующую строку:  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- Обратите внимание, что выраженные в этом синтаксисе метаданные не приводят к пакетной обработке.  
+   Обратите внимание, что выраженные в этом синтаксисе метаданные не приводят к пакетной обработке.  
   
 ## <a name="whats-next"></a>Что дальше?  
  Сведения о пошаговом создании файла простого проекта см. в статье [Walkthrough: Creating an MSBuild Project File from Scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) (Пошаговое руководство. Создание файла проекта MSBuild с нуля).  

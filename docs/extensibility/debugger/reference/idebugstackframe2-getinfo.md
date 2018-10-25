@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Документы Microsoft
+title: IDebugStackFrame2::GetInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b291af7f8f50d672655a098e22ef938d99e0daed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31c63db74410e6a742b5076a8ddda25b562f86f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853900"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Возвращает описание кадра стека.  
@@ -48,13 +48,13 @@ int GetInfo (
  [in] Сочетание флагов из [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, указывающее, какие поля `pFrameInfo` параметра должны быть заполнены.  
   
  `nRadix`  
- [in] Основание системы счисления, используемое в любой числовой сведения о форматировании.  
+ [in] Основание системы счисления для использования в любой числовой сведения о форматировании.  
   
  `pFrameInfo`  
- [out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуру, которая содержит описание кадра стека.  
+ [out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры, который заполняется описание кадра стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

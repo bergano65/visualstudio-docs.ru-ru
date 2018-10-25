@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812764"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Практическое: Добавление проверки в классы сущностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ ms.locfileid: "49286407"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Для проверки данных при изменении значений столбца  
   
-1.  Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
+1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
   
-2.  В конструкторе O/R, щелкните правой кнопкой мыши класс, для которого вы хотите добавить проверку, а затем нажмите кнопку **Просмотр кода**.  
+2. В конструкторе O/R, щелкните правой кнопкой мыши класс, для которого вы хотите добавить проверку, а затем нажмите кнопку **Просмотр кода**.  
   
-     Открывается Редактор кода с разделяемым классом для выбранного класса сущностей.  
+    Открывается Редактор кода с разделяемым классом для выбранного класса сущностей.  
   
-3.  Поместите курсор в разделяемый класс.  
+3. Поместите курсор в разделяемый класс.  
   
-4.  Для проектов Visual Basic:  
+4. Для проектов Visual Basic:  
   
-    1.  Разверните **имя метода** списка.  
+   1. Разверните **имя метода** списка.  
   
-    2.  Найдите **на**_COLUMNNAME_**Changing** метод для столбца, который вы хотите добавить проверку.  
+   2. Найдите **на**_COLUMNNAME_**Changing** метод для столбца, который вы хотите добавить проверку.  
   
-    3.  `On` *COLUMNNAME* `Changing` метод добавляется в разделяемый класс.  
+   3. `On` *COLUMNNAME* `Changing` метод добавляется в разделяемый класс.  
   
-    4.  Добавьте следующий код, чтобы сначала убедиться, что значение было введено, и потом, чтобы гарантировать, что введенное значение для столбца приемлемо для приложения: Аргумент `value` содержит предложенное значение, так что добавьте логику, чтобы подтвердить, что это - допустимое значение:  
+   4. Добавьте следующий код, чтобы сначала убедиться, что значение было введено, и потом, чтобы гарантировать, что введенное значение для столбца приемлемо для приложения: Аргумент `value` содержит предложенное значение, так что добавьте логику, чтобы подтвердить, что это - допустимое значение:  
   
-        ```vb  
-        If value.HasValue Then  
-            ' Add code to ensure that the value is acceptable.  
-            ' If value < 1 Then  
-            '    Throw New Exception("Invalid data!")  
-            ' End If  
-        End If  
-        ```  
+      ```vb  
+      If value.HasValue Then  
+          ' Add code to ensure that the value is acceptable.  
+          ' If value < 1 Then  
+          '    Throw New Exception("Invalid data!")  
+          ' End If  
+      End If  
+      ```  
   
-     Для проектов C#:  
+      Для проектов C#:  
   
-    1.  Поскольку проекты C# автоматически не генерируют обработчики событий, то можно использовать IntelliSense для создания изменяющие столбец разделяемые методы.  
+   5. Поскольку проекты C# автоматически не генерируют обработчики событий, то можно использовать IntelliSense для создания изменяющие столбец разделяемые методы.  
   
-         Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов. Щелкните изменяющий метод для столбца, для которого вы хотите добавить проверку. Следующий код напоминает код, который генерируется, когда выбирается изменяющий столбец разделяемый метод:  
+       Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов. Щелкните изменяющий метод для столбца, для которого вы хотите добавить проверку. Следующий код напоминает код, который генерируется, когда выбирается изменяющий столбец разделяемый метод:  
   
-        ```csharp  
-        partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
-            {  
-               throw new System.NotImplementedException();  
-            }  
+      ```csharp  
+      partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
+          {  
+             throw new System.NotImplementedException();  
+          }  
   
-        ```  
+      ```  
   
 ## <a name="adding-validation-for-updates-to-an-entity-class"></a>Добавление проверки для обновлений в класс сущностей.  
  В дополнение к проверке значений во время изменений можно проверить правильность данных, когда осуществляется попытка обновить завершенный класс сущностей. Проверка во время предпринятого обновления позволяет сравнить значения в нескольких столбцах, если бизнес- правила требуют этого. В следующей процедуре показано, как осуществлять проверку, когда осуществляется попытка обновить завершенный класс сущностей.  
@@ -86,47 +86,47 @@ ms.locfileid: "49286407"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Для добавления проверки во время обновления в классе сущностей  
   
-1.  Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
+1. Откройте или создайте новый файл LINQ to SQL Classes (**.dbml** файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **.dbml** файл **обозревателе решений**.)  
   
-2.  Щелкните правой кнопкой мыши пустую область в конструкторе O/R и нажмите кнопку **Просмотр кода**.  
+2. Щелкните правой кнопкой мыши пустую область в конструкторе O/R и нажмите кнопку **Просмотр кода**.  
   
-     Открывается Редактор кода с разделяемым классом для `DataContext`.  
+    Открывается Редактор кода с разделяемым классом для `DataContext`.  
   
-3.  Поместите курсор в разделяемый класс для `DataContext`.  
+3. Поместите курсор в разделяемый класс для `DataContext`.  
   
-4.  Для проектов Visual Basic:  
+4. Для проектов Visual Basic:  
   
-    1.  Разверните **имя метода** списка.  
+   1. Разверните **имя метода** списка.  
   
-    2.  Нажмите кнопку **обновление**_ENTITYCLASSNAME_.  
+   2. Нажмите кнопку **обновление**_ENTITYCLASSNAME_.  
   
-    3.  `Update` *ENTITYCLASSNAME* метод добавляется в разделяемый класс.  
+   3. `Update` *ENTITYCLASSNAME* метод добавляется в разделяемый класс.  
   
-    4.  Обратитесь к отдельным значениям в столбце, используя аргумент `instance`, как показано в следующем коде:  
+   4. Обратитесь к отдельным значениям в столбце, используя аргумент `instance`, как показано в следующем коде:  
   
-        ```vb  
-        If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
-            Dim ErrorMessage As String = "Invalid data!"  
-            Throw New Exception(ErrorMessage)  
-        End If  
-        ```  
+      ```vb  
+      If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
+          Dim ErrorMessage As String = "Invalid data!"  
+          Throw New Exception(ErrorMessage)  
+      End If  
+      ```  
   
-     Для проектов C#:  
+      Для проектов C#:  
   
-    1.  Поскольку проекты C# автоматически не генерируют обработчики событий, можно использовать IntelliSense для создания разделяемого `Update` *CLASSNAME* метод.  
+   5. Поскольку проекты C# автоматически не генерируют обработчики событий, можно использовать IntelliSense для создания разделяемого `Update` *CLASSNAME* метод.  
   
-    2.  Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов. Щелкните метод обновления для класса, для которого вы хотите добавить проверку. Следующий код напоминает код, создаваемый при выборе `Update` *CLASSNAME* разделяемый метод:  
+   6. Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов. Щелкните метод обновления для класса, для которого вы хотите добавить проверку. Следующий код напоминает код, создаваемый при выборе `Update` *CLASSNAME* разделяемый метод:  
   
-        ```csharp  
-        partial void UpdateCLASSNAME(CLASSNAME instance)  
-        {  
-            if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
-            {  
-                string ErrorMessage = "Invalid data!";  
-                throw new System.Exception(ErrorMessage);  
-            }  
-        }  
-        ```  
+      ```csharp  
+      partial void UpdateCLASSNAME(CLASSNAME instance)  
+      {  
+          if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
+          {  
+              string ErrorMessage = "Invalid data!";  
+              throw new System.Exception(ErrorMessage);  
+          }  
+      }  
+      ```  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

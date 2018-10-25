@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::symbolForVA | Документы Microsoft
+title: IDiaStackWalkHelper::symbolForVA | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70dac639f18f934bb997cc4979bdbe6a7d8c4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9af63460d3b5c082f52d3dbd9725fbfeef9c24f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863923"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-Возвращает символ, который содержит указанный виртуальный адрес.  
+Получает символ, который содержит указанный виртуальный адрес.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT symbolForVA(
   
 #### <a name="parameters"></a>Параметры  
  `va`  
- [in] Виртуальный адрес, содержащийся в запрошенной символа. Символ должен быть `SymTagFunctionType` (значение из [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) перечисления).  
+ [in] Виртуальный адрес, содержащийся в запрошенный символа. Символ должен быть `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).  
   
  `ppSymbol`  
  [out] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий символ по указанному адресу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

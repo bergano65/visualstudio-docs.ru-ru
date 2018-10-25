@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Документы Microsoft
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e52c074b7243162aa80bae67923b0d61daae564
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 504fa6855ad8b1fb38428e6e7ec7b3ac9721f644
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864261"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Определяет, удаляется, функция по адресу указанного отладки.  
+Определяет, что функция по адресу указанного отладки удаляется.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса. Этот адрес должен быть METHOD_ADDRESS.  
+ [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс. Этот адрес должен быть METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- При удалении функции возвращает `S_OK`. Если функция существует, возвращает `S_FALSE`.  
+ Если функция удаляется, возвращает `S_OK`. Если функция существует, возвращает `S_FALSE`.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_sealed | Документы Microsoft
+title: IDiaSymbol::get_sealed | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841810"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Возвращает флаг, указывающий, запечатан ли класс или метод.  
+Получает флаг, указывающий, запечатан ли класс или метод.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,23 +34,23 @@ HRESULT get_sealed(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если класс или метод является запечатанным; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если класс или метод запечатан; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Запечатанный класс не может использоваться в качестве базового класса. Запечатанный метод не может быть overidden.  
+ Запечатанный класс не может использоваться в качестве базового класса. Запечатанный метод не может быть переопределенная.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

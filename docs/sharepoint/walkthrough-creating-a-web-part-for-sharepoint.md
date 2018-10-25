@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872412"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство: Создание веб-части для SharePoint
 
@@ -94,38 +94,38 @@ ms.locfileid: "44281277"
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Добавьте следующий код в класс `WebPart1`. Этот код объявляет следующие поля:
+3. Добавьте следующий код в класс `WebPart1` . Этот код объявляет следующие поля:
 
-    - Сетка данных для отображения сотрудников в веб-части.
+   - Сетка данных для отображения сотрудников в веб-части.
 
-    - Текст, отображаемый в элементе управления, который используется для фильтрации сетки данных.
+   - Текст, отображаемый в элементе управления, который используется для фильтрации сетки данных.
 
-    - Метка, которая отображает сообщение об ошибке, если сетка данных не удалось отобразить данные.
+   - Метка, которая отображает сообщение об ошибке, если сетка данных не удалось отобразить данные.
 
-    - Строка, содержащая путь к файлу данных сотрудников.
+   - Строка, содержащая путь к файлу данных сотрудников.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Добавьте следующий код в класс `WebPart1`. Этот код добавляет пользовательское свойство с именем `DataFilePath` веб-части. Пользовательское свойство является свойством, которое можно задать в SharePoint для пользователя. Это свойство возвращает и задает расположение файла данных XML, который используется для заполнения сетки данных.
+4. Добавьте следующий код в класс `WebPart1` . Этот код добавляет пользовательское свойство с именем `DataFilePath` веб-части. Пользовательское свойство является свойством, которое можно задать в SharePoint для пользователя. Это свойство возвращает и задает расположение файла данных XML, который используется для заполнения сетки данных.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
 5. Замените метод `CreateChildControls` следующим кодом. Этот код выполняет следующие задачи:
 
-    - Добавляет сетки данных и метки, объявленного на предыдущем шаге.
+   - Добавляет сетки данных и метки, объявленного на предыдущем шаге.
 
-    - Привязывает сетку данных в XML-файл, содержащий данные о сотрудниках.
+   - Привязывает сетку данных в XML-файл, содержащий данные о сотрудниках.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Добавьте следующий метод в класс `WebPart1`. Этот код выполняет следующие задачи:
+6. Добавьте следующий метод в класс `WebPart1` . Этот код выполняет следующие задачи:
 
-    - Создает команду, которая отображается в меню команд веб-части, готовый для просмотра веб-части.
+   - Создает команду, которая отображается в меню команд веб-части, готовый для просмотра веб-части.
 
-    - Обрабатывает событие, возникающее при выборе пользователем команды в меню команд. Этот код фильтрует список сотрудников, который отображается в сетке данных.
+   - Обрабатывает событие, возникающее при выборе пользователем команды в меню команд. Этот код фильтрует список сотрудников, который отображается в сетке данных.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

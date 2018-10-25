@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Документы Microsoft
+title: IDebugPointerObject::Dereference | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc287887baf2530786b03b591d6c03592055e55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b173394aba18c47a18a7a683db0f35d474bb4eeb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833854"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Возвращает объект, который указывает.  
+Получает объект, на который указывает.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,13 +43,13 @@ int Dereference(
   
 #### <a name="parameters"></a>Параметры  
  `dwIndex`  
- [in] Указывает смещение простой байтов от начала объекта.  
+ [in] Указывает смещение в простых байтах от начала объекта.  
   
  `ppObject`  
  [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект представляет объект, на который указывает, а также смещение, если таковые имеются.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки. Возвращает значение E_FAIL, если этот объект не указывает на другой объект.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки. Возвращает значение E_FAIL, если этот объект не указывает на другой объект.  
   
 ## <a name="remarks"></a>Примечания  
  Объект, на который указывает может быть примитивом или более сложного типа, например класса или структуры.  

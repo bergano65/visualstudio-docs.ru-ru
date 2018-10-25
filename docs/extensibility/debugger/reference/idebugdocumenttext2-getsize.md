@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Документы Microsoft
+title: IDebugDocumentText2::GetSize | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe37c7157f96a905e52fb6656d5ebb8ff6f4971a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c62ca1695de65b005fa839c69cbcc02452f1207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819671"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Получает размер текста в этой позиции в документе.  
@@ -49,12 +49,12 @@ int GetSize(
  [out] Возвращает количество символов текста.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  [C++] Если определенное значение не требуется, передайте значение NULL для параметра.  
   
- [Только в C#] Необходимо указать оба параметра.  
+ [Только для C#] Необходимо указать оба параметра.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
