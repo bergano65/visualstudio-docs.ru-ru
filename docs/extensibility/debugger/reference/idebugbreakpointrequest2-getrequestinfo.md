@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Документы Microsoft
+title: IDebugBreakpointRequest2::GetRequestInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9cfbf39ad6ff0dc889f18276a0aad2e4510434c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864313"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Возвращает сведения о точках останова запроса, описывающее этот запрос точки останова.  
+Получает сведения о запросе точки останова, описывающее этот запрос точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>Параметры  
  `dwFields`  
- [in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которое определяет, какие поля в `pBPRequestInfo` параметр должны заполняться.  
+ [in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющее, какие поля в `pBPRequestInfo` параметр должны заполняться.  
   
  `pBPRequestInfo`  
- [out] Указывает [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры заполнено описание запроса точки останова.  
+ [out] Указывает [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры необходимо заполнить описание запроса точки останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CDebugBreakpointRequest` объекта, который предоставляет [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointRequest` объекта, который предоставляет [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

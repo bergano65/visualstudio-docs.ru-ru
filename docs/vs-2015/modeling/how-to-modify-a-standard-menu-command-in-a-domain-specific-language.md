@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837573"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49302150"
   
  Таким образом, чтобы изменить команду:  
   
-1.  [Найдите команды, вы можете изменить](#what).  
+1. [Найдите команды, вы можете изменить](#what).  
   
-2.  [Создайте частичное описание соответствующего класса наборов команд](#extend).  
+2. [Создайте частичное описание соответствующего класса наборов команд](#extend).  
   
-3.  [Переопределите методы ProcessOnStatus и ProcessOnMenu](#override) для команды.  
+3. [Переопределите методы ProcessOnStatus и ProcessOnMenu](#override) для команды.  
   
- Данная процедура описана в этом разделе.  
+   Данная процедура описана в этом разделе.  
   
 > [!NOTE]
 >  Если вы хотите создать свои собственные команды меню, см. в разделе [как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Написание кода методов  
  В этих методах часто используются следующие фрагменты:  
   
--   `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.  
+- `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.  
   
--   `this.IsDiagramSelected()` - `true` Если пользователь щелкает пустую область схемы.  
+- `this.IsDiagramSelected()` - `true` Если пользователь щелкает пустую область схемы.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` — пользователь не выбрал несколько фигур  
+- `this.IsSingleSelection()` — пользователь не выбрал несколько фигур  
   
--   `this.SingleSelection` -фигуры или схемы, который пользователь щелкнул правой кнопкой мыши  
+- `this.SingleSelection` -фигуры или схемы, который пользователь щелкнул правой кнопкой мыши  
   
--   `shape.ModelElement as MyLanguageElement` -элемент модели, представленный фигурой.  
+- `shape.ModelElement as MyLanguageElement` -элемент модели, представленный фигурой.  
   
- Дополнительные сведения о способах навигации между элементами и о том, как создавать объекты и ссылки, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Дополнительные сведения о способах навигации между элементами и о том, как создавать объекты и ссылки, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.ComponentModel.Design.MenuCommand>   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853263"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > конструктора действий
 
@@ -38,7 +38,7 @@ ms.locfileid: "47857845"
 В следующей таблице показаны <xref:System.Activities.Statements.ExistsInCollection%601> свойства и показывается, как они используются в конструкторе:
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ExistsInCollection%601>. Значение по умолчанию — ExistsInCollection < Int32\>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Да|Элемент для поиска в коллекции\<T >. Этот элемент имеет тип *T*, который имеет тип *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Да|Коллекция, в которой требуется проверить, существует ли элемент. Эта коллекция имеет тип **ICollection < TypeArgument\>.** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|

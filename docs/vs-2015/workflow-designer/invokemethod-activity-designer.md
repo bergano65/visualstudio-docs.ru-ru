@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 27be9bc979ba1f3e86996aaf913502ca80142ebd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863689"
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
 **InvokeMethod** конструктор используется для создания и настройки <xref:System.Activities.Statements.InvokeMethod> действия.  
@@ -51,15 +51,15 @@ ms.locfileid: "49252971"
   
  Алгоритм регистрирования параметров в <xref:System.Activities.Activity.CacheMetadata%2A> отображается в следующем списке:  
   
-1.  Зарегистрируйте аргумент <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>.  
+1. Зарегистрируйте аргумент <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>.  
   
-2.  Зарегистрируйте аргумент <xref:System.Activities.Statements.InvokeMethod.Result%2A>.  
+2. Зарегистрируйте аргумент <xref:System.Activities.Statements.InvokeMethod.Result%2A>.  
   
-3.  Переходите от одного пункта коллекции <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> к другому и зарегистрируйте каждый аргумент.  
+3. Переходите от одного пункта коллекции <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> к другому и зарегистрируйте каждый аргумент.  
   
- Результирующее исключение типа <xref:System.Activities.InvalidWorkflowException> со следующим сообщением: «InvokeMethod»: переменная, аргумент RuntimeArgument или DelegateArgument уже существует с именем «TargetObject». Имена должны быть уникальными в среде.  
+   Результирующее исключение типа <xref:System.Activities.InvalidWorkflowException> со следующим сообщением: «InvokeMethod»: переменная, аргумент RuntimeArgument или DelegateArgument уже существует с именем «TargetObject». Имена должны быть уникальными в среде.  
   
- Это ограничение не применяется к <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> и <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>, поскольку они не являются аргументами рабочего процесса и поэтому не регистрируются в коллекции <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> действия <xref:System.Activities.Statements.InvokeMethod> в методе <xref:System.Activities.Activity.CacheMetadata%2A>.  
+   Это ограничение не применяется к <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> и <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>, поскольку они не являются аргументами рабочего процесса и поэтому не регистрируются в коллекции <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> действия <xref:System.Activities.Statements.InvokeMethod> в методе <xref:System.Activities.Activity.CacheMetadata%2A>.  
   
 ## <a name="see-also"></a>См. также  
  [Примитивы](../workflow-designer/primitives-activity-designers.md)   

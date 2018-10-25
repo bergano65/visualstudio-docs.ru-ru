@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826900"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
   XML-данные можно сохранить в следующих типах документов, создав пользовательскую XML-часть в надстройке VSTO:  
   
--   книга Microsoft Office Excel;  
+- книга Microsoft Office Excel;  
   
--   документ Microsoft Office Word;  
+- документ Microsoft Office Word;  
   
--   презентация Microsoft Office PowerPoint.  
+- презентация Microsoft Office PowerPoint.  
   
- Дополнительные сведения см. в разделе [Общие сведения о частях XML настраиваемого](../vsto/custom-xml-parts-overview.md).  
+  Дополнительные сведения см. в разделе [Общие сведения о частях XML настраиваемого](../vsto/custom-xml-parts-overview.md).  
   
- **Область применения.** Сведения этого раздела относятся к проектам уровня приложения для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Область применения.** Сведения этого раздела относятся к проектам уровня приложения для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Добавление пользовательской XML-части в книгу Excel  
   

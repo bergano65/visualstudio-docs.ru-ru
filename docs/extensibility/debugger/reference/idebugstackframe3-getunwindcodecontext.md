@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Документы Microsoft
+title: IDebugStackFrame3::GetUnwindCodeContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29d4245529e53a9313ae18638066979caab7a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad47eb92af6c9ad37bafe293e6c7392613718c30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846451"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Возвращает контекст кода, представляющая расположение, если операция очистки стека произошла.  
+Возвращает контекст кода, представляющая расположение в том случае, если операция развертывания стека произошла.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,10 +41,10 @@ int GetUnwindCodeContext(
   
 #### <a name="parameters"></a>Параметры  
  `ppCodeContext`  
- [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий расположение контекст кода при возникновении очистки стека.  
+ [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий контекст расположения кода в том случае, если произошла очистки стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Несмотря на то, что этот метод может возвращать контекст кода для расположения после очистки стека, он не обязательно означает, что очистки стека может происходить в текущем кадре стека.  

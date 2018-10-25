@@ -17,23 +17,23 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7121395b54716096e562a8fe14bb38103f4bd8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863533"
 ---
 # <a name="saving-data-in-project-files"></a>Сохранение данных в файлах проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Интерфейс обеспечивает доступ значений свойств из **MSBuild** раздел файла проекта. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> может вызываться любым пользователем, каждый раз, когда необходимо взвесить, чтобы загрузить или сохранить связанные данные сборок.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Интерфейс обеспечивает доступ значений свойств из **MSBuild** раздел файла проекта. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> может вызываться любым пользователем, каждый раз, когда необходимо взвесить, чтобы загрузить или сохранить связанные данные сборок.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Используется для хранения без построения взаимосвязанные данные в XML произвольной формы. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> вызываются [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] всякий раз, когда [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] требуется сохранить связанные данные без построения в файле проекта.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Используется для хранения без построения взаимосвязанные данные в XML произвольной формы. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> вызываются [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] всякий раз, когда [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] требуется сохранить связанные данные без построения в файле проекта.  
   
- Дополнительные сведения о том, как для сохранения сборки и связанные данные без построения см. в разделе [сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Дополнительные сведения о том, как для сохранения сборки и связанные данные без построения см. в разделе [сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>Сохранение и извлечение сборки связанных данных  
   

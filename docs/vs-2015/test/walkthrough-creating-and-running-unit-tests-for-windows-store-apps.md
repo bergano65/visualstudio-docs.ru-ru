@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852535"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Пошаговое руководство. Создание и выполнение модульных тестов для приложений для Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio включает поддержку модульного тест�
   
  Visual Studio предоставляет следующие возможности модульного тестирования:  
   
--   [Создание проектов модульных тестов](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Создание проектов модульных тестов](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Правка манифеста для проекта модульного теста](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Правка манифеста для проекта модульного теста](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Создание кода модульного теста](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Создание кода модульного теста](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Запуск модульных тестов](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Запуск модульных тестов](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- В следующих процедурах описаны этапы создания, выполнения и отладки модульных тестов для управляемого приложения Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
+  В следующих процедурах описаны этапы создания, выполнения и отладки модульных тестов для управляемого приложения Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Visual Studio  

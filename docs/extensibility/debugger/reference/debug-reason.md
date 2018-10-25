@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Документы Microsoft
+title: DEBUG_REASON | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47cfd171d23420396c6d7ab5416db32cc05511f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868369"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Указывает, почему был запущен процесс для отладки.  
@@ -50,22 +50,22 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Параметры  
  DEBUG_REASON_ERROR  
- Произошла общая ошибка (используется как условие по умолчанию, если ни один из других причин, по размеру).  
+ Произошла общая ошибка (используется как условие по умолчанию при ни с одним другим причинам, по размеру).  
   
  DEBUG_REASON_USER_LAUNCHED  
  Процесс был запущен по запросу пользователя.  
   
  DEBUG_REASON_USER_ATTACHED  
- Процесс выполнения уже был присоединен к пользователем.  
+ Уже выполняемым процессам был подключен к этим пользователем.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Процесс автоматически присоединяется к, при запуске.  
+ Процесс автоматически присоединяется к, если оно было запущено.  
   
  DEBUG_REASON_CAUSALITY  
- Процесс был запущен из-за *непосредственно в момент* событий отладки (JIT).  
+ Процесс был запущен из-за *Just-In-Time* событие отладки (JIT).  
   
 ## <a name="remarks"></a>Примечания  
- Возвращенные [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.  
+ Возвращаемые [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

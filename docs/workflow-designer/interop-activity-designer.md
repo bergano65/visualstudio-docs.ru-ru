@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849363"
 ---
 # <a name="interop-activity-designer"></a>Конструктор действия Interop
 
@@ -46,7 +46,7 @@ ms.locfileid: "39379342"
 В следующей таблице показаны <xref:System.Activities.Statements.Interop> свойства и описывает, как они используются в конструкторе. Эти свойства можно изменить в таблице свойств или в рабочей области конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **взаимодействия**. Несмотря на то, что отображаемое имя не является обязательной, рекомендуется предоставить один.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|Да|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
 

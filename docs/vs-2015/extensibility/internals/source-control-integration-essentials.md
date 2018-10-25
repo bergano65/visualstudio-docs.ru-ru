@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811019"
 ---
 # <a name="source-control-integration-essentials"></a>Основные элементы интеграции системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232366"
   
  Реализация системы управления версиями, подключаемый модуль с помощью API подключаемого модуля управления источника, выполните следующие действия.  
   
-1.  Создать библиотеку DLL, который реализует функции, указанные в [подключаемых модулей системы управления версиями](../../extensibility/source-control-plug-ins.md).  
+1. Создать библиотеку DLL, который реализует функции, указанные в [подключаемых модулей системы управления версиями](../../extensibility/source-control-plug-ins.md).  
   
-2.  Регистрации библиотеки DLL, сделав соответствующие записи в реестр, как описано в разделе [как: установить подключаемый модуль системы управления источника](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Регистрации библиотеки DLL, сделав соответствующие записи в реестр, как описано в разделе [как: установить подключаемый модуль системы управления источника](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
-3.  Создать вспомогательный объект пользовательского интерфейса и отобразить ее при появлении запроса адаптера пакет системы управления версиями ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] компонент, который обрабатывает функции системы управления версиями через подключаемых модулей системы управления версиями).  
+3. Создать вспомогательный объект пользовательского интерфейса и отобразить ее при появлении запроса адаптера пакет системы управления версиями ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] компонент, который обрабатывает функции системы управления версиями через подключаемых модулей системы управления версиями).  
   
- Дополнительные сведения см. в разделе [Создание подключаемого модуля управления источника](../../extensibility/internals/creating-a-source-control-plug-in.md).  
+   Дополнительные сведения см. в разделе [Создание подключаемого модуля управления источника](../../extensibility/internals/creating-a-source-control-plug-in.md).  
   
 ## <a name="source-control-vspackage"></a>Пакет VSPackage управления версиями  
  Реализацию VSPackage системы управления версиями можно разрабатывать настраиваемый заменой [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] система управления версиями пользовательского интерфейса. Такой подход обеспечивает полный контроль над интеграция системы управления версиями, но он требует предоставления элементов пользовательского интерфейса и реализует интерфейсы управления источника, которые в противном случае будет передаваться в метод подключаемого модуля.  
   
  Для реализации пакета VSPackage системы управления версиями, необходимо сделать следующее:  
   
-1.  Создать и зарегистрировать свои собственные системы управления версиями VSPackage, как описано в разделе [регистрации и выбора](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+1. Создать и зарегистрировать свои собственные системы управления версиями VSPackage, как описано в разделе [регистрации и выбора](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-2.  Замените настраиваемого пользовательского интерфейса системы управления версиями по умолчанию пользовательского интерфейса. См. в разделе [настраиваемый пользовательский интерфейс](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
+2. Замените настраиваемого пользовательского интерфейса системы управления версиями по умолчанию пользовательского интерфейса. См. в разделе [настраиваемый пользовательский интерфейс](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
   
-3.  Укажите глифов для использования и обработки **обозревателе решений** события глифа. См. в разделе [элемент управления глифа](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
+3. Укажите глифов для использования и обработки **обозревателе решений** события глифа. См. в разделе [элемент управления глифа](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
   
-4.  Обрабатывать события изменения запросов и сохранения запроса, как показано в [запроса изменить запрос Сохранить](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
+4. Обрабатывать события изменения запросов и сохранения запроса, как показано в [запроса изменить запрос Сохранить](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
   
- Дополнительные сведения см. в разделе [Создание пакета VSPackage управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+   Дополнительные сведения см. в разделе [Создание пакета VSPackage управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
 ## <a name="see-also"></a>См. также  
  [Обзор](../../extensibility/internals/source-control-integration-overview.md)   

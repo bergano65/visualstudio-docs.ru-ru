@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826522"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.  
@@ -58,94 +58,94 @@ ms.locfileid: "39498984"
 ##  <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?  
  Код надстройки можно запустить одним из двух способов.  
   
--   Запускаемой команды меню (код находится в `IDTCommandTarget.Exec` метод.)  
+- Запускаемой команды меню (код находится в `IDTCommandTarget.Exec` метод.)  
   
--   Автоматически при запуске (код находится в обработчике событий `OnConnection`).  
+- Автоматически при запуске (код находится в обработчике событий `OnConnection`).  
   
- То же самое можно сделать в VSPackage. Вот как добавить код надстройки в метод обратного вызова.  
+  То же самое можно сделать в VSPackage. Вот как добавить код надстройки в метод обратного вызова.  
   
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Внедрение команды меню в VSPackage  
   
-1.  Создайте VSPackage с командой меню. (Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. Создайте VSPackage с командой меню. (Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)  
+2. Откройте файл, содержащий определение VSPackage. (В проекте C#, он имеет  *\<имя проекта > Package.cs*.)  
   
-3.  Добавьте в файл следующие операторы `using`:  
+3. Добавьте в файл следующие операторы `using`:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:  
+4. Найдите метод `MenuItemCallback`. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Добавьте код из метода надстройки `IDTCommandTarget.Exec`. Например, ниже приведен код, который добавляет новую область в **вывода** окно и печатает «Какой-то текст» в новой области.  
+5. Добавьте код из метода надстройки `IDTCommandTarget.Exec`. Например, ниже приведен код, который добавляет новую область в **вывода** окно и печатает «Какой-то текст» в новой области.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  Постройте и запустите этот проект. Нажмите клавишу **F5** или выберите **запустить** на **Отладка** панели инструментов. В экспериментальном экземпляре Visual Studio **средства** меню должна появиться кнопка с именем **мое имя команды**. При нажатии этой кнопки, слова **какой-то текст** должен отображаться в **вывода** область окна. (Может потребоваться открыть **вывода** окна.)  
+6. Постройте и запустите этот проект. Нажмите клавишу **F5** или выберите **запустить** на **Отладка** панели инструментов. В экспериментальном экземпляре Visual Studio **средства** меню должна появиться кнопка с именем **мое имя команды**. При нажатии этой кнопки, слова **какой-то текст** должен отображаться в **вывода** область окна. (Может потребоваться открыть **вывода** окна.)  
   
- Можно также настроить запуск кода при загрузке. Обычно для расширений VSPackage эту возможность не используют. Если при запуске Visual Studio попытаются загрузиться слишком много расширений, время запуска может заметно увеличиться. Лучше настроить автоматическую загрузку расширения VSPackage при выполнении определенных условий (например, при открытии решения).  
+   Можно также настроить запуск кода при загрузке. Обычно для расширений VSPackage эту возможность не используют. Если при запуске Visual Studio попытаются загрузиться слишком много расширений, время запуска может заметно увеличиться. Лучше настроить автоматическую загрузку расширения VSPackage при выполнении определенных условий (например, при открытии решения).  
   
- В следующей процедуре показано, как запустить в расширении VSPackage код надстройки, загружающий ее автоматически при открытии решения.  
+   В следующей процедуре показано, как запустить в расширении VSPackage код надстройки, загружающий ее автоматически при открытии решения.  
   
 ### <a name="to-autoload-a-vspackage"></a>Настройка автоматической загрузки VSPackage  
   
-1.  Создайте проект VSIX с элементом проекта пакета Visual Studio. (Необходимые для этого действия см. в разделе [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Просто добавьте **пакета Visual Studio** элемент проекта вместо.) Назовите проект VSIX **TestAutoload**.  
+1. Создайте проект VSIX с элементом проекта пакета Visual Studio. (Необходимые для этого действия см. в разделе [как начать разработку расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Просто добавьте **пакета Visual Studio** элемент проекта вместо.) Назовите проект VSIX **TestAutoload**.  
   
-2.  Откройте *TestAutoloadPackage.cs*. Найдите строку, где объявляется класс пакета:  
+2. Откройте *TestAutoloadPackage.cs*. Найдите строку, где объявляется класс пакета:  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  Над этой строкой есть набор атрибутов. Добавьте следующий атрибут:  
+3. Над этой строкой есть набор атрибутов. Добавьте следующий атрибут:  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  Установите точку останова в `Initialize()` метод и начать отладку (**F5**).  
+4. Установите точку останова в `Initialize()` метод и начать отладку (**F5**).  
   
-5.  Откройте проект в экспериментальном экземпляре. После этого должен загрузиться проект VSPackage и сработать точка останова.  
+5. Откройте проект в экспериментальном экземпляре. После этого должен загрузиться проект VSPackage и сработать точка останова.  
   
- Можно определить другие контексты загрузки VSPackage, используя для этого поля <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).  
+   Можно определить другие контексты загрузки VSPackage, используя для этого поля <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Как получить объект DTE?  
  Если надстройка, например, не отображает пользовательский интерфейс, команды меню, кнопки панели инструментов или инструменты Windows, можно использовать код как есть, пока не будет получен объект DTE автоматизации из VSPackage. Это делается так.  
   
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>Получение объекта DTE из VSPackage  
   
-1.  В проект VSIX с помощью шаблона элемента пакета Visual Studio, найдите  *\<имя проекта > Package.cs* файл. Это класс, который извлекается из <xref:Microsoft.VisualStudio.Shell.Package> и может помочь при взаимодействии с Visual Studio. В данном случае используйте <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>.  
+1. В проект VSIX с помощью шаблона элемента пакета Visual Studio, найдите  *\<имя проекта > Package.cs* файл. Это класс, который извлекается из <xref:Microsoft.VisualStudio.Shell.Package> и может помочь при взаимодействии с Visual Studio. В данном случае используйте <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>.  
   
-2.  Добавьте следующие операторы `using`:  
+2. Добавьте следующие операторы `using`:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  Найдите метод `Initialize`. Данный метод обрабатывает команду, указанную в Мастере пакетов. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект DTE:  
+3. Найдите метод `Initialize`. Данный метод обрабатывает команду, указанную в Мастере пакетов. Добавьте вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект DTE:  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- После получения объекта автоматизации <xref:EnvDTE.DTE> можно добавить в проект остальную часть кода надстройки. Если вам нужен объект <xref:EnvDTE80.DTE2>, проделайте то же самое.  
+   После получения объекта автоматизации <xref:EnvDTE.DTE> можно добавить в проект остальную часть кода надстройки. Если вам нужен объект <xref:EnvDTE80.DTE2>, проделайте то же самое.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Как применить стиль VSPackage к командам меню и кнопкам панели инструментов в надстройке?  
  Использование расширения VSPackage *.vsct* файла для создания большинства команд меню, панелей инструментов, кнопок панели инструментов и другой пользовательский Интерфейс. **Настраиваемой команды** шаблона элемента проекта дает возможность создать команду на **средства** меню. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  

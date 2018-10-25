@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ed93b4acef31dd3b1be55983525ac8999c539c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869292"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в коде ошибок правописания, грамматические регистр и другие соглашения об именовании рекомендациям по разработке .NET Framework. Можно создать пользовательский словарь XML-файл, чтобы добавить, удалить или изменить условия, сокращений и акронимов встроенный словарь.
@@ -61,17 +61,17 @@ ms.locfileid: "47860060"
 ## <a name="custom-dictionary-elements"></a>Элементы пользовательского словаря
  Поведение словарь анализа кода можно изменить, добавив условия как внутренний текст из следующих элементов в словарь:
 
--   [Словарь и слова/распознан/слов](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [Словарь и слова/распознан/слов](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
--   [Словарь и слова или нераспознанный/слов](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [Словарь и слова или нераспознанный/слов](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
--   [Словарь/слова/устаревшим/выражение [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Словарь/слова/устаревшим/выражение [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
--   [Словарь/слова/составной оператор или выражение [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Словарь/слова/составной оператор или выражение [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
--   [Словарь/слова/DiscreteExceptions/термин](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Словарь/слова/DiscreteExceptions/термин](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
--   [Словарь/акронимов/CasingExceptions/аббревиатура](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Словарь/акронимов/CasingExceptions/аббревиатура](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Словарь и слова/распознан/слов
  Чтобы включить термин в список терминов, которые анализа кода определяет, как правильно написанные, добавьте термин как внутренний текст элемента словаря и слова/распознаны/слов. Условия в элементах словаря и слова/распознаны/слов не учитывается.
@@ -89,7 +89,6 @@ ms.locfileid: "47860060"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Термины в словарь/слова/распознаны узлов применяются для следующих правил анализа кода:
@@ -124,7 +123,6 @@ ms.locfileid: "47860060"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Условия в узле словарь/слова/нераспознано применяются для следующих правил анализа кода:
@@ -148,11 +146,11 @@ ms.locfileid: "47860060"
 
  Чтобы включить предлагаемый альтернативный термин в предупреждении, предоставить этот альтернативный адрес в атрибуте PreferredAlternate элемента термин. Если вы не хотите предложить альтернативный вариант, можно оставить значение атрибута пустым.
 
--   Устаревшие термин в словарь/слова или не рекомендуемые к использованию/термин элемент не является приложением с учетом регистра.
+- Устаревшие термин в словарь/слова или не рекомендуемые к использованию/термин элемент не является приложением с учетом регистра.
 
--   Значение атрибута PreferredAlternate учитывается регистр. Используйте регистре Pascal для составных альтернативных значений.
+- Значение атрибута PreferredAlternate учитывается регистр. Используйте регистре Pascal для составных альтернативных значений.
 
- **Пример**
+  **Пример**
 
 ```
 <Dictionary>
@@ -165,7 +163,6 @@ ms.locfileid: "47860060"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Условия в узле словарь/слова или не рекомендуемые к использованию применяются для следующих правил анализа кода:
@@ -183,11 +180,11 @@ ms.locfileid: "47860060"
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Словарь/слова/составной оператор или выражение [@CompoundAlternate]
  Встроенный словарь определяет некоторые термины, как единый отдельный термин, а не как составной термин. Чтобы включить термин в список терминов, которые анализа кода определяет как составное слово и укажите правильный регистр термина, добавьте термин как внутренний текст элемента словаря/слова/составной оператор или выражение. В атрибуте CompoundAlternate элемента Term укажите отдельные слова, составляющих составной термин с прописной первую букву каждого слова (верхнего регистра). Обратите внимание на то, что на срок, указанный во внутреннем тексте автоматически добавляется в список слов/словарь/DiscreteExceptions.
 
--   Устаревшие термин в словарь/слова или не рекомендуемые к использованию/термин элемент не является приложением с учетом регистра.
+- Устаревшие термин в словарь/слова или не рекомендуемые к использованию/термин элемент не является приложением с учетом регистра.
 
--   Значение атрибута PreferredAlternate учитывается регистр. Используйте регистре Pascal для составных альтернативных значений.
+- Значение атрибута PreferredAlternate учитывается регистр. Используйте регистре Pascal для составных альтернативных значений.
 
- **Пример**
+  **Пример**
 
 ```
 <Dictionary>
@@ -200,7 +197,6 @@ ms.locfileid: "47860060"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Условия в узле словарь/слова/Compound применяются для следующих правил анализа кода:
@@ -229,7 +225,6 @@ ms.locfileid: "47860060"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Условия в узле словарь/слова/DiscreteExceptions применяются для следующих правил анализа кода:
@@ -254,7 +249,6 @@ ms.locfileid: "47860060"
       </Acronyms>
       ...
 </Dictionary>
-
 ```
 
  Условия в узле словарь/акронимов/CasingExceptions применяются для следующих правил анализа кода:

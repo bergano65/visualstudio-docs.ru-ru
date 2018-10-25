@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext | Документы Microsoft
+title: IDebugCodeContext2::GetDocumentContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 833ba9131a8c6b1449833bbeca52d0f1d7b53649
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd0fa6dd8d587ade2ca06c3f39f65fb3a5fd295d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822193"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Возвращает контекст документа, соответствующий контексту этого кода. Контекст документа представляет позицию в исходный файл, соответствующий исходный код, созданный в этой инструкции.  
+Получает контекст документа, который соответствует этот контекст кода. Контекст документа представляет позицию в исходном файле, соответствующий исходный код, созданный этой инструкции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetDocumentContext(
  [out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объект, соответствующий контекст кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Как правило контекст документа может рассматриваться как положение в файле исходного кода при положения в потоке выполнения инструкции кода контекст кода.  
+ Как правило контекст документа может рассматриваться как позиция в исходном файле хотя контекст кода — это положение инструкции кода в поток выполнения.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

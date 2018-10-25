@@ -15,31 +15,31 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831384"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;  
   
--   Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
+- Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
   
- См. соответствующие разделы ниже дополнительные сведения о реализации этих методов и свойств.  
+  См. соответствующие разделы ниже дополнительные сведения о реализации этих методов и свойств.  
   
- Для поддержки дополнительных функций, языковой службы может потребоваться создать класс, производный от одного из классов службы языка MPF; Например, для поддержки дополнительных меню команд, необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить некоторые методы обработки команды (см. в разделе <xref:Microsoft.VisualStudio.Package.ViewFilter> подробные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService> Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов и переопределить метод соответствующие создания экземпляров класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класс для возврата экземпляра собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. См. Дополнительные сведения можно найти в разделе «Создание экземпляров специальные классы».  
+  Для поддержки дополнительных функций, языковой службы может потребоваться создать класс, производный от одного из классов службы языка MPF; Например, для поддержки дополнительных меню команд, необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить некоторые методы обработки команды (см. в разделе <xref:Microsoft.VisualStudio.Package.ViewFilter> подробные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService> Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов и переопределить метод соответствующие создания экземпляров класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класс для возврата экземпляра собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. См. Дополнительные сведения можно найти в разделе «Создание экземпляров специальные классы».  
   
- Языковой службы также может предоставлять свои собственные значки, которые используются во многих местах. К примеру при отображении списка завершения IntelliSense, каждый элемент в списке может иметь значок, связанный с ним, элемент будет помечен как метода, класса, пространства имен, свойств, или все, что необходимы для вашего языка. Эти значки используются во всех списках IntelliSense, **панели навигации**, а затем в **список ошибок** окно задач. См. в разделе «Язык обслуживания образов» ниже сведения.  
+  Языковой службы также может предоставлять свои собственные значки, которые используются во многих местах. К примеру при отображении списка завершения IntelliSense, каждый элемент в списке может иметь значок, связанный с ним, элемент будет помечен как метода, класса, пространства имен, свойств, или все, что необходимы для вашего языка. Эти значки используются во всех списках IntelliSense, **панели навигации**, а затем в **список ошибок** окно задач. См. в разделе «Язык обслуживания образов» ниже сведения.  
   
 ## <a name="getlanguagepreferences-method"></a>Метод GetLanguagePreferences  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Метод всегда возвращает тот же экземпляр <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Можно использовать базовый <xref:Microsoft.VisualStudio.Package.LanguagePreferences> , если нет необходимости любые дополнительные настройки для языковой службы. Классы MPF языковой службы предполагают наличие по крайней мере базы <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  

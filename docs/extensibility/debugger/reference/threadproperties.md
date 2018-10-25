@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Документы Microsoft
+title: THREADPROPERTIES | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4079c688358f3e7deedd28b5eb05e556192bfe6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14db7869717a2edf1ac64be744ab1f6058455c1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845320"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-Описание свойств потока.  
+Описывает свойства потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,7 +53,7 @@ public struct THREADPROPERTIES {
   
 ## <a name="members"></a>Участники  
  dwFields  
- Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуры являются допустимыми.  
+ Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.  
   
  dwThreadId  
  Идентификатор потока.  
@@ -65,7 +65,7 @@ public struct THREADPROPERTIES {
  Значение из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.  
   
  bstrPriority  
- Строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Критические времени».  
+ Строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».  
   
  bstName  
  Имя потока.  
@@ -74,7 +74,7 @@ public struct THREADPROPERTIES {
  Расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура заполняется с помощью вызова [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод. Таким образом возвращенные сведения обычно используется в заполнении **потоков** окна.  
+ Эта структура заполняется с помощью вызова [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод. Сведения, поэтому возвращаемые обычно используется при заполнении **потоков** окна.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -84,7 +84,7 @@ public struct THREADPROPERTIES {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)

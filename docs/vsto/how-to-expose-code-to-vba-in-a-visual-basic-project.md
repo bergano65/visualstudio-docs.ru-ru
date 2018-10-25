@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839652"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Практическое: предоставлять к коду VBA в проекте Visual Basic
   Можно предоставить код в [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] проекта Visual Basic для приложений (VBA), если требуется два вида код для взаимодействия друг с другом.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256101"
   
  Этот процесс отличается от кода в класс ведущего элемента для кода в других классах:  
   
--   [Представить код в класс ведущего элемента](#HostItemCode)  
+- [Представить код в класс ведущего элемента](#HostItemCode)  
   
--   [Предоставить доступ к коду, который не находится в класс ведущего элемента](#NonHostItem)  
+- [Предоставить доступ к коду, который не находится в класс ведущего элемента](#NonHostItem)  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как вызов VSTO I: кода из VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как вызов VSTO I: кода из VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Представить код в класс ведущего элемента  
  Чтобы включить код VBA мог вызывать код Visual Basic в класс ведущего элемента, задайте **EnableVbaCallers** свойство ведущего элемента значение **True**.  

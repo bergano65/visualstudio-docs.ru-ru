@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 39550665c804aa971ba88ee76707bdd150f74ab0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811793"
 ---
 # <a name="sccbackgroundget-function"></a>Функция SccBackgroundGet
 Эта функция извлекает из системы управления версиями каждого из указанных файлов без участия пользователя.  
@@ -59,7 +59,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Операция успешно завершена.|  
 |SCC_E_BACKGROUNDGETINPROGRESS|Получение фона уже выполняется (подключаемый модуль системы управления версиями вы получите это только в том случае, если он не поддерживает одновременное пакетных операций).|  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851183"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Начало работы с расширением отладчика
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Предоставляет информацию, необходимую для создания и настройки компонентов отладчик, используемый для отладки программы изнутри [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды.  
@@ -31,11 +31,11 @@ ms.locfileid: "39231292"
   
  Чтобы максимально эффективно использовать [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], необходимо ознакомиться со следующими элементами:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE)  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE)  
   
--   Языка программирования C++  
+- Языка программирования C++  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Содержание раздела  
  [Схема для расширения отладчика](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

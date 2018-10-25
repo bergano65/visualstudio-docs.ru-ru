@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842070"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Использование Microsoft Monitoring Agent
 Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Открыв журнал в Visual Studio Enterprise (но не в выпуске Professional или Community), можно выполнить отладку с помощью любых диагностических средств Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](/azure/application-insights/) и [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.  
@@ -79,33 +79,33 @@ ms.locfileid: "49073666"
 ####  <a name="FullPermissionsITLog"></a> В. Как настроить разрешения для пула приложений?  
  **О.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Пример:  
   
--   Чтобы настроить разрешения с помощью команды **icacls** в Windows:  
+- Чтобы настроить разрешения с помощью команды **icacls** в Windows:  
   
-    -   для веб-приложения в пуле приложений **DefaultAppPool** введите  
+  - для веб-приложения в пуле приложений **DefaultAppPool** введите  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   для приложения SharePoint в пуле приложений **SharePoint - 80** введите  
+  - для приложения SharePoint в пуле приложений **SharePoint - 80** введите  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     - или -  
+    - или -  
   
--   Чтобы настроить разрешения с помощью проводника Windows:  
+- Чтобы настроить разрешения с помощью проводника Windows:  
   
-    1.  Откройте **Свойства** каталога журнала IntelliTrace.  
+  1.  Откройте **Свойства** каталога журнала IntelliTrace.  
   
-    2.  На вкладке **Безопасность** выберите **Изменить**, затем **Добавить**.  
+  2.  На вкладке **Безопасность** выберите **Изменить**, затем **Добавить**.  
   
-    3.  Убедитесь, что **Встроенные субъекты безопасности** отображаются в окне **Выберите тип объекта** . Если его там нет, выберите **типы объектов** Чтобы добавить его.  
+  3.  Убедитесь, что **Встроенные субъекты безопасности** отображаются в окне **Выберите тип объекта** . Если его там нет, выберите **типы объектов** Чтобы добавить его.  
   
-    4.  Убедитесь, что локальный компьютер отображается в поле **Из этого расположения** . Если его там нет, выберите **расположения** для его изменения.  
+  4.  Убедитесь, что локальный компьютер отображается в поле **Из этого расположения** . Если его там нет, выберите **расположения** для его изменения.  
   
-    5.  В поле **Введите имена выбираемых объектов** добавьте пул приложений для веб-приложения или приложения SharePoint.  
+  5.  В поле **Введите имена выбираемых объектов** добавьте пул приложений для веб-приложения или приложения SharePoint.  
   
-    6.  Выберите **Проверить имена** , чтобы разрешить имя. Нажмите кнопку **ОК**.  
+  6.  Выберите **Проверить имена** , чтобы разрешить имя. Нажмите кнопку **ОК**.  
   
-    7.  Убедитесь, что пул приложений имеет **чтения & выполнение** разрешения.  
+  7.  Убедитесь, что пул приложений имеет **чтения & выполнение** разрешения.  
   
 ##  <a name="MonitorEvents"></a> Шаг 2. Запуск отслеживания приложения  
  Приступите к отслеживанию приложения с помощью команды [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) Windows PowerShell. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -149,83 +149,83 @@ ms.locfileid: "49073666"
 ####  <a name="Minimizing"></a> В. Как получить подробные данные, не замедляя работу приложения?  
  **Ответ.** Microsoft Monitoring Agent позволяет собирать большой объем данных. Производительность приложения зависит от типа собираемых данных и метода сбора. Ниже приведены несколько способов получения подробных данных, не замедляющих приложение.  
   
--   Работая с веб-приложениями и приложениями SharePoint, агент записывает данные для каждого приложения из указанного пула. Поэтому, даже если ограничить сбор данных модулями одного приложения, работа других приложений из этого пула может замедляться. Этого можно избежать, если размещать каждое приложение в отдельном пуле.  
+- Работая с веб-приложениями и приложениями SharePoint, агент записывает данные для каждого приложения из указанного пула. Поэтому, даже если ограничить сбор данных модулями одного приложения, работа других приложений из этого пула может замедляться. Этого можно избежать, если размещать каждое приложение в отдельном пуле.  
   
--   Просмотрите в плане сбора события, о которых агент собирает данные. Отключите нерелевантные и не представляющие интереса события. Возможно, это позволит увеличить быстродействие при запуске и выполнении.  
+- Просмотрите в плане сбора события, о которых агент собирает данные. Отключите нерелевантные и не представляющие интереса события. Возможно, это позволит увеличить быстродействие при запуске и выполнении.  
   
-     Чтобы отключить событие, задайте атрибуту `enabled` элемента `<DiagnosticEventSpecification>` значение `false`.  
+   Чтобы отключить событие, задайте атрибуту `enabled` элемента `<DiagnosticEventSpecification>` значение `false`.  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Если атрибут `enabled` не существует, значит событие включено.  
+   Если атрибут `enabled` не существует, значит событие включено.  
   
-     Например:  
+   Например:  
   
-    -   Отключите события рабочего процесса Windows для приложений, которые его не используют.  
+  -   Отключите события рабочего процесса Windows для приложений, которые его не используют.  
   
-    -   Отключите события реестра для приложений, которые обращаются к реестру, но не отображают проблемы с параметрами реестра.  
+  -   Отключите события реестра для приложений, которые обращаются к реестру, но не отображают проблемы с параметрами реестра.  
   
--   Просмотрите в плане сбора модули, о которых агент собирает данные. Исключите из плана модули, которые вас не интересуют.  
+- Просмотрите в плане сбора модули, о которых агент собирает данные. Исключите из плана модули, которые вас не интересуют.  
   
-     Это сокращает объем данных о вызове метода и других данных инструментирования, которые агент собирает при запуске и выполнении приложения. Эти данные позволяют выполнить код по шагам при отладке и просмотре значений, которые передаются в функции и возвращаются из них.  
+   Это сокращает объем данных о вызове метода и других данных инструментирования, которые агент собирает при запуске и выполнении приложения. Эти данные позволяют выполнить код по шагам при отладке и просмотре значений, которые передаются в функции и возвращаются из них.  
   
-    1.  Откройте план коллекции. Найдите элемент `<ModuleList>` .  
+  1. Откройте план коллекции. Найдите элемент `<ModuleList>` .  
   
-    2.  В `<ModuleList>`задайте атрибуту `isExclusionList` значение `false`.  
+  2. В `<ModuleList>`задайте атрибуту `isExclusionList` значение `false`.  
   
-    3.  Используйте элемент `<Name>` , чтобы задать модули с помощью одного из следующих параметров: имя файла, строковое значение для включения любого модуля, имя которого содержит эту строку, или открытый ключ.  
+  3. Используйте элемент `<Name>` , чтобы задать модули с помощью одного из следующих параметров: имя файла, строковое значение для включения любого модуля, имя которого содержит эту строку, или открытый ключ.  
   
      В этом примере создается список, который собирает данные только из главного модуля веб-приложения Fabrikam Fiber:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Для сбора данных из любого модуля, имя которого содержит "Fabrikam", создайте подобный список:  
+   Для сбора данных из любого модуля, имя которого содержит "Fabrikam", создайте подобный список:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Для сбора данных из модулей, заданных с помощью токенов открытых ключей, создайте подобный список:  
+   Для сбора данных из модулей, заданных с помощью токенов открытых ключей, создайте подобный список:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **В. Почему нельзя просто исключить модули?**  
+   **В. Почему нельзя просто исключить модули?**  
   
-     **О.** По умолчанию, чтобы исключить модуль из плана сбора данных, требуется задать атрибуту `isExclusionList` значение `true`. Однако это не предотвращает сбор данных из модулей, которые не соответствуют критериям списка или не интересуют вас, например из модулей сторонних производителей или модулей с открытым исходным кодом.  
+   **О.** По умолчанию, чтобы исключить модуль из плана сбора данных, требуется задать атрибуту `isExclusionList` значение `true`. Однако это не предотвращает сбор данных из модулей, которые не соответствуют критериям списка или не интересуют вас, например из модулей сторонних производителей или модулей с открытым исходным кодом.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>В. Какие значения собирает агент?  
  **О.** Чтобы избежать снижения производительности, агент собирает только следующие значения:  
   
--   примитивные типы данных, передаваемые в методы и возвращаемые из них;  
+- примитивные типы данных, передаваемые в методы и возвращаемые из них;  
   
--   примитивные типы данных в полях объектов верхнего уровня, передаваемые в методы и возвращаемые из них.  
+- примитивные типы данных в полях объектов верхнего уровня, передаваемые в методы и возвращаемые из них.  
   
- Предположим, имеется сигнатура метода `AlterEmployee` , которая принимает целое число `id` и объект `Employee` с именем `oldemployee`:  
+  Предположим, имеется сигнатура метода `AlterEmployee` , которая принимает целое число `id` и объект `Employee` с именем `oldemployee`:  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- Тип `Employee` имеет следующие атрибуты: `Id`, `Name`и `HomeAddress`. Между типом `Employee` и типом `Address` существует отношение ассоциации.  
+  Тип `Employee` имеет следующие атрибуты: `Id`, `Name`и `HomeAddress`. Между типом `Employee` и типом `Address` существует отношение ассоциации.  
   
- ![Связь между Employee и Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Связь между Employee и Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- Агент записывает значения `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет ли он значение NULL или нет. Также агент не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.  
+  Агент записывает значения `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет ли он значение NULL или нет. Также агент не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.  
   
 ##  <a name="SaveEvents"></a> Шаг 3. Сохранение записанных событий  
  Если вы обнаружите ошибку или проблему производительности, сохраните записанные события в журнал IntelliTrace. Агент создает журнал, только если события записывались. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -233,63 +233,63 @@ ms.locfileid: "49073666"
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Как сохранить записанные события и продолжить отслеживание  
  Выполните следующие шаги, если требуется создать журнал IntelliTrace, не перезапуская приложение и не останавливая отслеживание. Агент продолжает отслеживание даже при перезапуске сервера или приложения.  
   
-1.  На веб-сервере откройте окно командной строки Windows PowerShell с правами администратора.  
+1. На веб-сервере откройте окно командной строки Windows PowerShell с правами администратора.  
   
-2.  Выполните команду [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) , чтобы сохранить снимок журнала IntelliTrace:  
+2. Выполните команду [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) , чтобы сохранить снимок журнала IntelliTrace:  
   
-     **CHECKPOINT-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **CHECKPOINT-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- или -  
+    \- или -  
   
-     **CHECKPOINT-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **CHECKPOINT-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Пример:  
+    Пример:  
   
-     **PS C:\\> Checkpoint-WebApplicationMonitoring «Fabrikam\FabrikamFiber.Web»**  
+    **PS C:\\> Checkpoint-WebApplicationMonitoring «Fabrikam\FabrikamFiber.Web»**  
   
-     - или -  
+    - или -  
   
-     **PS C: > Checkpoint-WebApplicationMonitoring «IIS:sitesFabrikamFabrikamFiber.Web»**  
+    **PS C: > Checkpoint-WebApplicationMonitoring «IIS:sitesFabrikamFabrikamFiber.Web»**  
   
-     Дополнительные сведения, выполните **get-help Checkpoint-WebApplicationMonitoring-подробные** команды или **get-help Checkpoint-WebApplicationMonitoring-примеры** команды.  
+    Дополнительные сведения, выполните **get-help Checkpoint-WebApplicationMonitoring-подробные** команды или **get-help Checkpoint-WebApplicationMonitoring-примеры** команды.  
   
-3.  Скопируйте журнал в защищенную общую папку, а затем откройте журнал на компьютере, где установлена программа Visual Studio Enterprise (но не выпуск Professional или Community).  
+3. Скопируйте журнал в защищенную общую папку, а затем откройте журнал на компьютере, где установлена программа Visual Studio Enterprise (но не выпуск Professional или Community).  
   
-    > [!IMPORTANT]
-    >  Соблюдайте меры предосторожности, предоставляя общий доступ к журналам IntelliTrace, поскольку они могут содержать личные и конфиденциальные данные. Убедитесь, что доступ к журналам имеют только те пользователи, у которых есть разрешение на просмотр этих данных. Уточните политику конфиденциальности своей компании.  
+   > [!IMPORTANT]
+   >  Соблюдайте меры предосторожности, предоставляя общий доступ к журналам IntelliTrace, поскольку они могут содержать личные и конфиденциальные данные. Убедитесь, что доступ к журналам имеют только те пользователи, у которых есть разрешение на просмотр этих данных. Уточните политику конфиденциальности своей компании.  
   
- **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Как сохранить записанные события и остановить отслеживание  
  Выполните следующие шаги, если требуется просто получить диагностические сведения при воспроизведении определенной ошибки. При этом все приложения на веб-сервере будут перезапущены.  
   
-1.  На веб-сервере откройте окно командной строки Windows PowerShell с правами администратора.  
+1. На веб-сервере откройте окно командной строки Windows PowerShell с правами администратора.  
   
-2.  Выполните команду [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) , чтобы создать журнал IntelliTrace и остановить отслеживание определенного веб-приложения:  
+2. Выполните команду [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) , чтобы создать журнал IntelliTrace и остановить отслеживание определенного веб-приложения:  
   
-     **STOP-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **STOP-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- или -  
+    \- или -  
   
-     **STOP-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **STOP-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Выполните следующую команду, если требуется завершить отслеживание всех веб-приложений:  
+    Выполните следующую команду, если требуется завершить отслеживание всех веб-приложений:  
   
-     **STOP-WebApplicationMonitoring - все**  
+    **STOP-WebApplicationMonitoring - все**  
   
-     Пример:  
+    Пример:  
   
-     **PS C:\\> Stop-WebApplicationMonitoring «Fabrikam\iFabrikamFiber.Web»**  
+    **PS C:\\> Stop-WebApplicationMonitoring «Fabrikam\iFabrikamFiber.Web»**  
   
-     \- или -  
+    \- или -  
   
-     **PS C:\\> Stop-WebApplicationMonitoring «IIS:\sites\Fabrikam\FabrikamFiber.Web»**  
+    **PS C:\\> Stop-WebApplicationMonitoring «IIS:\sites\Fabrikam\FabrikamFiber.Web»**  
   
-     Дополнительные сведения, выполните **get-help Stop-WebApplicationMonitoring-подробные** команды или **get-help Stop-WebApplicationMonitoring-примеры** команды.  
+    Дополнительные сведения, выполните **get-help Stop-WebApplicationMonitoring-подробные** команды или **get-help Stop-WebApplicationMonitoring-примеры** команды.  
   
-3.  Скопируйте журнал в защищенную общую папку, а затем откройте журнал на компьютере, где установлена программа Visual Studio Enterprise.  
+3. Скопируйте журнал в защищенную общую папку, а затем откройте журнал на компьютере, где установлена программа Visual Studio Enterprise.  
   
- **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Вопросы и ответы  
   

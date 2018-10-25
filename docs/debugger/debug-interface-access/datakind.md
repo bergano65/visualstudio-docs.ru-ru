@@ -1,5 +1,5 @@
 ---
-title: DataKind | Документы Microsoft
+title: DataKind | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867628"
 ---
 # <a name="datakind"></a>DataKind
-Указывает, определенной областью значение данных.  
+Указывает область конкретного значения данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,31 +46,31 @@ enum DataKind {
  Не удается определить символ данных.  
   
  DataIsLocal  
- Элемент данных является локальной переменной.  
+ Элемент данных — это локальная переменная.  
   
  DataIsStaticLocal  
  Элемент данных является статической локальной переменной.  
   
  DataIsParam  
- Элемент данных относится формальных параметров.  
+ Элемент данных является формальным параметром.  
   
  DataIsObjectPtr  
- Элемент данных является указатель на объект (`this`).  
+ Элемент данных является указателем объекта (`this`).  
   
  DataIsFileStatic  
- Элемент данных относится переменную видимой в пределах файла.  
+ Элемент данных — это переменная уровня файла.  
   
  DataIsGlobal  
  Элемент данных является глобальной переменной.  
   
  DataIsMember  
- Элемент данных относится переменная члена объекта.  
+ Элемент данных является переменной члена объекта.  
   
  DataIsStaticMember  
  Элемент данных является статической переменной класса.  
   
  DataIsConstant  
- Элемент данных имеет постоянное значение.  
+ Элемент данных — это постоянное значение.  
   
 ## <a name="remarks"></a>Примечания  
  Возвращаемые значения в этом перечислении [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.  

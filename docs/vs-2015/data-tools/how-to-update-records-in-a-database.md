@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949036"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Практическое руководство. Обновление записей в базе данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ ms.locfileid: "49199527"
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Для обновления записей в базе данных с помощью TableAdapter.Update-метод, принимающий DataSet, DataTable, DataRow или DataRows()  
   
-1.  Изменение записей в нужной <xref:System.Data.DataTable> путем непосредственного редактирования <xref:System.Data.DataRow> в <xref:System.Data.DataTable>. Дополнительные сведения см. в разделе [как: изменение строк в таблице DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Изменение записей в нужной <xref:System.Data.DataTable> путем непосредственного редактирования <xref:System.Data.DataRow> в <xref:System.Data.DataTable>. Дополнительные сведения см. в разделе [как: изменение строк в таблице DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  После редактирования строк в <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
+2. После редактирования строк в <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
   
-     Ниже показано, как изменить запись в <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод, чтобы сохранить изменения в базу данных. (В этом примере используется таблица Region базы данных "Борей".)  
+    Ниже показано, как изменить запись в <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод, чтобы сохранить изменения в базу данных. (В этом примере используется таблица Region базы данных "Борей".)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Если приложение использует объекты для хранения данных в приложении, можно использовать TableAdapter `DBDirect` методы для отправки данных из объектов непосредственно к базе данных. Эти методы позволяют передавать отдельные значения для каждого столбца в качестве параметров метода. Вызов этого метода обновляет существующую запись в базе данных со значениями столбца, переданный методу.  
+   Если приложение использует объекты для хранения данных в приложении, можно использовать TableAdapter `DBDirect` методы для отправки данных из объектов непосредственно к базе данных. Эти методы позволяют передавать отдельные значения для каждого столбца в качестве параметров метода. Вызов этого метода обновляет существующую запись в базе данных со значениями столбца, переданный методу.  
   
- В следующей процедуре используются базы данных Northwind `Region` таблицы в качестве примера.  
+   В следующей процедуре используются базы данных Northwind `Region` таблицы в качестве примера.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Для обновления записей в базу данных с помощью TableAdapter.Update-метод, который принимает значения столбцов  
   

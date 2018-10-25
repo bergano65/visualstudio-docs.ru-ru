@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - Если конструктор действий
+title: Конструктор рабочих процессов - Если конструктор действия
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58adde57c6de49a4abb0456ba5c80df27a45b069
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822848"
 ---
 # <a name="if-activity-designer"></a>Конструктор действия If
 
@@ -28,13 +28,13 @@ ms.locfileid: "31971212"
 В следующей таблице показаны свойства действия <xref:System.Activities.Statements.If>, которые применяются чаще всего, и описано их использование в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|Условие, определяющее, какое дочернее действие следует выполнить. Чтобы задать <xref:System.Activities.Statements.If.Condition%2A>, введите выражение Visual Basic в **условие** поле на **Если** действие конструктора или в сетке свойств.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> — **false**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Else%2A> ветви, перетащите его из **элементов** в **Else** поле на **Если** конструктора действий с текстом подсказки» Перетащить действие сюда».|
-|<xref:System.Activities.Statements.If.Then%2A>|False|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> — **true**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Then%2A> ветви, перетащите его из **элементов** в **затем** поле на **Если** конструктора действий с текстом подсказки» Перетащить действие сюда».|
+|-|--------------|-|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|Условие, определяющее, какое дочернее действие следует выполнить. Чтобы задать <xref:System.Activities.Statements.If.Condition%2A>, введите выражение Visual Basic в **условие** поле **Если** действие конструктора или в сетке свойств.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> — **false**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Else%2A> ветви, перетащите его из **элементов** в **Else** поле **Если** конструктора действий с текстом подсказки» Перетащить действие сюда».|
+|<xref:System.Activities.Statements.If.Then%2A>|False|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> — **true**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Then%2A> ветви, перетащите его из **элементов** в **затем** поле **Если** конструктора действий с текстом подсказки» Перетащить действие сюда».|
 
 ## <a name="see-also"></a>См. также
 
-- [последовательности](../workflow-designer/sequence-activity-designer.md)
-- [Параллельный](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

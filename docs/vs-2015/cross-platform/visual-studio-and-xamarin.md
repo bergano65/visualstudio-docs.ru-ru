@@ -13,12 +13,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850663"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio и Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Xamarin — это платформа разработки мобильных п
   
  Эта документация поможет оценить все возможности **Visual Studio с Xamarin** для создания указанных ниже решений.  
   
--   Начните с раздела [Настройка и установка](../cross-platform/setup-and-install.md) — это может занять некоторое время (обычно 2–4 часа в зависимости от скорости подключения к Интернету, уже установленных компонентов и выбранных параметров).  
+- Начните с раздела [Настройка и установка](../cross-platform/setup-and-install.md) — это может занять некоторое время (обычно 2–4 часа в зависимости от скорости подключения к Интернету, уже установленных компонентов и выбранных параметров).  
   
--   Во время выполнения установщиков вы можете изучить раздел [Подробности о разработке мобильных приложений с использованием Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md), где описан характер работы Xamarin, дано сравнение Xamarin.Forms и собственного пользовательского интерфейса, а также приведено много других данных.  
+- Во время выполнения установщиков вы можете изучить раздел [Подробности о разработке мобильных приложений с использованием Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md), где описан характер работы Xamarin, дано сравнение Xamarin.Forms и собственного пользовательского интерфейса, а также приведено много других данных.  
   
--   После завершения установки прочитайте раздел [Проверка окружения Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
+- После завершения установки прочитайте раздел [Проверка окружения Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
   
--   В завершение ознакомьтесь с учебником [Основы создания приложений с помощью Xamarin.Forms в Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
+- В завершение ознакомьтесь с учебником [Основы создания приложений с помощью Xamarin.Forms в Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
   
- Вы можете использовать все функции Xamarin в [любом выпуске Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional и Enterprise). Начиная с 31 марта 2016 года, Xamarin включается во все выпуски Visual Studio 2015 и больше не требует отдельной лицензии. Для Visual Studio 2013 можно установить Xamarin отдельно, как описано в разделе [Настройка и установка](../cross-platform/setup-and-install.md).  
+  Вы можете использовать все функции Xamarin в [любом выпуске Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional и Enterprise). Начиная с 31 марта 2016 года, Xamarin включается во все выпуски Visual Studio 2015 и больше не требует отдельной лицензии. Для Visual Studio 2013 можно установить Xamarin отдельно, как описано в разделе [Настройка и установка](../cross-platform/setup-and-install.md).  
   
 > [!NOTE]
 >  Эти инструкции описывают самую простую и очевидную конфигурацию компьютера для тех, кто имеет опыт работы с Windows и Visual Studio. При использовании этой конфигурации разработка упрощается, так как необходимо взаимодействовать с Mac только для того, чтобы использовать симулятор iOS и связанное устройство. Если же вы используете Mac, рекомендуется запустить Visual Studio в Parallels или VMWare либо использовать Xamarin Studio Community. Инструкции см. в разделе [Программа установки, установка и проверки для пользователей Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
