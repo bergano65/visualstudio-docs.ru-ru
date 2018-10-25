@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943054"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.  
@@ -30,11 +30,11 @@ ms.locfileid: "39081242"
 ## <a name="local-data"></a>Локальные данные  
  В [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]можно загружать и хранить данные локально, используя любой из следующих методов.  
   
--   Каталог данных[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
+- Каталог данных[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
   
--   Изолированное хранилище  
+- Изолированное хранилище  
   
--   Другие локальные файлы  
+- Другие локальные файлы  
   
 ### <a name="clickonce-data-directory"></a>Каталог данных ClickOnce  
  Каждое установленное на локальном компьютере приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] имеет каталог данных, который сохранен в папке пользователя Documents and Settings. Любой файл, включенный в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и помеченный как файл «данных», копируется в этот каталог при установке приложения. Файлы данных могут представлять собой данные любого типа. Чаще всего используются текстовые файлы, файлы XML и файлы базы данных, например MDB-файлы Microsoft Access.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c320400ee7337ec3f4ac3b6a77f1863b732c99c5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930651"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Пошаговое руководство: Создание пакета SDK, с помощью C++
 В этом пошаговом руководстве показано, как создать собственной математические библиотеки C++ SDK, пакет SDK в Visual Studio Extension (VSIX) и затем использовать его для создания приложения. Пошаговое руководство содержит следующие действия.  
@@ -142,25 +142,25 @@ ms.locfileid: "39499969"
   
 ##  <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов  
   
-1.  В строке меню выберите **Файл** > **Создать** > **Проект**.  
+1. В строке меню выберите **Файл** > **Создать** > **Проект**.  
   
-2.  В списке шаблонов разверните **Visual C++** > **универсальной Windows** , а затем выберите **пустое приложение**. В **имя** укажите **NativeMathSDKSample**, а затем выберите **ОК** кнопки.  
+2. В списке шаблонов разверните **Visual C++** > **универсальной Windows** , а затем выберите **пустое приложение**. В **имя** укажите **NativeMathSDKSample**, а затем выберите **ОК** кнопки.  
   
-3.  В **обозревателе решений**, откройте контекстное меню для **NativeMathSDKSample** проекта, а затем выберите **добавить** > **ссылку**.  
+3. В **обозревателе решений**, откройте контекстное меню для **NativeMathSDKSample** проекта, а затем выберите **добавить** > **ссылку**.  
   
-4.  В **добавить ссылку** разверните диалоговое окно, в список ссылочных типов, **универсальной Windows**, а затем выберите **расширения**. Наконец, выберите **собственным пакетом SDK для математических** , а затем нажать **ОК** кнопки.
+4. В **добавить ссылку** разверните диалоговое окно, в список ссылочных типов, **универсальной Windows**, а затем выберите **расширения**. Наконец, выберите **собственным пакетом SDK для математических** , а затем нажать **ОК** кнопки.
   
-5.  Отображение свойств проекта для NativeMathSDKSample.  
+5. Отображение свойств проекта для NativeMathSDKSample.  
   
-     Свойства, определенные в *NativeMathSDK.props* были применены при добавлении ссылки. Можно проверить свойства были применены с помощью проверки **каталоги VC ++** свойства в проекте **свойства конфигурации**.  
+    Свойства, определенные в *NativeMathSDK.props* были применены при добавлении ссылки. Можно проверить свойства были применены с помощью проверки **каталоги VC ++** свойства в проекте **свойства конфигурации**.  
   
-6.  В **обозревателе решений**откройте **MainPage.xaml**, а затем замените его содержимое с помощью следующих XAML:  
+6. В **обозревателе решений**откройте **MainPage.xaml**, а затем замените его содержимое с помощью следующих XAML:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-7.  Обновление *Mainpage.xaml.h* в соответствии с этот код:  
+7. Обновление *Mainpage.xaml.h* в соответствии с этот код:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
 8. Обновление *MainPage.xaml.cpp* в соответствии с этот код:  
   
@@ -172,7 +172,7 @@ ms.locfileid: "39499969"
   
      Отображается правильный результат.  
   
- В этом пошаговом руководстве было показано, как создать и использовать пакет SDK расширения для вызова [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] библиотеки и отличным от[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] библиотеки.  
+    В этом пошаговом руководстве было показано, как создать и использовать пакет SDK расширения для вызова [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] библиотеки и отличным от[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] библиотеки.  
   
 ## <a name="next-steps"></a>Следующие шаги  
   

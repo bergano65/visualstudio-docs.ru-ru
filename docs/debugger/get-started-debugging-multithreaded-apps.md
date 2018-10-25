@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936866"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Начало отладки многопоточных приложений в Visual Studio
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этом руководстве показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и фильтр точки останова. В этом руководстве всего несколько минут, но оно позволит ознакомиться вас с функциями для отладки многопоточных приложений.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    [Ознакомьтесь с видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) на многопотоковая отладка, показывающая те же действия. |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Ознакомьтесь с видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) на многопотоковая отладка, показывающая те же действия. |
 
 Другие разделы дополнительных сведений об использовании других многопоточных средств отладки:
 
@@ -217,30 +217,30 @@ Visual Studio предоставляет несколько средств и э
   
 #### <a name="to-start-debugging"></a>Начало отладки  
   
-1.  Щелкните в левом поле `Thread.Sleep` или `this_thread::sleep_for` инструкцию, чтобы добавить новую точку останова.  
+1. Щелкните в левом поле `Thread.Sleep` или `this_thread::sleep_for` инструкцию, чтобы добавить новую точку останова.  
   
-     Во внутренней области в левой части редактора исходного кода появится красный кружок. Это означает, что точка останова установлена в этом месте. 
+    Во внутренней области в левой части редактора исходного кода появится красный кружок. Это означает, что точка останова установлена в этом месте. 
   
-2.  На **Отладка** меню, щелкните **начать отладку** (**F5**).  
+2. На **Отладка** меню, щелкните **начать отладку** (**F5**).  
   
-     Visual Studio создает решение, приложение начинает выполняться с подключенным отладчиком, и затем приложение останавливается в точке останова.  
+    Visual Studio создает решение, приложение начинает выполняться с подключенным отладчиком, и затем приложение останавливается в точке останова.  
   
-    > [!NOTE]
-    > При переключении фокуса в окно консоли, нажмите кнопку в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окно для возвращения фокуса в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > При переключении фокуса в окно консоли, нажмите кнопку в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окно для возвращения фокуса в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  В редакторе исходного кода найдите строку, содержащую точку останова:  
+3. В редакторе исходного кода найдите строку, содержащую точку останова:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Чтобы обнаружить маркер потока  
 

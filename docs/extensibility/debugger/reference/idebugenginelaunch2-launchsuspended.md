@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::LaunchSuspended | Документы Microsoft
+title: IDebugEngineLaunch2::LaunchSuspended | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05e8f034ec30f0f387675759cb7601f7b3fc3e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ffe5bdd0619ae5954a34fde50518adb3767d1825
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114629"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926505"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Этот метод запускает процесс с помощью модуля отладки (DE).  
@@ -68,19 +68,19 @@ int LaunchSuspended(
  [in] Имя компьютера, в котором для запуска процесса. Используйте значение null, чтобы указать локальный компьютер.  
   
  `pPort`  
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) порт, который программа будет запускаться в интерфейс.  
+ [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс, представляющий порт, который программа будет запускаться в.  
   
  `pszExe`  
- [in] Имя исполняемого файла, который будет запущен.  
+ [in] Имя исполняемого файла для запуска.  
   
  `pszArgs`  
- [in] Аргументы, передаваемые исполняемому файлу. Может иметь значение null, если не указаны аргументы.  
+ [in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.  
   
  `pszDir`  
- [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога не требуется.  
+ [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.  
   
  `bstrEnv`  
- [in] Блок среды нули, следуют дополнительные символ конца строки.  
+ [in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.  
   
  `pszOptions`  
  [in] Параметры для исполняемого файла.  
@@ -89,27 +89,27 @@ int LaunchSuspended(
  [in] Указывает [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) для сеанса.  
   
  `hStdInput`  
- [in] Дескриптор дополнительного входного потока. Может быть равно 0, если перенаправление не требуется.  
+ [in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.  
   
  `hStdOutput`  
- [in] Дескриптор Альтернативный выходной поток. Может быть равно 0, если перенаправление не требуется.  
+ [in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.  
   
  `hStdError`  
- [in] Дескриптор альтернативный поток сообщений об ошибках. Может быть равно 0, если перенаправление не требуется.  
+ [in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.  
   
  `pCallback`  
  [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, получающий события отладчика.  
   
  `ppDebugProcess`  
- [out] Возвращает итоговый [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , представляющий запущенного процесса.  
+ [out] Возвращает результат в виде [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий запущенный процесс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Как правило [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] запуск программы с помощью [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) метода и затем Присоединяет отладчик к программе приостановленной. Однако существуют обстоятельства, в которых отладчик может потребоваться запустить программу (например, если отладчик входит интерпретатор и отлаживаемой программы Интерпретируемый язык), в этом случае [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] использует `IDebugEngineLaunch2::LaunchSuspended` метод .  
+ Как правило [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] запускает программу с помощью команды [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) метода и затем Присоединяет отладчик к приостановленные программы. Тем не менее, существуют обстоятельства, в которых отладчик может потребоваться для запуска программы (например, если модуль отладки является частью интерпретатор и отлаживаемой программы — это Интерпретируемый язык), в этом случае [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] использует `IDebugEngineLaunch2::LaunchSuspended` метод .  
   
- [ResumeProcess для](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) метод вызывается для запуска процесса после процесса успешно запущено в приостановленном состоянии.  
+ [ResumeProcess для](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) метод вызывается для запуска процесса после процесса успешно запущена в приостановленном состоянии.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
@@ -118,4 +118,4 @@ int LaunchSuspended(
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)   
- [ResumeProcess для](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)
+ [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)

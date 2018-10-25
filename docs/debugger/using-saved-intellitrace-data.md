@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912972"
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.
@@ -159,25 +159,25 @@ ms.locfileid: "44321220"
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Запуск отладки с идентификатором корреляции SharePoint
 
-1.  Скопируйте идентификатор корреляции SharePoint из его источника.
+1. Скопируйте идентификатор корреляции SharePoint из его источника.
 
-     Пример:
+    Пример:
 
-     ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Откройте ITRACE-файл, затем перейдите в меню **Анализ** и введите идентификатор корреляции SharePoint для просмотра соответствующего веб-запроса и записанных событий.
+2. Откройте ITRACE-файл, затем перейдите в меню **Анализ** и введите идентификатор корреляции SharePoint для просмотра соответствующего веб-запроса и записанных событий.
 
-     ![Журнал IntelliTrace &#45; введите Корреляционный идентификатор SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Журнал IntelliTrace &#45; введите Корреляционный идентификатор SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  Просмотрите события в разделе **События запроса**. События отображаются сверху вниз в порядке, в котором они произошли.
+3. Просмотрите события в разделе **События запроса**. События отображаются сверху вниз в порядке, в котором они произошли.
 
-    1.  Выберите событие для просмотра подробных сведений о нем.
+   1. Выберите событие для просмотра подробных сведений о нем.
 
-    2.  Выберите **Начать отладку** , чтобы начать отладку в точке, где произошло событие.
+   2. Выберите **Начать отладку** , чтобы начать отладку в точке, где произошло событие.
 
-     ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; события](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; события](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- Можно просмотреть эти типы событий SharePoint вместе с событиями IntelliTrace:
+   Можно просмотреть эти типы событий SharePoint вместе с событиями IntelliTrace:
 
 -   **События профиля пользователя**
 
@@ -199,28 +199,28 @@ ms.locfileid: "44321220"
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Запуск отладки из необработанного исключения
 
-1.  Выберите идентификатор корреляции SharePoint для исключения. Исключения группируются по типу и стеку вызовов.
+1. Выберите идентификатор корреляции SharePoint для исключения. Исключения группируются по типу и стеку вызовов.
 
-2.  (Необязательно) Разверните узел **Стек вызовов** , чтобы просмотреть стек вызовов для группы исключений.
+2. (Необязательно) Разверните узел **Стек вызовов** , чтобы просмотреть стек вызовов для группы исключений.
 
-3.  Выберите **Исключение отладки** , чтобы начать отладку в точке и в момент возникновения исключения.
+3. Выберите **Исключение отладки** , чтобы начать отладку в точке и в момент возникновения исключения.
 
-     ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Пошаговое руководство, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
+   Пошаговое руководство, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Список потоков
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Запуск отладки из конкретного потока
 
-1.  Выберите поток в разделе **Список потоков**.
+1. Выберите поток в разделе **Список потоков**.
 
-2.  В нижней части раздела **Список потоков**выберите **Начать отладку**. Можно также выбрать поток двойным щелчком.
+2. В нижней части раздела **Список потоков**выберите **Начать отладку**. Можно также выбрать поток двойным щелчком.
 
-     Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
+    Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
- Данные потока, созданного пользователем, могут быть более полезными, чем потоки, создаваемые и управляемые сервером для размещенных в IIS веб-приложений.
+   Данные потока, созданного пользователем, могут быть более полезными, чем потоки, создаваемые и управляемые сервером для размещенных в IIS веб-приложений.
 
 |**Столбец**|**Отображает**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ ms.locfileid: "44321220"
 |----------------|-------------------|
 |**Имя модуля**|Имя файла модуля|
 |**Путь к модулю**|Расположение на диске, где был загружен модуль|
-|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. в разделе [поиск файлов символов (.pdb) и исходных файлов](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
 
 ### <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)

@@ -13,40 +13,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a8d43412ae475a2823ac645954a7f1d823e3429
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8f711b3a2e131baf5f7e480982ff34dc7ef89614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949361"
 ---
 # <a name="supported-event-types"></a>Поддерживаемые типы событий
 Отладка в Visual Studio в настоящее время поддерживает следующие типы событий:  
   
--   Асинхронные события  
+- Асинхронные события  
   
-     Уведомить диспетчер отладки сеансов (SDM) и IDE, изменения состояния отлаживаемого приложения. Эти события обрабатываются в свободное время, SDM и интегрированной среды разработки. Ответ не отправляется в модуль отладки (DE), после обработки события. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) и [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) интерфейсы являются примерами асинхронные события.  
+   Уведомить диспетчер отладки сеансов (SDM) и IDE, изменения состояния отлаживаемого приложения. Эти события обрабатываются в свободное время, SDM и интегрированной среды разработки. Ответ не отправляется в модуль отладки (DE), после обработки события. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) и [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) интерфейсы являются примерами асинхронные события.  
   
--   Синхронные события  
+- Синхронные события  
   
-     Уведомите SDM и IDE, изменения состояния отлаживаемого приложения. Единственное различие между эти события и асинхронные события является, что ответ отправляется с помощью параметра [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) метод.  
+   Уведомите SDM и IDE, изменения состояния отлаживаемого приложения. Единственное различие между эти события и асинхронные события является, что ответ отправляется с помощью параметра [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) метод.  
   
-     Отправка синхронных событий полезно в том случае, если необходимо, чтобы ваш DE, чтобы продолжить обработку после интегрированной среды разработки, получает и обрабатывает событие.  
+   Отправка синхронных событий полезно в том случае, если необходимо, чтобы ваш DE, чтобы продолжить обработку после интегрированной среды разработки, получает и обрабатывает событие.  
   
--   Синхронные события остановки "или" Остановка событий  
+- Синхронные события остановки "или" Остановка событий  
   
-     Уведомите SDM и интегрированной среды разработки, что отлаживаемого приложения прекратила выполнение кода. При отправке событии остановки с помощью метода [событий](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) параметр является обязательным. Остановка события унаследованные путем вызова одного из следующих методов:  
+   Уведомите SDM и интегрированной среды разработки, что отлаживаемого приложения прекратила выполнение кода. При отправке событии остановки с помощью метода [событий](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) параметр является обязательным. Остановка события унаследованные путем вызова одного из следующих методов:  
   
-    -   [Выполнение](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.  
+    Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.  
   
-    > [!NOTE]
-    >  Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
+  > [!NOTE]
+  >  Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
   
 ## <a name="discussion"></a>Обсуждение  
  Фактическую реализацию событий зависит от структуры вашей DE. Тип каждое событие, отправленное определяется его атрибутов, которые настраиваются при создании DE. Например, может отправить один DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как событие асинхронной, то время как другой может отправлять как событие остановки.  

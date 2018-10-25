@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Документы Microsoft
+title: FIELD_MODIFIERS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949088"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Задает модификаторы для типа поля.  
@@ -106,7 +106,7 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>Участники  
  FIELD_MOD_ACCESS_TYPE  
- Указывает, что поле не доступен.  
+ Указывает, что поле будет недоступно.  
   
  FIELD_MOD_ACCESS_PUBLIC  
  Указывает, что поле имеет общий доступ.  
@@ -130,13 +130,13 @@ public enum enum_FIELD_MODIFIERS {
  Указывает, что поле является временным.  
   
  FIELD_MOD_VOLATILE  
- Указывает, что поле volatile.  
+ Указывает, что поле является временным.  
   
  FIELD_MOD_ABSTRACT  
  Указывает, что поле является абстрактным.  
   
  FIELD_MOD_NATIVE  
- Указывает, что поле является собственным.  
+ Указывает, что поле имеет собственный.  
   
  FIELD_MOD_SYNCHRONIZED  
  Указывает, что это поле синхронизируется.  
@@ -148,37 +148,37 @@ public enum enum_FIELD_MODIFIERS {
  Указывает, что поле является интерфейсом.  
   
  FIELD_MOD_FINAL  
- Указывает, что это поле является последней.  
+ Указывает, что поле является окончательной.  
   
  FIELD_MOD_SENTINEL  
  Указывает, что поле метки.  
   
  FIELD_MOD_INNERCLASS  
- Указывает, что поле внутреннего класса.  
+ Указывает, что поле является внутренним классом.  
   
  FIELD_TYPE_OPTIONAL  
- Указывает, что поле является необязательным.  
+ Указывает, что поле не является обязательным.  
   
  FIELD_MOD_BYREF  
- Указывает, что это поле является ссылочным аргументом. Это специально для аргументов метода.  
+ Указывает, что поле является ссылочным аргументом. Это специально для аргументов метода.  
   
  FIELD_MOD_HIDDEN  
- Указывает, что поле должно скрытые или в другом контексте; например [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] Статические локальные переменные.  
+ Указывает, что поле должны быть скрыты или в другом контексте; например [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] Статические локальные переменные.  
   
  FIELD_MOD_MARSHALASOBJECT  
- Указывает, что поле представляет объект с `IUnknown` интерфейса.  
+ Указывает, что поле представляет объект с `IUnknown` интерфейс.  
   
  FIELD_MOD_SPECIAL_NAME  
  Указывает, что поле имеет специальное имя, например, `.ctor` для конструктора ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только).  
   
  FIELD_MOD_HIDEBYSIG  
- Указывает, что поле имеет `Overloads` ключевое слово, применяемый к нему ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только).  
+ Указывает, что поле имеет `Overloads` ключевое слово, примененных к нему ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только).  
   
  FIELD_MOD_WRITEONLY  
- Указывает, что это поле доступно только для записи. Это значение не включается в `FIELD_MOD_ALL`, как только такие поля только для записи используется для вычисления функции. Пользователь должен явно запросить `FIELD_MOD_WRITEONLY` поля.  
+ Указывает, что поле доступно только для записи. Это значение не включено в `FIELD_MOD_ALL`, как только такие поля только для записи используется для вычисления функции. Пользователь должен явно запросить `FIELD_MOD_WRITEONLY` поля.  
   
  FIELD_MOD_ACCESS_MASK  
- Указывает маску для доступ к полю.  
+ Указывает маску для доступ к полям.  
   
  FIELD_MOD_MASK  
  Указывает маску для модификаторы поля.  
@@ -186,7 +186,7 @@ public enum enum_FIELD_MODIFIERS {
 ## <a name="remarks"></a>Примечания  
  Используется для `dwModifiers` членом [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры.  
   
- Эти значения также передаются в [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) метод, чтобы фильтровать по определенным полям.  
+ Эти значения также передаются [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) способ фильтрации для отдельных полей.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  

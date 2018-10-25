@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0650a437b4e703405ee9e8a06bfbbf9ac6c5a247
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926791"
 ---
 # <a name="register-an-expression-evaluator"></a>Регистрация вычислителя выражений
 > [!IMPORTANT]
@@ -113,7 +113,7 @@ namespace EEMC
   
 2.  Вызывается вспомогательная функция `SetEEMetric` для регистрации с помощью Visual Studio EE метрик, отображаемых в таблице ниже. Функция `SetEEMetric` и метрик, указанных ниже являются частью *dbgmetric.lib* библиотеки. См. в разделе [вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) подробные сведения.  
   
-    |Метрика|Описание:|  
+    |Метрика|Описание|  
     |------------|-----------------|  
     |`metricCLSID`|`CLSID` Класс фабрики EE|  
     |`metricName`|Имя EE как отображаемую строку|  

@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915702"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
-  Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  **Применяется к:** информация в этой статье относится к проектам надстроек VSTO для Excel. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   предоставление пользовательского интерфейса для добавления элементов управления на лист;  
+- предоставление пользовательского интерфейса для добавления элементов управления на лист;  
   
--   добавление элементов управления на лист;  
+- добавление элементов управления на лист;  
   
--   удаление элементов управления с листа.  
+- удаление элементов управления с листа.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -47,7 +47,7 @@ ms.locfileid: "34767341"
   
 -   Excel  
   
-## <a name="create-a-new-excel-vsto-add-in-project"></a>Создание нового проекта надстройки VSTO для Excel  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>Создайте новый проект надстройки VSTO для Excel  
  Для начала создайте проект надстройки VSTO для Excel.  
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Создание проекта надстройки VSTO для Excel  
@@ -65,7 +65,7 @@ ms.locfileid: "34767341"
   
 2.  В **Добавление нового элемента** выберите **Лента (визуальный конструктор)**, а затем нажмите кнопку **добавить**.  
   
-     Файл с именем **Ribbon1.cs** или **Ribbon1.vb** откроется в конструкторе лент и отображает вкладку по умолчанию и группы.  
+     Файл с именем **Ribbon1.cs** или **Ribbon1.vb** откроется в конструкторе лент и отобразятся вкладка по умолчанию и группы.  
   
 3.  Из **элементы управления ленты Office** вкладке **элементов**, перетащите элемент управления CheckBox **group1**.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "34767341"
   
 1.  В конструкторе лент дважды щелкните **кнопку**.  
   
-     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> Обработчик событий **кнопку** флажок откроется в редакторе кода.  
+     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> Обработчик событий **кнопку** "флажок" откроется в редакторе кода.  
   
 2.  Замените обработчик событий `Button_Click` следующим кодом.  
   
@@ -110,7 +110,7 @@ ms.locfileid: "34767341"
   
 3.  В **обозревателе решений**выберите *Ribbon1.cs* или *Ribbon1.vb*.  
   
-4.  На **представление** меню, нажмите кнопку **конструктор**.  
+4.  На **представление** меню, щелкните **конструктор**.  
   
 5.  В конструкторе лент дважды щелкните **NamedRange**.  
   
@@ -135,14 +135,14 @@ ms.locfileid: "34767341"
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
-## <a name="remove-controls-from-the-worksheet"></a>Удалить элементы управления с листа  
+## <a name="remove-controls-from-the-worksheet"></a>Удаление элементов управления с листа  
  Элементы управления не сохраняются при сохранении и закрытии листа. Все созданные элементы управления Windows Forms следует удалить программными средствами до сохранения листа, при этом только контур элемента управления появится при повторном открытии книги. Добавьте код в событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>, которое удаляет элементы управления Windows Forms из коллекции элементов управления созданного ведущего элемента управления. Дополнительные сведения см. в разделе [сохранение динамических элементов управления в документы Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
 ### <a name="to-remove-controls-from-the-worksheet"></a>Удаление элементов управления с листа  
   
 1.  В **обозревателе решений**выберите *ThisAddIn.cs* или *ThisAddIn.vb*.  
   
-2.  На **представление** меню, нажмите кнопку **кода**.  
+2.  На **представление** меню, щелкните **кода**.  
   
 3.  Добавьте следующий метод в класс `ThisAddIn` . Этот код получает первый лист в книге, а затем использует метод `HasVstoObject`, чтобы проверить, содержит ли лист созданный объект листа. Если созданный объект листа содержит элементы управления, код получает его и проходит по коллекции элементов управления, удаляя элементы управления.  
   
@@ -187,11 +187,11 @@ ms.locfileid: "34767341"
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения об элементах управления в проектах надстройки VSTO для Excel см. в следующем разделе:  
   
--   Дополнительные сведения о сохранении элементов управления на лист, см. VSTO для Excel надстройки пример динамических элементов управления в [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
+-   Дополнительные сведения о сохранении элементов управления на лист, см. в разделе VSTO для Excel Add-in пример динамических элементов управления в [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
 ## <a name="see-also"></a>См. также  
  [Решения Excel](../vsto/excel-solutions.md)   
- [Элементы управления в документах Office Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows forms, элементы управления на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)  
