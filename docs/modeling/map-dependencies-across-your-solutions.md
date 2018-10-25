@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896945"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Сопоставление зависимостей с помощью карт кода
 
@@ -138,15 +138,15 @@ ms.locfileid: "39341229"
 
 10. Еще один способ концентрации в комплексном решении — это создать новую карту с выбранными элементами существующей карты. Удерживайте **Ctrl** элементы, которые необходимо сосредоточиться на, откройте контекстное меню и выберите **новый граф по выделенному**.
 
-   ![Показать выбранные элементы на новой карте кода](../modeling/media/codemapsshowonnewmap.png)
+    ![Показать выбранные элементы на новой карте кода](../modeling/media/codemapsshowonnewmap.png)
 
 11. Выбранные элементы будут добавлены в новую карту вместе с контекстом. Скройте папки решений и другие контейнеры, вы не хотите см. в разделе с помощью **фильтры** области.
 
-   ![Фильтрация контейнеров для упрощения просмотра](../modeling/media/codemapsexpandnewgroups.png)
+    ![Фильтрация контейнеров для упрощения просмотра](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Разверните группы и выберите элементы на карте, чтобы просмотреть отношения.
 
-   ![Выберите элементы для просмотра связей](../modeling/media/codemapsviewnewrelationships.png)
+    ![Выберите элементы для просмотра связей](../modeling/media/codemapsviewnewrelationships.png)
 
 См. также:
 

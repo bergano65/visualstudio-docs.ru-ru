@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884099"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Практическое: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
   
  Контекст пользовательского интерфейса на основе правил можно использовать разными способами:  
   
-1.  Задать ограничения видимости для команд и окон инструментов. Можно скрыть команды и средства windows, пока не будет выполнено правило контекст пользовательского интерфейса.  
+1. Задать ограничения видимости для команд и окон инструментов. Можно скрыть команды и средства windows, пока не будет выполнено правило контекст пользовательского интерфейса.  
   
-2.  Как автоматически ограничений нагрузки: нагрузки автоматически пакеты только в том случае, когда выполняется правило  
+2. Как автоматически ограничений нагрузки: нагрузки автоматически пакеты только в том случае, когда выполняется правило  
   
-3.  Отложенных задач: задержка загрузки, пока не истечет указанный интервал и по-прежнему соблюдается правило.  
+3. Отложенных задач: задержка загрузки, пока не истечет указанный интервал и по-прежнему соблюдается правило.  
   
- Механизм может использоваться любое расширение Visual Studio.  
+   Механизм может использоваться любое расширение Visual Studio.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Создайте контекст пользовательского интерфейса на основе правил  
  Предположим, что у вас есть расширение TestPackage, который предлагает команды меню, которое применяется только к файлам с расширением «.config». До выхода Visual Studio 2015, лучшим вариантом было загрузить TestPackage при <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> контекст пользовательского интерфейса был активирован. Это не эффективно, так как загруженное решение не может даже содержать файл .config. Сообщите нам см. в разделе о том, как контекст пользовательского интерфейса на основе правил можно использовать для активации контекст пользовательского интерфейса, только если файл с расширением .config выбран и загрузите TestPackage при активации этого контекста пользовательского интерфейса.  
   
-1.  Определить новый идентификатор GUID UIContext и добавьте к классу VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> и <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Определить новый идентификатор GUID UIContext и добавьте к классу VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> и <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Например, предположим, новый UIContext «UIContextGuid» будет добавляться. Идентификатор GUID, созданный (Создать GUID можно, щелкнув средства "->" Создать идентификатор guid) — «8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B». Затем добавьте следующее внутри класса пакета:  
+    Например, предположим, новый UIContext «UIContextGuid» будет добавляться. Идентификатор GUID, созданный (Создать GUID можно, щелкнув средства "->" Создать идентификатор guid) — «8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B». Затем добавьте следующее внутри класса пакета:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Для атрибутов, добавьте следующий код: (сведения об этих атрибутов будет показано ниже)  
+    Для атрибутов, добавьте следующий код: (сведения об этих атрибутов будет показано ниже)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Эти метаданные определяют новый идентификатор GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) и выражение, ссылающееся на один термин, «DotConfig». Термин «DotConfig» возвращает значение true, каждый раз, когда текущее выделение в активной иерархии имеет имя, которое соответствует шаблону регулярного выражения "\\.config$» (заканчивается на «.config»). Значение (по умолчанию) определяет необязательное имя для правила полезны для отладки.  
+    Эти метаданные определяют новый идентификатор GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) и выражение, ссылающееся на один термин, «DotConfig». Термин «DotConfig» возвращает значение true, каждый раз, когда текущее выделение в активной иерархии имеет имя, которое соответствует шаблону регулярного выражения "\\.config$» (заканчивается на «.config»). Значение (по умолчанию) определяет необязательное имя для правила полезны для отладки.  
   
-     Pkgdef, созданные во время сборки, затем добавляются значения атрибута.  
+    Pkgdef, созданные во время сборки, затем добавляются значения атрибута.  
   
-2.  В файл VSCT для команды TestPackage добавьте флаг «DynamicVisibility» соответствующие команды:  
+2. В файл VSCT для команды TestPackage добавьте флаг «DynamicVisibility» соответствующие команды:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  В области видимости VSCT привязать соответствующие команды для нового UIContext GUID, определенный в #1:  
+3. В области видимости VSCT привязать соответствующие команды для нового UIContext GUID, определенный в #1:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  В разделе "символы" добавьте определение параметра UIContext:  
+4. В разделе "символы" добавьте определение параметра UIContext:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Теперь команды контекстного меню для файлов *.config будет отображаться только в том случае, если элемент, выбранный в обозревателе решений файл «.config» и пакет не будет загружен, пока не будет выбрано одно из этих команд.  
+    Теперь команды контекстного меню для файлов *.config будет отображаться только в том случае, если элемент, выбранный в обозревателе решений файл «.config» и пакет не будет загружен, пока не будет выбрано одно из этих команд.  
   
- Теперь давайте использовать отладчик, чтобы подтвердить, что пакет загружается, только когда мы это должно происходить. Чтобы выполнить отладку TestPackage:  
+   Теперь давайте использовать отладчик, чтобы подтвердить, что пакет загружается, только когда мы это должно происходить. Чтобы выполнить отладку TestPackage:  
   
-1.  Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.  
+5. Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.  
   
-2.  Построение TestPackage и начните отладку.  
+6. Построение TestPackage и начните отладку.  
   
-3.  Создайте проект или откройте его.  
+7. Создайте проект или откройте его.  
   
-4.  Выберите любой файл с расширением, отличным от .config. Не должна быть достигнута точка останова.  
+8. Выберите любой файл с расширением, отличным от .config. Не должна быть достигнута точка останова.  
   
-5.  Выберите файл App.Config.  
+9. Выберите файл App.Config.  
   
- TestPackage загружает и останавливается в точке останова.  
+   TestPackage загружает и останавливается в точке останова.  
   
 ## <a name="adding-more-rules-for-ui-context"></a>Добавив дополнительные правила для контекста пользовательского интерфейса  
  Так как правила контекст пользовательского интерфейса — это логические выражения, можно добавить больше ограничений, правил для контекста пользовательского интерфейса. Например в выше контекст пользовательского интерфейса, можно указать, что правило применяется, только если загружено решение с проектом. Таким образом команды не отображается при открытии файла «.config» как отдельный файл, а не как часть проекта.  

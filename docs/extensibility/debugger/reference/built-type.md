@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Документы Microsoft
+title: BUILT_TYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14a9010925db5c175b7110fb12261eb135162246
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0955ca40e136e5b89f105430f3dd887b66f25a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853315"
 ---
 # <a name="builttype"></a>BUILT_TYPE
-Эта структура указывает сведения о типа поля, берутся из метаданных.  
+Эта структура указывает сведения о типом поля, взятое из метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,10 +51,10 @@ public struct BUILT_TYPE {
  Идентификатор GUID модуля, содержащего это поле.  
   
  pUnderlyingField  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) определение базового поля, связанные с этим полем встроенный объект.  
+ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) идентифицирующий базового поля, связанные с этим полем построения.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура выводится как часть объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры при `dwKind` поле `TYPE_INFO` структуры задано значение `TYPE_KIND_BUILT` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
+ Эта структура является частью объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры, когда `dwKind` поле `TYPE_INFO` структура присваивается `TYPE_KIND_BUILT` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
@@ -64,7 +64,7 @@ public struct BUILT_TYPE {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

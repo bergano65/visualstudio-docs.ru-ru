@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Документы Microsoft
+title: MODULE_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897008"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Описание определенного модуля (DLL, EXE-файла или сборки).  
@@ -63,7 +63,7 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>Участники  
  dwValidFields  
- Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисления, которое указывает, какие поля заполнены.  
+ Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указывающее, какие поля заполнены.  
   
  m_bstrName  
  Имя модуля.  
@@ -75,7 +75,7 @@ public struct MODULE_INFO {
  Версия модуля.  
   
  m_bstrDebugMessage  
- Дополнительное сообщение о модуле, например, «невозможно загрузить символы.»  
+ Необязательное сообщение о модуле, например, «не удается загрузить символы.»  
   
  m_addrLoadAddress  
  Адрес загрузки модуля.  
@@ -93,7 +93,7 @@ public struct MODULE_INFO {
  Время последнего изменения файла символов.  
   
  m_bstrUrlSymbolLocation  
- Расположение файла символов (например, «.\\«) указан в модуле. Используется как начальное положение для найти символы для модуля.  
+ Расположение файла символов (например, «.\\«) указан в модуле. Использовать как начальную точку для найти символы для модуля.  
   
  m_dwModuleFlags  
  Сочетание флагов из [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуля.  
@@ -111,7 +111,7 @@ public struct MODULE_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

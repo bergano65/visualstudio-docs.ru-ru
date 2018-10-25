@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Документы Microsoft
+title: BP_REQUEST_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877781"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Содержит сведения, необходимые для реализации точки останова.  
@@ -59,7 +59,7 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>Участники  
  `dwFields`  
- Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которое указывает, какие поля заполнены.  
+ Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.  
   
  `guidLanguage`  
  GUID языка.  
@@ -83,15 +83,15 @@ public struct BP_REQUEST_INFO {
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.  
   
  `bpPassCount`  
- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете проход точки останова.  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.  
   
  `dwFlags`  
- Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, которое задает флаги для запрошенного точки останова.  
+ Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура возвращается [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) метод.  
   
- Если вам необходимо получить идентификатор GUID поставщика ядра отладки, ограничение точки останова или точки трассировки, см. раздел [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+ Если вам необходимо получить идентификатор GUID поставщика ядра отладки, ограничение точки останова или точки трассировки, см. в разделе [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -101,7 +101,7 @@ public struct BP_REQUEST_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   

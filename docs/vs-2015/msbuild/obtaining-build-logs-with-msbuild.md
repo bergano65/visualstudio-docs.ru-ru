@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811754"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Получение журналов построения с помощью MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49176011"
 ## <a name="setting-the-level-of-detail"></a>Задание уровня детализации  
  При сборке проекта с помощью MSBuild без указания уровня детализации в выходном журнале отображаются следующие сведения:  
   
--   ошибки, предупреждения и сообщения с высокой важностью;  
+- ошибки, предупреждения и сообщения с высокой важностью;  
   
--   некоторые события состояния;  
+- некоторые события состояния;  
   
--   сводка сборки.  
+- сводка сборки.  
   
- Используя параметр **/verbosity** (**/v**), можно контролировать объем данных, отображаемых в журнале выходных данных. Для устранения неполадок используйте уровень детализации `detailed` (`d`) или `diagnostic` (`diag`), который предоставляет максимум информации.  
+  Используя параметр **/verbosity** (**/v**), можно контролировать объем данных, отображаемых в журнале выходных данных. Для устранения неполадок используйте уровень детализации `detailed` (`d`) или `diagnostic` (`diag`), который предоставляет максимум информации.  
   
- Сборка может выполняться медленнее при задании для параметра **/verbosity** значения `detailed` и еще медленнее при задании для **/verbosity** значения `diagnostic`.  
+  Сборка может выполняться медленнее при задании для параметра **/verbosity** значения `detailed` и еще медленнее при задании для **/verbosity** значения `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

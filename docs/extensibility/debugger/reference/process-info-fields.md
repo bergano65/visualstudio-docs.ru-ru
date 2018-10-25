@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS | Документы Microsoft
+title: PROCESS_INFO_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3376db379e4e911bcaa8e865a16c63d1251229f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40a8bd1719ec69f78a5697f089062d86211542c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858320"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Указанный тип получаемых сведений для процесса.  
@@ -58,38 +58,38 @@ public enum enum_PROCESS_INFO_FIELDS {
   
 ## <a name="members"></a>Участники  
  PIF_FILE_NAME  
- Инициализация или использовать `bstrFileName` поле [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.  
+ Инициализация и использование `bstrFileName` поле [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.  
   
  PIF_BASE_NAME  
- Инициализация или использовать `bstrBaseName` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `bstrBaseName` поле `PROCESS_INFO` структуры.  
   
  PIF_TITLE  
- Инициализация или использовать `bstrTitle` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `bstrTitle` поле `PROCESS_INFO` структуры.  
   
  PIF_PROCESS_ID  
- Инициализация или использовать `ProcessId` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `ProcessId` поле `PROCESS_INFO` структуры.  
   
  PIF_SESSION_ID  
- Инициализация или использовать `dwSessionId` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `dwSessionId` поле `PROCESS_INFO` структуры.  
   
  PIF_ATTACHED_SESSION_NAME  
- Инициализация или использовать `bstrAttachedSessionName` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `bstrAttachedSessionName` поле `PROCESS_INFO` структуры.  
   
  PIF_CREATION_TIME  
- Инициализация или использовать `CreationTime` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `CreationTime` поле `PROCESS_INFO` структуры.  
   
  PIF_FLAGS  
- Инициализация или использовать `Flags` поле `PROCESS_INFO` структуры.  
+ Инициализация и использование `Flags` поле `PROCESS_INFO` структуры.  
   
  PIF_ALL  
- Заполнения всех полей.  
+ Заполняет все поля.  
   
 ## <a name="remarks"></a>Примечания  
  Передаваемый [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) метод, чтобы указать, какие поля [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры должны быть инициализированы.  
   
- Также используется в `Fields` поле `PROCESS_INFO` структуры указывает, какие поля используются и допустимым.  
+ Также используется в `Fields` поле `PROCESS_INFO` структура указывает, какие поля используются и допустимым.  
   
- Эти флаги могут объединяться с битовой `OR`.  
+ Эти флаги могут быть объединены с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

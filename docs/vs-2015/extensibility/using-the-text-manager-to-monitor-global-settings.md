@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839691"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>С помощью диспетчера текстов для наблюдения за глобальные параметры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ ms.locfileid: "49303316"
 ## <a name="text-manager-functions"></a>Функции диспетчера текстов  
  Диспетчер текста вызывает события для ряда параметров, включая следующие:  
   
--   Является ли буфер в систему управления версиями  
+- Является ли буфер в систему управления версиями  
   
--   Регистрация для уведомления об изменении файла  
+- Регистрация для уведомления об изменении файла  
   
--   Как для отслеживания какие представления связаны с определенным буферов  
+- Как для отслеживания какие представления связаны с определенным буферов  
   
--   Предпочтения цветовое выделение текста  
+- Предпочтения цветовое выделение текста  
   
--   Вкладки и место установки  
+- Вкладки и место установки  
   
- Параметры, которые уникальны для данного языка не находятся под управлением диспетчера текстов. Эти параметры должны управляться каждая языковая служба.  
+  Параметры, которые уникальны для данного языка не находятся под управлением диспетчера текстов. Эти параметры должны управляться каждая языковая служба.  
   
- Уведомление о событии для диспетчера текстов обеспечивается <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> интерфейс. Этот интерфейс реализуется на клиенте для обработки событий вызвал диспетчера текстов. Регистрация для этих событий с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> интерфейс в диспетчере текста.  
+  Уведомление о событии для диспетчера текстов обеспечивается <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> интерфейс. Этот интерфейс реализуется на клиенте для обработки событий вызвал диспетчера текстов. Регистрация для этих событий с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> интерфейс в диспетчере текста.  
   
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   

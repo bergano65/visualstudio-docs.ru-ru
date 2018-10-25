@@ -13,15 +13,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850188"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -35,41 +36,41 @@ ms.locfileid: "49201582"
 ## <a name="rule-description"></a>Описание правила
  [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
 
--   обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
+- обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
 
--   задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;
+- задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;
 
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> свойству присваивается синтаксического анализа.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> свойству присваивается синтаксического анализа.
 
--   недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
+- недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
 
--   Объект XmlReader.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляра или без экземпляра.
+- Объект XmlReader.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляра или без экземпляра.
 
--   <xref:System.Xml.XmlReader> создается с небезопасные параметры или значения.
+- <xref:System.Xml.XmlReader> создается с небезопасные параметры или значения.
 
- В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
+  В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
--   Перехватывайте и обрабатывайте все исключения XmlTextReader Exception соответствующим образом, чтобы не допустить раскрытия информации.
+- Перехватывайте и обрабатывайте все исключения XmlTextReader Exception соответствующим образом, чтобы не допустить раскрытия информации.
 
--   Используйте <xref:System.Xml.XmlSecureResolver> для ограничения ресурсов, которые может получить доступ XmlTextReader.
+- Используйте <xref:System.Xml.XmlSecureResolver> для ограничения ресурсов, которые может получить доступ XmlTextReader.
 
--   Не разрешать <xref:System.Xml.XmlReader> открывать любые внешние ресурсы, установив <xref:System.Xml.XmlResolver> свойства **null**.
+- Не разрешать <xref:System.Xml.XmlReader> открывать любые внешние ресурсы, установив <xref:System.Xml.XmlResolver> свойства **null**.
 
--   Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> назначено из доверенного источника.
+- Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> назначено из доверенного источника.
 
- .NET 3.5 и более ранней версии
+  .NET 3.5 и более ранней версии
 
--   Отключите обработку DTD при работе с недоверенными источниками, задав <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> свойства **true** .
+- Отключите обработку DTD при работе с недоверенными источниками, задав <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> свойства **true** .
 
--   Класс XmlTextReader содержит полное требование наследования доверия. См. в разделе [требования наследования](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Дополнительные сведения.
+- Класс XmlTextReader содержит полное требование наследования доверия. См. в разделе [требования наследования](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Дополнительные сведения.
 
- .NET 4 и более поздней версии
+  .NET 4 и более поздней версии
 
--   Не включайте DtdProcessing при работе с недоверенными источниками, задав для свойства  DtdProcessing  значение [Запретить или игнорировать](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+- Не включайте DtdProcessing при работе с недоверенными источниками, задав для свойства  DtdProcessing  значение [Запретить или игнорировать](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
 
--   Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.
+- Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.
 
 > [!NOTE]
 >  Это правило может ложно срабатывать в некоторых допустимых экземплярах XmlSecureResolver. Исправление этой проблемы будет выпущено ориентировочно в середине 2016 г.

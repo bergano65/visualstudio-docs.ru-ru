@@ -17,12 +17,12 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa03f59945b1e51d0c86aee48dde27d0fa4b326b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d198baa227052fcff9e82a4d77b12624f8340616
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825700"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,25 +73,25 @@ int Attach(
 ## <a name="remarks"></a>Примечания  
  Существуют три причины для присоединения к программе, следующим образом:  
   
--   `ATTACH_REASON_LAUNCH` Указывает, что DE присоединяется к программы, так как пользователь запустит процесс, который его содержит.  
+- `ATTACH_REASON_LAUNCH` Указывает, что DE присоединяется к программы, так как пользователь запустит процесс, который его содержит.  
   
--   `ATTACH_REASON_USER` Указывает, что пользователь явно запросил DE для присоединения к программе (или процесс, который содержит программу).  
+- `ATTACH_REASON_USER` Указывает, что пользователь явно запросил DE для присоединения к программе (или процесс, который содержит программу).  
   
--   `ATTACH_REASON_AUTO` Указывает, что DE присоединяется к конкретной программы, так как он уже отладки других программ в определенном процессе. Это также называется автоматического присоединения.  
+- `ATTACH_REASON_AUTO` Указывает, что DE присоединяется к конкретной программы, так как он уже отладки других программ в определенном процессе. Это также называется автоматического присоединения.  
   
- При вызове этого метода, DE должен отправить эти события в последовательности:  
+  При вызове этого метода, DE должен отправить эти события в последовательности:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (если он не уже был отправлен для конкретного экземпляра модуля отладки)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (если он не уже был отправлен для конкретного экземпляра модуля отладки)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Кроме того, если присоединение связано `ATTACH_REASON_LAUNCH`, DE должен отправить [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) событий.  
+   Кроме того, если присоединение связано `ATTACH_REASON_LAUNCH`, DE должен отправить [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) событий.  
   
- Приведенный ниже код один раз получает DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, соответствующий отлаживаемой программы могут запрашиваться для любого частного интерфейса.  
+   Приведенный ниже код один раз получает DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, соответствующий отлаживаемой программы могут запрашиваться для любого частного интерфейса.  
   
- Перед вызовом методов, программа узла в массиве, выданный `pProgram` или `rgpProgramNodes`, олицетворение, при необходимости, должен быть включен на `IDebugProgram2` интерфейс, представляющий узел программы. Как правило тем не менее, этот шаг необязателен. Дополнительные сведения см. в разделе [проблемы безопасности](../../../extensibility/debugger/security-issues.md).  
+   Перед вызовом методов, программа узла в массиве, выданный `pProgram` или `rgpProgramNodes`, олицетворение, при необходимости, должен быть включен на `IDebugProgram2` интерфейс, представляющий узел программы. Как правило тем не менее, этот шаг необязателен. Дополнительные сведения см. в разделе [проблемы безопасности](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

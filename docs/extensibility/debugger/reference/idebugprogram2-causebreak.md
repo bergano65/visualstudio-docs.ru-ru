@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Документы Microsoft
+title: IDebugProgram2::CauseBreak | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fb04db3342bb8ce7d5e314c9a912b873ffb627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1abd2e5c3681a63d918763b99ebc09a43fe5988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864534"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-Запросы, что программа остановить выполнение следующего время один из потоков попыток запуска.  
+Запрашивает, чтобы программа остановил выполнение следующего время один из потоков попыток запуска.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,12 +38,12 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) событие отправляется, когда программа пытается Далее для выполнения кода после вызова этого метода.  
+ [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) событий отправляется в том случае, когда программа попытается Далее для выполнения кода после вызова этого метода.  
   
- Этот метод является асинхронным, в том, что метод возвращается немедленно, без ожидания обязательно для остановки программы.  
+ Этот метод является асинхронным, в том, что метод немедленно возвращается, не обязательно ожидании остановку программы.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

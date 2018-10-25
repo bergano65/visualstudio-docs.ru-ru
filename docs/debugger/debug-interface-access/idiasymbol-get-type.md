@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_type | Документы Microsoft
+title: IDiaSymbol::get_type | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 414c66b000a7cd81783ec963d78105792d6b816b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896475"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-Возвращает символ, который представляет тип для этого символа.  
+Возвращает символ, представляющий тип для этого символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT get_type (
  [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип этого символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Для определения символа типа, необходимо вызвать этот метод и изучите результирующий [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Обратите внимание, что это возможно, что символ, не имеют типа. Например, имя структуры не имеет типа, но он может иметь дочерние символы (используйте [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) метод для проверки этих дочерних элементов).  
+ Чтобы определить тип символа, необходимо вызвать этот метод и просмотрите полученный в результате [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта. Обратите внимание на то, что существует возможность символ, не относится к типу. Например, имя структуры не имеет типа, но он может иметь дочерние символы (использовать [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) метод для проверки этих дочерних действий).  
   
 ## <a name="example"></a>Пример  
   

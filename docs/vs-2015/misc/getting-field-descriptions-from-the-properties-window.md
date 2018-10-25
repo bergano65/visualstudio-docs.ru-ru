@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814796"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Получение описаний полей из окна "Свойства"
 В нижней части окна **Свойства** в области описания отображаются сведения, относящиеся к выбранному полю свойства. Эта функция включена по умолчанию. Если необходимо скрыть поле описания, правой кнопкой мыши щелкните окно **Свойства** и выберите пункт **Описание**. При этом также снимается флажок рядом с заголовком **Описание** в окне меню. Чтобы отобразить поле повторно, выполните те же действия для включения пункта **Описание** .  
@@ -28,18 +28,18 @@ ms.locfileid: "49301513"
   
 ### <a name="to-specify-localized-help-strings"></a>Указание локализованных строк справки  
   
-1.  Добавьте атрибут `helpstringdll` в инструкцию библиотеки в библиотеке типов (`typelib`).  
+1. Добавьте атрибут `helpstringdll` в инструкцию библиотеки в библиотеке типов (`typelib`).  
   
-    > [!NOTE]
-    >  Этот шаг является необязательным, если библиотека типов находится в файле библиотеки (OLB-файле).  
+   > [!NOTE]
+   >  Этот шаг является необязательным, если библиотека типов находится в файле библиотеки (OLB-файле).  
   
-2.  Укажите атрибуты `helpstringcontext` для строк. Можно также указать атрибуты `helpstring` .  
+2. Укажите атрибуты `helpstringcontext` для строк. Можно также указать атрибуты `helpstring` .  
   
-     Они отличаются от атрибутов `helpfile` и `helpcontext` , которые содержатся в реальных разделах справки в формате CHM.  
+    Они отличаются от атрибутов `helpfile` и `helpcontext` , которые содержатся в реальных разделах справки в формате CHM.  
   
- Чтобы получить описание, которое будет отображаться для выбранного имени свойства, **свойства** вызовы в окна <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> для выбранного свойства с указанием нужного `lcid` для атрибута Выходная строка. На внутреннем уровне <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> находит DLL-файл, указанный в атрибуте `helpstringdll`, и вызывает в этом файле метод `DLLGetDocumentation` с заданным контекстом и атрибутом `lcid`.  
+   Чтобы получить описание, которое будет отображаться для выбранного имени свойства, **свойства** вызовы в окна <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> для выбранного свойства с указанием нужного `lcid` для атрибута Выходная строка. На внутреннем уровне <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> находит DLL-файл, указанный в атрибуте `helpstringdll`, и вызывает в этом файле метод `DLLGetDocumentation` с заданным контекстом и атрибутом `lcid`.  
   
- Подпись и реализация метода `DLLGetDocumentation` выглядят следующим образом.  
+   Подпись и реализация метода `DLLGetDocumentation` выглядят следующим образом.  
   
 ```  
 STDAPI DLLGetDocumentation  

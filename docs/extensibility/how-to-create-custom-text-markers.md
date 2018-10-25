@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893108"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Практическое: Создание настраиваемых текстовых маркеров
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:  
   
--   Зарегистрируйте текстового маркера доступа к ней другие средства.  
+- Зарегистрируйте текстового маркера доступа к ней другие средства.  
   
--   Предоставляют реализации по умолчанию и конфигурация текстового маркера.  
+- Предоставляют реализации по умолчанию и конфигурация текстового маркера.  
   
--   Создание службы, который может использоваться другими процессами, чтобы сделать использование текстового маркера.  
+- Создание службы, который может использоваться другими процессами, чтобы сделать использование текстового маркера.  
   
- Сведения о способах применения текстового маркера в область кода, см. в разделе [как: использовать текстовые метки](../extensibility/how-to-use-text-markers.md).  
+  Сведения о способах применения текстового маркера в область кода, см. в разделе [как: использовать текстовые метки](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Чтобы зарегистрировать пользовательский маркер  
   
-1.  Создайте запись реестра следующим образом:  
+1. Создайте запись реестра следующим образом:  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* является `GUID` используется для идентификации добавляемого маркера  
+    *\<MarkerGUID >* является `GUID` используется для идентификации добавляемого маркера  
   
-     `<Version>` — Это версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], например 8.0  
+    `<Version>` — Это версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], например 8.0  
   
-     `<PackageGUID>` Идентификатор GUID пакета VSPackage реализует объект автоматизации.  
+    `<PackageGUID>` Идентификатор GUID пакета VSPackage реализует объект автоматизации.  
   
-    > [!NOTE]
-    >  Путь к корневому каталогу **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии >** может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Путь к корневому каталогу **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии >** может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Создайте четыре значения в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
+2. Создайте четыре значения в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**  
   
-    -   (Значение по умолчанию)  
+   -   (Значение по умолчанию)  
   
-    -   Служба  
+   -   Служба  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Пакет  
+   -   Пакет  
   
-    -   `Default` является необязательным элементом типа REG_SZ. Если задано, значение параметра является строка, содержащая некоторые полезные идентификационные данные, например «Custom текстового маркера».  
+   -   `Default` является необязательным элементом типа REG_SZ. Если задано, значение параметра является строка, содержащая некоторые полезные идентификационные данные, например «Custom текстового маркера».  
   
-    -   `Service` — запись типа REG_SZ, содержащий строку идентификатора GUID службы, которая предоставляет настраиваемые текстового маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` — запись типа REG_SZ, содержащий строку идентификатора GUID службы, которая предоставляет настраиваемые текстового маркера, proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` запись типа REG_SZ, содержащая идентификатор ресурса имени пользовательского текстового маркера. Формат — #YYYY.  
+   -   `DisplayName` запись типа REG_SZ, содержащая идентификатор ресурса имени пользовательского текстового маркера. Формат — #YYYY.  
   
-    -   `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющий службы отображается в узле службы. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` запись типа REG_SZ, содержащего `GUID` VSPackage, предоставляющий службы отображается в узле службы. Формат — {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ## <a name="to-create-a-custom-text-marker"></a>Для создания маркера пользовательского текста  
   

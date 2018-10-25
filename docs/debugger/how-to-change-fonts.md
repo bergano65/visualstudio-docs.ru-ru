@@ -1,5 +1,5 @@
 ---
-title: 'Как: изменение шрифтов | Документы Microsoft'
+title: 'Практическое: изменение шрифтов | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e79893e7f06afead4a327ce9a342b77f6acb8ca9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e3d372823d3dc3e8d874bfd50e361f23ec056da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833622"
 ---
 # <a name="how-to-change-fonts"></a>Практическое руководство. Изменение шрифтов
-Можно изменить шрифт, начертание и размер шрифта для окон в Spy ++.  
+Можно изменить шрифт, начертание и размер шрифта для окнах Spy ++.  
   
 ### <a name="to-change-font-options"></a>Чтобы изменить параметры шрифта  
   
-1.  Из **представление** меню, выберите **шрифта**.  
+1. Из **представление** меню, выберите **шрифта**.  
   
-2.  Выберите шрифт, начертание и размер шрифта.  
+2. Выберите шрифт, начертание и размер шрифта.  
   
-3.  Нажмите кнопку **ОК**.  
+3. Нажмите кнопку **ОК**.  
   
- При выборе **сохранить шрифта по умолчанию** будет во всех новых окнах Spy ++ для использования данного шрифта.  
+   Выбрав **установить шрифт по умолчанию** будет во всех новых окнах Spy ++ для использования данного шрифта.  
   
 ## <a name="see-also"></a>См. также  
  [Использование Spy ++](../debugger/using-spy-increment.md)   

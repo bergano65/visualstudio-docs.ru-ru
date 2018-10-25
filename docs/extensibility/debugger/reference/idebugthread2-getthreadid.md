@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Документы Microsoft
+title: IDebugThread2::GetThreadId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac1701b3f52975e962860d558bc70b1847eef8e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4968bdd26607f68c8a1e8e4467904939ee0f528d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873452"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Получает идентификатор потока системы.  
@@ -44,13 +44,13 @@ int GetThreadId (
  [out] Возвращает идентификатор потока системы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Идентификатор потока используется для идентификации потока используются всеми потоками процесса.  
+ Идентификатор потока используется для идентификации потока используется всеми потоками процесса.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейс.  
   
 ```cpp  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     

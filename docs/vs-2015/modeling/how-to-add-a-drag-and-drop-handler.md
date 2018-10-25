@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848986"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,45 +51,45 @@ using System.Linq;
   
  В новом файле определите частичный класс для класса фигуры или схемы, который должен отвечать на операцию перетаскивания. Переопределите следующие методы.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Этот метод вызывается, когда указатель мыши входит в фигуру во время операции перетаскивания. Ваш метод должен проверить перетаскиваемый пользователем элемент и задать свойство Effect, определяющее возможность перетаскивания элемента на эту фигуру. Свойство Effect определяет отображение указателя мыши, когда он находится на этой фигуре, а также возможность вызова `OnDragDrop()`, когда пользователь отпускает кнопку мыши.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Этот метод вызывается, когда указатель мыши входит в фигуру во время операции перетаскивания. Ваш метод должен проверить перетаскиваемый пользователем элемент и задать свойство Effect, определяющее возможность перетаскивания элемента на эту фигуру. Свойство Effect определяет отображение указателя мыши, когда он находится на этой фигуре, а также возможность вызова `OnDragDrop()`, когда пользователь отпускает кнопку мыши.  
   
-    ```csharp  
-    partial class MyShape // MyShape generated from DSL Definition.  
-    {  
-        public override void OnDragOver(DiagramDragEventArgs e)  
+  ```csharp  
+  partial class MyShape // MyShape generated from DSL Definition.  
+  {  
+      public override void OnDragOver(DiagramDragEventArgs e)  
+      {  
+        base.OnDragOver(e);  
+        if (e.Effect == System.Windows.Forms.DragDropEffects.None   
+             && IsAcceptableDropItem(e)) // To be defined  
         {  
-          base.OnDragOver(e);  
-          if (e.Effect == System.Windows.Forms.DragDropEffects.None   
-               && IsAcceptableDropItem(e)) // To be defined  
-          {  
-            e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
-          }  
+          e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
         }  
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Этот метод вызывается в том случае, если пользователь отпускает кнопку мыши при наведении указателя мыши над фигурой или схемой, если `OnDragOver(DiagramDragEventArgs e)` заданные ранее `e.Effect` на значение, отличное от `None`.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Этот метод вызывается в том случае, если пользователь отпускает кнопку мыши при наведении указателя мыши над фигурой или схемой, если `OnDragOver(DiagramDragEventArgs e)` заданные ранее `e.Effect` на значение, отличное от `None`.  
   
-    ```csharp  
-    public override void OnDragDrop(DiagramDragEventArgs e)  
+  ```csharp  
+  public override void OnDragDrop(DiagramDragEventArgs e)  
+      {  
+        if (!IsAcceptableDropItem(e))  
         {  
-          if (!IsAcceptableDropItem(e))  
-          {  
-            base.OnDragDrop(e);  
-          }  
-          else   
-          { // Process the dragged item, for example merging a copy into the diagram  
-            ProcessDragDropItem(e); // To be defined  
-          }    
+          base.OnDragDrop(e);  
         }  
+        else   
+        { // Process the dragged item, for example merging a copy into the diagram  
+          ProcessDragDropItem(e); // To be defined  
+        }    
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается при двойном щелчке фигуры или схемы.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается при двойном щелчке фигуры или схемы.  
   
-     Дополнительные сведения см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Дополнительные сведения см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
- Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).  
+  Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).  
   
 ##  <a name="MEF"></a> Определение обработчиков жестов с помощью MEF  
  MEF (Managed Extensibility Framework) позволяет определять компоненты, которые можно установить с минимальной конфигурацией. Дополнительные сведения см. в разделе [Managed Extensibility Framework](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
@@ -139,32 +139,32 @@ using System.Linq;
   
  Для поиска форматов, в которых доступны сведения об источнике перетаскивания, запустите код в режиме отладки, задав точку останова на входе в `OnDragOver()` или `CanDragDrop()`. Проверьте значения параметра `DiagramDragEventArgs`. Сведения предоставляются в двух формах.  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data` — Это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:  
+- <xref:System.Windows.Forms.IDataObject>  `Data` — Это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:  
   
-    -   diagramEventArgs.Data.GetDataFormats() — перечисление форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").  
+  -   diagramEventArgs.Data.GetDataFormats() — перечисление форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").  
   
-    -   `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:  
+  -   `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:  
   
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
+       `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         Также можно передавать такие объекты, как ссылки шины модели от источника в собственный пользовательский формат. Дополнительные сведения см. в разделе [способы отправки ссылок шины модели при перетаскивании](#mbr).  
+       Также можно передавать такие объекты, как ссылки шины модели от источника в собственный пользовательский формат. Дополнительные сведения см. в разделе [способы отправки ссылок шины модели при перетаскивании](#mbr).  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Используйте это свойство, если вы хотите, чтобы пользователи перетаскивать элементы из доменного языка или модели UML. Прототип группы элементов содержит один или несколько объектов, ссылок и их значений свойств. Он также используется в операции вставки и при добавлении элемента из панели элементов. В прототипе объекты и их типы обозначаются идентификаторами GUID. Например, этот код позволяет пользователю перетаскивать элементы классов из схемы UML или Обозревателя моделей UML:  
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Используйте это свойство, если вы хотите, чтобы пользователи перетаскивать элементы из доменного языка или модели UML. Прототип группы элементов содержит один или несколько объектов, ссылок и их значений свойств. Он также используется в операции вставки и при добавлении элемента из панели элементов. В прототипе объекты и их типы обозначаются идентификаторами GUID. Например, этот код позволяет пользователю перетаскивать элементы классов из схемы UML или Обозревателя моделей UML:  
   
-    ```csharp  
-    private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
-    {  
-      return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
-            element.DomainClassId.ToString()   
-            == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
-     // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
-    }  
+  ```csharp  
+  private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
+  {  
+    return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
+          element.DomainClassId.ToString()   
+          == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
+   // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
+  }  
   
-    ```  
+  ```  
   
-     Чтобы принять фигуры UML, определите GUID классов фигур UML экспериментальным способом. Помните, что на любой схеме обычно бывает больше одного типа элементов. Кроме того, объект, перетаскиваемый из доменного языка или схемы UML, является фигурой, а не элементом модели.  
+   Чтобы принять фигуры UML, определите GUID классов фигур UML экспериментальным способом. Помните, что на любой схеме обычно бывает больше одного типа элементов. Кроме того, объект, перетаскиваемый из доменного языка или схемы UML, является фигурой, а не элементом модели.  
   
- `DiagramDragEventArgs` также имеет свойства, которые указывают текущее положение указателя мыши и ли пользователь нажимает сочетание клавиш CTRL, ALT или SHIFT.  
+  `DiagramDragEventArgs` также имеет свойства, которые указывают текущее положение указателя мыши и ли пользователь нажимает сочетание клавиш CTRL, ALT или SHIFT.  
   
 ##  <a name="getOriginal"></a> Как получение исходного перетаскиваемого элемента  
  Свойства `Data` и `Prototype` аргументов событий содержат только ссылку на перетаскиваемую фигуру. Обычно, чтобы создать объект в целевом DSL, созданном на основе прототипа, необходимо получить доступ к оригиналу, например прочитать содержимое файла или перейти к элементу модели, представленному фигурой.  Для этого можно использовать шину модели Visual Studio.  

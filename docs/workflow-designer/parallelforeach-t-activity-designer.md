@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846347"
 ---
 # <a name="parallelforeach-activity-designer"></a>Конструктор действия ParallelForEach
 
 Действие <xref:System.Activities.Statements.ParallelForEach%601> перечисляет элементы коллекции и выполняет вложенную инструкцию для каждого элемента коллекции параллельно, асинхронно в том же потоке. Это действие управления потоком следует использовать вместо действия <xref:System.Activities.Statements.Sequence>, если ожидается, что вложенные действия перейдут в режим бездействия.
 
-<xref:System.Activities.Statements.ParallelForEach%601> Действие имеет <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> свойство, которое содержит пользователя указано выражение Visual Basic. Действие <xref:System.Activities.Statements.ParallelForEach%601> вычисляет это свойство после завершения каждого участка кода. Если результат вычисления равен **true**, а затем <xref:System.Activities.Statements.ParallelForEach%601> действие завершается без выполнения других ветвей. Если <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> не равен значению **true**, а затем <xref:System.Activities.Statements.ParallelForEach%601> действие завершается после завершения всех его дочерних действий.
+<xref:System.Activities.Statements.ParallelForEach%601> Действие имеет <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> свойство, которое содержит пользователя указано выражение Visual Basic. Действие <xref:System.Activities.Statements.ParallelForEach%601> вычисляет это свойство после завершения каждой ветви кода. Если результат вычисления равен **true**, а затем <xref:System.Activities.Statements.ParallelForEach%601> действие завершается без выполнения других ветвей. Если <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> не равен значению **true**, а затем <xref:System.Activities.Statements.ParallelForEach%601> действие завершается после завершения всех его дочерних действий.
 
 ## <a name="the-parallelforeacht-activity"></a>Действие ParallelForEach < T\> действия
 
@@ -44,7 +44,7 @@ ms.locfileid: "36756910"
 В следующей таблице показаны свойства действия <xref:System.Activities.Statements.ParallelForEach%601>, которые применяются чаще всего, а также приводится описание их использования в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **ParallelForEach\<Int32 >**. Можно при необходимости изменить значение в **свойства** сетки или напрямую в заголовке конструктора действий.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите его из области элементов в **текст** поле **ParallelForEach\<T >** конструктора действий с текстом подсказки «Перетащить действие сюда».|
 |**TypeArgument**|Да|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, указанной в универсальном параметре *T*. По умолчанию **TypeArgument** присваивается **Int32**. Чтобы изменить тип T в **ParallelForEach < T\>**  конструктора действий, измените значение свойства **TypeArgument** поле со списком в сетке свойств.|
@@ -55,6 +55,6 @@ ms.locfileid: "36756910"
 
 ## <a name="see-also"></a>См. также
 
-- [Последовательности](../workflow-designer/sequence-activity-designer.md)
-- [Параллельный](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

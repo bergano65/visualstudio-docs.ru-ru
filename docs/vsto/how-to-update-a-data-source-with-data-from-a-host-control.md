@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839769"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Практическое: обновления источника данных с данными из элемента управления ведущего приложения
   Вы можете привязать элемент управления ведущего приложения к источнику данных и обновлять источник данных с помощью изменений, внесенных в данные в элементе управления. Этот процесс включает два основных этапа.  
   
-1.  Обновление источника данных в памяти с использованием измененных данных в элементе управления. Как правило, источник данных в памяти — это <xref:System.Data.DataSet>, <xref:System.Data.DataTable>или какой-либо другой объект данных.  
+1. Обновление источника данных в памяти с использованием измененных данных в элементе управления. Как правило, источник данных в памяти — это <xref:System.Data.DataSet>, <xref:System.Data.DataTable>или какой-либо другой объект данных.  
   
-2.  Обновление базы данных с использованием измененных данных в источнике данных в памяти. Это применимо только в том случае, если источник данных подключен к внутренней базе данных, например к базе данных SQL Server или Microsoft Office Access.  
+2. Обновление базы данных с использованием измененных данных в источнике данных в памяти. Это применимо только в том случае, если источник данных подключен к внутренней базе данных, например к базе данных SQL Server или Microsoft Office Access.  
   
- Дополнительные сведения об элементах управления ведущего приложения и привязке данных см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md) и [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Дополнительные сведения об элементах управления ведущего приложения и привязке данных см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md) и [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Обновление источника данных в памяти  
  По умолчанию элементы управления ведущего приложения с поддержкой простой привязки данных (например, элементы управления содержимым в документе Word или элемент управления диапазона на листе Excel) не сохраняют изменения данных в источнике данных в памяти. То есть когда пользователь изменяет значение в элементе управления ведущего приложения и затем выходит из этого элемента управления, новое значение в элементе управления не сохраняется автоматически в источнике данных.  
@@ -57,16 +57,16 @@ ms.locfileid: "35675444"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Установка автоматического обновления источника данных в памяти элементом управления с помощью кода  
   
-1.  Используйте режим System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> объект, который привязывает элемент управления к источнику данных. Обновлять источник данных можно двумя способами.  
+1. Используйте режим System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> объект, который привязывает элемент управления к источнику данных. Обновлять источник данных можно двумя способами.  
   
-    -   Для обновления источника данных при проверке элемента управления, установите это свойство в проверке.  
+   - Для обновления источника данных при проверке элемента управления, установите это свойство в проверке.  
   
-    -   Для обновления источника данных при изменении значения свойства с привязкой к данным элемента управления, установите это свойство для System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+   - Для обновления источника данных при изменении значения свойства с привязкой к данным элемента управления, установите это свойство для System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
-        > [!NOTE]  
-        >  Параметр System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged применяется для элементов управления ведущего приложения Word, поскольку Word не уведомления не предложение документа или изменение элемента управления. Однако этот вариант можно использовать для элементов управления Windows Forms в документах Word.  
+     > [!NOTE]  
+     >  Параметр System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged применяется для элементов управления ведущего приложения Word, поскольку Word не уведомления не предложение документа или изменение элемента управления. Однако этот вариант можно использовать для элементов управления Windows Forms в документах Word.  
   
-     В следующем примере элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> настраивается для автоматического обновления источника данных при изменении значения в этом элементе управления. В этом примере предполагается, что имеется элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `namedRange1` , свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> которого привязано к полю в источнике данных.  
+     В следующем примере элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> настраивается для автоматического обновления источника данных при изменении значения в этом элементе управления. В этом примере предполагается, что имеется элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `namedRange1`, свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> которого привязано к полю в источнике данных.  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  

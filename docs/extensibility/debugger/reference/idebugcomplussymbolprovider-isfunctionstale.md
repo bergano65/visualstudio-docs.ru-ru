@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale | Документы Microsoft
+title: IDebugComPlusSymbolProvider::IsFunctionStale | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5076c57ecc1a9e550f9daf869e5fe5b52a48eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbd68a17e940a7f0f183b49c8194439fd6c21d92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893461"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 Определяет, если функция по адресу указанного отладки считается устаревшей.  
@@ -39,13 +39,13 @@ int IsFunctionStale(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса. Этот адрес должен быть METHOD_ADDRESS.  
+ [in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс. Этот адрес должен быть METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Если функция считается устаревшей, возвращает `S_OK`. Если функция не является устаревшим, возвращает `S_FALSE`.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  

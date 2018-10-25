@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineesByName | Документы Microsoft
+title: IDiaSession::findInlineesByName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2551e68e2563570d4b72df2438bd747da36e59ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 47d01237d7e2235f2d50e82a8fd599384e930d2c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896267"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
-Возвращает перечисление, которое позволяет клиенту итерации сведения о номерах строк для всех встроенных функций, которые соответствуют заданному имени.  
+Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки из всех встроенных функций, которые сопоставлены заданному имени.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT findInlineesByName (
  [in] Указывает имя, используемое для сравнения.  
   
  `option`  
- [in] Задает параметры сравнения, который применяется для поиска имени. Значения из [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md) перечисления может использоваться отдельно или в сочетании.  
+ [in] Задает параметры сравнения, который применяется для поиска имени. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список номера строк, которые были получены.  
+ [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список номеров строк, которые были получены.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

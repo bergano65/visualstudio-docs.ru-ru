@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Документы Microsoft
+title: IDebugAlias::GetICorDebugValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfe0d8e4734c0d836b2dc6009fdedfa264720778
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 393d5a7310a136ad83b7cbd74fca966633ffb62e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833178"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Извлекает интерфейс управляемого кода, который представляет значение, связанное с данным псевдонимом.  
@@ -41,13 +41,13 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>Параметры  
  `ppUnk`  
- [out] `IUnknown` интерфейс, который представляет значение, связанное с данным псевдонимом. Этот интерфейс можно запрашивать `ICorDebugValue` интерфейса.  
+ [out] `IUnknown` интерфейс, который представляет значение, связанное с данным псевдонимом. Этот интерфейс может запрашиваться для `ICorDebugValue` интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод применим только в управляемых значения ( `ICorDebugValue` доступен интерфейс в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] и определяется в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK в файле CorDebug.IDL).  
+ Этот метод применим только к значениям управляемых ( `ICorDebugValue` доступен интерфейс в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] и определен в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] пакета SDK в файле CorDebug.IDL).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

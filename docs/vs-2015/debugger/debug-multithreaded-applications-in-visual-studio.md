@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897502"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ ms.locfileid: "49298146"
  [Использование точек останова](../debugger/using-breakpoints.md)  
  -   Использование фильтров точек останова при необходимости установить точку останова в отдельном потоке.  
   
--   точки трассировки дают возможность отслеживать выполнение программы без прерывания ее выполнения. Это может быть полезно для изучения неполадок, таких как взаимоблокировки.  
+- точки трассировки дают возможность отслеживать выполнение программы без прерывания ее выполнения. Это может быть полезно для изучения неполадок, таких как взаимоблокировки.  
   
- [Работа с потоками](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Понятия потоков в программировании [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], включая примеры кода.  
+  [Работа с потоками](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Понятия потоков в программировании [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], включая примеры кода.  
   
- [Многопоточность в компонентах](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Как использовать многопоточность в компонентах [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  [Многопоточность в компонентах](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Как использовать многопоточность в компонентах [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
- [Поддержка многопоточности для устаревшего кода (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Понятия потоков и примеры кода для программистов C++, использующих MFC.  
+  [Поддержка многопоточности для устаревшего кода (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Понятия потоков и примеры кода для программистов C++, использующих MFC.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)   

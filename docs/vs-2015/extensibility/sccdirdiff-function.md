@@ -17,12 +17,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2700bd452ec20aa8bf05bf5ec6bde51922356cca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74db03cdb23fd0444ca4d87ad475f4b264e97319
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863364"
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2::SetServer | Документы Microsoft
+title: IDebugPortSupplierEx2::SetServer | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 736820495f388e979de01c853233d7a17afa3d29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c1abbddd18dce9cfb7162a58496821ac2301659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896111"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 Задает основной сервер для поставщика порта.  
@@ -39,10 +39,10 @@ int SetServer(
   
 #### <a name="parameters"></a>Параметры  
  `pServer`  
- Основных серверных компонентов для установки поставщика порта.  
+ Server Core для задания поставщика порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPortSupplierEx2](../../../extensibility/debugger/reference/idebugportsupplierex2.md)

@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837949"
 ---
 # <a name="managing-universal-windows-projects"></a>Управление универсальными проектами Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ ms.locfileid: "49252815"
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Обнаружение изменений в проектах платформы и общие проекты  
   
-1.  Иерархии и проекта события можно использовать для обнаружения изменений в общих проектов, так же, как для платформы проектов. Тем не менее элементы проекта в общем проекте не отображаются, это означает, что некоторые события не срабатывают при изменении элементов в общем проекте.  
+1. Иерархии и проекта события можно использовать для обнаружения изменений в общих проектов, так же, как для платформы проектов. Тем не менее элементы проекта в общем проекте не отображаются, это означает, что некоторые события не срабатывают при изменении элементов в общем проекте.  
   
-     Рассмотрим последовательность событий при переименовании файла в проекте:  
+    Рассмотрим последовательность событий при переименовании файла в проекте:  
   
-    1.  Имя файла изменяется на диске.  
+   1. Имя файла изменяется на диске.  
   
-    2.  Файл проекта обновляется с учетом нового имени файла.  
+   2. Файл проекта обновляется с учетом нового имени файла.  
   
-     События иерархии (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) обычно отслеживания изменений, отображаемый в пользовательском Интерфейсе, как показано на **обозревателе решений**. События иерархии рассмотрим операции переименования файла, состоящий из удаление файлов, а затем добавление файла. Тем не менее, при изменении невидимые элементы иерархии система запускает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> событий, но не <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> событий. Таким образом, при переименовании файла в проекте платформы, вы получаете оба <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, но при переименовании файла в общий проект, вы получаете только <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      События иерархии (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) обычно отслеживания изменений, отображаемый в пользовательском Интерфейсе, как показано на **обозревателе решений**. События иерархии рассмотрим операции переименования файла, состоящий из удаление файлов, а затем добавление файла. Тем не менее, при изменении невидимые элементы иерархии система запускает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> событий, но не <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> событий. Таким образом, при переименовании файла в проекте платформы, вы получаете оба <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, но при переименовании файла в общий проект, вы получаете только <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Для отслеживания изменений в элементах проекта, можно обрабатывать события элемента проекта DTE (те из них см. в <xref:EnvDTE.ProjectItemsEventsClass>). Тем не менее, если обрабатывается большое количество событий, можно получить более высокую производительность, обработка событий в <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. В этом пошаговом руководстве мы покажем, как только иерархии события и события DTE. В этой процедуре Добавление прослушивателя событий для общего проекта и платформу проекта. Затем при переименовании один файл в общем проекте и другой файл в проекте платформы, вы увидите события, инициируемые для каждой операции переименования.  
+      Для отслеживания изменений в элементах проекта, можно обрабатывать события элемента проекта DTE (те из них см. в <xref:EnvDTE.ProjectItemsEventsClass>). Тем не менее, если обрабатывается большое количество событий, можно получить более высокую производительность, обработка событий в <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. В этом пошаговом руководстве мы покажем, как только иерархии события и события DTE. В этой процедуре Добавление прослушивателя событий для общего проекта и платформу проекта. Затем при переименовании один файл в общем проекте и другой файл в проекте платформы, вы увидите события, инициируемые для каждой операции переименования.  
   
-     В этой процедуре Добавление прослушивателя событий для общего проекта и платформу проекта. Затем при переименовании один файл в общем проекте и другой файл в проекте платформы, вы увидите события, инициируемые для каждой операции переименования.  
+      В этой процедуре Добавление прослушивателя событий для общего проекта и платформу проекта. Затем при переименовании один файл в общем проекте и другой файл в проекте платформы, вы увидите события, инициируемые для каждой операции переименования.  
   
-2.  Добавление прослушивателя событий. Добавьте новый файл класса в проект и назовите его HierarchyEventListener.cs.  
+2. Добавление прослушивателя событий. Добавьте новый файл класса в проект и назовите его HierarchyEventListener.cs.  
   
-3.  Откройте файл HierarchyEventListener.cs и добавьте следующие операторы using:  
+3. Откройте файл HierarchyEventListener.cs и добавьте следующие операторы using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  У `HierarchyEventListener` Реализуйте класс <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. У `HierarchyEventListener` Реализуйте класс <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Реализовать члены <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, как показано в приведенном ниже коде.  
+5. Реализовать члены <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, как показано в приведенном ниже коде.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  В этом же классе добавляться другой обработчик событий для события DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, который возникает при переименовании элемента проекта.  
+6. В этом же классе добавляться другой обработчик событий для события DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, который возникает при переименовании элемента проекта.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Подписаться на события иерархии. Вам нужно зарегистрироваться отдельно для каждого проекта, в которой выполняется трассировка. Добавьте следующий код в `ShowMessageBox`, один для общего проекта, а другой — для одного из проектов платформы.  
+7. Подписаться на события иерархии. Вам нужно зарегистрироваться отдельно для каждого проекта, в которой выполняется трассировка. Добавьте следующий код в `ShowMessageBox`, один для общего проекта, а другой — для одного из проектов платформы.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  Зарегистрируйтесь для события элемента проекта DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Добавьте следующий код после подключить второго прослушивателя.  
+8. Зарегистрируйтесь для события элемента проекта DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Добавьте следующий код после подключить второго прослушивателя.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Изменение общего элемента. Нельзя изменять общие элементы в проекте платформы; Вместо этого необходимо изменить их в общий проект, который является действительным владельцем этих элементов. Можно получить идентификатор соответствующего элемента в общем проекте с <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, предоставляя ему полный путь для общего элемента. Затем можно изменить общий элемент. Изменение распространяется на проекты платформы.  
   

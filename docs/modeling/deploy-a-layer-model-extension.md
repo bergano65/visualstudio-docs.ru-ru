@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874622"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 
@@ -29,13 +29,13 @@ ms.locfileid: "46370917"
 
 ### <a name="to-install-the-extension"></a>Установка расширения
 
-1.  В проекте, который содержит **source.vsix.manifest**откройте **bin\\ \***  в проводнике.
+1. В проекте, который содержит **source.vsix.manifest**откройте *bin* каталог в обозревателе файлов.
 
-2.  Копировать  **\*.vsix** файл на компьютер, на котором требуется установить расширение.
+2. Копировать  **\*.vsix** файл на компьютер, на котором требуется установить расширение.
 
-3.  На конечном компьютере дважды щелкните VSIX-файл в проводнике.
+3. На конечном компьютере дважды щелкните VSIX-файл в проводнике.
 
-     Откроется установщик VSIX.
+    Откроется установщик VSIX.
 
 ### <a name="to-uninstall-the-extension"></a>Удаление расширения
 

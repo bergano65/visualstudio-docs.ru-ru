@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum | Документы Microsoft
+title: IDiaPropertyStorage::Enum | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0fe51224a4b4a5abc73a3edb7a2caf239d32efb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2ff182c2600a41a0e7c13ed460418e93f88baaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871645"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Возвращает перечислитель для свойств в этом наборе.  
+Получает перечислитель для свойств в этом наборе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT Enum (
   
 #### <a name="parameters"></a>Параметры  
  `ppenum`  
- [out] Возвращает `IEnumSTATPROPSTG` объекта (в пространстве имен Microsoft.VisualStudio.OLE.Interop), представляющий перечисление свойств.  
+ [out] Возвращает `IEnumSTATPROPSTG` объект (в пространстве имен Microsoft.VisualStudio.OLE.Interop), представляющий перечисление свойств.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831826"
 ---
 # <a name="core-interfaces"></a>Базовые интерфейсы
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ ms.locfileid: "49217741"
 ## <a name="discussion"></a>Обсуждение  
  Эти интерфейсы используются главным образом для создания обработчика отладки (DE). Здесь они организованы по категориям:  
   
--   [Точки останова](#Breakpoints)  
+- [Точки останова](#Breakpoints)  
   
--   [Контексты](#Contexts)  
+- [Контексты](#Contexts)  
   
--   [Core Server](#CoreServer)  
+- [Core Server](#CoreServer)  
   
--   [Модули отладки](#DebugEngines)  
+- [Модули отладки](#DebugEngines)  
   
--   [Документы](#Documents)  
+- [Документы](#Documents)  
   
--   [События](#Events)  
+- [События](#Events)  
   
--   [Выражения](#Expressions)  
+- [Выражения](#Expressions)  
   
--   [Память](#Memory)  
+- [Память](#Memory)  
   
--   [Модули](#Modules)  
+- [Модули](#Modules)  
   
--   [Порты](#Ports)  
+- [Порты](#Ports)  
   
--   [Процессы](#Processes)  
+- [Процессы](#Processes)  
   
--   [Программы](#Programs)  
+- [Программы](#Programs)  
   
--   [Свойства](#Properties)  
+- [Свойства](#Properties)  
   
--   [Кадры стека](#StackFrames)  
+- [Кадры стека](#StackFrames)  
   
--   [Потоки](#Threads)  
+- [Потоки](#Threads)  
   
--   [Визуализаторы типа](#TypeVisualizers)  
+- [Визуализаторы типа](#TypeVisualizers)  
   
- Сущности, которые могут реализовать интерфейсы являются:  
+  Сущности, которые могут реализовать интерфейсы являются:  
   
--   Отладка ядра (DE)  
+- Отладка ядра (DE)  
   
--   Поставщика порта (PS)  
+- Поставщика порта (PS)  
   
--   Средство оценки выражений (EE)  
+- Средство оценки выражений (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Точки останова  
  Эти интерфейсы, относящиеся к реализации и отслеживания точек останова.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::get_loadAddress | Документы Microsoft
+title: IDiaSession::get_loadAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ba73b7d848388d1f4b5c039723243690345517
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864300"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
-Извлекает адрес загрузки для исполняемого файла, соответствующее символов в данном хранилище символов.  
+Извлекает адрес загрузки исполняемого файла, соответствующее символов в данном хранилище символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_loadAddress (
  [out] Возвращает виртуальный адрес (VA), в которой загружается файл .exe или DLL-файл.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Адрес возвращаемый нагрузки всегда будет равно нулю, если только специально настроены с помощью [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод.  
+ Адреса возвращаемый нагрузки всегда равно нулю, если только специально настроены с помощью [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

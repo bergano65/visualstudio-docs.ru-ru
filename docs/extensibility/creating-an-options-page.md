@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876754"
 ---
 # <a name="create-an-options-page"></a>Создайте страницу параметров
 В этом пошаговом руководстве создается простой Сервис/Параметры страницы, использующей таблицу свойств для проверки и задать свойства.  
@@ -35,9 +35,9 @@ ms.locfileid: "39498776"
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Чтобы создать проект VSIX и добавить VSPackage  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyToolsOptionsExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
+1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyToolsOptionsExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
   
-2.  Добавьте пакет VSPackage, добавив элемент шаблона пакета Visual Studio с именем `MyToolsOptionsPackage`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **пакета Visual Studio**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolsOptionsPackage.cs`. Дополнительные сведения о том, как создать пакет VSPackage, см. в разделе [создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Добавьте пакет VSPackage, добавив элемент шаблона пакета Visual Studio с именем `MyToolsOptionsPackage`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **пакета Visual Studio**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolsOptionsPackage.cs`. Дополнительные сведения о том, как создать пакет VSPackage, см. в разделе [создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Создание сетки свойств Сервис-Параметры  
   

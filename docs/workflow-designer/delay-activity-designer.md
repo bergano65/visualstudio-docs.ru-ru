@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832996"
 ---
 # <a name="delay-activity-designer"></a>Конструктор действия Delay
 
@@ -38,14 +38,14 @@ ms.locfileid: "36758457"
 В следующей таблице показаны <xref:System.Activities.Statements.Delay> свойства и показывается, как они используются в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые из них можно изменить в рабочей области конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Delay>. Значение по умолчанию - Delay. Несмотря на то что <xref:System.Activities.Activity.DisplayName%2A> значение не является обязательным, рекомендуется использовать один.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|Да|Период времени, на который задерживается выполнение рабочего процесса. Это свойство задается в таблице свойств. Введите литерал <xref:System.TimeSpan> в формате 00:00:00 или выражение Visual Basic для указания периода времени.|
 
 ## <a name="see-also"></a>См. также
 
 - [Примитивы](../workflow-designer/primitives-activity-designers.md)
-- [назначить](../workflow-designer/assign-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
 - [Конструктор действия Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)
