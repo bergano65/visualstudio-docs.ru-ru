@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription | Документы Microsoft
+title: IDebugPortSupplierDescription2::GetDescription | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c527d79c68f4ff95e002ab53b40b0fec9dd68f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8bd3ba878f0ab66cb6919ab84cd7eb8426219e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925348"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Извлекает описание и описание метаданных для поставщика порта.  
+Извлекает описания и описание метаданных поставщика порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ public int GetDescription(
   
 #### <a name="parameters"></a>Параметры  
  `pdwFlags`  
- [out] Флаги метаданные для описания.  
+ [out] Флаги метаданных для описания.  
   
  `pbstrText`  
  [out] Описание поставщика порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

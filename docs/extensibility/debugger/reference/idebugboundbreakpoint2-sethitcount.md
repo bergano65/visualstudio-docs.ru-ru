@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Документы Microsoft
+title: IDebugBoundBreakpoint2::SetHitCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afeaa33e8cb9ffa8f4d7d12c433eff0d3298ec91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c1e760e8e3553e858ed707b03f31761f7aa97a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921032"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Задает число попаданий для связанная точка останова.  
+Задает количество обращений к связанная точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,12 +45,12 @@ int SetHitCount(
  [in] Число попаданий для задания.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова устанавливается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова присваивается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
   
 ## <a name="remarks"></a>Примечания  
- Число попаданий — количество раз, когда результат этой точки останова во время выполнения текущего сеанса.  
+ Число попаданий — количество раз, когда данная точка останова возникло во время выполнения текущего сеанса.  
   
- Этот метод обычно вызывается обработчиком отладки, чтобы обновить текущий счетчик числа попаданий в эту точку останова.  
+ Как правило, этот метод вызывается подсистемой отладки, чтобы обновить текущий счетчик числа попаданий в эту точку останова.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

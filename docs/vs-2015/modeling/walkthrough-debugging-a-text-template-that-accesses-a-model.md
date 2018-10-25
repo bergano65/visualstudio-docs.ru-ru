@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924893"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "49220094"
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка  
  В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:  
   
--   Имя: DebuggingTestLanguage  
+- Имя: DebuggingTestLanguage  
   
--   Шаблон решения: минимальный язык  
+- Шаблон решения: минимальный язык  
   
--   Расширение файла: .ddd  
+- Расширение файла: .ddd  
   
--   Название компании: Fabrikam  
+- Название компании: Fabrikam  
   
- Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Создание текстового шаблона  
  Добавьте текстовый шаблон в решение.  

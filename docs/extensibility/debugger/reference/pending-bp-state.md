@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Документы Microsoft
+title: PENDING_BP_STATE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae632ab67a21d795a0594d37301c162c1c4ba753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30e70c956afc6aef5025d35425fbc2ee42605b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921074"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
-Указывает состояние ожидающая точка останова (точка останова, которая еще не привязаны).  
+Указывает состояние ожидающая точка останова (точку останова, которая еще не привязаны).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,13 +48,13 @@ public enum enum_PENDING_BP_STATE {
   
 ## <a name="members"></a>Участники  
  PBPS_NONE  
- Местозаполнитель для нуля. Это значение никогда не возвращается.  
+ Заполнитель для нуля. Это значение никогда не возвращается.  
   
  PBPS_DELETED  
  Указывает, что ожидающая точка останова была удалена.  
   
  PBPS_DISABLED  
- Указывает, что запрещено ожидающая точка останова.  
+ Указывает, ожидающая точка останова была отключена.  
   
  PBPS_ENABLED  
  Указывает, что ожидающая точка останова включена.  

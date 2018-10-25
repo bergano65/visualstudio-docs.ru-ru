@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927350"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace
 
@@ -46,7 +46,7 @@ ms.locfileid: "42624452"
 
 - [Отладка и исправление решения SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -265,15 +265,15 @@ ms.locfileid: "42624452"
 
 3. Отключите компонент, выполнив следующие действия.
 
-    1. На **действия сайта** в SharePoint, в меню выберите **параметры сайта**.
+   1. На **действия сайта** в SharePoint, в меню выберите **параметры сайта**.
 
-    2. В разделе **действия сайта**, выберите **Управление компонентами сайта** ссылку.
+   2. В разделе **действия сайта**, выберите **Управление компонентами сайта** ссылку.
 
-    3. Рядом с полем **IntelliTraceTest Feature1**, выберите **деактивировать** кнопки.
+   3. Рядом с полем **IntelliTraceTest Feature1**, выберите **деактивировать** кнопки.
 
-    4. На странице предупреждения нажмите **деактивировать этот компонент** ссылку.
+   4. На странице предупреждения нажмите **деактивировать этот компонент** ссылку.
 
-     Обработчик событий FeatureDeactivating() вызывает ошибку.
+      Обработчик событий FeatureDeactivating() вызывает ошибку.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ ms.locfileid: "42624452"
 
 2. Отключение компонента.
 
-    1. На **действия сайта** в SharePoint, в меню выберите **параметры сайта**.
+   1. На **действия сайта** в SharePoint, в меню выберите **параметры сайта**.
 
-    2. В разделе **действия сайта**, выберите **Управление компонентами сайта** ссылку.
+   2. В разделе **действия сайта**, выберите **Управление компонентами сайта** ссылку.
 
-    3. Рядом с полем **IntelliTraceTest Feature1**, выберите **деактивировать** кнопки.
+   3. Рядом с полем **IntelliTraceTest Feature1**, выберите **деактивировать** кнопки.
 
-    4. На странице предупреждения нажмите **деактивировать этот компонент** ссылку.
+   4. На странице предупреждения нажмите **деактивировать этот компонент** ссылку.
 
-     Возникает ошибка (в данном случае из-за возникшей в обработчике событий FeatureDeactivating() ошибки).
+      Возникает ошибка (в данном случае из-за возникшей в обработчике событий FeatureDeactivating() ошибки).
 
 3. В окне PowerShell выполните [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) команду, чтобы создать ITRACE-файл, остановки отслеживания и перезапуска решения SharePoint.
 

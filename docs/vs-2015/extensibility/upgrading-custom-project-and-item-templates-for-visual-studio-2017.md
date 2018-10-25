@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923450"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Обновление настраиваемых шаблонов проектов и элементов для Visual Studio «15»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Установленные обновления для расширений с. MSI  
  Некоторые расширения MSI-файл развертывания шаблонов стандартные расположения шаблона, например следующие:  
   
--   **\<Каталог установки Visual Studio > \Common7\IDE\\< Шаблоны_проекта/ItemTemplates >**  
+- **\<Каталог установки Visual Studio > \Common7\IDE\\< Шаблоны_проекта/ItemTemplates >**  
   
--   **\<Каталог установки Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< проект/ItemTemplates >**  
+- **\<Каталог установки Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< проект/ItemTemplates >**  
   
- Если расширение выполняет развертывание на основе MSI, необходимо вручную создать манифест шаблона и убедитесь, что он включен в установку расширения. Следует сравнить в приведенных выше примерах .vstman и [Visual Studio шаблон манифеста Справочник по схеме](../extensibility/visual-studio-template-manifest-schema-reference.md). Чтобы увидеть, что необходимо для включения  
+  Если расширение выполняет развертывание на основе MSI, необходимо вручную создать манифест шаблона и убедитесь, что он включен в установку расширения. Следует сравнить в приведенных выше примерах .vstman и [Visual Studio шаблон манифеста Справочник по схеме](../extensibility/visual-studio-template-manifest-schema-reference.md). Чтобы увидеть, что необходимо для включения  
   
- Необходимо создать отдельный манифесты для шаблонов проектов и элементов, и они должны указывать на корневой каталог шаблонов как указано выше. Необходимо создать один манифест каждого расширения и языковой стандарт.  
+  Необходимо создать отдельный манифесты для шаблонов проектов и элементов, и они должны указывать на корневой каталог шаблонов как указано выше. Необходимо создать один манифест каждого расширения и языковой стандарт.  
   
 ## <a name="troubleshooting-template-installation"></a>Устранение неполадок установки шаблона  
  Если возникли проблемы при развертывании шаблонов проекта или элемента, вы можете включить ведение журналов диагностики.  
   
-1.  Выполните следующую команду, чтобы задать раздел реестра, чтобы включить ведение журнала:  
+1. Выполните следующую команду, чтобы задать раздел реестра, чтобы включить ведение журнала:  
   
-     **REG добавить HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **REG добавить HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона. В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Каждый шаблон дерева инициализации добавляет записи в этот журнал.  
+2. Запустите Visual Studio и запустить новый проект и новый элемент диалоговых окнах, чтобы инициализировать обоих деревьях шаблона. В журнале шаблон появится в **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Каждый шаблон дерева инициализации добавляет записи в этот журнал.  
   
- Файл журнала содержит следующие столбцы:  
+   Файл журнала содержит следующие столбцы:  
   
 -   **FullPathToTemplate**, который имеет следующие значения:  
   

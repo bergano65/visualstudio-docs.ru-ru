@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest | Документы Microsoft
+title: IDebugPort2::GetPortRequest | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6897c3085f14be785e4baaace0de7a4e92fea9ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433f9724a712620e86cb78ab64e1ce27e6151d30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920109"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Возвращает описание порт, который ранее использовался для создания порта (если доступно).  
+Получает описание порта, который ранее использовался для создания порта (если доступно).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetPortRequest(
  [out] Возвращает [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) объект, представляющий запрос, который использовался для создания порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  Возвращает `E_PORT_NO_REQUEST` Если порт не был создан с помощью [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) порт запроса.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_PORT_NO_REQUEST` Если порт не был создан с помощью [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) порт запроса.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

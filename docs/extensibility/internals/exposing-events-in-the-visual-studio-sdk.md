@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b6c27bdd3f6806545551a766d92550622001ee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905420"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Предоставления событий в Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет источника события с помощью автоматизации. Рекомендуется, вы источник события для проектов и элементов проектов.  
@@ -28,23 +28,23 @@ ms.locfileid: "39500411"
   
  Следующий процесс объясняется, как возвращаются события определенного VSPackage.  
   
-1.  Среда начинает.  
+1. Среда начинает.  
   
-2.  Считывает из реестра все имена значений в разделе **автоматизации**, **AutomationEvents**, и **AutomationProperties** ключи всех пакетов VSPackage и хранилищ, их имена в Таблица.  
+2. Считывает из реестра все имена значений в разделе **автоматизации**, **AutomationEvents**, и **AutomationProperties** ключи всех пакетов VSPackage и хранилищ, их имена в Таблица.  
   
-3.  Потребитель автоматизации вызывает в этом примере `DTE.Events.AutomationProjectsEvents` или `DTE.Events.AutomationProjectItemsEvents`.  
+3. Потребитель автоматизации вызывает в этом примере `DTE.Events.AutomationProjectsEvents` или `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  Среда находит параметр строки в таблице и загружает соответствующий пакет VSPackage.  
+4. Среда находит параметр строки в таблице и загружает соответствующий пакет VSPackage.  
   
-5.  Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод с помощью имени, переданного в вызов; в этом примере `AutomationProjectsEvents` или `AutomationProjectItemsEvents`.  
+5. Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод с помощью имени, переданного в вызов; в этом примере `AutomationProjectsEvents` или `AutomationProjectItemsEvents`.  
   
-6.  VSPackage создается корневой объект, содержащий методы, такие как `get_AutomationProjectsEvents` и `get_AutomationProjectItemEvents` и возвращает указатель IDispatch объекта.  
+6. VSPackage создается корневой объект, содержащий методы, такие как `get_AutomationProjectsEvents` и `get_AutomationProjectItemEvents` и возвращает указатель IDispatch объекта.  
   
-7.  Среда вызывает соответствующий метод на основе имени, переданного в вызов службы автоматизации.  
+7. Среда вызывает соответствующий метод на основе имени, переданного в вызов службы автоматизации.  
   
-8.  `get_` Метод создает другой объект событий на основе IDispatch, который реализует интерфейс `IConnectionPointContainer` интерфейс и `IConnectionPoint` и возвращающий `IDispatchpointer` к объекту.  
+8. `get_` Метод создает другой объект событий на основе IDispatch, который реализует интерфейс `IConnectionPointContainer` интерфейс и `IConnectionPoint` и возвращающий `IDispatchpointer` к объекту.  
   
- Чтобы предоставить событие с помощью автоматизации, вы должны ответить <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> и Контрольное значение для строки, добавляемые к реестру. В этом примере базовый проект, являются строки *BscProjectsEvents* и *BscProjectItemsEvents*.  
+   Чтобы предоставить событие с помощью автоматизации, вы должны ответить <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> и Контрольное значение для строки, добавляемые к реестру. В этом примере базовый проект, являются строки *BscProjectsEvents* и *BscProjectItemsEvents*.  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Записи реестра из примера базовый проект  
  В этом разделе показано, где для добавления значений событий автоматизации в реестр.  
@@ -55,7 +55,7 @@ ms.locfileid: "39500411"
   
  **AutomationProjectItemEvents** = возвращает `AutomationProjectItemsEvents` объекта.  
   
-|name|Тип|Диапазон|Описание:|  
+|name|Тип|Диапазон|Описание|  
 |----------|----------|-----------|-----------------|  
 |По умолчанию (@)|REG_SZ|неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
 |*AutomationProjectsEvents*|REG_SZ|Имя объекта события.|Относится только имя ключа. Поля данных можно использовать для документации.<br /><br /> Этот пример взят из образца базовый проект.|  
@@ -72,10 +72,10 @@ ms.locfileid: "39500411"
   
  *AutomationEvents.h* и *AutomationEvents.cpp* содержать объявления и реализации классов в следующей таблице.  
   
-|Класс|Описание:|  
+|Класс|Описание|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Реализует объект корневого события, полученные из `DTE.Events` объекта.|  
-|`CProjectsEventsContainer` и `CProjectItemsEventsContainer`.|Реализации объектов источника событий, которые инициируют соответствующие события.|  
+|`CProjectsEventsContainer` и `CProjectItemsEventsContainer`|Реализации объектов источника событий, которые инициируют соответствующие события.|  
   
  В следующем примере кода показано, как ответить на запрос для объекта события.  
   

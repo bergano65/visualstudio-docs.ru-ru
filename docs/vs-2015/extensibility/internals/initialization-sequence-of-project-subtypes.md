@@ -15,12 +15,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb0ec95622df96110ec17aa1408c2298b6ec3ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883501"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Инициализация последовательности подтипов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,40 +30,40 @@ ms.locfileid: "49224085"
 ## <a name="environments-initialization-of-project-subtypes"></a>Инициализация среды подтипов проекта  
  В следующей процедуре подробно последовательность инициализации для системы проектов, упорядоченные по несколько подтипов проекта.  
   
-1.  Среда вызывает базовый проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, и хотя проект анализирует его файл проекта обнаруживает, что тип агрегатного проекта список идентификаторов GUID не `null`. Проект прекращает непосредственном создании своего проекта.  
+1. Среда вызывает базовый проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, и хотя проект анализирует его файл проекта обнаруживает, что тип агрегатного проекта список идентификаторов GUID не `null`. Проект прекращает непосредственном создании своего проекта.  
   
-2.  Вызовы проекта `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> службы для создания подтипом проекта, с помощью реализации среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> метод. В этом методе среды делает рекурсивные вызовы функции для реализации методов <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` и <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> методов, хотя он проход по списку проекта введите идентификаторы GUID, начиная с подтип внешний проект.  
+2. Вызовы проекта `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> службы для создания подтипом проекта, с помощью реализации среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> метод. В этом методе среды делает рекурсивные вызовы функции для реализации методов <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` и <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> методов, хотя он проход по списку проекта введите идентификаторы GUID, начиная с подтип внешний проект.  
   
-     Далее описаны действия по инициализации.  
+    Далее описаны действия по инициализации.  
   
-    1.  Реализация среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> вызовы методов "HrCreateInnerProj'' ' метод со следующим объявлением функции:  
+   1.  Реализация среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> вызовы методов "HrCreateInnerProj'' ' метод со следующим объявлением функции:  
   
-        ```  
-        HRESULT HrCreateInnerProj  
-        (  
-            WCHAR *pwszGuids,  
-            IUnknown *pOuter,  
-            IVsAggregatableProject *pOwner,  
-            LPCOLESTR pszFilename,  
-            LPCOLESTR pszLocation,  
-            LPCOLESTR pszName,  
-            VSCREATEPROJFLAGS grfCreateFlags,  
-            IUnknown **ppInner,  
-            BOOL *pfCancelled  
-        )  
-        ```  
+       ```  
+       HRESULT HrCreateInnerProj  
+       (  
+           WCHAR *pwszGuids,  
+           IUnknown *pOuter,  
+           IVsAggregatableProject *pOwner,  
+           LPCOLESTR pszFilename,  
+           LPCOLESTR pszLocation,  
+           LPCOLESTR pszName,  
+           VSCREATEPROJFLAGS grfCreateFlags,  
+           IUnknown **ppInner,  
+           BOOL *pfCancelled  
+       )  
+       ```  
   
-         Когда эта функция вызывается в первый раз, то есть для подтипа внешний проект, параметры `pOuter` и `pOwner` передаются в качестве `null` и функция задает подтип внешний проект `IUnknown` для `pOuter`.  
+        Когда эта функция вызывается в первый раз, то есть для подтипа внешний проект, параметры `pOuter` и `pOwner` передаются в качестве `null` и функция задает подтип внешний проект `IUnknown` для `pOuter`.  
   
-    2.  Далее среда вызывает `HrCreateInnerProj` функцию со второй GUID типа проекта в списке. Этот идентификатор GUID соответствует второй внутренний подтип проекта шаг с заходом направлении базового проекта в последовательности статистической обработки.  
+   2.  Далее среда вызывает `HrCreateInnerProj` функцию со второй GUID типа проекта в списке. Этот идентификатор GUID соответствует второй внутренний подтип проекта шаг с заходом направлении базового проекта в последовательности статистической обработки.  
   
-    3.  `pOuter` Теперь указывают на `IUnknown` подтипа внешний проект, и `HrCreateInnerProj` вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> последующим вызовом реализации метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> метод передается в управлении `IUnknown` подтипа внешний проект, `pOuter`. Принадлежащий проект (внутренний подтип проекта) должен создать свой объект агрегатного проекта. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> передается указатель на реализацию метода `IUnknown` внутреннего проекта, который агрегируется. Эти два метода создания объекта агрегата и реализации необходимо соблюдать правила модели COM статистической обработки, чтобы убедиться, что подтип проекта не в итоге содержит счетчик ссылок на себя.  
+   3.  `pOuter` Теперь указывают на `IUnknown` подтипа внешний проект, и `HrCreateInnerProj` вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> последующим вызовом реализации метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> метод передается в управлении `IUnknown` подтипа внешний проект, `pOuter`. Принадлежащий проект (внутренний подтип проекта) должен создать свой объект агрегатного проекта. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> передается указатель на реализацию метода `IUnknown` внутреннего проекта, который агрегируется. Эти два метода создания объекта агрегата и реализации необходимо соблюдать правила модели COM статистической обработки, чтобы убедиться, что подтип проекта не в итоге содержит счетчик ссылок на себя.  
   
-    4.  `HrCreateInnerProj` вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. В этом методе подтипа проекта выполняет свою работу инициализации. Можно например, зарегистрировать события решения в <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4.  `HrCreateInnerProj` вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. В этом методе подтипа проекта выполняет свою работу инициализации. Можно например, зарегистрировать события решения в <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-    5.  `HrCreateInnerProj` вызывается рекурсивно, пока не будет достигнут последний идентификатор GUID (базовый проект) в списке. Для каждого из этих вызовов шаги c-d, повторяются. `pOuter` Указывает подтип внешний проект `IUnknown` для каждого уровня статистической обработки.  
+   5.  `HrCreateInnerProj` вызывается рекурсивно, пока не будет достигнут последний идентификатор GUID (базовый проект) в списке. Для каждого из этих вызовов шаги c-d, повторяются. `pOuter` Указывает подтип внешний проект `IUnknown` для каждого уровня статистической обработки.  
   
- В следующем примере подробно процесс приблизительное представление на программный <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> метод, так как он реализован средой. Код является всего лишь примером; он не предназначен для компиляции и проверки всех ошибок был удален для ясности.  
+   В следующем примере подробно процесс приблизительное представление на программный <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> метод, так как он реализован средой. Код является всего лишь примером; он не предназначен для компиляции и проверки всех ошибок был удален для ясности.  
   
 ## <a name="example"></a>Пример  
   

@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886400"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Словарь визуального языка для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio использует общий язык visual, чтобы про
   
  **Общие рекомендации**  
   
--   Эти концепции visual должен использоваться согласованно с их определением словаря. В противном случае вы рискуете толку пользователей, которые предполагают Общие элементы для согласованного означают.  
+- Эти концепции visual должен использоваться согласованно с их определением словаря. В противном случае вы рискуете толку пользователей, которые предполагают Общие элементы для согласованного означают.  
   
--   Выбирайте только наиболее релевантные и важные основные понятия для использования в значки, чтобы изображение четким и легко отличить.  
+- Выбирайте только наиболее релевантные и важные основные понятия для использования в значки, чтобы изображение четким и легко отличить.  
   
--   Используйте только один или два понятия в каждом образе.  
+- Используйте только один или два понятия в каждом образе.  
   
--   Дополнительные стратегии для разработке значков см. в разделе [значок конструктора](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Дополнительные стратегии для разработке значков см. в разделе [значок конструктора](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Перейти к разделу:**  
+  **Перейти к разделу:**  
   
 1.  [Основные понятия A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

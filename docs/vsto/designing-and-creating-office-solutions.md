@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917186"
 ---
 # <a name="design-and-create-office-solutions"></a>Разработка и создание решений Office
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания решений Office различного типа. В этом разделе описываются шаблоны проектов и приведены рекомендации по созданию проектов Office. Сведения о реализации кода и настроек пользовательского интерфейса после создания проекта, см. в разделе [решений разработки Office](../vsto/developing-office-solutions.md).  
@@ -41,22 +41,22 @@ ms.locfileid: "35674745"
 ## <a name="choose-a-net-framework-version"></a>Выберите версию .NET Framework  
  После выбора типа проекта, наилучшим образом подходящего вашим требованиям, можно выбрать версию платформы .NET Framework, которая будет использоваться в процессе разработки. В проектах Office можно применять следующие версии платформы .NET Framework:  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- Версии платформы .NET Framework, выбранный для проекта требуется на компьютерах конечных пользователей для запуска решения. Например если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] необходим на компьютерах конечных пользователей. В этом примере решение не запустится, если только .NET Framework 3.5 устанавливается на компьютерах конечных пользователей.  
+  Версии платформы .NET Framework, выбранный для проекта требуется на компьютерах конечных пользователей для запуска решения. Например если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] необходим на компьютерах конечных пользователей. В этом примере решение не запустится, если только .NET Framework 3.5 устанавливается на компьютерах конечных пользователей.  
   
- При миграции проекта надстройки VSTO, который ориентирован на платформу .NET Framework 3.5, Visual Studio изменяет целевую платформу проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, в зависимости от установленной версии Office.  
+  При миграции проекта надстройки VSTO, который ориентирован на платформу .NET Framework 3.5, Visual Studio изменяет целевую платформу проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, в зависимости от установленной версии Office.  
   
- Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные возможности. Дополнительные сведения о том, как изменить целевую платформу, см. в разделе [как: Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Дополнительные сведения об изменениях, может потребоваться внести в проект, см. в разделе [решений Office, перенос на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные возможности. Дополнительные сведения о том, как изменить целевую платформу, см. в разделе [как: Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Дополнительные сведения об изменениях, может потребоваться внести в проект, см. в разделе [решений Office, перенос на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Если вы используете ClickOnce для развертывания решения Visual Studio изменяет целевую .NET Framework для проекта, убедитесь, что вы также выбираете соответствующую версию .NET Framework, в **предварительные требования** диалоговое окно. В случае изменения целевой платформы для своего проекта выбранное значение не будет изменяться автоматически. Дополнительные сведения см. в разделе [как: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Если вы используете ClickOnce для развертывания решения Visual Studio изменяет целевую .NET Framework для проекта, убедитесь, что вы также выбираете соответствующую версию .NET Framework, в **предварительные требования** диалоговое окно. В случае изменения целевой платформы для своего проекта выбранное значение не будет изменяться автоматически. Дополнительные сведения см. в разделе [как: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  В проектах Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], платформу .NET Framework 3.5 или более ранних версий использовать нельзя. Для проектов Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], требуются функции, которые впервые появились в [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
+>  В проектах Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], платформу .NET Framework 3.5 или более ранних версий использовать нельзя. Для проектов Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], требуются возможности, которые впервые появились в [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
   
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Понять, когда основные сборки взаимодействия Office требуются на компьютерах конечных пользователей  
  По умолчанию основные сборки взаимодействия Office (PIA) не обязательно должны быть установлены на компьютерах конечных пользователей, если **Embed Interop Types** каждой ссылки на Office PIA в проекте свойству **True**, Это значение по умолчанию. В этом сценарии сведения о типе для типов PIA, используемых в решении, внедряются в сборку решения при сборке проекта. Во время выполнения внедренные сведения о типах используется вместо основных сборок взаимодействия для вызова основанной на COM объектной моделью приложения Office. Дополнительные сведения о как внедренные типы из основных сборок взаимодействия в решении, см. в разделе [эквивалентность типов и внедренные типы взаимодействия](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

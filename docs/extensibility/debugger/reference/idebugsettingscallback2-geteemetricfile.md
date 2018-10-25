@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Документы Microsoft
+title: IDebugSettingsCallback2::GetEEMetricFile | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90bb999a976b72fc444b6c9bdf41d9ec427dffde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27e023a9b0b1c05f93209e460bc6dbc45bee4f2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927298"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Извлекает файл метрики вычислителя выражений заданным именем или метрику.  
+Извлекает метрики файла вычислителя выражений, заданной имя или метрики.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,10 +54,10 @@ private int GetEEMetricFile(
  [in] Имя метрики.  
   
  `pbstrValue`  
- [out] Возвращает содержимое файла метрики в виде строки.  
+ [out] Возвращает содержимое файла метрик в виде строки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

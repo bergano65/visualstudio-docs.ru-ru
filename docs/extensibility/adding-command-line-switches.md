@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901051"
 ---
 # <a name="add-command-line-switches"></a>Добавить параметры командной строки
 Можно добавить параметры командной строки, которые применяются к VSPackage при *devenv.exe* выполняется. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере добавляется параметр MySwitch для подкласса VSPackage с именем **AddCommandSwitchPackage** без аргументов и с пакетом VSPackage, загружаются автоматически.  
@@ -34,9 +34,9 @@ ms.locfileid: "39153302"
 
 ||||
 |-|-|-|-|
-| Параметр | Описание:|
+| Параметр | Описание|
 | Аргументы | Число аргументов для параметра. Может быть «*», или список аргументов. |
-| DemandLoad |  Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |  
+| DemandLoad | Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |  
 | HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?**. |
 | name | Переключатель. |
 | PackageGuid | Идентификатор GUID пакета. |  
@@ -54,11 +54,11 @@ ms.locfileid: "39153302"
 ## <a name="retrieve-command-line-switches"></a>Получить параметры командной строки  
  Когда загружается пакет, параметры командной строки можно получить, выполнив следующие действия.  
   
-1.  В ваш VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации, вызов `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> интерфейс.  
+1. В ваш VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации, вызов `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> интерфейс.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> для получения параметров командной строки, введенные пользователем.  
+2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> для получения параметров командной строки, введенные пользователем.  
   
- Приведенный ниже показано, как узнать ли параметра командной строки MySwitch введенный пользователем:  
+   Приведенный ниже показано, как узнать ли параметра командной строки MySwitch введенный пользователем:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

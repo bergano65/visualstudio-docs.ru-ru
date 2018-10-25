@@ -1,5 +1,5 @@
 ---
-title: Вариант сжатия текстур BC | Документы Microsoft
+title: Вариант сжатия текстур BC | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49dfc92eeede177e843c9fd98b16b030f76079c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922449"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 Включает блочное сжатие текстур, которые имеют формат пикселей, являющийся вариантом формата B8G8R8X8, B8G8R8A8 или R8G8B8A8.  
@@ -28,19 +28,19 @@ ms.locfileid: "31474405"
 ## <a name="remarks"></a>Примечания  
  Текстуры сжимаются с использованием формата с блочным сжатием при каждом вызове `ID3DDevice::CreateTexture2D`, который создает исходную текстуру. В частности, текстуры сжимаются в указанных ниже случаях.  
   
--   Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
+- Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
   
-    -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
+  -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
   
-    -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
+  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
   
-    -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
+  -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
   
-    -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
+  -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
   
--   Исходные данные передаются в вызов метода `CreateTexture2D`.  
+- Исходные данные передаются в вызов метода `CreateTexture2D`.  
   
- Ниже перечислены поддерживаемые исходные форматы и форматы с блочным сжатием.  
+  Ниже перечислены поддерживаемые исходные форматы и форматы с блочным сжатием.  
   
 |Исходный формат|Сжатый формат|  
 |------------------------------|------------------------------|  

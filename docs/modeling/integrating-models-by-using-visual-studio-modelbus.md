@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa38b1f0039f65ad7ce1e5476e5f28032c92812e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894668"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 Visual Studio ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
@@ -37,48 +37,48 @@ Visual Studio ModelBus предоставляет метод для создан
 
 ### <a name="expose"></a> Для определения DSL для шины модели
 
-1.  Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-2.  Откройте файл определения DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**.
+2. Откройте файл определения DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**.
 
-3.  В диалоговом окне выберите **я хочу предоставить этот DSL для ModelBus**. Если вы хотите, чтобы DSL предоставил свои модели и использовал ссылки на другие DSL, выберите оба параметра.
+3. В диалоговом окне выберите **я хочу предоставить этот DSL для ModelBus**. Если вы хотите, чтобы DSL предоставил свои модели и использовал ссылки на другие DSL, выберите оба параметра.
 
-4.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBusAdapter.
+4. Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBusAdapter.
 
-5.  Если вам необходимо получить доступ к DSL из текстового шаблона, измените файл AdapterManager.tt в новом проекте. Пропустите этот шаг, если доступ к DSL необходимо получить из другого кода, например из обработчика команд и событий. Дополнительные сведения см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+5. Если вам необходимо получить доступ к DSL из текстового шаблона, измените файл AdapterManager.tt в новом проекте. Пропустите этот шаг, если доступ к DSL необходимо получить из другого кода, например из обработчика команд и событий. Дополнительные сведения см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
-    1.  Измените базовый класс AdapterManagerBase на класс <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+   1. Измените базовый класс AdapterManagerBase на класс <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
 
-    2.  Ближе к концу файла вставьте перед классом AdapterManager следующий дополнительный атрибут:
+   2. Ближе к концу файла вставьте перед классом AdapterManager следующий дополнительный атрибут:
 
-         `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
+       `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-    3.  Добавьте в проект ссылки на ModelBusAdapter, **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**.
+   3. Добавьте в проект ссылки на ModelBusAdapter, **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**.
 
-     Если доступ к DSL должен предоставляться как из текстовых шаблонов, так и из другого кода, необходимо указать два адаптера — один измененный и один неизмененный.
+      Если доступ к DSL должен предоставляться как из текстовых шаблонов, так и из другого кода, необходимо указать два адаптера — один измененный и один неизмененный.
 
-6.  Нажмите кнопку **преобразовать все шаблоны**.
+6. Нажмите кнопку **преобразовать все шаблоны**.
 
-7.  Выполните повторную сборку решения.
+7. Выполните повторную сборку решения.
 
- Теперь ModelBus может открывать экземпляры этого DSL.
+   Теперь ModelBus может открывать экземпляры этого DSL.
 
- В папке `ModelBusAdapters\bin\*` содержатся сборки, построенные проектом `Dsl` и проектом `ModelBusAdapters`. Чтобы сослаться на этот DSL из другого DSL, импортируйте эти сборки.
+   В папке `ModelBusAdapters\bin\*` содержатся сборки, построенные проектом `Dsl` и проектом `ModelBusAdapters`. Чтобы сослаться на этот DSL из другого DSL, импортируйте эти сборки.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Проверка возможности ссылки на элементы
  Visual Studio ModelBus адаптеры используют идентификатор guid элемента для идентификации, по умолчанию. Это значит, что такие идентификаторы должны храниться в файле модели.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Проверка сохранности идентификаторов элемента
 
-1.  Откройте файл DslDefinition.dsl.
+1. Откройте файл DslDefinition.dsl.
 
-2.  В обозревателе DSL разверните **поведение сериализации Xml**, затем **данные класса**.
+2. В обозревателе DSL разверните **поведение сериализации Xml**, затем **данные класса**.
 
-3.  Для каждого класса, к которому необходимо создать ссылки ModelBus, сделайте следующее:
+3. Для каждого класса, к которому необходимо создать ссылки ModelBus, сделайте следующее:
 
-     Щелкните узел класса и в окне «Свойства» убедитесь, что **идентификатор сериализации** присваивается `true`.
+    Щелкните узел класса и в окне «Свойства» убедитесь, что **идентификатор сериализации** присваивается `true`.
 
- Если вместо глобального уникального идентификатора для идентификации элементов необходимо использовать имена элементов, следует переопределить части созданных адаптеров. Переопределите следующие методы в классе адаптера.
+   Если вместо глобального уникального идентификатора для идентификации элементов необходимо использовать имена элементов, следует переопределить части созданных адаптеров. Переопределите следующие методы в классе адаптера.
 
 -   Метод `GetElementId`, чтобы вернуть необходимый для использования идентификатор. Этот метод вызывается при создании ссылок.
 
@@ -109,13 +109,13 @@ Visual Studio ModelBus предоставляет метод для создан
 
 #### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Сохранение ссылки ModelBus в свойстве домена
 
-1.  В схеме "Определение DSL" принимающего DSL добавьте к классу домена свойство домена и присвойте ему имя.
+1. В схеме "Определение DSL" принимающего DSL добавьте к классу домена свойство домена и присвойте ему имя.
 
-2.  В свойствах окна, свойство домена, установите **тип** для `ModelBusReference`.
+2. В свойствах окна, свойство домена, установите **тип** для `ModelBusReference`.
 
- На данном этапе программный код может определять значение свойства, но в окне "Свойства" он доступен только для чтения.
+   На данном этапе программный код может определять значение свойства, но в окне "Свойства" он доступен только для чтения.
 
- Можно разрешить пользователям устанавливать свойство с помощью специализированного редактора ссылок ModelBus. Существует две версии этого редактора или *выбора:* один разрешает пользователям выбирать файл модели, а другой разрешает пользователям выбирать файл модели и элемент внутри модели.
+   Можно разрешить пользователям устанавливать свойство с помощью специализированного редактора ссылок ModelBus. Существует две версии этого редактора или *выбора:* один разрешает пользователям выбирать файл модели, а другой разрешает пользователям выбирать файл модели и элемент внутри модели.
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Разрешение пользователю устанавливать ссылку ModelBus в свойстве домена
 
@@ -170,17 +170,17 @@ Visual Studio ModelBus предоставляет метод для создан
 
  Например, предположим, что ссылки ModelBus необходимо сохранить в элементах DSL библиотеки MusicLibrary. Ссылки ModelBus будут ссылаться на элементы DSL FamilyTree. В проекте `Dsl` решения MusicLibrary и в узле "Ссылки" добавьте ссылки на следующие сборки:
 
--   Fabrikam.FamilyTree.Dsl.dll — предоставляемый DSL;
+- Fabrikam.FamilyTree.Dsl.dll — предоставляемый DSL;
 
--   Fabrikam.FamilyTree.ModelBusAdapters.dll — адаптер ModelBus предоставляемого DSL;
+- Fabrikam.FamilyTree.ModelBusAdapters.dll — адаптер ModelBus предоставляемого DSL;
 
--   Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0;
+- Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0;
 
--   Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.
+- Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.
 
- Эти сборки находятся в проекте `ModelBusAdapters` предоставляемого DSL в папке `bin\*`.
+  Эти сборки находятся в проекте `ModelBusAdapters` предоставляемого DSL в папке `bin\*`.
 
- В файл кода, предназначенного для создания ссылок, как правило, импортируются следующие пространства имен:
+  В файл кода, предназначенного для создания ссылок, как правило, импортируются следующие пространства имен:
 
 ```csharp
 // The namespace of the DSL you want to reference:
@@ -230,7 +230,6 @@ using (FamilyTreeAdapter adapter =
      adapter.GetElementReference(person);
   ...
 } // Dispose adapter
-
 ```
 
  Чтобы `modelReference` можно было использовать позднее, ее можно сохранить в свойстве домена, имеющем ссылку `ModelBusReference` внешнего типа:
@@ -298,46 +297,45 @@ using (FamilyTreeAdapter adapter =
 
 ##### <a name="to-resolve-modelbus-references-in-a-text-template"></a>Разрешение ссылок ModelBus в текстовом шаблоне
 
-1.  DSL, к которому необходимо получить доступ, должен иметь адаптер ModelBus, настроенный с помощью текстовых шаблонов на получение доступа. Дополнительные сведения см. в разделе [предоставляя доступ к DSL](#provide).
+1. DSL, к которому необходимо получить доступ, должен иметь адаптер ModelBus, настроенный с помощью текстовых шаблонов на получение доступа. Дополнительные сведения см. в разделе [предоставляя доступ к DSL](#provide).
 
-2.  Как правило, получение доступа к целевому DSL осуществляется с помощью ссылки ModelBus (MBR), которая хранится в исходном DSL. В связи с этим шаблон включает директиву исходного DSL и код, необходимый для разрешения MBR. Дополнительные сведения о текстовых шаблонах см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).
+2. Как правило, получение доступа к целевому DSL осуществляется с помощью ссылки ModelBus (MBR), которая хранится в исходном DSL. В связи с этим шаблон включает директиву исходного DSL и код, необходимый для разрешения MBR. Дополнительные сведения о текстовых шаблонах см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).
 
-    ```
-    <#@ template debug="true" hostspecific="true"
-    inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation" #>
-    <#@ SourceDsl processor="SourceDslDirectiveProcessor" requires="fileName='Sample.source'" #>
-    <#@ output extension=".txt" #>
-    <#@ assembly name = "Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0" #>
-    <#@ assembly name = "System.Core" #>
-    <#@ assembly name = "Company.CompartmentDragDrop.Dsl.dll" #>
-    <#@ assembly name = "Company.CompartmentDragDrop.ModelBusAdapter.dll" #>
-    <#@ import namespace="Microsoft.VisualStudio.Modeling.Integration" #>
-    <#@ import namespace="System.Linq" #>
-    <#@ import namespace="Company.CompartmentDragDrop" #>
-    <#@ import namespace="Company.CompartmentDragDrop.ModelBusAdapters" #>
-    <# // Get source root from directive processor:
-      ExampleModel source = this.ExampleModel;
-      // This DSL has a MBR in its root:
-    using (ModelBusAdapter adapter = this.ModelBus.CreateAdapter(source.ModelReference) as ModelBusAdapter)
-      {
-      ModelBusAdapterManager manager = this.ModelBus.FindAdapterManagers(this.Host.ResolvePath("Sample.compDD1")).FirstOrDefault();
-      ModelBusReference modelReference =
-        manager.CreateReference(this.Host.ResolvePath("Sample.compDD1"));
+   ```
+   <#@ template debug="true" hostspecific="true"
+   inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation" #>
+   <#@ SourceDsl processor="SourceDslDirectiveProcessor" requires="fileName='Sample.source'" #>
+   <#@ output extension=".txt" #>
+   <#@ assembly name = "Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0" #>
+   <#@ assembly name = "System.Core" #>
+   <#@ assembly name = "Company.CompartmentDragDrop.Dsl.dll" #>
+   <#@ assembly name = "Company.CompartmentDragDrop.ModelBusAdapter.dll" #>
+   <#@ import namespace="Microsoft.VisualStudio.Modeling.Integration" #>
+   <#@ import namespace="System.Linq" #>
+   <#@ import namespace="Company.CompartmentDragDrop" #>
+   <#@ import namespace="Company.CompartmentDragDrop.ModelBusAdapters" #>
+   <# // Get source root from directive processor:
+     ExampleModel source = this.ExampleModel;
+     // This DSL has a MBR in its root:
+   using (ModelBusAdapter adapter = this.ModelBus.CreateAdapter(source.ModelReference) as ModelBusAdapter)
+     {
+     ModelBusAdapterManager manager = this.ModelBus.FindAdapterManagers(this.Host.ResolvePath("Sample.compDD1")).FirstOrDefault();
+     ModelBusReference modelReference =
+       manager.CreateReference(this.Host.ResolvePath("Sample.compDD1"));
 
-      // Get the root element of this model:
-      using (CompartmentDragDropAdapter adapter =
-         this.ModelBus.CreateAdapter(modelReference) as CompartmentDragDropAdapter)
-      {
-        ModelRoot root = adapter.ModelRoot;
-    #>
-    [[<#= root.Name #>]]
-    <#
-      }
-    #>
+     // Get the root element of this model:
+     using (CompartmentDragDropAdapter adapter =
+        this.ModelBus.CreateAdapter(modelReference) as CompartmentDragDropAdapter)
+     {
+       ModelRoot root = adapter.ModelRoot;
+   #>
+   [[<#= root.Name #>]]
+   <#
+     }
+   #>
+   ```
 
-    ```
-
- Дополнительные сведения и пошаговое руководство, см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+   Дополнительные сведения и пошаговое руководство, см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
 ## <a name="serializing-a-modelbusreference"></a>Сериализация ссылки ModelBus (ModelBusReference)
  Если `ModelBusReference` (MBR) необходимо сохранить в виде строки, ее можно сериализовать:
@@ -477,37 +475,37 @@ private const string INVALID_REF_FORMAT =
 
  Щелкните правой кнопкой мыши в схему определения DSL, **включить Modelbus**, а затем выберите **включить этот DSL использовать ModelBus**:
 
--   В проекте DSL ссылка добавляется к **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+- В проекте DSL ссылка добавляется к **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
--   В окне "Определение DSL" добавляется ссылка внешнего типа: `Microsoft.VisualStudio.Modeling.Integration.ModelBusReference`.
+- В окне "Определение DSL" добавляется ссылка внешнего типа: `Microsoft.VisualStudio.Modeling.Integration.ModelBusReference`.
 
-     Вы увидите ссылку в **обозреватель DSL**в разделе **типов домена**. Чтобы добавить ссылки внешнего типа вручную, щелкните корневой узел правой кнопкой мыши.
+   Вы увидите ссылку в **обозреватель DSL**в разделе **типов домена**. Чтобы добавить ссылки внешнего типа вручную, щелкните корневой узел правой кнопкой мыши.
 
--   Добавляется новый файл шаблона, **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**.
+- Добавляется новый файл шаблона, **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**.
 
- Когда вы установите тип свойства домена для ссылки Modelbus, щелкните правой кнопкой мыши свойство и нажмите кнопку **включить специальные свойства ModelBusReference**:
+  Когда вы установите тип свойства домена для ссылки Modelbus, щелкните правой кнопкой мыши свойство и нажмите кнопку **включить специальные свойства ModelBusReference**:
 
--   В свойство домена будут добавлены несколько атрибутов CLR. Их можно увидеть в поле "Пользовательские атрибуты" окна "Свойства". В **Dsl\GeneratedCode\DomainClasses.cs**, можно просмотреть атрибуты в объявлении свойства:
+- В свойство домена будут добавлены несколько атрибутов CLR. Их можно увидеть в поле "Пользовательские атрибуты" окна "Свойства". В **Dsl\GeneratedCode\DomainClasses.cs**, можно просмотреть атрибуты в объявлении свойства:
 
-    ```csharp
-    [System.ComponentModel.TypeConverter(typeof(
-    Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
-    [System.ComponentModel.Editor(typeof(
-      Microsoft.VisualStudio.Modeling.Integration.Picker
-      .ModelReferenceEditor // or ModelElementReferenceEditor
-      ), typeof(System.Drawing.Design.UITypeEditor))]
-    [Microsoft.VisualStudio.Modeling.Integration.Picker
-      .SupplyFileBasedBrowserConfiguration
-      ("Choose a model file", "Target model|*.target")]
-    ```
+  ```csharp
+  [System.ComponentModel.TypeConverter(typeof(
+  Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
+  [System.ComponentModel.Editor(typeof(
+    Microsoft.VisualStudio.Modeling.Integration.Picker
+    .ModelReferenceEditor // or ModelElementReferenceEditor
+    ), typeof(System.Drawing.Design.UITypeEditor))]
+  [Microsoft.VisualStudio.Modeling.Integration.Picker
+    .SupplyFileBasedBrowserConfiguration
+    ("Choose a model file", "Target model|*.target")]
+  ```
 
- Если щелкнуть правой кнопкой мыши в схему определения DSL, нажмите кнопку **включить ModelBus**и выберите **предложить этот DSL для ModelBus**:
+  Если щелкнуть правой кнопкой мыши в схему определения DSL, нажмите кнопку **включить ModelBus**и выберите **предложить этот DSL для ModelBus**:
 
--   Новый проект `ModelBusAdapter` будет добавлен в решение.
+- Новый проект `ModelBusAdapter` будет добавлен в решение.
 
--   Ссылка на `ModelBusAdapter` будет добавлена в проект `DslPackage`. В `ModelBusAdapter` появится ссылка на проект `Dsl`.
+- Ссылка на `ModelBusAdapter` будет добавлена в проект `DslPackage`. В `ModelBusAdapter` появится ссылка на проект `Dsl`.
 
--   В **DslPackage\source.extention.tt**, `|ModelBusAdapter|` добавляется в качестве компонента MEF.
+- В **DslPackage\source.extention.tt**, `|ModelBusAdapter|` добавляется в качестве компонента MEF.
 
 ## <a name="see-also"></a>См. также
 
