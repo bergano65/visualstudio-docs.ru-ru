@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943145"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности отладчика в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -35,8 +35,8 @@ ms.locfileid: "46542444"
 
     Коллекция моментальных снимков доступна для следующих веб-приложений, выполняющихся в службе приложений Azure App:
 
-    * Приложения ASP.NET, выполняющиеся на платформе .NET Framework 4.6.1 или более поздней версии.
-    * Приложения ASP.NET Core, выполняющиеся на платформе .NET Core 2.0 или более поздней версии под управлением Windows.
+  * Приложения ASP.NET, выполняющиеся на платформе .NET Framework 4.6.1 или более поздней версии.
+  * Приложения ASP.NET Core, выполняющиеся на платформе .NET Core 2.0 или более поздней версии под управлением Windows.
 
     Дополнительные сведения см. в разделе [отладка работающих приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md).
 

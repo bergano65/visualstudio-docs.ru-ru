@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941715"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Команды и меню, которые используют сборки взаимодействия
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Пакет VSPackage, реализующий команды меню и панель инструментов с помощью сборок взаимодействия должен:  
   
--   Сообщите [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) о команды, он поддерживает и доступны ли они в настоящее время.  
+- Сообщите [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) о команды, он поддерживает и доступны ли они в настоящее время.  
   
--   Следовать правилам (контракт) для обработки команды.  
+- Следовать правилам (контракт) для обработки команды.  
   
--   Явная реализация обработка команд с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс.  
+- Явная реализация обработка команд с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс.  
   
- Ниже описано, как выполнить эти задачи.  
+  Ниже описано, как выполнить эти задачи.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Определение состояния команды с помощью сборок взаимодействия](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

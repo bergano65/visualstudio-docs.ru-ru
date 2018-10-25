@@ -14,23 +14,23 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa16c4c02f92f71d3288896d56b94a6d570c7dd4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930418"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Практическое руководство. Построение с использованием нескольких конфигураций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Большинство типов проектов можно создать с использованием нескольких или даже всех конфигураций сборки одновременно с помощью диалогового окна **Пакетная сборка**. Однако вы не можете одновременно выполнять сборку следующих типов проектов в нескольких конфигурациях сборок:  
   
-1.  Приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданные для Windows с использованием JavaScript.  
+1. Приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданные для Windows с использованием JavaScript.  
   
-2.  Все проекты Visual Basic.  
+2. Все проекты Visual Basic.  
   
- Дополнительные сведения о конфигурациях сборки см. в разделе [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).  
+   Дополнительные сведения о конфигурациях сборки см. в разделе [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Сборка проекта в нескольких конфигурациях сборок  
   

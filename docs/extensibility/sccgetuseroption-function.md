@@ -1,5 +1,5 @@
 ---
-title: Функция SccGetUserOption | Документы Microsoft
+title: Функция SccGetUserOption | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928208"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
-Эта функция извлекает множество параметров конкретного пользователя.  
+Эта функция получает различные параметры конкретного пользователя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ SCCRTN SccGetUserOption(
  [in] Подключаемый модуль Контекстный указатель исходного элемента управления.  
   
  nOption  
- [in] Параметр, чтобы получить (см. примечания возможные параметры).  
+ [in] Параметр, чтобы получить (см. в разделе "Примечания" для возможные варианты).  
   
  lpVal  
  [out] Значение, связанное с параметром.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
 |-----------|-----------------|  
@@ -59,7 +59,7 @@ SCCRTN SccGetUserOption(
   
 |Параметр User|Описание|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, является ли пользователь хочет извлекать локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю необходимо извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю нужно извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4805c3b9ceb62dbc790af7b1191a13476c27c9a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951383"
 ---
 # <a name="how-to-get-a-service"></a>Практическое: Получение службы
 Часто требуется получить службы Visual Studio для доступа к другой функции. Как правило службы Visual Studio предоставляет один или несколько интерфейсов, которые можно использовать. Большинство служб можно получить из VSPackage.  
@@ -29,24 +29,24 @@ ms.locfileid: "39636773"
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Получение службы из инициализированного VSPackage  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
+1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
   
-2.  Теперь Добавление пользовательской команды шаблона элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *GetServiceCommand.cs*. Дополнительные сведения о том, как создать пользовательскую команду [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Теперь Добавление пользовательской команды шаблона элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *GetServiceCommand.cs*. Дополнительные сведения о том, как создать пользовательскую команду [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  В *GetServiceCommand.cs*, удалите основную часть `MenuItemCommand` метод и добавьте следующий код:  
+3. В *GetServiceCommand.cs*, удалите основную часть `MenuItemCommand` метод и добавьте следующий код:  
   
-    ```csharp  
-    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
-    if (activityLog == null) return;  
-    System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
+   ```csharp  
+   IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
+   if (activityLog == null) return;  
+   System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
   
-    ```  
+   ```  
   
-     Этот код получает службу SVsActivityLog и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+    Этот код получает службу SVsActivityLog и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-5.  На **средства** найти меню экспериментального экземпляра **вызова GetServiceCommand** кнопки. Если щелкнуть эту кнопку, вы должны увидеть окно сообщения с текстом **найти службу журнала действий.**  
+5. На **средства** найти меню экспериментального экземпляра **вызова GetServiceCommand** кнопки. Если щелкнуть эту кнопку, вы должны увидеть окно сообщения с текстом **найти службу журнала действий.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Получение службы из контейнера средство окна или элемента управления  
  Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления.  

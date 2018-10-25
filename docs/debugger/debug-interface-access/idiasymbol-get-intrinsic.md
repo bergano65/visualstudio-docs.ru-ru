@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_intrinsic | Документы Microsoft
+title: IDiaSymbol::get_intrinsic | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5293c17d73e1c0b9232862f3b8ff491a55b7e24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 14f5525a63e4453c594cd84b248f71303b083312
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931224"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
-Возвращает флаг, указывающий, является ли класс является встроенным типом.  
+Получает флаг, указывающий, является ли класс встроенного типа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_intrinsic(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если класс является встроенным типом; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если класс является встроенного типа; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -49,7 +49,7 @@ HRESULT get_intrinsic(
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

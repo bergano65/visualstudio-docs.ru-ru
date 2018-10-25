@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 02f0fac933ea719b712d9b3bba4117915065aa65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939024"
 ---
 # <a name="combos-element"></a>Элемент combos
 Группы [элемент поля со списком](../extensibility/combo-element.md) элементов.  
@@ -38,20 +38,20 @@ ms.locfileid: "39231207"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент combos](../extensibility/combos-element.md)|Группирует элементы поля со списком.|  
 |[Элемент поля со списком](../extensibility/combo-element.md)|Определяет набор команд, отображаемых в поле со списком.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

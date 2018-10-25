@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Документы Microsoft
+title: BP_COND_STYLE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939778"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-Задает стиль условие точки останова для ожидающих и привязку точки останова.  
+Указывает стиль условие точки останова для ожидающих и привязан точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,13 +46,13 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>Участники  
  BP_COND_NONE  
- Срабатывает точка останова при достижении положение точки останова. Не указано условие точки останова.  
+ Точка останова срабатывает в том случае, когда достигается положение точки останова. Не указано условие точки останова.  
   
  BP_COND_WHEN_TRUE  
- Точка останова срабатывает, только если условное выражение, связанные с точкой останова равно `true`.  
+ Срабатывает точка останова, только если условное выражение, связанные с точкой останова принимает значение `true`.  
   
  BP_COND_WHEN_CHANGED  
- Срабатывает точка останова только в том случае, если значение условного выражения, связанной с точкой останова отличается от его предыдущей оценки.  
+ Срабатывает точка останова только в том случае, если значение условного выражения, связанное с точкой останова отличается от его предыдущей оценки.  
   
 ## <a name="remarks"></a>Примечания  
  Используется для `styleCondition` членом [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуры.  

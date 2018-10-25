@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Документы Microsoft
+title: IDebugExpressionEvaluator2::GetService | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfde812730a5f9d2fbad3144cf4298472ec2f8c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa07c11f6d7bc0cbbac2f55158012d7ce78a0e1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936697"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Получает объект службы по заданному идентификатору.  
+Извлекает объект службы по заданному идентификатору.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,16 +42,16 @@ int GetService (
   
 #### <a name="parameters"></a>Параметры  
  `uid`  
- [in] Уникальный идентификатор службы для извлечения.  
+ [in] Уникальный идентификатор извлекаемой службы.  
   
  `ppService`  
  [out] Возвращает объект, представляющий службу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Это может использоваться независимых выражений для получения служб от другого средство оценки выражений. Например этот метод может использоваться для получения интерфейса службы визуализатора из выражений по умолчанию. Вычислители выражений сторонних скорее всего потребуются для реализации этого интерфейса.  
+ Это может быть поглощен вычислитель выражений независимых производителей для получения служб из другой средство оценки выражений. Например этот метод может использоваться для получения интерфейса для службы визуализатора из средство оценки выражений по умолчанию. Вычислители выражений сторонних вряд ли должны реализовать этот интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

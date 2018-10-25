@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_cplusplusExceptionHandling | Документы Microsoft
+title: IDiaStackFrame::get_cplusplusExceptionHandling | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b342cf82c4a976a9bba7bc500fee308e5a913cbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca89decdad3a9cb7fdec221a515341639985dbda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936435"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Возвращает флаг, который указывает, является ли обработка исключений с ++ в силе.  
+Получает флаг, указывающий, если обработка исключений с ++ действует.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,15 +34,15 @@ HRESULT get_cplusplusExceptionHandling (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если обработка исключений с ++ действует для этого кадра; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если обработка исключений с ++ действует для этого фрейма; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Обработка исключений с ++ не совпадает с структурированных или система обработки исключений.  
+ Обработка исключений C++ не так же, как структурированный или система обработки исключений.  
   
- Чтобы определить, если структурированные действует обработки исключений, вызовите [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) метод.  
+ Чтобы определить, если структурированной обработки исключений действует, вызовите [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

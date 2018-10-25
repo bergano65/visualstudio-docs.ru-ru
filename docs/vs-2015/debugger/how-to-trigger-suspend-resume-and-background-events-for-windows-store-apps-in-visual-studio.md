@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938387"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Практическое руководство. Вызов событий приостановки, возобновления и фоновых событий для приложений для Магазина Windows в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49214764"
   
  [Активация фоновых задач](#BKMK_Trigger_background_tasks)  
   
--   [Активация события фоновой задачи из стандартного сеанса отладки](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Активация события фоновой задачи из стандартного сеанса отладки](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Активация фоновой задачи, когда приложение не выполняется](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Активация фоновой задачи, когда приложение не выполняется](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Активация событий управления жизненным циклом процесса и фоновых задач из установленного приложения](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Активация событий управления жизненным циклом процесса и фоновых задач из установленного приложения](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Диагностика ошибок активации фоновой задачи](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Диагностика ошибок активации фоновой задачи](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> События управления жизненным циклом процессов активации  
  Windows может приостановить работу приложения, если пользователь переходит из него или если Windows переключается в режим низкого электропотребления. Можно ответить на событие `Suspending` , чтобы сохранить соответствующие данные приложения и пользовательские данные в постоянном хранилище и чтобы освободить ресурсы. При переходе из состояния **Приостановлено** приложение возвращается в состояние **Выполняется** и продолжает работу с того момента, в котором оно было приостановлено. Можно ответить на событие `Resuming` , чтобы восстановить или обновить состояние приложения и получить назад ресурсы.  

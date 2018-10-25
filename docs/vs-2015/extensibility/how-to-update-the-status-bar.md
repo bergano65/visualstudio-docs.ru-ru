@@ -15,12 +15,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19b6c46615a41f25c5a9f3b979f1a1eed36b25f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948504"
 ---
 # <a name="how-to-update-the-status-bar"></a>Практическое: обновления строки состояния
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "49301097"
 ## <a name="robust-programming"></a>Отказоустойчивость  
  Объект **строки состояния** содержит четыре отдельные поля:  
   
--   Текст состояния  
+- Текст состояния  
   
--   Индикатор выполнения  
+- Индикатор выполнения  
   
--   Анимированный значок  
+- Анимированный значок  
   
--   Сведения о редакторе  
+- Сведения о редакторе  
   
- Дополнительные сведения см. в разделе [строки состояния](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Дополнительные сведения см. в разделе [строки состояния](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
- Интегрированная среда разработки автоматически вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> реализации при активации окна документа.  
+  Интегрированная среда разработки автоматически вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> реализации при активации окна документа.  
   
- Средство реализации VSPackage несет ответственность за обновление текст состояния в строке состояния. Интегрированной среды разработки сбрасывает эту строку, чтобы «ГОТОВ», если в текстовом поле состояния имеет значение пустой текст ("») во время простоя.  
+  Средство реализации VSPackage несет ответственность за обновление текст состояния в строке состояния. Интегрированной среды разработки сбрасывает эту строку, чтобы «ГОТОВ», если в текстовом поле состояния имеет значение пустой текст ("») во время простоя.  
   
 ## <a name="see-also"></a>См. также  
  [Строки состояния](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

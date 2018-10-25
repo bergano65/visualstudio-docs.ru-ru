@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findFileById | Документы Microsoft
+title: IDiaSession::findFileById | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed79b65823c3a777c13a90331468074347425ef5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c56d66a78b52e99aecb8cb744cc3d8465d0d243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941416"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-Извлекает исходный файл, идентификатор исходного файла.  
+Извлекает исходный файл, идентификатор файла источника.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,10 +41,10 @@ HRESULT findFileById (
  [out] Возвращает [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) извлечь объект, представляющий исходный файл.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Идентификатор исходного файла — это уникальное значение, используется внутренним образом для пакета SDK для доступа к интерфейсу отладки, чтобы сделать уникальным все исходные файлы. Этот метод обычно используется внутренне для пакета SDK для доступа к интерфейсу отладки.  
+ Идентификатор файла источника — это уникальное значение, используется внутренним образом для пакета SDK для доступа к интерфейсу отладки, чтобы сделать уникальным все исходные файлы. Этот метод обычно используется внутренне для пакета SDK для доступа к интерфейсу отладки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

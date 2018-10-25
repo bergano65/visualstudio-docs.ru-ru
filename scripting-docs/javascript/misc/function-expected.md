@@ -1,5 +1,5 @@
 ---
-title: Ожидалась функция | Документы Microsoft
+title: Ожидалась функция | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928936"
 ---
 # <a name="function-expected"></a>Ожидалась функция
-Либо предпринята попытка вызвать один из **прототип функции** методов на объекте, который не был `Function` объекта, или использовать объект в контексте вызова функции. Например, приведенный ниже код вызывает эту ошибку, так как **пример** не является функцией.  
+Либо была предпринята попытка вызвать один из **прототип функции** методов на объекте, который не был `Function` объекта или использовать объект в контексте вызова функции. Например, следующий код создает эту ошибку, так как **пример** не является функцией.  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  

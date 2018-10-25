@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949296"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "49184852"
   
  Изменения отслеживаемых двумя способами в каждой строке данных.  
   
--   Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, или <xref:System.Data.DataRowState>).  
+- Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, или <xref:System.Data.DataRowState>).  
   
--   Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен. Дополнительные сведения см. в разделе [как: получение определенных версий объекта DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен. Дополнительные сведения см. в разделе [как: получение определенных версий объекта DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
   
- <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [как: получение строк изменен](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [как: получение строк изменен](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки  
   

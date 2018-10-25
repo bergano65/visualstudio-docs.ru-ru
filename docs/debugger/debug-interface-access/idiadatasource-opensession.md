@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::openSession | Документы Microsoft
+title: IDiaDataSource::openSession | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fe9bf3a67d3ad5f26ff7c4ccdaa9772cf1346b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933512"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
-Открывается сеанс для выполнения запросов к символы.  
+Открывает сеанс для выполнения запросов к символы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT openSession (
  [out] Возвращает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект, представляющий открытый сеанс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с помощью источника символы.|  
+|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с источником символов.|  
 |E_INVALIDARG|Недопустимый `ppSession` параметра.|  
 |E_OUTOFMEMORY|Недостаточно памяти для открытия сеанса.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект для источника данных.  
+ Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объекта для источника данных.  
   
- `IDiaSession` объекты реализации запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активного в нескольких адресов в диапазоне (например, если у нескольких процессов загружены), то следует использовать один сеанс для каждого из диапазонов адресов.  
+ `IDiaSession` объекты реализацию запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активное участие в нескольких адресов диапазонов (например, так как несколько процессов будет загружен), то следует использовать один сеанс для каждого диапазона адресов.  
   
 ## <a name="example"></a>Пример  
   

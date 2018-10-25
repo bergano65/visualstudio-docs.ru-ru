@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Документы Microsoft
+title: IDebugReference2::GetMemoryBytes | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dfe557fc114cad61ae666c22be6c5f50079ee1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 023212274e2d06cd246f51497adf79fa730d1a5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951084"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Возвращает байт памяти, которые физически содержат ссылку на значение. Зарезервировано для будущего использования.  
+Получает байты памяти, которые физически содержат ссылку на значение. Зарезервировано для будущего использования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ int GetMemoryBytes (
   
 #### <a name="parameters"></a>Параметры  
  `ppMemoryBytes`  
- [out] Возвращает [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта, который может использоваться для получения памяти, который содержит ссылку на значение.  
+ [out] Возвращает [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объект, который может использоваться для получения память, содержащую значение ссылки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Всегда возвращает значение `E_NOTIMPL`.  

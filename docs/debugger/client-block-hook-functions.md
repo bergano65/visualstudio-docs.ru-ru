@@ -23,32 +23,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 837307ac97cf52ff8d7073eaab54ec934d446eab
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e9de7c0533d3ea55e7b78ca645735a60f84e66df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938023"
 ---
 # <a name="client-block-hook-functions"></a>Функции-ловушки клиентского блока
 Если нужно проверить или вывести данные, хранящиеся в блоках типа `_CLIENT_BLOCK`, можно написать для этого специальную функцию. Эта функция должна иметь прототип наподобие следующего, определенного в CRTDBG.H:  
-  
+
 ```cpp
 void YourClientDump(void *, size_t)  
-  
 ```  
-  
+
  Другими словами, функция-ловушка должна принимать **void** указатель на начало блока выделения, вместе с **size_t** введите значение, показывающее размер выделения и возвращать `void`. Все остальное задается по желанию.  
-  
+
  После установки функции ловушек с помощью [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), он будет вызываться каждый раз `_CLIENT_BLOCK` дампе блока. Затем можно использовать [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) для получения сведений о типе или подтипе выводимых блоков.  
-  
+
  Указатель на функцию, который передается `_CrtSetDumpClient` имеет тип **_CRT_DUMP_CLIENT**, как определено в CRTDBG. H:  
-  
+
 ```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
    (void *, size_t);  
 ```  
-  
+
 ## <a name="see-also"></a>См. также  
  [Написание функций отладочных ловушек](../debugger/debug-hook-function-writing.md)   
  [Образец crt_dbg2](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)   

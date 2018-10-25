@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Документы Microsoft
+title: IDebugPointerField::GetDereferencedField | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77af1428dbdd0ea9f84000bda34ea8608b17cc24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 685499cae556a50a5e98e8fe32e8104098cc79e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933252"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Этот метод возвращает тип объекта, на который указывает этот указатель объекта.  
+Этот метод возвращает тип объекта, на который указывает этот указатель на объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetDereferencedField(
  [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описанием типа целевого объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Например, если [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) объекта указывает на целое число, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) целое число типа описывает тип, возвращаемый этим методом.  
+ Например, если [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) объекта указывает на целое, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) тип, возвращаемый этим методом описывает типа integer.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   

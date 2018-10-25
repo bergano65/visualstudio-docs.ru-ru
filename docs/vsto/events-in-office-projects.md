@@ -35,12 +35,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949686"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.  
@@ -103,32 +103,32 @@ ms.locfileid: "34448718"
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
   
-### <a name="order-of-events-in-document-level-excel-projects"></a>Порядок событий в проектах уровня документа Excel  
+### <a name="order-of-events-in-document-level-excel-projects"></a>Порядок событий в проектах Excel уровня документа  
  Обработчики **Startup** событий в проектах Excel вызываются в следующем порядке:  
   
-1.  `ThisWorkbook_Startup`.  
+1. `ThisWorkbook_Startup`.  
   
-2.  `Sheet1_Startup`.  
+2. `Sheet1_Startup`.  
   
-3.  `Sheet2_Startup`.  
+3. `Sheet2_Startup`.  
   
-4.  `Sheet3_Startup`.  
+4. `Sheet3_Startup`.  
   
-5.  Другие листы по порядку.  
+5. Другие листы по порядку.  
   
- Обработчики событий **Shutdown** в решении книги вызываются в следующем порядке:  
+   Обработчики событий **Shutdown** в решении книги вызываются в следующем порядке:  
   
-1.  `ThisWorkbook_Shutdown`.  
+6. `ThisWorkbook_Shutdown`.  
   
-2.  `Sheet1_Shutdown`.  
+7. `Sheet1_Shutdown`.  
   
-3.  `Sheet2_Shutdown`.  
+8. `Sheet2_Shutdown`.  
   
-4.  `Sheet3_Shutdown`.  
+9. `Sheet3_Shutdown`.  
   
-5.  Другие листы по порядку.  
+10. Другие листы по порядку.  
   
- Порядок определяется при компиляции проекта. Если пользователь изменяет порядок листов во время выполнения, он не изменяет порядок, в том, что события вызываются при очередном открытии или закрытии книги.  
+    Порядок определяется при компиляции проекта. Если пользователь изменит листов во время выполнения, он не изменяет порядок, что события вызываются при очередном открытии или закрытии книги.  
   
 ## <a name="vsto-add-in-projects"></a>Проекты надстроек VSTO  
  Visual Studio предоставляет сформированный код в надстройках VSTO. Этот код создает два различных события: <xref:Microsoft.Office.Tools.AddInBase.Startup> и <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
@@ -140,7 +140,7 @@ ms.locfileid: "34448718"
   
  Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется Открытие документа. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Дополнительные сведения см. в разделе [доступа к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
- Дополнительные сведения о последовательности запуска надстроек VSTO см. в разделе [надстроек VSTO архитектура](../vsto/architecture-of-vsto-add-ins.md).  
+ Дополнительные сведения о последовательности запуска надстроек VSTO, см. в разделе [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
 ### <a name="shutdown-event"></a>Shutdown - событие  
  Событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> возникает, когда домен приложения, в котором загружен ваш код, готов к выгрузке. Это событие обрабатывается методом `ThisAddIn_Shutdown` в файле сформированного кода. Этот обработчик событий — последний код пользователя, выполняемый при выгрузке надстройки VSTO.  
@@ -156,9 +156,9 @@ ms.locfileid: "34448718"
 >  Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменяет завершения работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
 ## <a name="see-also"></a>См. также  
- [Разработки решений Office](../vsto/developing-office-solutions.md)   
- [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
+ [Разработка решений Office](../vsto/developing-office-solutions.md)   
+ [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
   

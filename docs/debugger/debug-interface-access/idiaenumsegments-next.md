@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Next | Документы Microsoft
+title: IDiaEnumSegments::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc61b94fb3443282c774719e21f7f7f072858bb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c9966555c673904a423de1b215e438b5db15479
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951032"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Возвращает указанное количество сегментов в последовательности перечисления.  
@@ -42,10 +42,10 @@ HRESULT Next (
  [out] Массив, который должен быть заполнен с требуемым [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объекты, представляющие сегменты.  
   
  pceltFetched  
- [out] Возвращает количество сегментов в выбранных перечислителя.  
+ [out] Возвращает число сегментов в выбранных перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии не больше сегментов. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` при наличии не больше сегментов. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

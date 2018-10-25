@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950954"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Определение пространства имен по умолчанию для проекта
 Для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], если `CustomToolNamespace` входного файла, то значение параметра установлено свойство `CustomToolNamespace` становится значением параметра пространство имен по умолчанию, передаваемый <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> метод. В противном случае `wszDefaultNamespace` параметр, передаваемый `Generate` всегда равно корневое пространство имен. Дополнительные сведения о пространствах имен см. в разделе [ключевые слова пространства имен](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ ms.locfileid: "49223331"
   
  Исключением из этого правила происходит, когда цепи иерархии содержит ссылку в веб-папку. Например если:  
   
--   FolderC были ссылку в веб-папку, пространство имен будет **CL9. FolderC**.  
+- FolderC были ссылку в веб-папку, пространство имен будет **CL9. FolderC**.  
   
--   FolderB были ссылку в веб-папку, пространство имен будет **CL9. FolderB.FolderC**.  
+- FolderB были ссылку в веб-папку, пространство имен будет **CL9. FolderB.FolderC**.  
   
- То есть пространство имен используется следующий формат:  
+  То есть пространство имен используется следующий формат:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

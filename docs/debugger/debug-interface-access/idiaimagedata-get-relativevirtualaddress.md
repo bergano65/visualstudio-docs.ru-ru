@@ -1,5 +1,5 @@
 ---
-title: IDiaImageData::get_relativeVirtualAddress | Документы Microsoft
+title: IDiaImageData::get_relativeVirtualAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2651b0ab8ee65967bba08dd415a574171759e218
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 032b4db0a69dd1aeec6b312b8506fd29d079cf0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935606"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-Получает расположение виртуальной памяти модуля относительно приложения.  
+Извлекает расположение виртуальной памяти модуля относительно приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ HRESULT get_relativeVirtualAddress (
  [out] Возвращает смещение относительного виртуальной памяти модуля.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Enable | Документы Microsoft
+title: IDebugBoundBreakpoint2::Enable | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cd5b36d8985ef36b67d5983113989a2f60bf588
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3f8589e8e7084853a4db5bb39b79c1abd6ee293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936645"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
-Включение или отключение точки останова.  
+Включает или отключает точку останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,13 +42,13 @@ int Enable(
   
 #### <a name="parameters"></a>Параметры  
  `fEnable`  
- [in] Ненулевое значение (`TRUE`) для включения или ноль (`FALSE`) отключает точку останова.  
+ [in] Задайте ненулевое значение (`TRUE`) для включения или нулевое значение (`FALSE`) отключает точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова устанавливается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова присваивается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    

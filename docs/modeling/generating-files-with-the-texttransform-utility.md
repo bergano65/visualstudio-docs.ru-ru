@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928663"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Создание файлов с помощью служебной программы TextTransform
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>Параметры
 
 |**Аргумент**|**Описание**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|Определяет имя файла шаблона, который требуется преобразовать.|
 
 |**Параметр**|**Описание**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<имя файла >|Файл, куда будут записываться выходные данные преобразования.|
 |**-r** \<сборки >|Сборка, используемая для компиляции и выполнении шаблона текста.|
 |**-u** \<пространства имен >|Пространство имен, который используется для компиляции шаблона.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>См. также
 
 |Задача|Раздел|
-|----------|-----------|
+|-|-|
 |Создание файлов в решении Visual Studio.|[Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
 |Напишите текст шаблонов узла, который позволяет вызывать текстовые шаблоны из собственного приложения.|[Обработка текстовых шаблонов с помощью пользовательского хост-класса](../modeling/processing-text-templates-by-using-a-custom-host.md)|

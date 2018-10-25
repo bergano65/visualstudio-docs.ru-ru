@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Документы Microsoft
+title: IDebugMethodField::GetGlobalContainer | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb97f61c7c475f41280b78d43c0842e5546fab2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7ead16cf796d5ecdd98adfd98bc28b6b2d9fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947890"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Получает контейнер глобального метода.  
+Возвращает контейнер глобального метода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetGlobalContainer(
  [out] Возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий модуль, в котором определен этот метод.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Возвращенный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект представляет весь модуль и является объектом искусственного, то есть сам модуль не имеет фактического класса, но она может быть представлена `IDebugClassField` объекта, позволяя различных элементы модуля перечисления и обнаружения.  
+ Возвращенный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект представляет весь модуль и является объектом искусственного, то есть сам модуль не имеют фактический класс, но она может быть представлена `IDebugClassField` объектам, различных элементы модуля перечисления и обнаружения.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

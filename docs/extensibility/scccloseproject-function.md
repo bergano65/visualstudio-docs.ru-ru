@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: abb0cd825b6b09b5fdb7ad37f8066151ee42d3fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938101"
 ---
 # <a name="scccloseproject-function"></a>Функция SccCloseProject
 Эта функция закрывает проект, отмечающую конец конкретного сеанса.  
@@ -40,7 +40,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Проект был успешно закрыт.|  
 |SCC_E_PROJNOTOPEN|Проект не открыт.|  

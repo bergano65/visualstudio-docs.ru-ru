@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetEngineFilter | Документы Microsoft
+title: IDebugProcess3::GetEngineFilter | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c592220267444818f7310895974b92cd02c69a62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 487ac0f77307a58aab36fdfd55fad67d4bc9ce51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948542"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
-Извлекает массив уникальных идентификаторов для Доступные отладчики.  
+Извлекает массив уникальных идентификаторов для доступных отладчиков.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ public int GetEngineFilter(
   
 #### <a name="parameters"></a>Параметры  
  `pEngineArray`  
- [out] Ссылка на структуру, содержащую уникальные идентификаторы для отладчики.  
+ [out] Ссылка на структуру, содержащую уникальные идентификаторы для обработчиков отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

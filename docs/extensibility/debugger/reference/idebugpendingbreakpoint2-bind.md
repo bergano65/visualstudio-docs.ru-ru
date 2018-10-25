@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Документы Microsoft
+title: IDebugPendingBreakpoint2::Bind | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933707"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-Привязывает этот ожидающая точка останова одно или несколько расположений кода.  
+Связывает этот ожидающая точка останова одно или несколько расположений кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
 ## <a name="remarks"></a>Примечания  
- При вызове этого метода следует попытаться привязать этот ожидающая точка останова ко всем местоположениям кода, которые соответствуют модуля отладки (DE).  
+ При вызове этого метода, модуля отладки (DE) стоит пытаться привязать все расположения кода, которые соответствуют этой ожидающая точка останова.  
   
- После возврата этого метода, вызывающая сторона должна дождаться события, указывающее, что ожидающая точка останова имеет связанные предшествует ошибке при условии, что вызовы [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) или [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods перечисляет все точки останова границу или ошибки, соответственно.  
+ После возврата этого метода, вызывающий объект должен ожидать события, указывающую, что ожидающая точка останова имеет связанные или предшествует ошибке при условии, что вызовы [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) или [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)методах перечислит все точки останова границу или ошибки, соответственно.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

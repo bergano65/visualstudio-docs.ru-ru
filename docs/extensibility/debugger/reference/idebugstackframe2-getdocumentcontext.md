@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDocumentContext | Документы Microsoft
+title: IDebugStackFrame2::GetDocumentContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14e7374fbea697b86d9ee838a6b8a76a57f920ff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 908aef9ab784300ef4a9d30b8d16df14ff78b91d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942196"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
-Возвращает контекст документа для этого кадра стека.  
+Получает контекст документа для этого кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>Параметры  
  `ppCxt`  
- [out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) , представляющий текущую позицию в исходном документе.  
+ [out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) , представляющий текущую позицию в исходный документ.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод работает быстрее, чем вызов [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) метода и затем вызвать [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) метод контекст кода. Тем не менее не гарантируется, этот метод реализуется каждого модуля отладки (DE).  
+ Этот метод работает быстрее, чем вызов [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) метод и последующего вызова [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) метод контекст кода. Тем не менее не гарантируется, этот метод реализуется каждый модуль отладки (DE).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
