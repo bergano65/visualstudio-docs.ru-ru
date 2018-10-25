@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Документы Microsoft
+title: IDiaSymbol::get_hfaFloat | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede9f02aa7fa4498e12382f22c43f4421342b669
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900245"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-Возвращает флаг, указывающий, содержит ли определяемых пользователем типов (UDT) однородные с плавающей запятой статистические данные (HFA) типа float.  
+Получает флаг, указывающий, содержит ли определяемого пользователем типа (UDT) однородных данных с плавающей запятой aggregate (HFA) типа float.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_hfaFloat(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип содержит HFA данных типа float; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если определяемого пользователем ТИПА содержит HFA данных типа float; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -49,7 +49,7 @@ HRESULT get_hfaFloat(
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

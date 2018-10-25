@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926550"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы Visual Studio команды
 Значения GUID и идентификатор команды, добавленные в среде разработки Visual Studio (IDE) определяются в файлах .vsct, установленные как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,23 +34,23 @@ ms.locfileid: "39500877"
   
 ### <a name="to-locate-a-command-definition"></a>Для этого найдите определение команды  
   
-1.  В Visual Studio, откройте следующие файлы в *< путь установки Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  папки: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. В Visual Studio, откройте следующие файлы в *< путь установки Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  папки: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
-     Большинство команд Visual Studio определяются в *SharedCmdDef.vsct* и *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* определяет команды, относящиеся к отладчику, и *Venusmenu.vsct* определяет команды, относящиеся к веб-разработки.  
+    Большинство команд Visual Studio определяются в *SharedCmdDef.vsct* и *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* определяет команды, относящиеся к отладчику, и *Venusmenu.vsct* определяет команды, относящиеся к веб-разработки.  
   
-2.  Если команда в данный элемент меню, обратите внимание, точный текст пункта меню. Если команда является кнопки на панели инструментов, обратите внимание, текст подсказки, отображаемой при наведении на него.  
+2. Если команда в данный элемент меню, обратите внимание, точный текст пункта меню. Если команда является кнопки на панели инструментов, обратите внимание, текст подсказки, отображаемой при наведении на него.  
   
-3.  Нажмите клавишу **Ctrl**+**F** открыть **найти** диалоговое окно.  
+3. Нажмите клавишу **Ctrl**+**F** открыть **найти** диалоговое окно.  
   
-4.  В **найти** введите текст, записанный на шаге 2.  
+4. В **найти** введите текст, записанный на шаге 2.  
   
-5.  Убедитесь, что **все открытые документы** отображается в **папка** поле.  
+5. Убедитесь, что **все открытые документы** отображается в **папка** поле.  
   
-6.  Нажмите кнопку **Найти далее** переключатель, пока текст выбран в `<Strings>` раздел [элемент Button](../../extensibility/button-element.md).  
+6. Нажмите кнопку **Найти далее** переключатель, пока текст выбран в `<Strings>` раздел [элемент Button](../../extensibility/button-element.md).  
   
-     `<Button>` Элемент, который команда отображается в — определение команды.  
+    `<Button>` Элемент, который команда отображается в — определение команды.  
   
- Когда вы найдете определения команды, можно поместить копию команды на другом меню или панели инструментов, создав [элемент CommandPlacement](../../extensibility/commandplacement-element.md) с тем же установленным `guid` и `id` значения, что команда. Дополнительные сведения см. в разделе [создание повторно используемых групп кнопок](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Когда вы найдете определения команды, можно поместить копию команды на другом меню или панели инструментов, создав [элемент CommandPlacement](../../extensibility/commandplacement-element.md) с тем же установленным `guid` и `id` значения, что команда. Дополнительные сведения см. в разделе [создание повторно используемых групп кнопок](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Особые случаи  
  В следующих случаях текст меню или текст подсказки может не совпадать в определение команды.  

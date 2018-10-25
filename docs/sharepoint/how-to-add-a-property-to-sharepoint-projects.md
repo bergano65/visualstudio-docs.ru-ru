@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898418"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Практическое: Добавление свойства в проекты SharePoint
   Расширение проекта можно использовать для добавления свойства в любой проект SharePoint. Свойство отображается в **свойства** окно при выборе проекта в **обозревателе решений**.  
@@ -48,11 +48,11 @@ ms.locfileid: "36758563"
   
  Чтобы сохранить изменения значений свойств, **задать** методы доступа свойств используют следующие API:  
   
--   `CustomUserFileProperty` использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство для сохранения его значения в файл пользовательских параметров проекта.  
+- `CustomUserFileProperty` использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство для сохранения его значения в файл пользовательских параметров проекта.  
   
--   `CustomProjectFileProperty` использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить его значение в файл проекта.  
+- `CustomProjectFileProperty` использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить его значение в файл проекта.  
   
- Дополнительные сведения о сохранении данных в этих файлах см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+  Дополнительные сведения о сохранении данных в этих файлах см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>Указать поведение пользовательских свойств  
  Можно определить, как выглядит и ведет себя как пользовательское свойство **свойства** окна, применяя различные атрибуты из <xref:System.ComponentModel> пространство имен для определения свойства. Следующие атрибуты полезны во многих сценариях:  

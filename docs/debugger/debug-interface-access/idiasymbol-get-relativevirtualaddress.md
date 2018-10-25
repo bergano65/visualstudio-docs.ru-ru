@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_relativeVirtualAddress | Документы Microsoft
+title: IDiaSymbol::get_relativeVirtualAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5c1655930e4f4e841a9cff4f2146aaf5749381
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5056c149559cfb6760890fb960ec608042839e4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949790"
 ---
 # <a name="idiasymbolgetrelativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
-Получает относительный виртуальный адрес (RVA) расположение. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) равно `LocIsStatic`.  
+Возвращает относительный виртуальный адрес (RVA) расположение. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsStatic`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_relativeVirtualAddress (
  [out] Возвращает относительный виртуальный адрес расположения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="example"></a>Пример  
   

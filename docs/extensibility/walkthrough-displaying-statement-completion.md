@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879328"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство: Завершение операторов отображение
 Завершение операторов на основе языка можно реализовать путем определения идентификаторов, для которых вы хотите предоставить завершения и затем активировать сеанс завершения. Можно определить завершение операторов в контексте языковой службы, определите расширение имени файла и тип содержимого и затем отобразить завершение только этого типа. Или вы можете активировать завершение существующий тип контента, например, «обычный текст». В этом пошаговом руководстве показано, как требуется активировать завершение операторов для типа содержимого «обычный текст», который является типом содержимого текстовых файлов. Тип содержимого «text» является предком всех других типов содержимого, включая код и XML-файлы.  
@@ -59,7 +59,7 @@ ms.locfileid: "39497746"
   
 ### <a name="to-implement-the-completion-source"></a>Для реализации источник завершения  
   
-1.  Добавьте файл класса и назовите его `TestCompletionSource`.  
+1.  Добавьте файл класса с именем `TestCompletionSource`.  
   
 2.  Добавьте эти объекты импорта:  
   
@@ -148,48 +148,48 @@ ms.locfileid: "39497746"
   
 #### <a name="to-implement-the-completion-command-handler"></a>Чтобы реализовать обработчик завершения команды  
   
-1.  Добавьте класс с именем `TestCompletionCommandHandler` , реализующий <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Добавьте класс с именем `TestCompletionCommandHandler` , реализующий <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Добавьте закрытые поля для следующий обработчик команд (к которому передать команду), представление текста, поставщиком обработчик команд (который позволяет получать доступ к различным службам) и сеанс завершения:  
+2. Добавьте закрытые поля для следующий обработчик команд (к которому передать команду), представление текста, поставщиком обработчик команд (который позволяет получать доступ к различным службам) и сеанс завершения:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Добавьте конструктор, который задает представления текста и поля поставщика и добавляет команду в цепочку команды:  
+3. Добавьте конструктор, который задает представления текста и поля поставщика и добавляет команду в цепочку команды:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, передав команды вместе:  
+4. Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, передав команды вместе:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Выполните метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Когда этот метод получает нажатие клавиши, он должен выполнить одно из этих вещей:  
+5. Выполните метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Когда этот метод получает нажатие клавиши, он должен выполнить одно из этих вещей:  
   
-    -   Разрешить символ для записи в буфер и затем активировать или фильтрации завершения. (Печать символов для этого.)  
+   - Разрешить символ для записи в буфер и затем активировать или фильтрации завершения. (Печать символов для этого.)  
   
-    -   Фиксировать завершение, но не разрешать символ, записываемый в буфер. (Пробелы, **вкладке**, и **ввод** это сделать, если сеанс завершения отображается.)  
+   - Фиксировать завершение, но не разрешать символ, записываемый в буфер. (Пробелы, **вкладке**, и **ввод** это сделать, если сеанс завершения отображается.)  
   
-    -   Разрешить команда передается следующий обработчик. (Все другие команды.)  
+   - Разрешить команда передается следующий обработчик. (Все другие команды.)  
   
      Так как этот метод может отобразить пользовательский Интерфейс, вызывать <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> чтобы убедиться в том, что он не вызывается в контексте службы автоматизации:  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Этот код — это закрытый метод, который запускает сеанс завершения:  
+6. Этот код — это закрытый метод, который запускает сеанс завершения:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  В следующем примере выполняются закрытый метод, который отменяет подписку <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> событий:  
+7. В следующем примере выполняются закрытый метод, который отменяет подписку <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> событий:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Построение и тестирование кода  
  Чтобы протестировать этот код, выполните сборку решения CompletionTest и запустите его в экспериментальном экземпляре.  

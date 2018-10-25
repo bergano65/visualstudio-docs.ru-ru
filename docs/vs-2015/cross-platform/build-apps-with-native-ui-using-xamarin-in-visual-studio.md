@@ -13,12 +13,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2f1971f2c9ed3cb7742c7144cf35708789f4a92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879315"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,62 +42,62 @@ ms.locfileid: "49193522"
   
 > [!TIP]
 >  Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
->
+> 
 >   При возникновении проблем или ошибок разместите свой вопрос на сайте [forums.xamarin.com](http://forums.xamarin.com). Для исправления многих ошибок можно обновить пакеты SDK Xamarin до последней версии. Эти пакеты описаны в разделе [Заметки о выпуске Xamarin](https://developer.xamarin.com/releases/) для каждой платформы.    
-  
+> 
 > [!NOTE]
 >  Документация для разработчиков Xamarin также предлагает несколько пошаговых руководств с разделами "Краткое руководство" и "Подробное рассмотрение", приведенными ниже. На этих страницах убедитесь, что выбран пункт Visual Studio в правом верхнем углу страницы, чтобы увидеть пошаговые руководства именно для Visual Studio.  
->   
->  -   Приложения Xamarin с нативным пользовательским интерфейсом:  
->   
->      -   [Привет, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (простое приложение с одним экраном)  
->     -   [Привет, Android (несколько экранов)](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (приложение с переходами между экранами)  
->     -   [Пошаговое руководство по фрагментам в Android](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (помимо прочего, используется для иерархических экранов)  
->     -   [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Привет, iOS (несколько экранов)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   Приложения Xamarin с Xamarin.Forms (общий пользовательский интерфейс)  
->   
->      -   [Привет, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [Привет, Xamarin.Forms (несколько экранов)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+> 
+> - Приложения Xamarin с нативным пользовательским интерфейсом:  
+> 
+>   -   [Привет, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (простое приложение с одним экраном)  
+>   -   [Привет, Android (несколько экранов)](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (приложение с переходами между экранами)  
+>   -   [Пошаговое руководство по фрагментам в Android](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (помимо прочего, используется для иерархических экранов)  
+>   -   [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
+>   -   [Привет, iOS (несколько экранов)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
+>   -   Приложения Xamarin с Xamarin.Forms (общий пользовательский интерфейс)  
+> 
+>   -   [Привет, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>   -   [Привет, Xamarin.Forms (несколько экранов)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a> Настройка решения  
  С помощью этих действий создается решение Xamarin с собственным пользовательским интерфейсом, которое содержит переносимую библиотеку классов для общего кода и два добавленных пакета NuGet.  
   
-1.  В Visual Studio создайте решение **Пустое приложение (Native Portable)** и назовите его **WeatherApp**. Чтобы найти этот шаблон, введите **Native Portable** в поле поиска.  
+1. В Visual Studio создайте решение **Пустое приложение (Native Portable)** и назовите его **WeatherApp**. Чтобы найти этот шаблон, введите **Native Portable** в поле поиска.  
   
-     Если он отсутствует, может потребоваться установить Xamarin или включить компонент Visual Studio 2015 (см. статью [Setup and install](../cross-platform/setup-and-install.md)).  
+    Если он отсутствует, может потребоваться установить Xamarin или включить компонент Visual Studio 2015 (см. статью [Setup and install](../cross-platform/setup-and-install.md)).  
   
-2.  Нажав кнопку "ОК" для создания решения, вы получите несколько отдельных проектов.  
+2. Нажав кнопку "ОК" для создания решения, вы получите несколько отдельных проектов.  
   
-    -   **WeatherApp (переносимое)**: библиотека переносимых классов, в которой вы напишете общий код для разных платформ, включая общую бизнес-логику и код пользовательского интерфейса с помощью Xamarin.Forms.  
+   - **WeatherApp (переносимое)**: библиотека переносимых классов, в которой вы напишете общий код для разных платформ, включая общую бизнес-логику и код пользовательского интерфейса с помощью Xamarin.Forms.  
   
-    -   **WeatherApp.Droid**: проект, который содержит машинный код для Android. Он задается как запускаемый проект по умолчанию.  
+   - **WeatherApp.Droid**: проект, который содержит машинный код для Android. Он задается как запускаемый проект по умолчанию.  
   
-    -   **WeatherApp.iOS**: проект, который содержит машинный код для iOS.  
+   - **WeatherApp.iOS**: проект, который содержит машинный код для iOS.  
   
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**: проект, который содержит машинный код Windows Phone.  
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**: проект, который содержит машинный код Windows Phone.  
   
      В каждом проекте с машинным кодом вы получите доступ к собственному конструктору для соответствующей платформы и сможете реализовать окна для конкретной платформы.  
   
-3.  Добавьте **Newtonsoft.Json** и пакет NuGet в проект PCL. Они будут использоваться для обработки информации, полученной от службы данных о погоде.  
+3. Добавьте **Newtonsoft.Json** и пакет NuGet в проект PCL. Они будут использоваться для обработки информации, полученной от службы данных о погоде.  
   
-    -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения...** .  
+   -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения...** .  
   
-         В окне NuGet перейдите на вкладку **Обзор** и наберите **Newtonsoft** в строке поиска.  
+        В окне NuGet перейдите на вкладку **Обзор** и наберите **Newtonsoft** в строке поиска.  
   
-    -   Выберите **Newtonsoft.Json**.  
+   -   Выберите **Newtonsoft.Json**.  
   
-    -   В правой части окна установите флажок для проекта **WeatherApp** (это единственный проект, в котором потребуется установить пакет).  
+   -   В правой части окна установите флажок для проекта **WeatherApp** (это единственный проект, в котором потребуется установить пакет).  
   
-    -   Убедитесь, что в поле **Версия** указана **последняя стабильная** версия.  
+   -   Убедитесь, что в поле **Версия** указана **последняя стабильная** версия.  
   
-    -   Нажмите кнопку **Установить**.  
+   -   Нажмите кнопку **Установить**.  
   
-    -   ![Поиск и установка пакета NuGet Newtonsoft.Json](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+   -   ![Поиск и установка пакета NuGet Newtonsoft.Json](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-4.  Повторите шаг 3 для поиска и установки пакета **Microsoft.Net.Http**.  
+4. Повторите шаг 3 для поиска и установки пакета **Microsoft.Net.Http**.  
   
-5.  Соберите свое решение и убедитесь в отсутствии ошибок сборки.  
+5. Соберите свое решение и убедитесь в отсутствии ошибок сборки.  
   
 ##  <a name="dataservice"></a> Создание общего кода для службы данных  
  Именно в проекте **WeatherApp (переносимый)** вы будете писать код для переносимой библиотеки классов, общей для всех платформ. Переносимая библиотека классов автоматически включается в пакеты приложений для iOS, Android и Windows Phone.  

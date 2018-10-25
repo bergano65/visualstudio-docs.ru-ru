@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Документы Microsoft
+title: IDebugProgramEngines2::EnumPossibleEngines | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30eb28398569aa3d14b4a7dd363abac785f352c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f5977e7dbac34e247838efe1e8d0036e60f0416
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887676"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Возвращает идентификаторы GUID для всех возможных отладчики (DE), можно отлаживать этой программы.  
+Возвращает идентификаторы GUID для всех возможных отладчики (DE), которые можно отлаживать этой программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,19 +45,19 @@ int EnumPossibleEngines(
   
 #### <a name="parameters"></a>Параметры  
  `celtBuffer`  
- [in] Число DE GUID для возврата. Это также указывает максимальный размер `rgguidEngines` массива.  
+ [in] Число GUID DE для возврата. Это также указывает максимальный размер `rgguidEngines` массива.  
   
  `rgguidEngines`  
- [in, out] Массив идентификаторов GUID DE заполнить.  
+ [in, out] Массив идентификаторов GUID DE для заполнения.  
   
  `pceltEngines`  
- [out] Возвращает фактическое количество DE идентификаторы GUID, которые возвращаются.  
+ [out] Возвращает фактическое количество GUID DE, которые возвращаются.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.  
   
 ## <a name="remarks"></a>Примечания  
- Чтобы определить, сколько модулей существует, этот метод один раз с `celtBuffer` равным 0 и `rgguidEngines` параметра задать значение null. Возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A для C#) и `pceltEngines` параметр Возвращает размер буфера, необходимый.  
+ Чтобы определить, сколько антивирусных ядер, этот метод вызывается один раз со `celtBuffer` параметр значение 0 и `rgguidEngines` параметру присвоить значение null. Эта команда возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A для C#) и `pceltEngines` параметр Возвращает нужного размера буфера.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b288ec65bed95a508d161b33cc49d7d8e2540362
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9e714773ec000f2f46872f5c60429f313e1f6310
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891158"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Практическое: программное восстановление выделения после поиска
   Поиск и замена текста в документе, может потребоваться восстановление выделения пользователя после завершения поиска.  
@@ -33,22 +33,22 @@ ms.locfileid: "35674409"
   
 ## <a name="to-restore-the-users-original-selection-after-a-search"></a>Чтобы восстановление выделения после поиска пользователя  
   
-1.  Создание <xref:Microsoft.Office.Interop.Word.Range> объекты для документа и текущее выделение.  
+1. Создание <xref:Microsoft.Office.Interop.Word.Range> объекты для документа и текущее выделение.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
-     [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
+    [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
+    [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
   
-2.  Выполнения поиска и замены.  
+2. Выполнения поиска и замены.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
-     [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
+    [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
+    [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
   
-3.  Выберите начальный диапазон для восстановления выделения пользователя.  
+3. Выберите начальный диапазон для восстановления выделения пользователя.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
-     [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
+    [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
+    [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
   
- В следующем примере показан полный метод.  
+   В следующем примере показан полный метод.  
   
 ## <a name="example"></a>Пример  
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]

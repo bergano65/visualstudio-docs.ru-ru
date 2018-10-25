@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Документы Microsoft
+title: IDebugEngine3::SetAllExceptions | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e492eb2e3208e379581548ac3dcc393fa82414ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af66ca2fda6a3e190e6b98cf09962890beb3b5a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875818"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-Этот метод устанавливает состояние всех необработанных исключений.  
+Этот метод задает состояние всех необработанных исключений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int SetAllExceptions(
  [in] Один из [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) значения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

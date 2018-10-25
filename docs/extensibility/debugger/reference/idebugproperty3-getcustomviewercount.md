@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerCount | Документы Microsoft
+title: IDebugProperty3::GetCustomViewerCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb04a772a9ca2a6bf63861c02e3c65870639da56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e609451af16d202828fac30cd0da133bf3bea73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898880"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-Возвращает число пользовательских средств просмотра, которые могут быть доступны для этого свойства.  
+Возвращает количество пользовательских средств просмотра, которые могут быть доступны для этого свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Параметры  
  `pcelt`  
- [out] Количество пользовательских средств просмотра для этого свойства.  
+ [out] Число пользовательских средств просмотра, доступные для этого свойства.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для поддержки визуализаторами типов, этот метод передает вызов [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод добавляет число пользовательских средств просмотра к возвращаемому значению.  
+ Чтобы обеспечить поддержку визуализаторов типов, этот метод перенаправляет вызов [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) метод. Если средство оценки выражений также поддерживает пользовательские средства просмотра для этого свойства типа, этот метод добавляет число пользовательских средств просмотра, к возвращенному значению.  
   
- Подробные сведения о различиях между визуализаторами типов и пользовательских средств просмотра в разделе [тип визуализатора и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
+ Подробные сведения о различиях между визуализаторов типов и пользовательских средств просмотра, см. в разделе [визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  

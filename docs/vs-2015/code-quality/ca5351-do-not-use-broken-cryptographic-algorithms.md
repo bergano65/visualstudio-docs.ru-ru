@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889819"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: не используйте ослабленные алгоритмы шифрования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233744"
   
  Для алгоритмов шифрования:  
   
--   шифрование<xref:System.Security.Cryptography.DES> содержит небольшой размер ключа, который может быть принудительно применен менее чем за день;  
+- шифрование<xref:System.Security.Cryptography.DES> содержит небольшой размер ключа, который может быть принудительно применен менее чем за день;  
   
--   шифрование<xref:System.Security.Cryptography.RC2> уязвимо к атакам, связанным с ключом, когда злоумышленник обнаруживает математические связи между всеми значениями ключа.  
+- шифрование<xref:System.Security.Cryptography.RC2> уязвимо к атакам, связанным с ключом, когда злоумышленник обнаруживает математические связи между всеми значениями ключа.  
   
- Это правило срабатывает при обнаружении любой из перечисленных выше функций шифрования в исходном коде и выдает предупреждение для пользователя.  
+  Это правило срабатывает при обнаружении любой из перечисленных выше функций шифрования в исходном коде и выдает предупреждение для пользователя.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Используйте более надежные варианты шифрования.  

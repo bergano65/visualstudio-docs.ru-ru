@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921136"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Элемент ProjectType (шаблоны Visual Studio)
 Относит шаблон проекта, чтобы он отображался в указанной группе в **новый проект** или **Добавление нового элемента** диалоговое окно.  
@@ -49,7 +49,7 @@ ms.locfileid: "39636766"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -58,11 +58,11 @@ ms.locfileid: "39636766"
   
  Это значение указывает тип проекта, шаблон будет создан и должен содержать один из следующих значений:  
   
--   `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] проекта или элемента.  
+- `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] проекта или элемента.  
   
--   `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проекта или элемента.  
+- `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проекта или элемента.  
   
--   `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` элемент может содержать это значение, определенный на языке проекта или элемента в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` элемент может содержать это значение, определенный на языке проекта или элемента в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Примечания  
  `ProjectType` — обязательный дочерний элемент элемента `TemplateData`.  

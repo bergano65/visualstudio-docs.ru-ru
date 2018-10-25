@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Документы Microsoft
+title: IDebugExpressionEvaluator2::PreloadModules | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d7861b19a553860b3973418131c607fb0e9a2de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 298afc379736befab0365ccdad4cc3cfa857785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910039"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Выполняет предварительную загрузку модулей, заданное поставщиком указанный символ.  
+Предварительно загружает модули, заданное поставщиком указанного символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,16 +40,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>Параметры  
  `pSym`  
- [in] Поставщик символ, для которого будет предварительно модули.  
+ [in] Поставщик символов, для которого будут предварительно загружены модули.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот необязательный метод используется при выполнении присоединения главного процесса. Он дает возможность «разогрева» как часть присоединение EE.  
+ Этот необязательный метод используется в том случае, при этом присоединение ведущий процесс. Он позволяет EE «разобрались» в процессе присоединения.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  

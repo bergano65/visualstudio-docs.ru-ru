@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885139"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: приложения Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ ms.locfileid: "49262162"
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Выполнение отладки приложения Windows Forms на C#, F# или Visual Basic  
   
-1.  Откройте проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Откройте проект в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Создайте точки останова, если требуется.  
+2. Создайте точки останова, если требуется.  
   
-     Поскольку приложения Windows Forms управляются событиями, точки останова появятся в коде обработчиков событий, или в методах, вызываемых ими. Типичные события, в которые стоит помещать точки останова:  
+    Поскольку приложения Windows Forms управляются событиями, точки останова появятся в коде обработчиков событий, или в методах, вызываемых ими. Типичные события, в которые стоит помещать точки останова:  
   
-    1.  события, связанные с элементом управления, такие как Click, Enter, и т.д.;  
+   1. события, связанные с элементом управления, такие как Click, Enter, и т.д.;  
   
-    2.  события, связанные с запуском приложений и завершением работы, такие как Load, Activated и т. д.;  
+   2. события, связанные с запуском приложений и завершением работы, такие как Load, Activated и т. д.;  
   
-    3.  события, связанные с фокусом и проверками.  
+   3. события, связанные с фокусом и проверками.  
   
-     Подробнее см. в разделе [Создание обработчиков событий в Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Подробнее см. в разделе [Создание обработчиков событий в Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  На **Отладка** меню, щелкните **запустить**.  
+3. На **Отладка** меню, щелкните **запустить**.  
   
-4.  Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/debugger-basics.md).  
+4. Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   

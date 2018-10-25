@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882773"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 Имитатор Visual Studio для приложений универсальной платформы Windows — это классическое приложение, которое имитирует приложение универсальной платформы Windows. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать имитатор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать общие касания и поворота события и свойства сетевых подключений.
@@ -109,41 +109,41 @@ ms.locfileid: "44281056"
      ![Контекстное меню параметров снимка экрана](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений  
- Вы можете помочь пользователям приложения управлять затраты на лимитных сетевых подключениях, поддерживая уведомления о сетевого подключения затрат и данных состояния изменения плана и предоставив приложению возможность использовать эту информацию, чтобы избежать дополнительных расходов на оплату роуминга или превышение ограничения на передачу данных. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API-интерфейсы позволяют реагировать на [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) события, в которых вход. См. в разделе [краткое руководство: управлению ограничениями расходов на](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Вы можете помочь пользователям приложения управлять затраты на лимитных сетевых подключениях, поддерживая уведомления о сетевого подключения затрат и данных состояния изменения плана и предоставив приложению возможность использовать эту информацию, чтобы избежать дополнительных расходов на оплату роуминга или превышение ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) позволяют реагировать на события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , на которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых, имитатор может имитировать свойства сети, выполняемую с помощью [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объект, возвращаемый [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
  Для имитации свойств сети выполните следующие действия.  
   
-1.  В панели инструментов имитатора нажмите кнопку **Изменение свойств сети** .  
+1. В панели инструментов имитатора нажмите кнопку **Изменение свойств сети** .  
   
-2.  В диалоговом окне **Установка свойств сети** установите флажок **Использовать имитированные свойства сети**.  
+2. В диалоговом окне **Установка свойств сети** установите флажок **Использовать имитированные свойства сети**.  
   
-     Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
+    Снимите флажок, чтобы удалить имитацию и вернуться к свойствам сети подключенного в данный момент интерфейса.  
   
-3.  Введите **Имя профиля** для сымитированной сети. Мы рекомендуем использовать уникальное имя, которое можно использовать для идентификации имитации в [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) свойство [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) объекта.  
+3. Введите **Имя профиля** для сымитированной сети. Рекомендуется ввести уникальное имя, которое можно использовать для идентификации имитации в свойстве [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) объекта [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) .  
   
-4.  Выберите [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) значение для профиля из **тип стоимости сети** списка.  
+4. Выберите для профиля значение [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) из списка **Тип стоимости сети** .  
   
-5.  Из **флаг состояния лимита данных** списка, можно задать [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) свойство или [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) присваивается значение true, или же вы можете  **Лимит данных не** оба значения задавать значение false.  
+5. Из **флаг состояния лимита данных** списка, можно задать [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) свойство или [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) присваивается значение true, или же вы можете  **Лимит данных не** оба значения задавать значение false.  
   
-6.  Из **состояние роуминга** списке [перемещаемых](/uwp/api/windows.networking.connectivity.connectioncost) свойство.  
+6. Из списка **Состояние роуминга** установите свойство [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) .  
   
-7.  Выберите **задание свойств** для имитации свойств сети путем активации переднего плана [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) событий и фона [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) типа  **NetworkStateChange**.  
+7. Выберите **Задать свойства** для имитации свойств сети путем активации события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) переднего плана и фонового триггера [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) типа **NetworkStateChange**.  
   
- **Дополнительные сведения об управлении сетевыми подключениями**  
+   **Дополнительные сведения об управлении сетевыми подключениями**  
   
- [Краткое руководство: Управление с оплатой за трафик сети финансовым ограничениям](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Реакция на системные события с фоновыми задачами](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Реакция на системные события с фоновыми задачами](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Вызов событий приостановки, возобновления и фоновых событий в приложениях UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [Вызов событий приостановки, возобновления и фоновых событий в приложениях UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Навигация по симулятору с помощью клавиатуры  
  Панель инструментов симулятора можно перейти, нажав клавишу **CTRL + ALT + СТРЕЛКА ВВЕРХ** чтобы перенести фокус с окна симулятора на панель инструментов симулятора. Используйте клавиши **Стрелка вверх** и **Стрелка вниз** для перемещения между кнопками панели инструментов.  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888415"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Свойств в окне «Свойства»
 В этом пошаговом руководстве предоставляет открытые свойства объекта, чтобы **свойства** окна. Изменения, внесенные в эти свойства, отражаются в **свойства** окна.  
@@ -33,72 +33,72 @@ ms.locfileid: "39637767"
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>Экспорт свойств в окне «Свойства»  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyObjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
+1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyObjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** > **расширяемости**.  
   
-2.  Добавление окна инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `MyToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **окно инструментов Custom**. В **имя** в нижней части диалогового окна, измените имя файла для *MyToolWindow.cs*. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Добавление окна инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `MyToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **окно инструментов Custom**. В **имя** в нижней части диалогового окна, измените имя файла для *MyToolWindow.cs*. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Откройте *MyToolWindow.cs* и добавьте следующий оператор using:  
+3. Откройте *MyToolWindow.cs* и добавьте следующий оператор using:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  Теперь добавьте следующие поля в `MyToolWindow` класса.  
+4. Теперь добавьте следующие поля в `MyToolWindow` класса.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Добавьте следующий код в класс `MyToolWindow`.  
+5. Добавьте следующий код в класс `MyToolWindow` .  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     `TrackSelection` Используется в свойстве `GetService` для получения `STrackSelection` службу, которая обеспечивает <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> интерфейс. `OnToolWindowCreated` Обработчик событий и `SelectList` метод вместе создаст список выбранных объектов, содержащий только средство окно области самого объекта. `UpdateSelection` Метод указывает **свойства** окно для отображения открытых свойств панели окна инструментов.  
+    `TrackSelection` Используется в свойстве `GetService` для получения `STrackSelection` службу, которая обеспечивает <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> интерфейс. `OnToolWindowCreated` Обработчик событий и `SelectList` метод вместе создаст список выбранных объектов, содержащий только средство окно области самого объекта. `UpdateSelection` Метод указывает **свойства** окно для отображения открытых свойств панели окна инструментов.  
   
-6.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
+6. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
   
-7.  Если **свойства** окно не отображается, откройте его, нажав клавишу **F4**.  
+7. Если **свойства** окно не отображается, откройте его, нажав клавишу **F4**.  
   
-8.  Откройте **MyToolWindow** окна. Его можно найти в **представление** > **Other Windows**.  
+8. Откройте **MyToolWindow** окна. Его можно найти в **представление** > **Other Windows**.  
   
-     Открывается окно и общедоступного свойства области окна в **свойства** окна.  
+    Открывается окно и общедоступного свойства области окна в **свойства** окна.  
   
 9. Изменение **заголовок** свойство в **свойства** окно, чтобы **свойства: Мой объект**.  
   

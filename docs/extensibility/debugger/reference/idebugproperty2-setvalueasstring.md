@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Документы Microsoft
+title: IDebugProperty2::SetValueAsString | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5fb55fb6f9a90cf39120be408428524f64463d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903040"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Задает значение свойства из заданной строки.  
+Задает значение свойства из данной строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,20 +45,20 @@ int SetValueAsString (
   
 #### <a name="parameters"></a>Параметры  
  `pszValue`  
- [in] Строка, содержащая задаваемое значение.  
+ [in] Строка, содержащая значение, устанавливаемое значение.  
   
  `nRadix`  
  [in] Основание системы счисления для использования в интерпретации все числовые данные. Это может быть 0, чтобы попытаться автоматически определить основание системы счисления.  
   
  `dwTimeout`  
- [in] Указывает максимальное время (в миллисекундах) ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
+ [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены другие возможные значения.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены другие возможные значения.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Строка не может быть преобразовано в значение свойства или не удалось задать значение свойства.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Не удалось преобразовать строку в значение свойства, или не удалось задать значение свойства.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|Свойство доступно только для чтения.|  
   
 ## <a name="see-also"></a>См. также  

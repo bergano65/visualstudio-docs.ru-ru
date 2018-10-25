@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_targetOffset | Документы Microsoft
+title: IDiaSymbol::get_targetOffset | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2bafe81a58d1c80581dd4e2e6130bc36cd1988a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c044ba749c5fae425fab11cdedecc9eb361fffe3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904847"
 ---
 # <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
-Извлекает смещения преобразовать конечный раздел.  
+Извлекает раздел смещения преобразователь целевого объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_targetOffset (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает часть смещения целевого адреса преобразователя.  
+ [out] Возвращает часть смещения целевого адреса преобразователь.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

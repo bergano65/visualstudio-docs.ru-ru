@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Документы Microsoft
+title: IDebugProgram2::EnumCodeContexts | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902520"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Извлекает список контекстов для заданной позиции в файле исходного кода.  
+Извлекает список контексты для заданной позиции в файле исходного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int EnumCodeContexts(
   
 #### <a name="parameters"></a>Параметры  
  `pDocPos`  
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) объект, представляющий абстрактный позиции в файле исходного кода известно, интегрированной среды разработки.  
+ [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) объект, представляющий абстрактный позиции в файле исходного кода, известные в интегрированную среду разработки.  
   
  `ppEnum`  
- [out] Возвращает [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) , содержащий список контекстов кода.  
+ [out] Возвращает [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) , содержащий список контексты кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод позволяет сеанса отладки manager (SDM) или интегрированной среды разработки для сопоставления с позиции файла источника в место кода. Более одного контекста кода возвращается в том случае, если источник создает несколько блоков кода (например, шаблонов C++).  
+ Этот метод позволяет сеанса отладки manager (SDM) или интегрированной среде разработки, чтобы сопоставить позицию в файле источника в место кода. Более одного контекста кода возвращается в том случае, если источник создает несколько блоков кода (например, шаблоны C++).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

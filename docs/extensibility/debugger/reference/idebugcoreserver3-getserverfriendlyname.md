@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Документы Microsoft
+title: IDebugCoreServer3::GetServerFriendlyName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811292ff5f7dd95e127e63d30bf14ee06269ff7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bfc596bd1b77c77ea5b54a66ca349a66e50915c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875792"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Возвращает понятное имя для сервера.  
@@ -44,15 +44,15 @@ int GetServerFriendlyName(
  [out] Возвращает понятное имя для сервера.  
   
 > [!NOTE]
->  Вызывающий объект отвечает за освобождение строки.  
+>  Вызывающий объект несет ответственность за освобождение строки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для серверов пользователь запустил имени, возвращаемого этим методом является полное имя сервера. Для серверов, автоматически запускается оно машины сервер работает.  
+ Для серверов запущен пользователем имя, возвращаемый этим методом является полное имя сервера. Для автоматического запуска серверов называется машины сервер работает.  
   
- Имя машины ориентированного вызвать [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) метод.  
+ Для компьютера ориентированное имя, вызовите [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

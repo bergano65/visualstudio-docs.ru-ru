@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeContext | Документы Microsoft
+title: IDebugDisassemblyStream2::GetCodeContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81128cf13cf8ebe7052851b25d328851705f3124
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 858463e3506919d68d9aa0b353f2988f801dc1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916387"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 Возвращает объект контекста кода, соответствующий идентификатору расположение указанного кода.  
@@ -43,18 +43,18 @@ int GetCodeContext(
   
 #### <a name="parameters"></a>Параметры  
  `uCodeLocationId`  
- [in] Указывает местоположение идентификатора кода. В разделе «Примечания» [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) метод описание идентификатора расположение в коде.  
+ [in] Указывает идентификатор расположение кода. См. в разделе "Примечания" [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) метод описание идентификатора в расположение кода.  
   
  `ppCodeContext`  
- [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект, представляющий контекст связан код.  
+ [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект, представляющий контекст соответствующий код.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Идентификатор расположение кода могут быть возвращены из вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) метода и может использоваться в [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры.  
+ Идентификатор расположения кода могут быть возвращены из вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) метода и может встречаться в [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры.  
   
- Чтобы преобразовать контекст кода в расположение программного идентификатора, вызовите [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) метод.  
+ Чтобы преобразовать контекст кода в идентификатор расположения кода, вызовите [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

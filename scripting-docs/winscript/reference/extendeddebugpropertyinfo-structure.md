@@ -1,5 +1,5 @@
 ---
-title: Структура ExtendedDebugPropertyInfo | Документы Microsoft
+title: Структура ExtendedDebugPropertyInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888909"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>Структура ExtendedDebugPropertyInfo
 Расширяет `DebugPropertyInfo` структуры с помощью дополнительных членов, характеризующее расширенного свойства.  
@@ -47,9 +47,9 @@ typedef struct ExtendedDebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `dwValidFields`  
- Перечисляемого типа данных используется, чтобы указать, какие поля инициализируются.  
+ Тип перечислимых данных, можно указать, какие поля инициализируются.  
   
  `bstrName`  
  Имя свойства в контексте.  
@@ -64,13 +64,13 @@ typedef struct ExtendedDebugPropertyInfo{
  Полное имя свойства.  
   
  `dwAttrib`  
- Перечисление, указывающее флаги для атрибутов свойства отладки.  
+ Перечисление, содержащее флаги для атрибутов свойства отладки.  
   
  `pDebugProp`  
- `IDebugProperty`Объект, соответствующий этому `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` Объект, соответствующий данному `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- Идентификатор диспетчеризации.  
+ Идентификатор диспетчера.  
   
  `nType`  
  Тип расширенного свойства.  
@@ -79,10 +79,10 @@ typedef struct ExtendedDebugPropertyInfo{
  Значение расширенного свойства, если он помещается в тип VARIANT.  
   
  `plbValue`  
- Байты данных фактические значения свойства.  
+ Байты фактических данных значения свойства.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`Объект, соответствующий этому `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` Объект, соответствующий данному `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>См. также  
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   

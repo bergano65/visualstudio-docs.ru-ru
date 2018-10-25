@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Документы Microsoft
+title: IDebugObject2::CreateAlias | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab0bcb05332713c9bce06e24713034747b0e92c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a581b18dc331e1dd361554e1066cdbcb7b802a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908513"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Создает уникальный идентификатор или псевдоним для этого объекта или возвращает существующего псевдонима.  
+Создает уникальный идентификатор или псевдоним для этого объекта или возвращает существующий псевдоним.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int CreateAlias(
  [out] Псевдоним новой (или существующей).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Псевдоним является меткой, которая представляет определенный объект, пока объект находится в памяти.  
+ Псевдоним — это метку, которая представляет определенный объект, а объект находится в памяти.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
