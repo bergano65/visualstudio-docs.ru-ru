@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Документы Microsoft
+title: IDebugCoreServer3::CreateInstanceInServer | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71995e38cf58c23437cbb9a6d6973fbd09cab8ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171eda8b7c1b206ea54839366686ad43f690afe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886478"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Создает экземпляр модуля отладки на сервере.  
@@ -49,22 +49,22 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Параметры  
  `szDll`  
- [in] Путь к библиотеке dll, который реализует CLSID, заданный в `clsidObject` параметра. Если это `NULL`, затем COM `CoCreateInstance` функция.  
+ [in] Путь к dll, реализующим CLSID, указанный в `clsidObject` параметра. Если это `NULL`, затем COM `CoCreateInstance` функция вызывается.  
   
  `wLangId`  
- [in] Языковой стандарт ядро отладки. Это может быть 0, если [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) метод не должен вызываться.  
+ [in] Языковой стандарт модуля отладки. Это может быть 0, если [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) не следует вызывать метод.  
   
  `clsidObject`  
- [in] Код CLSID модуль отладки для создания.  
+ [in] CLSID для обработчика отладки, чтобы создать.  
   
  `riid`  
  [in] Идентификатор интерфейса указанного интерфейса для извлечения из объекта класса.  
   
  `ppvObject`  
- [out] `IUnknown` интерфейс из экземпляра объекта. Приведение или маршалировать этот объект для нужного интерфейса.  
+ [out] `IUnknown` интерфейс из экземпляра объекта. Приведите или упаковывает и передает этот объект для требуемого интерфейса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

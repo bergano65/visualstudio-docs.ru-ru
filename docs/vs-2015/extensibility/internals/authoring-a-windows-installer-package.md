@@ -16,12 +16,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22dcd12eb366504ee1e7cdd19970ffe9913241bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862922"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,30 +31,30 @@ ms.locfileid: "49198282"
 ## <a name="database-entries"></a>Записи базы данных  
  Чтобы установить пакет VSPackage, пакет установщика Windows должен содержать записи базы данных для выполнения следующих задач:  
   
--   Поиск в системе обнаружения версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage поддерживает (с помощью установщика Windows таблицы, в которых AppSearch, CompLocator, RegLocator, DrLocator и подпись).  
+- Поиск в системе обнаружения версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage поддерживает (с помощью установщика Windows таблицы, в которых AppSearch, CompLocator, RegLocator, DrLocator и подпись).  
   
--   Отменить установку, если не поддерживаемая версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] установлен или если другой системы пакета VSPackage не требования (с помощью таблицы LaunchCondition).  
+- Отменить установку, если не поддерживаемая версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] установлен или если другой системы пакета VSPackage не требования (с помощью таблицы LaunchCondition).  
   
--   Установите пакет VSPackage и зависимые файлы (с помощью каталога, компонентов и таблицы файлов).  
+- Установите пакет VSPackage и зависимые файлы (с помощью каталога, компонентов и таблицы файлов).  
   
--   Добавьте соответствующую информацию для VSPackage в реестр (с использованием таблицы реестра).  
+- Добавьте соответствующую информацию для VSPackage в реестр (с использованием таблицы реестра).  
   
--   Интеграция VSPackage в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] путем вызова **/Setup для devenv.exe** (с помощью таблицы CustomAction).  
+- Интеграция VSPackage в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] путем вызова **/Setup для devenv.exe** (с помощью таблицы CustomAction).  
   
- Дополнительные сведения см. в разделе [установщика Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Дополнительные сведения см. в разделе [установщика Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Средства установки и настройки  
  Широкий набор средств установки стороннего предоставляют среду разработки для пакетов установщика Windows. Ниже перечислены два бесплатных средства.  
   
--   InstallShield Limited Edition  
+- InstallShield Limited Edition  
   
-     Ограниченной версии InstallShield можно получить с помощью Visual Studio **новый проект** диалоговое окно. Разверните **другие типы проектов** , а затем выберите **установки и развертывания**. Выберите шаблон, InstallShield.  
+   Ограниченной версии InstallShield можно получить с помощью Visual Studio **новый проект** диалоговое окно. Разверните **другие типы проектов** , а затем выберите **установки и развертывания**. Выберите шаблон, InstallShield.  
   
--   Набор инструментов XML установщика Windows  
+- Набор инструментов XML установщика Windows  
   
-     Набор инструментов построения пакетов установщика Windows из исходных файлов XML. Набор инструментов — это проект открытым кодом Майкрософт. Вы можете скачать исходный код и исполняемые файлы из [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
+   Набор инструментов построения пакетов установщика Windows из исходных файлов XML. Набор инструментов — это проект открытым кодом Майкрософт. Вы можете скачать исходный код и исполняемые файлы из [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], см. в разделе [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], см. в разделе [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

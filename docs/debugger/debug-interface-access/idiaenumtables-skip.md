@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumTables::Skip | Документы Microsoft
+title: IDiaEnumTables::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee3835a0c07f903dcbe31d967c1fc3014fefaa0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 604d562168b4d4e9109eb4e48a477b9ee4493a80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860803"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 Пропускает указанное число таблиц в последовательности перечисления.  
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество таблиц в последовательность перечисления для пропуска.  
+ [in] Количество таблиц в последовательности перечисления для пропуска.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные таблицы, чтобы пропустить.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные таблицы, чтобы пропустить.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

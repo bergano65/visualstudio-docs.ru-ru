@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865366"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Диагностика проблем после развертывания, с помощью IntelliTrace
 
@@ -66,7 +66,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
      ![Настройка пути к символам в конвейер сборки TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     Дополнительные сведения о символах, см. в разделе [Публикация символьных данных](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
+     Дополнительные сведения о символах см. в разделе [Публикация символьных данных](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
 
 4.  Добавьте следующий аргумент MSBuild, чтобы включить расположения символов и TFS в файл манифеста сборки:
 
@@ -156,12 +156,12 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
  **/ p: buildsymbolstorepath =**\<*путь к символам*>
 
 ##  <a name="DeployRelease"></a> Шаг 2: Выпуск приложения
- Если вы используете [пакет Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*имя_проекта*. BuildInfo.config» в «BuildInfo.config» и помещается в той же папке файл Web.config приложения на веб-сервере.
+ Если вы используете [пакет Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) , который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещается в ту же папку, что и файл Web.config приложения на веб-сервере.
 
  Если для развертывания приложения вы используете другие методы, убедитесь, что манифест сборки переименован из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещен в ту же папку, что и файл Web.config приложения, на веб-сервере.
 
 ## <a name="step-3-monitor-your-app"></a>Шаг 3. Отслеживание работы приложения
- Настройте отслеживание производительности приложения на веб-сервере, чтобы отслеживать проблемы приложения, регистрировать события диагностики и сохранять эти события в файл журнала IntelliTrace. См. в разделе [мониторинг проблем развертывания для выпуска](../debugger/using-the-intellitrace-stand-alone-collector.md).
+ Настройте отслеживание производительности приложения на веб-сервере, чтобы отслеживать проблемы приложения, регистрировать события диагностики и сохранять эти события в файл журнала IntelliTrace. См. раздел [Отслеживание проблем развертывания для выпуска](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ##  <a name="InvestigateEvents"></a> Шаг 4: Поиск проблемы
  Для просмотра записанных событий и отладки кода с помощью IntelliTrace на компьютере разработки или другом компьютере должна быть установлена среда Visual Studio Enterprise. Кроме того, можно использовать такие средства, как CodeLens, карты отладчика и карты кода, которые помогают диагностировать проблемы.
@@ -238,7 +238,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
 ###  <a name="WhatElse"></a> Что еще можно сделать отсюда?
 
--   [Получить дополнительные сведения об этом коде](../ide/find-code-changes-and-other-history-with-codelens.md). Чтобы найти ссылки на этот код, журнал изменений, связанные ошибки, рабочие элементы, проверки кода или модульные тесты — все без выхода из редактора — используйте индикаторы CodeLens в редакторе.
+-   [Дополнительные сведения о данном коде](../ide/find-code-changes-and-other-history-with-codelens.md). Чтобы найти ссылки на этот код, журнал изменений, связанные ошибки, рабочие элементы, проверки кода или модульные тесты — все без выхода из редактора — используйте индикаторы CodeLens в редакторе.
 
      ![CodeLens &#45; просмотреть ссылки на этот код](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
@@ -264,100 +264,100 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
 
 3.  Убедитесь, что файл содержит необходимые сведения:
 
--   **ProjectName**
+- **ProjectName**
 
-     Имя проекта в Visual Studio. Пример:
+   Имя проекта в Visual Studio. Пример:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- Сведения о системе управления версиями и следующих обязательных свойствах:
+
+  - **TFS**
+
+    - **ProjectCollectionUri**— URI для Team Foundation Server и коллекции проектов
+
+    - **ProjectItemSpec**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
+
+    - **ProjectVersionSpec**— версия проекта
+
+      Пример:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   Сведения о системе управления версиями и следующих обязательных свойствах:
+    - **GitSourceControl**— расположение схемы **GitSourceControl**
 
-    -   **TFS**
+    - **RepositoryUrl**— URI для Team Foundation Server, коллекции проектов и репозитория Git
 
-        -   **ProjectCollectionUri**— URI для Team Foundation Server и коллекции проектов
+    - **ProjectPath**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
 
-        -   **ProjectItemSpec**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
+    - **CommitId**— идентификатор фиксации
 
-        -   **ProjectVersionSpec**— версия проекта
+      Пример:
 
-         Пример:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **Сборка**
 
-    -   **Git**
+   Сведения о системе сборки, `"TeamBuild"` или `"MSBuild"`, и следующие обязательные свойства:
 
-        -   **GitSourceControl**— расположение схемы **GitSourceControl**
+  - **BuildLabel** (для TeamBuild) — имя и номер сборки. Эта метка также используется в качестве имени события развертывания. Более подробную информацию о номерах сборок см. в разделе [Использование номеров сборок для назначения завершенным сборкам значимых имен](/azure/devops/pipelines/build/options?view=vsts).
 
-        -   **RepositoryUrl**— URI для Team Foundation Server, коллекции проектов и репозитория Git
+  - **SymbolPath** (рекомендуется) — список URI для расположений символов (PDB-файлов), разделяемых точкой с запятой. Эти URI могут быть URL-адресами или UNC-путями. Это упрощает для Visual Studio поиск соответствующих символов для содействия в отладке.
 
-        -   **ProjectPath**— путь к файлу проекта приложения (CSPROJ- или VBPROJ-файлу)
+  - **BuildReportUrl** (для TeamBuild) — расположение отчета о сборке в TFS
 
-        -   **CommitId**— идентификатор фиксации
+  - **BuildId** (для TeamBuild) — URI для сведений о сборке в TFS. Этот URI также используется в качестве идентификатора события развертывания. Если не используется TeamBuild, идентификатор должен быть уникальным.
 
-         Пример:
+  - **BuiltSolution**— путь к файлу решения, используемый Visual Studio для поиска и открытия соответствующего решения. Это содержимое свойства **SolutionPath** MsBuild.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    Пример:
 
--   **Сборка**
+  - **TFS**
 
-     Сведения о системе сборки, `"TeamBuild"` или `"MSBuild"`, и следующие обязательные свойства:
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (для TeamBuild) — имя и номер сборки. Эта метка также используется в качестве имени события развертывания. Дополнительные сведения о номерах сборки см. в разделе [использование номеров сборок для назначения завершенным сборкам значимых имен](/azure/devops/pipelines/build/options?view=vsts).
+  - **Git**
 
-    -   **SymbolPath** (рекомендуется) — список URI для расположений символов (PDB-файлов), разделяемых точкой с запятой. Эти URI могут быть URL-адресами или UNC-путями. Это упрощает для Visual Studio поиск соответствующих символов для содействия в отладке.
-
-    -   **BuildReportUrl** (для TeamBuild) — расположение отчета о сборке в TFS
-
-    -   **BuildId** (для TeamBuild) — URI для сведений о сборке в TFS. Этот URI также используется в качестве идентификатора события развертывания. Если не используется TeamBuild, идентификатор должен быть уникальным.
-
-    -   **BuiltSolution**— путь к файлу решения, используемый Visual Studio для поиска и открытия соответствующего решения. Это содержимое свойства **SolutionPath** MsBuild.
-
-     Пример:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> Вопрос. Почему Visual Studio сообщает, что выбранная рабочая область недопустима?
  **О.** Выбранная рабочая область не имеет сопоставлений между папкой системы управления версиями и локальной папкой. Чтобы создать сопоставление для данной рабочей области, щелкните **Управление**. В противном случае выберите уже сопоставленную рабочую область или создайте новую рабочую область.
@@ -382,7 +382,7 @@ Visual Studio 2017 не включает *BuildInfo.config* файл, котор
      ![Открыть из системы управления версиями &#45; перенесены](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> Вопрос. что такое рабочая область?
- **Ответ** вашей [рабочей области хранится копия источника](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) , можно разрабатывать и тестировать его отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.
+ **О.** В [рабочей области хранится копия источника](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) , и ее можно разрабатывать и тестировать отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.
 
 ####  <a name="UntrustedSymbols"></a> Вопрос. Почему появляется сообщение о ненадежных символах?
  ![Отладка с путем ненадежных символах? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

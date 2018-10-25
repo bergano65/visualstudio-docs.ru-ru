@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868265"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктора наборов данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49287369"
   
  В данном пошаговом руководстве представлены следующие задачи.  
   
--   Создание нового **приложения Windows** проекта.  
+- Создание нового **приложения Windows** проекта.  
   
--   Добавление пустой **набора данных** элемента в проект.  
+- Добавление пустой **набора данных** элемента в проект.  
   
--   Создание и настройка источника данных в приложении путем создания набора данных с помощью **конструктор наборов данных**.  
+- Создание и настройка источника данных в приложении путем создания набора данных с помощью **конструктор наборов данных**.  
   
--   Создание подключения к базе данных Northwind в **обозревателя серверов**.  
+- Создание подключения к базе данных Northwind в **обозревателя серверов**.  
   
--   Создание таблиц с помощью адаптеров таблиц в наборе данных, основанных на таблицах в базе данных.  
+- Создание таблиц с помощью адаптеров таблиц в наборе данных, основанных на таблицах в базе данных.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения данного пошагового руководства требуется:  

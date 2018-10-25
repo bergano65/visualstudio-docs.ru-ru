@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891483"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ ms.locfileid: "49297405"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.Update-метод  
   
-1.  Добавление новых записей в нужные <xref:System.Data.DataTable> путем создания нового <xref:System.Data.DataRow> и добавления его в <xref:System.Data.DataTable.Rows%2A> коллекции. Дополнительные сведения см. в разделе [как: Добавление строк в таблицу данных](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Добавление новых записей в нужные <xref:System.Data.DataTable> путем создания нового <xref:System.Data.DataRow> и добавления его в <xref:System.Data.DataTable.Rows%2A> коллекции. Дополнительные сведения см. в разделе [как: Добавление строк в таблицу данных](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  После добавления новых строк <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
+2. После добавления новых строк <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
   
-     Ниже показано, как добавить новую запись для <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод для сохранения новой строки в базу данных. (В этом примере используется `Region` таблицы в базе данных "Борей".)  
+    Ниже показано, как добавить новую запись для <xref:System.Data.DataTable> , а затем вызвать `TableAdapter.Update` метод для сохранения новой строки в базу данных. (В этом примере используется `Region` таблицы в базе данных "Борей".)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Если приложение использует объекты для хранения данных, можно использовать `TableAdapter.Insert` метод для создания новых строк непосредственно в базе данных. `Insert` Метод принимает отдельные значения для каждого столбца в качестве параметров. Вызов метода вставляет новую запись в базу данных с помощью значений, передаваемых параметров.  
+   Если приложение использует объекты для хранения данных, можно использовать `TableAdapter.Insert` метод для создания новых строк непосредственно в базе данных. `Insert` Метод принимает отдельные значения для каждого столбца в качестве параметров. Вызов метода вставляет новую запись в базу данных с помощью значений, передаваемых параметров.  
   
- В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.  
+   В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.INSERT-метод  
   

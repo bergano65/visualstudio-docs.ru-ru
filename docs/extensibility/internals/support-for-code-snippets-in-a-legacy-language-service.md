@@ -1,5 +1,5 @@
 ---
-title: Поддержка фрагментов кода в языковую службу прежних версий | Документы Microsoft
+title: Поддержка фрагментов кода в языковой службе прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb62481b9ba2c42ed067275480ba137b151a483b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858112"
 ---
-# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковую службу прежних версий
-Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Самого фрагмента является шаблоном на основе XML с набором полей. Эти поля будут выделены после вставки фрагмента кода, а также могут иметь разные значения в зависимости от контекста, в которую вставляется фрагмент. Сразу после вставки фрагмента кода, служба языка можно форматировать фрагмента кода.  
+# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
+Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Фрагмент кода, сам является шаблон на основе XML с помощью набора полей. Эти поля будут выделены после вставки фрагмента кода, а также может иметь разные значения в зависимости от контекста, в которой вставляется фрагмент кода. Сразу после вставки фрагмента, языковой службы можно форматировать фрагмента кода.  
   
- В режиме с специальные редактирование полей фрагмента кода, осуществлять переходы с помощью клавиши TAB вставляется фрагмент. Поля могут поддерживать раскрывающихся меню IntelliSense стиля. Пользователь фиксирует фрагмент в исходный файл, введя ввод или клавиши ESC. Дополнительные сведения о фрагментах см. в разделе [фрагменты кода](../../ide/code-snippets.md).  
+ В режиме с специальные изменение поля этого фрагмента, чтобы перейти с помощью клавиши TAB будет вставлен фрагмент кода. Поля может поддерживать стиле IntelliSense раскрывающихся меню. Пользователь фиксирует фрагмент в исходный файл, введя ввод или клавиши ESC. Дополнительные сведения о фрагментах см. в разделе [фрагменты кода](../../ide/code-snippets.md).  
   
- Прежних версий языка службы реализованы как часть пакета VSPackage, но новой реализации возможностей службы языка можно выполнить с помощью расширений MEF. Подробнее см. в разделе [Пошаговое руководство: реализация фрагменты кода](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: реализация фрагментов кода](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API, как можно быстрее. Это повысит быстродействие языковой службы и позволяют воспользоваться преимуществами новых функций редактора.  
+>  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
-## <a name="managed-package-framework-support-for-code-snippets"></a>Управляемые пакета поддержки Framework фрагменты кода  
- Managed package framework (MPF) поддерживает большинство функций фрагмент, считывать шаблона для вставки фрагмента кода и включение специальный режим редактирования. Поддержка осуществляется с помощью <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса.  
+## <a name="managed-package-framework-support-for-code-snippets"></a>Управляемые поддерживают Framework пакета для фрагментов кода  
+ Managed package framework (MPF) поддерживает большинство функциональность фрагмента, чтение шаблона для вставки фрагмента кода и включение специальный режим правки. Поддержка осуществляется через <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса.  
   
- При <xref:Microsoft.VisualStudio.Package.Source> создается экземпляр класса, <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса вызывается для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта (Обратите внимание, что базовый <xref:Microsoft.VisualStudio.Package.LanguageService> класс всегда возвращает новый <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта для каждого <xref:Microsoft.VisualStudio.Package.Source> объект).  
+ При <xref:Microsoft.VisualStudio.Package.Source> создается экземпляр класса, <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса вызывается для получения <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта (Обратите внимание, что базовый <xref:Microsoft.VisualStudio.Package.LanguageService> класс всегда возвращает новый <xref:Microsoft.VisualStudio.Package.ExpansionProvider> для каждой <xref:Microsoft.VisualStudio.Package.Source> объект).  
   
- MPF не поддерживает функции расширения. Функция расширения является именованную функцию, внедренного в шаблоне фрагмент и возвращает одно или несколько значений, которые следует поместить в поле. Значения возвращаются в языке самой через службы <xref:Microsoft.VisualStudio.Package.ExpansionFunction> объекта. <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Объект должен быть реализован для поддержки функций расширения языковой службы.  
+ MPF не поддерживает функции расширения. Функции расширения является именованную функцию, который внедряется в шаблон фрагмента и возвращает одно или несколько значений, которые следует поместить в поле. Значения возвращаются в данном языке самой через службы <xref:Microsoft.VisualStudio.Package.ExpansionFunction> объекта. <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Объект должен быть реализован языковой службы для поддержки функций расширений.  
   
 ## <a name="providing-support-for-code-snippets"></a>Предоставление поддержки для фрагментов кода  
- Чтобы включить поддержку для фрагментов кода, необходимо предоставить или установить фрагменты кода, и вы должны предоставить средства для вставки этих фрагментов. Существует три шага для включения функции поддержки для фрагментов кода.  
+ Чтобы включить поддержку для фрагментов кода, необходимо предоставить или установить фрагменты кода, и необходимо предоставить средства для вставки этих фрагментов. Существует три шага для включения возможности поддержки для фрагментов кода:  
   
-1.  Установка файлов фрагментов.  
+1.  Установка файлы фрагментов кода.  
   
-2.  Включение фрагменты кода для службы языка.  
+2.  Включение фрагментов кода для языковой службы.  
   
 3.  Вызов <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объекта.  
   
-### <a name="installing-the-snippet-files"></a>Установка файлов фрагментов  
- Все фрагменты кода для языка, сохраняются как шаблоны в XML-файлы, обычно один фрагмент шаблон каждого файла. Дополнительные сведения о схеме XML, используемый для шаблоны фрагментов кода в разделе [Справочник по схеме фрагментов кода](../../ide/code-snippets-schema-reference.md). Каждый шаблон идентифицируется с идентификатором языка. Этот язык, идентификатор, указанный в разделе реестра и помещается в `Language` атрибут \<кода > тега в шаблоне.  
+### <a name="installing-the-snippet-files"></a>Установка файлы фрагментов кода  
+ Все фрагменты кода для языка, хранятся как шаблоны в XML-файлов, обычно один шаблон фрагмента каждого файла. Дополнительные сведения о схеме XML, используемый для шаблоны фрагментов кода, см. в разделе [Справочник по схеме фрагментов кода](../../ide/code-snippets-schema-reference.md). Каждый шаблон фрагмента идентифицируется с идентификатором языка. Этот язык, идентификатор, указанный в реестре и помещается в `Language` атрибут \<кода > тега в шаблоне.  
   
- Обычно есть два места, где хранятся файлы фрагментов шаблона: (1) где был установлен язык и (2) в папки. Эти расположения добавляются в реестр таким образом, Visual Studio **Диспетчер фрагментов кода** может найти фрагменты кода. Папки является которых хранятся фрагменты кода, созданных пользователем.  
+ Обычно есть два места, где хранятся файлы фрагментов шаблона: 1) там, где был установлен язык и (2) в папки. Эти расположения добавляются в реестр таким образом, Visual Studio **Диспетчер фрагментов кода** можно найти фрагменты кода. Папки является местом хранения фрагментов, созданных пользователем.  
   
- Макет обычно папку для файлов шаблонов установленных фрагмент выглядит следующим образом: *[Корневого_каталога_установки]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
+ Макет типичная папка для файлов шаблонов установленных фрагмент кода выглядит следующим образом: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[кодязыка]* \Snippets.  
   
- *[Корневого_каталога_установки]*  является язык устанавливается в папку.  
+ *[InstallRoot]*  является язык устанавливается в папку.  
   
- *[TestLanguage]*  является имя языка, как имя папки.  
+ *[TestLanguage]*  — это имя вашего языка, как имя папки.  
   
- *[LCID]*  идентификатор языкового стандарта. Это локализованных версий собственные фрагменты, сохраняются. Например, код языка для английского языка — 1033, поэтому *[LCID]* заменяется 1033.  
+ *[LCID]*  идентификатор языкового стандарта. Это локализованных версиях собственные фрагменты хранятся. Например, код языка для английского языка — 1033, таким образом *[LCID]* заменяется 1033.  
   
- Необходимо указать один дополнительный файл и файл индекса, обычно называемый SnippetsIndex.xml или ExpansionsIndex.xml (можно использовать любое допустимое имя файла, в которых заканчиваются .xml). Этот файл обычно хранится в *[Корневого_каталога_установки]*\\ *[TestLanguage]* папки и указывает точное расположение папки фрагментов а также идентификатор языка и идентификатор GUID языка Служба, которая использует фрагменты кода. Точный путь файла индекса переводится в реестр, как описано ниже в «Установка записи реестра». Ниже приведен пример файла SnippetsIndex.xml:  
+ Указывается одним дополнительным файлом и файлом индекса, обычно называется SnippetsIndex.xml или ExpansionsIndex.xml (можно использовать любое допустимое имя файла, заканчивающиеся на .xml). Этот файл обычно хранятся в *[InstallRoot]*\\ *[TestLanguage]* папки и указывает точное местоположение папки фрагменты как и идентификатор языка и идентификатор GUID языка Служба, которая использует фрагменты кода. Точный путь к файлу индекса помещается в реестр, как описано далее в «Установка записи реестра». Ниже приведен пример файла SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -78,24 +78,24 @@ ms.locfileid: "31135686"
 </SnippetCollection>  
 ```  
   
- \<Языка > тег указывает код языка ( `Lang` атрибут) и идентификатор GUID языковой службы.  
+ \<Языка > тег указывает код языка ( `Lang` атрибут) и GUID языковой службы.  
   
- В этом примере предполагается, что вы установили языковой службы в папке установки Visual Studio. % LCID % заменяется идентификатор пользователя текущего языкового стандарта. Несколько \<SnippetDir > теги можно добавлять, один для каждого другой каталог и языковой стандарт. Кроме того, папки фрагментов может содержать вложенные папки, каждый из которых определяется в файле индекса с \<SnippetSubDir > тег, который внедряется в \<SnippetDir > тег.  
+ В этом примере предполагается, что вы установили службы вашего языка в папке установки Visual Studio. % LCID % заменяется идентификатор пользователя текущего языкового стандарта. Несколько \<SnippetDir > теги могут добавляться, один для каждого другой каталог и языковой стандарт. Кроме того, папке фрагментов кода может содержать вложенные папки, каждый из которых определяется в файле индекса с \<SnippetSubDir > тег, который внедряется в \<SnippetDir > тег.  
   
- Пользователи также могут создавать свои собственные фрагменты кода для конкретного языка. Они обычно хранятся в папке параметров пользователя, например *[TestDocs]* \Code фрагменты\\ *[TestLanguage]* \Test фрагменты кода, где *[TestDocs]* расположение папки параметры для Visual Studio.  
+ Пользователи также могут создавать свои собственные фрагменты кода для вашего языка. Эти значения обычно хранятся в папке параметры пользователя, например *[TestDocs]* \Code фрагменты\\ *[TestLanguage]* \Test фрагменты кода, где *[TestDocs]* расположение папки параметры для Visual Studio.  
   
- Следующие элементы подстановки может быть помещен в путь, хранящийся в \<DirPath > тег в файле индекса.  
+ Следующие элементы подстановки может быть помещен в пути, сохраненному в \<DirPath > тег в файл индекса.  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
 |% LCID %|Идентификатор языка.|  
-|% Корневого_каталога_установки %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|  
+|% InstallRoot %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Папка, содержащая текущий проект.|  
-|% ProjItem %|Папка, содержащая элемента текущего проекта.|  
-|% TestDocs %|В папку пользователя параметры, например, C:\Documents and Settings\\ *[username]* \My Documents\Visual Studio\8.|  
+|% ProjItem %|Папка, содержащая текущий элемент проекта.|  
+|% TestDocs %|Папка в папке параметры пользователя, например, C:\Documents and Settings\\ *[username]* Мои \My Documents\Visual Studio\8.|  
   
-### <a name="enabling-code-snippets-for-your-language-service"></a>Включение фрагменты кода для службы языка  
- Фрагменты кода можно включить для службы языка, добавив <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> атрибут VSPackage (см. [регистрации службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md) подробные сведения). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> И <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> являются необязательными, однако следует включить `SearchPaths` именованный параметр, чтобы вы могли **Диспетчер фрагментов кода** расположения собственные фрагменты.  
+### <a name="enabling-code-snippets-for-your-language-service"></a>Включение фрагментов кода для языковой службы  
+ Вы можете включить фрагменты кода для языковой службы, добавив <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> атрибута к VSPackage (см. в разделе [регистрация языковой службы прежних](../../extensibility/internals/registering-a-legacy-language-service1.md) сведения). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> И <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> параметры являются необязательными, но должен включать `SearchPaths` именованный параметр, чтобы проинформировать **Диспетчер фрагментов кода** расположения собственные фрагменты.  
   
  Ниже приведен пример использования этого атрибута:  
   
@@ -110,17 +110,17 @@ ms.locfileid: "31135686"
 ```  
   
 ### <a name="calling-the-expansion-provider"></a>Вызов поставщика расширения  
- Языковая служба управляет вставку все фрагменты кода, а также способ вставки вызывается.  
+ Языковая служба управляет вставку любой фрагмент кода, а также способ вставки вызывается.  
   
 ## <a name="calling-the-expansion-provider-for-code-snippets"></a>Вызов поставщика расширения для фрагментов кода  
- Существует два способа вызова поставщика расширения: с помощью команды меню или с помощью клавиш из списка завершения.  
+ Существует два способа для вызова поставщика расширения: с помощью команды меню или с помощью ярлыка в списке завершения.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Вставка фрагмента кода с помощью команды меню  
- Использовать команду меню для отображения обозревателя фрагмент кода, добавьте команду меню и затем вызвать <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> интерфейс в ответ для этой команды меню.  
+ Чтобы использовать команды меню для отображения обозревателя на фрагмент кода, добавьте команду меню, а затем вызвать <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> интерфейс в ответ для этой команды меню.  
   
-1.  Добавьте команды и кнопку в vsct-файл. Можно найти в инструкции [создания расширения с помощью команды меню](../../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Добавьте команды и кнопки в файл .vsct. Инструкции по выполнению этого [создания расширения с помощью команды меню](../../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Производный класс <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. Этот пример всегда включает команду меню.  
+2.  Наследуйте класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> метод, чтобы указать поддержку для новой команды меню. В этом примере включается всегда команду меню.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -206,7 +206,7 @@ ms.locfileid: "31135686"
   
     ```  
   
-     Следующие методы в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса вызываются средой Visual Studio в определенном порядке во время вставки фрагмента кода:  
+     Следующие методы в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса вызываются средой Visual Studio в указанном порядке во время вставки фрагмента кода:  
   
 4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
@@ -218,16 +218,16 @@ ms.locfileid: "31135686"
   
 8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-     После <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> вызывается метод, вставленного фрагмента и <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объект находится в режиме редактирования специальные, используется для изменения только что вставленный фрагмент.  
+     После <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> вызывается метод, фрагмента и <xref:Microsoft.VisualStudio.Package.ExpansionProvider> объект находится в режиме редактирования специальные, используемая для изменения фрагмент кода, который только что был вставлен.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Вставка фрагмента кода с помощью ярлыка  
- Реализация ярлыки из списка завершения работает гораздо сложнее, чем реализуются команды меню. Сначала необходимо добавить Shortcut фрагментов кода в списке предложений IntelliSense. Затем необходимо обнаружить, когда имя ярлыка фрагмент был вставлен в результате завершения. Наконец, необходимо получить фрагмент заголовок и путь, с помощью сокращенных имен и передать эту информацию для <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод <xref:Microsoft.VisualStudio.Package.ExpansionProvider> метод.  
+ Ярлык в списке завершения реализуется гораздо больше усилий, чем реализация команды меню. Ярлыков фрагментов кода необходимо сначала добавить в список завершения слов IntelliSense. Затем необходимо обнаружить, когда в результате завершения была введена имя ярлыка фрагмента. Наконец, необходимо получить название фрагмента и пути, используя имя ярлыка и передать эту информацию <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод <xref:Microsoft.VisualStudio.Package.ExpansionProvider> метод.  
   
- Чтобы добавить Shortcut фрагментов кода в списке завершения слова, добавьте их в <xref:Microsoft.VisualStudio.Package.Declarations> объект в вашей <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Необходимо убедиться, что сочетание клавиш для имени фрагмент можно определить. Пример см. в разделе [Пошаговое руководство: получение списка из установлен фрагменты кода (реализации прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Чтобы добавить ярлыков фрагментов кода в список завершения слова, добавьте их в <xref:Microsoft.VisualStudio.Package.Declarations> объект в вашей <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Необходимо убедиться в том, можно указать, ярлык имени фрагмента кода. Например, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
- Можно обнаружить вставку ярлык фрагмента кода в <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> метод <xref:Microsoft.VisualStudio.Package.Declarations> класса. Так как имя фрагмента уже вставлен в файл исходного кода, его необходимо удалить развертывание при вставке. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Метод принимает интервал, который описывает вставляемого фрагмента; Если диапазон включает имя весь фрагмент кода в исходном файле, это имя заменяется фрагмента кода.  
+ Можно обнаружить вставку ярлык фрагмента кода в <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> метод <xref:Microsoft.VisualStudio.Package.Declarations> класса. Так как уже был вставлен имени фрагмента в файл исходного кода, его необходимо удалить при вставке расширения. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Метод принимает область, которая описывает точку вставки для фрагмента; Если диапазон включает в себя имя весь фрагмент кода в исходном файле, это имя заменяется фрагмента кода.  
   
- Здесь — это версия <xref:Microsoft.VisualStudio.Package.Declarations> класс, который обрабатывает вставки фрагмент кода получает имя ярлыка. Другие методы <xref:Microsoft.VisualStudio.Package.Declarations> класс опущены для ясности. Обратите внимание, что конструктор этого класса принимает <xref:Microsoft.VisualStudio.Package.LanguageService> объекта. Это может быть передан в вашей версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта (например, реализация <xref:Microsoft.VisualStudio.Package.AuthoringScope> может принимать <xref:Microsoft.VisualStudio.Package.LanguageService> объекта в конструкторе и передать этот объект в вашей `TestDeclarations` конструктор класса).  
+ Здесь — это версия <xref:Microsoft.VisualStudio.Package.Declarations> класс, обрабатывающий Вставка фрагментов, получает имя ярлыка. Другие методы в <xref:Microsoft.VisualStudio.Package.Declarations> класс опущены для ясности. Обратите внимание, что конструктор этого класса принимает <xref:Microsoft.VisualStudio.Package.LanguageService> объекта. Может быть передан в из версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта (например, реализация <xref:Microsoft.VisualStudio.Package.AuthoringScope> может принимать <xref:Microsoft.VisualStudio.Package.LanguageService> объекта в конструкторе и передайте этот объект в вашей `TestDeclarations` конструктор класса).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -328,25 +328,25 @@ namespace TestLanguagePackage
 }  
 ```  
   
- Если языковая служба возвращает имя ярлыка, он вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> для получения заголовка фрагмент имени файла и кода. Языковая служба вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса для вставки фрагмента кода. Следующие методы вызываются средой Visual Studio в определенном порядке, в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класс во время вставки фрагмента кода:  
+ Когда языковая служба возвращает имя ярлыка, она вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> метод, чтобы получить имя файла и кода заголовок фрагмента. Языковая служба затем вызывает <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> для вставки фрагмента кода. Следующие методы вызываются средой Visual Studio в заданном порядке в <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса во время вставки фрагмента кода:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Дополнительные сведения о получении списка фрагментов кода, установленные для службы языка. в разделе [Пошаговое руководство: получение списка из установлен фрагменты кода (реализации прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Дополнительные сведения о получении списка фрагментов кода для языковой службы, см. в разделе [Пошаговое руководство: получение списка из установки фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Реализация класса ExpansionFunction  
- Функция расширения является именованную функцию, внедренного в шаблоне фрагмент и возвращает одно или несколько значений, которые следует поместить в поле. Чтобы обеспечить поддержку функции расширения в службе языка, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса и реализовать <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> метод. Необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса для возврата нового экземпляра вашей версии <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса для каждой функции расширения, которые вы поддерживаете. Если требуется поддержка список возможных значений из функции расширения, необходимо также переопределить <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> метод <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса, чтобы получить список этих значений.  
+ Функции расширения является именованную функцию, который внедряется в шаблон фрагмента и возвращает одно или несколько значений, которые следует поместить в поле. Чтобы обеспечить поддержку функций расширений в службе языка, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса и реализуйте <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> метод. Необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса для возвращения нового экземпляра версии <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класс для каждой функции расширения, вы поддерживаете. Если вы поддерживаете список возможных значений из функции расширения, необходимо также переопределить <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> метод в <xref:Microsoft.VisualStudio.Package.ExpansionFunction> класса для возвращения списка этих значений.  
   
- Это расширение функция, которая принимает аргументы или нужен доступ к другие поля не должен быть связан с полем редактирования, как поставщика расширения не может полностью инициализировать к моменту вызова функции расширения. В результате функции расширения не могут получать значения аргументов или любого другого поля.  
+ Функции расширения, принимающие аргументы или требуется доступ к другие поля не должен быть связан с полем редактирования, как поставщик расширения не может полностью инициализировать моменту, когда вызывается функция расширения. Таким образом функции расширения не может получить значение аргументов или любое другое поле.  
   
 ### <a name="example"></a>Пример  
- Ниже приведен пример, как вызвать функцию простого расширения `GetName` могут быть реализованы. Эта функция расширения добавляют номер к имени базового класса при каждом экземпляров функции расширения (который соответствует каждый раз фрагмент кода вставляется).  
+ Ниже приведен пример способ вызова функции простого расширения `GetName` могут быть реализованы. Данная функция расширения добавляет номер к имени базового класса при каждом создании экземпляра функции расширения (что соответствует каждый раз в фрагменте кода вставляется).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -392,7 +392,7 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Возможности службы прежних версий языка](../../extensibility/internals/legacy-language-service-features1.md)   
- [Регистрация службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+ [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Фрагменты кода](../../ide/code-snippets.md)   
  [Пошаговое руководство. Получение списка фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

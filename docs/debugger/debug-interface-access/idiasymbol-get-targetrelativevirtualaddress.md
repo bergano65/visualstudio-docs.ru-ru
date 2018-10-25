@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_targetRelativeVirtualAddress | Документы Microsoft
+title: IDiaSymbol::get_targetRelativeVirtualAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c43d496565518df7e24b57cd9d191b1a64a800f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c3426fdf356e61239da2751bd068a38a4172382c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861323"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
-Получает относительный виртуальный адрес (RVA) преобразовать конечный.  
+Возвращает относительный виртуальный адрес (RVA) преобразовать конечный.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,15 +37,15 @@ HRESULT get_targetRelativeVirtualAddress (
  [out] Возвращает относительный виртуальный адрес преобразовать конечный.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Данное свойство допустимо только тогда, когда символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.  
+ Данное свойство допустимо только если символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.  
   
- «Преобразователь» — это фрагмент кода, который выполняет преобразование между памяти 32-разрядное адресное пространство (также известный как плоский пространства имен) и 16-разрядном адресном пространстве, (известный как сегментированное адресное пространство).  
+ «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

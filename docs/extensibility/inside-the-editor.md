@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859685"
 ---
 # <a name="inside-the-editor"></a>В редакторе
 Редактор состоит из нескольких разных подсистем, которые предназначены для предотвращения редактор текста отдельные модели представления текста и пользовательского интерфейса.  
   
  Эти разделы описывают различные аспекты редактора:  
   
--   [Обзор подсистемы](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [Обзор подсистемы](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [Модель текста](../extensibility/inside-the-editor.md#the-text-model)  
+- [Модель текста](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [Представление текста](../extensibility/inside-the-editor.md#the-text-view)  
+- [Представление текста](../extensibility/inside-the-editor.md#the-text-view)  
   
- Эти разделы описывают возможности редактора кода:  
+  Эти разделы описывают возможности редактора кода:  
   
--   [Теги и классификаторов](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [Теги и классификаторов](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [Элементы оформления](../extensibility/inside-the-editor.md#adornments)  
+- [Элементы оформления](../extensibility/inside-the-editor.md#adornments)  
   
--   [Проекция](../extensibility/inside-the-editor.md#projection)  
+- [Проекция](../extensibility/inside-the-editor.md#projection)  
   
--   [Структура](../extensibility/inside-the-editor.md#outlining)  
+- [Структура](../extensibility/inside-the-editor.md#outlining)  
   
--   [Привязок мыши](../extensibility/inside-the-editor.md#mousebindings)  
+- [Привязок мыши](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Редактор операций](../extensibility/inside-the-editor.md#editoroperations)  
+- [Редактор операций](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>Обзор подсистемы  
   
 ### <a name="text-model-subsystem"></a>Подсистемы модели текста  
  Подсистема модели текста отвечает за представления текста и включение его обработки. Подсистема модели текст содержит <xref:Microsoft.VisualStudio.Text.ITextBuffer> интерфейс, который описывает последовательность символов, которые должны отображаться в редакторе. Этот текст можно изменить, отслеживаться и обрабатываться различными способами. Модель текста также предоставляет типы для следующих аспектов:  
   
--   Служба, которая связывает текст с файлами и управляет чтения и записи их в файловой системе.  
+- Служба, которая связывает текст с файлами и управляет чтения и записи их в файловой системе.  
   
--   Разностный служба, которая находит минимальными различиями между двумя последовательностями объектов.  
+- Разностный служба, которая находит минимальными различиями между двумя последовательностями объектов.  
   
--   Система для описания текст в буфере, с точки зрения подмножества текста в другие буферы.  
+- Система для описания текст в буфере, с точки зрения подмножества текста в другие буферы.  
   
- Подсистема модели текст предоставляется концепций пользовательского интерфейса (UI). Например не несет ответственности за форматирование текста или текста, и он не имеет сведений о visual элементы оформления, которые могут быть связаны с текстом.  
+  Подсистема модели текст предоставляется концепций пользовательского интерфейса (UI). Например не несет ответственности за форматирование текста или текста, и он не имеет сведений о visual элементы оформления, которые могут быть связаны с текстом.  
   
- Открытые типы текста подсистемы модели содержатся в *Microsoft.VisualStudio.Text.Data.dll* и *Microsoft.VisualStudio.CoreUtility.dll*, которые зависят от только базового .NET Framework Библиотека классов и Managed Extensibility Framework (MEF).  
+  Открытые типы текста подсистемы модели содержатся в *Microsoft.VisualStudio.Text.Data.dll* и *Microsoft.VisualStudio.CoreUtility.dll*, которые зависят от только базового .NET Framework Библиотека классов и Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Текстовое представление подсистемы  
  Для форматирования и отображения текста отвечает подсистеме представления текста. Типы в этой подсистеме можно разделить на два слоя: в зависимости от того, является ли типы полагаться на Windows Presentation Foundation (WPF). Наиболее важными типами являются <xref:Microsoft.VisualStudio.Text.Editor.ITextView> и <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, какой элемент управления, набор текстовых строк, которые должны отображаться и также курсор, выбор и средства для декоративных текст с помощью элементов пользовательского интерфейса WPF. Эта подсистема также предоставляет область отображения поля вокруг текста. Эти поля могут быть расширены и может содержать различные виды содержимого и визуальные эффекты. Поля относятся строки чисел отображает и полосами прокрутки.  

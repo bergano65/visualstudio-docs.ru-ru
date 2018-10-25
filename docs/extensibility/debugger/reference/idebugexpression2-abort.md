@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::Abort | Документы Microsoft
+title: IDebugExpression2::Abort | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f4809fcf8e6947309182ff595ad2784b873f529
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2001992e1b5a120fd3dea588b785478e4d8ec418
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876858"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-Этот метод отменяет асинхронное выражение вычисления начала работы с помощью вызова [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) метод.  
+Этот метод отменяет асинхронное выражение вычисления, как к работе с помощью вызова [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) метод.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ int Abort();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- После отмены асинхронного выражения вычисления не отправляются [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) событий в обратный вызов события, передаваемый [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md) методы.  
+ При отмене вычисления асинхронных выражений не отправляются [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) события обратного вызова события, передаваемый [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) методы.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

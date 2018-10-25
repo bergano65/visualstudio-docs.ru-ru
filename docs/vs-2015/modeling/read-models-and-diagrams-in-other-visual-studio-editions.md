@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885204"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ ms.locfileid: "49277866"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Изменения, которые можно внести в режиме только для чтения  
  Если открыть модель и ее схемы в версии Visual Studio, которая не поддерживает создание модели, то модель нельзя будет изменять. То есть нельзя изменять элементы и отношения, которые отображаются на схемах или в обозревателе моделей. Однако можно внести некоторые изменения в структуру схем:  
   
--   изменить расположение фигур и соединителей на схеме;  
+- изменить расположение фигур и соединителей на схеме;  
   
--   развернуть или свернуть фигуры.  
+- развернуть или свернуть фигуры.  
   
- Эти изменения можно сохранить. Если вы хотите сделать изменения видимыми для других пользователей, необходимо хотя бы отправить обновленные **.layout** файлов.  
+  Эти изменения можно сохранить. Если вы хотите сделать изменения видимыми для других пользователей, необходимо хотя бы отправить обновленные **.layout** файлов.  
   
 ##  <a name="RelatedTopics"></a> Связанные разделы  
   

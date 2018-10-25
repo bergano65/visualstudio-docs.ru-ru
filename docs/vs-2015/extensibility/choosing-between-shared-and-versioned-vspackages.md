@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859940"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Выбор между общими пакетами VSPackage и пакетами с контролем версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "49263696"
 ## <a name="binary-compatibility"></a>Совместимость двоичных файлов  
  Как правило двоичная совместимость позволяет машинного кода пакеты VSPackage, разработанные в более ранних версиях Visual Studio для выполнения в более поздних версиях Visual Studio. Тем не менее существует три важных исключения:  
   
--   Если VSPackage зависит от конкретной версии среда CLR, то он должен определить, в какой версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] он выполняется.  
+- Если VSPackage зависит от конкретной версии среда CLR, то он должен определить, в какой версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] он выполняется.  
   
--   VSPackage может зависеть от над конкретной возможностью другом пакете VSPackage или другого продукта. Следовательно VSPackage можно запускать, только когда удовлетворяется зависимость.  
+- VSPackage может зависеть от над конкретной возможностью другом пакете VSPackage или другого продукта. Следовательно VSPackage можно запускать, только когда удовлетворяется зависимость.  
   
--   VSPackage может повлиять исправление безопасности в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] пакета обновления или более поздней версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В таком случае VSPackage, разработанные с использованием более ранней версии [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] могут не работать в версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] применили исправление безопасности. Тем не менее можно пакет с более поздней версии и также запустить его в более ранних версий.  
+- VSPackage может повлиять исправление безопасности в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] пакета обновления или более поздней версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В таком случае VSPackage, разработанные с использованием более ранней версии [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] могут не работать в версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] применили исправление безопасности. Тем не менее можно пакет с более поздней версии и также запустить его в более ранних версий.  
   
- Управляемые пакеты VSPackage должны быть построены с помощью версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] , совпадает с целевой версией [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Управляемые пакеты VSPackage должны быть построены с помощью версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] , совпадает с целевой версией [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Вдобавок к планированию для двоичной совместимости для вашего VSPackage двоичных файлов, вам также следует рассмотреть возможность решения и проекта форматов файлов. Если VSPackage создает новый тип проекта, необходимо решить, ли его можно запустить только одну версию или в нескольких версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [обновление пользовательских проектов](../misc/upgrading-custom-projects.md).  
+  Вдобавок к планированию для двоичной совместимости для вашего VSPackage двоичных файлов, вам также следует рассмотреть возможность решения и проекта форматов файлов. Если VSPackage создает новый тип проекта, необходимо решить, ли его можно запустить только одну версию или в нескольких версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [обновление пользовательских проектов](../misc/upgrading-custom-projects.md).  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

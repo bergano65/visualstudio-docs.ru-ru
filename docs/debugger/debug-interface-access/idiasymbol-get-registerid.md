@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerId | Документы Microsoft
+title: IDiaSymbol::get_registerId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6a4583206666f90adb90cbebebf9417e66fc78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0acc6d79e1e5da810e2f2da699df5d4def424df9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861472"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
-Извлекает обозначение регистра расположения при [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) равно `LocIsEnregistered`.  
+Извлекает обозначение register расположения при [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsEnregistered`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,16 +34,16 @@ HRESULT get_registerId (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает обозначение регистра расположения.  
+ [out] Возвращает обозначение register расположения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Если символ относительно регистра, то есть, если символ [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) задано значение `LocIsRegRel`, используйте `get_registerId` метод после вызова, чтобы [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) метод для получения смещения из регистра, где находится символ.  
+ Если символ является относительно регистр, то есть если символа [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsRegRel`, использовать `get_registerId` метод, а затем с помощью вызова [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) метод для получения смещения из реестра, где находится символ.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

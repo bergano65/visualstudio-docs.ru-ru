@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868587"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы команд Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ ms.locfileid: "49302449"
   
 #### <a name="to-locate-a-command-definition"></a>Для этого найдите определение команды  
   
-1.  В Visual Studio, откройте следующие файлы в *путь установки Visual Studio SDK*папку \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1. В Visual Studio, откройте следующие файлы в *путь установки Visual Studio SDK*папку \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     Большинство команд Visual Studio определяются в SharedCmdDef.vsct и ShellCmdDef.vsct. VsDbgCmdUsed.vsct определяет команды, относящиеся к отладчику, а Venusmenu.vsct команд, которые относятся к веб-разработки.  
+    Большинство команд Visual Studio определяются в SharedCmdDef.vsct и ShellCmdDef.vsct. VsDbgCmdUsed.vsct определяет команды, относящиеся к отладчику, а Venusmenu.vsct команд, которые относятся к веб-разработки.  
   
-2.  Если команда в данный элемент меню, обратите внимание, точный текст пункта меню. Если команда является кнопки на панели инструментов, обратите внимание, текст подсказки, отображаемой при наведении на него.  
+2. Если команда в данный элемент меню, обратите внимание, точный текст пункта меню. Если команда является кнопки на панели инструментов, обратите внимание, текст подсказки, отображаемой при наведении на него.  
   
-3.  Нажмите клавиши CTRL + F, чтобы открыть **найти** диалоговое окно.  
+3. Нажмите клавиши CTRL + F, чтобы открыть **найти** диалоговое окно.  
   
-4.  В **найти** введите текст, записанный на шаге 2.  
+4. В **найти** введите текст, записанный на шаге 2.  
   
-5.  Убедитесь, что **все открытые документы** отображается в **папка** поле.  
+5. Убедитесь, что **все открытые документы** отображается в **папка** поле.  
   
-6.  Нажмите кнопку **Найти далее** переключатель, пока текст выбран в `<Strings>` раздел [элемент Button](../../extensibility/button-element.md).  
+6. Нажмите кнопку **Найти далее** переключатель, пока текст выбран в `<Strings>` раздел [элемент Button](../../extensibility/button-element.md).  
   
-     `<Button>` Элемент, который команда отображается в — определение команды.  
+    `<Button>` Элемент, который команда отображается в — определение команды.  
   
- Когда вы найдете определения команды, можно поместить копию команды на другом меню или панели инструментов, создав [элемент CommandPlacement](../../extensibility/commandplacement-element.md) с тем же установленным `guid` и `id` значения, что команда. Дополнительные сведения см. в разделе [группы кнопок для повторного использования создание](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Когда вы найдете определения команды, можно поместить копию команды на другом меню или панели инструментов, создав [элемент CommandPlacement](../../extensibility/commandplacement-element.md) с тем же установленным `guid` и `id` значения, что команда. Дополнительные сведения см. в разделе [группы кнопок для повторного использования создание](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Особые случаи  
  В следующих случаях текст меню или текст подсказки может не совпадать в определение команды.  

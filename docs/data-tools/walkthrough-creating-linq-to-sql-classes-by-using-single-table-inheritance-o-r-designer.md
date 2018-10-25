@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864735"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство: Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночных таблиц, как именно обычно осуществляется в реляционных системах. Это пошаговое руководство разворачивается после универсальных шагов, описанных в [как: Настройка наследования с помощью реляционного конструктора](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и обеспечивает некоторые реальные данные, чтобы продемонстрировать использование наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  В этом пошаговом руководстве выполните следующие задачи.
 
--   Создайте таблицу базы данных и добавьте в нее данные.
+- Создайте таблицу базы данных и добавьте в нее данные.
 
--   Создайте приложение Windows Forms.
+- Создайте приложение Windows Forms.
 
--   Добавление файла [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] в проект.
+- Добавление файла [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] в проект.
 
--   Создайте новые классы сущностей.
+- Создайте новые классы сущностей.
 
--   Конфигурируйте классы сущностей на использование наследования.
+- Конфигурируйте классы сущностей на использование наследования.
 
--   Выполните запрос унаследованного класса.
+- Выполните запрос унаследованного класса.
 
--   Отобразите данные на Windows Forms
+- Отобразите данные на Windows Forms
 
 ## <a name="create-a-table-to-inherit-from"></a>Создайте таблицу в наследовать из
  Чтобы увидеть, как работает наследование, создайте небольшой `Person` таблицы, использовать его в качестве базового класса, а затем создайте `Employee` объект, который наследует от него.
@@ -151,7 +151,7 @@ ms.locfileid: "37174943"
 
 2.  Дважды щелкните форму, чтобы создать обработчик событий `Form1_Load`.
 
-3.  Добавьте следующий код в обработчик событий `Form1_Load`.
+3.  Добавьте следующий код в обработчик событий `Form1_Load` .
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -191,6 +191,6 @@ ms.locfileid: "37174943"
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство: Создание LINQ для классов SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Практическое: назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Практическое: Создание модели объектов в Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

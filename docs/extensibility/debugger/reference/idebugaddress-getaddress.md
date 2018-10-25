@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress | Документы Microsoft
+title: IDebugAddress::GetAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f93b57d3cdbea71d3cf9cbe3d51645251c9628
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873361"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Возвращает структуру, описывающую объект и его расположение в его области или контейнера.  
+Возвращает структуру, описывающий объект и его расположение в пределах ее области или контейнера.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetAddress(
  [in, out] Объект [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуру, которая заполняется с помощью данного метода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры передается в этот метод, который затем заполняет его с соответствующими данными. Способ интерпретации этих сведений зависит от типа сведений, возвращаемых и сам обработчик символов. В разделе [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) для получения дополнительных сведений.  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры передается этому методу, который затем заполняет его с помощью соответствующую информацию. Способ интерпретации этой информации зависит от типа возвращаемых сведений и сам обработчик символов. См. в разделе [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) для получения дополнительных сведений.  
   
 ## <a name="see-also"></a>См. также  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

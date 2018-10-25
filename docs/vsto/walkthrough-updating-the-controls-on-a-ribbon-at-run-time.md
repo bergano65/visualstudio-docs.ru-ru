@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881759"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Пошаговое руководство: Обновление элементов управления на ленте во время выполнения
   В этом пошаговом руководстве показано, как использовать объектную модель ленты для обновления элементов управления на ленте после загрузки ленты в приложение Office.  
@@ -167,49 +167,49 @@ ms.locfileid: "35258805"
   
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Порядок обновления элементов управления в пользовательской группе с помощью объектной модели ленты  
   
-1.  В меню **Проект** щелкните команду **Добавить ссылку**.  
+1. В меню **Проект** щелкните команду **Добавить ссылку**.  
   
-2.  В **добавить ссылку** диалоговом окне щелкните **.NET** выберите **System.Data.Linq** сборки, а затем щелкните **ОК**.  
+2. В **добавить ссылку** диалоговом окне щелкните **.NET** выберите **System.Data.Linq** сборки, а затем щелкните **ОК**.  
   
-     Эта сборка содержит классы для использования запросов LINQ (Language-Integrated Queries). Запросы LINQ будут использоваться для заполнения элементов управления в пользовательской группе данными из базы данных Northwind.  
+    Эта сборка содержит классы для использования запросов LINQ (Language-Integrated Queries). Запросы LINQ будут использоваться для заполнения элементов управления в пользовательской группе данными из базы данных Northwind.  
   
-3.  В **обозревателе решений**, нажмите кнопку **CustomerRibbon.cs** или **CustomerRibbon.vb** чтобы выбрать его.  
+3. В **обозревателе решений**, нажмите кнопку **CustomerRibbon.cs** или **CustomerRibbon.vb** чтобы выбрать его.  
   
-4.  На **представление** меню, щелкните **кода**.  
+4. На **представление** меню, щелкните **кода**.  
   
-     Файл кода ленты открывается в редакторе кода.  
+    Файл кода ленты открывается в редакторе кода.  
   
-5.  Добавьте следующие операторы в начало файла кода ленты. Эти операторы обеспечивают легкий доступ к пространствам имен LINQ и к пространству имен основной сборки взаимодействия Outlook.  
+5. Добавьте следующие операторы в начало файла кода ленты. Эти операторы обеспечивают легкий доступ к пространствам имен LINQ и к пространству имен основной сборки взаимодействия Outlook.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Добавьте следующий код внутри `CustomerRibbon` класса. Этот код объявляет таблицу данных и адаптеры таблиц, которые будут использоваться для хранения информации из таблиц «Заказчики», «Заказы», «Сведения о заказе» и «Продукт» базы данных Northwind.  
+6. Добавьте следующий код внутри `CustomerRibbon` класса. Этот код объявляет таблицу данных и адаптеры таблиц, которые будут использоваться для хранения информации из таблиц «Заказчики», «Заказы», «Сведения о заказе» и «Продукт» базы данных Northwind.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Добавьте следующий блок кода в класс `CustomerRibbon`. Этот код добавляет три вспомогательных метода, создающих элементы управления на ленте во время выполнения.  
+7. Добавьте следующий блок кода в класс `CustomerRibbon`. Этот код добавляет три вспомогательных метода, создающих элементы управления на ленте во время выполнения.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Замените обработчик событий `CustomerRibbon_Load` следующим кодом. Этот код использует запрос LINQ для выполнения следующих задач.  
+8. Замените обработчик событий `CustomerRibbon_Load` следующим кодом. Этот код использует запрос LINQ для выполнения следующих задач.  
   
-    -   Заполнение **клиентов** поле со списком с помощью идентификатора и имени 20 заказчиков в базе данных "Борей".  
+   - Заполнение **клиентов** поле со списком с помощью идентификатора и имени 20 заказчиков в базе данных "Борей".  
   
-    -   Вызов вспомогательного метода `PopulateSalesOrderInfo`. Этот метод обновляет **ProductsPurchased** меню с номера заказов на продажу, которые относятся к выбранному заказчику.  
+   - Вызов вспомогательного метода `PopulateSalesOrderInfo`. Этот метод обновляет **ProductsPurchased** меню с номера заказов на продажу, которые относятся к выбранному заказчику.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Добавьте следующий код в класс `CustomerRibbon`. Этот код использует запросы LINQ для выполнения следующих задач.  
+9. Добавьте следующий код в класс `CustomerRibbon` . Этот код использует запросы LINQ для выполнения следующих задач.  
   
-    -   Добавление подменю в **ProductsPurchased** меню для каждого заказа на продажу, относящиеся к выбранному заказчику.  
+   - Добавление подменю в **ProductsPurchased** меню для каждого заказа на продажу, относящиеся к выбранному заказчику.  
   
-    -   Добавление кнопок в каждое подменю для продуктов, относящихся к заказу на продажу.  
+   - Добавление кнопок в каждое подменю для продуктов, относящихся к заказу на продажу.  
   
-    -   Добавление обработчиков событий для каждой кнопки.  
+   - Добавление обработчиков событий для каждой кнопки.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
@@ -224,26 +224,26 @@ ms.locfileid: "35258805"
   
 12. Замените обработчик событий `ComboBox1_TextChanged` следующим кодом. Этот код выполняет следующие задачи:  
   
-    -   Вызов вспомогательного метода `PopulateSalesOrderInfo`. Этот метод обновляет **приобретенные продукты** меню с заказами, которые относятся к выбранному заказчику.  
+    - Вызов вспомогательного метода `PopulateSalesOrderInfo`. Этот метод обновляет **приобретенные продукты** меню с заказами, которые относятся к выбранному заказчику.  
   
-    -   Вызов вспомогательного метода `PopulateMailItem` и передача текущего текста, представляющего собой имя выбранного заказчика. Этот метод заполняет To, тему и текст поля новых почтовых сообщений.  
+    - Вызов вспомогательного метода `PopulateMailItem` и передача текущего текста, представляющего собой имя выбранного заказчика. Этот метод заполняет To, тему и текст поля новых почтовых сообщений.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Добавьте следующий `Click` в обработчике событий `CustomerRibbon` класса. Этот код добавляет имя выбранных продуктов поле Body новых почтовых сообщений.  
+13. Добавьте следующий обработчик событий `Click` в класс `CustomerRibbon` . Этот код добавляет имя выбранных продуктов поле Body новых почтовых сообщений.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
-14. Добавьте следующий код в класс `CustomerRibbon`. Этот код выполняет следующие задачи:  
+14. Добавьте следующий код в класс `CustomerRibbon` . Этот код выполняет следующие задачи:  
   
-    -   Заполняет строки "Кому" новых почтовых сообщений, используя адрес электронной почты текущего выбранного заказчика.  
+    - Заполняет строки "Кому" новых почтовых сообщений, используя адрес электронной почты текущего выбранного заказчика.  
   
-    -   Добавляет текст в тему и текст поля новых почтовых сообщений.  
+    - Добавляет текст в тему и текст поля новых почтовых сообщений.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
 ## <a name="test-the-controls-in-the-custom-group"></a>Тестирование элементов управления в пользовательской группе  
  При открытии новой почтовой формы в Outlook, пользовательскую группу с именем **покупки клиента** отображается на **сообщений** вкладке ленты.  

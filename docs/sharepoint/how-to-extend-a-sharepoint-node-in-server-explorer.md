@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861843"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Практическое: расширение узла SharePoint в обозревателе серверов
   Вы можете расширить узлы под **подключения SharePoint** узел в **обозревателя серверов**. Это полезно в том случае, если вы хотите добавить в существующий узел новые дочерние узлы, элементы контекстного меню или свойства. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -40,9 +40,9 @@ ms.locfileid: "37119801"
   
 3.  Создайте класс, реализующий интерфейс <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>.  
   
-4.  Добавление <xref:System.ComponentModel.Composition.ExportAttribute> классу атрибут. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> тип конструктору атрибута.  
+4.  Добавьте к классу атрибут <xref:System.ComponentModel.Composition.ExportAttribute> . Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> тип конструктору атрибута.  
   
-5.  Добавление <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> классу атрибут. Этот атрибут задает идентификатор строки для типа узла, который требуется расширить.  
+5.  Добавьте к классу атрибут <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> . Этот атрибут задает идентификатор строки для типа узла, который требуется расширить.  
   
      Чтобы указать узел встроенных типов, предоставляемых средой Visual Studio, передайте один из следующих значений перечисления конструктору атрибута:  
   
@@ -61,14 +61,14 @@ ms.locfileid: "37119801"
 ## <a name="example"></a>Пример  
  В следующем примере кода демонстрируется создание двух различных типов расширений узла:  
   
--   Расширение, пункт контекстного меню для узлов сайта SharePoint. Если щелкнуть элемент меню, его имя узла, который был щелкнут.  
+- Расширение, пункт контекстного меню для узлов сайта SharePoint. Если щелкнуть элемент меню, его имя узла, который был щелкнут.  
   
--   Расширение, которое добавляет пользовательское свойство с именем **ContosoExampleProperty** на каждый узел, представляющий поле с именем **текст**.  
+- Расширение, которое добавляет пользовательское свойство с именем **ContosoExampleProperty** на каждый узел, представляющий поле с именем **текст**.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Это расширение добавляет свойство редактируемой строки к узлам. Можно также создать пользовательские свойства, которые отображают только для чтения данных с сервера SharePoint. Пример, в котором показано, как это сделать, см. в разделе [Пошаговое руководство: расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Это расширение добавляет свойство редактируемой строки к узлам. Можно также создать пользовательские свойства, которые отображают только для чтения данных с сервера SharePoint. Пример, в котором показано, как это сделать, см. в разделе [Пошаговое руководство: расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
  В этом примере требуются ссылки на следующие сборки:  

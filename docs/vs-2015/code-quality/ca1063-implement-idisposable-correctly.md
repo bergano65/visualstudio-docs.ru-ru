@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877300"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: следует правильно реализовывать IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287486"
 ## <a name="cause"></a>Причина
  `IDisposable` не реализован правильно. Ниже перечислены некоторые причины возникновения этой проблемы:
 
--   IDisposable — это повторно реализован в классе.
+- IDisposable — это повторно реализован в классе.
 
--   Завершение подготовки повторно переопределяется.
+- Завершение подготовки повторно переопределяется.
 
--   Переопределяется метод Dispose.
+- Переопределяется метод Dispose.
 
--   Dispose() не является открытым, запечатанным или с именем Dispose.
+- Dispose() не является открытым, запечатанным или с именем Dispose.
 
--   Dispose(bool) не защищенный виртуальный и незапечатанный.
+- Dispose(bool) не защищенный виртуальный и незапечатанный.
 
--   В незапечатанных типов Dispose() необходимо вызвать Dispose(true).
+- В незапечатанных типов Dispose() необходимо вызвать Dispose(true).
 
--   Для незапечатанных типов реализации Finalize не вызывает один или оба Dispose(bool) или метод завершения класса.
+- Для незапечатанных типов реализации Finalize не вызывает один или оба Dispose(bool) или метод завершения класса.
 
- Нарушение любого из этих шаблонов приведет к выводу предупреждения.
+  Нарушение любого из этих шаблонов приведет к выводу предупреждения.
 
- Каждый незапечатанного корневого типа IDisposable необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dipose(true) и Finalize должен вызывать Dispose(false). Если вы создаете незапечатанного корневого типа IDisposable, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) в [рекомендации по разработке Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) раздел документации .NET Framework.
+  Каждый незапечатанного корневого типа IDisposable необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dipose(true) и Finalize должен вызывать Dispose(false). Если вы создаете незапечатанного корневого типа IDisposable, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) в [рекомендации по разработке Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) раздел документации .NET Framework.
 
 ## <a name="rule-description"></a>Описание правила
  Все типы IDisposable должны правильно реализовывать шаблон "Dispose".

@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_code16bit | Документы Microsoft
+title: IDiaSectionContrib::get_code16bit | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e253b440712a26b67870f76b241a85f5979158b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6057f6d6bb217908e3980a6a3fdd42584431ab55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858424"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-Возвращает флаг, указывающий, является ли раздел содержит 16-разрядного кода.  
+Получает флаг, указывающий, содержит ли раздел 16-разрядного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_code16bit(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` при 16-разрядным; в противном случае код в разделе возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если код в разделе, является 16-разрядным; в противном случае — значение, возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод только указывает, является ли код 16-разрядное. Если код является 16-разрядное, это может быть другая информация, например 32-разрядная или 64-разрядного кода.  
+ Этот метод только указывает, является ли код 16-разрядное. Если код не 16-разрядный, это может быть что-нибудь еще, например, 32-разрядная или 64-разрядный код.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

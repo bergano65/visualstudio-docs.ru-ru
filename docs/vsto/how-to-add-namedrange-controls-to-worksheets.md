@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867121"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Практическое: Добавление элементов управления NamedRange на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в проектах уровня документа.  
@@ -33,13 +33,13 @@ ms.locfileid: "35674766"
   
  В этом разделе описываются следующие задачи.  
   
--   [Добавление элементов управления NamedRange во время разработки](#designtime)  
+- [Добавление элементов управления NamedRange во время разработки](#designtime)  
   
--   [Добавление элементов управления NamedRange во время выполнения в проекте уровня документа](#runtimedoclevel)  
+- [Добавление элементов управления NamedRange во время выполнения в проекте уровня документа](#runtimedoclevel)  
   
--   [Добавление элементов управления NamedRange во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
+- [Добавление элементов управления NamedRange во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
   
- Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления, см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).  
+  Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления, см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Добавление элементов управления NamedRange во время разработки  
  Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .  

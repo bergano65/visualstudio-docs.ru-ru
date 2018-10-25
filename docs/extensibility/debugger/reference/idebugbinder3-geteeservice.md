@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Документы Microsoft
+title: IDebugBinder3::GetEEService | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866666"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-Этот метод возвращает запрашиваемую службу.  
+Этот метод возвращает запрошенную службу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,22 +47,22 @@ Int GetEEService(
   
 #### <a name="parameters"></a>Параметры  
  `vendor`  
- [in] `GUID` поставщика (приемлемо значение null).  
+ [in] `GUID` поставщика (допустимо значение null).  
   
  `language`  
- [in] `GUID` языка (приемлемо значение null).  
+ [in] `GUID` языка (допустимо значение null).  
   
  `iid`  
  [in] `IID` службы для получения.  
   
  `ppService`  
- [out] Интерфейс запрашиваемую службу.  
+ [out] Интерфейс запрошенную службу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Передайте `IID` для [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейса (`IID_IEEVisualizerServiceProvider`) для получения сведений о службе тип визуализатора. Если Да, можно получить средство оценки выражений [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторами типов. В разделе [Visualizing и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения.  
+ Передайте `IID` для [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейс (`IID_IEEVisualizerServiceProvider`) для получения сведений о службе типа визуализатора. Если таким образом, можно получить средство оценки выражений [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторами типов. См. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
