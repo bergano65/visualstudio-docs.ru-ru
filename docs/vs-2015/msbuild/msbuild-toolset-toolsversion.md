@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851833"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ ms.locfileid: "49242779"
 ## <a name="toolset-implementation"></a>Реализация набора инструментов  
  Реализация набора инструментов осуществляется с помощью выбора путей к различным инструментам, целям и задачам, из которых состоит набор инструментов. Инструменты в наборе, которые определяет MSBuild, поступают из следующих источников:  
   
--   из папки .NET Framework;  
+- из папки .NET Framework;  
   
--   из дополнительных управляемых инструментов.  
+- из дополнительных управляемых инструментов.  
   
- В число управляемых инструментов входят ResGen.exe и TlbImp.exe.  
+  В число управляемых инструментов входят ResGen.exe и TlbImp.exe.  
   
- MSBuild предлагает два способа доступа к набору инструментов:  
+  MSBuild предлагает два способа доступа к набору инструментов:  
   
--   с помощью свойств набора инструментов;  
+- с помощью свойств набора инструментов;  
   
--   с помощью методов <xref:Microsoft.Build.Utilities.ToolLocationHelper>.  
+- с помощью методов <xref:Microsoft.Build.Utilities.ToolLocationHelper>.  
   
- Свойства набора инструментов указывают на пути к инструментам. В соответствии со значением атрибута `ToolsVersion` в файле проекта MSBuild определяет местоположение соответствующего раздела реестра, а затем использует сведения из раздела реестра для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, то MSBuild задает свойства набора инструментов в соответствии со следующим разделом реестра: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Свойства набора инструментов указывают на пути к инструментам. В соответствии со значением атрибута `ToolsVersion` в файле проекта MSBuild определяет местоположение соответствующего раздела реестра, а затем использует сведения из раздела реестра для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, то MSBuild задает свойства набора инструментов в соответствии со следующим разделом реестра: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Свойства набора инструментов:  
+  Свойства набора инструментов:  
   
--   `MSBuildToolsPath` указывает путь к двоичным файлам MSBuild;  
+- `MSBuildToolsPath` указывает путь к двоичным файлам MSBuild;  
   
--   `SDK40ToolsPath` указывает путь к дополнительным управляемым инструментам для MSBuild 4.x (4.0 или 4.5);  
+- `SDK40ToolsPath` указывает путь к дополнительным управляемым инструментам для MSBuild 4.x (4.0 или 4.5);  
   
--   `SDK35ToolsPath` указывает путь к дополнительным управляемым инструментам для MSBuild 3.5.  
+- `SDK35ToolsPath` указывает путь к дополнительным управляемым инструментам для MSBuild 3.5.  
   
- Вы также можете программно определить набор инструментов, вызвав методы класса <xref:Microsoft.Build.Utilities.ToolLocationHelper>. Класс включает следующие методы:  
+  Вы также можете программно определить набор инструментов, вызвав методы класса <xref:Microsoft.Build.Utilities.ToolLocationHelper>. Класс включает следующие методы:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> возвращает путь к папке .NET Framework;  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> возвращает путь к папке .NET Framework;  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> возвращает путь к файлу в папке .NET Framework;  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> возвращает путь к файлу в папке .NET Framework;  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> возвращает путь к папке управляемых инструментов;  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> возвращает путь к папке управляемых инструментов;  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> возвращает путь к файлу, который обычно находится в папке управляемых инструментов;  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> возвращает путь к файлу, который обычно находится в папке управляемых инструментов;  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> возвращает путь к папке инструментов построения.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> возвращает путь к папке инструментов построения.  
   
 ### <a name="sub-toolsets"></a>Поднаборы инструментов  
  Как говорилось выше в этом разделе, для указания пути к основным инструментам в MSBuild используется раздел реестра. Если в разделе имеется подраздел, то он используется в MSBuild для указания пути к поднабору инструментов, в котором содержатся дополнительные инструменты. В этом случае набор инструментов определяется комбинацией определений свойств, которые настраиваются в двух разделах.  
@@ -107,19 +107,19 @@ ms.locfileid: "49242779"
   
  Поднаборы инструментов становятся активными в настоящем свойства построения `VisualStudioVersion`. Это свойство может принимать одно из следующих значений:  
   
--   "10.0" указывает на поднабор инструментов .NET Framework 4;  
+- "10.0" указывает на поднабор инструментов .NET Framework 4;  
   
--   "11.0" указывает на поднабор инструментов .NET Framework 4.5;  
+- "11.0" указывает на поднабор инструментов .NET Framework 4.5;  
   
--   "12.0" указывает на поднабор инструментов .NET Framework 4.5.1.  
+- "12.0" указывает на поднабор инструментов .NET Framework 4.5.1.  
   
- Поднаборы инструментов 10.0 и 11.0 должны использоваться с ToolsVersion 4.0. В более поздних версиях версии поднабора инструментов и ToolsVersion должны совпадать.  
+  Поднаборы инструментов 10.0 и 11.0 должны использоваться с ToolsVersion 4.0. В более поздних версиях версии поднабора инструментов и ToolsVersion должны совпадать.  
   
- В процессе построения MSBuild автоматически определяет и задает для свойства `VisualStudioVersion` значение по умолчанию, если оно не было установлено ранее.  
+  В процессе построения MSBuild автоматически определяет и задает для свойства `VisualStudioVersion` значение по умолчанию, если оно не было установлено ранее.  
   
- MSBuild обеспечивает перезагрузку для методов `ToolLocationHelper`, которые добавляют значение перечисления `VisualStudioVersion` в виде параметра.  
+  MSBuild обеспечивает перезагрузку для методов `ToolLocationHelper`, которые добавляют значение перечисления `VisualStudioVersion` в виде параметра.  
   
- Поднаборы инструментов впервые появились на платформе .NET Framework 4.5.  
+  Поднаборы инструментов впервые появились на платформе .NET Framework 4.5.  
   
 ## <a name="see-also"></a>См. также  
  [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)   

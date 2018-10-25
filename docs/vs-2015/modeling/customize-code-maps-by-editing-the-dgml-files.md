@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc6ef0463f98b5aec938ff7748a64b34b32c3934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843838"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,43 +45,43 @@ ms.locfileid: "49181952"
 ##  <a name="OrganizeNodes"></a> Группирование кодовых точек  
  Можно добавить новые группы или преобразовать существующие узлы в группу.  
   
-1.  Откройте DGML-файл в текстовом редакторе или редакторе XML.  
+1. Откройте DGML-файл в текстовом редакторе или редакторе XML.  
   
-2.  Чтобы преобразовать кодовую точку в группу, найдите элемент `<Node/>` для этой кодовой точки.  
+2. Чтобы преобразовать кодовую точку в группу, найдите элемент `<Node/>` для этой кодовой точки.  
   
-     \- или -  
+    \- или -  
   
-     Чтобы добавить новую группу, найдите раздел `<Nodes>`. Добавьте новый элемент `<Node/>`.  
+    Чтобы добавить новую группу, найдите раздел `<Nodes>`. Добавьте новый элемент `<Node/>`.  
   
-3.  В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Например:  
+3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Например:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyFirstGroup" Group="Expanded" />  
-       <Node Id="MySecondGroup" Group="Collapsed" />  
-    </Nodes>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyFirstGroup" Group="Expanded" />  
+      <Node Id="MySecondGroup" Group="Collapsed" />  
+   </Nodes>  
+   ```  
   
-4.  В разделе `<Links>` убедитесь, что элемент `<Link/>` со следующими атрибутами существует для каждой связи между кодовой точкой группы и дочерними кодовыми точками:  
+4. В разделе `<Links>` убедитесь, что элемент `<Link/>` со следующими атрибутами существует для каждой связи между кодовой точкой группы и дочерними кодовыми точками:  
   
-    -   Атрибут `Source`, который определяет кодовую точку группы  
+   - Атрибут `Source`, который определяет кодовую точку группы  
   
-    -   Атрибут `Target`, который определяет дочернюю кодовую точку  
+   - Атрибут `Target`, который определяет дочернюю кодовую точку  
   
-    -   Атрибут `Category`, который определяет отношение `Contains` между кодовой точкой группы и ее дочерней кодовой точкой  
+   - Атрибут `Category`, который определяет отношение `Contains` между кодовой точкой группы и ее дочерней кодовой точкой  
   
      Пример:  
   
-    ```xml  
-    <Links>  
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
-    </Links>  
-    ```  
+   ```xml  
+   <Links>  
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
+   </Links>  
+   ```  
   
-     Дополнительные сведения о `Category` атрибут, см. в разделе [Присвоение категорий кодовым точкам и связям](#AssignCategories).  
+    Дополнительные сведения о `Category` атрибут, см. в разделе [Присвоение категорий кодовым точкам и связям](#AssignCategories).  
   
 ##  <a name="ChangeGraphStyle"></a> Изменение стиля карты  
  Цвет фона и цвет границы карты можно изменить в DGML-файле. Чтобы изменить стиль кодовых точек и связей, см. в разделе [изменение стиля кодовых точек и связей](#Highlight).  
@@ -252,81 +252,81 @@ ms.locfileid: "49181952"
   
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Применение пользовательских стилей к группе кодовых точек и связей  
   
-1.  Откройте DGML-файл в текстовом редакторе или редакторе XML.  
+1. Откройте DGML-файл в текстовом редакторе или редакторе XML.  
   
-2.  Если элемент `<Styles></Styles>` не существует, добавьте его под элементом `<DirectedGraph></DirectedGraph>` за элементом `<Links></Links>`.  
+2. Если элемент `<Styles></Styles>` не существует, добавьте его под элементом `<DirectedGraph></DirectedGraph>` за элементом `<Links></Links>`.  
   
-3.  В элементе `<Styles></Styles>` под элементом `<Style/>` и укажите следующие атрибуты:  
+3. В элементе `<Styles></Styles>` под элементом `<Style/>` и укажите следующие атрибуты:  
   
-    -   `TargetType="Node` &#124; `Link | Graph"`  
+   - `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="` *NameInLegendBox* `"`  
+   - `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="` *NameInStylePickerBox* `"`  
+   - `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Чтобы применить пользовательский стиль ко всем типам целевого объекта не следует использовать это условие.  
   
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Применение условного стиля к группам кодовых точек и связей  
   
-1.  Откройте DGML-файл в текстовом редакторе или редакторе XML.  
+1. Откройте DGML-файл в текстовом редакторе или редакторе XML.  
   
-2.  В элементе `<Style/>` добавьте элемент `<Condition/>`, который содержит атрибут `Expression`, чтобы указать выражение, возвращающее логическое значение.  
+2. В элементе `<Style/>` добавьте элемент `<Condition/>`, который содержит атрибут `Expression`, чтобы указать выражение, возвращающее логическое значение.  
   
-     Пример:  
+    Пример:  
   
-    ```xml  
-    <Condition Expression="MyCategory"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory"/>  
+   ```  
   
-     - или  
+    - или  
   
-    ```xml  
-    <Condition Expression="MyCategory > 100"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory > 100"/>  
+   ```  
   
-     - или  
+    - или  
   
-    ```xml  
-    <Condition Expression="HasCategory('MyCategory')"/>  
-    ```  
+   ```xml  
+   <Condition Expression="HasCategory('MyCategory')"/>  
+   ```  
   
-     Это выражение использует следующий синтаксис "Формы Бэкуса-Наура" (BNF):  
+    Это выражение использует следующий синтаксис "Формы Бэкуса-Наура" (BNF):  
   
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
   
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
   
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> :: = «<» &#124; "\<=» &#124; «=» &#124; «> =» &#124; «>» &#124; «! =» &#124; «или» &#124; «и» &#124; «+» &#124; «*» &#124; «/» &#124; «-»  
+    <Operator> :: = «<» &#124; "\<=» &#124; «=» &#124; «> =» &#124; «>» &#124; «! =» &#124; «или» &#124; «и» &#124; «+» &#124; «*» &#124; «/» &#124; «-»  
   
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
   
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet> ::= Identifier  
+    <PropertyGet> ::= Identifier  
   
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
-     <Identifier> ::= [^. ]*  
+    <Identifier> ::= [^. ]*  
   
-     <Literal> :: = одинарные или двойные кавычки строковый литерал  
+    <Literal> :: = одинарные или двойные кавычки строковый литерал  
   
-     <Number> :: = строка цифр с дополнительной десятичной запятой  
+    <Number> :: = строка цифр с дополнительной десятичной запятой  
   
-     Можно указать несколько `<Condition/>` элементы, которые должны быть значение true, чтобы применить стиль.  
+    Можно указать несколько `<Condition/>` элементы, которые должны быть значение true, чтобы применить стиль.  
   
-3.  В следующей строке после элемента `<Condition/>` добавьте один или несколько элементов `<Setter/>`, чтобы указать атрибут `Property` и фиксированный атрибут `Value` или вычисляемый атрибут `Expression`, чтобы применить к карте, кодовым точкам или связям, удовлетворяющим условию.  
+3. В следующей строке после элемента `<Condition/>` добавьте один или несколько элементов `<Setter/>`, чтобы указать атрибут `Property` и фиксированный атрибут `Value` или вычисляемый атрибут `Expression`, чтобы применить к карте, кодовым точкам или связям, удовлетворяющим условию.  
   
-     Например:  
+    Например:  
   
-    ```xml  
-    <Setter Property="BackGround" Value="Green"/>  
-    ```  
+   ```xml  
+   <Setter Property="BackGround" Value="Green"/>  
+   ```  
   
- Завершенным, простым примером является следующее условие, которое указывает, что кодовая точка отображается зеленым или красным цветом в зависимости от значения ее категории `Passed` — `True` или `False`:  
+   Завершенным, простым примером является следующее условие, которое указывает, что кодовая точка отображается зеленым или красным цветом в зависимости от значения ее категории `Passed` — `True` или `False`:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -575,74 +575,74 @@ ms.locfileid: "49181952"
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Связывание документа или URL-адреса с кодовой точкой  
   
-1.  Откройте DGML-файл в текстовом редакторе или редакторе XML.  
+1. Откройте DGML-файл в текстовом редакторе или редакторе XML.  
   
-2.  Найдите элемент `<Node/>` для нужной кодовой точки.  
+2. Найдите элемент `<Node/>` для нужной кодовой точки.  
   
-3.  Выполните одну из задач, представленных в следующей таблице:  
+3. Выполните одну из задач, представленных в следующей таблице:  
   
-     Отдельная кодовая точка  
+    Отдельная кодовая точка  
   
-    -   В элементе `<Node/>` или `<Link/>` добавьте атрибут `Reference`, чтобы указать расположение кодовой точки.  
+   - В элементе `<Node/>` или `<Link/>` добавьте атрибут `Reference`, чтобы указать расположение кодовой точки.  
   
-        > [!NOTE]
-        >  У элемента может быть только один атрибут `Reference`.  
+     > [!NOTE]
+     >  У элемента может быть только один атрибут `Reference`.  
   
      Например:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" Reference="MyDocument.txt" />  
-    </Nodes>  
-    <Properties>  
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" Reference="MyDocument.txt" />  
+   </Nodes>  
+   <Properties>  
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     Несколько кодовых точек  
+    Несколько кодовых точек  
   
-    1.  В элементе `<Node/>` или `<Link/>` добавьте новый атрибут, чтобы указать расположение каждой ссылки.  
+   1. В элементе `<Node/>` или `<Link/>` добавьте новый атрибут, чтобы указать расположение каждой ссылки.  
   
-    2.  В разделе `<Properties>`:  
+   2. В разделе `<Properties>`:  
   
-        1.  Добавьте элемент `<Property/>` для каждого нового типа ссылки.  
+      1.  Добавьте элемент `<Property/>` для каждого нового типа ссылки.  
   
-        2.  Присвойте атрибуту `Id` имя нового атрибута ссылки.  
+      2.  Присвойте атрибуту `Id` имя нового атрибута ссылки.  
   
-        3.  Добавить `IsReference` атрибут и присвойте ему значение `True` чтобы отобразить ссылку на элемент кода **перейти по ссылке** контекстное меню.  
+      3.  Добавить `IsReference` атрибут и присвойте ему значение `True` чтобы отобразить ссылку на элемент кода **перейти по ссылке** контекстное меню.  
   
-        4.  Используйте `Label` атрибут, чтобы указать текст, отображаемый в элементе кода **перейти по ссылке** контекстное меню.  
+      4.  Используйте `Label` атрибут, чтобы указать текст, отображаемый в элементе кода **перейти по ссылке** контекстное меню.  
   
-     Пример:  
+      Пример:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     На карте имя кодовой точки отображается подчеркнутым. Открыв контекстное меню элемента кода или связи, вы увидите **перейти по ссылке** контекстное меню, содержащее связанные кодовые точки на ваш выбор.  
+    На карте имя кодовой точки отображается подчеркнутым. Открыв контекстное меню элемента кода или связи, вы увидите **перейти по ссылке** контекстное меню, содержащее связанные кодовые точки на ваш выбор.  
   
-4.  Воспользуйтесь атрибутом `ReferenceTemplate`, чтобы указать общую строку, такую как URL-адрес, используемую несколькими ссылками, вместо повторения этой строки в ссылке.  
+4. Воспользуйтесь атрибутом `ReferenceTemplate`, чтобы указать общую строку, такую как URL-адрес, используемую несколькими ссылками, вместо повторения этой строки в ссылке.  
   
-     Атрибут `ReferenceTemplate` указывает заполнитель для значения ссылки. В следующем примере заполнитель `{0}` в атрибуте `ReferenceTemplate` будет заменен значениями атрибутов `MyFirstReference` и `MySecondReference` в элементе `<Node/>` для получения полного пути:  
+    Атрибут `ReferenceTemplate` указывает заполнитель для значения ссылки. В следующем примере заполнитель `{0}` в атрибуте `ReferenceTemplate` будет заменен значениями атрибутов `MyFirstReference` и `MySecondReference` в элементе `<Node/>` для получения полного пути:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
+   </Properties>  
+   ```  
   
-5.  Чтобы просмотреть кодовую точку, на которую указывает ссылка, или кодовые точки на карте, откройте контекстное меню кодовой точки или связи. Выберите **перейти по ссылке** и затем кодовую точку.  
+5. Чтобы просмотреть кодовую точку, на которую указывает ссылка, или кодовые точки на карте, откройте контекстное меню кодовой точки или связи. Выберите **перейти по ссылке** и затем кодовую точку.  
   
 ## <a name="see-also"></a>См. также  
  [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)   

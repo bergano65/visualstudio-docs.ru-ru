@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8e84397a5c08a00b704bc571ca1eba3361bfd6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846594"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания
 В этой статье описывается это функция появилась в .NET Framework версии 3.5, которая включает развертывание приложений ClickOnce из нескольких мест сети без повторного подписывания приложения ClickOnce или манифесты ClickOnce.  
@@ -54,11 +54,11 @@ ms.locfileid: "39081401"
   
  Ниже приведены два примера позволяет прояснить это. В первом примере, публикации приложения ClickOnce, который не имеет `deploymentProvider` тег и попросите пользователей установить его из http://www.adatum.com/MyApplication/. Если вы решите опубликовать следующего обновления приложения от http://subdomain.adatum.com/MyApplication/, как у вас нет возможности означающую, что это в манифесте развертывания, который находится в http://www.adatum.com/MyApplication/. Необходимо выполнить одно из следующих действий:  
   
--   Попросите пользователей удалить предыдущую версию и установить новую версию из нового расположения.  
+- Попросите пользователей удалить предыдущую версию и установить новую версию из нового расположения.  
   
--   Включить обновление на http://www.adatum.com/MyApplication/ , включающий `deploymentProvider` указывает на http://www.adatum.com/MyApplication/. Отпустите другим обновлением позже с помощью `deploymentProvider` указывает на http://subdomain.adatum.com/MyApplication/.  
+- Включить обновление на http://www.adatum.com/MyApplication/ , включающий `deploymentProvider` указывает на http://www.adatum.com/MyApplication/. Отпустите другим обновлением позже с помощью `deploymentProvider` указывает на http://subdomain.adatum.com/MyApplication/.  
   
- Во втором примере, публикации приложения ClickOnce, указывающее `deploymentProvider`, а затем решили удалить ее. Один раз в новую версию без `deploymentProvider` загружается на клиентские компьютеры с невозможно перенаправить путь, используемый для обновления, пока не будет выпущена версия вашего приложения, которое имеет `deploymentProvider` восстановлена. Как и в первом примере `deploymentProvider` изначально должен указывать на местоположение текущего обновления, а не на новое местоположение. В данном случае, если попытаться вставить `deploymentProvider` , ссылающийся на http://subdomain.adatum.com/MyApplication/, происходит сбой следующего обновления.  
+  Во втором примере, публикации приложения ClickOnce, указывающее `deploymentProvider`, а затем решили удалить ее. Один раз в новую версию без `deploymentProvider` загружается на клиентские компьютеры с невозможно перенаправить путь, используемый для обновления, пока не будет выпущена версия вашего приложения, которое имеет `deploymentProvider` восстановлена. Как и в первом примере `deploymentProvider` изначально должен указывать на местоположение текущего обновления, а не на новое местоположение. В данном случае, если попытаться вставить `deploymentProvider` , ссылающийся на http://subdomain.adatum.com/MyApplication/, происходит сбой следующего обновления.  
   
 ## <a name="create-a-deployment"></a>Создание развертывания  
  Пошаговое руководство по созданию развертываний, которые могут быть развернуты из разных мест сети, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce, которая не требует повторной подписи и сохраняет фирменную символику](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  

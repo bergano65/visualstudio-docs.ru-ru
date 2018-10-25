@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855421"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
   
--   метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;  
   
--   Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
+- Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
   
- См. соответствующие разделы ниже дополнительные сведения о реализации этих методов и свойств.  
+  См. соответствующие разделы ниже дополнительные сведения о реализации этих методов и свойств.  
   
- Для поддержки дополнительных функций, языковой службы может потребоваться создать класс, производный от одного из классов службы языка MPF; Например, для поддержки дополнительных меню команд, необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить некоторые методы обработки команды (см. в разделе <xref:Microsoft.VisualStudio.Package.ViewFilter> подробные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService> Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов и переопределить метод соответствующие создания экземпляров класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класс для возврата экземпляра собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. См. Дополнительные сведения можно найти в разделе «Создание экземпляров специальные классы».  
+  Для поддержки дополнительных функций, языковой службы может потребоваться создать класс, производный от одного из классов службы языка MPF; Например, для поддержки дополнительных меню команд, необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить некоторые методы обработки команды (см. в разделе <xref:Microsoft.VisualStudio.Package.ViewFilter> подробные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService> Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов и переопределить метод соответствующие создания экземпляров класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класс для возврата экземпляра собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. См. Дополнительные сведения можно найти в разделе «Создание экземпляров специальные классы».  
   
- Языковой службы также может предоставлять свои собственные значки, которые используются во многих местах. К примеру при отображении списка завершения IntelliSense, каждый элемент в списке может иметь значок, связанный с ним, элемент будет помечен как метода, класса, пространства имен, свойств, или все, что необходимы для вашего языка. Эти значки используются во всех списках IntelliSense, **панели навигации**, а затем в **список ошибок** окно задач. См. в разделе «Язык обслуживания образов» ниже сведения.  
+  Языковой службы также может предоставлять свои собственные значки, которые используются во многих местах. К примеру при отображении списка завершения IntelliSense, каждый элемент в списке может иметь значок, связанный с ним, элемент будет помечен как метода, класса, пространства имен, свойств, или все, что необходимы для вашего языка. Эти значки используются во всех списках IntelliSense, **панели навигации**, а затем в **список ошибок** окно задач. См. в разделе «Язык обслуживания образов» ниже сведения.  
   
 ## <a name="getlanguagepreferences-method"></a>Метод GetLanguagePreferences  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Метод всегда возвращает тот же экземпляр <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Можно использовать базовый <xref:Microsoft.VisualStudio.Package.LanguagePreferences> , если нет необходимости любые дополнительные настройки для языковой службы. Классы MPF языковой службы предполагают наличие по крайней мере базы <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  
@@ -196,7 +196,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
@@ -213,7 +213,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>В классе источника  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|  
@@ -223,7 +223,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, такие как члены или типы. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур метода в данном контексте. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  

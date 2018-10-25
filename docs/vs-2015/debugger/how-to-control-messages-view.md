@@ -17,27 +17,27 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb5e3bf1e4f40f01a93a5f9a8de73523d41eaab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be9a4ad0be92b9b5b6eedc982973ec63885fafad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821595"
 ---
 # <a name="how-to-control-messages-view"></a>Практическое руководство. Управление представлением "Сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 С помощью Spy ++, у вас есть значительной степени контролировать содержимое [представления сообщений](../debugger/messages-view.md) окна. Вы можете [запускать и останавливать](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время и вы можете указать:  
   
--   Тип сообщений, которые вы хотите просмотреть.  
+- Тип сообщений, которые вы хотите просмотреть.  
   
--   Какие windows, вы хотите отслеживать.  
+- Какие windows, вы хотите отслеживать.  
   
--   Формат отображения для строки сообщения.  
+- Формат отображения для строки сообщения.  
   
- Эти параметры доступны в [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), и они применяются только к активному [представления сообщений](../debugger/messages-view.md) окна. Чтобы открыть это диалоговое окно, выберите **сообщений журнала** из **Spy** меню.  
+  Эти параметры доступны в [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), и они применяются только к активному [представления сообщений](../debugger/messages-view.md) окна. Чтобы открыть это диалоговое окно, выберите **сообщений журнала** из **Spy** меню.  
   
- Доступны три вкладки Параметры сообщения. Для получения дополнительных сведений см. в разделе [вкладка «Windows», диалоговое окно "Параметры сообщения"](../debugger/windows-tab-message-options-dialog-box.md), [вкладка "сообщения", диалоговое окно "Параметры сообщения"](../debugger/messages-tab-message-options-dialog-box.md), и [вкладка «Вывод», диалоговое окно "Параметры сообщения"](../debugger/output-tab-message-options-dialog-box.md).
+  Доступны три вкладки Параметры сообщения. Для получения дополнительных сведений см. в разделе [вкладка «Windows», диалоговое окно "Параметры сообщения"](../debugger/windows-tab-message-options-dialog-box.md), [вкладка "сообщения", диалоговое окно "Параметры сообщения"](../debugger/messages-tab-message-options-dialog-box.md), и [вкладка «Вывод», диалоговое окно "Параметры сообщения"](../debugger/output-tab-message-options-dialog-box.md).
 
 
 

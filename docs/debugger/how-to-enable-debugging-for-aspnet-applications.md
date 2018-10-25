@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813431"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Отладка приложений ASP.NET или ASP.NET Core в Visual Studio
 
@@ -121,29 +121,29 @@ IIS Express используется по умолчанию и предвари
   
 3. Убедитесь, что `debug` атрибут в `compilation` элементу присваивается `true`. (Если `compilation` элемент не содержит `debug` атрибута, добавьте его и присвойте ему значение `true`.) 
   
-  Если вы используете локальный сервер IIS вместо IIS Express сервера по умолчанию, убедитесь, что `targetFramework` значение в атрибута `compilation` элемент соответствует framework на сервере IIS.
+   Если вы используете локальный сервер IIS вместо IIS Express сервера по умолчанию, убедитесь, что `targetFramework` значение в атрибута `compilation` элемент соответствует framework на сервере IIS.
   
-  `compilation` Элемент *web.config* файл должен выглядеть как в следующем примере:
+   `compilation` Элемент *web.config* файл должен выглядеть как в следующем примере:
 
-  > [!NOTE]
-  > В этом примере является частичным *web.config* файл. Обычно дополнительных разделов XML в `configuration` и `system.web` элементов и `compilation` элемент также может содержать другие элементы или атрибуты.
+   > [!NOTE]
+   > В этом примере является частичным *web.config* файл. Обычно дополнительных разделов XML в `configuration` и `system.web` элементов и `compilation` элемент также может содержать другие элементы или атрибуты.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] автоматически обнаруживает любые изменения *web.config* файлы и применяются новые параметры конфигурации. Не нужно перезагружать компьютер или сервер IIS, чтобы изменения вступили в силу.  
   
 Веб-сайт может содержать несколько виртуальных каталогов и подкаталогов, *web.config* файлов в каждом из них. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложения наследуют параметры конфигурации из *web.config* файлы на более высоких уровнях URL-пути. Иерархическое *web.config* файл параметры применяются ко всем [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложений под ними в иерархии. Установка на другую конфигурацию в *web.config* более низкого уровня в иерархии файла переопределяют параметры в файле более поздней версии.  
   
-Например, если указать `debug="true"` в *www.microsoft.com/aaa/web.config*, любое приложение в *aaa* папку или в любом подкаталоге *aaa* наследует эту настройку Кроме того, если один из этих приложений переопределяет параметр с собственным *web.config* файл.  
+Например, если указать `debug="true"` в <em>www.microsoft.com/aaa/web.config</em>, любое приложение в *aaa* папку или в любом подкаталоге *aaa* наследует эту настройку Кроме того, если один из этих приложений переопределяет параметр с собственным *web.config* файл.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Публикация в режиме отладки, в файловой системе
 

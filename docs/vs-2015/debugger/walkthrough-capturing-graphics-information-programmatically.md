@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812911"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ ms.locfileid: "49298159"
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Определение интерфейса IDXGraphicsAnalysis  
   
--   Определите интерфейс IDXGraphicsAnalysis в том же файле, в который вы включили файлы заголовков.  
+- Определите интерфейс IDXGraphicsAnalysis в том же файле, в который вы включили файлы заголовков.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Для удобства эти действия можно выполнить в новом файле заголовка, а затем включить его в нужном месте в приложении.  
+  Для удобства эти действия можно выполнить в новом файле заголовка, а затем включить его в нужном месте в приложении.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>получение интерфейса IDXGraphicsAnalysis;  
  Чтобы получить возможность захватывать графические данные из DirectX 11.2, необходимо получить интерфейс отладки DXGI.  
@@ -171,23 +171,23 @@ ms.locfileid: "49298159"
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Настройка имени и расположения файла журнала графики  
   
--   Чтобы предотвратить запись журнала графики во временный каталог, перед строкой `#include <vsgcapture.h>` добавьте следующий код:  
+- Чтобы предотвратить запись журнала графики во временный каталог, перед строкой `#include <vsgcapture.h>` добавьте следующий код:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     С помощью этого значения можно задать запись журнала графики в расположение относительно рабочего каталога или по абсолютному пути, если определение `VSG_DEFAULT_RUN_FILENAME` — абсолютный путь.  
+   С помощью этого значения можно задать запись журнала графики в расположение относительно рабочего каталога или по абсолютному пути, если определение `VSG_DEFAULT_RUN_FILENAME` — абсолютный путь.  
   
--   Чтобы сохранить журнал графики в другое место или присвоить ему другое имя файла, перед строкой `#include <vsgcapture.h>` добавьте следующий код:  
+- Чтобы сохранить журнал графики в другое место или присвоить ему другое имя файла, перед строкой `#include <vsgcapture.h>` добавьте следующий код:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Если не выполнить это действие, файл будет иметь имя default.vsglog. Если элемент `DONT_SAVE_VSGLOG_TO_TEMP`не определен, расположение файла является относительным к временному каталогу. В противном случае оно является относительным к рабочему каталогу или представляет собой другое расположение, если указано абсолютное имя файла.  
+   Если не выполнить это действие, файл будет иметь имя default.vsglog. Если элемент `DONT_SAVE_VSGLOG_TO_TEMP`не определен, расположение файла является относительным к временному каталогу. В противном случае оно является относительным к рабочему каталогу или представляет собой другое расположение, если указано абсолютное имя файла.  
   
- Для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, расположение временного каталога для каждого пользователя и приложения и обычно находится в расположении, например C:\users\\*username*\AppData\Local\Packages\\ *имя семейства пакетов*\TempState\\. Для классических приложений расположение временного каталога, относится к каждому пользователю и обычно находится в расположении, например C:\Users\\*username*\AppData\Local\Temp\\.  
+  Для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, расположение временного каталога для каждого пользователя и приложения и обычно находится в расположении, например C:\users\\*username*\AppData\Local\Packages\\ *имя семейства пакетов*\TempState\\. Для классических приложений расположение временного каталога, относится к каждому пользователю и обычно находится в расположении, например C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Для записи в определенное расположение необходимо иметь разрешения на запись в него; в противном случае возникает ошибка. Имейте в виду, что приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] имеют больше ограничений, чем классические приложения, касающиеся того, куда они могут записывать данные. Для записи в некоторые расположения может потребоваться дополнительная настройка.  

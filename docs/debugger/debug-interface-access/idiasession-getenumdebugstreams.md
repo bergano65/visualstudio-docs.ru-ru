@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::getEnumDebugStreams | Документы Microsoft
+title: IDiaSession::getEnumDebugStreams | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e604734b7dceb9c0edc1fc19aaae56655ee27f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 53eb0765b7a3d9ed5fb23c0b1d8880eeca390159
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818801"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
-Возвращает перечислимый последовательности отладки потоков данных.  
+Извлекает перечисленной последовательности, потоков данных отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT getEnumDebugStreams (
   
 #### <a name="parameters"></a>Параметры  
  `ppEnumDebugStreams`  
- [out] Возвращает [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) , содержащий список потоки отладки.  
+ [out] Возвращает [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) , содержащий список отладки потоков.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

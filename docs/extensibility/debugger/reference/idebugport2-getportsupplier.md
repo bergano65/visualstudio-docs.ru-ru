@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortSupplier | Документы Microsoft
+title: IDebugPort2::GetPortSupplier | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1425760c0ba568d57bb1c3d45ed735881d28134e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6a75c9ebacdfac2c8def4c31493b09197942090
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819632"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
-Возвращает поставщика порта для этого порта.  
+Получает поставщика порта для этого порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetPortSupplier(
  [out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) представляет объект поставщика порта для порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

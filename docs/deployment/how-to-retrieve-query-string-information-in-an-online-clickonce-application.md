@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829772"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое: извлечение сведений строки запроса в интерактивном приложении ClickOnce
 *Строка запроса* — это часть URL-адреса, начинающаяся с вопросительного знака (?) и содержащая произвольные сведения в форме *имя=значение*. Предположим, что имеется приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с именем `WindowsApp1` , размещенное в `servername`, и вы хотите передать значение для переменной `username` при запуске приложения. URL-адрес может выглядеть следующим образом:  
@@ -57,17 +57,17 @@ ms.locfileid: "44282456"
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Включение передачи строки запроса в приложении ClickOnce с помощью MageUI.exe  
   
-1.  Откройте окно командной строки платформы .NET и введите:  
+1. Откройте окно командной строки платформы .NET и введите:  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  В меню **Файл** выберите пункт **Открыть**и откройте манифест развертывания для своего приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это файл, заканчивающийся расширением `.application` .  
+2. В меню **Файл** выберите пункт **Открыть**и откройте манифест развертывания для своего приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это файл, заканчивающийся расширением `.application` .  
   
-3.  Выберите панель **Параметры развертывания** в левом окне переходов и установите флажок **Разрешать передачу параметров URL-адресов в приложение** .  
+3. Выберите панель **Параметры развертывания** в левом окне переходов и установите флажок **Разрешать передачу параметров URL-адресов в приложение** .  
   
-4.  В меню **Файл** выберите команду **Сохранить**.  
+4. В меню **Файл** выберите команду **Сохранить**.  
   
 > [!NOTE]
 >  Кроме того, можно включить передачу строки запроса в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Установите флажок **Разрешать передачу параметров URL-адресов в приложение** , который можно найти, открыв **Свойства проекта**, выбрав вкладку **Публикация** , нажав кнопку **Параметры** , а затем выбрав **Манифесты**.  

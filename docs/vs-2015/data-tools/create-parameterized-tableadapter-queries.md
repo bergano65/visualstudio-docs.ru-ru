@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823506"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создание параметризованных запросов адаптера таблицы TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ ms.locfileid: "49225262"
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Добавление запроса в существующую форму с привязкой к данным  
   
-1.  Откройте форму в **конструкторе Windows Forms**.  
+1. Откройте форму в **конструкторе Windows Forms**.  
   
-2.  На **данных** меню, выберите**добавить запрос**или**данные смарт-тега**.  
+2. На **данных** меню, выберите**добавить запрос**или**данные смарт-тега**.  
   
-    > [!NOTE]
-    >  Если **добавить запрос** недоступна на **данных** меню, выберите элемент управления в форме, отображающий тот источник данных вы хотите добавить параметризацию. Например, если форма отображает данные в элементе управления <xref:System.Windows.Forms.DataGridView>, выберите его. Если форма отображает данные в отдельных элементах управления, выберите любой элемент управления с привязкой к данным.  
+   > [!NOTE]
+   >  Если **добавить запрос** недоступна на **данных** меню, выберите элемент управления в форме, отображающий тот источник данных вы хотите добавить параметризацию. Например, если форма отображает данные в элементе управления <xref:System.Windows.Forms.DataGridView>, выберите его. Если форма отображает данные в отдельных элементах управления, выберите любой элемент управления с привязкой к данным.  
   
-3.  В **таблицы источника данных выберите** области, выберите tablethat, вы хотите добавить параметризацию.  
+3. В **таблицы источника данных выберите** области, выберите tablethat, вы хотите добавить параметризацию.  
   
-4.  Введите имя в **имя нового запроса** поле при создании нового запроса.  
+4. Введите имя в **имя нового запроса** поле при создании нового запроса.  
   
-     - или -  
+    - или -  
   
-     Выделите запрос в **имя существующего запроса** поле.  
+    Выделите запрос в **имя существующего запроса** поле.  
   
-5.  В **текст запроса** введите запрос, который принимает параметры.  
+5. В **текст запроса** введите запрос, который принимает параметры.  
   
-6.  Выберите**ОК**.  
+6. Выберите**ОК**.  
   
-     Элемент управления для ввода параметра и их **нагрузки** кнопки добавляются на форму в <xref:System.Windows.Forms.ToolStrip> элемента управления.  
+    Элемент управления для ввода параметра и их **нагрузки** кнопки добавляются на форму в <xref:System.Windows.Forms.ToolStrip> элемента управления.  
   
- Параметры адаптера таблицы можно назначить значения null, когда требуется выполнять запросы для записей, которые не должны иметь текущего значения. Например, рассмотрим следующий запрос, имеющий `ShippedDate` параметр в его `WHERE` предложение:  
+   Параметры адаптера таблицы можно назначить значения null, когда требуется выполнять запросы для записей, которые не должны иметь текущего значения. Например, рассмотрим следующий запрос, имеющий `ShippedDate` параметр в его `WHERE` предложение:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Если бы это было по запросу, может запрашивать все заказы, которые еще не доставлены следующим кодом:  
+   Если бы это было по запросу, может запрашивать все заказы, которые еще не доставлены следующим кодом:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Чтобы включить запрос, чтобы принимать значения null  
   

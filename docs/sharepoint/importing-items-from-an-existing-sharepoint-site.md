@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832112"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Импорт элементов из существующего сайта SharePoint
   Шаблон проекта "Импорт пакета решения SharePoint" позволяет многократно использовать элементы, такие как типы контента и поля, из существующих сайтов SharePoint в новом решении SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Хотя большинство импортированных решений можно запускать без изменений, существуют некоторые ограничения и вопросы, которые необходимо учитывать, особенно если вы изменяете какие-либо элементы после их импорта.  
@@ -41,40 +41,40 @@ ms.locfileid: "37119489"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] не поддерживает импорт решений, созданных в следующих приложениях.  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- Несмотря на то что зачастую удается успешно импортировать решения, созданные в этих приложениях, эта функциональность не протестирована и не поддерживается.  
+  Несмотря на то что зачастую удается успешно импортировать решения, созданные в этих приложениях, эта функциональность не протестирована и не поддерживается.  
   
 ## <a name="item-import-restrictions"></a>Ограничения на импорт элементов
  Несмотря на то, что большинство элементов SharePoint можно импортировать из существующего *.wsp* файла, следующие элементы не поддерживаются и могут потребовать внесения изменений для правильной работы:  
   
--   сущности модели подключения к бизнес-данным;  
+- сущности модели подключения к бизнес-данным;  
   
--   элементы сопоставления рабочего процесса кода;  
+- элементы сопоставления рабочего процесса кода;  
   
--   рабочие процессы кода;  
+- рабочие процессы кода;  
   
--   визуальные веб-части (ASCX-файлы);  
+- визуальные веб-части (ASCX-файлы);  
   
--   Веб-служб (*.asmx*)  
+- Веб-служб (*.asmx*)  
   
--   привязки типов контента;  
+- привязки типов контента;  
   
--   приемники событий;  
+- приемники событий;  
   
--   определения списков (шаблоны);  
+- определения списков (шаблоны);  
   
--   определения сайтов.  
+- определения сайтов.  
   
- При экспорте решения из [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] или [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], эти элементы автоматически исключаются из *.wsp* файл. Тем не менее другие *.wsp* файлы, созданные неподдерживаемыми инструментами, могут содержать эти элементы. (См. раздел "Поддерживаемые решения SharePoint" выше в этой статье.)  
+  При экспорте решения из [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] или [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], эти элементы автоматически исключаются из *.wsp* файл. Тем не менее другие *.wsp* файлы, созданные неподдерживаемыми инструментами, могут содержать эти элементы. (См. раздел "Поддерживаемые решения SharePoint" выше в этой статье.)  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>Что происходит при импорте решения
  При импорте решения с помощью шаблона "Импорт пакета решения SharePoint", [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] копирует все содержимое *.wsp* импорта файла и пытается согласовать и сохранить все ассоциации и ссылки между элементы и их файлов.  
@@ -112,7 +112,7 @@ ms.locfileid: "37119489"
  При импорте решения некоторые необязательные атрибуты компонента не включаются в манифест импортированного компонента. Если вы хотите восстановить эти атрибуты в новом файле компонента, найдите отсутствующие атрибуты, сравнив исходный файл компонента с новым манифестом компонента и следуйте инструкциям в разделе [как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Обнаружение конфликтов развертывания во встроенных экземплярах списка не выполняется
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] не выполняет обнаружение конфликтов развертывания во встроенных экземплярах списка (то есть, по умолчанию в экземплярах списка, поставляемых с SharePoint). Обнаружение конфликтов не выполняется для того, чтобы избежать перезаписи встроенных экземпляров списка в SharePoint. Встроенные экземпляры списка развертываются и обновляются, но никогда не удаляются и не перезаписываются. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Устранение неполадок развертывания и упаковки SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] не выполняет обнаружение конфликтов развертывания во встроенных экземплярах списка (т. е. в экземплярах списка по умолчанию, поставляемых с SharePoint). Обнаружение конфликтов не выполняется для того, чтобы избежать перезаписи встроенных экземпляров списка в SharePoint. Встроенные экземпляры списка развертываются и обновляются, но никогда не удаляются и не перезаписываются. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Устранение неполадок развертывания и упаковки SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="import-sharepoint-server-2010-workflows"></a>Импорт рабочих процессов SharePoint Server 2010
  Если вы импортируете рабочий процесс, созданный в [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], после его развертывания он будет работать неправильно. Рабочий процесс работает неправильно потому, что некоторые сборки отсутствуют, и рабочие процессы  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] содержат формы InfoPath, которые в настоящее время не поддерживаются в решениях рабочих процессов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Однако импортированные рабочие процессы [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] могут начать правильно работать после исправления некоторых моментов, например после добавления ссылок на сборки [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] повторного подключения форм InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Импорт рабочих процессов SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  

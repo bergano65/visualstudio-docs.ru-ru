@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 27a83dbb0e679c048f4cac433291524b3248eed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847608"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Пошаговое руководство. Написание визуализатора на Visual Basic
 В данном пошаговом руководстве демонстрируется создание простого визуализатора с помощью [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Визуализатор, который будет создан в данном пошаговом руководстве, отображает содержимое строки с помощью окна сообщения Windows Forms. Этот строковый визуализатор – простой пример, на основе которого можно создавать визуализаторы для других типов данных, более подходящих для ваших проектов.  
@@ -37,70 +37,70 @@ ms.locfileid: "39468768"
   
 #### <a name="to-create-a-class-library-project"></a>Создание проекта библиотеки классов  
   
-1.  На **файл** меню, выберите **New** и нажмите кнопку **новый проект**.  
+1. На **файл** меню, выберите **New** и нажмите кнопку **новый проект**.  
   
-2.  В **новый проект** выберите **Visual Basic**.  
+2. В **новый проект** выберите **Visual Basic**.  
   
-3.  В разделе **.NET Standard**, нажмите кнопку **библиотеки классов**.  
+3. В разделе **.NET Standard**, нажмите кнопку **библиотеки классов**.  
   
-4.  В **имя** введите соответствующее имя для библиотеки классов, таких как **MyFirstVisualizer**.  
+4. В **имя** введите соответствующее имя для библиотеки классов, таких как **MyFirstVisualizer**.  
   
-5.  Нажмите кнопку **ОК**.  
+5. Нажмите кнопку **ОК**.  
   
- После создания библиотеки классов необходимо добавить ссылку на библиотеку Microsoft.VisualStudio.DebuggerVisualizers.DLL, чтобы иметь возможность использовать определенные там классы. Но сначала следует присвоить проекту понятное имя.  
+   После создания библиотеки классов необходимо добавить ссылку на библиотеку Microsoft.VisualStudio.DebuggerVisualizers.DLL, чтобы иметь возможность использовать определенные там классы. Но сначала следует присвоить проекту понятное имя.  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Переименование Class1.vb и добавление Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **Class1.vb**и в контекстном меню пункт **Переименовать**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **Class1.vb**и в контекстном меню пункт **Переименовать**.  
   
-2.  Измените имя с Class1.vb на что-нибудь более осмысленное, например DebuggerSide.vb.  
+2. Измените имя с Class1.vb на что-нибудь более осмысленное, например DebuggerSide.vb.  
   
-    > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменит объявление класса в DebuggerSide.vb в соответствии с новым именем файла.  
+   > [!NOTE]
+   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменит объявление класса в DebuggerSide.vb в соответствии с новым именем файла.  
   
-3.  В **обозревателе решений**, щелкните правой кнопкой мыши **My First Visualizer**и в контекстном меню пункт **добавить ссылку**.  
+3. В **обозревателе решений**, щелкните правой кнопкой мыши **My First Visualizer**и в контекстном меню пункт **добавить ссылку**.  
   
-4.  В **добавить ссылку** диалоговом окне **.NET** щелкните Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4. В **добавить ссылку** диалоговом окне **.NET** щелкните Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
-5.  Нажмите кнопку **ОК**.  
+5. Нажмите кнопку **ОК**.  
   
-6.  В файле DebuggerSide.vb добавьте следующий оператор к операторам импорта `Imports`:  
+6. В файле DebuggerSide.vb добавьте следующий оператор к операторам импорта `Imports`:  
   
-    ```vb
-    Imports Microsoft.VisualStudio.DebuggerVisualizers  
-    ```  
+   ```vb
+   Imports Microsoft.VisualStudio.DebuggerVisualizers  
+   ```  
   
 ## <a name="add-the-debugger-side-code"></a>Добавление кода для отладчика  
  Теперь можно приступить к написанию кода для отладчика. Этот код запускается отладчиком для отображения информации, которую требуется визуализировать. Во-первых, необходимо изменить объявление объекта `DebuggerSide` таким образом, чтобы он наследовал базовый класс `DialogDebuggerVisualizer`.  
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Наследование от DialogDebuggerVisualizer  
   
-1.  В файле DebuggerSide.vb перейдите к следующей строке:  
+1. В файле DebuggerSide.vb перейдите к следующей строке:  
   
-    ```vb
-    Public Class DebuggerSide  
-    ```  
+   ```vb
+   Public Class DebuggerSide  
+   ```  
   
-2.  Измените код следующим образом:  
+2. Измените код следующим образом:  
   
-    ```vb
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```vb
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- В классе `DialogDebuggerVisualizer` имеется один абстрактный метод `Show`. Этот метод необходимо перегрузить.  
+   В классе `DialogDebuggerVisualizer` имеется один абстрактный метод `Show`. Этот метод необходимо перегрузить.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Переопределение метода DialogDebuggerVisualizer.Show  
   
--   Добавьте следующий метод в класс `public class DebuggerSide`:  
+- Добавьте следующий метод в класс `public class DebuggerSide`:  
   
-    ```vb
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```vb
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- Код метода `Show` отвечает за создание диалогового окна визуализатора или другого пользовательского интерфейса, а также за отображение информации, которая была передана визуализатору из отладчика. Необходимо вручную добавить код, который создает диалоговое окно и отображает информацию. В данном пошаговом руководстве для этого используется окно сообщения Windows Forms. Во-первых, необходимо добавить ссылку и оператор `Imports` для импорта пространства имен <xref:System.Windows.Forms>.  
+  Код метода `Show` отвечает за создание диалогового окна визуализатора или другого пользовательского интерфейса, а также за отображение информации, которая была передана визуализатору из отладчика. Необходимо вручную добавить код, который создает диалоговое окно и отображает информацию. В данном пошаговом руководстве для этого используется окно сообщения Windows Forms. Во-первых, необходимо добавить ссылку и оператор `Imports` для импорта пространства имен <xref:System.Windows.Forms>.  
   
 #### <a name="to-add-systemwindowsforms"></a>Добавление пространства имен System.Windows.Forms  
   
@@ -149,30 +149,30 @@ ms.locfileid: "39468768"
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Добавление тестового метода для демонстрации визуализатора  
   
-1.  Добавьте следующий метод в класс `public DebuggerSide`:  
+1. Добавьте следующий метод в класс `public DebuggerSide`:  
   
-    ```vb
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```vb
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  На **построения** меню, щелкните **построить MyFirstVisualizer**. Построение проекта должно пройти без ошибок. Если при построении все же возникнут ошибки, исправьте их, прежде чем продолжить.  
+2. На **построения** меню, щелкните **построить MyFirstVisualizer**. Построение проекта должно пройти без ошибок. Если при построении все же возникнут ошибки, исправьте их, прежде чем продолжить.  
   
- Далее необходимо создать проект исполняемого файла, из которого будет вызваться библиотека DLL визуализатора. Для простоты выберите проект консольного приложения.  
+   Далее необходимо создать проект исполняемого файла, из которого будет вызваться библиотека DLL визуализатора. Для простоты выберите проект консольного приложения.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Добавление проекта консольного приложения в решение  
   
-1.  На **файл** меню, щелкните **добавить**, а затем нажмите кнопку **новый проект**.  
+1. На **файл** меню, щелкните **добавить**, а затем нажмите кнопку **новый проект**.  
   
-2.  В **Добавление нового проекта** выберите **Visual Basic**, а затем нажмите кнопку **консольное приложение**.  
+2. В **Добавление нового проекта** выберите **Visual Basic**, а затем нажмите кнопку **консольное приложение**.  
   
-3.  В **имя** введите понятное имя для консольного приложения, такие как **MyTestConsole**.  
+3. В **имя** введите понятное имя для консольного приложения, такие как **MyTestConsole**.  
   
-4.  Нажмите кнопку **ОК**.  
+4. Нажмите кнопку **ОК**.  
   
- Теперь необходимо добавить необходимые ссылки, чтобы программа MyTestConsole могла вызывать MyFirstVisualizer.  
+   Теперь необходимо добавить необходимые ссылки, чтобы программа MyTestConsole могла вызывать MyFirstVisualizer.  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Добавление необходимых ссылок в MyTestConsole  
   
@@ -193,38 +193,38 @@ ms.locfileid: "39468768"
   
 #### <a name="to-add-code-to-mytestconsole"></a>Добавление кода в MyTestConsole  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **Program.vb**и в контекстном меню пункт **Переименовать**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **Program.vb**и в контекстном меню пункт **Переименовать**.  
   
-2.  Измените имя Module1.vb на что-нибудь подходящее, например **TestConsole.vb**.  
+2. Измените имя Module1.vb на что-нибудь подходящее, например **TestConsole.vb**.  
   
-     Обратите внимание на то, что [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменяет объявление класса в TestConsole.vb в соответствии с новым именем файла.  
+    Обратите внимание на то, что [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменяет объявление класса в TestConsole.vb в соответствии с новым именем файла.  
   
-3.  В TestConsole. VB, добавьте следующий `Imports` инструкции:  
+3. В TestConsole. VB, добавьте следующий `Imports` инструкции:  
   
-    ```vb
-    Imports MyFirstVisualizer  
-    ```  
+   ```vb
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  В метод `Main` добавьте следующий код:  
+4. В метод `Main` добавьте следующий код:  
   
-    ```vb
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```vb
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- Теперь все готово для проверки примера визуализатора.  
+   Теперь все готово для проверки примера визуализатора.  
   
 #### <a name="to-test-the-visualizer"></a>Тестирование визуализатора  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **MyTestConsole**и в контекстном меню пункт **Назначить запускаемым проектом**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **MyTestConsole**и в контекстном меню пункт **Назначить запускаемым проектом**.  
   
-2.  На **Отладка** меню, щелкните **запустить**.  
+2. На **Отладка** меню, щелкните **запустить**.  
   
-     Будет запущено консольное приложение. Появится окно визуализатора, в котором будет выведена строка "Hello, World".  
+    Будет запущено консольное приложение. Появится окно визуализатора, в котором будет выведена строка "Hello, World".  
   
- Поздравляем! Вы только что создали и протестировали ваш первый визуализатор.  
+   Поздравляем! Вы только что создали и протестировали ваш первый визуализатор.  
   
- Если вам удобнее вызывать визуализатор из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не из специально подготовленной тестовой программы, визуализатор необходимо установить. Дополнительные сведения см. в разделе [как: Установка визуализатора](../debugger/how-to-install-a-visualizer.md).  
+   Если вам удобнее вызывать визуализатор из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не из специально подготовленной тестовой программы, визуализатор необходимо установить. Дополнительные сведения см. в разделе [как: Установка визуализатора](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>См. также  
  [Архитектура визуализатора](../debugger/visualizer-architecture.md)   

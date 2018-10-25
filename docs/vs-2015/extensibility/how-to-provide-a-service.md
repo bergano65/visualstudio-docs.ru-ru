@@ -15,12 +15,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9dc7d2ef8aabab628f13ce9648e0fa5dc1f3b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845099"
 ---
 # <a name="how-to-provide-a-service"></a>Практическое: предоставить службу
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,50 +36,50 @@ VSPackage может предоставлять службы, которые м�
   
 #### <a name="implementing-a-service"></a>Реализация службы  
   
-1.  Создайте проект VSIX (**файл / создать / проект / Visual C# / артефактам / проект VSIX**).  
+1. Создайте проект VSIX (**файл / создать / проект / Visual C# / артефактам / проект VSIX**).  
   
-2.  Добавьте в проект VSPackage. Выберите узел проекта в **обозревателе решений** и нажмите кнопку **добавить / новый элемент / элементы Visual C# / расширяемость / пакет Visual Studio**.  
+2. Добавьте в проект VSPackage. Выберите узел проекта в **обозревателе решений** и нажмите кнопку **добавить / новый элемент / элементы Visual C# / расширяемость / пакет Visual Studio**.  
   
-3.  Чтобы реализовать службу, необходимо создать три типа:  
+3. Чтобы реализовать службу, необходимо создать три типа:  
   
-    -   Интерфейс, который описывает службу. Многие из этих интерфейсов пусты, то есть они имеют без методов.  
+   - Интерфейс, который описывает службу. Многие из этих интерфейсов пусты, то есть они имеют без методов.  
   
-    -   Интерфейс, который описывает интерфейс службы. Этот интерфейс содержит методы, которые должны быть реализованы.  
+   - Интерфейс, который описывает интерфейс службы. Этот интерфейс содержит методы, которые должны быть реализованы.  
   
-    -   Класс, реализующий интерфейс службы и службы.  
+   - Класс, реализующий интерфейс службы и службы.  
   
      В следующем примере простейшую реализацию из трех типов. Конструктор класса службы необходимо задать поставщик услуг.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="registering-a-service"></a>Регистрация службы  
   

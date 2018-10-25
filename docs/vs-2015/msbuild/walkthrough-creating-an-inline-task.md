@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265a83444ce495452767b217a84072bfc17377d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840722"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Пошаговое руководство. Создание встроенной задачи
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49250202"
   
  В этом пошаговом руководстве показано, как создать и выполнить следующие встроенные задачи:  
   
--   задача, которая не имеет входных или выходных параметров;  
+- задача, которая не имеет входных или выходных параметров;  
   
--   задача, которая имеет один входной параметр и не имеет выходных параметров;  
+- задача, которая имеет один входной параметр и не имеет выходных параметров;  
   
--   задача с двумя входными параметрами и одним выходным параметром, возвращающим свойство MSBuild;  
+- задача с двумя входными параметрами и одним выходным параметром, возвращающим свойство MSBuild;  
   
--   задача с двумя входными параметрами и одним выходным параметром, возвращающим элемент MSBuild.  
+- задача с двумя входными параметрами и одним выходным параметром, возвращающим элемент MSBuild.  
   
- Чтобы создать и выполнить задачи, следует использовать Visual Studio и **окно командной строки Visual Studio**, как показано ниже.  
+  Чтобы создать и выполнить задачи, следует использовать Visual Studio и **окно командной строки Visual Studio**, как показано ниже.  
   
--   Создайте файл проекта MSBuild с помощью Visual Studio.  
+- Создайте файл проекта MSBuild с помощью Visual Studio.  
   
--   Измените файл проекта в Visual Studio, чтобы создать встроенную задачу.  
+- Измените файл проекта в Visual Studio, чтобы создать встроенную задачу.  
   
--   Используйте **окно командной строки**, чтобы выполнить построение проекта и проверить результаты.  
+- Используйте **окно командной строки**, чтобы выполнить построение проекта и проверить результаты.  
   
 ## <a name="creating-and-modifying-an-msbuild-project"></a>Создание и изменение проекта MSBuild  
  Система проектов Visual Studio основана на MSBuild. Поэтому вы можете создать файл проекта построения с помощью Visual Studio. В этом разделе создается файл проекта Visual C#. (Вместо него можно создать файл проекта Visual Basic. В контексте данного руководства различия между двумя файлами проекта незначительны.)  
@@ -70,181 +70,181 @@ ms.locfileid: "49250202"
   
 #### <a name="to-add-a-basic-hello-task"></a>Добавление простой задачи для вывода приветствия  
   
-1.  В корневом узле `Project` измените атрибут `DefaultTargets` на `TestBuild`. Итоговый узел `Project` должен выглядеть следующим образом:  
+1. В корневом узле `Project` измените атрибут `DefaultTargets` на `TestBuild`. Итоговый узел `Project` должен выглядеть следующим образом:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
   
-2.  Добавьте следующую встроенную задачу и целевой объект в файл проекта непосредственно перед тегом `</Project>`.  
+2. Добавьте следующую встроенную задачу и целевой объект в файл проекта непосредственно перед тегом `</Project>`.  
   
-    ```  
-    <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup />  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage("Hello, world!", MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Hello />  
-    </Target>  
-    ```  
+   ```  
+   <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup />  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage("Hello, world!", MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Hello />  
+   </Target>  
+   ```  
   
-3.  Сохраните файл проекта.  
+3. Сохраните файл проекта.  
   
- Этот код создает встроенную задачу с именем Hello и не содержит параметров, ссылок или инструкций `Using`. Задача Hello содержит только одну строку кода, которая отображает сообщение hello в устройстве ведения журнала по умолчанию, обычно в окне консоли.  
+   Этот код создает встроенную задачу с именем Hello и не содержит параметров, ссылок или инструкций `Using`. Задача Hello содержит только одну строку кода, которая отображает сообщение hello в устройстве ведения журнала по умолчанию, обычно в окне консоли.  
   
 ### <a name="running-the-hello-task"></a>Выполнение задачи Hello  
  Запустите MSBuild в **окне командной строки**, чтобы создать задачу Hello и обработать вызывающий ее целевой объект TestBuild.  
   
 ##### <a name="to-run-the-hello-task"></a>Выполнение задачи Hello  
   
-1.  Щелкните **Запустить**, **Все программы**, найдите папку **Инструменты Visual Studio** и щелкните **Командная строка Visual Studio**.  
+1. Щелкните **Запустить**, **Все программы**, найдите папку **Инструменты Visual Studio** и щелкните **Командная строка Visual Studio**.  
   
-2.  В **окне командной строки** найдите папку, содержащую файл проекта. В этом случае D:\InlineTasks\InlineTasks\\.  
+2. В **окне командной строки** найдите папку, содержащую файл проекта. В этом случае D:\InlineTasks\InlineTasks\\.  
   
-3.  Введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате создается файл InlineTasks.csproj и выполняется обработка стандартного целевого объекта TestBuild, вызывающего задачу Hello.  
+3. Введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате создается файл InlineTasks.csproj и выполняется обработка стандартного целевого объекта TestBuild, вызывающего задачу Hello.  
   
-4.  Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
+4. Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
   
-     `Hello, world!`  
+    `Hello, world!`  
   
-    > [!NOTE]
-    >  Если вы не видите сообщение hello, повторно сохраните файл проекта и выполните задачу Hello.  
+   > [!NOTE]
+   >  Если вы не видите сообщение hello, повторно сохраните файл проекта и выполните задачу Hello.  
   
- Переключаясь между редактором кода и **окном командной строки**, можно изменять файл проекта и сразу же видеть результаты.  
+   Переключаясь между редактором кода и **окном командной строки**, можно изменять файл проекта и сразу же видеть результаты.  
   
 ## <a name="defining-the-echo-task"></a>Определение задачи Echo  
  Создайте встроенную задачу, которая принимает строковый параметр и отображает строку в устройстве ведения журнала по умолчанию.  
   
 #### <a name="to-define-the-echo-task"></a>Определение задачи Echo  
   
-1.  В редакторе кода замените задачу Hello и целевой объект TestBuild, используя следующий код.  
+1. В редакторе кода замените задачу Hello и целевой объект TestBuild, используя следующий код.  
   
-    ```  
-    <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Text Required="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage(Text, MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Echo Text="Greetings!" />  
-    </Target>  
-    ```  
+   ```  
+   <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Text Required="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage(Text, MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Echo Text="Greetings!" />  
+   </Target>  
+   ```  
   
-2.  В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу Echo.  
+2. В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу Echo.  
   
-3.  Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
+3. Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
   
-     `Greetings!`  
+    `Greetings!`  
   
- Этот код определяет встроенную задачу с именем Echo и содержит только один необходимый входной параметр Text. По умолчанию параметры имеют тип System.String. Значение параметра Text задается, когда целевой объект TestBuild вызывает задачу Echo.  
+   Этот код определяет встроенную задачу с именем Echo и содержит только один необходимый входной параметр Text. По умолчанию параметры имеют тип System.String. Значение параметра Text задается, когда целевой объект TestBuild вызывает задачу Echo.  
   
 ## <a name="defining-the-adder-task"></a>Определение задачи Adder  
  Создайте встроенную задачу, которая добавляет два целочисленных параметра и выдает их сумму в виде свойства MSBuild.  
   
 #### <a name="to-define-the-adder-task"></a>Определение задачи Adder  
   
-1.  В редакторе кода замените задачу Echo и целевой объект TestBuild, используя следующий код.  
+1. В редакторе кода замените задачу Echo и целевой объект TestBuild, используя следующий код.  
   
-    ```  
-    <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <A ParameterType="System.Int32" Required="true" />  
-        <B ParameterType="System.Int32" Required="true" />  
-        <C ParameterType="System.Int32" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          C = A + B;  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <Adder A="4" B="5">  
-        <Output PropertyName="Sum" TaskParameter="C" />  
-      </Adder>  
-      <Message Text="The sum is $(Sum)" Importance="High" />  
-    </Target>  
-    ```  
+   ```  
+   <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <A ParameterType="System.Int32" Required="true" />  
+       <B ParameterType="System.Int32" Required="true" />  
+       <C ParameterType="System.Int32" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         C = A + B;  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <Adder A="4" B="5">  
+       <Output PropertyName="Sum" TaskParameter="C" />  
+     </Adder>  
+     <Message Text="The sum is $(Sum)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу Echo.  
+2. В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу Echo.  
   
-3.  Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
+3. Изучите выходные данные в **окне командной строки**. Вы должны увидеть следующую строку:  
   
-     `The sum is 9`  
+    `The sum is 9`  
   
- Этот код определяет встроенную задачу с именем Adder и содержит два обязательных целочисленных входных параметра, A и B, и один целочисленный выходной параметр C. Задача Adder добавляет два входных параметра и возвращает их сумму в выходном параметре. Сумма выдается в виде свойства MSBuild `Sum`. Значения входных параметров задаются, когда целевой объект TestBuild вызывает задачу Adder.  
+   Этот код определяет встроенную задачу с именем Adder и содержит два обязательных целочисленных входных параметра, A и B, и один целочисленный выходной параметр C. Задача Adder добавляет два входных параметра и возвращает их сумму в выходном параметре. Сумма выдается в виде свойства MSBuild `Sum`. Значения входных параметров задаются, когда целевой объект TestBuild вызывает задачу Adder.  
   
 ## <a name="defining-the-regx-task"></a>Определение задачи RegX  
  Создайте встроенную задачу, которая принимает группу элементов и регулярное выражение и возвращает список всех элементов, содержимое файлов которых соответствует выражению.  
   
 #### <a name="to-define-the-regx-task"></a>Определение задачи RegX  
   
-1.  В редакторе кода замените задачу Adder и целевой объект TestBuild, используя следующий код.  
+1. В редакторе кода замените задачу Adder и целевой объект TestBuild, используя следующий код.  
   
-    ```  
-    <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Expression Required="true" />  
-        <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
-        <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Using Namespace="System.Text.RegularExpressions"/>  
-        <Code Type="Fragment" Language="cs">  
-    <![CDATA[  
-          if (Files.Length > 0)  
-          {  
-            Result = new TaskItem[Files.Length];  
-            for (int i = 0; i < Files.Length; i++)  
-            {  
-              ITaskItem item = Files[i];  
-              string path = item.GetMetadata("FullPath");  
-              using(StreamReader rdr = File.OpenText(path))  
-              {  
-                if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
-                {  
-                  Result[i] = new TaskItem(item.ItemSpec);  
-                }  
-              }  
-            }  
-          }  
-    ]]>  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <RegX Expression="public|protected" Files="@(Compile)">  
-        <Output ItemName="MatchedFiles" TaskParameter="Result" />  
-      </RegX>  
-      <Message Text="Input files: @(Compile)" Importance="High" />  
-      <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
-    </Target>  
-    ```  
+   ```  
+   <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Expression Required="true" />  
+       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+       <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Using Namespace="System.Text.RegularExpressions"/>  
+       <Code Type="Fragment" Language="cs">  
+   <![CDATA[  
+         if (Files.Length > 0)  
+         {  
+           Result = new TaskItem[Files.Length];  
+           for (int i = 0; i < Files.Length; i++)  
+           {  
+             ITaskItem item = Files[i];  
+             string path = item.GetMetadata("FullPath");  
+             using(StreamReader rdr = File.OpenText(path))  
+             {  
+               if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
+               {  
+                 Result[i] = new TaskItem(item.ItemSpec);  
+               }  
+             }  
+           }  
+         }  
+   ]]>  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <RegX Expression="public|protected" Files="@(Compile)">  
+       <Output ItemName="MatchedFiles" TaskParameter="Result" />  
+     </RegX>  
+     <Message Text="Input files: @(Compile)" Importance="High" />  
+     <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу RegX.  
+2. В **окне командной строки** введите **msbuild** без параметров команды и нажмите клавишу ВВОД. По умолчанию в результате обрабатывается стандартный целевой объект TestBuild, вызывающий задачу RegX.  
   
-3.  Изучите выходные данные в **окне командной строки**. Должны отобразиться следующие строки:  
+3. Изучите выходные данные в **окне командной строки**. Должны отобразиться следующие строки:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
   
- Этот код определяет встроенную задачу с именем RegX и содержит следующие три параметра:  
+   Этот код определяет встроенную задачу с именем RegX и содержит следующие три параметра:  
   
--   `Expression` — обязательный строковый входной параметр, где в качестве значения принимается регулярное выражение для сопоставления. В этом примере выражение соответствует словам public или protected.  
+- `Expression` — обязательный строковый входной параметр, где в качестве значения принимается регулярное выражение для сопоставления. В этом примере выражение соответствует словам public или protected.  
   
--   `Files` — обязательный строковый входной параметр списка элементов, где в качестве значения принимается список файлов для поиска соответствия. В этом примере для параметра `Files` задан элемент `Compile`, который выводит список исходных файлов проекта.  
+- `Files` — обязательный строковый входной параметр списка элементов, где в качестве значения принимается список файлов для поиска соответствия. В этом примере для параметра `Files` задан элемент `Compile`, который выводит список исходных файлов проекта.  
   
--   `Result` — обязательный выходной параметр, где в качестве значения принимается список файлов, в которых есть содержимое, соответствующее регулярному выражению.  
+- `Result` — обязательный выходной параметр, где в качестве значения принимается список файлов, в которых есть содержимое, соответствующее регулярному выражению.  
   
- Значения входных параметров задаются, когда целевой объект TestBuild вызывает задачу RegX. Задача RegX считывает каждый файл и возвращает список файлов, соответствующих регулярному выражению. Этот список возвращается в виде выходного параметра `Result`, который выдается как элемент MSBuild `MatchedFiles`.  
+  Значения входных параметров задаются, когда целевой объект TestBuild вызывает задачу RegX. Задача RegX считывает каждый файл и возвращает список файлов, соответствующих регулярному выражению. Этот список возвращается в виде выходного параметра `Result`, который выдается как элемент MSBuild `MatchedFiles`.  
   
 ### <a name="handling-reserved-characters"></a>Обработка зарезервированных знаков  
  Средство синтаксического анализа MSBuild обрабатывает встроенные задачи как XML-файлы. Знаки с зарезервированным значением в XML, например "\<" и ">", обнаруживаются и обрабатываются, как если бы они были в формате XML, а не в формате исходного кода .NET. Чтобы включать зарезервированные знаки в выражениях кода, таких как `Files.Length > 0`, напишите элемент `Code`, чтобы его содержимое было включено в выражение CDATA, следующим образом:  

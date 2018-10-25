@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818332"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Краткое руководство. Отладка JavaScript с помощью консоли
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49205521"
   
  Окно консоли JavaScript предоставляет вам следующие возможности:  
   
--   Отправка объектов, значений и сообщений из приложения в окно консоли.  
+- Отправка объектов, значений и сообщений из приложения в окно консоли.  
   
--   Просмотр и изменение значений локальных и глобальных переменных в запущенном приложении.  
+- Просмотр и изменение значений локальных и глобальных переменных в запущенном приложении.  
   
--   Просмотр визуализаторов объектов.  
+- Просмотр визуализаторов объектов.  
   
--   Запуск кода JavaScript, который выполняется в текущем контексте скрипта.  
+- Запуск кода JavaScript, который выполняется в текущем контексте скрипта.  
   
--   Просмотр ошибок и исключений JavaScript в дополнение к исключениям модели DOM и среды выполнения Windows.  
+- Просмотр ошибок и исключений JavaScript в дополнение к исключениям модели DOM и среды выполнения Windows.  
   
--   Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
+- Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
   
- В этом разделе.  
+  В этом разделе.  
   
--   [Отладка с использованием окна консоли JavaScript](#InteractiveConsole)  
+- [Отладка с использованием окна консоли JavaScript](#InteractiveConsole)  
   
--   [Интерактивная отладка и режим приостановки выполнения](#InteractiveDebuggingBreakMode)  
+- [Интерактивная отладка и режим приостановки выполнения](#InteractiveDebuggingBreakMode)  
   
--   [Однострочный и многострочный режим в окне консоли JavaScript](#SinglelineMultilineMode)  
+- [Однострочный и многострочный режим в окне консоли JavaScript](#SinglelineMultilineMode)  
   
--   [Переключение контекста выполнения скрипта](#Switching)  
+- [Переключение контекста выполнения скрипта](#Switching)  
   
 > [!TIP]
 >  Если окно консоли JavaScript закрыто, выберите **Отладка**>**Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.  

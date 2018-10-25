@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811507"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Практическое: изменение размера элементов управления ListObject
   Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> задается при добавлении его в книгу Microsoft Office Excel; однако позднее может потребоваться изменить его размер. Например, в список из двух столбцов может потребоваться добавить третий столбец.  
@@ -32,15 +32,15 @@ ms.locfileid: "35674784"
   
  В этом разделе описываются следующие задачи.  
   
--   [Изменение размера элементов управления ListObject во время разработки](#designtime)  
+- [Изменение размера элементов управления ListObject во время разработки](#designtime)  
   
--   [Изменение размера элементов управления ListObject во время выполнения в проекте уровня документа](#runtimedoclevel)  
+- [Изменение размера элементов управления ListObject во время выполнения в проекте уровня документа](#runtimedoclevel)  
   
--   [Изменение размера элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
+- [Изменение размера элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
   
- Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления, см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).  
+  Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления, см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: Добавление столбцов в объект списка с привязкой к данным во время выполнения?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: Добавление столбцов в объект списка с привязкой к данным во время выполнения?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Изменение размера элемента управления ListObject во время разработки  
  Чтобы изменить размер списка, можно щелкнуть и перетащить один из маркеров размера или переопределить его размер в диалоговом окне **изменения размеров списка** .  

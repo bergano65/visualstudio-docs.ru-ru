@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826496"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -59,13 +59,14 @@ ms.locfileid: "44280575"
 > [INSTALLDIR] ниже ссылается на корневой каталог установки Visual Studio. *VSIXInstaller.exe* автоматически заполнить это, но чтобы написать пользовательский код развертывания, прочитайте [обнаружение Visual Studio](locating-visual-studio.md).
 
 * Сборки, которые только были установлены в глобальный кэш СБОРОК:
-  * Теперь эти сборки устанавливаются в * [INSTALLDIR] \Common7\IDE\*, *\Common7\IDE\PublicAssemblies [INSTALLDIR]* или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Эти папки являются частью пути пробы процесс Visual Studio.
+  * Теперь эти сборки устанавливаются в <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Эти папки являются частью пути пробы процесс Visual Studio.
+
 * Сборки, которые были установлены в путь без проверки и в глобальный кэш СБОРОК:
   * Копия в глобальном кэше СБОРОК удалена из программы установки.
   * Объект *.pkgdef* файл был добавлен, чтобы указать запись базового кода для сборки.
 
     Пример:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ ms.locfileid: "44280575"
   * Код будет возможность найти базовые сборки Visual Studio.
   * Рассмотрите возможность использования *.pkgdef* файл, чтобы указать путь к сборкам, при необходимости.
 * Если расширение выполняется вне процесса Visual Studio:
-  * Попробуйте найти базовые сборки Visual Studio в разделе * [INSTALLDIR] \Common7\IDE\*, *\Common7\IDE\PublicAssemblies [INSTALLDIR]* или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* с помощью сопоставителя файл или сборку конфигурации.
+  * Попробуйте найти базовые сборки Visual Studio в разделе <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* с помощью сопоставителя файл или сборку конфигурации.
 
 ## <a name="change-reduce-registry-impact"></a>Изменение: Снизить влияние конфигурации реестра
 

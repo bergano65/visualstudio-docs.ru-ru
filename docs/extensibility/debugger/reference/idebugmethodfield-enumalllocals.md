@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals | Документы Microsoft
+title: IDebugMethodField::EnumAllLocals | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c3c13f7252e6f3b662ded697ab267419fd66450
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b060e26668fb7a3c64cee9360e62c198d9c988c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841212"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Создает перечислитель для всех локальных переменных метода, включая внутренне созданные компилятором.  
+Создает перечислитель для всех локальных переменных метода, в том числе создаются внутри организации, с помощью компилятора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int EnumAllLocals(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки в методе, указывающая на определенной областью действия или контексте.  
+ [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки в методе, указывающая на определенной области или контекста.  
   
  `ppLocals`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список всех локальных переменных в указанной области; в противном случае возвращает значение null, показывающее, без локальных элементов.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список всех локальных переменных в указанной области; в противном случае возвращает значение null, указывающее, без локальных элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет локальных переменных. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Выполняется перечисление только переменные, определяемые в блоке, который содержит адрес данного отладки. Этот метод включает все локальные переменные, созданные компилятором. Если все действия, необходимые локальные переменные, явно определенных в источнике вызова [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) метод.  
+ Перечисляются только те переменные, определенные внутри блока, который содержит адрес заданной отладочной. Этот метод включает в себя все локальные переменные, создаваемые компилятором. Если все, которые требуется явно определенные в источнике, вызов "Локальные" [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) метод.  
   
  Метод может содержать несколько контекстов или блоки области.  
   

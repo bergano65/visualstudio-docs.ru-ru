@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846204"
 ---
 # <a name="secure-office-solutions"></a>Безопасные решения Office
   Модель безопасности для решений Office включает несколько технологий: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Центр управления безопасностью в Microsoft Office и зону ограниченных узлов браузера Internet Explorer. Работа различных возможностей безопасности описана в следующих разделах.  
   
--   [Предоставление доверия решениям Office](#GrantingTrustToSolutions)  
+- [Предоставление доверия решениям Office](#GrantingTrustToSolutions)  
   
--   [Предоставить доверие к документам](#GrantingTrustToDocuments)  
+- [Предоставить доверие к документам](#GrantingTrustToDocuments)  
   
--   [Предоставление доверия при использовании установщика Windows](#GrantingTrustWindowsInstaller)  
+- [Предоставление доверия при использовании установщика Windows](#GrantingTrustWindowsInstaller)  
   
--   [Рекомендации по обеспечению безопасности для решений Office](#Security)  
+- [Рекомендации по обеспечению безопасности для решений Office](#Security)  
   
--   [Безопасность во время разработки](#SecurityDuringDeployment)  
+- [Безопасность во время разработки](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools для Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools для Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Предоставление доверия решениям Office  
  Присвоение уровня доверия решениям Office означает изменение политики безопасности для каждого конечного пользователя таким образом, что доверие решению Office предоставляется на основании следующего свидетельства.  
   
--   Сертификат, используемый для подписания манифеста развертывания.  
+- Сертификат, используемый для подписания манифеста развертывания.  
   
--   URL-адрес манифеста развертывания.  
+- URL-адрес манифеста развертывания.  
   
- Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md).  
+  Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Предоставить доверие к документам  
  Настройка уровня документа требует, чтобы документ находился в каталоге, назначенном в качестве надежного расположения. Дополнительные сведения см. в разделе [предоставления доверия к документам](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074069"
 ### <a name="document-level-solutions"></a>Решения уровня документа  
  При разработке следующих типов проектов необходимо добавить полный путь к документу в список надежных расположений в приложении Microsoft Office.  
   
--   Решения, которые находятся в общей сетевой папки, такие как на уровне документа  *\\\servername\sharename*.  
+- Решения, которые находятся в общей сетевой папки, такие как на уровне документа  *\\\servername\sharename*.  
   
--   Решения уровня документа для Word, использующие *.doc* или *.docm* файлов.  
+- Решения уровня документа для Word, использующие *.doc* или *.docm* файлов.  
   
- При добавлении местоположения документа в список надежных расположений включите подкаталоги или конкретно укажите папки для отладки и сборки. Дополнительные сведения см. в статье справки Microsoft Office Online [создание, удаление или изменение надежного расположения для файлов](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  При добавлении местоположения документа в список надежных расположений включите подкаталоги или конкретно укажите папки для отладки и сборки. Дополнительные сведения см. в статье справки Microsoft Office Online [создание, удаление или изменение надежного расположения для файлов](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Временные сертификаты  
  Если сертификат для подписи еще не существует, Visual Studio создает временный сертификат. Этот временный сертификат следует использовать только во время разработки, а для развертывания необходимо приобрести официальный сертификат.  

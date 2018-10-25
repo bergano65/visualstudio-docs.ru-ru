@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852749"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "49176934"
   
  Наиболее важным `DirectiveProcessor` используются следующие методы, которые необходимо реализовать.  
   
--   `bool IsDirectiveSupported(string directiveName)` – Возвращает `true` Если процессор директив может обрабатывать именованную директиву.  
+- `bool IsDirectiveSupported(string directiveName)` – Возвращает `true` Если процессор директив может обрабатывать именованную директиву.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Модуль шаблонов вызывает этот метод для каждого вхождения директивы в шаблоне. Ваш процессор должен сохранять результаты.  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Модуль шаблонов вызывает этот метод для каждого вхождения директивы в шаблоне. Ваш процессор должен сохранять результаты.  
   
- После всех вызовов ProcessDirective() будет вызывать эти методы:  
+  После всех вызовов ProcessDirective() будет вызывать эти методы:  
   
--   `string[] GetReferencesForProcessingRun()` – Возвращает имена сборок, которые требуется код шаблона.  
+- `string[] GetReferencesForProcessingRun()` – Возвращает имена сборок, которые требуется код шаблона.  
   
--   `string[] GetImportsForProcessingRun()` – Возвращает пространства имен, который может использоваться в коде шаблона.  
+- `string[] GetImportsForProcessingRun()` – Возвращает пространства имен, который может использоваться в коде шаблона.  
   
--   `string GetClassCodeForProcessingRun()` – Возвращает код методы, свойства и другие объявления, которые могут использовать код шаблона. Для этого проще всего создать строку, содержащую код C# или Visual Basic. Чтобы сделать процессор директив можно было вызывать из шаблона, который использует любой язык среды CLR, можно составлять операторы в виде дерева CodeDom и затем возвращают результат сериализации дерева на языке, используемом в шаблоне.  
+- `string GetClassCodeForProcessingRun()` – Возвращает код методы, свойства и другие объявления, которые могут использовать код шаблона. Для этого проще всего создать строку, содержащую код C# или Visual Basic. Чтобы сделать процессор директив можно было вызывать из шаблона, который использует любой язык среды CLR, можно составлять операторы в виде дерева CodeDom и затем возвращают результат сериализации дерева на языке, используемом в шаблоне.  
   
--   Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского процессора директив](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского процессора директив](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Развертывание пользовательского обработчика директив](../modeling/deploying-a-custom-directive-processor.md)  

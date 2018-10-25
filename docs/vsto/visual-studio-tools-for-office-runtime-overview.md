@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837000"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools для среды
   Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, Visual Studio 2010 Tools для Office runtime должны устанавливаться на компьютерах конечных пользователей. Дополнительные сведения см. в разделе [как: Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools для Office runtime состоит из двух основных компонентов:  
   
--   Расширения Office для платформы .NET Framework. Эти компоненты представляют собой управляемые сборки, обеспечивающие слой связи между вашим решением и приложением Microsoft Office. Дополнительные сведения см. в разделе [Общие сведения о расширениях Office для .NET Framework](#officeextensions).  
+- Расширения Office для платформы .NET Framework. Эти компоненты представляют собой управляемые сборки, обеспечивающие слой связи между вашим решением и приложением Microsoft Office. Дополнительные сведения см. в разделе [Общие сведения о расширениях Office для .NET Framework](#officeextensions).  
   
--   Загрузчик решения Office. Этот компонент представляет собой набор неуправляемых библиотек DLL, которые используются приложениями Office для загрузки среды выполнения и ваших решений. Дополнительные сведения см. в разделе [понять загрузчике решений Office](#UnmanagedLoader).  
+- Загрузчик решения Office. Этот компонент представляет собой набор неуправляемых библиотек DLL, которые используются приложениями Office для загрузки среды выполнения и ваших решений. Дополнительные сведения см. в разделе [понять загрузчике решений Office](#UnmanagedLoader).  
   
- Эта среда выполнения может быть установлена несколькими различными способами. В зависимости от конфигурации компьютера при установке среды выполнения устанавливаются различные ее компоненты. Дополнительные сведения см. в разделе [Visual Studio Tools for сценарии установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  Эта среда выполнения может быть установлена несколькими различными способами. В зависимости от конфигурации компьютера при установке среды выполнения устанавливаются различные ее компоненты. Дополнительные сведения см. в разделе [Visual Studio Tools for сценарии установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Общие сведения о расширениях Office для .NET Framework  
  Visual Studio 2010 Tools для среды выполнения Office содержит расширения Office для платформы .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий. Решения, нацеленные на каждую из версий .NET Framework, используют расширения, соответствующие этой версии.  
@@ -65,17 +65,17 @@ ms.locfileid: "35674817"
   
  По умолчанию функция эквивалентности типов отключена при создании проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздние версии. Если ее необходимо включить, задайте свойство **Внедрить типы взаимодействия** любой из следующих ссылок на сборки в проекте как **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- После внесения этого изменения сведения о типе для всех типов среды выполнения, используемых проектом, внедряются в сборку решения при построении проекта. Эти сведения о внедренных типах, а не сведения о типах в ссылочных сборках, используются решением во время выполнения.  
+  После внесения этого изменения сведения о типе для всех типов среды выполнения, используемых проектом, внедряются в сборку решения при построении проекта. Эти сведения о внедренных типах, а не сведения о типах в ссылочных сборках, используются решением во время выполнения.  
   
 ##  <a name="UnmanagedLoader"></a> Понять загрузчике решений Office  
  Среда выполнения Visual Studio Tools for Office включает несколько неуправляемых библиотек DLL, которые используются приложениями Office для загрузки среды выполнения и решений Office. Хотя работать напрямую с данными библиотеками DLL не следует, необходимо знать их назначение, чтобы лучше понимать архитектуру решений Office.  
@@ -90,17 +90,17 @@ ms.locfileid: "35674817"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  После *VSTOEE.dll* загружает соответствующую версию [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* выполняет большую часть работы, необходимой для загрузки сборки решения. *Библиотека VSTOLoader.dll* выполняет несколько задач:  
   
--   Создает домен приложения для каждой сборки решения.  
+- Создает домен приложения для каждой сборки решения.  
   
--   Выполняет ряд проверок безопасности для подтверждения того, что сборка решения имеет разрешение на выполнение.  
+- Выполняет ряд проверок безопасности для подтверждения того, что сборка решения имеет разрешение на выполнение.  
   
--   Загружает версию расширений Office для платформы .NET Framework, которая требуется для этого решения.  
+- Загружает версию расширений Office для платформы .NET Framework, которая требуется для этого решения.  
   
- *Библиотека VSTOLoader.dll* также выполняет ряд задач, характерные для надстроек VSTO:  
+  *Библиотека VSTOLoader.dll* также выполняет ряд задач, характерные для надстроек VSTO:  
   
--   Реализует интерфейс <xref:Extensibility.IDTExtensibility2> . Интерфейс<xref:Extensibility.IDTExtensibility2> — это COM-интерфейс, который должен реализовываться всеми надстройками VSTO для приложений Microsoft Office. С помощью этого интерфейса определяются методы, вызываемые приложением для взаимодействия с надстройкой VSTO.  
+- Реализует интерфейс <xref:Extensibility.IDTExtensibility2> . Интерфейс<xref:Extensibility.IDTExtensibility2> — это COM-интерфейс, который должен реализовываться всеми надстройками VSTO для приложений Microsoft Office. С помощью этого интерфейса определяются методы, вызываемые приложением для взаимодействия с надстройкой VSTO.  
   
--   Он реализует интерфейс IManagedAddin. Этот интерфейс используется приложениями Office, помогая загружать надстройки VSTO. Дополнительные сведения см. в разделе [интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md).  
+- Он реализует интерфейс IManagedAddin. Этот интерфейс используется приложениями Office, помогая загружать надстройки VSTO. Дополнительные сведения см. в разделе [интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Понять 32-разрядных и 64-разрядных версиях среды выполнения  
  Существуют отдельные 64-разрядных и 32-разрядные версии средств Visual Studio 2010 для Office runtime. Эти версии среды выполнения используются для запуска решений в 64- и 32-разрядных выпусках Office. В следующей таблице показано, какие версии среды выполнения необходимы для каждого сочетания Windows и Office.  
@@ -123,7 +123,7 @@ ms.locfileid: "35674817"
  [Сборки в Visual Studio Tools для Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Обновление и перенос решений Office](../vsto/upgrading-and-migrating-office-solutions.md)  
   

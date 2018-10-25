@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839912"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-странице будет содержать "\<html >...» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 Можно также получить другие службы, предоставляемые узлом. Дополнительные сведения см. в разделе [доступ к Visual Studio или другие узлы на основе шаблона](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
@@ -272,7 +271,7 @@ Content of MyFile.txt is:
 ## <a name="related-topics"></a>См. также
 
 |Задача|Раздел|
-|----------|-----------|
+|-|-|
 |Создание шаблона.|[Рекомендации по написанию текстовых шаблонов T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Создание текста с помощью программного кода.|[Структура шаблона текста](../modeling/writing-a-t4-text-template.md)|
 |Создание файлов в решении Visual Studio.|[Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817045"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Настройка и использование правил анализатора Roslyn
 
@@ -121,15 +121,15 @@ ms.locfileid: "39512175"
 
 Вы можете отключить диагностику один или несколько из **список ошибок** , выбрав те, которые вы хотите отключить, и щелкните правой кнопкой мыши и выбрав **подавлять** > **в исходном**  или **подавлять** > **в файле блокируемых предупреждений**.
 
-   - При выборе **в исходном**, **Просмотр изменений** откроется диалоговое окно, отображается предварительный просмотр C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) или Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) директива, которая добавляется к исходному коду.
+- При выборе **в исходном**, **Просмотр изменений** откроется диалоговое окно, отображается предварительный просмотр C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) или Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) директива, которая добавляется к исходному коду.
 
-      ![Предварительная версия добавления #pragma warning в файле кода](media/pragma-warning-preview.png)
+   ![Предварительная версия добавления #pragma warning в файле кода](media/pragma-warning-preview.png)
 
-   - При выборе **в файле блокируемых предупреждений**, **Просмотр изменений** откроется диалоговое окно, отображается предварительный просмотр <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут, который добавляется файл глобального подавления.
+- При выборе **в файле блокируемых предупреждений**, **Просмотр изменений** откроется диалоговое окно, отображается предварительный просмотр <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут, который добавляется файл глобального подавления.
 
-      ![Предварительный просмотр файла подавления при добавлении атрибута SuppressMessage](media/preview-changes-in-suppression-file.png)
+   ![Предварительный просмотр файла подавления при добавлении атрибута SuppressMessage](media/preview-changes-in-suppression-file.png)
 
-   В **Просмотр изменений** диалоговом окне выберите **применить**.
+В **Просмотр изменений** диалоговом окне выберите **применить**.
 
 **Список ошибок** отображает диагностики или правило нарушений, как динамический анализ кода и сборки. Поскольку диагностика сборки может быть устаревшим, например, если вы закончили редактировать код, чтобы устранить нарушение, но не восстановлена, невозможно закрыть эти диагностические из **список ошибок**. Тем не менее диагностику из динамического анализа или IntelliSense, всегда актуальны, с помощью актуальных источников и могут исключаться из **список ошибок**. Если параметр подавления отключена в контексте, или щелкните правой кнопкой мыши меню, вполне вероятно, так как у вас есть один или несколько сборки диагностики в выделенный фрагмент. Чтобы исключить диагностики сборки из вашего выбора, переключитесь **список ошибок** Фильтр источника из **сборка и IntelliSense** для **Intellisense только**. Выберите диагностики, который вы хотите отключить и выполнить действия, описанные ранее.
 
