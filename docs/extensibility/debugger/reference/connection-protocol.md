@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Документы Microsoft
+title: CONNECTION_PROTOCOL | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832774"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Указывает протокол, используемой для связи между сервером отладки и отладочный пакет (DE).  
+Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,10 +53,10 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Параметры  
  CONNECTION_NONE  
- Нет соединения с сервером.  
+ Нет подключение к серверу.  
   
  CONNECTION_UNKNOWN  
- Установить соединение, но имеет неизвестный тип.  
+ Подключение установлено, но это неизвестного типа.  
   
  CONNECTION_LOCAL  
  Соединение предназначено для локального сервера.  
@@ -71,7 +71,7 @@ public enum CONNECTION_PROTOCOL {
  Соединение использует протокол HTTP (с помощью веб-сервера).  
   
  CONNECTION_OTHER  
- Было установлено соединение другого типа (это значение не используется в настоящее время).  
+ Было установлено какое-либо иное подключения (это значение не используется в настоящее время).  
   
 ## <a name="remarks"></a>Примечания  
  Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.  

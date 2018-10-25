@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Документы Microsoft
+title: IPropertyProxyEESide::GetManagedViewerCreationData | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821374"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого средства просмотра.  
@@ -54,10 +54,10 @@ int GetManagedViewerCreationData(
  [out] Возвращает имя сборки, содержащий этот объект.  
   
  `assemBytes`  
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если байты не доступны).  
+ [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если ни одного байта доступны).  
   
  `assemPdb`  
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это значение null при наличии не хранилища символов).  
+ [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это та значение null, если нет хранилища символов).  
   
  `className`  
  [out] Возвращает имя класса, содержащий этот объект.  
@@ -69,10 +69,10 @@ int GetManagedViewerCreationData(
  [out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется с визуализаторами типов для создания экземпляра управляемого просмотра.  
+ Этот метод используется с визуализаторами типов для создания экземпляра управляемого средство просмотра.  
   
 ## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

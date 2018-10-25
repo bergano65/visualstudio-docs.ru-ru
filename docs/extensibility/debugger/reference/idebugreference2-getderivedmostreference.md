@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference | Документы Microsoft
+title: IDebugReference2::GetDerivedMostReference | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfa0e6b6755ea884b6dd9b6ba0409a614e80e290
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6e8998ca881bbeb4a90405ab01577bf6be18f33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858359"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Возвращает ссылку на производного ссылки. Зарезервировано для будущего использования.  
+Получает ссылку на производный ссылку. Зарезервировано для будущего использования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int GetDerivedMostReference(
   
 #### <a name="parameters"></a>Параметры  
  `ppDerivedMost`  
- [out] Возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, представляющий свойство производного.  
+ [out] Возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , представляющий свойство производного.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Всегда возвращает значение `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Примечания  
- Например, если это свойство описывает объект, реализующий интерфейс `ClassRoot` , но это фактически выделенным `ClassDerived` , производный от `ClassRoot`, этот метод возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объекта Представляет ссылку на `ClassDerived` объекта.  
+ Например, если это свойство описывает объект, реализующий `ClassRoot` , но это фактически является экземпляром `ClassDerived` , производный от `ClassRoot`, этот метод возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объекта Представляет ссылку на `ClassDerived` объекта.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

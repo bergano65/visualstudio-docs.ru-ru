@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Документы Microsoft
+title: IDiaStackWalkHelper::readMemory | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a8e435dddaf0d6fb3908a1ccb6233f08ccd28b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825861"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Считывает блок данных из исполняемого файла изображения в памяти.  
@@ -38,10 +38,10 @@ HRESULT readMemory(
   
 #### <a name="parameters"></a>Параметры  
  `type`  
- [in] Значение из [memorytypeenum-перечисление](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, указывающее тип памяти для чтения.  
+ [in] Значение из [перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, определяющее тип памяти для чтения.  
   
  VA  
- [in] Виртуальный адрес в образ, с которого начинается чтение.  
+ [in] Виртуальный адрес в образе, с которого начинается чтение.  
   
  `cbData`  
  [in] Размер буфера данных в байтах.  
@@ -50,10 +50,10 @@ HRESULT readMemory(
  [out] Возвращает число фактически считанных байтов. Если `pbData` — `NULL`, то это общее число байтов доступных данных.  
   
  `pbData`  
- [in, out] Буфер, заполнено чтения объем памяти.  
+ [in, out] Буфер, который заполняется память чтения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

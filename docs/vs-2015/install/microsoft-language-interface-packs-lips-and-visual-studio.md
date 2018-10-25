@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812885"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ ms.locfileid: "49179287"
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Установка языка, используемого для текста интерфейса пользователя среды разработки Visual Studio  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  В **параметры** диалогового окна разверните узел **среды** и нажмите кнопку **международных настроек**.  
+2. В **параметры** диалогового окна разверните узел **среды** и нажмите кнопку **международных настроек**.  
   
-3.  В **языка** выберите язык, в которой должен отображаться текст пользовательского интерфейса в среде разработки.  
+3. В **языка** выберите язык, в которой должен отображаться текст пользовательского интерфейса в среде разработки.  
   
-     Чтобы текст пользовательского интерфейса в интегрированной среде разработки соответствовал языку операционной системы, выберите **такой же, как Microsoft Windows**.  
+    Чтобы текст пользовательского интерфейса в интегрированной среде разработки соответствовал языку операционной системы, выберите **такой же, как Microsoft Windows**.  
   
- Можно также использовать команду devenv для задания языка, используемого для пользовательского интерфейса. Дополнительные сведения см. в разделе [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
+   Можно также использовать команду devenv для задания языка, используемого для пользовательского интерфейса. Дополнительные сведения см. в разделе [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
   
 ## <a name="see-also"></a>См. также  
  [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../ide/reference/international-settings-environment-options-dialog-box.md)

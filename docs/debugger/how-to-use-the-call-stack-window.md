@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853614"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Просмотр стека вызовов и использование окна стека вызова в отладчике Visual Studio
 
@@ -45,17 +45,17 @@ ms.locfileid: "43774738"
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **Стек вызовов** окно аналогична точки зрения отладки в некоторых IDE, например Eclipse. 
-
+> 
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных здесь в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите **Импорт и экспорт параметров** на **средства** меню.  См. в разделе [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Просмотр стека вызовов в отладчике 
   
--   Во время отладки, в **Отладка** меню, выберите **Windows > стек вызовов**.
+- Во время отладки, в **Отладка** меню, выберите **Windows > стек вызовов**.
 
- ![Окно стека вызовов](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Окно стека вызовов](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Желтая стрелка указывает на кадр стека, в котором находится указатель выполнения. По умолчанию, это кадр стека, сведения которого отображаются в источнике, **"Локальные"**, **"Видимые"**, **Watch**, и **Дизассемблированный код** windows . Если требуется изменение контекста отладчика на другой кадр стека, это можно сделать [переключение на другой кадр стека](#bkmk_switch).   
   

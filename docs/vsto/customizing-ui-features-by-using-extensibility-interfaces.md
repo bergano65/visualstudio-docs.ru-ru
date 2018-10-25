@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873978"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости
   Средства разработки Office в Visual Studio предоставляют классы и конструкторы, которые обрабатывают многие сведения о реализации, когда вы используете их для создания настраиваемых панелей задач, настроек ленты и областей форм Outlook в надстройке VSTO. Однако при наличии особых потребностей вы также можете реализовать *интерфейс расширения* для каждого компонента.  
@@ -61,17 +61,17 @@ ms.locfileid: "35674790"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Пример реализации интерфейса расширения  
  В следующем примере кода показан пример простой реализации интерфейса <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> для создания настраиваемой панели задач. В данном примере определяются два класса.  
   
--   Класс `TaskPaneHelper` реализует <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> для создания и отображения настраиваемой панели задач.  
+- Класс `TaskPaneHelper` реализует <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> для создания и отображения настраиваемой панели задач.  
   
--   Класс `TaskPaneUI` предоставляет пользовательский интерфейс панели задач. Атрибуты класса `TaskPaneUI` делают его доступным для COM, что позволяет приложениям Microsoft Office обнаруживать класс. В этом примере пользовательский интерфейс представляет собой пустой интерфейс <xref:System.Windows.Forms.UserControl>, однако вы можете добавить элементы управления, изменив код.  
+- Класс `TaskPaneUI` предоставляет пользовательский интерфейс панели задач. Атрибуты класса `TaskPaneUI` делают его доступным для COM, что позволяет приложениям Microsoft Office обнаруживать класс. В этом примере пользовательский интерфейс представляет собой пустой интерфейс <xref:System.Windows.Forms.UserControl>, однако вы можете добавить элементы управления, изменив код.  
   
-    > [!NOTE]  
-    >  Чтобы предоставить класс `TaskPaneUI` COM, для проекта необходимо также задать свойство **Регистрация для COM-взаимодействия** .  
+  > [!NOTE]  
+  >  Чтобы предоставить класс `TaskPaneUI` COM, для проекта необходимо также задать свойство **Регистрация для COM-взаимодействия** .  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Дополнительные сведения о реализации <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, см. в разделе [создавайте настраиваемые области задач в системе Office 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) в документации по Microsoft Office.  
+  Дополнительные сведения о реализации <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, см. в разделе [создавайте настраиваемые области задач в системе Office 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) в документации по Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Пример переопределения метода RequestService  
  Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> для возврата экземпляра класса `TaskPaneHelper` из предыдущего примера кода. Он проверяет значение параметра *serviceGuid* , чтобы определить, какой интерфейс запрашивается, а затем возвращает объект, который реализует интерфейс.  

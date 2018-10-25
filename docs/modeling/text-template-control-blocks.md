@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812028"
 ---
 # <a name="text-template-control-blocks"></a>Управляющие блоки текстовых шаблонов
 Блоки управления позволяют писать код в текстовом шаблоне для изменения выходных данных. Существует три вида блока управления, которые различаются по открывающей скобке:
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
->  Всегда использовать {...} для отделения вложенных инструкций, содержащих обычный текст. Следующий пример может не работать должным образом.
+>  Всегда используйте {...} для отделения вложенных операторов, содержащих обычный текст. Следующий пример может не работать должным образом.
 >
 >  `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>Блок управления выражениями

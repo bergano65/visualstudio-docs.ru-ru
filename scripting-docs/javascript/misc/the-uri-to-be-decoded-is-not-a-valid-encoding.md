@@ -1,5 +1,5 @@
 ---
-title: Декодируемый URI имеет недопустимую кодировку | Документы Microsoft
+title: Декодируемый URI закодирован не | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841823"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Декодируемый URI закодирован неправильно
-Предпринята попытка декодировать неправильно сформированное универсальный код (ресурса URI). Коды URI имеют особый синтаксис; Большинство неалфавитных символов должны быть закодированы, прежде чем их можно использовать в URI. Можно использовать `encodeURI` и `encodeURIComponent` методы для создания URI стандартной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строки.  
+Предпринята попытка декодировать неправильно сформированное универсальный код (ресурса URI). Коды URI имеют специальный синтаксис; Большинство неалфавитных символов должны быть закодированы, прежде чем они могут использоваться в URI. Можно использовать `encodeURI` и `encodeURIComponent` методы для создания URI из обычной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строка.  
   
  Полный код URI состоит из последовательности компонентов и разделителей. Выглядит следующим образом:  
   
@@ -36,11 +36,11 @@ ms.locfileid: "24633334"
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- Имена в угловых скобках представляют компоненты и «:», «/», «;» и «?», зарезервированные символы, используемые в качестве разделителей.  
+ Имена в угловых скобках представляют компоненты, а «:», «/», «;» и «?» являются зарезервированными символами, используемыми в качестве разделителей.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что вы пытаетесь декодирования только допустимых URI. Не удается декодировать в обычном [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строк, они могут содержать недопустимые символы.  
+-   Убедитесь, что вы пытаетесь расшифровать только допустимые URI. Не удается декодировать обычный [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строк, они могут содержать недопустимые символы.  
   
 ## <a name="see-also"></a>См. также  
  [Функция decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   

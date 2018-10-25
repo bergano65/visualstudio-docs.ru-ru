@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831762"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267414"
 ## <a name="using-color-in-visual-studio"></a>С помощью цвета в Visual Studio  
  В Visual Studio он используется главным образом в качестве средства коммуникации, не так же, как и оформление. Как минимум используйте цвет и зарезервировать его для ситуаций, где вы хотите:  
   
--   Связь значения или объединением (например, платформы или языка модификаторы)  
+- Связь значения или объединением (например, платформы или языка модификаторы)  
   
--   Привлечение внимания (например, указывающей на изменение состояния)  
+- Привлечение внимания (например, указывающей на изменение состояния)  
   
--   Улучшить читаемость и предоставить ориентиров для навигации в пользовательском Интерфейсе  
+- Улучшить читаемость и предоставить ориентиров для навигации в пользовательском Интерфейсе  
   
--   Увеличить desirability  
+- Увеличить desirability  
   
- Существует несколько вариантов для назначения цветов для элементов пользовательского интерфейса в Visual Studio. Иногда может быть трудно рис out какой вариант вы должны использовать или правильно его использовать. В этом разделе помогут вам:  
+  Существует несколько вариантов для назначения цветов для элементов пользовательского интерфейса в Visual Studio. Иногда может быть трудно рис out какой вариант вы должны использовать или правильно его использовать. В этом разделе помогут вам:  
   
-1.  Сведения о различных служб и систем, используемых для определения цветов в Visual Studio.  
+1. Сведения о различных служб и систем, используемых для определения цветов в Visual Studio.  
   
-2.  Выберите правильный параметр для данного элемента.  
+2. Выберите правильный параметр для данного элемента.  
   
-3.  Правильно используйте параметр, которую вы выбрали.  
+3. Правильно используйте параметр, которую вы выбрали.  
   
- **Важно:** никогда не следует жестко кодировать hex, RGB или системных цветов для элементов пользовательского интерфейса. Использование служб обеспечивает гибкость в настройке hue. Кроме того, без службы, не можно пользоваться преимуществами возможностей Переключение тем [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+   **Важно:** никогда не следует жестко кодировать hex, RGB или системных цветов для элементов пользовательского интерфейса. Использование служб обеспечивает гибкость в настройке hue. Кроме того, без службы, не можно пользоваться преимуществами возможностей Переключение тем [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Элементы интерфейса методы для назначения цвета для Visual Studio  
  Выберите метод, который лучше всего подходит для элементов пользовательского интерфейса.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  Методы реализуется через [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) необходимо указать с помощью интегрированной среды разработки:  
   
--   Список отображаемых элементов в категории  
+- Список отображаемых элементов в категории  
   
--   Локализуемые имена для отображаемых элементов  
+- Локализуемые имена для отображаемых элементов  
   
--   Отображаемые сведения для каждого элемента категории  
+- Отображаемые сведения для каждого элемента категории  
   
- **Примечание:** каждой категории должен содержать хотя бы один элемент для отображения.  
+  **Примечание:** каждой категории должен содержать хотя бы один элемент для отображения.  
   
- Интегрированная среда разработки использует **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** интерфейса позволяет определить объединение несколько категорий.  
+  Интегрированная среда разработки использует **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** интерфейса позволяет определить объединение несколько категорий.  
   
- Его реализация предоставляет интегрированную среду разработки с помощью:  
+  Его реализация предоставляет интегрированную среду разработки с помощью:  
   
--   Список категорий, входящие в состав указанной группы  
+- Список категорий, входящие в состав указанной группы  
   
--   Доступ к экземплярам [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) поддержки каждой категории в группе  
+- Доступ к экземплярам [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) поддержки каждой категории в группе  
   
--   Имена локализуемых групп  
+- Имена локализуемых групп  
   
 #### <a name="updating-the-ide"></a>Обновление интегрированной среды разработки  
  Интегрированная среда разработки кэширует сведения о параметрах шрифта и цвета. Таким образом после внесения изменений конфигурации интегрированной среды разработки шрифта и цвета, обеспечивая актуальность кэша рекомендуется.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  Чтобы сделать это, пакет VSPackage должен удовлетворять следующим требованиям:  
   
--   **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) интерфейс. Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [onfontchanged и задает](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) метод, если выбран новый шрифт.  
+- **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) интерфейс. Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [onfontchanged и задает](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) метод, если выбран новый шрифт.  
   
- **OR**  
+  **OR**  
   
--   **опрос интегрированной среды разработки для изменения**. Это можно сделать через реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить данные шрифта и цвета для отображаемых элементов. Дополнительные сведения о параметры шрифта и цвета, см. в статье MSDN [параметры доступа к хранятся шрифта и цвета](https://msdn.microsoft.com/library/bb166382.aspx).  
+- **опрос интегрированной среды разработки для изменения**. Это можно сделать через реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить данные шрифта и цвета для отображаемых элементов. Дополнительные сведения о параметры шрифта и цвета, см. в статье MSDN [параметры доступа к хранятся шрифта и цвета](https://msdn.microsoft.com/library/bb166382.aspx).  
   
- **Примечание:** убедитесь, что результаты опроса верны, использовать [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс.  
+  **Примечание:** убедитесь, что результаты опроса верны, использовать [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Регистрация пользовательского шрифта и цвета категории без реализации интерфейсов  
  В следующем примере кода показано, как зарегистрировать пользовательский шрифт и цветовые категории без реализации интерфейсов:  

@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839327"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "49273264"
 ## <a name="the-dsl-tools-solution"></a>Решение с помощью средств DSL  
  Мастер конструктора предметно-ориентированного предоставляет следующие шаблоны решений:  
   
--   Поток задач  
+- Поток задач  
   
--   Диаграммы классов  
+- Диаграммы классов  
   
--   Минимальный язык  
+- Минимальный язык  
   
--   Модели компонентов  
+- Модели компонентов  
   
--   Минимальный WPF  
+- Минимальный WPF  
   
--   Минимальный Windows.Forms  
+- Минимальный Windows.Forms  
   
--   Библиотека DSL  
+- Библиотека DSL  
   
- Дополнительные сведения см. в разделе [Выбор шаблона решения на предметно-ориентированного языка](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Дополнительные сведения см. в разделе [Выбор шаблона решения на предметно-ориентированного языка](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Мастер создает [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решение, которое содержит следующие проекты:  
+  Мастер создает [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решение, которое содержит следующие проекты:  
   
--   DSL  
+- DSL  
   
-     Проект Dsl определяет доменный язык и средствами редактирования и обработки.  
+   Проект Dsl определяет доменный язык и средствами редактирования и обработки.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     Проект DslPackage определяет, как интегрировать средства для языков с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Проект DslPackage определяет, как интегрировать средства для языков с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>Графический интерфейс средства DSL  
  Графический интерфейс средства доменного языка можно использовать для добавления элементов и отношений для вашего доменного языка. После добавления элементов, можно определить их внешний вид, сопоставляя их с фигурами, Настройка цветов и добавление декораторов. Можно также добавить элементы на панель элементов.  

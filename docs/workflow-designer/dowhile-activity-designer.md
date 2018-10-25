@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23588a044596ce5250cc68d01263f5d80775866a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 19817fb23bd8a22532df7d349262b689f632a3a7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839626"
 ---
 # <a name="dowhile-activity-designer"></a>Конструктор действия DoWhile
 
@@ -25,12 +25,12 @@ ms.locfileid: "31969982"
 
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>Свойства DoWhile в конструкторе рабочих процессов
 
-В следующей таблице показаны наиболее полезные <xref:System.Activities.Statements.DoWhile> свойства действия и описывается их использование в конструкторе:
+В следующей таблице показаны наиболее полезных <xref:System.Activities.Statements.DoWhile> свойства действия и описывается их использование в конструкторе:
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|Действие, выполняемое, пока условие имеет **true**. Чтобы добавить <xref:System.Activities.Statements.DoWhile.Body%2A> действие, перетащите действие из панели элементов в **текст** поле на **DoWhile** конструктора действий с текстом подсказки «Перетащить действие сюда».|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Да|Условие оценивается после каждой итерации цикла. Чтобы задать <xref:System.Activities.Statements.DoWhile.Condition%2A>, введите выражение Visual Basic в **условие** поле на **DoWhile** действие конструктора или в сетке свойств.|
+|-|--------------|-|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|Действие, которое выполняется, пока условие имеет **true**. Чтобы добавить <xref:System.Activities.Statements.DoWhile.Body%2A> действие, перетащите его из области элементов в **текст** поле **DoWhile** конструктора действий с текстом подсказки «Перетащить действие сюда».|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Да|Условие оценивается после каждой итерации цикла. Чтобы задать <xref:System.Activities.Statements.DoWhile.Condition%2A>, введите выражение Visual Basic в **условие** поле **DoWhile** действие конструктора или в сетке свойств.|
 
 ## <a name="see-also"></a>См. также
 

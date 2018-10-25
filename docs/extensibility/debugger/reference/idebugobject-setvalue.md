@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Документы Microsoft
+title: IDebugObject::SetValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850975"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Задает значение объекта из последовательных последовательность байтов.  
@@ -49,10 +49,10 @@ int SetValue(
  [in] Размер значения в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Значения в массиве копируются в это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта, заменяют существующее значение. Размер нового значения может быть больше или меньше существующее значение. Это `IDebugObject` не может быть пустой ссылкой.  
+ Значения в массиве копируются в это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта, заменив существующие значения. Размер нового значения может быть больше или меньше, чем существующее. Это `IDebugObject` не может быть пустой ссылкой.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

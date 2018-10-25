@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853984"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Ошибка: Отладка&#39;t невозможна, поскольку в системе включен отладчик ядра
 При отладке управляемого кода может появиться следующее сообщение об ошибке:  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Это сообщение появляется при попытке произвести отладку управляемого кода:  
   
--   в системе [!INCLUDE[win7](../debugger/includes/win7_md.md)] или [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], которая была запущена в режиме отладки;  
+- в системе [!INCLUDE[win7](../debugger/includes/win7_md.md)] или [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], которая была запущена в режиме отладки;  
   
--   для приложения, использующего среду CLR версии CLR 2.0, 3.0 или 3.5.  
+- для приложения, использующего среду CLR версии CLR 2.0, 3.0 или 3.5.  
   
 ## <a name="solution"></a>Решение  
   
 #### <a name="to-fix-this-problem"></a>Для устранения этой проблемы:  
   
--   Обновите приложение, чтобы использовалась среда CLR версии 4.0 или 4.5.  
+- Обновите приложение, чтобы использовалась среда CLR версии 4.0 или 4.5.  
   
-     —или—  
+   —или—  
   
--   Отключите отладку на уровне ядра и выполняйте отладку в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Отключите отладку на уровне ядра и выполняйте отладку в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     —или—  
+   —или—  
   
--   Выполняйте отладку с использованием отладчика ядра вместо отладки в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Выполняйте отладку с использованием отладчика ядра вместо отладки в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     —или—  
+   —или—  
   
--   В отладчике ядра отключите исключения режима пользователя.  
+- В отладчике ядра отключите исключения режима пользователя.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Отключение отладки на уровне ядра в текущем сеансе  
   

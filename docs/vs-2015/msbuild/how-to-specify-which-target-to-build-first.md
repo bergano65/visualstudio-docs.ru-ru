@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840705"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первого построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49232119"
   
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта  
   
--   Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- В атрибуте `InitialTargets` можно указать сразу несколько начальных целевых объектов, расположив их по порядку и разделив точкой с запятой. Целевые объекты в этом списке будут выполняться последовательно.  
+  В атрибуте `InitialTargets` можно указать сразу несколько начальных целевых объектов, расположив их по порядку и разделив точкой с запятой. Целевые объекты в этом списке будут выполняться последовательно.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Задание нескольких начальных целевых объектов  
   
@@ -53,11 +53,11 @@ ms.locfileid: "49232119"
   
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию  
   
--   Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- В атрибуте `DefaultTargets` можно указать сразу несколько целевых объектов по умолчанию, расположив их по порядку и разделив точкой с запятой. Целевые объекты в этом списке будут выполняться последовательно.  
+  В атрибуте `DefaultTargets` можно указать сразу несколько целевых объектов по умолчанию, расположив их по порядку и разделив точкой с запятой. Целевые объекты в этом списке будут выполняться последовательно.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Задание нескольких целевых объектов по умолчанию  
   

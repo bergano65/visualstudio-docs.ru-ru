@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830696"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
 В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
@@ -50,7 +50,7 @@ ms.locfileid: "39498874"
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], предполагается, что имя папки SUR совпадать с именем решения без расширения. В следующей таблице перечислены поведение в обеих версиях.  
   
 |Функция|Система управления версиями API подключаемого модуля версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Добавьте решение в SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Примечание:** Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
   

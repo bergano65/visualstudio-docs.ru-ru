@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete | Документы Microsoft
+title: IDebugPendingBreakpoint2::Delete | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c28b482f0dd6e4d7ee302396c246c2e6b24eec9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b5b6b91dd871582c78be62202f7355ca68ffbea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822089"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Удаляет этот ожидающая точка останова и все точки останова, привязанный из него.  
@@ -39,10 +39,10 @@ int Delete();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CPendingBreakpoint` объект, реализующий [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объект, реализующий [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Delete(void)    

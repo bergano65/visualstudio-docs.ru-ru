@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837585"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Отладка или отключение кода проекта в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "49306375"
   
  Код проекта включает следующие объекты:  
   
--   настраиваемые элементы управления и пользовательские элементы управления;  
+- настраиваемые элементы управления и пользовательские элементы управления;  
   
--   библиотеки классов;  
+- библиотеки классов;  
   
--   преобразователи значений;  
+- преобразователи значений;  
   
--   привязки данных времени разработки, созданные из кода проекта.  
+- привязки данных времени разработки, созданные из кода проекта.  
   
- При отключении кода проекта Visual Studio будет отображать заполнители, такие как имя свойства для привязки, где данные больше не доступны, или заполнитель для элемента управления, который больше не выполняется.  
+  При отключении кода проекта Visual Studio будет отображать заполнители, такие как имя свойства для привязки, где данные больше не доступны, или заполнитель для элемента управления, который больше не выполняется.  
   
- ![Диалоговое окно "Необработанное исключение"](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Диалоговое окно "Необработанное исключение"](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Как определить, вызвано ли исключение кодом проекта  
   

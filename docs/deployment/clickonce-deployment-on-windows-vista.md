@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867537"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 
@@ -32,25 +32,25 @@ ms.locfileid: "44282590"
 
 Visual Studio предоставляет следующие возможности для создания манифеста:  
   
--   Использование внедренного манифеста. Внедрение данных UAC в исполняемый файл приложения и запуск от имени обычного пользователя.  
+- Использование внедренного манифеста. Внедрение данных UAC в исполняемый файл приложения и запуск от имени обычного пользователя.  
   
-     Это параметр по умолчанию (Если вы не используете ClickOnce). Этот параметр поддерживает как обычно, в котором работает Visual Studio в Windows Vista, с созданием внутренним и внешним манифест с помощью `AsInvoker`.  
+   Это параметр по умолчанию (Если вы не используете ClickOnce). Этот параметр поддерживает как обычно, в котором работает Visual Studio в Windows Vista, с созданием внутренним и внешним манифест с помощью `AsInvoker`.  
   
--   Использование внешнего манифеста. Создайте внешний манифест с помощью *app.manifest*.  
+- Использование внешнего манифеста. Создайте внешний манифест с помощью *app.manifest*.  
   
-     Это приводит к возникновению ошибки только внешний манифест, используя сведения из *app.manifest*. При публикации приложения с помощью ClickOnce или COM без регистрации, Visual Studio добавляет *app.manifest* в проект, а затем добавляет этот параметр.  
+   Это приводит к возникновению ошибки только внешний манифест, используя сведения из *app.manifest*. При публикации приложения с помощью ClickOnce или COM без регистрации, Visual Studio добавляет *app.manifest* в проект, а затем добавляет этот параметр.  
   
--   Работа без использования манифеста. Создайте приложение без манифеста.  
+- Работа без использования манифеста. Создайте приложение без манифеста.  
   
-     Этот подход также называется *виртуализации*. Используйте этот параметр для совместимости с существующими приложениями из более ранних версиях Visual Studio.  
+   Этот подход также называется *виртуализации*. Используйте этот параметр для совместимости с существующими приложениями из более ранних версиях Visual Studio.  
   
- Новые свойства доступны на **приложения** страницы в конструкторе проектов (Visual C# только для проектов) и формат файла проекта MSBuild.  
+  Новые свойства доступны на **приложения** страницы в конструкторе проектов (Visual C# только для проектов) и формат файла проекта MSBuild.  
   
- Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio будет зависеть от типа проекта (Visual C# или Visual Basic).  
+  Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio будет зависеть от типа проекта (Visual C# или Visual Basic).  
   
-   * Сведения о настройке проектов Visual C# для создания манифеста см. в разделе [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Сведения о настройке проектов Visual C# для создания манифеста см. в разделе [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
-   * Сведения о настройке проектов Visual Basic для создания манифеста, см. в разделе [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+  * Сведения о настройке проектов Visual Basic для создания манифеста, см. в разделе [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
