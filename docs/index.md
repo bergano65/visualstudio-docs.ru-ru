@@ -4,12 +4,12 @@ hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831033"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Попробуйте 5-минутное краткое руководство</h3>
-                                                <h4>Создайте приложение "Hello, World" на языке по своему усмотрению.</h4>
+                                                <h4>Создайте приложение &quot;Hello, World&quot; на используемом вами языке.</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
