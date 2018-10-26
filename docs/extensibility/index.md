@@ -8,12 +8,12 @@ title: Документация по расширению среды Visual Stud
 description: Сведения о расширяемости Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842954"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Документация по расширению среды Visual Studio
 
@@ -49,7 +49,7 @@ ms.locfileid: "39500301"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Расширяемость платформы компилятора .NET (Roslyn)</h3>
+                        <h3>Расширяемость платформы компилятора .NET (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>
