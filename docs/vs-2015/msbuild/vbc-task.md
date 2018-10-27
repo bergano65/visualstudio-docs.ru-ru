@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184253"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143428"
 ---
 # <a name="vbc-task"></a>Задача Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "49184253"
 |`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр равен `true`, отображение заголовка компилятора отключается. Этот параметр соответствует параметру [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) компилятора vbc.exe.|  
 |`NoStandardLib`|Необязательный параметр `Boolean` .<br /><br /> Указывает компилятору не ссылаться на стандартные библиотеки. Этот параметр соответствует параметру [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) компилятора vbc.exe.|  
 |`NoVBRuntimeReference`|Необязательный параметр `Boolean` .<br /><br /> Только для внутреннего использования. Если присвоено значение true, предотвращает автоматическую ссылку на Microsoft.VisualBasic.dll.|  
-|`NoWarnings`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, задача отключает все предупреждения. Дополнительные сведения см. в статье [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задача отключает все предупреждения. Дополнительные сведения см. в статье [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение`true`, разрешает оптимизацию компилятора. Этот параметр соответствует параметру [/optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) компилятора vbc.exe.|  
 |`OptionCompare`|Необязательный параметр `String` .<br /><br /> Задает способ сравнения строк. Этот параметр может иметь следующие значения:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Значение `binary` указывает на то, что в задаче используются двоичные сравнения строк. Значение `text` указывает на то, что в задаче используются текстовые сравнения строк. По умолчанию этот параметр имеет значение `binary`. Этот параметр соответствует параметру [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) компилятора vbc.exe.|  
 |`OptionExplicit`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, требуется явное объявление переменных. Этот параметр соответствует параметру [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) компилятора vbc.exe.|  
