@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952000"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459794"
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).
@@ -73,7 +73,7 @@ ms.locfileid: "31952000"
 
  Установите этот флажок, чтобы подписать сборку и создать файл ключа со строгим именем. Дополнительные сведения о подписи сборки с помощью **конструктора проектов** см. в разделе [Практическое руководство. Подписывание сборки (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Этот параметр использует средство Al.exe, предоставляемое [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Для подписывания сборки этот параметр использует средство Al.exe из Windows Software Development Kit (пакет SDK). Дополнительные сведения о Al.exe см. в разделе [Практическое руководство. Подписание сборки строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Список **Выберите файл ключа строгого имени**
 
