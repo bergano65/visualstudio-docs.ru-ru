@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930834"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219943"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 Эти методы могут пригодиться при отладке программы MFC.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  В списке **Копировать параметры из** выберите **Выпуск**.  
 
-   5.  Щелкните **OK** , чтобы закрыть диалоговое окно **Создание конфигурации проекта**.  
+   5.  Нажмите кнопку **ОК** закрыть **Создание конфигурации проекта** диалоговое окно.  
 
    6.  Закройте диалоговое окно **Диспетчер конфигураций** .  
 

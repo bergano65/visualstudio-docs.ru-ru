@@ -1,7 +1,7 @@
 ---
 title: Задача WriteLinesToFile | Документы Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341814"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228842"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile - задача
 Записывает пути указанных элементов в заданный текстовый файл.  
@@ -39,7 +39,8 @@ ms.locfileid: "39341814"
 |`Lines`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает элементы, которые нужно записать в файл.|  
 |`Overwrite`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задача перезаписывает существующее содержимое файла.|  
 |`Encoding`|Необязательный параметр `String` .<br /><br /> Выбирает кодировку символов, например Юникод.  См. также раздел <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, то указанный целевой файл (если он существует) будет считываться первым для сравнения с данными, которые записала бы задача. Если они совпадают, то файл не записывается на диск, а метка времени сохраняется.|  
+
 ## <a name="remarks"></a>Примечания  
  Если `Overwrite` имеет значение `true`, создается файл, в него записывается содержимое, а затем файл закрывается. Если целевой файл уже существует, он будет переопределен. Если `Overwrite` имеет значение `false`, содержимое добавляется к файлу. Если конечный файл не существует, он создается.  
   

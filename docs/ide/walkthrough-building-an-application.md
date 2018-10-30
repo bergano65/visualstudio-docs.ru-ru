@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942222"
 ---
 # <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Сборка приложения
 
@@ -114,23 +114,23 @@ ms.locfileid: "34748222"
 
 1. В **обозревателе решений** выберите узел проекта верхнего уровня.
 
-1. В строке меню выберите **Вид** > **Страницы свойств**.
+2. В строке меню выберите **Вид** > **Страницы свойств**.
 
      Открывается **Конструктор проектов**.
 
-1. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
+3. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
 
      ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Дополнительные сведения см. в статье [Настройка предупреждений в Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Постройте решение.
+4. Постройте решение.
 
- Окно **Вывод** отображает только сводные данные о сборке.
+   Окно **Вывод** отображает только сводные данные о сборке.
 
- ![Окно выходных данных, предупреждения построения Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Окно выходных данных, предупреждения построения Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).
+   Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Отображение дополнительных сведений о сборке в окне вывода
 
@@ -138,7 +138,6 @@ ms.locfileid: "34748222"
 
 > [!IMPORTANT]
 > При отображении дополнительных сведений сборка будет занимать больше времени.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Изменение объема сведений в окне вывода
 

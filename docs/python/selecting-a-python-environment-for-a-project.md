@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551666"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101138"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Назначение окружения Python для использования в проекте
 
@@ -50,7 +50,7 @@ ms.locfileid: "45551666"
 
 Преимуществом виртуального окружения является то, что в нем по мере разработки проекта всегда будут отражаться точные зависимости проекта. (С другой стороны, в общем глобальном окружении можно хранить любое число библиотек, используемых или неиспользуемых в проекте.) В виртуальном окружении можно легко создать файл *requirements.txt*, который будет использоваться для переустановки этих зависимостей на другой рабочий компьютер или компьютер разработки. Дополнительные сведения см. в руководстве по [управлению необходимыми пакетами с помощью requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Если в Visual Studio открыть проект, который содержит файл *requirements.txt*, Visual Studio автоматически позволит воссоздать виртуальное окружение. Если на компьютере не установлена среда Visual Studio, как например на компьютере со Службой приложений Azure, для восстановления пакетов используйте команду `pip install -r requirements.txt` (см. руководство по [управлению с Python в Службе приложений Azure](managing-python-on-azure-app-service.md)).
+Если в Visual Studio открыть проект, который содержит файл *requirements.txt*, Visual Studio автоматически позволит воссоздать виртуальное окружение. На тех компьютерах, где не установлена среда Visual Studio, можно восстанавливать пакеты с помощью команды `pip install -r requirements.txt`.
 
 Учитывая то, что в виртуальном окружении жестко запрограммирован путь к базовому интерпретатору и можно воссоздать окружение с помощью файла *requirements.txt*, обычно вся папка виртуального окружения не указывается в системе управления версиями.
 

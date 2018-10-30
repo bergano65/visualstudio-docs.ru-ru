@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909008"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Шаг 5. Использование шаблона веб-проекта опроса Flask
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-Вызов `repository.add_sample_polls()` завершается в одной из конкретных реализаций `Repository` для выбранного хранилища данных. Каждая реализация вызывает метод `_load_samples_json` (в *models\__init__.py*) для загрузки файла *models\samples.json* в память, а затем выполняет итерацию по данным для создания необходимых объектов `Poll` и `Choice` в хранилище данных.
+Вызов `repository.add_sample_polls()` завершается в одной из конкретных реализаций `Repository` для выбранного хранилища данных. Каждая реализация вызывает метод `_load_samples_json` (в *models\_\_init\_\_.py*) для загрузки файла *models\samples.json* в память, а затем выполняет итерацию по данным для создания необходимых объектов `Poll` и `Choice` в хранилище данных.
 
 После завершения этого процесса инструкция `redirect('/')` в методе `seed` возвращается на домашнюю страницу. Так как `repository.get_polls` теперь возвращает объект данных, условные теги в *templates\index.html* отображают таблицу, содержащую опросы.
 
@@ -352,11 +352,8 @@ def results(key):
 
 Запуск веб-приложения на компьютере разработчика — это лишь один шаг, чтобы сделать приложение доступным для клиентов. Следующие шаги могут включать приведенные ниже задачи:
 
-- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), которая содержит сведения об определенных изменениях, необходимых для приложений Flask.
+- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в "Службе приложений Azure"](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Добавьте реализацию репозитория, использующую другое хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все они могут размещаться на платформе Azure). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты, а также с Cosmos DB.
 
-- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Azure Pipelines. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), Azure Test Plans может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps Services интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
-
-  - [Создание конвейера CI/CD для Python с помощью проектов Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Python development in Azure with Visual Studio Team Services](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/) (Разработка Python в Azure с помощью Visual Studio Team Services).
+- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Visual Studio Team Services (VSTS). В дополнение к работе с системой управления исходным кодом (в VSTS, GitHub или в другом месте), VSTS может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, VSTS интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения см. в статье [Создание конвейера CI/CD для Python с помощью проекта Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts).

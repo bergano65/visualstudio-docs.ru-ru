@@ -9,12 +9,12 @@ description: Сведения о преимуществе приоритетно
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866744"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Приоритетная поддержка в подписках Visual Studio
 
@@ -37,10 +37,10 @@ ms.locfileid: "44282954"
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Облачные службы (веб-роль и рабочая роль)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [База данных SQL Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
-   - [Служба хранилища Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
+   - [Хранилище Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
 
    - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
 
@@ -229,6 +229,7 @@ ms.locfileid: "44282954"
 
 
 ## <a name="eligibility"></a>Право на участие
+
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено       |  Да          |
@@ -238,7 +239,7 @@ ms.locfileid: "44282954"
 | Visual Studio Dev Essentials | Н/Д  | Включено                                                            |Да |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine.  Не включает следующие категории: Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Partner (MVP), региональный директор (RD).*
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine.  Не включает следующие категории: Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Professional (MVP), региональный директор (RD).*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

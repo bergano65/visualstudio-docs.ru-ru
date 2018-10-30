@@ -1,7 +1,7 @@
 ---
 title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548973"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324981"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
 По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3, Anaconda 2 и Anaconda 3, как описано в руководстве по [установке](installing-python-support-in-visual-studio.md).
 
-Кроме того, любой интерпретатор из приведенной ниже таблицы можно установить вручную, не используя Visual Studio Installer. Например, если вы установили Anaconda 3 еще до установки Visual Studio, нет необходимости снова устанавливать этот дистрибутив с помощью Visual Studio Installer.
+Кроме того, любой интерпретатор из приведенной ниже таблицы можно установить вручную, не используя Visual Studio Installer. Например, если вы установили Anaconda 3 еще до установки Visual Studio, нет необходимости снова устанавливать этот дистрибутив с помощью Visual Studio Installer. Вы также можете установить интерпретатор вручную, если, например, доступна новая версия, которая пока что не отображается в установщике Visual Studio.
 
 Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
 

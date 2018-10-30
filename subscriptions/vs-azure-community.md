@@ -9,12 +9,12 @@ description: Сведения о преимуществе сообщества A
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937464"
 ---
 # <a name="azure-community"></a>Сообщество Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "44283734"
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
 | [Облачные службы (веб-роль и рабочая роль)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Сетевые возможности Azure (DNS, диспетчер трафика, VPN, VNET)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Веб-приложения службы приложений Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
 | [База данных SQL Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Служебная шина Azure](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
-| [Служба хранилища Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Управление API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
+| [Хранилище Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Управление API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Веб-сайты Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Мобильные приложения Azure](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
 | [Многофакторная идентификация Azure](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Цены и выставление счетов](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Инструменты Azure для командной строки и написания скриптов](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Портал управления Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
@@ -51,16 +51,18 @@ ms.locfileid: "44283734"
 ## <a name="eligibility"></a>Право на участие
 Доступность преимущества сообщества Azure зависит от уровня подписки, как показано ниже.
 
-| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия   | Один год      |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная)  | Корпоративная лицензия, Azure, розничная версия                                      | Один год                                                           |  Да          |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Один год                                             |  Да          |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              |Один год                                              |  Да          |
-| Visual Studio Enterprise (ежемесячная облачная), Visual Studio Professional (ежемесячная облачная), не для перепродажи (NFR) <sup>1</sup>                                          | Все                                              |Недоступно                                              |  Нет          |
-| Visual Studio Dev Essentials                                        | Н/Д                                              |Недоступно                                              |  Нет          |
-|
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+|                                          Уровень подписки                                           |     Каналы      |    Преимущество    | Возможность возобновления |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (стандартная, годовая облачная)                           | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
+|                          Visual Studio Professional (стандартная, годовая облачная)                          | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
+|                              Visual Studio Test Professional (стандартная)                               |    Корпоративная лицензия, розничная версия     |   Один год    |    Да     |
+|                                       MSDN Platforms (стандартная)                                       |    Корпоративная лицензия, розничная версия     |   Один год    |    Да     |
+| Visual Studio Enterprise (ежемесячная облачная), Visual Studio Professional (ежемесячная облачная), не для перепродажи (NFR) <sup>1</sup> |        Все        | Недоступно |     Нет     |
+|                                     Visual Studio Dev Essentials                                      |        Н/Д        | Недоступно |     Нет     |
+|                                                                                                       |                   |               |            |
+
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT).*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

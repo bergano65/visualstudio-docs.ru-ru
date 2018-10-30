@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 738ada7e72af6c6bfbb93b8c494fdec2aadf68c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895955"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Клонирование репозитория с кодом Python в Visual Studio
 
@@ -13,13 +13,13 @@ ms.locfileid: "44283526"
 
 1. Чтобы подключиться к репозиториям GitHub, запустите установщик Visual Studio, выберите **Изменить** и перейдите на вкладку **Отдельные компоненты**. Прокрутите содержимое вниз до раздела **Средства для работы с кодом**, выберите компонент **Расширение GitHub для Visual Studio**, а затем выберите **Изменить**.
 
-    ![Выбор расширения GitHub в установщике Visual Studio](media\create-project-repo\installation-github-extension.png)
+    ![Выбор расширения GitHub в установщике Visual Studio](media/create-project-repo/installation-github-extension.png)
 
 2. Запустите Visual Studio.
 
 3. Последовательно выберите **Вид > Team Explorer**, чтобы открыть окно **Team Explorer**, в котором вы можете подключиться к GitHub или Azure DevOps либо клонировать репозиторий.
 
-    ![Окно Team Explorer с возможностями подключения к Azure DevOps и GitHub, а также клонирования репозитория](media\create-project-repo\team-explorer.png)
+    ![Окно Team Explorer с возможностями подключения к Azure DevOps и GitHub, а также клонирования репозитория](media/create-project-repo/team-explorer.png)
 
 4. В разделе **Локальные репозитории Git** в поле URL-адреса введите `https://github.com/Microsoft/samples-for-ai`, укажите папку для клонируемых файлов и нажмите кнопку **Клонировать**.
 
@@ -28,7 +28,7 @@ ms.locfileid: "44283526"
 
 5. По завершении клонирования дважды щелкните папку репозитория в нижней части окна Team Explorer, чтобы перейти к панели мониторинга репозитория. В разделе **Решения** выберите **Создать…**.
 
-    ![Окно Team Explorer, создание проекта на основе клона](media\create-project-repo\team-explorer-new-project.png)
+    ![Окно Team Explorer, создание проекта на основе клона](media/create-project-repo/team-explorer-new-project.png)
 
 6. В появившемся диалоговом окне **Создание проекта** выберите вариант **На основе существующего кода Python**, укажите имя проекта, задайте папку репозитория в поле **Расположение**, а затем нажмите кнопку **ОК**. В появившемся мастере выберите **Готово**.
 
@@ -36,19 +36,19 @@ ms.locfileid: "44283526"
 
 8. В обозревателе решений разверните узел `TensorFlow Examples> MNIST`, щелкните правой кнопкой мыши файл `convolutional.py` и выберите пункт **Задать как файл запуска**. Таким образом вы указываете, какой файл среда Visual Studio должна использовать при запуске проекта.
 
-10. Чтобы запустить программу, нажмите клавиши CTRL+F5 или последовательно выберите **"Отладка" > "Запустить без отладки"**. Если вы видите символ "`", еще раз проверьте рабочую папку, заданную в предыдущем шаге.
+9. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка > Запустить без отладки**. Если вы видите символ "`", еще раз проверьте рабочую папку, заданную в предыдущем шаге.
 
+10. Когда программа успешно запустится, она начнет загружать набор данных для обучения и тестирования. Затем она будет обучать модель и выводить процент ошибок. Нужно, чтобы процент ошибок со временем уменьшался
 
-11. Когда программа успешно запустится, она начнет загружать набор данных для обучения и тестирования. Затем она будет обучать модель и выводить процент ошибок. Нужно, чтобы процент ошибок со временем уменьшался
+    ![Первые выходные данные из программы Python MNIST](media/create-project-repo/tensorflow-mnist-running.png)
 
-    ![Первые выходные данные из программы Python MNIST](media\create-project-repo\tensorflow-mnist-running.png)
-
-> Если при использовании Anaconda вы получаете ошибку об отсутствии numpy, вам нужно [изменить окружение Python на подходящую для работы с Anaconda](../python/selecting-a-python-environment-for-a-project.md).
+   > [!NOTE]
+   > Если при использовании Anaconda вы получаете ошибку об отсутствии numpy, вам нужно [изменить среду Python, чтобы можно было работать с Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Вы можете использовать TensorBoard для визуального отображения хода выполнения. Щелкните проект правой кнопкой мыши и выберите **Запуск TensorBoard**, а затем укажите каталог для журналов TensorBoard с выходными данными.
 
-    ![Запуск TensorBoard](media\create-project-repo\run-tensorboard.png)
+   ![Запуск TensorBoard](media/create-project-repo/run-tensorboard.png)
 
-11. Обратите внимание на уменьшение числа ошибок со временем, что означает повышение качества
+12. Обратите внимание на уменьшение числа ошибок со временем, что означает повышение качества
 
-    ![Запуск TensorBoard](media\create-project-repo\tensorboard.png)
+   ![Запуск TensorBoard](media/create-project-repo/tensorboard.png)

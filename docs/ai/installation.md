@@ -1,6 +1,6 @@
 ---
-title: Установка инструментов Visual Studio для сценариев ИИ
-description: Установка инструментов Visual Studio для сценариев ИИ
+title: Установка средств искусственного интеллекта
+description: Описание установки средств искусственного интеллекта для Visual Studio
 keywords: искусственный интеллект, visual studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303113"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459768"
 ---
 # <a name="installation"></a>Установка
 
@@ -27,19 +27,20 @@ ms.locfileid: "36303113"
 
 Это расширение работает с Visual Studio 2015 и Visual Studio 2017 выпуска Community или более высокого уровня.
 
-Чтобы установить расширение, скачайте его в [Visual Studio Marketplace](http://aka.ms/vstoolsforai) или из Visual Studio
+Скачать эти средства можно с сайта [Visual Studio Marketplace](http://aka.ms/vstoolsforai) или из Visual Studio.
 
 1. Выберите **Сервис** > **Расширения и обновления**.
 
-![установка CUDA в Windows](media\installation\extensions.png)
+   ![Меню "Расширения и обновления" в Visual Studio](media/installation/extensions.png)
 
-1. В правом верхнем углу выполните **поиск** по запросу "Инструменты ИИ".
-2. Выберите результат **Инструменты Visual Studio для сценариев ИИ**.
-3. Нажмите **Скачать**.
+2. В диалоговом окне **Расширения и обновления** выберите **Online** (Онлайн) с левой стороны.
+3. В поле поиска в правом верхнем углу введите "tools for ai" (средства ИИ).
+4. В результатах выберите **Visual Studio Tools for AI** (Средства Visual Studio для ИИ).
+5. Нажмите **Загрузить**.
 
 ## <a name="prepare-your-local-machine"></a>Подготовка локального компьютера
 
-Перед обучением моделей глубинного обучения на локальном компьютере следует убедиться в том, что установлены последние версии требуемых компонентов. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Необходимо также убедиться в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубинного обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch или Chainer, которые планируется использовать в проекте.
+Перед обучением моделей глубокого обучения на локальном компьютере убедитесь в том, что установлены требуемые компоненты. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Необходимо также убедиться в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубокого обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch и Chainer, которые планируется использовать в проекте.
 
 > [!NOTE]
 > Краткие сведения о программном обеспечении в следующих подразделах взяты с домашних страниц соответствующих продуктов.
@@ -50,9 +51,7 @@ ms.locfileid: "36303113"
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) — это платформа параллельных вычислений и модель программирования, разработанная компанией NVIDIA.
-Она существенно увеличивает производительность вычислений благодаря использованию возможностей GPU.
-В настоящее время для платформ глубинного обучения требуется набор инструментов CUDA 8.0.
+[CUDA](https://developer.nvidia.com/cuda-zone) — это платформа параллельных вычислений и модель программирования, разработанная компанией NVIDIA. Она существенно увеличивает производительность вычислений благодаря использованию возможностей GPU. В настоящее время для платформ глубинного обучения требуется набор инструментов CUDA 8.0.
 
 Установка CUDA
 
@@ -60,7 +59,7 @@ ms.locfileid: "36303113"
 - Установите библиотеки CUDA времени выполнения, а затем добавьте путь к двоичным файлам CUDA в переменную среды %PATH% или $Path.
 - В Windows путь по умолчанию — "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
 
-![установка CUDA в Windows](media\installation\install_cuda_win.png)
+![Установка CUDA в Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python является основным языком программирова
 
 Платформы глубинного обучения требуют pip для установки.
 
-![Установка Python в Windows](media\installation\install_python_win.png)
+![Установка Python в Windows](media/installation/install_python_win.png)
 
 Затем необходимо проверить, правильно ли установлен Python 3.5, и обновить систему pip до последней версии, выполнив в терминале следующие команды:
 
