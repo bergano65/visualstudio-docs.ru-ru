@@ -9,12 +9,12 @@ description: Сведения о преимуществе Concierge Chat, вхо
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831852"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -39,6 +39,7 @@ ms.locfileid: "44282526"
     > ![Сеанс Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Право на участие
+
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
@@ -48,7 +49,7 @@ ms.locfileid: "44282526"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark.  Не включает следующие категории: FTE, Microsoft Valued Partner (MVP), региональный директор (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark.  Не включает следующие категории: FTE, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), Imagine.*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

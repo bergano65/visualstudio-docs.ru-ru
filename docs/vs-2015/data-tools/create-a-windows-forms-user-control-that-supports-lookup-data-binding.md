@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231670"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219488"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создать пользовательский элемент управления Windows Forms подстановочной привязкой данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ ms.locfileid: "49231670"
 3.  В меню **Построение** выберите пункт **Построить решение**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных  
- На этом шаге создается источник данных с помощью **конфигурации источника данных**мастера, на основе `Customers` и `Orders` таблиц в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [Установка SQL Server образцы баз данных](../data-tools/install-sql-server-sample-databases.md).  
+ На этом шаге создается источник данных с помощью **конфигурации источника данных** мастера, на основе `Customers` и `Orders` таблиц в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [Установка SQL Server образцы баз данных](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Создание источника данных  
   

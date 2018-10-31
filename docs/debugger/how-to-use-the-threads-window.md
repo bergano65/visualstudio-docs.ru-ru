@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933564"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219891"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Пошаговое руководство: Отладка многопоточных приложений в Visual Studio с помощью окна потоков
 Visual Studio предоставляет **потоков** окна и других пользовательского интерфейса элементов для отладки многопоточных приложений. Этом руководстве показано, как использовать **потоков** окна и **место отладки** панели инструментов. Сведения о других средствах см. в разделе [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md). В этом руководстве всего несколько минут, но оно позволит ознакомиться вас с функциями для отладки многопоточных приложений.   
@@ -37,7 +37,7 @@ Visual Studio предоставляет **потоков** окна и друг
   
      Откроется диалоговое окно **Новый проект** .  
   
-2.  В **тип проекта**s см. в удобном для вас языке: **Visual Basic**, **Visual C#**, или **Visual C++**.  
+2.  В **типы проектов** выберите язык по своему усмотрению: **Visual Basic**, **Visual C#** , или **Visual C++**.  
   
 3.  В разделе **Windows Desktop**, выберите **консольное приложение**.  
   

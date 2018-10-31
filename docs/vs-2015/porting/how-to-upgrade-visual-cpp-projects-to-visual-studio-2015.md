@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8f8ff1354ac2729c7c11b6ff575b90837af66
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188575"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220073"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Практическое руководство. Обновление проектов Visual C++ до Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последние версии документации по Visual Studio 2017, см. в разделе [руководство по обновлению и переносу Visual C++](https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Последние версии документации по Visual Studio 2017, см. в разделе [руководство по обновлению и переносу Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 При первом открытии проекта Visual C++, созданного в более ранней версии Visual Studio, может потребоваться обновить проект. В сообщении спрашивается, требуется ли выполнить обновление до последней версии компилятора и библиотек Visual C++. Варианты обновления зависят от версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которая использовалась для создания проекта.  
   

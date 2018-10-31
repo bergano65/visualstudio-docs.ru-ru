@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928962"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219787"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
   Следующие проблемы или предупреждения могут возникнуть при отладке решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочего процесса SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928962"
   
 -   Установите [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Убедитесь, что имеется доступ с правами администратора на сайте SharePoint. Дополнительные сведения см. в разделе [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] онлайн-статья [назначать или удалять администраторов службы приложений в SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Убедитесь, что имеется доступ с правами администратора на сайте SharePoint. Дополнительные сведения см. в разделе [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] онлайн-статья [назначать или удалять администраторов службы приложений в SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Веб-событие удаления сайта отсутствует в проекте приемника событий
  При создании проекта приемника событий и выборе некоторых событий, такие как «удаляется сайт», событие не происходит.  

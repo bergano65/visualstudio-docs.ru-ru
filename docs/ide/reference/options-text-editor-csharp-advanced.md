@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433306"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356747"
 ---
 # <a name="options-text-editor-c-advanced"></a>"Параметры", "Текстовый редактор", C#, "Дополнительно"
 
@@ -32,6 +32,69 @@ ms.locfileid: "37433306"
 
    Включает анализ кода для всех, а не только открытых файлов в решении. Дополнительные сведения см. в разделе [Полный анализ решения](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
+## <a name="using-directives"></a>Директивы using
+
+- Располагать директивы "System" первыми при сортировке using
+
+   При выборе команды **Remove and Sort Usings** (Удалить и сортировать директивы using) в контекстном меню выполняется сортировка директив `using` и помещение пространств имен System в верхнюю часть списка.
+
+   До сортировки:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   После сортировки:
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- Разделять группы директив using
+
+   При выборе команды **Удалить и сортировать директивы using** в контекстном меню выполняется отделение `using` путем вставки пустой строки между группами директив, у которых одно и то же корневое пространство имен.
+
+   До сортировки:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   После сортировки:
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- Добавление директив using для типов в базовых сборках и пакетах NuGet 
+
+   При выборе доступна команда [Быстрое действие](../quick-actions.md) для установки пакета NuGet и добавления директивы `using` для типов, на которые нет ссылок.
+
+   ![Быстрое действие для установки пакета NuGet в Visual Studio](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>Выделение
 
 - Выделить ссылки на символ под курсором

@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836792"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220021"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "49836792"
   
 5. Введите `msbuild /target:publish`.  
   
-   Описанные выше действия создадут полное [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания приложения во вложенной папке проекта с именем P**бликация**. — CmdLineDemo.application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест развертывания. Папка CmdLineDemo_1.0.0.0 содержит файлы CmdLineDemo.exe и CmdLineDemo.exe.manifest, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест приложения. Setup.exe является загрузчиком, который по умолчанию настроен на установку [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Папка DotNetFX содержит распространяемые компоненты для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Это весь набор файлов, необходимых для развертывания приложения через Интернет или с помощью UNC-путь или CD/DVD.  
+   Описанные выше действия создадут полное [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания приложения во вложенной папке проекта с именем **публикации**. — CmdLineDemo.application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест развертывания. Папка CmdLineDemo_1.0.0.0 содержит файлы CmdLineDemo.exe и CmdLineDemo.exe.manifest, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифест приложения. Setup.exe является загрузчиком, который по умолчанию настроен на установку [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Папка DotNetFX содержит распространяемые компоненты для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Это весь набор файлов, необходимых для развертывания приложения через Интернет или с помощью UNC-путь или CD/DVD.  
   
 ## <a name="publishing-properties"></a>Свойства публикации  
  При публикации приложения в приведенных выше процедурах, следующие свойства будут вставлены в файле проекта с помощью мастера публикации. Эти свойства непосредственно влияют на способ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] создается приложение.  

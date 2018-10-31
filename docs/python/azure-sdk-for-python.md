@@ -1,7 +1,7 @@
 ---
 title: Пакет Azure SDK для Python
 description: Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Python на любой платформе.
-ms.date: 06/26/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545558"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100930"
 ---
 # <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
-Пакет Azure SDK для Python — это удобное средство для использования служб Microsoft Azure и управления ими. Оно поддерживает ОС Windows, Mac OSX и Linux.
+Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Windows, MacOS и Linux.
 
 ## <a name="installation"></a>Установка
 
@@ -37,13 +37,11 @@ pip install azure
 
 ## <a name="documentation"></a>Документация
 
-Документацию можно найти на сайте [azure-sdk-for-python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+В [Центре разработчиков для языка Python](https://docs.microsoft.com/python/azure/?view=azure-python) также содержится ряд полезных ресурсов, в том числе руководства.
 
-В [Центре разработчиков для языка Python](https://azure.microsoft.com/develop/python/) также содержится ряд полезных ресурсов, в том числе руководства.
-
-- Создание веб-приложений с помощью [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-- [Хранилище BLOB-объектов](/azure/storage/storage-python-how-to-use-blob-storage)
-- [Хранилище таблиц](/azure/storage/storage-python-how-to-use-table-storage)
+- Создание веб-приложений в "Службе приложений Azure" в Linux (/azure/app-service/containers/quickstart-python).
+- [Хранилище BLOB-объектов](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [Хранилище таблиц](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Хранилище очередей](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Очереди служебной шины](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
@@ -58,6 +56,6 @@ pip install azure
 
 ## <a name="support"></a>Поддержка
 
-Репозиторий Git для пакета SDK находится в каталоге [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+Репозиторий GitHub для пакета SDK находится в каталоге [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 Если при использовании пакета SDK у вас возникнут любые проблемы или вопросы, [оставьте в репозитории описание проблем](https://github.com/Azure/azure-sdk-for-python/issues).

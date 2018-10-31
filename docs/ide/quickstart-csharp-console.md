@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029339"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443419"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Краткое руководство. Создание консольного приложения на C# в Visual Studio
 
@@ -39,7 +39,7 @@ ms.locfileid: "47029339"
 
    ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**.
+     Если шаблона проекта **Console App (.NET Core)** (Консольное приложение (.NET Core)) нет, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**.
 
    ![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
@@ -77,7 +77,7 @@ ms.locfileid: "47029339"
 
 1. Нажмите кнопку **HelloWorld** на панели инструментов, чтобы запустить приложение в режиме отладки. (Или нажмите клавишу **F5**.)
 
-   ![Нажмите кнопку "HelloWorld", чтобы запустить программу из панели инструментов](../ide/media/csharp-console-hello-world-button.png)
+   ![Кнопка HelloWorld для запуска программы с панели инструментов](../ide/media/csharp-console-hello-world-button.png)
 
 1. Просмотрите результат в окне консоли.
 
@@ -98,4 +98,4 @@ ms.locfileid: "47029339"
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали кое-что новое о C# и интегрированной среде разработки Visual Studio. Дополнительные сведения см. по представленной ниже ссылке.
 
 > [!div class="nextstepaction"]
-> [Руководства по C#](/dotnet/csharp/tutorials/)
+> [Начало работы с консольным приложением на C# в Visual Studio](tutorial-csharp-console.md)

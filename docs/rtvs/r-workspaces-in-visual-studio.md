@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919303"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Управление выполнением кода R с помощью рабочих областей
 
@@ -37,7 +37,7 @@ ms.locfileid: "36235441"
 
 В списке локальных рабочих областей отображаются все интерпретаторы R, которые установлены на компьютере. 
 
-При запуске Visual Studio пытается автоматически определить все установленные версии R, обращаясь к разделу реестра **HKEY_LOCAL_MACHINE\Software\R-Core\**. Так как проверка выполняется только при запуске, после установки нового интерпретатора R нужно перезапустить Visual Studio.
+При запуске Visual Studio пытается автоматически определить все установленные версии R, обращаясь к разделу реестра **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Так как проверка выполняется только при запуске, после установки нового интерпретатора R нужно перезапустить Visual Studio.
 
 RTVS может не обнаружить интерпретатор R, установленный нестандартным способом (например, путем простого копирования файлов в папку вместо запуска установщика). В этом случае вручную создайте новую локальную рабочую область R следующим образом.
 

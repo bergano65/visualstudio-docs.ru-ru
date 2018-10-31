@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821114"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл *microsoft.common.tasks*, файл *microsoft.common.targets* и такие компиляторы, как *csc.exe* и *vbc.exe*. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.  
@@ -40,7 +40,7 @@ ms.locfileid: "39153164"
   
  Если значение `ToolsVersion` определено в файле проекта, MSBuild использует это значение для определения значений свойств набора инструментов, доступных для проекта. Одно из свойств набора инструментов — это `$(MSBuildToolsPath)`. Оно определяет путь к инструментам .NET Framework. Обязательным является только это свойство набора инструментов (или `$(MSBuildBinPath)`).  
   
- Начиная с Visual Studio 2013, версия набора инструментов MSBuild совпадает с номером версии Visual Studio. MSBuild по умолчанию соответствует этому набору инструментов в Visual Studio и в командной строке, независимо от версии набора инструментов, указанной в файле проекта.  Это поведение можно изменить с помощью флага /ToolsVersion. Дополнительные сведения см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ Начиная с Visual Studio 2013, версия набора инструментов MSBuild совпадает с номером версии Visual Studio. MSBuild по умолчанию соответствует этому набору инструментов в Visual Studio и в командной строке, независимо от версии набора инструментов, указанной в файле проекта.  Это поведение можно изменить с помощью флага -ToolsVersion. Дополнительные сведения см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
  В следующем примере MSBuild находит файл *Microsoft.CSharp.targets* с помощью зарезервированного свойства `MSBuildToolsPath`.  
   
@@ -61,9 +61,9 @@ ms.locfileid: "39153164"
 ## <a name="toolset-implementation"></a>Реализация набора инструментов  
  Реализация набора инструментов осуществляется с помощью выбора путей к различным инструментам, целям и задачам, из которых состоит набор инструментов. Инструменты в наборе, которые определяет MSBuild, поступают из следующих источников:  
   
--   из папки .NET Framework;  
+- из папки .NET Framework;  
   
--   из дополнительных управляемых инструментов.  
+- из дополнительных управляемых инструментов.  
   
   В число управляемых инструментов входят *ResGen.exe* и *TlbImp.exe*.  
 

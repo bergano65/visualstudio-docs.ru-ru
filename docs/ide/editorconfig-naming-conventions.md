@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626990"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443588"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -88,11 +88,14 @@ ms.locfileid: "42626990"
 
 Допустимые значения представлены в списке ниже. Вы можете указать несколько значений через запятую.
 
-- abstract или must_inherit
-- async
-- const
-- readonly
-- static или shared
+- `abstract` или `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` или `shared`
+
+   > [!NOTE]
+   > Если у вас есть правило именования для символов `static` или `shared`, то оно также применяется к символам `const`, так как они косвенно являются статическими. Если вы не хотите, чтобы правило именования `static` применялось к символам `const`, создайте отдельное правило именования для символов `const`.
 
 Свойство `required_modifiers` является необязательным. Если вы опустите это свойство, правило именования будет применяться ко всем модификаторам.
 

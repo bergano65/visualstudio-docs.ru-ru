@@ -1,26 +1,34 @@
 ---
 title: C++ IntelliSense
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124909"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879854"
 ---
 # <a name="visual-c-intellisense-features"></a>Возможности IntelliSense для Visual C++
 
 IntelliSense — это имя, присвоенное набору возможностей, которые делают процесс кодирования более удобным. Технология IntelliSense для C++ доступна для автономных файлов, а также для файлов, являющихся частью проекта C++. В кроссплатформенных проектах некоторые возможности IntelliSense доступны в файлах *.cpp* и *.c* в проекте с общим кодом даже в том случае, если вы находитесь в контексте Android или iOS.
 
-Для доступа к IntelliSense можно использовать пункты меню и сочетания клавиш, показанные на следующем изображении:
+В этой статье представлены общие сведения о функциях IntelliSense в C++. Сведения о том, как настроить проект для IntelliSense, а также устранять проблемы, см. в статье [Настройка проекта C++ для IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>Возможности IntelliSense в C++
+
+IntelliSense — это имя, присвоенное набору возможностей, которые делают процесс кодирования более удобным. У каждого человека существуют свои представления об удобстве, поэтому мы предоставили возможность включать и отключать почти все функции IntelliSense в разделе **Текстовый редактор** > **C/C++** > **Дополнительно** в диалоговом окне **Параметры**. Диалоговое окно **Параметры** доступно через пункт **Средства** в строке меню.
+
+![Диалоговое окно "Параметры" в меню "Средства"](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Для доступа к IntelliSense можно использовать пункты меню и сочетания клавиш, показанные на следующем изображении.
 
 ![Меню IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -100,4 +108,5 @@ IntelliSense — это имя, присвоенное набору возмож
 
 ## <a name="see-also"></a>См. также
 
-- [Использование IntelliSense](../ide/using-intellisense.md)
+- [Использование технологии IntelliSense](../ide/using-intellisense.md)
+- [Настройка проекта C++ для IntelliSense](visual-cpp-intellisense-configuration.md)
