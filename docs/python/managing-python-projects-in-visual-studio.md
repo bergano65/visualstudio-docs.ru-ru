@@ -1,7 +1,7 @@
 ---
 title: Управление проектами приложений Python
 description: Здесь объясняется, для чего нужны проекты в Visual Studio, демонстрируются способы создания проектов для кода Python и управления ими, а также описываются доступные для Python шаблоны проектов.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499023"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220473"
 ---
 # <a name="python-projects-in-visual-studio"></a>Проекты Python в Visual Studio
 

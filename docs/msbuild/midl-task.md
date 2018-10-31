@@ -28,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863859"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219813"
 ---
 # <a name="midl-task"></a>MIDL - задача
-Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 ## <a name="parameters"></a>Параметры  
  Ниже приводятся параметры задачи **MIDL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.  
@@ -47,7 +47,7 @@ ms.locfileid: "48863859"
   
      Добавляет каталог к списку каталогов, в которых производится поиск импортированных файлов IDL, в том числе файлов заголовков и файлов конфигурации приложений (ACF).  
   
-     Дополнительные сведения см. в описании параметра **/I** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/I** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **AdditionalOptions**  
   
@@ -55,7 +55,7 @@ ms.locfileid: "48863859"
   
      Список параметров командной строки. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров командной строки, не представленных каким-либо другим параметром задачи MIDL.  
   
-     Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ApplicationConfigurationMode**  
   
@@ -63,7 +63,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, то в IDL-файле разрешается использовать некоторые ключевые слова ACF.  
   
-     Дополнительные сведения см. в описании параметра **/app_config** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/app_config** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ClientStubFile**  
   
@@ -71,7 +71,7 @@ ms.locfileid: "48863859"
   
      Задает имя клиентского файла-заглушки для интерфейса RPC.  
   
-     Дополнительные сведения см. в описании параметра **/cstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ServerStubFile** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/cstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ServerStubFile** в этой таблице.  
   
 -   **CPreprocessOptions**  
   
@@ -79,7 +79,7 @@ ms.locfileid: "48863859"
   
      Задает параметры, которые следует передать препроцессору C/C++. Укажите параметры препроцессора, разделенные пробелом.  
   
-     Дополнительные сведения см. в описании параметра **/cpp_opt** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/cpp_opt** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **DefaultCharType**  
   
@@ -95,7 +95,7 @@ ms.locfileid: "48863859"
     |**Без знака**|**/char unsigned**|  
     |**ASCII**|**/char ascii7**|  
   
-     Дополнительные сведения см. в описании параметра **/char** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/char** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **DllDataFileName**  
   
@@ -103,7 +103,7 @@ ms.locfileid: "48863859"
   
      Задает имя создаваемого файла *dlldata* для прокси-библиотеки.  
   
-     Дополнительные сведения см. в описании параметра **/dlldata** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/dlldata** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **EnableErrorChecks**  
   
@@ -119,7 +119,7 @@ ms.locfileid: "48863859"
     |**Разрешить настройку**|**/error**|  
     |**Все**|**/error all**|  
   
-     Дополнительные сведения см. в описании параметра **/error** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/error** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ErrorCheckAllocations**  
   
@@ -127,7 +127,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, проверить ошибки нехватки памяти.  
   
-     Дополнительные сведения см. в описании параметра **/error allocation** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/error allocation** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ErrorCheckBounds**  
   
@@ -135,7 +135,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, проверить совместимо-переменные и переменные массивы на соответствие требованиям к размеру передаваемых данных.  
   
-     Дополнительные сведения см. в описании параметра **/error bounds_check** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/error bounds_check** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ErrorCheckEnumRange**  
   
@@ -151,7 +151,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, проверить, что в клиентские заглушки не передаются пустые указатели.  
   
-     Дополнительные сведения см. в описании параметра **/error ref** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/error ref** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ErrorCheckStubData**  
   
@@ -159,7 +159,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, создается заглушка, которая перехватывает исключения демаршалинга на стороне сервера и передает их обратно клиенту.  
   
-     Дополнительные сведения см. в описании параметра **/error stub_data** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/error stub_data** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **GenerateClientFiles**  
   
@@ -174,7 +174,7 @@ ms.locfileid: "48863859"
     |**None**|**/client none**|  
     |**Заглушка**|**/client stub**|  
   
-     Дополнительные сведения см. в описании параметра **/client** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/client** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **GenerateServerFiles**  
   
@@ -189,7 +189,7 @@ ms.locfileid: "48863859"
     |**None**|**/server none**|  
     |**Заглушка**|**/server stub**|  
   
-     Дополнительные сведения см. в описании параметра **/server** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/server** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **GenerateStublessProxies**  
   
@@ -197,7 +197,7 @@ ms.locfileid: "48863859"
   
      Если это значение`true`, создаются полностью преобразованные заглушки вместе с прокси-серверами без заглушек для объектных интерфейсов.  
   
-     Дополнительные сведения см. в описании параметра **/Oicf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/Oicf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **GenerateTypeLibrary**  
   
@@ -205,7 +205,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, файл библиотеки типов (с расширением *TLB*) не создается.  
   
-     Дополнительные сведения см. в описании параметра **/notlbf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/notlbf** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **HeaderFileName**  
   
@@ -213,7 +213,7 @@ ms.locfileid: "48863859"
   
      Определяет имя создаваемого заголовочного файла.  
   
-     Дополнительные сведения см. в описании параметра **/h** или **/header** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/h** или **/header** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -221,7 +221,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, задача MIDL выполняет поиск только в тех каталогах, которые заданы ключом **AdditionalIncludeDirectories**, игнорируя текущий каталог и каталоги, указанные в переменной среды INCLUDE.  
   
-     Дополнительные сведения см. в описании параметра **/no_def_idir** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/no_def_idir** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **InterfaceIdentifierFileName**  
   
@@ -229,7 +229,7 @@ ms.locfileid: "48863859"
   
      Определяет имя *файла идентификатора интерфейса* для COM-интерфейса. При этом переопределяется имя по умолчанию, полученное путем добавления "_i.c" к имени файла IDL.  
   
-     Дополнительные сведения см. в описании параметра **/iid** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/iid** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **LocaleID**  
   
@@ -237,7 +237,7 @@ ms.locfileid: "48863859"
   
      Определяет *идентификатор языкового стандарта*, позволяющий использовать международные символы во входных файлах, именах файлов и путях к каталогам. Укажите идентификатор языкового стандарта в виде десятичного числа.  
   
-     Дополнительные сведения см. в описании параметра **/lcid** [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Также см. раздел [Идентификаторы языкового стандарта](https://docs.microsoft.com/en-us/windows/desktop/intl/locale-identifiers).  
+     Дополнительные сведения см. в описании параметра **/lcid** [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Также см. раздел [Идентификаторы языкового стандарта](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).  
   
 -   **MkTypLibCompatible**  
   
@@ -245,7 +245,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, необходимо использовать формат входного файла, совместимый с *mktyplib.exe* версии 2.03.  
   
-     Дополнительные сведения см. в описании параметра **/mktyplib203** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также статью [Синтаксис файла ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) на веб-сайте MSDN.  
+     Дополнительные сведения см. в описании параметра **/mktyplib203** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также статью [Синтаксис файла ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) на веб-сайте MSDN.  
   
 -   **OutputDirectory**  
   
@@ -253,7 +253,7 @@ ms.locfileid: "48863859"
   
      Определяет каталог по умолчанию, в который задача MIDL записывает выходные файлы.  
   
-     Дополнительные сведения см. в описании параметра **/out** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/out** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **PreprocessorDefinitions**  
   
@@ -261,7 +261,7 @@ ms.locfileid: "48863859"
   
      Задает одно или несколько *определений*. Это имя и необязательное значение для передачи в препроцессор C (аналогично директиве `#define`). Форма каждой директивы определения — *имя [= значение]*.  
   
-     Дополнительные сведения см. в описании параметра **/D** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **UndefinePreprocessorDefinitions** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/D** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **UndefinePreprocessorDefinitions** в этой таблице.  
   
 -   **ProxyFileName**  
   
@@ -269,7 +269,7 @@ ms.locfileid: "48863859"
   
      Определяет имя прокси-файла интерфейса для COM-интерфейса.  
   
-     Дополнительные сведения см. в описании параметра **/proxy** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/proxy** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **RedirectOutputAndErrors**  
   
@@ -277,7 +277,7 @@ ms.locfileid: "48863859"
   
      Перенаправляет выходные данные, такие как сообщения об ошибках и предупреждения, со стандартного пути в указанный файл.  
   
-     Дополнительные сведения см. в описании параметра **/o** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/o** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **ServerStubFile**  
   
@@ -285,7 +285,7 @@ ms.locfileid: "48863859"
   
      Задает имя серверного файла-заглушки для интерфейса RPC.  
   
-     Дополнительные сведения см. в описании параметра **/sstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ClientStubFile** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/sstub** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **ClientStubFile** в этой таблице.  
   
 -   **Source**  
   
@@ -309,7 +309,7 @@ ms.locfileid: "48863859"
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     Дополнительные сведения см. в описании параметра **/Zp** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Параметр **/Zp** эквивалентен параметру **/pack** и более старому параметру **/align**.  
+     Дополнительные сведения см. в описании параметра **/Zp** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Параметр **/Zp** эквивалентен параметру **/pack** и более старому параметру **/align**.  
   
 -   **SuppressCompilerWarnings**  
   
@@ -317,7 +317,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, отменяются предупреждающие сообщения от задачи MIDL.  
   
-     Дополнительные сведения см. в описании параметра **/no_warn** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/no_warn** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **SuppressStartupBanner**  
   
@@ -325,7 +325,7 @@ ms.locfileid: "48863859"
   
      Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.  
   
-     Дополнительные сведения см. в описании параметра **/nologo** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/nologo** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **TargetEnvironment**  
   
@@ -342,7 +342,7 @@ ms.locfileid: "48863859"
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     Дополнительные сведения см. в описании параметра **/env** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/env** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **TrackerLogDirectory**  
   
@@ -363,7 +363,7 @@ ms.locfileid: "48863859"
     |**Новый формат**|**/newtlb**|  
     |**Старый формат**|**/oldtlb**|  
   
-     Дополнительные сведения см. в описании параметра **/newtlb** и **/oldtlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/newtlb** и **/oldtlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **TypeLibraryName**  
   
@@ -371,7 +371,7 @@ ms.locfileid: "48863859"
   
      Задает имя файла библиотеки типов.  
   
-     Дополнительные сведения см. в описании параметра **/tlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметра **/tlb** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -379,7 +379,7 @@ ms.locfileid: "48863859"
   
      Отменяет любые предыдущие определения имени, сделанные при передаче имени в препроцессор C (аналогично директиве `#undefine`). Укажите одно или несколько ранее определенных имен.  
   
-     Дополнительные сведения см. в описании параметра **/U** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **PreprocessorDefinitions** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/U** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **PreprocessorDefinitions** в этой таблице.  
   
 -   **ValidateAllParameters**  
   
@@ -387,7 +387,7 @@ ms.locfileid: "48863859"
   
      Если это значение `true`, создаются дополнительные сведения для проверки, которые используются при проведении проверок на целостность во время выполнения. Если это значение `false`, сведения для проверки не создаются.  
   
-     Дополнительные сведения см. в описании параметров **/robust** и **/no_robust** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
+     Дополнительные сведения см. в описании параметров **/robust** и **/no_robust** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
 -   **WarnAsError**  
   
@@ -397,7 +397,7 @@ ms.locfileid: "48863859"
   
      Если параметр задачи MIDL **WarningLevel** не определен, предупреждения на уровне, заданном по умолчанию (уровне 1), обрабатываются как ошибки.  
   
-     Дополнительные сведения см. в описании параметра **/WX** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarningLevel** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/WX** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarningLevel** в этой таблице.  
   
 -   **WarningLevel**  
   
@@ -415,7 +415,7 @@ ms.locfileid: "48863859"
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     Дополнительные сведения см. в описании параметра **/W** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarnAsError** в этой таблице.  
+     Дополнительные сведения см. в описании параметра **/W** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarnAsError** в этой таблице.  
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
