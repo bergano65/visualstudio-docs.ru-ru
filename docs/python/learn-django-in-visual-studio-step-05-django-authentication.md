@@ -1,4 +1,4 @@
----
+﻿---
 title: Руководство. Сведения о Django в Visual Studio — шаг 5
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio с описанием функций аутентификации, предоставляемых в шаблонах веб-проектов Django.
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627154"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120359"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
 
@@ -198,9 +198,9 @@ ms.locfileid: "42627154"
 
 1. По завершении остановите работу сервера и снова зафиксируйте изменения в системе управления версиями.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Вопрос. В чем назначение тега {% csrf_token %}, который отображается в элементах \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Вопрос. Для чего нужен тег {% csrf_token %}, который отображается в элементах \<form\>?
 
-Ответ. Тег `{% csrf_token %}` содержит встроенную в Django функцию [ защиты от подделки межсайтовых запросов (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (документация Django). Обычно этот тег добавляется в каждый элемент, для которого используются методы запросов POST, PUT или DELETE, такой как форма. С помощью функции отображения в шаблон (`render`) затем вставляются необходимые средства защиты.
+Ответ. Тег `{% csrf_token %}` содержит встроенную в Django функцию [защиты от подделки межсайтовых запросов (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (документация Django). Обычно этот тег добавляется в каждый элемент, для которого используются методы запросов POST, PUT или DELETE, такой как форма. С помощью функции отображения в шаблон (`render`) затем вставляются необходимые средства защиты.
 
 ## <a name="next-steps"></a>Следующие шаги
 

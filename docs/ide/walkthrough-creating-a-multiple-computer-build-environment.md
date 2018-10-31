@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951617"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -55,7 +55,7 @@ ms.locfileid: "46371073"
 
 1. Установите Visual Studio на главный компьютер.
 
-2. Установите .NET Framework 4.5 на компьютер построения. Чтобы проверить правильность установки, убедитесь, что значение в разделе реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version** начинается с "4.5".
+2. На компьютере сборки установите .NET Framework 4.5 или более поздней версии. Чтобы убедиться в том, что эта платформа установлена, просмотрите запись **Version** в подразделе реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full**. Она должна иметь значение **4.5** или выше.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Скопируйте файлы с главного компьютера на компьютер, используемый для сборки.
 
@@ -73,29 +73,29 @@ ms.locfileid: "46371073"
 
 1. Если у вас установлен только пакет SDK для Windows 8, рекурсивно скопируйте эти папки с главного компьютера на компьютер построения:
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    Если у вас также установлены другие комплекты для Windows 8...
+     Если у вас также установлены другие комплекты для Windows 8...
 
-    - Комплект средств для развертывания и оценки Microsoft Windows
+   - Комплект средств для развертывания и оценки Microsoft Windows
 
-    - Комплект разработки драйверов для Microsoft Windows
+   - Комплект разработки драйверов для Microsoft Windows
 
-    - Комплект сертификации оборудования для Microsoft Windows
+   - Комплект сертификации оборудования для Microsoft Windows
 
-    ...в папках *%ProgramFiles%\Windows Kits\8.0* могут присутствовать установленные файлы, которые перечислены на предыдущем шаге, причем их условиями лицензирования могут быть запрещены права на использование этих файлов на сервере построения. Проверьте условия лицензионного соглашения для каждого установленного комплекта для Windows и убедитесь, что соответствующие файлы можно копировать на компьютер построения. Если условия лицензии не разрешают использовать их на сервере построения, удалите эти файлы с компьютера построения.
+     ...в папках *%ProgramFiles%\Windows Kits\8.0* могут присутствовать установленные файлы, которые перечислены на предыдущем шаге, причем их условиями лицензирования могут быть запрещены права на использование этих файлов на сервере построения. Проверьте условия лицензионного соглашения для каждого установленного комплекта для Windows и убедитесь, что соответствующие файлы можно копировать на компьютер построения. Если условия лицензии не разрешают использовать их на сервере построения, удалите эти файлы с компьютера построения.
 
 2. Скопируйте рекурсивно следующие папки с главного компьютера на компьютер построения:
 
@@ -202,53 +202,53 @@ ms.locfileid: "46371073"
 
 2. Создайте следующие записи реестра на компьютере построения. Все эти записи представляют собой строки (Type == "REG_SZ" в реестре). Присвойте этим записям значения, аналогичные сопоставимым значениям на главном компьютере.
 
-    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
+   - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    На компьютере построения с архитектурой x64 также создайте следующую запись реестра, основываясь на соответствующих значениях на главном компьютере.
+   На компьютере построения с архитектурой x64 также создайте следующую запись реестра, основываясь на соответствующих значениях на главном компьютере.
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    Если компьютер построения имеет архитектуру x64 и вы хотите использовать 64-разрядную версию MSBuild, а также при использовании службы построения Team Foundation Server на компьютере x64, необходимо создать следующие записи реестра в собственном 64-разрядном реестре. При установке значений этих записей руководствуйтесь соответствующими значениями на главном компьютере.
+   Если компьютер сборки имеет архитектуру x64 и вы хотите использовать 64-разрядную версию MSBuild или если вы используете службы сборки Team Foundation Server на компьютере x64, создайте указанные ниже записи реестра в собственном 64-разрядном реестре. При установке значений этих записей руководствуйтесь соответствующими значениями на главном компьютере.
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>Задание переменных среды на компьютере, используемом для сборки
 
@@ -261,7 +261,7 @@ ms.locfileid: "46371073"
 В этой таблице описываются поддерживаемые аргументы для файла *vcvarsall.bat*:
 
 |Аргумент Vcvarsall.bat|Компилятор|Архитектура компьютера построения|Архитектура выходных данных сборки|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86 (по умолчанию)|Собственная 32-разрядная|x86, x64|x86|
 |x86_amd64|Кроссплатформенный компилятор x64|x86, x64|X64|
 |amd64|Собственная x64|X64|X64|
@@ -276,17 +276,17 @@ ms.locfileid: "46371073"
 
 2. При необходимости можно также добавить следующие пути в переменную PATH, чтобы упростить использование MSBuild для построения решений.
 
-    Если вы хотите использовать собственное 32-разрядное средство MSBuild, добавьте следующие пути к переменной PATH:
+   Если вы хотите использовать собственное 32-разрядное средство MSBuild, добавьте следующие пути к переменной PATH:
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    Если вы хотите использовать собственное 64-разрядное средство MSBuild, добавьте следующие пути к переменной PATH:
+   Если вы хотите использовать собственное 64-разрядное средство MSBuild, добавьте следующие пути к переменной PATH:
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере, используемом для сборки
 

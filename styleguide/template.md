@@ -330,7 +330,7 @@ docs.microsoft предоставляет несколько дополните�
 > [!div class="button"]
 [ссылки кнопок](../docs/core/index.md)
 
-Примеры кнопок в действии можно увидеть в [документации к Intune](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+Примеры кнопок в действии можно увидеть в [документации к Intune](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### <a name="selectors"></a>Селекторы
 
@@ -338,7 +338,7 @@ docs.microsoft предоставляет несколько дополните�
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-Примеры селекторов в действии можно увидеть в [документации к Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+Примеры селекторов в действии можно увидеть в [документации к Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### <a name="step-by-steps"></a>Пошаговые инструкции
 
@@ -346,4 +346,4 @@ docs.microsoft предоставляет несколько дополните�
 [Назад](../docs/csharp/expression-trees-interpreting.md)
 [Далее](../docs/csharp/expression-trees-translating.md)
 
-Примеры пошаговых инструкций можно увидеть в [документации по Advanced Threat Analytics](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+Примеры пошаговых инструкций можно увидеть в [документации по Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865366"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219917"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Диагностика проблем после развертывания, с помощью IntelliTrace
 
@@ -44,7 +44,7 @@ ms.locfileid: "49865366"
 
 Visual Studio 2017 не включает *BuildInfo.config* файл, который был устаревшей, а затем удалены. Чтобы выполнить отладку веб-приложений ASP.NET после развертывания, используйте один из следующих методов.
 
-* Для развертывания в Azure, используйте [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Для развертывания в Azure, используйте [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Если необходимо использовать IntelliTrace, откройте проект в Visual Studio и загружать файлы символов из соответствующего построения. Вы можете загрузить файлы символов из **модули** окна или путем настройки символов в **средства** > **параметры** > **Отладка**   >  **Символы**.
 

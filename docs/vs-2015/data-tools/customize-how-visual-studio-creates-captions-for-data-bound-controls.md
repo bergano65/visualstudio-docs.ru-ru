@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195615"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220190"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ ms.locfileid: "49195615"
   
 10. Щелкните правой кнопкой мыши **конструкторы данных** узел, а затем создайте **строковое значение** с именем `SmartCaptionSuffix`.  
   
-11. Щелкните правой кнопкой мыши **SmartCaptionExpression** , а выбрать**изменить**.  
+11. Щелкните правой кнопкой мыши **SmartCaptionExpression** , а выбрать **изменить**.  
   
 12. Введите регулярное выражение, которое должно **источников данных** окна для работы.  
   
-13. Щелкните правой кнопкой мыши **SmartCaptionReplacement** , а выбрать**изменить**.  
+13. Щелкните правой кнопкой мыши **SmartCaptionReplacement** , а выбрать **изменить**.  
   
 14. Введите замена строки в формате, как нужно для отображения шаблоны, соответствующие заданному регулярному выражению.  
   
-15. Щелкните правой кнопкой мыши **SmartCaptionSuffix** , а выбрать**изменить**.  
+15. Щелкните правой кнопкой мыши **SmartCaptionSuffix** , а выбрать **изменить**.  
   
 16. Введите любые символы, которые должны отображаться в конце заголовка.  
   
@@ -119,11 +119,11 @@ ms.locfileid: "49195615"
   
 10. Щелкните правой кнопкой мыши **конструкторы данных** узел, а затем создайте **строковое значение** с именем `SmartCaptionSuffix`.  
   
-11. Щелкните правой кнопкой мыши **SmartCaptionExpression** , а выбрать**изменить**.  
+11. Щелкните правой кнопкой мыши **SmartCaptionExpression** , а выбрать **изменить**.  
   
 12. Введите `(.*)` для значения. Это будет соответствовать всю строку.  
   
-13. Щелкните правой кнопкой мыши **SmartCaptionReplacement** , а выбрать**изменить**.  
+13. Щелкните правой кнопкой мыши **SmartCaptionReplacement** , а выбрать **изменить**.  
   
 14. Введите `$1` для значения. Это заменяет строку с соответствующим значением, являющийся всю строку, чтобы он не изменится.  
   

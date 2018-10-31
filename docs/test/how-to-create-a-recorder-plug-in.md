@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909781"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Практическое руководство. Создание подключаемого модуля записи
 
@@ -62,7 +62,7 @@ ms.locfileid: "39382069"
 
 9. Напишите код подключаемого модуля записи. Сначала создайте открытый класс, производный от класса <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Переопределите метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+10. Переопределите метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -87,11 +87,11 @@ ms.locfileid: "39382069"
 
 ### <a name="deploy-the-recorder-plug-in"></a>Развертывание подключаемого модуля записи
 
-Завершив компиляцию подключаемого модуля записи, необходимо поместить итоговую библиотеку DLL в одну из двух папок:
+Завершив компиляцию подключаемого модуля записи, поместите полученную библиотеку DLL в одно из двух расположений:
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[версия]\\[выпуск]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* версия *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [версия]\WebTestPlugins*
 
 > [!WARNING]
 > После копирования подключаемого модуля записи в одну из этих двух папок необходимо перезапустить Visual Studio для регистрации подключаемого модуля записи.
@@ -113,8 +113,8 @@ ms.locfileid: "39382069"
     >
     > Это происходит, если в один из подключаемых модулей внесены изменения кода и создана новая версия библиотеки DLL **(Version=0.0.0.0)**, однако подключаемый модуль по-прежнему ссылается на исходную версию подключаемого модуля. Чтобы устранить эту проблему, выполните следующие действия.
     >
-    > 1.  В ссылках проекта веб-тестов производительности и нагрузочных тестов появится предупреждение. Удалите и вновь добавьте ссылку на библиотеку DLL подключаемого модуля.
-    > 2.  Удалите подключаемый модуль из теста или соответствующего расположения, а затем снова добавьте его.
+    > 1. В ссылках проекта веб-тестов производительности и нагрузочных тестов появится предупреждение. Удалите и вновь добавьте ссылку на библиотеку DLL подключаемого модуля.
+    > 2. Удалите подключаемый модуль из теста или соответствующего расположения, а затем снова добавьте его.
 
 ## <a name="example"></a>Пример
 
@@ -123,7 +123,7 @@ ms.locfileid: "39382069"
 > [!NOTE]
 > Полный текст этого примера кода расположен в конце данного раздела.
 
- **Обзор примера кода**
+**Обзор примера кода**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Перебор объектов результата для поиска первой страницы с параметром ReportSession
 

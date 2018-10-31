@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856175"
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
@@ -63,11 +63,11 @@ ms.locfileid: "44384296"
 
 1. В папке **Загрузки** дважды щелкните файл начального загрузчика, имя которого совпадает с именем одного из следующих файлов или похоже на них:
 
-  * **vs_enterprise.exe** для Visual Studio Enterprise;
-  * **vs_professional.exe** для Visual Studio Professional;
-  * **vs_community.exe** для Visual Studio Community.  <br><br>
+   * **vs_enterprise.exe** для Visual Studio Enterprise;
+   * **vs_professional.exe** для Visual Studio Professional;
+   * **vs_community.exe** для Visual Studio Community.  <br><br>
 
-  Если появляется оповещение системы контроля учетных записей, нажмите кнопку **Да**.
+   Если появляется оповещение системы контроля учетных записей, нажмите кнопку **Да**.
 
 2. Мы попросим вас принять [условия лицензии](https://visualstudio.microsoft.com/license-terms/) и [заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement) корпорации Майкрософт. Нажмите кнопку **Продолжить**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "44384296"
 
 1. Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.
 
- ![Выбор рабочей нагрузки в диалоговом окне программы установки Visual Studio 2017](../install/media/install-visual-studio-community.png)
+   ![Выбор рабочей нагрузки в диалоговом окне программы установки Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
      Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.
 
@@ -130,15 +130,17 @@ ms.locfileid: "44384296"
 
 ## <a name="step-8---start-developing"></a>Шаг 8. Начало разработки
 
-1. Когда установка Visual Studio завершится, нажмите кнопку **Запустить**, чтобы [приступить к разработке в Visual Studio](../ide/get-started-developing-with-visual-studio.md).
+1. Когда установка Visual Studio завершится, нажмите кнопку **Запустить**, чтобы приступить к разработке в Visual Studio.
 
 2. В меню **Файл** выберите команду **Создать проект**.
 
-3. Выберите тип проекта. <br><br>
-   Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), щелкните **Установленные**, разверните узел **Visual C++**, а затем выберите тип проекта C++, который нужно создать. <br><br>
-   Чтобы [создать приложение C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), щелкните **Установленные**, разверните узел **Visual C#**, а затем выберите тип проекта C#, который нужно создать.
+3. Выберите тип проекта.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), нажмите **Установленные**, разверните узел **Visual C++**, а затем выберите тип проекта C++, который нужно создать.
+
+   Чтобы [создать приложение C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), нажмите **Установленные**, разверните узел **Visual C#**, а затем выберите тип проекта C#, который нужно создать.
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 

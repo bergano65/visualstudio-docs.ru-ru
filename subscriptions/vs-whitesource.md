@@ -9,12 +9,12 @@ description: Сведения об активации учебной подпи�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935782"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
@@ -22,49 +22,51 @@ ms.locfileid: "46542355"
 
 ## <a name="activation-steps"></a>Процедура активации
 
-1.  Чтобы активировать преимущество WhiteSource Bolt, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Чтобы активировать преимущество WhiteSource Bolt, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Найдите плитку "WhiteSource Bolt" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки преимущества.
-    > [!div class="mx-imgBorder"]
-    > ![Плитка преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-tile.png)
+2. Найдите плитку "WhiteSource Bolt" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки преимущества.
+   > [!div class="mx-imgBorder"]
+   > ![Плитка преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-tile.png)
 
-2.  Вы получите уведомления с кодом активации.  **Скопируйте код в буфер обмена**, а затем нажмите кнопку **Активировать**.
-    > [!div class="mx-imgBorder"]
-    > ![Код преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-code.png)
+3. Вы получите уведомления с кодом активации.  **Скопируйте код в буфер обмена**, а затем нажмите кнопку **Активировать**.
+   > [!div class="mx-imgBorder"]
+   > ![Код преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
 
-3.  На веб-странице WhiteSource нажмите кнопку **Активировать** или прокрутите вниз до раздела **Activate your account** (Активация учетной записи) на странице.
-    > [!div class="mx-imgBorder"]
-    > ![Активация преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+4. На веб-странице WhiteSource нажмите кнопку **Активировать** или прокрутите вниз до раздела **Activate your account** (Активация учетной записи) на странице.
+   > [!div class="mx-imgBorder"]
+   > ![Активация преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-4.  В разделе **Activate your account** (Активация учетной записи) страницы вам нужно будет выполнить четыре шага:
+5. В разделе **Activate your account** (Активация учетной записи) страницы вам нужно будет выполнить четыре шага:
 
-    - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
+   - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-    Нажмите зеленую кнопку **Установить**, если вы используете Azure DevOps Services, или кнопку **Загрузить** для Team Foundation Server.  В этом примере мы будем использовать Azure DevOps Services.
-    > [!div class="mx-imgBorder"]
-    > ![Установка расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-download-install.png)
+~~~
+Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Затем выберите нужную организацию Azure DevOps и нажмите кнопку **Подтвердить**.  (Если вы еще не настроили Azure DevOps Services, посетите страницу [Преимущества](https://my.visualstudio.com/benefits) и активируйте преимущество Azure DevOps Services.)
+- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-    > [!div class="mx-imgBorder"]
-    > ![Учетная запись для подтверждения преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - Вы получите подтверждение о том, что расширение установлено и готово к использованию.  Нажмите кнопку **Начать работу**, чтобы вернуться на страницу WhiteSource Bolt и продолжить работу.
-    > [!div class="mx-imgBorder"]
-    > ![Установка преимущества WhiteSource завершена](_img\vs-whitesource\vs-whitesource-install-complete.png)
+- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
+~~~
 
-5.  Откройте панель мониторинга проекта Azure DevOps, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
-    > [!div class="mx-imgBorder"]
-    > ![Добавление расширения для преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+5. Откройте панель мониторинга проекта Azure DevOps, откройте меню **Azure Pipelines** и выберите **WhiteSource Bolt**.
+   > [!div class="mx-imgBorder"]
+   > ![Добавление расширения для преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
 6. Вставьте код активации из плитки преимущества WhiteSource Bolt и нажмите кнопку **Активировать**. Каждый из кодов активации можно использовать для активации только одного проекта.
-    > [!div class="mx-imgBorder"]
-    > ![Код активации преимущества WhiteSource](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![Код активации преимущества WhiteSource](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
-7.  Активация успешно завершена. На вашей подписке осталось 180 дней.
+7. Активация успешно завершена. На вашей подписке осталось 180 дней.
 
-8.  В рамках сборки вам потребуется добавить расширение WhiteSource Bolt.  На [странице WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) опубликовано поясняющее видео.
+8. В рамках сборки вам потребуется добавить расширение WhiteSource Bolt.  На [странице WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) опубликовано поясняющее видео.
 
 9. После запуска сборки автоматически создаются следующие подробные отчеты и панели мониторинга:
     - Панель мониторинга уязвимостей системы безопасности
@@ -84,7 +86,7 @@ ms.locfileid: "46542355"
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-<sup>1</sup> *Включает следующую категорию: Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Partner (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
+<sup>1</sup> *Включает следующую категорию: Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

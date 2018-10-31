@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 0c7400338692b5f0eb8608c82d5d468eaec8ea1f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: dfdc1003cb09e17c911a2a065c7301123861bb50
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40100366"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49084323"
 ---
 ## <a name="get-support"></a>Техническая поддержка
 
@@ -16,6 +16,5 @@ ms.locfileid: "40100366"
 Ниже приведены несколько дополнительных вариантов:
 
 * Вы можете сообщить о проблемах с продуктом, используя средство [Сообщить о проблеме](../../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в IDE Visual Studio.
-* Оставить предложение по продукту можно на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Описание проблем с продуктом и их решение можно найти в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя свою учетную запись [GitHub](https://github.com/) в [обсуждении Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). 
+* Вы можете предлагать новые функции, просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя свою учетную запись [GitHub](https://github.com/) в [обсуждении Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).

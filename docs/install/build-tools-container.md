@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138655"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411018"
 ---
 # <a name="install-build-tools-into-a-container"></a>Установка Build Tools в контейнер
 
@@ -57,7 +57,7 @@ ms.locfileid: "43138655"
 
 **Windows 10**
 
-1. В области уведомлений [щелкните значок Docker для Windows правой кнопкой мыши](https://docs.docker.com/docker-for-windows/#docker-settings) и выберите пункт **Параметры...**.
+1. В области уведомлений [щелкните правой кнопкой мыши значок Docker для Windows](https://docs.docker.com/docker-for-windows/#docker-settings) и выберите пункт **Параметры**.
 2. [Выберите раздел "Управляющая программа"](https://docs.docker.com/docker-for-windows/#docker-daemon).
 3. [Нажмите кнопку **Основные**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file), чтобы переключиться в режим **Дополнительно**.
 4. Добавьте приведенное ниже свойство массива JSON, чтобы увеличить дисковое пространство до 120 ГБ (этого более чем достаточно для средств Build Tools с учетом накопления данных в будущем).

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833999"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219501"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проектов
 Типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использовать *фабрики проектов* для создания экземпляров объектов проекта. Фабрику проекта похоже на стандартный класс фабрики для создаваемых посредством функции CoCreateInstance COM-объектов. Тем не менее объекты проекта не создаваемых посредством функции CoCreateInstance; они могут создаваться только с помощью фабрики проектов.  
@@ -27,8 +27,6 @@ ms.locfileid: "49833999"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE вызывает фабрики проектов, которые реализованы в пакете VSPackage, когда пользователь загружает существующий проект или создает новый проект в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Новый объект проекта предоставляет интегрированную среду разработки достаточно сведений для заполнения **обозревателе решений**. Новый объект проекта также обеспечивает необходимые интерфейсы для поддержки всех соответствующих действий пользовательского интерфейса, инициированные интегрированной среды разработки.  
   
  Вы можете реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейса в класс в проекте. Как правило он располагается в свой собственный модуль.  
-  
- Пример реализации `IVsProjectFactory` интерфейсом, см. в разделе *PrjFac.cpp*, который содержится в [базовый проект](https://www.microsoft.com/download/details.aspx?id=55984) каталог образцов.  
   
  Проекты, поддерживающие статистически владелец должен сохранять ключ владельца в своем файле проекта. При <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> был вызван над проектом с помощью ключа владельца, принадлежащий проект преобразует его владелец ключа в фабрику проекта, затем вызывает GUID `CreateProject` метод данной фабрикой проекта, чтобы сделать фактическое создание.  
   

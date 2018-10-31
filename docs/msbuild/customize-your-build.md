@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857592"
 ---
 # <a name="customize-your-build"></a>Настройка сборки
 
@@ -34,6 +34,11 @@ ms.locfileid: "39175960"
 
 Но теперь вы можете добавить новое свойство в любой проект за один шаг, определив его в единственном файле *Directory.Build.props* в корневой папке с исходным кодом. При запуске MSBuild *Microsoft.Common.props* ищет файл *Directory.Build.props* в структуре каталогов (а *Microsoft.Common.targets* ищет файл *Directory.Build.targets*). Если он его находит, то импортирует свойство. Пользовательский файл *Directory.Build.props* содержит настройки персонализации для проектов в своем каталоге.
 
+> [!NOTE]
+> В файловых системах на основе Linux учитывается регистр. Убедитесь, что регистр имени файла Directory.Build.props полностью совпадает, иначе он не будет обнаружен во время сборки.
+>
+> Дополнительные сведения см. в [этой статье об ошибке на GitHub ](https://github.com/dotnet/core/issues/1991#issue-368441031).
+
 ### <a name="directorybuildprops-example"></a>Пример Directory.Build.props
 
 Например, если вы хотите предоставить всем проектам новую функцию Roslyn **/deterministic** через свойство `$(Deterministic)` в целевом объекте Roslyn `CoreCompile`, можно сделать следующее.
@@ -41,13 +46,13 @@ ms.locfileid: "39175960"
 1. Создайте в корне репозитория файл с именем *Directory.Build.props*.
 2. Добавьте в этот файл приведенный ниже XML-код.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. Запустите MSBuild. Уже существующие в проекте файлы импорта *Microsoft.Common.props* и *Microsoft.Common.targets* находят новый файл и импортируют его.
 
 ### <a name="search-scope"></a>Область поиска

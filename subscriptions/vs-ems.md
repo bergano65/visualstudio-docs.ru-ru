@@ -9,12 +9,12 @@ description: Сведения о преимуществе Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930119"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) в подписках Visual Studio
 
@@ -27,31 +27,32 @@ ms.locfileid: "44283292"
 
 Чтобы использовать EMS, нужно настроить учетную запись или войти с помощью имеющейся учетной записи.
 
-1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Найдите плитку "Enterprise Mobility + Security" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
-    > [!div class="mx-imgBorder"]
-    > ![Плитка преимущества EMS](_img\vs-ems\vs-ems-tile.png)
+2. Найдите плитку "Enterprise Mobility + Security" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
+   > [!div class="mx-imgBorder"]
+   > ![Плитка преимущества EMS](_img/vs-ems/vs-ems-tile.png)
 
-2.  На странице Enterprise Mobility + Security E5 вы можете войти с использованием существующей подписки или создать ее.  Чтобы создать подписку, введите требуемые данные и нажмите кнопку **Далее**.
-    > [!div class="mx-imgBorder"]
-    > ![Создание учетной записи для преимущества EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. На странице Enterprise Mobility + Security E5 вы можете войти с использованием существующей подписки или создать ее.  Чтобы создать подписку, введите требуемые данные и нажмите кнопку **Далее**.
+   > [!div class="mx-imgBorder"]
+   > ![Создание учетной записи для преимущества EMS](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. Создайте идентификатор пользователя и пароль.  Щелкните **Создать учетную запись** для продолжения.
-    > [!div class="mx-imgBorder"]
-    > ![Создание идентификатора пользователя для преимущества EMS](_img\vs-ems\vs-ems-userID-cropped.png)
+4. Создайте идентификатор пользователя и пароль.  Щелкните **Создать учетную запись** для продолжения.
+   > [!div class="mx-imgBorder"]
+   > ![Создание идентификатора пользователя для преимущества EMS](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  Затем укажите номер телефона, чтобы получить код подтверждения по телефону или в SMS.  Введите код и нажмите кнопку **Далее**.
-    > [!div class="mx-imgBorder"]
-    > ![Проверка преимущества EMS](_img\vs-ems\vs-ems-robot-cropped.png)
+5. Затем укажите номер телефона, чтобы получить код подтверждения по телефону или в SMS.  Введите код и нажмите кнопку **Далее**.
+   > [!div class="mx-imgBorder"]
+   > ![Проверка преимущества EMS](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  Следующая страница содержит вашу страницу входа и идентификатор пользователя.  Сохраните эти сведения для дальнейшего использования.  Щелкните **You’re ready to go…** (Все готово)
-    > [!div class="mx-imgBorder"]
-    > ![Учетная запись для преимущества EMS создана](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. Следующая страница содержит вашу страницу входа и идентификатор пользователя.  Сохраните эти сведения для дальнейшего использования.  Щелкните **You’re ready to go…** (Все готово)
+   > [!div class="mx-imgBorder"]
+   > ![Учетная запись для преимущества EMS создана](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  EMS требуется доступ к [порталу Microsoft Azure](https://azure.microsoft.com).  Выполните три действия, указанные на целевой странице EMS, чтобы активировать подписку Azure, добавить пользователей и настроить EMS.
+7. EMS требуется доступ к [порталу Microsoft Azure](https://azure.microsoft.com).  Выполните три действия, указанные на целевой странице EMS, чтобы активировать подписку Azure, добавить пользователей и настроить EMS.
 
 ## <a name="eligibility"></a>Право на участие
+
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
@@ -61,7 +62,7 @@ ms.locfileid: "44283292"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark.  Не включает следующие категории: Microsoft Valued Partner (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network (Professional).*
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark.  Не включает следующие категории: Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Не включает следующую категорию: Microsoft Partner Network (Professional)*
 

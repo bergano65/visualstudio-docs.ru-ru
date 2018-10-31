@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828889"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.  
@@ -172,7 +172,7 @@ ms.locfileid: "39179194"
   
 #### <a name="to-build-the-application"></a>Построение приложения  
   
-1.  В командной строке введите **msbuild helloworld.csproj /t:Build**.  
+1.  В командной строке введите **msbuild helloworld.csproj -t:Build**.  
   
      После этого для создания приложения "Helloworld" будет вызван компилятор Visual C# и построен целевой объект построения файла проекта Helloworld.  
   
@@ -183,7 +183,7 @@ ms.locfileid: "39179194"
 > [!NOTE]
 >  Чтобы получить более подробную информацию о построении, увеличьте уровень детализации. Чтобы задать "подробный" уровень детализации, введите в командной строке следующую команду:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>Добавление свойств построения  
  Для дальнейшего управления построением можно добавлять свойства построения к файлу проекта. Добавьте следующие свойства.  
@@ -259,7 +259,7 @@ ms.locfileid: "39179194"
   
 #### <a name="to-test-the-build-properties"></a>Тестирование свойств построения  
   
-1.  В командной строке введите **msbuild helloworld.csproj /t:Build**.  
+1.  В командной строке введите **msbuild helloworld.csproj -t:Build**.  
   
      После этого программа создаст папку *\Bin\\*, вызовет компилятор Visual C# для создания приложения *MSBuildSample* и разместит его в папку *\Bin\\*.  
   
@@ -334,9 +334,9 @@ ms.locfileid: "39179194"
   
 #### <a name="to-test-the-build-targets"></a>Тестирование целей построения  
   
-1.  В командной строке введите **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1.  В командной строке введите **msbuild helloworld.csproj -p:AssemblyName=Greetings**.  
   
-     Так как параметр **/t** для задания цели напрямую не использовался, MSBuild запускает цель "Сборка" по умолчанию. Параметр **/p** переопределяет свойство `AssemblyName` и присваивает ему новое значение `Greetings`. В результате в папке *\Bin\\* создается новое приложение *Greetings.exe*.  
+     Так как параметр **-t** для задания цели напрямую не использовался, MSBuild запускает стандартную цель "Сборка". Параметр **-p** переопределяет свойство `AssemblyName` и присваивает ему новое значение `Greetings`. В результате в папке *\Bin\\* создается новое приложение *Greetings.exe*.  
   
 2.  Чтобы убедиться, что в папке *\Bin\\* содержатся приложение *MSBuildSample* и новое приложение *Greetings*, введите **dir Bin**.  
   
@@ -344,11 +344,11 @@ ms.locfileid: "39179194"
   
      Должно появиться сообщение **Hello, world!** .  
   
-4.  Удалите приложение MSBuildSample, указав **msbuild helloworld.csproj /t:clean**.  
+4.  Удалите приложение MSBuildSample с помощью команды **msbuild helloworld.csproj -t:clean**.  
   
      Это запустит задачу "Очистить" и позволит удалить приложение со значением свойства `AssemblyName` по умолчанию — `MSBuildSample`.  
   
-5.  Удалите приложение Greetings, указав **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
+5.  Удалите приложение Greetings с помощью команды **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.  
   
      Это запустит задачу "Очистить" и позволит удалить приложение с заданным значением свойства **AssemblyName** по умолчанию — `Greetings`.  
   
@@ -382,11 +382,11 @@ ms.locfileid: "39179194"
     </Target>  
     ```  
   
-2.  Протестируйте цель "Сборка", указав в командной строке **msbuild /v:d**.  
+2.  Протестируйте цель "Сборка" с помощью команды **msbuild -v:d**.  
   
      Помните, что *helloworld.csproj* является файлом проекта по умолчанию, а построение — целью по умолчанию.  
   
-     Параметр **/v:d** указывает подробное описание для процесса сборки.  
+     Параметр **-v:d** указывает подробное описание для процесса сборки.  
   
      На экране должны появиться следующие строки:  
   

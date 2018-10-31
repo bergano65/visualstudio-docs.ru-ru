@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b6bf3a790d1e6d8d4165bb489176010a43e7c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5bffba1b2de64c142dd70990fb74429ad40269a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925090"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220099"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
 
@@ -122,7 +122,7 @@ ms.locfileid: "49925090"
 
 ## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных
 
-Этот шаг использует **конфигурации источника данных**мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
+Этот шаг использует **конфигурации источника данных** мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  В меню **Данные** выберите команду **Показать источники данных**.
 
