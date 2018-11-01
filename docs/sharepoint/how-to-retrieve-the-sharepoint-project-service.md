@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880602"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Практическое: извлечение службы проектов SharePoint
   Доступны службы проектов SharePoint в следующих типов решений:  
@@ -53,7 +53,7 @@ ms.locfileid: "37119909"
   
 1.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> интерфейсом, найдите <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод.  
   
-2.  Используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> свойство *параметр обращение* к службе.  
+2.  Используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> свойство *projectItemType* параметр обращение к службе.  
   
      В следующем примере кода демонстрируется использование службы проектов для записи сообщения в **вывода** окна и **список ошибок** окно в простое расширение **определение списка** элемент проекта.  
   
@@ -96,11 +96,11 @@ ms.locfileid: "37119909"
   
  В пакете VSPackage, вы можете запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта с помощью одного из следующих методов:  
   
--   <xref:System.IServiceProvider.GetService%2A> Метод управляемого пакета VSPackage, который является производным от <xref:Microsoft.VisualStudio.Shell.Package> класса. Дополнительные сведения см. в разделе [как: доступ к службе](../extensibility/how-to-get-a-service.md).  
+- <xref:System.IServiceProvider.GetService%2A> Метод управляемого пакета VSPackage, который является производным от <xref:Microsoft.VisualStudio.Shell.Package> класса. Дополнительные сведения см. в разделе [как: доступ к службе](../extensibility/how-to-get-a-service.md).  
   
--   Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод. Дополнительные сведения см. в разделе [использование GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
+- Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод. Дополнительные сведения см. в разделе [использование GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
- В расширении Visual Studio, имеющей доступ к <xref:EnvDTE80.DTE2> объект, вы можете запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> метод <xref:Microsoft.VisualStudio.Shell.ServiceProvider> объекта. Дополнительные сведения см. в разделе [Получение службы из объекта DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
+  В расширении Visual Studio, имеющей доступ к <xref:EnvDTE80.DTE2> объект, вы можете запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> метод <xref:Microsoft.VisualStudio.Shell.ServiceProvider> объекта. Дополнительные сведения см. в разделе [Получение службы из объекта DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
 ## <a name="see-also"></a>См. также
  [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
