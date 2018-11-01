@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675498"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670878"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.  
@@ -108,10 +108,10 @@ ms.locfileid: "35675498"
  [Microsoft Office разработки раздел библиотеки MSDN](http://go.microsoft.com/fwlink/?LinkId=149870)  
  Раздел библиотеки MSDN, где можно найти статьи и справочную документацию по разработке решений для нескольких версий Office (не только с помощью Visual Studio).  
   
- [Разработка приложений в Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Содержит ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.  
   
- [Программирование .NET framework в Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Программирование .NET framework в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Рассматриваются вопросы разработки приложений на платформе .NET Framework в Visual Basic и Visual С#.  
   
   

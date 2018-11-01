@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671967"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Практическое: программный поиск текста в диапазонах листа
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст может также быть любой из строки ошибок, которые могут отображаться в ячейке листа, такие как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [ошибка значений ячеек](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст может также быть любой из строки ошибок, которые могут отображаться в ячейке листа, такие как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [ошибка значений ячеек](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

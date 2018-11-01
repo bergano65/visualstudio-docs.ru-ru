@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670849"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости
   Средства разработки Office в Visual Studio предоставляют классы и конструкторы, которые обрабатывают многие сведения о реализации, когда вы используете их для создания настраиваемых панелей задач, настроек ленты и областей форм Outlook в надстройке VSTO. Однако при наличии особых потребностей вы также можете реализовать *интерфейс расширения* для каждого компонента.  
@@ -71,7 +71,7 @@ ms.locfileid: "49873978"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  Дополнительные сведения о реализации <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, см. в разделе [создавайте настраиваемые области задач в системе Office 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) в документации по Microsoft Office.  
+  Дополнительные сведения о реализации <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, см. в разделе [создавайте настраиваемые области задач в системе Office 2007](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) в документации по Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Пример переопределения метода RequestService  
  Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> для возврата экземпляра класса `TaskPaneHelper` из предыдущего примера кода. Он проверяет значение параметра *serviceGuid* , чтобы определить, какой интерфейс запрашивается, а затем возвращает объект, который реализует интерфейс.  

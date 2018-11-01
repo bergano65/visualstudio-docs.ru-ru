@@ -24,11 +24,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675240"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744916"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Автоматизация Excel с помощью расширенных объектов
   При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения*. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Excel (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Excel), такие как объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.  

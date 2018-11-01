@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672470"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Введите доступность функций по типам приложений и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:  
@@ -62,9 +62,9 @@ ms.locfileid: "49929859"
 |Предоставление объекта в надстройке VSTO другим решениям Microsoft Office.|Проекты надстроек VSTO.|[Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Следующие элементы управления ведущего приложения:<br /><br /> -Диаграммы<br />-ListObject<br />-NamedRange<br />-Элементы управления содержимым<br />-Bookmark|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для Word и Excel.|[Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)|  
 |Следующие элементы управления ведущего приложения:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Проекты уровня документа.|[Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)|  
-|Развертывание нескольких проектов.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Развертывание нескольких решений Office в составе одного установщика ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Развертывание нескольких проектов.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Развертывание нескольких решений Office в составе одного установщика ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Области формы Outlook.|Проекты надстроек VSTO для Outlook.|[Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Действия, выполняемые после развертывания.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Скопируйте документ на компьютер конечного пользователя после установки ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Действия, выполняемые после развертывания.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO.|[Пошаговое руководство: Скопируйте документ на компьютер конечного пользователя после установки ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Настройки ленты.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для следующих приложений:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 и InfoPath 2010 только)<br />-Outlook<br />-PowerPoint<br />-Проект<br />-Visio<br />-Word|[Обзор ленты](../vsto/ribbon-overview.md)|  
 |Визуальный конструктор документов.|Проекты уровня документа.|[Проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859373"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673072"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Развертывание решения Office с помощью ClickOnce
   Решение Office можно развернуть быстрее, если использовать ClickOnce. При публикации обновлений решение автоматически обнаруживает и устанавливает их. Однако для использования ClickOnce необходимо устанавливать решение отдельно для каждого пользователя компьютера. Таким образом, следует с помощью установщика Windows (*.msi*) Если несколько пользователей будут запускать решение на одном компьютере.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859373"
 9. Если решение предназначено для .NET Framework 4.5, также выберите **Visual Studio 2010 Tools for Office Runtime** "флажок".  
 
     > [!NOTE]  
-    >  По умолчанию этот флажок не отображается. Чтобы отобразить этот флажок, необходимо создать пакет начального загрузчика. См. в разделе [Создание пакета начального загрузчика для Office 2013 VSTO Add-in with Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  По умолчанию этот флажок не отображается. Чтобы отобразить этот флажок, необходимо создать пакет начального загрузчика. См. в разделе [Создание пакета начального загрузчика для Office 2013 VSTO Add-in with Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. В разделе **укажите место установки для необходимых компонентов**, выберите один из вариантов, которые отображаются, а затем выберите **ОК** кнопки.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859373"
 |Код ошибки|Определение|  
 |----------------|----------------|  
 |0|Решение было успешно установлено или удалено, или появилась справка VSTOInstaller.|  
-|-100|Один или несколько параметров командной строки недопустимы или заданы более одного раза. Чтобы получить дополнительные сведения, введите «vstoinstaller /?» или см. в разделе [создать пользовательский установщик для решения ClickOnce Office](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Один или несколько параметров командной строки недопустимы или заданы более одного раза. Чтобы получить дополнительные сведения, введите «vstoinstaller /?» или см. в разделе [создать пользовательский установщик для решения ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Один или несколько параметров командной строки недопустимы. Для получения дополнительных сведений введите команду "vstoinstaller /?".|  
 |-200|URI-адрес манифеста развертывания является недопустимой. Для получения дополнительных сведений введите команду "vstoinstaller /?".|  
 |-201|Не удалось установить решение, так как манифест развертывания недействителен. См. в разделе [манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859373"
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Публикация решений Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Практическое: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Практическое: установка решения ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Создание пользовательского установщика для решения office ClickOnce](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Практическое: публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Практическое: установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Создание пользовательского установщика для решения office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

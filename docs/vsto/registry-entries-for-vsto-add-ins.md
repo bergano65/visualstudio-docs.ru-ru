@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673020"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Записи реестра для надстроек VSTO
   При развертывании надстроек VSTO, созданных с помощью Visual Studio, необходимо создать определенный набор записей реестра. Эти записи реестра предоставляют сведения, позволяющие приложению Microsoft Office обнаружить и загрузить надстройку VSTO.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881785"
   
  Подобно другим записям реестра, общим для всех надстроек VSTO, Visual Studio создает записи реестра области формы на компьютере разработчика при выполнении сборки проекта. Если для развертывания надстройки VSTO используется ClickOnce, записи реестра автоматически создаются на компьютере конечного пользователя. При использовании установщика Windows для развертывания надстройки VSTO, необходимо настроить проект InstallShield Limited Edition для создания записей реестра на компьютере конечного пользователя.  
   
- Дополнительные сведения о записях реестра области формы, см. в разделе [укажите расположение области формы в настраиваемой формы](http://msdn.microsoft.com/library/office/ff868998.aspx). Дополнительные сведения об областях форм Outlook см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
+ Дополнительные сведения о записях реестра области формы, см. в разделе [укажите расположение области формы в настраиваемой формы](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Дополнительные сведения об областях форм Outlook см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Значения LoadBehavior  
  **LoadBehavior** запись в разделе *корневой*\Software\Microsoft\Office\\*имя_приложения*\Addins\\*надстройки Идентификатор* ключ содержит битовую комбинацию значений, определяющих поведение во время выполнения надстройки VSTO. Младший бит (значения 0 и 1) указывает, загружена ли надстройка VSTO в данный момент. Остальные биты указывают, когда приложение пытается загрузить надстройку VSTO.  
