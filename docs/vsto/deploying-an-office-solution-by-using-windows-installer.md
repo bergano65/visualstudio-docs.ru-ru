@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874921"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673059"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщика Windows
 Узнайте, как создать файл установщика Windows для решения Office при помощи [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -532,7 +532,7 @@ ms.locfileid: "49874921"
 
 
 ## <a name="see-also"></a>См. также  
-[Необходимые компоненты для развертывания решений Office](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Необходимые компоненты для развертывания решений Office](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
 [Записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Общие сведения о свойствах пользовательского документа](../vsto/custom-document-properties-overview.md)  

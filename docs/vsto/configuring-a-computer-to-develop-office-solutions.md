@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672230"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Настройка компьютера для разработки решений Office
 
@@ -44,7 +44,7 @@ ms.locfileid: "35673980"
 
      Чтобы убедиться в том, что эти средства установлены, запустите программу установки Visual Studio и выберите **изменить** кнопки. Установите флажок возле элемента **Инструменты разработчика Microsoft Office** и нажмите кнопку **Обновить** .
 
-- Убедитесь, что вы не используете версию Office, которое было доставлено, нажмите кнопку для запуска. См. в разделе [как: проверить, является ли Outlook в приложении нажмите кнопку для запуска на компьютере](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Убедитесь, что вы не используете версию Office, которое было доставлено, нажмите кнопку для запуска. См. в разделе [как: проверить, является ли Outlook в приложении нажмите кнопку для запуска на компьютере](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Убедитесь, что у вас только одна версия Microsoft Office.
 

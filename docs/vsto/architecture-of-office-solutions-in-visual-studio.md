@@ -18,11 +18,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675540"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744851"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Архитектура решений Office в Visual Studio
   В подразделах этого раздела приводятся сведения о том, как работают решения, созданные с помощью средств разработчика Office в Visual Studio.  

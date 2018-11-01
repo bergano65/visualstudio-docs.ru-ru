@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671733"
 ---
 # <a name="custom-xml-parts-overview"></a>Общие сведения о настраиваемых частях XML
   Для некоторых приложений Microsoft Office в документах можно внедрять XML-данные. При внедрении в документ XML-данных, называются *пользовательской XML-части*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325007"
   
  Дополнительные сведения о структуре Open XML и пользовательских XML-частей см. в следующих статьях.  
   
--   [Знакомство с форматами файлов Office (2007) Open XML](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Знакомство с форматами файлов Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Практическое: управлять документами в форматах Open XML](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Практическое: управлять документами в форматах Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Пошаговое руководство: Формат Word 2007 XML](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Пошаговое руководство: Формат Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Построение документов Word 2007 с помощью форматов Open XML](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Построение документов Word 2007 с помощью форматов Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Excel, Word и PowerPoint также позволяют использовать пользовательские XML-части в документах, которые были сохранены в форматах двоичных файлов. Однако, если документ сохранен в двоичном формате, для добавления или изменения пользовательских XML-частей необходимо запустить приложение Microsoft Office.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325007"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Изменения XML-частей без запуска приложения Office  
  Пользовательские XML-части можно добавлять или изменять без запуска Excel, PowerPoint или Word. Это удобно в том случае, если вам нужно работать с XML-данными в документе на компьютере, на котором приложения Microsoft Office не установлены, например на сервере.  
   
- Для добавления пользовательской XML-части без запуска Microsoft Office используйте классы в пакете SDK для Open XML. Эти классы предоставляют доступ к содержимому Open XML, характерному для документов Office. Например, Добавление пользовательской XML-части в книгу Excel, можно использовать [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) метод [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) объекта. Дополнительные сведения см. в разделе [Open XML SDK для](/office/open-xml/open-xml-sdk).  
+ Для добавления пользовательской XML-части без запуска Microsoft Office используйте классы в пакете SDK для Open XML. Эти классы предоставляют доступ к содержимому Open XML, характерному для документов Office. Например, Добавление пользовательской XML-части в книгу Excel, можно использовать <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> метод <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> объекта. Дополнительные сведения см. в разделе [Open XML SDK для](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Привязка пользовательских XML-частей к элементам управления содержимым Word  
  Элементы управления содержимым в решении Word можно привязать к элементам в пользовательской XML-части. Если элемент управления содержимым привязан к пользовательской XML-части, ее данные отображаются в пользовательском интерфейсе элемента управления содержимым. Если пользователь редактирует текст в элементе управления, автоматически обновляется соответствующий XML-элемент. Аналогичным образом, если значения элементов в пользовательских XML-частях изменяются, элементы управления содержимым, привязанные к XML-элементам, отображают новые данные. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325007"
  [Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Элементы управления содержимым](../vsto/content-controls.md)   
  [Пошаговое руководство: Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673085"
 ---
 # <a name="create-outlook-form-regions"></a>Создание областей форм Outlook
   Для настройки форм Microsoft Office Outlook можно использовать области формы. Visual Studio предоставляет расширенные средства, которые упрощают процесс проектирования, разработки и отладки областей формы.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866432"
   
 - Отображение настраиваемого пользовательского интерфейса в области чтения и в инспекторах.  
   
-  Дополнительные сведения см. в разделе [настройка страниц формы и областей форм](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Дополнительные сведения см. в разделе [настройка страниц формы и областей форм](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Добавление области формы Outlook в проект  
  Можно использовать **новая область формы Outlook** мастер позволяет создавать новую область формы или импортировать область формы, разработанной в Outlook. Кроме того, если у вас есть область формы, которую вы использовали в другом проекте надстройки Outlook VSTO, то эту область формы можно использовать повторно.  

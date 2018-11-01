@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673046"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Пошаговое руководство: Привязка элементов управления содержимым к пользовательским XML-частям
   В этом пошаговом руководстве показано, как привязать элементы управления содержимым в настройке на уровне документа для Word к XML-данным, хранящимся в документе.  
@@ -296,7 +296,7 @@ ms.locfileid: "49916755"
   
 9. Назовите файл **EmployeeControls.docx.zip**.  
   
-     **EmployeeControls.docx** документ сохраняется в формате Open XML. Переименовав этот документ с *ZIP-файл* расширение имени файла можно просмотреть содержимое документа. Дополнительные сведения об Open XML см. в технической статье [форматы файлов, знакомство с Office (2007) Open XML](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **EmployeeControls.docx** документ сохраняется в формате Open XML. Переименовав этот документ с *ZIP-файл* расширение имени файла можно просмотреть содержимое документа. Дополнительные сведения об Open XML см. в технической статье [форматы файлов, знакомство с Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Откройте **EmployeeControls.docx.zip** файла.  
   

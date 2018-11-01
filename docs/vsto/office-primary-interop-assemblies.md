@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c309dcfd78ae0181905f691e1c36f407e763fc93
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542485"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672994"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -38,7 +38,7 @@ ms.locfileid: "46542485"
   
 - [Полный список основных сборок взаимодействия для приложений Microsoft Office](#pialist)  
   
-Дополнительные сведения об основных сборках взаимодействия см. в разделе [основных сборок взаимодействия](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+Дополнительные сведения об основных сборках взаимодействия см. в разделе [основных сборок взаимодействия](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).  
 
 <a name="separateassemblies"></a> 
 

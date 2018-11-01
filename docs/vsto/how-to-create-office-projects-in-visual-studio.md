@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839041"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672773"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Практическое: Создание проектов Office в Visual Studio
   Можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для создания уровня документа и надстройками VSTO настроек для приложений Microsoft Office. Дополнительные сведения об этих типах проектов см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -87,7 +87,7 @@ ms.locfileid: "49839041"
 7. Нажмите кнопку **ОК** .
   
     > [!NOTE]  
-    >  Проекты надстроек всегда сохраняются при создании. Они не могут создаваться как временные проекты. Дополнительные сведения о временных проектах см. в разделе [временные проекты](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+    >  Проекты надстроек всегда сохраняются при создании. Они не могут создаваться как временные проекты. Дополнительные сведения о временных проектах см. в разделе [временные проекты](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ### <a name="to-create-a-document-level-customization-project"></a>Создание проекта настройки на уровне документа  
   

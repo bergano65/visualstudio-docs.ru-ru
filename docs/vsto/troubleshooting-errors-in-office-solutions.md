@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672955"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:  
@@ -124,7 +124,7 @@ ms.locfileid: "49917106"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Дополнительные сведения об интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Дополнительные сведения об интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Не удается Справочник по основной сборке ВЗАИМОДЕЙСТВИЯ Office классы в проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы основных сборок взаимодействия используют соглашение об именовании *objectname*класс, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.  
