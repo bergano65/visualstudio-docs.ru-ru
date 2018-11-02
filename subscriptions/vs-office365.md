@@ -9,12 +9,12 @@ description: Сведения о преимуществе Office 365, входя
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908396"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244467"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 в подписках Visual Studio
 
@@ -25,15 +25,24 @@ ms.locfileid: "49908396"
 Чтобы скачать и активировать Office 365, сделайте следующее:
 1. Войдите в подписку Visual Studio Enterprise.  
 2. Щелкните вкладку **Загрузки**.
-3. Вы увидите список файлов для загрузки. В списке Office выберите **Office Professional Plus 2019** (Office профессиональный плюс 2019).
-0. Вы увидите два профиля.  Профиль для Office 365 будет вторым.  Убедитесь, что первый и последний раскрывающиеся списки, которые определяют тип архитектуры и мультимедиа, отображаются как **UNK** и **OTH** соответственно.   
-0. Для установки Office 365 вам потребуется ключ продукта.  Щелкните ссылку **Получить ключ** под вторым профилем.
-0. Во всплывающем окне появятся все запрошенные вами ключи.  Чтобы получить новый ключ, щелкните **Claim key** (Запросить ключ).
+3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**. 
+   > [!div class="mx-imgBorder"]
+   > ![Скачиваемые файлы для Office 365](_img/vs-office365/vs-office365-downloads.png)
+0. Для установки Office 365 вам потребуется ключ продукта.  Щелкните ссылку **Получить ключ** под продуктом Office 365.
+   > [!div class="mx-imgBorder"]
+   > ![Получение ключа продукта Office 365](_img/vs-office365/vs-office365-get-key.png)
+0. Во всплывающем окне появятся все запрошенные вами ключи, а также доступные ключи.  Чтобы получить новый ключ, щелкните **Запросить ключ** под продуктом **Office профессиональный плюс 2019**.
+   > [!div class="mx-imgBorder"]
+   > ![Запрос ключа продукта Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Запишите ключ, который вы только что запросили. (Вы всегда можете вернуться к этому списку и просмотреть ключ.)
 0. Закройте всплывающее окно.
 0. Нажмите кнопку **Скачать**. 
+   > [!div class="mx-imgBorder"]
+   > ![Начало скачивания Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Выполните вход со своей учетной записью Майкрософт. (Если вы уже выполнили вход, нажмите кнопку **Далее**.)
 0. Введите ключ продукта, страну или регион и язык, а затем щелкните **Далее**.
+   > [!div class="mx-imgBorder"]
+   > ![Ввод ключа продукта Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Нажмите кнопку **Далее** еще раз.
 0. Нажмите кнопку **Установить**, чтобы установить приложения Office. 
 

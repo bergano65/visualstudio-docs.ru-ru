@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,18 +14,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 90b1f8209928922c388325163f37f0b1d7e983bb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 4f074e118d942aee2d56c30efea6854d4a0cc35e
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135611"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244415"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
 В этом введении в использование Visual Studio (которое займет от 5 до 10 минут) с помощью шаблона проекта ASP.NET и языка программирования C# будет создано простое веб-приложение "Hello, World".
 
+## <a name="before-you-begin"></a>Подготовка к работе
+
+### <a name="install-visual-studio"></a>Установка Visual Studio
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+
+### <a name="update-visual-studio"></a>Обновление Visual Studio
+
+Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
+
+### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
+
+В этом кратком руководстве содержатся снимки экрана, использующие темную тему. Если вы не используете темную тему, но хотите переключиться на нее, см. страницу [Персонализация интегрированной среды разработки и редактора Visual Studio](quickstart-personalize-the-ide.md).
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -40,7 +52,7 @@ ms.locfileid: "46135611"
    ![Создание проекта веб-приложения ASP.NET Core для C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > Если категория шаблона проекта **.NET Core** отсутствует, выберите слева ссылку **Открыть Visual Studio Installer**.
+   > Если категория шаблона проекта **.NET Core** отсутствует, выберите слева ссылку **Открыть Visual Studio Installer**. (В зависимости от параметров отображения может потребоваться выполнить прокрутку.)
    >
    > ![Открыть Visual Studio Installer в диалоговом окне "Новый проект"](../ide/media/open-visual-studio-installer.png)
    >
@@ -50,7 +62,12 @@ ms.locfileid: "46135611"
    >
    > (Возможно, перед тем как продолжить установку рабочей нагрузки, придется закрыть Visual Studio.)
 
-1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** появилось **ASP.NET Core 2.0**. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
+1. В верхнем раскрывающемся меню диалогового окна **Создание веб-приложения ASP.NET Core** выберите **ASP.NET Core 2.0** или более позднюю версию.
+
+   > [!NOTE]
+   > Если **ASP.NET Core 2.0** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
+
+1. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
 
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/quickstart-aspnet-core20.png)
 
@@ -91,7 +108,7 @@ ms.locfileid: "46135611"
 1. Нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
 
    > [!NOTE]
-   > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"**, закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
+   > Если выводится сообщение об ошибке с текстом **Не удается подключиться к веб-серверу IIS Express** или сообщение об ошибке, где упоминается SSL-сертификат, закройте Visual Studio. После этого откройте Visual Studio с помощью пункта **Запуск от имени администратора** контекстного меню. Затем снова запустите приложение.
 
 1. В верхней части веб-страницы выберите **О программе**.
 
@@ -114,4 +131,4 @@ ms.locfileid: "46135611"
 
 ## <a name="see-also"></a>См. также
 
-[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](../deployment/quickstart-deploy-to-azure.md)

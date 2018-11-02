@@ -2,7 +2,7 @@
 title: Начало работы с C# и ASP.NET Core в Visual Studio
 description: Пошаговые инструкции по созданию веб-приложения ASP.NET Core в Visual Studio на C#.
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284054"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244493"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Руководство. Начало работы с C# и ASP.NET Core в Visual Studio
 
 В этом руководстве по разработке на языке C# с помощью ASP.NET Core в Visual Studio вы создадите веб-приложение ASP.NET Core на C#, внесете в него изменения, изучите некоторые возможности интегрированной среды разработки, после чего запустите приложение.
 
+## <a name="before-you-begin"></a>Подготовка к работе
+
+### <a name="install-visual-studio"></a>Установка Visual Studio
+
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+
+### <a name="update-visual-studio"></a>Обновление Visual Studio
+
+Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
+
+### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
+
+В этом руководстве содержатся снимки экрана, использующие темную тему. Если вы не используете темную тему, но хотите переключиться на нее, см. страницу [Персонализация интегрированной среды разработки и редактора Visual Studio](quickstart-personalize-the-ide.md).
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -46,7 +58,7 @@ ms.locfileid: "49284054"
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Способ 1. Диалоговое окно "Новый проект"
 
-1. Выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**.
+1. Выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**. (В зависимости от параметров отображения может потребоваться выполнить прокрутку.)
 
    ![Выберите ссылку "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ ms.locfileid: "49284054"
 1. Убедитесь, что в верхнем раскрывающемся меню отображается **ASP.NET Core 2.1**. Затем нажмите **ОК**.
 
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > Если **ASP.NET Core 2.0** или более поздняя версия не отображается в верхнем раскрывающемся меню, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../install/update-visual-studio.md).
 
 ### <a name="about-your-solution"></a>Сведения о решении
 

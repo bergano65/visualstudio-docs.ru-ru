@@ -8,18 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800624"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219761"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>"Параметры", "Текстовый редактор", JavaScript, "Форматирование"
 Используйте страницу **Форматирование** диалогового окна **Параметры** для задания параметров форматирования для кода в редакторе кода. Чтобы открыть эту страницу, выберите в меню **Сервис** пункт **Параметры**, а затем разверните узел **Текстовый редактор**, **JavaScript** и **Форматирование**.

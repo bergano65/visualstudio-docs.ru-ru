@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089442"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750771"
 ---
 # <a name="pass-data-between-forms"></a>Передача данных между формами
+
 Это пошаговое руководство содержит инструкции по передаче данных из одной формы в другую. Использование таблиц customers и orders из Northwind, одна форма позволяет пользователям выбрать клиента и второй форме отображаются заказы выбранного клиента. В этом пошаговом руководстве показано, как создать метод на второй форме, которая получает данные из первой формы.
 
 > [!NOTE]
->  Здесь демонстрируется всего один способ передачи данных между формами. Существуют другие способы передать данные в форму, включая создание второй конструктор для получения данных, или создание общедоступного свойства, которое можно задать с помощью данных из первой формы.
+> Здесь демонстрируется всего один способ передачи данных между формами. Существуют другие способы передать данные в форму, включая создание второй конструктор для получения данных, или создание общедоступного свойства, которое можно задать с помощью данных из первой формы.
 
- В данном пошаговом руководстве представлены следующие задачи.
+В данном пошаговом руководстве представлены следующие задачи.
 
 -   Создание нового **приложение Windows Forms** проекта.
 
@@ -49,6 +50,7 @@ ms.locfileid: "37089442"
 -   Передача данных между формами.
 
 ## <a name="prerequisites"></a>Предварительные требования
+
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
 
 1.  Если у вас нет SQL Server Express LocalDB, установите его из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. В установщике Visual Studio, SQL Server Express LocalDB можно установить как часть **хранение и обработка данных** рабочей нагрузки, или в качестве отдельного компонента.
@@ -65,9 +67,7 @@ ms.locfileid: "37089442"
 
        Через некоторое время выполнения запроса отобразятся и создания базы данных Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Создание приложения Windows Forms
-
-### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows
+## <a name="create-the-windows-forms-app-project"></a>Создайте проект приложения Windows Forms
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
@@ -80,8 +80,6 @@ ms.locfileid: "37089442"
      **PassingDataBetweenForms** проект создан и добавлен **обозревателе решений**.
 
 ## <a name="create-the-data-source"></a>Создание источника данных
-
-### <a name="to-create-the-data-source"></a>Создание источника данных
 
 1.  В меню **Данные** выберите команду **Показать источники данных**.
 
@@ -108,7 +106,8 @@ ms.locfileid: "37089442"
      **NorthwindDataSet** добавляется в проект и **клиентов** и **заказы** таблицы отображаются в **источников данных** окна.
 
 ## <a name="create-the-first-form-form1"></a>Создание первой формы (Form1)
- Можно создать сетку с привязкой к данным ( <xref:System.Windows.Forms.DataGridView> управления), путем перетаскивания **клиентов** узел из **источников данных** окна в форму.
+
+Можно создать сетку с привязкой к данным ( <xref:System.Windows.Forms.DataGridView> управления), путем перетаскивания **клиентов** узел из **источников данных** окна в форму.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Создание сетки с привязкой к данным на форме
 
@@ -116,9 +115,9 @@ ms.locfileid: "37089442"
 
      Объект <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям, отображаются на **Form1**. Объект [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.
 
-## <a name="create-the-second-form-form2"></a>Создание второй формы (Form2)
+## <a name="create-the-second-form"></a>Создание второй формы
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Порядок создания второй формы, предназначенной для передачи данных
+Создание второй формы для передачи данных.
 
 1.  В меню **Проект** выберите пункт **Добавить форму Windows**.
 
@@ -132,9 +131,9 @@ ms.locfileid: "37089442"
 
      **OrdersBindingNavigator** исчезнет из **Form2**.
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Добавление запроса адаптера таблицы на форму Form2 для загрузки заказов выбранного клиента на форме Form1
+## <a name="add-a-tableadapter-query"></a>Добавление запроса адаптера таблицы
 
-### <a name="to-create-a-tableadapter-query"></a>Для создания запроса адаптера таблицы
+Добавление запроса адаптера таблицы на форму Form2 для загрузки заказов выбранного клиента на форме Form1.
 
 1.  Дважды щелкните **NorthwindDataSet.xsd** файл **обозревателе решений**.
 
@@ -153,7 +152,7 @@ ms.locfileid: "37089442"
     ```
 
     > [!NOTE]
-    >  Проверьте правильность синтаксиса параметров для своей базы данных. Например, в Microsoft Access предложение WHERE должно выглядеть следующим образом: `WHERE CustomerID = ?`.
+    > Проверьте правильность синтаксиса параметров для своей базы данных. Например, в Microsoft Access предложение WHERE должно выглядеть следующим образом: `WHERE CustomerID = ?`.
 
 6.  Нажмите кнопку **Далее**.
 
@@ -165,8 +164,6 @@ ms.locfileid: "37089442"
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Создание метода на форме Form2 для передачи данных
 
-### <a name="to-create-a-method-to-pass-data-to"></a>Порядок создания метода, предназначенного для передачи данных
-
 1.  Щелкните правой кнопкой мыши **Form2**и выберите **Просмотр кода** открыть **Form2** в **редактор кода**.
 
 2.  Добавьте следующий код, чтобы **Form2** после `Form2_Load` метод:
@@ -175,8 +172,6 @@ ms.locfileid: "37089442"
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Создание метода на форме Form1 для передачи данных и отображения Form2
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>Порядок создания метода, предназначенного для передачи данных в Form2
 
 1.  В **Form1**, щелкните правой кнопкой мыши сетку данных клиентов и нажмите кнопку **свойства**.
 
@@ -191,9 +186,7 @@ ms.locfileid: "37089442"
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>Запуск приложения
-
-### <a name="to-run-the-application"></a>Запуск приложения
+## <a name="run-the-app"></a>Запуск приложения
 
 -   Нажмите клавишу **F5** для запуска приложения.
 

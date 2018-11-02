@@ -2,7 +2,7 @@
 title: Начало работы с консольными приложениями на C# в Visual Studio
 description: Ознакомьтесь с пошаговыми инструкциями по созданию консольного приложения на C# в Visual Studio.
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859514"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244376"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Руководство. Начало работы с консольным приложением на C# в Visual Studio
 
@@ -61,11 +61,7 @@ ms.locfileid: "47859514"
 
 ## <a name="create-a-c-console-calculator-app"></a>Создание приложения "C# Console Calculator" (Консольный калькулятор на C#)
 
-1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
-
-1. В левой области диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *Calculator*.
-
-1. Введите или вставьте следующий код в редактор кода.
+1. После создания **консольного приложения на C#** введите или вставьте следующий код в редактор кода:
 
     ```csharp
     using System;
