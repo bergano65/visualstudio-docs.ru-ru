@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943106"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Пошаговое руководство по Созданию пакета расширения
+# <a name="walkthrough-create-an-extension-pack"></a>Пошаговое руководство. Создание пакета расширения
 
 Пакет расширения — это набор расширений, которые могут быть установлены вместе. Пакеты расширения позволяют легко поделиться избранные расширения с другими пользователями или объединить набор расширений для конкретного сценария.
   
@@ -34,14 +34,14 @@ ms.locfileid: "39409917"
 
 Шаблон элемента Extension Pack создает пакет расширения с помощью набора расширений, которые могут быть установлены вместе.
   
-1. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** и нажмите кнопку **расширяемости**. В **шаблоны** области выберите **проект VSIX**. В поле **Имя** введите `Test Extension Pack`. Нажмите кнопку **ОК**.  
+1. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** и нажмите кнопку **расширяемости**. В **шаблоны** области выберите **проект VSIX**. В поле **Имя файла** введите `Test Extension Pack`. Нажмите кнопку **ОК**.  
   
 2. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. Перейдите в Visual C# **расширяемости** узел и выберите **пакет расширений**. Оставьте имя файла по умолчанию (ExtensionPack1.cs).  
   
 3. Добавляется файл ExtensionPack1.vsext, который содержит следующий код
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ ms.locfileid: "39409917"
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. Vsixid расширения для включения в пакет расширений можно найти на [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Найдите нужное расширение и нажмите кнопку на **идентификатор копирования**. Вы можете обновить существующий **vsixId** выше файл или добавить другое расширение в список.
 

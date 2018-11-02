@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848661"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Основы UX для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303326"
 ### <a name="hyperlink-anti-patterns"></a>Антишаблоны гиперссылки  
  Следующий пример содержит два антишаблоны.  
   
-1.  Передний план, включение красный при наведении курсора мыши означает, что правильный цвет общей службой шрифта не используется.  
+1. Передний план, включение красный при наведении курсора мыши означает, что правильный цвет общей службой шрифта не используется.  
   
-2.  «Дополнительные сведения» не является текст, соответствующий ссылку на раздел общих понятий. Его целью является не. Дополнительные сведения можно понимать последствия по своему выбору.  
+2. «Дополнительные сведения» не является текст, соответствующий ссылку на раздел общих понятий. Его целью является не. Дополнительные сведения можно понимать последствия по своему выбору.  
   
- ![HyperLink anti&#45;шаблоны](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![HyperLink anti&#45;шаблоны](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **Без учета службы цветов, используя «Подробнее» гиперссылок являются признаком дурного Visual Studio.**  
+   **Без учета службы цветов, используя «Подробнее» гиперссылок являются признаком дурного Visual Studio.**  
   
- **Лучшие решения:** представляют вопрос, пользователь может возникнуть вопрос, щелкнув ссылку.  
+   **Лучшие решения:** представляют вопрос, пользователь может возникнуть вопрос, щелкнув ссылку.  
   
 -   Как работают службы Windows Azure?  
   

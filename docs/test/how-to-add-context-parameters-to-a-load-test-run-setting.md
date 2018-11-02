@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905906"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Практическое руководство. Добавление контекстных параметров к параметрам запуска нагрузочного теста
 
@@ -36,19 +36,19 @@ ms.locfileid: "39203758"
 
 Кроме того, назначая параметру контекста разные значения с использованием одинакового имени в различных наборах параметров запуска нагрузочного теста, можно выполнять нагрузочный тест в разных средах:
 
--   Набор параметров запуска корпоративного промежуточного веб-сервера: параметр контекста `WebServer1=http://CorporateStagingWebServer`
+- Набор параметров запуска корпоративного промежуточного веб-сервера: параметр контекста `WebServer1=http://CorporateStagingWebServer`
 
--   Набор параметров запуска корпоративного рабочего веб-сервера: параметр контекста `WebServer1=http://CorporateProductionWebServer`
+- Набор параметров запуска корпоративного рабочего веб-сервера: параметр контекста `WebServer1=http://CorporateProductionWebServer`
 
- **Изменение набора параметров запуска из командной строки**
+  **Изменение набора параметров запуска из командной строки**
 
- Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующие команды:
+  Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующие команды:
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- - и -
+  - и -
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Чтобы добавить контекстный параметр в набор параметров запуска
 

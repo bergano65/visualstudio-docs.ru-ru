@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Документы Microsoft
+title: IDebugEngine2::SetMetric | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12e323fe248bc022bcbbd8b9bdd0e628c27a97e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02f7d533cfc64ad7a1e3bfd342a2be56a5c6cd7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935956"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Этот метод задает значение реестра, известных как метрики.  
+Этот метод задает значение реестра, известный как метрики.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,10 +49,10 @@ int SetMetric(
  [in] Указывает значение метрики.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Метрика — это значение реестра, используемый для изменения поведения модуля отладки или для объявления поддерживаемые функции. Этот метод может перенаправлять вызов соответствующей форме для [SDK вспомогательные методы для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetMetric`.  
+ Метрика — это значение реестра, чтобы изменить поведение модуля отладки или для объявления поддерживаемые функции. Этот метод можно пересылать подходящей формой [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetMetric`.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

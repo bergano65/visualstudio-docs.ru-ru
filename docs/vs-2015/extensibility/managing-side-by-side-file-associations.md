@@ -15,12 +15,12 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddcca5b79c858ab9331202b36d5ea9ff1ddca60f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889403"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Управление параллельными сопоставлениями файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ ms.locfileid: "49253985"
 ## <a name="facing-the-problem"></a>С выходом проблемы  
  Если требуется несколько пакетов VSPackage side-by-side использовать то же самое расширение, необходимо выбрать версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , связанном с расширением. Ниже приведены два варианта:  
   
--   Откройте файл в последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установлен на компьютере пользователя.  
+- Откройте файл в последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установлен на компьютере пользователя.  
   
-     В этом случае установщик отвечает за определение последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] включительно, в записи реестра для сопоставления файлов. В пакет установщика Windows, можно включить настраиваемые действия, чтобы задать свойство, указывающее последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   В этом случае установщик отвечает за определение последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] включительно, в записи реестра для сопоставления файлов. В пакет установщика Windows, можно включить настраиваемые действия, чтобы задать свойство, указывающее последнюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    > [!NOTE]
-    >  В данном контексте «latest» означает «последнюю поддерживаемую версию.» Эти записи не может автоматически определить одной из следующих версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Записи в [обнаружение требования к системе](../extensibility/internals/detecting-system-requirements.md) и в [команды, должен быть запуска после установки](../extensibility/internals/commands-that-must-be-run-after-installation.md) похожи на те из них, представленные здесь и необходимы для поддержки дополнительных версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  > [!NOTE]
+  >  В данном контексте «latest» означает «последнюю поддерживаемую версию.» Эти записи не может автоматически определить одной из следующих версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Записи в [обнаружение требования к системе](../extensibility/internals/detecting-system-requirements.md) и в [команды, должен быть запуска после установки](../extensibility/internals/commands-that-must-be-run-after-installation.md) похожи на те из них, представленные здесь и необходимы для поддержки дополнительных версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Следующие строки в таблице CustomAction свойства DEVENV_EXE_LATEST как свойство, задаваемое AppSearch и RegLocator таблицы, описанные в [команды, должен быть запуска после установки](../extensibility/internals/commands-that-must-be-run-after-installation.md). Строки в таблице InstallExecuteSequence запланировать пользовательские действия в начале последовательности execute. Значения в столбец марки условия работы логики:  
+   Следующие строки в таблице CustomAction свойства DEVENV_EXE_LATEST как свойство, задаваемое AppSearch и RegLocator таблицы, описанные в [команды, должен быть запуска после установки](../extensibility/internals/commands-that-must-be-run-after-installation.md). Строки в таблице InstallExecuteSequence запланировать пользовательские действия в начале последовательности execute. Значения в столбец марки условия работы логики:  
   
-    -   Visual Studio .NET 2002 является последней версией, если он присутствует только в версии.  
+  - Visual Studio .NET 2002 является последней версией, если он присутствует только в версии.  
   
-    -   Visual Studio .NET 2003 является последней версией, только в том случае, если он присутствует и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] отсутствует.  
+  - Visual Studio .NET 2003 является последней версией, только в том случае, если он присутствует и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] отсутствует.  
   
-    -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] является последней версией, если он присутствует только в версии.  
+  - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] является последней версией, если он присутствует только в версии.  
   
-     Конечным результатом является то, что DEVENV_EXE_LATEST содержит путь к последней версии devenv.exe.  
+    Конечным результатом является то, что DEVENV_EXE_LATEST содержит путь к последней версии devenv.exe.  
   
-    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Строки таблицы CustomAction, определить последнюю версию Visual Studio  
+  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Строки таблицы CustomAction, определить последнюю версию Visual Studio  
   
-    |Действие|Тип|Исходный код|целевого объекта|  
-    |------------|----------|------------|------------|  
-    |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
-    |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
-    |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
+  |Действие|Тип|Исходный код|целевого объекта|  
+  |------------|----------|------------|------------|  
+  |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
+  |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
+  |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
   
-    ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Строки таблицы InstallExecuteSequence, определить последнюю версию Visual Studio  
+  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Строки таблицы InstallExecuteSequence, определить последнюю версию Visual Studio  
   
-    |Действие|Условие|Sequence|  
-    |------------|---------------|--------------|  
-    |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 AND NOT (DEVENV_EXE_2003 ИЛИ DEVENV_EXE_2005)|410|  
-    |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 И НЕ DEVENV_EXE_2005|420|  
-    |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
+  |Действие|Условие|Sequence|  
+  |------------|---------------|--------------|  
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 AND NOT (DEVENV_EXE_2003 ИЛИ DEVENV_EXE_2005)|410|  
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 И НЕ DEVENV_EXE_2005|420|  
+  |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
-     Можно использовать свойство DEVENV_EXE_LATEST в таблице реестра пакета установщика Windows для записи HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand ключ по умолчанию, [DEVENV_EXE_LATEST] «%1»  
+   Можно использовать свойство DEVENV_EXE_LATEST в таблице реестра пакета установщика Windows для записи HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand ключ по умолчанию, [DEVENV_EXE_LATEST] «%1»  
   
--   Запустите программу Общие средства запуска, которая может сделать лучший выбор из доступных версий пакета VSPackage.  
+- Запустите программу Общие средства запуска, которая может сделать лучший выбор из доступных версий пакета VSPackage.  
   
-     Разработчики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выбирают этот подход, чтобы обрабатывать сложные требования несколько форматов решений и проектов, возникающие в результате многих версиях операционной системы [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При таком подходе зарегистрируйте средство запуска программы, как обработчик расширений. Средство запуска проверяет файл и решает, какую версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и VSPackage может обрабатывать конкретного файла. Например, если пользователь открывает файл, который был сохранен на конкретную версию пакета VSPackage, средство запуска можно запустить этот пакет VSPackage в соответствующей версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того пользователь может настроить средство запуска всегда запускается последней версии. Средство запуска также могут предлагать обновить формат файла. Если формат файла содержит номер версии, средство запуска может уведомляет пользователя, если формат файла — начиная с версии более поздней, чем один или несколько из установленных пакетов VSPackage.  
+   Разработчики [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выбирают этот подход, чтобы обрабатывать сложные требования несколько форматов решений и проектов, возникающие в результате многих версиях операционной системы [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При таком подходе зарегистрируйте средство запуска программы, как обработчик расширений. Средство запуска проверяет файл и решает, какую версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и VSPackage может обрабатывать конкретного файла. Например, если пользователь открывает файл, который был сохранен на конкретную версию пакета VSPackage, средство запуска можно запустить этот пакет VSPackage в соответствующей версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того пользователь может настроить средство запуска всегда запускается последней версии. Средство запуска также могут предлагать обновить формат файла. Если формат файла содержит номер версии, средство запуска может уведомляет пользователя, если формат файла — начиная с версии более поздней, чем один или несколько из установленных пакетов VSPackage.  
   
-     Средство запуска должно быть в компоненте установщика Windows, который совместно со всеми версиями пакета VSPackage. Этот процесс гарантирует, что последняя версия всегда устанавливается и не удаляется, пока не будут удалены все версии VSPackage. Таким образом сопоставления файлов и другим записям реестра, запуск компонента сохраняются даже в случае удаления одной версии VSPackage.  
+   Средство запуска должно быть в компоненте установщика Windows, который совместно со всеми версиями пакета VSPackage. Этот процесс гарантирует, что последняя версия всегда устанавливается и не удаляется, пока не будут удалены все версии VSPackage. Таким образом сопоставления файлов и другим записям реестра, запуск компонента сохраняются даже в случае удаления одной версии VSPackage.  
   
 ## <a name="uninstall-and-file-associations"></a>Удалите и сопоставления файлов  
  Удаление пакета VSPackage, который записывает записи реестра для сопоставления файлов удаляет сопоставления файлов. Таким образом у расширения есть нет связанных программ. Установщик Windows не «recover» записи реестра, которые были добавлены при установке VSPackage. Ниже приведены некоторые способы, чтобы исправить сопоставления файлов пользователя.  

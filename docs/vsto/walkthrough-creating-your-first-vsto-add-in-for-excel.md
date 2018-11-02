@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949907"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство: Создание первой надстройки VSTO для Excel
   В этом вводном пошаговом руководстве показано, как создавать надстройки уровня приложения для Microsoft Office Excel. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие книги открыты.  
@@ -32,15 +32,15 @@ ms.locfileid: "38797803"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Создание проекта надстройки VSTO Excel для Excel.  
+- Создание проекта надстройки VSTO Excel для Excel.  
   
--   Написание кода с использованием объектной модели Excel, которая при сохранении книги добавляет в нее текст.  
+- Написание кода с использованием объектной модели Excel, которая при сохранении книги добавляет в нее текст.  
   
--   Построение и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
--   Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+- Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -78,20 +78,20 @@ ms.locfileid: "38797803"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Добавление строки текста в сохраненную книгу  
   
-1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Новый код определяет обработчик событий для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> , которое возникает при сохранении книги.  
+1. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Новый код определяет обработчик событий для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> , которое возникает при сохранении книги.  
   
-     Когда пользователь сохраняет книгу, обработчик событий добавляет новый текст в начало активного листа.  
+    Когда пользователь сохраняет книгу, обработчик событий добавляет новый текст в начало активного листа.  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_WorkbookBeforeSave` к событию <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> .  
+2. Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_WorkbookBeforeSave` к событию <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> .  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Для изменения книги при ее сохранении в приведенных выше примерах кода используются следующие объекты:  
+   Для изменения книги при ее сохранении в приведенных выше примерах кода используются следующие объекты:  
   
--   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Excel.Application> , который представляет текущий экземпляр Excel.  
+-   Поле `Application` класса `ThisAddIn`. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Excel.Application> , который представляет текущий экземпляр Excel.  
   
 -   Параметр `Wb` обработчика событий для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Параметр `Wb` является объектом <xref:Microsoft.Office.Interop.Excel.Workbook> , который представляет сохраняемую книгу. Дополнительные сведения см. в разделе [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).  
   

@@ -10,15 +10,24 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775388"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120683"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Журнал изменений (Инструменты Visual Studio для Unity, Windows)
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="3807"></a>3.8.0.7
+ Выпущено 20 сентября 2018 г.
+ 
+### <a name="bug-fixes"></a>Исправления ошибок
+
+-   **Отладчик:**
+
+    -   Исправлена взаимоблокировка в библиотеке, используемой для связи с модулем отладки Unity. Это проблема приводила к зависанию Visual Studio или Unity, особенно при выборе команды "Подключить к Unity" или перезапуске игры.
 
 ## <a name="3806"></a>3.8.0.6
  Выпущено 27 августа 2018 г.

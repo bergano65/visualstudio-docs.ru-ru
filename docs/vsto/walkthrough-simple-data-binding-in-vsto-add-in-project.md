@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8903f18a578c9365b34ea420706b4e9f41fd2b1c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758921"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672669"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO
 
@@ -50,9 +50,9 @@ ms.locfileid: "36758921"
 
 -   Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Вы можете скачать `AdventureWorksLT` из базы данных [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: присоединение базы данных (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).
+    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Присоединение базы данных с помощью командной строки, см. в разделе [способ: добавить файл базы данных для SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).
+    -   Присоединение базы данных с помощью командной строки, см. в разделе [способ: добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -68,33 +68,33 @@ ms.locfileid: "36758921"
 
 2.  Если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], добавьте ссылку на *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
 
-## <a name="create-a-data-source"></a>Создать источник данных
+## <a name="create-a-data-source"></a>Создание источника данных
 
 С помощью окна **Источники данных** добавьте типизированный набор данных в свой проект.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Добавление типизированного набора данных в проект
 
-1.  Если **источников данных** окно не отображается, откройте его в строке меню выберите **представление** > **Other Windows**  >   **Источники данных**.
+1. Если **источников данных** окно не отображается, откройте его в строке меню выберите **представление** > **Other Windows**  >   **Источники данных**.
 
-2.  Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
+2. Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3.  Щелкните **База данных**и нажмите кнопку **Далее**.
+3. Щелкните **База данных**и нажмите кнопку **Далее**.
 
-4.  Если подключение к базе данных `AdventureWorksLT` существует, выберите его и нажмите кнопку **Далее**.
+4. Если подключение к базе данных `AdventureWorksLT` существует, выберите его и нажмите кнопку **Далее**.
 
-     В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
-5.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
+5. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
-6.  На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)**.
+6. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)**.
 
-7.  Нажмите кнопку **Готово**.
+7. Нажмите кнопку **Готово**.
 
-     *AdventureWorksLTDataSet.xsd* добавляется файл **обозревателе решений**. В этом файле определены следующие элементы:
+    *AdventureWorksLTDataSet.xsd* добавляется файл **обозревателе решений**. В этом файле определены следующие элементы:
 
-    -   Типизированный набор данных с именем `AdventureWorksLTDataSet`. Этот набор данных представляет содержимое таблицы **Customer (SalesLT)** в базе данных AdventureWorksLT.
+   - Типизированный набор данных с именем `AdventureWorksLTDataSet`. Этот набор данных представляет содержимое таблицы **Customer (SalesLT)** в базе данных AdventureWorksLT.
 
-    -   Адаптер таблицы с именем `CustomerTableAdapter`. Этот адаптер таблицы можно использовать для чтения и записи данных `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Адаптер таблицы с именем `CustomerTableAdapter`. Этот адаптер таблицы можно использовать для чтения и записи данных `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Далее в пошаговом руководстве используются оба эти объекта.
 
@@ -116,7 +116,7 @@ ms.locfileid: "36758921"
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Добавьте следующий код в метод `ThisAddIn_Startup` . Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3.  Добавьте следующий код в метод `ThisAddIn_Startup`. Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]

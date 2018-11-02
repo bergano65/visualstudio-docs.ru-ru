@@ -1,5 +1,5 @@
 ---
-title: CV_HREG_e | Документы Microsoft
+title: CV_HREG_e | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa6e567f811f163f8b79b277f5e0c8d2e4fc775b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848609"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Указывает целевой регистра.  
   
 > [!NOTE]
->  Поскольку `CV_HREG_e` перечисления слишком велик для дублирования полностью здесь, сокращенную версию предоставляется как ссылка. Недостающие записи записываемое курсивом. В файле заголовка cvconst.h доступен завершения перечисления.  
+>  Так как `CV_HREG_e` перечисления слишком велико для дублирования здесь целиком, сокращенная версия предоставляется как ссылка. Недостающие записи записываемое курсивом. В файле заголовка cvconst.h доступен полный перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -412,42 +412,42 @@ enum CV_HREG_e {
   
 ## <a name="elements"></a>Элементы  
  CV_REG_ *  
- Регистры, используемые Intel 80 x 86 и p кодом и ix86 процессоров.  
+ Регистры, используемые Intel 80 x 86 и ix86 процессоров и p кода.  
   
  CV_R68_ *  
- Регистры, используемые обработчиком 68K.  
+ Регистры, процессор 68 КБ.  
   
  CV_M4_ *  
- Регистры, используемые обработчиком ряда MIPS 4000.  
+ Регистры, процессор серии 4000 MIP-ОБЪЕКТЫ.  
   
  CV_ALPHA_ *  
- Регистры, используемые обработчиком цифровой оборудования Corporation Alpha AXP рядов.  
+ Регистры, процессор серии Digital Equipment Corporation Alpha AXP.  
   
  CV_PPC_ *  
- Регистры, используется процессором PowerPC Motorola или IBM.  
+ Регистры, используется процессором PowerPC Motorola/IBM.  
   
  CV_SH3_ * и CV_SH_\*  
- Используется обработчиком ряда Hitachi SH3 и Hitachi SH регистров.  
+ Регистры, процессор серии Hitachi SH3 и Hitachi SH.  
   
  CV_ARM_ *  
  Регистры, используемые процессорами Advanced RISC Machine (ARM).  
   
  CV_IA64_ *  
- Регистры, используемые процессорами Intel IA64 рядов.  
+ Регистры, используемые процессорами серии Intel® IA64.  
   
  CV_TRI_ *  
- Регистры, используемые обработчиком Infineon TriCore технологий.  
+ Регистры, процессор TriCore Infineon технологий.  
   
  CV_AM33_ *  
  Регистры используется Matsushita/Panasonic AM33 и связанные с процессорами.  
   
  CV_M32R_ *  
- Используется обработчиком Mitsubishi M32R регистры.  
+ Регистры, Mitsubishi M32R процессор.  
   
 ## <a name="remarks"></a>Примечания  
  Каждый тип процессора использует собственный уникальный набор регистров.  
   
- Значения этого перечисления передаются следующие методы:  
+ Значения в этом перечислении передаются следующие методы:  
   
 -   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   

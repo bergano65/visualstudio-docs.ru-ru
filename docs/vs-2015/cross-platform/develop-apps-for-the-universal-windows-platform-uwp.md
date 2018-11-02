@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909059"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ ms.locfileid: "49287096"
   
  Ниже приведен список необходимого программного обеспечения.  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.  
   
- После установки программного обеспечения необходимо [включить устройство Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) для разработки. (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)  
+  После установки программного обеспечения необходимо [включить устройство Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) для разработки. (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)  
   
- **Поддержка Windows 8.1 и Windows 7**  
+  **Поддержка Windows 8.1 и Windows 7**  
   
- Разработка универсальных приложений Windows с помощью Visual Studio 2015 на платформе, отличной от Windows 10, связана со следующими ограничениями.  
+  Разработка универсальных приложений Windows с помощью Visual Studio 2015 на платформе, отличной от Windows 10, связана со следующими ограничениями.  
   
--   Windows 8.1. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
+- Windows 8.1. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
   
--   Windows 7. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio нельзя использовать ни эмуляторы, ни имитаторы.  
+- Windows 7. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio нельзя использовать ни эмуляторы, ни имитаторы.  
   
- Конструктор XAML можно использовать только на платформе разработки Windows 10.  
+  Конструктор XAML можно использовать только на платформе разработки Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Универсальные приложения Windows  
  Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  

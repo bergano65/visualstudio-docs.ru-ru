@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825625"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Практическое руководство. Поиск имени процесса ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы выполнить присоединение к выполняющемуся приложению [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], необходимо знать имя процесса [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Если выполняется IIS 6.0 или IIS 7.0, процесс имеет имя w3wp.exe.  
+- Если выполняется IIS 6.0 или IIS 7.0, процесс имеет имя w3wp.exe.  
   
--   Если выполняется более ранняя версия IIS, то процесс имеет имя aspnet_wp.exe.  
+- Если выполняется более ранняя версия IIS, то процесс имеет имя aspnet_wp.exe.  
   
- Для приложений, созданных с помощью [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] или более поздних версиях [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] код может находиться в файловой системе и выполняться под управлением тестового сервера WebDev.WebServer.exe. В этом случае необходимо выполнить присоединение к WebDev.WebServer.exe вместо присоединения к процессу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Этот скрипт применим только к локальной отладке.  
+  Для приложений, созданных с помощью [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] или более поздних версиях [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] код может находиться в файловой системе и выполняться под управлением тестового сервера WebDev.WebServer.exe. В этом случае необходимо выполнить присоединение к WebDev.WebServer.exe вместо присоединения к процессу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Этот скрипт применим только к локальной отладке.  
   
- Более ранние версии приложений ASP при внутрипроцессном выполнении выполняются в процессе inetinfo.exe.  
+  Более ранние версии приложений ASP при внутрипроцессном выполнении выполняются в процессе inetinfo.exe.  
   
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

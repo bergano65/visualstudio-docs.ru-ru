@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868031"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Создание переносимых файлов данных профилирования в командной строке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ms.locfileid: "49254700"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Внедрение символов для сеанса профилирования в файл данных профилирования (VSP)  
   
--   В окне командной строки введите следующую команду:  
+- В окне командной строки введите следующую команду:  
   
-     \<Путь>**VSPerfReport \<** VSP-файл> **/PackSymbols**  
+   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/PackSymbols**  
   
-     По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.  
+   По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Создание сводного файла данных профилирования  
   
--   В окне командной строки введите следующую команду:  
+- В окне командной строки введите следующую команду:  
   
-     \<Путь>**VSPerfReport \<** VSP-файл> **/SummaryFile** [**/Output:**\<имя файла>]  
+   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/SummaryFile** [**/Output:**\<имя файла>]  
   
-     По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.
+   По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.
 
 
 

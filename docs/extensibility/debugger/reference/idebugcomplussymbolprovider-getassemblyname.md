@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName | Документы Microsoft
+title: IDebugComPlusSymbolProvider::GetAssemblyName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9083a2efd9b1d0bf889610f0c6b74447175ee464
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af32775430efb375cca1afcc78d3a463cc2ae749
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925777"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Возвращает имя сборки, учитывая его модуль и домена приложения.  
+Извлекает имя сборки, учитывая его модуль и домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,10 +55,10 @@ int GetAssemblyName(
  [out] Возвращает имя сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAssemblyName(  

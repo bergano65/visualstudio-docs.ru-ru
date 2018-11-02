@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Документы Microsoft
+title: IDebugEnumField::GetUnderlyingSymbol | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150ac86dc78581655b0d6369dbe9c8c57c1a23f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3caadc10f08d4c3ddb28b03269323913701e91a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822258"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Этот метод возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющее имя перечисления.  
@@ -41,15 +41,15 @@ int GetUnderlyingSymbol(
   
 #### <a name="parameters"></a>Параметры  
  `ppField`  
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающую имя этого перечисления.  
+ [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий имя этого перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Имя перечисления также содержит тип перечисления, который связан с областью памяти с помощью [привязки](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+ Имя перечисления также содержит тип перечисления, который привязан к ячейке памяти с помощью [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [BIND](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

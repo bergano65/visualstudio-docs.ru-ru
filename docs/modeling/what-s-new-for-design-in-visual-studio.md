@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820778"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
 
@@ -69,8 +69,8 @@ ms.locfileid: "47857577"
 
 Visual Studio 2017 доступны в предыдущих версиях. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
 
-|**Функция**|**Выпуск Enterprise edition**|**Профессиональный выпуск**|**Community edition**|
-|-----------------|--------------------|----------------------|-------------------|
+|**Возможность**|**Выпуск Enterprise edition**|**Профессиональный выпуск**|**Community edition**|
+|-|-|-|-|
 |**Карты кода**|Да|Только поддерживает чтение карт кода, фильтрация код сопоставляет, добавление новых универсальных узлов и создание направленных графов из выделенной области.|-|
 |**Схемы зависимостей**|Да|Поддерживает только чтение схем зависимостей.|Поддерживает только чтение схем зависимостей.|
 |**Направленные графы** (схемы DGML)|Да|Да|Да|

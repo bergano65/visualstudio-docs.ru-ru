@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239386"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220183"
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ ms.locfileid: "49239386"
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Обновление кода для фиксации изменений в связанных таблицах перед сохранением  
   
-1.  Дважды щелкните **Сохранить** кнопку <xref:System.Windows.Forms.BindingNavigator> открыть **Form1** в редакторе кода.  
+1. Дважды щелкните **Сохранить** кнопку <xref:System.Windows.Forms.BindingNavigator> открыть **Form1** в редакторе кода.  
   
-2.  Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в **Сохранить** нажатие кнопки событий должен выглядеть следующим образом:  
+2. Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в **Сохранить** нажатие кнопки событий должен выглядеть следующим образом:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Кроме фиксации изменений в связанной дочерней таблице перед сохранением данных в базе данных, вам также может понадобиться фиксировать недавно созданные родительские записи перед добавлением новых дочерних записей в базу данных. Другими словами, вам может понадобиться добавить новую родительскую запись (клиент) в базу данных, прежде чем ограничение внешнего ключа позволит добавить в набор данных дочерние записи (заказы). Для этого можно использовать дочернее событие `BindingSource.AddingNew`.  
+   Кроме фиксации изменений в связанной дочерней таблице перед сохранением данных в базе данных, вам также может понадобиться фиксировать недавно созданные родительские записи перед добавлением новых дочерних записей в базу данных. Другими словами, вам может понадобиться добавить новую родительскую запись (клиент) в базу данных, прежде чем ограничение внешнего ключа позволит добавить в набор данных дочерние записи (заказы). Для этого можно использовать дочернее событие `BindingSource.AddingNew`.  
   
 > [!NOTE]
 >  Нужно ли Фиксация новых родительских записей зависит от типа элемента управления, который используется для привязки к источнику данных. В этом пошаговом руководстве используйте отдельные элементы управления для привязки к родительской таблице. Для этого дополнительный код для фиксации новой родительской записи. Если бы вместо этого родительские записи отображались в сложном элементе управления, такие как <xref:System.Windows.Forms.DataGridView>, этот дополнительный <xref:System.Windows.Forms.BindingSource.EndEdit%2A> вызов родительской записи не требовался бы. Это вызвано тем, что базовая функциональность привязки к данным элемента управления обрабатывает фиксацию новых записей.  
@@ -105,7 +105,7 @@ ms.locfileid: "49239386"
   
 1.  Создайте обработчик событий для события `OrdersBindingSource.AddingNew`.  
   
-    -   Откройте **Form1** в режиме конструктора выберите**OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.  
+    -   Откройте **Form1** в режиме конструктора выберите **OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.  
   
 2.  Добавьте строку кода в обработчик событий, который вызывает `CustomersBindingSource.EndEdit` метод. Код в обработчике событий `OrdersBindingSource_AddingNew` должен выглядеть примерно следующим образом:  
   

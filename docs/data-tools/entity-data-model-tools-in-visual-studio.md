@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819099"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Средства платформы Entity Framework в Visual Studio
 Платформа Entity Framework — это технология объектно реляционного сопоставления, который позволяет разработчикам .NET работать с реляционными данными с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.
@@ -28,16 +28,16 @@ ms.locfileid: "44284046"
 
 Ниже приведены конкретные средства, входящие в состав средства платформы Entity Framework в Visual Studio.
 
--   Можно использовать [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] конструктор** (**конструктор сущностей**) можно визуально создавать и изменять сущности, ассоциации, сопоставления и связи наследования. **Конструктор сущностей** также создает [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] кода уровня объекта.
+- Можно использовать [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] конструктор** (**конструктор сущностей**) можно визуально создавать и изменять сущности, ассоциации, сопоставления и связи наследования. **Конструктор сущностей** также создает [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] кода уровня объекта.
 
--   Можно использовать  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] мастер** для создания концептуальной модели из существующей базы данных и добавить подключение к базе данных в приложение.
+- Можно использовать  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] мастер** для создания концептуальной модели из существующей базы данных и добавить подключение к базе данных в приложение.
 
--   Можно использовать **мастер создания базы данных** чтобы сначала создать концептуальную модель, а затем создать базу данных, поддерживающую модель.
+- Можно использовать **мастер создания базы данных** чтобы сначала создать концептуальную модель, а затем создать базу данных, поддерживающую модель.
 
--   Можно использовать **мастер обновления моделей** для обновления вашей концептуальную модель, модель хранения и сопоставления, когда были внесены изменения в основную базу данных.
+- Можно использовать **мастер обновления моделей** для обновления вашей концептуальную модель, модель хранения и сопоставления, когда были внесены изменения в основную базу данных.
 
-    > [!NOTE]
-    >  Начиная с Visual Studio 2010, средства платформы Entity Framework не поддерживают [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > [!NOTE]
+  >  Начиная с Visual Studio 2010, средства платформы Entity Framework не поддерживают [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Средства создают или изменяют *.edmx* файл. Это *.edmx* файл содержит сведения, описывающие концептуальной модели, модели хранения и сопоставления между ними. Дополнительные сведения см. в разделе [EDMX](https://docs.microsoft.com/ef/ef6/).
 
@@ -45,12 +45,12 @@ ms.locfileid: "44284046"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
-|-----------|-----------------|
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Описывает использование [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] средств, который [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] предоставляет для создания приложений.|
-|[Сущностная модель данных](/dotnet/framework/data/adonet/entity-data-model)|Предоставляет ссылки и сведения для работы с данными, используемый приложений на платформе [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
-|[Документация по Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started)|Предоставляет индекс видео, руководства и дополнительные документацию, которая поможет вам максимально эффективно платформы Entity Framework.|
-|[ASP.NET 5 приложения в новую базу данных](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|В этой статье описывается создание нового приложения ASP.NET 5 с помощью Entity Framework 7.|
+| Заголовок | Описание |
+| - | - |
+| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Описывает использование [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] средств, который [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] предоставляет для создания приложений. |
+| [Сущностная модель данных](/dotnet/framework/data/adonet/entity-data-model) | Предоставляет ссылки и сведения для работы с данными, используемый приложений на платформе [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |
+| [Документация по Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started) | Предоставляет индекс видео, руководства и дополнительные документацию, которая поможет вам максимально эффективно платформы Entity Framework. |
+| [ASP.NET 5 приложения в новую базу данных](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | В этой статье описывается создание нового приложения ASP.NET 5 с помощью Entity Framework 7. |
 
 ## <a name="see-also"></a>См. также
 

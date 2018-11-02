@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Документы Microsoft
+title: IDebugClassField::DoesInterfaceExist | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7c4a09af356951e7e26b6c9b6b0af5922b9f53b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a4fc4ca6c95d6e4b1b8367f9820ef742b52bdeb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833556"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Определяет, если конкретный интерфейс определен в классе.  
@@ -41,10 +41,10 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Параметры  
  `pszInterfaceName`  
- [in] Строка, содержащая имя интерфейса, для поиска.  
+ [in] Строка, содержащая искомое имя интерфейса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, возвращает значение S_FALSE, если интерфейс существует; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK, возвращает S_FALSE, если интерфейс не существует. в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Этот метод фактически возвращает перечисление всех интерфейсов и выполняет поиск соответствующего интерфейса по списку.  

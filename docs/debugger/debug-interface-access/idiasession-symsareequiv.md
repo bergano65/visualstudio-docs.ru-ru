@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::symsAreEquiv | Документы Microsoft
+title: IDiaSession::symsAreEquiv | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc92a38305e7cc8c74b4ada0d560b314ed92da8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdaa1ab070b6d95af0f28f5bdaa005b9ac808766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850988"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Проверяет, являются ли эквивалентными двух символов.  
@@ -41,7 +41,7 @@ HRESULT symsAreEquiv (
  [in] Второй `IDiaSymbol` объект, используемый для сравнения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если символы эквивалентны, возвращает `S_OK`; в противном случае возвращает `S_FALSE`, символы не являются эквивалентными. В противном случае возвращается код ошибки.  
+ Возвращает значение, если символы эквивалентны, `S_OK`; в противном случае возвращает `S_FALSE`, символы не эквивалентны. В противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

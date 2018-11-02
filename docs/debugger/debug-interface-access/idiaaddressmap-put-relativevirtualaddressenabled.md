@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::put_relativeVirtualAddressEnabled | Документы Microsoft
+title: IDiaAddressMap::put_relativeVirtualAddressEnabled | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe2c2299a26834ac40c787aea5504ae7d0ed8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0b9e908e03dced75bf8fa3dfce3f31e6bbe148b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827374"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
-Позволяет клиенту включить или отключить расчет и использовать относительные виртуальные адреса (RVA).  
+Позволяет клиенту включить или отключить вычисление и использование относительные виртуальные адреса (RVA).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,14 +37,14 @@ HRESULT put_relativeVirtualAddressEnabled (
  [in] Значение `TRUE` для включения, или `FALSE` для отключения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Адреса для отладки объектов, описанные DIA интерфейсами и относительно исполняемого образа базовый, могут быть получены как относительными виртуальными адресами.  
+ Адреса для отладки объектов, описанные по интерфейсов доступа к интерфейсу отладки, а также относительно исполняемого файла изображения базовый, могут быть получены как относительные виртуальные адреса.  
   
- Использование RVA включена, когда сегменты изначально загружаются из PDB-файла. Чтобы получить текущее состояние использование RVA, вызовите [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) метод.  
+ Использование RVA включена в том случае, если сегменты изначально загружаются из PDB-файл. Чтобы получить текущее состояние использования RVA, вызовите [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) метод.  
   
- `put_relativeVirtualAddress` Необходимо вызвать метод, чтобы включить RVA после успешного вызова [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) метод устанавливает новый образ заголовки.  
+ `put_relativeVirtualAddress` Метод должен вызываться для включения RVA после успешного вызова [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) метод устанавливает новый образ заголовки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

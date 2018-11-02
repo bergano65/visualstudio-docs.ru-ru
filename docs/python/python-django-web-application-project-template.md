@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499547"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100969"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
@@ -56,7 +56,7 @@ Visual Studio предоставляет полную поддержку тех�
 
     ![Консоль](media/template-django-console-sync-db.png)
 
-- **Собирать статические файлы** выполняет `manage.py collectstatic --noinput` для копирования всех статических файлов в путь, указанный параметром `STATIC_ROOT` в файле *settings.py*. При [публикации в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) статические файлы автоматически сохраняются в процессе публикации.
+- **Собирать статические файлы** выполняет `manage.py collectstatic --noinput` для копирования всех статических файлов в путь, указанный параметром `STATIC_ROOT` в файле *settings.py*.
 
     ![Консоль](media/template-django-console-collect-static.png)
 

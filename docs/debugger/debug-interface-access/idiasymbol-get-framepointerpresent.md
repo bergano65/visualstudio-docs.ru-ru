@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_framePointerPresent | Документы Microsoft
+title: IDiaSymbol::get_framePointerPresent | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bee723194914775a77334641ed9bae4a33ec268e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 283674d2bccc81d409db59df04631240e78000cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846218"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Возвращает флаг, указывающий, присутствует ли указатель фрейма. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) равно `SymTagFunction`.  
+Получает флаг, указывающий, присутствует ли этот указатель фрейма. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_framePointerPresent(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out]] Возвращает `TRUE` если указатель фрейма существует; в противном случае возвращает `FALSE`.  
+ [out]] Возвращает `TRUE` при наличии; в противном случае этот указатель фрейма возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
   
@@ -49,7 +49,7 @@ HRESULT get_framePointerPresent(
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia100.dll  
+ Библиотеки DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

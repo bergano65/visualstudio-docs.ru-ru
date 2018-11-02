@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852262"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage объявляет элементами меню и состояние
   
  В следующем списке приведены интерфейсы, затронутых активное состояние пакета VSPackage системы управления версиями:  
   
--   Отслеживать событиях документов проекта.  
+- Отслеживать событиях документов проекта.  
   
--   Событиях решения.  
+- Событиях решения.  
   
--   Интерфейсы сохраняемости решения. Неактивная, пакеты не должен записывать файлы SLN и SUO.  
+- Интерфейсы сохраняемости решения. Неактивная, пакеты не должен записывать файлы SLN и SUO.  
   
--   Свойство средства расширения.  
+- Свойство средства расширения.  
   
- Необходимая <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, а также любые дополнительные интерфейсы, связанные с системой управления версиями, не вызываются, когда пакет VSPackage системы управления версиями является неактивным.  
+  Необходимая <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, а также любые дополнительные интерфейсы, связанные с системой управления версиями, не вызываются, когда пакет VSPackage системы управления версиями является неактивным.  
   
- Когда [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускает интегрированную среду разработки, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] задает контекст команды пользовательского интерфейса с идентификатором текущего управления версиями по умолчанию идентификатор пакета VSPackage. В результате статического пользовательского интерфейса элемента управления активной исходной VSPackage отображаются в интегрированной среде разработки без фактической загрузки VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Приостанавливает для VSPackage для регистрации в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] через <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> перед отправкой каких-либо вызовов VSPackage.  
+  Когда [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускает интегрированную среду разработки, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] задает контекст команды пользовательского интерфейса с идентификатором текущего управления версиями по умолчанию идентификатор пакета VSPackage. В результате статического пользовательского интерфейса элемента управления активной исходной VSPackage отображаются в интегрированной среде разработки без фактической загрузки VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Приостанавливает для VSPackage для регистрации в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] через <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> перед отправкой каких-либо вызовов VSPackage.  
   
- В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
+  В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
 |Элемент пользовательского интерфейса|Описание|  
 |-------------|-----------------|  

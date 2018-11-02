@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920369"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "49178949"
 ## <a name="prerequisites"></a>Предварительные требования  
  Для профилирования на вычислительном узле HPC нужно выполнить следующие действия.  
   
--   Установить пакет Microsoft HPC 2008 на том же компьютере, что и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Этот компьютер не должен входить в состав кластера HPC. Можно установить пакет HPC из [Центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Установить пакет Microsoft HPC 2008 на том же компьютере, что и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Этот компьютер не должен входить в состав кластера HPC. Можно установить пакет HPC из [Центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Установить [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] и автономную версию средств профилирования на вычислительном узле HPC. Установить программы для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и автономного профилировщика, доступные на установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Примечание.** Необходимо перезапустить компьютер после установки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], но перед установкой средств профилирования.  
+- Установить [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] и автономную версию средств профилирования на вычислительном узле HPC. Установить программы для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и автономного профилировщика, доступные на установочном носителе [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Примечание.** Необходимо перезапустить компьютер после установки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], но перед установкой средств профилирования.  
   
- Чтобы установить [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] и автономные средства профилирования на активном вычислительном узле HPC и включить профилирование на компьютере кластера, выполните следующие действия.  
+  Чтобы установить [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] и автономные средства профилирования на активном вычислительном узле HPC и включить профилирование на компьютере кластера, выполните следующие действия.  
   
 1.  Откройте окно командной строки, которая устанавливается вместе с пакетом HPC.  
   

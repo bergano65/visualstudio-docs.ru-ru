@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH | Документы Microsoft
+title: CODE_PATH | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920265"
 ---
 # <a name="codepath"></a>CODE_PATH
 Описывает вызов метода или функции.  
@@ -46,10 +46,10 @@ public struct CODE_PATH {
  Имя пути кода.  
   
  pCode  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий в код, шаг с заходом в функцию.  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий, где в код, чтобы шаг с заходом в функцию.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура используется для реализации, шаг с заходом в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущей позиции в отлаживаемую программу. Эта структура представляет один вызов.  
+ Эта структура используется для реализации, шаг с заходом в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущего расположения в отлаживаемой программы. Эта структура представляет один такой вызов.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -59,6 +59,6 @@ public struct CODE_PATH {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

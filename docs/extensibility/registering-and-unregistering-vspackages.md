@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638177"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410992"
 ---
 # <a name="register-and-unregister-vspackages"></a>Регистрация и Отмена регистрации пакетов VSPackage
 Атрибуты можно использовать для регистрации VSPackage, но  
@@ -33,7 +33,9 @@ ms.locfileid: "39638177"
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
-{. . .}  
+{
+    // ...
+}  
 ```  
   
 ## <a name="unregister-an-extension"></a>Отмена регистрации расширения  
@@ -63,9 +65,9 @@ public sealed class BasicPackage : Package
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
-    public class CustomRegistrationAttribute : RegistrationAttribute  
-    {  
-    }  
+public class CustomRegistrationAttribute : RegistrationAttribute  
+{  
+}  
 ```  
   
  <xref:System.AttributeUsageAttribute> Используется в классах атрибутов для указания элемент программы (класс, метод и т.д.) который этот атрибут относится ли он может использоваться более одного раза и ли он может быть унаследован.  
@@ -113,7 +115,7 @@ public override void Register(RegistrationAttribute.RegistrationContext context)
     {  
         if (packageKey != null)  
             packageKey.Close();  
-                }  
+    }  
 }  
   
 public override void Unregister(RegistrationContext context)  

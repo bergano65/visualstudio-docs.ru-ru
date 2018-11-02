@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Документы Microsoft
+title: MACHINE_INFO_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0ff6f75c0ee17bef57b1f2632c4d6926948528
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942508"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Указывает, какого рода информация для извлечения для конкретного компьютера.  
+Указывает, какого рода информацию необходимо вернуть для конкретного компьютера.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,20 +46,20 @@ public enum enum_MACHINE_INFO_FIELDS {
   
 ## <a name="members"></a>Участники  
  MCIF_NAME  
- Инициализация или использовать `bstrName` поле в структуре.  
+ Инициализация и использование `bstrName` в структуре.  
   
  MCIF_FLAGS  
- Инициализация или использовать `Flags` поле в структуре.  
+ Инициализация и использование `Flags` в структуре.  
   
  MIF_ALL  
- Инициализация или использовать все поля в структуре.  
+ Инициализировать или использовать все поля в структуре.  
   
 ## <a name="remarks"></a>Примечания  
- Эти значения передаются в [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод, чтобы указать, какие элементы [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.  
+ Эти значения передаются [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод, чтобы указать, какие элементы [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.  
   
- Также используется в `Fields` членом `MACHINE_INFO` структуры указывает, какие поля используются и допустимым.  
+ Также используется в `Fields` членом `MACHINE_INFO` структура указывает, какие поля используются и допустимым.  
   
- Эти флаги могут объединяться с битовой `OR`.  
+ Эти флаги могут быть объединены с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

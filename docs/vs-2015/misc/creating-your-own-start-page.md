@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815043"
 ---
 # <a name="creating-your-own-start-page"></a>Создание собственной начальной страницы
 Настраиваемую начальную страницу можно создать с помощью шаблона проекта начальной страницы или путем создания пустой начальной страницы.  
@@ -57,52 +57,52 @@ ms.locfileid: "49232080"
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Создание пустой начальной страницы с помощью шаблона проекта начальной страницы  
   
-1.  Создайте проект начальной страницы с помощью шаблона проекта начальной страницы, как описано в предыдущей процедуре.  
+1. Создайте проект начальной страницы с помощью шаблона проекта начальной страницы, как описано в предыдущей процедуре.  
   
-2.  Откройте файл StartPage.xaml.  
+2. Откройте файл StartPage.xaml.  
   
-3.  Удалите все содержимое страницы, оставив только внешние элементы XML и содержащий элемент сетки <xref:System.Windows.Controls.Grid>. В результате XAML-файл должен выглядеть так, как показано в примере ниже.  
+3. Удалите все содержимое страницы, оставив только внешние элементы XML и содержащий элемент сетки <xref:System.Windows.Controls.Grid>. В результате XAML-файл должен выглядеть так, как показано в примере ниже.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Удалите все вспомогательные файлы, которые вы не планируете использовать.  
+4. Удалите все вспомогательные файлы, которые вы не планируете использовать.  
   
-     Файлы VSIX и PKGDEF следует сохранить для целей развертывания.  
+    Файлы VSIX и PKGDEF следует сохранить для целей развертывания.  
   
- Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. Дополнительные сведения см. в разделе [Создание настраиваемая начальная страница](../extensibility/creating-a-custom-start-page.md).  
+   Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. Дополнительные сведения см. в разделе [Создание настраиваемая начальная страница](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Тестирование и применение настраиваемой начальной страницы  
  Не запускайте начальную страницу в основном экземпляре, пока не убедитесь в том, что она работает без сбоев. Протестировав настраиваемую начальную страницу, можно применить ее к системе, повторив последние три действия этой процедуры в основном экземпляре Visual Studio.  
   
 #### <a name="to-test-a-custom-start-page"></a>Тестирование настраиваемой начальной страницы  
   
-1.  Нажмите клавишу F5.  
+1. Нажмите клавишу F5.  
   
-     Откроется экспериментальный экземпляр Visual Studio, в котором новая начальная страница установлена, но не выбрана.  
+    Откроется экспериментальный экземпляр Visual Studio, в котором новая начальная страница установлена, но не выбрана.  
   
-2.  В экспериментальном экземпляре Visual Studio в меню **Сервис** выберите пункт **Параметры**.  
+2. В экспериментальном экземпляре Visual Studio в меню **Сервис** выберите пункт **Параметры**.  
   
-3.  В диалоговом окне **Параметры** в разделе **Среда**выберите **Запуск**. Затем в списке **Настройка начальной страницы** выберите свой файл XAML и нажмите кнопку **ОК**.  
+3. В диалоговом окне **Параметры** в разделе **Среда**выберите **Запуск**. Затем в списке **Настройка начальной страницы** выберите свой файл XAML и нажмите кнопку **ОК**.  
   
-4.  В меню **Вид** выберите пункт **Начальная страница**.  
+4. В меню **Вид** выберите пункт **Начальная страница**.  
   
-     Откроется работающая начальная страница. Чтобы увидеть изменения, необходимо закрыть экспериментальный экземпляр, повторно скопировать все измененные файлы, а затем снова открыть экспериментальный экземпляр.  
+    Откроется работающая начальная страница. Чтобы увидеть изменения, необходимо закрыть экспериментальный экземпляр, повторно скопировать все измененные файлы, а затем снова открыть экспериментальный экземпляр.  
   
- Чтобы предоставить доступ к настраиваемой начальной странице, отправьте файл VSIX из каталога bin\debug на веб-сайт [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , на другой веб-сайт или в общую папку в интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Чтобы предоставить доступ к настраиваемой начальной странице, отправьте файл VSIX из каталога bin\debug на веб-сайт [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , на другой веб-сайт или в общую папку в интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   

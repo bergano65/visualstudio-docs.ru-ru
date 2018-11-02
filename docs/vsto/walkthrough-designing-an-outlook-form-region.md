@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813691"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Пошаговое руководство: Разработка области формы Outlook
   Пользовательские области формы расширяют стандартные или настраиваемые формы Microsoft Office Outlook. В этом пошаговом руководстве показано, как проектировать пользовательскую область формы, которая отображается в виде новой страницы в окне инспектора элемента контактов. В этой области формы отображается карта каждого адреса, указанного для контакта, путем отправки информации об адресе на веб-сайт локального поиска Windows Live. Сведения об областях форм см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
@@ -45,11 +45,11 @@ ms.locfileid: "35674748"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") видеоверсию этого раздела, см. в разделе [видео как: разработка области формы Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") видеоверсию этого раздела, см. в разделе [видео как: разработка области формы Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Создайте новый проект надстройки Outlook VSTO  
  Сначала создайте базовый проект надстройки VSTO.  
@@ -117,24 +117,24 @@ ms.locfileid: "35674748"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Порядок настройки поведения области формы  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши *файл MapIt.cs* или *MapIt.vb*, а затем нажмите кнопку **Просмотр кода**.  
+1. В **обозревателе решений**, щелкните правой кнопкой мыши *файл MapIt.cs* или *MapIt.vb*, а затем нажмите кнопку **Просмотр кода**.  
   
-     *Файл MapIt.cs* или *MapIt.vb* откроется в редакторе кода.  
+    *Файл MapIt.cs* или *MapIt.vb* откроется в редакторе кода.  
   
-2.  Разверните **фабрика областей формы** области кода.  
+2. Разверните **фабрика областей формы** области кода.  
   
-     Предоставляется класс фабрики областей формы с именем `MapItFactory`.  
+    Предоставляется класс фабрики областей формы с именем `MapItFactory`.  
   
-3.  Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент контактов не содержит адрес, этот код задает <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> свойство <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> класс **true** и области формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.  
+3. Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент контактов не содержит адрес, этот код задает <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> свойство <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> класс **true** и области формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Добавьте следующий код в обработчик событий <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Этот код выполняет следующие задачи:  
+4. Добавьте следующий код в обработчик событий <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Этот код выполняет следующие задачи:  
   
-    -   Сцепляет каждый адрес в элементе контактов и создает строку URL-адреса.  
+   - Сцепляет каждый адрес в элементе контактов и создает строку URL-адреса.  
   
-    -   Вызывает метод <xref:System.Windows.Forms.WebBrowser.Navigate%2A> объекта <xref:System.Windows.Forms.WebBrowser> и передает строку URL-адреса в качестве параметра.  
+   - Вызывает метод <xref:System.Windows.Forms.WebBrowser.Navigate%2A> объекта <xref:System.Windows.Forms.WebBrowser> и передает строку URL-адреса в качестве параметра.  
   
      Веб-сайт локального поиска отображается в области формы Map It и представляет каждый адрес в тестовой области.  
   

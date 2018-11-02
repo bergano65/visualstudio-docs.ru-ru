@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bd572cfff52537eab58e06ddf8f7a34bb087513c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811145"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: помечать сборки атрибутом AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -42,15 +43,15 @@ ms.locfileid: "49305387"
 ## <a name="rule-description"></a>Описание правила
  Удостоверение сборки представляет собой следующую информацию:
 
--   Имя сборки
+- Имя сборки
 
--   Номер версии
+- Номер версии
 
--   culture
+- culture
 
--   Открытый ключ (для сборок со строгими именами).
+- Открытый ключ (для сборок со строгими именами).
 
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] использует номер версии для уникального обозначения сборки и для привязки к типам в сборках со строгими именами. Номер версии используется наряду с политикой версий и издателя. По умолчанию приложения выполняются только с версией сборки, которая использовалась для их построения.
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] использует номер версии для уникального обозначения сборки и для привязки к типам в сборках со строгими именами. Номер версии используется наряду с политикой версий и издателя. По умолчанию приложения выполняются только с версией сборки, которая использовалась для их построения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, добавьте номер версии сборки с помощью <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> атрибута. См. следующий пример.

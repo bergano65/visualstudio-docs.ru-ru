@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Документы Microsoft
+title: IDebugArrayObject::GetDimensions | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a20073a19f785d30b0fcd0a7f126919371e722c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a931b488f2827e59a6b9b9ecaf86bf938ddc72a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896437"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Возвращает размерность массива.  
@@ -49,10 +49,10 @@ int GetDimensions(
  [in, out] Массив, который заполняется размеров каждого измерения. `dwCount` Указывает максимальный размер `dwDimensions` массива.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Многомерный массив может иметь различные размеры для каждого измерения. Например, при наличии трехмерный массив `myarray[3][2][6]`, этот метод возвращает 3, 2 и 6 в `dwDimensions` параметра в указанном порядке.  
+ Многомерный массив может иметь разные размеры для каждого измерения. Например, если трехмерный массив `myarray[3][2][6]`, этот метод возвращает 3, 2 и 6 в `dwDimensions` параметр в указанном порядке.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

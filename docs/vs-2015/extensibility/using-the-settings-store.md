@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811366"
 ---
 # <a name="using-the-settings-store"></a>Использование хранилища параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Существует два типа хранилищ параметры:  
   
--   Параметры конфигурации, которые являются только для чтения параметров Visual Studio и пакета VSPackage. Visual Studio объединяет параметры из всех известных .pkgdef файлов в это хранилище.  
+- Параметры конфигурации, которые являются только для чтения параметров Visual Studio и пакета VSPackage. Visual Studio объединяет параметры из всех известных .pkgdef файлов в это хранилище.  
   
--   Параметры пользователя, для записи параметров, например те, которые отображаются на страницах в **параметры** диалоговое окно страниц свойств и некоторых других диалоговых окон. Расширения Visual Studio может использовать их для локального хранения небольших объемов данных.  
+- Параметры пользователя, для записи параметров, например те, которые отображаются на страницах в **параметры** диалоговое окно страниц свойств и некоторых других диалоговых окон. Расширения Visual Studio может использовать их для локального хранения небольших объемов данных.  
   
- В этом пошаговом руководстве показано, как считывать данные из хранилища параметров конфигурации. См. в разделе [записи Store параметры пользователя](../extensibility/writing-to-the-user-settings-store.md) объяснение способа записи в хранилище параметров пользователя.  
+  В этом пошаговом руководстве показано, как считывать данные из хранилища параметров конфигурации. См. в разделе [записи Store параметры пользователя](../extensibility/writing-to-the-user-settings-store.md) объяснение способа записи в хранилище параметров пользователя.  
   
 ## <a name="creating-the-example-project"></a>Создание примера проекта  
  В этом разделе показано, как создать проект простое расширение с помощью команды меню для демонстрации.  
@@ -43,44 +43,44 @@ ms.locfileid: "49273368"
 ## <a name="using-the-configuration-settings-store"></a>С помощью Store параметры конфигурации  
  В этом разделе показано, как обнаружить и отображать параметры конфигурации.  
   
-1.  В файле SettingsStorageCommand.cs, добавьте следующие операторы using:  
+1. В файле SettingsStorageCommand.cs, добавьте следующие операторы using:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  В `MenuItemCallback`, удалить тело метода и добавьте следующие строки получить хранилища параметров конфигурации:  
+2. В `MenuItemCallback`, удалить тело метода и добавьте следующие строки получить хранилища параметров конфигурации:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> — Это управляемый вспомогательный класс через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> службы.  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> — Это управляемый вспомогательный класс через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> службы.  
   
-3.  Теперь Узнайте, установлены ли средства Windows Phone. Код должен выглядеть следующим образом:  
+3. Теперь Узнайте, установлены ли средства Windows Phone. Код должен выглядеть следующим образом:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Тестирование кода. Выполните сборку решения и запустите отладку.  
+4. Тестирование кода. Выполните сборку решения и запустите отладку.  
   
-5.  В экспериментальном экземпляре на **средства** меню, щелкните **вызвать SettingsStoreCommand**.  
+5. В экспериментальном экземпляре на **средства** меню, щелкните **вызвать SettingsStoreCommand**.  
   
-     Вы должны увидеть сообщение поле **средства для разработчиков Windows Phone:** следуют **True** или **False**.  
+    Вы должны увидеть сообщение поле **средства для разработчиков Windows Phone:** следуют **True** или **False**.  
   
- Visual Studio будет хранить в хранилище параметров в системном реестре.  
+   Visual Studio будет хранить в хранилище параметров в системном реестре.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Использование редактора реестра для проверки параметров конфигурации  
   

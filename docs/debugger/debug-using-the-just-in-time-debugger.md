@@ -13,174 +13,189 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168400"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382754"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчик в Visual Studio
-Just-In-Time – отладка автоматически запускает Visual Studio при возникновении исключения или неустранимой ошибки в программе, на котором выполняется вне Visual Studio. Это позволяет протестировать приложение, не запуская Visual Studio и начинать отладку в Visual Studio при возникновении проблемы.
 
-Отладка Just-In-Time работает для классических приложений Windows. Он не работает для универсальных приложений Windows, и он не работает для управляемого кода, который размещается в собственном приложении, например для визуализаторов.
+Just-In-Time отладки Visual Studio можно запускать автоматически при приложения, запущенные вне Visual Studio ошибок или сбоев. С Just-In-Time отладки можно протестировать приложения, находящиеся вне Visual Studio и откройте Visual Studio, чтобы начать отладку при возникновении проблемы.
+
+Отладка Just-In-Time работает для классических приложений Windows. Он не работает для универсальных приложений Windows, или для управляемого кода, который размещается в собственном приложении, например для визуализаторов.
 
 > [!TIP]
-> Если вы хотите знать, как реагировать на Just-in-Time отладчик диалоговое окно, см. в разделе [в этом разделе](../debugger/just-in-time-debugging-in-visual-studio.md).
+> Если вы просто хотите остановить окно JIT – отладчик скрывается, но не установлена среда Visual Studio, см. в разделе [Отключить JIT – отладчик](../debugger/just-in-time-debugging-in-visual-studio.md). Если у вас один раз было установлено приложение Visual Studio, может потребоваться [отключение Just-In-Time отладки из реестра Windows](#disable-just-in-time-debugging-from-the-windows-registry). 
 
-##  <a name="BKMK_Enabling"></a> Включение или отключение Just-In-Time отладки
-Можно включить или отключить Just-In-Time отладки из Visual Studio **Сервис > Параметры** диалоговое окно.
+##  <a name="BKMK_Enabling"></a> Включить или отключить Just-In-Time отладки в Visual Studio
 
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>Включение или отключение JIT–отладки
+>[!NOTE]
+>Чтобы включить или отключить Just-In-Time отладки, необходимо использовать Visual Studio с правами администратора. Включение или отключение Just-In-Time отладки устанавливает раздел реестра, а также могут потребоваться права администратора для изменения этого ключа. Чтобы открыть Visual Studio с правами администратора, щелкните правой кнопкой мыши приложение Visual Studio и выберите **Запуск от имени администратора**. 
 
-1.  Откройте Visual Studio с правами администратора (щелкните правой кнопкой мыши и выберите **Запуск от имени администратора**).
+Можно настроить Just-In-Time отладки из Visual Studio **средства** > **параметры** (или **Отладка** > **параметры**) диалоговое окно. 
 
-    Включение или отключение Just-In-Time отладки устанавливает раздел реестра, а также могут потребоваться права администратора для изменения этого ключа.
+**Включение или отключение Just-In-Time отладки:**
 
-2. В меню **Сервис** выберите пункт **Параметры**.
+1. На **средства** или **Отладка** меню, выберите **параметры** > **Отладка**  >   **Just-In-Time**.
 
-2.  В **параметры** диалогового окна разверните узел **Отладка** узла.
+   ![Включение или отключение JIT-отладка](../debugger/media/dbg-jit-enable-or-disable.png "Включение или отключение JIT-отладка")
 
-3.  В **Отладка** выберите **Just-In-Time**.
+1. В **включить JIT-отладку для следующих типов кода** выберите типы кода, требуется Just-In-Time отладки для отладки: **управляемый**, **собственного**, и/или  **Сценарий**.
+   
+1. Нажмите кнопку **ОК**.
 
-    ![Включение или отключение JIT-отладка](../debugger/media/dbg-jit-enable-or-disable.png "Включение или отключение JIT-отладка")
+При включении Just-In-Time отладчик, но она не открывается, когда происходит сбой приложения или ошибки, см. в разделе [Устранение неполадок с JIT-отладка](#jit_errors).
 
-4.  В **включить JIT – отладку для следующих типов кода** поле, установите или снимите соответствующих типов программ: **управляемый**, **собственного**, или **скрипт**.
+## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>Отключить Just-In-Time отладки из реестра Windows
 
-5.  Нажмите кнопку **ОК**.
+JIT-отладка может оставаться включенной даже после удаления Visual Studio с компьютера. Если больше не установлена среда Visual Studio, вы можете отключить Just-In-Time отладки путем редактирования реестра Windows.
 
-    При включении Just-in-Time отладчик, но вы не видите на исключение или сбой приложения, см. в разделе [Just-In-Time Отладка ошибок](#jit_errors).
+**Отключение Just-In-Time отладки путем редактирования реестра:**
 
-JIT-отладка может оставаться включенной даже после удаления Visual Studio с компьютера. Когда Visual Studio не установлена, невозможно отключить Just-In-Time отладки из Visual Studio **параметры** диалоговое окно. В таком случае JIT-отладку можно отключить, отредактировав реестр Windows.
-
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Отключение JIT-отладки путем редактирования реестра
-
-1.  На **запустить** меню, найдите и запустите `regedit.exe`
+1.  Из Windows **запустить** меню **редактора реестра** (*regedit.exe*).
 
 2.  В **редактора реестра** окна, найдите и удалите следующие записи реестра:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Раздел реестра JIT](../debugger/media/dbg-jit-registry.png "раздел реестра JIT")
 
 3.  Если компьютер работает под управлением 64-разрядной операционной системе, также удалите следующие записи реестра:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
-4.  Будьте внимательны, чтобы случайно не удалить или не изменить какие-либо другие разделы реестра.
+    Убедитесь, что не удалить или изменить разделы реестра.
 
 5.  Закрыть **редактора реестра** окна.
 
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Включение JIT-отладки для приложений Windows Forms
+## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Включить Just-In-Time отладка формы Windows
 
-1.  По умолчанию для приложений Windows Forms имеется обработчик исключений верхнего уровня, позволяющий программе продолжать работу, если возможно восстановление после ошибки. Например если приложение Windows Forms вызывает необработанное исключение, вы увидите диалоговое окно следующим образом:
+По умолчанию формы Windows приложения имеют обработчик исключений верхнего уровня, который позволяет приложению продолжать работать, если его можно восстановить. Если в приложении Windows Forms вызывает необработанное исключение, отобразится следующее диалоговое окно:
 
-     ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
+![Форма Windows необработанное исключение](../debugger/media/windowsformsunhandledexception.png "формы Windows необработанное исключение")
 
-     Для включения Just-In-Time отладки приложения Windows Forms, необходимо выполнить следующие дополнительные шаги:
+Чтобы включить Just-In-Time отладку вместо обработки стандартных ошибок формы Windows, добавьте эти параметры:
 
-2.  Задайте `jitDebugging` значение `true` в `system.windows.form` раздел machine.config или  *\<имя_приложения >*. файл exe.config:
-
+-  В `system.windows.forms` раздел *machine.config* или  *\<имя_приложения >. exe.config* файле `jitDebugging` значение `true`:
+    
     ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
     ```
+    
+-  В приложении C++ Windows Form, следует также установить `DebuggableAttribute` для `true` в *.config* файл или в собственном коде. Если компиляция выполняется с [/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) и без [/Og](/cpp/build/reference/og-global-optimizations), компилятор сам задаст этот атрибут автоматически. Если требуется отладка построения выпуска неоптимизированных, тем не менее, необходимо задать `DebuggableAttribute` , добавив следующую строку в вашем приложении *AssemblyInfo.cpp* файла:
 
-3.  Для приложений Windows Form, написанных на языке C++, в файле CONFIG или в коде должен быть задан атрибут `DebuggableAttribute`. Если компиляция выполняется с [/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) и без [/Og](/cpp/build/reference/og-global-optimizations), компилятор сам задаст этот атрибут автоматически. Однако если требуется отладка неоптимизированного построения выпуска, этот атрибут необходимо задать самостоятельно. Для этого добавьте следующую строку в файл AssemblyInfo.cpp своего приложения:
+   ```cpp
+   [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
+   ```
+   
+   Дополнительные сведения см. в разделе <xref:System.Diagnostics.DebuggableAttribute>.
 
-    ```cpp
-    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
-    ```
+## <a name="BKMK_Using_JIT"></a>Использовать Just-In-Time отладки
+ В этом примере описывается Just-In-Time отладки, когда приложение выдает ошибку.
 
-     Дополнительные сведения см. в разделе <xref:System.Diagnostics.DebuggableAttribute>.
+ - Необходимо иметь Visual Studio не установлена, выполните следующие действия. Если у вас нет Visual Studio, вы можете скачать бесплатный [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+   
+ - Убедитесь, что Just-In-Time Отладка [включена](#BKMK_Enabling) в **средства** > **параметры** > **Отладка**  >  **Just-In-Time**.
 
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Используйте отладку Just-In-Time
- В этом разделе показано, что происходит, когда исполняемый файл создает исключение.
+В этом примере вам предстоит C# консольное приложение в Visual Studio, который создает [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
- Необходимо иметь Visual Studio не установлена, выполните следующие действия. Если у вас нет Visual Studio, вы можете скачать бесплатный [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+1. В Visual Studio создайте C# консольное приложение (**файл** > **New** > **проекта** > **Visual C#**   >  **Консольное приложение**) с именем *ThrowsNullException*. Дополнительные сведения о создании проектов в Visual Studio, см. в разделе [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+   
+1. Открыв проект в Visual Studio, откройте *Program.cs* файл. Замените метод Main() следующий код, который выводит на консоль строку и затем создает исключение NullReferenceException:
+   
+   ```csharp
+   static void Main(string[] args)
+   {
+       Console.WriteLine("we will now throw a NullReferenceException");
+       throw new NullReferenceException("this is the exception thrown by the console app");
+   }
+   ```
+   
+1. Чтобы построить решение, выберите значок **Отладка** (по умолчанию) или **выпуска** конфигурации, а затем выберите **построения** > **Перестроить решение** . 
+   
+   >[!NOTE]
+   >- Выберите **Отладка** конфигурацию для полным набором функций отладки. 
+   >- При выборе [выпуска](../debugger/how-to-set-debug-and-release-configurations.md) конфигурации, необходимо отключить [Just My Code](../debugger/just-my-code.md) для работы этой процедуры. В разделе **средства** > **параметры** > **Отладка**, отмените выбор **включить только мой код**.
+   Дополнительные сведения о конфигурациях сборки см. в разделе [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md).
+   
+1. Откройте приложение построенный *ThrowsNullException.exe* в вашей C# папку проекта (*...\ThrowsNullException\ThrowsNullException\bin\Debug* или *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
+   
+   Вы должны увидеть следующее командное окно:
+   
+   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   
+1. **Выберите JIT – отладчик** откроется диалоговое окно.
+   
+   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   
+   В разделе **доступных отладчиков**выберите **новый экземпляр \<вашей основной версии или выпуска Visual Studio >**, если он еще не выбран. 
+   
+1. Нажмите кнопку **ОК**.
+   
+   В новом экземпляре Visual Studio откроется проект ThrowsNullException выполнение остановится на строке, который вызвал исключение:
+   
+   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
- Убедитесь, что Just-In-Time Отладка [включен](#BKMK_Enabling).
-
- В целях в этом разделе, сделаем консольное приложение C# в Visual Studio, который создает [NullReferenceException](/dotnet/api/system.nullreferenceexception).
-
- В Visual Studio создайте консольное приложение C# (**файл > Создать > проект > Visual C# > консольное приложение**) с именем **ThrowsNullException**. Дополнительные сведения о создании проектов в Visual Studio, см. в разделе [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
-
- Открыв проект в Visual Studio, откройте файл Program.cs. Замените метод Main() следующий код, который выводит на консоль строку и затем создает исключение NullReferenceException:
-
-```csharp
-static void Main(string[] args)
-{
-    Console.WriteLine("we will now throw a NullReferenceException");
-    throw new NullReferenceException("this is the exception thrown by the console app");
-}
-```
-
-> [!IMPORTANT]
->  В этой процедуры для работы в [конфигурации выпуска](../debugger/how-to-set-debug-and-release-configurations.md), необходимо отключить [Just My Code](../debugger/just-my-code.md). В Visual Studio щелкните **Сервис > Параметры**. В **параметры** диалоговом окне выберите **Отладка**. Снимите флажок из **включить только мой код**.
-
- Выполните сборку решения (в Visual Studio, выберите **сборки > Перестроить решение**). Можно выбрать конфигурацию выпуска или отладки (выберите **Отладка** для полного анализа отладки). Дополнительные сведения о конфигурациях сборки см. в разделе [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).
-
- В процессе сборки создается исполняемый файл ThrowsNullException.exe. Его можно найти в папке, в котором вы создали проект C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** или **...\ThrowsNullException\ThrowsNullException\bin\Release**.
-
- Дважды щелкните ThrowsNullException.exe. Вы должны увидеть окно командной строки следующим образом:
-
- ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
-
- Через несколько секунд появится окно сообщений об ошибке:
-
- ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")
-
- Не нажимайте кнопку **отменить**! Через несколько секунд вы должны увидеть две кнопки **Отладка** и **закрыть программу**. Нажмите кнопку **Отладка**.
+Можно начать отладку на этом этапе. При отладке реальное приложение, необходимо узнать, почему код было вызвано исключение.
 
 > [!CAUTION]
->  Если приложение содержит код без доверия, появится диалоговое окно с предупреждением безопасности. Это диалоговое окно позволяет выбрать, следует ли продолжать отладку или нет. Перед продолжением отладки решите, доверяете ли вы данному коду. Этот код написан вами самостоятельно? Доверяете ли вы автору кода? Если приложение выполняется на удаленном компьютере, узнаете ли вы имя процесса? Даже если приложение выполняется на локальном компьютере, это не обязательно означает, что ему можно доверять. Учитывайте возможность выполнения вредоносного кода на компьютере. Если вы решите, что код вы собираетесь заслуживает отладки, нажмите кнопку **Отладка**. В противном случае нажмите **не отлаживать**.
+> Если приложение содержит код без доверия, появится диалоговое окно предупреждения безопасности, что позволяет решить, следует ли продолжать отладку. Перед продолжением отладки решите, доверяете ли вы код. Этот код написан вами самостоятельно? Если приложение выполняется на удаленном компьютере, узнаете ли вы имя процесса? Если приложение выполняется локально, учитывайте возможность выполнения вредоносного кода на компьютере. Если код является доверенной, выберите **ОК**. В противном случае нажмите кнопку **Отмена**.
 
- **JIT – отладчик Visual Studio** появится окно:
+## <a name="jit_errors"></a> Устранение неполадок Just-In-Time отладки 
 
- ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+Если Just-In-Time отладка не начинается при аварийном завершении приложения, несмотря на то, что он включен в Visual Studio:
 
- В разделе **Доступные отладчики**, вы увидите, что **новый экземпляр Microsoft Visual Studio <available version>**  строка выделена. Если он не уже выбрана, выберите его.
+- Отчеты об ошибках Windows может досталось обработки ошибок на компьютере. 
+  
+  Чтобы устранить эту проблему, используйте редактор реестра, чтобы добавить **значение DWORD** из **отключено**, с помощью **значение** из **1**, в следующие разделы реестра:
+  
+  
 
- В нижней части окна в разделе **требуется отладить, используя выбранный отладчик?**, нажмите кнопку **Да**.
+  - **Отчеты об ошибках HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
+    
+  - (Для 64-разрядных компьютерах): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows отчеты об ошибках**
+  
+  Дополнительные сведения см. в разделе [. Параметры отчетов об ошибках Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
+  
+- Известная проблема Windows может быть причиной Just-In-Time отладчик, переход на другой. 
+  
+  Исправление является добавление **значение DWORD** из **автоматически**, с помощью **данные значения** из **1**, в следующие разделы реестра:
+  
+  
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
+    
+  - (Для 64-разрядных компьютерах): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
- В новом экземпляре Visual Studio откроется проект ThrowsNullException Выполнение остановлено на строке, которая создает исключение:
-
- ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
-
- Можно начать отладку на этом этапе. Если бы это было реальное приложение, необходимо узнать, почему код было вызвано исключение.
-
-## <a name="jit_errors"></a> Ошибки отладки Just-In-Time
- Если вы не видите диалоговое окно, когда программа выходит из строя и необходимо включить функцию, это возможно из-за параметров отчетов об ошибках Windows на компьютере. Не забудьте добавить **отключено** значение следующие разделы реестра и задайте значение 1:
-
-* Отчеты об ошибках HKLM\Software\Microsoft\Windows\Windows
-* Отчеты об ошибках HKLM\Software\WOW6432Node\Microsoft\Windows\Windows
- 
-Дополнительные сведения об этих параметрах см. в разделе [. Параметры отчетов об ошибках Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
-
-Кроме того, может появиться следующие сообщения об ошибках, которые связаны с Just-In-Time отладки.
+Может появиться следующие сообщения об ошибках во время Just-In-Time отладки:
 
 - **Не удается присоединиться к аварийному процессу. Указанная программа не является программой Windows или MS-DOS.**
 
-    Эта ошибка возникает при попытке подключиться к процессу, запуск от имени другого пользователя.
+    Отладчик попытался подключиться к процессу, под управлением другого пользователя.
 
-    Чтобы решить эту проблему, запустите Visual Studio откройте **присоединение к процессу** диалоговое окно, в **Отладка** меню и найдите процесс, необходимо выполнить отладку в **доступные процессы**списка. Если вы не знаете имя процесса, просмотрите **JIT – отладчик Visual Studio** диалоговое окно и запишите идентификатор процесса. Выберите процесс в **доступные процессы** списке и нажмите кнопку **Attach**. В **JIT – отладчик Visual Studio** диалоговое окно, нажмите кнопку **нет** чтобы закрыть диалоговое окно.
+    Чтобы решить эту проблему, в Visual Studio откройте **Отладка** > **присоединение к процессу**и найдите процесс, необходимо выполнить отладку в **доступные процессы** список. Если вы не знаете имя процесса, найти идентификатор процесса в **JIT – отладчик Visual Studio** диалоговое окно. Выберите процесс в **доступные процессы** и выберите **Attach**. Выберите **нет** отклонить Just-In-Time диалоговое окно отладчика.
 
 - **Не удалось запустить отладчик, поскольку пользователь не вошел в систему.**
 
-    Данная ошибка возникает, когда JIT–отладка пытается запустить Visual Studio на компьютере, на котором нет пользователей, вошедших в консоль. Так как пользователи, выполнившие вход, отсутствуют, также отсутствует сеанс пользователя, в котором следовало бы отображать диалоговое окно JIT–отладки.
+    Нет пользователей, вошедших в консоль, поэтому отсутствует сеанс пользователя для отображения Just-In-Time отладка диалогового окна.
 
     Для решения этой проблемы необходимо войти в компьютер.
 
 - **Класс не зарегистрирован.**
 
-    Эта ошибка указывает, что отладчик пытался создать класс COM, который не зарегистрирован, вероятно, из–за проблем с установкой.
+    Отладчик пытался создать класс COM, который не зарегистрирован, вероятно, из-за проблем с установкой.
 
-    Чтобы решить эту проблему, используйте установочный диск для переустановки или восстановления установки Visual Studio.
+    Чтобы устранить эту проблему, используйте установщик Visual Studio для переустановки или восстановления установки Visual Studio.
 
 ## <a name="see-also"></a>См. также
- [Безопасность отладчика](../debugger/debugger-security.md) [Общие сведения об отладчике](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, отладка, диалоговое окно "Параметры"](../debugger/just-in-time-debugging-options-dialog-box.md) [предупреждение системы безопасности: присоединение к процессу, принадлежит недоверенному пользователю не может быть опасно. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Основы отладки](../debugger/getting-started-with-the-debugger.md)
+- [Параметры, отладка, Just-In-Time диалоговое окно](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Предупреждение безопасности. Присоединение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

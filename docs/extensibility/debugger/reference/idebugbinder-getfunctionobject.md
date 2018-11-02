@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject | Документы Microsoft
+title: IDebugBinder::GetFunctionObject | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c6c983b07e2e2a7a393fac86999df4cb2b492
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32529033107d01bb8715dad80c3202d7307c931a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880069"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Этот метод возвращает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объект, используемый для создания параметров функции.  
@@ -44,7 +44,7 @@ int GetFunctionObject(
  [out] Возвращает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс, который используется для создания параметров функции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

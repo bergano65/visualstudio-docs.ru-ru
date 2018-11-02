@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Clone | Документы Microsoft
+title: IDiaEnumSymbolsByAddr::Clone | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d60ad08c6ace9b0f130b0430e351689539480d97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f41e3d5c933e331deb8d7e4fb9486cf91018dcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868993"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 Создает копию объекта.  
@@ -34,10 +34,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Параметры  
  ppenum  
- [out] Возвращает [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) объект, который содержит повторяющийся перечислителя. Символы не повторяются, только перечислитель.  
+ [out] Возвращает [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) , содержащий копию перечислителя. Символы не повторяются, только перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

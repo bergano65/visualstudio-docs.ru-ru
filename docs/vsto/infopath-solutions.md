@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078bbbf448b1a940461f2859601944627b7c2394
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670862"
 ---
 # <a name="infopath-solutions"></a>решения InfoPath
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office InfoPath 2013 и InfoPath 2010. В Office 2016 InfoPath отсутствует.  
@@ -47,7 +47,7 @@ ms.locfileid: "35673893"
 ## <a name="automate-infopath-by-using-an-add-in"></a>Автоматизация InfoPath с помощью надстройки  
  Чтобы получить доступ к объектной модели InfoPath из надстройки VSTO Office, созданной с помощью средств разработки решений на базе Office в Visual Studio, используйте поле `Application` класса `ThisAddIn` в своем проекте. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.InfoPath.Application> , представляющий текущий экземпляр InfoPath. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- При вызове объектной модели InfoPath из надстройки VSTO, можно использовать типы, предоставляемые в основной сборке взаимодействия для InfoPath. Основная сборка взаимодействия представляет собой мост между управляемым кодом в надстройке VSTO и объектной моделью COM в InfoPath. Все типы в основной сборке взаимодействия InfoPath определены в пространстве имен <xref:Microsoft.Office.Interop.InfoPath> . Дополнительные сведения об основной сборке взаимодействия InfoPath см. в разделе [о Microsoft Office InfoPath основной сборки взаимодействия](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Как правило, Дополнительные сведения об основных сборках взаимодействия см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [основных сборок взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
+ При вызове объектной модели InfoPath из надстройки VSTO, можно использовать типы, предоставляемые в основной сборке взаимодействия для InfoPath. Основная сборка взаимодействия представляет собой мост между управляемым кодом в надстройке VSTO и объектной моделью COM в InfoPath. Все типы в основной сборке взаимодействия InfoPath определены в пространстве имен <xref:Microsoft.Office.Interop.InfoPath> . Дополнительные сведения об основной сборке взаимодействия InfoPath см. в разделе [о Microsoft Office InfoPath основной сборки взаимодействия](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Как правило, Дополнительные сведения об основных сборках взаимодействия см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [основных сборок взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>Настройка пользовательского интерфейса для InfoPath с помощью надстройки  
  При создании надстройки VSTO для InfoPath, у вас есть несколько вариантов настройки пользовательского интерфейса. Некоторые из них указаны в следующей таблице.  
@@ -60,10 +60,10 @@ ms.locfileid: "35673893"
  Дополнительные сведения о настройке пользовательского интерфейса InfoPath и других приложений Microsoft Office, см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>См. также  
- [Об основной сборке взаимодействия Microsoft Office InfoPath](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
+ [Об основной сборке взаимодействия Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   

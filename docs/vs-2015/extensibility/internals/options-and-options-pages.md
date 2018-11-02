@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816356"
 ---
 # <a name="options-and-options-pages"></a>Параметры и страницы параметров
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "49261044"
 ## <a name="option-attributes-and-layout"></a>Атрибуты параметра и макет  
  Пользовательский интерфейс (UI), предоставляющий страницы определяет внешний вид параметров на странице настраиваемых параметров. Макета, добавления меток и описание параметров на странице универсальные параметры определяются следующие атрибуты:  
   
--   <xref:System.ComponentModel.CategoryAttribute> Определяет категорию параметра.  
+- <xref:System.ComponentModel.CategoryAttribute> Определяет категорию параметра.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> Определяет отображаемое имя параметра.  
+- <xref:System.ComponentModel.DisplayNameAttribute> Определяет отображаемое имя параметра.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.  
+- <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.  
   
-    > [!NOTE]
-    >  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Рассмотрим следующий фрагмент кода:  
+  Рассмотрим следующий фрагмент кода:  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- Параметр OptionInteger отображается на странице "Параметры", как **целочисленный параметр** в **параметры** категории. Если параметр выбран, описание, **моей целочисленный параметр**, отображается в поле «Описание».  
+  Параметр OptionInteger отображается на странице "Параметры", как **целочисленный параметр** в **параметры** категории. Если параметр выбран, описание, **моей целочисленный параметр**, отображается в поле «Описание».  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Доступ к страниц параметров из другого пакета VSPackage  
  Пакет VSPackage, который содержит и администрирует страницы параметров можно получить доступ программными средствами из другого пакета VSPackage с помощью модели автоматизации. Например в следующем коде VSPackage регистрируется как размещение страницы параметров.  

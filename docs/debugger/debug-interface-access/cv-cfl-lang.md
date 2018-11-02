@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG | Документы Microsoft
+title: CV_CFL_LANG | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909920"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Задает язык исходного кода приложения или связанном модуле.  
@@ -50,7 +50,7 @@ typedef enum CV_CFL_LANG {
   
 ## <a name="elements"></a>Элементы  
  CV_CFL_C  
- Язык приложения — C.  
+ Язык — C.  
   
  CV_CFL_CXX  
  Язык приложения — C++.  
@@ -62,43 +62,43 @@ typedef enum CV_CFL_LANG {
  Язык приложения — Microsoft Macro Assembler.  
   
  CV_CFL_PASCAL  
- Язык приложения — стиль языка Pascal.  
+ Язык приложения — Pascal.  
   
  CV_CFL_BASIC  
- Язык приложения — BASIC.  
+ Язык — BASIC.  
   
  CV_CFL_COBOL  
  Язык приложения — COBOL.  
   
  CV_CFL_LINK  
- Приложения — это модуль, создаваемой компоновщиком.  
+ Приложения — это модуль компоновщиком.  
   
  CV_CFL_CVTRES  
  Приложение — преобразовать с помощью средства CVTRES модуля ресурсов.  
   
  CV_CFL_CVTPGD  
- Приложения — это модуль POGO оптимизирован, созданные с помощью средства CVTPGD.  
+ Приложения — это модуль POGO оптимизированных для операций, созданных с помощью средства CVTPGD.  
   
  CV_CFL_CSHARP  
- Язык приложения — C#.  
+ Приложение языком является C#.  
   
  CV_CFL_VB  
- Язык приложения является Visual Basic.  
+ Язык приложения — Visual Basic.  
   
  CV_CFL_ILASM  
- Язык приложения — промежуточный язык сборки (то есть Common Language Runtime (CLR)).  
+ Язык приложения — сборке на промежуточном языке (то есть сборка Common Language Runtime (CLR)).  
   
  CV_CFL_JAVA  
  Язык приложения — Java.  
   
  CV_CFL_JSCRIPT  
- Язык приложения — Jscript.  
+ Язык приложения является Jscript.  
   
  CV_CFL_MSIL  
- Язык приложения — Неизвестный Microsoft промежуточного языка MSIL, возможно результат использования [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключения.  
+ Язык приложения — Неизвестный язык MSIL (Microsoft Intermediate), возможно, результат применения [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключения.  
   
  CV_CFL_HLSL  
- Приложения выбран язык шейдера высокий уровень.  
+ High Level Shader Language — язык приложения  
   
 ## <a name="remarks"></a>Примечания  
  Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) метод.  

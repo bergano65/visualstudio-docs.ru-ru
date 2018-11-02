@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5895f71635262e7f55e13f36b921e00b0d62047f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864287"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: следует правильно реализовывать методы сериализации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ ms.locfileid: "49273615"
 ## <a name="rule-description"></a>Описание правила  
  Метод назначается обработчику событий сериализации, применив один из следующих атрибутов сериализации события:  
   
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
   
- Обработчики событий сериализации принимать один параметр типа <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, возвращают `void`и иметь `private` видимости.  
+  Обработчики событий сериализации принимать один параметр типа <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, возвращают `void`и иметь `private` видимости.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение данного правила, исправьте подпись, тип возвращаемого значения или видимость обработчика событий сериализации.  

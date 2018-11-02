@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_sourceCompression | Документы Microsoft
+title: IDiaInjectedSource::get_sourceCompression | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a56d1eac34c5076be8dbcd7b4e38363a12fe392f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46ad24a6bf8e4efbcb0c1a0009bb8210247ccb5e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941364"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-Возвращает признак источник сжатия, используемый.  
+Получает индикатор того, источник сжатия, используемый.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_sourceCompression (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает индикатор источник сжатия. Нулевое значение указывает, использование сжатия не источника.  
+ [out] Возвращает индикатор, источник сжатия, используемый. Нулевое значение указывает, что было использовано без сжатия источника.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод возвращает значение для компилятора. Например компилятор может использовать сжатие длин кодирования или Хаффмана стиль.  
+ Значение, возвращаемое этим методом зависит от используемого компилятора. Предположим, например компилятор использует сжатие длин кодирования или стиле Хаффмана.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

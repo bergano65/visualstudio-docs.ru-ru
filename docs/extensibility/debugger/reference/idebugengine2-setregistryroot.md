@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot | Документы Microsoft
+title: IDebugEngine2::SetRegistryRoot | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 606ddb5380da2bfe0c75d20bc70bf0da911ea4e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07e62715bc5bdce655c4fa5493bb9043ce241dca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939739"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
-Задает корневой раздел реестра для модуля отладки (DE).  
+Задает корневой элемент реестра для обработчика отладки (DE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,10 +41,10 @@ int SetRegistryRoot(
   
 #### <a name="parameters"></a>Параметры  
  `pszRegistryRoot`  
- [in] Корневой раздел реестра для использования.  
+ [in] Корень реестра для использования.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Этот метод позволяет [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] для указания альтернативного корневая папка реестра, DE следует использовать для получения параметров реестра; например, «HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp».  

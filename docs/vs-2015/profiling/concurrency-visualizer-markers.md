@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63a4844f83961b2d060f9f9a574e0aaeb44991a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cfbc1f3fd18b14891ecac825545bbdaeddad039
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830201"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49264972"
 ## <a name="known-sources-of-markers"></a>Известные источники маркеров  
  Создавать маркеры может любой поставщик ETW, соответствующий определенным условиям. Визуализатор параллелизма можно настроить для прослушивания дополнительных источников событий для маркеров. По умолчанию он прослушивает указанные далее источники событий.  
   
--   [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)  
+- [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)  
   
--   [Библиотека параллельных задач (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [Библиотека параллельных задач (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
--   [Поток данных](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Поток данных](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
--   [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [Среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
--   [Поддержка маркеров сценария](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Поддержка маркеров сценария](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
- На вкладке "Маркеры" в диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) можно управлять отображением маркеров из различных источников в визуализаторе параллелизма, а также отфильтровать маркеры по уровню важности и категории.  
+  На вкладке "Маркеры" в диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) можно управлять отображением маркеров из различных источников в визуализаторе параллелизма, а также отфильтровать маркеры по уровню важности и категории.  
   
 ## <a name="markers-from-eventsource"></a>Маркеры из EventSource  
  Визуализатор параллелизма может также отображать события EventSource.  Дополнительные сведения см. в статье [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Визуализация событий EventSource как маркеров).  

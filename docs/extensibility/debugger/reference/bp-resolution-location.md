@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | Документы Microsoft
+title: BP_RESOLUTION_LOCATION | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 032228596773d4a5a164f904c1caae161b693f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926128"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-Определяет структуру разрешения расположения точки останова.  
+Задает структуру разрешения расположения точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,7 +50,7 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>Участники  
  `bpType`  
- Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, указывающее способ интерпретации `bpResLocation` union или `unionmemberX` члены.  
+ Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, указывающее способ интерпретации `bpResLocation` объединение или `unionmemberX` членов.  
   
  `bpResLocation.bpresCode`  
  [C++] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.  
@@ -59,24 +59,24 @@ public struct BP_RESOLUTION_LOCATION {
  [C++] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.  
   
  `bpResLocation.unused`  
- [C++] Прототип.  
+ [C++] Заполнитель.  
   
  `unionmember1`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember2`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember3`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember4`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.  
   
- [Только в C#] `unionmemberX` Члены, интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` значения затем через определяет содержимого каждого `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. Далее приведен пример способ интерпретации этой структуры в C#.  
+ [Только для C#] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` поперек затем значение с целью определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации этой структуры в C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -121,7 +121,7 @@ namespace MyPackage
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   

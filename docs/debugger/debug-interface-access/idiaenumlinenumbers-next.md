@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers::Next | Документы Microsoft
+title: IDiaEnumLineNumbers::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6015658a72c264f1421c782a1e6e6c28038748a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a8c00aa5b3d6e6a9b9251075cc5cc065119cc95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910060"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
-Возвращает указанное количество номеров строк в порядке перечисления.  
+Возвращает указанное количество номеров строк в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Количество номеров строк в перечислителе требуется получить.  
+ [in] Число номеров строк в перечислителе требуется получить.  
   
  rgelt  
- [out] Возвращает массив [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекты, представляющие номера нужной строке.  
+ [out] Возвращает массив [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекты, представляющие числа нужной строке.  
   
  pceltFetched  
- [out] Возвращает количество номеров строк в выбранных перечислителя.  
+ [out] Возвращает количество номеров строк в выбранных перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии без дополнительных номеров строк. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` при наличии без несколько номеров строк. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

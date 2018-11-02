@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Документы Microsoft
+title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58b4896b7935926904ecf37f4d8d130618d5961
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7264648775f078af16a0a26ecc3bba3a129374c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909867"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-Возвращает тип, заданный тип-примитив.  
+Возвращает тип, учитывая его тип-примитив.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,13 +42,13 @@ int GetTypeFromPrimitive(
   
 #### <a name="parameters"></a>Параметры  
  `dwCorElementType`  
- [in] Значение из [CorElementType перечисление](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.  
+ [in] Значение из [перечисление CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.  
   
  `ppType`  
  [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющий тип.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

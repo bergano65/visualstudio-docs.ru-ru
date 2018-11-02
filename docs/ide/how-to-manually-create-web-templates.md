@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826405"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 
@@ -30,33 +30,33 @@ ms.locfileid: "39178947"
 
 1. Создайте веб-проект.
 
-1. Измените или удалите файлы в проекте или добавьте в него новые файлы.
+2. Измените или удалите файлы в проекте или добавьте в него новые файлы.
 
-1. Создайте XML-файл и сохраните его с расширением *VSTEMPLATE* в одном каталоге с проектом. Не добавляйте его в проект в Visual Studio.
+3. Создайте XML-файл и сохраните его с расширением *VSTEMPLATE* в одном каталоге с проектом. Не добавляйте его в проект в Visual Studio.
 
-1. Измените файл *VSTEMPLATE* с XML-кодом, чтобы предоставить метаданные шаблона проекта. Дополнительные сведения см. в [приведенных ниже примерах](#example).
+4. Измените файл *VSTEMPLATE* с XML-кодом, чтобы предоставить метаданные шаблона проекта. Дополнительные сведения см. в [приведенных ниже примерах](#example).
 
-1. Найдите в файле *VSTEMPLATE* элемент `ProjectType` и задайте `Web` в качестве текстового значения.
+5. Найдите в файле *VSTEMPLATE* элемент `ProjectType` и задайте `Web` в качестве текстового значения.
 
-1. После элемента `ProjectType` добавьте элемент `ProjectSubType` и задайте язык программирования этого шаблона в качестве текстового значения. Этот язык программирования может принимать одно из следующих значений:
+6. После элемента `ProjectType` добавьте элемент `ProjectSubType` и задайте язык программирования этого шаблона в качестве текстового значения. Этот язык программирования может принимать одно из следующих значений:
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    Пример:
+     Пример:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Выберите файлы в шаблоне (включая файл *VSTEMPLATE*), щелкните их правой кнопкой мыши и последовательно выберите **Отправить** > **Сжатая ZIP-папка**. Файлы сжимаются в *ZIP*-файл.
+7. Выберите файлы в шаблоне (включая файл *VSTEMPLATE*), щелкните их правой кнопкой мыши и последовательно выберите **Отправить** > **Сжатая ZIP-папка**. Файлы сжимаются в *ZIP*-файл.
 
-1. Поместите *ZIP*-файл шаблона в каталог шаблонов проекта Visual Studio. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\ProjectTemplates*.
+8. Поместите *ZIP*-файл шаблона в каталог шаблонов проекта Visual Studio. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\ProjectTemplates*.
 
 ## <a name="example"></a>Пример
 

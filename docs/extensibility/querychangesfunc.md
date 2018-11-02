@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81b554db151577298bc45fa9be53e589bba75c7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879185"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Это функция обратного вызова, используемые [SccQueryChanges](../extensibility/sccquerychanges-function.md) операцию, чтобы перечислить коллекцию имен файлов и определить состояние каждого файла.  
@@ -47,7 +47,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|  
@@ -85,7 +85,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Код, указывающий состояние файла:  
   
-|Код|Описание:|  
+|Код|Описание|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|Не удается определить, какие изменения были внесены.|  
 |`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  

@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863637"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ ms.locfileid: "49244625"
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Включение шаблона элемента для использования в проекте Магазина  
   
-1.  Выполните шаги из предыдущей процедуры, чтобы экспортировать шаблон элемента.  
+1. Выполните шаги из предыдущей процедуры, чтобы экспортировать шаблон элемента.  
   
-2.  Извлеките VSTEMPLATE-файл из ZIP-файла, который был скопирован в папку \Users\\*имя_пользователя*\Documents\Visual Studio *версия*\Templates\ItemTemplates\ (или **My Exported Templates**).  
+2. Извлеките VSTEMPLATE-файл из ZIP-файла, который был скопирован в папку \Users\\*имя_пользователя*\Documents\Visual Studio *версия*\Templates\ItemTemplates\ (или **My Exported Templates**).  
   
-3.  Откройте VSTEMPLATE-файл в Visual Studio.  
+3. Откройте VSTEMPLATE-файл в Visual Studio.  
   
-4.  Для проекта C# Магазина Windows 8.1 в VSTEMPLATE-файле добавьте следующий XML-код между открывающим и закрывающим тегами `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4. Для проекта C# Магазина Windows 8.1 в VSTEMPLATE-файле добавьте следующий XML-код между открывающим и закрывающим тегами `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
   
-     Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-     В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить элементы <ProjectTpe> и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> для указания других языков и типов проектов.  
+    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить элементы <ProjectTpe> и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> для указания других языков и типов проектов.  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     Сведения о других возможных значениях TemplateGroupID см. в разделе [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)). Полный справочник по VSTEMPLATE-файлу см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+    Сведения о других возможных значениях TemplateGroupID см. в разделе [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)). Полный справочник по VSTEMPLATE-файлу см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
-5.  Сохраните VSTEMPLATE-файл в Visual Studio и закройте его.  
+5. Сохраните VSTEMPLATE-файл в Visual Studio и закройте его.  
   
-6.  Скопируйте VSTEMPLATE-файл и снова вставьте его в ZIP-файл, расположенный в папке \Users\\*имя_пользователя*\Documents\Visual Studio *версия*\Templates\ItemTemplates\.  
+6. Скопируйте VSTEMPLATE-файл и снова вставьте его в ZIP-файл, расположенный в папке \Users\\*имя_пользователя*\Documents\Visual Studio *версия*\Templates\ItemTemplates\.  
   
-     Если откроется диалоговое окно **Копирование файла**, выберите параметр **Копировать с заменой**.  
+    Если откроется диалоговое окно **Копирование файла**, выберите параметр **Копировать с заменой**.  
   
- Теперь можно добавить основанный на этом шаблоне элемент в проект [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] с помощью диалогового окна **Добавление нового элемента**.  
+   Теперь можно добавить основанный на этом шаблоне элемент в проект [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] с помощью диалогового окна **Добавление нового элемента**.  
   
- Дополнительные сведения об именах параметров см. в разделе [Параметры шаблона](../ide/template-parameters.md).  
+   Дополнительные сведения об именах параметров см. в разделе [Параметры шаблона](../ide/template-parameters.md).  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>Включение шаблонов для конкретных подтипов проектов  
   
-1.  Среда разработки позволяет предоставлять элементы проекта из диалогового окна "Добавление элемента" для определенных типов проектов. Используйте эту процедуру, чтобы сделать пользовательские элементы доступными для проектов Windows, веб-сайтов, Office или баз данных.  
+1. Среда разработки позволяет предоставлять элементы проекта из диалогового окна "Добавление элемента" для определенных типов проектов. Используйте эту процедуру, чтобы сделать пользовательские элементы доступными для проектов Windows, веб-сайтов, Office или баз данных.  
   
-     Найдите в VSTEMPLATE-файле элемент ProjectType для шаблона элемента.  
+    Найдите в VSTEMPLATE-файле элемент ProjectType для шаблона элемента.  
   
-     Добавьте элемент [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) сразу после элемента ProjectType.  
+    Добавьте элемент [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) сразу после элемента ProjectType.  
   
-2.  Задайте для элемента одно из следующих текстовых значений:  
+2. Задайте для элемента одно из следующих текстовых значений:  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  База данных  
+   3. База данных  
   
-    4.  Интернет  
+   4. Интернет  
   
-     Например, `<ProjectSubType>Database</ProjectSubType>`.  
+      Например, `<ProjectSubType>Database</ProjectSubType>`.  
   
-     В следующем примере показан шаблон элемента, доступный для проектов Office.  
+      В следующем примере показан шаблон элемента, доступный для проектов Office.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Создание шаблона элемента вручную без использования мастера экспорта шаблона  
   

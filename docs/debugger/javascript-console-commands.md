@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823753"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения этого раздела применяются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Сведения о поддерживаемых командах консоли в приложениях Cordova см. в разделе [отладка приложения](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах F12 для Internet Explorer, см. в разделе [в этом разделе](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Сведения этого раздела применяются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "44282213"
 |`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
 |`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
 |`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с помощью JavaScript.|Не поддерживается.|  
-|`select(element)`|Выбирает заданный элемент HTML `element` в [проводника DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Выбирает заданный элемент HTML `element` в [проводнике DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Запускает таймер, определяемый дополнительным параметром `name` . При применении с командой `console.timeEnd`вычисляет время, прошедшее между моментами действия команд `time` и `timeEnd`, и отправляет результат (в мс) на консоль, используя строку `name` в качестве префикса. Используется для включения инструментирования кода приложения для измерения производительности.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Останавливает таймер, определяемый дополнительным параметром `name` . См. консольную команду `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Отправляет данные трассировки стека в окно консоли. Трассировка включает весь стек вызовов, в частности имя файла, номер строки и номер столбца.|`console.trace();`|  
@@ -70,7 +70,7 @@ ms.locfileid: "44282213"
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  
 |`$$(selector)`|Возвращает массив элементов, соответствующих указанному селектору, при помощи синтаксиса селектора CSS. Это команда быстрого доступа к `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Позволяет изменить контекст для оценки выражений с назначенного по умолчанию окна верхнего уровня страницы на окно заданного фрейма. Вызов `cd()` без параметров возвращает контекст в окно верхнего уровня.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Выбирает указанный элемент в [проводника DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Выбирает указанный элемент в [проводнике DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Возвращает визуализатор для заданного объекта. Визуализатор можно использовать для изучения свойств в окне консоли.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Проверка наличия консольной команды  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Поддерживаются следующие шаблоны подстановки:  
   
--   %s — строка  
-     %i — целое число  
-     %d — целое число  
-     %f — число с плавающей запятой  
-     %o — объект  
-     %b — двоичные данные  
-     %x — шестнадцатеричные данные  
-     %e — экспонента  
+- %s — строка  
+   %i — целое число  
+   %d — целое число  
+   %f — число с плавающей запятой  
+   %o — объект  
+   %b — двоичные данные  
+   %x — шестнадцатеричные данные  
+   %e — экспонента  
   
- Несколько примеров использования шаблонов подстановки в `console.log`:  
+  Несколько примеров использования шаблонов подстановки в `console.log`:  
   
 ```javascript  
 var user = new Object();  

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram | Документы Microsoft
+title: IDebugEngine2::DestroyProgram | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e85eb457a16de03fa989d86109a8705c3b36174
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1376f6b235bc9fa492f35557118a1857a36defa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883280"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Сообщает модуль отладки (DE) необычайно завершен указанную программу, которую DE следует очистить все ссылки на программу и отправки программы удаления события.  
+Информирует модуля отладки (DE), то программа, указанная операция была прервана необычайно и что DE следует удалить все ссылки на программы и события уничтожения отправки программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,12 +44,12 @@ int DestroyProgram(
  [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, которая необычайно был завершен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- После вызова этого метода, DE впоследствии отправляет [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) события диспетчера сеанса отладки (SDM).  
+ После вызова этого метода, DE отправляет [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) событие диспетчер отладки сеансов (SDM).  
   
- Этот метод не реализован (возвращает `E_NOTIMPL`) Если DE выполняется в одном процессе с отлаживаемой программы. Этот метод реализуется только в том случае, если DE выполняется в том же процессе, что SDM.  
+ Этот метод не реализован (возвращает `E_NOTIMPL`) Если DE выполняется в том же процессе, что отлаживаемой программы. Этот метод реализуется только в том случае, если DE выполняется в том же процессе, что SDM.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

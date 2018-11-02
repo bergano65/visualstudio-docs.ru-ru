@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Документы Microsoft
+title: DEBUG_PROPERTY_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4466d74d0e19b898b3c377c67a14f7c39922d915
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847101"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Содержит сведения о свойстве отладки.  
@@ -53,7 +53,7 @@ public struct DEBUG_PROPERTY_INFO {
   
 ## <a name="members"></a>Участники  
  dwValidFields  
- Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которое указывает, какие поля заполнены.  
+ Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисление, указывающее, какие поля заполнены.  
   
  bstrFullName  
  Полное имя свойства.  
@@ -74,9 +74,9 @@ public struct DEBUG_PROPERTY_INFO {
  Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.  
   
 ## <a name="remarks"></a>Примечания  
- Свойство является объектом иерархический характер, который имеет имя, тип и значение. Например свойство можно описать локальных переменных, параметров, Контрольные значения переменных и выражений и регистры.  
+ Свойство является объектом иерархическую сущность, которая имеет имя, тип и значение. Например свойство можно описать, локальные переменные, параметры, переменные контрольных значений и выражений и регистров.  
   
- Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где он заполняется. Эта структура также возвращается как часть списка из этой структуры [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.  
+ Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где он заполняется. Эта структура также возвращается как часть списка этой структуры из [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -86,7 +86,7 @@ public struct DEBUG_PROPERTY_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

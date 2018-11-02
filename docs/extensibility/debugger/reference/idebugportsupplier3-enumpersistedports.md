@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Документы Microsoft
+title: IDebugPortSupplier3::EnumPersistedPorts | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4240a3ba82f3787c1e2e2da9f14c1cee5a8d177e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1bb9348c0dfae477d0c306868991acd13e7a487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856058"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Этот метод извлекает объект, который позволяет использовать перечисления списка материализованный портов.  
+Этот метод извлекает объект, позволяющий перечисления из списка сохраненных портов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
   
 #### <a name="parameters"></a>Параметры  
  `PortNames`  
- [in] Объект [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) структура, содержащая список имен портов для поиска и возврата материализованный портов. Будут возвращены только порты, сохраненного с этими именами.  
+ [in] Объект [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) структура, содержащая список имен портов для поиска и возврата материализованных портов. Будут возвращены только порты, сохраненные с этими именами.  
   
  `ppEnum`  
- [out] Объект, реализующий интерфейс [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) интерфейса.  
+ [out] Объект, реализующий [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Материализованные порты загружаются в том случае, когда создается и сохраняется при удалении поставщика порта поставщика порта.  
+ Сохраненные порты загружаются при создании экземпляра поставщика порта и сохранить при уничтожении поставщика порта.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   

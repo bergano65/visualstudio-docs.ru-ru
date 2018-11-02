@@ -10,12 +10,12 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1938a3a8b5b0eb3c0cc7b062d6d43c4e869397eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851981"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Практическое: предоставляет службу для асинхронных Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,11 +89,11 @@ ms.locfileid: "49185673"
 ## <a name="registering-a-service"></a>Регистрация службы  
  Чтобы зарегистрировать службу, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> к пакету, который предоставляет службу. Существует два отличия от синхронной службы регистрации.  
   
--   Если вы являетесь Автозагрузка пакета, необходимо добавить <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad значение для атрибута. Дополнительные сведения о Автозагрузка пакетов VSPackage, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
+- Если вы являетесь Автозагрузка пакета, необходимо добавить <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad значение для атрибута. Дополнительные сведения о Автозагрузка пакетов VSPackage, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
   
--   Необходимо добавить **AllowsBackgroundLoading = true** поле <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Дополнительные сведения о PackageRegistrationAttribute, см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+- Необходимо добавить **AllowsBackgroundLoading = true** поле <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Дополнительные сведения о PackageRegistrationAttribute, см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Ниже приведен пример AsyncPackage с регистрацию асинхронная служба::  
+  Ниже приведен пример AsyncPackage с регистрацию асинхронная служба::  
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

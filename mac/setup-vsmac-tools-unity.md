@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836350"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Настройка инструментов Visual Studio для Mac для Unity
 
@@ -57,11 +57,11 @@ ms.locfileid: "37057103"
 
 1. В меню Visual Studio выберите **Расширения...**
 
-  ![Выберите "Расширения"](media/setup-vsmac-tools-unity-image1.png)
+   ![Выберите "Расширения"](media/setup-vsmac-tools-unity-image1.png)
 
-1. Разверните раздел "Разработка игр" и подтвердите наличие записи инструментов Visual Studio для Mac для Unity.
+2. Разверните раздел "Разработка игр" и подтвердите наличие записи инструментов Visual Studio для Mac для Unity.
 
-  ![Просмотр записи Unity](media/setup-vsmac-tools-unity-image2.png)
+   ![Просмотр записи Unity](media/setup-vsmac-tools-unity-image2.png)
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Настройка Unity для работы с Visual Studio для Mac
 
@@ -69,16 +69,16 @@ ms.locfileid: "37057103"
 
 1. Выберите **Параметры...**  в меню Unity.
 
-  ![Выберите "Параметры"](media/setup-vsmac-tools-unity-image4.png)
+   ![Выберите "Параметры"](media/setup-vsmac-tools-unity-image4.png)
 
-1. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
+2. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
 
-1. В раскрывающемся списке внешнего редактора скриптов выберите элемент **Visual Studio**, если он присутствует, в противном случае нажмите кнопку **Обзор...**
+3. В раскрывающемся списке внешнего редактора скриптов выберите элемент **Visual Studio**, если он присутствует, в противном случае нажмите кнопку **Обзор...**
 
-  ![Выберите Visual Studio](media/setup-vsmac-tools-unity-image5.png)
+   ![Выберите Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-1. Если вы нажали кнопку**Обзор...**, перейдите в каталог приложений, выберите Visual Studio и нажмите кнопку **Открыть**.
+4. Если вы нажали кнопку**Обзор...**, перейдите в каталог приложений, выберите Visual Studio и нажмите кнопку **Открыть**.
 
-  ![Выберите "Открыть"](media/setup-vsmac-tools-unity-image6.png)
+   ![Выберите "Открыть"](media/setup-vsmac-tools-unity-image6.png)
 
-1. Выбрав Visual Studio в списке **External Script Editor** (Внешний редактор скриптов), закройте диалоговое окно параметров для завершения процесса настройки.
+5. Выбрав Visual Studio в списке **External Script Editor** (Внешний редактор скриптов), закройте диалоговое окно параметров для завершения процесса настройки.

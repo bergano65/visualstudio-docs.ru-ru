@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672812"
 ---
 # <a name="common-tasks-in-office-programming"></a>Общие задачи программирования Office
   Этот раздел призван помочь вам найти ответы на следующие категории часто задаваемых вопросов о программировании решений Office с помощью Visual Studio:  
@@ -47,7 +47,7 @@ ms.locfileid: "35673986"
   
 -   [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Практическое: обновления Office solutions](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
+-   [Практическое: обновления Office solutions](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
 -   [Практическое: основные сборки взаимодействия Office установки](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35673986"
   
 ##  <a name="deployment"></a> Задачи развертывания  
   
--   [Практическое: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Практическое: публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Практическое: установка решения ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
+-   [Практическое: установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Практическое: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Практическое: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Практическое: Подготовка служб IIS для развертывания решений Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Практическое: Подготовка служб IIS для развертывания решений Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Практическое: обновление развернутых решений Office](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Практическое: обновление развернутых решений Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Практическое: изменение пути установки решения Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Практическое: изменение пути установки решения Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>См. также  
  [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

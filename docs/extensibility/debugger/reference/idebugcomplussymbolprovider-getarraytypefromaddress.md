@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Документы Microsoft
+title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c9bb5fab8386046f9b409e0d3ef801b4020e88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 189bae80873e100be3371813add133982926edab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915234"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Извлекает введите сведения о заданного массива, указанного адреса его отладки.  
+Извлекает сведения о типе о заданного массива, указанного адреса его отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,7 +48,7 @@ int GetArrayTypeFromAddress(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
+ [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
   
  `pSig`  
  [in] Массив, для проверки.  
@@ -57,13 +57,13 @@ int GetArrayTypeFromAddress(
  [in] Длина в байтах `pSig` массива.  
   
  `ppField`  
- [out] Возвращает тип массива, представленный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейса.  
+ [out] Возвращает тип, представленный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  

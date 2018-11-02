@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850065"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
 Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. В этой статье описаны причины этого требования, а также соответствующая процедура.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Параллельные сборки и потоки  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, однако такие системы не должны вызывать функции сборки из обратных вызовов, предоставляемых диспетчеру сборок.  
-  
+
  Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это требование означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Использование IVSBuildManagerAccessor  
  Следующий код описывает метод, который система проектов может использовать для запуска сборки:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

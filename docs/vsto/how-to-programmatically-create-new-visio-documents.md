@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671564"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Практическое: программное создание документов Visio
-  Когда вы создаете новый документа документа Microsoft Office Visio, можно добавить его `Microsoft.Office.Interop.Visio.Documents` коллекцию открытых документов Visio. Следовательно `Microsoft.Office.Interop.Visio.Documents.Add` метод создает новый документ Visio. Дополнительные сведения см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) .  
+  При создании нового документа Microsoft Office Visio вы добавляете его в коллекцию `Microsoft.Office.Interop.Visio.Documents` открытых документов Visio. Соответственно, метод `Microsoft.Office.Interop.Visio.Documents.Add` создает новый документ Visio. Дополнительные сведения см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .  
   
 ## <a name="create-new-blank-documents"></a>Создание новых пустых документов  
   
 ### <a name="to-create-a-new-document"></a>Создание нового документа  
   
--   Используйте `Microsoft.Office.Interop.Visio.Documents.Add` метод для создания нового пустого документа не зависит от шаблона.  
+-   Используйте метод `Microsoft.Office.Interop.Visio.Documents.Add` для создания нового пустого документа не на основе шаблона.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
 ## <a name="create-documents-copied-from-existing-documents"></a>Создание документов, скопированных из существующих документов  
- `Microsoft.Office.Interop.Visio.Documents.Add` Метод может создать новый документ, который является копией существующего документа Visio. Вы должны указать имя файла и полный путь к диаграмме.  
+ Метод `Microsoft.Office.Interop.Visio.Documents.Add` может создать новый документ, который является копией существующего документа Visio. Вы должны указать имя файла и полный путь к диаграмме.  
   
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Создание нового документа, скопированного из существующего документа  
   
--   Вызовите `Microsoft.Office.Interop.Visio.Documents.Add` метод и указать путь к диаграмме Visio.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Documents.Add` и укажите путь к диаграмме Visio.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Создание наборов элементов, скопированных из существующих наборов элементов  
- Метод [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) может создать новый набор элементов, который является копией существующего набора элементов Visio. Вы должны указать имя файла и полный путь к набору элементов.  
+ Метод [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) может создать новый набор элементов, который является копией существующего набора элементов Visio. Вы должны указать имя файла и полный путь к набору элементов.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Создание нового набора элементов, скопированного из существующего набора элементов  
   
--   Вызовите `Microsoft.Office.Interop.Visio.Documents.Add` метод и укажите путь к набору элементов.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Documents.Add` и укажите путь к набору элементов.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
@@ -60,7 +60,7 @@ ms.locfileid: "35256748"
   
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Создание нового документа на основе существующего шаблона  
   
--   Вызовите `Microsoft.Office.Interop.Visio.Documents.Add` метод и указать путь к шаблону.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Documents.Add` и укажите путь к шаблону.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  

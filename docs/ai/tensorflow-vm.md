@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30306725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911347"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
 
@@ -51,20 +51,20 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - В скачанном репозитории с образцами выберите папку **Tensorflow Examples** и откройте файл **TensorflowExamples.sln**.
 
-![Открытие проекта](media\tensorflow-local\open-project.png)
+   ![Открытие проекта](media/tensorflow-local/open-project.png)
 
-![Открытие решения](media\tensorflow-local\open-solution.png)
+   ![Открытие решения](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Добавление удаленной виртуальной машины Azure
 
 В обозревателе сервера щелкните правой кнопкой мыши узел **Удаленные компьютеры** в узле "Средства ИИ" и выберите пункт "Добавить…". Введите отображаемое имя удаленного компьютера, IP-узел, порт SSH, имя пользователя и пароль или файл ключа.
 
-![Добавление нового удаленного компьютера](media\tensorflow-vm\add-remote-vm.png)
+![Добавление нового удаленного компьютера](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>Отправка задания в виртуальную машину Azure
 В **обозревателе решений** щелкните правой кнопкой мыши проект MNIST и выберите команду **Отправить задание**.
 
-![Отправка задания на удаленный компьютер](media\tensorflow-vm\job-submission.png)
+![Отправка задания на удаленный компьютер](media/tensorflow-vm/job-submission.png)
 
 В окне отправки выполните указанные ниже действия.
 
@@ -77,7 +77,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ## <a name="check-status-of-job"></a>Проверка состояния задания
 Для просмотра состояния задания и сведений о нем разверните узел виртуальной машины, куда было отправлено задание, в **обозревателе сервера**. Дважды щелкните элемент **Задания**.
 
-![Браузер заданий](media\tensorflow-vm\job-browser.png)
+![Браузер заданий](media/tensorflow-vm/job-browser.png)
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

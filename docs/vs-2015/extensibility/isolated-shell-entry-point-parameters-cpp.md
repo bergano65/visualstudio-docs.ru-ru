@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830760"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Параметры точки входа изолированной оболочки (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При запуске приложения на основе оболочки Visual Studio, он вызывает начальную точку входа оболочки Visual Studio. Следующие параметры можно переопределить в вызове начальную точку входа оболочки. Описание каждого параметра, см. в разделе [. Файлов pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   AppName  
+- AppName  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Шаблон изолированную оболочку Visual Studio создает файл с исходным *solutionName*.cpp, где *solutionName* именем решения для приложения. Этот файл определяет главную точку входа для приложения, функция _tWinMain. Эта функция вызывает начальную точку входа оболочки.  
+  Шаблон изолированную оболочку Visual Studio создает файл с исходным *solutionName*.cpp, где *solutionName* именем решения для приложения. Этот файл определяет главную точку входа для приложения, функция _tWinMain. Эта функция вызывает начальную точку входа оболочки.  
   
- Можно изменить поведение приложения, изменив эти параметры при запуске приложения.  
+  Можно изменить поведение приложения, изменив эти параметры при запуске приложения.  
   
 ## <a name="parameters"></a>Параметры  
  Точки входа запуска оболочки Visual Studio определяет пять параметров. Не изменяйте первые четыре параметра. Пятый параметр принимает список переопределение параметров. Точки входа запуска оболочки вызывается из главную точку входа приложения.  

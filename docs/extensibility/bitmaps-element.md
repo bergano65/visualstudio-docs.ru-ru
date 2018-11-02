@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f407347946df5ddc537001fcb14bae909e52646
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f8812a9dca40a69a4dc23209cdb5f85309a87755
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861557"
 ---
 # <a name="bitmaps-element"></a>Элемент bitmaps
 Группы [точечный рисунок элемента](../extensibility/bitmap-element.md) элементов.  
@@ -38,20 +38,20 @@ ms.locfileid: "39153667"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент bitmaps](../extensibility/bitmaps-element.md)|Группирует элементы растрового изображения.|  
 |[Элемент Bitmap](../extensibility/bitmap-element.md)|Определяет растрового изображения.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

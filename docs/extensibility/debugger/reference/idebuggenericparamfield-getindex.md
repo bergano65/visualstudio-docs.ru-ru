@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex | Документы Microsoft
+title: IDebugGenericParamField::GetIndex | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc623eca2221c0ca9c073e830683739d048f84b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 197796549ce865733f037d99e20382ac74b8a74d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857254"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Возвращает индекс этого универсального параметра.  
+Извлекает индекс этого универсального параметра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,16 +39,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>Параметры  
  `pIndex`  
- [out] Значение этого универсального параметра индекса.  
+ [out] Значение индекса этого универсального параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Например для Dictionary(K,V), K имеет индекс 0, V имеет индекс 1.  
+ Например для Dictionary(K,V), K имеет индекс 0, V — это индекс 1.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  

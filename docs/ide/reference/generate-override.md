@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919069"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Создание переопределения в Visual Studio
 
@@ -36,13 +36,13 @@ ms.locfileid: "31943870"
 
    - C#:
 
-    ![Переопределение IntelliSense в C#](media/override-intellisense-cs.png)
+      ![Переопределение IntelliSense в C#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![Переопределение IntelliSense в VB](media/override-intellisense-vb.png)
+      ![Переопределение IntelliSense в VB](media/override-intellisense-vb.png)
 
-1. Выберите метод, который требуется переопределить, в базовом классе.
+2. Выберите метод, который требуется переопределить, в базовом классе.
 
    > [!TIP]
    > - Используйте значок свойства, ![Значок свойства](media/override-property-cs.png) чтобы отобразить или скрыть свойство в списке.
@@ -52,11 +52,11 @@ ms.locfileid: "31943870"
 
    - C#:
 
-      ![Результат переопределения в C#](media/override-result-cs.png)
+       ![Результат переопределения в C#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![Результат переопределения в VB](media/override-result-vb.png)
+       ![Результат переопределения в VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>См. также
 

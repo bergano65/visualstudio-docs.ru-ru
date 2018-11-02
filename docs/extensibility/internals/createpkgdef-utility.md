@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867667"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 Принимает DLL-файла для расширения Visual Studio, как параметр и создает *.pkgdef* файл сопровождающее *.dll* файл. *.Pkgdef* файл содержит всю информацию, которая в противном случае должна быть записана в системный реестр при установке расширения.  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  *.Pkgdef* файлы должны быть установлены в одном из следующих расположений: 
 
- - *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
- Если папка установки *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, расширение будет распознаваться модулем Visual Studio, но будет отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**. 
+  Если папка установки *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, расширение будет распознаваться модулем Visual Studio, но будет отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**. 
    
- Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.  
+  Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.  
   
 > [!NOTE]
 >  **Расширения и обновления** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.  

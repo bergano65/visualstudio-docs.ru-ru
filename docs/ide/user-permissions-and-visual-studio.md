@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885764"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "42627319"
 Под именем обычного пользователя в Visual Studio IDE можно делать практически все. Разрешения администратора необходимы для выполнения следующих задач.
 
 |Область|Задача|Дополнительные сведения|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Установка|Установка Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md)|
 ||Установка, обновление или удаление содержимого локальной справки.|[Установка содержимого локальной справки и управление им](../ide/install-and-manage-local-content.md)|
 |Панель элементов|Добавление классических элементов управления COM в **панель элементов**.|[Панель элементов](../ide/reference/toolbox.md)|

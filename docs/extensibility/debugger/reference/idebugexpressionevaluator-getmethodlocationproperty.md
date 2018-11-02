@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Документы Microsoft
+title: IDebugExpressionEvaluator::GetMethodLocationProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10a26eca06aed24d53b70cd406fe3f24e2fe898
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905354"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-Этот метод преобразует расположение метода и смещение в адрес памяти.  
+Этот метод преобразует метод расположение и смещение в адрес памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,27 +49,27 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Параметры  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] Метод расположение и смещения, выраженное в виде строки.  
+ [in] Метод расположение и смещение, выраженное в виде строки.  
   
  `pSymbolProvider`  
- [in] Поставщик символ выражается [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) объекта.  
+ [in] Поставщик символов выражается [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) объекта.  
   
  `pAddress`  
- [in] Адрес в методе, выраженное [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.  
+ [in] Адрес в методе, выраженное как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.  
   
  `pBinder`  
  [in] Связыватель выражается [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
   
  `ppProperty`  
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, представляющий адрес в памяти.  
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, который представляет собой адрес памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Чтобы задать точку останова, например, можно использовать возвращенного адреса.  
+ Возвращаемый адрес можно использовать для задания точки останова, например.  
   
- Несмотря на имя `upstrFullyQualifiedMethodPlusOffset`, этот параметр можно передать имя частичные метода. В этом случае выбранный метод именно эта заключает `pAddress`. Способ интерпретации этот параметр зависит от реализации средство оценки выражений и язык, который он поддерживает.  
+ Несмотря на название `upstrFullyQualifiedMethodPlusOffset`, этот параметр можно передать имя метода частичных. В этом случае выбранного метода является тот, который заключает `pAddress`. Способ интерпретации этот параметр зависит от реализации средство оценки выражений и язык, который поддерживается.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872672"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Общие сведения об анализе управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ ms.locfileid: "49279374"
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Запуск анализа кода в рамках политики возврата  
  Каждая организация может предъявлять определенные требования к возвратам. В частности, может требоваться соблюдение следующих правил:  
   
--   Возвращаемый код не содержит ошибок построения.  
+- Возвращаемый код не содержит ошибок построения.  
   
--   Анализ кода был проведен в рамках последнего построения.  
+- Анализ кода был проведен в рамках последнего построения.  
   
- Этого можно достичь, задав политики возврата. Дополнительные сведения см. в разделе [улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Этого можно достичь, задав политики возврата. Дополнительные сведения см. в разделе [улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Интеграция командного построения  
  Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [Сборка приложения](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938231"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Добавить меню в строке меню Visual Studio
 В этом пошаговом руководстве показано, как добавлять меню в строку меню среды разработки Visual Studio (IDE). Интегрированная среда разработки строка меню содержит меню категории, такие как **файл**, **изменить**, **представление**, **окно**, и **помочь** .  
@@ -41,48 +41,48 @@ ms.locfileid: "39079537"
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Создание меню в строке меню интегрированной среды разработки  
   
-1.  В **обозревателе решений**откройте *TestCommandPackage.vsct*.  
+1. В **обозревателе решений**откройте *TestCommandPackage.vsct*.  
   
-     В конце файла, не существует \<символы > узел, который содержит несколько \<GuidSymbol > узлов. В узле с именем guidTestCommandPackageCmdSet добавьте новый символ, следующим образом:  
+    В конце файла, не существует \<символы > узел, который содержит несколько \<GuidSymbol > узлов. В узле с именем guidTestCommandPackageCmdSet добавьте новый символ, следующим образом:  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  Создать пустой \<меню > узел в \<команды > узел, непосредственно перед \<группы >. В \<меню > узел, добавьте \<меню >, как показано ниже:  
+2. Создать пустой \<меню > узел в \<команды > узел, непосредственно перед \<группы >. В \<меню > узел, добавьте \<меню >, как показано ниже:  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     `guid` И `id` значения меню задают набор команд и меню в набор команд.  
+    `guid` И `id` значения меню задают набор команд и меню в набор команд.  
   
-     `guid` И `id` значения родительского размещения меню в разделе меню Visual Studio, содержащий меню «Сервис» и «Add-ins.  
+    `guid` И `id` значения родительского размещения меню в разделе меню Visual Studio, содержащий меню «Сервис» и «Add-ins.  
   
-     Значение `CommandName` строка указывает, что текст должен отображаться в элементе меню.  
+    Значение `CommandName` строка указывает, что текст должен отображаться в элементе меню.  
   
-3.  В \<группы > найдите \<группы > и измените \<родительского > элемент меню, который мы только что добавили:  
+3. В \<группы > найдите \<группы > и измените \<родительского > элемент меню, который мы только что добавили:  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     В результате группа частью нового меню.  
+    В результате группа частью нового меню.  
   
-4.  Найти `Buttons` раздел. Обратите внимание, что [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создала шаблон пакета `Button` элемент, имеющий родительского присвоено `MyMenuGroup`. Таким образом эта команда появляется в меню.  
+4. Найти `Buttons` раздел. Обратите внимание, что [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создала шаблон пакета `Button` элемент, имеющий родительского присвоено `MyMenuGroup`. Таким образом эта команда появляется в меню.  
   
 ## <a name="build-and-test-the-extension"></a>Сборка и тестирование расширения  
   

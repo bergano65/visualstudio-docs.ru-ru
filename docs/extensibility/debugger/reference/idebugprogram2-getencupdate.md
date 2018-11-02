@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate | Документы Microsoft
+title: IDebugProgram2::GetENCUpdate | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b4a22d8cfb1d8ab89adb5946305ea50425fa35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c356154c5d77c01f84c5fe4446b8ac92235c10e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867004"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Этот метод возвращает изменить и продолжить (ENC) обновления для этой программы. Всегда возвращает модулем отладки `E_NOTIMPL`.  
+Этот метод получает обновления изменить и продолжить "(ENC) для этой программы. Всегда возвращает пользовательского модуля отладки `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetENCUpdate(
  [out] Возвращает внутренний интерфейс, который может использоваться для обновления этой программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 > [!NOTE]
->  Всегда должны возвращать модулем отладки `E_NOTIMPL`.  
+>  Всегда должны возвращать пользовательского модуля отладки `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

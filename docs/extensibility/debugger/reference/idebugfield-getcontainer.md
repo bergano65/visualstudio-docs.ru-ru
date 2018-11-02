@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer | Документы Microsoft
+title: IDebugField::GetContainer | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826274b42aad8e695772abab75d4a2d5f2611336
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b9078fdc7849912436c0b8dc3d72338f746b36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942040"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Этот метод возвращает контейнер поля.  
@@ -41,13 +41,13 @@ int GetContainer(
   
 #### <a name="parameters"></a>Параметры  
  `ppContainerField`  
- [out] Возвращает контейнер, представленные как [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейса.  
+ [out] Возвращает контейнер, представленные как [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Если это поле не имеет контейнера, возвращаемый `ppContainerField` будет иметь значение null.  
+ Если это поле не имеет контейнер, возвращенный `ppContainerField` будет иметь значение null.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

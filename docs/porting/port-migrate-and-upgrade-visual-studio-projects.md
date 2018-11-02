@@ -1,7 +1,7 @@
 ---
 title: Перенос, миграция и обновление проектов
 description: Ссылка на сведения о поддержке в Visual Studio 2017 проектов, созданных в предыдущих версиях Visual Studio, и том, как Visual Studio определяет потребность в миграции проекта.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280744"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325033"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -41,7 +41,7 @@ ms.locfileid: "44280744"
 
 В следующем списке описывается поддержка проектов Visual Studio 2017, созданных в более ранних версиях.
 
-Если тип проекта или файла отсутствует, просмотрите [статью о версии Visual Studio 2015](port-migrate-and-upgrade-visual-studio-projects.md) и воспользуйтесь параметром "Оставить отзыв о продукте" в нижней части этой страницы для предоставления сведений о проекте. (Если вы хотите получить ответ, оставьте отзыв о документации вместо анонимного ответа на вопрос "Была ли эта страница полезной?" )
+Если тип проекта или файла отсутствует, просмотрите [статью о версии Visual Studio 2015](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) и воспользуйтесь параметром "Оставить отзыв о продукте" в нижней части этой страницы для предоставления сведений о проекте. (Если вы хотите получить ответ, оставьте отзыв о документации вместо анонимного ответа на вопрос "Была ли эта страница полезной?" )
 
 | Тип проекта | Поддержка |
 | --- | --- |
@@ -49,7 +49,7 @@ ms.locfileid: "44280744"
 | Веб-приложение ASP.NET и веб-приложения ASP.NET Core с включенной службой Application Insights | В Visual Studio сведения о ресурсах хранятся в реестре для каждого экземпляра пользователя. Эти сведения используются, если пользователь хочет найти данные Azure Application Insights, не открывая проект. Расположение реестра в Visual Studio 2015 отличается от расположения реестра в Visual Studio 2017, поэтому конфликты отсутствуют.<br/><br/>Когда пользователь создает веб-приложение ASP.NET или веб-приложение ASP.NET Core, ресурс сохраняется в SUO-файл. Пользователь может открыть проект в Visual Studio 2015 или 2017, и сведения о ресурсе используются в обеих версиях до тех пор, пока Visual Studio поддерживает проекты и решения, используемые в обеих версиях. Пользователям требуется пройти проверку подлинности один раз в каждой версии продукта. Например, если проект создается в Visual Studio 2015 и открывается в Visual Studio 2017, пользователю требуется пройти проверку подлинности в Visual Studio 2017 г. |
 | Веб-форма или форма Windows C#/Visual Basic | Проект можно открыть в Visual Studio 2017 и Visual Studio 2015. |
 | Проекты модульных тестов базы данных (CSPROJ, VBPROJ) | Старые проекты модульных тестов данных загружаются в Visual Studio 2017, но используют GAC-версию зависимостей. Чтобы обновить проект модульного теста для использования последних зависимостей, щелкните проект правой кнопкой мыши в обозревателе решений и выберите **Преобразовать в проект модульного тестирования SQL Server**. |
-| F# | В Visual Studio 2017 можно открывать проекты, созданные в Visual Studio 2013 и 2015. Чтобы включить функции Visual Studio 2017 в этих проектах, откройте окно свойств проекта, и измените целевой объект fsharp.core на F# 4.1. Обратите внимание, что вариант **Поддержка языка F #** в установщике Visual Studio не выбран по умолчанию с рабочими нагрузками .NET; необходимо включить его, выбрав соответствующий параметр для рабочей нагрузки или выбрав его на вкладке **Отдельные компоненты** в разделе **Действия разработки**. |
+| F# | В Visual Studio 2017 можно открывать проекты, созданные в Visual Studio 2013 и 2015. Чтобы включить функции Visual Studio 2017 в этих проектах, откройте окно свойств проекта, и измените целевой объект fsharp.core на F# 4.1. Обратите внимание, что вариант **Поддержка языка F#** в установщике Visual Studio не выбран по умолчанию с рабочими нагрузками .NET; необходимо включить его, выбрав соответствующий параметр для рабочей нагрузки или выбрав его на вкладке **Отдельные компоненты** в разделе **Действия разработки**. |
 | InstallShield<br/>Установка MSI | Проекты установщика, созданные в Visual Studio 2010, можно открыть в более поздних версиях с помощью [расширения проектов установщика Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Также см. сведения о [расширении набора инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition больше не входит в состав Visual Studio. Уточните доступность этого решения для Visual Studio 2017 у компании [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio). |
 | LightSwitch | LightSwitch больше не поддерживается в Visual Studio 2017. Проекты, созданные в Visual Studio 2012 и более ранних версиях и открытые в Visual Studio 2013 или Visual Studio 2015, обновляются и могут быть открыты только в Visual Studio 2013 или Visual Studio 2015. |
 | Инструменты Microsoft Azure для Visual Studio | Для открытия этих типов проектов сначала установите [пакет Azure SDK для .NET](http://azure.microsoft.com/downloads/), а затем откройте соответствующий проект. При необходимости проект будет обновлен. |

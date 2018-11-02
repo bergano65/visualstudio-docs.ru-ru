@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819047"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое: Добавление, обновление или удаление ссылки на службы данных WCF
 Объект *службе Справочник по* позволяет проекту использовать одну или несколько [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Используйте **Add Service Reference** диалоговое окно для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.
@@ -55,21 +55,21 @@ ms.locfileid: "37089316"
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Чтобы добавить ссылки на службу в текущем решении
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, к которому вы хотите добавить службу и нажмите кнопку **Add Service Reference**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, к которому вы хотите добавить службу и нажмите кнопку **Add Service Reference**.
 
-     **Add Service Reference** откроется диалоговое окно.
+    **Add Service Reference** откроется диалоговое окно.
 
-2.  Нажмите кнопку **обнаружение**.
+2. Нажмите кнопку **обнаружение**.
 
-     Все службы (оба [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] и службы WCF) в текущем решении добавляются **служб** списка.
+    Все службы (оба [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] и службы WCF) в текущем решении добавляются **служб** списка.
 
-3.  В **служб** разверните узел службы, который вы хотите использовать и выберите набор сущностей.
+3. В **служб** разверните узел службы, который вы хотите использовать и выберите набор сущностей.
 
-4.  В **пространства имен** введите пространство имен, которое вы хотите использовать для ссылки.
+4. В **пространства имен** введите пространство имен, которое вы хотите использовать для ссылки.
 
-5.  Нажмите кнопку **ОК** для добавления ссылки на проект.
+5. Нажмите кнопку **ОК** для добавления ссылки на проект.
 
-     Создает клиент службы (прокси), и метаданные, описывающие службы добавляется к *app.config* файл.
+    Создает клиент службы (прокси), и метаданные, описывающие службы добавляется к *app.config* файл.
 
 ## <a name="update-a-service-reference"></a>Обновить ссылку на службу
  Модель EDM для [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] порой изменяются. В этом случае необходимо обновить ссылку на службу.

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831819"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора
 
@@ -98,9 +98,9 @@ ms.locfileid: "42635236"
 
 1. Выполните одно из следующих действий.
 
-    - В конструкторе, дважды щелкните **обновления** кнопки.
+   - В конструкторе, дважды щелкните **обновления** кнопки.
 
-    - В **свойства** окно для **обновление** "Кнопка", выберите **события** кнопки. В **щелкните** свойство, введите **Button1_Click**, а затем нажмите клавишу ВВОД.
+   - В **свойства** окно для **обновление** "Кнопка", выберите **события** кнопки. В **щелкните** свойство, введите **Button1_Click**, а затем нажмите клавишу ВВОД.
 
      В редакторе кода откроется файл кода пользовательского элемента управления и `Button1_Click` появится обработчик событий. Позже вы добавите код в этот обработчик событий.
 
@@ -116,11 +116,11 @@ ms.locfileid: "42635236"
 
 4. Замените `Page_Load` метод `VisualWebPart1` класса следующим кодом. Этот код выполняет следующие задачи:
 
-    - Добавляет представление месячного календаря в пользовательский элемент управления.
+   - Добавляет представление месячного календаря в пользовательский элемент управления.
 
-    - Добавляет флажок для каждого списка календаря на сайте.
+   - Добавляет флажок для каждого списка календаря на сайте.
 
-    - Задает шаблон для каждого типа элемента, который отображается в представлении календаря.
+   - Задает шаблон для каждого типа элемента, который отображается в представлении календаря.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

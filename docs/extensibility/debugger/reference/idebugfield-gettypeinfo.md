@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo | Документы Microsoft
+title: IDebugField::GetTypeInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3354a67d5d92aeebf67216ed22ed46666d4fc5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfc82e7450c88420cfca50c74a3ac9451a78b095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925998"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Этот метод возвращает сведения зависят от типов символов или типа.  
@@ -44,10 +44,10 @@ int GetTypeInfo(
  [out] Возвращает сведения о типе в предоставленном [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Сведения зависят от типов будет включать, например, домен приложения, модуля и класса, который содержит символ.  
+ Сведения зависят от типов бы включать, например, домен приложения, модуль и класс, содержащий символ.  
   
 ## <a name="see-also"></a>См. также  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   

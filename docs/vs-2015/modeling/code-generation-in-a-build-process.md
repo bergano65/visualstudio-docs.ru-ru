@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907928"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ ms.locfileid: "49208654"
 
 В свойстве `AfterTransform` можно указывать списки файлов:
 
--   GeneratedFiles – список файлов, сгенерированных данным процессом. Для тех файлов, которые перезаписывают имеющиеся доступные только для чтения файлы, свойство %(GeneratedFiles.ReadOnlyFileOverwritten) будет иметь значение true. Эти файлы можно извлекать из системы управления версиями.
+- GeneratedFiles – список файлов, сгенерированных данным процессом. Для тех файлов, которые перезаписывают имеющиеся доступные только для чтения файлы, свойство %(GeneratedFiles.ReadOnlyFileOverwritten) будет иметь значение true. Эти файлы можно извлекать из системы управления версиями.
 
--   NonGeneratedFiles – список доступных только для чтения файлов, которые не были перезаписаны.
+- NonGeneratedFiles – список доступных только для чтения файлов, которые не были перезаписаны.
 
- Например, можно определить задачу для извлечения GeneratedFiles.
+  Например, можно определить задачу для извлечения GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath и OutputFileName
 
@@ -255,7 +255,6 @@ The project folder is: <#= ProjectFolder #>
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Теперь можно использовать ваше свойство проекта в директивах assembly и include:

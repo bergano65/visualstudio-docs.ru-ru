@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674022"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671863"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство: Вставка текста в документ из панели действий
   В этом пошаговом руководстве показано, как создать панель действий в документ Microsoft Office Word. Панель действий содержит два элемента управления, которые собирают входные данные и затем отправить текст в документ.  
@@ -60,17 +60,17 @@ ms.locfileid: "35674022"
   
 ### <a name="to-add-text-to-your-document"></a>Для добавления текста в документ  
   
-1.  Введите следующий текст в документ Word:  
+1. Введите следующий текст в документ Word:  
   
-     **21 марта 2008 г.**  
+    **21 марта 2008 г.**  
   
-     **Name**  
+    **Name**  
   
-     **Адрес**  
+    **Адрес**  
   
-     **Это пример базовой панели действий в Word.**  
+    **Это пример базовой панели действий в Word.**  
   
- Вы можете добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ, перетащив его из **элементов** в Visual Studio или с помощью **закладки** диалоговое окно в Word.  
+   Вы можете добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ, перетащив его из **элементов** в Visual Studio или с помощью **закладки** диалоговое окно в Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Добавление элемента управления Bookmark в документ  
   
@@ -178,14 +178,14 @@ ms.locfileid: "35674022"
 ## <a name="next-steps"></a>Следующие шаги  
  Ниже приводятся некоторые из возможных последующих задач.  
   
--   Создайте панель действий в Excel. Дополнительные сведения см. в разделе [как: Добавление панели действий к книгам Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Создайте панель действий в Excel. Дополнительные сведения см. в разделе [как: Добавление панели действий к книгам Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
 -   Привязка данных к элементам управления в панели действий. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Практическое: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Практическое: Добавление панели действий для книг Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Практическое: Добавление панели действий для книг Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Практическое: Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Элемент управления Bookmark](../vsto/bookmark-control.md)  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863767"
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
 
@@ -27,7 +27,7 @@ ms.locfileid: "36756680"
 
 Действие <xref:System.Activities.Statements.Parallel> хранит свои дочерние действия в коллекции <xref:System.Activities.Statements.Parallel.Branches%2A>. Используйте действие <xref:System.Activities.Statements.Parallel> вместо действия <xref:System.Activities.Statements.Sequence>, если некоторые дочерние действия могут перейти в состояние бездействия.
 
-<xref:System.Activities.Statements.Parallel> Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит пользователя указано выражение Visual Basic. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждого участка кода. Если результат вычисления равен **True**, а затем <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> не равен значению **True**, а затем <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
+<xref:System.Activities.Statements.Parallel> Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит пользователя указано выражение Visual Basic. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждой ветви кода. Если результат вычисления равен **True**, а затем <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> не равен значению **True**, а затем <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
 
 ### <a name="using-the-parallel-activity-designer"></a>Использование конструктора действия Parallel
 
@@ -42,13 +42,13 @@ ms.locfileid: "36756680"
 В следующей таблице показаны свойства действия Parallel, а также приводится описание их использования в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **параллельных**. Можно при необходимости изменить значение в **свойства** сетки или напрямую в заголовке конструктора действий.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Да|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Вычисляется после завершения какой-либо ветви. Если результат вычисления равен **True**, то запланированные ожидающие выполнения ветви отменяются. Если это свойство не задано или имеет значение **False**, то действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
 
 ## <a name="see-also"></a>См. также
 
-- [Последовательности](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

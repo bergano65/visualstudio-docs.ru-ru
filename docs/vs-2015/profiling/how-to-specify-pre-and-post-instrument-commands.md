@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848388"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ ms.locfileid: "49305471"
   
  **Requirements**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Рабочий каталог, в котором выполняются команды, зависит от операционной системы, в которой выполняется [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], и целевой платформы профилируемого приложения.  
+  Рабочий каталог, в котором выполняются команды, зависит от операционной системы, в которой выполняется [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], и целевой платформы профилируемого приложения.  
   
- **32-разрядные компьютеры**  
+  **32-разрядные компьютеры**  
   
- На 32-разрядных компьютерах каталог средств профилирования по умолчанию — диск\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
+  На 32-разрядных компьютерах каталог средств профилирования по умолчанию — диск\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **64-разрядные компьютеры**  
+  **64-разрядные компьютеры**  
   
- На 64-разрядных компьютерах укажите путь в соответствии с целевой платформой профилируемого приложения.  
+  На 64-разрядных компьютерах укажите путь в соответствии с целевой платформой профилируемого приложения.  
   
--   Для 32-разрядных приложений каталог средств профилирования по умолчанию:  
+- Для 32-разрядных приложений каталог средств профилирования по умолчанию:  
   
-     *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   Для 64-разрядных приложений каталог средств профилирования по умолчанию:  
+- Для 64-разрядных приложений каталог средств профилирования по умолчанию:  
   
-     *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *диск*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Указание команд, предшествующих инструментированию  
   

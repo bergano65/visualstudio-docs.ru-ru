@@ -1,5 +1,5 @@
 ---
-title: Элемент Используемойкоманды | Документы Microsoft
+title: Элемент UsedCommand | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4888733abf142f6582706406decbea0bf84ce519
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856305"
 ---
-# <a name="usedcommand-element"></a>Элемент Используемойкоманды
-Позволяет VSPackage для доступа к команде, которая определена в другой файл vsct. Например, если пакет VSPackage использует стандарт **копирования** команду, которая определяется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочки, можно добавить команды меню или панель инструментов без повторной реализации.  
+# <a name="usedcommand-element"></a>Элемент UsedCommand
+Позволяет VSPackage для доступа к команде, которая определена в другом vsct-файл. Например, если VSPackage использует стандарт **копирования** команду, которая определяется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочки, можно добавить команду в меню или панели инструментов без повторной реализации.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,7 +39,7 @@ ms.locfileid: "31139072"
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID пары идентификатор GUID, который определяет команду.|  
 |id|Обязательно. Идентификатор пары идентификатор GUID, который определяет команду.|  
-|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -51,10 +51,10 @@ ms.locfileid: "31139072"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы Используемойкоманды и других Используемыхкоманд группирований.|  
+|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы UsedCommand и другими признаками UsedCommands.|  
   
 ## <a name="remarks"></a>Примечания  
- Добавив команду, чтобы `<UsedCommands>` уведомляет VSPackage элемент, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] среде, что VSPackage требуется команда. Следует добавить `<UsedCommand>` элемент для любой команды, пакет необходимо, могут не включаться во всех версиях и конфигурации Visual Studio. Например, если пакет вызывает команду, которая относится к Visual C++, команда будет недоступен для пользователей Visual Web Developer, если не включить `<UsedCommand>` элемент для команды.  
+ Добавив команду, чтобы `<UsedCommands>` элемента, сообщает VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] среды, что VSPackage требует команды. Следует добавить `<UsedCommand>` элемент для любой команды, пакет необходимо, не могут быть включены во все версии и конфигурации из Visual Studio. Например, если пакет вызывает команду, которая используется только в Visual C++, команда не будет доступна пользователям Visual Web Developer Если не включить `<UsedCommand>` элемента для команды.  
   
 ## <a name="example"></a>Пример  
   
@@ -67,5 +67,5 @@ ms.locfileid: "31139072"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Элемент Используемыхкоманд](../extensibility/usedcommands-element.md)   
+ [Элемент UsedCommands](../extensibility/usedcommands-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

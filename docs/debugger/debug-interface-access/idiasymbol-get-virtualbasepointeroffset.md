@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBasePointerOffset | Документы Microsoft
+title: IDiaSymbol::get_virtualBasePointerOffset | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 918855f7b602d9aeaf08389805a2c05eea9a7c3d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17fda4a74c1497d48baea1d9e1a817b4b12cf344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898958"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 Получает смещение виртуального базового указателя.  
@@ -34,10 +34,10 @@ HRESULT get_virtualBasePointerOffset (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает смещение виртуального базового указателя.  
+ [out] Возвращает смещение для виртуального базового указателя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  

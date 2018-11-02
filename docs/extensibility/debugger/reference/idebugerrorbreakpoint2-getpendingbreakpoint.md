@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2::GetPendingBreakpoint | Документы Microsoft
+title: IDebugErrorBreakpoint2::GetPendingBreakpoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a4bcd63435e380ea7d913bb984fe8cf464392d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb5d634671e1a8fb7fc517cb50145e88f46ca7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857241"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
-Возвращает ожидающая точка останова, который вызвал ошибку.  
+Получает ожидающая точка останова, которая вызвала ошибку.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,10 +41,10 @@ int GetPendingBreakpoint (
   
 #### <a name="parameters"></a>Параметры  
  `ppPendingBreakpoint`  
- [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова, которые не удалось привязать.  
+ [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова, которую не удалось привязать.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

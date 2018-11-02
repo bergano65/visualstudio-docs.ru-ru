@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910970"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с шаблоном элемента в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона, чтобы добавить новый экземпляр элемента проекта в проект. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635204"
   
  Также необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства:  
   
--   Поддерживаемые версии Windows, SharePoint и Visual Studio.
+- Поддерживаемые версии Windows, SharePoint и Visual Studio.
   
--   Visual Studio SDK. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
+  Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
   
--   Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [как: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
+- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [как: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
   
--   Пользовательские действия в SharePoint. Дополнительные сведения см. в разделе [настраиваемое действие](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Пользовательские действия в SharePoint. Дополнительные сведения см. в разделе [настраиваемое действие](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Создание проекта мастера
  Для выполнения этого пошагового руководства, необходимо добавить проект в решение CustomActionProjectItem, созданный в [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Вы реализуете <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейса и определения пользовательского интерфейса мастера в этом проекте.  

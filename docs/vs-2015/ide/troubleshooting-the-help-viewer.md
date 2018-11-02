@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934240"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Устранение неполадок средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "49245548"
 ## <a name="additional-resources"></a>Дополнительные ресурсы  
  Вы можете получить дополнительные сведения и предоставить отзыв об окне справки с помощью следующих ресурсов:  
   
--   Чтобы предоставить отзыв, воспользуйтесь страницей [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) на веб-сайте Майкрософт или отправьте сообщение электронной почты на адрес [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+- Чтобы предоставить отзыв, воспользуйтесь страницей [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) на веб-сайте Майкрософт или отправьте сообщение электронной почты на адрес [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Дополнительные сведения см. в разделе [Документация разработчика и справочная система](http://go.microsoft.com/fwlink/?LinkId=232741) форум и [помощник](http://go.microsoft.com/fwlink/?LinkId=232743) блога.  
+- Дополнительные сведения см. в разделе [Документация разработчика и справочная система](http://go.microsoft.com/fwlink/?LinkId=232741) форум и [помощник](http://go.microsoft.com/fwlink/?LinkId=232743) блога.  
   
 ## <a name="see-also"></a>См. также  
  [Руководство администратора Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

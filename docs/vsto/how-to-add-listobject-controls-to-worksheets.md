@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949257"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Практическое: Добавление элементов управления ListObject на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в проектах уровня документа.  
@@ -32,13 +32,13 @@ ms.locfileid: "35674715"
   
  В этом разделе описываются следующие задачи.  
   
--   [Добавление элементов управления ListObject во время разработки](#designtime)  
+- [Добавление элементов управления ListObject во время разработки](#designtime)  
   
--   [Добавление элементов управления ListObject во время выполнения в проекте уровня документа](#runtimedoclevel)  
+- [Добавление элементов управления ListObject во время выполнения в проекте уровня документа](#runtimedoclevel)  
   
--   [Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
+- [Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
   
- Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления, см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).  
+  Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления, см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Добавление элементов управления ListObject во время разработки  
  Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.ListObject> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .  
@@ -67,7 +67,7 @@ ms.locfileid: "35674715"
   
 2.  Перетащите таблицу из окна **Источники данных** в лист.  
   
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится в лист. Дополнительные сведения см. в разделе [привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится на лист. Дополнительные сведения см. в разделе [привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
 ##  <a name="runtimedoclevel"></a> Добавление элементов управления ListObject во время выполнения в проекте уровня документа  
  Вы можете добавить <xref:Microsoft.Office.Tools.Excel.ListObject> управления динамически во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. При закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  

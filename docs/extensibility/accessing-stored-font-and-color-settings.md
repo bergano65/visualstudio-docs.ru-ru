@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910684"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Доступ хранимой параметры шрифта и цвета
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) сохраняет измененные параметры шрифтов и цветов в реестре. Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс для доступа к этим параметрам.
@@ -49,17 +49,17 @@ ms.locfileid: "39081648"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Чтобы использовать сохранение состояния шрифты и цвета
  Сохранение шрифты и цвета состоит из:
 
--   Синхронизация параметров интегрированной среды разработки с помощью параметров, хранящихся в реестре.
+- Синхронизация параметров интегрированной среды разработки с помощью параметров, хранящихся в реестре.
 
--   Распространение сведения об изменении реестра.
+- Распространение сведения об изменении реестра.
 
--   Установка и получение параметров, хранящихся в реестре.
+- Установка и получение параметров, хранящихся в реестре.
 
- Синхронизации с параметрами интегрированной среды разработки параметр хранилища почти незаметно. Базовой интегрированной среды разработки автоматически записывает обновленные параметры для **отображаемые элементы** для записи в реестре категорий.
+  Синхронизации с параметрами интегрированной среды разработки параметр хранилища почти незаметно. Базовой интегрированной среды разработки автоматически записывает обновленные параметры для **отображаемые элементы** для записи в реестре категорий.
 
- Потребуется ли несколько пакетов VSPackage, общий доступ к определенной категории, VSPackage приводятся события при методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейса используются для изменения параметров хранимой реестра.
+  Потребуется ли несколько пакетов VSPackage, общий доступ к определенной категории, VSPackage приводятся события при методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейса используются для изменения параметров хранимой реестра.
 
- Создание событий не включена по умолчанию. Чтобы включить создание событий, категории необходимо открыть с помощью <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Открытие категорию инициирует IDE для вызова соответствующего <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> метод, реализующий VSPackage.
+  Создание событий не включена по умолчанию. Чтобы включить создание событий, категории необходимо открыть с помощью <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Открытие категорию инициирует IDE для вызова соответствующего <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> метод, реализующий VSPackage.
 
 > [!NOTE]
 >  Изменения через **шрифта и цвета** страницу свойств создают события, независимо от <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить, требуется ли обновление кэшированных параметры шрифта и цвета, перед вызовом методов <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> класса.

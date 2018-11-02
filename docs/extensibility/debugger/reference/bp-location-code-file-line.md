@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE | Документы Microsoft
+title: BP_LOCATION_CODE_FILE_LINE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37bbc808322c54d1e0c9354353de2f59b2e19af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4c114919d74fba7a28c9d3ea11fc5bb9947d6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866029"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
-Содержит данные, расположение точки останова в определенной строке в файле исходного кода.  
+Содержит данные для расположения точки останова в определенной строке в файле исходного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,10 +36,10 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
   
 ## <a name="members"></a>Участники  
  `bstrContext`  
- Контекст точки останова, обычно имя метода или функции по результатам в стеке вызова.  
+ Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.  
   
  `pDocPos`  
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) , представляющий позицию документа точки останова.  
+ [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) , представляющий документ положение точки останова.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
@@ -52,6 +52,6 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

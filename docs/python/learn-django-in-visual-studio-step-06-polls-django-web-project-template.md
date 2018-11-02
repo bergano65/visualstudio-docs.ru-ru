@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548235"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101060"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Шаг 6. Использование шаблона веб-проекта Django для опросов
 
@@ -368,7 +368,7 @@ admin.site.register(Poll, PollAdmin)
 
 Запуск веб-приложения на компьютере разработчика — это лишь один шаг, чтобы сделать приложение доступным для клиентов. Следующие шаги могут включать приведенные ниже задачи:
 
-- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), которая содержит сведения об определенных изменениях, необходимых для приложений Django.
+- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в "Службе приложений Azure"](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Настройка страницы 404 путем создания шаблона с именем *templates/404.html*. При наличии Django использует этот шаблон вместо шаблона по умолчанию. Дополнительные сведения см. в разделе о [представлениях ошибок](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) в документации по Django.
 
@@ -376,8 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - Изменение приложения с SQLite на хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все из них могут размещаться на платформе Azure). Как описано в статье про [использование SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite отлично работает с сайтами с низким и средним уровнем трафика с менее чем 100 тысяч попаданий/день, но использовать большие объемы не рекомендуется. Кроме того, он работает только на одном компьютере, поэтому может использоваться в любом сценарии с несколькими серверами, таком как балансировка нагрузки и георепликация. Сведения о поддержке Django в других базах данных см. в разделе [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Настройка базы данных). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты.
 
-- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Azure Pipelines. В дополнение к работе с системой управления исходным кодом (в Azure Repos, GitHub или в другом месте), Azure Test Plans может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, Azure DevOps Services интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения:
-
-  - [Создание конвейера CI/CD для Python с помощью проектов Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Python development in Azure with Visual Studio Team Services](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/) (Разработка Python в Azure с помощью Visual Studio Team Services).
-
+- Настройка конвейера непрерывной интеграции или непрерывного развертывания в таких службах, как Visual Studio Team Services (VSTS). В дополнение к работе с системой управления исходным кодом (в VSTS, GitHub или в другом месте), VSTS может автоматически выполнять модульные тесты в качестве необходимого условия для выпуска, а также настроить конвейер для развертывания на промежуточный сервер для дополнительных тестов перед развертыванием в рабочей среде. Кроме того, VSTS интегрируются с решениями мониторинга, такими как App Insights, и закрывают весь цикл средствами планирования Agile. Дополнительные сведения см. в статье [Создание конвейера CI/CD для Python с помощью проекта Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts).

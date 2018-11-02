@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseTableType | Документы Microsoft
+title: IDiaSymbol::get_virtualBaseTableType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a299b589a1104dc18559278c777e47500169a57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 864748c478b03a26affaa622e3b25cb8c7dfd78e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895080"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-Получает тип указателя виртуального базовой таблицы.  
+Извлекает тип указателя базовой виртуальной таблицы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,15 +39,15 @@ HRESULT get_virtualBaseTableType(
 |`pRetVal`|[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , указывающий тип базовой таблицы.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Указатель виртуального базовой таблицы (`vbtptr`) является указателем, скрытые в [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable, который обрабатывает наследование от виртуальных базовых классов. Объект `vbtptr` могут иметь разные размеры в зависимости от унаследованными классами.  
+ Указатель базовой виртуальной таблицы (`vbtptr`) — это скрытый указатель в [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable, который обрабатывает наследование от виртуальных базовых классов. Объект `vbtptr` может иметь разные размеры в зависимости от наследуемые классы.  
   
- Этот метод возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекта, который может использоваться для определения размера vbtptr.  
+ Этот метод возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, который может использоваться для определения размера vbtptr.  
   
 ## <a name="requirements"></a>Требования  
   

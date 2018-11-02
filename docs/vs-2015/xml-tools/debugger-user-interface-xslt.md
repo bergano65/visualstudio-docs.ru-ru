@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891860"
 ---
 # <a name="debugger-user-interface-xslt"></a>Пользовательский интерфейс отладчика (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ ms.locfileid: "49300187"
   
  В следующем списке описываются некоторые ограничения на оценку выражения XPath.  
   
--   Разрешаются только встроенные функции XPath.  
+- Разрешаются только встроенные функции XPath.  
   
--   Встроенные функции XSLT, такие как `document()`, `key()` и т. д., не допускаются.  
+- Встроенные функции XSLT, такие как `document()`, `key()` и т. д., не допускаются.  
   
--   Определяемые пользователем функции не допускаются.  
+- Определяемые пользователем функции не допускаются.  
   
- Дополнительные сведения см. в разделе [как: Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Дополнительные сведения см. в разделе [как: Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Окно дизассемблирования  
  Окно дизассемблирования показывает код сборки, формируемый XSLT-компилятором. Это окно можно использовать так же, как и все остальные окна дизассемблирования среды Visual Studio.  

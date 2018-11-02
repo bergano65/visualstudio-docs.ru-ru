@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834181"
 ---
 # <a name="sdk-element-msbuild"></a>Элемент SDK (MSBuild)
 Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -54,9 +54,10 @@ ms.locfileid: "39154097"
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы  
- |Элемент|Описание:|  
-|-------------|-----------------|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+
+| Элемент | Описание |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="see-also"></a>См. также  
  [How to: Use MSBuild Project SDKs](../msbuild/how-to-use-project-sdk.md)  (Практическое руководство. Использование пакета SDK проекта MSBuild)  

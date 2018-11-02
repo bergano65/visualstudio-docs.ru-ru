@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825995"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
 Пользователю можно предоставить отзыв, изменение внешнего вида команды. Например вы можете команду, чтобы выглядеть иначе, когда она недоступна. Можно сделать команды доступными или недоступными, скрыть или отобразить их, или проверить или снять их флажки в меню.  
   
  Чтобы изменить внешний вид команды, выполните одно из следующих действий.  
   
--   Укажите соответствующие флаги в определении команды в файл таблицы команд.  
+- Укажите соответствующие флаги в определении команды в файл таблицы команд.  
   
--   Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.  
+- Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.  
   
--   Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.  
+- Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.  
   
- Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).  
+  Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Для изменения внешнего вида команды меню  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843207"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "46370982"
 ## <a name="build"></a>Построить
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**CTRL+SHIFT+B** [глобальный]|
 |Build.Cancel|**CTRL+BREAK** [глобальный]|
 |Build.Compile|**CTRL+F7** [глобальный]|
@@ -35,7 +35,7 @@ ms.locfileid: "46370982"
 ## <a name="debug"></a>Отладка
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**CTRL+B** [глобальный]|
 |Debug.BreakAll|**CTRL+ALT+BREAK** [глобальный]|
 |Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9** [глобальный]|
@@ -55,7 +55,7 @@ ms.locfileid: "46370982"
 ## <a name="edit"></a>Правка
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|
 |Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
@@ -106,7 +106,7 @@ ms.locfileid: "46370982"
 ## <a name="file"></a>Файл
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**ALT+F4** [глобальный]|
 |File.NewFile|**CTRL+N** [глобальный]|
 |File.NewProject|**CTRL+SHIFT+N** [глобальный]|
@@ -122,26 +122,26 @@ ms.locfileid: "46370982"
 ## <a name="project"></a>Проект
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**SHIFT+ALT+A** [глобальный]|
 |Project.AddNewItem|**CTRL+SHIFT+A** [глобальный]|
 
 ## <a name="refactor"></a>Рефакторинг
 
 |Команда|Сочетание клавиш [контекст]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**CTRL+R, CTRL+M** [глобальный]|
 
 ## <a name="tools"></a>Инструменты
 
 |Команда|Сочетание клавиш [контекст]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**CTRL+ALT+P** [глобальный]|
 
 ## <a name="view"></a>Просмотр
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**CTRL+SHIFT+C** [глобальный]|
 |View.EditLabel|**F2** [глобальный]|
 |View.ErrorList|**CTRL+\\, CTRL+E** [глобальный]<br /><br /> или **CTRL+\\, E** [глобальный]|
@@ -162,7 +162,7 @@ ms.locfileid: "46370982"
 ## <a name="window"></a>Окно
 
 |Команды|Сочетания клавиш [контексты]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [глобальный]|
 |Window.CloseDocumentWindow|**CTRL+F4** [глобальный]|
 |Window.NextDocumentWindow|**CTRL+F6** [глобальный]|

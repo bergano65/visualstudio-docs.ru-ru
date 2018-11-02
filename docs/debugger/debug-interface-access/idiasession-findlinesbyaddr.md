@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByAddr | Документы Microsoft
+title: IDiaSession::findLinesByAddr | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28045b9a845ac873e7d9325b52d336ff8dc519
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29718d355e1b6afb1f85fbb27b5d7b5dc7cfd610
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819879"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-Извлекает строк в указанной компилируемого объекта, которые содержат указанный адрес.  
+Извлекает строки в указанной единице компиляции, которые содержат указанный адрес.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,22 +37,22 @@ HRESULT findLinesByAddr (
   
 #### <a name="parameters"></a>Параметры  
  `seg`  
- [in] Задает компонент раздел для конкретного адреса.  
+ [in] Задает компонент прокрутки на разделе конкретного адреса.  
   
  `offset`  
  [in] Задает компонент смещения для конкретного адреса.  
   
  `length`  
- [in] Указывает число байтов диапазон адресов для покрытия с этим запросом.  
+ [in] Указывает число байтов из диапазона адресов, чтобы охватить с этим запросом.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех строки порядковые номера, титульных указанный диапазон адресов.  
+ [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех строке номера, охватывают указанный диапазон адресов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- Этот пример функции, которая получает все номера строк, содержащихся в функции с помощью функции адрес и длину.  
+ В этом примере показана функция, который получает все номера строк, содержащихся в функции с помощью функции адрес и длину.  
   
 ```C++  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  

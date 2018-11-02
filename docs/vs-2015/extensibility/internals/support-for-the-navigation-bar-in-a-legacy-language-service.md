@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839145"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  При изменении выделения в раскрывающемся списке типов, необходимо обновить список членов в соответствии с новым типом. То, что отображается в списке элементов может быть либо:  
   
--   Список элементов для текущего типа.  
+- Список элементов для текущего типа.  
   
--   Все элементы, доступные в источнике файл, но со всеми членами не в текущем типе, отображаются серым шрифтом. Пользователь по-прежнему можно выбрать элементы закрашены серым, поэтому они могут использоваться для быстрой навигации, но цвет указывает, что они не являются частью текущего выбранного типа.  
+- Все элементы, доступные в источнике файл, но со всеми членами не в текущем типе, отображаются серым шрифтом. Пользователь по-прежнему можно выбрать элементы закрашены серым, поэтому они могут использоваться для быстрой навигации, но цвет указывает, что они не являются частью текущего выбранного типа.  
   
- Реализация <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода обычно выполняет следующие действия:  
+  Реализация <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода обычно выполняет следующие действия:  
   
 1.  Получение списка текущие объявления для исходного файла.  
   

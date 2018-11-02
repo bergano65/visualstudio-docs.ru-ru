@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858892"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Приступить к программированию надстроек VSTO
   Надстройки VSTO можно использовать для автоматизации приложений Microsoft Office, расширения функциональных возможностей приложения и настройки пользовательского интерфейса приложения. Сведения о сравнении надстроек VSTO для других типах решений Office, которые можно создавать с помощью Visual Studio, см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -60,40 +60,40 @@ ms.locfileid: "35674412"
 ## <a name="customize-the-user-interface-of-applications"></a>Настройка пользовательского интерфейса приложений  
  Существует несколько способов настройки пользовательского интерфейса ведущего приложения с помощью надстройки VSTO:  
   
--   Для Excel и Word в документы можно добавлять управляемые элементы управления. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+- Для Excel и Word в документы можно добавлять управляемые элементы управления. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
--   Можно настроить ленту, если ее поддерживает приложение. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
+- Можно настроить ленту, если ее поддерживает приложение. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
--   Можно создать настраиваемую область задач, если ее поддерживает приложение. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
+- Можно создать настраиваемую область задач, если ее поддерживает приложение. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
--   Для Outlook можно создать пользовательскую область формы. Дополнительные сведения см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
+- Для Outlook можно создать пользовательскую область формы. Дополнительные сведения см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
   
--   Для всех приложений Microsoft Office формы Windows Forms можно отображать в надстройке VSTO.  
+- Для всех приложений Microsoft Office формы Windows Forms можно отображать в надстройке VSTO.  
   
- Дополнительные сведения о настройке пользовательского интерфейса Microsoft Office см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+  Дополнительные сведения о настройке пользовательского интерфейса Microsoft Office см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании надстроек VSTO см. в следующих пошаговых руководствах.  
   
--   [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- В этих пошаговых руководствах рассматриваются средства разработки решений на базе Office в Visual Studio и модель программирования для надстроек VSTO.  
+  В этих пошаговых руководствах рассматриваются средства разработки решений на базе Office в Visual Studio и модель программирования для надстроек VSTO.  
   
- Список разделов с пошаговыми руководствами некоторые из распространенных задач в проектах Office, см. в разделе [общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md).  
+  Список разделов с пошаговыми руководствами некоторые из распространенных задач в проектах Office, см. в разделе [общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>См. также  
  [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

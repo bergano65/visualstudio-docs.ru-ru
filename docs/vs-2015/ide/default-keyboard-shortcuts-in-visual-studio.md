@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867381"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ ms.locfileid: "49247186"
   
 ##  <a name="bkmk_TextEditor"></a> Текстовый редактор  
   
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.BreakLine|ВВОД<br /><br /> или<br /><br /> SHIFT+ВВОД|  
-|Edit.CharLeft|СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtend|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtendColumn|Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Edit.CharRight|Стрелка вправо|  
-|Edit.CharRightExtend|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.CharRightExtendColumn|Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K, Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M, Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M, Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M, Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C|  
-|Edit.CompleteWord|Ctrl+ПРОБЕЛ<br /><br /> или<br /><br /> Alt + Стрелка вправо|  
-|Edit.CopyParameterTip|Ctrl+Shift+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|Backspace<br /><br /> или<br /><br /> Shift+Bkspce|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K, Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+End|  
-|Edit.DocumentEndExtend|Ctrl+Shift+End|  
-|Edit.DocumentStart|Ctrl+Home|  
-|Edit.DocumentStartExtend|Ctrl+Shift+Home|  
-|Edit.ExpandAllOutlining|Ctrl+M, Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M, Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|CTRL+]|  
-|Edit.GotoBraceExtend|CTRL+SHIFT+]|  
-|Edit.HideSelection|Ctrl+M, Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|CTRL+I|  
-|Edit.InsertTab|Вкладка|  
-|Edit.LineCut|CTRL+L|  
-|Edit.LineDelete|CTRL+SHIFT+L|  
-|Edit.LineDown|Стрелка вниз|  
-|Edit.LineDownExtend|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.LineDownExtendColumn|Shift+Alt+СТРЕЛКА ВНИЗ|  
-|Edit.LineEnd|Конец|  
-|Edit.LineEndExtend|Shift+End|  
-|Edit.LineEndExtendColumn|Shift+Alt+End|  
-|Edit.LineOpenAbove|Ctrl+ВВОД|  
-|Edit.LineOpenBelow|Ctrl+Shift+ВВОД|  
-|Edit.LineStart|Главная страница|  
-|Edit.LineStartExtend|Shift+Home|  
-|Edit.LineStartExtendColumn|SHIFT+ALT+HOME|  
-|Edit.LineTranspose|Shift+Alt+T|  
-|Edit.LineUp|Стрелка вверх|  
-|Edit.LineUpExtend|Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.LineUpExtendColumn|Shift+Alt+СТРЕЛКА ВВЕРХ|  
-|Edit.ListMembers|CTRL+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt+СТРЕЛКА ВНИЗ|  
-|Edit.MoveSelectedLinesUp|Alt+СТРЕЛКА ВВЕРХ|  
-|Edit.NextHighlightedReference|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Edit.OvertypeMode|Insert|  
-|Edit.PageDown|PgDn|  
-|Edit.PageDownExtend|SHIFT+PgDn|  
-|Edit.PageUp|PgUp|  
-|Edit.PageUpExtend|Shift+PgUp|  
-|Edit.ParameterInfo|Ctrl+Shift+ПРОБЕЛ|  
-|Edit.PasteParameterTip|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|ALT+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.QuickInfo|Ctrl+K, Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Shift+I|  
-|Edit.ScrollLineDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.ScrollLineUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.SelectCurrentWord|CTRL+W|  
-|Edit.SelectionCancel|ESC|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M, Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M, Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K, Ctrl+A|  
-|Edit.TabLeft|SHIFT+Tab|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+ПРОБЕЛ|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K, Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E, Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Shift+PgDn|  
-|Edit.ViewTop|Ctrl+PgUp|  
-|Edit.ViewTopExtend|Ctrl+Shift+PgUp|  
-|Edit.ViewWhiteSpace|Ctrl+R, Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Delete|  
-|Edit.WordDeleteToStart|Ctrl+Backspace|  
-|Edit.WordNext|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.WordNextExtend|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Edit.WordNextExtendColumn|Ctrl+Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.WordPrevious|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.WordPreviousExtend|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.WordPreviousExtendColumn|Ctrl+Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Edit.WordTranspose|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+ВВОД|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
+|                             Команды                              |                  Сочетания клавиш                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          Edit.BreakLine                           |     ВВОД<br /><br /> или<br /><br /> SHIFT+ВВОД      |
+|                           Edit.CharLeft                           |                      СТРЕЛКА ВЛЕВО                       |
+|                        Edit.CharLeftExtend                        |                   Shift+СТРЕЛКА ВЛЕВО                    |
+|                     Edit.CharLeftExtendColumn                     |                 Shift+Alt+СТРЕЛКА ВЛЕВО                  |
+|                          Edit.CharRight                           |                      Стрелка вправо                      |
+|                       Edit.CharRightExtend                        |                   Shift+СТРЕЛКА ВПРАВО                   |
+|                    Edit.CharRightExtendColumn                     |                 Shift+Alt+СТРЕЛКА ВПРАВО                 |
+|                        Edit.CharTranspose                         |                        Ctrl+T                         |
+|                        Edit.ClearBookmarks                        |                    Ctrl+K, Ctrl+L                     |
+|                     Edit.CollapseAllOutlining                     |                    Ctrl+M, Ctrl+A                     |
+|                    Edit.CollapseCurrentRegion                     |                    Ctrl+M, Ctrl+S                     |
+|                         Edit.CollapseTag                          |                    Ctrl+M, Ctrl+T                     |
+|                    Edit.CollapsetoDefinitions                     |                    Ctrl+M, Ctrl+O                     |
+|                       Edit.CommentSelection                       |                    Ctrl+K, Ctrl+C                     |
+|                         Edit.CompleteWord                         | Ctrl+ПРОБЕЛ<br /><br /> или<br /><br /> Alt + Стрелка вправо |
+|                       Edit.CopyParameterTip                       |                   Ctrl+Shift+Alt+C                    |
+|                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
+|                       Edit.DeleteBackwards                        |   Backspace<br /><br /> или<br /><br /> Shift+Bkspce   |
+|                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K, Ctrl+\                     |
+|                         Edit.DocumentEnd                          |                       Ctrl+End                        |
+|                      Edit.DocumentEndExtend                       |                    Ctrl+Shift+End                     |
+|                        Edit.DocumentStart                         |                       Ctrl+Home                       |
+|                     Edit.DocumentStartExtend                      |                    Ctrl+Shift+Home                    |
+|                      Edit.ExpandAllOutlining                      |                    Ctrl+M, Ctrl+X                     |
+|                     Edit.ExpandCurrentRegion                      |                    Ctrl+M, Ctrl+E                     |
+|                        Edit.FormatDocument                        |                    Ctrl+K, Ctrl+D                     |
+|                       Edit.FormatSelection                        |                    Ctrl+K, Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        CTRL+]                         |
+|                       Edit.GotoBraceExtend                        |                     CTRL+SHIFT+]                      |
+|                        Edit.HideSelection                         |                    Ctrl+M, Ctrl+H                     |
+|                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
+|                      Edit.IncrementalSearch                       |                        CTRL+I                         |
+|                          Edit.InsertTab                           |                          Вкладка                          |
+|                           Edit.LineCut                            |                        CTRL+L                         |
+|                          Edit.LineDelete                          |                     CTRL+SHIFT+L                      |
+|                           Edit.LineDown                           |                      Стрелка вниз                       |
+|                        Edit.LineDownExtend                        |                   Shift+СТРЕЛКА ВНИЗ                    |
+|                     Edit.LineDownExtendColumn                     |                 Shift+Alt+СТРЕЛКА ВНИЗ                  |
+|                           Edit.LineEnd                            |                          Конец                          |
+|                        Edit.LineEndExtend                         |                       Shift+End                       |
+|                     Edit.LineEndExtendColumn                      |                     Shift+Alt+End                     |
+|                        Edit.LineOpenAbove                         |                      Ctrl+ВВОД                       |
+|                        Edit.LineOpenBelow                         |                   Ctrl+Shift+ВВОД                    |
+|                          Edit.LineStart                           |                         Главная страница                          |
+|                       Edit.LineStartExtend                        |                      Shift+Home                       |
+|                    Edit.LineStartExtendColumn                     |                    SHIFT+ALT+HOME                     |
+|                        Edit.LineTranspose                         |                      Shift+Alt+T                      |
+|                            Edit.LineUp                            |                       Стрелка вверх                        |
+|                         Edit.LineUpExtend                         |                    Shift+СТРЕЛКА ВВЕРХ                     |
+|                      Edit.LineUpExtendColumn                      |                  Shift+Alt+СТРЕЛКА ВВЕРХ                   |
+|                         Edit.ListMembers                          |                        CTRL+J                         |
+|                        Edit.MakeLowercase                         |                        Ctrl+U                         |
+|                        Edit.MakeUppercase                         |                     Ctrl+Shift+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt+СТРЕЛКА ВНИЗ                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt+СТРЕЛКА ВВЕРХ                      |
+|                   Edit.NextHighlightedReference                   |                 Ctrl+Shift+СТРЕЛКА ВНИЗ                 |
+|                         Edit.OvertypeMode                         |                        Insert                         |
+|                           Edit.PageDown                           |                         PgDn                          |
+|                        Edit.PageDownExtend                        |                      SHIFT+PgDn                       |
+|                            Edit.PageUp                            |                         PgUp                          |
+|                         Edit.PageUpExtend                         |                      Shift+PgUp                       |
+|                        Edit.ParameterInfo                         |                  Ctrl+Shift+ПРОБЕЛ                  |
+|                      Edit.PasteParameterTip                       |                   Ctrl+Shift+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        ALT+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 Edit.PreviousHighlightedReference                 |                  Ctrl+Shift+СТРЕЛКА ВВЕРХ                  |
+|                          Edit.QuickInfo                           |                    Ctrl+K, Ctrl+I                     |
+|                   Edit.ReverseIncrementalSearch                   |                     Ctrl+Shift+I                      |
+|                        Edit.ScrollLineDown                        |                    Ctrl+СТРЕЛКА ВНИЗ                    |
+|                         Edit.ScrollLineUp                         |                     Ctrl+СТРЕЛКА ВВЕРХ                     |
+|                      Edit.SelectCurrentWord                       |                        CTRL+W                         |
+|                       Edit.SelectionCancel                        |                        ESC                         |
+|                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        ALT +\`                         |
+|                      Edit.StopHidingCurrent                       |                    Ctrl+M, Ctrl+U                     |
+|                        Edit.StopOutlining                         |                    Ctrl+M, Ctrl+P                     |
+|                          Edit.SwapAnchor                          |                    Ctrl+K, Ctrl+A                     |
+|                           Edit.TabLeft                            |                       SHIFT+Tab                       |
+|                      Edit.ToggleAllOutlining                      |                    Ctrl+M, Ctrl+L                     |
+|                        Edit.ToggleBookmark                        |                    Ctrl+K, Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl+Alt+ПРОБЕЛ                     |
+|                   Edit.ToggleOutliningExpansion                   |                    Ctrl+M, Ctrl+M                     |
+|                    Edit.ToggleTaskListShortcut                    |                    Ctrl+K, Ctrl+H                     |
+|                        Edit.ToggleWordWrap                        |                    Ctrl+E, Ctrl+W                     |
+|                      Edit.UncommentSelection                      |                    Ctrl+K, Ctrl+U                     |
+|                          Edit.ViewBottom                          |                       Ctrl+PgDn                       |
+|                       Edit.ViewBottomExtend                       |                    Ctrl+Shift+PgDn                    |
+|                           Edit.ViewTop                            |                       Ctrl+PgUp                       |
+|                        Edit.ViewTopExtend                         |                    Ctrl+Shift+PgUp                    |
+|                        Edit.ViewWhiteSpace                        |                    Ctrl+R, Ctrl+W                     |
+|                       Edit.WordDeleteToEnd                        |                      Ctrl+Delete                      |
+|                      Edit.WordDeleteToStart                       |                    Ctrl+Backspace                     |
+|                           Edit.WordNext                           |                   Ctrl+СТРЕЛКА ВПРАВО                    |
+|                        Edit.WordNextExtend                        |                Ctrl+Shift+СТРЕЛКА ВПРАВО                 |
+|                     Edit.WordNextExtendColumn                     |              Ctrl+Shift+Alt+СТРЕЛКА ВПРАВО               |
+|                         Edit.WordPrevious                         |                    Ctrl+СТРЕЛКА ВЛЕВО                    |
+|                      Edit.WordPreviousExtend                      |                 Ctrl+Shift+СТРЕЛКА ВЛЕВО                 |
+|                   Edit.WordPreviousExtendColumn                   |               Ctrl+Shift+Alt+СТРЕЛКА ВЛЕВО               |
+|                        Edit.WordTranspose                         |                     Ctrl+Shift+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+ВВОД                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> Схема активности UML  
   

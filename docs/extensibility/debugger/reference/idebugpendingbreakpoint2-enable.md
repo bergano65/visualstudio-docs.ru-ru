@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Документы Microsoft
+title: IDebugPendingBreakpoint2::Enable | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855486"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Переключает состояние выполнения ожидающая точка останова.  
@@ -42,18 +42,18 @@ int Enable(
   
 #### <a name="parameters"></a>Параметры  
  `fEnable`  
- [in] Задайте ненулевое значение (`TRUE`) для включения ожидающая точка останова или нулевое значение (`FALSE`) для отключения.  
+ [in] Задайте ненулевое значение (`TRUE`) чтобы включить точку останова или до нуля (`FALSE`) для отключения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
 ## <a name="remarks"></a>Примечания  
- При ожидающая точка останова включена или отключена, все точки останова, привязанный из него устанавливаются в том же состоянии.  
+ Если ожидающая точка останова включена или отключена, все точки останова, привязанный из его присваивается то же состояние.  
   
  Этот метод может вызываться столько раз, при необходимости, даже в том случае, если точка останова уже включен или отключен.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Документы Microsoft
+title: IDebugField::Equal | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d195c28123cc786c9a5a97add98b7f67d499b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830786"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Этот метод сравнивает это поле с указанным полем на равенство.  
+Этот метод сравнивает это поле с указанным полем на предмет равенства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int Equal(
  [in] Поле для сравнения с этим параметром.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если поля совпадают, возвращает `S_OK`. Если поля не совпадают, возвращает `S_FALSE.` в противном случае возвращается код ошибки.  
+ Если поля не изменилось, возвращает `S_OK`. Если поля не совпадают, возвращает `S_FALSE.` в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

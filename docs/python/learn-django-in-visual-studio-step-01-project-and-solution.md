@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942766"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство. Начало работы с веб-платформой Django в Visual Studio
 
@@ -163,16 +163,16 @@ ms.locfileid: "44280172"
 
     ![Команды Django в контекстном меню проекта Python](media/django/step01-django-commands-menu.png)
 
-1. В вашем проекте находится папка с именем проекта. В ней содержатся основные файлы проекта Django.
+2. В вашем проекте находится папка с именем проекта. В ней содержатся основные файлы проекта Django.
 
-    - *__init.py* — пустой файл, который сообщает Python, что эта папка представляет собой пакет Python.
-    - *wsgi.py* — точка входа для веб-серверов, совместимых с WSGI, для использования в проекте. Обычно этот файл не нужно изменять, так как он предоставляет обработчики для рабочих веб-серверов.
-    - Файл *settings.py* содержит параметры для проекта Django, которые вы изменяете в процессе разработки веб-приложения.
-    - Файл *urls.py* содержит таблицу содержимого для проекта Django, которое вы также изменяете в процессе разработки.
+   - *__init.py* — пустой файл, который сообщает Python, что эта папка представляет собой пакет Python.
+   - *wsgi.py* — точка входа для веб-серверов, совместимых с WSGI, для использования в проекте. Обычно этот файл не нужно изменять, так как он предоставляет обработчики для рабочих веб-серверов.
+   - Файл *settings.py* содержит параметры для проекта Django, которые вы изменяете в процессе разработки веб-приложения.
+   - Файл *urls.py* содержит таблицу содержимого для проекта Django, которое вы также изменяете в процессе разработки.
 
-    ![Файлы проекта Django в обозревателе решений](media/django/step01-django-project-in-solution-explorer.png)
+     ![Файлы проекта Django в обозревателе решений](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Как отмечалось ранее, шаблон Visual Studio также добавляет в проект файл *requirements.txt*, определяющий зависимость пакета Django. Этот файл предлагает создать виртуальное окружение при первом создании проекта.
+3. Как отмечалось ранее, шаблон Visual Studio также добавляет в проект файл *requirements.txt*, определяющий зависимость пакета Django. Этот файл предлагает создать виртуальное окружение при первом создании проекта.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Вопрос. Может ли Visual Studio создать файл requirements.txt из виртуального окружения после установки других пакетов?
 

@@ -4,12 +4,12 @@ hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672877"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,12 +89,12 @@ ms.locfileid: "47443623"
                                             <div class="cardText">
                                                 <h3>Научитесь использовать Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Начать интерактивный обзор</a></li>
-                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Написание и редактирование кода</a></li>
-                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Сборка кода</a></li>
-                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Отладка кода</a></li>
-                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Тестирование кода</a></li>
-                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Доступ к данным — локально или в облаке</a></li>
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Начать интерактивный обзор</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Написание и редактирование кода</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Сборка кода</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Отладка кода</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />Тестирование кода</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />Доступ к данным — локально или в облаке</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Попробуйте 5-минутное краткое руководство</h3>
-                                                <h4>Создайте приложение "Hello, World" на языке по своему усмотрению.</h4>
+                                                <h4>Создайте приложение &quot;Hello, World&quot; на используемом вами языке.</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -175,6 +175,7 @@ F# </a>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
                                                                         <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
 Visual Basic </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -196,7 +197,6 @@ Node.js </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        </td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -213,7 +213,7 @@ Node.js </a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Или выберите, что вы хотите разрабатывать</h3>
-                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
                                                 <ul class="noBullet">
                                                     <li>
                                                         <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
@@ -241,7 +241,8 @@ Node.js </a>
                                                             <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
 Веб-приложение с ASP.NET Core</a>
                                                     </li>
-                                                </ul></td></tr></table>
+                                                </ul></td></tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -684,7 +685,7 @@ Node.js </a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                <a href="/visualstudio/azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1034,6 +1035,8 @@ Node.js </a>
                         </ul>
                     </li>
                 </ul>
+            </li>
+            </li>
             </li>
         </ul>
     </div>

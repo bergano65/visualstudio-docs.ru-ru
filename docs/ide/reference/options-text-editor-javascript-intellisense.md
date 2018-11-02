@@ -7,18 +7,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179753"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220395"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Страницу **IntelliSense** можно открыть, выбрав в меню **Сервис**пункт **Параметры** , а затем раскрыв узлы **Текстовый редактор**, **JavaScript**, **IntelliSense.**
@@ -67,13 +68,13 @@ ms.locfileid: "39179753"
 
  С помощью заранее определенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны четыре группы ссылок:
 
--   Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], использующих JavaScript.
+- Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], использующих JavaScript.
 
--   Неявные (Интернет), для проектов HTML5. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для данных типов проектов.
+- Неявные (Интернет), для проектов HTML5. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для данных типов проектов.
 
--   Выделенные эталонные группы для рабочих ролей HTML5. Файлы, указанные в этой группе, находятся в области действия для JS-файлов, снабженных явной ссылкой на эталонную группу выделенного рабочего процесса.
+- Выделенные эталонные группы для рабочих ролей HTML5. Файлы, указанные в этой группе, находятся в области действия для JS-файлов, снабженных явной ссылкой на эталонную группу выделенного рабочего процесса.
 
--   Универсальные, для других типов проектов JavaScript.
+- Универсальные, для других типов проектов JavaScript.
 
 **Включаемые файлы**
 

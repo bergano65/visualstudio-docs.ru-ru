@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount | Документы Microsoft
+title: IDebugArrayObject::GetCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891405"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Получает число элементов в массиве.  
@@ -46,10 +46,10 @@ int GetCount(
  [out] Возвращает число.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод видит все элементы объекта массива как одномерный массив, даже если объект array является многомерным. Например, если массив `myarray[3][2][6]`, этот метод вернет 36 в `pdwElements` параметра. Используйте [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) метод для извлечения отдельных элементов одной за раз.  
+ Этот метод видит все элементы объекта массива как одномерный массив, даже если объект массива имеет несколько измерений. Например, если имеется массив `myarray[3][2][6]`, этот метод возвращал 36 в `pdwElements` параметра. Используйте [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) метод для извлечения отдельных элементов одной за раз.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

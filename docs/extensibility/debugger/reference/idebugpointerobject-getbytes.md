@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Документы Microsoft
+title: IDebugPointerObject::GetBytes | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1459a0f99dd4b0ea9c9e998404b1ffe1733cb3bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 106472037873045b0b30381e6ce901c89b342bae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916553"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Возвращает значение, указанное как ряд последовательных байтах.  
+Получает значение, на которую указывает как ряд последовательных байтах.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,19 +50,19 @@ int GetBytes(
  [in] Указывает смещение в байтах от начала объекта.  
   
  `dwCount`  
- [in] Число извлекаемых байтов.  
+ [in] Число байтов для получения.  
   
  `pBytes`  
- [in, out] Массив, который будет заполнено значением, как ряд последовательных байтах, начиная с заданного смещения из объекта указывает.  
+ [in, out] Массив, который заполняется значение как ряд последовательных байтах, начиная с заданного смещения из объекта, на которые указывают.  
   
  `pdwBytes`  
- [out] Возвращает число байтов, фактически полученных.  
+ [out] Возвращает число фактически извлеченных байтов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется в том случае, если указатель, представленного этим экземпляром [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на тип-примитив или простого массива типов-примитивов (то есть, массив, может быть представлена простая последовательность байтов).  
+ Этот метод используется в том случае, если указатель, представленного этим объектом [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на тип-примитив или простого массива типов-примитивов (то есть массив, могут быть представлены простые последовательности байтов).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937737"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является *.vsix* файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными Visual Studio использует для классификации и установить расширения. Эти метаданные содержатся в манифесте VSIX и *[Content_Types] .xml* файл. Пакет VSIX также может содержать один или несколько *Extension.vsixlangpack* файлы для обеспечения локализованный текст программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  
@@ -55,7 +55,7 @@ ms.locfileid: "44281761"
 ## <a name="installation-location"></a>Расположение установки  
  Во время установки **расширения и обновления** ищет содержимое пакета VSIX, расположенный в узле *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- По умолчанию установки применяется только для текущего пользователя, так как *% LocalAppData %* является каталогом конкретного пользователя. Тем не менее если задать [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста для `True`, расширение будет установлено в *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* и будут доступны для всех пользователей компьютера.  
+ По умолчанию установки применяется только для текущего пользователя, так как *% LocalAppData %* является каталогом конкретного пользователя. Тем не менее если задать [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста для `True`, расширение будет установлено в <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> и будут доступны для всех пользователей компьютера.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* файл определяет типы файлов в развернутом представлении *.vsix* файл. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. в разделе [структура файл [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  

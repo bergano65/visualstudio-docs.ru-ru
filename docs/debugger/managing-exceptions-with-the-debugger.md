@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881694"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -217,7 +217,7 @@ public class GenericException<T> : Exception
 
    ![Дополнительные условия для исключения](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Для каждой строки условию, введите имя модуля и измените список операторов сравнения для **равно** или **не равно**. Можно указать подстановочные знаки (**\***) в имени, чтобы указать несколько модулей.
+3. Для каждой строки условию, введите имя модуля и измените список операторов сравнения для **равно** или **не равно**. Можно указать подстановочные знаки (**\\***) в имени, чтобы указать несколько модулей.
 
 4. Если вам нужно удалить условие, выберите **X** в конце строки условия.
 

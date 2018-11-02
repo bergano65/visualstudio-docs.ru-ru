@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873582"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49301008"
   
  Имя сборки должно быть одним из следующих:  
   
--   Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Дополнительные сведения см. в разделе <xref:System.Reflection.AssemblyName>.  
+- Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Дополнительные сведения см. в разделе <xref:System.Reflection.AssemblyName>.  
   
--   абсолютный путь к сборке;  
+- абсолютный путь к сборке;  
   
- Синтаксис `$(variableName)` можно использовать для ссылки на переменные [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], такие как `$(SolutionDir)`, а синтаксис `%VariableName%` — для ссылки на переменные среды. Пример:  
+  Синтаксис `$(variableName)` можно использовать для ссылки на переменные [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], такие как `$(SolutionDir)`, а синтаксис `%VariableName%` — для ссылки на переменные среды. Пример:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -53,21 +53,21 @@ ms.locfileid: "49301008"
 ## <a name="standard-assemblies"></a>Стандартные сборки  
  Следующие сборки загружаются автоматически, поэтому для них не нужно создавать директивы сборки:  
   
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`  
   
--   `System.dll`  
+- `System.dll`  
   
--   `WindowsBase.dll`  
+- `WindowsBase.dll`  
   
- При использовании пользовательской директивы процессор директив может загружать дополнительные сборки. Например, при создании шаблонов для доменного языка (DSL) не требуется создавать директивы сборки для следующих сборок:  
+  При использовании пользовательской директивы процессор директив может загружать дополнительные сборки. Например, при создании шаблонов для доменного языка (DSL) не требуется создавать директивы сборки для следующих сборок:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
   
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
   
--   Сборка, содержащая DSL.  
+- Сборка, содержащая DSL.  
   
 ##  <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio  
  Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.  

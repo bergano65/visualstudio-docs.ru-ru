@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Документы Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59589c0db502ac5ddbf7c204968ca0684340f685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4582516126cad72c5b2939ef4c12fd59cc6fbcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909893"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Загрузить символы отладки из заданного потока данных **ICorDebugModule** объекта.  
+Загрузить отладочные символы из заданного потока данных **ICorDebugModule** объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -59,19 +59,19 @@ int LoadSymbolsFromStreamWithCorModule(
  [in] Базовый адрес памяти.  
   
  `pUnkMetadataImport`  
- [in] Объект, содержащий метаданные для символа.  
+ [in] Объект, содержащий метаданные символ.  
   
  `pUnkCorDebugModule`  
- [in] Объект, реализующий [ICorDebugModule-интерфейс](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `pStream`  
- [in] Поток данных, содержащий отладочные символы для загрузки.  
+ [in] Поток данных, который содержит отладочные символы для загрузки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  

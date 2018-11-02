@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals | Документы Microsoft
+title: IDebugMethodField::EnumLocals | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8379407a275fa4b89b4107037b2a39691d062dd9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7983943aaa6680539557f68376d19e1e19580cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888246"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-Создает перечислитель для выбранного локальных переменных метода.  
+Создает перечислитель для выбранного локальные переменные метода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,18 +43,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки, который выбирает контекста или области, из которого необходимо получить локальные переменные.  
+ [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки, который выбирает контекст или область, из которого необходимо получить "Локальные".  
   
  `ppLocals`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список локальных переменных; в противном случае возвращает значение null, если нет локальных переменных.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список "Локальные"; в противном случае возвращает значение null, если нет локальных переменных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет локальных переменных. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Выполняется перечисление только переменные, определяемые в блоке, который содержит адрес данного отладки. Если необходимы все локальные переменные, включая любые локальные переменные, созданные компилятором, вызовите [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) метод.  
+ Перечисляются только те переменные, определенные внутри блока, который содержит адрес заданной отладочной. Если необходимы все локальные переменные, включая любые локальные переменные, создаваемые компилятором, вызвать [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) метод.  
   
- Метод может содержать несколько контекстов или блоки области. Например следующий метод надуманный содержит три области, два внутреннего блока и самого тела метода.  
+ Метод может содержать несколько контекстов или блоки области. Например следующий метод надуманный содержит три области действия, внутреннее двух блоков и самом теле метода.  
   
 ```csharp  
 public void func(int index)  
@@ -74,7 +74,7 @@ public void func(int index)
 }  
 ```  
   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) представляет `func` сам метод. Вызов `EnumLocals` метод с [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) значение `Inner Scope 1` адрес возвращает перечисление, содержащее `temp1` переменной, например.  
+ [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) представляет объект `func` сам метод. Вызов `EnumLocals` метод с [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) присвоено `Inner Scope 1` адрес возвращает перечисление, содержащее `temp1` переменной, например.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

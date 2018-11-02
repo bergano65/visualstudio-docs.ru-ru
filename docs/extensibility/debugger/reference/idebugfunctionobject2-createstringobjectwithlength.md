@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Документы Microsoft
+title: IDebugFunctionObject2::CreateStringObjectWithLength | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01accfb86161880be3d155a0f1751ebd9ac0a5a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e21d89c7c674cd3e7056b5244b7d8b50ae18db6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928221"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Создает объект string, имеющего указанную длину.  
+Создает строковый объект, который имеет указанную длину.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int CreateStringObjectWithLength (
   
 #### <a name="parameters"></a>Параметры  
  `pcstrString`  
- [in] Строковое значение для объекта string.  
+ [in] Строковое значение для создаваемого строкового объекта.  
   
  `uiLength`  
  [in] Длина строки в байтах.  
@@ -53,7 +53,7 @@ int CreateStringObjectWithLength (
  [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

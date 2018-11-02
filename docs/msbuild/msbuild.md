@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876728"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
@@ -56,7 +56,7 @@ ms.locfileid: "44321246"
  Чтобы запустить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] из командной строки, передайте файл проекта в *MSBuild.exe* с использованием соответствующих параметров командной строки. Параметры командной строки позволяют задавать свойства, выполнять определенные целевые объекты и задавать другие параметры, управляющие процессом построения. Например, используя следующий синтаксис командной строки, можно создать файл *MyProj.proj* со свойством `Configuration`, для которого задается значение `Debug`.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Дополнительные сведения о параметрах командной строки [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
@@ -170,19 +170,19 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
-|-----------|-----------------|
-|[Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора.|
-|[Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)|Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio.|
-|[Основные понятия MSBuild](../msbuild/msbuild-concepts.md)|Содержит информацию о четырех стандартных блоках MSBuild: свойствах, элементах, целевых объектах и задачах.|
-|[Элементы](../msbuild/msbuild-items.md)|Содержит описание общих понятий, относящихся к формату файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], и способов взаимодействия фрагментов.|
-|[Свойства MSBuild](../msbuild/msbuild-properties.md)|Содержит вводную информацию о свойствах и коллекциях свойств. Свойства представляют собой пары ключ-значение, с помощью которых выполняется настройка сборок.|
-|[Целевые объекты](../msbuild/msbuild-targets.md)|Содержит объяснение группировки задач в определенном порядке и вызова разделов процесса построения из командной строки.|
-|[Задачи](../msbuild/msbuild-tasks.md)|Описывает процесс создания блока исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет атомарные операции построения.|
-|[Условия](../msbuild/msbuild-conditions.md)|Рассматривает использование атрибута `Condition` в элементе MSBuild.|
-|[Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)|Содержит информацию о пакетной обработке, выполнении преобразований, использовании нескольких целевых платформ и других дополнительных возможностях.|
-|[Ведение журнала в MSBuild](../msbuild/logging-in-msbuild.md)|Описание возможностей записи в журнал событий, сообщений и ошибок сборки.|
-|[Дополнительные ресурсы](../msbuild/additional-msbuild-resources.md)|Содержит список ресурсов сообщества и службы поддержки с дополнительной информацией о MSBuild.|
+| Заголовок | Описание: |
+| - | - |
+| [Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора. |
+| [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md) | Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio. |
+| [Основные понятия MSBuild](../msbuild/msbuild-concepts.md) | Содержит информацию о четырех стандартных блоках MSBuild: свойствах, элементах, целевых объектах и задачах. |
+| [Элементы](../msbuild/msbuild-items.md) | Содержит описание общих понятий, относящихся к формату файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], и способов взаимодействия фрагментов. |
+| [Свойства MSBuild](../msbuild/msbuild-properties.md) | Содержит вводную информацию о свойствах и коллекциях свойств. Свойства представляют собой пары ключ-значение, с помощью которых выполняется настройка сборок. |
+| [Целевые объекты](../msbuild/msbuild-targets.md) | Содержит объяснение группировки задач в определенном порядке и вызова разделов процесса построения из командной строки. |
+| [Задачи](../msbuild/msbuild-tasks.md) | Описывает процесс создания блока исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет атомарные операции построения. |
+| [Условия](../msbuild/msbuild-conditions.md) | Рассматривает использование атрибута `Condition` в элементе MSBuild. |
+| [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md) | Содержит информацию о пакетной обработке, выполнении преобразований, использовании нескольких целевых платформ и других дополнительных возможностях. |
+| [Ведение журнала в MSBuild](../msbuild/logging-in-msbuild.md) | Описание возможностей записи в журнал событий, сообщений и ошибок сборки. |
+| [Дополнительные ресурсы](../msbuild/additional-msbuild-resources.md) | Содержит список ресурсов сообщества и службы поддержки с дополнительной информацией о MSBuild. |
 
 ## <a name="reference"></a>Ссылка
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md). Содержит ссылки на разделы, содержащие справочную информацию.

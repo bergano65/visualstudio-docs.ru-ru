@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode | Документы Microsoft
+title: IDebugProgramProvider2::GetProviderProgramNode | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6984a89d39dc99351acaa0e37f2c3d9b1e47f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d26b74928985feefda3acdc8594c35096fc4e0b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821329"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
-Возвращает узел программы для конкретной программы.  
+Возвращает узел, программы для конкретной программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,26 +56,26 @@ int GetProviderProgramNode(
 |Flag|Описание|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|  
-|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинг будут возвращены для каждого узла).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был присоединен к, но не запускается в отладчике.|  
+|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга будет возвращаться для каждого узла).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|  
   
  `pPort`  
- [in] Прослушивает порт вызывающего процесса.  
+ [in] Порт вызывающий процесс выполняется на.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую идентификатор процесса, в которой находится программа в вопросе.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.  
   
  `guidEngine`  
- [in] Идентификатор GUID отладчик, исполняемой программы (если таковые имеются).  
+ [in] Идентификатор GUID модуля отладки, к которой подключен программы (если таковые имеются).  
   
  `programId`  
- [in] Идентификатор программы, для которого нужно получить узел программы.  
+ [in] Идентификатор программы, для которого необходимо получить узел программы.  
   
  `ppProgramNode`  
- [out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, представляющий узел Запрошенная программа.  
+ [out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, представляющий узел запрошенной программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: f5bffba1b2de64c142dd70990fb74429ad40269a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582451"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220099"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
 
@@ -32,7 +32,7 @@ ms.locfileid: "39582451"
 При создании элементов управления для использования в сценариях привязки данных, должны реализовывать один из следующих атрибутов привязки к данным:
 
 |Использование атрибута привязки данных|
-|-----------------------------------|
+| - |
 |Реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute> на простых элементах управления, таких как <xref:System.Windows.Forms.TextBox>, которые отображают отдельный столбец (или свойство) данных. (Этот процесс описан в данном пошаговом руководстве.)|
 |Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки (или таблицы) данных. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки (или таблицы) данных, но также должны представлять отдельный столбец или отдельное свойство. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms с привязкой данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
@@ -122,7 +122,7 @@ ms.locfileid: "39582451"
 
 ## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных
 
-Этот шаг использует **конфигурации источника данных**мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
+Этот шаг использует **конфигурации источника данных** мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  В меню **Данные** выберите команду **Показать источники данных**.
 

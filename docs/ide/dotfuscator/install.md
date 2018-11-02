@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880368"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Установка Dotfuscator Community Edition (CE)
 
@@ -46,9 +46,9 @@ Dotfuscator CE можно установить из интегрированно
 
 1. В панели поиска **Быстрый запуск** (CTRL+Q) введите `dotfuscator`. <br/> <br/> ![Быстрый запуск](media/install_from_vs_12.png) <br/> <br/>
 2. Результаты появятся на панели быстрого запуска. В разделе *Установка* установите флажок **PreEmptive Protection — Dotfuscator (отдельный компонент)**.
-  * Если вы вместо этого в разделе *Меню* видите **Сервис > PreEmptive Protection — Dotfuscator**, то Dotfuscator CE уже установлен. Дополнительные сведения об использовании см. на [странице с вводными сведениями полного руководства пользователя Dotfuscator CE][get-started].
+   * Если вы вместо этого в разделе *Меню* видите **Сервис > PreEmptive Protection — Dotfuscator**, то Dotfuscator CE уже установлен. Дополнительные сведения об использовании см. на [странице с вводными сведениями полного руководства пользователя Dotfuscator CE][get-started].
 3. Откроется окно установщика Visual Studio, автоматически настроенного для установки Dotfuscator CE.
-  * Чтобы продолжить, может потребоваться указать учетные данные администратора.
+   * Чтобы продолжить, может потребоваться указать учетные данные администратора.
 4. Закройте все экземпляры интегрированной среды разработки Visual Studio. <br/> <br/> ![Нажмите кнопку "Установить"](media/install_from_vs_345.png) <br/> <br/>
 5. В окне установщика Visual Studio щелкните *Установить*.
 

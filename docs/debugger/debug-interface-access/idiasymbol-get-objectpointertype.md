@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_objectPointerType | Документы Microsoft
+title: IDiaSymbol::get_objectPointerType | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 374c1468d627255df208a6bee616f0b2af1b8a6d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2c82c52fc49b76e6c3adb8b58bb03fafa28531f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866406"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-Возвращает тип указателя на объект для метода класса.  
+Получает тип указателя на объект для метода класса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT get_objectPointerType (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, который представляет указатель на объект для метода класса.  
+ [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий указатель на объект для метода класса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
  Это свойство применяется только к символам с [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) тип `SymTagFunctionType`.  

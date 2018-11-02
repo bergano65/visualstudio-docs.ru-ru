@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822116"
 ---
 # <a name="localize-clickonce-applications"></a>Локализация приложений ClickOnce
 Локализация — это процедура адаптации вашего приложения к конкретному языку и региональным параметрам. Эта процедура включает перевод текста пользовательского интерфейса на определенный язык, использование подходящего формата дат и валюты, изменение размера элементов управления в формах и зеркальное отражение элементов управления справа налево, если необходимо.  
@@ -69,16 +69,16 @@ ms.locfileid: "44279346"
   
  Загрузка вспомогательных сборок по требованию несколько отличается от загрузки по требованию других типов сборок. Дополнительные сведения и примеры кода по включению данного сценария с помощью [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] средства для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Этот сценарий также можно включить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce конструктора](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce С помощью конструктора](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
+ Этот сценарий также можно включить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  См. также раздел [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce и конструктора](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) или [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce и конструктора](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Тестирование локализованных приложений ClickOnce перед развертыванием  
  Вспомогательная сборка будет использоваться для приложения Windows Forms только в том случае, если для свойства <xref:System.Threading.Thread.CurrentUICulture%2A> для основного потока приложения задан язык и региональные параметры вспомогательной сборки . Клиенты на местах, вероятно, уже пользуются локализованной версией Windows, в которой нужный язык и региональные параметры по умолчанию заданы правильно.  
   
  Существует три варианта тестирования локализованных развертываний до предоставления приложения пользователям.  
   
--   Можно запустить приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в соответствующих локализованных версиях Windows.  
+- Можно запустить приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в соответствующих локализованных версиях Windows.  
   
--   Можно задать свойство <xref:System.Threading.Thread.CurrentUICulture%2A> в своем приложении программным образом. (Это свойство нужно задать до вызова метода <xref:System.Windows.Forms.Application.Run%2A>).  
+- Можно задать свойство <xref:System.Threading.Thread.CurrentUICulture%2A> в своем приложении программным образом. (Это свойство нужно задать до вызова метода <xref:System.Windows.Forms.Application.Run%2A>).  
   
 ## <a name="see-also"></a>См. также  
  [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)   

@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872022"
 ---
 # <a name="how-to-specify-build-events-c"></a>Практическое руководство. Назначение событий построения (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,75 +78,75 @@ ms.locfileid: "49297301"
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Чтобы создать команду EXE для изменения манифеста приложения  
   
-1.  Создайте консольное приложение для команды. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
+1. Создайте консольное приложение для команды. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
   
-2.  В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Windows**, а затем шаблон **Консольное приложение**. Задайте для проекта имя `ChangeOSVersionCS`.  
+2. В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Windows**, а затем шаблон **Консольное приложение**. Задайте для проекта имя `ChangeOSVersionCS`.  
   
-3.  В Program.cs добавьте следующую строку для других инструкций `using` в верхней части файла:  
+3. В Program.cs добавьте следующую строку для других инструкций `using` в верхней части файла:  
   
-    ```  
-    using System.Xml;  
-    ```  
+   ```  
+   using System.Xml;  
+   ```  
   
-4.  В пространстве имен `ChangeOSVersionCS` замените реализацию класса `Program` следующим кодом:  
+4. В пространстве имен `ChangeOSVersionCS` замените реализацию класса `Program` следующим кодом:  
   
-    ```  
-    class Program  
-    {  
-       /// <summary>  
-       /// This function will set the minimum operating system version for a ClickOnce application.  
-       /// </summary>  
-       /// <param name="args">  
-       /// Command Line Arguments:  
-       /// 0 - Path to application manifest (.exe.manifest).  
-       /// 1 - Version of OS  
-       ///</param>  
-       static void Main(string[] args)  
-       {  
-          string applicationManifestPath = args[0];  
-          Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
+   ```  
+   class Program  
+   {  
+      /// <summary>  
+      /// This function will set the minimum operating system version for a ClickOnce application.  
+      /// </summary>  
+      /// <param name="args">  
+      /// Command Line Arguments:  
+      /// 0 - Path to application manifest (.exe.manifest).  
+      /// 1 - Version of OS  
+      ///</param>  
+      static void Main(string[] args)  
+      {  
+         string applicationManifestPath = args[0];  
+         Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
   
-          // Get version name.  
-          Version osVersion = null;  
-          if (args.Length >=2 ){  
-             osVersion = new Version(args[1]);  
-          }else{  
-             throw new ArgumentException("OS Version not specified.");  
-          }  
-          Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
+         // Get version name.  
+         Version osVersion = null;  
+         if (args.Length >=2 ){  
+            osVersion = new Version(args[1]);  
+         }else{  
+            throw new ArgumentException("OS Version not specified.");  
+         }  
+         Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
   
-          XmlDocument document;  
-          XmlNamespaceManager namespaceManager;  
-          namespaceManager = new XmlNamespaceManager(new NameTable());  
-          namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
-          namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
+         XmlDocument document;  
+         XmlNamespaceManager namespaceManager;  
+         namespaceManager = new XmlNamespaceManager(new NameTable());  
+         namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
+         namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
   
-          document = new XmlDocument();  
-          document.Load(applicationManifestPath);  
+         document = new XmlDocument();  
+         document.Load(applicationManifestPath);  
   
-          string baseXPath;  
-          baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
+         string baseXPath;  
+         baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
   
-          // Change minimum required operating system version.  
-          XmlNode node;  
-          node = document.SelectSingleNode(baseXPath, namespaceManager);  
-          node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
-          node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
-          node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
-          node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
+         // Change minimum required operating system version.  
+         XmlNode node;  
+         node = document.SelectSingleNode(baseXPath, namespaceManager);  
+         node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
+         node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
+         node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
+         node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
   
-          document.Save(applicationManifestPath);  
-       }  
-    }  
-    ```  
+         document.Save(applicationManifestPath);  
+      }  
+   }  
+   ```  
   
-     Команда принимает два аргумента: путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно Projectname.publish), и новую версию операционной системы.  
+    Команда принимает два аргумента: путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно Projectname.publish), и новую версию операционной системы.  
   
-5.  Выполните построение проекта. В меню **Сборка** выберите **Собрать решение**.  
+5. Выполните построение проекта. В меню **Сборка** выберите **Собрать решение**.  
   
-6.  Скопируйте EXE-файл в каталог, например `C:\TEMP\ChangeOSVersionVB.exe`.  
+6. Скопируйте EXE-файл в каталог, например `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Затем вызовите эту команду в событии после сборки для изменения манифеста приложения.  
+   Затем вызовите эту команду в событии после сборки для изменения манифеста приложения.  
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Вызов события после сборки для изменения манифеста приложения  
   

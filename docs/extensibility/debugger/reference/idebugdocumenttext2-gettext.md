@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Документы Microsoft
+title: IDebugDocumentText2::GetText | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905510"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Получение текста из указанной позиции в документе.  
@@ -47,22 +47,22 @@ int GetText(
   
 #### <a name="parameters"></a>Параметры  
  `pos`  
- [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает на расположение текста, который требуется получить.  
+ [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает расположение текста, который требуется получить.  
   
  `cMaxChars`  
  [in] Максимальное количество символов текста, который требуется получить.  
   
  `pText`  
- [in, out] Указатель на буфер, заполнено нужный текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.  
+ [in, out] Указатель на буфер, который должен быть заполнен с помощью требуемый текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.  
   
  `pcNumChars`  
- [out] Возвращает количество символов, фактически извлеченных.  
+ [out] Возвращает число фактически полученных символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как этот метод может вызываться из C#.  
+ В этом примере показано, как этот метод может вызываться с помощью C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

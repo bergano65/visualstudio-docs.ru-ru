@@ -13,12 +13,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 54702db4a89bdabb58805560ed8b9909652c649e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904420"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "49173697"
   
  **Требования**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- См. видео (1 ч. 16 мин.): [Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+  См. видео (1 ч. 16 мин.): [Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>Содержание раздела  
  Ниже перечислены темы, рассматриваемые в этом разделе.  
@@ -42,41 +42,41 @@ ms.locfileid: "49173697"
   
  [Использование оболочек](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
   
--   [Добавление сборки Fakes](#AddFakes)  
+- [Добавление сборки Fakes](#AddFakes)  
   
--   [Использование ShimsContext](#ShimsContext)  
+- [Использование ShimsContext](#ShimsContext)  
   
--   [Создание тестов с оболочками](#WriteTests)  
+- [Создание тестов с оболочками](#WriteTests)  
   
- [Оболочки для методов различных типов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
+  [Оболочки для методов различных типов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
   
--   [Статические методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
+- [Статические методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
   
--   [Методы экземпляра (для всех экземпляров)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
+- [Методы экземпляра (для всех экземпляров)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
   
--   [Методы экземпляра (для одного экземпляра)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
+- [Методы экземпляра (для одного экземпляра)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
   
--   [Конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
+- [Конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
   
--   [Базовые члены](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
+- [Базовые члены](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
   
--   [Статические конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
+- [Статические конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
   
--   [Методы завершения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
+- [Методы завершения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
   
--   [Закрытые методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
+- [Закрытые методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
   
--   [Привязка интерфейсов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
+- [Привязка интерфейсов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
   
- [Изменение поведения по умолчанию](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
+  [Изменение поведения по умолчанию](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
   
- [Обнаружение событий доступа к среде](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
+  [Обнаружение событий доступа к среде](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
   
- [Параллелизм](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
+  [Параллелизм](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
   
- [Вызов исходного метода из метода оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
+  [Вызов исходного метода из метода оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
   
- [Ограничения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  [Ограничения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Пример. Ошибка 2000 года  
  Рассмотрим метод, который создает исключение 1 января 2000 г.  

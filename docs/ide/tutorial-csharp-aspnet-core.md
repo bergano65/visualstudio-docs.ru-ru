@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284054"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Руководство. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -131,7 +131,7 @@ ms.locfileid: "46496120"
 
 1. Не закрывая окно браузера, вернитесь в Visual Studio.
 
-1. В Visual Studio выберите файл **About.cshtml**. Затем удалите слово _changed_, заменив его словами _file and directory_.
+1. В Visual Studio выберите файл **About.cshtml**. Затем удалите слово _additional_, заменив его словами _file и directory_.
 
     ![Изменение текста в файле About.cshtml](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Visual Studio — это интегрированный набор средст
 
 ## <a name="see-also"></a>См. также
 
-[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](../deployment/quickstart-deploy-to-azure.md)

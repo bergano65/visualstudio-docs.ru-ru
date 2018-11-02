@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Документы Microsoft
+title: PROCESS_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864625"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 Содержит сведения о процессе.  
@@ -57,22 +57,22 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>Участники  
  Поля  
- Сочетание флагов из [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисления, укажите, какие поля заполнены.  
+ Сочетание флагов из [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисление, указать, какие поля заполнены.  
   
  bstrFileName  
- Полный путь имя процесса. Аналогичен вызову [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) метод с параметром `GN_FILENAME`.  
+ Полное имя пути процесса. Аналогичен вызову [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) метод с параметром `GN_FILENAME`.  
   
  bstrBaseName  
  Имя файла и расширение процесса. Аналогичен вызову `IDebugProcess2::Getname` метод с параметром `GN_BASENAME`.  
   
  bstrTitle  
- Заголовок процесса, если он существует. Аналогичен вызову `IDebugProcess2::Getname` метод с параметром `GN_TITLE`.  
+ Название процесса, если он существует. Аналогичен вызову `IDebugProcess2::Getname` метод с параметром `GN_TITLE`.  
   
  ProcessId  
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры, определяющий процесс. Аналогичен вызову [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) метод.  
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, определяющий процесс. Аналогичен вызову [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) метод.  
   
  dwSessionId  
- Идентификатор, на котором этот процесс выполняется в сеанс отладки.  
+ Идентификатор сеанса отладки, на котором этот процесс выполняется в.  
   
  bstrAttachedSessionName  
  Имя вложенного сеанса. Аналогичен вызову [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) метод.  
@@ -81,7 +81,7 @@ public struct PROCESS_INFO {
  Время создания процесса.  
   
  Флаги  
- Сочетание флагов из [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) перечисления, укажите свойства процесса.  
+ Сочетание флагов из [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) перечисления, укажите для свойства процесса.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) метод, где он заполняется.  
@@ -94,7 +94,7 @@ public struct PROCESS_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
  [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)   

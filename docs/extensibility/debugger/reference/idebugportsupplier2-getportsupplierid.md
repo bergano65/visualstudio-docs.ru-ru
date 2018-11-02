@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPortSupplierId | Документы Microsoft
+title: IDebugPortSupplier2::GetPortSupplierId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb8647b795754df0b49f82ac6b479f44a37a947
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f1885db3ceb7f5307462e57016ea3581675ec71
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853256"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 Возвращает идентификатор поставщика порта.  
@@ -44,7 +44,7 @@ HRESULT GetPortSupplierId(
  [out] Возвращает идентификатор GUID поставщика порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

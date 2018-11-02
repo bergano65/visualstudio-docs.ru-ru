@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674376"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671421"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Project. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35674376"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   создание проекта надстройки VSTO для Project;  
+- создание проекта надстройки VSTO для Project;  
   
--   написание кода, использующего объектную модель Project для добавления задачи в новый проект;  
+- написание кода, использующего объектную модель Project для добавления задачи в новый проект;  
   
--   Построение и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
--   Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+- Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -78,18 +78,18 @@ ms.locfileid: "35674376"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Добавление задачи в новый проект  
   
-1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для `NewProject` событие `Microsoft.Office.Interop.MSProject.Application` класс.  
+1. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. В коде определяется обработчик события `NewProject` класса `Microsoft.Office.Interop.MSProject.Application`.  
   
-     Когда пользователь создает проект, этот обработчик событий добавляет в него задачу.  
+    Когда пользователь создает проект, этот обработчик событий добавляет в него задачу.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Изменение проекта, данный пример кода использует следующие объекты:  
+   Изменение проекта, данный пример кода использует следующие объекты:  
   
--   Поле `Application` класса `ThisAddIn` . `Application` Возвращает `Microsoft.Office.Interop.MSProject.Application` объект, который представляет текущий экземпляр Project.  
+-   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект `Microsoft.Office.Interop.MSProject.Application`, который представляет текущий экземпляр Project.  
   
--   `pj` Параметр обработчика событий для события NewProject. `pj` Параметр `Microsoft.Office.Interop.MSProject.Project` объект, представляющий проект. Дополнительные сведения см. в разделе [проекта решения](../vsto/project-solutions.md).  
+-   `pj` Параметр обработчика событий для события NewProject. Параметр `pj` — это объект `Microsoft.Office.Interop.MSProject.Project`, который представляет проект. Дополнительные сведения см. в разделе [проекта решения](../vsto/project-solutions.md).  
   
 1.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код подключается `Application_Newproject` обработчик событий с событием NewProject.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35674376"
   
 1.  Нажмите клавишу **F5** для построения и запуска проекта. Запускается Microsoft Project, и при этом автоматически открывается пустой проект.  
   
-     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Project обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [Обзор процесса сборки решения Office](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Project обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [Обзор процесса сборки решения Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Убедитесь в том, что новая задача добавлена в пустой проект.  
   

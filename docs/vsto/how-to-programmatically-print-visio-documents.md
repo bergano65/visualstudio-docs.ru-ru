@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671226"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Практическое: программная печать документов Visio
   Можно напечатать полный документ Microsoft Office Visio или только определенную страницу.  
   
- Подробные сведения о методах печати см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) и метода [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) .  
+ Подробные сведения о методах печати см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) и метода [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) .  
   
 ## <a name="print-a-visio-document"></a>Печать документа Visio  
   
 ### <a name="to-print-a-complete-document"></a>Печать всего документа  
   
--   Вызовите `Microsoft.Office.Interop.Visio.Document.Print` метод `Microsoft.Office.Interop.Visio.Document` объект, который требуется напечатать.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Document.Print` документа `Microsoft.Office.Interop.Visio.Document`, который требуется напечатать.  
   
      В следующем примере кода печатается активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
   
@@ -43,7 +43,7 @@ ms.locfileid: "35257509"
   
 ### <a name="to-print-a-page-of-a-document"></a>Печать страницы документа  
   
--   Вызовите `Microsoft.Office.Interop.Visio.Pages.Print` метод `Microsoft.Office.Interop.Visio.Pages` объект, который требуется напечатать.  
+-   Вызовите метод `Microsoft.Office.Interop.Visio.Pages.Print` документа `Microsoft.Office.Interop.Visio.Pages`, который требуется напечатать.  
   
      В следующем примере кода печатается первая страница активного документа. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
   

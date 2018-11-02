@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d77cd34345055f6bcb4b8ea19631aa9a3a6780e3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 76bcd13fcee2f8b0bda775cc3ae241d7a363658e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928455"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Практическое: использование мастеров для шаблонов проектов
 Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс, который, при реализации, дают возможность запускать пользовательский код, когда пользователь создает проект на основе шаблона.  
@@ -34,194 +34,194 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Создание проекта шаблона проекта с помощью проекта VSIX  
  Приступить к созданию пользовательского шаблона проекта шаблоном проекта., входящий в состав пакета SDK для Visual Studio. В этой процедуре мы будем использовать проект шаблона проекта C#, но также имеется проект шаблона проекта Visual Basic. Затем можно добавить проект VSIX в решение, содержащее проект шаблона проекта.  
   
-1.  Создание проекта шаблона проекта C# (в Visual Studio **файл** > **New** > **проекта** > **Visual C#**   >  **Расширяемости** > **шаблон проекта C#**). Назовите его **MyProjectTemplate**.  
+1. Создание проекта шаблона проекта C# (в Visual Studio **файл** > **New** > **проекта** > **Visual C#**   >  **Расширяемости** > **шаблон проекта C#**). Назовите его **MyProjectTemplate**.  
   
-    > [!NOTE]
-    >  Вы может появиться запрос на установку Visual Studio SDK. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Вы может появиться запрос на установку Visual Studio SDK. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Добавление нового проекта VSIX (**файл** > **New** > ** проект > **Visual C#** > ** расширяемости > **проект VSIX**) в том же решении, что и проект шаблона проекта (в **обозревателе решений**, выберите узел решения, щелкните правой кнопкой мыши и выберите **добавить** > **новый проект** ). Назовите его **MyProjectWizard.**  
+2. Добавление нового проекта VSIX (**файл** > **New** > <strong>проекта > ** Visual C#</strong>   >  <strong>расширяемости > ** Проект VSIX</strong>) в том же решении, что и проект шаблона проекта (в **обозревателе решений**, выберите узел решения, щелкните правой кнопкой мыши и выберите **добавить**  >  **Новый проект**). Назовите его **MyProjectWizard.**  
   
-3.  Назначьте проект VSIX запускаемым проектом. В **обозревателе решений**, выберите узел проекта VSIX, щелкните правой кнопкой мыши и выберите **Назначить запускаемым проектом**.  
+3. Назначьте проект VSIX запускаемым проектом. В **обозревателе решений**, выберите узел проекта VSIX, щелкните правой кнопкой мыши и выберите **Назначить запускаемым проектом**.  
   
-4.  Добавьте проект шаблона как ресурс проекта VSIX. В **обозревателе решений**, в узле проекта VSIX, найти *source.extension.vsixmanifest* файл. Дважды щелкните его, чтобы открыть редактор манифеста.  
+4. Добавьте проект шаблона как ресурс проекта VSIX. В **обозревателе решений**, в узле проекта VSIX, найти *source.extension.vsixmanifest* файл. Дважды щелкните его, чтобы открыть редактор манифеста.  
   
-5.  В редакторе манифеста выберите **активы** вкладка в левой части окна.  
+5. В редакторе манифеста выберите **активы** вкладка в левой части окна.  
   
-6.  В **активы** выберите **New**. В **добавить новый актив** окно, введите в поле выберите **Microsoft.VisualStudio.ProjectTemplate**. В **источника** выберите **проект в текущем решении**. В **проекта** выберите **MyProjectTemplate**. Затем нажмите кнопку **ОК**.  
+6. В **активы** выберите **New**. В **добавить новый актив** окно, введите в поле выберите **Microsoft.VisualStudio.ProjectTemplate**. В **источника** выберите **проект в текущем решении**. В **проекта** выберите **MyProjectTemplate**. Затем нажмите кнопку **ОК**.  
   
-7.  Постройте решение и запустите отладку. Откроется второй экземпляр Visual Studio. (Это может занять несколько минут).  
+7. Постройте решение и запустите отладку. Откроется второй экземпляр Visual Studio. (Это может занять несколько минут).  
   
-8.  В второй экземпляр Visual Studio попробуйте создать новый проект с помощью нового шаблона. (**Файл** > **новый** > **проект > Visual C#** > **шаблона MyProject**). Новый проект должен отобразиться определить класс с именем **Class1**. Вы создали настраиваемого шаблона проекта! Остановите отладку сейчас.  
+8. В второй экземпляр Visual Studio попробуйте создать новый проект с помощью нового шаблона. (**Файл** > **новый** > **проект > Visual C#** > **шаблона MyProject**). Новый проект должен отобразиться определить класс с именем **Class1**. Вы создали настраиваемого шаблона проекта! Остановите отладку сейчас.  
   
 ## <a name="create-a-custom-template-wizard"></a>Создать настраиваемый мастер шаблонов  
  В этом разделе показано, как создать пользовательский мастер, который открывает форму Windows, прежде чем создается проект. Форма позволяет пользователям добавлять значение пользовательского параметра, который добавляется к исходному коду во время создания проекта.  
   
-1.  Настройка проекта VSIX, чтобы его можно создать сборку.  
+1. Настройка проекта VSIX, чтобы его можно создать сборку.  
   
-2.  В **обозревателе решений**, выберите узел проекта VSIX. Под обозревателем решений, вы должны увидеть **свойства** окна. Если этого не сделать, выберите **представление** > **окно "Свойства"**, или нажмите клавишу **F4**. В **свойства** окно, выберите следующие поля для `true`:  
+2. В **обозревателе решений**, выберите узел проекта VSIX. Под обозревателем решений, вы должны увидеть **свойства** окна. Если этого не сделать, выберите **представление** > **окно "Свойства"**, или нажмите клавишу **F4**. В **свойства** окно, выберите следующие поля для `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  Добавьте сборку как ресурс проекта VSIX. Откройте *source.extension.vsixmanifest* файл и выберите **активы** вкладки. В **добавить новый актив** окне для **тип** выберите **Microsoft.VisualStudio.Assembly**, для **источника** выберите **A проект в текущем решении**, а также для **проекта** выберите **MyProjectWizard**.  
+3. Добавьте сборку как ресурс проекта VSIX. Откройте *source.extension.vsixmanifest* файл и выберите **активы** вкладки. В **добавить новый актив** окне для **тип** выберите **Microsoft.VisualStudio.Assembly**, для **источника** выберите **A проект в текущем решении**, а также для **проекта** выберите **MyProjectWizard**.  
   
-4.  Добавьте следующие ссылки в проект VSIX. (В **обозревателе решений**, в разделе VSIX проектов выберите узел **ссылки**, щелкните правой кнопкой мыши и выберите **добавить ссылку**.) В **добавить ссылку** диалоговое окно, в **Framework** вкладке, найти **System.Windows Forms** сборки и выберите его. Теперь выберите **расширения** найдите вкладку **EnvDTE** сборки и выберите его. Также найти **Microsoft.VisualStudio.TemplateWizardInterface** сборки и выберите его. Нажмите кнопку **ОК**.  
+4. Добавьте следующие ссылки в проект VSIX. (В **обозревателе решений**, в разделе VSIX проектов выберите узел **ссылки**, щелкните правой кнопкой мыши и выберите **добавить ссылку**.) В **добавить ссылку** диалоговое окно, в **Framework** вкладке, найти **System.Windows Forms** сборки и выберите его. Теперь выберите **расширения** найдите вкладку **EnvDTE** сборки и выберите его. Также найти **Microsoft.VisualStudio.TemplateWizardInterface** сборки и выберите его. Нажмите кнопку **ОК**.  
   
-5.  Добавьте класс для реализации мастера в проект VSIX. (В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта VSIX и выберите **добавить**, затем **новый элемент**, затем **класс**.) Назовите класс **WizardImplementation**.  
+5. Добавьте класс для реализации мастера в проект VSIX. (В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта VSIX и выберите **добавить**, затем **новый элемент**, затем **класс**.) Назовите класс **WizardImplementation**.  
   
-6.  Замените код в *WizardImplementationClass.cs* файла следующим кодом:  
+6. Замените код в *WizardImplementationClass.cs* файла следующим кодом:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     **UserInputForm** в этом коде будет реализована позже.  
+    **UserInputForm** в этом коде будет реализована позже.  
   
-     `WizardImplementation` Класс содержит методы реализации для каждого члена <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. В этом примере используется только <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> метод выполняет задачу. Все остальные методы не выполнять никаких действий или возвращать `true`.  
+    `WizardImplementation` Класс содержит методы реализации для каждого члена <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. В этом примере используется только <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> метод выполняет задачу. Все остальные методы не выполнять никаких действий или возвращать `true`.  
   
-     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Метод принимает четыре параметра:  
+    <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Метод принимает четыре параметра:  
   
-    -   <xref:System.Object> Параметр, который может быть приведен к корню <xref:EnvDTE._DTE> объекта, чтобы можно было настроить проект.  
+   - <xref:System.Object> Параметр, который может быть приведен к корню <xref:EnvDTE._DTE> объекта, чтобы можно было настроить проект.  
   
-    -   Объект <xref:System.Collections.Generic.Dictionary%602> параметр, который содержит коллекцию всех предварительно определенных параметров в шаблоне. Дополнительные сведения о параметраз шаблонов см. в разделе [параметров шаблона](../ide/template-parameters.md).  
+   - Объект <xref:System.Collections.Generic.Dictionary%602> параметр, который содержит коллекцию всех предварительно определенных параметров в шаблоне. Дополнительные сведения о параметраз шаблонов см. в разделе [параметров шаблона](../ide/template-parameters.md).  
   
-    -   Объект <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> параметр, содержащий сведения о том, какого рода шаблон используется.  
+   - Объект <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> параметр, содержащий сведения о том, какого рода шаблон используется.  
   
-    -   <xref:System.Object> Массив, содержащий набор параметров передано мастера с помощью Visual Studio.  
+   - <xref:System.Object> Массив, содержащий набор параметров передано мастера с помощью Visual Studio.  
   
      В этом примере значение параметра из пользовательской формы ввода для <xref:System.Collections.Generic.Dictionary%602> параметра. Каждый экземпляр `$custommessage$` параметр в проекте будут заменены на текст, введенный пользователем. Следующие сборки необходимо добавить в проект: **системы** и **System.Drawing**.
   
-7.  Теперь создайте **UserInputForm**. В *WizardImplementation.cs* добавьте следующий код в конце `WizardImplementation` класса.  
+7. Теперь создайте **UserInputForm**. В *WizardImplementation.cs* добавьте следующий код в конце `WizardImplementation` класса.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-                this.Close();
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+               this.Close();
+           }  
+       }  
+   ```  
   
-     Форма ввода пользователя предоставляет простую форму для ввода пользовательских параметров. Форма содержит текстовое поле с именем `textBox1` и кнопки с именем `button1`. При нажатии кнопки, текст из текстового поля сохраняется в `customMessage` параметра.  
+    Форма ввода пользователя предоставляет простую форму для ввода пользовательских параметров. Форма содержит текстовое поле с именем `textBox1` и кнопки с именем `button1`. При нажатии кнопки, текст из текстового поля сохраняется в `customMessage` параметра.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Мастер подключений для пользовательского шаблона  
  Чтобы ваш пользовательский шаблон проекта для использования пользовательского мастера необходимо подписать сборку мастера и добавьте несколько строк в шаблон пользовательского проекта, чтобы позволить, он знает, где можно найти в мастер реализации при создании нового проекта.  
   
-1.  Подпишите сборку. В **обозревателе решений**, выберите проект VSIX, щелкните правой кнопкой мыши и выберите **свойства проекта**.  
+1. Подпишите сборку. В **обозревателе решений**, выберите проект VSIX, щелкните правой кнопкой мыши и выберите **свойства проекта**.  
   
-2.  В **свойства проекта** выберите **подписывание** вкладку в **подписывание** вкладке **подписать сборку**. В **выберите файл ключа строгого имени** выберите  **\<New >**. В **Создание ключа строгого имени** окно в **имя файла ключа** введите **key.snk**. Снимите флажок **защитить мой файл ключей паролем** поля.  
+2. В **свойства проекта** выберите **подписывание** вкладку в **подписывание** вкладке **подписать сборку**. В **выберите файл ключа строгого имени** выберите  **\<New >**. В **Создание ключа строгого имени** окно в **имя файла ключа** введите **key.snk**. Снимите флажок **защитить мой файл ключей паролем** поля.  
   
-3.  В **обозревателе решений**, выберите проект VSIX и найти **свойства** окна.  
+3. В **обозревателе решений**, выберите проект VSIX и найти **свойства** окна.  
   
-4.  Задайте **выходных данных для выходного каталога сборки копирования** поле **true**. Благодаря этому сборки, в который копируется в выходной каталог при перестроении решения. Он по-прежнему содержится в `.vsix` файл. Необходимо просмотреть сборки, чтобы узнать его ключ подписи.  
+4. Задайте **выходных данных для выходного каталога сборки копирования** поле **true**. Благодаря этому сборки, в который копируется в выходной каталог при перестроении решения. Он по-прежнему содержится в `.vsix` файл. Необходимо просмотреть сборки, чтобы узнать его ключ подписи.  
   
-5.  Выполните повторную сборку решения.  
+5. Выполните повторную сборку решения.  
   
-6.  Файл key.snk теперь можно найти в каталоге проекта MyProjectWizard (*\<расположение на диске > \MyProjectTemplate\MyProjectWizard\key.snk*). Копировать *key.snk* файл.  
+6. Файл key.snk теперь можно найти в каталоге проекта MyProjectWizard (*\<расположение на диске > \MyProjectTemplate\MyProjectWizard\key.snk*). Копировать *key.snk* файл.  
   
-7.  Перейдите в выходной каталог и найти сборку (*\<расположение на диске > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Вставить *key.snk* файл здесь. (Это не обязателен, но это сделает следующее более удобными.)  
+7. Перейдите в выходной каталог и найти сборку (*\<расположение на диске > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Вставить *key.snk* файл здесь. (Это не обязателен, но это сделает следующее более удобными.)  
   
-8.  Откройте окно командной строки и перейдите в каталог, в котором будет создана сборка.  
+8. Откройте окно командной строки и перейдите в каталог, в котором будет создана сборка.  
   
 9. Найти *sn.exe* инструмент подписывания. Например в 64-разрядной операционной системе Windows 10, типичный путь будет иметь следующее:  
   
@@ -261,17 +261,17 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
 ## <a name="add-the-custom-parameter-to-the-template"></a>Добавление пользовательского параметра в шаблон  
  В этом примере проект, используемый в качестве шаблона отображает сообщения, заданного в пользовательскую форму ввода пользовательского мастера.  
   
-1.  В **обозревателе решений**, перейдите в меню **MyProjectTemplate** проект и откройте *Class1.cs*.  
+1. В **обозревателе решений**, перейдите в меню **MyProjectTemplate** проект и откройте *Class1.cs*.  
   
-2.  В `Main` методу приложения, добавьте следующую строку кода.  
+2. В `Main` методу приложения, добавьте следующую строку кода.  
   
-    ```csharp  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```csharp  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     Параметр `$custommessage$` заменяется текстом, введенным в форму ввода пользователя, при создании проекта из шаблона.  
+    Параметр `$custommessage$` заменяется текстом, введенным в форму ввода пользователя, при создании проекта из шаблона.  
   
- Ниже приведен полный файл кода, прежде чем он был экспортирован в шаблон.  
+   Ниже приведен полный файл кода, прежде чем он был экспортирован в шаблон.  
   
 ```csharp  
 using System;  

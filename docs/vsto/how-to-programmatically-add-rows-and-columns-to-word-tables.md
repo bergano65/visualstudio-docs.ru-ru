@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818683"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Практическое: программное добавление строк и столбцов в таблицы Word
   В таблице Microsoft Office Word ячейки организованы по строкам и столбцам. Вы можете использовать метод <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Rows> для добавления строк в таблицу и метод <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Columns> для добавления столбцов.  
@@ -32,15 +32,15 @@ ms.locfileid: "35255893"
 ## <a name="document-level-customization-examples"></a>Примеры настройки уровня документа  
  Следующие примеры кода можно использовать в настройке на уровне документа. Чтобы использовать эти примеры, выполняйте их из класса `ThisDocument` в своем проекте. В этих примерах предполагается, что документ, связанный с настройкой, уже содержит по крайней мере одну таблицу.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:  
->   
-> -   Документ Word 2013  
-> -   Шаблон Word 2013  
-> -   Документ Word 2010  
-> -   Шаблон Word 2010  
->   
->  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+> 
+> - Документ Word 2013  
+> - Шаблон Word 2013  
+> - Документ Word 2010  
+> - Шаблон Word 2010  
+> 
+>   Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Добавление строки в таблицу  
   

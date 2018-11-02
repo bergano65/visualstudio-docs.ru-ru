@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Документы Microsoft
+title: EVENTATTRIBUTES | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6a2176dcd3c4cf748549f94d071b181d0d14f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7df726716e464ccc4bf8382b38fbb0b8d277df86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893832"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
-Задает атрибуты события.  
+Определяет атрибуты события.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,30 +54,30 @@ public enum enum_EVENTATTRIBUTES {
   
 ## <a name="members"></a>Участники  
  EVENT_ASYNCHRONOUS  
- Указывает, что событие является асинхронным и необходимости ответ на событие.  
+ Указывает, что событие является асинхронным, и требуется ответ на событие.  
   
  EVENT_SYNCHRONOUS  
- Указывает, что событие является синхронным; ответ с помощью параметра [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ Указывает, что событие является синхронным, Ответить с помощью параметра [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Указывает, что это событие остановки. Должны быть объединены с помощью `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.  
+ Указывает, что это событие остановки. Необходимо использовать вместе с `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.  
   
  EVENT_ASYNC_STOP  
- Обозначает событие остановки асинхронной. В настоящее время нет такого события. Этот флаг доступен только заполнителем.  
+ Указывает событие асинхронной остановки. В настоящее время нет такого события. Этот флаг является только заполнителем.  
   
  EVENT_SYNC_STOP  
- Указывает на событие синхронной остановки (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING`). Это значение используется модулем отладки (DE) при отправке события остановки. Ответ осуществляется посредством вызова [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [Продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Указывает на событие синхронной остановке (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING`). Это значение используется модулем отладки (DE), когда он отправляет событие stopping. Ответ осуществляется посредством вызова [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [Продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Указывает событие, которое отправляется немедленно и синхронно в интегрированную среду разработки. Этот флаг используется в сочетании с другими флагами как `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, или `EVENT_SYNC_STOP` для указания типа события и тот факт, что известен механизм ответа (если таковые имеются).  
+ Указывает событие, которое отправляется немедленно и синхронно в интегрированную среду разработки. Этот флаг используется в сочетании с другими флагами как `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, или `EVENT_SYNC_STOP` для указания типа события и тот факт, что механизм ответа (при наличии) будет известен.  
   
  EVENT_EXPRESSION_EVALUATION  
  Это событие является результатом вычисления выражения.  
   
 ## <a name="remarks"></a>Примечания  
- Эти значения передаются в `dwAttrib` параметр [события](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод.  
+ Эти значения передаются в `dwAttrib` параметр [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод.  
   
- Эти значения могут объединяться с помощью битового оператора `OR`.  
+ Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

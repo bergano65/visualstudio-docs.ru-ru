@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942950"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
 
- * `UseKestrel`: указывает, что приложением будет использоваться сервер Kestrel.
- * `UseContentRoot(Directory.GetCurrentDirectory())`: использует корневую папку веб-проекта в качестве корня содержимого приложения при запуске приложения из этой папки.
- * `.UseIISIntegration()`: указывает, что приложение должно работать с IIS. Чтобы использовать IIS с ASP.NET Core, нужно указать как `UseKestrel`, так и `UseIISIntegration`.
- * `.UseStartup<Startup>()`: указывает класс Startup.
+* `UseKestrel`: указывает, что приложением будет использоваться сервер Kestrel.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: использует корневую папку веб-проекта в качестве корня содержимого приложения при запуске приложения из этой папки.
+* `.UseIISIntegration()`: указывает, что приложение должно работать с IIS. Чтобы использовать IIS с ASP.NET Core, нужно указать как `UseKestrel`, так и `UseIISIntegration`.
+* `.UseStartup<Startup>()`: указывает класс Startup.
 
- Методы Build и Run выполняют сборку IWebHost, который разместит приложение и запустит в нем прослушивание входящих HTTP-запросов.
+  Методы Build и Run выполняют сборку IWebHost, который разместит приложение и запустит в нем прослушивание входящих HTTP-запросов.
 
 ### <a name="startupcs"></a>Startup.cs
 

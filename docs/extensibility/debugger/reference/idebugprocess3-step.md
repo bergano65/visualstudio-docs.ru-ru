@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step | Документы Microsoft
+title: IDebugProcess3::Step | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc19c339e5d53bc9dde13ebd4a1bbddd214810c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872256"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Процесс для шага одну инструкцию или инструкции.  
+Вызывает процесс, чтобы шаг одну инструкцию или инструкции.  
   
 > [!NOTE]
 >  Этот метод следует использовать вместо [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
@@ -48,7 +48,7 @@ int Step(
   
 #### <a name="parameters"></a>Параметры  
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объект, представляющий поток, который в настоящее время шаг.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объект, представляющий поток, в настоящее время шаг.  
   
  `sk`  
  [in] Один из [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) значения.  
@@ -62,7 +62,7 @@ int Step(
 ## <a name="remarks"></a>Примечания  
  В случае любой синхронизации потоков или связи между потоками, другие потоки в процессе следует запускать при отладке определенного потока.  
   
- **Предупреждение** не отправляют событие остановки или немедленно (синхронно) событие [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.  
+ **Предупреждение** событии остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

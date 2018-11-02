@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Документы Microsoft
+title: IDebugExpression2::EvaluateSync | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864613"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Этот метод вычисляет выражение в синхронном режиме.  
@@ -47,30 +47,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Параметры  
  `dwFlags`  
- [in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, обеспечивающие управление вычисления выражения.  
+ [in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисление, управлять вычисления выражения.  
   
  `dwTimeout`  
  [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
   
  `pExprCallback`  
- [in] Этот параметр всегда имеет значение null.  
+ [in] Этот параметр всегда является значение null.  
   
  `ppResult`  
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, который содержит результат вычисления выражения.  
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , содержащий результат вычисления выражения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Некоторые коды ошибок обычно являются:  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены некоторые коды типичных ошибок.  
   
 |Error|Описание|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Другое выражение вычисляется, и вычисление выражений одновременных не поддерживается.|  
-|E_EVALUATE_TIMEOUT|Истекло время ожидания вычисления.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Сейчас вычисляется другого выражения и вычисление одновременных выражений не поддерживается.|  
+|E_EVALUATE_TIMEOUT|Истекло время ожидания оценки.|  
   
 ## <a name="remarks"></a>Примечания  
- Для синхронного оценки не необходимые для отправки события Visual Studio после завершения оценки.  
+ Синхронные вычисления не нужно отправить событие вернитесь в Visual Studio после завершения оценки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CExpression` объект, реализующий [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CExpression` объект, реализующий [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) интерфейс.  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  

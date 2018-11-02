@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Документы Microsoft
+title: IDebugDisassemblyStream2::Read | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9143abac4ce10a2b7305889e1d1a5236c1e9b07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5e59ea6c5ab01485b3c022f0504aeae55c3882a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902636"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Считывает инструкции, начиная с текущей позиции в потоке Дизассемблированный код.  
+Считывает инструкциям, начиная с текущей позиции в потоке Дизассемблированный код.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,19 +47,19 @@ int Read(
   
 #### <a name="parameters"></a>Параметры  
  `dwInstructions`  
- [in] Количество инструкций для дизассемблирования. Этот параметр также имеет максимальную длину `prgDisassembly` массива.  
+ [in] Количество инструкций, чтобы дизассемблировать. Этот параметр также имеет максимальную длину `prgDisassembly` массива.  
   
  `dwFields`  
- [in] Сочетание флагов из [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) перечисления, которое указывает, какие поля `prgDisassembly` , для заполнения.  
+ [in] Сочетание флагов из [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) перечисления, которые указывают, какие поля `prgDisassembly` , для заполнения.  
   
  `pdwInstructionsRead`  
- [out] Возвращает число инструкций фактически дизассемблируется.  
+ [out] Возвращает число фактически дисассемблированный инструкции.  
   
  `prgDisassembly`  
- [out] Массив [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры, которые заполнены дизассемблированного кода одну структуру каждого дизассемблированные инструкции. Длина данного массива определяется `dwInstructions` параметра.  
+ [out] Массив [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры, заполняется Дизассемблированный код, одну структуру каждого дизассемблированное инструкции. Длина этого массива определяется `dwInstructions` параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Максимальное количество инструкций, доступных в текущей области можно получить, вызвав [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) метод.  
@@ -73,4 +73,4 @@ int Read(
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
- [Поиск](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+ [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

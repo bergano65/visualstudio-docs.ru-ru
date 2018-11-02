@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isLTCG | Документы Microsoft
+title: IDiaSymbol::get_isLTCG | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a799cf16dbf603f75cd810f9c249f4c0e8ba49ec
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7eb1d7308eb03d396ca8a08f915a294ec1debd82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877742"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-Возвращает флаг, указывающий ли [компилируемого объекта](../../debugger/debug-interface-access/compiland.md) связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемому коду.  
+Получает флаг, указывающий ли [единице компиляции](../../debugger/debug-interface-access/compiland.md) был связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемым кодом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ HRESULT get_iSLTCG(
  [out] Возвращает `TRUE` Если `compiland` был связан с ключом компоновщика/LTCG; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  

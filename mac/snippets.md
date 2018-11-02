@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906859"
 ---
 # <a name="code-snippets"></a>Фрагменты кода 
 
@@ -28,11 +28,11 @@ ms.locfileid: "43223924"
 
 * **Панель элементов** — используйте панель элементов, чтобы отобразить список всех фрагментов кода. Перетащите любой шаблон из панели элементов в выбранное место в исходном коде:
 
- ![Фрагменты кода на панели элементов](media/source-editor-image14.png)
+  ![Фрагменты кода на панели элементов](media/source-editor-image14.png)
 
 * **Команда вставки шаблонов** — сейчас сочетание клавиш по умолчанию для вставки шаблона отсутствует. Чтобы настроить его, перейдите в раздел **Visual Studio > Параметры... > Настраиваемые сочетания клавиш** и выполните поиск `template`. Затем вы можете добавить нужные сочетания клавиш в поле "Изменить привязку" и нажать кнопку **Применить**:
 
- ![Команда вставки шаблона](media/source-editor-image15.png)
+  ![Команда вставки шаблона](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Создание шаблона
 

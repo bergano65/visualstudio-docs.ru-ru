@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895324"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "49272159"
   
  Процессы, доступные для профилирования, зависят от разрешений на доступ пользователя, заданных администратором компьютера. Учетная запись пользователя, например, имеет разрешения на следующее:  
   
--   расширенные возможности профилирования, если администратор задал драйвер и запускаемую службу;  
+- расширенные возможности профилирования, если администратор задал драйвер и запускаемую службу;  
   
--   только профилирование выборки (пользователи домена);  
+- только профилирование выборки (пользователи домена);  
   
--   запрет доступа к профилированию для всех пользователей.  
+- запрет доступа к профилированию для всех пользователей.  
   
- Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Присоединение к выполняющемуся процессу  
   

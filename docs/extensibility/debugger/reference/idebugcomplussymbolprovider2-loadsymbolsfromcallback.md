@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Документы Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767c9218e8b666eb1f27891bd84ae110befbb798
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb59685d75b249d510ee3bc979916cfe931479e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897580"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-Загружает отладочных символов, используя указанный метод обратного вызова.  
+Загружает отладочные символы, используя указанный метод обратного вызова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,10 +58,10 @@ int LoadSymbolsFromCallback(
  [in] Уникальный идентификатор модуля.  
   
  `pUnkMetadataImport`  
- [in] Объект, содержащий метаданные для символа.  
+ [in] Объект, содержащий метаданные символ.  
   
  `pUnkCorDebugModule`  
- [in] Объект, реализующий [ICorDebugModule-интерфейс](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
  [in] Имя модуля.  
@@ -73,10 +73,10 @@ int LoadSymbolsFromCallback(
  [in] Объект, представляющий метод обратного вызова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейс.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  

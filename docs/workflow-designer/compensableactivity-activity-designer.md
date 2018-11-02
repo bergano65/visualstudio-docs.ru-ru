@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7257e7cc31e0503c7e466bbf4f8c9dd02e5fe15a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836139"
 ---
 # <a name="compensableactivity-activity-designer"></a>Конструктор действия CompensableActivity
 
@@ -35,7 +35,7 @@ ms.locfileid: "36758297"
  В следующей таблице показаны свойства <xref:System.Activities.Statements.CompensableActivity> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> И <xref:System.Activities.Activity%601.Result%2A> свойства можно изменить в таблице свойств, но другие свойства следует изменять в области конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.Activities.Statements.CompensableActivity>. Значение по умолчанию - CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Указывает возвращаемое значение <xref:System.Activities.Statements.CompensableActivity>. Это свойство необходимо изменять в таблице свойств.|
 |<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Указывает действие, для которого производится компенсация, отмена и логика подтверждения. Чтобы добавить <xref:System.Activities.Statements.CompensableActivity.Body%2A> действие, перетащите его из **элементов** в **текст** поле на **CompensableActivity** конструктора действий. Добавьте текстом подсказки «Перетащить действие сюда».|
@@ -47,6 +47,6 @@ ms.locfileid: "36758297"
 
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
-- [Компенсации](../workflow-designer/compensate-activity-designer.md)
-- [Подтверждение](../workflow-designer/confirm-activity-designer.md)
-- [Класс TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

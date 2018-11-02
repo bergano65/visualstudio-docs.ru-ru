@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890573"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49219301"
   
  В следующих примерах кода показано, как для перемещения вверх и вниз по связи в типизированных наборах данных. Использование примеров кода типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданные `FindBy` *PrimaryKey* (`FindByCustomerID`) методы для поиска нужной строки и возврата связанных записей. Примеры компилируются и работают только в том случае, если у вас есть:  
   
--   Экземпляр набора данных с именем `NorthwindDataSet` с `Customers` таблицы.  
+- Экземпляр набора данных с именем `NorthwindDataSet` с `Customers` таблицы.  
   
--   `Orders` Таблицы.  
+- `Orders` Таблицы.  
   
--   Отношение с именем `FK_Orders_Customers`по две таблицы, доступные в области кода  
+- Отношение с именем `FK_Orders_Customers`по две таблицы, доступные в области кода  
   
- Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.  
+  Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Чтобы вернуть дочерние записи, выбранной родительской записи  
   

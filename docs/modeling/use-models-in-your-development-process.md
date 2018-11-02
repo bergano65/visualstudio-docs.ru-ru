@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824300"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 
@@ -123,7 +123,7 @@ ms.locfileid: "47859397"
 Различные виды схем полезны для описания разработки на различных уровнях абстракции. Многие типы схем можно с пользой применять сразу на нескольких уровнях. В этой таблице показано, как можно использовать каждый тип схем.
 
 |Уровень разработки|Типы схем|
-|------------------|-------------------|
+|-|-|
 |Бизнес-процесс<br /><br /> Общее представление о контексте, в котором будет использоваться система, помогает понять потребности пользователей.|-Принципиальные схемы классов описывают бизнес-концепции, используемые в бизнес-процесса.|
 |Требования пользователей<br /><br /> Определение того, что нужно пользователям от вашей системы.|-Бизнес-правила и требования к качеству обслуживания могут быть описаны в отдельных документах.|
 |Высокоуровневая структура<br /><br /> Общая структура системы: основные компоненты и их взаимосвязи.|-Схемы зависимостей описывают структуру системы на независимые части. Можно проверить код программы по схемы зависимостей, чтобы убедиться в его соответствии архитектуре.|
@@ -132,9 +132,9 @@ ms.locfileid: "47859397"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Ссылки**|
-|------------------|---------------|
+|-|-|
 |**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN видеоматериалов: как создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Использование UML в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN практические руководства: средства UML и расширяемость (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Форумы**|- [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK (DSL Tools) моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|- [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Блоги**|[DevOps от Майкрософт](https://blogs.msdn.microsoft.com/devops/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

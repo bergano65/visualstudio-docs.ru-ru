@@ -2,7 +2,8 @@
 # [Обзор интегрированной среды разработки](ide-tour.md)
 
 # [Установка](installation.md)
-## [Предварительная установка](install-preview.md)
+## [Установка и использование в среде, защищенной брандмауэром или прокси-сервером](install-behind-a-firewall-or-proxy-server.md)
+## [Установка предварительной версии](install-preview.md)
 ## [Обновление](update.md)
 ## [Удаление](uninstall.md)
 

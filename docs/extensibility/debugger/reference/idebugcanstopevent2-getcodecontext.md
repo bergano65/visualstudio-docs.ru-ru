@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetCodeContext | Документы Microsoft
+title: IDebugCanStopEvent2::GetCodeContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a771345d9c3cf0cbfb7324e82eb9519069499eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05cd4729635042d67f063bbba412c19a4a2f89f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818345"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Возвращает контекст кода, которое описывает расположение этого события.  
@@ -41,15 +41,15 @@ int GetCodeContext(
   
 #### <a name="parameters"></a>Параметры  
  `ppCodeContext`  
- [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий текущего расположения в коде.  
+ [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий текущее расположение кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для большинства архитектур во время выполнения контекст кода можно считать адреса в поток выполнения программы, указывающие на определенной инструкции.  
+ Для большинства архитектур во время выполнения контекст кода можно считать адреса в поток выполнения программы, указывающие на конкретные инструкции.  
   
- Чтобы получить контекст документа, который ориентировано на достижение строки исходного кода, вызовите [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) метод.  
+ Чтобы получить контекст документа, которая находится на достижение строк исходного кода, вызовите [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

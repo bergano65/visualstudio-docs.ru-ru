@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939506"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Связывать пользовательские данные с расширениями средств SharePoint
   Можно добавить пользовательские данные для определенных объектов в расширениях инструментов SharePoint. Это полезно при наличии данных в одной части вашего расширения, вам требуется доступ к более поздней версии из другого кода в модуле. Вместо реализации пользовательских способ хранения и доступа к данным, вы можете связать данные с объектом расширения и затем впоследствии извлекать данные из того же объекта.  
@@ -73,14 +73,14 @@ ms.locfileid: "36327233"
   
  Чтобы получить пользовательские данные из объекта в расширения инструментов SharePoint, получить <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства от объекта, а затем выполните одну из следующих методов:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Этот метод возвращает **true** Если объект данных существует, или **false** если он не существует. Этот метод можно использовать для извлечения экземпляров типов значений и ссылочных типов.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Этот метод возвращает **true** Если объект данных существует, или **false** если он не существует. Этот метод можно использовать для извлечения экземпляров типов значений и ссылочных типов.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Этот метод возвращает данные объекта, если он существует, или **null** если он не существует. Этот метод можно использовать только для извлечения экземпляров ссылочных типов.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Этот метод возвращает данные объекта, если он существует, или **null** если он не существует. Этот метод можно использовать только для извлечения экземпляров ссылочных типов.  
   
- В следующем примере кода определяет, является ли определенный объект данных уже связан с элементом проекта. Если объект данных еще не связан с элементом проекта, а затем код добавляет объект в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства элемента проекта. Этот пример в контексте полного примера см. в разделе [как: Добавление свойства пользовательского типа элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  В следующем примере кода определяет, является ли определенный объект данных уже связан с элементом проекта. Если объект данных еще не связан с элементом проекта, а затем код добавляет объект в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства элемента проекта. Этот пример в контексте полного примера см. в разделе [как: Добавление свойства пользовательского типа элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>См. также
  [Основные понятия программирования и функции для расширения инструментов SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   

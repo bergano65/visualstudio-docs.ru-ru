@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Документы Microsoft
+title: BP_ERROR_RESOLUTION_INFO | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdf3b6aee272990fb22feee13f8e46ee8550073
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816805"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
-Описание разрешения ошибки точки останова, включая расположение, программы и поток.  
+Описание разрешения ошибки точки останова, включая расположение, программы и потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,10 +51,10 @@ public struct BP_ERROR_RESOLUTION_INFO {
   
 ## <a name="members"></a>Участники  
  `dwFields`  
- Сочетание значений из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определяющее, какие поля этой структуры заполнены.  
+ Сочетание значений из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определяющее, вы заполните все поля этой структуры.  
   
  `bpResLocation`  
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) объединении, что указывает разрешение точки останова.  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, указывающий положение точки останова разрешения.  
   
  `pProgram`  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором произошла ошибка точки останова.  
@@ -63,7 +63,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, на котором выполняется приложение, вызвавшего ошибку точки останова.  
   
  `bstrMessage`  
- Строка, содержащая любое сообщение предупреждения или ошибки, возникающие в результате этого разрешения ошибки.  
+ Строка, содержащая предупреждения или ошибки сообщения, полученные в результате Устранение этой ошибки.  
   
  `dwType`  
  Значение из [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) перечисление, указывающее тип ошибки точки останова.  
@@ -79,7 +79,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   

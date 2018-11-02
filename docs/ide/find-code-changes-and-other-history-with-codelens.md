@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853523"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 
@@ -162,7 +164,7 @@ CodeLens позволяет вам получать дополнительные
 Значок в столбце **Ветвь** показывает связь с ветвью, в которой вы работаете.
 
 |**Значок**|**Откуда пришли изменения:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: значок "Изменение от текущей ветви"](../ide/media/codelensbranchcurrenticon.png)|Текущее подразделение|
 |![CodeLens: значок "Изменение от родительской ветви"](../ide/media/codelensbranchparenticon.png)|Родительское подразделение|
 |![CodeLens: значок "Изменение от дочерней ветви"](../ide/media/codelensbranchchildicon.png)|Дочернее подразделение|

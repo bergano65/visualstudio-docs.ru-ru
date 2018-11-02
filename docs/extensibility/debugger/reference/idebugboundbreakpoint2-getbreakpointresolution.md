@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution | Документы Microsoft
+title: IDebugBoundBreakpoint2::GetBreakpointResolution | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35337b26053876c9009be124bba9791743f53009
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d58c58dbbaad6d57518c8f13620029034ae4b76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920395"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Возвращает разрешение точки останова, описывающий эту точку останова.  
+Получает разрешение точек останова, который описывает эту точку останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,20 +42,20 @@ int GetBreakpointResolution(
   
 #### <a name="parameters"></a>Параметры  
  `ppBPResolution`  
- [out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих действий:  
+ [out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих:  
   
--   Объект разрешения точки останова, описывающий расположение в коде, где были связаны точку останова кода.  
+-   Объект разрешения точки останова, описывающий расположение в коде, где был привязан точку останова кода.  
   
--   Расположение данных, где выполнило привязку точки останова по данным.  
+-   Расположение данных, где имеет связанные точки останова по данным.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова устанавливается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова присваивается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
   
 ## <a name="remarks"></a>Примечания  
- Вызовите [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) метод, чтобы определить, является ли точка останова разрешения для кода или данных.  
+ Вызовите [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) метод для определения того, является ли разрешение точек останова для кода или данных.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейса.  
+ В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.  
   
 ```  
 HRESULT CBoundBreakpoint::GetBreakpointResolution(  

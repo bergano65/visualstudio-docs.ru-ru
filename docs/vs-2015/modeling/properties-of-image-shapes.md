@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304100"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219969"
 ---
 # <a name="properties-of-image-shapes"></a>Свойства фигур изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Фигур изображений можно использовать для установки параметров отображения классов доменов в созданном конструкторе. Задать фигуру изображения, установив `Image` свойство класса в файл стандартным образом. Поддерживаются следующие форматы:  
   
--   GIF  
+- GIF  
   
--   .jpg  
+- .jpg  
   
--   .JPEG  
+- .JPEG  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .EMF  
+- .EMF  
   
--   PNG  
+- PNG  
   
- По умолчанию файлы конструктора ресурсов, такие как файлы изображений, находятся в **ресурсы**папку в **Dsl** проекта.  
+  По умолчанию файлы конструктора ресурсов, такие как файлы изображений, находятся в **ресурсы** папку в **Dsl** проекта.  
   
- Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Фигур изображений имеют свойства, которые перечислены в следующей таблице.  
+  Фигур изображений имеют свойства, которые перечислены в следующей таблице.  
   
 |Свойство.|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  

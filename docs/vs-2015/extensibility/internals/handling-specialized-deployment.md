@@ -16,37 +16,37 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8568794b46a8d94e8d186fe297e9bb0d1cf53a3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827466"
 ---
 # <a name="handling-specialized-deployment"></a>Обработка специализированного развертывания
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Развертывание выполняется на необязательно для проектов. Например, веб-проекта поддерживает развертывания для проекта обновление веб-сервера. Аналогичным образом **смарт-устройств** проект поддерживает развертывание, чтобы скопировать созданное приложение на целевое устройство. Подтипов проекта можно указать поведение специализированного развертывания путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейс. Этот интерфейс определяет полный набор операций развертывания:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- Эта операция фактического развертывания должны выполняться в отдельном потоке, чтобы сделать [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] даже быстрее реагировать на взаимодействие с пользователем. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> вызываются асинхронно [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и работать в фоновом режиме, позволяя среде запросить состояние операции развертывания в любое время или чтобы прервать операцию, при необходимости. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Операции развертывания интерфейса называются средой, когда пользователь выбирает команду deploy.  
+  Эта операция фактического развертывания должны выполняться в отдельном потоке, чтобы сделать [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] даже быстрее реагировать на взаимодействие с пользователем. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> вызываются асинхронно [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и работать в фоновом режиме, позволяя среде запросить состояние операции развертывания в любое время или чтобы прервать операцию, при необходимости. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Операции развертывания интерфейса называются средой, когда пользователь выбирает команду deploy.  
   
- Чтобы уведомить среду, что операция развертывания имеет начала или окончания, подтип проекта должен вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> методы.  
+  Чтобы уведомить среду, что операция развертывания имеет начала или окончания, подтип проекта должен вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> методы.  
   
 ## <a name="handling-specialized-deployment"></a>Обработка специализированного развертывания  
   

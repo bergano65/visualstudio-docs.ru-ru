@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Документы Microsoft
+title: DEBUGREF_INFO_FLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858567"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Указывает, какую информацию, чтобы получить сведения об объекте debug ссылки.  
+Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,25 +58,25 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
 ## <a name="members"></a>Участники  
  DEBUGREF_INFO_NAME  
- Инициализация или использовать `bstrName` поле в структуре.  
+ Инициализация и использование `bstrName` в структуре.  
   
  DEBUGREF_INFO_TYPE  
- Инициализация или использовать `bstrType` поле в структуре.  
+ Инициализация и использование `bstrType` в структуре.  
   
  DEBUGREF_INFO_VALUE  
- Инициализация или использовать `bstrValue` поле в структуре.  
+ Инициализация и использование `bstrValue` в структуре.  
   
  DEBUGREF_INFO_ATTRIB  
- Инициализация или использовать `dwAttrib` поле в структуре.  
+ Инициализация и использование `dwAttrib` в структуре.  
   
  DEBUGREF_INFO_REFTYPE  
- Инициализация или использовать `dwRefType` поле в структуре.  
+ Инициализация и использование `dwRefType` в структуре.  
   
  DEBUGREF_INFO_REF  
- Инициализация или использовать `pReference` поле в структуре.  
+ Инициализация и использование `pReference` в структуре.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- В поле значение должен содержать значение развернут автоматически, если он доступен для этого типа объектов.  
+ Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.  
   
  DEBUGREF_INFO_NONE  
  Указывает, что флаги не установлены.  
@@ -85,11 +85,11 @@ public enum enum_DEBUGREF_INFO_FLAGS {
  Указывает маску флагов.  
   
 ## <a name="remarks"></a>Примечания  
- Эти флаги будут переданы [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.  
+ Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.  
   
- Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структуры указывает, какие поля используются и допустимым при возврате структуры.  
+ Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структура указывает, какие поля используются и допустимым при возвращении структуры.  
   
- Эти значения могут объединяться с помощью битового оператора `OR`.  
+ Эти значения могут объединяться с побитовым объектом `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

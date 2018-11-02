@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Документы Microsoft
+title: IDebugObject::IsEqual | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cccce3a530aa1871e093ce5a4ab9187f1ce9d4b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91e84d47f7fc60e60c3c7fb58ba66bc0a00daf30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840003"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 Сравнивает объект с данным объектом.  
@@ -46,13 +46,13 @@ int IsEqual(
  [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , который представляет объект для сравнения.  
   
  `pfIsEqual`  
- [out] Возвращает ненулевое значение (`TRUE`), если значения объектов равны; в противном случае, функция возвращает ноль (`FALSE`).  
+ [out] Возвращает ненулевое значение (`TRUE`) Если значения объектов равны; в противном случае возвращает ноль (`FALSE`).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Как правило, этот метод можно сравнить адреса значений, представленных `pObject` параметра и это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта; Если адреса совпадают, то объекты можно считаются равными.  
+ Как правило, этот метод можно сравнить адреса значений, представленных `pObject` параметр и это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта; Если адреса совпадают, то объекты могут быть рассматриваются как равные.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

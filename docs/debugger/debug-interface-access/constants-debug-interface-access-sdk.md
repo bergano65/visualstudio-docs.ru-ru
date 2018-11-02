@@ -1,5 +1,5 @@
 ---
-title: Константы (SDK для доступа к интерфейсу отладки) | Документы Microsoft
+title: Константы (SDK для доступа к интерфейсу отладки) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872048"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Константы (SDK для доступа к интерфейсу отладки)
-Эти строковые константы можно использовать для определения различных разделов отладки (PDB) файл программы через пакет SDK для доступа к интерфейсу отладки.  
+Эти строковые константы можно использовать для идентификации различные разделы файла базы данных (PDB) программы отладки через пакет SDK для доступа к интерфейсу отладки.  
   
 ## <a name="constants"></a>Константы  
- Следующие объявляются как макросов C/C++.  
+ Следующие объявляются как макросы C/C++.  
   
 |Макрос|Значение|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L «Символы»|  
-|`DiaTable_Sections`|L «Разделами»|  
+|`DiaTable_Sections`|L «Разделы»|  
 |`DiaTable_SrcFiles`|L «SourceFiles»|  
 |`DiaTable_LineNums`|L «LineNumbers»|  
 |`DiaTable_SegMap`|L «SegmentMap»|  
@@ -40,7 +40,7 @@ ms.locfileid: "31458922"
 |`DiaTable_FrameData`|L «FrameData»|  
   
 ## <a name="example"></a>Пример  
- Ниже приведен пример с использованием одного из следующих символов:  
+ Ниже приведен пример, с помощью одного из следующих символов:  
   
 ```C++  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  
@@ -58,7 +58,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
  Заголовок: dia2.h  
   
 ## <a name="see-also"></a>См. также  
- [Ссылка](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
+ [Справочник по](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934682"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ ms.locfileid: "42635272"
 ## <a name="create-the-projects"></a>Создание проектов
  Для выполнения этого пошагового руководства, необходимо создать два проекта:  
   
--   Проект VSIX для создания пакета VSIX для развертывания **обозревателя серверов** расширения.  
+- Проект VSIX для создания пакета VSIX для развертывания **обозревателя серверов** расширения.  
   
--   Проект библиотеки классов, который реализует **обозревателя серверов** расширения.  
+- Проект библиотеки классов, который реализует **обозревателя серверов** расширения.  
   
- Начало выполнения пошагового руководства по созданию проектов.  
+  Начало выполнения пошагового руководства по созданию проектов.  
   
 #### <a name="to-create-the-vsix-project"></a>Создание проекта VSIX  
   

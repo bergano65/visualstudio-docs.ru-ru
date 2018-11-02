@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889767"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к функциям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.  
@@ -55,11 +55,11 @@ ms.locfileid: "42635561"
 ## <a name="create-a-custom-task-pane"></a>Создание настраиваемой области задач  
  Для создания простой настраиваемой области задач можно использовать следующую процедуру.  
   
-1.  Создайте пользовательский интерфейс для своей настраиваемой области задач путем добавления элементов управления Windows Forms в объект <xref:System.Windows.Forms.UserControl>.  
+1. Создайте пользовательский интерфейс для своей настраиваемой области задач путем добавления элементов управления Windows Forms в объект <xref:System.Windows.Forms.UserControl>.  
   
-2.  Создайте экземпляр настраиваемой области задач путем передачи пользовательского элемента управления в объект <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> в надстройке VSTO. Эта коллекция возвращает новый объект <xref:Microsoft.Office.Tools.CustomTaskPane>, который можно использовать для изменения внешнего вида области задач и реагирования на инициируемые пользователем события.  
+2. Создайте экземпляр настраиваемой области задач путем передачи пользовательского элемента управления в объект <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> в надстройке VSTO. Эта коллекция возвращает новый объект <xref:Microsoft.Office.Tools.CustomTaskPane>, который можно использовать для изменения внешнего вида области задач и реагирования на инициируемые пользователем события.  
   
- Дополнительные сведения см. в разделе [как: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Дополнительные сведения см. в разделе [как: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Создание пользовательского интерфейса  
  Все настраиваемые области задач, созданные с помощью средств разработки Office в Visual Studio, содержат объект <xref:System.Windows.Forms.UserControl>. Этот пользовательский элемент управления предоставляет пользовательский интерфейс настраиваемой области задач. Можно создать пользовательский элемент управления во время разработки или во время выполнения. При создании пользовательского элемента управления во время разработки можно использовать конструктор Windows Forms для создания пользовательского интерфейса своей области задач.  
@@ -77,11 +77,11 @@ ms.locfileid: "42635561"
   
  Чтобы определить, какое из окон отображает настраиваемую область задач, используйте соответствующую перегрузку метода <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> при создании области задач:  
   
--   Чтобы связать область задач с активным окном, используйте метод <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+- Чтобы связать область задач с активным окном, используйте метод <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
   
--   Чтобы связать область задач с документом, который размещается заданным окном, используйте метод <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+- Чтобы связать область задач с документом, который размещается заданным окном, используйте метод <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
   
- Для некоторых приложений Office требуются явные инструкции о том, когда нужно создавать или отображать область задач, если открыты несколько окон. Поэтому важно учитывать место создания экземпляра настраиваемой области задач в своем коде, чтобы гарантировать, что данная область отображается с соответствующими документами или элементами в приложении. Дополнительные сведения см. в разделе [управлять настраиваемыми областями задач в окнах приложений](#Managing).  
+  Для некоторых приложений Office требуются явные инструкции о том, когда нужно создавать или отображать область задач, если открыты несколько окон. Поэтому важно учитывать место создания экземпляра настраиваемой области задач в своем коде, чтобы гарантировать, что данная область отображается с соответствующими документами или элементами в приложении. Дополнительные сведения см. в разделе [управлять настраиваемыми областями задач в окнах приложений](#Managing).  
   
 ## <a name="access-the-application-from-the-task-pane"></a>Доступ к приложению из области задач  
  Если требуется автоматизация приложения из пользовательского элемента управления, к объектной модели можно непосредственно обращаться с помощью `Globals.ThisAddIn.Application` в своем коде. Доступ к объекту `ThisAddIn` обеспечивает статический класс `Globals`. Поле `Application` данного объекта является точкой входа в объектную модель приложения.  
@@ -136,11 +136,11 @@ ms.locfileid: "42635561"
   
  Следующие группы приложений имеют различные требования по разработке.  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word, InfoPath и PowerPoint](#WordAndInfoPath)  
+- [Word, InfoPath и PowerPoint](#WordAndInfoPath)  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I:. Управление областями задач в надстройках VSTO для Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I:. Управление областями задач в надстройках VSTO для Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  При создании настраиваемой области задач для Outlook для данной области устанавливается связь с конкретным окном проводника или инспектора. Проводники — это окна, в которых отображается содержимое папки, а инспекторы — окна, отображающие элемент, например сообщение электронной почты или задача.  
@@ -149,23 +149,23 @@ ms.locfileid: "42635561"
   
  Чтобы связать область задач с конкретным проводником или инспектором, используйте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> способ создания области задач и передайте <xref:Microsoft.Office.Interop.Outlook.Explorer> или <xref:Microsoft.Office.Interop.Outlook.Inspector> объект *окно* параметра. Дополнительные сведения о создании настраиваемых областей задач см. в разделе [Обзор пользовательских панелей задач](../vsto/custom-task-panes.md).  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Для отслеживания состояния окон инспектора можно обрабатывать следующие события, связанные с инспектором.  
+  Для отслеживания состояния окон инспектора можно обрабатывать следующие события, связанные с инспектором.  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Предотвратить появление нескольких экземпляров настраиваемой области задач в Outlook  
  Чтобы предотвратить отображение нескольких экземпляров настраиваемой области задач в окнах Outlook, удалите явным образом настраиваемую область задач из коллекции `CustomTaskPanes` класса `ThisAddIn` при закрытии каждого окна. Вызовите метод <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> в событии, которое возникает при закрытии окна, например <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> или <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  

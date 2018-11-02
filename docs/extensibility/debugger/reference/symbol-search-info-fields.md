@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS | Документы Microsoft
+title: SYMBOL_SEARCH_INFO_FIELDS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c69f21c72e8816d9ddf6eb5b88cf7798bc7d1f4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dac1234a765bbb3064ea4471d7531864306e0220
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842928"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Указывает тип сведений о символах для извлечения.  
+Задает тип сведений о символах для извлечения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,16 +47,16 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ## <a name="members"></a>Участники  
  SSIF_NONE  
- Указывает на отсутствие флагов  
+ Указывает флаги не  
   
  SSIF_VERBOSE_SEARCH_INFO  
- Возвращает все совпадения при поиске пути, используемые для поиска символов  
+ Возвращает все совпадения при поиске путей, используемых для поиска символов  
   
 ## <a name="remarks"></a>Примечания  
- Эти флаги передаются в качестве параметра [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) возвращается метод, чтобы определить объем данных.  
+ Эти флаги передаются в качестве параметра [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) метод, чтобы определить объем сведений, завершился сбоем.  
   
 > [!NOTE]
->  В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения возвращает ошибку.  
+>  В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения сообщение об ошибке.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

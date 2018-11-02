@@ -1,5 +1,5 @@
 ---
-title: Установка анализаторов Roslyn
+title: Установка анализаторов Roslyn
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5977275b352bf11914760d9cdf7ccada22caccc8
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aa0805b3cffe5a44ae2c6198c6ca2682ceca9f95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865411"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Установка анализаторов .NET Compiler Platform
 
@@ -28,11 +28,11 @@ Visual Studio 2017 включает в себя набор базовых пла
 
 1. Найти пакет анализатора, который вы хотите установить на www.nuget.org. Например, может потребоваться [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) по проверке кода для проблем безопасности и производительности, среди прочего.
 
-1. Установка пакета в Visual Studio, с помощью [консоль диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательский Интерфейс диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Установка пакета в Visual Studio, с помощью [консоль диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательский Интерфейс диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Www.nuget.org страницы для каждого пакета анализатора показывает команду, чтобы вставить в **консоль диспетчера пакетов**. Есть даже под рукой кнопку, чтобы скопировать текст в буфер обмена.
-   >
+   > 
    > ![Страница NuGet.org команды консоли диспетчера пакетов](media/nuget-install-command.png)
 
    Сборки анализатора установлены и отображаются в **обозревателе решений** под **ссылки** > **анализаторы**.
@@ -46,25 +46,25 @@ Visual Studio 2017 включает в себя набор базовых пла
    > [!NOTE]
    > Кроме того, можно найти и загрузить анализатор расширения непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-1. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
 
-1. В поле поиска введите имя анализатора расширения, который вы хотите установить. Например, может потребоваться [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) по проверке кода для проблем безопасности и производительности, среди прочего.
+3. В поле поиска введите имя анализатора расширения, который вы хотите установить. Например, может потребоваться [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) по проверке кода для проблем безопасности и производительности, среди прочего.
 
-1. Выберите **загрузить**.
+4. Выберите **загрузить**.
 
    Расширение загружается.
 
-1. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
+5. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
 
    **Установщик VSIX** откроется диалоговое окно.
 
    ![Установщик VSIX для анализа кода Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Выберите **изменить** чтобы начать установку.
+6. Выберите **изменить** чтобы начать установку.
 
-1. После одну-две минуты не завершит установку. Выберите **закрыть**.
+7. После одну-две минуты не завершит установку. Выберите **закрыть**.
 
-1. Снова откройте Visual Studio.
+8. Снова откройте Visual Studio.
 
 Если вы хотите проверить, является ли расширение установлена, выберите **средства** > **расширения и обновления**. В **расширения и обновления** выберите **установленные** категории слева и выполните поиск расширения по имени.
 

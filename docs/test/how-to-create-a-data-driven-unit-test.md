@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939258"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
  Чтобы проверить метод `AddIntegers`, создайте источник данных, определяющий диапазон значений для параметров и ожидаемую возвращаемую сумму. В этом примере мы создадим базу данных SQL Compact с именем `MathsData` и таблицу с именем `AddIntegersData`, которая содержит следующие имена столбцов и значения:
 
 |FirstNumber|SecondNumber|Sum|
-|-----------------|------------------|---------|
+|-|------------------|-|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|

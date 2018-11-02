@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE | Документы Microsoft
+title: MESSAGETYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa09d938e0e7c3853431369c7e0634242df2ee0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66c254b56d5f7755a3578814ad5f3de7898f2f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872230"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Указывает тип сообщения и его причины.  
+Указывает тип сообщения и причины.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,24 +55,24 @@ public enum enum_MESSAGETYPE {
  Указывает, что сообщения должны отправляться в окне вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.  
   
  MT_MESSAGEBOX  
- Указывает, что сообщение должно отображаться в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.  
+ Указывает, что сообщения должны быть видны в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.  
   
  MT_TYPE_MASK  
- Значение маски для изоляции места назначения сообщения.  
+ Значение маски для изоляции назначения для сообщения.  
   
  MT_REASON_EXCEPTION  
- Указывает, в результате исключения отображается окно сообщения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.  
+ Указывает, что окно сообщения отображается в результате исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
- Указывает, в результате обращения к точке трассировки отображается окно сообщения. Это взаимно исключают друг друга в `MT_REASON_EXCEPTION`.  
+ Указывает, что в результате обращения к точке трассировки отображается окно сообщения. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
- Значение маски для изоляции причина показывается сообщение.  
+ Значение маски для изоляции причина для отображаемого сообщения.  
   
 ## <a name="remarks"></a>Примечания  
  Эти значения возвращаются из [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) методы.  
   
- Одно из значений, причины могут быть объединены с одним из значений выходных данных назначения, с помощью побитовой операции `OR`.  
+ Одно из значений причина могут сочетаться с одним из значений назначения выходных данных при помощи побитовой `OR`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

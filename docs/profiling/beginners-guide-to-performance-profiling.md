@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156dcb4fc6b94248e488eda4091c3b2ccf192185
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898243"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Профилирование производительности приложений в Visual Studio
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -32,9 +32,9 @@ ms.locfileid: "42626988"
 
 Центр диагностики предоставляет различные возможности по запуску сеансов диагностики и управлению ими. Если средство **Загрузка ЦП** не предоставляет необходимые данные, можно воспользоваться [другими средствами профилирования](../profiling/profiling-feature-tour.md), предоставляющими другие виды информации, которая может оказаться полезной. Как правило, проблемы производительности приложения могут вызываться другими компонентами помимо ЦП, такими как память, отрисовка пользовательского интерфейса или время запроса сети. Центр диагностики предоставляет ряд других параметров для записи и анализа такого рода данных.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    Просмотрите [видео об использовании средств диагностики](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), где показано, как можно анализировать загрузку ЦП и использование памяти. |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Просмотрите [видео об использовании средств диагностики](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), где показано, как можно анализировать загрузку ЦП и использование памяти. |
 
 В этой статье мы обсудим анализ загрузки ЦП в обычном рабочем процессе отладки. Анализировать загрузку ЦП также можно без подключения отладчика — вы можете просто указать выполняющееся приложение. Дополнительные сведения см. в разделе [Сбор данных профилирования без отладки](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) и в статье [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 

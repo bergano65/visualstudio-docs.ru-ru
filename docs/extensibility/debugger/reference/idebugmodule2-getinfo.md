@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo | Документы Microsoft
+title: IDebugModule2::GetInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb4f06899b7b3bc30453282463c9402e45c2aee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 859a85b51e83d438ea4051e2506c2dc0696768b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820686"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Возвращает сведения об этом модуле.  
@@ -47,10 +47,10 @@ int GetInfo(
  [in] Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указать, какие поля из `pInfo` , для заполнения.  
   
  `pInfo`  
- [in, out] Объект [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуру, которая содержит описание модуля.  
+ [in, out] Объект [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры, который заполняется описание модуля.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структура содержит имя модуля, который отображается в **модули** окна.  

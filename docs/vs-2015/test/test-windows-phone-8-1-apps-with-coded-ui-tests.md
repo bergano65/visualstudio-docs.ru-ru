@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890150"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Windows Phone 8.1 с помощью закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ ms.locfileid: "49285939"
 
 [Как создать закодированные тесты пользовательского интерфейса для приложений универсальной платформы Windows (UWP)?](#uwpapps)
   
-1.  Добавьте новый проект закодированного теста ИП в решение с приложением Windows Phone.  
+1. Добавьте новый проект закодированного теста ИП в решение с приложением Windows Phone.  
   
-     ![Создание закодированного теста пользовательского интерфейса для Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Создание закодированного теста пользовательского интерфейса для Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  С помощью перекрестия включите режим редактирования карты ИП.  
+2. С помощью перекрестия включите режим редактирования карты ИП.  
   
-     ![Создание закодированного теста пользовательского интерфейса с помощью перекрестья](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Создание закодированного теста пользовательского интерфейса с помощью перекрестья](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Выберите приложение, а затем скопируйте значение свойства **AutomationId** , которое будет использоваться для запуска приложения в тесте.  
+3. Выберите приложение, а затем скопируйте значение свойства **AutomationId** , которое будет использоваться для запуска приложения в тесте.  
   
-     ![Копирование значения AutomationId приложения](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![Копирование значения AutomationId приложения](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  Запустите приложение в эмуляторе и с помощью перекрестья выберите элемент управления "Кнопка". Затем добавьте элемент управления на карту ИП.  
+4. Запустите приложение в эмуляторе и с помощью перекрестья выберите элемент управления "Кнопка". Затем добавьте элемент управления на карту ИП.  
   
-     ![Использование перекрестья для сопоставления элементов управления](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Использование перекрестья для сопоставления элементов управления](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Повторите этот шаг, чтобы добавить элемент управления "Текстовое поле" на карту ИП.  
+5. Повторите этот шаг, чтобы добавить элемент управления "Текстовое поле" на карту ИП.  
   
-     ![Использование перекрестья для сопоставления элемента управления типа "текстовое поле"](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Использование перекрестья для сопоставления элемента управления типа "текстовое поле"](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  Создайте код для изменений карты элементов управления ИП.  
+6. Создайте код для изменений карты элементов управления ИП.  
   
-     ![Формирование кода из построителя](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Формирование кода из построителя](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  С помощью перекрестья выберите текстовое поле, а затем свойство **Text** .  
+7. С помощью перекрестья выберите текстовое поле, а затем свойство **Text** .  
   
-     ![Выбор свойства Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Выбор свойства Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Добавьте утверждение. Оно будет использоваться для проверки значения.  
+8. Добавьте утверждение. Оно будет использоваться для проверки значения.  
   
-     ![Добавление утверждения в тест](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Добавление утверждения в тест](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Добавьте и создайте код для метода assert.  
   
@@ -223,37 +223,37 @@ ms.locfileid: "49285939"
   
 11. В обозревателе решений откройте файл CodedUITest1.cs или CodedUITest1.vb. Теперь вы можете добавить код в метод CodedUTTestMethod1 для действий, необходимых для выполнения теста. Используйте элементы управления, добавленные в UIMap, чтобы добавить код:  
   
-    1.  Запустите приложение Windows Phone, используя свойство AutomationID, скопированное ранее в буфер обмена:  
+    1. Запустите приложение Windows Phone, используя свойство AutomationID, скопированное ранее в буфер обмена:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Добавьте жест касания кнопки:  
+    2. Добавьте жест касания кнопки:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Убедитесь, что вызов метода assert, созданного автоматически, следует после запуска приложения и касания кнопки:  
+    3. Убедитесь, что вызов метода assert, созданного автоматически, следует после запуска приложения и касания кнопки:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     После добавления кода метод теста CodedUITestMethod1 должен выглядеть следующим образом:  
+       После добавления кода метод теста CodedUITestMethod1 должен выглядеть следующим образом:  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>В. Как создать закодированные тесты ИП для приложений универсальной платформы Windows (UWP)?  
  **О**. В зависимости от платформы, на которой выполняется тестирование приложения UWP, создание проекта закодированного теста ИП осуществляется одним из следующих способов.  
   
--   Приложение UWP, работающее на локальном компьютере, будет выполняться как приложение для Магазина. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows** .  
+- Приложение UWP, работающее на локальном компьютере, будет выполняться как приложение для Магазина. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows** .  
   
--   Приложение UWP, работающее на мобильном устройстве или в эмуляторе, будет выполняться как приложение Windows Phone. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows Phone)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows Phone** .  
+- Приложение UWP, работающее на мобильном устройстве или в эмуляторе, будет выполняться как приложение Windows Phone. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows Phone)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows Phone** .  
   
- После создания проекта разработка теста остается прежней.  
+  После создания проекта разработка теста остается прежней.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>В. Можно ли выбрать элементы управления вне эмулятора?  
  **О**. Нет, построитель их не определит.  

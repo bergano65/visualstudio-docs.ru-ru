@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626150"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220330"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство: Расширение типа элемента проекта SharePoint
   Можно использовать **Business Data Connectivity Model** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта, данные в модели не отображается для пользователей. Также необходимо создать внешний список в SharePoint, чтобы пользователи могли просматривать данные.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626150"
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.  
   
--   Поддерживаемые выпуски Visual Studio, SharePoint и Microsoft Windows.  
+- Поддерживаемые выпуски Visual Studio, SharePoint и Microsoft Windows.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
+  Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
   
--   Служба BDC в [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Дополнительные сведения см. в разделе [архитектура BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- Служба BDC в [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Дополнительные сведения см. в разделе [архитектура BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   Схема XML для модели BDC. Дополнительные сведения см. в разделе [инфраструктуре модели BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- Схема XML для модели BDC. Дополнительные сведения см. в разделе [инфраструктуре модели BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Создание проектов
  Для выполнения этого пошагового руководства, необходимо создать два проекта:  
   
--   Проект VSIX, чтобы создать пакет VSIX для развертывания расширения элемента проекта.  
+- Проект VSIX, чтобы создать пакет VSIX для развертывания расширения элемента проекта.  
   
--   Проект библиотеки классов, реализующий расширение элемента проекта.  
+- Проект библиотеки классов, реализующий расширение элемента проекта.  
   
- Начало выполнения пошагового руководства по созданию проектов.  
+  Начало выполнения пошагового руководства по созданию проектов.  
   
 #### <a name="to-create-the-vsix-project"></a>Создание проекта VSIX  
   
@@ -220,7 +220,7 @@ ms.locfileid: "42626150"
   
 5.  В **имя** введите **SharePointProjectTestBDC**, а затем выберите **ОК** кнопки.  
   
-6.  В мастере настройки SharePoint, введите URL-адрес сайта, который вы хотите использовать для отладки, выберите **развернуть как решение фермы**, а затем выберите **Готово**кнопки.  
+6.  В мастере настройки SharePoint, введите URL-адрес сайта, который вы хотите использовать для отладки, выберите **развернуть как решение фермы**, а затем выберите **Готово** кнопки.  
   
 7.  Откройте контекстное меню для проекта SharePointProjectTestBDC, выберите **добавить**, а затем выберите **новый элемент**.  
   

@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884164"
 ---
 # <a name="source-control-configuration-details"></a>Сведения о конфигурации системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49297821"
   
  В ответ на `IVsQueryEditQuerySave2::QueryEditFiles` вызова, среду можно сделать следующее:  
   
--   Отклонить вызов, чтобы изменить, в этом случае редактор или проект должны оставаться в неизмененном состоянии (чистая).  
+- Отклонить вызов, чтобы изменить, в этом случае редактор или проект должны оставаться в неизмененном состоянии (чистая).  
   
--   Указывает, что данные документа требуется перезагрузка. В проекте среды будет перезагрузить данные для проекта. Редактор необходимо перезагрузить данные с диска через его <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> реализации. В любом случае контекст в проекте или в редакторе можно изменить при повторной загрузке данных.  
+- Указывает, что данные документа требуется перезагрузка. В проекте среды будет перезагрузить данные для проекта. Редактор необходимо перезагрузить данные с диска через его <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> реализации. В любом случае контекст в проекте или в редакторе можно изменить при повторной загрузке данных.  
   
- Это сложный и трудный процесс задача модифицировать соответствующие `IVsQueryEditQuerySave2::QueryEditFiles` звонков на существующую базу кода. Таким образом эти вызовы должны интегрироваться во время создания проекта или редактора.  
+  Это сложный и трудный процесс задача модифицировать соответствующие `IVsQueryEditQuerySave2::QueryEditFiles` звонков на существующую базу кода. Таким образом эти вызовы должны интегрироваться во время создания проекта или редактора.  
   
 ## <a name="request-permission-to-save-a-file"></a>Запрашивать разрешение на сохранение файла  
  Прежде чем проект или редактор сохраняет файл, он должен вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Для файлов проекта эти вызовы выполняются автоматически с решения, который знает, когда следует сохранить файл проекта. Редакторы несут ответственность за обеспечение этих вызовов, если реализация редактора `IVsPersistDocData2` используется вспомогательная функция <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Если ваш редактор реализует `IVsPersistDocData2` в таким образом, то вызов `IVsQueryEditQuerySave2::QuerySaveFile` или `IVsQueryEditQuerySave2::QuerySaveFiles` выполняется автоматически.  

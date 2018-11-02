@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::loadDataForExe | Документы Microsoft
+title: IDiaDataSource::loadDataForExe | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce90f3f46b040662f0b0dc1026dbbed0b5c1166
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c5c3850eaeb1ce7e97fdeb2473fb707e66be1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880021"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
-Открывает и подготовить данные отладки, связанный с файлом.exe/.dll.  
+Открывает и подготавливает данные отладки, связанный с файлом.exe/.dll.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,33 +39,33 @@ HRESULT loadDataForExe (
  [in] Путь к файлу .exe или .dll.  
   
  searchPath  
- [in] Альтернативный путь для поиска данных отладки.  
+ [in] Альтернативный путь для поиска данные отладки.  
   
  pCallback  
  [in] `IUnknown` Интерфейс для объекта, который поддерживает интерфейс обратного вызова отладки, такие как [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), и/или [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) интерфейсов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны некоторые кодов ошибок для этого метода.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены некоторые из кодов ошибок для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Не удалось открыть файл или файл имеет недопустимый формат.|  
-|E_PDB_FORMAT|Предпринята попытка доступа к файлу с устаревший формат.|  
-|E_PDB_INVALID_SIG|Подпись не соответствует.|  
-|E_PDB_INVALID_AGE|Срок действия не соответствует.|  
+|E_PDB_FORMAT|Предпринята попытка получить доступ к файлу с устаревший формат.|  
+|E_PDB_INVALID_SIG|Подпись не совпадает.|  
+|E_PDB_INVALID_AGE|Возраст не совпадает.|  
 |E_INVALIDARG|Недопустимый параметр.|  
-|E_UNEXPECTED|Источник данных уже был подготовлен.|  
+|E_UNEXPECTED|Источник данных уже подготовлен.|  
   
 ## <a name="remarks"></a>Примечания  
- Заголовок отладки файла.exe/.dll имен расположение данных связанного отладки.  
+ Заголовок debug файла.exe/.dll имена, расположение данных связанного отладки.  
   
- Этот метод считывает заголовок отладки и затем ищет и подготавливает данные отладки. Ход выполнения поиска при необходимости сообщил и управляется с помощью обратных вызовов. Например [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) при вызове `IDiaDataSource::loadDataForExe` метод находит и обрабатывает каталог отладки.  
+ Этот метод считывает заголовок отладки и затем выполняет поиск и подготавливает данные отладки. При необходимости ход выполнения поиска сообщаемые и управляемые с помощью обратных вызовов. Например [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) при вызове `IDiaDataSource::loadDataForExe` метод находит и обрабатывает каталога отладки.  
   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) и [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) интерфейсы позволяют клиентскому приложению, предоставляют альтернативные методы для чтения данных из исполняемого объекта файл появляется, когда файл не может осуществляться непосредственно с помощью стандартных файлового ввода-вывода.  
+ [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) и [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) интерфейсы позволяют клиентскому приложению для предоставления альтернативные методы для чтения данных из исполняемого файла, когда файл не удается получить непосредственно с помощью стандартных файлового ввода-вывода.  
   
- Чтобы загрузить PDB-файла без проверки, используйте [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) метод.  
+ Чтобы загрузить PDB-файл без проверки, используйте [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) метод.  
   
- Чтобы проверить файл PDB-файл на соответствие определенным критериям, используйте [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) метод.  
+ Чтобы проверить PDB-файла с определенным критериям, используйте [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) метод.  
   
  Чтобы загрузить PDB-файл непосредственно из памяти, используйте [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) метод.  
   

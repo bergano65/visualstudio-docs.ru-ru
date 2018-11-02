@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941949"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49179430"
   
  Типы, допускающие значения NULL, являются экземплярами структуры <xref:System.Nullable%601>. Каждый объект типа, допускающего значение NULL, имеет два открытых свойства, доступных только для чтения, `HasValue` и `Value`:  
   
--   `HasValue` имеет тип `bool` и указывает, содержит ли переменная определенное значение. `True` означает, что переменная содержит значение, не равное NULL. Можно провести тест для определенного значения с помощью оператора, такого как `if (x.HasValue)` или `if (y != null)`.  
+- `HasValue` имеет тип `bool` и указывает, содержит ли переменная определенное значение. `True` означает, что переменная содержит значение, не равное NULL. Можно провести тест для определенного значения с помощью оператора, такого как `if (x.HasValue)` или `if (y != null)`.  
   
--   `Value` имеет тот же тип, что и базовый тип. Если `HasValue` равно `True`, то свойство `Value` содержит полезное значение. Если `HasValue` равно `False`, доступ к свойству `Value` вызовет исключение недопустимой операции.  
+- `Value` имеет тот же тип, что и базовый тип. Если `HasValue` равно `True`, то свойство `Value` содержит полезное значение. Если `HasValue` равно `False`, доступ к свойству `Value` вызовет исключение недопустимой операции.  
   
- По умолчанию при объявлении переменной как типа данных, допускающего значения NULL, она не имеет определенного значения (`HasValue` равен `False`), отличного от значения по умолчанию для базового типа.  
+  По умолчанию при объявлении переменной как типа данных, допускающего значения NULL, она не имеет определенного значения (`HasValue` равен `False`), отличного от значения по умолчанию для базового типа.  
   
- Конструктор классов отображает тип, допускающий значение NULL, так же, как он отображает его базовый тип.  
+  Конструктор классов отображает тип, допускающий значение NULL, так же, как он отображает его базовый тип.  
   
- Дополнительные сведения о типах, допускающих значение NULL, в Visual C# см. в разделе [Типы, допускающие значения NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Дополнительные сведения о типах, допускающих значение NULL, в Visual C# см. в разделе [Типы, допускающие значения NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Добавление типа, допускающего значение NULL, с помощью конструктора классов  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Clone | Документы Microsoft
+title: IEnumDebugProcesses2::Clone | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8a4f2f617756c2976b6dbccb48948a35d02a7ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 673f7e576f9885bcd5b4b1bd37b377a0cd497a16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910476"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
-Возвращает копию текущего перечисления в виде отдельного объекта.  
+Возвращает копию текущего перечисления как отдельный объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int Clone(
   
 #### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Возвращает копию этого перечисления в виде отдельного объекта.  
+ [out] Возвращает копию этого перечисления как отдельный объект.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Копия перечисления имеет том же состоянии, что и исходный во время вызова этого метода. Тем не менее копирования и исходного состояния отделены и могут изменяться по отдельности.  
+ Копия перечисления имеет то же состояние, что исходный во время вызова этого метода. Тем не менее копии и исходного состояния отделены и могут изменяться по отдельности.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

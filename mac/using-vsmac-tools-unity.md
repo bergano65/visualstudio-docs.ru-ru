@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898828"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Применение инструментов Visual Studio для Mac для Unity
 
@@ -33,31 +33,31 @@ ms.locfileid: "37889948"
 
 Однако инструменты Visual Studio для Mac для Unity расширяют функциональные возможности IntelliSense для сообщений Unity. Это позволяет легко реализовать сообщения Unity в скриптах MonoBehaviour и помогает в изучении API Unity. Чтобы использовать IntelliSense для сообщений Unity, сделайте следующее:
 
-1.  Поместите курсор на новую строку внутри тела класса, производного от MonoBehaviour.
+1. Поместите курсор на новую строку внутри тела класса, производного от MonoBehaviour.
 
-2.  Начните вводить имя сообщения Unity, например `OnTriggerEnter`.
+2. Начните вводить имя сообщения Unity, например `OnTriggerEnter`.
 
-3.  После ввода букв "**ont**" отображается список предложений IntelliSense.
+3. После ввода букв "**ont**" отображается список предложений IntelliSense.
 
-  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  Выбранный элемент в списке можно изменить тремя способами:
+4. Выбранный элемент в списке можно изменить тремя способами:
 
-    * с помощью клавиш со стрелками **ВВЕРХ** и **ВНИЗ**;
+   * с помощью клавиш со стрелками **ВВЕРХ** и **ВНИЗ**;
 
-    * щелкая нужный элемент;
+   * щелкая нужный элемент;
 
-    * продолжив ввод имени нужного элемента.
+   * продолжив ввод имени нужного элемента.
 
-5.  IntelliSense может вставить выбранное сообщение Unity, включая все необходимые параметры:
+5. IntelliSense может вставить выбранное сообщение Unity, включая все необходимые параметры:
 
-    * при нажатии клавиши **TAB**;
+   * при нажатии клавиши **TAB**;
 
-    * при нажатии клавиши **ВВОД**;
+   * при нажатии клавиши **ВВОД**;
 
-    * при двойном щелчке выбранного элемента.
+   * при двойном щелчке выбранного элемента.
 
-  ![Вставка сообщения Unity из IntelliSense](media/using-vsmac-tools-unity-image3.png)
+   ![Вставка сообщения Unity из IntelliSense](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Добавление новых файлов и папок Unity
 
@@ -93,22 +93,22 @@ ms.locfileid: "37889948"
 
 Начало отладки
 
-1.  Подключите Visual Studio к Unity, нажав кнопку **Воспроизвести**, клавиши **COMMAND+ВВОД** или клавишу **F5**.
+1. Подключите Visual Studio к Unity, нажав кнопку **Воспроизвести**, клавиши **COMMAND+ВВОД** или клавишу **F5**.
 
-  ![Нажатие кнопки "Воспроизвести" в Visual Studio](media/using-vsmac-tools-unity-image5.png)
+   ![Нажатие кнопки "Воспроизвести" в Visual Studio](media/using-vsmac-tools-unity-image5.png)
 
-2.  Переключитесь в Unity и нажмите кнопку **Воспроизвести**, чтобы запустить игру в редакторе.
+2. Переключитесь в Unity и нажмите кнопку **Воспроизвести**, чтобы запустить игру в редакторе.
 
-  ![Нажатие кнопки "Воспроизвести" в Unity](media/using-vsmac-tools-unity-image6.png)
+   ![Нажатие кнопки "Воспроизвести" в Unity](media/using-vsmac-tools-unity-image6.png)
 
-3.  Когда игра запущена в редакторе Unity при подключении к Visual Studio, все проходимые точки останова будут приостанавливать выполнение игры и выводить соответствующую строку кода в Visual Studio для Mac.
+3. Когда игра запущена в редакторе Unity при подключении к Visual Studio, все проходимые точки останова будут приостанавливать выполнение игры и выводить соответствующую строку кода в Visual Studio для Mac.
 
 ### <a name="stop-debugging"></a>Остановка отладки
 
 Чтобы остановить отладку, сделайте следующее:
 
-1.  Нажмите кнопку **Остановить** в Visual Studio для Mac или клавиши **SHIFT+COMMAND+ВВОД**.
+1. Нажмите кнопку **Остановить** в Visual Studio для Mac или клавиши **SHIFT+COMMAND+ВВОД**.
 
-  ![Нажатие кнопки "Остановить" в Visual Studio](media/using-vsmac-tools-unity-image7.png)
+   ![Нажатие кнопки "Остановить" в Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
 Дополнительные сведения об отладке в Visual Studio для Mac см. в разделе [Использование отладчика](https://docs.microsoft.com/visualstudio/mac/debugging).

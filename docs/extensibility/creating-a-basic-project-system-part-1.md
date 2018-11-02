@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887557"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.  
@@ -29,11 +29,11 @@ ms.locfileid: "42902403"
   
 > [!NOTE]
 >  Если необходимо расширить Visual Studio с помощью пользовательского типа проекта, настоятельно рекомендуется использование [система проектов Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSP) которого имеет ряд преимуществ по сравнению с создания проекта системы с нуля:  
->   
->  -  Проще адаптации.  Даже системы базового проекта требует десятки тысяч строк кода.  Используя поставщики службы Виртуализации снижает стоимость адаптации в несколько щелчков мышью, прежде чем вы будете готовы настраивать его под свои нужды.  
->  -  Упрощает обслуживание.  Используя поставщики службы Виртуализации, необходимо только обслуживать собственные сценарии.  Мы занимаемся ведении всю инфраструктуру системы проекта.  
->   
->  Если вам нужно предназначенные для версий старше, чем Visual Studio 2013 Visual Studio, не можно использовать поставщики службы Виртуализации в расширении Visual Studio.  Если это так, в этом пошаговом руководстве хорошо подходит для начала.  
+> 
+> - Проще адаптации.  Даже системы базового проекта требует десятки тысяч строк кода.  Используя поставщики службы Виртуализации снижает стоимость адаптации в несколько щелчков мышью, прежде чем вы будете готовы настраивать его под свои нужды.  
+> - Упрощает обслуживание.  Используя поставщики службы Виртуализации, необходимо только обслуживать собственные сценарии.  Мы занимаемся ведении всю инфраструктуру системы проекта.  
+> 
+>   Если вам нужно предназначенные для версий старше, чем Visual Studio 2013 Visual Studio, не можно использовать поставщики службы Виртуализации в расширении Visual Studio.  Если это так, в этом пошаговом руководстве хорошо подходит для начала.  
   
  В этом пошаговом руководстве показано, как создать тип проекта, который имеет расширение имени файла проекта *.myproj*. В этом пошаговом руководстве использует существующие системы проекта Visual C#.  
   
@@ -71,51 +71,51 @@ ms.locfileid: "42902403"
   
 ### <a name="to-create-a-basic-project-template"></a>Создание базового проекта шаблона  
   
-1.  Добавьте в проект, друг под другом три папки: *Templates\Projects\SimpleProject*. (В **обозревателе решений**, щелкните правой кнопкой мыши **SimpleProject** узел проекта, выберите пункт **добавить**, а затем нажмите кнопку **новую папку**. Назовите папку *шаблоны*. В *шаблоны* папки, добавьте папку с именем *проекты*. В *проекты* папки, добавьте папку с именем *SimpleProject*.)  
+1. Добавьте в проект, друг под другом три папки: *Templates\Projects\SimpleProject*. (В **обозревателе решений**, щелкните правой кнопкой мыши **SimpleProject** узел проекта, выберите пункт **добавить**, а затем нажмите кнопку **новую папку**. Назовите папку *шаблоны*. В *шаблоны* папки, добавьте папку с именем *проекты*. В *проекты* папки, добавьте папку с именем *SimpleProject*.)  
   
-2.  В *Templates\Projects\SimpleProject* папки, добавить файл точечного рисунка, который используется в качестве значка с именем *SimpleProject.ico*. При нажатии кнопки **добавить**, откроется редактор значков.  
+2. В *Templates\Projects\SimpleProject* папки, добавить файл точечного рисунка, который используется в качестве значка с именем *SimpleProject.ico*. При нажатии кнопки **добавить**, откроется редактор значков.  
   
-3.  Сделайте различение значок. Этот значок будет отображаться в **новый проект** диалоговое окно «» далее в этом пошаговом руководстве.  
+3. Сделайте различение значок. Этот значок будет отображаться в **новый проект** диалоговое окно «» далее в этом пошаговом руководстве.  
   
-     ![Значок простого проекта](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+    ![Значок простого проекта](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
-4.  Значок сохраните и закройте редактор значков.  
+4. Значок сохраните и закройте редактор значков.  
   
-5.  В *Templates\Projects\SimpleProject* папки, добавьте **класс** элемента с именем *Program.cs*.  
+5. В *Templates\Projects\SimpleProject* папки, добавьте **класс** элемента с именем *Program.cs*.  
   
-6.  Замените существующий код приведенным ниже.  
+6. Замените существующий код приведенным ниже.  
   
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Text;
   
-    namespace $nameSpace$
-    {  
-        public class $className$
-        {
-            static void Main(string[] args)
-            {
-                Console.WriteLine("Hello VSX!!!");
-                Console.ReadKey();
-            }
-        }
-    }
-    ```
+   namespace $nameSpace$
+   {  
+       public class $className$
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello VSX!!!");
+               Console.ReadKey();
+           }
+       }
+   }
+   ```
   
-    > [!IMPORTANT]
-    >  Это не конечную форму *Program.cs* код; замена параметров будут обработаны позже. Может появиться ошибки компиляции, но в течение его **BuildAction** — **содержимого**, можно построить и запустить проект как обычно.  
+   > [!IMPORTANT]
+   >  Это не конечную форму *Program.cs* код; замена параметров будут обработаны позже. Может появиться ошибки компиляции, но в течение его **BuildAction** — **содержимого**, можно построить и запустить проект как обычно.  
   
-1.  Сохраните файл.  
+7. Сохраните файл.  
   
-2.  Копировать *AssemblyInfo.cs* файла из *свойства* папку *Projects\SimpleProject* папки.  
+8. Копировать *AssemblyInfo.cs* файла из *свойства* папку *Projects\SimpleProject* папки.  
   
-3.  В *Projects\SimpleProject* папку добавить XML-файл с именем *SimpleProject.myproj*.  
+9. В *Projects\SimpleProject* папку добавить XML-файл с именем *SimpleProject.myproj*.  
   
-    > [!NOTE]
-    >  Расширение имени файла для всех проектов данного типа *.myproj*. Если вы хотите изменить его, необходимо изменить его везде, где оно встречается в этом пошаговом руководстве.  
+   > [!NOTE]
+   >  Расширение имени файла для всех проектов данного типа *.myproj*. Если вы хотите изменить его, необходимо изменить его везде, где оно встречается в этом пошаговом руководстве.  
   
-4.  Замените существующее содержимое следующие строки.  
+10. Замените существующее содержимое следующие строки.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -155,13 +155,13 @@ ms.locfileid: "42902403"
     </Project>  
     ```  
   
-5.  Сохраните файл.  
+11. Сохраните файл.  
   
-6.  В **свойства** окне **действие при построении** из *AssemblyInfo.cs*, *Program.cs*, *SimpleProject.ico* , и *SimpleProject.myproj* для **содержимого**и задайте их **включить в VSIX** свойства **True**.  
+12. В **свойства** окне **действие при построении** из *AssemblyInfo.cs*, *Program.cs*, *SimpleProject.ico* , и *SimpleProject.myproj* для **содержимого**и задайте их **включить в VSIX** свойства **True**.  
   
- Этот шаблон проекта описывает базовый Visual C# проект с отладочной конфигурации и конфигурации выпуска. Проект включает два исходных файла *AssemblyInfo.cs* и *Program.cs*и несколько ссылок на сборки. При создании проекта из шаблона ProjectGuid значение автоматически заменяется новый идентификатор GUID.  
+    Этот шаблон проекта описывает базовый Visual C# проект с отладочной конфигурации и конфигурации выпуска. Проект включает два исходных файла *AssemblyInfo.cs* и *Program.cs*и несколько ссылок на сборки. При создании проекта из шаблона ProjectGuid значение автоматически заменяется новый идентификатор GUID.  
   
- В **обозревателе решений**, развернутом **шаблоны** папки должен выглядеть следующим образом:
+    В **обозревателе решений**, развернутом **шаблоны** папки должен выглядеть следующим образом:
 
 ```
 Templates  
@@ -178,67 +178,67 @@ Templates
   
 ### <a name="to-create-a-basic-project-factory"></a>Чтобы создать фабрику базового проекта  
   
-1.  Создание глобальных уникальных идентификаторов для фабрики проекта (на **средства** меню, щелкните **создать GUID**), или использовать в следующем примере. Добавьте идентификаторы GUID для `SimpleProjectPackage` класс практически разделу с уже определенным `PackageGuidString`. Идентификаторы GUID должны находиться в виде идентификатора GUID и строковый формат. Итоговый код должен выглядеть следующим образом.  
+1. Создание глобальных уникальных идентификаторов для фабрики проекта (на **средства** меню, щелкните **создать GUID**), или использовать в следующем примере. Добавьте идентификаторы GUID для `SimpleProjectPackage` класс практически разделу с уже определенным `PackageGuidString`. Идентификаторы GUID должны находиться в виде идентификатора GUID и строковый формат. Итоговый код должен выглядеть следующим образом.  
   
-    ```csharp  
-        public sealed class SimpleProjectPackage : Package
-        {  
-            ...
-            public const string SimpleProjectPkgString = "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
-            public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
+   ```csharp  
+       public sealed class SimpleProjectPackage : Package
+       {  
+           ...
+           public const string SimpleProjectPkgString = "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
+           public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
     
-            public static readonly Guid guidSimpleProjectFactory = new Guid(SimpleProjectFactoryString);  
-        }  
-    ```  
+           public static readonly Guid guidSimpleProjectFactory = new Guid(SimpleProjectFactoryString);  
+       }  
+   ```  
   
-3.  Добавьте в начало класса *SimpleProject* папку с именем *SimpleProjectFactory.cs*.  
+2. Добавьте в начало класса *SimpleProject* папку с именем *SimpleProjectFactory.cs*.  
   
-4.  Добавьте следующие операторы using:  
+3. Добавьте следующие операторы using:  
   
-    ```csharp  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-5.  Добавьте атрибут GUID, чтобы `SimpleProjectFactory` класса. Значение атрибута — это новый идентификатор GUID фабрики проектов.  
+4. Добавьте атрибут GUID, чтобы `SimpleProjectFactory` класса. Значение атрибута — это новый идентификатор GUID фабрики проектов.  
   
-    ```csharp  
-    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]  
-    class SimpleProjectFactory  
-    {  
-    }  
-    ```  
+   ```csharp  
+   [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]  
+   class SimpleProjectFactory  
+   {  
+   }  
+   ```  
   
- Теперь вы можете зарегистрировать шаблон проекта.  
+   Теперь вы можете зарегистрировать шаблон проекта.  
   
 ### <a name="to-register-the-project-template"></a>Для регистрации шаблона проекта  
   
-1.  В *SimpleProjectPackage.cs*, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут `SimpleProjectPackage` класса, как показано ниже.  
+1. В *SimpleProjectPackage.cs*, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут `SimpleProjectPackage` класса, как показано ниже.  
   
-    ```csharp  
-    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
-        "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",   
-        @"Templates\Projects\SimpleProject",     LanguageVsTemplate = "SimpleProject")]  
-    [Guid(SimpleProjectPackage.PackageGuidString)]  
-    public sealed class SimpleProjectPackage : Package  
-    ```  
+   ```csharp  
+   [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
+       "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",   
+       @"Templates\Projects\SimpleProject",     LanguageVsTemplate = "SimpleProject")]  
+   [Guid(SimpleProjectPackage.PackageGuidString)]  
+   public sealed class SimpleProjectPackage : Package  
+   ```  
   
-2.  Перестройте решение и убедитесь, что сборка выполняется без ошибок.  
+2. Перестройте решение и убедитесь, что сборка выполняется без ошибок.  
   
-     Перестроение регистрирует шаблон проекта.  
+    Перестроение регистрирует шаблон проекта.  
   
- Параметры `defaultProjectExtension` и `possibleProjectExtensions` присваивается расширение имени файла проекта (*.myproj*). `projectTemplatesDirectory` Параметр имеет значение относительный путь к *шаблоны* папки. Во время сборки этот путь будет преобразуются в полной сборки и добавляется в реестр, чтобы зарегистрировать систему проекта.  
+   Параметры `defaultProjectExtension` и `possibleProjectExtensions` присваивается расширение имени файла проекта (*.myproj*). `projectTemplatesDirectory` Параметр имеет значение относительный путь к *шаблоны* папки. Во время сборки этот путь будет преобразуются в полной сборки и добавляется в реестр, чтобы зарегистрировать систему проекта.  
   
 ## <a name="test-the-template-registration"></a>Проверка регистрации шаблона  
  Шаблон регистрации указывает Visual Studio расположение папки шаблона проекта Visual Studio можно отображать имя шаблона и значок в **новый проект** диалоговое окно.  
   
 ### <a name="to-test-the-template-registration"></a>Чтобы проверить регистрацию шаблона  
   
-1.  Нажмите клавишу **F5** запустить отладку экспериментальный экземпляр Visual Studio.  
+1. Нажмите клавишу **F5** запустить отладку экспериментальный экземпляр Visual Studio.  
   
-2.  В экспериментальном экземпляре создайте новый проект типа только что созданный проект. В **новый проект** диалоговом окне вы увидите **SimpleProject** под **установленные шаблоны**.  
+2. В экспериментальном экземпляре создайте новый проект типа только что созданный проект. В **новый проект** диалоговом окне вы увидите **SimpleProject** под **установленные шаблоны**.  
   
- Теперь у вас есть фабрику проекта, который регистрируется. Тем не менее он еще не удается создать проект. Пакет проекта и фабрики проектов совместно для создания и инициализации проекта.  
+   Теперь у вас есть фабрику проекта, который регистрируется. Тем не менее он еще не удается создать проект. Пакет проекта и фабрики проектов совместно для создания и инициализации проекта.  
   
 ## <a name="add-the-managed-package-framework-code"></a>Добавьте код, Managed Package Framework  
  Реализуйте соединение между пакет проекта и фабрики проектов.  
@@ -355,67 +355,67 @@ Templates
 ## <a name="extend-the-projectnode-class"></a>Расширение класса ProjectNode  
  Теперь вы можете реализовать `SimpleProjectNode` класс, который является производным от `ProjectNode` класса. `ProjectNode` Базовый класс обрабатывает следующие задачи создания проекта:  
   
--   Копирует файл шаблона проекта, *SimpleProject.myproj*, в папку нового проекта. Копия переименовывается в соответствии с именем, введенным в **новый проект** диалоговое окно. `ProjectGuid` Значение свойства заменяется на новый идентификатор GUID.  
+- Копирует файл шаблона проекта, *SimpleProject.myproj*, в папку нового проекта. Копия переименовывается в соответствии с именем, введенным в **новый проект** диалоговое окно. `ProjectGuid` Значение свойства заменяется на новый идентификатор GUID.  
   
--   Обходит элементы MSBuild файла шаблона проекта *SimpleProject.myproj*и ищет `Compile` элементов. Для каждого `Compile` целевого файла, файл копируется в папку нового проекта.  
+- Обходит элементы MSBuild файла шаблона проекта *SimpleProject.myproj*и ищет `Compile` элементов. Для каждого `Compile` целевого файла, файл копируется в папку нового проекта.  
   
- Производные `SimpleProjectNode` класс выполняет эти задачи:  
+  Производные `SimpleProjectNode` класс выполняет эти задачи:  
   
--   Позволяет значков для узлов проекта и файла в **обозревателе решений** для создания или выбран.  
+- Позволяет значков для узлов проекта и файла в **обозревателе решений** для создания или выбран.  
   
--   Включает дополнительный проект замены параметров шаблона должны быть указаны.  
+- Включает дополнительный проект замены параметров шаблона должны быть указаны.  
   
 ### <a name="to-extend-the-projectnode-class"></a>Чтобы расширить класс ProjectNode  
   
-1.  Добавьте класс с именем `SimpleProjectNode.cs`.  
+1. Добавьте класс с именем `SimpleProjectNode.cs`.  
   
-2.  Замените существующий код следующим кодом:  
+2. Замените существующий код следующим кодом:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Project;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Project;  
   
-    namespace SimpleProject  
-    {  
-        public class SimpleProjectNode : ProjectNode  
-        {  
-            private SimpleProjectPackage package;  
+   namespace SimpleProject  
+   {  
+       public class SimpleProjectNode : ProjectNode  
+       {  
+           private SimpleProjectPackage package;  
   
-            public SimpleProjectNode(SimpleProjectPackage package)  
-            {  
-                this.package = package;  
-            }  
-            public override Guid ProjectGuid  
-            {  
-                get { return SimpleProjectPackage.guidSimpleProjectFactory; }  
-            }  
-            public override string ProjectType  
-            {  
-                get { return "SimpleProjectType"; }  
-            }  
+           public SimpleProjectNode(SimpleProjectPackage package)  
+           {  
+               this.package = package;  
+           }  
+           public override Guid ProjectGuid  
+           {  
+               get { return SimpleProjectPackage.guidSimpleProjectFactory; }  
+           }  
+           public override string ProjectType  
+           {  
+               get { return "SimpleProjectType"; }  
+           }  
   
-            public override void AddFileFromTemplate(  
-                string source, string target)  
-            {  
-                this.FileTemplateProcessor.UntokenFile(source, target);  
-                this.FileTemplateProcessor.Reset();  
-            }  
-        }  
-    }  
-    ```  
+           public override void AddFileFromTemplate(  
+               string source, string target)  
+           {  
+               this.FileTemplateProcessor.UntokenFile(source, target);  
+               this.FileTemplateProcessor.Reset();  
+           }  
+       }  
+   }  
+   ```  
   
- Это `SimpleProjectNode` реализацию класса имеет эти переопределенные методы:  
+   Это `SimpleProjectNode` реализацию класса имеет эти переопределенные методы:  
   
--   `ProjectGuid`, который возвращает идентификатор GUID фабрики проектов.  
+- `ProjectGuid`, который возвращает идентификатор GUID фабрики проектов.  
   
--   `ProjectType`, который возвращает локализованное имя типа проекта.  
+- `ProjectType`, который возвращает локализованное имя типа проекта.  
   
--   `AddFileFromTemplate`, который копирует выбранные файлы из папки шаблона к проекту назначения. Дополнительно этот метод реализуется в одном из следующих разделов.  
+- `AddFileFromTemplate`, который копирует выбранные файлы из папки шаблона к проекту назначения. Дополнительно этот метод реализуется в одном из следующих разделов.  
   
- `SimpleProjectNode` Конструктор, например `SimpleProjectFactory` конструктор, кэширует `SimpleProjectPackage` ссылку в скрытом поле для последующего использования.  
+  `SimpleProjectNode` Конструктор, например `SimpleProjectFactory` конструктор, кэширует `SimpleProjectPackage` ссылку в скрытом поле для последующего использования.  
   
- Для подключения `SimpleProjectFactory` класс `SimpleProjectNode` класса, необходимо создать экземпляр нового `SimpleProjectNode` в `SimpleProjectFactory.CreateProject` метод и кэшировать его в скрытом поле для последующего использования.  
+  Для подключения `SimpleProjectFactory` класс `SimpleProjectNode` класса, необходимо создать экземпляр нового `SimpleProjectNode` в `SimpleProjectFactory.CreateProject` метод и кэшировать его в скрытом поле для последующего использования.  
   
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Для подключения класс фабрики проекта и класс узла  
   
@@ -455,75 +455,75 @@ Templates
   
 ### <a name="to-add-a-custom-project-node-icon"></a>Чтобы добавить значок узла пользовательского проекта  
   
-1.  В **ресурсы** папки, добавьте к файлу точечного рисунка с именем *SimpleProjectNode.bmp*.  
+1. В **ресурсы** папки, добавьте к файлу точечного рисунка с именем *SimpleProjectNode.bmp*.  
   
-2.  В **свойства** windows, уменьшить точечного рисунка 16 x 16 пикселей. Сделайте различение растрового изображения.  
+2. В **свойства** windows, уменьшить точечного рисунка 16 x 16 пикселей. Сделайте различение растрового изображения.  
   
-     ![Команда простого проекта](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Команда простого проекта](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
-3.  В **свойства** измените **действие при сборке** растрового изображения для **внедренный ресурс**.  
+3. В **свойства** измените **действие при сборке** растрового изображения для **внедренный ресурс**.  
   
-4.  В *SimpleProjectNode.cs*, добавьте следующий `using` инструкции:  
+4. В *SimpleProjectNode.cs*, добавьте следующий `using` инструкции:  
   
-    ```csharp  
-    using System.Drawing;  
-    using System.Windows.Forms;  
-    ```  
+   ```csharp  
+   using System.Drawing;  
+   using System.Windows.Forms;  
+   ```  
   
-5.  Добавьте следующие статические поля и конструктор для `SimpleProjectNode` класса.  
+5. Добавьте следующие статические поля и конструктор для `SimpleProjectNode` класса.  
   
-    ```csharp  
-    private static ImageList imageList;  
+   ```csharp  
+   private static ImageList imageList;  
   
-    static SimpleProjectNode()  
-    {  
-        imageList =        Utilities.GetImageList(            typeof(SimpleProjectNode).Assembly.GetManifestResourceStream(                "SimpleProject.Resources.SimpleProjectNode.bmp"));  
-    }  
-    ```  
+   static SimpleProjectNode()  
+   {  
+       imageList =        Utilities.GetImageList(            typeof(SimpleProjectNode).Assembly.GetManifestResourceStream(                "SimpleProject.Resources.SimpleProjectNode.bmp"));  
+   }  
+   ```  
   
-6.  Добавьте следующее свойство в начале `SimpleProjectNode` класса.  
+6. Добавьте следующее свойство в начале `SimpleProjectNode` класса.  
   
-    ```csharp  
-    internal static int imageIndex;  
-       public override int ImageIndex  
+   ```csharp  
+   internal static int imageIndex;  
+      public override int ImageIndex  
+      {  
+          get { return imageIndex; }  
+      }  
+   ```  
+  
+7. Конструктор экземпляра, замените следующий код.  
+  
+   ```csharp  
+   public SimpleProjectNode(SimpleProjectPackage package)  
+   {  
+       this.package = package;  
+  
+       imageIndex = this.ImageHandler.ImageList.Images.Count;  
+  
+       foreach (Image img in imageList.Images)  
        {  
-           get { return imageIndex; }  
+           this.ImageHandler.AddImage(img);  
        }  
-    ```  
+   }  
+   ```  
   
-7.  Конструктор экземпляра, замените следующий код.  
+   Во время статической конструкции `SimpleProjectNode` извлекает узел проекта растрового изображения из ресурсов манифеста сборки и кэширует его в скрытом поле для последующего использования. Обратите внимание, что синтаксис <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> путь к изображению. Чтобы просмотреть имена ресурсов манифеста, внедренных в сборку, используйте <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> метод. Если этот метод применяется к `SimpleProject` сборки, результаты должны выглядеть следующим образом:  
   
-    ```csharp  
-    public SimpleProjectNode(SimpleProjectPackage package)  
-    {  
-        this.package = package;  
+- *SimpleProject.Resources.resources*  
   
-        imageIndex = this.ImageHandler.ImageList.Images.Count;  
+- *VisualStudio.Project.resources*  
   
-        foreach (Image img in imageList.Images)  
-        {  
-            this.ImageHandler.AddImage(img);  
-        }  
-    }  
-    ```  
+- *SimpleProject.VSPackage.resources*  
   
- Во время статической конструкции `SimpleProjectNode` извлекает узел проекта растрового изображения из ресурсов манифеста сборки и кэширует его в скрытом поле для последующего использования. Обратите внимание, что синтаксис <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> путь к изображению. Чтобы просмотреть имена ресурсов манифеста, внедренных в сборку, используйте <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> метод. Если этот метод применяется к `SimpleProject` сборки, результаты должны выглядеть следующим образом:  
+- *Resources.imagelis.bmp*  
   
--   *SimpleProject.Resources.resources*  
+- *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*  
   
--   *VisualStudio.Project.resources*  
+- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*  
   
--   *SimpleProject.VSPackage.resources*  
+- *SimpleProject.Resources.SimpleProjectNode.bmp*  
   
--   *Resources.imagelis.bmp*  
-  
--   *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*  
-  
--   *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*  
-  
--   *SimpleProject.Resources.SimpleProjectNode.bmp*  
-  
- Во время построения экземпляра `ProjectNode` базового класса загружает *Resources.imagelis.bmp*, в которой внедряются часто используется 16 x 16 точечных рисунков из *Resources\imagelis.bmp*. Этот список точечного рисунка, предоставляется `SimpleProjectNode` как `ImageHandler.ImageList`. `SimpleProjectNode` Битовая карта узла проекта добавляет к списку. Смещение растрового изображения узел проекта в списке изображений кэшируется для последующего использования в качестве значения открытого `ImageIndex` свойство. Visual Studio использует это свойство, чтобы определить, какие растрового изображения, отображаемого в качестве значка узла проекта.  
+  Во время построения экземпляра `ProjectNode` базового класса загружает *Resources.imagelis.bmp*, в которой внедряются часто используется 16 x 16 точечных рисунков из *Resources\imagelis.bmp*. Этот список точечного рисунка, предоставляется `SimpleProjectNode` как `ImageHandler.ImageList`. `SimpleProjectNode` Битовая карта узла проекта добавляет к списку. Смещение растрового изображения узел проекта в списке изображений кэшируется для последующего использования в качестве значения открытого `ImageIndex` свойство. Visual Studio использует это свойство, чтобы определить, какие растрового изображения, отображаемого в качестве значка узла проекта.  
   
 ## <a name="test-the-custom-project-node-icon"></a>Значок узла пользовательского проекта тестирования  
  Протестируйте свою фабрику проекта, чтобы понять, каким он иерархии проекта, в которой значок узла данного пользовательского проекта.  
@@ -565,78 +565,78 @@ Templates
   
 ### <a name="to-substitute-template-parameters"></a>Для замены параметров шаблона  
   
-1.  В *SimpleProjectNode.cs* добавьте следующие `using` инструкции.  
+1. В *SimpleProjectNode.cs* добавьте следующие `using` инструкции.  
   
-    ```csharp  
-    using System.IO;  
-    ```  
+   ```csharp  
+   using System.IO;  
+   ```  
   
-2.  Замените `AddFileFromTemplate` метода, используя следующий код.  
+2. Замените `AddFileFromTemplate` метода, используя следующий код.  
   
-    ```csharp  
-    public override void AddFileFromTemplate(  
-        string source, string target)  
-    {  
-        string nameSpace =   
-            this.FileTemplateProcessor.GetFileNamespace(target, this);  
-        string className = Path.GetFileNameWithoutExtension(target);  
+   ```csharp  
+   public override void AddFileFromTemplate(  
+       string source, string target)  
+   {  
+       string nameSpace =   
+           this.FileTemplateProcessor.GetFileNamespace(target, this);  
+       string className = Path.GetFileNameWithoutExtension(target);  
   
-        this.FileTemplateProcessor.AddReplace("$nameSpace$", nameSpace);  
-        this.FileTemplateProcessor.AddReplace("$className$", className);  
+       this.FileTemplateProcessor.AddReplace("$nameSpace$", nameSpace);  
+       this.FileTemplateProcessor.AddReplace("$className$", className);  
   
-        this.FileTemplateProcessor.UntokenFile(source, target);  
-        this.FileTemplateProcessor.Reset();  
-    }  
-    ```  
+       this.FileTemplateProcessor.UntokenFile(source, target);  
+       this.FileTemplateProcessor.Reset();  
+   }  
+   ```  
   
-3.  Установите точку останова в методе, сразу после `className` оператор присваивания.  
+3. Установите точку останова в методе, сразу после `className` оператор присваивания.  
   
- Операторы присваивания определите приемлемые значения для пространства имен и имя нового класса. Два `ProjectNode.FileTemplateProcessor.AddReplace` вызовы методов замените соответствующие значения параметров шаблона с помощью этих новых значений.  
+   Операторы присваивания определите приемлемые значения для пространства имен и имя нового класса. Два `ProjectNode.FileTemplateProcessor.AddReplace` вызовы методов замените соответствующие значения параметров шаблона с помощью этих новых значений.  
   
 ## <a name="test-the-template-parameter-substitution"></a>Тестирование замена параметров шаблона  
  Теперь можно протестировать замена параметров шаблона.  
   
 ### <a name="to-test-the-template-parameter-substitution"></a>Для тестирования замена параметров шаблона  
   
-1.  Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.  
+1. Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.  
   
-2.  Выполнение остановится в точке останова в `AddFileFromTemplate` метод.  
+2. Выполнение остановится в точке останова в `AddFileFromTemplate` метод.  
   
-3.  Проверить значения для `nameSpace` и `className` параметров.  
+3. Проверить значения для `nameSpace` и `className` параметров.  
   
-    -   `nameSpace` Получает значение \<RootNamespace > элемент в *\Templates\Projects\SimpleProject\SimpleProject.myproj* файл шаблона проекта. В этом случае используется значение `MyRootNamespace`.  
+   -   `nameSpace` Получает значение \<RootNamespace > элемент в *\Templates\Projects\SimpleProject\SimpleProject.myproj* файл шаблона проекта. В этом случае используется значение `MyRootNamespace`.  
   
-    -   `className` Получает значение имени класса источника файла без расширения имени файла. В этом случае первый файл копируются в папку назначения является *AssemblyInfo.cs*; таким образом, значение className `AssemblyInfo`.  
+   -   `className` Получает значение имени класса источника файла без расширения имени файла. В этом случае первый файл копируются в папку назначения является *AssemblyInfo.cs*; таким образом, значение className `AssemblyInfo`.  
   
-4.  Удалите точку останова и нажмите клавишу **F5** следует продолжить выполнение.  
+4. Удалите точку останова и нажмите клавишу **F5** следует продолжить выполнение.  
   
-     Visual Studio следует завершить создание проекта.  
+    Visual Studio следует завершить создание проекта.  
   
-5.  Откройте *Program.cs* в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.  
+5. Откройте *Program.cs* в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Linq;  
-    using System.Text;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using System.Linq;  
+   using System.Text;  
   
-    namespace MyRootNamespace  
-    {  
-        public class Program  
-        {  
-            static void Main(string[] args)  
-            {  
-                Console.WriteLine("Hello VSX!!!");  
-                Console.ReadKey();  
-            }  
-        }  
-    }  
-    ```  
+   namespace MyRootNamespace  
+   {  
+       public class Program  
+       {  
+           static void Main(string[] args)  
+           {  
+               Console.WriteLine("Hello VSX!!!");  
+               Console.ReadKey();  
+           }  
+       }  
+   }  
+   ```  
   
-     Обратите внимание, что пространство имен теперь `MyRootNamespace` и имя класса — теперь `Program`.  
+    Обратите внимание, что пространство имен теперь `MyRootNamespace` и имя класса — теперь `Program`.  
   
-6.  Начните отладку проекта. Новый проект должен компиляции, запуска и отображение «Hello VSX!!!» в окне консоли.  
+6. Начните отладку проекта. Новый проект должен компиляции, запуска и отображение «Hello VSX!!!» в окне консоли.  
   
-     ![Команда Simple Project](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Команда Simple Project](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
- Поздравляем! Реализации системы базового управляемого проекта.
+   Поздравляем! Реализации системы базового управляемого проекта.

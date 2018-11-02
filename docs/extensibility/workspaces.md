@@ -1,5 +1,5 @@
 ---
-title: Рабочие области в Visual Studio | Документы Microsoft
+title: Рабочие области в Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -12,58 +12,58 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0230201677fd2422817ca1fbeab6679a424e5c05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865834"
 ---
 # <a name="workspaces"></a>Рабочие области
 
-Рабочая область — представление какой-либо коллекции файлов в Visual Studio [открыть папку](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), и он представлен <xref:Microsoft.VisualStudio.Workspace.IWorkspace> типа. Сам по себе рабочей области не понимает содержимого или функции, относящиеся к файлам в папке. Вместо этого он предоставляет общий набор API-интерфейсов для функции и расширения для создания и использования данных, другие могут действовать. Производители состоят через [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) с помощью различных экспорт атрибутов.
+Рабочая область — представление любой сбор таких файлов в Visual Studio [открыть папку](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), и он представлен <xref:Microsoft.VisualStudio.Workspace.IWorkspace> типа. Сама по себе рабочей области не понимает содержимое или функции, относящиеся к файлам в папке. Вместо этого он предоставляет общий набор API-интерфейсы для функции и расширения для создания и использования данных, может действовать другим пользователям. Производители состоят через [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) с помощью различных экспорт атрибутов.
 
 ## <a name="workspace-providers-and-services"></a>Поставщики рабочей области и службы
 
-Поставщики рабочей области и службы предоставляют данные, а также функциональность для реагирования на содержимое рабочей области. Они могут предоставлять сведения о контекстно-зависимое файла, символы в исходных файлах или реализовать функции.
+Поставщики рабочей области и службы предоставляют данные и функции для реагирования на содержимое рабочей области. Они могут предоставлять сведения о контекстных файла, символы в исходных файлах, или создания функций.
 
-Использовать оба понятия [шаблон фабрики](https://en.wikipedia.org/wiki/Factory_method_pattern) и импортированные с помощью MEF по рабочей области. Все атрибуты экспорта, реализующие `IProviderMetadataBase` или `IWorkspaceServiceFactoryMetadata`, но есть конкретные типы, которые должна использовать расширения для экспортируемые типы.
+Использовать оба понятия [шаблон фабрики](https://en.wikipedia.org/wiki/Factory_method_pattern) и импортированные с помощью MEF рабочей областью. Все атрибуты экспорта, реализующие `IProviderMetadataBase` или `IWorkspaceServiceFactoryMetadata`, но существуют конкретные типы, которые следует использовать расширения для экспортируемые типы.
 
-Единственным отличием между поставщиками и службы является их связь в рабочую область. Рабочая область может иметь много поставщиков определенного типа, но только одна служба определенного типа создается в каждой рабочей области. Например рабочую область имеет многие поставщики сканера файла, но рабочей области имеется только одна служба индексирования каждой рабочей области.
+Отличие между поставщиками и служб заключается в их связь с рабочей областью. Рабочая область может иметь множество поставщиков определенного типа, но только одна служба определенного типа создается в каждой рабочей области. Например в рабочей области находятся многие поставщики сканера файлов, но рабочая область содержит только одна служба индексирования каждой рабочей области.
 
-Еще одно важное отличие — потребление данных от поставщиков и служб. Рабочая область — это точка входа для получения данных от поставщиков для несколько причин. Во-первых поставщики, обычно имеют некоторые небольшим набором данных, которые они создают. Данных может быть символов для исходного файла C# или построить файл контекстов для _CMakeLists.txt_ файла. Рабочей области будет соответствовать запросу потребителя к поставщикам, метаданные которого выравнивание с запросом. Во-вторых, некоторые сценарии позволяют многие поставщики принять участие в запрос, тогда как другие сценарии используют поставщик с высоким приоритетом.
+Еще одно важное отличие — потребление данных от поставщиков и служб. Рабочая область является точкой входа для получения данных от поставщиков по нескольким причинам. Во-первых поставщики обычно имеют некоторые узкий набор данных, которые они создают. Данные могут быть символы для C# исходный файл или создавать контексты файла для _CMakeLists.txt_ файла. Рабочая область будет соответствовать запросу получателя к поставщикам, метаданные которого выровнять с запросом. Во-вторых, разрешить некоторые сценарии для многих поставщиков принять участие в составлении запроса, тогда как другие сценарии использования поставщика с высоким приоритетом.
 
-Напротив расширения можно получить экземпляры и напрямую взаимодействовать с рабочей области службы. Методы расширения в `IWorkspace` доступны для служб, предоставляемых Visual Studio, например <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Расширение может предлагать для компонентов расширения или другие расширения, которые используют службы рабочей области. Пользователям рекомендуется применять <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> или метод расширения, указываемые на `IWorkspace` типа.
+Напротив расширения можно получить экземпляры и взаимодействуют непосредственно со службами в рабочей области. Методы расширения на `IWorkspace` доступны для служб, предоставляемых Visual Studio, такие как <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Расширение может предлагать службы рабочей области для компонентов в модуле или другие расширения для использования. Потребители должны использовать <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> или метод расширения на `IWorkspace` типа.
 
 >[!WARNING]
 > Не создавать службы, которые конфликтуют с Visual Studio. Это может привести к непредвиденных проблем.
 
-## <a name="disposal-on-workspace-closure"></a>Реализация на закрытия рабочей области
+## <a name="disposal-on-workspace-closure"></a>Располагаете на закрытия рабочей области
 
-Для закрытия рабочей области расширения может потребоваться dispose, но вызова асинхронного кода. <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Интерфейс доступен делает написание этот код просто.
+В закрытия рабочей области расширения может потребоваться dispose, но вызов асинхронного кода. <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Интерфейс доступен для облегчения написания этот код просто.
 
 ## <a name="related-types"></a>Связанные типы
 
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> является центральной для открытых рабочей области, например открытой папки.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> является центральной сущностью, для открытого рабочую область как в открытой папке.
 - <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> Создает поставщик каждой рабочей области при создании экземпляра.
 - <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> Создает службу каждой рабочей области при создании экземпляра.
-- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> должен быть реализован в поставщиков и службам, которые необходимы для выполнения асинхронного кода во время реализации.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> Предоставляет вспомогательные методы для доступа к хорошо известных служб или произвольные служб.
+- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> должен быть реализован на поставщики и службы, которые нужно выполнять асинхронный код во время реализации.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> Предоставляет вспомогательные методы для доступа к хорошо известные услуги, или произвольных служб.
 
 ## <a name="workspace-settings"></a>Параметры рабочей области
 
-Рабочие области имеют <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> с простой, но многосторонний контроль над рабочей области. Общие параметры в разделе [настройки построения и отладки задачи](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Рабочие области имеют <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> с простой, но эффективный контроль над рабочей области. Общий обзор параметров, см. в разделе [Настройка сборки и отладки задачи](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-Параметры для большинства `SettingsType` типы _.json_ файлы, такие как _VSWorkspaceSettings.json_ и _tasks.vs.json_.
+Параметры для большинства `SettingsType` типы являются _.json_ файлы, такие как _VSWorkspaceSettings.json_ и _tasks.vs.json_.
 
-Возможности настройки рабочей области основано на «областей», которые являются просто пути в рабочей области. Когда потребитель вызывает метод <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, объединяются все области, которые включают запрошенный путь и тип параметра. Приоритет статистической обработки области выглядит следующим образом:
+Мощь параметры рабочей области основано на «области», которые являются просто путей в рабочей области. Когда потребитель вызывает метод <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, суммируются все области действия, которые включают запрошенный путь и тип параметра. Приоритет статистической обработки область выглядит следующим образом:
 
-1. «Локальные параметры», которые обычно является корневой рабочей области `.vs` каталога.
-1. Запрошенный сам путь.
-1. Родительский каталог запрошенный путь.
-1. Все дополнительные родительских каталогах вплоть до корня рабочей области.
-1. «Глобальные параметры», которых находится в каталоге пользователя.
+1. «Локальные параметры», что обычно корневом каталоге рабочего пространства `.vs` каталога.
+1. Запрошенный путь самого.
+1. Родительский каталог создаваемого запрошенный путь.
+1. Все дополнительные родительские каталоги, включая корневой рабочей области.
+1. «Глобальные параметры», которые находится в каталоге пользователя.
 
-Результат представляет собой экземпляр <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Этот объект содержит параметры для определенного типа и могут запрашиваться для ключа имена параметров, сохраненные как `string`. <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Методы и <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> вызывающему объекту известен тип запрашиваемого значение параметра ожидается, что методы расширения. Как большинство файлов, параметры сохраняются в виде _.json_ файлы, будет использовать много вызовов `string`, `bool`, `int`и массивов этих типов. Также поддерживаются типы объектов. В таких случаях можно использовать `IWorkspaceSettings` себя в качестве аргумента типа. Пример:
+Результат — это экземпляр <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Этот объект содержит параметры для определенного типа и могут запрашиваться для ключа имена параметров, хранящихся как `string`. <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Методы и <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> методы расширения ожидают вызывающему объекту известен тип запрашиваемого значение параметра. Так как большинство файлов параметры сохраняются как _.json_ файлы, будет использовать много вызовов `string`, `bool`, `int`и массивы этих типов. Также поддерживаются типы объектов. В таких случаях можно использовать `IWorkspaceSettings` себя в качестве аргумента типа. Пример:
 
 ```json
 {
@@ -80,7 +80,7 @@ ms.locfileid: "31145975"
 }
 ```
 
-При условии, что эти параметры были в пользователя _VSWorkspaceSettings.json_, доступ к данным как:
+При условии, что эти параметры были в пользователя _VSWorkspaceSettings.json_, данные доступны в виде:
 
 ```csharp
 using System.Collections.Generic;
@@ -115,13 +115,13 @@ private static void ReadSettings(IWorkspace workspace)
 ```
 
 >[!NOTE]
->Эти параметры API-интерфейсы не связаны с API-интерфейса в `Microsoft.VisualStudio.Settings` пространства имен. Параметры рабочей области являются независимыми от узла и использовать параметры, относящиеся к рабочей области файлы или поставщиков динамических параметров.
+>Эти параметры API-интерфейсы не связаны с API, доступных в `Microsoft.VisualStudio.Settings` пространства имен. Параметры рабочей области не зависят от узла и использовать файлы параметров, относящихся к рабочей области или поставщиков динамических параметров.
 
 ### <a name="providing-dynamic-settings"></a>Предоставление динамических параметров
 
 Расширения могут предоставить <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Эти поставщики в памяти разрешить расширения для добавления параметров или переопределить другим пользователям.
 
-Экспорт `IWorkspaceSettingsProvider` отличается от других поставщиков рабочей области. Фабрика является не `IWorkspaceProviderFactory` и нет атрибутов специальных типов. Вместо этого следует реализовать <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> и использовать `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
+Экспорт `IWorkspaceSettingsProvider` отличается от других поставщиков рабочей области. Фабрика не `IWorkspaceProviderFactory` и нет специального атрибута типа. Вместо этого реализовать <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> и использовать `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
 
 ```csharp
 // Common workspace provider factory pattern
@@ -143,19 +143,19 @@ internal class MySettingsProviderFactory : IWorkspaceSettingsProviderFactory
 ```
 
 >[!TIP]
->При реализации методов, возвращающих `IWorkspaceSettingsSource` (такие как `IWorkspaceSettingsProvider.GetSingleSettings`), верните экземпляр `IWorkspaceSettings` вместо `IWorkspaceSettingsSource`. `IWorkspaceSettings` Дополнительные сведения, могут быть полезны при некоторых параметров агрегатов.
+>При реализации методов, возвращающих `IWorkspaceSettingsSource` (таких как `IWorkspaceSettingsProvider.GetSingleSettings`), возвращают экземпляр `IWorkspaceSettings` вместо `IWorkspaceSettingsSource`. `IWorkspaceSettings` предоставляет дополнительные сведения, которые могут быть полезны во время некоторые параметры агрегатов.
 
-### <a name="settings-related-apis"></a>Параметры, связанные с API-интерфейсы
+### <a name="settings-related-apis"></a>API, связанные с параметрами
 
 - <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> Считывает и объединяет параметры для рабочей области.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> Возвращает `IWorkspaceSettingsManager` для рабочей области.
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Возвращает параметры для данной области, агрегируются по всем областям поиска перекрывающихся.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> Получает `IWorkspaceSettingsManager` для рабочей области.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Возвращает параметры для данной области, совокупная для всех перекрывающихся областей.
 - <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> содержит параметры для определенной области.
 
-## <a name="workspace-suggested-practices"></a>Рабочая область Рекомендуемые методики
+## <a name="workspace-suggested-practices"></a>Рабочая область Предлагаемые рекомендации
 
-- Возвращает объекты из `IWorkspaceProviderFactory.CreateProvider` или аналогичный API, которые их `Workspace` контекст при создании. Интерфейсы поставщиков записываются ожидается, что этот объект сохраняется в момент создания.
-- Сохраните специфическим кэши или параметров в пути «Локальные параметры» рабочей области. Создать путь для файла с помощью `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` в Visual Studio 2017 г 15.6 или более поздней версии. Для версий до версии 15,6 используйте следующий фрагмент кода:
+- Возвращает объекты из `IWorkspaceProviderFactory.CreateProvider` или аналогичный API, которые их `Workspace` контекст при создании. Интерфейсы поставщиков записываются, ожидается, что этот объект сохраняется при создании.
+- Сохраните кэши определенной рабочей области или их параметры «Локальные параметры» путь к рабочей области. Создание пути для файлов с помощью `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` в Visual Studio 2017 версии 15.6 или более поздней версии. Для версий, предшествующих версии 15.6 используйте следующий фрагмент кода:
 
 ```csharp
 using System.IO;
@@ -169,9 +169,9 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 }
 ```
 
-## <a name="solution-events-and-package-auto-load"></a>Событий решения и автоматически загрузить пакет
+## <a name="solution-events-and-package-auto-load"></a>События решения и автоматически загрузить пакет
 
-Загрузить пакеты можно реализовать `IVsSolutionEvents7` и вызова `IVsSolution.AdviseSolutionEvents`. Он включает обработку событий на открытие и закрытие папки в Visual Studio.
+Можно реализовать загруженных пакетов `IVsSolutionEvents7` и вызвать `IVsSolution.AdviseSolutionEvents`. Она включает обработку событий на открытие и закрытие папки в Visual Studio.
 
 Контекст пользовательского интерфейса можно использовать для автоматической загрузки пакета. Значение — `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
@@ -179,9 +179,9 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage пакет не был правильно загружен
 
-Расширяемость рабочей области основан на сильно MEF, а ошибки композиции вызовет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio. Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки для типов, реализованных в расширении.
+Расширяемость рабочей области во многом на основе MEF, и ошибок композиции приведет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio. Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* [Контекстов файла](workspace-file-contexts.md) -поставщики контекста файла перевести аналитики кода для рабочих областей открыть папку. 
-* [Индексирование](workspace-indexing.md) -индексирования рабочей собирает и сохраняет сведения о рабочей области.
+* [Файл контексты](workspace-file-contexts.md) -поставщики контекста файлов перевести код аналитики для рабочих областей, открыть папку. 
+* [Индексирование](workspace-indexing.md) -индексирования рабочей области собирает и сохраняет сведения о рабочем пространстве.

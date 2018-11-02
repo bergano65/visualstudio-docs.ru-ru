@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; @&#39; | Документы Microsoft
+title: Ожидается &#39;@&#39; | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856851"
 ---
-# <a name="expected-3939"></a>Ожидается &#39; @&#39;
-Предпринята попытка создать переменную для использования с операторами условной компиляции с помощью `@set` инструкции, но не поместил символа «**@**"перед именем переменной.  
+# <a name="expected-3939"></a>Ожидается &#39;@&#39;
+Предпринята попытка создать переменную для использования с операторами условной компиляции с помощью `@set` инструкции, но не поместил знак "**@**" перед именем переменной.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавление символа «**@**"непосредственно перед именем переменной. Пример:  
+-   Добавьте знак "**@**" непосредственно перед именем переменной. Пример:  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
 ## <a name="see-also"></a>См. также  
- [@setИнструкции](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Инструкции](../../javascript/reference/at-set-statement-javascript.md)   
  [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)

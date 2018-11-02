@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862766"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и языковой службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ ms.locfileid: "49227010"
   
  Ниже приведены некоторые из основных видов расширения редактора.  
   
--   Поля и полосы прокрутки  
+- Поля и полосы прокрутки  
   
--   Теги  
+- Теги  
   
--   Элементы оформления  
+- Элементы оформления  
   
--   Параметры  
+- Параметры  
   
--   IntelliSense  
+- IntelliSense  
   
- Дополнительные сведения о точках расширения редактора, см. в разделе [языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md).  
+  Дополнительные сведения о точках расширения редактора, см. в разделе [языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Развертывание расширения редактора  
  В Visual Studio вы развернете расширения редактора, добавив файл метаданных с именем source.extension.vsixmanifest в решение, создавать решение и затем добавив копию двоичные файлы и манифест в папке, которая известна в Visual Studio. Файл манифеста определяет основные сведения о расширении (например, имя, автор, версию и тип содержимого). Дополнительные сведения о файле манифеста VSIX и развертывание расширения, см. в разделе [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

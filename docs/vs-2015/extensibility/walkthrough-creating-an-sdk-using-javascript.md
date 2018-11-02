@@ -13,23 +13,23 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2048d8acca517ce4e2c032df3dd61e1c26231a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9b495ed1bc5ada2adaa26e8382e23d9071eeab3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931276"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Пошаговое руководство. Создание пакета SDK с помощью JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве объясняется, как использовать JavaScript для создания простых математических расчетов SDK как Visual Studio Extension (VSIX).  Пошаговое руководство состоит из следующих частей:  
   
--   [Чтобы создать проект SimpleMathVSIX расширения SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [Чтобы создать проект SimpleMathVSIX расширения SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [Создание примера приложения, использующего пакет SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [Создание примера приложения, использующего пакет SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- Для JavaScript отсутствует тип проекта библиотеки классов. В этом пошаговом руководстве пример файла arithmetic.js создается непосредственно в проект VSIX. На практике, мы рекомендуем сначала создания и тестирования файлов JavaScript и CSS в качестве приложения Windows Store, например, с помощью **пустое приложение** шаблона — прежде чем поместить их в проект VSIX.  
+  Для JavaScript отсутствует тип проекта библиотеки классов. В этом пошаговом руководстве пример файла arithmetic.js создается непосредственно в проект VSIX. На практике, мы рекомендуем сначала создания и тестирования файлов JavaScript и CSS в качестве приложения Windows Store, например, с помощью **пустое приложение** шаблона — прежде чем поместить их в проект VSIX.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  

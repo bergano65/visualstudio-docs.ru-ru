@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911256"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Практическое: доступ к встроенной шрифты и цвета ccheme
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.
 
  Чтобы использовать встроенные шрифтов и цветов схемы, пакет VSPackage должен удовлетворять следующим требованиям:
 
--   Определите категорию для использования со службой шрифты и цвета по умолчанию.
+- Определите категорию для использования со службой шрифты и цвета по умолчанию.
 
--   Зарегистрируйте категории с сервером шрифты и цвета по умолчанию.
+- Зарегистрируйте категории с сервером шрифты и цвета по умолчанию.
 
--   Уведомления IDE, что с помощью отдельного окна использует встроенные отображаемые элементы и категории <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейсов.
+- Уведомления IDE, что с помощью отдельного окна использует встроенные отображаемые элементы и категории <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейсов.
 
- Интегрированная среда разработки использует полученный категории как дескриптор окна. Имя категории будет отображаться в **Показать параметры для:** раскрывающегося списка в **шрифты и цвета** страницу свойств.
+  Интегрированная среда разработки использует полученный категории как дескриптор окна. Имя категории будет отображаться в **Показать параметры для:** раскрывающегося списка в **шрифты и цвета** страницу свойств.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Для определения категории с помощью встроенных шрифты и цвета
 
@@ -58,7 +58,7 @@ ms.locfileid: "39500099"
 
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:
 
-    |name|Тип|Данные|Описание:|
+    |name|Тип|Данные|Описание|
     |----------|----------|----------|-----------------|
     |Категория|REG_SZ|Идентификатор GUID|Произвольный GUID, определяющий категорию, которая содержит акций шрифт и цветовую схему.|
     |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Этот GUID используется всех пакетов VSPackage, использующих настройки шрифта и цвета по умолчанию.|
@@ -67,15 +67,15 @@ ms.locfileid: "39500099"
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Для начала работы для системных шрифтов и цветов
 
-1.  Создайте экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс как часть реализации и инициализации окна.
+1. Создайте экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс как часть реализации и инициализации окна.
 
-2.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, чтобы получить экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейс, соответствующий текущему <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> экземпляра.
+2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, чтобы получить экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейс, соответствующий текущему <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> экземпляра.
 
-3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> дважды.
+3. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> дважды.
 
-    -   Вызывать один раз с `VSEDITPROPID_ViewGeneral_ColorCategory`как аргумент.
+   - Вызывать один раз с `VSEDITPROPID_ViewGeneral_ColorCategory`как аргумент.
 
-    -   Вызывать один раз с `VSEDITPROPID_ViewGeneral_FontCategory` как аргумент.
+   - Вызывать один раз с `VSEDITPROPID_ViewGeneral_FontCategory` как аргумент.
 
      Это задает и предоставляет службы шрифты и цвета по умолчанию как свойство окна.
 

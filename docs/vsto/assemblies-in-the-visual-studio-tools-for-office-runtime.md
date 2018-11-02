@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675423"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050213"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Сборки в Visual Studio Tools для Office runtime
   При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. В расширениях Office для .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]и [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]используются разные сборки. Дополнительные сведения о расширениях Office см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -59,7 +59,7 @@ ms.locfileid: "35675423"
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет ведущие элементы и элементы управления ведущего приложения для решений Word. Дополнительные сведения см. в разделе [автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет следующие типы:<br /><br /> - [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) класс, предоставляющий возможности привязки данных для элементов управления ведущего приложения в настройки уровня документа.<br />-Другие типы, которые являются частью Visual Studio Tools для Office инфраструктура среды выполнения и не предназначены для использования непосредственно из программного кода.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Предоставляет следующие типы:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Атрибут и <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> интерфейс, который можно использовать для кэширования объектов данных в настройке уровня документа. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).<br />-Исключения, создаваемые набором средств Visual Studio для Office runtime.<br />-Другие типы, которые являются частью Visual Studio Tools для Office инфраструктура среды выполнения и не предназначены для использования непосредственно из программного кода.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Предоставляет интерфейс <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, который можно реализовать для выполнения дополнительных действий установки в качестве итогового шага установщика ClickOnce для решения Office. Дополнительные сведения см. в разделе [развертыванием решения Office, расширенный](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Предоставляет интерфейс <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, который можно реализовать для выполнения дополнительных действий установки в качестве итогового шага установщика ClickOnce для решения Office. Дополнительные сведения см. в разделе [развертыванием решения Office, расширенный](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Предоставляет следующие типы:<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Класс, который можно использовать для программного присоединения сборок настройки к документам и доступа к кэшированным данным в документах. Дополнительные сведения см. в разделе [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Несколько классов, представляющих иерархию кэшированных данных в настройке уровня документа. Дополнительные сведения см. в разделе [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Предоставляет следующие типы:<br /><br /> – Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry и Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList классы, которые можно использовать для создания пользователя включения записи списка для предоставления доверия Office решений, предназначенных для .NET Framework 3.5.<br />-Другие типы, которые являются частью Visual Studio Tools для Office инфраструктура среды выполнения и не предназначены для использования непосредственно из программного кода.|  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119473"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219787"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
   Следующие проблемы или предупреждения могут возникнуть при отладке решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочего процесса SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -53,21 +53,21 @@ ms.locfileid: "37119473"
 ### <a name="resolution"></a>Решение  
  Для названий проектов SharePoint и элементов проектов используйте только следующие знаки:  
   
--   Буквенно-цифровые символы ASCII  
+- Буквенно-цифровые символы ASCII  
   
--   Пробел  
+- Пробел  
   
--   Точка (.)  
+- Точка (.)  
   
--   Запятая ()  
+- Запятая ()  
   
--   Символ подчеркивания (_)  
+- Символ подчеркивания (_)  
   
--   Тире (—)  
+- Тире (—)  
   
--   Обратная косая черта (\\)  
+- Обратная косая черта (\\)  
   
- Во время упаковки проекта правило проверки проверяет, что свойство "Путь развертывания" каждого разворачиваемого файла содержит только допустимые знаки.  
+  Во время упаковки проекта правило проверки проверяет, что свойство "Путь развертывания" каждого разворачиваемого файла содержит только допустимые знаки.  
   
 ## <a name="errors-when-creating-custom-fields"></a>Ошибки при создании настраиваемых полей
  Настраиваемые поля в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] определяются в XML. Может возникнуть ошибка, если поле не определено или на него не существует ссылка в определенном формате.  
@@ -136,7 +136,7 @@ ms.locfileid: "37119473"
   
 -   Установите [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Убедитесь, что имеется доступ с правами администратора на сайте SharePoint. Дополнительные сведения см. в разделе [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] онлайн-статья [назначать или удалять администраторов службы приложений в SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Убедитесь, что имеется доступ с правами администратора на сайте SharePoint. Дополнительные сведения см. в разделе [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] онлайн-статья [назначать или удалять администраторов службы приложений в SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Веб-событие удаления сайта отсутствует в проекте приемника событий
  При создании проекта приемника событий и выборе некоторых событий, такие как «удаляется сайт», событие не происходит.  
@@ -147,15 +147,15 @@ ms.locfileid: "37119473"
 ### <a name="resolution"></a>Решение  
  Эта проблема возникает, так как область компонента должен быть «Сайт» для обработки событий уровня веб-сайта, а область компонента по умолчанию для проекта приемника событий является «Web». Веб событиям относятся:  
   
--   Сайт удален (WebDeleting)  
+- Сайт удален (WebDeleting)  
   
--   Удален сайт (WebDeleted)  
+- Удален сайт (WebDeleted)  
   
--   Сайт перемещен (WebMoving)  
+- Сайт перемещен (WebMoving)  
   
--   Перемещен сайт (WebMoved)  
+- Перемещен сайт (WebMoved)  
   
- Чтобы исправить эту проблему, измените область компонента приемника событий, следующим образом.  
+  Чтобы исправить эту проблему, измените область компонента приемника событий, следующим образом.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Чтобы изменить область компонента приемника событий  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37119473"
  Эта проблема возникает при переименовании импортированный экземпляр списка и запустите его в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Сообщение об ошибке
- Ошибка сборки: произошла ошибка в шаге развертывания «Активация компонентов»: файл Template\Features\\[*Импорт проекта**функция**имя*] \Files\Lists\\[*старый ** имя списка*] \Schema.xml не существует.  
+ Ошибка сборки: произошла ошибка в шаге развертывания «Активация компонентов»: файл Template\Features\\[*Импорт проекта*<em>функция</em>*имя*] \Files\Lists \\[*старый*<em>имя списка</em>] \Schema.xml не существует.  
   
 ### <a name="resolution"></a>Решение  
  При импорте экземпляр списка, атрибут с именем CustomSchema добавляется в файл Elements.xml экземпляра списка. Elements.XML включает путь к пользовательских schema.xml экземпляра списка. При переименовании экземпляра списка в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], изменяет путь развертывания пользовательского файла Schema.XML, но значение пути атрибута CustomSchema не обновляется. Таким образом, не удается найти экземпляр списка *schema.xml* файла в пути, который указан в атрибуте CustomSchema при активации функции.  

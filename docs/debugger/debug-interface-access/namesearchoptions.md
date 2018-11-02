@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Документы Microsoft
+title: NameSearchOptions | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95d5ed2e91b847b99d063b6fcba485fb96c3290
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c4b8771ad1bf2ee97ec1f22636a4684bc9aa7ee8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950346"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Задает параметры поиска для символов и имена файлов.  
+Указывает параметры поиска для символов и имена файлов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,13 +52,13 @@ enum NameSearchOptions {
  Применяет совпадения имени, с учетом регистра.  
   
  `nsfCaseInsensitive`  
- Применяет совпадения имени, без учета регистра.  
+ Применяет совпадение имя без учета регистра.  
   
  `nsfFNameExt`  
- Считает имена путей и применяет имяфайла.расширение совпадения имени.  
+ Обрабатывает имена как пути и применяет имяфайла.расширение совпадения имени.  
   
  `nsfRegularExpression`  
- Применяет соответствия имя с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.  
+ Применяется на совпадение имени с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.  
   
  `nsfUndecoratedName`  
  Применяется только к символам, которые внешних и внутренних имен.  

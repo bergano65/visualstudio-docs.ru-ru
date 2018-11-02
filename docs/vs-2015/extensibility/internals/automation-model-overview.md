@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815927"
 ---
 # <a name="automation-model-overview"></a>Общие сведения о модели автоматизации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "49235694"
   
  Места, где можно рассмотреть расширение модели автоматизации среды:  
   
--   Проект  
+- Проект  
   
--   Document  
+- Document  
   
--   Код  
+- Код  
   
--   Построить  
+- Построить  
   
- Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширение среды для Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). В этом документе и документы также предоставляет ссылки на, помогают принимать решения о том, как следует предоставить автоматизации для VSPackage.  
+  Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширение среды для Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). В этом документе и документы также предоставляет ссылки на, помогают принимать решения о том, как следует предоставить автоматизации для VSPackage.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое: создание надстройки](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

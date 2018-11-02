@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Skip | Документы Microsoft
+title: IEnumDebugModules2::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e88a521db0d0548b1ca176654e64ce190830a69a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6680284d77b8d7e50a297cfe438a1b5572268fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901688"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
-Пропускает указанное число элементов.  
+Пропускает заданное число элементов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int Skip(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Число пропускаемых элементов.  
+ [in] Количество пропускаемых элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем количество оставшихся элементов; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Если `celt` указывает значение, большее число оставшихся элементов перечисления имеет значение до конца и `S_FALSE` возвращается.  
+ Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

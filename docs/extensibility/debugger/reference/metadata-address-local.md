@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Документы Microsoft
+title: METADATA_ADDRESS_LOCAL | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720f150be1b7cf992f0949750dd52218939c7d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca9a6b1fac3627020363c92db8a2f05e5b5900ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846607"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
-Эта структура представляет собой адрес локальной переменной в области (обычно функция или метод).  
+Эта структура представляет собой адрес локальной переменной в области (обычно функцию или метод).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,15 +50,15 @@ public struct METADATA_ADDRESS_LOCAL {
  [C++] `_mdToken` — `typedef` для 32-разрядных `int`.  
   
  pLocal  
- Токен, эта структура представляет адрес.  
+ Токен, адрес которого эта структура представляет.  
   
  dwIndex  
- Может быть индекс данной локальной переменной в метод или функция или любое другое значение (зависящие от языка).  
+ Может быть индекс данной локальной переменной в методе или функции или любое другое значение (зависящие от языка).  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры при `dwKind` поле `DEBUG_ADDRESS_UNION` структуры задано значение `ADDRESS_KIND_LOCAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+ Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_LOCAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
   
- `Warning:` [C++]  Если `pLocal` не равно null, то необходимо вызвать `Release` маркеров указателя (`addr` — это поле в [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры):  
+ `Warning:` [C++]  Если `pLocal` не равно null, то нужно вызвать `Release` маркеров указателя (`addr` — это поле в [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,7 +75,7 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

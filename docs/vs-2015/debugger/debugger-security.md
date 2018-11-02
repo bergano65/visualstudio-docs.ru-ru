@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881967"
 ---
 # <a name="debugger-security"></a>Безопасность отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49290502"
 ### <a name="managed-debugging-security"></a>Безопасность при отладке управляемого кода  
  Вот некоторые общие рекомендации, применимые к отладке любого управляемого кода.  
   
--   Будьте бдительны, присоединяясь к пользовательскому процессу, не заслуживающему доверия: присоединение означает, что вы ему доверяете. При попытке присоединения к такому процессу появится диалоговое окно предупреждения безопасности с запросом о том, действительно ли вы хотите его присоединить. К числу "доверенных пользователей" относится ваша учетная запись, а также ряд стандартных учетных записей пользователей, которые обычно определены на компьютерах с установленной платформой .NET Framework, например **aspnet**, **localsystem**, **networkservice**и **localservice**. Дополнительные сведения см. в разделе [предупреждение системы безопасности: присоединение к процессу, принадлежит недоверенному пользователю не может быть опасно. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Будьте бдительны, присоединяясь к пользовательскому процессу, не заслуживающему доверия: присоединение означает, что вы ему доверяете. При попытке присоединения к такому процессу появится диалоговое окно предупреждения безопасности с запросом о том, действительно ли вы хотите его присоединить. К числу "доверенных пользователей" относится ваша учетная запись, а также ряд стандартных учетных записей пользователей, которые обычно определены на компьютерах с установленной платформой .NET Framework, например **aspnet**, **localsystem**, **networkservice**и **localservice**. Дополнительные сведения см. в разделе [предупреждение системы безопасности: присоединение к процессу, принадлежит недоверенному пользователю не может быть опасно. Если вы не уверены, ниже сведения, не присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
--   Будьте внимательны при загрузке проектов из Интернета и их открытии в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это рискованно даже без всякой отладки. Этим вы предполагаете, что проект и содержащийся в нем код заслуживают доверия.  
+- Будьте внимательны при загрузке проектов из Интернета и их открытии в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Это рискованно даже без всякой отладки. Этим вы предполагаете, что проект и содержащийся в нем код заслуживают доверия.  
   
- Для получения дополнительной информации см. [Debugging Managed Code](../debugger/debugging-managed-code.md).  
+  Для получения дополнительной информации см. [Debugging Managed Code](../debugger/debugging-managed-code.md).  
   
 ### <a name="remote-debugging-security"></a>Безопасность при удаленной отладке  
  Локальная отладка обычно более безопасна, чем удаленная. Удаленная отладка увеличивает общую контактную зону, безопасность которой в общем случае гарантировать нельзя.  
@@ -79,11 +79,11 @@ ms.locfileid: "49290502"
 ### <a name="symbols-and-source-code"></a>Символы и исходный код  
  Два средства [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], для которых необходим анализ безопасности:  
   
--   Сервер исходного кода, который предоставляет версии исходного кода из репозитория исходного кода. Он полезен, если у вас нет текущей версии исходного кода программы. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Сервер исходного кода, который предоставляет версии исходного кода из репозитория исходного кода. Он полезен, если у вас нет текущей версии исходного кода программы. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   Сервер символов, который служит для передачи символов, необходимых при отладке после сбоя системного вызова.  
+- Сервер символов, который служит для передачи символов, необходимых при отладке после сбоя системного вызова.  
   
- См. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  См. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>См. также  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   

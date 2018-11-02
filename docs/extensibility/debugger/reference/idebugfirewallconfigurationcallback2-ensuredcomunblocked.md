@@ -1,5 +1,5 @@
 ---
-title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Документы Microsoft
+title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6b7ef2faef836e87b47247a5bf18ddec7b9dd11
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99de75e31ea5caeb02e2095b17b7b48a9a4b3f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821036"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 Запросы, что брандмауэр не блокирует удаленную отладку.  
@@ -37,7 +37,7 @@ public int EnsureDCOMUnblocked();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)

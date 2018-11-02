@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bca40a093f228f22919b7734e387a4bc191316c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ed306b6665919101c682f2f541f5b5ef693d2b58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909839"
 ---
 # <a name="compensate-activity-designer"></a>Конструктор действия Compensate
 
@@ -40,7 +40,7 @@ ms.locfileid: "36756374"
 В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойство можно изменить в таблице свойств, а также на поверхности конструктора рабочих процессов. Изменить <xref:System.Activities.Statements.Compensate.Target%2A> свойства в сетке свойств.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.Compensate>. Значение по умолчанию - Compensate.|
 |<xref:System.Activities.Statements.Compensate.Target%2A>|True|Указывает <xref:System.Activities.InArgument%601>, в котором содержится <xref:System.Activities.Statements.CompensationToken> для данного действия <xref:System.Activities.Statements.Compensate>.|
 
@@ -49,5 +49,5 @@ ms.locfileid: "36756374"
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Конструктор действия Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Подтверждение](../workflow-designer/confirm-activity-designer.md)
-- [Класс TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

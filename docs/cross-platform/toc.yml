@@ -1,23 +1,9 @@
 items:
 - name: Кроссплатформенная разработка для мобильных устройств в Visual Studio
   href: cross-platform-mobile-development-in-visual-studio.md
-- name: Visual Studio и Xamarin
-  href: visual-studio-and-xamarin.md
-  items:
-  - name: Настройка и установка
-    href: setup-and-install.md
-  - name: Подробности о разработке мобильных приложений с использованием Xamarin
-    href: learn-about-mobile-development-with-xamarin.md
-  - name: Проверка окружения Xamarin
-    href: verify-your-xamarin-environment.md
-  - name: Основы создания приложений с помощью Xamarin.Forms в Visual Studio
-    href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
-  - name: Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
-    href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
-  - name: DevOps с приложениями Xamarin
-    href: application-lifecycle-management-alm-with-xamarin-apps.md
-  - name: Программа установки, установка и проверки для пользователей Mac
-    href: setup-install-and-verifications-for-mac-users.md
+- name: Инструменты Visual Studio для Xamarin
+  displayName: .NET Mobile Developer Tools (Android & iOS)
+  href: /xamarin/
 - name: Средства Visual Studio для Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Набор средств Visual Studio для Unity
@@ -88,9 +74,9 @@ items:
     href: system-requirements-for-the-visual-studio-emulator-for-android.md
   - name: Устранение неполадок с эмулятором Android для Visual Studio
     href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: d0c4b3ba48784ec7b168a167373816c652a5f11b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224979"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991527"

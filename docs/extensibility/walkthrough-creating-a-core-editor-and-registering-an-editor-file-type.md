@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921461"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство: Создание базового редактора и регистрации файла тип редактора
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора при создании файла с *.myext* загружается расширение имени файла.  
@@ -37,97 +37,97 @@ ms.locfileid: "46495249"
   
 ### <a name="to-create-the-vspackage"></a>Чтобы создать VSPackage  
   
--   Запуск [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и создайте [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: создание команды меню VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Запуск [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и создайте [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: создание команды меню VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Чтобы добавить фабрики редактора  
   
-1.  Щелкните правой кнопкой мыши **MyPackage** проект, выберите пункт **добавить**, а затем нажмите кнопку **класс**.  
+1. Щелкните правой кнопкой мыши **MyPackage** проект, выберите пункт **добавить**, а затем нажмите кнопку **класс**.  
   
-2.  В **Добавление нового элемента** диалогового окна поле, убедитесь, что **класс** выбран шаблон, тип `EditorFactory.cs` имя, а затем нажмите кнопку **добавить** Добавление класса в проект.  
+2. В **Добавление нового элемента** диалогового окна поле, убедитесь, что **класс** выбран шаблон, тип `EditorFactory.cs` имя, а затем нажмите кнопку **добавить** Добавление класса в проект.  
   
-     *EditorFactory.cs* должно автоматически открыть файл.  
+    *EditorFactory.cs* должно автоматически открыть файл.  
   
-3.  Ссылки на следующие сборки из кода.  
+3. Ссылки на следующие сборки из кода.  
   
-    ```vb  
-    Imports System.Runtime.InteropServices  
-    Imports Microsoft.VisualStudio  
-    Imports Microsoft.VisualStudio.Shell  
-    Imports Microsoft.VisualStudio.Shell.Interop  
-    Imports Microsoft.VisualStudio.OLE.Interop  
-    Imports Microsoft.VisualStudio.TextManager.Interop  
-    Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
-    ```  
+   ```vb  
+   Imports System.Runtime.InteropServices  
+   Imports Microsoft.VisualStudio  
+   Imports Microsoft.VisualStudio.Shell  
+   Imports Microsoft.VisualStudio.Shell.Interop  
+   Imports Microsoft.VisualStudio.OLE.Interop  
+   Imports Microsoft.VisualStudio.TextManager.Interop  
+   Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
+   ```  
   
-    ```csharp  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Shell;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio.OLE.Interop;  
-    using Microsoft.VisualStudio.TextManager.Interop;  
-    using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
+   ```csharp  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Shell;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio.OLE.Interop;  
+   using Microsoft.VisualStudio.TextManager.Interop;  
+   using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
   
-    ```  
+   ```  
   
-4.  Добавьте идентификатор GUID, `EditorFactory` класса путем добавления `Guid` атрибут непосредственно перед объявлением класса.  
+4. Добавьте идентификатор GUID, `EditorFactory` класса путем добавления `Guid` атрибут непосредственно перед объявлением класса.  
   
-     Новый идентификатор GUID можно создать с помощью *guidgen.exe* программирования на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или командной строке, щелкнув **создать GUID** на **средства** меню. GUID, используемый здесь указано только для примера; не используйте его в проект.  
+    Новый идентификатор GUID можно создать с помощью *guidgen.exe* программирования на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или командной строке, щелкнув **создать GUID** на **средства** меню. GUID, используемый здесь указано только для примера; не используйте его в проект.  
   
-    ```vb  
-    <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
-    ```  
+   ```vb  
+   <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
+   ```  
   
-    ```csharp  
-    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
-    ```  
+   ```csharp  
+   [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
+   ```  
   
-5.  В определении класса добавьте две закрытых переменных родительского пакета и поставщика услуг.  
+5. В определении класса добавьте две закрытых переменных родительского пакета и поставщика услуг.  
   
-    ```vb  
-    Class EditorFactory  
-        Private parentPackage As Package  
-        Private serviceProvider As IOleServiceProvider  
-    ```  
+   ```vb  
+   Class EditorFactory  
+       Private parentPackage As Package  
+       Private serviceProvider As IOleServiceProvider  
+   ```  
   
-    ```csharp  
-    class EditorFactory  
-    {  
-        private Package parentPackage;  
-        private IOleServiceProvider serviceProvider;  
-    }  
+   ```csharp  
+   class EditorFactory  
+   {  
+       private Package parentPackage;  
+       private IOleServiceProvider serviceProvider;  
+   }  
   
-    ```  
+   ```  
   
-6.  Добавьте конструктор открытый класс, который принимает один параметр типа <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Добавьте конструктор открытый класс, который принимает один параметр типа <xref:Microsoft.VisualStudio.Shell.Package>:  
   
-    ```vb  
-    Public Sub New(ByVal parentPackage As Package)  
-        Me.parentPackage = parentPackage  
-    End Sub  
-    ```  
+   ```vb  
+   Public Sub New(ByVal parentPackage As Package)  
+       Me.parentPackage = parentPackage  
+   End Sub  
+   ```  
   
-    ```csharp  
-    public EditorFactory(Package parentPackage)  
-    {  
-        this.parentPackage = parentPackage;  
-    }  
-    ```  
+   ```csharp  
+   public EditorFactory(Package parentPackage)  
+   {  
+       this.parentPackage = parentPackage;  
+   }  
+   ```  
   
-7.  Изменить `EditorFactory` объявление для наследования от класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
+7. Изменить `EditorFactory` объявление для наследования от класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
   
-    ```vb  
-    Class EditorFactory Implements IVsEditorFacto  
-    ```  
+   ```vb  
+   Class EditorFactory Implements IVsEditorFacto  
+   ```  
   
-    ```csharp  
-    class EditorFactory : IVsEditorFactory  
+   ```csharp  
+   class EditorFactory : IVsEditorFactory  
   
-    ```  
+   ```  
   
-8.  Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, нажмите кнопку **реализовать интерфейс**, а затем нажмите кнопку **реализовать интерфейс явно**.  
+8. Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, нажмите кнопку **реализовать интерфейс**, а затем нажмите кнопку **реализовать интерфейс явно**.  
   
-     На этом шаге добавляется четыре метода, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
+    На этом шаге добавляется четыре метода, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
   
 9. Замените содержимое метода `IVsEditorFactory.Close` следующим кодом.  
   
@@ -321,63 +321,63 @@ ms.locfileid: "46495249"
   
 ### <a name="to-register-the-editor-factory"></a>Регистрация фабрики редактора  
   
-1.  В **обозревателе решений**, дважды щелкните **Resources.resx** файл, чтобы открыть его в таблице строк, в котором операция **строка1** выбранного.  
+1. В **обозревателе решений**, дважды щелкните **Resources.resx** файл, чтобы открыть его в таблице строк, в котором операция **строка1** выбранного.  
   
-2.  Измените имя идентификатора, `IDS_EDITORNAME` и текст, который **MyPackage редактора.** Эта строка отображается как имя редактора.  
+2. Измените имя идентификатора, `IDS_EDITORNAME` и текст, который **MyPackage редактора.** Эта строка отображается как имя редактора.  
   
-3.  Откройте **VSPackage.resx** файл, добавьте новую строку, задайте имя **101**и задайте значение `IDS_EDITORNAME`. Этот шаг предоставляет пакет с Идентификатором ресурса для доступа к строке, которую вы создали.  
+3. Откройте **VSPackage.resx** файл, добавьте новую строку, задайте имя **101**и задайте значение `IDS_EDITORNAME`. Этот шаг предоставляет пакет с Идентификатором ресурса для доступа к строке, которую вы создали.  
   
-    > [!NOTE]
-    >  Если **VSPackage.resx** файл содержит другой строкой, которую `name` атрибут **101**, заменить другой уникальное числовое значение, здесь и далее.  
+   > [!NOTE]
+   >  Если **VSPackage.resx** файл содержит другой строкой, которую `name` атрибут **101**, заменить другой уникальное числовое значение, здесь и далее.  
   
-4.  В **обозревателе решений**откройте **MyPackagePackage.cs** файла.  
+4. В **обозревателе решений**откройте **MyPackagePackage.cs** файла.  
   
-     Этот файл является файлом главного пакета.  
+    Этот файл является файлом главного пакета.  
   
-5.  Добавьте следующие атрибуты пользователя непосредственно перед `Guid` атрибута.  
+5. Добавьте следующие атрибуты пользователя непосредственно перед `Guid` атрибута.  
   
-    ```vb  
-    <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
-    <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
-          ".myext", 32, NameResourceID:=101 )> _  
-    ```  
+   ```vb  
+   <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
+   <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
+         ".myext", 32, NameResourceID:=101 )> _  
+   ```  
   
-    ```csharp  
-    [ProvideEditorFactory(typeof(EditorFactory), 101)]  
-    [ProvideEditorExtension(typeof(EditorFactory),   
-          ".myext", 32, NameResourceID = 101)]   
-    ```  
+   ```csharp  
+   [ProvideEditorFactory(typeof(EditorFactory), 101)]  
+   [ProvideEditorExtension(typeof(EditorFactory),   
+         ".myext", 32, NameResourceID = 101)]   
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Атрибута связывает *.myext* расширением с вашей фабрикой редактора, чтобы в любое время в файл с расширение загружается, вызывается фабрикой редактора.  
+    <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Атрибута связывает *.myext* расширением с вашей фабрикой редактора, чтобы в любое время в файл с расширение загружается, вызывается фабрикой редактора.  
   
-6.  Добавьте частную переменную для `MyPackage` класса просто перед конструктором и присвойте ей тип `EditorFactory`.  
+6. Добавьте частную переменную для `MyPackage` класса просто перед конструктором и присвойте ей тип `EditorFactory`.  
   
-    ```vb  
-    Private editorFactory As EditorFactory  
-    ```  
+   ```vb  
+   Private editorFactory As EditorFactory  
+   ```  
   
-    ```csharp  
-    private EditorFactory editorFactory;  
-    ```  
+   ```csharp  
+   private EditorFactory editorFactory;  
+   ```  
   
-7.  Найти `Initialize` метод (возможно открыть `Package Members` скрытой области) и добавьте следующий код после вызова `base.Initialize()`.  
+7. Найти `Initialize` метод (возможно открыть `Package Members` скрытой области) и добавьте следующий код после вызова `base.Initialize()`.  
   
-    ```vb  
-    'Create our editor factory and register it.   
-    Me.editorFactory = New EditorFactory(Me)  
-    MyBase.RegisterEditorFactory(Me.editorFactory)  
-    ```  
+   ```vb  
+   'Create our editor factory and register it.   
+   Me.editorFactory = New EditorFactory(Me)  
+   MyBase.RegisterEditorFactory(Me.editorFactory)  
+   ```  
   
-    ```csharp  
-    // Create our editor factory and register it.  
-    this.editorFactory = new EditorFactory(this);  
-    base.RegisterEditorFactory(this.editorFactory);  
+   ```csharp  
+   // Create our editor factory and register it.  
+   this.editorFactory = new EditorFactory(this);  
+   base.RegisterEditorFactory(this.editorFactory);  
   
-    ```  
+   ```  
   
-8.  Скомпилируйте программу и убедитесь в отсутствии ошибок.  
+8. Скомпилируйте программу и убедитесь в отсутствии ошибок.  
   
-     Этот шаг регистрирует фабрику редактора в экспериментальном кусте реестра для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При появлении в Переопределите *resource.h* щелкните **ОК**.  
+    Этот шаг регистрирует фабрику редактора в экспериментальном кусте реестра для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При появлении в Переопределите *resource.h* щелкните **ОК**.  
   
 9. Создание образца файла с именем *TextFile1.myext*.  
   

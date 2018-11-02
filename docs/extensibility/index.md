@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+title: Расширяемость Visual Studio
+description: Сведения о расширяемости Visual Studio.
+author: gregvanl
+ms.author: gregvanl
+ms.date: 10/31/2018
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Документация по расширению среды Visual Studio | Документация Майкрософт
-description: Сведения о расширяемости Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500301"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750749"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Документация по расширению среды Visual Studio
 
@@ -49,7 +50,7 @@ ms.locfileid: "39500301"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Расширяемость платформы компилятора .NET (Roslyn)</h3>
+                        <h3>Расширяемость платформы компилятора .NET (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>

@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06016472ee627134fb5eb328cf82d0c3de1b5365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e01ab9de41bd8ead1348eb58308008e55e6323e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891978"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_isDataAligned(
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Как правило, это свойство имеет значение, когда исполняемый файл компилируется с выравниванием данных не по умолчанию. Например, компилятор Microsoft C++ можно изменить выравнивание данных с параметром командной строки/Zp*#*, где *#* является байтовым значением.  
+ Как правило, это свойство имеет значение, когда исполняемый файл компилируется с выравниванием данных не по умолчанию. Например, компилятор Microsoft C++ можно изменить выравнивание данных с параметром командной строки/Zp<em>#</em>, где *#* является байтовым значением.  
   
 ## <a name="requirements"></a>Требования  
   

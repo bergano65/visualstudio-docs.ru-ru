@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903560"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -137,7 +137,7 @@ ms.locfileid: "46495639"
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ ms.locfileid: "46495639"
 Элемент **RunConfiguration** может содержать следующие элементы:
 
 |Узел|По умолчанию|Значения|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Каталог для сохранения результатов тестов.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ public void HomePageTest()
 Эти параметры относятся к адаптеру тестов, выполняющему методы теста, которые имеют атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
 |Конфигурация|Значение по умолчанию|Значения|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
 |**IgnoreTestImpact**|False|Функция влияния на тесты определяет приоритет тестов, на которые повлияли последние изменения, при выполнении в MSTest или из Microsoft Test Manager. Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Здесь можно задать файл параметров тестирования для использования с адаптером MSTest. Файл параметров тестирования можно также задать с помощью меню **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**.<br /><br />Если задано это значение, необходимо также задать для параметра **ForcedlegacyMode** значение **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

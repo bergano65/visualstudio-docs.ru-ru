@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867082"
 ---
 # <a name="extending-javascript-intellisense"></a>Расширение IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  В коде расширения, можно создать обработчики для следующих типов событий с помощью `addEventListener`:  
   
--   `statementcompletion`, который добавляет обработчик для события завершения инструкции. Завершение операторов предоставляет список элементов для определенного типа, которое появляется после ввода специальный символ, такие как точка (.), или список идентификаторов, отображаемый при вводе или при нажатии клавиши CTRL + J. Обработчик получает объект события типа `CompletionEvent`, который поддерживает следующие члены: [элементы свойства](#Items), [целевое свойство](#Target), [targetName свойство](#TargetName), и [свойства области](#Scope).  
+- `statementcompletion`, который добавляет обработчик для события завершения инструкции. Завершение операторов предоставляет список элементов для определенного типа, которое появляется после ввода специальный символ, такие как точка (.), или список идентификаторов, отображаемый при вводе или при нажатии клавиши CTRL + J. Обработчик получает объект события типа `CompletionEvent`, который поддерживает следующие члены: [элементы свойства](#Items), [целевое свойство](#Target), [targetName свойство](#TargetName), и [свойства области](#Scope).  
   
--   `signaturehelp`, который добавляет обработчик для сведения о параметрах IntelliSense. Сведения о параметрах дает информацию о количестве, именах и типы параметров, необходимых для функции. Обработчик получает объект события типа `SignatureHelpEvent`, который поддерживает следующие члены: [целевое свойство](#Target), [parentObject свойство](#ParentObject), [functionComments свойство](#FunctionComments), [functionHelp свойство](#FunctionHelp).  
+- `signaturehelp`, который добавляет обработчик для сведения о параметрах IntelliSense. Сведения о параметрах дает информацию о количестве, именах и типы параметров, необходимых для функции. Обработчик получает объект события типа `SignatureHelpEvent`, который поддерживает следующие члены: [целевое свойство](#Target), [parentObject свойство](#ParentObject), [functionComments свойство](#FunctionComments), [functionHelp свойство](#FunctionHelp).  
   
--   `statementcompletionhint`, который добавляет обработчик для кратких сведений IntelliSense. Всплывающее окно краткие сведения показано полное объявление идентификаторы в коде. Обработчик получает объект события типа `CompletionHintEvent`, который поддерживает следующие члены: [completionItem свойство](#CompletionItem), и [symbolHelp свойство](#SymbolHelp).  
+- `statementcompletionhint`, который добавляет обработчик для кратких сведений IntelliSense. Всплывающее окно краткие сведения показано полное объявление идентификаторы в коде. Обработчик получает объект события типа `CompletionHintEvent`, который поддерживает следующие члены: [completionItem свойство](#CompletionItem), и [symbolHelp свойство](#SymbolHelp).  
   
- Примеры, демонстрирующие возможности IntelliSense, такие как завершение операторов, сведения о параметрах и краткие сведения, см. в разделе [использование технологии IntelliSense](../ide/using-intellisense.md).  
+  Примеры, демонстрирующие возможности IntelliSense, такие как завершение операторов, сведения о параметрах и краткие сведения, см. в разделе [использование технологии IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  В JavaScript кратких сведений относится всплывающее окно, которое появляется справа от списка завершения. Не удается вызвать краткие сведения вручную.  

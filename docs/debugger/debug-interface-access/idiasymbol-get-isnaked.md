@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isNaked | Документы Microsoft
+title: IDiaSymbol::get_isNaked | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6004652b9f47f39b8b083b4047b91613ec63bb03
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32280a8b4baaf82867065898b5478c11842a33df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915078"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
-Возвращает флаг, который указывает, имеет ли функция [naked](/cpp/cpp/naked-cpp) атрибутом (то есть функция имеет без кода пролога и эпилога, компилятор добавляет).  
+Получает флаг, указывающий, имеет ли функция [с атрибутом naked](/cpp/cpp/naked-cpp) атрибут (то есть функция имеет без кода пролога и эпилога, компилятор добавляет).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_isNaked(
  [out] Возвращает `TRUE` Если функция имеет `naked` атрибут; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   

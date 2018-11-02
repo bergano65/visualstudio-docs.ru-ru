@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Документы Microsoft
+title: IDebugBinder3::GetMemoryContext64 | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec9be314597f2f4fd7fa067db17028c1d8aee72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccfb34e03259e67eaca17e2cee7c824e62ce0393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925914"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Преобразует расположение объекта или адресе памяти 64-разрядных контекст памяти.  
+Преобразует адрес объекта или адрес памяти 64-разрядной памяти контекста.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
   
 #### <a name="parameters"></a>Параметры  
  `pField`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо него.  
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.  
   
  `uConstant`  
  [in] Адрес памяти 64-разрядной, например 0x50000000.  
   
  `ppMemCxt`  
- [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, представляющий адрес объекта, или адрес в памяти.  
+ [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- Следующие примеры создает объект, реализующий интерфейс [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) интерфейсов и получить контекст памяти с помощью этого метода.  
+ Следующие примеры создает объект, реализующий [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) интерфейс и использует этот метод для получения контекста памяти.  
   
 ```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  

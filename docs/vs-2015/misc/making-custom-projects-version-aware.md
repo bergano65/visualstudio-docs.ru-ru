@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833009"
 ---
 # <a name="making-custom-projects-version-aware"></a>Обеспечение поддержки версий в пользовательских проектах
 В своей системе пользовательских проектов вы можете разрешить проектам данного типа загружаться в нескольких версиях Visual Studio. Вы также можете запретить проектам этого типа загружаться в более ранней версии Visual Studio. Кроме того, можно обеспечить идентификацию проекта для более поздней версии, если этот проекта необходимо восстановить, преобразовать или включить в список устаревших.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Если этот метод устанавливает `pUpgradeRequired` в значение TRUE и возвращает `S_OK`, результат рассматривается как "Обновить", как если бы метод установил для флага обновления значение `VSPUVF_PROJECT_ONEWAYUPGRADE`, которое описывается ниже в этом разделе. Следующие возвращаемые значения поддерживаются с помощью этого старого метода, но только если `pUpgradeRequired` имеет значение TRUE:  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_SAFEREPAIR`, которое описывается далее в этом разделе.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_SAFEREPAIR`, которое описывается далее в этом разделе.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_UNSAFEREPAIR`, которое описывается далее в этом разделе.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_UNSAFEREPAIR`, которое описывается далее в этом разделе.  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_ONEWAYUPGRADE`, которое описывается далее в этом разделе.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Это возвращаемое значение преобразует значение `pUpgradeRequired` в TRUE, что эквивалентно значению `VSPUVF_PROJECT_ONEWAYUPGRADE`, которое описывается далее в этом разделе.  
   
- Новые реализации в `IVsProjectUpgradeViaFactory4` и `IVsProjectFlavorUpgradeViaFactory2` позволяют более точно указывать тип миграции.  
+   Новые реализации в `IVsProjectUpgradeViaFactory4` и `IVsProjectFlavorUpgradeViaFactory2` позволяют более точно указывать тип миграции.  
   
 > [!NOTE]
 >  Вы можете кэшировать результат проверки совместимости с помощью метода `UpgradeProject_CheckOnly` , чтобы этот результат также мог использоваться в последующем вызове метода `CreateProject`.  

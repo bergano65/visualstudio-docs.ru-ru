@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Документы Microsoft
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df83017e60a9d3600c7e49bcf888c771a748cee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f53031bd29af50b90f88868a36f340ee460201a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915312"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Возвращает перечисление символов для переменной, которая соответствует указанным значением тега в родительском объекте функция заглушки сочетаний клавиш.  
@@ -34,16 +34,16 @@ HRESULT findSymbolsForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Параметры  
  `parent`  
- [in] IDiaSymbol, соответствующую функции заглушки сочетаний клавиш для поиска.  
+ [in] IDiaSymbol, соответствующую функцию заглушки сочетаний клавиш для поиска.  
   
  `tagValue`  
- [in] Значение тега указателя.  
+ [in] Указатель на значение тега.  
   
  `ppResult`  
  [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -13,12 +13,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d8acf315322a7dfdac70a158bd78f69aebbde15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867875"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,26 +63,26 @@ ms.locfileid: "49196397"
 ##  <a name="Requirements"></a> Требования к системе и обратная совместимость  
  Важные сведения о требованиях к оборудованию, программному обеспечению и конфигурации для эмулятора Visual Studio для Android см. в следующих разделах.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
+  Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
   
- Новые версии эмулятора устанавливаются поверх старых версий (и в некоторых случаях могут заменять старые образы, удаляя параметры, приложения и файлы, установленные в этих образах).  
+  Новые версии эмулятора устанавливаются поверх старых версий (и в некоторых случаях могут заменять старые образы, удаляя параметры, приложения и файлы, установленные в этих образах).  
   
 ##  <a name="Networking"></a>Сетевое подключение эмулятора Visual Studio для Android  
  Сетевое подключение эмулятора Visual Studio для Android действует аналогично подключению настольного компьютера со следующими характеристиками.  
   
--   Эмулятор отображается в сети как отдельное устройство с собственным IP-адресом.  
+- Эмулятор отображается в сети как отдельное устройство с собственным IP-адресом.  
   
--   Ему не требуется дополнительное сетевое программное обеспечение, еще не установленное с эмулятором.  
+- Ему не требуется дополнительное сетевое программное обеспечение, еще не установленное с эмулятором.  
   
--   Он не входит в состав домена Windows.  
+- Он не входит в состав домена Windows.  
   
- Чтобы понять возможности сетевого подключения эмулятора, примите его за аналог подключения Wi-Fi с телефона Android к той же сети. Если приложение, запущенное на телефоне, может обращаться к сетевому ресурсу через подключение Wi-Fi, приложению в эмуляторе также будет доступен тот же сетевой ресурс.  
+  Чтобы понять возможности сетевого подключения эмулятора, примите его за аналог подключения Wi-Fi с телефона Android к той же сети. Если приложение, запущенное на телефоне, может обращаться к сетевому ресурсу через подключение Wi-Fi, приложению в эмуляторе также будет доступен тот же сетевой ресурс.  
   
- Дополнительные сведения о требованиях к сети см. в разделе [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  Дополнительные сведения о требованиях к сети см. в разделе [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
- Сведения об устранении сетевых проблем см. в разделе [Устранение неполадок в эмуляторе Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+  Сведения об устранении сетевых проблем см. в разделе [Устранение неполадок в эмуляторе Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Configuring"></a> Настройка эмулятора Visual Studio для Android  
  Тестирование приложения Android на совместимость с огромным количеством различного оборудования Android может оказаться сложной задачей. На рынке существует множество телефонов и планшетных компьютеров Android с экранами разного размера, поддерживающими различные версии и доступные для разных конфигураций оборудования (ОЗУ, ЦП, архитектура и т. д.). Эмулятор Visual Studio для Android упрощает использование разнообразных версий и конфигураций с помощью профилей устройств. Набор профилей устройств представляет наиболее распространенное оборудование на рынке, включая устройства от Samsung, Motorola, Sony, LG и многих других производителей.  

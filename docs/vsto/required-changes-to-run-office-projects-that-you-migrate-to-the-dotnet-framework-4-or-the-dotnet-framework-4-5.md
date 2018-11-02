@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670797"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Изменения, необходимые для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET framework проекта Office изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии из более ранней версии платформы .NET Framework, необходимо выполнить следующие задачи, чтобы убедиться, что решение может выполняться на компьютере разработчика, так и на компьютерах конечных пользователей:  
   
--   Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.  
+- Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.  
   
--   Выполните **Очистить** команды в Visual Studio, чтобы иметь возможность запуска и отладки проекта на компьютере разработки.  
+- Выполните **Очистить** команды в Visual Studio, чтобы иметь возможность запуска и отладки проекта на компьютере разработки.  
   
--   Обновите платформу .NET Framework, необходимую для проекта.  
+- Обновите платформу .NET Framework, необходимую для проекта.  
   
--   Конечные пользователи также должны переустановить решение, если оно было развернуто с помощью технологии ClickOnce до того, как вы изменили целевую платформу.  
+- Конечные пользователи также должны переустановить решение, если оно было развернуто с помощью технологии ClickOnce до того, как вы изменили целевую платформу.  
   
- Дополнительные сведения о всех этих задачах см. в соответствующих разделах ниже.  
+  Дополнительные сведения о всех этих задачах см. в соответствующих разделах ниже.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Удаление атрибута SecurityTransparent из проектов, которые вы переносите из Visual Studio 2008  
  При обновлении проекта Office с версии Visual Studio 2008 и последующем изменении целевой платформы .NET Framework проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию атрибут <xref:System.Security.SecurityTransparentAttribute> необходимо удалить из проекта. Visual Studio не удаляет этот атрибут автоматически. Если не удалить этот атрибут, при компиляции проекта вы получите сообщение об ошибке.  
@@ -67,7 +67,7 @@ ms.locfileid: "35675153"
 ## <a name="update-the-prerequisites-for-deployment"></a>Обновлять необходимые компоненты для развертывания  
  При переориентации проекта Office на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо также обновить соответствующие необходимые компоненты .NET Framework в **предварительные требования** диалоговое окно. В противном случае процесс развертывания с помощью ClickOnce или проект InstallShield Limited Edition проверяет наличие предыдущей версии платформы .NET Framework и устанавливает ее.  
   
- Дополнительные сведения об обновлении компонентов, необходимых для развертывания на компьютерах конечных пользователей, см. в разделе [как: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Дополнительные сведения об обновлении компонентов, необходимых для развертывания на компьютерах конечных пользователей, см. в разделе [как: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Повторная установка решений на компьютерах конечных пользователей  
  Если вы используете технологию ClickOnce для развертывания решения Office, которое ориентируется на платформу .NET Framework 3.5, а затем переориентируете проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо удалить решение, а затем переустановить после его повторной публикации. Если публикации измененного решения и оно обновляется на компьютерах конечных пользователей, конечные пользователи получат <xref:System.Runtime.InteropServices.COMException> во время выполнения обновленного решения.  

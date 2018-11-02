@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS | Документы Microsoft
+title: MODULE_INFO_FLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2676b85889226e2fbb9665462d83aa4b0d6520
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2422c2578979b1fc8c5f07ba92aa4117c87042d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933915"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Указывает состояние символы для модуля.  
@@ -42,7 +42,7 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>Участники  
  MIF_SYMBOLS_LOADED  
- Хотя бы один набор символов был загружен в модуле (в противном случае символы не были загружены).  
+ По крайней мере один набор символов был загружен в модуле (в противном случае не были загружены символы).  
   
 ## <a name="remarks"></a>Примечания  
  Это значение возвращается по [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) метод.  

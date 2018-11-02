@@ -16,12 +16,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a38410c1b64a455f12d91cd8460f5f04d369275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847309"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ ms.locfileid: "49224163"
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Какие элементы можно сделать с помощью расширений Visual Studio?  
  Передохнуть когда дело доходит до описывая различные расширения Visual Studio. Само собой большинство расширений имеет какое-то написанию кода, но, не обязательно так. Ниже приведены некоторые примеры различных типов расширений, которые можно создавать.  
   
--   Поддержка языков, которые не включены в Visual Studio с синтаксических конструкций, IntelliSense и поддержку компилятора и отладки  
+- Поддержка языков, которые не включены в Visual Studio с синтаксических конструкций, IntelliSense и поддержку компилятора и отладки  
   
--   Средства повышения производительности, расширить интегрированную среду разработки опыт дополнительные шаблоны, рефакторинга, новые диалоговые окна кода или окна инструментов  
+- Средства повышения производительности, расширить интегрированную среду разработки опыт дополнительные шаблоны, рефакторинга, новые диалоговые окна кода или окна инструментов  
   
--   Конструкторы предметно ориентированных сценариев, таких как поддержка разработки или облачных данных  
+- Конструкторы предметно ориентированных сценариев, таких как поддержка разработки или облачных данных  
   
- Примеры расширения, ознакомьтесь с [коллекции Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Вы также можете рассмотреть [откройте Visual Studio, расширения источников](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+  Примеры расширения, ознакомьтесь с [коллекции Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Вы также можете рассмотреть [откройте Visual Studio, расширения источников](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Какие возможности Visual Studio можно расширить?  
  В теории, вы можете расширить практически любую часть Visual Studio: меню, панелей инструментов, команды, windows, решения, проекты, редакторы и т. д.  

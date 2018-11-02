@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d69a6951cdae84ba2abc06bcdfde19fffa665c03
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3120a64db5c493f8e49ddeac42be0b2e89a40c45
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908864"
 ---
 # <a name="menu-element"></a>Элемент меню
 Определяет один элемент меню. Это шесть видов меню: контекстное меню, MenuController, MenuControllerLatched, инструментов и ToolWindowToolbar.  
@@ -39,7 +39,7 @@ ms.locfileid: "39637514"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
 |id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
@@ -50,7 +50,7 @@ ms.locfileid: "39637514"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Необязательный. Родительский элемент данного элемента меню.|  
 |CommandFlag|Обязательно. См. в разделе [элемент commandflag](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для меню.<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -этот флаг не влияет на отображение панели инструментов.<br />-   **DontCache**<br />-   **DynamicVisibility** -этот флаг не влияет на отображение панели инструментов.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
@@ -59,7 +59,7 @@ ms.locfileid: "39637514"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
   

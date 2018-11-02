@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Документы Microsoft
+title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7143892f71a798db1aa9f922a64eac320f973eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0238da9c435fcfc02aacf00e4e54459d0fc59c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853239"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-Возвращает тип, указанному токену.  
+Возвращает тип, учитывая его маркер.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,7 +58,7 @@ int GetTypeFromTypeDef(
  [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , содержащий тип.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877495"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49176310"
   
  Корень файла web.config — элемент **configuration**. Для инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо добавить или изменить следующие элементы:  
   
--   Элемент **configuration/runtime/assemblyBinding/dependentAssembly**, который идентифицирует сборку Microsoft.VisualStudio.Enterprise.ASPNetHelper, управляющую профилированием. Элемент **dependentAssembly** содержит два дочерних элемента: **assemblyIdentity** и **codeBase**.  
+- Элемент **configuration/runtime/assemblyBinding/dependentAssembly**, который идентифицирует сборку Microsoft.VisualStudio.Enterprise.ASPNetHelper, управляющую профилированием. Элемент **dependentAssembly** содержит два дочерних элемента: **assemblyIdentity** и **codeBase**.  
   
--   Элемент **configuration/system.web/compilation**, который определяет шаг компиляции пост-обработки профилировщика для целевой сборки.  
+- Элемент **configuration/system.web/compilation**, который определяет шаг компиляции пост-обработки профилировщика для целевой сборки.  
   
--   Два элемента **add**, которые задают расположение средств профилирования, добавляются в раздел **configuration/appSettings**.  
+- Два элемента **add**, которые задают расположение средств профилирования, добавляются в раздел **configuration/appSettings**.  
   
- Рекомендуется создать копию исходного файла web.config, который можно использовать для восстановления конфигурации приложения.  
+  Рекомендуется создать копию исходного файла web.config, который можно использовать для восстановления конфигурации приложения.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Добавление сборки ASPNetHelper как элемента configuration/runtime/assemblyBinding/dependentAssembly  
   

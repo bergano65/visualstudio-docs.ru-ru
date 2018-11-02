@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905107"
 ---
 # <a name="keybinding-element"></a>Элемент KeyBinding
 Элемент KeyBinding указывает сочетания клавиш для команд.  
   
- Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — **Ctrl * +** K **,** Ctrl**+** K **, чтобы установить закладку.  
+ Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Чтобы установить закладку.  
   
 ## <a name="syntax"></a>Синтаксис  
   

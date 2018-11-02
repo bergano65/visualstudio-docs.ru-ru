@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Документы Microsoft
+title: IDebugBreakpointResolution2::GetResolutionInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17e08e335f2f50967da2b566ef595717e07fc2d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6e5ad731d94a7b60d3562683595354871b303d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870488"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Получает сведения о разрешении точки останова, описывающий эту точку останова.  
+Возвращает сведения о разрешении точки останова, описывающий эту точку останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int GetResolutionInfo(
   
 #### <a name="parameters"></a>Параметры  
  `dwFields`  
- [in] Сочетание флагов из [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисление, определить, какие поля `pBPResolutionInfo` параметр должны заполняться.  
+ [in] Сочетание флагов из [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисление, определите, какие поля из `pBPResolutionInfo` параметр должны заполняться.  
   
  `pBPResolutionInfo`  
- [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры заполнены сведения о данной точки останова.  
+ [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры необходимо заполнить сведения о данной точки останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- Следующий пример реализует этот метод для простой `CDebugBreakpointResolution` объекта, который предоставляет [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейса.  
+ В следующем примере реализуется этот метод для простого `CDebugBreakpointResolution` объекта, который предоставляет [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс.  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675222"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744942"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Манифесты приложений для решений Office
   Манифест приложения представляет собой XML-файл с описанием сборок, загружаемых в решении Microsoft Office. Средства разработки Microsoft Office в Visual Studio используют [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифестов приложений, определенных в [манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest) ссылки.  
@@ -96,7 +96,7 @@ ms.locfileid: "35675222"
  Манифесты приложений и развертывания в решениях Office можно менять вручную. После этого нужно повторно подписать приложение и манифесты развертывания с помощью Manifest Generation and Editing Tool (*mage.exe* и *mageui.exe*). Дополнительные сведения см. в разделе [как: повторное подписание манифестов приложения и развертывания](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Расположение файла  
- Манифест приложения определяется для отдельной версии решения. По этой причине манифест приложения следует хранить отдельно от манифеста развертывания. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] помещает файлы конкретной версии в подкаталоге версии *файлы приложения* подкаталог в папке публикации.  
+ Манифест приложения определяется для отдельной версии решения. По этой причине манифест приложения следует хранить отдельно от манифеста развертывания. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] помещает файлы, относящиеся к конкретной версии, в подкаталог, название которого соответствует версии и который находится в подкаталоге *Файлы приложения* каталога публикации.  
   
 ## <a name="file-name-syntax"></a>Синтаксис имени файла  
  Имя файла манифеста приложения должно быть полное имя и расширение приложения, как указано в **assemblyIdentity** элемент, с расширением *.manifest*. Например, манифест приложения, который ссылается на *OutlookAddIn1.dll* настройки используется следующий синтаксис имени файла.  

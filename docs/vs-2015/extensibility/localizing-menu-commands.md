@@ -20,12 +20,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2584c3cdd60c130183e09d2a809ff0ee1621856d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868850"
 ---
 # <a name="localizing-menu-commands"></a>Локализация команд меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,48 +37,48 @@ ms.locfileid: "49197710"
 ## <a name="localizing-command-names"></a>Локализация имен команд  
  В пакеты VSPackage команды меню и кнопки панели инструментов определяются в vsct-файле.  
   
-1.  В **обозревателе решений**, измените имя файла vsct из *filename*.vsct для *filename*.en-US.vsct.  
+1. В **обозревателе решений**, измените имя файла vsct из *filename*.vsct для *filename*.en-US.vsct.  
   
-2.  Создайте копию *filename*.en-US.vsct для каждого языка локализации.  
+2. Создайте копию *filename*.en-US.vsct для каждого языка локализации.  
   
-     Имя каждой копии *filename*. *Языковой стандарт*.vsct, где *языкового стандарта* — это имя определенного языка и региональных параметров. Список значений имени языка и региональных параметров, см. в разделе [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
+    Имя каждой копии *filename*. *Языковой стандарт*.vsct, где *языкового стандарта* — это имя определенного языка и региональных параметров. Список значений имени языка и региональных параметров, см. в разделе [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
   
-     Эти *filename*. *Языковой стандарт*vsct-файлов будет содержать текст локализованного меню для своего пакета.  
+    Эти *filename*. *Языковой стандарт*vsct-файлов будет содержать текст локализованного меню для своего пакета.  
   
-3.  Откройте каждый *filename*. *Языковой стандарт*vsct-файл для локализации текста.  
+3. Откройте каждый *filename*. *Языковой стандарт*vsct-файл для локализации текста.  
   
-    1.  Изменить [ButtonText](../extensibility/buttontext-element.md) элементы со значениями в соответствии с определенного языка.  
+   1. Изменить [ButtonText](../extensibility/buttontext-element.md) элементы со значениями в соответствии с определенного языка.  
   
-    2.  Будет предоставляться локализованные значки, измените [точечного рисунка](../extensibility/bitmap-element.md) значения, чтобы указать целевые файлы.  
+   2. Будет предоставляться локализованные значки, измените [точечного рисунка](../extensibility/bitmap-element.md) значения, чтобы указать целевые файлы.  
   
-     Следующий пример показывает английский и испанский текст кнопки для команды открыть окно инструментов семейного дерева обозревателя.  
+      Следующий пример показывает английский и испанский текст кнопки для команды открыть окно инструментов семейного дерева обозревателя.  
   
-     [FamilyTree.en-US.vsct]  
+      [FamilyTree.en-US.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [FamilyTree.es-ES.vsct]  
+    [FamilyTree.es-ES.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localizing-other-text-resources"></a>Локализация ресурсов других текста  
  Текстовые ресурсы, отличные от имен команд определяются в файлах ресурсов (RESX).  

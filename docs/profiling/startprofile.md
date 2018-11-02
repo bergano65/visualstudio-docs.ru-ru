@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d08c2041d0432bb215b46401521583c921bcbc92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934902"
 ---
 # <a name="startprofile"></a>StartProfile
 Функция `StartProfile` устанавливает для счетчика значение 1 (вкл) для указанного уровня профилирования.  

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919368"
 ---
 # <a name="active-script-debugging-overview"></a>Обзор отладки активных скриптов
 Интерфейсы отладки активных скриптов обеспечивают не зависящую от языка и узла отладку, а также поддерживают широкий спектр сред разработки.  
@@ -65,84 +65,84 @@ ms.locfileid: "24571544"
 ## <a name="language-engine"></a>Модуль языка  
  Модуль языка предоставляет следующие возможности:  
   
--   Анализ и выполнение языка.  
+- Анализ и выполнение языка.  
   
--   Поддержка отладки (точки останова и т. п.).  
+- Поддержка отладки (точки останова и т. п.).  
   
--   Вычисление выражений.  
+- Вычисление выражений.  
   
--   Раскраска синтаксических конструкций.  
+- Раскраска синтаксических конструкций.  
   
--   Просмотр объектов.  
+- Просмотр объектов.  
   
--   Перечисление и анализ стека.  
+- Перечисление и анализ стека.  
   
- Ниже указаны интерфейсы, которые должен поддерживать модуль скриптов, чтобы обеспечивать отладку, вычисление выражений и просмотр объектов. Эти интерфейсы используются ведущим приложением для сопоставления контекста документа и контекстов кода модуля, а также пользовательским интерфейсом отладчика для обеспечения вычисления выражений, перечисления стека и просмотра объектов.  
+  Ниже указаны интерфейсы, которые должен поддерживать модуль скриптов, чтобы обеспечивать отладку, вычисление выражений и просмотр объектов. Эти интерфейсы используются ведущим приложением для сопоставления контекста документа и контекстов кода модуля, а также пользовательским интерфейсом отладчика для обеспечения вычисления выражений, перечисления стека и просмотра объектов.  
   
- [Интерфейс IActiveScriptDebug](../winscript/reference/iactivescriptdebug-interface.md)  
- Предоставляет раскраску синтаксических конструкций и перечисление контекста кода.  
+  [Интерфейс IActiveScriptDebug](../winscript/reference/iactivescriptdebug-interface.md)  
+  Предоставляет раскраску синтаксических конструкций и перечисление контекста кода.  
   
- [Интерфейс IActiveScriptErrorDebug](../winscript/reference/iactivescripterrordebug-interface.md)  
- Возвращает контексты документов и кадры стека для ошибок.  
+  [Интерфейс IActiveScriptErrorDebug](../winscript/reference/iactivescripterrordebug-interface.md)  
+  Возвращает контексты документов и кадры стека для ошибок.  
   
- [Интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md)  
- Размещает предоставленную ссылку из модуля скриптов в отладчике.  
+  [Интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md)  
+  Размещает предоставленную ссылку из модуля скриптов в отладчике.  
   
- [Интерфейс IDebugCodeContext](../winscript/reference/idebugcodecontext-interface.md)  
- Предоставляет виртуальный указатель оператора в потоке.  
+  [Интерфейс IDebugCodeContext](../winscript/reference/idebugcodecontext-interface.md)  
+  Предоставляет виртуальный указатель оператора в потоке.  
   
- [Интерфейс IEnumDebugCodeContexts](../winscript/reference/ienumdebugcodecontexts-interface.md)  
- Перечисляет контексты кода, соответствующие контексту документа.  
+  [Интерфейс IEnumDebugCodeContexts](../winscript/reference/ienumdebugcodecontexts-interface.md)  
+  Перечисляет контексты кода, соответствующие контексту документа.  
   
- [Интерфейс IDebugStackFrame](../winscript/reference/idebugstackframe-interface.md)  
- Представляет логический кадр стека в стеке потоков.  
+  [Интерфейс IDebugStackFrame](../winscript/reference/idebugstackframe-interface.md)  
+  Представляет логический кадр стека в стеке потоков.  
   
- [Интерфейс IDebugExpressionContext](../winscript/reference/idebugexpressioncontext-interface.md)  
- Предоставляет контекст, в котором можно вычислять выражения.  
+  [Интерфейс IDebugExpressionContext](../winscript/reference/idebugexpressioncontext-interface.md)  
+  Предоставляет контекст, в котором можно вычислять выражения.  
   
- [Интерфейс IDebugStackFrameSniffer](../winscript/reference/idebugstackframesniffer-interface.md)  
- Предоставляет способ для перечисления логических кадров стека.  
+  [Интерфейс IDebugStackFrameSniffer](../winscript/reference/idebugstackframesniffer-interface.md)  
+  Предоставляет способ для перечисления логических кадров стека.  
   
- [Интерфейс IDebugExpression](../winscript/reference/idebugexpression-interface.md)  
- Представляет асинхронно вычисляемое выражение.  
+  [Интерфейс IDebugExpression](../winscript/reference/idebugexpression-interface.md)  
+  Представляет асинхронно вычисляемое выражение.  
   
- [Интерфейс IDebugSyncOperation](../winscript/reference/idebugsyncoperation-interface.md)  
- Позволяет модулю скриптов абстрагировать операцию, которую требуется выполнить вложенной в определенный заблокированный поток.  
+  [Интерфейс IDebugSyncOperation](../winscript/reference/idebugsyncoperation-interface.md)  
+  Позволяет модулю скриптов абстрагировать операцию, которую требуется выполнить вложенной в определенный заблокированный поток.  
   
- [Интерфейс IDebugAsyncOperation](../winscript/reference/idebugasyncoperation-interface.md)  
- Предоставляет асинхронный доступ к синхронной операции отладки.  
+  [Интерфейс IDebugAsyncOperation](../winscript/reference/idebugasyncoperation-interface.md)  
+  Предоставляет асинхронный доступ к синхронной операции отладки.  
   
- [Интерфейс IDebugAsyncOperationCallBack](../winscript/reference/idebugasyncoperationcallback-interface.md)  
- Предоставляет состояния события, связанные с ходом оценки интерфейса `IDebugAsyncOperation`.  
+  [Интерфейс IDebugAsyncOperationCallBack](../winscript/reference/idebugasyncoperationcallback-interface.md)  
+  Предоставляет состояния события, связанные с ходом оценки интерфейса `IDebugAsyncOperation`.  
   
- [Интерфейс IEnumDebugExpressionContexts](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
- Перечисляет коллекцию объектов `IDebugExpressionContexts`.  
+  [Интерфейс IEnumDebugExpressionContexts](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
+  Перечисляет коллекцию объектов `IDebugExpressionContexts`.  
   
- [Интерфейс IProvideExpressionContexts](../winscript/reference/iprovideexpressioncontexts-interface.md)  
- Предоставляет способ для перечисления контекстов выражений, известных по определенному компоненту.  
+  [Интерфейс IProvideExpressionContexts](../winscript/reference/iprovideexpressioncontexts-interface.md)  
+  Предоставляет способ для перечисления контекстов выражений, известных по определенному компоненту.  
   
- [Интерфейс IDebugFormatter](../winscript/reference/idebugformatter-interface.md)  
- Позволяет языку или интегрированной среде разработки настроить преобразование значениями VARIANT или типами VARTYPE и строками.  
+  [Интерфейс IDebugFormatter](../winscript/reference/idebugformatter-interface.md)  
+  Позволяет языку или интегрированной среде разработки настроить преобразование значениями VARIANT или типами VARTYPE и строками.  
   
- [Интерфейс IDebugStackFrameSnifferEx](../winscript/reference/idebugstackframesnifferex-interface.md)  
- Перечисляет логические кадры стека для PDM.  
+  [Интерфейс IDebugStackFrameSnifferEx](../winscript/reference/idebugstackframesnifferex-interface.md)  
+  Перечисляет логические кадры стека для PDM.  
   
 ## <a name="hosts"></a>Узлы  
  Узел:  
   
--   размещает модули языка;  
+- размещает модули языка;  
   
--   предоставляет объектную модель (набор объектов, которые можно использовать в скрипте);  
+- предоставляет объектную модель (набор объектов, которые можно использовать в скрипте);  
   
--   определяет дерево документов, которые можно отлаживать, и их содержимое;  
+- определяет дерево документов, которые можно отлаживать, и их содержимое;  
   
--   организует скрипты в виртуальные приложения.  
+- организует скрипты в виртуальные приложения.  
   
- Существует два типа узлов:  
+  Существует два типа узлов:  
   
--   Оконечный узел ввода-вывода поддерживает только базовые интерфейсы активных скриптов. Он не контролирует организации или структуру документов, они полностью определяются скриптами, предоставленными модулям языка.  
+- Оконечный узел ввода-вывода поддерживает только базовые интерфейсы активных скриптов. Он не контролирует организации или структуру документов, они полностью определяются скриптами, предоставленными модулям языка.  
   
--   Промежуточный узел поддерживает больше интерфейсов, что позволяет ему определить дерево документов, содержимое документов и раскраску синтаксических структур. Имеется ряд вспомогательных интерфейсов, описанных в следующем подразделе, которые позволяют узлу значительно проще стать промежуточным.  
+- Промежуточный узел поддерживает больше интерфейсов, что позволяет ему определить дерево документов, содержимое документов и раскраску синтаксических структур. Имеется ряд вспомогательных интерфейсов, описанных в следующем подразделе, которые позволяют узлу значительно проще стать промежуточным.  
   
 ### <a name="smart-host-helper-interfaces"></a>Вспомогательные интерфейсы промежуточных узлов  
  Методы `IDebugDocumentHelper` предоставляют значительно упрощенный набор интерфейсов, которые узел может использовать для получения преимуществ промежуточного узла, не имея дело со всеми сложностями и возможностями полноценных интерфейсов узла.  
@@ -188,34 +188,34 @@ ms.locfileid: "24571544"
 ## <a name="debugger-ide"></a>Интегрированная среда разработки отладчика  
  Интегрированная среда разработки является не зависящим от языка пользовательским интерфейсом отладки. Консоль предоставляет следующие возможности:  
   
--   Средства просмотра и редакторы документов.  
+- Средства просмотра и редакторы документов.  
   
--   Управление точками останова.  
+- Управление точками останова.  
   
--   Вычисление выражений и окна контрольных значений.  
+- Вычисление выражений и окна контрольных значений.  
   
--   Просмотр кадров стека.  
+- Просмотр кадров стека.  
   
--   Просмотр объектов/классов.  
+- Просмотр объектов/классов.  
   
--   Просмотр структуры виртуальных приложений.  
+- Просмотр структуры виртуальных приложений.  
   
- Интерфейсы, реализуемые отладчиком:  
+  Интерфейсы, реализуемые отладчиком:  
   
- [Интерфейс IApplicationDebugger](../winscript/reference/iapplicationdebugger-interface.md)  
- Основной интерфейс, предоставляемый сеансом IDE отладчика.  
+  [Интерфейс IApplicationDebugger](../winscript/reference/iapplicationdebugger-interface.md)  
+  Основной интерфейс, предоставляемый сеансом IDE отладчика.  
   
- [Интерфейс IApplicationDebuggerUI](../winscript/reference/iapplicationdebuggerui-interface.md)  
- Позволяет внешнему компоненту лучше контролировать пользовательский интерфейс отладчика.  
+  [Интерфейс IApplicationDebuggerUI](../winscript/reference/iapplicationdebuggerui-interface.md)  
+  Позволяет внешнему компоненту лучше контролировать пользовательский интерфейс отладчика.  
   
- [Интерфейс IDebugExpressionCallBack](../winscript/reference/idebugexpressioncallback-interface.md)  
- Поставляет события состояния для обозначения хода оценки `IDebugExpression`.  
+  [Интерфейс IDebugExpressionCallBack](../winscript/reference/idebugexpressioncallback-interface.md)  
+  Поставляет события состояния для обозначения хода оценки `IDebugExpression`.  
   
- [Интерфейс IDebugDocumentTextEvents](../winscript/reference/idebugdocumenttextevents-interface.md)  
- Предоставляет события, указывающие на изменения в сопоставленном текстовом документе.  
+  [Интерфейс IDebugDocumentTextEvents](../winscript/reference/idebugdocumenttextevents-interface.md)  
+  Предоставляет события, указывающие на изменения в сопоставленном текстовом документе.  
   
- [Интерфейс IDebugApplicationNodeEvents](../winscript/reference/idebugapplicationnodeevents-interface.md)  
- Предоставляет интерфейс событий для интерфейса `IDebugApplicationNode`.  
+  [Интерфейс IDebugApplicationNodeEvents](../winscript/reference/idebugapplicationnodeevents-interface.md)  
+  Предоставляет интерфейс событий для интерфейса `IDebugApplicationNode`.  
   
 ### <a name="machine-debug-manager"></a>Диспетчер отладки  
  Диспетчер отладки предоставляет точку привязки между виртуальными приложениями и отладчиками, формируя и перечисляя список активных виртуальных приложений.  
@@ -238,60 +238,60 @@ ms.locfileid: "24571544"
 ### <a name="process-debug-manager"></a>Диспетчер отладки процессов  
  Диспетчер PDM:  
   
--   синхронизирует отладку нескольких модулей языка;  
+- синхронизирует отладку нескольких модулей языка;  
   
--   формирует дерево отлаживаемых документов;  
+- формирует дерево отлаживаемых документов;  
   
--   объединяет кадры стека;  
+- объединяет кадры стека;  
   
--   координирует работу точек останова и пошаговое выполнение в разных модулях языка;  
+- координирует работу точек останова и пошаговое выполнение в разных модулях языка;  
   
--   отслеживает потоки;  
+- отслеживает потоки;  
   
--   обслуживает поток отладчика для асинхронной обработки;  
+- обслуживает поток отладчика для асинхронной обработки;  
   
--   взаимодействует с диспетчером отладки и интегрированной средой разработки отладчика.  
+- взаимодействует с диспетчером отладки и интегрированной средой разработки отладчика.  
   
- Ниже приведены интерфейсы, предоставляемые диспетчером отладки процессов.  
+  Ниже приведены интерфейсы, предоставляемые диспетчером отладки процессов.  
   
- [Интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md)  
- Основной интерфейс для диспетчера отладки процессов. Этот интерфейс может создать, добавить или удалить виртуальное приложение в процессе.  
+  [Интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md)  
+  Основной интерфейс для диспетчера отладки процессов. Этот интерфейс может создать, добавить или удалить виртуальное приложение в процессе.  
   
- [Интерфейс IRemoteDebugApplication](../winscript/reference/iremotedebugapplication-interface.md)  
- Представляет выполняющееся приложение.  
+  [Интерфейс IRemoteDebugApplication](../winscript/reference/iremotedebugapplication-interface.md)  
+  Представляет выполняющееся приложение.  
   
- [Интерфейс IDebugApplication](../winscript/reference/idebugapplication-interface.md)  
- Предоставляет неудаленные методы отладки для использования модулями языка и узлами.  
+  [Интерфейс IDebugApplication](../winscript/reference/idebugapplication-interface.md)  
+  Предоставляет неудаленные методы отладки для использования модулями языка и узлами.  
   
- [Интерфейс IRemoteDebugApplicationThread](../winscript/reference/iremotedebugapplicationthread-interface.md)  
- Представляет поток исполнения в определенном приложении.  
+  [Интерфейс IRemoteDebugApplicationThread](../winscript/reference/iremotedebugapplicationthread-interface.md)  
+  Представляет поток исполнения в определенном приложении.  
   
- [Интерфейс IDebugApplicationThread](../winscript/reference/idebugapplicationthread-interface.md)  
- Позволяет модулям языка и узлам обеспечивать синхронизацию потоков и хранить сведения о состоянии отладки для конкретного потока.  
+  [Интерфейс IDebugApplicationThread](../winscript/reference/idebugapplicationthread-interface.md)  
+  Позволяет модулям языка и узлам обеспечивать синхронизацию потоков и хранить сведения о состоянии отладки для конкретного потока.  
   
- [Интерфейс IEnumRemoteDebugApplicationThreads](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
- Перечисляет запущенные потоки в приложении.  
+  [Интерфейс IEnumRemoteDebugApplicationThreads](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
+  Перечисляет запущенные потоки в приложении.  
   
- [Интерфейс IDebugThreadCall](../winscript/reference/idebugthreadcall-interface.md)  
- Диспетчеризирует маршалированные вызовы.  
+  [Интерфейс IDebugThreadCall](../winscript/reference/idebugthreadcall-interface.md)  
+  Диспетчеризирует маршалированные вызовы.  
   
- [Интерфейс IDebugApplicationNode](../winscript/reference/idebugapplicationnode-interface.md)  
- Сохраняет положение документа в иерархии.  
+  [Интерфейс IDebugApplicationNode](../winscript/reference/idebugapplicationnode-interface.md)  
+  Сохраняет положение документа в иерархии.  
   
- [Интерфейс IEnumDebugApplicationNodes](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
- Перечисляет дочерние узлы узла, связанного с приложением.  
+  [Интерфейс IEnumDebugApplicationNodes](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
+  Перечисляет дочерние узлы узла, связанного с приложением.  
   
- [Интерфейс IEnumDebugStackFrames](../winscript/reference/ienumdebugstackframes-interface.md)  
- Перечисляет кадры стека, соответствующие потоку, с объединением из модулей.  
+  [Интерфейс IEnumDebugStackFrames](../winscript/reference/ienumdebugstackframes-interface.md)  
+  Перечисляет кадры стека, соответствующие потоку, с объединением из модулей.  
   
- [Интерфейс IDebugCookie](../winscript/reference/idebugcookie-interface.md)  
- Разрешает отправлять отладочный файл cookie для его задания в отладчиках скриптов.  
+  [Интерфейс IDebugCookie](../winscript/reference/idebugcookie-interface.md)  
+  Разрешает отправлять отладочный файл cookie для его задания в отладчиках скриптов.  
   
- [Интерфейс IDebugHelper](../winscript/reference/idebughelper-interface.md)  
- Служит в качестве фабрики для обозревателей объектов и простых точек подключения для модулей скриптов.  
+  [Интерфейс IDebugHelper](../winscript/reference/idebughelper-interface.md)  
+  Служит в качестве фабрики для обозревателей объектов и простых точек подключения для модулей скриптов.  
   
- [Интерфейс ISimpleConnectionPoint](../winscript/reference/isimpleconnectionpoint-interface.md)  
- Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения, для модулей скриптов.  
+  [Интерфейс ISimpleConnectionPoint](../winscript/reference/isimpleconnectionpoint-interface.md)  
+  Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения, для модулей скриптов.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы отладчика активных скриптов](../winscript/reference/active-script-debugger-interfaces.md)

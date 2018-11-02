@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b02adab3b0ba032a39ce73c08bd287213ef2ffc4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853952"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Практическое: программное задание параметров поиска в Word
   Чтобы задать параметры поиска для выбранных элементов в документах Microsoft Office Word двумя способами:  
   
--   Задавать отдельные свойства из <xref:Microsoft.Office.Interop.Word.Find> объекта.  
+- Задавать отдельные свойства из <xref:Microsoft.Office.Interop.Word.Find> объекта.  
   
--   Использование аргументов <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> метод <xref:Microsoft.Office.Interop.Word.Find> объекта.  
+- Использование аргументов <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> метод <xref:Microsoft.Office.Interop.Word.Find> объекта.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="use-properties-of-a-find-object"></a>Использование свойств объекта Find  
  Следующий код задает свойства <xref:Microsoft.Office.Interop.Word.Find> объекта для поиска текста в текущем выделении. Обратите внимание на то, что условия поиска, например поиск вперед, упаковки и текст для поиска, являются свойствами <xref:Microsoft.Office.Interop.Word.Find> объекта.  

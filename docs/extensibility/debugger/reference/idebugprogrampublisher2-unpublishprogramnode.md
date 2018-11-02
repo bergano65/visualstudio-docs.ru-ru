@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Документы Microsoft
+title: IDebugProgramPublisher2::UnpublishProgramNode | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926479"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Удаляет указанную программу узел из доступности для отладки, обработчиками (DEs) и диспетчера сеанса отладки (SDM).  
+Удаляет указанную программу узел из доступности для отладки модулей (DEs) и диспетчер отладки сеансов (SDM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int UnpublishProgramNode(
  [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, представляющий удаленный узел программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- После удаления узла программа больше не доступно для запросов Дополнительные сведения о программе.  
+ После удаления узла программы больше не доступно для запросов Дополнительные сведения о программе.  
   
  Чтобы сделать доступным узел программы, вызовите [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) метод.  
   

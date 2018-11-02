@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827718"
 ---
 # <a name="set-up-remote-workspaces"></a>Настройка удаленных рабочих областей
 
@@ -97,15 +97,15 @@ ms.locfileid: "38978314"
 Самостоятельная выдача самозаверяющего сертификата:
 
 1. Войдите на компьютер Linux через протокол SSH или обычным образом.
-1. Установите пакет `ssl-cert`:
+2. Установите пакет `ssl-cert`:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Запустите `make-ssl-cert`, чтобы создать самозаверяющий SSL-сертификат по умолчанию:
+3. Запустите `make-ssl-cert`, чтобы создать самозаверяющий SSL-сертификат по умолчанию:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Преобразуйте созданный ключ и PEM-файлы в PFX. Созданный PFX-файл должен находиться в домашней папке:
+4. Преобразуйте созданный ключ и PEM-файлы в PFX. Созданный PFX-файл должен находиться в домашней папке:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ ms.locfileid: "38978314"
 
 1. Скачайте и установите один из следующих интерпретаторов.
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R для Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R для Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Оба интерпретатора имеют одинаковые функциональные возможности, в Microsoft R Open используется [библиотека Intel Math Kernel](https://software.intel.com/intel-mkl), обеспечивающая дополнительные библиотеки линейной алгебры с аппаратным ускорением.
+     Оба интерпретатора имеют одинаковые функциональные возможности, в Microsoft R Open используется [библиотека Intel Math Kernel](https://software.intel.com/intel-mkl), обеспечивающая дополнительные библиотеки линейной алгебры с аппаратным ускорением.
 
-1. Запустите [Установщик служб R](https://aka.ms/rtvs-services) и перезагрузите компьютер, когда будет предложено. Установщик выполняет следующие действия.
+2. Запустите [Установщик служб R](https://aka.ms/rtvs-services) и перезагрузите компьютер, когда будет предложено. Установщик выполняет следующие действия.
 
     - Создайте папку в каталоге *%PROGRAMFILES%\Инструменты R для Visual Studio\1.0\\*  и скопируйте все необходимые двоичные файлы.
     - Устанавливает `RHostBrokerService` и `RUserProfileService` и настраивает их на автоматический запуск.
@@ -160,12 +160,12 @@ ms.locfileid: "38978314"
 
 1. Скачайте и установите один из следующих интерпретаторов.
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R для Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R для Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Оба интерпретатора имеют одинаковые функциональные возможности, в Microsoft R Open используется [библиотека Intel Math Kernel](https://software.intel.com/intel-mkl), обеспечивающая дополнительные библиотеки линейной алгебры с аппаратным ускорением.
+     Оба интерпретатора имеют одинаковые функциональные возможности, в Microsoft R Open используется [библиотека Intel Math Kernel](https://software.intel.com/intel-mkl), обеспечивающая дополнительные библиотеки линейной алгебры с аппаратным ускорением.
 
-1. Следуйте инструкциям в разделе [Удаленная служба R для Linux](setting-up-remote-r-service-on-linux.md), в котором охватываются физические компьютеры под управлением Ubuntu, виртуальные машины Azure под управлением Ubuntu, подсистема Windows для Linux (WSL), а также контейнеры Docker, в том числе выполняющиеся в репозитории контейнеров Azure.
+2. Следуйте инструкциям в разделе [Удаленная служба R для Linux](setting-up-remote-r-service-on-linux.md), в котором охватываются физические компьютеры под управлением Ubuntu, виртуальные машины Azure под управлением Ubuntu, подсистема Windows для Linux (WSL), а также контейнеры Docker, в том числе выполняющиеся в репозитории контейнеров Azure.
 
 ## <a name="configure-r-services"></a>Настройка служб R
 

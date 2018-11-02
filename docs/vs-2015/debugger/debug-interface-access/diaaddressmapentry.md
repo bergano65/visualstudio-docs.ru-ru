@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910671"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  Для преобразования адреса `addrA`, на рисунке объект с адресом, `addrB`, на рисунке B, выполните следующие действия:  
   
-1.  Поиск карты для записи, `e`, с наибольшим значением `rva` меньше или равно `addrA`.  
+1. Поиск карты для записи, `e`, с наибольшим значением `rva` меньше или равно `addrA`.  
   
-2.  Задайте `delta = addrA – e.rva`.  
+2. Задайте `delta = addrA – e.rva`.  
   
-3.  Задайте `addrB = e.rvaTo + delta`.  
+3. Задайте `addrB = e.rvaTo + delta`.  
   
- Массив `DiaAddressMapEntry` структуры передается [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод.  
+   Массив `DiaAddressMapEntry` структуры передается [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: dia2.h  

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Next | Документы Microsoft
+title: IDiaEnumSymbols::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867485"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-Возвращает указанное число символов в последовательность перечисления.  
+Извлекает указанное число символов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,13 +39,13 @@ HRESULT Next (
  [in] Количество символов в перечислителе требуется получить.  
   
  rgelt  
- [out] Массив, который должен быть заполнен с [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.  
+ [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.  
   
  pceltFetched  
- [out] Возвращает количество символов в выбранных перечислителя.  
+ [out] Возвращает количество символов в выбираемых перечислитель.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии отсутствуют дополнительные символы. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` при наличии отсутствуют дополнительные символы. В противном случае возвращается код ошибки.  
   
 ## <a name="example"></a>Пример  
   

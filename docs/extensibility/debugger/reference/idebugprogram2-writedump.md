@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Документы Microsoft
+title: IDebugProgram2::WriteDump | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17d75ace19ac53cbcd229d7c15de573c1ecb8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d2953b3f30a0d485b58afc04e8ce42158a7537e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905276"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Записывает в файл дампа.  
@@ -46,13 +46,13 @@ int WriteDump(
  [in] Значение из [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) перечисление, указывающее тип дампа, например, short или long.  
   
  `pszDumpUrl`  
- [in] Записать дамп для URL-адрес. Как правило, это в виде `file://c:\path\filename.ext`, но может быть любой допустимый URL-адрес.  
+ [in] Записываются в URL-адрес. Как правило, это в виде `file://c:\path\filename.ext`, но может быть любой допустимый URL-адрес.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Программа дампа обычно включает текущий кадр стека, сам стек, список потоков, выполняемых программой и возможно память, которому принадлежит программы.  
+ Программа дампа обычно будет включать текущий кадр стека, сам стек, список потоков, выполняющих в программы и возможно, программа, которой принадлежит память.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

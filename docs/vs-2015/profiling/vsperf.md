@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851041"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 С помощью программы командной строки **VsPerf** можно выполнять следующие задачи:  
   
-1.  профилирование приложений для Магазина Windows из командной строки, когда среда Visual Studio не установлена на устройстве;  
+1. профилирование приложений для Магазина Windows из командной строки, когда среда Visual Studio не установлена на устройстве;  
   
-2.  профилирование классических приложений Windows 8 и приложений Windows Server 2012 с помощью метода профилирования с выборкой.  
+2. профилирование классических приложений Windows 8 и приложений Windows Server 2012 с помощью метода профилирования с выборкой.  
   
- Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
  В этом разделе описываются параметры, которые можно использовать с программой командной строки `vsperf.exe`. В нем содержатся следующие подразделы:  

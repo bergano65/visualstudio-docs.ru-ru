@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias | Документы Microsoft
+title: IDebugObject2::GetAlias | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5917e0f78a2872cbd684830c8a03b1156a83734
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0919fe9617231a94f39b08b83c10e3b5ef645792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854342"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
-Получает псевдоним, связанный с этим объектом, если таковая имеется.  
+Возвращает псевдоним, связанный с данным объектом, если таковые имеются.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ int GetAlias(
  [out] Возвращает [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) объект, представляющий псевдоним для этого объекта; в противном случае возвращает значение null.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
  Псевдоним для объекта создается с помощью вызова [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) метод.  

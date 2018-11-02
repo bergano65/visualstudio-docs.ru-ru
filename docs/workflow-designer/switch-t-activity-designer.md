@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878197"
 ---
 # <a name="switcht-activity-designer"></a>Коммутатор\<T > конструктора действий
 
@@ -39,7 +39,7 @@ ms.locfileid: "36758020"
 В следующей таблице показаны наиболее используемые свойства действия <xref:System.Activities.Statements.Switch%601>, а также приводится описание их использования в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное имя конструктора операции <xref:System.Activities.Statements.Switch%601>. Значение по умолчанию — Switch < Int32\>. Можно изменить значение в **свойства** окна или напрямую в заголовке конструктора.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Указывает выражение, которое используется для сравнения ключей в коллекции вариантов для определения, какой вариант следует выполнить.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Указывает действие, которое следует выполнить, если совпадений не обнаружено. Нажмите кнопку **добавить действие** кнопку в конструкторе, чтобы открыть **по умолчанию** поле, где можно удалить действия.|

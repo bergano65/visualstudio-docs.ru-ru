@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION | Документы Microsoft
+title: BP_LOCATION | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b73a625e21da8e8ba026df140e437e96bdeb1ff5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821686"
 ---
 # <a name="bplocation"></a>BP_LOCATION
-Указывает тип структуры, используемый для описания расположение точки останова.  
+Указывает тип структуры, используемые для описания расположения точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,7 +55,7 @@ public struct BP_LOCATION {
   
 ## <a name="members"></a>Участники  
  `bpLocationType`  
- Значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисление, используемое для интерпретации `bpLocation` union или `unionmemberX` члены.  
+ Значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, используемые для интерпретации `bpLocation` объединение или `unionmemberX` членов.  
   
  `bpLocation`.`bplocCodeFileLine`  
  [C++] Содержит [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) структуры, если `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.  
@@ -79,21 +79,21 @@ public struct BP_LOCATION {
  [C++] Содержит [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) структуры, если `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember2`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember3`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember4`  
- [Только в C#] См. заметки о том, как интерпретировать.  
+ [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
   
- [Только в C#] `unionmemberX` Члены, интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpLocationType` значение затем найдите в других столбцах для определения содержимого каждого `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. Далее приведен пример способ интерпретации часть этой структуры в C#.  
+ [Только для C#] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpLocationType` значение, а затем найдите других столбцов, чтобы определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации часть этой структуры в C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -106,7 +106,7 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как интерпретировать `BP_LOCATION` структуры в C# для `BPLT_DATA_STRING` типа. Этот конкретный тип показано, как интерпретировать все четыре `unionmemberX` члены все возможные форматы (объекта, строки и номер).  
+ В этом примере показано, как интерпретировать `BP_LOCATION` структуры в C# для `BPLT_DATA_STRING` типа. Этот конкретный тип показано, как интерпретировать все четыре `unionmemberX` членов во всех возможных форматах (объекта, строковые и числовые).  
   
 ```csharp  
 using System;  
@@ -139,7 +139,7 @@ namespace MyPackage
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)   
  [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)   

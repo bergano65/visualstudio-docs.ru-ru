@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Документы Microsoft
+title: IDebugCustomAttribute::GetName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a33b4507cb54095a38671eaf310d87dae180be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11a4b986799cf03221b4af077fc3e1e5809c4137
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866484"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
-Возвращает имя настраиваемого атрибута.  
+Получает имя настраиваемого атрибута.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int GetName(
  [out] Возвращает строку, содержащую имя настраиваемого атрибута.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Именованный, возвращаемый этим методом соответствует имени класса, используемого для объявления атрибута. Это может не совсем соответствуют имя самого класса настраиваемого атрибута как C# позволяет суффикс «Attribute» для удаления из имени настраиваемого атрибута при использовании в объявлении.  
+ Именованный возвращаемого этим методом соответствует имени класса, используемого для объявления атрибута. Это может не совсем соответствовать имя самого класса настраиваемого атрибута как C# позволяет суффикс «Attribute» будет удален из имени настраиваемого атрибута, при использовании в объявлении.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

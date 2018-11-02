@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_managed | Документы Microsoft
+title: IDiaSymbol::get_managed | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23f59a4506ccf369b60bf45cf9320ff407b129c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 92e833bbb37e43d61911b18f27a1f1cf5a8e5b0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823246"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Возвращает флаг, указывающий, относится ли символ в управляемый код.  
+Получает флаг, указывающий, ссылается ли символ к управляемому коду.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_managed (
  [out] Возвращает `TRUE` Если символ относится к управляемому коду; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

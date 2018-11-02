@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Документы Microsoft
+title: IDebugProgramPublisher2::PublishProgram | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ac5bad37ad5df85022ba6572da44d32de39736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869765"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Этот метод делает программы, доступные для отладчики (DEs) и диспетчера сеанса отладки.  
+Этот метод выполняет программу для отладчиков (DEs) и диспетчер отладки сеансов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,19 +45,19 @@ int PublishProgram(
   
 #### <a name="parameters"></a>Параметры  
  `Engines`  
- [in] Массив идентификаторов GUID для DEs, которые можно запускать или подключать к этой программе.  
+ [in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.  
   
  `szFriendlyName`  
  [in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` интерфейс для программы (это значение используется в качестве файла cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программы)  
+ [in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Чтобы сделать программу более недоступны для отладки, вызовите [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+ Чтобы сделать программу более не доступны для отладки, вызовите [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Функция SccPopulateDirList | Документы Microsoft
+title: Функция SccPopulateDirList | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5315f3156f71310c92069ec3743232e98818b9a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b5839735e7564b486444cc0f9b65c71bc06f047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847998"
 ---
 # <a name="sccpopulatedirlist-function"></a>Функция SccPopulateDirList
-Эта функция определяет, какие каталоги и (при необходимости) файлы хранятся в системе управления версиями, поскольку список каталогов для проверки.  
+Эта функция определяет, какие каталоги и (при необходимости) файлы хранятся в системе управления версиями, при наличии списка каталогов для проверки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,27 +49,27 @@ SCCRTN SccPopulateDirList(
  [in] Массив путей к каталогам для проверки.  
   
  pfnPopulate  
- [in] Функция обратного вызова вызывается для каждого путь к каталогу и (необязательно) имя файла в `lpDirPaths` (см. [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) подробные сведения).  
+ [in] Функция обратного вызова для вызова для каждого путь к каталогу и (необязательно) имя файла в `lpDirPaths` (см. в разделе [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) сведения).  
   
  pvCallerData  
  [in] Без изменений значение, передаваемое функции обратного вызова.  
   
- fOptions  
- [in] Сочетание значений, которые управляют обработкой каталогов (в разделе «Флаги PopulateDirList» [битовые флаги, используемые определенные команды](../extensibility/bitflags-used-by-specific-commands.md) возможные значения).  
+ Возможности  
+ [in] Сочетание значения, определяющие, как обрабатываются каталоги (см. в разделе «Флаги PopulateDirList» [битовые флаги, используемые конкретными командами](../extensibility/bitflags-used-by-specific-commands.md) возможные значения).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|SCC_OK|Успешно завершил операцию.|  
+|SCC_OK|Операция успешно выполнена.|  
 |SCC_E_UNKNOWNERROR|Произошла ошибка.|  
   
 ## <a name="remarks"></a>Примечания  
- Функции обратного вызова, передаются только те каталоги и (необязательно) имена файлов, которые действительно находятся в хранилище системы управления версиями.  
+ Функции обратного вызова, передаются только те каталоги и (необязательно) имена файлов, которые фактически находятся в репозитории системы управления версиями.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
- [Битовые флаги, используемые определенных команд](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Битовые флаги, используемые конкретными командами](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Коды ошибок](../extensibility/error-codes.md)

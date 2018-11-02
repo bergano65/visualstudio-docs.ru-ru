@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Документы Microsoft
+title: IDebugExpressionEvaluator::SetLocale | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5836069aacb80a3d917a8e272150a477589c3ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882651"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Этот метод задает язык, используемый для создания печатных результатов.  
+Этот метод задает язык, используемый для создания печатного результатов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int SetLocale(
  [in] Идентификатор языка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод может вызываться несколько раз во время оценки выражений (Эстония) загружается, поэтому EE должен иметь возможность переключения языков на ходу. EE использует этот языковой стандарт для возврата сообщения об ошибках и строки на соответствующем языке.  
+ Этот метод может вызываться многократно хотя средство оценки выражений (EE) загружается, поэтому EE должен иметь возможность переключения языков в режиме реального времени. EE использует этот языковой стандарт для возврата сообщения об ошибках и строки на соответствующем языке.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

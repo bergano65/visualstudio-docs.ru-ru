@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_types | Документы Microsoft
+title: IDiaSymbol::get_types | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951318"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Извлекает массив типов компилятора для этого символа.  
+Извлекает массив типов специфичные для компилятора для этого символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,16 +39,16 @@ HRESULT get_types (
  [in] Размер буфера для хранения данных.  
   
  `pcTypes`  
- [out] Возвращает количество типов записи, или если `types` параметр `NULL`, затем общее число доступных типов.  
+ [out] Возвращает количество типов, созданных, или, если `types` параметр `NULL`, то общее число доступных типов.  
   
  `types[]`  
- [out] Массив, который должен быть заполнен с [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.  
+ [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

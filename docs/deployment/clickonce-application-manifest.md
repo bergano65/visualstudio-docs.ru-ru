@@ -17,44 +17,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a0a463e8548d1f520f9dc509aaa44e31bf3065
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872894"
 ---
 # <a name="clickonce-application-manifest"></a>Манифест приложения ClickOnce
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения является XML-файл, описывающий приложение, которое развертывается с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
-  
+
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты приложений имеют следующие элементы и атрибуты.  
-  
-|Элемент|Описание:|Атрибуты|  
-|-------------|-----------------|----------------|  
-|[\<сборка > элемент](../deployment/assembly-element-clickonce-application.md)|Обязательно. Это элемент верхнего уровня.|`manifestVersion`|  
-|[\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md)|Обязательно. Определяет основную сборку из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo > элемент](../deployment/trustinfo-element-clickonce-application.md)|Определяет требования к безопасности приложения.|Нет|  
-|[\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md)|Обязательно. Определяет точку входа в код приложения.|`name`|  
-|[\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md)|Обязательно. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
-|[\<Файл > элемент](../deployment/file-element-clickonce-application.md)|Необязательный. Идентифицирует каждого файла не являющиеся сборками, который используется приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)|Необязательный. Определяет расширение файла, нужно связать с приложением.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
-  
+
+
+| Элемент | Описание | Атрибуты |
+| - | - | - |
+| [\<сборка > элемент](../deployment/assembly-element-clickonce-application.md) | Обязательно. Это элемент верхнего уровня. | `manifestVersion` |
+| [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md) | Обязательно. Определяет основную сборку из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo > элемент](../deployment/trustinfo-element-clickonce-application.md) | Определяет требования к безопасности приложения. | Нет |
+| [\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) | Обязательно. Определяет точку входа в код приложения. | `name` |
+| [\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md) | Обязательно. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно. | Нет |
+| [Элемент \<file>](../deployment/file-element-clickonce-application.md) | Необязательный. Идентифицирует каждого файла не являющиеся сборками, который используется приложением. Может включать данные изоляции модели COM, связанные с этим файлом. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md) | Необязательный. Определяет расширение файла, нужно связать с приложением. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+
 ## <a name="remarks"></a>Примечания  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Файл манифеста приложения определяет приложение, развернутое с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Дополнительные сведения о [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] см. в разделе [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md).  
-  
+
 ## <a name="file-location"></a>Расположение файла  
  Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения относится к отдельной версии развертывания. По этой причине они должны храниться отдельно от манифеста развертывания. Распространенный способ — разместить их в подкаталоге соответствующая версия.  
-  
+
  Манифест приложения всегда должны быть подписаны перед развертыванием. Если вы вручную измените манифест приложения, необходимо использовать *mage.exe* для повторного подписания манифеста приложения, обновить манифест развертывания и затем повторно подписать манифест развертывания. Дополнительные сведения см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
-  
+
 ## <a name="file-name-syntax"></a>Синтаксис имени файла  
  Имя [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] файла манифеста приложения должно быть полное имя и расширение приложения, как указано в `assemblyIdentity` элемент, с расширением *.manifest*. Например, манифест приложения, который ссылается на *Example.exe* приложение будет использовать следующий синтаксис имени файла.  
-  
+
  `example.exe.manifest`  
-  
+
 ## <a name="example"></a>Пример  
  В следующем примере кода показан манифест приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
@@ -75,11 +76,11 @@ ms.locfileid: "39078191"
           UAC Manifest Options  
           If you want to change the Windows User Account Control level replace the   
           requestedExecutionLevel node with one of the following.  
-  
+
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />  
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />  
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />  
-  
+
          If you want to utilize File and Registry Virtualization for backward   
          compatibility then delete the requestedExecutionLevel node.  
     -->  
@@ -115,6 +116,6 @@ ms.locfileid: "39078191"
 ...  
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>  
 ```  
-  
+
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

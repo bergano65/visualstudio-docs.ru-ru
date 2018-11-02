@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208908"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219306"
 ---
 # <a name="save-data-in-a-transaction"></a>Сохранение данных в транзакции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "49208908"
   
 2.  Назовите проект **SavingDataInATransactionWalkthrough**.  
   
-3.  Выберите **приложения Windows**, а затем выберите**ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Выберите **приложения Windows**, а затем выберите **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** проекта создается и добавляется к **обозревателе решений**.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "49208908"
   
 2.  В **источников данных** выберите **добавить новый источник данных** запустить **мастер настройки источника данных**.  
   
-3.  На **Выбор типа источника данных**выберите **базы данных**, а затем выберите**Далее**.  
+3.  На **Выбор типа источника данных**выберите **базы данных**, а затем выберите **Далее**.  
   
 4.  На **Выбор подключения базы данных**экрана выполните одно из следующих:  
   
@@ -71,13 +71,13 @@ ms.locfileid: "49208908"
   
     -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно и создать подключение к базе данных "Борей".  
   
-5.  Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите**Далее**.  
+5.  Если для базы данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.  
   
-6.  На **сохранение подключения в файле конфигурации приложения** выберите**Далее**.  
+6.  На **сохранение подключения в файле конфигурации приложения** выберите **Далее**.  
   
 7.  На **Выбор объектов базы данных** экрана, разверните узел **таблиц** узла.  
   
-8.  Выберите `Customers` и `Orders` таблиц, а затем выберите**Готово**.  
+8.  Выберите `Customers` и `Orders` таблиц, а затем выберите **Готово**.  
   
      **NorthwindDataSet** добавляется в проект и `Customers` и `Orders` таблицы отображаются в **источников данных** окна.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "49208908"
   
 1.  На **проекта** меню, выберите**добавить ссылку**.  
   
-2.  Выберите **System.Transactions**(на **.NET** вкладку), а затем выберите**ОК**.  
+2.  Выберите **System.Transactions**(на **.NET** вкладку), а затем выберите **ОК**.  
   
      Ссылку на **System.Transactions** добавляется в проект.  
   
@@ -112,14 +112,14 @@ ms.locfileid: "49208908"
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>Изменение автоматически сформированного кода сохранения  
   
-1.  Выберите **Сохранить** кнопку **CustomersBindingNavigator** (кнопка со значком гибкого диска).  
+1. Выберите **Сохранить** кнопку **CustomersBindingNavigator** (кнопка со значком гибкого диска).  
   
-2.  Замените метод `CustomersBindingNavigatorSaveItem_Click` следующим кодом:  
+2. Замените метод `CustomersBindingNavigatorSaveItem_Click` следующим кодом:  
   
-     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
-     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
+    [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
+    [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
   
- При согласовании изменений связанных данных применяется следующий порядок.  
+   При согласовании изменений связанных данных применяется следующий порядок.  
   
 -   Удалите дочерние записи. (В этом случае удалите записи из `Orders` таблицы.)  
   
@@ -161,7 +161,7 @@ ms.locfileid: "49208908"
   
 #### <a name="to-run-the-application"></a>Запуск приложения  
   
--   Выберите**F5** для запуска приложения.  
+-   Выберите **F5** для запуска приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

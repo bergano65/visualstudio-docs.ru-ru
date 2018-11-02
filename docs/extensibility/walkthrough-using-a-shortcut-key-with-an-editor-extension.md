@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886504"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство: Сочетания клавиш в расширении редактора
 Можно ответить на сочетания клавиш в расширении редактора. Следующее пошаговое руководство демонстрирует добавление оформления представления для текстового представления с помощью сочетания клавиш. В этом пошаговом руководстве основан на шаблоне редактор оформление окна просмотра, а также вы можете добавить оформления с помощью + символ.  
@@ -28,21 +28,21 @@ ms.locfileid: "39566568"
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)  
   
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `KeyBindingTest`.  
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `KeyBindingTest`.  
   
-2.  Добавьте в проект шаблон элемента оформления текстового редактора и назовите его `KeyBindingTest`. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Добавьте в проект шаблон элемента оформления текстового редактора и назовите его `KeyBindingTest`. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Добавьте следующие ссылки и задать **CopyLocal** для `false`:  
+3. Добавьте следующие ссылки и задать **CopyLocal** для `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- В файле класса KeyBindingTest измените имя класса на PurpleCornerBox. Используйте лампочки, который отображается в левом поле на внесение соответствующих изменений. Внутри конструктора, измените имя элемента оформления уровня от **KeyBindingTest** для **PurpleCornerBox**:  
+   В файле класса KeyBindingTest измените имя класса на PurpleCornerBox. Используйте лампочки, который отображается в левом поле на внесение соответствующих изменений. Внутри конструктора, измените имя элемента оформления уровня от **KeyBindingTest** для **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -64,7 +64,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
  Фильтр команд представляет собой реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, который обрабатывает команду путем создания экземпляра оформления.  
   
-1.  Добавьте файл класса и назовите его `KeyBindingCommandFilter`.  
+1.  Добавьте файл класса с именем `KeyBindingCommandFilter`.  
   
 2.  Добавьте следующие инструкции using.  
   
@@ -204,73 +204,73 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 Обработчик команд — это реализация <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, который обрабатывает команду путем создания экземпляра оформления.  
   
-1.  Добавьте файл класса и назовите его `KeyBindingCommandHandler`.  
+1. Добавьте файл класса с именем `KeyBindingCommandHandler`.  
   
-2.  Добавьте следующие инструкции using.  
+2. Добавьте следующие инструкции using.  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  Следует наследовать класс с именем KeyBindingCommandHandler `ICommandHandler<TypeCharCommandArgs>`и экспортировать его как <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. Следует наследовать класс с именем KeyBindingCommandHandler `ICommandHandler<TypeCharCommandArgs>`и экспортировать его как <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  Добавьте отображаемое имя обработчика:  
+4. Добавьте отображаемое имя обработчика:  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  Реализуйте `GetCommandState()` метод следующим образом. Поскольку обработчику этой команды обрабатывает core редактор команда typechar, его можно делегировать, включение команду, чтобы базовым редактором.
+5. Реализуйте `GetCommandState()` метод следующим образом. Поскольку обработчику этой команды обрабатывает core редактор команда typechar, его можно делегировать, включение команду, чтобы базовым редактором.
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  Реализуйте `ExecuteCommand()` метод, поэтому он добавляет сиреневый поле в представление, если знак плюс (**+**) символа. 
+6. Реализуйте `ExecuteCommand()` метод, поэтому он добавляет сиреневый поле в представление, если знак плюс (**+**) символа. 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. Скопируйте определение элемента оформления уровня из *KeyBindingTestTextViewCreationListener.cs* файл *KeyBindingCommandHandler.cs* , а затем удалите  *KeyBindingTestTextViewCreationListener.cs* файла:
+       return false;
+   }
+   ```  
+   7. Скопируйте определение элемента оформления уровня из *KeyBindingTestTextViewCreationListener.cs* файл *KeyBindingCommandHandler.cs* , а затем удалите  *KeyBindingTestTextViewCreationListener.cs* файла:
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>Сделать оформление появляются в каждой строке  
 

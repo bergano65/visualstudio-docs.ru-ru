@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826628"
 ---
 # <a name="how-to-troubleshoot-services"></a>Практическое: Устранение неполадок в службах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы.  
   
--   Служба не зарегистрирована с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Служба не зарегистрирована с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Служба запрашивается, тип интерфейса, а не тип службы.  
+- Служба запрашивается, тип интерфейса, а не тип службы.  
   
--   Пакет VSPackage, запрашивающего службу не был размещен.  
+- Пакет VSPackage, запрашивающего службу не был размещен.  
   
--   Поставщик неверной службе используется.  
+- Поставщик неверной службе используется.  
   
- Если запрошенная служба недоступна, вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> возвращает значение null. Вы должны всегда тестировать со значением NULL после выполнения запроса службы:  
+  Если запрошенная служба недоступна, вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> возвращает значение null. Вы должны всегда тестировать со значением NULL после выполнения запроса службы:  
   
 ```csharp  
 IVsActivityLog log =   

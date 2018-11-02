@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940974"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Пошаговое руководство: Создание первой надстройки VSTO для Word
   В этом вводном пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Word. Возможности, создаваемые в таком решении, доступны для самого приложения независимо от того, какие документы открыты.  
@@ -32,15 +32,15 @@ ms.locfileid: "38808902"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Создание проекта надстройки VSTO для Word  
+- Создание проекта надстройки VSTO для Word  
   
--   Написание кода, который использует объектную модель Word для добавления текста в документ при его сохранении.  
+- Написание кода, который использует объектную модель Word для добавления текста в документ при его сохранении.  
   
--   Построение и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
--   Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+- Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -78,25 +78,25 @@ ms.locfileid: "38808902"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Добавление абзаца текста в сохраненный документ  
   
-1.  В файле кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Новый код определяет обработчик событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>, которое возникает при сохранении документа.  
+1. В файле кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Новый код определяет обработчик событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>, которое возникает при сохранении документа.  
   
-     Когда пользователь сохраняет документ, обработчик событий добавляет новый текст в начало документа.  
+    Когда пользователь сохраняет документ, обработчик событий добавляет новый текст в начало документа.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  Этот код использует значение индекса 1 для доступа к первому абзацу в коллекции <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Хотя Visual Basic и Visual C# используют массивы, которые начинаются с 0, нижней границей массива для большинства коллекций в объектной модели Word является 1. Дополнительные сведения см. в разделе [написания кода в решениях Office](../vsto/writing-code-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Этот код использует значение индекса 1 для доступа к первому абзацу в коллекции <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Хотя Visual Basic и Visual C# используют массивы, которые начинаются с 0, нижней границей массива для большинства коллекций в объектной модели Word является 1. Дополнительные сведения см. в разделе [написания кода в решениях Office](../vsto/writing-code-in-office-solutions.md).  
   
-2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_DocumentBeforeSave` к событию <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>.  
+2. Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он используется для подключения обработчика событий `Application_DocumentBeforeSave` к событию <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- Для изменения документа при его сохранении в приведенных выше примерах кода используются следующие объекты.  
+   Для изменения документа при его сохранении в приведенных выше примерах кода используются следующие объекты.  
   
 -   Поле `Application` класса `ThisAddIn`. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Word.Application>, который представляет текущий экземпляр Word.  
   
--   Параметр `Doc` обработчика событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Параметр `Doc` является объектом <xref:Microsoft.Office.Interop.Word.Document>, который представляет сохраненный документ. Дополнительные сведения см. в разделе [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
+-   Параметр `Doc` обработчика событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Параметр `Doc` является объектом <xref:Microsoft.Office.Interop.Word.Document>, который представляет сохраненный документ. Дополнительные сведения см. в разделе [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
   
 ## <a name="test-the-project"></a>Тестирование проекта  
   

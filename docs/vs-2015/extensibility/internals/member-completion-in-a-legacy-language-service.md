@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892692"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Завершение участников в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "49240816"
 ## <a name="how-it-works"></a>Принцип работы  
  Ниже приведены два способа, в которых показан список членов, используя классы MPF:  
   
--   Позиционирование курсора на идентификатор, или после символа завершения члена и выбрав **отображать список членов** из **IntelliSense** меню.  
+- Позиционирование курсора на идентификатор, или после символа завершения члена и выбрав **отображать список членов** из **IntelliSense** меню.  
   
--   <xref:Microsoft.VisualStudio.Package.IScanner> Сканера обнаруживает знака завершения элемента и задает триггер токена для <xref:Microsoft.VisualStudio.Package.TokenTriggers> этого символа.  
+- <xref:Microsoft.VisualStudio.Package.IScanner> Сканера обнаруживает знака завершения элемента и задает триггер токена для <xref:Microsoft.VisualStudio.Package.TokenTriggers> этого символа.  
   
- Символ завершения элемента показывает, что является членом класса, структуры или перечисления выполните. Например, в C# или Visual Basic символ завершения член является `.`, тогда как в C++ символ является `.` или `->`. Триггер имеет значение при сканировании выберите символ члена.  
+  Символ завершения элемента показывает, что является членом класса, структуры или перечисления выполните. Например, в C# или Visual Basic символ завершения член является `.`, тогда как в C++ символ является `.` или `->`. Триггер имеет значение при сканировании выберите символ члена.  
   
 ### <a name="the-intellisense-member-list-command"></a>Команда List членов технологией IntelliSense  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Команда инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класс и <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод синтаксического анализа с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>.  

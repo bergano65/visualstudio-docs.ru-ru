@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::GetCount | Документы Microsoft
+title: IEnumCodePaths2::GetCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5033c38de339b3c24824d11262a5edd8f8ca84cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a68bdedfe030f397a7da4e10b13f89fb1d69513
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900804"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 Возвращает число элементов в перечислении.  
@@ -44,10 +44,10 @@ int GetCount(
  [out] Возвращает число элементов в перечислении.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод не является частью обычной интерфейс перечисления COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
+ Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
   
 ## <a name="see-also"></a>См. также  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

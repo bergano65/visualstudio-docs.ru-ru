@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_write | Документы Microsoft
+title: IDiaSectionContrib::get_write | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9e8fa933e5a023298ab962025500f14fd05028
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c7884177bc35b007b9c1d5a0149f78f514af3e58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887804"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
-Возвращает флаг, указывающий, могут ли быть изменена разделе.  
+Получает флаг, указывающий, могут ли быть изменены разделе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT get_write (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если раздела могут быть записаны; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если разделе могут быть записаны в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

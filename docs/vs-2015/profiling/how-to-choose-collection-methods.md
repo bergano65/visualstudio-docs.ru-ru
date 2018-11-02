@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940961"
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49274421"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Свойство **Метод** сеанса анализа производительности можно использовать для указания метода сбора данных, наиболее подходящего для вашего приложения. Метод сбора можно задать в мастере производительности, обозревателе производительности или на страницах свойств сеанса производительности. Если вы используете программы командной строки, дополнительные сведения см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md).  
+  Свойство **Метод** сеанса анализа производительности можно использовать для указания метода сбора данных, наиболее подходящего для вашего приложения. Метод сбора можно задать в мастере производительности, обозревателе производительности или на страницах свойств сеанса производительности. Если вы используете программы командной строки, дополнительные сведения см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="performance-wizard"></a>мастер повышения производительности  
   

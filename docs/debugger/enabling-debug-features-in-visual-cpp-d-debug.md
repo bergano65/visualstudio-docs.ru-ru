@@ -1,5 +1,5 @@
 ---
-title: Включение параметров отладки в Visual C++ (-D_DEBUG) | Документы Microsoft
+title: Включение отладки в Visual C++ (-D_DEBUG) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,23 +26,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5298879d93bf4e86df7610d5891e73bdbb67c4a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772467caf74a381fc2ef5cc74e8e31bf2ff0503c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949621"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Включение параметров отладки в Visual C++ (/D_DEBUG)
-В [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], возможности отладки, такие как утверждения, доступны при компиляции программы с заданным символом **_DEBUG** определен. Можно определить **_DEBUG** одним из двух способов:  
+В [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], возможности отладки, такие как утверждения, доступны при компиляции программы с символом **_DEBUG** определен. Вы можете определить **_DEBUG** одним из двух способов:  
   
--   Укажите **#define _DEBUG** в исходном коде, или  
+- Укажите **#define _DEBUG** в исходном коде, или  
   
--   Укажите **/D_DEBUG** параметр компилятора. (При создании проекта в Visual Studio с использованием мастеров, **/D_DEBUG** определяется автоматически в конфигурации отладчика.)  
+- Укажите **/D_DEBUG** параметр компилятора. (При создании проекта в Visual Studio с использованием мастеров **/D_DEBUG** автоматически определяется в конфигурации отладки.)  
   
- Когда **_DEBUG** будет определена, компилятор компилирует разделы кода, окруженный **#ifdef _DEBUG** и `#endif`.  
+  Когда **_DEBUG** будет определена, компилятор компилирует разделы кода, заключив его в **#ifdef _DEBUG** и `#endif`.  
   
- Конфигурация отладчика программы MFC должна компоноваться с версией отладчика библиотеки MFC. Файлы заголовков MFC определяют правильную версию для компоновки библиотеки MFC на основе символов, которые вы определили, таких как **_DEBUG** и **_UNICODE**. Дополнительные сведения см. в разделе [версии библиотек MFC](/cpp/mfc/mfc-library-versions).  
+  Конфигурация отладчика программы MFC должна компоноваться с версией отладчика библиотеки MFC. Файлы заголовков MFC определить правильную версию для компоновки библиотеки MFC на основе символов, которые вы определили, такие как **_DEBUG** и **_UNICODE**. Дополнительные сведения см. в разделе [версии библиотек MFC](/cpp/mfc/mfc-library-versions).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка машинного кода](../debugger/debugging-native-code.md)   

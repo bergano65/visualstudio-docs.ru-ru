@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943002"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.
@@ -54,27 +54,27 @@ ms.locfileid: "39177702"
 
 #### <a name="to-execute-a-function-at-design-time"></a>Выполнение функции во время разработки
 
-1.  Скопируйте следующий код в консольное приложение [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
+1. Скопируйте следующий код в консольное приложение [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  В меню **Отладка** выберите пункт **Окна** и щелкните **Интерпретация**.
+2. В меню **Отладка** выберите пункт **Окна** и щелкните **Интерпретация**.
 
-3.  Введите в окне **Интерпретация** `?MyFunction(2)` и нажмите клавишу ВВОД.
+3. Введите в окне **Интерпретация** `?MyFunction(2)` и нажмите клавишу ВВОД.
 
-     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.
+    Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.
 
 Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).
 
@@ -131,5 +131,5 @@ ms.locfileid: "39177702"
 - [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)
 - [Основы отладки](../../debugger/getting-started-with-the-debugger.md)
 - [Пошаговое руководство. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

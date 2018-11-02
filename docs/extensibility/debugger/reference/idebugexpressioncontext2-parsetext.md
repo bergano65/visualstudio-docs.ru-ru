@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Документы Microsoft
+title: IDebugExpressionContext2::ParseText | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95a8a76e7315f8963ea415f88bd9615f3b123a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8672dcdf92ce7341c7ae540c4836a1775671da7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832398"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Выполняет синтаксический анализ выражения в виде текста для дальнейшего определения.  
@@ -51,7 +51,7 @@ int ParseText(
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in] Выражение может быть проанализирован.  
+ [in] Выражение для синтаксического анализа.  
   
  `dwFlags`  
  [in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.  
@@ -60,7 +60,7 @@ int ParseText(
  [in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.  
   
  `ppExpr`  
- [out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированный выражения, которое будет готов для привязки и оценки.  
+ [out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.  
   
  `pbstrError`  
  [out] Возвращает сообщение об ошибке, если выражение содержит ошибку.  
@@ -69,15 +69,15 @@ int ParseText(
  [out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- При вызове этого метода модуля отладки (DE) следует синтаксический анализ выражения и проверить его правильность. `pbstrError` И `pichError` параметров может быть заполнен, если выражение является недопустимым.  
+ При вызове этого метода, модуля отладки (DE) следует синтаксический анализ выражения и проверьте его правильность. `pbstrError` И `pichError` параметров может быть заполнен, если выражение является недопустимым.  
   
- Обратите внимание, что выражение не вычисляется, только синтаксический анализ. Последующий вызов [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) методы вычисляет проанализированное выражение.  
+ Обратите внимание на то, что выражение не вычисляется, только синтаксический анализ. Последующий вызов [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) методы вычисляет проанализированное выражение.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простой `CEnvBlock` объекта, который предоставляет [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейса. В этом примере считает, что выражение может быть проанализирован как имя переменной среды и возвращает значение этой переменной.  
+ В следующем примере показано, как реализовать этот метод для простого `CEnvBlock` объекта, который предоставляет [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс. В этом примере считает, что выражение для синтаксического анализа, как имя переменной среды и извлекает значение из переменной.  
   
 ```cpp  
 HRESULT CEnvBlock::ParseText(  

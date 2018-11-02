@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950574"
 ---
 # <a name="transactionscope-activity-designer"></a>Конструктор действия TransactionScope
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755802"
 В следующей таблице показаны свойства <xref:System.Activities.Statements.TransactionScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> И <xref:System.Activities.Statements.TransactionScope.Body%2A> свойства можно изменить на поверхности конструктора рабочих процессов. Но другие свойства следует изменять в таблице свойств.
 
 |Имя свойства|Обязательно|Использование|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.Activities.Statements.TransactionScope>. По умолчанию выбрано значение TransactionScope. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите его из **элементов** в **текст** поле на **TransactionScope** конструктора действий с текстом подсказки «перетащить действие здесь».|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Да|Задает <xref:System.Transactions.IsolationLevel> для объекта <xref:System.Activities.Statements.TransactionScope>.|
@@ -48,5 +48,5 @@ ms.locfileid: "36755802"
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Компенсации](../workflow-designer/compensate-activity-designer.md)
-- [Подтверждение](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_addressOffset | Документы Microsoft
+title: IDiaFrameData::get_addressOffset | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d515a6309e0f9c1b7dd3f8cefe67a78666b0b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ea56af689d856cbda1e1207134a8e5edcd87952
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853914"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-Извлекает часть смещения адреса код для кадра.  
+Извлекает часть смещения адреса кода для кадра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT get_addressOffset (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает часть смещения адреса код для кадра.  
+ [out] Возвращает часть смещения адреса кода для кадра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

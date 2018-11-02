@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop | Документы Microsoft
+title: IDebugCanStopEvent2::CanStop | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3e2507ba86e00434c12a67ba70cad51fa5850ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 545d1ea57c207429b7aeb999384b6d5ffbb6c723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861674"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-Уведомляет отладчик (DE) ли Остановка текущей позиции кода или просто продолжить выполнение.  
+Уведомляет отладчик (DE), ли отменить в текущем положении кода или просто продолжить выполнение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,15 +41,15 @@ int CanStop (
   
 #### <a name="parameters"></a>Параметры  
  `fCanStop`  
- [in] Не равно нулю (`TRUE`) Если DE остановки в коде текущего расположения; в противном случае — нуль (`FALSE`).  
+ [in] Ненулевое значение (`TRUE`) Если DE остановки в текущее расположение кода; в противном случае — нуль (`FALSE`).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Получатель данного события обычно вызывает [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод, чтобы определить причину DE хочет остановить, а затем вызывает `IDebugCanStopEvent2::CanStop` метод с соответствующий ответ.  
+ Получатель этого события обычно не вызывает [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод, чтобы определить причину DE хочет остановить, а затем вызывает `IDebugCanStopEvent2::CanStop` метод с соответствующий ответ.  
   
- При остановке DE, он отправляет событие, которое описывает причину остановки. Обычно существует два события, которые отправляются разрыв пользователя или сигнала, представленного [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) интерфейса и точка останова события, представленного [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) интерфейса.  
+ Если перестает DE, он отправляет событие, описывающее причину остановки. Обычно существуют два события, которые отправляются разрыв пользователя или сигнала, представленный [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) интерфейса и событие точки останова, представленный [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

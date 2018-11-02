@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851612"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
 
@@ -33,7 +33,7 @@ ms.locfileid: "44321194"
  Далее перечислены некоторые ключевые события, которые можно использовать при создании адаптера диагностических данных. Полный список событий адаптера диагностических данных см. в абстрактном классе <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |событие|Описание:|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Начало тестового запуска|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Завершение тестового запуска|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Начало каждого теста в тестовом запуске|
@@ -52,78 +52,78 @@ ms.locfileid: "44321194"
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Создание и установка адаптера диагностических данных
 
-1.  Создайте новую библиотеку классов.
+1. Создайте новую библиотеку классов.
 
-    1.  В меню **Файл** последовательно выберите команды **Создать** и **Создать проект**.
+   1.  В меню **Файл** последовательно выберите команды **Создать** и **Создать проект**.
 
-    2.  В разделе **Типы проектов** выберите используемый язык.
+   2.  В разделе **Типы проектов** выберите используемый язык.
 
-    3.  В разделе **Установленные шаблоны Visual Studio** выберите **Библиотека классов**.
+   3.  В разделе **Установленные шаблоны Visual Studio** выберите **Библиотека классов**.
 
-    4.  Введите имя адаптера диагностических данных.
+   4.  Введите имя адаптера диагностических данных.
 
-    5.  Нажмите кнопку **ОК**.
+   5.  Нажмите кнопку **ОК**.
 
-2.  Добавьте сборку **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Добавьте сборку **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  В **обозревателе решений** щелкните правой кнопкой мыши пункт **Ссылки** и выберите команду **Добавить ссылку**.
+   1.  В **обозревателе решений** щелкните правой кнопкой мыши пункт **Ссылки** и выберите команду **Добавить ссылку**.
 
-    2.  Выберите **.NET** и найдите **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Выберите **.NET** и найдите **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Нажмите кнопку **ОК**.
+   3.  Нажмите кнопку **ОК**.
 
-3.  Добавьте сборку **Microsoft.VisualStudio.QualityTools.Common**.
+3. Добавьте сборку **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  В **обозревателе решений** щелкните правой кнопкой мыши папку **Ссылки** и выберите команду **Добавить ссылку**.
+   1.  В **обозревателе решений** щелкните правой кнопкой мыши папку **Ссылки** и выберите команду **Добавить ссылку**.
 
-    2.  Выберите **/.NET** и найдите **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Выберите **/.NET** и найдите **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Нажмите кнопку **ОК**.
+   3.  Нажмите кнопку **ОК**.
 
-4.  Добавьте в класс файла следующие выражения с оператором `using`:
+4. Добавьте в класс файла следующие выражения с оператором `using`:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Добавьте <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> в класс адаптера диагностических данных, чтобы он определялся как адаптер диагностических данных, заменив параметры **Организация**, **Продукт** и **Версия** соответствующими сведениями об этом адаптере диагностических данных:
+5. Добавьте <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> в класс адаптера диагностических данных, чтобы он определялся как адаптер диагностических данных, заменив параметры **Организация**, **Продукт** и **Версия** соответствующими сведениями об этом адаптере диагностических данных:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Добавьте в класс атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>, заменив параметры соответствующими сведениями об этом адаптере диагностических данных.
+6. Добавьте в класс атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>, заменив параметры соответствующими сведениями об этом адаптере диагностических данных.
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Это понятное имя будет отображаться в действии параметров тестирования.
+    Это понятное имя будет отображаться в действии параметров тестирования.
 
-    > [!NOTE]
-    > Можно также добавить атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>, чтобы указать тип `Type` пользовательского редактора конфигураций для этого адаптера данных, а также при необходимости задать файл справки, используемый для редактора.
-    >
-    > Кроме того, можно применить атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>, указав тем самым, что адаптер должен быть всегда включен.
+   > [!NOTE]
+   > Можно также добавить атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>, чтобы указать тип `Type` пользовательского редактора конфигураций для этого адаптера данных, а также при необходимости задать файл справки, используемый для редактора.
+   >
+   > Кроме того, можно применить атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>, указав тем самым, что адаптер должен быть всегда включен.
 
-7.  Класс создаваемого адаптера диагностических данных должен быть унаследован от класса <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> следующим образом:
+7. Класс создаваемого адаптера диагностических данных должен быть унаследован от класса <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> следующим образом:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Добавление локальных переменных производится следующим образом.
+8. Добавление локальных переменных производится следующим образом.
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Добавьте методы <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> и **Dispose**. С помощью метода `Initialize` можно инициализировать приемник данных и любые данные конфигурации из параметров тестирования, а также регистрировать требуемые обработчики событий. Это делается следующим образом.
 
@@ -273,7 +273,7 @@ ms.locfileid: "44321194"
 
 17. Выполните тесты с данными параметрами тестирования, выбрав свой адаптер диагностических данных.
 
-   Указанный файл данных присоединяется к результатам тестов.
+    Указанный файл данных присоединяется к результатам тестов.
 
 ## <a name="see-also"></a>См. также
 

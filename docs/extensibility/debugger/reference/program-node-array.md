@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY | Документы Microsoft
+title: PROGRAM_NODE_ARRAY | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 079c6dc3ef36c19867ed4b292040876f630e63df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c8db3ee875a86f072a75f084dbe0c7f68f847b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832989"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 Содержит массив объектов, описывающих программы интерес.  
@@ -43,10 +43,10 @@ public struct tagPROGRAM_NODE_ARRAY {
   
 ## <a name="members"></a>Участники  
  dwCount  
- Количество объектов в `Members` массива.  
+ Число объектов в `Members` массива.  
   
  Участники  
- Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объектов, описывающий запрошенный программы.  
+ Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объектов, описывающих программы, в запросе.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура является частью [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуру, которая в свою очередь заполняется с помощью вызова [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод.  
@@ -59,7 +59,7 @@ public struct tagPROGRAM_NODE_ARRAY {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3869a9d3350daac8b08398ed5afaab0729a05c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 8c2adca249ba245825f9b664b46e1b4674d0ea50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879913"
 ---
 # <a name="commandtable-element"></a>Элемент CommandTable
 CommandTable является корневым элементом *.vsct* файла. Это файл, который определяет фактическую структуру и тип команды, которые VSPackage предоставляет интегрированную среду разработки. Команды могут включать элементы меню, меню, панелей инструментов и поля со списком. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -47,10 +47,10 @@ CommandTable является корневым элементом *.vsct* фай
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|xmlns|Обязательно. Пространства имен XML:<br /><br /> xmlns =» http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs =» http://www.w3.org/2001/XMLSchema"|  
-|язык|Необязательный. Атрибут языка может использоваться для указания языка по умолчанию всех \<строки > элементы в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-us»|  
+| Атрибут | Описание |
+|-----------| - |
+| xmlns | Обязательно. Пространства имен XML:<br /><br /> xmlns =»<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs =»<http://www.w3.org/2001/XMLSchema>" |
+| язык | Необязательный. Атрибут языка может использоваться для указания языка по умолчанию всех \<строки > элементы в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-us» |
   
 ### <a name="child-elements"></a>Дочерние элементы  
   

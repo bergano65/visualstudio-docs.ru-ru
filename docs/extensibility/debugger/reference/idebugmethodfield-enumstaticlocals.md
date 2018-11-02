@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Документы Microsoft
+title: IDebugMethodField::EnumStaticLocals | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761e696cd774e0414b58c9d2a9f1482d298489f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905094"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-Создает перечислитель для статических локальных переменных метода.  
+Создает перечислитель для Статические локальные переменные метода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,7 +47,7 @@ int EnumStaticLocals(
  В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет статических локальных переменных. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объектов, представляющих различные типы статических локальных переменных. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод для каждого объекта, чтобы определить точно локального статического объекта вида.  
+ Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объектов, представляющих различные типы статических локальных переменных. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) для каждого объекта, чтобы определить точно статическая локальная объекте вида метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

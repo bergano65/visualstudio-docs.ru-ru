@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9bb652ee6b7ea9500d2ac153ca06d8b11430c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942553"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Чтение модели UML в программном коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,31 +81,31 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>Добавление ссылок для чтения модели в отдельном приложении  
   
-1.  В обозревателе решений щелкните правой кнопкой мыши проект, в котором выполняется сборка приложения и нажмите кнопку **свойства**. В редакторе свойств в **приложения** вкладке **требуемой версии .NET Framework** до требуемой версии платформы .NET Framework.  
+1. В обозревателе решений щелкните правой кнопкой мыши проект, в котором выполняется сборка приложения и нажмите кнопку **свойства**. В редакторе свойств в **приложения** вкладке **требуемой версии .NET Framework** до требуемой версии платформы .NET Framework.  
   
-2.  Добавьте ссылки [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)], необходимые для доступа к моделям UML, например:  
+2. Добавьте ссылки [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)], необходимые для доступа к моделям UML, например:  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3.  Помимо ссылок, перечисленных в предыдущих разделах, добавьте в проект следующие ссылки из **\Common7\IDE\PrivateAssemblies Visual Studio [версия] \Program Files\Microsoft**:  
+3. Помимо ссылок, перечисленных в предыдущих разделах, добавьте в проект следующие ссылки из **\Common7\IDE\PrivateAssemblies Visual Studio [версия] \Program Files\Microsoft**:  
   
-    -   Microsoft.VisualStudio.Uml.dll  
+   - Microsoft.VisualStudio.Uml.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
      Если нужно обеспечить возможность чтения схем в приложении, потребуются также следующие ссылки:  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
   
 ## <a name="see-also"></a>См. также  
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)   

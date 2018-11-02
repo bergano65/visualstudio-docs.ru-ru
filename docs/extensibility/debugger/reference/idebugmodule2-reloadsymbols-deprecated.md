@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Документы Microsoft
+title: IDebugModule2::ReloadSymbols_Deprecated | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd383130c1af1765014adfa438482543c336ede
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09f2e81699683ec49155faceb375da3d636ed4c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934045"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-УСТАРЕВШИЕ. НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ. Повторно загружает символы для данного модуля.  
+УСТАРЕВШИЕ. НЕ ИСПОЛЬЗУЙТЕ. Повторно загружает символы для этого модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,13 +46,13 @@ int ReloadSymbols(
  [in] Путь в хранилище символов.  
   
  `pbstrDebugMessage`  
- [out] Возвращает информационное сообщение, такие как состояние или сообщение об ошибке, который отображается справа от имени модуля в окне «модули».  
+ [out] Возвращает информационное сообщение, такие как состояние или сообщения об ошибке, которое отображается в правой части имя модуля в окно "Модули".  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Модуль отладки всегда должны возвращать `E_FAIL`.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Модуль отладки всегда должны возвращать `E_FAIL`.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод больше не поддерживается. Реализуйте [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) метод вместо него.  
+ Этот метод больше не поддерживается. Реализуйте [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) метод вместо этого.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

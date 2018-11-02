@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830682"
 ---
 # <a name="resources-in-vspackages"></a>Ресурсы в пакетах VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ ms.locfileid: "49188584"
   
  Некоторые ресурсы не может быть внедрен в пакетах VSPackage. Можно включить следующие управляемые типы:  
   
--   Строки  
+- Строки  
   
--   Ключи загрузки пакетов (которые также являются строками)  
+- Ключи загрузки пакетов (которые также являются строками)  
   
--   Значки окна средств  
+- Значки окна средств  
   
--   Скомпилированные файлы таблицы выходных данных команды (CTO)  
+- Скомпилированные файлы таблицы выходных данных команды (CTO)  
   
--   Руководитель технологического ОТДЕЛА компании точечных рисунков  
+- Руководитель технологического ОТДЕЛА компании точечных рисунков  
   
--   Справка по командной строке  
+- Справка по командной строке  
   
--   О данных диалоговых окон  
+- О данных диалоговых окон  
   
- Ресурсы в управляемом пакете выбираются по идентификатору ресурса. Исключением является файл руководитель технологического ОТДЕЛА компании, которая должна быть названа CTMENU. Файл руководитель технологического ОТДЕЛА компании должен указываться в нее ресурсов, как `byte[]`. Все прочие элементы ресурсов идентифицируются по типу.  
+  Ресурсы в управляемом пакете выбираются по идентификатору ресурса. Исключением является файл руководитель технологического ОТДЕЛА компании, которая должна быть названа CTMENU. Файл руководитель технологического ОТДЕЛА компании должен указываться в нее ресурсов, как `byte[]`. Все прочие элементы ресурсов идентифицируются по типу.  
   
- Можно использовать <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> атрибут для указания [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] что управляемые ресурсы доступны.  
+  Можно использовать <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> атрибут для указания [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] что управляемые ресурсы доступны.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Установка <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> указывает, что таким образом [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен игнорировать неуправляемых вспомогательные библиотеки DLL, при поиске ресурсов, например, с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Если [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] обнаруживает два или более ресурсов, которые имеют тот же идентификатор ресурса, используется первый ресурс, он находит.  
+  Установка <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> указывает, что таким образом [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен игнорировать неуправляемых вспомогательные библиотеки DLL, при поиске ресурсов, например, с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Если [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] обнаруживает два или более ресурсов, которые имеют тот же идентификатор ресурса, используется первый ресурс, он находит.  
   
 ## <a name="example"></a>Пример  
  Следующий пример — это управляемое представление значка окна инструментов.  

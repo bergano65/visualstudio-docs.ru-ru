@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Документы Microsoft
+title: IDebugProcessSecurity::GetUserName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94fcc74943deb33e7f98ba24e9d7389a9d5746fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f13d7597877104613f0e6ef6380abf0b6bc2a594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891476"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Возвращает имя пользователя из поставщика порта.  
+Возвращает имя пользователя от поставщика порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +42,10 @@ int GetUserName (
  [out] Строка, содержащая имя пользователя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если метод выполнен успешно, возвращается значение `S_OK`. В противном случае возвращается код ошибки.  
+ Если метод завершается успешно, возвращается `S_OK`. В противном случае он возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- `GetUserName` Возвращает имя пользователя, который отображается в **имя пользователя** столбец **присоединиться к процессу** диалоговое окно. Чтобы просмотреть **присоединиться к процессу** диалоговое окно, нажмите кнопку **присоединиться к процессу** на **средства** меню в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  
+ `GetUserName` Возвращает имя пользователя, который отображается в **имя пользователя** столбец **присоединение к процессу** диалоговое окно. Чтобы просмотреть **присоединение к процессу** диалоговом окне щелкните **присоединение к процессу** на **средства** меню в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

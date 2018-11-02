@@ -10,12 +10,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 17c0b75fbc4625a11a4d1e418cb5830d04ecab90
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 751cf3c05841be39c961544b7cedba95ca64b808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940394"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Программа установки, установка и проверки для пользователей Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ ms.locfileid: "49278711"
   
  Для работы с Xamarin на Mac потребуется следующее:  
   
--   Учетная запись Xamarin. Перейдите к [ https://www.xamarin.com/ ](https://www.xamarin.com/) и нажмите кнопку **Sign In** в верхнем правом углу страницы, затем нажмите кнопку **создать учетную запись** на появившейся странице. Выберите адрес электронной почты и пароль для учетной записи Xamarin.  
+- Учетная запись Xamarin. Перейдите к [ https://www.xamarin.com/ ](https://www.xamarin.com/) и нажмите кнопку **Sign In** в верхнем правом углу страницы, затем нажмите кнопку **создать учетную запись** на появившейся странице. Выберите адрес электронной почты и пароль для учетной записи Xamarin.  
   
--   компьютер Mac с OS X Yosemite (10.10) или более поздней версии с установленными Xcode 7 и Xamarin 4;  
+- компьютер Mac с OS X Yosemite (10.10) или более поздней версии с установленными Xcode 7 и Xamarin 4;  
   
--   одна из следующих конфигураций:  
+- одна из следующих конфигураций:  
   
-    -   **Запуск Xamarin Studio непосредственно на компьютере Mac.** Xamarin Studio — окружение разработки Xamarin, которое поддерживает создание приложений для Android, iOS и Windows с помощью C#.  Краткий обзор Xamarin Studio см. на [сайте с основной информацией о Xamarin Studio](https://xamarin.com/studio) (xamarin.com).  
+  -   **Запуск Xamarin Studio непосредственно на компьютере Mac.** Xamarin Studio — окружение разработки Xamarin, которое поддерживает создание приложений для Android, iOS и Windows с помощью C#.  Краткий обзор Xamarin Studio см. на [сайте с основной информацией о Xamarin Studio](https://xamarin.com/studio) (xamarin.com).  
   
-    -   **Parallels или VMWare уже настроен на компьютере Mac.** Запустите Windows с Visual Studio 2015 и Xamarin 4 внутри Parallels или VMWare.  В такой конфигурации Xamarin — это расширение, установленное для Visual Studio, которое позволяет использовать Visual Studio в качестве окружения разработки для создания приложений Android, iOS и Windows Phone с помощью C#.  Обратите внимание, что можно получить бесплатную 3-месячную подписку на Parallels в рамках программы Visual Studio Developer Essentials. См. публикацию [Microsoft Visual Studio Dev Essentials будет включать доступ к Parallels Desktop Pro и Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access, блог Parallels).  
+  -   **Parallels или VMWare уже настроен на компьютере Mac.** Запустите Windows с Visual Studio 2015 и Xamarin 4 внутри Parallels или VMWare.  В такой конфигурации Xamarin — это расширение, установленное для Visual Studio, которое позволяет использовать Visual Studio в качестве окружения разработки для создания приложений Android, iOS и Windows Phone с помощью C#.  Обратите внимание, что можно получить бесплатную 3-месячную подписку на Parallels в рамках программы Visual Studio Developer Essentials. См. публикацию [Microsoft Visual Studio Dev Essentials будет включать доступ к Parallels Desktop Pro и Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access, блог Parallels).  
   
- В этой статье содержатся инструкции, связанные с данными требованиями.  Во время установки вы можете получить прочитать статью [Подробности о разработке мобильных приложений с использованием Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md), чтобы изучить и посмотреть необходимые материалы общего характера.  
+  В этой статье содержатся инструкции, связанные с данными требованиями.  Во время установки вы можете получить прочитать статью [Подробности о разработке мобильных приложений с использованием Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md), чтобы изучить и посмотреть необходимые материалы общего характера.  
   
- **Содержание раздела**  
+  **Содержание раздела**  
   
--   [Настройка Mac (Apple ID, Xcode и Xamarin)](#mac)  
+- [Настройка Mac (Apple ID, Xcode и Xamarin)](#mac)  
   
--   [Программа установки Windows в Parallels (Visual Studio и Xamarin)](#windows)  
+- [Программа установки Windows в Parallels (Visual Studio и Xamarin)](#windows)  
   
--   [Проверка окружения](#verify)  
+- [Проверка окружения](#verify)  
   
 ##  <a name="mac"></a> Настройка Mac (Apple ID, Xcode и Xamarin)  
   
@@ -92,15 +92,15 @@ ms.locfileid: "49278711"
   
  **Android**  
   
-1.  Проверьте, правильно ли создается проект Android, следуя инструкциям в статье [Создание проекта Android](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).  
+1. Проверьте, правильно ли создается проект Android, следуя инструкциям в статье [Создание проекта Android](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).  
   
-2.  Проверьте отладку в проигрывателе Android Player с помощью статьи [Android Player > "Документация по интеграции с Xamarin Studio"](https://developer.xamarin.com/guides/android/getting_started/installation/android-player/#Integration_with_Xamarin_Studio) (xamarin.com).  
+2. Проверьте отладку в проигрывателе Android Player с помощью статьи [Android Player > "Документация по интеграции с Xamarin Studio"](https://developer.xamarin.com/guides/android/getting_started/installation/android-player/#Integration_with_Xamarin_Studio) (xamarin.com).  
   
- **iOS**  
+   **iOS**  
   
-1.  Проверьте, правильно ли создается проект iOS, следуя инструкциям в статье [Создание проекта iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com).  
+3. Проверьте, правильно ли создается проект iOS, следуя инструкциям в статье [Создание проекта iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com).  
   
-2.  Проверьте отладку в симуляторе iOS с помощью статьи [Документация по отладке в симуляторе](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
+4. Проверьте отладку в симуляторе iOS с помощью статьи [Документация по отладке в симуляторе](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
   
 ### <a name="visual-studio"></a>Visual Studio  
  Во-первых, убедитесь, что при переходе по указанным ссылкам у вас выбран **Visual Studio** в правом верхнем углу, чтобы увидеть правильную версию документации по Xamarin:  
@@ -111,31 +111,31 @@ ms.locfileid: "49278711"
   
  **Android**  
   
-1.  Проверьте, правильно ли создается проект Android, следуя инструкциям в статье [Создание проекта Android](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).  
+1. Проверьте, правильно ли создается проект Android, следуя инструкциям в статье [Создание проекта Android](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).  
   
-2.  Проверьте конструктор Android: в проекте Android в обозревателе решений откройте файл **"Ресурсы" > "Макет" > "Main.axml"**.  
+2. Проверьте конструктор Android: в проекте Android в обозревателе решений откройте файл **"Ресурсы" > "Макет" > "Main.axml"**.  
   
-    -   Если вы появляется ошибка «слишком старый установленный пакет SDK Android», нажмите кнопку **Open Android SDK** в том сообщении и выберите новейшую версию пакета SDK. Обратите внимание, что необходимо использовать Visual Studio от имени администратора, чтобы обновить пакет SDK.  
+   -   Если вы появляется ошибка «слишком старый установленный пакет SDK Android», нажмите кнопку **Open Android SDK** в том сообщении и выберите новейшую версию пакета SDK. Обратите внимание, что необходимо использовать Visual Studio от имени администратора, чтобы обновить пакет SDK.  
   
-3.  Проверьте возможность подключения из Visual Studio к эмулятору, установленному на вашем Mac.  В результате вы должны увидеть проигрыватель Xamarin Player в списке эмуляторов, которые доступны в Visual Studio для отладки.  Чтобы сделать это, следуйте инструкциям в статье [Подключение Visual Studio к Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (xamarin.com).  
+3. Проверьте возможность подключения из Visual Studio к эмулятору, установленному на вашем Mac.  В результате вы должны увидеть проигрыватель Xamarin Player в списке эмуляторов, которые доступны в Visual Studio для отладки.  Чтобы сделать это, следуйте инструкциям в статье [Подключение Visual Studio к Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (xamarin.com).  
   
- **iOS**  
+   **iOS**  
   
-1.  Убедитесь, что компьютер Mac доступен в сети и соединен с Visual Studio, как описано в статье [Подключение к Mac с помощью XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com).  
+4. Убедитесь, что компьютер Mac доступен в сети и соединен с Visual Studio, как описано в статье [Подключение к Mac с помощью XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com).  
   
-2.  Проверьте, правильно ли создается проект iOS, следуя инструкциям в статье [Создание проекта iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com).  
+5. Проверьте, правильно ли создается проект iOS, следуя инструкциям в статье [Создание проекта iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com).  
   
-3.  Проверьте конструктор раскадровки: в проекте iOS в обозревателе решений откройте файл **MainStoryboard.storyboard** . Здесь Visual Studio размещает конструктор, который выполняется удаленно на компьютере Mac.  
+6. Проверьте конструктор раскадровки: в проекте iOS в обозревателе решений откройте файл **MainStoryboard.storyboard** . Здесь Visual Studio размещает конструктор, который выполняется удаленно на компьютере Mac.  
   
-4.  Проверьте сборку и отладку.  
+7. Проверьте сборку и отладку.  
   
-    1.  В обозревателе решений щелкните правой кнопкой мыши проект iOS и выберите команду **Назначить запускаемым проектом**.  
+   1.  В обозревателе решений щелкните правой кнопкой мыши проект iOS и выберите команду **Назначить запускаемым проектом**.  
   
-    2.  Выберите целевой объект **iPhoneSimulator** из раскрывающегося списка сборки Visual Studio, как показано ниже. Если симуляторов в списке нет, запустите Xcode на компьютере Mac, выберите **Xcode -> Preferences** (Xcode -> Параметры) и нажмите кнопку **Download** (Cкачать). В разделе **Components** (Компоненты) вы должны увидеть доступные для скачивания версии симулятора. Дополнительные инструкции по отладке можно найти на странице Xamarin [Отладка](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
+   2.  Выберите целевой объект **iPhoneSimulator** из раскрывающегося списка сборки Visual Studio, как показано ниже. Если симуляторов в списке нет, запустите Xcode на компьютере Mac, выберите **Xcode -> Preferences** (Xcode -> Параметры) и нажмите кнопку **Download** (Cкачать). В разделе **Components** (Компоненты) вы должны увидеть доступные для скачивания версии симулятора. Дополнительные инструкции по отладке можно найти на странице Xamarin [Отладка](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
   
-         ![Выбор целевого объекта сборки iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")  
+        ![Выбор целевого объекта сборки iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")  
   
-    3.  Выберите целевой объект iPhone в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5. Это откроет симулятор на Mac, где можно будет взаимодействовать с приложением во время отладки из Visual Studio.  
+   3.  Выберите целевой объект iPhone в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5. Это откроет симулятор на Mac, где можно будет взаимодействовать с приложением во время отладки из Visual Studio.  
   
-         ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")
+        ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")
 

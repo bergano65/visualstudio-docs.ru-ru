@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Документы Microsoft
+title: IDebugParsedExpression::EvaluateSync | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b67294b6bb22ff9607be726415b6aae8a2a9524
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931770"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Этот метод вычисления выражения проанализированный и при необходимости приводит результат к другому типу данных.  
+Этот метод вычисляет проанализированное выражение и при необходимости приводит результат к другому типу данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,31 +53,31 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Параметры  
  `dwEvalFlags`  
- [in] Сочетание [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) константы, определяющие, как будет вычисляться выражение.  
+ [in] Сочетание [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) константы, определяющие, каким образом будет вычисляться выражение.  
   
  `dwTimeout`  
- [in] Указывает максимальное время (в миллисекундах) ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
+ [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
   
  `pSymbolProvider`  
- [in] Поставщик символа, выраженное [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) интерфейса.  
+ [in] Поставщик символов, выраженное как [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) интерфейс.  
   
  `pAddress`  
- [in] Текущее положение выполнения внутри метода, выраженное [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
+ [in] Текущее положение выполнения внутри метода, выраженное как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
   
  `pBinder`  
- [in] Связыватель, выраженное [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) интерфейса.  
+ [in] Связыватель, выраженное как [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) интерфейс.  
   
  `bstrResultType`  
- [in] Тип результата должен приводиться к. Этот аргумент может иметь значение null.  
+ [in] Тип результата должен быть приведен к. Этот аргумент может принимать значение null.  
   
  `ppResult`  
  [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, представляющий результаты оценки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Контекст оценки выражения определяется `pAddress`, что позволяет определить, содержащий метод, и затем используйте области языка правил для определения значения символов в выражении.  
+ Контекст вычисления выражений определяется формулой `pAddress`, который дает возможность определить, содержащего метода и области использования языка правил для определения значения символов в выражении.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

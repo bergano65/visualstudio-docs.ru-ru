@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules | Документы Microsoft
+title: IDebugProgram2::EnumModules | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d95deffb687b0d09367e2944bbaff08f3c9b57c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb92fc8657a69fe6b66762f9052af1294d92a7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906004"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
-Возвращает список модулей, от которых эта программа загрузки и выполнения.  
+Извлекает список модулей, эта программа загрузки и выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +44,10 @@ int EnumModules(
  [out] Возвращает [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) , содержащий список модулей.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Библиотеки DLL или сборки и модуля обычно отображается в **модули** окон отладки.  
+ Модуль — это библиотека DLL или сборки и обычно указывается в **модули** окно отладки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923372"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild: целевая рабочая среда и целевая платформа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +32,25 @@ ms.locfileid: "49239140"
   
  В настоящее время доступны следующие версии платформы .NET Framework.  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (входит в состав Visual Studio 2005)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (входит в состав Visual Studio 2005)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (входит в состав [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (входит в состав [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (входит в состав [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (входит в состав [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (входит в состав Visual Studio 2010)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (входит в состав Visual Studio 2010)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (входит в состав [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (входит в состав [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (входит в состав [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (входит в состав [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]4.5.2  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (входит в состав [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (входит в состав [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
- Версии платформы .NET Framework отличаются друг от друга в списке сборок, доступном для использования в справочных целях. Например, приложения WPF можно создавать, только если проект предназначен для платформы .NET Framework версии 3.0 или выше.  
+  Версии платформы .NET Framework отличаются друг от друга в списке сборок, доступном для использования в справочных целях. Например, приложения WPF можно создавать, только если проект предназначен для платформы .NET Framework версии 3.0 или выше.  
   
- Целевая версия .NET Framework указывается в свойстве `TargetFrameworkVersion` в файле проекта. Целевую версию .NET Framework для проекта можно изменить с помощью страниц свойств проекта в интегрированной среде разработки Visual Studio. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Доступными значениями для `TargetFrameworkVersion` являются `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2` и `v4.6`.  
+  Целевая версия .NET Framework указывается в свойстве `TargetFrameworkVersion` в файле проекта. Целевую версию .NET Framework для проекта можно изменить с помощью страниц свойств проекта в интегрированной среде разработки Visual Studio. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Доступными значениями для `TargetFrameworkVersion` являются `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2` и `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -68,11 +68,11 @@ ms.locfileid: "49239140"
 ## <a name="target-platform"></a>Целевая платформа  
  *Платформа* — это сочетание оборудования и программного обеспечения, которое определяет конкретную среду выполнения. Например, примененная к объекту директива  
   
--   `x86` обозначает 32-разрядную операционную систему Windows, работающую с процессором Intel 80x86 или эквивалентным.  
+- `x86` обозначает 32-разрядную операционную систему Windows, работающую с процессором Intel 80x86 или эквивалентным.  
   
--   `Xbox` обозначает платформу Microsoft Xbox 360.  
+- `Xbox` обозначает платформу Microsoft Xbox 360.  
   
- *Целевая платформа* — это конкретная платформа, для выполнения на которой создан проект. Целевая платформа указывается в свойстве сборки `Platform` в файле проекта. Целевую платформу можно изменить с помощью страниц свойств проекта или **диспетчера конфигураций** в интегрированной среде разработки.  
+  *Целевая платформа* — это конкретная платформа, для выполнения на которой создан проект. Целевая платформа указывается в свойстве сборки `Platform` в файле проекта. Целевую платформу можно изменить с помощью страниц свойств проекта или **диспетчера конфигураций** в интегрированной среде разработки.  
   
 ```  
 <PropertyGroup>  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849168"
 ---
 # <a name="c-code-snippets"></a>Фрагменты кода C#
 
@@ -34,7 +34,7 @@ ms.locfileid: "32425518"
 По умолчанию в Visual Studio для C# включены указанные ниже фрагменты кода.
 
 |Имя (или сокращенное имя)|Описание:|Допустимые места для вставки фрагмента|
-|--------------------------|-----------------|---------------------------------------|
+| - |-----------------| - |
 |#if|Создает директивы [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) и [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|В любом месте.|
 |#region|Создает директивы [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) и [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|В любом месте.|
 |~|Создает [метод завершения](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (деструктор) для включающего класса.|Внутри класса.|

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc429e0d1d4afab5aa85387c228b981486796d08
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dfeb65cd23b14949857faf4253dfec3ec85f5b20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889390"
 ---
 # <a name="sccgetprojpath-function"></a>Функция SccGetProjPath
 Эта функция запрашивает у пользователя путь к проекту, который представляет собой строку, имеет смысл только для подключаемого модуля системы управления версиями. Вызывается, когда пользователь:  
@@ -84,7 +84,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Проект был успешно создан или извлечь.|  
 |SCC_I_OPERATIONCANCELED|Операция была отменена.|  

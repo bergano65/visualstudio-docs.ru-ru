@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Документы Microsoft
+title: IDebugCoreServer2::GetMachineInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,27 +15,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76d347a40993b722b13545dd278138ce753344f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c7a824a3ffe319d0134b59db95afe8296ef7575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926908"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
-Возвращает описание машины, основной сервер, на котором выполняется.  
+Возвращает описание core server, запущенного на компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetInfo(   
+HRESULT GetMachineInfo(   
    MACHINE_INFO_FIELDS Fields,  
    MACHINE_INFO*       pMachineInfo  
 );  
 ```  
   
 ```csharp  
-int GetInfo(   
+int GetMachineInfo(   
    enum_ MACHINE_INFO_FIELDS  Fields,  
    MACHINE_INFO[]             pMachineInfo  
 );  
@@ -46,10 +46,10 @@ int GetInfo(
  [in] Сочетание флагов из [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) перечисление, указать, какие поля из `pMachineInfo` , для заполнения.  
   
  `pMachineInfo`  
- [in, out] Объект [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуру, которая содержит описание машины.  
+ [in, out] Объект [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры, который заполняется описание машины.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

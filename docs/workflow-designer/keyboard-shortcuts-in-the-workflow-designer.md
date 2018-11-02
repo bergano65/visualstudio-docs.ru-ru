@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887375"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Сочетания клавиш конструктора рабочих процессов
 
@@ -32,7 +32,7 @@ ms.locfileid: "36756598"
 В следующей таблице перечислены сочетания клавиш по умолчанию, назначенные команд конструктора рабочих процессов.
 
 |Сочетание клавиш|Назначение|
-|--------------|-------------|
+|-|-------------|
 |CTRL+E, A|Отображает или скрывает конструктор аргументов.|
 |CTRL+E, C|Свертывает выделенное действие на месте.|
 |CTRL+E, E|Развертывает выделенное действие на месте.|

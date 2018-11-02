@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Документы Microsoft
+title: IDebugExceptionEvent2::GetException | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc844885a7efa1784b985eb3901de80a47c5efe4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b4c62a12c54a716a02146190b91f1f95365333b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917132"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Возвращает подробное описание исключения, запустившем это событие.  
+Возвращает подробное описание исключение, которое возникает это событие.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int GetException(
   
 #### <a name="parameters"></a>Параметры  
  `pExceptionInfo`  
- [in, out] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуру, которая содержит описание исключения.  
+ [in, out] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, который заполняется описание исключения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- [C++] Вызывающий объект отвечает за освобождение всех строк в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, а также освобождение [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекта в структуре.  
+ [C++] Вызывающий объект отвечает за освобождение все строки в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, а также освобождение [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекта в структуре.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817981"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49255623"
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Настройка тестов с помощью файла RUNSETTINGS  
   
-1.  Добавьте XML-файл в решение Visual Studio и задайте для него имя test.runsettings. (Имя файла не имеет значения, но расширением должно быть ".runsettings".)  
+1. Добавьте XML-файл в решение Visual Studio и задайте для него имя test.runsettings. (Имя файла не имеет значения, но расширением должно быть ".runsettings".)  
   
-2.  Замените содержимое файла [примером](#example).  
+2. Замените содержимое файла [примером](#example).  
   
-     Измените его в соответствии с собственными требованиями.  
+    Измените его в соответствии с собственными требованиями.  
   
-3.  В меню **Тест** щелкните **Параметры тестирования**и выберите **Выбрать файл параметров теста**.  
+3. В меню **Тест** щелкните **Параметры тестирования**и выберите **Выбрать файл параметров теста**.  
   
- Можно создать несколько \*RUNSETTINGS-файлов в решении и включить или отключить их в разное время с помощью меню **Параметры тестирования**.  
+   Можно создать несколько \*RUNSETTINGS-файлов в решении и включить или отключить их в разное время с помощью меню **Параметры тестирования**.  
   
- ![Включение файла параметров запуска](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Включение файла параметров запуска](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Копирование файла RUNSETTINGS этого примера  
  Ниже приводится пример стандартного RUNSETTINGS-файла. Каждый элемент файла необязателен, поскольку каждое значение имеет значение по умолчанию.  

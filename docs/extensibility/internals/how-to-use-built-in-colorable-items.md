@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 658b024a57912bf96a7988363f2bf363e9cb1f0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942170"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Практическое: использование встроенных цветных элементов
 Прежде чем использовать встроенные цветные элементы, необходимо сначала сообщается в интегрированной среде разработки (IDE), вы не предоставляли собственных пользовательских цветных элементов, которые в данном случае было бы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектов. Для этого параметру реестра для языковой службы.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Чтобы использовать встроенные цветные элементы  
   
-1.  В разделе **HKEY_LOCAL_MACHINE\VisualStudio\\< X.Y > \Languages\Language служб\\< название языка\>**, где \<X.Y > — это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и \<Имя_языка > — это имя языка, создайте значение записи реестра типа DWORD **RequestStockColors**.  
+1. В разделе **HKEY_LOCAL_MACHINE\VisualStudio\\< X.Y > \Languages\Language служб\\< название языка\>**, где \<X.Y > — это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и \<Имя_языка > — это имя языка, создайте значение записи реестра типа DWORD **RequestStockColors**.  
   
-2.  Задайте **RequestStockColors** значение записи реестра для *1*.  
+2. Задайте **RequestStockColors** значение записи реестра для *1*.  
   
-     После создания реестра операции, ваш палитры <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод можно использовать члены <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> перечисления, заполните массив атрибутов цвета для использования с помощью редактора.  
+    После создания реестра операции, ваш палитры <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод можно использовать члены <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> перечисления, заполните массив атрибутов цвета для использования с помощью редактора.  
   
-    > [!NOTE]
-    >  Не устанавливайте этот параметр реестра, если вы предоставляете пользовательских цветных элементов. Дополнительные сведения см. в разделе [пользовательских цветных элементов](../../extensibility/internals/custom-colorable-items.md).  
+   > [!NOTE]
+   >  Не устанавливайте этот параметр реестра, если вы предоставляете пользовательских цветных элементов. Дополнительные сведения см. в разделе [пользовательских цветных элементов](../../extensibility/internals/custom-colorable-items.md).  
   
 ## <a name="see-also"></a>См. также  
  [Цветовая маркировка синтаксиса в специализированных редакторах](../../extensibility/syntax-coloring-in-custom-editors.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_registerValue | Документы Microsoft
+title: IDiaStackFrame::get_registerValue | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845957"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Получает значение указанного регистра, как хранящиеся в кадре стека.  
+Возвращает значение указанного регистра, как хранящиеся в кадре стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT get_registerValue(
   
 #### <a name="parameters"></a>Параметры  
  `registerIndex`  
- [in] Один из [CV_HREG_e-перечисление](../../debugger/debug-interface-access/cv-hreg-e.md) значений перечисления.  
+ [in] Один из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) значений перечисления.  
   
  `pRetVal`  
  [out] Значение, хранящееся в регистре.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

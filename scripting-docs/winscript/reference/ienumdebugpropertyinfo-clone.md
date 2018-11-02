@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Clone | Документы Microsoft
+title: IEnumDebugPropertyInfo::Clone | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0f262261b57c7cddd46cd148e1c18731bcaa307
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b0d172200719a1fe2d95d657fc559f69f7b2ded8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937232"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
-Создает перечислитель, с тем же состоянием, как у текущего перечислителя.  
+Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Возвращает клонированный `IEnumDebugPropertyInfo` интерфейса.  
+ [out] Возвращает клонированный `IEnumDebugPropertyInfo` интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимую `HRESULT`, обычно `S_OK`.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

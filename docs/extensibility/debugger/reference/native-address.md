@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS | Документы Microsoft
+title: NATIVE_ADDRESS | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb443816db82d6003536b36783fd6555ef45db24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 751b4dfc641b017a4dc3f47f90b95e8447a2b1c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840432"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
-Эта структура представляет собственного адреса.  
+Эта структура представляет собственный адрес.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,7 +44,7 @@ public struct NATIVE_ADDRESS {
  Собственный адрес (это значение зависит от среды выполнения и операционной системы).  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры при `dwKind` поле `DEBUG_ADDRESS_UNION` структуры задано значение `ADDRESS_KIND_NATIVE` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+ Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_NATIVE` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
@@ -54,5 +54,5 @@ public struct NATIVE_ADDRESS {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

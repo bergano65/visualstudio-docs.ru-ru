@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount | Документы Microsoft
+title: IDebugGenericFieldDefinition::TypeParamCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e8dcebf06c5779ee51b11e315c5277d99b4971
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: baf6f6b7643c3d24a0f691a95477ad805823e541
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922384"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-Возвращает число параметров типа, связанные с полем универсального.  
+Возвращает число параметров типа, которые связаны с универсального поля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,10 +43,10 @@ int TypeParamCount(
  [in, out] Число параметров типа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Если список\<T >, этот метод возвращает значение 1 и, если список\<T1, T2 >, этот метод возвращает значение 2. Этот метод возвращает 0, если нет параметров типа.  
+ Если список\<T >, этот метод возвращает значение 1 и, если список\<T1, T2 >, этот метод возвращает значение 2. Этот метод возвращает 0, если отсутствуют параметры типа.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

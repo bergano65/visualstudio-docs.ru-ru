@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887570"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Поддержка подсказке сведений о параметрах в средстве синтаксического анализа  
  <xref:Microsoft.VisualStudio.Package.Source> Класс делает некоторые предположения о содержимом <xref:Microsoft.VisualStudio.Package.AuthoringScope> и <xref:Microsoft.VisualStudio.Package.AuthoringSink> классов при отображается и обновить сведения о параметрах всплывающей подсказки.  
   
--   Получает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> когда вводится знак начала списка параметров.  
+- Получает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> когда вводится знак начала списка параметров.  
   
--   Расположение, указанное <xref:Microsoft.VisualStudio.Package.ParseRequest> объект находится сразу после списка параметров начального символа. Средство синтаксического анализа необходимо собрать все подписи всех объявлений методов, доступных в позицию и сохранить их в список в вашей версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Этот список содержит имя метода, метод типа (или тип возвращаемого значения), а также список возможных параметров. Этот список позже поиск сигнатуры метода или подписи для отображения в подсказке сведения о параметрах.  
+- Расположение, указанное <xref:Microsoft.VisualStudio.Package.ParseRequest> объект находится сразу после списка параметров начального символа. Средство синтаксического анализа необходимо собрать все подписи всех объявлений методов, доступных в позицию и сохранить их в список в вашей версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Этот список содержит имя метода, метод типа (или тип возвращаемого значения), а также список возможных параметров. Этот список позже поиск сигнатуры метода или подписи для отображения в подсказке сведения о параметрах.  
   
- Средство синтаксического анализа необходимо затем выполнять синтаксический анализ строки, определяемое <xref:Microsoft.VisualStudio.Package.ParseRequest> объект для получения имени метода ввода, а также насколько оно Продвинулось пользователь находится в ввода параметров. Это достигается путем передачи имени метода для <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> метод <xref:Microsoft.VisualStudio.Package.AuthoringSink> объекта и затем вызвать <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> анализируется метод, когда список параметров начального символа, вызвав <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> метод при список параметров Следующий символ является проанализированные и наконец вызывающий <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> метод при синтаксическом анализе конечный символ списка параметров. Результаты вызовов этого метода используются <xref:Microsoft.VisualStudio.Package.Source> класс соответствующим образом обновить сведения о параметрах всплывающей подсказки.  
+  Средство синтаксического анализа необходимо затем выполнять синтаксический анализ строки, определяемое <xref:Microsoft.VisualStudio.Package.ParseRequest> объект для получения имени метода ввода, а также насколько оно Продвинулось пользователь находится в ввода параметров. Это достигается путем передачи имени метода для <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> метод <xref:Microsoft.VisualStudio.Package.AuthoringSink> объекта и затем вызвать <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> анализируется метод, когда список параметров начального символа, вызвав <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> метод при список параметров Следующий символ является проанализированные и наконец вызывающий <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> метод при синтаксическом анализе конечный символ списка параметров. Результаты вызовов этого метода используются <xref:Microsoft.VisualStudio.Package.Source> класс соответствующим образом обновить сведения о параметрах всплывающей подсказки.  
   
 ### <a name="example"></a>Пример  
  Вот строка текста, которые может ввести пользователь. Числа ниже этой линии указывают на каком этапе берется средством синтаксического анализа в этой позиции в строке (при условии, что синтаксического анализа перемещается слева направо). Здесь предполагается, что все, что перед строкой уже было проанализировано для сигнатур методов, включая сигнатуру метода «testfunc».  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915585"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Сохранить свойство элемента проекта
 Вы можете сохранить свойства, добавляемого элемента проекта, такие как автор исходного файла. Это можно сделать путем сохранения свойства в файле проекта.
@@ -117,22 +117,22 @@ ms.locfileid: "39639354"
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>Чтобы убедиться, что свойство сохраняется
 
-1.  Запустить [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте или создайте решение.
+1. Запустить [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте или создайте решение.
 
-2.  Выберите проект элемент VsPkg.cs в **обозревателе решений**.
+2. Выберите проект элемент VsPkg.cs в **обозревателе решений**.
 
-3.  Использовать точки останова или в противном случае определить загрузку пакета VSPackage и что SetItemAttribute выполняется.
+3. Использовать точки останова или в противном случае определить загрузку пакета VSPackage и что SetItemAttribute выполняется.
 
-    > [!NOTE]
-    > Вы можете автозагрузки VSPackage в контексте UI <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).
+   > [!NOTE]
+   > Вы можете автозагрузки VSPackage в контексте UI <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).
 
-4.  Закрыть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте файл проекта в блокноте. Вы должны увидеть \<Author > тег со значением Tom, следующим образом:
+4. Закрыть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте файл проекта в блокноте. Вы должны увидеть \<Author > тег со значением Tom, следующим образом:
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>См. также
 

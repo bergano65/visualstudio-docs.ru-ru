@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912634"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Архитектура настроек на уровне документа
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. В этой статье описываются следующие аспекты надстроек уровня документа.  
   
--   [Понимание настройки](#UnderstandingCustomizations)  
+- [Понимание настройки](#UnderstandingCustomizations)  
   
--   [Компоненты настроек](#Components)  
+- [Компоненты настроек](#Components)  
   
--   [Как настройки работают с приложениями Microsoft Office](#HowCustomizationsWork)  
+- [Как настройки работают с приложениями Microsoft Office](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Общие сведения о создании настроек уровня документа см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), и [приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Общие сведения о создании настроек уровня документа см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), и [приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Понимание настройки  
  При использовании инструментов разработчика Office в Visual Studio для построения настройки уровня документа вы создаете сборку управляемого кода, связанную с определенным документом. Документ или книга со связанной сборкой называются имеющими расширения управляемого кода. Дополнительные сведения см. в разделе [проектирования и создания решений Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35674778"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Поддержка документов Word, которые имеют расширения имени файла .xml  
  Шаблоны проектов уровня документа не позволяют создавать проекты на основе следующих форматов файлов.  
   
--   XML-документ Word (*\*xml*).  
+- XML-документ Word (*\*xml*).  
   
--   XML-документ Word 2003 (*\*xml*).  
+- XML-документ Word 2003 (*\*xml*).  
   
- Если требуется, чтобы пользователи применяли настройки в этих форматах файлов, выполните сборку и развертывание настройки, которая использует один из поддерживаемых форматов файлов, указанных в таблице выше. После установки такой настройки пользователи смогут сохранить документ в XML-документ Word (*\*xml*) формате или XML-документ Word 2003 (*\*xml*) формат и настройки будут продолжать работать должным образом.  
+  Если требуется, чтобы пользователи применяли настройки в этих форматах файлов, выполните сборку и развертывание настройки, которая использует один из поддерживаемых форматов файлов, указанных в таблице выше. После установки такой настройки пользователи смогут сохранить документ в XML-документ Word (*\*xml*) формате или XML-документ Word 2003 (*\*xml*) формат и настройки будут продолжать работать должным образом.  
   
 ##  <a name="Components"></a> Компоненты настроек  
  Основные компоненты настройки — это документ и сборка. Помимо этих компонентов существует несколько других частей, играющих важную роль в том, как приложения Microsoft Office обнаруживают и загружают настройки.  
@@ -146,7 +146,7 @@ ms.locfileid: "35674778"
   
 ## <a name="see-also"></a>См. также  
  [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Безопасные решения Office](../vsto/securing-office-solutions.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   

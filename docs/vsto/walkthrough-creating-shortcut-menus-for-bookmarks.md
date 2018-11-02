@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884086"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство: Создание контекстных меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройке уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст в закладку, контекстное меню отображается и параметры для форматирования текста.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783846"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   [Создание проекта](#BKMK_CreateProject).  
+- [Создание проекта](#BKMK_CreateProject).  
   
--   [Добавление текста и закладок в документе](#BKMK_addtextandbookmarks).  
+- [Добавление текста и закладок в документе](#BKMK_addtextandbookmarks).  
   
--   [Добавление команд в контекстное меню](#BKMK_AddCmndsShortMenu).  
+- [Добавление команд в контекстное меню](#BKMK_AddCmndsShortMenu).  
   
--   [Форматирование текста в закладке](#BKMK_formattextbkmk).  
+- [Форматирование текста в закладке](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -69,22 +69,22 @@ ms.locfileid: "38783846"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Добавление элемента управления Bookmark в документ  
   
-1.  В **элементов**, из **элементы управления Word** вкладке, перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ.  
+1. В **элементов**, из **элементы управления Word** вкладке, перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ.  
   
-     **Добавьте элемент управления Bookmark** откроется диалоговое окно.  
+    **Добавьте элемент управления Bookmark** откроется диалоговое окно.  
   
-2.  Выделите слова «Создание контекстного меню при щелчке правой кнопкой мыши текст», а затем нажмите кнопку **ОК**.  
+2. Выделите слова «Создание контекстного меню при щелчке правой кнопкой мыши текст», а затем нажмите кнопку **ОК**.  
   
-     `bookmark1` добавляется к документу.  
+    `bookmark1` добавляется к документу.  
   
-3.  Добавьте еще один <xref:Microsoft.Office.Tools.Word.Bookmark> управления слова «щелкните правой кнопкой мыши текст в закладку».  
+3. Добавьте еще один <xref:Microsoft.Office.Tools.Word.Bookmark> управления слова «щелкните правой кнопкой мыши текст в закладку».  
   
-     `bookmark2` добавляется к документу.  
+    `bookmark2` добавляется к документу.  
   
-    > [!NOTE]  
-    >  Слова «щелкните правой кнопкой мыши текст» находятся в `bookmark1` и `bookmark2`.  
+   > [!NOTE]  
+   >  Слова «щелкните правой кнопкой мыши текст» находятся в `bookmark1` и `bookmark2`.  
   
- При добавлении закладки в документ во время разработки, <xref:Microsoft.Office.Tools.Word.Bookmark> создается элемент управления. Можно запрограммировать несколько событий закладки. Можно написать код <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> события закладки, чтобы при щелчке правой кнопкой мыши на текст в закладку, появится контекстное меню.  
+   При добавлении закладки в документ во время разработки, <xref:Microsoft.Office.Tools.Word.Bookmark> создается элемент управления. Можно запрограммировать несколько событий закладки. Можно написать код <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> события закладки, чтобы при щелчке правой кнопкой мыши на текст в закладку, появится контекстное меню.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Добавление команд в контекстное меню  
  Добавление кнопок в контекстное меню, которое появляется при щелчке правой кнопкой мыши документ.  

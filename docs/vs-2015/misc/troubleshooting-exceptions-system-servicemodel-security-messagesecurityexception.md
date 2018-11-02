@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853172"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Разрешение вопросов, связанных с исключениями: System.ServiceModel.Security.MessageSecurityException
 Объект <xref:System.ServiceModel.Security.MessageSecurityException> исключение создается, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение не защищено правильно или было изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:  
@@ -48,35 +48,35 @@ ms.locfileid: "49241234"
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Чтобы создать пользовательскую привязку службы для службы WCF, работающей под ASP.NET Development Server  
   
-1.  Откройте файл Web.config для службы WCF, которая вызывает исключение.  
+1. Откройте файл Web.config для службы WCF, которая вызывает исключение.  
   
-2.  Введите следующую информацию в файл Web.config.  
+2. Введите следующую информацию в файл Web.config.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Сохраните изменения и закройте файл Web.config.  
+3. Сохраните изменения и закройте файл Web.config.  
   
-4.  В коде WCF или веб–службы измените значение конечной точки на следующее:  
+4. В коде WCF или веб–службы измените значение конечной точки на следующее:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Это гарантирует, что служба использует пользовательскую привязку.  
+    Это гарантирует, что служба использует пользовательскую привязку.  
   
-5.  Добавьте ссылку на эту службу в веб–приложение, которое обращается к службе. (В диалоговом окне **Добавить ссылку на службу** добавьте ссылку на службу, так же как для исходной службы, которая создавала исключения.)  
+5. Добавьте ссылку на эту службу в веб–приложение, которое обращается к службе. (В диалоговом окне **Добавить ссылку на службу** добавьте ссылку на службу, так же как для исходной службы, которая создавала исключения.)  
   
- Выполните следующие действия для отключения безопасности NTLM при работе со ссылкой на службу WCF.  
+   Выполните следующие действия для отключения безопасности NTLM при работе со ссылкой на службу WCF.  
   
 > [!IMPORTANT]
 >  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  

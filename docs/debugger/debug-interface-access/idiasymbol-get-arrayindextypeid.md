@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexTypeId | Документы Microsoft
+title: IDiaSymbol::get_arrayIndexTypeId | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e4479a848978a41991c217fcbca578b033495
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818657"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Извлекает идентификатор типа массива индекс символа.  
@@ -34,23 +34,23 @@ HRESULT get_arrayIndexTypeId (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает идентификатор типа индекса массива символа.  
+ [out] Возвращает идентификатор типа массива индекс символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Идентификатор — это уникальное значение, созданный пакет SDK для пометить все символы как уникальный.  
+ Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для v7.0|  
+|Версия:|ПАКЕТ SDK для версии 7.0|  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

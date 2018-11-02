@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Next | Документы Microsoft
+title: IEnumDebugPropertyInfo::Next | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc1e25a865ab1e21ab011e3a5bd0cc3b74f4abf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9f3fe796a518fd7d40c5b30f5b45f8a7d946686
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873751"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
-Извлекает указанное число `DebugPropertyInfo` структуры в последовательности перечисления.  
+Извлекает указанное число `DebugPropertyInfo` структур в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,16 +40,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество `DebugPropertyInfo`структур, требуется получить.  
+ [in] Количество `DebugPropertyInfo`структур, которые требуется извлечь.  
   
  `rgelt`  
- [out] Массив `DebugPropertyInfo` получить структуры.  
+ [out] Массив `DebugPropertyInfo` получить структур.  
   
  `pceltFetched`  
- [out] Возвращает число `DebugPropertyInfo` фактически извлеченных структур.  
+ [out] Возвращает количество `DebugPropertyInfo` фактически извлеченных структур.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимую `HRESULT`, обычно `S_OK`.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904444"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 Доменный язык (DSL) создана с пакет SDK моделирования и визуализации Visual Studio можно изменить, что происходит, когда пользователь копирует и вставляет элементы.
@@ -24,19 +24,19 @@ ms.locfileid: "47860463"
 
  По умолчанию, когда пользователь копирует элементы в буфер обмена, также копируются следующие элементы.
 
--   Внедренные элементы-потомки выбранных элементов (т. е. элементы, которые являются целевыми объектами отношений внедрения для копируемых элементов).
+- Внедренные элементы-потомки выбранных элементов (т. е. элементы, которые являются целевыми объектами отношений внедрения для копируемых элементов).
 
--   Связи отношений между скопированными элементами.
+- Связи отношений между скопированными элементами.
 
- Это правило применяется к скопированным элементам и связям рекурсивно.
+  Это правило применяется к скопированным элементам и связям рекурсивно.
 
- ![Скопированные и вставленные элементы](../modeling/media/dslcopypastedefault.png)
+  ![Скопированные и вставленные элементы](../modeling/media/dslcopypastedefault.png)
 
- Скопированные элементы и связи сериализуются и сохраняются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), который размещается в буфере обмена.
+  Скопированные элементы и связи сериализуются и сохраняются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), который размещается в буфере обмена.
 
- Изображение скопированных элементов также помещается в буфер обмена. Это позволяет пользователю вставлять их в другие приложения, например в Word.
+  Изображение скопированных элементов также помещается в буфер обмена. Это позволяет пользователю вставлять их в другие приложения, например в Word.
 
- Пользователь может вставить скопированные элементы в целевой объект, который может принять их в соответствии с определением DSL. Например, в DSL, созданном из шаблона решения компонентов, пользователь может вставить порты в компоненты, но не в схему, а также вставить компоненты в схему, но не в другие компоненты.
+  Пользователь может вставить скопированные элементы в целевой объект, который может принять их в соответствии с определением DSL. Например, в DSL, созданном из шаблона решения компонентов, пользователь может вставить порты в компоненты, но не в схему, а также вставить компоненты в схему, но не в другие компоненты.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Настройка поведения копирования и вставки
  Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **Создайте дополнительные связи, когда пользователь вставляет данные в выбранный целевой объект.** Например, когда поле для комментариев вставляется в элемент, между ними создается связь.
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **Вставьте фигуры в выбранное место, например в текущее положение курсора.**
@@ -222,15 +220,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
  Поддерживается три значения:
 
--   Не распространять копирование.
+- Не распространять копирование.
 
--   Распространить копирование только на связь: когда вставляется группа, новая копия этой связи ссылается на существующий элемент на другом конце связи.
+- Распространить копирование только на связь: когда вставляется группа, новая копия этой связи ссылается на существующий элемент на другом конце связи.
 
--   Распространить копирование на исполнителя противоположной роли: скопированная группа включает копию элемента на другом конце связи.
+- Распространить копирование на исполнителя противоположной роли: скопированная группа включает копию элемента на другом конце связи.
 
- ![Результат копирования с использованием PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
+  ![Результат копирования с использованием PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
- Сделанные изменения повлияют на элементы и скопированное изображение.
+  Сделанные изменения повлияют на элементы и скопированное изображение.
 
 ## <a name="programming-copy-and-paste-behavior"></a>Программирование поведения копирования и вставки
  Многие аспекты поведения Доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations> который соединен в схему. Можно изменить поведение Доменного языка путем наследования класса из <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределение <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> свойство класса схемы.
@@ -244,13 +242,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 #### <a name="to-define-your-own-elementoperations"></a>Определение собственного ElementOperations
 
-1.  В новом файле проекта доменного языка создайте класс, производный от класса <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
+1. В новом файле проекта доменного языка создайте класс, производный от класса <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2.  Добавьте определение разделяемого класса для класса схемы. Имя этого класса можно найти в **Dsl\GeneratedCode\Diagrams.cs**.
+2. Добавьте определение разделяемого класса для класса схемы. Имя этого класса можно найти в **Dsl\GeneratedCode\Diagrams.cs**.
 
-     В классе диаграммы переопределите свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>, чтобы получить экземпляр подкласса ElementOperations. Необходимо вернуть тот же самый экземпляр в каждом классе.
+    В классе диаграммы переопределите свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>, чтобы получить экземпляр подкласса ElementOperations. Необходимо вернуть тот же самый экземпляр в каждом классе.
 
- Добавьте этот код в пользовательский файл кода в проекте DslPackage:
+   Добавьте этот код в пользовательский файл кода в проекте DslPackage:
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Получение элементов, перетаскиваемых из других моделей
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  В этом примере обрабатываются элементы класса UML, перетаскиваемого из схемы класса UML. DSL не предусматривает прямое сохранение классов UML. Вместо этого создается элемент DSL для каждого перетаскиваемого класса UML. Это пригодится, если, например, доменный язык является схемой экземпляра. Пользователь может перетаскивать классы на схему, чтобы создать экземпляры этих классов.
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>Стандартное поведение копирования
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>См. также

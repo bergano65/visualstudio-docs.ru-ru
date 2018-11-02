@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816609"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ ms.locfileid: "49240452"
   
 #### <a name="to-create-a-console-app"></a>Создание консольного приложения  
   
-1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
+1. В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
-     ![Выбор пунктов "Файл", "Создать", "Проект"](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![Выбор пунктов "Файл", "Создать", "Проект"](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  В категории **Visual C++** выберите шаблон **Консольное приложение Win32** и назовите проект `GreetingsConsoleApp`.  
+2. В категории **Visual C++** выберите шаблон **Консольное приложение Win32** и назовите проект `GreetingsConsoleApp`.  
   
-     ![Шаблон консольного приложения Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
+    ![Шаблон консольного приложения Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
   
-3.  Когда появится мастер приложений Win32, нажмите кнопку **Готово** .  
+3. Когда появится мастер приложений Win32, нажмите кнопку **Готово** .  
   
-     ![Мастер консольного приложения Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Мастер консольного приложения Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- Проект GreetingsConsoleApp и решение с основными файлами для консольного приложения Win32 создадутся и автоматически загрузятся в **Обозреватель решений**. Файл GreettingsConsoleApp.cpp откроется в редакторе кода. В **Обозревателе решений**отображаются следующие элементы.  
+   Проект GreetingsConsoleApp и решение с основными файлами для консольного приложения Win32 создадутся и автоматически загрузятся в **Обозреватель решений**. Файл GreettingsConsoleApp.cpp откроется в редакторе кода. В **Обозревателе решений**отображаются следующие элементы.  
   
- Рисунок 4. Элементы проекта  
+   Рисунок 4. Элементы проекта  
   
- ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> Добавление кода в приложение  
  Далее необходимо добавить код для отображения слова "Hello" в окне консоли.  
@@ -117,40 +117,40 @@ ms.locfileid: "49240452"
   
 #### <a name="to-add-a-breakpoint"></a>Добавление точки останова  
   
-1.  Добавьте точку останова из меню в строке `return 0;`. Для установки точки останова можно также просто щелкнуть область слева.  
+1. Добавьте точку останова из меню в строке `return 0;`. Для установки точки останова можно также просто щелкнуть область слева.  
   
-     ![Команда "Точка останова" в меню "Отладка"](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
+    ![Команда "Точка останова" в меню "Отладка"](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
-     Рядом со строкой кода в крайнем левом поле окна редактора появится красный кружок.  
+    Рядом со строкой кода в крайнем левом поле окна редактора появится красный кружок.  
   
-2.  Нажмите клавишу F5, чтобы начать отладку.  
+2. Нажмите клавишу F5, чтобы начать отладку.  
   
-     Запускается отладчик, и появляется окно консоли, в котором выводится слово **Hello**.  
+    Запускается отладчик, и появляется окно консоли, в котором выводится слово **Hello**.  
   
-     ![Текст "Hello" в окне командной строки Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![Текст "Hello" в окне командной строки Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  Для останова процесса отладки нажмите SHIFT + F5.  
+3. Для останова процесса отладки нажмите SHIFT + F5.  
   
- Дополнительные сведения см. в статье [Консольные проекты](../debugger/debugging-preparation-console-projects.md).  
+   Дополнительные сведения см. в статье [Консольные проекты](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Сборка окончательной версии приложения  
  Теперь, когда вы проверили, что все работает, можно подготовить окончательную сборку приложения.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Очистка файлов решения и сборка окончательной версии  
   
-1.  Из строки меню удалите промежуточные файлы и выходные файлы, созданные во время предыдущих сборок.  
+1. Из строки меню удалите промежуточные файлы и выходные файлы, созданные во время предыдущих сборок.  
   
-     ![Команда "Очистить решение" в меню "Сборка"](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![Команда "Очистить решение" в меню "Сборка"](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  Измените конфигурацию сборки для GreetingsConsoleApp с **Отладка** на **Выпуск**.  
+2. Измените конфигурацию сборки для GreetingsConsoleApp с **Отладка** на **Выпуск**.  
   
-     ![Сборка окончательной версии приложения](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![Сборка окончательной версии приложения](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  Постройте решение.  
+3. Постройте решение.  
   
-     ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- Поздравляем с завершением этого пошагового руководства! Чтобы изучить больше примеров, см. раздел [Visual Studio Samples](../ide/visual-studio-samples.md).  
+   Поздравляем с завершением этого пошагового руководства! Чтобы изучить больше примеров, см. раздел [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

@@ -1,5 +1,5 @@
 ---
-title: Функция SccUninitialize | Документы Microsoft
+title: Функция SccUninitialize | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb6b5cec0e0d9bb4c90cc284009ab7fc693912
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9d992428dd6358cee2b6a46efc0816e7840c449
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948035"
 ---
 # <a name="sccuninitialize-function"></a>Функция SccUninitialize
-Эта функция очищает все распределения памяти или открытых соединений, созданных предыдущим вызовом [SccInitialize](../extensibility/sccinitialize-function.md) в процессе подготовки к выключению подключаемый модуль системы управления версиями.  
+Эта функция очищает все выделения или открытых подключений, созданных предыдущим вызовом [SccInitialize](../extensibility/sccinitialize-function.md) в ожидании завершения работы подключаемого модуля системы управления версиями.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,17 +35,17 @@ SCCRTN SccUninitialize (
   
 #### <a name="parameters"></a>Параметры  
  pvContext  
- [in] Указатель на структуру исходного элемента управления контекста подключаемый модуль будет создан в [SccInitialize](../extensibility/sccinitialize-function.md).  
+ [in] Указатель на структуру исходного элемента управления контекста подключаемый модуль создан в [SccInitialize](../extensibility/sccinitialize-function.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|SCC_OK|Операция очистки успешно завершена.|  
+|SCC_OK|Очистка завершена успешно.|  
   
 ## <a name="remarks"></a>Примечания  
- Подключаемый модуль системы управления версиями отвечает для подготовки к завершению работы, а также для освобождения памяти, выделенной подключаемый модуль для структуры контекста. Функция вызывается один раз для каждого заданного экземпляра подключаемого модуля. Вызов [SccInitialize](../extensibility/sccinitialize-function.md) предшествует этого вызова. Нет проектов по-прежнему могут быть открыты во время вызова `SccUninitialize`.  
+ Подключаемый модуль системы управления версиями ответственность за освобождение памяти, выделенной подключаемый модуль для структура контекста и завершает работу. Функция вызывается один раз для каждого заданного экземпляра подключаемого модуля. Вызов [SccInitialize](../extensibility/sccinitialize-function.md) предшествует этот вызов. Нет проектов по-прежнему могут быть открыты во время вызова `SccUninitialize`.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   

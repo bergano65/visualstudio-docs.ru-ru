@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Документы Microsoft
+title: METADATA_TYPE | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1632198a0af5490e66a843458fc55bcad2d6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77e0a87f6b20093c1ddca1a9f132003f63afbaa1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900323"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
-Эта структура указывает сведения о типа поля, берутся из метаданных.  
+Эта структура указывает сведения о типом поля, взятое из метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,9 +56,9 @@ public struct METADATA_TYPE {
  [C++] `_mdToken` — `typedef` для 32-разрядных `int`.  
   
 ## <a name="remarks"></a>Примечания  
- Эта структура выводится как часть объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры при `dwKind` поле `TYPE_INFO` структуры задано значение `TYPE_KIND_METADATA` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
+ Эта структура является частью объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры, когда `dwKind` поле `TYPE_INFO` структура присваивается `TYPE_KIND_METADATA` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
   
- `tokClass` Значение представляет собой лексему метаданных, который уникально определяет тип. Дополнительные сведения об интерпретации старшие разряды идентификатор маркера метаданных см. в разделе `CorTokenType` перечисления в файле corhdr.h в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] пакета SDK.  
+ `tokClass` Значение является маркером метаданных, который уникально определяет тип. Дополнительные сведения о том, как интерпретировать старшие разряды идентификатор маркера метаданных см. в разделе `CorTokenType` перечисления в файле corhdr.h в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] пакета SDK.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
@@ -68,6 +68,6 @@ public struct METADATA_TYPE {
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

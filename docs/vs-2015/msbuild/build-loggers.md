@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 855160fa1e1f02bbebecaa8ddc522bb92f3f5bd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853250"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49226440"
   
  Для средства ведения журнала можно использовать два подхода к реализации:  
   
--   Прямая реализация интерфейса <xref:Microsoft.Build.Framework.ILogger>.  
+- Прямая реализация интерфейса <xref:Microsoft.Build.Framework.ILogger>.  
   
--   Наследование класса от вспомогательного класса <xref:Microsoft.Build.Utilities.Logger>, который определен в сборке Microsoft.Build.Utilities.dll. <xref:Microsoft.Build.Utilities.Logger> реализует <xref:Microsoft.Build.Framework.ILogger> и предоставляет реализацию по умолчанию некоторых элементов <xref:Microsoft.Build.Framework.ILogger>.  
+- Наследование класса от вспомогательного класса <xref:Microsoft.Build.Utilities.Logger>, который определен в сборке Microsoft.Build.Utilities.dll. <xref:Microsoft.Build.Utilities.Logger> реализует <xref:Microsoft.Build.Framework.ILogger> и предоставляет реализацию по умолчанию некоторых элементов <xref:Microsoft.Build.Framework.ILogger>.  
   
- В этой статье мы расскажем, как создать простое средство ведения журнала, унаследованное от <xref:Microsoft.Build.Utilities.Logger>, которое отображает в консоли сообщения в ответ на определенные события сборки.  
+  В этой статье мы расскажем, как создать простое средство ведения журнала, унаследованное от <xref:Microsoft.Build.Utilities.Logger>, которое отображает в консоли сообщения в ответ на определенные события сборки.  
   
 ## <a name="registering-for-events"></a>Регистрация в событиях  
  Средство ведения журнала предназначено для сбора сведений о выполнении сборки, которые поступает от обработчика сборки, и для представления этой информации в полезном формате. Все средства ведения журнала должны переопределять метод <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, в котором средство ведения журнала регистрируется для событий. В этом примере средство ведения журнала регистрируется для событий <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> и <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.  

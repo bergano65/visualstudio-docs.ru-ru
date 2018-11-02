@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241193"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244441"
 ---
 # <a name="xml-editor-tasks"></a>Задачи редактора XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "49241193"
  Демонстрирует процесс создания новых фрагментов XML.  
   
  [Пошаговое руководство. Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- Демонстрирует использование возможности XSLT IntelliSence.  
+ В этой статье демонстрируется использование функции XSLT IntelliSense.  
   
  [Пошаговое руководство. Использование XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Демонстрирует отладку таблицы стилей со ссылками.  

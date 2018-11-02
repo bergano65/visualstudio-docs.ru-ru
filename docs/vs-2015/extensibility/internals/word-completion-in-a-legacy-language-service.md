@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910801"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение машинных слов в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49285302"
   
 ## <a name="implementation-steps"></a>Действия по внедрению  
   
-1.  Когда пользователь выбирает **завершение слов** из **IntelliSense** меню <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда отправляется службе языка.  
+1. Когда пользователь выбирает **завершение слов** из **IntelliSense** меню <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда отправляется службе языка.  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter> Класс перехватывает команду, а вызовы <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter> Класс перехватывает команду, а вызовы <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source> Класс и вызовы <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод, чтобы получить список возможных word завершений и выводится список слов во всплывающей подсказки с помощью <xref:Microsoft.VisualStudio.Package.CompletionSet> класса.  
+3. <xref:Microsoft.VisualStudio.Package.Source> Класс и вызовы <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод, чтобы получить список возможных word завершений и выводится список слов во всплывающей подсказки с помощью <xref:Microsoft.VisualStudio.Package.CompletionSet> класса.  
   
-     Если имеется только один совпадающего слова <xref:Microsoft.VisualStudio.Package.Source> класс завершения слова.  
+    Если имеется только один совпадающего слова <xref:Microsoft.VisualStudio.Package.Source> класс завершения слова.  
   
- Кроме того Если средство проверки возвращает значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> при вводе первого символа идентификатора <xref:Microsoft.VisualStudio.Package.Source> класс обнаружит это и вызывает <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. В этом случае средство синтаксического анализа необходимо определить наличие знака выбора элемента и предоставить список элементов.  
+   Кроме того Если средство проверки возвращает значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> при вводе первого символа идентификатора <xref:Microsoft.VisualStudio.Package.Source> класс обнаружит это и вызывает <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. В этом случае средство синтаксического анализа необходимо определить наличие знака выбора элемента и предоставить список элементов.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Включение поддержки для завершения слова  
  Чтобы включить поддержку набора завершений word `CodeSense` именованный параметр, передаваемый <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибут пользователя, связанные с данным пакетом языка. Этот параметр задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  

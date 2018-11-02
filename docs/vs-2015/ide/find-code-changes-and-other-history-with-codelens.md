@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825677"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ ms.locfileid: "49224969"
 ##  <a name="FindReferences"></a> Поиск ссылок на код  
  Требуется:  
   
--   Visual Studio Enterprise или Visual Studio Professional  
+- Visual Studio Enterprise или Visual Studio Professional  
   
--   Код Visual C# .NET или Visual Basic .NET  
+- Код Visual C# .NET или Visual Basic .NET  
   
- Выберите индикатор **ссылок** (**ALT + 2**). Если в результатах отображается **0 ссылок**, это значит, что ссылки из кода Visual C# или Visual Basic отсутствуют. Сюда не входят ссылки из других элементов, таких как XAML- и ASPX-файлы.  
+  Выберите индикатор **ссылок** (**ALT + 2**). Если в результатах отображается **0 ссылок**, это значит, что ссылки из кода Visual C# или Visual Basic отсутствуют. Сюда не входят ссылки из других элементов, таких как XAML- и ASPX-файлы.  
   
- ![CodeLens: выбор индикатора ссылок](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![CodeLens: выбор индикатора ссылок](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- Чтобы просмотреть код ссылки, наведите указатель мыши на ссылку.  
+  Чтобы просмотреть код ссылки, наведите указатель мыши на ссылку.  
   
- ![CodeLens: просмотр ссылки](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens: просмотр ссылки](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- Чтобы открыть файл, на который указывает ссылка, дважды щелкните эту ссылку.  
+  Чтобы открыть файл, на который указывает ссылка, дважды щелкните эту ссылку.  
   
- Чтобы просмотреть отношения между этим кодом и его ссылками, [создайте карту кода](../modeling/map-dependencies-across-your-solutions.md) и выберите параметр **Показать все ссылки** в контекстном меню карты кода.  
+  Чтобы просмотреть отношения между этим кодом и его ссылками, [создайте карту кода](../modeling/map-dependencies-across-your-solutions.md) и выберите параметр **Показать все ссылки** в контекстном меню карты кода.  
   
- ![CodeLens: ссылки на карте кода](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![CodeLens: ссылки на карте кода](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> Поиск журнала кода и связанных элементов  
  Просмотрите журнал кода, чтобы узнать, что случилось. Можно также изучить изменения до их внедрения в ваш код, чтобы понять, как изменения в других ветвях могут повлиять на него.  
   
  Требуется:  
   
--   Visual Studio Enterprise или Visual Studio Professional  
+- Visual Studio Enterprise или Visual Studio Professional  
   
--   Team Foundation Server 2013 или более поздней версии, Visual Studio Team Services или Git  
+- Team Foundation Server 2013 или более поздней версии, Visual Studio Team Services или Git  
   
--   [Lync 2010 или более поздней версии или Skype для бизнеса](http://technet.microsoft.com/lync)(для связи с коллегами, не выходя из редактора кода)  
+- [Lync 2010 или более поздней версии или Skype для бизнеса](http://technet.microsoft.com/lync)(для связи с коллегами, не выходя из редактора кода)  
   
- Для кода на Visual C# .NET или Visual Basic .NET, который хранится вместе с системой управления версиями Team Foundation (TFVC) или Git, сведения CodeLens предоставляются на уровнях класса и метода (индикаторы*уровня кода элемента* ). Если репозиторий Git находится в TfGit, можно также получить ссылки на рабочие элементы TFS.  
+  Для кода на Visual C# .NET или Visual Basic .NET, который хранится вместе с системой управления версиями Team Foundation (TFVC) или Git, сведения CodeLens предоставляются на уровнях класса и метода (индикаторы*уровня кода элемента* ). Если репозиторий Git находится в TfGit, можно также получить ссылки на рабочие элементы TFS.  
   
- ![Индикаторы кода уровня элемента кода](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![Индикаторы кода уровня элемента кода](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Для всех других типов файлов, которые можно открыть в редакторе Visual Studio, сведения о CodeLens по всему файлу приводятся в одном месте — в нижней части окна (индикаторы*уровня файла* ).  
+  Для всех других типов файлов, которые можно открыть в редакторе Visual Studio, сведения о CodeLens по всему файлу приводятся в одном месте — в нижней части окна (индикаторы*уровня файла* ).  
   
- ![Индикаторы CodeLens уровня файла](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![Индикаторы CodeLens уровня файла](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- Чтобы выбрать индикатор с помощью клавиатуры, нажмите и удерживайте клавишу **ALT** для отображения назначенных клавиш с цифрами.  
+  Чтобы выбрать индикатор с помощью клавиатуры, нажмите и удерживайте клавишу **ALT** для отображения назначенных клавиш с цифрами.  
   
- ![Нажмите клавишу ALT для просмотра клавиш с цифрами](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Нажмите клавишу ALT для просмотра клавиш с цифрами](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Поиск изменений в коде  
  Узнайте, кто изменил ваш код на C# или Visual Basic, и просмотрите внесенные в код изменения на индикаторах уровня кода элемента. При использовании системы управления версиями Team Foundation (TFVC) в Team Foundation Server или Visual Studio Team Services отображается следующее.  
@@ -243,11 +243,11 @@ ms.locfileid: "49224969"
   
  **Какие конфигурации Lync и Skype поддерживаются?**  
   
--   Skype для бизнеса (32- или 64-разрядная версия)  
+- Skype для бизнеса (32- или 64-разрядная версия)  
   
--   Lync 2010 или более поздняя версия отдельно (32- или 64-разрядная), но не Lync Basic 2013 с Windows 8.1  
+- Lync 2010 или более поздняя версия отдельно (32- или 64-разрядная), но не Lync Basic 2013 с Windows 8.1  
   
- CodeLens не поддерживает наличие нескольких установленных версий Lync или Skype. Они могут быть не локализованы для всех локализованных версий Visual Studio.  
+  CodeLens не поддерживает наличие нескольких установленных версий Lync или Skype. Они могут быть не локализованы для всех локализованных версий Visual Studio.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Вопрос. Как изменить шрифт и цвет CodeLens?  
  **О.** Последовательно щелкните **Сервис**, **Параметры**, **Среда**, **Шрифты и цвета**.  

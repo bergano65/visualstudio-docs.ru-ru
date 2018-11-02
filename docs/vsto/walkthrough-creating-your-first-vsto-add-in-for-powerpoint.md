@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882599"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "42636253"
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   создание проекта надстройки VSTO для PowerPoint;  
+- создание проекта надстройки VSTO для PowerPoint;  
   
--   написание кода, использующего объектную модель PowerPoint для добавления текстового поля в каждый новый слайд;  
+- написание кода, использующего объектную модель PowerPoint для добавления текстового поля в каждый новый слайд;  
   
--   Построение и запуск проекта для тестирования.  
+- Построение и запуск проекта для тестирования.  
   
--   очистка проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+- очистка проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
@@ -78,18 +78,18 @@ ms.locfileid: "42636253"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Добавление текстового поля в каждый новый слайд  
   
-1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событие <xref:Microsoft.Office.Interop.PowerPoint.Application> объекта.  
+1. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событие <xref:Microsoft.Office.Interop.PowerPoint.Application> объекта.  
   
-     Когда пользователь добавляет новый слайд в активную презентацию, этот обработчик событий добавляет текстовое поле в верхнюю часть нового слайда, а также добавляет в поле текст.  
+    Когда пользователь добавляет новый слайд в активную презентацию, этот обработчик событий добавляет текстовое поле в верхнюю часть нового слайда, а также добавляет в поле текст.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код необходим для подключения `Application_PresentationNewSlide` обработчик событий с [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событий.  
+2. Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код необходим для подключения `Application_PresentationNewSlide` обработчик событий с [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) событий.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- Для изменения каждого нового слайда в приведенных выше примерах кода используются следующие объекты:  
+   Для изменения каждого нового слайда в приведенных выше примерах кода используются следующие объекты:  
   
 -   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application>, который представляет текущий экземпляр PowerPoint.  
   

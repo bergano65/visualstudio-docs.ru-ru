@@ -10,12 +10,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 2567b0a5a5db1d57abba8c00255f1598f0ac9bad
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888961"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
 Вы можете создавать команды меню путем наследования из <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , а также реализации соответствующих обработчиков событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -35,94 +35,94 @@ ms.locfileid: "39637803"
   
 ### <a name="to-add-a-command-to-the-ide"></a>Добавление команды в IDE  
   
-1.  Откройте *.vsct* файла.  
+1. Откройте *.vsct* файла.  
   
-2.  В разделе `Symbols` найдите элемент [GuidSymbol](../extensibility/guidsymbol-element.md) , содержащий группы и команды.  
+2. В разделе `Symbols` найдите элемент [GuidSymbol](../extensibility/guidsymbol-element.md) , содержащий группы и команды.  
   
-3.  Создайте по элементу [IDSymbol](../extensibility/idsymbol-element.md) для каждого меню, группы и команды, которые нужно добавить, как показано в следующем примере.  
+3. Создайте по элементу [IDSymbol](../extensibility/idsymbol-element.md) для каждого меню, группы и команды, которые нужно добавить, как показано в следующем примере.  
   
-     <!--FIXME [!CODE [ButtonGroup#01](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#01)]  -->
-    ```xaml  
-    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidMyCommand" value="0x0100" />
-    </GuidSymbol>
-    ```  
+    <!--FIXME [!CODE [ButtonGroup#01](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#01)]  -->
+   ```xaml  
+   <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
+     <IDSymbol name="MyMenuGroup" value="0x1020" />
+     <IDSymbol name="cmdidMyCommand" value="0x0100" />
+   </GuidSymbol>
+   ```  
   
-    Атрибуты `name` элементов `GuidSymbol` и `IDSymbol` предоставляют пару GUID:ID для каждого нового меню, группы или команды. `guid` представляет набор команд, определенных для вашего VSPackage. Можно определить несколько наборов команд. Каждая пара GUID:ID должна быть уникальной.  
+   Атрибуты `name` элементов `GuidSymbol` и `IDSymbol` предоставляют пару GUID:ID для каждого нового меню, группы или команды. `guid` представляет набор команд, определенных для вашего VSPackage. Можно определить несколько наборов команд. Каждая пара GUID:ID должна быть уникальной.  
   
-4.  В разделе [Buttons](../extensibility/buttons-element.md) создайте элемент [Button](../extensibility/button-element.md) (кнопка) для определения команды, как показано в следующем примере.  
+4. В разделе [Buttons](../extensibility/buttons-element.md) создайте элемент [Button](../extensibility/button-element.md) (кнопка) для определения команды, как показано в следующем примере.  
   
-     <!--FIXME [!CODE [ButtonGroup#03](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#03)]  -->
-    ```xaml  
-    <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-      <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      <Icon guid="guidImages" id="bmpPic1" />
-      <Strings>
-        <CommandName>cmdidMyCommand</CommandName>
-        <ButtonText>My Command name</ButtonText>
-      </Strings>
-    </Button>
-    ```  
+    <!--FIXME [!CODE [ButtonGroup#03](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#03)]  -->
+   ```xaml  
+   <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
+     <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     <Icon guid="guidImages" id="bmpPic1" />
+     <Strings>
+       <CommandName>cmdidMyCommand</CommandName>
+       <ButtonText>My Command name</ButtonText>
+     </Strings>
+   </Button>
+   ```  
   
-    1.  Задайте поля `guid` и `id` , чтобы они соответствовали GUID:ID новой команды.  
+   1.  Задайте поля `guid` и `id` , чтобы они соответствовали GUID:ID новой команды.  
   
-    2.  Задайте атрибут `priority` .  
+   2.  Задайте атрибут `priority`.  
   
-         Атрибут `priority` используется VSCT-файлом для определения расположения кнопки среди других объектов в родительской группе.  
+        Атрибут `priority` используется VSCT-файлом для определения расположения кнопки среди других объектов в родительской группе.  
   
-         Команды, имеющие более низкий приоритет, отображаются над командами с более высоким приоритетом или слева от них. Одинаковые значения приоритета разрешены, но относительное расположение команд с одинаковым приоритетом определяется порядком, в котором пакеты VSPackage обрабатываются во время выполнения, и этот порядок нельзя определить заранее.  
+        Команды, имеющие более низкий приоритет, отображаются над командами с более высоким приоритетом или слева от них. Одинаковые значения приоритета разрешены, но относительное расположение команд с одинаковым приоритетом определяется порядком, в котором пакеты VSPackage обрабатываются во время выполнения, и этот порядок нельзя определить заранее.  
   
-         Если атрибут `priority` пропустить, он получает значение 0.  
+        Если атрибут `priority` пропустить, он получает значение 0.  
   
-    3.  Задайте атрибут `type` . В большинстве случаев его значение будет равно `"Button"`. Описания других допустимых типов кнопки см. в разделе [элемент Button](../extensibility/button-element.md).  
+   3.  Задайте атрибут `type` . В большинстве случаев его значение будет равно `"Button"`. Описания других допустимых типов кнопки см. в разделе [элемент Button](../extensibility/button-element.md).  
   
-5.  В определении кнопки создайте элемент [Strings](../extensibility/strings-element.md) , включающий элемент [ButtonText](../extensibility/buttontext-element.md) , который содержит имя меню, отображаемое в IDE, и элемент [CommandName](../extensibility/commandname-element.md) , который содержит имя команды, используемой для доступа к этому меню в окне **Команда** .  
+5. В определении кнопки создайте элемент [Strings](../extensibility/strings-element.md) , включающий элемент [ButtonText](../extensibility/buttontext-element.md) , который содержит имя меню, отображаемое в IDE, и элемент [CommandName](../extensibility/commandname-element.md) , который содержит имя команды, используемой для доступа к этому меню в окне **Команда** .  
   
-     Если строка текста кнопки содержит символ «&», пользователь может открыть меню, нажав клавишу **Alt** плюс знак, который следует сразу за «&».  
+    Если строка текста кнопки содержит символ «&», пользователь может открыть меню, нажав клавишу **Alt** плюс знак, который следует сразу за «&».  
   
-     При добавлении элемента `Tooltip` содержащийся в нем текст будет отображаться, когда пользователь наведет указатель на кнопку.  
+    При добавлении элемента `Tooltip` содержащийся в нем текст будет отображаться, когда пользователь наведет указатель на кнопку.  
   
-6.  Добавьте элемент [Icon](../extensibility/icon-element.md) , чтобы указать значок, который должен отображаться с командой. Значки требуются для кнопок на панели инструментов, но не для пунктов меню. Поля `guid` и `id` элемента `Icon` должны соответствовать таким же полям элемента [Bitmap](../extensibility/bitmap-element.md) , определенного в разделе `Bitmaps` .  
+6. Добавьте элемент [Icon](../extensibility/icon-element.md) , чтобы указать значок, который должен отображаться с командой. Значки требуются для кнопок на панели инструментов, но не для пунктов меню. Поля `guid` и `id` элемента `Icon` должны соответствовать таким же полям элемента [Bitmap](../extensibility/bitmap-element.md) , определенного в разделе `Bitmaps` .  
   
-7.  Добавьте флаги команды, чтобы соответствующим образом изменить внешний вид и поведение кнопки. Для этого добавьте элемент [CommandFlag](../extensibility/command-flag-element.md) в определение меню.  
+7. Добавьте флаги команды, чтобы соответствующим образом изменить внешний вид и поведение кнопки. Для этого добавьте элемент [CommandFlag](../extensibility/command-flag-element.md) в определение меню.  
   
-8.  Задайте родительскую группу команды. Родительская группа может быть создаваемой группой, группой из другого пакета или группой из IDE. Например, чтобы добавить команду в панель инструментов редактирования Visual Studio рядом с кнопками **Комментарий** и **Удалить комментарий** , задайте родительскую группу guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT. Если родительская группа является определяемой пользователем, она должна быть дочерним элементом меню, панели инструментов или окна инструментов в IDE.  
+8. Задайте родительскую группу команды. Родительская группа может быть создаваемой группой, группой из другого пакета или группой из IDE. Например, чтобы добавить команду в панель инструментов редактирования Visual Studio рядом с кнопками **Комментарий** и **Удалить комментарий** , задайте родительскую группу guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT. Если родительская группа является определяемой пользователем, она должна быть дочерним элементом меню, панели инструментов или окна инструментов в IDE.  
   
-     В зависимости от проекта это можно сделать одним из двух способов.  
+    В зависимости от проекта это можно сделать одним из двух способов.  
   
-    -   В элементе `Button` создайте элемент [Parent](../extensibility/parent-element.md) и укажите в его полях `guid` и `id` Guid и ID (идентификатор) группы, где будет размещаться команда, которая также называется *основной родительской группой*.  
+   - В элементе `Button` создайте элемент [Parent](../extensibility/parent-element.md) и укажите в его полях `guid` и `id` Guid и ID (идентификатор) группы, где будет размещаться команда, которая также называется *основной родительской группой*.  
   
-         В следующем примере задается команда, которая будет отображаться в определяемом пользователем меню.  
+      В следующем примере задается команда, которая будет отображаться в определяемом пользователем меню.  
   
-         <!--FIXME [!CODE [TopLevelMenu#03](../CodeSnippet/VS_Snippets_VSSDK/toplevelmenu#03)]  -->
-        ```xaml  
-        <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
-          <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
-          <Icon guid="guidImages" id="bmpPic1" />
-          <Strings>
-            <CommandName>cmdidTestCommand</CommandName>
-            <ButtonText>Test Command</ButtonText>
-          </Strings>
-        </Button>
-        ```  
+      <!--FIXME [!CODE [TopLevelMenu#03](../CodeSnippet/VS_Snippets_VSSDK/toplevelmenu#03)]  -->
+     ```xaml  
+     <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
+       <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
+       <Icon guid="guidImages" id="bmpPic1" />
+       <Strings>
+         <CommandName>cmdidTestCommand</CommandName>
+         <ButtonText>Test Command</ButtonText>
+       </Strings>
+     </Button>
+     ```  
   
-    -   Вы можете опустить элемент `Parent` , если команду предполагается размещать с помощью функции размещения команд. Создайте элемент [CommandPlacements](../extensibility/commandplacements-element.md) перед разделом `Symbols` и добавьте элемент [CommandPlacement](../extensibility/commandplacement-element.md) , имеющий `guid` и `id` команды, `priority`и родительский объект, как показано в следующем примере.  
+   - Вы можете опустить элемент `Parent` , если команду предполагается размещать с помощью функции размещения команд. Создайте элемент [CommandPlacements](../extensibility/commandplacements-element.md) перед разделом `Symbols` и добавьте элемент [CommandPlacement](../extensibility/commandplacement-element.md) , имеющий `guid` и `id` команды, `priority`и родительский объект, как показано в следующем примере.  
   
-         <!-- FIXME [!CODE [ButtonGroup#04](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#04)] -->  
-        ```xaml  
-        <CommandPlacements>
-          <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
-            <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-          </CommandPlacement>
-        </CommandPlacements>
-        ```  
+      <!-- FIXME [!CODE [ButtonGroup#04](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#04)] -->  
+     ```xaml  
+     <CommandPlacements>
+       <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
+         <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+       </CommandPlacement>
+     </CommandPlacements>
+     ```  
   
-         Если создать несколько размещений команд, имеющих одинаковые пары GUID:ID и разные родительские группы, меню будет отображаться в нескольких местах. Дополнительные сведения см. в описании элемента [CommandPlacements](../extensibility/commandplacements-element.md) .  
+      Если создать несколько размещений команд, имеющих одинаковые пары GUID:ID и разные родительские группы, меню будет отображаться в нескольких местах. Дополнительные сведения см. в описании элемента [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
      Дополнительные сведения о связях и группах команд см. в разделе [создание повторно используемых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md).  
   
- На этом этапе команда будет отображаться в IDE, но не будет иметь никаких функций. Если команда была создана с помощью шаблона пакета, по умолчанию она будет иметь обработчик щелчка, выводящий сообщение.  
+   На этом этапе команда будет отображаться в IDE, но не будет иметь никаких функций. Если команда была создана с помощью шаблона пакета, по умолчанию она будет иметь обработчик щелчка, выводящий сообщение.  
   
 ## <a name="handle-the-new-command"></a>Команды «Создать»  
  Большинство команд в управляемом коде может обрабатываться в Managed Package Framework (MPF) с помощью сопоставления команды с объектом <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализации соответствующих обработчиков событий.  
@@ -145,7 +145,7 @@ ms.locfileid: "39637803"
   
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]  
   
-     Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand> . Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+     Для статических команд подходит <xref:System.ComponentModel.Design.MenuCommand>. Для динамического отображения пунктов меню требуются обработчики событий QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> добавляет событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , которое происходит, когда открывается основное меню команды, и некоторые другие свойства, например <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Команды, созданные шаблоном проекта, по умолчанию передаются в объект <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> метода `Initialize()` класса пакета.  
   
@@ -174,29 +174,29 @@ ms.locfileid: "39637803"
   
 ### <a name="to-implement-querystatus"></a>Реализация QueryStatus  
   
-1.  Событие QueryStatus происходит перед отображением команды. Это позволяет установить свойства данной команды в обработчике события до того, как пользователь получит доступ к команде. Этот метод доступен только командам, которые добавлены в качестве объектов <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> .  
+1. Событие QueryStatus происходит перед отображением команды. Это позволяет установить свойства данной команды в обработчике события до того, как пользователь получит доступ к команде. Этот метод доступен только командам, которые добавлены в качестве объектов <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> .  
   
-     Добавьте объект `EventHandler` в событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> в объекте <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , создаваемом для обработки команды, как показано в следующем примере (`menuItem` — это экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ).  
+    Добавьте объект `EventHandler` в событие <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> в объекте <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , создаваемом для обработки команды, как показано в следующем примере (`menuItem` — это экземпляр <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ).  
   
-     [!code-csharp[MenuText#14](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_10.cs)]
-     [!code-vb[MenuText#14](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_10.vb)]  
+    [!code-csharp[MenuText#14](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_10.cs)]
+    [!code-vb[MenuText#14](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_10.vb)]  
   
-     Объект `EventHandler` получает имя метода, который вызывается при запросе состояния команды меню.  
+    Объект `EventHandler` получает имя метода, который вызывается при запросе состояния команды меню.  
   
-2.  Реализуйте метод обработчика состояния запроса для команды. Параметр `object` `sender` можно привести к объекту <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , который используется для задания различных атрибутов команды меню, включая ее текст. В следующей таблице показаны свойства в классе <xref:System.ComponentModel.Design.MenuCommand> (от которого является производным класс <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> MPF), соответствующие флагам <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
+2. Реализуйте метод обработчика состояния запроса для команды. Параметр `object` `sender` можно привести к объекту <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , который используется для задания различных атрибутов команды меню, включая ее текст. В следующей таблице показаны свойства в классе <xref:System.ComponentModel.Design.MenuCommand> (от которого является производным класс <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> MPF), соответствующие флагам <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
   
-    |Свойство MenuCommand|Флаг OLECMDF|  
-    |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
+   |Свойство MenuCommand|Флаг OLECMDF|  
+   |--------------------------|------------------|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
-     Чтобы изменить текст команды меню, используйте свойство <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> в объекте <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , как показано в следующем примере.  
+    Чтобы изменить текст команды меню, используйте свойство <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> в объекте <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , как показано в следующем примере.  
   
-     [!code-csharp[MenuText#11](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_11.cs)]
-     [!code-vb[MenuText#11](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_11.vb)]  
+    [!code-csharp[MenuText#11](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_11.cs)]
+    [!code-vb[MenuText#11](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_11.vb)]  
   
- MPF автоматически выполняет обработку в случае неподдерживаемых или неизвестных групп. Пока команда не будет добавлена в <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> с помощью метода <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> , эта команда не поддерживается.  
+   MPF автоматически выполняет обработку в случае неподдерживаемых или неизвестных групп. Пока команда не будет добавлена в <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> с помощью метода <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> , эта команда не поддерживается.  
   
 ### <a name="handle-commands-by-using-the-iolecommandtarget-interface"></a>Дескриптор команды с помощью интерфейса IOleCommandTarget  
  Для кода, использующего интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> напрямую, VSPackage должен реализовать методы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> интерфейса <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . Если VSPackage реализует иерархию проекта, вместо этих методов должны быть реализованы методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> .  
@@ -207,45 +207,45 @@ ms.locfileid: "39637803"
   
 #### <a name="to-implement-the-querystatus-method"></a>Реализация метода QueryStatus  
   
-1.  Получите <xref:Microsoft.VisualStudio.VSConstants.S_OK> для допустимых команд.  
+1. Получите <xref:Microsoft.VisualStudio.VSConstants.S_OK> для допустимых команд.  
   
-2.  Задайте элемент `cmdf` параметра `prgCmds` .  
+2. Задайте элемент `cmdf` параметра `prgCmds`.  
   
-     Значение элемента `cmdf` — это логическое объединение значений из перечисления <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> с помощью логического оператора ИЛИ (`|`).  
+    Значение элемента `cmdf` — это логическое объединение значений из перечисления <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> с помощью логического оператора ИЛИ (`|`).  
   
-     Используйте соответствующее перечисление, в зависимости от состояния команды.  
+    Используйте соответствующее перечисление, в зависимости от состояния команды.  
   
-    -   Если команда поддерживается:  
+   - Если команда поддерживается:  
   
-         `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
+      `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
   
-    -   Если команда должна быть невидимой в данный момент:  
+   - Если команда должна быть невидимой в данный момент:  
   
-         `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
+      `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
   
-    -   Если команда включена и отображается для выбора:  
+   - Если команда включена и отображается для выбора:  
   
-         `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
+      `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-         В случае обработки команд, которые размещаются в меню типа `MenuControllerLatched`, первая команда, помеченная флагом `OLECMDF_LATCHED` , — команда по умолчанию. Она отображается в меню при запуске. Дополнительные сведения о типах меню `MenuController` см. в разделе [Menu Element](../extensibility/menu-element.md).  
+      В случае обработки команд, которые размещаются в меню типа `MenuControllerLatched`, первая команда, помеченная флагом `OLECMDF_LATCHED` , — команда по умолчанию. Она отображается в меню при запуске. Дополнительные сведения о типах меню `MenuController` см. в разделе [Menu Element](../extensibility/menu-element.md).  
   
-    -   Если команда включена в текущий момент:  
+   - Если команда включена в текущий момент:  
   
-         `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
+      `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
   
-    -   Если команда является частью контекстного меню и скрыта по умолчанию:  
+   - Если команда является частью контекстного меню и скрыта по умолчанию:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
+      `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
-    -   Если команда использует флаг `TEXTCHANGES` , задайте в элементе `rgwz` параметра `pCmdText` новый текст команды, а в элементе `cwActual` параметра `pCmdText` — размер командной строки.  
+   - Если команда использует флаг `TEXTCHANGES`, задайте в элементе `rgwz` параметра `pCmdText` новый текст команды, а в элементе `cwActual` параметра `pCmdText` — размер командной строки.  
   
      В состояниях ошибок метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> должен обрабатывать следующие ошибки.  
   
-    -   Если идентификатор GUID неизвестен или не поддерживается, должно возвращаться значение `OLECMDERR_E_UNKNOWNGROUP`.  
+   - Если идентификатор GUID неизвестен или не поддерживается, должно возвращаться значение `OLECMDERR_E_UNKNOWNGROUP`.  
   
-    -   Если идентификатор GUID известен, но идентификатор ID команды неизвестен или не поддерживается, должно возвращаться значение `OLECMDERR_E_NOTSUPPORTED`.  
+   - Если идентификатор GUID известен, но идентификатор ID команды неизвестен или не поддерживается, должно возвращаться значение `OLECMDERR_E_NOTSUPPORTED`.  
   
- Реализация VSPackage метода <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> также должна возвращать конкретные коды ошибок, в зависимости от того, поддерживается ли команда и была ли она обработана успешно.  
+   Реализация VSPackage метода <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> также должна возвращать конкретные коды ошибок, в зависимости от того, поддерживается ли команда и была ли она обработана успешно.  
   
 #### <a name="to-implement-the-exec-method"></a>Реализация метода Exec  
   

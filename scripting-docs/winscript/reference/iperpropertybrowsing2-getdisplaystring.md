@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Документы Microsoft
+title: IPerPropertyBrowsing2::GetDisplayString | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be6f665d1f63966b3828868f4fb8fbf1cae002e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be88a76ce22dfd863e680fcc1a6794065ecaf76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836883"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Возвращает строку для отображения типов, которые не отображаются по своей природе возвращаемый текст — это имя, описывающее свойство и могут отображаться в пользовательском интерфейсе вызывающего.  
+Возвращает строку для отображения типов, которые не отображаются по своей природе возвращаемый текст — это имя, описывающее свойство и могут отображаться в пользовательском интерфейсе вызывающей стороны.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,13 +39,13 @@ HRESULT GetDisplayString(
   
 #### <a name="parameters"></a>Параметры  
  `dispid`  
- [in] Идентификатор свойства, отображаемое имя которого запрошено отправки.  
+ [in] Идентификатор запрошенного, отображаемое имя свойства отправки.  
   
  `pBstr`  
  [out] Указатель на `BSTR` содержащее отображаемое имя для свойства, идентифицируемого по `dispID`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимую `HRESULT`, обычно `S_OK`.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="remarks"></a>Примечания  
  Возвращаемая строка не является допустимым значением свойства. Это просто вывода строки свойства.  

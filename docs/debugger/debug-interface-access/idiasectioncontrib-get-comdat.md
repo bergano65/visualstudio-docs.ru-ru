@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_comdat | Документы Microsoft
+title: IDiaSectionContrib::get_comdat | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 578314d0771d156fe66bdfbf661ffca98844207f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cabd6b5736bd4f84916159a59bf43dc8442ae3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847765"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Возвращает флаг, который указывает, является ли раздел записи COMDAT.  
+Получает флаг, указывающий, является ли раздел записи COMDAT.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT get_comdat (
  [out] Возвращает `TRUE` Если раздел записи COMDAT; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Записи COMDAT является общий объект файла формат COFF запись, которая делает упакованные функции видимым в компоновщик.  
+ Запись COMDAT — распространенные объекта файла формат COFF запись, которая делает видимой компоновщику упакованные функции.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

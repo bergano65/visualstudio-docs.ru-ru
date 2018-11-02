@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872932"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ ms.locfileid: "49207497"
   
  JIT-отладку можно разрешить для программ следующих типов:  
   
--   Управляемый  
+- Управляемый  
   
--   машинный код;  
+- машинный код;  
   
--   Сценарий  
+- Сценарий  
   
- JIT-отладка — это технология отладки программы, запускаемой вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Программу, созданную в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно выполнять вне среды [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если включена JIT-отладка, сбой программы вызовет появление диалогового окна с вопросом о том, необходимо ли выполнить отладку.  
+  JIT-отладка — это технология отладки программы, запускаемой вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Программу, созданную в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно выполнять вне среды [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если включена JIT-отладка, сбой программы вызовет появление диалогового окна с вопросом о том, необходимо ли выполнить отладку.  
   
 ## <a name="associated-warnings"></a>Связанные предупреждения  
  При посещении этой страницы из **параметры** диалоговое окно может появиться предупреждающее сообщение следующим образом:  

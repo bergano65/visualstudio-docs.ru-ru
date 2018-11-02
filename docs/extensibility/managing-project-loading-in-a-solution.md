@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950203"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 Решения Visual Studio может содержать большое количество проектов. Visual Studio по умолчанию задается для загрузки всех проектов в решении во время открытия решения и не разрешает пользователю доступ к любой из проектов, пока все они завершения загрузки. Когда процесс загрузки проекта хватит на более чем за две минуты, отображается индикатор хода выполнения, в число проектов, загруженных и общее число проектов. Пользователь может выгрузить проекты при работе в решении с несколькими проектами, но эта процедура имеет определенные недостатки: выгруженные проекты не были собраны как часть команды Перестроить решение и закрытия IntelliSense описания типов и членов проекты не отображаются.  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Обнаружение и управление ими решение и загрузкой проекта  
  Чтобы обнаружить состояние загрузки проектов и решений, вызывается <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> со следующими значениями:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если решение и все его проекты загружаются, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если решение и все его проекты загружаются, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в данный момент загружается в фоновом режиме, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в данный момент загружается в фоновом режиме, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в данный момент загружается синхронно в результате пользовательской команды или других явную загрузку, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` возвращает `true` Если пакета проектов в данный момент загружается синхронно в результате пользовательской команды или других явную загрузку, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` возвращает `true` если оно в данный момент закрывается, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` возвращает `true` если оно в данный момент закрывается, в противном случае `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` возвращает `true` Если решение сейчас открыт, в противном случае `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` возвращает `true` Если решение сейчас открыт, в противном случае `false`.  
   
- Также можно обеспечить загрузку проектов и решений, вызвав один из следующих методов:  
+  Также можно обеспечить загрузку проектов и решений, вызвав один из следующих методов:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: этот метод приводит проектов в решении для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: этот метод приводит проектов в решении для загрузки перед возвращением метода.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: этот метод приводит проектов в `guidProject` для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: этот метод приводит проектов в `guidProject` для загрузки перед возвращением метода.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: этот метод приводит к проекту в `guidProjectID` для загрузки перед возвращением метода.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: этот метод приводит к проекту в `guidProjectID` для загрузки перед возвращением метода.  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901558"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Модульное тестирование кода Visual C# в приложениях Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "49245444"
   
 > [!NOTE]
 >  Visual Studio Community, Enterprise и Professional предоставляют дополнительные функции для модульного тестирования.  
->   
->  -   Можно использовать любые сторонние среды модульного тестирования и среды с открытым кодом, для которых создан адаптер-надстройка для обозревателя тестов корпорации Майкрософт. Кроме того, можно анализировать и отображать данные о покрытии кода для тестов.  
-> -   Проводите тесты после каждой сборки.  
-> -   VS Enterprise также содержит Microsoft Fakes — платформу изоляции управляемого кода, которая позволяет сосредоточиться на тестировании вашего собственного кода путем замены кода, реализующего системные и сторонние функции.  
->   
->  Дополнительные сведения см. в разделе [Проверка кода с помощью модульных тестов](http://msdn.microsoft.com/library/dd264975.aspx) в библиотеке MSDN.  
+> 
+> - Можно использовать любые сторонние среды модульного тестирования и среды с открытым кодом, для которых создан адаптер-надстройка для обозревателя тестов корпорации Майкрософт. Кроме того, можно анализировать и отображать данные о покрытии кода для тестов.  
+>   -   Проводите тесты после каждой сборки.  
+>   -   VS Enterprise также содержит Microsoft Fakes — платформу изоляции управляемого кода, которая позволяет сосредоточиться на тестировании вашего собственного кода путем замены кода, реализующего системные и сторонние функции.  
+> 
+>   Дополнительные сведения см. в разделе [Проверка кода с помощью модульных тестов](http://msdn.microsoft.com/library/dd264975.aspx) в библиотеке MSDN.  
   
 ##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Создание решения и проекта модульного теста](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ ms.locfileid: "49245444"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Объединение проекта теста с проектом приложения  
   
-1.  Добавьте ссылку на приложение Maths в проект RooterTests.  
+1. Добавьте ссылку на приложение Maths в проект RooterTests.  
   
-    1.  В обозревателе решений выберите проект **RooterTests** и в контекстном меню выберите команду **Добавить ссылку**.  
+   1.  В обозревателе решений выберите проект **RooterTests** и в контекстном меню выберите команду **Добавить ссылку**.  
   
-    2.  В диалоговом окне **Добавить ссылку — RooterTests** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **Maths**.  
+   2.  В диалоговом окне **Добавить ссылку — RooterTests** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **Maths**.  
   
-         ![Добавление ссылки на проект Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![Добавление ссылки на проект Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  Добавьте оператор using в файл UnitTest1.cs.  
+2. Добавьте оператор using в файл UnitTest1.cs.  
   
-    1.  Откройте файл **UnitTest1.cs**.  
+   1.  Откройте файл **UnitTest1.cs**.  
   
-    2.  Добавьте следующий код ниже строки `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
+   2.  Добавьте следующий код ниже строки `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  Добавьте тест, который использует функцию Rooter. Добавьте следующий код в файл **UnitTest1.cpp**:  
+3. Добавьте тест, который использует функцию Rooter. Добавьте следующий код в файл **UnitTest1.cpp**:  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  Постройте решение.  
+4. Постройте решение.  
   
-     Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.  
+    Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.  
   
-5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
+5. В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
+   Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения  
   
@@ -256,70 +256,70 @@ ms.locfileid: "49245444"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста  
   
-1.  Добавьте еще один тест в файл **UnitTest1.cs**:  
+1. Добавьте еще один тест в файл **UnitTest1.cs**:  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
+2. В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.  
+    Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.  
   
-     ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.  
+3. Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.  
   
-    1.  Установите точку останова перед функцией `SquareRoot`.  
+   1.  Установите точку останова перед функцией `SquareRoot`.  
   
-    2.  В контекстном меню непройденного теста выберите **Отладить выбранные тесты**.  
+   2.  В контекстном меню непройденного теста выберите **Отладить выбранные тесты**.  
   
-         Когда выполнение прекратится на точке останова, выполните код по шагам.  
+        Когда выполнение прекратится на точке останова, выполните код по шагам.  
   
-    3.  Добавьте в метод Rooter код для перехвата исключения:  
+   3.  Добавьте в метод Rooter код для перехвата исключения:  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.  
+   1.  В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.  
   
- Теперь все тесты проходят успешно.  
+   Теперь все тесты проходят успешно.  
   
- ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> Рефакторинг кода  
  **Упростите основное вычисление в функции SquareRoot.**  

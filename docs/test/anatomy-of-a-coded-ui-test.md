@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925220"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180325"
 При создании закодированного теста пользовательского интерфейса **построитель закодированных тестов пользовательского интерфейса** создает карту тестируемого пользовательского интерфейса, а также методы тестов, параметры и утверждения для всех тестов. Он также создает файл класса для каждого теста.
 
 |Файл|Описание|Редактируемый?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Раздел объявлений](#UIMapDesignerFile)<br /><br /> [Класс UIMap](#UIMapClass) (разделяемый, автоматически создаваемый)<br /><br /> [Методы](#UIMapMethods)<br /><br /> [Свойства](#UIMapProperties)|Нет|
 |[UIMap.cs](#UIMapCS)|[Класс UIMap](#UIMapCS) (разделяемый)|Да|
 |[CodedUITest1.cs](#CodedUITestCS)|[Класс CodedUITest1](#CodedUITestCS)<br /><br /> [Методы](#CodedUITestMethods)<br /><br /> [Свойства](#CodedUITestProperties)|Да|

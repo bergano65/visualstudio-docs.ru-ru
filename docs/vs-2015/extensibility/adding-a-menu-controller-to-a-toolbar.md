@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830955"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Добавление контроллера меню на панель инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,82 +40,82 @@ ms.locfileid: "49231183"
   
 #### <a name="to-create-a-menu-controller"></a>Чтобы создать контроллер меню  
   
-1.  Следуйте процедуре, описанной в [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) создать окно инструментов, который содержит панель инструментов.  
+1. Следуйте процедуре, описанной в [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) создать окно инструментов, который содержит панель инструментов.  
   
-2.  В TWTestCommandPackage.vsct перейдите к разделу символы. В названный элемент GuidSymbol **guidTWTestCommandPackageCmdSet**, объявите контроллере меню, группы контроллера меню и трех пунктов меню.  
+2. В TWTestCommandPackage.vsct перейдите к разделу символы. В названный элемент GuidSymbol **guidTWTestCommandPackageCmdSet**, объявите контроллере меню, группы контроллера меню и трех пунктов меню.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  В разделе меню после последнего элемента меню, определите контроллер меню в виде меню.  
+3. В разделе меню после последнего элемента меню, определите контроллер меню в виде меню.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges` И `TextIsAnchorCommand` флаги должен быть включен, чтобы включить контроллер меню в соответствии с последней выбранной команды.  
+    `TextChanges` И `TextIsAnchorCommand` флаги должен быть включен, чтобы включить контроллер меню в соответствии с последней выбранной команды.  
   
-4.  В группах разделе после последнего элемента группы, добавьте группу контроллера меню.  
+4. В группах разделе после последнего элемента группы, добавьте группу контроллера меню.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Задавая контроллер меню как родительский, все команды, помещаются в эту группу будут отображаться в контроллер меню. `priority` Атрибут указан, который устанавливает значение по умолчанию 0, так как они будут только группы на контроллере меню.  
+    Задавая контроллер меню как родительский, все команды, помещаются в эту группу будут отображаться в контроллер меню. `priority` Атрибут указан, который устанавливает значение по умолчанию 0, так как они будут только группы на контроллере меню.  
   
-5.  В разделе кнопок после последней записи кнопки, добавьте элемент кнопки для каждого элемента меню.  
+5. В разделе кнопок после последней записи кнопки, добавьте элемент кнопки для каждого элемента меню.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  На этом этапе можно взглянуть на контроллер меню. Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
+6. На этом этапе можно взглянуть на контроллер меню. Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-    1.  На **представления / Other Windows** откройте в меню **окно инструментов тестирования**.  
+   1. На **представления / Other Windows** откройте в меню **окно инструментов тестирования**.  
   
-    2.  Контроллер меню отображается на панели инструментов в окне инструментов.  
+   2. Контроллер меню отображается на панели инструментов в окне инструментов.  
   
-    3.  Щелкните стрелку в правой части контроллер меню, чтобы увидеть три возможных команд.  
+   3. Щелкните стрелку в правой части контроллер меню, чтобы увидеть три возможных команд.  
   
-     Обратите внимание, что при выборе команды заголовок контроллера меню изменяется для отображения этой команды. В следующем разделе мы добавим код, чтобы активировать эти команды.  
+      Обратите внимание, что при выборе команды заголовок контроллера меню изменяется для отображения этой команды. В следующем разделе мы добавим код, чтобы активировать эти команды.  
   
 ## <a name="implementing-the-menu-controller-commands"></a>Реализация команды меню контроллера  
   

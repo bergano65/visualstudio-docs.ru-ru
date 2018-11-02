@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904049"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ ms.locfileid: "49250540"
   
 ###  <a name="coupleProjects"></a> Привязка тестового проекта к проекту библиотеки DLL  
   
-1.  Добавьте проект DLL в ссылки тестового проекта.  
+1. Добавьте проект DLL в ссылки тестового проекта.  
   
-    1.  Откройте свойства тестового проекта и выберите **Общие свойства**, **.NET Framework и ссылки**.  
+   1.  Откройте свойства тестового проекта и выберите **Общие свойства**, **.NET Framework и ссылки**.  
   
-         ![Свойства проекта C&#43;&#43; — ".NET Framework и ссылки"](../test/media/utecpp08.png "UteCpp08")  
+        ![Свойства проекта C&#43;&#43; — ".NET Framework и ссылки"](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Выберите команду **Добавить новую ссылку**.  
+   2.  Выберите команду **Добавить новую ссылку**.  
   
-         В диалоговом окне **Добавление ссылки** выберите проект библиотеки DLL и нажмите **Добавить**.  
+        В диалоговом окне **Добавление ссылки** выберите проект библиотеки DLL и нажмите **Добавить**.  
   
-         ![Свойства проекта C&#43;&#43; — "Добавить новую ссылку"](../test/media/utecpp09.png "UteCpp09")  
+        ![Свойства проекта C&#43;&#43; — "Добавить новую ссылку"](../test/media/utecpp09.png "UteCpp09")  
   
-2.  В основном CPP-файле модульного теста включите H-файл кода библиотеки DLL.  
+2. В основном CPP-файле модульного теста включите H-файл кода библиотеки DLL.  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Добавьте простой тест, который использует экспортированную функцию.  
+3. Добавьте простой тест, который использует экспортированную функцию.  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Постройте решение.  
+4. Постройте решение.  
   
-     Новый тест появится в обозревателе тестов.  
+    Новый тест появится в обозревателе тестов.  
   
-5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
+5. В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     ![Обозреватель модульных тестов — базовый тест пройден](../test/media/utecpp10.png "UteCpp10")  
+    ![Обозреватель модульных тестов — базовый тест пройден](../test/media/utecpp10.png "UteCpp10")  
   
- Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
+   Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   
 ###  <a name="iterate"></a> Итеративное расширение тестов и обеспечение их успешного выполнения  
   

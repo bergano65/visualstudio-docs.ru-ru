@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548796"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100917"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
-Если вы используете проект совместно с другими пользователями с помощью системы сборки или планируете [опубликовать его в Microsoft Azure](python-azure-cloud-service-project-template.md), нужно указать требуемые для проекта внешние пакеты. Рекомендуется использовать файл [requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
+Если вы предоставляете доступ к проекту другим, используете систему сборки или планируете развернуть его в другом расположении, где нужно восстановить среду, то необходимо указать внешние пакеты, необходимые проекту. Рекомендуется использовать файл [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
 
 Технически для отслеживания требований можно использовать любой файл (используя `-r <full path to file>` при установке пакета), но Visual Studio имеет встроенную поддержку *requirements.txt*:
 

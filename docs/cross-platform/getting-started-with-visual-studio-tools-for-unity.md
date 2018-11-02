@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855213"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Начало работы с инструментами Visual Studio для Unity
 
@@ -47,7 +47,7 @@ ms.locfileid: "44283116"
 
 Если у вас уже установлен Visual Studio 2017 или вы предпочитаете выполнить установку вручную, запустите установщик Visual Studio.
 
-1. [Загрузите установщик Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio) или запустите его (если он был ранее установлен).
+1. [Загрузите установщик Visual Studio](/visualstudio/install/install-visual-studio) или запустите его (если он был ранее установлен).
 
 1. Щелкните **Изменить** (если установлено) или **Установка** (для новой установки) для требуемой версии Visual Studio.
 
@@ -63,21 +63,21 @@ ms.locfileid: "44283116"
 
 1. Выберите **Параметры** в меню **Изменить**.
 
-  ![Выберите "Параметры"](media/vstu_unity-preferences.png)
+   ![Выберите "Параметры"](media/vstu_unity-preferences.png)
 
-1. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
+2. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
 
-1. В раскрывающемся списке **внешнего редактора скриптов** выберите необходимую версию элемента Visual Studio, если она присутствует, в противном случае нажмите кнопку **Обзор...**.
+3. В раскрывающемся списке **внешнего редактора скриптов** выберите необходимую версию элемента Visual Studio, если она присутствует, в противном случае нажмите кнопку **Обзор...**.
 
-  ![Выберите Visual Studio](media/vstu_unity-external-tools.png)
+   ![Выберите Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Если было выбрано **Обзор...**, необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
+4. Если было выбрано **Обзор...**, необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
 
-  ![Выберите "Открыть"](media/vstu_browse-for-application.png)
+   ![Выберите "Открыть"](media/vstu_browse-for-application.png)
 
-1. После выбора Visual Studio из списка **внешнего редактора скриптов**, убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
+5. После выбора Visual Studio из списка **внешнего редактора скриптов**, убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
 
-1. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры**.
+6. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры**.
 
 ## <a name="support-for-older-versions"></a>Поддержка устаревших версий
 
