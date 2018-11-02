@@ -1,4 +1,4 @@
----
+﻿---
 title: О Microsoft Spy ++ | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
