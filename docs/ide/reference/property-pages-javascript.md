@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797536"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220034"
 ---
 # <a name="property-pages-javascript"></a>Страницы свойств (JavaScript)
-Со **страниц свойств** можно получить доступ к параметрам проекта. Страницы, которые отображаются на **страницах свойств**, можно использовать для изменения свойств проекта.
+На **страницах свойств** можно получить доступ к параметрам проекта. Страницы, которые отображаются на **страницах свойств**, можно использовать для изменения свойств проекта.
 
 Чтобы получить доступ к свойствам проекта, выберите узел проекта в **обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.
 

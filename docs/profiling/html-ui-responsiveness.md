@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834541"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220151"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Анализ скорости реагирования пользовательского интерфейса HTML в универсальных приложениях Windows
 В этой статье описано, как можно изолировать проблемы производительности в приложениях с помощью профилировщика скорости реагирования пользовательского интерфейса. Это специальное средство оценки производительности для универсальных приложений Windows.  
@@ -42,7 +42,7 @@ ms.locfileid: "49834541"
   
 2.  В меню **Отладка** выберите **Профилировщик производительности**.  
   
-     Если требуется изменить целевой объект анализа для профилировщика, выберите**Изменить целевой объект**.  
+     Если требуется изменить целевой объект анализа для профилировщика, выберите **Изменить целевой объект**.  
   
      ![Изменение целевого объекта анализа](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

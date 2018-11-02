@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e551ee503fc0083c81db44327c50965ea45d0c21
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 519bfd5610b420472502407792dbff3ea1ebedd2
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411031"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050136"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Установка отладочных символов для интерпретаторов Python
 
@@ -77,6 +77,9 @@ Visual Studio может вывести запрос на использован
 | 3.3.2 | [32-разрядная](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64-разрядная](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32-разрядная](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64-разрядная](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32-разрядная](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64-разрядная](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.15 | [32-разрядная](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
+| 2.7.14 | [32-разрядная](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
+| 2.7.13 | [32-разрядная](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
 | 2.7.12 | [32-разрядная](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32-разрядная](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32-разрядная](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64-разрядная](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |

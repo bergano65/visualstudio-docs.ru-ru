@@ -9,12 +9,12 @@ description: Сведения о подписке на Power BI Pro, входя
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894564"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219540"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -92,9 +92,24 @@ ms.locfileid: "49894564"
 - Кредитная карта.  Если вы укажете номер кредитной карты, средства с нее не спишутся. 
 - Счет.  Если выбрать способ оплаты "Счет", номер кредитной карты можно не указывать.  Можно также задать интервал "ежегодно".  Таким образом, вы получите одно электронное сообщение о готовности счета.  Сумма счета будет 0,00 USD.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Вопрос. Можно ли использовать преимущество Power BI Pro, включенное в мою подписку, в рабочей среде?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Вопрос. Можно ли использовать преимущество Power BI Pro, включенное в лицензии на подписки, в рабочей среде?
 Ответ. Да.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Вопрос. При попытке активировать Power BI Pro выводится сообщение "У вас уже есть рабочая учетная запись".  Можно ли и дальше использовать преимущество?
+Ответ. Да.  Сообщение указывает, что вы выполнили вход в домен, который уже имеет активные клиенты Office 365, администратором которых вы не являетесь.  Чтобы добавить Power BI Pro в клиент, необходимо быть администратором этого клиента.  Чтобы устранить эту проблему, выполните следующие действия по созданию собственного клиента.
+1.  Когда появится сообщение о том, что у вас уже есть рабочая учетная запись, щелкните **Создать учетную запись**.
+
+2.  На следующем экране укажите контактные данные и нажмите кнопку **Далее**.
+
+3.  Создайте идентификатор пользователя и пароль.  Чтобы воспользоваться преимуществами бесплатного предложения, необходимо выбрать домен **.onmicrosoft.com**. Щелкните **Создать учетную запись**.
+    > [!div class="mx-imgBorder"]
+    > ![Создание идентификатора пользователя закрытого клиента для преимущества Power BI Pro](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  Остальные шаги в процессе идентичны приведенным в статье, начиная с шага 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Вопрос. Я нахожусь в домене для правительственных организаций.  Можно ли использовать преимущество? 
+Ответ. Нет.  Преимущество Power BI Pro невозможно добавить для клиентов в домене для правительственных организаций. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с Power BI Pro?
@@ -103,3 +118,6 @@ ms.locfileid: "49894564"
     - Изучите важные вопросы, получите помощь от сообщества или отправьте запрос на поддержку на [странице поддержки](https://powerbi.microsoft.com/support/).
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Чтобы активировать преимущество Power BI Pro, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

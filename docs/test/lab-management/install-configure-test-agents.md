@@ -1,6 +1,6 @@
 ---
 title: Установка агентов и контроллеров тестирования
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370969"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219033"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -44,9 +44,9 @@ ms.locfileid: "46370969"
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Совместимые версии TFS, Microsoft Test Manager, контроллера тестирования и агента тестирования
 
-Вы можете комбинировать разные версии TFS, Microsoft Test Manager (MTM), контроллера тестирования и агента тестирования в соответствии с данными в следующей таблице:
+Вы можете комбинировать разные версии TFS, Microsoft Test Manager, контроллера тестирования и агента тестирования в соответствии с данными в следующей таблице.
 
-| TFS | MTM с центром лабораторий | Контроллер | Агент |
+| TFS | Microsoft Test Manager с Lab Center | Контроллер | Агент |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: обновление с 2015 или новая установка | 2017 | 2017 | 2017 |
 | 2017: обновление с 2015 или новая установка | 2017 | 2013, обновление 5 | 2013, обновление 5 |
@@ -55,6 +55,9 @@ ms.locfileid: "46370969"
 | 2015: новая установка | 2013 | 2013 | 2013 |
 | 2015: обновление с 2013 или новая установка | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Сценарии Lab Management в TFS 2018 и Azure DevOps Services являются устаревшими. Дополнительные сведения см. в статье [Заметки о выпуске TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Обновление агентов тестирования Visual Studio 2013
 

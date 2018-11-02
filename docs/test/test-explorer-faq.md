@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775108"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244389"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775108"
 **В поле поиска обозревателя тестов исчез фильтр "Путь к файлу".**
 
 Фильтр "Путь к файлу"в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7 (предварительная версия 3). Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает последовательность разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Удаление недокументированных интерфейсов
+**Некоторые интерфейсы API, относящиеся к тесту, отсутствуют в Visual Studio 2019. Что изменилось?**
+В Visual Studio 2019 будут удалены некоторые API окон тестов, которые были ранее помечены как общедоступные, но никогда не были официально задокументированы. Они были помечены как "нерекомендуемые" в Visual Studio 2017, чтобы заранее предупредить группы обслуживания расширений. Насколько нам известно, с этими API-интерфейсами работала и была связана лишь незначительная часть расширений. К ним относятся `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` и `SearchFilterTokenType`. Если это изменение влияет на ваше расширение, сообщите нам, отправив сведения об ошибке в [сообщество разработчиков](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Ссылка NuGet для адаптера теста
 **В Visual Studio 2017 версии 15.8 тесты обнаруживаются, но не выполняются.**

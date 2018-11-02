@@ -1,27 +1,25 @@
 ---
-title: Цвет Справочник по значениям для Visual Studio | Документация Майкрософт
+title: Справочник по значениям цвета
 description: 'Ссылка: Из шестнадцатеричных кодов для создания новых маркеров цвета Visual Studio'
 keywords: цвет, шестнадцатеричный код, hue, теме пользовательского интерфейса, темы
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
 ms.technology:
 - vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902610"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751093"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Справочник по значениям цвета для Visual Studio
+
 В этом разделе предназначена для создания новых цвет маркеров. При создании нового пользовательского интерфейса, можно использовать похожих цветов из существующих элементов пользовательского интерфейса для выбора цвета для каждой основной темы и имени системного цвета для этого элемента для тем высокой контрастности. 
 
 Сведения о создании новых цвет маркеров реализации см. в разделе [цвета темы средства](../../extensibility/internals/color-theming-tools.md).

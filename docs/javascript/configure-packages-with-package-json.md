@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126646"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219099"
 ---
 # <a name="packagejson-configuration"></a>Конфигурация package.json
 
@@ -28,7 +28,7 @@ ms.locfileid: "44126646"
 
     [major].[minor].[patch]
 
-Предположим, у вас есть пакет в приложении с версией 5.2.1. 5 — это основной номер версии, 2 — дополнительный номер версии, а 1 — исправление.
+Предположим, у вас есть пакет в приложении с версией 5.2.1. Основная версия — 5, дополнительная версия — 2, версия исправления — 1.
 
 * В обновлении основного номера версии пакет включает новые возможности, которые несовместимы с предыдущими версиями, то есть критические изменения.
 * В обновлении дополнительного номера версии в пакет добавлены новые возможности, которые несовместимы с более ранними версиями пакета.
