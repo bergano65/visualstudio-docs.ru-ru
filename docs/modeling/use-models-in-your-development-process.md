@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824300"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967224"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 
@@ -140,7 +140,7 @@ ms.locfileid: "49824300"
 
 ## <a name="see-also"></a>См. также
 
-- [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)
 - [Моделирование требований пользователей](../modeling/model-user-requirements.md)
 - [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)

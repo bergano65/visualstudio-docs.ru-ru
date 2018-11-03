@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8e439ae8cb73b8fdaf1bce514370a736cbd0b238
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0265146f5b8d03c7b3ac5f2b08b0cb384c3e45a5
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822349"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967107"
 ---
 # <a name="properties-of-decorators"></a>Свойства декораторов
 Декораторы, значки, текст или развернуть/свернуть угловые скобки, которые могут присутствовать на формы или соединительные линии на диаграмме. В следующих таблицах показаны свойства три вида декоратор. Некоторые свойства отображаются только на декораторы формы или только на оформители соединителя.
@@ -68,4 +68,4 @@ ms.locfileid: "49822349"
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

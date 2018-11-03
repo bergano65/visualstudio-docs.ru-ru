@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898555"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967523"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 
@@ -298,7 +298,7 @@ ms.locfileid: "49898555"
 При написании C# для данной модели, можно перепрыгивать через связь за один шаг, с помощью свойства, которое генерируется отношением на каждый из классов, которым они относятся:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 При этом необходимо явно включить оба прыжка в синтаксис пути. Из-за этого требования получение доступа к промежуточной связи можно упростить. Следующий код завершает прыжок из связи в свойство Component.
@@ -581,6 +581,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
 - [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

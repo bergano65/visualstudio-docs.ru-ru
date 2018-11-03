@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858864"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966756"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для визуализации &amp; пакет SDK моделирования
 Ниже приведены списки, которые поддерживаются в выпусках Visual Studio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] в средах разработки и развертывания. Дополнительные сведения об этих выпусках см. в разделе Microsoft Visual Studio [Центр разработчиков](http://go.microsoft.com/fwlink/?LinkId=75628).
@@ -48,4 +48,4 @@ ms.locfileid: "47858864"
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

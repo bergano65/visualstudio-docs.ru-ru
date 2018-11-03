@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835713"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967289"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -173,7 +173,7 @@ ms.locfileid: "49835713"
 
 ## <a name="validate-code-automatically"></a>Автоматическая проверка кода
 
-Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует DevOps в Azure, можно выполнить проверку слоев с условными возвратами, которые можно задать путем создания пользовательской задачи MSBuild и использовать отчеты по сборке для сбора ошибок проверки. Чтобы создать с условным возвратом, см. в разделе [использование процесса сборки с условным возвратом для проверки изменений](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует DevOps в Azure, можно выполнить проверку слоев с условными возвратами, которые можно задать путем создания пользовательской задачи MSBuild и использовать отчеты по сборке для сбора ошибок проверки. Чтобы создать с условным возвратом, см. в разделе [TFVC с условным возвратом](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Автоматическая проверка кода во время локальной сборки
 
@@ -237,6 +237,6 @@ ms.locfileid: "49835713"
 
 ## <a name="see-also"></a>См. также
 
-- [Динамическая проверка зависимостей в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Динамическая проверка зависимостей в Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 - [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

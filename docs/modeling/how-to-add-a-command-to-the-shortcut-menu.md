@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913934"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967419"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Практическое руководство. Добавление команды в контекстное меню
 Чтобы пользователи могли выполнять задачи, характерные для вашего доменного языка (DSL), можно добавить в него команды меню. Команды отображаются в контекстном меню, когда пользователь нажимает схему правой кнопкой мыши. Команду можно настроить таким образом, чтобы она появлялась в меню только при определенных обстоятельствах. Например, можно сделать команду видимой, только когда пользователь выбирает определенные типы элементов или элементы в определенных состояниях.
@@ -362,6 +362,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Практическое руководство. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Развертывание решений на доменных языках](../modeling/deploying-domain-specific-language-solutions.md)
-- [Пример кода: пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Пример кода: пример принципиальной схемы](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
