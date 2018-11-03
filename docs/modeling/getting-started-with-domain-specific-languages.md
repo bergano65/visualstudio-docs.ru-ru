@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885667"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967328"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Начало работы с предметно-ориентированными языками
 
 В этом разделе приводятся основные концепции в определении и использовании доменный язык (DSL), созданных с помощью пакета SDK моделирования для Visual Studio.
 
 > [!NOTE]
-> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Если вы не знакомы с DSL впервые, мы советуем работать через **лаборатории средства DSL**, который можно найти на этом сайте: [пакет и пакет SDK моделирования](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ ms.locfileid: "49885667"
 1.  Нажмите кнопку **преобразовать все шаблоны** в **обозревателе решений** панели инструментов. Будет повторно создан большую часть исходного кода из DslDefinition.dsl.
 
     > [!NOTE]
-    > При каждом изменении *DslDefinition.dsl*, необходимо нажать кнопку **преобразовать все шаблоны** перед перестроением решения. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+    > При каждом изменении *DslDefinition.dsl*, необходимо нажать кнопку **преобразовать все шаблоны** перед перестроением решения. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  Нажмите клавишу **F5**или выберите в меню **Отладка** пункт **Начать отладку**.
 
