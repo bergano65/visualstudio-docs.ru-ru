@@ -13,10 +13,10 @@
 
 ## <a name="contributing-to-the-documentation"></a>Участие в работе над документацией
 
-Чтобы принять участие в работе над этой документацией, см. [руководство по участию](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Чтобы принять участие в работе над этой документацией, см. [руководство по участию](CONTRIBUTING.md).
 Ждем ваших публикаций, призванных помочь улучшить документацию по Visual Studio. Все статьи в этом репозитории используют разметку GitHub Flavored Markdown.
 
-Некоторые области Visual Studio имеют в этом репозитории собственные папки, например **debugger** для отладки, **ide** для интегрированной среды разработки (IDE) Visual Studio и т. д. Вложенная папка **/media** в каждой из папок содержит файлы ART для соответствующих тем. Дополнительные сведения см. в [руководстве по участию](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Некоторые области Visual Studio имеют в этом репозитории собственные папки, например **debugger** для отладки, **ide** для интегрированной среды разработки (IDE) Visual Studio и т. д. Вложенная папка **/media** в каждой из папок содержит файлы ART для соответствующих тем. Дополнительные сведения см. в [руководстве по участию](CONTRIBUTING.md).
 
 Этот проект ввела [Microsoft Open источника Кодекс](https://opensource.microsoft.com/codeofconduct/). Дополнительные сведения см. в [вопросах и ответах по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми дополнительными вопросами или комментариями обратитесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
 
