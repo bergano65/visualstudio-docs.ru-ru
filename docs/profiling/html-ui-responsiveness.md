@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220151"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221052"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Анализ скорости реагирования пользовательского интерфейса HTML в универсальных приложениях Windows
 В этой статье описано, как можно изолировать проблемы производительности в приложениях с помощью профилировщика скорости реагирования пользовательского интерфейса. Это специальное средство оценки производительности для универсальных приложений Windows.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Дополнительные сведения  
   
--   Посмотрите [этот видеоролик](http://channel9.msdn.com/Events/Build/2013/3-316) о профилировщике скорости реагирования ИП с конференции Build 2013.  
+-   Посмотрите [этот видеоролик](https://channel9.msdn.com/Events/Build/2013/3-316) о профилировщике скорости реагирования ИП с конференции Build 2013.  
   
--   Просмотрите советы по оптимизации производительности для приложений универсальной платформы Windows, созданных для Windows с использованием JavaScript. Дополнительные сведения см. в разделе [рекомендаций по оптимизации производительности для приложений универсальной платформы Windows на основе JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Просмотрите советы по оптимизации производительности для приложений универсальной платформы Windows, созданных для Windows с использованием JavaScript. Дополнительные сведения см. в разделе [рекомендаций по оптимизации производительности для приложений универсальной платформы Windows на основе JavaScript](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Сведения о модели и производительности однопотокового выполнения кода см. в разделе [Выполнение кода](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Сведения о модели и производительности однопотокового выполнения кода см. в разделе [Выполнение кода](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>См. также  
  [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

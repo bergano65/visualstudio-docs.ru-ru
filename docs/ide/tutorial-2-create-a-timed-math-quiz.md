@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672643"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Руководство 2. Создание ограниченной по времени математической головоломки
 
@@ -36,7 +36,7 @@ ms.locfileid: "40008399"
 
 ## <a name="tutorial-links"></a>Ссылки на руководства
 
-Скачать готовую версию головоломки можно на странице с [полным примером руководства по созданию математической головоломки](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Скачать готовую версию головоломки можно на странице с [полным примером руководства по созданию математической головоломки](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
 > В этом учебнике приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.

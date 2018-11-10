@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671889"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Страница "Браузер", папка "Среда", диалоговое окно "Параметры"
 Задает параметры для внутреннего веб-браузера и для Internet Explorer. Для доступа к этому диалоговому окну щелкните элемент **Параметры** в меню **Сервис**, разверните папку **Среда** и выберите **Веб-браузер**.
@@ -53,7 +53,7 @@ ms.locfileid: "50143168"
 
 -   **Редактор исходного текста**. Выберите для просмотра исходного кода в [редакторе](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
+-   **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
 
 -   **Внешний редактор**. Выберите для просмотра источника в другом редакторе. Укажите путь к любому редактору, например Notepad.exe.
 
@@ -68,4 +68,4 @@ ms.locfileid: "50143168"
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
-- [Конструктор HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Конструктор HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878067"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296129"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Системы проектов SharePoint в Visual Studio можно расширить, создав собственный проект типов элементов. В этом пошаговом руководстве вы создадите элемент проекта, который может быть добавлен в проект SharePoint, чтобы создать настраиваемое действие, на сайте SharePoint. Это настраиваемое действие добавляет пункт меню, чтобы **действия сайта** на сайте SharePoint.  
@@ -298,7 +298,7 @@ ms.locfileid: "49878067"
   
 1.  В **обозревателе решений**, откройте контекстное меню для **source.extension.vsixmanifest** файл в проекте CustomActionProjectItem, а затем выберите **откройте**.  
   
-     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **элемент проекта настраиваемого действия**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "49878067"
 6.  В **тип** выберите **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `ItemTemplate` элемент в файл extension.vsixmanifest. Этот элемент определяет вложенную папку в пакет VSIX, который содержит шаблона элемента проекта. Дополнительные сведения см. в разделе [ItemTemplate элемента (Схема VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Это значение соответствует `ItemTemplate` элемент в файл extension.vsixmanifest. Этот элемент определяет вложенную папку в пакет VSIX, который содержит шаблона элемента проекта. Дополнительные сведения см. в разделе [ItemTemplate элемента (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "49878067"
 10. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. В **источника** выберите **проект в текущем решении**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "49878067"
     -   В `UrlAction` элемент, наборе `Url` атрибут, как показано в следующем примере:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Нажмите клавишу **F5**.  
@@ -430,7 +430,7 @@ ms.locfileid: "49878067"
     > [!NOTE]  
     >  Если **отладка скриптов отключена** открывшемся диалоговом окне выберите **Да** кнопку, чтобы продолжить отладку проекта.  
   
-4.  На **действия сайта** меню, выберите **Центр разработчиков SharePoint**, убедитесь, что в браузере откроется веб-сайт http://msdn.microsoft.com/sharepoint/default.aspx, а затем закройте веб-браузера.  
+4.  На **действия сайта** меню, выберите **Центр разработчиков SharePoint**, убедитесь, что в браузере откроется веб-сайт https://docs.microsoft.com/sharepoint/dev/, а затем закройте веб-браузера.  
   
 ## <a name="clean-up-the-development-computer"></a>Очистка компьютера разработчика
  После завершения тестирования элемента проекта, удалите шаблона элемента проекта в экспериментальном экземпляре Visual Studio.  

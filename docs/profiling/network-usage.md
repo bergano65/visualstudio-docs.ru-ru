@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918887"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220792"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети в приложениях UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
@@ -23,7 +23,7 @@ ms.locfileid: "49918887"
  Средство "Сеть" поддерживает только приложения UWP. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
->  Более полное описание средства "Сеть" см. в разделе [Введение в средство "Сеть" Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Более полное описание средства "Сеть" см. в разделе [Введение в средство "Сеть" Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Сбор данных средством "Сеть"  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
@@ -75,6 +75,6 @@ ms.locfileid: "49918887"
 ## <a name="see-also"></a>См. также  
  [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети)  
+ [Channel 9 Video: VS Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети)  
  [Профилирование в Visual Studio](../profiling/index.md)  
  [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

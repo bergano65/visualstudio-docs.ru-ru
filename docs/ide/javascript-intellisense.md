@@ -26,19 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671031"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] обеспечивает эффективное редактирование JavaScript. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
 
 > [!NOTE]
-> Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
+> Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
 
 Дополнительные сведения об общих функциональных возможностях IntelliSense в Visual Studio см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md).
 

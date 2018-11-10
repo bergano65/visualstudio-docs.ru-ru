@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219787"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296051"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
-  Следующие проблемы или предупреждения могут возникнуть при отладке решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочего процесса SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Следующие проблемы или предупреждения могут возникнуть при отладке решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочего процесса SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ограничения токенов в изолированных визуальных веб-частей
  Визуальные веб-части в изолированных решениях не могут обрабатывать стандартные токены, например $SPUrl, которые поддерживает среда выполнения SharePoint. В результате URL-адрес не может быть разрешен, и нельзя просмотреть содержимое в конструкторе в конструкторе визуальной веб-части при ссылке на него непосредственно в элементе скрипта, как в следующем примере:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219787"
  Отсутствует.  
   
 ### <a name="resolution"></a>Решение  
- Эта проблема возникает из-за неверного значения в **путь** свойство для определения конфигурации сайта webtemp файлы, например *webtemp_SiteDefinitionProject1.xml*. В **путь** свойство для файла webtemp, расположенного в **расположение развертывания**, соответствующий языковой стандарт, замените 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Например чтобы использовать японский языковой стандарт измените значение на 1041. Дополнительные сведения см. в разделе [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) на сайте MSDN.  
+ Эта проблема возникает из-за неверного значения в **путь** свойство для определения конфигурации сайта webtemp файлы, например *webtemp_SiteDefinitionProject1.xml*. В **путь** свойство для файла webtemp, расположенного в **расположение развертывания**, соответствующий языковой стандарт, замените 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Например чтобы использовать японский языковой стандарт измените значение на 1041. Дополнительные сведения см. в разделе [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Ошибка возникает при развертывании проекта рабочего процесса в чистой системе
  Эта проблема возникает при развертывании проекта рабочего процесса в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] в чистой системе. Чистая система является компьютером, с недавно установленными [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и SharePoint, но на котором не развернуты проекты рабочего процесса.  

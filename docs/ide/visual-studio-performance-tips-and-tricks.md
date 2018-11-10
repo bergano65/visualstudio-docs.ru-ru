@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672929"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "42627153"
 
 При переходе с 32-разрядной на 64-разрядную версию Windows вы увеличиваете объем виртуальной памяти, доступной Visual Studio, с 2 до 4 ГБ. Это позволяет Visual Studio обрабатывать значительно большие рабочие нагрузки даже несмотря на то, что это 32-разрядный процесс.
 
-Дополнительные сведения см. в разделах [Ограничения памяти](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) и [Использование /LARGEADDRESSAWARE в 64-разрядной версии Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Дополнительные сведения см. в разделах [Ограничения памяти](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) и [Использование /LARGEADDRESSAWARE в 64-разрядной версии Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Отключение автоматического восстановления файлов
 

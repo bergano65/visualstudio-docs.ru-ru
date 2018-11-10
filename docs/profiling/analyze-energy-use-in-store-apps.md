@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930912"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220740"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 Профилировщик **Расход энергии** в Visual Studio позволяет анализировать расход энергии приложениями универсальной платформы Windows на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих от аккумуляторов. На устройстве, работающем от аккумулятора, приложение с большим энергопотреблением может вызывать такое недовольство пользователя, что он в конце концов удалит его. Оптимизация расхода энергии позволяет улучшить восприятие приложения пользователями и повысить степень его использования.  
@@ -54,7 +54,7 @@ ms.locfileid: "49930912"
   
  **Добавление делений в код C#, Visual Basic, C++**  
   
- Для добавления пользовательского деления в код C#, Visual Basic, C++ сначала создайте объект [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Затем добавьте вызовы методов [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) в тех местах кода, которые требуется отметить. Используйте [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) в вызовах.  
+ Для добавления пользовательского деления в код C#, Visual Basic, C++ сначала создайте объект [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) . Затем добавьте вызовы методов [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) в тех местах кода, которые требуется отметить. Используйте [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) в вызовах.  
   
  При выполнении метода пользовательская отметка добавляется в данные профилирования вместе с сообщением.  
   
@@ -62,7 +62,7 @@ ms.locfileid: "49930912"
 > - Windows.Foundation.Diagnostics LoggingChannel реализует интерфейс [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (проецируемый как [System.IDisposable](/dotnet/api/system.idisposable) в C# и VB). Чтобы избежать утечки системных ресурсов, вызовите [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) в C# и VB) после завершения работы с каналом ведения журнала.  
 >   -   Каждый открытый канал ведения журнала должен иметь уникальное имя. При попытке создать новый канал ведения журнала с тем же именем, что и у существующего канала, вызывается исключение.  
   
- Ознакомьтесь с примером Windows SDK [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
+ Ознакомьтесь с примером Windows SDK [LoggingSession Sample](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
   
  **Добавление делений в код JavaScript**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>Другие источники  
   
--   В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) и [JavaScript и HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
+-   В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) и [JavaScript и HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
   
      Имитатор Visual Studio для приложений универсальной платформы Windows позволяет имитировать свойства подключений для передачи данных интерфейсов API, предоставляющих информацию о сети. См. раздел [Запуск приложений универсальной платформы Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
