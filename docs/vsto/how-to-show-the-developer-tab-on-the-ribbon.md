@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780449"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349628"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Практическое: Отображение вкладки разработчика на ленте
   Чтобы получить доступ к **разработчика** вкладку на ленте приложения Office, необходимо настроить его, чтобы отобразить эту вкладку, так как он не отображается по умолчанию. Например, необходимо отобразить эту вкладку, если требуется добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> в настройку уровня документа для Word.  
   
 > [!NOTE]  
->  Это руководство применимо только к приложениям Office 2010 или более поздней версии. Если вы хотите отобразить эту вкладку в системе 2007 Microsoft Office, см. следующую версию этого раздела [как: Отображение вкладки разработчика на ленте](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx).  
+>  Это руководство применимо только к приложениям Office 2010 или более поздней версии. Если вы хотите отобразить эту вкладку в системе 2007 Microsoft Office, см. следующую версию этого раздела [как: Отображение вкладки разработчика на ленте](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991618"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000878"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -151,7 +151,7 @@ Visual Studio позволяет управлять постоянно возр�
 
 **В. Доступна ли поддержка Python в Visual Studio для Mac?**
 
-О. На данный момент нет, но вы можете проголосовать за эту возможность на сайте [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). В документации по [Visual Studio для Mac](/visualstudio/mac/) указаны поддерживаемые сейчас типы разработки. А пока [нормальная работа с Python за счет доступных расширений](https://code.visualstudio.com/docs/languages/python) обеспечивается Visual Studio Code в Windows, Mac и Linux.
+О. На данный момент нет, но вы можете проголосовать за эту возможность на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). В документации по [Visual Studio для Mac](/visualstudio/mac/) указаны поддерживаемые сейчас типы разработки. А пока [нормальная работа с Python за счет доступных расширений](https://code.visualstudio.com/docs/languages/python) обеспечивается Visual Studio Code в Windows, Mac и Linux.
 
 **В. Что можно использовать для создания пользовательского интерфейса с помощью Python?**
 

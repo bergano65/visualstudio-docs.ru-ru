@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898243"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220681"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Профилирование производительности приложений в Visual Studio
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -69,7 +69,7 @@ ms.locfileid: "49898243"
 
      ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Дополнительные сведения о событиях см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+     Дополнительные сведения о событиях см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Запустите сценарий, который вызвал срабатывание первой точки останова.
 

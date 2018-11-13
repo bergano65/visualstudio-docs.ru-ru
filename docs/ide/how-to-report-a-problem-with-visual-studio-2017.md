@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755928"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000233"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 
@@ -125,7 +125,7 @@ ms.locfileid: "36755928"
 
 Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
 
-Если у вас нет проблем, но вы хотите оставить отзыв или предложение по продукту, можно воспользоваться соответствующей функцией. Дополнительные сведения см. на странице [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>См. также
 

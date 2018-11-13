@@ -14,21 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849545"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349667"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
+
 Если вы не написали ни расширение Visual Studio, прежде чем, возможно, некоторые вопросы. Мы перечислили некоторые из самых распространенных рисков здесь. Если вы не видите сведения, которые вы ищете, используйте кнопки обратной связи (**Эта страница была полезной?** в нижней части экрана) за то, что нужно.
 
+> [!NOTE]
+> Эта статья относится к Visual Studio в Windows. Visual Studio для Mac см. в разделе [расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac).
+
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Какое программное обеспечение требуется для разработки расширений Visual Studio?
- Необходимо установить Visual Studio SDK в дополнение к Visual Studio для разработки расширений Visual Studio. Пакет SDK для Visual Studio можно установить как часть обычной установки или его можно установить позже. Дополнительные сведения об установке Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
+
+Необходимо установить Visual Studio SDK в дополнение к Visual Studio для разработки расширений Visual Studio. Пакет SDK для Visual Studio можно установить как часть обычной установки или его можно установить позже. Дополнительные сведения об установке Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Какие элементы можно сделать с помощью расширений Visual Studio?
- Передохнуть когда дело доходит до описывая различные расширения Visual Studio. Само собой большинство расширений имеет какое-то написанию кода, но, не обязательно так. Ниже приведены некоторые примеры различных типов расширений, которые можно создавать.
+
+Передохнуть когда дело доходит до описывая различные расширения Visual Studio. Само собой большинство расширений имеет какое-то написанию кода, но, не обязательно так. Ниже приведены некоторые примеры различных типов расширений, которые можно создавать.
 
 - Поддержка языков, которые не включены в Visual Studio с синтаксических конструкций, IntelliSense и поддержку компилятора и отладки
 
@@ -36,12 +42,13 @@ ms.locfileid: "49849545"
 
 - Конструкторы предметно ориентированных сценариев, таких как поддержка разработки или облачных данных
 
-  Примеры расширения, ознакомьтесь с [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Многие расширения предоставляются с открытым кодом и Marketplace содержит ссылки на их репозитории GitHub.
+Примеры расширения, ознакомьтесь с [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Многие расширения предоставляются с открытым кодом и Marketplace содержит ссылки на их репозитории GitHub.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Какие возможности Visual Studio можно расширить?
- В теории, вы можете расширить практически любую часть Visual Studio: меню, панелей инструментов, команды, windows, решения, проекты, редакторы и т. д.
 
- На практике мы обнаружили, что большинство людей, необходимые для расширения функции являются команды, меню и панелей инструментов, windows, IntelliSense и проекты. Ниже приведены ссылки на соответствующие разделы.
+В теории, вы можете расширить практически любую часть Visual Studio: меню, панелей инструментов, команды, windows, решения, проекты, редакторы и т. д.
+
+На практике мы обнаружили, что большинство людей, необходимые для расширения функции являются команды, меню и панелей инструментов, windows, IntelliSense и проекты. Ниже приведены ссылки на соответствующие разделы.
 
 -   [Расширение меню и команд](../extensibility/extending-menus-and-commands.md): добавлять собственные элементы в меню Visual Studio и на панели инструментов. Их можно использовать для запуска новых функций Visual Studio или собственные внешние вспомогательные приложения. Можно также предоставить настраиваемые сочетания клавиш для элементов меню.
 
@@ -88,3 +95,7 @@ ms.locfileid: "49849545"
  Можно установить расширение на другом компьютере или отправить его своим друзьям как VSIX-файл, который можно установить, дважды щелкнув его. Можно найти дополнительные сведения о пакетах VSIX в [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Также можно опубликовать ваше расширение Visual Studio Marketplace, что делает его видимым на большом числе клиентов Visual Studio. Пример того, упаковка расширения в Marketplace, см. в разделе [Пошаговое руководство: публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о что необходимо сделать, чтобы опубликовать в Marketplace, см. в разделе [продукты и расширения для Visual Studio](/azure/devops/extend/overview?view=vsts).
+
+## <a name="see-also"></a>См. также
+
+- [Расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac)
