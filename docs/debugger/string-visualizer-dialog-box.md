@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274317"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349092"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Просмотр строк в визуализатор строки в Visual Studio
 
@@ -43,9 +43,9 @@ ms.locfileid: "49274317"
 
 ## <a name="view-string-visualizer-data"></a>Просмотр данных визуализатора строки
 
-В окне визуализатора строки **выражение** поле показывает, переменную или выражение при наведении указателя, и **значение** поле отображается строковое значение. 
+В окне визуализатора строки **выражение** поле показывает, переменную или выражение при наведении указателя, и **значение** поле отображается строковое значение.
 
-Пустое **значение** означает, что выбранный визуализатор не может распознать строку. Например **визуализатор XML** показано пустое **значение** строку текста без тегов XML, или строку JSON. 
+Пустое **значение** означает, что выбранный визуализатор не может распознать строку. Например **визуализатор XML** показано пустое **значение** строку текста без тегов XML, или строку JSON.
 
 Чтобы просмотреть строки, не может распознать выбранного визуализатор, выберите **визуализатор текста**. **Визуализатор текста** показан обычный текст.
 
@@ -67,5 +67,7 @@ ms.locfileid: "49274317"
 
 ![HTML-визуализатор строки](../debugger/media/dbg-string-visualizers-html.png "HTML-визуализатор строки")
 
-## <a name="see-also"></a>См. также  
- [Создание настраиваемых визуализаторов (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>См. также
+
+- [Создание настраиваемых визуализаторов (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Визуализации данных в Visual Studio для Mac](/visualstudio/mac/data-visualizations)

@@ -1,6 +1,6 @@
 ---
 title: Сочетания клавиш Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321285"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220857"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Сочетания клавиш в Visual Studio
 
@@ -73,6 +73,11 @@ ms.locfileid: "44321285"
 
 |Команда|Сочетание клавиш|Наличие версий|
 |-|-|-|
+|Перейти ко всем|**CTRL**+**T**|
+|Перейти к последним файлам|**CTRL** + **T**, **R**|
+|Несколько точек вставки|**CTRL** + **ALT** + **нажатие**|
+|Добавление совпадений выбранного фрагмента в нескольких местах|**Shift**+**Alt**+**Ins**|
+|Форматировать документ|**CTRL** + **K**, **D**|Visual Studio 2017 версии 15.8|
 |Режим предложений IntelliSense|**CTRL**+**ALT**+**ПРОБЕЛ** (переключатель)||
 |Принудительно показывать IntelliSense|**CTRL**+**J**||
 |Быстрые действия|**CTRL**+**.**||
@@ -95,6 +100,9 @@ ms.locfileid: "44321285"
 |Перемещение между несколькими окнами "Показать определение"|**CTRL**+**ALT**+**-** и **CTRL**+**ALT**+**=**||
 |Перемещение между несколькими результатами "Показать"|**F8** и **SHIFT**+**F8**||
 |Переключение между окном редактора кода и окном "Показать определение"|**SHIFT**+**ESC**||
+|Перейти к завершению блока|**CTRL** + **ALT** + **стрелка вверх**|
+|Перейти к следующей или предыдущей проблеме|**ALT** + **PgUp** / **PgDn**|
+|Контекстное меню навигации|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Панели инструментов
 
@@ -128,4 +136,4 @@ ms.locfileid: "44321285"
 
 - [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)
 - [Сочетания клавиш (Azure DevOps Services и TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Блог с советами и рекомендации по Visual Studio](https://blogs.msdn.com/b/zainnab)

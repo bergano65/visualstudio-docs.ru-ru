@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850819"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349680"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio проект C++ расширяемости и набора средств интеграции системы
 
@@ -434,7 +434,7 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 
 ### <a name="project-property-pages"></a>Страницы свойств проекта
 
-Общие сведения, см. в разделе [расширяемость платформы — часть 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) и [расширяемость платформы — часть 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Общие сведения, см. в разделе [расширяемость платформы — часть 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) и [расширяемость платформы — часть 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 Проще говоря, на страницах свойств вы увидите в **свойства проекта** диалоговое окно для проекта C++ определяются *правило* файлов. Файл правил задает набор свойств для отображения на странице свойств и как и их сохранения в проекте файл. Файлы правил — это файлы XML, использующих формат Xaml. Описываются типы, используемые для сериализации их в [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Дополнительные сведения об использовании файлов правил в проектах см. в разделе [файлы правил XML страницы свойство](/cpp/ide/property-page-xml-files).
 
