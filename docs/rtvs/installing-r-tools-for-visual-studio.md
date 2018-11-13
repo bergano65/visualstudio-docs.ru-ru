@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4fdf7cb791339350ff9644d0f727e3adc299add6
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297619"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220909"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -76,10 +76,11 @@ RTVS устанавливается в папке *%ProgramFiles(x86)%\Microsoft
 
 Вариант автономной установки подходит для компьютеров, которые не подключены к Интернету.
 
-1. Следуйте инструкциям по созданию автономного установщика для вашей версии Visual Studio:
+1. Перейдите в раздел [Создание автономной установки Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md).
 
-    - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
-    - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
+1. Если вы используете Visual Studio 2015, выберите **2015** в селекторе над содержанием.
+
+1. Ознакомьтесь с инструкциями по созданию автономной установки на веб-странице.
 
 1. Для Visual Studio 2015 скачайте автономные установщики RTVS со страниц [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) и [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
