@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908786"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296194"
 ---
 # <a name="form-support-in-workflows"></a>Поддержка форм в рабочих процессах
-  Четыре типа форм можно использовать в рабочем процессе: ассоциации, инициации, задач и изменения. Эти типы форм могут основываться на форме ASPX или форму InfoPath. Уровень поддержки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет для определенной форме, зависит от нескольких факторов, которые описаны в следующих таблицах. Дополнительные сведения о типах форм рабочего процесса, см. в разделе [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228) на сайте MSDN.  
+  Четыре типа форм можно использовать в рабочем процессе: ассоциации, инициации, задач и изменения. Эти типы форм могут основываться на форме ASPX или форму InfoPath. Уровень поддержки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет для определенной форме, зависит от нескольких факторов, которые описаны в следующих таблицах. Дополнительные сведения о типах форм рабочего процесса, см. в разделе [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Рефакторинг XML
  При добавлении форму ассоциации или запуска ASPX для [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] элемент проекта рабочего процесса, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] автоматически выполняет рефакторинг XML в рабочем процессе *Elements.xml* файла для сохранения атрибута, который ссылается на связь или при удалении форму инициации синхронизации при каждом обновлении путь имя или развертывания формы или формы. Тем не менее, при использовании других типов форм в рабочем процессе, например форму задач или изменений, *Elements.xml* не Рефакторинг файла.  

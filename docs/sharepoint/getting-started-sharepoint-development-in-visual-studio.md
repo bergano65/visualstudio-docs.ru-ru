@@ -17,29 +17,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635288"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295219"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Получить работы (Разработка приложений SharePoint в Visual Studio)
   Этот раздел поможет начать работу с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для разработки решений SharePoint, которые используют преимущества [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint предоставляет платформу для совместной работы в Интернете. В[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется множество шаблонов проектов для создания сайтов SharePoint и содержимого для них, включая определения списков, рабочие процессы, модели подключения к бизнес-данным и определения сайтов. Кроме того можно создавать расширения для проектов и инструментов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Дополнительные сведения об ошибках SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Описывает, где найти справочную информацию по разработке решений SharePoint и устранению неполадок в них.|
 
 ## <a name="related-sections"></a>Связанные разделы
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Описывает разработку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Создание столбцов сайта, типов содержимого и списков для SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Здесь описываются способы создания пользовательских столбцов сайта, типов содержимого и списков для SharePoint с помощью средств Visual Studio для разработки SharePoint.|

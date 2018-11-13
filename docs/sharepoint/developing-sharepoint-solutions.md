@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890001"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295908"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов, см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.  
   
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).  
   
 ## <a name="elements-of-a-sharepoint-project"></a>Элементы проекта SharePoint
  Узлы в проекте SharePoint называются *элементами SharePoint*. Элементы SharePoint также могут содержать один или несколько вложенных файлов, называемых *файлами элементов SharePoint*, например файлы конфигурации [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , формы ASPX и другие.  
@@ -97,10 +97,10 @@ ms.locfileid: "49890001"
   
 |Имя свойства|Описание|  
 |-------------------|-----------------|  
-|Действие при сборке|Определяет, как файл связан с процессами сборки и развертывания. Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может принимать одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать более позднюю версию*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Пользовательский инструмент|Задает имя инструмента, если таковой имеется, преобразующего файл во время разработки и помещающего результат преобразования в другой файл. Например, файл набора данных (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) имеет пользовательский инструмент по умолчанию. Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Пространство имен пользовательского инструмента|Пространство имен, в которое копируются выходные данные пользовательского инструмента. Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Действие при сборке|Определяет, как файл связан с процессами сборки и развертывания. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может принимать одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать более позднюю версию*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Пользовательский инструмент|Задает имя инструмента, если таковой имеется, преобразующего файл во время разработки и помещающего результат преобразования в другой файл. Например, файл набора данных (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) имеет пользовательский инструмент по умолчанию. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Пространство имен пользовательского инструмента|Пространство имен, в которое копируются выходные данные пользовательского инструмента. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
 |Местоположение развертывания|Полный путь к файлу на сервере SharePoint. Этот путь состоит из корневого каталога развертывания и вложенных свойств пути развертывания.|  
 |Путь развертывания|Относительный путь к файлу на сервере SharePoint файла, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> Значение *RootFile* для *тип развертывания* изменения свойств *Deployment Root* свойства \<SharePointRoot >\\, полученный в полный путь к \<SharePointRoot > \Workflow1\\. Дополнительные сведения см. в разделе [упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например \<SharePointRoot > \Template\Features\\\<имя_компонента >\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929430"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220987"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Запуск средств профилирования с отладчиком или без него
 Теперь в Visual Studio можно выбирать средства производительности. Некоторые из них (например, **Загрузка ЦП** и **Использование памяти**) можно использовать с отладчиком или без него. Средства производительности, используемые без отладчика, предназначены для выполнения в конфигурациях выпуска, а средства, интегрированные в отладчик, предназначены для выполнения в конфигурациях отладки.  
@@ -68,7 +68,7 @@ ms.locfileid: "49929430"
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Сбор данных профилирования без отладки  
  Для работы некоторым средствам профилирования требуются права администратора. Вы можете запустить Visual Studio от имени администратора или запустить средства от имени администратора при начале диагностического сеанса.  
@@ -126,18 +126,18 @@ ms.locfileid: "49929430"
  Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  См. руководство по [запуску приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
- [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [Журнал MSDN Magazine. Использование IntelliTrace для более быстрой диагностики проблем](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [Журнал MSDN Magazine. Использование IntelliTrace для более быстрой диагностики проблем](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [IntelliTrace в Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace в Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)

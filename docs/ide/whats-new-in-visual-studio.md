@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029112"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673037"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -212,7 +212,7 @@ Visual Studio перемещает свои расширения, а также 
 
 ![Новое диалоговое окно помощника по исправлению ошибок в Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Дополнительные сведения см. в публикации [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Использование нового помощника по исправлению ошибок в Visual Studio).
+Дополнительные сведения см. в публикации [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Использование нового помощника по исправлению ошибок в Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Моментальные снимки и возможность возврата на шаг назад в IntelliTrace
 
@@ -264,7 +264,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Выберите предпочтительный язык разработки (&mdash;C#, Visual Basic, C++ или JavaScript&mdash;), чтобы создать приложение универсальной платформы Windows для устройств Windows 10. В Visual Studio 2017 представлены шаблоны приложений для универсальной платформы Windows для каждого языка, благодаря которым вы сможете создавать единый проект для всех устройств. После завершения работы вы можете создать пакет приложений и загрузить его из Visual Studio в интернет-магазин Microsoft Store, где он будет доступен покупателям с любыми устройствами под управлением Windows 10.
 
-**Новая возможность в версии 15.5**: версия 15.5 среды Visual Studio 2017 обеспечивает наилучшую поддержку пакета SDK Windows 10 Fall Creators Update (10.0.16299.0). В Windows 10 Fall Creators Update также реализовано множество улучшений для разработчиков приложений для универсальной платформы Windows. Ниже приведены некоторые из основных изменений: 
+**Новая возможность в версии 15.5**: версия 15.5 среды Visual Studio 2017 обеспечивает наилучшую поддержку пакета SDK Windows 10 Fall Creators Update (10.0.16299.0). В Windows 10 Fall Creators Update также реализовано множество улучшений для разработчиков приложений для универсальной платформы Windows. Ниже приведены некоторые из основных изменений: 
 
 * **Поддержка .NET Standard 2.0**<br/>Помимо оптимизированного развертывания приложений, в обновлении Windows 10 Fall Creators Update впервые в Windows 10 реализована поддержка .NET Standard 2.0. Фактически [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) — это эталонная реализация библиотеки базовых классов, которые могут реализовываться на любой платформе .NET. Основная цель .NET Standard — максимально упростить разработчикам совместное использование кода на любой выбранной для работы платформе .NET.
 * **Сочетание лучших возможностей универсальной платформы Windows и Win32**<br/>Чтобы улучшить платформу Windows 10 и максимально упростить работу с ней для разработчиков любых приложений .NET, в том числе для универсальной платформы Windows, Windows Presentation Foundation, Windows Forms или Xamarin, мы представляем [мост для классических приложений](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root). Благодаря новому типу проекта, "Пакет приложений", в Visual Studio 2017 версии 15.5 вы можете создавать пакеты приложений Windows для проектов Windows Presentation Foundation или Windows Forms так же, как и для проектов для универсальной платформы Windows. После упаковки приложения вы получаете все преимущества его развертывания в Windows 10 и возможность распространять его через магазин Microsoft Store (пользовательские приложения) или через магазин Microsoft Store для бизнеса и для образовательных учреждений. Поскольку упакованные приложения получают доступ ко всей области API универсальной платформы Windows и к API Win32 для классических приложений, теперь вы можете постепенно модернизировать свои приложения Windows Presentation Foundation и Windows, используя возможности API универсальной платформы Windows и Windows 10. Более того, вы можете включить в приложения для универсальной платформы Windows компоненты Win32, благодаря чему получите доступ к возможностям Win32 в классическом приложении.

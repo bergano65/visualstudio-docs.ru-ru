@@ -24,7 +24,7 @@ ms.locfileid: "39510582"
   
  Окно «Стек вызовов событий» выглядит так:  
   
- ![Стек вызовов, предшествующих событие DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Стек вызовов, предшествующих событие DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Основные сведения о стеке вызовов событий графики  
  Стек вызовов событий можно использовать для анализа потока выполнения, который привел к определенному событию Direct3D. Он напоминает окно стека вызовов Visual Studio, за исключением того, что вместо вывода текущего стека вызова текущего потока в выполняющемся приложении, отображается стек вызовов, существовавших при возникновении выбранного события Direct3D. Из стека вызовов событий можно перейти к месту вызова выбранного события Direct3D, чтобы проверить окружающий код.  

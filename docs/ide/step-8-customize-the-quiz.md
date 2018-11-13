@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2f096415ccfbadfe66f18a373642cf6a5de86b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065251"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672123"
 ---
 # <a name="step-8-customize-the-quiz"></a>Шаг 8. Настройка головоломки
 В последней части этого руководства рассматривается несколько способов изменения викторины и приводятся дополнительные сведения по уже изученным вами вопросам. Например, можно подумать, как программа создает случайные задачи на деление, для которых ответ никогда не будет дробью. В качестве дополнительного занятия измените цвет элемента управления `timeLabel` и дайте игроку викторины подсказку.  
@@ -29,7 +29,7 @@ ms.locfileid: "32065251"
   
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   Скачать готовую версию головоломки можно на странице с [полным примером руководства по созданию математической головоломки](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+-   Скачать готовую версию головоломки можно на странице с [полным примером руководства по созданию математической головоломки](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 -   Следующее руководство: [Учебное руководство 3. Создание игры "Подбери пару!"](../ide/tutorial-3-create-a-matching-game.md).  
   

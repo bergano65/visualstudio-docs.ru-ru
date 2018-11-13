@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865788"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672318"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -69,7 +69,7 @@ ms.locfileid: "49865788"
 
      OR
 
-- Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
+- Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Ошибка: "Используемое соединение было закрыто"
 

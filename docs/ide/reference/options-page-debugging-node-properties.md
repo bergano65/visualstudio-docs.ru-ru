@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670839"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.
@@ -81,10 +81,10 @@ ms.locfileid: "49920902"
 
 ## <a name="see-also"></a>См. также
 
-- [Управление параметрами](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Определение имен элементов свойств на страницах параметров](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Управление параметрами](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Страница "Параметры", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../../debugger/general-debugging-options-dialog-box.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"](../../debugger/just-in-time-debugging-options-dialog-box.md)

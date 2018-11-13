@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813220"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296259"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
   Проекты SharePoint являются контейнерами для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве мы определим тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, содержащего элемента проекта столбца сайта.  
@@ -642,7 +642,7 @@ ms.locfileid: "49813220"
   
 1.  В **обозревателе решений**в **SiteColumnProjectItem** проекта, откройте файл source.extension.vsixmanifest в редакторе манифестов.  
   
-     Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **столбец сайта**.  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813220"
 6.  В **тип** выберите **Microsoft.VisualStudio.ProjectTemplate**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `ProjectTemplate` элемент в файл extension.vsixmanifest. Этот элемент определяет вложенную папку в пакете VSIX, содержащий шаблон проекта. Дополнительные сведения см. в разделе [ProjectTemplate элемент (Схема VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1).  
+    >  Это значение соответствует `ProjectTemplate` элемент в файл extension.vsixmanifest. Этот элемент определяет вложенную папку в пакете VSIX, содержащий шаблон проекта. Дополнительные сведения см. в разделе [ProjectTemplate элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении**.  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813220"
 10. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. В **источника** выберите **проект в текущем решении**.  
   

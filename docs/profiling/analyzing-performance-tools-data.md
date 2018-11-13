@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669605"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744837"
 ---
 # <a name="analyze-performance-tools-data"></a>Анализ данных из средств оценки производительности
 Отчеты о производительности средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют просматривать и анализировать проблемы производительности приложения. В данном разделе представлены общие сведения о представлениях и отчетах производительности, которые можно использовать для изучения данных о производительности.  

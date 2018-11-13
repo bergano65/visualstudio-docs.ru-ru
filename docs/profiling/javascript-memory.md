@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911321"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221039"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Анализ использования памяти JavaScript в приложениях UPW
 Анализатор памяти JavaScript доступен в Visual Studio и помогает получать информацию об использовании памяти и находить утечки памяти в приложениях универсальной платформы Windows, разработанных для Windows с использованием JavaScript. К поддерживаемым приложениям относятся приложения для универсальных приложений Windows.
@@ -355,15 +355,15 @@ if (performance && performance.mark) {
   
 -   Попробуйте найти объекты, которые случайно сохраняются в памяти после перехода пользователя на новую страницу, что является распространенной причиной проблем с памятью. Пример:  
   
-    -   Например, к этой проблеме может привести неправильное использование функции [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) .  
+    -   Например, к этой проблеме может привести неправильное использование функции [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) .  
   
-    -   Некоторые объекты могут содержать метод `dispose` и рекомендации по использованию. Например, необходимо вызвать `dispose` для [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) , если вы вызываете `createFiltered` метод списка и затем уходите со страницы.  
+    -   Некоторые объекты могут содержать метод `dispose` и рекомендации по использованию. Например, необходимо вызвать `dispose` для [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) , если вы вызываете `createFiltered` метод списка и затем уходите со страницы.  
   
     -   Возможно, потребуется удалить один или несколько прослушивателей событий. Дополнительные сведения см. в разделе [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
--   Посмотрите последнюю часть [этого видео](http://channel9.msdn.com/Events/Build/2013/3-316) с конференции Build 2013 об анализаторе памяти JavaScript.  
+-   Посмотрите последнюю часть [этого видео](https://channel9.msdn.com/Events/Build/2013/3-316) с конференции Build 2013 об анализаторе памяти JavaScript.  
   
--   См. статью [Управление памятью в приложениях универсальной платформы Windows](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   См. статью [Управление памятью в приложениях универсальной платформы Windows](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 -   Попробуйте временно изменить код, чтобы изолировать проблемы. Например, можно сделать следующее:  
   

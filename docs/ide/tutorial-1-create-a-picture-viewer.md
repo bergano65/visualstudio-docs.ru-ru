@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008685"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672162"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Руководство 1. Создание приложения для просмотра рисунков
 
@@ -42,7 +42,7 @@ ms.locfileid: "40008685"
 
 ## <a name="tutorial-links"></a>Ссылки на руководства
 
-Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на следующих страницах: [Руководство. Создание приложения для просмотра рисунков на Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) и [Руководство. Создание приложения для просмотра рисунков на C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 
