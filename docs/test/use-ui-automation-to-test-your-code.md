@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371086"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296077"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Использование автоматизации пользовательского интерфейса для тестирования кода
 
@@ -402,7 +402,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Получение и установка свойств из элементов управления теста ИП напрямую
 
-С помощью элементов управления, являющихся производными от <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, таких как [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) или [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), можно получить или задать значения их свойств напрямую. В коде ниже приведено несколько примеров:
+С помощью элементов управления, являющихся производными от <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, таких как [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) или [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), можно получить или задать значения их свойств напрямую. В коде ниже приведено несколько примеров:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +443,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Выполнение тестов в процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Добавление поддержки пользовательских элементов управления**. Платформа закодированных тестов пользовательского интерфейса поддерживает не все возможные пользовательские интерфейсы, в частности она может не поддерживать тестируемый пользовательский интерфейс. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса приложения для Microsoft Excel. Однако можно создать расширение среды обработки закодированных тестов пользовательского интерфейса, которое будет поддерживать пользовательский элемент управления.
 

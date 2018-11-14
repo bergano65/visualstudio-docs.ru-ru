@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942950"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296480"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
+Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
 
 * `UseKestrel`: указывает, что приложением будет использоваться сервер Kestrel.
 * `UseContentRoot(Directory.GetCurrentDirectory())`: использует корневую папку веб-проекта в качестве корня содержимого приложения при запуске приложения из этой папки.
@@ -108,7 +108,7 @@ public class Startup
 
 Метод `ConfigureServices` определяет службы, которые будут использоваться приложением.
 
-`Configure` позволяет создать конвейер запросов с помощью [ПО промежуточного слоя](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Эти компоненты используются в конвейере приложения ASP.NET для обработки запросов и откликов. Конвейер HTTP состоит из нескольких делегатов запросов, вызываемых по очереди. Каждый из делегатов может определить, обработать ли запрос самостоятельно либо передать его в следующий делегат.
+`Configure` позволяет создать конвейер запросов с помощью [ПО промежуточного слоя](/aspnet/core/fundamentals/middleware). Эти компоненты используются в конвейере приложения ASP.NET для обработки запросов и откликов. Конвейер HTTP состоит из нескольких делегатов запросов, вызываемых по очереди. Каждый из делегатов может определить, обработать ли запрос самостоятельно либо передать его в следующий делегат.
 
 Делегаты можно настроить с помощью методов `Run`, `Map` и `Use` для `IApplicationBuilder`, но метод `Run` никогда не вызывает следующий делегат и должен всегда находиться в конце конвейера.
 
@@ -134,7 +134,7 @@ public class Startup
 - **Представление**: отображает пользовательский интерфейс приложения (который часто является данными модели).
 - **Контроллер**: класс, который обрабатывает запросы браузера, реагирует на ввод данных пользователем и взаимодействие с ним.
 
-Дополнительные сведения об использовании MVC см. в руководстве с [обзором MVC ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/overview).
+Дополнительные сведения об использовании MVC см. в руководстве с [обзором MVC ASP.NET Core](/aspnet/core/mvc/overview).
 
 Чтобы добавить контроллер, сделайте следующее:
 
@@ -233,6 +233,6 @@ public class Startup
 
 Это руководство содержит вводные сведения о платформе ASP.NET Core. Он описывает, что это такое, когда ее можно использовать и как работать с ней в Visual Studio для Mac.
 Дополнительные сведения о дальнейших действиях см. в следующих руководствах:
-- Документы по [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
-- [Создание серверных служб для собственных мобильных приложений](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), где описано, как создать службу REST с помощью ASP.NET Core для приложения Xamarin.Forms.
+- Документы по [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend), где описано, как создать службу REST с помощью ASP.NET Core для приложения Xamarin.Forms.
 - [Практическая лабораторная работа ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
