@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324981"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348712"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -30,7 +30,7 @@ Visual Studio (любой версии) автоматически обнару�
 
 Если Visual Studio не сможет обнаружить установленное окружение, см. раздел [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio отображает все известные окружения в окне [**Окружения Python**](managing-python-environments-in-visual-studio.md) и автоматически обнаруживает обновления для существующих интерпретаторов.
+Visual Studio отображает все известные окружения в окне [**Окружения Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) и автоматически обнаруживает обновления для существующих интерпретаторов.
 
 | Интерпретатор | Описание: |
 | --- | --- |
