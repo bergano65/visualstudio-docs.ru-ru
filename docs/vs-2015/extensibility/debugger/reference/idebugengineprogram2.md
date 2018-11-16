@@ -17,12 +17,12 @@ ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a28755a87446893d9cff9193d62292af36e2c0ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ba206e24836f6eedcf6f2ce83b7ebdb3b5306b87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787488"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEngineProgram2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Останавливает все потоки, выполняющиеся у этой программы.|  
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Ожидание выполнения (или ожидать выполнения stop) для данного потока.|  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 71d018f8-19a7-44d0-bad3-665c883a9804
 caps.latest.revision: 18
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: 9a53b2260f22f3cf7b3291162390f18ed358eb69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f3d298839bb91a642a81980a174213fb2043a17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732127"
 ---
 # <a name="domain-relationships-in-the-generated-api"></a>Доменная связь в сгенерированном API
 Этот раздел объединен с другим содержимым. Перейдите к [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
