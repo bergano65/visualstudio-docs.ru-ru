@@ -17,12 +17,12 @@ ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7fab60f595ce7f156df87b51306509929cc75a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2df4dd52ff9984059eb28f21edf49b9db741358
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261551"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784901"
 ---
 # <a name="sccdirqueryinfo-function"></a>Функция SccDirQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Запрос успешно выполнен.|  
 |SCC_E_OPNOTSUPPORTED|Системы управления исходным кодом не поддерживает эту операцию.|  

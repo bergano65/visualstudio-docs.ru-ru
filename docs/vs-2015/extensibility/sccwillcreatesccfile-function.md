@@ -17,12 +17,12 @@ ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb423e84073a945645948684d47532bcc354406c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b61e6c1c0cccd90b65142220bde5d595ef98f99b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891873"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759722"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Функция SccWillCreateSccFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Выполнено.|  
 |SCC_E_INVALIDFILEPATH|Один из путей в массиве является недопустимым.|  
