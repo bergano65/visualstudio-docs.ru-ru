@@ -13,15 +13,15 @@ helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5ce703fdc3b0d20feda83b59706e7c4792d2ade
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878457"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753433"
 ---
 # <a name="filtering-report-views"></a>Фильтрация представлений отчетов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "49878457"
   
 2.  Для каждого предложения, которое необходимо добавить в фильтр, выберите или введите значения в указанных ниже полях строки.  
   
-    |Поле|Описание|  
+    |Поле|Описание:|  
     |-----------|-----------------|  
     |**И/или**|Выберите **и**, если результат должен совпадать с ситуацией, когда данное и следующее предложение являются истинными. Выберите **или**, если результат должен совпадать либо с истинностью данного предложения, либо с истинностью следующего.|  
     |**Поле**|Выберите поле отчета, которое будет использоваться в предложении фильтра, в списке полей данных.|  

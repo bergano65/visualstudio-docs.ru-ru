@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SuspendProfile
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4661ccad3a111f4ee65766bf16fb3fbebbd0bc6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a21358e63ff30a88351607ae4f474a485b7059ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244664"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768152"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:  
   
-|Перечислитель|Описание|  
+|Перечислитель|Описание:|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -54,7 +54,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание|  
+|Перечислитель|Описание:|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|  
