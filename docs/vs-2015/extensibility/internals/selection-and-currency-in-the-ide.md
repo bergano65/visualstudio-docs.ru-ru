@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902879"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786747"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и актуальность в интегрированной среде разработки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "49902879"
 ## <a name="selection-context"></a>Контекст выделения  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE глобально следит за валюты интегрированной среды разработки в свой собственный объект контекста глобального выделения. Ниже приведены элементы, которые составляют контекст выделения.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Текущей иерархии|Обычно текущего проекта; иерархии текущее значение NULL указывает текущее решение в целом.|  
 |Идентификатор текущего элемента|Выбранный элемент в текущей иерархии; Если существует несколько вариантов выбора в окне проекта, может быть несколько текущих элементов.|  
