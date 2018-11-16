@@ -14,15 +14,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: fa0a9460-6675-4642-aa00-50f8719a892d
 caps.latest.revision: 16
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5c77c9e6be69604176c470fa8de9e33a74c05532
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb99ea1efb070c3e79b294bd5d06eedf131623f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291425"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790088"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Свойства элементов на схемах компонентов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49291425"
   
 ## <a name="properties-of-elements"></a>Свойства элементов  
   
-|Свойство|По умолчанию|Элемент|Описание|  
+|Свойство|По умолчанию|Элемент|Описание:|  
 |--------------|-------------|-------------|-----------------|  
 |**Name**|Имя по умолчанию|Все|Идентифицирует элемент.|  
 |**Полное имя**|Имя пространства имен|Все|Уникально идентифицирует элемент.<br /><br /> Перед именем компонента или типа указывается полное имя пакета, содержащего этот элемент.<br /><br /> Перед именем части или порта указывается полное имя компонента, которому принадлежит этот элемент.|  
