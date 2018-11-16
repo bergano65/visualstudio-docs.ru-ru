@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: de4bcd2779e448c48bd8ac6e66edf25ef4edddc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750105"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Свойства типов на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "49193171"
   
  Чтобы просмотреть свойства типа, щелкните правой кнопкой мыши тип на схеме или в **Обозреватель моделей UML**, а затем нажмите кнопку **свойства**. Свойства отображаются в **свойства** окна.  
   
-|**Property**|**Default**|Место присутствия|Описание|  
+|**Property**|**Default**|Место присутствия|Описание:|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|Имя по умолчанию|Все элементы|Идентифицирует элемент.|  
 |**Полное имя**|Содержащий пакет :: Имя типа|Все элементы|Уникально идентифицирует элемент. Перед именем элемента указывается полное имя пакета, содержащего его.|  
