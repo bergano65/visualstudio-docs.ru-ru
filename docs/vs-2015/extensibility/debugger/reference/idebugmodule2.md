@@ -17,12 +17,12 @@ ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 941dee1c8cf9bdf3aaa4fe2f69ff7da95eac0f87
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92e11532019caf5aa7af3c84f7222fdfabcfa45d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237215"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768541"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ IDebugModule2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugModule2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Получает [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) , описывающий этот модуль.|  
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|УСТАРЕВШИЕ. НЕ ИСПОЛЬЗУЙТЕ. Повторно загружает символы для этого модуля.|  
