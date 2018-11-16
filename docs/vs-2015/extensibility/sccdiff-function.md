@@ -17,12 +17,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b0c789e0d709add0423d5d6fad9ecf7110f2abb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed4ca5cefa45f041e4285b00d7a2d9682e6565a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890821"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795756"
 ---
 # <a name="sccdiff-function"></a>Функция SccDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Версия рабочей копии и server идентичны.|  
 |SCC_I_FILESDIFFERS|Рабочая копия отличается от версии в системе управления версиями.|  

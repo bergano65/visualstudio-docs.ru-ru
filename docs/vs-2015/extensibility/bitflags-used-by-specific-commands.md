@@ -15,12 +15,12 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97569043b84cbfc18a62e3058f03e4f7f6c4b8f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300369"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798187"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Битовые флаги, используемые конкретными командами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ ms.locfileid: "49300369"
 ## <a name="checked-out-flag"></a>Извлечен флаг  
  Этот флаг можно задать для либо [SccAdd](../extensibility/sccadd-function.md) или [SccCheckin](../extensibility/scccheckin-function.md).  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Оставьте файл извлеченным.|  
   
 ## <a name="add-flags"></a>Добавьте флаги  
  Эти флаги используются [SccAdd](../extensibility/sccadd-function.md).  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Ожидается, что подключаемый модуль системы управления версиями автоматически определять, является ли файл текстовых или двоичных.|  
 |`SCC_FILETYPE_TEXT`|0x01|Тип файла — текст.|  
@@ -47,7 +47,7 @@ ms.locfileid: "49300369"
 ## <a name="diff-flags"></a>Флаги Diff  
  [SccDiff](../extensibility/sccdiff-function.md) использует эти флаги для определения области действия операции поиска различий. `SCC_DIFF_QD_xxx` Флаги являются взаимоисключающими. Если указан один из них, не визуальной обратной связи, то должен быть предоставлен. В поле «Быстрый diff» (длина Очереди), подключаемый модуль не определить, как файл отличается, только в том случае, если оно отличается. Если ни один из этих флагов указано, «visual» diff выполняется; Подробный файл различия вычисления и отображения. Если Запрошенная длина Очереди не поддерживается, подключаемый модуль перемещается Далее наиболее подходящий вариант. Например если интегрированной среды разработки запрашивает контрольной суммы и подключаемый модуль не поддерживает его, подключаемый модуль выполняет full содержимое Проверьте (по-прежнему гораздо быстрее, чем визуального представления).  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Игнорируйте различия в регистре.|  
 |`SCC_DIFF_IGNORESPACE`|0x0004|Не учитывать различия пустого пространства. **Примечание:** `SCC_DIFF_IGNORECASE` и `SCC_DIFF_IGNORESPACE` флаги имеют необязательно битовые флаги.|  
@@ -59,14 +59,14 @@ ms.locfileid: "49300369"
 ## <a name="populatelist-flag"></a>Флаг PopulateList  
  Этот флаг используется [SccPopulateList](../extensibility/sccpopulatelist-function.md) в `fOptions` параметра.  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|Каталоги, файлы не передает интегрированной среды разработки.|  
   
 ## <a name="populatedirlist-flags"></a>Флаги PopulateDirList  
  Эти флаги используются [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) в `fOptions` параметра.  
   
-|Значение параметра|Значение|Описание|  
+|Значение параметра|Значение|Описание:|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Проверьте только один уровень папок для каталогов (по умолчанию).|  
 |SCC_PDL_RECURSIVE|0x0001|Рекурсивно проверить всем каталогам в каждом заданном каталоге.|  
@@ -75,7 +75,7 @@ ms.locfileid: "49300369"
 ## <a name="openproject-flags"></a>Флаги OpenProject  
  Эти флаги используются [SccOpenProject](../extensibility/sccopenproject-function.md) в `dwFlags` параметра.  
   
-|Значение параметра|Значение|Описание|  
+|Значение параметра|Значение|Описание:|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Если проект не существует в системе управления версиями, создайте ее. Если этот флаг не установлен, запрашивать пользователя для проекта для создания (если `SCC_OP_SILENTOPEN` установлен флаг).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Не запрашивать пользователя, чтобы создать проект; просто возвратить `SCC_E_UNKNOWNPROJECT`.|  
@@ -83,7 +83,7 @@ ms.locfileid: "49300369"
 ## <a name="get-flags"></a>Получить флаги  
  Эти флаги используются [SccGet](../extensibility/sccget-function.md) и [SccCheckout](../extensibility/scccheckout-function.md).  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_GET_ALL`|0x00000001L|Интегрированная среда разработки передает каталоги, файлы не: получить все файлы в этих каталогах.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|Передает каталоги интегрированной среды разработки: получение этих каталогов и всех подкаталогах.|  
@@ -91,7 +91,7 @@ ms.locfileid: "49300369"
 ## <a name="noption-values"></a>Значения nOption  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `nOption` параметра.  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Задать состояние очереди событий.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Укажите данные пользователя для `SCC_OPT_NAMECHANGEPFN`.|  
@@ -103,7 +103,7 @@ ms.locfileid: "49300369"
 ## <a name="dwval-bitflags"></a>dwVal битовые флаги  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `dwVal` параметра.  
   
-|Flag|Значение|Описание|Используемые `nOption` значение|  
+|Flag|Значение|Описание:|Используемые `nOption` значение|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|Приостанавливает действие очереди событий.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|Включает ведение журнала очереди событий.|`SCC_OPT_EVENTQUEUE`|  
