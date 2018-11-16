@@ -14,15 +14,15 @@ helpviewer_keywords:
 - UML model, packages
 ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915032"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741911"
 ---
 # <a name="define-packages-and-namespaces"></a>Определение пакетов и пространств имен
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,7 +209,7 @@ ms.locfileid: "49915032"
 ##  <a name="Properties"></a> Свойства пакетов  
  Каждый класс имеет следующие свойства. Чтобы просмотреть свойства, щелкните правой кнопкой мыши пакет, на схеме или в обозревателе моделей UML и нажмите кнопку **свойства**.  
   
-|Свойство.|Значение по умолчанию|Описание|  
+|Свойство.|Значение по умолчанию|Описание:|  
 |--------------|-------------------|-----------------|  
 |**Name**|(новое имя)|Имя пакета. Его можно изменить на схеме или в окне "Свойства".|  
 |**Полное имя**|*Контейнер* :: *имя пакета*|Полное имя, которому предшествует имя пакета или модели, содержащих этот пакет. Дополнительные сведения см. в разделе [Пространства имен](#Namespaces).|  

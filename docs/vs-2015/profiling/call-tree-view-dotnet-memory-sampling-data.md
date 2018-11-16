@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc2f0354a01bc2f706e2ddec6c21b1513f8d5778
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6667d0e0ad76210434f40eaf89e4790430ffb0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212879"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758611"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Представление "Дерево вызовов" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "49212879"
   
  После задании корневого узла из представления удаляются все записи, кроме поддеревьев выбранного узла. Вы можете восстановить исходное состояние корневого узла. Для этого щелкните правой кнопкой мыши в окне представления "Дерево вызовов" и выберите **Сбросить корень**.  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  
