@@ -15,12 +15,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f863571672c42f63912629844fd72d8c92ca8400
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745911"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>С помощью меток текста с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49263670"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Добавление стандартных текстовых маркеров](../extensibility/how-to-add-standard-text-markers.md)|Описывает способы добавления стандартного текста тип маркера, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором для представления текста.|  
 |[Практическое руководство. Реализация маркеров ошибок](../extensibility/how-to-implement-error-markers.md)|Описывается реализация экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  

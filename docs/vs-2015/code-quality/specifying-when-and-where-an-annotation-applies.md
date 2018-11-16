@@ -16,15 +16,15 @@ f1_keywords:
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f149f483f29f4dafb29d0f7fed16a9bf93a59b78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303359"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754282"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Указание времени и места применения примечания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49303359"
 ## <a name="structural-annotations"></a>Структурные заметки  
  Для того, чтобы контролировать, когда и в каких местах применяются примечания, используйте следующие структурные примечания.  
   
-|Комментарий|Описание|  
+|Комментарий|Описание:|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr` является выражением, которое предоставляет lvalue. Заметки в `anno-list` применяются к объекту с именем `expr`. Для каждого примечания в `anno-list`, `expr` интерпретируется в предусловии, если примечание интерпретируется в предусловии, и в постусловии, если примечание интерпретируется в постусловии.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` является выражением, которое предоставляет lvalue. Заметки в `anno-list` применяются к объекту с именем `expr`. Для каждого примечания в `anno-list`, `expr` интерпретируется в предусловии, если примечание интерпретируется в предусловии, и в постусловии, если примечание интерпретируется в постусловии.<br /><br /> `iter` — имя переменной с областью видимости в примечании (включая `anno-list`). `iter` имеет неявный тип `long`. С одинаковыми именами переменных в любой внешней области видимости скрыты от оценки.<br /><br /> `elem-count` представляет собой выражение, результатом которого является целым числом.|  
