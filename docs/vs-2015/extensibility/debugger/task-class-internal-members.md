@@ -16,12 +16,12 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1fb04d3bc15fcac80cbe91d65a0d11ee9e71335
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218495"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764821"
 ---
 # <a name="task-class---internal-members"></a>Внутренние элементы: класс Task
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,14 +49,14 @@ ms.locfileid: "49218495"
   
 ### <a name="methods"></a>Методы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[Метод SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Задает или сбрасывает бит TASK_STATE_WAIT_COMPLETION_NOTIFICATION состояния.|  
 |[Метод NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Метод заполнитель, используемый как целевой объект точки останова в отладчике.|  
   
 ### <a name="fields"></a>Поля  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[обращение](../../extensibility/debugger/m-action-field.md)|Делегат, который представляет код, выполняемый в <xref:System.Threading.Tasks.Task> объекта.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.|  
