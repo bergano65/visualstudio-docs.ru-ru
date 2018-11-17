@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa59e1e57750c9c2075c10c76ab5c518ed0e8686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793910"
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "49226204"
 ## <a name="tasks-column-information"></a>Сведения в столбцах окна "Задачи"  
  Столбцы в **задачи** окна отображаются следующие сведения.  
   
-|Имя столбца|Описание|  
+|Имя столбца|Описание:|  
 |-----------------|-----------------|  
 |**флаги**|Показывает, какие задачи помечены, и позволяет помечать задачи и снимать с них метки.|  
 |**Значки**|Рядом с текущей задачей отображается желтая стрелка. Текущая задача находится на самом верхнем уровне текущего потока.<br /><br /> Белая стрелка указывает прерванную задачу, т.е. задачу, которая была текущей во время вызова отладчика.<br /><br /> Значок паузы указывает задачу, замороженную пользователем. Задачу можно заморозить или разморозить, щелкнув ее в списке правой кнопкой мыши.|  

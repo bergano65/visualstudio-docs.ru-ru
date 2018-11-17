@@ -17,12 +17,12 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3663da662989c6c67439f053a0cb2f26302573d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 905a3319627a54ef84b5d473d3725069a9f1eecb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766438"
 ---
 # <a name="scccreatesubproject-function"></a>Функция SccCreateSubProject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Подпроект успешно создан.|  
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать родительского проекта.|  

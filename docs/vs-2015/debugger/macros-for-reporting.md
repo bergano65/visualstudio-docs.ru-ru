@@ -26,22 +26,22 @@ helpviewer_keywords:
 - _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224384"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758461"
 ---
 # <a name="macros-for-reporting"></a>Макросы для создания отчетов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно использовать **_RPTn**, и **_RPTFn** макросы, определенные в CRTDBG. H, чтобы заменить использование `printf` для отладки. Эти макросы автоматически исчезают в выпуске построение **_DEBUG** не определен, поэтому нет необходимости заключать их в **#ifdef**s.  
   
-|Макрос|Описание|  
+|Макрос|Описание:|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Выводит строку сообщения и от нуля до четырех аргументов. Для макросов _RPT1 **_RPT4**, строка сообщения служит строка форматирования стиле printf для аргументов.|  
 |**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Совпадение с кодом **_RPTn** , но эти макросы также выводят файла имя и номер строки где расположен макрос.|  

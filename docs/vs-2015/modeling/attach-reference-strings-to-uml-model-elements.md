@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML - extending, reference strings
 ms.assetid: 15dbed99-efce-42fe-a768-714a5804e7d1
 caps.latest.revision: 11
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf8a9e7e023e9c75f61fdf9a6bfb608edc3a7123
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804590"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Присоединение строк ссылок к элементам модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "49243858"
   
  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-|Вызов метода|Описание|  
+|Вызов метода|Описание:|  
 |-----------------|-----------------|  
 |`element.AddReference (nameString, valueString, duplicatesAllowed)`|Создает объект `IReference` с указанными строками имени и значения и связывает его с `element`. Возвращает `IReference`.<br /><br /> Вызывает исключение, если значение `duplicatesAllowed` равно false и уже существует объект `IReference` с таким именем, присоединенный к `element`.|  
 |`element.GetReferences(name)`|Возвращает все объекты `IReference`, связанные с `element`, с заданным значением `name`.|  
