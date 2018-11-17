@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_customCallingConvention method
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09a66b47cf53f2125e2f16e73ce92af908811913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1268dc1e3db7a936f2d5dc86608859186d21f7d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811663"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803218"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ HRESULT get_customCallingConvention(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  
