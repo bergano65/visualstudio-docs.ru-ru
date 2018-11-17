@@ -16,12 +16,12 @@ ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31a6e0cf18422118c184f290fc8200d9c9263356
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7c82d55425ccc732ddc5255642d889816810352
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186682"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731519"
 ---
 # <a name="icon-element"></a>Элемент Icon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,20 +39,20 @@ ms.locfileid: "49186682"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор guid, определенный растрового изображения.|  
 |id|Обязательно. Выбор слота в наборе точечных рисунков.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Отсутствует.|Отсутствует.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)||  
   

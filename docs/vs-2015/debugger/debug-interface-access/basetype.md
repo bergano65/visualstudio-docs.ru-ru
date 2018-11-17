@@ -15,15 +15,15 @@ helpviewer_keywords:
 - BaseType symbol [DIA SDK]
 ms.assetid: 2f9e22e6-8360-496a-ac6b-17a5a56b0c46
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2dba2b86cf06f462a462d91ba007d26b00a3ec7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08606b1d794ab61ebad0293613a6bdc9a4694c18
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270238"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771199"
 ---
 # <a name="basetype"></a>BaseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49270238"
 ## <a name="properties"></a>Свойства  
  Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Одно из значений из [перечисление BasicType](../../debugger/debug-interface-access/basictype.md).|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Если базовый тип помечен как const.|  

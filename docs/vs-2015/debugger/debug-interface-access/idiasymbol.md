@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24e4a6c4ac68eba5694e89a85d94e68689f58761
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2bd52443d4150b371bbaa1865978db9a72c5c616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257269"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734146"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49257269"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaSymbol : IUnknown  
+IDiaSymbol : IUnknown  
 ```  
   
 ## <a name="methods-in-alphabetical-order"></a>Методы в алфавитном порядке  
@@ -42,7 +42,7 @@ IDiaSymbol : IUnknown
 > [!NOTE]
 >  Символы будут возвращены значимых данных для только некоторые из этих методов, в зависимости от типа символов. Если метод возвращает `S_OK`, а затем этот метод возвратил значимых данных.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Получает все дочерние элементы символа.|  
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Получает дочерние узлы, символа. Этот метод является расширенной версией [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|  
