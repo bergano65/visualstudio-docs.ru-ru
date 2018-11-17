@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_frontEndMinor method
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b96002aea44cb10c9534cd87b138f478f2b89d7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bbd9913d9733861b58ea52552d05919c2e61c6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896293"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809867"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49896293"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp#  
-HRESULT get_frontEndMinor (   
+HRESULT get_frontEndMinor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -55,7 +55,7 @@ HRESULT get_frontEndMinor (
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  

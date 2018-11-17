@@ -12,15 +12,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
 caps.latest.revision: 16
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4f25931b1374042a09fd130731c83f8813353a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f59ac9d96a9f001b54c86bbf51819ecf2efb40c9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254394"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798460"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "49254394"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Работа с моделями и схемами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)|Пользователи Visual Studio могут работать с общей моделью.|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Совместно используйте модели в рамках проекта большого или среднего размера.|  

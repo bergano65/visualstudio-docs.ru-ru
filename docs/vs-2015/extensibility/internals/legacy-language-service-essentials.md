@@ -18,12 +18,12 @@ ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d66a7f249bd2e084b15293f1efc356767ed7d7d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229077"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753634"
 ---
 # <a name="legacy-language-service-essentials"></a>Основные компоненты языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "49229077"
   
  Устаревший языковой службы предоставляют следующие возможности:  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |-------------|-----------------|  
 |Цветовая подсветка синтаксиса|Вызывает редактор представления для отображения различных цветов и стилей шрифтов для различных элементов языка. Этих различий можно упростить чтение и изменение файлов.<br /><br /> Общие сведения см. в разделе [цветовой подсветки синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Сведения об этой функции в managed package framework (MPF), см. в разделе [цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
 |Завершение операторов|Выполняет инструкцию или ключевое слово, которое пользователь начинает ввод. Завершение операторов помогает пользователям вводить сложных инструкций, с более короткого запроса и меньше вероятность того, что ошибка.<br /><br /> Общие сведения см. в разделе [завершение операторов в языковой службе прежних версий](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Сведения об этой функции в MPF см. в разделе [завершение слов в языковой службе прежних версий](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
@@ -49,7 +49,7 @@ ms.locfileid: "49229077"
   
  Следующие функции относятся к поддержка языков программирования, но не являются частью службы языка:  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |-------------|-----------------|  
 |Вычислители выражений|Поддерживает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладчика, проверка точек останова и список выражений для отображения в **"Видимые"** окно отладки.<br /><br /> Дополнительные сведения см. в разделе [поддержку языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Средства просмотра символов|Поддерживает **обозреватель объектов**, **представление классов**, **Обозреватель вызовов**, и **результаты поиска символа**.|

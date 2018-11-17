@@ -13,15 +13,15 @@ f1_keywords:
 - vs.tasklisterror.copy_version_warning
 ms.assetid: 116819f3-a4d4-48b5-9e71-7c54660d38ef
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dad547664768247f7837b9d65797ffba15bbdf8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794820"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Предупреждение: зависимость &#39;файл&#39; в проекте &#39;проекта&#39; невозможно скопировать в каталог выполнения, поскольку она перезапишет ссылку &#39;файл.&#39;
 Существует конфликт между зависимостями. Чтобы запустить приложение, необходимо скопировать несколько разных файлов сборки с одним именем в каталог bin. Каталог запуска может разрешить конфликт, так как одна из зависимостей является первичной ссылкой.  
