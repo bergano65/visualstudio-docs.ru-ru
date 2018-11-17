@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724e760c585f0e6423164e1a6bb28aefbf696c2f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92718a20f5deb19890a58d68af85e7f897f2440a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245805"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785148"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Вкладка "Память" диалогового окна "Свойства процесса"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49245805"
   
  Следующие параметры доступны на **памяти** вкладке:  
   
-|Ввод|Описание|  
+|Ввод|Описание:|  
 |-----------|-----------------|  
 |**Байт виртуальной памяти**|Текущий размер (в байтах) виртуального адресного пространства, используемый процессом. Использование виртуального адресного пространства не подразумевает использование страниц памяти или диска. Однако виртуальное пространство ограничено, и с помощью слишком сильно могут ограничить возможность процесса загружать библиотеки.|  
 |**Байт виртуальной памяти (пик)**|Максимальное количество байтов виртуального адресного пространства процесса использовал в любой момент времени.|  

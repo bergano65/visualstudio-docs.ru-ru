@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b2688c19bb27f45cb85558c50fbb8b00e336a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885614"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757717"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "49885614"
   
  Схема файла AdminDeployment содержит следующие элементы:  
   
-|Элемент|Атрибут|Значения|Описание|  
+|Элемент|Атрибут|Значения|Описание:|  
 |-------------|---------------|------------|-----------------|  
 |BundleCustomizations|TargetDir|*Путь*|Поведение аналогично переопределению пути в интерфейсе пользователя приложения установки. Этот элемент пропускается, если Visual Studio уже установлена.|  
 |BundleCustomizations|NoWeb|Да&#124;по умолчанию|Если значение этого элемента — yes (да), приложение установки не будет пытаться выйти в Интернет во время установки.|  

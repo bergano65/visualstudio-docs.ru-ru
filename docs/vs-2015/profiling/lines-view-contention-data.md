@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d85173dcf2ab5632fdb18233f9f27f329ddd3769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773201"
 ---
 # <a name="lines-view---contention-data"></a>Представление "Строки" — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "49921941"
   
   В следующей таблице описаны столбцы в отчете представления "Строки".  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время, в течение которого из-за конфликта блокируется выполнение кода оператора. Время блокировки выполнения функций, которые были вызваны оператором, не включается.|  
 |**Эксклюзивное время блокировки %**|Процент от общего времени блокировки в ходе выполнения, которое являлось эксклюзивным временем блокировки оператора.|  

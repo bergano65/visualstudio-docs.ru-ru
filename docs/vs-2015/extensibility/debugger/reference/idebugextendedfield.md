@@ -15,12 +15,12 @@ ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ea56b3998cb6647e42ae9f24b64f9715010750b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8daed37d49697661b7a4d76cf6e9fe4507d6411b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299979"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764240"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ IDebugExtendedField : IDebugField
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Возвращает значение указанного поля расширенного типа.|  
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Определяет, представляет ли поле закрытым типом.|  

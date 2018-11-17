@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c65220114328f1630ef9c9457a3c971b730957b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919893"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761486"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Предоставление доступа к событиям в пакете SDK для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "49919893"
   
  «AutomationProjectItemEvents «=» возвращает объект AutomationProjectItemsEvents»  
   
-|name|Тип|Диапазон|Описание|  
+|name|Тип|Диапазон|Описание:|  
 |----------|----------|-----------|-----------------|  
 |По умолчанию (@)|REG_SZ|неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
 |AutomationProjectsEvents|REG_SZ|Имя объекта события.|Относится только имя ключа. Поля данных можно использовать для документации.<br /><br /> Этот пример взят из образца базовый проект.|  
@@ -76,7 +76,7 @@ ms.locfileid: "49919893"
   
  AutomationEvents.h и AutomationEvents.cpp содержат объявления и реализации классов в следующей таблице.  
   
-|Класс|Описание|  
+|Класс|Описание:|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Реализует объект корневого события, полученные из `DTE.Events` объекта.|  
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`|Реализации объектов источника событий, которые инициируют соответствующие события.|  

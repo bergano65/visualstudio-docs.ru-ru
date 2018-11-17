@@ -17,12 +17,12 @@ ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a234622738603e6e2116976bd4c904b76ceef90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4a10860a9edd93e92686eb1c054778b9e5ac16a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926830"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786955"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49926830"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp#  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    EVALFLAGS             dwFlags,  
    DWORD                 dwTimeout,  
    IDebugEventCallback2* pExprCallback,  
@@ -65,7 +65,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены некоторые коды типичных ошибок.  
   
-|Error|Описание|  
+|Error|Описание:|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|Сейчас вычисляется другого выражения и вычисление одновременных выражений не поддерживается.|  
 |E_EVALUATE_TIMEOUT|Истекло время ожидания оценки.|  
