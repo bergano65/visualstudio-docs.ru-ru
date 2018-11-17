@@ -17,12 +17,12 @@ ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23782a80527e35c6dafeb4ffd51eadf1a0ff2b06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f6fd711a70c050a6f490a27a56eb860c84de867
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948798"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726950"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49948798"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp#  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -50,7 +50,7 @@ int GetExtendedInfo (
  [in] Идентификатор GUID, который определяет тип расширенные сведения, которые требуется извлечь. Дополнительные сведения см. примечания.  
   
  `pExtendedInfo`  
- [out] Возвращает `VARIANT` (C++) или объект (C#), который может использоваться для извлечения сведений о расширенных свойствах. Например, этот параметр может возвращать `IUnknown` интерфейс, который можно запросить для [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) интерфейс. Дополнительные сведения см. примечания.  
+ [out] Возвращает `VARIANT` (C++) или объект (C#), можно использовать для получения этих данных расширенного свойства. Например, этот параметр может возвращать `IUnknown` интерфейс, который можно запросить для [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) интерфейс. Дополнительные сведения см. примечания.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Если нет для получения расширенной информации.  
@@ -60,7 +60,7 @@ int GetExtendedInfo (
   
  Следующие идентификаторы GUID обычно распознаются этим методом, (значения GUID задаются для C#, так как имя недоступно в любой сборке). Можно создать дополнительные идентификаторы GUID для внутреннего использования.  
   
-|name|Идентификатор GUID|Описание|  
+|name|Идентификатор GUID|Описание:|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Возвращает `IUnknown` интерфейс к документу. Как правило [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) интерфейс может быть получен из этого `IUnknown` интерфейс.|  
 |guidCodeContext|{e2fc65e-56ce - 11d 1-b528-00aax004a8797}|Возвращает `IUnknown` интерфейс к контексту документа. Как правило [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс может быть получен из этого `IUnknown` интерфейс.|  

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SymTagVTableShape tag
 ms.assetid: dd97f4c3-115d-46a9-b506-2531e30a0d8f
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59733a5f9a18c227fed7e0301d2a9df8bcfa6c58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7be27583895768ea9c9324e3b6eb2d378de6f39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739547"
 ---
 # <a name="vtableshape"></a>VTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49238725"
 ## <a name="properties"></a>Свойства  
  Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Если класс таблицы VTable помечается как константа.|  
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Количество записей в таблице VTable.|  

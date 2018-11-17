@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25eddb34038db1bab0f33d33e33301da492d295c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eba6a12714c1b4f58ae9d6bb17f696c3c452411
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255376"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749331"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Вкладка "Класс" диалогового окна "Свойства окна"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49255376"
   
  Следующие параметры доступны на **класс** вкладке:  
   
-|Ввод|Описание|  
+|Ввод|Описание:|  
 |-----------|-----------------|  
 |**Имя класса**|Имя (или порядковый номер) этого класса окна.|  
 |**Стили класса**|Сочетание кодов стилей классов.|  

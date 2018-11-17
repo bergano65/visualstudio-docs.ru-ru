@@ -15,12 +15,12 @@ ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 594bb0625036cb42e18c63e4b836df732e39a17e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8deeb9ea6e3f1167a55c77ca8af32e2632d5cbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194003"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742610"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugPortSupplierEx2 : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы **IDebugPortSupplierEx2**.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Задает основной сервер для поставщика порта.|  
   

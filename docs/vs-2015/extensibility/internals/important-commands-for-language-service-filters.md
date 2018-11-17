@@ -16,12 +16,12 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f2cceeffe22422abb9648d75e669cf74ff0b17e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2c99fdefdd8a215be04bb16b88f56be56b7fff67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175283"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787105"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Важные команды для фильтров языковой службы
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49175283"
 > [!NOTE]
 >  Это не обязательно для фильтрации для каждой команды в следующей таблице.  
   
-|Команда|Описание|  
+|Команда|Описание:|  
 |-------------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Посылается, когда пользователь щелкает правой кнопкой мыши. Эта команда указывает, что это время создать контекстное меню. Если эта команда не обрабатывают, текстовый редактор предоставляет контекстное меню по умолчанию без любых команд для конкретного языка. Чтобы включить собственные команды этого меню, необходимо обработать команду и самостоятельного отображения контекстного меню.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Обычно отправляются, когда пользователь вводит CTRL + J. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для отображения поля завершения инструкции.|  
