@@ -13,14 +13,14 @@ ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67429d7d5703aceeaf135f49451ec1895b78d397
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de01ec4f857042c6eaaaa70632b28cfc830886cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209967"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817091"
 ---
-# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Платформа компиляторов .NET (&quot;Roslyn&quot;) расширяемости
+# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Расширяемость платформы компилятора .NET (&quot;Roslyn&quot;)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Основная миссия платформы компилятора .NET («Roslyn») открывая компиляторы C# и Visual Basic и позволяя средствам и разработчикам совместно использовать в компиляторах ценные сведения о программах. Средства анализа кода повышение качества кода и кода генераторы шаблона можно найти в построение приложения. Как средства получать аналитическую, им требуется доступ к больше и больше из кода глубокого знания, обладают исключительно компиляторами. А не непрозрачные преобразователи (исходный код в и объектный код out), компиляторы Roslyn предоставляют API, которые можно использовать для задач, связанных с кодом, в средствах и приложениях.  

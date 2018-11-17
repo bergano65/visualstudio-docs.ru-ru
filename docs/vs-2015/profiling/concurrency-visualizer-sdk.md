@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78d848f5d075ed0d5cd835f4af3daf964603c371
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754831"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "49207939"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Справочник по библиотеке C++](../profiling/cpp-library-reference.md)|Описывает API визуализатора параллелизма для C++.|  
 |[Справочник по библиотеке C](../profiling/c-library-reference.md)|Описывает API визуализатора параллелизма для C.|  

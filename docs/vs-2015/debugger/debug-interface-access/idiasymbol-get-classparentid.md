@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_classParentId method
 ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79455e4e53c3ed6e61723a3d9d653c63f3b66e43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c509a0d8151fbf9b67a6ef8b6057d1241b1fd77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866809"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798707"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49866809"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp#  
-HRESULT get_classParentId (   
+HRESULT get_classParentId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -53,7 +53,7 @@ HRESULT get_classParentId (
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 7.0|  

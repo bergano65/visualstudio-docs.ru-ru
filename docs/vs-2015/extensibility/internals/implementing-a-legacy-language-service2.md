@@ -15,12 +15,12 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6c84a848d75302f5744e812e43a1bd7979472e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831384"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753920"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -200,7 +200,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращается|Описание:|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
@@ -217,7 +217,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>В классе источника  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращается|Описание:|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|  
@@ -227,7 +227,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращается|Описание:|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, такие как члены или типы. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур метода в данном контексте. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  

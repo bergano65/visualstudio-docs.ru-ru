@@ -16,12 +16,12 @@ ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fcb1922c567ff93bba44ed529e8b78388008bd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830630"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741536"
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "49830630"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор guid набора команд, как определено в [элемент Symbols](../extensibility/symbols-element.md).|  
 |id|Обязательно. Идентификатор меню, группу или команду, чтобы поместить, как определено в `Symbols Element`.|  
@@ -52,13 +52,13 @@ ms.locfileid: "49830630"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Родительский|Обязательно. Меню или группы, на котором размещается элемент, чтобы разместить.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Указывает группы элементов CommandPlacements и CommandPlacement.|  
   

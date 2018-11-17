@@ -18,12 +18,12 @@ ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cca0b3ce30ece454567db25dca1f950098f39d8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9a0bbf3c26f797ec1bbf67ad8439e5f5ba05b11
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917283"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764210"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|  
@@ -89,7 +89,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Код, указывающий состояние файла:  
   
-|Код|Описание|  
+|Код|Описание:|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|Не удается определить, какие изменения были внесены.|  
 |`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - symbols [DIA SDK], type hierarchies
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfb8fd751d6230dd839d073a61e80cabf5d48892
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305491"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783263"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Лексическая иерархия символьных типов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49305491"
   
 ## <a name="symbol-types"></a>Типы символов  
   
-|Тип символа|Описание|  
+|Тип символа|Описание:|  
 |-----------------|-----------------|  
 |[Комментарий](../../debugger/debug-interface-access/annotation.md)|Задает расположение с заметками в программном коде.|  
 |[Block](../../debugger/debug-interface-access/block.md)|Задает вложенные области в функции.|  

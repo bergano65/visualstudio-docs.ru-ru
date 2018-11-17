@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaInjectedSource interface
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60ca39772b259cd1fda70f4063469c7d59199334
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8c8014d91f020bec5c9ab29c427fa78f7092b0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298445"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756637"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49298445"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaInjectedSource : IUnknown  
+IDiaInjectedSource : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaInjectedSource`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Извлекает циклическую проверку избыточности (CRC) вычисляется на основе байты исходного кода.|  
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Возвращает число байтов кода.|  

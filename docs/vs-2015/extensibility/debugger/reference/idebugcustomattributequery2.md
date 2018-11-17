@@ -18,12 +18,12 @@ ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d26f05172dc0ee4b5de2870a3ae24acc436684e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b175a15520b9956ecd2a1418f35f1aa9bdbc1330
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276241"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739062"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49276241"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
@@ -45,14 +45,14 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы **IDebugCustomAttributeQuery** интерфейс.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Определяет, существует ли настраиваемый атрибут по имени.|  
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Возвращает сведения об атрибутах, для заданного настраиваемого атрибута.|  
   
  В дополнение к **IDebugCustomAttributeQuery** методы, `IDebugCustomAttributeQuery2` реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Возвращает перечислитель для все настраиваемые атрибуты, вложенные в это поле.|  
   
