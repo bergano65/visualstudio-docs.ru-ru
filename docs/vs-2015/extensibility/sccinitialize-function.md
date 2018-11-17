@@ -17,12 +17,12 @@ ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a04e03775e9f2a642b5cda5d01aae77afab7368
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9febcc2eecea4533f1c37a0068e2d94ab66ff2af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891223"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750724"
 ---
 # <a name="sccinitialize-function"></a>Функция SccInitialize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Инициализация элемента управления источника завершилась успешно.|  
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать систему.|  

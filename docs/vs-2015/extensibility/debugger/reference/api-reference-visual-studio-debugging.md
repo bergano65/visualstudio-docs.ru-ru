@@ -15,12 +15,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 979a6b999e34b5cec57e4a0d324f8c273fbe5dc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222104"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771702"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник API (отладка Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "49222104"
   
  В следующей таблице приведены распространенные `HRESULT` значения, возвращаемые методами.  
   
-|name|Описание|Значение|  
+|name|Описание:|Значение|  
 |----------|-----------------|-----------|  
 |S_OK|Выполнено.|0x00000000|  
 |E_UNEXPECTED|Непредвиденная ошибка.|0x8000FFFF|  

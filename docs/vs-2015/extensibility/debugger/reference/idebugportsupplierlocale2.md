@@ -15,12 +15,12 @@ ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fb4b37aa8ef2fb7f62fc03e344d12f542f437e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8849a3045a421f1e10a5f7a96c86f08345cbe8b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295583"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751782"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы **IDebugPortSupplierLocale2**.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Задает языковой стандарт для поставщика порта.|  
   
