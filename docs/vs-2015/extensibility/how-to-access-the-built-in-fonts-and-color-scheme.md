@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752929"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое: доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "49811897"
   
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:  
   
-    |name|Тип|Данные|Описание|  
+    |name|Тип|Данные|Описание:|  
     |----------|----------|----------|-----------------|  
     |Категория|REG_SZ|Идентификатор GUID|Произвольный GUID, определяющий категорию, которая содержит акций шрифт и цветовую схему.|  
     |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Этот GUID используется всех пакетов VSPackage, использующих настройки шрифта и цвета по умолчанию.|  

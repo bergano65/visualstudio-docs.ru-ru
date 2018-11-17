@@ -17,22 +17,22 @@ helpviewer_keywords:
 - performance tools, VSInstr tool
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e9363ea40350c5fe23a8fdde45504f70d411a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be30404e4fb9cff6c53bb3afbdedb4ce03ba2d80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249162"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765139"
 ---
 # <a name="vsinstr-warnings"></a>Предупреждения средства VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В следующей таблице перечислены предупреждения, создаваемые средством VSInstr.exe. Чтобы отключить эти предупреждения, используйте параметр NOWARN с соответствующим номером предупреждения.  
   
-|Номер предупреждения|Описание|  
+|Номер предупреждения|Описание:|  
 |--------------------|-----------------|  
 |**VSP2000**|Внутренняя ошибка. Не удается получить имя файла модуля для этого исполняемого файла.|  
 |**VSP2001**|\<имя сборки> является сборкой со строгим именем. Перед выполнением ее необходимо будет заново подписать.<br /><br /> Это предупреждение возникает при инструментировании подписанной сборки. В этом случае можно повторно подписать двоичный файл с помощью средства sn.exe или временно отключить требование строгого имени. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (Sn.exe: средство строгих имен).|  
