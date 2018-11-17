@@ -14,15 +14,15 @@ helpviewer_keywords:
 - NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867173"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733829"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Чтобы указать один из трех уровней, к которому можно применить сбор данных производительности, следует использовать представленные ниже значения **PROFILE_CONTROL_LEVEL**.  
   
-|Перечислитель|Описание|  
+|Перечислитель|Описание:|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -70,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание|  
+|Перечислитель|Описание:|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|Заданный элемент профилирования не существует.|  
 |NAME_ERROR_INVALID_NAME|Недопустимое имя.|  

@@ -18,12 +18,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a33a1d8b82c03b2c8a45c63f5479011ab7249aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903144"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736580"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура Content_types] .xml файл
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,32 +38,32 @@ ms.locfileid: "49903144"
   
 ### <a name="root-element"></a>Корневой элемент  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |`Types`|Содержит дочерние элементы, соответствующие типам файлов в пакете VSIX.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
 ### <a name="attribute-name-attribute"></a>{Атрибут name} Атрибут  
   
-|                           Значение                           |                Описание                |
+|                           Значение                           |                Описание:                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | Расположение схемы типов содержимого. |
   
 ### <a name="child-elements"></a>Дочерние элементы  
  `Types` Элемент может содержать любое количество `Default` элементов.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |`Default`|Описывает тип содержимого в пакете VSIX. Каждый тип файла в пакете должно иметь свой собственный `Default` элемент.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Extension`|Расширение имени файла, файла в пакете VSIX.|  
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  
@@ -90,7 +90,7 @@ ms.locfileid: "49903144"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий файл [Content_Types] .xml описывает типичные пакета VSIX.  
   
 ### <a name="code"></a>Код  

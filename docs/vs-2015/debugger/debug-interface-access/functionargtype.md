@@ -15,15 +15,15 @@ helpviewer_keywords:
 - FunctionArgType symbol
 ms.assetid: 9f072fd3-0b99-405c-af99-fd44cd56fd73
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 315935c82e5c0e2d425598f11fb1d248cfc4c40e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fef88e0f5b18bdfc8443d6342d6594b1881d77c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251281"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740073"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49251281"
 ## <a name="properties"></a>Свойства  
  Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ для родительского FunctionType.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор символа родительского класса.|  
