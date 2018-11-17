@@ -77,15 +77,15 @@ helpviewer_keywords:
 - debug heap, reporting functions
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 691db8ce3b9b956ef7e0299acddac74c926fcf5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923008"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803023"
 ---
 # <a name="crt-debug-heap-details"></a>Сведения о куче отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **_CrtDbgFlag** флаг содержит следующие битовые поля:  
   
-|Битовое поле|Значение по умолчанию<br /><br /> value|Описание|  
+|Битовое поле|Значение по умолчанию<br /><br /> value|Описание:|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|включить|Включает отладочное выделение. Если этот бит отключен, выделения остаются скрепленными вместе, но типы их блоков — **_IGNORE_BLOCK**.|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Off|Препятствует действительному освобождению памяти, как при эмуляции условий нехватки памяти. Если этот бит включен, освобожденные блоки хранятся в связанном списке отладочной кучи, но помечаются как **_FREE_BLOCK** и заполняется значением байтов.|  
@@ -309,7 +309,7 @@ typedef struct _CrtMemState
   
  Эти функции отчитываются о состоянии и содержимом кучи, использование этих сведений помогает обнаружить утечки памяти и решить другие подобные проблемы.  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
 |[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Сохраняет снимок кучи в **_CrtMemState** структуру, предоставляемую приложением.|  
 |[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Сравнивает две структуры состояния памяти, сохраняет в третьей структуре различие между ними и возвращает значение TRUE при нахождении различий.|  

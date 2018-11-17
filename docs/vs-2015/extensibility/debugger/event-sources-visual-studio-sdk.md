@@ -15,12 +15,12 @@ ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6895afb7c35337ecbbffb0d1fad15e7a9df29f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee6186714682e381e2ee3d404eaaaed68580f931
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191065"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760784"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Источники событий (пакет SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

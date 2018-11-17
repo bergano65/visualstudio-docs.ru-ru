@@ -15,12 +15,12 @@ ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee253ac5f51e71e1fc58d41fe44a6b76473722c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 942bca219de30cb39d818519f29010d4a79b1380
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779584"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ IDebugGenericFieldDefinition : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Создает экземпляр поля задан массив аргументов типа.|  
 |[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Получает параметры типа, учитывая количество параметров.|  
