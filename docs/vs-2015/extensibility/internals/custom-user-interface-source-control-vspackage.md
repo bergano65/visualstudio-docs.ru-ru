@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728539"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ VSPackage объявляет элементами меню и состояние
   
   В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |-------------|-----------------|  
 |Меню и панели инструментов|Пакет системы управления версиями необходимо задать начальное состояние видимости меню и панель инструментов идентификатора источника пакета в [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел файла .vsct. Это позволяет [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки для задания состояния пунктов меню, соответствующим образом без загрузки VSPackage и вызова реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.|  
 |Окна инструментов|Пакет VSPackage системы управления версиями скрывает все окна инструментов, которыми он владеет, когда он становится неактивным.|  
