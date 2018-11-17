@@ -16,12 +16,12 @@ ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12dd551380fb8e13bc54bfaac7b5c5d59bc6372d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62096a713e84353ab79206c5edc7003ab443adbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276907"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765879"
 ---
 # <a name="parent-element"></a>Элемент Parent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "49276907"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
 |id|Обязательно. Идентификатор команды идентификатор из GUID и идентификатора.|  
@@ -49,7 +49,7 @@ ms.locfileid: "49276907"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды, предоставляемых VSPackage интегрированной среды разработки (IDE). Например пункты меню, меню, панелей инструментов и поля со списком.|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группы [элемент Button](../extensibility/button-element.md) элементов.|  
