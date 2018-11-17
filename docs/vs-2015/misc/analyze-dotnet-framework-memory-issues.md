@@ -13,14 +13,14 @@ f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810485"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Анализ проблем с памятью .NET Framework
 С помощью анализатора управляемой памяти Visual Studio вы можете найти утечки памяти и определить неэффективное использование памяти в коде .NET Framework. Минимальная версия .NET Framework целевого кода — .NET Framework 4.5.  
@@ -160,7 +160,7 @@ ms.locfileid: "49812573"
   
   Анализатор памяти добавляет к корневым объектам комментарии с описанием ссылки, которые содержатся в объектах:  
   
-|Комментарий|Описание|  
+|Комментарий|Описание:|  
 |----------------|-----------------|  
 |**Статическая переменная** `VariableName`|Статическая переменная. `VariableName` — имя переменной.|  
 |**Дескриптор завершения**|Ссылка из очереди метода завершения|  
