@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f03a3d5b7033ae0124368425de3d7d85f9f040a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 46bd3506744d37d3f203215cd9c152cef20142f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776685"
 ---
 # <a name="process-view---contention-data"></a>Представление "Процесс" — данные о состязаниях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49288662"
   
  В следующей таблице описаны значения столбцов в представлении "Процесс".  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Время начала**|Количество миллисекунд или циклов процессора от начала профилирования до запуска процесса или потока.|  
 |**Время блокировки**|Общее время, в течение которого выполнение функций процесса или потока заблокировано.|  

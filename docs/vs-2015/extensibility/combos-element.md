@@ -16,12 +16,12 @@ ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42095de9fa0e275d2f75fae698c35a6c1bce3ec2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b3a7b0d378295e0eea2aaf3e7292b670bc481f2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908773"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744991"
 ---
 # <a name="combos-element"></a>Элемент Combos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +48,14 @@ ms.locfileid: "49908773"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Combos](../extensibility/combos-element.md)|Группирует элементы поля со списком.|  
 |[Элемент Combo](../extensibility/combo-element.md)|Определяет набор команд, отображаемых в поле со списком.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

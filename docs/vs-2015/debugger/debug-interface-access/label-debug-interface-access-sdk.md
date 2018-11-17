@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Label symbol
 ms.assetid: 8cef7620-5bc8-4500-8bd0-e9e638bccb24
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb6935c7e2892da15ea42cf1025b3db08af7938c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43fcc7542e68b3a371bb45997841c0540fec506d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186177"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799188"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Label (SDK для доступа к интерфейсу отладки)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49186177"
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Раздел частью расположение; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  

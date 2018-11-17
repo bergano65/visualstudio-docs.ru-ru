@@ -16,12 +16,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880515"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796315"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Знакомство с протоколами возвращаемые значения  
  В некоторых операционных системах установки Visual Studio Shell (изолированная), может потребоваться перезагрузка. Это условие можно определить с помощью код возврата вызова `ExecCmd`.  
   
-|Возвращаемое значение|Описание|  
+|Возвращаемое значение|Описание:|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Установка завершена. Теперь можно установить приложение.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Установка завершена. Приложения можно установить после перезагрузки компьютера.|  

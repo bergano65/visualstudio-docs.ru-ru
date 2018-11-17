@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Typedef symbol [DIA SDK]
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb4effcdff8a4eb6ffb23c9dfc4c39b35e613de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96779ffd9a7aa184ff907f8734ae1658d304f5fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793689"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (SDK для доступа к интерфейсу отладки)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49232704"
 ## <a name="properties"></a>Свойства  
  Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Один из [перечисление BasicType](../../debugger/debug-interface-access/basictype.md) значения.|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Родительский класс это определение типа, если таковые имеются.|  

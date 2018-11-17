@@ -13,12 +13,12 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6dcb0ccb6a8793649c0b12b6851ba58b9374da9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192066"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779376"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Шаблоны взаимодействия для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49192066"
   
 ### <a name="visual-studio-client-pattern-types"></a>Типах шаблонов Visual Studio клиента  
   
-|Тип расписания|Описание|Примеры|  
+|Тип расписания|Описание:|Примеры|  
 |------------------|-----------------|--------------|  
 |**Шаблоны уровня приложения**|Высокоуровневых шаблона, общие для приложения, определение или отображение контекст приложения и содержащий составного и шаблоны элементов управления в них|-Windows средство<br />-Windows документа|  
 |**Составные шаблоны**|Общие шаблоны, которые могут охватывать во всех приложениях или распознанным шаблон состоит из нескольких элементов управления в различных конфигурации|-Переключение представлений<br />-Построители list<br />— Отображение данных<br />-Уведомления<br />— Проверка<br />-Выбор модели|  
