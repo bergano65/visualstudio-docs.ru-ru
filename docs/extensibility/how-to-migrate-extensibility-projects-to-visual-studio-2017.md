@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637501"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826821"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Практическое: перенос проектов расширяемости в Visual Studio 2017
 
@@ -63,7 +63,7 @@ ms.locfileid: "39637501"
 * Убедитесь, `InstallationTarget` включает 15.0.
 * Добавьте необходимые условия для установки требуется (как показано в следующем примере).
   * Мы рекомендуем указать только идентификаторы компонентов для установки необходимых компонентов.
-  * См. в разделе, в конце этого документа [инструкции по выявлению идентификаторы компонентов](#finding-component-ids).
+  * См. в разделе, в конце этого документа [инструкции по выявлению идентификаторы компонентов](#find-component-ids).
 
 Пример
 
