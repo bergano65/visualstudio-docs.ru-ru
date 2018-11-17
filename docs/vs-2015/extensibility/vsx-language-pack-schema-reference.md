@@ -18,12 +18,12 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94fd3b17f282050a96abee50ad20437ae00cf047
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebdb8b3110a8ea20835e04492fa5bd1fa1f711b1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258469"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732847"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>Справочник по схеме VSX языкового пакета
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49258469"
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Элемент VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Определяет корневой элемент манифеста VSIX для языкового пакета.<br /><br /> `Content` И `Identifier` элементы являются дочерними элементами данного элемента.|  
   
 ## <a name="related-sections"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показан способ предоставления поддержки локализованной установки для пакета VSIX.|  
 |[Справочник по схеме 1.0 расширение VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|Манифест VSIX описывает содержимое файла развертывания с расширением VSIX, расширение Visual Studio должны быть установлены с помощью **расширения и обновления** диалоговое окно.|  
