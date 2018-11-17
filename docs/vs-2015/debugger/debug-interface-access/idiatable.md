@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74426b192cfad6d5a90b8aa83a1ca9bda402231c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03f93cb75ce675409adcceec3f08b172581a3d8b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721994"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49207315"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaTable : IEnumUnknown  
+IDiaTable : IEnumUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaTable`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Извлекает имя таблицы.|  

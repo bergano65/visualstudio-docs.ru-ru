@@ -16,12 +16,12 @@ ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eac871afd7498a8eb06aee6954e9589abe53d545
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d5b1e19072e2a008a588ae8646657a2d87d9a1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816558"
 ---
 # <a name="menus-element"></a>Элемент Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +48,14 @@ ms.locfileid: "49297752"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Menus](../extensibility/menus-element.md)|Определяет, меню и панелей инструментов, реализующий VSPackage.|  
 |[Элемент Menu](../extensibility/menu-element.md)|Представляет один меню или панели инструментов.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд в VSPackage.|  
   
