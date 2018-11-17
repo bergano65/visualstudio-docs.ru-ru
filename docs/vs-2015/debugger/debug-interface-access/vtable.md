@@ -16,15 +16,15 @@ helpviewer_keywords:
 - virtual tables
 ms.assetid: c8be6692-7d2a-4721-99d3-8e2e565bb8a1
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa0b3b99d9d77adbefbdc37764307d1323a629b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 05d68820801fa946583fa125cfeaa5670b555107
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224371"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746349"
 ---
 # <a name="vtable"></a>VTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49224371"
 ## <a name="properties"></a>Свойства  
  Ниже приведены дополнительные допустимые свойства для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ, класса, которому принадлежит этой таблице VTable.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор символа родительского класса.|  

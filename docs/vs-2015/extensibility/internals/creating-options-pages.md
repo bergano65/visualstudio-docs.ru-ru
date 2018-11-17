@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 076c4934fe4f81bd56edc70356ecdcc1101456e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893695"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760333"
 ---
 # <a name="creating-options-pages"></a>Создание страниц параметров
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,21 +66,21 @@ ms.locfileid: "49893695"
 ## <a name="example"></a>Пример  
  Ниже приведен простой реализации «hello world» страницы параметров. Добавив следующий код в проект по умолчанию создан с помощью шаблона пакета Visual Studio, с **команды меню** выбран параметр будет адекватно продемонстрировать функциональные возможности параметра страницы.  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий класс определяет минимальной параметры страницы «hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.  
   
 ### <a name="code"></a>Код  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs#11)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb#11)]  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Применение следующий атрибут к классу пакета доступны параметры, на странице при загрузке пакета. Числа являются произвольные идентификаторы ресурсов для категории и страницы, и логическое значение в конце указывает, поддерживает ли страница службы автоматизации.  
   
 ### <a name="code"></a>Код  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs#07)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb#07)]  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий обработчик событий возвращает результат в зависимости от значения свойства, заданного на странице параметров. Она использует <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> метод с результатом явным образом привести к типу страницы настраиваемый параметр для доступа к свойствам на странице.  
   
  В случае проектов, созданных с помощью шаблона пакета, вызовите эту функцию из `MenuItemCallback` добавлена функция, чтобы присоединить его к команды по умолчанию для **средства** меню.  
