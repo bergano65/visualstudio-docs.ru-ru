@@ -7,17 +7,17 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542446"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295934"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Подключение к системе управления версиями Team Foundation
 
 > [!NOTE]
-> **Примечание**. Поддержка управления версиями Team Foundation находится в предварительной стадии, и некоторые функции еще не поддерживаются полностью. Мы будем рады ответить на ваши вопросы на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/spaces/41/index.html). Планируются дальнейшие обновления.
+> Поддержка управления версиями Team Foundation находится в предварительной стадии, и некоторые функции еще не поддерживаются полностью. Мы будем рады ответить на ваши вопросы на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/spaces/41/index.html). Планируются дальнейшие обновления.
 
 Azure Repos предоставляют две модели системы управления версиями: Git, которая является распределенной системой управления версиями, и система управления версиями Team Foundation (TFVC), которая является централизованной системой управления версиями. В этой статье представлены общие сведения и отправная точка для использования TFVC в Visual Studio для Mac.
 
@@ -29,9 +29,9 @@ Azure Repos предоставляют две модели системы упр
 
 ## <a name="installation"></a>Установка
 
-В Visual Studio для Mac выберите в меню **Visual Studio > Расширения...**. На вкладке **Коллекция** выберите **Управление версиями > Управление версиями Team Foundation для TFS и VSTS** и нажмите кнопку **Установить...**:
+В Visual Studio для Mac выберите в меню **Visual Studio > Расширения**. На вкладке **Коллекция** выберите **Управление версиями > Управление версиями Team Foundation для TFS и VSTS** и нажмите кнопку **Установить**.
 
-  ![Диспетчер расширений](media/tfvc-install.png)
+![Диспетчер расширений](media/tfvc-install.png)
 
 Следуйте инструкциям для установки расширения. После установки перезапустите интегрированную среду разработки.
 
@@ -39,27 +39,27 @@ Azure Repos предоставляют две модели системы упр
 
 Обновления для расширения TFVC выходят периодически. Для доступа к ним выберите **Visual Studio > Расширения...** в меню и откройте вкладку **Обновления**. Выберите расширение в списке и нажмите кнопку **Обновить**:
 
-  ![Диспетчер расширений, отображающий обновление](media/tfvc-update.png)
+![Диспетчер расширений, отображающий обновление](media/tfvc-update.png)
 
 Нажмите кнопку **Установить** в следующем диалоговом окне, чтобы удалить старый пакет и установить новый.
 
-Сведения о новых возможностях в каждом из выпусков см. в разделе [Заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+Сведения о новых возможностях в каждом из выпусков см. в разделе [Заметки о выпуске](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Использование надстройки
 
 После установки расширения выберите **Управление версиями > TFS/Azure DevOps > Открыть из удаленного репозитория** в меню.
 
-  ![Элемент меню, чтобы открыть расширение](media/tfvc-source-control-explorer-devops.png)
+![Элемент меню, чтобы открыть расширение](media/tfvc-source-control-explorer-devops.png)
 
 Вначале выберите VSTS или Team Foundation Server и нажмите кнопку **Продолжить**:
 
-  ![Соединение с сервером](media/tfvc-choose-server-type-devops.png)
+![Соединение с сервером](media/tfvc-choose-server-type-devops.png)
 
 ### <a name="azure-repos-authentication"></a>Проверка подлинности Azure Repos
 
 При выборе проекта, размещенного в Azure Repos, вам предлагается ввести сведения о своей учетной записи Майкрософт:
 
-  ![Подключение к Azure Repos](media/tfvc-vsts-login.png)
+![Подключение к Azure Repos](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Проверка подлинности TFS
 
@@ -71,7 +71,7 @@ Azure Repos предоставляют две модели системы упр
 
 Успешно пройдя проверку подлинности, вы можете просмотреть список репозиториев, которые связаны с этой учетной записью, в диалоговом окне **Открыть из системы управления версиями**:
 
-  ![Диалоговое окно "Открыть из системы управления версиями" с отображаемыми проектами](media/tfvc-vsts-projects.png)
+![Диалоговое окно "Открыть из системы управления версиями" с отображаемыми проектами](media/tfvc-vsts-projects.png)
 
 Это диалоговое окно упорядочено по следующим узлам:
 
@@ -188,3 +188,7 @@ Azure Repos предоставляют две модели системы упр
 - в имени рабочей области не используются недопустимые символы;
 - максимальная длина имени — 64 символа;
 - локальный путь не может использоваться другими рабочими областями.
+
+## <a name="see-also"></a>См. также
+
+- [Разработка и совместное использование кода в TFVC с использованием Visual Studio (в Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

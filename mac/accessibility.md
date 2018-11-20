@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: eda5e78888a3d50c628033d9f4331ab3789b20c8
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224147"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296350"
 ---
 # <a name="accessibility"></a>Специальные возможности
 
@@ -20,7 +20,7 @@ ms.locfileid: "43224147"
 - настройка размера текста в редакторах;
 - настройка цвета в редакторах;
 - настройка сочетаний клавиш;
-- автозавершение методов и параметров. 
+- автозавершение методов и параметров.
 
 Дополнительные сведения о специальных возможностях для macOS см. на [веб-сайте Apple](https://www.apple.com/accessibility/mac/).
 
@@ -36,11 +36,10 @@ ms.locfileid: "43224147"
 
 3. Нажмите кнопку **Restart Visual Studio** (Перезапустить Visual Studio), чтобы изменения вступили в силу.
 
-
-Также включить специальные возможности можно в командной строке. Для этого введите следующую команду в окне терминала: 
+Также включить специальные возможности можно в командной строке. Для этого введите следующую команду в окне терминала:
 
 ```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1 
+defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
 ```
 
 Включив специальные возможности, перезапустите Visual Studio.
@@ -49,12 +48,13 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Навигацию с помощью клавиатуры можно включить, выбрав **System Preferences > Keyboard > Shortcuts** (Системные настройки > Клавиатура > Ярлыки) и установив для параметра Full Keyboard Access (Полный доступ с клавиатуры) значение **All Controls** (Все элементы управления):
 
-  ![Панель системных настроек в macOS](media/accessibility-image2.png)
+![Панель системных настроек в macOS](media/accessibility-image2.png)
 
 Настройка параметра доступа с клавиатуры включает прямоугольник фокуса. Теперь элементы управления можно выбирать следующим образом:
+
 - используя клавишу TAB для перехода по элементам управления вперед;
 - используя клавиши SHIFT+TAB для перехода по элементам управления назад;
-- используя клавиши со стрелками для перемещения между элементами управления в направлении стрелки. 
+- используя клавиши со стрелками для перемещения между элементами управления в направлении стрелки.
 
 Нажатие клавиши ПРОБЕЛ активирует элемент управления с наведенным фокусом.
 
@@ -66,13 +66,17 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 - Перемещение курсора VoiceOver между элементами управления: **CTRL+ALT+СТРЕЛКА ВЛЕВО или СТРЕЛКА ВПРАВО**.
 
-VoiceOver считывает имя элементов управления и некоторые сведения о них, а также определяет возможные действия с ними. 
+   VoiceOver считывает имя элементов управления и некоторые сведения о них, а также определяет возможные действия с ними.
 
 - Ввод групп и элементов управления (например, панели решения, панели инструментов и других панелей): **CTRL+ALT+SHIFT+СТРЕЛКА ВНИЗ**.
 
-Перемещаться в пределах элемента управления можно с помощью клавиш **CTRL+ALT+СТРЕЛКИ**. 
- 
+   Перемещаться в пределах элемента управления можно с помощью клавиш **CTRL+ALT+СТРЕЛКИ**.
+
 Общие сведения об использовании VoiceOver в macOS см. в следующих руководствах:
 
 - [VoiceOver Getting Started Guide](https://help.apple.com/voiceover/info/guide/10.12/) (Руководство по началу работы с VoiceOver)
 - [OS X VoiceOver Commands](http://lab.dotjay.com/notes/voiceover-commands/) (Команды VoiceOver в OS X)
+
+## <a name="see-also"></a>См. также
+
+- [Специальные возможности Visual Studio (в Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283708"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294322"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Компиляция и сборка в Visual Studio для Mac
 
@@ -48,3 +48,7 @@ Visual Studio для Mac также можно использовать для �
 
 * [Сборка приложения Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Непрерывная интеграция с помощью Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
+
+## <a name="see-also"></a>См. также
+
+- [Компиляция и сборка (Visual Studio в Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)

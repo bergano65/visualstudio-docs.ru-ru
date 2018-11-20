@@ -12,16 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 539e6c95dd16e091b7f0ff2cf792a9f8b2fa416b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000233"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348347"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 
 Если во время работы с Visual Studio возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://developercommunity.visualstudio.com/), чтобы мы могли диагностировать и устранить ее.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Как сообщить о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Сообщение о проблеме с помощью Visual Studio
 

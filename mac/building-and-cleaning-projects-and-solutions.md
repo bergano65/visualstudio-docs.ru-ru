@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224111"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294244"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Сборка и очистка проектов и решений
 
@@ -32,17 +32,18 @@ ms.locfileid: "43224111"
     * **Перестроить все** — очищает решение и затем собирает его.
     * **Очистить все** — удаляет все продукты сборки из решения.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>Сборка или перестроение одного проекта
 
 1. Выберите проект на панели решения.
 
 2. В строке меню выберите "Сборка", а затем выберите "Собрать[имя_проекта]", "Перестроить[имя_проекта]" или "Очистить[имя_проекта]".
 
-
 ## <a name="to-stop-a-build"></a>Остановка сборки
 
 Чтобы остановить сборку, щелкните красный квадрат в области состояния:
 
- ![Щелкните красный квадрат, чтобы остановить сборку](media/compiling-and-building-image3.png)
+![Щелкните красный квадрат, чтобы остановить сборку](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>См. также
+
+- [Создание и очистка проектов и решений (Visual Studio в Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

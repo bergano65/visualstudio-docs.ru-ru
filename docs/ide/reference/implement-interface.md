@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811546"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295427"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Реализация интерфейса на Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "49811546"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) .
+      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) , который отображается.
       - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
 3. Выберите **Реализовать интерфейс** в раскрывающемся меню.

@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808796"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348530"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
 
 Вы можете создать несколько конфигураций сборки для решения. Например, можно настроить отладочную сборку, которую ваши тест-инженеры могут использовать для поиска и устранения неполадок, или настроить разные типы сборок, которые можно передавать разным клиентам.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Создание и изменение конфигураций в Visual Studio для Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Создание конфигураций сборки
 
@@ -127,3 +128,4 @@ ms.locfileid: "38808796"
 - [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)
 - [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Управление свойствами проектов и решений](managing-project-and-solution-properties.md)
+- [Создание и изменение конфигураций (Visual Studio для Mac)](/visualstudio/mac/create-and-edit-configurations)

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224095"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294023"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Создание и редактирование пользовательского файла EditorConfig
 
 В Visual Studio для Mac в проект или решение можно добавить файл [EditorConfig](http://editorconfig.org/), чтобы обеспечить использование единообразного стиля написания кода всеми разработчиками, работающими с базой кода. Параметры, объявленные в файле EditorConfig, имеют приоритет над глобальными параметрами текстового редактора Visual Studio для Mac. Использование в проекте или в базе кода файла EditorConfig позволяет задать стиль написания кода, настройки и предупреждения для проекта. Поскольку этот файл является частью базы кода, он позволяет следить за тем, чтобы все пользователи придерживались принятых в проекте практик кодирования независимо от интегрированной среды разработки или редактора кода, в которых они работают.
 
-Файлы [EditorConfig](http://editorconfig.org/) поддерживаются многими интегрированными средами разработки и редакторами кода, включая Visual Studio 2017. 
+Файлы [EditorConfig](http://editorconfig.org/) поддерживаются многими интегрированными средами разработки и редакторами кода, включая Visual Studio 2017.
 
 ## <a name="supported-settings"></a>Поддерживаемые параметры
 
@@ -33,15 +33,15 @@ ms.locfileid: "43224095"
 - `insert_final_newline`
 - `root`
 
-Кроме того, EditorConfig поддерживает [соглашения о написании кода](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) в C#.
+Кроме того, EditorConfig поддерживает [соглашения о написании кода](/visualstudio/ide/editorconfig-code-style-settings-reference) в C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>Добавление файла EditorConfig в проект
 
 ### <a name="adding-a-new-editorconfig-file"></a>Добавление нового файла EditorConfig
 
-1. Откройте проект в Visual Studio для Mac. Выберите решение или узел проекта, в который нужно добавить файл EditorConfig. При добавлении файла в каталог решения параметры .editorconfig применяются ко всем проектам в решении. 
+1. Откройте проект в Visual Studio для Mac. Выберите решение или узел проекта, в который нужно добавить файл EditorConfig. При добавлении файла в каталог решения параметры .editorconfig применяются ко всем проектам в решении.
 
-2. Щелкните узел правой кнопкой мыши и выберите команду **Добавить > Новый файл**, чтобы открыть диалоговое окно **Новый файл**:
+2. Щелкните узел правой кнопкой мыши и выберите команду **Добавить > Новый файл**, чтобы открыть диалоговое окно **Новый файл**.
 
     ![Пункты меню содержимого](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ ms.locfileid: "43224095"
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Добавление существующего файла EditorConfig
 
-Если вы работаете с проектом или решением, которое уже содержит файл `.editorconfig`, то для применения параметров не требуется никаких действий. Все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig. 
+Если вы работаете с проектом или решением, которое уже содержит файл `.editorconfig`, то для применения параметров не требуется никаких действий. Все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig.
 
 Может потребоваться использование уже существующего файла `.editorconfig` в проекте. Чтобы добавить существующий файл, выполните следующие действия.
 
-1. Щелкните папку, которую нужно добавить, правой кнопкой мыши и выберите параметры **Добавить > Добавить файлы…**.
+1. Щелкните папку, которую нужно добавить, правой кнопкой мыши и выберите параметры **Добавить > Добавить файлы**.
 
-2. Перейдите в каталог, где находится необходимый файл. 
+2. Перейдите в каталог, где находится необходимый файл.
 
 3. Файлы, названия которых начинаются с `.` (например, `.editorconfig`), в macOS являются скрытыми, поэтому нажмите клавиши **Command+Shift+.**, чтобы сделать файл `.editorconfig` видимым.
 
@@ -104,9 +104,7 @@ ms.locfileid: "43224095"
 
 ## <a name="editing-an-editorconfig-file"></a>Редактирование файла EditorConfig
 
-
 В файлах EditorConfig используется простой формат для задания параметров, который описывается ниже с помощью предыдущего примера:
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -137,11 +135,11 @@ csharp_new_line_before_open_brace = none
 
 ![после применения параметров editorconfig](media/editorconfig-image5.png)
 
-Дополнительные сведения о доступных параметрах EditorConfig см. в статье [Параметры соглашений о написании кода .NET в EditorConfig](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) и в разделе [Supported Properties](http://editorconfig.org/#supported-properties) (Поддерживаемые свойства) официальной документации.
+Дополнительные сведения о доступных параметрах EditorConfig см. в статье [Параметры соглашений о написании кода .NET в EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) и в разделе [Supported Properties](http://editorconfig.org/#supported-properties) (Поддерживаемые свойства) официальной документации.
 
 ## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
 
-Можно иметь несколько файлов `.editorconfig` в одном решении. Visual Studio для Mac прочитывает файлы `.editorconfig` в решении сверху вниз, добавляя и переопределяя параметры в процессе операции. Это означает, что параметры в `.editorconfig`, _ближайшие_ к файлу, который вы редактируете, имеют приоритет. Параметры берутся из файла `.editorconfig`, который находится в той же папке (если она существует), затем из файла `.editorconfig` в родительской папке (если она существует) и т. д., пока не будет найдено значение `root=true`.  
+Можно иметь несколько файлов `.editorconfig` в одном решении. Visual Studio для Mac прочитывает файлы `.editorconfig` в решении сверху вниз, добавляя и переопределяя параметры в процессе операции. Это означает, что параметры в `.editorconfig`, _ближайшие_ к файлу, который вы редактируете, имеют приоритет. Параметры берутся из файла `.editorconfig`, который находится в той же папке (если она существует), затем из файла `.editorconfig` в родительской папке (если она существует) и т. д., пока не будет найдено значение `root=true`.
 
 Чтобы к этой части базы кода _не_ применялись параметры из любых файлов `.editorconfig` более высокого уровня, добавьте свойство `root=true` в самое начало файла `.editorconfig` более низкого уровня:
 
@@ -149,3 +147,7 @@ csharp_new_line_before_open_brace = none
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Создание настраиваемых параметров редактора с помощью EditorConfig (Visual Studio в Windows)](/visualstudio/ide/create-portable-custom-editor-options)

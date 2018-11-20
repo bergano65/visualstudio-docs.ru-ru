@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fc870e53e9323b8f76cfa39b2e6f961b04e973a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825768"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294700"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Реализация абстрактного класса в Visual Studio
 
@@ -48,8 +48,8 @@ ms.locfileid: "49825768"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) .
-      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
+      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) , который отображается.
+      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
    ![Предварительный просмотр реализации класса](media/abstract-preview-cs.png)
 

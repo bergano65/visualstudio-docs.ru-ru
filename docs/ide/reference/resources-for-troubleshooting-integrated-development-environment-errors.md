@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176545"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349293"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 
 Не все сообщения об ошибках имеют отдельный соответствующий раздел справки. Если описание сообщения об ошибке не помогло решить проблему, вы можете обратиться к другим ресурсам, таким как статьи базы знаний, форумы или служба технической поддержки.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Устранение неполадок Visual Studio для Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний
 
@@ -123,3 +126,4 @@ ms.locfileid: "39176545"
 ## <a name="see-also"></a>См. также
 
 * [Устранение неполадок сети или ошибок прокси-сервера](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Устранение неполадок (Visual Studio для Mac)](/visualstudio/mac/troubleshooting)

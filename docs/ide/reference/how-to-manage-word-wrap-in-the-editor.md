@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Управление переносом слов в редакторе
-ms.date: 11/04/2016
+title: Перенос по словам
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42627023"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349118"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 
 Флажок **Перенос по словам** можно устанавливать и снимать. Если этот флажок установлен, часть длинной строки, выступающая за пределы текущей ширины окна редактора кода, отображается на следующей строке. Если этот флажок снят, например для упрощения использования нумерации строк, окно можно прокрутить вправо, чтобы увидеть окончание длинной строки.
+
+> [!NOTE]
+> Этот раздел относится только к Visual Studio в Windows. Сейчас Visual Studio для Mac не поддерживает перенос по словам.
 
 ## <a name="to-set-word-wrap-preferences"></a>Задание настроек переноса по словам
 

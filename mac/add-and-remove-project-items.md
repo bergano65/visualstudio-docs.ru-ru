@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: d7401395d817d4c07b179c0d096612469fed6291
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224332"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296298"
 ---
 # <a name="adding-and-removing-project-items"></a>Добавление и удаление элементов проекта
 
@@ -26,7 +26,6 @@ ms.locfileid: "43224332"
 
 Вы можете добавить в проект существующие файлы, щелкнув правой кнопкой мыши узел проекта и выбрав **Добавить > Добавить файлы...**. Кроме того, для добавления всей папки выберите **Добавить > Добавить существующую папку...** Отображается браузер файлов, позволяющий найти требуемый элемент для добавления.
 
-
 ## <a name="removing-items"></a>Удаление элементов
 
 Чтобы удалить элемент из текущего проекта, щелкните правой кнопкой мыши этот элемент и выберите **Удалить**
@@ -38,4 +37,8 @@ ms.locfileid: "43224332"
 ![Диалоговое окно "Удалить элемент".](media/add-and-remove-project-items-image4.png)
 
 * **Удалить** — удаляет элемент из проекта и с диска.
-* **Удалить из проекта** — удаляет элемент из проекта, но не с диска. 
+* **Удалить из проекта** — удаляет элемент из проекта, но не с диска.
+
+## <a name="see-also"></a>См. также
+
+* [Решения и проекты в Visual Studio (в Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

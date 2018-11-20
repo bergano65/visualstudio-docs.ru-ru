@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627187"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349079"
 ---
 # <a name="features-of-the-code-editor"></a>Возможности редактора кода
 
 Редактор Visual Studio предоставляет множество возможностей, облегчающих написание кода и текста, а также управление им. Используя структуру, вы можете разворачивать и сворачивать различные блоки кода. Получить дополнительные сведения о коде можно с помощью технологии IntelliSense, окна **Обозреватель объектов** и иерархии вызовов. Для поиска в коде можно использовать такие функции, как **Перейти**, **Перейти к определению** и **Найти все ссылки**. Вставлять блоки кода можно с помощью фрагментов кода. Код также можно создавать с помощью функций, таких как **Создание в результате использования**. Если вы никогда не работали в редакторе Visual Studio, см. краткий обзор в разделе [Редактирование кода](https://visualstudio.microsoft.com/vs/features/ide/).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Редактор исходного кода (Visual Studio для Mac)](/visualstudio/mac/source-editor).
 
 Код можно просматривать различными способами. По умолчанию в **обозревателе решений** код упорядочен по файлам. Чтобы просмотреть код, упорядоченный по классам, можно выбрать вкладку **Представление классов** в нижней части окна.
 
@@ -87,6 +90,7 @@ ms.locfileid: "42627187"
 
 ## <a name="see-also"></a>См. также
 
+- [Редактор исходного кода (Visual Studio для Mac)](/visualstudio/mac/source-editor)
 - [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
 - [Начало работы с C++ в Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Начало работы с C# и ASP.NET в Visual Studio](../ide/tutorial-csharp-aspnet-core.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99d9d4571b2e2842124c9b5d5413e5b59905fa2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923047"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295781"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Тестирование библиотеки DLL на Visual C++
 
@@ -46,7 +46,7 @@ ms.locfileid: "49923047"
 
     -   Тестовые методы группируются в классы с помощью `TEST_CLASS(YourClassName){...}`.
 
-         Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) в библиотеке MSDN.
+         Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
 
