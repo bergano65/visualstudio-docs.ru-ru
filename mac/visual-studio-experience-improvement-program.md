@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224449"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294478"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
 
-Программа улучшения качества программного обеспечения Visual Studio (VSCEIP) помогает специалистам Майкрософт совершенствовать Visual Studio для Mac. Эта программа собирает сведения о компьютерном оборудовании и использовании Visual Studio для Mac, не прерывая работу пользователей на компьютере. Собранные сведения помогают корпорации Майкрософт понять, какие функции нуждаются в улучшении. В этом документе описано, как принять участие в программе VSCEIP или отказаться от участия.
+Программа улучшения качества программного обеспечения Visual Studio (VSCEIP) помогает специалистам Майкрософт совершенствовать Visual Studio для Mac. Эта программа собирает сведения о компьютерном оборудовании и использовании Visual Studio для Mac, не прерывая работу пользователей на компьютере. Собранные сведения помогают корпорации Майкрософт понять, какие функции нуждаются в улучшении. Эта статья описывает, как принять участие в программе VSCEIP или отказаться от участия.
 
-Для получения информации о собранных, обработанных или переданных VSCEIP сведениях см. [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement).  
+Для получения информации о собранных, обработанных или переданных VSCEIP сведениях см. [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Выбор программы улучшения качества программного обеспечения Visual Studio и управление
 
@@ -34,6 +34,8 @@ ms.locfileid: "43224449"
 
 ## <a name="see-also"></a>См. также
 
+* [Программа улучшения качества программного обеспечения (Visual Studio в Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
+* [Созданные системой журналы, собираемые Visual Studio (в Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Как сообщить о проблеме в Visual Studio для Mac](report-a-problem.md)
 * [Сообщество разработчиков Visual Studio для Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
 * [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)

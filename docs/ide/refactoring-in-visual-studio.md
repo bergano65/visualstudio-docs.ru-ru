@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447691"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348960"
 ---
 # <a name="refactor-code"></a>Рефакторинг кода
 
@@ -32,3 +32,4 @@ ms.locfileid: "34447691"
 - [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Просмотр изменений](../ide/preview-changes.md)
+- [Рефакторинг (Visual Studio для Mac)](/visualstudio/mac/refactoring)

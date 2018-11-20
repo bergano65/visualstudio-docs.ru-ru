@@ -1,17 +1,17 @@
 ---
-title: Устранение неполадок Visual Studio для Mac
+title: Устранение неполадок
 description: Распространенные проблемы, возникающие у пользователей Visual Studio для Mac, и способы их разрешения.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224309"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294647"
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -27,7 +27,7 @@ ms.locfileid: "43224309"
 
 ![Просмотр дополнительных сведений об исключении](media/troubleshooting-image2.png)
 
-Отображается диалоговое окно **Показать подробности** с дополнительными сведениями об исключении:
+Отображается диалоговое окно **Показать подробности** с дополнительными сведениями об исключении.
 
 ![Диалоговое окно "Показать подробности"](media/troubleshooting-image3.png)
 
@@ -46,3 +46,7 @@ ms.locfileid: "43224309"
 11. Кнопка для копирования выходных данных `exception.ToString()` в буфер обмена.
 
 Обратите внимание, что некоторые из этих разделов видны только в том случае, когда исключение имеет внутреннее исключение.
+
+## <a name="see-also"></a>См. также
+
+- [Ресурсы для устранения неполадок интегрированной среды разработки (Visual Studio для Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220857"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348947"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Сочетания клавиш в Visual Studio
 
@@ -22,6 +22,9 @@ ms.locfileid: "51220857"
 
 > [!TIP]
 > Здесь перечислены лишь некоторые из доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Распространенные сочетания клавиш в Visual Studio для Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Управление окнами
 
@@ -136,4 +139,5 @@ ms.locfileid: "51220857"
 
 - [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)
 - [Сочетания клавиш (Azure DevOps Services и TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Блог с советами и рекомендации по Visual Studio](https://blogs.msdn.com/b/zainnab)
+- [Блог с советами и рекомендации по Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Распространенные сочетания клавиш в Visual Studio для Mac](/visualstudio/mac/keyboard-shortcuts)

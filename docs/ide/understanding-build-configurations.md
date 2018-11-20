@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901194"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349053"
 ---
 # <a name="understand-build-configurations"></a>Общие сведения о конфигурациях сборок
 
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка** > **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Конфигурации сборки в Visual Studio для Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Дополнительные сведения см. в разделе [Управление конфигурациями сборок с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ ms.locfileid: "49901194"
 
 > [!NOTE]
 > При определении новой конфигурации решения и установке флажка **Создать новые конфигурации проектов** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически назначает новую конфигурацию всем проектам. Аналогичным образом, при определении новой платформы решения и установке флажка **Создать новые платформы проектов** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически назначает новую платформу всем проектам. Кроме того, если вы добавите проект, предназначенный для новой платформы, Visual Studio добавит эту платформу в список платформ решений и назначит ее всем проектам.
-> 
+>
 > Вы по-прежнему можете изменять параметры для каждого проекта.
 
 Активная конфигурация решения также предоставляет контекст для IDE. Например, если вы работаете над проектом и конфигурация указывает, что он будет создан для мобильного устройства, на **панели инструментов** отобразятся только элементы, которые можно использовать в проекте мобильного устройства.
@@ -92,3 +95,4 @@ ms.locfileid: "49901194"
 - [Проекты и решения](../ide/solutions-and-projects-in-visual-studio.md)
 - [Образец построения C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)
+- [Конфигурации сборки (Visual Studio для Mac)](/visualstudio/mac/configurations)

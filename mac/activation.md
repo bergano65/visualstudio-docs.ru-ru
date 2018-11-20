@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224171"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294660"
 ---
 # <a name="enable-subscription"></a>Активация подписки
 
@@ -43,3 +43,7 @@ Visual Studio для Mac предоставляет три разных уров
 > Чтобы активировать подписку Visual Studio 2017 для Mac Professional или Enterprise, требуется подключение к Интернету при входе.
 
 Если вы приобрели Visual Studio Enterprise 2017 для Mac для компьютеров без подключения к Интернету, то можете продолжить использование Visual Studio для Mac без активации, однако Xamarin Inspector, Xamarin Profiler и функции внедренных сборок будут недоступны.
+
+## <a name="see-also"></a>См. также
+
+- [Вход в Visual Studio (в Windows)](/visualstudio/ide/signing-in-to-visual-studio)

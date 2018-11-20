@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934617"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294998"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
 ## <a name="setup"></a>Установка
 
@@ -86,7 +86,6 @@ ms.locfileid: "49934617"
 > [!NOTE]
 > Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://visualstudio.microsoft.com/vs/).
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
 
 Для установки Visual Studio для Mac в среде, защищенной брандмауэром, необходимо сделать доступными ряд конечных точек, чтобы разрешить скачивание необходимых средств и обновлений ПО.
@@ -104,7 +103,6 @@ ms.locfileid: "49934617"
 1. [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Подготовка устройства](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (для запуска приложения на устройстве).
 
-
 ### <a name="android"></a>Android
 
 1. [Использование диспетчера пакетов SDK Android для Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +112,7 @@ ms.locfileid: "49934617"
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
 
 Другие рабочие нагрузки описаны [на этой странице](workloads.md).
+
+## <a name="see-also"></a>См. также
+
+- [Установка Visual Studio 2017 (в Windows)](/visualstudio/install/install-visual-studio)

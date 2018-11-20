@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064854"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349378"
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
@@ -29,6 +29,9 @@ ms.locfileid: "34064854"
 - [игнорирование](../code-quality/use-roslyn-analyzers.md) нарушений правил анализа кода;
 - применение рефакторинга (например, [встраивание временной переменной](../ide/reference/inline-temporary-variable.md));
 - создание кода (например, [представление локальной переменной](../ide/reference/introduce-local-variable.md)).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Рефакторинг кода (Visual Studio для Mac)](/visualstudio/mac/refactoring).
 
 Быстрые действия можно применять, используя значок лампочки ![значок лампочки](media/light-bulb-icon.png), значок отвертки ![значок отвертки](media/screwdriver-icon.png) или сочетание клавиш **CTRL**+**.** когда курсор находится на строке кода, для которой доступно действие. Лампочка, сигнализирующая об ошибке, ![значок лампочки ошибки](media/error-light-bulb-icon.png) отображается, если есть красная волнистая линия, указывающая на ошибку, и у Visual Studio есть решение этой ошибки.
 
@@ -60,3 +63,4 @@ ms.locfileid: "34064854"
 - [Распространенные быстрые действия](../ide/common-quick-actions.md)
 - [Стили кода и быстрые действия](../ide/code-styles-and-quick-actions.md)
 - [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Рефакторинг (Visual Studio для Mac)](/visualstudio/mac/refactoring)

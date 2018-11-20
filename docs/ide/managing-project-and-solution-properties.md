@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746316"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349248"
 ---
 # <a name="manage-project-and-solution-properties"></a>Управление свойствами проектов и решений
 
@@ -25,6 +25,9 @@ ms.locfileid: "34746316"
 Проекты .NET также могут содержать узел свойств в дереве проекта.
 
 ![Узел свойств в дереве обозревателя решений](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Управление свойствами решения и проекта (Visual Studio для Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Свойства проекта
 
@@ -56,3 +59,4 @@ ms.locfileid: "34746316"
 ## <a name="see-also"></a>См. также
 
 - [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Управление свойствами решения и проекта (Visual Studio для Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

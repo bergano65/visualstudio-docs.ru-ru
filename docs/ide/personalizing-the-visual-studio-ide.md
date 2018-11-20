@@ -9,16 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064549"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348700"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 
 Доступны разные способы индивидуальной настройки Visual Studio в соответствии с личным стилем и требованиями к разработке. Целый ряд параметров можно использовать в разных экземплярах Visual Studio &mdash; см. статью [Синхронизация параметров в Visual Studio](../ide/synchronized-settings-in-visual-studio.md). Ниже кратко описываются эти способы, а также приводятся ссылки на ресурсы с дополнительными сведениями.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Настройка интегрированной среды разработки Visual Studio для Mac](/visualstudio/mac/customizing-the-ide).
 
 ## <a name="general-environment-options"></a>Общие параметры среды
 
@@ -61,3 +64,4 @@ ms.locfileid: "32064549"
 
 - [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
 - [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Настройка интегрированной среды разработки Visual Studio для Mac](/visualstudio/mac/customizing-the-ide)

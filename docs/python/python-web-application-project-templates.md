@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219852"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349340"
 ---
 # <a name="python-web-application-project-templates"></a>Шаблоны проекта веб-приложений Python
 
 Python в Visual Studio поддерживает разработку веб-проектов на платформах Bottle, Django и Flask с помощью шаблонов проектов и средства запуска отладки, которое можно настроить для работы с различными платформами. Эти шаблоны включают файл *requirements.txt* для объявления необходимых зависимостей. При создании проекта на основе одного из таких шаблонов в Visual Studio отобразится запрос на установку этих пакетов (см. раздел [Установка необходимых компонентов для проекта](#install-project-requirements) далее в этой статье).
 
-Для других платформ, например Pyramid, также можно использовать универсальный шаблон **веб-проекта**. В этом случае для шаблона не предусмотрена установка каких-либо платформ. Вместо этого в окружении проекта устанавливаются необходимые пакеты (см. статью об [управлении окружениями Python](managing-python-environments-in-visual-studio.md)).
+Для других платформ, например Pyramid, также можно использовать универсальный шаблон **веб-проекта**. В этом случае для шаблона не предусмотрена установка каких-либо платформ. Вместо этого в окружении проекта устанавливаются необходимые пакеты (см. статью о [вкладке "Пакет" окна окружений Python](python-environments-window-tab-reference.md#packages-tab)).
 
 Сведения о развертывании веб-приложения Python в Azure см. в статье [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

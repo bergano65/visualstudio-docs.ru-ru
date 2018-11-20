@@ -1,5 +1,5 @@
 ---
-title: Построение и очистка проектов и решений в Visual Studio
+title: Сборка и очистка проектов и решений
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918534"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349274"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Создание и очистка проектов и решений в Visual Studio
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Создание и очистка проектов и решений в Visual Studio
+
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Создание и очистка проектов и решений в Visual Studio для Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
 > Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, например на **Общие** или **Visual C++**, выберите **Сервис** > **Импорт и экспорт параметров**, а затем щелкните **Сбросить все параметры**.
@@ -46,7 +50,7 @@ ms.locfileid: "31918534"
     -   Выберите **Собрать** или **Собрать решение**, чтобы скомпилировать только те файлы и компоненты проекта, которые были изменены с момента последней сборки.
 
         > [!NOTE]
-        >  Если решение содержит несколько проектов, команда **Собрать** меняется на **Собрать решение**.
+        > Если решение содержит несколько проектов, команда **Собрать** меняется на **Собрать решение**.
 
     -   Выберите **Перестроить решение**, чтобы очистить решение, а затем собрать все файлы и компоненты проекта.
 
@@ -118,3 +122,4 @@ ms.locfileid: "31918534"
 - [Справочные сведения о сборке C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)
 - [Проекты и решения](../ide/solutions-and-projects-in-visual-studio.md)
+- [Создание и очистка проектов и решений (Visual Studio для Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)
