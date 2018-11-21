@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671148"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257047"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Просмотр дизассемблированного кода в отладчике Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Просмотр дизассемблированного кода в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 
 **Дизассемблированный код** окне отображается код сборки, соответствующий инструкциям, созданным компилятором. Если выполняется отладка управляемого кода, эти инструкции ассемблера соответствуют объекту коду, созданному компилятором Just-in-Time (JIT), а не Microsoft промежуточный язык (MSIL) созданного компилятором Visual Studio.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "50671148"
 
 В дополнение к инструкциям ассемблера **Дизассемблированный код** окна могут отображаться следующие сведения:  
   
-- Адреса в памяти, где располагается каждая из инструкций. Для собственных приложений это фактические адреса в памяти. В Visual Basic C#, или для управляемого кода, это смещение от начала функции.  
+- Адреса в памяти, где располагается каждая из инструкций. Для собственных приложений это фактические адреса в памяти. Для Visual Basic или C#, это смещение от начала функции.  
   
 - Исходный код, из которого получается код сборки.  
   

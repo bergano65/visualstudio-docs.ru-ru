@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826718"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257216"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Проверить значения переменных в окнах "Видимые" и "Локальные"
 
 **"Видимые"** и **"Локальные"** windows отображение значений переменных при отладке. Windows доступны только во время сеанса отладки. **"Видимые"** окне отображаются переменные, используемые вокруг текущей точкой останова. **"Локальные"** окне отображаются переменные, определенные в локальной области, которой обычно является текущей функции или метода. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
+
+ **"Видимые"** окно доступно для C#, код Visual Basic, C++ и Python, но не для JavaScript или F#.
   
 Чтобы открыть **"Видимые"** окне во время отладки, выберите **Отладка** > **Windows** > **"Видимые"**, или нажмите сочетание клавиш **Ctrl**+**Alt**+**V** > **объект**.  
 
@@ -71,9 +73,7 @@ ms.locfileid: "51826718"
 
 ![Расположение панели отладки](../debugger/media/debuglocationtoolbar.png "инструментов Место отладки")
 
-## <a name="bkmk_whatvariables"></a> Переменные в окне "Видимые"
-
- **"Видимые"** окно доступно для C#, кода Visual Basic и C++, но не для JavaScript или F#.
+## <a name="bkmk_whatvariables"></a> Переменные в окне "Видимые" (C#, C++, Visual Basic, Python)
 
  Других языков программирования отображать различные переменные в **"Видимые"** окна.
 
