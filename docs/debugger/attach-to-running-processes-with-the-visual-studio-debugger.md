@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843266"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257346"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 Отладчик Visual Studio можно подключить к запущенному процессу на локальном или удаленном компьютере. Запустив процесс, выберите **Отладка** > **присоединение к процессу** или нажмите клавишу **Ctrl**+**Alt** + **P** в Visual Studio и использовать **присоединение к процессу** диалоговое окно, чтобы подключить отладчик к процессу.
@@ -153,7 +153,7 @@ ms.locfileid: "49843266"
 
 Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) компоновщика.
 
-Для отладки скриптов на стороне клиента необходимо включить отладку скриптов в браузере. Отладка клиентского сценария в Chrome, выберите **Webkit** как тип кода и в зависимости от типа приложения, может потребоваться запуск браузера в режиме отладки (тип `chrome.exe --remote-debugging-port=9222` из командной строки).
+Для отладки скриптов на стороне клиента необходимо включить отладку скриптов в браузере. Отладка клиентского сценария в Chrome, выберите **Webkit** как тип кода и в зависимости от типа приложения, может потребоваться закрыть все экземпляры Chrome и запустите браузер в режиме отладки (тип `chrome.exe --remote-debugging-port=9222` из командной строки).
 
 Чтобы быстро выбрать запущенный процесс для присоединения к, в Visual Studio введите **Ctrl**+**Alt**+**P**, а затем введите первую букву Имя процесса.
 

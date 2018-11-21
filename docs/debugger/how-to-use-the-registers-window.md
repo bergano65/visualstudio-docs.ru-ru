@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551851"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257177"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Просмотр значений зарегистрировать и использовать окно Регистры в отладчике Visual Studio
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Просмотр значений зарегистрировать и использовать окно Регистры в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 Окно "Регистры" доступно только в том случае, если включена отладка на уровне адреса в **параметры** диалоговом окне **Отладка** узел, **Общие** категории.  
   
  **Регистрирует** окне отображается содержимое регистров. Если вы храните **регистрирует** окно открыто при пошаговой отладке программы, вы увидите изменение значений регистров по ходу выполнения. Значения, которые недавно изменились, отображаются красным цветом. Значения регистров можно изменять. Дополнительные сведения см. в разделе [как: изменение значения зарегистрировать](../debugger/how-to-edit-a-register-value.md).  
