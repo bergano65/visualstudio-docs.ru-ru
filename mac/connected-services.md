@@ -4,13 +4,13 @@ description: Добавление хранилища данных Azure, про�
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2018
-ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.date: 11/06/2018
+ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295180"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948950"
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство по подключенным службам
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74f5275288cdba35d3a70f4a7813c800e4327d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a97874ae1267677c5055e84650a839068479fc10
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704724"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948599"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Задает язык по умолчанию, используемый для текста, валюты и других значений в интегрированной среде разработки (IDE).
@@ -65,6 +65,6 @@ devenv /LCID 1033
 
 ## <a name="see-also"></a>См. также
 
-- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/international-settings-environment-options-dialog-box.md)
 - [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)
