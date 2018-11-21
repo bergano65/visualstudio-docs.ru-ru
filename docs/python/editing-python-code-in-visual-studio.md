@@ -1,7 +1,7 @@
 ---
 title: Редактирование кода Python
 description: Редактор кода Python в Visual Studio предоставляет возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774769"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001273"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
