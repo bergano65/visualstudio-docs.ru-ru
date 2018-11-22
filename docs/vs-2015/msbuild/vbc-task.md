@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143428"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281866"
 ---
 # <a name="vbc-task"></a>Задача Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "50143428"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Vbc` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Необязательный параметр `String[]` .<br /><br /> Задает дополнительные папки, в которых выполняется поиск сборок, указанных в атрибуте References.|  
 |`AddModules`|Необязательный параметр `String[]` .<br /><br /> Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Этот параметр соответствует параметру [/addmodule](http://msdn.microsoft.com/library/fb4b89d4-4926-4f20-868d-427fa28497b2) компилятора vbc.exe.|  
