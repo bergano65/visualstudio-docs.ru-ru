@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967120"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281827"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 
@@ -136,7 +136,7 @@ ms.locfileid: "50967120"
 
 Чтобы указать, что доступные только для чтения файлы следует перезаписывать, вставьте такое свойство:
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 Если не настроить шаг постобработки, при перезаписи файла в список ошибок будет записываться информация об ошибке.
 
