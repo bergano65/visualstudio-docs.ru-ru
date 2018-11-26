@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612679"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257372"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Принципы отладки для начинающих
 
@@ -80,7 +80,7 @@ ms.locfileid: "45612679"
 
 1. Для этого вам потребуется установленная среда Visual Studio с рабочими нагрузками **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core** (в зависимости от того, приложение какого типа вы создаете).
 
-    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
 
     Если у вас уже установлена среда Visual Studio без нужных рабочих нагрузок, щелкните **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** (или **Кроссплатформенная разработка .NET Core**), а затем щелкните **Изменить**.
 
@@ -325,11 +325,11 @@ ms.locfileid: "45612679"
 * Проверьте, выполняет ли ваше приложение код, который вы ожидаете. (Так, в примере приложения должна была выполняться инструкция switch, устанавливающая тип галактики Irregular, однако нужный код был пропущен из-за опечатки.)
 
 > [!TIP]
-> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md).
+> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Из этой статьи вы узнали общие принципы отладки приложений. Теперь вы можете приступить к знакомству с процессом отладки в Visual Studio.
+Из этой статьи вы узнали общие принципы отладки приложений. Теперь вы можете приступить к изучению других возможностей отладчика.
 
 > [!div class="nextstepaction"]
 > [Сведения об отладке с помощью Visual Studio](../debugger/getting-started-with-the-debugger.md)

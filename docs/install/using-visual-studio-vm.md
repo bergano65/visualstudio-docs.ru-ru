@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000127"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001221"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -34,14 +34,13 @@ ms.locfileid: "51000127"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 — последняя версия (15.8)                    |    Enterprise, Community     |      Версия 15.8.7     |
-| Visual Studio 2017: последняя предварительная версия (версия 15.9, предварительная версия 5) |    Enterprise, Community     |      Версия 15.9       |
+| Visual Studio 2017 — последняя версия (15.9)                    |    Enterprise, Community     |      Версия 15.9.0     |
 |         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.18    |
 |   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01  |
 |         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек |
 
 > [!NOTE]
-> В соответствии с политикой обслуживания корпорации Майкрософт обслуживание изначально выпущенной версии Visual Studio 2015 (RTW) завершено. Обновление 3 — это последняя версия семейства продуктов Visual Studio 2015.
+> В соответствии с политикой обслуживания корпорации Майкрософт обслуживание изначально выпущенной версии Visual Studio 2015 (RTW) завершено. Обновление 3 — это последняя версия семейства продуктов Visual Studio 2015.  Кроме того, так как выпущена Visual Studio 2017 версии 15.9, мы прекратили использовать образы "последней предварительной версии", включавшие в себя предварительные версии для версии 15.9.
 
 Дополнительные сведения см. в статье [Обслуживание продуктов Visual Studio и Team Foundation Server](/visualstudio/productinfo/vs-servicing-vs).
 

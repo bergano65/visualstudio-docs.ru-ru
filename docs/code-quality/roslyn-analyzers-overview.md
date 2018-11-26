@@ -1,5 +1,5 @@
 ---
-title: Анализаторы Roslyn в Visual Studio
+title: Анализ кода с помощью анализаторов Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511426"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948846"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Обзор анализаторов на платформе .NET Compiler Platform
 
-Visual Studio 2017 содержит встроенный набор анализаторов .NET Compiler Platform, которые анализируют код на C# или Visual Basic при его наборе. Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet для отдельных проектов. Анализаторы проверяют стиль кода, качество и удобство поддержки кода, структуру кода и другие аспекты.
+Visual Studio 2017 содержит встроенный набор анализаторов .NET Compiler Platform, которые анализируют код на C# или Visual Basic при его наборе. Анализаторы проверяют стиль кода, качество и удобство поддержки кода, структуру кода и другие аспекты. Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или в виде пакетов NuGet для отдельных проектов.
 
 Если анализатор обнаруживает нарушения правил, они помечаются как в редакторе кода (*волнистая линия* под соответствующим кодом), так и в **списке ошибок**.
 
