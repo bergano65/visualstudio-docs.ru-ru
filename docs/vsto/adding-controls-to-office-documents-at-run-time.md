@@ -20,17 +20,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], adding at runtime
 - helper methods [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941182"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305641"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Добавление элементов управления в документы Office во время выполнения
   Элементы управления добавляются в документ Microsoft Office Word и книги Microsoft Office Excel во время выполнения. Кроме того, их можно удалить во время выполнения. Элементы управления, которые можно добавить или удалить во время выполнения, называются *динамическими элементами управления*.  
