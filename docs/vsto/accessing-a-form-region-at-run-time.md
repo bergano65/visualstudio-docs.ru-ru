@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Inspectors [Office development in Visual Studio]
 - Explorers [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], accessing at runtime
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0cdea460b2a50819aff3c300b8510ffd577c8f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262074"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304484"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Доступ к области формы во время выполнения
 
@@ -30,7 +30,7 @@ ms.locfileid: "34262074"
 |----------------|  
 |Сведения, приведенные в данном разделе, относятся только к следующим типам проектов и версиям Microsoft Office. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Тип проекта**<br /><br /> -Проекты надстроек VSTO<br /><br /> **Версия Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
 
- Используйте класс `Globals` для доступа к областям форм из любого места в проекте Outlook. Дополнительные сведения о `Globals` см. в описании [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Используйте класс `Globals` для доступа к областям форм из любого места в проекте Outlook. Дополнительные сведения о `Globals` , представлена в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
 
@@ -42,7 +42,7 @@ ms.locfileid: "34262074"
  [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
  [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]  
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Доступа к областям форм, отображаемые в конкретным окном проводника Outlook  
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Доступа к областям форм, которые отображаются в отдельного окна проводника Outlook  
  Для доступа ко всем областям форм, которые отображаются в определенном проводнике Outlook, вызовите свойство `FormRegions` класса `Globals` и передайте в объект <xref:Microsoft.Office.Interop.Outlook.Explorer> , представляющий проводник.  
 
  В следующем примере извлекается коллекция областей форм в проводнике, в котором в текущий момент находится фокус. Затем производится доступ к области формы в коллекции с именем `formRegion1` и задается текст, отображаемый в текстовом поле для `Hello World`.  
@@ -50,7 +50,7 @@ ms.locfileid: "34262074"
  [!code-vb[Trin_Outlook_FR_Access#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#3)]
  [!code-csharp[Trin_Outlook_FR_Access#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#3)]  
 
-## <a name="access-all-form-regions"></a>Доступа ко всем областям форм  
+## <a name="access-all-form-regions"></a>Доступа ко всем областям формы  
  Для доступа ко всем областям форм, отображаемым во всех проводниках и инспекторах, вызовите свойство `FormRegions` класса `Globals` .  
 
  В следующем примере извлекается коллекция областей форм во всех проводниках и всех инспекторах. Затем производится доступ к области формы с именем `formRegion1` и задается текст, отображаемый в текстовом поле для `Hello World`.  
@@ -58,7 +58,7 @@ ms.locfileid: "34262074"
  [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]  
 
-## <a name="access-controls-on-a-form-region"></a>Элементы управления доступом в области формы  
+## <a name="access-controls-on-a-form-region"></a>Элементы управления доступом к области формы  
  Для доступа к элементам управления в области формы с помощью класса `Globals` необходимо сделать эти элементы управления доступными для кода вне файла кода области формы.  
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>Области формы, созданные в конструкторе областей формы  
@@ -71,17 +71,17 @@ ms.locfileid: "34262074"
 
  Для включения доступа к элементу управления извне файла кода области формы создайте свойство в файле кода области формы для получения этого элемента управления.  
 
- Дополнительные сведения о создании свойств в C# см. в разделе [как: объявление и использование прочитать запись свойств &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Дополнительные сведения о создании свойств в C#, см. в разделе [как: объявление и использование прочитать запись свойств &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Дополнительные сведения о создании свойств в Visual Basic см. в разделе [как: создание свойства (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Дополнительные сведения о создании свойств в Visual Basic, см. в разделе [как: создать свойство (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>См. также  
  [Рекомендации для создания областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Как: Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Пользовательские действия в областях форм Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
+ [Практическое: Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Пользовательские действия в областях формы Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Пошаговое руководство: Импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Как: запретить отображение области формы Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Практическое: запретить отображение области формы Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)  
