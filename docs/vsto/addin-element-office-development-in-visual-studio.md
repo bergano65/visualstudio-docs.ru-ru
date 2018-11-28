@@ -1,5 +1,5 @@
 ---
-title: '&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;ADDIN&gt; элемент (Разработка решений Office в Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262386"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304471"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)
-  **Addin** элемент `vstav3` пространство имен содержит информацию, предназначенную для надстройки Microsoft Office, VSTO и настроек на уровне документа, разработанных с помощью Visual Studio.  
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;ADDIN&gt; элемент (Разработка решений Office в Visual Studio)
+  **Addin** элемент `vstav3` пространство имен содержит информацию, предназначенную для надстройки Microsoft Office, VSTO и настроек уровня документа, разработанные с помощью Visual Studio.  
 
 ## <a name="syntax"></a>Синтаксис  
 
@@ -52,7 +52,7 @@ ms.locfileid: "34262386"
 ```  
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- **Addin** элемент `vstav3` пространство имен содержит сведения о решении Microsoft Office и приложении Microsoft Office. Этот элемент должен принадлежать следующему пространству имен: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Дочерние элементы также должны быть в этом пространство имен.  
+ **Addin** элемент `vstav3` пространство имен содержит сведения о решений Office и приложении Microsoft Office. Этот элемент должен принадлежать следующему пространству имен: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Дочерние элементы также должны быть в этом пространство имен.  
 
  У элемента `addin` нет атрибутов.  
 
@@ -72,8 +72,8 @@ ms.locfileid: "34262386"
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
 
-### <a name="description"></a>Описание  
- В следующем примере кода показан **addin** элемент в решении Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Описание:  
+ В следующем примере кода показано **addin** элемент в решении Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Код  
 
@@ -134,10 +134,10 @@ ms.locfileid: "34262386"
 </vstav3:addIn>  
 ```  
 
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
 
-### <a name="description"></a>Описание  
- В следующем примере кода показан **addin** элемент в решении Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Описание:  
+ В следующем примере кода показано **addin** элемент в решении Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Код  
 
