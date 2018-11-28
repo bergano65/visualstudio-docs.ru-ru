@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945900"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389420"
 ---
 # <a name="setting-language-specific-editor-options"></a>Настройка параметров языка редактора
 
@@ -58,4 +58,4 @@ Visual Studio предлагает различные параметры тек�
 
 - [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Создание переносимых настраиваемых параметров редактора с EditorConfig](../../ide/create-portable-custom-editor-options.md)
-- [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)&mdash;Ссылки на разделы с описанием порядка настройки параметров, настраиваемых сочетаний клавиш и других функций интегрированной среды разработки (IDE).
+- [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

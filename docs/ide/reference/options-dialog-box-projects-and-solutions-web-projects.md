@@ -12,21 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671246"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389368"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 
 Задает веб-сервер, который будут использовать веб-проекты для разработки в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Чтобы получить доступ к этим параметрам, выберите **Сервис > Параметры**, разверните **Проекты и решения** и выберите пункт **Веб-проекты**.
 
 По умолчанию при запуске веб-проекта в Visual Studio используется Visual Studio Development Server. Дополнительные сведения см. в разделе [Веб-серверы в Visual Studio для веб-проектов ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
-
-> [!NOTE]
-> Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Эта страница справки была написана с учетом **веб-параметров**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Параметры
 

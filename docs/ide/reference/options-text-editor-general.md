@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219163"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388805"
 ---
 # <a name="options-text-editor-general"></a>Параметры, текстовый редактор, общие
 
 Это диалоговое окно позволяет изменять глобальные параметры для редактора кода и текста Visual Studio. Для вывода этого диалогового окна выберите пункт **Параметры** в меню **Сервис**, разверните папку **Текстовый редактор**, а затем щелкните **Общие**.
-
-> [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Параметры
 

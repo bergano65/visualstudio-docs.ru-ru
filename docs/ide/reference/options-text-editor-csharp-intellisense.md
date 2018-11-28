@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672489"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389267"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 
 Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для C#. Для доступа к этой странице параметров выберите **Сервис** > **Параметры** и затем **Текстовый редактор** > **C#** > **IntelliSense**.
-
-> [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 Страница **IntelliSense** содержит следующие параметры:
 
@@ -86,7 +83,7 @@ ms.locfileid: "50672489"
 
 ## <a name="show-name-suggestions"></a>Показывать варианты имен
 
-   Выполняет автоматическое завершение имени объекта для элементов, которые вы выбирали недавно. 
+Выполняет автоматическое завершение имени объекта для элементов, которые вы выбирали недавно.
 
 ## <a name="see-also"></a>См. также
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177715"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388534"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
 
@@ -31,12 +31,7 @@ ms.locfileid: "39177715"
 
 -   при нажатии **CTRL**+**щелчок левой кнопкой мыши** предпринимается попытка открыть указанный веб-сайт. По умолчанию веб-сайт отображается во внутреннем веб-браузере.
 
-> [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Процедура
-
-### <a name="to-display-urls-as-links"></a>Отображение URL-адресов как ссылок
+## <a name="display-urls-as-links"></a>Отображение URL-адресов как ссылок
 
 1.  В меню **Сервис** выберите пункт **Параметры**.
 

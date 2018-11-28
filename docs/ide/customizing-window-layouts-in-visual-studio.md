@@ -1,5 +1,5 @@
 ---
-title: Настройка макетов окон в Visual Studio
+title: Настройка макетов окон
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746849"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389647"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Настройка макетов окон в Visual Studio
 
@@ -81,9 +81,6 @@ ms.locfileid: "34746849"
 -   Сброс расположения окон до макета по умолчанию или до сохраненного настраиваемого макета.
 
 Окна инструментов и документов могут быть упорядочены путем перетаскивания, с помощью команд меню **Окно** и щелчка строки заголовка окна правой кнопкой мыши.
-
-> [!NOTE]
-> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="dock-windows"></a>Закрепление окон
 
