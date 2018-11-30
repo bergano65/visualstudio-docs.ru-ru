@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348700"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388729"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 
-Доступны разные способы индивидуальной настройки Visual Studio в соответствии с личным стилем и требованиями к разработке. Целый ряд параметров можно использовать в разных экземплярах Visual Studio &mdash; см. статью [Синхронизация параметров в Visual Studio](../ide/synchronized-settings-in-visual-studio.md). Ниже кратко описываются эти способы, а также приводятся ссылки на ресурсы с дополнительными сведениями.
+Доступны разные способы индивидуальной настройки Visual Studio в соответствии с личным стилем и требованиями к разработке. Целый ряд параметров можно использовать в разных экземплярах Visual Studio &mdash; см. статью [Синхронизация параметров в Visual Studio](../ide/synchronized-settings-in-visual-studio.md). В этой статье кратко описываются эти способы, а также приводятся ссылки на ресурсы с дополнительными сведениями.
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Настройка интегрированной среды разработки Visual Studio для Mac](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Параметры по умолчанию
+
+Можно выбрать заданную по умолчанию коллекцию параметров, которая оптимизирует Visual Studio для вашего типа разработки. Дополнительные сведения см. в статье [Параметры среды](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Общие параметры среды
 
@@ -62,6 +66,7 @@ ms.locfileid: "51348700"
 
 ## <a name="see-also"></a>См. также
 
+- [Параметры среды](environment-settings.md)
 - [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
 - [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Настройка интегрированной среды разработки Visual Studio для Mac](/visualstudio/mac/customizing-the-ide)

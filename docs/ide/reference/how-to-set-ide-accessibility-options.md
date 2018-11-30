@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909800"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388430"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Практическое руководство. Настройка параметров специальных возможностей в интегрированной среде разработки
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909800"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] содержит функции, которые упрощают работу для людей с нарушениями зрения, а также для пользователей с ограниченной подвижностью. Например, они позволяют изменять размер и цвет текста в редакторах, размер текста и кнопок на панелях инструментов и включать автозавершение для методов и параметров.
 
- Кроме того, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает раскладки клавиатуры по Двораку, делающие наиболее часто вводимые символы более доступным. Вы также можете настроить сочетания клавиш по умолчанию, доступные в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Определение и настройка сочетаний клавиш в Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Кроме того, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает раскладки клавиатуры по Двораку, делающие наиболее часто вводимые символы более доступным. Вы также можете настроить сочетания клавиш по умолчанию, доступные в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Определение и настройка сочетаний клавиш в Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Редакторы, диалоговые окна и окна инструментов
 

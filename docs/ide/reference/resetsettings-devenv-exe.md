@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948073"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388677"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ ms.locfileid: "51948073"
 Параметры по умолчанию определяются по профилю, который был выбран при первом запуске Visual Studio.
 
 > [!TIP]
-> Дополнительные сведения о сбросе параметров с помощью интегрированной среды разработки (IDE) см. в разделе [Сброс параметров](../synchronized-settings-in-visual-studio.md#reset-settings).
+> Дополнительные сведения о сбросе параметров с помощью интегрированной среды разработки (IDE) см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>См. также
 
-- [Сброс параметров](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [Параметры среды](../environment-settings.md)
 - [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
