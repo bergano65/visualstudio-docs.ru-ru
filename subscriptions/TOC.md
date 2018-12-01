@@ -58,7 +58,7 @@
 ###### [Поиск основного контактного лица](find-primary-contact.md)
 #### [Для соглашения MPSA](mpsa.md)
 #### [Для облачных подписок](cloud-admin.md)
-#### [Видео по подключению](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [Видео по подключению](https://youtu.be/plSu6fpi7UI)
 ### [Использование портала администрирования](using-admin-portal.md)
 #### [Назначение подписок](assign-license.md)
 #### [Повторная отправка электронных писем о назначении](resend-assignment-email.md)
