@@ -1,5 +1,5 @@
 ---
-title: Привязка элементов управления Windows Forms к данным в Visual Studio
+title: Привязка элементов управления Windows Forms к данным
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,36 +19,42 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4652d8dd3e9be582bc15c4644711accc06fd283f
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 596475ed3a5e1cac535ca0cdf43980af44bd4bf1
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845526"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304640"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
+
 Можно отобразить данные пользователям приложения путем привязки данных в формы Windows Forms. Чтобы создать эти элементы управления с привязкой к данным, перетащите элементы из **источников данных** на окно конструктора Windows Forms в Visual Studio.
 
 ![Операции перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png)
+
+> [!TIP]
+> Если **источников данных** окно не отображается, его можно открыть, выбрав **представление** > **Other Windows** > **источников данных** , или нажав **Shift**+**Alt**+**D**. Необходимо иметь открытый проект в Visual Studio для просмотра **источников данных** окна.
 
 Прежде чем перетащить элементы, можно задать тип элемента управления, который вы хотите привязать к. В зависимости от того, самостоятельно, или отдельного столбца выбраны таблицы отображаются разные значения.  Можно также задать пользовательские значения. Для таблицы **сведения** означает, что каждый столбец привязан к отдельным элементом управления.
 
 ![Привязка источника данных к DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>Элементы управления компонента BindingSource и BindingNavigator
+
 Компонент <xref:System.Windows.Forms.BindingSource> служит двум целям. Во-первых он обеспечивает уровень абстракции, при привязке элементов управления к данным. Элементы управления в форме привязаны к <xref:System.Windows.Forms.BindingSource> компонента, а не непосредственно к источнику данных. Во-вторых он может управлять коллекцией объектов. Добавление типа для <xref:System.Windows.Forms.BindingSource> создает список этого типа.
 
 Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компонента, см. в разделе:
 
--   [Компонент BindingSource](/dotnet/framework/winforms/controls/bindingsource-component)
+- [Компонент BindingSource](/dotnet/framework/winforms/controls/bindingsource-component)
 
--   [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)
 
--   [Архитектура компонента BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
+- [Архитектура компонента BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
 
 [Элемент управления BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) предоставляет пользовательский интерфейс для перехода по данным, отображаемым в приложении Windows.
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Привязка к данным в элементе управления DataGridView
+
 Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), вся таблица привязана к этой одного элемента управления. При перетаскивании **DataGridView** в форму, средство удаления для перемещения по записям (<xref:System.Windows.Forms.BindingNavigator>) также отображается. Объект [набора данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов. На следующем рисунке [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) также добавляется, так как в таблице клиентов имеет отношение к таблице заказов. Эти переменные все объявляются в автоматически сформированном коде как закрытые члены в класс формы. Автоматически созданный код для заполнения **DataGridView** находится в `Form_Load` обработчик событий. Код для сохранения данных для обновления базы данных находится в `Save` обработчик событий для **BindingNavigator**. Можно переместить или изменить этот код как требуется.
 
 ![GridView с BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
@@ -62,6 +68,7 @@ ms.locfileid: "34845526"
 Можно также перетаскивать элементы из **источников данных** окна на элементы управления на форму для привязки элемента управления к данным. Элемент управления, который уже привязан к данным содержит данные, восстанавливает привязку к элементу, наиболее недавно перетаскивания его. Допустимые конечные расположения сброса, элементы управления должны быть может отображать базовый тип данных элемента, перетаскиваемого в него из **источников данных** окна. Например, недопустимо перетащите элемент, имеющий тип данных <xref:System.DateTime> на <xref:System.Windows.Forms.CheckBox>, так как <xref:System.Windows.Forms.CheckBox> не способен отображать даты.
 
 ## <a name="bind-to-data-in-individual-controls"></a>Привязка к данным в отдельных элементах управления
+
 При привязке источника данных для **сведения**, каждый столбец в наборе данных привязан к отдельным элементом управления.
 
 ![Привязка источника данных к сведения](../data-tools/media/raddata-bind-data-source-to-details.png)

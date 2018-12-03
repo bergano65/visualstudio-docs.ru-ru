@@ -5,12 +5,12 @@ title: Документация по Visual Studio | Документация М
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
-ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
+ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44339675"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52712884"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,37 +42,18 @@ ms.locfileid: "44339675"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
+                                <a href="/visualstudio/mac" title="Visual Studio для Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>Повысьте производительность работы участников группы с помощью инструментов и отчетов Agile. Создавайте, тестируйте и развертывайте проекты из системы управления версиями при помощи современных инструментов непрерывной интеграции и развертывания.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Team Foundation Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Team Foundation Server</h3>
-                                                    <p>Установка, обновление и управление локальными развертываниями</p>
+                                                    <h3>Visual Studio для Mac</h3>
+                                                    <p>Создавайте приложения и игры при помощи компьютера Mac, облака, iOS, Android, macOS и носимых устройств.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,25 +73,6 @@ ms.locfileid: "44339675"
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
                                                     <p>Широкие возможности редактирования и отладки на сотнях языков на платформах MacOS, Linux и Windows</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/visualstudio/mac" title="Visual Studio для Mac">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Visual Studio для Mac</h3>
-                                                    <p>Создавайте приложения и игры при помощи компьютера Mac, облака, iOS, Android, macOS и носимых устройств.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,10 +117,49 @@ ms.locfileid: "44339675"
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/azure/devops/" title="Azure DevOps Services">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Services</h3>
+                                                    <p>Повысьте производительность работы участников группы с помощью инструментов и отчетов Agile. Создавайте, тестируйте и развертывайте проекты из системы управления версиями при помощи современных инструментов непрерывной интеграции и развертывания.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Azure DevOps Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Server</h3>
+                                                    <p>Установка, обновление и управление локальными развертываниями</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p>Решение Visual Studio Team Services было переименовано на Azure DevOps Server; решение Team Foundation Server (TFS) также переименовано на Azure DevOps Server. Дополнительные сведения см. в статьях о переименовании решений <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services</a> и <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server</a> на Azure DevOps Server.</p>
     </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: Проверить значения переменных в окнах "Видимые" и "Локальные" | Документация Майкрософт
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257216"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388521"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Проверить значения переменных в окнах "Видимые" и "Локальные"
 
@@ -33,7 +33,7 @@ ms.locfileid: "52257216"
 
 Чтобы открыть **"Локальные"** окне во время отладки, выберите **Отладка** > **Windows** > **"Локальные"**, или нажмите сочетание клавиш **Alt**+**4**.
 
-Дополнительные сведения о основы отладки, см. в статье [Приступая к работе с отладчиком](../debugger/getting-started-with-the-debugger.md).
+Более подробную информацию об основных принципах отладки см. в разделе [Начало работы с отладчиком](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Visual Studio для Mac см. в разделе [визуализации данных в Visual Studio для Mac](/visualstudio/mac/data-visualizations).
@@ -54,7 +54,7 @@ ms.locfileid: "52257216"
 
 В качестве значения можно ввести выражение, например `a + b`. Отладчик принимает большинство допустимых выражений языка.
 
-При работе с машинным кодом C++ может потребоваться определить контекст имени переменной. Дополнительные сведения см. в разделе [(C++) с помощью оператора контекста](../debugger/context-operator-cpp.md).
+При работе с машинным кодом C++ может потребоваться определить контекст имени переменной. Дополнительные сведения см. в разделе [Оператор контекста (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
 >Убедитесь, что понимаете последствия перед изменением значений и выражений. Ниже приведены некоторые из возможных причин.
@@ -77,7 +77,7 @@ ms.locfileid: "52257216"
 
  Других языков программирования отображать различные переменные в **"Видимые"** окна.
 
- - В C# и Visual Basic, **"Видимые"** окна отображаются все переменные, используемые в текущей или предыдущей строках. Например, в C# или Visual Basic кода, объявите следующие четыре переменные:
+ - При использовании C# или Visual Basic в окне **Видимые** отображаются все переменные, используемые в текущей или предыдущей строках. Например, в C# или Visual Basic кода, объявите следующие четыре переменные:
 
    ```csharp
        public static void Main()
@@ -152,6 +152,6 @@ private static int subtractVars(int i, int j)
   ![Видимые возвращаемое значение C# ](../debugger/media/autosreturnvaluecsharp2.png "\"Видимые\" возвращаемое значениеC#")  
   
 ## <a name="see-also"></a>См. также  
- [Что выполняет отладку?](../debugger/what-is-debugging.md)  
+ [Что такое отладка?](../debugger/what-is-debugging.md)  
  [Лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [окна отладчика](../debugger/debugger-windows.md)
