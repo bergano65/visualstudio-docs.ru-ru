@@ -1,6 +1,7 @@
 ---
 title: Поддерживаемых сопоставлений версии пакета Roslyn
 ms.date: 11/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a8896818afddddd11012a5db4ee23f7ecb4b442
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 18938ef7cdf0b1b0f7193c2f795a394837f92abb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967560"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896007"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Справочник по версии пакета платформы компилятора .NET
 
@@ -39,5 +40,5 @@ ms.locfileid: "50967560"
 
 ## <a name="see-also"></a>См. также
 
-- [Пакет SDK для платформы компилятора .NET](/dotnet/csharp/roslyn-sdk/)
+- [Пакет SDK для .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
 - [Начало работы с анализаторами Roslyn](getting-started-with-roslyn-analyzers.md)
