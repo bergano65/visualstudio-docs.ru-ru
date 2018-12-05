@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842174"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895227"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Практическое руководство. Указание свойства хранилища сведений о синхронизации для запуска нагрузочного теста
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять параметры нагрузочного теста в соответствии с требованиями и целями тестирования.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Вы можете изменить значение свойства **Хранилище сведений о синхронизации** параметров запуска в окне **Свойства**. Для свойства **Хранилище сведений о синхронизации** можно задать любое из следующих значений:
 

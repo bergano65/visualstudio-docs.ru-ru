@@ -9,12 +9,12 @@ description: Сведения об учебной подписке Pluralsight, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389115"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895357"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "52389115"
    - Установите флажок, чтобы принять условия политики использования и конфиденциальности.
    - Нажмите кнопку **I agree, activate benefit** (Я принимаю условия активации преимущества).
      > [!div class="mx-imgBorder"]
-     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Условия использования преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

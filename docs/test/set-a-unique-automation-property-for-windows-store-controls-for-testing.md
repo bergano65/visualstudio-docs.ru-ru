@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924984"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894785"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
 
 Чтобы выполнять закодированные тесты пользовательского интерфейса для XAML-приложения универсальной платформы Windows, каждый элемент управления должен определяться уникальным свойством автоматизации. Можно назначить уникальное свойство автоматизации на основе типа элемента управления XAML в вашем приложении.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>Статическое определение XAML
 
@@ -43,7 +45,7 @@ ms.locfileid: "49924984"
 Явно присвойте параметру **AutomationProperties.AutomationId** значение **ButtonX** в XAML-коде элемента управления.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Явно присвойте параметру **AutomationProperties.Name** значение **ButtonY** в XAML-коде элемента управления.

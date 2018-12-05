@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381915"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895331"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Практическое руководство. Выбор активного параметра запуска для нагрузочного теста
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Нагрузочный тест может содержать один или несколько *параметров запуска*, которые представляют собой набор свойств, определяющих выполнение нагрузочного теста. Параметры запуска организованы по категориям в окне **Свойства**. При запуске нагрузочного теста используются те параметры запуска, которые указаны как активные.
 
@@ -31,8 +33,6 @@ ms.locfileid: "39381915"
 В **редакторе тестовой нагрузки** активный параметр запуска определяется с помощью суффикса "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Выбор активных параметров запуска
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Выбор активного параметра запуска в нагрузочном тесте
 
 1.  Откройте нагрузочный тест.
 

@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926596"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895292"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Управление контроллерами и агентами тестирования
 
 Если требуется использовать Visual Studio для удаленного выполнения тестов, распределения тестов по нескольким компьютерам или выполнения нагрузочных тестов, необходимо настроить контроллер тестирования, агенты тестирования и файл параметров тестирования. В этом разделе описано управление контроллерами и агентами тестирования после их установки и первоначальной настройки.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Если вы используете Microsoft Test Manager для выполнения тестов в лабораторных средах, управление контроллерами тестирования и их агентами производится с помощью области **Диспетчер контроллеров тестирования** в разделе **Центр лабораторий** Microsoft Test Manager. Этот раздел применим только при использовании Visual Studio для выполнения тестов.
 

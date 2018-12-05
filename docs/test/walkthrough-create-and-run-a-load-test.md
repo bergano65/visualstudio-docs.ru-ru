@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381020"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895383"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство: создание и запуск нагрузочного теста, содержащего модульные тесты
 
 В этом пошаговом руководстве рассматривается создание нагрузочного теста, содержащего модульные тесты.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Это пошаговое руководство описывает создание и выполнение нагрузочного теста с помощью Visual Studio Enterprise. Нагрузочный тест — это контейнер, содержащий веб-тесты производительности и модульные тесты. Для создания нагрузочных тестов служит **мастер создания нагрузочных тестов**.
 

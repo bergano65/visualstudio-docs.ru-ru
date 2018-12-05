@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 09faa6473ee3f9570e57655e065a4bb9bd622e9c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948274"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895149"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила проверки для веб-теста производительности
 
@@ -30,6 +30,8 @@ ms.locfileid: "51948274"
 
 > [!NOTE]
 > Кроме того, можно создавать пользовательские правила извлечения. Дополнительные сведения см. в статье [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>Создание пользовательских правил проверки
 

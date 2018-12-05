@@ -1,5 +1,5 @@
 ---
-title: Свойства сценария тестовой нагрузки Visual Studio
+title: Свойства сценария тестовой нагрузки
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 235f5d7a686f431555f34e232f6cc1af8195cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890196"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894603"
 ---
 # <a name="load-test-scenario-properties"></a>Свойства сценария тестовой нагрузки
 
 Измените параметры свойств сценария нагрузочного теста в Visual Studio в соответствии с требованиями к тестированию нагрузки. В этой статье приводятся различные свойства сценария тестовой нагрузки по категориям.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="general"></a>Общие
 
