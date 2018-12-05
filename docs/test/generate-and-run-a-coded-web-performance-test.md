@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f57d22963aa5078d3947bc94d3077c1e24534481
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295570"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895513"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
 
 Веб-тесты производительности записываются путем просмотра из веб-приложения. Тесты включены в нагрузочные тесты для измерения производительности веб-приложения под нагрузкой, создаваемой несколькими пользователями. Веб-тест производительности можно преобразовать в скрипт на основе кода, который можно редактировать и адаптировать, как любой другой исходный код. Например, можно добавлять циклические конструкции и конструкции ветвления.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>Создание закодированного веб-теста производительности
 

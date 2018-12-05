@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949321"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896072"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности
 
@@ -28,7 +28,9 @@ ms.locfileid: "49949321"
 
 Кроме того, необходимо добавить ссылку на DLL-файл LoadTestPackage, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Чтобы расширить интерфейс **средства просмотра результатов веб-тестов производительности**, необходимо создать надстройку Visual Studio и добавить пользовательский элемент управления. Ниже описано, как создать надстройку и пользовательский элемент управления, а также как реализовать классы, необходимые для расширения пользовательского интерфейса **средства просмотра результатов веб-тестов производительности**.
+Чтобы расширить интерфейс **средства просмотра результатов веб-тестов производительности**, необходимо создать надстройку Visual Studio и добавить пользовательский элемент управления. Ниже описано, как создать надстройку и пользовательский элемент управления, а также как реализовать классы, необходимые для расширения пользовательского интерфейса **средства просмотра результатов веб-тестов производительности**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Создание и открытие решения, содержащего веб-приложение ASP.NET и проект веб-тестов производительности и нагрузочных тестов
 

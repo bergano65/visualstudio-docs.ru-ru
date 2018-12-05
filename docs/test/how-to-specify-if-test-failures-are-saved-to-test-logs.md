@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381457"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895123"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Практическое руководство. Включение и отключение записи сбоев тестов в журнал тестирования с помощью редактора тестовой нагрузки
 
@@ -25,6 +25,7 @@ ms.locfileid: "39381457"
 > [!NOTE]
 > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Задание в сценарии, требуется ли сохранять журнал тестирования в случае сбоя теста
 
@@ -48,5 +49,3 @@ ms.locfileid: "39381457"
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
 - [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
-- [Практическое руководство. Настройка сбора полных сведений для отображения информации об активности виртуальных пользователей](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [Практическое руководство. Задание частоты сохранения журналов тестирования](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

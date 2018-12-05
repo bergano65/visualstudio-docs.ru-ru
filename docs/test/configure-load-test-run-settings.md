@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813866"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895630"
 ---
 # <a name="configure-load-test-run-settings"></a>Настройка параметров запуска нагрузочных тестов
 
 *Параметры запуска* — это наборы свойств, которые влияют на способ выполнения нагрузочного теста. Параметры запуска организованы по категориям в окне **Свойства**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 В нагрузочном тесте может использоваться более одного параметра запуска, однако активным для нагрузочного теста может быть только один из параметров. Другие параметры запуска предоставляют быстрый способ выбора альтернативных параметров, которые могут использоваться в последующих запусках теста.
 

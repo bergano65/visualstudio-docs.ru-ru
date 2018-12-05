@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b884afae90d477716c2041e468ceb0c64c5d41d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849662"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895565"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса
 
 Редактор закодированных тестов пользовательского интерфейса позволяет легко изменять закодированные тесты пользовательского интерфейса. В редакторе закодированных тестов пользовательского интерфейса можно искать, просматривать и редактировать свойства методов теста и действия пользовательского интерфейса. Кроме того, можно использовать карту элементов управления пользовательского интерфейса для просмотра и редактирования соответствующих элементов управления.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Требования**
 

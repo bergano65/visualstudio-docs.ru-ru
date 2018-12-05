@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380698"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895617"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word
 
 Отчеты о нагрузочных тестах в формате Microsoft Word можно создавать вручную путем копирования и вставки данных из представлений сводки и диаграмм результатов нагрузочных тестов. При копировании данные представлений сводки и диаграмм переносятся в формате HTML.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Кроме того, в Microsoft Word можно копировать обычный текст из представления таблиц и снимки экрана из представления сведений, но эти данные переносятся не в формате HTML и поэтому требуют дополнительного форматирования и редактирования.
