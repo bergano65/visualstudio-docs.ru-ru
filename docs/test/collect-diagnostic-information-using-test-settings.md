@@ -1,5 +1,5 @@
 ---
-title: Сбор диагностических сведений с использованием параметров тестирования в Visual Studio
+title: Сбор диагностических данных с помощью параметров тестирования
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865353"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895214"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Сбор диагностических данных с помощью параметров тестирования
 
@@ -32,6 +32,8 @@ ms.locfileid: "49865353"
 -   сбор данных IntelliTrace для изоляции невоспроизводимых ошибок.
 
 Адаптеры диагностических данных можно также использовать для изменения поведения тестового компьютера. Например, с помощью параметра тестирования в Visual Studio можно моделировать различные узкие места топологии сети для оценки производительности приложения, разрабатываемого командой.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Использование параметров тестирования с Visual Studio
 

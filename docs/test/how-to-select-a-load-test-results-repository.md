@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371125"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895656"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. Выбор репозитория результатов нагрузочного теста
 
 Не обязательно использовать локальное хранилище результатов. Нагрузочные тесты зачастую выполняются на наборе удаленных компьютеров агентов. Агенты совместно с контролером могут создавать большую имитационную нагрузку, чем любой одиночный компьютер. Дополнительные сведения см. в статье [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md).
 
 Результаты тестов с компьютеров-агентов или с локального компьютера можно сохранить на любом сервере SQL Server, где было создано хранилище результатов нагрузочных тестов. В обоих случаях с помощью окна **Администрирование контроллеров тестов** нужно указать, где требуется хранить результаты нагрузочного теста.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Указание хранилища результатов для данных нагрузочных тестов
 

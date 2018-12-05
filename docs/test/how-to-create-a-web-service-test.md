@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380672"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894473"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Практическое руководство. Создание теста веб-службы
 
 Для проверки веб-служб можно использовать веб-тесты производительности. С помощью параметров **Вставить запрос** и **Вставить запрос веб-службы** можно настроить отдельные запросы в **редакторе веб-тестов производительности**, чтобы найти страницы веб-службы. Обычно эти страницы не отображаются в веб-приложениях. Поэтому для получения доступа к этим страницам нужно настроить запрос.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 В следующей процедуре используется веб-служба, содержащаяся в наборе Commerce Starter Kit. Скачать его можно здесь: [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Требования**
+**Требования**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Тестирование веб-службы
 

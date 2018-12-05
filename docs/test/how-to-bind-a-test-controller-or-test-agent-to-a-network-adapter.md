@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203967"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896056"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
@@ -30,6 +30,8 @@ ms.locfileid: "39203967"
 > **Ошибка 8110. Невозможно подключиться к указанному компьютеру контроллера или получить доступ к объекту контроллера**
 >
 > Эта ошибка может быть вызвана установкой контроллера тестирования на компьютер с несколькими сетевыми адаптерами. Кроме того, можно успешно установить агентов, а проблема возникнет только при выполнении теста.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Привязка контроллера тестирования к определенному сетевому адаптеру
 

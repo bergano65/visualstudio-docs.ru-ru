@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826977"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895760"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Создание пользовательского кода и подключаемых модулей для нагрузочных тестов
 
 Пользовательский подключаемый модуль использует код, написанный пользователем и присоединенный к нагрузочному тесту или веб-тесту производительности. С помощью API нагрузочных тестов и API веб-тестов производительности можно создавать пользовательские подключаемые модули для тестов, расширяющие их встроенные функциональные возможности. В нагрузочный тест можно добавить несколько подключаемых модулей.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Задачи
 

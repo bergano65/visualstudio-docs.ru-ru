@@ -14,16 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1d153e3ab237e87764b8805c91f4e4c4e5512c60
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381473"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895188"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Практическое руководство. Задание агентов тестирования для использования в сценариях тестовой нагрузки
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области **Редактор тестовой нагрузки**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Полный список свойств сценария тестовой нагрузки и их описание см. в разделе [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md).

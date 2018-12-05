@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645189"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895604"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 
@@ -30,6 +30,8 @@ ms.locfileid: "51645189"
 -   Значения динамических параметров, устанавливаемые в качестве строки запроса или параметров отправки формы. Эти параметры обрабатываются через обнаружение динамических параметров после записи веб-теста производительности.
 
 Некоторые типы динамических параметров не обнаруживаются. Необнаруженный динамический параметр может приводить к ошибкам при выполнении веб-тестов производительности, поскольку динамические значения чаще всего изменяются при каждом запуске теста. Для правильной обработки этих параметров можно вручную добавить в веб-тесты производительности правила извлечения динамических параметров.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Создание и запуск веб-приложения с динамическими параметрами
 
