@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204093"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894694"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Практическое руководство. Добавление пользовательских наборов счетчиков с помощью редактора тестовой нагрузки
 
@@ -29,6 +29,8 @@ ms.locfileid: "39204093"
 Управление счетчиками осуществляется в **редакторе тестовой нагрузки**. Наборы счетчиков, добавленные в тест, отображаются в узле **Наборы счетчиков** нагрузочного теста. После создания нагрузочного теста в него можно добавить новые наборы счетчиков.
 
 ![Пользовательский набор счетчиков](../test/media/loadtestcustomcounter.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Добавление пользовательских наборов счетчиков в нагрузочный тест
 

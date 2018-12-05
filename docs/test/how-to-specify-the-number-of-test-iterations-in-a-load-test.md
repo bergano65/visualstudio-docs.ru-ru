@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379500"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894798"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Практическое руководство. Указание числа повторов теста в параметрах выполнения нагрузочного теста
 
@@ -27,6 +27,7 @@ ms.locfileid: "39379500"
 > [!NOTE]
 > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Указание числа повторов теста в параметрах запуска
 

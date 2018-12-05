@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380170"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894525"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Практическое руководство. Создание подключаемого модуля веб-теста производительности
 
 Подключаемые модули веб-тестов производительности позволяют изолировать и повторно использовать код вне основных декларативных операторов веб-теста производительности. Пользовательский подключаемый модуль веб-теста производительности позволяет вызвать код при выполнении веб-теста производительности. Подключаемый модуль веб-теста производительности выполняется один раз для каждой итерации теста. Кроме того, при переопределении методов PreRequest и PostRequest в подключаемом модуле теста эти модули запросов будут выполняться до и после каждого запроса соответственно.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Настраиваемые подключаемые модули веб-теста производительности можно создать с помощью пользовательского класса, производного от базового класса <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 

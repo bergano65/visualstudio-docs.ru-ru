@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382039"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895279"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Практическое руководство. Создание подключаемого модуля уровня запроса
 
 *Запросы* — это декларативные операторы, образующие веб-тесты производительности. Подключаемые модули веб-теста производительности позволяют изолировать и повторно использовать код вне основных декларативных операторов веб-теста производительности. Можно создать подключаемые модули и добавлять их к отдельному запросу или веб-тесту производительности, в котором он содержится. Настраиваемый *подключаемый модуль запросов* позволяет вызывать код при выполнении конкретного запроса в веб-тесте производительности.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Каждый подключаемый модуль запросов веб-теста производительности имеет метод PreRequest и PostRequest. После прикрепления подключаемого модуля запросов к определенному HTTP-запросу событие PreRequest инициируется перед отправкой запроса, а событие PostRequest — после получения запроса.
 

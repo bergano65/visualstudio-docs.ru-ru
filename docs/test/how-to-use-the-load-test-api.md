@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282749"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894404"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Практическое руководство. Использование API-интерфейса нагрузочного теста
 
 Visual Studio поддерживает подключаемые модули нагрузочных тестов, которые могут управлять нагрузочными тестами или расширять их возможности. Подключаемые модули нагрузочных тестов представляют собой пользовательские классы, которые реализуют интерфейс <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, содержащийся в пространстве имен <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Подключаемые модули нагрузочных тестов позволяют осуществлять пользовательское управление нагрузочными тестами, например прерывать выполнение теста при достижении порога счетчиков или ошибок. Чтобы получить или установить параметры нагрузочного теста из пользовательского кода, используйте свойства класса <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>. Чтобы присоединить делегаты для отправки уведомлений при выполнении нагрузочного теста, используйте события класса <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Для просмотра пространства имен <xref:Microsoft.VisualStudio.TestTools.LoadTesting> используется обозреватель объектов. Редакторы Visual C# и Visual Basic предоставляют поддержку IntelliSense для создания кода с помощью классов из этого пространства имен.

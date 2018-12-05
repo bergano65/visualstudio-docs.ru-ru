@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d0219b2acaab32da72639c088046bf4d19620808
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381508"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894331"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Практическое руководство. Экспорт результатов нагрузочного тестирования из репозитория
 
 При выполнении нагрузочного теста данные, собранные во время тестового запуска, сохраняются в репозитории результатов нагрузочных тестов. В репозитории результатов нагрузочных тестов содержатся данные счетчиков производительности и сведения о всех ошибках. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 Управление результатами нагрузочных тестов осуществляется в редакторе тестовой нагрузки с помощью диалогового окна **Открытие и обработка результатов нагрузочных тестов**. Результаты нагрузочных тестов можно открывать, импортировать, экспортировать и удалять.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-export-results-from-a-repository"></a>Чтобы экспортировать результаты из репозитория
 
