@@ -5,12 +5,12 @@ title: Документация по Visual Studio | Документация М
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712884"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821361"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712884"
                 </ul>
             </li>
         </ul>
-        <p>Решение Visual Studio Team Services было переименовано на Azure DevOps Server; решение Team Foundation Server (TFS) также переименовано на Azure DevOps Server. Дополнительные сведения см. в статьях о переименовании решений <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services</a> и <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server</a> на Azure DevOps Server.</p>
+        <p>Решение Visual Studio Team Services было заменено Azure DevOps Services; решение Team Foundation Server (TFS) переименовано на Azure DevOps Server. Дополнительные сведения см. в статьях о переименовании решений <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services</a> и <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server</a> на Azure DevOps Server.</p>
     </div>
 </div>
