@@ -16,24 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388521"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621475"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Проверить значения переменных в окнах "Видимые" и "Локальные"
 
-**"Видимые"** и **"Локальные"** windows отображение значений переменных при отладке. Windows доступны только во время сеанса отладки. **"Видимые"** окне отображаются переменные, используемые вокруг текущей точкой останова. **"Локальные"** окне отображаются переменные, определенные в локальной области, которой обычно является текущей функции или метода. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
+**"Видимые"** и **"Локальные"** windows отображение значений переменных при отладке. Windows доступны только во время сеанса отладки. **"Видимые"** окне отображаются переменные, используемые вокруг текущей точкой останова. **"Локальные"** окне отображаются переменные, определенные в локальной области, которой обычно является текущей функции или метода. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [исправления ошибок, написав лучше C# кода](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
 
  **"Видимые"** окно доступно для C#, код Visual Basic, C++ и Python, но не для JavaScript или F#.
   
 Чтобы открыть **"Видимые"** окне во время отладки, выберите **Отладка** > **Windows** > **"Видимые"**, или нажмите сочетание клавиш **Ctrl**+**Alt**+**V** > **объект**.  
 
 Чтобы открыть **"Локальные"** окне во время отладки, выберите **Отладка** > **Windows** > **"Локальные"**, или нажмите сочетание клавиш **Alt**+**4**.
-
-Более подробную информацию об основных принципах отладки см. в разделе [Начало работы с отладчиком](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Visual Studio для Mac см. в разделе [визуализации данных в Visual Studio для Mac](/visualstudio/mac/data-visualizations).
@@ -153,5 +151,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>См. также  
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
  [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [окна отладчика](../debugger/debugger-windows.md)

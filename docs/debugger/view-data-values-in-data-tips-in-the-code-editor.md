@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388164"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621543"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках в редакторе кода
 
-Советы являются удобный способ просмотра сведений о переменных в приложении во время отладки. 
+Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения. Если это в первый раз, которое вы пытались пройти отлаживать код, вы можете прочитать [исправления ошибок, написав лучше C# кода](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) прежде чем приступить к этой статье.
 
 Если это первый раз отладку, вы можете прочитать [лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md) и [отладки для начинающих](../debugger/debugging-absolute-beginners.md) перед чтением этой статьи.
   
@@ -127,8 +127,8 @@ ms.locfileid: "52388164"
 
 ## <a name="see-also"></a>См. также  
  [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md)   
- [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
+ [Исправление ошибок путем написания более качественного кода C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md) [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
  [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
+
