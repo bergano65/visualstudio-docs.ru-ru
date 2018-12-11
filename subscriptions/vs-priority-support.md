@@ -1,26 +1,24 @@
 ---
-title: Преимущество приоритетной поддержки в подписках Visual Studio | Документация Майкрософт
+title: Преимущество сообщества разработчиков в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Сведения о преимуществе приоритетной поддержки, входящем в состав подписок Visual Studio.
+description: Сведения о преимуществе сообщества разработчиков, включенном в подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866744"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896657"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Приоритетная поддержка в подписках Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Поддержка сообщества разработчиков в подписках Visual Studio
 
-Преимущество приоритетной поддержки позволяет получить доступ к нескольким форумам сообщества, где вы сможете найти ответ в публикациях или задать новые вопросы.  Если в течение двух дней сообщество не даст ответа на ваш вопрос, его предоставит служба поддержки корпорации Майкрософт.
-
-Некоторые подписки Visual Studio позволяют подписчикам получить право на приоритетную поддержку на большом количестве форумов по самым разнообразным темам.  Нажмите на любую из перечисленных ниже ссылок, чтобы перейти на соответствующий форум.  
+Преимущество сообщества разработчиков позволяет получить доступ к нескольким форумам сообщества, где вы сможете найти ответ в публикациях или задать новые вопросы. Нажмите на любую из перечисленных ниже ссылок, чтобы перейти на соответствующий форум.  
 
 ## <a name="included-forums"></a>Включенные форумы
 

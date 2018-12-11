@@ -1,5 +1,5 @@
 ---
-title: Сведения об отладке кода C# с помощью отладчика Visual Studio
+title: Сведения об отладке кода Visual Basic с помощью отладчика Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
 ms.date: 11/27/2018
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 7f568c5785af1917827646d232ef3c6c8f0ad41b
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821309"
+ms.locfileid: "52825997"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Руководство. Отладка кода C# с помощью Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Руководство. Отладка кода Visual Basic с помощью Visual Studio
 
-В этом пошаговом руководстве рассматриваются возможности отладчика Visual Studio. *Отладка приложения* обычно означает запуск и выполнение приложения с подключенным отладчиком. При этом в отладчике доступно множество способов наблюдения за выполнением кода. Вы можете пошагово перемещаться по коду и просматривать значения, хранящиеся в переменных, задавать контрольные значения для переменных, чтобы отслеживать изменение значений, изучать путь выполнения кода, просматривать выполнение ветви кода и т. д. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Исправление ошибок за счет написания лучшего кода на C#](../debugger/write-better-code-with-visual-studio.md).
+В этом пошаговом руководстве рассматриваются возможности отладчика Visual Studio. Более полное описание функций отладчика см. в статье c [обзором функций отладчика](../debugger/debugger-feature-tour.md). *Отладка приложения* обычно означает запуск и выполнение приложения с подключенным отладчиком. При этом в отладчике доступно множество способов наблюдения за выполнением кода. Вы можете пошагово перемещаться по коду и просматривать значения, хранящиеся в переменных, задавать контрольные значения для переменных, чтобы отслеживать изменение значений, изучать путь выполнения кода, просматривать выполнение ветви кода и т. д. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md).
 
 | | |
 |---------|---------|
 | ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) об отладке, где демонстрируются аналогичные действия. |
-
-Несмотря на то, что демонстрационное приложение написано на C#, большинство функций применимы к C++, Visual Basic, F#, Python, JavaScript и другим языкам, поддерживаемым Visual Studio (F# не поддерживает возможность "Изменить и продолжить"). F# и JavaScript не поддерживают окно **Видимые**). На снимках экрана представлены примеры на C#.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -52,7 +50,7 @@ ms.locfileid: "52821309"
 
 1. В Visual Studio последовательно выберите **Файл > Создать проект**.
 
-2. В разделе **Visual C#** выберите **Классическое приложение Windows**, а затем в средней области выберите **Консольное приложение**.
+2. В разделе **Visual Basic** выберите **Классическое приложение Windows**, а затем в средней области выберите **Консольное приложение**.
 
     Если шаблон проекта **Консольное приложение** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создание проекта**. Запускается Visual Studio Installer. Выберите рабочую нагрузку *Разработка классических приложений .NET** и нажмите **Изменить**.
 
@@ -62,107 +60,121 @@ ms.locfileid: "52821309"
 
 4. В файле *Program.cs* замените код
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    ```vb
+    Module Module1
 
-    namespace get_started_debugging
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
-    }
+        Sub Main()
+        End Sub
+
+    End Module
     ```
 
     следующим кодом:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
 
-    public class Shape
-    {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
-        // Virtual method
-        public virtual void Draw()
-        {
-            Console.WriteLine("Performing base class drawing tasks");
-        }
-    }
+    Public Class Shape
 
-    class Circle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
-        }
-    }
+      ' A few example members
+        Public Property X As Integer
+            Get
+                Return X
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Rectangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
-        }
-    }
+        Public Property Y As Integer
+            Get
+                Return Y
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Triangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
-        }
-    }
+        Public Property Height As Integer
+            Get
+                Return Height
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
+        Public Property Width As Integer
+            Get
+                Return Width
+            End Get
+            Set
+            End Set
+        End Property
 
-            var shapes = new List<Shape>
+        ' Virtual method
+        Public Overridable Sub Draw()
+            Console.WriteLine("Performing base class drawing tasks")
+        End Sub
+    End Class
+
+    Public Class Circle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a circle...
+            Console.WriteLine("Drawing a circle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Rectangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a rectangle...
+            Console.WriteLine("Drawing a rectangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Triangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a triangle...
+            Console.WriteLine("Drawing a trangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Module Module1
+
+        Sub Main(ByVal args() As String)
+
+            Dim shapes = New List(Of Shape) From
             {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
+                New Rectangle,
+                New Triangle,
+                New Circle
             }
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
+            For Each shape In shapes
+                shape.Draw()
+            Next
+            ' Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.")
+            Console.ReadKey()
 
-    }
+        End Sub
 
-    /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
-    */
+    End Module
+
+    ' Output:
+    '    Drawing a rectangle
+    '    Performing base class drawing tasks
+    '    Drawing a triangle
+    '    Performing base class drawing tasks
+    '    Drawing a circle
+    '    Performing base class drawing tasks
     ```
 
 ## <a name="start-the-debugger"></a>Запуск отладчика
@@ -186,17 +198,19 @@ ms.locfileid: "52821309"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Установка точки останова и запуск отладчика
 
-1. В цикле `foreach` функции `Main` установите точку останова, щелкнув левое поле следующей строки кода:
+1. В цикле `For Each` функции `Main` установите точку останова, щелкнув левое поле следующей строки кода:
 
     `shape.Draw()`
 
     В месте установки точки останова появится красный круг.
 
+    ![Задание точки останова](../debugger/media/get-started-set-breakpoint-vb.png)
+
     Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода. 
 
 2. Нажмите клавишу **F5** или кнопку **Начать отладку** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging". Будет запущено приложение и отладчик перейдет к строке кода, где задана точка останова.
 
-    ![Установка точки останова и попадание в нее](../debugger/media/get-started-set-breakpoint.gif)
+    ![Попадание в точку останова](../debugger/media/get-started-hit-breakpoint-vb.png)
 
     Желтая стрелка представляет оператор, на котором приостановлен отладчик. В этой же точке приостанавливается выполнение приложения (этот оператор пока не выполнен).
 
@@ -208,23 +222,23 @@ ms.locfileid: "52821309"
 
 Здесь мы используем в основном сочетания клавиш, так как они позволяют быстро выполнять приложение в отладчике (эквивалентные команды, например команды меню, отображаются в круглых скобках).
 
-1. Во время приостановки в вызове метода `shape.Draw` в методе `Main` нажмите клавишу **F11** (или выберите **Отладка > Шаг с заходом**), чтобы перейти в код для класса `Rectangle`.
+1. Во время приостановки в вызове метода `shape.Draw` в функции `Main` нажмите клавишу **F11** (или выберите **Отладка > Шаг с заходом**), чтобы перейти в код для класса `Rectangle`.
 
-     ![Использование клавиши F11 для выполнения шага с заходом в код](../debugger/media/get-started-f11.png "F11 —шаг с заходом")
+     ![Использование клавиши F11 для выполнения шага с заходом в код](../debugger/media/get-started-f11-vb.png "F11 —шаг с заходом")
 
      F11 — это команда **Шаг с заходом**, которая выполняет приложение с переходом к следующему оператору. Клавишу F11 удобно использовать для более детальной проверки потока выполнения. (Мы также покажем другие варианты более быстрого перемещения по коду.) По умолчанию отладчик пропускает непользовательский код (дополнительные сведения см. в статье об [отладке в режиме "Только мой код"](../debugger/just-my-code.md)).
 
-2. Нажимайте клавишу **F10** (или выберите **Отладка > Шаг с обходом**) несколько раз, пока отладчик не остановится в вызове метода `base.Draw`, а затем еще раз нажмите клавишу **F10**.
+2. Нажимайте клавишу **F10** (или выберите **Отладка > Шаг с обходом**) несколько раз, пока отладчик не остановится в вызове метода `MyBase.Draw`, а затем еще раз нажмите клавишу **F10**.
 
-     ![Использование клавиши F10 для шага с обходом кода](../debugger/media/get-started-step-over.png "F10 — шаг с обходом")
+     ![Использование клавиши F10 для шага с обходом кода](../debugger/media/get-started-step-over-vb.png "F10 — шаг с обходом")
 
-     Обратите внимание, что в этот раз отладчик не заходит в метод `Draw` базового класса (`Shape`). Клавиша **F10** перемещает отладчик без захода в функции или методы в коде приложения (код продолжает выполняться). Нажав клавишу F10 (а не **F11**) в вызове метода `base.Draw`, мы пропускаем код реализации для `base.Draw` (пока это нас не интересует).
+     Обратите внимание, что в этот раз отладчик не заходит в метод `Draw` базового класса (`Shape`). Клавиша **F10** перемещает отладчик без захода в функции или методы в коде приложения (код продолжает выполняться). Нажав клавишу F10 (а не **F11**) в вызове метода `MyBase.Draw`, мы пропускаем код реализации для `MyBase.Draw` (пока это нас не интересует).
 
 ## <a name="navigate-code-using-run-to-click"></a>Переход по коду с помощью команды "Выполнение до щелкнутого"
 
 1. В редакторе кода прокрутите вниз и наведите указатель мыши на метод `Console.WriteLine` в классе `Triangle`, пока в левой части не появится зеленая кнопка **Выполнение до щелкнутого** ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-     ![Использование функции "Выполнение до щелкнутого"](../debugger/media/get-started-run-to-click.png "Выполнение до щелкнутого")
+     ![Использование функции "Выполнение до щелкнутого"](../debugger/media/get-started-run-to-click-vb.png "Выполнение до щелкнутого")
 
    > [!NOTE]
    > Кнопка **Выполнение до щелкнутого** впервые появилась в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Если кнопка с зеленой стрелкой отсутствует, воспользуйтесь клавишей **F11**, чтобы переместить отладчик в нужное место.
@@ -254,7 +268,7 @@ ms.locfileid: "52821309"
 
      Эта команда возобновляет выполнение приложения (и перемещает отладчик) до возврата текущей функции.
 
-     Вы должны вернуться в цикл `foreach` в методе `Main`.
+     Вы должны вернуться в цикл `For Each` в методе `Main`.
 
 ## <a name="restart-your-app-quickly"></a>Быстрый перезапуск приложения
 
@@ -268,31 +282,25 @@ ms.locfileid: "52821309"
 
 Функции, позволяющие проверять переменные, являются самыми полезными возможностями отладчика. Реализовывать эту задачу можно разными способами. Часто при попытке выполнить отладку проблемы пользователь старается выяснить, хранятся ли в переменных значения, которые требуются ему в определенное время.
 
-1. Во время приостановки в методе `shape.Draw()` наведите указатель мыши на объект `shape`. Вы увидите значение его свойства по умолчанию, то есть тип объекта `Rectangle`.
+1. Во время приостановки в методе `shape.Draw()` наведите указатель мыши на объект `shapes`. Вы увидите значение его свойства `Count` по умолчанию.
 
-1. Разверните объект `shape` для просмотра его свойств (таких как свойство `Height` в этом примере, которое имеет значение 0).
+1. Разверните объект `shapes`, чтобы увидеть все его свойства, такие как первый индекс массива `[0]`, который имеет значение `Rectangle`.
 
-1. Нажмите клавишу **F10** (или **Отладка** > **Шаг с обходом**) несколько раз, чтобы выполнить одну итерацию цикла `foreach` и приостановку в `shape.Draw()`.
+     ![Просмотр подсказки по данным](../debugger/media/get-started-data-tip-vb.png "Просмотр подсказки по данным")
 
-1. Снова наведите указатель мыши на объект фигуры. На этот раз вы увидите, что появился новый объект с типом `Triangle`.
+    Вы можете дополнительно развернуть объекты, чтобы просмотреть их свойства, например свойство `Height` прямоугольника.
 
-     ![Просмотр подсказки по данным](../debugger/media/get-started-data-tip.gif "Просмотр подсказки по данным")
-
-    Часто при отладке требуется быстро проверить значения свойств в переменных, чтобы убедиться, что в них хранятся ожидаемые значения. Советы по данным — отличный способ это сделать.
+    Часто при отладке бывает необходимо быстро проверить значения свойств для объектов. Лучше всего для этого подходят подсказки по данным.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Проверка переменных с помощью окон "Видимые" и "Локальные"
 
 1. Взгляните на окно **Видимые** в нижней части редактора кода.
 
-    Если оно закрыто, откройте его во время приостановки в отладчике, выбрав **Отладка** > **Окна** > **Видимые**.
-
-1. Разверните объект `shapes`.
-
-     ![Проверка переменных в окне видимых переменных](../debugger/media/get-started-autos-window.png "Окно видимых переменных")
+     ![Проверка переменных в окне видимых переменных](../debugger/media/get-started-autos-window-vb.png "Окно видимых переменных")
 
     В окне **Видимые** отображаются переменные и их текущие значения. В окне **Видимые** отображаются все переменные, используемые в текущей или предыдущей строке (сведения о зависящем от языка поведении см. в соответствующей документации).
 
-1. Затем посмотрите на окно **Локальные** на вкладке рядом с окном **Видимые**.
+2. Затем посмотрите на окно **Локальные** на вкладке рядом с окном **Видимые**.
 
     В окне **Локальные** показаны переменные, которые находятся в текущей [области](https://www.wikipedia.org/wiki/Scope_(computer_science)), то есть текущем контексте выполнения.
 
@@ -306,15 +314,13 @@ ms.locfileid: "52821309"
 
 ## <a name="examine-the-call-stack"></a>Просмотр стека вызовов
 
-1. Во время приостановки в цикле `foreach` щелкните окно **Стек вызовов**, которое по умолчанию открыто в нижней правой области.
+1. Во время приостановки в цикле `For Each` щелкните окно **Стек вызовов**, которое по умолчанию открыто в нижней правой области.
 
-    Если оно закрыто, откройте его во время приостановки в отладчике, выбрав **Отладка** > **Окна** > **Стек вызовов**.
+2. Несколько раз нажимайте клавишу **F11**, пока отладчик не приостановится в методе `MyBase.Draw` класса `Rectangle` в редакторе кода. Взгляните на окно **Стек вызовов**.
 
-2. Несколько раз нажимайте клавишу **F11**, пока отладчик не приостановится в методе `Base.Draw` класса `Triangle` в редакторе кода. Взгляните на окно **Стек вызовов**.
+    ![Просмотр стека вызовов](../debugger/media/get-started-call-stack-vb.png "Просмотр стека вызовов")
 
-    ![Просмотр стека вызовов](../debugger/media/get-started-call-stack.png "Просмотр стека вызовов")
-
-    В окне **Стек вызовов** показан порядок вызова методов и функций. В верхней строке приведена текущая функция (в данном приложении метод `Triangle.Draw`). Во второй строке показано, что функция `Triangle.Draw` была вызвана из метода `Main` и т. д.
+    В окне **Стек вызовов** показан порядок вызова методов и функций. В верхней строке приведена текущая функция (в данном приложении метод `Rectangle.Draw`). Во второй строке показано, что функция `Rectangle.Draw` была вызвана из функции `Main` и т. д.
 
    > [!NOTE]
    > Окно **Стек вызовов** аналогично перспективе "Отладка" в некоторых интегрированных средах разработки, например Eclipse.
@@ -327,11 +333,11 @@ ms.locfileid: "52821309"
 
 ## <a name="change-the-execution-flow"></a>Изменение потока выполнения
 
-1. Приостановив отладчик в вызове метода `Circle.Draw` с помощью мыши захватите желтую стрелку (указатель выполнения) в левой части и переместите ее вверх на одну строку в вызов метода `Console.WriteLine`.
+1. Приостановив отладчик в вызове метода `MyBase.Draw` класса `Rectangle` с помощью мыши захватите желтую стрелку (указатель выполнения) в левой части и переместите ее вверх на одну строку в вызов метода `Console.WriteLine`.
 
 1. Нажмите клавишу **F11**.
 
-    Отладчик повторно выполнит метод `Console.WriteLine` (вы увидите это в выходных данных окна консоли).
+    Отладчик повторно выполнит метод `Console.WriteLine` (вы увидите повторяющиеся выходные данные окна консоли).
 
     Изменяя поток выполнения, можно решать множество задач, например тестировать различные пути выполнения кода или повторно выполнять код без перезапуска отладчика.
 

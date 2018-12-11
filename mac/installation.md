@@ -3,19 +3,19 @@ title: Установка Visual Studio для Mac
 description: Инструкции по установке Visual Studio для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294998"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896488"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
-## <a name="setup"></a>Установка
+## <a name="requirements"></a>Требования
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений, нужно установить и настроить несколько компонентов при скачивании Visual Studio для Mac.
 
@@ -24,6 +24,9 @@ ms.locfileid: "51294998"
 * Компьютер Mac с macOS Sierra 10.12 или более поздней версии
 * Xcode 8.3 или более поздней версии. Обычно рекомендуется использовать последнюю стабильную версию.
 * Идентификатор Apple ID. Если у вас нет идентификатора Apple ID, его можно создать на сайте https://appleid.apple.com. Он необходим для установки приложения Xcode и входа в него.
+
+> [!TIP]
+> Предварительная версия Visual Studio 2019 для Mac [теперь доступна](install-preview.md) для тестирования.
 
 ## <a name="install"></a>Установка
 

@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861921"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896566"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 
-На основе двух и более результатах тестов можно создавать отчеты о нагрузочных тестах в формате Excel. Доступны два типа отчетов о нагрузочных тестах:
+На основе двух и более результатах тестов можно создавать отчеты о нагрузочных тестах в формате Excel.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Доступны два типа отчетов о нагрузочных тестах:
 
 -   **Сравнение запусков**. При этом создается набор отчетов, сравнивающих данные результатов двух нагрузочных тестов с использованием таблиц и линейчатых диаграмм.
 
@@ -45,7 +49,7 @@ ms.locfileid: "49861921"
 Отчеты в формате Excel могут создаваться либо в **анализаторе тестовой нагрузки** с помощью кнопки **Создание отчета Excel** на панели инструментов, либо из программы Excel с помощью пункта **Загрузить отчет теста** на вкладке **Загрузить тест** ленты **Office**.
 
 > [!NOTE]
-> Если в нагрузочный тест добавлены комментарии, они будут отображаться в отчете Excel. Дополнительные сведения см. в статье [Практическое руководство. Добавление комментариев во время анализа выполненного нагрузочного теста](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Если в нагрузочный тест добавлены комментарии, они будут отображаться в отчете Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Создание сравнительного отчета о нагрузочных тестах в Excel
 
