@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок для контроллеров и агентов тестирования в Visual Studio
+title: Управление контроллерами и агентами тестирования
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd114e9b5e63301c4f277d6746c04991c97eb9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888545"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894746"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Стратегии устранения неполадок контроллеров и агентов тестирования в нагрузочных тестах
 
 Эта статья описывает типичные проблемы, которые могут возникать при работе с контроллерами и агентами тестирования в Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Не удается собрать счетчики производительности на компьютере агента тестирования
 

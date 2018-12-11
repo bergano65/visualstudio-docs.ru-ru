@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379810"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895201"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
 
 Можно также использовать адаптер диагностических данных профилировщика ASP.NET для сбора данных профилировщика ASP.NET. Этот адаптер диагностических данных собирает данные о производительности приложений ASP.NET.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Этот адаптер диагностических данных нельзя применять к тестам, выполняемым с помощью Microsoft Test Manager. Диагностический адаптер профилировщика ASP.NET можно применять только с нагрузочными тестами, использующими веб-сайты, для которых требуется Visual Studio Enterprise.
@@ -31,13 +33,9 @@ ms.locfileid: "39379810"
 
 Дополнительные сведения см. в статье [Практическое руководство. Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-В следующей процедуре описывается порядок настройки адаптера диагностических данных для профилировщика ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Чтобы настроить профилировщик ASP.NET для параметров тестирования, выполните следующие действия.
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Настройка профилировщика ASP.NET для параметров тестирования
 
 Перед выполнением шагов этой процедуры необходимо открыть параметры тестирования в Visual Studio и перейти на страницу **Данные и диагностика**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Чтобы настроить профилировщик ASP.NET для параметров тестирования, выполните следующие действия.
 
 1.  Выберите роль, используемую для сбора данных профилировщика ASP.NET.
 

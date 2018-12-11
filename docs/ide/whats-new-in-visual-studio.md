@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2017
 description: Сведения о новых возможностях Visual Studio 2017.
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607878"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895773"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -386,3 +386,4 @@ Visual Studio перемещает свои расширения, а также 
 * [Новые возможности C#](/dotnet/csharp/whats-new)
 * [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)
 * [Новые возможности Visual Studio для Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Новые возможности Visual Studio 2019](whats-new-visual-studio-2019.md)
