@@ -1,10 +1,11 @@
 ---
 title: Новые возможности предварительной версии Visual Studio 2019
+titleSuffix: ''
 description: Сведения о новых возможностях в Visual Studio 2019.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897278"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159754"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Новые возможности предварительной версии Visual Studio 2019
 
@@ -86,7 +87,7 @@ ms.locfileid: "52897278"
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Управление запросами на вытягивание в интегрированной среде разработки
 
-Мы представляем новое расширение, которое можно скачать для использования в предварительной версии Visual Studio 2019. С помощью этого нового расширения можно просматривать, запускать и даже выполнять отладку запросов на вытягивание, не выходя из интегрированной среды разработки Visual Studio [(IDE)](../ide/visual-studio-ide.md). На данный момент поддерживается код в репозиториях Azure, однако мы намерены реализовать поддержку GitHub и повысить общую эффективность.
+Мы представляем новое расширение, которое можно скачать для использования в предварительной версии Visual Studio 2019. С помощью этого нового расширения можно просматривать, запускать и даже выполнять отладку запросов на вытягивание, не выходя из интегрированной среды разработки Visual Studio [(IDE)](../get-started/visual-studio-ide.md). На данный момент поддерживается код в репозиториях Azure, однако мы намерены реализовать поддержку GitHub и повысить общую эффективность.
 
 Чтобы приступить к работе, скачайте расширение [Запросы на вытягивание для Visual Studio](https://aka.ms/pr4vs) из Visual Studio Marketplace.
 

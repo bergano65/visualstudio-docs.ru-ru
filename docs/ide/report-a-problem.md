@@ -1,23 +1,24 @@
 ---
-title: 'Обзор: "Сообщить о проблеме" в Visual Studio'
+title: Сообщите о проблеме
 description: Обзор средства "Сообщить о проблеме", включая состояния и определения проблем
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826678"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159832"
 ---
-# <a name="overview-report-a-problem"></a>Обзор: "Сообщить о проблеме"
+# <a name="overview-report-a-problem"></a>Общие сведения: Сообщение о проблеме
 
 Средство "Сообщить о проблеме" позволяет сообществу разработчиков Visual Studio открывать вопросы. Каждый из ваших отчетов о проблеме становится рабочим элементом в нашей базовой инженерной системе, позволяя вам напрямую взаимодействовать с нашими командами разработчиков, чтобы помогать в выявлении и разрешении важных вопросов. Ваши отзывы, снабженные подробными диагностическими сведениями, крайне важны для улучшения семейства продуктов Visual Studio. Мы высоко ценим то, что вы находите время на сообщение о проблемах.
 
