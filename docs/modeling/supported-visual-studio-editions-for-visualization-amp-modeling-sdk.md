@@ -1,5 +1,6 @@
 ---
-title: Поддерживаемые выпуски Visual Studio для визуализации &amp; пакет SDK моделирования
+title: Поддерживаемые выпуски Visual Studio для визуализации и моделирования SDK
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 65014d8c697adbf5fb8e13d28708090360bb9c17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966756"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049960"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для визуализации &amp; пакет SDK моделирования
+# <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Выпуски Visual Studio, поддерживаемые пакетом SDK визуализации и моделирования
+
 Ниже приведены списки, которые поддерживаются в выпусках Visual Studio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] в средах разработки и развертывания. Дополнительные сведения об этих выпусках см. в разделе Microsoft Visual Studio [Центр разработчиков](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Разработка версии
- Для определения доменного языка необходимо установить следующие компоненты.
+
+Для определения доменного языка необходимо установить следующие компоненты.
 
 |||
 |-|-|
@@ -33,7 +36,8 @@ ms.locfileid: "50966756"
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>Развертывание выпусков
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] поддерживает следующие конфигурации для развертывания доменных языков, которые вы создаете:
+
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] поддерживает следующие конфигурации для развертывания доменных языков, которые вы создаете:
 
 -   Visual Studio Enterprise
 
@@ -44,7 +48,7 @@ ms.locfileid: "50966756"
 -   Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
 
 > [!NOTE]
->  Чтобы доменный язык может работать на продукте оболочки, необходимо задать **поддерживаемая версия VS** в манифесте расширения. Дополнительные сведения см. в разделе [развертывание решений предметно-ориентированного языка](../modeling/deploying-domain-specific-language-solutions.md).
+> Чтобы доменный язык может работать на продукте оболочки, необходимо задать **поддерживаемая версия VS** в манифесте расширения. Дополнительные сведения см. в разделе [развертывание решений предметно-ориентированного языка](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>См. также
 
