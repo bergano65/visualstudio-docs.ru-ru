@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912634"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248274"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Архитектура настроек на уровне документа
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. В этой статье описываются следующие аспекты надстроек уровня документа.  
@@ -81,7 +81,7 @@ ms.locfileid: "49912634"
 |Используя [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], разработчик пишет код, доступный для Word и Excel.<br /><br /> Хотя может показаться, что разработчик создает исполняемый файл, который выполняется в Word или Excel, в действительности процесс работает в обратном направлении. Документ связан со сборкой и содержит указатель на эту сборку. При открытии документа Word или Excel находит сборку и выполняет код в ответ на все обработанные события.|Тех, кто использует решение, просто открывают документ или книгу (или создают новый документ из шаблона) точно так же, как любой другой файл Microsoft Office.<br /><br /> Сборка предоставляет настройки в документе или книге, такие как автоматическое заполнение текущими данными или отображение диалогового окна для запроса информации.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Поддерживаемые форматы документов для настроек уровня документа  
- При создании проекта настройки можно выбрать формат документа, который вы хотите использовать в проекте. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ При создании проекта настройки можно выбрать формат документа, который вы хотите использовать в проекте. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  В следующей таблице перечислены форматы документов, которые можно использовать в настройках уровня документа для Excel и Word.  
   

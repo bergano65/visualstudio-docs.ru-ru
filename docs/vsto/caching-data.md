@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846893"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248128"
 ---
 # <a name="cache-data"></a>Кэширование данных
   Вы можете кэшировать объекты данных в настройке уровня документа, таким образом, чтобы данные может осуществляться автономно или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта, объект должен иметь тип данных, который соответствует определенным требованиям. Многие общие типы данных в .NET Framework этим требованиям, включая <xref:System.String>, <xref:System.Data.DataSet>, и <xref:System.Data.DataTable>.  
@@ -31,9 +31,9 @@ ms.locfileid: "49846893"
   
  Чтобы добавить объект в кэш данных двумя способами:  
   
-- Чтобы добавить объект в кэш данных, при сборке решения, примените <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибут объявления объекта. Дополнительные сведения см. в разделе [как: кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Чтобы добавить объект в кэш данных, при сборке решения, примените <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибут объявления объекта. Дополнительные сведения см. в разделе [Как Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
-- Чтобы программным способом добавить объект в кэш данных во время выполнения, используйте `StartCaching` метода ведущего элемента, такого как `ThisDocument` или `ThisWorkbook` классы. Дополнительные сведения см. в разделе [как: программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Чтобы программным способом добавить объект в кэш данных во время выполнения, используйте `StartCaching` метода ведущего элемента, такого как `ThisDocument` или `ThisWorkbook` классы. Дополнительные сведения см. в разделе [Как Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
   После добавления объекта в кэш данных, можно использовать и изменять кэшированные данные без запуска Word или Excel. Дополнительные сведения см. в разделе [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "49846893"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Сохранение изменений к кэшированным данным в документах, защищенный паролем  
  Если вы кэшировать объекты данных в документе, защищенном паролем, изменения кэшированных данных не сохраняются. Можно сохранить изменения в кэшированных данных путем переопределения двух методов. Переопределить эти методы, чтобы временно удалить защиту при сохранении документа, а затем повторно применить защиту после сохранения операция завершена.  
   
- Дополнительные сведения см. в разделе [как: кэшировать данные в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Дополнительные сведения см. в разделе [Как Кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Предотвратить потерю данных при добавлении в кэш данных значения null  
  При добавлении объектов в кэш данных, все кэшированные объекты должны быть инициализированы, отличному от**null** значение перед сохранении и закрытии документа. Если кэшированный объект имеет **null** значение при сохранении и закрытии документа [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] будут автоматически удалены все кэшированные объекты из кэша данных.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846893"
  При добавлении объекта с **null** значение для кэширования данных с помощью <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибут во время разработки, можно использовать <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> объектов класса для инициализации кэшированных данных, перед открытием документа. Это полезно, если вы хотите инициализировать кэшированных данных на сервере без установленного перед конечным пользователем открыт документ Word или Excel. Дополнительные сведения см. в разделе [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Практическое: программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Практическое: кэшировать данные в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Пошаговое руководство: Создание основной/подробности связи, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Практическое руководство. Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Практическое руководство. Кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

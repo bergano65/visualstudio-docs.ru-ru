@@ -1,5 +1,6 @@
 ---
-title: Устранение неполадок и известные проблемы для отладки моментальных снимков | Документация Майкрософт
+title: Устранение неполадок отладки моментальных снимков | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284111"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059831"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы для отладки моментальных снимков в Visual Studio
 
 Если действия, описанные в этой статье не решило проблему, обратитесь в службу snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Проблема: Точки прикрепления не включается
+## <a name="issue-snappoint-does-not-turn-on"></a>Проблема. Точка прикрепления к включению
 
 Если отображается значок предупреждения ![значок предупреждения точка прикрепления](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "значок предупреждения точка прикрепления") с вашей точки прикрепления вместо значка регулярных точка прикрепления, затем точка прикрепления не включена.
 
@@ -32,7 +33,7 @@ ms.locfileid: "44284111"
 
 1. Убедитесь, что у вас есть ту же версию исходного кода, который использовался для создания и развертывания вашего app.isua1. Убедитесь, что загружается правильное символы для развертывания. Чтобы сделать это, просмотрите **модули** окна во время отладки моментальных снимков и проверить файл символов в столбце отображается PDB-файл загружен для отладки модуля. Отладчик моментальных снимков будет пытаться автоматически загружать и использовать символы для развертывания.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема: При открытии моментального снимка не загружать символы
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема. При открытии моментального снимка не загружать символы
 
 Если вы увидите представленную ниже окна, символы, не был загружен.
 
@@ -48,14 +49,14 @@ ms.locfileid: "44284111"
 
 - Кроме того Если ваша организация использует сервер символов или удаляет символы в другой путь, используйте параметры символов для загрузки нужные символы для развертывания.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема: я не вижу параметр «Присоединить отладчик моментальных снимков» в Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема. Я не вижу параметр «Присоединить отладчик моментальных снимков» в Cloud Explorer
 
 Выполните следующие действия:
 
 - Убедитесь, что установлен компонент отладчика моментальных снимков. Откройте установщик Visual Studio и проверьте **Snapshot Debugger** компонента в рабочую нагрузку Azure.
 - Убедитесь, что поддерживается приложение. В настоящее время только ASP.NET (4.6.1+) и поддерживаются приложений ASP.NET Core (2.0 или более поздней), развернутых в службах приложений Azure.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема: я вижу только регулирование моментальные снимки в окне средств диагностики
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема. Я вижу только регулирование моментальные снимки в окне средств диагностики
 
 ![Регулируемая точка прикрепления](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "регулирование точка прикрепления")
 

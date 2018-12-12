@@ -4,7 +4,7 @@ items:
 - name: Обзор
   items:
   - name: О Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: О редакторе кода
     href: get-started/tutorial-editor.md
   - name: О проектах и решениях
@@ -81,7 +81,7 @@ items:
         href: install/tools-for-managing-visual-studio-instances.md
     - name: Управление подписками
       items:
-      - name: 'Подписки Visual Studio: общие сведения для администратора'
+      - name: 'Подписки на Visual Studio: Общие сведения для администраторов'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Руководство администратора Help Viewer
       href: ide/help-viewer-administrator-guide.md
@@ -130,21 +130,21 @@ items:
   items:
   - name: Ориентация Visual Studio
     href: ide/quickstart-ide-orientation.md
-  - name: Создание консольного приложения на C++
+  - name: 'C++: Создание консольного приложения'
     href: ide/getting-started-with-cpp-in-visual-studio.md
-  - name: Создание веб-приложения на Python
+  - name: 'Python: Создание веб-приложения'
     href: ide/quickstart-python.md
-  - name: Создание веб-приложения на Node.js
+  - name: 'Node.js: Создание веб-приложения'
     href: ide/quickstart-nodejs.md
-  - name: Создание веб-службы на F#
+  - name: 'F#: Создание веб-службы'
     href: ide/quickstart-fsharp.md
-  - name: Создание веб-приложения на C#
+  - name: 'C#: Создание веб-приложения'
     href: ide/quickstart-aspnet-core.md
-  - name: Создание приложения UWP на C#
+  - name: 'C#: Создание приложения UWP'
     href: ide/quickstart-uwp-csharp.md
-  - name: Создание консольного приложения на C#
+  - name: 'C#: Создание консольного приложения'
     href: ide/quickstart-csharp-console.md
-  - name: Создание консольного приложения на Visual Basic
+  - name: 'Visual Basic: Создание консольного приложения'
     href: ide/quickstart-visual-basic-console.md
 - name: Учебники
   items:
@@ -158,9 +158,9 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: C# в Visual Studio
     items:
-    - name: Создание веб-приложения на C#
+    - name: 'C#: Создание веб-приложения'
       href: ide/tutorial-csharp-aspnet-core.md
-    - name: Создание консольного приложения на C#
+    - name: 'C#: Создание консольного приложения'
       href: ide/tutorial-csharp-console.md
   - name: Visual Basic в Visual Studio
     href: ide/tutorial-visual-basic-console.md
@@ -520,70 +520,70 @@ items:
         href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
       - name: Руководства по приложениям Windows Forms
         items:
-        - name: Руководство 1. Создание средства просмотра рисунков (C#)
+        - name: Учебник 1. Создание средства просмотра рисунков (C#)
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: Шаг 1. Создание проекта приложения Windows Forms
+          - name: Шаг 1. Создание проекта приложения Windows Forms
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: Шаг 2. Запуск программы
+          - name: Шаг 2. Запуск программы
             href: ide/step-2-run-your-program.md
           - name: Шаг 3. Настройка свойств формы
             href: ide/step-3-set-your-form-properties.md
-          - name: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
+          - name: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: Шаг 5. Добавление элементов управления в форму
+          - name: Шаг 5. Добавление элементов управления в форму
             href: ide/step-5-add-controls-to-your-form.md
-          - name: Шаг 6. Присвоение имен элементам управления "Кнопка"
+          - name: Шаг 6. Присвоение имен элементам управления "Кнопка"
             href: ide/step-6-name-your-button-controls.md
-          - name: Шаг 7. Добавление компонентов Dialog в форму
+          - name: Шаг 7. Добавление компонентов диалогового окна в форму
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
+          - name: Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: Шаг 9. Проверка, комментирование и тестирование кода
+          - name: Шаг 9. Проверка, комментирование и тестирование кода
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: Шаг 10. Написание кода дополнительных кнопок и флажка
+          - name: Шаг 10. Написание кода для дополнительных кнопок и флажка
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: Шаг 11. Запуск программы и изучение других функций
+          - name: Шаг 11. Запуск программы и изучение других функций
             href: ide/step-11-run-your-program-and-try-other-features.md
-        - name: Руководство 2. Создание математического теста с ограничением по времени (C#)
+        - name: Учебник 2. Создание математического теста с ограничением по времени (C#)
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: Шаг 1. Создание проекта и добавление в форму элементов управления Label
+          - name: Шаг 1. Создание проекта и добавление в форму элементов управления Label
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: Шаг 2. Создание задачи на сложение случайных чисел
+          - name: Шаг 2. Создание задачи на сложение случайных чисел
             href: ide/step-2-create-a-random-addition-problem.md
           - name: Шаг 3. Добавление таймера с обратным отсчетом
             href: ide/step-3-add-a-countdown-timer.md
-          - name: Шаг 4. Добавление метода CheckTheAnswer()
+          - name: Шаг 4. Добавление метода CheckTheAnswer()
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
+          - name: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: Шаг 6. Добавление задачи на вычитание
+          - name: Шаг 6. Добавление задачи на вычитание
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: Шаг 7. Добавление задач на умножение и деление
+          - name: Шаг 7. Добавление задач на умножение и деление
             href: ide/step-7-add-multiplication-and-division-problems.md
-          - name: Шаг 8. Настройка головоломки
+          - name: Шаг 8. Настройка теста
             href: ide/step-8-customize-the-quiz.md
-        - name: Руководство 3. Создание игры "Подбери пару!" (C#)
+        - name: Учебник 3. Создание игры "Подбери пару!" (C#)
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: Шаг 1. Создание проекта и добавление таблицы в форму
+          - name: Шаг 1. Создание проекта и добавление таблицы в форму
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: Шаг 2. Добавление случайного объекта и списка значков
+          - name: Шаг 2. Добавление случайного объекта и списка значков
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: Шаг 3. Назначение каждой метке случайного значка
+          - name: Шаг 3. Назначение каждому элементу управления Label случайного значка
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью
+          - name: Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: Шаг 5. Добавление ссылок на метки
+          - name: Шаг 5. Добавление ссылок на элементы управления Label
             href: ide/step-5-add-label-references.md
-          - name: Шаг 6. Добавление таймера
+          - name: Шаг 6. Добавление таймера
             href: ide/step-6-add-a-timer.md
-          - name: Шаг 7. Отмена исчезновения пар значков
+          - name: Шаг 7. Отмена исчезновения пар значков
             href: ide/step-7-keep-pairs-visible.md
-          - name: Шаг 8. Добавление метода для проверки, выиграл ли игрок
+          - name: Шаг 8. Добавление метода для проверки того, выиграл ли игрок
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: Шаг 9. Изучение других возможностей
+          - name: Шаг 9. Изучение других возможностей
             href: ide/step-9-try-other-features.md
   - name: Доступ к данным...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -592,7 +592,7 @@ items:
   - name: Компиляция и сборка
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: Пошаговое руководство. Сборка приложения
+    - name: Пошаговое руководство. Создание приложения
       href: ide/walkthrough-building-an-application.md
     - name: Сборка и очистка проектов и решений
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -660,7 +660,7 @@ items:
   - name: Настройка интегрированной среды разработки
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: Краткое руководство. Выбор цвета темы и текста для персонализации
+    - name: 'Краткое руководство: Выберите цвета темы и текста для персонализации'
       href: ide/quickstart-personalize-the-ide.md
     - name: Параметры среды
       href: ide/environment-settings.md
@@ -1120,9 +1120,9 @@ items:
       href: ide/developer-community-privacy.md
   - name: Как сообщить о проблеме с Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: Как сообщить о проблеме
+  - name: 'Общие сведения: Сообщите о проблеме'
     href: ide/report-a-problem.md
-  - name: Как предложить возможность
+  - name: 'Общие сведения: Предложение функции'
     href: ide/suggest-a-feature.md
   - name: Программа улучшения качества программного обеспечения
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Обращайтесь к нам
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027449"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160079"
