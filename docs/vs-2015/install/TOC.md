@@ -12,5 +12,3 @@
 ## [Практическое руководство. Переход с ознакомительного выпуска Visual Studio](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [Практическое руководство. Как найти ключ продукта для Visual Studio](how-to-locate-the-visual-studio-product-key.md)
 ## [Исключения политики жизненного цикла Visual Studio](visual-studio-lifecycle-policy-exceptions.md)
-# [Установка Visual Studio 2017](install-visual-studio-15-preview-5.md)
-## [Изменение Visual Studio 2017](modify-visual-studio-15-preview-5.md)
