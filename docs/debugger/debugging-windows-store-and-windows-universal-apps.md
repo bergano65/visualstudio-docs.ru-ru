@@ -1,6 +1,6 @@
 ---
-title: Отладка приложения UWP — Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Отладка приложений UWP | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 01/17/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511535"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064025"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка приложений для универсальной Windows (UWP) в Visual Studio
 

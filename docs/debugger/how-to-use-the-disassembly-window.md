@@ -1,6 +1,6 @@
 ---
-title: Просмотр дизассемблированного кода в отладчике в Visual Studio | Документация Майкрософт
-ms.custom: H1Hack27Feb2017
+title: Просмотр дизассемблированного кода в отладчике | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387673"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063840"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Просмотр дизассемблированного кода в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -74,4 +74,4 @@ ms.locfileid: "52387673"
 
 * [Перемещение вверх или вниз в области памяти](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
-* [Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)
+* [Практическое руководство: Использование окна регистров](../debugger/how-to-use-the-registers-window.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Подготовка к отладке: C#, F # и Visual Basic типы проектов | Документы Microsoft'
-ms.custom: ''
+title: Подготовка к отладке C#, F#и проекты VB | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479220"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063452"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: типы проектов C#, F# и Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: Типы проектов C#, F# и Visual Basic
 В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладки проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.  
+ Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md)  
+ [Рекомендуемые значения свойств](../debugger/managed-debugging-recommended-property-settings.md)  
  В данном разделе описываются рекомендуемые параметры свойств отладчика для проектов C#, F# и Visual Basic.  
   
  [Приложения Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
