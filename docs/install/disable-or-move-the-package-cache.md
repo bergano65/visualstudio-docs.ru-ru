@@ -1,8 +1,9 @@
 ---
-title: Отключение или перемещение кэша пакетов | Документация Майкрософт
+title: Отключение или перемещение кэша пакетов
 description: Сведения о включении, отключении и перемещении кэша пакетов для развертывания Visual Studio.
 ms.date: 04/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1461e4d854b7e2e257fe81fa76d39aa140426b86
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 006e7112a2b6c7b990fb412c6a9a2c458bc9e8b2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138522"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159546"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Отключение или перемещение кэша пакетов
 

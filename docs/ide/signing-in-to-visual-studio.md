@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348344"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159858"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -70,6 +70,6 @@ ms.locfileid: "51348344"
 ## <a name="see-also"></a>См. также
 
 * [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)
+* [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)
 * [Вход в систему (Visual Studio для Mac)](/visualstudio/mac/signing-in)
 * [Активация (Visual Studio для Mac)](/visualstudio/mac/activation)
