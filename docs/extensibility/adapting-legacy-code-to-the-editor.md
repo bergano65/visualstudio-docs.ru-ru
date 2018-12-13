@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078604"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307795"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Адаптировать устаревшего кода в редакторе
 В редакторе Visual Studio имеет множество функций, которые доступны через существующие компоненты кода. Ниже показано, как адаптировать компонента не MEF, например, пакет VSPackage, использовать функциональные возможности редактора. Инструкции также показано, как использовать адаптеры для получения служб редактора в управляемом и неуправляемом коде.  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>Для получения IVxTextBuffer  
   
-1.  Определения интерфейсов IVx * находятся в *VSEditor.h* файл *\..\VisualStudioIntegration\Common\Inc\\* папке установки пакета SDK для Visual Studio.  
+1.  Определения IVx\* интерфейсы являются в *VSEditor.h* файл *\..\VisualStudioIntegration\Common\Inc\\* папку в Visual Studio Установка пакета SDK.  
   
 2.  Следующий код создает экземпляр текстового буфера, используя `IVsUserData->GetData()` метод. В следующем коде `pData` — это указатель на `IVsUserData` объект.  
   
