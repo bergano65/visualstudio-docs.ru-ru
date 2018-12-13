@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936055"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307714"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание элемента управления панели элементов Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (VS SDK) позволяет создать элемент управления, который автоматически добавляется **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления с простой счетчик, который можно передавать другим пользователям.  
@@ -77,16 +77,16 @@ ms.locfileid: "49936055"
 3.  Создайте следующие объявления открытого свойства.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ ms.locfileid: "49936055"
 4.  Поместите следующий код `Load` событие элемента управления.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ ms.locfileid: "49936055"
 5.  Создайте приведенный ниже открытый метод для увеличения значения счетчика.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ ms.locfileid: "49936055"
 6.  Добавьте объявление для `Incremented` событий в класс элемента управления.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Вызывающие объекты можно добавить обработчики к этому событию реагировать на изменения в значении счетчика.  
@@ -131,7 +131,7 @@ ms.locfileid: "49936055"
 7.  Вернуться в режим конструктора и дважды щелкните **Сброс** кнопку, чтобы создать `btnReset_Click` обработчик событий, а затем введите в, как показано в следующем примере.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ ms.locfileid: "49936055"
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Тестирование элемента управления  
@@ -209,7 +209,7 @@ ms.locfileid: "49936055"
      Сбрасывает счетчик **0**.  
   
 ## <a name="next-steps"></a>Следующие шаги  
- При построении **элементов** элемент управления, Visual Studio создает файл с именем *ProjectName.vsix* в <em>\bin\debug\* папку проекта. Можно развернуть элемент управления, отправив *.vsix</em> файла в сети или на веб-сайт. Когда пользователь открывает *.vsix* файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, вы можете отправить *.vsix* файл [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, чтобы пользователи могли его найти, перейдя в **средства**  >  **Расширения и обновления** диалоговое окно.  
+ При построении **элементов** элемент управления, Visual Studio создает файл с именем *ProjectName.vsix* в папке \bin\debug\ проекта. Можно развернуть элемент управления, отправив *.vsix* файла в сети или на веб-сайт. Когда пользователь открывает *.vsix* файл, элемент управления устанавливается и добавляется к Visual Studio **элементов** на компьютере пользователя. Кроме того, вы можете отправить *.vsix* файл [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) , чтобы пользователи могли его найти, перейдя в **средства**  >   **Расширения и обновления** диалоговое окно.  
   
 ## <a name="see-also"></a>См. также  
  [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
