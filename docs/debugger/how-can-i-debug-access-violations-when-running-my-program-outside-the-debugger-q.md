@@ -1,6 +1,6 @@
 ---
-title: Как отладить нарушения доступа при запуске программы без отладчика? | Документы Майкрософт
-ms.custom: ''
+title: Отладка нарушения прав доступа при запуске приложения вне отладчика | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,20 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47941b2d98029c6466451fb947e31e71d14e6c57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42284de1195afb3b0926b15335c8e37bdcd5ec30
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473014"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048480"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Как отладить нарушения доступа при запуске программы без отладчика?
+
 ## <a name="problem-description"></a>Описание проблемы  
  Программа прекрасно работает в среде Visual Studio, но при автономном запуске под операционной системой Windows возникает нарушение доступа. Как это отладить?  
   
 ## <a name="solution"></a>Решение  
- Задать [непосредственно времени отладки](../debugger/just-in-time-debugging-in-visual-studio.md) параметр и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в **нарушение прав доступа** диалоговое окно, следует щелкнуть **отменить** для запуска отладчика.  
+ Активируйте параметр [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в диалоговом окне **Нарушение доступа** можно нажать **Отмена** и запустить отладчик.  
   
 ## <a name="see-also"></a>См. также  
- [Часто задаваемые вопросы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
+ [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

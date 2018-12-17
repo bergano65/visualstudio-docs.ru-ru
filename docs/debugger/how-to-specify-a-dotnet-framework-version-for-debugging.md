@@ -1,6 +1,6 @@
 ---
-title: 'Практическое: указание версии платформы .NET Framework для отладки | Документация Майкрософт'
-ms.custom: ''
+title: Укажите версию платформы .NET Framework для отладки | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15792a8ecbc538bdbf5516d480abde4903fbd8d3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056012"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Практическое: указание версии платформы .NET Framework для отладки (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Как выполнить Указание версии платформы .NET Framework для отладки (C#, Visual Basic, F#)
 
 Отладчик Visual Studio поддерживает отладку более старых версий Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и текущей версии. Если запускать приложение из Visual Studio, отладчик всегда может определить правильную версию платформы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для отлаживаемого приложения. Тем не менее, если приложение уже работает и его запуске отладки нажатием клавиши **присоединить к**, отладчик не всегда можно определить более старой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. В этом случае появится сообщение об ошибке следующего содержания:  
 
@@ -47,7 +47,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. В **редакторе реестра** откройте папку HKEY_LOCAL_MACHINE.  
   
-4. Перейдите в HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Окно "Перейти к". HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     Если раздел не существует, щелкните правой кнопкой мыши HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine и выберите команду **Создать раздел**. Назовите новый раздел `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
@@ -57,7 +57,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 6. Дважды щелкните **CLRVersionForDebugging**.  
   
-7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Например, "V1.1.4322".  
+7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Пример: V1.1.4322  
   
 8. Нажмите кнопку **ОК**.  
   

@@ -1,6 +1,6 @@
 ---
-title: Изменение кода и продолжение отладки в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Изменение кода и продолжение отладки | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 05/31/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da5d7eb9f3ae32097f46c5eb0436297eaa602fed
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284030"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048585"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Изменение кода и продолжение отладки в Visual Studio (C#, VB, C++)
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы с помощью команды **Продолжить** или **шаг**изменить и продолжить автоматически применяет изменения кода, с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.  
   
  Этот раздел содержит следующие подразделы:   
   
- [Практическое руководство. Включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Практическое руководство: включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Остановка внесения изменений в код](../debugger/how-to-stop-code-changes.md)   
+ [Практическое руководство: остановка внесения изменений в код](../debugger/how-to-stop-code-changes.md)   
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
