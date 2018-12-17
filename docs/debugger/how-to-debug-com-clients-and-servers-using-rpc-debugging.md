@@ -1,6 +1,6 @@
 ---
-title: 'Как: отладка COM-клиенты и серверы с помощью отладки RPC | Документы Microsoft'
-ms.custom: ''
+title: Отладка COM-клиентов и серверов, с помощью отладки RPC | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,25 +27,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473742"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049029"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Как выполнить Отладка клиентов и серверов COM с помощью отладки RPC
 Для отладки клиент-серверных приложений COM можно использовать отладку удаленного вызова процедур (RPC). Для этого необходимо включить отладку RPC. Если отладка RPC включена, то при заходе в вызов сервера со стороны клиента отладчик подключается к серверу, позволяя выполнить отладку кода. Когда отладчик подключен, все его функции можно использовать для отладки процессов как на стороне сервера, так и на стороне клиента.  
   
 ### <a name="to-enable-rpc-debugging"></a>Включение отладки RPC  
   
 1.  В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  В **параметры** диалоговое окно, нажмите кнопку **Отладка** папки.  
+2.  В диалоговом окне **Параметры** щелкните папку **Отладка**.  
   
-3.  Нажмите кнопку **собственного** страницы.  
+3.  Щелкните страницу **Машинный код**.  
   
-4.  Выберите **отладки RPC** флажок.  
+4.  Установите флажок **Отладка RPC**.  
   
     > [!NOTE]
     >  Для отладки вызовов RPC необходимо иметь привилегии администратора или опытного пользователя.  
@@ -55,4 +55,4 @@ ms.locfileid: "31473742"
   
 ## <a name="see-also"></a>См. также  
  [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)  
- [Отладка в Visual Studio](../debugger/index.md) [отладчика Обзор возможностей](../debugger/debugger-feature-tour.md)
+ [Отладка в Visual Studio](../debugger/index.md) [Обзор функций отладчика](../debugger/debugger-feature-tour.md)

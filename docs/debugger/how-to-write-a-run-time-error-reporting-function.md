@@ -1,6 +1,6 @@
 ---
-title: 'Практическое: написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт'
-ms.custom: ''
+title: Написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057877"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051507"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Как выполнить Написание функции, сообщающей об ошибке во время выполнения
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
   
  В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.  

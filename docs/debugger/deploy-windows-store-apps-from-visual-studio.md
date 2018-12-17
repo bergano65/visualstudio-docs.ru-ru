@@ -1,6 +1,6 @@
 ---
-title: Развертывание приложений UWP из Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Развертывание приложений UWP | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726316"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056815"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывание приложений UWP из Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "51726316"
 
 - Когда целевое устройство является удаленным, Visual Studio копирует требуемые файлы на удаленный компьютер и регистрирует приложение на этом устройстве.
 
-Развертывание осуществляется автоматически при отладке приложения из Visual Studio с помощью **начать отладку** параметр (Клавиатура: F5) или **Запуск без отладки** параметр (Клавиатура: CTRL + F5). Кроме того, приложение можно развернуть вручную. Это удобно в следующих сценариях:
+Развертывание осуществляется автоматически при отладке приложения из Visual Studio с помощью параметра Начать отладку** (на клавиатуре нажмите F5) или **Запуск без отладки** параметр (клавиатуры: CTRL+F5 Кроме того, приложение можно развернуть вручную. Это удобно в следующих сценариях:
 
 - Специализированное тестирование на локальном или удаленном компьютере.
 

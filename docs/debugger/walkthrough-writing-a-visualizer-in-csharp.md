@@ -1,6 +1,6 @@
 ---
-title: 'Пошаговое руководство: Написание визуализатора на C# | Документация Майкрософт'
-ms.custom: ''
+title: Написание визуализатора на C# | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6de9ed60fd4c4dc0290fc1f4b5a73415bea79dec
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388456"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059669"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C# #
 В данном пошаговом руководстве показано, как написать простой визуализатор, используя C#. Визуализатор, который вы создадите в данном пошаговом руководстве, показывает содержание строки, используя окно сообщений Windows Forms. Этот простой визуализатор строки сам по себе не очень полезен, но он демонстрирует основные действия для создания более полезных визуализаторов других типов данных.
@@ -222,7 +222,7 @@ ms.locfileid: "52388456"
 
    Поздравляем! Вы только что создали и протестировали ваш первый визуализатор.
 
-   Если вам удобнее вызывать визуализатор из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не из специально подготовленной тестовой программы, визуализатор необходимо установить. Дополнительные сведения см. в разделе [как: Установка визуализатора](../debugger/how-to-install-a-visualizer.md).
+   Если вам удобнее вызывать визуализатор из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не из специально подготовленной тестовой программы, визуализатор необходимо установить. Дополнительные сведения см. в разделе [Как установить визуализатор](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Создать визуализатор, с помощью шаблона элемента визуализатора
 

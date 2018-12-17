@@ -1,6 +1,6 @@
 ---
-title: Отладчика Windows в Visual Studio | Документация Майкрософт
-ms.custom: H1Hack27Feb2017
+title: Окна отладчика | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178310"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065156"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
 
-В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. Когда будет достигнута точка останова и выполнение остановится, нажмите кнопку **Отладка > Windows**.
+В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. Когда точка останова будет достигнута и выполнение остановится, выберите пункт **Отладка > Окна**.
 
 ||||
 |-|-|-|
@@ -31,23 +31,23 @@ ms.locfileid: "39178310"
 |Контрольное значение|SHIFT+F9|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|
 |Автоматические|CTRL+ALT+V, A|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
 |Локальные|CTRL+ALT+V, L|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
-|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md)|
+|Стеки вызовов|CTRL+ALT+C|[Практическое руководство: использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)|
 |Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|
 |Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|
-|Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Получить работу отладку многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|
-|Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
-|Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Модули|CTRL+ALT+U|[Практическое руководство: Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
+|Потоки GPU|-|[Практическое руководство: использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
 |Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная среда REPL Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Динамическое визуальное дерево|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Динамический обозреватель свойств|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Процессы|CTRL+ALT+Z|[Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)|
 |Память|CTRL+ALT+M, (1, 2, 3, 4)|[Окно памяти](../debugger/memory-windows.md)|
-|Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
-|Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
+|Дизассемблированный код|CTRL+ALT+D|[Практическое руководство: Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
+|Регистры|CTRL+ALT+G|[Практическое руководство: Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>См. также
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280601"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159533"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -37,32 +37,35 @@ ms.locfileid: "44280601"
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|База данных SQL|Azure Cosmos DB|Хранилища (большие двоичные объекты, таблицы, очереди, файлы)|
-|Хранилище данных SQL|SQL Server Stretch Database|StorSimple|
-
-И многое другое!
+- База данных SQL
+- Azure Cosmos DB
+- Хранилища (большие двоичные объекты, таблицы, очереди, файлы)
+- Хранилище данных SQL
+- SQL Server Stretch Database
+- StorSimple
+- И многое другое!
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016, включая Express и LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-И многое другое!
+- SQL Server 2005 – 2016 (включая Express и LocalDB)
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- И многое другое!
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|Данных|OrientDB|RavenDB|
-|VelocityDB|||
-
-И многое другое!
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- Данных
+- OrientDB |
+- RavenDB
+- VelocityDB
+- И многое другое!
 
 Многими поставщиками базы данных и третьим сторонам поддерживается интеграция с Visual Studio, пакеты NuGet. Вы можете изучить предложения на сайте nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интеграции с Visual Studio в качестве расширения. Эти предложения в Visual Studio Marketplace можно просмотреть, перейдя по адресу **средства**, **расширения и обновления** и выбрав **Online** в левой области диалоговое окно. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -73,7 +76,7 @@ ms.locfileid: "44280601"
 
 Все .NET доступ к данным, включая в .NET Core основан на ADO.NET, набор классов, определяющий интерфейс для доступа к любой тип источника данных, реляционных и нереляционных. Visual Studio предоставляет несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, обработки данных и представления данных пользователю. Документация в этом разделе описывается, как использовать эти средства. Также можно запрограммировать напрямую с объектами команды ADO.NET. Дополнительные сведения о прямого вызова API-интерфейсы ADO.NET, см. в разделе [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Для доступа к данным документацией, относящейся к ASP.NET, см. в разделе [работа с данными](http://www.asp.net/web-forms/overview/presenting-and-managing-data) на веб-сайте ASP.NET. Учебник по использованию Entity Framework с ASP.NET MVC, см. в разделе [Приступая к работе с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Для доступа к данным документацией, относящейся к ASP.NET, см. в разделе [работа с данными](https://www.asp.net/web-forms/overview/presenting-and-managing-data) на веб-сайте ASP.NET. Учебник по использованию Entity Framework с ASP.NET MVC, см. в разделе [Приступая к работе с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Универсальные приложения платформы Windows (UWP) в C# или Visual Basic можно использовать Microsoft Azure SDK для .NET для доступа к службе хранилища Azure и других служб Azure. Класс Windows.Web.HttpClient обеспечивает взаимодействие с любой службы RESTful. Дополнительные сведения см. в разделе [способ подключения к серверу HTTP, с помощью Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -103,9 +106,9 @@ ms.locfileid: "44280601"
 
 Программы на C++, которые используют службы REST можно использовать [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-Программы на C++, которые работают со службой хранилища Microsoft Azure можно использовать [клиента хранилища Microsoft Azure](http://www.nuget.org/packages/wastorage).
+Программы на C++, которые работают со службой хранилища Microsoft Azure можно использовать [клиента хранилища Microsoft Azure](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-Моделирование данных&mdash;Visual Studio не поддерживает уровень ORM для C++. [ODB](http://www.codesynthesis.com/products/odb/) является популярным ORM открытым исходным кодом для C++.
+Моделирование данных&mdash;Visual Studio не поддерживает уровень ORM для C++. [ODB](https://www.codesynthesis.com/products/odb/) является популярным ORM открытым исходным кодом для C++.
 
 Дополнительные сведения о подключении к базам данных из приложений C++, см. в разделе [Visual Studio data tools для C++](../data-tools/visual-studio-data-tools-for-cpp.md). Дополнительные сведения о технологии доступа к данным для предыдущих версий Visual C++, см. в разделе [доступ к данным](/cpp/data/data-access-in-cpp).
 
@@ -135,7 +138,7 @@ ms.locfileid: "44280601"
 
 [Платформа ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;описывается создание приложений данных, которые позволяют разработчикам программировать на основе концептуальной модели, а не непосредственно к реляционной базе данных.
 
-[Службы данных WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;описывается использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[Службы данных WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;описывается использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Данные в решениях Office](../vsto/data-in-office-solutions.md)&mdash;содержит ссылки на разделы с пояснением работы данных в решениях Office. Сюда входят сведения о схемо ориентированном программировании, кэшировании данных и доступа к данным на стороне сервера.
 
