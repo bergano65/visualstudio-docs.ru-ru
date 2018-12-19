@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: John-Hart
-ms.author: johnhart
+author: TerryGLee
+ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MT
+ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305680"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675267"
 ---
 # <a name="actions-pane-overview"></a>Общие сведения о панели действий
   Панель действий — это настраиваемая **действия с документами** область задач, который подключен к конкретному документу Microsoft Office Word или книгу Microsoft Office Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, таких как **источник XML** в Excel или **стили и форматирование** области задач в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.
@@ -48,16 +48,16 @@ ms.locfileid: "52305680"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Добавление нескольких элементов управления на панель действий  
  При добавлении нескольких элементов управления на панель действий, следует объединить их в пользовательский элемент управления и затем добавьте пользовательский элемент управления для <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство. Этот процесс состоит из следующих шагов.  
 
-1. Создание пользовательского интерфейса (UI) в панели действий, добавив **элемента управления панели действий** или **пользовательский элемент управления** в проект. Оба эти элемента включают пользовательский класс <xref:System.Windows.Forms.UserControl> Windows Forms. **Элемента управления панели действий** и **пользовательский элемент управления** элементы эквивалентны; единственное различие заключается в их именах.  
+1.  Создание пользовательского интерфейса (UI) в панели действий, добавив **элемента управления панели действий** или **пользовательский элемент управления** в проект. Оба эти элемента включают пользовательский класс <xref:System.Windows.Forms.UserControl> Windows Forms. **Элемента управления панели действий** и **пользовательский элемент управления** элементы эквивалентны; единственное различие заключается в их именах.  
 
-2. Добавление элементов управления Windows Forms в <xref:System.Windows.Forms.UserControl> с помощью конструктора или кода.  
+2.  Добавление элементов управления Windows Forms в <xref:System.Windows.Forms.UserControl> с помощью конструктора или кода.  
 
-   > [!NOTE]  
-   >  Можно также добавить элементы управления WPF на панель действий, добавив WPF <xref:System.Windows.Controls.UserControl> в <xref:System.Windows.Forms.UserControl> Windows Forms. Дополнительные сведения см. в разделе [управляет использования WPF в решениях Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+    > [!NOTE]  
+    >  Можно также добавить элементы управления WPF на панель действий, добавив WPF <xref:System.Windows.Controls.UserControl> в <xref:System.Windows.Forms.UserControl> Windows Forms. Дополнительные сведения см. в разделе [управляет использования WPF в решениях Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3. Добавьте экземпляр настраиваемого пользовательского элемента управления к элементам управления, которые содержатся в поле `ActionsPane` класса `ThisWorkbook` (для Excel) или `ThisDocument` (для Word) в проекте.  
+3.  Добавьте экземпляр настраиваемого пользовательского элемента управления к элементам управления, которые содержатся в поле `ActionsPane` класса `ThisWorkbook` (для Excel) или `ThisDocument` (для Word) в проекте.  
 
-   Примеры, демонстрирующие этот процесс более подробно, см. в разделе [как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+ Примеры, демонстрирующие этот процесс более подробно, см. в разделе [как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Скрыть панель действий  
  Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит метод <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> и свойство <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, панель действий невозможно удалить из пользовательского интерфейса с помощью членов класса <xref:Microsoft.Office.Tools.ActionsPane>. Вызов <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> метода или параметра <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> свойства **false** скрывает только элементы управления в панели действий; она будет отображаться на панели задач.  
