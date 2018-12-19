@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942222"
 ---
 # <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Сборка приложения
 
@@ -100,7 +100,7 @@ ms.locfileid: "50672786"
 
 1. Выберите страницу **Сборка** и затем в поле **Отключить предупреждения** укажите номер предупреждения **0168**.
 
-     ![Страница построения, конструктор проектов](../ide/media/buildwalk_csharpsuppresswarnings.png)
+     ![Страница построения, конструктор проектов](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Дополнительные сведения см. в разделе [Страница "Сборка" в конструкторе проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ ms.locfileid: "50672786"
 
 3. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
 
-     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsuppresswarnings.png)
+     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Дополнительные сведения см. в статье [Настройка предупреждений в Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -225,5 +225,5 @@ ms.locfileid: "50672786"
 ## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Сборка проекта (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
+- [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)
