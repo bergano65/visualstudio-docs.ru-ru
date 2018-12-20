@@ -1,5 +1,6 @@
 ---
-title: Руководство по работе с Python Шаг 5 — установка пакетов
+title: Python в Visual Studio. Руководство. Шаг 5 — установка пакетов
+titleSuffix: ''
 description: Шаг 5 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описаны функции Visual Studio для управления пакетами в окружении Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82cb54eb64d0864ba3b1d326d68f7303d3f2d882
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220512"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067292"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в окружении Python
 
-**Предыдущий шаг: [выполнение кода в отладчике](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Предыдущий шаг. [Выполнение кода в отладчике](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 Сообщество разработчиков на Python создало тысячи полезных пакетов, которые вы можете включать в свои проекты. В Visual Studio имеется пользовательский интерфейс для управления пакетами в средах Python.
 

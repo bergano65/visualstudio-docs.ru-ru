@@ -1,23 +1,24 @@
 ---
 title: Настройка веб-приложений Python для IIS
 description: Сведения о настройке веб-приложений Python для запуска в службах IIS на виртуальной машине Windows.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459571"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062908"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Настройка веб-приложений Python для IIS
 
@@ -120,7 +121,7 @@ FastCGI — это интерфейс, работающий на уровне �
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django.** Для проектов Django необходимо внести два изменения в файл *web.config*. Во-первых, измените значение `WSGI_HANDLER` на `django.core.wsgi.get_wsgi_application()` (объект находится в файле *wsgi.py*).
+    - **Django**: для проектов Django необходимо внести два изменения в файл *web.config*. Во-первых, измените значение `WSGI_HANDLER` на `django.core.wsgi.get_wsgi_application()` (объект находится в файле *wsgi.py*).
 
         ```xml
         <!-- Django apps only -->
@@ -133,7 +134,7 @@ FastCGI — это интерфейс, работающий на уровне �
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Только для приложений Django.** В файле *settings.py* проекта Django добавьте домен URL-адреса вашего сайта или его IP-адрес в параметр `ALLOWED_HOSTS`, как показано ниже, заменив "1.2.3.4" своим URL-адресом или IP-адресом:
+1. **Только для приложений Django**: в файле *settings.py* проекта Django добавьте домен URL-адреса вашего сайта или его IP-адрес в параметр `ALLOWED_HOSTS`, как показано ниже, заменив "1.2.3.4" своим URL-адресом или IP-адресом:
 
     ```python
     # Change the URL or IP address to your specific site

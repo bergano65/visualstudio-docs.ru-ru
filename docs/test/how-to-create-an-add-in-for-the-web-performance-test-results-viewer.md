@@ -1,5 +1,5 @@
 ---
-title: Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности
+title: Создание надстройки для средства просмотра результатов веб-тестов производительности
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896072"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068345"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Как выполнить Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности
 
 Пользовательский интерфейс **средства просмотра результатов веб-тестов производительности** можно расширить с помощью следующих пространств имен:
 
@@ -39,7 +39,7 @@ ms.locfileid: "52896072"
 Создайте или откройте решение, не находящееся в рабочей среде, с которым можно экспериментировать и которое содержит веб-приложение ASP.NET и проект веб-тестов производительности и нагрузочных тестов с одним или несколькими веб-тестами производительности для этого веб-приложения ASP.NET.
 
 > [!NOTE]
-> Веб-приложение ASP.NET и проект веб-тестов производительности и нагрузочного теста, содержащий веб-тесты производительности, можно создать с помощью процедур, описанных в статьях [Практическое руководство. Создание теста веб-службы](../test/how-to-create-a-web-service-test.md) и [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md).
+> Веб-приложение ASP.NET и проект веб-тестов производительности и нагрузочного теста, содержащий веб-тесты производительности, можно создать с помощью процедур, описанных в разделах [Практическое руководство. Создание теста веб-службы](../test/how-to-create-a-web-service-test.md) и [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Создание надстройки Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
+title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc
 ms.date: 10/29/2018
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e85650f6671684f2d0ed313603f1af88e608e1d9
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: ab4ce9393e922dec6677d37d7679e1a400a2b5fc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244428"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158883"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 

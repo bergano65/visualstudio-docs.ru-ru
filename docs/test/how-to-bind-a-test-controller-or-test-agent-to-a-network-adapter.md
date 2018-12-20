@@ -1,5 +1,5 @@
 ---
-title: Привязка контроллера тестирования или агента тестирования к сетевому адаптеру в Visual Studio
+title: Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896056"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065951"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Как выполнить Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
 Если компьютер, на котором установлено программное обеспечение контроллера или агента тестирования, оснащен несколькими сетевыми адаптерами, то чтобы определить этот контроллер или агент тестирования, необходимо указать не имя компьютера, а IP-адрес.
 
@@ -51,7 +51,7 @@ ms.locfileid: "52896056"
 
 2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Контроллер тестирования Visual Studio** и выберите команду **Остановить**.
 
-     - или -
+     -или-
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 
@@ -97,7 +97,7 @@ ms.locfileid: "52896056"
 
 2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Агент тестирования Visual Studio** и выберите команду **Остановить**.
 
-     - или -
+     -или-
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 
@@ -135,5 +135,5 @@ ms.locfileid: "52896056"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Практическое руководство: Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Практическое руководство: Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

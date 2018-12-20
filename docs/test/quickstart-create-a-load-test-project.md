@@ -1,5 +1,5 @@
 ---
-title: Создание проекта веб-теста производительности и нагрузочного теста в Visual Studio
+title: Создание проекта веб-теста производительности и нагрузочного теста
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896293"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057578"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Краткое руководство: создание проекта нагрузочного тестирования
+# <a name="quickstart-create-a-load-test-project"></a>Краткое руководство. Создание проекта нагрузочного тестирования
 
 Из этого 10-минутного краткого руководства вы узнаете, как создавать и запускать проект веб-теста производительности и нагрузочного теста в Visual Studio. В рамках нагрузочных тестов выполняются веб-тесты производительности или модульные тесты, чтобы моделировать действия множества пользователей, одновременно получающих доступ к серверу.
 

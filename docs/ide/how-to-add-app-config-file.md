@@ -1,5 +1,5 @@
 ---
-title: Добавление файла app.config в проект в Visual Studio
+title: Добавление к проекту файла app.config
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2182b0175d57d7283e63bdf408249fa7566da00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5c1a35622ba23558d33966ba918aa457c0f49d24
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31941978"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065168"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Практическое руководство. Добавление файла конфигурации приложения в проект C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Как выполнить Добавление файла конфигурации приложения в проект C#
 
 Добавив файл конфигурации приложения (файл *app.config*) в проект C#, вы можете настроить способ, которым общеязыковая среда выполнения будет находить и загружать файлы сборки. Дополнительные сведения о файлах конфигурации приложения см. в статье [Обнаружение сборок в среде выполнения (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 

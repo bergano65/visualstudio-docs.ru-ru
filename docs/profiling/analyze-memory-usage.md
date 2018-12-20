@@ -1,6 +1,6 @@
 ---
-title: Анализ использования памяти в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Анализ данных об использовании памяти
+ms.custom: seodec18
 ms.date: 01/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971f26881e522c81f2c111098f09a94133072d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948919"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065753"
 ---
 # <a name="analyze-memory-usage"></a>Анализ данных об использовании памяти
 С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять ее неэффективное использование. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче. Вы можете делать снимки приложений .NET, ASP.NET, а также собственных и смешанных приложений (на основе .NET и машинного кода).  
@@ -35,7 +35,7 @@ ms.locfileid: "49948919"
 
  [Анализ ресурсов ЦП и памяти во время отладки](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Блог по Visual C++. Профилирование памяти в Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Блог по Visual C++. Профилирование памяти в Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="see-also"></a>См. также
  [Профилирование в Visual Studio](../profiling/index.md)  

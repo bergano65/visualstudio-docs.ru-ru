@@ -1,5 +1,5 @@
 ---
-title: Вопросы и ответы об обозревателе тестов Visual Studio
+title: Вопросы и ответы по обозревателю тестов
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 49df84c5e852cfc282b6d679faf621669cf08148
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296343"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055268"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -122,8 +122,8 @@ ms.locfileid: "51296343"
 
 Последние тестовые проекты UWP указывают свойство сборки платформы тестирования, что позволяет повысить производительность при обнаружении тестовых приложений. Если у вас есть тестовый проект UWP, который был инициализирован в версии Visual Studio ниже 15.7, в разделе **Вывод** > **Тесты** вы можете увидеть следующую ошибку.
 
-**System.AggregateException: произошла одна ошибка или несколько. ---> System.InvalidOperationException: не удалось найти следующий объект TestContainer {} в Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
-  
+**System.AggregateException: произошла одна или несколько ошибок. ---> System.InvalidOperationException: не удалось найти следующий объект TestContainer {} в Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+
 Чтобы исправить эту ошибку, сделайте следующее:
 
 - Обновите свойство сборки тестового проекта, используя следующий код.

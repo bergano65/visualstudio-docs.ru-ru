@@ -1,5 +1,5 @@
 ---
-title: Создание подключаемого модуля записи для веб-тестов производительности в Visual Studio
+title: Создание подключаемого модуля записи для веб-тестов производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895843"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064632"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Практическое руководство. Создание подключаемого модуля записи
+# <a name="how-to-create-a-recorder-plug-in"></a>Как выполнить Создание подключаемого модуля записи
 
 Подключаемый модуль <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> позволяет изменять записанные веб-тесты производительности. Изменение происходит после нажатия кнопки **Стоп** на панели инструментов **средства записи веб-тестов производительности**, но до сохранения и отображения теста в редакторе веб-тестов производительности.
 

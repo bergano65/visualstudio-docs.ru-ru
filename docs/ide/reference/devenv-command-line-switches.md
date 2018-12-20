@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948898"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063400"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для Devenv
 
@@ -60,7 +60,7 @@ ms.locfileid: "51948898"
 
 Перечисленные ниже параметры командной строки позволяют отображать интегрированную среду разработки и выполнять описанные задачи.
 
-|Параметр командной строки|Описание:|
+|Параметр командной строки|Описание|
 | - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Загружает исполняемый файл C++ под управлением отладчика. Этот параметр недоступен для исполняемых файлов Visual Basic или C#. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -76,7 +76,7 @@ ms.locfileid: "51948898"
 
 Следующие параметры командной строки не отображают интегрированную среду разработки.
 
-|Параметр командной строки|Описание:|
+|Параметр командной строки|Описание|
 | - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Отображает справку по параметрам devenv в **окне командной строки**.<br /><br /> `devenv /?`|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> `devenv myproj.csproj /build`|

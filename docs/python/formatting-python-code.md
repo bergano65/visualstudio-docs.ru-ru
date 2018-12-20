@@ -1,6 +1,6 @@
 ---
-title: Форматирование кода Python
-description: Практическое руководство по автоматическому переформатированию кода Python в Visual Studio, в том числе интервалы, операторы, переносы и комментарии.
+title: Форматирование кода Python
+description: Visual Studio может автоматически переформатировать код Python, в том числе интервалы, операторы, переносы и комментарии.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219553"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052197"
 ---
 # <a name="format-python-code"></a>Форматирование кода Python
 
@@ -29,7 +30,7 @@ Visual Studio позволяет быстро переформатировать
 
 ![Параметры форматирования в Visual Studio](media/options-editor-formatting.png)
 
-Параметры форматирования по умолчанию задаются в соответствии с расширенным набором указаний [руководства по стилю PEP 8](http://www.python.org/dev/peps/pep-0008/). Вкладка **Общие** позволяет определить, когда применяется форматирование. Остальные три вкладки описаны в этой статье.
+Параметры форматирования по умолчанию задаются в соответствии с расширенным набором указаний [руководства по стилю PEP 8](https://www.python.org/dev/peps/pep-0008/). Вкладка **Общие** позволяет определить, когда применяется форматирование. Остальные три вкладки описаны в этой статье.
 
 Кроме того, благодаря [поддержке Python в Visual Studio](installing-python-support-in-visual-studio.md) в меню **Правка** > **Дополнительно** добавлена полезная команда [**Заполнить абзац комментариев**](#fill-comment-paragraph-command).
 

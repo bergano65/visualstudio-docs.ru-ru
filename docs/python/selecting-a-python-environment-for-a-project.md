@@ -1,6 +1,6 @@
 ---
 title: Выбор интерпретатора и окружения Python для проекта
-description: Сведения о выборе интерпретатора или окружения Python для использования в проекте Visual Studio, включая Anaconda и виртуальные среды.
+description: Вы можете отдельно выбрать окружение Python, включая Anaconda и виртуальные среды, для применения к конкретному проекту.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349456"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062539"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Выбор окружения Python для проекта
 
@@ -114,7 +115,7 @@ ms.locfileid: "51349456"
 Обратите внимание, что сейчас Visual Studio не позволяет использовать `conda` для установки пакетов в окружении Conda. Вместо этого используйте `conda` из командной строки.
 
 > [!Tip]
-> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается такое сообщение: **Ошибка: не удалось найти vcvarsall.bat**. Как правило, диспетчер `easy_install` может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
+> Если пакет содержит исходный код собственных компонентов в файлах *\*.pyd*, попытка pip установить пакет завершается сбоем. Если необходимая версия Visual Studio не установлена, pip не может скомпилировать эти компоненты. В этом случае отображается сообщение об ошибке: **Ошибка: не удалось найти vcvarsall.bat**. Как правило, диспетчер `easy_install` может скачать предварительно скомпилированные двоичные файлы. Подходящий компилятор для более старых версий Python можно скачать по адресу [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Дополнительные сведения см. в записи блога команды разработчиков Python [How to deal with the pain of “unable to find vcvarsall.bat”](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Что делать в случае возникновения ошибки "Не удалось найти vcvarsall.bat").
 
 ## <a name="see-also"></a>См. также
 

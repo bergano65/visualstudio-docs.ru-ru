@@ -1,5 +1,5 @@
 ---
-title: Свертывание и развертывание областей кода в Visual Studio
+title: Свертывание и развертывание областей кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349183"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064709"
 ---
 # <a name="outlining"></a>структуризация
 
@@ -53,7 +53,7 @@ ms.locfileid: "51349183"
 |Свернуть блок:\<логическая граница настроек>|(Visual C++) Сворачивает область в функции, в которой находится точка вставки. Например, если точка вставки находится внутри цикла, цикл скрывается.|
 |Свернуть все в: \<логические структуры>|(Visual C++) Сворачивает все структуры внутри функции.|
 
-Для определения областей текста, которые требуется развернуть или свернуть, можно также использовать пакет SDK для Visual Studio. См. статью [Пошаговое руководство. Структурирование](../extensibility/walkthrough-outlining.md).
+Для определения областей текста, которые требуется развернуть или свернуть, можно также использовать пакет SDK для Visual Studio. См. [Пошаговое руководство: структуризация](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>См. также
 

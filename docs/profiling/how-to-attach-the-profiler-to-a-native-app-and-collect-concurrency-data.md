@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор данных параллелизма при помощи командной строки | Документы Майкрософт
-ms.custom: ''
+title: Присоединение профилировщика к собственному приложению и сбор данных параллелизма
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220499"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067049"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор данных параллелизма при помощи командной строки
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к собственному автономному приложению и сбор данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к выполняющемуся автономному приложению (C/C++) в машинном коде и сбора данных о конфликтах потоков.  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "50220499"
   
      С параметром **/start:concurrency** можно использовать любой из параметров, приведенных в следующей таблице.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`Username`|Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.|  
     |[/crosssession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа.|  

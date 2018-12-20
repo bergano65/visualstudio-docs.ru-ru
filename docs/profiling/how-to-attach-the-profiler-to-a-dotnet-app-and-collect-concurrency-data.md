@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки | Документация Майкрософт
-ms.custom: ''
+title: Присоединение профилировщика к службе .NET для сбора данных параллелизма | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f727e2a06fa2e5798de84c7b6ee6d97bfb2a4558
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: dfaab7ef38cd87180f6d97e1db45e2c2d5d16946
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815289"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055093"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Как выполнить присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки
 В этой статье описывается, как использовать средства командной строки со средствами профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к запущенному автономному приложению .NET Framework (клиентскому) и сбора данных о параллелизме потоков и процессов.  
   
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "34815289"
   
      С параметром **/start:concurrency** можно использовать любой из следующих параметров.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.|  
@@ -55,7 +55,7 @@ ms.locfileid: "34815289"
   
     -   [/LineOff](../profiling/lineoff.md) отключает сбор данных о номерах строк.  
   
-    -   [/targetclr](../profiling/targetclr.md) **:** `Version` указывает версию профилируемой среды CLR, если в приложении загружено несколько версий среды выполнения. Необязательный.  
+    -   [/targetclr](../profiling/targetclr.md) **:** `Version` указывает версию профилируемой среды CLR, если в приложении загружено несколько версий среды выполнения. Необязательный параметр.  
   
 ## <a name="control-data-collection"></a>Управление сбором данных  
  Пока целевое приложение выполняется, вы можете управлять сбором данных путем запуска и остановки записи данных в файл, используя параметры *VSPerfCmd.exe*. Управление сбором данных позволяет собирать данные на определенных этапах выполнения программы, включая запуск или завершение работы приложения.  
@@ -64,7 +64,7 @@ ms.locfileid: "34815289"
   
 -   Следующие пары параметров *VSPerfCmd.exe* запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

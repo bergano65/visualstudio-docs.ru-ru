@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание пользовательских графиков в результатах нагрузочного теста в Visual Studio
+title: Как выполнить Создание пользовательских графиков в результатах нагрузочного теста
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895825"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055404"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Практическое руководство. Создание пользовательских графиков в результатах нагрузочного теста
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Как выполнить Создание пользовательских графиков в результатах нагрузочного теста
 
 Можно разработать диаграммы, отображающие определенные сведения о результатах нагрузочных тестов. При создании диаграммы следует указать счетчики нагрузочных тестов, которые будут на ней представлены.
 
@@ -40,9 +40,9 @@ ms.locfileid: "52895825"
 
      В **анализаторе тестовой нагрузки** появится новая диаграмма. Она появится в выбранной в настоящий момент области диаграммы и заменит ранее отображавшуюся диаграмму.
 
-3.  Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в статье [Практическое руководство. Добавление и удаление счетчиков на графиках в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в разделе [Как добавлять и удалять счетчики на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Практическое руководство. Добавление и удаление счетчиков на графах в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Практическое руководство: Добавление и удаление счетчиков на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -1,5 +1,6 @@
 ---
-title: Руководство по работе с Python. Шаг 1 — создание проекта
+title: Python в Visual Studio. Руководство. Шаг 1 — создание проекта
+titleSuffix: ''
 description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,33 +9,34 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220086"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049858"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Руководство. Работа с Python в Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Учебник. Работа с Python в Visual Studio
 
 Python — это популярный язык программирования, который отличается надежностью, гибкостью и простотой освоения. Его можно бесплатно использовать на любых операционных системах, и он поддерживается широким сообществом разработчиков. Кроме того, для него доступно множество бесплатных библиотек. Python поддерживает все способы разработки, включая веб-приложения, веб-службы, классические приложения, скрипты и научные вычисления. Его используют многие университеты, ученые, профессиональные и непрофессиональные разработчики.
 
 Visual Studio обеспечивает первоклассную поддержку языка Python. В этом учебнике рассматриваются перечисленные ниже действия.
 
-- [Шаг 0. Установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Шаг 1. Создание проекта Python (эта статья)](#step-1-create-a-new-python-project).
-- [Шаг 2. Написание и выполнение кода для ознакомления с функцией IntelliSense в Visual Studio на практике](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md).
-- [Шаг 3. Создание дополнительного кода в интерактивном окне REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+- [Шаг 0: установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Шаг 1. Создание проекта Python (эта статья)](#step-1-create-a-new-python-project)
+- [Шаг 2. Написание и выполнение кода для ознакомления с функцией IntelliSense в Visual Studio на практике](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Шаг 3. Создание дополнительного кода в интерактивном окне REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Шаг 4. Выполнение готовой программы в отладчике Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md).
-- [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
+- [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>Шаг 1. Создание проекта Python
+## <a name="step-1-create-a-new-python-project"></a>Шаг 1. Создание нового проекта Python
 
 С помощью *проекта* в Visual Studio производится управление всеми файлами, составляющими приложение, включая исходный код, ресурсы, конфигурации и другие данные. Проект формализует и обеспечивает взаимосвязь между всеми файлами проекта, а также между ними и внешними ресурсами, которые используются несколькими проектами. Таким образом, благодаря проектам расширять и развивать приложение становится гораздо проще, чем когда вы контролируете взаимосвязи в произвольных папках, скриптах, текстовых файлах или даже у себя в голове.
 

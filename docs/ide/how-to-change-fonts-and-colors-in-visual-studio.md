@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Изменение шрифтов и цветов в Visual Studio
+title: Изменение шрифтов и цветов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,19 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb7e762c15b99492bda03d5300af398552cfd01
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942173"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067645"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Как выполнить Изменение шрифтов и цветов в Visual Studio
 
 Настройку цвета фреймов и окон инструментов интегрированной среды разработки в Visual Studio можно несколькими способами.
 
 > [!TIP]
-> Сведения об изменении цветов в редакторе кода см. в статье [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Сведения об изменении цветов в редакторе кода см. в разделе [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Изменение цветовой темы интегрированной среды разработки
 
@@ -70,4 +70,4 @@ ms.locfileid: "31942173"
 ## <a name="see-also"></a>См. также
 
 - [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Практическое руководство: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

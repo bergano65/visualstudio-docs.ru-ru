@@ -1,5 +1,5 @@
 ---
-title: Упорядочение шаблонов в Visual Studio
+title: Упорядочивание шаблонов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948734"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066292"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Как выполнить Размещение и упорядочение шаблонов проектов и элементов
 
 Чтобы шаблоны отображались в диалоговых окнах **Новый проект** и **Добавление нового элемента**, файлы шаблонов следует помещать в расположение, которое Visual Studio распознает. Можно также создать пользовательские подкатегории в расположении с пользовательскими шаблонами. Категории будут отображаться в диалоговых окнах **Новый проект** и **Добавление нового элемента**.
 
@@ -125,5 +125,5 @@ ms.locfileid: "31948734"
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство: создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство: создание шаблонов элементов](../ide/how-to-create-item-templates.md)

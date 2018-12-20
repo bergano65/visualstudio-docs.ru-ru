@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
+title: Как выполнить Сбор данных о производительности для веб-сайта | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835992"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064301"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Как выполнить Сбор данных о производительности для веб-сайта
 
 В целях сбора данных о производительности для веб-приложения **можно использовать** мастер производительности [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Можно профилировать веб-приложение, которое открыто в Visual Studio, или веб-сайт [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], который находится на локальном компьютере и не открыт в интегрированной среде разработки Visual Studio.
 
@@ -79,11 +79,11 @@ ms.locfileid: "49835992"
 
 5. В поле **С какого локального URL-адреса или пути будет выполняться веб-приложение?** на третьей странице мастера введите URL-адрес для домашней страницы приложения и нажмите кнопку **Далее**.
 
-   - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **<http://localhost/MySite/default.aspx>**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.
+   - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **<`http://localhost/MySite/default.aspx`>**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.
 
-   - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.
+   - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница `http://localhost:nnnn/MySite/default.aspx` открывается в Internet Explorer для запуска сеанса.
 
-   - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.
+   - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например `http://www.contoso.com`.
 
      Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

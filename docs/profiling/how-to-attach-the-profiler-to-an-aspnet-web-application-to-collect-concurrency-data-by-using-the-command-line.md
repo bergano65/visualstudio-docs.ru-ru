@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных параллелизма при помощи командной строки | Документы Майкрософт
-ms.custom: ''
+title: Присоединение профилировщика к приложению ASP.NET для сбора данных параллелизма
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c18b96f794f8317dacc890345ae544765bcb204
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c806150acf8fb37ab7e3fd36a879a6c1273b015a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831709"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063361"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных параллелизма при помощи командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к веб-приложению ASP.NET для сбора данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к приложению ASP.NET и сбора данных о параллелизме потоков и процессов.  
 
  Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки Visual Studio. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна **командной строки** или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
@@ -38,7 +38,7 @@ ms.locfileid: "49831709"
 
      С параметром **/start** можно использовать любой из параметров, приведенных в следующей таблице.  
 
-   | Параметр | Описание: |
+   | Параметр | Описание |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику. |
    | [/crosssession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. |
@@ -62,7 +62,7 @@ ms.locfileid: "49831709"
 
 -   Пары параметров VSPerfCmd в следующей таблице запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

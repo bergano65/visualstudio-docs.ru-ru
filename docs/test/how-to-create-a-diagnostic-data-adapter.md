@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание адаптера диагностических данных в Visual Studio
+title: Как выполнить Создание адаптера диагностических данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895318"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068306"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Как выполнить Создание адаптера диагностических данных
 
 Чтобы создать *адаптер диагностических данных*, нужно создать библиотеку классов с помощью Visual Studio и добавить в нее интерфейсы API адаптера диагностических данных, входящие в Visual Studio Enterprise. Любые необходимые данные можно отправить в <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> инфраструктуры в виде потока или файла при обработке событий, возникших во время тестового запуска. Потоки или файлы, отправляемые в объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>, при окончании теста сохраняются в виде вложений в результатах теста. При создании ошибки на основе этих результатов теста и при использовании [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] эти файлы также связываются с ошибкой.
 
@@ -34,7 +34,7 @@ ms.locfileid: "52895318"
 
 Далее перечислены некоторые ключевые события, которые можно использовать при создании адаптера диагностических данных. Полный список событий адаптера диагностических данных см. в абстрактном классе <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|событие|Описание:|
+|событие|Описание|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Начало тестового запуска|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Завершение тестового запуска|
@@ -224,7 +224,7 @@ ms.locfileid: "52895318"
 
      Эти файлы вложены в результаты теста. Если при создании ошибки на основе результатов теста используется [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], эти файлы также добавляются к ошибке.
 
-     Если вы хотите использовать собственный редактор для сбора данных, используемых в параметрах тестирования, см. статью [Практическое руководство. Создание специализированного редактора данных для адаптера диагностических данных](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Если для параметров тестирования требуется использовать собственный редактор для сбора данных, см. раздел [Практическое руководство. Создание специализированного редактора данных для адаптера диагностических данных](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
 11. Для сбора файла журнала при завершении теста на основе пользовательской настройки параметров тестирования необходимо создать файл *App.config* и добавить его в решение. Этот файл, имеющий следующий формат, должен содержать URI для адаптера диагностических данных для его идентификации. Вместо параметров "Company/ProductName/Version" вставьте реальные значения.
 
@@ -257,15 +257,15 @@ ms.locfileid: "52895318"
     > [!NOTE]
     > Элемент конфигурации по умолчанию может содержать любые необходимые данные. Если пользователь не настраивает адаптер диагностических данных в параметрах тестирования, при выполнении адаптера диагностических данных ему будут передаваться данные по умолчанию. Поскольку XML-код, добавляемый в раздел `<DefaultConfigurations>`, скорее всего, не является частью объявленной схемы, можно пропустить все создаваемые им ошибки XML.
     >
-    > В следующей папке имеются другие примеры файлов конфигурации в зависимости от каталога установки: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
+    > Другие примеры файлов конфигурации можно найти по следующему пути (в зависимости от каталога установки): *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Дополнительные сведения об установке файла конфигурации см. в статье [Практическое руководство. Установка настраиваемого адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+     Дополнительные сведения об установке файла конфигурации см. в разделе [Практическое руководство. Установка пользовательского адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
 12. Выполните построение решения для создания сборки адаптера диагностических данных.
 
-13. Дополнительные сведения об установке собственного редактора см. в статье [Практическое руководство. Установка настраиваемого адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Сведения об установке пользовательского редактора см. в разделе [Практическое руководство. Установка пользовательского адаптера диагностических данных](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
 14. Дополнительные сведения о том, как настраивать параметры тестирования для использования среды при выполнении тестов, см. в разделе [Сбор данных диагностики в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
@@ -289,4 +289,4 @@ ms.locfileid: "52895318"
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
 - [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Практическое руководство. Создание специализированного редактора данных для адаптера диагностических данных](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Практическое руководство: Создание специализированного редактора данных для адаптера диагностических данных](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

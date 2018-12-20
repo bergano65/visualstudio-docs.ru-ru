@@ -1,8 +1,10 @@
 ---
 title: Использование Visual Studio на виртуальной машине Azure
+titleSuffix: ''
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
 ms.date: 09/12/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895851"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159975"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -34,11 +36,11 @@ ms.locfileid: "52895851"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019: предварительная версия (предварительная версия 1)                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
-| Visual Studio 2017 — последняя версия (15.9)                    |    Enterprise, Community     |      Версия 15.9.0      |
-|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.18     |
-|   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
-|         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек  |
+|   Visual Studio 2019: Предварительная версия (предварительная версия 1)                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
+| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.0      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.18     |
+|   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
+|         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
 
 > [!NOTE]
 > В соответствии с политикой обслуживания корпорации Майкрософт обслуживание изначально выпущенной версии Visual Studio 2015 (RTW) завершено. Обновление 3 — это последняя версия семейства продуктов Visual Studio 2015.
@@ -99,7 +101,7 @@ Azure предлагает разные размеры виртуальных м
 
 Спектр сред разработки довольно большой, а создание более сложных сопряжено со значительными расходами. Независимо от конфигурации вашей среды вы можете сохранить или записать настроенную виртуальную машину в качестве базового образа, который в будущем сможете использовать вы или другие члены команды. Загружая новую виртуальную машину, вы можете подготовить ее из базового образа, а не образа Azure Marketplace.
 
-Краткое описание процесса. Запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет `.vhd`-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
+Краткое описание: запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет `.vhd`-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*</center>
 

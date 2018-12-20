@@ -1,5 +1,5 @@
 ---
-title: Начало работы с C++ в Visual Studio
+title: Начало работы с C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459677"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160001"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 
@@ -156,5 +156,5 @@ Visual Studio использует *проекты*, чтобы упорядоч
 ## <a name="see-also"></a>См. также
 
 - [Использование интегрированной среды разработки Visual Studio для разработки классических приложений на языке C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Пошаговое руководство. Создание простого приложения с помощью C# или Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Пошаговое руководство: создание простого приложения с помощью C# или Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Советы по повышению продуктивности при работе в Visual Studio](../ide/productivity-tips-for-visual-studio.md)

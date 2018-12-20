@@ -1,5 +1,6 @@
 ---
-title: Общие сведения о поддержке Python в Visual Studio в ОС Windows
+title: Поддержки Python в Visual Studio под управлением Windows
+titleSuffix: ''
 description: Сведения о возможностях Python в Visual Studio, которые делают ее лучшей интегрированной средой разработки на Python в Windows (также называются инструментами Python для Visual Studio, PTVS).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001338"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068543"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -43,9 +45,9 @@ Visual Studio является мощной интегрированной ср�
 
 Дополнительные сведения:
 
-- Видео (2 мин 35 с). [Управление окружениями Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Документация. [Управление окружениями Python](managing-python-environments-in-visual-studio.md)
-- Документация. [Справочник по окружениям Python](python-environments-window-tab-reference.md)
+- Видео (2 мин 35 с): [Управление средами Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Документация: [Управление средами Python](managing-python-environments-in-visual-studio.md)
+- Документация: [Справочник по окружениям Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Многофункциональное редактирование, IntelliSense и понимание кода
 
@@ -55,12 +57,12 @@ Visual Studio предоставляет первоклассный редакт
 
 Дополнительные сведения:
 
-- Видео (2 мин 30 с). [Редактирование кода Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Документация. [Редактирование кода Python](editing-python-code-in-visual-studio.md)
-- Документация. [Форматирование кода](formatting-python-code.md)
-- Документация. [Рефакторинг кода](refactoring-python-code.md)
-- Документация. [Использование анализатора кода](linting-python-code.md)
-- Документы по основным возможностям Visual Studio: [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md).
+- Видео (2 мин 30 с): [Редактирование кода Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Документация: [Редактирование кода Python](editing-python-code-in-visual-studio.md)
+- Документация: [Форматирование кода](formatting-python-code.md)
+- Документация: [Рефакторинг кода](refactoring-python-code.md)
+- Документация: [Использование анализатора кода](linting-python-code.md)
+- Общая документация по функциям Visual Studio: [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Интерактивное окно
 
@@ -74,9 +76,9 @@ Visual Studio также поддерживает IPython и Jupyter в цикл
 
 Дополнительные сведения:
 
-- Видео (2 мин 22 с). [Интерактивное окно Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Документация. [Интерактивное окно](python-interactive-repl-in-visual-studio.md)
-- Документы: [IPython в Visual Studio](interactive-repl-ipython.md)
+- Видео (2 мин 22 с): [Интерактивное окно Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Документация: [Интерактивное окно](python-interactive-repl-in-visual-studio.md)
+- Документация: [IPython в Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Система проектов и шаблоны проектов и элементов
 
@@ -90,12 +92,12 @@ Visual Studio позволяет управлять постоянно возр�
 
 Дополнительные сведения:
 
-- Документация. [Управление проектами Python](managing-python-projects-in-visual-studio.md)
-- Документация. [Справочник по шаблонам элементов](python-item-templates.md)
-- Документы: [Шаблоны проектов Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Документация. [Работа с C++ и Python](working-with-c-cpp-python-in-visual-studio.md)
-- Документы по основным возможностям Visual Studio: [Шаблоны проектов и элементов](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Документация по основным возможностям Visual Studio. [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Документация: [Управление проектами Python](managing-python-projects-in-visual-studio.md)
+- Документация: [Справочник по шаблонам элементов](python-item-templates.md)
+- Документация: [Шаблоны проектов Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Документация: [Работа с C++ и Python](working-with-c-cpp-python-in-visual-studio.md)
+- Общая документация по функциям Visual Studio: [Шаблоны проектов и элементов](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Общая документация по функциям Visual Studio: [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Полнофункциональная отладка
 
@@ -106,10 +108,10 @@ Visual Studio позволяет управлять постоянно возр�
 Дополнительные сведения:
 
 - Видео: [Отладка Python — 3 мин 32 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Документация. [Отладка Python](debugging-python-in-visual-studio.md)
-- Документы: [Отладка в смешанном режиме на Python и C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Документы: [Удаленная отладка в Linux](debugging-python-code-on-remote-linux-machines.md)
-- Документация по основным возможностям Visual Studio. [First look at the Visual Studio Debugger](../debugger/debugger-feature-tour.md) (Первое знакомство с отладчиком Visual Studio)
+- Документация: [Отладка Python](debugging-python-in-visual-studio.md)
+- Документация: [Отладка в смешанном режиме для Python и C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Документация: [Удаленная отладка в Linux](debugging-python-code-on-remote-linux-machines.md)
+- Общая документация по функциям Visual Studio: [Обзор функций отладчика Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Средства профилирования с широким набором отчетов
 
@@ -120,8 +122,8 @@ Visual Studio позволяет управлять постоянно возр�
 Дополнительные сведения:
 
 - Видео: [Профилирование в Python — 3 мин 00 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Документы: [Средства профилирования для Python](profiling-python-code-in-visual-studio.md)
-- Документы по основным возможностям Visual Studio: [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md). (Не все функции профилирования Visual Studio доступны для Python.)
+- Документация: [Средства профилирования для Python](profiling-python-code-in-visual-studio.md)
+- Общая документация по функциям Visual Studio: [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md). (Не все функции профилирования Visual Studio доступны для Python.)
 
 ## <a name="unit-testing-tools"></a>Средства модульного тестирования
 
@@ -131,9 +133,9 @@ Visual Studio позволяет управлять постоянно возр�
 
 Дополнительные сведения:
 
-- Видео: [Тестирование в Python 2 мин 31 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Документы: [Инструменты модульного тестирования для Python](unit-testing-python-in-visual-studio.md)
-- Документы по основным возможностям Visual Studio: [Модульное тестирование кода](../test/unit-test-your-code.md).
+- Видео: [Тестирование в Python — 2 мин 31 с](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Документация: [Инструменты модульного тестирования для Python](unit-testing-python-in-visual-studio.md)
+- Общая документация по функциям Visual Studio: [Модульное тестирование кода](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
@@ -145,7 +147,7 @@ Visual Studio позволяет управлять постоянно возр�
 
 |   |   |
 |---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | <ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Введение в программирование на языке Python)</li><li>[Python Beginner: Strings and Functions](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015) (Python для новичков. Строки и функции)</li><li>[Python Fundamentals: List and Loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019) (Основы Python. Списки и циклы)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Популярные вопросы о Python)</li></ul> |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | <ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Введение в программирование на языке Python)</li><li>[Python для начинающих: строки и функции](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Основы Python: список и циклы](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Популярные вопросы о Python)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Вопросы и ответы
 

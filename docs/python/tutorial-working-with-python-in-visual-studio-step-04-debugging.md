@@ -1,5 +1,6 @@
 ---
-title: Руководство по работе с Python. Шаг 4 — отладка
+title: Python в Visual Studio. Руководство. Шаг 4 — отладка
+titleSuffix: ''
 description: Шаг 4 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь объясняется, как выполнять код Python в отладчике.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220138"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060424"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
+# <a name="step-4-run-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
 
-**Предыдущий шаг: [использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Предыдущий шаг. [Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Помимо возможности управления проектами, расширенных возможностей редактирования и **интерактивного** окна, Visual Studio предоставляет полнофункциональную поддержку отладки для кода Python. В отладчике можно выполнять код пошагово, включая каждую итерацию цикла. Кроме того, можно приостанавливать программу, если выполняются определенные условия. При приостановке программы в отладчике можно полностью изучить ее состояние и изменить значения переменных. Эти действия необходимы для выявления источников ошибок в программе. Кроме того, они позволяют тщательно отслеживать процесс работы программы.
 

@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459966"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248209"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Публикация в службу приложений Azure на платформе Windows
 
@@ -80,7 +81,7 @@ Visual Studio предоставляет возможность опублико
 
 При публикации в Службе приложений Azure из Visual Studio 2017 на сервер копируются только файлы проекта. Поэтому необходимо создать файлы, требуемые для настройки серверной среды.
 
-1. В **обозревателе решений** Visual Studio щелкните проект правой кнопкой мыши и выберите пункты *Добавить > Новый элемент...*. В открывшемся диалоговом окне выберите шаблон "Azure web.config (Fast CGI)" и нажмите кнопку "ОК". В корне проекта будет создан файл `web.config`.
+1. В **обозревателе решений** Visual Studio щелкните проект правой кнопкой мыши и выберите пункты **Добавить > Новый элемент**. В открывшемся диалоговом окне выберите шаблон "Azure web.config (Fast CGI)" и нажмите кнопку "ОК". В корне проекта будет создан файл `web.config`.
 
 1. Измените запись `PythonHandler` в `web.config` таким образом, чтобы путь соответствовал установке Python на сервере (точные сведения см. в [справочнике по настройке IIS](https://www.iis.net/configreference) (iis.net)). Например, для 64-разрядной версии Python 3.6.1 эта запись должна выглядеть так:
 
@@ -110,7 +111,7 @@ Visual Studio предоставляет возможность опублико
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django.** Для проектов Django необходимо внести два изменения в файл `web.config`. Во-первых, измените значение `WSGI_HANDLER` на `django.core.wsgi.get_wsgi_application()` (объект находится в файле `wsgi.py`).
+    - **Django**: для проектов Django необходимо внести два изменения в файл `web.config`. Во-первых, измените значение `WSGI_HANDLER` на `django.core.wsgi.get_wsgi_application()` (объект находится в файле `wsgi.py`).
 
         ```xml
         <!-- Django apps only -->
@@ -123,7 +124,7 @@ Visual Studio предоставляет возможность опублико
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Только для приложений Django.** В файле `settings.py` проекта Django добавьте домен URL-адреса сайта в массив `ALLOWED_HOSTS`, как показано ниже, заменив "vspython-test-02.azurewebsites.net" на собственный URL-адрес:
+1. **Только для приложений Django**: в файле `settings.py` проекта Django добавьте домен URL-адреса сайта в массив `ALLOWED_HOSTS`, как показано ниже, заменив "vspython-test-02.azurewebsites.net" на собственный URL-адрес:
 
     ```python
     # Change the URL to your specific site
@@ -184,7 +185,7 @@ Visual Studio предоставляет возможность опублико
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Публикация в службе приложений — Visual Studio 2015
 
 > [!Note]
-> На сайте youtube.com можно просмотреть краткое видео по этому процессу: [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Руководство по Python для Visual Studio. Создание веб-сайта, длительность 3 мин 10 с).
+> На сайте youtube.com можно просмотреть краткое видео об этом процессе: [Руководство по Python для Visual Studio. Создание веб-сайта](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (длительность — 3 мин 10 с).
 
 1. В **Обозревателе решений** щелкните проект правой кнопкой мыши и выберите действие **Публикация**.
 

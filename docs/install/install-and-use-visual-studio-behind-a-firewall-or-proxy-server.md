@@ -1,7 +1,7 @@
 ---
-title: Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером | Документация Майкрософт
+title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349573"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160170"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -55,7 +55,7 @@ ms.locfileid: "51349573"
 | visualstudio.microsoft.com | Расположение документации |
 | docs.microsoft.com | Расположение документации |
 | msdn.microsoft.com | Расположение документации |
-| www.microsoft.com | Расположение документации |
+| www\.microsoft.com | Расположение документации |
 | \*.windows.net | Расположение входа |
 | \*.microsoftonline.com | Расположение входа |
 | \*.live.com | Расположение входа |
@@ -72,9 +72,9 @@ ms.locfileid: "51349573"
 | download.unity3d.com | Разработка игр с помощью Unity (Unity) |
 | netstorage.unity3d.com | Разработка игр с помощью Unity (Unity) |
 | dl.google.com | Разработка мобильных приложений с помощью JavaScript (пакеты SDK и NDK для Android, эмулятор) <br /><br />Разработка мобильных приложений с помощью .NET (пакеты SDK и NDK для Android, эмулятор) |
-| www.incredibuild.com | Разработка игр с помощью C++ (IncrediBuild) |
+| www\.incredibuild.com | Разработка игр с помощью C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Разработка игр с помощью C++ (IncrediBuild) |
-| www.python.org | Разработка с помощью Python (Python) <br /><br />Приложения для обработки и анализа данных и аналитические приложения (Python) |
+| www\.python.org | Разработка с помощью Python (Python) <br /><br />Приложения для обработки и анализа данных и аналитические приложения (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Использование Visual Studio и служб Azure
@@ -115,13 +115,13 @@ ms.locfileid: "51349573"
 | Active Directory <br>Graph | graph.windows.net | https | 443 | Используется для подготовки новых приложений Azure Active Directory. Также используется поставщиком подключенной службы MSGraph Office 365 |
 | Проверка <br>обновлений CLI <br>службы "Функции Azure" | functionscdn.azureedge.net | https | 443 | Используется для проверки наличия обновленных версий CLI службы "Функции Azure". Если эта конечная точка отключена, будет использоваться кэшированная копия CLI (или копия, передаваемая компонентом "Функции Azure") |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | HTTP используется для скачивания Gradle во время сборки. HTTPS используется для включения подключаемых модулей Cordova в проекты |
-| Cloud Explorer | 1. & #60;Конечная точка кластера& #62; <br>Service Fabric. <br>2. &#60;Конечная точка управления&#62;<br>Cloud Explorer общего назначения. <br>3. &#60;Конечная точка Graph&#62;<br>Cloud Explorer общего назначения.<br>4. &#60;Конечная точка учетной записи хранения&#62;:<br>узлы хранилища. <br>5. &#60;URL-адреса портала Azure&#62;:<br>Cloud Explorer общего назначения. <br>6. &#60;Конечные точки хранилища ключей&#62;: <br>узлы виртуальной машины Azure Resource Manager.<br>7. &#60;Общедоступный IP-адрес кластера&#62;:<br>удаленная отладка и трассировка ETW Service Fabric. | <br>1. https.<br>2. https.<br>3. https.<br>4. https.<br>5. https.<br>6. https.<br>7. tcp | 1. 19080.<br>2. 443. <br>3. 443. <br>4. 443. <br>5. 443. <br>6. 443. <br>7. Динамический порт. | 1. Пример: test12.eastus.cloudapp.com.<br>2. Позволяет извлекать данные о подписках и ресурсах, а также управлять ресурсами Azure.<br>3. Позволяет извлекать данные о подписках Azure Stack<br>4. Позволяет управлять ресурсами службы хранения (пример: mystorageaccount.blob.core.windows.net).<br>5. Пункт контекстного меню "Открыть на портале" (позволяет открыть элемент ресурса на портале Azure)<br>6. Позволяет создавать и использовать хранилища ключей для отладки виртуальной машины (пример: myvault.vault.azure.net) <br><br>7. Динамически выделяет блок портов с учетом числа узлов в кластере и доступных портов. <br><br>Блок портов выполняет три попытки получения узлов минимум с 10 портами.<br><br>При трассировке потоковой передачи выполняется попытка получить блок портов, начиная с 810. Если какой-либо из этих блоков портов уже используется, выполняется попытка получить следующий блок и т. д. (Если подсистема балансировки нагрузки пуста, скорее всего, будут использоваться порты, начиная с 810.) <br><br>Точно так же для отладки резервируется четыре блока портов: <br>— connectorPort: 30398; <br>— forwarderPort: 31398; <br>— forwarderPortx86: 31399;<br>— fileUploadPort: 32398.<br> |
+| Cloud Explorer | 1. & #60;Конечная точка кластера& #62; <br>Service Fabric. <br>2. &#60;Конечная точка управления&#62;<br>Cloud Explorer общего назначения. <br>3. &#60;Конечная точка Graph&#62;<br>Cloud Explorer общего назначения.<br>4. &#60;Конечная точка учетной записи хранения&#62;:<br>узлы хранилища. <br>5. &#60;URL-адреса портала Azure&#62;:<br>Cloud Explorer общего назначения. <br>6. &#60;Конечные точки хранилища ключей&#62;: <br>узлы виртуальной машины Azure Resource Manager.<br>7. &#60;Общедоступный IP-адрес кластера&#62;:<br>удаленная отладка и трассировка ETW Service Fabric. | <br>1. https.<br>2. https.<br>3. https.<br>4. https.<br>5. https.<br>6. https.<br>7. tcp | 1. 19080.<br>2. 443. <br>3. 443. <br>4. 443. <br>5. 443. <br>6. 443. <br>7. Динамический порт. | 1. Пример: test12.eastus.cloudapp.com.<br>2. Позволяет извлекать данные о подписках и ресурсах, а также управлять ресурсами Azure.<br>3. Позволяет извлекать данные о подписках Azure Stack<br>4. Позволяет управлять ресурсами службы хранения (пример: mystorageaccount.blob.core.windows.net).<br>5. Пункт контекстного меню "Открыть на портале" (позволяет открыть элемент ресурса на портале Azure)<br>6. Позволяет создавать и использовать хранилища ключей для отладки виртуальной машины (пример: myvault.vault.azure.net) <br><br>7. Динамически выделяет блок портов с учетом числа узлов в кластере и доступных портов. <br><br>Блок портов выполняет три попытки получения узлов минимум с 10 портами.<br><br>При трассировке потоковой передачи выполняется попытка получить блок портов, начиная с 810. Если какой-либо из этих блоков портов уже используется, выполняется попытка получить следующий блок и т. д. (Если подсистема балансировки нагрузки пуста, скорее всего, будут использоваться порты, начиная с 810.) <br><br>Точно так же для отладки резервируется четыре блока портов: <br>— connectorPort: 30398, <br>— forwarderPort: 31398, <br>— forwarderPortx86: 31399,<br>— fileUploadPort: 32398<br> |
 | Облачные службы | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;пользовательская облачная служба&#62;.cloudapp.net <br> &#60;пользовательская виртуальная машина&#62;.&#60;region&#62;.azure.com | 1. rdp. <br><br> 2. https. <br><br> 3. https. <br><br> 4. https. <br><br> 5. https. <br><br>6. tcp. | 1. 3389. <br><br> 2. 443. <br><br> 3. 443. <br><br>4. 443. <br><br>5. 443. <br><br> 6. а) 30398 <br> 6. б) 30400 <br> 6. в) 31398 <br> 6. г) 31400 <br> 6. д) 32398 <br> 6. е) 32400 | 1.  Удаленный рабочий стол для виртуальной машины облачных служб <br><br> 2.  Компонент учетной записи хранения для диагностики закрытой конфигурации <br><br> 3.  порталу Azure <br><br> 4. Обозреватель сервера — служба хранилища Azure. &#42; — это имя пользовательской учетной записи хранения  <br><br> 5.  Ссылки для открытия портала. &#47; скачивания сертификата подписки &#47; публикации файла настроек <br><br>6. а) Локальный порт соединителя для удаленной отладки облачной службы и виртуальной машины<br> 6. б) Общий порт соединителя для удаленной отладки облачной службы и виртуальной машины <br> 6. в) Локальный порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины <br> 6. г) Общий порт сервера пересылки для удаленной отладки облачной службы и виртуальной машины  <br> 6. д) Локальный порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины <br> 6. е) Общий порт средства загрузки файлов для удаленной отладки облачной службы и виртуальной машины |
 | Service Fabric. | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Документация <br><br> 2. Функция создания кластера <br><br>3. Символ &#42; обозначает имя хранилища ключей Azure (пример: test11220180112110108.vault.azure.net)  <br><br>  4. Символ &#42; обозначает динамическую конечную точку (пример: vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Снимок <br>Отладчик | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (в зависимости от версии Visual Studio) | 1. Запрос JSON-файла для размера SKU службы приложений <br>2. Различные вызовы Azure RM <br>3. Вызов первоначальной загрузки сайта  <br>4. Целевая конечная точка клиента службы консоли Kudu для службы приложений <br>5. Запрос версии расширения сайта, опубликованного на nuget.org <br>6. Канал удаленной отладки |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Используется для просмотра, отправки, выполнения и администрирования заданий ASA <br><br> Используется для просмотра кластеров HDI, а также для отправки, диагностики и отладки заданий HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Используется для компиляции, отправки, просмотра, диагностики и отладки заданий. Также используется для просмотра файлов ADLS, а также отправки и скачивания файлов |
-| Служба упаковки | [account].visualstudio.com <br/> [учетная_запись].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены \*.npmjs.org, \*.nuget.org и \*.nodejs.org требуются только для определенных сценариев, включая задачи сборки (например, установщик средств NuGet или Node), или в том случае, если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
+| Служба упаковки | [account].visualstudio.com <br/> [учетная_запись].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Файлы \*.npmjs.org, \*.nuget.org и \*.nodejs.org требуются только в некоторых сценариях задач построения (например, для установщиков инструментов NuGet или Node), а также если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Используется для подключения с помощью Azure DevOps Services |
 | | | | | |
 

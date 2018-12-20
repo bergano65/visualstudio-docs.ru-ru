@@ -1,8 +1,9 @@
 ---
-title: Выбор расположения установки в Visual Studio 2017
-description: Узнайте, как уменьшить пространство, занимаемое установкой на системном диске, переместив кэш загрузки, общие компоненты, пакеты SDK и средства на разные диски.
+title: Выбор места установки
+description: Узнайте, как уменьшить пространство, занимаемое установкой Visual Studio на системном диске, переместив кэш загрузки, общие компоненты, пакеты SDK и средства на разные диски.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295037"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159845"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Выбор расположения установки в Visual Studio 2017
 
-**Новая возможность в версии 15.7**. Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске, изменив расположение ее файлов. В частности, можно использовать другое расположение для кэша загрузки, общих компонентов, пакетов SDK и файлов средств.
+**Новая возможность в версии 15.7**. Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске, изменив расположение ее файлов. В частности, можно использовать другое расположение для кэша загрузки, общих компонентов, пакетов SDK и файлов средств.
 
    > [!NOTE]
    > Некоторые средства и пакеты SDK имеют другие правила расположения установки. Эти средства и пакеты SDK устанавливаются на системном диске, даже если вы выбрали другое расположение.

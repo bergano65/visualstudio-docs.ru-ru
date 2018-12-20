@@ -1,5 +1,5 @@
 ---
-title: Добавление источника данных в веб-тест производительности в Visual Studio
+title: Добавление источника данных в веб-тест производительности
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896111"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065211"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Добавление источника данных в веб-тест производительности
 
@@ -124,7 +124,7 @@ ms.locfileid: "52896111"
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Вопрос. Какие базы данных можно использовать в качестве источника данных?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Вопрос: Какие базы данных можно использовать в качестве источника данных?
 
 **Ответ.** Можно использовать следующие компоненты:
 
@@ -140,9 +140,9 @@ ms.locfileid: "52896111"
 
 - Oracle 7.3, 8i, 9i или 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Вопрос. Можно ли использовать текстовый CSV-файл в качестве источника данных?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Вопрос: Можно ли использовать текстовый CSV-файл в качестве источника данных?
 
-**Ответ.** Ниже описан порядок действий.
+**Ответ.** Это делается так.
 
 1. Создайте папку, чтобы организовать артефакты базы данных проекта и добавить элемент.
 
@@ -164,7 +164,7 @@ ms.locfileid: "52896111"
 
      ![Ввод имени и выбор CSV-файла](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Вопрос. В моем CSV-файле нет заголовков столбцов. Как действовать в этом случае?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Вопрос: В моем CSV-файле нет заголовков столбцов. Как действовать в этом случае?
 
 **Ответ.** Если нет возможности добавить заголовки столбцов, можно использовать файл описания схемы, чтобы рассматривать CSV-файл как базу данных.
 
@@ -215,9 +215,9 @@ ms.locfileid: "52896111"
 
      ![Источник данных добавлен в тест](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Вопрос. Как использовать XML-файл в качестве источника данных?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Вопрос: Как использовать XML-файл в качестве источника данных?
 
-**О.** Да.
+**Ответ.** Да.
 
 1. Создайте папку, чтобы организовать артефакты базы данных проекта и добавить элемент.
 
@@ -247,7 +247,7 @@ ms.locfileid: "52896111"
 
      ![Ввод имени и выбор XML-файла](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Вопрос. Можно ли добавить привязку данных в запрос веб-службы, которая использует SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Вопрос: Можно ли добавить привязку данных в запрос веб-службы, которая использует SOAP?
 
 **Ответ.** Да, нужно изменить протокол SOAP XML вручную.
 

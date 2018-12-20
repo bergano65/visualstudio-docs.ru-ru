@@ -1,5 +1,6 @@
 ---
-title: Руководство по работе с Python. Шаг 6 — работа с Git
+title: Python в Visual Studio. Учебник. Шаг 6. Работа с Git
+titleSuffix: ''
 description: Шаг 6 базового пошагового руководства по работе с Python в Visual Studio. Здесь описаны возможности Visual Studio, связанные с Git.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e958046bb5574cb1a9b9799482fa3c96c203b013
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219410"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054480"
 ---
-# <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
+# <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
 
 **Предыдущий шаг. [Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 

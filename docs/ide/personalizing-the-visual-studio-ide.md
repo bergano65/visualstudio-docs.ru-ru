@@ -1,5 +1,5 @@
 ---
-title: Настройка интегрированной среды разработки Visual Studio
+title: Настройка интегрированной среды разработки
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388729"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159507"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "52388729"
 
 Чтобы изменить цветовую тему на светлую, темную или синюю, введите `environment` в поле **Быстрый запуск** и выберите **Среда --> Общие**. В диалоговом окне **Параметры** измените значение настройки **Цветовая тема**.
 
-Чтобы изменить параметры раскраски в редакторе, введите `environment` в поле **Быстрый запуск** и выберите **Среда --> Шрифты и цвета**. См. раздел [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Чтобы изменить параметры раскраски в редакторе, введите `environment` в поле **Быстрый запуск** и выберите **Среда --> Шрифты и цвета**. См. [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Регистр главного меню
 
@@ -50,7 +50,7 @@ ms.locfileid: "52388729"
 
 ### <a name="customize-menus-and-toolbars"></a>Настройка меню и панелей инструментов
 
-Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Сведения о добавлении или удалении элементов меню или панели инструментов см. в разделе [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Начальная страница
 
@@ -67,6 +67,6 @@ ms.locfileid: "52388729"
 ## <a name="see-also"></a>См. также
 
 - [Параметры среды](environment-settings.md)
-- [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)
 - [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Настройка интегрированной среды разработки Visual Studio для Mac](/visualstudio/mac/customizing-the-ide)

@@ -1,5 +1,6 @@
 ---
-title: Руководство по работе с Python. Шаг 2 — написание и запуск кода
+title: Python в Visual Studio. Учебник. Шаг 2. Написание и запуск кода
+titleSuffix: ''
 description: Шаг 2 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описано редактирование кода и запуск проекта.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219423"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054804"
 ---
-# <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
+# <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
 
-**Предыдущий шаг: [создание проекта Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Предыдущий шаг. [Создание проекта Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Хотя управление файлами проекта осуществляется в **обозревателе решений**, с *содержимым* файлов, например файлов исходного кода, вы обычно работаете в окне *редактора*. Редактор определяет тип редактируемого файла, включая язык программирования (на основе расширения файла), и обеспечивает характерные для этого языка возможности, например раскраску синтаксических конструкций и автоматическое завершение с помощью IntelliSense.
 

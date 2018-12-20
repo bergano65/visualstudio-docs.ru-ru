@@ -1,7 +1,7 @@
 ---
-title: Создание автономной установки Visual Studio
+title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/28/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 37d218893ab16a8d0907e608ebeb3b02ab944385
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826763"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159988"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
 
@@ -34,8 +34,8 @@ Visual Studio 2017 поддерживает различные конфигур
 
 ## <a name="use-the-download-all-then-install-feature"></a>Использование компонента Download all, then install (Скачать все и установить)
 
-[**Новые возможности 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): загрузив веб-установщик, выберите в установщике Visual Studio новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
+[**Новая возможность в версии 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
+): загрузив веб-установщик, выберите в установщике Visual Studio Installer новый компонент **Download all, then install** (Скачать все и установить). После этого продолжите установку.
 
    ![Параметр Download all, then install (Скачать все и установить)](media/download-all-then-install.png)
 

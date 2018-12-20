@@ -1,10 +1,11 @@
 ---
-title: Краткое руководство. Создание консольного приложения на C# в Visual Studio
+title: Создание первого консольного приложения на C# в Visual Studio
+titleSuffix: ''
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения "Hello World" на C# в Visual Studio.
-ms.custom: ''
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,14 +15,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443419"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158610"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Краткое руководство. Создание консольного приложения на C# в Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Краткое руководство. Создание первого консольного приложения на C# в Visual Studio
 
 Изучение этого ознакомительного руководства по возможностям интегрированной среды разработки Visual Studio (IDE) займет 5–10 минут. В его рамках вы создадите простое приложение на C#, выполняющееся в консоли.
 

@@ -1,24 +1,45 @@
 ---
 title: Журнал изменений (инструменты Visual Studio для Unity, Mac) | Документы Майкрософт
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775191"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027241"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Журнал изменений (инструменты Visual Studio для Unity, Mac)
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="1700"></a>1.7.0.0
+ Выпущено 13 ноября 2018 г.
+
+### <a name="new-features"></a>Новые функции
+
+-   **Отладчик:**
+
+    -   В диалоговом окне "Присоединение" добавлено больше сведений о клиенте (IP-адрес, имя компьютера).
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+-   **Отладчик:**
+
+     -   Исправлена взаимоблокировка в библиотеке, используемой для связи с модулем отладки Unity. Это проблема приводила к зависанию Visual Studio или Unity, особенно при выборе команды "Подключить к Unity" или перезапуске игры.
+     
+-   **Интеграция:**
+
+     -   Исправлена активация подключаемого модуля Unity, когда был выбран другой редактор по умолчанию.
+     
+     -   Исправлено создание шаблона файла Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Выпущено 24 июля 2018 г.

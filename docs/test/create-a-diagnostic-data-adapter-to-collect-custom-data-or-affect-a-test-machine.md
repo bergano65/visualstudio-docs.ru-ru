@@ -1,5 +1,5 @@
 ---
-title: Создание адаптера диагностических данных для тестирования в Visual Studio
+title: Создание адаптера диагностических данных для тестирования
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 788c5f24b2e3f965d93b645d024f29a6e0d6e7ea
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52893849"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068073"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Создание адаптера диагностических данных для сбора пользовательских данных или воздействия на тестовый компьютер
 
@@ -35,7 +35,7 @@ ms.locfileid: "52893849"
 |Задачи|Связанные разделы|
 |-|-----------------------|
 |**Создание адаптера диагностических данных**. Можно создать адаптер диагностических данных на основе библиотеки классов и использовать интерфейсы API адаптера диагностических данных для сбора сведений или воздействия на систему, применяемую для выполнения тестов.|-   [Практическое руководство. Создание адаптера диагностических данных](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Выбор пользовательского адаптера диагностических данных, используемого при выполнении тестов**. Вы можете выбрать адаптер диагностических данных, который следует использовать для параметров тестирования, чтобы он применялся во время выполнения тестов.|-   [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Выбор настраиваемого адаптера диагностических данных для использования при выполнении тестов**. Вы можете выбрать адаптер диагностических данных, который следует использовать для параметров тестирования, чтобы он применялся во время выполнения тестов.|-   [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
 ## <a name="see-also"></a>См. также
 

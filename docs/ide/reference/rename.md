@@ -1,5 +1,5 @@
 ---
-title: Рефакторинг для переименования в Visual Studio
+title: Рефакторинг — переименование
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295960"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063157"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Рефакторинг для переименования символов кода
 

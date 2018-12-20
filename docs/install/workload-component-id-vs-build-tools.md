@@ -1,5 +1,6 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Build Tools 2017
+titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для создания классических приложений Windows
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607865"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063050"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Каталог компонентов для Visual Studio Build Tools 2017
 
@@ -35,15 +36,15 @@ ms.locfileid: "51607865"
 * По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
 * Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
 
-Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в статье [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Руководство по переносу проектов расширения среды на Visual Studio 2017).
+Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в разделе [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="azure-development-build-tools"></a>Средства сборки и разработки Azure
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.AzureBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Описание.** Задачи и целевые объекты MSBuild для построения приложений Azure.
+**Описание.** Задачи и целевые объекты MSBuild для сборки приложений Azure.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -87,7 +88,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разраб�
 
 **Идентификатор:** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Описание:** сборка проектов базы данных SQL Server
+**Описание.** Сборка проектов базы данных SQL Server
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -106,7 +107,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты 
 
 ## <a name="net-desktop-build-tools"></a>Средства сборки классических приложений .NET
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
 **Описание.** Средства создания приложений на основе WPF, Windows Forms и консольных приложений с помощью C#, Visual Basic и F#.
 
@@ -148,9 +149,9 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 15
 
 ## <a name="msbuild-tools"></a>MSBuild Tools
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.MSBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Описание.** Предоставляет средства для сборки приложений на основе MSBuild.
+**Описание.** Средства, необходимые для сборки приложений на основе MSBuild.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET
 
 **Идентификатор:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Описание**. Задачи и целевые объекты MSBuild для создания масштабируемых сетевых приложений, использующих Node.js, асинхронную среду выполнения JavaScript, управляемую событиями.
+**Описание.** Задачи и целевые объекты MSBuild для создания масштабируемых сетевых приложений, использующих Node.js, асинхронную среду выполнения JavaScript, управляемую событиями.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -191,7 +192,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScri
 
 ## <a name="officesharepoint-build-tools"></a>Средства сборки Office и SharePoint
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
 **Описание.** Создание надстроек Office, SharePoint и VSTO.
 
@@ -231,7 +232,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разраб�
 
 ## <a name="universal-windows-platform-build-tools"></a>Инструменты для создания приложений универсальной платформы Windows
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
 **Описание.** Предоставляет инструменты, необходимые для создания приложений универсальной платформы Windows.
 
@@ -254,8 +255,8 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
@@ -265,7 +266,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ## <a name="visual-c-build-tools"></a>Visual C++ Build Tools
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.VCTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.VCTools
 
 **Описание.** Создание классических приложений Windows с помощью набора инструментов Microsoft C++, ATL или MFC.
 
@@ -295,8 +296,8 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
@@ -312,7 +313,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 **Идентификатор:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Описание**. Средства для создания надстроек и расширений для Visual Studio, включая новые команды, средства анализа кода и окна инструментов.
+**Описание.** Средства для создания надстроек и расширений для Visual Studio, включая новые команды, средства анализа кода и окна инструментов.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -336,9 +337,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя верс�
 
 ## <a name="web-development-build-tools"></a>Средства сборки для веб-разработчиков
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.WebBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Описание.** Задачи и целевые объекты MSBuild для построения веб-приложений.
+**Описание.** Задачи и целевые объекты MSBuild для сборки веб-приложений.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -381,9 +382,9 @@ Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET
 
 ## <a name="mobile-development-with-net"></a>Разработка мобильных приложений на платформе .NET
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Описание.** Средства создания кроссплатформенных приложений для iOS, Android и Windows с помощью C# и F#.
+**Описание.** Средства создания кроссплатформенных приложений для iOS, Android и Windows на C# и F#.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 

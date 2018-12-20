@@ -1,5 +1,6 @@
 ---
-title: Руководство. Сведения о Django в Visual Studio — шаг 5
+title: 'Руководство по Django в Visual Studio, шаг 5: аутентификация'
+titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio с описанием функций аутентификации, предоставляемых в шаблонах веб-проектов Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001234"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064077"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
+# <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
 
-**Предыдущий шаг: [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Предыдущий шаг. [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Так как аутентификация является распространенным требованием для веб-приложений, в шаблоне "Веб-проект Django" предусмотрена базовая последовательность аутентификации. (В шаблоне "Веб-проект опроса Django", который описан в шаге 6 этого руководства, также реализована такая последовательность.) При использовании любого из шаблонов проектов Django в Visual Studio в файл *settings.py* проекта Django включаются все модули, необходимые для проверки подлинности.
 
@@ -29,7 +31,7 @@ ms.locfileid: "52001234"
 > [!div class="checklist"]
 > - Использовать последовательность аутентификации, предоставляемую в шаблонах Visual Studio (шаг 5.1.).
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Шаг 5.1. Использование последовательности аутентификации
+## <a name="step-5-1-use-the-authentication-flow"></a>Шаг 5-1. Использование последовательности аутентификации
 
 Далее приведены инструкции по тестированию последовательности аутентификации и описаны связанные части проекта:
 
@@ -216,4 +218,4 @@ ms.locfileid: "52001234"
 ## <a name="go-deeper"></a>Дополнительные подробности
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Аутентификация пользователя в Django) (docs.djangoproject.com)
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
