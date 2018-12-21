@@ -1,5 +1,5 @@
 ---
-title: Рефакторинг для перемещения типа в соответствующий файл в Visual Studio
+title: Рефакторинг для перемещения типа в соответствующий файл
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884153"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059643"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Рефакторинг для перемещения типа в соответствующий файл
 
@@ -35,7 +35,7 @@ ms.locfileid: "49884153"
 
 ## <a name="how-to"></a>Практические советы
 
-1. Поместите курсор внутри имени типа, в котором он определен. Пример:
+1. Поместите курсор внутри имени типа, в котором он определен. Например:
 
    ```csharp
    class Person

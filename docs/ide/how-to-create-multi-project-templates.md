@@ -1,5 +1,5 @@
 ---
-title: Создание многопроектных шаблонов для Visual Studio
+title: Создание многопроектных шаблонов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978389"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049669"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
+# <a name="how-to-create-multi-project-templates"></a>Как выполнить Создание многопроектных шаблонов
 
 Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Когда в диалоговом окне **Новый проект** создается проект, основанный на многопроектном шаблоне, каждый проект в шаблоне добавляется в решение.
 
@@ -48,7 +48,7 @@ ms.locfileid: "38978389"
 
 Корневой файл *VSTEMPLATE* многопроектного шаблона отличается от однопроектного шаблона следующим образом:
 
-- Атрибут **Тип** элемента **VSTemplate** имеет значение **ProjectGroup** вместо **Project**. Пример:
+- Атрибут **Тип** элемента **VSTemplate** имеет значение **ProjectGroup** вместо **Project**. Например:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -171,7 +171,7 @@ ms.locfileid: "38978389"
 ## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство: создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

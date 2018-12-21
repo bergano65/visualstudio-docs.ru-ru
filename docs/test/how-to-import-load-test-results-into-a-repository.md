@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий в Visual Studio
+title: Как выполнить импорт результатов нагрузочного тестирования в репозиторий
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895071"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065990"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Как выполнить импорт результатов нагрузочного тестирования в репозиторий
 
 При выполнении нагрузочного теста данные, собранные во время тестового запуска, сохраняются в репозитории результатов нагрузочных тестов. В репозитории результатов нагрузочных тестов содержатся данные счетчиков производительности и сведения о всех ошибках. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -59,4 +59,4 @@ ms.locfileid: "52895071"
 
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство. Экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Практическое руководство: экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)

@@ -1,22 +1,23 @@
 ---
 title: Краткое руководство. Создание проекта Python на основе шаблона
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python на основе встроенного шаблона для базового приложения Flask.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996006"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066029"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
@@ -86,12 +87,12 @@ Visual Studio также предоставляет широкий набор ф
 
 **Вопрос. Можно ли также использовать шаблоны Cookiecutter?**
 
-**Ответ.** Да! По сути, Visual Studio предоставляет прямую интеграцию с Cookiecutter, о которой вы можете узнать в [кратком руководстве по созданию проекта на основе шаблона Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Ответ.** Да. По сути, Visual Studio предоставляет прямую интеграцию с Cookiecutter, о которой вы можете узнать в [кратком руководстве по созданию проекта из шаблона Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Учебник. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>См. также
 

@@ -1,5 +1,5 @@
 ---
-title: Настройка шрифтов и цветовых тем в Visual Studio
+title: Настройка цветовой темы и шрифтов
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627262"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159416"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -100,4 +100,4 @@ ms.locfileid: "42627262"
 ## <a name="see-also"></a>См. также
 
 - [Настройка редактора](../ide/customizing-the-editor.md)
-- [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)

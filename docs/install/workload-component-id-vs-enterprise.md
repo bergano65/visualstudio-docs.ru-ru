@@ -1,5 +1,6 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Enterprise 2017
+titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 665ee631f7b57fc409c45b0879e2457c52f55a04
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607982"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063170"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Каталог компонентов для Visual Studio Enterprise 2017
 
@@ -35,13 +36,13 @@ ms.locfileid: "51607982"
 * По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
 * Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
 
-Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в статье [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Руководство по переносу проектов расширения среды на Visual Studio 2017).
+Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в разделе [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Основной редактор Visual Studio (включен в Visual Studio Enterprise 2017)
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.CoreEditor
+**Идентификатор:** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Описание.** Основные возможности оболочки Visual Studio, включая редактирование кода с учетом синтаксиса, управление исходным кодом и рабочими элементами.
 
@@ -54,7 +55,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная с
 
 ## <a name="azure-development"></a>Разработка для Azure
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.Azure
+**Идентификатор:** Microsoft.VisualStudio.Workload.Azure
 
 **Описание.** Пакеты Azure SDK, инструменты и проекты для разработки облачных приложений, создания ресурсов и контейнеров, включая поддержку Docker.
 
@@ -150,9 +151,9 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ## <a name="data-storage-and-processing"></a>Хранение и обработка данных
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.Data
+**Идентификатор:** Microsoft.VisualStudio.Workload.Data
 
-**Описание.** Подключение, разработка и тестирование решений по обработке данных с помощью SQL Server, Azure Data Lake или Hadoop.
+**Описание.** Связывание, разработка и тестирование решений по обработке данных с помощью SQL Server, Azure Data Lake и Hadoop.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -213,9 +214,9 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка�
 
 ## <a name="data-science-and-analytical-applications"></a>Приложения для обработки и анализа данных и аналитические приложения
 
-**ID:** Microsoft.VisualStudio.Workload.DataScience
+**Идентификатор:** Microsoft.VisualStudio.Workload.DataScience
 
-**Описание.** Языки и инструменты для создания приложений для обработки и анализа данных, включая Python, R и F#.
+**Описание.** Языки и средства для создания приложений для обработки и анализа данных, включая Python, R и F#.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -258,9 +259,9 @@ Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.
 
 ## <a name="net-desktop-development"></a>Разработка классических приложений .NET
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.ManagedDesktop
+**Идентификатор:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**Описание.** Разработка приложений WPF, Windows Forms и консольных приложений с использованием .C#, Visual Basic и F#.
+**Описание.** Создание WPF, форм Windows Forms и консольных приложений с помощью C#, Visual Basic и F#.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -341,9 +342,9 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-р�
 
 ## <a name="game-development-with-unity"></a>Разработка игр с помощью Unity
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.ManagedGame
+**Идентификатор:** Microsoft.VisualStudio.Workload.ManagedGame
 
-**Описание.** Создание двухмерных и трехмерных игр с помощью мощной кроссплатформенной среды разработки Unity.
+**Описание.** Создание двухмерных и трехмерных игр с помощью Unity, мощной кроссплатформенной среды разработки.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -361,7 +362,7 @@ Component.UnityEngine.x86 | Редактор Unity 5.6 (32-разрядный) |
 
 ## <a name="linux-development-with-c"></a>Разработка приложений для Linux на C++
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NativeCrossPlat
+**Идентификатор:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
 **Описание.** Создание и отладка приложений, запускаемых в среде Linux.
 
@@ -381,7 +382,7 @@ Component.MDD.Linux.GCC.arm | Разработка для встроенных �
 
 ## <a name="desktop-development-with-c"></a>Разработка классических приложений на C++
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NativeDesktop
+**Идентификатор:** Microsoft.VisualStudio.Workload.NativeDesktop
 
 **Описание.** Создание классических приложений Windows с помощью набора инструментов Microsoft C++, ATL или MFC.
 
@@ -428,8 +429,8 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
@@ -443,7 +444,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ## <a name="game-development-with-c"></a>Разработка игр на C++
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NativeGame
+**Идентификатор:** Microsoft.VisualStudio.Workload.NativeGame
 
 **Описание.** Используйте все возможности C++ для создания профессиональных игр на базе DirectX, Unreal или Cocos2D.
 
@@ -489,8 +490,8 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
@@ -502,9 +503,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ## <a name="mobile-development-with-c"></a>Разработка мобильных приложений на C++
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NativeMobile
+**Идентификатор:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**Описание.** Создание кроссплатформенных приложений на С++ для iOS, Android или Windows.
+**Описание.** Создание межплатформенных приложений для iOS, Android или Windows на С++.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -533,9 +534,9 @@ Component.MDD.IOS | Средства разработки C++ для iOS | 15.0.
 
 ## <a name="net-core-cross-platform-development"></a>Кроссплатформенная разработка .NET Core
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NetCoreTools
+**Идентификатор:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Описание.** Создание кроссплатформенных приложений с помощью .NET Core, ASP.NET Core, HTML/JavaScript и контейнеров, включая поддержку Docker.
+**Описание.** Создание кроссплатформенных приложений с помощью .NET Core, ASP.NET Core, HTML, JavaScript и контейнеров, включая поддержку Docker.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -604,7 +605,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка вре
 
 ## <a name="mobile-development-with-net"></a>Разработка мобильных приложений на платформе .NET
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NetCrossPlat
+**Идентификатор:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
 **Описание.** Создание кроссплатформенных приложений для iOS, Android или Windows с помощью Xamarin.
 
@@ -654,9 +655,9 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства униве�
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET и веб-разработка
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.NetWeb
+**Идентификатор:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Описание.** Создание веб-приложений с помощью ASP.NET, ASP.NET Core, HTML/JavaScript и контейнеров, включая поддержку Docker.
+**Описание.** Создание веб-приложений с помощью ASP.NET, ASP.NET Core, HTML, JavaScript и контейнеров, включая поддержку Docker.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -751,9 +752,9 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ## <a name="nodejs-development"></a>Разработка Node.js
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.Node
+**Идентификатор:** Microsoft.VisualStudio.Workload.Node
 
-**Описание.** Разработка масштабируемых сетевых приложений с помощью Node.js, асинхронной управляемой событиями среды выполнения JavaScript. 
+**Описание.** Создание масштабируемых сетевых приложений при помощи Node.js, асинхронной среды выполнения JavaScript с управлением на основе событий. 
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -777,9 +778,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя верс�
 
 ## <a name="officesharepoint-development"></a>Разработка для Office и SharePoint
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.Office
+**Идентификатор:** Microsoft.VisualStudio.Workload.Office
 
-**Описание.** Создание надстроек для Office и SharePoint, решений SharePoint и надстроек для VSTO на языках C#, VB и JavaScript.
+**Описание.** Создание надстроек для Office 365 и SharePoint, решений SharePoint и надстроек VSTO на C#, VB и JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -845,9 +846,9 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 
 ## <a name="python-development"></a>Разработка на Python
 
-**ID:** Microsoft.VisualStudio.Workload.Python
+**Идентификатор:** Microsoft.VisualStudio.Workload.Python
 
-**Описание:** редактирование, отладка, интерактивная разработка и управление версиями для Python.
+**Описание.** Редактирование, отладка, интерактивная разработка и система управления версиями для Python.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -932,9 +933,9 @@ Microsoft.VisualStudio.ComponentGroup.Web | Предварительные тр�
 
 ## <a name="universal-windows-platform-development"></a>Разработка с помощью универсальной платформы Windows
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.Universal
+**Идентификатор:** Microsoft.VisualStudio.Workload.Universal
 
-**Описание.** Создание приложений для универсальной платформы Windows с помощью C#, VB, JavaScript или C++.
+**Описание.** Вы сможете создавать приложения для универсальной платформы Windows на C#, VB, JavaScript или C++.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -987,8 +988,8 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
@@ -1002,9 +1003,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ## <a name="visual-studio-extension-development"></a>Разработка расширений Visual Studio
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.VisualStudioExtension
+**Идентификатор:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Описание.** Создание надстроек и расширений для Visual Studio. Содержит новые команды, анализаторы кода и окна инструментов.
+**Описание.** Создавайте надстройки и расширения для Visual Studio, включая новые команды, анализаторы кода и окна инструментов.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -1046,7 +1047,7 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Инструм
 
 ## <a name="mobile-development-with-javascript"></a>Разработка мобильных приложений на языке JavaScript
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.WebCrossPlat
+**Идентификатор:** Microsoft.VisualStudio.Workload.WebCrossPlat
 
 **Описание.** Разработка приложений Android, iOS и UWP с помощью средств для Apache Cordova.
 

@@ -1,24 +1,25 @@
 ---
 title: Краткое руководство. Клонирование репозитория с кодом Python
 description: С помощью этого краткого руководства вы создадите проект Python в Visual Studio, клонировав репозиторий Python Koans с использованием Visual Studio Team Explorer
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068397"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 
 [Установив поддержку Python в Visual Studio 2017](installing-python-support-in-visual-studio.md), можно добавить расширение GitHub для Visual Studio. Оно позволяет легко клонировать репозиторий с кодом Python и создать на его основе проект из среды IDE. Кроме того, вы в любое время можете клонировать репозитории в командной строке и затем работать с ними в Visual Studio.
 
@@ -57,7 +58,7 @@ ms.locfileid: "44281693"
 
 1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**. Если происходит ошибка **FileNotFoundError** для файла *koans.txt*, проверьте рабочую папку, как описано на предыдущем шаге.
 
-1. Если программа выполняется успешно, в строке 17 файла *python3/koans/about_asserts.py* должна создаваться ошибка утверждения. Это сделано намеренно: в программу умышленно внесены ошибки, чтобы вы учились работе с Python, исправляя их. (Дополнительные сведения можно найти на сайте проекта [Ruby Koans](http://rubykoans.com/), который послужил источником вдохновения для Python Koans.)
+1. Если программа выполняется успешно, в строке 17 файла *python3/koans/about_asserts.py* должна создаваться ошибка утверждения. Это сделано намеренно: в программу умышленно внесены ошибки, чтобы вы учились работе с Python, исправляя их. (Дополнительные сведения можно найти на сайте проекта [Ruby Koans](https://rubykoans.com/), который послужил источником вдохновения для Python Koans.)
 
     ![Первые выходные данные программы Python Koans](media/koans-output.png)
 
@@ -79,7 +80,7 @@ ms.locfileid: "44281693"
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Учебник. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>См. также
 

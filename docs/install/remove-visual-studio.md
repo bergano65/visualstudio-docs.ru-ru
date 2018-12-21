@@ -1,7 +1,8 @@
 ---
-title: Удаление Visual Studio 2017 | Документы Майкрософт
+title: Удаление Visual Studio
+titleSuffix: ''
 description: Пошаговые инструкции по полному удалению Visual Studio с компьютера.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/12/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: fb3f86c59f205137dc3b72c8f0beff69f4d95a99
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382770"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159663"
 ---
-# <a name="remove-visual-studio"></a>Удаление Visual Studio
+# <a name="remove-visual-studio-2017"></a>Удаление Visual Studio 2017
 
 Если произошла неустранимая ошибка, из-за которой невозможно восстановить или удалить Visual Studio, вы можете запустить средство `InstallCleanup.exe`, чтобы удалить файлы установки и сведения о продукте для всех установленных экземпляров Visual Studio 2017 и более поздних версий. Запуск этого средства следует рассматривать как крайнюю меру в случае, если не удается восстановить или удалить среду, так как оно может удалить компоненты из других установок Visual Studio или других продуктов, которые нужно восстановить.
 

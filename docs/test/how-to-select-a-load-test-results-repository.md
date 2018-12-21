@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор репозитория результатов нагрузочного тестирования в Visual Studio
+title: Как выполнить выбор репозитория результатов нагрузочного теста
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895656"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059977"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. Выбор репозитория результатов нагрузочного теста
+# <a name="how-to-select-a-load-test-results-repository"></a>Как выполнить выбор репозитория результатов нагрузочного теста
 
 Не обязательно использовать локальное хранилище результатов. Нагрузочные тесты зачастую выполняются на наборе удаленных компьютеров агентов. Агенты совместно с контролером могут создавать большую имитационную нагрузку, чем любой одиночный компьютер. Дополнительные сведения см. в статье [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md).
 

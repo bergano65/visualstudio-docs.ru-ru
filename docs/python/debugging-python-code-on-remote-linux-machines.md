@@ -1,22 +1,23 @@
 ---
 title: Отладка кода Python на удаленных компьютерах Linux
-description: Узнайте, как с помощью Visual Studio отладить код Python, выполняющийся на удаленных компьютерах Linux, в том числе здесь приведены необходимые этапы настройки, обеспечения безопасности и устранения неполадок.
-ms.date: 10/15/2018
+description: Используйте Visual Studio, чтобы отладить код Python, выполняющийся на удаленных компьютерах Linux, в том числе здесь приведены необходимые этапы настройки, обеспечения безопасности и устранения неполадок.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356773"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067950"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -26,7 +27,7 @@ Visual Studio позволяет локально и удаленно запус
 
 |   |   |
 |---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Обзор удаленной отладки можно найти в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017. |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Введение в удаленную отладку см. в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Настройка компьютера Linux
 
@@ -106,7 +107,7 @@ Visual Studio позволяет локально и удаленно запус
 
 1. Visual Studio переключается в режим отладки, а скрипт продолжает выполняться на удаленном компьютере, предоставляя все обычные возможности [отладки](debugging-python-in-visual-studio.md). Например, установите точку останова в строке `if guess < number:`, затем переключитесь на удаленный компьютер и введите другую догадку. После этого Visual Studio на локальном компьютере останавливается в этой точке останова, показывает локальные переменные и т. д.
 
-    ![Срабатывание точки останова](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio приостанавливает отладку при попадании в точку останова](media/remote-debugging-breakpoint-hit.png)
 
 1. При остановке отладки Visual Studio отключается от программы, которая продолжает выполняться на удаленном компьютере. Библиотека ptvsd также продолжает прослушивать присоединение отладчиков, поэтому можно повторно присоединиться к процессу в любое время.
 

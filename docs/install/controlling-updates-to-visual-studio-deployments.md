@@ -1,8 +1,9 @@
 ---
-title: Управление обновлением развертываний Visual Studio
+title: Управление обновлением развертываний
 description: Узнайте, как изменить расположение, в котором Visual Studio ищет обновления при установке из сети.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6f5170b0838e51fb03e17c2f627665c7e64dfd7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830435"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159767"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Управление обновлением сетевых развертываний Visual Studio
 

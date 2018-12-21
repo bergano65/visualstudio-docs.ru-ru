@@ -41,7 +41,7 @@ ms.locfileid: "53049797"
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Перейти|JavaDoc|Objective-C|ShaderLab|Visual C#|
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL-код|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
@@ -49,7 +49,7 @@ ms.locfileid: "53049797"
 
  Помимо раскраски синтаксиса и завершения основных операторов в Visual Studio также имеется функция [Перейти к](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Она позволяет быстро выполнять поиск в файлах кода, путях к файлам и символах кода. Visual Studio предоставляет поддержку функции "Перейти к" для указанных далее языков.
 
-- Перейти
+- Go
 
 - Java
 

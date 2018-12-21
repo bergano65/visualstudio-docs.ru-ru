@@ -1,5 +1,5 @@
 ---
-title: Сочетания клавиш по умолчанию в Visual Studio
+title: Сочетания клавиш по умолчанию
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854485"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061517"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
-Дополнительные сведения о специальных возможностях клавиатуры см. в статьях [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Дополнительные сведения о специальных возможностях клавиатуры см. в статьях [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Работа только с клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля "Обычные параметры среды разработки", который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
 

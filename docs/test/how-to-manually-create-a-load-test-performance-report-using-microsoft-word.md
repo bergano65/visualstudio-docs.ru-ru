@@ -1,5 +1,5 @@
 ---
-title: Создание отчета о производительности нагрузочных тестов Visual Studio с помощью Microsoft Word
+title: Создание отчета о производительности нагрузочных тестов с помощью Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895617"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064460"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Как выполнить Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word
 
 Отчеты о нагрузочных тестах в формате Microsoft Word можно создавать вручную путем копирования и вставки данных из представлений сводки и диаграмм результатов нагрузочных тестов. При копировании данные представлений сводки и диаграмм переносятся в формате HTML.
 
@@ -28,7 +28,7 @@ ms.locfileid: "52895617"
 > Кроме того, в Microsoft Word можно копировать обычный текст из представления таблиц и снимки экрана из представления сведений, но эти данные переносятся не в формате HTML и поэтому требуют дополнительного форматирования и редактирования.
 
 > [!TIP]
-> Кроме того, можно автоматически формировать структурированные отчеты Microsoft Excel. Дополнительные сведения см. в статье [Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> Кроме того, можно автоматически формировать структурированные отчеты Microsoft Excel. Дополнительные сведения см. в разделе [Как создавать отчеты по производительности нагрузочных тестов с помощью Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Копирование данных представления "Сводка"
 
@@ -46,7 +46,7 @@ ms.locfileid: "52895617"
 
 1.  Если в **результатах нагрузочного теста** не открыто представление диаграмм, на панели инструментов нажмите кнопку **Диаграммы**.
 
-2.  Увеличьте масштаб конкретной диаграммы, которую требуется скопировать в документ Microsoft Word, как показано на рисунке ниже (необязательно). Дополнительные сведения см. в статье [Практическое руководство. Увеличение области диаграммы](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  Увеличьте масштаб конкретной диаграммы, которую требуется скопировать в документ Microsoft Word, как показано на рисунке ниже (необязательно). Дополнительные сведения см. в разделе [Как увеличить масштаб области графа](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Элемент управления масштабом представления диаграмм](../test/media/ltest_zoomcontrol.png)
 
@@ -60,4 +60,4 @@ ms.locfileid: "52895617"
 ## <a name="see-also"></a>См. также
 
 - [Создание отчетов о результатах нагрузочных тестов для сравнения тестов или анализа трендов](../test/compare-load-test-results.md)
-- [Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [Практическое руководство: Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

@@ -1,5 +1,5 @@
 ---
-title: Использование заглушек для изоляции частей приложений при модульном тестировании в Visual Studio
+title: Использование заглушек для изоляции частей приложений при модульном тестировании
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382572"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065536"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
 
@@ -396,7 +396,7 @@ public void TestGetValue()
 
 ### <a name="stubs-of-virtual-classes"></a>Заглушки виртуальных классов
 
-В предыдущих примерах заглушки создавались из интерфейсов. Заглушки также можно создавать из класса с виртуальными или абстрактными членами. Пример:
+В предыдущих примерах заглушки создавались из интерфейсов. Заглушки также можно создавать из класса с виртуальными или абстрактными членами. Например:
 
 ```csharp
 // Base class in application under test

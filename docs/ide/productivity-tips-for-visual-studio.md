@@ -1,5 +1,5 @@
 ---
-title: Советы по повышению продуктивности при работе в Visual Studio
+title: Советы по повышению производительности
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362004cba4792fe2405d6cc009a0ae918fdd535e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671304"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067982"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 
@@ -118,11 +118,11 @@ ms.locfileid: "50671304"
 
      Для более эффективного управления файлами можно создать новый экземпляр **обозревателя решений** и переместить его на другой монитор. Чтобы создать еще один экземпляр **обозревателя решений**, откройте контекстное меню в **обозревателе решений** и выберите команду **Создать представление обозревателя решений**.
 
-- **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в статьях [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Практическое руководство: изменение шрифтов и цветов](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в разделе [Как менять шрифты и цвета](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Как менять шрифты и цвета в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Практическое руководство: настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)

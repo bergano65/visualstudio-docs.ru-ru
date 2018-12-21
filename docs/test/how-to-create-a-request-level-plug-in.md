@@ -1,5 +1,5 @@
 ---
-title: Создание подключаемого модуля уровня запроса для веб-тестов производительности в Visual Studio
+title: Создание подключаемого модуля уровня запроса для веб-тестов производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054078"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Практическое руководство. Создание подключаемого модуля уровня запроса
+# <a name="how-to-create-a-request-level-plug-in"></a>Как выполнить Создание подключаемого модуля уровня запроса
 
 *Запросы* — это декларативные операторы, образующие веб-тесты производительности. Подключаемые модули веб-теста производительности позволяют изолировать и повторно использовать код вне основных декларативных операторов веб-теста производительности. Можно создать подключаемые модули и добавлять их к отдельному запросу или веб-тесту производительности, в котором он содержится. Настраиваемый *подключаемый модуль запросов* позволяет вызывать код при выполнении конкретного запроса в веб-тесте производительности.
 
@@ -126,5 +126,5 @@ namespace RequestPluginNamespace
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Кодирование пользовательского правила извлечения для веб-теста производительности](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство: Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)

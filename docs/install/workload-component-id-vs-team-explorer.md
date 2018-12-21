@@ -1,5 +1,6 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Team Explorer 2017
+titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для создания интегрированных средств тестирования для инженеров-испытателей
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d34c8ea2c79c9d9444e553d37da353e4e3ece3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607449"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066110"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Каталог компонентов для Visual Studio Team Explorer 2017
 
@@ -35,13 +36,13 @@ ms.locfileid: "51607449"
 * По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
 * Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
 
-Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в статье [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Руководство по переносу проектов расширения среды на Visual Studio 2017).
+Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в разделе [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Основной редактор Visual Studio (включен в Visual Studio Team Explorer 2017)
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.CoreEditor
+**Идентификатор:** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Описание.** Основные возможности оболочки Visual Studio, включая редактирование кода с учетом синтаксиса, управление исходным кодом и рабочими элементами.
 

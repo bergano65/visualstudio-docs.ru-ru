@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Подключение профилировщика к веб-приложению ASP.NET для сбора данных по использованию памяти с помощью командной строки | Документы Майкрософт
-ms.custom: ''
+title: Присоединение профилировщика к приложению ASP.NET для сбора данных об использовании памяти
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fd5f5b1ede7f5261d03ae8e75cfe6a603ead38da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f5c592733cc43101cb5cf022caf84892a55af7a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052962"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 В этой статье описан порядок использования программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.  
 
 > [!NOTE]
@@ -67,7 +67,7 @@ ms.locfileid: "49841693"
    > [!NOTE]
    >  Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.  
 
-   | Параметр | Описание: |
+   | Параметр | Описание |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows. |
    | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
@@ -94,7 +94,7 @@ ms.locfileid: "49841693"
 
 -   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором `PID`.|  
@@ -109,7 +109,7 @@ ms.locfileid: "49841693"
 
    - Введите команду **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      - или -  
+      -или-  
 
    - Завершите рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Тип:  
 

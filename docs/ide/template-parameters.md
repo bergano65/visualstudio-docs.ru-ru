@@ -1,5 +1,5 @@
 ---
-title: Параметры шаблонов проектов и элементов в Visual Studio
+title: Параметры шаблонов проектов и элементов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178638"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067678"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -25,7 +25,7 @@ ms.locfileid: "39178638"
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона
 
-Параметры шаблона объявляются в формате $*параметр*$. Пример:
+Параметры шаблона объявляются в формате $*параметр*$. Например:
 
 - $safeprojectname$
 
@@ -49,7 +49,7 @@ ms.locfileid: "39178638"
 
 В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном.
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |---------------|-----------------|
 |clrversion|Текущая версия среды CLR.|
 |guid[1–10]|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1`).|
@@ -74,7 +74,7 @@ ms.locfileid: "39178638"
 
 Вы можете указать собственные параметры шаблона и значения в дополнение к зарезервированным параметрам шаблона по умолчанию, которые используются во время замены параметров. Дополнительные сведения см. в разделе [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Пример: использование имени проекта в качестве имени файла
+## <a name="example-use-the-project-name-for-a-file-name"></a>Пример Использование имени проекта в качестве имени файла
 
 Можно указать переменные имена файлов для элементов проекта с помощью параметра в атрибуте `TargetFileName`.
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178638"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Пример: использование безопасного имени проекта в качестве имени пространства имен
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Пример Использование безопасного имени проекта в качестве имени пространства имен
 
 Чтобы использовать безопасное имя проекта для пространства имен в файле класса C#, используйте следующий синтаксис:
 
@@ -120,5 +120,5 @@ namespace $safeprojectname$
 ## <a name="see-also"></a>См. также
 
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство: Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

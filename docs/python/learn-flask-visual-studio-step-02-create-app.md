@@ -1,5 +1,6 @@
 ---
-title: Руководство. Сведения о Flask в Visual Studio — шаг 2
+title: Руководство по Flask в Visual Studio. Шаг 2. Представления и шаблоны
+titleSuffix: ''
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio, в особенности сведения о создании приложения и использовании представлений и шаблонов.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812625"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052949"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Flask с представлениями и шаблонами страниц
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Flask с представлениями и шаблонами страниц
 
-**Предыдущий шаг. [Руководство (шаг 1). Начало работы с веб-платформой Django в Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Предыдущий шаг. [Создание проекта и решения Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 В шаге 1 этого руководства мы создали приложение Flask с одной страницей и всем кодом в одном файле. Для дальнейшей разработки рекомендуется выполнить рефакторинг кода и создать структуру для шаблонов страниц. В частности, отделить код для представлений приложения от других аспектов, таких как код запуска.
 
@@ -30,7 +32,7 @@ ms.locfileid: "49812625"
 > - рефакторинг кода приложения для разделения представлений и кода запуска (шаг 2.1);
 > - преобразование представления с помощью шаблона страницы (шаг 2.2).
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Шаг 2.1. Рефакторинг проекта для поддержки дальнейшей разработки
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Шаг 2-1. Рефакторинг проекта для поддержки дальнейшей разработки
 
 В коде, созданном с помощью шаблона "Пустой веб-проект Flask", у вас есть один файл *app.py*, содержащий код запуска наряду с одним представлением. Для дальнейшей разработки приложения с несколькими представлениями и шаблонами будет лучше разделить эти аспекты.
 
@@ -107,7 +109,7 @@ ms.locfileid: "49812625"
 
 Не стоит путать частоту фиксации и частоту отправки фиксаций в удаленный репозиторий. Несколько фиксаций можно накапливать в локальном репозитории перед отправкой в удаленный репозиторий. Опять же, частота фиксаций зависит от решения, принятого командой в отношении управления репозиторием.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>Шаг 2.2. Использование шаблона для отображения страницы
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>Шаг 2-2. Использование шаблона для отображения страницы
 
 Функция `home` в *views.py* создает только ответы HTTP в простом текстовом формате для страницы. Тем не менее большинство реальных веб-страниц предоставляют ответы с большим количеством страниц HTML, которые часто содержат фактические данные. На самом деле основной причиной для определения представления с помощью функции является возможность создавать содержимое динамически.
 
@@ -220,4 +222,4 @@ ms.locfileid: "49812625"
 ## <a name="go-deeper"></a>Дополнительные подробности
 
 - [Flask Quickstart - Rendering Templates](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (Краткое руководство по Flask — отрисовка шаблонов) (flask.pocoo.org)
-- Исходный код, используемый в руководстве, на сайте GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

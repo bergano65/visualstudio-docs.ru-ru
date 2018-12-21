@@ -1,5 +1,5 @@
 ---
-title: Добавление контекстных параметров к параметрам запуска нагрузочного теста в Visual Studio
+title: Добавление контекстных параметров к параметрам запуска нагрузочного теста
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048499"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Практическое руководство. Добавление контекстных параметров к параметрам запуска нагрузочного теста
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Как выполнить Добавление контекстных параметров к параметрам запуска нагрузочного теста
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области **Редактор тестовой нагрузки**.
 
@@ -38,9 +38,9 @@ ms.locfileid: "52894109"
 
 Кроме того, назначая параметру контекста разные значения с использованием одинакового имени в различных наборах параметров запуска нагрузочного теста, можно выполнять нагрузочный тест в разных средах:
 
-- Набор параметров запуска корпоративного промежуточного веб-сервера: параметр контекста `WebServer1=http://CorporateStagingWebServer`
+- Параметры запуска корпоративного промежуточного веб-сервера: параметр контекста с именем `WebServer1=http://CorporateStagingWebServer`
 
-- Набор параметров запуска корпоративного рабочего веб-сервера: параметр контекста `WebServer1=http://CorporateProductionWebServer`
+- Параметр запуска корпоративного рабочего веб-сервера: параметр контекста с именем `WebServer1=http://CorporateProductionWebServer`
 
   **Изменение набора параметров запуска из командной строки**
 

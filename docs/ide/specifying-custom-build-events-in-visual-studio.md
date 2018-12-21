@@ -1,5 +1,5 @@
 ---
-title: Указание настраиваемых событий сборки в Visual Studio
+title: Указание пользовательских событий сборки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908747"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055132"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
 
@@ -25,9 +25,9 @@ ms.locfileid: "49908747"
 
  Конкретные сведения об используемом языке программирования см. в следующих разделах.
 
--   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ — [Указание событий сборки](/cpp/ide/specifying-build-events).
 
@@ -61,4 +61,4 @@ ms.locfileid: "49908747"
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Специальные знаки в MSBuild](../msbuild/msbuild-special-characters.md)
-- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)

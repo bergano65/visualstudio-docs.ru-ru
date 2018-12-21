@@ -1,5 +1,5 @@
 ---
-title: Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша для нагрузочных тестов в Visual Studio
+title: Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша для нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895578"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060243"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Практическое руководство. Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Как выполнить Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно изменять свойства сценариев в соответствии с требованиями и целями тестирования, используя **редактор тестовой нагрузки**. Полный список свойств сценария тестовой нагрузки и их описание см. в разделе [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md).
 

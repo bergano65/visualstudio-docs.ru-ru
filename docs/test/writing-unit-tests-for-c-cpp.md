@@ -1,5 +1,5 @@
 ---
-title: Написание модульных тестов для C/C++ в Visual Studio
+title: Написание модульных тестов для C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879230"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053748"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -73,7 +73,7 @@ ms.locfileid: "48879230"
 ### <a name="write-test-methods"></a>Написание методов теста
 
 > [!NOTE]
-> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он задокументирован в [справочнике по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Библиотека Boost.Test: платформа модульного тестирования).
+> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он описан здесь: [Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Библиотека Boost.Test: среда модульного тестирования](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 В *CPP*-файле в тестовом проекте определены класс-заглушка и метод-заглушка в качестве примера того, как следует писать код теста. Обратите внимание, что в сигнатурах используются макросы TEST_CLASS и TEST_METHOD, что позволяет обнаруживать методы в окне **обозревателя тестов**.
 
@@ -119,7 +119,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>Использование CodeLens
 
-**Только для Visual Studio 2017 версии 15.7 выпусков Professional и Enterprise**. [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) позволяет быстро просмотреть состояние модульного теста, не выходя из редактора кода. Инициализировать CodeLens для проекта модульного теста C++ можно любым из перечисленных ниже способов.
+**Visual Studio 2017 версии 15.7 (только Professional и Enterprise)** [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) позволяет быстро просмотреть состояние модульного теста, не выходя из кода редактора. Инициализировать CodeLens для проекта модульного теста C++ можно любым из перечисленных ниже способов.
 
 - Отредактировать и собрать тестовый проект или решение.
 - Перестроить проект или решение.

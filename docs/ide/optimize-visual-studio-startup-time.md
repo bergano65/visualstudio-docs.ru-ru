@@ -1,5 +1,5 @@
 ---
-title: Оптимизация времени запуска Visual Studio
+title: Оптимизация времени запуска
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884060"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067684"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Оптимизация времени запуска Visual Studio
 
@@ -59,7 +59,7 @@ ms.locfileid: "49884060"
 
 3. Выберите один из следующих трех параметров:
 
-   - **Использовать поведение по умолчанию**. Поведение по умолчанию для окна инструментов. Если оставить выбранным этот параметр, производительность при запуске не повысится.
+   - **Использовать поведение по умолчанию**. Для окна инструментов используется поведение по умолчанию. Если оставить выбранным этот параметр, производительность при запуске не повысится.
 
    - **Не показывать окно при запуске**. При выборе этого параметра указанное окно инструментов всегда будет закрытым при открытии Visual Studio, даже если оно было оставлено открытым в предыдущем сеансе. При необходимости вы можете открыть окно инструментов из соответствующего меню.
 

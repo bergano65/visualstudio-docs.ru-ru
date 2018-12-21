@@ -1,5 +1,5 @@
 ---
-title: Нацеливание на платформу .NET Framework в Visual Studio
+title: Нацеливание приложения на .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058302"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 
@@ -68,13 +68,13 @@ ms.locfileid: "32425093"
 
 ![Раскрывающийся список Framework в диалоговом окне "Новый проект"](media/vside-newproject-framework.png)
 
-Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Разрешение системных ссылок и пользовательских ссылок на сборки
 
 Чтобы нацелиться на определенную версию .NET Framework, нужно сначала установить подходящие ссылки на сборки. Вы можете скачать пакеты разработчика для разных версий .NET Framework на странице [файлов для загрузки .NET](https://www.microsoft.com/net/download/windows).
 
-Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], чтобы их нельзя было добавить в проект случайно. (Системные сборки — это файлы *.dll*, включенные в версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], чтобы их нельзя было добавить в проект случайно. (Системные сборки — это файлы *.dll*, включенные в версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Дополнительные сведения о ссылках на сборки см. в разделе [Разрешение сборок во время разработки](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -85,4 +85,4 @@ ms.locfileid: "32425093"
 ## <a name="see-also"></a>См. также
 
 - [Настройка для различных версий (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Практическое руководство: Изменение требуемой версии .NET Framework и набора средств платформы (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

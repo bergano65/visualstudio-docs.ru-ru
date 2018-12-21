@@ -1,5 +1,6 @@
 ---
-title: Создание пользовательского интерфейса с помощью Blend для Visual Studio
+title: Создание пользовательского интерфейса — Blend для Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890147"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059870"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Создание пользовательского интерфейса с помощью Blend для Visual Studio
 
@@ -60,7 +61,7 @@ Blend для Visual Studio — это компонент Visual Studio. Чтоб
 |![Режим таблицы и режим списка](../designers/media/b1_2.png)|**Режим таблицы и режим списка**. Переключение между представлениями ресурсов **Режим таблицы** и **Режим списка**.|
 |![Категории ресурсов](../designers/media/b1_3.png)|**Категории ресурсов**. Щелкните категорию или подкатегорию для просмотра списка ресурсов в этой категории.|
 |![Стили](../designers/media/b1_4.png)|**Стили**. Отображение всех стилей, содержащихся в словаре ресурсов.|
-|![Описание:](../designers/media/b1_5.png)|**Описание**. Просмотр описания выбранной категории или подкатегории ресурсов.|
+|![Описание](../designers/media/b1_5.png)|**Описание**. Просмотр описания выбранной категории или подкатегории ресурсов.|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>Обзор панели «Объекты и временная шкала»
 

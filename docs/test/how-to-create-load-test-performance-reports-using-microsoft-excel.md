@@ -1,5 +1,5 @@
 ---
-title: Создание отчета о производительности нагрузочных тестов Visual Studio с помощью Microsoft Excel
+title: Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896566"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065000"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Как выполнить Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 
 На основе двух и более результатах тестов можно создавать отчеты о нагрузочных тестах в формате Excel.
 
@@ -31,7 +31,7 @@ ms.locfileid: "52896566"
 -   **Тренд**. По результатам двух и более нагрузочных тестов можно создавать анализ тренда. Результаты отображаются в виде линейчатого графика, но данные доступны в виде сводных таблиц.
 
 > [!TIP]
-> Можно также вручную создавать отчеты Microsoft Word путем копирования и вставки данных из представлений сводки, диаграмм и таблиц. См. статью [Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Можно также вручную создавать отчеты Microsoft Word путем копирования и вставки данных из представлений сводки, диаграмм и таблиц. См. [Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Любой из отчетов можно использовать для совместного использования данных о производительности с заинтересованными лицами и делать выводы об общем повышении производительности и работоспособности системы.
 

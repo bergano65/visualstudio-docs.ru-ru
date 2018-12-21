@@ -1,6 +1,6 @@
 ---
 title: Шаблон веб-проекта Django для Python
-description: Обзор шаблонов веб-приложений, написанных на языке Python с использованием платформы Django, в Visual Studio.
+description: В Visual Studio представлен комплексный шаблон, с помощью которого вы можете быстро создавать веб-приложения Django с использованием Python.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607436"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066526"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
@@ -50,19 +51,19 @@ Visual Studio предоставляет полную поддержку тех�
 
 - **Открыть оболочку Django** открывает оболочку в контексте приложения, где вы можете управлять моделями.
 
-    ![Консоль](media/template-django-console-shell.png)
+    ![Результаты выполнения команды Open Django Shell](media/template-django-console-shell.png)
 
 - **Django Sync DB** (База данных синхронизации Django) выполняет в **интерактивном** окне команду `manage.py syncdb`:
 
-    ![Консоль](media/template-django-console-sync-db.png)
+    ![Результаты выполнения команды Django Sync DB](media/template-django-console-sync-db.png)
 
 - **Собирать статические файлы** выполняет `manage.py collectstatic --noinput` для копирования всех статических файлов в путь, указанный параметром `STATIC_ROOT` в файле *settings.py*.
 
-    ![Консоль](media/template-django-console-collect-static.png)
+    ![Результат выполнения команды Collect Static](media/template-django-console-collect-static.png)
 
 - **Проверка** выполняет `manage.py validate`, чтобы получить сообщения о всех ошибках проверки установленных моделей, заданных параметром `INSTALLED_APPS` в файле *settings.py*:
 
-    ![Консоль](media/template-django-console-validate.png)
+    ![Результат выполнения команды Validate](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>См. также
 

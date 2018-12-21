@@ -1,5 +1,5 @@
 ---
-title: Анализ действий виртуальных пользователей для нагрузочных тестов в Visual Studio
+title: Анализ действий виртуальных пользователей для нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895240"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059526"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Практическое руководство. Анализ действий виртуальных пользователей при нагрузочном тестировании с помощью диаграммы активности виртуальных пользователей
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Как выполнить Анализ действий виртуальных пользователей при нагрузочном тестировании с помощью диаграммы активности виртуальных пользователей
 
 **Диаграмма активности виртуальных пользователей** позволяет просматривать действия виртуальных пользователей, относящиеся к нагрузочному тесту. Каждая строка диаграммы представляет отдельного виртуального пользователя. **Диаграмма активности виртуальных пользователей** показывает, что именно делал каждый виртуальный пользователь во время теста. Вы можете выявлять закономерности в действиях пользователей, определять шаблоны нагрузки, сопоставлять сбойные или медленные тесты и просматривать запросы с действиями другого виртуального пользователя. **Диаграмма активности виртуальных пользователей** доступна только после завершения нагрузочного теста.
 
@@ -108,4 +108,4 @@ ms.locfileid: "52895240"
 ## <a name="see-also"></a>См. также
 
 - [Анализ действий виртуальных пользователей в представлении сведений анализатора тестовой нагрузки](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Пошаговое руководство. Изоляция неисправностей с помощью диаграммы активности виртуальных пользователей](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Пошаговое руководство: изоляция неисправностей с помощью диаграммы активности виртуальных пользователей](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

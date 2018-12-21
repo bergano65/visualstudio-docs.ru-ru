@@ -1,5 +1,5 @@
 ---
-title: Модульное тестирование в Visual Studio
+title: Модульное тестирование
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b38d68d9883325d0654d476a869887bf8dc48a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874843"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057091"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 
@@ -44,14 +44,14 @@ ms.locfileid: "49874843"
 
 |Задачи|Связанные разделы|
 |-|-----------------------|
-|**Краткие и подробные руководства.** В следующих статьях можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|-   [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**Модульное тестирование с помощью обозревателя тестов.** Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|-   [Основные сведения о модульных тестах](../test/unit-test-basics.md)<br />-   [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />-   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />-   [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
+|**Краткие и пошаговые руководства**. В следующих статьях можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|-   [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Краткое руководство. Разработка на основе тестирования с помощью обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Модульное тестирование с помощью обозревателя тестов**. Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|-   [Основные сведения о модульных тестах](../test/unit-test-basics.md)<br />-   [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />-   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />-   [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
 |**Модульное тестирование кода на C++**|-   [Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Изоляция модульных тестов**|-   [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Использование покрытия кода для определения того, какая часть кода проекта тестируется.** Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|-   [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Анализ нагрузки и производительности с помощью нагрузочных тестов.** Вы можете создать нагрузочный тест и добавить в него модульные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|-   [Нагрузочное тестирование (Azure Test Plans и TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Установка системы контроля качества.** Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением или объединением кода и обеспечить его качество.|-   [Политики возврата (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Задание параметров тестирования.** Вы можете, например, задать место для сохранения результатов тестирования.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Использование покрытия кода для определения того, какая часть кода проекта тестируется**. Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|-   [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Анализ нагрузки и производительности с помощью нагрузочных тестов**. Вы можете создать нагрузочный тест и добавить в него модульные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|-   [Нагрузочное тестирование (Azure Test Plans и TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Установка системы контроля качества**. Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением или объединением кода и обеспечить его качество.|-   [Политики возврата (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Задание параметров тестирования**. Вы можете, например, задать место для сохранения результатов тестирования.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Справочная документация по API
 
