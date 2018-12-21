@@ -1,5 +1,5 @@
 ---
-title: Создание закодированного теста пользовательского интерфейса в Visual Studio
+title: Создание закодированного теста пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382400"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895526"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса
 
 В этом пошаговом руководстве рассматривается создание, изменение и обслуживание закодированных тестов пользовательского интерфейса для проверки приложения Windows Presentation Framework (WPF). В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>Создание приложения WPF
 
@@ -361,7 +363,7 @@ ms.locfileid: "39382400"
 
 ## <a name="faq"></a>часто задаваемые вопросы
 
-[Вопросы и ответы о закодированных тестах пользовательского интерфейса](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[Вопросы и ответы о закодированных тестах пользовательского интерфейса](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
 ## <a name="see-also"></a>См. также
 

@@ -1,5 +1,5 @@
 ---
-title: Использование параметров EditorConfig в Visual Studio
+title: Параметры EditorConfig
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2df8491ca3af165681a76c039d63c42c008f2f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835908"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062930"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -23,6 +23,9 @@ ms.locfileid: "49835908"
 Параметры EditorConfig поддерживаются различными редакторами кода и интегрированными средами разработки, включая Visual Studio. Этот файл является переносимым компонентом, который передается вместе с кодом и позволяет применять стили написания кода даже вне среды Visual Studio.
 
 При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig. Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [EditorConfig в Visual Studio для Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Согласованность при кодировании
 
@@ -172,3 +175,4 @@ dir .editorconfig /s
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Возможности редактора кода](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio для Mac)](/visualstudio/mac/editorconfig)

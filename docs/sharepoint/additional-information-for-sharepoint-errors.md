@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0ee3f5765c3be3228453ef6c870335bde5e999d8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326025"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295024"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Дополнительные сведения об ошибках SharePoint
-  Вы можете получить помощь в устранении неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ошибки и предупреждения средств в соответствующих разделах открытых форумах Microsoft Developer Network (MSDN).  
+  Вы можете получить помощь в устранении неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ошибки и предупреждения, в соответствующих разделах общедоступных форумов, средств SharePoint.  
   
 ## <a name="troubleshoot-errors-and-issues"></a>Устранение неполадок и ошибок
  Для получения помощи некоторые распространенные ошибки и другие проблемы в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint см. в следующих разделах:  
@@ -41,7 +41,7 @@ ms.locfileid: "36326025"
 -   [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Другие источники
- В следующей таблице перечислены [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint, форумы и другие ресурсы, доступные на сайте MSDN.  
+ В следующей таблице перечислены [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint, форумы и другие ресурсы.  
   
 |Термин|Определение|  
 |----------|----------------|  
@@ -52,6 +52,6 @@ ms.locfileid: "36326025"
  Если вы по-прежнему не удается найти ответы, которые необходимы, можно открыть параметры поддержки через Интернет, например обратившись в службу технической поддержки Майкрософт или выполните поиск по статьям базы знаний. Дополнительные сведения см. в разделе [справки и поддержки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=155371) страницы.  
   
 ## <a name="see-also"></a>См. также
- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
  

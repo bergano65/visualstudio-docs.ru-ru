@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7d67baf0e29468f5225139ed3b6952da60a04855
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050408"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769751"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -35,7 +35,7 @@ ms.locfileid: "50050408"
 
 В .NET поддерживаются следующие три категории соглашений о написании кода.
 
-- [Языковые соглашения](#language-conventions)
+- [Стили кода языка](#language-code-styles)
 
    Правила, распространяющиеся на язык C# или Visual Basic. Например, вы можете указать правила использования `var` или явных типов при определении переменных или назначении приоритета элементам, воплощающим выражение.
 
@@ -47,13 +47,13 @@ ms.locfileid: "50050408"
 
    Правила, описывающие именование элементов кода. Например, можно указать, что методы `async` должны оканчиваться на "Async".
 
-## <a name="language-conventions"></a>Языковые соглашения
+## <a name="language-code-styles"></a>Стили кода языка
 
-Правила для языковых соглашений имеют следующий формат:
+Правила для стилей кода языка имеют следующий формат:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Для каждого правила языкового соглашения нужно указать **true** (предпочитать этот стиль) или **false** (не предпочитать этот стиль), а также уровень **серьезности** . Серьезность означает требуемый уровень применения для этого стиля.
+Для каждого правила стиля кода языка нужно указать **true** (предпочитать этот стиль) или **false** (не предпочитать этот стиль), а также уровень **серьезности**. Серьезность означает требуемый уровень применения для этого стиля.
 
 Следующая таблица описывает возможные значения серьезности и их влияние:
 
@@ -65,7 +65,7 @@ ms.locfileid: "50050408"
 `warning` | При несоблюдении этого правила стиля выводится предупреждение компилятора.
 `error` | При несоблюдении этого правила стиля выводится ошибка компилятора.
 
-В следующем списке приведены допустимые правила языковых соглашений:
+В следующем списке приведены допустимые правила стилей кода языка:
 
 - Параметры стиля кода .NET
     - [Квалификаторы "This." и "Me."](#this_and_me)
@@ -1819,7 +1819,7 @@ csharp_indent_labels = flush_left
 | ----------- | -------------------- | ----------------------| ---------------- |
 | csharp_space_after_cast | C# | False | 15.3 |
 | csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
-| csharp_space_between_method_declaration_parameter_ list_parentheses | C# | False | 15.3 |
+| csharp_space_between_method_declaration_parameter_list_parentheses | C# | False | 15.3 |
 | csharp_space_between_method_call_parameter_list_parentheses | C# | False | 15.3 |
 | csharp_space_between_parentheses | C# | False | 15.3 |
 | csharp_space_before_colon_in_inheritance_clause | C# | true | 15.7 |
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

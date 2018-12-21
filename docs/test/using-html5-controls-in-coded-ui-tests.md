@@ -1,5 +1,5 @@
 ---
-title: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса в Visual Studio
+title: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914493"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896199"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 
 Закодированные тесты ИП поддерживают некоторые элементы управления HTML5 в Internet Explorer 9 и Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Требования**
 
@@ -27,15 +29,14 @@ ms.locfileid: "49914493"
 > [!WARNING]
 > В версиях до Internet Explorer 10 можно было выполнять закодированные тесты пользовательского интерфейса на более высоком уровне привилегий, чем у процесса Internet Explorer. Во время выполнения закодированных тестов пользовательского интерфейса на Internet Explorer 10 эти тесты и процесс Internet Explorer должны быть на одинаковом уровне привилегий. Это вызвано более безопасными функции AppContainer в Internet Explorer 10.
 
-
 > [!WARNING]
 > Если закодированный тест пользовательского интерфейса создан в Internet Explorer 10, он может не работать в Internet Explorer 9 или Internet Explorer 8. Это происходит потому, что Internet Explorer 10 включает элементы управления HTML5, такие как Audio, Video, ProgressBar и Slider. Эти элементы управления HTML5 не распознаются в Internet Explorer 9 или Internet Explorer 8. Таким же образом, закодированный тест пользовательского интерфейса, созданный с помощью Internet Explorer 9, может включать некоторые элементы управления HTML5, которые не распознаются в Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Элемент управления звуком
- Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.
 
- ![Элемент управления HTML5 Audio](../test/media/codedui_html5_audio.png)
+Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.
+
+![Элемент управления HTML5 Audio](../test/media/codedui_html5_audio.png)
 
 |Действие|Запись|Созданный код|
 |-|---------------|-|

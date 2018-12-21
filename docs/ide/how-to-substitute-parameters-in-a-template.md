@@ -1,5 +1,5 @@
 ---
-title: Добавление параметров имен в шаблоны проектов и элементов в Visual Studio
+title: Добавление параметров имен в шаблоны проектов и элементов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7dbc27762319538053ecee5d7566d86c998db852
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945939"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062474"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Практическое руководство. Замена параметров в шаблоне
+# <a name="how-to-substitute-parameters-in-a-template"></a>Как выполнить Замена параметров в шаблоне
 
 Параметры шаблонов позволяют заменять идентификаторы, такие как имена классов и пространства имен, при создании файла на основе шаблона. Параметры шаблона можно добавлять в существующие шаблоны или использовать для создания собственных шаблонов.
 

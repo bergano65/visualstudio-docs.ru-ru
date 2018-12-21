@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919745"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296441"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Учебник. Начало работы с функциями Azure
 
@@ -44,12 +44,10 @@ ms.locfileid: "49919745"
 
     ![именование и создание проекта функций azure](media/azure-functions-lab-image2.png)
 
-5. Разверните узлы на **панели решения**. Шаблон проекта по умолчанию включает ссылки NuGet на различные пакеты AzureWebJobs, а также на пакет Newtonsoft.Json. 
+5. Разверните узлы на **панели решения**. Шаблон проекта по умолчанию включает ссылки NuGet на различные пакеты AzureWebJobs, а также на пакет Newtonsoft.Json.
 
-     Также есть три файла:  
-        - **host.json** для описания параметров глобальной конфигурации узла.  
-        - **local.settings.json** для настройки параметров службы.  
-        - Шаблон проекта также создает HttpTrigger по умолчанию. В целях этого руководства удалите файл **HttpTrigger.cs** из проекта.  
+     Также существует три файла: — **host.json** для описания глобальных параметров конфигурации для узла. — **local.settings.json** для настройки параметров службы.
+        — Шаблон проекта также создает HttpTrigger по умолчанию. В целях этого руководства удалите файл **HttpTrigger.cs** из проекта.
 
     Откройте файл **local.settings.json**. По умолчанию в нем имеется два параметра пустой строки подключения.
 
@@ -58,7 +56,7 @@ ms.locfileid: "49919745"
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Упражнение 2. Создание учетной записи службы хранилища Azure
 
 1. Войдите в учетную запись Azure по адресу [https://portal.azure.com](https://portal.azure.com).
- 
+
 1. В разделе **Избранное**, расположенном в левой части экрана, выберите **Учетная запись хранения**:
 
     ![раздел "избранное" на портале Azure с элементом "учетная запись хранения"](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ ms.locfileid: "49919745"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Пример 3. Создание и отладка функции Azure
 
-1. Теперь вы готовы приступить к добавлению кода. При работе с библиотекой классов .NET функции Azure добавляются как статические методы. На **панели решений** щелкните правой кнопкой мыши узел проекта **AzureFunctions** и выберите **Добавить > Добавить функцию...**:
+1. Теперь вы готовы приступить к добавлению кода. При работе с библиотекой классов .NET функции Azure добавляются как статические методы. На **Панели решения** щелкните правой кнопкой мыши узел проекта **AzureFunctions** и выберите **Добавить > Добавить функцию**.
 
     ![пункт "Добавить функцию"](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ ms.locfileid: "49919745"
         return x + y;
     }
     ```
-1. Давайте подробно рассмотрим определение метода. 
-    
+1. Давайте подробно рассмотрим определение метода.
+
     Прежде всего вы увидите атрибут **FunctionName**, который помечает этот метод как функцию Azure. Этот атрибут определяет открытое имя функции. Имя атрибута не должно соответствовать имени фактического метода.
 
     ![Новый метод Run с выделенным атрибутом FunctionName](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ ms.locfileid: "49919745"
 
     ![URL-адрес API функций Azure](media/azure-functions-lab-image20.png)
 
-1. Сразу должна сработать точка останова. Веб-запрос был направлен в функцию и теперь готов для отладки. Наведите указатель мыши на переменную **x** для просмотра ее значения. 
+1. Сразу должна сработать точка останова. Веб-запрос был направлен в функцию и теперь готов для отладки. Наведите указатель мыши на переменную **x** для просмотра ее значения.
 
     ![Срабатывание точки останова](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ ms.locfileid: "49919745"
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Упражнение 5. Работа с таблицами хранилища Azure
 
-Часто вы будете создавать гораздо более сложные службы, чем в этом руководстве, и вам потребуется значительно больше времени и ресурсов инфраструктуры. В этом случае эффективнее будет принимать запросы, помещенные в очередь на обработку, когда ресурсы будут доступны. Функции Azure поддерживают такой вариант. В других случаях данные можно хранить централизованно. Для этого удобно использовать таблицы хранилища Azure. 
+Часто вы будете создавать гораздо более сложные службы, чем в этом руководстве, и вам потребуется значительно больше времени и ресурсов инфраструктуры. В этом случае эффективнее будет принимать запросы, помещенные в очередь на обработку, когда ресурсы будут доступны. Функции Azure поддерживают такой вариант. В других случаях данные можно хранить централизованно. Для этого удобно использовать таблицы хранилища Azure.
 
 1. Добавьте следующий класс в **Add.cs**. Он добавляется в пространство имен, но за пределами существующего класса.
 
@@ -332,7 +330,7 @@ ms.locfileid: "49919745"
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ ms.locfileid: "49919745"
 
 1. Вернитесь в браузер и обновите запрос, указав тот же URL-адрес. На этот раз вы увидите ошибку после метода **Process**. Дело в том, что код пытается добавить строку в таблицу хранилища таблиц Azure с помощью комбинации ключа раздела и строки, которая уже существует.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ ms.locfileid: "49919745"
 1. Вернитесь в **Visual Studio для Mac** и завершите сеанс отладки.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

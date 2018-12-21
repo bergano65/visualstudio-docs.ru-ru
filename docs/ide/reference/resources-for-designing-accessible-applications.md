@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671720"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 
@@ -29,25 +29,25 @@ ms.locfileid: "39179025"
 
 ## <a name="technologies"></a>Технологии
 
-* **Microsoft Active Accessibility**. Основанная на модели COM технология, которая улучшает работу специальных возможностей с приложениями, запущенными под управлением Microsoft Windows. Она предлагает библиотеки динамической компоновки, которые встроены в операционную систему, а также интерфейс COM и элементы программирования приложений, предоставляющие надежные методы для вывода информации об элементах пользовательского интерфейса. Дополнительные сведения см. на веб-сайте [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility**. Основанная на модели COM технология, которая улучшает работу специальных возможностей с приложениями, запущенными под управлением Microsoft Windows. Она предоставляет динамические библиотеки, которые встроены в операционную систему и COM-интерфейс. Она также содержит элементы программирования приложений, которые предоставляют методы для предоставления информации об элементах пользовательского интерфейса. Дополнительные сведения см. в разделе [Microsoft Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility).
 
-* **Голосовые технологии Microsoft .NET**. Microsoft .NET Speech SDK представляет собой набор из элементов управления Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], надстройки голосовых функций для Microsoft Internet Explorer, образцов приложений и документации, который позволяет веб-разработчикам создавать приложения [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] с поддержкой голосовых функций, развертывать эти приложения, а также отлаживать их. Эти средства полностью интегрированы в Microsoft Visual Studio, благодаря чему разработчики могут использовать привычную им среду разработки. Дополнительные сведения см. на веб-сайте [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Голосовые технологии Microsoft .NET**. Microsoft .NET Speech SDK предоставляет набор из элементов управления Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], надстройки голосовых функций для Microsoft Internet Explorer, образцов приложений и документации. Веб-разработчики могут использовать эти средства для создания, отладки и развертывания приложений [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] с поддержкой речи. Эти средства полностью интегрированы в Microsoft Visual Studio, благодаря чему разработчики могут использовать привычную им среду разработки. Подробнее см. в разделе [Сервер речи](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)).
 
-* **Общие сведения о SAMI 1.0**. Технология Microsoft Synchronized Accessible Media Interchange (SAMI) позволяет разработчикам захватывать звуковое содержимое для компьютерного мультимедиа. Дополнительные сведения см. в описании [SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
+* **Общие сведения о SAMI 1.0**. Технология Microsoft Synchronized Accessible Media Interchange (SAMI) позволяет разработчикам захватывать звуковое содержимое для компьютерного мультимедиа. Дополнительные сведения см. в описании [SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0).
 
 ## <a name="windows-applications"></a>приложения Windows
 
-* **[Walkthrough: Creating an accessible Windows-based application](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)** (Пошаговое руководство. Создание приложения Windows со специальными возможностями). Этот раздел содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
+* **[Пошаговое руководство. Создание приложения Windows со специальными возможностями](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**. Эта статья содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
 
-* **Guidelines for Keyboard User Interface Design** (Рекомендации по разработке пользовательского интерфейса клавиатуры). В этой технической статье описана разработка пользовательского интерфейса приложения Windows, где пользователи могут осуществлять навигацию с клавиатуры. Дополнительные сведения см. на веб-сайте [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Рекомендации по разработке пользовательского интерфейса клавиатуры**. В этой технической статье описана разработка пользовательского интерфейса приложения Windows, где пользователи могут осуществлять навигацию с клавиатуры. Дополнительные сведения см. в разделе [Рекомендации по проектированию пользовательского интерфейса клавиатуры](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
-* **Console accessibility** (Доступность консоли). В этой технической статье описаны интерфейсы API и события, которые используются для предоставления консоли в Windows XP для доступа к специальным возможностям. Дополнительные сведения см. на веб-сайте [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Console accessibility** (Доступность консоли). В этой технической статье описаны интерфейсы API и события, которые используются для предоставления консоли в Windows XP для доступа к специальным возможностям. Дополнительные сведения см. в разделе [Специальные возможности консоли](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Веб-сайты
 
--   [Пошаговое руководство. Руководства по специальным возможностям использования элементов управления Image, Menu и AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202). В этой статье приведены пошаговые инструкции по включению элементов специальных возможностей в образец веб-страницы, а также некоторые советы по проектированию специальных возможностей для веб-сайтов.
+-   [Пошаговое руководство. Руководства по специальным возможностям использования элементов управления Image, Menu и AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202). В этой статье приведены пошаговые инструкции по включению элементов специальных возможностей в образец веб-страницы. А также некоторые советы по проектированию специальных возможностей в веб-приложениях.
 
--   **Создание доступных веб-страниц с помощью DHTML**. В этой технической статье перечислены доступные элементы HTML 4.0, а также советы по проектированию специальных возможностей на веб-сайтах. Дополнительные сведения см. на веб-сайте [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Создание доступных веб-страниц с помощью DHTML**. В этой технической статье перечислены доступные элементы HTML 4.0, а также советы по проектированию специальных возможностей на веб-сайтах. Дополнительные сведения см. в разделе [Создание веб-страниц с поддержкой специальных возможностей с помощью DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Ресурсы сторонних организаций
 

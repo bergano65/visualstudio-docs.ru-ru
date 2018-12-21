@@ -1,16 +1,17 @@
 ---
 layout: HubPage
-title: Документация по средствам разработки для контейнеров
+title: Документация по средствам разработки для контейнеров Docker
 description: Узнайте, как создавать и администрировать контейнерные приложения и службы. Вы можете получить документацию, примеры кода, учебники и многое другое.
 ms.topic: hub-page
+ms.custom: seodec18
 featureFlags:
 - clicktale
-ms.openlocfilehash: a05798bd66176f6ac94964b65792e7a5ed7d74f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8d4f46c733ba9518a1c53d83e676ff955b59b71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635956"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067237"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -120,7 +121,7 @@ ms.locfileid: "42635956"
                                                 <div class="cardText">
                                                     <h3>Инструменты Visual Studio</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Средства Docker в Visual Studio</a></li>
+                                                        <li><a class="barLink" href="/visualstudio/docker/"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Средства Docker в Visual Studio</a></li>
                                                         <li><a class="barLink" href="https://docs.microsoft.com/visualstudio/install/build-tools-container"><img src="https://docs.microsoft.com/media/common/i_build.svg" alt="">Выполнение средства сборки в контейнере</a></li>
                                                         <li><a class="barLink" href="/visualstudio/deployment/tutorial-kubernetes-tools"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Средства Visual Studio для Kubernetes</a></li>
                                                     </ul>
@@ -134,7 +135,7 @@ ms.locfileid: "42635956"
                                                 <div class="cardText">
                                                     <h3>Другие веб-сайты</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="http://wwww.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker для Windows</a></li>
+                                                        <li><a class="barLink" href="http://www.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker для Windows</a></li>
                                                         <li><a class="barLink" href="https://kubernetes.io"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Kubernetes</a></li>
                                                         <li><a class="barLink" href="https://helm.sh"><img src="media/helm-logo.png" alt="">Helm</a></li>
                                                     </ul>

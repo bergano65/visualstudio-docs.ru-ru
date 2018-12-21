@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829473"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967458"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проект Visual Studio. Как правило, шаблоны создаются таким образом, чтобы они различаются в код, который они создают в соответствии с данными из *модели*. Модель — это файл или базу данных, которая содержит основные сведения о требованиях приложения.
@@ -153,7 +153,7 @@ ms.locfileid: "49829473"
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -225,7 +225,7 @@ ms.locfileid: "49829473"
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -270,12 +270,13 @@ ms.locfileid: "49829473"
  Тип `this.Host` (в VB, `Me.Host`) — `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Получение данных из Visual Studio
- Для использования служб, предоставляемых в Visual Studio задайте `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Например:
+ Для использования служб, предоставляемых в Visual Studio задайте `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Импорт `Microsoft.VisualStudio.TextTemplating`, который содержит `GetCOMService()` метода расширения.  Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Например:
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
@@ -295,7 +296,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Если вы установили Visual Studio пакет SDK моделирования, может иметь все шаблоны, преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
 
 > [!NOTE]
-> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> В Visual Studio 2017 пакет SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

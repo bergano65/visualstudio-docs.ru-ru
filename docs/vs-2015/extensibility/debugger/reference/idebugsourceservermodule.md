@@ -15,12 +15,12 @@ ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b5ff82dc30f75cb5dd591b4c667bae7a1a320a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fefd8abd0693ae0ab1150365bd41aab04e6a0fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202869"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817104"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugSourceServerModule`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведения об исходном сервере.|  
   

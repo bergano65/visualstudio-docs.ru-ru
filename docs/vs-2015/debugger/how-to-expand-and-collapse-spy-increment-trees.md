@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1c4611d756e9a233e0f33543afc4fd32bbea6ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab7b31dcfbaaf7ba101d7dea426fd95bb6f397de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216142"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754846"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Практическое руководство. Сворачивание и разворачивание деревьев Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49216142"
   
  **Дерева** меню содержит четыре команды:  
   
-|Команда меню|Описание|  
+|Команда меню|Описание:|  
 |------------------|-----------------|  
 |**Развернуть один уровень**|Расширяет текущий выбранный элемент на следующий уровень.|  
 |**Разверните ветвь**|Полностью раскрывает выбранный элемент.|  

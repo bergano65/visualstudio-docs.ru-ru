@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671928"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Шаг 11. Запуск программы и изучение других функций
 Разработка программа завершена и она готова для выполнения. Можно запустить программу и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия, попробуйте улучшить программу с помощью изменения цвета формы, настройки кнопок и флажков, изменения свойств формы.
 
- Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+ Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
  ![ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этой статьи см. на следующих страницах: [Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 5](http://go.microsoft.com/fwlink/?LinkId=205216) и [Руководство 1. Создание приложения для просмотра рисунков на C# — видео 5](http://go.microsoft.com/fwlink/?LinkId=205206). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
@@ -53,7 +53,7 @@ ms.locfileid: "34747646"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
--   Дополнительные сведения о программировании в Visual Studio см. в разделе [Основные понятия программирования](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+-   Дополнительные сведения о программировании в Visual Studio см. в разделе [Основные понятия программирования](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 -   Дополнительные сведения о Visual Basic см. в разделе [Разработка приложений с помощью Visual Basic](/dotnet/visual-basic/developing-apps/index).
 

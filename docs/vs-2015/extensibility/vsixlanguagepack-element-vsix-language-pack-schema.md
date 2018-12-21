@@ -13,12 +13,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a3ff92a52613910f481492c744116c8be04463d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 556b701f0a1dbc348fef53273379586f7a0dba2c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908071"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744185"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Элемент VSIXLanguagePack (схема языкового пакета VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "49908071"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`xmlns`|Пространство имен XML, в котором определяется схема языкового пакета VSIX.|  
   
 ## <a name="xmlns-attribute"></a>Атрибут xmlns  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|Обязательно. Расположение файла, который определяет схему для языковых пакетов.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Обязательно. Локализованное имя расширения должны быть установлены.|  
 |[Элемент LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Обязательно. Локализованное описание расширения должны быть установлены.|  
@@ -62,7 +62,7 @@ ms.locfileid: "49908071"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Нет||  
   

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126837a22efef86022c24299abcb496a83f02414
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41b2c0410944e9a28a4ff13f51e99592dff4f756
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225229"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751066"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Вкладка "Общие" диалогового окна "Свойства окна"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49225229"
   
  Следующие параметры доступны на **Общие** вкладке:  
   
-|Ввод|Описание|  
+|Ввод|Описание:|  
 |-----------|-----------------|  
 |**Заголовок окна**|Текст в заголовке окна или текст, содержащийся в окне, если он является элементом управления.|  
 |**Дескриптор окна**|Уникальный идентификатор этого окна. Номера дескрипторов окон используются повторно; они определяют окна только в течение времени существования этого окна.|  

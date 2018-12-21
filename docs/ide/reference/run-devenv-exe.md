@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e10b12729ed8f547c2658c0f4ce6ece84a12dbe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2efa616bab79f4d41ddf53a08c5a3628f47e3524
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704633"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948417"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Компилирует и запускает указанный проект или указанное решение.
@@ -58,7 +58,7 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 
 ## <a name="see-also"></a>См. также
 
-- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)

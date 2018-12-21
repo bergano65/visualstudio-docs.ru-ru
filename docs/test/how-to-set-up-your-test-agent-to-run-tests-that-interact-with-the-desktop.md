@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862103"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894577"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом
 
 Если требуется выполнить автоматические тесты, которые взаимодействуют с рабочим столом, настройте свой агент для запуска в виде процесса, а не службы. Например, если необходимо выполнить закодированный тест пользовательского интерфейса удаленно с помощью контроллера и агента тестирования или выполнить тест с перенаправлением видеозаписи в процессе его выполнения, следует настроить агент как процесс. Если агенты назначаются ролям в параметрах тестирования с помощью Visual Studio или в среде с помощью Microsoft Test Manager, нужно изменить настройку агентов, назначенных ролям, которые должны взаимодействовать с рабочим столом.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > При использовании Microsoft Test Manager для настройки лабораторной среды этот компонент устанавливает агент тестирования. В **мастере создания среды** можно указать, что необходимо настроить одну из ролей для выполнения закодированных тестов пользовательского интерфейса.

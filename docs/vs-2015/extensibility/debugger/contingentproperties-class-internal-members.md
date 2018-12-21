@@ -16,12 +16,12 @@ ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a231de2c64cac23e68638330076a87a307f25c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdef7310185170a8cb73c3a04ec706108615a17f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796133"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Внутренние элементы: класс ContingentProperties
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "49274395"
   
 ### <a name="fields"></a>Поля  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[m_children](../../extensibility/debugger/m-children-field.md)|Список дочерних задач, которые зарегистрированы с помощью этой задачи.|  
   

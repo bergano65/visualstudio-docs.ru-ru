@@ -15,12 +15,12 @@ ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65b02ed1a3270c74430122245f83e47bc31bdbff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2d5c1287e57d9bbc3b8b31fc1428a6544a867bea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302429"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735409"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugModOpt : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Возвращает список необязательных модификаторов.|  
   

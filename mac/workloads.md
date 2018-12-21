@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 7f076d10b0c884f39fa887547e883ec4215fd74c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 2d3134d4016c6eb86f37832ba9998010bddd3f13
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224040"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295411"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Рабочие нагрузки Visual Studio для Mac
 
-В Visual Studio для Mac уже установлены рабочие нагрузки для следующих компонентов:
+В Visual Studio для Mac уже установлены рабочие нагрузки для разработки следующих типов приложений.
 
 * Кроссплатформенные мобильные приложения в .NET для Android, iOS, tvOS, watchOS
 * Классические приложения Mac
@@ -30,7 +30,7 @@ Xamarin позволяет создавать кроссплатформенны
 
 ## <a name="net-core-applications"></a>Приложения .NET Core
 
-Дополнительные сведения об использовании .NET Core см. в [документации](https://docs.microsoft.com/dotnet/core/).
+Дополнительные сведения об использовании .NET Core см. в [документации](/dotnet/core/).
 
 ## <a name="aspnet-core-web-applications"></a>Веб-приложения ASP.NET Core
 

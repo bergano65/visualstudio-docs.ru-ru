@@ -17,12 +17,12 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40832984886aeb96e0a58279ef1c91c352b7c1c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3165580baae4f2b3b7d64f9c86e05b042a505a13
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853822"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786487"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "49853822"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
+SCCRTN SccGetUserOption(  
+   LPVOID pContext,  
+   LONG nOption,  
+   LPLONG lpVal  
 );  
 ```  
   
@@ -52,7 +52,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Параметр был успешно извлечен.|  
 |SCC_E_OPNOTSUPPORTED|Параметр не поддерживается.|  
@@ -61,7 +61,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>Примечания  
  Эта команда поддерживает следующие параметры:  
   
-|Параметр User|Описание|  
+|Параметр User|Описание:|  
 |-----------------|-----------------|  
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю нужно извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
   

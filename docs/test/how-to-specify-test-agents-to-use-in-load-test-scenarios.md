@@ -1,5 +1,5 @@
 ---
-title: Задание агентов тестирования для использования в сценариях тестовой нагрузки в Visual Studio
+title: Задание агентов тестирования для использования в сценариях тестовой нагрузки
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,16 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381473"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061021"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Практическое руководство. Задание агентов тестирования для использования в сценариях тестовой нагрузки
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Как выполнить Задание агентов тестирования для использования в сценариях тестовой нагрузки
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области **Редактор тестовой нагрузки**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Полный список свойств сценария тестовой нагрузки и их описание см. в разделе [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md).

@@ -1,5 +1,5 @@
 ---
-title: Создание и запуск нагрузочного теста в Visual Studio
+title: Создание и запуск нагрузочного теста
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055774"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство: создание и запуск нагрузочного теста, содержащего модульные тесты
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство. Создание и запуск нагрузочного теста, содержащего модульные тесты
 
 В этом пошаговом руководстве рассматривается создание нагрузочного теста, содержащего модульные тесты.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Это пошаговое руководство описывает создание и выполнение нагрузочного теста с помощью Visual Studio Enterprise. Нагрузочный тест — это контейнер, содержащий веб-тесты производительности и модульные тесты. Для создания нагрузочных тестов служит **мастер создания нагрузочных тестов**.
 
@@ -35,13 +37,13 @@ ms.locfileid: "39381020"
 
 -   Выполнение нагрузочного теста.
 
--   Выполните инструкции в статье [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md), чтобы создать простую библиотеку классов C#, содержащую проект веб-тестов производительности и нагрузочных тестов, включающий несколько модульных тестов.
+-   Выполните инструкции в статье [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md), чтобы создать простую библиотеку классов C#, содержащую проект веб-тестов производительности и нагрузочных тестов, включающий несколько модульных тестов.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Создание нагрузочных тестов, содержащих модульные тесты, с помощью мастера тестовой нагрузки
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Запуск мастера создания нагрузочных тестов
 
-1.  Откройте решение "Банк", созданное в разделе [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Откройте решение Bank, созданное в разделе [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  В **обозревателе решений** откройте контекстное меню узла решения "Банк" и последовательно выберите команды **Добавить** и **Создать проект**.
 

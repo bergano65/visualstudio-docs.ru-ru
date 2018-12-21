@@ -17,12 +17,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13df0a98d7a13e6f529cb32081fd38cf12639800
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829249"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755456"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  Имя объединения.  
   
  unionmember  
- [Только для C#] Маршалинг, это тип подходящей структурой на основе `dwKind`.  
+ [C# только] Маршалинг, это тип подходящей структурой на основе `dwKind`.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура передается [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) метод, где он заполняется. Интерпретация содержимое структуры на основе `dwKind` поля.  
@@ -78,7 +78,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [C++] Если `dwKind` равно `TYPE_KIND_BUILT`, то это необходимо для высвобождения базовый [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект при удалении `TYPE_INFO` структуры. Это выполняется с помощью вызова метода `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Только для C#] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа. В примере показано, как это можно сделать для одного типа.  
+ [C# только] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа. В примере показано, как это можно сделать для одного типа.  
   
 |`dwKind`|`unionmember` интерпретируется как|  
 |--------------|----------------------------------|  

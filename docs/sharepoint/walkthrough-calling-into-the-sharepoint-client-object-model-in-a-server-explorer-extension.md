@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934682"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296038"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -195,7 +195,7 @@ ms.locfileid: "49934682"
   
 1.  В **обозревателе решений**в **WebPartNode** откройте проект **source.extension.vsixmanifest** файл в редакторе манифестов.  
   
-     Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **узел коллекции веб-частей для обозревателя серверов**.  
   
@@ -208,7 +208,7 @@ ms.locfileid: "49934682"
 6.  В **добавить новый актив** отображаемое в диалоговом окне **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении**.  
   

@@ -1,26 +1,28 @@
 ﻿---
-title: Руководство. Сведения о Django в Visual Studio — шаг 5
+title: 'Руководство по Django в Visual Studio, шаг 5: аутентификация'
+titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio с описанием функций аутентификации, предоставляемых в шаблонах веб-проектов Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120359"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064077"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
+# <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
 
-**Предыдущий шаг: [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Предыдущий шаг. [Использование полного шаблона веб-проекта Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Так как аутентификация является распространенным требованием для веб-приложений, в шаблоне "Веб-проект Django" предусмотрена базовая последовательность аутентификации. (В шаблоне "Веб-проект опроса Django", который описан в шаге 6 этого руководства, также реализована такая последовательность.) При использовании любого из шаблонов проектов Django в Visual Studio в файл *settings.py* проекта Django включаются все модули, необходимые для проверки подлинности.
 
@@ -29,7 +31,7 @@ ms.locfileid: "48120359"
 > [!div class="checklist"]
 > - Использовать последовательность аутентификации, предоставляемую в шаблонах Visual Studio (шаг 5.1.).
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Шаг 5.1. Использование последовательности аутентификации
+## <a name="step-5-1-use-the-authentication-flow"></a>Шаг 5-1. Использование последовательности аутентификации
 
 Далее приведены инструкции по тестированию последовательности аутентификации и описаны связанные части проекта:
 
@@ -152,24 +154,30 @@ ms.locfileid: "48120359"
 
 1. Чтобы проверить, авторизован ли прошедший аутентификацию пользователь для доступа к определенным ресурсам, необходимо получить от базы данных конкретные разрешения. Дополнительные сведения см. в статье об [использовании системы аутентификации Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (документация Django).
 
-1. В частности суперпользователь или администратор авторизованы для доступа к встроенным интерфейсам администратора Django с использованием относительных URL-адресов /admin/ и /admin/doc/. Чтобы включить эти интерфейсы, откройте файл *urls.py* проекта Django и удалите комментарии из следующих записей:
+1. В частности суперпользователь или администратор авторизованы для доступа к встроенным интерфейсам администратора Django с использованием относительных URL-адресов /admin/ и /admin/doc/. Включить их можно так:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Установите в своей среде пакет docutils Python. Для этого удобно добавить docutils в файл *requirements.txt*, а затем в **обозревателе решений** развернуть узел **Среды Python**, щелкнуть правой кнопкой мыши используемую среду и выбрать **Установить из файла requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Откройте файл *urls.py* проекта Django и удалите комментарии по умолчанию из следующих записей:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Когда вы перезапускаете приложение, можно перейти по адресам /admin/ и admin/doc/, чтобы выполнять такие задачи, как создание дополнительных учетных записей пользователей.
+    1. В файле *settings.py* проекта Django перейдите к коллекции `INSTALLED_APPS` и добавьте `'django.contrib.admindocs'`.
 
-    ![Интерфейс администратора Django](media/django/step05-administrator-interface.png)
+    1. Когда вы перезапускаете приложение, можно перейти по адресам /admin/ и admin/doc/, чтобы выполнять такие задачи, как создание дополнительных учетных записей пользователей.
+
+        ![Интерфейс администратора Django](media/django/step05-administrator-interface.png)
 
 1. Последняя часть потока аутентификации — это процедура выхода. Как видим в *loginpartial.html*, ссылка **Выход** просто отвечает за выполнение запроса POST по относительному URL-адресу /login. Затем запрос обрабатывается встроенным представлением `django.contrib.auth.views.logout`. В этом представлении не отображается пользовательский интерфейс. Просто выполняется переход к домашней странице (как показано в файле *urls.py* для шаблона ^logout$). Если вам нужно, чтобы отображалась страница выхода из системы, сначала измените шаблон URL-адреса следующим образом, добавив свойство template_name и удалив свойство next_page:
 
@@ -210,4 +218,4 @@ ms.locfileid: "48120359"
 ## <a name="go-deeper"></a>Дополнительные подробности
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Аутентификация пользователя в Django) (docs.djangoproject.com)
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

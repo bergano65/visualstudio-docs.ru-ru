@@ -18,12 +18,12 @@ ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3466e52a980c9a8013491002fd3e005c9b98546
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728784"
 ---
 # <a name="vstextbuffer-object"></a>Объект VSTextBuffer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49267700"
   
  В следующей таблице показаны интерфейсы `VSTextBuffer`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Стандартный OLE-интерфейс. Главным образом используется для обработки в буфере отмены и повтора.|  
 |[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Стандартный OLE-интерфейс.|  

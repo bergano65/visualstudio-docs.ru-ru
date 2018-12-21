@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910970"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296246"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с шаблоном элемента в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона, чтобы добавить новый экземпляр элемента проекта в проект. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910970"
   
 13. В **описание** введите **открывается веб-сайт SharePoint Developer Center**.  
   
-14. В **URL-адрес** введите **http://msdn.microsoft.com/sharepoint/default.aspx**, а затем выберите **Готово** кнопки.  
+14. В **URL-адрес** введите **https://docs.microsoft.com/sharepoint/dev/**, а затем выберите **Готово** кнопки.  
   
      Visual Studio добавляет элемент с именем **CustomAction1** к проекту и откроется *Elements.xml* файл в редакторе. Убедитесь, что *Elements.xml* содержит значения, заданные в мастере.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910970"
   
      **Параметры списка** появится страница.  
   
-4.  В разделе **Communications** заголовок в верхней части страницы выберите **Центр разработчиков SharePoint** связать, убедитесь, что в браузере откроется веб-сайт http://msdn.microsoft.com/sharepoint/default.aspx, а затем закройте браузер.  
+4.  В разделе **Communications** заголовок в верхней части страницы выберите **Центр разработчиков SharePoint** связать, убедитесь, что в браузере откроется веб-сайт https://docs.microsoft.com/sharepoint/dev/, а затем закройте браузер.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Очистка компьютера разработчика
  После завершения тестирования элемента проекта, удалите шаблона элемента проекта в экспериментальном экземпляре Visual Studio.  

@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820466"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348751"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 Развертывание старыми COM-компонентами традиционно трудной задачей. Компоненты должны быть глобально зарегистрированы и таким образом может привести к нежелательным побочным эффектам между перекрывающимися приложениями. Такой ситуации, обычно не проблема в приложениях .NET Framework, так как компоненты полностью изолированы в приложение или side-by-side совместимы. Visual Studio позволяет развертывать изолированные компоненты COM в Windows XP или более поздней версии операционной системы.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обеспечивает простой и безопасный механизм для развертывания приложений .NET. Тем не менее если приложения используют старыми COM-компонентами, необходимо будет выполнить дополнительные действия для его развертывания. В этом разделе описывается, как развертывать изолированные компоненты COM и ссылаться на собственные компоненты (например, из Visual Basic 6.0 или Visual C++).  
   
- Дополнительные сведения о развертывании изолированные компоненты COM, см. в статье «Упрощение развертывания приложений с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM без регистрации» в [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Дополнительные сведения о развертывании изолированные компоненты COM, см. в разделе [упрощают развертывание приложений с помощью ClickOnce и COM без регистрации](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM без регистрации  
  Без регистрации COM — это новая технология развертывания и активации изолированных COM-компонентов. Технологии библиотеки типов компонента и сведения о регистрации, обычно устанавливается в системном реестре в XML-файл, называемый манифестом, хранящихся в той же папке, что и приложение.  

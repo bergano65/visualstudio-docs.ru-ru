@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Function symbol
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06c7ea8f89d333cb3ba32d2db214aaf291b4485a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21b618a01cd439c1176cea65d14dcc0c270f37d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272991"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741567"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Function (SDK для доступа к интерфейсу отладки)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49272991"
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.  
   
-|Свойство.|`Data type`|Описание|  
+|Свойство.|`Data type`|Описание:|  
 |--------------|-----------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Одно из значений из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md), если функция является функцией-членом.|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  

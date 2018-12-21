@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 296bc30089d4c0f4b2b739e1dd977fd66cba1ace
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
-ms.translationtype: MT
+ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723673"
 ---
 # <a name="creating-a-software-development-kit"></a>Создание пакета средств разработки для программного обеспечения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "50143298"
                         \[arch]  
 ```  
   
-|Узел|Описание|  
+|Узел|Описание:|  
 |----------|-----------------|  
 |Папка "Ссылки"|Содержит двоичные файлы, содержащие интерфейсы API, которые можно было кодировать с. Могут включать файлы метаданных Windows (WinMD) или сборки.|  
 |DesignTime папки|Содержит файлы, которые необходимы только во время предварительного-run и отладки. Могут включать документы XML, библиотеки, заголовки, двоичные файлы времени разработки для элементов, MSBuild артефакты и т. д<br /><br /> Документы XML в идеальном случае помещается в папке \DesignTime, однако документация XML для ссылок будет размещаться вместе с файлом ссылку в Visual Studio. Например, XML-документации для \References ссылку\\[конфигурации]\\[arch]\sample.dll будет \References\\[конфигурации]\\[arch]\sample.xml и локализованная версия этого документа будут \References\\[конфигурации]\\[атрибут arch]\\[locale]\sample.xml.|  

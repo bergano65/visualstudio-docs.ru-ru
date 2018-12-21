@@ -13,12 +13,12 @@ ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d05e6a88c9da52492a49462880a04e578feadb5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305816"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758781"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Распространение приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "49305816"
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Предварительные требования для распространения приложений изолированной оболочки  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |SDK для Visual Studio|Пакет SDK, которые необходимы для разработки и тестирования расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Пакет SDK может использоваться для создания вашего собственного экземпляра изолированная оболочка Visual Studio.<br /><br /> Visual Studio является необходимым условием для пакета SDK.|  
 |Microsoft Visual Studio изолированная оболочка распространяемый пакет|Распространяемый пакет, включить в программу установки, при сборке средства и среду Visual Studio изолированная оболочка. Распространяемый пакет изолированной оболочки включает в себя .NET Framework 4.5.|  

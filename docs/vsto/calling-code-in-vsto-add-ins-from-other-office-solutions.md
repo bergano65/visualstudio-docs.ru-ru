@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904652"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248102"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Вызов кода в надстройках VSTO из других решений Office
   Объект в надстройке VSTO можно предоставить другим решениям, включая другие решения Microsoft Office. Это полезно, если надстройка VSTO предоставляет службу, доступ к которой нужно предоставить другим решениям. Например если у вас есть надстройки VSTO для Microsoft Office Excel, которая выполняет вычисление финансовых данных из веб-службы, другие решения могут выполнять эти вычисления, вызывая надстройки VSTO для Excel во время выполнения.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904652"
   
    -   Задайте свойство **Регистрация для COM-взаимодействия** в проекте, в которым вы определили интерфейс. Это свойство необходимо, только в том случае, если вы хотите разрешить клиентам использовать раннее связывание для вызова надстройки VSTO.  
   
-   Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904652"
  Дополнительные сведения об использовании потоков в решениях Office см. в разделе [поддержка потоков в Office](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Переопределение метода RequestComAddInAutomationService  
- Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` в надстройке VSTO. В примере предполагается, что вы определили класс с именем `AddInUtilities` , требуется предоставить другим решениям. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` в надстройке VSTO. В примере предполагается, что вы определили класс с именем `AddInUtilities` , требуется предоставить другим решениям. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904652"
    Способ использовать возвращаемое значение свойства COMAddIn.Object отличается для клиентов VBA и клиентов, не основанных на VBA. Для внепроцессных клиентов требуется дополнительный код, который позволит избежать возникновения состояния гонки.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Доступ к объектам из решений VBA  
- В следующем примере кода демонстрируется использование VBA для вызова метода, который предоставляется надстройкой VSTO. Этот макрос VBA вызывает метод с именем `ImportData` , определенный в надстройке VSTO, которая называется **ExcelImportData**. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ В следующем примере кода демонстрируется использование VBA для вызова метода, который предоставляется надстройкой VSTO. Этот макрос VBA вызывает метод с именем `ImportData` , определенный в надстройке VSTO, которая называется **ExcelImportData**. Этот код в контексте более крупного пошагового руководства, см. в разделе [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,9 +147,9 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>См. также  
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
- [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [Пошаговое руководство. Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f422c60d568834c585b0ea9a74332b838ee556c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307629"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750375"
 ---
 # <a name="graphics-state"></a>Состояние графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49307629"
 ### <a name="state-views"></a>Представления состояний  
  Вы можете просмотреть таблицу состояний несколькими разными способами:  
   
-|Просмотр|Описание|  
+|Просмотр|Описание:|  
 |----------|-----------------|  
 |Представление входного состояния API|Это представление представляет состояние в виде расположения объектов Direct3D, составляющих данное состояние.|  
 |Представление входного логического состояния|Это представление представляет состояние в виде логической схемы, которая не отражает объекты Direct3D, составляющие данное состояние.|  

@@ -16,12 +16,12 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5cc9adc4d13718fc9b0379c73b1892ba14e61d47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280947"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789802"
 ---
 # <a name="strings-element"></a>Элемент Strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "49280947"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |ButtonText|Это поле и пять следующие текстовые поля в определении команды позволяют указать текст, отображаемый в различные меню. По умолчанию `ButtonText` поле отображается в контроллеры меню. `ButtonText` Поле становится значением по умолчанию, если другие текстовые поля будут пусты. `ButtonText` Поле не может быть пустым, даже если указаны другие текстовые поля.|  
 |ToolTipText|`ToolTipText` Поле указывает текст, отображаемый в подсказке для элемента меню.<br /><br /> Если `ToolTipText` поле пусто, `ButtonText` используется поле.|  
@@ -61,7 +61,7 @@ ms.locfileid: "49280947"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Button](../extensibility/button-element.md)|Определяет элемент, который пользователь может взаимодействовать с.|  
 |[Элемент Menu](../extensibility/menu-element.md)|Определяет отдельный элемент меню.|  

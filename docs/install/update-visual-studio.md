@@ -1,8 +1,10 @@
 ---
-title: Обновление Visual Studio 2017
+title: Обновление Visual Studio
+titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
 ms.date: 04/23/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa929eafc1459d74efae51fac2195d8574eb7567
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906069"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158935"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 
@@ -29,6 +31,9 @@ ms.locfileid: "49906069"
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Обновление Visual Studio для Mac](/visualstudio/mac/update).
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 версии 15.6 или более поздней
 

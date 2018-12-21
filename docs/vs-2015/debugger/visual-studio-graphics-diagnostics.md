@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95abc36df249667aa6bbcaaeca86e814d31b47d5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294207"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800176"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Диагностика графики в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio*диагностики графики* — это набор ср�
   
 ## <a name="related-sections"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)|Содержит вводные сведения о функциональных возможностях отладки в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[DirectX Graphics and Gaming](http://go.microsoft.com/fwlink/?LinkId=256498)|Содержит ссылки на статьи, посвященные технологиям графики DirectX.|

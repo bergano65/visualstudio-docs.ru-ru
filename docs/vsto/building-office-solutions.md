@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847582"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248235"
 ---
 # <a name="build-office-solutions"></a>Создание решений Office
   Сборка и отладка проектов Office в принципе не отличается от сборки и отладки других типов проектов в Visual Studio, например Windows Forms. В этом разделе описываются существующие различия. Общие сведения о том, как создавать приложения, см. в разделе [компиляция и сборка в Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -112,8 +112,8 @@ ms.locfileid: "49847582"
 |Заголовок|Описание|  
 |-----------|-----------------|  
 |[Отладка проектов Office](../vsto/debugging-office-projects.md)|Описываются проблемы, которые могут возникать при отладке проектов Office.|  
-|[Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Содержит сведения о создании базовой настройки на уровне документа для Excel.|  
-|[Практическое: повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|В этой статье описывается повторное включение надстройки VSTO, которая была оборудования или программного обеспечения отключена.|  
+|[Пошаговое руководство. Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Содержит сведения о создании базовой настройки на уровне документа для Excel.|  
+|[Практическое руководство. Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|В этой статье описывается повторное включение надстройки VSTO, которая была оборудования или программного обеспечения отключена.|  
 |[Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)|Содержит ссылки на сведения о создании решений Office и о роли сборок в решении.|  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Просмотр определений типов в Visual Studio
+title: Просмотр определений типов
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745767"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062086"
 ---
 # <a name="view-type-and-member-definitions"></a>Просмотр определений типов и элементов
 
@@ -52,7 +52,7 @@ ms.locfileid: "34745767"
 
 Если вы просматриваете другое определение из всплывающего окна, вы начнете путь иерархической навигации, по которому можно перемещаться с помощью кругов и стрелок, расположенных над всплывающим окном.
 
-Дополнительные сведения см. в статье [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Дополнительные сведения см. в разделе [Как Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Просмотр метаданных в виде исходного кода (C#)
 
@@ -79,4 +79,4 @@ ms.locfileid: "34745767"
 ## <a name="see-also"></a>См. также
 
 - [Навигация по коду](../ide/navigating-code.md)
-- [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Практическое руководство: Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

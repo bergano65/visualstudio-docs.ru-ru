@@ -1,5 +1,6 @@
 ---
-title: '&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;ADDIN&gt; элемент (Разработка решений Office в Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262386"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247985"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)
-  **Addin** элемент `vstav3` пространство имен содержит информацию, предназначенную для надстройки Microsoft Office, VSTO и настроек на уровне документа, разработанных с помощью Visual Studio.  
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;ADDIN&gt; элемент (Разработка решений Office в Visual Studio)
+  **Addin** элемент `vstav3` пространство имен содержит информацию, предназначенную для надстройки Microsoft Office, VSTO и настроек уровня документа, разработанные с помощью Visual Studio.  
 
 ## <a name="syntax"></a>Синтаксис  
 
@@ -52,28 +53,28 @@ ms.locfileid: "34262386"
 ```  
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- **Addin** элемент `vstav3` пространство имен содержит сведения о решении Microsoft Office и приложении Microsoft Office. Этот элемент должен принадлежать следующему пространству имен: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Дочерние элементы также должны быть в этом пространство имен.  
+ **Addin** элемент `vstav3` пространство имен содержит сведения о решений Office и приложении Microsoft Office. Этот элемент должен принадлежать следующему пространству имен: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Дочерние элементы также должны быть в этом пространство имен.  
 
  У элемента `addin` нет атрибутов.  
 
  Элемент `addin` имеет указанные ниже дочерние элементы.  
 
 ### <a name="entrypoints"></a>entryPoints  
- Обязательно. **EntryPoints** элемент описан в [ &#60;entryPoints&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Обязательный. **EntryPoints** элемент описан в [ &#60;entryPoints&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>обновить  
- Обязательно. **Обновление** элемент описан в [ &#60;обновление&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Обязательный. **Обновление** элемент описан в [ &#60;обновление&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postActions  
- Необязательный. **PostActions** элемент описан в [ &#60;postActions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Необязательный параметр. **PostActions** элемент описан в [ &#60;postActions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>приложение  
- Обязательно. **Приложения** элемент описан в [ &#60;приложения&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Обязательный. **Приложения** элемент описан в [ &#60;приложения&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
 
 ### <a name="description"></a>Описание  
- В следующем примере кода показан **addin** элемент в решении Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
+ В следующем примере кода показано **addin** элемент в решении Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Код  
 
@@ -134,10 +135,10 @@ ms.locfileid: "34262386"
 </vstav3:addIn>  
 ```  
 
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
 
 ### <a name="description"></a>Описание  
- В следующем примере кода показан **addin** элемент в решении Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
+ В следующем примере кода показано **addin** элемент в решении Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Код  
 

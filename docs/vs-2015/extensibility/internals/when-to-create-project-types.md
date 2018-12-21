@@ -15,12 +15,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98dd3f0058e2dacd1a6ab8ed3fc048dfd2e6397e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245405"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801671"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "49245405"
 ## <a name="use-an-existing-project-type"></a>Использовать существующий тип проекта  
  Создание нового проекта иногда не является обязательным. Ниже приведены задачи, которые необходимо создать тип для проекта.  
   
-|Задача|Описание|  
+|Задача|Описание:|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
 |Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  

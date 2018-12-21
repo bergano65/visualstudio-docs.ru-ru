@@ -1,5 +1,5 @@
 ---
-title: Создание проекта веб-теста производительности и нагрузочного теста в Visual Studio
+title: Создание проекта веб-теста производительности и нагрузочного теста
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320960"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057578"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Краткое руководство: создание проекта нагрузочного тестирования
+# <a name="quickstart-create-a-load-test-project"></a>Краткое руководство. Создание проекта нагрузочного тестирования
 
 Из этого 10-минутного краткого руководства вы узнаете, как создавать и запускать проект веб-теста производительности и нагрузочного теста в Visual Studio. В рамках нагрузочных тестов выполняются веб-тесты производительности или модульные тесты, чтобы моделировать действия множества пользователей, одновременно получающих доступ к серверу.
 
-> [!IMPORTANT]
-> Проекты веб-теста производительности и нагрузочного теста доступны только в выпуске Visual Studio 2017 Enterprise.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Требования к программному обеспечению
+
+Проекты веб-теста производительности и нагрузочного теста доступны только в выпуске Visual Studio Enterprise.
 
 ## <a name="install-the-load-testing-component"></a>Установка компонента нагрузочного тестирования
 

@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117216"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348491"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
 
 Фрагменты кода — это небольшие блоки многократно используемого кода, которые можно вставлять в файл кода с помощью команды контекстного меню или сочетания клавиш. Они обычно содержат часто используемый код, например конструкции `try-finally` или `if-else`, но могут также использоваться и для вставки целых классов или методов.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Фрагменты кода (Visual Studio для Mac)](/visualstudio/mac/snippets).
 
 Фрагменты кода доступны для различных языков, включая C#, C++, Visual Basic, XML и T-SQL. Чтобы просмотреть все доступные установленные фрагменты кода для языка, откройте **Диспетчер фрагментов кода** из меню **Сервис** Visual Studio и выберите требуемый язык в расположенном сверху раскрывающемся меню.
 
@@ -103,3 +106,4 @@ End Property
 - [Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)
 - [Фрагменты кода Visual C++](../ide/visual-cpp-code-snippets.md)
 - [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)
+- [Фрагменты кода (Visual Studio для Mac)](/visualstudio/mac/snippets)

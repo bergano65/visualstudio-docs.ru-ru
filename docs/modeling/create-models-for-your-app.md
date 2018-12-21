@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849454"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966548"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 
@@ -52,10 +52,10 @@ ms.locfileid: "49849454"
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|
-|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|
+|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Упорядочивайте модели в рамках проекта большого или среднего размера.|
 
 ## <a name="resources"></a>Ресурсы
 
 - [Форум по средствам моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Форум по расширяемости Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Форум по расширяемости Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

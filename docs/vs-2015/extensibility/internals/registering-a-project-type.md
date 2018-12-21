@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785330"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "49911340"
    @="devenv.exe \"%1\""  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Имя и описание типа файлов проекта, которые имеют расширение .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Тип содержимого для файлов проекта.|  
@@ -70,7 +70,7 @@ ms.locfileid: "49911340"
 ```  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)  
    @="FigPrj Project Package"  
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
    "CompanyName"="Microsoft"  
    "ProductName"="Figure Project Sample"  
    "ProductVersion"="9.0"  
@@ -86,7 +86,7 @@ ms.locfileid: "49911340"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@` (По умолчанию)|REG_SZ|`FigPrj Project VSPackage`|Это локализуемые имя зарегистрировано VSPackage (типа проекта).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Путь к типу проекта библиотеки DLL. Загружает эту библиотеку DLL интегрированной среды разработки и передает VSPackage CLSID для `DllGetClassObject` для получения <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> для создания <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объекта.|  
@@ -109,12 +109,12 @@ ms.locfileid: "49911340"
    @="FigPrj Project"  
    "DisplayName"="#2"  
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
    "DisplayProjectFileExtensions"="#3"  
    "PossibleProjectExtensions"="figp"  
    "DefaultProjectExtension"=".figp"  
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
    @="#4"  
    "CommonOpenFilesFilter"=dword:00000000  
    "CommonFindFilesFilter"=dword:00000000  
@@ -133,11 +133,11 @@ ms.locfileid: "49911340"
    "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Имя по умолчанию для проектов этого типа.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|  
@@ -154,7 +154,7 @@ ms.locfileid: "49911340"
   
  Ниже приведены параметры фильтры, доступные в предыдущем фрагменте кода.  
   
-|Параметр фильтра|Описание|  
+|Параметр фильтра|Описание:|  
 |-------------------|-----------------|  
 |`CommonFindFilesFilter`|Указывает, что фильтр является одним из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
 |`CommonOpenFilesFilter`|Указывает, что фильтр является одним из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, которые не помечены как распространенные.|  
@@ -177,7 +177,7 @@ ms.locfileid: "49911340"
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Идентификатор ресурса для шаблоны новых проектов.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Путь для проектов типа зарегистрированных проекта по умолчанию.|  
@@ -194,11 +194,11 @@ ms.locfileid: "49911340"
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
                                  (CLSID for Figures Project projects)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|Нет|Значение по умолчанию, который указывает, что следующие записи в операциях, прочие файлы проектов.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для файлов шаблонов Добавление новых элементов.|  
@@ -227,21 +227,21 @@ ms.locfileid: "49911340"
   
   Последнее поле соответствует номеру версии для ресурса CTMENU. Чтобы объединить меню снова, изменение номера версии.  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |% CLSID_Package %|REG_SZ|`,1000,1`|Ресурс, чтобы получить сведения о меню.|  
   
  Все следующие примеры расположены в реестре в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
 ```  
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
    @="#7"  
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
    "SortPriority"=dword:00000029  
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для шаблонов фигур проект новый проект.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь к каталогу новых проектов. Элементы в этом каталоге будут отображены в **мастера создания проекта** диалоговое окно.|  
@@ -256,7 +256,7 @@ ms.locfileid: "49911340"
    "UseInterface"=dword:00000001  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Идентификатор класса зарегистрированного пакета VSPackage.|  
 |`UseInterface`|REG_DWORD|`1`|1 указывает, что пользовательский Интерфейс будет использоваться для взаимодействия с этим проектом. 0 указывает, что не существует пользовательского интерфейса.|  

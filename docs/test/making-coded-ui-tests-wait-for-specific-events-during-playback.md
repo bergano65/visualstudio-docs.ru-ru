@@ -1,5 +1,5 @@
 ---
-title: Настройка закодированного теста пользовательского интерфейса в Visual Studio таким образом, чтобы он дожидался определенных событий
+title: Настройка ожидания определенных событий закодированным тестом пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912790"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894772"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 
 При воспроизведении закодированного теста ИП вы можете подождать возникновения определенных событий, например открытия окна, исчезновения строки хода выполнения и т. д. Чтобы сделать это, используйте соответствующий метод UITestControl.WaitForControlXXX(), как описано в следующей таблице. Пример закодированного теста пользовательского интерфейса, который ожидает включения элемента управления с помощью метода <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, см. в разделе [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Требования**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Требования**
+
+Visual Studio Enterprise
 
 > [!TIP]
-> Вы также можете добавить задержки перед действиями с помощью редактора закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в статье [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> Вы также можете добавить задержки перед действиями с помощью редактора закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в статье [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**Методы UITestControl.WaitForControlXXX()**
 
- **Методы UITestControl.WaitForControlXXX()**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Ожидает, когда этот элемент управления будет готов к приему ввода с помощью мыши и клавиатуры. Обработчик неявным образом вызывает этот API, чтобы все действия ожидали готовности элемента управления перед выполнением любой операции. Однако в некоторых особых случаях может потребоваться сделать явный вызов.
 
- Ожидает, когда этот элемент управления будет готов к приему ввода с помощью мыши и клавиатуры. Обработчик неявным образом вызывает этот API, чтобы все действия ожидали готовности элемента управления перед выполнением любой операции. Однако в некоторых особых случаях может потребоваться сделать явный вызов.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Ожидание элемента управления должно включаться, когда мастер выполняет определенную асинхронную проверку входных данных с помощью обращений к серверу. Например, метод может ожидать активации кнопки **Далее** мастера. Пример этого метода см. в статье [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Ожидание элемента управления должно включаться, когда мастер выполняет определенную асинхронную проверку входных данных с помощью обращений к серверу. Например, метод может ожидать активации кнопки **Далее** мастера. Пример этого метода см. в статье [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Ожидает появления элемента управления в пользовательском интерфейсе. Например, вы предполагаете, что после выполнения проверки параметров приложением появится диалоговое окно с ошибкой. Проверка может занимать разное время. Вы можете использовать этот метод для ожидания диалогового окна с ошибкой.
 
- Ожидает появления элемента управления в пользовательском интерфейсе. Например, вы предполагаете, что после выполнения проверки параметров приложением появится диалоговое окно с ошибкой. Проверка может занимать разное время. Вы можете использовать этот метод для ожидания диалогового окна с ошибкой.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Ожидает исчезновения элемента управления из пользовательского интерфейса. Например, вы можете ожидать, когда исчезнет индикатор выполнения.
 
- Ожидает исчезновения элемента управления из пользовательского интерфейса. Например, вы можете ожидать, когда исчезнет индикатор выполнения.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Ожидает, пока указанное свойство элемента управления не примет заданное значение. Например, вы можете ожидать, пока текст состояния не изменится на **Done**.
 
- Ожидает, пока указанное свойство элемента управления не примет заданное значение. Например, вы можете ожидать, пока текст состояния не изменится на **Done**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Ожидает, пока указанное свойство элемента управления не примет значение, противоположное заданному. Например, вы можете ожидать, когда поле ввода перестанет быть доступным только для чтения, то есть станет редактируемым.
 
- Ожидает, пока указанное свойство элемента управления не примет значение, противоположное заданному. Например, вы можете ожидать, когда поле ввода перестанет быть доступным только для чтения, то есть станет редактируемым.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Ожидает, пока указанный предикат не вернет значение `true`. Это может использоваться для составной операции ожидания (например, с условиями OR) в конкретном элементе управления. Например, вы можете ожидать, пока текст состояния не примет значение **Succeeded** или **Failed**, как показано в приведенном ниже коде.
+Ожидает, пока указанный предикат не вернет значение `true`. Это может использоваться для составной операции ожидания (например, с условиями OR) в конкретном элементе управления. Например, вы можете ожидать, пока текст состояния не примет значение **Succeeded** или **Failed**, как показано в приведенном ниже коде.
 
 ```csharp
 
@@ -113,4 +114,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)
 - [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

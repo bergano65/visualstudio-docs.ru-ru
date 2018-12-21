@@ -32,7 +32,7 @@ ms.locfileid: "31474367"
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Ошибки удаленной отладки и их устранение
 Во время удаленной отладки возможны следующие ошибки:  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Ошибка: не удалось автоматически перейти в режим пошагового выполнения](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   

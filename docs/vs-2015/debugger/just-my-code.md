@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833763"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798655"
 ---
 # <a name="just-my-code"></a>Только мой код
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "49833763"
   
 ```  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Функция|Обязательно. Указывает одну или несколько функций как функцию, не написанную пользователем.|  
 |`Name`|Обязательно. Регулярное выражение в формате ECMA-262, содержащее полное имя функции для сопоставления. Пример:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> сообщает отладчику, что все методы в `MyNS::MyClass`, должны считаться кодом, не написанным пользователем. Сопоставление учитывает регистр.|  

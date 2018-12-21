@@ -1,5 +1,5 @@
 ---
-title: Экспорт результатов нагрузочного теста в Visual Studio
+title: Экспорт результатов нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381508"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057169"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Практическое руководство. Экспорт результатов нагрузочного тестирования из репозитория
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Как выполнить экспорт результатов нагрузочного тестирования из репозитория
 
 При выполнении нагрузочного теста данные, собранные во время тестового запуска, сохраняются в репозитории результатов нагрузочных тестов. В репозитории результатов нагрузочных тестов содержатся данные счетчиков производительности и сведения о всех ошибках. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 Управление результатами нагрузочных тестов осуществляется в редакторе тестовой нагрузки с помощью диалогового окна **Открытие и обработка результатов нагрузочных тестов**. Результаты нагрузочных тестов можно открывать, импортировать, экспортировать и удалять.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-export-results-from-a-repository"></a>Чтобы экспортировать результаты из репозитория
 
@@ -56,6 +58,6 @@ ms.locfileid: "39381508"
 ## <a name="see-also"></a>См. также
 
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Практическое руководство. Удаление результатов нагрузочного тестирования из репозитория](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [Практическое руководство: удаление результатов нагрузочного тестирования из репозитория](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Практическое руководство: импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)

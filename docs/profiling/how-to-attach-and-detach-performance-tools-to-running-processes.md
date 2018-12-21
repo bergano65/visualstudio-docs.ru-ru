@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов | Документы Майкрософт
-ms.custom: ''
+title: Присоединение средств производительности к выполняющемуся процессу
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920941"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048532"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Присоединение средств оценки производительности к выполняющемуся процессу и его отсоединение из этого процесса
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Как выполнить Присоединение средств производительности к выполняющемуся процессу и его отсоединение от этого процесса
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
   
 > [!NOTE]
@@ -64,6 +64,6 @@ ms.locfileid: "49920941"
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
- [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Практическое руководство: Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

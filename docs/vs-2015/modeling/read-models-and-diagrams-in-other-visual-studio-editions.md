@@ -11,15 +11,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757359"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "49885204"
   
 ##  <a name="RelatedTopics"></a> Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)|На схеме слоев показана структура существующей или предложенной архитектуры. При создании кода его можно автоматически проверить относительно схемы слоев.|  
 |[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|На схеме деятельности показан поток работ в бизнес-процессе или программе.|  

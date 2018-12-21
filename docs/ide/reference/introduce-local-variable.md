@@ -1,5 +1,5 @@
 ---
-title: Введение локальной переменной в Visual Studio
+title: Введение локальной переменной
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854914"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068086"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Введение локальной переменной в Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "49854914"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
+      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
    ![Ввод локальной переменной — предварительный просмотр](media/local-preview-cs.png)
 

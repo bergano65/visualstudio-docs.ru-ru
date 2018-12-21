@@ -1,5 +1,5 @@
 ---
-title: Модульные тесты для универсальных методов в Visual Studio
+title: Модульные тесты для универсальных методов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 724ca3c49083853a7c66e61b238ab2d862be6582
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ced33798841a732773310a902c0d51568bc36fe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880550"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067564"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Модульные тесты для универсальных методов
 
@@ -34,7 +34,7 @@ ms.locfileid: "49880550"
 
 -   [Использование ограничения типа](#TypeConstraintNotSatisfied). В этом примере показан модульный тест для универсального метода, использующий ограничение типа. В этом примере ограничение типа не удовлетворяется.
 
-###  <a name="EditingGeneratedTestCode"></a> Пример 1. Редактирование созданного кода теста
+###  <a name="EditingGeneratedTestCode"></a> Пример 1. Редактирование созданного кода теста
  В этом разделе код теста проверяет метод тестируемого кода с именем `SizeOfLinkedList()`. Этот метод возвращает целое число, указывающее число узлов в связанном списке.
 
  В первом примере кода в разделе «Созданный код теста» показан неизмененный код, созданный в Visual Studio Enterprise автоматически. Во втором примере, в разделе «Измененный код теста», показано, как настроить тест для проверки работы метода SizeOfLinkedList для двух типов данных, `int` и `char`.
@@ -111,13 +111,13 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
 
 > [!NOTE]
-> При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в статье [Практическое руководство. Отладка во время выполнения теста в решении ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в разделе [Как Отладка во время выполнения теста в решении ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Пример 2. Использование ограничения типа

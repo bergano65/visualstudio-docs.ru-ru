@@ -16,12 +16,12 @@ ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a76f446721ee640de306aabb36ecea71a702fb5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271964"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736966"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |name|REG_SZ|«Короткое имя место»|Краткое имя, описывающее окна инструментов. Используется только для справки в реестре.|  
 |Float|REG_SZ|«X1, Y1, X2, Y2»|Четыре значения с разделителями-запятыми. X1, Y1, — это координата верхнего левого угла окна инструментов. X2, Y2, — это координата нижний правый угол. Все значения являются в экранных координатах.|  
@@ -91,7 +91,7 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |(Значение по умолчанию)|REG_SZ|Нет|Оставьте пустым.|  
 |*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  

@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 11/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703991"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388677"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
 Восстанавливает параметры по умолчанию Visual Studio и автоматически запускает интегрированную среду разработки Visual Studio. При необходимости выполняет сброс параметров в соответствии с указанным файлом *VSSETTINGS*.
 
 Параметры по умолчанию определяются по профилю, который был выбран при первом запуске Visual Studio.
+
+> [!TIP]
+> Дополнительные сведения о сбросе параметров с помощью интегрированной среды разработки (IDE) см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -55,5 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>См. также
 
+- [Параметры среды](../environment-settings.md)
 - [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
-- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

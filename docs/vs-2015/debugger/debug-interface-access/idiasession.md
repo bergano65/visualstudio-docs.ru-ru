@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession interface
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a2ff17cc95769a9cada09b31b800afeaa13a44a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799630"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49252984"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaSession : IUnknown  
+IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDiaSession`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Извлекает адрес загрузки исполняемого файла, соответствующее символов в данном хранилище символов. Это же значение, которое было передано `put_loadAddress` метод.|  
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов. **Примечание:** очень важно для вызова этого метода при получении `IDiaSession` объекта и перед началом работы с помощью объекта.|  

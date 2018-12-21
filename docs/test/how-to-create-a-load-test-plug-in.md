@@ -1,5 +1,5 @@
 ---
-title: Создание подключаемого модуля нагрузочных тестов в Visual Studio
+title: Создание подключаемого модуля нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380542"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064722"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Практическое руководство. Создание подключаемого модуля нагрузочных тестов
+# <a name="how-to-create-a-load-test-plug-in"></a>Как выполнить Создание подключаемого модуля нагрузочных тестов
 
-Существует возможность создания подключаемого модуля нагрузочных тестов для запуска кода в различное время в процессе выполнения нагрузочного теста. Подключаемый модуль создается для расширения или изменения встроенных возможностей нагрузочного теста. Например, можно составить код подключаемого модуля для нагрузочного теста, позволяющий настраивать или изменять шаблон нагрузочного теста во время выполнения нагрузочного теста. Для этого необходимо создать класс, наследующий интерфейс <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. В этом классе должен быть реализован метод <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> данного интерфейса. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+Существует возможность создания подключаемого модуля нагрузочных тестов для запуска кода в различное время в процессе выполнения нагрузочного теста. Подключаемый модуль создается для расширения или изменения встроенных возможностей нагрузочного теста. Например, можно составить код подключаемого модуля для нагрузочного теста, позволяющий настраивать или изменять шаблон нагрузочного теста во время выполнения нагрузочного теста. Для этого необходимо создать класс, наследующий интерфейс <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. В этом классе должен быть реализован метод <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> данного интерфейса. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!NOTE]
-> Можно также создавать подключаемые модули для веб-тестов производительности. Дополнительные сведения см. в статье [Практическое руководство. Создание подключаемого модуля веб-тестов производительности](../test/how-to-create-a-web-performance-test-plug-in.md).
+> Можно также создавать подключаемые модули для веб-тестов производительности. Дополнительные сведения см. в разделе [Как Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Создание подключаемого модуля нагрузочных тестов с помощью Visual C#
 
@@ -34,7 +36,7 @@ ms.locfileid: "39380542"
 
 2.  Добавьте нагрузочный тест в тестовый проект и настройте его для запуска веб-теста производительности.
 
-     Дополнительные сведения см. в разделе [Краткое руководство. Создание проекта нагрузочного теста](../test/quickstart-create-a-load-test-project.md).
+     Дополнительные сведения см. в разделе [Краткое руководство. Создание проекта нагрузочного тестирования](../test/quickstart-create-a-load-test-project.md).
 
 3.  В **обозревателе решений** щелкните правой кнопкой мыши решение, выберите команду **Добавить** и пункт **Новый проект**.
 
@@ -172,4 +174,4 @@ namespace LoadTestPluginTest
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство. Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Практическое руководство: Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5526f3f10fbb13b7d84b0edf846453e09bc43d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07da36adc1615217315d5ebb23f8ef62db59f5c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183733"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721178"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Параметры проекта для конфигураций отладки C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "49183733"
   
 ##  <a name="BKMK_Build_tab"></a> Вкладка "сборка"  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |-------------|-----------------|  
 |**Символы условной компиляции:**|Здесь определяются константы DEBUG и TRACE.<br /><br /> Эти константы включают условную компиляцию [класс Debug](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx) и [Trace, класс](https://msdn.microsoft.com/library/system.diagnostics.trace.aspx). Эти константы определены, отладки и методы класса Trace выводят информацию [окно вывода](../ide/reference/output-window.md). Если эти константы не определены, то методы классов Отладка и Трассировка не компилируются и выходные данные не создаются.<br /><br /> -Debug обычно определяется в отладочной версии программы и не определено в версии выпуска.<br />-Трассировка обычно определяется в отладочной и окончательной версий.|  
 |**Оптимизировать код**|Этот параметр в отладочной версии программы следует отключать, если только не обнаружена ошибка в оптимизированном коде. Оптимизированный код отлаживать гораздо труднее, так как команды не соответствуют точно операторам в окнах с исходным кодом.|  

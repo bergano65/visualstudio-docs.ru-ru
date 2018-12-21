@@ -1,6 +1,6 @@
 ---
 title: Автоматизированные тесты пользовательского интерфейса
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371086"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896644"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Использование автоматизации пользовательского интерфейса для тестирования кода
 
 Автоматизированные тесты пользовательского интерфейса приложений называются *закодированными тестами пользовательского интерфейса* в Visual Studio. Эти тесты обеспечивают функциональное тестирование элементов управления ИП. Они позволяют убедиться, что все приложение, в том числе интерфейс, работает правильно. Закодированные тесты ИП, в частности, полезны, если интерфейс содержит логику проверки или другую логику, например на веб-странице. Они также часто используются для автоматизации существующих ручных тестов.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Как показано на следующем рисунке, обычный процесс тестирования во время разработки может состоять из построения приложения и поочередной проверки элементов управления. Затем вы можете создать автоматический тест, чтобы не проверять приложение вручную. В зависимости от конкретной тестируемой функции можно написать код для функционального теста или интеграционного теста, который может содержать проверку на уровне ИП (или нет). Если вы хотите получить доступ к бизнес-логике, вы можете написать модульный тест. Однако в некоторых ситуациях может быть полезно включить тестирование различных элементов управления в приложение. Закодированный тест пользовательского интерфейса может проверять, влияет ли обработка кода на работу приложения.
 
@@ -402,7 +404,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Получение и установка свойств из элементов управления теста ИП напрямую
 
-С помощью элементов управления, являющихся производными от <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, таких как [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) или [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), можно получить или задать значения их свойств напрямую. В коде ниже приведено несколько примеров:
+С помощью элементов управления, являющихся производными от <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, таких как [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) или [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), можно получить или задать значения их свойств напрямую. В коде ниже приведено несколько примеров:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +445,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Выполнение тестов в процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Добавление поддержки пользовательских элементов управления**. Платформа закодированных тестов пользовательского интерфейса поддерживает не все возможные пользовательские интерфейсы, в частности она может не поддерживать тестируемый пользовательский интерфейс. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса приложения для Microsoft Excel. Однако можно создать расширение среды обработки закодированных тестов пользовательского интерфейса, которое будет поддерживать пользовательский элемент управления.
 

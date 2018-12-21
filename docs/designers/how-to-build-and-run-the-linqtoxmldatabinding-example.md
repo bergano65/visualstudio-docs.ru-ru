@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сборка и выполнение примера LinqToXmlDataBinding
+title: Как выполнить построить и запустить пример LinqToXmlDataBinding
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924165"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159780"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Практическое руководство. Сборка и выполнение примера LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить Сборка и запуск примера LinqToXmlDataBinding
 
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.
 
-Дополнительные сведения о настройке интегрированной среды разработки см. в [обзоре Visual Studio IDE](../ide/visual-studio-ide.md).
+Дополнительные сведения о настройке интегрированной среды разработки см. в [обзоре Visual Studio IDE](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Создание и заполнение проекта
 
@@ -81,5 +81,5 @@ ms.locfileid: "37924165"
 ## <a name="see-also"></a>См. также
 
 - [Привязка данных WPF с использованием примера LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Пошаговое руководство. Пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Пошаговое руководство: пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)

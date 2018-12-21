@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 49a64f7752bc5f6b3dbbb0dcfed385bfdd5ef9be
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224447"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296103"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Создание и изменение конфигураций сборки
 
@@ -38,25 +38,28 @@ ms.locfileid: "43224447"
 
 Чтобы создать конфигурацию сборки для решения, выполните следующие действия:
 
-
 1. Щелкните узел решения правой кнопкой мыши и выберите пункт **Параметры**.
 
 2. В диалоговом окне "Параметры решения" выберите **Сборка > Конфигурации**:
-    
+
     ![Диспетчер конфигураций в параметрах решения](media/create-and-edit-configurations-image1.png)
 
 3. Чтобы создать конфигурацию, выберите **Добавить**. Кроме того, можно скопировать одну из существующих конфигураций.
 
 После создания конфигурации можно использовать раздел **Сборка** в параметрах каждого проекта, чтобы адаптировать свойства под конфигурацию:
 
-![Настройка параметров сборки](media/create-and-edit-configurations-image3.png) 
+![Настройка параметров сборки](media/create-and-edit-configurations-image3.png)
 
 ## <a name="editing-a-build-configuration"></a>Изменение конфигурации сборки
 
 Чтобы переименовать конфигурацию, выберите ее в списке конфигураций в разделе параметров проекта или решения:
 
-![Список конфигураций](media/create-and-edit-configurations-image4.png) 
+![Список конфигураций](media/create-and-edit-configurations-image4.png)
 
 Нажмите кнопку **Переименовать**.
 
-![Диалоговое окно переименования](media/create-and-edit-configurations-image5.png) 
+![Диалоговое окно переименования](media/create-and-edit-configurations-image5.png)
+
+## <a name="see-also"></a>См. также
+
+- [Создание и изменение конфигураций сборки (Visual Studio в Windows)](/visualstudio/ide/how-to-create-and-edit-configurations)

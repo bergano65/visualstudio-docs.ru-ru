@@ -1,5 +1,5 @@
 ---
-title: Здравствуй, мир! | Документация Майкрософт
+title: Hello World расширение руководство | Документация Майкрософт
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356760"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349469"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Создайте свое первое расширение: Hello World
 
@@ -30,6 +30,9 @@ ms.locfileid: "49356760"
 В этом примере вы используете Visual C# для добавления пользовательских меню кнопки с именем «Say Hello World!» Это выглядит следующим образом:
 
 ![Команду Hello World](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Эта статья относится к Visual Studio в Windows. Visual Studio для Mac см. в разделе [Пошаговое руководство по расширяемости в Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -133,6 +136,6 @@ ms.locfileid: "49356760"
 
 Теперь, когда вы знаете основы работы с Visual Studio расширения, Вот где Дополнительные сведения:
 
-* [Приступить к разработке расширений Visual Studio](starting-to-develop-visual-studio-extensions.md) -примеры, учебники. и публикации расширения.
+* [Приступить к разработке расширений Visual Studio](starting-to-develop-visual-studio-extensions.md) -примеры, учебники. и публикации расширения
 * [Новые возможности в Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) -новые возможности расширяемости в Visual Studio 2017
 * [Внутри Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -подробные сведения о расширении среды Visual Studio

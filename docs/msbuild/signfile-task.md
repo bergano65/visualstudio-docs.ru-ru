@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154850"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220753"
 ---
 # <a name="signfile-task"></a>SignFile - задача
 
@@ -73,7 +73,7 @@ ms.locfileid: "39154850"
 ```
 
 > [!NOTE]
-> Отпечатком сертификата является хэш SHA-1 сертификата. Дополнительные сведения см. в статье о [получении хэша SHA-1 сертификата доверенного корневого ЦС](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
+> Отпечатком сертификата является хэш SHA-1 сертификата. Дополнительные сведения см. в статье о [получении хэша SHA-1 сертификата доверенного корневого ЦС](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)).
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   

@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7331e5ad14c52b6056c7e636d2d48e7f86a9b5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f265e06deab522c0b994f0892fb6a96c7ac4a7f
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305803"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645059"
 ---
 # <a name="lc-task"></a>Задача LC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "49305803"
 Создает программу-оболочку для файл LC.exe для создания LICENSE-файла из LICX-файла. См. дополнительные сведения о [LC.exe (компиляторе лицензий)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице описаны параметры для задачи `LC`.  
+ В следующей таблице приводятся параметры для задачи `LC`.  
   
 |Параметр|Описание|  
 |---------------|-----------------|  

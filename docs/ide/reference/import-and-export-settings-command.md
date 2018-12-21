@@ -1,6 +1,6 @@
 ---
 title: Импорт и экспорт параметров - команда
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704591"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388712"
 ---
 # <a name="import-and-export-settings-command"></a>Импорт и экспорт параметров - команда
-Импортирует, экспортирует или сбрасывает параметры [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Импортирует, экспортирует или сбрасывает параметры Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,21 +33,22 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
 ## <a name="switches"></a>Переключатели
- /export:`filename`
 
- Необязательный. Экспортирует текущие параметры в указанный файл
+/export:`filename`
 
- /import:`filename`
+Необязательный. Экспортирует текущие параметры в указанный файл
 
- Необязательный. Импортирует текущие параметры в указанный файл
+/import:`filename`
 
- /reset
+Необязательный. Импортирует текущие параметры в указанный файл
 
- Необязательный. Сбрасывает текущие параметры
+/reset
+
+Необязательный. Сбрасывает текущие параметры
 
 ## <a name="remarks"></a>Примечания
 
-Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в описании [синхронизированных параметров](../../ide/synchronized-settings-in-visual-studio.md).
+Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в статьях о [синхронизации параметров](../synchronized-settings-in-visual-studio.md) и [параметрах среды](../environment-settings.md).
 
 ## <a name="example"></a>Пример
 
@@ -58,5 +60,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>См. также
 
+- [Параметры среды](../../ide/environment-settings.md)
+- [Синхронизация параметров](../../ide/synchronized-settings-in-visual-studio.md)
 - [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Исправление ошибок сети при установке или использовании Visual Studio
+title: Устранение неполадок сети или ошибок прокси-сервера
 description: Ознакомьтесь с решениями распространенных ошибок сети или прокси-сервера, которые могут возникать при установке или использовании Visual Studio за брандмауэром или прокси-сервером.
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865788"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047620"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
 У нас есть решения для распространенных ошибок сети или прокси-сервера, которые могут возникать при установке или использовании Visual Studio за брандмауэром или прокси-сервером.
 
-## <a name="error-proxy-authorization-required"></a>Ошибка "Требуется проверка подлинности на прокси-сервере"
+## <a name="error-proxy-authorization-required"></a>Ошибка: "Требуется проверка подлинности на прокси-сервере"
 
 Эта ошибка обычно происходит, когда пользователи подключаются к Интернету через прокси-сервер, который блокирует вызовы Visual Studio к некоторым сетевым ресурсам.
 
@@ -69,13 +69,13 @@ ms.locfileid: "49865788"
 
      OR
 
-- Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
+- Вы также можете выполнить инструкции, приведенные в записи блога [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Как подключиться через проверенный веб-прокси), чтобы добавить код, который позволит вам использовать прокси-сервер.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Ошибка: "Используемое соединение было закрыто"
 
 Если вы работаете с Visual Studio в частной сети, где есть брандмауэр, Visual Studio может быть не в состоянии подключиться к некоторым сетевым ресурсам. К таким ресурсам могут относиться Azure DevOps Services для входа и лицензирования, а также NuGet и службы Azure. Если Visual Studio не удается подключиться к одному из этих ресурсов, отображается следующее сообщение об ошибке:
 
-  **Базовое соединение закрыто: непредвиденная ошибка при передаче**
+  **Используемое соединение было закрыто: обнаружена неожиданная ошибка при отправке**
 
 Visual Studio использует протокол TLS 1.2 для подключения к сетевым ресурсам. Устройства для обеспечения безопасности в частных сетях блокируют определенные подключения к серверу, если Visual Studio использует TLS 1.2.
 

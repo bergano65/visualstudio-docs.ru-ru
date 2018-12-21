@@ -1,5 +1,5 @@
 ---
-title: Создание метода в Visual Studio
+title: Создание метода
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: feabd8276f65bfe0576a052d0ab8172264a41e35
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872945"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057182"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Создание метода в Visual Studio
 
@@ -48,8 +48,8 @@ ms.locfileid: "49872945"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) .
-      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
+      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) , который отображается.
+      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
       ![Создание метода — предварительный просмотр](media/method-preview-cs.png)
 

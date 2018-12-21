@@ -13,15 +13,15 @@ helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f06408b65d3cda1f2ee807daac7ab39ce2182a90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891783"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782574"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Практическое руководство. Ограничение инструментирования указанными функциями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "49891783"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например **/ include: MyNS::\\*** указывает все функции в пространстве имен MyNS.  
+    `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например, **/include:MyNS::\\*** указывает все функции в пространстве имен MyNS.  
   
    > [!NOTE]
    >  Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  
@@ -68,7 +68,7 @@ ms.locfileid: "49891783"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например **/ include: MyNS::\\*** указывает все функции в пространстве имен MyNS.  
+    `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например, **/include:MyNS::\\*** указывает все функции в пространстве имен MyNS.  
   
    > [!NOTE]
    >  Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  

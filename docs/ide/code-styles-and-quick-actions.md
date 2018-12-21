@@ -1,5 +1,5 @@
 ---
-title: Параметры стиля кода Visual Studio
+title: Параметры стиля кода
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 718110b3339628052d8a4a2e3ebbcdd163707a97
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626683"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065265"
 ---
 # <a name="code-style-preferences"></a>Параметры стиля кода
 
@@ -26,6 +26,9 @@ ms.locfileid: "42626683"
 При выборе для каждого из элементов в списке выводится окно предварительного просмотра:
 
 ![Параметры стиля кода](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Поведение редактора в Visual Studio для Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Предпочтения и степень серьезности
 
@@ -50,3 +53,4 @@ ms.locfileid: "42626683"
 
 - [Быстрые действия](../ide/quick-actions.md)
 - [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Поведение редактора (Visual Studio для Mac)](/visualstudio/mac/editor-behavior)

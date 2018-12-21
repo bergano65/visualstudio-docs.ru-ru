@@ -1,5 +1,5 @@
 ---
-title: Изменение нагрузочных тестов в Visual Studio
+title: Изменение нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178417"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048637"
 ---
 # <a name="edit-load-tests"></a>Изменение нагрузочных тестов
 
 Нагрузочные тесты выполняют веб-тесты производительности или модульные тесты, чтобы моделировать ситуации, когда много пользователей одновременно подключаются к серверу. Нагрузочный тест обеспечивает доступ к данным о производительности приложения и нагрузке на него. Нагрузочный тест можно настроить для имитации различных условий нагрузки, таких как пользовательские нагрузки и типы сетей.
 
-> [!NOTE]
-> Нагрузочное тестирование доступно только в выпуске Enterprise продукта Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Нагрузочный тест определяется *сценариями*, *наборами счетчиков* и *параметрами запуска*. Ниже описаны различия между [сценариями](../test/edit-load-test-scenarios.md), [наборами счетчиков](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) и [параметрами запуска](../test/load-test-run-settings-properties.md):
 
 ![Архитектура нагрузочного теста](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Требования к программному обеспечению
+
+Проекты веб-теста производительности и нагрузочного теста доступны только в выпуске Visual Studio Enterprise.
 
 ## <a name="edit-load-test-scenario-settings"></a>Изменение параметров сценария для нагрузочного теста
 

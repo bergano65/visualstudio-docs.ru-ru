@@ -19,12 +19,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293076"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746301"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49293076"
 ## <a name="elements-of-the-running-document-table"></a>Элементы запуск таблицы документов  
  В таблице выполняющихся документов содержит следующие записи.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Моникер документа|Строка, однозначно определяющее объект данных документа. Это будет абсолютный путь к файлу для система проектов, которая управляет файлами (например, C:\MyProject\MyFile). Эта строка также используется для проектов, сохраненные в хранилищах, отличных от файловых систем, например хранимые процедуры в базе данных. В этом случае система проекта может изобрести уникальная строка, она способна распознавать и возможно синтаксический анализ для определения способа сохранения документа.|  
 |Владелец иерархии|Объект иерархии, который является владельцем документа, представленные как <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс.|  

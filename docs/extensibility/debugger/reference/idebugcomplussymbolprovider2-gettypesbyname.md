@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d3ac03f74bd0e833c8b0776a0ee0f63595ac460
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882449"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645137"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Возвращает тип с заданным именем.  
@@ -56,7 +56,7 @@ int GetTypesByName(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для универсальных типов, имя для поиска в службе "списка\<int >" или "список\<int, int >" будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметра будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) сертификатов и различать на основе `guidModule` параметра.  
+ Для универсальных типов, имя для поиска в службе "списка\<int >" или "список\<int, int >" будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметр будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) сертификатов и различать на основе `guidModule` параметра.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейс.  

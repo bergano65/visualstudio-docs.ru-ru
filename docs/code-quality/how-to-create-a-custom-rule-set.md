@@ -1,24 +1,24 @@
 ---
-title: Создание настраиваемого правила анализа кода в Visual Studio
-ms.date: 04/04/2018
+title: Создание набора правил анализа пользовательского кода
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884190"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000220"
 ---
 # <a name="customize-a-rule-set"></a>Настройка набора правил
 
@@ -69,6 +69,44 @@ ms.locfileid: "49884190"
    Новый набор правил, выбранного в **выполнить этот набор правил** списка.
 
 6. Выберите **откройте** Открытие набора правил в редакторе набора правил.
+
+### <a name="rule-precedence"></a>Приоритет правил
+
+- Если же правило перечисленных двух или более раз в набор с разными уровнями серьезности правил, компилятор выдает ошибку. Пример:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- Если же правило перечисленных двух или более раз в набор с помощью правил *же* серьезность, может появиться следующее предупреждение в **список ошибок**:
+
+   **CA0063: не удалось загрузить файл набора правил "\[вашей] .ruleset" или один из его зависимых правило файлы набора. Файл не соответствует схеме наборов правил.**
+
+- Если набор правил содержит набор с помощью правил дочерних **Include** тег и наборы правил дочерней и родительской обоих перечислены такие же правила, но с разными уровнями серьезности, то уровень серьезности в родительский набор правил имеет приоритет. Пример:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>Имя и описание
 

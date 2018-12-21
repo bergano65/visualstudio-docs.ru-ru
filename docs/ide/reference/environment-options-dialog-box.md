@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930548"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388771"
 ---
 # <a name="environment-options-dialog-box"></a>Диалоговое окно "Параметры среды"
+
 На страницах папки **Среда** в окне **Параметры** можно указать параметры отображения и работы определенных элементов среды разработки. Для доступа к этим страницам выберите пункт **Параметры** в меню **Сервис**, а затем выберите **Среда**.
-
-> [!NOTE]
-> Отображаемые на конкретном компьютере диалоговые окна и команды меню могут отличаться от окон и команд, описанных в справке, в зависимости от текущих настроек или используемого выпуска Visual Studio. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Дополнительные сведения|См.|
 | - |---------|

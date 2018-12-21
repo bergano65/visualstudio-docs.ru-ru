@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 ms.assetid: ea4881fd-bd04-4875-9b7b-28490d6706f9
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: deb02ef6891e34a5990fbb815970d8fee4b2aea4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a941b3c9dff3a80adea61026c6176dcf4c44361
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848978"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809055"
 ---
 # <a name="understanding-performance-collection-methods"></a>Общие сведения о методах сбора данных по производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49848978"
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Выборка](#sampling)|Собирает статистические данные по работе, выполненной приложением.|  
 |[Инструментирование](#instrumentation)|Собирает подробные сведения о времени для каждого вызова функции.|  

@@ -1,5 +1,5 @@
 ---
-title: Время увеличения шага для пошагового шаблона нагрузки при нагрузочном тестировании в Visual Studio
+title: Время увеличения шага для пошагового шаблона нагрузки при нагрузочном тестировании
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1596c96662870118b8fa721f89b8a9ef1c6b831f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381537"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895723"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Практическое руководство. Указание времени увеличения шага для пошагового шаблона нагрузки
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования. Дополнительные сведения см. в статье [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Полный список свойств сценария тестовой нагрузки и их описание см. в разделе [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md).

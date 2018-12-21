@@ -1,6 +1,7 @@
 ---
-title: Справочник по API-интерфейсам профилировщика Visual Studio (машинный код) | Документация Майкрософт
-ms.custom: ''
+title: Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572102"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063008"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
 API-интерфейсы профилировщика Visual Studio позволяют программно управлять объемом собранных данных и вставлять метки времени и профиля во время профилирования. Чтобы использовать собственный API, включите файл заголовка *VSPerf.h* и добавьте файл *VSPerf.lib* в свой проект.  
@@ -47,4 +48,4 @@ API-интерфейсы профилировщика Visual Studio позвол
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)   
- [Пошаговое руководство. Использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)
+ [Пошаговое руководство: использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)

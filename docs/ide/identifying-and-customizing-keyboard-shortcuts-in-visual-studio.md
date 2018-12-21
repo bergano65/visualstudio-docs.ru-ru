@@ -1,5 +1,5 @@
 ---
-title: Определение и настройка сочетаний клавиш в Visual Studio
+title: Определение и настройка сочетаний клавиш
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747233"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062992"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
 
@@ -69,7 +69,7 @@ ms.locfileid: "34747233"
 
 2. Разверните папку **Среда** и выберите элемент **Клавиатура**.
 
-3. Необязательно. Отфильтруйте список команд, введя полное имя команды без пробелов или его часть в поле **Показать команды, содержащие**.
+3. Необязательные: Отфильтруйте список команд, введя полное имя команды без пробелов или его часть в поле **Показать команды, содержащие**.
 
 4. Выберите из списка команду, которой нужно назначить сочетание клавиш.
 

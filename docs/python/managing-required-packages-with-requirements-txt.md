@@ -1,26 +1,27 @@
 ---
-title: Использование файла requirements.txt для управления требованиями к пакетам
-description: Файл requirements.txt можно использовать для управления зависимостями проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг.
-ms.date: 06/27/2018
+title: Управление зависимостями пакета с помощью файла requirements.txt
+description: Файл requirements.txt описывает зависимости проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100917"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066182"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
-Если вы предоставляете доступ к проекту другим, используете систему сборки или планируете развернуть его в другом расположении, где нужно восстановить среду, то необходимо указать внешние пакеты, необходимые проекту. Рекомендуется использовать файл [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
+Если вы предоставляете доступ к проекту другим, используете систему сборки или планируете скопировать проект в другое расположение, где нужно восстановить среду, то необходимо указать внешние пакеты, необходимые проекту. Рекомендуется использовать файл [requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов. Наиболее распространенной является команда `pip freeze > requirements.txt`, которая записывает текущий список пакетов среды в файл *requirements.txt*.
 
 Технически для отслеживания требований можно использовать любой файл (используя `-r <full path to file>` при установке пакета), но Visual Studio имеет встроенную поддержку *requirements.txt*:
 
@@ -65,7 +66,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 - [Управление окружениями Python в Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)

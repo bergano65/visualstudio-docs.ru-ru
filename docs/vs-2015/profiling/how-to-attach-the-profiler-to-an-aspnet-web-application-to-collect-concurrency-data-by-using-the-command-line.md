@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02e899824e13fe0a11368e7b175a28db861d5137
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6f642f3178e06127dc21bc115d70c68525bf0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934032"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750143"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных параллелизма при помощи командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "49934032"
 
      С параметром **/start** можно использовать любой из параметров, приведенных в следующей таблице.  
 
-   |                               Параметр                               |                                                                     Описание                                                                      |
+   |                               Параметр                               |                                                                     Описание:                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               Включает профилирование процессов в других сеансах входа.                                                |
@@ -68,7 +68,7 @@ ms.locfileid: "49934032"
 
 -   Пары параметров VSPerfCmd в следующей таблице запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

@@ -16,12 +16,12 @@ ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d11ef8797211939b25629d96020af4ee8daa361
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73d72c9e73af497d2f63f86264d5a53745a104e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865015"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816311"
 ---
 # <a name="buttons-element"></a>Элемент Buttons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +48,14 @@ ms.locfileid: "49865015"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группирует элементы кнопки.|  
 |[Элемент Button](../extensibility/button-element.md)|Определяет команду, которая может взаимодействовать пользователь.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   
@@ -63,7 +63,7 @@ ms.locfileid: "49865015"
   
 ```  
 <Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
     <Strings>  

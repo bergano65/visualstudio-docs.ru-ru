@@ -1,5 +1,5 @@
 ---
-title: Требования к контроллерам и агентам тестирования для нагрузочного тестирования в Visual Studio
+title: Требования к контроллерам и агентам тестирования для нагрузочного тестирования
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813990"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051460"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Требования к контроллерам и агентам тестирования для нагрузочного тестирования
 
 Некоторые типы тестов, включая модульные тесты, веб-тесты производительности, нагрузочные тесты и ручные тесты, интегрированы в Visual Studio. Visual Studio позволяет пользователям управления жизненным циклом приложений Visual Studio запускать тесты на удаленных компьютерах с использованием контроллера тестирования и одного или нескольких агентов тестирования. См. раздел [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Требования к оборудованию и программному обеспечению
 

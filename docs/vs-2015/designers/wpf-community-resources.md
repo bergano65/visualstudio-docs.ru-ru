@@ -14,36 +14,29 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 326670dcb5087961b17d45f8f945c989da044c9c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1b918e4c0114ad1f4ed0d04b92c24a0ecae31b6
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297106"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000140"
 ---
 # <a name="wpf-community-resources"></a>Ресурсы сообщества по WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Корпорация Майкрософт предоставляет множество ресурсов сообщества для изучения, обсуждения и отправки отзывов о платформе Windows Presentation Foundation (WPF), включая блоги членов команды WPF и наиболее активных участников сообщества, форумы и центр обратной связи Microsoft Connect.  
-  
-## <a name="community"></a>Сообщество  
- [Форум по WPF](http://go.microsoft.com/fwlink/?LinkId=187440)  
-  
- [Stack Overflow](http://stackoverflow.com/questions/tagged/wpf)  
-  
- [Блог группы разработчиков WPF](http://blogs.msdn.com/b/wpf/)  
-  
- [Набор средств WPF на сайте CodePlex](http://wpf.codeplex.com/)  
-  
- [Центр разработчиков Windows Presentation Foundation](https://www.visualstudio.com/features/wpf-vs)  
-  
-## <a name="provide-feedback"></a>Предоставление отзыва  
- Оставить отзыв о WPF можно на сайте [Microsoft Connect](https://connect.microsoft.com/VisualStudio/Feedback).  
-  
- Чтобы оставить отзыв о документации по WPF, нажмите кнопку **Была ли эта страница полезной?** на странице и введите свои комментарии. Ваш отзыв будет направлен непосредственно группе по разработке документации.  
-  
-## <a name="see-also"></a>См. также  
- [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+Корпорация Майкрософт предоставляет множество ресурсов сообщества для изучения, обсуждения и отправки отзывов о платформе Windows Presentation Foundation (WPF), включая блоги членов команды WPF и наиболее активных участников сообщества, форумы и центр обратной связи Microsoft Connect.
 
+## <a name="community"></a>Сообщество
+ [Форум по WPF](http://go.microsoft.com/fwlink/?LinkId=187440)
 
+ [Stack Overflow](http://stackoverflow.com/questions/tagged/wpf)
 
+ [Блог группы разработчиков WPF](http://blogs.msdn.com/b/wpf/)
+
+ [Набор средств WPF на сайте CodePlex](http://wpf.codeplex.com/)
+
+ [Центр разработчиков Windows Presentation Foundation](https://www.visualstudio.com/features/wpf-vs)
+
+## <a name="see-also"></a>См. также
+
+- [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

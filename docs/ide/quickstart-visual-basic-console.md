@@ -1,9 +1,9 @@
 ---
-title: Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
+title: Создание первого консольного приложения на Visual Basic
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения "Hello World" на Visual Basic в Visual Studio.
-ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626566"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159611"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
 

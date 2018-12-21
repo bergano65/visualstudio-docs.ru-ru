@@ -1,20 +1,20 @@
 ---
-title: Преимущество Pluralsight в подписках Visual Studio | Документация Майкрософт
+title: Преимущество Pluralsight в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
 ms.topic: Get-Started-Article
-description: Сведения об учебной подписке Pluralsight, входящей в вашу подписку Visual Studio.
+description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912010"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895357"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -39,16 +39,12 @@ ms.locfileid: "49912010"
    > [!div class="mx-imgBorder"]
    > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Вы перейдете на страницу Pluralsight для преимущества, которое включено в вашу подписку Visual Studio.  В этом примере будет активироваться преимущество, предоставляемое в рамках подписки на членство в программе Visual Studio Dev Essentials. Щелкните **Активировать преимущество**.
-   > [!div class="mx-imgBorder"]
-   > ![Целевая страница Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. На странице активации сделайте следующее:
+3. Вы перейдете на страницу Pluralsight для преимущества, которое включено в вашу подписку Visual Studio.  
    - Введите запрашиваемые на форме контактные данные.
    - Установите флажок, чтобы принять условия политики использования и конфиденциальности.
    - Нажмите кнопку **I agree, activate benefit** (Я принимаю условия активации преимущества).
      > [!div class="mx-imgBorder"]
-     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Условия использования преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
@@ -79,13 +75,13 @@ ms.locfileid: "49912010"
 |         Visual Studio Professional (стандартная, годовая облачная)          | Корпоративная лицензия, Azure, розничная версия |   3 месяца    | Нет <sup>2</sup> |
 |              Visual Studio Test Professional (стандартная)              |    Корпоративная лицензия, розничная версия     |   3 месяца    | Нет <sup>2</sup> |
 |                      MSDN Platforms (стандартная)                       |    Корпоративная лицензия, розничная версия     |   3 месяца    | Нет <sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        Н/Д         |   3 месяца    |       Нет       |
+|                     Visual Studio Dev Essentials                     |        Н/Д         |   1 месяц    |       Нет       |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) |       Azure       | Недоступно |       Н/Д       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Программа      | Недоступно |       Н/Д       |
 
 <sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз. Дополнительные сведения см. в разделе вопросов и ответов ниже.  После истечения срока действия подписок Pluralsight вы можете иметь право на получение доступа к 50 курсам Pluralsight по одному из трех направлений в течение 12 месяцев.*
+<sup>2</sup>  *Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз.*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
@@ -105,9 +101,7 @@ ms.locfileid: "49912010"
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос. Что произойдет, когда закончится срок действия подписки Pluralsight?
-Ответ. После завершения срока бесплатной подписки Pluralsight у вас есть два варианта.
-- Получите бесплатный доступ на 12 месяцев (ознакомьтесь со сведениями в таблице [Право на участие](#eligibility), чтобы узнать, доступна ли ваша подписка) для ограниченного набора из 50 курсов в одной из трех ключевых областей, в том числе следующих: разработка приложений в облаке; искусственный интеллект, машинное обучение и данные; DevOps в облаке. Дождитесь сообщения электронной почты от Pluralsight с подтверждением бесплатного доступа после истечения срока действия. Вы можете ознакомиться со [списком курсов](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit), доступных в каждой конкретной библиотеке.
-- Вы можете приобрести подписку прямо из Pluralsight со скидкой 10 % и получить доступ к их полному каталогу курсов.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
+Ответ. В конце действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Вопрос. Моя компания продляет подписку на Visual Studio по соглашению Enterprise. Преимущество Pluralsight можно использовать повторно?
 Ответ. Нет.  Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз.  Это относится ко всем каналам приобретения, включая розничную торговлю, облако и корпоративную лицензию.
@@ -116,3 +110,6 @@ ms.locfileid: "49912010"
 -  [Центр справки Pluralsight](https://help.pluralsight.com/help) поможет вам в прохождении курсов Pluralsight и в использовании веб-сайта Pluralsight.
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+После создания учетной записи вы можете приступать к обучению.  Посетите [https://www.pluralsight.com](http://www.pluralsight.com) и нажмите элемент **вход** в правом верхнем углу страницы, чтобы начать новый курс или вернуться к курсу, который уже выполняется. 

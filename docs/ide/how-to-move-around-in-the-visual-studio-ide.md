@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Перемещение по интегрированной среде разработки Visual Studio
+title: Перемещение по интегрированной среде разработки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,14 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdfae0808ff5daa10f8faa621e6af293543bce66
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060256"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Практическое руководство. Перемещение по интегрированной среде разработки Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Как выполнить Перемещение по интегрированной среде разработки Visual Studio
 
 Интегрированная среда разработки (IDE) предназначена для перемещения между окнами и между файлами разными способами в зависимости от предпочтений или требований к проекту. Можно выбрать режим циклического перехода между файлами в редакторе либо циклическое переключение между всеми активными окнами инструментов в интегрированной среде разработки. Кроме того, можно непосредственно переходить к любому открытому в редакторе файлу независимо от того, когда он просматривался последний раз. Эти возможности способны повысить производительность при работе в интегрированной среде разработки.
 

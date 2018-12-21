@@ -17,12 +17,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74db03cdb23fd0444ca4d87ad475f4b264e97319
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d2c45773a9d45c69cfed4f773bc5cdfcfa1c305
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791193"
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Каталог на диске совпадает со значением в проект в системе управления версиями.|  
 |SCC_I_FILESDIFFER|Каталог на диске отличается от проекта в системе управления версиями.|  

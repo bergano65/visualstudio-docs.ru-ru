@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858483"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349482"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 
-Можно предоставить пакет для использования в проектах Visual Studio, используя либо расширения NuGet для Visual Studio, либо пакет средств разработки программного обеспечения (SDK). В этом разделе описываются сходства и различия между двумя механизмами, которые помогут вам выбирать наиболее подходящий вариант для решения ваших задач.
+Можно предоставить пакет для использования в проектах Visual Studio, используя либо NuGet, либо пакет средств разработки программного обеспечения (SDK). Эта статья описывает сходства и различия между двумя механизмами, которые помогут вам выбирать наиболее подходящий вариант для решения своих задач.
 
 - NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. в [документации NuGet](/nuget).
 
@@ -27,7 +27,6 @@ ms.locfileid: "49858483"
 ## <a name="which-mechanism-should-i-use"></a>Какой механизм следует использовать?
 
 В следующей таблице приводится сравнение ссылочных функций пакета SDK и NuGet.
-
 
 | Функция | Поддержка пакета SDK | Примечания для пакета SDK | Поддержка NuGet | Примечания для NuGet |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ ms.locfileid: "49858483"
 ## <a name="see-also"></a>См. также
 
 - [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
+- [Управление ссылками в проекте (Visual Studio для Mac)](/visualstudio/mac/managing-references-in-a-project)

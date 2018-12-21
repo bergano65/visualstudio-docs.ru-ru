@@ -1,7 +1,8 @@
 ---
-title: Установка Visual Studio 2017 | Документация Майкрософт
+title: Установка Visual Studio
+titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,16 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856175"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159741"
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
 Предлагаем ознакомиться с новым способом установки Visual Studio. В последней версии стало проще выбирать и устанавливать только нужные компоненты. Мы также сократили минимальные требования к месту на диске, поэтому установка Visual Studio выполняется еще быстрее и с меньшим влиянием на функционирование системы.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Установка Visual Studio для Mac](/visualstudio/mac/installation).
 
 Хотите ознакомиться с другими новыми возможностями этой версии? Обратитесь к [заметкам о выпуске](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -149,4 +153,4 @@ ms.locfileid: "49856175"
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
 * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Настройка и установка Visual Studio для Mac](/visualstudio/mac/installation)
+* [Установка Visual Studio для Mac](/visualstudio/mac/installation)

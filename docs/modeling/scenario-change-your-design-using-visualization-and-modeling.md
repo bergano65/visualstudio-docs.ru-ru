@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942482"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967510"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 
@@ -147,7 +147,7 @@ ms.locfileid: "49942482"
 |**Карта кода или схема**|**Что показывает**|
 |-|-|
 |*Карта кода*<br /><br /> Пример<br /><br /> - [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)<br />- [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md)<br />- [Настройка карт кода путем редактирования DGML-файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Зависимости и другие отношения в коде.<br /><br /> Например, для начала компания Dinner Now может изучить карты кода сборок и собрать общие сведения о сборках и их зависимостях, а также проанализировать карты и рассмотреть пространства имен и классы в этих сборках.<br /><br /> Кроме того, компания Dinner Now может создать карты для изучения конкретных областей и других видов отношений в коде. Для поиска и отбора соответствующих областей и отношений используется обозреватель решений.|
-|*Схема классов на основе кода*<br /><br /> См. раздел [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде|
+|*Схема классов на основе кода*<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде|
 
  Предположим, разработчик создает карту кода и акцентирует внимание на тех областях, которые будут затронуты новым сценарием. Эти области выбираются и выделяются на карте.
 
@@ -167,7 +167,7 @@ ms.locfileid: "49942482"
 
 |**Схемы**|**Что описывает**|
 |-|-|
-|*Схема классов на основе кода*<br /><br /> См. раздел [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде.|
+|*Схема классов на основе кода*<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде.|
 
 ### <a name="ValidatingCode"></a> Сохранить код соответствует дизайну
  Компания Dinner Now должна удостовериться, что обновленный код соответствует дизайну. Они создают схемы зависимостей, описывающие слои функциональных возможностей в системе, указывает разрешенные зависимости между ними и связывает артефакты решения с этими слоями.
@@ -186,11 +186,11 @@ ms.locfileid: "49942482"
 
 Пример
 
-- [Определите процесс сборки](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Использовать визуальный конструктор](/azure/devops/pipelines/get-started-designer)
 
-- [Использование процесса сборки с условным возвратом для проверки изменений](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC с условным возвратом](/azure/devops/pipelines/build/triggers#gated)
 
-- [Настройка шаблона процесса сборки](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Создавайте и выпускайте задачи](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Общие рекомендации по созданию и использованию моделей
 
@@ -220,7 +220,7 @@ ms.locfileid: "49942482"
 
 - [Диаграммы, панели мониторинга и мини-приложений (службы Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Создание невыполненной работы и задач с помощью Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Создание невыполненной работы и задач с помощью Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> Тестирование, проверка и возврат кода
 
@@ -332,7 +332,7 @@ ms.locfileid: "49942482"
 |**Схема**|**Что описывает**|
 |-|-|
 |Диаграмма зависимостей|Логическая архитектура системы. Используйте проверку зависимостей, чтобы удостовериться, что код соответствует дизайну.<br /><br /> Чтобы помочь идентифицировать существующие dependencys или предполагаемого dependencys, создайте карту кода и сгруппируйте соответствующие элементы. Чтобы создать схему зависимостей, см. в разделе:<br /><br /> - [Создание схем зависимостей из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)|
-|Схема классов на основе кода|Существующие в коде классы для конкретного проекта.<br /><br /> Для визуализации и изменения существующего в коде класса используйте конструктор классов.<br /><br /> См. раздел [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Схема классов на основе кода|Существующие в коде классы для конкретного проекта.<br /><br /> Для визуализации и изменения существующего в коде класса используйте конструктор классов.<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DefineClasses"></a> Определение глоссария типов: схемы классов
  Схемы классов определяют участвующие в системе сущности, условия или концепции, а также их отношения друг с другом. Например, в процессе разработки эти схемы позволяют описать атрибуты и операции для каждого класса, независимо от языка или стиля его реализации.
@@ -486,5 +486,5 @@ ms.locfileid: "49942482"
 
 - [Визуализация кода](../modeling/visualize-code.md)
 - [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
-- [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)

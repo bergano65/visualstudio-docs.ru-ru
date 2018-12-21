@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cc710be92b00e8faba56582a733a6372f01130
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: adc5dc9be50055417ecb5136f3d3640144c5d69a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733546"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,7 +158,7 @@ ms.locfileid: "49878756"
   
   В режиме приостановки выполнения можно найти и загрузить символы для элементов, которые отображаются в окнах "Стек вызовов", "Модули", "Локальные", "Видимые" и во всех окнах "Контрольные значения". Выделите элемент в окне, откройте контекстное меню и выберите одну из следующих команд:  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |------------|-----------------|  
 |**Загрузить символы**|Пытается загрузить символы из расположений, указанных на странице **Отладка** / **Символы** диалогового окна **Параметры** Visual Studio. Если файл символов обнаружить не удается, запускается Проводник, с помощью которого можно указать новое расположение для поиска.|  
 |**Сведения о загрузке символов**|Представляет сведения о расположении загруженного файла символов или о расположениях, в которых производился поиск, если отладчику не удалось найти файл.|  

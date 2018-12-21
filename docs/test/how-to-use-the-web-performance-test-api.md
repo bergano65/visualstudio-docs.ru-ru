@@ -1,5 +1,5 @@
 ---
-title: API веб-теста производительности в Visual Studio
+title: API веб-теста производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: eacdcf65619909c052f786a8b22b61b4d48292d9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382309"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064502"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Практическое руководство. Использование интерфейса API веб-теста производительности
+# <a name="how-to-use-the-web-performance-test-api"></a>Как выполнить Использование интерфейса API веб-теста производительности
 
 Для веб-теста производительности можно написать код. API веб-теста производительности используется для создания закодированных веб-тестов производительности, подключаемых модулей веб-тестов производительности, подключаемых модулей запросов, правил извлечения и правил проверки. Классы, входящие в состав этих типов, являются основными классами данного API. Другие типы API используются для поддержки создания объектов <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> и <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Пользовательские веб-тесты производительности создаются в пространстве имен <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
- API веб-теста производительности применяется также для программного создания и сохранения декларативных веб-тестов производительности. Для этого следует использовать классы <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> и <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+API веб-теста производительности применяется также для программного создания и сохранения декларативных веб-тестов производительности. Для этого следует использовать классы <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> и <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
 > Для просмотра пространства имен <xref:Microsoft.VisualStudio.TestTools.WebTesting> используется обозреватель объектов. Редакторы Visual C# и Visual Basic предоставляют поддержку IntelliSense для создания кода с помощью классов из этого пространства имен.
 
-
- Кроме того, имеется возможность создавать подключаемые модули для нагрузочных тестов. Дополнительные сведения см. в статьях [Практическое руководство. Использование API-интерфейса нагрузочного теста](../test/how-to-use-the-load-test-api.md) и [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md).
+Кроме того, имеется возможность создавать подключаемые модули для нагрузочных тестов. Дополнительные сведения см. в разделе [Как использовать API-интерфейса нагрузочного теста](../test/how-to-use-the-load-test-api.md) и [Как создать подключаемый модуль нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Использование пространства имен WebTesting
 
@@ -63,11 +64,11 @@ ms.locfileid: "39382309"
 
 9. Выполните веб-тест производительности.
 
-     Пример реализации <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> см. в статье [Практическое руководство. Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Пример реализации класса <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> см. в разделе [Практическое руководство. Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство. Использование API-интерфейса нагрузочного теста](../test/how-to-use-the-load-test-api.md)
-- [Практическое руководство. Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Практическое руководство: Использование API-интерфейса нагрузочного теста](../test/how-to-use-the-load-test-api.md)
+- [Практическое руководство: Создание подключаемого модуля веб-теста производительности](../test/how-to-create-a-web-performance-test-plug-in.md)

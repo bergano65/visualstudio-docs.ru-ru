@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f83f3060764df37411477333a92f04648d66204f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0fb4a830c6cc3af49dcb3e26c6711af1a014c9c1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193099"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724905"
 ---
 # <a name="vsgdbg-class"></a>Класс VsgDbg
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ class VsgDbg;
   
 ### <a name="public-constructors"></a>Открытые конструкторы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (конструктор)](../debugger/vsgdbg-vsgdbg-constructor.md)|Создает экземпляр класса `VsgDbg` класса и при необходимости подготавливает компонент диагностики графики для активного захвата и записи данных графики в приложении.|  
 |[VsgDbg::~VsgDbg (деструктор)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Уничтожает экземпляр `VsgDbg` класса.|  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[AddMessage](../debugger/addmessage.md)|Добавляет пользовательское сообщение диагностики графики HUD (головной дисплей).|  
 |[BeginCapture](../debugger/begincapture.md)|Начинается интервал захвата, будут заканчиваться `EndCapture`.|  

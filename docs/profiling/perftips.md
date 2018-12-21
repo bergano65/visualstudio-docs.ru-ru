@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2933f29cb3668e12731e79151ba17480dda96ea5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669349"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220559"
 ---
 # <a name="perftips"></a>PerfTips
 С помощью подсказок *PerfTips* , отображаемых в отладчике Visual Studio, а также встроенных в отладчик **средств диагностики** вы можете отслеживать и анализировать производительность вашего приложения во время отладки.  
@@ -23,7 +23,7 @@ ms.locfileid: "35669349"
  Несмотря на то, что встроенные в отладчик средства диагностики — это отличный способ оценить производительность приложения во время разработки, работа отладчика может существенно сказаться на показателях программы. Чтобы получить более точные данные о производительности, попробуйте дополнительно проанализировать программу с помощью средств диагностики Visual Studio, не встроенных в отладчик. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком или без него).  
   
 ## <a name="perftips"></a>PerfTips  
- При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в записи блога [PerfTips: информация о производительности при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
+ При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в записи блога [PerfTips: информация о производительности при отладке с помощью Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   

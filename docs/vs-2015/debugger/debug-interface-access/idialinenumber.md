@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber interface
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c816e11189490480cb7f82a241947083ed3068d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08ab059a5489a648927677bc95a37bdbabc92440
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777803"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49302053"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaLineNumber : IUnknown  
+IDiaLineNumber : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaLineNumber`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Извлекает ссылку на символ для единице компиляции, использованное байты изображения текста.|  
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Извлекает ссылку на исходный объект файла.|  

@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d3c0be041628d840908b1814e26f14a488651603
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748474"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Шаблоны приложений для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -387,7 +387,7 @@ ms.locfileid: "49848700"
   
   Не следует выбирать окончательно разрушительные действия для команды по умолчанию. При наличии таких команд, выберите более безопасные команду по умолчанию вместо этого.  
   
-#### <a name="access-keys"></a>Ключи доступа  
+#### <a name="access-keys"></a>Клавиши доступа  
  Не используйте ключи доступа для **ОК**/**отменить**/**помочь** кнопки. Эти кнопки сопоставляются сочетания клавиш по умолчанию:  
   
 |Имя кнопки|Сочетание клавиш|  
@@ -486,7 +486,7 @@ ms.locfileid: "49848700"
   
   Пользователь всегда должен иметь возможность определить последствия операции перетаскивания и вставки путем выбора элемента, за какой из следующих указатели мыши отображается перед удалением элемента и перетащив его в целевое расположение:  
   
-|Указатель мыши|Команда|Описание|  
+|Указатель мыши|Команда|Описание:|  
 |-------------------|-------------|-----------------|  
 |![Наведении указателя мыши на значок «не бросать»](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706 01_MouseNoDrop")|Не раскрывается|Не удалось удалить элемент в указанное расположение.|  
 |![Значок мыши «Копировать»](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706 02_MouseCopy")|Копировать|Элемент будет скопирован в целевое расположение.|  

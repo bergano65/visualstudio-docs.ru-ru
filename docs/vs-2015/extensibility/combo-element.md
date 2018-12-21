@@ -16,12 +16,12 @@ ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ccca82d8716b57f854d6527bf462bb6ec687abb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ab350133813f32b87570ea17df50060f93bc300
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859789"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788941"
 ---
 # <a name="combo-element"></a>Элемент Combo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "49859789"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
 |id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
@@ -55,7 +55,7 @@ ms.locfileid: "49859789"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Родительский|Необязательный. Родительский элемент кнопки.|  
 |CommandFlag|Обязательно. См. в разделе [команду флаг элемент](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для кнопки.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Фильтрации<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
@@ -64,7 +64,7 @@ ms.locfileid: "49859789"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

@@ -1,5 +1,5 @@
 ---
-title: Включение закодированных тестов пользовательского интерфейса для элементов управления в Visual Studio
+title: Включение закодированных тестов пользовательского интерфейса для элементов управления
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153567"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895955"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 
 Реализуйте поддержку платформы закодированных тестов пользовательского интерфейса, чтобы повысить эффективность тестирования элементов управления. Вы можете последовательно добавлять повышение уровней поддержки. Начать можно с поддержки проверки записи, воспроизведения и свойств. После этого можно включить построитель закодированных тестов пользовательского интерфейса, чтобы распознать настраиваемые свойства элемента управления. Предоставьте настраиваемые классы для доступа к этим свойствам из сгенерированного кода. Вы также можете помочь построителю закодированных тестов пользовательского интерфейса захватывать действия способом, который в большей степени соответствует цели записываемого действия.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Поддержка записи, воспроизведения и проверки свойства путем реализации специальных возможностей
 

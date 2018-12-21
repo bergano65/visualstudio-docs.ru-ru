@@ -1,22 +1,23 @@
 ---
 title: Измерение производительности кода Python
-description: Руководство по проверке производительности кода Python при использовании интерпретаторов на основе CPython с помощью профилировщика Visual Studio.
-ms.date: 06/26/2018
+description: Проверка производительности кода Python при использовании интерпретаторов на основе CPython с помощью профилировщика Visual Studio.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 931bbcea67d8595ec171ef7e08756aa5b84cc2e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062943"
 ---
 # <a name="profile-python-code"></a>Профилирование кода Python
 

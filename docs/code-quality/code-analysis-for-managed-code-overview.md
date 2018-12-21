@@ -1,5 +1,5 @@
 ---
-title: Анализ кода для управляемого кода в Visual Studio
+title: Статический анализ кода для управляемого кода
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320819"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389316"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Обзор анализа кода для управляемого кода
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Обзор анализа статического кода для управляемого кода в Visual Studio
 
-Visual Studio 2017 анализирует управляемого кода двумя способами: с помощью прежних версий *FxCop* статического анализа управляемых сборок и с помощью платформы компилятора .NET *анализаторы*. В этом разделе рассматриваются FxCop статического анализа кода. Дополнительные сведения об анализе кода с помощью анализаторов .NET Compiler Platform, см. в разделе [анализаторов Roslyn Обзор из](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 можно выполнять анализ кода управляемого кода двумя способами: с *FxCop* статического анализа управляемых сборок и дополнительные modern *анализаторов Roslyn*. В этом разделе рассматриваются FxCop статического анализа кода. Дополнительные сведения об анализе кода с помощью анализаторов кода, см. в разделе [анализаторов Roslyn Обзор из](../code-quality/roslyn-analyzers-overview.md).
 
 Анализа управляемого кода позволяет проанализировать управляемые сборки и получить такие сведения о сборках, как нарушения правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET Framework.
 
@@ -51,7 +51,7 @@ Visual Studio 2017 анализирует управляемого кода дв
 Подавление предупреждений в в исходном коде реализуется с помощью настраиваемых атрибутов. Чтобы подавить предупреждение, добавьте атрибут `SuppressMessage` в исходный код, как показано в следующем примере:
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code
@@ -75,7 +75,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>Интеграция командного построения
 
-Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index?view=vsts).
+Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>См. также
 

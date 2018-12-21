@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572703"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Образец XSD-файла: Простая схема
+# <a name="sample-xsd-file-simple-schema"></a>Образец XSD-файла: простая схема
 
 Следующий файл XSD используется в различных примерах документации конструктора схем XSD. Этот файл представляет собой простую схему заказа на покупку.
 

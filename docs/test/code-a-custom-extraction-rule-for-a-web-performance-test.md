@@ -1,5 +1,5 @@
 ---
-title: Кодирование пользовательского правила извлечения для веб-теста производительности в Visual Studio
+title: Кодирование пользовательского правила извлечения для веб-теста производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283214"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066682"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила извлечения для веб-теста производительности
 
@@ -28,6 +28,8 @@ ms.locfileid: "44283214"
 
 > [!NOTE]
 > Можно также создавать собственные правила проверки. Дополнительные сведения см. в статье [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Создание пользовательского правила извлечения
 

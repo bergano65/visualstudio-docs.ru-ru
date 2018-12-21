@@ -1,5 +1,5 @@
 ---
-title: Создание веб-шаблонов для Visual Studio
+title: Создание веб-шаблонов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826405"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063672"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
+# <a name="how-to-manually-create-web-templates"></a>Как выполнить Создание веб-шаблонов вручную
 
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл *VSTEMPLATE* должен указывать, что это веб-шаблон, а также задавать язык программирования.
 
@@ -43,7 +43,7 @@ ms.locfileid: "49826405"
    - CSharp
    - VisualBasic
 
-     Пример:
+     Например:
 
      ```xml
      <TemplateData>
@@ -64,7 +64,7 @@ ms.locfileid: "49826405"
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
         <Description>A simple web template</Description>

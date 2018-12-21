@@ -1,6 +1,6 @@
 ---
-title: 'Практическое: Включение и отключение изменить и продолжить (C#, VB, C++) | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Включение и отключение изменить и продолжить | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,16 +27,16 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051391"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Практическое: Включение и отключение изменить и продолжить (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Как выполнить Включение и отключение изменить и продолжить (C#, VB, C++)
 
-Можно включить или отключить **изменить и продолжить** в Visual Studio **параметры** диалоговое окно во время разработки. **Изменить и продолжить** работает только в отладочных сборок. Дополнительные сведения см. в разделе [изменить и продолжить](../debugger/edit-and-continue.md). 
+Можно включить или отключить **изменить и продолжить** в Visual Studio **параметры** диалоговое окно во время разработки. Операция **Изменить и продолжить** работает только в отладочных сборках. Дополнительные сведения см. в разделе [Изменить и продолжить](../debugger/edit-and-continue.md). 
   
 Для машинного кода C++ **изменить и продолжить** , необходимо использовать `/INCREMENTAL` параметр. Дополнительные сведения о требованиях к функции в C++ см. в этом [блога](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) и [изменить и продолжить (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
   

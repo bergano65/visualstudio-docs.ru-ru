@@ -1,5 +1,6 @@
 ---
 title: Обзор интегрированной среды разработки (IDE) в Visual Studio
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626676"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159572"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -105,13 +106,13 @@ ms.locfileid: "42626676"
 Мы рассмотрели лишь некоторые из возможностей Visual Studio, чтобы вы могли получить представление о пользовательском интерфейсе. Для дальнейшего ознакомления:
 
 > [!div class="nextstepaction"]
-> [Сведения о редакторе кода](../ide/quickstart-editor.md)
+> [Сведения о редакторе кода](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Сведения о проектах и решениях](../ide/quickstart-projects-solutions.md)
+> [Сведения о проектах и решениях](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../ide/visual-studio-ide.md)
+- [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../get-started/visual-studio-ide.md)
 - [Дополнительные возможности Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Изменение цвета шрифта и темы](../ide/quickstart-personalize-the-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: Изменение моделей тестовых наборов в Visual Studio
+title: Изменение моделей тестовых наборов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057117"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Изменение моделей тестовых наборов для указания вероятности запуска теста виртуальным пользователем
 
 *Модель тестового набора* определяет вероятность, с которой виртуальный пользователь выполняет данный тест в сценарии тестовой нагрузки. Это позволяет сделать моделирование нагрузки более реалистичным. Вместо одного рабочего процесса в тестируемых приложениях можно создать несколько рабочих процессов, что является более точным приближением реального взаимодействия конечных пользователей с приложениями.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-options"></a>Варианты модели тестового набора
 

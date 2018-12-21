@@ -1,5 +1,5 @@
 ---
-title: Решения и проекты в Visual Studio
+title: Проекты и решения
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,14 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089663"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159676"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
+
+Эта статья описывает концепцию *проекта* и *решения* в Visual Studio. В ней также кратко рассматривается создание проекта и окно **обозревателя решений**.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Проекты и решения в Visual Studio для Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Проекты
 
@@ -62,7 +67,7 @@ ms.locfileid: "37089663"
 
 ## <a name="create-new-projects"></a>Создать новые проекты
 
-Самый простой способ создать проект — начать с шаблона проекта для приложения или веб-сайта определенного типа. Шаблон проекта состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров. Эти шаблоны отображаются в диалоговом окне **Новый проект** или **Новый веб-сайт**, если последовательно выбрать пункты **Файл** > **Создать** > **Проект** или **Файл** > **Создать** > **Веб-сайт**. Дополнительные сведения см. в разделе [Создание проектов и решений](../ide/creating-solutions-and-projects.md).
+Самый простой способ создать проект — начать с шаблона проекта для приложения или веб-сайта определенного типа. Шаблон проекта состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров. Эти шаблоны отображаются в диалоговом окне **Новый проект**, если последовательно выбрать пункты **Файл** > **Создать** > **Проект**. Дополнительные сведения см. в разделе [Создание проектов и решений](../ide/creating-solutions-and-projects.md).
 
 Вы можете также создать пользовательские шаблоны проектов и элементов. Дополнительные сведения см. в статье [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md).
 
@@ -74,4 +79,6 @@ ms.locfileid: "37089663"
 
 ## <a name="see-also"></a>См. также
 
-- [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Интегрированная среда разработки Visual Studio](../get-started/visual-studio-ide.md)
+- [Проекты и решения (Visual Studio для Mac)](/visualstudio/mac/projects-and-solutions)
+- [Добавление и удаление элементов проекта (Visual Studio для Mac)](/visualstudio/mac/add-and-remove-project-items)

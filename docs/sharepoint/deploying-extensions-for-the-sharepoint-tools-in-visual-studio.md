@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774920"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295973"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
@@ -235,13 +235,13 @@ ms.locfileid: "43774920"
 
 4.  Измените файл extension.vsixmanifest.
 
-    -   Добавить `Microsoft.VisualStudio.MefComponent` элемента под `Assets` элемент, а затем задайте значение нового элемента в относительный путь к сборке, реализующей расширение в пакет VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).
+    -   Добавить `Microsoft.VisualStudio.MefComponent` элемента под `Assets` элемент, а затем задайте значение нового элемента в относительный путь к сборке, реализующей расширение в пакет VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Если расширение содержит команду SharePoint, которая вызывает серверную объектную модель для SharePoint, добавьте `Microsoft.VisualStudio.Assembly` элемента под `Assets` элемент. Значение нового элемента в относительный путь к сборке, реализующей команду SharePoint в пакете VSIX. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    -   Если расширение содержит команду SharePoint, которая вызывает серверную объектную модель для SharePoint, добавьте `Microsoft.VisualStudio.Assembly` элемента под `Assets` элемент. Значение нового элемента в относительный путь к сборке, реализующей команду SharePoint в пакете VSIX. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Если расширение содержит шаблон проекта или шаблона элемента, добавьте `ProjectTemplate` или `ItemTemplate` элемента под `Assets` элемент. Значение нового элемента в относительный путь к папке, содержащей шаблона в пакете VSIX. Дополнительные сведения см. в разделе [ProjectTemplate элемент (Схема VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) и [ItemTemplate элемента (Схема VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).
+    -   Если расширение содержит шаблон проекта или шаблона элемента, добавьте `ProjectTemplate` или `ItemTemplate` элемента под `Assets` элемент. Значение нового элемента в относительный путь к папке, содержащей шаблона в пакете VSIX. Дополнительные сведения см. в разделе [ProjectTemplate элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) и [ItemTemplate элемента (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Если расширение содержит настраиваемый мастер для шаблона проекта или шаблона элемента, добавьте `Assembly` элемента под `Assets` элемент. Задайте значение нового элемента к относительному пути сборки в пакете VSIX, а затем установите `AssemblyName` атрибут полное имя сборки (включая версии, язык и региональные параметры и маркер открытого ключа). Дополнительные сведения см. в разделе [Dependency-элемент (Схема VSX)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    -   Если расширение содержит настраиваемый мастер для шаблона проекта или шаблона элемента, добавьте `Assembly` элемента под `Assets` элемент. Задайте значение нового элемента к относительному пути сборки в пакете VSIX, а затем установите `AssemblyName` атрибут полное имя сборки (включая версии, язык и региональные параметры и маркер открытого ключа). Дополнительные сведения см. в разделе [Dependency-элемент (Схема VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Пример
 

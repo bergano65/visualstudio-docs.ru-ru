@@ -1,10 +1,11 @@
 ---
-title: Как сообщить о проблеме с Visual Studio 2017
+title: Как сообщить о проблеме с Visual Studio
+titleSuffix: ''
 description: Узнайте, как сообщить корпорации Майкрософт о проблеме с Visual Studio 2017, чтобы диагностировать и устранить ее.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 03/11/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,16 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 968b86af3620e42d7bca48335a03cca76f5afac3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755928"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159286"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 
 Если во время работы с Visual Studio возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://developercommunity.visualstudio.com/), чтобы мы могли диагностировать и устранить ее.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Как сообщить о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Сообщение о проблеме с помощью Visual Studio
 
@@ -125,7 +129,7 @@ ms.locfileid: "36755928"
 
 Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
 
-Если у вас нет проблем, но вы хотите оставить отзыв или предложение по продукту, можно воспользоваться соответствующей функцией. Дополнительные сведения см. на странице [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>См. также
 

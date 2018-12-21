@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908435"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389219"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 
 ADO.NET предоставляет простые методы для работы с XML-данных. В этом пошаговом руководстве создается приложение Windows, которое загружает XML-данные в набор данных. Набор данных отображается в <xref:System.Windows.Forms.DataGridView> элемента управления. Наконец схема XML, на основе содержимого XML-файла отображается в текстовом поле.
 
-> [!NOTE]
-> Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите **Импорт и экспорт параметров**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
-На этом шаге создается проект Visual Basic или Visual C#.
+На этом шаге вы создадите Visual Basic или Visual C# проекта.
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -54,7 +51,7 @@ ADO.NET предоставляет простые методы для работ
 
 Так как в этом пошаговом руководстве уделяется чтение XML-данных в набор данных, предоставляется содержимое XML-файла.
 
-1. На **проекта** меню, выберите **Добавление нового элемента**.
+1. В меню Проект **выберите пункт Добавить новый элемент**.
 
 2. Выберите **XML-файл**, назовите файл **authors.xml**, а затем выберите **добавить**.
 
@@ -155,7 +152,7 @@ ADO.NET предоставляет простые методы для работ
     |Элемент управления|Свойство.|Параметр|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**Полосы прокрутки**|**По вертикали**|
+    ||ScrollBars|**По вертикали**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ ADO.NET предоставляет простые методы для работ
 
      **Редактор кода** открывается `ShowSchemaButton_Click` обработчик событий.
 
-3.  Вставьте следующий код в `ShowSchemaButton_Click` обработчик событий.
+3.  Вставьте в обработчик события `ShowSchemaButton_Click` следующий код.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]

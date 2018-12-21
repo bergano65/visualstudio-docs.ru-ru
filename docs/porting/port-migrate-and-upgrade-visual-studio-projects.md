@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325033"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067065"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
@@ -62,13 +62,13 @@ ms.locfileid: "49325033"
 | SharePoint 2010 | Когда вы откроете проект SharePoint в Visual Studio 2017, он обновляется до SharePoint 2013 или SharePoint 2016. Для этого обновления в Visual Studio 2017 должна быть установлена рабочая нагрузка "Разработка классических приложений .NET".<br/><br/>Дополнительные сведения об обновлении проектов SharePoint см. в статьях [Обновление до SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [Обновление рабочего процесса в SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx) и [Создание фермы SharePoint Server 2016 для обновления с переподключением баз данных](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | Проекты надстройки SharePoint, созданные в предварительной версии Office Developer Tools 2, невозможно открыть в Visual Studio 2017. Чтобы обойти это ограничение, в файле CSPROJ VBPROJ для `MinimumVisualStudioVersion` укажите 12.0, а для `MinimumOfficeToolsVersion` — значение 12.2. |
 | Silverlight | Проекты Silverlight не поддерживаются в Visual Studio 2017. Для поддержки приложений Silverlight продолжайте использовать Visual Studio 2015. |
-| Службы SQL Server Reporting Services и службы SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | Поддержка этих типов проектов обеспечивается двумя расширениями из коллекции Visual Studio: [Проекты моделирования Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) и [Проекты Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Поддержка SSDT также включена в рабочую нагрузку хранения и обработки данных в Visual Studio 2017. |
+| Службы SQL Server Reporting Services и службы SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | Поддержка этих типов проектов обеспечивается двумя расширениями из коллекции Visual Studio:  [Проекты моделирования Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) и [проекты служб Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Поддержка SSDT также включена в рабочую нагрузку хранения и обработки данных в Visual Studio 2017. |
 | Службы интеграции SQL Server (SSIS) | Поддержка Visual Studio 2017 доступна в рамках SQL Server Data Tools (SSDT). Дополнительные сведения см. в [блоге SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio 2017 можно использовать для работы в проектах, которые созданы в более ранних версиях Visual Studio (до Visual Studio 2010). При первом открытии проекта вы можете выполнить обновление до последней версии компилятора и набора инструментов или продолжить использование исходную версию. В этом случае Visual Studio 2017 не будет вносить изменения в файл проекта, используя набор инструментов из более ранней установки Visual Studio для сборки проекта. Сохранение исходных параметров означает, что при необходимости вы по-прежнему можете открывать проект в исходной версии Visual Studio. Дополнительные сведения см. в разделе [Использование собственного многоплатформенного нацеливания в Visual Studio для сборки старых проектов](/cpp/porting/use-native-multi-targeting). |
 | Расширяемость Visual Studio/VSIX | Проекты с минимальной версией 14.0 или меньше обновляются до минимальной версии 15.0, что не позволяет открывать проекты в более ранних версиях Visual Studio. Чтобы открыть проект в более ранних версиях, задайте `$(VisualStudioVersion)` в качестве значения минимальной версии. См. также [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Microsoft Test Manager или Visual Studio 2010 с пакетом обновления 1 (SP1) можно использовать для открытия сред, которые были созданы в какой-либо из этих версий. Но версия Microsoft Test Manager должна соответствовать версии Visual Studio 2010 с пакетом обновления 1 (SP1), чтобы можно было создавать среды. |
 | Средства Visual Studio для Apache Cordova | Проекты можно открывать в Visual Studio 2017, но они не являются обратно совместимыми. После открытия проекта в Visual Studio 2015 предлагается разрешить внесение изменений в проект. Это позволит обновить проект, чтобы вместо файла `taco.json` использовать набор инструментов для управления версиями библиотеки Cordova, платформами и подключаемыми модулями, а также зависимостями узлов или npm. Дополнительные сведения см. в [руководстве по миграции](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
-| Веб-развертывание (WDPROJ) | Поддержка проектов веб-развертывания прекращена, начиная с Visual Studio 2012, а вместо нее добавлена поддержка профиля публикации. Так как в Visual Studio 2017 нет эквивалентной функции, для таких проектов отсутствует путь автоматического переноса. Вместо этого откройте в текстовом редакторе файл WDPROJ, скопируйте любые настройки и вставьте их в файл PUBXML (профиль публикации), как описано на сайте [StackOverflow](https://stackoverflow.com/a/12061065/1203388). См. также статью [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects) (Планы в отношении веб-сайта и проектов веб-развертывания) (блоги MSDN). |
+| Веб-развертывание (WDPROJ) | Поддержка проектов веб-развертывания прекращена, начиная с Visual Studio 2012, а вместо нее добавлена поддержка профиля публикации. Так как в Visual Studio 2017 нет эквивалентной функции, для таких проектов отсутствует путь автоматического переноса. Вместо этого откройте в текстовом редакторе файл WDPROJ, скопируйте любые настройки и вставьте их в файл PUBXML (профиль публикации), как описано на сайте [StackOverflow](https://stackoverflow.com/a/12061065/1203388). См. также статью [Планы в отношении веб-сайта и проектов веб-развертывания](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation, Windows Workflow Foundation | Этот проект можно открыть в Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. |
 | Windows Presentation Foundation | Этот проект можно открыть в Visual Studio 2013, Visual Studio 2012 и Visual Studio 2010 с пакетом обновления 1 (SP1). |
 | Приложения для Магазина Windows и Windows Phone | В Visual Studio 2017 не поддерживаются проекты для Магазина Windows 8.1 и Магазина Windows 8.0 и для Windows Phone 8.1 и Windows Phone 8.0. Для поддержки этих приложений продолжайте использовать Visual Studio 2015. Для поддержки проектов Windows Phone 7.x используйте Visual Studio 2012. |
@@ -95,7 +95,13 @@ ms.locfileid: "49325033"
 
 В этом контексте, естественно, возникает вопрос, следует ли попытаться обновить проект вручную или перенести его на более новую версию `ToolsVersion`. Такое изменение не является обязательным и, скорее всего, приведет ко множеству ошибок и предупреждений, которые потребуется исправить, чтобы сборка проекта снова стала возможной. Кроме того, если в Visual Studio в будущем перестанет поддерживаться определенная версия `ToolsVersion`, при открытии проекта будет запущен процесс его миграции, так как значение `ToolsVersion` должно быть изменено. В такой ситуации подсистеме, связанной с этим типом проектов, точно известно, что именно нужно изменить, и она может произвести эти изменения автоматически, как было описано ранее в этой статье.
 
+# <a name="next-steps"></a>Следующие шаги
+
 Дополнительные сведения см. в следующих статьях:
 
 - [Руководство по ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Руководство по нацеливанию на платформы](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>См. также
+
+[Справка по миграции и обновлению проекта Visual Studio 2019 (предварительная версия)](port-migrate-upgrade-visual-studio-projects-2019.md)

@@ -17,12 +17,12 @@ ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69b8cf3a2bdb4dbdeb964bd53bb39b386cdd1d0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac205e217c803bbe86816bd82f6bf5d6d8493afe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185202"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805974"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ IDebugEngineCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEngineCreateEvent2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Извлекает объект, представляющий только что созданный отладчик (DE).|  
   

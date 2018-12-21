@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2c74cf7ddd78bee538a3d37d7e4c4daa4556e3c9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224236"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295674"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -19,11 +19,11 @@ ms.locfileid: "43224236"
 
 Используйте это руководство для удаления индивидуальных продуктов, перейдя в соответствующий раздел, или воспользуйтесь скриптами, приведенными в разделе [Скрипт удаления](#uninstall-script), чтобы удалить все.
 
-Если ранее вы установили Xamarin Studio на компьютере, в дополнение к описанным ниже действиям может потребоваться выполнить указания из руководства по [удалению Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac).
+Если ранее вы установили Xamarin Studio на компьютере, в дополнение к описанным ниже действиям может потребоваться выполнить указания из руководства по [удалению Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac).
 
 ## <a name="uninstall-script"></a>Скрипт удаления
 
-Существует два скрипта, которые можно использовать для удаления Visual Studio для Mac и всех компонентов на своем компьютере:
+Существуют два скрипта, которые можно использовать для удаления Visual Studio для Mac и всех компонентов на своем компьютере.
 
 - [Скрипт Visual Studio и Xamarin](#visual-studio-for-mac-and-xamarin-script)
 - [Скрипт .NET Core](#net-core-script)
@@ -41,7 +41,7 @@ ms.locfileid: "43224236"
 
 Чтобы запустить скрипт, выполните следующее.
 
-1. Щелкните скрипт правой кнопкой мыши и выберите пункт **Сохранить как...**, чтобы сохранить файл на Mac.
+1. Щелкните скрипт правой кнопкой мыши и выберите **Сохранить как**, чтобы сохранить файл на устройстве Mac.
 2. Откройте терминал и измените рабочий каталог на папку, куда был скачан скрипт:
 
     ```bash
@@ -61,7 +61,7 @@ ms.locfileid: "43224236"
 
 Чтобы запустить скрипт, выполните следующее.
 
-1. Щелкните скрипт правой кнопкой мыши и выберите пункт **Сохранить как...**, чтобы сохранить файл на Mac.
+1. Щелкните скрипт правой кнопкой мыши и выберите **Сохранить как**, чтобы сохранить файл на устройстве Mac.
 2. Откройте терминал и измените рабочий каталог на папку, куда был скачан скрипт:
 
     ```bash
@@ -83,7 +83,7 @@ ms.locfileid: "43224236"
 
 Удаление этого набора приложений приводит к удалению Visual Studio для Mac, даже если в файловой системе остались другие файлы, связанные с Xamarin.
 
-Чтобы удалить все следы Visual Studio для Mac, нужно выполнить в терминале следующие команды:
+Чтобы удалить все следы Visual Studio для Mac, выполните в терминале следующие команды.
 
 ```bash
 sudo rm -rf "/Applications/Visual Studio.app"
@@ -136,8 +136,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-avd"></a>Удаление Android AVD
 
 > [!WARNING]
-> Существуют и другие приложения, не входящие в Visual Studio для Mac, которые используют Android AVD и указанные дополнительные компоненты Android, например Android Studio.
-> Удаление этого каталога может привести к нарушению работы проектов в Android Studio. 
+> Существуют и другие приложения, не входящие в Visual Studio для Mac, которые используют Android AVD и указанные дополнительные компоненты Android, например Android Studio. Удаление этого каталога может привести к нарушению работы проектов в Android Studio.
 
 Для удаления Android AVD и дополнительных компонентов Android используйте следующую команду:
 
@@ -150,8 +149,6 @@ rm -rf ~/.android
 ```bash
 rm -rf ~/.android/avd
 ```
-
- 
 
 ## <a name="uninstall-xamarinios"></a>Удаление Xamarin.iOS
 
@@ -210,3 +207,7 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Удаление Visual Studio (в Windows)](/visualstudio/install/uninstall-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: Настройка итераций теста для нагрузочного тестирования в Visual Studio
+title: Настройка итераций теста для нагрузочных тестов
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176145"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055691"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Настройка итераций теста в сценарии тестовой нагрузки
 
 Чтобы настроить параметры итераций теста, измените сценарий нагрузочного теста с помощью редактора тестовой нагрузки и окна **Свойства**. По умолчанию в сценарии тестовой нагрузки не задается максимальное количество итераций теста. При желании можно задать максимальное число итераций теста в сценарии и длительность задержки между ними.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Определение максимального числа итераций теста для сценария
 

@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843995"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388953"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Страница "Проекты и решения", диалоговое окно "Параметры"
 
 Задает поведение Visual Studio для проектов и решений. Чтобы открыть эти параметры, выберите пункты меню **Сервис** > **Параметры**, разверните **Проекты и решения** и выберите **Общие**.
 
 Пути по умолчанию для папки проекта и папки шаблона задаются на вкладке **Расположение** в том же диалоговом окне.
-
-> [!NOTE]
-> Параметры в пользовательском интерфейсе могут отличаться от описанных здесь в зависимости от текущих параметров или выпуска. При написании этой статьи имелось в виду окно **Обычные параметры разработки**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Страница "Общие"
 

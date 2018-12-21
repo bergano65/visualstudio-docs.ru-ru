@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830058"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388112"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое: публикация приложения WPF с включенными визуальными стилями
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 Визуальные стили включить внешний вид стандартные элементы управления для меняться в зависимости от темы, выбранного пользователем. По умолчанию визуальные стили не включены для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальных стилей для приложения WPF и публикации решения приводит к ошибке. В этом разделе описывается устранение этой ошибки и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview). Дополнительные сведения о сообщении об ошибке, см. в разделе [Устранение ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Чтобы устранить эту ошибку и опубликовать решение, необходимо выполнить следующие задачи:  
@@ -39,7 +39,11 @@ ms.locfileid: "49830058"
      По умолчанию не включены визуальные стили.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Следующие процедуры показывают, как открыть файл манифеста, связанный с проектом.  
@@ -54,7 +58,7 @@ ms.locfileid: "49830058"
   
          Файл app.manifest открывается в **редактор кода**.  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Чтобы открыть файл манифеста в проекте C#  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Чтобы открыть файл манифеста в C# проекта  
   
     1.  В строке меню выберите **проекта**, *имя_проекта* **свойства**, где *имя_проекта* имя проекта WPF.  
   
@@ -65,7 +69,7 @@ ms.locfileid: "49830058"
         > [!NOTE]
         >  Если **внедрить манифест с параметрами по умолчанию** или **создать приложение без манифеста** отображаются в поле манифеста не включены визуальные стили. Если имя файла манифеста, отображается в поле манифеста, перейдите к следующему шагу в этой процедуре.  
   
-    3.  В **обозревателе решений**, выберите **Показать все файлы**.  
+    3.  В **обозревателе решений** выберите **Показать все файлы**.  
   
          Эта кнопка показывает все элементы проекта, включая те, которые были исключены и те, которые обычно скрыты. Файл манифеста отображается как элемент проекта.  
   
@@ -78,7 +82,18 @@ ms.locfileid: "49830058"
      Этот XML-документ описывает сборку, содержащую элементы управления, которые поддерживает стили оформления.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  В блокноте, выберите **файл**, а затем нажмите кнопку **Сохранить как**.  
@@ -163,7 +178,7 @@ ms.locfileid: "49830058"
   
 ## <a name="see-also"></a>См. также
 
--[Устранение определенных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview)
 - [Включение визуальных стилей](/windows/desktop/Controls/cookbook-overview)
 - [Командные строки](/dotnet/framework/tools/developer-command-prompt-for-vs)

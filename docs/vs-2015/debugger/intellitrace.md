@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912985"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737215"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "49912985"
 |||  
 |-|-|  
 |**Поддерживается**|— Приложения Visual Basic и Visual C#, которые используют .NET Framework 2.0 или более поздней версии.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
-|**Ограниченная поддержка**|-Приложения F # на экспериментальной основе<br />-Поддерживается только для событий приложений Windows Store|  
+|**Ограниченная поддержка**|- F# приложений в экспериментальном режиме<br />-Поддерживается только для событий приложений Windows Store|  
 |**не поддерживается**|-C++, другие языки и скрипт<br />-Windows служб Silverlight, Xbox, или [!INCLUDE[winmobile](../includes/winmobile-md.md)] приложений|  
   
 > [!NOTE]

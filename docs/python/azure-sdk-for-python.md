@@ -1,7 +1,7 @@
 ---
 title: Пакет Azure SDK для Python
 description: Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Python на любой платформе.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100930"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062888"
 ---
-# <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Использование служб Azure с помощью пакета Azure SDK для Python
 
 Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Windows, MacOS и Linux.
 
@@ -39,7 +39,7 @@ pip install azure
 
 В [Центре разработчиков для языка Python](https://docs.microsoft.com/python/azure/?view=azure-python) также содержится ряд полезных ресурсов, в том числе руководства.
 
-- Создание веб-приложений в "Службе приложений Azure" в Linux (/azure/app-service/containers/quickstart-python).
+- [Создание веб-приложений в службе приложений Azure на платформе Linux](/azure/app-service/containers/quickstart-python).
 - [Хранилище BLOB-объектов](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [Хранилище таблиц](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Хранилище очередей](/azure/storage/storage-python-how-to-use-queue-storage)

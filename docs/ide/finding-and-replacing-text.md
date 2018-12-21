@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384244"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349105"
 ---
 # <a name="find-and-replace-text"></a>Поиск и замена текста
 
@@ -93,6 +93,9 @@ ms.locfileid: "44384244"
 
 ## <a name="multi-caret-selection"></a>Выбор нескольких точек вставки
 
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Выбор блока](/visualstudio/mac/block-selection).
+
 **Новая возможность в Visual Studio 2017 версии 15.8**
 
 Используйте *выбор нескольких точек вставки*, чтобы внести одинаковые изменения в несколько мест одновременно. Например, вы можете вставить одинаковый текст или изменить существующий текст в нескольких местах одновременно.
@@ -130,3 +133,4 @@ ms.locfileid: "44384244"
 
 - [Использование регулярных выражений в Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Рефакторинг кода в Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Выбор блока (Visual Studio для Mac)](/visualstudio/mac/block-selection)

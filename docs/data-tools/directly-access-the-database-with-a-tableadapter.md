@@ -25,47 +25,49 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53d4b2e75be288422300122d5ef9f523068dd9fc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 22a2580809394ba1b41e7923f4f2df458d995a93
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756458"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750966"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
+
 В дополнение к `InsertCommand`, `UpdateCommand`, и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы можно вызывать (`TableAdapter.Insert`, `TableAdapter.Update`, и `TableAdapter.Delete`) для управления данными непосредственно в базе данных.
 
- Если вы не хотите создавать эти прямые методы, задайте `GenerateDbDirectMethods` свойства `false` в **свойства** окна. Если все запросы будут добавлены в дополнение к основной запрос адаптера таблицы TableAdapter, они являются отдельными запросами, которые не создают эти `DbDirect` методы.
+Если вы не хотите создавать эти прямые методы, задайте `GenerateDbDirectMethods` свойства `false` в **свойства** окна. Если все запросы будут добавлены в дополнение к основной запрос адаптера таблицы TableAdapter, они являются отдельными запросами, которые не создают эти `DbDirect` методы.
 
 ## <a name="send-commands-directly-to-a-database"></a>Отправлять команды непосредственно в базу данных
- Вызов метода `DbDirect` метод, который выполняет задачу, вы пытались выполнить.
 
-#### <a name="to-insert-new-records-directly-into-a-database"></a>Для вставки новых записей непосредственно в базу данных
+Вызов метода `DbDirect` метод, который выполняет задачу, вы пытались выполнить.
+
+### <a name="to-insert-new-records-directly-into-a-database"></a>Для вставки новых записей непосредственно в базу данных
 
 -   Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
 
     > [!NOTE]
-    >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
+    > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
 
      [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
      [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]
 
-#### <a name="to-update-records-directly-in-a-database"></a>Для обновления записей непосредственно в базе данных
+### <a name="to-update-records-directly-in-a-database"></a>Для обновления записей непосредственно в базе данных
 
 -   Вызов метода `Update` , передавая в новых и исходные значения для каждого столбца в качестве параметров.
 
     > [!NOTE]
-    >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
+    > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
 
      [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
      [!code-csharp[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]
 
-#### <a name="to-delete-records-directly-from-a-database"></a>Для удаления записей непосредственно из базы данных
+### <a name="to-delete-records-directly-from-a-database"></a>Для удаления записей непосредственно из базы данных
 
 -   Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
 
     > [!NOTE]
-    >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
+    > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
 
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]

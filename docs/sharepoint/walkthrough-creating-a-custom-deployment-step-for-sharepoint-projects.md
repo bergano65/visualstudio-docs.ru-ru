@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812847"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296155"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint, Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.  
@@ -193,7 +193,7 @@ ms.locfileid: "49812847"
   
 1.  В **обозревателе решений**в разделе **UpgradeDeploymentStep** проекта, откройте контекстное меню для **source.extension.vsixmanifest** файл, а затем выберите  **Откройте**.  
   
-     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **шаг развертывания обновления для проектов SharePoint**.  
   
@@ -208,7 +208,7 @@ ms.locfileid: "49812847"
 6.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении**.  
   
@@ -221,7 +221,7 @@ ms.locfileid: "49812847"
 10. В **тип** , введите **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. В **источника** выберите **проект в текущем решении**.  
   

@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5e574267ac83d145c5f3fb44117534127e3f1fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785850"
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "49837247"
 ## <a name="additional-language-service-interfaces"></a>Интерфейсы служб дополнительных языков  
  Другие интерфейсы можно предоставить службе языка. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запрашивает отдельный экземпляр этих интерфейсов для каждого экземпляра текстового буфера. Таким образом необходимо реализовать каждый из этих интерфейсов на свой собственный объект. В следующей таблице показаны интерфейсы, которые требуется один экземпляр каждого экземпляра текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет окна кода элементы оформления, например раскрывающейся панелью. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Имеется один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> каждого окна кода.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Окрашивает ключевые слова языка и разделители. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> вызывается во время рисования. Избегайте большого количества вычислений работы внутри <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или может наблюдаться снижение производительности.|  

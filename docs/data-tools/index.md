@@ -1,21 +1,21 @@
 ---
+title: Разработка решений данных
+description: Дополнительные сведения о различных средствах разработки решений для данных в Visual Studio, в том числе средствах .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight и Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
-description: Сведения о средствах для решений по работе с данными в Visual Studio.
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948412"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159689"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 
@@ -116,7 +116,6 @@ ms.locfileid: "49948412"
 
 ---
 
-<hr>
 <h2>Ссылка</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ ms.locfileid: "49948412"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

@@ -1,22 +1,23 @@
 ---
-title: Установка поддержки Python
+title: Установка средств поддержки Python
 description: Инструкции по установке средств Python для Visual Studio (PTVS) в Visual Studio 2017, 2015, 2013, 2012 и 2010, включая параметры и расположения установки.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324994"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063759"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -57,9 +58,9 @@ ms.locfileid: "49324994"
 
     ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
 
-    | Параметр | Описание: |
+    | Параметр | Описание |
     | --- | --- |
-    | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. дополнительные сведения о [средах Python](managing-python-environments-in-visual-studio.md). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
+    | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. [Окно "Окружения Python"](managing-python-environments-in-visual-studio.md#the-python-environments-window). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
     | **Поддержка шаблонов Cookiecutter** | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Поддержка веб-приложений Python** | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
     | **Поддержка Интернета вещей для Python** | Поддерживает разработку для Windows IoT Core с помощью Python. |
@@ -82,7 +83,7 @@ ms.locfileid: "49324994"
 - Воспользуйтесь [**восстановлением**](../install/repair-visual-studio.md) Visual Studio.
 - Восстановите или переустановите Python через **Параметры** > **Приложения и компоненты** в Windows.
 
-**Пример ошибки**. Не удалось запустить интерактивный процесс: System.ComponentModel.Win32Exception (0x80004005): неизвестная ошибка (0xc0000135) в Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
+**Пример ошибки**. Не удалось запустить интерактивный процесс: System.ComponentModel.Win32Exception (0x80004005): Неизвестная ошибка (0xc0000135) в Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -100,9 +101,9 @@ ms.locfileid: "49324994"
 
 1. Установите версию Инструментов Python для Visual Studio, соответствующую вашей версии Visual Studio.
 
-    - Visual Studio 2013: [PTVS 2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл** > **Новый проект**.
-    - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013: [PTVS 2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл** > **Новый проект**.
+    - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
+    - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
 1. [Selecting and installing Python interpreters](installing-python-interpreters.md) (Установка и настройка интерпретаторов Python). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

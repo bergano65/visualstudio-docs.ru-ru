@@ -1,6 +1,6 @@
 ---
-title: Команды консоли JavaScript в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Команды консоли JavaScript | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823753"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052226"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
   
@@ -64,7 +64,7 @@ ms.locfileid: "49823753"
 ## <a name="miscellaneous-commands"></a>Разные команды  
  Эти команды также доступны в окне консоли JavaScript (но недоступны в коде).  
   
-|Команда|Описание|Пример|  
+|Команда|Описание:|Пример|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Возвращает указанный элемент в окно консоли. `$0` возвращает элемент, выбранный в настоящее время в проводнике DOM, `$1` возвращает элемент, ранее выбранный в проводнике DOM, и так далее до четвертого ранее выбранного элемента.|$3|  
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  
@@ -131,5 +131,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Краткое руководство Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

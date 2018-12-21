@@ -1,5 +1,5 @@
 ---
-title: Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса в Visual Studio
+title: Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,28 +9,30 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380721"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895110"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
 Закодированные тесты пользовательского интерфейса могут автоматизировать процесс тестирования веб-приложений путем записи ваших тестов с помощью Internet Explorer. После этого вы сможете настраивать и воспроизводить свои тесты с помощью Internet Explorer или других типов браузеров, поддерживаемых данными веб-приложениями.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
 Сначала установите [компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса в различных браузерах](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Что поддерживается во всех браузерах?
 
--   [Добавление пользовательского кода для управления компонентами](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx), такими как свойства, поиск и ожидающие объекты воспроизведения.
+-   [Добавление пользовательского кода для управления компонентами](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
 
 -   Всплывающие окна и диалоговые окна
 
--   [Выполнение базового JavaScript без возвращаемого типа](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [Выполнение базового JavaScript без возвращаемого типа](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Зачем нужно использовать закодированные тесты пользовательского интерфейса в нескольких типах веб-браузеров?
 

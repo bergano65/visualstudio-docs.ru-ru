@@ -1,7 +1,7 @@
 ---
-title: Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
+title: Создание приложения Vue.js с помощью Node.js
 description: Вы можете создавать приложения Node.js в Visual Studio, используя платформу Vue.js
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/06/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 03576347dc740f44a04ca38150abde458338ef14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924784"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066880"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -37,7 +37,7 @@ Visual Studio 2017 включает улучшенную поддержку пл
     > [!IMPORTANT]
     > Для выполнения инструкций из этой статьи вам потребуются функции, доступные только начиная с версии Visual Studio 2017 15.8, предварительная версия 3.
 
-    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
 
     Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
 
@@ -79,7 +79,7 @@ Vue.js предоставляет официальный интерфейс ко
 * Откройте файл *./Startup.cs*и добавьте следующие строки в метод Configure:
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

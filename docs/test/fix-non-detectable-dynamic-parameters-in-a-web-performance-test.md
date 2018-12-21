@@ -1,5 +1,5 @@
 ---
-title: Исправление необнаруживаемых динамических параметров в веб-тесте производительности в Visual Studio
+title: Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177829"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063785"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 
@@ -30,6 +30,8 @@ ms.locfileid: "39177829"
 -   Значения динамических параметров, устанавливаемые в качестве строки запроса или параметров отправки формы. Эти параметры обрабатываются через обнаружение динамических параметров после записи веб-теста производительности.
 
 Некоторые типы динамических параметров не обнаруживаются. Необнаруженный динамический параметр может приводить к ошибкам при выполнении веб-тестов производительности, поскольку динамические значения чаще всего изменяются при каждом запуске теста. Для правильной обработки этих параметров можно вручную добавить в веб-тесты производительности правила извлечения динамических параметров.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Создание и запуск веб-приложения с динамическими параметрами
 
@@ -237,7 +239,7 @@ ms.locfileid: "39177829"
 
      ![Замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Параметр QueryString в запросе *JScriptQuery.aspx* обновляется новым параметром контекста: CustomQueryString=jScriptQueryString___{{Param0}}.
+     Параметр QueryString в запросе *JScriptQuery.aspx* обновляется новым параметром контекста:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Параметр, примененный к QueryString](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,7 +251,7 @@ ms.locfileid: "39177829"
 
 ## <a name="qa"></a>Вопросы и ответы
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Вопрос. Можно ли повторно обнаружить динамический параметр, если веб-приложение изменится?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Вопрос: Можно ли повторно обнаружить динамический параметр, если веб-приложение изменится?
 
  **Ответ.** Да, используйте следующую процедуру:
 
@@ -263,6 +265,6 @@ ms.locfileid: "39177829"
 
 2.  Установите или снимите флажок рядом с динамическим параметром, для которого требуется выполнить автоматическую корреляцию. По умолчанию установлены флажки для всех динамических параметров.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Вопрос. Необходимо ли настраивать Visual Studio для обнаружения динамических параметров?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Вопрос: Необходимо ли настраивать Visual Studio для обнаружения динамических параметров?
 
  **Ответ.** Конфигурация Visual Studio по умолчанию предполагает обнаружение динамических параметров при записи веб-теста производительности. Однако если в параметрах Visual Studio отключено обнаружение динамических параметров или если тестируемое веб-приложение было изменено с добавлением дополнительных динамических параметров, можно запустить обнаружение динамических параметров из редактора веб-тестов производительности.

@@ -1,5 +1,5 @@
 ---
-title: Создание поля, свойства или локальной переменной в Visual Studio
+title: Создание поля, свойства или локальной переменной
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822791"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064038"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Создание поля, свойства или локальной переменной в Visual Studio
 
@@ -48,8 +48,8 @@ ms.locfileid: "49822791"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) .
-      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
+      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) , который отображается.
+      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
       ![Предварительный просмотр создаваемого поля, свойства или локальной переменной](media/field-preview-cs.png)
 

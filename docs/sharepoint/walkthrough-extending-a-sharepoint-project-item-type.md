@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220330"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295726"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство: Расширение типа элемента проекта SharePoint
   Можно использовать **Business Data Connectivity Model** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта, данные в модели не отображается для пользователей. Также необходимо создать внешний список в SharePoint, чтобы пользователи могли просматривать данные.  
@@ -164,7 +164,7 @@ ms.locfileid: "50220330"
   
 1.  В **обозревателе решений**, откройте контекстное меню для файла source.extension.vsixmanifest в проекте GenerateExternalDataLists и затем выберите **откройте**.  
   
-     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest — это основа для файл extension.vsixmanifest необходим для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio открывает файл в редакторе манифестов. Файл source.extension.vsixmanifest — это основа для файл extension.vsixmanifest необходим для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **генератор внешнего списка данных**.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "50220330"
 6.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении**.  
   

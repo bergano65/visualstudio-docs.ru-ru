@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671993"
 ---
 # <a name="visual-studio-product-feedback"></a>Отзыв о продукте Visual Studio
 
@@ -54,7 +54,7 @@ ms.locfileid: "49073745"
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Я хочу принять участие в работе сообщества разработчиков
 
-Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [сайтом сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com), [форумами MSDN](http://social.msdn.microsoft.com/Forums/home) или [Stack Overflow](http://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на сайте с [примерами кода от разработчиков](http://code.msdn.microsoft.com/).
+Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [сайтом сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com), [форумами MSDN](https://social.msdn.microsoft.com/Forums/home) или [Stack Overflow](http://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на сайте с [примерами кода от разработчиков](https://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Я хочу помочь улучшить качество документации по Visual Studio
 

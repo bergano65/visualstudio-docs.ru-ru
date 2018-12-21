@@ -1,7 +1,7 @@
 ---
-title: Отправлять диагностические сообщения в окне вывода | Документация Майкрософт
+title: Отправлять сообщения в окне вывода | Документация Майкрософт
 ms.custom: ''
-ms.date: 04/25/2017
+ms.date: 11/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -28,26 +28,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be9081bc2b6778d2f115ebe61078956aeace85e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842798"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724481"
 ---
-# <a name="send-diagnostic-messages-to-the-output-window"></a>Отправлять диагностические сообщения в окне вывода
-Можно написать сообщения времени выполнения для **вывода** окна с помощью <xref:System.Diagnostics.Debug> класса или <xref:System.Diagnostics.Trace> класса, которые являются частью из <xref:System.Diagnostics> библиотеки классов. Используйте <xref:System.Diagnostics.Debug> , если необходимо выводить сообщение только в *Отладка* версии программы. Используйте <xref:System.Diagnostics.Trace> , если необходимо выводить сообщение в обоих *Отладка* и *выпуска* версий.  
+# <a name="send-messages-to-the-output-window"></a>Отправлять сообщения в окне вывода
+
+Можно написать сообщения времени выполнения для **вывода** окна с помощью <xref:System.Diagnostics.Debug> класса или <xref:System.Diagnostics.Trace> класса, которые являются частью из <xref:System.Diagnostics> библиотеки классов. Используйте <xref:System.Diagnostics.Debug> , если необходимо выводить сообщение только *Отладка* версии программы. Используйте <xref:System.Diagnostics.Trace> , если необходимо выводить сообщение в обоих *Отладка* и *выпуска* версий.  
   
 ## <a name="output-methods"></a>Методы вывода  
  Классы <xref:System.Diagnostics.Trace> и <xref:System.Diagnostics.Debug> предоставляют следующие методы вывода:  
   
 - Различные методы `Write`, которые выводят сведения без прерывания выполнения программы. Эти методы заменяют метод `Debug.Print`, который использовался в предыдущих версиях Visual Basic.  
   
-- Методы <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> и <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, которые прерывают выполнение программы и выводят сведения, если заданное условие не выполняется. По умолчанию метод `Assert` отображает сведения в диалоговом окне. Дополнительные сведения см. в разделе [утверждения в управляемом коде](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> и <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> методы, которые приостанавливают выполнение и выходные данные сведения, если заданное условие не выполняется. По умолчанию метод `Assert` отображает сведения в диалоговом окне. Дополнительные сведения см. в разделе [утверждения в управляемом коде](../debugger/assertions-in-managed-code.md).  
   
-- Методы <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> и <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, которые всегда прерывают выполнение программы и выводят сведения. По умолчанию методы `Fail` отображают сведения в диалоговом окне.  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> И <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> методы, которые всегда выделить сведения о выполнении и выходных данных. По умолчанию методы `Fail` отображают сведения в диалоговом окне.  
   
-  В дополнение к программному выводу приложения **вывода** окне могут отображаться сведения о:  
+**Вывода** окно также можно отображать сведения о:  
   
 - Загруженные или выгруженные модули отладчика.  
   
@@ -61,5 +62,5 @@ ms.locfileid: "49842798"
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Окно вывода](../ide/reference/output-window.md)   
  [Трассировка и инструментирование приложений](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#и типы проектов Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)

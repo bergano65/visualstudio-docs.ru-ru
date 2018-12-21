@@ -1,5 +1,5 @@
 ---
-title: Рекомендации по выполнению закодированных тестов пользовательского интерфейса в Visual Studio
+title: Рекомендации по выполнению закодированных тестов пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283280"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896028"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Рекомендации по выполнению закодированных тестов пользовательского интерфейса
 
 В этой статье приводится ряд рекомендаций по разработке закодированных тестов пользовательского интерфейса.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>Рекомендации
 

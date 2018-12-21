@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745113"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,7 +151,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 - Если необходимо обеспечить более точное управление функциями диагностики памяти, можно задать значение глобальной переменной MFC [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086), которая позволяет выборочно включать и отключать отдельные функции. Эта переменная может принимать следующие значения, заданные перечисляемым типом **afxMemDF**:  
   
-  |Значение|Описание|  
+  |Значение|Описание:|  
   |-----------|-----------------|  
   |**allocMemDF**|Включает выделение памяти с диагностикой (по умолчанию).|  
   |**delayFreeMemDF**|Задерживает освобождение памяти до выхода из программы при вызове `delete` или `free` . Это позволяет обеспечить выделение максимального объема памяти.|  

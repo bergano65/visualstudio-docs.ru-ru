@@ -1,5 +1,5 @@
 ---
-title: Новые возможности разработки в Visual Studio
+title: Новые возможности для разработки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebe304cafa5e8ed4eae287750aeb8e2db02fbc31
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820778"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062287"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "49820778"
 
 Теперь отображается последствия изменения немедленно в результатах анализа ввести текущий код в решении каждый раз при сохранении схемы. У вас нет больше ожидать завершения команды «Проверить зависимости».
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Будут удалены конструкторов UML
 
@@ -61,7 +61,7 @@ ms.locfileid: "49820778"
 
 Если вы являетесь пользователем значительные конструкторов UML, можно продолжать использовать Visual Studio 2015 или более ранних версий, хотя необходимо выбрать средство для ваших потребностей UML.
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

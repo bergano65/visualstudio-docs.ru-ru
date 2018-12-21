@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821438"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248142"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 В этом пошаговом руководстве показано, как создать расширение с помощью команды меню, которое запускает приложение Блокнот.  
@@ -55,23 +55,15 @@ ms.locfileid: "49821438"
 2.  Найдите закрытый конструктор FirstCommand. Это, когда команда, привязанную службу команд, и обработчик команды определяется. Измените имя обработчика команды StartNotepad, следующим образом:  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -120,18 +112,18 @@ ms.locfileid: "49821438"
   
 1. Можно выполнять другие действия с помощью команды простого меню:  
   
-   1.  Добавьте собственный значок: [добавление значков для команды меню](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Добавьте собственный значок: [Добавление значков для команды меню](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Изменить текст команды меню: [изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Измените текст команды меню: [Изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Добавить контекстное меню для команды: [привязка сочетания клавиш к пунктам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Добавьте команду контекстного меню: [Привязка сочетания клавиш к пунктам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Добавить различные команды, меню и панелей инструментов: [расширить меню и команд](../extensibility/extending-menus-and-commands.md)  
+2. Добавьте различные команды, меню и панелей инструментов: [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)  
   
-3. Добавление окна инструментов и расширения встроенных окон инструментов Visual Studio: [расширять и настраивать окна инструментов](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Добавление окна инструментов и расширения встроенных окон инструментов Visual Studio: [Расширение и настройка окон инструментов](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Добавьте IntelliSense, предложения кода и другие функции к существующим редакторов кода: [расширить редактор и языковой службы](../extensibility/extending-the-editor-and-language-services.md)  
+4. Добавьте существующие редакторы кода IntelliSense, предложения кода и другие возможности: [Расширение редактора и языковой службы](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Добавьте параметры и свойства страницы и пользовательские параметры для расширения: [расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширить пользовательские настройки и Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Добавьте параметры и свойства страниц и пользовательских параметров расширения: [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширить пользовательские настройки и Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширения проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или реализация вашей расширение в изолированной оболочки: [изолированная оболочка Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширения проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или реализация вашей расширения в изолированной оболочки. [Visual Studio изолированной оболочки](../extensibility/visual-studio-isolated-shell.md)

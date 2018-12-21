@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - application manifests [Office development in Visual Studio]
 - assemblies [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f3fba49e90bbe0f5350a5d778b8591ec473807be
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4386469e02934045d9f1da45fe515dc9af5da2
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258006"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247963"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Манифесты приложения и развертывания в решениях Office
   Манифест приложения — это XML-файл, который содержит сведения, используемые решением Office для поиска и обновления своих сборок. Манифест приложения может использоваться с манифестом развертывания, представляющим собой XML-файл, который хранится на сервере и содержит сведения, необходимые для поиска самой последней версии манифеста приложения и сборок.  
@@ -44,7 +44,7 @@ ms.locfileid: "35258006"
   
 ## <a name="see-also"></a>См. также  
  [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   

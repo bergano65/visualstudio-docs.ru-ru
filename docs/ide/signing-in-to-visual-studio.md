@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542498"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159858"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
 Процесс разработки в Visual Studio можно оптимизировать и персонализировать, если настроена учетная запись персонализации при входе в среду IDE.
+
+> [!NOTE]
+> Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Вход в Visual Studio для Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Почему нужно выполнять вход в Visual Studio?
 
@@ -67,4 +70,6 @@ ms.locfileid: "46542498"
 ## <a name="see-also"></a>См. также
 
 * [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)
+* [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)
+* [Вход в систему (Visual Studio для Mac)](/visualstudio/mac/signing-in)
+* [Активация (Visual Studio для Mac)](/visualstudio/mac/activation)

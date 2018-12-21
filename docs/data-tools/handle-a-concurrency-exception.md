@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582337"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388742"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 
@@ -65,16 +65,13 @@ ms.locfileid: "39582337"
 
        Через некоторое время выполнения запроса отобразятся и создания базы данных Northwind.
 
-> [!NOTE]
-> Диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от ваших текущих параметров или выпуск, который вы используете. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
 Начните с создания нового приложения Windows Forms:
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -88,7 +85,7 @@ ms.locfileid: "39582337"
 
 1. На **данных** меню, выберите **добавить новый источник данных**.
 
-   Откроется мастер настройки источника данных.
+   Появится мастер настройки источника данных.
 
 2. На **Выбор типа источника данных** выберите **базы данных**.
 
@@ -109,7 +106,7 @@ ms.locfileid: "39582337"
 
 В этом разделе описано, как создать <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> , перетащив **клиентов** элемент из **источников данных** окна на форму Windows.
 
-1. На **данных** меню, выберите **Показать источники данных** открыть **окна "Источники данных"**.
+1. Чтобы открыть **источников данных** окна на **данных** меню, выберите **Показать источники данных**.
 
 2. В **источников данных** окне разверните **NorthwindDataSet** узел, а затем выберите **клиентов** таблицы.
 
@@ -162,13 +159,13 @@ ms.locfileid: "39582337"
 
 1. Добавьте следующий код ниже `Form1_Load` метод:
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. Замените `CustomersBindingNavigatorSaveItem_Click` метод для вызова `UpdateDatabase` метод, чтобы он выглядел следующим образом:
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Способ отображения вариантов для пользователя
 
@@ -176,8 +173,8 @@ ms.locfileid: "39582337"
 
 Создайте сообщение, добавив следующий код, чтобы **редактор кода**. Введите следующий код ниже `UpdateDatabase` метод:
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Обработать ответ пользователя
 
@@ -185,8 +182,8 @@ ms.locfileid: "39582337"
 
 Добавьте следующий код после кода, который был добавлен в предыдущем разделе:
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Проверить форму
 

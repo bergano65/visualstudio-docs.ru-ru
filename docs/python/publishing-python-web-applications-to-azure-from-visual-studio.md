@@ -1,23 +1,24 @@
 ---
 title: Публикация приложения Python в Службе приложений Azure
-description: Способы публикации приложения Python в Службе приложений Azure.
-ms.date: 10/10/2018
+description: Параметры для публикации приложения Python в службе приложений Azure, включая Git и контейнеры для Linux, и развертывание в IIS.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459664"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066695"
 ---
 # <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 
@@ -34,7 +35,7 @@ ms.locfileid: "49459664"
 
 Дополнительные сведения см. в следующих статьях документации по Azure:
 
-- В [кратком руководстве по созданию веб-приложения Python в Службе приложений](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) приведено пошаговое описание развертывания из локального репозитория Git на примере приложения Flask.
+- [Краткое руководство. Создание веб-приложения Python в службе приложений](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) содержит пошаговое описание развертывания из локального репозитория Git на примере приложения Flask.
 - В руководстве по [настройке приложения Python](/azure/app-service/containers/how-to-configure-python) описаны характеристики Службы приложений для контейнеров Linux и объясняется, как настроить команду запуска Gunicorn для приложения.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Публикация в Службе приложений на Linux с помощью контейнеров

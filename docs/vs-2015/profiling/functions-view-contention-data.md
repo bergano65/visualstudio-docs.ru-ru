@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 661700a9faba7886294db904d8676277dd0501d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765270"
 ---
 # <a name="functions-view---contention-data"></a>Представление "Функции" — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49214582"
   
  В таблице ниже приведено объяснение значений в представлении "Функции" файла данных профилирования, которые были получены с помощью метода параллелизма.  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время блокировки выполнения функцией кода в теле функции. Время блокирования в функциях, которые были вызваны данной функцией, не включается.|  
 |**Эксклюзивное время блокировки %**|Процент общего времени блокировки в ходе сеанса профилирования, которое являлось эксклюзивным временем блокировки указанной функции.|  

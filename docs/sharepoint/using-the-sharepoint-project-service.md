@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a74f2b7a2810a268c68306490dbbe2c197f0c72
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119404"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295063"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Использование службы проектов SharePoint
   Система проектов SharePoint включает службу Project, которую можно использовать для выполнения задач, относящихся к системе проектов. Служба Project — это объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.  
@@ -50,5 +50,5 @@ ms.locfileid: "37119404"
  [Практическое: извлечение службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Практическое руководство. Получение службы из объекта DTE](http://msdn.microsoft.com/library/bb166401.aspx)  
+ [Практическое руководство. Получение службы из объекта DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
   

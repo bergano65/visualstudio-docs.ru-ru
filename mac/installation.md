@@ -3,19 +3,19 @@ title: Установка Visual Studio для Mac
 description: Инструкции по установке Visual Studio для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934617"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158961"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
-## <a name="setup"></a>Установка
+## <a name="requirements"></a>Требования
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений, нужно установить и настроить несколько компонентов при скачивании Visual Studio для Mac.
 
@@ -25,11 +25,14 @@ ms.locfileid: "49934617"
 * Xcode 8.3 или более поздней версии. Обычно рекомендуется использовать последнюю стабильную версию.
 * Идентификатор Apple ID. Если у вас нет идентификатора Apple ID, его можно создать на сайте https://appleid.apple.com. Он необходим для установки приложения Xcode и входа в него.
 
+> [!TIP]
+> Предварительная версия Visual Studio 2019 для Mac [теперь доступна](install-preview.md) для тестирования.
+
 ## <a name="install"></a>Установка
 
 1. Скачайте Visual Studio для Mac на сайте [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/).
 
-2. После скачивания пакета установщика щелкните файл **VisualStudioInstaller.dmg**, чтобы подключить установщик, а затем запустите его, дважды щелкнув логотип, как показано на следующем рисунке:
+2. После скачивания пакета установщика щелкните файл **VisualStudioForMacInstaller.dmg**, чтобы подключить установщик, а затем запустите его, дважды щелкнув логотип, как показано на следующем рисунке:
 
    ![Диалоговое окно установщика](media/installer-image1.png)
 
@@ -86,7 +89,6 @@ ms.locfileid: "49934617"
 > [!NOTE]
 > Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://visualstudio.microsoft.com/vs/).
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
 
 Для установки Visual Studio для Mac в среде, защищенной брандмауэром, необходимо сделать доступными ряд конечных точек, чтобы разрешить скачивание необходимых средств и обновлений ПО.
@@ -104,7 +106,6 @@ ms.locfileid: "49934617"
 1. [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Подготовка устройства](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (для запуска приложения на устройстве).
 
-
 ### <a name="android"></a>Android
 
 1. [Использование диспетчера пакетов SDK Android для Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +115,7 @@ ms.locfileid: "49934617"
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
 
 Другие рабочие нагрузки описаны [на этой странице](workloads.md).
+
+## <a name="see-also"></a>См. также
+
+- [Установка Visual Studio 2017 (в Windows)](/visualstudio/install/install-visual-studio)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511656"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295895"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Создание входных данных с помощью динамического символического выполнения
 
@@ -142,8 +142,8 @@ IntelliTest пытается минимизировать размер масс�
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Дополнительные сведения
 
-* [Как это работает?](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [Как это работает?](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 
-Публикуйте свои идеи и запросы функций на сайте [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Делитесь своими идеями и пожеланиями относительно новых функций в [сообществе разработчиков](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

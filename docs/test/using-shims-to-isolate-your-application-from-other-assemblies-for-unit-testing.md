@@ -1,5 +1,5 @@
 ---
-title: Использование оболочек совместимости для изоляции приложения при модульном тестировании в Visual Studio
+title: Использование оболочек совместимости для изоляции приложения при модульном тестировании
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915247"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065614"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 
@@ -32,7 +32,7 @@ ms.locfileid: "49915247"
 > [!NOTE]
 > Проекты .NET Standard не поддерживаются.
 
-## <a name="example-the-y2k-bug"></a>Пример. Ошибка 2000 года
+## <a name="example-the-y2k-bug"></a>Пример Ошибка 2000 года
 
 Рассмотрим метод, который создает исключение 1 января 2000 г.
 
@@ -55,7 +55,7 @@ public static class Y2KChecker {
 ```csharp
 //unit test code
 // create a ShimsContext cleans up shims
-using (ShimsContext.Create()
+using (ShimsContext.Create()) {
     // hook delegate to the shim method to redirect DateTime.Now
     // to return January 1st of 2000
     ShimDateTime.NowGet = () => new DateTime(2000, 1, 1);
@@ -511,5 +511,5 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="see-also"></a>См. также
 
 - [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Видео (1 ч 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Видео (1 ч. 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ETW profiling report
 ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 627caa20d53bbb93c6c4477c3323dda57a37d9f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9be86d9ad6243a91763778f7027252a78d6ef254
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194785"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724959"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Отчет трассировки событий Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "49194785"
   
 -   Отчет о трассировке событий Windows можно создать с помощью команды **VSReport/Summary:ETW**. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Метка времени**|Указывает время, когда произошло событие.|  
 |**Идентификатор процесса**|Указывает процесс, создавший событие.|  

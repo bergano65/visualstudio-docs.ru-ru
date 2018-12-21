@@ -114,15 +114,15 @@ helpviewer_keywords:
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 caps.latest.revision: 52
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05667c982daa35910bb1d4e1d895fb2bef50fb78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 404bbc753b2729ad5ec7625fa01803b8a6bdf5c8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193470"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800800"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,19 +162,19 @@ ms.locfileid: "49193470"
   
 ### <a name="cc-folder-general-category"></a>Папка "C/C++" (категория "Общие")  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |-------------|-----------------|  
 |**Формат отладочной информации** ([/Z7, / Zd, Zi, /ZI](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|Указывает тип отладочных данных, создаваемых для проекта.<br /><br /> По умолчанию установлен формат /ZI, означающий создание базы данных программы (PDB) в формате, совместимом с операцией "Изменить и продолжить". Дополнительные сведения см. в разделе [/Z7, / Zd, / Zi, /ZI (формат отладочной информации)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).|  
   
 ### <a name="cc-folder-optimization-category"></a>Папка "C/C++" (категория "Оптимизация")  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |-------------|-----------------|  
 |**Optimization**|Указывает, должен ли компилятор оптимизировать создаваемый им код. При оптимизации исполняемый код изменяется. Оптимизированный код не совпадает в точности с исходным кодом. Это усложняет отладку.<br /><br /> Параметр по умолчанию (**отключено (/ 0d**) отключает оптимизацию. Можно производить разработку при отключенной оптимизации и включить оптимизацию только при создании рабочей версии программы.|  
   
 ### <a name="linker-folder-debugging-category"></a>Папка "Компоновщик" (категория "Отладка")  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |-------------|-----------------|  
 |**Создавать отладочную информацию** ([/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|Указывает компоновщику необходимость включать сведения, формат которых задается ключом /Z7, /Zd, Zi или /ZI.|  
 |**Создавать файл базы данных программы** ([/PDB:name](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|В этом поле вводится имя PDB-файла. Должен быть выбран формат отладочной информации ZI или /Zi.|  

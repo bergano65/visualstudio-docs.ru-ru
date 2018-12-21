@@ -1,5 +1,5 @@
 ---
-title: Создание подключаемого модуля уровня запроса для веб-тестов производительности в Visual Studio
+title: Создание подключаемого модуля уровня запроса для веб-тестов производительности
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382039"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054078"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Практическое руководство. Создание подключаемого модуля уровня запроса
+# <a name="how-to-create-a-request-level-plug-in"></a>Как выполнить Создание подключаемого модуля уровня запроса
 
 *Запросы* — это декларативные операторы, образующие веб-тесты производительности. Подключаемые модули веб-теста производительности позволяют изолировать и повторно использовать код вне основных декларативных операторов веб-теста производительности. Можно создать подключаемые модули и добавлять их к отдельному запросу или веб-тесту производительности, в котором он содержится. Настраиваемый *подключаемый модуль запросов* позволяет вызывать код при выполнении конкретного запроса в веб-тесте производительности.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Каждый подключаемый модуль запросов веб-теста производительности имеет метод PreRequest и PostRequest. После прикрепления подключаемого модуля запросов к определенному HTTP-запросу событие PreRequest инициируется перед отправкой запроса, а событие PostRequest — после получения запроса.
 
@@ -124,5 +126,5 @@ namespace RequestPluginNamespace
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Кодирование пользовательского правила извлечения для веб-теста производительности](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство: Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)

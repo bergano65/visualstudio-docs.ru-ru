@@ -1,5 +1,5 @@
 ---
-title: Привязка элементов управления WPF к данным в Visual Studio — часть 1 | Документация Майкрософт
+title: Привязка элементов управления WPF к данным — часть 1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,40 +18,39 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942911"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305342"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 
 Для пользователей приложения данные можно отображать путем привязки данных к элементам управления [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Чтобы создать эти элементы управления с привязкой к данным, можно перетаскивать элементы из **источников данных** окна на [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, инструментов и классов, которые можно использовать для создания связанных с данными приложений [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)].
 
-Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] привязки данных, см. в разделе [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview).
+Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] см. в разделе [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Задачи, решаемые в процессе привязки элементов управления WPF к данным
 
-В следующей таблице перечислены задачи, которые могут быть решены путем перетаскивания элементов из **источников данных** окно, чтобы [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
+В следующей таблице перечислены задачи, которые могут быть решены путем перетаскивания элементов из окна **Источники данных** в [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
 |Задача|Дополнительные сведения|
 |----------| - |
 |Создание новых элементов управления, связанных с данными<br /><br /> Привязка существующих элементов управления к данным|[Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Создание элементов управления, отображающих связанные данные в иерархическом отношении: когда пользователь выбирает родительскую запись данных в одном элементе управления, другой элемент управления отображает связанные дочерние данные для выбранной записи|[Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)|
-|Создание *таблицы подстановки* , отображающий сведения из одной таблицы на основе значения поля внешнего ключа в другой таблице.|[Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|Создание *таблицы подстановки*, которая отображает информацию из одной таблицы на основе значения в поле внешнего ключа в другой таблице.|[Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |Привязка элемента управления к изображению в базе данных|[Привязка элементов управления к рисункам из базы данных](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
-## <a name="valid-drop-targets"></a>Допустимые конечные расположения сброса
+## <a name="valid-drop-targets"></a>Допустимые места переноса
 
-Можно перетащить элементы **источников данных** окно только допустимые конечные расположения сброса в [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Имеется две основных разновидности допустимых конечных расположений сброса: контейнеры и элементы управления. Контейнер — это элемент пользовательского интерфейса, который обычно содержит элементы управления. Например, сетка является контейнером, равно как и окно.
+Элементы в окне **Источники данных** можно перетаскивать только на допустимые места переноса в [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Имеется две основных разновидности допустимых конечных расположений сброса: контейнеры и элементы управления. Контейнер — это элемент пользовательского интерфейса, который обычно содержит элементы управления. Например, сетка является контейнером, равно как и окно.
 
-## <a name="generated-xaml-and-code"></a>Созданный XAML и кода
+## <a name="generated-xaml-and-code"></a>Созданный язык XAML и код
 
 При перетаскивании элемента из **источников данных** окно, чтобы [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , определяет новый элемент управления с привязкой к данным (либо создает привязку существующего элемента управления к источнику данных). Для некоторых источников данных Visual Studio также создает код в файле кода, который заполняет данными источник данных.
 
 В следующей таблице перечислены [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] и код, создаваемый Visual Studio для каждого типа источника данных в **источников данных** окна.
-
 
 | Источник данных | Создание языка XAML, который привязывает элемент управления к источнику данных | Создание кода, который заполняет данными источник данных |
 | - | - | - |
@@ -101,7 +100,7 @@ Visual Studio создает язык XAML, который выполняет с
 При перетаскивании объекта или свойства из **источников данных** окно в конструкторе Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , создает элемент управления с привязкой к данным (либо создает привязку существующего элемента управления к объекту или свойству). Тем не менее Visual Studio не создает код для наполнения объекта данными. Этот код придется написать самостоятельно.
 
 > [!NOTE]
->  Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они can'tbe вложенные классы, которые имеют «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Пользовательские классы должны быть открытыми и, по умолчанию имеют конструктор без параметров. Они can'tbe вложенные классы, которые имеют «точка» в их синтаксис. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , делает следующее:
 

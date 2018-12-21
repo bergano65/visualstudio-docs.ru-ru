@@ -1,5 +1,5 @@
 ---
-title: Добавление контекстных параметров к параметрам запуска нагрузочного теста в Visual Studio
+title: Добавление контекстных параметров к параметрам запуска нагрузочного теста
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905906"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048499"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Практическое руководство. Добавление контекстных параметров к параметрам запуска нагрузочного теста
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Как выполнить Добавление контекстных параметров к параметрам запуска нагрузочного теста
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области **Редактор тестовой нагрузки**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
@@ -36,9 +38,9 @@ ms.locfileid: "49905906"
 
 Кроме того, назначая параметру контекста разные значения с использованием одинакового имени в различных наборах параметров запуска нагрузочного теста, можно выполнять нагрузочный тест в разных средах:
 
-- Набор параметров запуска корпоративного промежуточного веб-сервера: параметр контекста `WebServer1=http://CorporateStagingWebServer`
+- Параметры запуска корпоративного промежуточного веб-сервера: параметр контекста с именем `WebServer1=http://CorporateStagingWebServer`
 
-- Набор параметров запуска корпоративного рабочего веб-сервера: параметр контекста `WebServer1=http://CorporateProductionWebServer`
+- Параметр запуска корпоративного рабочего веб-сервера: параметр контекста с именем `WebServer1=http://CorporateProductionWebServer`
 
   **Изменение набора параметров запуска из командной строки**
 

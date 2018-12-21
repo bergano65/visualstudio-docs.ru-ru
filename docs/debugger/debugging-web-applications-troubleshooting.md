@@ -1,6 +1,6 @@
 ---
-title: 'Отладка веб-приложений: Устранение неполадок | Документы Microsoft'
-ms.custom: ''
+title: Отладка веб-приложения — устранение неполадок | Документация Майкрософт
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470859"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063999"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Отладка веб-приложений. Устранение неполадок
+# <a name="debugging-web-applications-troubleshooting"></a>Отладка веб-приложений: Устранение неполадок
 В этом подразделе содержатся общие процедуры, используемые для разрешения ошибок.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Проверка параметров свойства IIS](../debugger/how-to-verify-iis-property-settings.md)  
+ [Практическое руководство: Проверка параметров свойства IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Способы корректного задания свойств в IIS для включения отладки.  
   
 ## <a name="related-sections"></a>Связанные разделы  

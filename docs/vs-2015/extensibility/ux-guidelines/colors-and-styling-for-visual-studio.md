@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84ade82822d5481d098fe98408a130ba93f68ee0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831762"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725711"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -355,7 +355,7 @@ protected override void Dispose(bool disposing)
   
  Добавить в реестр с двумя значениями:  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории|  
 |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории|  
@@ -367,7 +367,7 @@ protected override void Dispose(bool disposing)
   
  Добавить в реестр с двумя значениями:  
   
-|name|Тип|Данные|Описание|  
+|name|Тип|Данные|Описание:|  
 |----------|----------|----------|-----------------|  
 |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории|  
 |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории|  
@@ -413,7 +413,7 @@ protected override void Dispose(bool disposing)
   
 - **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) интерфейс. Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [onfontchanged и задает](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) метод, если выбран новый шрифт.  
   
-  **OR**  
+  **ИЛИ**  
   
 - **опрос интегрированной среды разработки для изменения**. Это можно сделать через реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить данные шрифта и цвета для отображаемых элементов. Дополнительные сведения о параметры шрифта и цвета, см. в статье MSDN [параметры доступа к хранятся шрифта и цвета](https://msdn.microsoft.com/library/bb166382.aspx).  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893433"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295986"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство: Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создавать расширения для проектов SharePoint. Можно использовать расширение проекта реагировать на события уровня проекта, например при проект добавлен, удален или переименован. Также можно добавлять пользовательские свойства или ответное действие при изменении значения свойства. В отличие от расширений элемента проекта расширения проекта нельзя связать с определенным типом проекта SharePoint. При создании расширения проекта, расширение загружается при открытии любого проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -131,7 +131,7 @@ ms.locfileid: "49893433"
   
 1.  В **обозревателе решений**, откройте контекстное меню для файла source.extension.vsixmanifest и затем выберите **откройте** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает файл в конструкторе манифеста. Сведения, отображаемые в **метаданных** также отображается вкладка **расширения и обновления**. Все пакеты VSIX требуется файл extension.vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает файл в конструкторе манифеста. Сведения, отображаемые в **метаданных** также отображается вкладка **расширения и обновления**. Все пакеты VSIX требуется файл extension.vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме 1.0 VSIX расширения](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **настраиваемое свойство проекта**.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49893433"
 6.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Это значение соответствует `MEFComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Это значение соответствует `MEFComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  В **источника** выберите **проект в текущем решении** переключатель.  
   
