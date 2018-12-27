@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636978"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740251"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -106,6 +106,6 @@ ms.locfileid: "39636978"
 
 |Заголовок|Описание:|
 |-----------|-----------------|
-|[Справочник по схеме 2.0 языкового пакета VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Языковой пакет VSIX описывает информацию локализации VSIX-файл развертывания.|
+|[Справочник по схеме 2.0 языкового пакета VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Языковой пакет VSIX описывает информацию локализации VSIX-файл развертывания.|
 |[Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Описывает структуру и содержимое пакета vsix.|
 |[Локализация команд меню](../extensibility/localizing-menu-commands.md)|Показано, как локализовать ресурсы текста в расширении.|

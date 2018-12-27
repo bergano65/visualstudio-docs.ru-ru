@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b89fce53567e0d88827cf4ba68349a68c31bc560
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348543"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684643"
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 
@@ -32,5 +32,5 @@ ms.locfileid: "51348543"
 
 - [Редактирование таблиц стилей XSLT](../xml-tools/editing-xslt-style-sheets.md) объясняется использование редактора XML для изменения таблиц стилей.
 - [Вопросы безопасности при работе с XML-данными](../xml-tools/security-considerations-when-working-with-xml-data.md) обсуждаются вопросы безопасности, которые необходимо знать при работе в редакторе XML или отладчиком XSLT.
-- [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md) представляет отладчик Visual Studio.
+- [Отладка в Visual Studio](../debugger/debugger-feature-tour.md) представляет отладчик Visual Studio.
 - [Справочник по XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) справочные материалы по элементам и функциям XSLT.

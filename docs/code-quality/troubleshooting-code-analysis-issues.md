@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c80e7421569804f6d6781b117522dd1ef1dea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885893"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738797"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Устранение проблем, связанных с анализом кода
 В этом разделе приводятся сведения об устранении указанных ниже неполадок, связанных с анализом кода в Visual Studio.
@@ -32,4 +32,4 @@ ms.locfileid: "49885893"
 3. Повторно откройте набор правил, отмените изменение, а затем сохраните набор правил повторно.
 
 ## <a name="see-also"></a>См. также
- [Анализ качества приложений](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+ [Анализ качества приложений](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md) [использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

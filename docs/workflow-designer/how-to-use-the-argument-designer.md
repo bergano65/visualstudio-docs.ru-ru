@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755526"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684604"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
+# <a name="how-to-use-the-argument-designer"></a>Как выполнить использовать конструктор аргументов
 
 По сравнению с предыдущими версиями платформы .NET Framework, конструктор аргументов упрощает передачу данных в действие и из действия. Конструктор нажав **аргументы** кнопку в левом нижнем углу поля визуальной разработки. Конструктор содержит список аргументов, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **значение по умолчанию** столбца. Каждый аргумент содержит имя, направление передачи свойства (IN, OUT или IN/OUT), тип и значение выражения по умолчанию (если такое существует). Имя и значение выражения по умолчанию представляют собой изменяемые текстовые поля, а тип и направление - раскрывающееся меню. Дополнительные сведения см. в разделе [переменные и аргументы (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +37,5 @@ ms.locfileid: "36755526"
 
 ## <a name="see-also"></a>См. также
 
-- [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)
+- [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)
 - [Переменные и аргументы](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
