@@ -1,5 +1,5 @@
 ---
-title: 'CA1502: избегайте чрезмерной сложности'
+title: 'CA1502: Избегайте чрезмерной сложности'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819307"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740329"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: избегайте чрезмерной сложности
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Избегайте чрезмерной сложности
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ ms.locfileid: "49819307"
 
 Правило сообщает о нарушение при более чем 25 цикломатической сложности.
 
-Дополнительные сведения о метриках кода в [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Дополнительные сведения о метриках кода в [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
@@ -104,8 +104,8 @@ ms.locfileid: "49819307"
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1501: избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md)

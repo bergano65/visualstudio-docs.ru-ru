@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Добавление содержимого элементов управления в документы Word'
+title: Как выполнить Добавление содержимого элементов управления в документы Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936970"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648050"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Практическое: Добавление содержимого элементов управления в документы Word
+# <a name="how-to-add-content-controls-to-word-documents"></a>Как выполнить Добавление содержимого элементов управления в документы Word
   В проектах уровня документа Word добавляются элементы управления содержимым в документ в проекте во время разработки или во время выполнения. Проекты надстроек VSTO для Word элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936970"
   
 - Добавьте элемент управления содержимым в документ так же, как вы добавляете управляемый элемент управления содержимым в Word.  
   
-- Перетащите элемент управления в документ из окна **Источники данных** . Это полезно, если нужно одновременно привязать элемент управления к данным при его создании. Дополнительные сведения см. в разделе [как: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md) и [как: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Перетащите элемент управления в документ из окна **Источники данных** . Это полезно, если нужно одновременно привязать элемент управления к данным при его создании. Дополнительные сведения см. в разделе [Как Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md) и [как: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936970"
 2.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  В группе **Элементы управления** щелкните значок элемента управления содержимым, который требуется добавить.  
   

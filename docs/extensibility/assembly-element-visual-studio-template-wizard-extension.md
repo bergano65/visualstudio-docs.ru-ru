@@ -2,9 +2,8 @@
 title: Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562026"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio)
 Указывает имя или строгое имя сборки, реализующей `IWizard` интерфейс.  
@@ -93,4 +92,4 @@ ms.locfileid: "39153861"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)

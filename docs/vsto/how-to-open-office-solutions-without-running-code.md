@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: решения Open Office без выполнения кода'
+title: Как выполнить Открытие решений Office без выполнения кода
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254992"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646910"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Практическое: решения Open Office без выполнения кода
+# <a name="how-to-open-office-solutions-without-running-code"></a>Как выполнить Открытие решений Office без выполнения кода
   Решения Microsoft Office, созданные с помощью расширений управляемого кода выполняется, даже если параметр безопасности в приложении Office конечного пользователя задан высокий приоритет. Это обусловлено безопасности кода сборки .NET управляется Microsoft .NET Framework, не по Microsoft Office.  
   
  Однако бывают случаи, когда может потребоваться открыть документ без выполнения кода. Например код, который выполняется при открытии документа может привести к изменению содержимого, но вы хотите обновить внешний вид документа перед изменением кода его. Или может потребоваться отправить документ в ней другому пользователю, и не требуется код для запуска и возможно изменить содержимое.  

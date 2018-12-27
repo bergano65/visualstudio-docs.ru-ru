@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Добавление команд в контекстное меню'
+title: Как выполнить Добавление команд в контекстное меню
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674718"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648433"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Практическое: Добавление команд в контекстное меню
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Как выполнить Добавление команд в контекстное меню
   В этом разделе показано, как добавить команды в контекстное меню в приложении Office с помощью надстройки VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Добавление команд в контекстные меню в Office  
   
-1.  Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение  
+1.  Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [Как Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение  
   
 2.  В**обозревателе решений**выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "35674718"
   
 7.  В редакторе кода добавьте XML, описывающий контекстное меню и элемент управления, который требуется добавить в контекстное меню.  
   
-     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список элемента управления Office 2010 ярлык идентификации, см. в разделе [файлы справки Office 2010: идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список элемента управления Office 2010 ярлык идентификации, см. в разделе [файлы справки Office 2010: Идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -84,7 +84,7 @@ ms.locfileid: "35674718"
   
 ## <a name="see-also"></a>См. также  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Пошаговое руководство: Создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
+ [Пошаговое руководство: Создать контекстное меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Настройка контекстных меню в Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

@@ -8,17 +8,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9a12adf6e83e58b877e36dd65d98b617cda3a39b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674880"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647214"
 ---
 # <a name="getautoinsertextensions-method"></a>Метод GetAutoInsertExtensions
   Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.  
@@ -35,7 +35,7 @@ HRESULT GetAutoInsertExtensions(
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |*psaExtensionNames*|Имена расширений приложений для Office.|  
   

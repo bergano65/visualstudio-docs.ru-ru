@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: программное добавление записи в контакты Outlook'
+title: Как выполнить Программное добавление записи в контакты Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 690d3c71ab00d5d32f882529600a91769669a3b1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c94328600c2da262aed3c111b660fc4cd25be5d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255256"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648404"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Практическое: программное добавление записи в контакты Outlook
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Как выполнить Программное добавление записи в контакты Outlook
   В этом примере создается новый контакт и вводит данные в новый контакт.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -33,8 +33,8 @@ ms.locfileid: "35255256"
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами контактов](../vsto/working-with-contact-items.md)   
- [Практическое: программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)   
- [Практическое: программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Практическое: программный поиск адреса электронной почты в контактах](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
+ [Практическое руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)   
+ [Практическое руководство. Программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Практическое руководство. Программный поиск адреса электронной почты в контактах](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
   
   

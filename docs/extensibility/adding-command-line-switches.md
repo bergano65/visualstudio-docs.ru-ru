@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901051"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738593"
 ---
 # <a name="add-command-line-switches"></a>Добавить параметры командной строки
 Можно добавить параметры командной строки, которые применяются к VSPackage при *devenv.exe* выполняется. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере добавляется параметр MySwitch для подкласса VSPackage с именем **AddCommandSwitchPackage** без аргументов и с пакетом VSPackage, загружаются автоматически.  
@@ -34,7 +34,7 @@ ms.locfileid: "49901051"
 
 ||||
 |-|-|-|-|
-| Параметр | Описание|
+| Параметр | Описание:|
 | Аргументы | Число аргументов для параметра. Может быть «*», или список аргументов. |
 | DemandLoad | Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |  
 | HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?**. |
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)   
  [Служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Файлов pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Файлов pkgdef](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

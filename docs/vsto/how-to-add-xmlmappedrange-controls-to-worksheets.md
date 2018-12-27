@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление элементов управления XMLMappedRange на листы'
+title: Как выполнить Добавление элементов управления XMLMappedRange на листы
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,63 +11,63 @@ dev_langs:
 helpviewer_keywords:
 - XMLMappedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55b6c83624c3ccb6c28701cd97753ea155e37288
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9d7cc26c0170c2a20e27026ebcbc6d8705d34ce2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263984"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646720"
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Как: Добавление элементов управления XMLMappedRange на листы
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Как выполнить Добавление элементов управления XMLMappedRange на листы
   При сопоставлении XML-элемент с ячейкой в Microsoft Office Excel, Visual Studio автоматически добавляет <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> лист элемента управления.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Управления не доступен на **элементов** или **источники данных** окна. Кроме того, не удается создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элементы управления программными средствами.  
+>  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Элемент управления не доступен на **элементов** или **источников данных** окна. Кроме того, нельзя создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управляет программным способом.  
   
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Чтобы добавить элемент управления XMLMappedRange на лист  
   
 1.  Откройте книгу Excel в конструкторе Visual Studio.  
   
-2.  Откройте таблицу, в которой вы хотите добавить элемент управления.  
+2.  Откройте лист, где вы хотите добавить элемент управления.  
   
 3.  На **разработчика** щелкните **источника**.  
   
     > [!NOTE]  
-    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить его. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить ее. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-     **XML-источник** отображается область задач.  
+     **Источник XML** отображается область задач.  
   
-4.  В **XML-источник** области задач, нажмите кнопку **карты XML**.  
+4.  В **источник XML** области задач, щелкните **карт XML**.  
   
-5.  В **карты XML** диалоговое окно, нажмите кнопку **добавить**.  
+5.  В **карт XML** диалоговом окне щелкните **добавить**.  
   
-     **XML-источник** откроется диалоговое окно.  
+     **Источник XML** откроется диалоговое окно.  
   
-6.  Выберите XML-схемы из **XML-источник** диалоговое окно и нажмите кнопку **откройте**.  
+6.  Выберите схему XML из **источник XML** диалоговое окно и нажмите кнопку **откройте**.  
   
-     Схема добавляется к **карты XML** диалоговое окно.  
+     Схема добавляется в **карт XML** диалоговое окно.  
   
-7.  В **карты XML** диалоговое окно, нажмите кнопку **ОК**.  
+7.  В **карт XML** диалоговом окне щелкните **ОК**.  
   
-8.  Перетащите элемент из **XML-источник** области задач в ячейку на листе.  
+8.  Перетащите элемент из **источник XML** область задач в ячейку на листе.  
   
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Создается и добавляется в проект.  
   
     > [!NOTE]  
-    >  При перетаскивании родительского элемента из **XML-источник** область задач <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.  
+    >  При перетаскивании родительского элемента из **источник XML** область задач <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.  
   
 ## <a name="see-also"></a>См. также  
  [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Как: сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+ [Практическое руководство. Сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Добавление пользовательских частей XML в настройках уровня документа'
+title: Как выполнить Добавление пользовательских частей XML в настройках уровня документа
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], custom XML parts
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744872"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647562"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Практическое: Добавление пользовательских частей XML в настройках уровня документа
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Как выполнить Добавление пользовательских частей XML в настройках уровня документа
   XML-данные можно сохранять в книге Microsoft Office Excel или документе Microsoft Office Word путем создания настраиваемой XML-части в настройке на уровне документа. Дополнительные сведения см. в разделе [Общие сведения о частях XML настраиваемого](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -62,5 +62,5 @@ ms.locfileid: "50744872"
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)   
- [Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+ [Практическое руководство. Добавление пользовательских XML-частей в документы с помощью надстроек VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   

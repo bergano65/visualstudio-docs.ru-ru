@@ -1,5 +1,5 @@
 ---
-title: 'Как: разрешить выполнения кода программной части документов с ограниченными разрешениями'
+title: Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - code [Office development in Visual Studio], running behind restricted documents
 - documents [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio, restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855856"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648630"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Как: разрешить выполнения кода программной части документов с ограниченными разрешениями
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
   Ограничение разрешений для документа или книги, можно использовать функции управления правами на доступ к данным (IRM) в Microsoft Office. По умолчанию кода программной части защищенный документ Microsoft Office Word или книгу Microsoft Office Excel не поддерживается для запуска. Значение по умолчанию можно изменить, чтобы ваши расширения управляемого кода можно получить доступ к объектной модели, и решение будет работать.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

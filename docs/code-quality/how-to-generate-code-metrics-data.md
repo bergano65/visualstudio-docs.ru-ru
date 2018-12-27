@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966535"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425777"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Практическое: создание данных для метрик кода
+# <a name="how-to-generate-code-metrics-data"></a>Как выполнить Создание данных для метрик кода
 
 Вы можете создать Результаты метрик кода для одного или нескольких проектов или всего решения. Метрики кода доступен в среде разработки Visual Studio (IDE), а также для C# и проекты Visual Basic, в командной строке.
 
@@ -68,7 +68,7 @@ ms.locfileid: "50966535"
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Исполняемый файл с именем *Metrics.exe* создается в *двоичные файлы* каталог в корневом каталоге репозитория.
+   Исполняемый файл с именем *Metrics.exe* создается в *artifacts\bin* каталог в корневом каталоге репозитория.
 
    > [!TIP]
    > Для создания *Metrics.exe* в [устаревший режим](#legacy-mode), выполните следующую команду:

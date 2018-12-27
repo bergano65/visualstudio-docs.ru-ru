@@ -20,15 +20,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6922105fa66dbb5184aa7c991fe9b90278a9a052
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86837d410b44c2508d50b1f630b43852b0fc8fea
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919681"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738454"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
-В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [C++ основные рекомендации в данный момент](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрый запуск: анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [программы правила C++ Core](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрого запуска: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>См. также
- [Анализ качества кода C/C++ с помощью метода анализа кода](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) [использовании аннотаций SAL для сокращения дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+ [Анализ качества кода C/C++ с помощью метода анализа кода](../code-quality/code-analysis-for-c-cpp-overview.md) [использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671070"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441664"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Пользовательские действия в областях формы Outlook
   Действия отображаться кнопки, которые позволяют ответить на сообщение Microsoft Office Outlook. Например, для ответа на сообщение, пользователь щелкнуть **ответа**, **ответить всем**, или **вперед** кнопки действий. Каждое из этих действий создает нового почтового элемента и заполняет поля элемента с использованием данных из исходного элемента.  
@@ -39,7 +39,7 @@ ms.locfileid: "50671070"
   
  В следующей таблице описаны свойства, доступные в **Custom Actions** диалоговое окно.  
   
-|Свойство.|Описание|  
+|Свойство|Описание:|  
 |--------------|-----------------|  
 |**AddressLike**|Указывает, каким образом будет направлено целевой формы.|  
 |**Текст**|Указывает, каким образом текст исходного элемента добавляется к целевой формы.|  
