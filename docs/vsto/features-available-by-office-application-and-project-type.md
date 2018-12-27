@@ -17,17 +17,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672470"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648156"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Введите доступность функций по типам приложений и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:  

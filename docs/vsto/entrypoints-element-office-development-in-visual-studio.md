@@ -1,6 +1,7 @@
 ---
 title: '&lt;entryPoints&gt; элемент (Разработка решений Office в Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 01b28dab575f867f017b04f2e0180c07193b983b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448393"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647014"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `entryPoints` пространства имен `vstav3` содержит все элементы `entryPoint` , связанные с решением Office.  
@@ -50,11 +51,11 @@ ms.locfileid: "34448393"
  У элемента`entryPoints` имеются перечисленные ниже элементы.  
   
 ### <a name="entrypoint"></a>entryPoint  
- Обязательно. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [ &#60;entryPoint&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Обязательный. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [ &#60;entryPoint&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для решения на уровне документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -96,9 +97,9 @@ ms.locfileid: "34448393"
 </vstav3:entryPoints>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` манифеста приложения для решения на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -118,7 +119,7 @@ ms.locfileid: "34448393"
   
 ## <a name="multi-project-deployment-example"></a>Пример развертывания нескольких проектов  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для многопроектного развертывания. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

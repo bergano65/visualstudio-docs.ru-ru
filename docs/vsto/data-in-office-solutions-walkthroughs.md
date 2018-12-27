@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674835"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647314"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Данные в пошаговых руководствах для решений Office
   В следующих пошаговых руководствах показано, как работать с данными в настройках уровня документа и надстройках VSTO для Microsoft Office Word и Microsoft Office Excel.  
@@ -49,7 +49,7 @@ ms.locfileid: "35674835"
  Показано, как привязать элементы управления содержимым в документе Word к XML-данным, хранящимся в документе.  
   
 ## <a name="cache-data-in-document-level-solutions"></a>Кэширование данных в решениях уровня документа  
- [Пошаговое руководство: Создание основной/подробности связи, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Пошаговое руководство: Создайте отношение основной/подробности, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Демонстрируется создание иерархического отношения в листе и кэширование данных для использования решения в автономном режиме.  
   
  [Пошаговое руководство: Вставка данных в книгу на сервере](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  

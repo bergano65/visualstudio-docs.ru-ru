@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674373"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647904"
 ---
 # <a name="debug-office-projects"></a>Отладка проектов Office
   Для отладки проектов Office можно использовать такие же инструменты Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , как и для других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Функциональные возможности отладчика[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , такие как возможность вставлять точки останова и просматривать переменные в окне **Локальные** , доступны и при отладке проектов Office. Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средства отладки, см. в разделе [отладки в Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35674373"
  Для отладки проекта документа Word на основе документа Word 97-2003 (*/*.doc *) формат, необходимо добавить в папку проекта в список надежных папок. Дополнительные сведения о том, как это сделать, см. в разделе [предоставления доверия к документам](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Надстройки отладка отключена  
- Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Это делается для того, чтобы предотвратить загрузку неисправного кода при каждом запуске приложения. В то же время, непредвиденное поведение может возникать и в процессе обычной отладки. Сведения о повторном включении надстроек VSTO, см. в разделе [как: повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Это делается для того, чтобы предотвратить загрузку неисправного кода при каждом запуске приложения. В то же время, непредвиденное поведение может возникать и в процессе обычной отладки. Сведения о повторном включении надстроек VSTO, см. в разделе [как: Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  В приложениях Microsoft Office используются два вида отключения надстроек VSTO: жесткое и мягкое.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35674373"
   
 ## <a name="see-also"></a>См. также  
  [Создание решений Office](../vsto/building-office-solutions.md)   
- [Практическое: повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Практическое руководство. Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)  
   
   
