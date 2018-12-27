@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673059"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648772"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщика Windows
 Узнайте, как создать файл установщика Windows для решения Office при помощи [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -68,7 +68,7 @@ ms.locfileid: "50673059"
 
 
 
-|Пример<br /><br />|Описание<br /><br />|  
+|Пример<br /><br />|Описание:<br /><br />|  
 |----------|---------------|  
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
@@ -528,7 +528,7 @@ ms.locfileid: "50673059"
 
 9. В строке меню выберите **построения** > **сборка OfficeAddInSetup**.  
 
-   После завершения сборки, вы можете найти *setup.exe* файл **OfficeAddInSetup** проекта по следующему адресу: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   После завершения сборки, вы можете найти *setup.exe* файл **OfficeAddInSetup** проекта по следующему адресу: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>См. также  

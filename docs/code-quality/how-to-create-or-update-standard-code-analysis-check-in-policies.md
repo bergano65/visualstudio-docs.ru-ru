@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283240"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740079"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить Создание или обновление стандартных политик анализом кода возврата
 
 Вы можете потребовать, запуска анализа кода для всех проектов кода в проекте Azure DevOps с помощью политики возврата анализа кода. Обязательность анализа кода может повысить качество кода, который возвращается в базу кода.
 
@@ -51,7 +51,7 @@ ms.locfileid: "44283240"
 
 Установите или снимите следующие параметры:
 
-|Параметр|Описание|
+|Параметр|Описание:|
 |------------|-----------------|
 |**Включить возврат файлов, которые являются частью текущего решения.**|Анализ кода можно выполнять только с файлами, указанными в файлах конфигурации решения и проекта. Эта политика гарантирует, что весь код, который является частью решения анализируется.|
 |**Принудительное применение анализа кода C/C++ (/ analyze)**|Требует, что все проекты C или C++ быть построены с / analyze-параметр компилятора, чтобы запустить анализ кода, прежде чем они могут быть возвращены.|
@@ -71,4 +71,4 @@ ms.locfileid: "44283240"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание и использование политик возврата с анализом кода](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

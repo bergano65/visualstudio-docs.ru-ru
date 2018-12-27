@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39;} &#39; | Документы Microsoft
+title: Ожидалось "}" | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2273d0c98ba3d65bd7b9e855532ca5355d25af66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632824"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348310"
 ---
-# <a name="expected-3939"></a>Ожидается &#39;} &#39;
-Не включать закрывающая фигурная скобка, обозначающая конец тела функции, цикл, блок кода, или инициализатора объекта. Примером ошибки такого **для** цикла с левой скобки, пометка тело цикла.  
+# <a name="expected-"></a>Ожидался символ "}"
+Не включить закрывающая фигурная скобка, обозначающая конец тела функции, цикл, блок кода или инициализатора объекта. Примером этой ошибки может служить **для** цикла с помощью только открывающая фигурная скобка пометки тело цикла.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавьте закрывающая фигурная скобка, обозначающая конец функции, цикл, блок или инициализатора объекта.  
+-   Добавьте закрывающую фигурную скобку, отмечающий конец функции, цикл, блок или инициализатора объекта.  
   
 ## <a name="see-also"></a>См. также  
  [Объект функции](../../javascript/reference/function-object-javascript.md)   

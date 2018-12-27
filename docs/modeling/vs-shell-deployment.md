@@ -9,25 +9,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61cf6e716f082abf28043d56d1a8803853d894aa
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 663e706dba9ec7b6479e3e9360ef8aa2d12b1400
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566677"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739501"
 ---
 # <a name="vs-shell-deployment"></a>Развертывание VS Shell
 
-Изолированной оболочки позволяет определить, какие Visual Studio функциональные возможности, вам понадобится взаимодействовать с вашего доменного языка и как это решение должно выглядеть. Дополнительные сведения о изолированная оболочка Visual Studio, см. в разделе [Настройка изолированной оболочки](../extensibility/customizing-the-isolated-shell.md).
+Изолированной оболочки позволяет определить, какие Visual Studio функциональные возможности, вам понадобится взаимодействовать с вашего доменного языка и как это решение должно выглядеть. Дополнительные сведения о изолированная оболочка Visual Studio, см. в разделе [Настройка изолированной оболочки](https://vspartner.com/pages/vsshells).
 
-## <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Чтобы задать оболочку Visual Studio в качестве цели развертывания
+Чтобы задать оболочку Visual Studio в качестве цели развертывания:
 
-1.  В **DslPackage** откройте проект **source.extension.tt**.
+1. В **DslPackage** откройте проект **source.extension.tt**.
 
-2.  В разделе `<SupportedProducts>` вставки:
+2. В разделе `<SupportedProducts>` вставки:
 
-    ```xml
-    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
-    ```
+   ```xml
+   <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
+   ```
 
-     Замените *MyIsolatedShell* с именем пакета изолированной оболочки.
+   Замените *MyIsolatedShell* с именем пакета изолированной оболочки.

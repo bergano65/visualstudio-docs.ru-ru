@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Настройка встроенной вкладки'
+title: Как выполнить Настройка встроенной вкладки
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - built-in tabs [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30b4af116df218f3f778b9efa1e295fbadbad86a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257271"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647341"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Практическое: Настройка встроенной вкладки
+# <a name="how-to-customize-a-built-in-tab"></a>Как выполнить Настройка встроенной вкладки
   На встроенную вкладку можно добавить группы и элементы управления. Встроенная вкладка — это вкладка, которая уже есть на ленте приложения Microsoft Office. Например **данных** вкладка — это встроенная вкладка Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -36,7 +36,7 @@ ms.locfileid: "35257271"
 1.  Щелкните правой кнопкой мыши файл кода ленты в **обозревателе решений**, а затем нажмите кнопку **конструктор представлений**.  
   
     > [!NOTE]  
-    >  Если файл кода ленты не отображается в **обозревателе решений**, необходимо добавить **элемент ленты** в проект. См. в разделе [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+    >  Если файл кода ленты не отображается в **обозревателе решений**, необходимо добавить **элемент ленты** в проект. См. практическое руководство по [ Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Щелкните правой кнопкой мыши одну из вкладок в конструкторе лент, а затем нажмите кнопку **свойства**.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "35257271"
   
      Идентификатор элемента управления — это имя, однозначно определяющее вкладки, группы и элементы управления, которые встроены в приложения Microsoft Office.  
   
-     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: Идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 5.  Из **элементы управления ленты Office** вкладке **элементов**, перетащите групп на вкладку.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "35257271"
   
 4.  Задайте **OfficeId** свойство идентификатора встроенной группы.  
   
-     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: Идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>См. также  
  [Обзор ленты](../vsto/ribbon-overview.md)   
@@ -75,9 +75,9 @@ ms.locfileid: "35257271"
  [XML-ленты](../vsto/ribbon-xml.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Практическое: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Практическое: изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Практическое: Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Практическое: надстройка Показать ошибки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

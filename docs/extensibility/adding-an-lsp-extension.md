@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672968"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425868"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +243,7 @@ Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blo
 ![Определение ресурса MEF](media/lsp-define-asset.png)
 
 * **Тип**: Microsoft.VisualStudio.MefComponent
-* **Источник**: проект в текущем решении
+* **Источник**: Проект в текущем решении
 * **Проект**: [проект]
 
 ### <a name="content-type-definition"></a>Определение типа содержимого
@@ -327,7 +327,7 @@ namespace MockLanguageExtension
    ![Редактирование активов vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Тип**: Microsoft.VisualStudio.VsPackage
-   * **Источник**: файл в файловой системе
+   * **Источник**: Файл в файловой системе
    * **Путь**: [путь к вашей *.pkgdef* файл]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Изменение параметров для рабочей области пользователя

@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Добавление панели действий в документы Word или книги Excel'
+title: Как выполнить Добавление панели действий в документы Word или книги Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70511d0490032204789dc037a13847a10b5cbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948365"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648243"
 ---
-# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Практическое руководство. Добавление области действий в документы Word или книги Excel
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Как выполнить Добавление области действий в документы Word или книги Excel
   Чтобы добавить панели действий в документ Microsoft Office Word или книге Microsoft Excel, необходимо сначала создайте пользовательский элемент управления Windows Forms. Затем добавьте пользовательский элемент управления <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поле (Word) или `ThisWorkbook.ActionsPane` поле (Excel) в проекте.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -81,7 +81,7 @@ ms.locfileid: "51948365"
 ## <a name="see-also"></a>См. также  
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Практическое: Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Практическое руководство. Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

@@ -1,6 +1,7 @@
 ---
 title: Создание надстроек VSTO для Office с помощью Visual Studio
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670878"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441500"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.  
@@ -90,7 +91,7 @@ ms.locfileid: "50670878"
  Ссылки на подробные сведения об основных сборках взаимодействия Office, манифестов, элементы пользовательского интерфейса и сообщения об ошибках.  
   
  [Управляемый Справочник по &#40;разработка решений Office в Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. API справочную документацию по пространствам имен и типов, используемых в проектах Office, ориентированных на .NET Framework 3.5, см. в следующем справочном разделе документации по Visual Studio 2008: [системы 2007 управляемый Справочник по](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. API справочную документацию по пространствам имен и типов, используемых в проектах Office, ориентированных на .NET Framework 3.5, см. в следующем справочном разделе документации по Visual Studio 2008: [Справочник по выбору системы 2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Справочник по неуправляемым API &#40;разработка решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Ссылки на сведения об интерфейсах COM, которые можно использовать для выполнения таких действий, как загрузка и выгрузка управляемых надстроек VSTO в приложениях Office.  

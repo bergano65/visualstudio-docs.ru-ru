@@ -1,5 +1,5 @@
 ---
-title: CAN &#39; имеют t &#39; продолжить &#39; вне цикла | Документы Microsoft
+title: «Continue» не может располагаться вне цикла | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,35 +20,35 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633304"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531249"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>CAN &#39; имеют t &#39; продолжить &#39; вне цикла
-Предпринята попытка использования **Продолжить** инструкции за пределами цикла. **Продолжить** инструкция может использоваться только в теле a:  
+# <a name="cant-have-continue-outside-of-loop"></a>continue не может располагаться вне цикла
+Вы попытались использовать **по-прежнему** инструкции вне цикла. **По-прежнему** инструкция может использоваться только в теле a:  
   
--   `do-while`цикл,  
+-   `do-while` цикл,  
   
--   `while`цикл,  
+-   `while` цикл,  
   
 -   **для** цикла  
   
--   **для параметра/в** цикла.  
+-   **/ в** цикла.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что **Продолжить** оператор находится в теле a:  
+-   Убедитесь, что **по-прежнему** оператор находится внутри элементов управления:  
   
-    -   `do-while`цикл,  
+    -   `do-while` цикл,  
   
-    -   `while`цикл,  
+    -   `while` цикл,  
   
     -   **для** цикла  
   
-    -   **для параметра/в** цикла.  
+    -   **/ в** цикла.  
   
 ## <a name="see-also"></a>См. также  
  [Оператор Continue](../../javascript/reference/continue-statement-javascript.md)   

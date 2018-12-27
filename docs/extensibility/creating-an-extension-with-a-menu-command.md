@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248142"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739271"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 В этом пошаговом руководстве показано, как создать расширение с помощью команды меню, которое запускает приложение Блокнот.  
@@ -126,4 +126,4 @@ ms.locfileid: "53248142"
   
 5. Добавьте параметры и свойства страниц и пользовательских параметров расширения: [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [расширить пользовательские настройки и Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширения проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или реализация вашей расширения в изолированной оболочки. [Visual Studio изолированной оболочки](../extensibility/visual-studio-isolated-shell.md)
+   Другие виды расширений требуют немного больше работы, таких как создание нового типа проекта ([расширения проектов](../extensibility/extending-projects.md)), создания нового типа редактора ([создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)), или реализация вашей расширения в изолированной оболочки. [Visual Studio изолированной оболочки](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

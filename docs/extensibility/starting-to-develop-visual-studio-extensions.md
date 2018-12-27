@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349667"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739923"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 
@@ -64,7 +64,7 @@ ms.locfileid: "51349667"
 
 -   [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Изолированная оболочка Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+-   [Изолированная оболочка Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> Какие шаблоны проектов, предоставляемые VSSDK?
  Два основных типа расширения являются пакеты VSPackage и расширения MEF. В общем случае расширений VSPackage используются для расширения, которые применяют или расширяют команд, окон инструментов и проекты. Расширения MEF позволяют расширить и настроить в редакторе Visual Studio.
@@ -75,15 +75,15 @@ ms.locfileid: "51349667"
 
  Шаблон изолированной оболочки используется для упаковки расширения в версиях, которую можно Добавление фирменной символики и распространять как собственные оболочки Visual Studio. Следующие разделы показывают, как приступить к работе с каждого вида расширения:
 
--   Команды меню: [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Команды меню: [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Окна инструментов: [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   Окна инструментов: [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Расширения редактора: [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   Расширения редактора: [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   Основные пакеты VSPackage: [Creating an Extension with VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   Основные пакеты VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Шаблон проекта VSIX: [Приступая к работе с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   Шаблон проекта VSIX: [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Как получить расширение my, чтобы он выглядел Visual Studio?
  Полезные советы по проектированию пользовательского интерфейса для расширения в [по работе пользователей Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -94,7 +94,7 @@ ms.locfileid: "51349667"
 ## <a name="how-can-i-distribute-my-extension"></a>Как можно распространять Мои расширения?
  Можно установить расширение на другом компьютере или отправить его своим друзьям как VSIX-файл, который можно установить, дважды щелкнув его. Можно найти дополнительные сведения о пакетах VSIX в [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Также можно опубликовать ваше расширение Visual Studio Marketplace, что делает его видимым на большом числе клиентов Visual Studio. Пример того, упаковка расширения в Marketplace, см. в разделе [Пошаговое руководство: публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о что необходимо сделать, чтобы опубликовать в Marketplace, см. в разделе [продукты и расширения для Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Также можно опубликовать ваше расширение Visual Studio Marketplace, что делает его видимым на большом числе клиентов Visual Studio. Пример того, упаковка расширения в Marketplace, см. в разделе [Пошаговое руководство: Публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о что необходимо сделать, чтобы опубликовать в Marketplace, см. в разделе [продукты и расширения для Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>См. также
 

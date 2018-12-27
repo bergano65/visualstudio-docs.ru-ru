@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Добавление элементов управления XMLNodes в документы Word'
+title: Как выполнить Добавление элементов управления XMLNodes в документы Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - XMLNodes control, adding to documents
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff7a1966c9107fcd2a60b14c21b6a2dfbda09033
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b27753590ea84fac6029bea0919a1aeda90543fa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258074"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647140"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Практическое: Добавление элементов управления XMLNodes в документы Word
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Как выполнить Добавление элементов управления XMLNodes в документы Word
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  При сопоставлении повторяющегося элемента схемы XML в документ Microsoft Office Word, Visual Studio автоматически добавляет <xref:Microsoft.Office.Tools.Word.XMLNodes> элемента управления в документ.  
   
- Сведения о сопоставлении неповторяющихся элементов схемы XML, см. в разделе [как: XMLNode, добавление элементов управления в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+ Сведения о сопоставлении неповторяющихся элементов схемы XML, см. в разделе [как: Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления не доступен из **элементов** или **источников данных** окна, а также могут создаваться программным способом.  
@@ -42,7 +42,7 @@ ms.locfileid: "35258074"
 1.  В документ в конструкторе Visual Studio, на ленте щелкните **разработчика** вкладки.  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 2.  В **XML** щелкните **схемы**.  
   

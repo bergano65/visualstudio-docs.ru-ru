@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906030"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739165"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio поможет вам расширить возможности Visual Studio или интегрировать новые возможности в Visual Studio. Вы можете предоставлять свои расширения другим пользователям, а также в Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:  
@@ -78,8 +78,8 @@ ms.locfileid: "49906030"
   
 ## <a name="see-also"></a>См. также  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Практическое: перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [ВОПРОСЫ И ОТВЕТЫ: Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
  [Добавление команды на панели инструментов](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ ms.locfileid: "49906030"
  [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Управление пакетов VSPackage](../extensibility/managing-vspackages.md)   
- [Visual Studio изолированной оболочки](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio изолированной оболочки](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Поставлять расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Внутри Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Поддержка пакета SDK для Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   

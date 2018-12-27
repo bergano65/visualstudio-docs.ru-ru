@@ -1,10 +1,9 @@
 ---
-title: Элемент WizardData (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент WizardData (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561295"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Элемент WizardData (шаблоны Visual Studio)
 Задает пользовательский XML.  
@@ -49,22 +48,22 @@ ms.locfileid: "31140119"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблон элемента или комплект для начала работы.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является необязательным.  
   
- Этот текст указывает пользовательский XML для передачи пользовательского мастера расширения, указанного в [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) элемента.  
+ Данный текст задает настраиваемый XML для передачи пользовательского мастера модуля, указанного в [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) элемент.  
   
 ## <a name="remarks"></a>Примечания  
- В этом элементе можно указать любой XML-код. XML будет передан как параметр пользовательскому расширению мастера, позволяя расширению использовать содержимое этого элемента. Проверка не выполнена на основе этих данных.  
+ В этом элементе можно указать любой XML. XML передается как параметр расширение пользовательского мастера, позволяя расширение, используемое содержимое данного элемента. Проверка не выполняется на основе этих данных.  
   
- Содержимое `WizardData` элемент передаются без изменений, как параметр в словарь строк параметров в `IWizard.RunStarted` метод. Этот параметр называется $WizardData$.  
+ Содержание `WizardData` передается элемент, без изменений, как параметр в словарь строк параметров в `IWizard.RunStarted` метод. Этот параметр называется $WizardData$.  
   
 ## <a name="example"></a>Пример  
- В следующем примере демонстрируется метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
+ В следующем примере показано метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -101,4 +100,4 @@ ms.locfileid: "31140119"
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Элемент WizardExtension (шаблоны Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -1,10 +1,9 @@
 ---
-title: Элемент TemplateID (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент TemplateID (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
@@ -16,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e431e603d0b2844431b5bffaedf7fa82bd7132
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eda4b3134d8e7e589c60ee8b8860042b7e0f1ff5
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138750"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560548"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Элемент TemplateID (шаблоны Visual Studio)
-Задает идентификатор шаблона элемента, который относится к категории группы шаблонов элементов, [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) элемента.  
+Задает идентификатор шаблона элемента, который относится к категории группы шаблонов элементов по [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) элемент.  
   
  \<VSTemplate >  
  \<TemplateData >  
- \<Идентификатор шаблона >  
+ \<TemplateID >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,12 +46,12 @@ ms.locfileid: "31138750"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
- Объект `string` , представляющий идентификатор шаблона элемента, который относится к категории группы шаблонов элементов по `TemplateGroupID` элемента.  
+ Объект `string` , представляющий идентификатор шаблона элемента, который относится к категории группы шаблонов элементов по `TemplateGroupID` элемент.  
   
 ## <a name="remarks"></a>Примечания  
  `TemplateID` — это необязательный элемент.  

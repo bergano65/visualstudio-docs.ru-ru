@@ -1,6 +1,7 @@
 ---
 title: '&lt;formRegions&gt; элемент (Разработка решений Office в Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - formRegions element
 - <formRegions> element
 - application manifests [Office development in Visual Studio], <formRegions> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b978ef47db6b8803b7730aef14173c3eb19b16e8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 035c8a402c0b596b8a6e06d5e6c72e4ab34ebb4f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674007"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647195"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; элемент (Разработка решений Office в Visual Studio)
   `formRegions` Элемент `vstov4` пространство имен содержит области формы Microsoft Office Outlook, связанные с надстройкой VSTO.  
@@ -50,7 +51,7 @@ ms.locfileid: "35674007"
   
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `formRegions` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

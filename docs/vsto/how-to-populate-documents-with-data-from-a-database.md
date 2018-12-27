@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Заполнение документов данными из базы данных'
+title: Как выполнить Заполнение документов данными из базы данных
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - documents, populating with data
 - data, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af068fc9cdacc0f681232ee4c7424d67d77f3a11
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71c2494a4c1b70e6bcf40b23062f70e91587f2e3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756805"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647395"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>Практическое: Заполнение документов данными из базы данных
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>Как выполнить Заполнение документов данными из базы данных
 
 Доступ к данным в проектах уровня документа для Microsoft Office можно получить таким же образом, как при доступе к данным в проектах Windows Forms. Используйте те же средства и код для получения данных из базы данных в ваше решение. Также можно использовать элементы управления Windows Forms для отображения данных.
 
@@ -31,7 +31,7 @@ ms.locfileid: "36756805"
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-В следующем примере показано, как добавить элементы управления с привязкой к данным в проекты на уровне документа с помощью конструктора. Пример добавления элементов управления с привязкой к данным в проектах надстройки VSTO во время выполнения, см. в разделе [Пошаговое руководство: простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+В следующем примере показано, как добавить элементы управления с привязкой к данным в проекты на уровне документа с помощью конструктора. Пример добавления элементов управления с привязкой к данным в проектах надстройки VSTO во время выполнения, см. в разделе [Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
 ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [привязка данных к содержимому Word 2007 элементы управления с помощью Visual Studio Tools для системы Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
 
@@ -67,14 +67,14 @@ ms.locfileid: "36756805"
 
 -   Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Сведения о том, как отправлять обновления типизированному набору данных и базе данных, см. в разделе [как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Сведения о том, как отправлять обновления типизированному набору данных и базе данных, см. в разделе [как: Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Практическое: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Практическое: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Использовать файлы локальной базы данных в общие сведения о решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

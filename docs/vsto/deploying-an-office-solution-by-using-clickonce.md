@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8c690283eacabe56b18ef786bf4ab58fd03768e4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673072"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648785"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Развертывание решения Office с помощью ClickOnce
   Решение Office можно развернуть быстрее, если использовать ClickOnce. При публикации обновлений решение автоматически обнаруживает и устанавливает их. Однако для использования ClickOnce необходимо устанавливать решение отдельно для каждого пользователя компьютера. Таким образом, следует с помощью установщика Windows (*.msi*) Если несколько пользователей будут запускать решение на одном компьютере.  
@@ -92,7 +92,7 @@ ms.locfileid: "50673072"
 
      В таблице ниже представлено описание каждого из этих параметров.  
 
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |**Скачать необходимые компоненты с веб-сайта поставщика компонентов**|Пользователю будет предложено загрузить и установить эти необходимые компоненты у поставщика.|  
     |**Скачать необходимые компоненты с местоположения моего приложения**|Необходимое программное обеспечение устанавливается вместе с решением. Если выбран этот параметр, Visual Studio копирует все пакеты необходимых компонентов в расположение публикации автоматически. Чтобы этот параметр действовал, пакеты необходимых компонентов должны находиться на компьютере разработки.|  
@@ -262,7 +262,7 @@ ms.locfileid: "50673072"
 
 3.  Откройте **ExcelWorkbook.dll.manifest** файл в текстовом редакторе, таком как Блокнот.  
 
-4.  После элемента `</vstav3:update>` добавьте следующий код. Для атрибута класса `<vstav3:entryPoint>` элемент, используйте следующий синтаксис: *ИмяПространстваИмен.ИмяКласса*. В следующем примере имя класса совпадает с именем пространства имен, поэтому имя точки входа будет иметь вид `FileCopyPDA.FileCopyPDA`.  
+4.  После элемента `</vstav3:update>` добавьте следующий код. Для атрибута класса элемента `<vstav3:entryPoint>` используйте следующий синтаксис: *ИмяПространстваИмен.ИмяКласса*. В следующем примере имя класса совпадает с именем пространства имен, поэтому имя точки входа будет иметь вид `FileCopyPDA.FileCopyPDA`.  
 
     ```xml
     <vstav3:postActions>  
@@ -463,9 +463,9 @@ ms.locfileid: "50673072"
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Публикация решений Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Практическое: публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Практическое: установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Практическое руководство. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Практическое руководство. Установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Практическое руководство. Публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
  [Создание пользовательского установщика для решения office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

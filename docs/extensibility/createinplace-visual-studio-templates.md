@@ -1,10 +1,8 @@
 ---
-title: CreateInPlace (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
+title: Createinplace-элемент (шаблоны Visual Studio)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231402"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561818"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (шаблоны Visual Studio)
+# <a name="createinplace-element-visual-studio-templates"></a>Элемент CreateInPlace (шаблоны Visual Studio)
 Указывает, следует ли создать проект и выполнить замену в указанном расположении, или выполнить замену во временном расположении и сохраните проект в указанное расположение.  
   
  \<VSTemplate >  

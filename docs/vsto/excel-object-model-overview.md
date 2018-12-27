@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880797"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647529"
 ---
 # <a name="excel-object-model-overview"></a>Обзор объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880797"
   
   В этом разделе приводится краткий обзор объектной модели Excel. Ресурсы, где Дополнительные сведения об объектной модели Excel, см. в разделе [использование документации по объектной модели Excel](#ExcelOMDocumentation).  
   
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: использовать обработчики событий в Excel 2007 надстройка?](http://go.microsoft.com/fwlink/?LinkID=130291), и [How do I: использования фигуры, создание пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использовать обработчики событий в Excel 2007 надстройка? ](http://go.microsoft.com/fwlink/?LinkID=130291), и [инструкции: Создание пузырьковой диаграммы в Excel с помощью фигур? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Доступ к объектам в проекте Excel  
  При создании нового проекта надстройки VSTO для Excel Visual Studio автоматически создает *ThisAddIn.vb* или *ThisAddIn.cs* файл кода. Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.  
@@ -117,7 +117,7 @@ ms.locfileid: "49880797"
   
 ### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|  
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|  

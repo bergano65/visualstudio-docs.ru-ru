@@ -1,5 +1,5 @@
 ---
-title: 'Конструктор рабочих процессов - как: Добавление действий на панель элементов'
+title: 'Конструктор рабочих процессов - как: Добавление действий на панель инструментов'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118217"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684565"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Практическое руководство. Добавление действий на панель инструментов
+# <a name="how-to-add-activities-to-the-toolbox"></a>Как выполнить Добавление действий на панель инструментов
 
 Действия, которые могут добавляться к **элементов** в решении несколькими различными способами. Это можно сделать из текущего проекта, ссылкой из другого проекта либо ссылкой из другой сборки.
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Добавление действия из текущего проекта
 
-1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. Дополнительные сведения о добавлении нового пользовательского действия к проекту см. в разделе [как: добавьте новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. Дополнительные сведения о добавлении нового пользовательского действия к проекту см. в разделе [как: Добавить новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2.  Добавьте к действию пользовательскую логику.
 
@@ -62,4 +62,4 @@ ms.locfileid: "37118217"
 
 ## <a name="see-also"></a>См. также
 
-- [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)
+- [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)

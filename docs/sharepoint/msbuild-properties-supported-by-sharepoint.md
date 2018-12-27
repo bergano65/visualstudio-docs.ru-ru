@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674394"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684812"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Свойства MsBuild, поддерживаемые в SharePoint
   Любой [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойство, определенное в файле Microsoft.VisualStudio.SharePoint.targets, файле проекта или файле пользователя проекта может использоваться в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. Помимо общих [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойства проекта, SharePoint определяет дополнительные свойства, характерные для проектов SharePoint.  
@@ -32,7 +32,7 @@ ms.locfileid: "35674394"
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Свойства MsBuild, относящиеся к SharePoint
  В следующей таблице перечислены [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойства, применяемые к проектов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Существуют другие свойства, но они предназначены для внутреннего использования.  
   
-|Имя свойства|Описание|  
+|Имя свойства|Описание:|  
 |-------------------|-----------------|  
 |SharePointSiteUrl|Строка, представляющая [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] на сайте SharePoint.|  
 |SandboxedSolution|Логическое значение, указывающее, находится ли решение изолированное решение.|  
@@ -57,5 +57,5 @@ ms.locfileid: "35674394"
 >  Можно использовать либо [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] синтаксис переменной `$(` *propertyName* `)` или синтаксис переменной среды `%` *propertyName* `%` Чтобы задать свойство.  
   
 ## <a name="see-also"></a>См. также
- [Справочные сведения о MSBuild](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892315"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739430"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "49892315"
  Можно создать рабочие процессы SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывать их на сайт SharePoint. После развертывания рабочего процесса в SharePoint, связывается с библиотекой или списком. Он затем запускается автоматически, с помощью процесса, или вручную пользователем. Дополнительные сведения об операции рабочего процесса, см. в разделе [рабочих процессов для разработки SharePoint с помощью Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
 
 ## <a name="create-custom-sharepoint-workflows"></a>Создание настраиваемых рабочих процессов SharePoint
- Два проекта рабочих процессов SharePoint доступны вам в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **последовательный рабочий процесс** и **конечного автомата**.
+ Два проекта рабочих процессов SharePoint доступны вам в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **Последовательный рабочий процесс** и **состояния рабочего процесса конечного автомата**.
 
  Объект *последовательный рабочий процесс* представляет ряд шагов. Действия выполняются друг за другом, пока завершится последнее действие. Последовательные рабочие процессы всегда являются строго последовательны в своем выполнении. Поскольку они могут получать внешние сигналы и включать параллельные логические ветки, точный порядок выполнения может отличаться. Ниже показан пример последовательного рабочего процесса.
 
@@ -127,7 +127,7 @@ ms.locfileid: "49892315"
 ## <a name="debug-a-sharepoint-workflow-template"></a>Отладка рабочих процессов SharePoint
  Вы отладка проекта рабочего процесса SharePoint выполняется аналогично отладке других [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] веб-проектов. При запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует параметры, указываемые в **мастер настройки SharePoint** для открытия соответствующего веб-сайт SharePoint и автоматическое связывание шаблона рабочего процесса с помощью соответствующую библиотеку или список. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Кроме того, присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] процесс так называемого *w3wp.exe*.
 
- Чтобы протестировать рабочий процесс, необходимо запустить ее вручную. Дополнительные сведения см. раздел «Отладка рабочих процессах» в [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладке веб-приложений, см. в разделе [отладка веб-приложений](../debugger/debugging-web-applications-and-script.md).
+ Чтобы протестировать рабочий процесс, необходимо запустить ее вручную. Дополнительные сведения см. раздел «Отладка рабочих процессах» в [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладке веб-приложений, см. в разделе [отладка веб-приложений](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Развертывание шаблона рабочего процесса SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Развертывание проектов рабочих процессов SharePoint так же, как и другие [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. Дополнительные сведения см. в разделе [пакета и развертывание SharePoint решения](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
@@ -137,7 +137,7 @@ ms.locfileid: "49892315"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |[Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Пошаговые инструкции по созданию и отладке простого [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса.|
 |[Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Шаг за шагом приводит к созданию более полнофункциональное [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса с формами связывания и запуска.|

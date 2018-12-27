@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0e6f44b923bf515977c07bbfec69b9c8e58593c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672230"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441422"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Настройка компьютера для разработки решений Office
 
@@ -30,7 +30,7 @@ ms.locfileid: "50672230"
 |--------------|------------------------|
 |Visual Studio 2017| Любой выпуск с **разработка для Office и SharePoint** рабочей нагрузки.|
 |.NET Framework|— .NET Framework 4 или более поздней версии.|
-|Microsoft Office|<ul><li>Любой выпуск набора Office, включая Office профессиональный плюс для Office 365.</li><li>Любое из следующих автономных приложений.<br /><br /> <ul><li>Excel</li><li>InfoPath (только в Office 2013 и Office 2010)</li><li>Outlook - приложение</li><li>PowerPoint</li><li>Проект</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic для приложений (VBA) должен быть установлен как часть Office. **Важно:** версии щелкните для запуска приложений Office 2010 не поддерживаются.|
+|Microsoft Office|<ul><li>Любой выпуск набора Office, включая Office профессиональный плюс для Office 365.</li><li>Любое из следующих автономных приложений.<br /><br /> <ul><li>Excel</li><li>InfoPath (только в Office 2013 и Office 2010)</li><li>Outlook - приложение</li><li>PowerPoint</li><li>Проект</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic для приложений (VBA) должен быть установлен как часть Office. **Внимание!** Версии приложения Office 2010 типа "нажми и работай" не поддерживаются.|
 
 Подробное описание шагов установки, см. в разделе [как: Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
@@ -44,7 +44,7 @@ ms.locfileid: "50672230"
 
      Чтобы убедиться в том, что эти средства установлены, запустите программу установки Visual Studio и выберите **изменить** кнопки. Установите флажок возле элемента **Инструменты разработчика Microsoft Office** и нажмите кнопку **Обновить** .
 
-- Убедитесь, что вы не используете версию Office, которое было доставлено, нажмите кнопку для запуска. См. в разделе [как: проверить, является ли Outlook в приложении нажмите кнопку для запуска на компьютере](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Убедитесь, что вы не используете версию Office, которое было доставлено, нажмите кнопку для запуска. См. практическое руководство по [ Проверить, является ли Outlook в приложении нажмите кнопку для запуска на компьютере](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Убедитесь, что у вас только одна версия Microsoft Office.
 
@@ -53,7 +53,7 @@ ms.locfileid: "50672230"
 ## <a name="see-also"></a>См. также
 
 [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Практическое: Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Практическое: Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Практическое: Office установка основных сборок взаимодействия](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Практическое руководство. Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Практическое руководство. Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Практическое руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Введите доступность функций по типам приложений и проектов](../vsto/features-available-by-office-application-and-project-type.md)
