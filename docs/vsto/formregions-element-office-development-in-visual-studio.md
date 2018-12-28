@@ -18,58 +18,57 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 035c8a402c0b596b8a6e06d5e6c72e4ab34ebb4f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d72206ac6ddd6696c1f2fac0f9de6552408a5a46
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647195"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804595"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; элемент (Разработка решений Office в Visual Studio)
-  `formRegions` Элемент `vstov4` пространство имен содержит области формы Microsoft Office Outlook, связанные с надстройкой VSTO.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<formRegions>  
-  <formRegion>  
-  </formRegion>  
-</formRegions>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `formRegions` пространства имен `vstov4` содержит все элементы `formRegion` для надстройки VSTO для Outlook. Этот элемент является обязательным только для надстроек VSTO для Outlook, в которых есть области форм.  
-  
- В манифесте приложения может быть определен только один элемент `formRegions` .  
-  
- У элемента `formRegions` нет атрибутов.  
-  
- Элемент `formRegions` имеет следующий элемент.  
-  
-### <a name="formregion"></a>formRegion  
- Является обязательным для надстроек VSTO для Outlook, включающих области форм. `formRegion` Элемент определен в [ &#60;formRegion&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
-  
-## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
-  
-### <a name="description"></a>Описание:  
- В приведенном ниже примере кода показан элемент `formRegions` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<vstov4:formRegions>  
-  <vstov4:formRegion  
-      name="OutlookAddIn1.FormRegion1">  
-    <vstov4:messageClass name="IPM.Note" />  
-    <vstov4:messageClass name="IPM.Contact" />  
-    <vstov4:messageClass name="IPM.Appointment" />  
-  </vstov4:formRegion>  
-</vstov4:formRegions>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  `formRegions` Элемент `vstov4` пространство имен содержит области формы Microsoft Office Outlook, связанные с надстройкой VSTO.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<formRegions>
+  <formRegion>
+  </formRegion>
+</formRegions>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ Элемент `formRegions` пространства имен `vstov4` содержит все элементы `formRegion` для надстройки VSTO для Outlook. Этот элемент является обязательным только для надстроек VSTO для Outlook, в которых есть области форм.
+
+ В манифесте приложения может быть определен только один элемент `formRegions` .
+
+ У элемента `formRegions` нет атрибутов.
+
+ Элемент `formRegions` имеет следующий элемент.
+
+### <a name="formregion"></a>formRegion
+ Является обязательным для надстроек VSTO для Outlook, включающих области форм. `formRegion` Элемент определен в [ &#60;formRegion&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
+
+### <a name="description"></a>Описание:
+ В приведенном ниже примере кода показан элемент `formRegions` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Код
+
+```xml
+<vstov4:formRegions>
+  <vstov4:formRegion
+      name="OutlookAddIn1.FormRegion1">
+    <vstov4:messageClass name="IPM.Note" />
+    <vstov4:messageClass name="IPM.Contact" />
+    <vstov4:messageClass name="IPM.Appointment" />
+  </vstov4:formRegion>
+</vstov4:formRegions>
+```
+
+## <a name="see-also"></a>См. также
+
+- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
+- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

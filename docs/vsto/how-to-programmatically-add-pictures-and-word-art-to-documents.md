@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: программное добавление рисунков и объекта Word Art в документы'
+title: Как выполнить Программное добавление рисунков и объекта Word Art в документы
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Word documents, adding Word Art
 - graphics, adding to Word documents
 - WordArt, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61399df32ef0f22d1d0aacf23dea45c1357c7579
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255110"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804842"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Практическое: программное добавление рисунков и объекта Word Art в документы
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Как выполнить Программное добавление рисунков и объекта Word Art в документы
   Вы можете добавлять изображения и графические объекты в документы во время разработки или во время выполнения. WordArt позволяет добавлять декоративный текст в документы Microsoft Office Word. Эти специальные текстовые эффекты представляют собой графические объекты, которые можно настроить и вставить в документ.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -103,10 +103,10 @@ ms.locfileid: "35255110"
 -   Рисунок с именем *SamplePicture.jpg* должен существовать на диске C.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Практическое: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Практическое: программное восстановление выделения после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [Практическое: программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)   
+ [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Практическое руководство. Программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Практическое руководство. Программное восстановление выделения после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Практическое руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863924"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803011"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Добавление подменю в меню
 Это пошаговое руководство построено на демонстрацию в [добавить меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , показывая, как добавить подменю в **TestMenu** меню.
@@ -156,4 +156,6 @@ ms.locfileid: "48863924"
 5.  На **TestMenu** меню, щелкните **подменю** и нажмите кнопку **теста подкоманда**. Появится окно сообщения с отображения текста «Тестирования команду внутри TestCommand.SubItemCallback()».
 
 ## <a name="see-also"></a>См. также
- [Добавить меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Добавить меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

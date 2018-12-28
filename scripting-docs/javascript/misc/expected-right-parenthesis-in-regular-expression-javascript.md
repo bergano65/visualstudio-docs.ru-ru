@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39;)&#39; в регулярном выражении (JavaScript) | Документация Майкрософт
+title: Ожидалось ")" в регулярном выражении (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279132"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802346"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Ожидается &#39;)&#39; в регулярном выражении (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>В регулярном выражении ожидался символ ")" (JavaScript)
 Предпринята попытка создать захвата регулярного выражения, утверждение или группы, но не содержит закрывающую скобку. В регулярных выражениях круглые скобки применяются в различных целях. В основном они используются для записи вложенных выражений, чтобы указать утверждения, или группировать шаблоны таким образом, чтобы элементы, которые могут рассматриваться как единое целое, *, +,?, и т. д.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  

@@ -1,5 +1,5 @@
 ---
-title: Можно&#39;t имеют &#39;break&#39; вне цикла | Документация Майкрософт
+title: «Break» не может располагаться вне цикла | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928559"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802411"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>Можно&#39;t имеют &#39;break&#39; вне цикла
+# <a name="cant-have-break-outside-of-loop"></a>break не может располагаться вне цикла
 Вы попытались использовать **break** ключевое слово вне цикла. **Break** ключевое слово используется для завершения цикла или `switch` инструкции. Он должны быть внедрены в теле цикла или `switch` инструкции. Тем не менее **метка** можно следовать ключевое слово break.  
   
 ```  

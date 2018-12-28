@@ -1,5 +1,5 @@
 ---
-title: '&#39; &#39; по умолчанию может использоваться только один раз в &#39; коммутатора &#39; оператор | Документы Microsoft'
+title: «default» может использоваться только один раз в операторе «switch» | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633104"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803887"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; &#39; по умолчанию может использоваться только один раз в &#39; коммутатора &#39; инструкции
-Предпринята попытка использования **по умолчанию** инструкции более одного раза в операторе switch. В случае по умолчанию всегда является последней инструкцией case в операторе switch (это случай проходом).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>default может использоваться в операторе switch только один раз
+Вы попытались использовать **по умолчанию** инструкции более одного раза в операторе switch. В ситуации по умолчанию всегда является последней инструкцией case в операторе switch (это по фамилиям).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Удалите все лишние **по умолчанию** случае инструкций из вашего `switch` инструкции (используется в большинстве инструкция case одно значение по умолчанию в операторе switch).  
+-   Удалите все лишние **по умолчанию** случае операторы из вашей `switch` инструкции (используйте в большинстве инструкция case одно значение по умолчанию в операторе switch).  
   
 ## <a name="see-also"></a>См. также  
  [Оператор switch](../../javascript/reference/switch-statement-javascript.md)   

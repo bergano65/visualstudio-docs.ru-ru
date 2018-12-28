@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace | Документация Майкрософт'
+title: Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295589"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804290"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
 
 С помощью IntelliTrace гораздо легче отлаживать решения SharePoint. Традиционные отладчики показывают только снимок решения в текущий момент. Тем не менее IntelliTrace можно использовать для просмотра прошедших событий решения и контекста, в котором эти события произошли, а также для перехода к коду.
 
  В этом пошаговом руководстве показано, как отлаживать проект SharePoint 2010 или SharePoint 2013 в Visual Studio с помощью Microsoft Monitoring Agent для сбора данных IntelliTrace из развернутых приложений. Для анализа этих данных, необходимо использовать Visual Studio Enterprise. Этот проект содержит приемник компонента, который, когда этот компонент активируется, добавляет задачу в список задач и объявление в список объявлений. При отключении компонента, задача помечается как завершенная, а второе объявление добавляется в список объявлений. Тем не менее процедура содержит логическую ошибку, препятствующих правильной работе проекта. С помощью IntelliTrace вы сможете найти и исправить ошибку.
 
- **Применяется к:** сведения этого раздела применяются к решения SharePoint 2010 и SharePoint 2013, которые были созданы в Visual Studio.
+ **Область применения:** Сведения в этом разделе относятся к решениям SharePoint 2010 и SharePoint 2013, которые были созданы в Visual Studio.
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
@@ -206,7 +206,7 @@ ms.locfileid: "51295589"
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ ms.locfileid: "51295589"
 
 2. Отображение содержимого списков извещений и задач.
 
-     Списке извещений должно присутствовать новое извещение с именем **Activated feature: IntelliTraceTest_Feature1**, и в списке задач должна присутствовать новая задача, которая называется **Deactivate feature: IntelliTraceTest_ Feature1**. Если один из этих элементов отсутствует, проверьте, активирован ли компонент. Если он не активирован, активируйте его.
+     Списке извещений должно присутствовать новое извещение с именем **Activated feature: IntelliTraceTest_Feature1**, и в списке задач должна присутствовать новая задача, которая называется **Deactivate feature: IntelliTraceTest_Feature1**. Если один из этих элементов отсутствует, проверьте, активирован ли компонент. Если он не активирован, активируйте его.
 
 3. Отключите компонент, выполнив следующие действия.
 
@@ -280,9 +280,9 @@ ms.locfileid: "51295589"
 Если установить Microsoft Monitoring Agent в системе, на котором выполняется SharePoint, можно отлаживать решения SharePoint с помощью данных, который более специфичен, чем возвращаемыми IntelliTrace общими сведениями. Агент работает вне Visual Studio с помощью командлетов PowerShell для захвата отладочной информации в процессе выполнения решения SharePoint.
 
 > [!NOTE]
-> Сведения о конфигурации в этом разделе относятся к этому примеру. Дополнительные сведения о других параметрах конфигурации см. в разделе [использование автономного сборщика данных IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Сведения о конфигурации в этом разделе относятся к этому примеру. Дополнительные сведения о других параметрах конфигурации см. в разделе [использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. На компьютере, на котором выполняется SharePoint [настройте Microsoft Monitoring Agent и начните отслеживание своего решения](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. На компьютере, на котором выполняется SharePoint [настройте Microsoft Monitoring Agent и начните отслеживание своего решения](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Отключение компонента.
 
@@ -310,7 +310,7 @@ ms.locfileid: "51295589"
 
 2. Выберите **исключение отладки** кнопки.
 
-     При появлении соответствующего запроса загрузите символьные файлы. В **IntelliTrace** окне исключение выделяется так «вызванное: произошла серьезная ошибка!».
+     При появлении соответствующего запроса загрузите символьные файлы. В **IntelliTrace** окне исключение выделяется так «вызванное: Произошла серьезная ошибка!».
 
      В окне IntelliTrace выберите исключение для отображения кода, в котором произошла ошибка.
 
@@ -334,6 +334,6 @@ ms.locfileid: "51295589"
 
 ## <a name="see-also"></a>См. также
 
-[Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Пошаговое руководство: Проверка кода SharePoint с помощью модульных тестов](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [Пошаговое руководство: Проверка кода SharePoint с помощью модульных тестов](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

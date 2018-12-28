@@ -16,166 +16,165 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01b28dab575f867f017b04f2e0180c07193b983b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: cc54225172f3d84e5577d65fb4574c5d3fcd6b18
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647014"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804329"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; элемент (Разработка решений Office в Visual Studio)
-  Элемент `entryPoints` пространства имен `vstav3` содержит все элементы `entryPoint` , связанные с решением Office.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<entryPoints>  
-    <entryPoint>  
-    </entryPoint>  
-    <entryPoint>  
-    </entryPoint>  
-    <entryPoint>  
-    </entryPoint>  
-</entryPoints>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `entryPoints` является обязательным и находится в пространстве имен `vstav3` . В манифесте приложения определяется один элемент `entryPoints` для каждого решения Office. Например, при развертывании трех решений Office в многопроектном развертывании в манифесте приложения будет существовать три элемента `entryPoints` .  
-  
- Элемент `entryPoints` имеет указанный ниже атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|id|Требуется для многопроектного развертывания. Имя решения Office. Идентификатор не может содержать знак равенства (=).|  
-  
- У элемента`entryPoints` имеются перечисленные ниже элементы.  
-  
-### <a name="entrypoint"></a>entryPoint  
- Обязательный. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [ &#60;entryPoint&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
-  
-## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
-  
-### <a name="description"></a>Описание:  
- В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для решения на уровне документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<vstav3:entryPoints>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.ThisWorkbook">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet1">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet2">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet3">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-</vstav3:entryPoints>  
-```  
-  
-## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
-  
-### <a name="description"></a>Описание:  
- В приведенном ниже примере кода показан элемент `entryPoints` манифеста приложения для решения на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<vstav3:entryPoints>  
-  <vstav3:entryPoint   
-    class="ContosoOutlookAddIn.ThisAddIn">  
-    <assemblyIdentity   
-      name="ContosoOutlookAddIn"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-</vstav3:entryPoints>  
-```  
-  
-## <a name="multi-project-deployment-example"></a>Пример развертывания нескольких проектов  
-  
-### <a name="description"></a>Описание:  
- В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для многопроектного развертывания. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<vstav3:entryPoints   
-  id="ContosoExcel">  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.ThisWorkbook">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet1">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet2">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-  <vstav3:entryPoint   
-    class="ContosoExcelWorkbook.Sheet3">  
-    <assemblyIdentity   
-      name="ContosoExcelWorkbook"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-</vstav3:entryPoints>  
-<vstav3:entryPoints   
-  id="ContosoOutlook">  
-  <vstav3:entryPoint   
-    class="ContosoOutlookAddIn.ThisAddIn">  
-    <assemblyIdentity   
-      name="ContosoOutlookAddIn"   
-      version="1.0.0.0"   
-      language="neutral"   
-      processorArchitecture="msil" />  
-  </vstav3:entryPoint>  
-</vstav3:entryPoints>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  Элемент `entryPoints` пространства имен `vstav3` содержит все элементы `entryPoint` , связанные с решением Office.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<entryPoints>
+    <entryPoint>
+    </entryPoint>
+    <entryPoint>
+    </entryPoint>
+    <entryPoint>
+    </entryPoint>
+</entryPoints>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ Элемент `entryPoints` является обязательным и находится в пространстве имен `vstav3` . В манифесте приложения определяется один элемент `entryPoints` для каждого решения Office. Например, при развертывании трех решений Office в многопроектном развертывании в манифесте приложения будет существовать три элемента `entryPoints` .
+
+ Элемент `entryPoints` имеет указанный ниже атрибут.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|id|Требуется для многопроектного развертывания. Имя решения Office. Идентификатор не может содержать знак равенства (=).|
+
+ У элемента`entryPoints` имеются перечисленные ниже элементы.
+
+### <a name="entrypoint"></a>entryPoint
+ Обязательный. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [ &#60;entryPoint&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+
+## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
+
+### <a name="description"></a>Описание:
+ В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для решения на уровне документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Код
+
+```xml
+<vstav3:entryPoints>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.ThisWorkbook">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet1">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet2">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet3">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+</vstav3:entryPoints>
+```
+
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
+
+### <a name="description"></a>Описание:
+ В приведенном ниже примере кода показан элемент `entryPoints` манифеста приложения для решения на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Код
+
+```xml
+<vstav3:entryPoints>
+  <vstav3:entryPoint
+    class="ContosoOutlookAddIn.ThisAddIn">
+    <assemblyIdentity
+      name="ContosoOutlookAddIn"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+</vstav3:entryPoints>
+```
+
+## <a name="multi-project-deployment-example"></a>Пример развертывания нескольких проектов
+
+### <a name="description"></a>Описание:
+ В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для многопроектного развертывания. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Код
+
+```xml
+<vstav3:entryPoints
+  id="ContosoExcel">
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.ThisWorkbook">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet1">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet2">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+  <vstav3:entryPoint
+    class="ContosoExcelWorkbook.Sheet3">
+    <assemblyIdentity
+      name="ContosoExcelWorkbook"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+</vstav3:entryPoints>
+<vstav3:entryPoints
+  id="ContosoOutlook">
+  <vstav3:entryPoint
+    class="ContosoOutlookAddIn.ThisAddIn">
+    <assemblyIdentity
+      name="ContosoOutlookAddIn"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="msil" />
+  </vstav3:entryPoint>
+</vstav3:entryPoints>
+```
+
+## <a name="see-also"></a>См. также
+
+- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
+- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

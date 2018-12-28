@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Вставка данных в книгу на сервере'
+title: Пошаговое руководство. Вставка данных в книгу на сервере
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672331"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804868"
 ---
-# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Пошаговое руководство: Вставка данных в книгу на сервере
+# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
   В этом пошаговом руководстве показано, как вставить данные в набор данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "50672331"
 
 -   Доступ к запущенному экземпляру Microsoft SQL Server или Microsoft SQL Server Express, имеющий пример базы данных AdventureWorksLT, подключенные к ней. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Присоединение базы данных с помощью командной строки, см. в разделе [способ: добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
+    -   Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Создайте проект библиотеки классов, который определяет набор данных
  Чтобы использовать тот же набор данных в проекте книги Excel и консольное приложение, необходимо определить набор данных в отдельной сборке, на который ссылается оба проекта. В этом пошаговом руководстве необходимо определите набор данных в проекте библиотеки классов.
@@ -89,7 +89,7 @@ ms.locfileid: "50672331"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Определить набор данных в проекте библиотеки классов
  Определите типизированный набор данных, содержащий данные из базы данных AdventureWorksLT для SQL Server 2005. Далее в этом пошаговом руководстве будет ссылаться на этот набор данных в проекте книги Excel и проект консольного приложения.
 
- Набор данных является *типизированный набор данных* , представляющий данные в таблице Product базы данных AdventureWorksLT. Дополнительные сведения о типизированных наборах данных см. в разделе [средства набора данных в Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Набор данных является *типизированный набор данных* , представляющий данные в таблице Product базы данных AdventureWorksLT. Дополнительные сведения о типизированных наборах данных см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Для определения типизированного набора данных в проекте библиотеки классов
 
@@ -103,7 +103,7 @@ ms.locfileid: "50672331"
 
 5. Если имеется существующее подключение к базе данных AdventureWorksLT, выберите его и нажмите кнопку **Далее**.
 
-    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [как: подключение к данным в базе данных](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Как Подключение к данным в базе данных](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672331"
 
 2.  В меню **Данные** выберите команду **Добавить новый источник данных**.
 
-     **Мастер настройки источника данных** открывает.
+     Открывается **мастер настройки источника данных**.
 
 3.  Нажмите кнопку **объект**, а затем нажмите кнопку **Далее**.
 
@@ -293,7 +293,7 @@ ms.locfileid: "50672331"
 
 Дополнительные сведения о работе с кэшированными данными в следующих разделах:
 
--   Изменение данных в кэшированный набор данных без запуска Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+-   Изменение данных в кэшированный набор данных без запуска Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение кэшированных данных в книгу на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>См. также
 

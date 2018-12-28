@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924828"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805111"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 В этой статье описываются типичные способы использования заметок параметры простой функции — скалярных величин и указатели на структуры и классы и в большинстве буферов.  В этой статье также показано распространенных шаблонов использования для заметки. Дополнительные заметки, относящиеся к функции, см. в разделе [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ ms.locfileid: "49924828"
  [Блог команды анализа кода](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>См. также
- [Использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [основные сведения о SAL](../code-quality/understanding-sal.md) [Аннотация поведения функций](../code-quality/annotating-function-behavior.md) [Аннотация структур и классов](../code-quality/annotating-structs-and-classes.md) [ Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md) [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md) [встроенные функции](../code-quality/intrinsic-functions.md) [рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)
+
+- [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Основные сведения о языке SAL](../code-quality/understanding-sal.md)
+- [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)
+- [Аннотация структур и классов](../code-quality/annotating-structs-and-classes.md)
+- [Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md)
+- [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Встроенные функции](../code-quality/intrinsic-functions.md)
+- [Рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)

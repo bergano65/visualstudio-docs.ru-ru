@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39;]&#39; в регулярном выражении (JavaScript) | Документация Майкрософт
+title: Ожидается "]" в регулярном выражении (JavaScript) | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283721"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804420"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Ожидается &#39;]&#39; в регулярном выражении (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>В регулярном выражении ожидался символ "]" (JavaScript)
 Предпринята попытка создать класс символов для сопоставления регулярного выражения, но отсутствует закрывающая квадратная скобка. Сочетания отдельных литеральный символ можно собрать в классы символов, поместив их в скобки. Класс символов соответствует любому знаку, содержащиеся в ней. Например / [abc] / соответствует любому из буквы «», «b» или «c».  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
