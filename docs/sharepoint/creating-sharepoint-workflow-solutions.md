@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739430"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802502"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
 
@@ -127,7 +127,7 @@ ms.locfileid: "53739430"
 ## <a name="debug-a-sharepoint-workflow-template"></a>Отладка рабочих процессов SharePoint
  Вы отладка проекта рабочего процесса SharePoint выполняется аналогично отладке других [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] веб-проектов. При запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует параметры, указываемые в **мастер настройки SharePoint** для открытия соответствующего веб-сайт SharePoint и автоматическое связывание шаблона рабочего процесса с помощью соответствующую библиотеку или список. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Кроме того, присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] процесс так называемого *w3wp.exe*.
 
- Чтобы протестировать рабочий процесс, необходимо запустить ее вручную. Дополнительные сведения см. раздел «Отладка рабочих процессах» в [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладке веб-приложений, см. в разделе [отладка веб-приложений](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
+ Чтобы протестировать рабочий процесс, необходимо запустить ее вручную. Дополнительные сведения см. раздел «Отладка рабочих процессах» в [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладке веб-приложений, см. в разделе [отладка веб-приложений](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Развертывание шаблона рабочего процесса SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Развертывание проектов рабочих процессов SharePoint так же, как и другие [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. Дополнительные сведения см. в разделе [пакета и развертывание SharePoint решения](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).

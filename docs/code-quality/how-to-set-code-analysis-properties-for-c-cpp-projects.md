@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739907"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803156"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Как выполнить Задание свойств анализа кода для проектов C/C++
 Можно настроить средство анализа кода правил для анализа кода для каждой конфигурации проекта. Кроме того можно направить анализ кода, чтобы отключить предупреждения из кода, который был создан и добавлен в проект с помощью стороннего средства.
@@ -52,4 +52,6 @@ ms.locfileid: "53739907"
  Если проект содержит управляемый код, можно выбрать правила, применяемые при анализе кода, выбрав набор правил в **выполнить этот набор правил** списка.
 
 ## <a name="see-also"></a>См. также
- [Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md) [анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

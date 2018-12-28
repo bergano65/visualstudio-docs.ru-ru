@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; при &#39; | Документы Microsoft
+title: Ожидалось ключевое слово «while» | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633034"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801980"
 ---
-# <a name="expected-39while39"></a>Ожидается &#39; при &#39;
-Не содержит `while` условия в `do...while` цикла. Объект **сделать** инструкция должна соответствовать `while` тестирования в конце блока кода.  
+# <a name="expected-while"></a>Ожидалось ключевое слово "while"
+Вы не включали `while` условие в `do...while` цикла. Объект **сделать** инструкция должна иметь соответствующую `while` тестирования в конце блока кода.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   

@@ -1,5 +1,5 @@
 ---
-title: '&#39;вернуть&#39; инструкции за пределами функции | Документация Майкрософт'
+title: оператор за пределами функции «return» | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846522"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802528"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;вернуть&#39; инструкции за пределами функции
+# <a name="return-statement-outside-of-function"></a>Оператор return за пределами функции
 Вы использовали `return` оператор в глобальной области кода. `return` Оператор должен отображаться только в теле функции.  
   
  Вызов функции с помощью `()` оператор — это выражение. Все выражения имеют значения; `return` инструкция используется для указания значения, возвращенного функцией. Выглядит следующим образом:  

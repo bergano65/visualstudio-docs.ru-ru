@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080612"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804069"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Событий текстового буфера, старый API
 Объект текстового буфера выдает несколько различных событий, которые позволяют реагировать на них различных ситуациях.  
   
- Если вы используете старый API, должны реализовывать следующие интерфейсы для получения уведомления об изменениях в текстовый буфер. Разработка интерфейсов для буфера текста с помощью `IConnectionPointContainer` изменяется интерфейс в текстовом буфере, чтобы получать уведомления об строки из буфера. Дополнительные сведения см. в разделе [как: регистрировать события буфера текста с старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). В случае использования `IVsTextStreamEvents` или `IVsTextLinesEvents` интерфейсы, возвращаются изменения в любом одного или двух трехмерной координатах, соответственно.  
+ Если вы используете старый API, должны реализовывать следующие интерфейсы для получения уведомления об изменениях в текстовый буфер. Разработка интерфейсов для буфера текста с помощью `IConnectionPointContainer` изменяется интерфейс в текстовом буфере, чтобы получать уведомления об строки из буфера. Дополнительные сведения см. в разделе [Как Зарегистрировать события буфера текста старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). В случае использования `IVsTextStreamEvents` или `IVsTextLinesEvents` интерфейсы, возвращаются изменения в любом одного или двух трехмерной координатах, соответственно.  
   
 ## <a name="text-buffer-interfaces"></a>Интерфейсы буфера текста  
  Ниже перечислены интерфейсы, реализованные объект текстового буфера.  
@@ -53,4 +53,6 @@ ms.locfileid: "39080612"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Уведомляет клиентов о последнем жесте фиксации, инициирующем событие и предоставляет диапазон измененного текста. `IVsFinalTextChangeCommitEvents` Интерфейс не запускается в ответ для отмены или повтора команды. События возникают только для буферов, которые имеют в диспетчере отмены. `IVsFinalTextChangeCommitEvents` предназначен для использования только с помощью языковых служб или других объектов, имеющих полный контроль над изменением. VSPackage должен отслеживать либо `IVsPreliminaryTextChangeCommitEvents` интерфейс или `IVsFinalTextChangeCommitEvents` интерфейс, но не оба.|  
   
 ## <a name="see-also"></a>См. также
- [Доступ к текстового буфера, используя старый API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [как: регистрировать события буфера текста с старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Доступ к текстового буфера, используя старый API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Практическое руководство. Регистрация для событий текстового буфера с предыдущих версий API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739829"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802739"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Создание пользовательских шаблонов проектов и элементов
 
@@ -29,7 +29,7 @@ ms.locfileid: "53739829"
 Для сценариев создания базового шаблона, следует использовать **Экспорт шаблона** мастер, который выводит в виде сжатого файла. Дополнительные сведения о создании базового шаблона см. в разделе [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> Начиная с Visual Studio 2017, сканирование на наличие шаблонов пользовательских проектов и элементов больше не выполняется. Вместо этого расширения необходимо указать файлы манифеста, которые описывают расположение установки из этих шаблонов. Visual Studio 2017 можно использовать, чтобы обновить расширения VSIX. При развертывании расширения с помощью MSI, необходимо создать файлы манифеста шаблонов вручную. Дополнительные сведения см. в разделе [Upgrad пользовательских шаблонов проектов и элементов для Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Шаблон манифеста документирована в [Справочник по схемам манифеста шаблонов Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+> Начиная с Visual Studio 2017, сканирование на наличие шаблонов пользовательских проектов и элементов больше не выполняется. Вместо этого расширения необходимо указать файлы манифеста, которые описывают расположение установки из этих шаблонов. Visual Studio 2017 можно использовать, чтобы обновить расширения VSIX. При развертывании расширения с помощью MSI, необходимо создать файлы манифеста шаблонов вручную. Дополнительные сведения см. в разделе [обновление настраиваемых шаблонов проектов и элементов для Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Шаблон манифеста документирована в [Справочник по схемам манифеста шаблонов Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="create-a-project-template"></a>Создание шаблона проекта
 

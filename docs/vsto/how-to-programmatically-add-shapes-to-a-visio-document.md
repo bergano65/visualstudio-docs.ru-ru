@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: программное добавление фигур в документ Visio'
+title: Как выполнить Программное добавление фигур в документ Visio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], adding Visio shapes
 - shapes [Office development in Visual Studio], adding Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671876"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802668"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Практическое: программное добавление фигур в документ Visio
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Как выполнить Программное добавление фигур в документ Visio
   Вы можете добавлять фигуры в документ Microsoft Office Visio, извлекая образцы из набора элементов и помещая фигуры на активной странице.  
   
  Дополнительные сведения см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Documents.Add) , свойства [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) и метода [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) .  
@@ -43,6 +43,6 @@ ms.locfileid: "50671876"
  [Решения Visio](../vsto/visio-solutions.md)   
  [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
  [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)   
- [Практическое: программное копирование и вставка фигур в документ Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Практическое руководство. Программное копирование и вставка фигур в документ Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

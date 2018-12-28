@@ -1,5 +1,5 @@
 ---
-title: 'Ожидается &#39;: &#39; | Документы Microsoft'
+title: Ожидалось ":" | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c882c2da52de7a41c558f34f6912a0da1ad272a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633274"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802401"
 ---
-# <a name="expected-3939"></a>Ожидается &#39;: &#39;
-Была предпринята попытка создания с помощью троичный оператор условного выражения, но не содержит двоеточие между второго и третьего операндов. Троичный условный оператор (три операнда) должно быть двоеточие между вторым (true) и третьим (false) операндами.  
+# <a name="expected-"></a>Ожидался символ ":"
+Предпринята попытка создать выражение, использующее тернарный условный оператор, но не содержит двоеточие между второго и третьего операнда. Тернарный условный оператор (три операнда) должно быть двоеточие между второй (true) и третьей (false) операндов.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вставьте двоеточие между второго и третьего операндов.  
+-   Вставьте двоеточие между второго и третьего операнда.  
   
 ## <a name="see-also"></a>См. также  
  [Условный (троичный) оператор (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
- [Операторы](../../javascript/operators-javascript.md)
+ [Инструкции](../../javascript/operators-javascript.md)

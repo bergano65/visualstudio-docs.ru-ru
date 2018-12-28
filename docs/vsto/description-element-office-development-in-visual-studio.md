@@ -18,45 +18,44 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fcd9525c5e1f4e075acdcadc94cfcd7fe0650c1c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: da75844d8c0aa1f39a639de77f916c948e64ea35
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648343"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803939"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Описание&gt; элемент (Разработка решений Office в Visual Studio)
-  Элемент `description` пространства имен `vstov4` хранит описание решения Office, которое отображается в диалоговом окне надстроек COM приложений Microsoft Office.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<description>  
-</description>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Необязательный параметр. Элемент `description` находится в пространстве имен `vstov4` . Он содержит описание надстройки, которая отображается в диалоговом окне надстроек COM в приложении Microsoft Office.  
-  
- У элемента `description` нет атрибутов и дочерних элементов.  
-  
-## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
-  
-### <a name="description"></a>Описание:  
- В приведенном ниже примере кода показан элемент `description` для решения уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Код  
-  
-```xml  
-<vstov4:description>  
-  ContosoOutlookAddIn - Outlook add-in   
-  created with Visual Studio Tools for Office  
-</vstov4:description>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  Элемент `description` пространства имен `vstov4` хранит описание решения Office, которое отображается в диалоговом окне надстроек COM приложений Microsoft Office.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<description>
+</description>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ Необязательный параметр. Элемент `description` находится в пространстве имен `vstov4` . Он содержит описание надстройки, которая отображается в диалоговом окне надстроек COM в приложении Microsoft Office.
+
+ У элемента `description` нет атрибутов и дочерних элементов.
+
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
+
+### <a name="description"></a>Описание:
+ В приведенном ниже примере кода показан элемент `description` для решения уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Код
+
+```xml
+<vstov4:description>
+  ContosoOutlookAddIn - Outlook add-in
+  created with Visual Studio Tools for Office
+</vstov4:description>
+```
+
+## <a name="see-also"></a>См. также
+
+- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
+- [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; @end &#39; | Документация Майкрософт
+title: Ожидалось "@end" | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a510fd034d1053e010a13d28c480f1b0ceb9017
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9138a7152dae44ff5f293e1a06de146d66bb125
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857982"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803701"
 ---
-# <a name="expected-39end39"></a>Ожидается&#39;@end&#39;
+# <a name="expected-end"></a>Ожидалось "\@окончания"
 Предпринята попытка создать блока условно скомпилированного кода, но не содержал <strong>@end</strong> инструкции в конце. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инструкции можно условно компилировать путем заключения в <strong>@if/ @end</strong> блока.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
