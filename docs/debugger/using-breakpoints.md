@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068452"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425855"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Использование точек останова в отладчике Visual Studio
 Точки останова являются одним из самых важных технологий отладки в панели инструментов для разработчиков. Установите точки останова, везде, где требуется приостановить выполнение отладчика. Например может потребоваться см. в разделе состояние переменных кода или просмотреть стек вызовов в точке останова определенных. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md).
@@ -61,7 +60,7 @@ ms.locfileid: "53068452"
   
  ![Выполнение точки останова остановлено](../debugger/media/breakpointexecution.png "выполнение точки останова")  
   
- Когда отладчик останавливается в точке останова, можно просмотреть текущее состояние приложения, включая значения переменных и стека вызова. Дополнительные сведения о стеке вызовов см. в разделе [Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md).  
+ Когда отладчик останавливается в точке останова, можно просмотреть текущее состояние приложения, включая значения переменных и стека вызова. Дополнительные сведения о стеке вызовов см. в разделе [как: использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)  
 
 - Точка останова является переключателем. Может щелкните его, нажмите клавишу **F9**, или использовать **Отладка** > **точка останова** для удаления или вставлять его повторно.
   
@@ -89,7 +88,7 @@ ms.locfileid: "53068452"
 
 Отладчик останавливается на инструкции.  
 
-Дополнительные сведения о стеке вызовов см. в разделе [Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md). 
+Дополнительные сведения о стеке вызовов см. в разделе [как: использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md) 
 
 Визуальном отслеживании точек останова во время выполнения кода, см. в разделе [сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -306,8 +305,9 @@ ms.locfileid: "53068452"
 
 Точки трассировки отображаются в виде красного бриллиантов в левом поле исходного кода и **точки останова** windows. 
   
-## <a name="see-also"></a>См. также  
- [Что такое отладка?](../debugger/what-is-debugging.md)  
- [Лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md)  
- [Устранение неполадок точек останова в отладчике Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>См. также
+
+- [Что такое отладка?](../debugger/what-is-debugging.md)
+- [Лучше писать C# кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Сначала посмотрим, отладка](../debugger/debugger-feature-tour.md)
+- [Устранение неполадок точек останова в отладчике Visual Studio](../debugger/troubleshooting-breakpoints.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcd092ca1631f54f758cef95895d8509d14dec96
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050352"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802982"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,18 +46,18 @@ JavaScript — полноправный язык в Visual Studio. При нап
 ## <a name="whats-new-in-javascript"></a>Новые возможности JavaScript
  Новые функции для JavaScript перечислены в следующей таблице.
 
-|Функция|Описание:|
+|Функция|Описание|
 |-------------|-----------------|
-|Классы|Новый синтаксис поддерживает объявление [классов](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md).|
-|Обещания|[Обещания](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md) упрощают создание асинхронного и более чистого кода. Конструкторы обещаний поддерживаются вместе со служебными методами `all` и `race`.|
-|Итераторы|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md). **Примечание.**  Генераторы пока не поддерживаются.|
+|Классы|Новый синтаксис поддерживает объявление [классов](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Обещания|[Обещания](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) упрощают создание асинхронного и более чистого кода. Конструкторы обещаний поддерживаются вместе со служебными методами `all` и `race`.|
+|Итераторы|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Примечание.**  Генераторы пока не поддерживаются.|
 |Функции со стрелкой|Функция со стрелкой (=>) предоставляет сокращенный синтаксис для ключевого слова `function` с лексической привязкой `this`.|
-|Новые методы для встроенных объектов|Встроенные объекты [Array Object](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [Math Object](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [Number Object](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [Object Object](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md) и [String Object](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) предоставляют множество новых служебных функций и свойств для обработки и инспектирования данных.|
-|Усовершенствования объектного литерала|Объекты теперь поддерживают вычисляемые свойства, точные определения методов и сокращенный синтаксис для свойств, значения которых инициализируются в переменную с таким же именем. См. дополнительные сведения о [создании объектов](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md).|
-|Прокси-элементы|[Прокси-элементы](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md) позволяют настраивать пользовательское поведение объектов.|
-|Параметры Rest|Параметры Rest позволяют преобразовать последовательные аргументы в вызове функции в массив. См. дополнительные сведения о [функциях](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md).|
-|Оператор Spread|[Оператор spread](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) (`…`) расширяет доступные для итерации выражения в отдельные аргументы. Например, `a.b(…array)` примерно равен `a.b.apply(a, array)`.|
-|Символы|Объекты [Symbol](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) позволяют добавлять свойства в существующие объекты без создания помех существующим свойствам объектов, непредусмотренной видимости и других несогласованных дополнений, которые могут быть реализованы другими частями кода.|
-|Строки шаблона|[Строки шаблона](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md) — это строковые литералы, позволяющие оценивать выражения и сцеплять их со строковым литералом.|
-|Усовершенствования Юникода|Была усовершенствована поддержка Юникода. Так, новый формат escape-последовательности поддерживает астральные кодовые точки (кодовые точки с более 4 шестнадцатеричных цифр). См. дополнительные сведения о [специальных символах](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md).|
-|Множество WeakSet|Множество [WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md) — это коллекция объектов, которая будет удалена как мусор при отсутствии доступных ссылок на нее.|
+|Новые методы для встроенных объектов|Встроенные объекты [Array Object](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math Object](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Number Object](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Object Object](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) и [String Object](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) предоставляют множество новых служебных функций и свойств для обработки и инспектирования данных.|
+|Усовершенствования объектного литерала|Объекты теперь поддерживают вычисляемые свойства, точные определения методов и сокращенный синтаксис для свойств, значения которых инициализируются в переменную с таким же именем. См. дополнительные сведения о [создании объектов](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Прокси-элементы|[Прокси-элементы](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) позволяют настраивать пользовательское поведение объектов.|
+|Параметры Rest|Параметры Rest позволяют преобразовать последовательные аргументы в вызове функции в массив. См. дополнительные сведения о [функциях](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Оператор Spread|[Оператор spread](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) расширяет доступные для итерации выражения в отдельные аргументы. Например, `a.b(…array)` примерно равен `a.b.apply(a, array)`.|
+|Символы|Объекты [Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) позволяют добавлять свойства в существующие объекты без создания помех существующим свойствам объектов, непредусмотренной видимости и других несогласованных дополнений, которые могут быть реализованы другими частями кода.|
+|Строки шаблона|[Строки шаблона](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) — это строковые литералы, позволяющие оценивать выражения и сцеплять их со строковым литералом.|
+|Усовершенствования Юникода|Была усовершенствована поддержка Юникода. Так, новый формат escape-последовательности поддерживает астральные кодовые точки (кодовые точки с более 4 шестнадцатеричных цифр). См. дополнительные сведения о [специальных символах](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
+|Множество WeakSet|Множество [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) — это коллекция объектов, которая будет удалена как мусор при отсутствии доступных ссылок на нее.|

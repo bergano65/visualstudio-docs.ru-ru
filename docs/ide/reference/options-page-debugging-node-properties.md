@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670839"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684838"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.
@@ -23,7 +23,7 @@ ms.locfileid: "50670839"
 ## <a name="general"></a>Общие
  `DTE.Properties("Debugging", "General")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Определяет, запрашивает ли отладчик разрешение перед удалением всех точек останова в проекте.|
 |BreakAllProcesses|Get/Set (Boolean)|Определяет, прерывает ли отладчик все процессы при прекращении одного процесса.|
@@ -53,7 +53,7 @@ ms.locfileid: "50670839"
 ## <a name="edit-and-continue"></a>Изменить и продолжить
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Определяет, включена ли функция "Изменить и продолжить". Этот параметр применяется для всех языков, поддерживающих функцию "Изменить и продолжить".|
 |InvokedByCommands|Get/Set (Boolean)|Определяет, применяет ли функция "Изменить и продолжить" изменения кода автоматически, когда пользователь выбирает команду отладки, такую как **Шаг** или **Продолжить**. Этот параметр применяется только к машинному коду.|
@@ -65,7 +65,7 @@ ms.locfileid: "50670839"
 ## <a name="just-in-time"></a>JIT
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для управляемого кода.|
 |JitNative|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для машинного кода.|
@@ -74,7 +74,7 @@ ms.locfileid: "50670839"
 ## <a name="native"></a>машинный код;
  `DTE.Properties("Debugging", "Native")`
 
-|Имя элемента свойства|Значение|Описание:|
+|Имя элемента свойства|Значение|Описание|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Определяет, загружает ли отладчик таблицы экспорта библиотеки DLL.|
 |EnableRPC|Get/Set (Boolean)|Определяет, может ли отладчик войти в удаленные вызовы процедур COM.|
@@ -86,5 +86,5 @@ ms.locfileid: "50670839"
 - [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Страница "Параметры", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../../debugger/general-debugging-options-dialog-box.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](../../debugger/edit-and-continue.md?view=vs-2015)
 - [Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"](../../debugger/just-in-time-debugging-options-dialog-box.md)

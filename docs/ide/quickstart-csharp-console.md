@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158610"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441539"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Краткое руководство. Создание первого консольного приложения на C# в Visual Studio
 
@@ -99,4 +99,4 @@ ms.locfileid: "53158610"
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали кое-что новое о C# и интегрированной среде разработки Visual Studio. Дополнительные сведения см. по представленной ниже ссылке.
 
 > [!div class="nextstepaction"]
-> [Начало работы с консольным приложением на C# в Visual Studio](tutorial-csharp-console.md)
+> [Начало работы с консольным приложением на C# в Visual Studio](../get-started/csharp/tutorial-console.md)

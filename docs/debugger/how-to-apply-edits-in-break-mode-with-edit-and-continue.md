@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063730"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684266"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Как выполнить Применение изменений в режиме приостановки выполнения с помощью изменить и продолжить (Visual Basic)
 Можно использовать "Изменить и продолжить" для изменения кода в режиме приостановки и продолжения затем работы без остановки и перезапуска приложения.  
   
-Ограничений по использованию изменить и продолжить во время отладки, см. в разделе [поддерживаемые изменения кода (C# и Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Ограничений по использованию изменить и продолжить во время отладки, см. в разделе [поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md).
   
 ### <a name="to-edit-code-in-break-mode"></a>Изменение кода в режиме приостановки  
   
@@ -42,7 +42,7 @@ ms.locfileid: "53063730"
   
     -   установите точку останова в коде, а затем выберите команду **Начать отладку** в меню **Отладка** и ждите, когда приложение попадет на точке останова;  
   
-         - или -  
+         -или-  
   
     -   начните отладку, а затем выберите команду **Прервать все** в меню **Отладка**;  
   
@@ -52,7 +52,7 @@ ms.locfileid: "53063730"
   
 2.  Внося изменения в требуемые и поддерживаемый код.  
   
-     Дополнительные сведения см. в разделе [поддерживаемые изменения кода (C# и Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Дополнительные сведения см. в разделе [поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  При попытке недопустимого режимом "Изменить и продолжить" изменения кода, изменения будут подчеркнуты фиолетовой волнистой линией и соответствующая пометка появится в списке задач. Если не отменить недопустимые изменения кода, возможности продолжить выполнение кода не будет.  
@@ -62,5 +62,5 @@ ms.locfileid: "53063730"
      Код теперь выполняется с учетом примененных к проекту изменений.  
   
 ## <a name="see-also"></a>См. также  
- [Поддерживаемые изменения кода (C# и Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Изменить и продолжить (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

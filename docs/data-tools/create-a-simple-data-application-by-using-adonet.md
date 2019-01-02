@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064876"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740105"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простого приложения для работы с данными с помощью ADO.NET
 
@@ -37,7 +37,7 @@ ms.locfileid: "53064876"
 
 -   SQL Server Express LocalDB. Если у вас нет SQL Server Express LocalDB, его можно установить с [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-В этом разделе предполагается, что вы знакомы с базовыми функциями интегрированной среды разработки Visual Studio и можно создать приложение Windows Forms, добавить формы в проект, добавить кнопки и другие элементы управления в формах, набор свойств элементов управления, и код для простых событий. Если вам неудобно решать эти задачи, мы рекомендуем выполнить [Приступая к работе с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) раздел, прежде чем приступать к этому руководству.
+В этом разделе предполагается, что вы знакомы с базовыми функциями интегрированной среды разработки Visual Studio и можно создать приложение Windows Forms, добавить формы в проект, добавить кнопки и другие элементы управления в формах, набор свойств элементов управления, и код для простых событий. Если вам неудобно решать эти задачи, мы рекомендуем выполнить [Приступая к работе с Visual C# и Visual Basic](../ide/quickstart-visual-basic-console.md) раздел, прежде чем приступать к этому руководству.
 
 ## <a name="set-up-the-sample-database"></a>Настройка образца базы данных
 
