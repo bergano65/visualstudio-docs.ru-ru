@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562104"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Пошаговое руководство. Отладка параллельного приложения в Visual Studio
 В этом пошаговом руководстве описывается использование окон **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотеки параллельных задач (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) или [среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Возможности диалоговых окон **Параллельные задачи** и **Параллельные стеки** показаны после прерывания выполнения программы.  
@@ -298,7 +298,7 @@ ms.locfileid: "53060191"
   
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Основы отладки](../debugger/getting-started-with-the-debugger.md)   
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
  [Параллельное программирование](/dotnet/standard/parallel-programming/index)   
  [Среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime)   

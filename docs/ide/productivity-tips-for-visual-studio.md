@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067982"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684895"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 
@@ -123,6 +123,6 @@ ms.locfileid: "53067982"
 ## <a name="see-also"></a>См. также
 
 - [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Практическое руководство: настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Практическое руководство. настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Пошаговое руководство: создание простого приложения](../get-started/csharp/tutorial-wpf.md)
 - [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)

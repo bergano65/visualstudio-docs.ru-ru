@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120387"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739842"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это система сборки для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,7 +61,7 @@ ms.locfileid: "48120387"
  [Файлы ответов](../msbuild/msbuild-response-files.md)  
  Описаны *RSP*-файлы, содержащие параметры командной строки.  
   
- [Дополнительные ресурсы](../msbuild/additional-resources-for-msbuild.md)  
+ [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Ссылки на веб-узлы и группы новостей по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  

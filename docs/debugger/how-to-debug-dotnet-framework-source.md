@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: исходный код отладки .NET Framework | Документация Майкрософт'
+title: Как выполнить Отладка исходного кода .NET Framework | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389284"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443916"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Практическое руководство. Отладка исходного кода .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Как выполнить Отладка исходного кода .NET Framework
 
 Чтобы выполнить отладку исходного кода .NET Framework, необходимо сделать следующее:
 
@@ -55,7 +55,7 @@ ms.locfileid: "52389284"
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Чтобы загрузить символы из модулей или стек вызовов windows  
   
-1. Во время отладки, откройте окно, выбрав **Отладка** > **Windows** > **модули** или **стек вызовов** . 
+1. Во время отладки, откройте окно, выбрав **Отладка** > **Windows** > **модули** (или нажмите клавишу **Ctrl + Alt + U**) или **Отладка** > **Windows** > **стек вызовов** (**Ctrl + Alt + C**). 
    
 1. Щелкните правой кнопкой мыши модуль, для которого не загружены символы. В **модули** окно, выполняется загрузка состояния символов **состояние символов** столбца. В **стек вызовов** находится в состоянии окна, в **состояние кадра** столбец и кадр закрашены серым. 
    
@@ -67,4 +67,4 @@ ms.locfileid: "52389284"
   
 ### <a name="see-also"></a>См. также  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Указание файлов символов (PDB) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

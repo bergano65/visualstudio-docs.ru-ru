@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921721"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803498"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.  
@@ -34,7 +34,7 @@ ms.locfileid: "49921721"
   
 ## <a name="list-of-common-properties-and-parameters"></a>Список общих свойств и параметров  
   
-| Имя свойства или параметра | Описание: |
+| Имя свойства или параметра | Описание |
 |------------------------------------| - |
 | AdditionalLibPaths | Задает дополнительные папки, в которых компиляторы должны искать ссылочные сборки. |
 | AddModules | Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Это свойство эквивалентно переключателю `/addModules` компилятора. |
@@ -56,17 +56,17 @@ ms.locfileid: "49921721"
 | CscToolPath | Путь к *csc.exe*, компилятор [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Имя файла проекта или файла целей, автоматически импортируемого перед импортом общих целей. |
 | DebugSymbols | Логическое значение, указывающее, создает ли сборка символы.<br /><br /> При запуске команды **-p:DebugSymbols=false** в командной строке отключается создание файлов с символами для базы данных программы (*PDB*). |
+| DebugType | Задает уровень создаваемой отладочной информации. Допустимые значения: "full", "pdbonly" и "none". |
 | DefineConstants | Задает константы условной компиляции. Пары "символ-значение" разделяются точками с запятой и задаются с использованием следующего синтаксиса:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Это свойство эквивалентно переключателю `/define` компилятора. |
 | DefineDebug | Логическое значение, указывающее, требуется ли определять константу DEBUG. |
 | DefineTrace | Логическое значение, указывающее, требуется ли определять константу TRACE. |
-| DebugType | Задает уровень создаваемой отладочной информации. Допустимые значения: "full", "pdbonly" и "none". |
 | DelaySign | Логическое значение, указывающее, требуется ли отложить подпись сборки или полностью подписать сборку. |
 | Детерминированный | Логическое значение, указывающее, должен ли компилятор создавать идентичные сборки для идентичных входных данных. Этот параметр соответствует ключу `/deterministic` компиляторов *vbc.exe* и *csc.exe*. |
 | DisabledWarnings | Подавляет указанные предупреждения. Указывать необходимо только числовую часть идентификатора предупреждения. При указании нескольких предупреждений они отделяются друг от друга точкой с запятой. Этот параметр соответствует ключу `/nowarn` компилятора *vbc.exe*. |
 | DisableFastUpToDateCheck | Логическое значение, применимое только к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Диспетчер сборок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] использует процесс FastUpToDateCheck, чтобы определить, требуется ли пересобрать проект для сохранения его актуальности. Это позволяет получить результат быстрее, чем при использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Задание для свойства DisableFastUpToDateCheck значения `true` позволяет обойти диспетчер сборок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и принудить его использовать [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для определения актуальности проекта. |
 | DocumentationFile | Имя файла, создаваемого в качестве файла XML-документации. Это имя включает только имя файла и не содержит информации о пути. |
 | ErrorReport | Указывает, как задача компилятора должна сообщать о внутренних ошибках компилятора. Допустимые значения: "prompt", "send" и "none". Это свойство эквивалентно переключателю `/errorreport` компилятора. |
-| ExcludeDeploymentUrl | Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Примечание.** ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl. |
+| ExcludeDeploymentUrl | Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Примечание.**  ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl. |
 | FileAlignment | Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора. |
 | FrameworkPathOverride | Задает расположение библиотек *mscorlib.dll* и *microsoft.visualbasic.dll*. Этот параметр эквивалентен переключателю `/sdkpath` компилятора *vbc.exe*. |
 | GenerateDocumentation | (Только для Visual Basic) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в *XML*-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки. |

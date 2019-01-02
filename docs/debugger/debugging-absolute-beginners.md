@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561516"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Принципы отладки для начинающих
 
@@ -332,4 +332,4 @@ ms.locfileid: "53160027"
 Из этой статьи вы узнали общие принципы отладки приложений. Теперь вы можете приступить к изучению других возможностей отладчика.
 
 > [!div class="nextstepaction"]
-> [Сведения об отладке с помощью Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

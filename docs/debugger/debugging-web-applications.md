@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561633"
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
 В этом подразделе описана отладка нескольких типов веб-приложений.  
@@ -41,6 +41,5 @@ ms.locfileid: "39178921"
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
- [Основы отладки](../debugger/getting-started-with-the-debugger.md)   
- [Отладка в Visual Studio](../debugger/index.md)  
+ [Сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md) [отладки в Visual Studio](../debugger/index.md)  
  [Обзор функций отладчика](../debugger/debugger-feature-tour.md)

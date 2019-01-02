@@ -44,7 +44,6 @@
 #### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
 #### [Сообщество Azure](vs-azure-community.md)
 #### [Техническая поддержка](vs-tech-support.md)
-#### [Поддержка сообщества разработчиков](vs-priority-support.md)
 #### [Поддержка Concierge](vs-concierge-chat.md)
 ## Управление подписками
 ### [Обязанности администратора](admin-responsibilities.md)
@@ -74,7 +73,7 @@
 ## Приобретение подписок на Visual Studio
 ### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы
-#### [Обзор набора средств Visual Studio для Unity](vscloud-overview.md)
+#### [Обзор](vscloud-overview.md)
 #### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
 #### [Условия покупки для поставщиков облачных решений](vscloud-csp.md)
 ### Подписки, предлагаемые по программам

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079478"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803666"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 
@@ -44,14 +44,14 @@ ms.locfileid: "39079478"
  Вы можете использовать конструктор шейдеров Visual Studio, который представляет собой основанное на графах средство разработки шейдеров, чтобы создавать настраиваемые визуальные эффекты без навыков программирования на HLSL.
 
 > [!NOTE]
-> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Совместимость версий DirectX
  Visual Studio использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Работа с текстурами и изображениями](../designers/working-with-textures-and-images.md)|Описывается работа с изображениями и текстурами в Visual Studio.|
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывается работа с трехмерными моделями в Visual Studio.|
