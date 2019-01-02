@@ -16,12 +16,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062791"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802255"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "53062791"
 
      [Пройти обучение](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) | [Посмотреть документы](https://docs.asp.net/) | [Посмотреть видео](http://www.asp.net/vnext)
 
--   **[Создание кросс платформенных мобильных приложений в HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova — это кросс платформенной среде открытым исходным кодом, основанный на HTML, CSS и Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
+-   **[Создание кроссплатформенных мобильных приложений в HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**: Apache Cordova — кроссплатформенная среда с открытым исходным кодом, основанная на HTML/CSS/Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
 
      [Скачать пример](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [Пройти обучение](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) | [Посмотреть документы](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) | [Посмотреть видео](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[Создание кросс платформенных мобильных приложений в C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : начало работы с Visual Studio и средствами для Xamarin для создания мобильных приложений, работающих на Android, iOS и универсальной платформы Windows из базы общего кода.
+-   **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.
 
      Скачать пример: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (собственный пользовательский интерфейс) или [Пример Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский интерфейс Xamarin.Forms) | [Пройти обучение](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) | [Посмотреть документы](https://msdn.microsoft.com/library/mt299001.aspx) | [Посмотреть видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -60,7 +60,7 @@ ms.locfileid: "53062791"
 
      [Скачать пример](https://github.com/microsoft/windows-classic-samples) | [Пройти обучение](https://msdn.microsoft.com/library/dd492171.aspx) | [Посмотреть документы](https://dev.windows.com/desktop)
 
--   **[Создание приложений Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Приступая к созданию приложений Office, которые расширяют и настраивают Word, Excel, Outlook и Powerpoint с использованием служб Office 365.
+-   **[Создание приложений Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Приступая к созданию приложений Office, которые расширяют и настраивают Word, Excel, Outlook и PowerPoint с использованием служб Office 365.
 
      [Скачать пример](https://code.msdn.microsoft.com/office365/) | [Пройти обучение](http://dev.office.com/getting-started/office365apis) | [Посмотреть документы](https://msdn.microsoft.com/office/aa905340.aspx) | [Посмотреть видео](http://dev.office.com/videos)
 
