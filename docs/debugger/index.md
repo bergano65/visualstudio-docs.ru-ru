@@ -4,16 +4,15 @@ title: Отладка приложений | Документация Майкр
 description: Узнайте, как с помощью Visual Studio 2017 отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886641"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 
@@ -27,7 +26,7 @@ ms.locfileid: "53048612"
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="What is debugging?">
                             </div>
                         </div>
                         <div class="cardText">
@@ -45,7 +44,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
+                            <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +62,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -76,7 +75,7 @@ ms.locfileid: "53048612"
     </li>
 </ul>
 
-<h2>5-минутные краткие руководства по отладке в Visual Studio</h2>
+<h2>Начало работы с отладчиком</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -86,7 +85,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="Road map">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,18 +96,18 @@ ms.locfileid: "53048612"
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Absolute beginners">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Отладка приложения C# или Visual Basic</h3>
+                        <h3>Руководство для начинающих</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +115,25 @@ ms.locfileid: "53048612"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_csharp.svg" alt="C#">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Отладка приложения C#</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,17 +151,17 @@ ms.locfileid: "53048612"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Отладка приложения ASP.NET</h3>
+                        <h3>Отладка приложения Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -153,39 +170,21 @@ ms.locfileid: "53048612"
     </li>
 </ul>
 
-<h2>Учебники для подробного ознакомления</h2>
+<h2>Подробные сведения об отладчике</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/using-breakpoints">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="Use breakpoints">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Руководство для начинающих</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Сведения об использовании отладчика</h3>
+                        <h3>Дополнительные сведения о точках останова</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +198,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                            <img src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Tips and tricks">
                         </div>
                     </div>
                     <div class="cardText">
@@ -217,7 +216,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="View historical app state">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -235,7 +234,7 @@ ms.locfileid: "53048612"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure">
                         </div>
                     </div>
                     <div class="cardText">

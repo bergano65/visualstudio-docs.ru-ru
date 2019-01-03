@@ -1,0 +1,45 @@
+items:
+- name: C# в Visual Studio
+  href: index.yml
+  items:
+  - name: Обзор
+    items:
+    - name: О Visual Studio 2017
+      href: visual-studio-ide.md
+    - name: О редакторе кода
+      href: tutorial-editor.md
+    - name: О проектах и решениях
+      href: tutorial-projects-solutions.md
+    - name: Другие возможности Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: Учебники
+    items:
+    - name: Создание первого приложения C#
+      href: tutorial-console.md
+    - name: Создание веб-приложения
+      href: tutorial-aspnet-core.md
+    - name: Создание приложения UWP
+      href: tutorial-uwp.md
+    - name: Создание приложения WPF
+      href: tutorial-wpf.md
+    expanded: true
+  - name: Знакомство с Visual Studio
+    items:
+    - name: Создание и редактирование кода
+      href: tutorial-editor.md
+    - name: Компиляция и сборка
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Отладка кода
+      href: ../csharp/tutorial-debugger.md
+    - name: Модульное тестирование
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: Развертывание проекта
+      href: ../../deployment/index.md
+    - name: Доступ к данным
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53442988"
