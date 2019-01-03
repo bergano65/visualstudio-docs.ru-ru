@@ -5,7 +5,7 @@ items:
   href: installing-the-visual-studio-sdk.md
 - name: Приступая к разработке расширений Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Создание первого расширения: Hello World'
+- name: Создание первого расширения. Hello World
   href: extensibility-hello-world.md
 - name: Новые возможности пакета SDK для Visual Studio 2017
   href: what-s-new-in-the-visual-studio-2017-sdk.md
@@ -135,13 +135,13 @@ items:
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
     - name: Пошаговое руководство. Выделение текста
       href: walkthrough-highlighting-text.md
-    - name: Пошаговое руководство. Структурирование
+    - name: Пошаговое руководство. структуризация
       href: walkthrough-outlining.md
-    - name: Пошаговое руководство. Отображение парных фигурных скобок
+    - name: Пошаговое руководство. Отображение парных скобок
       href: walkthrough-displaying-matching-braces.md
     - name: Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: Пошаговое руководство. Отображение справки сигнатуры
+    - name: Пошаговое руководство. Отображение справки по цифровым подписям
       href: walkthrough-displaying-signature-help.md
     - name: Пошаговое руководство. Отображение завершения операторов
       href: walkthrough-displaying-statement-completion.md
@@ -151,7 +151,7 @@ items:
       href: walkthrough-displaying-light-bulb-suggestions.md
     - name: Пошаговое руководство. Использование командной оболочки в расширении редактора
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: Пошаговое руководство. Использование сочетания клавиш в расширении редактора
+    - name: Пошаговое руководство. Использование сочетаний клавиш в редакторе расширений
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
     - name: Пошаговое руководство. Доступ к объекту DTE из расширения редактора
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Элемент Assembly (расширение мастера шаблонов Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (шаблоны Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: Элемент и атрибут BuildOnLoad (шаблоны Visual Studio Templates)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload - элемент (шаблоны Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (шаблоны Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: Элемент CreateNewFolder (шаблоны Visual Studio)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion - элемент (шаблоны Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference - элемент (шаблоны Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: Элемент ShowByDefault (шаблоны Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: Элемент SolutionFolder (шаблоны Visual Studio)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: Элемент SupportsMasterPage (шаблоны Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName - элемент (шаблоны Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: Элемент TemplateContent (шаблоны проектов Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: Элемент TemplateData (шаблоны Visual Studio)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: Элемент WizardExtension (шаблоны Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload - элемент (шаблоны Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion - элемент (шаблоны Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference - элемент (шаблоны Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName - элемент (шаблоны Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Справочник по схемам манифеста шаблонов Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Расширение параметров и настроек пользователя
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Ссылка на версию пакета Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562364"
