@@ -1,7 +1,7 @@
 ---
-title: 'Практическое: Запуск Spy ++ | Документация Майкрософт'
+title: Как выполнить Запуск Spy ++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/12/2018
+ms.date: 12/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2e5ffabbb560165bd19bb3d52b940a5cc9e858
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 5143c34f0c344fecec82a5d08b2e7fb9b95ac1bc
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257173"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646871"
 ---
-# <a name="how-to-start-spy"></a>Практическое руководство. Запуск Spy++
+# <a name="how-to-start-spy"></a>Как выполнить Запуск Spy++
+
 Вы можете Запуск Spy ++ из Visual Studio или в командной строке.  
   
  При запуске Spy ++, если отображается сообщение, чтобы запросить разрешение на внесение изменений на компьютере, выберите **Да**.  
   
 > [!NOTE]
->  Можно запустить только один экземпляр Spy ++. При попытке запустить второй экземпляр, то только что запущенного экземпляра получить фокус.  
+>  Можно запустить только один экземпляр Spy ++. При попытке запустить второй экземпляр, то только что запущенного экземпляра получить фокус.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+Spy ++ требуются следующие компоненты. Эти компоненты можно выбрать с помощью установщика Visual Studio, выбрав **отдельные компоненты** вкладку, а затем выберите следующие компоненты.
+
+* Выберите Отладка и тестирование **средства профилирования C++**
+* В разделе действия по разработке, выберите **основные возможности Visual Studio C++**
+
+Если вы внесли изменения, следуйте инструкциям на экране для установки этих компонентов.
   
-### <a name="start-spy-from-visual-studio"></a>Запуск Spy ++ из Visual Studio  
+## <a name="start-spy-from-visual-studio"></a>Запуск Spy ++ из Visual Studio
   
 На **средства** меню, выберите **Spy ++**.  
   
@@ -36,13 +46,13 @@ ms.locfileid: "52257173"
 > [!NOTE]
 >  При записи сообщений в журнал с помощью Spy ++, он может привести к ОС, чтобы выполняться значительно медленнее.  
   
-### <a name="start-spy-at-a-command-prompt"></a>Запуск Spy ++ в командной строке  
+## <a name="start-spy-at-a-command-prompt"></a>Запуск Spy ++ в командной строке  
   
 1.  В окне командной строки перейдите в папку, содержащую spyxx.exe. Как правило является путь к этой папке... \\ *Папка установки visual Studio*\Common7\Tools\\.  
   
 2.  Введите **spyxx.exe**. 
   
 ## <a name="see-also"></a>См. также  
- [Использование Spy ++](../debugger/using-spy-increment.md)   
- [Представления Spy ++](../debugger/spy-increment-views.md)   
+ [Использование Spy++](../debugger/using-spy-increment.md)   
+ [Представления Spy++](../debugger/spy-increment-views.md)   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)

@@ -14,29 +14,27 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a2da342afa22f18841556de5e7ca290b13d42a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 8063c9ff07fc3c8159ea897b0120a1b8a538fa4a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761664"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802450"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Профилирование нагрузочных тестов ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Данные профилирования можно собирать из автоматических веб-тестов [!INCLUDE[TCMext](../includes/tcmext-md.md)], выполняемых для проектов веб-сайтов ASP.NET. Собирать можно данные выборки и данные об уровневом взаимодействии. Дополнительные сведения см. в следующих разделах:  
-  
- [(NIB) Практическое руководство. Создание сеанса анализа производительности для веб-теста производительности](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
-  
- [Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)  
-  
- [Запуск системных тестов с помощью Microsoft Visual Studio](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)  
-  
-## <a name="see-also"></a>См. также  
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)   
- [Использование правил производительности для анализа данных](../profiling/using-performance-rules-to-analyze-data.md)   
- [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)   
- [Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)
+Данные профилирования можно собирать из автоматических веб-тестов [!INCLUDE[TCMext](../includes/tcmext-md.md)], выполняемых для проектов веб-сайтов ASP.NET. Собирать можно данные выборки и данные об уровневом взаимодействии. Дополнительные сведения см. в следующих разделах:
 
+ [Практическое руководство. Выполнение сеанса производительности веб-приложения из редактора веб-теста производительности](/previous-versions/ff356203(v=vs.100))
 
+ [Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 
+ [Запуск системных тестов с помощью Microsoft Visual Studio](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)
+
+## <a name="see-also"></a>См. также
+
+- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
+- [Использование правил производительности для анализа данных](../profiling/using-performance-rules-to-analyze-data.md)
+- [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)
+- [Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)

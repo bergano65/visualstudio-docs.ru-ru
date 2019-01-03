@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561974"
 ---
 # <a name="debugging-native-code"></a>Отладка машинного кода
-В этом разделе освещаются основные проблемы и технологии отладки для приложений, написанных в машинных кодах. В данном разделе описаны методы высшего уровня. Механизм использования отладчика Visual Studio, см. в разделе [Путеводитель по отладчику](../debugger/getting-started-with-the-debugger.md).  
+В этом разделе освещаются основные проблемы и технологии отладки для приложений, написанных в машинных кодах. В данном разделе описаны методы высшего уровня. Механизм использования отладчика Visual Studio, см. в разделе [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Отладка оптимизированного кода](../debugger/how-to-debug-optimized-code.md)  
@@ -60,8 +60,8 @@ ms.locfileid: "39180195"
  [Практическое руководство. Отладка внедренного кода](../debugger/how-to-debug-injected-code.md)  
  Руководство по отладке кода, использующего атрибуты. Инструкции: как включить комментирование исходного кода, как просмотреть введенный код, а также как просмотреть дизассемблированный код в текущей точке выполнения.  
   
- [Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Описывает использование **параллельных задач** и **Параллельные стеки** средство windows для отладки параллельного приложения.  
+ [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
