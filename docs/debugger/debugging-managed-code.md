@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561896"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 
-В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. Дополнительные сведения см. в разделе [использование отладчика](../debugger/getting-started-with-the-debugger.md).
+В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>В этом разделе
 
 [Диагностические сообщения в окне вывода](../debugger/diagnostic-messages-in-the-output-window.md)  
-Описывает <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace> классы, с помощью которых можно написать сообщения времени выполнения для **вывода** окна. Эти классы содержат методы вывода, позволяющие выводить сведения без прерывания выполнения программы, и выводить сведения, которые также прерывают выполнение при невыполнении заданного условия.
+Описывает классы <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>, с помощью которых можно записывать сообщения во время выполнения в окно **Выходные данные**. Эти классы содержат методы вывода, позволяющие выводить сведения без прерывания выполнения программы, и выводить сведения, которые также прерывают выполнение при невыполнении заданного условия.
 
 [Утверждения в управляемом коде](../debugger/assertions-in-managed-code.md)  
 Описывает утверждения в управляемом коде, которые проверяют условия, заданные в качестве аргументов методов `Assert`. Кроме того, этот раздел содержит пример кода, содержащий сведения об использовании методов классов <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>, вопросы, касающиеся отладочной и выпускаемой версий кода, побочных эффектов, аргументов утверждений, настройки поведения утверждений и файлов конфигурации.
@@ -40,7 +40,7 @@ ms.locfileid: "39179483"
 [Оператор Stop в Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 Описывает оператор `Stop`, который представляет собой альтернативу указанию точки останова. Кроме того, раздел содержит пример кода и сравнение оператора `Stop` с оператором `End`, а также оператора `Stop` с оператором `Assert`.
 
-[Пошаговое руководство. Отладка в Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Пошаговое руководство: Отладка формы Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)  
 Пошаговые инструкции по созданию формы Windows Form и ее отладке. Форма Windows Forms - стандартный компонент приложения Windows, — один из наиболее распространенных вариантов управляемых приложений. В данном пошаговом руководстве используются языки Visual C# и Visual Basic, но методика создания форм Windows Forms с помощью C++ во многом аналогична.
 
 [Отладка метода OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,8 +49,8 @@ ms.locfileid: "39179483"
 [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
 Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.
 
-[Ошибка. Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-Описание сообщения об ошибке, возникающее при попытке произвести отладку управляемого кода на [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], или система Windows NT, который был запущен в режиме отладки.
+[Ошибка: Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на компьютере, загруженном в режиме отладки под управлением операционной системы [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] или Windows NT.
 
 [JIT-отладка и оптимизация](../debugger/jit-optimization-and-debugging.md)  
 Описывает эффекты по оптимизации по отладке JIT.
@@ -58,8 +58,8 @@ ms.locfileid: "39179483"
 [Отладка LINQ и DLINQ](../debugger/debugging-linq.md)  
 Описывает методы отладки LINQ запросов.
 
-[Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
-Описывает использование **параллельных задач** и **Параллельные стеки** средство windows для отладки параллельного приложения.
+[Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.
 
 ## <a name="related-sections"></a>Связанные разделы
 
@@ -71,7 +71,7 @@ ms.locfileid: "39179483"
 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
 Описание параметра компоновщика, который добавляет <xref:System.Diagnostics.DebuggableAttribute> в код, написанный на языке C++. Этот атрибут необходим для использования таких возможностей отладчика, как, например, "присоединить с C++".
 
-[Отладка приложений служб Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
+[Отладка служебных приложений Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
 Рекомендации по отладке служебных приложений Windows, включая настройку, подключение к процессу, отладку кода в методе `OnStart` службы и кода в методе Main, задание точек останова и использование диспетчера управления службами для запуска, остановки, приостановки и продолжения выполнения службы пользователя.
 
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)  

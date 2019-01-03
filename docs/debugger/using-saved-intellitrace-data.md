@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912972"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685010"
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.
@@ -79,7 +79,7 @@ ms.locfileid: "49912972"
 |[Список потоков](#ThreadsList)|Потоки, которые выполнялись во время сбора|Все источники|
 |[Данные теста](#TestData)|Шаги теста и их результаты из сеанса тестирования|Test Manager|
 |[Модули](#Modules)|Модули, которые целевой процесс загрузил в порядке их загрузки.|Все источники|
-|[Веб-запроса](#Modules)|Веб-запрос данных для рабочей среды IIS веб-приложений и SharePoint 2010 и SharePoint 2013|Microsoft Monitoring Agent и автономного сборщика|
+|[Веб-запрос](#Modules)|Веб-запрос данных для рабочей среды IIS веб-приложений и SharePoint 2010 и SharePoint 2013|Microsoft Monitoring Agent и автономного сборщика|
 
  Ниже приведены некоторые рекомендации, помогающие найти сведения в каждом разделе.
 
@@ -110,7 +110,7 @@ ms.locfileid: "49912972"
 
 3.  Разверните этот вызов, чтобы просмотреть все вложенные вызовы и значения параметров, которые были записаны в тот момент времени.
 
-     (Клавиатура: для отображения и сворачивания вложенного вызова нажмите клавишу **Стрелка вправо** или **Стрелка влево** , соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)
+     (Клавиатура: Для отображения или сворачивания вложенного вызова нажмите клавиши **Стрелка вправо** или **стрелка влево** соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)
 
      Запустите отладку из этого вызова.
 
@@ -161,7 +161,7 @@ ms.locfileid: "49912972"
 
 1. Скопируйте идентификатор корреляции SharePoint из его источника.
 
-    Пример:
+    Например:
 
     ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -207,7 +207,7 @@ ms.locfileid: "49912972"
 
     ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Пошаговое руководство, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
+   Пошаговое руководство, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Список потоков
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.
@@ -225,7 +225,7 @@ ms.locfileid: "49912972"
 |**Столбец**|**Отображает**|
 |----------------|-------------------|
 |**ID**|Идентификационный номер потока|
-|**Name**|Имя потока. Безымянные потоки отображаются как "\<без имени >».|
+|**Name**|Имя потока. Безымянные потоки отображаются как "\<No Name>".|
 |**Время начала**|Время создания потока|
 |**Время окончания**|Время завершения выполнения потока|
 
@@ -258,7 +258,7 @@ ms.locfileid: "49912972"
 |----------------|-------------------|
 |**Имя модуля**|Имя файла модуля|
 |**Путь к модулю**|Расположение на диске, где был загружен модуль|
-|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ ms.locfileid: "49912972"
  [Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: A Testing Toolbox](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: Набор инструментов тестирования](http://go.microsoft.com/fwlink/?LinkID=255203)
