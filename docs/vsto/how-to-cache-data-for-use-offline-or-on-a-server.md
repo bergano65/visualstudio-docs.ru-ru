@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Кэшировать данные для использования в автономном режиме или на сервере
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 671b4c18963be4f9c81e15fe33e5d68a410655c9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939428"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Как выполнить Кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных должен кэшироваться в документе, чтобы он был доступен вне сети. Это также позволяет для данных в документе, чтобы управляться другой код, когда документ хранится на сервере.

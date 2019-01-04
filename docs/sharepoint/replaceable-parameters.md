@@ -1,12 +1,8 @@
 ---
 title: Подстановочные параметры | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989169"
 ---
 # <a name="replaceable-parameters"></a>Подстановочные параметры
   Подстановочные параметры или *маркеры*, можно использовать в файлах проекта для предоставления значений для элементов решения SharePoint, фактические значения не известен во время разработки. Они в функции аналогичны стандарте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] токенам шаблонов. Дополнительные сведения см. в разделе [параметров шаблона](../ide/template-parameters.md).  

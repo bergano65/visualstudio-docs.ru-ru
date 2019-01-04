@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление и удаление подключений SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление подключений SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 02c0aa0f6b2af5123939a396f9b0ac9dc6febd17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941957"
 ---
-# <a name="how-to-add-or-remove-sharepoint-connections"></a>Практическое: Добавление и удаление подключений SharePoint
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>Как выполнить Добавление и удаление подключений SharePoint
   Обозреватель серверов позволяет просматривать сайты SharePoint, а также для подключения к данным. Тем не менее, чтобы можно было просматривать содержимое на сайте SharePoint необходимо добавить его в **подключения SharePoint** узла.  
   
 ### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Чтобы добавить сайт SharePoint для узла подключений SharePoint
@@ -50,4 +45,3 @@ ms.locfileid: "36755419"
   
 ## <a name="see-also"></a>См. также
  [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
-  

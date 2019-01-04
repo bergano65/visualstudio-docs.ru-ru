@@ -1,9 +1,6 @@
 ---
-title: 'Как: открытие редакторов для открытых документов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Открытие редакторов для открытых документов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4ba9e15a7f7578454aa7b87372ea776399eca57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967311"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Как: открытие редакторов для открытых документов
+# <a name="how-to-open-editors-for-open-documents"></a>Как выполнить Открытие редакторов для открытых документов
 Еще до открытия проекта окно документа проекта сначала следует определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или воспользоваться одним из стандартных редакторов зарегистрировано [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="open-a-project-specific-editor"></a>Откройте редактор конкретного проекта  
@@ -53,9 +50,9 @@ ms.locfileid: "49823129"
   
      Этот метод сначала проверяет, что документ не открыт, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Если документ уже открыт, а затем передается его окно редактора.  
   
-2.  Если документ не открыт, выполните действия, описанные в [как: открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).  
+2.  Если документ не открыт, выполните действия, описанные в [как: Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>См. также  
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Как: открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
- [Как: открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)
+ [Практическое руководство. Открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
+ [Практическое руководство. Стандартные редакторы](../extensibility/how-to-open-standard-editors.md)

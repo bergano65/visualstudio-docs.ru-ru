@@ -1,8 +1,6 @@
 ---
 title: Доступ к области формы во время выполнения
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875437"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Доступ к области формы во время выполнения
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304484"
 
  Для включения доступа к элементу управления извне файла кода области формы создайте свойство в файле кода области формы для получения этого элемента управления.  
 
- Дополнительные сведения о создании свойств в C#, см. в разделе [как: объявление и использование прочитать запись свойств &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Дополнительные сведения о создании свойств в C#, см. в разделе [как: Объявления и использования прочитать запись свойств &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Дополнительные сведения о создании свойств в Visual Basic, см. в разделе [как: создать свойство (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Дополнительные сведения о создании свойств в Visual Basic, см. в разделе [как: Создать свойство (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>См. также  
  [Рекомендации для создания областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Практическое: Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Практическое руководство. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Пользовательские действия в областях формы Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Пошаговое руководство: Импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Практическое: запретить отображение области формы Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Практическое руководство. Запретить отображение области формы Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)  

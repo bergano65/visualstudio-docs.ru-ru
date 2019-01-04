@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная Защита документов и их частей'
-ms.custom: ''
+title: Как выполнить Программная Защита документов и их частей
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991114"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Практическое: программная Защита документов и их частей
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Как выполнить Программная Защита документов и их частей
   Вы можете добавлять защиту в документы Microsoft Office Word, чтобы запретить пользователям вносить изменения в документ.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35673884"
 > [!NOTE]  
 >  В следующем примере защита паролем не используется; однако вы можете рассмотреть возможность использования пароля при добавлении защиты документов. Дополнительные сведения см. в примере системы защиты документов по адресу [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
- Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. в разделе [как: защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. в разделе [Как Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Защитить документ, который является частью настройки уровня документа  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35673884"
 ## <a name="see-also"></a>См. также  
  [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
  [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)   
- [Как: разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Практическое: Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Практическое руководство. Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

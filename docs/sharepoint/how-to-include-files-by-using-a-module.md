@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: включение файлов с помощью модуля | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Включение файлов с помощью модуля | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923501"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Практическое: включение файлов с помощью модуля
+# <a name="how-to-include-files-by-using-a-module"></a>Как выполнить Включение файлов с помощью модуля
   *Модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модули) представляют собой контейнеры, которые позволяют развертывать образы, текстовые файлы или файлы, такие как главные страницы ASPX в SharePoint.  
   
  Вы можете развернуть файл в библиотеку документов или как обычный файл (например default.aspx) вне библиотеки документов. Чтобы добавить файл в библиотеку документов, укажите `Type="GhostableInLibrary"` в качестве атрибута **файл** элемент. Этот параметр предписывает создавать элемент списка, чтобы перейти с файлом, при добавлении в библиотеку SharePoint. Чтобы развернуть файл вне библиотеки документов, укажите `Type="Ghostable"` или просто опустив **тип** атрибута.  
@@ -71,4 +66,3 @@ ms.locfileid: "37119380"
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

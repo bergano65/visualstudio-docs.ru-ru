@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление дескриптора фильтра в метод Finder | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление дескриптора фильтра в метод Finder | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,21 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877774"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Практическое: Добавление дескриптора фильтра в метод Finder
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Как выполнить Добавление дескриптора фильтра в метод Finder
   Дескрипторы фильтров позволяет потребителям модели для передачи значений в методы, перед их выполнением. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Одним из типичных сценариев является пользователей в SharePoint для извлечения экземпляров внешнего типа содержимого, которые отвечают некоторым условиям. Этот сценарий можно поддерживать путем добавления дескриптора фильтра в метод Finder.  
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Добавление дескриптора фильтра в метод Finder  
   
-1.  В **Подробности метода BDC** окне разверните узел метода поиска, затем **параметры** узел, а затем добавьте входной параметр. Дополнительные сведения см. в разделе [как: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
+1.  В **Подробности метода BDC** окне разверните узел метода поиска, затем **параметры** узел, а затем добавьте входной параметр. Дополнительные сведения см. в разделе [Как Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
   
 2.  В **сведения о методе** окно, выберите дескриптор типа параметра.  
   
@@ -73,11 +68,9 @@ ms.locfileid: "36755603"
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое: Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Функция SccBeginBatch | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccBeginBatch
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9593496f36fba4a56334a206cf39e9a6ad96ad2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c2e0ae1dd4d01018d9637e5722d8079222afbf3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869130"
 ---
 # <a name="sccbeginbatch-function"></a>Функция SccBeginBatch
 Эта функция начинает пакетное последовательность операций системы управления версиями. [SccEndBatch](../extensibility/sccendbatch-function.md) будет вызываться, чтобы завершить работу пакета. Эти пакеты не могут быть вложенными.  
@@ -37,7 +34,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Пакет операций успешно начата.|  
 |SCC_E_UNKNOWNERROR|Обнаружена неспецифическая ошибка.|  

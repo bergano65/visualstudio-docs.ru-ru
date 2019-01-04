@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956846"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 При выполнении пользователем операции управления версиями из интегрированной среды разработки (IDE), подключаемый модуль системы управления версиями может потребоваться передать ошибки или состояния сообщения, относящиеся к работе. Подключаемый модуль может отображать свой собственный окон сообщений, для этой цели. Тем не менее более плавной интеграции подключаемого модуля можно передать строки в интегрированную среду разработки, которая затем отображает их в его собственном способ отображения сведений о состоянии. — Это механизм `LPTEXTOUTPROC` указатель на функцию. IDE реализует эту функцию, (более подробно ниже) для отображения ошибок и состояний.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Отправить строки без сообщения.|  
 |`SCC_MSG_STARTCANCEL`|Начинается отображение **отменить** кнопки.|  
 |`SCC_MSG_STOPCANCEL`|Останавливает отображение **отменить** кнопки.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Запрашивает интегрированной среды разработки, если фоновая операция — отменить: возвращает IDE `SCC_MSG_RTN_CANCEL` Если операция была отменена; в противном случае возвращает `SCC_MSG_RTN_OK`. `display_string` Приводится параметр [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Запрашивает интегрированной среды разработки, если фоновая операция отменить: Возвращает IDE `SCC_MSG_RTN_CANCEL` Если операция была отменена; в противном случае возвращает `SCC_MSG_RTN_OK`. `display_string` Приводится параметр [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Среда интегрированной разработки о файле, прежде чем он извлекается из системы управления версиями. `display_string` Приводится параметр [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Среда интегрированной разработки о файле, после их получения из системы управления версиями. `display_string` Приводится параметр [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Среда интегрированной разработки текущего состояния фоновой операции. `display_string` Приводится параметр [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  

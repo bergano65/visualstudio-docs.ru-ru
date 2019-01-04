@@ -1,9 +1,6 @@
 ---
-title: IDebugDefaultPort2 | Документы Microsoft
-ms.custom: ''
+title: IDebugDefaultPort2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d131ab24cc57af1846f89b61afa2d89ae2cacb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f371eb040ae2c160582093f07eacb2108bcb7b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930587"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Этот интерфейс предоставляет несколько методов для доступа к средства уведомления и порт сервера.  
+Этот интерфейс предоставляет несколько методов для работы порта сервера и средства уведомлений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,22 +29,22 @@ IDebugDefaultPort2 : IDebugPort2
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Visual Studio реализует этот интерфейс для представления порт отладки для доступа к программам. Поставщик другой номер порта также можно реализовать этот интерфейс, если он обрабатывает удаленной отладки.  
+ Visual Studio реализует этот интерфейс для представления порта отладки для доступа к программам. Поставщика пользовательского порта также можно реализовать этот интерфейс, если производится обработка удаленной отладки.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Аргумент с методами [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) интерфейс поддерживает этот интерфейс. Вызов [QueryInterface](/cpp/atl/queryinterface) на [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс можно также получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Аргумент методам [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) интерфейс поддерживает этот интерфейс. Вызов [QueryInterface](/cpp/atl/queryinterface) на [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс можно также получить этот интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, определенных в [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Возвращает интерфейс порта уведомление от данного порта.|  
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Возвращает интерфейс, сервер, содержащий этот порт.|  
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Получает интерфейс уведомлений порт от данного порта.|  
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Получает интерфейс, сервер, содержащий этот порт.|  
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Определяет, выполняется ли этот порт на локальном компьютере.|  
   
 ## <a name="remarks"></a>Примечания  
- Имя «`IDebugDefaultPort2`» — немного неверно, поскольку он не представляет порт по умолчанию. Он может вызываться «IDebugPort3».  
+ Имя "`IDebugDefaultPort2`» является немного неверно, так как он не представляет порт по умолчанию. Он может вызываться «IDebugPort3.»  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

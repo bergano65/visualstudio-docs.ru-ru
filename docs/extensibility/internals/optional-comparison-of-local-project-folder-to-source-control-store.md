@@ -1,9 +1,6 @@
 ---
-title: Сравнение папки проекта в системе управления версиями | Документы Microsoft
-ms.custom: ''
+title: Сравнить папки проекта для управления Store источника | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0f6f2185385ee7ec3942556a43f58d43e7a4da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39e4cea70f407ab4fd9358d35488103aecb2b58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903660"
 ---
-# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Необязательный сравнения папке локального проекта в системе управления версиями
-В источнике управления 1.2 API подключаемых модулей, сравнение папки локального проекта и системы управления версиями осуществляется с помощью функции [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
+# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Необязательное сравнение папки локального проекта с системой управления версиями
+В источнике управления 1.2 API подключаемых модулей, сравнение между локальной папке проекта и система управления версиями осуществляется с помощью функции [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
   
- В пределах **обозревателе решений**, если папка выбрана вместо отдельного файла, **сравнить версии** контекстное меню вызывает новый [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) и [ SccDirDiff](../../extensibility/sccdirdiff-function.md) в подключаемый модуль системы управления версиями.  
+ В рамках **обозревателе решений**, если папка выбрана вместо отдельного файла, **сравнить версии** контекстное меню вызывает новый [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) и [ SccDirDiff](../../extensibility/sccdirdiff-function.md) подключаемый модуль системы управления версиями.  
   
-## <a name="new-capability-flags"></a>Флаги новых возможностей  
+## <a name="new-capability-flags"></a>Новые флаги возможностей  
  `SCC_CAP_DIRECTORYDIFF`  
   
  `SCC_CAP_DIRECTORYCHECKOUT`  
@@ -36,10 +33,10 @@ ms.locfileid: "31130577"
   
  [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)  
   
- `SccDirQueryInfo` Функция вызывается перед `SccDirDiff` чтобы определить рабочий каталог, контролируемого системой управления версиями. `SccDirDiff` Функция отображает различия между текущей локальной папки и соответствующей папкой системы управления версиями. Эта команда запрашивает подключаемого модуля, чтобы отобразить список изменений в папку системы управления версиями. Подключаемый модуль системы управления версиями предоставляет собственный пользовательский Интерфейс для отображения различий.  
+ `SccDirQueryInfo` Функция вызывается перед `SccDirDiff` чтобы определить рабочий каталог, контролируемого системой управления версиями. `SccDirDiff` Функция отображает различия между текущий локальный каталог и соответствующие папки системы управления версиями. Эта команда запрашивает у системы управления версиями, подключаемый модуль, чтобы отобразить список изменений в каталог. Подключаемый модуль системы управления версиями предоставляет свой собственный пользовательский Интерфейс для отображения различий.  
   
 > [!NOTE]
->  Эта функция использует те же флаги команды, как [SccDiff](../../extensibility/sccdiff-function.md). Как подключаемый модуль поставщик системы управления версиями вы можете не поддерживает операции «быстрый diff» для каталогов.  
+>  Эта функция использует те же флаги команды, как [SccDiff](../../extensibility/sccdiff-function.md). Как подключаемый модуль поставщика управления версиями вы можете не поддерживают «быстрые операции инструмента сравнения» для каталогов.  
   
 ## <a name="see-also"></a>См. также  
  [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
