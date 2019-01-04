@@ -1,9 +1,6 @@
 ---
 title: Создание областей форм Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842204"
 ---
 # <a name="create-outlook-form-regions"></a>Создание областей форм Outlook
   Для настройки форм Microsoft Office Outlook можно использовать области формы. Visual Studio предоставляет расширенные средства, которые упрощают процесс проектирования, разработки и отладки областей формы.  
@@ -179,7 +176,7 @@ ms.locfileid: "53441734"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Рекомендации для создания областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Представлены сведения, которые могут помочь оптимизировать области формы и предотвратить потенциальные проблемы.|  
 |[Практическое руководство. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Демонстрируется создание области формы для расширения стандартной или настраиваемой формы Microsoft Office Outlook с помощью **новая область формы Outlook** мастера.|  
@@ -190,4 +187,3 @@ ms.locfileid: "53441734"
 |[Практическое руководство. Запретить отображение области формы Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Показано, как запретить в Microsoft Office Outlook отображение области формы для конкретного элемента.|  
 |Показано, как получить доступ к элементу Outlook, в котором отображается область формы.|  
 |[Пользовательские действия в областях формы Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Описывает, как предоставить пользователям возможность реагировать на элемент Outlook.|  
-  

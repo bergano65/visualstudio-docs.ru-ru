@@ -1,8 +1,7 @@
 ---
-title: 'CA1709: идентификаторы должны иметь правильный регистр'
+title: CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881731"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: идентификаторы должны иметь правильный регистр
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
 
 |||
 |-|-|
@@ -60,7 +59,7 @@ ms.locfileid: "49891353"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Это безопасно отключить это предупреждение, если у вас есть собственные соглашения об именовании или идентификатор представляет имя собственное, например, имя компании или технологии.
 
- Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [как: Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [Как Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Идентификаторы должны отличаться регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

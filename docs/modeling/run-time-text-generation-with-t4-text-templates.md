@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939931"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 
@@ -300,7 +299,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 Вы можете делиться содержимым между шаблонами времени выполнения путем написания шаблон базового класса, который может быть абстрактным. Используйте `inherits` параметр `<@#template#>` директиву, чтобы ссылаться на другой класс шаблона среды выполнения.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Шаблон наследования: фрагменты в базовых методах
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Шаблон наследования: Фрагменты в базовых методов
 
 В шаблон, используемый в приведенный ниже пример Обратите внимание на следующее:
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>См. также
 
-Шаблоны времени разработки: Если вы хотите использовать шаблон для создания кода, который становится частью приложения, см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Шаблоны разработки: Если вы хотите использовать шаблон для создания кода, который становится частью приложения, см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Шаблоны времени выполнения может использоваться в любом приложении, где шаблоны и их содержимое определяются во время компиляции. Но если вы хотите написать расширение Visual Studio, которое создает текст из шаблонов, которые изменяются во время выполнения, см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

@@ -1,22 +1,19 @@
 ---
 title: Диагностика расширения пользовательского интерфейса задерживает в Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887715"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Практическое: диагностика пользовательского интерфейса задержки, вызванные расширения
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Как выполнить Диагностика задержек в пользовательском интерфейсе, связанных с расширениями
 
 Когда пользовательский Интерфейс перестает отвечать, Visual Studio проверяет стек вызовов потока пользовательского интерфейса, начиная с листового узла и направлении базы. Если Visual Studio определяет, что стек вызовов кадр принадлежит модулю, который является частью установленного и включенного расширения, система выводит уведомление.
 

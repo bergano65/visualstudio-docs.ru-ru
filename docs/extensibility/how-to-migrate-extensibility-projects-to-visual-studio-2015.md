@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: перенос проектов расширяемости в Visual Studio 2015 | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Перенос проектов расширяемости в Visual Studio 2015 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915339"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Практическое: перенос проектов расширяемости в Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Как выполнить Перенос проектов расширяемости в Visual Studio 2015
 Вот как можно обновить расширение.  
   
 > [!IMPORTANT]
@@ -48,7 +45,7 @@ ms.locfileid: "39639712"
   
 3.  Добавьте версии NuGet ссылочных сборок пакета SDK для VS.  Оставаясь в **ссылки на обозревателе решения** открытым узлом **управление пакетами NuGet** диалоговое окно.  Если вы хотите узнать больше об этом диалоговом окне, см. в разделе [пользовательский Интерфейс диспетчера пакетов](/NuGet/Tools/Package-Manager-UI). Ссылочные сборки VS SDK публикуются на [nuget.org](http://www.nuget.org) по [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4.  С помощью **nuget.org** как вашей **источник пакета**, найдите имя пакета NuGet, которое совпадает с требуемой базовой сборки (например: Microsoft.VisualStudio.Shell.14.0) и установите его в вашей проект.  NuGet может добавить несколько ссылочных сборок для удовлетворения требований начальной его зависимости.  
+4.  С помощью **nuget.org** как вашей **источник пакета**, найдите имя пакета NuGet, которое совпадает с требуемой базовой сборки (например: Microsoft.VisualStudio.Shell.14.0) и установите его в проект.  NuGet может добавить несколько ссылочных сборок для удовлетворения требований начальной его зависимости.  
   
      При желании можно добавить все ссылочные сборки VS SDK за один раз, установив пакет SDK для VS [метапакет](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   

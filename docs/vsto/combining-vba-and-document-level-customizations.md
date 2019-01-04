@@ -1,9 +1,6 @@
 ---
 title: Объединение VBA и настроек уровня документа
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987892"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Объединение VBA и настроек уровня документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Решения VBA и Office в Visual Studio по сравнению с](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)  
-  
-  

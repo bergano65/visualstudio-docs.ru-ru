@@ -1,9 +1,6 @@
 ---
 title: Общие сведения об интеграции управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902996"
 ---
 # <a name="source-control-integration-overview"></a>Общие сведения об интеграции системы управления версиями
 В этом разделе сравниваются два способа интеграции в систему управления версиями Visual Studio; системы управления версиями подключаемого модуля и пакет VSPackage, который предоставляет решение для управления версиями и выделяет новые возможности системы управления версиями. Visual Studio позволяет вручную переключение между системы управления версиями пакетов VSPackage и подключаемых модулей системы управления версиями, а также автоматическое решение на основе переключение.  
@@ -35,7 +32,7 @@ ms.locfileid: "49931849"
   
 1. Создать библиотеку DLL, который реализует функции, указанные в [подключаемых модулей системы управления версиями](../../extensibility/source-control-plug-ins.md).  
   
-2. Зарегистрировать библиотеку DLL, сделав соответствующие записи в реестр (описано в разделе [как: установить подключаемый модуль системы управления источника](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Зарегистрировать библиотеку DLL, сделав соответствующие записи в реестр (описано в разделе [как: Установка подключаемого модуля системы управления версиями](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Создать вспомогательный объект пользовательского интерфейса и отображения при появлении запроса адаптера пакет системы управления версиями (Visual Studio компонент, который управляет функции системы управления версиями с помощью подключаемых модулей системы управления версиями)  
   

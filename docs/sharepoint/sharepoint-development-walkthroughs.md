@@ -1,13 +1,8 @@
 ---
 title: Пошаговые руководства по разработке для SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,19 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945851"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке для SharePoint
   В следующем примере демонстрируются способы разработки и развертывания решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ## <a name="general"></a>Общие  
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство: Добавление приемников событий компонентов](../sharepoint/walkthrough-add-feature-event-receivers.md)|Описывает способы добавления приемников событий компонентов, которые представляют собой методы, которые выполняются при функцию установлен, активирован, деактивирован или удален.|  
 |[Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Демонстрируется создание настраиваемого поля, типа содержимого, определения списка из типа содержимого и экземпляр списка.|  
@@ -40,8 +35,8 @@ ms.locfileid: "37119785"
   
 |Раздел|Описание:|  
 |-----------|-----------------|  
-|[Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования из конструктора SharePoint в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса повторного использования, созданные в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.|  
-|[Пошаговое руководство. Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.|  
+|[Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса повторного использования, созданные в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.|  
+|[Пошаговое руководство: Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.|  
   
 ## <a name="web-parts"></a>Веб-частей
   
@@ -93,11 +88,10 @@ ms.locfileid: "37119785"
   
 ## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
-|[Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова объектной модели SharePoint server.|  
+|[Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова объектной модели SharePoint server.|  
 |[Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|  
   
 ## <a name="see-also"></a>См. также
  [Примеры разработки решений SharePoint и пошаговые руководства](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

@@ -1,13 +1,8 @@
 ---
-title: 'Пошаговое руководство: Создание пользовательского рабочего процесса действия сайта | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пользовательского рабочего процесса действия сайта | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951817"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство: Создание пользовательского рабочего процесса действия сайта
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство. Создание пользовательского рабочего процесса действия сайта
   В этом пошаговом руководстве демонстрируется создание настраиваемого действия для рабочих процессов на уровне сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Для всего сайта, а не только список на сайте применяются рабочие процессы уровня веб-сайта). Пользовательское действие создает резервную копию списка извещений и затем копирует содержимое списка извещений в него.  
   
  В этом пошаговом руководстве описаны следующие задачи.  
@@ -128,6 +123,5 @@ ms.locfileid: "49894174"
 5.  На панели быстрого запуска выберите **резервного копирования объявления** ссылку. Обратите внимание, что все объявления, которые содержатся в **объявления** списка были скопированы в этот список.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

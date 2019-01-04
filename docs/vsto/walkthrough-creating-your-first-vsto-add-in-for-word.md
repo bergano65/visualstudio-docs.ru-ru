@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание первой надстройки VSTO для Word'
-ms.custom: ''
+title: Пошаговое руководство. Создание первой надстройки VSTO для Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948976"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Пошаговое руководство: Создание первой надстройки VSTO для Word
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Пошаговое руководство. Создание первой надстройки VSTO для Word
   В этом вводном пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Word. Возможности, создаваемые в таком решении, доступны для самого приложения независимо от того, какие документы открыты.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -124,17 +121,17 @@ ms.locfileid: "49940974"
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Word, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Задачи программирования, характерные для надстроек VSTO для Word: [Word решения](../vsto/word-solutions.md).  
+-   Программирование задачи, характерные для надстроек VSTO для Word: [Решения Word](../vsto/word-solutions.md).  
   
--   С помощью объектной модели Word: [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
+-   С помощью объектной модели Word: [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md).  
   
--   Настройка пользовательского интерфейса Word, например, добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Настройка пользовательского интерфейса Word, например, путем добавления настраиваемой вкладки на ленту или создания собственной настраиваемой области задач: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
--   Построение и отладка надстроек VSTO для Word: [решений Office построения](../vsto/building-office-solutions.md).  
+-   Построение и отладка надстроек VSTO для Word: [Создание решений Office](../vsto/building-office-solutions.md).  
   
--   Развертывание надстроек VSTO для Word: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Развертывание надстроек VSTO для Word: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940974"
  [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

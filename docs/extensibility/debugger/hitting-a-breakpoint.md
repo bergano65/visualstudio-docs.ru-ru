@@ -1,9 +1,6 @@
 ---
 title: Попадание в точку останова | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], hitting breakpoints
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 728258dc363f906e005c654909cb86fd782824a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935636"
 ---
 # <a name="hit-a-breakpoint"></a>Попадание в точку останова
 В следующем разделе описывается процесс, когда модуль отладки (DE) попадает на точку останова во время выполнения или шаг с заходом:  

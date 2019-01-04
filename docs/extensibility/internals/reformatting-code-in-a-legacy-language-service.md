@@ -1,9 +1,6 @@
 ---
-title: Переформатирование кода в языковую службу прежних версий | Документы Microsoft
-ms.custom: ''
+title: Переформатирование кода в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
@@ -14,34 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392afbafc2ce15dbf7ee347efdf24ce1f7fe2301
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9631027f980c3722498979411598d4f6b066217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897305"
 ---
-# <a name="reformatting-code-in-a-legacy-language-service"></a>Переформатирование кода в языковую службу прежних версий
+# <a name="reformatting-code-in-a-legacy-language-service"></a>Переформатирование кода в языковой службе прежних версий
 
-В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исходный код можно изменить с нормализация использование отступов и пробелов. Это могут быть Вставка или удаление пробелы или знаки табуляции в начале каждой строки, добавление новых строк между строками или замена пробелы с вкладками или знаки табуляции пробелами.  
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исходный код может быть переформатирован, нормализация использование отступов и пробелов. Это могут быть Вставка или удаление пробелы или знаки табуляции в начале каждой строки, добавляя новые между строками или заменив пробелы, символы табуляции или знаки табуляции пробелами.  
   
->**Примечание:** Вставка или удаление знаков перехода на новую строку может повлиять на маркеры, например точки останова и закладки, но добавление или удаление пробелов и символов табуляции не влияет на маркеры.  
+>**Примечание.** Вставка или удаление символы новой строки могут повлиять на маркеры, такие как точки останова и закладки, но добавление или удаление пробелы или символы табуляции не влияет на маркеры.  
   
-Пользователи могут запускать reformatting операцию, выбрав **Выбор формата** или **форматировать документ** из **Дополнительно** меню на **изменить**меню. При вставке фрагмента кода или определенный символ, могут также инициироваться reformatting операции. Например при вводе закрывающей фигурной скобки в C#, весь код между сопоставления открывающую фигурную скобку и закрывающей фигурной скобки автоматически отображаются с отступом для правильного выбора уровня.
+Пользователи могут запускать операцию переформатирования, выбрав **Выбор формата** или **форматировать документ** из **Дополнительно** меню **изменить**меню. Также может запускаться переформатирования операции, при вставке фрагмента кода или определенный символ. Например при вводе закрывающей фигурной скобки в C#, весь код между сопоставления открывающую фигурную скобку и закрывающей фигурной скобки автоматический отступ для правильного выбора уровня.
   
-При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отправляет **Выбор формата** или **форматировать документ** в службе языка <xref:Microsoft.VisualStudio.Package.ViewFilter> класса вызывает <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класса. Для поддержки форматирования необходимо переопределить <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод и задать собственные форматирование кода.  
+При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отправляет **Выбор формата** или **форматировать документ** команды для службы языка, <xref:Microsoft.VisualStudio.Package.ViewFilter> вызываемый классом <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класса. Для поддержки форматирования, необходимо переопределить <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод и задать собственные форматирование кода.  
   
 ## <a name="enabling-support-for-reformatting"></a>Включение поддержки для переформатирования  
 
-Для поддержки форматирования, `EnableFormatSelection` параметр <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> должно быть присвоено `true` при регистрации VSPackage. Это задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> свойства `true`. <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> Метод возвращает значение этого свойства. Если он возвращает значение true, <xref:Microsoft.VisualStudio.Package.ViewFilter> класса вызывает <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.  
+Для поддержки форматирования, `EnableFormatSelection` параметр <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> должно быть присвоено `true` при регистрации пакета VSPackage. Этот параметр задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> свойства `true`. <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> Метод возвращает значение этого свойства. Если она возвращает значение true, <xref:Microsoft.VisualStudio.Package.ViewFilter> вызываемый классом <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.  
   
-## <a name="implementing-reformatting"></a>Реализация переформатирование
+## <a name="implementing-reformatting"></a>Реализация переформатирования
 
-Чтобы реализовать переформатирование, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.Source> класса и переопределить <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Объект, который описывает диапазон для форматирования и <xref:Microsoft.VisualStudio.Package.EditArray> объект содержит изменения, внесенные в диапазон. Обратите внимание, что этот интервал может быть весь документ. Однако так как существуют, вероятно, будет внесение нескольких изменений в диапазон, все изменения должны быть обратимое в рамках одной операции. Чтобы сделать это, заключите все изменения в <xref:Microsoft.VisualStudio.Package.CompoundAction> (см. раздел «Использование класса CompoundAction» этого раздела).
+Чтобы реализовать переформатирования, должен быть производным от класса <xref:Microsoft.VisualStudio.Package.Source> класса и переопределить <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Объект описывает диапазон для форматирования и <xref:Microsoft.VisualStudio.Package.EditArray> объект содержит изменения, внесенные в диапазон. Обратите внимание, что этот интервал может быть весь документ. Тем не менее так как вероятно, будет внесение нескольких изменений в диапазон, все изменения должны быть обратимое в рамках одной операции. Чтобы сделать это, заключите все изменения в <xref:Microsoft.VisualStudio.Package.CompoundAction> объекта (см. в разделе «Использование класса CompoundAction» этой статьи).
 
 ### <a name="example"></a>Пример  
 
-В следующем примере проверяется, что имеется один пробел после каждой запятой в выделенном фрагменте, если запятая, после чего появится вкладка или в конце строки. Конечные пробелы после удаления последней запятой в строку. См. в разделе «Использование класс CompoundAction» в этом разделе, чтобы увидеть, как этот метод вызывается из <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод.  
+В следующем примере проверяется, что имеется один пробел после каждой запятой в выделенном фрагменте, если запятая сопровождается вкладку или в конце строки. Конечные пробелы после удаления последней запятой в строку. См. в разделе «С помощью класса CompoundAction» в этом разделе, чтобы увидеть, как этот метод вызывается из <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> метод.  
 
 ```csharp 
 using Microsoft.VisualStudio.Package;  
@@ -157,11 +154,11 @@ namespace MyLanguagePackage
   
 ## <a name="using-the-compoundaction-class"></a>С помощью класса CompoundAction  
  
-Все переформатирование сделать часть кода должна существовать возможность отмены, в рамках одной операции. Это можно сделать с помощью <xref:Microsoft.VisualStudio.Package.CompoundAction> класса. Этот класс инкапсулирует набор операций изменения буфера текста в эксплуатацию одно изменение.  
+Все переформатирование сделать часть кода должна существовать возможность отмены, в рамках одной операции. Это можно сделать с помощью <xref:Microsoft.VisualStudio.Package.CompoundAction> класса. Этот класс заключает набор операций редактирования в текстовом буфере, в рамках операции одно изменение.  
   
 ### <a name="example"></a>Пример
 
-Ниже приведен пример использования <xref:Microsoft.VisualStudio.Package.CompoundAction> класса. См. пример в разделе «Реализация поддержки для форматирования» в этом разделе приведен пример `DoFormatting` метод.  
+Ниже приведен пример использования <xref:Microsoft.VisualStudio.Package.CompoundAction> класса. См. пример в разделе «Реализация поддержки для форматирования» в этом разделе Пример `DoFormatting` метод.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -187,4 +184,4 @@ namespace MyLanguagePackage
 
 ## <a name="see-also"></a>См. также
 
-[Возможности службы прежних версий языка](legacy-language-service-features1.md)
+[Функции языковой службы прежних версий](legacy-language-service-features1.md)

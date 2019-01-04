@@ -1,9 +1,6 @@
 ---
-title: IDebugDynamicFieldCOMPlus | Документы Microsoft
-ms.custom: ''
+title: IDebugDynamicFieldCOMPlus | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15773a1133721996f95f29c8ab035f18f401cbeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36e74c223428855468103dc3e2c7475a054c88c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895458"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-Представляет динамическое поле [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
+Представляет динамическое поле для [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,8 +31,8 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Возвращает тип, заданный тип-примитив.|  
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Возвращает тип, указанному токену.|  
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Возвращает тип, учитывая его тип-примитив.|  
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Возвращает тип, учитывая его маркер.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  

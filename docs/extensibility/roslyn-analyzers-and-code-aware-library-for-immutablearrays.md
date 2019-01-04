@@ -1,9 +1,6 @@
 ---
 title: Анализаторы Roslyn и кода-библиотека для immutablearrays с | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833372"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и кода-библиотека для immutablearrays с
 
@@ -301,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 Теперь можно нажать клавиши **F5** для выполнения вашей анализатора во втором экземпляре Visual Studio. Откройте проект, который мы использовали раньше. Теперь вы должны увидеть лампочки отображаются, где в выражение создания нового объекта для `ImmutableArray<int>`. Если нажать клавишу **Ctrl**+**.** (период) вы увидите исправить код, и вы увидите автоматически созданный код-различие предварительной версии, в «лампочку» пользовательского интерфейса. Roslyn создает это для вас.
 
-**Совет по PRO.** Если запустить второй экземпляр Visual Studio и вы не видите лампочку с исправления кода, то может потребоваться очистить кэш компонента Visual Studio. Очистка кэша вынуждает Visual Studio, чтобы вы пересмотрели компоненты, поэтому Visual Studio должен затем получить последнюю компонента. Во-первых завершение работы второй экземпляр Visual Studio. Затем в **Windows Explorer**, перейдите к *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. («15.0» меняется от версии к версии с помощью Visual Studio). Удалить этот подкаталог *ComponentModelCache*.
+**Совет по PRO.** Если запустить второй экземпляр Visual Studio, и вы не видите лампочку с исправления кода, может потребоваться очистить кэш компонента Visual Studio. Очистка кэша вынуждает Visual Studio, чтобы вы пересмотрели компоненты, поэтому Visual Studio должен затем получить последнюю компонента. Во-первых завершение работы второй экземпляр Visual Studio. Затем в **Windows Explorer**, перейдите к *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. («15.0» меняется от версии к версии с помощью Visual Studio). Удалить этот подкаталог *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Обсуждение видео и завершить проект кода
 

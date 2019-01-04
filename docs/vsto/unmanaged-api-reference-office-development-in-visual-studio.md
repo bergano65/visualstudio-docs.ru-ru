@@ -1,9 +1,6 @@
 ---
 title: Справочник по неуправляемым API (Разработка решений Office в Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac4dfa9dd697993cffb527be521bd04c4c087ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991166"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Справочник по неуправляемым API (Разработка решений Office в Visual Studio)
   Начиная с выпуска 2007 системы Microsoft Office, приложения Office используют [интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md) интерфейс для вызова надстройки VSTO загрузчика компонентом, который входит в состав [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Этот компонент используется для загрузки управляемых надстроек VSTO. Вы можете создать собственный компонент загрузчика надстроек VSTO, реализовав этот интерфейс.  
@@ -32,5 +29,3 @@ ms.locfileid: "35674310"
 ## <a name="in-this-section"></a>Содержание раздела  
  [Интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md)  
  COM-интерфейс, который можно реализовать для загрузки и выгрузки управляемых надстроек VSTO в приложениях Office.  
-  
-  

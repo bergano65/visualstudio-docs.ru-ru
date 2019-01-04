@@ -1,9 +1,6 @@
 ---
 title: Кэширование данных
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967259"
 ---
 # <a name="cache-data"></a>Кэширование данных
   Вы можете кэшировать объекты данных в настройке уровня документа, таким образом, чтобы данные может осуществляться автономно или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта, объект должен иметь тип данных, который соответствует определенным требованиям. Многие общие типы данных в .NET Framework этим требованиям, включая <xref:System.String>, <xref:System.Data.DataSet>, и <xref:System.Data.DataTable>.  
@@ -90,6 +87,4 @@ ms.locfileid: "53248128"
  [Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Практическое руководство. Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Практическое руководство. Кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  
+ [Пошаговое руководство: Создайте отношение основной/подробности, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  

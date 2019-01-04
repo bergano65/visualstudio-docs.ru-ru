@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Структурирование | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Структурирование | Документы Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827527"
 ---
-# <a name="walkthrough-outlining"></a>Пошаговое руководство. Структурирование
+# <a name="walkthrough-outlining"></a>Пошаговое руководство. структуризация
 Настройка компонентов на основе языка, такие как структурирование, определив типы областей текста, которые вы хотите развернуть или свернуть. Можно определения областей в контексте языковую службу, или определить тип имени собственного файла расширения и содержимого и применяются только к этому типу определение области или применить область определения в существующий тип содержимого (например, «text»). В этом пошаговом руководстве показано, как для определения и отображения областей структуры.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -43,7 +40,7 @@ ms.locfileid: "39566937"
   
 ### <a name="to-implement-an-outlining-tagger"></a>Для реализации структуры средство создания тегов  
   
-1.  Добавьте файл класса и назовите его `OutliningTagger`.  
+1.  Добавьте файл класса с именем `OutliningTagger`.  
   
 2.  Импортируйте следующие пространства имен.  
   

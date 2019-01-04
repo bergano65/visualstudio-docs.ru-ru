@@ -1,9 +1,6 @@
 ---
 title: Связывание точек останова | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988784"
 ---
 # <a name="bind-breakpoints"></a>Привязка точки останова
 Если пользователь устанавливает точку останова, возможно, нажав клавишу **F9**, среда IDE формирует запрос и запрашивает у сеанса отладки, чтобы создать точку останова.  

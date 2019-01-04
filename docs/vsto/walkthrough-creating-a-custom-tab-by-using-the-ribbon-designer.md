@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент'
-ms.custom: ''
+title: Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917596"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
   Конструктор лент позволяет создать настраиваемую вкладку, а затем добавить и расположить на ней элементы управления.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808876"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Создание проекта книги Excel  
   
--   Создайте проект книги Excel с именем **MyExcelRibbon**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Создайте проект книги Excel с именем **MyExcelRibbon**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новую книгу в конструкторе и добавляет **MyExcelRibbon** проект **обозревателе решений**.  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808876"
   
 -   Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
   
--   Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>См. также  
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Практическое: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Практическое: изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Практическое: Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
- [Практическое: Добавление элементов управления в представление backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Практическое руководство. Добавление элементов управления в представление backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Обзор объектной модели ленты](../vsto/ribbon-object-model-overview.md)  
-  
-  

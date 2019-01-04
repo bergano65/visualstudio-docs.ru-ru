@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921657"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство: Создание пакета SDK, с помощью C# или Visual Basic
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математической библиотеки с помощью Visual C# и затем пакета SDK в Visual Studio Extension (VSIX). Вы выполните следующие процедуры:  
   
 -   [Для создания компонента среды выполнения Windows SimpleMath](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ ms.locfileid: "49835163"
   
 22. В **обозревателе решений**, выберите **SimpleMath.winmd**.  
   
-23. В строке меню выберите **представление** > **свойства** (клавиатуры: выберите **F4** ключ).  
+23. В строке меню выберите **представление** > **свойства** (клавиатуры: Выберите **F4** ключ).  
   
 24. В **свойства** измените **действие при построении** свойства **содержимого**, а затем измените **включить в VSIX** свойства  **Значение true,**.  
   
@@ -242,6 +239,6 @@ ms.locfileid: "49835163"
     Вы успешно создали и использовать пакет SDK расширения.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Создание пакета SDK, с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Пошаговое руководство: Создание пакета SDK, с помощью JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
+ [Пошаговое руководство: Создайте пакет SDK, с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Пошаговое руководство: Создайте пакет SDK, с помощью JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [Создание пакета средств разработки программного обеспечения](../extensibility/creating-a-software-development-kit.md)

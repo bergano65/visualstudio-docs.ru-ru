@@ -1,9 +1,6 @@
 ---
 title: Элементы управления Windows Forms на общие сведения о документах Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902497"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Элементы управления Windows Forms на общие сведения о документах Office
   Элементы управления Windows Forms — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и работы с ними. В проектах уровня документа для Microsoft Office Excel и Microsoft Office Word можно добавить элементы управления Windows Forms в документ или книгу в проекте во время разработки, или можно программно добавить эти элементы управления во время выполнения. Можно программно добавить эти элементы управления в любой открытый документ или лист во время выполнения в надстройке VSTO для Excel или Word.  
   
- Дополнительные сведения см. в разделе [способ: добавить Windows Forms, элементы управления в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Дополнительные сведения см. в разделе [Как Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892784"
  В определенных условиях код не загружается и отображается только растровое изображение, например когда пользователь открывает книгу в режиме конструктора. Кроме того, если пользователь открывает книгу на компьютере, на котором не установлена среда выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , настройка для загрузки элементов управления не может быть запущена, и поэтому отображается только растровое изображение элемента управления. Всегда следует удалять личные сведения из элементов управления в книгах, прежде чем сохранить книгу и отправить ее другому пользователю, чтобы ваши личные сведения не были случайно раскрыты.  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Соответствие размера элемента управления размеру ячейки на листе Excel  
- Вы можете задать автоматическое изменение размера элемента управления при изменении размера его родительской ячейки. Дополнительные сведения см. в разделе [как: изменение размера элементов управления в ячейках листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
+ Вы можете задать автоматическое изменение размера элемента управления при изменении размера его родительской ячейки. Дополнительные сведения см. в разделе [Как Изменение размера элементов управления в ячейках листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Добавление компонентов, совместно используемых всеми листами  
  Вы можете добавлять компоненты, которые будут совместно использоваться всеми листами, такие как <xref:System.Data.DataSet>, не в сами листы, а в конструктор книги. Такой компонент будет отображаться в области компонентов.  
@@ -155,15 +152,13 @@ ms.locfileid: "49892784"
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Элементы управления Windows Forms](/dotnet/framework/winforms/controls/index)   
  [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [Практическое: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Практическое: изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Практическое: скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Практическое руководство. Изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Практическое руководство. Скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
  [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
- [Пошаговое руководство: Отображение текста в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
- [Пошаговое руководство: Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
+ [Пошаговое руководство: Отображаемый текст в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
+ [Пошаговое руководство: Отображаемый текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
  [Пошаговое руководство: Обновление диаграммы на листе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  

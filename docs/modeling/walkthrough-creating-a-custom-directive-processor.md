@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание пользовательского обработчика директив
+title: Пошаговое руководство. Создание пользовательского процессора директив
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951830"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского процессора директив
 
 *Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.
 
@@ -603,7 +602,7 @@ End Property
 
 4. Visual Basic, откройте **проекта** меню и выберите пункт **Свойства CustomDP**. На **приложения** на вкладке **корневое пространство имен**, удалите значение по умолчанию `CustomDP`.
 
-5. На **файл** меню, щелкните **сохранить все**.
+5. В меню **Файл** выберите команду **Сохранить все**.
 
 6. В меню **Сборка** выберите **Собрать решение**.
 

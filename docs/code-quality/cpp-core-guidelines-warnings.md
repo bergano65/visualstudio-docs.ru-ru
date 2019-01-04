@@ -7,17 +7,16 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926282"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>С помощью средства проверки C++ Core Guidelines
+# <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 
 C++ Core Guidelines представляют собой переносимый набор рекомендации, правила и рекомендации о написании кода на C++, созданные экспертами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил как часть его средств анализа кода для C++. Средства проверки рекомендация core устанавливаются по умолчанию в Visual Studio 2017 и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).
 
@@ -62,11 +61,11 @@ int main()
 
 В этом примере показаны некоторые из предупреждений, которые можно найти правила C++ Core Check:
 
-- C26494 — правило Type.5: всегда Инициализируйте объект.
+- C26494 — правило Type.5. Всегда Инициализируйте объект.
 
-- C26485 — правило Bounds.3: нет decay массива в указатель.
+- C26485 — правило Bounds.3. Нет отхода массива в указатель.
 
-- C26481 — правило Bounds.1: не используйте арифметику указателей. Взамен рекомендуется использовать `span`.
+- C26481 — правило Bounds.1. Не используйте арифметику указателей. Взамен рекомендуется использовать `span`.
 
 Если установлены и включены при компиляции кода C++ Core Check наборы правил анализа кода, первые два предупреждения выводятся, но третий подавляется. Ниже приведен результат сборки из образца кода.
 

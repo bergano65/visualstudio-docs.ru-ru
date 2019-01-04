@@ -1,9 +1,6 @@
 ---
-title: IDebugCodeContext2 | Документы Microsoft
-ms.custom: ''
+title: IDebugCodeContext2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4c744e5dc79c5e704e2cec6d83e39a4170bcd68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922972"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Этот интерфейс представляет начальную позицию инструкции кода. Для большинства архитектур во время выполнения в настоящее время контекст кода может рассматриваться как адрес в поток выполнения программы.  
@@ -28,25 +25,25 @@ ms.locfileid: "31103881"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugCodeContext2 : IDebugMemoryContext2  
+IDebugCodeContext2 : IDebugMemoryContext2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки реализует этот интерфейс для связи позицию инструкции кода место документа.  
+ Модуль отладки реализует этот интерфейс для связи позицию инструкции кода в место документа.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Для многих интерфейсов они возвращают этот интерфейс, чаще всего [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md). Он также широко используется с [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) интерфейс также как сведения о точках останова разрешения.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Методы на многих интерфейсов возвращают этот интерфейс, чаще всего [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md). Он также используется широко с [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) интерфейсе также как сведения о разрешении точки останова.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В дополнение к методам на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Возвращает контекст документа, соответствующий контексту активного кода.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Возвращает сведения о языке для этого контекста кода.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Получает контекст документа, соответствующий контекст active кода.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Получает сведения о языке для этого контекста кода.|  
   
 ## <a name="remarks"></a>Примечания  
- Основное различие между `IDebugCodeContext2` интерфейс и [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс является, `IDebugCodeContext2` всегда инструкции по левому краю. Это означает, что `IDebugCodeContext2` всегда указывает на начало инструкцию, тогда как `IDebugMemoryContext2` может указывать любой байт памяти в архитектуре во время выполнения. `IDebugCodeContext2` увеличивается на инструкции, а не размер основное хранилище (обычно байт).  
+ Основное различие между `IDebugCodeContext2` интерфейс и [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс является то, что `IDebugCodeContext2` всегда по краю инструкции. Это означает, что `IDebugCodeContext2` всегда указывает на начало инструкции, тогда как `IDebugMemoryContext2` может указывать на любой байт памяти в архитектуре во время выполнения. `IDebugCodeContext2` увеличивается по инструкции, а не по размеру основное хранилище (обычно в байтах).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

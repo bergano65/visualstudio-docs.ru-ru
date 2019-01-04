@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949340"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Как выполнить Разрешить выполнения кода программной части документов с ограниченными разрешениями
   Ограничение разрешений для документа или книги, можно использовать функции управления правами на доступ к данным (IRM) в Microsoft Office. По умолчанию кода программной части защищенный документ Microsoft Office Word или книгу Microsoft Office Excel не поддерживается для запуска. Значение по умолчанию можно изменить, чтобы ваши расширения управляемого кода можно получить доступ к объектной модели, и решение будет работать.  
@@ -56,5 +53,3 @@ ms.locfileid: "53648630"
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Безопасные решения Office](../vsto/securing-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
-  
-  

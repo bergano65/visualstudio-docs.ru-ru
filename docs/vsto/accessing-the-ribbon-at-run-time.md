@@ -1,8 +1,6 @@
 ---
 title: Доступ к ленте во время выполнения
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989494"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Доступ к ленте во время выполнения
   Вы можете написать код, чтобы отобразить, скрыть или изменить ленту и позволить пользователям запускать код из элементов управления в настраиваемой области задач, панели действий или области формы Outlook.  
@@ -63,6 +61,6 @@ ms.locfileid: "52304627"
  [XML-ленты](../vsto/ribbon-xml.md)   
  [Обзор объектной модели ленты](../vsto/ribbon-object-model-overview.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Пошаговое руководство: Обновление элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Пошаговое руководство: Обновления элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)  
