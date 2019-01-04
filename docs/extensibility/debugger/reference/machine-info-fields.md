@@ -1,9 +1,6 @@
 ---
 title: MACHINE_INFO_FIELDS | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MACHINE_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27feb8a47d28569d05afca46d2d773ba855976e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830184"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Указывает, какого рода информацию необходимо вернуть для конкретного компьютера.  
@@ -28,7 +25,7 @@ ms.locfileid: "49942508"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-enum enum_MACHINE_INFO_FIELDS {   
+enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  
@@ -37,7 +34,7 @@ typedef DWORD MACHINE_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
+public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  

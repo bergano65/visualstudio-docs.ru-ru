@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Создание страницы приложения | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание страницы приложения | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820229"
 ---
-# <a name="how-to-create-an-application-page"></a>Практическое: Создание страницы приложения
+# <a name="how-to-create-an-application-page"></a>Как выполнить Создание страницы приложения
   Можно создать веб-страницу ASP.NET, для одного или нескольких сайтов SharePoint. В SharePoint эти страницы называются страницами приложения. В отличие от страницы сайта приложения содержит код, выполняемый за страницей. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Чтобы создать страницу приложения  
@@ -55,4 +50,3 @@ ms.locfileid: "51296207"
 ## <a name="see-also"></a>См. также
  [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

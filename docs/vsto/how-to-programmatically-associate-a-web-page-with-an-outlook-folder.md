@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное связывание веб-страницы с папкой Outlook'
-ms.custom: ''
+title: Как выполнить Программное связывание веб-страницы с папкой Outlook
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb1ef525917288dc44609b899611db884da9073
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1950a75eeee6f99a03346dde53317b30824a35f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990663"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Практическое: программное связывание веб-страницы с папкой Outlook
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Как выполнить Программное связывание веб-страницы с папкой Outlook
   В этом примере проверяется для папки с именем `HtmlView` в Microsoft Office Outlook. Если папка не существует, код создает папку и присваивает ему веб-страницы. Если папка существует, код отображает содержимое папки.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "35256469"
   
 ## <a name="see-also"></a>См. также  
  [Работа с папками](../vsto/working-with-folders.md)   
- [Практическое: программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Практическое: программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  

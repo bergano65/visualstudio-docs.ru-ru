@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889440"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Выполняет программу отладчика. Поток возвращается для предоставления информации отладчика, в каком потоке пользователь просматривает при выполнении программы.  
@@ -46,11 +43,11 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>Примечания  
  Существует три разных способа, что отладчик можно возобновить выполнение после остановки:  
   
-- Выполнение: Отмена какой-либо предыдущий шаг и выполняется до следующей точки останова, и т. д.  
+- Выполните: Отмена любой предыдущем шаге и выполняется до следующей точки останова, и т. д.  
   
-- Шаг: Отмените все старые шаг и выполняться до завершения этого шага новые.  
+- Шаг. Отменить какой-либо шаг старый и запустить до завершения нового шага.  
   
-- По-прежнему: Запустите еще раз и оставить какой-либо шаг старый active.  
+- По-прежнему: Снова запустите и оставить все старые шаг active.  
   
   Поток, передаваемый `ExecuteOnThread` полезна при принятии решения о этап для отмены. Если вы не знаете потоке, выполнение отменяет все шаги. С помощью базы знаний потока достаточно для отмены шага в активном потоке.  
   

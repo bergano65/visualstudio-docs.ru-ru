@@ -1,9 +1,6 @@
 ---
 title: m_contingentProperties поле | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50676f799367c8a2aece7daacb270d8bb31738e9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 5778c9337984bc6eceb150cd78111ee8eb9037b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821929"
 ---
 # <a name="mcontingentproperties-field"></a>поле m_contingentProperties
 Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.  

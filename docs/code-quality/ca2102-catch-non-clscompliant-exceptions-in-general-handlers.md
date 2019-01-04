@@ -1,8 +1,7 @@
 ---
-title: 'CA2102: перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков'
+title: CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2102
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5af37daba4ce1791c5485d65734d1dd8c3d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de5bb494822b2faabce0bdf8a3b2a1e2e9a80b99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840399"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков
 
 |||
 |-|-|
@@ -86,7 +85,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1031: не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031: Не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>См. также
 

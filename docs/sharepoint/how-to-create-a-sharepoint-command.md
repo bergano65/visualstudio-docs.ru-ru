@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: создание команды SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание команды SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894854"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Практическое: создание команды SharePoint
+# <a name="how-to-create-a-sharepoint-command"></a>Как выполнить Создание команды SharePoint
   Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.  
   
  Дополнительные сведения о назначении команд SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -31,7 +28,7 @@ ms.locfileid: "37117141"
   
 1.  Создайте проект библиотеки классов, который имеет следующую конфигурацию:  
   
-    -   Предназначенный для .NET Framework 3.5. Дополнительные сведения о выборе целевой платформы, см. в разделе [как: Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+    -   Предназначенный для .NET Framework 3.5. Дополнительные сведения о выборе целевой платформы, см. в разделе [как: определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   Целевая платформа AnyCPU или x64 платформы. По умолчанию целевая платформа для проектов библиотек классов — AnyCPU. Дополнительные сведения о выборе целевой платформы см. в разделе [как: Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md).  
   
@@ -60,7 +57,7 @@ ms.locfileid: "37117141"
   
 4.  Применить <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> методу. Этот атрибут задает уникальный идентификатор для команды; Этот идентификатор не совпадает с именем метода.  
   
-     При вызове команды из расширения средств SharePoint необходимо указать тот же уникальный идентификатор. Дополнительные сведения см. в разделе [как: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).  
+     При вызове команды из расширения средств SharePoint необходимо указать тот же уникальный идентификатор. Дополнительные сведения см. в разделе [Как Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода демонстрируется команда SharePoint с идентификатором `Contoso.Commands.UpgradeSolution`. Эта команда использует интерфейсы API в серверной объектной модели для обновления до развернутого решения.  
@@ -82,6 +79,5 @@ ms.locfileid: "37117141"
   
 ## <a name="see-also"></a>См. также
  [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Практическое: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [Практическое руководство. Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

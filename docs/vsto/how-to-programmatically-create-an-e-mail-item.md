@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное создание элемента электронной почты'
-ms.custom: ''
+title: Как выполнить Программное создание элемента электронной почты
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5b665a5ed281cafaf19017d2cf65a6ab1dd80b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869727"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Практическое: программное создание элемента электронной почты
+# <a name="how-to-programmatically-create-an-email-item"></a>Как выполнить Программное создание элемента электронной почты
   В этом примере создает сообщение электронной почты в Microsoft Office Outlook.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,5 +32,3 @@ ms.locfileid: "35256602"
 ## <a name="see-also"></a>См. также  
  [Работа с элементами почты](../vsto/working-with-mail-items.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

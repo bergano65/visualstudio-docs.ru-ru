@@ -1,9 +1,6 @@
 ---
 title: Создание системы базового проекта, часть 2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967778"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Создание системы базового проекта, часть 2
 Первого пошагового руководства в этой серии [Создание системы базового проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), демонстрируется создание системы базового проекта. В этом пошаговом руководстве развития системы базового проекта шаблона Visual Studio, страницу свойств и другие функции. Прежде чем начать, необходимо выполнить первого пошагового руководства.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Сбросьте экспериментальный экземпляр Visual Studio SDK.  
   
-    На [!INCLUDE[win7](../debugger/includes/win7_md.md)]: на **запустить** меню Найти **средств Microsoft Visual Studio или Microsoft Visual Studio SDK/** папку, а затем выберите **Сброс Microsoft Visual Studio экспериментальный экземпляр экземпляр**.  
+    На [!INCLUDE[win7](../debugger/includes/win7_md.md)]: На **запустить** меню Найти **средств Microsoft Visual Studio или Microsoft Visual Studio SDK/** папку, а затем выберите **Сброс Microsoft Visual Studio экспериментального экземпляра**.  
   
-    В более поздних версиях Windows: на **запустить** введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
+    В более поздних версиях Windows: На **запустить** введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
   
 2. Появится окно командной строки. Когда появится слова **нажмите любую клавишу для продолжения**, нажмите кнопку **ввод**. После закрытия окна, откройте Visual Studio.  
   

@@ -1,8 +1,7 @@
 ---
-title: 'CA1039: списки обладают строгой типизацией'
+title: CA1039. Списки имеют строгие типы
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1039
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 710e02cdafb8712cff4aabeb0dd37f3e1a4d34b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848997"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: списки обладают строгой типизацией
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039. Списки имеют строгие типы
 
 |||
 |-|-|
@@ -68,9 +67,9 @@ ms.locfileid: "45551825"
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1035: в составе реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: Реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: перечислители должны быть строго типизированы](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038: Перечислители должны быть строго типизированы](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>См. также
 

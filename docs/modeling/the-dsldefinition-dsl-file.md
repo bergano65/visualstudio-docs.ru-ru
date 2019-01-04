@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869259"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 
@@ -97,7 +96,7 @@ ms.locfileid: "50967523"
 
 Система моникеров требует, чтобы одноуровневые элементы в дереве XML имели разные имена. В связи с этим при попытке сохранить определение доменного языка, содержащее, например, два класса с одинаковым именем, возникнут ошибки проверки. Обязательно исправьте такие ошибки с дублирующими именами, прежде чем сохранить файл DslDefinition.dsl, чтобы потом его можно было правильно перезагрузить.
 
-Каждый тип имеет свой собственный тип моникера: DomainClassMoniker, DomainRelationshipMoniker, и т. д.
+У каждого типа есть свой тип моникера: DomainClassMoniker, DomainRelationshipMoniker и т. д.
 
 ## <a name="types"></a>Типы
 
@@ -228,7 +227,7 @@ ms.locfileid: "50967523"
 
 Каждое отношение содержит роли источника и цели со следующими атрибутами.
 
--   `RolePlayer` Атрибут ссылается на класс домена из связанных экземпляров: OutPort для источника, InPort для цели.
+-   Атрибут `RolePlayer` создает ссылки на класс домена из связанных экземпляров: OutPort для источника, InPort для цели.
 
 -   У атрибута `Multiplicity` может быть четыре значения (ZeroMany, ZeroOne, One и OneMany). Он указывает количество связей данного отношения, которые могут быть связаны с одним исполнителем роли.
 

@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880865"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Практическое: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Как выполнить Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов
   Чтобы настроить пакет для развертывания компонентов и элементов SharePoint, можно использовать обозреватель пакетов. Компоненты и элементы проектов SharePoint можно настроить в WSP-файле.  
   
- Кроме того можно использовать конструктор пакетов для просмотра и изменения порядка для изменения порядка активации компонентов. Дополнительные сведения см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Кроме того можно использовать конструктор пакетов для просмотра и изменения порядка для изменения порядка активации компонентов. Дополнительные сведения см. в разделе [Как Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
 ## <a name="open-the-packaging-explorer"></a>Откройте обозреватель пакетов  
  Чтобы открыть обозреватель пакетов, можно использовать следующую процедуру, если решение Visual Studio содержит хотя бы один проект SharePoint. Кроме того обозреватель пакетов автоматически открывается при просмотре конструктор компонента или пакета. После того как вы закроете все конструкторы компонентов и пакетов, обозреватель пакетов также закрывает.  
@@ -69,4 +64,3 @@ ms.locfileid: "36755616"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

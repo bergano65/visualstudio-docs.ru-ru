@@ -1,9 +1,6 @@
 ---
 title: решения Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856860"
 ---
 # <a name="excel-solutions"></a>решения Excel
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Excel. Эти решения можно использовать для автоматизации Excel, расширения функциональных возможностей Excel и настройки пользовательского интерфейса Excel. Дополнительные сведения о различиях между настройками уровня документа и надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -111,7 +108,7 @@ ms.locfileid: "53647949"
 
 ### <a name="related-topics"></a>См. также  
 
-| Заголовок | Описание: |
+| Заголовок | Описание |
 | - | - |
 | [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md) | Содержит общие сведения об основных типах, предоставляемых объектной моделью Excel. |
 | [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md) | Содержит сведения о расширенных объектах (предоставляемых из [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), которые можно использовать в решениях Excel. |
@@ -122,4 +119,3 @@ ms.locfileid: "53647949"
 | [Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Демонстрирует способы добавления кнопки Windows Forms, <xref:Microsoft.Office.Tools.Excel.NamedRange>и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист во время выполнения с помощью надстройки VSTO. |
 | [Сведения о совместное редактирование и Add-ins](./understanding-coauthoring-and-addins.md) | Описывает изменения, которые может потребоваться внести свои решения в соответствии с совместной работе над книгой. |
 | [Excel 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Ссылки на статьи и справочную документацию о разработке решений Excel. Они не относятся к разработке решений Office в Visual Studio. |
-

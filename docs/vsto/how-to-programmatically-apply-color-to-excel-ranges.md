@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Программное применение цвета к диапазонам Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4cd8a9528b0bcd360fd00f700172899f1480d0ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868028"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Как выполнить Программное применение цвета к диапазонам Excel
   Чтобы применить цвет для текста в диапазон ячеек, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
@@ -60,5 +57,3 @@ ms.locfileid: "53802320"
  [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

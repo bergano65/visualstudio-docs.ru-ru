@@ -2,7 +2,6 @@
 title: Проверка системы в ходе разработки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869324"
 ---
 # <a name="validate-your-system-during-development"></a>Проверка системы в ходе разработки
 Visual Studio помогает привести в соответствие программное обеспечение, требования пользователей и архитектуру системы.
@@ -35,7 +34,7 @@ Visual Studio помогает привести в соответствие пр
 
 |**Категория**|**Ссылки**|
 |-|-|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: семь дуг: понимание кода и разработка систем в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: разработка архитектуры приложения с помощью схемы зависимостей](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN практические руководства: проверка кода с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Дуг: Понимание кода и разработка систем в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Создание архитектуры приложения с помощью схемы зависимостей](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN практические руководства: Проверка кода с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Блоги**|-   [DevOps от Майкрософт](https://blogs.msdn.microsoft.com/devops/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|

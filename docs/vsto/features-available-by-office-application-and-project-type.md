@@ -1,9 +1,6 @@
 ---
 title: Введите доступность функций по типам приложений и проектов
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986405"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Введите доступность функций по типам приложений и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:  
@@ -77,5 +74,3 @@ ms.locfileid: "53648156"
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
-  
-  

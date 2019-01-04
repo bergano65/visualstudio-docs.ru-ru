@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное открытие книг Excel'
-ms.custom: ''
+title: Как выполнить Программное открытие книг Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd8f6786bd2f7b54ce6b50f2493ebd5d45bba51e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860953"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Практическое: программное открытие книг Excel
+# <a name="how-to-programmatically-open-workbooks"></a>Как выполнить Программное открытие книг Excel
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Коллекции в Microsoft Office Excel позволяет работать со всеми открытыми книгами и открывать книги.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,12 +39,10 @@ ms.locfileid: "35257362"
   
 ## <a name="see-also"></a>См. также  
  [Работа с книгами](../vsto/working-with-workbooks.md)   
- [Практическое: программное открытие текстовых файлов как книг Excel](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Практическое: программное создание книг Excel](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Практическое: программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)   
- [Практическое: программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Практическое руководство. Программное открытие текстовых файлов как книг Excel](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [Практическое руководство. Программное создание книг Excel](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [Практическое руководство. Программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Практическое руководство. Программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

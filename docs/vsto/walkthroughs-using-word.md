@@ -1,9 +1,6 @@
 ---
 title: Пошаговое руководство с использованием Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822923"
 ---
 # <a name="walkthroughs-using-word"></a>Пошаговое руководство с использованием Word
   В следующих пошаговых руководствах показано, как можно использовать настройки на уровне документа и надстройки VSTO для автоматизации Microsoft Office Word, а также для настройки пользовательского интерфейса.  
@@ -39,13 +36,13 @@ ms.locfileid: "35258331"
  [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Показано, как использовать флажки в документе Word для изменения форматирования.  
   
- [Пошаговое руководство: Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Пошаговое руководство: Отображаемый текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Показано, как использовать кнопки и текстовые поля в документах Word.  
   
  [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Показано, как изменить стили диаграммы в документе Word с помощью переключателей в настройке на уровне документа.  
   
- [Пошаговое руководство: Создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
+ [Пошаговое руководство: Создать контекстное меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
  Показано, как создать контекстное меню, которое может использоваться для форматирования текста на закладке.  
   
  [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
@@ -75,5 +72,3 @@ ms.locfileid: "35258331"
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)  
-  
-  

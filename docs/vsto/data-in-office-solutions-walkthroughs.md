@@ -1,9 +1,6 @@
 ---
 title: Данные в пошаговых руководствах для решений Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: aff3712e9c2c3fdf68e575abf6c3a3bdafafcf53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829038"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Данные в пошаговых руководствах для решений Office
   В следующих пошаговых руководствах показано, как работать с данными в настройках уровня документа и надстройках VSTO для Microsoft Office Word и Microsoft Office Excel.  
@@ -70,5 +67,3 @@ ms.locfileid: "53647314"
  [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

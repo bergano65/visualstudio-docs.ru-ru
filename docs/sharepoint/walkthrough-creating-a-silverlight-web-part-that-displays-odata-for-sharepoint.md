@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание веб-части Silverlight, отображающей данные OData для SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint | Документация Майкрософт
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 658417d07fdc0031a6e018d332bdbdd1d7edb1a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905719"
 ---
-# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство: Создание веб-части Silverlight, отображающей данные OData для SharePoint
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint
   SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе [интерфейс REST SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) и [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -71,7 +68,7 @@ ms.locfileid: "51296116"
   
 #### <a name="to-customize-the-silverlight-application"></a>Чтобы настроить приложение Silverlight
   
-1.  Добавьте ссылку на сборку в System.Windows.Data в приложении Silverlight. Дополнительные сведения см. в разделе [как: Добавление и удаление ссылок с помощью Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Добавьте ссылку на сборку в System.Windows.Data в приложении Silverlight. Дополнительные сведения см. в разделе [Как Добавление и удаление ссылок с помощью диалогового окна "Добавление ссылок"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  В **обозревателе решений**, откройте контекстное меню для **ссылки**, а затем выберите **Add Service Reference**.  
   
@@ -235,5 +232,3 @@ ms.locfileid: "51296116"
 ## <a name="see-also"></a>См. также
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Развертывание, публикация и обновление пакетов решений SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
-  
-  

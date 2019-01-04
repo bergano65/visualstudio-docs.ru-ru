@@ -2,7 +2,6 @@
 title: Создание набора правил анализа пользовательского кода
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929926"
 ---
 # <a name="customize-a-rule-set"></a>Настройка набора правил
 
@@ -85,7 +84,7 @@ ms.locfileid: "51000220"
 
 - Если же правило перечисленных двух или более раз в набор с помощью правил *же* серьезность, может появиться следующее предупреждение в **список ошибок**:
 
-   **CA0063: не удалось загрузить файл набора правил "\[вашей] .ruleset" или один из его зависимых правило файлы набора. Файл не соответствует схеме наборов правил.**
+   **CA0063: Не удалось загрузить файл набора правил "\[вашей] .ruleset" или один из его зависимых правило файлы набора. Файл не соответствует схеме наборов правил.**
 
 - Если набор правил содержит набор с помощью правил дочерних **Include** тег и наборы правил дочерней и родительской обоих перечислены такие же правила, но с разными уровнями серьезности, то уровень серьезности в родительский набор правил имеет приоритет. Пример:
 

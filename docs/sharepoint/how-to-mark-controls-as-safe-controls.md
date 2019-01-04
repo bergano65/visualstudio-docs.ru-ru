@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Пометка элементов управления как безопасных элементов управления | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Пометка элементов управления как безопасных элементов управления | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989378"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Практическое: Пометка элементов управления как безопасных
+# <a name="how-to-mark-controls-as-safe-controls"></a>Как выполнить Пометка элементов управления как безопасных
   В целях безопасности SharePoint различает веб-элементы управления, которые были защищены от внедрение скриптов и веб-элементы управления, которые не являются. Защищенные элементы управления, или *безопасные элементы управления*, может осуществляться непроверенных пользователей. Вы можете пометить элементы управления как безопасные в свойстве записи безопасных элементов управления, элемент проекта SharePoint, либо в **конструктора пакетов** при добавлении сборки в пакет. Дополнительные сведения см. в разделе .  
   
  [Изменение параметров файла Web.config](http://go.microsoft.com/fwlink/?LinkId=178965) и [регистрации веб-часть сборки как безопасный элемент управления](http://go.microsoft.com/fwlink/?LinkId=171013).  
@@ -94,7 +89,7 @@ ms.locfileid: "37119814"
     |-------------------|-----------|  
     |Пространство имен|Полное пространство имен для элемента управления, такие как **BdcModelProject1.VisualWebPart1**.|  
     |Имя типа|Button1|  
-    |Assembly Name|Имя сборки со строгим, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, язык и региональные параметры = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
     |Safe|Очистить **безопасном** "флажок".|  
     |Безопасен в отношении скриптов|Оставьте **безопасен в отношении скриптов** снимите флажок.|  
   
@@ -111,7 +106,7 @@ ms.locfileid: "37119814"
     |-------------------|-----------|  
     |Пространство имен|Полное пространство имен для элемента управления, такие как **BdcModelProject1.VisualWebPart1**.|  
     |Имя типа|TextBox1|  
-    |Assembly Name|Имя сборки со строгим, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, язык и региональные параметры = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assembly Name|Строгое имя сборки, такие как: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
     |Safe|Выберите **безопасном** "флажок".|  
     |Безопасен в отношении скриптов|Выберите **безопасен в отношении скриптов** "флажок".|  
   
@@ -120,4 +115,3 @@ ms.locfileid: "37119814"
 ## <a name="see-also"></a>См. также
  [Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Пакет и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

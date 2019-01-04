@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Отображение вкладки разработчика на ленте'
-ms.custom: ''
+title: Как выполнить Отображение вкладки разработчика на ленте
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906804"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Практическое: Отображение вкладки разработчика на ленте
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Как выполнить Отображение вкладки разработчика на ленте
   Чтобы получить доступ к **разработчика** вкладку на ленте приложения Office, необходимо настроить его, чтобы отобразить эту вкладку, так как он не отображается по умолчанию. Например, необходимо отобразить эту вкладку, если требуется добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> в настройку уровня документа для Word.  
   
 > [!NOTE]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349628"
   
 ## <a name="see-also"></a>См. также  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)  
-  
-  

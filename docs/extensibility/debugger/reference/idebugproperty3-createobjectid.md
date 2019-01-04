@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::CreateObjectID | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::CreateObjectID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6fab6a75885dba8ddfd952ec3680e2c44b87312
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855826"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Создает уникальный идентификатор для этого свойства, чтобы убедиться, что он является уникальным среди всех остальных свойств.  
@@ -28,13 +25,13 @@ ms.locfileid: "49920980"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT CreateObjectID(  
+HRESULT CreateObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int CreateObjectID();  
+int CreateObjectID();  
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcess2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProcess2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77adecb0f3aef5a9c9d0fc8a05e6b44016dd9ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2a17c5c9f4121725ebfb9ca5a01f6209408c9a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879800"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
-Этот интерфейс представляет процесс, запущенный на порт. Если порт находится локальный порт, затем `IDebugProcess2` обычно представляет физического процесса на локальном компьютере.  
+Этот интерфейс представляет процесс, работающий с портом. Если порт локального порта, затем `IDebugProcess2` обычно представляет физического процесса на локальном компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,14 +29,14 @@ IDebugProcess2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется пользовательский порт поставщика для управления программами в группу. Этот интерфейс должен быть реализован поставщиком порта.  
+ Этот интерфейс реализуется поставщиком пользовательский порт, для управления программами как группу. Этот интерфейс должен реализовываться поставщика порта.  
   
- Модуль отладки реализует этот интерфейс, если он поддерживает запуск программы через [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+ Модуль отладки также реализует этот интерфейс, если он поддерживает запуск программы через [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс называется главным образом диспетчером сеанса отладки (SDM) для взаимодействия с группой программы, указанные в этом процессе.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс называется главным образом диспетчер отладки сеансов (SDM) для взаимодействия с группой программы, указанные в этом процессе.  
   
- Вызовите [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) или [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) получить этот интерфейс. Этот интерфейс также возвращается путем вызова `IDebugEngineLaunch2::LaunchSuspended`.  
+ Вызовите [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) или [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) для получения этого интерфейса. Этот интерфейс также возвращается путем вызова `IDebugEngineLaunch2::LaunchSuspended`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProcess2`.  
@@ -50,16 +47,16 @@ IDebugProcess2 : IUnknown
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Перечисляет программы, которые содержатся в этом процессе.|  
 |[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Возвращает заголовок, понятное имя или имя файла процесса.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Получает экземпляр этого процесса, запущенного на машины Server.|  
-|[Завершение](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Завершает процесс.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Завершает процесс.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Присоединяет к процессу.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Определяет, если SDM можно отсоединить процесс.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Отсоединяет отладчик от процесса.|  
-|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Получает идентификатор процесса системы.|  
-|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Возвращает глобальный уникальный идентификатор для данного процесса.|  
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [УСТАРЕЛО]|Возвращает имя сеанса, отлаживаемого процесса.<br /><br /> [НЕ РЕКОМЕНДУЕТСЯ. СЛЕДУЕТ ВСЕГДА ВОЗВРАЩАЮТ `E_NOTIMPL`.]|  
+|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Получает системный идентификатор процесса.|  
+|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Получает глобальный уникальный идентификатор для этого процесса.|  
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [УСТАРЕЛО]|Получает имя сеанса, который является отладка процесса.<br /><br /> [УСТАРЕЛО. СЛЕДУЕТ ВСЕГДА ВОЗВРАЩАЮТ `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Перечисляет потоков, выполняемых в процессе.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Запрашивает выполнение кода в этот процесс остановки следующей программы.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Возвращает номер порта, этот процесс.|  
+|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Получает порт, который выполняется этот процесс.|  
   
 ## <a name="remarks"></a>Примечания  
  `IDebugProcess2` Содержит один или несколько [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейсов.  

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramHost2::GetHostMachineName | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramHost2::GetHostMachineName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0bf5ef7a7503b9ded96c9b3361798bbbcbf87b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db80058c70d84782c817a6f3a1679496d6019f77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848195"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 Получает имя компьютера, на котором выполняется процесс, размещение этой программы.  
@@ -28,13 +25,13 @@ ms.locfileid: "49926973"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetHostMachineName(   
+HRESULT GetHostMachineName(   
    BSTR* pbstrHostMachineName  
 );  
 ```  
   
 ```csharp  
-int GetHostMachineName(   
+int GetHostMachineName(   
    out string pbstrHostMachineName  
 );  
 ```  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1019: необходимо определять методы доступа для аргументов атрибутов'
+title: CA1019. Определите методы доступа для аргументов атрибута
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1019
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e095c862edc5d7b68e1a6c55ada90a425b7e64f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e840ddacc327799d5f138c84476598b16c6e006a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920661"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: необходимо определять методы доступа для аргументов атрибутов
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019. Определите методы доступа для аргументов атрибута
 
 |||
 |-|-|
@@ -71,7 +70,7 @@ ms.locfileid: "45550457"
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1813: избегайте распечатанных атрибутов](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813: Избегайте распечатанных атрибутов](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>См. также
  [Атрибуты](/dotnet/standard/design-guidelines/attributes)

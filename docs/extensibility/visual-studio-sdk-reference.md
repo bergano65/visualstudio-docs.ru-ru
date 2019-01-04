@@ -1,9 +1,6 @@
 ---
 title: Справочник по пакету SDK для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, reference
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 8281a6d367ae4d6b51576160479ba492ebdf805a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943345"
 ---
 # <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
 Этот раздел содержит сведения о пространствах имен, связанные пространства имен и другие области интересов Visual Studio для разработчиков, использующих пакет SDK для Visual Studio.  
@@ -301,5 +298,5 @@ ms.locfileid: "46495691"
  Используется для MSBuild.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
+ [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)  
  Включает в себя документацию, примеры и код, чтобы помочь вам в разработке продуктов, которые интегрируются с Visual Studio.

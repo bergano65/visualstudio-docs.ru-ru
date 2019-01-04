@@ -1,9 +1,6 @@
 ---
 title: Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920622"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio
   В некоторых случаях может быть объект в системе проектов SharePoint, и вы хотите использовать функции соответствующего объекта в объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. В таких случаях можно использовать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> метод службы проектов SharePoint для преобразования объекта в другой объектной модели.
@@ -47,11 +44,10 @@ ms.locfileid: "36326183"
 
 -   Расширение системы проектов SharePoint, который содержит ссылку на *EnvDTE.dll* сборки. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Код, который регистрирует `projectService_ProjectAdded` метод для обработки <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Например, см. в разделе [как: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+-   Код, который регистрирует `projectService_ProjectAdded` метод для обработки <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Например, см. в разделе [как: Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Практическое: извлечение службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Практическое руководство. Получить службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-

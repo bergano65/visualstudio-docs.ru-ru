@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Локализация компонента | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Локализация компонента | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c143016aaec81c65c118923ff9513bb4607353dc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887682"
 ---
-# <a name="how-to-localize-a-feature"></a>Практическое: Локализация компонента
+# <a name="how-to-localize-a-feature"></a>Как выполнить Локализация компонента
   По умолчанию функция заголовки и описания используют жестко заданные строковые значения. Для локализации компонентов заголовок и описание, замените строки выражения, ссылающиеся на локализованные ресурсы.  
   
 ## <a name="localize-a-feature"></a>Локализация компонента  
@@ -64,7 +59,6 @@ ms.locfileid: "37119497"
   
 ## <a name="see-also"></a>См. также
  [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Способ: добавить файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
- [Практическое: Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Практическое: локализация кода](../sharepoint/how-to-localize-code.md)  
-  
+ [Практическое руководство. Добавьте файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
+ [Практическое руководство. Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Практическое руководство. Локализация кода](../sharepoint/how-to-localize-code.md)  

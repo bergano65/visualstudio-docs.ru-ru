@@ -1,9 +1,6 @@
 ---
 title: Регистрация вычислителя выражений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0650a437b4e703405ee9e8a06bfbbf9ac6c5a247
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 738bcc59d4ff6dafd5b4c928ec0e2996aad7e603
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845854"
 ---
 # <a name="register-an-expression-evaluator"></a>Регистрация вычислителя выражений
 > [!IMPORTANT]
@@ -113,7 +110,7 @@ namespace EEMC
   
 2.  Вызывается вспомогательная функция `SetEEMetric` для регистрации с помощью Visual Studio EE метрик, отображаемых в таблице ниже. Функция `SetEEMetric` и метрик, указанных ниже являются частью *dbgmetric.lib* библиотеки. См. в разделе [вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) подробные сведения.  
   
-    |Метрика|Описание|  
+    |Метрика|Описание:|  
     |------------|-----------------|  
     |`metricCLSID`|`CLSID` Класс фабрики EE|  
     |`metricName`|Имя EE как отображаемую строку|  

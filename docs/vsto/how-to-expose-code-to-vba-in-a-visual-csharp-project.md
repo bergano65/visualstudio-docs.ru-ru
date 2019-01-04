@@ -2,8 +2,6 @@
 title: Как выполнить Предоставить доступ к коду, коду VBA в C# проекта
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872587"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Как выполнить Предоставить доступ к коду, коду VBA в визуальном элементе C# проекта
   Вы можете предоставлять код в проект Visual C# в Visual Basic для приложений (VBA), если требуется два вида код для взаимодействия друг с другом.  
@@ -109,5 +107,3 @@ ms.locfileid: "53648513"
  [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
  [Пошаговое руководство: Вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Практическое руководство. Предоставить доступ к коду, коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Страницы свойств | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837892"
 ---
 # <a name="property-pages"></a>Страницы свойств
 Пользователи могут просматривать и изменять зависящие от конфигурации и - не зависят от свойств проекта с помощью страницы свойств. Объект **страницы свойств** кнопка включена в **свойства** окне или на панели инструментов обозревателя решений для объектов, которые предоставляют вид страницы свойств для выбранного объекта. Страницы свойств, создаваемые в среде и доступны для решения и проекты. Они тем не менее, также могут быть доступны для элементов проекта, которые делают использование свойств зависимости от конфигурации. Эта возможность может быть использовано, когда файлы проекта требуют параметров коммутатора компилятора было создано правильно.  

@@ -1,9 +1,6 @@
 ---
-title: IDebugCustomAttributeQuery2 | Документы Microsoft
-ms.custom: ''
+title: IDebugCustomAttributeQuery2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttributeQuery2
@@ -16,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7efc14b3d2bad9111e12328c29960ef991e8a4f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5c71c8a8820a76eb0f3784aaf899f05f48a76e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836378"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
-Определяет существование настраиваемого атрибута для этого поля и, если он существует, возвращает сведения об атрибутах.  
+Определяет наличие настраиваемого атрибута для этого поля и, если он существует, возвращает сведения об атрибутах.  
   
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) для поддержки настраиваемых атрибутов.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Используйте [QueryInterface](/cpp/atl/queryinterface) получить этот интерфейс из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейса.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы **IDebugCustomAttributeQuery** интерфейса.  
+ В следующей таблице показаны методы **IDebugCustomAttributeQuery** интерфейс.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Определяет, существует ли пользовательский атрибут по имени.|  
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Возвращает сведения об атрибуте для заданного настраиваемого атрибута.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Определяет, существует ли настраиваемый атрибут по имени.|  
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Возвращает сведения об атрибутах, для заданного настраиваемого атрибута.|  
   
  В дополнение к **IDebugCustomAttributeQuery** методы, `IDebugCustomAttributeQuery2` реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Возвращает перечислитель для всех настраиваемых атрибутов, вложенные в это поле.|  
+|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Возвращает перечислитель для все настраиваемые атрибуты, вложенные в это поле.|  
   
 ## <a name="remarks"></a>Примечания  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) метод может возвращать перечислитель для всех настраиваемых атрибутов, определенные для данного поля.  

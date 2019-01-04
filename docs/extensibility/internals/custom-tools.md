@@ -1,9 +1,6 @@
 ---
 title: Пользовательские инструменты | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306173876d0fd7c4d1da76d1b5432ecd5358c425
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834416"
 ---
 # <a name="custom-tools"></a>Пользовательские инструменты
 *Пользовательские средства* позволяют связать с элементом в проекте это средство и запускать это средство, при каждом сохранении файла. Некоторые пользовательские инструменты, иногда называют *генераторов одного файла*, часто используются для реализации преобразователей, создающих код на основе данных и наоборот. Например, создать генераторов одного файла [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] исходный код из *.settings* и *.resx* файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в *.settings* и *.resx* файлов. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также может поддерживать пользовательские инструменты.  
@@ -54,4 +51,4 @@ ms.locfileid: "39500243"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Расширения проектов](../../extensibility/extending-projects.md)  
- Описывает использование [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекты и решения для организации файлов кода и файлов ресурсов и способы реализации системы управления версиями.
+ Описывается использование проектов и решений [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для организации файлов кода и файлов ресурсов, а также реализация системы управления версиями.
