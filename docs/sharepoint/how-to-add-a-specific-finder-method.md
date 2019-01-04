@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление определенного метода Finder | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление определенного метода Finder | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913469"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Практическое: Добавление определенного метода Finder
+# <a name="how-to-add-a-specific-finder-method"></a>Как выполнить Добавление определенного метода Finder
   Может возвращать отдельного экземпляра сущности, создав *специальный метод поиска* метод. Служба бизнес-данным (BDC) выполняется конкретный метод поиска, когда пользователь выбирает сущности в веб-части бизнес-данных или внешний список. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-specific-finder-method"></a>Чтобы создать конкретный метод поиска
@@ -60,7 +55,7 @@ ms.locfileid: "49886493"
   
 4. Откройте Visual Studio **свойства** окна.  
   
-5. Настройте дескриптор типа значения, возвращаемого в качестве дескриптора типа сущности. Сведения о создании дескриптора типа сущности, см. в разделе [как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+5. Настройте дескриптор типа значения, возвращаемого в качестве дескриптора типа сущности. Сведения о создании дескриптора типа сущности, см. в разделе [как: Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Не нужно выполнить этот шаг, если вы добавили в метод Finder к сущности. Visual Studio использует дескриптор типа, определенного в методе поиска.  
@@ -92,11 +87,10 @@ ms.locfileid: "49886493"
   
 ## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  
-  
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  

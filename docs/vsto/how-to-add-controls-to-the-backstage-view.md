@@ -1,9 +1,6 @@
 ---
 title: 'Как выполнить Добавление элементов управления в представление Backstage '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924661"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Как выполнить Добавление элементов управления в представление Backstage
   Конструктор лент можно использовать для добавления элементов управления в меню, которое открывается при нажатии кнопки **файл** вкладки. При запуске приложения, элементы управления, добавляемые к **файл** вкладка отображается группа с именем **Add-ins**.  
@@ -71,5 +68,3 @@ ms.locfileid: "53647127"
  [XML-ленты](../vsto/ribbon-xml.md)   
  [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

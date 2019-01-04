@@ -1,9 +1,6 @@
 ---
 title: Параметры контекста | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, context parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d595bcc99cbacabd55c8e85775e1d691e917a41c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b69aa04583186e20df77f13f54499448b36eb29c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902623"
 ---
 # <a name="context-parameters"></a>Контекстные параметры
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), можно добавить к мастеров **новый проект**, **Добавление нового элемента**, или **добавить проект Sub** диалоговым окнам. Добавлена мастеров можно найти на **файл** меню или щелкнув правой кнопкой мыши проект в **обозревателе решений**. Интегрированной среды разработки параметры контекста передается в реализацию мастера. Параметры контекста определять состояние проекта при интегрированной среды разработки вызывает мастера.  
@@ -28,7 +25,7 @@ ms.locfileid: "49875844"
   
 ## <a name="context-parameters-for-new-project"></a>Контекстные параметры для нового проекта  
   
-| Параметр | Описание |
+| Параметр | Описание: |
 |-------------------------| - |
 | `WizardType` | Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardNewProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}. |
 | `ProjectName` | Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта. |
@@ -51,7 +48,7 @@ ms.locfileid: "49875844"
   
 ## <a name="context-parameters-for-add-sub-project"></a>Контекстные параметры для добавления проекта Sub  
   
-| Параметр | Описание |
+| Параметр | Описание: |
 |-------------------------| - |
 | `WizardType` | Зарегистрированный тип мастера (<xref:EnvDTE.Constants.vsWizardAddSubProject>) или GUID, который указывает тип мастера. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , идентификатор GUID для мастера реализуется {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}. |
 | `ProjectName` | Строка, являющаяся уникальным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имя проекта. |

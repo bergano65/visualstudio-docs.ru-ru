@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Настройка компьютера для разработки решений Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848994aec796b25c031e7367db10f67e95f09f79
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a55249c82f6404b0a7e60af95ae1c1b177a761d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899802"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Как выполнить Настройка компьютера для разработки решений Office
   Для настройки компьютера разработчика таким образом, чтобы было можно использовать Microsoft Office Developer Tools в Visual Studio, следуйте инструкциям в этой статье. Для выполнения следующих действий требуются права администратора на компьютере разработчика.  
@@ -41,5 +38,3 @@ ms.locfileid: "53648478"
  [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Практическое руководство. Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Практическое руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  

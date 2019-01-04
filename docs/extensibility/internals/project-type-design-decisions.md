@@ -1,9 +1,6 @@
 ---
 title: Проект проектные решения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bd6d2188b46093c5bfe18f9cabe985a953c000f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01bebdb26b4a3b89d9f9814c9428107d2cef6b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898600"
 ---
 # <a name="project-type-design-decisions"></a>Проектные решения для типа проекта
 Прежде чем создавать новый тип проекта, нужно принять несколько решений проектирования, касающиеся типа проекта. Необходимо решить, какие типы элементов, которые будет содержать проекты, как будут сохранены файлы проекта и какие обязательства модели будет использоваться.  

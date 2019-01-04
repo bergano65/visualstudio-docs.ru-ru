@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891580"
 ---
-# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint, Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.  
   
  В этом пошаговом руководстве вы создадите пользовательский шаг развертывания для обновления решений на сервере, на котором выполняется SharePoint. Visual Studio включает встроенные шаги развертывания для многих задач, таких отзыва или добавления решений, но она не включает шага развертывания для обновления решений. По умолчанию при развертывании решения SharePoint, Visual Studio сначала отзывает решение (если она уже развернута) и затем выполняет повторное развертывание всего решения. Дополнительные сведения о встроенные шаги развертывания, см. в разделе [развертывание, публикация и обновление пакетов решений SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
@@ -488,4 +485,3 @@ ms.locfileid: "51296155"
   
 ## <a name="see-also"></a>См. также
  [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

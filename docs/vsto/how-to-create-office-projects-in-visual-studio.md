@@ -3,8 +3,6 @@ title: Как выполнить Создание проектов Office в Vis
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902244"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Как выполнить Создание проектов Office в Visual Studio
   Можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для создания уровня документа и надстройками VSTO настроек для приложений Microsoft Office. Дополнительные сведения об этих типах проектов см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -165,5 +163,3 @@ ms.locfileid: "53647891"
  [Совместная разработка решений Office](../vsto/collaborative-development-of-office-solutions.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

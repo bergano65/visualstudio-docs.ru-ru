@@ -1,9 +1,6 @@
 ---
 title: Рекомендации по пользовательскому интерфейсу Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7488702bd19e8a0e8576d2cdc21e4350e8443b
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: e5c6fa30d97c309534486a0ded6bac5b019f56fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913547"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Руководство по работе пользователей Visual Studio
 Выполните Visual Studio руководство при разработке новых функций для Visual Studio. Эти рекомендации содержат сведения о распространенных моделей пользователя и шаблоны взаимодействия, конструкторы, новые пользовательские интерфейсы (UI) позволяют создавать пользовательские интерфейсы, которые являются простое и постоянное в среде разработки.  

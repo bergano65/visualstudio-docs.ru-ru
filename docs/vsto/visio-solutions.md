@@ -1,9 +1,6 @@
 ---
 title: Решения Visio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ce1de2fae3fe9b5543a779bb3cad95ef8e8b38e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885013"
 ---
 # <a name="visio-solutions"></a>Решения Visio
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Visio. Надстройки VSTO можно использовать для автоматизации Visio, расширения функциональных возможностей этого продукта и настройки его пользовательского интерфейса.  
   
  Дополнительные сведения о надстройках VSTO см. в разделе [приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md) и [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Если вы не знакомы с программированием Microsoft Office, см. в разделе [приступить к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Visio 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Область применения:** Сведения этого раздела применяются к проектам надстроек VSTO для Visio 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
@@ -72,11 +69,10 @@ ms.locfileid: "50671551"
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)   
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
  [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
  [Visio 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199017)  
-  

@@ -1,6 +1,5 @@
 ---
 title: Скрыт элемент (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eedcbca60ba0df886976a71780bb431a4fafbf9
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 008a46399808eae2921e51099814c7ead4675c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896491"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Элемент Hidden (шаблоны Visual Studio)
 Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно.  
@@ -45,7 +44,7 @@ ms.locfileid: "53561620"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   

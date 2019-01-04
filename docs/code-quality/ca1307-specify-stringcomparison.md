@@ -1,8 +1,7 @@
 ---
-title: 'CA1307: укажите StringComparison'
+title: CA1307. Указывайте StringComparison
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1307
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67f0d5152dcdef5ffa3abb76d92e68fd99f9b637
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1a4ac50cd189368bcc59aaff6b02b6f4b639a6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908935"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: укажите StringComparison
+# <a name="ca1307-specify-stringcomparison"></a>CA1307. Указывайте StringComparison
 
 |||
 |-|-|
@@ -49,4 +48,4 @@ ms.locfileid: "45550418"
 ## <a name="see-also"></a>См. также
 
 - [Предупреждения глобализации](../code-quality/globalization-warnings.md)
-- [CA1309: используйте порядковый параметр StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309: Используйте порядковый параметр StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
