@@ -1,9 +1,6 @@
 ---
 title: Настройка пользовательского интерфейса Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924831"
 ---
 # <a name="office-ui-customization"></a>Настройка пользовательского интерфейса Office
   Для настройки пользовательского интерфейса приложений Microsoft Office можно использовать Office Developer Tools в Visual Studio. В этой статье описываются возможности пользовательского интерфейса, которые можно настраивать:  
@@ -105,8 +102,6 @@ ms.locfileid: "49836772"
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
  [Использование элементов управления WPF в решениях Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Практическое: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Практическое: надстройка Показать ошибки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Пошаговое руководство: Сбор данных с использованием формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
