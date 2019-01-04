@@ -1,9 +1,6 @@
 ---
 title: Задачи отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1d2ae4b05398daa7c42be441cebecb304bf956
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: aa719871e075a5448fa2d351c5bd7950a833601a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900156"
 ---
 # <a name="debug-tasks"></a>Отладка задач
 Чтобы отладить программу, необходимо запустить и модуля отладки (DE) должен быть подключен к нему, иначе DE должен быть подключен к ранее запущенные программы. После присоединения DE необходимо создать определенные события запуска. В ответ отладочный пакет пытается выполнить привязку точки останова, заданные в интегрированной среде разработки. Когда программа достигает связанная точка останова, он прерывается и ждет ввод пользователя.  

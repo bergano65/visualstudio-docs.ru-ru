@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание расширения проекта SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание расширения проекта SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885904"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство: Создание расширения проекта SharePoint
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создавать расширения для проектов SharePoint. Можно использовать расширение проекта реагировать на события уровня проекта, например при проект добавлен, удален или переименован. Также можно добавлять пользовательские свойства или ответное действие при изменении значения свойства. В отличие от расширений элемента проекта расширения проекта нельзя связать с определенным типом проекта SharePoint. При создании расширения проекта, расширение загружается при открытии любого проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  В этом пошаговом руководстве вы создадите пользовательский логическое свойство, которое добавляется в любой проект SharePoint, созданные в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Если задано значение **True**, добавляет новое свойство или сопоставляет с ним папку ресурсов изображений в проект. Если задано значение **False**, папка "изображения" удаляется, если он существует. Дополнительные сведения см. в разделе [как: Добавление и удаление сопоставленных папок](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
@@ -205,8 +202,7 @@ ms.locfileid: "51295986"
   
 ## <a name="see-also"></a>См. также
  [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Практическое: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Практическое руководство. Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Связывать пользовательские данные с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  
