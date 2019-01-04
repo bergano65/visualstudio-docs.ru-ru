@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Предоставление и ограничение доступа к текущему выделению
+title: Как выполнить Предоставление и ограничение доступа к текущему выделению
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 799e6fdc50cad91ebd5ee5081b1d80fa296f5a7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947960"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Практическое руководство. Предоставление и ограничение доступа к текущему выделению
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Как выполнить Предоставление и ограничение доступа к текущему выделению
 
 При написании обработчика команды или жеста для вашего доменного языка, можно определить, какой элемент пользователь щелкнул правой кнопкой мыши. Можно также предотвратить некоторые формы или поля выбора. Например можно упорядочить, что когда пользователь щелкает значок декоратор, фигура, содержащая его вместо него будет выбран. Ограничение выбора таким образом уменьшает количество обработчиков, которые необходимо написать. Он также упрощает для пользователей, потому что можно щелкните в любом месте фигуры без необходимости избежать декоратора.
 
@@ -38,10 +37,10 @@ ms.locfileid: "49892926"
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Возвращает `true` Если диаграммы, выбранных в конструкторе моделей, в противном случае — `false`.|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в конструкторе моделей, в противном случае — `false`.|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Возвращает `true` если ровно один элемент, выбранный в активном окне; в противном случае `false`.|
-    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
-    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> |Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|
-    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> |Получает основной элемент выделения в конструкторе моделей.|
-    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> |Получает основной элемент выделения в активном окне.|
+    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
+    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|
+    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Получает основной элемент выделения в конструкторе моделей.|
+    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Получает основной элемент выделения в активном окне.|
 
 2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класс предоставляет доступ к <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> объект, представляющий окно конструктора моделей и предоставляет дополнительный доступ выбранных элементов в конструкторе моделей.
 

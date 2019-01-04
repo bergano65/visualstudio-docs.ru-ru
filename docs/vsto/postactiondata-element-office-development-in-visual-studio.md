@@ -1,9 +1,6 @@
 ---
 title: '&lt;postActionData&gt; элемент (Разработка решений Office в Visual Studio)'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b085e35971fa557d946f3967af4db81b577fff
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f27cf59f157c0760ea0c204a8c079dd4616777da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947274"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `postActionData` пространства имен `vstav3` указывает данные, связанные с действиями, выполняемыми после развертывания при установке решений Office.

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное снятие защиты с листов'
-ms.custom: ''
+title: Как выполнить Программное снятие защиты с листов
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956144"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Практическое: программное снятие защиты с листов
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Как выполнить Программное снятие защиты с листов
   Защиту с листа Microsoft Office Excel можно снять программными средствами.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35675315"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Практическое: программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Практическое руководство. Программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Практическое руководство. Программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

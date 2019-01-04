@@ -3,7 +3,6 @@ title: Конструктор рабочих процессов - констру
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946947"
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
 
@@ -57,7 +56,7 @@ ms.locfileid: "49839574"
 
 3.  Переходите от одного пункта коллекции <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> к другому и зарегистрируйте каждый аргумент.
 
-Результирующее исключение типа <xref:System.Activities.InvalidWorkflowException> со следующим сообщением: «InvokeMethod»: переменная, аргумент RuntimeArgument или DelegateArgument уже существует с именем «TargetObject». Имена должны быть уникальными в среде.
+Результирующее исключение типа <xref:System.Activities.InvalidWorkflowException> со следующим сообщением: «InvokeMethod»: Переменная, аргумент RuntimeArgument или DelegateArgument уже существует с именем «TargetObject». Имена должны быть уникальными в среде.
 
 Это ограничение не применяется к <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> и <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Они не аргументы рабочего процесса и поэтому не регистрируются в <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> коллекцию <xref:System.Activities.Statements.InvokeMethod> действия в <xref:System.Activities.Activity.CacheMetadata%2A> метод.
 

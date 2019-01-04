@@ -1,9 +1,6 @@
 ---
 title: Управление документами на сервере с помощью класса ServerDocument
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903254"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Управление документами на сервере с помощью класса ServerDocument
   Можно использовать `ServerDocument` в класс [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для управления несколькими аспектами настроек уровня документа, даже если не установлен Microsoft Office Word и Microsoft Office Excel. Можно выполнять следующие задачи:  
@@ -61,13 +58,12 @@ ms.locfileid: "49939141"
 |Задача|Используемый член|  
 |----------|-------------------|  
 |Чтобы определить, является ли документ является частью настройки уровня документа.|метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> ;|  
-|Чтобы программным способом добавить настройку в документ во время выполнения.<br /><br /> Дополнительные сведения см. в разделе [как: присоединение расширения управляемого кода в документы](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Один из <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> методы.|  
-|Чтобы программно удалить настройку из документа во время выполнения.<br /><br /> Дополнительные сведения см. в разделе [как: Удаление управляемого кода расширения из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> ;|  
+|Чтобы программным способом добавить настройку в документ во время выполнения.<br /><br /> Дополнительные сведения см. в разделе [Как Вложение расширений управляемого кода в документы](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Один из <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> методы.|  
+|Чтобы программно удалить настройку из документа во время выполнения.<br /><br /> Дополнительные сведения см. в разделе [Как Удаление управляемого кода расширения из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> ;|  
 |Чтобы получить URL-адрес манифеста развертывания, связанный с документом.|Свойство <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A>.|  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: присоединение расширения управляемого кода в документы](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Практическое: удаление расширения управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Практическое руководство. Вложение расширений управляемого кода в документы](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [Практическое руководство. Удаление расширений управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Кэширование данных](../vsto/caching-data.md)  
-  

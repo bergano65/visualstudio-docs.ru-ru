@@ -1,9 +1,6 @@
 ---
 title: Справочник по схеме элементов проектов SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b94856d4e00cd15f324040ccd49c90bb1be29a7d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895809"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Справочник по схеме для элемента проекта SharePoint
   Visual Studio использует схему элемента проекта SharePoint для проверки содержимого *.spdata* файлов. *.Spdata* файл определяет содержимое и поведение элемента проекта SharePoint. Дополнительные сведения о содержимом элементов проекта SharePoint, см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
@@ -40,7 +37,7 @@ ms.locfileid: "37119369"
   
  Корневой элемент — [ProjectItem](../sharepoint/projectitem-element.md) элемент. Ниже перечислены все элементы, определенные схемой.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.|  
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Представляет пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ/значение. Ключ и значение должны быть строками.|  
@@ -56,4 +53,3 @@ ms.locfileid: "37119369"
   
 ## <a name="see-also"></a>См. также
  [Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
-  

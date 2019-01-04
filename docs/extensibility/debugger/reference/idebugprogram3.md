@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram3 | Документы Microsoft
-ms.custom: ''
+title: IDebugProgram3 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5849617b1fb0d1446b847f9eb5137de06b685953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896618"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Этот интерфейс представляет программу, которая выполняется в процессе и расширяет [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) , предоставив сведения о потоке.  
+Этот интерфейс представляет собой программу, которая выполняется в процессе и расширяет [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) , предоставляя сведения о потоке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,15 +27,15 @@ IDebugProgram3 : IDebugProgram3
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) и поставщика пользовательский порт реализуют этот интерфейс для представления программы в процессе. Диспетчер сеансов отладки (SDM) также реализует этот интерфейс для предоставления сведений о [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+ Модуль отладки (DE) и поставщика пользовательского порта реализуют этот интерфейс для представления программы в процессе. Диспетчер отладки сеансов (SDM) также реализует этот интерфейс для предоставления сведений о [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) событие возвращает этот интерфейс для новой программы. Этот интерфейс также используется как параметр для многих методов на нескольких интерфейсах.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) событие возвращает этот интерфейс для новой программы. Этот интерфейс также используется в качестве параметра для многих методов на нескольких интерфейсах.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProgram3`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Выполняет программу. Поток возвращается для предоставления информации отладчика, в каком потоке пользователь просматривает при выполнении.|  
   
@@ -50,7 +47,7 @@ IDebugProgram3 : IDebugProgram3
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Примечания  
- Программы — это контейнер потока, в конкретной архитектуры во время выполнения, на выполнение, пока процесс состоит из одной или нескольких программ.  
+ Программы — это контейнер поток, выполняться в конкретной архитектуры среды выполнения, а процесс состоит из одной или нескольких программ.  
   
 ## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   

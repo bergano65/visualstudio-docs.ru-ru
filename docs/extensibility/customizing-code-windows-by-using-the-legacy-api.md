@@ -1,9 +1,6 @@
 ---
 title: Настройка кода Windows с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883043"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Настраивать код windows с помощью предыдущих версий API
 Окно кода является объектом окна документа, который поддерживает один или несколько представлений текста. Конкретные возможности окна кода зависят от соответствующего языка. В режиме многодокументного интерфейса (MDI) в окне кода является дочерняя рамка MDI.  
@@ -36,10 +33,10 @@ ms.locfileid: "39499358"
  `Customizing Code Windows by Using the Legacy API`  
  Объясняется, как настраивать код windows, с помощью предыдущих версий API.  
   
- [Практическое: размещения редактор в другом редакторе](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Практическое руководство. Узел редактор в другом редакторе](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  В этом разделе описано размещение второй редактор внутри окна редактора.  
   
- [Практическое: инициируют события, когда редактор теряет фокус](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Практическое руководство. Инициируют события, когда редактор теряет фокус](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Объясняется, как присоединить представления документов в объект данных документа.  
   
 ## <a name="see-also"></a>См. также  

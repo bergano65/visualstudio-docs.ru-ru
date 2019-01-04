@@ -1,9 +1,6 @@
 ---
 title: Функция SccGetParentProjectPath | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetParentProjectPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 828c72224655f404e88ac0913908ef293119ccb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935168"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Функция SccGetParentProjectPath
 Эта функция определяет родительский путь проекта для указанного проекта. Эта функция вызывается, когда пользователь добавляет в проект Visual Studio для системы управления версиями.  
@@ -60,7 +57,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Родительский путь проекта был успешно получен.|  
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать проект.|  

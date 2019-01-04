@@ -1,9 +1,6 @@
 ---
 title: Доступ к текстовый буфер с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915011"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Доступ к текстового буфера, используя старый API
 Текст отвечает за управление текстовыми потоками и сохраняемость файлов. Несмотря на то, что буфер можно считывать или записывать другие форматы, весь обычный обмен данными с буфером выполняется с помощью Юникода. В устаревшие API-интерфейсы текстовый буфер можно использовать одно - или двумерной системе координат для обозначения расположений символов в буфере.  

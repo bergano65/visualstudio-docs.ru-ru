@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное сохранение документов'
-ms.custom: ''
+title: Как выполнить Программное сохранение документов
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821598"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Практическое: программное сохранение документов
+# <a name="how-to-programmatically-save-documents"></a>Как выполнить Программное сохранение документов
   Существует несколько способов сохранения документов Microsoft Office Word. Можно сохранить документ без изменения имени документа или сохранении документа с новым именем.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883481"
 -   Чтобы сохранить документ с новым именем, каталог с именем *теста* должен существовать на диске C.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)   
- [Практическое: программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Практическое руководство. Программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)   
+ [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Ведущий элемент документа](../vsto/document-host-item.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

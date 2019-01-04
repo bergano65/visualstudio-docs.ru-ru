@@ -1,9 +1,6 @@
 ---
 title: С помощью Managed Package Framework для типа проекта (C#) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating with MPF
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1317fd507d1efaeb40fac0220c94d6ddf51b2c5
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 489537560d43246097d00121142d729be130ec9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961638"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Использование платформы управляемых пакетов для реализации типа проекта (C#)
 Managed Package Framework (MPF) предоставляет классы C# можно использовать или наследование для реализации собственных типов проектов. MPF реализует множество интерфейсов, Visual Studio ожидает, что тип проекта для предоставления, позволяя сосредоточиться на реализации особенностей типа проекта.  

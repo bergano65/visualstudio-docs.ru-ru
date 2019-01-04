@@ -1,9 +1,6 @@
 ---
-title: 'Как: открытие редакторов соответствующих проектов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Открытие редакторов соответствующих проектов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934418"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Как: открытие редакторов соответствующих проектов
+# <a name="how-to-open-project-specific-editors"></a>Как выполнить Открытие редакторов соответствующих проектов
 Если файл элемента, открываемый в проекте по своей природе привязана к конкретного редактора для этого проекта, проект необходимо открыть файл с помощью редактора определенного проекта. Файл не может быть делегирована вниз, чтобы механизм IDE для выбора редактора. Например вместо того чтобы использовать редактор стандартных растрового изображения, можно использовать этот параметр, редактор для конкретного проекта для указания в редакторе определенного точечного рисунка, который распознает сведения в файле, который является уникальным для проекта.  
   
  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод, если класс определит, что файл следует открывать с конкретного проекта. Дополнительные сведения см. в разделе [отображения файлов с помощью команды открытия файла](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Следуйте приведенным ниже рекомендациям для реализации `OpenItem` методу иметь проекта откройте файл с помощью редактора определенного проекта.  
@@ -56,5 +53,5 @@ ms.locfileid: "39636679"
   
 ## <a name="see-also"></a>См. также  
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Как: открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)   
- [Как: открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Практическое руководство. Стандартные редакторы](../extensibility/how-to-open-standard-editors.md)   
+ [Практическое руководство. Открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -1,9 +1,6 @@
 ---
 title: Работа с папками
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cbfe7f673554543a8d84558175b64063db9710f8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 843019c1e7c845f0cdf2dcae7e571bf9ed991b79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952619"
 ---
 # <a name="work-with-folders"></a>Работа с папками
   Класс <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> содержит методы и свойства, которые вы используете для доступа к папкам, их создания и настройки.  
   
 |Задача|Процедура|  
 |----------|---------------|  
-|Поиск строк в поле "Тема" сообщений в папке **Входящие**.|[Практическое: программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
-|Получите ссылку на папку и отобразите содержимое.|[Практическое: программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
-|Создайте папку, которая отображает веб-страницу в области предварительного просмотра.|[Практическое: программное связывание веб-страницы с папкой Outlook](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
-|Создайте папку с идентификатором текущего пользователя в имени.|[Практическое: программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
-|Переместите сообщения, соответствующие определенным условиям, в указанную папку.|[Практическое: программное перемещение элементов в Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
+|Поиск строк в поле "Тема" сообщений в папке **Входящие**.|[Практическое руководство. Программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
+|Получите ссылку на папку и отобразите содержимое.|[Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
+|Создайте папку, которая отображает веб-страницу в области предварительного просмотра.|[Практическое руководство. Программное связывание веб-страницы с папкой Outlook](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
+|Создайте папку с идентификатором текущего пользователя в имени.|[Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
+|Переместите сообщения, соответствующие определенным условиям, в указанную папку.|[Практическое руководство. Программное перемещение элементов в Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
   
  Дополнительные сведения о задачах и объектной модели Outlook см. в разделе [обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md).  
   
@@ -44,5 +41,3 @@ ms.locfileid: "35258402"
  [Работа с элементами почты](../vsto/working-with-mail-items.md)   
  [Работа с элементами календаря](../vsto/working-with-calendar-items.md)   
  [Решения Outlook](../vsto/outlook-solutions.md)  
-  
-  

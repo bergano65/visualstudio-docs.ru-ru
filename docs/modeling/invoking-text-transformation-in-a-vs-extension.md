@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915430"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
 Если вы разрабатываете расширение Visual Studio, такие как команды меню или [предметно ориентированного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службы текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
@@ -134,9 +133,9 @@ Sample text.
 ## <a name="reference-parameters"></a>Параметры ссылок
  Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
-## <a name="related-topics"></a>См. также
- Создание текста из предварительно обработанного текстового шаблона: вызовите `TransformText()` метод создаваемого класса. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="related-topics"></a>Связанные разделы
+ Создание текста из предварительно обработанного текстового шаблона Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Создание текста за пределами расширения Visual Studio: определить настраиваемый узел. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Создание текста за пределами расширения Visual Studio: Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Для создания исходного кода, который позже может быть компилируется и выполняется: вызовите `t4.PreprocessTemplate()` метод <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Создание исходного кода с возможностью последующей компиляции и выполнения Вызовите метод `t4.PreprocessTemplate()` типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

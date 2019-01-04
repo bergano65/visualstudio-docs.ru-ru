@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerField | Документы Microsoft
-ms.custom: ''
+title: IDebugPointerField | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947898"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Этот интерфейс представляет тип указателя.  
@@ -32,20 +29,20 @@ IDebugPointerField : IDebugContainerField
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Символ поставщик реализует этот интерфейс для представления указателя.  
+ Поставщик символов реализует этот интерфейс для представления указателя.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Используйте [QueryInterface](/cpp/atl/queryinterface) получить этот интерфейс из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_POINTER`.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_POINTER`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсах, этот интерфейс реализуется следующий метод:  
+ В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсы, этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описанием цели указателя.|  
   
 ## <a name="remarks"></a>Примечания  
- В C/C++ указатель может быть контейнер, если она используется с нотацию массива. Например, если `char *pString`, `pString` имеет тип указателя `char`. `pString[3]` имеет тип контейнера, который является указателем на `char` , ссылающегося на четвертый элемент контейнера.  
+ В C/C++ указатель может являться контейнером, если он используется с помощью нотации массива. Например, если `char *pString`, `pString` с типом указателя на `char`. `pString[3]` имеет тип контейнера, который представляет собой указатель на `char` , ссылающийся на четвертый элемент контейнера.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  

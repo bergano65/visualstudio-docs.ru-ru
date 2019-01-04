@@ -1,9 +1,6 @@
 ---
 title: Office - основные сборки взаимодействия
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926741"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -82,7 +79,7 @@ Visual Studio устанавливает эти копии сборок взаи
 
 Каждый шаблон проекта Office в Visual Studio предназначен для работы с одним приложением Microsoft Office. Чтобы использовать компоненты в нескольких приложениях Microsoft Office (или в приложении или компоненте, для которого нет проекта в Visual Studio) необходимо добавить ссылку на нужные основные сборки взаимодействия.  
   
-В большинстве случаев следует добавить ссылки на сборки, которые устанавливаются с Visual Studio в разделе `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` каталога. Эти версии сборок отображаются на **Framework** вкладке **диспетчер ссылок** диалоговое окно. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+В большинстве случаев следует добавить ссылки на сборки, которые устанавливаются с Visual Studio в разделе `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` каталога. Эти версии сборок отображаются на **Framework** вкладке **диспетчер ссылок** диалоговое окно. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Если вы установили и зарегистрировали основные сборки взаимодействия в глобальном кэше сборок, эти версии сборок отображаются на вкладке **COM** диалогового окна **Диспетчер ссылок** . Следует избегать добавления ссылок на эти версии сборок, так как имеются несколько проблем разработки, которые могут возникать при их использовании. Например, если вы зарегистрировали разные версии основных сборок взаимодействия в глобальном кэше сборок, проект будет автоматически привязан к версии сборки, которая была зарегистрирована последней, даже если вы укажете другую версию сборки на вкладке **COM** диалогового окна **Диспетчер ссылок** .  
   
@@ -113,7 +110,7 @@ Visual Studio устанавливает эти копии сборок взаи
 |Библиотека объектов Microsoft Publisher 14.0<br /><br /> Библиотека объектов Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|  
 |Справочная библиотека веб-объектов Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Справочная библиотека объектов страницы Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft библиотеки типов на смарт-теги 2.0 **Примечание:** смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 библиотеки типов **Примечание:**  Смарт-теги объявлены нерекомендуемыми в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Библиотека типов Microsoft Visio 14.0<br /><br /> Библиотека типов Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|  
 |Библиотека типов для сохранения веб-страниц Microsoft Visio 14.0<br /><br /> Библиотека типов для сохранения веб-страниц Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Библиотека типов элементов управления рисования Microsoft Visio 14.0<br /><br /> Библиотека типов элементов управления рисования Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Visual Studio устанавливает эти копии сборок взаи
 
 Например, когда решение, которое ссылается на сборку [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , выполняется на компьютере с версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] той же основной сборки взаимодействия, сборка переадресации привязки дает среде выполнения [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] указание загрузить версию [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] основной сборки взаимодействия. 
 
-Дополнительные сведения см. в разделе [как: Включение и отключение автоматического перенаправления привязки](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Дополнительные сведения см. в разделе [Как Включение и отключение автоматического перенаправления привязки](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>См. также  
 
-- [Практическое: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)   
 - [Решения InfoPath](../vsto/infopath-solutions.md)   
 - [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Visual Studio устанавливает эти копии сборок взаи
 - [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
 - [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
 - [Общий справочник &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

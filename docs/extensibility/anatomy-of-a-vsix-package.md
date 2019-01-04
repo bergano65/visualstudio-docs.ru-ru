@@ -1,9 +1,6 @@
 ---
 title: Составляющие пакета VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921488"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является *.vsix* файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными Visual Studio использует для классификации и установить расширения. Эти метаданные содержатся в манифесте VSIX и *[Content_Types] .xml* файл. Пакет VSIX также может содержать один или несколько *Extension.vsixlangpack* файлы для обеспечения локализованный текст программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  
@@ -60,4 +57,4 @@ ms.locfileid: "49937737"
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* файл определяет типы файлов в развернутом представлении *.vsix* файл. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. в разделе [структура файл [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  
   
- Объект *[Content_Types] .xml* файл необходим в стандарте Open Packaging Conventions (OPC). Дополнительные сведения об OPC см. в разделе [OPC: новый стандарт упаковки данных](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) на сайте MSDN.
+ Объект *[Content_Types] .xml* файл необходим в стандарте Open Packaging Conventions (OPC). Дополнительные сведения об OPC см. в разделе [OPC: Новый стандарт упаковки данных](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) на сайте MSDN.

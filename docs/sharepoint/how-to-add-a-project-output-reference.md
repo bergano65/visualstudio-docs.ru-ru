@@ -1,13 +1,8 @@
 ---
-title: 'Способ: добавить выходную ссылку проекта | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавить выходную ссылку проекта | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897298"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Способ: добавить выходную ссылку проекта
+# <a name="how-to-add-a-project-output-reference"></a>Как выполнить Добавить ссылку на выходные данные проекта
   Для развертывания сборки проекта вне SharePoint (или XAP-файлы в проектах Silverlight) в SharePoint, их необходимо добавьте как ссылку на выходные данные проекта.  
   
  Этот процесс создает зависимость сборки решения между двумя проектами. Проекты, связанные с Выходные ссылки проекта построены до построения и развертывания проектов SharePoint.  
@@ -47,7 +42,5 @@ ms.locfileid: "36755481"
   
 ## <a name="see-also"></a>См. также
  [Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Практическое: Пометка элементов управления как безопасных](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [Практическое руководство. Пометка элементов управления как безопасных](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

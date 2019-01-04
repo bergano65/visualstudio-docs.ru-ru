@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Создание пользовательских компонентов и правилам проверки пакета для решений SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание пользовательских компонентов и правилам проверки пакета для решений SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939232"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Практическое: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Как выполнить Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint
   Можно создать пользовательские правила проверки для проверки пакета решения, созданные Visual Studio. Можно выполнить полную проверку на весь компонент или пакет, выбрав **Validate** в контекстном меню, пакета или компонента в **PackagingExplorer**. Частичная проверка выполняется при добавлении нового проекта SharePonit или функции в проект, чтобы определить, пакета или компонента будет находиться в допустимом состоянии.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Чтобы создать настраиваемое правило проверки пакета  
@@ -62,4 +59,3 @@ ms.locfileid: "37119834"
   
 ## <a name="see-also"></a>См. также
  [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

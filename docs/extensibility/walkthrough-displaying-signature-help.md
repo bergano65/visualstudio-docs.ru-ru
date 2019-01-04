@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отображение справки сигнатуры | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение справки сигнатуры | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986730"
 ---
-# <a name="walkthrough-display-signature-help"></a>Пошаговое руководство: Отображение справки сигнатуры
+# <a name="walkthrough-display-signature-help"></a>Пошаговое руководство. Отобразить справку по сигнатурам
 Справка по сигнатурам (также известный как *сведения о параметрах*) отображается подпись метода во всплывающей подсказке, когда пользователь вводит символ начала списка параметра (обычно открывающая скобка). Как параметр и параметр разделитель (обычно запятой) типизированы, подсказка обновляется для отображения следующего параметра полужирным шрифтом. Справка по сигнатурам можно определить одним из следующих способов: в контексте языковой службы, определите расширение имени файла и тип содержимого и отображения справки сигнатуры для только этого типа либо отображения справки сигнатуры для существующих типов (например, «text»). В этом пошаговом руководстве показано, как для отображения справки сигнатуры для типа содержимого «text».  
   
  Справка по сигнатурам обычно запускается, введя определенный символ, например, "(" (открывающая скобка), а закрыто, введя другой символ, например, «)» (закрывающая круглая скобка). Возможности IntelliSense, которые запускаются, введя символ может быть реализован с помощью обработчика команды клавиш ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс) и поставщика обработчик, который реализует <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> интерфейс. Чтобы создать источник Справка по сигнатурам, который является списком подписей, которые участвуют в Справка по сигнатурам, реализовать <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> интерфейс и поставщик источника, который запускает <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> интерфейс. Какие поставщики являются составные части Managed Extensibility Framework (MEF) и несете ответственность за экспортирование классов источника и контроллера и импорта служб и брокеров, например, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, который позволяет перейти в текстовом буфере и <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, который запускает сеанс справки сигнатуры.  
@@ -57,7 +54,7 @@ ms.locfileid: "39498911"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Для реализации Справка по сигнатурам сигнатуры и параметры  
   
-1.  Добавьте файл класса и назовите его `SignatureHelpSource`.  
+1.  Добавьте файл класса с именем `SignatureHelpSource`.  
   
 2.  Добавьте следующие импорты.  
   

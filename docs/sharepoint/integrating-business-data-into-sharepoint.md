@@ -1,13 +1,8 @@
 ---
 title: Интеграция бизнес-данных в SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934444"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
   Вы можете интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать из внутренних серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или веб-службы. Пользователей можно просмотреть, добавить, обновить или удалить бизнес-данных с помощью внешних списков или деловых данных веб-частей в SharePoint.  Пользователи также могут работать этот данным в автономном режиме в приложении Microsoft Office, например Microsoft Outlook. Дополнительные сведения см. в разделе [где можно указать внешние данные](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -61,4 +56,3 @@ ms.locfileid: "37119919"
 |[Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)|Показано, как создать новую модель или импорт модели, экспортированные из SharePoint.|  
 |[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)|В этой статье описывается разработка элементы модели с помощью средств разработки Visual Studio.|  
 |[Когда следует использовать SharePoint Designer vs. Visual Studio при построении решений с помощью BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Поможет вам решить, следует ли использовать Visual Studio или использовать SharePoint Designer для создания модели для BDC.|  
-  

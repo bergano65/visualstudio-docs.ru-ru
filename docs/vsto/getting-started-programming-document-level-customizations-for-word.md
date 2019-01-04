@@ -1,9 +1,6 @@
 ---
 title: Приступить к программированию настроек на уровне документа для Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904803"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Приступить к программированию настроек на уровне документа для Word
   Если вы начальном этапе создания настроек уровня документа для Microsoft Office Word с помощью Visual Studio, вот что вам необходимо знать.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648417"
  [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

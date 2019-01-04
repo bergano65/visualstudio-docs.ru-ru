@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Добавление элементов управления Windows forms в документы Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ba2d1f46a16724f120d3e3ac788dfc8f2e290474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899919"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Как выполнить Добавление элементов управления Windows Forms в документы Office
   Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавить элементы управления в настройках уровня документа и надстроек VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбрать из списка параметров.  
@@ -141,4 +138,3 @@ ms.locfileid: "53647862"
  [Практическое руководство. Изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

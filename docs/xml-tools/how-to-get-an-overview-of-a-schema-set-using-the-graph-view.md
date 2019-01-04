@@ -1,8 +1,7 @@
 ---
-title: 'Практическое: Ознакомьтесь с обзором набор схем, с помощью представления диаграммы в XML-схемы конструктора'
+title: Как выполнить Ознакомьтесь с обзором набор схем, с помощью представления диаграммы в XML-схемы конструктора
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948840"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Практическое: получить общие сведения о наборе схем с использованием представления графика
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Как выполнить Получить общие сведения о наборе схем с использованием представления графика
 
 В этом разделе описывается использование [представление графика](../xml-tools/graph-view.md) для просмотра общего представления узлов в наборе схем и связях между узлами.
 

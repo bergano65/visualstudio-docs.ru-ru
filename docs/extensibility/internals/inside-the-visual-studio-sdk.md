@@ -1,9 +1,6 @@
 ---
 title: Внутри Visual Studio SDK | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821149"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 В этом разделе содержатся подробные сведения о расширениях Visual Studio, включая архитектуры Visual Studio, компоненты, службы, схемы, служебные программы и т. п.
@@ -31,13 +28,13 @@ ms.locfileid: "36757046"
  ![График архитектуры среды](../../extensibility/internals/media/environment.gif "среды") обобщить схема архитектуры в Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
- Пакеты VSPackage — это программные модули, которые образуют и расширяют среду Visual Studio с помощью элементов пользовательского интерфейса, служб, проектов, редакторов и конструкторов. Пакеты VSPackage являются центральным элементом архитектуры Visual Studio. Дополнительные сведения см. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md).
+ Пакеты VSPackage — это программные модули, которые образуют и расширяют среду Visual Studio с помощью элементов пользовательского интерфейса, служб, проектов, редакторов и конструкторов. Пакеты VSPackage являются центральным элементом архитектуры Visual Studio. Дополнительные сведения см. в разделе [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  Оболочка Visual Studio предоставляет основные функциональные возможности и поддержки взаимодействия между его компонент пакетов VSPackage и расширения MEF. Дополнительные сведения см. в разделе [оболочки Visual Studio](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Руководство по работе пользователей
- Если вы планируете проектировать новые функции для Visual Studio, вы должны взгляните на эти рекомендации для разработки и удобства использования советы: [по работе пользователей Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Если вы планируете проектировать новые функции для Visual Studio, вы должны взгляните на эти рекомендации для разработки и удобства использования советы: [Рекомендации по пользовательскому интерфейсу Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Команды
  Команды — это функции, которые выполняют задачи, например печать документа, обновление представления или создание нового файла.
@@ -103,7 +100,7 @@ ms.locfileid: "36757046"
  Дополнительные сведения см. в разделе [добавление проектов и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Свойства и параметры
- **Свойства** окне отображаются свойства одного или нескольких элементов: [расширение свойства](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборы параметров, которые относятся к конкретный компонент, например Программирование языка или VSPackage: [параметры и страницы параметров](../../extensibility/internals/options-and-options-pages.md). Функции, обычно связанные с пользовательского интерфейса, которые можно импортировать и экспортировать следующие значения: [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).
+ **Свойства** окне отображаются свойства одного или нескольких элементов: [Расширение свойств](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборы параметров, которые относятся к конкретный компонент, например на языке программирования или VSPackage: [Параметры и страницы параметров](../../extensibility/internals/options-and-options-pages.md). Ниже перечислены функции, обычно связанные с пользовательского интерфейса, которые можно импортировать и экспортировать параметры. [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Службы Visual Studio
  Служба предоставляет ряд интерфейсов для компонентов для использования. Visual Studio предоставляет набор служб, которые могут использоваться все компоненты, включая расширения. Например службы Visual Studio позволяют окна инструментов, чтобы быть показано или скрыто динамически, включить доступ к справке, строка состояния или события пользовательского интерфейса. В редакторе Visual Studio также предоставляет службы, которые можно импортировать, расширения редактора. Дополнительные сведения см. в разделе [использование и предоставление службы](../../extensibility/using-and-providing-services.md).

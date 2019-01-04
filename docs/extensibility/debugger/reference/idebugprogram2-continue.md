@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Continue | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Continue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e776c91e68e4689c1cc6c54f17397eca495b493
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938112"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Продолжает выполнение программы в остановленном состоянии. Сохраняется все предыдущие состояния выполнения (например, шаг), и начнется снова выполнение программы.  
@@ -31,13 +28,13 @@ ms.locfileid: "49832662"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT Continue(   
+HRESULT Continue(   
    IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Continue(   
+int Continue(   
    IDebugThread2 pThread  
 );  
 ```  

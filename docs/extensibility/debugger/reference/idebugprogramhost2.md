@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramHost2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProgramHost2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramHost2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0161e2dd978b82eb5b09780a3fc07c25d15667
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb56da6abb76053a3dd18989695b42b0f167c3e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903267"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
-Этот интерфейс предоставляет сведения об узле (process) — о программе.  
+Этот интерфейс предоставляет сведения об узле (процесс), о программе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +31,7 @@ IDebugProgramHost2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Модуль отладки реализует этот интерфейс на один и тот же объект как [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс для предоставления сведений о процесс размещения. Это необязательный интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgram2` интерфейс для получения этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
@@ -42,9 +39,9 @@ IDebugProgramHost2 : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Возвращает заголовок, понятное имя или имя файла процесса размещения данной программы.|  
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Получает идентификатор процесса процесса размещения данной программы.|  
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Возвращает имя компьютера, на котором выполняется процесс размещения, данной программы.|  
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Возвращает заголовок, понятное имя или имя файла, размещающего процесса данной программы.|  
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Получает идентификатор процесса, размещающего процесса данной программы.|  
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Получает имя компьютера, на которой выполняется процесс размещения данной программы.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

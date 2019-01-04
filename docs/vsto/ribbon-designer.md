@@ -1,9 +1,6 @@
 ---
 title: Конструктор лент
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160cde8b4a2e6034cb9c5ced7c6a13d57c1b546c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928871"
 ---
 # <a name="ribbon-designer"></a>Конструктор лент
   Конструктор лент — основа для визуальной разработки. Используйте конструктор лент для добавления пользовательских вкладок, групп и элементов управления на ленту приложения Microsoft Office.
@@ -141,7 +138,7 @@ ms.locfileid: "53804803"
 ###  <a name="AddControlsToGroups"></a> Добавление элементов управления в группы
  Добавьте один или несколько элементов управления в группу. В следующей таблице описаны каждого элемента управления.
 
-|Элемент управления|Описание:|
+|Элемент управления|Описание|
 |-------------|-----------------|
 |**Box**|Контейнер, упорядочивающий элементы управления в группе. Любой элемент управления можно добавить в поле, за исключением разделителя, группы или вкладки. Поле может быть горизонтальную или вертикальную.|
 |**Button**|Кнопка, запускающая действие. Кнопки можно добавить в группу, группу кнопок, стрелку раскрывающегося списка, коллекции, меню или разворачивающуюся кнопку.|

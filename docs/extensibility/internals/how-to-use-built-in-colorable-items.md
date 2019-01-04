@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: использование встроенных цветных элементов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Использование встроенных цветных элементов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0884ecd265522b2b0f2a222e12cb01c34c7e8c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947300"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Практическое: использование встроенных цветных элементов
+# <a name="how-to-use-built-in-colorable-items"></a>Как выполнить Использование встроенных цветных элементов
 Прежде чем использовать встроенные цветные элементы, необходимо сначала сообщается в интегрированной среде разработки (IDE), вы не предоставляли собственных пользовательских цветных элементов, которые в данном случае было бы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектов. Для этого параметру реестра для языковой службы.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Чтобы использовать встроенные цветные элементы  

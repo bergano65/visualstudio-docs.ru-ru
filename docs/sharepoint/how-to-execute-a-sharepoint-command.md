@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: выполнение команды SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Выполнение команды SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953122"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>Практическое: выполнение команды SharePoint
+# <a name="how-to-execute-a-sharepoint-command"></a>Как выполнить Выполнение команды SharePoint
   Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. После определения команды и развернуть его с помощью расширения средств SharePoint, расширение можно выполнить команду для вызова объектной модели SharePoint server. Чтобы выполнить команду, используйте один из методов ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.  
   
  Дополнительные сведения о назначении команд SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -55,7 +52,7 @@ ms.locfileid: "37119914"
     |Команда имеет два параметра и возвращаемого значения.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода демонстрируется использование <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> перегрузки для вызова `Contoso.Commands.UpgradeSolution` команду, которая описана в [как: создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ В следующем примере кода демонстрируется использование <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> перегрузки для вызова `Contoso.Commands.UpgradeSolution` команду, которая описана в [как: Создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
@@ -75,6 +72,5 @@ ms.locfileid: "37119914"
   
 ## <a name="see-also"></a>См. также
  [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Практическое: создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [Практическое руководство. Создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

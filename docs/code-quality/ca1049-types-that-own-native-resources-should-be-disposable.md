@@ -1,8 +1,7 @@
 ---
-title: 'CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми'
+title: CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1049
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9a2eeb032951df86d38075220c14fe98488edef
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fc947358aa4aaf3b9d4bbe646d99e289fa383a06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834754"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми
 
 |||
 |-|-|
@@ -58,11 +57,11 @@ ms.locfileid: "45552000"
  [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: Вызовите GC. KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: Вызовите GC. SuppressFinalize правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216: Высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
  [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

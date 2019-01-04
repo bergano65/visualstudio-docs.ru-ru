@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 332d7599543efbe5ee6e15ccc89d5fce595e5341
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ee9f574b1d0db7a90b2d056456ccb29db0604e1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846104"
 ---
 # <a name="customizing-element-tools"></a>Настройка средств элемента
 В некоторых определениях DSL единую концепцию представляют группу элементов. Например при создании модели, в котором компонент имеет фиксированный набор портов, всегда требуется порты, которые нужно создать в то же время, как их родительского компонента. Таким образом необходимо настроить средство создания элемента, таким образом, чтобы он создает группу элементов, вместо одного. Для этого можно настроить способ инициализации средства создания элемента.

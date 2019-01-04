@@ -1,9 +1,6 @@
 ---
 title: Обновление и перенос решений Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988369"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Обновление и перенос решений Office
   Если проект Microsoft Office был создан в более ранней версии Visual Studio, его необходимо обновить для использования в текущей версии Visual Studio. Чтобы обновить проект Microsoft Office, откройте его в версии Visual Studio, имеющей в своем составе инструменты разработчика Microsoft Office. Дополнительные сведения о версиях Visual Studio, которые включают установку средств разработчика Microsoft Office, см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,8 +85,6 @@ ms.locfileid: "50671746"
  Если вы хотите использовать ClickOnce для развертывания надстройки VSTO, можно полностью удалить проект установки или проект InstallShield Limited Edition. Дополнительные сведения о развертывании надстроек VSTO с помощью ClickOnce см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: решений обновления Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Практическое руководство. Обновление решений Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Проект обновления, параметры](../vsto/project-upgrade-options-dialog-box.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание контекстных меню для закладок'
-ms.custom: ''
+title: Пошаговое руководство. Создать контекстное меню для закладок
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940560"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство: Создание контекстных меню для закладок
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство. Создать контекстное меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройке уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст в закладку, контекстное меню отображается и параметры для форматирования текста.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884086"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
--   Создайте проект документа Word с именем **Мое контекстное меню закладок**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Создайте проект документа Word с именем **Мое контекстное меню закладок**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новый документ Word в конструкторе и добавляет **Мое контекстное меню закладок** проект **обозревателе решений**.  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884086"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Чтобы добавить команды в контекстное меню  
   
-1.  Добавить **Ribbon XML** элемента в проект. Дополнительные сведения см. в разделе [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Добавить **Ribbon XML** элемента в проект. Дополнительные сведения см. в разделе [Как Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  В **обозревателе решений**выберите **ThisDocument.cs** или **ThisDocument.vb**.  
   
@@ -191,9 +188,9 @@ ms.locfileid: "49884086"
 ## <a name="next-steps"></a>Следующие шаги  
  Ниже приводятся некоторые из возможных последующих задач.  
   
--   Напишите код для реагирования на события элементов управления ведущего приложения в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Напишите код для реагирования на события элементов управления ведущего приложения в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: Программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Использование типа "флажок" для изменения форматирования в закладке. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Использование типа "флажок" для изменения форматирования в закладке. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884086"
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
  [Элемент управления Bookmark](../vsto/bookmark-control.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

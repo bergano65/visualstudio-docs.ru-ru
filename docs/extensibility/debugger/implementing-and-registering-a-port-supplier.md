@@ -1,9 +1,6 @@
 ---
 title: Реализация и регистрация поставщика порта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e68f06cde3cd562b145bd64f94581c65f7d7f6
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 189f524ff96c8ad353425820e9f3931364951774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990273"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Реализация и регистрация поставщика порта
 Для отслеживания и указать порты, которые в свою очередь управления процессами — роль поставщика порта. Если порт должен быть создан, поставщика порта создается экземпляр с помощью CoCreate с идентификатором GUID поставщика порта (диспетчер отладки сеансов [SDM] будет использовать поставщика порта, который выбрал пользователь или поставщика порта указан в системе проекта). Затем вызывает SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) для просмотра, можно ли добавить какие-либо порты. Можно ли добавить порт, путем вызова запрашивается новый порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передавая ему [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт. `AddPort` Возвращает новый порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс.  

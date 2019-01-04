@@ -1,9 +1,6 @@
 ---
 title: Расширение свойств, список задач, выходные данные и параметры Windows | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922329"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение windows свойства, список задач, выходные данные и параметры
 Можно получить доступ к любого окна инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашего окна инструментов в новую **параметры** страницы и новый параметр на **свойства** страницы, а также способ записи **список задач** и **вывода** windows.  

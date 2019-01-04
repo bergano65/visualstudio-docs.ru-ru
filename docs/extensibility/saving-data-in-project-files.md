@@ -1,9 +1,6 @@
 ---
 title: Сохранение данных в файлах проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 090040f616cdfbc68ecaf8f35c315bf70ccf5bb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820138"
 ---
 # <a name="save-data-in-project-files"></a>Сохранить данные в файлах проектов
 Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:  
