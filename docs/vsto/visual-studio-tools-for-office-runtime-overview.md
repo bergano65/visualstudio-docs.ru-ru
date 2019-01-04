@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Tools для среды
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,15 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdae6b7f08ec442d7bca0b0aa3b46b8825385767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878787"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools для среды
-  Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, Visual Studio 2010 Tools для Office runtime должны устанавливаться на компьютерах конечных пользователей. Дополнительные сведения см. в разделе [как: Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools для Office runtime состоит из двух основных компонентов:  
+  Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, Visual Studio 2010 Tools для Office runtime должны устанавливаться на компьютерах конечных пользователей. Дополнительные сведения см. в разделе [Как Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools для Office runtime состоит из двух основных компонентов:  
   
 - Расширения Office для платформы .NET Framework. Эти компоненты представляют собой управляемые сборки, обеспечивающие слой связи между вашим решением и приложением Microsoft Office. Дополнительные сведения см. в разделе [Общие сведения о расширениях Office для .NET Framework](#officeextensions).  
   
@@ -124,7 +121,5 @@ ms.locfileid: "49837000"
  [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Обновление и перенос решений Office](../vsto/upgrading-and-migrating-office-solutions.md)  
-  
-  

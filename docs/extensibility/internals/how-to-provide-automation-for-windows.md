@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Автоматизация для Windows | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Автоматизация для Windows | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841243"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Практическое: Автоматизация для окон
+# <a name="how-to-provide-automation-for-windows"></a>Как выполнить Автоматизация для окон
 Вы можете предоставить автоматизация для окон документов и средств. Предоставление автоматизации рекомендуется всякий раз, когда вы хотите сделать объекты автоматизации доступными в окне и среде уже не предоставить объект готовые службы автоматизации, как в случае со списком задач.
 
 ## <a name="automation-for-tool-windows"></a>Автоматизация для окон инструментов

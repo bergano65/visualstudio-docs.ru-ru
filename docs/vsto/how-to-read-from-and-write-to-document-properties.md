@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: чтение из и запись в свойства документа'
-ms.custom: ''
+title: Как выполнить Чтение и запись в свойства документа
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825426"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Практическое: чтение из и запись в свойства документа
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Как выполнить Чтение и запись в свойства документа
   Свойства документа можно сохранять вместе с документом. Приложения Office содержат различные встроенные свойства, например автора, название и тему. В этом разделе показано, как задать свойства документа в Microsoft Office Excel и Microsoft Office Word.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как I: доступа и управления настраиваемых свойств документа в Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Доступ и использовать настраиваемые свойства документа в Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49924232"
 ## <a name="see-also"></a>См. также  
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
- [Практическое: Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+ [Практическое руководство. Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)  

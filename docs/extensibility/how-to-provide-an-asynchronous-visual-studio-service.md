@@ -1,6 +1,5 @@
 ---
-title: 'Практическое: предоставляет службу для асинхронных Visual Studio | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Предоставляет службу для асинхронных Visual Studio | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5508490bfd16a3850f6ffee8d0d45d0cced4aae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857832"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Практическое: предоставить асинхронной службы Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как выполнить Предоставить асинхронной службы Visual Studio
 Если вы хотите получить службы без блокировки потока пользовательского интерфейса, необходимо создать асинхронный и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>, добавьте службу с помощью специальных асинхронных методов асинхронной пакета.
   
- Сведения о предоставлении синхронной служб Visual Studio, см. в разделе [как: предоставить службу](../extensibility/how-to-provide-a-service.md).  
+ Сведения о предоставлении синхронной служб Visual Studio, см. в разделе [как: Предоставляет службу](../extensibility/how-to-provide-a-service.md).  
   
 ## <a name="implement-an-asynchronous-service"></a>Реализовать асинхронный  
   

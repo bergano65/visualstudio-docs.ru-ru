@@ -1,9 +1,6 @@
 ---
-title: 'Как: установить подключаемый модуль системы управления версиями | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Установка подключаемого модуля системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3487c796661a8194b9c920f43bae9df87f1ba57d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990507"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Как: установить подключаемый модуль системы управления версиями
+# <a name="how-to-install-a-source-control-plug-in"></a>Как выполнить Установка подключаемого модуля системы управления версиями
 Создание подключаемого модуля системы управления версиями состоит из трех этапов:  
 
 1. Создайте библиотеку DLL с помощью функции, определенные в разделе Справочник по API подключаемых модулей управления источника этой документации.  

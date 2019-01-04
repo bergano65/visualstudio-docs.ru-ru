@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierEx2 | Документы Microsoft
-ms.custom: ''
+title: IDebugPortSupplierEx2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ba4b16837200f729ec4f8b9061dbb321ee58ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbc58f85a084711057e2ad46b03a1ac0f6fb8f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866783"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Предоставляет поддержку для поставщика порта для выбора и взаимодействовать с core server.  
@@ -30,12 +27,12 @@ IDebugPortSupplierEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщик пользовательский порт реализует этот интерфейс, чтобы он мог выбрать основной сервер для использования.  
+ Пользовательский порт поставщик реализует этот интерфейс, его можно выделить server core для использования.  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы **IDebugPortSupplierEx2**.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Задает основной сервер для поставщика порта.|  
   

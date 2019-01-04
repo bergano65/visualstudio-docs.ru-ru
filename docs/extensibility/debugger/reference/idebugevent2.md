@@ -1,9 +1,6 @@
 ---
-title: IDebugEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870168"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Этот интерфейс используется для взаимодействия критических отладочную информацию, например остановку в точке останова и некритических сведения, такие как сообщение отладки.  
+Этот интерфейс используется для обмена данными критически важная отладочная информация, например, по остановке в точке останова и не являющиеся критически сведения, такие как сообщение отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,20 +29,20 @@ IDebugEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) и поставщика пользовательский порт реализовать этот интерфейс на один и тот же объект в других интерфейсах событий.  
+ Модуль отладки (DE) и поставщика пользовательского порта реализация этого интерфейса на один и тот же объект как все другие интерфейсы событий.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- С помощью интерфейса IID интерфейса, аргумент, заданный для [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) или [событий](../../../extensibility/debugger/reference/idebugportevents2-event.md), диспетчер отладочной сеанса (SDM) вызывает [QueryInterface](/cpp/atl/queryinterface) на `IDebugEvent2` интерфейс для получения интерфейс соответствующее событие.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ С помощью интерфейса IID интерфейса, аргумент, заданный для [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) или [событий](../../../extensibility/debugger/reference/idebugportevents2-event.md), диспетчер отладки сеансов (SDM) вызывает [QueryInterface](/cpp/atl/queryinterface) на `IDebugEvent2` интерфейс для получения интерфейс соответствующее событие.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEvent2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Получает атрибуты для этого события отладки.|  
   
 ## <a name="remarks"></a>Примечания  
- Интерфейсы более конкретные события, такие как [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), не являющиеся производными от интерфейса IDebugEvent2, но вместо этого реализован как отдельный интерфейс на один и тот же объект как `IDebugEvent2`.  
+ Интерфейсы более конкретные события, такие как [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), не являющихся производными от интерфейса IDebugEvent2, но вместо этого реализуются как отдельный интерфейс на один и тот же объект как `IDebugEvent2`.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

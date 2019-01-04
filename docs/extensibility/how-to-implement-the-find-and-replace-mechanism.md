@@ -1,7 +1,6 @@
 ---
-title: 'Практическое: реализовать найти и заменить механизм | Документация Майкрософт'
+title: Как выполнить Реализация поиска и замены механизм | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -11,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943029"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Практическое: реализовать найти и заменить механизм
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Как выполнить Реализовать найти и заменить механизм
 
 Visual Studio предоставляет два способа реализации поиска и замены. Рекомендуется передать образ текста в оболочку и позвольте ей выполнить поиск, выделение и замену текста. Это позволяет пользователям указывать несколько текстовых диапазонов. Кроме того пакет VSPackage может контролирует эти функциональные возможности, сам. В обоих случаях необходимо уведомить оболочки о текущего целевого объекта и целевые объекты для всех открытых документах.
 

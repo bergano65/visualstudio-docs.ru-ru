@@ -1,9 +1,6 @@
 ---
-title: IDebugFunctionPosition2 | Документы Microsoft
-ms.custom: ''
+title: IDebugFunctionPosition2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionPosition2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73097a7133de095d72a6ae22b9aff701b52ef191
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61fd298b1bbbf28f7a7fe514a01dc5707c35e04b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840938"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
-Этот интерфейс представляет абстрактный положение функции в исходном документе.  
+Этот интерфейс представляет позицию по абстрактные функции в исходном документе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +31,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Модуль отладки (DE) реализует этот интерфейс для представления положения функции в исходном документе.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Этот интерфейс предоставляется как часть [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) union (в частности, [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) структуры), в свою очередь является частью [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Структура, используемая при создании ожидающая точка останова.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
@@ -42,11 +39,11 @@ IDebugFunctionPosition2 : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Возвращает имя функции, относительно этой позиции.|  
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Возвращает имя функции, которая задается по отношению к этой позиции.|  
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Получает смещение от начала функции.|  
   
 ## <a name="remarks"></a>Примечания  
- Позиция, представляемые данным интерфейсом на основе текста, в частности, [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры.  
+ Позиция, представленного этим интерфейсом основана на тексте, в частности, [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: создание расширения проекта SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание расширения проекта SharePoint | Документация Майкрософт
 ms.date: 04/28/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4e1c790e70ba44df967b33d57ac57951e714e130
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836456"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>Практическое: создание расширения проекта SharePoint
+# <a name="how-to-create-a-sharepoint-project-extension"></a>Как выполнить Создание расширения проекта SharePoint
   Создание расширения проекта, если вы хотите добавить функциональность в любой проект SharePoint, который открыт в Visual Studio. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
 
 ### <a name="to-create-a-project-extension"></a>Создание проекта расширения  
@@ -204,6 +201,6 @@ ms.locfileid: "37119441"
 
 ## <a name="see-also"></a>См. также
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Практическое: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Практическое: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Практическое руководство. Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Практическое руководство. Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Пошаговое руководство: Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 434d673c62d0b26efa1559db7d7d98747146fd2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939290"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Практическое: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Как выполнить Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
   С помощью целевых объектов MSBuild в командной строке, можно настроить, как Visual Studio создает файлы пакета SharePoint (*.wsp*). Например, можно настроить свойства MSBuild для изменения промежуточного каталога пакета и группы элементов MSBuild с перечисляемыми файлами.  
   
 ## <a name="customize-and-run-msbuild-targets"></a>Настройка и выполнение целевых объектов MSBuild  
@@ -86,4 +81,3 @@ ms.locfileid: "49889693"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

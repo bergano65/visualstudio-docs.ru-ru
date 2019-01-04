@@ -1,9 +1,6 @@
 ---
 title: TYPE_INFO | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TYPE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823124"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Эта структура определяет различные виды информации о типа поля.  
@@ -66,7 +63,7 @@ public struct TYPE_INFO {
  Имя объединения.  
   
  unionmember  
- [Только для C#] Маршалинг, это тип подходящей структурой на основе `dwKind`.  
+ [C# только] Маршалинг, это тип подходящей структурой на основе `dwKind`.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура передается [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) метод, где он заполняется. Интерпретация содержимое структуры на основе `dwKind` поля.  
@@ -74,7 +71,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [C++] Если `dwKind` равно `TYPE_KIND_BUILT`, то это необходимо для высвобождения базовый [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект при удалении `TYPE_INFO` структуры. Это выполняется с помощью вызова метода `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Только для C#] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа. В примере показано, как это можно сделать для одного типа.  
+ [C# только] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа. В примере показано, как это можно сделать для одного типа.  
   
 |`dwKind`|`unionmember` интерпретируется как|  
 |--------------|----------------------------------|  

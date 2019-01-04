@@ -1,9 +1,6 @@
 ---
 title: Влияющие на новый элемент диалоговое окно добавления | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41947e3078eb3cd344774afe533a4fa0a9d8324a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0b9e86b002c212f63076c065d7aca3b7649513b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865665"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Участвовать в диалоговом окне Добавление нового элемента
 Подтип проекта может предоставить полный каталог элементов для **Добавление нового элемента** диалоговое окно, зарегистрировав **Добавление элемента** шаблоны в разделе **проекты** подраздел реестра.  

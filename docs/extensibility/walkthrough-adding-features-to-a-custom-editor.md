@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Добавление функций в специализированный редактор | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Добавление функций в специализированный редактор | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850405"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство: Добавление компонентов к пользовательского редактора
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление компонентов в специализированный редактор
 После создания настраиваемого редактора, можно добавить дополнительные функции к нему.  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Чтобы создать редактор для VSPackage  
   
 1.  Создание пользовательского редактора, используя шаблон проекта пакета Visual Studio.  
   
-     Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского редактора](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Дополнительные сведения см. в разделе [Пошаговое руководство: Создать пользовательский редактор](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Решите, следует ли редактора для поддержки единое представление или несколько представлений.  
   
@@ -118,7 +115,7 @@ ms.locfileid: "49873023"
   
 12. Реализация поддержки контекстной справки.  
   
-     Этот шаг позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения см. в разделе [как: предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
+     Этот шаг позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения см. в разделе [Как Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Предоставляют объектную модель автоматизации из редактора, реализовав `IDispatch` интерфейс.  
   
@@ -157,4 +154,4 @@ ms.locfileid: "49873023"
   
 ## <a name="see-also"></a>См. также  
  [Участие в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Практическое: предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)
+ [Практическое руководство. Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)

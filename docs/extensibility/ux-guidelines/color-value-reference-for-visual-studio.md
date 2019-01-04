@@ -1,6 +1,6 @@
 ---
 title: Справочник по значениям цвета
-description: 'Ссылка: Из шестнадцатеричных кодов для создания новых маркеров цвета Visual Studio'
+description: Справочные материалы. Шестнадцатеричных кодов для создания новых маркеров цвета Visual Studio
 keywords: цвет, шестнадцатеричный код, hue, теме пользовательского интерфейса, темы
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870064"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Справочник по значениям цвета для Visual Studio
 

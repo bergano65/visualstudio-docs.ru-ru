@@ -1,13 +1,8 @@
 ---
 title: Создание определений сайтов для SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868330"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Создание определений сайтов для SharePoint
   Проект определения сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] позволяет создавать *определение узла*, который служит основой для нового сайта SharePoint. Эти определения не только определить внешний вид и поведение сайта SharePoint, но также содержимое по умолчанию и функциональные возможности. В определение можно поместить заранее настроенные списки, типы содержимого, приемники событий, изображения и другие элементы. В SharePoint содержатся определения некоторых сайтов, например блога. При создании сайта, на основе определения сайта БЛОГА, сайт содержит списки веб-частей и другие элементы, которые требует веб-сайту.  
@@ -51,8 +46,8 @@ ms.locfileid: "36325346"
   
 |Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Пошаговое руководство. Создание базового проекта определения сайта](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Пошаговые инструкции по созданию базового проекта определения сайта в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Практическое: Создание пользовательского определения узла и конфигурации](http://go.microsoft.com/fwlink/?LinkId=183309)|В этой статье описывается создание пользовательского определения узла в SharePoint путем копирования существующего определения сайта и последующего изменения копии.|  
+|[Пошаговое руководство: Создание базового проекта определения сайта](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Пошаговые инструкции по созданию базового проекта определения сайта в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Практическое руководство. Создание пользовательского определения узла и конфигурации](http://go.microsoft.com/fwlink/?LinkId=183309)|В этой статье описывается создание пользовательского определения узла в SharePoint путем копирования существующего определения сайта и последующего изменения копии.|  
 |[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Описывает исходный файл, задающий настройки определения сайта, доступных в **Выбор шаблона** раздел **новый узел SharePoint** страницы.|  
 |[Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|В этой статье описывается подготовка решений SharePoint для глобального использования.|  
 |[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Описывает, как можно создать части на страницу SharePoint, которые пользователи могут изменять.|  
@@ -65,5 +60,3 @@ ms.locfileid: "36325346"
   
 ## <a name="see-also"></a>См. также
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

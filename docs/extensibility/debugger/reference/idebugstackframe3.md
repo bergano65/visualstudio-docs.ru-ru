@@ -1,9 +1,6 @@
 ---
-title: IDebugStackFrame3 | Документы Microsoft
-ms.custom: ''
+title: IDebugStackFrame3 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635b53bf63eb83cc868e4bf9b7d5fbb31fe5aa08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 376807a2963e93b3713d85b2d166c741671079bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932776"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
-Этот интерфейс расширяет интерфейс [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) обрабатывать перехваченного исключения.  
+Этот интерфейс расширяет [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) обрабатывать перехваченные исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,9 +29,9 @@ IDebugStackFrame3 : IDebugStackFrame2
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс для поддержки перехваченного исключения.  
+ Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс для поддержки перехваченные исключения.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugStackFrame2` интерфейс для получения этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
@@ -42,20 +39,20 @@ IDebugStackFrame3 : IDebugStackFrame2
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Обрабатывает исключение для текущего кадра стека до какой-либо обработки регулярных исключение.|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Обрабатывает исключение для текущего кадра стека, прежде чем какой-либо обработки регулярных исключение.|  
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Возвращает контекст кода, в случае очистки стека.|  
   
 ## <a name="remarks"></a>Примечания  
- Перехваченного исключения означает, что отладчик может обрабатывать исключения перед вызовом любой подпрограммы обработки обычное исключение по времени выполнения. Перехват исключения по существу означает время выполнения представьте, что есть обработчик исключений, даже в том случае, когда не существует.  
+ Перехваченные исключения означает, что отладчик может обрабатывать исключения, до вызова средой выполнения любой подпрограммы обработки обычное исключение. Перехват исключения по сути означает, что среда выполнения представьте, что имеется обработчик исключений, даже в том случае, когда не.  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) вызывается в процессе все события обратного вызова обычное исключение (Единственное исключение — при отладке смешанного кода (управляемого и неуправляемого кода), в этом случае не может быть перехвачено исключение во время вероятность последнего обратного вызова). Если они не реализуют DE `IDebugStackFrame3`, или DE возвращает сообщение об ошибке из IDebugStackFrame3::`InterceptCurrentException` (такие как `E_NOTIMPL`), то отладчик будет обрабатывать исключение, обычно.  
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) вызывается во время все события обратного вызова обычное исключение (Единственное исключение — при отладке смешанного кода (управляемый и неуправляемый код), в этом случае нельзя перехватить исключение во время обратный вызов последней). Если не реализует DE `IDebugStackFrame3`, или DE возвращает сообщение об ошибке из IDebugStackFrame3::`InterceptCurrentException` (такие как `E_NOTIMPL`), то отладчик будет обрабатывать исключение обычно.  
   
- Перехватывая исключение, отладчик можно разрешить пользователю изменять состояние отлаживаемой программы и затем возобновить выполнение в точке, где возникло исключение.  
+ Путем перехвата исключений, отладчик может открыть пользователю внести изменения состояния отлаживаемой программы, а затем возобновить выполнение в точке, где возникло исключение.  
   
 > [!NOTE]
->  Перехваченного исключения разрешены только в управляемом коде, то есть, в программе, которая работает под Common Language Runtime (CLR).  
+>  Перехваченные исключения допускаются только в управляемом коде, то есть в программе, которая работает в группе Common Language Runtime (CLR).  
   
- Модуль отладки означает, что он поддерживает перехват исключения, задав «metricExceptions» в значение 1 во время выполнения с помощью `SetMetric` функции. Дополнительные сведения см. в разделе [SDK вспомогательные методы для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Модуль отладки указывает, что он поддерживает перехват исключения, задав «metricExceptions» в значение 1 во время выполнения с помощью `SetMetric` функции. Дополнительные сведения см. в разделе [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

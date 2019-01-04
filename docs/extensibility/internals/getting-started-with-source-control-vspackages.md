@@ -1,9 +1,6 @@
 ---
 title: Приступая к работе с пакетом VSPackage системы управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849730"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Начало работы с системой управления версиями пакетов VSPackage
 Пакет VSPackage системы управления версиями является альтернативой более сложных для подключаемого модуля системы управления версиями. Дополнительные сведения о подключаемых модулей системы управления версиями, см. в разделе [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md). Пакет VSPackage системы управления версиями обеспечивает полный контроль над модель управления исходным кодом, функций и пользовательский интерфейс (UI), а также интегрируется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среде, что VSPackage.  

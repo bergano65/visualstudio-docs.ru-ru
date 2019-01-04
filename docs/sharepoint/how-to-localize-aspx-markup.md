@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Локализация разметки ASPX | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Локализация разметки ASPX | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959876"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Практическое: Локализация разметки ASPX
+# <a name="how-to-localize-aspx-markup"></a>Как выполнить Локализация разметки ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] страницы (ASPX), обычно используют жестко заданные строковые значения. Чтобы локализовать эти строки, замените их выражения, ссылающиеся на локализованные ресурсы.  
   
 ## <a name="localize-aspx-markup"></a>Локализация разметки ASPX  
@@ -81,7 +76,6 @@ ms.locfileid: "37119553"
   
 ## <a name="see-also"></a>См. также
  [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Практическое: Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
- [Способ: добавить файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
- [Практическое: локализация кода](../sharepoint/how-to-localize-code.md)  
-  
+ [Практическое руководство. Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
+ [Практическое руководство. Добавьте файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
+ [Практическое руководство. Локализация кода](../sharepoint/how-to-localize-code.md)  

@@ -1,9 +1,6 @@
 ---
 title: Создание веб-частей для SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879138"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
-  С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверных элементов управления, выполняемые внутри страницы: они являются стандартными блоками страниц, отображаемых на сайте SharePoint. См. в разделе [стандартный блок: веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
+  С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверных элементов управления, выполняемые внутри страницы: они являются стандартными блоками страниц, отображаемых на сайте SharePoint. См. в разделе [стандартный блок: Веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Можно создать и отладка веб-частей на сайте SharePoint с помощью шаблонов из Visual Studio.  
   
@@ -48,21 +43,21 @@ ms.locfileid: "49906049"
 ### <a name="web-part-item"></a>Элемент веб-части
  Объект **веб-часть** содержит файлы, которые можно использовать для разработки веб-части для сайта SharePoint. При добавлении **веб-часть** товар, Visual Studio создает папку в проекте и добавляет в нее несколько файлов. В следующей таблице описаны каждого файла.  
   
-|Файл|Описание|  
+|Файл|Описание:|  
 |----------|-----------------|  
 |*Elements.XML*|Содержит сведения, используемые файлом определения компонента в проекте используется для развертывания веб-части.|  
 |файл .webpart|Предоставляет сведения, необходимые для отображения веб-части в веб-частей SharePoint.|  
 |Файл кода|Содержит методы, добавляющие элементы управления в веб-часть и создающие пользовательское содержимое внутри веб-части.|  
   
- Дополнительные сведения см. в разделе [как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Дополнительные сведения см. в разделе [Как Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Элемент Visual веб-части
- Визуальная веб-часть является веб-части, созданной с помощью конструктора Visual Web Developer в Visual Studio. Визуальная веб-часть функционирует так же, как любой другой веб-части. Чтобы добавить элементы управления, такие как кнопки и текстовые поля, для веб-части, добавьте код в XML-файл. Тем не менее, добавление элементов управления для визуальной веб-части, перетащив или скопировав их на веб-части из Visual Studio **элементов**. Затем конструктор создает требуемый код в XML-файле. См. в разделе [как: веб-часть SharePoint, создание с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Визуальная веб-часть является веб-части, созданной с помощью конструктора Visual Web Developer в Visual Studio. Визуальная веб-часть функционирует так же, как любой другой веб-части. Чтобы добавить элементы управления, такие как кнопки и текстовые поля, для веб-части, добавьте код в XML-файл. Тем не менее, добавление элементов управления для визуальной веб-части, перетащив или скопировав их на веб-части из Visual Studio **элементов**. Затем конструктор создает требуемый код в XML-файле. См. практическое руководство по [ Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Элементы управления SharePoint
  Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страницы приложения. Эти элементы управления отображаются в **элементов** под **элементы управления SharePoint**. Функциональные возможности для этих элементов управления является производным от [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) пространство имен, которое содержит серверные элементы управления ASP.NET, которые используются на страницах сайта и списка SharePoint.  
   
-|Имя элемента|Описание|  
+|Имя элемента|Описание:|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет меню ASP. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** элемент в коллекцию *.aspx* странице и применяет один или несколько внешних таблиц стилей определяется **CssRegistration**.|  
@@ -113,12 +108,11 @@ ms.locfileid: "49906049"
   
 ## <a name="related-topics"></a>См. также
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Практическое: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Показано, как создать веб-частей для страниц SharePoint.|  
-|[Практическое: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Показано, как создать веб-частей для SharePoint с помощью визуальную область конструктора.|  
-|[Практическое: создать пользовательский элемент управления для части страницы или веб-приложения SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Показано, как создать пользовательские элементы управления, которые могут быть использованы на страницах приложений и веб-частей, которые выполняются в SharePoint.|  
+|[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Показано, как создать веб-частей для страниц SharePoint.|  
+|[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Показано, как создать веб-частей для SharePoint с помощью визуальную область конструктора.|  
+|[Практическое руководство. Создать пользовательский элемент управления для части страницы или веб-приложения SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Показано, как создать пользовательские элементы управления, которые могут быть использованы на страницах приложений и веб-частей, которые выполняются в SharePoint.|  
 |[Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint.|  
 |[Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Описываются способы разработки веб-части для SharePoint путем перетаскивания элементов управления визуальную область конструктора.|  
-|[Пошаговое руководство: Создание веб-часть Silverlight, отображающей данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint, которое размещается приложение Silverlight и отображает данные из списков SharePoint.|  
-  
+|[Пошаговое руководство: Создание веб-части Silverlight, отображающей данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint, которое размещается приложение Silverlight и отображает данные из списков SharePoint.|  

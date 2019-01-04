@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941668"
 ---
 # <a name="domain-property-value-change-handlers"></a>Обработчики изменений значений свойств доменов
 
@@ -105,7 +104,7 @@ if (newValue > 10)
 
 Потенциальный недостаток вычисляемых свойств заключается в том, что выражение оценивается при каждом использовании значения, что может снижать производительность. Также к вычисляемым свойствам не применяются методы OnValueChanging() и OnValueChanged().
 
-### <a name="alternative-technique-change-rules"></a>Альтернативный способ: изменение правила
+### <a name="alternative-technique-change-rules"></a>Альтернативный способ: метод ChangeRule
 
 Если changerule определен, он выполняется в конце транзакции, в котором изменяется значение свойства.  Дополнительные сведения см. в разделе [распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).
 

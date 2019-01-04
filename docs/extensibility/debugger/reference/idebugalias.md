@@ -1,9 +1,6 @@
 ---
-title: IDebugAlias | Документы Microsoft
-ms.custom: ''
+title: IDebugAlias | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAlias
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f77e62b2dc36bb03b2145361cdea7dd9e65b2d32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47e9912a0c46588fe6cf0c16aea3388400960851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954728"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Представляет числовой псевдоним для переменной. Псевдоним является просто другое имя для переменной.  
+ Представляет числовые псевдоним для переменной. Псевдоним — это просто другое имя для переменной.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +32,23 @@ IDebugAlias : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Средство оценки выражений (Эстония) реализует этот интерфейс для поддержки числовой псевдонимы для переменных.  
+ Средство оценки выражений (EE) реализует этот интерфейс для поддержки числовой псевдонимы для переменных.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) создает псевдоним для определенного объекта. Чтобы найти псевдонимы, используйте [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) или [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Следующие методы определяются в `IDebugAlias` интерфейса.  
+ Следующие методы определяются в `IDebugAlias` интерфейс.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[Функция GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Возвращает объект, к которому относится этот псевдоним.|  
+|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Возвращает объект, к которому относится этот псевдоним.|  
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Возвращает имя псевдонима.|  
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Извлекает `ICorDebugValue` интерфейс, обеспечивающий доступ для управляемого кода сведения об этом объекте (только управляемый код).|  
-|[Метод Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Помечает данный псевдоним, как больше не используются.|  
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Извлекает `ICorDebugValue` интерфейс, который предоставляет доступ к управляемого кода сведения об этом объекте (только управляемый код).|  
+|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Помечает данный псевдоним, как больше не используются.|  
   
 ## <a name="remarks"></a>Примечания  
- Псевдоним — это десятичное число в виде строки, за которым следует символ #, например, 1001#.  
+ Псевдоним — это десятичное число в виде строки, за которым следует символ #, к примеру, 1001#.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: ee.h  
@@ -61,7 +58,7 @@ IDebugAlias : IUnknown
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейсы вычисление выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [Интерфейсы оценки выражения](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)   
  [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)   
  [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)

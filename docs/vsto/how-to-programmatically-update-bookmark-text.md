@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное обновление текста закладки'
-ms.custom: ''
+title: Как выполнить Программное обновление текста закладки
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864340"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Практическое: программное обновление текста закладки
+# <a name="how-to-programmatically-update-bookmark-text"></a>Как выполнить Программное обновление текста закладки
   Вы можете вставить текст в закладку-заполнитель в документе Microsoft Office Word, чтобы позднее извлечь или заменить текст закладки. При разработке настройки на уровне документа можно обновить текст в элементе управления <xref:Microsoft.Office.Tools.Word.Bookmark> с привязкой к данным. Дополнительные сведения см. в разделе [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -83,8 +80,6 @@ ms.locfileid: "49833022"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Практическое руководство. Программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
  [Элемент управления Bookmark](../vsto/bookmark-control.md)  
-  
-  

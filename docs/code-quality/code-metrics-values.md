@@ -2,7 +2,6 @@
 title: Рассчитать метрики кода
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855576"
 ---
 # <a name="code-metrics-values"></a>Значения метрик кода
 
@@ -24,7 +23,7 @@ ms.locfileid: "53056776"
 
 Разработчики могут использовать Visual Studio для получения данных метрик кода, которые измеряют сложности и удобства сопровождения управляемого кода. Данные метрик кода могут создаваться для всего решения или отдельного проекта.
 
-Сведения о способах получения данных метрик кода в Visual Studio, см. в разделе [как: создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md).
+Сведения о способах получения данных метрик кода в Visual Studio, см. в разделе [как: Создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Оценки программного обеспечения
 
@@ -57,5 +56,5 @@ ms.locfileid: "53056776"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Практическое: создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
+- [Практическое руководство. Создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
 - [В окне результатов метрики кода](../code-quality/working-with-code-metrics-data.md)

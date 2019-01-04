@@ -1,8 +1,7 @@
 ---
-title: 'CA2106: обеспечьте безопасность утверждений'
+title: CA2106. Обеспечьте безопасность утверждений
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2106
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 164d2bbe335f4b69892cf069bade5cf0df1e0787
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864677"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: обеспечьте безопасность утверждений
+# <a name="ca2106-secure-asserts"></a>CA2106. Обеспечьте безопасность утверждений
 
 |||
 |-|-|

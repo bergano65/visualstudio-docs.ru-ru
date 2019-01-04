@@ -1,9 +1,6 @@
 ---
 title: Пользовательские действия в областях формы Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869523"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Пользовательские действия в областях формы Outlook
   Действия отображаться кнопки, которые позволяют ответить на сообщение Microsoft Office Outlook. Например, для ответа на сообщение, пользователь щелкнуть **ответа**, **ответить всем**, или **вперед** кнопки действий. Каждое из этих действий создает нового почтового элемента и заполняет поля элемента с использованием данных из исходного элемента.  
@@ -39,7 +36,7 @@ ms.locfileid: "53441664"
   
  В следующей таблице описаны свойства, доступные в **Custom Actions** диалоговое окно.  
   
-|Свойство|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
 |**AddressLike**|Указывает, каким образом будет направлено целевой формы.|  
 |**Текст**|Указывает, каким образом текст исходного элемента добавляется к целевой формы.|  
@@ -58,5 +55,3 @@ ms.locfileid: "53441664"
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

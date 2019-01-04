@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861628"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Сопоставление зависимостей с помощью карт кода
 
@@ -240,7 +239,7 @@ ms.locfileid: "49896945"
 
 ## <a name="see-also"></a>См. также
 
-- [Видео: понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)

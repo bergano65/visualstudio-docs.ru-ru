@@ -1,9 +1,6 @@
 ---
-title: 'Как: целевой многоязыкового пользовательского интерфейса Office'
-ms.custom: ''
+title: Как выполнить Назначение многоязыкового пользовательского интерфейса Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,29 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b917479598b73f71a0f3092c874276a700717d6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e911563406e0cfdeff613f70a5059da34c4b66df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872285"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>Как: целевой многоязыкового пользовательского интерфейса Office
-  Многоязычного пользовательского интерфейса (MUI) — это компонент Microsoft Office, который дает пользователю возможность изменить язык пользовательского интерфейса (UI). Например пользователь, работающий в английском пользовательском интерфейсе можно изменить язык интерфейса на испанский язык.  
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>Как выполнить Назначение многоязыкового пользовательского интерфейса Office
+  Многоязыкового интерфейса пользователя (MUI) является компонентом Microsoft Office, который позволяет пользователю изменить язык пользовательского интерфейса (UI). Например пользователь, работающий с английский интерфейс пользователя можно изменить язык интерфейса на испанский язык.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Если ваше приложение будет использоваться с использованием многих языков Office, можно добавить код, чтобы автоматически изменять язык строк пользовательского интерфейса в соответствии с языком, который используется Office на компьютере пользователя (если у пользователя есть установлены соответствующие ресурсы).  
+ Если приложение будет использоваться с использованием многих языков Office, можно добавить код, чтобы автоматически изменить язык строк пользовательского интерфейса в соответствии с языком, который используется Microsoft Office на компьютере пользователя (если пользователь имеет установлены соответствующие ресурсы).  
   
-## <a name="to-check-the-current-office-ui-setting"></a>Чтобы проверить текущие настройки пользовательского интерфейса Office  
+## <a name="to-check-the-current-office-ui-setting"></a>Чтобы проверить текущее состояние пользовательского интерфейса Office  
   
-1.  Используйте <xref:System.Threading.Thread.CurrentUICulture%2A> свойство текущего потока. Задайте язык строк пользовательского интерфейса в соответствии с языком, который используется в версии Office, которая в настоящее время выполняется на компьютере пользователя.  
+1.  Используйте <xref:System.Threading.Thread.CurrentUICulture%2A> свойство текущего потока. Задайте язык строк пользовательского интерфейса в соответствии с используемой версии Office, которая в настоящее время работает на компьютере пользователя.  
   
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]  
   
 ## <a name="see-also"></a>См. также  
- [Как: Office целевых приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)  
-  
-  

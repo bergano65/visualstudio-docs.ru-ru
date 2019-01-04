@@ -1,9 +1,6 @@
 ---
 title: Визуализация и просмотр данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50325281fcca92394df5db28cc590cfa1e85f651
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: e516e3b7af7cfdbbb2c30ff5045a8b05349d7986
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848711"
 ---
 # <a name="visualizing-and-viewing-data"></a>Визуализация и просмотр данных
 Визуализаторов типов и пользовательских средств просмотра представить данные способом, который быстро применяется для разработчика. Средство оценки выражений (EE) можно поддерживать визуализаторов сторонних типов, а также предоставить свои собственные пользовательские средства просмотра.  

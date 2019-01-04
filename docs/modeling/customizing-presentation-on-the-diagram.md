@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473d0a1e1f9bd215513e7a69f8fc511f6416db7a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968301"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Настройка представления схемы
 Схема является основной областью презентации Конструктора доменного языка. Обычно пользователи используют схему для построения конструкций своих моделей. Порядок настройки схемы описывается в следующих разделах:

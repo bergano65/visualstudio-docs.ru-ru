@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отображение парных скобок | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение парных скобок | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956587"
 ---
-# <a name="walkthrough-display-matching-braces"></a>Пошаговое руководство: Отображение парных фигурных скобок
+# <a name="walkthrough-display-matching-braces"></a>Пошаговое руководство. Отображать парные фигурные скобки
 Внедрение возможностей языка, например парные фигурные скобки, определение фигурные скобки, которые вы хотите обеспечить поиск и добавив тег текстовой метки парные фигурные скобки, когда курсор находится на одном фигурных скобок. Можно определить фигурные скобки в контексте языка, определите расширение имени файла и тип содержимого и применить теги к только что, введите или применить теги к существующему типу содержимого (например, «text»). Следующие пошаговом руководстве показано, как применить парные фигурные скобки теги к типу содержимого «text».  
   
 ## <a name="prerequisites"></a>Предварительные требования  

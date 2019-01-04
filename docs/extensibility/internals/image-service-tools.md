@@ -1,6 +1,5 @@
 ---
-title: Изображения средства службы | Документы Microsoft
-ms.custom: ''
+title: Изображение средства Service | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
@@ -9,18 +8,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d837e58c699feba3732089f08c513aa3db3abff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e5d54dfb129ff4a468815e4c86faf48d5c46ef4c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821222"
 ---
-# <a name="image-service-tools"></a>Средства работы с образами службы
-VS SDK включает различные средства, помогающие построители расширения, которые используют службу образов в Visual Studio.  
+# <a name="image-service-tools"></a>Средства службы образов
+VS SDK включает в себя несколько средств для расширения построители использовать служба образов в Visual Studio.  
   
--   [Манифеста из ресурсов](../../extensibility/internals/manifest-from-resources.md) инструмент принимает список ресурсов изображений (.png или .xaml-файлы) и создает файл манифеста изображения.  
+-   [Манифест из ресурсов](../../extensibility/internals/manifest-from-resources.md) инструмент принимает список ресурсов изображений (PNG- или .xaml-файлы) и создает файл манифеста изображения.  
   
--   [Манифеста коду](../../extensibility/internals/manifest-to-code.md) инструмент принимает файл манифеста изображения и создает файл программы-оболочки для использования в C++, C#, VB или .vsct файлах.  
+-   [Манифест в код](../../extensibility/internals/manifest-to-code.md) инструмент принимает файл манифеста изображения и создает файл программы-оболочки для использования в файлах C++, C#, VB или .vsct.  
   
--   [Средство просмотра библиотеки изображений](../../extensibility/internals/image-library-viewer.md) можно загрузить, редактирования и поиска манифестов изображений.
+-   [Средство просмотра библиотеки изображений](../../extensibility/internals/image-library-viewer.md) можно загружать, редактировать и поиска манифестов изображений.

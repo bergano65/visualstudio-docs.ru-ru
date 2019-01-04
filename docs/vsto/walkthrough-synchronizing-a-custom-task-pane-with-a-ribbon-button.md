@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте'
-ms.custom: ''
+title: Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943568"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
   В этом пошаговом руководстве демонстрируется создание настраиваемой области задач, пользователи могут скрывать и отображать, щелкая выключатель на ленте. Рекомендуется всегда создавать элемент пользовательского интерфейса, например кнопку, который пользователи могут нажать для отображения или скрытия настраиваемой области задач. Это необходимо по той причине, что приложения Microsoft Office не имеют встроенных средств для отображения и скрытия настраиваемых областей задач.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -63,7 +60,7 @@ ms.locfileid: "35674841"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект надстройки Excel с именем **SynchronizeTaskPaneAndRibbon**с помощью шаблона проекта надстройки Excel. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект надстройки Excel с именем **SynchronizeTaskPaneAndRibbon**с помощью шаблона проекта надстройки Excel. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] откроет файл с исходным кодом **ThisAddIn.cs** или **ThisAddIn.vb** и добавит проект **SynchronizeTaskPaneAndRibbon** в **обозреватель решений**.  
   
@@ -139,7 +136,7 @@ ms.locfileid: "35674841"
   
 1.  В конструкторе ленты дважды щелкните выключатель **Показать область задач** .  
   
-     Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает *MyRibbon.cs* или *MyRibbon.vb* файл в редакторе кода.  
+     Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает файл *MyRibbon.cs* или *MyRibbon.vb* в редакторе кода.  
   
 2.  Замените обработчик событий `toggleButton1_Click` следующим кодом. Когда пользователь щелкает выключатель, этот код показывает или скрывает настраиваемую область задач в зависимости от того, нажат ли выключатель.  
   
@@ -170,15 +167,13 @@ ms.locfileid: "35674841"
   
 -   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
--   Автоматизация приложения в настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: автоматизации приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Автоматизация приложения в настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Практическое: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Пошаговое руководство: Автоматизация приложения из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)  
-  
-  

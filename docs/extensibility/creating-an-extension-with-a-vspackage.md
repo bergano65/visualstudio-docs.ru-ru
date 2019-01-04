@@ -1,9 +1,6 @@
 ---
 title: Создание расширения с помощью VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838415"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Создание расширения с помощью VSPackage
 В этом пошаговом руководстве показано, как создать проект VSIX и добавить элемент проекта VSPackage. Мы будем использовать пакет VSPackage, чтобы получить службу пользовательского интерфейса оболочки для отображения окна сообщения.  
@@ -49,7 +46,7 @@ ms.locfileid: "39500778"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем в пакете VSPackage `Initialize()` метод, чтобы сделать это, так как вы можете получить Visual Studio служб только в том случае, после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: доступ к службе](../extensibility/how-to-get-a-service.md).) Замените `Initialize()` метод `FirstPackage` с кодом, который получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
+2.  Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем в пакете VSPackage `Initialize()` метод, чтобы сделать это, так как вы можете получить Visual Studio служб только в том случае, после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: Доступ к службе](../extensibility/how-to-get-a-service.md).) Замените `Initialize()` метод `FirstPackage` с кодом, который получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
   
     ```csharp  
     protected override void Initialize()  

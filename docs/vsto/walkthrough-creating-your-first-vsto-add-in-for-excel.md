@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание первой надстройки VSTO для Excel'
-ms.custom: ''
+title: Пошаговое руководство. Создание первой надстройки VSTO для Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831892"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство: Создание первой надстройки VSTO для Excel
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство. Создание первой надстройки VSTO для Excel
   В этом вводном пошаговом руководстве показано, как создавать надстройки уровня приложения для Microsoft Office Excel. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие книги открыты.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -121,17 +118,17 @@ ms.locfileid: "49949907"
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Excel, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах.  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Задачи программирования, характерные для надстроек VSTO для Excel: [решения Excel](../vsto/excel-solutions.md).  
+-   Программирование задачи, характерные для надстроек VSTO для Excel: [Решения Excel](../vsto/excel-solutions.md).  
   
--   С помощью объектной модели Excel: [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).  
+-   С помощью объектной модели Excel: [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md).  
   
--   Настройка пользовательского интерфейса (UI) из Excel, например, добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Настройка пользовательского интерфейса (UI) Excel, например, путем добавления настраиваемой вкладки на ленту или создания собственной настраиваемой области задач: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
--   Построение и отладка надстроек VSTO для Excel: [решений Office построения](../vsto/building-office-solutions.md).  
+-   Построение и отладка надстроек VSTO для Excel: [Создание решений Office](../vsto/building-office-solutions.md).  
   
--   Развертывание надстроек VSTO для Excel: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Развертывание надстроек VSTO для Excel: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -142,5 +139,3 @@ ms.locfileid: "49949907"
  [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

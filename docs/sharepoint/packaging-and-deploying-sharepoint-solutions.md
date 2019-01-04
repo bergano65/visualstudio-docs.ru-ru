@@ -1,13 +1,8 @@
 ---
 title: Упаковка и развертывание решений SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849023"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Упаковка и развертывание решений SharePoint
   Как правило решения SharePoint развертывается на сервере SharePoint с помощью файла пакета (.wsp) решения. Visual Studio можно использовать для организации элементов проекта SharePoint в функции и создание пакета для развертывания компоненты SharePoint.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863273"
 -   [Развертывание файлов в решениях SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Создание компонентов и пакетов
- Visual Studio можно использовать для группировки связанных элементов SharePoint в *функция*. Например это функция для определения списка контактов может включать экземпляр списка и определение списка. Эти два элемента можно объединить в один компонент для целей развертывания. Дополнительные сведения о функциях см. в разделе [стандартный блок: функции](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Visual Studio можно использовать для группировки связанных элементов SharePoint в *функция*. Например это функция для определения списка контактов может включать экземпляр списка и определение списка. Эти два элемента можно объединить в один компонент для целей развертывания. Дополнительные сведения о функциях см. в разделе [стандартный блок: Функции](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- Затем можно создать пакета решения SharePoint (*.wsp*) чтобы объединять несколько компонентов, сайта определений сборок и других файлов в один пакет, который хранит файлы в формате, необходимых для развертывания файлов в SharePoint сервер. Дополнительные сведения см. в разделе [стандартный блок: решения](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ Затем можно создать пакета решения SharePoint (*.wsp*) чтобы объединять несколько компонентов, сайта определений сборок и других файлов в один пакет, который хранит файлы в формате, необходимых для развертывания файлов в SharePoint сервер. Дополнительные сведения см. в разделе [стандартный блок: Решения](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Функции и средства поддержки упаковки
  Можно использовать средства разработки SharePoint в Visual Studio для быстрой организации файлов SharePoint в компоненты и пакеты решений для упрощения развертывания. Чтобы настроить пакет компонентов и решений можно использовать следующие средства.  
@@ -81,7 +76,7 @@ ms.locfileid: "49863273"
   
   Средства разработки SharePoint в Visual Studio содержат правила проверки, чтобы убедиться, что пакет решения сформирован правильно. Кроме того, эти правила позволяют проверить, *.wsp* файл решения можно успешно развертываются и активируются на сервере SharePoint. Дополнительные сведения о схеме XML для компонентов, см. в разделе [Feature Schemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Можно добавить пользовательских компонентов и правилам проверки пакета в системе проекта SharePoint. Дополнительные сведения см. в разделе [как: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Можно добавить пользовательских компонентов и правилам проверки пакета в системе проекта SharePoint. Дополнительные сведения см. в разделе [Как Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
   Дополнительные сведения об обозревателе пакетов см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
@@ -109,4 +104,3 @@ ms.locfileid: "49863273"
 ## <a name="see-also"></a>См. также
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

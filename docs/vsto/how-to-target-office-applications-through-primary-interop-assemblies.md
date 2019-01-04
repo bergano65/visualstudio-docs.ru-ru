@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Target Office приложений с помощью основных сборок взаимодействия'
-ms.custom: ''
+title: Как выполнить Обращение к приложениям Office с помощью основных сборок взаимодействия
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845906"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Практическое: Target Office приложений с помощью основных сборок взаимодействия
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Как выполнить Обращение к приложениям Office с помощью основных сборок взаимодействия
   При создании нового проекта Office Visual Studio автоматически добавляет ссылки на основные сборки взаимодействия (PIA) Microsoft Office, необходимые для построения проекта. Ссылки на другие основные сборки взаимодействия необходимо добавлять в следующих случаях.  
   
 - Вы хотите использовать функции других приложений Microsoft Office в своем проекте. Например, можно использовать функции Microsoft Office Excel в проекте для Microsoft Office Word.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863754"
  [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Практическое: Office установка основных сборок взаимодействия](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Практическое руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

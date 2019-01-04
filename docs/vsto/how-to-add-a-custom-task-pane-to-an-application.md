@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Добавление настраиваемой области задач в приложение
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822788"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Как выполнить Добавление настраиваемой области задач в приложение
   Вы можете добавить настраиваемую область задач в приложения, перечисленные выше, с помощью надстройки VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
@@ -64,5 +61,3 @@ ms.locfileid: "53647001"
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
  [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
-  
-  

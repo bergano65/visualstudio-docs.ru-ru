@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: настроить сведения о конфигурации для решения Office'
-ms.custom: ''
+title: Как выполнить Установка сведений о конфигурации для решения Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916644"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Практическое: настроить сведения о конфигурации для решения Office
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Как выполнить Установка сведений о конфигурации для решения Office
   Файлы конфигурации можно использовать для настройки параметров, относящихся к решениям Office. Можно указать параметры, такие как политику привязки сборок, удаленные объекты, отладки и параметры трассировки.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "49949465"
  [Схема файла конфигурации для .NET Framework](/dotnet/framework/configure-apps/file-schema/index)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
-  
-  

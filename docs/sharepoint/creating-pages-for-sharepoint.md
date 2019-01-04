@@ -1,9 +1,6 @@
 ---
 title: Создание страниц для SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859819"
 ---
 # <a name="create-pages-for-sharepoint"></a>Создание страниц для SharePoint
   Можно создать страницы приложений, страниц узла, главных страниц и макетов страниц для сайта SharePoint.  
@@ -44,7 +41,7 @@ ms.locfileid: "36326054"
 |Главные страницы|Создание главной страницы, чтобы определить общие структуры для страниц узла и страницы приложений.|  
 |Макеты страниц|Макеты страниц относятся к [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] и позволяют определить общие структуры для страниц узла и страницы приложений.|  
   
- Обзор каждого типа страницы, см. в разделе [стандартный блок: страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095), и [макеты страниц и главные страницы](http://go.microsoft.com/fwlink/?LinkID=182096).  
+ Обзор каждого типа страницы, см. в разделе [стандартный блок: Страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095), и [макетов страниц и главные страницы](http://go.microsoft.com/fwlink/?LinkID=182096).  
   
 ## <a name="create-application-pages"></a>Создание страницы приложения
  Страницы приложений можно создать в Visual Studio, добавив **страницы приложения** элемента в проект SharePoint. Можно добавлять элементы управления на страницу и затем обрабатывать события элемента управления путем добавления кода.  
@@ -61,13 +58,12 @@ ms.locfileid: "36326054"
   
  Эти файлы в решение можно добавить непосредственно, или вы можете импортировать их. В любом случае необходимо создать соответствующие сопоставленные папки для каждого добавляемого элемента. Дополнительные сведения о том, как создать сопоставленную папку см. в разделе [как: Добавление и удаление сопоставленных папок](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
- Дополнительные сведения о создании каскадных таблиц стилей, см. в разделе [каскадных листы класс использования стилей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Дополнительные сведения о создании файлов JavaScript и JScript для решений SharePoint см. в разделе [параметр вверх страницы приложения для ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Дополнительные сведения о темах см. в разделе [стандартный блок: страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095).  
+ Дополнительные сведения о создании каскадных таблиц стилей, см. в разделе [каскадных листы класс использования стилей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Дополнительные сведения о создании файлов JavaScript и JScript для решений SharePoint см. в разделе [параметр вверх страницы приложения для ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Дополнительные сведения о темах см. в разделе [стандартный блок: Страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
 ## <a name="related-topics"></a>См. также
   
 |Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описывает способы добавления страниц приложений: *.aspx* содержимое, объединенное с эталонной страницей SharePoint.|  
-|[Практическое: Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)|Показано, как создавать страницы ASP.NET, которые выполняются на сайте SharePoint.|  
+|[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)|Показано, как создавать страницы ASP.NET, которые выполняются на сайте SharePoint.|  
 |[Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Показано, как для разработки и отладки веб-страницу ASP.NET для сайта SharePoint.|  
-  

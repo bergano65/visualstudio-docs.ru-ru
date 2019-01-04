@@ -2,7 +2,6 @@
 title: Аннотация поведения блокировки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
@@ -34,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e8b7aaa9edfeaa2f1515f3fce890c0d7ba9383d2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835296"
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
 Во избежание ошибок параллелизма в многопоточных программах, всегда выполняйте соответствующую дисциплину блокировок и используйте заметки SAL.
@@ -66,7 +65,7 @@ ms.locfileid: "53804881"
 ## <a name="locking-annotations"></a>Блокировки заметок
  В следующей таблице перечислены блокировки заметки.
 
-|Комментарий|Описание:|
+|Комментарий|Описание|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Добавляет заметки к функции и указывает, что функция после вызова увеличивает на единицу число монопольных блокировок объекта блокировок с именем `expr`.|
 |`_Acquires_lock_(expr)`|Добавляет заметки к функции и указывает, что функция после вызова увеличивает на единицу число блокировок объекта блокировок с именем `expr`.|
@@ -100,7 +99,7 @@ ms.locfileid: "53804881"
 ## <a name="shared-data-access-annotations"></a>Заметки доступа к общим данным
  В следующей таблице перечисляются аннотации для доступа к разделяемым данным.
 
-|Комментарий|Описание:|
+|Комментарий|Описание|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при доступе к данной переменной количество блокировок объекта с именем `expr` не менее единицы.|
 |`_Interlocked_`|Добавляет заметки к переменной и эквивалентно `_Guarded_by_(_Global_interlock_)`.|

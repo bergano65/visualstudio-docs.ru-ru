@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: локализация кода | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Локализация кода | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990796"
 ---
-# <a name="how-to-localize-code"></a>Практическое: локализация кода
+# <a name="how-to-localize-code"></a>Как выполнить Локализация кода
   Не локализованный код использует жестко заданные строковые значения. Локализовать строки кода, замените их вызовы <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, который является методом, который ссылается на локализованные ресурсы.  
   
 ## <a name="localize-code"></a>Локализация кода  
@@ -75,7 +70,6 @@ ms.locfileid: "37119793"
   
 ## <a name="see-also"></a>См. также
  [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Практическое: Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
- [Практическое: Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Способ: добавить файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Практическое руководство. Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
+ [Практическое руководство. Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Практическое руководство. Добавьте файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)  

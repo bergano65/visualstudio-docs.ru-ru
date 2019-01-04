@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: изменение конфигурации развертывания SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Изменение конфигурации развертывания SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843597"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Практическое: изменение конфигурации развертывания SharePoint
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Как выполнить Изменение конфигурации развертывания SharePoint
   Можно создать конфигурацию развертывания или изменить существующую конфигурацию развертывания. Например можно выполнить за один шаг или изменить порядок действий, описанных в процесс развертывания. Вы можете для создания или изменения конфигураций развертывания, поскольку невозможно изменить конфигурации встроенные и добавленные программным способом.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Создание конфигурации развертывания SharePoint  
@@ -58,4 +53,3 @@ ms.locfileid: "43774798"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
