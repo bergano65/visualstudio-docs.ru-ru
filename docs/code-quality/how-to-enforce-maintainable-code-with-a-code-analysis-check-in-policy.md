@@ -1,8 +1,7 @@
 ---
-title: Как выполнить Обеспечение простоты поддержки кода с политикой возврата анализа кода
+title: Как выполнить Обеспечение поддерживаемого кода с помощью политики возврата с анализом кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825721"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Как выполнить Обеспечение простоты поддержки кода с политикой возврата анализа кода
 

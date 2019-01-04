@@ -1,9 +1,6 @@
 ---
 title: Добавление контроллера меню на панель инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13a1fbd07498f77cde5004dc23df9a2edbfb2e92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852996"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Добавить контроллер меню в панели инструментов
 Это пошаговое руководство построено [добавить панель инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) Пошаговое руководство и показано, как добавить контроллер меню в панели инструментов окна инструментов. Показанные здесь шаги также может применяться к панели инструментов, которая создается в [добавить панель инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.  
@@ -116,15 +113,15 @@ ms.locfileid: "49867266"
 1.  В *TWTestCommandPackageGuids.cs*, добавьте идентификаторы команд для трех меню элементов после существующей команды идентификаторы.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  В *TWTestCommand.cs*, добавьте следующий код в верхней части `TWTestCommand` класса.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  В конструкторе TWTestCommand после последнего вызова `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
@@ -139,7 +136,7 @@ ms.locfileid: "49867266"
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -151,7 +148,7 @@ ms.locfileid: "49867266"
 4.  Добавьте обработчик событий для **TWTestCommand** класса, чтобы пометить выбранные команды в виде checked.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -164,7 +161,7 @@ ms.locfileid: "49867266"
 5.  Добавление обработчика событий, который отображает окно MessageBox, когда пользователь выбирает команду на контроллере меню:  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  

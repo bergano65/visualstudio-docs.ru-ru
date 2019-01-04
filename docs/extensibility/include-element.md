@@ -1,9 +1,6 @@
 ---
 title: Включите элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Include
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830340"
 ---
 # <a name="include-element"></a>Включить элемент
 Элемент Include указывает файл, который можно найти на указанном экземпляре включить путь для вставки в текущем файле.  Все символы и типы, определенные станут частью скомпилированного результата.  
@@ -37,10 +34,10 @@ ms.locfileid: "39498932"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|href|Обязательно. Путь к файлу заголовка:<br /><br /> href="stdidcmd.h»|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|href|Обязательный. Путь к файлу заголовка:<br /><br /> href="stdidcmd.h»|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   

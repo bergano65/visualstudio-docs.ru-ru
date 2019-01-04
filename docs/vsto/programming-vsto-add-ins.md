@@ -1,9 +1,6 @@
 ---
 title: Программирование надстроек VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,12 +32,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830655"
 ---
 # <a name="program-vsto-add-ins"></a>Программирование надстроек VSTO
   Если приложение Microsoft Office расширяется путем создания надстройки VSTO, код создается непосредственно для класса `ThisAddIn` соответствующего проекта. Этот класс можно использовать для выполнения таких задач, как получение доступа к объектной модели ведущего приложения Microsoft Office, настройка пользовательского интерфейса приложения, а также предоставление объектов созданной надстройки VSTO другим решениям Office.  
@@ -122,15 +119,15 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Задача|Используемый член|  
 |----------|-------------------|  
 |Выполнение кода для инициализации надстройки VSTO при ее загрузке.|Добавьте код в метод `ThisAddIn_Startup` . Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Startup> . Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).|  
-|Выполнение кода для очистки используемых надстройкой VSTO ресурсов перед выгрузкой надстройки VSTO.|Добавьте код в метод `ThisAddIn_Shutdown` . Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md). **Примечание:** в Outlook, по умолчанию `ThisAddIn_Startup` обработчик событий не вызывается при выгрузке надстройки VSTO. Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).|  
+|Выполнение кода для очистки используемых надстройкой VSTO ресурсов перед выгрузкой надстройки VSTO.|Добавьте код в метод `ThisAddIn_Shutdown`. Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md). **Примечание.**  В Outlook обработчик событий `ThisAddIn_Startup` не вызывается при каждой выгрузке надстройки VSTO по умолчанию. Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).|  
 |Отображение настраиваемой области задач.|Используйте поле `CustomTaskPanes` . Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).|  
 |Предоставление доступа к объектам в надстройке VSTO другим решениям Microsoft Office.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Дополнительные сведения см. в разделе [вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
-|Настройка функции в системе Microsoft Office путем реализации интерфейса расширяемости.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> для возврата экземпляра класса, который реализует интерфейс. Дополнительные сведения см. в разделе [возможности настройки пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Примечание:** для настройки пользовательского интерфейса ленты, можно также переопределить <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> метод.|  
+|Настройка функции в системе Microsoft Office путем реализации интерфейса расширяемости.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> для возврата экземпляра класса, который реализует интерфейс. Дополнительные сведения см. в разделе [возможности настройки пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Примечание.**  Для настройки пользовательского интерфейса ленты можно также переопределить метод <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A>.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Понимание дизайна в класс ThisAddIn  
  В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], интерфейсом является <xref:Microsoft.Office.Tools.AddIn> . Класс `ThisAddIn` является производным от класса <xref:Microsoft.Office.Tools.AddInBase> . Этот базовый класс перенаправляет все вызовы к членам внутренней реализации интерфейса <xref:Microsoft.Office.Tools.AddIn> в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
- В проектах надстройки VSTO для Outlook `ThisAddIn` класс является производным от `Microsoft.Office.Tools.Outlook.OutlookAddIn` класса в проектах, ориентированных на .NET Framework 3.5, а также из <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> в проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Эти базовые классы предоставляют дополнительные функции для поддержки областей форм. Дополнительные сведения об областях форм см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
+ В проектах надстроек VSTO для Outlook класс `ThisAddIn` является производным от класса `Microsoft.Office.Tools.Outlook.OutlookAddIn` в проектах, предназначенных для .NET Framework 3.5, или от класса <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Эти базовые классы предоставляют дополнительные функции для поддержки областей форм. Дополнительные сведения об областях форм см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).  
   
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Настройка пользовательского интерфейса приложений Microsoft Office  
  Используя надстройку VSTO, можно настроить пользовательский интерфейс для приложений Microsoft Office программными средствами. Например, можно настроить ленту таким образом, чтобы в ней отображалась настраиваемая панель задач, или создать настраиваемую область формы в Outlook. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
@@ -152,8 +149,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Создание и управление ими модальные диалоговые окна | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847666"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Создание и управление ими модальные диалоговые окна
-При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно окна отключен во время отображения диалогового, а затем повторно включить родительского окна, после закрытия окно. Если этого не сделать, может появиться ошибка: *Microsoft Visual Studio не удается завершить работу, так как модальное диалоговое окно является активным. Закройте это окно и повторите попытку.*  
+При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно окна отключен во время отображения диалогового, а затем повторно включить родительского окна, после закрытия окно. Если этого не сделать, появляется сообщение об ошибке: *Microsoft Visual Studio не удается завершить работу, так как модальное диалоговое окно является активным. Закройте это окно и повторите попытку.*  
   
  Это можно сделать двумя способами. Если диалоговое окно WPF, рекомендуется наследование из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем вызвать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> отображать диалоговое окно. После этого вы не обязательно должны управлять модальное состояние родительского окна.  
   

@@ -1,8 +1,7 @@
 ---
-title: 'CA2111: указатели не должны быть видимыми'
+title: CA2111. Указатели не должны быть видимыми
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a08d15ec491bb78c2d9398c8e689015c9523a3c1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1427cc61d540599b04118e6efff020f62a58bd1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839746"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: указатели не должны быть видимыми
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111. Указатели не должны быть видимыми
 
 |||
 |-|-|
@@ -38,7 +37,7 @@ ms.locfileid: "45546828"
 ## <a name="rule-description"></a>Описание правила
  <xref:System.IntPtr> и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, потенциально разрешение доступа к произвольным областям памяти или вызывая сбои приложения или системы.
 
- Если для защиты доступа к тип, содержащий поле указателя, см. в разделе [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Если для защиты доступа к тип, содержащий поле указателя, см. в разделе [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Обеспечьте безопасность указателя, сделав его только для чтения, внутренний или закрытый.
@@ -47,14 +46,14 @@ ms.locfileid: "45546828"
  Отключайте предупреждение из этого правила, если не следует полагаться на значение указателя.
 
 ## <a name="example"></a>Пример
- В следующем коде показано указатели, которые нарушают и удовлетворяют правилу. Обратите внимание на то, что не частных указателей также нарушают правило [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ В следующем коде показано указатели, которые нарушают и удовлетворяют правилу. Обратите внимание на то, что не частных указателей также нарушают правило [CA1051: Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>См. также
 

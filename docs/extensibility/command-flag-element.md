@@ -1,9 +1,6 @@
 ---
 title: Команда флаг элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c963592fd286273e18a0bdf15905693f9f9cf1ce
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836992"
 ---
 # <a name="command-flag-eelement"></a>Флаг команды Eelement
 Изменение родительского элемента.  
@@ -73,7 +70,7 @@ ms.locfileid: "39233182"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группу для [элемент Button](../extensibility/button-element.md) элементов.|  
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  

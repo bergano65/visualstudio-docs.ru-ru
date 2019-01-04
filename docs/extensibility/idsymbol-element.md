@@ -1,9 +1,6 @@
 ---
 title: Элемент IDSymbol | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef9ad479d44e43caf0a77c4db01cc349678c73ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836706"
 ---
 # <a name="idsymbol-element"></a>Элемент IDSymbol
 `IDSymbol` Элемент содержит идентификатор GUID: ID пары, который представляет меню, группы или команды. Идентификатор GUID поступает из родительского `GuidSymbol` элемент. `IDSymbol` Элемент имеет `name` атрибут, который содержит понятное имя для идентификатора, который содержится в `value` атрибута.  
@@ -37,15 +34,15 @@ ms.locfileid: "39500385"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Обязательно. Имя символа идентификатора.|  
-|value|Обязательно. Числовое значение идентификатора символа идентификатора.|  
+|имя|Обязательный. Имя символа идентификатора.|  
+|value|Обязательный. Числовое значение идентификатора символа идентификатора.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент GuidSymbol](../extensibility/guidsymbol-element.md)|Содержит идентификатор GUID пары GUID: ID, который представляет меню, группы или команды. Группирует элементы `IDSymbol`.|  
   

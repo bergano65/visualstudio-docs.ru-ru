@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное копирование и вставка фигур в документ Visio'
-ms.custom: ''
+title: Как выполнить Программное копирование и вставка фигур в документ Visio
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856492"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Практическое: программное копирование и вставка фигур в документ Visio
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Как выполнить Программное копирование и вставка фигур в документ Visio
   Вы можете программными средствами копировать фигуры на одной странице документа и вставлять их в новую страницу того же документа. Можно вставлять их в расположение по умолчанию (центр активного окна) или в то же расположение, в котором они находились на исходной странице.  
   
 ## <a name="copy-and-paste-shapes"></a>Копирование и вставка фигур  
@@ -52,6 +49,4 @@ ms.locfileid: "50671499"
  [Решения Visio](../vsto/visio-solutions.md)   
  [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
  [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)   
- [Практическое: программное добавление фигур в документ Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [Практическое руководство. Программное добавление фигур в документ Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

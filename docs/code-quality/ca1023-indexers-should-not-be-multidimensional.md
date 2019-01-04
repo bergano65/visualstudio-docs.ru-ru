@@ -1,8 +1,7 @@
 ---
-title: 'CA1023: индексы не должны быть многомерными'
+title: CA1023. Индексы не должны быть многомерными
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e1282612da884dfbaff646a3b84f713ada7ed75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852629"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: индексы не должны быть многомерными
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023. Индексы не должны быть многомерными
 
 |||
 |-|-|
@@ -56,6 +55,6 @@ ms.locfileid: "45547717"
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1043: используйте целый или строковый аргумент для индексаторов](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043: Используйте целый или строковый аргумент для индексаторов](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: используйте свойства, если это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Используйте свойства, если это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)
