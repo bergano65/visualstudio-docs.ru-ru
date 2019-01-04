@@ -1,9 +1,6 @@
 ---
 title: Функция SccWillCreateSccFile | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccWillCreateSccFile
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6723eed8d29df62b2016a851bd69ae0e53a6453c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2c30219eead54d44139925bd3e87400242516f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905667"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Функция SccWillCreateSccFile
 Эта функция определяет, поддерживает ли подключаемый модуль системы управления версиями Создание MSSCCPRJ. Файл SCC для каждого заданного файла.  
@@ -52,7 +49,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Выполнено.|  
 |SCC_E_INVALIDFILEPATH|Один из путей в массиве является недопустимым.|  

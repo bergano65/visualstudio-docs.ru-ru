@@ -1,22 +1,21 @@
 ---
-title: 'CA3076: выполнение небезопасного скрипта XSLT'
+title: CA3076. Выполнение небезопасного скрипта XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d711aad69dbdf3295ca7b2962a2e2022bd259059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891051"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: выполнение небезопасного скрипта XSLT
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076. Выполнение небезопасного скрипта XSLT
 
 |||
 |-|-|
@@ -31,7 +30,7 @@ ms.locfileid: "45546396"
 
 ## <a name="rule-description"></a>Описание правила
 
-**XSLT** — это стандарт консорциума World Wide Web (W3C) для преобразования XML-данных. XSLT обычно используется для записи таблиц стилей для преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
+**XSLT** — это стандарт консорциума W3C для преобразования данных XML. XSLT обычно используется для записи таблиц стилей для преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
 
 Чтобы вам не нужно предоставлять уязвимая зона, это правило активируется каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
 

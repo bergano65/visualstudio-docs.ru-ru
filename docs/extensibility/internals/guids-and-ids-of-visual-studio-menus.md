@@ -1,9 +1,6 @@
 ---
 title: Идентификаторы GUID и идентификаторы меню Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906947"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Меню идентификаторы GUID и идентификаторы Visual Studio
 В этой статье перечисляет значения GUID и идентификатор меню и группы в строке меню Visual Studio. Эти значения определены в *.vsct* файлы, которые устанавливаются как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -181,7 +178,7 @@ ms.locfileid: "39499943"
  Следующая иерархия показывает подменю, которые связаны с меню в строке меню Visual Studio. Так, как только группа может включать меню в виде родительского, каждый подменю необходимо опускаются из группы, меню, вместо непосредственно из меню. Дополнительные сведения о связи между меню, подменю и групп см. в разделе [Добавление подменю в меню](../../extensibility/adding-a-submenu-to-a-menu.md).  
   
 > [!NOTE]
->  Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки, следующим образом: *IDG_VS_\<имя меню\>_\< Имя группы\>*.  
+>  Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки, следующим образом: *IDG_VS_\<имя меню\>_\<имя группы\>*.  
   
 |Родительская группа|Подменю|Дочерние группы|  
 |------------------|-------------|------------------|  

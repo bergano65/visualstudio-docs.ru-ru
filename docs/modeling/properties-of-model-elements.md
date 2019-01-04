@@ -8,18 +8,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 464616a70d1c6779b2dd370933acc4a56300d17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7886a42466e0840c45ae0063a69b049ef7582b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900747"
 ---
 # <a name="properties-of-model-elements"></a>Свойства элементов модели
-В этом разделе перечислены свойства, отображаемые в окне «Свойства» при выборе элемента в схема определения DSL или обозреватель DSL.
+В этом разделе перечислены свойства, которое отображается в окне «Свойства», при выборе элемента в схеме определения DSL или в обозревателе DSL.
 
- В некоторых случаях можно найти дополнительные свойства в окне сведений DSL.
+ В некоторых случаях можно найти дополнительные свойства в окне сведения о DSL.
 
 ## <a name="related-sections"></a>Связанные разделы
  [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -1,9 +1,6 @@
 ---
 title: Родительский элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902441"
 ---
 # <a name="parent-element"></a>Родительский элемент
 Группу можно только родительский кнопку или поле со списком. Родительского меню или группы, возможно, другие меню или группу. В [элемент CommandPlacement](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, предком `Group_Undefined:0` будет содержится в разрешении.  
@@ -35,10 +32,10 @@ ms.locfileid: "39635860"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
-|id|Обязательно. Идентификатор команды идентификатор из GUID и идентификатора.|  
+|guid|Обязательный. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
+|id|Обязательный. Идентификатор команды идентификатор из GUID и идентификатора.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет  

@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Простая привязка данных в проекте уровня документа'
-ms.custom: ''
+title: Пошаговое руководство. Простая привязка данных в проекте уровня документа
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895497"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство: Простая привязка данных в проекте уровня документа
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы привязки данных в проекте уровня документа. Одного поля данных в базе данных SQL Server привязан к именованному диапазону в Microsoft Office Excel. Также показаны способы добавления элементов управления, которые позволяют прокручивать все записи в таблице.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824384"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1. Создайте проект книги Excel с именем **простая привязка данных**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Создайте проект книги Excel с именем **простая привязка данных**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio открывает новую книгу Excel в конструкторе и добавляет **простая привязка данных** проект **обозревателе решений**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824384"
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы привязки именованного диапазона к полю в базе данных. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [как: кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [Как Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Привязка ячеек к нескольким столбцам в таблице, а не с одним полем. Дополнительные сведения см. в разделе [Пошаговое руководство: сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Привязка ячеек к нескольким столбцам в таблице, а не с одним полем. Дополнительные сведения см. в разделе [Пошаговое руководство: Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Используйте <xref:System.Windows.Forms.BindingNavigator> для прокрутки записей. Дополнительные сведения см. в разделе [как: навигация по набору данных с элементом управления Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Используйте <xref:System.Windows.Forms.BindingNavigator> для прокрутки записей. Дополнительные сведения см. в разделе [Как Навигация по набору данных с элементом управления Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
  [Пошаговое руководство: Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

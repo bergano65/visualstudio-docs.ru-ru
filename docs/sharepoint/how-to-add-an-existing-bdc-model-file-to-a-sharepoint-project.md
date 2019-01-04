@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: Добавление существующего файла модели BDC в проект SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление существующего файла модели BDC в проект SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda78d33a5b49d936fb632e78472c91ab1230ba5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9efe862fcd0844d6b6e0c050d4c647b2d9c705a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950125"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Практическое: Добавление существующего файла модели BDC в проект SharePoint
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Как выполнить Добавление существующего файла модели BDC в проект SharePoint
   Можно настроить, упаковать и повторно развернуть модель бизнес-данным (BDC) с помощью Visual Studio для добавления файла модели (*.bdcm*) к любому проекту фермы SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Добавление файла модели подключения к бизнес-данным (BDC) в проект SharePoint  
@@ -52,9 +47,7 @@ ms.locfileid: "49922618"
   
 ## <a name="see-also"></a>См. также
  [Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Практическое: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Практическое: использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Практическое: Добавление пользовательской сборки в возможность BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Практическое руководство. Создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Практическое руководство. Добавление пользовательской сборки в возможность BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
- 

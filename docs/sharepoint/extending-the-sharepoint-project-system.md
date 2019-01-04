@@ -1,9 +1,6 @@
 ---
 title: Расширение системы проектов SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 028e7aab10ae1ee1de452e69c8148dac099039d0
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 51449003457ecd09e7dca7bc579d652c94a592e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891116"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
   С помощью набора шаблонов проектов и шаблонов элементов в Visual Studio можно создавать решения SharePoint. Эти шаблоны, требованиям многих сценариев разработки, однако вы можете столкнуться некоторых случаях, где они не предоставляют функциональные возможности, которые нужны. В этих случаях можно расширить системы проектов SharePoint.  
@@ -60,5 +57,3 @@ ms.locfileid: "36326791"
  [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Концепции и функции программирования для расширений SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Написание кода в решениях Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942977"
 ---
 # <a name="write-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.
@@ -115,7 +112,7 @@ ms.locfileid: "53803283"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Основные различия между разработкой для Office и управляемым кодом
  В таблице ниже указаны основные различия между разработкой для Office и управляемым кодом, написанным на Visual Basic или Visual C#.
 
-|Функция|Описание:|Поддержка Visual Basic и Visual C#|
+|Функция|Описание|Поддержка Visual Basic и Visual C#|
 |-------------|-----------------|-----------------------------------------|
 |Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [массивы &#40;C&#35; руководство по программированию&#41; ](/dotnet/csharp/programming-guide/arrays/index) и [массивы в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|
 

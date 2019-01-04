@@ -1,9 +1,6 @@
 ---
-title: IDebugModuleLoadEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugModuleLoadEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModuleLoadEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45136b122010ba632b31841662cd554ff7c6255d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cfa4a39488fac7ab420e7e8ad61c2f1fb044a7aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907778"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
-Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при загрузке или выгрузке модуля.  
+Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при загрузке или выгрузке модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,20 +29,20 @@ IDebugModuleLoadEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс для отчетов, что модуль был загружен или выгружен. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ DE реализует этот интерфейс для отчетов, что модуль был загружен или выгружен. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE создает и отправляет этот объект события отчета модуль был загружен или выгружен. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE создает и отправляет этот объект события отчета модуль был загружен или выгружен. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugModuleLoadEvent2`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Возвращает модуль, для которого создается загружен или выгружен.|  
+|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Возвращает модуль, для которого создается загрузке или выгрузке.|  
   
 ## <a name="remarks"></a>Примечания  
- Visual Studio использует это событие, чтобы **модули** окна в актуальном состоянии.  
+ Visual Studio использует это событие, чтобы сохранить **модули** окно в актуальном состоянии.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

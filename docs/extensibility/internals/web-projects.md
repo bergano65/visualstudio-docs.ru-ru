@@ -1,9 +1,6 @@
 ---
-title: Проекты веб-приложений | Документы Microsoft
-ms.custom: ''
+title: Проекты веб-приложений | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929754"
 ---
 # <a name="web-projects"></a>Веб-проекты
-Веб-проекта системы является систему проектов, которая создает веб-проектов. Веб-проекты в свою очередь создавать веб-приложения. Вы можете программировать с помощью стандартных языках программирования, таких как веб-страницы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], для сбора и обработки сведений от пользователя, сохранить ее в базе данных и так далее. Веб-страницы с связан код называются смарт-веб-страницы.  
+Веб-проекта системы — это система, создающий веб-проектов. Веб-проектов, в свою очередь, создайте веб-приложений. Вы можете программировать с помощью традиционных языках программирования, таких как веб-страницы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], для сбора и обработки информации от пользователя, сохранить его в базу данных и так далее. Веб-страницы с соответствующий код, называются смарт-веб-страниц.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ [Основные компоненты](../../extensibility/internals/web-project-essentials.md)  
  Предоставляет важные элементы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] веб-проектов.  
   
  [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)  
- Представляет Обзор [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проектов веб-сайтов. Проект веб-сайта создает один исполняемый файл для каждого смарт-веб-страницы. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке /App_Code.  
+ Представляет Обзор [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проектов веб-сайтов. Проект веб-сайта создает один исполняемый файл для каждого smart веб-страницы. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке/App_Code.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Проекты](../../extensibility/internals/projects.md)  

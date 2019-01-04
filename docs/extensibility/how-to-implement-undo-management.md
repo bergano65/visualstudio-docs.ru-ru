@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: реализовать механизмы управления отменой | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Реализуйте механизмы управления отменой | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915660"
 ---
-# <a name="how-to-implement-undo-management"></a>Практическое: реализуйте механизмы управления отменой
+# <a name="how-to-implement-undo-management"></a>Как выполнить Реализуйте механизмы управления отменой
 Основным интерфейсом для управления отката является <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, который реализуется с помощью среды. Для поддержки управления отменой, реализации единиц отката отдельные (то есть <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, который может содержать несколько отдельных шагов.  
   
  Как реализовать механизмы управления отменой зависит от ли ваш редактор поддерживает несколько представлений или нет. В следующих разделах описаны процедуры для каждой реализации.  
@@ -83,4 +80,4 @@ ms.locfileid: "49830019"
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Практическое: очистить стек отмены](../extensibility/how-to-clear-the-undo-stack.md)
+ [Практическое руководство. Очистить стек отмены](../extensibility/how-to-clear-the-undo-stack.md)

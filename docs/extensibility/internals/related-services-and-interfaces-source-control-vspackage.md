@@ -1,9 +1,6 @@
 ---
 title: Связанные службы и интерфейсы (пакет VSPackage управления версиями) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940629"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Связанные службы и интерфейсы (пакет VSPackage системы управления версиями)
 В этом разделе перечислены все интерфейсы, относящиеся к VSPackage, в элемент управления источником [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Системы управления версиями VSPackage реализует некоторые из этих интерфейсов и использует другим пользователям для выполнения задач системы управления версиями.  
@@ -33,7 +30,7 @@ ms.locfileid: "49940493"
   
  Интерфейсы являются:  
   
--   Требуется: Соответствующие сущности (проекта системы управления версиями VSPackage, заглушкой системы управления версиями,) должен реализовывать интерфейс.  
+-   Обязательные: Соответствующие сущности (проекта системы управления версиями VSPackage, заглушкой системы управления версиями,) должен реализовывать интерфейс.  
   
 -   Рекомендуется: Сущности должны реализовывать этот интерфейс; в противном случае функции системы управления версиями могут быть ограничены.  
   

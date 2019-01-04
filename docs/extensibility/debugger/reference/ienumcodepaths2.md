@@ -1,9 +1,6 @@
 ---
-title: IEnumCodePaths2 | Документы Microsoft
-ms.custom: ''
+title: IEnumCodePaths2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCodePaths2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc2441d2257c5e3c3e6d205ea27b64e03938490b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e43491c329753e50e7c733afb55ecd4f415d11a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965237"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Этот интерфейс представляет список путей кода.  
@@ -34,22 +31,22 @@ IEnumCodePaths2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Модуль отладки (DE) реализует этот интерфейс для представления списка путей кода.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Вызовите [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) для получения этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumCodePaths2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[Вперед](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Извлекает указанное число путей кода в последовательности перечисления.|  
-|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Пропускает указанное число путей кода в последовательности перечисления.|  
-|[Сброс](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[Клон](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Возвращает количество путей кода в перечислителе.|  
+|[Вперед](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Получает заданное число путей в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Пропускает заданное число путей в последовательности перечисления.|  
+|[Reset](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Получает число путей кода в перечислителе.|  
   
 ## <a name="remarks"></a>Примечания  
- Пути к коду представляет ветви точки или вызов функции в программе. Список путей кода представляет собой путь, через который заняло выполнение кода.  
+ Путь кода представляет ветвь точки или вызов функции в программе. Список путей кода представляет собой путь, через который занял выполнение кода.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

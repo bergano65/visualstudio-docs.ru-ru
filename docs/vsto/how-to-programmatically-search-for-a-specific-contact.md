@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программный поиск определенного контакта'
-ms.custom: ''
+title: Как выполнить Программный поиск определенного контакта
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8454795af30c6e6174b40de94ce85fe9647f618
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 93f3444745f3c7e6fdaf039cda5a8c95bb717eed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902754"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Практическое: программный поиск определенного контакта
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Как выполнить Программный поиск определенного контакта
   В этом примере выполняется поиск определенного контакта в папке контактов Outlook по имени и фамилии. В этом примере предполагается, что в папке контактов есть контакт с именем **John Evans** .  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,5 +32,3 @@ ms.locfileid: "35675210"
 ## <a name="see-also"></a>См. также  
  [Работа с элементами контактов](../vsto/working-with-contact-items.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

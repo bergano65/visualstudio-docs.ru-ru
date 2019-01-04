@@ -1,9 +1,6 @@
 ---
 title: Языковая служба и точки расширения редактора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907966"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Точки расширения редактора и служба языка
 Редактор предоставляет точки расширения, которые можно использовать как части Managed Extensibility Framework (MEF) компонентов, включая большинство функций службы языка. Ниже приведены категории точки основным расширением.  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: сопоставленный элемент оформления.  
   
   > [!NOTE]
-  >  Пример <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, см. в разделе Определение HighlightWordTag в [Пошаговое руководство: выделение текста](../extensibility/walkthrough-highlighting-text.md).  
+  >  Пример <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, см. в разделе Определение HighlightWordTag в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: связанные с регионами, которые можно разворачивать и сворачивать в создания структуры.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Чтобы применить тег данного определения формата, ссылаться на имя, заданные в атрибуте name класса (не отображаемое имя).  
   
 > [!NOTE]
->  Пример <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, см. Описание класса HighlightWordFormatDefinition в [Пошаговое руководство: выделение текста](../extensibility/walkthrough-highlighting-text.md).  
+>  Пример <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, см. Описание класса HighlightWordFormatDefinition в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Расширить элементы оформления  
  Элементы оформления определить визуальные эффекты, которые можно добавить либо к тексту, который отображается в виде текста или к тексту просматривать сам. Можно определить собственные оформления в качестве любого типа <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя элемента оформления.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: упорядочение, крайнего элемента относительно других слоев оформлений. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> определяет четыре уровня по умолчанию: выбор, структура, курсор и текст.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: упорядочение, крайнего элемента относительно других слоев оформлений. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> определяет четыре уровня по умолчанию: Выделение, структурирование, курсор и текст.  
   
   В следующем примере показано атрибутов экспорта в определении слой оформлений.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Дополнительные сведения о реализации источников IntelliSense см. в разделе ниже пошаговых руководства:  
   
- [Пошаговое руководство: Отображение отображение подсказок](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Пошаговое руководство: Отображение справки сигнатуры](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Пошаговое руководство: Отобразить справку по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Реализуйте контроллер IntelliSense  
  Чтобы настроить контроллер, необходимо реализовать <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> интерфейс. Кроме того необходимо реализовать поставщиком контроллера, а также следующие атрибуты:  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Дополнительные сведения об использовании контроллеры IntelliSense см. в разделе ниже пошаговых руководства:  
   
- [Пошаговое руководство: Отображение отображение подсказок](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

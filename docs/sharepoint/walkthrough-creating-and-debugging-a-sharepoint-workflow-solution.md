@@ -1,16 +1,11 @@
 ---
-title: 'Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912994"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint
   В этом пошаговом руководстве показано, как создать шаблон базовый последовательный рабочий процесс. Рабочий процесс выполняет проверку свойства библиотеку общих документов, чтобы определить, выполнялось ли рецензирование документа. Если в документе были проверены, рабочий процесс завершается.  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
@@ -187,7 +182,7 @@ ms.locfileid: "42626492"
     Boolean workflowPending = true;  
     ```  
   
-2.  Добавьте следующий метод в класс `Workflow1`. Этот метод проверяет значение параметра `Document Status` свойство из списка документов, чтобы определить, ли рецензирование документа. Если `Document Status` свойству `Review Complete`, то `checkStatus` метода задает `workflowPending` поле **false** означает Готово к завершению рабочего процесса.  
+2.  Добавьте следующий метод в класс `Workflow1` . Этот метод проверяет значение параметра `Document Status` свойство из списка документов, чтобы определить, ли рецензирование документа. Если `Document Status` свойству `Review Complete`, то `checkStatus` метода задает `workflowPending` поле **false** означает Готово к завершению рабочего процесса.  
   
     ```vb  
     Private Sub checkStatus()  
@@ -296,4 +291,3 @@ ms.locfileid: "42626492"
  [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Проектов и шаблоны элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
