@@ -1,8 +1,7 @@
 ---
-title: 'CA2236: вызывайте методы базового класса для типов ISerializable'
+title: CA2236. Вызывайте методы базового класса для типов ISerializable
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2236
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5b4dee5a274e88be407e015adc4d20c06605dd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2cdbd9a3af7c22e2afa29efdff411903c81b6620
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862098"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: вызывайте методы базового класса для типов ISerializable
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236. Вызывайте методы базового класса для типов ISerializable
 
 |||
 |-|-|
@@ -58,16 +57,16 @@ ms.locfileid: "45547650"
  [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/CSharp/ca2236-call-base-class-methods-on-iserializable-types_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2240: правильно реализуйте ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240: Правильно реализуйте ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: применяйте конструкторы сериализации](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: реализуйте конструкторы сериализации](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: следует правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238: СЛЕДУЕТ Правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235: помечайте все несериализуемые поля](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+ [CA2235: Помечайте все несериализуемые поля](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: обеспечьте наличие методов десериализации в необязательных полях](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: Предоставляйте методы десериализации для необязательных полей](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: обеспечьте безопасность конструкторов сериализации](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Обеспечьте безопасность конструкторов сериализации](../code-quality/ca2120-secure-serialization-constructors.md)

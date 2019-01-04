@@ -1,9 +1,6 @@
 ---
 title: Внутри основной редактор | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828528"
 ---
 # <a name="inside-the-core-editor"></a>В редакторе
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Базовый редактор — это набор из нескольких компонентов, которые позволяют изменять и запрашивать текстовую информацию. Если вы настраивали базовый редактор, используя старый API, могут продолжать использовать эти настройки, которые будут направляться через редактора адаптеров. Рекомендуется, однако адаптации настройки в новый редактор API.  
@@ -47,7 +44,7 @@ ms.locfileid: "39500453"
  [Событий текстового буфера, старый API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Список интерфейсов, которые используются для уведомления о событиях буфера текста.  
   
- [Практическое: регистрировать события буфера текста с старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Практическое руководство. Регистрация для событий текстового буфера с предыдущих версий API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  В этой статье описывается уведомить событий текстового буфера.  
   
  [Использование диспетчера текстов для наблюдения за глобальные параметры](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -75,8 +72,8 @@ ms.locfileid: "39500453"
  [Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Поясняет понятие текстовые метки и как они используются в базовом редакторе и перечислены интерфейсы, которые используются для доступа и управления текстовых маркеров.  
   
- [Практическое: Добавление стандартные текстовые метки](../extensibility/how-to-add-standard-text-markers.md)  
+ [Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)  
  Содержит пошаговые инструкции о способах создания текстового маркера и добавление пользовательской команды в контекстное меню.  
   
- [Практическое: Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)  
+ [Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)  
  Содержит пошаговые инструкции о том, как создать пользовательский текстовый маркер и обеспечить тип маркера как услуга.

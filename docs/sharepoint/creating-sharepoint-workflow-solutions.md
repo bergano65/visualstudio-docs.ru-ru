@@ -1,9 +1,6 @@
 ---
 title: Создание решений рабочих процессов SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820508"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
 
@@ -137,7 +134,7 @@ ms.locfileid: "53802502"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Пошаговые инструкции по созданию и отладке простого [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса.|
 |[Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Шаг за шагом приводит к созданию более полнофункциональное [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса с формами связывания и запуска.|

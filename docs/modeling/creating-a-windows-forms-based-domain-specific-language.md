@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869931"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования на схеме DSL. В этом разделе рассматривается привязка формы Windows к DSL, используя пакет SDK моделирования и визуализации Visual Studio.
@@ -118,9 +117,9 @@ Windows Forms можно использовать для отображения 
 
 1.  На **данных** меню, выберите **Показать источники данных**.
 
-     **Источников данных** откроется окно.
+     Открывается окно **Источники данных**.
 
-     Выберите **добавить новый источник данных**. **Мастер настройки источника данных** открывает.
+     Выберите **добавить новый источник данных**. Открывается **мастер настройки источника данных**.
 
 2.  Выберите **объект**, **Далее**.
 

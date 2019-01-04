@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Создание пакета решения SharePoint с помощью задачи MSBuild | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание пакета решения SharePoint с помощью задачи MSBuild | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818330"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Практическое: Создание пакета решения SharePoint с помощью задач MSBuild
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Как выполнить Создание пакета решения SharePoint с помощью задач MSBuild
   Сборки, очистки и проверки пакета SharePoint (*.wsp*) с помощью командной строки задачи MSBuild на компьютере разработчика. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.  
   
 ## <a name="build-a-sharepoint-package"></a>Создать пакет SharePoint  
@@ -112,5 +107,5 @@ ms.locfileid: "37119372"
   
 ## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Практическое: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Практическое: Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Практическое руководство. Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

@@ -1,6 +1,5 @@
 ---
 title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b08480c0535c3b2b4d119beb2d14e18997a3ae54
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: f1db73787a8d593b0d48b438d08d083c623c18bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854988"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
 Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговом окне, чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен проект.  
@@ -45,7 +44,7 @@ ms.locfileid: "53561490"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   

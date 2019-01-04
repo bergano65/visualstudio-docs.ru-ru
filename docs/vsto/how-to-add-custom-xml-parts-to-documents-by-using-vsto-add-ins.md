@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d364f148fb52412038c57e6f4e732ffe4e2a6e31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829661"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Как выполнить Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
   XML-данные можно сохранить в следующих типах документов, создав пользовательскую XML-часть в надстройке VSTO:  
@@ -87,5 +84,3 @@ ms.locfileid: "53648526"
 ## <a name="see-also"></a>См. также  
  [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)   
  [Практическое руководство. Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: ссылки на диапазоны листов в коде программными средствами'
-ms.custom: ''
+title: Как выполнить Ссылки на диапазоны листов в коде программными средствами
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 608ce006ccc34330631da8d4c947405b027f1a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851252"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Практическое: ссылки на диапазоны листов в коде программными средствами
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Как выполнить Ссылки на диапазоны листов в коде программными средствами
   Подобный процесс используется для ссылки на содержимое <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,13 +49,11 @@ ms.locfileid: "35674799"
   
 ## <a name="see-also"></a>См. также  
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
- [Практическое: Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Практическое: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Практическое: программным образом автоматически заполнить диапазонов с постепенным изменением данных](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Практическое: программный поиск текста в диапазонах листа](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [Практическое руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Практическое руководство. Программным образом автоматически заполнить диапазонов с постепенным изменением данных](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Практическое руководство. Программный поиск текста в диапазонах листа](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

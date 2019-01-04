@@ -1,9 +1,6 @@
 ---
-title: IDebugEventCallback2 | Документы Microsoft
-ms.custom: ''
+title: IDebugEventCallback2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEventCallback2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68d29d928f310cb045ed712a151f9275446465a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce30279cb58704ab712245ad69bcda197d0e7fc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852762"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
-Этот интерфейс используется подсистема отладки (DE) для отправки событий отладки диспетчера сеанса отладки (SDM).  
+Этот интерфейс используется ядром отладки (DE) для отправки событий отладки в диспетчер отладки сеансов (SDM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,20 +31,20 @@ IDebugEventCallback2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] реализует этот интерфейс для получения событий из модуля отладки.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Модуль отладки обычно получает этот интерфейс, когда вызывает SDM [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md), или [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Модуль отладки отправляет события SDM путем вызова [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Модуль отладки обычно получает этот интерфейс, когда вызывает SDM [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), или [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Модуль отладки отправляет события в SDM, вызвав [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEventCallback2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Отправляет уведомление SDM событий отладки.|  
+|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Отправляет уведомление отладки событий SDM.|  
   
 ## <a name="remarks"></a>Примечания  
- Несмотря на то что [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) и [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) указать, что они принимают `IDebugEventCallback2` интерфейса, это не так, и указатель на интерфейс всегда будет иметь значение null. Вместо этого необходимо использовать модуль отладки `IDebugEventCallback2` получено при вызове интерфейса [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md), или [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+ Несмотря на то что [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) и [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) указать, что они принимают `IDebugEventCallback2` интерфейса, это не так, и указатель интерфейса всегда будет иметь значение null. Вместо этого необходимо использовать модуль отладки `IDebugEventCallback2` интерфейса получен в вызове [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), или [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Если пакет реализует [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) в управляемом коде, настоятельно рекомендуется, <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> можно вызывать для различных интерфейсов, которые передаются [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+ Если пакет реализует [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) в управляемом коде, настоятельно рекомендуется, <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> можно вызывать для различных интерфейсов, которые передаются [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
