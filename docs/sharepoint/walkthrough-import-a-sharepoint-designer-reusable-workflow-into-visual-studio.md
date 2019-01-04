@@ -1,15 +1,10 @@
 ---
-title: 'Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821363"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Пошаговое руководство. Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio
   В этом пошаговом руководстве показано, как импортировать повторно используемый рабочий процесс, созданный в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.  
   
  Рабочие процессы, созданные в SharePoint Designer, или *декларативных рабочих процессов*, состоят из [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкции вместо кода. В SharePoint Designer 2010 появился *многократно используемых рабочих процессов*, которые являются портативных декларативных рабочих процессов, которые могут использоваться в различных списках на сайтах SharePoint.  
@@ -269,4 +264,3 @@ ms.locfileid: "49851482"
  [Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  
