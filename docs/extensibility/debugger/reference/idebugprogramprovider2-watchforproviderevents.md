@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramProvider2::WatchForProviderEvents | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20070349adb7fe66966edf0cdc044d145e56fb6e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: a362b87971a3c75e44ab2f19e0a0442af5942f36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834663"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Позволяет процессу получать уведомления о событиях порт.  
@@ -53,7 +50,7 @@ int WatchForProviderEvents(
  `Flags`  
  [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:  
   
-|Flag|Описание:|  
+|Flag|Описание|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|  
 |`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга значение возвращается для каждого узла).|  

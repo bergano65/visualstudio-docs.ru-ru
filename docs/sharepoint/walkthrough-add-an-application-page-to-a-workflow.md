@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Добавление страницы приложения в рабочий процесс | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Добавление страницы приложения в рабочий процесс | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938203"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство: Добавление страницы приложения в рабочий процесс
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Оно основано на проекте, описанную в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  В этом пошаговом руководстве описаны следующие задачи.
@@ -353,6 +350,6 @@ ms.locfileid: "49866900"
 ## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Практическое: Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)
+- [Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)
 - [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

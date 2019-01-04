@@ -1,9 +1,6 @@
 ---
 title: Службы Essentials | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867281"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Служба представляет собой контракт между двух пакетов VSPackage. Один пакет VSPackage предоставляет ряд интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.  
   
- Например можно использовать службу SVsActivityLog получить интерфейс IVsActivityLog, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [как: использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
+ Например можно использовать службу SVsActivityLog получить интерфейс IVsActivityLog, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [Как Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также предоставляет некоторые встроенные службы, которые не зарегистрированы. Пакеты VSPackage можно заменить встроенные или других служб, предоставляя переопределение службы. Для любой службы разрешена только одна служба переопределения.  
   
@@ -39,7 +36,7 @@ ms.locfileid: "49934409"
   
 - Службы или переопределения службы, они загружаются по требованию, то есть, поставщик услуг загружается при запросе службы, предоставляемые им в другом пакете VSPackage.  
   
-- Для поддержки загрузки по требованию, поставщик услуг регистрирует глобальные службы в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [как: предоставить службу](../../extensibility/how-to-provide-a-service.md).  
+- Для поддержки загрузки по требованию, поставщик услуг регистрирует глобальные службы в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Как Предоставляет службу](../../extensibility/how-to-provide-a-service.md).  
   
 - После получения службы, используйте [QueryInterface](/cpp/atl/queryinterface) (неуправляемый код) или приведения (управляемый код) для получения требуемого интерфейса, например:  
   
@@ -63,7 +60,7 @@ ms.locfileid: "49934409"
   
 ## <a name="use-getglobalservice"></a>Использование GetGlobalService  
   
-Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления. Дополнительные сведения об этих и других сценариев см. в разделе [как: Устранение неполадок службы](../../extensibility/how-to-troubleshoot-services.md).  
+Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления. Дополнительные сведения об этих и других сценариев см. в разделе [как: Устранение неполадок в службах](../../extensibility/how-to-troubleshoot-services.md).  
   
 Большинство служб Visual Studio можно получить путем вызова статического <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод.  
   
@@ -92,7 +89,7 @@ ms.locfileid: "49934409"
     End If
     ```  
     
-    Этот код получает службу SVsActivityLog и приводит его к IVsActivityLog интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
+    Этот код получает службу SVsActivityLog и приводит его к IVsActivityLog интерфейс, который может использоваться для записи в журнал действий. Например, см. в разделе [как: Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>См. также  
  [Список доступных служб](../../extensibility/internals/list-of-available-services.md)   

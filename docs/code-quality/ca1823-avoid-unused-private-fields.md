@@ -1,8 +1,7 @@
 ---
-title: 'CA1823: избегайте наличия неиспользованных закрытых полей'
+title: CA1823. Избегайте неиспользуемых частных полей
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9ef0e63e13ab6e05025ef1a24c4032feb5eacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5610e97b623c21a7a0f380e9f2e070400e0aefc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873240"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: избегайте наличия неиспользованных закрытых полей
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823. Избегайте неиспользуемых частных полей
 
 |||
 |-|-|
@@ -45,10 +44,10 @@ ms.locfileid: "49923710"
  Его можно безопасно подавить предупреждение из этого правила.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1812: не создавайте внутренние классы без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)

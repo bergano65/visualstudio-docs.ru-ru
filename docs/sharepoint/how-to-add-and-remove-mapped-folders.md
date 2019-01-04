@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: Добавление и удаление сопоставленных папок | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление сопоставленных папок | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823932"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Практическое: Добавление и удаление сопоставленных папок
   Некоторые из часто используемых папок в SharePoint, такие как Images и Layouts, глубоко внедрены в иерархию файлов. Вы можете сопоставить эти папки в проект SharePoint, для упрощения доступа к ним. Сопоставленные папки — это папки в проекте SharePoint, соответствующие физическому расположению файлов в пакете установки сервера SharePoint.  
@@ -40,7 +35,7 @@ ms.locfileid: "36757652"
   
 1.  В строке меню выберите **Файл** > **Создать** > **Проект**.  
   
-2.  В **новый проект** диалоговое окно последовательно раскройте элементы либо **Visual Basic** или **Visual C#** узел, разверните **Office/SharePoint** узел, а затем Выберите **решений SharePoint** узла.  
+2.  В **новый проект** диалогового окна разверните узел, либо **Visual Basic** или **Visual C#**  узел, разверните **Office/SharePoint** узел, а затем выберите **решений SharePoint** узла.  
   
 3.  В списке шаблонов проектов выберите **веб-часть SharePoint 2013 Visual** шаблона.  
   
@@ -85,4 +80,3 @@ ms.locfileid: "36757652"
   
 ## <a name="see-also"></a>См. также
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

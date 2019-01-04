@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828242"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 При написании текстовые шаблоны, считывающие модель, которая содержит ссылки на Visual Studio ModelBus, может потребоваться разрешения ссылок для доступа к целевой модели. В этом случае необходимо адаптировать текстовые шаблоны и на которую указывает ссылка предметно ориентированных языков (DSL):
@@ -160,7 +159,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 -   Используйте `this.ModelBus` для получения доступа к ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Пошаговое руководство: Тестирование текстового шаблона, использующего ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Пошаговое руководство. Тестирование текстового шаблона, использующего ModelBus
  В этом пошаговом руководстве выполните следующие действия.
 
 1.  Создайте два DSL. Один DSL *потребителя*, имеет `ModelBusReference` свойство, которое может ссылаться на другие DSL, *поставщика*.
@@ -181,7 +180,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. В схеме определения DSL, щелкните правой кнопкой мыши пустую часть схемы, не расположено в верхней части и нажмите кнопку **включить Modelbus**.
 
-   -   Если вы не видите **включить Modelbus**, необходимо загрузить и установить расширение VMSDK ModelBus. Найти его на сайте VMSDK: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+   -   Если вы не видите **включить Modelbus**, необходимо загрузить и установить расширение VMSDK ModelBus. Найти его на сайте VMSDK: [Визуализации и моделирования SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 3. В **включить Modelbus** выберите **предложить этот DSL для ModelBus**, а затем нажмите кнопку **ОК**.
 

@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление метода Updater | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление метода Updater | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872522"
 ---
-# <a name="how-to-add-an-updater-method"></a>Практическое: Добавление метода Updater
+# <a name="how-to-add-an-updater-method"></a>Как выполнить Добавление метода Updater
   Можно разрешить пользователям обновлять бизнес-данные во внешнем списке SharePoint, создав *Updater* метод. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Чтобы создать метод обновления  
@@ -48,7 +43,7 @@ ms.locfileid: "49951422"
   
    - Входной параметр для метода.  
   
-   - Дескриптор типа для параметра. По умолчанию Visual Studio использует дескриптор типа сущности, которое было определено для метода поиска (например: контакт).  
+   - Дескриптор типа для параметра. По умолчанию Visual Studio использует дескриптор типа сущности, которое было определено для метода поиска (например: Обратитесь в службу).  
   
    - Экземпляр метода для метода.  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951422"
   
 ## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое: Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Практическое: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  

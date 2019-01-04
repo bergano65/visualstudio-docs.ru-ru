@@ -1,9 +1,6 @@
 ---
-title: Пользовательских параметров решения (. Файл SUO) | Документы Microsoft
-ms.custom: ''
+title: Пользовательских параметров решения (. SUO-) файл | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
@@ -17,27 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b96e3ad2ec29402dddc7354df46293b99bac3ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51833f22a445916d9b76955893e4ff5c567cf4f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948950"
 ---
-# <a name="solution-user-options-suo-file"></a>Пользовательских параметров решения (. Файл SUO)
-Решения (.suo) в файле пользователя содержит параметры пользователя решения. Этот файл не проверяется в систему управления версиями.  
+# <a name="solution-user-options-suo-file"></a>Файл параметров пользователя решения (SUO-файл)
+Решения (SUO-) в файле пользователя содержит параметры пользователя решения. Этот файл не следует проверять систему управления версиями.  
   
- Решения (.suo) в файле пользователя — это структурированное хранилище, или составным, файлов, хранящихся в двоичном формате. Позволяет сохранить сведения о пользователе в потоки с имя потока, в которой ключ, который будет использоваться для идентификации информации в файл SUO. Файл пользовательских параметров решения используется для хранения параметров предпочтений пользователя и создается автоматически, когда Visual Studio сохраняет решения.  
+ Решения (SUO-) в файле пользователя — это структурированное хранилище, или составным, файл, хранящийся в двоичном формате. Сохранить сведения о пользователе в потоки с имя потока, что ключ, который будет использоваться для определения сведений в SUO-файл. Файл пользовательских параметров решения используется для хранения настройки параметров пользователя, а также создается автоматически, когда Visual Studio сохраняет решение.  
   
- Если среды открывает файл SUO, то перечисляются все загруженные пакеты VSPackage. Если VSPackage реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> интерфейс, то среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> метод в VSPackage, попросите его для загрузки всех данных из SUO-файл.  
+ Когда среде открывает файл SUO, он перечисляет всех загруженных пакетов VSPackage. Если VSPackage реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> интерфейс, то среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> метод VSPackage, попросите его для загрузки всех данных из SUO-файл.  
   
- Это VSPackage обязан знать, что создает поток может записан в файл SUO. Для каждого потока, который он написал, VSPackage обратный вызов в среду посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> для загрузки конкретного потока, который определяется параметром ключ, который является имя потока. Среда вызывает пакет VSPackage для чтения этого конкретного потока, передав имя потока и `IStream` указатель <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> метод.  
+ Это в пакете VSPackage обязан знать, что потоков, наверняка приходилось писать в SUO-файл. Для каждого потока, который он написал, VSPackage вызывает обратно в среду через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> для загрузки конкретного потока, который определяется с помощью ключа, которое является именем потока. Среды затем осуществляет обратный вызов VSPackage для чтения этого конкретного потока, передав имя потока и `IStream` указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> метод.  
   
- На этом этапе другой вызов `LoadUserOptions` ли другой раздел SUO-файл, имеющий для чтения. Этот процесс продолжается, пока все потоки данных в файл SUO чтения и обрабатываются средой.  
+ В этот момент другой вызов `LoadUserOptions` ли другой участок SUO-файл, имеющий для чтения. Этот процесс продолжается, пока все потоки данных в файл SUO были прочитаны и обрабатываются средой.  
   
- При сохранении или закрытии среда вызывает метод решения <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> метод с указателем <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> метод. `IStream` Содержащий двоичные данные должны быть сохранены передается <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> метод, который затем будет записывать данные в файл SUO и вызовы `SaveUserOptions` метод, чтобы проверить, существует ли другой поток данных для записи .suo файл.  
+ При сохранении или закрытии, среда вызывает метод решения <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> метод с указателем на <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> метод. `IStream` Содержащий двоичные данные для сохранения передается <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> метод, который затем будет записывать данные в файл SUO и вызовы `SaveUserOptions` метод, чтобы выяснить, имеется другой поток данных для записи .suo файл.  
   
- Эти два метода, `SaveUserOptions` и `WriteUserOptions`, рекурсивно вызывается для каждого потока данных сохраняется в файл SUO, передавая указатель `IVsSolutionPersistence`. Они называются рекурсивно для записи нескольких потоков для SUO-файл. Таким образом сведения о пользователе сохраняется вместе с решением и гарантированно существует при следующем открытии решения.  
+ Эти два метода `SaveUserOptions` и `WriteUserOptions`, называются рекурсивно для каждого потока данных сохраняется в SUO-файл, передав указатель на `IVsSolutionPersistence`. Они называются рекурсивно, чтобы разрешить для записи нескольких потоков к SUO-файл. Таким образом сведения о пользователе сохраняется с помощью решения и гарантированно существует при следующем открытии решения.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   

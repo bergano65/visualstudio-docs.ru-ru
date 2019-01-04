@@ -1,9 +1,6 @@
 ---
 title: Что&#39;возможности пакета SDK для Visual Studio 2017 | Документация Майкрософт
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952213"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2017
 
@@ -41,7 +38,7 @@ ms.locfileid: "39566912"
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Перенос проектов расширяемости в Visual Studio 2017
 
-Сведения об обновлении проектов расширяемости и манифесты VSIX для Visual Studio 2017, см. в разделе [как: перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Сведения об обновлении проектов расширяемости и манифесты VSIX для Visual Studio 2017, см. в разделе [как: Перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Настраиваемые шаблоны проектов и элементов
 

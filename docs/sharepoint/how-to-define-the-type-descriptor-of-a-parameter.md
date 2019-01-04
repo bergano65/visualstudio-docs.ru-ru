@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: определение дескриптора типа параметра | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Определение дескриптора типа параметра | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953161"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Практическое: определение дескриптора типа параметра
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Как выполнить Определение дескриптора типа параметра
   Дескриптор типа содержит свойства, описывающие тип данных параметра. Дескриптор типа может определить поле, сущность или коллекцию сущностей. Дополнительные сведения см. в разделе [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Определение дескриптора типа параметра  
@@ -50,7 +45,7 @@ ms.locfileid: "51294985"
   
 ### <a name="to-define-an-entity"></a>Определение сущности  
   
-1.  В **свойства** окне **имя** присваивается имя, описывающее сущность (например: **контакт**).  
+1.  В **свойства** окне **имя** присваивается имя, описывающее сущность (например: **Контактные**).  
   
 2.  Задайте **TypeName** присвоено полное имя типа, который представляет данную сущность. Этот тип может быть классом в проекте, типом, определенным в сборке, на которую есть ссылки в решении, или типом, определенным в объектной модели подключения к бизнес-данным.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294985"
   
 2. В строке меню выберите **представление**, **окно "Свойства"**.  
   
-3. В **свойства** окне **имя** присваивается имя, описывающее сущность (например: **контакты**).  
+3. В **свойства** окне **имя** присваивается имя, описывающее сущность (например: **Обращается к**).  
   
 4. Задайте **IsCollection** свойства **True**. Это означает, что дескриптор типа является коллекцией сущностей.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294985"
   
 ## <a name="see-also"></a>См. также
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Практическое: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)   
+ [Практическое руководство. Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

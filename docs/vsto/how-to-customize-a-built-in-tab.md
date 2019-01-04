@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Настройка встроенной вкладки
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859416"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Как выполнить Настройка встроенной вкладки
   На встроенную вкладку можно добавить группы и элементы управления. Встроенная вкладка — это вкладка, которая уже есть на ленте приложения Microsoft Office. Например **данных** вкладка — это встроенная вкладка Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.  
@@ -79,5 +76,3 @@ ms.locfileid: "53647341"
  [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  

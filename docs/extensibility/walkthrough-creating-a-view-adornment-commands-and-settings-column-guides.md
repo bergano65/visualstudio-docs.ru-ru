@@ -1,9 +1,6 @@
 ---
 title: Создание оформления представления, команд и параметров | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e937dfe47160959f2c011e53633c4d7b8a36766b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958748"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Пошаговое руководство. Создание оформления представления, команд и параметров (направляющие столбцов)
 Вы можете расширить редактор текста или кода Visual Studio с командами и эффектов представления. В этой статье показано, как приступить к работе с компонентом популярное расширение, направляющие столбцов. Направляющие столбцов являются визуально света линий, рисуемых в представлении текстового редактора, чтобы помочь в управлении код, чтобы ширина определенных столбцов. В частности форматированный код может быть важно для примеры включают в документах, в блогах, или отчеты об ошибках.

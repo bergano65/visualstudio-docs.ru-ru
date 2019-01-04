@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление команды в контекстное меню
+title: Как выполнить Добавление команды в контекстное меню
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987970"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Практическое руководство. Добавление команды в контекстное меню
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Как выполнить Добавление команды в контекстное меню
 Чтобы пользователи могли выполнять задачи, характерные для вашего доменного языка (DSL), можно добавить в него команды меню. Команды отображаются в контекстном меню, когда пользователь нажимает схему правой кнопкой мыши. Команду можно настроить таким образом, чтобы она появлялась в меню только при определенных обстоятельствах. Например, можно сделать команду видимой, только когда пользователь выбирает определенные типы элементов или элементы в определенных состояниях.
 
  В проекте DslPackage эта задача решается выполнением следующих действий.
@@ -33,7 +32,7 @@ ms.locfileid: "50967419"
    Примеры, см. в разделе [Visualization and Modeling SDK веб-сайт](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. Дополнительные сведения см. в разделе [как: изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. Дополнительные сведения см. в разделе [Как Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Определение команды с помощью MEF
  MEF (Managed Extension Framework) предлагает альтернативный метод определения команд в меню схемы. Его основная задача — включение доменного языка для расширения вами или другими сторонами. Пользователи могут выбрать установить только DSL или DSL и расширения. Кроме того, MEF уменьшает объем работы по определению команд контекстного меню после выполнения начальной работы по включению MEF в DSL.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Определение действий команды
  Для каждой команды определите метод `OnMenu...`, выполняющий необходимое действие при выборе этой команды в меню.
 
- Если изменения вносятся в элементы моделей, необходимо делать это внутри транзакции. Дополнительные сведения см. в разделе [как: изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Если изменения вносятся в элементы моделей, необходимо делать это внутри транзакции. Дополнительные сведения см. в разделе [Как Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  В данном примере типы `ClassShape`, `ModelClass` и `Comment` определяются в доменном языке, который производится из шаблона схем классов DSL.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Дополнительные сведения о том, как для перехода от объекта к объекту в модели и о том, как создавать объекты и ссылки, см. в разделе [как: изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Дополнительные сведения о том, как для перехода от объекта к объекту в модели и о том, как создавать объекты и ссылки, см. в разделе [как: Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Регистрация команды
  Повторите в C# объявления значений GUID и идентификаторов, которые были сделаны в разделе "Символы" CommandSet.vsct:
@@ -362,6 +361,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Практическое руководство. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Развертывание решений на доменных языках](../modeling/deploying-domain-specific-language-solutions.md)
-- [Пример кода: пример принципиальной схемы](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Пример кода: Пример принципиальной схемы](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

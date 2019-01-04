@@ -2,7 +2,6 @@
 title: Проверка XML-документа в редакторе XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899734"
 ---
 # <a name="xml-document-validation"></a>Проверка XML-документа
 
@@ -23,7 +22,7 @@ ms.locfileid: "34693842"
 
  Поиск схем, используемых для проверки правильности, осуществляется путем сопоставления пространства имен `targetNamespace` скомпилированной схемы с декларацией xmlns элемента. Скомпилированные схемы загружаются из одного из следующих мест, перечисленных в порядке приоритета.
 
--   От имени файла, указанного в **схемы** документа **свойства** окна.
+-   От имени файла, указанного в **схемы** поле документа **свойства** окна.
 
 -   Из встроенной схемы или DTD.
 

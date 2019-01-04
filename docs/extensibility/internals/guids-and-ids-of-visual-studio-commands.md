@@ -1,9 +1,6 @@
 ---
 title: Идентификаторы GUID и идентификаторы команд Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1440eb7da0299b79aa063d999d581cc159a88e50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898298"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы Visual Studio команды
 Значения GUID и идентификатор команды, добавленные в среде разработки Visual Studio (IDE) определяются в файлах .vsct, установленные как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,7 +31,7 @@ ms.locfileid: "50220164"
   
 ### <a name="to-locate-a-command-definition"></a>Для этого найдите определение команды  
   
-1. В Visual Studio, откройте следующие файлы в *< путь установки Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  папки: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. В Visual Studio, откройте следующие файлы в *< путь установки Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  папку: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
     Большинство команд Visual Studio определяются в *SharedCmdDef.vsct* и *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* определяет команды, относящиеся к отладчику, и *Venusmenu.vsct* определяет команды, относящиеся к веб-разработки.  
   

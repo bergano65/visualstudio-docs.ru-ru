@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: удаление расширения управляемого кода из документов'
-ms.custom: ''
+title: Как выполнить Удаление расширений управляемого кода из документов
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964777"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Практическое: удаление расширения управляемого кода из документов
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Как выполнить Удаление расширений управляемого кода из документов
   Можно программно удалить сборку настройки из документа или книги, которая является частью настройки уровня документа для Microsoft Office Word или Microsoft Office Excel. Затем пользователи могут открывать документы и просматривать содержимое, но любой собственный пользовательский интерфейс (UI), добавляемые в документы не будут отображаться и код не будет выполняться.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Можно удалить с помощью одного из сборки настройки `RemoveCustomization` методы, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Выбор способа зависит от того, требуется ли удалить настройку во время выполнения (то есть, выполнив кода в настройке слово документ или книгу Excel открыт), или если вы хотите удалить настройку из закрытого документа или документа, i s на сервере, который не установлен Microsoft Office.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как I: выполните присоединение и отсоединение сборки VSTO в документ Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Присоединять или отсоединять сборки VSTO в документ Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Чтобы удалить сборку настройки во время выполнения  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35675126"
   
 ## <a name="see-also"></a>См. также  
  [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Практическое: присоединение управляемого кода расширения для документов](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Практическое руководство. Вложение расширений управляемого кода в документы](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

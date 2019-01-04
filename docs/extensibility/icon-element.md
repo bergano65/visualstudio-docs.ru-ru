@@ -1,9 +1,6 @@
 ---
 title: Элемент Icon | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870012"
 ---
 # <a name="icon-element"></a>Элемент Icon
 Атрибут guid значок тега – идентификатор guid, определенный растрового изображения. `id` Атрибут выбирает слота в наборе точечных рисунков. Этот элемент является необязательным. Если этот элемент не включали значение **guidOfficeIcon:msotcidNoIcon** будет содержится в разрешении.  
@@ -37,8 +34,8 @@ ms.locfileid: "39497697"
   
 |Атрибут|Описание:|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор guid, определенный растрового изображения.|  
-|id|Обязательно. Выбор слота в наборе точечных рисунков.|  
+|guid|Обязательный. Идентификатор guid, определенный растрового изображения.|  
+|id|Обязательный. Выбор слота в наборе точечных рисунков.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -48,7 +45,7 @@ ms.locfileid: "39497697"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)||  
   
