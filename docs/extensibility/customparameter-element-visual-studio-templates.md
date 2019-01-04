@@ -1,10 +1,8 @@
 ---
 title: Элемент CustomParameter (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
 helpviewer_keywords:
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fcf6c82298d3ce322214b96ea638c2201e3da2d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851528"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Элемент CustomParameter (шаблоны Visual Studio)
 Содержит имя пользовательского параметра и значение, используемое при создании проекта или элемента из шаблона.  
@@ -38,8 +36,8 @@ ms.locfileid: "39500687"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Name`|Обязательно. Имя параметра. Формат для параметров: $*имя*$.|  
-|`Value`|Обязательно. Значение замены для параметра.|  
+|`Name`|Обязательный. Имя параметра. Формат для параметров: $*имя*$.|  
+|`Value`|Обязательный. Значение замены для параметра.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  

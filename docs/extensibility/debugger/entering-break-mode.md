@@ -1,9 +1,6 @@
 ---
 title: Переход в режим приостановки выполнения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 8f83059bb5608f99b9a984159771b5f37a1163ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886180"
 ---
 # <a name="enter-break-mode"></a>Перейти в режим приостановки выполнения
 Следующие данные описывают процесс, возникающий при обнаружении точки останова после шаг с заходом в функцию, выполняется к строке исходного кода с курсором или до точки останова.  

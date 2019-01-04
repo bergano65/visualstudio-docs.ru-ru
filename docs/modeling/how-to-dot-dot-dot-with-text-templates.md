@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887767"
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 Текстовые шаблоны в Visual Studio предоставляют удобный способ создания текста любого рода. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания этих код проекта. Этот раздел содержит описание наиболее часто задаваемые «Практические советы...?» вопросы.

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Настройка пакета решения SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Настройка пакета решения SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835400"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>Практическое: Настройка пакета решения SharePoint
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>Как выполнить Настройка пакета решения SharePoint
   С помощью конструктора пакетов для создания и настройки пакета (*.wsp*). Например можно добавить элементы проекта SharePoint и компоненты, указать, если веб-сервер сброса при развертывании решения и задайте тип сервера развертывания.  
   
 ## <a name="open-the-package-designer"></a>Откройте конструктор пакетов  
@@ -47,7 +42,7 @@ ms.locfileid: "37119884"
   
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Чтобы просмотреть файл манифеста в пакете с помощью обозревателя решений  
   
-1.  В **обозревателе решений**, выберите **Показать все файлы**.  
+1.  В **обозревателе решений** выберите **Показать все файлы**.  
   
 2.  Разверните пакет, разверните Package.package, а затем откройте *Package.Template.xml* файла.  
   
@@ -94,4 +89,3 @@ ms.locfileid: "37119884"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

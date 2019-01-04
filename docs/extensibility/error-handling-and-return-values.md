@@ -1,9 +1,6 @@
 ---
 title: Обработка ошибок и возвращаемые значения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio SDK], handling
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e5fbd68a82a74112f884a8091992c1fd6ba6ae
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 87ec370ce857345923d7c8deab0d61b8df1c0dde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898860"
 ---
 # <a name="error-handling-and-return-values"></a>Обработка ошибок и возвращаемые значения
 Пакеты VSPackage и COM используют ту же архитектуру для ошибки. `SetErrorInfo` И `GetErrorInfo` функции являются частью интерфейс (API) Win32. Любой пакет VSPackage в интегрированной среде разработки (IDE) можно вызвать эти глобальные API-интерфейсов Win32 для записи подробных сведений об ошибках информации при получении уведомление об ошибке. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет сборок взаимодействия для управления сведений об ошибке.  

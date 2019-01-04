@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная печать листов Excel'
-ms.custom: ''
+title: Как выполнить Программная печать листов Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904556"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Практическое: программная печать листов Excel
+# <a name="how-to-programmatically-print-worksheets"></a>Как выполнить Программная печать листов Excel
   Любой лист в книге можно напечатать.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -67,9 +64,7 @@ ms.locfileid: "49876647"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Практическое руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

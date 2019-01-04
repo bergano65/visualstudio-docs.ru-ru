@@ -1,9 +1,6 @@
 ---
 title: Обзор модели программирования для SharePoint расширений средств | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82309d00d45ab6ac801297a55371cf9be5620440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e575ac4d73464ba216d98bbd126a0165fdc9a2a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941944"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования SharePoint средств расширения
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понять назначение каждого из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.  
@@ -34,12 +31,12 @@ ms.locfileid: "49829486"
 
 |Интерфейс|Описание|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Реализация этого интерфейса позволяет определить новый тип элемента проекта SharePoint. Например, см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Реализация этого интерфейса позволяет расширить тип элемента проекта SharePoint, который уже установлен в Visual Studio. Например, см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Реализация этого интерфейса позволяет расширить проекты SharePoint. Например, см. в разделе [как: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Реализация этого интерфейса позволяет определить новый тип элемента проекта SharePoint. Например, см. в разделе [как: Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Реализация этого интерфейса позволяет расширить тип элемента проекта SharePoint, который уже установлен в Visual Studio. Например, см. в разделе [как: Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Реализация этого интерфейса позволяет расширить проекты SharePoint. Например, см. в разделе [как: Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|Реализация этого интерфейса позволяет определить новый шаг развертывания, выполняемый при развертывании или отзыве элемента проекта SharePoint. Например, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Реализация этого интерфейса позволяет расширить существующий узел в разделе **подключения SharePoint** узел в **обозревателя серверов** окна. Например, см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Реализация этого интерфейса позволяет определить новый тип узла в разделе **подключения SharePoint** узел в **обозревателя серверов** окна. Например, см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Реализация этого интерфейса позволяет расширить существующий узел в разделе **подключения SharePoint** узел в **обозревателя серверов** окна. Например, см. в разделе [как: Расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Реализация этого интерфейса позволяет определить новый тип узла в разделе **подключения SharePoint** узел в **обозревателя серверов** окна. Например, см. в разделе [как: Расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Реализация этого интерфейса позволяет определить настраиваемое правило проверки компонента. Например, см. в разделе [как: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Реализация этого интерфейса позволяет определить настраиваемое правило проверки пакета. Например, см. в разделе [как: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
 
@@ -62,24 +59,24 @@ ms.locfileid: "49829486"
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll    
 
-|Пространство имен|Описание|  
+|Пространство имен|Описание:|  
 |-|-|  
 |<xref:Microsoft.VisualStudio.SharePoint>|Содержит типы, используемые для расширения и автоматизации системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов. Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Содержит типы, используемые для расширения процесса развертывания для проектов SharePoint, например создание шагов и конфигураций развертывания. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Содержит типы, используемые для расширения узлов в группе **подключения SharePoint** узел в **обозревателя серверов** окна, или для определения новых типов узлов. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|Содержит типы, используемые для доступа к определениям компонентов в проекте SharePoint.|  
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|Содержит типы, используемые для доступа к определениям пакетов в решении SharePoint.|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. в разделе [как: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).| 
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. в разделе [Как Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).| 
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
-|Пространство имен|Описание|  
+|Пространство имен|Описание:|  
 |-|-|  
 |<xref:Microsoft.VisualStudio.SharePoint.Commands>|Содержит типы, которые можно использовать для создания пользовательских *команд SharePoint*. Команда SharePoint — это метод, который вызывает объектную модель сервера SharePoint из расширения инструментов SharePoint. Дополнительные сведения см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
-|Пространство имен|Описание|  
+|Пространство имен|Описание:|  
 |-|-| 
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Содержит типы, которые можно использовать для получения сведений о встроенных **обозревателя серверов** узлов, представляющих отдельные компоненты на сайте SharePoint, например узел, представляющий список, поле или тип содержимого. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
 
@@ -97,7 +94,7 @@ ms.locfileid: "49829486"
 
  Эта объектная модель определяется в наборе сборок, которые входят в состав пакета SDK Visual Studio. Ниже перечислены некоторые из основных сборок в этой объектной модели *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*, и  *Microsoft.VisualStudio.OLE.Interop.dll*.  
 
- Дополнительные сведения об объектной модели интеграции см. в разделе [Общие сведения о модели автоматизации](/visualstudio/extensibility/internals/automation-model-overview) и [Справочник по Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk-reference).  
+ Дополнительные сведения об объектной модели интеграции см. в разделе [Общие сведения о модели автоматизации](../extensibility/internals/automation-model-overview.md) и [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
 
 ### <a name="sharepoint-object-models"></a>Объектной модели SharePoint
  Расширения инструментов SharePoint могут использовать API-интерфейсы SharePoint для изменения сайта SharePoint или получения данных с сайта SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] предоставляют две разные объектные модели: объектную модель сервера и объектную модель клиента.  
@@ -113,4 +110,3 @@ ms.locfileid: "49829486"
  [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)  
-

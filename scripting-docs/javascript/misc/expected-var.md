@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39; var &#39; | Документы Microsoft
+title: Ожидалось «var» | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633244"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803472"
 ---
-# <a name="expected-39var39"></a>Ожидается &#39; var &#39;
+# <a name="expected-var"></a>Ожидалось ключевое слово "var"
 Ожидаемый «var» (ERRnoVar 1034))  
   
- Не удалось добавить ключевое слово var, когда оно является обязательным.  
+ Не удалось добавить ключевое слово var в том случае, если оно является обязательным.  
   
- Дополнительные сведения о ключевом слове var см. в разделе [оператор var](../../javascript/reference/var-statement-javascript.md).
+ Дополнительные сведения о ключевое слово var, см. в разделе [оператор var](../../javascript/reference/var-statement-javascript.md).

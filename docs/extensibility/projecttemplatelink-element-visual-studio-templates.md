@@ -1,10 +1,8 @@
 ---
 title: Элемент ProjectTemplateLink (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885985"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Элемент ProjectTemplateLink (шаблоны Visual Studio)
 Указывает путь к *.vstemplate* файлу для одного проекта в многопроектном шаблоне.  
@@ -60,7 +58,7 @@ ms.locfileid: "46495977"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Указывает организацию и содержимое многопроектных шаблонов.|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Группирует проекты в многопроектных шаблонах.|  
@@ -71,7 +69,7 @@ ms.locfileid: "46495977"
  Этот текст указывает путь к *.vstemplate* файла шаблона.  
   
 ## <a name="remarks"></a>Примечания  
- Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectTemplateLink` Элемент используется, чтобы указать расположение *.vstemplate* файл для одного из проектов в этом шаблоне. *.Vstemplate* файл многопроектного шаблона содержит один `ProjectTemplateLink` элемент для каждого проекта в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
+ Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectTemplateLink` Элемент используется, чтобы указать расположение *.vstemplate* файл для одного из проектов в этом шаблоне. *.Vstemplate* файл многопроектного шаблона содержит один `ProjectTemplateLink` элемент для каждого проекта в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Пример  
  В этом примере показан простой корневой многопроектных *.vstemplate* файл. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если `ProjectName` атрибут не существует, имя *.vstemplate* файл используется в качестве имени проекта.  
@@ -101,4 +99,4 @@ ms.locfileid: "46495977"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)
+ [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)

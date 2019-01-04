@@ -1,9 +1,6 @@
 ---
 title: Расширение редактора и языковых служб | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7194b245ad3803112f5596c82308c384840d7bdf
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5e1d8bac8f682017166c3e625aa0578c90515209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837334"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Расширение редактора и языковой службы
 Можно добавить собственный редактор компонентов службы языка (например, технология IntelliSense) и расширить большинство функций уровней в редакторе кода Visual Studio.  Полный список можно расширить, см. в разделе [точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md).  
@@ -31,7 +28,7 @@ ms.locfileid: "39637553"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Начало работы с расширениями редактора и служба языка](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Объясняется, как создать расширение редактора.|  
 |[В редакторе](../extensibility/inside-the-editor.md)|Описание общей структуры редактора и перечислены некоторые из его компонентов.|  
@@ -44,14 +41,14 @@ ms.locfileid: "39637553"
 |[Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Показано, как связывание типа контента с расширением имени файла.|  
 |[Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)|В этом разделе показано добавление значка к полям.|  
 |[Пошаговое руководство: Выделение цветом текста](../extensibility/walkthrough-highlighting-text.md)|Демонстрируется использование *теги* для выделения текста.|  
-|[Пошаговое руководство: Добавление структурирование](../extensibility/walkthrough-outlining.md)|Показано, как добавить структурирование для определенных типов фигурных скобок.|  
-|[Пошаговое руководство: Отображение парных фигурных скобок](../extensibility/walkthrough-displaying-matching-braces.md)|Показано, как для выделения парных фигурных скобок.|  
-|[Пошаговое руководство: Отображение отображение подсказок](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Показано, как отображать всплывающие окна кратких сведений, описывающих элементы кода, такие как свойства, методы и события.|  
-|[Пошаговое руководство: Отображение Справка по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)|В этой статье демонстрируется отображение всплывающих окон, которые предоставляют сведения о количестве и типах параметров в сигнатуре.|  
-|[Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)|Показан способ реализации завершение операторов.|  
-|[Пошаговое руководство: Фрагменты кода реализация](../extensibility/walkthrough-implementing-code-snippets.md)|Показан способ реализации расширения фрагмента кода.|  
+|[Пошаговое руководство: Добавление структуры](../extensibility/walkthrough-outlining.md)|Показано, как добавить структурирование для определенных типов фигурных скобок.|  
+|[Пошаговое руководство: Отображать парные фигурные скобки](../extensibility/walkthrough-displaying-matching-braces.md)|Показано, как для выделения парных фигурных скобок.|  
+|[Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Показано, как отображать всплывающие окна кратких сведений, описывающих элементы кода, такие как свойства, методы и события.|  
+|[Пошаговое руководство: Отобразить справку по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)|В этой статье демонстрируется отображение всплывающих окон, которые предоставляют сведения о количестве и типах параметров в сигнатуре.|  
+|[Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)|Показан способ реализации завершение операторов.|  
+|[Пошаговое руководство: Реализация фрагментов кода](../extensibility/walkthrough-implementing-code-snippets.md)|Показан способ реализации расширения фрагмента кода.|  
 |[Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|В этой статье демонстрируется отображение лампочки для предложения кода.|  
-|[Пошаговое руководство: Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Показано, как связать команду меню в VSPackage с помощью компонента MEF.|  
+|[Пошаговое руководство: Используйте команду оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Показано, как связать команду меню в VSPackage с помощью компонента MEF.|  
 |[Пошаговое руководство: Сочетания клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Показано, как связать контекстное меню в VSPackage с помощью компонента MEF.|  
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Сведения о Managed Extensibility Framework (MEF).|  
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Сведения о Windows Presentation Foundation (WPF).|  

@@ -1,24 +1,21 @@
 ---
 title: Метод GetAutoInsertExtensions
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9716f6adcee1d443e342074f3c46a57a1ace26db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915894"
 ---
 # <a name="getautoinsertextensions-method"></a>Метод GetAutoInsertExtensions
   Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.  
@@ -35,7 +32,7 @@ HRESULT GetAutoInsertExtensions(
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |*psaExtensionNames*|Имена расширений приложений для Office.|  
   
@@ -44,5 +41,3 @@ HRESULT GetAutoInsertExtensions(
   
 ## <a name="remarks"></a>Примечания  
  Каждое приложение для Office, вставляемый возвращается как имя расширения приложения Office, который соответствует значению в разделе **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Узел должен искать эти значения в реестре и автоматически вставлять расширения.  
-  
-  

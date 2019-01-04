@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugCodeContexts2 | Документы Microsoft
-ms.custom: ''
+title: IEnumDebugCodeContexts2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugCodeContexts2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6ff9a173bcfbb87606fe493697857d7ec2b323
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 198b184059b267bf3ab1879365cb1c0b58321e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937138"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
-Этот интерфейс перечисляет кода контекстов, связанные с сеансом отладки или с определенной программой или документа.  
+Этот интерфейс перечисляет контексты кода, связанного с сеанса отладки, или с определенной программой или документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,26 +29,26 @@ IEnumDebugCodeContexts2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс для представления списка контекстов кода для конкретного текста позиции в программе или список контекстов кода для контекста определенного документа.  
+ Модуль отладки (DE) реализует этот интерфейс для представления списка контекстов кода в определенном текстовом позиции в программе или список контекстов кода для контекста определенного документа.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Вызовите [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) получить этот интерфейс, представляющий список контекстов кода для должности определенный текст в исходном документе программы.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Вызовите [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) для получения этого интерфейса, представляющий список контекстов кода определенного текста в позиции программы исходного документа.  
   
- Вызовите [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) получить этот интерфейс, представляющий список всех контекстов кода в конкретном исходном документе.  
+ Вызовите [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) для получения этого интерфейса, представляющий список всех контекстов кода в конкретный документ-источник.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugCodeContexts2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[Вперед](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Извлекает указанное число контекстов код в последовательности перечисления.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Пропускает указанное число контекстов код в последовательности перечисления.|  
-|[Сброс](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[Клон](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Возвращает число контекстов кода в перечислителе.|  
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Извлекает указанное число контекстов кода в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Пропускает заданное число контекстов кода в последовательности перечисления.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Получает число контекстов кода в перечислителе.|  
   
 ## <a name="remarks"></a>Примечания  
- Visual Studio вызывает [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) для заполнения списка контекстов кода пользователь может выбирать при установка следующего оператора или отображения дизассемблированного кода для исходного файла. Несколько контекстов код может произойти, например, при наличии нескольких экземпляров шаблона стиля C++.  
+ Visual Studio вызывает [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) для заполнения списка контекстов кода пользователь может выбрать из когда установка следующего оператора или отображение дизассемблированного кода для исходного файла. Несколько контекстов кода может произойти, например, при наличии нескольких экземпляров шаблона стиля C++.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

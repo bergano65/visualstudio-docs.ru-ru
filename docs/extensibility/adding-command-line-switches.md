@@ -1,9 +1,6 @@
 ---
 title: Добавление параметров командной строки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a3dbe187407380c338488b0006b186d6875bfbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827511"
 ---
 # <a name="add-command-line-switches"></a>Добавить параметры командной строки
 Можно добавить параметры командной строки, которые применяются к VSPackage при *devenv.exe* выполняется. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере добавляется параметр MySwitch для подкласса VSPackage с именем **AddCommandSwitchPackage** без аргументов и с пакетом VSPackage, загружаются автоматически.  
@@ -34,7 +31,7 @@ ms.locfileid: "49901051"
 
 ||||
 |-|-|-|-|
-| Параметр | Описание|
+| Параметр | Описание:|
 | Аргументы | Число аргументов для параметра. Может быть «*», или список аргументов. |
 | DemandLoad | Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |  
 | HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?**. |
@@ -76,4 +73,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)   
  [Служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Файлов pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Файлов pkgdef](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

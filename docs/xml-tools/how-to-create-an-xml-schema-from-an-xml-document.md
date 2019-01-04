@@ -1,8 +1,7 @@
 ---
-title: Как создать XML-схему из XML-документа
+title: Как выполнить создать схему XML из XML-документа
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915209"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Как: Создание XML-схемы из XML-документа
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Как выполнить Создание схемы XML из XML-документа
 
 Редактор XML позволяет создать схему на языке XSD из XML-документа. Экземпляр XML-документа определяет способ создания схемы следующим образом.
 
@@ -29,20 +28,20 @@ ms.locfileid: "34548307"
 
 Созданные схемы затем используются для обеспечения поддержки технологии IntelliSense в XML-документе.
 
-Дополнительные сведения о модуле выведения схемы см. в разделе [вывод XML-схемы](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Дополнительные сведения о модуле выведения схемы см. в разделе [выведение схемы XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Порядок создания схемы XML
 
 1.  Загрузите экземпляр XML-документа в XML Editor.
 
-2.  Нажмите кнопку **Create Schema** кнопку **инструментов**.
+2.  Нажмите кнопку **Create Schema** кнопки **инструментов**.
 
      Документ схемы XML будет создан и открыт для каждого пространства имен в экземпляре XML-документа. Каждая схема открывается, как и любой временный файл.
 
      Схемы можно сохранять на диск, добавлять в проект или удалять.
 
     > [!NOTE]
-    >  **Create Schema** команда также доступна в контекстном меню редактора XML и **XML** меню.
+    >  **Create Schema** команда также доступна из контекстного меню редактора XML и **XML** меню.
 
 ## <a name="see-also"></a>См. также
 

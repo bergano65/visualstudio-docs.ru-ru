@@ -1,9 +1,6 @@
 ---
-title: Общие сведения о службе языка прежних версий | Документы Microsoft
-ms.custom: ''
+title: Общие сведения о службе прежней версией языка | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989609"
 ---
-# <a name="legacy-language-service-overview"></a>Общие сведения о службе языка прежних версий
-Языковая служба поддерживает возможности редактора, позволяет реализовать определенные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты. Классы Managed Package Framework (MPF) языка службы предоставляют полную поддержку для часто используемых функций и частичная поддержка других возможностей.  
+# <a name="legacy-language-service-overview"></a>Обзор языковой службы прежних версий
+Служба языка предоставляет поддержку редактора, которая позволяет реализовывать определенные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции. Классы Managed Package Framework (MPF) языка службы обеспечивают полную поддержку для часто используемых функций и частичная поддержка других функций.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Полностью поддерживаемые функции в MPF  
  Классы MPF языковой службы поддерживают следующие функции:  
@@ -42,27 +39,27 @@ ms.locfileid: "31131753"
   
 -   IntelliSense краткие сведения  
   
--   Член завершения IntelliSense  
+-   Автозавершение элементов IntelliSense  
   
 -   Завершение слов IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Частично поддерживаемые функции в MPF  
  MPF только частичный поддерживает следующие функции. Это означает, что необходимо реализовать методы, вызываемые MPF.  
   
--   Переформатирование кода. Вы указываете код, который реализует переформатирование.  
+-   Переформатирование кода. Вы указываете код, реализующий переформатирование.  
   
--   Проверка точек останова, указав допустимый код диапазонов. Вы указываете код, определяющий фрагментов кода.  
+-   Проверка точек останова, указав допустимый код диапазонов. Вы указываете код, определяющий диапазоны кода.  
   
--   Поддержка отладчика **видимые** окно для отображения переменных. Можно предоставить код, который определяет, что для отображения в окне.  
+-   Поддержка отладчика **"Видимые"** окно для отображения переменных. Можно предоставить код, который определяет, что для отображения в окне.  
   
--   Поддержка **панель навигации** для быстрых переходов между типы и члены. Реализация и возвращают вспомогательный класс, который заполняет списки в **панель навигации** поля со списком.  
+-   Поддержка **панель навигации** для быстрого перехода между типы и члены. Вы реализуете и возвращать вспомогательный класс, который заполняет списки в **панель навигации** поля со списком.  
   
 ## <a name="implementation"></a>Реализация  
- Необходимо выполнить ряд действий по реализации языка самой службы и функции службы языка, которые требуется поддерживать для своего языка. Эти действия рассматриваются в следующих разделах:  
+ Необходимо выполнить ряд действий по реализации самой службы языка и функциям службы языка, которые требуется поддерживать для своего языка. Эти действия рассматриваются в следующих разделах:  
   
--   [Реализация службы языка для прежних версий](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Регистрация службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
@@ -84,7 +81,7 @@ ms.locfileid: "31131753"
   
 -   [Завершение участников в языковой службе прежних версий](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [Сведения о параметрах в языковую службу прежних версий](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+-   [Сведения о параметрах в языковой службе прежних версий](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
 -   [Краткие сведения в языковой службе прежних версий](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
@@ -93,5 +90,5 @@ ms.locfileid: "31131753"
 -   [Проверка точек останова в языковой службе прежних версий](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>См. также  
- [Реализация службы языка для прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Расширяемость языковой службы прежних версий](../../extensibility/internals/legacy-language-service-extensibility.md)

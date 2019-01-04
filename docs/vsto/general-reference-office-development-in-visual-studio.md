@@ -1,57 +1,54 @@
 ---
-title: Общие справочные сведения (Разработка решений Office в Visual Studio)
-ms.custom: ''
+title: Общий Справочник (Разработка решений Office в Visual Studio)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, reference
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f32dedf1b0f431f3385c14f7c0d4d5ddd27982a9
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933182"
 ---
-# <a name="general-reference-office-development-in-visual-studio"></a>Общие справочные сведения (Разработка решений Office в Visual Studio)
-  В этом разделе содержатся технические сведения о проектах Microsoft Office в Visual Studio.  
+# <a name="general-reference-office-development-in-visual-studio"></a>Общий Справочник (Разработка решений Office в Visual Studio)
+  Этот раздел содержит технические сведения о проектах Microsoft Office в Visual Studio.  
   
 > [!NOTE]  
->  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
+>  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
   
 ## <a name="in-this-section"></a>Содержание раздела  
  [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)  
  Список основных сборок взаимодействия, которые можно установить вместе с Office, а также приводится краткое описание каждого из них.  
   
  [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)  
- Описывает, как манифесты приложения используются в решениях Office.  
+ Описывает, как манифесты используются в решениях Office.  
   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)  
- Описывает, как манифесты развертывания, используемых решениями Office.  
+ Описывает, как манифесты развертывания — это используемые решения Office.  
   
  [Справочник по пользовательскому интерфейсу &#40;разработка решений Office в Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
- Разделы, описывающие параметры, которые отображаются в различных диалоговых окон, windows и других пользовательских интерфейсов.  
+ Подразделы, в которых описываются параметры, которые отображаются в различных диалоговых окон, windows и других пользовательских интерфейсах.  
   
  [Сообщения об ошибках &#40;разработка решений Office в Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  Разделы, описывающие сообщения об ошибках для проектов Office.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности разработки для Office.  
+ [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности при разработке решений Office.  
   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)  
- Описывает образцы кода и пошаговые руководства для создания проектов Office в Visual Studio, которые помогут вам быстрее и эффективнее в синтаксис, структуру и приемы, используемые для построения решений Office.  
+ Описывает образцы кода и пошаговые руководства по созданию проектов Office в Visual Studio, которое поможет вам быстрее и эффективнее с синтаксис, структуру и приемы, используемые для построения решений для Office.  
   
- [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
  Ссылки на сведения о том, как приступить к созданию проектов Office с помощью Visual Studio.  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Получение списка установлены фрагменты кода (для прежних версий) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b09968ea178869dd9a4c6f1caeee83f60f667e3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8518ffb26c2761910d24160b33840e5fb1122011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931769"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство. Получение списка фрагментов кода (реализация прежних версий)
 Фрагмент кода — это часть кода, который может быть вставлен в исходный буфер с помощью команды меню (что позволяет, задав список фрагментов кода) или путем выбора из списка завершения IntelliSense ярлык фрагмента.  

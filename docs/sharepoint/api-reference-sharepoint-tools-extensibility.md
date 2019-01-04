@@ -1,9 +1,6 @@
 ---
 title: Справочник по API (расширения средств SharePoint) | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 202ddd802978c54c7ba773919ed3fd66a406cc05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987250"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Справочник по API (расширения средств SharePoint)
   Этот раздел содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.  
@@ -66,4 +63,3 @@ ms.locfileid: "36325798"
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  

@@ -2,21 +2,20 @@
 title: Включение и отключение анализа кода
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905602"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Практическое: Включение и отключение автоматического анализа кода для управляемого кода
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Как выполнить Включение и отключение автоматического анализа кода для управляемого кода
 
 Можно настроить анализ кода (статический), чтобы запустить после каждой сборки проекта управляемого кода. Можно задать разные кодовые свойства анализа для каждой конфигурации сборки, например, отладки и выпуска.
 

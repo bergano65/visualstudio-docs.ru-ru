@@ -8,32 +8,31 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914547"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 При изменении или добавлении текстовых шаблонов в решении доменного языка, могут возникнуть ошибки, когда обработчик преобразует шаблон к исходному коду, или при компиляции созданного кода. Следующий пример демонстрирует некоторые из вещей, которые можно сделать, чтобы отладка текстового шаблона.
 
 > [!NOTE]
->  Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: отладка текстового шаблона](debugging-a-t4-text-template.md).
+>  Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: Отладка текстового шаблона](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка
  В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:
 
-- Имя: DebuggingTestLanguage
+- Имя. DebuggingTestLanguage
 
-- Шаблон решения: минимальный язык
+- Шаблон решения: Минимальный язык
 
 - Расширение файла: .ddd
 
-- Название компании: Fabrikam
+- Название организации: Fabrikam
 
-  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: Создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Создание текстового шаблона
  Добавьте текстовый шаблон в решение.

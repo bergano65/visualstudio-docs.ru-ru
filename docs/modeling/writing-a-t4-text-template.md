@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990520"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-странице будет содержать "\<html >...» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.

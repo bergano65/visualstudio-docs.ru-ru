@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление в обозреватель сервера пользовательского узла SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление в обозреватель сервера пользовательского узла SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937667"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Способ: добавить пользовательский узел SharePoint в обозревателе серверов
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Как выполнить Добавить пользовательский узел SharePoint в обозревателе серверов
   Можно добавить пользовательские узлы под **подключения SharePoint** узел в **обозревателя серверов**. Это полезно, если требуется отображать дополнительные компоненты SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Чтобы добавить пользовательский узел, сначала создайте класс, определяющий новый узел. Создайте расширение, которое добавляет узел в качестве дочернего элемента существующим узлом.  
@@ -61,15 +58,15 @@ ms.locfileid: "36755645"
   
 1.  В проекте, определении узла, создайте класс, реализующий <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> интерфейс.  
   
-2.  Добавление <xref:System.ComponentModel.Composition.ExportAttribute> классу атрибут. Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> тип конструктору атрибута.  
+2.  Добавьте к классу атрибут <xref:System.ComponentModel.Composition.ExportAttribute> . Этот атрибут позволяет Visual Studio для обнаружения и загрузки вашего <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> реализации. Передайте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> тип конструктору атрибута.  
   
-3.  Добавление <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> классу атрибут. В расширении узла этот атрибут задает идентификатор строки для типа узла, который требуется расширить.  
+3.  Добавьте к классу атрибут <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> . В расширении узла этот атрибут задает идентификатор строки для типа узла, который требуется расширить.  
   
      Чтобы указать узел встроенных типов, предоставляемых средой Visual Studio, передайте один из следующих значений перечисления конструктору атрибута:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Используется, эти значения для указания узлов подключения к сайту (узлы, отображающие URL-адреса сайта), узлы сайтов и все другие родительские узлы в **обозревателя серверов**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Используйте эти значения для указания узлов подключения к сайту (узлы, отображающие URL-адреса сайта), узлы сайтов и все остальные родительские узлы в **обозревателя серверов**.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Используйте эти значения для указания одного из встроенных узлов, представляющих отдельный компонент на сайте SharePoint, например узел, представляющий список, поле или тип содержимого.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Эти значения можно используйте для указания одного из встроенных узлов, представляющих отдельный компонент на сайте SharePoint, например узел, представляющий список, поле или тип содержимого.  
   
 4.  В реализации <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> метод, дескриптор <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> событие <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> параметра.  
   
@@ -100,7 +97,5 @@ ms.locfileid: "36755645"
   
 ## <a name="see-also"></a>См. также
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Практическое: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  
+ [Практическое руководство. Расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

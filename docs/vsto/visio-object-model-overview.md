@@ -1,9 +1,6 @@
 ---
 title: Обзор объектной модели Visio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848471"
 ---
 # <a name="visio-object-model-overview"></a>Обзор объектной модели Visio
   Для разработки решений Office для Microsoft Office Visio вы можете взаимодействовать с объектной моделью Visio. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Visio и определены в пространстве имен `Microsoft.Office.Interop.Visio`.  
@@ -83,5 +80,3 @@ ms.locfileid: "50671408"
  [Решения Visio](../vsto/visio-solutions.md)   
  [Работа с документами Visio](../vsto/working-with-visio-documents.md)   
  [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Документы Microsoft
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839009"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Этот метод позволяет поставщика порта, чтобы отображалось предупреждение, прежде чем пользователь присоединяет к процессу unsafe.  
+Этот метод позволяет поставщика порта отображать предупреждение перед пользователь присоединяет к процессу unsafe.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +31,13 @@ int QueryCanSafelyAttach();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Существуют следующие возвращаемые значения.  
+ Возвращаемые значения, как показано ниже:  
   
--   `S_OK`: Присоединение к процессу можно безопасно и диалоговое окно предупреждение не отображается.  
+-   `S_OK`: Присоединение к процессу, безопасно и отображается диалоговое окно без предупреждения.  
   
--   `S_FALSE`: Присоединение возможно, проблемы безопасности и отображается диалоговое окно с предупреждением.  
+-   `S_FALSE`: Присоединение может не быть проблемой безопасности и отображается диалоговое окно с предупреждением.  
   
--   `FAILURE`: Происходит сбой присоединение к процессу.  
+-   `FAILURE`: Присоединение к процессу, завершится ошибкой.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

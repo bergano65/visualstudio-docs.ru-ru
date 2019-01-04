@@ -1,10 +1,8 @@
 ---
-title: Элемент TemplateGroupID (шаблоны Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Элемент TemplateGroupID (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7eebe25af23a6468bd0dfd4b60957a0b365a368
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913427"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
-Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент действителен, когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) равно `false`. Когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) равно `true`, а затем шаблон элементов доступен во всех типах проектов.  
+Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент действителен, когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) присваивается `false`. При [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) присваивается `true`, а затем шаблон элементов доступен во всех типах проектов.  
   
  \<VSTemplate >  
  \<TemplateData >  

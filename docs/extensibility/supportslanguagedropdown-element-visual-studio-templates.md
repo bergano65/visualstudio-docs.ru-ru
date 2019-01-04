@@ -1,10 +1,8 @@
 ---
-title: Элемент SupportsLanguageDropDown (шаблоны Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Элемент SupportsLanguageDropDown (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b907fc1dec31cee62ebebc2a1fb3676f77c407e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887728"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Элемент SupportsLanguageDropDown (шаблоны Visual Studio)
-Указывает, является ли шаблон веб-элемента идентичным для нескольких языков и ли **язык** включен параметр **Добавление нового элемента** диалоговое окно.  
+Указывает, является ли шаблон веб-элемента идентичным для нескольких языков и ли **языка** включен параметр **Добавление нового элемента** диалоговое окно.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,14 +52,14 @@ ms.locfileid: "31138832"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, означающее ли **язык** параметр доступен из **Добавление нового элемента** диалоговое окно.  
+ Этот текст должен быть либо `true` или `false`, указывающее, ли **языка** параметр доступен из **Добавление нового элемента** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
  `SupportsLanguageDropDown` — это необязательный элемент. Значение по умолчанию — `false`.  
   
- `SupportsLanguageDropDown` Элемент доступен только для веб-шаблоны элемента.  
+ `SupportsLanguageDropDown` Элемент доступен только для веб-шаблонов элементов.  
   
- Если значение для этого элемента имеет значение `true`, а затем шаблон элемента является одинаковым для всех языков программирования и **языка** будет включен параметр **Добавление нового элемента** диалоговое окно. Этот параметр позволяет выбрать язык программирования для нового элемента, необходимо создать на основе шаблона.  
+ Если присвоено значение для этого элемента `true`, а затем шаблон элемента является одинаковым для всех языков программирования и **языка** будет включен параметр **Добавление нового элемента** диалоговое окно. Этот параметр позволяет выбрать язык программирования для нового элемента, который вы хотите создать из шаблона.  
   
 ## <a name="example"></a>Пример  
  В следующем примере задается для отображения **языка** раскрывающийся список параметра.  

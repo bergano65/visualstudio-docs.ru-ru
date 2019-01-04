@@ -1,9 +1,6 @@
 ---
 title: Общие сведения о модели объектов Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821773"
 ---
 # <a name="excel-object-model-overview"></a>Обзор объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:  
@@ -48,7 +45,7 @@ ms.locfileid: "49880797"
   
   В этом разделе приводится краткий обзор объектной модели Excel. Ресурсы, где Дополнительные сведения об объектной модели Excel, см. в разделе [использование документации по объектной модели Excel](#ExcelOMDocumentation).  
   
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: использовать обработчики событий в Excel 2007 надстройка?](http://go.microsoft.com/fwlink/?LinkID=130291), и [How do I: использования фигуры, создание пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использовать обработчики событий в Excel 2007 надстройка? ](http://go.microsoft.com/fwlink/?LinkID=130291), и [инструкции: Создание пузырьковой диаграммы в Excel с помощью фигур? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Доступ к объектам в проекте Excel  
  При создании нового проекта надстройки VSTO для Excel Visual Studio автоматически создает *ThisAddIn.vb* или *ThisAddIn.cs* файл кода. Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.  
@@ -123,5 +120,3 @@ ms.locfileid: "49880797"
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|  
 |[Работа с листами](../vsto/working-with-worksheets.md)|Примеры выполнения стандартных задач с листами.|  
 |[Работа с книгами](../vsto/working-with-workbooks.md)|Примеры выполнения стандартных задач с книгами.|  
-  
-  

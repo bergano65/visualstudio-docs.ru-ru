@@ -1,10 +1,8 @@
 ---
 title: Элемент ASSEMBLY (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 74e57ae61ddfaa24de4cc8e3e332b3fa9f7250c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912903"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Элемент ASSEMBLY (шаблоны Visual Studio)
 Указывает сведения о сборке, в шаблоне используется для добавления в проекты ссылки сборки.  

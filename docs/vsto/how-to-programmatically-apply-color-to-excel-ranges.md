@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное применение цвета к диапазонам Excel'
-ms.custom: ''
+title: Как выполнить Программное применение цвета к диапазонам Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - color, Excel ranges
 - ranges, applying color
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4cd8a9528b0bcd360fd00f700172899f1480d0ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868028"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Практическое: программное применение цвета к диапазонам Excel
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Как выполнить Программное применение цвета к диапазонам Excel
   Чтобы применить цвет для текста в диапазон ячеек, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,9 +53,7 @@ ms.locfileid: "35256249"
 ## <a name="see-also"></a>См. также  
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Практическое: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Практическое: ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

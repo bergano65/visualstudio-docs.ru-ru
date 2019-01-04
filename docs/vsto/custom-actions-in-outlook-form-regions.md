@@ -1,9 +1,6 @@
 ---
 title: Пользовательские действия в областях формы Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869523"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Пользовательские действия в областях формы Outlook
   Действия отображаться кнопки, которые позволяют ответить на сообщение Microsoft Office Outlook. Например, для ответа на сообщение, пользователь щелкнуть **ответа**, **ответить всем**, или **вперед** кнопки действий. Каждое из этих действий создает нового почтового элемента и заполняет поля элемента с использованием данных из исходного элемента.  
@@ -58,5 +55,3 @@ ms.locfileid: "50671070"
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

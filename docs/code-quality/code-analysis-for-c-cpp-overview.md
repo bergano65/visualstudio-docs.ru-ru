@@ -2,7 +2,6 @@
 title: Общие сведения об анализе кода в C/C++
 ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -23,12 +22,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896400"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Анализ кода для C/C++ Обзор
 
@@ -52,23 +51,23 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Поддержка #pragma
 
-Можно использовать `#pragma` директиву, чтобы обрабатывать предупреждения как ошибки; включить или отключить предупреждения и отключение предупреждений для отдельных строк кода. Дополнительные сведения см. в разделе [как: значение свойства анализа кода для проектов C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Можно использовать `#pragma` директиву, чтобы обрабатывать предупреждения как ошибки; включить или отключить предупреждения и отключение предупреждений для отдельных строк кода. Дополнительные сведения см. в разделе [Как Задание свойств анализа кода для проектов C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Поддержка заметок
 
-Заметки улучшить точность анализа кода. Заметки содержатся дополнительные сведения об условиях до и после о параметров функции и типы возвращаемых значений. Дополнительные сведения см. в разделе [как: определение дополнительных сведений кода, с помощью __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Заметки улучшить точность анализа кода. Заметки содержатся дополнительные сведения об условиях до и после о параметров функции и типы возвращаемых значений. Дополнительные сведения см. в разделе [Как Укажите дополнительный код сведения с помощью __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Запуск средства анализа в рамках политики возврата
 
-Может потребоваться требуют, что все исходного кода возвраты удовлетворять определенные политики. В частности вы хотели бы убедиться, выполнение анализа в рамках самой последней локальной сборки. Дополнительные сведения о включении политику возврата с анализом кода, см. в разделе [Создание и использование анализа кода возврата политик](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Может потребоваться требуют, что все исходного кода возвраты удовлетворять определенные политики. В частности вы хотели бы убедиться, выполнение анализа в рамках самой последней локальной сборки. Дополнительные сведения о включении политику возврата с анализом кода, см. в разделе [Создание и использование анализа кода возврата политик](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Интеграция командного построения
 
-Можно использовать интегрированные функции системы построения для выполнения анализа кода в рамках [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] процесс сборки. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index?view=vsts).
+Можно использовать интегрированные функции системы построения для выполнения анализа кода в рамках [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] процесс сборки. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство: Анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Краткое руководство. Анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Пошаговое руководство: Анализ кода C/C++ на наличие дефектов](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Анализ кода для предупреждений C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Использование средств проверки на соответствие C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)

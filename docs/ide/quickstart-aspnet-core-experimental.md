@@ -1,5 +1,5 @@
 ---
-title: Создание веб-приложения ASP.NET Core на C#
+title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc
 ms.date: 10/29/2018
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ab4ce9393e922dec6677d37d7679e1a400a2b5fc
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158883"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684971"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -105,8 +105,8 @@ ms.locfileid: "53158883"
 Для получения дополнительных сведений перейдите к следующему руководству:
 
 > [!div class="nextstepaction"]
-> [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Начало работы с C# и ASP.NET в Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>См. также
 
-[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](../deployment/quickstart-deploy-to-azure.md)

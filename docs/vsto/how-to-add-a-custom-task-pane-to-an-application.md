@@ -1,9 +1,6 @@
 ---
-title: 'Как: добавление настраиваемой области задач в приложение'
-ms.custom: ''
+title: Как выполнить Добавление настраиваемой области задач в приложение
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822788"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Как: добавление настраиваемой области задач в приложение
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Как выполнить Добавление настраиваемой области задач в приложение
   Вы можете добавить настраиваемую область задач в приложения, перечисленные выше, с помощью надстройки VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,11 +32,11 @@ ms.locfileid: "34548818"
   
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Добавление настраиваемой панели задач в приложение  
   
-1.  Откройте или создайте проект надстройки VSTO для одного из приложений, указанных выше. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Откройте или создайте проект надстройки VSTO для одного из приложений, указанных выше. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.  
   
-3.  В **Добавление нового элемента** диалогового окна измените имя нового пользовательского элемента управления для **MyUserControl**, а затем нажмите кнопку **добавить**.  
+3.  В **Добавление нового элемента** диалоговое окно измените имя нового пользовательского элемента управления **MyUserControl**, а затем нажмите кнопку **добавить**.  
   
      Пользовательский элемент управления откроется в конструкторе.  
   
@@ -63,6 +60,4 @@ ms.locfileid: "34548818"
 ## <a name="see-also"></a>См. также  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Пошаговое руководство по автоматизации приложения из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
-  
-  
+ [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  

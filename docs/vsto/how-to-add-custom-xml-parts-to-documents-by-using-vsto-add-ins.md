@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO'
-ms.custom: ''
+title: Как выполнить Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ helpviewer_keywords:
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
 - application-level add-ins [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d364f148fb52412038c57e6f4e732ffe4e2a6e31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829661"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Как выполнить Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
   XML-данные можно сохранить в следующих типах документов, создав пользовательскую XML-часть в надстройке VSTO:  
   
 - книга Microsoft Office Excel;  
@@ -40,7 +37,7 @@ ms.locfileid: "49826900"
   
   Дополнительные сведения см. в разделе [Общие сведения о частях XML настраиваемого](../vsto/custom-xml-parts-overview.md).  
   
-  **Область применения.** Сведения этого раздела относятся к проектам уровня приложения для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Область применения:** Информация в этой статье относится к проектам уровня приложения для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Добавление пользовательской XML-части в книгу Excel  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49826900"
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)   
- [Практическое: Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
-  
-  
+ [Практическое руководство. Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  

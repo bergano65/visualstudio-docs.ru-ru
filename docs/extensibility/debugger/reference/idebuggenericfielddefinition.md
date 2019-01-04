@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericFieldDefinition | Документы Microsoft
-ms.custom: ''
+title: IDebugGenericFieldDefinition | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91906fa4e4b76f8d9c43c3a181dd0e8781219587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896590"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 Представляет определение поля для универсального типа управляемого кода.  
@@ -32,11 +29,11 @@ IDebugGenericFieldDefinition : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Создает экземпляр поля, заданный массив аргументов типа.|  
-|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Возвращает тип параметров с учетом число параметров.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Возвращает число параметров типа, связанный с полем универсального.|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Создает экземпляр поля задан массив аргументов типа.|  
+|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Получает параметры типа, учитывая количество параметров.|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Возвращает число параметров типа, связанное с этим универсальным.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  

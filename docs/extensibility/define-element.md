@@ -1,9 +1,6 @@
 ---
 title: Определите элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 69177b035ee8e0c162a629873110df9f7ec7917f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889160"
 ---
 # <a name="define-element"></a>Определение элемента
 Определяет пару имя-значение символа. Этот символ может быть рассчитано условные атрибуты. Дополнительные сведения см. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md). См. также [элемент Symbols](../extensibility/symbols-element.md).  
@@ -37,9 +34,9 @@ ms.locfileid: "39497165"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Обязательно. Имя символа:<br /><br /> Имя = «Режим»|  
-|value|Обязательно. Значение символа:<br /><br /> значение = «Стандартный»|  
-|Условие|Необязательный. Дополнительные сведения см. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|имя|Обязательный. Имя символа:<br /><br /> Имя = «Режим»|  
+|value|Обязательный. Значение символа:<br /><br /> значение = «Стандартный»|  
+|Условие|Необязательный параметр. Дополнительные сведения см. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  

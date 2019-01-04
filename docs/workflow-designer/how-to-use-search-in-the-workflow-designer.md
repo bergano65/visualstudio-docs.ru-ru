@@ -1,23 +1,22 @@
 ---
-title: Как использовать поиск в конструкторе рабочих процессов
+title: Как выполнить Как использовать поиск в конструкторе рабочих процессов
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52adbded9f570689cd5749cc620ca8f74222e308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854676"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Как использовать поиск в конструкторе рабочих процессов
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Как выполнить Как использовать поиск в конструкторе рабочих процессов
 
 Чтобы упростить создание более крупных и сложных рабочих процессов, можно выполнить поиск в конструкторе рабочих процессов для поиска элементов по ключевому слову. Обратите внимание, что конструктор не поддерживает замену.
 

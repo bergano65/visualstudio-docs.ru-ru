@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder | Документы Microsoft
-ms.custom: ''
+title: IDebugTypeFieldBuilder | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962079"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Представляет возможность создать поле, представляющее тип.  
+Представляет возможность создавать поле, которое представляет тип.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,16 +26,16 @@ ms.locfileid: "31121795"
 IDebugTypeFieldBuilder : IUnknown  
 ```  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс получен от поставщика символа.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс получается от поставщика символов.  
   
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, который представляет тип-примитив.|  
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель в указанный тип.|  
+|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, представляющий тип-примитив.|  
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель к заданному типу.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  

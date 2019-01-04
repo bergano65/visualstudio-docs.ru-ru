@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: столбцов ListObject карты к данным'
-ms.custom: ''
+title: Как выполнить Сопоставления столбцов ListObject с данными
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,24 +8,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899987"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Практическое: столбцов ListObject карты к данным
+# <a name="how-to-map-listobject-columns-to-data"></a>Как выполнить Сопоставления столбцов ListObject с данными
   При привязке элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> к <xref:System.Data.DataTable>вы можете не захотеть отображать все столбцы в списке или можете иметь некоторые столбцы, не привязанные к данным. Можно указать, какие столбцы должны отображаться в объекте <xref:Microsoft.Office.Tools.Excel.ListObject> , при вызове метода <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [практические советы Создание списка в Excel, подключенного к списку SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Создание списка в Excel, подключенного к списку SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Сопоставление столбцов  
   
@@ -66,8 +63,6 @@ ms.locfileid: "35675135"
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Практическое: с данными элемент управления ListObject заливки](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Практическое руководство. Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)  
-  
-  

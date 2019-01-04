@@ -1,9 +1,6 @@
 ---
 title: Сохранение динамических элементов управления в документах Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894799"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Сохранение динамических элементов управления в документах Office
 
@@ -38,7 +35,7 @@ ms.locfileid: "37059296"
 
 ## <a name="persist-host-controls-in-the-document"></a>Сохранение элементов управления ведущего приложения в документе
 
-Если сохранить и закрыть документ, все динамические элементы управления ведущего приложения будут удалены из документа. Останутся только базовые собственные объекты Office. Например <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> элемента управления ведущего приложения становится <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Собственные объекты Office не подключены к событиям элементов управления ведущего приложения и не имеют функций привязки к данным элемента управления ведущего приложения.
+Если сохранить и закрыть документ, все динамические элементы управления ведущего приложения будут удалены из документа. Останутся только базовые собственные объекты Office. Например, элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> превращается в <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Собственные объекты Office не подключены к событиям элементов управления ведущего приложения и не имеют функций привязки к данным элемента управления ведущего приложения.
 
 В следующей таблице перечислены собственные объекты Office, которые остаются в документе после всех типов элементов управления ведущего приложения.
 
@@ -56,7 +53,7 @@ ms.locfileid: "37059296"
 
 Для повторного создания элемента управления ведущего приложения для Word, или <xref:Microsoft.Office.Tools.Excel.NamedRange> или <xref:Microsoft.Office.Tools.Excel.ListObject> управления ведущего приложения для Excel, используйте `Add` \< *класс элемента управления*> метод <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> или <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> объекта. Используйте метод, имеющий параметр для собственного объекта Office.
 
-Например, если вы хотите создать <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> размещения элемента управления из существующего собственного <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> при открытии документа, используйте <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> метод и передайте его в существующий <xref:Microsoft.Office.Interop.Excel.ListObject>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel. Код повторно создает динамический <xref:Microsoft.Office.Tools.Excel.ListObject> , основанный на существующем <xref:Microsoft.Office.Interop.Excel.ListObject> с именем `MyListObject` в классе `Sheet1` .
+Например, если вы хотите создать элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> из существующего собственного <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> при открытии документа, используйте метод <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> и передайте существующий <xref:Microsoft.Office.Interop.Excel.ListObject>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel. Код повторно создает динамический <xref:Microsoft.Office.Tools.Excel.ListObject> , основанный на существующем <xref:Microsoft.Office.Interop.Excel.ListObject> с именем `MyListObject` в классе `Sheet1` .
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ ms.locfileid: "37059296"
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Удаление оболочек ActiveX при открытии документа
 
-Чтобы удалить все оболочки ActiveX, вызовите `GetVstoObject` метод для создания ведущего элемента для <xref:Microsoft.Office.Interop.Word.Document> или <xref:Microsoft.Office.Interop.Excel.Workbook> , представляющий открытый документ. Например, чтобы удалить все оболочки ActiveX из документа Word, можно вызвать `GetVstoObject` метод для создания ведущего элемента для <xref:Microsoft.Office.Interop.Word.Document> объект, передаваемый обработчику событий для <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> событий.
+Чтобы удалить все оболочки ActiveX, вызовите метод `GetVstoObject` для создания ведущего элемента <xref:Microsoft.Office.Interop.Word.Document> или <xref:Microsoft.Office.Interop.Excel.Workbook>, который представляет открытый документ. Например, чтобы удалить все оболочки ActiveX из документа Word, можно вызвать метод `GetVstoObject` для создания ведущего элемента объекта <xref:Microsoft.Office.Interop.Word.Document>, который передается в обработчик событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>.
 
 Эта процедура полезна, когда известно, что документ будет открываться только на компьютерах, где установлена надстройка VSTO. Если документ может быть передан другим пользователям, у которых не установлена надстройка VSTO, рекомендуется удалять элементы управления перед закрытием документа.
 
-В следующем примере кода показано, как вызвать `GetVstoObject` метод при открытии документа.
+В следующем примере кода показано, как вызвать метод `GetVstoObject` при открытии документа.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 Несмотря на то что `GetVstoObject` метод используется в основном для создания нового ведущего элемента во время выполнения, этот метод также очищает все оболочки ActiveX из документа при первом вызове для определенного документа. Дополнительные сведения об использовании `GetVstoObject` метод, см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Если Ваша надстройка VSTO создает динамические элементы управления при открытии документа, Ваша надстройка VSTO вызовет `GetVstoObject` метод как часть процесса создания элементов управления. Необходимо добавить отдельный вызов `GetVstoObject` метод, чтобы удалить все оболочки ActiveX в этом сценарии.
+Если Ваша надстройка VSTO создает динамические элементы управления при открытии документа, Ваша надстройка VSTO вызовет `GetVstoObject` метод как часть процесса создания элементов управления. В этом случае не нужно добавлять отдельный вызов метода `GetVstoObject`, чтобы удалить все оболочки ActiveX.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Удаление динамических элементов управления перед закрытием документа
 

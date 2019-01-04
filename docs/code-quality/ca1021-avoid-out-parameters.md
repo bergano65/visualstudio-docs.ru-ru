@@ -1,8 +1,7 @@
 ---
-title: 'CA1021: не используйте параметры out'
+title: CA1021. Не используйте параметры out
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1021
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1082aaef3422923e0f74e8bd5eb242f3ae8e6023
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911865"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: не используйте параметры out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021. Не используйте параметры out
 
 |||
 |-|-|
@@ -87,11 +86,11 @@ Passing by return value:
 
 ## <a name="try-pattern-methods"></a>Попробуйте методы шаблона
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  Методы, которые реализуют **попробуйте\<что-то >** шаблонов, такого как <xref:System.Int32.TryParse%2A?displayProperty=fullName>, не вызывают это нарушение. Следующий пример показывает структуру (тип значения), который реализует <xref:System.Int32.TryParse%2A?displayProperty=fullName> метод.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1045: не передавайте типы по ссылке](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+ [CA1045: Не передавайте типы по ссылке](../code-quality/ca1045-do-not-pass-types-by-reference.md)

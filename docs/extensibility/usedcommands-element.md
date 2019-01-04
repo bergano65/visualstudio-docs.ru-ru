@@ -1,9 +1,6 @@
 ---
 title: Элемент UsedCommands | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - UsedCommands
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a85d4480aa9c5a10243e09179c92b4aeb91df235
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851200"
 ---
 # <a name="usedcommands-element"></a>Элемент UsedCommands
 Элемент UsedCommands группирует элементы UsedCommand и другими признаками UsedCommands.  
@@ -43,17 +40,17 @@ ms.locfileid: "49934773"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент UsedCommand](../extensibility/usedcommand-element.md)|Команда, которая реализуется другим кодом.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды (например, элементы меню, меню, панелей инструментов и поля со списком), предоставляемых VSPackage интегрированной среды разработки (IDE).|  
   

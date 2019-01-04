@@ -1,9 +1,6 @@
 ---
-title: Архитектура типы проектов | Документы Microsoft
-ms.custom: ''
+title: Архитектура типов проектов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef7fe6fbf4a8899606dca35c10745e68e3cbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929310"
 ---
-# <a name="project-types-architecture"></a>Архитектура типы проектов
+# <a name="project-types-architecture"></a>Архитектура типов проектов
 Этот раздел содержит подробные сведения об архитектуре типов проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -31,14 +28,14 @@ ms.locfileid: "31130613"
  Описываются интерфейсы, типы проектов необходимо реализовать и при необходимости можно реализовать дополнительные функциональные возможности.  
   
  [Когда следует создавать типы проектов](../../extensibility/internals/when-to-create-project-types.md)  
- Введите помогает решить, когда необходимо создать проект и когда можно использовать другой [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возможность расширения, такие как пакеты VSPackage и редакторы для достижения общей цели.  
+ Введите помогает решить, когда необходимо создать проект и когда можно использовать другой [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возможность расширения, такие как пакеты VSPackage и редакторов для достижения той же цели.  
   
  [Иерархии и выбор](../../extensibility/internals/hierarchies-and-selection.md)  
- Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует для взаимодействия с пользователями, согласованное и упрощенный иерархии и выделенный фрагмент.  
+ Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует для работы согласованный и упрощенный пользовательский иерархии и контекст выделения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Подтипы проектов](../../extensibility/internals/project-subtypes.md)  
- Объясняет, как подтипы проекта позволяют настраивать поведение системы проектов из [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
+ Объясняет, как подтипов проекта позволяют настраивать поведение системы проектов из [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
   
  [Типы проектов](../../extensibility/internals/project-types.md)  
- Общие сведения о проектах как основных стандартных блоках [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Приводятся ссылки на дополнительные разделы, в которых объясняется, как проекты контролировать создание и компиляция кода.
+ Общие сведения о проектах как основные стандартные блоки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Приведены ссылки на дополнительные разделы, в которых объясняется, как управлять проектами, создания и компиляции кода.

@@ -1,9 +1,6 @@
 ---
 title: Пошаговые руководства по настройке пользовательского интерфейса Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826589"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Пошаговые руководства по настройке пользовательского интерфейса Office
   В приведенных ниже пошаговых руководствах описываются способы настройки пользовательского интерфейса приложений Microsoft Office с помощью настроек на уровне документа и надстроек VSTO.  
@@ -39,7 +36,7 @@ ms.locfileid: "35674856"
  Описывает способы добавления элементов управления, привязанных к источнику данных, на панель действий в Excel.  
   
 ## <a name="custom-task-pane-walkthroughs"></a>Пошаговые руководства по панели задач  
- [Пошаговое руководство: Автоматизация приложения из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
  Описываются способы создания настраиваемой области задач, содержащей элемент управления, который автоматизирует работу ведущего приложения при нажатии элемента управления.  
   
  [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
@@ -52,7 +49,7 @@ ms.locfileid: "35674856"
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
  Демонстрируется создание настраиваемой вкладки на ленте с помощью конструктора ленты. Вкладка содержит кнопку, которую можно использовать для скрытия или отображения области действий.  
   
- [Пошаговое руководство: Обновление элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)  
+ [Пошаговое руководство: Обновления элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)  
  Демонстрируется, как использовать объектную модель ленты для обновления элементов управления на ленте после ее загрузки в приложение Office.  
   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
@@ -65,7 +62,7 @@ ms.locfileid: "35674856"
  [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Демонстрируется изменение форматирования в документе Word с помощью флажков в настройке на уровне документа.  
   
- [Пошаговое руководство: Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Пошаговое руководство: Отображаемый текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Показано, как использовать кнопки и текстовые поля в документах Word.  
   
  [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
@@ -78,7 +75,7 @@ ms.locfileid: "35674856"
  [Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Демонстрируются основные принципы использования флажков на листе Excel для изменения форматирования.  
   
- [Пошаговое руководство: Отображение текста в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
+ [Пошаговое руководство: Отображаемый текст в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Демонстрирует основные принципы использования кнопок и текстовых полей на листах Excel.  
   
  [Пошаговое руководство: Обновление диаграммы на листе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
@@ -92,5 +89,3 @@ ms.locfileid: "35674856"
  [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

@@ -3,7 +3,6 @@ title: Конструктор рабочих процессов - Добавле
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860359"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Диалоговое окно «Добавление инициализаторов корреляции»
 
@@ -32,7 +31,7 @@ ms.locfileid: "49948958"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **Добавление инициализаторов корреляции** диалоговое окно:
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание:|
 |-|-----------------|
 |**Добавить инициализатор**|Нажмите кнопку **добавить initialize** служит для добавления в коллекцию дополнительный инициализатор.|
 |**Тип корреляции**|Указывает тип инициализатора корреляции. Может быть выбран один из четырех типов.<br /><br /> 1. Инициализатор корреляции обратного вызова для указания <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Инициализатор контекстной корреляции для указания <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Инициализатор корреляции «запрос-ответ» для указания <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Инициализатор корреляции запросов для указания <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Чтобы изменить **типа корреляции**<br /><br /> 1. Вкладки в указанную строку в **добавить инициализатор** DataGrid.<br />2. Чтобы установить фокус на **CorrelationTypeComboBox**, нажмите клавишу **Ctrl**+**вкладке**.<br />3. Нажмите клавиши Alt + Стрелка вниз всплывает **ComboBox** и изменить его.|

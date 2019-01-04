@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO'
-ms.custom: ''
+title: Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968648"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- **Применяется к:** информация в этой статье относится к проектам надстроек VSTO для Excel. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Область применения:** Информация в этой статье относится к проектам надстроек VSTO для Excel. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49915702"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Создание проекта надстройки VSTO для Excel  
   
-1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], создайте проект надстройки VSTO для Excel с именем **ExcelDynamicControls**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], создайте проект надстройки VSTO для Excel с именем **ExcelDynamicControls**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Добавьте ссылку на **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms на лист далее в этом пошаговом руководстве.  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915702"
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)  
-  
-  

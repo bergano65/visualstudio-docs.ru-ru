@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Создание приемника событий | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание приемника событий | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861576"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Практическое: Создание приемника событий
+# <a name="how-to-create-an-event-receiver"></a>Как выполнить Создание приемника событий
   Создав *приемников событий*, может отвечать, когда пользователь взаимодействует с элементами SharePoint, такие как списки или элементы списка. Например, код приемника событий может сработать, если пользователь изменит календарь или удалит имя из списка контактов. Следуя описанным в этом разделе процедурам, можно узнать, как добавить приемник событий в экземпляр списка.
 
  Для выполнения этих шагов требуется установить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и иметь поддерживаемые версии Windows и SharePoint. Так как в этом примере требуется проект SharePoint, необходимо также выполнить процедуру, описанную в разделе [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).

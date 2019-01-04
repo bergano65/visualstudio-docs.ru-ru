@@ -1,9 +1,6 @@
 ---
 title: Элемент SafeControl | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864142"
 ---
 # <a name="safecontrol-element"></a>SafeControl - элемент
   Представляет элемент управления ASPX или веб-части, которое обозначается как безопасные для любого доступа пользователя к любой странице ASPX на сайте SharePoint.  
@@ -41,7 +38,7 @@ ms.locfileid: "37119420"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |**Assembly**|Необязательный **xs: String** атрибута.<br /><br /> Имя сборки, в котором определен элемент управления ASPX или веб-части. По умолчанию использует этот атрибут **$SharePoint.Project.AssemblyFullName$** подставляемый в качестве имени сборки. Дополнительные сведения см. в разделе [подстановочных параметров](../sharepoint/replaceable-parameters.md).|  
 |**IsSafe**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, является безопасная настройка для недоверенных пользователей для доступа к ли элемент управления ASPX или веб-части.|  
@@ -74,4 +71,3 @@ ms.locfileid: "37119420"
 ## <a name="see-also"></a>См. также
  [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  

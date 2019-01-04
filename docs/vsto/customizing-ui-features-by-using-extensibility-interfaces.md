@@ -1,9 +1,6 @@
 ---
 title: Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866664"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости
   Средства разработки Office в Visual Studio предоставляют классы и конструкторы, которые обрабатывают многие сведения о реализации, когда вы используете их для создания настраиваемых панелей задач, настроек ленты и областей форм Outlook в надстройке VSTO. Однако при наличии особых потребностей вы также можете реализовать *интерфейс расширения* для каждого компонента.  
@@ -47,7 +44,7 @@ ms.locfileid: "50670849"
   
 |Интерфейс|Описание|Приложения|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Реализуйте этот интерфейс для настройки пользовательского интерфейса ленты. **Примечание:** можно добавить **Лента (XML)** элемента в проект для создания по умолчанию <xref:Microsoft.Office.Core.IRibbonExtensibility> реализацию в надстройке VSTO. Дополнительные сведения см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Visio<br /><br /> Слово|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Реализуйте этот интерфейс для настройки пользовательского интерфейса ленты. **Примечание.**  Вы можете добавить **Лента (XML)** элемента в проект для создания по умолчанию <xref:Microsoft.Office.Core.IRibbonExtensibility> реализацию в надстройке VSTO. Дополнительные сведения см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Visio<br /><br /> Слово|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Реализуйте этот интерфейс для создания настраиваемой панели задач.|Excel<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Слово|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Реализуйте этот интерфейс для создания области формы Outlook.|Outlook - приложение|  
   
@@ -84,7 +81,5 @@ ms.locfileid: "50670849"
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
  [Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

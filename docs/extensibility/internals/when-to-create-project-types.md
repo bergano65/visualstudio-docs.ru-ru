@@ -1,9 +1,6 @@
 ---
 title: Когда следует создавать типы проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bfa51dfbed4fb0c78892b06e9377e36a1be38ea
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 2f2c95b2275389bf02755440745ad3b788956722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827719"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового типа проекта предоставляет основу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Тем не менее, создавать новый тип проекта не требуется для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут вам определить необходимость новый тип проекта для вашего сценария.  
@@ -50,7 +47,7 @@ ms.locfileid: "46495223"
 ## <a name="use-an-existing-project-type"></a>Использовать существующий тип проекта  
  Создание нового проекта иногда не является обязательным. Ниже приведены задачи, которые необходимо создать тип для проекта.  
   
-|Задача|Описание|  
+|Задача|Описание:|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
 |Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|  

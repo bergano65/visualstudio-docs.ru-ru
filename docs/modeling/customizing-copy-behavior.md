@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885631"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 Доменный язык (DSL) создана с пакет SDK моделирования и визуализации Visual Studio можно изменить, что происходит, когда пользователь копирует и вставляет элементы.
@@ -88,7 +87,7 @@ partial class MyDslClipboardCommandSet
 Переопределить *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` в проекте DslPackage.
 
  **Сохраните макет фигуры через копирование и вставку.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: принципиальной схемы](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: Пример схемы канала](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Вставьте фигуры в выбранное место, например в текущее положение курсора.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: принципиальной схемы](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: Пример схемы канала](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Разрешите пользователю перетаскивать элементы.**
-См. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
+См. практическое руководство по [ Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Настройка поведения копирования связи
  Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. В определении DSL, выберите роль с одной стороны отношения и в наборе свойств окна **распространение копирования** значение.
@@ -557,8 +556,8 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>См. также
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
-- [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Настройка функции удаления](../modeling/customizing-deletion-behavior.md)
-- [Образец: Пример принципиальной схемы VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Пример. Пример принципиальной схемы VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

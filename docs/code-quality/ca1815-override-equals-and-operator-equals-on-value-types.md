@@ -1,8 +1,7 @@
 ---
-title: 'CA1815: следует переопределять равенства и равенства операторов в типах значений'
+title: CA1815. Переопределяйте операторы Equals и равенства для типов значений
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1815
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3630e692118bad20441cecceedcb7866a10f2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904053"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: следует переопределять равенства и равенства операторов в типах значений
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815. Переопределяйте операторы Equals и равенства для типов значений
 
 |||
 |-|-|
@@ -46,7 +45,7 @@ ms.locfileid: "49948686"
 
 ## <a name="example-of-a-violation"></a>Пример нарушения
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В следующем примере структура (тип значения), который нарушает это правило.
 
 ### <a name="code"></a>Код
@@ -54,18 +53,18 @@ ms.locfileid: "49948686"
 
 ## <a name="example-of-how-to-fix"></a>Пример того, как для исправления
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В следующем примере устраняется нарушение устраняется путем переопределения <xref:System.ValueType.Equals%2A?displayProperty=fullName> и реализации операторов равенства (==,! =).
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2224: переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
- [CA2226: перегрузки операторов должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Операторы должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
 ## <a name="see-also"></a>См. также
  <xref:System.Object.Equals%2A?displayProperty=fullName>

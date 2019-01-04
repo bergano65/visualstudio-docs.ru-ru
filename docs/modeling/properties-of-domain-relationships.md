@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3ec468ebedbe1d15ddff3527bcf0783b9831247e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e860daf40358978538f732fdb9fea0696778354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937586"
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
 В следующей таблице свойства связаны с доменной связи. Сведения о доменных связей, см. в разделе [Общие сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).

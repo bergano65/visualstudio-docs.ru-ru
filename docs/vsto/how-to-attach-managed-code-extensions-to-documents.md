@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: присоединение расширения управляемого кода в документы'
-ms.custom: ''
+title: Как выполнить Вложение расширений управляемого кода в документы
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6e54e8f4b2cb4e94a83446497c24f9f808210f7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849798"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Практическое: присоединение расширения управляемого кода в документы
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Как выполнить Вложение расширений управляемого кода в документы
   Можно подключить сборку настройки для существующего документа Microsoft Office Word или книгу Microsoft Office Excel. Документ или книгу можно в любом формате, который поддерживается проекты Microsoft Office и средства разработки в Visual Studio. Дополнительные сведения см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +30,7 @@ ms.locfileid: "35257048"
 > [!NOTE]  
 >  Настройки не удастся загрузить, если код ожидает, что элементы управления, которых нет указанного документа.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как I: присоединение или отсоединение сборки VSTO в документ Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Присоединять или отсоединять сборки VSTO в документ Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Для присоединения расширения управляемого кода в документ  
   
@@ -55,6 +52,5 @@ ms.locfileid: "35257048"
   
 ## <a name="see-also"></a>См. также  
  [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Практическое: удаление расширения управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Практическое руководство. Удаление расширений управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  

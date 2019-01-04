@@ -1,9 +1,6 @@
 ---
 title: Раскрывать списки символов, предоставленный в диспетчер объектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827446"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое: списки предоставляют символы, предоставляемые библиотекой в диспетчер объектов
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Как выполнить Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов
 Средства просмотра символов, **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, передавать запросы для новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки отвечает, предоставляя запрошенные данные для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов вызывает методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения или обновите представления из средств просмотра символов.  
   
  Библиотеку может получить запросы к данным, при вызове средство узел раскрытым и будет обновлено представление. Когда средство просмотра символов вызывается в первый раз, диспетчер объектов запрашивает библиотеки, которые приведены в списке верхнего уровня. Когда пользователь разворачивает узел списка, библиотека предоставляет список дочерних элементов в этом узле. Каждый запрос диспетчера объектов содержит индекс элемента интерес. Чтобы отобразить новый список, диспетчер объектов необходимо определить, сколько элементов находятся в списке, тип элементов, их имена, доступности и другие свойства.  
@@ -470,6 +467,6 @@ ms.locfileid: "39513152"
   
 ## <a name="see-also"></a>См. также  
  [Поддержка средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое: зарегистрировать библиотеку с диспетчером объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Практическое: определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Практическое руководство. Зарегистрировать библиотеку с диспетчером объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Практическое руководство. Определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Расширяемость устаревший языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)

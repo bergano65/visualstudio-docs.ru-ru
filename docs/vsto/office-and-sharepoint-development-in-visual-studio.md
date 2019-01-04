@@ -1,9 +1,6 @@
 ---
 title: Разработка решений Office и SharePoint в Visual Studio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898652"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка решений Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.  
@@ -109,5 +106,3 @@ ms.locfileid: "50671707"
 |--------|---------|  
 |Сравните решения SharePoint с надстройками SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Создайте решение SharePoint.|[Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
-  
-  

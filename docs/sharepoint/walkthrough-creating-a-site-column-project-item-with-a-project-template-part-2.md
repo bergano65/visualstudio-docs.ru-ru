@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2 | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2 | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,14 +11,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829911"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с помощью шаблона проекта в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона для создания нового проекта, который содержит элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
   
  В этом пошаговом руководстве вы добавите мастера шаблон проекта столбца сайта, представленный в [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Когда пользователь создает проект столбца сайта, мастер собирает сведения об этом столбце (например, базовый тип и группу) и добавляет эту информацию, чтобы *Elements.xml* файл в новом проекте.  
@@ -54,14 +51,14 @@ ms.locfileid: "49942079"
   
   Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
   
-- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [как: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
+- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Как Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
   
 - Столбцы сайта в SharePoint. Дополнительные сведения см. в разделе [столбцы](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Основные сведения о компонентах мастера
  Мастер, представленный в этом пошаговом руководстве, содержит несколько компонентов. В следующей таблице описаны эти компоненты.  
   
-|Компонент|Описание|  
+|Компонент|Описание:|  
 |---------------|-----------------|  
 |Мастер реализации|Это класс, называемый `SiteColumnProjectWizard`, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс. Этот интерфейс определяет методы, которые Visual Studio вызывает при мастера начинается и завершается в определенное время, а мастер.|  
 |Мастер пользовательского интерфейса|Это окно на основе WPF, с именем `WizardWindow`. Это окно содержит две пользовательские элементы управления, с именем `Page1` и `Page2`. Эти пользовательские элементы управления представляют две страницы мастера.<br /><br /> В этом пошаговом руководстве <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> метод реализации мастер отображает пользовательский Интерфейс мастера.|  
@@ -119,7 +116,7 @@ ms.locfileid: "49942079"
   
 3.  Убедитесь, что требуемая версия .NET framework имеет значение .NET Framework 4.5, не 4.5 клиентский профиль .NET Framework.  
   
-     Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Откройте контекстное меню для **ProjectTemplateWizard** проекта, выберите **добавить**, а затем выберите **новый элемент**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942079"
   
 13. Если вы разрабатываете проект Visual Basic, импортировать пространство имен ProjectTemplateWizard в проект с помощью **конструктор проектов**.  
   
-     Дополнительные сведения см. в разделе [как: Добавление или удаление Импортируемые пространства имен &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Дополнительные сведения см. в разделе [Как Добавление или удаление импортированных пространств имен &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Чтобы настроить проект SharePointcommands
   
@@ -546,5 +543,4 @@ ms.locfileid: "49942079"
  [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)  

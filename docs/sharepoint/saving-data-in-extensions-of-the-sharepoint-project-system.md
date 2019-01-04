@@ -1,9 +1,6 @@
 ---
 title: Сохранение данных в расширениях системы проектов SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74228b5259b733c91397eb1b40a2485daea8b79e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829258"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Сохранение данных в расширениях системы проектов SharePoint
   При расширении системы проектов SharePoint, можно сохранить строковые данные, которые должны оставаться неизменными после закрытия проекта SharePoint. Данные обычно связана с определенным элементом проекта или сам проект.  
@@ -30,7 +27,7 @@ ms.locfileid: "37119532"
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>Сохранить данные, связанные с элементом проекта
  Если у вас есть данные, связанные с данным элементом проекта SharePoint, например, значение свойства, добавляемого элемента проекта, можно сохранить данные для *.spdata* файла элемента проекта. Чтобы сделать это, используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта. Данные, добавляемые к этому свойству сохраняется в **ExtensionData** элемент в *.spdata* файла элемента проекта. Дополнительные сведения см. в разделе [элемент ExtensionData](../sharepoint/extensiondata-element.md).  
   
- В следующем примере кода демонстрируется использование <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство для сохранения значения свойства строки, которая определена в настраиваемого типа элемента проекта SharePoint. Этот пример в контексте полного примера см. в разделе [как: Добавление свойства пользовательского типа элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+ В следующем примере кода демонстрируется использование <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство для сохранения значения свойства строки, которая определена в настраиваемого типа элемента проекта SharePoint. Этот пример в контексте полного примера см. в разделе [как: Добавление свойства в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]  
@@ -60,4 +57,3 @@ ms.locfileid: "37119532"
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Связывать пользовательские данные с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
-  

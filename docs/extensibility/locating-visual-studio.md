@@ -1,9 +1,6 @@
 ---
 title: Обнаружение Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
@@ -12,12 +9,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955137"
 ---
 # <a name="locate-visual-studio"></a>Найдите Visual Studio
 
@@ -36,7 +33,7 @@ ms.locfileid: "46495392"
 
 Чтобы найти Visual Studio и другие инструменты в сред построения, скрипты PowerShell, установщики и дополнительные сценарии, существует ряд средств с открытым исходным кодом можно использовать непосредственно или повторно распространить вместе с вашим собственным сценариям.
 
-| Проект | Описание |
+| Проект | Описание: |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Один файл исполняемый файл машинного кода для поиска экземпляров, удовлетворяющие критериям, например выпуска или предварительной версии, что продукт установлен и установлены какие рабочие нагрузки. Также поддерживает поиск Visual Studio 2010 и более поздних версий, хотя меньше возвращаются сведения, для Visual Studio 2017 и более поздних. См. в разделе [вики-сайте](https://github.com/Microsoft/vswhere/wiki) примеры. |
 | [Командлеты VSSetup](https://github.com/Microsoft/vssetup.powershell) | Поддержка командлетов PowerShell 2.0 и более поздних версий, которые возвращают ценной информации как объекты, можно использовать для поиска экземпляров с учетом таким же образом _vswhere_ и для обнаружения свойств еще больше об экземплярах. См. в разделе [вики-сайте](https://github.com/Microsoft/vssetup.powershell/wiki) примеры. |

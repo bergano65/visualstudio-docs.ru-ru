@@ -1,9 +1,6 @@
 ---
 title: Общие сведения о свойствах пользовательского документа
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,21 +12,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936897"
 ---
 # <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
 
-При сборке проекта уровня документа Visual Studio добавляет две пользовательские свойства документа в проекте: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет наличие настраиваемых свойств документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектура Microsoft Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+При сборке проекта уровня документа Visual Studio добавляет в документ в проекте двум настраиваемым свойствам: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет наличие настраиваемых свойств документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектура Microsoft Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -58,5 +55,5 @@ ms.locfileid: "50671525"
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
 - [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Практическое: публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Практическое: Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Практическое руководство. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Практическое руководство. Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

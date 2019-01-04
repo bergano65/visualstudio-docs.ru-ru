@@ -1,9 +1,6 @@
 ---
 title: Обзор объектной модели ленты
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961313"
 ---
 # <a name="ribbon-object-model-overview"></a>Обзор объектной модели ленты
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Предоставляет строго типизированную объектную модель, можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например можно динамически заполнения элементов управления меню, или отображать и скрывать элементы управления в зависимости от контекста. Можно также добавить вкладок, групп и элементов управления на ленту, но только до загрузки ленты в приложение Office. Сведения см. в разделе [задать свойства, которые становятся доступными только для чтения](#SettingReadOnlyProperties).  
@@ -171,7 +168,7 @@ ms.locfileid: "49910593"
 ## <a name="ribbon-control-events"></a>События элементов управления ленты  
  Каждый класс элемента управления содержит одно или несколько событий. В следующей таблице описаны эти события.  
   
-|событие|Описание|  
+|событие|Описание:|  
 |-----------|-----------------|  
 |Нажмите кнопку|Происходит при щелчке элемента управления.|  
 |TextChanged|Происходит при изменении текста, поле или поле со списком.|  
@@ -190,13 +187,12 @@ ms.locfileid: "49910593"
 ## <a name="see-also"></a>См. также  
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   
- [Практическое: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Пошаговое руководство: Обновление элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Пошаговое руководство: Обновления элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Практическое: Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
- [Практическое: Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Практическое: экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Практическое: надстройка Показать ошибки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Практическое руководство. Экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)  

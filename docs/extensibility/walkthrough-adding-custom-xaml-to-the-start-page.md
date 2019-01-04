@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Добавление пользовательского XAML начальной страницы | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Добавление пользовательского XAML начальную страницу | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929605"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Пошаговое руководство: Добавление пользовательского XAML начальной страницы
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Пошаговое руководство. Добавление пользовательского XAML на начальную страницу
 В этом пошаговом руководстве демонстрируется создание настраиваемой Visual Studio начальной страницы, содержащий веб-браузер.  
   
 ## <a name="adding-custom-xaml"></a>Добавление пользовательского XAML  
@@ -89,7 +86,7 @@ ms.locfileid: "46495626"
 1.  В **Сервис / Параметры / Среда**выберите **запуска**. На **настроить начальную страницу** выберите ваш *.xaml* файла и нажмите кнопку **ОК**.  
   
 ## <a name="next-steps"></a>Следующие шаги  
- На начальной странице Visual Studio теперь содержит вкладку, которая отображает вкладку веб-браузера и MyButton вкладки. Можно создать настраиваемые начальные страницы с другими функциями с помощью *кода* модели для добавления настраиваемой библиотеки DLL, как показано в [Добавление пользовательского элемента управления на начальной странице](../extensibility/adding-user-control-to-the-start-page.md). Настраиваемые начальные страницы можно поделиться с другими пользователями путем публикации полученный файл .vsix в [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт или на другой веб-сайт или сети в общую папку. Дополнительные сведения см. в разделе [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+ На начальной странице Visual Studio теперь содержит вкладку, которая отображает вкладку веб-браузера и MyButton вкладки. Можно создать настраиваемые начальные страницы с другими функциями с помощью *кода* модели для добавления настраиваемой библиотеки DLL, как показано в [Добавление пользовательского элемента управления на начальной странице](../extensibility/adding-user-control-to-the-start-page.md). Настраиваемые начальные страницы можно поделиться с другими пользователями путем публикации полученный файл .vsix в [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт или на другой веб-сайт или сети в общую папку. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   

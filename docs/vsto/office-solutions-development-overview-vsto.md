@@ -1,9 +1,6 @@
 ---
 title: Общие сведения о разработке решений Office (VSTO)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880368"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Общие сведения о разработке решений Office (VSTO)
   Благодаря применению Microsoft Office в качестве внешнего интерфейса для решений, можно эффективно использовать привычные пользовательские интерфейсы и инструменты Microsoft Office, например, функции обработки текста в Word, функции анализа данных в Excel и функции управления электронной почтой в Outlook. В Visual Studio можно разрабатывать решения для настройки приложений Office и добавления конкретных функций, необходимых для бизнес-процессов. Например, можно включить Word в генератор контрактов, собирающий контракты на основе уже существующих частей, которые можно сделать редактируемыми или нередактируемыми. С помощью Excel можно создать лист автоматической разработки бюджета, настраиваемый для различных проектов. Пользователи также могут применять решения Office в автономном режиме, что делает сложные решения более удобными, чем решения, построенные на основе веб-архитектуры.  
@@ -95,5 +92,3 @@ ms.locfileid: "50672630"
  [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

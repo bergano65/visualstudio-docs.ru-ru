@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: предоставлять к коду VBA в проекте Visual Basic'
-ms.custom: ''
+title: Как выполнить Предоставить доступ к коду, коду VBA в проекте Visual Basic
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,24 +11,24 @@ helpviewer_keywords:
 - Visual Basic [Office development in Visual Studio], exposing code to VBA
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900996"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Практическое: предоставлять к коду VBA в проекте Visual Basic
+# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Как выполнить Предоставить доступ к коду, коду VBA в проекте Visual Basic
   Можно предоставить код в [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] проекта Visual Basic для приложений (VBA), если требуется два вида код для взаимодействия друг с другом.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic процесс отличается от процесса Visual C#. Дополнительные сведения см. в разделе [как: предоставлять к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Visual Basic процесс отличается от процесса Visual C#. Дополнительные сведения см. в разделе [Как Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Этот процесс отличается от кода в класс ведущего элемента для кода в других классах:  
   
@@ -39,12 +36,12 @@ ms.locfileid: "49839652"
   
 - [Предоставить доступ к коду, который не находится в класс ведущего элемента](#NonHostItem)  
   
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [как вызов VSTO I: кода из VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Вызывать код VSTO из VBA? ](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Представить код в класс ведущего элемента  
  Чтобы включить код VBA мог вызывать код Visual Basic в класс ведущего элемента, задайте **EnableVbaCallers** свойство ведущего элемента значение **True**.  
   
- Пошаговое руководство для предоставления метода класса ведущего элемента, а затем вызвать его из VBA см. в разделе [Пошаговое руководство: вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
+ Пошаговое руководство для предоставления метода класса ведущего элемента, а затем вызвать его из VBA см. в разделе [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>Чтобы предоставить доступ к коду в ведущем элементе коду VBA  
   
@@ -121,10 +118,8 @@ ms.locfileid: "49839652"
 9. Выполните построение проекта.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
  [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Практическое: предоставлять к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
-  
-  
+ [Практическое руководство. Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  

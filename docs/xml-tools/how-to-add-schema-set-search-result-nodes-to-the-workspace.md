@@ -1,8 +1,7 @@
 ---
-title: Добавить узлы результат поиска набора схем XML в рабочую область
+title: Добавить в рабочую область узлы результат поиска набора схем XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
@@ -10,26 +9,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04e74057bd059c82010678b7de571ff180e7fbfe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9e9f004943474f9b1c0fb449c1aec23f70034c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875038"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Способ: добавить узлы результат поиска набора схем в рабочую область
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Как выполнить Добавить в рабочую область узлы результат поиска набора схем
 
 В этом разделе объясняется, как добавить узлы, которые выделены в **обозреватель XML-схем** в результате поиска по ключевому слову в рабочей области.
 
 > [!NOTE]
-> Можно добавлять только глобальные узлы для [рабочей](../xml-tools/xml-schema-designer-workspace.md).
+> Только глобальные узлы, которые могут добавляться к [рабочей области](../xml-tools/xml-schema-designer-workspace.md).
 
 
  В этом примере используется образец [схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 
 ## <a name="to-add-schema-set-result-nodes"></a>Добавление результирующих узлов набора схем
 
-1.  Следуйте указаниям в [как: Создание и изменение файла XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  В текстовом поле поиска введите «purchaseOrder» [обозреватель XML](../xml-tools/xml-schema-explorer.md) панель инструментов и нажмите кнопку поиска.
 
@@ -41,4 +40,4 @@ ms.locfileid: "34751914"
 
      ![Результат поиска в обозревателе схемы XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     `purchaseOrder` Узла и `PurchaseOrderType` узла отображаются рядом друг с другом в области конструктора на [представление графика](../xml-tools/graph-view.md). Поскольку два узла связаны друг с другом (элемент `purchaseOrder` является типом `PurchaseOrderType`), между ними появится стрелочка.
+     `purchaseOrder` Узла и `PurchaseOrderType` узел отображаться рядом друг с другом в области конструктора [представление графика](../xml-tools/graph-view.md). Поскольку два узла связаны друг с другом (элемент `purchaseOrder` является типом `PurchaseOrderType`), между ними появится стрелочка.

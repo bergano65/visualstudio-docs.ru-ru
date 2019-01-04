@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание пакета SDK с помощью JavaScript | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пакета SDK с помощью JavaScript | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed81ac8e79db6a11dd4897b2d9f96c7c63d10294
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934999"
 ---
-# <a name="walkthrough-create-an-sdk-using-javascript"></a>Пошаговое руководство: Создание пакета SDK, с помощью JavaScript
+# <a name="walkthrough-create-an-sdk-using-javascript"></a>Пошаговое руководство. Создайте пакет SDK, с помощью JavaScript
 В этом пошаговом руководстве объясняется, как использовать JavaScript для создания простых математических расчетов SDK как Visual Studio Extension (VSIX).  Пошаговое руководство состоит из следующих частей:  
   
 - [Чтобы создать проект SimpleMathVSIX расширения SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  

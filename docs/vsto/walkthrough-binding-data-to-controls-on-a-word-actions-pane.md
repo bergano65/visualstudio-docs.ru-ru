@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Привязка данных к элементам управления в панели действий Word'
-ms.custom: ''
+title: Пошаговое руководство. Привязка данных к элементам управления в панели действий Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926454"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Пошаговое руководство: Привязка данных к элементам управления в панели действий Word
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Пошаговое руководство. Привязка данных к элементам управления в панели действий Word
   В этом пошаговом руководстве демонстрируется привязка данных к элементам управления в панели действий в Word. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -61,7 +58,7 @@ ms.locfileid: "49873894"
   
 1.  Создайте проект документа Word с именем **панель действий Word**. В мастере выберите **создания документа**.  
   
-     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новый документ Word в конструкторе и добавляет **панель действий Word** проект **обозревателе решений**.  
   
@@ -234,13 +231,11 @@ ms.locfileid: "49873894"
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы привязки данных к элементам управления в панели действий в Word. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Привязка данных к элементам управления в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Привязка данных к элементам управления в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: Привязка данных к элементам управления в панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
- [Практическое: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

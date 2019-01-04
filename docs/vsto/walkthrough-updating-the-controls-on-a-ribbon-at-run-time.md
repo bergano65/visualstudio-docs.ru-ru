@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Обновление элементов управления на ленте во время выполнения'
-ms.custom: ''
+title: Пошаговое руководство. Обновления элементов управления на ленте во время выполнения
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926958"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Пошаговое руководство: Обновление элементов управления на ленте во время выполнения
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Пошаговое руководство. Обновления элементов управления на ленте во время выполнения
 
 В этом пошаговом руководстве показано, как использовать объектную модель ленты для обновления элементов управления на ленте после загрузки ленты в приложение Office.
 
@@ -68,7 +65,7 @@ ms.locfileid: "52389154"
 
 3.  Сохраните проект в каталоге проекта по умолчанию.
 
-     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Разработка пользовательской группы ленты
 
@@ -294,7 +291,7 @@ ms.locfileid: "52389154"
 
 -   Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
 
--   Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+-   Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 -   Добавление настраиваемой области задач в Outlook. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).
 
@@ -303,13 +300,13 @@ ms.locfileid: "52389154"
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Обзор ленты](../vsto/ribbon-overview.md)
 - [Синтаксис LINQ](/dotnet/csharp/linq/index)
-- [Практическое: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
 - [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Обзор объектной модели ленты](../vsto/ribbon-object-model-overview.md)
 - [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Практическое: изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Практическое: Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)
-- [Практическое: Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Практическое: экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Практическое: надстройка Показать ошибки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)
+- [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Практическое руководство. Экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса](../vsto/how-to-show-add-in-user-interface-errors.md)

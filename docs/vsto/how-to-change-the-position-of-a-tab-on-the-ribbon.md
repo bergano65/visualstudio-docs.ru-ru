@@ -1,28 +1,25 @@
 ---
-title: 'Практическое: изменение положения вкладки на ленте'
-ms.custom: ''
+title: Как выполнить Изменение положения вкладки на ленте
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956522"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Практическое: изменение положения вкладки на ленте
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Как выполнить Изменение положения вкладки на ленте
   Можно изменить порядок пользовательских вкладок на ленте с помощью **редактор коллекции вкладок**. Пользовательские вкладки можно разместить до или после встроенной вкладки на ленте. Встроенная вкладка — это вкладка, которая уже имеется на ленте приложения Microsoft Office. Например **данных** вкладка — это встроенная вкладка Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "35255393"
   
 5.  Задайте **OfficeId** свойства идентификатора из встроенной вкладки.  
   
-     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Список идентификаторов элементов управления, см. в разделе [файлы справки Office 2010: Идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>См. также  
  [Обзор ленты](../vsto/ribbon-overview.md)   
@@ -65,5 +62,3 @@ ms.locfileid: "35255393"
  [XML-ленты](../vsto/ribbon-xml.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

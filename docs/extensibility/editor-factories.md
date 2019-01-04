@@ -1,9 +1,6 @@
 ---
 title: Фабрики редакторов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887362"
 ---
 # <a name="editor-factories"></a>Фабрики редакторов
 Фабрику редактора создает объекты редактор и помещает их в рамку окна, известный как физическое представление. Он создает данные документа и объекты представления документа, которые необходимы для создания в редакторах и конструкторах. Фабрику редактора необходима для создания базового редактора Visual Studio и любой стандартный редактор. Специализированный редактор также при необходимости могут создаваться с помощью фабрики редактора.  

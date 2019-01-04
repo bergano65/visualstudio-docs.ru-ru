@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder2 | Документы Microsoft
-ms.custom: ''
+title: IDebugTypeFieldBuilder2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4500f8e44a3008655d9a4068b96ce2cfcdbc2ac5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed8304203b7145861797732be98c7ba9e22ef6af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898613"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
-Расширяет **IDebugTypeFieldBuilder** возможность создания массивов.  
+Расширяет **IDebugTypeFieldBuilder** чтобы иметь возможность создавать типы массивов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,15 +26,15 @@ ms.locfileid: "31119420"
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс можно получить от поставщика символа.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс можно получить от поставщика символов.  
   
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) интерфейс, этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Создает массив заданного типа и размера.|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Создает массив указанного типа и размера.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  

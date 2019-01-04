@@ -1,9 +1,6 @@
 ---
 title: Изображения и значки для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880706"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Использование изображений в Visual Studio  
@@ -26,7 +23,7 @@ ms.locfileid: "49949402"
   
 -   **Значки**. Маленькие изображения, которые отображаются в команды, иерархий, шаблоны и т. д. Размер значка по умолчанию, используемых в Visual Studio — PNG 16 x 16. Значки, автоматически созданные службы образов создания формата XAML для поддержки HDPI.  
   
-     **Примечание:** хотя образы используются в системе меню, не следует создавать значок для каждой команды. Обратитесь к [меню и команд для Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) для см. в разделе ли команда должна появиться значок.  
+     **ПРИМЕЧАНИЕ.** Хотя образы используются в системе меню, не следует создавать значок для каждой команды. Обратитесь к [меню и команд для Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) для см. в разделе ли команда должна появиться значок.  
   
 -   **Эскизы.** Образы, используемые в области предварительного просмотра диалогового окна, такие как диалоговое окно нового проекта.  
   

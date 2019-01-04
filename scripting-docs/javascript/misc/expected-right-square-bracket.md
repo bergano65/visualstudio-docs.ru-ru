@@ -1,5 +1,5 @@
 ---
-title: Ожидается &#39;] &#39; | Документы Microsoft
+title: Ожидается "]" | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632754"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804355"
 ---
-# <a name="expected-3939"></a>Ожидается &#39;] &#39;
-Ссылка на элемент массива, но не содержит закрывающую квадратную скобку. Любое выражение, которое ссылается на элемент массива должен включать как открывающих и закрывающих скобок.  
+# <a name="expected-"></a>Ожидался символ "]"
+Ссылка на элемент массива, но отсутствует закрывающая квадратная скобка. Любое выражение, которое ссылается на элемент массива должен включать как открывающие и закрывающие скобки.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   

@@ -1,9 +1,6 @@
 ---
 title: События в проектах Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929890"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.  
@@ -48,7 +45,7 @@ ms.locfileid: "49949686"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>Проекты уровня документа  
- Visual Studio предоставляет сформированный код для новых или существующих документов или листов в настройках на уровне документа. Этот код создает два различных события: **Startup** и **Shutdown**.  
+ Visual Studio предоставляет сформированный код для новых или существующих документов или листов в настройках на уровне документа. Этот код создает два различных события: **Запуска** и **завершение работы**.  
   
 ### <a name="startup-event"></a>Startup - событие  
  Событие **Startup** возникает для каждого ведущего элемента (документа, книги или листа) после запуска документа и всех кодов инициализации в сборке. Это самая последняя операция, запускаемая в конструкторе класса, в котором выполняется ваш код. Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
@@ -157,9 +154,7 @@ ms.locfileid: "49949686"
   
 ## <a name="see-also"></a>См. также  
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

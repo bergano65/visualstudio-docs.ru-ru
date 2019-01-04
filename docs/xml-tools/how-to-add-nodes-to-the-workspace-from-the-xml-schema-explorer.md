@@ -1,8 +1,7 @@
 ---
-title: Как добавлять узлы в рабочую область в обозревателе XML-схем
+title: Как выполнить Добавление узлов в рабочую область в обозревателе схем XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: gewarren
@@ -10,23 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1f5821d3a4207d89eb62b9344cff967c73b536
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a65decc0ba965f27579c746dc5763c2e9aa8d3be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960515"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Как: добавлять узлы в рабочую область из обозревателя XML-схем
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Как выполнить Добавление узлов в рабочую область в обозревателе XML-схемы
 
-В этом разделе объясняется, как добавить узлы в [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) из **обозреватель XML-схем**. Это можно сделать с помощью перетаскивания узлов из **обозреватель XML-схем** на представление конструктора XSD, либо с помощью **обозреватель XML-схем** контекстного меню. Можно также добавить узлы, выделенные в результате поиска, выполненного **обозреватель XML-схем**. Дополнительные сведения см. в разделе [как: добавить узлы результат поиска набора схем в рабочую область](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+В этом разделе объясняется, как добавить узлы в [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) из **обозреватель XML-схем**. Это можно сделать с помощью перетаскивания узлов из **обозреватель XML-схем** на представление конструктора XSD, или с помощью **обозреватель XML-схем** контекстного меню. Можно также добавить узлы, выделенные в результате поиска, выполненного **обозреватель XML-схем**. Дополнительные сведения см. в разделе [Как Добавить в рабочую область узлы результат поиска набора схем](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Можно добавлять только глобальные узлы для [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md).
+> Только глобальные узлы, которые могут добавляться к [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md).
 
 ## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Добавление узла посредством контекстного меню обозревателя XML
 
-1.  Следуйте указаниям в [как: Создание и изменение файла XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  Щелкните правой кнопкой мыши `PurchaseOrderType` узел в обозревателе XSD. Выберите **Показать в представлении графика**.
 
@@ -58,7 +57,7 @@ ms.locfileid: "34752057"
 
      ![Результат поиска в обозревателе схемы XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     `purchaseOrder` Узла и `PurchaseOrderType` узла отображаются рядом друг с другом в области конструктора на [представление графика](../xml-tools/graph-view.md). Поскольку два узла связаны друг с другом (элемент `purchaseOrder` является типом `PurchaseOrderType`), между ними появится стрелочка.
+     `purchaseOrder` Узла и `PurchaseOrderType` узел отображаться рядом друг с другом в области конструктора [представление графика](../xml-tools/graph-view.md). Поскольку два узла связаны друг с другом (элемент `purchaseOrder` является типом `PurchaseOrderType`), между ними появится стрелочка.
 
 ## <a name="see-also"></a>См. также
 

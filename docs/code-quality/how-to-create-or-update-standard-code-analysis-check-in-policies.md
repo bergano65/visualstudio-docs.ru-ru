@@ -1,8 +1,7 @@
 ---
-title: Создание или обновление стандартных политик анализом кода возврата
+title: Создание или обновление стандартных политик возврата с анализом кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890343"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить Создание или обновление стандартных политик возврата с анализом кода
 
 Вы можете потребовать, запуска анализа кода для всех проектов кода в проекте Azure DevOps с помощью политики возврата анализа кода. Обязательность анализа кода может повысить качество кода, который возвращается в базу кода.
 
@@ -51,7 +50,7 @@ ms.locfileid: "44283240"
 
 Установите или снимите следующие параметры:
 
-|Параметр|Описание|
+|Параметр|Описание:|
 |------------|-----------------|
 |**Включить возврат файлов, которые являются частью текущего решения.**|Анализ кода можно выполнять только с файлами, указанными в файлах конфигурации решения и проекта. Эта политика гарантирует, что весь код, который является частью решения анализируется.|
 |**Принудительное применение анализа кода C/C++ (/ analyze)**|Требует, что все проекты C или C++ быть построены с / analyze-параметр компилятора, чтобы запустить анализ кода, прежде чем они могут быть возвращены.|
@@ -71,4 +70,4 @@ ms.locfileid: "44283240"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание и использование политик возврата с анализом кода](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

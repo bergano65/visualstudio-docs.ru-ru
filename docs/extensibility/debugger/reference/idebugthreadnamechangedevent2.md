@@ -1,9 +1,6 @@
 ---
-title: IDebugThreadNameChangedEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugThreadNameChangedEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThreadNameChangedEvent2
@@ -15,27 +12,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8bfc2a430d7886e899bf7e56386ed84f14bf0a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b3e9067fd8677d741a3838042b72fdddf02e5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882819"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
-Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при изменении имени потока в отлаживаемой программы.  
+Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при изменении имени потока в отлаживаемой программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugThreadNameChangedEvent2 : IUnknown  
+IDebugThreadNameChangedEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс для отчета об изменении имени потока. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ DE реализует этот интерфейс для отчета, имя потока изменилось. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE создает и отправляет этот объект события отчета об изменении имени потока. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE создает и отправляет этот объект события отчета об изменении имени потока. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

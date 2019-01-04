@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874606"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Практическое: доступ к встроенной шрифты и цвета ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Как выполнить Доступ к встроенной шрифты и цвета ccheme
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.
 
  Чтобы использовать встроенные шрифтов и цветов схемы, пакет VSPackage должен удовлетворять следующим требованиям:
@@ -58,7 +55,7 @@ ms.locfileid: "49911256"
 
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:
 
-    |name|Тип|Данные|Описание|
+    |name|Тип|Данные|Описание:|
     |----------|----------|----------|-----------------|
     |Категория|REG_SZ|Идентификатор GUID|Произвольный GUID, определяющий категорию, которая содержит акций шрифт и цветовую схему.|
     |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Этот GUID используется всех пакетов VSPackage, использующих настройки шрифта и цвета по умолчанию.|

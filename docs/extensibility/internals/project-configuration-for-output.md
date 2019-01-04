@@ -1,9 +1,6 @@
 ---
 title: Конфигурации для выходных данных проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843298"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 Каждая конфигурация может поддерживать набор процессов сборки, которые создают выходные элементы, такие как файлы исполняемого файла или ресурса. Эти элементы выходных данных для пользователя и могут быть помещены в группы, которые связывают связанных типов выходных данных, например исполняемые файлы (.exe, .dll, .lib) и исходных файлов (.idl, h-файлы).  

@@ -1,9 +1,6 @@
 ---
 title: Создание папок родительского контейнера для решений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889102"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
 В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
@@ -52,7 +49,7 @@ ms.locfileid: "49830696"
 |Функция|Система управления версиями API подключаемого модуля версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
 |-------------| - | - |  
 |Добавьте решение в SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Примечание:** Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
+|Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Примечание.**  Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
   
 ## <a name="examples"></a>Примеры  
  В следующей таблице перечислены два примера. В обоих случаях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользователю предлагается ввести расположение для решения в системе управления версиями до *user_choice* указан в качестве места назначения. При указании user_choice решения и двух проектов добавляются без подтверждения от пользователя для источников управления получателей.  

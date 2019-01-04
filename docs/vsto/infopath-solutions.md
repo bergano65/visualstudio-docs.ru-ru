@@ -1,9 +1,6 @@
 ---
 title: решения InfoPath
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864951"
 ---
 # <a name="infopath-solutions"></a>решения InfoPath
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office InfoPath 2013 и InfoPath 2010. В Office 2016 InfoPath отсутствует.  
@@ -64,11 +61,9 @@ ms.locfileid: "50670862"
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)   
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
  [InfoPath 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  

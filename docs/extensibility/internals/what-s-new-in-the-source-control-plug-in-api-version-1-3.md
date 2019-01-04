@@ -1,9 +1,6 @@
 ---
-title: Что&#39;новые возможности источника управления подключаемого модуля API версии 1.3 | Документы Microsoft
-ms.custom: ''
+title: Что&#39;API версии 1.3 подключаемого модуля управления возможности в источнике | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.3
@@ -14,28 +11,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abeb2a0a936a5d706e2e3744e9dd0f4e3123bdbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b9642f14016900dd3edd4a9093997620f4fb31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877214"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Что&#39;новые возможности источника управления подключаемого модуля API версии 1.3
-API подключаемых модулей управления исходной версии 1.3 появились следующие новые функции для предоставления более сложных элементов управления.  
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Что&#39;возможности в источнике управления API версии 1.3 подключаемого модуля
+API подключаемых модулей управления исходной версии 1.3 вводит следующие новые функции для предоставления более расширенные функции управления.  
   
 ## <a name="changes"></a>Изменения  
- Следующие функции являются новыми для API подключаемых модулей управления исходной версии 1.3:  
+ Следующие функции, добавленные в API подключаемых модулей управления исходной версии 1.3.  
   
 |Функция|Обзор|  
 |--------------|--------------|  
-|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Обеспечивает дополнительные возможности битов в отчетах|  
-|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Анализ файлов, имеющих более новых версий базы данных версии элемента управления на локальном диске|  
-|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Позволяет проверять состояние имя изменения (операции переименования, добавления и удаления) для указанных файлов|  
-|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Анализ файлов и каталогов в базе данных управления версиями|  
-|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Добавляет указанный список файлов из базы данных управления версии в текущий проект|  
+|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Позволяет биты дополнительных возможностей требуется получить сведения об|  
+|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Анализ файлов, которые имеют более новые версии в базу данных контроля версий чем на локальном диске|  
+|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Позволяет осмысленно изучать состояния изменения имен (переименование, добавления и удаления) для указанных файлов|  
+|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Анализ файлов и каталогов в базе данных системы управления версиями|  
+|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Добавляет указанный список файлов из базы данных системы управления версиями в текущий проект|  
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Выполняет автоматическую «получить» заданного файла (пользовательский интерфейс не отображается)|  
-|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Разрешает доступ к параметрам конкретного пользователя|  
+|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Разрешает доступ к определяемым пользователем параметрам|  
   
 ## <a name="see-also"></a>См. также  
  [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   

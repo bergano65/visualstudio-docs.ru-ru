@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramDestroyEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProgramDestroyEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramDestroyEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ffecd6dc64420e829bddc9a530a8ef6b57c378
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 690292ba7e9e807e9a13acefdb50884e999b9aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834533"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
-Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при запуске программы для завершения.  
+Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при запуске программы для завершения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,10 +29,10 @@ IDebugProgramDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE или пользовательский порт поставщика реализует этот интерфейс для отчетов программы был завершен и больше не доступен для отладки. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ DE или поставщика пользовательского порта реализует этот интерфейс для отчетов программы был завершен и больше не доступен для отладки. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE или пользовательский порт поставщика создает и отправляет этот объект события, чтобы сообщить о завершении программы. DE отправляет это событие, используя [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейса.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE или поставщика пользовательского порта создает и отправляет этот объект события, чтобы сообщить о завершении программы. DE отправляет данное событие с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugProgramDestroyEvent2`.  

@@ -1,9 +1,6 @@
 ---
 title: Средство синтаксического анализа устаревший языковой службы и сканер | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941853"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 Анализатор является сердцем языковой службы. Классы Managed Package Framework (MPF) языка требуется средство синтаксического анализа языка, чтобы выбрать сведения о коде отображения. Средство синтаксического анализа разделяет текст на лексических маркеров, а затем определяет эти маркеры по типу и функциональные возможности.  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Договорились.  
   
 ### <a name="summary"></a>Сводка  
- Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(...)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, следующим образом: сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
+ Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(...)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, как показано ниже: Сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
   
  Дополнительные сведения см. в разделе [парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   

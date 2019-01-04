@@ -1,9 +1,6 @@
 ---
-title: IDebugProviderProgramNode2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProviderProgramNode2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProviderProgramNode2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6057371838854755985d2ff570f11eefdeb3b222
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c80f86ac24d6e9e214b19a3e8c4564bdf11523b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846182"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-Этот интерфейс маршалирует интерфейсы, связанные с программой через границы процессов.  
+Этот интерфейс выполняет маршалинг интерфейса, связанных с программой через границы процессов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,18 +31,18 @@ IDebugProviderProgramNode2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки интерфейсов маршалинга через границы процессов.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgramNode2` интерфейс для получения этого интерфейса. Если этот интерфейс не может быть получен, DE не поддерживает маршалинг интерфейсов.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Возвращает указанный интерфейс через границы процессов.|  
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Возвращает заданный интерфейс через границы процессов.|  
   
 ## <a name="remarks"></a>Примечания  
- Этот интерфейс реализуется, когда запускается DE в отдельную рабочую область из отлаживаемой программы: например, когда DE работает в пространстве процесса Visual Studio вместо пространство процесса отлаживаемой программы.  
+ Этот интерфейс реализуется в том случае, когда DE работает в отдельное пространство процесса из отлаживаемой программы: например, при выполнении DE в пространстве процесса Visual Studio, а не пространство процесса отлаживаемой программы.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

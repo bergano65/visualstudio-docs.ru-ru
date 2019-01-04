@@ -1,9 +1,6 @@
 ---
 title: Коды ошибок | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931977"
 ---
 # <a name="error-codes"></a>Коды ошибок
 Функции API подключаемого модуля управления источника возвращает ошибку, ожидается один из следующих кодов ошибки. Все ошибки имеет отрицательное значение, предупреждения или информационные коды являются положительными, и 0 — успех.  
   
-|Код ошибки|Значение|Описание:|  
+|Код ошибки|Значение|Описание|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Подключаемый модуль поддерживает добавление файлов из системы управления версиями в два этапа. Дополнительные сведения см. в разделе [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Локального файла отличается от файла в базе данных управления версиями (например, [SccDiff](../extensibility/sccdiff-function.md) могут возвращать это значение).|  

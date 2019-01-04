@@ -1,13 +1,8 @@
 ---
-title: 'Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824740"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска
   В этом пошаговом руководстве показано, как создать базовый последовательный рабочий процесс, в котором используются формы ассоциации и инициации. Это формы ASPX, которые позволят параметров добавляться в рабочий процесс, когда он сначала связан администратором SharePoint (форма сопоставления) и когда рабочий процесс запускается пользователем (форма запуска).  
   
  В этом пошаговом руководстве рассматривается сценарий, в котором пользователь хочет создать рабочий процесс утверждения для отчетов о расходах, предъявляются следующие требования:  
@@ -453,4 +448,3 @@ ms.locfileid: "49873881"
 ## <a name="see-also"></a>См. также
  [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Пошаговое руководство: Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  

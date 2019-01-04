@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Заполнение документов данными из служб'
-ms.custom: ''
+title: Как выполнить Заполнение документов данными из служб
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,27 +9,27 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838298"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Практическое: Заполнение документов данными из служб
+# <a name="how-to-populate-documents-with-data-from-services"></a>Как выполнить Заполнение документов данными из служб
 
 Доступ к данным в проектах уровня документа для Microsoft Office работает точно так же, как в проектах Windows Forms. Вы используете те же средства и код для получения данных в ваше решение и даже можете отображать данные с помощью элементов управления Windows Forms. Кроме того, можно воспользоваться преимуществами элементов управления ведущего приложения, которые являются собственными объектами в Microsoft Office Excel и Microsoft Office Word, дополненными событиями и функциями привязки данных. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-В следующем примере показано, как добавить элементы управления с привязкой к данным в документы во время разработки. Пример добавления элементов управления с привязкой данных в надстройках VSTO во время выполнения, см. в разделе [Пошаговое руководство: привязка к данным из службы в проекте надстройки VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
+В следующем примере показано, как добавить элементы управления с привязкой к данным в документы во время разработки. Пример добавления элементов управления с привязкой данных в надстройках VSTO во время выполнения, см. в разделе [Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
 
-![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции. взаимодействие с веб-службами из Microsoft Excel?](http://go.microsoft.com/fwlink/?LinkID=130284).
+![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Взаимодействует с веб-службами из Microsoft Excel? ](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Заполнение проекта уровня документа данными из веб-службы
 
@@ -59,7 +56,7 @@ ms.locfileid: "36758546"
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Практическое: заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Практическое: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Практическое: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Практическое: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

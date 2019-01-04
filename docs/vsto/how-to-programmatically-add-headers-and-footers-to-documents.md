@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное добавление верхних и нижних колонтитулов к документам'
-ms.custom: ''
+title: Как выполнить Программное добавление верхних и нижних колонтитулов к документам
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding headers
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848458"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Практическое: программное добавление верхних и нижних колонтитулов к документам
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Как выполнить Программное добавление верхних и нижних колонтитулов к документам
   Для добавления текста в верхние и нижние колонтитулы в документе можно использовать свойство <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> и свойство <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> раздела <xref:Microsoft.Office.Interop.Word.Section>. Каждый раздел документа содержит три верхних и нижних колонтитула.  
   
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
@@ -73,7 +70,6 @@ ms.locfileid: "49849914"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)   
- [Практическое: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Практическое: программный перебор найденных элементов в документах](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   
+ [Практическое руководство. Программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Практическое руководство. Программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Практическое руководство. Программный перебор найденных элементов в документах](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  

@@ -2,7 +2,6 @@
 title: Пользовательский интерфейс отладчика (XSLT)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875301"
 ---
 # <a name="debugger-user-interface-xslt"></a>Пользовательский интерфейс отладчика (XSLT)
 
@@ -92,15 +91,15 @@ ms.locfileid: "49847387"
 
 -   Определяемые пользователем функции не допускаются.
 
-Дополнительные сведения см. в разделе [как: Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Дополнительные сведения см. в разделе [Как Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Дизассемблирование - окно
  Окно дизассемблирования показывает код сборки, формируемый XSLT-компилятором. Это окно можно использовать так же, как и все остальные окна дизассемблирования среды Visual Studio.
 
- Дополнительные сведения [как: использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md).
+ Дополнительные сведения [как: Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Отладка XSLT](../xml-tools/debugging-xslt.md)
-- [Основы отладки](../debugger/getting-started-with-the-debugger.md)
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)   
 - [Проверить значения переменных в окнах "Видимые" и "Локальные" в Visual Studio](../debugger/autos-and-locals-windows.md)

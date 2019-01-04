@@ -1,9 +1,6 @@
 ---
 title: Введите доступность функций по типам приложений и проектов
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986405"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Введите доступность функций по типам приложений и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:  
@@ -77,5 +74,3 @@ ms.locfileid: "50672470"
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
-  
-  

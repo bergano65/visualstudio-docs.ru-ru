@@ -1,9 +1,6 @@
 ---
 title: Отображение файлов с помощью команды открытия файла | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964667"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды открытия файла
 Следующие шаги описывают, каким образом среда IDE обрабатывает **открыть файл** команды, которая доступна на **файл** меню в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Также описано, как проекты должна отвечать на вызовы, поступающие из этой команды.  
@@ -52,10 +49,10 @@ ms.locfileid: "39498729"
   
 4.  Как только среда интегрированной разработки определяет, какой проект открывает файл, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод для этого проекта.  
   
-5.  Проект затем может открыть файл с помощью редактора определенного проекта или стандартного редактора. Дополнительные сведения см. в разделе [как: открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md) и [как: открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md), соответственно.  
+5.  Проект затем может открыть файл с помощью редактора определенного проекта или стандартного редактора. Дополнительные сведения см. в разделе [Как Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md) и [как: Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md), соответственно.  
   
 ## <a name="see-also"></a>См. также  
  [Отображение файлов с помощью команды Открыть с помощью](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Как: открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)   
- [Как: открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md)
+ [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Практическое руководство. Стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)

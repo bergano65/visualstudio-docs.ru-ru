@@ -1,9 +1,6 @@
 ---
 title: Предоставить доверие к документам
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912362"
 ---
 # <a name="grant-trust-to-documents"></a>Предоставить доверие к документам
   К проекту уровня документа предъявляются те же требования безопасности, что и к проектам уровня приложения. Это подписание манифестов сертификатом или подтверждение при запросе доверия. Кроме того, документ или книга должны быть расположены в каталоге, назначенном в качестве надежного расположения.  
@@ -44,11 +41,9 @@ ms.locfileid: "50670914"
   
 -   Хотя сам документ является надежным при использовании надежного расположения, для предоставления доверия в целях настройки необходимы дополнительные разрешения. Можно предоставить полное доверие в настройке, используя подписание манифестов сертификатом, подтверждая доверие по запросу или установив решение Office для *Program Files* каталога.  
   
--   Документ или книгу решения на уровне документа можно сохранять в том же каталоге, что и сборку, или в другом каталоге. Например, документ может быть размещен на сервере SharePoint, а сборка может находиться на общем сетевом ресурсе. Дополнительные сведения см. в разделе [как: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Документ или книгу решения на уровне документа можно сохранять в том же каталоге, что и сборку, или в другом каталоге. Например, документ может быть размещен на сервере SharePoint, а сборка может находиться на общем сетевом ресурсе. Дополнительные сведения см. в разделе [Как Публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>См. также  
  [Предоставление доверия решениям Office](../vsto/granting-trust-to-office-solutions.md)   
  [Устранение неполадок с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)   
  [Безопасные решения Office](../vsto/securing-office-solutions.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
 title: Построение и отладка решений SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987198"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Построение и отладка решений SharePoint
   Как правило, построение и отладка решений SharePoint является таким же, как построение и отладка других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283539"
 |Пакет промежуточных файлов.|*\<Имя проекта > \pkgobj\debug* или  *\<имя_проекта > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>Построение решений SharePoint
- Для построения решений SharePoint, на компьютере разработчика должен иметь правильную версию установлен SharePoint server. В противном случае построение решений SharePoint совпадает со значением создания других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как: решений SharePoint построения](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ Для построения решений SharePoint, на компьютере разработчика должен иметь правильную версию установлен SharePoint server. В противном случае построение решений SharePoint совпадает со значением создания других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Как Построение решений SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Отладка и тестирование решений SharePoint
  Перед отладкой [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] копий *.wsp* пакет сервера SharePoint, активирует сайт и веб-компоненты, а в некоторых случаях запускает проект. В других случаях может понадобиться открыть проект вручную. Дополнительные сведения см. в разделе [решений SharePoint, устранение неполадок](../sharepoint/troubleshooting-sharepoint-solutions.md) и [решений SharePoint Отладка](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283539"
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

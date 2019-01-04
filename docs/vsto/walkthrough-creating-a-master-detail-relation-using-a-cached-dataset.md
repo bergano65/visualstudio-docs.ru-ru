@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание основной/подробности связи, с помощью кэшированного набора данных'
-ms.custom: ''
+title: Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823653"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Пошаговое руководство: Создание основной/подробности связи, с помощью кэшированного набора данных
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных
   В этом пошаговом руководстве демонстрируется создание иерархического отношения на листе и кэширование данных, решения можно использовать в автономном режиме.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933161"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1. Создайте проект книги Excel с именем **Мой основной / подробности**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Создайте проект книги Excel с именем **Мой основной / подробности**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio открывает новую книгу Excel в конструкторе и добавляет **Мой основной / подробности** проект **обозревателе решений**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933161"
  [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
  [Кэширование данных](../vsto/caching-data.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

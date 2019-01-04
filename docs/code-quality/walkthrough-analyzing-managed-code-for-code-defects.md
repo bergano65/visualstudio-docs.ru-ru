@@ -2,7 +2,6 @@
 title: Пошаговое руководство Проверка управляемого кода на наличие дефектов кода | Документация Майкрософт
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955257"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство: Анализ управляемого кода для кода дефектов
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство. Анализ управляемого кода для дефектов кода
 
 В этом пошаговом руководстве будет анализировать управляемого проекта для дефектов кода с помощью средства анализа кода.
 
@@ -87,53 +86,53 @@ ms.locfileid: "37117723"
 
     В зависимости от выбранного профиля разработчика, возможно, чтобы они указывали **Other Windows** на **представление** меню, а затем выберите **список ошибок**.
 
-1. В **обозревателе решений**, выберите **Показать все файлы**.
+1. В **обозревателе решений** выберите **Показать все файлы**.
 
 1. Разверните узел свойства, а затем откройте *AssemblyInfo.cs* файл.
 
 1. Следуйте приведенным ниже советам, чтобы устранить предупреждения:
 
-   [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должны быть помечены CLSCompliantAttribute, и его значение должно быть true.
+   [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должен быть помечен атрибутом CLSCompliantAttribute и его значение должно быть true.
 
    1. Добавьте код `using System;` в файл AssemblyInfo.cs.
 
    1. Далее добавьте код `[assembly: CLSCompliant(true)]` в конец файл AssemblyInfo.cs.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo(String)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo(String)
 
    1. Добавьте конструктор `public demo (String s) : base(s) { }` к классу `demo`.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo (String, исключений)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo (String, исключений)
 
    1. Добавьте конструктор `public demo (String s, Exception e) : base(s, e) { }` к классу `demo`.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: защищенные demo (SerializationInfo, StreamingContext)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: защищенные demo (SerializationInfo, StreamingContext)
 
    1. Добавьте код `using System.Runtime.Serialization;` в начало файла Class1.cs.
 
    1. Добавьте конструктор `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo()
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Добавьте следующий конструктор этого класса: открытый demo()
 
    1. Добавьте конструктор `public demo () : base() { }` к классу `demo` **.**
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени пространства имен «testCode», изменив ее на «TestCode».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени пространства имен «testCode», изменив ее на «TestCode».
 
    1. Регистр пространства имен `testCode` для `TestCode`.
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени типа «demo», изменив ее на «Demo».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени типа «demo», изменив ее на «Demo».
 
    1. Измените имя элемента, на который `Demo`.
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени член «item», изменив ее на «Item».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Исправьте прописные или строчные буквы имени член «item», изменив ее на «Item».
 
    1. Измените имя элемента, на который `Item`.
 
-   [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: переименование «testCode.demo», чтобы в конце стояло «Exception».
+   [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Переименуйте «testCode.demo» конец «Исключение».
 
    1. Измените имя класса и его конструкторов для `DemoException`.
 
-   [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): подпись «CodeAnalysisManagedDemo» с ключом строгого имени.
+   [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Подпись «CodeAnalysisManagedDemo» с ключом строгого имени.
 
    1. На **проекта** меню, выберите **CodeAnalysisManagedDemo свойства**.
 
@@ -153,7 +152,7 @@ ms.locfileid: "37117723"
 
    1. На **файл** меню, выберите **сохранить выбранные элементы**, а затем закройте окно свойств.
 
-   [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: добавить атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.
+   [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Добавьте атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.
 
    1. Добавить `[Serializable ()]` классу атрибут `demo`.
 

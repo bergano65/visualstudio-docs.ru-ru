@@ -1,10 +1,8 @@
 ---
-title: Элемент SupportsCodeSeparation (шаблоны Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Элемент SupportsCodeSeparation (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: daf9747ac8918166f08aa087640160805d850629
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959856"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
-Указывает ли **поместить код в отдельный файл** флажок будет доступен в **Добавление нового элемента** диалоговое окно.  
+Указывает ли **поместить код в отдельном файле** "флажок" включена в **Добавление нового элемента** диалоговое окно.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -47,24 +45,24 @@ ms.locfileid: "31140746"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет его отображения в любом **новый проект** или **новый элемент** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как отображается ли он в категорию шаблона и **новый проект** или **новый элемент** диалоговое окно.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, означающее ли **поместить код в отдельный файл** флажок будет доступен в **Добавление нового элемента** диалоговое окно.  
+ Этот текст должен быть либо `true` или `false`, указывающее, ли **поместить код в отдельном файле** "флажок" включена в **Добавление нового элемента** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
  `SupportsCodeSeparation` — это необязательный элемент. Значение по умолчанию — `false`.  
   
- `SupportsCodeSeparation` Элемент доступен только для веб-шаблоны элемента.  
+ `SupportsCodeSeparation` Элемент доступен только для веб-шаблонов элементов.  
   
- Разделение кода или модель страницы с выделенным кодом позволяет поместить разметку в один файл и программный код — в другой файл. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и других языков .NET использовать эту модель.  
+ Разделение кода, или модель страницы с выделенным кодом позволяет поместить разметку в один файл и программный код в другом файле. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и другими языками .NET использовать эту модель.  
   
 ## <a name="example"></a>Пример  
- В следующем примере задается для отображения **поместить код в отдельный файл** параметр.  
+ В следующем примере задается для отображения **поместить код в отдельном файле** параметр.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

@@ -1,9 +1,6 @@
 ---
 title: Создание элемента управления панели элементов WPF | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847546"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Создание элемента управления панели элементов WPF
 Шаблон элемента управления панели элементов WPF (Windows Presentation Framework) позволяет создавать элементы управления WPF, которые автоматически добавляются в **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания **элементов** элемента управления, который можно передавать другим пользователям.  
@@ -41,7 +38,7 @@ ms.locfileid: "39500336"
   
 1.  Откройте *MyToolboxControl.xaml* в конструкторе.  
   
-     Конструкторе показан <xref:System.Windows.Controls.Grid> элемент управления, содержащий <xref:System.Windows.Controls.Button> элемента управления.  
+     В конструкторе показан элемент управления <xref:System.Windows.Controls.Grid>, содержащий элемент управления <xref:System.Windows.Controls.Button>.  
   
 2.  Упорядочите макет сетки. При выборе <xref:System.Windows.Controls.Grid> управлять, отображаются панели синяя элементов управления на верхнего и левого краев сетки. Щелкая столбцы можно добавить строки и столбцы в сетку.  
   

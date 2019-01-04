@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Настройка словаря анализа кода
+title: Как выполнить Настройка словаря анализа кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea38b05f48969b80f9f8888f8bbd3c6a1a4e5657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904946"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Как выполнить Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в коде ошибок правописания, грамматические регистр и другие соглашения об именовании рекомендациям по разработке .NET Framework. Можно создать пользовательский словарь XML-файл, чтобы добавить, удалить или изменить условия, сокращений и акронимов встроенный словарь.
 
  Например, предположим, что код содержит класс с именем **DoorKnokker**. Анализ кода будет идентифицировать имя как состоящий из двух слов: **дверь** и **knokker**. Он будет затем вызывать предупреждение, **knokker** написано правильно. Чтобы принудительно запустить анализ кода распознавалось, можно добавить термин **knokker** в пользовательский словарь.
@@ -93,19 +92,19 @@ ms.locfileid: "49869292"
 
  Термины в словарь/слова/распознаны узлов применяются для следующих правил анализа кода:
 
--   [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+-   [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Составные слова должны иметь правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+-   [CA1703: Строки ресурсов должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+-   [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
--   [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
+-   [CA1726: Используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
--   [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+-   [CA2204: Литералы должны иметь правильное правописание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
 ###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Словарь и слова или нераспознанный/слов
  Чтобы исключить термин из списка терминов, анализа кода определяет как неправильно написанные, добавьте термин для исключения как внутренний текст элемента словаря и слова/нераспознано/слов. Условия в элементах словаря и слова/нераспознано/слов не учитывается.
@@ -127,19 +126,19 @@ ms.locfileid: "49869292"
 
  Условия в узле словарь/слова/нераспознано применяются для следующих правил анализа кода:
 
--   [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+-   [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Составные слова должны иметь правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+-   [CA1703: Строки ресурсов должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+-   [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
--   [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
+-   [CA1726: Используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
--   [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+-   [CA2204: Литералы должны иметь правильное правописание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
 ###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Словарь/слова/устаревшим/выражение [@PreferredAlternate]
  Чтобы включить термин в список терминов, которые анализа кода определяет, как устаревшие, добавьте термин как внутренний текст элемента словаря/слова или не рекомендуемые к использованию/Term. Нерекомендуемый термин — слово, которое написано правильно, но не следует использовать.
@@ -167,15 +166,15 @@ ms.locfileid: "49869292"
 
  Условия в узле словарь/слова или не рекомендуемые к использованию применяются для следующих правил анализа кода:
 
--   [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+-   [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Составные слова должны иметь правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+-   [CA1703: Строки ресурсов должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+-   [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
+-   [CA1726: Используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Словарь/слова/составной оператор или выражение [@CompoundAlternate]
  Встроенный словарь определяет некоторые термины, как единый отдельный термин, а не как составной термин. Чтобы включить термин в список терминов, которые анализа кода определяет как составное слово и укажите правильный регистр термина, добавьте термин как внутренний текст элемента словаря/слова/составной оператор или выражение. В атрибуте CompoundAlternate элемента Term укажите отдельные слова, составляющих составной термин с прописной первую букву каждого слова (верхнего регистра). Обратите внимание на то, что на срок, указанный во внутреннем тексте автоматически добавляется в список слов/словарь/DiscreteExceptions.
@@ -201,13 +200,13 @@ ms.locfileid: "49869292"
 
  Условия в узле словарь/слова/Compound применяются для следующих правил анализа кода:
 
--   [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+-   [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Составные слова должны иметь правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+-   [CA1703: Строки ресурсов должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+-   [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Словарь/слова/DiscreteExceptions/термин
  Чтобы исключить термин в список терминов, которые анализа кода определяет как один, дискретные word термин установленном правила учета регистра для составных слов, добавьте термин как внутренний текст элемента словаря/слова/DiscreteExceptions/Term. Термин в словарь/слова/DiscreteExceptions/выражение элемента не учитывается.
@@ -229,9 +228,9 @@ ms.locfileid: "49869292"
 
  Условия в узле словарь/слова/DiscreteExceptions применяются для следующих правил анализа кода:
 
--   [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+-   [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Составные слова должны иметь правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Словарь/акронимов/CasingExceptions/аббревиатура
  Чтобы включить аббревиатуру в список терминов, которые анализа кода определяет как написано правильно и указать работе аббревиатуры при проверке термина с учетом правил для составных слов, добавьте этот термин во внутренний текст элемента словаря/акронимов/CasingExceptions / Элемент. Сокращение в словарь/акронимов/CasingExceptions/элемент чувствителен к регистру.
@@ -253,7 +252,7 @@ ms.locfileid: "49869292"
 
  Условия в узле словарь/акронимов/CasingExceptions применяются для следующих правил анализа кода:
 
--   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
 ##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Для применения пользовательского словаря в проект
 

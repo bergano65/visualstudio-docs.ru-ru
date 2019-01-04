@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное использование встроенных диалоговых окон в Word'
-ms.custom: ''
+title: Как выполнить Программное использование встроенных диалоговых окон в Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829067"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Практическое: программное использование встроенных диалоговых окон в Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Как выполнить Программное использование встроенных диалоговых окон в Word
   При работе с Microsoft Office Word, бывают случаи, при необходимости отображать диалоговые окна для ввода данных пользователем. Несмотря на то, что вы можете создать свой собственный, можно использовать подход с использованием встроенных диалоговых окон в Word, которые представлены на <xref:Microsoft.Office.Interop.Word.Dialogs> коллекцию <xref:Microsoft.Office.Interop.Word.Application> объекта. Это позволяет получить доступ к более чем 200 встроенных диалоговых окон, которые представлены в виде перечисления.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35674478"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Практическое руководство. Программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Оператор Option strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection) (Отражение (C#))  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection) (Отражение (Visual Basic))  
-  
-  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053173"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740355"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -257,7 +257,7 @@ public void My_Test ()
 
 2.  В **обозревателе тестов** выберите методы тестирования и затем **Отладить выбранные тесты** из меню быстрого запуска.
 
-См. дополнительные сведения об [отладке модульных тестов](../debugger/debugging-in-visual-studio.md).
+См. дополнительные сведения об [отладке модульных тестов](../debugger/debugger-feature-tour.md).
 
 **Вопрос. Если я использую TDD, как я могу создать код из тестов?**
 

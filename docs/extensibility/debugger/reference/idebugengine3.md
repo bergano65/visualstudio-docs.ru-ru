@@ -1,9 +1,6 @@
 ---
-title: IDebugEngine3 | Документы Microsoft
-ms.custom: ''
+title: IDebugEngine3 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 291f5ca6f945abe9e0322839eb80c38b60674ce4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7110a69c84a131a600c903ac73fbb6acdde7cd64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913442"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
-Представляет обработчик одной отладки (DE), который управляет отладки один или несколько модулей.  
+Представляет механизм единый отладки (DE), который управляет отладка одного или нескольких модулей.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,21 +29,21 @@ IDebugEngine3 : IDebugEngine2
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется пользовательский DE (если он поддерживает символы) чтобы включить состояние JustMyCode. Этот интерфейс должен быть реализован, DE, если он поддерживает символы и JustMyCode.  
+ Этот интерфейс реализуется пользовательский DE (если он поддерживает символы) Включение JustMyCode состояния. Этот интерфейс должен быть реализован DE, если он поддерживает символы и JustMyCode.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс называется диспетчером сеанса отладки (SDM) для передачи параметров с пользователем для расположения, из которого требуется загрузить символы. Он также называется задаваемое GUID модуля при его создании экземпляра (идентификатор GUID формируется на основе из ядра регистрации). SDM также вызывает этот интерфейс для задания состояния JustMyCode и задать все исключения, известные отладчиком в определенное состояние.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Этот интерфейс называется диспетчером сеанса отладки (SDM) для передачи параметров с пользователем для расположения, из которого требуется загрузить символы. Она также называется присвоить идентификатор GUID модуля при создании его экземпляра (этот идентификатор GUID на основе метрик с момента регистрации обработчика). SDM также вызывает этот интерфейс для задания состояния JustMyCode и задать все исключения, известные в отладчике в определенное состояние.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, наследуемых от [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), `IDebugEngine3` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Задает путь или пути, DE будет использовать для поиска символов отладки.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Загрузка символов для всех модулей, которые еще не было их загруженные символы.|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|DE сообщает о JustMyCode сведения.|  
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Задает идентификатор GUID DE из метрики.|  
-|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Задайте указанное состояние необработанный все исключения.|  
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Задает путь или пути, DE, используемых для поиска для символов отладки.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Загружает символы для всех модулей, которые еще не были загружены символы, их.|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|DE сообщает о JustMyCode.|  
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Задает идентификатор GUID DE на основе метрик.|  
+|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Задайте необработанный все исключения в определенное состояние.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

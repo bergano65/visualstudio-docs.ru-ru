@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity | Документы Microsoft
-ms.custom: ''
+title: IDebugProcessSecurity | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967960"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` реализуется поставщика порта, чтобы предупредить пользователя небезопасна, присоединение к процессу.  
+`IDebugProcessSecurity` реализуется, чтобы предупредить пользователя, что присоединение к процессу небезопасна поставщика порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,13 +29,13 @@ IDebugProcessSecurity : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProcessSecurity`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Возвращает имя пользователя из поставщика порта.|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Предупреждает пользователя о том, небезопасна, присоединение к процессу отладки.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Возвращает имя пользователя от поставщика порта.|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Предупреждает пользователя о небезопасна, присоединение к процессу отладки.|  
   
 ## <a name="remarks"></a>Примечания  
- Реализация этого интерфейса позволяет показать предупреждение и разрешить пользователю отменить, если процесс, к которому требуется присоединение можно считаются небезопасными.  
+ Реализация этого интерфейса позволяет показать предупреждение и разрешить пользователю отменить, если процесс, к которому вы присоединяете может рассматриваться как небезопасные.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
@@ -49,6 +46,6 @@ IDebugProcessSecurity : IUnknown
   
 ## <a name="see-also"></a>См. также  
  [Порты](../../../extensibility/debugger/ports.md)   
- [Поставщикам портов](../../../extensibility/debugger/port-suppliers.md)   
+ [Поставщики портов](../../../extensibility/debugger/port-suppliers.md)   
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

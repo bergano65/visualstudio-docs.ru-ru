@@ -2,7 +2,6 @@
 title: Возможности IntelliSense редактора XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986210"
 ---
 # <a name="xml-editor-intellisense-features"></a>Возможности IntelliSense редактора XML
 
@@ -45,7 +44,7 @@ ms.locfileid: "49886387"
 
 -   имен параметров для данного именованного шаблона.
 
-Дополнительные сведения см. в разделе [Пошаговое руководство: использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) раздела.
+Дополнительные сведения см. в разделе [Пошаговое руководство: Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) раздела.
 
 ## <a name="auto-completion"></a>Функция автозавершения
  Редактор XML облегчает также редактирование XML-документов, автоматически вставляя необходимые элементы синтаксиса. Например, если ввести следующий открывающий тег:
@@ -122,4 +121,4 @@ ms.locfileid: "49886387"
 
 - [Редактор XML](../xml-tools/xml-editor.md)
 - [Использование технологии IntelliSense](../ide/using-intellisense.md)
-- [Пошаговое руководство. Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Пошаговое руководство: Использование XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

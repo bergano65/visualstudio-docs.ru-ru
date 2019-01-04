@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fb9dbc94d06bbb260884a2379e2427969fec1031
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 23ba016d95e96965637ca6742501b09b16a42707
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159247"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684370"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -127,7 +127,7 @@ ms.locfileid: "53159247"
 Для получения дополнительных сведений перейдите к следующему руководству:
 
 > [!div class="nextstepaction"]
-> [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Начало работы с C# и ASP.NET в Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>См. также
 

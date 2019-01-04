@@ -1,9 +1,6 @@
 ---
 title: Рекомендации по размещению команд | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, small command sets
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac09a361c885d866bf6a78e6fe7b49c246265ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6834a12c4ecc052c9589a156c2eeb701e88036e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933866"
 ---
 # <a name="command-placement-guidelines"></a>Рекомендации по размещению команд
 Советы и рекомендации для позиционирования команд в среде разработки Visual Studio (IDE) зависит от размера набора команд. Команды определяются и расположена в соответствии со сведения в *.vsct* файлов.  

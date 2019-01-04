@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861307"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 
@@ -43,7 +42,7 @@ ms.locfileid: "53049098"
 
 ## <a name="full-solution-analysis-suspended"></a>Полный анализ решения приостановлено
 
-По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [как: Включение и отключение анализа всего решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [Как Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>Сборщик Мусора низкой задержкой отключена
 

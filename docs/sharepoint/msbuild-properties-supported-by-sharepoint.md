@@ -1,13 +1,8 @@
 ---
 title: Свойства MSBuild, поддерживаемые SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5cb56698d01739f632f56da061f447ace1153212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900975"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Свойства MsBuild, поддерживаемые в SharePoint
   Любой [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойство, определенное в файле Microsoft.VisualStudio.SharePoint.targets, файле проекта или файле пользователя проекта может использоваться в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. Помимо общих [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойства проекта, SharePoint определяет дополнительные свойства, характерные для проектов SharePoint.  
@@ -57,5 +52,5 @@ ms.locfileid: "35674394"
 >  Можно использовать либо [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] синтаксис переменной `$(` *propertyName* `)` или синтаксис переменной среды `%` *propertyName* `%` Чтобы задать свойство.  
   
 ## <a name="see-also"></a>См. также
- [Справочные сведения о MSBuild](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  

@@ -2,7 +2,6 @@
 title: Анализ и моделирование архитектуры
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -32,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855053"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 
@@ -49,13 +48,13 @@ ms.locfileid: "51348883"
 
 * Программа позволяет создавать модели с разным уровнем детализации на протяжении всего жизненного цикла приложения.
 
-См. в разделе [сценарий: изменение проекта с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+См. в разделе [сценария: Изменение проекта с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>Кому
 
 |||
 |-|-|
-|**Визуализация кода**<br /><br /> — См. в разделе организации и отношений в коде путем создания карт кода. Визуализация зависимостей между сборками, пространствами имен, классами, методами и т. д.<br />— См. в разделе структуры и членов классов для конкретного проекта путем создания схем классов из кода.<br />-Найти конфликты между кодом и дизайном путем создания схем зависимостей для проверки кода.|-   [Визуализация кода](../modeling/visualize-code.md)<br />-   [Работа с классами и другими типами (конструктор классов)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Визуализация кода**<br /><br /> — См. в разделе организации и отношений в коде путем создания карт кода. Визуализация зависимостей между сборками, пространствами имен, классами, методами и т. д.<br />— См. в разделе структуры и членов классов для конкретного проекта путем создания схем классов из кода.<br />-Найти конфликты между кодом и дизайном путем создания схем зависимостей для проверки кода.|-   [Визуализация кода](../modeling/visualize-code.md)<br />-   [Работа с классами и другими типами (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Определение архитектуры**<br /><br /> — Определение и наложение ограничений на зависимости между компонентами кода путем создания схем зависимостей.|-   [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Проверка системы на соответствие требованиям и намеченной структуре**<br /><br /> — Проверка зависимостей кода с помощью схем зависимостей, которые описывают предполагаемую архитектуру и предотвратить изменения, которые могут конфликтовать с проектом.|-   [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Настройка моделей и схем**<br /><br /> -Создание собственных доменных языков.|-   [Пакет SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -90,7 +89,7 @@ ms.locfileid: "51348883"
 **См. в разделе:**
 
 -   [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)
--   [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
+-   [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
 -   [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Предметно-ориентированный язык

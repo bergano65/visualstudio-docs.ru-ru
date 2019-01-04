@@ -1,9 +1,6 @@
 ---
 title: Добавление элементов, чтобы добавить новый элемент диалоговым окнам | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b98e696def519cea6d3644d0ef3a48bc82c19136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956053"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Добавление элементов в диалоговом окне Добавление нового элемента
 Процесс добавления элементов к **Добавление нового элемента** запускает диалоговое окно с разделами реестра. Как показано в следующей записи в реестре, **AddItemTemplates** раздел содержит путь и имя папки, в какие элементы доступны в **Добавление нового элемента** помещаются диалоговое окно.  
@@ -39,7 +36,7 @@ ms.locfileid: "49812586"
  **SortPriority** = dword:00000064
 
 
-| name | Тип | Данные (от *.rgs* файла) | Описание |
+| name | Тип | Данные (от *.rgs* файла) | Описание: |
 |------------------|-----------| - | - |
 | @ (По умолчанию) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | Идентификатор ресурса для **Добавление элемента** шаблонов. |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера. |

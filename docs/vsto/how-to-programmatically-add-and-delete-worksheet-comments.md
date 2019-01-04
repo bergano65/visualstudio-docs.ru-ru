@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное добавление и удаление примечаний на листе'
-ms.custom: ''
+title: Как выполнить Программное добавление и удаление примечаний на листе
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cb243498585677d6df79139bae570a9eec6270d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968622"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Практическое: программное добавление и удаление примечаний на листе
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Как выполнить Программное добавление и удаление примечаний на листе
   Вы можете добавлять и удалять комментарии в листах Microsoft Office Excel программными средствами. Комментарии можно добавлять только в отдельные ячейки, а не в диапазоны из нескольких ячеек.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -65,7 +62,5 @@ ms.locfileid: "35673869"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программное отображение примечаний на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [Практическое руководство. Программное отображение примечаний на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)  
-  
-  

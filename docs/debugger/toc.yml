@@ -20,11 +20,11 @@ items:
 - name: Учебники
   items:
   - name: Обучение отладке кода C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Обучение отладке кода C++
     href: getting-started-with-the-debugger-cpp.md
   - name: Обучение отладке кода Visual Basic
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Запуск кода Python в отладчике...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Отладка живого приложения Azure
@@ -189,7 +189,7 @@ items:
           href: how-to-debug-from-a-dll-project.md
         - name: Отладка в смешанном режиме
           href: how-to-debug-in-mixed-mode.md
-      - name: 'Подготовка к отладке: консольные проекты'
+      - name: Подготовка к отладке. Консольные проекты
         href: debugging-preparation-console-projects.md
       - name: Отладка исполняемого файла, который не является частью решения Visual Studio
         href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -214,9 +214,9 @@ items:
         items:
         - name: Архитектура визуализатора
           href: visualizer-architecture.md
-        - name: Пошаговое руководство. Написание визуализатора на C#
+        - name: Пошаговое руководство. Создание визуализатора на C#
           href: walkthrough-writing-a-visualizer-in-csharp.md
-        - name: Пошаговое руководство. Написание визуализатора на Visual Basic
+        - name: Пошаговое руководство. Создание визуализатора на Visual Basic
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
         - name: Установка визуализатора
           href: how-to-install-a-visualizer.md
@@ -265,7 +265,7 @@ items:
       - name: Убедитесь, что DNS на удаленном компьютере настроена правильно
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.
-        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+        href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
       - name: Не удается подключиться к монитору удаленной отладки Microsoft Visual Studio
         href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
       - name: Не удалось инициировать подключение DCOM
@@ -408,14 +408,14 @@ items:
     - name: Отладка управляемого кода
       href: debugging-managed-code.md
       items:
-      - name: 'Подготовка к отладке: типы проектов C#, F# и Visual Basic'
+      - name: Подготовка к отладке. Типы проектов C#, F# и Visual Basic
         href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
         items:
-        - name: 'Управляемая отладка: рекомендуемые параметры свойств'
+        - name: Управляемая отладка. Рекомендуемые значения свойств
           href: managed-debugging-recommended-property-settings.md
-        - name: 'Подготовка к отладке: приложения Windows Forms'
+        - name: Подготовка к отладке. приложения Windows Forms
           href: debugging-preparation-windows-forms-applications.md
-        - name: 'Подготовка к отладке: службы Windows'
+        - name: Подготовка к отладке. Службы Windows
           href: debugging-preparation-windows-services.md
       - name: Отправка сообщений в окно "Вывод"
         href: diagnostic-messages-in-the-output-window.md
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Оператор Stop в Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: Пример. Отладка в Windows Forms
+      - name: Пошаговое руководство. Отладка формы Windows Form
         href: walkthrough-debugging-a-windows-form.md
       - name: Отладка метода OnStart
         href: how-to-debug-the-onstart-method.md
@@ -449,7 +449,7 @@ items:
     - name: Отладка машинного кода
       href: debugging-native-code.md
       items:
-      - name: 'Подготовка к отладке: типы проектов Visual C++'
+      - name: Подготовка к отладке. Типы проектов Visual C++
         href: debugging-preparation-visual-cpp-project-types.md
       - name: Отладка оптимизированного кода
         href: how-to-debug-optimized-code.md
@@ -550,10 +550,10 @@ items:
         href: walkthrough-debugging-a-web-form.md
       - name: Отладка исключений ASP.NET
         href: how-to-debug-aspnet-exceptions.md
-      - name: 'Отладка веб-приложений: ошибки и устранение неполадок'
+      - name: Отладка веб-приложений. Ошибки и устранение неполадок
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: 'Отладка веб-приложений: устранение неполадок'
+        - name: Отладка веб-приложений. Устранение неполадок
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: Проверка параметров свойства IIS
@@ -679,9 +679,9 @@ items:
         href: error-user-could-not-execute-stored-procedure-sp-enable-sql-debug.md
       - name: Совместное использование файлов Windows настроено...
         href: error-windows-file-sharing-has-been-configured-dot-dot-dot.md
-      - name: Предупреждение безопасности. Присоединение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу
+      - name: Предупреждение системы безопасности. Подключение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу
         href: security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md
-      - name: 'Предупреждение о безопасности: отладчик должен выполнить команду, для которой не установлено доверие'
+      - name: Предупреждение системы безопасности. Отладчик должен выполнить команду, для которой не установлено доверие
         href: security-warning-debugger-must-execute-untrusted-command.md
       - name: Предупреждения безопасности исходного сервера
         href: source-server-security-alert.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Новые возможности отладчика в Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947482"

@@ -1,9 +1,6 @@
 ---
 title: Критические изменения в расширяемости Visual Studio 2017 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841954"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -43,9 +40,9 @@ ms.locfileid: "49826496"
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Разработка расширения для Visual Studio 2017
 
-Средства для создания нового конструктора формат манифеста VSIX v3 теперь доступна в Visual Studio 2017. См. в соответствующем документе [как: перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) сведения с помощью средств конструктора или внесении обновлений вручную в проект и манифест для разработки расширений VSIX v3.
+Средства для создания нового конструктора формат манифеста VSIX v3 теперь доступна в Visual Studio 2017. См. в соответствующем документе [как: Перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) сведения с помощью средств конструктора или внесении обновлений вручную в проект и манифест для разработки расширений VSIX v3.
 
-## <a name="change-visual-studio-user-data-path"></a>Изменения: Путь к данным пользователя Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Изменение: Путь данных пользователя Visual Studio
 
 Ранее лишь по одному разу для каждого основного выпуска Visual Studio может существовать на каждом компьютере. Чтобы обеспечить поддержку side-by-side установленные версии Visual Studio 2017, пути к данным нескольких пользователей для Visual Studio могут существовать на компьютере пользователя.
 
@@ -84,7 +81,7 @@ ms.locfileid: "49826496"
 * Если расширение выполняется вне процесса Visual Studio:
   * Попробуйте найти базовые сборки Visual Studio в разделе <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* с помощью сопоставителя файл или сборку конфигурации.
 
-## <a name="change-reduce-registry-impact"></a>Изменение: Снизить влияние конфигурации реестра
+## <a name="change-reduce-registry-impact"></a>Изменение: Сокращение влияния реестра
 
 ### <a name="global-com-registration"></a>Глобальной регистрации COM
 
@@ -95,9 +92,9 @@ ms.locfileid: "49826496"
 ### <a name="visual-studio-registry"></a>Visual Studio реестра
 
 * Ранее установленные Visual Studio много разделов реестра в системы **HKEY_LOCAL_MACHINE** и **HKEY_CURRENT_USER** кустов в Visual Studio конкретного ключа:
-  * **HKLM\Software\Microsoft\VisualStudio\{версии}**: разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
-  * **HKCU\Software\Microsoft\VisualStudio\{версии}**: разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
-  * **HKCU\Software\Microsoft\VisualStudio\{версии} _Config**: копию выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
+  * **HKLM\Software\Microsoft\VisualStudio\{версии}**: Разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
+  * **HKCU\Software\Microsoft\VisualStudio\{версии}**: Разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
+  * **HKCU\Software\Microsoft\VisualStudio\{версии} _Config**: Копия выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
 * Чтобы снизить влияние на реестр, Visual Studio теперь использует [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) функции для хранения разделов реестра в закрытый двоичный файл в разделе *[VSAPPDATA]\privateregistry.bin*. Только очень небольшое количество клавиш для Visual Studio определенного остаются в системном реестре.
 
 * Это не повлияет на существующий код, выполняемый в процесс Visual Studio. Visual Studio будет перенаправлять все операции с реестром в раздел HKCU Visual Studio конкретных частный реестр. Чтение и запись в другие места реестра будет продолжать использовать в системный реестр.

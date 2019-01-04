@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление стандартных текстовых маркеров | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление маркеров стандартного текста | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874632"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Практическое: Добавление стандартные текстовые метки
+# <a name="how-to-add-standard-text-markers"></a>Как выполнить Добавление маркеров стандартного текста
 Используйте следующую процедуру для создания одного из типов маркеров текст по умолчанию, в состав [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базовым редактором.  
   
 ## <a name="to-create-a-text-marker"></a>Для создания текстового маркера  
@@ -51,6 +48,6 @@ ms.locfileid: "39638825"
   
 ## <a name="see-also"></a>См. также  
  [Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Практическое: реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)   
- [Практическое: Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
- [Практическое: использовать текстовые метки](../extensibility/how-to-use-text-markers.md)
+ [Практическое руководство. Реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)   
+ [Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
+ [Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)

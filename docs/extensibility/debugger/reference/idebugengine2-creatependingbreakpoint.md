@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::CreatePendingBreakpoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d711b119e88e9996df19862f9a6779f285ebe4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64b01e75255f62059be4af94d9369f76d5b9f79b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892031"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Создает точку останова в модуль отладки (DE).  
@@ -28,14 +25,14 @@ ms.locfileid: "49907018"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT CreatePendingBreakpoint(   
+HRESULT CreatePendingBreakpoint(   
    IDebugBreakpointRequest2*  pBPRequest,  
    IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
 ```csharp  
-int CreatePendingBreakpoint(   
+int CreatePendingBreakpoint(   
    IDebugBreakpointRequest2     pBPRequest,  
    out IDebugPendingBreakpoint2 ppPendingBP  
 );  

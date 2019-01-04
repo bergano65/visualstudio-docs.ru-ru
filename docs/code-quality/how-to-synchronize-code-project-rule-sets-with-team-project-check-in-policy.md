@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Синхронизация наборов правил проекта кода с политикой возврата командного проекта
+title: Как выполнить Синхронизация наборов правил проекта кода с политикой возврата командного проекта
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883247"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Практическое: синхронизация наборов правил проекта кода с политикой возврата проект Azure DevOps
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как выполнить Синхронизация наборов правил проекта кода с политикой возврата проект Azure DevOps
 
 Синхронизировать параметры анализа кода для проектов кода для политики возврата для проекта DevOps в Azure, указав набор правил, которая содержит по крайней мере правила, заданные в набор правил для политики возврата. Руководитель группы разработчиков могут информировать вас о имя и расположение набора правил для политики возврата. Чтобы обеспечить использование правильного набора правил анализа кода для проекта можно использовать один из следующих вариантов:
 
@@ -55,7 +54,7 @@ ms.locfileid: "44281160"
 
 1.  Выполните одну из процедур выше в этом разделе, чтобы выбрать политику возврата проекта DevOps в Azure на странице "Анализ кода" диалогового окна параметров проекта.
 
-2.  Нажмите кнопку **откройте**.
+2.  Нажмите кнопку **Открыть**.
 
 3.  Добавление или удаление правила с помощью [редактор набора правил](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

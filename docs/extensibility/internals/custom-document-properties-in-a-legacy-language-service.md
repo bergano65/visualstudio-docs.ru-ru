@@ -1,9 +1,6 @@
 ---
 title: Настраиваемые свойства документа в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1c323b71f67f795cb9a3c6ab7492cbcf77a9b8c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946715"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Настраиваемые свойства документа в языковой службы прежних версий
 Свойства документа, которые могут отображаться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** окна. Языки программирования обычно не имеют свойства, связанные с отдельным исходных файлов. Тем не менее XML поддерживает свойства документа, которые влияют на кодирование, схемы и таблицы стилей.  

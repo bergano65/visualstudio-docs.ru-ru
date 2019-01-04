@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Открытие модели из файла в коде программы
+title: Как выполнить Открытие модели из файла в коде программы
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938074"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Как выполнить Открытие модели из файла в коде программы
 Модели DSL можно открыть в любом приложении.
 
  Из расширения Visual Studio можно использовать ModelBus для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
@@ -42,7 +41,7 @@ ms.locfileid: "49812495"
 
     -   Если вы не видите этого в разделе **.NET** вкладке **Add References** диалоговом окне щелкните **Обзор** вкладку и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   Сборки DSL, который находится в папке bin проекта доменного языка. Его имя обычно имеет форму: *YourCompany*. *Ваш_проект*`.Dsl.dll`.
+-   Сборки DSL, который находится в папке bin проекта доменного языка. Обычно имя имеет вид: *YourCompany*. *Ваш_проект*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Важные классы в доменном ЯЗЫКЕ
  Прежде чем можно написать код, считывающий DSL, следует знать имена некоторых классов, созданных с DSL. В решение DSL откройте **Dsl** проекта и папка **GeneratedCode** папки. Можно дважды щелкнуть в проекте сборки DSL **ссылки**и откройте пространство имен DSL в **обозреватель объектов**.

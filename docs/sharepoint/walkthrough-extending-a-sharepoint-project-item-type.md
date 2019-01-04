@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Расширение типа элемента проекта SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Расширение типа элемента проекта SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868671"
 ---
-# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство: Расширение типа элемента проекта SharePoint
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство. Расширение типа элемента проекта SharePoint
   Можно использовать **Business Data Connectivity Model** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта, данные в модели не отображается для пользователей. Также необходимо создать внешний список в SharePoint, чтобы пользователи могли просматривать данные.  
   
  В этом пошаговом руководстве вы создадите расширения **Business Data Connectivity Model** элемент проекта. Разработчики могут использовать расширения для создания внешнего списка в своих проектах, в котором данные будут отображены в модели BDC. В этом пошаговом руководстве описаны следующие задачи.  
@@ -299,5 +296,3 @@ ms.locfileid: "51295726"
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

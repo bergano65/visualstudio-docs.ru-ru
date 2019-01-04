@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная Защита листов Excel'
-ms.custom: ''
+title: Как выполнить Программная Защита листов Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936936"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Практическое: программная Защита листов Excel
+# <a name="how-to-programmatically-protect-worksheets"></a>Как выполнить Программная Защита листов Excel
   Возможность защиты в Microsoft Office Excel помогает предотвратить изменение объектов на листе пользователями и кодом. По умолчанию все ячейки заблокированы после включения защиты.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -70,12 +67,10 @@ ms.locfileid: "49867186"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [Практическое: программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Практическое руководство. Программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
+ [Практическое руководство. Программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

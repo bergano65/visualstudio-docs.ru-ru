@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929284"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Переопределение и расширение созданных классов
 
@@ -92,6 +91,6 @@ public partial class Book
 
 Можно подписаться на события на фигурах. Например можно прослушивать щелчков мыши на фигуре. Вам нужно написать код, который подписывается на событие для каждого объекта. Этот код могут быть написаны на переопределение InitializeInstanceResources().
 
-Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Например, см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Например, см. в разделе [как: Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Обычно эти события не происходят внутри транзакции. Следует создать транзакцию, если вы хотите внести изменения в хранилище.

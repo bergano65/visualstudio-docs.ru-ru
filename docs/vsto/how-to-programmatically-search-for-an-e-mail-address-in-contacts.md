@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программный поиск адреса электронной почты в контактах'
-ms.custom: ''
+title: Как выполнить Программный поиск адреса электронной почты в контактах
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7b9c4c7d02f3cd1564e6733c46cb821eade7f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 767c75bff42bc19b70d4b6dcd35da16c4bb4c099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893358"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Практическое: программный поиск адреса электронной почты в контактах
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Как выполнить Программный поиск адреса электронной почты в контактах
   В этом примере в папке контактов осуществляется поиск контактов, в адресах электронной почты которых содержится доменное имя **example.com** .  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35675489"
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами контактов](../vsto/working-with-contact-items.md)   
- [Практическое: Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Практическое: программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Практическое: программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
-  
-  
+ [Практическое руководство. Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Практическое руководство. Программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Практическое руководство. Программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  

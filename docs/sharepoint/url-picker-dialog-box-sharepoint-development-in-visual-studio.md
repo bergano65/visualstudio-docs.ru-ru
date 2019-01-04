@@ -1,9 +1,6 @@
 ---
 title: Диалоговое окно выбора URL-адрес (Разработка приложений SharePoint в Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.VWD.URLPicker
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffeca5bf0149ce5a36e5abb77eab673e87f36dc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925905"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Диалоговое окно выбора URL-адрес (Разработка приложений SharePoint в Visual Studio)
   В диалоговом окне выбора URL-адреса можно выбрать такие файлы, как файлы эталонной страницы или файлы изображений, расположенные в вашем проекте или на локальном сервере, где выполняется SharePoint.  
@@ -46,7 +43,7 @@ ms.locfileid: "49950762"
   
   Разверните **Server** узел, чтобы выбрать файлы, расположенные на локальном сервере, на котором выполняется SharePoint. Чтобы отобразились в диалоговом окне, эти файлы должны удовлетворять следующим критериям:  
   
-- Файл должен находиться в одном из следующих сопоставленных папок: **образы**, **макеты**, или **ControlTemplates**.  
+- Файл должен находиться в одном из следующих сопоставленных папок: **Образы**, **макеты**, или **ControlTemplates**.  
   
 - Файл не может находиться в базе данных содержимого SharePoint.  
   
@@ -62,4 +59,3 @@ ms.locfileid: "49950762"
  [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  

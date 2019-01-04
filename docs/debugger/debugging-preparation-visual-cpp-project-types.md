@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562039"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Подготовка к отладке: Типы проектов Visual C++
 В этом разделе описана отладка основных типов проектов, созданных с использованием шаблонов проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -73,7 +73,7 @@ ms.locfileid: "53066318"
   
 2.  В меню **Отладка** выберите команду **Пуск**.  
   
-3.  Отладка использует методы, обсуждаемые в [Общие сведения об отладчике](../debugger/getting-started-with-the-debugger.md).  
+3.  Отладка использует методы, обсуждаемые в [сначала посмотрим, отладчик](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Ручная установка конфигурации отладки  
   
@@ -111,7 +111,7 @@ ms.locfileid: "53066318"
  [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>См. также  
- [Основы отладки](../debugger/getting-started-with-the-debugger.md)   
+ [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Подключение к выполняющейся программе или к нескольким программам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   

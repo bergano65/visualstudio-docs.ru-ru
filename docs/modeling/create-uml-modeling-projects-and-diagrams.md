@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 700b6c42cbdbf0a8b8c6f604a4c25f0042e2bffe
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 5d393433f3b4ba50a384c7498ac51d49d0527658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920093"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Создание проектов и схем моделирования UML
 
@@ -31,4 +30,4 @@ ms.locfileid: "50966782"
 * [Создание моделей для приложения](create-models-for-your-app.md)
 * [Использование моделей в процессе разработки](use-models-in-your-development-process.md)
 * [Проверка системы в ходе разработки](validate-your-system-during-development.md)
-* [Расширение моделей и схем UML](extend-uml-models-and-diagrams.md)
+* [Расширение моделей и схем UML](create-uml-modeling-projects-and-diagrams.md)

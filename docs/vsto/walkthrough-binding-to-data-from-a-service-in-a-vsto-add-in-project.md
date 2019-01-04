@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO'
-ms.custom: ''
+title: Пошаговое руководство. Привязка к данным из службы в проекте надстройки VSTO
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892294"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. Привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.  
   
- **Применение.** Сведения этого раздела относятся к проектам уровня приложения для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Область применения:** Сведения этого раздела применяются к проектам уровня приложения для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933187"
   
 1.  Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS**в Visual Basic или C#.  
   
-     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio откроет файл `ThisAddIn.vb` или `ThisAddIn.cs` и добавит проект в **обозреватель решений**.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933187"
   
 ## <a name="see-also"></a>См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

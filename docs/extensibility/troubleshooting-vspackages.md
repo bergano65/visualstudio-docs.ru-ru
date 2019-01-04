@@ -1,9 +1,6 @@
 ---
 title: Устранение неполадок пакетов VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835975"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть с VSPackage и советы для решения проблем.  
@@ -53,7 +50,7 @@ ms.locfileid: "51348687"
   
 5. В журнале действий.  
   
-    Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+    Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Дополнительные сведения об исключениях, создаваемых интегрированной среды разработки **исключения** на **Отладка** меню, чтобы включить исключения. В **исключения** диалоговом выберите типы исключений, о которых нужно получить дополнительные сведения.  
   
@@ -92,7 +89,7 @@ ms.locfileid: "51348687"
   
 2.  Использование журнала действий.  
   
-     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Используйте открытые символы.  
   

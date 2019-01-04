@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint'
-ms.custom: ''
+title: Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c9bef0c76f0c01c620670bf67882fd90e2e1ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875502"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
@@ -139,5 +136,3 @@ ms.locfileid: "49882599"
  [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

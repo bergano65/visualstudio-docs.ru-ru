@@ -1,9 +1,6 @@
 ---
-title: FIELD_KIND_EX | Документы Microsoft
-ms.custom: ''
+title: FIELD_KIND_EX | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 125c333b53c8d3d54df0f2235c6cc020e71c7ca5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6954aaf92c5d77ad4d8f51e6b342bfc021b37a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870879"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
-Перечисляет дополнительных типов полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
+Перечисляет дополнительные типы полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,10 +43,10 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Участники  
  FIELD_KIND_EX_NONE  
- Поле не содержит расширенный тип.  
+ Поле не содержит расширенного типа.  
   
  FIELD_TYPE_EX_METHODVAR  
- Поле содержит метод переменной.  
+ Поле содержит переменную в метод.  
   
  FIELD_TYPE_EX_CLASSVAR  
  Поле содержит переменной класса.  

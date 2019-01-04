@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox'
-ms.custom: ''
+title: Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935103"
 ---
-# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox
+# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
   В этом пошаговом руководстве описываются основные принципы использования флажков на листе Microsoft Office Excel для изменения форматирования. Будет использовать средства разработки Office в Visual Studio для создания и добавления кода в проект. Чтобы просмотреть результат в виде готового кода, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49843539"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **форматирование Excel** проект **обозревателе решений**.  
   
@@ -161,10 +158,9 @@ ms.locfileid: "49843539"
  В этом пошаговом руководстве описываются основные принципы использования флажков и форматирование текста в листах Excel. Ниже приводятся некоторые из возможных последующих задач.  
   
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
--   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображения текста в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

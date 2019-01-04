@@ -1,29 +1,28 @@
 ---
-title: 'Конструктор рабочих процессов - как: Добавление действий на панель элементов'
+title: 'Конструктор рабочих процессов - как: Добавление действий на панель инструментов'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9540fd6ec203b990f53294e41ee829c9e3be897b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914989"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Практическое руководство. Добавление действий на панель инструментов
+# <a name="how-to-add-activities-to-the-toolbox"></a>Как выполнить Добавление действий на панель инструментов
 
 Действия, которые могут добавляться к **элементов** в решении несколькими различными способами. Это можно сделать из текущего проекта, ссылкой из другого проекта либо ссылкой из другой сборки.
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Добавление действия из текущего проекта
 
-1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. Дополнительные сведения о добавлении нового пользовательского действия к проекту см. в разделе [как: добавьте новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Добавить новое пользовательское действие к текущему проекту рабочего процесса. Дополнительные сведения о добавлении нового пользовательского действия к проекту см. в разделе [как: Добавить новый элемент в проект рабочего процесса](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2.  Добавьте к действию пользовательскую логику.
 
@@ -62,4 +61,4 @@ ms.locfileid: "37118217"
 
 ## <a name="see-also"></a>См. также
 
-- [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)
+- [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)

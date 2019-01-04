@@ -2,7 +2,6 @@
 title: CA1505. Избегайте кода, неудобного для поддержки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnmaintainableCode
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 250049806eb8765f9cc080f1b2de0b7ae0dd1fce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864560"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505. Избегайте кода, неудобного для поддержки
 
@@ -36,7 +35,7 @@ ms.locfileid: "45546919"
  Тип или метод имеет низкий индекс обслуживаемости.
 
 ## <a name="rule-description"></a>Описание правила
- Индекс удобства поддержки вычисляется с помощью следующих метрик: строки кода, объем программы и сложность организации циклов. Программа тома — это мера трудности понимания типа или метода, основанный на количестве операторов и операндов в коде. Сложность организации циклов — это мера сложности структурного типа или метода. Дополнительные сведения о метриках кода в [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ Индекс удобства поддержки вычисляется с помощью следующих метрик: строки кода, объем программы и сложность организации циклов. Программа тома — это мера трудности понимания типа или метода, основанный на количестве операторов и операндов в коде. Сложность организации циклов — это мера сложности структурного типа или метода. Дополнительные сведения о метриках кода в [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md).
 
  Низкий индекс обслуживаемости указывает, что тип или метод, вероятно, трудно поддерживать и будет хорошим кандидатом для переработки.
 
@@ -49,4 +48,4 @@ ms.locfileid: "45546919"
 ## <a name="see-also"></a>См. также
 
 - [Предупреждения удобства обслуживания](../code-quality/maintainability-warnings.md)
-- [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md)

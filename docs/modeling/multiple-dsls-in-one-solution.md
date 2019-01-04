@@ -8,24 +8,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f73fd8170c91fe51692c9ec5b5b39e7c36570dd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fce705b4f36c8c3bf0e6d44feaff353853652cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940658"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 Несколько доменных языков можно упаковать как часть единого решения, чтобы устанавливать их вместе.
 
- Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка поведения копирования](../modeling/customizing-copy-behavior.md).
+ Для интеграции нескольких доменных языков можно использовать различные технологии. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) и [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) и [Настройка функции копирования](../modeling/customizing-copy-behavior.md).
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Построение нескольких доменных языков в одном решении
 
 1. Создайте два или несколько доменных языков и проект VSIX, а затем добавьте все проекты в одно решение.
 
-   -   Для создания нового проекта VSIX: В **новый проект** диалоговом окне выберите **Visual C#**, **расширяемости**, **проект VSIX**.
+   -   Создание нового проекта VSIX В **новый проект** диалоговом окне выберите **Visual C#** , **расширяемости**, **проект VSIX**.
 
    -   Создайте одно или несколько решений доменного языка в каталоге решений VSIX.
 
@@ -62,5 +61,5 @@ ms.locfileid: "49949374"
 ## <a name="see-also"></a>См. также
 
 - [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Настройка функции копирования](../modeling/customizing-copy-behavior.md)

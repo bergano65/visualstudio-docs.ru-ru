@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Управление структурой элементов управления в панели действий'
-ms.custom: ''
+title: Как выполнить Управление структурой элементов управления в панели действий
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], control layout
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f523d56b189fb1517df7e22d18cd689e9300eff3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991179"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Практическое: Управление структурой элементов управления в панели действий
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Как выполнить Управление структурой элементов управления в панели действий
   Панель действий, расположенной справа от документа или листа по умолчанию. Тем не менее его можно закрепить слева, сверху или снизу. Если вы используете несколько пользовательских элементов управления, можно написать код, чтобы правильно пользовательские элементы управления на панели действий. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -32,14 +29,14 @@ ms.locfileid: "35255919"
  Порядок стека элементов управления зависит от того, закреплена ли панель действий вертикально или горизонтально.  
   
 > [!NOTE]  
->  Если пользователь изменяет размер панели действий во время выполнения, можно разместить элементы управления для изменения размера с панелью действий. Вы можете использовать свойство <xref:System.Windows.Forms.Control.Anchor%2A> элемента управления Windows Forms, чтобы закрепить элементы управления на панели действий. Дополнительные сведения см. в разделе [как: привязка элементов управления в Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+>  Если пользователь изменяет размер панели действий во время выполнения, можно разместить элементы управления для изменения размера с панелью действий. Вы можете использовать свойство <xref:System.Windows.Forms.Control.Anchor%2A> элемента управления Windows Forms, чтобы закрепить элементы управления на панели действий. Дополнительные сведения см. в разделе [Как Привязка элементов управления в Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
   
 > [!NOTE]  
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Чтобы задать порядок стека управления панели действий  
   
-1.  Откройте проект уровня документа для Microsoft Office Word, содержащий панель действий с несколькими пользовательские элементы управления или элементы управления панели вложенных действий. Дополнительные сведения см. в разделе [как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+1.  Откройте проект уровня документа для Microsoft Office Word, содержащий панель действий с несколькими пользовательские элементы управления или элементы управления панели вложенных действий. Дополнительные сведения см. в разделе [Как Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
 2.  Щелкните правой кнопкой мыши **ThisDocument.cs** или **ThisDocument.vb** в **обозревателе решений** и нажмите кнопку **Просмотр кода**.  
   
@@ -70,9 +67,7 @@ ms.locfileid: "35255919"
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
- [Практическое: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Практическое: Добавление панели действий в документы Word или Excel книги](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Практическое руководство. Добавление панели действий в документы Word или Excel книги](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

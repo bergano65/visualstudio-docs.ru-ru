@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496146"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802804"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "46496146"
 |[Установка Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Сведения о Xamarin в Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Документация для разработки мобильных приложений Xamarin](/xamarin/) |
-|[DevOps с приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps с приложениями Xamarin](/xamarin/tools/ci/devops/) |
 |[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ ms.locfileid: "46496146"
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Создание одного набора страниц, отображаемого на всех устройствах, с помощью Xamarin.Forms
 
- В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) и в [документации по Xamarin.Forms](/xamarin/xamarin-forms/).
+ В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) и в [документации по Xamarin.Forms](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
 

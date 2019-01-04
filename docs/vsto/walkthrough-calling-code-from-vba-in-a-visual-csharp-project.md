@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual C#'
-ms.custom: ''
+title: Пошаговое руководство. Вызов кода из VBA в визуальном элементе C# проекта
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989034"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство: Вызов кода из VBA в проекте Visual C#
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство. Вызов кода из VBA в визуальном элементе C# проекта
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Excel из кода Visual Basic для приложений (VBA) в книге. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `Sheet1` , представление метода коду VBA в книге и вызов метода из кода VBA в книге.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -74,7 +71,7 @@ ms.locfileid: "38781693"
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -164,7 +161,7 @@ ms.locfileid: "38781693"
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Добавьте следующий метод в класс `Sheet1` . Этот метод переопределяет метод <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> для возврата текущего экземпляра класса `Sheet1` .  
+3.  Добавьте следующий метод в класс `Sheet1`. Этот метод переопределяет метод <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> для возврата текущего экземпляра класса `Sheet1` .  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   
@@ -245,14 +242,13 @@ ms.locfileid: "38781693"
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:  
   
--   Вызов кода в ведущем элементе в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual C#. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Вызов кода в ведущем элементе в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual C#. Дополнительные сведения см. в разделе [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>См. также  
  [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
- [Практическое: предоставляют к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Практическое: предоставляют к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Практическое руководство. Предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Практическое руководство. Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
-  

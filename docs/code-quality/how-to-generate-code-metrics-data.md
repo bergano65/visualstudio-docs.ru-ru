@@ -2,7 +2,6 @@
 title: Сформировать показатели кода из командной строки или интегрированной среды разработки
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics data
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 96b74421d638a99823399a0049b712bc6c54c8a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849062"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Практическое: создание данных для метрик кода
+# <a name="how-to-generate-code-metrics-data"></a>Как выполнить Создание данных для метрик кода
 
 Вы можете создать Результаты метрик кода для одного или нескольких проектов или всего решения. Метрики кода доступен в среде разработки Visual Studio (IDE), а также для C# и проекты Visual Basic, в командной строке.
 
@@ -68,7 +67,7 @@ ms.locfileid: "50966535"
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Исполняемый файл с именем *Metrics.exe* создается в *двоичные файлы* каталог в корневом каталоге репозитория.
+   Исполняемый файл с именем *Metrics.exe* создается в *artifacts\bin* каталог в корневом каталоге репозитория.
 
    > [!TIP]
    > Для создания *Metrics.exe* в [устаревший режим](#legacy-mode), выполните следующую команду:

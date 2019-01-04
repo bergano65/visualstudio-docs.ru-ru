@@ -1,9 +1,6 @@
 ---
 title: Примеры разработки решений Office и пошаговые руководства
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909792"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Примеры разработки решений Office и пошаговые руководства
   Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений Microsoft Office.  
@@ -42,7 +39,7 @@ ms.locfileid: "35674862"
   
 ## <a name="in-this-section"></a>Содержание раздела  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Примеры разработки решений Office](../vsto/office-development-samples.md)|Ссылки на примеры приложений, которые иллюстрируют использование решений Office и SharePoint в Visual Studio.|  
 |[Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)|Список пошаговых руководств, которые содержат введение в средства разработки Office в Visual Studio и описывает, как можно интегрировать в бизнес-приложения Microsoft Office Word.|  
@@ -53,12 +50,10 @@ ms.locfileid: "35674862"
   
 ## <a name="related-sections"></a>Связанные разделы  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности при разработке решений Office.|  
 |[Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Объясняет, как управляемый код рабочих решений Office с точки зрения разработчика и конечного пользователя и включает сведения о том, как работает с документами Office и приложений.|  
 |[Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)|Список часто задаваемых вопросов о программировании с использованием разработка решений Office в Visual Studio и ссылки на разделы, помогающие решить типичные проблемы.|  
 |[Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)|Ссылки на сведения о создании решений Microsoft Office и о роли сборок в решении.|  
 |[Общие сведения о панели действий](../vsto/actions-pane-overview.md)|Обзор области задач уровня документа, названная панелью действий.|  
-  
-  

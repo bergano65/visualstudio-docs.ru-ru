@@ -1,13 +1,8 @@
 ---
-title: 'Пошаговое руководство: Создание страницы приложения SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание страницы приложения SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867843"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство: Создание страницы приложения SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство. Создание страницы приложения SharePoint
  
 Страница приложения — это разновидность страницы ASP.NET. Страницы приложения содержат содержимое, объединенное с эталонной страницей SharePoint. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
@@ -78,7 +73,7 @@ ms.locfileid: "42634791"
 
 Указанный элемент страницы приложения позволяет использовать конструктор для добавления элементов управления ASP.NET на страницу приложения. Этот конструктор является тот же конструктор, используемый в Visual Web Developer. Добавьте метку, список переключателей и таблицу, чтобы **источника** представление кода и затем задать свойства так же, как при разработке любой стандартной страницы ASP.NET.
 
-1. В строке меню выберите **представление** > **элементов**.
+1. В строке меню выберите **Вид** > **Панель элементов**.
 
 2. В стандартном узле **элементов**, выполните одно из следующих действий:
 
@@ -108,7 +103,7 @@ ms.locfileid: "42634791"
 
      В редакторе кода открывается файл кода страницы приложения.
 
-2. Добавьте следующий метод в класс `SearchItems`. Этот код обрабатывает <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> событие <xref:System.Web.UI.WebControls.DropDownList> путем вызова метода, который вы создадите далее в этом пошаговом руководстве.
+2. Добавьте следующий метод в класс `SearchItems` . Этот код обрабатывает <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> событие <xref:System.Web.UI.WebControls.DropDownList> путем вызова метода, который вы создадите далее в этом пошаговом руководстве.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -118,12 +113,12 @@ ms.locfileid: "42634791"
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Добавьте следующий метод в класс `SearchItems`. Этот метод перебор всех сайтов на ферме серверов и осуществляет поиск элементов, созданных или измененных текущим пользователем.
+4. Добавьте следующий метод в класс `SearchItems` . Этот метод перебор всех сайтов на ферме серверов и осуществляет поиск элементов, созданных или измененных текущим пользователем.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Добавьте следующий метод в класс `SearchItems`. Этот метод отображает элементы, созданных или измененных текущим пользователем в таблице.
+5. Добавьте следующий метод в класс `SearchItems` . Этот метод отображает элементы, созданных или измененных текущим пользователем в таблице.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -158,5 +153,5 @@ ms.locfileid: "42634791"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое: Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)  
+[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)  
 [Тип страниц приложений _layouts](http://go.microsoft.com/fwlink/?LinkID=169274)

@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook'
-ms.custom: ''
+title: Пошаговое руководство. Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926590"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Пошаговое руководство. Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
   В этом пошаговом руководстве показано, как отобразить уникальный экземпляр настраиваемой области задач для каждого созданного или открытого сообщения электронной почты сообщения. Пользователи могут отображать или скрывать настраиваемую область задач с помощью кнопки на ленте каждого сообщения электронной почты.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -60,14 +57,14 @@ ms.locfileid: "49828472"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или Microsoft Outlook 2010.  
   
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [How do I: использовать области задач в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использовать области задач в Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Создание проекта  
  Настраиваемые области задач реализуются в надстройках VSTO. Начните с создания проекта надстройки VSTO для Outlook.  
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект **надстройки Outlook** с именем **OutlookMailItemTaskPane**. Используйте шаблон проекта **Надстройка Outlook** . Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект **надстройки Outlook** с именем **OutlookMailItemTaskPane**. Используйте шаблон проекта **Надстройка Outlook** . Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода *ThisAddIn.cs* или *ThisAddIn.vb* и добавляет проект **OutlookMailItemTaskPane** в **обозреватель решений**.  
   
@@ -267,17 +264,15 @@ ms.locfileid: "49828472"
   
 -   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
--   Автоматизация приложения Microsoft Office с помощью настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: автоматизации приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Автоматизация приложения Microsoft Office с помощью настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Создание в Excel кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Создание в Excel кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Практическое: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Пошаговое руководство: Автоматизация приложения из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Пошаговое руководство: Автоматизация приложения с настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)   
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

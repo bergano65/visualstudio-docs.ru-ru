@@ -1,16 +1,11 @@
 ---
 title: Локализация решений SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837360"
 ---
 # <a name="localize-sharepoint-solutions"></a>Локализация решений SharePoint
 
-  Процесс подготовки приложений, чтобы их можно использовать по всему миру называется локализацией. Локализация перевода ресурсов для конкретного языка и региональных параметров. Дополнительные сведения см. в разделе [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications). Здесь представлен обзор процесса локализации решения SharePoint.  
+  Процесс подготовки приложений, чтобы их можно использовать по всему миру называется локализацией. Локализация перевода ресурсов для конкретного языка и региональных параметров. Дополнительные сведения см. в разделе [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md). Здесь представлен обзор процесса локализации решения SharePoint.  
   
  Для локализации решения, удалите из кода жестко запрограммированные строки и перенести их в файлы ресурсов. Файл ресурсов является [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-файл c *.resx* расширения. Файл ресурсов содержит переведенные версии строк, используемых в решении. Дополнительные сведения см. в разделе [ресурсы в приложениях](http://go.microsoft.com/fwlink/?LinkID=155844).  
   
@@ -59,7 +54,7 @@ ms.locfileid: "37119849"
  Существует три области, обычно локализации в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] приложения SharePoint: компоненты, разметка страницы ASPX и код. Для наглядности в следующих разделах предполагается, что у вас есть решение SharePoint, локализуемое на немецкий и японский. Язык по умолчанию — на английском языке.  
   
 ### <a name="localize-features"></a>Локализация компонентов
- Для локализации компонентов необходимо заменить жестко запрограммированное название и описание возможности выражением, которое ссылается на переведенное название и строку в локализованном файле ресурсов. Внесения этого изменения в **конструктора компонентов** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как: Локализация компонента](../sharepoint/how-to-localize-a-feature.md).  
+ Для локализации компонентов необходимо заменить жестко запрограммированное название и описание возможности выражением, которое ссылается на переведенное название и строку в локализованном файле ресурсов. Внесения этого изменения в **конструктора компонентов** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Как Локализация компонента](../sharepoint/how-to-localize-a-feature.md).  
   
  Для локализации компонентов с английского языка на немецкий и японский, три элемента проекта файла ресурсов добавьте в проект: одному для английского, немецкого и японского языков. Файлы ресурсов для компонентов нельзя использовать для локализации разметки ASPX или кода. для них требуются отдельные файлы ресурсов.  
   
@@ -109,7 +104,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- Дополнительные сведения см. в разделе [как: разметки ASPX, локализация](../sharepoint/how-to-localize-aspx-markup.md).  
+ Дополнительные сведения см. в разделе [Как Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md).  
   
 ### <a name="localize-code"></a>Локализация кода
  В дополнение к локализации строк компонента и [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] разметки, также необходимо локализовать строки сообщений и ошибок, которые появляются в коде решения. Локализованные информационные сообщения и сообщения об ошибках будут содержаться во вспомогательных сборках. Вспомогательные сборки содержат строки, которые отображаются для пользователей, таких как [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] текст и выходные сообщения, такие как исключения.  
@@ -126,7 +121,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- Дополнительные сведения см. в разделе [как: локализация кода](../sharepoint/how-to-localize-code.md).  
+ Дополнительные сведения см. в разделе [Как Локализация кода](../sharepoint/how-to-localize-code.md).  
   
 #### <a name="web-part-code-localization"></a>Локализация кода веб-части
  Веб-части содержат пользовательскую функцию редактора свойств, содержащий атрибуты кода, использующие жестко запрограммированные строки, такие как WebDisplayName, категория и WebDescription. Чтобы заменить значения строк для этих атрибутов, создайте отдельный класс, производный от класса атрибута. В этих классах задайте свойство атрибута. Свойство атрибута зависит от базового класса. Например свойством атрибута WebDisplayName является DisplayNameValue, а свойством атрибута WebDescription — DescriptionValue.  
@@ -134,9 +129,8 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  В производном классе сошлитесь на идентификатор строки из файла ресурсов и объекта ResourceManager, чтобы получить локализованное значение для идентификатора строки. Верните это значение в атрибут редактора свойств.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
- [Практическое: Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Практическое: локализация кода](../sharepoint/how-to-localize-code.md)   
- [Способ: добавить файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
- [Практическое: использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [Практическое руководство. Локализация компонента](../sharepoint/how-to-localize-a-feature.md)   
+ [Практическое руководство. Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Практическое руководство. Локализация кода](../sharepoint/how-to-localize-code.md)   
+ [Практическое руководство. Добавьте файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)   
+ [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

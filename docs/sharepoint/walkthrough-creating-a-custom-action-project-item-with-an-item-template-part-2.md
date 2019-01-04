@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2 | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2 | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,14 +11,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913940"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с шаблоном элемента в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона, чтобы добавить новый экземпляр элемента проекта в проект. Собранные сведения могут использоваться для инициализации элемента проекта.  
   
  В этом пошаговом руководстве вы добавите мастер элемента проекта настраиваемого действия, которое продемонстрировано в [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Когда пользователь добавляет элемент проекта настраиваемого действия в проект SharePoint, мастер собирает сведения о настраиваемого действия (например, его расположение и URL-адрес для перехода к, когда пользователь выбирает его) и добавляет эту информацию, чтобы *Elements.xml* файл в новый элемент проекта.  
@@ -50,7 +47,7 @@ ms.locfileid: "51296246"
   
   Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:  
   
-- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [как: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
+- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Как Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
   
 - Пользовательские действия в SharePoint. Дополнительные сведения см. в разделе [настраиваемое действие](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296246"
   
 2.  В **конструктор проектов**, убедитесь, что требуемая версия .NET framework имеет значение .NET Framework 4.5.  
   
-     Для проектов Visual C#, можно задать это значение на **приложения** вкладки. Для проектов Visual Basic, можно задать это значение на **компиляции** вкладки. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Для проектов Visual C#, можно задать это значение на **приложения** вкладки. Для проектов Visual Basic, можно задать это значение на **компиляции** вкладки. Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  В **ItemTemplateWizard** проект, добавить **Window (WPF)** элемент в проект, а затем введите имя элемента **WizardWindow**.  
   
@@ -349,6 +346,5 @@ ms.locfileid: "51296246"
  [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Практическое: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Расположения по умолчанию настраиваемое действие и идентификаторы](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

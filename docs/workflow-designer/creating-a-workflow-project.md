@@ -3,7 +3,6 @@ title: Создание проекта Workflow Foundation
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943357"
 ---
 # <a name="workflow-project-templates"></a>Шаблоны проекта workflow
 
@@ -72,12 +71,12 @@ Visual Studio предоставляет четыре различных шаб�
 
 Если вы выберете **библиотека конструктора действий** шаблон, Visual Studio создает определение конструктора действий в XAML и кода реализации. В конструкторе рабочих процессов открывает и отображает полотно для конструктора действий. Перетащите Windows Presentation Foundation (WPF), элементы управления на **элементов** в область конструктора, чтобы использовать их в пользовательском конструкторе действий.
 
-Пример реализации пользовательского конструктора действий, см. в разделе [как: Создание настраиваемого конструктора действий](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Пример реализации пользовательского конструктора действий, см. в разделе [как: Создание пользовательского конструктора действий](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Пользовательские конструкторы действий можно использовать для пользовательских действий, а также для действий .NET Framework по умолчанию.
 
 ## <a name="see-also"></a>См. также
 
-- [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)
+- [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)
 - [Разработка рабочих процессов (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

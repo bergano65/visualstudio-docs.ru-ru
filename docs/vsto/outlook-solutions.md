@@ -1,9 +1,6 @@
 ---
 title: решения Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d0a79d48b8ff054e4c7bdb9151f3eefbf287b24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868700"
 ---
 # <a name="outlook-solutions"></a>решения Outlook
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Outlook. Надстройки VSTO можно использовать для автоматизации Outlook, расширения его функциональных возможностей и настройки пользовательского интерфейса Outlook. Дополнительные сведения о надстройках VSTO см. в разделе [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
@@ -39,7 +36,7 @@ ms.locfileid: "49831241"
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Создайте проект надстройки VSTO Outlook  
  Проекты Outlook создаются с помощью шаблона проекта **Надстройки Outlook** в диалоговом окне **Создание проекта** . Этот шаблон включает в себя необходимые ссылки на сборки и файлы проекта.  
   
- Дополнительные сведения о том, как создать проект надстройки VSTO см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Дополнительные сведения о шаблонах проектов см. в разделе [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md).  
+ Дополнительные сведения о том, как создать проект надстройки VSTO см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Дополнительные сведения о шаблонах проектов см. в разделе [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook надстройками VSTO модели программирования  
  При создании проекта надстройки VSTO для Outlook Visual Studio создает класс с именем `ThisAddIn`, который служит базой для вашего решения. Этот класс служит отправной точкой для написания собственного кода, а также предоставляет объектную модель Outlook для надстройки.  
@@ -62,7 +59,7 @@ ms.locfileid: "49831241"
 |Задача|Дополнительные сведения|  
 |----------|--------------------------|  
 |Добавление пользовательских вкладок на ленту инспектора Outlook.|[Обзор ленты](../vsto/ribbon-overview.md)|  
-|Добавление настраиваемых групп на встроенную вкладку инспектора Outlook.|[Практическое: Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Добавление настраиваемых групп на встроенную вкладку инспектора Outlook.|[Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)|  
 |Добавление настраиваемой области задач, которая отображается в окне инспектора Outlook.|[Настраиваемые области задач](../vsto/custom-task-panes.md).|  
 |Добавление области формы, расширяющей или заменяющей существующие формы Outlook.|[Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)|  
   
@@ -74,7 +71,5 @@ ms.locfileid: "49831241"
 |-----------|-----------------|  
 |[Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)|Обзор объектов, предоставляемых объектной моделью Outlook.|  
 |[Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)|Описание средств Visual Studio, которые упрощают процесс проектирования, разработки и отладки областей формы.|  
-|[Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Здесь показано, как создать надстройку VSTO для Microsoft Office Outlook.|  
+|[Пошаговое руководство: Создание вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Здесь показано, как создать надстройку VSTO для Microsoft Office Outlook.|  
 |[Outlook 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199013)|Раздел библиотеки MSDN, содержащий статьи и справочную документацию по разработке решений для Outlook (не только с помощью Visual Studio).|  
-  
-  

@@ -2,7 +2,6 @@
 title: Пошаговое руководство. Использование XSLT IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1cbd8c7d49719ad1b3d04d9336f222b45a0b33d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894406"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Пошаговое руководство. Использование XSLT IntelliSense
 

@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Создание веб-части SharePoint с помощью конструктора | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание веб-части SharePoint с помощью конструктора | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cfe789c5dd16cd55d48c8c1470877a7df60e3caf
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858452"
 ---
-# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Практическое: Создание веб-части SharePoint с помощью конструктора
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Как выполнить Создание веб-части SharePoint с помощью конструктора
   Можно создать веб-часть, добавив **визуальной веб-части** элемент в любой проект SharePoint. Откроется конструктор Visual Web Developer в Visual Studio, где можно добавить элементы управления и код веб-части. Визуальные веб-части работать так же, как веб-частей. Единственная разница в разработке визуальные веб-части в конструкторе Visual Web Developer.  
   
 ### <a name="to-create-a-project-for-visual-web-parts"></a>Чтобы создать проект для визуальных веб-частей  
@@ -35,7 +30,7 @@ ms.locfileid: "37119409"
   
      Откроется диалоговое окно **Новый проект** .  
   
-2.  В **новый проект** диалоговое окно, в одном **Visual C#** или **Visual Basic**, разверните **Office/SharePoint** узел и нажмите кнопку **решений SharePoint** категории.  
+2.  В **новый проект** диалоговое окно, в одном **Visual C#**  или **Visual Basic**, разверните **Office/SharePoint** узел, а затем Выберите **решений SharePoint** категории.  
   
 3.  В списке шаблонов проектов выберите **SharePoint 2013 — Визуальная веб-часть**, а затем выберите **ОК** кнопки.  
   
@@ -57,8 +52,6 @@ ms.locfileid: "37119409"
   
 ## <a name="see-also"></a>См. также
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Практическое: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  

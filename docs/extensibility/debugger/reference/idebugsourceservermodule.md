@@ -1,9 +1,6 @@
 ---
-title: IDebugSourceServerModule | Документы Microsoft
-ms.custom: ''
+title: IDebugSourceServerModule | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSourceServerModule interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5210b819d78bcec1cac5179ac679cf201279e9fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcdeac3d68b2b26f0613dc92b473a17ce2ffd122
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945799"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Представляет сведения об исходном сервере, содержащихся в PDB-файл.  
+Представляет сведения об исходном сервере, содержащийся в PDB-файл.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,14 +27,14 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется подсистемой отладчика и использовать отладчик пользовательского интерфейса.  
+ Этот интерфейс реализуется подсистемы отладчика и используемые пользовательским Интерфейсом отладчика.  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugSourceServerModule`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведений об исходном сервере.|  
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведения об исходном сервере.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  

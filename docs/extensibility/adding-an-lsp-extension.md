@@ -1,9 +1,6 @@
 ---
 title: Добавление расширения протокола языкового сервера | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966564"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -202,12 +199,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +240,7 @@ Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blo
 ![Определение ресурса MEF](media/lsp-define-asset.png)
 
 * **Тип**: Microsoft.VisualStudio.MefComponent
-* **Источник**: проект в текущем решении
+* **Источник**: Проект в текущем решении
 * **Проект**: [проект]
 
 ### <a name="content-type-definition"></a>Определение типа содержимого
@@ -313,12 +310,19 @@ namespace MockLanguageExtension
       }
    }
    ```
+
 4. Добавьте файл pkgdef в проект (Добавить новый текстовый файл и измените расширение файла на .pkgdef). Файл pkgdef должен содержать эти сведения:
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    Пример:
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. Щелкните правой кнопкой файл pkgdef и выберите **свойства**. Изменение **построения** действие **содержимого** и **включить в VSIX** присваивается значение true.
 
@@ -327,7 +331,7 @@ namespace MockLanguageExtension
    ![Редактирование активов vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Тип**: Microsoft.VisualStudio.VsPackage
-   * **Источник**: файл в файловой системе
+   * **Источник**: Файл в файловой системе
    * **Путь**: [путь к вашей *.pkgdef* файл]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Изменение параметров для рабочей области пользователя

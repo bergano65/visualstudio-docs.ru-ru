@@ -1,22 +1,20 @@
 ---
-title: SDKReference-элемент (шаблоны Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Элемент SDKReference (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64008bb473a64fece6ce1430f743148496633058
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a8f3f2c7ceb4e3e78a811d978e48ea351f0042d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917294"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference - элемент (шаблоны Visual Studio)
 Указывает, что шаблон элемента использует ссылку на пакет SDK.  

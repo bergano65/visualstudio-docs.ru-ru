@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное закрытие документов'
-ms.custom: ''
+title: Как выполнить Программное закрытие документов
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930234"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Практическое: программное закрытие документов
+# <a name="how-to-programmatically-close-documents"></a>Как выполнить Программное закрытие документов
   Можно закрыть активный документ или указать документ для закрытия.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257778"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Практическое: программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)   
+ [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Практическое руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Объекты контекста выбора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f09bcb260f4edd09045f860ed08d951622e54a5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22a57c07be39a4867f746c7f5f5dfe844daab69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878618"
 ---
 # <a name="selection-context-objects"></a>Объекты контекста выбора
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) использует объект контекста глобального выделения для определения того, что должно быть отображено в интегрированной среде разработки. Каждое окно в интегрированной среде разработки может иметь свой собственный объект контекста выбора, в контексте глобального выделения. При этого окна имеет фокус, со значениями из окна интегрированной среды разработки обновляет контекст глобального выделения. Дополнительные сведения см. в разделе [обратной связи с пользователем](../../extensibility/internals/feedback-to-the-user.md).  

@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Обеспечение простоты поддержки кода с помощью политики возврата с анализом кода
+title: Как выполнить Обеспечение поддерживаемого кода с помощью политики возврата с анализом кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825721"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Практическое: обеспечение простоты поддержки кода с политикой возврата анализа кода
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Как выполнить Обеспечение простоты поддержки кода с политикой возврата анализа кода
 
 Разработчики могут использовать средство метрики кода для измерения сложности и удобства поддержки кода, но не может вызывать метрики кода как часть политики возврата. Тем не менее можно включить правила анализа кода, проверка соответствия кода стандартам метрик кода и принудительное применение правил с помощью политик возврата. Дополнительные сведения о метриках кода см. в разделе [значения метрик кода](../code-quality/code-metrics-values.md).
 
@@ -47,13 +46,13 @@ ms.locfileid: "49892096"
 
 2. Установите флажки для перечисленных ниже правил:
 
-   - Глубина наследования: **CA1501 AvoidExcessiveInheritance** -пороговое значение: предупреждение в более чем 5 уровней вложенности
+   - Глубина наследования: **CA1501 AvoidExcessiveInheritance** -пороговое значение: Предупреждение в более чем 5 уровней вложенности
 
-   - Сложность: **CA1502 AvoidExcessiveComplexity** -пороговое значение: предупреждение в более чем 25
+   - Сложность: **CA1502 AvoidExcessiveComplexity** -пороговое значение: Предупреждение в более чем 25
 
-   - Индекс удобства поддержки: **CA1505 под названием AvoidUnmaintainableCode** -пороговое значение: предупреждение в менее 20
+   - Индекс удобства поддержки: **CA1505 Под названием AvoidUnmaintainableCode** -пороговое значение: Предупреждение в менее 20
 
-   - Взаимозависимости классов: **CA1506 AvoidExcessiveClassCoupling** -пороговое значение: предупреждение при более чем 80 для класса и более чем 30 для метода
+   - Взаимозависимости классов: **CA1506 AvoidExcessiveClassCoupling** -пороговое значение: Предупреждение при более чем 80 для класса и более чем 30 для метода
 
      Кроме того, нарушение правила для предотвращения успешной сборки, установите **обрабатывать предупреждения как ошибки** флажок рядом с описанием правила.
 
@@ -62,4 +61,4 @@ ms.locfileid: "49892096"
 ## <a name="see-also"></a>См. также
 
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
-- [Создание и использование политик возврата с анализом кода](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

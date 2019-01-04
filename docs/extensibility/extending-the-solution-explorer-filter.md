@@ -1,9 +1,6 @@
 ---
 title: Расширение фильтра обозревателя решений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830301"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Расширение фильтра обозревателя решений
 Вы можете расширить **обозревателе решений** фильтрации функциональные возможности для отображения или скрытия разные файлы. Например, можно создать фильтр, показывающий только файлов C# класса фабрики в **обозревателе решений**, как показано в этом пошаговом руководстве.  

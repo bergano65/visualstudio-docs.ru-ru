@@ -1,8 +1,7 @@
 ---
-title: 'CA1719: имена параметров не должны совпадать с именами элементов'
+title: CA1719. Имена параметров не должны совпадать с именами членов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a10bd39ef34d207d910c3bc428ba862019369e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ca40c478eb383025755bff147dd9e0f47cecb79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868882"
 ---
-# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: имена параметров не должны совпадать с именами элементов
+# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719. Имена параметров не должны совпадать с именами членов
 
 |||
 |-|-|
@@ -45,8 +44,8 @@ ms.locfileid: "49924022"
  Для разработки новых приложений, не известные сценарии возникнуть, когда необходимо подавить предупреждение из этого правила. Для доставки библиотек, возможно подавить предупреждение из этого правила.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Идентификаторы должны отличаться регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: идентификаторы не должны содержать знак подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Идентификаторы не должны содержать знак подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)

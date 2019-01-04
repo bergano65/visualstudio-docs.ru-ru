@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Сбор данных с использованием формы Windows'
-ms.custom: ''
+title: Пошаговое руководство. Сбор данных с использованием формы Windows
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926638"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство: Сбор данных с помощью формы Windows
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство. Сбор данных с помощью формы Windows
   В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -146,5 +143,3 @@ ms.locfileid: "49900479"
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
  [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)  
-  
-  

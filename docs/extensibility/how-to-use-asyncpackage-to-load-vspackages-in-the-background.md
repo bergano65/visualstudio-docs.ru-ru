@@ -1,22 +1,20 @@
 ---
-title: 'Практическое: использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1afd0199401159ace6ccc34bf3f32aa564cf195f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32fb275cc788722df7085e64d25ded88de127381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922933"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Практическое: использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Как выполнить Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
 Загрузка и инициализация пакета VS может привести дискового ввода-вывода. В случае таких операций ввода-вывода в потоке пользовательского интерфейса, он может привести к проблемам скорости реагирования. Чтобы решить эту проблему, Visual Studio 2015 представлен <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, который позволяет загрузка пакета в фоновом потоке.  
   
 ## <a name="create-an-asyncpackage"></a>Создание AsyncPackage  
@@ -49,7 +47,7 @@ ms.locfileid: "49828524"
   
 4. Если у вас есть работы асинхронной инициализации, следует переопределить <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Удалить `Initialize()` метод, предоставленный шаблоном VSIX. ( `Initialize()` Метод в **AsyncPackage** является запечатанным). Можно использовать любой из <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> методы для добавления асинхронные службы в пакет.  
   
-    Примечание: Для вызова `base.InitializeAsync()`, можно изменить исходный код для:  
+    ПРИМЕЧАНИЕ. Для вызова `base.InitializeAsync()`, можно изменить исходный код для:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -57,9 +55,9 @@ ms.locfileid: "49828524"
   
 5. Вы должны уделить особое внимание не вносить вызовов RPC (удаленный вызов процедуры) из асинхронной инициализации кода (в **InitializeAsync**). Это может произойти при вызове <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> прямо или косвенно.  При необходимости загружает синхронизации будет блокировать поток пользовательского интерфейса с помощью <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Модель блокировки по умолчанию отключает удаленный вызов процедур. Это означает, что если вы попытаетесь использовать RPC из вашей асинхронных задач, будет взаимоблокировка Если поток пользовательского интерфейса — Ожидание к загрузке пакета. Общие вариант — упаковать код в поток пользовательского интерфейса, при необходимости, например **присоединяемую фабрику задач** <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> или другой механизм, использует ли RPC.  НЕ используйте **ThreadHelper.Generic.Invoke** или обычно блокируют вызывающий поток ожидает получить в поток пользовательского интерфейса.  
   
-    Примечание: Следует избегать использования **GetService** или **QueryService** в вашей `InitializeAsync` метод. Если вам нужно использовать их, необходимо сначала переключиться на поток пользовательского интерфейса. Альтернативой является использование <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> из вашей **AsyncPackage** (путем приведения его к <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    ПРИМЕЧАНИЕ. Следует избегать использования **GetService** или **QueryService** в вашей `InitializeAsync` метод. Если вам нужно использовать их, необходимо сначала переключиться на поток пользовательского интерфейса. Альтернативой является использование <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> из вашей **AsyncPackage** (путем приведения его к <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
   
-   C# Создание AsyncPackage:  
+   C#: Создайте AsyncPackage:  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -79,7 +77,7 @@ public sealed class TestPackage : AsyncPackage
   
 1.  Не забудьте удалить `Initialize` переопределение, имеется в пакете.  
   
-2.  Избежать взаимоблокировок: может быть скрыт RPC в коде. Теперь это происходить в фоновом потоке. Убедитесь, что при создании RPC (например, **GetService**), необходимо или (1) переключиться на основной поток или (2) используйте асинхронную версию метода API, если он существует (например, **GetServiceAsync**).  
+2.  Избегайте взаимоблокировок: Может быть скрыт RPC в коде. Теперь это происходить в фоновом потоке. Убедитесь, что при создании RPC (например, **GetService**), необходимо или (1) переключиться на основной поток или (2) используйте асинхронную версию метода API, если он существует (например, **GetServiceAsync**).  
   
 3.  Не переключайтесь между потоками слишком часто. Попробуйте для локализации работу, может произойти в фоновом потоке, чтобы сократить время загрузки.  
   
@@ -96,7 +94,7 @@ public sealed class TestPackage : AsyncPackage
   
   Пакет по-прежнему имеет возможность (на стадии его инициализации асинхронной) для выполнения работы вне потока пользовательского интерфейса, на то, что в потоке пользовательского интерфейса будет заблокирован для завершения этой работы. Если вызывающий объект использует **IAsyncServiceProvider** для асинхронного запроса для службы, затем нагрузочных тестах и инициализации, выполняются асинхронно при условии, что они не блокировать немедленно, в полученном объекте задачи.  
   
-  C#: Как асинхронно запрашивать службы:  
+  C#: Как запросить службы асинхронно:  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   
@@ -105,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-  

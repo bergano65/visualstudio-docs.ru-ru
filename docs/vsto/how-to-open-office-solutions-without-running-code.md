@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: решения Open Office без выполнения кода'
-ms.custom: ''
+title: Как выполнить Открытие решений Office без выполнения кода
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,19 +13,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930114"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Практическое: решения Open Office без выполнения кода
+# <a name="how-to-open-office-solutions-without-running-code"></a>Как выполнить Открытие решений Office без выполнения кода
   Решения Microsoft Office, созданные с помощью расширений управляемого кода выполняется, даже если параметр безопасности в приложении Office конечного пользователя задан высокий приоритет. Это обусловлено безопасности кода сборки .NET управляется Microsoft .NET Framework, не по Microsoft Office.  
   
  Однако бывают случаи, когда может потребоваться открыть документ без выполнения кода. Например код, который выполняется при открытии документа может привести к изменению содержимого, но вы хотите обновить внешний вид документа перед изменением кода его. Или может потребоваться отправить документ в ней другому пользователю, и не требуется код для запуска и возможно изменить содержимое.  
@@ -57,5 +54,3 @@ ms.locfileid: "35254992"
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramCreateEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProgramCreateEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591a1e02be4ac96db75c0d43761d83910b89c019
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1213f37fbf4d7384155a17a5cf42c60b5d544f30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915037"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при присоединении к программе.  
+Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при присоединении к программе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,13 +29,13 @@ IDebugProgramCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE или пользовательский порт поставщика реализует этот интерфейс для отчетов, что программа будет создана, обычно во время исполняемой программы. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM `QueryInterface` метод для доступа к `IDebugEvent2` интерфейса.  
+ DE или поставщика пользовательского порта реализует этот интерфейс, чтобы сообщить, что программа будет создан, обычно во время исполняемой программы к. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM `QueryInterface` метод для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE или пользовательский порт поставщика создает и отправляет этот объект события для создания программы. DE отправляет это событие, используя [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейса.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE или поставщика пользовательского порта создает и отправляет этот объект события для создания программы отчетов. DE отправляет данное событие с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.  
   
 ## <a name="remarks"></a>Примечания  
- Поставщику другой номер порта или DE публикует новый [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейса путем вызова [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
+ DE или пользовательский порт поставщик публикует новый [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс путем вызова [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

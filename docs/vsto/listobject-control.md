@@ -1,9 +1,6 @@
 ---
 title: ListObject - элемент управления
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945188"
 ---
 # <a name="listobject-control"></a>ListObject - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> — это список с событиями, который может быть привязан к данным. При добавлении списка в лист Visual Studio создает элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который можно запрограммировать напрямую, не обращаясь к объектной модели Microsoft Office Excel.  
@@ -34,7 +31,7 @@ ms.locfileid: "35674781"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Создание элемента управления  
- В проектах уровня документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> в лист во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления в листы только во время выполнения. Дополнительные сведения см. в разделе [как: элемент управления ListObject, добавление на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ В проектах уровня документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> в лист во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления в листы только во время выполнения. Дополнительные сведения см. в разделе [Как Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  По умолчанию при закрытии листа динамически созданные объекты списка не сохраняются в листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -49,7 +46,7 @@ ms.locfileid: "35674781"
   
  Поскольку данные существуют отдельно от <xref:Microsoft.Office.Tools.Excel.ListObject>, следует добавлять и удалять данные через привязанный набор данных, а не напрямую через <xref:Microsoft.Office.Tools.Excel.ListObject>. Если данные в привязанном наборе данных обновляются посредством какого-либо механизма, элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> автоматически отражает изменения. Дополнительные сведения см. в разделе [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Можно быстро заполнить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> путем привязки <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных. При изменении данных в <xref:Microsoft.Office.Tools.Excel.ListObject>с привязкой к данным эти изменения также автоматически вносятся в источник данных. Если вы хотите заполнить <xref:Microsoft.Office.Tools.Excel.ListObject> , а затем разрешить пользователю изменение данных в <xref:Microsoft.Office.Tools.Excel.ListObject> без изменения источника данных, можно использовать метод <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> для отключения <xref:Microsoft.Office.Tools.Excel.ListObject> от источника данных. Дополнительные сведения см. в разделе [как: элемент управления ListObject, заполнение данными](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Можно быстро заполнить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> путем привязки <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных. При изменении данных в <xref:Microsoft.Office.Tools.Excel.ListObject>с привязкой к данным эти изменения также автоматически вносятся в источник данных. Если вы хотите заполнить <xref:Microsoft.Office.Tools.Excel.ListObject> , а затем разрешить пользователю изменение данных в <xref:Microsoft.Office.Tools.Excel.ListObject> без изменения источника данных, можно использовать метод <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> для отключения <xref:Microsoft.Office.Tools.Excel.ListObject> от источника данных. Дополнительные сведения см. в разделе [Как Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 > [!NOTE]  
 >  Привязка данных в перекрывающихся элементах управления <xref:Microsoft.Office.Tools.Excel.ListObject> не поддерживается.  
@@ -58,7 +55,7 @@ ms.locfileid: "35674781"
  Считывание XML-файла в элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным происходит довольно медленно, если сначала привязать элемент управления, а затем вызвать <xref:System.Data.DataSet.ReadXml%2A> для заполнения набора данных. Чтобы повысить производительность, вызывайте <xref:System.Data.DataSet.ReadXml%2A> перед привязкой элемента управления.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>Отключение элементов управления ListObject от источника данных  
- После заполнения данными элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> путем его привязки к источнику данных вы можете отключить его, чтобы изменения, внесенные в данные в этом объекте-списке, не влияли на источник данных. Дополнительные сведения см. в разделе [как: элемент управления ListObject, заполнение данными](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ После заполнения данными элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> путем его привязки к источнику данных вы можете отключить его, чтобы изменения, внесенные в данные в этом объекте-списке, не влияли на источник данных. Дополнительные сведения см. в разделе [Как Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 ### <a name="restore-column-and-row-order"></a>Восстановление порядка столбцов и строк  
  При привязке данных к элементу управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который был добавлен в документ во время разработки, Visual Studio отслеживает порядок столбцов и строк при каждом сохранении книги. Если пользователь перемещает <xref:Microsoft.Office.Tools.Excel.ListObject> столбцов или строк во время выполнения, новый порядок сохраняется при очередном открытии книги и <xref:Microsoft.Office.Tools.Excel.ListObject> выполняется привязка элемента управления к источнику данных еще раз.  
@@ -72,7 +69,7 @@ ms.locfileid: "35674781"
  Нельзя вручную добавить или удалить столбцы в привязкой к данным <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления во время выполнения. Если конечный пользователь попытается удалить столбец, сразу же восстановлен, а добавленные столбцы будут удалены. Таким образом, важно написать код, объясняющий пользователям, почему нельзя выполнять эти действия в элементе управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным. Visual Studio предоставляет в <xref:Microsoft.Office.Tools.Excel.ListObject> несколько событий, связанных с привязкой данных. Например, вы можете с помощью события <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> предупреждать пользователей, что данные, которые они пытались удалить, не подлежат удалению и были восстановлены.  
   
 ## <a name="add-and-remove-rows-at-runtime"></a>Добавление и удаление строк во время выполнения  
- Вы можете вручную добавлять и удалять строки в элементе управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, если источник данных позволяет добавлять новые строки и не предназначен только для чтения. Для проверки данных можно написать код для событий, таких как <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Дополнительные сведения см. в разделе [как: проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ Вы можете вручную добавлять и удалять строки в элементе управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, если источник данных позволяет добавлять новые строки и не предназначен только для чтения. Для проверки данных можно написать код для событий, таких как <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Дополнительные сведения см. в разделе [Как Проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  Иногда связь объекта списка с источником данных вызывает ошибки выполнения. Например, если указано, какие столбцы должны отображаться в <xref:Microsoft.Office.Tools.Excel.ListObject>, то при пропуске столбцов с ограничениями, такими как поле, не принимающее значения null, при каждом создании строки возникают ошибки. Вы можете написать код для добавления отсутствующих значений в обработчике событий для события <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> .  
   
@@ -112,17 +109,15 @@ ms.locfileid: "35674781"
   
 ## <a name="see-also"></a>См. также  
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Практическое: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Практическое: изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Практическое: проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Практическое: столбцов ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Практическое: с данными элемент управления ListObject заливки](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Практическое руководство. Изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Практическое руководство. Проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Практическое руководство. Сопоставления столбцов ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Практическое руководство. Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Практическое: заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

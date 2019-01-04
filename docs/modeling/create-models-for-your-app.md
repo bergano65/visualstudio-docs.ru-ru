@@ -2,7 +2,6 @@
 title: Создание моделей для приложения
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942688"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 
@@ -40,9 +39,9 @@ ms.locfileid: "50966548"
 
 |**Схема**|**Что показывает**|
 |-|-|
-|[Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
+|[Схемы зависимостей: Рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
 |Карты кода<br /><br /> [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)|Зависимости и другие отношения в имеющемся коде|
-|Схемы классов, созданные кодом<br /><br /> [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)|Типы и их отношения в коде .NET|
+|Схемы классов, созданные кодом<br /><br /> [Работа со схемами классов (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Типы и их отношения в коде .NET|
 
 ## <a name="related-tasks"></a>Связанные задачи
 

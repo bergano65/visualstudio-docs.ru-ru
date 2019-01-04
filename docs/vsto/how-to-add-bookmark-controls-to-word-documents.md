@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление элементов управления Bookmark в документы Word'
-ms.custom: ''
+title: Как выполнить Добавление элементов управления Bookmark в документы Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -14,19 +11,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904816"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Практическое: Добавление элементов управления Bookmark в документы Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Как выполнить Добавление элементов управления Bookmark в документы Word
   В проектах уровня документа, можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементы управления в документ в проекте во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +132,4 @@ ms.locfileid: "49878613"
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
- [Практическое: изменение размера элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)  
-  
-  
+ [Практическое руководство. Изменение размера элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Вызов кода в надстройке VSTO из VBA'
-ms.custom: ''
+title: Пошаговое руководство. Вызов кода в надстройке VSTO из VBA
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915907"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство: Вызов кода в надстройке VSTO из VBA
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. Вызов кода в надстройке VSTO из VBA
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49843825"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект надстройки VSTO для Excel с именем **ExcelImportData**с помощью шаблона проекта надстройки VSTO для Excel. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект надстройки VSTO для Excel с именем **ExcelImportData**с помощью шаблона проекта надстройки VSTO для Excel. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.cs** или **ThisAddIn.vb** и добавляет проект **ExcelImportData** в **обозреватель решений**.  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843825"
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49843825"
   
 -   Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Создание настраиваемой области задач в надстройке VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md) и [как: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   Создание настраиваемой области задач в надстройке VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md) и [как: Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 -   Настройка ленты в надстройке VSTO. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md) и [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
@@ -157,8 +154,6 @@ ms.locfileid: "49843825"
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

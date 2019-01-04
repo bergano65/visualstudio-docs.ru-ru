@@ -2,7 +2,6 @@
 title: Использование и настройка анализаторов Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873227"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Настройка и использование правил анализатора Roslyn
 
@@ -55,7 +54,7 @@ ms.locfileid: "49817045"
 
 Можно изменить активный набор правил для проекта на **анализа кода** вкладки свойств проекта. Выберите набор правил в **выполнить этот набор правил** стрелку раскрывающегося списка. Можно также открыть из набора правил **анализа кода** страницу свойств осуществляется посредством выбора **откройте**.
 
-## <a name="rule-severity"></a>Важность правила
+## <a name="rule-severity"></a>Важность правил
 
 Можно настроить уровень серьезности правил анализатора или *диагностики*, если вы [установить анализаторы](../code-quality/install-roslyn-analyzers.md) как пакет NuGet. В следующей таблице показаны параметры серьезности для диагностики:
 
@@ -165,7 +164,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 
 На следующем рисунке показано построение из командной строки выходные файлы построения проекта, содержащего нарушений правил анализа:
 
-![Выходные данные MSBuild с нарушением правил](media/command-line-build-analyzers.png)
+![Выходные данные MSBuild с нарушением правила](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>См. также
 

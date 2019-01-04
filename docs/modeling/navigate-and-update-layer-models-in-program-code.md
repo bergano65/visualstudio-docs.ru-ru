@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948658"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Перемещение по моделям слоев в коде программы и их обновление
 
-В этой статье описываются элементы и отношения в моделях слоев, к которым можно перейти и обновить с помощью программного кода. Дополнительные сведения о диаграммах зависимостей с точки зрения пользователя см. в разделе [схемы зависимостей: ссылка](../modeling/layer-diagrams-reference.md) и [схемы зависимостей: рекомендации по](../modeling/layer-diagrams-guidelines.md).
+В этой статье описываются элементы и отношения в моделях слоев, к которым можно перейти и обновить с помощью программного кода. Дополнительные сведения о диаграммах зависимостей с точки зрения пользователя см. в разделе [схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md) и [схемы зависимостей: Рекомендации по](../modeling/layer-diagrams-guidelines.md).
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Модель, описанную в этом разделе является интерфейсом более общей <xref:Microsoft.VisualStudio.GraphModel> модели. Если вы создаете [расширение команды или жеста меню](../modeling/add-commands-and-gestures-to-layer-diagrams.md), использовать `Layer` модели. Если вы создаете [расширения проверки слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Добавление пользовательских свойств в схемы зависимостей](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
-- [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)
+- [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
+- [Схемы зависимостей: Рекомендации](../modeling/layer-diagrams-guidelines.md)

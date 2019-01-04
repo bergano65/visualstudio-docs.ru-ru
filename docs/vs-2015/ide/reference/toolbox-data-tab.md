@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307655"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648565"
 ---
 # <a name="toolbox-data-tab"></a>Панель элементов, вкладка "Данные"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,22 +39,14 @@ ms.locfileid: "49307655"
   
 |name|Описание|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Добавляет экземпляр типизированного или нетипизированного набора данных в форму или компонент. При перетаскивании объекта в конструктор отображается диалоговое окно, которое позволяет выбрать существующий класс типизированного набора данных или указать, что требуется создать новый, пустой, нетипизированный набор данных. **Примечание**. Объект <xref:System.Data.DataSet> не используется на **панели элементов** для создания новой схемы и класса типизированного набора данных. Дополнительные сведения см. в разделе, посвященном [созданию и настройке наборов данных](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|<xref:System.Data.DataSet>|Добавляет экземпляр типизированного или нетипизированного набора данных в форму или компонент. При перетаскивании объекта в конструктор отображается диалоговое окно, которое позволяет выбрать существующий класс типизированного набора данных или указать, что требуется создать новый, пустой, нетипизированный набор данных. **Примечание.**  Вы не используете <xref:System.Data.DataSet> объект **элементов** для создания новой схемы типизированного набора данных и класс. Дополнительные сведения см. в разделе, посвященном [созданию и настройке наборов данных](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Обеспечивает эффективный и гибкий способ отображения данных в табличном формате.|  
 |<xref:System.Windows.Forms.BindingSource>|Упрощает процесс привязки элементов управления к базовому источнику данных.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Представляет пользовательский интерфейс для перехода и обработки для элементов управления в форме, которые привязываются к данным.|  
   
 ## <a name="see-also"></a>См. также  
- [Примеры работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Пошаговые руководства работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения о данных приложений в Visual Studio](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения для получения данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Выборка данных в приложение](../../data-tools/fetching-data-into-your-application.md)   
+ [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Привязка элементов управления к данным в Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../../data-tools/editing-data-in-your-application.md)   
  [Проверка данных](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Сохранение данных](../../data-tools/saving-data.md)
-
-
-

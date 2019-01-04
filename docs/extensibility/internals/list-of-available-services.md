@@ -1,9 +1,6 @@
 ---
 title: Список доступных служб | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964641"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре, необходимо использовать имя языка.  
@@ -28,10 +25,10 @@ ms.locfileid: "49876468"
   
 ## <a name="the-services"></a>Службы  
   
-| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
+| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание: |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Да | Да | Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> ИДЕНТИФИКАТОР C/C++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> КОД C/C++: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Да | Да | Реализуется для отображения обработчик событий по умолчанию для элемента управления конструктора форм. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Да | Да | Позволяет VSPackage для доступа к интерфейсу автоматизации другом пакете VSPackage или элементом управления. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Да | Да | Позволяет VSPackage добавьте или создайте библиотеку расширенных типов. |

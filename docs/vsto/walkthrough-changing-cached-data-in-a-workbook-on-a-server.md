@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Изменение кэшированных данных в книгу на сервере'
-ms.custom: ''
+title: Пошаговое руководство. Изменение кэшированных данных в книгу на сервере
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9f2ac3873bf59b30f8efa3e45d6cbdd0aebd4f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8977267ba8acadf1105fc0f1608339301b737476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881332"
 ---
-# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Пошаговое руководство: Изменение кэшированных данных в книгу на сервере
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Пошаговое руководство. Изменение кэшированных данных в книгу на сервере
   В этом пошаговом руководстве показано, как изменить набор данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +54,9 @@ ms.locfileid: "50672873"
 
 -   Доступ к запущенному экземпляру Microsoft SQL Server или Microsoft SQL Server Express, имеющий пример базы данных AdventureWorksLT, подключенные к ней. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Присоединение базы данных с помощью командной строки, см. в разделе [способ: добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
+    -   Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Создайте проект библиотеки классов, который определяет набор данных
  Чтобы использовать тот же набор данных в проекте книги Excel и консольное приложение, необходимо определить набор данных в отдельной сборке, на который ссылается оба проекта. В этом пошаговом руководстве необходимо определите набор данных в проекте библиотеки классов.
@@ -89,7 +86,7 @@ ms.locfileid: "50672873"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Определить набор данных в проекте библиотеки классов
  Определите типизированный набор данных, содержащий данные из базы данных AdventureWorksLT для SQL Server 2005. Далее в этом пошаговом руководстве будет ссылаться на этот набор данных в проекте книги Excel и проект консольного приложения.
 
- Набор данных является *типизированный набор данных* , представляющий данные в таблице Product базы данных AdventureWorksLT. Дополнительные сведения о типизированных наборах данных см. в разделе [средства набора данных в Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Набор данных является *типизированный набор данных* , представляющий данные в таблице Product базы данных AdventureWorksLT. Дополнительные сведения о типизированных наборах данных см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Для определения типизированного набора данных в проекте библиотеки классов
 
@@ -157,7 +154,7 @@ ms.locfileid: "50672873"
 
 2.  В меню **Данные** выберите команду **Добавить новый источник данных**.
 
-     **Мастер настройки источника данных** открывает.
+     Открывается **мастер настройки источника данных**.
 
 3.  Нажмите кнопку **объект**, а затем нажмите кнопку **Далее**.
 

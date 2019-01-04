@@ -1,9 +1,6 @@
 ---
 title: Служебная программа CreatePkgDef | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package definition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910939"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 Принимает DLL-файла для расширения Visual Studio, как параметр и создает *.pkgdef* файл сопровождающее *.dll* файл. *.Pkgdef* файл содержит всю информацию, которая в противном случае должна быть записана в системный реестр при установке расширения.  
@@ -37,10 +34,10 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
 ## <a name="arguments"></a>Аргументы  
  **/ out =&lt;имя файла&gt;**  
- Обязательно. Задает имя *.pkgdef* выходной файл &lt;FileName&gt;.  
+ Обязательный. Задает имя *.pkgdef* выходной файл &lt;FileName&gt;.  
   
  **/codebase**  
- Необязательный. Заставляет регистрации с **CodeBase** служебной программы.  
+ Необязательный параметр. Заставляет регистрации с **CodeBase** служебной программы.  
   
  **/ Assembly**  
  Заставляет регистрации с **сборки** служебной программы.  

@@ -1,9 +1,6 @@
 ---
 title: Вычисление выражений (пакет SDK для отладки Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52c897e40b825f85e07b4b4f14796655618280a8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888729"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Вычисление выражений (Отладка SDK для Visual Studio)
 В режиме приостановки выполнения интегрированной среды разработки должны иметь простые выражения, включающие несколько переменных программы. Для выполнения их оценки, модуль отладки (DE) необходимо проанализировать и вычислить это выражение, вводимые в одно из окон интегрированной среды разработки. 

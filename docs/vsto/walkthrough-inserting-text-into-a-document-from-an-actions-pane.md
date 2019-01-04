@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Вставка текста в документ из панели действий'
-ms.custom: ''
+title: Пошаговое руководство. Вставка текста в документ из панели действий
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943094"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство: Вставка текста в документ из панели действий
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство. Вставка текста в документ из панели действий
   В этом пошаговом руководстве показано, как создать панель действий в документ Microsoft Office Word. Панель действий содержит два элемента управления, которые собирают входные данные и затем отправить текст в документ.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "51948729"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект документа Word с именем **основные панель действий**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект документа Word с именем **основные панель действий**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новый документ Word в конструкторе и добавляет **основные панель действий** проект **обозревателе решений**.  
   
@@ -178,15 +175,13 @@ ms.locfileid: "51948729"
 ## <a name="next-steps"></a>Следующие шаги  
  Ниже приводятся некоторые из возможных последующих задач.  
   
--   Создайте панель действий в Excel. Дополнительные сведения см. в разделе [как: Добавление панели действий к книгам Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
+-   Создайте панель действий в Excel. Дополнительные сведения см. в разделе [Как Добавление панели действий к книгам Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
--   Привязка данных к элементам управления в панели действий. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Привязка данных к элементам управления в панели действий. Дополнительные сведения см. в разделе [Пошаговое руководство: Привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
- [Практическое: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Практическое: Добавление панели действий для книг Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Практическое: Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Практическое руководство. Добавление панели действий для книг Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [Практическое руководство. Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Элемент управления Bookmark](../vsto/bookmark-control.md)  
-  
-  

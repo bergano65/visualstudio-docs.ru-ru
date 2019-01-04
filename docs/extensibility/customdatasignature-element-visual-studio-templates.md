@@ -1,10 +1,8 @@
 ---
 title: Элемент CustomDataSignature (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
@@ -14,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c3b62a8d88efbddaaf4032bf290730507bc62f3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832116"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Элемент CustomDataSignature (шаблоны Visual Studio)
 Задает текст подписи для поиска пользовательских данных.  

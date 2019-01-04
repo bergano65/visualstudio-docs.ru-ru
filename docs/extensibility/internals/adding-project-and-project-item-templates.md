@@ -1,9 +1,6 @@
 ---
 title: Добавление проекта и шаблоны элементов проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963661"
 ---
 # <a name="add-project-and-project-item-templates"></a>Добавьте в проект и шаблоны элементов проекта
 При создании собственных типов проектов, вы должны предоставить поддержку для добавления новых проектов и элементов проекта с помощью стандарта [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированных диалоговые окна Интегрированной среды разработки. В следующих разделах рассматриваются различные методы для добавления проектов и элементов проектов.  
@@ -53,10 +50,10 @@ ms.locfileid: "39499638"
  Перечисляет идентификаторы CATID для объектов, которые используются для расширения [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] системы проектов.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Как: открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)  
  Содержит пошаговые инструкции по открытию элемент само по себе привязан к определенном редакторе для проекта.  
   
- [Как: открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md)  
+ [Практическое руководство. Стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)  
  Содержит пошаговые инструкции по открытию стандартного редактора.  
   
  [Подтипов проекта](../../extensibility/internals/project-subtypes.md)  

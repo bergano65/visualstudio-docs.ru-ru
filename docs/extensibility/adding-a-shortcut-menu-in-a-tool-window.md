@@ -1,9 +1,6 @@
 ---
 title: Добавление контекстного меню в окне инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909805"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окне инструментов
 В этом пошаговом руководстве помещает контекстное меню в окне инструментов. Контекстное меню является меню, которое открывается при щелчке кнопки, текстовое поле или фона окна. Команды контекстного меню ведут себя так же, как команды на другие меню или панели инструментов. Для поддержки контекстное меню, укажите его в *.vsct* файла и отображения его в ответ на правой кнопки мыши.  
@@ -119,10 +116,10 @@ ms.locfileid: "39078619"
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Это те же идентификаторы команд, которые определены в разделе "символы" *ShortcutMenuPackage.vsct* файла. В группе контекстного здесь не так как он необходим только в *.vsct* файла.  
@@ -211,7 +208,7 @@ ms.locfileid: "39078619"
 7.  В *ShortcutMenuControl.xaml.cs*, добавьте заглушку для обработчика событий.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

@@ -1,10 +1,8 @@
 ---
-title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
+title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639517"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562286"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
   
  \<VSTemplate >  
@@ -32,11 +30,11 @@ ms.locfileid: "39639517"
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml
 <NumberOfParentCategoriesToRollUp>  
-    1  
+1  
 </NumberOfParentCategoriesToRollUp>  
-```  
+```
   
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
@@ -62,9 +60,9 @@ ms.locfileid: "39639517"
  `NumberOfParentCategoriesToRollUp` — это необязательный элемент.  
   
 ## <a name="example"></a>Пример  
- В этом примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows. Если шаблон с этими метаданными помещается двухуровневые папки ниже верхнего уровня [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] узел, шаблон будет отображаться в узле верхнего уровня в **новый проект** диалоговое окно. Если `NumberOfParentCategoriesToRollUp` не задано, шаблон появляется только в узле в котором он расположен физически.  
+ В этом примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows. Если шаблон с этими метаданными помещается двухуровневые папки ниже верхнего уровня [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] узел, шаблон будет отображаться в узле верхнего уровня в **новый проект** диалоговое окно. Если `NumberOfParentCategoriesToRollUp` не задано, шаблон появляется только в узле в котором он расположен физически.
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

@@ -1,9 +1,6 @@
 ---
 title: Изменения проектирования проектов Office, предназначенных для .NET Framework
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: a0f18e35cd3bc77e30f62578c5f2527c8f407c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888469"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.  
@@ -35,7 +32,7 @@ ms.locfileid: "53248248"
   
 -   [Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +48,7 @@ ms.locfileid: "53248248"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> больше не используется и не поддерживается в проектах Office.|Этот атрибут необходимо удалить из файла кода AssemblyInfo в проектах Office, которые вы переносите из Visual Studio 2008. Дополнительные сведения см. в разделе [необходимых изменений для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |**ExcelLocale1033Attribute** больше не используется и не поддерживается в проектах Excel.|Необходимо удалить этот атрибут из *AssemblyInfo* файла кода в проектах Excel. Дополнительные сведения см. в разделе [обновления Excel и Word проекты, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Изменилась модель программирования элементов проекта **Лента (визуальный конструктор)** .|Необходимо изменить файл кода программной части для всех элементов ленты в проекте. Кроме того, необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты. Дополнительные сведения см. в разделе [настроек обновления ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|Изменилась модель программирования элементов проекта **Лента (визуальный конструктор)** .|Необходимо изменить файл кода программной части для всех элементов ленты в проекте. Кроме того, необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты. Дополнительные сведения см. в разделе [настроек обновления ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Изменилась модель программирования областей формы Outlook.|Необходимо изменить файл с выделенным кодом для всех областей формы в проекте и любой код, который создает экземпляры определенных классов области формы во время выполнения. Дополнительные сведения см. в разделе [обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Изменилась модель программирования для смарт-тегов в проектах Excel и Word. Смарт-теги объявлены нерекомендуемыми в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Если в решении используются смарт-теги, то при сборке проекта будут возникать ошибки. Так как смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], их необходимо удалить до начала тестирования и отладки решения в [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] или более поздней версии.|  
 |Изменился синтаксис методов `GetVstoObject` и `HasVstoObject`.|Необходимо передавать объект `Globals.Factory` в эти методы, когда вы получаете к ним доступ в нативных объектах из основных сборок взаимодействия (PIA), или доступ к этим методам можно получать в объекте, который возвращается свойством `Globals.Factory` в проекте. Дополнительные сведения см. в разделе [обновления Excel и Word проекты, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
@@ -63,5 +60,3 @@ ms.locfileid: "53248248"
  [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Новые возможности при разработке решений Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление элементов управления NamedRange на листы'
-ms.custom: ''
+title: Как выполнить Добавление элементов управления NamedRange на листы
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928663"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Практическое: Добавление элементов управления NamedRange на листы
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Как выполнить Добавление элементов управления NamedRange на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в проектах уровня документа.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -102,7 +99,5 @@ ms.locfileid: "49867121"
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
- [Практическое: изменение размера элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Практическое руководство. Изменение размера элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

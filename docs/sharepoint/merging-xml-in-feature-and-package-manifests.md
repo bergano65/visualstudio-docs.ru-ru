@@ -1,9 +1,6 @@
 ---
 title: Слияние XML в компонентов и пакетов манифестах | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914440"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Слияние XML в манифестах компонентов и пакетов
   Компоненты и пакеты определяются [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлов манифеста. Эти манифесты в пакете представляют собой сочетание данных, сформированных из конструкторов и пользовательского [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] введенного пользователем в шаблон манифеста. Во время упаковки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] сливает пользовательские [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкции с предоставляемыми конструктором [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для формирования в пакете [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файл манифеста. Одинаковые элементы, за исключением указанных далее в исключения слияния, объединяются во избежание [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ошибок проверки после развертывания файлов в SharePoint и сделать файл манифеста файлы становится компактнее и эффективнее.  
   
 ## <a name="modify-the-manifests"></a>Изменение манифестов
- Нельзя напрямую изменять файла манифеста в пакете, пока вы не отключите конструкторы компонента или пакета. Тем не менее, можно вручную добавить пользовательские [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] элементов шаблон манифеста через конструкторы компонентов и пакетов или [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] редактора. Дополнительные сведения см. в разделе [как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) и [как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Нельзя напрямую изменять файла манифеста в пакете, пока вы не отключите конструкторы компонента или пакета. Тем не менее, можно вручную добавить пользовательские [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] элементов шаблон манифеста через конструкторы компонентов и пакетов или [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] редактора. Дополнительные сведения см. в разделе [Как Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) и [как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Процесс слияния манифестов компонентов и пакетов
  При объединении пользовательских элементов с элементами, предоставляемыми конструктором, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует следующий процесс. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проверяет, имеет ли каждый элемент уникальное значение ключа. Если элемент не имеет уникального значения ключа, он добавляется в файл манифеста пакета. Аналогично, элементы с несколькими ключами не могут быть объединены. Таким образом они добавляются в файл манифеста.  
@@ -83,5 +80,4 @@ ms.locfileid: "37119796"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
+ [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

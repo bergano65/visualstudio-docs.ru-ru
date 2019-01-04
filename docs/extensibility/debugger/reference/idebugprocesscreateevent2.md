@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessCreateEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProcessCreateEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcessCreateEvent2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e1de385fd24fdd4f5805df8a5a76331e531af7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90bf8eb8fc35c659753b25525d2068b97c60e01c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855381"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Этот интерфейс отправляется при запуске процесса.  
@@ -28,14 +25,14 @@ ms.locfileid: "31117830"
 ## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugProcessCreateEvent2 : IUnknown  
+IDebugProcessCreateEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) или пользовательский порт поставщика реализует этот интерфейс, чтобы сообщить, что процесс был создан. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ Модуль отладки (DE) или поставщика пользовательского порта реализует этот интерфейс, чтобы сообщить, что процесс был создан. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE или пользовательский порт поставщика создает и отправляет этот объект события для создания отчета создание процесса. DE отправляет это событие, используя [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейса.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE или поставщика пользовательского порта создает и отправляет этот объект события для создания отчета создание процесса. DE отправляет данное событие с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

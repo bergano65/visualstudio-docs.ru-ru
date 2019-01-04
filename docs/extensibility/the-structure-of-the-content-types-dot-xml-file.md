@@ -1,9 +1,6 @@
 ---
 title: Структура файл [Content_types] .xml | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909899"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
   
 > [!NOTE]
->  Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: новый стандартный для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
+>  Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах корневого элемента и его атрибуты и дочерние элементы.  
@@ -40,13 +37,13 @@ ms.locfileid: "49893277"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
 ### <a name="attribute-name-attribute"></a>{Атрибут name} Атрибут  
   
-| Значение | Описание |
+| Значение | Описание: |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | Расположение схемы типов содержимого. |
   
@@ -59,7 +56,7 @@ ms.locfileid: "49893277"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Extension`|Расширение имени файла, файла в пакете VSIX.|  
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  

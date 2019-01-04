@@ -1,9 +1,6 @@
 ---
 title: XMLNode - элемент управления
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927445"
 ---
 # <a name="xmlnode-control"></a>XMLNode - элемент управления
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.  
@@ -32,7 +29,7 @@ ms.locfileid: "35258893"
  <xref:Microsoft.Office.Tools.Word.XMLNode> Управления можно удалить только путем удаления сопоставления элементов в Word.  
   
 ## <a name="bind-data-to-the-control"></a>Привязка данных к элементу управления  
- <xref:Microsoft.Office.Tools.Word.XMLNode> Управления простой привязкой данных. XML-узел должен быть привязан к источнику данных с помощью <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> свойство. Если данные в привязанном наборе данных обновляются, <xref:Microsoft.Office.Tools.Word.XMLNode> управления отражает изменения.  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> Управления простой привязкой данных. XML-узел должен быть привязан к источнику данных с помощью <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> свойство. Если данные в привязанном наборе данных обновляются, элемент управления <xref:Microsoft.Office.Tools.Word.XMLNode> отражает эти изменения.  
   
 ## <a name="formatting"></a>Форматирование  
  Форматирование, которое может применяться к <xref:Microsoft.Office.Interop.Word.XMLNode> может быть применен к <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Сюда входят шрифты, подчеркивания и стили символов.  
@@ -84,8 +81,6 @@ ms.locfileid: "35258893"
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
  [Элемент управления XMLNodes](../vsto/xmlnodes-control.md)   
- [Практическое: Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [Практическое: сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Практическое руководство. Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [Практическое руководство. Сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

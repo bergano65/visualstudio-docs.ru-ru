@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отображение предложений лампочки | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение предложений лампочки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935012"
 ---
-# <a name="walkthrough-display-light-bulb-suggestions"></a>Пошаговое руководство: Отображение предложений лампочки
+# <a name="walkthrough-display-light-bulb-suggestions"></a>Пошаговое руководство. Отображение предложений лампочки
 Лампочки являются значки в редакторе Visual Studio, развернуть, чтобы отобразить набор действий, например, исправления для проблем, обозначенных в анализаторов кода, встроенные или рефакторинга кода.  
   
  В редакторах Visual C# и Visual Basic можно также использовать платформы компилятора .NET («Roslyn») для записи и упаковки собственные анализаторы кода с действиями, которые автоматически отображают лампочки. Дополнительные сведения:  
   
-- [Практическое руководство: Написание C# диагностики и исправления кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Практическое руководство. Запись C# диагностики и исправления кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Практическое руководство: Написание Visual Basic диагностики и исправления кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Практическое руководство. Запись диагностических Visual Basic и исправление кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Другие языки, например C++ также обеспечивают лампочки некоторые Быстрые действия, например, чтобы создать реализацию заглушки этой функции.  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49875896"
   
   ![Предварительный просмотр лампочки](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Лампочки можно использовать для предоставления собственных предлагаемые действия. Например можно предоставить перемещать, открыв фигурные скобки на новую строку или переместите их в конце предыдущей строки. Следующего пошагового руководства демонстрируется создание лампочка, которая отображается в текущем слове и имеет два предлагаемых действия: **преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
+  Лампочки можно использовать для предоставления собственных предлагаемые действия. Например можно предоставить перемещать, открыв фигурные скобки на новую строку или переместите их в конце предыдущей строки. Следующего пошагового руководства демонстрируется создание лампочка, которая отображается в текущем слове и имеет два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не устанавливайте Visual Studio SDK в центре загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -225,8 +222,8 @@ ms.locfileid: "49875896"
 2.  Создайте два класса с именами `UpperCaseSuggestedAction` и `LowerCaseSuggestedAction`. В обоих классах реализован интерфейс <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      Эти два класса похожи за тем исключением, что один из них вызывает <xref:System.String.ToUpper%2A>, а другой вызывает <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.  
@@ -246,8 +243,8 @@ ms.locfileid: "49875896"
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ ms.locfileid: "49875896"
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ ms.locfileid: "49875896"
 9. Реализуйте метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>, заменив текст в диапазоне на эквивалентный текст в верхнем регистре.  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ ms.locfileid: "49875896"
      ![Тестирование лампочки, расширенное](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Если щелкнуть первое действие, весь текст в текущего слова должны преобразоваться в верхний регистр. Щелкните второе действие, весь текст должны быть преобразованы в строчные.  
-  

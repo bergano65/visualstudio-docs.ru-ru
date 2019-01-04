@@ -1,9 +1,6 @@
 ---
-title: Справочник (API-интерфейсов отладки Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Справочник (API-интерфейсы отладки Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - reference, Debugging SDK
@@ -15,24 +12,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e709a49d1f5bf278bed82aa64bfaaf7e92f0b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6e9de42d4ff1000ead76158aa3a8c9956286d89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845646"
 ---
-# <a name="reference-visual-studio-debugging-apis"></a>Справочник (API-интерфейсов отладки Visual Studio)
-Ссылки Visual Studio пакет SDK для отладки структуры базовой модели для архитектуры во время выполнения и функциональные возможности отладчика, и его компонентов. Документация делает предположения минимально как можно подробнее компоненты и интерфейсы, описываемый, отдельно от поведения, которые он определяет, через интерфейсы.  
+# <a name="reference-visual-studio-debugging-apis"></a>Справочник (API-интерфейсы отладки Visual Studio)
+Ссылки Visual Studio SDK, отладка структуры базовой модели для выполнения архитектура и функциональные возможности отладчика, и его компонентов. Документацию по предположения всего лишь как можно подробнее компоненты и интерфейсы, которые он описывает, помимо поведение, которое он определяет, через интерфейсы.  
   
- В справочном разделе предназначена для предоставления поддержки для различных как набор языков, время выполнения и операционных систем можно.  
+ В справочном разделе предназначена для обеспечения поддержки для различных как набор языков, время выполнения и операционных систем можно.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
  Содержит документацию по интерфейсам, перечислители и структуры отладки API Visual Studio.  
   
  [Глоссарий](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)  
- Список терминов, связанных с отладкой, и их определений.  
+ Список терминов, связанных с отладкой и их определений.  
   
 ## <a name="see-also"></a>См. также  
  [Расширяемость отладчика Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

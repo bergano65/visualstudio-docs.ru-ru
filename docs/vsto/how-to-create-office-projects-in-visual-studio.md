@@ -1,9 +1,8 @@
 ---
-title: 'Практическое: Создание проектов Office в Visual Studio'
-ms.custom: ''
+title: Как выполнить Создание проектов Office в Visual Studio
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
@@ -19,19 +18,19 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], creating
 - document-level customizations [Office development in Visual Studio], creating
 - application-level add-ins [Office development in Visual Studio], creating projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902244"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Практическое: Создание проектов Office в Visual Studio
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Как выполнить Создание проектов Office в Visual Studio
   Можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для создания уровня документа и надстройками VSTO настроек для приложений Microsoft Office. Дополнительные сведения об этих типах проектов см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -164,5 +163,3 @@ ms.locfileid: "50672773"
  [Совместная разработка решений Office](../vsto/collaborative-development-of-office-solutions.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

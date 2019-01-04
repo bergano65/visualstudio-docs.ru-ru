@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: кэшировать данные в документе, защищенном паролем'
-ms.custom: ''
+title: Как выполнить Кэширование данных в документе, защищенном паролем
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968421"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Практическое: кэшировать данные в документе, защищенном паролем
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Как выполнить Кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения в кэшированные данные не сохраняются автоматически. Можно сохранить изменения в кэшированных данных путем переопределения двух методов в проекте.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -78,7 +75,5 @@ ms.locfileid: "35255347"
   
 ## <a name="see-also"></a>См. также  
  [Кэширование данных](../vsto/caching-data.md)   
- [Практическое: кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Практическое: программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  
+ [Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Практическое руководство. Программное кэширование источника данных в документах Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  

@@ -1,9 +1,6 @@
 ---
 title: Реализация пользовательских категорий и отображаемые элементы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908440"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Реализовать пользовательские категории и отображать элементы
 VSPackage может предоставить контроль над шрифты и цвета текста для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.
@@ -54,7 +51,7 @@ VSPackage может предоставить контроль над шрифт
 
 - Добавить в реестр с двумя значениями:
 
-  |name|Тип|Данные|Описание|
+  |name|Тип|Данные|Описание:|
   |----------|----------|----------|-----------------|
   |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории.|
   |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории.|
@@ -135,5 +132,5 @@ VSPackage может предоставить контроль над шрифт
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Получить данные шрифта и цвета для цветовое выделение текста](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Доступ хранимой параметры шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Практическое: доступ к встроенной шрифтов и цветовой схемы](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Общие сведения о шрифте и цвете](../extensibility/font-and-color-overview.md)

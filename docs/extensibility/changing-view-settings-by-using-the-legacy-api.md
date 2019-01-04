@@ -1,9 +1,6 @@
 ---
 title: Изменение параметров представления с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 08c23aa1705880b444fdf036ee269bcc8ae32dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902428"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Изменение параметров представления с помощью предыдущих версий API
 Параметры для основных компонентов редактора, например перенос по словам, поле выделения и виртуального пространства, которые могут быть изменены пользователем с помощью параметра **параметры** диалоговое окно. Тем не менее, можно также изменить эти параметры программным способом.  

@@ -1,9 +1,6 @@
 ---
-title: 'Создание нового проекта: Взгляд изнутри, часть 1 | Документация Майкрософт'
-ms.custom: ''
+title: Создание нового проекта. За кулисами, часть 1 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827654"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта. Как это работает, часть 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта. За кулисами часть 1
 Когда-нибудь думали о том, как создать собственный тип проекта? Интересно, что произойдет при создании нового проекта? Давайте взглянуть изнутри и что происходит в действительности.  
   
  Существует несколько задач, которые координирует Visual Studio для вас:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Можно изменить порядок сортировки.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Поиск корневой узел для типа проекта  
- Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: под капот, второй части](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: За кулисами, часть вторая](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > тег определяет тип проекта для приложения. Например файл \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip содержит файл EmptyProject.vstemplate с этим тегом:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** отображается как дочерний узел Visual C# просто узле Windows.  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. Как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Создание нового проекта. Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

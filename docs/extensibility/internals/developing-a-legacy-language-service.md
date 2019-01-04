@@ -1,9 +1,6 @@
 ---
 title: Разработка языковой службы прежних | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845795"
 ---
 # <a name="develop-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 Этот раздел содержит ссылки на разделы, которые помогут вам создать языковой службы прежних версий.  
@@ -63,8 +60,8 @@ ms.locfileid: "39497834"
  [Сведения о параметрах в языковой службы прежних версий](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Описание предоставления подсказок метода для перегруженных функций и методов.  
   
- [Практическое: укажите скрытого текста поддержки в языковой службы прежних версий](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Практическое руководство. Поддержка скрытого текста в языковой службы прежних версий](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Описание назначения области скрытого текста и инструкции о том, как реализовать области скрытого текста.  
   
- [Практическое: Расширенная поддержка структурирования в языковой службы прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Практическое руководство. Расширенная поддержка структурирования в языковой службы прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Описание двух параметров, расширения структуры поддержки для вашего языка, чем поддержка *свернуть в определения* команды.

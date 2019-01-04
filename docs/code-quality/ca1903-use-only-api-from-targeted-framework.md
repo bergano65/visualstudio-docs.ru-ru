@@ -1,8 +1,7 @@
 ---
-title: 'CA1903: использовать API-интерфейс только из целевой исполняющей среды'
+title: CA1903. Используйте API только из целевой рабочей среды
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eb85029cb9c3c419b88a31be88d8e1cfbd16142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908987"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: использовать API-интерфейс только из целевой исполняющей среды
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 
 |||
 |-|-|
@@ -48,7 +47,7 @@ ms.locfileid: "49822817"
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Н/Д|
 
- Для изменения целевой платформы проекта см. в разделе [предназначенных для определенной версии .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Для изменения целевой платформы проекта см. в разделе [предназначенных для определенной версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если это зависимость добавлена специально отключить предупреждение, или отключить это правило.
@@ -69,4 +68,4 @@ ms.locfileid: "49822817"
 ## <a name="see-also"></a>См. также
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Настройка конкретной версии платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

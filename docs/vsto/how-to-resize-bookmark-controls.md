@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: изменение размера элементов управления Bookmark'
-ms.custom: ''
+title: Как выполнить Изменение размера элементов управления Bookmark
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942454"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Практическое: изменение размера элементов управления Bookmark
+# <a name="how-to-resize-bookmark-controls"></a>Как выполнить Изменение размера элементов управления Bookmark
   Размер элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> задается при его добавлении в документ Microsoft Office Word. Его также можно изменить позднее.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924841"
   
    Это удобно, если нужно существенно изменить размер или положение закладки.  
   
-  В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения. Дополнительные сведения см. в разделе [как: Добавление закладки элементы управления в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в любой открытый документ во время выполнения. Дополнительные сведения см. в разделе [Как Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924841"
 3.  В диалоговом окне **Закладка** выберите имя закладки, размер которой требуется изменить, и нажмите кнопку **Добавить**.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
- [Практическое: изменение размера элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Практическое: изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Практическое руководство. Изменение размера элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Практическое руководство. Изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

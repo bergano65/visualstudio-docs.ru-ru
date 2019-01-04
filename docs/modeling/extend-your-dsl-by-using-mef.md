@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986171"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 Обработчик жестов умеет работать с объектами, перетаскивать на схему в любой точке мира, внутри или за пределами Visual Studio. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.
 
-Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [Как Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -378,5 +377,5 @@ namespace MefExtension
 
 - [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)

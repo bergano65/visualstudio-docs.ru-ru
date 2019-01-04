@@ -1,9 +1,6 @@
 ---
 title: решения Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,17 +21,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856860"
 ---
 # <a name="excel-solutions"></a>решения Excel
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Excel. Эти решения можно использовать для автоматизации Excel, расширения функциональных возможностей Excel и настройки пользовательского интерфейса Excel. Дополнительные сведения о различиях между настройками уровня документа и надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "53027397"
 ##  <a name="doclevel"></a> Разработка настроек на уровне документа для Excel  
  Настройка на уровне документа для Microsoft Office Excel состоит из сборки, связанной с конкретной книгой. Как правило, сборка расширяет книгу посредством настройки пользовательского интерфейса и автоматизации Excel. В отличие от надстройки VSTO, которая связана с самим приложением Excel, функциональные возможности, реализуемые в настройке, доступны только в том случае, когда соответствующая книга открыта в Excel.  
 
- Чтобы создать проект настройки уровня документа для Excel, используйте книги Excel или шаблонов проекта шаблона Excel в **новый проект** диалоговое окно Visual Studio. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Чтобы создать проект настройки уровня документа для Excel, используйте книги Excel или шаблонов проекта шаблона Excel в **новый проект** диалоговое окно Visual Studio. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Дополнительные сведения о работе настроек на уровне документа, см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
 
@@ -74,7 +71,7 @@ ms.locfileid: "53027397"
 ##  <a name="applevel"></a> Разработка надстроек VSTO для Excel  
  Надстройка VSTO для Microsoft Office Excel состоит из сборки, загружаемой в Excel. Как правило, сборка расширяет Excel посредством настройки пользовательского интерфейса и автоматизации Excel. В отличие от настройки уровня документа, которая связана с конкретной книгой, функциональные возможности, реализуемые в надстройке VSTO не ограничиваются отдельной книгой.  
 
- Чтобы создать проект надстройки VSTO для Excel, используйте книги Excel или шаблонов проекта шаблона Excel в **новый проект** диалоговое окно Visual Studio. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Чтобы создать проект надстройки VSTO для Excel, используйте книги Excel или шаблонов проекта шаблона Excel в **новый проект** диалоговое окно Visual Studio. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Общие сведения о работе надстроек VSTO см. в разделе [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
@@ -92,15 +89,15 @@ ms.locfileid: "53027397"
 |Задача|Дополнительные сведения|  
 |----------|--------------------------|  
 |Настройка ленты.|[Обзор ленты](../vsto/ribbon-overview.md)|  
-|Добавление элементов управления Windows Forms или расширенных элементов управления Excel на лист в настраиваемой книге для настройки на уровне документа или в любой открытый документ для надстройки VSTO.|[Практическое: Добавление элементов управления Windows forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Практическое: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Практическое: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Практическое: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|Добавление элементов управления Windows Forms или расширенных элементов управления Excel на лист в настраиваемой книге для настройки на уровне документа или в любой открытый документ для надстройки VSTO.|[Практическое руководство. Добавление элементов управления Windows forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Практическое руководство. Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Практическое руководство. Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-document-level-customizations"></a>Параметры для настроек уровня документа  
  В следующей таблице перечислены параметры настройки, доступные только для настроек на уровне документа.  
 
 |Задача|Дополнительные сведения|  
 |----------|--------------------------|  
-|Добавление панели действий в книгу.|[Общие сведения о панели действий](../vsto/actions-pane-overview.md)<br /><br /> [Практическое: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Добавление расширенных элементов управления диапазоном, сопоставленных с XML-узлами, на лист.|[Практическое: Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
+|Добавление панели действий в книгу.|[Общие сведения о панели действий](../vsto/actions-pane-overview.md)<br /><br /> [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Добавление расширенных элементов управления диапазоном, сопоставленных с XML-узлами, на лист.|[Практическое руководство. Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-vsto-add-ins"></a>Параметры для надстроек VSTO  
  В следующей таблице перечислены параметры настройки, доступные только для надстроек VSTO.  
@@ -122,4 +119,3 @@ ms.locfileid: "53027397"
 | [Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Демонстрирует способы добавления кнопки Windows Forms, <xref:Microsoft.Office.Tools.Excel.NamedRange>и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист во время выполнения с помощью надстройки VSTO. |
 | [Сведения о совместное редактирование и Add-ins](./understanding-coauthoring-and-addins.md) | Описывает изменения, которые может потребоваться внести свои решения в соответствии с совместной работе над книгой. |
 | [Excel 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Ссылки на статьи и справочную документацию о разработке решений Excel. Они не относятся к разработке решений Office в Visual Studio. |
-

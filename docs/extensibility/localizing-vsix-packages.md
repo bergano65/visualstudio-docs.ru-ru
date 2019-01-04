@@ -1,9 +1,6 @@
 ---
 title: Локализация пакетов VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize package
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956937"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -104,8 +101,8 @@ ms.locfileid: "39636978"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
-|[Справочник по схеме 2.0 языкового пакета VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Языковой пакет VSIX описывает информацию локализации VSIX-файл развертывания.|
+|[Справочник по схеме 2.0 языкового пакета VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Языковой пакет VSIX описывает информацию локализации VSIX-файл развертывания.|
 |[Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Описывает структуру и содержимое пакета vsix.|
 |[Локализация команд меню](../extensibility/localizing-menu-commands.md)|Показано, как локализовать ресурсы текста в расширении.|

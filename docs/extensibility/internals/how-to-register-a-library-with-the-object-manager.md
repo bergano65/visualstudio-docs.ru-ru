@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: зарегистрировать библиотеку с помощью диспетчера объектов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Зарегистрировать библиотеку с помощью диспетчера объектов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0ed3913b8031283b20589a670c5d2da6e51a8dec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941983"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Практическое: зарегистрировать библиотеку с диспетчером объектов
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Как выполнить Зарегистрировать библиотеку с диспетчером объектов
 Просмотр символы средства, такие как **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, позволяют просматривать символы в проекте или на внешние компоненты. Символы включают пространства имен, классы, интерфейсы, методы и другие элементы языка. Библиотеки отслеживать эти символы и представлять их в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов, которое заполняет средства с данными.  
   
  Диспетчер объектов хранит информацию о всех доступных библиотек. Каждой библиотеки необходимо зарегистрировать с диспетчером объектов, прежде чем предоставлять символы для средства просмотра символов.  
@@ -170,4 +167,4 @@ ms.locfileid: "39513326"
 ## <a name="see-also"></a>См. также  
  [Расширяемость устаревший языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Поддержка средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое: предоставлять список символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

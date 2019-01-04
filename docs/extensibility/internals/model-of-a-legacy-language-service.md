@@ -1,9 +1,6 @@
 ---
 title: Модель языковой службы прежних | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 381c5b37cdc5d8a166003bdf7dd931dd95e6dcb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4478ef31c107fcf437a452a857eabe2cd015734
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819904"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель языковой службы прежних версий
 Языковая служба определяет элементы и функции для конкретного языка и используется для предоставления редактора с информацией для данного языка. Например редактор должен знать, элементы и ключевые слова языка для поддержки выделения синтаксиса цветом.  

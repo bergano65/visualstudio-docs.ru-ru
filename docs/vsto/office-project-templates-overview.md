@@ -1,9 +1,6 @@
 ---
 title: Общие сведения о шаблонах проектов Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940605"
 ---
 # <a name="office-project-templates-overview"></a>Общие сведения о шаблонах проектов Office
   Средства разработки для Microsoft Office в Visual Studio включают в себя шаблоны проектов, предназначенные для создания указанных ниже типов решений Office.  
@@ -135,11 +132,11 @@ ms.locfileid: "49934331"
   
 - [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
-- [Пошаговое руководство по Созданию вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Пошаговое руководство: Создание вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
 - [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
-- [Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Пошаговое руководство: Создание вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
 - [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
@@ -172,9 +169,7 @@ ms.locfileid: "49934331"
 ## <a name="see-also"></a>См. также  
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

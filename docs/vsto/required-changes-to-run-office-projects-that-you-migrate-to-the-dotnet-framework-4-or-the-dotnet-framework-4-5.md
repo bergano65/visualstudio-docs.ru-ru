@@ -1,9 +1,6 @@
 ---
 title: Изменения, необходимые для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 819a3f1c0ea4541bee55dca2402cac6dbf9848cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917622"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Изменения, необходимые для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET framework проекта Office изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии из более ранней версии платформы .NET Framework, необходимо выполнить следующие задачи, чтобы убедиться, что решение может выполняться на компьютере разработчика, так и на компьютерах конечных пользователей:  
@@ -74,5 +71,3 @@ ms.locfileid: "50670797"
   
 ## <a name="see-also"></a>См. также  
  [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Устранение неполадок, связанных с метриками кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c20fc0cd975dba4efcf9384d804e7732afecec0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930899"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Устранение неполадок, связанных с метриками кода
 Во время сбора метрик кода могут возникать некоторые из следующих проблем:
@@ -30,4 +29,4 @@ ms.locfileid: "49853966"
 - Функция содержит оператор switch (Select Case в VB). Различия в компиляторах между [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] и более ранними версиями могут приводить к созданию разного кода MSIL для некоторых операторов switch, в которых имеются случаи передачи управления.
 
 ## <a name="see-also"></a>См. также
- [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md)

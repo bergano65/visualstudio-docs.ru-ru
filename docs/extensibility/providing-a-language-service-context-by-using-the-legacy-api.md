@@ -1,9 +1,6 @@
 ---
 title: Предоставляет контекст службы языка с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940262"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Предоставить контекст службы языка с помощью предыдущих версий API
 Существует два варианта для языковой службы для предоставления контекста пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базовый редактор: предоставьте текст маркера контекста, или передайте все контекста пользователя. Здесь описаны различия между ними.  
   
- Дополнительные сведения о предоставлении контекста для языковой службы, которая подключена к собственного редактора см. в разделе [как: предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
+ Дополнительные сведения о предоставлении контекста для языковой службы, которая подключена к собственного редактора см. в разделе [как: Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Предоставить контекст маркеров текстовый редактор  
  Для предоставления контекста для ошибки компилятора, обозначается меток текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной редактор, реализовывать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс. В этом случае служба языка предоставляет контекст, только в том случае, когда курсор находится на текстовой метки. Это позволяет редактор для предоставления ключевое слово в позиции курсора для **динамической справки** окно без атрибутов.  

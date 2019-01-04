@@ -1,9 +1,6 @@
 ---
 title: Расширение свойств | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846589"
 ---
 # <a name="extend-properties"></a>Расширение свойств
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Свойства** окно браузер универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы перечислить свойства времени разработки для текущего выбранного объекта в любое другое окно в интегрированной среде разработки (IDE).  
@@ -66,4 +63,4 @@ ms.locfileid: "39512113"
  Объясняет, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] эффективно управляет элементов, таких как ссылки, подключения к данным, папки и файлы, которые необходимы на этапе разработки через решения и проекты.  
   
  [Расширение других частей Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Содержит сведения об использовании [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] служб для создания элементов пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Объясняется использование служб [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для создания элементов пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

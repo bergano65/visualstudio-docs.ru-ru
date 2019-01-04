@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic'
-ms.custom: ''
+title: Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917661"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Word из кода Visual Basic для приложений (VBA) в документе. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `ThisDocument` , представление метода коду VBA и вызов метода из кода VBA в документе.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -72,7 +69,7 @@ ms.locfileid: "38808941"
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808941"
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:  
   
--   Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. в разделе [Пошаговое руководство: Вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>См. также  
  [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
  [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
- [Практическое: предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Практическое: предоставлять к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Практическое руководство. Предоставить доступ к коду, коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Практическое руководство. Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Пошаговое руководство: Вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

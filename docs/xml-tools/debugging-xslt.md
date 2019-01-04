@@ -2,7 +2,6 @@
 title: Отладка XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 8d62f95b934e2dc292aca1716223be2458e778c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923391"
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 
@@ -32,5 +31,5 @@ ms.locfileid: "51348543"
 
 - [Редактирование таблиц стилей XSLT](../xml-tools/editing-xslt-style-sheets.md) объясняется использование редактора XML для изменения таблиц стилей.
 - [Вопросы безопасности при работе с XML-данными](../xml-tools/security-considerations-when-working-with-xml-data.md) обсуждаются вопросы безопасности, которые необходимо знать при работе в редакторе XML или отладчиком XSLT.
-- [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md) представляет отладчик Visual Studio.
+- [Отладка в Visual Studio](../debugger/debugger-feature-tour.md) представляет отладчик Visual Studio.
 - [Справочник по XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) справочные материалы по элементам и функциям XSLT.

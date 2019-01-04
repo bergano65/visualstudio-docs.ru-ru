@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: выполнения кода при выполнении шагов развертывания | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Выполнения кода при руководство | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,25 +12,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cebd88cc49afa1092dfcd1d67ffdbf0fa3567ad0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883260"
 ---
-# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Практическое: выполнения кода при выполнении шагов развертывания
+# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Как выполнить Выполнения кода при выполнении шагов развертывания
   Если вы хотите выполнить дополнительные задачи для шага развертывания в проекте SharePoint, можно обрабатывать события, вызываемые элементами проекта SharePoint, до и после Visual Studio выполняет каждый шаг развертывания. Дополнительные сведения см. в разделе [расширение SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Для выполнения кода при выполнении шагов развертывания  
   
 1.  Создание расширения элемента проекта, расширение проекта или определение нового типа элемента проекта. Дополнительные сведения см. в следующих разделах:  
   
-    -   [Практическое: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Практическое: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  В расширении, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> события <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> объекта (в расширение элемента проекта или расширения проекта) или <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> объект (в определение нового типа элемента проекта).  
   
@@ -58,6 +55,4 @@ ms.locfileid: "37119769"
 ## <a name="see-also"></a>См. также
  [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
- [Практическое: выполнения кода при развертывания или отзыва проекта SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  
-  
-  
+ [Практическое руководство. Выполнения кода при развертывания или отзыва проекта SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  

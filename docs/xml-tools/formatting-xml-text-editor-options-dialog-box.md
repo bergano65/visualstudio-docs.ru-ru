@@ -2,7 +2,6 @@
 title: Диалоговое окно «Форматирование», «XML», «Текстовый редактор», «Свойства»
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938596"
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Форматирование, XML, текстовый редактор, диалоговое окно параметров
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Параметры форматирования, XML, текстовый редактор, диалоговое окно
 
-При помощи этого диалогового окна можно задать настройки форматирования для XML Editor. Вы можете получить доступ к **параметры** диалогового окна **средства** меню.
+При помощи этого диалогового окна можно задать настройки форматирования для XML Editor. Вы можете получить доступ к **параметры** диалоговое окно, в **средства** меню.
 
 > [!NOTE]
-> Эти параметры доступны при выборе **текстовый редактор** папки, **XML** папки, а затем **форматирование** параметр из **параметры** диалоговое окно.
+> Эти параметры доступны при выборе **текстовый редактор** папке **XML** папку, а затем **форматирование** параметр из **параметры** диалоговое окно.
 
 ## <a name="attributes"></a>Атрибуты
  **Сохранить ручное форматирование атрибутов**

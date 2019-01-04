@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierLocale2 | Документы Microsoft
-ms.custom: ''
+title: IDebugPortSupplierLocale2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1cd0160b1ec5b1c9d86c277f2b47011d1b7610c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915985"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Предоставляет поддержку языка для поставщика порта.  
@@ -30,12 +27,12 @@ IDebugPortSupplierLocale2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщик пользовательский порт реализует этот интерфейс для задания языкового стандарта.  
+ Пользовательский порт поставщик реализует этот интерфейс для задания языкового стандарта.  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы **IDebugPortSupplierLocale2**.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Задает языковой стандарт для поставщика порта.|  
   

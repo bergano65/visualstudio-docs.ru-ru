@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: настройка безопасности списка включения'
-ms.custom: ''
+title: Как выполнить Настройка безопасности списка включения
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895581"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Практическое: настройка безопасности списка включения
+# <a name="how-to-configure-inclusion-list-security"></a>Как выполнить Настройка безопасности списка включения
   Если у вас есть разрешения администратора, вы можете настроить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления ли конечные пользователи получают возможность установки решений Office, сохранив решение о доверии в списке включения. Сведения о списках включений, см. в разделе [доверия Office решения с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -213,5 +210,3 @@ ms.locfileid: "35255841"
 ## <a name="see-also"></a>См. также  
  [Доверия решениям Office с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Безопасные решения Office](../vsto/securing-office-solutions.md)  
-  
-  

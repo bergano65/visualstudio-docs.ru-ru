@@ -1,9 +1,6 @@
 ---
 title: Запускать решения в различных версиях Microsoft Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843402"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Запускать решения в различных версиях Microsoft Office
     
@@ -39,7 +36,7 @@ ms.locfileid: "35674043"
   
  1. Версии платформы .NET Framework, ваш проект ориентируется на компьютерах конечных пользователей для запуска решения. Например если проект нацелен на .NET Framework 3.5, .NET Framework 3.5 требуется на компьютерах конечных пользователей. В этом примере решения не будет выполняться, если только [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] устанавливается на компьютерах конечных пользователей.  
   
- 2. В этом сценарии решение будет работать без ошибок в выпуске 2007 системы Microsoft Office только в том случае, если оно не использует функции, которые были добавлены в [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
+ 2. В этом сценарии решение будет работать без ошибок в выпуске 2007 системы Microsoft Office только в том случае, если оно не использует возможности, которые были добавлены в [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 ## <a name="run-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Запуска решений Office, созданные с помощью версии Visual Studio до Visual Studio 2010  
  Приложения Microsoft Office могут запускать решения, созданные с помощью версий Visual Studio до Visual Studio 2010. В некоторых случаях для этих решений требуются различные версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Разные версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] можно установить параллельно на одном компьютере.  
@@ -61,8 +58,6 @@ ms.locfileid: "35674043"
 ## <a name="see-also"></a>См. также  
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio Tools для сценарии установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Настройка компьютера для разработки решений Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
-  
-  

@@ -1,10 +1,8 @@
 ---
-title: Элемент SortOrder (шаблоны Visual Studio) | Документы Microsoft
-ms.custom: ''
+title: Элемент SortOrder (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 811df3ed361a104ad3ca935307e337a291cbf01e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963302"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Элемент SortOrder (шаблоны Visual Studio)
-Указывает значение, которое используется для размещения шаблона других шаблонов той же категории, как оно отображается в либо **новый проект** или **Добавление нового элемента** диалоговое окно.  
+Указывает значение, которое используется для размещения шаблона, других шаблонов в той же категории, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -47,24 +45,24 @@ ms.locfileid: "31140327"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- `integer` , Представляющий значение порядка сортировки.  
+ `integer` , Представляющий значения порядка сортировки.  
   
 ## <a name="remarks"></a>Примечания  
  `SortOrder` — это необязательный элемент. Значение по умолчанию — 100, а все значения должны быть кратными 10.  
   
  `SortOrder` Элемент игнорируется для шаблонов, созданных пользователем. Все шаблоны, созданные пользователем сортируются в алфавитном порядке.  
   
- Шаблоны с малыми значениями порядка сортировки отображаются в либо **новый проект** или **добавить новый элемент** диалоговое окно перед шаблонами с высокими значениями порядка сортировки.  
+ Шаблоны, в которых малыми значениями порядка сортировки присутствующие в одной **новый проект** или **добавить новый элемент** диалоговое окно перед шаблонами с высокими значениями порядка сортировки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере демонстрируется метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.  
+ В следующем примере показано метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,7 +81,7 @@ ms.locfileid: "31140327"
 </VSTemplate>  
 ```  
   
- В этом примере `SortOrder` элемента относительно высокая. Вполне вероятно, что и другие [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] будет иметь шаблоны элементов `SortOrder` меньше значения `290` и будет отображаться перед данным шаблоном в **новый элемент** диалоговое окно.  
+ В этом примере `SortOrder` элемент относительно велико. Вполне вероятно, что другие [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] будет иметь шаблоны элементов `SortOrder` меньшее значение, чем `290` и будет отображаться перед этот шаблон в **новый элемент** диалоговое окно.  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

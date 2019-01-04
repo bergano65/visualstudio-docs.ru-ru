@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное закрытие документов Visio'
-ms.custom: ''
+title: Как выполнить Программное закрытие документов Visio
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d800fbe0a6dda6fc7c5160d607d393afcb920cd9
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0516fcaf8f35e089752e645fbe22093ed8d87bf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848539"
 ---
-# <a name="how-to-programmatically-close-visio-documents"></a>Практическое: программное закрытие документов Visio
+# <a name="how-to-programmatically-close-visio-documents"></a>Как выполнить Программное закрытие документов Visio
   Вы можете закрыть активный документ Microsoft Office Visio с помощью метода `Microsoft.Office.Interop.Visio.Document.Close`.  
   
  Сведения об этом методе см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Document.Close) .  
@@ -42,9 +39,7 @@ ms.locfileid: "50671577"
 ## <a name="see-also"></a>См. также  
  [Решения Visio](../vsto/visio-solutions.md)   
  [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
- [Практическое: программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Как: открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Практическое: программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Практическое: программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Практическое руководство. Программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Практическое руководство. Открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Практическое руководство. Программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Практическое руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)  

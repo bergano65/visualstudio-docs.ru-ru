@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Расширение обозревателя сервера для отображения веб-частей | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957901"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширения обозревателя сервера для отображения веб-частей
   В Visual Studio, можно использовать **подключения SharePoint** узел **обозревателя серверов** для просмотра компонентов на сайтах SharePoint. Тем не менее **обозревателя серверов** не отображать некоторые компоненты по умолчанию. В этом пошаговом руководстве, вы расширите **обозревателя серверов** , чтобы он отображал галерею веб-частей на каждый из которых подключен сайта SharePoint.  
   
  В этом пошаговом руководстве описаны следующие задачи.  
@@ -43,7 +40,7 @@ ms.locfileid: "51296389"
 -   Отладка и тестирование расширения.  
   
 > [!NOTE]  
->  Альтернативная версия данного пошагового руководства, использующего клиентскую объектную модель для SharePoint вместо его серверную объектную модель, см. в разделе [Пошаговое руководство: вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Альтернативная версия данного пошагового руководства, использующего клиентскую объектную модель для SharePoint вместо его серверную объектную модель, см. в разделе [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.  
@@ -377,4 +374,3 @@ ms.locfileid: "51296389"
  [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
  [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

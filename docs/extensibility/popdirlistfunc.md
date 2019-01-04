@@ -1,9 +1,6 @@
 ---
 title: POPDIRLISTFUNC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2dc3e0aee42da176ee147e1d960143236cf89f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69278a0faca0d31ae5afbf4b84dbc78efad1bf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926205"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Это функция обратного вызова, присвоенный [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) функции, чтобы обновить коллекцию каталогов и (необязательно) имена файлов, чтобы узнать, которые являются в системе управления версиями.  
@@ -50,7 +47,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|  

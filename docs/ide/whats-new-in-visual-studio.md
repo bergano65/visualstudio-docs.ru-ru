@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160196"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740402"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -223,7 +223,7 @@ Visual Studio перемещает свои расширения, а также 
 
 ![Диалоговое окно нового помощника по исправлению ошибок в Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки \"На шаг назад\" и \"На шаг вперед\"")
 
-Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/view-historical-application-state.md).
 
 ### <a name="containerization"></a>Контейнеризация
 
@@ -278,7 +278,7 @@ Visual Studio перемещает свои расширения, а также 
 
 В рамках рабочей нагрузки "Разработка мобильных приложения на .NET" разработчики, знакомые с C#, .NET и Visual Studio, могут доставлять собственные приложения Android, iOS и Windows с помощью Xamarin. Разработчики могут рассчитывать на такие же возможности и производительность при работе с Xamarin для мобильных приложений, включая удаленную отладку на устройствах Android, iOS и Windows, без необходимости изучать нативные языки, например Objective-C или Java. &mdash;
 
-Дополнительные сведения см. на странице [Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md).
+Дополнительные сведения см. на странице [Visual Studio и Xamarin](/xamarin/).
 
 ### <a name="entitlements-editor"></a>Редактор объемов обслуживания
 
@@ -366,7 +366,7 @@ Visual Studio перемещает свои расширения, а также 
 Мы часто добавляем в Visual Studio 2017 новые функции, облегчающие разработку. Ниже перечислены некоторые из наиболее важных обновлений, входящих в экспериментальную предварительную версию:
 
 * **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**  — это новое средство, которое позволяет предоставить базу кода и соответствующий контекст коллеге и обеспечить двунаправленное взаимодействие непосредственно из среды Visual Studio. Благодаря Live Share коллега может легко и безопасно просматривать, изменять и отлаживать проект, предоставленный вами для общего доступа.<br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по Live Share](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**  — это новая функция, которая расширяет возможности разработки программного обеспечения и использует ИИ, чтобы предоставлять более контекстно зависимые завершения кода, помогать разработчикам придерживаться шаблонов и стилей, принятых в их команде, находить неочевидные проблемы с кодом и концентрировать проверки кода на действительно важных областях. <br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**  — это новая функция, которая расширяет возможности разработки программного обеспечения и использует ИИ, чтобы предоставлять более контекстно зависимые завершения кода, помогать разработчикам придерживаться шаблонов и стилей, принятых в их команде, находить неочевидные проблемы с кодом и концентрировать проверки кода на действительно важных областях. <br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по IntelliCode](/visualstudio/intellicode/faq).
 
 Хотите ознакомиться с другими будущими возможностями для Visual Studio 2017? См. страницу [Стратегия развития Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 

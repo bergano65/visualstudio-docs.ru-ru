@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Связывание типа контента с расширением имени файла | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Связывание типа контента с расширением имени файла | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926191"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство: Связывание типа контента с расширением имени файла
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа контента с расширением имени файла
 Можно определить свой собственный тип содержимого и связать его расширение имени файла с помощью Managed Extensibility Framework (MEF) расширения редактора. В некоторых случаях расширение имени файла уже определен на языковой службе. Но, чтобы использовать его с MEF, необходимо по-прежнему связать его с типом содержимого.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
@@ -34,7 +31,7 @@ ms.locfileid: "39566757"
   
 ## <a name="define-the-content-type"></a>Определить тип содержимого  
   
-1.  Добавьте файл класса и назовите его `FileAndContentTypes`.  
+1.  Добавьте файл класса с именем `FileAndContentTypes`.  
   
 2.  Добавьте ссылки на следующие сборки:  
   
@@ -93,7 +90,7 @@ ms.locfileid: "39566757"
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Добавление типа содержимого к экспорту редактора  
   
-1.  Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Добавьте в класс, определенный в этой процедуре.  
   

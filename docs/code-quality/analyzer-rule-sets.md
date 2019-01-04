@@ -2,7 +2,6 @@
 title: Наборы правил анализатора
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df084a81de2afc522fc3b82141cf8c5c59205ca
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 514f264186047c044e5db1b944cd62d517588e80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885227"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Наборы правил для анализаторов Roslyn
 
@@ -56,7 +55,7 @@ ms.locfileid: "39204532"
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор анализаторов .NET Compiler Platform](roslyn-analyzers-overview.md)
+- [Обзор анализаторов на платформе .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Установка анализаторов .NET Compiler Platform](install-roslyn-analyzers.md)
 - [Настройка и использование правил анализатора Roslyn](use-roslyn-analyzers.md)
 - [Использование наборов правил для группировки правил анализа кода](using-rule-sets-to-group-code-analysis-rules.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное удаление листов из книг'
-ms.custom: ''
+title: Как выполнить Программное удаление листов из книг
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7254ba703c0e25d37dd3582d4443a6bdf1653a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843389"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Практическое: программное удаление листов из книг
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Как выполнить Программное удаление листов из книг
   В книге можно удалить любой лист. Для удаления листа используйте ведущий элемент листа или получите доступ к листу с помощью коллекции листов книги.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,7 +36,7 @@ ms.locfileid: "49950229"
 > - Книга Excel 2010  
 > - Шаблон Excel 2010  
 > 
->   Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>   Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Удаление листа с помощью ведущего элемента листа  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49950229"
   Следующий код удаляет лист из книги путем ссылки на лист через номер индекса **листы** коллекции. В этом коде предполагается, что новый лист был создан программным образом.  
   
 > [!IMPORTANT]  
->  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Удаление листа с помощью коллекции листов книги Excel  
   
@@ -69,12 +66,10 @@ ms.locfileid: "49950229"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Практическое: программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Практическое: программный Выбор листов Excel](../vsto/how-to-programmatically-select-worksheets.md)   
- [Практическое: программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Практическое руководство. Программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Практическое руководство. Программный выбор листов Excel](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Практическое руководство. Программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
  [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

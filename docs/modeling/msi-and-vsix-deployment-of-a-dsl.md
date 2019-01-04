@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938190"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Доменный язык можно установить на своем компьютере или на других компьютерах. Visual Studio должна быть установлена на конечном компьютере.
@@ -24,7 +23,7 @@ ms.locfileid: "49931549"
 
 |Метод|Преимущества|
 |-|-|
-|VSX (расширение Visual Studio)|Значительно облегчает развертывание: копирования и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|
+|VSX (расширение Visual Studio)|Значительно облегчает развертывание: Скопируйте и выполните **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. в разделе [Установка и удаление доменного языка с помощью VSX](#Installing).|
 |MSI (файл установщика)|-Позволяет пользователю открыть Visual Studio, дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на целевом компьютере.<br />— Связывает XSD (XML schema) с типом файла DSL. Это позволяет избежать предупреждения при загрузке файла в Visual Studio.<br /><br /> Проект установки необходимо добавить в решение для создания файла MSI.<br /><br /> Дополнительные сведения см. в разделе [развертывание доменного языка с помощью MSI-файл](#msi).|
 
 ## <a name="Installing"></a> Установка и удаление доменного языка с помощью VSX

@@ -1,9 +1,6 @@
 ---
 title: Шрифты и форматирование для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989047"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Шрифт среды разработки
@@ -93,7 +90,7 @@ window.ShowModal()
 ###  <a name="BKMK_Formatting"></a> Форматирование ссылки (масштабирование/полужирное начертание)  
  В некоторых диалоговых окнах требуют определенного текста полужирным шрифтом или размера, отличного от шрифт среды разработки. Ранее, шрифты, размер которых превышает шрифт среды разработки было закодировано как «`environment font +2`"или аналогичный. С помощью фрагментов предоставленный код поддержки мониторов с высоким Разрешением и убедитесь, что отображаемый текст всегда отображается в правильный размер и вес (например Light или Полусветлый).  
   
-> **Примечание: Прежде чем применить форматирование, убедитесь, вы следуете рекомендаций из [стиль текста](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
+> **Примечание. Прежде чем применить форматирование, убедитесь, вы следуете рекомендаций из [стиль текста](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
   
  Чтобы увеличить шрифт среды разработки, задайте стиль TextBlock и Label, как указано. Каждый из этих фрагментов кода, при правильном использовании создает необходимый шрифт, включая соответствующие варианты размер и вес.  
   
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>Шрифта среды 375% + светлый  
- **Отображается в виде:** 34 pt Segoe UI Light  
+ **Отображается следующим образом:** 34 pt Segoe UI Light  
  **Использование:** (такие случаи редки) уникальный типизированной пользовательского интерфейса, например на начальной странице
 
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано.  
+ **XAML:** Задайте стиль TextBlock или метки, как показано.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Шрифта среды 310% + светлый  
- **Отображается в виде:** 28 pt Segoe UI Light   
+ **Отображается следующим образом:** 28 pt Segoe UI Light   
  **Использование:** больших подпись заголовки диалоговое окно, основной заголовок в отчетах  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано.  
+ **XAML:** Задайте стиль TextBlock или метки, как показано.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Шрифта среды 200% + Полусветлый  
- **Отображается в виде:** 18 пт Segoe UI Semilight    
+ **Отображается следующим образом:** 18 пт Segoe UI Semilight    
  **Использование:** подзаголовков, заголовки в малых и средних диалоговых окнах  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные: 
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано:  
+ **XAML:** Задайте стиль TextBlock или метки, как показано:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>Шрифта среды 155%  
- **Отображается в виде:** 14 пт Segoe UI    
+ **Отображается следующим образом:** 14 пт Segoe UI    
  **Использование:** заголовки разделов в документе также пользовательский Интерфейс или отчеты  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано:  
+ **XAML:** Задайте стиль TextBlock или метки, как показано:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>Шрифта среды 133%  
- **Отображается в виде:** 12 пт Segoe UI    
+ **Отображается следующим образом:** 12 пт Segoe UI    
  **Использование:** меньшего размера подразделов в диалоговых окнах подпись и в документе также пользовательского интерфейса  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано:  
+ **XAML:** Задайте стиль TextBlock или метки, как показано:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Шрифта среды 122%  
- **Отображается в виде:** 11 пт Segoe UI    
+ **Отображается следующим образом:** 11 пт Segoe UI    
  **Использование:** разделе заголовки в диалоговых окнах подпись, основных узлов в представлении дерева, вертикальной табуляции навигации  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано:  
+ **XAML:** Задайте стиль TextBlock или метки, как показано:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Отображается в виде:** выделенные полужирным шрифтом 9 pt Segoe UI    
  **Использование:** метки и подзаголовков в диалоговых окнах подпись, отчеты и документа также пользовательского интерфейса  
   
- **Процедурный код:** где `textBlock` является ранее определенные TextBlock и `label` является меткой ранее определенные:  
+ **Процедурный код:** Где `textBlock` является ранее определенные TextBlock и `label` ранее определенные метка:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** задать стиль элемента TextBlock и Label, как показано:  
+ **XAML:** Задайте стиль TextBlock или метки, как показано:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -316,7 +313,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Диалоговое окно заголовки|Подписи|  
 |Группы полей|Флажки|  
 |Пункты меню|Переключатели|  
-|Пункты контекстного меню|Элементов списка|  
+|Элементы контекстного меню|Элементов списка|  
 |Кнопки|Строки состояния|  
 |Таблица метки||  
 |Заголовки столбцов||  
@@ -325,11 +322,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Заглавные буквы  
  Заглавные буквы является стилем, написанные с прописной буквы первые буквы большинство или все слова в пределах фразы. В Visual Studio заглавные буквы используется для многих элементов, включая:  
   
-- **Всплывающие подсказки.** Пример: «предварительный просмотр выбранных элементов»  
+- **Всплывающие подсказки.** Пример «Предварительный просмотр выбранных элементов»  
   
-- **Заголовки столбцов.** Пример: «отклик системы»  
+- **Заголовки столбцов.** Пример «Отклик системы»  
   
-- **Элементы меню.** Пример: «сохранить все»  
+- **Элементы меню.** Пример «Сохранить все»  
   
   При использовании заглавные буквы, ниже приведены рекомендации по выборе между заглавные и оставить их в нижнем регистре.  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Прописная  
  Прописная является метод стандартный регистр букв для записи, в котором только первое слово предложения написано с прописной буквы, а также имена собственные и местоимения «I». В общем случае прописную проще для аудитории по всему миру для чтения, особенно если содержимое будут переведены на компьютере. Вариант использования предложения для.  
   
-1.  **Сообщения строки состояния.** Это простой, говоря и предоставлять сведения о состоянии. Пример: «Загрузка файла проекта»  
+1.  **Сообщения строки состояния.** Это простой, говоря и предоставлять сведения о состоянии. Пример «Загрузка файла проекта»  
   
-2.  **Все остальные элементы пользовательского интерфейса**, включая метки, установите флажки, переключатели и позиции списка. Пример: «выбрать все элементы в списке»  
+2.  **Все остальные элементы пользовательского интерфейса**, включая метки, установите флажки, переключатели и позиции списка. Пример «Выбрать все элементы в списке»  
   
 ### <a name="text-formatting"></a>Форматирование текста  
  По умолчанию форматирование текста в Visual Studio 2013 управляется [шрифта среды](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Эта служба помогает обеспечить согласованное шрифта внешний вид компонентов IDE (интегрированная среда разработки), и его необходимо использовать для обеспечения ее согласованного функционирования для пользователей.  
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Использование:** редко. Уникальный фирменной символикой только пользовательский Интерфейс.<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса, такие как начальная страница<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается в виде:** 34 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> *В настоящее время не используется. Можно включить на начальной странице.*|  
+|**Использование:** Редко. Уникальный фирменной символикой только пользовательский Интерфейс.<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса, такие как начальная страница<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 34 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> *В настоящее время не используется. Можно включить на начальной странице.*|  
   
 #### <a name="310-environment-font--light"></a>Шрифта среды 310% + светлый  
   
 |||  
 |-|-|  
-|**Использование:**<br /><br /> -Большего размера заголовка в диалоговых окнах подписи<br />-Заголовок основного отчета<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса, такие как начальная страница<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается в виде:** 28 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 310% &#43; света заголовок](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**Использование:**<br /><br /> -Большего размера заголовка в диалоговых окнах подписи<br />-Заголовок основного отчета<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда используйте небольшого размера<br /><br /> **Не надо:**<br /><br /> -Используйте для пользовательского интерфейса, отличного от подписи пользовательского интерфейса, такие как начальная страница<br />-Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 28 pt Segoe UI Light<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 310% &#43; света заголовок](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Шрифта среды 200% + Полусветлый  
   
 |||  
 |-|-|  
-|**Использование:**<br /><br /> -Подзаголовков<br />-Заголовков в малых и средних диалоговых окон<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда использовать вес Полусветлый<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается в виде:** Semillight UI Segoe 18 пт<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 200% &#43; Полусветлый](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**Использование:**<br /><br /> -Подзаголовков<br />-Заголовков в малых и средних диалоговых окон<br /><br /> **Выполните действия.**<br /><br /> -Используйте прописную букву<br />-Всегда использовать вес Полусветлый<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 18 пт Segoe UI Semillight<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 200% &#43; Полусветлый](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>Шрифта среды 155%  
   
 |||  
 |-|-|  
-|**Использование:**<br /><br /> -Section заголовки в документе также пользовательского интерфейса<br />-Отчеты<br /><br /> **Необходимые действия:** используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается в виде:** 14 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 155% заголовка](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Использование:**<br /><br /> -Section заголовки в документе также пользовательского интерфейса<br />-Отчеты<br /><br /> **Выполните действия.** Используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 14 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 155% заголовка](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Шрифта среды 133%  
   
 |||  
 |-|-|  
-|**Использование:**<br /><br /> -Меньше подразделов в диалоговых окнах подписи<br />-Меньше подразделов в документе также пользовательского интерфейса<br /><br /> **Необходимые действия:** используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается в виде:** 12 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 133% заголовка](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Использование:**<br /><br /> -Меньше подразделов в диалоговых окнах подписи<br />-Меньше подразделов в документе также пользовательского интерфейса<br /><br /> **Выполните действия.** Используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 12 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 133% заголовка](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Шрифта среды 122%  
   
 |||  
 |-|-|  
-|**Использование:**<br /><br /> — Заголовки разделов в диалоговых окнах подписи<br />-Основные узлов в представлении дерева<br />— Навигация вертикальная Табуляция<br /><br /> **Необходимые действия:** используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается в виде:** 11 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 122% заголовка](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Использование:**<br /><br /> — Заголовки разделов в диалоговых окнах подписи<br />-Основные узлов в представлении дерева<br />— Навигация вертикальная Табуляция<br /><br /> **Выполните действия.** Используйте прописную букву<br /><br /> **Не надо:**<br /><br /> -Курсив полужирным, курсивом или полужирным шрифтом<br />-Используйте для основного текста<br />— Следует использовать в стандартных элементов управления Visual Studio<br />— Следует использовать в окнах инструментов|**Отображается следующим образом:** 11 пт Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды 122% заголовка](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Шрифт среды разработки + полужирным шрифтом  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Использование:** весь текст<br /><br /> **Необходимые действия:** используйте прописную букву<br /><br /> **Не:** курсив или полужирный курсив|**Отображается в виде:** 9 pt Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Использование:** Весь текст<br /><br /> **Выполните действия.** Используйте прописную букву<br /><br /> **Не надо:** Курсивом или полужирным курсивом.|**Отображается следующим образом:** 9 pt Segoe UI<br /><br /> **Наглядный пример:**<br /><br /> ![Пример шрифта среды](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Заполнение и интервалы  
  Заголовки требуют пространство вокруг него, чтобы предоставить им соответствующие выделения. Это пространство зависит от размера точки и что еще находится рядом с заголовком, например горизонтальной чертой или строки текста в шрифт среды разработки.  
@@ -467,4 +464,4 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 ## <a name="see-also"></a>См. также  
  [MSDN: Шрифты (Windows)](/windows/desktop/uxguide/vis-fonts)   
- [MSDN: Текста пользовательского интерфейса (Windows)](/windows/desktop/uxguide/text-ui)
+ [MSDN: Текст пользовательского интерфейса (Windows)](/windows/desktop/uxguide/text-ui)

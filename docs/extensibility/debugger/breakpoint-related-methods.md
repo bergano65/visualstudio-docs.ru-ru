@@ -1,9 +1,6 @@
 ---
 title: Методы, связанные с точки останова | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947287"
 ---
 # <a name="breakpoint-related-methods"></a>Методы, связанные с точки останова
 Отладчик (DE) должны поддерживать параметр точек останова. Отладка в Visual Studio поддерживает следующие типы точек останова:  
@@ -42,10 +39,10 @@ ms.locfileid: "39152149"
 |Метод|Описание:|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет, является ли заданное ожидающих точек останова можно привязать к расположение кода.|  
-|[Привязка](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Привязывает указанный ожидающие точки останова в одно или несколько расположений кода.|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Привязывает указанный ожидающие точки останова в одно или несколько расположений кода.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Получает состояние ожидающая точка останова.|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Получает запрос, точки останова, используемый для создания ожидающая точка останова.|  
-|[Включить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает состояние выполнения ожидающая точка останова.|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает состояние выполнения ожидающая точка останова.|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки останова, привязанный из ожидающая точка останова.|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки останова ошибки, возникающие в результате ожидающая точка останова.|  
 |[Удалить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет точку останова и все точки останова, привязанный из него.|  
@@ -54,12 +51,12 @@ ms.locfileid: "39152149"
   
  Ожидающих точек останова, которые привязаны к код расположение требуют реализации следующих [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) методы.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Получает ожидающая точка останова, содержащей точку останова.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Получает состояние связанная точка останова.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Получает разрешение точек останова, описывающий точку останова.|  
-|[Включить](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Включает или отключает точку останова.|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Включает или отключает точку останова.|  
 |[Удалить](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет связанная точка останова.|  
   
  Разрешение и запроса информации требуют реализации следующих [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) методы.  

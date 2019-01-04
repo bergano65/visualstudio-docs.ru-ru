@@ -3,7 +3,6 @@ title: 'Конструктор рабочих процессов - как: ис�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f0ae017eaf9843b4411ecf762b91d29ff9d95c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823971"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Как использовать конструктор импорта
+# <a name="how-to-use-the-imports-designer"></a>Как выполнить использовать конструктор импорта
 
 Конструктор импорта позволяет вводить пространства имен для типов, используемых в выражениях. Подобно тому как **импортирует** или **с помощью** ключевые слова в Visual Basic и C#, указание пространств имен в конструктор импорта позволяют просто укажите имя типа в выражении, а не полное имя Имя типа версии.
 

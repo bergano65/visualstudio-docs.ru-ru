@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление элементов управления диаграммой на листы'
-ms.custom: ''
+title: Как выполнить Добавление элементов управления диаграммой на листы
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Chart control [Office development in Visual Studio], adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 713657c7df5bfd3dd3f864c15ffc86dd1d531eac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967470"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Практическое: Добавление элементов управления диаграммой на листы
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Как выполнить Добавление элементов управления диаграммой на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в настройках уровня документа. Можно также добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления во время выполнения в надстройках VSTO.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -93,5 +90,3 @@ ms.locfileid: "49919927"
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

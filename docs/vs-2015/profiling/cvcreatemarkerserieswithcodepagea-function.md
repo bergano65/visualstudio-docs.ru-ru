@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c25877a3ab54f70207103a2c909163807b4c2e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f2a1a1380869ae26dbda30f47f6b3de08b288b7a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740144"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802385"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>Функция CvCreateMarkerSeriesWithCodePageA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

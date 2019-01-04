@@ -1,9 +1,6 @@
 ---
 title: Элементы управления в документах Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,24 +11,24 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], controls
 - controls [Office development in Visual Studio]
 - documents [Office development in Visual Studio], controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d33c89973124e2bae8e34aca3fc99096ac02ef6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930600"
 ---
 # <a name="controls-on-office-documents"></a>Элементы управления в документах Office
   Средства разработки Office в Visual Studio можно использовать для добавления элементов управления Windows Forms и *элементов управления ведущего приложения* в документы Word и книги Excel. Элементы управления ведущего приложения — это объекты, которые расширяют различные объекты пользовательского интерфейса в объектных моделях Word и Excel.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
- При разработке проектов надстроек VSTO для Excel или Word, можно программным образом добавлять эти элементы управления в любой открытый документ или книгу во время выполнения.  
+ При разработке проектов надстроек VSTO для Excel или Word, можно программно добавить эти элементы управления в любой открытый документ или книгу во время выполнения.  
   
  При разработке проектов для Excel или Word на уровне документа можно добавлять элементы управления в среду выполнения программным образом или использовать конструктор Visual Studio и добавлять их на этапе разработки.  
   
@@ -42,7 +39,7 @@ ms.locfileid: "34263141"
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
  Описывает проблемы, которые могут возникнуть при использовании в коде ведущих элементов и элементов управления ведущего приложения.  
   
- [Элементы управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
+ [Элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  Содержит сведения об использовании элементов управления Windows Forms в документах Word и Excel и описывает их отличие от элементов управления Windows Forms.  
   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)  
@@ -54,5 +51,3 @@ ms.locfileid: "34263141"
   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Описывает, как отображать данные в документах Word и Excel, привязывая данные к элементам управления ведущего приложения в документе.  
-  
-  

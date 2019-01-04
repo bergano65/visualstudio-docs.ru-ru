@@ -1,9 +1,6 @@
 ---
-title: Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, параметры-диалоговое окно
-ms.custom: ''
+title: Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ExcelOptions.KeyboardMappingScheme
@@ -19,28 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc71c699dfea11b8654791efdd52e4c0751a9762
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: db76d40db1038983cd756c5eb35549357afa53c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926480"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, параметры-диалоговое окно
-  Visual Studio и Microsoft Office Excel и обрабатывать сочетания клавиш. Того же сочетания клавиш можно было использовать для различных команд в Excel и в Visual Studio. Когда Excel открыт в проекте уровня документа в Visual Studio, только одно приложение получает сочетания клавиш. По умолчанию Visual Studio получает сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Excel **Динамическая схема клавиатуры**.  
+# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
+  Microsoft Office Excel и Visual Studio, как обрабатывать сочетания клавиш. Же сочетания клавиш могут соответствовать разным командам в Excel и в Visual Studio. Когда Excel открыт в проекте уровня документа в Visual Studio, только одно приложение за раз получает сочетания клавиш. По умолчанию Visual Studio получает нажатие сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Excel **Инамическая схема клавиатуры**.  
   
- Если используется сочетание клавиш, которое не назначен команде в приложении, которое обрабатывает сочетания клавиш, сочетания клавиш передается другие приложения.  
+ При использовании клавиш, которое не назначено команде, в приложении, которое в настоящий момент обрабатывает сочетания клавиш клавиша передается другие приложения.  
   
- Выбранного параметра будет работать для проектов Excel, пока не потребуется изменить его. Не влияет на выбор проектов Microsoft Office Word; необходимо выполнять изменений для Word с помощью Microsoft Office Word сочетания параметров.  
+ Параметр будет работать для проектов Excel, пока вы не измените его. Выбор не влияет на проекты Microsoft Office Word; необходимо выполнять изменений для Word с использованием Microsoft Office Word сочетания параметров.  
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Схема клавиатуры Visual Studio**  
- Visual Studio получает нажатие сочетания клавиш, даже если приложение Excel имеет фокус. Например, если нажать клавишу функции **F5** Excel имеет фокус, Visual Studio запускает отладку решения.  
+ Visual Studio получает нажатие сочетания клавиш, даже если фокус находится в Excel. Например, если вы нажмите функциональную клавишу **F5** Excel имеет фокус, Visual Studio запускает отладку решения.  
   
  **Динамическая схема клавиатуры**  
- Visual Studio получает сочетания клавиш, только в том случае, когда он получает фокус. Если приложение Excel имеет фокус, Excel получает сочетания клавиш. Например, если нажать клавишу функции **F5** Excel имеет фокус, откроется приложение Excel **перейти к** диалоговое окно. Если нажать клавишу **F5** Visual Studio имеет фокус, Visual Studio запускает отладку решения.  
+ Visual Studio получает сочетания клавиш только в том случае, когда на него установлен фокус. Если приложение Excel имеет фокус, Excel получает нажатие сочетания клавиш. Например, если вы нажмите функциональную клавишу **F5** Excel имеет фокус, приложение Excel открылось **перейти к** диалоговое окно. Если нажать клавишу **F5** Visual Studio имеет фокус, Visual Studio запускает отладку решения.  
   
 ## <a name="see-also"></a>См. также  
- [Microsoft Office Word клавиатуре параметры клавиатуры Microsoft Office, параметры-диалоговое окно](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
-  
-  
+ [Microsoft Office Word Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  

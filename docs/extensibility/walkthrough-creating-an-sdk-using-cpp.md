@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание пакета SDK с помощью C++ | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пакета SDK с помощью C++ | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917609"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>Пошаговое руководство: Создание пакета SDK, с помощью C++
+# <a name="walkthrough-create-an-sdk-using-c"></a>Пошаговое руководство. Создайте пакет SDK, с помощью C++
 В этом пошаговом руководстве показано, как создать собственной математические библиотеки C++ SDK, пакет SDK в Visual Studio Extension (VSIX) и затем использовать его для создания приложения. Пошаговое руководство содержит следующие действия.  
   
 -   [Чтобы создать машинный код и библиотеки среды выполнения Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -112,7 +109,7 @@ ms.locfileid: "49930651"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. В строке меню выберите **представление** > **Other Windows** > **окно "Свойства"** (клавиатуры: выберите **F4**ключ).  
+12. В строке меню выберите **представление** > **Other Windows** > **окно "Свойства"** (клавиатуры: Выберите **F4** ключ).  
   
 13. В **обозревателе решений**выберите **NativeMathWRT.winmd** файла. В **свойства** измените **действие при построении** свойства **содержимого**, а затем измените **включить в VSIX** свойства  **Значение true,**.  
   
@@ -177,5 +174,5 @@ ms.locfileid: "49930651"
 ## <a name="next-steps"></a>Следующие шаги  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Создание пакета SDK, с помощью C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Создание пакета средств разработки программного обеспечения](../extensibility/creating-a-software-development-kit.md)

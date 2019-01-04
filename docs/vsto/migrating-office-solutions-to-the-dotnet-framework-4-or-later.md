@@ -1,9 +1,6 @@
 ---
 title: Перенос решений Office на .NET Framework 4 или более поздней версии
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.TargetFrameworkWarning
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5059028b87818e34e44123dadde9851eee4200bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88f417ef8835e0614a2bf13b3717f19e3718feaf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845130"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Перенос решений Office на .NET Framework 4 или более поздней версии
   Если требуемая версия .NET framework проекта Office изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии из более ранней версии платформы .NET Framework, некоторые дополнительные действия могут быть необходимы, чтобы продолжить выполнение решения на компьютерах разработки и конечных пользователей. Дополнительные сведения см. в разделе [необходимых изменений для выполнения проектов Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).  
@@ -31,7 +28,7 @@ ms.locfileid: "49906550"
   
 - [Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
-- [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+- [Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 - [Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -41,8 +38,6 @@ ms.locfileid: "49906550"
   
 ## <a name="see-also"></a>См. также  
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
- [Практическое руководство. Определение целевой версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Практическое руководство. Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Дополнительные сведения об ошибках в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
-  
-  

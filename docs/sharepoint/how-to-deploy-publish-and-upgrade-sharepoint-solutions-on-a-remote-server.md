@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: развертывание, публикация и обновление решений SharePoint на удаленном сервере | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Развертывание, публикация и обновление решений SharePoint на удаленном сервере | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835676"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Практическое: развертывание, публикация и обновление решений SharePoint на удаленном сервере
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Как выполнить Развертывание, публикация и обновление решений SharePoint на удаленном сервере
   Помимо развертывания решений SharePoint в локальной системе, вы можете публиковать изолированные решения SharePoint на удаленные сайты или локальные сайты SharePoint. Удаленный копий процесс публикации *.wsp* файл на сервер SharePoint, устанавливает решение и затем позволяет активировать решение. Вы также можете обновить удаленную установку решения SharePoint после внесения в нее изменений.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Публикация изолированного решения SharePoint на удаленный сервер SharePoint  
@@ -78,8 +75,7 @@ ms.locfileid: "37119465"
      Старая версия решения отключена, новая версия решения обновляется с поддерживаемыми данными из старого решения, а новое решение активируется в SharePoint.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Практическое: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Практическое: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Практическое руководство. Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

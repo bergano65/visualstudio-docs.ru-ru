@@ -1,9 +1,6 @@
 ---
 title: Поддержка потоков в Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857897"
 ---
 # <a name="threading-support-in-office"></a>Поддержка потоков в Office
   В этой статье сведения о поддержке потоков в объектной модели Microsoft Office. Объектная модель Office не является потокобезопасным, но это можно работать с несколькими потоками в решении Office. Приложения Office являются серверами компонент объекта модели (COM). COM позволяет клиентам вызывать COM-серверов с произвольными потоками. Для COM-серверов, которые не являются потокобезопасными предоставляют механизм для сериализации одновременных вызовов, чтобы только один логический поток выполняется на сервере в любое время. Этот механизм известен как модели однопотоковое подразделение (STA). Так как вызовы сериализуются, вызывающие объекты могут быть заблокированы для периодов времени, пока сервер занят или обрабатывает другие вызовы в фоновом потоке.  
@@ -79,5 +76,3 @@ ms.locfileid: "49871114"
  [Работа с потоками (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [работа с потоками (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [Использование потоков и работа с потоками](/dotnet/standard/threading/using-threads-and-threading)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

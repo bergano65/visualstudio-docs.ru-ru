@@ -1,9 +1,6 @@
 ---
-title: Исходных VSPackage конструктора элементов управления | Документы Microsoft
-ms.custom: ''
+title: Элементы проектирования пакета VSPackage управления источника | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
@@ -13,26 +10,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4446bb0cab421e06910ac7f7c5893680c36edf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872243"
 ---
-# <a name="source-control-vspackage-design-elements"></a>Исходные элементы VSPackage конструктора элемента управления
-В этом разделе описаны структуры, VSPackage должен реализовать для глубокую интеграцию системы управления версиями. Он также содержит интерфейсы и службы, что система управления VSPackage могут реализовывать интерфейсы и службы системы управления версиями VSPackage можно использовать из других [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентов для поддержки его источником управления модель и функциональные возможности.  
+# <a name="source-control-vspackage-design-elements"></a>Элементы проектирования пакета VSPackage системы управления версиями
+В подразделах этого раздела представления структуры системы управления версиями, которые VSPackage должен реализовать для глубокой интеграции. В ней также перечислены интерфейсы и службы, что система управления VSPackage могут реализовывать интерфейсы и служб VSPackage системы управления версиями можно использовать из других [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты для поддержки источника управлять модели и работой.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Структура пакета VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
- Определяет структуру системы управления версиями пакета VSPackage.  
+ [Структура VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
+ Определяет структуру пакета VSPackage системы управления версиями.  
   
  [Связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
- Список исходных интерфейсов относящиеся к пакету управления и служб.  
+ Перечислены интерфейсы, связанные с пакетом управления для источника и служб.  
   
- [Службы, предоставляемые](../../extensibility/internals/services-provided-source-control-vspackage.md)  
- Описывает службу управления версиями, предоставляемые элементом управления источником VSPackage.  
+ [Предоставленные службы](../../extensibility/internals/services-provided-source-control-vspackage.md)  
+ Описание службы управления версиями, предоставляемых VSPackage системы управления версиями.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Описывает, как создать пакет VSPackage, который не только предоставляет функций системы управления версиями, но можно использовать для настройки системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] система управления версиями пользовательского интерфейса.
+ Описывает, как создать пакет VSPackage, который не только предоставляет функции системы управления версиями, но можно использовать для настройки системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] система управления версиями пользовательского интерфейса.

@@ -1,9 +1,6 @@
 ---
 title: Свойства Window Fields and Interfaces | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872232"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 Модель для выбора определить, какие данные будут отображаться в **свойства** окна основана на окно, которое имеет фокус в интегрированной среде разработки. Каждой окна, а объект внутри выбранного окна, может иметь свой объект контекста выбора, в контексте глобального выделения. Среде обновляет контекст глобального выделения значениями из рамки окна, когда это окно имеет фокус. При изменении фокуса, заканчивается контекст выделения.  

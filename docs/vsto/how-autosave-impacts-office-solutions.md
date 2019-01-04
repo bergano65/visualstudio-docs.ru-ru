@@ -1,26 +1,23 @@
 ---
 title: Как эта функция влияет на решения Office
-ms.custom: ''
 ms.date: 10/26/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - autosave
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60c83b8d83967d93f079033c4853904068ad29d5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e0529876ab7a055e455fbe53b379afc4db43e0fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932974"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Как эта функция влияет на решения Office
 

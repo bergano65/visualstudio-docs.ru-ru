@@ -1,17 +1,17 @@
 ---
 ms.topic: include
-ms.openlocfilehash: dfdc1003cb09e17c911a2a065c7301123861bb50
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 19f9c5ea57fb6d7f9cf1de779a8c6e938b3757f8
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49084323"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307808"
 ---
 ## <a name="get-support"></a>Техническая поддержка
 
 Иногда возникают проблемы. Если установить Visual Studio не удается, воспользуйтесь пошаговыми указаниями в статье [Устранение неполадок при установке и обновлении Visual Studio 2017](../troubleshooting-installation-issues.md).
 
-Также доступен [**чат**](https://visualstudio.microsoft.com/vs/support/#talktous) поддержки по проблемам с установкой (только на английском языке).
+Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
 Ниже приведены несколько дополнительных вариантов:
 

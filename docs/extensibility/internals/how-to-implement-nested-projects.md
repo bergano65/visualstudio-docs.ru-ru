@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: реализация вложенных проектов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Реализация вложенных проектов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945813"
 ---
-# <a name="how-to-implement-nested-projects"></a>Практическое: реализация вложенных проектов
+# <a name="how-to-implement-nested-projects"></a>Как выполнить Реализация вложенных проектов
 
 При создании проекта, вложенного типа, существует несколько дополнительных шагов, которые должны быть реализованы. На некоторых те же обязанности, решение содержит его проектов вложенные (дочерние) принимает родительского проекта. Родительский проект — это контейнер, аналогичную решения проектов. В частности есть несколько событий, которые должны вызываться в решении и родительские проекты для построения иерархии вложенных проектов. Эти события описаны в процесс для создания вложенных проектов.
 

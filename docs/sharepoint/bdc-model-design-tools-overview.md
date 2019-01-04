@@ -1,17 +1,12 @@
 ---
 title: Обзор средства конструирования модели BDC | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923339"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Обзор средств проектирования модели BDC
   Для разработки моделей бизнес-данным (BDC) с помощью конструктора BDC, **Подробности метода BDC** окно и **Обозреватель BDC**.  
@@ -76,20 +71,18 @@ ms.locfileid: "49914506"
 > [!NOTE]  
 >  Изменение исходного дескриптора типа, не влияет на копии этого дескриптора типа.  
   
- Дополнительные сведения см. в разделе [как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Дополнительные сведения см. в разделе [Как Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>См. также
- [Практическое: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Практическое: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Практическое: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое: Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Практическое: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Практическое руководство. Создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Практическое руководство. Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Создание ассоциации между сущностями](../sharepoint/creating-an-association-between-entities.md)   
  [Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

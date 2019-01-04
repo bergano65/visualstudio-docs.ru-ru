@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное заполнение таблиц Word свойствами документа'
-ms.custom: ''
+title: Как выполнить Программное заполнение таблиц Word свойствами документа
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b996a8d66ceb4947d35dbbba7323b70c21c065fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeb4d61211f6b65bf700adf1a52ee4b17ed36008
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893896"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Практическое: программное заполнение таблиц Word свойствами документа
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Как выполнить Программное заполнение таблиц Word свойствами документа
   Следующий пример создает таблицу Microsoft Office Word в верхней части документа и заполняет свойства ведущего документа.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -97,9 +94,7 @@ ms.locfileid: "49900401"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Практическое: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Практическое: программное добавление строк и столбцов в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Практическое руководство. Программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Практическое руководство. Программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Практическое руководство. Программное добавление строк и столбцов в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Контрольный список: Создание типов проектов | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861589"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: Создание новых типов проектов
 Необходимо выполнить несколько задач, чтобы создать новый тип проекта. Следующий контрольный список содержит указания для этих задач:  
   
 1.  Проектируйте функциональность для нового типа проекта. Дополнительные сведения см. в разделе [проектные решения проекта](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Определите, какие редакторы используются для кода и других элементов проекта. Вы можете использовать основные или стандартные редакторы, или можно создать и использовать проекту относящимся редакторам. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../../extensibility/creating-custom-editors-and-designers.md) и [как: открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Определите, какие редакторы используются для кода и других элементов проекта. Вы можете использовать основные или стандартные редакторы, или можно создать и использовать проекту относящимся редакторам. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../../extensibility/creating-custom-editors-and-designers.md) и [как: Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Определить уровень своего участия, будет иметь элементы проекта в **представление классов** и **обозреватель объектов**. Дополнительные сведения см. в разделе [поддерживает средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   

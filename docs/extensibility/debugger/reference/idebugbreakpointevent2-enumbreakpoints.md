@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Документы Microsoft
-ms.custom: ''
+title: IDebugBreakpointEvent2::EnumBreakpoints | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6015d9251d5e9cf26220d069a26a742cde89ad3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd7f82a50e8a0d4b17ec63204248ccb88544ba6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868845"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Создает перечислитель для всех точек останова, инициируемое в текущего расположения в коде.  
+Создает перечислитель для всех точек останова, триггерами и текущей позиции кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +38,13 @@ int EnumBreakpoints(
   
 #### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объекта, который перечисляет все точки останова, связанную с текущим расположением кода.  
+ [out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объект, который перечисляет все точки останова, связанную с текущим расположением кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Не все точки останова в определенном месте могут срабатывать в конкретный момент времени (например, условие точки останова не сработает до этого условия).  
+ Не все точки останова в определенном месте могут сработать в определенное время (например, точку останова с условием не будет срабатывать до выполнения этого условия).  
   
 ## <a name="see-also"></a>См. также  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

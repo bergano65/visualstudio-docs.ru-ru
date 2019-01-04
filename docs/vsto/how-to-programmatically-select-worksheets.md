@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программный Выбор листов Excel'
-ms.custom: ''
+title: Как выполнить Программный выбор листов Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924479"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Практическое: программный Выбор листов Excel
+# <a name="how-to-programmatically-select-worksheets"></a>Как выполнить Программный выбор листов Excel
   Метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> выбирает указанный объект, который перемещает выделенный пользователем фрагмент в новый объект. Если необходимо сфокусироваться на объекте без изменения выбранного пользователем фрагмента, используйте метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A>.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35675543"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программная печать листов Excel](../vsto/how-to-programmatically-print-worksheets.md)   
- [Практическое: программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Практическое: программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Практическое руководство. Программная печать листов Excel](../vsto/how-to-programmatically-print-worksheets.md)   
+ [Практическое руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Практическое руководство. Программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

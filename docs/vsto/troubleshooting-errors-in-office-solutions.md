@@ -1,9 +1,6 @@
 ---
 title: Устранение ошибок в решениях Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919028"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672955"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Ошибки при создании проекта книги Excel на основе существующей книги  
  При создании нового проекта книги Excel на основе существующей книги, могут возникнуть следующие ошибки.  
   
- В Excel: "Предупреждение о конфиденциальной информации: документ содержит макросы, элементы управления ActiveX, данные пакета расширения XML или веб-компоненты. Они могут включать личные сведения, которые нельзя удалить с помощью инспектора документов".  
+ В Excel: «Предупреждение о конфиденциальной информации: Этот документ содержит макросы, элементы управления ActiveX, данные пакета расширения XML или веб-компонентов. Они могут включать личные сведения, которые нельзя удалить с помощью инспектора документов".  
   
- В Visual Studio: "Не удалось правильно загрузить конструктор".  
+ В Visual Studio: «Не удалось загрузить конструктор правильно.»  
   
  Эти ошибки могут возникать при попытке создать проект, основанный на книге, из которой персональные данные были удалены с помощью инспектора документов. Чтобы избежать этой ошибки, выполните следующие действия перед созданием проекта.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Этот код вызывает следующие ошибки компиляции.  
   
-- Visual Basic: «класс «DocumentClass» не допускается ссылка при его сборка связана с использованием режима No-PIA.»  
+- Visual Basic: «Класс «DocumentClass» не допускается ссылка при его сборка связана с использованием режима No-PIA.»  
   
-- Visual C#: «тип взаимодействия, «Microsoft.Office.Interop.Word.DocumentClass» не может быть внедрен. Используйте подходящий интерфейс".  
+- Visual C#: «Тип взаимодействия, «Microsoft.Office.Interop.Word.DocumentClass» не может быть внедрен. Используйте подходящий интерфейс".  
   
   Чтобы устранить эту ошибку, измените код так, чтобы он ссылался на соответствующий интерфейс. Например, вместо того чтобы ссылаться на объект <xref:Microsoft.Office.Interop.Word.DocumentClass>, обращайтесь к экземпляру интерфейса <xref:Microsoft.Office.Interop.Word.Document>.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)   
  [Устранение неполадок с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)   
  [Устранение неполадок с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

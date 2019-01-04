@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062442"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740277"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Новые возможности Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ ms.locfileid: "53062442"
 -   **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
 
 ## <a name="debugging-and-diagnostics"></a>Отладка и диагностика
- Сведения о новых возможностях отладки см. в разделе [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Сведения о новых возможностях отладки см. в разделе [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Сведения о новинках в системе диагностики см. в разделе [новые возможности средств профилирования](./profiling/what-s-new-in-profiling-tools.md).
 
  Ниже перечислены новые и улучшенные инструменты, выполняющие различные виды диагностики и анализа кода:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Чтобы приступить к работе, см. в разделе [PerfTips: информация о производительности в краткие при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Описание начала работы см. в записи блога [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).
 
 ### <a name="error-list"></a>Список ошибок
  В списке ошибок теперь можно выполнять фильтрацию в любом столбце. Он также обеспечивает динамическое представление ошибок, предупреждений и анализа кода в рамках всего решения C# или Visual Basic прямо при вводе кода, даже когда при изменении кода поступают тысячи предупреждений. Новый список ошибок обратно совместим с существующими списками. Для получения дополнительной информации см. [Error List Window](./ide/reference/error-list-window.md).

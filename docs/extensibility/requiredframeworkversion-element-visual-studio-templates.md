@@ -1,10 +1,8 @@
 ---
 title: Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
@@ -14,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872032"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 
@@ -88,4 +86,4 @@ ms.locfileid: "39635927"
 
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Использовать конкретную версию платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Использовать конкретную версию платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

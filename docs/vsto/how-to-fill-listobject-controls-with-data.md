@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: с данными элемент управления ListObject заливки'
-ms.custom: ''
+title: Как выполнить Заполнение элементов управления ListObject с данными
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,24 +12,24 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 - data binding, ListObject controls
 - worksheets, populating with data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9e255d4099a90173b9dbc7ff6fd7b2225d0622d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925632"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Практическое: с данными элемент управления ListObject заливки
+# <a name="how-to-fill-listobject-controls-with-data"></a>Как выполнить Заполнение элементов управления ListObject с данными
   Вы можете использовать привязку данных как способ быстрого добавления данных в документ. После привязки данных к объекту-списку можно отключить этот объект-список, чтобы он отображал данные, но не был привязан к источнику данных.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [практические советы Создание списка в Excel, подключенного к списку SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Создание списка в Excel, подключенного к списку SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ### <a name="to-bind-data-to-a-listobject-control"></a>Привязка данных к элементу управления ListObject  
   
@@ -65,11 +62,9 @@ ms.locfileid: "35255708"
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Практическое: столбцов ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Практическое руководство. Сопоставления столбцов ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Практическое: заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Практическое: Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)  

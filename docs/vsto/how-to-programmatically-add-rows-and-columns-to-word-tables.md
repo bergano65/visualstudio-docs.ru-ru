@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное добавление строк и столбцов в таблицы Word'
-ms.custom: ''
+title: Как выполнить Программное добавление строк и столбцов в таблицы Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909090"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Практическое: программное добавление строк и столбцов в таблицы Word
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Как выполнить Программное добавление строк и столбцов в таблицы Word
   В таблице Microsoft Office Word ячейки организованы по строкам и столбцам. Вы можете использовать метод <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Rows> для добавления строк в таблицу и метод <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Columns> для добавления столбцов.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "49818683"
 > - Документ Word 2010  
 > - Шаблон Word 2010  
 > 
->   Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>   Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Добавление строки в таблицу  
   
@@ -62,7 +59,7 @@ ms.locfileid: "49818683"
 > [!IMPORTANT]  
 >  Этот код выполняется только в тех проектах, которые создаются с помощью шаблонов Word VSTO.  
 >   
->  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Добавление строки в таблицу  
   
@@ -79,8 +76,6 @@ ms.locfileid: "49818683"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Практическое: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Практическое: программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  
+ [Практическое руководство. Программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Практическое руководство. Программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Практическое руководство. Программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  

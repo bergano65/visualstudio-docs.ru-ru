@@ -1,9 +1,6 @@
 ---
 title: Пользовательские параметры | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101076eb863294fe84ffed26d308f67110b90a33
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c8c243490a88010031bad91d6b45fe5645d21e6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826365"
 ---
 # <a name="custom-parameters"></a>Пользовательские параметры
 Пользовательские параметры управляют работой мастера, после запуска мастера. Связанный с ним *.vsz* файл предоставляет целый ряд определяемых пользователем параметров, которые упаковываются по интегрированной среде разработки (IDE) и передан мастеру, как массив строк, при запуске данного мастера. Затем мастер анализирует массив строк и использует сведения для управления самой операции мастера. Таким образом, мастер можно настроить функциональные возможности в зависимости от содержимого *.vsz* файл.  

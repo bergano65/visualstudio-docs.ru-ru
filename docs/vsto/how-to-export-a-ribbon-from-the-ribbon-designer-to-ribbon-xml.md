@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: экспорт лент из конструктора лент в XML-ленты'
-ms.custom: ''
+title: Как выполнить Экспорт лент из конструктора лент в XML-ленты
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,19 +13,19 @@ helpviewer_keywords:
 - XML [Office development in Visual Studio], Ribbon
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1b9e988ce6d1ad722766f3994c39827cc4272a3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894065"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Практическое: экспорт лент из конструктора лент в XML-ленты
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Как выполнить Экспорт лент из конструктора лент в XML-ленты
   **Лента (визуальный конструктор)** элемент не поддерживает все типы настроек ленты. Чтобы расширенные способы настройки ленты можно экспорт ленты из конструктора XML-ленты и непосредственного редактирования XML.  
   
 > [!NOTE]  
@@ -73,5 +70,3 @@ ms.locfileid: "35255081"
  [XML-ленты](../vsto/ribbon-xml.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

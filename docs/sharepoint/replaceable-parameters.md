@@ -1,12 +1,8 @@
 ---
 title: Подстановочные параметры | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +14,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989169"
 ---
 # <a name="replaceable-parameters"></a>Подстановочные параметры
-  Подстановочные параметры или *маркеры*, можно использовать в файлах проекта для предоставления значений для элементов решения SharePoint, фактические значения не известен во время разработки. Они в функции аналогичны стандарте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] токенам шаблонов. Дополнительные сведения см. в разделе [параметров шаблона](/visualstudio/ide/template-parameters).  
+  Подстановочные параметры или *маркеры*, можно использовать в файлах проекта для предоставления значений для элементов решения SharePoint, фактические значения не известен во время разработки. Они в функции аналогичны стандарте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] токенам шаблонов. Дополнительные сведения см. в разделе [параметров шаблона](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Формат маркера
  Токены начинаются и заканчиваются символом доллара ($). В развертывании, все используемые токены заменяются фактическими значениями при упаковки проекта в пакет решения SharePoint (*.wsp* файла). Например, маркер **$SharePoint.Package.Name$** может разрешаться в строку «Тестовый пакет SharePoint».  
@@ -52,7 +48,7 @@ ms.locfileid: "49879302"
 ## <a name="tokens-list"></a>Список токенов
  В следующей таблице перечислены доступные токены.  
   
-|name|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Например, файла проекта, содержащего имя *NewProj.csproj*.|  
 |$SharePoint.Project.FileNameWithoutExtension$|Имя файла проекта, содержащего без расширения имени файла. Например, «NewProj».|  
@@ -111,4 +107,3 @@ ms.locfileid: "49879302"
   
 ## <a name="see-also"></a>См. также
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

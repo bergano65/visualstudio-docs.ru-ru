@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Создание веб-части SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание веб-части SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6437620b4215726ba48ea3234e37c76e77d21ebe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858427"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Практическое: Создание веб-части SharePoint
-  Можно создать и настроить веб-часть, добавив **веб-часть** элемент в любой проект SharePoint, а затем изменив файл кода для веб-части, или с помощью конструктора. Дополнительные сведения см. в разделе [как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+# <a name="how-to-create-a-sharepoint-web-part"></a>Как выполнить Создание веб-части SharePoint
+  Можно создать и настроить веб-часть, добавив **веб-часть** элемент в любой проект SharePoint, а затем изменив файл кода для веб-части, или с помощью конструктора. Дополнительные сведения см. в разделе [Как Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>Для создания веб-части SharePoint
   
@@ -54,8 +49,6 @@ ms.locfileid: "37119839"
   
 ## <a name="see-also"></a>См. также
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Практическое: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  

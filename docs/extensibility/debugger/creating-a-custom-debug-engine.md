@@ -1,9 +1,6 @@
 ---
 title: Создание пользовательского модуля отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852707"
 ---
 # <a name="create-a-custom-debug-engine"></a>Создание пользовательского модуля отладки
 Отладчик (DE) — это компонент, позволяет выполнить отладку конкретного архитектур во время выполнения. Обычно имеется только одна реализация DE каждой среды выполнения.  
@@ -61,7 +58,7 @@ ms.locfileid: "39203684"
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)  
  Описывает порядок вызова событий, происходящих во время сеанса отладки.  
   
- [Практическое руководство: Отладка пользовательского модуля отладки](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Практическое руководство. Отладка пользовательского модуля отладки](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  В этой статье описывается Отладка пользовательского DE.  
   
 ## <a name="see-also"></a>См. также  

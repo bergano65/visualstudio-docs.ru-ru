@@ -1,9 +1,6 @@
 ---
 title: Создание Windows Forms элемента управления панели элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872925"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание элемента управления панели элементов Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (VS SDK) позволяет создать элемент управления, который автоматически добавляется **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления с простой счетчик, который можно передавать другим пользователям.  

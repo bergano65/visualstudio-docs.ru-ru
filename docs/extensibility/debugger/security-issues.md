@@ -1,9 +1,6 @@
 ---
 title: Проблемы безопасности | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940764"
 ---
 # <a name="security-issues"></a>Проблемы безопасности
 Чтобы отладить программу, с помощью Visual Studio, только разрешения, необходимые являются те же, что разработчику требуется для запуска программы. Это включает в себя удаленной отладки для большинства ситуаций. В некоторых ситуациях с использованием других служб, таких как службы IIS, могут требовать более высокого уровня разрешений.  

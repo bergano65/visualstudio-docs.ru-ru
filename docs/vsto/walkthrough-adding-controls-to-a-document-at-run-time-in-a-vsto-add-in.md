@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Добавление элементов управления в документ во время выполнения в надстройке VSTO'
-ms.custom: ''
+title: Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954900"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Пошаговое руководство: Добавление элементов управления в документ во время выполнения в надстройке VSTO
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Можно добавить элементы управления в любой открытый документ Microsoft Office Word с помощью надстройки VSTO. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Word.Controls.Button> или <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ.  
 
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Область применения:** Сведения этого раздела применяются к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
 
  В данном пошаговом руководстве рассмотрены следующие задачи:  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951591"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Создание нового проекта надстройки VSTO для Word  
 
-1.  Создайте проект надстройки VSTO для Word с именем **WordDynamicControls**. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект надстройки VSTO для Word с именем **WordDynamicControls**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Добавьте ссылку на сборку **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.  
 
@@ -193,7 +190,6 @@ ms.locfileid: "49951591"
  [Решения Word](../vsto/word-solutions.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [Практическое: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Практическое: Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

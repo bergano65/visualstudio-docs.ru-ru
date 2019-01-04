@@ -1,9 +1,6 @@
 ---
 title: Ведущие элементы и элементы управления
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -34,17 +31,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e759b493c183c9a42da0130abc87d40c40f9b471
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987457"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Ведущие элементы и элементы управления
   Ведущие элементы и элементы управления ведущего приложения — это типы элементов, помогающие предоставить модель программирования для решений Office, созданных с помощью средств разработки Office в Visual Studio. Ведущие элементы и элементы управления осуществляют взаимодействие с объектными моделями Microsoft Office Word и Microsoft Office Excel, основанными на модели COM, больше похожее на взаимодействие с управляемыми объектами, такими как элементы управления Windows Forms.  
@@ -131,21 +128,21 @@ ms.locfileid: "49937503"
   
   Дополнительные сведения о добавлении элементов управления ведущего приложения в документы см. в следующих разделах.  
   
-- [Практическое: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Практическое руководство. Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [Практическое: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [Практическое: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Практическое руководство. Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [Практическое: Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Практическое руководство. Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
-- [Практическое: Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [Практическое: Добавление содержимого элементов управления в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Практическое руководство. Добавление содержимого элементов управления в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
-- [Практическое: Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Практическое руководство. Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
-- [Практическое: Добавление элементов управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Практическое руководство. Добавление элементов управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Элементы управления ведущего приложения имя  
  При перетаскивании элемента управления ведущего приложения из **панели элементов** в документ этому элементу управления автоматически присваивается имя в виде типа элемента управления с последовательным номером. Например, закладки именуются как **bookmark1**, **bookmark2**и т. д. При добавлении элемента управления с помощью встроенной функциональности Word или Excel вы можете назначить ему определенное имя во время его создания. Вы также можете переименовывать свои элементы управления, изменяя значение свойства **Имя** в окне **Свойства** .  
@@ -166,7 +163,7 @@ ms.locfileid: "49937503"
 >  Не удаляйте программным образом элементы управления во время работы обработчика событий `Shutdown` документа или листа. Если возникает событие `Shutdown` , элементы пользовательского интерфейса становятся недоступными. Если вы хотите удалить элементы управления до закрытия приложения, добавьте свой код в другой обработчик событий, например в `BeforeClose` или `BeforeSave`.  
   
 ### <a name="program-against-host-control-events"></a>Программа реакции на события элемента управления узла  
- Один из способов, которым элементы управления ведущего приложения расширяют объекты Office, является добавление событий. Например, объект <xref:Microsoft.Office.Interop.Excel.Range> в Excel и объект <xref:Microsoft.Office.Interop.Word.Bookmark> в Word не имеют событий, но [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] расширяет эти объекты, добавляя программируемые события. Вы можете получать доступ к этим событиям и программировать реакцию на них так же, как это делается с событиями элементов управления в Windows Forms: через раскрывающийся список событий в Visual Basic и страницу свойств событий в C#. Дополнительные сведения см. в разделе [Пошаговое руководство: программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Один из способов, которым элементы управления ведущего приложения расширяют объекты Office, является добавление событий. Например, объект <xref:Microsoft.Office.Interop.Excel.Range> в Excel и объект <xref:Microsoft.Office.Interop.Word.Bookmark> в Word не имеют событий, но [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] расширяет эти объекты, добавляя программируемые события. Вы можете получать доступ к этим событиям и программировать реакцию на них так же, как это делается с событиями элементов управления в Windows Forms: через раскрывающийся список событий в Visual Basic и страницу свойств событий в C#. Дополнительные сведения см. в разделе [Пошаговое руководство: Программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 > [!NOTE]  
 >  Не устанавливайте для свойства <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> объекта <xref:Microsoft.Office.Interop.Excel.Application> в Excel значение **false**. Установка для этого свойства значения **false** предотвращает инициирование каких-либо событий в Excel, включая события элементов управления ведущего приложения.  
@@ -179,4 +176,3 @@ ms.locfileid: "49937503"
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
