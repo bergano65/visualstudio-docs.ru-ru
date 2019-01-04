@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: построение решений SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Построение решений SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22fda2415cfb9847c006a0bb4a0d0de576beb073
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928911"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Практическое: построение решений SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Как выполнить Построение решений SharePoint
 
-Сборки SharePoint решение ничем не отличается от создания других приложений в Visual Studio. Дополнительные сведения о построении приложений см. в разделе [компиляция и сборка в Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Сведения по вопросам, относящимся к решениям SharePoint, см. в разделе [как: развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Сборки SharePoint решение ничем не отличается от создания других приложений в Visual Studio. Дополнительные сведения о построении приложений см. в разделе [компиляция и сборка в Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Сведения по вопросам, относящимся к решениям SharePoint, см. в разделе [как: Развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
 ## <a name="to-build-sharepoint-solutions"></a>Для построения решений SharePoint
 
@@ -38,4 +35,4 @@ ms.locfileid: "36756079"
 
 ## <a name="see-also"></a>См. также
 
-- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1810: инициализируйте статические поля ссылочного типа встроенными средствами'
+title: CA1810. Инициализируйте статические поля ссылочных типов при объявлении
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6fdfebe506fb2edb1814e18d3d090025c665fa
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8a7726ce96eed20e1ce7bb96112703777cb8f582
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944604"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: инициализируйте статические поля ссылочного типа встроенными средствами
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810. Инициализируйте статические поля ссылочных типов при объявлении
 
 |||
 |-|-|
@@ -78,4 +77,4 @@ extends [mscorlib]System.Object
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA2207: инициализируйте статические поля типа значений встроенными средствами](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+- [CA2207: Инициализируйте статические поля типа значений встроенными средствами](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

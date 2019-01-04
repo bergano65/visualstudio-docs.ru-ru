@@ -1,8 +1,6 @@
 ---
 title: Связывание области формы с классом сообщений Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923352"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook
   Вы можете указать, какие элементы Microsoft Office Outlook отображать область формы путем связывания области формы с классом сообщений каждого элемента. Например, если вы хотите добавить в конец почтового элемента области формы, можно связать области формы с `IPM.Note` класс message.  
@@ -109,9 +107,7 @@ ms.locfileid: "53248037"
 ## <a name="see-also"></a>См. также  
  [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
- [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Рекомендации для создания областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Имя формы и классов сообщений Обзор](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
  [О совместной работе форм Outlook и элементов](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Сложная привязка данных в проекте уровня документа'
-ms.custom: ''
+title: Пошаговое руководство. Сложная привязка данных в проекте уровня документа
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964063"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство: Сложная привязка данных в проекте уровня документа
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы сложная привязка данных в проекте уровня документа. Можно привязать несколько ячеек на листе Microsoft Office Excel к полям в базе данных "Борей" SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -58,7 +55,7 @@ ms.locfileid: "49841888"
   
 1.  Создайте проект книги Excel с именем **сложная привязка данных**. В мастере выберите **создания документа**.  
   
-     Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **сложная привязка данных** проект **обозревателе решений**.  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841888"
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы привязки таблицы в базе данных в объект списка. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [как: кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Кэширование данных использования в автономном режиме. Дополнительные сведения см. в разделе [Как Кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Развертывание решения. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
--   Создайте отношение «основной/подробности» между полем и таблицей. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание основной/подробности связи, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Создайте отношение «основной/подробности» между полем и таблицей. Дополнительные сведения см. в разделе [Пошаговое руководство: Создайте отношение основной/подробности, с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
  [Пошаговое руководство: Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

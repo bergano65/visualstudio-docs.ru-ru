@@ -1,9 +1,6 @@
 ---
-title: Строки, которые используются в качестве ключа для поиска подключаемый модуль системы управления версиями | Документы Microsoft
-ms.custom: ''
+title: Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a42eebe67ce1f611cf6e48883bc09139f241e658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835754"
 ---
-# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, которые используются в качестве ключа для поиска подключаемый модуль системы управления версиями
-Следующие строки являются ключевыми для доступа к реестру для поиска сведений о системы управления версиями подключаемого модуля.  
+# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями
+Следующие строки ключи для доступа к реестру для поиска сведений о системы управления версиями подключаемого модуля.  
   
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, и `STR_SCCPROVIDERNAME` разделы реестра и значения, используемые для регистрации библиотеки DLL в качестве подключаемого модуля системы управления версиями для Visual Studio.  
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, и `STR_SCCPROVIDERNAME` разделов реестра или значения, используемые для регистрации библиотек DLL в качестве подключаемого модуля системы управления версиями для Visual Studio.  
   
  `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, и `SCC_STATUS_FILE` используются для описания формата MSSCCPRJ. Файл SCC.  
   
@@ -35,7 +32,7 @@ ms.locfileid: "31137678"
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
 |`STR_SCCPROVIDERPATH`|Данный параметр|  
 |`STR_SCCPROVIDERNAME`|SCCServerName|  
-|`STR_SCC_INI_SECTION`|Управление исходным кодом|  
+|`STR_SCC_INI_SECTION`|Системы управления исходным кодом|  
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
@@ -50,6 +47,6 @@ ms.locfileid: "31137678"
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
 ## <a name="see-also"></a>См. также  
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
- [Как: установить подключаемый модуль системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
+ [Практическое руководство. Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Файл MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

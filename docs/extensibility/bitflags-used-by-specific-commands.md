@@ -1,9 +1,6 @@
 ---
 title: Битовые флаги, используемые конкретными командами | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875424"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Битовые флаги, используемые конкретными командами
 Поведение некоторых функций в API подключаемых модулей управления источника можно изменить, установив один или несколько битов в одно значение. Эти значения называются битовые флаги. Различные битовые флаги, используемые API подключаемых модулей управления источника здесь можно увидеть, сгруппированные по функция, которая использует их.  
@@ -37,7 +34,7 @@ ms.locfileid: "39152118"
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Ожидается, что подключаемый модуль системы управления версиями автоматически определять, является ли файл текстовых или двоичных.|  
 |`SCC_FILETYPE_TEXT`|0x01|Тип файла — текст.|  
-|`SCC_FILETYPE_BINARY`|0x04|Имеет двоичный тип файла. **Примечание:** `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` флаги являются взаимоисключающими.   Задайте один или оба.|  
+|`SCC_FILETYPE_BINARY`|0x04|Имеет двоичный тип файла. **Примечание:** `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` флаги являются взаимоисключающими. Задайте один или оба.|  
 |`SCC_ADD_STORELATEST`|0x02|Store только последняя версия (не разности).|  
   
 ## <a name="diff-flags"></a>Флаги Diff  
@@ -46,7 +43,7 @@ ms.locfileid: "39152118"
 |Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Игнорируйте различия в регистре.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Не учитывать различия пустого пространства. **Примечание:** `SCC_DIFF_IGNORECASE` и `SCC_DIFF_IGNORESPACE` флаги имеют необязательно битовые флаги.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Не учитывать различия пустого пространства. **Примечание.**  `SCC_DIFF_IGNORECASE` И `SCC_DIFF_IGNORESPACE` флаги имеют необязательно битовые флаги.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Длина Очереди, сравнивая все содержимое файла.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Длина Очереди с контрольной суммы.|  
 |`SCC_DIFF_QD_TIME`|0x0040|Длина Очереди, метки даты и времени файла.|  
@@ -79,15 +76,15 @@ ms.locfileid: "39152118"
 ## <a name="get-flags"></a>Получить флаги  
  Эти флаги используются [SccGet](../extensibility/sccget-function.md) и [SccCheckout](../extensibility/scccheckout-function.md).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|Интегрированная среда разработки передает каталоги, файлы не: получить все файлы в этих каталогах.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|Передает каталоги интегрированной среды разработки: получение этих каталогов и всех подкаталогах.|  
+|`SCC_GET_ALL`|0x00000001L|Каталоги, файлы не передает интегрированной среды разработки: Получите все файлы в этих каталогах.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|Интегрированная среда разработки передает каталоги: Получите эти каталоги и всех подкаталогах.|  
   
 ## <a name="noption-values"></a>значения nOption  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `nOption` параметра.  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Задать состояние очереди событий.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Укажите данные пользователя для `SCC_OPT_NAMECHANGEPFN`.|  

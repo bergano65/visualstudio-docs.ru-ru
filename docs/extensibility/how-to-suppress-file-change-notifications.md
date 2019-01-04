@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: отключить уведомления об изменении файла | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Подавлять уведомления об изменении файла | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874288"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Практическое: отключить уведомления об изменении файла
+# <a name="how-to-suppress-file-change-notifications"></a>Как выполнить Подавлять уведомления об изменении файла
 При изменении физического файла, представляющий текстовый буфер, откроется диалоговое окно с сообщением **вы хотите сохранить изменения следующих элементов?** Это называется уведомления об изменении файла. Если много изменений будут в файл, тем не менее, это диалоговое окно, отображающее снова и снова может быстро стать раздражает.  
   
  Программным способом, можно отключить это диалоговое окно, используя следующую процедуру. Можно подавить диалоговое окно, можно перезагрузить файл немедленно без необходимости запрашивать пользователя, чтобы сохранить изменения, каждый раз.  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

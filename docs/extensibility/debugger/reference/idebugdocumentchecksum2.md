@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentChecksum2 | Документы Microsoft
-ms.custom: ''
+title: IDebugDocumentChecksum2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 068447399a8cfd43cb5fe07ea82e7cf4400f460c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921683"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольная сумма между компонентами.  
+Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольную сумму между компонентами.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,7 +27,7 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс может быть реализован любой компонент, предоставляющий [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейса. Тем не менее часто запрашивается реализуется отладчики, чтобы контрольная сумма, внедренных в файл символов (*.pdb) могут передаваться обратно в Интегрированной среде разработки и используется при поиске источника.  
+ Этот интерфейс может быть реализован любой компонент, предоставляющий [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс. Тем не менее она главным образом реализуется отладчиков, чтобы контрольная сумма, внедренных в файл символов (*.pdb) могут передаваться обратно в интегрированной среде разработки и используется при поиске источника.  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugDocumentChecksum2`.  

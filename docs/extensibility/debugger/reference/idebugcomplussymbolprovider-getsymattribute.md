@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9bafa3aa97146abd63cd6f98516632d079bfd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26b9ccab159e95d1248de7efa620a6fccecc7164
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921397"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Извлекает отладочные символы с атрибутом заданный родительский объект для указанного модуля.  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887871"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 В Visual Studio Visualization and Modeling SDK можно задать фоновое изображение для сгенерированного конструктора с помощью пользовательского кода.
@@ -45,7 +44,7 @@ ms.locfileid: "47858878"
 
 11. Если файла Resources.Designer.cs нет, выберите файл Resources.resx в **обозревателе решений**.
 
-12. В **свойства** окне `Custom Tool` свойства `ResXFileCodeGenerator`.
+12. В окне **Свойства** присвойте свойству `Custom Tool` значение `ResXFileCodeGenerator`.
 
 13. В **обозревателе решений**щелкните правой кнопкой мыши проект Dsl, выберите **добавить**и нажмите кнопку **новую папку**.
 

@@ -1,9 +1,6 @@
 ---
 title: Макет для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898756"
 ---
 # <a name="layout-for-visual-studio"></a>Макет для Visual Studio
 Большинство диалоговых окон Visual Studio [макет диалогового окна программы](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), которые представляют собой unthemed диалоговые окна этого стандарта выполните [принципы макет диалогового окна Windows Desktop](/windows/desktop/uxguide/win-dialog-box). При перемещении Visual Studio для обновления его пользовательского интерфейса, более наглядными диалоговые окна есть новый дизайн, который устанавливает их возможности, как определение продукта. Эти [тематический макет диалогового окна](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) имеют вид темы.  
@@ -38,11 +35,11 @@ ms.locfileid: "49816702"
   
  ![Интервалы между диалоговыми окнами для меток над элементами управления](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **Рис 08.01-ответ Инструкции интервалы для диалоговых окон программы с помощью меток над элементами управления**  
+ **Рис 08.01-a: Инструкции интервалы для диалоговых окон программы с помощью меток над элементами управления**  
   
  ![Интервалы между диалоговыми окнами для меток слева от элементов управления](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **Рис 08.01-b: Инструкции интервалы для диалоговых окон программы с метками слева от элементов управления**  
+ **Рис 08.01-b. Инструкции интервалы для диалоговых окон программы с метками слева от элементов управления**  
   
 ### <a name="layout-details"></a>Подробные сведения о макетах  
   
@@ -85,14 +82,14 @@ ms.locfileid: "49816702"
   
  ![Рекомендуемое расстояние между элементами управления](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **Рис 08.01-d: Рекомендации для расстояния между элементами управления**  
+ **Рис 08.01 — d: Рекомендации для расстояния между элементами управления**  
   
 #### <a name="control-indentation"></a>Отступ элемента управления  
  Если элементы управления являются вложенными, выравниваться внутренние элементы управления по горизонтали относительно левого края элемента управления выше, обычно метки.  
   
  ![Вложенные исправить выравнивание элемента управления](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **Рис 08.01 — e: Выравнивание элемента управления Nested**  
+ **Рис 08.01 — e: Выравнивание вложенного элемента управления**  
   
 #### <a name="control-width"></a>Ширина элемента управления  
  Ширина текстового поля или другие аналогичные элементы управления не должен превышать среднее входных данных для поля. Среднее английского слова составляет 5 символов. Например, текстовое поле, которое требуется длинным именем пути должно быть условии, что позволяет горизонтальном расположении, хотя раскрывающийся список, для имен платформ, следует только, длина которых позволяет самая длинная запись.  
@@ -114,7 +111,7 @@ ms.locfileid: "49816702"
   
   ![Кнопки по горизонтали OK и Отмена](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **Рис 08.01-f: Вертикальной внутренней части кнопки с горизонтальной ОК, Отмена**  
+  **Рис 08.01-f: Вертикальная внутренних кнопки с горизонтальной ОК, Отмена**  
   
   ![Кнопки на вертикальной OK и Отмена](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
@@ -143,19 +140,19 @@ ms.locfileid: "49816702"
 ### <a name="themed-dialog-layout-examples"></a>Примеры макета тематические диалоговое окно  
  ![Тематический макет диалогового окна](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **Рис 08.01-h: Диалоговое окно тематические**  
+ **Рис 08.01-h: Тематические диалоговое окно**  
   
  ![Тематические размеры диалогового окна](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   
- **Рис 08.01-i: Диалоговое окно тематические - измерений**  
+ **Рис 08.01-i: Тематические диалоговое окно - измерений**  
   
  ![Тематические шрифты диалогового окна](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
- **Рис 08.01-j: Диалоговое окно тематические - шрифты**  
+ **Рис 08.01-j: Тематические диалоговое окно - шрифты**  
   
  ![Тематические цвета диалогового окна](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **Рис 08.01-л Диалоговое окно тематические - цвета**  
+ **Рис 08.01-л: Тематические диалоговое окно - цвета**  
   
 ## <a name="see-also"></a>См. также  
  [Шаблоны приложений для Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

@@ -1,9 +1,6 @@
 ---
 title: Функция SccPopulateList | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887780"
 ---
 # <a name="sccpopulatelist-function"></a>Функция SccPopulateList
 Эта функция обновляет список файлов для команды управления определенного источника и предоставляет состояние системы управления версиями на все заданные файлы.  
@@ -68,7 +65,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Выполнено.|  
 |SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|  

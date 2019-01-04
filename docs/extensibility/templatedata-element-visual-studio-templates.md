@@ -1,6 +1,5 @@
 ---
 title: Элемент TemplateData (шаблоны Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b5ae3111691658f9748ba8677ea67ca6e216714
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878657"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .  
@@ -47,7 +46,7 @@ ms.locfileid: "53561844"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-| Элемент | Описание: |
+| Элемент | Описание |
 | - | - |
 | [Name](../extensibility/name-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Указывает имя шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно. |
 | [Описание](../extensibility/description-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Указывает описание шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно. |
@@ -74,7 +73,7 @@ ms.locfileid: "53561844"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблон элемента или комплект для начала работы.|  
   

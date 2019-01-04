@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Импорт главной страницы или темы | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Импорт главной страницы или темы | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952926"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Практическое: Импорт главной страницы или темы
-  Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но вы можете создать их в SharePoint Designer и затем импортировать их в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095) на веб-сайте Майкрософт.  
+# <a name="how-to-import-a-master-page-or-theme"></a>Как выполнить Импорт главной страницы или темы
+  Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но вы можете создать их в SharePoint Designer и затем импортировать их в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [стандартный блок: Страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095) на веб-сайте Майкрософт.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Импорт главной страницы или темы  
   
@@ -97,4 +94,3 @@ ms.locfileid: "37119904"
  [Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Создание страниц для SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
  [Использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

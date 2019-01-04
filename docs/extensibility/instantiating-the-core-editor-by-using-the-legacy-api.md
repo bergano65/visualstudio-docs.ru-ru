@@ -1,9 +1,6 @@
 ---
 title: Создание экземпляра базового редактора с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838168"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Создать экземпляр базового редактора с помощью предыдущих версий API
 Редактор несет ответственность за изменения функции, такие как вставки, удаления, копирования и вставки текста. Оно объединяет в себе эти функции с помощью функций, предлагаемых языковой службы, такие как выделение цветом текста, отступы и завершение операторов IntelliSense.  
@@ -65,7 +62,7 @@ ms.locfileid: "49941572"
   
  Если <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод возвращает ту же команду GUID как текстовый редактор, экземпляр базового редактора автоматически получает значение по умолчанию сочетания клавиш.  
   
- Общие сведения см. в разделе [Пошаговое руководство: создание базовая редактора и регистрации файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Общие сведения см. в разделе [Пошаговое руководство: Создание основной редактора и регистрации файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   

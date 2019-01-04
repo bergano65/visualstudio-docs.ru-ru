@@ -1,9 +1,6 @@
 ---
-title: 'Как: проверка данных при добавлении новой строки в элемент управления ListObject'
-ms.custom: ''
+title: Как выполнить Проверка данных при добавлении новой строки в элемент управления ListObject
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,23 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55dc8852952482914bc57a41579163c90672d1db
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f6fd03238f9b477f7530353b8b10afb71a41edd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989845"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Как: проверка данных при добавлении новой строки в элемент управления ListObject
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Как выполнить Проверка данных при добавлении новой строки в элемент управления ListObject
   Пользователи могут добавлять новые строки в элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным. Вы можете проверять данные пользователя перед фиксацией изменений в источнике данных.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="data-validation"></a>Проверка данных  
- Каждый раз, когда строка добавляется в <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, возникает событие <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Это событие можно обработать для выполнения проверки данных. Например если приложение требует, что только сотрудники в возрасте от 18 до 65 могут добавляться к источнику данных, проверьте, попадает ли возраст в пределах диапазона перед добавлением строки.  
+ Каждый раз, когда строка добавляется в <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, возникает событие <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Это событие можно обработать для выполнения проверки данных. Например если приложение требует, что только сотрудников в возрасте от 18 до 65 могут добавляться к источнику данных, убедитесь, что возраст попадает в пределах диапазона, перед добавлением строки.  
   
 > [!NOTE]  
->  Всегда следует проверять входные данные пользователя на сервере, как и на клиенте. Дополнительные сведения см. в разделе [защищенные клиентские приложения](/dotnet/framework/data/adonet/secure-client-applications).  
+>  Всегда следует проверять входные данные пользователя на сервере, как и на клиенте. Дополнительные сведения см. в разделе [безопасные клиентские приложения](/dotnet/framework/data/adonet/secure-client-applications).  
   
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Проверка данных при добавлении новой строки в элемент управления ListObject с привязкой к данным  
   
@@ -61,6 +58,4 @@ ms.locfileid: "34268364"
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Как: столбцов элемента управления ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)  
-  
-  
+ [Практическое руководство. Сопоставления столбцов ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)  

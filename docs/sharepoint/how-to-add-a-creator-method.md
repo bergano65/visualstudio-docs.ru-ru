@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление метода Creator | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление метода Creator | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925424"
 ---
-# <a name="how-to-add-a-creator-method"></a>Практическое: Добавление метода Creator
+# <a name="how-to-add-a-creator-method"></a>Как выполнить Добавление метода Creator
   Метод создания добавляет новые данные в источник данных сущности. Служба бизнес-данным (BDC) вызывает этот метод, при выборе пользователем **новый элемент** кнопку **ленты** списка, который основан на модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Добавление метода Creator  
@@ -70,12 +65,10 @@ ms.locfileid: "49897346"
   
 ## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое: Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  

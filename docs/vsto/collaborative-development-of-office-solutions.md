@@ -1,9 +1,6 @@
 ---
 title: Совместная разработка решений Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876501"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Совместная разработка решений Office
   Точно так же, они совместно работать над другими проектами Visual Studio в проекте Office могут работать несколько разработчиков. Visual Studio правильно определяет местоположение установки Microsoft Office на каждом компьютере, даже если Office устанавливается в разных расположениях. Однако существуют важные моменты, которые следует учитывать.  
@@ -49,5 +46,3 @@ ms.locfileid: "53441552"
  [Безопасные решения Office](../vsto/securing-office-solutions.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Создание решений Office](../vsto/building-office-solutions.md)  
-  
-  

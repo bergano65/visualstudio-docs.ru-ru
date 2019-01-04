@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное извлечение непрочитанных сообщений из папки "Входящие"'
-ms.custom: ''
+title: Как выполнить Программное извлечение непрочитанных сообщений из папки "Входящие"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 89354170aeb312442c9db1ae993954fb2e4f0bde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935480"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Практическое: программное извлечение непрочитанных сообщений из папки "Входящие"
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Как выполнить Программное извлечение непрочитанных сообщений из папки "Входящие"
   В этом примере извлекаются непрочитанные электронные письма из Outlook **папки "Входящие"** и отображает число элементов.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35675141"
 ## <a name="see-also"></a>См. также  
  [Работа с элементами почты](../vsto/working-with-mail-items.md)   
  [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Практическое: программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Практическое: Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Практическое: программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [Практическое руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Практическое руководство. Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  

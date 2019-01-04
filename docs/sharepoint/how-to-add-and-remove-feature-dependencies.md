@@ -1,16 +1,11 @@
 ---
-title: 'Практическое: Добавление и удаление зависимостей компонентов | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление зависимостей компонентов | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924245"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Практическое: Добавление и удаление зависимостей компонентов
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Как выполнить Добавление и удаление зависимостей компонентов
   Компонент SharePoint может зависеть от других функций, функциональные возможности и данные. В этих случаях компоненты можно пометить как зависимости для компонента. Таким образом, SharePoint server гарантирует, что зависимые компоненты активируются, прежде чем он активируется.  
   
 ## <a name="add-dependencies"></a>Добавление зависимостей  
@@ -71,6 +66,5 @@ ms.locfileid: "36757996"
   
 ## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Практическое: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Практическое: Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
+ [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Практическое руководство. Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

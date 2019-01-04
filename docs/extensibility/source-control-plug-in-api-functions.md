@@ -1,9 +1,6 @@
 ---
-title: Источник функции API подключаемого модуля управления | Документы Microsoft
-ms.custom: ''
+title: Источник функции API подключаемого модуля управления | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
@@ -13,81 +10,81 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a834c4352ea2444c2669a57f760ed373999b07dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d73dd67f0f2d64a2ac02c77b2eb86d21e559c0d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880040"
 ---
-# <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля управления источника
-API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны реализовывать системы управления версиями в соответствии с этот API. Подписи каждой функции и семантику, связанные с битовые флаги и другие параметры описаны в этой справке.  
+# <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
+API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны быть реализованы системы управления версиями, подключаемый модуль, в соответствии с этого API. Подписи каждой функции и семантики, связанные с битовых флагов, и другие параметры, описаны в этой справке.  
   
-## <a name="initialization-and-housekeeping-functions"></a>Инициализация и вспомогательные функции  
+## <a name="initialization-and-housekeeping-functions"></a>Инициализация и функций по обслуживанию  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Закрывает проект.|  
-|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает пользователя для настройки дополнительных параметров для данной команды.|  
+|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает у пользователя Дополнительные параметры для данной команды.|  
 |[SccGetVersion](../extensibility/sccgetversion-function.md)|Возвращает версию системы управления версиями подключаемого модуля.|  
-|[SccInitialize](../extensibility/sccinitialize-function.md)|Инициализирует подключаемый модуль системы управления версиями. Он вызывается один раз для каждого экземпляра подключаемого модуля.|  
+|[SccInitialize](../extensibility/sccinitialize-function.md)|Инициализирует модуль управления версиями. Он вызывается один раз для каждого экземпляра подключаемого модуля.|  
 |[SccOpenProject](../extensibility/sccopenproject-function.md)|Открывает проект.|  
-|[SccSetOption](../extensibility/sccsetoption-function.md)|Универсальная функция используется для задания разнообразные параметры. Каждый параметр начинается с `SCC_OPT_xxx` и имеет собственный набор определенных значений.|  
-|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Вызывается, когда когда подключаемый модуль системы управления версиями должен быть подключен.|  
+|[SccSetOption](../extensibility/sccsetoption-function.md)|Универсальная функция, используемый для задания разнообразные параметры. Каждый параметр начинается с `SCC_OPT_xxx` и имеет свой собственный определенный набор значений.|  
+|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Вызывается, когда когда подключаемый модуль системы управления версиями необходимо отсоединения.|  
   
-## <a name="core-source-control-functions"></a>Основные функции управления источника  
+## <a name="core-source-control-functions"></a>Основные функции элемента управления источника  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
-|[SccAdd](../extensibility/sccadd-function.md)|Добавляет массив имен полный путь для системы управления версиями, заданные файлы.|  
-|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями, а затем сделайте эти файлы частью текущего проекта.|  
+|[SccAdd](../extensibility/sccadd-function.md)|Добавляет массив файлов, указанных по именам полный путь к системе управления версиями.|  
+|[SccAddFilesFromSCC](../extensibility/sccaddfromscc-function.md)|Позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями, а затем сделайте этих файлов, входящих в текущий проект.|  
 |[SccCheckin](../extensibility/scccheckin-function.md)|Возвращает массив файлов.|  
 |[SccCheckout](../extensibility/scccheckout-function.md)|Извлекает массив файлов.|  
-|[SccDiff](../extensibility/sccdiff-function.md)|Показаны различия между файлом локального пользователя, заданного полным путем к файлу и версии в системе управления версиями.|  
-|[SccGet](../extensibility/sccget-function.md)|Извлекает копию набора файлов только для чтения.|  
-|[SccGetEvents](../extensibility/sccgetevents-function.md)|Проверяет состояние файлов, которые вызывающий объект задаваемые о (через `SccQueryInfo`).|  
-|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Вызывает подключаемый модуль на приглашение ввести путь проекта, имеющее смысл подключаемый модуль системы управления версиями.|  
-|[SccHistory](../extensibility/scchistory-function.md)|Показывает историю для массива имен полное имя локального файла.|  
-|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Проверяет список файлов для их текущего состояния. Кроме того, использует `pfnPopulate` функции для уведомления вызывающего объекта, если файл не соответствует критериям для `nCommand`.|  
+|[SccDiff](../extensibility/sccdiff-function.md)|Показаны различия между файл локального пользователя, указанный параметром полный путь к файлу и версии в системе управления версиями.|  
+|[SccGet](../extensibility/sccget-function.md)|Получает доступную только для чтения копию набора файлов.|  
+|[SccGetEvents](../extensibility/sccgetevents-function.md)|Проверяет состояние файлов, которые вызывающий объект попросил об (через `SccQueryInfo`).|  
+|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Вызывает подключаемые модули, приглашение ввести путь к проекту, подключаемый модуль системы управления версиями.|  
+|[SccHistory](../extensibility/scchistory-function.md)|Отображается журнал для массива имен полное локальный файл.|  
+|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.|  
 |[SccProperties](../extensibility/sccproperties-function.md)|Показывает свойства полное имя файла.|  
-|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Проверяет список полные имена файлов для их текущего состояния.|  
+|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Проверяет список полные имена файлов для их текущее состояние.|  
 |[SccRemove](../extensibility/sccremove-function.md)|Удаляет массив полные имена файлов из системы управления версиями.|  
 |[SccRename](../extensibility/sccrename-function.md)|Переименовывает данный файл в новое имя в системе управления версиями.|  
-|[SccRunScc](../extensibility/sccrunscc-function.md)|Обращается к полный спектр функций системы управления версиями.|  
+|[SccRunScc](../extensibility/sccrunscc-function.md)|Осуществляет доступ к полному набору функций системы управления версиями.|  
 |[SccUncheckout](../extensibility/sccuncheckout-function.md)|Отменяет извлечение массив файлов.|  
   
-## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Функции, которые поддерживают дополнительные возможности (версия 1.2 API-интерфейса подключаемого модуля управления источника)  
- Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.2 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций управления исходным кодом и возможности.  
+## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Функции, которые поддерживают дополнительные возможности (версия 1.2 API подключаемого модуля управления источника)  
+ Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.2 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
-|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Запускает пакетную операцию.|  
-|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Создает подпроект с заданным именем в существующий проект родительского.|  
-|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Отображает различия между каталог локального пользователя, указанный с полным путем к файлу и расположение базы данных системы управления версиями.|  
-|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Проверяет список полное каталогов для их текущего состояния.|  
+|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Начинает пакетную операцию.|  
+|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Создает подпроект с заданным именем в существующий родительский проект.|  
+|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Показаны различия между локального пользователя каталоге, заданном параметром полное имя и расположение базы данных системы управления версиями.|  
+|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Проверяет список полных каталогов для их текущее состояние.|  
 |[SccEndBatch](../extensibility/sccendbatch-function.md)|Завершает пакетную операцию.|  
-|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Возвращает родительский путь данный проект (проект должна существовать).|  
-|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Проверяет, разрешено ли несколько одновременных извлечений на файл.|  
+|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Возвращает родительский путь данного проекта (проект должна существовать).|  
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Проверяет, разрешено ли несколько одновременных извлечений с файлом.|  
 |[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Проверяет, является ли подключаемый модуль создаст MSSCCPRJ. Файлы SCC.|  
   
-## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версия 1.3 API-интерфейса подключаемого модуля управления источника)  
- Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций управления исходным кодом и возможности.  
+## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версии 1.3 подключаемого модуля API управления источника)  
+ Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|  
-|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Возвращает список файлов из системы управления версиями без пользовательского интерфейса.|  
-|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Возвращает список файлов в системе управления версиями, которые отличаются от локальных файлов.|  
+|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Извлекает список файлов из системы управления версиями без пользовательского интерфейса.|  
+|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Извлекает список файлов в системе управления версиями, которые отличаются от локальных файлов.|  
 |[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Получает флаги, определяющие расширенные возможности, поддерживаемые подключаемый модуль системы управления версиями.|  
-|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Извлекает параметры конкретного пользователя.|  
+|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Возвращает пользовательские параметры.|  
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Проверяет список каталогов и файлов в проект или проекты, которые находятся в системе управления версиями. Каждый каталог и имя файла найден передается функции обратного вызова.|  
-|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Проверяет имя изменения, внесенные в список файлов. Имя каждого файла передается в функцию обратного вызова с его изменить статус.|  
+|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Проверяет имя изменения, внесенные в список файлов. Имя каждого файла передается функции обратного вызова с его изменить статус.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: scc.h  
   
- (В пакет SDK для среды общие папки, по умолчанию включает *[диск]* \Program Files\VSIP 8.0\EnvSDK\common\inc; также показан в папку с образцом MSSCCI VSIP *[диск]* \Program Files\VSIP 8.0\MSSCCI).  
+ (В пакет SDK для среды общие папки, по умолчанию включает *[диск]* \Program Files\VSIP 8.0\EnvSDK\common\inc; также указан в папке с примером MSSCCI VSIP *[диск]* \Program Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>См. также  
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
+ [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
  [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md)

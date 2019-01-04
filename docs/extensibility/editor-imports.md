@@ -1,9 +1,6 @@
 ---
 title: Импорт в редакторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893935"
 ---
 # <a name="editor-imports"></a>Импорт в редакторе
 Вы можете импортировать несколько служб редактора фабрик и брокеров, которые предоставляют расширения с различными видами доступ к базовым редактором. Например, вы можете импортировать <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> добавив <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для данного типа содержимого. (Этот навигатор позволяет выполнять различные виды поисковые запросы на текстовый буфер).  
@@ -51,11 +48,11 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Пошаговое руководство: Выделение цветом текста](../extensibility/walkthrough-highlighting-text.md)  
   
- [Пошаговое руководство: Отображение отображение подсказок](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Пошаговое руководство: Отображение справки сигнатуры](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Пошаговое руководство: Отобразить справку по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- См. в разделе [Пошаговое руководство: доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Дополнительные сведения.  
+ См. [Пошаговое руководство: Доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Дополнительные сведения.  
   
 ## <a name="services"></a>Службы  
  Редактор службы — обычно одной сущности, которые предоставляют службы и являются общими для нескольких компонентов.  

@@ -1,9 +1,6 @@
 ---
 title: Нового или измененного поведения с помощью редактора адаптеров | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901614"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Нового или измененного поведения с помощью редактора адаптеров
 Если при обновлении кода, написанного для более ранних версиях базовый редактор Visual Studio, и вы планируете использовать адаптеры редактора (или оболочки совместимости) вместо того чтобы использовать новый интерфейс API, следует иметь в виду следующие различия в поведении адаптеров редактора по отношению к предыдущей базовым редактором.  
   
-## <a name="features"></a>Функции  
+## <a name="features"></a>Компоненты  
   
 ### <a name="use-setsite"></a>Использовать SetSite()  
  Необходимо вызвать <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> при выполнить текстовых буферов, представлений текста и кода windows, прежде чем выполнять другие операции с ними. Тем не менее, это не является обязательным при использовании <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> для их создания, так как эта служба `Create()` сами методы вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  

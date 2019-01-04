@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное изменение форматирования в строках листа, содержащих выбранные ячейки'
-ms.custom: ''
+title: Как выполнить Программное изменение форматирования в строках листа, содержащих выбранные ячейки
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891804"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Практическое: программное изменение форматирования в строках листа, содержащих выбранные ячейки
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Как выполнить Программное изменение форматирования в строках листа, содержащих выбранные ячейки
   Можно изменить шрифт всей строки, которая содержит выбранную ячейку, чтобы текст отображается полужирным шрифтом.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891288"
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Практическое: программное копирование данных и форматирование между листами](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Практическое руководство. Программное копирование данных и форматирование между листами](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

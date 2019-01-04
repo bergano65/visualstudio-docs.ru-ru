@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: определение символов в библиотеке | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Определение символов в библиотеке | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff3f9ad93ddfb3b463d059fb2aba654ce48a501
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918996"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Практическое: определение символов в библиотеке
+# <a name="how-to-identify-symbols-in-a-library"></a>Как выполнить Определение символов в библиотеке
 Средства просмотра символов отображения иерархических представлений символов. Символы представляют пространств имен, объекты, классы, члены класса и остальных элементов языка.  
   
  Каждый символ в иерархии можно определить по навигации, передаваемого в библиотеку символов для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через следующие интерфейсы:  
@@ -49,7 +46,7 @@ N1
   
 ```  
   
- Канонический путь к классу C2, в этом примере используется N1 + C2. Путь к презентации C2 включает в себя узлы C1 и «Базовых классов и интерфейсов»: N1 + C1 + «Базовых классов и интерфейсов» + C2.  
+ Канонический путь к классу C2, в этом примере используется N1 + C2. Путь к презентации C2 включает в себя узлы C1 и «Базовых классов и интерфейсов»: N1 + C1 + «базы и интерфейсы» + C2.  
   
  Для получения информации из формы представления, диспетчер объектов вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> метод.  
   
@@ -85,5 +82,5 @@ N1
   
 ## <a name="see-also"></a>См. также  
  [Поддержка средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое: зарегистрировать библиотеку с диспетчером объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Практическое: предоставлять список символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Практическое руководство. Зарегистрировать библиотеку с диспетчером объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

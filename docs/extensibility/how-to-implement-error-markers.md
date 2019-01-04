@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: реализовать маркеры ошибок | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Реализовать маркеры ошибок | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931506"
 ---
-# <a name="how-to-implement-error-markers"></a>Практическое: реализовать маркеры ошибок
+# <a name="how-to-implement-error-markers"></a>Как выполнить Реализовать маркеры ошибок
 Маркеры ошибок (или красными волнистыми линиями) являются наиболее сложных настроек текстового редактора для реализации. Однако преимущества, которые они предоставляют пользователям вашего VSPackage значительно перевешивают затраты на обеспечение. Маркеры ошибок может привести к некоторой пометить текст, который ваши средства синтаксического анализа языка считает, что неправильное волнистой или волнистой красной линией. Он помогает программистам визуально отображается неправильный код.  
   
  Используйте текстовые метки, чтобы реализовать красными волнистыми линиями. Как правило языковые службы добавьте красными волнистыми линиями в текстовый буфер как на этапе фона, либо во время простоя, либо в фоновом потоке.  
@@ -29,11 +26,11 @@ ms.locfileid: "49861167"
   
 1. Выделите текст, в котором следует разместить красной волнистой линией.  
   
-2. Создайте маркер типа `MARKER_CODESENSE_ERROR`. Дополнительные сведения см. в разделе [как: добавлять стандартный текст маркеры](../extensibility/how-to-add-standard-text-markers.md).  
+2. Создайте маркер типа `MARKER_CODESENSE_ERROR`. Дополнительные сведения см. в разделе [Как Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. После этого передайте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> указатель на интерфейс.  
   
-   Этот процесс также позволяет создать текст подсказки или специальные контекстного меню над заданной маркером. Дополнительные сведения см. в разделе [как: добавлять стандартный текст маркеры](../extensibility/how-to-add-standard-text-markers.md).  
+   Этот процесс также позволяет создать текст подсказки или специальные контекстного меню над заданной маркером. Дополнительные сведения см. в разделе [Как Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).  
   
    Следующие объекты необходимы, прежде чем можно будет отобразить маркеры ошибок.  
   
@@ -58,6 +55,6 @@ ms.locfileid: "49861167"
   
 ## <a name="see-also"></a>См. также  
  [Использование меток текста с предыдущих версий API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Практическое: Добавление стандартные текстовые метки](../extensibility/how-to-add-standard-text-markers.md)   
- [Практическое: Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
- [Практическое: использовать текстовые метки](../extensibility/how-to-use-text-markers.md)
+ [Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)   
+ [Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
+ [Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)

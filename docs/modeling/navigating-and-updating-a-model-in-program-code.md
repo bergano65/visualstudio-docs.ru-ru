@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857125"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - Задайте свойства нового элемента, особенно свойства, для которого `IsName` имеет значение true, если в DslDefinition. Этот флаг помечает свойство, которое служит для идентификации элемента уникально в пределах его владельцем. В этом случае свойство Name имеет флага.
 
-- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [как: открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [Как Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
   При создании элемента, таким образом, фигуры создается автоматически (если DSL со схемой). Он отображается в расположении, автоматически назначаемый, выполнив стандартную форму, цвет и другие функции. Если вы хотите управлять, где и как связанные фигуры отображается, см. в разделе [Создание элемента и его фигура](#merge).
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  Можно также задать цвет и другие свойства, предоставляемого соединителей с помощью этого метода.
 
 ### <a name="use-transactions"></a>Использование транзакций
- Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [Как Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Просмотр документа и документа данных
  ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png)
@@ -488,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)
 - [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Практическое руководство. Обновление модели с помощью транзакций](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)

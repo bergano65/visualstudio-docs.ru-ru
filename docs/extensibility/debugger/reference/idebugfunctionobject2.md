@@ -1,9 +1,6 @@
 ---
-title: IDebugFunctionObject2 | Документы Microsoft
-ms.custom: ''
+title: IDebugFunctionObject2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b051cc033f41f78fb1f2e6ed18eb22de6f8f0aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 276db8c4175ce74326cb2e0cd45440f2ed00f8ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958427"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Представляет функцию и повышает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейса.  
+ Представляет функцию и улучшает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,28 +30,28 @@ IDebugFunctionObject2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Вычислитель выражений (Эстония) реализует этот интерфейс для представления функции.  
+ Вычислитель выражений (EE) реализует этот интерфейс, представляющий функцию.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Методы этого интерфейса отложить биты **IDebugFunctionObject** одним из следующих способов:  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Методы этого интерфейса отложить те **IDebugFunctionObject** одним из следующих способов:  
   
 -   **IDebugEvaluate** метод принимает флаги.  
   
 -   **CreateObject** метод принимает флаги и истечения времени ожидания.  
   
--   **CreateStringObjectWithLength** метод принимает длиной.  
+-   **CreateStringObjectWithLength** метод принимает длину.  
   
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, который использует конструктор заданы параметры флаг оценки, а также значение времени ожидания.|  
-|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает объект string, имеющего указанную длину.|  
-|[Оценка](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Вызывает функцию и возвращает результирующее значение в виде объекта.|  
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, который использует конструктор параметров флаг вычисления и значение времени ожидания.|  
+|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает строковый объект, который имеет указанную длину.|  
+|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Вызывает функцию и возвращает результирующее значение как объект.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Ee.h  
+ Заголовок: EE.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

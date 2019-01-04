@@ -1,8 +1,7 @@
 ---
-title: 'CA2002: не блокировать объекты со слабой идентификацией'
+title: CA2002. Не блокируйте объекты с ненадежными удостоверениями
 ms.date: 01/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
@@ -18,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ab74b2cf7a2b9da99c673fc6b6822e0d7e67f959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890421"
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: не блокировать объекты со слабой идентификацией
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002. Не блокируйте объекты с ненадежными удостоверениями
 
 |||
 |-|-|

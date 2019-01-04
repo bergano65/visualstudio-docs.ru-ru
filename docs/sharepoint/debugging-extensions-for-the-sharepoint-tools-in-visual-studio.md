@@ -1,9 +1,6 @@
 ---
 title: Отладка расширений для инструментов SharePoint в Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950820"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Можно выполнять отладку расширения инструментов SharePoint в экспериментальном экземпляре или обычном экземпляре Visual Studio. Если вам необходимо устранить поведение расширения, можно также изменить значения реестра для отображения дополнительных сведений об ошибке и настроить, каким образом Visual Studio выполняет команды SharePoint.
@@ -38,7 +35,7 @@ ms.locfileid: "36326099"
 
 -   [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
 -   [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
@@ -116,7 +113,7 @@ ms.locfileid: "36326099"
 
  Для устранения любого расширения инструментов SharePoint, можно создать и задать EnableDiagnostics значение. В следующей таблице описаны это значение.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |EnableDiagnostics|REG_DWORD указывает, отображаются ли диагностические сообщения в **вывода** окна.<br /><br /> Чтобы отобразить диагностические сообщения, это значение равно 1. Чтобы отключить отображение сообщений, это значение равно 0 или удалите это значение.<br /><br /> Для записи сообщений в **вывода** расширения средств SharePoint в окне, используйте службы проектов SharePoint. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
 

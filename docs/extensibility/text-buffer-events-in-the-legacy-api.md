@@ -1,9 +1,6 @@
 ---
 title: Событий текстового буфера в интерфейсе API для прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 62bf7670a40b2cf8094793f833dfa7bcc038cdb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909818"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Событий текстового буфера, старый API
 Объект текстового буфера выдает несколько различных событий, которые позволяют реагировать на них различных ситуациях.  
@@ -28,7 +25,7 @@ ms.locfileid: "53804069"
 ## <a name="text-buffer-interfaces"></a>Интерфейсы буфера текста  
  Ниже перечислены интерфейсы, реализованные объект текстового буфера.  
   
-|Интерфейс|Описание:|  
+|Интерфейс|Описание|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Разрешает создание составных действий (то есть действия, которые группируются в единое единый отмены и повтора).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение данных документа, управляемых текстовым буфером.|  
@@ -42,7 +39,7 @@ ms.locfileid: "53804069"
 ## <a name="text-buffer-event-interfaces"></a>Интерфейсы событий буфера текста  
  Ниже приведены интерфейсы для уведомления о событии текстового буфера.  
   
-|Интерфейс|Описание:|  
+|Интерфейс|Описание|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Уведомляет клиентов, когда новая языковая служба связана с текстовым буфером.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Уведомляет клиентов, при инициализации текстового буфера, и при изменении данных в текстовом буфере.|  

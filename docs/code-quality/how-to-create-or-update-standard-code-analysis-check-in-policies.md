@@ -1,8 +1,7 @@
 ---
-title: Создание или обновление стандартных политик анализом кода возврата
+title: Создание или обновление стандартных политик возврата с анализом кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890343"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить Создание или обновление стандартных политик анализом кода возврата
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить Создание или обновление стандартных политик возврата с анализом кода
 
 Вы можете потребовать, запуска анализа кода для всех проектов кода в проекте Azure DevOps с помощью политики возврата анализа кода. Обязательность анализа кода может повысить качество кода, который возвращается в базу кода.
 

@@ -1,9 +1,6 @@
 ---
 title: Защита документов в решениях уровня документа
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b6894aa05adf55945383cb3c2e28b8c5fdebdc16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908857"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Защита документов в решениях уровня документа
   Можно использовать функции защиты Microsoft Office Word и Microsoft Office Excel в проектах уровня документа. Эти функции блокируются неавторизованные пользователи вносить изменения в защищенные части документа.  
@@ -62,5 +59,3 @@ ms.locfileid: "53648539"
  [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)   
  [Практическое руководство. Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

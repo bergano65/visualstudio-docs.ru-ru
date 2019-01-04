@@ -1,9 +1,6 @@
 ---
-title: IDebugEnumField | Документы Microsoft
-ms.custom: ''
+title: IDebugEnumField | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEnumField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dba0f00687725416755f26151d8a6d657e312923
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6329d9efcc306115e1ceb7f4070d1bba1fbd01da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913289"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Этот интерфейс представляет тип перечисления.  
@@ -34,21 +31,21 @@ IDebugEnumField : IDebugContainerField
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Символ поставщик реализует этот интерфейс для представления перечисления.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Используйте [QueryInterface](/cpp/atl/queryinterface) получить этот интерфейс из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_ENUM`.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_ENUM`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы VTable  
- В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсах, этот интерфейс реализует следующие методы:  
+ В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсы, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающую имя для этого типа перечисления.|  
+|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий имя для этого типа перечисления.|  
 |[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Возвращает имя константы перечисления, связанный с заданным значением.|  
-|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Возвращает значение, связанное с именем константы данного перечисления.|  
-|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Возвращает значение, связанное с именем константы данного перечисления, но без учета регистра букв.|  
+|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Возвращает значение, связанное с именем константы заданное перечисление|  
+|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Возвращает значение, связанное с заданное перечисление постоянное имя, но без учета регистра букв.|  
   
 ## <a name="remarks"></a>Примечания  
- Это базовый символ, который фактически привязана к расположению с [привязки](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+ Это базовый символ, который фактически связан в расположение с [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
@@ -61,4 +58,4 @@ IDebugEnumField : IDebugContainerField
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [BIND](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

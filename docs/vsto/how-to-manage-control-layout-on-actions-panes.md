@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Управление структурой элементов управления в панели действий
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991179"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Как выполнить Управление структурой элементов управления в панели действий
   Панель действий, расположенной справа от документа или листа по умолчанию. Тем не менее его можно закрепить слева, сверху или снизу. Если вы используете несколько пользовательских элементов управления, можно написать код, чтобы правильно пользовательские элементы управления на панели действий. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
@@ -74,5 +71,3 @@ ms.locfileid: "53647053"
  [Практическое руководство. Добавление панели действий в документы Word или Excel книги](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

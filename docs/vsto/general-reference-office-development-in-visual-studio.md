@@ -3,8 +3,6 @@ title: Общий Справочник (Разработка решений Offi
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bdc279d72f6e088c1adc22a78d9864e1d595b764
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933182"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Общий Справочник (Разработка решений Office в Visual Studio)
   Этот раздел содержит технические сведения о проектах Microsoft Office в Visual Studio.  
@@ -54,5 +52,3 @@ ms.locfileid: "53646855"
   
  [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
  Ссылки на сведения о том, как приступить к созданию проектов Office с помощью Visual Studio.  
-  
-  

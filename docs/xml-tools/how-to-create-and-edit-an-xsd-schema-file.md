@@ -1,8 +1,7 @@
 ---
-title: Создание и изменение файла XSD-схемы
+title: Создание и изменение файла схемы XSD
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
@@ -10,24 +9,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855511"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как: Создание и изменение файла XSD-схемы
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как выполнить Создание и изменение файла схемы XSD
 
 Данный раздел описывает процесс создания нового файла XML-схемы (XSD) и добавления содержимого в XSD-файл.
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Создание нового файла XML-схемы
 
-1. В Visual Studio откройте **файл** и выбрать пункт **New** > **файл**. Также можно использовать **Ctrl**+**N** сочетание клавиш.
+1. В Visual Studio откройте **файл** меню и выберите **New** > **файл**. Также можно использовать **Ctrl**+**N** сочетания клавиш.
 
-2. В **новый файл** выберите **XML-схема** , а затем выберите **откройте**.
+2. В **новый файл** выберите **схемы XML** , а затем выберите **откройте**.
 
-   Будет создан новый файл. Начальное представление и пустой **обозреватель XML-схем** отображения окна в Visual Studio.
+   Будет создан новый файл. Начальное представление и пустым **обозреватель XML-схем** окно отображалось в Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Редактирование файла
 

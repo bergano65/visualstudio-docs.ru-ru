@@ -1,13 +1,8 @@
 ---
-title: 'Пошаговое руководство: Создание базового проекта определения сайта | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание базового проекта определения сайта | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958895"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство: Создание базового проекта определения сайта
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве демонстрируется создание простейшего определения сайта, содержащий визуальной веб-части, с некоторыми элементами управления на нем. Ради ясности визуальной веб-части, созданной имеет несколько элементов управления. Тем не менее можно создать более сложные определений сайтов SharePoint, которые включают дополнительные функции.  
   
  В этом пошаговом руководстве описаны следующие задачи.  
@@ -187,6 +182,5 @@ ms.locfileid: "49844424"
      Текст отобразится на метке справа от кнопки.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

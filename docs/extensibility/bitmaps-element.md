@@ -1,9 +1,6 @@
 ---
 title: Элемент bitmaps | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8812a9dca40a69a4dc23209cdb5f85309a87755
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a01b4fd1a6c855ce43cc332c8e4b4b01c69140fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896348"
 ---
 # <a name="bitmaps-element"></a>Элемент bitmaps
 Группы [точечный рисунок элемента](../extensibility/bitmap-element.md) элементов.  
@@ -40,18 +37,18 @@ ms.locfileid: "49861557"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент bitmaps](../extensibility/bitmaps-element.md)|Группирует элементы растрового изображения.|  
 |[Элемент Bitmap](../extensibility/bitmap-element.md)|Определяет растрового изображения.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   

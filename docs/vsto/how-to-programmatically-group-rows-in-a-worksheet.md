@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная группировка строк на листах'
-ms.custom: ''
+title: Как выполнить Программная группировка строк на листах
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896790"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Практическое: программная группировка строк на листах
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Как выполнить Программная группировка строк на листах
   Вы можете сгруппировать один или несколько целых строк. Чтобы создать группу на листе, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -64,7 +61,5 @@ ms.locfileid: "35258740"
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Практическое: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Практическое руководство. Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

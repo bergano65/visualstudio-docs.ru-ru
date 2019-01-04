@@ -1,9 +1,6 @@
 ---
 title: Настраиваемый пользовательский интерфейс (пакет VSPackage управления версиями) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc8158325d975aec4bd522fddad2375001d2f72e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852655"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (система управления версиями. VSPackage)
 VSPackage объявляет элементами меню и состояние по умолчанию через таблицы команд Visual Studio (*.vsct*) файла. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) отображается пунктов меню в состояние по умолчанию, пока не загружается VSPackage. Как следствие <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  
@@ -52,7 +49,7 @@ VSPackage объявляет элементами меню и состояние
   
   В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
-| Элемент пользовательского интерфейса | Описание |
+| Элемент пользовательского интерфейса | Описание: |
 | - | - |
 | Меню и панели инструментов | Пакет системы управления версиями необходимо задать начальное состояние видимости меню и панель инструментов идентификатора источника пакета в [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел *.vsct* файла. Это позволяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки для задания состояния пунктов меню, соответствующим образом без загрузки VSPackage и вызова реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод. |
 | Окна инструментов | Пакет VSPackage системы управления версиями скрывает все окна инструментов, которыми он владеет, когда он становится неактивным. |

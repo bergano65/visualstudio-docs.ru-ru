@@ -1,5 +1,5 @@
 ---
-title: С помощью средства проверки C++ Core Guidelines
+title: Использование средств проверки на соответствие C++ Core Guidelines
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -8,15 +8,14 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820242"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>С помощью средства проверки C++ Core Guidelines
+# <a name="using-the-c-core-guidelines-checkers"></a>Использование средств проверки на соответствие C++ Core Guidelines
 C++ Core Guidelines представляют собой переносимый набор рекомендации, правила и рекомендации о написании кода на C++, созданные экспертами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил как часть его средств анализа кода для C++. Средства проверки рекомендация core устанавливаются по умолчанию в Visual Studio 2017 и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Проект C++ Core Guidelines
@@ -55,11 +54,11 @@ int main()
 
 В этом примере показаны некоторые из предупреждений, которые можно найти правила C++ Core Check:
 
-- C26494 — правило Type.5: всегда Инициализируйте объект.
+- C26494 — правило Type.5. Всегда Инициализируйте объект.
 
-- C26485 — правило Bounds.3: нет decay массива в указатель.
+- C26485 — правило Bounds.3. Нет отхода массива в указатель.
 
-- C26481 — правило Bounds.1: не используйте арифметику указателей. Взамен рекомендуется использовать `span`.
+- C26481 — правило Bounds.1. Не используйте арифметику указателей. Взамен рекомендуется использовать `span`.
 
 Если установлены и включены при компиляции кода C++ Core Check наборы правил анализа кода, первые два предупреждения выводятся, но третий подавляется. Ниже приведен результат сборки из образца кода.
 

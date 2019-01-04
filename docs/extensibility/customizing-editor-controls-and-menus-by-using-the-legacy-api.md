@@ -1,9 +1,6 @@
 ---
 title: Настройка меню и редактор элементов управления с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851265"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Настройка элементов управления редактора и Mmenus с помощью прежних версий API
 Языковая служба или текстового представления можно управлять контекстные меню и элементов управления в редакторе. Страницы в этом разделе подробно описывается, как работать с этими функциями.  
@@ -33,7 +30,7 @@ ms.locfileid: "39498533"
  [Контекстные меню](../extensibility/context-menus.md)  
  Описывает контекстные меню редактора.  
   
- [Практическое: обновления строки состояния](../extensibility/how-to-update-the-status-bar.md)  
+ [Практическое руководство. Обновление строки состояния](../extensibility/how-to-update-the-status-bar.md)  
  Предоставляет инструкции по обновлению **строки состояния**.  
   
 ## <a name="related-sections"></a>Связанные разделы  

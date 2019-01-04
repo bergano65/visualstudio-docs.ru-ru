@@ -1,9 +1,6 @@
 ---
 title: Создание пакетов решений SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,33 +13,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966668"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Создание пакетов решений SharePoint
   С помощью конструктора пакетов, можно создавать и настраивать пакеты развертывания. Например можно добавить элементы проекта SharePoint и компонентов, сброса на сервере IIS, задавать области активации компонентов и определять зависимости компонента. Конструктор также создает манифест, XML-файл с описанием каждого пакета.  
   
 ## <a name="packaging-tools"></a>Средства упаковки
- Можно использовать **конструктора пакетов** для настройки пакета и создания манифеста. Можно добавлять элементы проектов SharePoint, Настройка веб-сервера следует сбросить или установить тип сервера развертывания. Дополнительные сведения см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Можно использовать **конструктора пакетов** для настройки пакета и создания манифеста. Можно добавлять элементы проектов SharePoint, Настройка веб-сервера следует сбросить или установить тип сервера развертывания. Дополнительные сведения см. в разделе [Как Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
- Кроме того, можно использовать **проводник пакетов** изменить компоненты и элементы в файл пакета (*.wsp*). Дополнительные сведения см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Кроме того, можно использовать **проводник пакетов** изменить компоненты и элементы в файл пакета (*.wsp*). Дополнительные сведения см. в разделе [Как Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
- Visual Studio и MSBuild можно использовать для создания пакета (*.wsp*) файлы для развертывания решения SharePoint. Этот процесс создает файлы манифеста, необходимые для развертывания. Дополнительные сведения см. в разделе [как: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
+ Visual Studio и MSBuild можно использовать для создания пакета (*.wsp*) файлы для развертывания решения SharePoint. Этот процесс создает файлы манифеста, необходимые для развертывания. Дополнительные сведения см. в разделе [Как Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
 ## <a name="package-designer-options"></a>Параметры конструктора пакетов
  Следующая таблица показывает свойства, которые можно настраивать SharePoint пакетов с помощью **конструктора пакетов**.  
   
 |Свойство конструктора пакетов|Описание значения по умолчанию|  
 |-------------------------------|------------------------------------|  
-|name|Обязательно. Присваивается имя по умолчанию пакета *имя_проекта*.|  
-|Сброс веб-сервера|Необязательный. Выберите, если вы хотите перезапустить веб-сервера после *.wsp* файл устанавливается на сервере SharePoint.|  
-|Тип сервера развертывания|Обязательно. Область по умолчанию, присваивается ApplicationServer.<br /><br /> ApplicationServer: Описание сервера, на котором размещены службы.<br /><br /> WebFrontEnd: Описание сервера, на котором размещена веб-сайтов.|  
+|name|Обязательный. Присваивается имя по умолчанию пакета *имя_проекта*.|  
+|Сброс веб-сервера|Необязательный параметр. Выберите, если вы хотите перезапустить веб-сервера после *.wsp* файл устанавливается на сервере SharePoint.|  
+|Тип сервера развертывания|Обязательный. Область по умолчанию, присваивается ApplicationServer.<br /><br /> ApplicationServer: Описание сервера, на котором размещены службы.<br /><br /> WebFrontEnd: Описание сервера, на котором размещена веб-сайтов.|  
 |Элементы в решении|Все элементы проекта SharePoint и компонентов, которые могут быть добавлены в пакет.|  
-|Элементы в пакете|Необязательный. Все компоненты и элементы SharePoint, которые вы хотите развернуть в пакете.|  
+|Элементы в пакете|Необязательный параметр. Все компоненты и элементы SharePoint, которые вы хотите развернуть в пакете.|  
   
 ## <a name="configure-the-packaging-process"></a>Настройка процесса упаковки
  После разработки решений SharePoint в Visual Studio, можно настроить как пакеты для развертывания проектов.  
@@ -75,10 +72,8 @@ ms.locfileid: "36326856"
  При создании пакета проекта SharePoint *.wsp* файл создается автоматически в *SolutionFolder\bin\\\<BuildConfiguration >* папки. Например, если ваше решение расположено в *C:\Visual Studio 2013\Projects\ListDefinition1* и конфигурация построения имеет значение выпуска, *.wsp* файл находится в *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Практическое: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Практическое: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Практическое: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Практическое: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 
+ [Практическое руководство. Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  

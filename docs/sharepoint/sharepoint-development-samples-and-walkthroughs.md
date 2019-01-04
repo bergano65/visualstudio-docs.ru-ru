@@ -1,13 +1,8 @@
 ---
 title: Примеры разработки решений SharePoint и пошаговые руководства | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892525"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры разработки решений SharePoint и пошаговые руководства
   Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.  
@@ -39,4 +34,3 @@ ms.locfileid: "37119393"
   
 ## <a name="see-also"></a>См. также
  [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)  
-  

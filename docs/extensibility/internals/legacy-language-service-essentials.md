@@ -1,9 +1,6 @@
 ---
 title: Основные компоненты службы прежней версией языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847208"
 ---
 # <a name="legacy-language-service-essentials"></a>Основные компоненты языковой службы прежних версий
 Необходимо указать языковой службы для интеграции языка программирования в Visual Studio. Этой статье описаны функции, доступные в службах языком прежних версий.  
@@ -46,8 +43,7 @@ ms.locfileid: "49850183"
  Следующие функции относятся к поддержка языков программирования, но не являются частью службы языка:  
 
 
-| Функция | Описание |
+| Функция | Описание: |
 |-----------------------| - |
 | Вычислители выражений | Поддерживает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчика, проверка точек останова и список выражений для отображения в **"Видимые"** окно отладки.<br /><br /> Дополнительные сведения см. в разделе [поддержку языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Средства просмотра символов | Поддерживает **обозреватель объектов**, **представление классов**, **Обозреватель вызовов**, и **результаты поиска символа**. |
-

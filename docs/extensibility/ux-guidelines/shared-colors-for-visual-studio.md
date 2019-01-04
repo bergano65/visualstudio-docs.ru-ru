@@ -1,9 +1,6 @@
 ---
 title: Общие цвета для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d628f2f83943b88a415699dddd78f033597983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991247"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 При разработке пользовательского интерфейса, который использует общие элементы оболочки Visual Studio, или вы хотите быть согласованы с аналогичными функциями элемента интерфейса, используйте существующие имена токенов в файлах определений пакетов для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.  
@@ -50,7 +47,7 @@ ms.locfileid: "49833347"
 
 ![Стандартной кнопки](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Стандартной кнопки
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Кнопка | `CommonControls.Button` |
 | Граница кнопки | `CommonControls.ButtonBorder` |
@@ -59,7 +56,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка по умолчанию](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Кнопка по умолчанию
 
-| Элемент | Имя токена: Category.color | 
+| Элемент | Имя токена: Category.Color | 
 | --- | --- | 
 | Кнопка | `CommonControls.ButtonDefault` |
 | Граница кнопки | `CommonControls.ButtonBorderDefault` |
@@ -68,7 +65,7 @@ ms.locfileid: "49833347"
 
 ![Кнопку в отключенном состоянии](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Кнопку в отключенном состоянии  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Кнопка | `CommonControls.ButtonDisabled` |
 | Граница кнопки | `CommonControls.ButtonBorderDisabled` |
@@ -77,7 +74,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Кнопка при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Кнопка | `CommonControls.ButtonHover` |
 | Граница кнопки | `CommonControls.ButtonBorderHover` |
@@ -86,7 +83,7 @@ ms.locfileid: "49833347"
 
 ![Кнопку в нажатом состоянии](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Кнопку в нажатом состоянии  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Кнопка | `CommonControls.ButtonPressed` |
 | Граница кнопки | `CommonControls.ButtonBorderPressed` |
@@ -95,7 +92,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка с фокусом ввода](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Кнопка с фокусом ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Кнопка | `CommonControls.ButtonFocused` |
 | Граница кнопки | `CommonControls.ButtonBorderFocused` |
@@ -111,7 +108,7 @@ ms.locfileid: "49833347"
 
 ![Флажок](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303 162_Checkbox")<br />По умолчанию флажок
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackground` |
 | Border | `CommonControls.CheckBoxBorder` |
@@ -122,7 +119,7 @@ ms.locfileid: "49833347"
 
 ![Отключенный флажок](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303 163_CheckboxDisabled")<br />Отключенный флажок  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackgroundDisabled` |
 | Border | `CommonControls.CheckBoxBorderDisabled` |
@@ -133,7 +130,7 @@ ms.locfileid: "49833347"
 
  ![Флажок при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303 164_CheckboxHover")<br />Флажок при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackgroundHover` |
 | Border | `CommonControls.CheckBoxBorderHover` |
@@ -144,7 +141,7 @@ ms.locfileid: "49833347"
 
 ![Нажатый флажок](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303 165_CheckboxPressed")<br />Нажатый флажок  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackgroundPressed` |
 | Border | `CommonControls.CheckBoxBorderPressed` |
@@ -155,7 +152,7 @@ ms.locfileid: "49833347"
 
 ![Фокус флажок](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303 166_CheckboxFocused")<br />Фокус флажок  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackgroundFocused` |
 | Border | `CommonControls.CheckBoxBorderFocused` |
@@ -174,7 +171,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию раскрывающийся список/списком](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303 168_DropDownComboBox")<br />По умолчанию раскрывающийся список/со списком
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxBackground` |
 | Border | `CommonControls.ComboBoxBorder` |
@@ -187,7 +184,7 @@ ms.locfileid: "49833347"
 
 ![Отключенные раскрывающийся список/списком](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")<br />Отключенные раскрывающийся список/со списком
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxBackgroundDisabled` |
 | Border | `CommonControls.ComboBoxBorderDisabled` |
@@ -200,7 +197,7 @@ ms.locfileid: "49833347"
 
 ![Раскрывающийся список/со списком при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")<br />Раскрывающийся список/поле со списком при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxBackgroundHover` |
 | Border | `CommonControls.ComboBoxBorderHover` |
@@ -213,7 +210,7 @@ ms.locfileid: "49833347"
 
 ![Нажата раскрывающийся список/списком](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")<br />Нажата раскрывающийся список/со списком  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxBackgroundPressed` |
 | Border | `CommonControls.ComboBoxBorderPressed` |
@@ -226,7 +223,7 @@ ms.locfileid: "49833347"
 
  ![Раскрывающийся список/списком нажатии элемента представления списка](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")<br />Раскрывающийся список/списком нажатии элемента представления списка  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
 | Border | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
@@ -237,7 +234,7 @@ ms.locfileid: "49833347"
 
 ![Раскрывающийся список/со списком с фокусом](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")<br />Раскрывающийся список/со списком с фокусом
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.ComboBoxBackgroundFocused` |
 | Border | `CommonControls.ComboBoxBorderFocused` |
@@ -250,7 +247,7 @@ ms.locfileid: "49833347"
 
 ![Выбор раскрывающегося списка/со списком ввода](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")<br />Выбор раскрывающегося списка/со списком ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Выделение | `CommonControls.ComboBoxTextInputSelection` |
 
@@ -268,7 +265,7 @@ ms.locfileid: "49833347"
 
 **Заголовок столбца: состояние по умолчанию**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Header.Default` |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -277,7 +274,7 @@ ms.locfileid: "49833347"
 
 **Заголовок столбца: наведите указатель мыши на состояния**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Header.MouseOver` |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
@@ -286,7 +283,7 @@ ms.locfileid: "49833347"
 
 **Заголовок столбца: нажат**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `CommonControls.CheckBoxBackgroundPressed` |
 | Передний план (текст) | `CommonControls.CheckBoxBorderPressed` |
@@ -298,7 +295,7 @@ ms.locfileid: "49833347"
 
 **Элементы представления списка: состояние по умолчанию**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Прозрачный |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -306,7 +303,7 @@ ms.locfileid: "49833347"
 
 **Элементы представления списка: активное состояние**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActiveText` |
@@ -314,7 +311,7 @@ ms.locfileid: "49833347"
 
 **Элементы представления списка: неактивное состояние**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactiveText` |
@@ -327,7 +324,7 @@ ms.locfileid: "49833347"
 
 ![Пояснительный текст по умолчанию](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Пояснительный текст по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.ControlText` |
 
@@ -336,7 +333,7 @@ ms.locfileid: "49833347"
 
 ![Дополнительный текст инструкции](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Дополнительный текст инструкции
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.ControlEditHintText` |
 
@@ -347,7 +344,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию текст подсказки](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Текст подсказки по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.ControlEditHintText` |
 
@@ -355,7 +352,7 @@ ms.locfileid: "49833347"
 
 ![Необходимый текст подсказки](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Требуется пояснительный текст
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.ControlRequiredHintText` |
 | Фон | `Environment.ControlRequiredBackground` |
@@ -366,7 +363,7 @@ ms.locfileid: "49833347"
 
 ![Поиск текста элемента управления окна](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Текст элемента управления в поле поиска
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `SearchControl.UnfocusedWatermarkText` |
 
@@ -383,7 +380,7 @@ ms.locfileid: "49833347"
 
 ![Гиперссылка по умолчанию](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303 134_Hyperlink")<br />Гиперссылка по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.PanelHyperlink` |
 
@@ -391,7 +388,7 @@ ms.locfileid: "49833347"
 
 ![Гиперссылка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303 135_HyperlinkHover")<br />Гиперссылка при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.PanelHyperlinkHover` |
 
@@ -399,7 +396,7 @@ ms.locfileid: "49833347"
 
 ![Нажатой гиперссылки](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303 136_HyperlinkPressed")<br />Гиперссылки в нажатом состоянии  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.PanelHyperlinkPressed` |
 
@@ -407,7 +404,7 @@ ms.locfileid: "49833347"
 
 ![Отключенные hyperlink](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303 137_HyperlinkDisabled")<br />Отключенные гиперссылки  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.PanelHyperlinkDisabled` |
 
@@ -424,7 +421,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию информационная панель](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303 139_Infobar")<br />Информационная панель по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.InfoBarBackground` |
 | Передний план (текст) | `InfoBar.InfoBar` |
@@ -434,7 +431,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию закрыть информационную панель (&times;) кнопку](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />По умолчанию закрыть информационную панель (&times;) кнопку
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.CloseButton` |
 | Border | `InfoBar.CloseButtonBorder` |
@@ -444,7 +441,7 @@ ms.locfileid: "49833347"
 
 ![Закрыть панель сведений (&times;) кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Закрыть панель сведений (&times;) кнопка при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.CloseButtonHover` |
 | Border | `InfoBar.CloseButtonHoverBorder` |
@@ -454,7 +451,7 @@ ms.locfileid: "49833347"
 
 ![Нажата закрыть информационную панель (&times;) кнопку](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Нажата закрыть информационную панель (&times;) кнопку
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.CloseButtonDown` |
 | Border | `InfoBar.CloseButtonDownBorder` |
@@ -464,7 +461,7 @@ ms.locfileid: "49833347"
 
 ![Кнопку гиперссылки информационная панель по умолчанию](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Кнопку гиперссылки информационная панель по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `InfoBar.Hyperlink` |
 
@@ -472,7 +469,7 @@ ms.locfileid: "49833347"
 
 ![Кнопку гиперссылки информационной панели при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Кнопку гиперссылки информационной панели при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Infobar.HyperlinkMouseOver`<br />(С подчеркиванием) |
 
@@ -480,7 +477,7 @@ ms.locfileid: "49833347"
 
 ![Нажата информационной панели кнопку гиперссылки](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Кнопку гиперссылки нажатом информационной панели
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Infobar.HyperlinkMouseDown`<br />(С подчеркиванием) |
 
@@ -488,7 +485,7 @@ ms.locfileid: "49833347"
 
 ![Информационная панель гиперссылки по умолчанию встроенной кнопки](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Информационная панель гиперссылки по умолчанию встроенной кнопки
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `InfoBar.Hyperlink` |
 
@@ -496,7 +493,7 @@ ms.locfileid: "49833347"
 
 ![Встроенной кнопки гиперссылки на информационной панели при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Встроенной кнопки гиперссылки на информационной панели при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Infobar.HyperlinkMouseOver`<br />(С подчеркиванием) |
 
@@ -504,7 +501,7 @@ ms.locfileid: "49833347"
 
 ![Кнопку гиперссылки встроенный нажатом информационная панель](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Активная кнопка hyperlink встроенный информационной панели
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Infobar.HyperlinkMouseDown`<br />(С подчеркиванием) |
 
@@ -512,7 +509,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка информационная панель по умолчанию](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Кнопка по умолчанию информационной панели
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.Button` |
 | Передний план (текст) | `InfoBar.Button` |
@@ -522,7 +519,7 @@ ms.locfileid: "49833347"
 
 ![Информационная панель Кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Информационная панель Кнопка при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.ButtonMouseOver` |
 | Передний план (текст) | `InfoBar.ButtonMouseOver` |
@@ -532,7 +529,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка нажата информационная панель](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Кнопка нажата информационной панели
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.ButtonMouseDown` |
 | Передний план (текст) | `InfoBar.ButtonMouseDown` |
@@ -542,7 +539,7 @@ ms.locfileid: "49833347"
 
 ![Отключенные информационной панели кнопку](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Отключенные информационная панель кнопку
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.ButtonDisabled` |
 | Передний план (текст) | `InfoBar.ButtonDisabled` |
@@ -552,7 +549,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка с фокусом информационная панель](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Кнопка с фокусом информационной панели
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `InfoBar.ButtonFocus` |
 | Передний план (текст) | `InfoBar.ButtonFocus` |
@@ -571,7 +568,7 @@ ms.locfileid: "49833347"
 
 ![Полоса прокрутки по умолчанию](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303 141_Scrollbar")<br />Полоса прокрутки по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Полоса прокрутки | `Environment.ScrollBarBackground` |
 | Передний план (бегунок) | `Environment.ScrollBarThumbBackground` |
@@ -580,7 +577,7 @@ ms.locfileid: "49833347"
 
 ![Полосы прокрутки при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303 143_ScrollbarHover")<br />Полоса прокрутки при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Полоса прокрутки | `Environment.ScrollBarBackground` |
 | Передний план (бегунок) | `Environment.ScrollBarThumbMouseOverBackground` |
@@ -589,7 +586,7 @@ ms.locfileid: "49833347"
 
 ![Полосы прокрутки в нажатом состоянии](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303 145_ScrollbarPressed")<br />Нажата полосы прокрутки  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Полоса прокрутки | `Environment.ScrollBarBackground` |
 | Передний план (бегунок) | `Environment.ScrollBarThumbPressedBackground` |
@@ -598,7 +595,7 @@ ms.locfileid: "49833347"
 
 ![Стрелки полосы прокрутки по умолчанию](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303 142_ScrollbarArrow")<br />Стрелки полосы прокрутки по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ScrollBarArrowBackground`<br />(Значение совпадает с цветом полосы прокрутки). |
 | Передний план (глиф) | `Environment.ScrollBarArrowGlyph` |
@@ -607,7 +604,7 @@ ms.locfileid: "49833347"
 
 ![Прокрутите панель со стрелками при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303 144_ScrollbarArrowHover")<br />Стрелки полосы прокрутки при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ScrollBarArrowMouseOverBackground`<br />(Значение совпадает с цветом полосы прокрутки). |
 | Передний план (глиф) | `Environment.ScrollBarArrowGlyphMouseOver` |
@@ -616,7 +613,7 @@ ms.locfileid: "49833347"
 
 ![Стрелки полосы прокрутки в нажатом состоянии](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br />При нажатии стрелки полосы прокрутки
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ScrollBarArrowPressedBackground`<br />(Значение совпадает с цветом полосы прокрутки). |
 | Передний план (глиф) | `Environment.ScrollBarArrowGlyphPressed` |
@@ -645,7 +642,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода для направленного поиска](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br />Поле ввода окна поиска с фокусом ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.FocusedBackground` |
 | Передний план (текст) | `SearchControl.FocusedBackground` |
@@ -656,7 +653,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода окна поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br />Поле ввода окна поиска без фокуса ввода, активный
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.SearchActiveBackground` |
 | Передний план (текст) | `SearchControl.SearchActiveBackground` |
@@ -667,7 +664,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода окна поиска без фокуса ввода, неактивные](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Поле ввода окна поиска без фокуса ввода, неактивные  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.Unfocused` |
 | Передний план (текст) | `SearchControl.Unfocused` |
@@ -678,7 +675,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода окна поиска выделенный](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br />Поле ввода окна поиска выделенные
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.Selection` |
 | Передний план (текст) | `SearchControl.FocusedBackground` |
@@ -689,7 +686,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода окна поиска отключено](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br />Поле ввода окна поиска отключено
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.Disabled` |
 | Передний план (текст) | `SearchControl.Disabled` |
@@ -700,7 +697,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br />Кнопка поиска с фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (глиф поиска) | `SearchControl.SearchGlyph` |
@@ -712,7 +709,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br />Кнопка поиска без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (глиф поиска) | `SearchControl.SearchGlyph` |
@@ -724,7 +721,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка нажата поиска](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Нажата кнопка поиска
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.ActionButtonMouseDown` |
 | Передний план (глиф) | `SearchControl.ActionButtonMouseDownGlyph` |
@@ -734,7 +731,7 @@ ms.locfileid: "49833347"
 
 ![Неактивная кнопка поиска](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br />Кнопка поиска отключено
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (глиф) | `SearchControl.ActionButtonDisabledGlyph` |
@@ -744,7 +741,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка для направленного поиска](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")<br />Кнопка раскрывающегося списка для направленного поиска
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.FocusedDropDownButton` |
 | Передний план (глиф) | `SearchControl.FocusedDropDownButtonGlyph` |
@@ -754,7 +751,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")<br />Кнопка раскрывающегося списка поиска без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.UnfocusedDropDownButton` |
 | Передний план (глиф) | `SearchControl.UnfocusedDropDownButtonGlyph` |
@@ -764,7 +761,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка поиска нажатом](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Активная кнопка раскрывающегося списка поиска
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.MouseDownDropDownButton` |
 | Передний план (глиф) | `SearchControl.MouseDownDropDownButtonGlyph` |
@@ -774,7 +771,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка поиска отключено](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br />Кнопка раскрывающегося списка поиска отключено
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | Нет |
 | Передний план (глиф) | `SearchControl.DisabledDownButtonGlyph` |
@@ -792,7 +789,7 @@ ms.locfileid: "49833347"
 
 **Элементы раскрывающегося списка поиска**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Border | `SearchControl.PopupBorder` |
 | Separator | `SearchControl.PopupSectionHeaderSeparator` |
@@ -802,7 +799,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию предлагаемые запросы поиска](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303 125_SearchSuggested")<br />По умолчанию предлагаемые запросы поиска  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `SearchControl.PopupItemText` |
@@ -811,7 +808,7 @@ ms.locfileid: "49833347"
 
 ![Рекомендуемые поисковые запросы, при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br />Предлагаемые запросы поиска при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `SearchControl.PopupMouseOverItemText` |
@@ -823,7 +820,7 @@ ms.locfileid: "49833347"
 
 ![Параметры поиска](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303 127_SearchOptions")<br />Параметры поиска по умолчанию (ссылка)  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст флажка) | `SearchControl.PopupCheckboxText` |
@@ -837,7 +834,7 @@ ms.locfileid: "49833347"
 
 ![Параметры (ссылка) поиска при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303 130_SearchOptionsHover")<br />Параметры поиска (ссылка) при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст флажка) | `SearchControl.PopupCheckboxMouseDownText` |
@@ -850,7 +847,7 @@ ms.locfileid: "49833347"
 
 ![Нажата параметры поиска (ссылка)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303 132_SearchOptionsPressed")<br />Нажата параметры поиска (ссылка)  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон флажка | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст флажка) | `SearchControl.PopupCheckboxMouseDownText` |
@@ -871,7 +868,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию элемент дерева](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303 148_TreeView")<br />По умолчанию элемент дерева
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.Background` |
 | Передний план (текст) | `TreeView.Background` |
@@ -882,7 +879,7 @@ ms.locfileid: "49833347"
 
 ![Элемент дерева при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303 149_TreeViewHover")<br />Элемент дерева при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.Background` |  
 | Передний план (текст) | `TreeView.Background` |
@@ -893,7 +890,7 @@ ms.locfileid: "49833347"
 
 ![Древовидная элемент представления на перетаскивания над](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303 150_TreeViewDragOver")<br />Перетащите элемент дерева на  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.DragOverItem` |
 | Передний план (текст) | `TreeView.DragOverItem` |
@@ -904,7 +901,7 @@ ms.locfileid: "49833347"
 
 ![Выбран и с фокусом ввода элемента представления дерева](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303 151_TreeViewFocused")<br />Элемент дерева выбранного и находящиеся в фокусе
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActive` |
@@ -915,7 +912,7 @@ ms.locfileid: "49833347"
 
 ![Элемент дерева выбранного и без фокуса ввода](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303 152_TreeViewUnfocused")<br />Элемент дерева выбранного и без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactive` |
@@ -926,7 +923,7 @@ ms.locfileid: "49833347"
 
 ![Выбран и элемент дерева с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br />Элемент дерева выбранного и находящиеся в фокусе при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActive` |
@@ -937,7 +934,7 @@ ms.locfileid: "49833347"
 
 ![Элемент дерева выбранного и без фокуса ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br />Элемент дерева выбранного и без фокуса ввода при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactive` |
@@ -958,7 +955,7 @@ ms.locfileid: "49833347"
 
 **Вид оболочки нижнего уровня**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Environment.EnvironmentBackground` |
 
@@ -966,7 +963,7 @@ ms.locfileid: "49833347"
 
 > Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |  
 
@@ -984,7 +981,7 @@ ms.locfileid: "49833347"
 
 > Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
@@ -992,7 +989,7 @@ ms.locfileid: "49833347"
 
 > Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
 
@@ -1008,33 +1005,33 @@ ms.locfileid: "49833347"
 
 **Вкладка "манифест конструктор выбранного": состояние по умолчанию**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `ManifestDesigner.TabActive` |
 | Border | Нет |
 
 **Манифеста панель конструктора выбранного описания: состояние по умолчанию**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `ManifestDesigner.DescriptionPane` |
 
 **Страница выбранного содержимого манифеста конструктора: состояние по умолчанию**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `ManifestDesigner.Background` |
 | Текст подсказки для диалогового окна | `ManifestDesigner.WatermarkText`<br />(Это имя токена не соответствует его функции.) |
 
 **Вкладка "манифест конструктор": невыделенного состояния**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `ManifestDesigner.Tab.Inactive` |
 
 **Вкладка "манифест конструктор": при наведении указателя мыши на состояния**
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `ManifestDesigner.Tab.Mouseover` |
 
@@ -1066,7 +1063,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию заголовок меню с глифом](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br />По умолчанию заголовок меню с глифом
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -1079,7 +1076,7 @@ ms.locfileid: "49833347"
 
 ![Заголовок меню с глифом при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")<br />Заголовок меню с глифом при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
@@ -1092,7 +1089,7 @@ ms.locfileid: "49833347"
 
 ![Нажатие заголовка меню с глифом](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")<br />Нажатие заголовка меню с глифом
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -1103,7 +1100,7 @@ ms.locfileid: "49833347"
 
 ![Отключить заголовок меню с глифом](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br />Заголовок отключенного меню с глифом
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
@@ -1124,7 +1121,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию элементы меню](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303 010_MenuDefault")<br />Элементы меню по умолчанию  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -1140,7 +1137,7 @@ ms.locfileid: "49833347"
 
 ![Выбранное меню](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303 012_MenuSelected")<br />Выбранного пункта меню    
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Флажок | `Environment.CommandBarCheckBox` |  
 | Фон флажка | `Environment.CommandBarSelectedIcon` |  
@@ -1155,7 +1152,7 @@ ms.locfileid: "49833347"
 
 ![Меню при наведении указателя мыши выбранных](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303 015_MenuHoverSelected")<br />Выбранный пункт меню при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMenuItemMouseOver` |
 | Передний план (текст) | `Environment.CommandBarMenuItemMouseOver` |
@@ -1171,7 +1168,7 @@ ms.locfileid: "49833347"
 
 ![Неактивное меню проверяется](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303 017_MenuDisabledChecked")<br />Отключенный элемент меню с флажком
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
 | Передний план (глиф подменю) | `Environment.CommandBarMenuSubmenuGlyph` |
@@ -1204,7 +1201,7 @@ ms.locfileid: "49833347"
 
 **Группа панели команд: состояние по умолчанию**  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Border | `Environment.CommandBarToolBarBorder` |
@@ -1225,7 +1222,7 @@ ms.locfileid: "49833347"
 
 ![Команда значок по умолчанию](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303 023_CommandIconDefault")<br />Значок команды по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д (наследуется от фона панели команд) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -1235,7 +1232,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию, значок выбранной команды](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br />По умолчанию, значок выбранной команды  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarSelected` |
 | Передний план (текст) | `Environment.CommandBarTextSelected` |
@@ -1245,7 +1242,7 @@ ms.locfileid: "49833347"
 
 ![Значок команды при наведении курсора мыши или фокус](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303 025_CommandIconHover")<br />Значок команды при наведении курсора мыши или фокус
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
@@ -1255,7 +1252,7 @@ ms.locfileid: "49833347"
 
 ![Выбрать значок команды при наведении курсора мыши или фокус](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303 026_CommandIconHoverSelected")<br />Значок выбранной команды при наведении курсора мыши или фокус
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarHoverOverSelected` |
 | Передний план (текст) | `Environment.CommandBarTextHoverOverSelected` |
@@ -1265,7 +1262,7 @@ ms.locfileid: "49833347"
 
 ![Нажата значок команды](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303 027_CommandIconPressed")<br />Активный значок команды
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextMouseDown` |
@@ -1275,7 +1272,7 @@ ms.locfileid: "49833347"
 
 ![Неактивный значок команды](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303 028_CommandIconDisabled")<br />Неактивный значок команды
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д (наследуется от фона панели команд) |
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
@@ -1297,7 +1294,7 @@ ms.locfileid: "49833347"
 
 ![Команда панели со списком поле ввода поля](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303 030_ComboBoxInputField")<br />Команда панели со списком поле ввода поля  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxBackground` |
 | Передний план (текст) | `Environment.ComboBoxText` |
@@ -1308,7 +1305,7 @@ ms.locfileid: "49833347"
 
 ![Раскрывающееся поле со списком&#45;нажатой кнопку](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Кнопка раскрывающегося списка на панели команд
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д (наследуется от фона панели команд) |
 | Передний план (глиф) | `Environment.ComboBoxGlyph` |
@@ -1317,7 +1314,7 @@ ms.locfileid: "49833347"
 
 ![Командной строке с раскрывающимся списком](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br />Командной строке с раскрывающимся списком
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxPopupBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.ComboBoxItemText` |
@@ -1327,7 +1324,7 @@ ms.locfileid: "49833347"
 
 ![Команда панели поле ввода поля со списком при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br />Команда панели поле ввода поля со списком при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.ComboBoxMouseOverText` |
@@ -1338,7 +1335,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка на панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")<br />Кнопка раскрывающегося списка на панели команд при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxButtonMouseOverBackground` |
 | Передний план (глиф) | `Environment.ComboBoxMouseOverGlyph` |
@@ -1347,7 +1344,7 @@ ms.locfileid: "49833347"
 
  ![Список раскрывающегося списка панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br />Список раскрывающегося списка панели команд при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон (пункт меню) | `Environment.ComboBoxItemMouseOverBackground` |
 | Передний план (текст) | `Environment.ComboBoxItemMouseOverText` |
@@ -1357,7 +1354,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода поля со списком на панели команд с фокусом ввода](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br />Командной строке входной поле поля со списком с фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxFocusedBackground` |
 | Передний план (текст) | `Environment.ComboBoxFocusedText` |
@@ -1368,7 +1365,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка на панели команд с фокусом ввода](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")<br />Фокус командной панели кнопку раскрывающегося списка
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxFocusedButtonBackground` |
 | Передний план (глиф) | `Environment.ComboBoxFocusedGlyph` |
@@ -1377,7 +1374,7 @@ ms.locfileid: "49833347"
 
 ![Нажата командной строке поле ввода поля со списком](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br />Нажата командной строке поле поля со списком ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxMouseDownBackground` |
 | Передний план (текст) | `Environment.ComboBoxMouseDownText` |
@@ -1388,7 +1385,7 @@ ms.locfileid: "49833347"
 
 ![Нажата кнопка раскрывающегося списка на панели команд](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")<br />Нажата кнопка раскрывающегося списка на панели команд  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxButtonMouseDownBackground` |
 | Передний план (глиф) | `Environment.ComboBoxMouseDownGlyph` |
@@ -1397,7 +1394,7 @@ ms.locfileid: "49833347"
 
 ![Поле ввода поля со списком на панели команд отключена](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br />Отключенные панели поле ввода поля со списком команд  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ComboBoxDisabledBackground` |
 | Передний план (текст) | `Environment.ComboBoxDisabledText` |
@@ -1408,7 +1405,7 @@ ms.locfileid: "49833347"
 
 ![Отключить кнопку раскрывающегося списка на панели команд](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br />Отключенной командной панели кнопку раскрывающегося списка
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (глиф) | `Environment.ComboBoxDisabledGlyph` |
@@ -1429,7 +1426,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию поле выбора раскрывающегося списка на панели команд](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303 043_DropdownSelectionField")<br />Поле выбора раскрывающегося списка строке команды по умолчанию  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownBackground` |
 | Передний план (текст) | `DropDownText` |
@@ -1440,7 +1437,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию панели кнопку раскрывающегося списка команд](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303 044_DropdownButton")<br />Кнопка раскрывающегося списка на панели команд по умолчанию  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (глиф) | `Environment.DropDownGlyph` |
@@ -1449,7 +1446,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию в раскрывающемся списке на панели команд](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303 045_DropdownList")<br />По умолчанию командной строке с раскрывающимся списком  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownPopupBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.ComboBoxItemText` |
@@ -1460,7 +1457,7 @@ ms.locfileid: "49833347"
 
 ![Поле выбора раскрывающегося списка панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br />Поле выбора раскрывающегося списка панели команд при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.DropDownMouseOverText` |
@@ -1471,7 +1468,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка раскрывающегося списка на панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303 047_DropdownButtonHover")<br />Кнопка раскрывающегося списка на панели команд при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownButtonMouseOverBackground` |
 | Передний план (глиф) | `Environment.DropDownMouseOverGlyph` |
@@ -1480,7 +1477,7 @@ ms.locfileid: "49833347"
 
 ![Список раскрывающегося списка панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303 048_DropdownListHover")<br />Список раскрывающегося списка панели команд при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон (пункт меню) | `Environment.ComboBoxItemMouseOverBackground` |
 | Передний план (текст) | `Environment.ComboBoxItemMouseOverText` |
@@ -1490,7 +1487,7 @@ ms.locfileid: "49833347"
 
 ![DROP&#45;вниз поле выбора нажата](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Нажата командной строке поле выбора раскрывающегося списка
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownMouseDownBackground` |
 | Передний план (текст) | `Environment.DropDownMouseDownText` |
@@ -1501,7 +1498,7 @@ ms.locfileid: "49833347"
 
 ![Нажата кнопка раскрывающегося списка на панели команд](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")<br />Нажата кнопка раскрывающегося списка на панели команд  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownButtonMouseDownBackground` |
 | Передний план (глиф) | `Environment.DropDownMouseDownGlyph` |
@@ -1510,7 +1507,7 @@ ms.locfileid: "49833347"
 
 ![Поле выбора раскрывающегося списка на панели команд отключена](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")<br />Отключенные панели поле выбора раскрывающегося списка команд
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DropDownDisabledBackground` |
 | Передний план (текст) | `Environment.DropDownDisabledText` |
@@ -1521,7 +1518,7 @@ ms.locfileid: "49833347"
 
 ![Отключить кнопку раскрывающегося списка на панели команд](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")<br />Отключенной командной панели кнопку раскрывающегося списка
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (глиф) | `Environment.DropDownDisabledGlyph` |
@@ -1540,7 +1537,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию в командной строке Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303 054_SplitButton")<br />Панели команд по умолчанию Разворачивающаяся кнопка  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Нет |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
@@ -1552,7 +1549,7 @@ ms.locfileid: "49833347"
 
 ![Панель команд Разворачивающаяся кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303 055_SplitButtonHover")<br />Панель команд Разворачивающаяся кнопка при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
@@ -1564,7 +1561,7 @@ ms.locfileid: "49833347"
 
 ![Команда панели Разворачивающаяся кнопка нажата](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303 056_SplitButtonPressed")<br />Панели разворачивающуюся кнопку в нажатом состоянии команд  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.CommandBarTextMouseDown` |
@@ -1576,7 +1573,7 @@ ms.locfileid: "49833347"
 
 ![Отключить командной строке Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br />Кнопка разделения отключенной командной строки
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (текст) | `Environment.ComboBoxItemTextInactive` |
@@ -1599,7 +1596,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию кнопка «Переполнение» на панели команд](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303 060_Overflow")<br />По умолчанию кнопка «Переполнение» на панели команд
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarOptionsBackground` |
 | Передний план (глиф) | `Environment.CommandBarOptionsGlyph` |
@@ -1610,7 +1607,7 @@ ms.locfileid: "49833347"
 
 ![«Overflow» кнопка на панели команд при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303 062_OverflowOptions")<br />«Overflow» кнопка на панели команд при наведении курсора мыши   
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (глиф) | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1621,7 +1618,7 @@ ms.locfileid: "49833347"
 
 ![Переполнение при нажатии](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303 064_OverflowPressed")<br />Нажата кнопка «Переполнение» на панели команд  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (глиф) | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1644,7 +1641,7 @@ ms.locfileid: "49833347"
 
 **Окно документа закрепленными или с плавающей запятой: состояние по умолчанию**  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Зависит от типа документа |
 | Передний план (текст) | Зависит от типа документа |
@@ -1654,7 +1651,7 @@ ms.locfileid: "49833347"
 
 ![По умолчанию с фокусом ввода, плавающий фрейм окна документа](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303 067_FrameFocused")<br />По умолчанию с фокусом ввода, плавающий фрейм окна документа
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowFloatingFrame` |
 | Передний план (текст) | `Environment.ToolWindowFloatingFrame` |
@@ -1666,7 +1663,7 @@ ms.locfileid: "49833347"
 
 ![Рамка окна документа без фокуса ввода, с плавающей запятой по умолчанию](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303 068_FrameUnfocused")<br />По умолчанию рамка окна документа без фокуса ввода, с плавающей запятой
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowFloatingFrameInactive` |
 | Передний план (текст) | `Environment.ToolWindowFloatingFrameInactive` |
@@ -1678,7 +1675,7 @@ ms.locfileid: "49833347"
 
 ![Фокус, плавающий фрейм окна документа при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303 069_FrameFocusedHover")<br />Фокус, плавающий фрейм окна документа при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон (глиф) | `Environment.RaftedWindowButtonHoverActive` |
 | Передний план (глиф) | `Environment.RaftedWindowButtonHoverActiveGlyph` |
@@ -1688,7 +1685,7 @@ ms.locfileid: "49833347"
 
 ![Рамка окна документа без фокуса ввода, с плавающей запятой при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303 070_FrameUnfocusedHover")<br />Без фокуса ввода, плавающий фрейм окна документа при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон (глиф) | `EnvironmentRaftedWindowButtonHoverInactive` |
 | Передний план (глиф) | `Environment.RaftedWindowButtonHoverInactiveGlyph` |
@@ -1698,7 +1695,7 @@ ms.locfileid: "49833347"
 
 ![Ориентированных и с плавающей запятой рамка окна документа на клавишу](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303 071_FrameFocusedPressed")<br />Ориентированных и с плавающей запятой рамка окна документа на клавишу
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон (глиф) | `Environment.RaftedWindowButtonDown` |
 | Передний план (глиф) | `Environment.RaftedWindowButtonDownGlyph` |
@@ -1731,7 +1728,7 @@ ms.locfileid: "49833347"
 
 ![Вкладки документов с фокусом ввода, выбран](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303 074_SelectedTabFocused")<br />Вкладки документов выбранного, фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabSelectedGradientTop`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.FileTabSelectedText` |
@@ -1742,7 +1739,7 @@ ms.locfileid: "49833347"
 
 ![Вкладки документов выбранного, без фокуса ввода](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br />Вкладки документов выбранного, без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabInactiveGradientTop`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.FileTabInactiveText` |
@@ -1753,7 +1750,7 @@ ms.locfileid: "49833347"
 
 ![Вкладка документа по умолчанию фона](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303 076_BackgroundTab")<br />Вкладка документа фона по умолчанию  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabBackground` |
 | Передний план (текст) | `Environment.FileTabText` |
@@ -1763,7 +1760,7 @@ ms.locfileid: "49833347"
 
 ![Вкладка фона документа при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303 077_BackgroundTabHover")<br />Вкладка фона документа при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabHotGradientTop`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.FileTabHotText` |
@@ -1783,7 +1780,7 @@ ms.locfileid: "49833347"
 
 ![Вкладка предварительного просмотра фокусом, выделенным](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303 079_PreviewTabFocused")<br />Вкладка предварительного просмотра фокусом, выделенным
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabProvisionalSelectedActive` |
 | Передний план (текст) | `Environment.FileTabProvisionalSelectedActiveForeground` |
@@ -1794,7 +1791,7 @@ ms.locfileid: "49833347"
 
 ![Вкладка предварительного просмотра без фокуса ввода, выделенным](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br />Вкладка предварительного просмотра без фокуса ввода, выделенным
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabProvisionalSelectedInactive` |
 | Передний план (текст) | `Environment.FileTabProvisionalSelectedInactiveForeground` |
@@ -1805,7 +1802,7 @@ ms.locfileid: "49833347"
 
 ![Фоновая вкладка предварительного просмотра по умолчанию](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br />Фоновая вкладка предварительного просмотра по умолчанию  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabProvisionalInactive` |
 | Передний план (текст) | `Environment.FileTabProvisionalInactiveForeground` |
@@ -1815,7 +1812,7 @@ ms.locfileid: "49833347"
 
 ![Фоновая вкладка предварительного просмотра при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br />Фоновая вкладка предварительного просмотра при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.FileTabProvisionalHover` |
 | Передний план (текст) | `Environment.FileTabProvisionalHoverForeground` |
@@ -1835,7 +1832,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка переполнения документа по умолчанию](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303 084_Overflow")<br />Кнопка переполнения документа по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DocWellOverflowButtonBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonGlyph` |
@@ -1845,7 +1842,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка переполнения документа при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303 085_OverflowHover")<br />Кнопка переполнения документа при наведении указателя
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
@@ -1855,7 +1852,7 @@ ms.locfileid: "49833347"
 
 ![Кнопка переполнения документа на материалах издательства press](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303 086_OverflowPressed")<br />Кнопка переполнения документа на материалах издательства press
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonMouseDownGlyph` |
@@ -1876,7 +1873,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Тег по умолчанию](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303 177_Tag")<br />Тег по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Tag.Background` |
 | Передний план (текст) | `Tag.Background` |
@@ -1885,7 +1882,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Тег при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303 178_TagHover")<br />Тег при наведении указателя мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | `Tag.HoverBackground` |
 | Передний план (текст) | `Tag.HoverBackgroundText` |
@@ -1894,7 +1891,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Нажата тега](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303 179_TagPressed")<br />Тег в нажатом состоянии  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.PressedBackground` |
 | Передний план (текст) | `Tag.PressedBackgroundText` |
@@ -1903,7 +1900,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Выбран тег](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303 180_TagSelected")<br />Выбранный тег  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.SelectedBackground` |
 | Передний план (текст) | `Tag.SelectedBackgroundText` |
@@ -1914,7 +1911,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![По умолчанию Close (&times;) тег глифа](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303 181_TagGlyph")<br />По умолчанию Close (&times;) тег глифа
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |  
 | Фон | Н/Д |
 | Передний план (глиф) | `Tag.TagHoverGlyph` |
@@ -1923,7 +1920,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Закрыть (&times;) тега при наведении курсора мыши глиф](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303 182_TagGlyphHover")<br />Закрыть (&times;) тега глиф при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.TagHoverGlyphHoverBackground` |
 | Передний план (глиф) | `Tag.TagHoverGlyphHover` |
@@ -1933,7 +1930,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Нажата Close (&times;) тег глифа](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303 183_TagGlyphPressed")<br />Нажата Close (&times;) тег глифа
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.TagHoverGlyphPressedBackground` |
 | Передний план (глиф) | `Tag.TagHoverGlyphPressed` |
@@ -1943,7 +1940,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Выбранный тег с закрытия по умолчанию (&times;) глифа](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303 184_TagSelected")<br />Выбранный тег с закрытия по умолчанию (&times;) глифа
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (глиф) | `Tag.TagSelectedGlyph` |
@@ -1953,7 +1950,7 @@ Visual Studio поддерживает добавление тегов, что �
 ![Выбран тег с Close (&times;) глиф при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Выбран тег с Close (&times;) глиф при наведении курсора мыши  
 
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.TagSelectedGlyphHoverBackground` |
 | Передний план (глиф) | `Tag.TagSelectedGlyphHover` |
@@ -1963,7 +1960,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Выбран, нажата тег с Close (&times;) глифа](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303 186_TagSelectedPressed")<br />Выбран, нажата тег с Close (&times;) глифа
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Tag.TagSelectedGlyphPressedBackground` |
 | Передний план (глиф) | `Tag.TagSelectedGlyphPressed` |
@@ -1991,7 +1988,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Закрепленное окно](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303 089_ToolWindowDocked")<br />Закрепленное окно  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowBackground` |
 | Border | `Environment.ToolWindowBorder` |
@@ -2000,7 +1997,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![С плавающей запятой, окно инструментов с фокусом ввода](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303 090_ToolWindowFocused")<br />С плавающей запятой, окно инструментов с фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowBackground` |
 | Border | `Environment.MainWindowActiveDefaultBorder` |
@@ -2009,7 +2006,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Окно инструментов с плавающей запятой, без фокуса ввода](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303 091_ToolWindowUnfocused")<br />С плавающей запятой, окна инструментов без фокуса ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowBackground` |
 | Border | `Environment.MainWindowInactiveBorder` |
@@ -2029,7 +2026,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Дочерний узел панели инструментов по умолчанию](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303 191_ToolboxChildNode")<br />Дочерний узел панели инструментов по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolboxContent`<br />(Заголовки) |
 | Фон | `Environment.ToolWindowBackground`<br />(Отдельные элементы или все окно, если нет доступных элементов управления) |
@@ -2041,7 +2038,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Дочерний узел панели инструментов при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br />Дочерний узел панели инструментов при наведении указателя мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolboxContentMouseOver`<br />(Только для отдельных элементов) |
 | Border | Нет |
@@ -2053,7 +2050,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Дочерний узел панели инструментов фокусом, выделенным](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br />Дочерний узел панели инструментов фокусом, выделенным
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemActive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Border | `TreeView.FocusVisualBorder`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
@@ -2066,7 +2063,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Дочерний узел панели инструментов выбранной, без фокуса ввода](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br />Дочерний узел панели инструментов выбранной, без фокуса ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `TreeView.SelectedItemInactive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Border | Нет |
@@ -2086,7 +2083,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Строки заголовка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303 093_TitleBarFocused")<br />Заголовок окна с фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.TitleBarActiveGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.TitleBarActiveText` |
@@ -2097,7 +2094,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Строки заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303 094_TitleBarUnfocused")<br />Заголовок окна без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.TitleBarInactiveGradientBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.TitleBarInactiveText` |
@@ -2116,7 +2113,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![По умолчанию, кнопки в заголовке окна с фокусом ввода](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br />По умолчанию, кнопки в строке заголовка с фокусом ввода  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (глиф) | `Environment.ToolWindowButtonActiveGlyph` |
@@ -2126,7 +2123,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![По умолчанию, кнопки в строке заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br />По умолчанию, кнопки в строке заголовка без фокуса ввода    
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | Н/Д |
 | Передний план (глиф) | `Environment.ToolWindowButtonInactiveGlyph` |
@@ -2136,7 +2133,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Кнопки в заголовке окна с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br />Кнопки в строке заголовка с фокусом ввода при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowButtonHoverActive` |
 | Передний план (глиф) | `Environment.ToolWindowButtonHoverActiveGlyph` |
@@ -2146,7 +2143,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Кнопки в строке заголовка без фокуса ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br />Кнопки в строке заголовка без фокуса ввода при наведении курсора мыши
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowButtonHoverInactive` |
 | Передний план (глиф) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
@@ -2156,7 +2153,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Уделено кнопки в заголовке окна нажмите клавишу](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br />Кнопки в строке заголовка с фокусом на материалах издательства press
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowButtonDown` |
 | Передний план (глиф) | `Environment.ToolWindowButtonDownActiveGlyph` |
@@ -2166,7 +2163,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Кнопки в строке заголовка без фокуса ввода на материалах издательства press](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br />Кнопки в строке заголовка без фокуса ввода на материалах издательства press  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowButtonDown` |
 | Передний план (глиф) | `Environment.ToolWindowButtonDownInactiveGlyph` |
@@ -2183,7 +2180,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Вкладка окна инструментов с фокусом ввода, выбран](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br />Выбранная вкладка окна инструментов с фокусом ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowTabSelectedTab` |
 | Передний план (текст) | `Environment.ToolWindowTabSelectedActiveText` |
@@ -2193,7 +2190,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Вкладка окна выбранных инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br />Выбранная вкладка окна инструментов без фокуса ввода
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowTabSelectedTab` |
 | Передний план (текст) | `Environment.ToolWindowTabSelectedText` |
@@ -2203,7 +2200,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![По умолчанию фоновая вкладка окна инструментов](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br />По умолчанию фоновая вкладка окна инструментов  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Ограничения градиента устанавливаются в одно и то же значение цвета в Visual Studio 2013.) |
 | Передний план (текст) | `Environment.ToolWindowTabText` |
@@ -2213,7 +2210,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Фоновая вкладка окна инструментов при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br />Фоновая вкладка окна инструментов при наведении указателя
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Ограничения градиента устанавливаются в одно и то же значение цвета в Visual Studio 2013.) |
 | Передний план (текст) | `Environment.ToolWindowTabMouseOverText` |
@@ -2231,7 +2228,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Автоматически скрываемая вкладка по умолчанию](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303 108_AutoHideTab")<br />Автоматически скрываемая вкладка по умолчанию
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.AutoHideTabBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.AutoHideTabText` |
@@ -2241,7 +2238,7 @@ Visual Studio поддерживает добавление тегов, что �
 
 ![Вкладка автоматического скрытия при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303 109_AutoHideTabHover")<br />Вкладка автоматического скрытия при наведении курсора мыши  
 
-| Элемент | Имя токена: Category.color |
+| Элемент | Имя токена: Category.Color |
 | --- | --- |
 | Фон | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Ограничения градиента для данного токена, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст) | `Environment.AutoHideTabMouseOverText` |

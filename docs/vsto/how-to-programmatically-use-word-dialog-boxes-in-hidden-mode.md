@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное использование диалоговых окон Word в скрытом режиме'
-ms.custom: ''
+title: Как выполнить Программное использование диалоговых окон Word в скрытом режиме
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819631"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Практическое: программное использование диалоговых окон Word в скрытом режиме
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Как выполнить Программное использование диалоговых окон Word в скрытом режиме
   Можно выполнять сложные операции с помощью одного вызова метода путем вызова встроенных диалоговых окон в Microsoft Office Word без отображения их пользователю. Это можно сделать с помощью <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> метод <xref:Microsoft.Office.Interop.Word.Dialog> объекта без вызова <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> метод.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35674820"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Практическое руководство. Программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
  [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection) (Отражение (C#))  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection) (Отражение (Visual Basic))  
-  
-  

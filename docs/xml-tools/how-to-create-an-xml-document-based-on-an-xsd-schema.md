@@ -1,8 +1,7 @@
 ---
-title: Как создать XML-документ на основе XSD-схемы
+title: Как выполнить Создание XML-документа на основе схемы XSD
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820203"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как: создать XML-документ, на основе схемы XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как выполнить Создание XML-документа на основе схемы XSD
 
-**Создание образца XML** функция создает образец XML-файла на основе вашего файла схемы XML (XSD).
+**Создание образца XML** функция создает пример XML-файла, на базе файла схемы XML (XSD).
 
  Этот пункт можно использовать в следующих случаях.
 
@@ -27,7 +26,7 @@ ms.locfileid: "34549094"
 
 -   Чтобы убедиться в том, что схема функционирует должным образом.
 
-**Создание образца XML** компонент доступен только для глобальных элементов и требует набор схем XML был допустимым.
+**Создание образца XML** компонент доступен только для глобальных элементов и требует допустимый набор схем XML.
 
 С помощью этой возможности обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.
 
@@ -43,11 +42,11 @@ ms.locfileid: "34549094"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Создание экземпляра XML-документа на основе XSD-файла.
 
-1.  Следуйте указаниям в [как: Создание и изменение файла XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.
 
-     При выборе этого параметра PurchaseOrder. *xml* файл следующий образец XML-содержимого, которые будут создаваться и открывается в редакторе XML:
+     Если выбран этот параметр, PurchaseOrder. *xml* файл со следующим содержимым образец XML будет создан и открыт в редакторе XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

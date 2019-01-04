@@ -1,9 +1,6 @@
 ---
 title: Безопасность решений SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904907"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Безопасность решений SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] включает в себя следующие функции для повышения безопасности приложений SharePoint.
@@ -78,13 +75,13 @@ ms.locfileid: "49878769"
 
 -   [Защита веб-частей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Повышение безопасности веб-приложений: Угрозы и меры противодействия](http://go.microsoft.com/fwlink/?LinkID=140080)
+-   [Повышение безопасности веб-приложений. Угрозы и меры противодействия](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Общая безопасность
 
 -   [Жизненный цикл разработки безопасности MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Разработка безопасных приложений ASP.NET: Проверка подлинности, авторизации и безопасный обмен данными](http://go.microsoft.com/fwlink/?LinkId=177494)
+-   [Разработка безопасных приложений ASP.NET: Проверка подлинности, авторизация и безопасный обмен данными](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>См. также
 

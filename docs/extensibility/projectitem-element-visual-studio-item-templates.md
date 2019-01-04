@@ -1,9 +1,7 @@
 ---
 title: Элемент ProjectItem (шаблоны элементов Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956066"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Элемент ProjectItem (шаблоны элементов Visual Studio)
 Указывает файл, включенный в шаблон элемента.  
@@ -64,7 +62,7 @@ ms.locfileid: "49855993"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|  
   
@@ -82,7 +80,7 @@ ms.locfileid: "49855993"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- При создании элемента на основе этого шаблона, имя файла будет основываться на имя, введенное пользователем в **Добавление нового элемента** диалоговое окно. Это полезно в тех случаях, когда создание многофайловых шаблонов элементов. Дополнительные сведения см. в разделе [как: создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона](../ide/template-parameters.md).  
+ При создании элемента на основе этого шаблона, имя файла будет основываться на имя, введенное пользователем в **Добавление нового элемента** диалоговое окно. Это полезно в тех случаях, когда создание многофайловых шаблонов элементов. Дополнительные сведения см. в разделе [Как Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] класса.  
@@ -106,5 +104,5 @@ ms.locfileid: "49855993"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Практическое: создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)   
+ [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)

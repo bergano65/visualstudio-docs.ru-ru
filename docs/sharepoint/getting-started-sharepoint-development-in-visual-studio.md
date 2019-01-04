@@ -1,9 +1,6 @@
 ---
 title: Приступая к работе (Разработка приложений SharePoint в Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847422"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Получить работы (Разработка приложений SharePoint в Visual Studio)
   Этот раздел поможет начать работу с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для разработки решений SharePoint, которые используют преимущества [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -33,13 +30,13 @@ ms.locfileid: "51295219"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|Раздел|Описание|
+|Раздел|Описание:|
 |-----------|-----------------|
 |[Дополнительные сведения об ошибках SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Описывает, где найти справочную информацию по разработке решений SharePoint и устранению неполадок в них.|
 
 ## <a name="related-sections"></a>Связанные разделы
 
-|Раздел|Описание|
+|Раздел|Описание:|
 |-----------|-----------------|
 |[Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Описывает разработку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Создание столбцов сайта, типов содержимого и списков для SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Здесь описываются способы создания пользовательских столбцов сайта, типов содержимого и списков для SharePoint с помощью средств Visual Studio для разработки SharePoint.|

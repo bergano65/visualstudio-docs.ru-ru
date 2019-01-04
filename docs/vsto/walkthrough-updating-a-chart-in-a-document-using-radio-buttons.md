@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей'
-ms.custom: ''
+title: Пошаговое руководство. Обновление диаграммы в документе, с помощью переключателей
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943240"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Пошаговое руководство. Обновление диаграммы в документе, с помощью переключателей
   В данном пошаговом руководстве описывается использование переключателей в настройке уровня документа для Microsoft Office Word, позволяющих пользователям выбирать стили диаграмм в документе.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904678"
   
 ### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект документа Word с именем **параметры моей диаграммы**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект документа Word с именем **параметры моей диаграммы**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новый документ Word в конструкторе и добавляет **параметры моей диаграммы** проект **обозревателе решений**.  
   
@@ -76,7 +73,7 @@ ms.locfileid: "49904678"
   
 6.  На **макета** вкладке **формат объекта** выберите **квадрат** и нажмите кнопку **ОК**.  
   
-## <a name="add-a-user-control-to-the-project"></a>Добавьте в проект пользовательский элемент управления  
+## <a name="add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект  
  Переключатели в документе не являются взаимоисключающими по умолчанию. Их работу можно сделать правильной, добавив их в пользовательский элемент управления и написав код для управления выбором.  
   
 ### <a name="to-add-a-user-control"></a>Добавление пользовательского элемента управления  
@@ -211,13 +208,11 @@ ms.locfileid: "49904678"
 ## <a name="next-steps"></a>Следующие шаги  
  Ниже приводятся некоторые из возможных последующих задач.  
   
--   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображения текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Изменение форматирования путем выбора стиля из поля со списком. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Изменение форматирования путем выбора стиля из поля со списком. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
  [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

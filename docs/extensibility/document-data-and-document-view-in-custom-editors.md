@@ -1,9 +1,6 @@
 ---
 title: Данные документа и документа просмотра в специализированных редакторах | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818879"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Данные документа и представление документа в специализированных редакторах
 Специализированный редактор состоит из двух частей: объект данных документа и объект представления документа. Объект данных документа предполагают их имена, представляет текстовые данные для отображения. Аналогичным образом объект представления документа (или «view») представляет один или несколько периодов, в котором отображается объект данных документа.  
@@ -42,7 +39,7 @@ ms.locfileid: "39639819"
 ## <a name="see-also"></a>См. также  
  [Поддерживает несколько представлений документов](../extensibility/supporting-multiple-document-views.md)   
  [Упрощенное внедрение](../extensibility/simplified-embedding.md)   
- [Практическое: вложение представлений данных документа](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Практическое руководство. Присоединение представлений данных документа](../extensibility/how-to-attach-views-to-document-data.md)   
  [Управление контейнером блокировки документа](../extensibility/document-lock-holder-management.md)   
  [Представления одной и несколькими вкладками](../extensibility/single-and-multi-tab-views.md)   
  [Сохранение стандартного документа](../extensibility/internals/saving-a-standard-document.md)   

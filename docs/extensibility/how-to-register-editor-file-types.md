@@ -1,8 +1,6 @@
 ---
-title: 'Практическое: регистрация типов файлов в редакторе | Документация Майкрософт'
+title: Как выполнить Регистрация типов файлов в редакторе | Документация Майкрософт
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857806"
 ---
-# <a name="how-to-register-editor-file-types"></a>Практическое: регистрация редактор типов файлов
+# <a name="how-to-register-editor-file-types"></a>Как выполнить Регистрация типов файлов в редакторе
 Самый простой способ зарегистрировать редактор типов файлов — с помощью регистрации атрибутов, предоставляемых в составе [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] классы managed package framework (MPF). При реализации пакета в машинный код [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], можно также написать скрипт реестра, который регистрирует редактора и связанные расширения.
 
 ## <a name="registration-using-mpf-classes"></a>Регистрацию с помощью классы MPF

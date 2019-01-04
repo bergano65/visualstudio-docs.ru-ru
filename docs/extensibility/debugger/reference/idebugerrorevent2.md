@@ -1,9 +1,6 @@
 ---
-title: IDebugErrorEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugErrorEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68185726fd81e231ec1dbef471b4afa638de1703
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd11440b5b50f41674e9837b88ca15e4c0144d37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901260"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
-Этот интерфейс указывает сообщение об ошибке, представляются пользователю.  
+Этот интерфейс задает сообщение об ошибке возвращаются пользователю.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,20 +29,20 @@ IDebugErrorEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс для отчетов об ошибках, как сообщения восприятия. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ Модуль отладки (DE) реализует этот интерфейс для сообщения об ошибках как доступное для чтения сообщения. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE создает и отправляет этот объект события для сообщения об ошибке. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE создает и отправляет этот объект события, чтобы сообщить об ошибке. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|`GetErrorMessage`|Возвращает ошибку, как читаемую пользователем строку.|  
+|`GetErrorMessage`|Возвращает сообщение об ошибке в понятном виде.|  
   
 ## <a name="remarks"></a>Примечания  
- Если отладчик обнаруживает ошибку, этот интерфейс можно использовать для передачи сообщения в Visual Studio, чтобы пользователь.  
+ Если отладчик обнаруживает ошибку, этот интерфейс можно использовать чтобы сообщить пользователю сообщение через Visual Studio.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

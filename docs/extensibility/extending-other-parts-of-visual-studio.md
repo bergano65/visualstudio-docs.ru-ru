@@ -1,9 +1,6 @@
 ---
 title: Расширение других частей Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967285"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Расширение других частей Visual Studio
 Существуют дополнительные части пользовательского интерфейса Visual Studio, можно расширить. Здесь мы покажем несколько.  
   
 ## <a name="create-a-vspackage"></a>Создание пакета VSPackage  
- Основные стандартные блоки расширяемость Visual Studio, пакеты VSPackage.  Сведения о добавлении VSPackage: [создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+ Основные стандартные блоки расширяемость Visual Studio, пакеты VSPackage.  Сведения о добавлении VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
 ## <a name="extend-the-toolbox"></a>Расширение панели элементов  
  Узнайте, как добавить новые элементы управления и других элементов на панель элементов и использование функций элементов:  
@@ -34,10 +31,10 @@ ms.locfileid: "39639530"
 -   [Создание элемента управления панели элементов Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extend-the-status-bar"></a>Расширение строки состояния  
- Узнайте, как для чтения и записи к строке состояния и индикатор хода выполнения и как обеспечить анимации и другой пользовательский Интерфейс: [расширение строки состояния](../extensibility/extending-the-status-bar.md).  
+ Узнайте, как для чтения и записи к строке состояния и индикатор хода выполнения и как обеспечить анимации и другой пользовательский Интерфейс: [Расширение строки состояния](../extensibility/extending-the-status-bar.md).  
   
 ## <a name="create-custom-start-pages"></a>Создавать настраиваемые начальные страницы  
  Узнайте, как создать собственную начальную страницу, либо с нуля, либо из образца страницы загружаемых начала: [Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="write-to-the-activity-log"></a>Запись в журнале действий  
- Узнайте, как для записи в журнал действий: [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
+ Узнайте, как для записи в журнал действий: [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).

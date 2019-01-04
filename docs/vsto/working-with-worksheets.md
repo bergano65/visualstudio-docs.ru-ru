@@ -1,9 +1,6 @@
 ---
 title: Работа с листами
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,35 +13,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bc87817453e0d1d11c08b1c8baabb73f590ede
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9133fbf2e8ede3ec8595ae3a0e22bea3b5b07c6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857696"
 ---
 # <a name="work-with-worksheets"></a>Работа с листами
   Классы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Worksheet> содержат методы и свойства, применяемые для выполнения задач с листами.  
   
 |Задача|Процедура|  
 |----------|---------------|  
-|Добавление нового листа в книгу.|[Практическое: программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
-|Создание копии листа в указанном месте в книге.|[Практическое: программное копирование листов Excel](../vsto/how-to-programmatically-copy-worksheets.md)|  
-|Удаление указанного листа.|[Практическое: программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
-|Перемещение фрагмента, выделенного пользователем, на указанный лист.|[Практическое: программный Выбор листов Excel](../vsto/how-to-programmatically-select-worksheets.md)|  
-|Выполнение итерации по коллекции всех листов.|[Практическое: программное перечисление всех листов в книге](../vsto/how-to-programmatically-list-all-worksheets-in-a-workbook.md)|  
-|Предварительный просмотр и печать листа.|[Практическое: программная печать листов Excel](../vsto/how-to-programmatically-print-worksheets.md)|  
-|Перемещение листа на новое место в книге.|[Практическое: программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)|  
-|Изменение видимости одного или нескольких листов.|[Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)|  
-|Блокировка возможности изменения всего листа или его части.|[Практическое: программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)|  
-|Снятие блокировки с листа.|[Практическое: программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
-|Добавление и удаление комментариев.|[Практическое: программное добавление и удаление примечаний на листе](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
-|Отображение или скрытие всех комментариев.|[Практическое: программное отображение примечаний на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
-|Создание групп на листах.|[Практическое: программная группировка строк на листах](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
-|Выделение строки полужирным только в том случае, когда она содержит выбранную ячейку.|[Практическое: программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
-|Копирование данных и форматирование между листами|[Практическое: программное копирование данных и форматирование между листами](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)|  
-|Проверка орфографии на листах.|[Практическое: Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
-|Сортировка данных в именованных диапазонах и объектах списка.|[Практическое: программная сортировка данных на листах](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
+|Добавление нового листа в книгу.|[Практическое руководство. Программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
+|Создание копии листа в указанном месте в книге.|[Практическое руководство. Программное копирование листов Excel](../vsto/how-to-programmatically-copy-worksheets.md)|  
+|Удаление указанного листа.|[Практическое руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
+|Перемещение фрагмента, выделенного пользователем, на указанный лист.|[Практическое руководство. Программный выбор листов Excel](../vsto/how-to-programmatically-select-worksheets.md)|  
+|Выполнение итерации по коллекции всех листов.|[Практическое руководство. Программное перечисление всех листов в книге](../vsto/how-to-programmatically-list-all-worksheets-in-a-workbook.md)|  
+|Предварительный просмотр и печать листа.|[Практическое руководство. Программная печать листов Excel](../vsto/how-to-programmatically-print-worksheets.md)|  
+|Перемещение листа на новое место в книге.|[Практическое руководство. Программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)|  
+|Изменение видимости одного или нескольких листов.|[Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)|  
+|Блокировка возможности изменения всего листа или его части.|[Практическое руководство. Программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)|  
+|Снятие блокировки с листа.|[Практическое руководство. Программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
+|Добавление и удаление комментариев.|[Практическое руководство. Программное добавление и удаление примечаний на листе](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
+|Отображение или скрытие всех комментариев.|[Практическое руководство. Программное отображение примечаний на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
+|Создание групп на листах.|[Практическое руководство. Программная группировка строк на листах](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
+|Выделение строки полужирным только в том случае, когда она содержит выбранную ячейку.|[Практическое руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
+|Копирование данных и форматирование между листами|[Практическое руководство. Программное копирование данных и форматирование между листами](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)|  
+|Проверка орфографии на листах.|[Практическое руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
+|Сортировка данных в именованных диапазонах и объектах списка.|[Практическое руководство. Программная сортировка данных на листах](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
   
  Дополнительные сведения о задачах и объектной модели Excel см. в разделе [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).  
   
@@ -55,5 +52,3 @@ ms.locfileid: "35258376"
  [Работа с книгами](../vsto/working-with-workbooks.md)   
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
  [С помощью элементов управления Windows Forms в листах Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
-  
-  

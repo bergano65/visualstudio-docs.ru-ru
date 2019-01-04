@@ -1,13 +1,8 @@
 ---
-title: 'Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918788"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
 Служба бизнес-данным (BDC) включает SharePoint для отображения бизнес-данные из серверных приложений, веб-служб и баз данных.
 
@@ -125,7 +120,7 @@ ms.locfileid: "51295843"
 
 Добавление сущности в модель. Можно добавлять сущности из Visual Studio **элементов** в конструктор BDC.
 
-1. В строке меню выберите **представление** > **элементов**.
+1. В строке меню выберите **Вид** > **Панель элементов**.
 
 2. На **BusinessDataConnectivity** вкладке **элементов**, добавьте **сущности** в конструктор BDC.
 
@@ -275,9 +270,9 @@ ms.locfileid: "51295843"
 
 Дополнительные сведения о способах проектирования модели для службы BDC в SharePoint в следующих разделах:
 
-- [Практическое: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md).
-- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md).
+- [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md).
+- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>См. также
 

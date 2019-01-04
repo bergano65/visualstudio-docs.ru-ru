@@ -1,9 +1,6 @@
 ---
 title: С помощью MSBuild | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, compiling with MSBuild
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f27d3c5c7465314a7e9005972dec1349c1b9d89f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: de9ab4a6a6591c4a45755b0a9f3682ac5e40c676
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836771"
 ---
 # <a name="using-msbuild"></a>Использование MSBuild
 MSBuild предоставляет строго определенными, расширяемый формат XML для создания файлов проекта, полного описания элементов проекта для построения, задачи сборки и конфигураций сборки.  

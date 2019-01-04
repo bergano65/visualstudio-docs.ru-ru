@@ -1,8 +1,7 @@
 ---
-title: 'CA1052: типы со статическими заполнителями должны быть запечатаны'
+title: CA1052. Типы со статическими заполнителями должны быть запечатаны
 ms.date: 11/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 937a5eba672eef928dd4f8c0e5356e504d769153
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0ec090fd11c122699bafb3d72ca1eeab13ecb830
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825949"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: типы со статическими заполнителями должны быть запечатаны
+# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052. Типы со статическими заполнителями должны быть запечатаны
 
 |||
 |-|-|
@@ -68,4 +67,4 @@ CA1052 правило предполагает, что тип, который с
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1053: типы статических владельцев не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+[CA1053: Типы со статическими заполнителями не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

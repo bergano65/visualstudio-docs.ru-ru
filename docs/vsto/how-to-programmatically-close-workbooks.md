@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное закрытие книг Excel'
-ms.custom: ''
+title: Как выполнить Программное закрытие книг Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893199"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Практическое: программное закрытие книг Excel
+# <a name="how-to-programmatically-close-workbooks"></a>Как выполнить Программное закрытие книг Excel
   Можно закрыть активную книгу или указать, какую книгу следует закрыть.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35675138"
   
 ## <a name="see-also"></a>См. также  
  [Работа с книгами](../vsto/working-with-workbooks.md)   
- [Практическое: программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)   
- [Практическое: программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Практическое руководство. Программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Практическое руководство. Программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

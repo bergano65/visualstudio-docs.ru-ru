@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: Добавление и удаление дополнительных сборок | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление дополнительных сборок | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887014"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Практическое: Добавление и удаление дополнительных сборок
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Как выполнить Добавление и удаление дополнительных сборок
   Если пакет SharePoint зависит от других сборок, функциональные возможности и данные, можно добавить сборки в пакет решения (WSP-файл). Таким образом, SharePoint server гарантирует, что пользовательские сборки устанавливаются вместе с пакетом.  
   
  Кроме того, можно также добавлять и изменять безопасные элементы управления и файлы ресурсов классов, связанные со сборками.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219150"
   
 #### <a name="to-add-an-existing-assembly"></a>Чтобы добавить существующую сборку  
   
-1.  Откройте **конструктор пакетов**. Дополнительные сведения см. в разделе [как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Откройте **конструктор пакетов**. Дополнительные сведения см. в разделе [Как Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Выберите **Дополнительно** вкладки.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219150"
   
 1.  Откройте **конструктор пакетов**.  
   
-     Дополнительные сведения см. в разделе [как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Дополнительные сведения см. в разделе [Как Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Выберите **Дополнительно** вкладки.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219150"
   
 #### <a name="to-delete-an-existing-assembly"></a>Чтобы удалить существующую сборку  
   
-1.  Откройте **конструктор пакетов**. Дополнительные сведения см. в разделе [как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Откройте **конструктор пакетов**. Дополнительные сведения см. в разделе [Как Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Выберите **Дополнительно** вкладки.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219150"
   
 ## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Практическое: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Практическое: Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Практическое руководство. Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

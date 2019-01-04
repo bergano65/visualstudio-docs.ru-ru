@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: создание. Файл Vsct | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создать. Файл Vsct | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885334"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Практическое: Создание файла vsct  
+# <a name="how-to-create-a-vsct-file"></a>Как выполнить Создание файла vsct  
   
 Существует несколько способов для создания конфигурации таблицы команд Visual Studio на основе XML (*.vsct*) файла.  
   
@@ -56,7 +53,7 @@ ms.locfileid: "49921214"
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое: Создание файла .vsct из существующего файла ctc  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Как выполнить Создание файла .vsct из существующего файла ctc  
   
 Можно создать на базе XML *.vsct* файл из существующей таблицы команды *.ctc* исходный файл. Таким образом можно воспользоваться новым форматом компилятора таблицы команд [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] на основе XML (VSCT).  
   
@@ -87,7 +84,7 @@ ms.locfileid: "49921214"
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое: Создание файла vsct на основе существующего файла cto  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Как выполнить Создание файла vsct на основе существующего файла cto  
   
 Можно создать на базе XML *.vsct* файл из существующего двоичного файла *.cto* файла. Это позволяет воспользоваться преимуществами нового формата компилятора таблицы команд. Этот процесс работает даже если *.cto* файл составлен из *.ctc* файла. Можно изменить и скомпилировать *.vsct* файл в другой файл cto.  
   

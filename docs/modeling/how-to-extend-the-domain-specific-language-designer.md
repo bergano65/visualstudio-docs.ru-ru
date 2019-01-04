@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Расширение конструктора доменного языка
+title: Как выполнить Расширение конструктора предметно-ориентированных языков
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940710"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Как выполнить Расширение конструктора предметно-ориентированных языков
 
 Расширения можно создать в конструктор, который позволяет изменять определения DSL. Типы расширения, можно выполнить следующие Добавление команд меню, добавление обработчиков для перетащите и дважды щелкните жестов и правила, которые активируются при изменении определенных типов значений или связей. Расширения можно упаковать как Visual Studio Integration Extension (VSIX) и распределенных другим пользователям.
 

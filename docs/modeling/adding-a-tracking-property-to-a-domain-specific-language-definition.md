@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946046"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение предметно-ориентированного языка
 
@@ -719,7 +718,7 @@ ms.locfileid: "50967484"
 
 Следующий шаг — построение и запуск конструктора DSL в новый экземпляр класса [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , можно проверить, правильно ли работает свойства отслеживания.
 
-1. На **построения** меню, щелкните **Перестроить решение**.
+1. В меню **Построить** выберите пункт **Перестроить решение**.
 
 2. В меню **Отладка** щелкните **Начать отладку**.
 
@@ -762,4 +761,4 @@ ms.locfileid: "50967484"
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
-- [Практическое руководство. Создание решения на доменном языке](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Практическое руководство. Создайте решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md)

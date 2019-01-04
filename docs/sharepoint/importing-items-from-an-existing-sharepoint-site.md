@@ -1,17 +1,12 @@
 ---
 title: Импорт элементов из существующего сайта SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918158"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Импорт элементов из существующего сайта SharePoint
   Шаблон проекта "Импорт пакета решения SharePoint" позволяет многократно использовать элементы, такие как типы контента и поля, из существующих сайтов SharePoint в новом решении SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Хотя большинство импортированных решений можно запускать без изменений, существуют некоторые ограничения и вопросы, которые необходимо учитывать, особенно если вы изменяете какие-либо элементы после их импорта.  
@@ -103,7 +98,7 @@ ms.locfileid: "49832112"
 ## <a name="import-fields-and-property-bags"></a>Импорт полей и контейнеров свойств
  При импорте решения с несколькими полями все отдельные определения полей объединяются в единое *Elements.xml* файла в узле **обозревателе решений** вызывается **поля** . Аналогично, все записи контейнеров свойств объединяются в *Elements.xml* файла в узле с именем **PropertyBags**.  
   
- Поля в SharePoint — это столбцы с указанным типом данных, таким как text, Boolean или lookup. Дополнительные сведения см. в разделе [Стандартный блок: столбцы и типы полей](http://go.microsoft.com/fwlink/?LinkId=182304). Контейнеры свойств позволяют добавлять свойства ко всем объектам в SharePoint, от фермы до списка, на сайте SharePoint. Контейнеры свойств реализованы в виде хэш-таблицы имен и значений свойств. Дополнительные сведения см. в разделе [Управление конфигурацией SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) или [Параметры свойств контейнера SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ Поля в SharePoint — это столбцы с указанным типом данных, таким как text, Boolean или lookup. Дополнительные сведения см. в разделе [стандартный блок: Столбцы и типы полей](http://go.microsoft.com/fwlink/?LinkId=182304). Контейнеры свойств позволяют добавлять свойства ко всем объектам в SharePoint, от фермы до списка, на сайте SharePoint. Контейнеры свойств реализованы в виде хэш-таблицы имен и значений свойств. Дополнительные сведения см. в разделе [Управление конфигурацией SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) или [Параметры свойств контейнера SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Удаление элементов проекта
  Большинство элементов решений SharePoint имеет хотя бы один зависимый элемент. Например, экземпляры списка зависят от типов контента, а типы контента зависят от полей. После импорта решения SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не уведомляет вас о каких-либо проблемах со ссылками, если вы удаляете из решения элемент без его зависимых элементов, пока вы не попытаетесь развернуть решение. Например, если импортированное решение содержит экземпляр списка, который зависит от типа контента, и вы удалите этот тип контента, то при развертывании может возникнуть ошибка. Эта ошибка возникает, если зависимый элемент отсутствует на сервере SharePoint. Аналогично, если удаленный элемент также содержит контейнер связанного свойства, удалите эти записи свойств контейнера из **PropertyBags** *Elements.xml* файл. Поэтому, если при удалении каких-либо элементов из импортированного решения и появляются ошибки развертывания, необходимо узнать, есть ли какие-либо зависимые элементы, которые также должны быть удалены.  
@@ -142,4 +137,4 @@ ms.locfileid: "49832112"
  [Пошаговое руководство: Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Руководства по импорту многократно используемых рабочих процессов](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Практическое: Добавление существующего файла модели BDC в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Практическое руководство. Добавление существующего файла модели BDC в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

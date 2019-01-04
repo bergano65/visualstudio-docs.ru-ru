@@ -1,9 +1,6 @@
 ---
 title: Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891947"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей
   В этом пошаговом руководстве описываются основные принципы с помощью переключателей на лист Microsoft Office Excel, чтобы дать пользователю возможность быстро переключаться между вариантами. В этом случае параметры изменение стиля диаграммы.  
@@ -96,7 +93,7 @@ ms.locfileid: "49866445"
 
 1.  Создайте проект книги Excel с именем **Моя диаграмма Excel**. В мастере выберите **Копировать существующий документ**.  
 
-     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Нажмите кнопку **Обзор** кнопку и перейдите к книге, созданную ранее в этом пошаговом руководстве.  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866445"
 
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
 
--   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображения текста в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображать текст в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
 
--   Изменение форматирования листа с помощью флажков. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Изменение форматирования листа с помощью флажков. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
 
 ## <a name="see-also"></a>См. также  
  [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)  
-

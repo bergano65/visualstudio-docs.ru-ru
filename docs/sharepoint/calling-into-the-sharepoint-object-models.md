@@ -1,9 +1,6 @@
 ---
 title: Обращение к модели объекта SharePoint | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df55347ea08bfcb243f37aaee111066106da49ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914531"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
   При создании расширений для инструментов SharePoint в Visual Studio, возможно, для вызова API-интерфейсы SharePoint для выполнения определенных задач. Например при создании пользовательского шага развертывания для проектов SharePoint, может потребоваться вызвать API-интерфейсы для выполнения некоторых задач для развертывания решений SharePoint.  
@@ -41,7 +38,7 @@ ms.locfileid: "49853438"
   
 - Несмотря на то, что с помощью клиентской объектной модели в расширениях инструментов SharePoint должна работать в большинстве случаев, могут возникнуть некоторые сценарии, где вызовы в объектную модель клиента не работают должным образом. Клиентская объектная модель предназначена для использования в клиентских приложениях для вызова сайтов SharePoint на удаленном сервере или ферме SharePoint. Средства SharePoint в Visual Studio работает только с локальной установки SharePoint на компьютере разработчика. Таким образом при использовании клиентской объектной модели в расширения инструментов SharePoint вызове с сайтом SharePoint на локальном компьютере, который является не то, как клиентская объектная модель была разработана для использования.  
   
-  Пошаговое руководство, которое демонстрирует использование клиентской объектной модели в расширении инструментов SharePoint в Visual Studio, см. в разделе [Пошаговое руководство: вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Пошаговое руководство, которое демонстрирует использование клиентской объектной модели в расширении инструментов SharePoint в Visual Studio, см. в разделе [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Используйте серверную объектную модель в проектах расширений
  Серверную объектную модель является надмножеством клиентской объектной модели. При использовании объектной модели сервера, можно использовать все возможности, [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программным образом.  
@@ -50,15 +47,14 @@ ms.locfileid: "49853438"
   
  Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. Команда SharePoint определяется в дополнительной сборке, которая может напрямую вызывать серверную объектную модель. В проекте расширения вызывается команда SharePoint косвенно с помощью метода ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.  
   
- Дополнительные сведения о создании и использовании команд SharePoint см. в разделе [как: создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) и [как: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Сведения о развертывании команд SharePoint, см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Дополнительные сведения о создании и использовании команд SharePoint см. в разделе [как: Создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) и [как: Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Сведения о развертывании команд SharePoint, см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
- Пошаговые руководства, которые демонстрируют, как создать и использовать команды SharePoint, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) и [Пошаговое руководство: расширение обозревателя сервера для отображения веб-частей ](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Пошаговые руководства, которые демонстрируют, как создать и использовать команды SharePoint, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) и [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Понять, как выполняются команды SharePoint
  Сборки, которые определяют команды SharePoint были загружены в 64-разрядных хост-процесс с именем *vssphost4.exe*. После вызова команды SharePoint в расширения инструментов SharePoint, команда будет выполнена по *vssphost4.exe* вместо 32-разрядном процессе Visual Studio (*devenv.exe*). Можно управлять некоторыми аспектами выполнения команды SharePoint, установив значения в реестре. Дополнительные сведения см. в разделе [отладка расширений для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также
- [Практическое: создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [Практическое: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Практическое руководство. Создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Практическое руководство. Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  

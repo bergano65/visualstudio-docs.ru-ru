@@ -1,9 +1,6 @@
 ---
 title: Пошаговые руководства по безопасности и развертывания
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,43 +15,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e0ce327c620531a1ba5f9a21ccbfd3aeef1c1fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986249"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Пошаговые руководства по безопасности и развертывания
   В следующих разделах показано, как можно настроить политику безопасности, чтобы решение для запуска, и как можно развертывать решения Office.  
   
 ## <a name="security-topics"></a>Разделы, посвященные безопасности  
- [Практическое: подписывание решений Office](../vsto/how-to-sign-office-solutions.md)  
+ [Практическое руководство. Подписывание решений Office](../vsto/how-to-sign-office-solutions.md)  
  Сведения о способах предоставления доверия решению с помощью сертификата.  
   
- [Практическое: настройка безопасности списка включения](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Практическое руководство. Настройка безопасности списка включения](../vsto/how-to-configure-inclusion-list-security.md)  
  Описывается настройка [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления ли конечные пользователи получают возможность установки решений Office.  
   
 ## <a name="deployment-topics"></a>Разделы, посвященные развертыванию  
- [Практическое: публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [Практическое руководство. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  Предоставляет сведения об использовании **мастера публикации** или **публикации** страницы конструктора проектов для публикации решений Office.  
   
- [Практическое: публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [Практическое руководство. Публикация решения Office уровня документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  Описывает шаги для развертывания на сервере SharePoint.  
   
- [Практическое: установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [Практическое руководство. Установка решения ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  Пошаговые инструкции по установке решения Office, запустив программу установки, которая создается во время процесса публикации; Открытие файла манифеста развертывания; или открытие настроенного документа или книги.  
   
- [Практическое: Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [Практическое руководство. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  Описывает, как можно создать программу установки, которая проверяет наличие необходимых компонентов перед установкой компонентов решения.  
   
- [Практическое: Подготовка служб IIS для развертывания решений Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [Практическое руководство. Подготовка служб IIS для развертывания решений Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  В этой статье описывается настройка тип MIME в Microsoft Internet Information Services (IIS) для манифеста развертывания.  
   
- [Практическое: обновление развернутых решений Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [Практическое руководство. Обновление развернутых решений Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  Предоставляет сведения об обновлении решения Office с помощью **мастера публикации**.  
   
- [Практическое: изменение пути установки решения Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [Практическое руководство. Изменение пути установки решения Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  Сведения о том, как изменить путь установки решения Office.  
   
 ## <a name="related-sections"></a>Связанные разделы  
@@ -78,5 +75,3 @@ ms.locfileid: "50671291"
   
 ## <a name="see-also"></a>См. также  
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

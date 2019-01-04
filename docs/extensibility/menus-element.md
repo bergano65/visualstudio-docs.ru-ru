@@ -1,9 +1,6 @@
 ---
 title: Элемент Menus | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cca8887a9daf79ef2479052a6d9fcfd1efa12b31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925606"
 ---
 # <a name="menus-element"></a>Элемент меню
 Определяет, меню и панелей инструментов, реализующий VSPackage.  
@@ -38,13 +35,13 @@ ms.locfileid: "39637634"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент меню](../extensibility/menus-element.md)|Определяет, меню и панелей инструментов, реализующий VSPackage.|  
 |[Элемент меню](../extensibility/menu-element.md)|Представляет один меню или панели инструментов.|  

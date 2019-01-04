@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerObject3 | Документы Microsoft
-ms.custom: ''
+title: IDebugPointerObject3 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPointerObject3 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe58df189ebfbc8519d45fab1011b691f50d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53ade07e2a252260cf687c9bce361f692d5ed741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889401"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Представляет указатель в дерево синтаксического анализа и расширяет возможности **IDebugPointerObject** интерфейса.  
+ Представляет указатель в дерево синтаксического анализа и расширяет **IDebugPointerObject** интерфейс.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,7 +30,7 @@ IDebugPointerObject3 : IDebugPointerObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Вычислитель выражений (Эстония) реализует этот интерфейс.  
+ Вычислитель выражений (EE) реализует этот интерфейс.  
   
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) интерфейс, этот интерфейс реализует следующие методы:  
@@ -43,7 +40,7 @@ IDebugPointerObject3 : IDebugPointerObject
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Извлекает адрес указателя.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Ee.h  
+ Заголовок: EE.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

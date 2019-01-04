@@ -1,9 +1,6 @@
 ---
 title: Интерфейсы службы прежней версией языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e195862ae2cd164a2c62ac16eb17c7a2f07e5c09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: affb6fac59413fc80f07c6e5ff238b4f9d56ee33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821608"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858335"
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы языковой службы прежних версий
 Для любого конкретного языка программирования и одновременно может быть только один экземпляр службы языка. Тем не менее одной языковой службы может обслуживать несколько редакторов.  
@@ -44,7 +41,7 @@ ms.locfileid: "49821608"
 ## <a name="additional-language-service-interfaces"></a>Интерфейсы служб дополнительных языков  
  Другие интерфейсы можно предоставить службе языка. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запрашивает отдельный экземпляр этих интерфейсов для каждого экземпляра текстового буфера. Таким образом необходимо реализовать каждый из этих интерфейсов на свой собственный объект. В следующей таблице показаны интерфейсы, которые требуется один экземпляр каждого экземпляра текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет окна кода элементы оформления, например раскрывающейся панелью. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Имеется один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> каждого окна кода.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Окрашивает ключевые слова языка и разделители. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> вызывается во время рисования. Избегайте большого количества вычислений работы внутри <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или может наблюдаться снижение производительности.|  
@@ -55,4 +52,4 @@ ms.locfileid: "49821608"
   
 ## <a name="see-also"></a>См. также  
  [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Контрольный список: Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

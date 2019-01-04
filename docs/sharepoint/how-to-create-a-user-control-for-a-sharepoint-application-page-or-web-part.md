@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: создать пользовательский элемент управления для страницы приложения SharePoint или веб-части | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создать пользовательский элемент управления для страницы приложения SharePoint или веб-части | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e099cd5e3de88d88fa3a48b1d9b287d5d185000
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9ed93a92f50920382e551521a6889ee2ed42f7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820752"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Практическое: создать пользовательский элемент управления для части страницы или веб-приложения SharePoint
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Как выполнить Создать пользовательский элемент управления для части страницы или веб-приложения SharePoint
   Можно создавать пользовательские элементы управления, которые предоставляют пользовательские функции для решения SharePoint, и эти функции можно повторно использовать в проекте. Можно включить пользовательские элементы управления в веб-часть или страницу приложения, добавить другие элементы управления ASP.NET и SharePoint и определить свойства и методы для элемента управления. Дополнительные сведения о пользовательских элементах управления см. в разделе [создавать многократно используемые элементы управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) и [пользовательских элементов управления и серверных элементов управления в SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).  
   
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Чтобы создать пользовательский элемент управления для SharePoint  
@@ -61,4 +56,3 @@ ms.locfileid: "51296168"
  [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
  [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-  

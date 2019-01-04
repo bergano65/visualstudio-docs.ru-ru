@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Создание приемника событий для конкретного экземпляра списка | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Создание приемника событий для конкретного экземпляра списка | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818866"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Практическое: Создание приемника событий для конкретного экземпляра списка
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Как выполнить Создание приемника событий для конкретного экземпляра списка
   Приемник событий экземпляра списка реагирует на события, происходящие в любом экземпляре определения списка. Несмотря на то, что шаблон приемника событий не включен, предназначенные для конкретного экземпляра списка, можно изменить приемник событий, которая предназначена для определения списка, чтобы реагировать на события в конкретного экземпляра списка.  
   
  Для конкретного экземпляра списка, в *Elements.xml* приемника событий, замените `ListTemplateId` с `ListUrl` и добавьте URL-адрес экземпляра списка.  
@@ -89,6 +86,5 @@ ms.locfileid: "37119508"
      Обратите внимание, что приемник событий не триггер на новое объявление, так как он настроен на ответ только события в пользовательском экземпляре списка объявлений, **TestAnnouncements**.  
   
 ## <a name="see-also"></a>См. также
- [Практическое: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

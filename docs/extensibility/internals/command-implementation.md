@@ -1,9 +1,6 @@
 ---
 title: Команда реализации | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965425"
 ---
 # <a name="command-implementation"></a>Реализация команды
 Чтобы реализовать команду в VSPackage, необходимо выполнить следующие задачи:  
@@ -78,7 +75,7 @@ if ( null != mcs )
   
     -   `OLECMDF_ENABLED`: Команда включена.  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Команды должен быть скрыт, если он отображается в контекстном меню.  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`: Команда должна быть скрыта, если он отображается в контекстном меню.  
   
     -   `OLECMDF_NINCHED`: Команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)  
   

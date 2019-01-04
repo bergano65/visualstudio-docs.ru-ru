@@ -1,29 +1,28 @@
 ---
-title: 'Конструктор рабочих процессов - как: определение и использование делегатов действий'
+title: 'Конструктор рабочих процессов - как: Определение и использование делегатов действий'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908466"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как определить и использовать делегатов действий в конструкторе рабочих процессов
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как выполнить Определение и использование делегатов действий в конструкторе рабочих процессов
 
 .NET framework 4.5 предоставляет конструктора out-of-box для <xref:System.Activities.Statements.InvokeDelegate> действия. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Укажите делегат действия
 
-1. В Visual Studio выберите **файл** > **New** > **проекта**.
+1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
 
 2. В **новый проект** выберите **рабочего процесса** категории с левой стороны экрана, а затем выберите **консольное приложение рабочего процесса** шаблона проекта. Имя проекта (при необходимости) и нажмите кнопку **ОК**.
 

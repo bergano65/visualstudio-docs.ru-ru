@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление обработчика перетаскивания
+title: Как выполнить Добавление обработчика перетаскивания
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876397"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Как выполнить Добавление обработчика перетаскивания
 
 Можно добавить обработчики для событий перетаскивания и вставки в доменный язык, таким образом, чтобы пользователи могли перетаскивать элементы на схеме с другими схемами или из других частей Visual Studio. Кроме того, можно добавить обработчики для таких событий, как двойной щелчок кнопки мыши. Вместе, называются обработчики перетаскивания и вставки и дважды щелкните файл *обработчики жестов*.
 
@@ -70,7 +69,7 @@ using System.Linq;
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается при двойном щелчке фигуры или схемы.
 
-     Дополнительные сведения см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Дополнительные сведения см. в разделе [Как Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).
 
@@ -322,7 +321,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Использование действий мыши: Перетаскивание элементов секций
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Использование действий мыши: перетаскивание элементов секций
 
 Можно написать обработчик, перехватывающий действия мыши в областях фигуры. Следующий пример позволяет пользователю переупорядочить элементы в секции, с помощью мыши.
 

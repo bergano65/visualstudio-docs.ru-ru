@@ -1,9 +1,6 @@
 ---
 title: Как выполнить Добавление кнопки запуска диалогового окна в группу ленты
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6ec94b8fc170f195b00a6c093605860c97048ed
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846208"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Как выполнить Добавление кнопки запуска диалогового окна в группу ленты
   Кнопка вызова диалогового окна можно добавить в любую группу на ленте. Диалогового представляет собой небольшой значок, который отображается в группе. Пользователь нажимает эту кнопку, чтобы открыть диалоговых или области задач, которые предоставляют дополнительные возможности, относящиеся к группе.  
@@ -55,5 +52,3 @@ ms.locfileid: "53648701"
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Пошаговое руководство: Обновления элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

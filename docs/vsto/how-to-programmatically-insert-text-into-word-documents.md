@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная Вставка текста в документы Word'
-ms.custom: ''
+title: Как выполнить Программная Вставка текста в документы Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828921"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое: программная Вставка текста в документы Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Как выполнить Программная Вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:  
   
 -   вставка текста в диапазон;  
@@ -129,8 +126,6 @@ ms.locfileid: "49881668"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Практическое: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Практическое: программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [Практическое руководство. Программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Практическое руководство. Программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

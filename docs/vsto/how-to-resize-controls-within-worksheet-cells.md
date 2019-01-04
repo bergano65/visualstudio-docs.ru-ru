@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: изменение размера элементов управления внутри ячеек листа Excel'
-ms.custom: ''
+title: Как выполнить Изменение размера элементов управления внутри ячеек листа Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927354"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Практическое: изменение размера элементов управления внутри ячеек листа Excel
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Как выполнить Изменение размера элементов управления внутри ячеек листа Excel
   При изменении размера столбцов или строк на листе, все элементы управления ведущего приложения в ячейках автоматическое изменение размера высоты или ширины ячейки, который был изменен. Элементы управления Windows Forms не меняют размер автоматически по умолчанию.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35674883"
   
 ## <a name="see-also"></a>См. также  
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Практическое: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Практическое: скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Практическое руководство. Скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

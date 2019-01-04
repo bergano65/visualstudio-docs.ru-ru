@@ -1,8 +1,6 @@
 ---
 title: Манифесты приложений для решений Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +13,19 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d60ffdc82e6465a81e1d96b89a39abf66c20e37
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950638"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Манифесты приложений для решений Office
   Манифест приложения представляет собой XML-файл с описанием сборок, загружаемых в решении Microsoft Office. Средства разработки Microsoft Office в Visual Studio используют [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифестов приложений, определенных в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md) ссылки.
 
  Манифесты приложений для решений Office используют перечисленные ниже элементы и атрибуты [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
-|Элемент|Описание:|Атрибуты|
+|Элемент|Описание|Атрибуты|
 |-------------|-----------------|----------------|
 |[&#60;сборка&#62; элемент &#40;приложения ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Обязательный. Это элемент верхнего уровня.|**manifestVersion**|
 |[&#60;assemblyIdentity&#62; элемент &#40;приложения ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Обязательный. Определяет основную сборку приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> **language**|

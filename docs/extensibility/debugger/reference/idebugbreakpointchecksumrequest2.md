@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointChecksumRequest2 | Документы Microsoft
-ms.custom: ''
+title: IDebugBreakpointChecksumRequest2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb319b14e1d373abe3c0634c768bfe1dcb04f539
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f68b7c210ac10b2aaa3c656dead963d86ba73c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919707"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-Представляет документ контрольной суммы для запроса точки останова.  
+Представляет контрольную сумму документа для запроса точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,14 +27,14 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Реализованный [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладки пакета и используемые отладчики.  
+ Реализованный [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пакет отладки и используемый отладчиков.  
   
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugBreakpointChecksumRequest2`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Возвращает контрольную сумму документа для запроса останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.|  
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Извлекает контрольная сумма документа для запроса точки останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.|  
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Определяет, включена ли контрольная сумма для этого документа.|  
   
 ## <a name="requirements"></a>Требования  

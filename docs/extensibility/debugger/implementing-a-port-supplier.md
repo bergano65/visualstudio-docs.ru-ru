@@ -1,9 +1,6 @@
 ---
 title: Реализация поставщика порта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985528"
 ---
 # <a name="implement-a-port-supplier"></a>Реализация поставщика порта
 Поставщика порта предоставляет порты на запрос на диспетчер отладки сеансов (SDM). Поставщика порта должен быть реализован, при отладке на машине не DCOM, или когда новое устройство требует поддержки. Например чтобы обеспечивать отладку для сотовых телефонов, можно настроить порт поставщика, который предоставляет порты, которые соединиться с мобильного телефона (возможно, посредством среды выполнения Интеграции или подключение ячейки) и перечисляет процессы и программы, работающие на телефоне.  

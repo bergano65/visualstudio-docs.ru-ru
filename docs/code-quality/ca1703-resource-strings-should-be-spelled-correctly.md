@@ -1,8 +1,7 @@
 ---
-title: 'CA1703: соблюдайте правильность написания строк ресурсов'
+title: CA1703. Строки ресурса должны иметь правильное правописание
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8103353fc5d2e0d74b5355259f0e2bc77ddd974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890593"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: соблюдайте правильность написания строк ресурсов
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703. Строки ресурса должны иметь правильное правописание
 
 |||
 |-|-|
@@ -38,21 +37,21 @@ ms.locfileid: "31918271"
 
 ## <a name="rule-description"></a>Описание правила
 
-Это правило анализирует строки ресурсов по словам, (маркирование составных слов) и проверку орфографии для всех слов и лексем. Сведения об алгоритме анализа см. в разделе [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Это правило анализирует строку ресурса на слова (маркирование составных слов) и проверяет правильность написания всех слов и лексем. Сведения об алгоритме анализа см. в разделе [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, используйте полные слова, которые написаны правильно, или добавьте слова в пользовательский словарь. Сведения об использовании пользовательских словарей см. в разделе [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Чтобы устранить нарушение этого правила, используйте полные слова написаны правильно или добавьте слова в пользовательский словарь. Сведения о том, как использовать настраиваемые словари, см. в разделе [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Изменить язык словаря
 
-По умолчанию используется английский (en) версия средства проверки орфографии. Если вы хотите изменить язык проверки орфографии, это можно сделать, добавив один из следующих атрибутов к вашей *AssemblyInfo.cs* или *AssemblyInfo.vb* файла:
+По умолчанию используется английский (en) версия средства проверки орфографии. Если вы хотите изменить язык проверки орфографии, это можно сделать путем добавления одного из следующих атрибутов для вашей *AssemblyInfo.cs* или *AssemblyInfo.vb* файла:
 
-- Используйте <xref:System.Reflection.AssemblyCultureAttribute> для указания языка и региональных параметров, если ресурсы во вспомогательной сборке.
-- Используйте <xref:System.Resources.NeutralResourcesLanguageAttribute> для указания *нейтрального языка и региональных параметров* сборки, если ресурсы находятся в той же сборки в коде.
+- Используйте <xref:System.Reflection.AssemblyCultureAttribute> для указания языка и региональных параметров, если ресурсы располагаются во вспомогательной сборке.
+- Используйте <xref:System.Resources.NeutralResourcesLanguageAttribute> для указания *нейтрального языка и региональных параметров* Если ресурсы располагаются в той же сборке, что и код сборки.
 
 > [!IMPORTANT]
-> Если значение языка и региональных параметров отличное от культуры на основе английского, данное правило анализа кода автоматически отключается.
+> Если значение языка и региональных параметров, было присвоено имя, отличное от культуру английского языка, данное правило анализа кода автоматически отключается.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
@@ -60,6 +59,6 @@ ms.locfileid: "31918271"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: Составных словах строк ресурса должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: Литералы должны иметь правильное правописание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

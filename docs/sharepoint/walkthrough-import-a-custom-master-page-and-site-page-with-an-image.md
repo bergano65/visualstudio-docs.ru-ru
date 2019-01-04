@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Импорт пользовательской главной страницы и страницы сайта с изображением | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Импорт пользовательской главной страницы и страницы с изображением сайта | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904157"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство: Импорт пользовательской главной страницы и страницы сайта с изображением
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт пользовательской главной страницы и страницы сайта с изображением
   В этом пошаговом руководстве показано, как импортировать настраиваемую эталонную страницу и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.  
 
  В пошаговом руководстве показано, как выполнять следующие задачи:  
@@ -154,7 +151,7 @@ ms.locfileid: "49890995"
 2. На **выберите элементы для импорта** раздела **модуль** в **тип** столбца, установите флажки для файлов в следующей таблице для импорта.  
 
 
-   | Имя файла | Описание |
+   | Имя файла | Описание: |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Пользовательскую главную страницу. |
    | images_ | Файл изображения в файловой системе SharePoint. |
@@ -179,10 +176,9 @@ ms.locfileid: "49890995"
 
 7. Откройте сайт SharePoint, чтобы просмотреть развернутые элементы.  
 
-   Альтернативный способ импортировать файлы на [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания их в SharePoint является добавление файлов в модули [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Практическое: Импорт главной страницы или темы](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+   Альтернативный способ импортировать файлы на [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания их в SharePoint является добавление файлов в модули [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Инструкции: Импорт главной страницы или темы](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
 
 ## <a name="see-also"></a>См. также
  [Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

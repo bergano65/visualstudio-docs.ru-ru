@@ -1,9 +1,6 @@
 ---
 title: Метод SetWefProcessId
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b426237816bfee53e7c3e50c19e29168b27e16e1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3ccce49992073f11245929bf7af0b966537bd079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886154"
 ---
 # <a name="setwefprocessid-method"></a>Метод SetWefProcessId
-  Представляет идентификатор процесса, который будет выполняться содержимого Framework расширения Web (WEF).  
+  Предоставляет идентификатор процесса, в которой выполняются расширения Framework Web (WEF) содержимое.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,16 +30,14 @@ HRESULT SetWefProcessId(
   
 #### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
-|*dwProcessId*|Идентификатор процесса, который будет использоваться для запуска WEF содержимого.|  
+|*dwProcessId*|Идентификатор процесса, который будет использоваться для запуска содержимого пересылки событий Windows.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Значение HRESULT, указывающее, успешно ли завершен метод.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод должен вызываться после создания процесса WEF-содержимого, но перед запуском WEF содержимого.  
+ Этот метод должен вызываться после создания содержимого процесс пересылки событий Windows, но прежде чем запускать любое содержимое пересылки событий Windows.  
   
- Если необходимо присоединить отладчик к процессу содержимого WEF среды разработки среды необходимо выполнить эту операцию в реализации этого метода.  
-  
-  
+ Если вы хотите подключить отладчик к процессу содержимого пересылки событий Windows среды разработки, среды необходимо выполнить эту операцию в реализации этого метода.  

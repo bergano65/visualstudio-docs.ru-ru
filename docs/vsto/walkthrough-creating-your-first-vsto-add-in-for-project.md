@@ -1,9 +1,6 @@
 ---
-title: Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта
-ms.custom: ''
+title: Пошаговое руководство. Создание вашей первой надстройки VSTO для проекта
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931259"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Пошаговое руководство по Созданию вашей первой надстройки VSTO для проекта
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Пошаговое руководство. Создание вашей первой надстройки VSTO для проекта
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Project. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -123,13 +120,13 @@ ms.locfileid: "50671421"
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Project, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO для Project: [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Общие задачи программирования, которые можно выполнять в надстройках VSTO для проекта: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   С помощью объектной модели Project: [проекта решения](../vsto/project-solutions.md).  
+-   С помощью объектной модели Project: [Проект решения](../vsto/project-solutions.md).  
   
--   Построение и отладка надстроек VSTO для Project: [решений Office построения](../vsto/building-office-solutions.md).  
+-   Построение и отладка надстроек VSTO для проекта: [Создание решений Office](../vsto/building-office-solutions.md).  
   
--   Развертывание надстроек VSTO для Project: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Развертывание надстроек VSTO для проекта: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671421"
  [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

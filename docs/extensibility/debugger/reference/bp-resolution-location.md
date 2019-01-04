@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954518"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Задает структуру разрешения расположения точки останова.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [C++] Заполнитель.  
   
  `unionmember1`  
- [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
+ [C# только] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember2`  
- [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
+ [C# только] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember3`  
- [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
+ [C# только] См. в разделе "Примечания" о том, как интерпретировать.  
   
  `unionmember4`  
- [Только для C#] См. в разделе "Примечания" о том, как интерпретировать.  
+ [C# только] См. в разделе "Примечания" о том, как интерпретировать.  
   
 ## <a name="remarks"></a>Примечания  
  Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.  
   
- [Только для C#] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` поперек затем значение с целью определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации этой структуры в C#.  
+ [C# только] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` поперек затем значение с целью определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации этой структуры в C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

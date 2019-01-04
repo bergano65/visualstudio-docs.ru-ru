@@ -1,9 +1,6 @@
 ---
 title: Кнопки элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6ce3deedd14707943a93387dcec0a73b8471339
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba0bb8b36996e48830e6a79f2101197fd3c4fc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896361"
 ---
 # <a name="buttons-element"></a>Элемент Buttons
 Группы [кнопку](../extensibility/button-element.md) элементы, которые представляют отдельные команды.  
@@ -40,11 +37,11 @@ ms.locfileid: "49904899"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группирует элементы кнопки.|  
 |[Элемент Button](../extensibility/button-element.md)|Определяет команду, которая может взаимодействовать пользователь.|  
@@ -59,7 +56,7 @@ ms.locfileid: "49904899"
   
 ```  
 <Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
     <Strings>  

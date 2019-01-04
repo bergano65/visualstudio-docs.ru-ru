@@ -1,15 +1,10 @@
 ---
-title: 'Практическое: Добавление и удаление элементов в компонентах SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление и удаление элементов в компонентах SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964021"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое: Добавление и удаление элементов в компонентах SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Как выполнить Добавление и удаление элементов в компонентах SharePoint
   При создании решения SharePoint, Visual Studio добавляет элементы проекта SharePoint по умолчанию для компонента. Перед развертыванием можно добавлять и удалять элементы проекта SharePoint, чтобы изменить функцию SharePoint.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Добавить элементы проекта SharePoint в компонент  
@@ -35,7 +30,7 @@ ms.locfileid: "49854836"
   
 1. Откройте конструктор компонентов.  
   
-    Дополнительные сведения см. в разделе [как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Дополнительные сведения см. в разделе [Как Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Добавьте один или несколько элементов из **элементы в решении** список **элементы в компоненте** списка, выполнив одно или несколько из следующих действий:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854836"
 ## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Подготовка расширений для развертывания установщика Windows | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5ceaa78315c896350f87d216e2cc320b66844999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931415"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Подготовка расширения для развертывания установщика Windows
 Пакет установщика Windows (MSI) нельзя использовать для развертывания пакета VSIX. Тем не менее можно извлечь содержимое пакета VSIX для развертывания MSI. В этом документе показано, как подготовка проекта, выходные данные которого по умолчанию — это пакет VSIX для включения в проект установки.  

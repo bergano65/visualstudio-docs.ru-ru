@@ -1,8 +1,6 @@
 ---
 title: Специальные возможности в проектах Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833330"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
-  Microsoft Visual Studio и Microsoft Office включают множество функций специальных возможностей, которые позволяют создавать собственные решения, которые соответствуют требованиям стандартных специальных возможностей. Корпорация Майкрософт публикует рекомендации для объекта специальных возможностей в Интернете. Дополнительные сведения см. в разделе [веб-сайте специальных возможностей](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- В большинстве случаев проекты Office в Visual Studio соответствует стандартам и предоставляют свойства специальных возможностей, которые можно задать в отношении. Однако существуют некоторые функции, которые имеют ограниченный специальных возможностей.
+Microsoft Visual Studio и Microsoft Office включают множество функций специальных возможностей, которые позволяют создавать собственные решения, которые соответствуют требованиям стандартных специальных возможностей. Корпорация Майкрософт публикует рекомендации для объекта специальных возможностей в Интернете. Дополнительные сведения см. в разделе [веб-сайте специальных возможностей](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+В большинстве случаев проекты Office в Visual Studio соответствует стандартам и предоставляют свойства специальных возможностей, которые можно задать в отношении. Однако существуют некоторые функции, которые имеют ограниченный специальных возможностей.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Специальные возможности во время разработки
 

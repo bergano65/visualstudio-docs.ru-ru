@@ -1,17 +1,12 @@
 ---
-title: 'Практическое: Настройка компонента SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Настройка компонента SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835478"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>Практическое: Настройка компонента SharePoint
+# <a name="how-to-customize-a-sharepoint-feature"></a>Как выполнить Настройка компонента SharePoint
   Можно создать и настроить функции SharePoint с помощью конструктора компонентов в Visual Studio. Например можно задать область компонента и добавить другие функции в качестве зависимости. По умолчанию конструктор компонентов открывается при добавлении новый компонент в обозревателе решений или обозревателе пакетов SharePoint.  
   
 ## <a name="opening-the-feature-designer"></a>Открытие конструктора компонентов  
@@ -96,4 +91,3 @@ ms.locfileid: "37119425"
   
 ## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

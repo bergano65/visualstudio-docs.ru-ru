@@ -1,9 +1,6 @@
 ---
 title: Подключаемые модули управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923644"
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули системы управления версиями
 В справочном разделе SDK подключаемого модуля управления источника содержит спецификацию полный интерфейс, позволяющий системы управления версиями для интеграции с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Указывает, синтаксис и семантику различные функции и типы данных, которые должны реализовывать подключаемый модуль системы управления версиями для взаимодействия с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  

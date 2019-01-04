@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Создание первой настройки уровня документа для Word'
-ms.custom: ''
+title: Пошаговое руководство. Создание первой настройки уровня документа для Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856445"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Пошаговое руководство: Создание первой настройки уровня документа для Word
+# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
   В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Word. Функциональные возможности, создаваемые в таком решении, доступны только в том случае, когда открыт конкретный документ. Для внесения изменений в приложение настройку на уровне документа использовать нельзя (например, для отображения новой вкладки ленты, когда открыт любой документ).  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -143,19 +140,19 @@ ms.locfileid: "49928819"
 ## <a name="next-steps"></a>Следующие шаги  
  Теперь после создания базовой настройки на уровне документа для Word в следующих разделах можно ознакомиться с процессом разработки настроек:  
   
--   Общие задачи программирования, которые можно выполнять в настройках уровня документа: [программирование настроек уровня документа](../vsto/programming-document-level-customizations.md).  
+-   Общие задачи программирования, которые можно выполнять в настройках уровня документа: [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md).  
   
--   Задачи программирования, характерные для настроек уровня документа для Word: [Word решения](../vsto/word-solutions.md).  
+-   Задачи программирования, характерные для настроек уровня документа для Word: [Решения Word](../vsto/word-solutions.md).  
   
--   С помощью объектной модели Word: [обзор объектной модели Word](../vsto/word-object-model-overview.md).  
+-   С помощью объектной модели Word: [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md).  
   
--   Настройка пользовательского интерфейса Word, например, добавление настраиваемой вкладки на ленту или создания собственной панели действий: [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Настройка пользовательского интерфейса Word, например, путем добавления настраиваемой вкладки на ленту или создания собственной панели действий: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
--   Использование расширенных объектов Word, предоставляемых решениями Office в Visual Studio для выполнения задач, которые невозможно выполнить с помощью объектной модели Word (например, размещение управляемых элементов управления в документах и привязка элементов управления Word к данным с помощью данных Windows Forms модель привязки): [автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md).  
+-   Использование расширенных объектов Word, предоставляемых решениями Office в Visual Studio для выполнения задач, которые невозможно выполнить с помощью объектной модели Word (например, размещение управляемых элементов управления в документах и привязка элементов управления Word к данным с помощью данных Windows Forms модель привязки): [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Построение и отладка настроек на уровне документа для Word: [решений Office построения](../vsto/building-office-solutions.md).  
+-   Построение и отладка настроек на уровне документа для Word: [Создание решений Office](../vsto/building-office-solutions.md).  
   
--   Развертывание настроек уровня документа для Word: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Развертывание настроек уровня документа для Word: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -167,5 +164,3 @@ ms.locfileid: "49928819"
  [Создание решений Office](../vsto/building-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
-  
-  

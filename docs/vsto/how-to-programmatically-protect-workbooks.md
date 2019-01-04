@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программная Защита книг Excel'
-ms.custom: ''
+title: Как выполнить Программная Защита книг Excel
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900780"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Практическое: программная Защита книг Excel
+# <a name="how-to-programmatically-protect-workbooks"></a>Как выполнить Программная Защита книг Excel
   Можно защитить книгу Microsoft Office Excel, чтобы пользователи не могут быть Добавление или удаление листов и также снять защиту с книги программными средствами. При необходимости можно указать пароль, указывают ли защиты (чтобы пользователи не могли перемещать листы) структуры и укажите, хотите ли вы защиты окон книги.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Защита книги не запрещает пользователям редактировать ячейки. Для защиты данных, необходимо защитить листы. Дополнительные сведения см. в разделе [как: программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Защита книги не запрещает пользователям редактировать ячейки. Для защиты данных, необходимо защитить листы. Дополнительные сведения см. в разделе [Как Программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  В следующих примерах кода использовать переменную, которая содержит пароль, полученный от пользователя.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35673959"
   
 ## <a name="see-also"></a>См. также  
  [Работа с книгами](../vsto/working-with-workbooks.md)   
- [Практическое: программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Практическое руководство. Программная Защита листов Excel](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

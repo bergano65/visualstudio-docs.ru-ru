@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugPorts2 | Документы Microsoft
-ms.custom: ''
+title: IEnumDebugPorts2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPorts2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07018391b51424b65bf1e8b9040f637f6f22213e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a92e8c48cfc7da8a9a167d2b132e2c6bb5449edd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852405"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
-Этот интерфейс перечисляет порты машинного или порт поставщика.  
+Этот интерфейс перечисляет порты машинного или порта поставщика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,24 +29,24 @@ IEnumDebugPorts2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщик пользовательский порт реализует этот интерфейс для представляют собой список портов, созданные данным поставщиком. Visual Studio реализует этот интерфейс для поддержки собственного поставщика порта.  
+ Поставщика пользовательского порта реализует этот интерфейс для представления список портов, созданные поставщиком. Visual Studio реализует этот интерфейс для поддержки свой собственный поставщик порта.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Вызовите [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) получить этот интерфейс, представляющий список портов, созданные поставщика порта. Вызовите [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) получить этот интерфейс, представляющий список портов, которые были сохранены на диск.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ Вызовите [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) для получения этого интерфейса, представляющий список портов, созданные поставщика порта. Вызовите [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) для получения этого интерфейса, представляющий список портов, которые были сохранены на диск.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugPorts2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Вперед](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Извлекает указанное число портов в последовательности перечисления.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Пропускает указанное число портов в последовательности перечисления.|  
-|[Сброс](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[Клон](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Возвращает число портов в перечислителе.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Пропускает заданное число портов в последовательности перечисления.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Получает количество портов в перечислителе.|  
   
 ## <a name="remarks"></a>Примечания  
- Visual Studio использует этот интерфейс, чтобы заполнить список портов, используемых для присоединения к процессам.  
+ Visual Studio использует этот интерфейс, помогающий заполнить Мой список портов, используемых для присоединения к процессам.  
   
  Обычно модуль отладки не использует этот интерфейс.  
   

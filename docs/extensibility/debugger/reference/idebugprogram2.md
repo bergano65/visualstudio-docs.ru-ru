@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram2 | Документы Microsoft
-ms.custom: ''
+title: IDebugProgram2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392d9bd350d6207e6725c31c659a6edf1518a807
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ee7d44d6087ea53cf0ae063ce3bcb7473157aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826183"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Этот интерфейс представляет программу, которая выполняется в процессе.  
@@ -32,36 +29,36 @@ IDebugProgram2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) и поставщика пользовательский порт реализуют этот интерфейс для представления программы в процессе. Диспетчер сеансов отладки (SDM) также реализует этот интерфейс для предоставления сведений о [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+ Модуль отладки (DE) и поставщика пользовательского порта реализуют этот интерфейс для представления программы в процессе. Диспетчер отладки сеансов (SDM) также реализует этот интерфейс для предоставления сведений о [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) событие возвращает этот интерфейс для новой программы. Этот интерфейс также используется как параметр для многих методов на нескольких интерфейсах.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) событие возвращает этот интерфейс для новой программы. Этот интерфейс также используется в качестве параметра для многих методов на нескольких интерфейсах.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProgram2`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Перечисляет потоков, работающих в этой программе.|  
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Перечисляет потоков, которые выполняются в этой программе.|  
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Возвращает имя программы.|  
-|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Получает процесс, в работе программы.|  
-|[Завершение](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Завершает этой программы.|  
+|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Возвращает процесс, в работе программы.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Завершает работу этой программы.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Присоединяет к этой программе.|  
-|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Определяет, если в программе можно отсоединить отладчик (DE).|  
-|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Отсоединяет отладчик от этой программы.|  
-|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Возвращает глобальный уникальный идентификатор для этой программы.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Получает программный свойства.|  
-|[Выполнение](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Продолжает выполнение программы в остановленном состоянии. Предыдущее состояние выполнения очищается.|  
-|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Продолжает выполнение программы в остановленном состоянии. Предыдущее состояние выполнения сохраняется.|  
+|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Определяет, если отладчик (DE) можно отсоединить от программы.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Отключает отладчик от этой программы.|  
+|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Получает глобальный уникальный идентификатор для этой программы.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Получает программировать свойства.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Продолжает выполнение программы в остановленном состоянии. Все предыдущие состояния выполнения очищается.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Продолжает выполнение программы в остановленном состоянии. Сохраняется все предыдущие состояния выполнения.|  
 |[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Выполняет шаг.|  
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Запросы, что эта программа остановить выполнение следующего время один из его потоков выполняется код.|  
-|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Возвращает имя и идентификатор модуля отладки (DE), выполнение программы.|  
-|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Перечисляет контекстов для заданной позиции в файле исходного кода.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Возвращает байт памяти для этой программы.|  
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Запрашивает, чтобы эта программа остановил выполнение следующего время один из его потоков выполняет код.|  
+|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Возвращает имя и идентификатор для обработчика отладки (DE), выполнение программы.|  
+|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Перечисляет контексты кода для заданной позиции в исходном файле.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Получает байты памяти для этой программы.|  
 |[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|Возвращает поток Дизассемблированный код для этой программы или часть этой программы.|  
-|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Перечисляет модули, эта программа загрузки и выполнения.|  
-|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Получает обновления изменить и продолжить (ENC) для этой программы.<br /><br /> Пользовательские отладки ядра не реализует этот метод (всегда должны возвращать `E_NOTIMPL`).|  
-|[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Перечисляет путей кода программы.|  
+|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Перечисляет модули, которые эта программа загрузки и выполнения.|  
+|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Получает обновления изменить и продолжить "(ENC) для этой программы.<br /><br /> Этот метод не устанавливает пользовательского модуля отладки (всегда должны возвращать `E_NOTIMPL`).|  
+|[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Перечисляет пути кода данной программы.|  
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Записывает в файл дампа.|  
   
 ## <a name="requirements"></a>Требования  
@@ -72,7 +69,7 @@ IDebugProgram2 : IUnknown
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Примечания  
- Программы — это контейнер потока, в конкретной архитектуры во время выполнения, на выполнение, пока процесс состоит из одной или нескольких программ.  
+ Программы — это контейнер поток, выполняться в конкретной архитектуры среды выполнения, а процесс состоит из одной или нескольких программ.  
   
 ## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   

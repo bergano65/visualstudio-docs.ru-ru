@@ -1,9 +1,6 @@
 ---
 title: Создание ассоциации между сущностями | Документация Майкрософт
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,18 +21,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842983"
 ---
 # <a name="create-an-association-between-entities"></a>Создание ассоциации между сущностями
   Можно определить отношения между сущностями в модели бизнес-данным (BDC) путем создания сопоставлений. Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации. Эти методы могут использоваться веб-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в интерфейсе пользователя (ИП).  
   
 ## <a name="create-an-association"></a>Создание ассоциации
- Создайте ассоциацию, выбрав **ассоциации** управления в Visual Studio **элементов**, выбрав первую сущность (исходная сущность) и затем указав второй сущности (вызывается Целевая сущность). Можно указать сведения о связи в **Редактор ассоциаций**. Дополнительные сведения см. в разделе [как: Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md).  
+ Создайте ассоциацию, выбрав **ассоциации** управления в Visual Studio **элементов**, выбрав первую сущность (исходная сущность) и затем указав второй сущности (вызывается Целевая сущность). Можно указать сведения о связи в **Редактор ассоциаций**. Дополнительные сведения см. в разделе [Как Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md).  
   
 ## <a name="association-methods"></a>Методы связи
  Приложения, такие как веб-частей SharePoint business данных используют ассоциации, вызывая методы в классе службы сущности. Можно добавить методы в класс службы сущности, выбрав их в **Редактор ассоциаций**.  
@@ -81,6 +78,4 @@ ms.locfileid: "36325467"
   
 ## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое: Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [Практическое руководство. Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md)  

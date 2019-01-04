@@ -1,9 +1,6 @@
 ---
 title: MSSCCPRJ. Файл SCC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc754437433124e033b0f0fb0feac79487664b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825929"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Файл SCC
 При размещении в решение Visual Studio или проект в системе управления версиями, с помощью интегрированной среды разработки IDE получает две ключевые данные. Данные поступают из системы управления версиями, подключаемый модуль в виде строк. Эти строки «AuxPath» и «ProjName», не видны в интегрированную среду разработки, но они используются подключаемым модулем для поиска решения или проекта в системе управления версиями. Интегрированная среда разработки обычно получает эти строки первый раз, вызвав [SccGetProjPath](../extensibility/sccgetprojpath-function.md), и затем сохраняет их в файл решения или проекта для будущих вызовах к [SccOpenProject](../extensibility/sccopenproject-function.md). При его внедрении в файлы решения и проекта, строки «AuxPath» и «ProjName» не обновляются автоматически при ветвей, вилки, или копирует файлы решения и проекта, которые находятся в системе управления версиями. Чтобы убедиться, что файлы проекта и решения указывают на их правильное расположение в системе управления версиями, пользователи должны вручную обновить строки. Поскольку эти строки предназначены для быть непрозрачным, не всегда возможно очистить как их следует обновить.  

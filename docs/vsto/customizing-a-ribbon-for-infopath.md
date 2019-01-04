@@ -1,9 +1,6 @@
 ---
 title: Настройка ленты для InfoPath
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c69ef50662bd1b98e896d1b8d3933d23be26123c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837268"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Настройка ленты для InfoPath
   При настройке ленты в Microsoft Office InfoPath необходимо знать, где в приложении отображается пользовательская лента. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] может отображать ленту в окнах приложения InfoPath следующих трех типов.  
@@ -69,5 +66,3 @@ ms.locfileid: "53648743"
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: Решения | Документы Microsoft
-ms.custom: ''
+title: Решения | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869483"
 ---
 # <a name="solutions"></a>Решения
-Решение — это группа из одного или нескольких проектов, которые работают совместно, чтобы создать приложение. Проекта и состояние сведения, которые относятся к решению, хранятся в двух файлов решений, файл текстовый файл решения (SLN) и файл пользовательских параметров (.suo) двоичные решения.  
+Решение — это группа из одного или нескольких проектов, работающих совместно для создания приложения. Проекта и состояние сведения, которые относятся к решению, хранятся в двух файлов решения, файл текстовых решения (SLN) и файл пользовательских параметров (.suo) двоичного решения.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Обзор набора средств Visual Studio для Unity](../../extensibility/internals/solutions-overview.md)  
- Описание типов файлов решения, включенных в решение и процесс, который происходит при открытии решения.  
+ [Обзор](../../extensibility/internals/solutions-overview.md)  
+ Описание типов файлов решения, включенные в решение и процесс, который происходит при открытии решения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Файл решений (SLN-файл)](../../extensibility/internals/solution-dot-sln-file.md)  
- Объясняется структура SLN-файл.  
+ Описывается структура SLN-файл.  
   
  [Файл параметров пользователя решения (SUO-файл)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  Описание SUO-файл.

@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: обновления строки состояния | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Обновление строки состояния | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 554b0c46074c4ffc1860250a0e9dfd8d2bb24b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874168"
 ---
-# <a name="how-to-update-the-status-bar"></a>Практическое: обновления строки состояния
+# <a name="how-to-update-the-status-bar"></a>Как выполнить Обновление строки состояния
 **Строки состояния** находится на панели элементов управления в нижней части многие приложения windows, содержащий один или несколько строк текста состояния или индикаторы.  
   
 ## <a name="to-update-the-status-bar"></a>Для обновления строки состояния  

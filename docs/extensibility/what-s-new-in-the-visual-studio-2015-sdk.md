@@ -1,9 +1,6 @@
 ---
 title: Что&#39;возможности пакета SDK для Visual Studio 2015 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952846"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2015
 Пакет SDK для Visual Studio имеет следующие новые и обновленные функции для Visual Studio 2015, обновление Visual Studio 2015 и Visual Studio 2017.  
@@ -62,12 +59,12 @@ ms.locfileid: "39566697"
 > [!NOTE]
 >  Вы можете использовать ссылочные сборки установлен пакет SDK для VS с проектами (расположенный в \<расположение установки Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) и существующие проекты расширения среды не обязательно должны быть обновлен для использования пакетов NuGet.  Проект **ссылается на / добавить ссылку на** диалогового окна будет продолжать использовать ссылочные сборки установлен пакет SDK для VS.  
 >   
->  Если вы хотите изменить существующие проекты для использования NuGet, см. в разделе [как: переход с Migrate VSPackages на Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) которого имеется раздел об обновлении проектов расширяемости в пакеты NuGet.  
+>  Если вы хотите изменить существующие проекты для использования NuGet, см. в разделе [как: Миграция пакетов VSPackage в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) которого имеется раздел об обновлении проектов расширяемости в пакеты NuGet.  
   
 ## <a name="light-bulbs"></a>Лампочки  
  Один из самых замечательных новых способов написания кода для расширения предоставляется в проекте Roslyn. Дополнительные сведения см. в разделе [Roslyn](https://github.com/dotnet/Roslyn).  
   
- Лампочки являются новой возможностью, которая поставляется с VSSDK. Они являются значков, используемых в редакторе Visual Studio, которые разворачиваются для отображения набора действий рефакторинга кода или исправления для проблем, обозначенных в анализаторы встроенный код. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+ Лампочки являются новой возможностью, которая поставляется с VSSDK. Они являются значков, используемых в редакторе Visual Studio, которые разворачиваются для отображения набора действий рефакторинга кода или исправления для проблем, обозначенных в анализаторы встроенный код. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
 ## <a name="updated-user-experience-guidelines"></a>Руководство по работе обновленный пользователь  
  Разработка новых расширений и компонентов для Visual Studio? Ознакомьтесь с обновленной и развернутом [рекомендации по пользовательскому интерфейсу Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Вы найдете [цвет маркеров](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [размеры шрифтов](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [спецификации макет диалогового окна](../extensibility/ux-guidelines/layout-for-visual-studio.md)и другие инструкции, необходимые легко интегрировать новый пользовательский Интерфейс с помощью Visual Studio.

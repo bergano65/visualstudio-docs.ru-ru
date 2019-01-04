@@ -1,9 +1,6 @@
 ---
-title: 'Пошаговое руководство: Отображение завершения операторов | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение завершения операторов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986639"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство: Завершение операторов отображение
+# <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 Завершение операторов на основе языка можно реализовать путем определения идентификаторов, для которых вы хотите предоставить завершения и затем активировать сеанс завершения. Можно определить завершение операторов в контексте языковой службы, определите расширение имени файла и тип содержимого и затем отобразить завершение только этого типа. Или вы можете активировать завершение существующий тип контента, например, «обычный текст». В этом пошаговом руководстве показано, как требуется активировать завершение операторов для типа содержимого «обычный текст», который является типом содержимого текстовых файлов. Тип содержимого «text» является предком всех других типов содержимого, включая код и XML-файлы.  
   
  Завершение операторов обычно запускается вводя некоторые символы, например, введя начале идентификатора, такого как «использование». Оно обычно закрывается, нажав клавишу **пробел**, **вкладке**, или **ввод** клавишу, чтобы зафиксировать выделения. Можно реализовать функции IntelliSense, которые активируют при вводе символа с помощью обработчика команды клавиш ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс) и поставщика обработчик, который реализует <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> интерфейс. Для создания источника завершения, которая является список идентификаторов, которые участвуют в завершении, реализовать <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> интерфейс и версиями завершения ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> интерфейс). Поставщики являются составные части Managed Extensibility Framework (MEF). Они отвечают экспортирование классов источника и контроллера и импорта служб и брокеров — к примеру, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, который позволяет осуществлять переходы в текстовом буфере и <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, что инициирует сеанс завершения.  

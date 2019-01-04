@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_DATA_STRING | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_DATA_STRING
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c740c853fff0701bf27d3c37d69141440525b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a9f822dfe13d6adf4ea79481ca5bca2cacf2463
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946946"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Используется для задания точки останова по данным, которые основаны на строку, пользователь может ввести в интегрированной среде разработки (IDE).  
@@ -28,7 +25,7 @@ ms.locfileid: "49875779"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-typedef struct _BP_LOCATION_DATA_STRING {   
+typedef struct _BP_LOCATION_DATA_STRING {   
    IDebugThread2* pThread;  
    BSTR           bstrContext;  
    BSTR           bstrDataExpr;  

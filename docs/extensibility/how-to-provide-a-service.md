@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: предоставить службу | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Предоставляет службу | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857819"
 ---
-# <a name="how-to-provide-a-service"></a>Практическое: предоставить службу
+# <a name="how-to-provide-a-service"></a>Как выполнить Предоставляет службу
 VSPackage может предоставлять службы, которые можно использовать в других пакетов VSPackage. Для предоставления службы, VSPackage должен зарегистрировать службу с помощью Visual Studio и добавить службу.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Класс реализует оба <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> и <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> содержит методы обратного вызова, которые предоставляют службы по запросу.  
@@ -142,6 +139,6 @@ VSPackage может предоставлять службы, которые м�
      Значение `helloString` должно быть «Hello».  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: Получение службы](../extensibility/how-to-get-a-service.md)   
+ [Практическое руководство. Получение службы](../extensibility/how-to-get-a-service.md)   
  [Использование и предоставление сервисов](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)

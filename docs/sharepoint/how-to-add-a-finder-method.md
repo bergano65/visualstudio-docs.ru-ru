@@ -1,13 +1,8 @@
 ---
-title: 'Практическое: Добавление метода Finder | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление метода Finder | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963464"
 ---
-# <a name="how-to-add-a-finder-method"></a>Практическое: Добавление метода Finder
+# <a name="how-to-add-a-finder-method"></a>Как выполнить Добавление метода Finder
   Чтобы включить службу бизнес-данным (BDC) для отображения списка сущностей в веб-части или списке, необходимо создать *Finder* метод. Метод поиска — это специальный метод, который возвращает коллекцию экземпляров сущности. Дополнительные сведения см. в разделе [проектирование Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Чтобы создать метод поиска  
   
 1. На **конструкторе BDC**, выберите сущность.  
   
-    Дополнительные сведения см. в разделе [как: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Дополнительные сведения см. в разделе [Как Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. В строке меню выберите **представление** > **Other Windows** > **Подробности метода BDC**.  
   
@@ -46,7 +41,7 @@ ms.locfileid: "49836233"
   
     Visual Studio добавляет метод, возвращаемый параметр и дескриптор типа.  
   
-4. Настройте дескриптор типа как дескриптор типа коллекции сущностей. Дополнительные сведения о создании дескриптора типа коллекции сущностей см. в разделе [как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+4. Настройте дескриптор типа как дескриптор типа коллекции сущностей. Дополнительные сведения о создании дескриптора типа коллекции сущностей см. в разделе [как: Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Необходимо выполнить этот шаг, если вы добавили конкретного метода поиска для сущности. Visual Studio использует дескриптор типа, определенного в конкретный метод поиска.  
@@ -70,11 +65,9 @@ ms.locfileid: "49836233"
 ## <a name="see-also"></a>См. также
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое: Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Практическое: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Практическое: Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Практическое: Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Практическое: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Практическое: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  

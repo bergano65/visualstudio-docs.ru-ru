@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Отправка сообщения электронной почты'
-ms.custom: ''
+title: Как выполнить Отправка сообщения электронной почты
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32977852ffbc4bb1411ed699cc97bb54035fada4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91e59cc8d7bd0115a59c71f13e8e2dc200336b29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840425"
 ---
-# <a name="how-to-programmatically-send-email"></a>Практическое: Отправка сообщения электронной почты  
+# <a name="how-to-programmatically-send-email"></a>Как выполнить Отправка сообщения электронной почты  
   Этот пример отправляет сообщение электронной почты, контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -43,8 +40,6 @@ ms.locfileid: "35675405"
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами почты](../vsto/working-with-mail-items.md)   
- [Практическое: программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Практическое: программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Практическое: программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [Практическое руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Практическое руководство. Программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  

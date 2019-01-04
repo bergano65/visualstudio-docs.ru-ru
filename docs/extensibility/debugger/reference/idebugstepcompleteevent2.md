@@ -1,9 +1,6 @@
 ---
-title: IDebugStepCompleteEvent2 | Документы Microsoft
-ms.custom: ''
+title: IDebugStepCompleteEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStepCompleteEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5eb11b2eb47e48ba1160bca6d1040e5865c582
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39495d2e2150f880c62be1f4349465ce5aa2e48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937001"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
-Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) по завершении отлаживаемой программы шаг с заходом, шаг с обходом или шаг за пределы строки исходного кода или инструкцию или инструкции.  
+Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) по завершении отлаживаемой программы шаг с заходом, шаг с обходом или шаг за пределы строки исходного кода или инструкцию или инструкции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,13 +29,13 @@ IDebugStepCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс для сообщения о завершении операции шага. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
+ DE реализует этот интерфейс, чтобы сообщить о завершении операции шаг. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
   
-## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE создает и отправляет этот объект события для сообщения о завершении операции шага. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+ DE создает и отправляет этот объект события, сообщить о завершении операции шаг. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
   
 ## <a name="remarks"></a>Примечания  
- После завершения этапа отлаживаемой программы приостановлено еще раз и IDE обновляет все окна.  
+ После завершения этапа отлаживаемой программы приостановлено еще раз, а все окна обновляет интегрированной среды разработки.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

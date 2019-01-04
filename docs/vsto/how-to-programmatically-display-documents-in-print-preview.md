@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: программное отображение документов в режиме предварительного просмотра'
-ms.custom: ''
+title: Как выполнить Программное отображение документов в режиме предварительного просмотра
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a2ab538707156826be3a31252cde16e67edff9c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 66a21f2def806dc7800caa01d26a989f9a4cf8e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891948"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Практическое: программное отображение документов в режиме предварительного просмотра
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Как выполнить Программное отображение документов в режиме предварительного просмотра
   Если решение создает отчет, может потребоваться отображение отчета пользователю в режиме предварительного просмотра отчета.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -61,8 +58,6 @@ ms.locfileid: "35257229"
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: программная печать документов](../vsto/how-to-programmatically-print-documents.md)   
- [Практическое: программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Практическое: программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)  
-  
-  
+ [Практическое руководство. Программная печать документов](../vsto/how-to-programmatically-print-documents.md)   
+ [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Практическое руководство. Программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)  
