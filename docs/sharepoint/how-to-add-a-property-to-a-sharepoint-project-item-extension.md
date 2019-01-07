@@ -1,9 +1,6 @@
 ---
-title: 'Практическое: Добавление свойства в расширение элемента проекта SharePoint | Документация Майкрософт'
-ms.custom: ''
+title: Как выполнить Добавление свойства в расширение элемента проекта SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,23 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950190"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Практическое: Добавление свойства в расширение элемента проекта SharePoint
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Как выполнить Добавление свойства в расширение элемента проекта SharePoint
   Расширение элемента проекта можно использовать для добавления свойства к любому элементу проекта SharePoint, уже установлен в Visual Studio. Свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**.  
   
- Следующие шаги предполагают, что вы уже создали в расширение элемента проекта. Дополнительные сведения см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Следующие шаги предполагают, что вы уже создали в расширение элемента проекта. Дополнительные сведения см. в разделе [Как Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Добавление свойства в расширение элемента проекта  
   
 1.  Определение класса с открытое свойство, которое представляет свойство, добавляемый тип элемента проекта. Если вы хотите добавить несколько свойств для типа элемента проекта, можно определить все свойства, в том же классе или в разных классах.  
   
-2.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *параметра*.  
+2.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *projectItemType* параметра.  
   
 3.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событий, добавьте экземпляр класса свойства <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.  
   
@@ -72,9 +69,7 @@ ms.locfileid: "36758103"
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также
- [Практическое: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Практическое: Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Практическое руководство. Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Практическое руководство. Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  
