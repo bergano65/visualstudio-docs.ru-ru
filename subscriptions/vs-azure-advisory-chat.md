@@ -3,18 +3,18 @@ title: Чат с Помощником по Azure в подписках Visual St
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/02/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896007"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739417"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -40,20 +40,24 @@ ms.locfileid: "49896007"
 
 |                                                      Уровень подписки                                                      |     Каналы      |    Преимущество    | Возможность возобновления |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (стандартная, годовая облачная)                                       | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
-| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) Visual Studio Enterprise (ежемесячная облачная, не для перепродажи (NFR) <sup>1</sup>) |        Все        | Недоступно |     Нет     |
+|                                      Visual Studio Enterprise (ценовая категория "Стандартный")                                       | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка), Visual Studio Enterprise (ежемесячная облачная подписка, не для перепродажи (NFR) <sup>1</sup>) |        Все        | Недоступно |     Нет     |
 |                                          Visual Studio Test Professional (стандартная)                                          |        Все        | Недоступно |     Нет     |
 |                                                  MSDN Platforms (стандартная)                                                   |        Все        | Недоступно |     Нет     |
 |                                                 Visual Studio Dev Essentials                                                 |        Н/Д        | Недоступно |     Нет     |
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, MCT.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, MCT.*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Вопрос. Какова разница между чатом с Помощником по Azure и Помощником по Azure?
--  Ответ. Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
+### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Вопрос.  Какова разница между чатом с Помощником по Azure и Помощником по Azure?
+-  Ответ.  Чат с Помощником по Azure — это служба общения в режиме реального времени, которая отвечает на вопросы, связанные с Azure. [Помощник по Azure](/azure/advisor/advisor-overview) — это персонализированный облачный консультант, который поможет выполнить актуальные рекомендации по оптимизации развернутых служб Azure. Он анализирует конфигурацию ваших ресурсов и данные об их использовании и на основе этого анализа предлагает решения, которые повысят экономичность, производительность, доступность и безопасность используемых ресурсов Azure.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

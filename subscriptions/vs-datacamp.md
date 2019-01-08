@@ -3,18 +3,18 @@ title: Повысьте свои навыки обработки и анализ
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863914"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802152"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -35,19 +35,16 @@ ms.locfileid: "49863914"
    > ![Создание учетной записи DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
    > 
    > [!NOTE]
-   > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "ОЙ!"  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
+   > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "Ой!  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
 
 4. Когда учетная запись будет создана, вы можете выбрать схему обучения.  Возможны следующие значения.
     - Изучение языка R для обработки и анализа данных
     - Начать изучение Python для обработки и анализа данных
     - Развитие навыков обработки и анализа данных
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Чтобы приступить, выберите нужную схему.
+   > [!div class="mx-imgBorder"]
+   > ![Выбор схемы в DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. После выбора схемы обучения вы можете уточнить ее, выбрав цель.  Например, если вы выбрали "Развитие навыков обработки и анализа данных", будут доступны представленные ниже варианты. Выберите вариант или щелкните **Я сомневаюсь.  Покажите все карьерные пути**, чтобы создать более широкую схему.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Just click on your chosen path to get started.
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Нет.  Доступно только для новых подписчиков           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                              |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Dev Essentials | Н/Д  | 2 месяца | Нет. Доступно только для новых подписчиков |
-| Visual Studio Enterprise (стандартная, годовая облачная)  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
+| Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
 
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках Облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.

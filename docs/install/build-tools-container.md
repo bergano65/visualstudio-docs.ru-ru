@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160092"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307715"
 ---
 # <a name="install-build-tools-into-a-container"></a>Установка Build Tools в контейнер
 
@@ -118,8 +118,8 @@ ms.locfileid: "53160092"
 
 Сохраните приведенный ниже пример Dockerfile в новый файл на диске. Если файл имеет имя Dockerfile, он распознается по умолчанию.
 
-> [!NOTE]
-> В этом образце файла Dockerfile исключены только старые пакеты Windows SDK, которые нельзя устанавливать в контейнерах. Старые выпуски приводят к сбою команды сборки.
+> [!WARNING]
+> В этом примере файла Dockerfile исключены только более ранние пакеты Windows SDK, которые нельзя установить в контейнерах. Более ранние выпуски приводят к сбою команды сборки.
 
 1. Откройте окно командной строки.
 2. Создайте каталог (рекомендуется):
@@ -165,8 +165,12 @@ ms.locfileid: "53160092"
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что более новые образы могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
+   > [!WARNING]
+   > Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.7.1 или более поздняя версия, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
+   >
+   > Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) не будет правильно установлена на образ mcr<span></span>.microsoft\.com\/windows\/servercore:1809 или более поздней версии. При этом сообщение об ошибке не отображается.
+   >
+   > Дополнительные сведения см. в статье об [известных проблемам с контейнерами](build-tools-container-issues.md).
 
 4. Выполните в этом каталоге приведенную ниже команду.
 

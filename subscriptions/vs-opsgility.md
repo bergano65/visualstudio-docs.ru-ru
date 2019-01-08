@@ -1,52 +1,56 @@
 ---
-title: Преимущество Opsgility в подписках Visual Studio | Документация Майкрософт
+title: Преимущество Skill Me Up на платформе Opsgility в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 09/19/2018
+ms.author: lank
+manager: lank
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
-description: Сведения о преимуществе обучения Opsgility, входящим в некоторые подписки Visual Studio.
+description: Сведения о преимуществе обучения Skill Me Up на платформе Opsgility, входящем в некоторые подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+searchscope: VS Subscriptions
+ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495535"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739712"
 ---
-# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Преимущество обучения Opsgility, входящее в подписки Visual Studio
+# <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Преимущество обучения Skill Me Up на платформе Opsgility в подписках Visual Studio
 
 Некоторые подписки Visual Studio включают возможность обучения по требованию под руководством экспертов с доступом к лабораторным средам и схемам обучения для получения сертификатов. Продолжительность обучения составляет до шести месяцев.
 
 ## <a name="activation-steps"></a>Процедура активации
-1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Чтобы воспользоваться преимуществом обучения Skill Me Up, выберите ссылку **Get Code** (Получить код) в нижней части плитки преимущества.   Вы увидите уведомление о том, что код купона успешно получен.  Щелкните **Активировать**, чтобы продолжить.
-    > [!div class="mx-imgBorder"]
-    > ![Плитка преимущества Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+2. Чтобы воспользоваться преимуществом обучения Skill Me Up, выберите ссылку **Get Code** (Получить код) в нижней части плитки преимущества.   Вы увидите уведомление о том, что код купона успешно получен.  Щелкните **Активировать**, чтобы продолжить.
+   > [!div class="mx-imgBorder"]
+   > ![Плитка преимущества Opsgility](_img/vs-opsgility/vs-opsgility-tile.png)
 
 
-3.  Вы будете перенаправлены на целевую страницу [интерактивного обучения Opsgility для Visual Studio Enterprise](https://www.opsgility.com/vse).  (Вам может быть предложено начать сеанс чата со специалистом службы поддержки.  Если вы не хотите общаться с ним, просто сверните это окно.)  Заполните необходимые контактные данные и нажмите кнопку **Зарегистрировать**.
-    > [!div class="mx-imgBorder"]
-    > ![Целевая страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
+3. Вы будете перенаправлены на соответствующую целевую страницу Skill Me Up для своей подписки.  (Вам может быть предложено начать сеанс чата со специалистом службы поддержки.  Если вы не хотите общаться с ним, просто сверните это окно.)  Укажите необходимые контактные данные, установите флажок принятия условий и положений, а затем щелкните **Зарегистрировать**.
+   > [!div class="mx-imgBorder"]
+   > ![Целевая страница преимущества Opsgility](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4.  Вот и все.  Теперь вы готовы начать обучение.  Чтобы помочь вам на начальном этапе, в левой части страницы приведен список предлагаемых учебных курсов.  Желаем удачи!
-    > [!div class="mx-imgBorder"]
-    > ![Домашняя страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+4. Вот и все.  Теперь вы готовы начать обучение.  
+
 
 ## <a name="eligibility"></a>Право на участие
+
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия | 12 месяцев       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | 6 месяцев                                                            |Нет.  Доступно только для новых подписчиков         |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 6 месяцев                                             |  Нет.  Доступно только для новых подписчиков         |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 6 месяцев                                              | Нет.  Доступно только для новых подписчиков         |
-| Visual Studio Dev Essentials | Н/Д  | 3 месяца | Нет.  Доступно только для новых подписчиков  |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              | Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Dev Essentials | Н/Д  | Недоступно | Н/Д  |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
-*Не включает следующие категории: Microsoft Partner Network (MPN), Microsoft Valued Partner (MVP), Microsoft Certified Trainer, BizSpark, Imagine, не для перепродажи (NFR), FTE*
+*Не включает следующие категории:  Microsoft Partner Network (MPN), Microsoft Valued Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, не для перепродажи (NFR), FTE*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках Облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

@@ -3,18 +3,18 @@ title: Преимущество Центра приложений Visual Studio 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/15/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940987"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738642"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -44,21 +44,26 @@ ms.locfileid: "49940987"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная, ежемесячная облачная)   | Корпоративная лицензия, Azure, розничная версия, не для перепродажи (NFR) <sup>1</sup> | Включено       |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, не для перепродажи (NFR) <sup>1</sup> | Включено       |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Да |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Да |
 | Visual Studio Dev Essentials | Н/Д  | Включено                                                            |Да |
 
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine, Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Professional (MVP), региональный директор (RD).*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine, Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Professional (MVP), региональный директор (RD).*
+
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Вопрос. Происходит ошибка с сообщением о том, что браузер не поддерживается.  В чем проблема?
-Ответ. Центр приложений использует современные возможности, которые доступны не во всех старых браузерах.  Если ваш браузер не поддерживается, выполните следующие действия.
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Вопрос.  Происходит ошибка с сообщением о том, что браузер не поддерживается.  В чем проблема?
+Ответ.  Центр приложений использует современные возможности, которые доступны не во всех старых браузерах.  Если ваш браузер не поддерживается, выполните следующие действия.
 1.  Откройте другой браузер, например Microsoft Edge или последние версии Google Chrome, Firefox или Safari.
 2.  Подключитесь к Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и выполните вход.
 3.  Теперь щелкните ссылку **Начать работу** на плитке Центра приложений Visual Studio.

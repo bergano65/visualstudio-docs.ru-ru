@@ -3,18 +3,18 @@ title: Преимущества Azure DevOps для подписчиков Visua
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/15/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073653"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740209"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 
@@ -28,12 +28,18 @@ ms.locfileid: "49073653"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная, ежемесячная облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>, FTE  | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans, Azure Artifacts, Azure Pipelines (локальное размещение)       |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (уровень "Базовый")                                                            |  Да          |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>, FTE  | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans, Azure Artifacts, Azure Pipelines (локальное размещение)       |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (уровень "Базовый")                                                            |  Да          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Да          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Да          |
 
-<sup>1</sup>*Включает следующие категории: не для перепродажи (NFR), Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории: ПО и службы MCT, Imagine.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории: ПО и службы MCT, Imagine.*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вам.
+Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 Дополнительные сведения о возможностях Azure DevOps:
 
@@ -41,8 +47,7 @@ ms.locfileid: "49073653"
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вам.
-Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
+
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 

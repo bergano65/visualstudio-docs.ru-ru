@@ -3,18 +3,18 @@ title: Преимущество Studio IDE в подписках Visual Studio |
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/09/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923567"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739803"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Использование преимущества Visual Studio 2017
 
@@ -63,13 +63,16 @@ ms.locfileid: "49923567"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная, ежемесячная облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Да          |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Да          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Да         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Dev Essentials | Н/Д  | Visual Studio Community |Да |
 
-<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  Не включает следующую категорию: ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  Не включает следующие категории: ПО и службы MCT.*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
