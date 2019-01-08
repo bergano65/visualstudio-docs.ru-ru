@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160170"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348493"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -83,7 +83,7 @@ ms.locfileid: "53160170"
 
 Ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить доступ к всем необходимым компонентам при использовании Visual Studio или служб Azure, расположенных за брандмауэром или прокси-сервером.
 
-| Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание: |
+| Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание |
 | - | - | - | - | - |
 | URL-адрес<br>разрешение | go.microsoft.com<br><br>aka.ms | | | Используется для сокращения URL-адресов, которые затем разрешаются в длинные URL-адреса |
 | Начальная страница | vsstartpage.blob.core.windows.net | | 443 | Используется для отображения новостей для разработчиков на начальной странице в Visual Studio |

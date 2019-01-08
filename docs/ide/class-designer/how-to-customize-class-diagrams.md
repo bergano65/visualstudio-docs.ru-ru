@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка схем классов (конструктор классов)
+title: Как выполнить Настройка диаграмм классов (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913219"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684435"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Практическое руководство. Настройка схем классов
+# <a name="how-to-customize-class-diagrams"></a>Как выполнить Настройка диаграмм классов
 
 Способ отображения информации схемой классов можно изменить. В рабочей области конструирования можно настроить всю схему или отдельные типы.
 
@@ -129,7 +129,6 @@ ms.locfileid: "49913219"
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с диаграммами классов](working-with-class-diagrams.md)
-- [Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации](how-to-change-between-member-notation-and-association-notation.md)
-- [Практическое руководство. Просмотр существующих типов](how-to-view-existing-types.md)
-- [Просмотр типов и отношений](viewing-types-and-relationships.md)
+- [Практическое руководство. Переключение между представлением в виде членов и представлением в виде ассоциации](how-to-change-between-member-notation-and-association-notation.md)
+- [Практическое руководство. Просмотр существующих типов в конструкторе классов](how-to-view-existing-types.md)
+- [Просмотр типов и отношений](designing-and-viewing-classes-and-types.md)

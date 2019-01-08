@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7347824b56a6bcf4a12f8f8bd8bf4d5389280d1b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 22d84b09751017aa7d92bcda1e5910736876bb66
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592954"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к службе .NET для сбора статистики приложения с помощью командной строки
 В этой статье описано, как с помощью программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] подключить профилировщик к службе .NET Framework и собрать статистику производительности с помощью метода выборки.  
@@ -23,7 +23,7 @@ ms.locfileid: "53067509"
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 > 
->  Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования средств командной строки профилировщика необходимо добавить путь к этим средствам в переменную среды PATH окна командной строки или указать этот путь при вызове команды. Дополнительные сведения см. в статье [Указание пути к программам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.  
 > 
 >  Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
 
@@ -99,7 +99,7 @@ ms.locfileid: "53067509"
 
 -   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
 
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

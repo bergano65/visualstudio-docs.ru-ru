@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)
+title: Как выполнить Просмотр наследования между типами (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000498"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684487"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Практическое руководство. Просмотр наследования между типами в конструкторе классов
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Как выполнить Просмотр наследования между типами в конструкторе классов
 
-Отношение наследования (если оно существует) между базовым типом и его производными типами можно найти на диаграмме классов в **конструкторе классов**. Сведения о создании отношения наследования между двумя типами (если оно отсутствует) см. в статье [Практическое руководство. Создание наследования между типами](how-to-create-inheritance-between-types.md).
+Отношение наследования (если оно существует) между базовым типом и его производными типами можно найти на диаграмме классов в **конструкторе классов**. Сведения о создании отношения наследования, если оно не существует, между двумя типами, см. в статье [Практическое руководство. Создание наследования между типами в конструкторе классов](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Поиск базового типа
 
@@ -49,5 +49,5 @@ ms.locfileid: "34000498"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Создание ассоциаций между типами](how-to-create-associations-between-types.md)
-- [Просмотр типов и отношений](viewing-types-and-relationships.md)
+- [Практическое руководство. Создание ассоциаций между типами в конструкторе классов](how-to-create-associations-between-types.md)
+- [Просмотр типов и отношений](designing-and-viewing-classes-and-types.md)

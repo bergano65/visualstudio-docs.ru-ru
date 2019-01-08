@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Визуализация ассоциации коллекции в конструкторе класса (конструктор классов)
+title: Как выполнить Визуализация ассоциации коллекции (конструктор классов)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f2957492224f4d69a9536b4dfd6f47c136f72b0c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995885"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684068"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Практическое руководство. Визуализация ассоциации коллекции в конструкторе классов
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Как выполнить Визуализация ассоциации коллекции в конструкторе классов
 
 Свойства и поля, которые являются наборами других типов, могут отображаться в схеме классов как ассоциация набора. В отличие от обычной ассоциации, которая отображает поля или свойства в виде линии, связывающей класс-владелец с типом поля, ассоциация набора отображается как линия, связывающая класс-владелец с собранным типом.
 
@@ -40,6 +40,5 @@ ms.locfileid: "33995885"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Создание ассоциаций между типами](how-to-create-associations-between-types.md)
+- [Практическое руководство. Создание ассоциаций между типами в конструкторе классов](how-to-create-associations-between-types.md)
 - [Конструирование классов и типов](designing-and-viewing-classes-and-types.md)
-- [Просмотр типов и отношений](viewing-types-and-relationships.md)

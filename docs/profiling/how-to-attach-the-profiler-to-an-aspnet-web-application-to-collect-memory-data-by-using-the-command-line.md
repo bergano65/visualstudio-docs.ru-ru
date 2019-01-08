@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7f5c592733cc43101cb5cf022caf84892a55af7a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dd601612071c2d310986692c3242c4232da328a1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592746"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 В этой статье описан порядок использования программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.  
 
 > [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 
  Для сбора данных по производительности из веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] необходимо использовать средство [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) для инициализации соответствующих переменных среды на компьютере, на котором размещается веб-приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Затем необходимо перезагрузить компьютер, чтобы настроить профилирование для веб-сервера.  
 
@@ -43,7 +43,7 @@ ms.locfileid: "53052962"
 
         Задайте один и только один из указанных ниже параметров.  
 
-       |Параметр|Описание:|  
+       |Параметр|Описание|  
        |------------|-----------------|  
        |**/globalsamplegc**|Включает сбор данных по выделению памяти.|  
        |**/globalsamplegclife**|Включает сбор данных по выделению памяти и времени существования объектов.|  

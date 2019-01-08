@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561672"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.
@@ -76,7 +76,7 @@ ms.locfileid: "49943002"
 
     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.
 
-Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).
+Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в статье об [ отладке во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Вычисление выражений во время разработки нельзя использовать в типах проектов, требующих запуска среды выполнения, таких как проекты [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], веб-проекты, проекты для интеллектуальных устройств и проекты SQL.
 
@@ -128,8 +128,7 @@ ms.locfileid: "49943002"
 
 - [Навигация по коду с помощью отладчика](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Командное окно](../../ide/reference/command-window.md)
-- [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Основы отладки](../../debugger/getting-started-with-the-debugger.md)
-- [Пошаговое руководство. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Первое знакомство с отладчиком](../../debugger/debugger-feature-tour.md)   
+- [Пошаговое руководство: Debug at design time in Visual Studio (C#, C++, Visual Basic, F#)](../../debugger/walkthrough-debugging-at-design-time.md) (Пошаговое руководство. Отладка во время разработки в Visual Studio (C#, C++, Visual Basic, F#)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

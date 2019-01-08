@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938803"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684945"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Создание и настройка членов типа в конструкторе классов
 
@@ -59,12 +59,12 @@ ms.locfileid: "49938803"
 
 |Задача|Справочные материалы|
 |----------| - |
-|**Начало работы**. Перед созданием и настройкой членов типа необходимо открыть окно **Сведения о классах**.|- [Открытие окна "Сведения о классах"](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Примечания об использовании окна сведений о классах](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Отображение информации только для чтения](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Создание и изменение членов типа**. С помощью окна **Сведения о классах** можно создавать новые члены, изменять существующие члены, а также добавлять параметры в метод.|- [Создание членов](creating-and-configuring-type-members.md#create-members)<br />- [Изменение членов типов](creating-and-configuring-type-members.md#modify-type-members)<br />- [Добавление параметров в методы](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Начало работы**. Перед созданием и настройкой элементов типа необходимо открыть окно **Сведения о классах**.|- [Открытие окна "Сведения о классах"](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Примечания об использовании окна сведений о классах](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Отображение информации только для чтения](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Создание и изменение элементов типа**. В окне **Сведения о классах** вы можете создавать новые элементов, изменять существующие элементов, а также добавлять параметры в метод.|- [Создание членов](creating-and-configuring-type-members.md#create-members)<br />- [Изменение членов типов](creating-and-configuring-type-members.md#modify-type-members)<br />- [Добавление параметров в методы](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Открытие окна "Сведения о классах"
 
-По умолчанию окно **Сведения о классах** открывается автоматически при открытии новой диаграммы классов. См. раздел [Практическое руководство. Добавление диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md). Кроме того, можно открыть окно **Сведения о классах** следующим образом:
+По умолчанию окно **Сведения о классах** открывается автоматически при открытии новой диаграммы классов. См. практическое руководство по [ добавлению диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md). Кроме того, можно открыть окно **Сведения о классах** следующим образом:
 
 - Щелкните любой класс на диаграмме правой кнопкой мыши для вызова контекстного меню и выберите пункт **Сведения о классах**.
 
@@ -124,7 +124,7 @@ ms.locfileid: "49938803"
 
 4.  Дополнительно укажите другие сведения об элементе, например его тип.
 
-     **Примечание**. Для создания членов также можно использовать сочетания клавиш. Дополнительные сведения см. в разделе [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Примечание.** Для создания элементов также можно использовать сочетания клавиш. Дополнительные сведения см. в разделе [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Изменение членов типов
 
@@ -209,7 +209,7 @@ ms.locfileid: "49938803"
 
      Строка последнего параметра члена содержит текст **<add parameter>** в ячейке **Имя**. Щелчок на данной ячейке позволяет создать новый параметр. Дополнительные сведения см. в разделе [Добавление параметра в метод](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-В окне **Свойства** отображаются те же свойства параметра, что и в окне **Сведения о классах**: **Имя**, **Тип**, **Модификатор**, **Сводка**, а также свойство **Дополнительное значение по умолчанию**. Изменение свойства в одном месте обновляет значение свойства глобально, включая отображение его значения в других местах.
+В окне **Свойства** отображаются те же свойства параметров, которые отображаются в окне **Сведения о классах**: **Имя**, **Тип**, **модификатор**, **Сводка**, а также свойство **Дополнительное значение по умолчанию**. Изменение свойства в одном месте обновляет значение свойства глобально, включая отображение его значения в других местах.
 
 > [!NOTE]
 > Инструкции по добавлению параметра в делегат см. в разделе [Создание членов](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ ms.locfileid: "49938803"
 
 ## <a name="see-also"></a>См. также
 
-- [Просмотр типов и отношений](viewing-types-and-relationships.md)
+- [Просмотр типов и отношений](designing-and-viewing-classes-and-types.md)
 - [Рефакторинг классов и типов](refactoring-classes-and-types.md)

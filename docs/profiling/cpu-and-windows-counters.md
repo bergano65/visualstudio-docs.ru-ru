@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592447"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -97,7 +97,7 @@ ms.locfileid: "49865925"
 
       **Примечание.** Нажмите кнопку **Отмена**, чтобы вернуться к предыдущей конфигурации выборки.
 
-     - или -
+     -или-
 
    - Выберите **Счетчики ЦП**, а затем — **Сбор данных счетчиков ЦП**. Счетчики ЦП отображаются в списке **Доступные счетчики**.
 
@@ -127,9 +127,7 @@ ms.locfileid: "49865925"
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**,
 
-     где *\<Visual Studio Performance Tools Directory>* — путь к каталогу Performance Tools установки Visual Studio (обычно
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     где *\<Visual Studio Performance Tools Directory>*  — путь к каталогу средств оценки производительности в установке Visual Studio. Сведения о пути к средствам оценки производительности см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>См. также
 
