@@ -2,7 +2,6 @@
 title: Прочие файлы
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867164"
 ---
 # <a name="miscellaneous-files"></a>Прочие файлы
 Редакторы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно использовать для работы с отдельными файлами из проекта или решения. Если решение открыто, файлы можно открывать и изменять, не добавляя их к решению или проекту. Файлы, работать с которыми необходимо независимо от контейнеров, называются прочими файлами. Прочие файлы являются внешними по отношению к решениям и проектам; они не включаются в сборки и не могут быть включены в решение, размещенное в системе управления версиями.
@@ -50,7 +49,7 @@ ms.locfileid: "34747737"
 ## <a name="folder-display-options"></a>Параметры отображения папки
  Для папки "Прочее" можно задать параметры отображения таким образом, чтобы она отображалась даже в том случае, если прочие файлы не открыты. Файл решения не контролирует список прочих файлов постоянно. Он использует дополнительную функцию, которая позволяет ему запоминать список последних использованных файлов для каждого пользователя.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)
 - [Страница "Документы", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/documents-environment-options-dialog-box.md)
