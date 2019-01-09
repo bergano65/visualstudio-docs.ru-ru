@@ -3,7 +3,6 @@ title: Настройка удаленной службы R в Linux
 description: Узнайте, как настроить удаленную службу R в Ubuntu и подсистемах Windows для Linux.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835949"
 ---
 # <a name="remote-r-service-for-linux"></a>Удаленная служба R для Linux
 
@@ -170,4 +169,3 @@ ms.locfileid: "51220818"
     ```
 1. Используйте команду `az container list`, чтобы проверить состояние. Вам нужно найти `provisioningState`: `Succeeded`.
 1. Если подготовка выполнена, вы сможете подключиться к контейнеру. Найдите общедоступный IP-адрес в поле `ipAddress` и используйте его с учетными данными в файле Docker, чтобы подключиться к контейнеру из RTVS.
-

@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8642ab935c95a8b80f87c5bcc7d5e6d24f0825f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903894"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста
 
@@ -61,4 +60,4 @@ ms.locfileid: "53067120"
 ## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство: обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)
+- [Практическое руководство. обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md)

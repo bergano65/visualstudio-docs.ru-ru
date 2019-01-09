@@ -1,8 +1,6 @@
 ---
 title: Элемент OnError (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f32e46621bb2f56231b2c992712fd42126f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924557"
 ---
 # <a name="onerror-element-msbuild"></a>Элемент OnError (MSBuild)
 Вызывает выполнение одного или нескольких целевых объектов, если атрибут `ContinueOnError` для задачи, завершившейся ошибкой, имеет значение `false`.  
@@ -46,7 +44,7 @@ ms.locfileid: "49841394"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Обязательный атрибут.<br /><br /> Целевые объекты, которые следует выполнить при сбое задачи. Если целевых объектов несколько, разделите их точкой с запятой. Если целевых объектов несколько, они выполняются в указанном порядке.|  
@@ -56,7 +54,7 @@ ms.locfileid: "49841394"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-| Элемент | Описание: |
+| Элемент | Описание |
 | - | - |
 | [Целевой объект](../msbuild/target-element-msbuild.md) | Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 

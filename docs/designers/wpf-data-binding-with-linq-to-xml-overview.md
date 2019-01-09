@@ -2,7 +2,6 @@
 title: Общие сведения о привязке данных WPF с помощью LINQ to XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: bc67ec6beb42c3bce82f3a32f6e40f052f8ad0ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850730"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Общие сведения о привязке данных WPF с помощью LINQ to XML
 
@@ -37,7 +36,7 @@ ms.locfileid: "37890374"
 
 Привязка данных в WPF позволяет связать элемент пользовательского интерфейса с одним из его свойств в источнике данных. Простым примером этого может служить метка <xref:System.Windows.Controls.Label>, текст которой представляет значение открытого свойства в пользовательском объекте. Привязка данных в WPF зависит от следующих компонентов.
 
-|Компонент|Описание:|
+|Компонент|Описание|
 |---------------|-----------------|
 |Цель привязки|Элемент пользовательского интерфейса, который должен быть привязан к источнику данных. Визуальные элементы WPF являются производными класса <xref:System.Windows.UIElement>.|
 |Целевое свойство|*Свойство зависимостей* целевого объекта привязки, отражающее значение источника привязки к данным. Свойства зависимости напрямую поддерживаются классом <xref:System.Windows.DependencyObject>, производным которого является <xref:System.Windows.UIElement>.|

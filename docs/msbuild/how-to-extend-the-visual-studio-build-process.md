@@ -2,7 +2,6 @@
 title: Расширение процесса сборки
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce38985a5fc0b74326648557e22eb17bfdfb4f48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863684"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Как выполнить Расширение процесса сборки Visual Studio
 Процесс сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] определяется рядом *TARGETS*-файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — *Microsoft.Common.targets* — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. В этой статье описаны два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
@@ -36,7 +35,7 @@ ms.locfileid: "53058276"
   
 1.  Выберите в *Microsoft.Common.targets* предварительно заданный целевой объект, который требуется переопределить. Приведенная ниже таблица содержит полный список целевых объектов, которые можно безопасно переопределить.  
   
-2.  Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Пример:  
+2.  Определите один или несколько целевых объектов в конце файла проекта, прямо перед тегом `</Project>`. Например:  
   
     ```xml  
     <Project>  
@@ -54,7 +53,7 @@ ms.locfileid: "53058276"
 
 Следующая таблица показывает все целевые объекты в *Microsoft.Common.targets*, которые можно безопасно переопределить.  
   
-|Имя целевого объекта|Описание:|  
+|Имя целевого объекта|Описание|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после основной компиляции. Основная часть настроек выполняется в одном из этих двух целевых объектов.|  
 |`BeforeBuild`, `AfterBuild`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после остальной части сборки. **Примечание.**  Целевые объекты `BeforeBuild` и `AfterBuild` уже определены в комментариях в конце большинства файлов проекта, поэтому вы можете легко добавлять события до и после сборки в файл проекта.|  

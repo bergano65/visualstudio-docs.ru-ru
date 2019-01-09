@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914505"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Как выполнить Выбор активного параметра запуска для нагрузочного теста
 
@@ -61,4 +60,4 @@ ms.locfileid: "53067389"
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Практическое руководство: Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md)

@@ -2,7 +2,6 @@
 title: «Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 0cb4e77da4d32980c5963ed439ac00f2ccfb2ab6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842558"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 
@@ -35,7 +34,7 @@ ms.locfileid: "52389368"
 
 Если этот параметр включен, вы получите предупреждение при попытке запуска веб-приложения, которое не компилируется без ошибок.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры", "Проекты и решения"](projects-and-solutions-options-dialog-box.md)
 - [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](options-dialog-box-projects-and-solutions-web-projects.md)

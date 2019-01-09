@@ -1,8 +1,6 @@
 ---
 title: Переопределение параметров ToolsVersion | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ffb58fdbf35d2fc070fbf2463ee02fa154f84f94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867984"
 ---
 # <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 Набор инструментов для проектов и решений можно изменить одним из трех способов.  
@@ -30,7 +28,7 @@ ms.locfileid: "48879316"
 3.  Задав свойство `$(ProjectToolsVersion)` для проекта в решении. Это позволяет собирать проект в решении с версией набора инструментов, отличающейся от используемой в других проектах.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion для проектов и решений, собираемых из командной строки  
- Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `-ToolsVersion` (или `-tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Пример:  
+ Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `-ToolsVersion` (или `-tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Например:  
   
 ```cmd  
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  

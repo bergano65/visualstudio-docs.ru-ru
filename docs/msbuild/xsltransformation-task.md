@@ -1,8 +1,6 @@
 ---
 title: Задача XslTransformation | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a18dff58b38dc80eade3ef030b4156b040cc8ce
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fc005efd13acfa3ea50d3e2cd0d04fc40f89de8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966094"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation - задача
 Преобразует входные данные XML с помощью XSLT или скомпилированного XSLT и выводит результат на устройство вывода или в выходной файл.  
@@ -31,7 +29,7 @@ ms.locfileid: "39233078"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `XslTransformation` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`OutputPaths`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Задает выходные файлы для преобразования XML.|  
 |`Parameters`|Необязательный параметр `String` .<br /><br /> Задает параметры для входного документа XSLT.|  

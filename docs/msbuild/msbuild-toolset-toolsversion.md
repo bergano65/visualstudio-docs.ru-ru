@@ -1,8 +1,6 @@
 ---
 title: Набор инструментов MSBuild (ToolsVersion) | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/31/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multitargeting
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1822ed7c90a2cab746690769ea9202ab2e9c9947
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2c681ab49ba7fe6de60aa68cdec923cdf9f677fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841230"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл *microsoft.common.tasks*, файл *microsoft.common.targets* и такие компиляторы, как *csc.exe* и *vbc.exe*. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.

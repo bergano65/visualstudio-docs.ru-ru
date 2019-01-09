@@ -1,8 +1,6 @@
 ---
 title: Активность GPU (подкачка) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8b682c47844a9bc88afdce4a532b1188746a85
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 919f99ad24764017e823dbceda51bec4461401e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942727"
 ---
 # <a name="gpu-activity-paging"></a>Активность GPU (подкачка)
 Сегменты **Активность GPU (подкачка)** на вкладке **Потоки** представляют время, когда GPU выполнял обработку запросов подкачки.  Длина сегмента представляет время, в течение которого GPU выполнял обработку пакета подкачки прямого доступа к памяти (DMA). Как правило, пакеты подкачки связаны с передачей памяти между ЦП и графическим процессором.  

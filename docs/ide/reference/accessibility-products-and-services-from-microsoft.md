@@ -3,7 +3,6 @@ title: Продукты и службы корпорации Майкрософ�
 description: Ознакомьтесь с дополнительными сведениями о продуктах и услугах корпорации Майкрософт, которые повысят доступность наших операционных систем, программ и приложений для всех пользователей, включая людей с ограниченными возможностями.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886323"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 

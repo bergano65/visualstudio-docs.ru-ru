@@ -1,8 +1,6 @@
 ---
 title: Курсор на временной шкале | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.caret
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f55f42e17dec1a1b236d713ac31c2dfa681cd913
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a8356befd8afd6c3057ecf9005ce0af16d800b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846929"
 ---
 # <a name="timeline-caret"></a>Курсор на временной шкале
 Когда вы выбираете точку на временной шкале выполнения сегмента потока, над ним появляется курсор временной шкалы. Стек вызовов, который отображается на текущей вкладке стека, — это ближайший по времени стек для точки, где выбран сегмент. Курсор используется для сопоставления стека вызовов, который отображается на вкладке **Текущий** с моментом времени, когда он был получен. Курсор указывает точное местоположение стека вызовов, который является ближайшем к месту, выбранному пользователем.  

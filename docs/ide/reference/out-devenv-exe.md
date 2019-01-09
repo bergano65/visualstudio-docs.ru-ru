@@ -2,7 +2,6 @@
 title: -Out (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985645"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Задает файл для хранения и отображения ошибок при запуске, создании, перестроении или развертывании решения.
@@ -39,7 +38,7 @@ devenv /out FileName
 ## <a name="arguments"></a>Аргументы
  `FileName`
 
- Обязательно. Путь и имя файла для приема ошибок при сборке исполняемого файла.
+ Обязательный. Путь и имя файла для приема ошибок при сборке исполняемого файла.
 
 ## <a name="remarks"></a>Примечания
  Если указано несуществующее имя файла, такой файл создается автоматически. Если файл уже существует, то результаты добавляются к имеющемуся в нем содержимому.
@@ -53,7 +52,7 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

@@ -1,8 +1,6 @@
 ---
 title: Представление сведений о функции | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945344"
 ---
 # <a name="function-details-view"></a>Представление сведений о функции
 В окне **Function Details View** (Представление сведений о функции) отображаются следующие сведения:  
@@ -72,7 +70,7 @@ ms.locfileid: "49951227"
 ## <a name="function-performance-details"></a>Сведения о производительности функции  
  В таблице сведений о производительности функций представлены сводные данные для метрик производительности выбранной функции. Отображаются значение и процент. Вам необходимо указать данные профилирования диаграммы и таблицу данных в списке **Метрика производительности**.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Монопольный доступ**|— Значение метрики производительности при выполнении текста функции.|  
 |**В вызовах**|— Значение метрики производительности в функциях, вызванных выбранной функцией.|  

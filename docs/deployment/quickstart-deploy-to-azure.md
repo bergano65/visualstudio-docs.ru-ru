@@ -1,8 +1,6 @@
 ---
 title: Публикация в службу приложений Azure
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 4e7cf13658c33caf6b58d6a4e661a8431f377845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853597"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 

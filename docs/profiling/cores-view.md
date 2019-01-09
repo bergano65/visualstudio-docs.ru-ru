@@ -1,8 +1,6 @@
 ---
 title: Представление "Ядра" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f9fdd88640999759fe729b3949785a79e763986
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dea7eca97ed938271977fea8e8fa5e41dbd19aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933707"
 ---
 # <a name="cores-view"></a>Представление "Ядра"
 **Представление ядер** — отображает то, как выполнение потока сопоставлено с ядрами логического процессора. Выберите **Анализ** > **Визуализатор параллелизма**, чтобы запустить визуализатор. При написании серверных приложений это представление может помочь оптимизировать производительность кэша за счет использования сходства потоков или управления пулом потоков. Оно также помогает изучать случаи, когда использование сходства потоков может усугубить проблему переходов между ядрами. Представление "Ядра" состоит из двух частей — графа и легенды.  

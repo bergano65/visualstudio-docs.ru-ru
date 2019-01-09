@@ -2,7 +2,6 @@
 title: Окно свойств
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848a8197dfe62836918de51ae6e7d01677dac6d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 701b2699c0c7097eca29cd853d68c8a0e2d910a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875580"
 ---
 # <a name="properties-window"></a>Окно свойств
 В этом окне можно просматривать и изменять свойства времени разработки и события выбранных объектов, которые находятся в редакторах и конструкторах. Кроме того, в окне **Свойства** можно редактировать и просматривать свойства файлов, проектов и решений. Окно **Свойства** можно открыть из меню **Вид**. Кроме того, его можно открыть, нажав клавишу F4 или набрав слово **Свойства** в окне **Быстрый запуск**.
@@ -99,7 +98,7 @@ ms.locfileid: "31947304"
 
  Предоставляет функцию поиска для свойств и событий при редактировании XAML-файлов в конструкторе. Поле поиска реагирует на поиск частично введенных слов и обновляет результаты поиска по мере ввода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по свойствам проектов](../../ide/reference/project-properties-reference.md)
 - [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)

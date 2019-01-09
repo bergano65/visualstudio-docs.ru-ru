@@ -1,8 +1,6 @@
 ---
 title: Окно "Обозреватель производительности" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6077b17aa89754b3334bd6906a47e422bbd28ab
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869470"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
 

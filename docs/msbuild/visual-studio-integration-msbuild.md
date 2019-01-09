@@ -3,7 +3,6 @@ title: Интеграция Visual Studio (MSBuild)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7449e8585cd9f1db8a4a43cddf8092f1a92c9758
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3ee9dcabc0333de72fef319ac1048f2a266f7b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834182"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.  
@@ -182,7 +181,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Для обычной сборки в Visual Studio быстрая проверка обновлений не применяется, и сборка проекта будет выполняться, как если бы сборка была вызвана из командной строки.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство: расширение процесса сборки Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Практическое руководство. расширение процесса сборки Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Запуск построения из интегрированной среды разработки](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Регистрация расширений платформы .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   

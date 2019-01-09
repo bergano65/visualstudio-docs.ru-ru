@@ -3,7 +3,6 @@ title: Учебник. Отладка кода C# и C++ (смешанный р�
 description: Сведения об отладке собственной библиотеки DLL из приложения .NET Core или .NET Framework в смешанном режиме
 ms.custom: seodec18
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - CSharp
@@ -16,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 475160a7ba08cb334eeb26be26731deea547f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920872"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Учебник. Отладка кода C# и C++ в рамках одного сеанса отладки
 

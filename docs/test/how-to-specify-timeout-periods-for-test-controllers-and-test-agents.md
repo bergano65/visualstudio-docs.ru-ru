@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870457"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Как выполнить задание периодов ожидания для контроллеров тестирования и агентов тестирования
 
@@ -30,7 +29,7 @@ ms.locfileid: "53064683"
 
 -   Контроллер тестирования: *QTController.exe.config*
 
-    |Имя раздела|Описание:|Значение|
+    |Имя раздела|Описание|Значение|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Период времени (в секундах), в течение которого агент прослушивает запрос, прежде чем подключение считается разорванным.|"n" секунд.|
     |AgentSyncTimeoutInSeconds|Период времени (в секундах) после начала тестового запуска синхронизации, в течение которого все агенты должны ожидать синхронизации, прежде чем прервать запуск.|"n" секунд.|
@@ -70,7 +69,7 @@ ms.locfileid: "53064683"
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    -или-
+    - или -
 
     Добавьте дополнительный раздел и укажите значение периода ожидания. Например, можно добавить раздел `AgentInitializeTimeout` в раздел `<appSettings>` и указать значение пять минут:
 
@@ -104,7 +103,7 @@ ms.locfileid: "53064683"
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    -или-
+    - или -
 
     Добавьте дополнительный раздел и укажите значение периода ожидания. Например, можно добавить раздел `RemotingTimeoutSeconds` в раздел `<appSettings>` и указать значение пятнадцать минут:
 
@@ -119,5 +118,5 @@ ms.locfileid: "53064683"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство: Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Практическое руководство: Привязка контроллера тестирования или агента тестирования к сетевому адаптеру](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

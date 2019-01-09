@@ -2,7 +2,6 @@
 title: Команда List Source
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7a94af10921c80b87b7d53f0f587aaf9ca55b22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850366"
 ---
 # <a name="list-source-command"></a>Команда List Source
 Отображает заданные строки исходного кода.
@@ -36,23 +35,23 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ## <a name="switches"></a>Переключатели
  /Count:`number`
 
- Необязательный. Указание числа строк для отображения.
+ Необязательный параметр. Указание числа строк для отображения.
 
  /Current
 
- Необязательный. Отображение текущей строки.
+ Необязательный параметр. Отображение текущей строки.
 
  /File:`filename`
 
- Необязательный. Путь к файлу для отображения. Если имя файла не указано, при выполнении команды выводится исходный код строки текущего оператора.
+ Необязательный параметр. Путь к файлу для отображения. Если имя файла не указано, при выполнении команды выводится исходный код строки текущего оператора.
 
  /Line:`number`
 
- Необязательный. Отображение определенного номера строки.
+ Необязательный параметр. Отображение определенного номера строки.
 
  /ShowLineNumbers:`yes|no`
 
- Необязательный. Указание отображения номеров строк.
+ Необязательный параметр. Указание отображения номеров строк.
 
 ## <a name="example"></a>Пример
  В приведенном ниже примере показан исходный код со строки 4 файла Form1.vb с отображением номеров строк.
@@ -61,7 +60,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

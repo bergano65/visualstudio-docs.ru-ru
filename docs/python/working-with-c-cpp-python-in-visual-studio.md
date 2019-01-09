@@ -3,7 +3,6 @@ title: Создание расширений C++ для Python
 description: Пошаговое руководство по созданию расширения C++ для Python с помощью Visual Studio, CPython и PyBind11, включая отладку в смешанном режиме.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947846"
 ---
 # <a name="create-a-c-extension-for-python"></a>Создание расширения C++ для Python
 
@@ -122,7 +121,7 @@ ms.locfileid: "53053481"
 
 1. Задайте определенные свойства, как описано в таблице ниже, а затем нажмите кнопку **ОК**.
 
-    | Tab | Свойство | Значение |
+    | Tab | Свойство. | Значение |
     | --- | --- | --- |
     | **Общие сведения** | **Общие** > **Целевое имя** | Укажите имя модуля, которое будет использоваться из Python в инструкциях `from...import`. Это же имя используется в C++ при определении модуля для Python. Если вы хотите применять имя проекта в качестве имени модуля, сохраните значение по умолчанию **$(ProjectName)**. |
     | | **Общие** > **Целевое расширение** | **.pyd** |

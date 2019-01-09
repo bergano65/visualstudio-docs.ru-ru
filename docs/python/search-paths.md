@@ -3,7 +3,6 @@ title: Как используются пути поиска Python
 description: В Visual Studio реализованы более конкретные способы указания путей поиска для сред и проектов, позволяющие избежать использования переменных уровня системы.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 118e45b83f8c2169e82393f05f5df0c4bed66903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951736"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Как пути поиска Python используются в Visual Studio
 

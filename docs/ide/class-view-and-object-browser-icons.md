@@ -2,7 +2,6 @@
 title: Значки представления классов и обозревателя объектов
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844396"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 
 **Представление классов** и **обозреватель объектов** отображают значки, представляющие сущности кода, например пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.
 
-|Значок|Описание:|Значок|Описание:|
+|Значок|Описание|Значок|Описание|
 |----------|-----------------|----------|-----------------|
 |![Символ пространства имен](../ide/media/vxnamespace_icon.gif)|Пространство имен|![Символ объявления](../ide/media/vxmethod_icon.gif)|Метод или функция|
 |![Значок класса](../ide/media/vxclass_icon.gif)|Класс|![Символ оператора](../ide/media/vxoperator_icon.gif)|Оператор|
@@ -49,7 +48,7 @@ ms.locfileid: "34745793"
 
 Приведенные ниже сигнальные значки применяются ко всем перечисленным выше значкам и указывают их доступность.
 
-|Значок|Описание:|
+|Значок|Описание|
 |----------|-----------------|
 |\<Без сигнального значка>|Общедоступный. Доступен из любой части этого компонента, а также из любого компонента, который на него ссылается.|
 |![Символ Protected](../ide/media/vxsignal_icon_key.gif)|Защищенный. Доступен из содержащего класса или типа, а также из производных от них классов и типов.|

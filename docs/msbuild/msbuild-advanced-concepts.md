@@ -1,8 +1,6 @@
 ---
 title: Расширенные возможности MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917447"
 ---
 # <a name="msbuild-advanced-concepts"></a>Дополнительные возможности MSBuild
 Документы в этом разделе описывают, как использовать дополнительные возможности для улучшения сборок, выполняемых в MSBuild.  
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)|Описывает процедуру пакетной обработки целевых объектов и задач сборки на основе метаданных элементов.|  
 |[Преобразования](../msbuild/msbuild-transforms.md)|Рассказывает, как использовать преобразования для анализа зависимостей.|  

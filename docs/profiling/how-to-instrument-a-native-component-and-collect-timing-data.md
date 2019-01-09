@@ -1,8 +1,6 @@
 ---
 title: Как выполнить Инструментирование собственного автономного компонента и сбор данных по времени с помощью профилировщика из командной строки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50b280208e686801539adb338a001bdb69324457
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: b8f98e0c9e0277849b967bbba784b4b81395c713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857304"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Как выполнить Инструментирование собственного автономного компонента и сбор данных о времени с помощью профилировщика из командной строки
 В этом разделе описывается использование [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] программ командной строки для средств профилирования с целью инструментирования таких собственных компонентов, как *EXE-* или *DLL-* файлы C++, а также для сбора подробных данных по использованию времени.  

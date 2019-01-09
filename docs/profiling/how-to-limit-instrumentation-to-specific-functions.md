@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Ограничение инструментирования указанными функциями | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Ограничение инструментирования указанными функциями | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e145a50c3fdb643affb67989ae11346bf7e30f9
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: d0135ea7d3a99f54b8bc61fb77c5b1657992033c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895062"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Как выполнить Ограничение инструментирования указанными функциями
 Можно ограничить инструментирование и сбор данных одной или несколькими функциями, задав параметры на странице **Дополнительно** **сеанса анализа производительности** или страниц свойств целевого двоичного файла.  

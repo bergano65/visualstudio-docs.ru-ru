@@ -2,7 +2,6 @@
 title: Функции фрагмента кода
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907817"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
@@ -29,7 +28,7 @@ ms.locfileid: "39512139"
 
 Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.
 
-|Функция|Описание:|Язык|
+|Функция|Описание|Язык|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|

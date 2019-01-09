@@ -1,8 +1,6 @@
 ---
 title: Задача GenerateDeploymentManifest | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ac7c6f1a840a38508e49ca15efdd08c2043da6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932383"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest - задача
 
@@ -35,7 +33,7 @@ ms.locfileid: "49939648"
 В следующей таблице приводятся параметры для задачи `GenerateDeploymentManifest`.
 
 
-| Параметр | Описание: |
+| Параметр | Описание |
 |--------------------------| - |
 | `AssemblyName` | Необязательный параметр `String` .<br /><br /> Указывает поле `Name` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, то имя выводится из параметра `EntryPoint` или `InputManifest`. Если вывести имя не удалось, задача сообщает об ошибке. |
 | `AssemblyVersion` | Необязательный параметр `String` .<br /><br /> Указывает поле `Version` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, задача использует значение 1.0.0.0. |

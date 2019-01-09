@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6d152849eacc83674d95573e2b78088d66aed94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913360"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Использование легенды представления графов для анализа нагрузочного тестирования
 
@@ -61,5 +60,5 @@ ms.locfileid: "53067198"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство: увеличение масштаба области графа](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Практическое руководство. увеличение масштаба области графа](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)

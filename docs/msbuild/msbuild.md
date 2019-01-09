@@ -1,8 +1,6 @@
 ---
 title: MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928806"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
@@ -172,8 +170,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 | Заголовок | Описание |
 | - | - |
-| [Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора. |
-| [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md) | Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio. |
+| [Пошаговое руководство: Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора. |
+| [Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md) | Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio. |
 | [Основные понятия MSBuild](../msbuild/msbuild-concepts.md) | Содержит информацию о четырех стандартных блоках MSBuild: свойствах, элементах, целевых объектах и задачах. |
 | [Элементы](../msbuild/msbuild-items.md) | Содержит описание общих понятий, относящихся к формату файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], и способов взаимодействия фрагментов. |
 | [Свойства MSBuild](../msbuild/msbuild-properties.md) | Содержит вводную информацию о свойствах и коллекциях свойств. Свойства представляют собой пары ключ-значение, с помощью которых выполняется настройка сборок. |

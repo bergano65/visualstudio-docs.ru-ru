@@ -2,7 +2,6 @@
 title: Команда Go To
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1f23c0dafcee52e3b4a9c38cc562aa1e428e06a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946858"
 ---
 # <a name="go-to-command"></a>Команда Go To
 Перемещение курсор на указанную строку.
@@ -34,7 +33,7 @@ Edit.GoTo [linenumber]
 ## <a name="arguments"></a>Аргументы
  `linenumber`
 
- Необязательный. Целое число, задающее номер строки, к которой нужно перейти.
+ Необязательный параметр. Целое число, задающее номер строки, к которой нужно перейти.
 
 ## <a name="remarks"></a>Примечания
  Нумерация строк начинается с единицы. Если значение `linenumber` меньше единицы, отображается первая строка. Если значение `linenumber` больше номера последней строки, отображается последняя строка.
@@ -49,9 +48,9 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

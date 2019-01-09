@@ -2,7 +2,6 @@
 title: Страница параметров конструктора XAML
 ms.date: 03/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964303"
 ---
 # <a name="xaml-designer-options-page"></a>Страница параметров конструктора XAML
 
@@ -110,4 +109,4 @@ ms.locfileid: "52388365"
 ## <a name="see-also"></a>См. также
 
 - [XAML в WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Пошаговое руководство. Создание первого классического приложения WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Пошаговое руководство: My first WPF desktop application](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application) (Пошаговое руководство. Создание классического приложения WPF)

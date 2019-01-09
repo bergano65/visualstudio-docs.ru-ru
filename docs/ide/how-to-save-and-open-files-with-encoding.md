@@ -1,8 +1,7 @@
 ---
-title: Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
+title: Как выполнить Сохранение и открытие файлов с использованием определенной кодировки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6298e603589d41a6a082b6fe2c1916b3cf8a2a84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869574"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
+# <a name="how-to-save-and-open-files-with-encoding"></a>Как выполнить Сохранение и открытие файлов с использованием определенной кодировки
 
 Вы можете сохранять файлы с определенной кодировкой для поддержки языков с двунаправленным письмом. Можно также указать кодировку при открытии файла, чтобы система Visual Studio отобразила его правильно.
 

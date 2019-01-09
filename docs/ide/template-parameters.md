@@ -2,7 +2,6 @@
 title: Параметры шаблонов проектов и элементов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935194"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -120,5 +119,5 @@ namespace $safeprojectname$
 ## <a name="see-also"></a>См. также
 
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
-- [Практическое руководство: Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

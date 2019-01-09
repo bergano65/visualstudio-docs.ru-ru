@@ -2,7 +2,6 @@
 title: Страница «Быстрый запуск», папка «Среда», диалоговое окно «Параметры»
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa33123a813739eeec9678f8393925d1ba12ba3a
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: c3dca4a9eb34a950fe571db4da8c9c30d7f2a08b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893517"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Страница «Быстрый запуск», папка «Среда», диалоговое окно «Параметры»
 
@@ -51,6 +50,6 @@ ms.locfileid: "53684539"
 
 Самые актуальные советы и рекомендации по использованию поля **Быстрый запуск** см. в [блоге по Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

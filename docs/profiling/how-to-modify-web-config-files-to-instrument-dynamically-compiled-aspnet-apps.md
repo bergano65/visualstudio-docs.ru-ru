@@ -1,8 +1,6 @@
 ---
-title: Практическое руководство. Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документация Майкрософт
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2c3fe6e9efdf787df351ffc41e7d31b76a2162b8
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 3bec4b99998e2e3c581dd15e0311e23e93779c17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988544"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
 
  В этом разделе описывается внесение изменений в файл конфигурации *web.config* для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  

@@ -1,9 +1,7 @@
 ---
 title: Просмотр моментальных снимков с помощью IntelliTrace
 description: Использование возврата на шаг назад в IntelliTrace для изучения исторического состояния приложения
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - IntelliTrace step-back
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e262dc4b5b141bb5e02ed58854f55e879f39a07e
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915579"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Просмотр моментальных снимков с помощью возврата на шаг назад в IntelliTrace (Visual Studio Enterprise)
 

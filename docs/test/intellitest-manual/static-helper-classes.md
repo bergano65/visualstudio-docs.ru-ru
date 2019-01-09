@@ -2,7 +2,6 @@
 title: Статические вспомогательные классы | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897804"
 ---
 # <a name="static-helper-classes"></a>Статические вспомогательные классы
 

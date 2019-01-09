@@ -1,8 +1,6 @@
 ---
 title: Написание средств ведения журнала с поддержкой многопроцессорности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, multi-proc aware loggers
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba677aca8b1e6f5392d742cfd37c805131c15cd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887559"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.  

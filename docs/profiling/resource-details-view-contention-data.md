@@ -1,8 +1,6 @@
 ---
 title: Представление "Сведения о ресурсах" — сведения о состязаниях | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcedetails
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024241870bb4a0a2ef696130cbe5ddc94319493a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1a1522b86d19622ee69e5cff583e4162318b64a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896309"
 ---
 # <a name="resource-details-view---contention-data"></a>Представление "Сведения о ресурсах" — сведения о состязаниях
 Представление "Сведения о ресурсах" представляет собой временную шкалу событий блокировки, вызванных состязаниями за выбранный ресурс. Событие блокировки возникает, когда поток вынужден приостановить выполнение, так как другой поток заблокировал доступ к ресурсу.  

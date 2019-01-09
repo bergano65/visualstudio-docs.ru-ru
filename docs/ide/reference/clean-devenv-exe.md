@@ -2,7 +2,6 @@
 title: -Clean (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906895"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Удаляет все промежуточные файлы и выходные каталоги.
@@ -34,15 +33,15 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 ## <a name="arguments"></a>Аргументы
  `FileName`
 
- Обязательно. Полный путь и имя для файла решения или файла проекта.
+ Обязательный. Полный путь и имя для файла решения или файла проекта.
 
  /project `ProjName`
 
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+ Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
 
  /projectconfig `ProjConfigName`
 
- Необязательный. Имя конфигурации сборки проекта, которая применяется при очистке указанного `/project`.
+ Необязательный параметр. Имя конфигурации сборки проекта, которая применяется при очистке указанного `/project`.
 
 ## <a name="remarks"></a>Примечания
  Этот параметр выполняет те же функции, что и команда меню **Очистить решение** в интегрированной среде разработки (IDE).
@@ -62,7 +61,7 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)

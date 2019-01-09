@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4fb207fc5404c0540324a3d32281db14cc6ac65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829320"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Как выполнить Создание подключаемого модуля веб-теста производительности
 
@@ -177,8 +176,8 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство: Создание подключаемого модуля уровня запроса](../test/how-to-create-a-request-level-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля уровня запроса](../test/how-to-create-a-request-level-plug-in.md)
 - [Кодирование пользовательского правила извлечения для веб-теста производительности](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Практическое руководство: Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)

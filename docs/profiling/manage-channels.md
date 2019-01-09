@@ -1,8 +1,6 @@
 ---
 title: Управление каналами | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 535b11f4ee27bd30301b983b34075a3d70947162
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853370"
 ---
 # <a name="manage-channels"></a>Управление каналами
 В представлении **Потоки** в визуализаторе параллелизма можно организовать для процесса каналы для изучения определенных шаблонов. Вы можете сортировать каналы, перемещать их вверх и вниз, скрывать и отображать.  

@@ -1,8 +1,6 @@
 ---
 title: Использование метода выборки для сбора статистики производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a09253dbeff9adb2bed6ea21545675f343e15974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cfae0277c1f3d84c939c06e08472a556e8eeaaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865804"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
 

@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846852"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Как выполнить удаление результатов нагрузочного тестирования из репозитория
 
@@ -55,7 +54,7 @@ ms.locfileid: "53065278"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство: экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Практическое руководство. экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство: импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Практическое руководство. импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)

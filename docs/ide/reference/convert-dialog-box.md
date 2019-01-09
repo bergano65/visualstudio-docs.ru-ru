@@ -2,7 +2,6 @@
 title: Преобразование - диалоговое окно
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e914b7601538a049a06a0bbdcaac8e1e58be06
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 39ade3990985bbac635d88ae1e965ee31c55227c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929780"
 ---
 # <a name="convert-dialog-box"></a>Преобразование - диалоговое окно
 
@@ -35,6 +34,6 @@ ms.locfileid: "31942858"
 
 2.  Выберите средство, которое подходит для вашего приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перенос, миграция и обновление проектов Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

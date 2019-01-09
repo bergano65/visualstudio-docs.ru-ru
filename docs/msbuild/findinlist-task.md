@@ -1,8 +1,6 @@
 ---
 title: Задача FindInList | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54562e26e0da5568ba74d40425cf377260d41000
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f083d44578a4fe61029c707b3798191c5b8b3665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865639"
 ---
 # <a name="findinlist-task"></a>FindInList - задача
 Выполняет поиск элемента с указанной спецификацией в заданном списке.  
@@ -31,7 +29,7 @@ ms.locfileid: "37945124"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры [задачи FindInList](../msbuild/findinlist-task.md).  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`CaseSensitive`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, при поиске учитывается регистр, в противном случае регистр не учитывается. Значение по умолчанию — `true`.|  
 |`FindLastMatch`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, возвращается последнее совпадение, в противном случае возвращается первое совпадение. Значение по умолчанию — `false`.|  

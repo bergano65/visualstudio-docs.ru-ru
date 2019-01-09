@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ee66a15788e9ae640142c269e388846a59311190
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926061"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Как выполнить Использование API-интерфейса нагрузочного теста
 
@@ -65,5 +64,5 @@ Visual Studio поддерживает подключаемые модули н�
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Создание пользовательского кода и подключаемых модулей для нагрузочных тестов](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Практическое руководство: Использование интерфейса API веб-теста производительности](../test/how-to-use-the-web-performance-test-api.md)
-- [Практическое руководство: Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
+- [Практическое руководство. Использование интерфейса API веб-теста производительности](../test/how-to-use-the-web-performance-test-api.md)
+- [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
