@@ -2,7 +2,6 @@
 title: Команда ShowWebBrowser
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: df5983b0cbc33abe0f5919a93af1450394134a99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985831"
 ---
 # <a name="showwebbrowser-command"></a>Команда ShowWebBrowser
 
@@ -35,16 +34,16 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Аргументы
  `URL`
 
- Обязательно. URL-адрес для веб-сайта.
+ Обязательный. URL-адрес для веб-сайта.
 
 ## <a name="switches"></a>Переключатели
  /new
 
- Необязательный. Указывает, что страница отображается в новом экземпляре браузера.
+ Необязательный параметр. Указывает, что страница отображается в новом экземпляре браузера.
 
  /ext
 
- Необязательный. Указывает, что страница отображается в браузере по умолчанию вне интегрированной среды разработки.
+ Необязательный параметр. Указывает, что страница отображается в браузере по умолчанию вне интегрированной среды разработки.
 
 ## <a name="remarks"></a>Примечания
  Псевдоним для команды **ShowWebBrowser** имеет значение **navigate** или **nav**.
@@ -56,7 +55,7 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

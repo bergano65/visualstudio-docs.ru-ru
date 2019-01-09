@@ -1,8 +1,6 @@
 ---
 title: Элемент Output (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 238e863481360671c77b7994fb1d98ac3ee96589
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853272"
 ---
 # <a name="output-element-msbuild"></a>Элемент Output (MSBuild)
 Сохраняет выходные данные задачи в элементах и свойствах.  
@@ -48,7 +46,7 @@ ms.locfileid: "49817071"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`TaskParameter`|Обязательный атрибут.<br /><br /> Имя выходного параметра задачи.|  
 |`PropertyName`|Должен быть задан атрибут `PropertyName` или `ItemName`.<br /><br /> Свойство, которое получает значение от выходного параметра задачи. Проект может ссылаться на это свойство, используя синтаксис $(\<имя_свойства>). В качестве имени для этого свойства можно использовать новое имя свойства или имя, которое уже определено в проекте.<br /><br /> Этот атрибут нельзя использовать вместе с атрибутом `ItemName`.|  
@@ -60,7 +58,7 @@ ms.locfileid: "49817071"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-| Элемент | Описание: |
+| Элемент | Описание |
 | - | - |
 | [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 

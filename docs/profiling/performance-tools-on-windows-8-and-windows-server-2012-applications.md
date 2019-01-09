@@ -1,20 +1,18 @@
 ---
 title: Средства производительности в приложениях Windows 8 и Windows Server 2012 | Документы Майкрософт
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9fe876d5244ad18d1d2635caa1717ca9eb0e29ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832298"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 
@@ -39,7 +37,7 @@ ms.locfileid: "53592941"
 
 Дополнительные сведения о профилировании приложений универсальной платформы Windows см. в следующих статьях:
 
-- [Запуск приложений UWP на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [Запуск приложений UWP на локальном компьютере](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [Запуск приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Первое знакомство со средствами профилирования](profiling-feature-tour.md)
 - [Память JavaScript](../profiling/javascript-memory.md)

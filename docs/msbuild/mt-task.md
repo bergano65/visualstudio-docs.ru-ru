@@ -1,8 +1,6 @@
 ---
 title: Задача MT | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e4298fa9482674232dea2cae98bb25ba51be30
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848828"
 ---
 # <a name="mt-task"></a>MT - задача
 Создает программу-оболочку для инструмента манифеста Майкрософт *(mt.exe)*. Дополнительные сведения см. в разделе [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).  
@@ -42,7 +40,7 @@ ms.locfileid: "50219878"
 > [!NOTE]
 >  В документации *mt.exe* в качестве префикса для параметров командной строки используется дефис (**-**), но в этом разделе используется косая черта (**/**). Допустим любой префикс.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Необязательный параметр типа **String[]**.<br /><br /> Задает имя одного или нескольких файлов манифеста.<br /><br /> Дополнительные сведения см. в описании параметра **/manifest** в разделе [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  
 |**AdditionalOptions**|Необязательный параметр типа **String**.<br /><br /> Список параметров командной строки. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров командной строки, не представленных каким-либо другим параметром задачи **MT**.<br /><br /> Дополнительные сведения см. в разделе [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  

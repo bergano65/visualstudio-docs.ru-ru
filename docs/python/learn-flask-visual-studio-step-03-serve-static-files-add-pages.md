@@ -2,9 +2,8 @@
 title: Руководство по Flask в Visual Studio. Шаг 3. Статические файлы и страницы
 titleSuffix: ''
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio, в частности демонстрация обработки статических файлов, добавление страниц в приложение и использование наследования шаблонов
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065029"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060794"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 

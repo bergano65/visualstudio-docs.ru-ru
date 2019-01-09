@@ -2,7 +2,6 @@
 title: "\"Параметры\", \"Текстовый редактор\", Basic (VB), \"Дополнительно\""
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871243"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic), "Дополнительно"
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:
@@ -76,7 +75,7 @@ ms.locfileid: "50218929"
 
 Текстовый редактор может предлагать решения для распространенных ошибок и позволяет вам выбрать подходящее исправление, которое затем применяется к коду.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)

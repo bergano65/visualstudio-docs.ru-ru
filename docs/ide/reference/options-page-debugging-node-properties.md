@@ -2,7 +2,6 @@
 title: Страница "Параметры", свойства узла отладки
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 56b08ddcb278bb2c5f9ea4c8a5de66a184fe9fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859832"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.
@@ -79,7 +78,7 @@ ms.locfileid: "53684838"
 |LoadDllExports|Get/Set (Boolean)|Определяет, загружает ли отладчик таблицы экспорта библиотеки DLL.|
 |EnableRPC|Get/Set (Boolean)|Определяет, может ли отладчик войти в удаленные вызовы процедур COM.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление параметрами](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

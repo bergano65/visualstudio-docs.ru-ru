@@ -3,7 +3,6 @@ title: Язык R и контейнеры Docker
 description: Порядок настройки контейнеров Docker для R и подключение к ним с помощью Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 39d28f01d6c59e91c07853b00d91680c4ce10278
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835608"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Использование контейнеров Docker с инструментами R для Visual Studio
 

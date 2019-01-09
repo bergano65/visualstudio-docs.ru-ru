@@ -1,8 +1,6 @@
 ---
 title: Как выполнить Запуск автономного приложения .NET Framework с профилировщиком для сбора данных о параллелизме с помощью командной строки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fde9b67cd3cdc1fbd0f411325e639664a9ae2106
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 1525b7f1c8a69c7bf50aa1cf7caefa52f955a748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953146"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Как выполнить Запуск автономного приложения .NET Framework с профилировщиком для сбора данных о параллелизме с помощью командной строки
 В этом разделе описывается использование программ командной строки Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения .NET Framework и сбора данных о параллелизме потоков и процессов  
@@ -93,7 +91,7 @@ ms.locfileid: "53592525"
 
     -   Закройте целевое приложение.  
 
-         -или-  
+         - или -  
 
     -   Введите команду **VSPerfCmd /detach**.  
 

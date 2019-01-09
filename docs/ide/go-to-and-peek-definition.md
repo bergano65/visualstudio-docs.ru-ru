@@ -2,7 +2,6 @@
 title: Просмотр определений типов
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868908"
 ---
 # <a name="view-type-and-member-definitions"></a>Просмотр определений типов и элементов
 
@@ -79,4 +78,4 @@ ms.locfileid: "53062086"
 ## <a name="see-also"></a>См. также
 
 - [Навигация по коду](../ide/navigating-code.md)
-- [Практическое руководство: Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

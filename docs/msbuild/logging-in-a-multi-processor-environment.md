@@ -1,8 +1,6 @@
 ---
 title: Ведение журнала в многопроцессорной среде | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multi-processor logging
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: aad9079322dcc561922e37ffa8b56f417d9b932b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950057"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Ведение журнала в многопроцессорной среде
 Поддержка нескольких процессоров в MSBuild позволяет существенно сократить время сборки проекта, но усложняет ведение журнала. В среде с одним процессором средство ведения журнала может обрабатывать входящие события, сообщения, предупреждения и ошибки последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Система MSBuild предоставляет новое средство ведения журнала с поддержкой многопроцессорных сред, а также позволяет создавать пользовательские средства ведения журнала с переадресацией.  

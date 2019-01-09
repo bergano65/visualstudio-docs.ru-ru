@@ -1,8 +1,6 @@
 ---
 title: Представление "Взаимодействия уровня" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967100"
 ---
 # <a name="tier-interactions-view"></a>Представление "Взаимодействие между уровнями"
 
@@ -38,7 +36,7 @@ ms.locfileid: "49917775"
 
 ## <a name="master-pane"></a>Главная область
 
-|Столбец|Описание:|
+|Столбец|Описание|
 |------------|-----------------|
 |**Name**|— Для строки верхнего уровня: имя профилируемого процесса или веб-страницы.<br />— Для строки подключения к базе данных: имя сервера, на котором располагается база данных.|
 |**База данных**|Имя базы данных (только для строк подключения к базе данных).|
@@ -50,7 +48,7 @@ ms.locfileid: "49917775"
 
 ## <a name="database-connection-details-pane"></a>Область сведений о подключении к базе данных
 
-|Столбец|Описание:|
+|Столбец|Описание|
 |------------|-----------------|
 |**Текст команды**|SQL-запрос в запросе.|
 |**Количество запросов**|Количество запусков запроса.|

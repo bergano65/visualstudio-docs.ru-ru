@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, в особенности сведения о создании приложения и использовании представлений и шаблонов.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871707"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Django с представлениями и шаблонами страниц
 
@@ -50,7 +49,7 @@ ms.locfileid: "53058549"
 
 ![Файлы приложения Django в обозревателе решений](media/django/step02-django-app-in-solution-explorer.png)
 
-| Элемент | Описание: |
+| Элемент | Описание |
 | --- | --- |
 | **\_\_init\_\_.py** | Файл, определяющий приложение в качестве пакета. |
 | **migrations** | Папка, в которой Django хранит скрипты, обновляющие базу данных в соответствии с изменениями в моделях. Затем средства миграции Django применяют необходимые изменения к любой из предыдущих версий базы данных для соответствия текущим моделям. С помощью миграции вы можете сконцентрироваться на работе с моделями и позволить Django обрабатывать базовую схему базы данных. Сведения о миграции см. в шаге 6. Теперь папка просто содержит файл *\_\_init\_\_.py* (это значит, что папка определяет собственный пакет Python). |

@@ -2,19 +2,18 @@
 title: Создание шаблонов элементов
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952265"
 ---
 # <a name="how-to-create-item-templates"></a>Как выполнить Создание шаблонов элементов
 
@@ -128,5 +127,5 @@ ms.locfileid: "53062461"
 ## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство: Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)
+- [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)

@@ -2,7 +2,6 @@
 title: Присоединение профилировщика к собственному приложению и сбор статистики приложения
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 648051395596b046290eba0e6af1b917f1ea540c
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 8ae87ae8118f5d22a6cc3e5e4acaf6b9629bf82c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872337"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к собственному автономному приложению и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к автономному приложению в машинном коде и собрать статистические данные о производительности с использованием метода выборки.  
@@ -90,7 +89,7 @@ ms.locfileid: "53592161"
 
     -   Введите команду **VSPerfCmd /detach**.  
 
-         -или-  
+         - или -  
 
     -   Закройте целевое приложение.  
 

@@ -1,8 +1,6 @@
 ---
 title: Граф использования ЦП | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.graph
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40bc0be19ffa0daa9a0ea786d7e06a4e9e7dfd4b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 570ddb4472baec04e656db0b36af5a2550720774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830288"
 ---
 # <a name="cpu-utilization-graph"></a>Граф использования ЦП
 На графе использования ЦП показывает уровень использования приложения с течением времени. Ось Х представляет время работы трассировки, а ось Y — количество логических ядер в системе. Этот граф не показывает, какое из ядер активно в заданный момент времени. Например, если два ядра были загружены на 50 процентов производительности в течение заданного периода времени, граф показал бы, что использовалось одно логическое ядро.  

@@ -1,8 +1,6 @@
 ---
 title: Задача GenerateApplicationManifest | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900695"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest - задача
 Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.  
@@ -35,7 +33,7 @@ ms.locfileid: "49888883"
  В следующей таблице приводятся параметры для задачи `GenerateApplicationManifest`.  
 
 
-| Параметр | Описание: |
+| Параметр | Описание |
 |---------------------------------| - |
 | `AssemblyName` | Необязательный параметр `String` .<br /><br /> Указывает поле `Name` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, то имя выводится из параметра `EntryPoint` или `InputManifest`. Если создать имя не удается, задача сообщает об ошибке. |
 | `AssemblyVersion` | Необязательный параметр `String` .<br /><br /> Указывает поле `Version` удостоверения сборки для создаваемого манифеста. Если параметр не указан, используется имя по умолчанию "1.0.0.0". |
@@ -76,7 +74,7 @@ ms.locfileid: "49888883"
 
 ## <a name="item-metadata"></a>Метаданные элементов  
 
-|Имя метаданных|Описание:|  
+|Имя метаданных|Описание|  
 |-------------------|-----------------|  
 |`DependencyType`|Указывает, публикуется и устанавливается ли зависимость с приложением или необходимым условием. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Значение по умолчанию — Install.|  
 |`AssemblyType`|Указывает, является ли зависимость управляемой или машинной сборкой. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Значение `Unspecified` используется по умолчанию и указывает, что манифест определяет тип сборки автоматически.|  

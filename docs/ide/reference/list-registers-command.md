@@ -2,7 +2,6 @@
 title: Команда List Registers
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959969"
 ---
 # <a name="list-registers-command"></a>Команда List Registers
 Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.
@@ -37,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Переключатели
  /Display [{`register`&#124;`registerGroup`}...]
 
- Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:
+ Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Например:
 
  `Debug.ListRegisters /Display eax`
 
@@ -67,7 +66,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)

@@ -3,19 +3,18 @@ title: Интерактивная оболочка REPL для R
 description: Использование интерактивной среды REPL для R в Visual Studio, встроенной в окна редактора.
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947079"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Работа с интерактивным окном R
 
@@ -52,7 +51,7 @@ ms.locfileid: "36235539"
 
 На панели инструментов доступны следующие команды, большинство из которых имеют сочетания клавиш и также доступны в меню **Инструменты R** > **Сеанс** и **Инструменты R** > **Рабочий каталог** (или как указано):
 
-| Кнопка | Команда | Сочетание клавиш | Описание: | 
+| Кнопка | Команда | Сочетание клавиш | Описание | 
 | --- | --- | --- | --- |
 | ![Кнопка сброса](media/repl-toolbar-01-reset.png) | Сбросить | **CTRL**+**SHIFT**+**F10** | Сбрасывает сеанс работы с интерактивным окном, очищает все переменные и журнал. |
 | ![Кнопка "Сбросить"](media/repl-toolbar-02-clear.png) | Clear | **CTRL**+**L** | Очищает выходные данные, которые отображаются в интерактивном окне; переменные сеанса и журнал остаются без изменений. |

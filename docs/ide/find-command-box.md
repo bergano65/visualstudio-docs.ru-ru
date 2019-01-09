@@ -2,7 +2,6 @@
 title: Поле поиска или выполнения команд
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 91546caa5136fbcd31dabcaa9294ccd8056e6750
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866794"
 ---
 # <a name="findcommand-box"></a>Поиск/Команда - окно
 
@@ -36,7 +35,7 @@ ms.locfileid: "34752415"
 
 ## <a name="entering-commands"></a>Ввод команд
 
-Чтобы с помощью поля **Найти/Команда** выполнить отдельную команду или псевдоним [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не поиск текста, введите перед командой знак "больше, чем" (**>**). Пример:
+Чтобы с помощью поля **Найти/Команда** выполнить отдельную команду или псевдоним [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не поиск текста, введите перед командой знак "больше, чем" (**>**). Например:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -46,7 +45,7 @@ ms.locfileid: "34752415"
 
 ## <a name="escape-characters"></a>Escape-символы
 
-Символ крышки (**^**) в команде означает, что следующий за ним символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки (**"**), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Пример:
+Символ крышки (**^**) в команде означает, что следующий за ним символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки (**"**), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Например:
 
 ```
 >Edit.Find ^^t /regex

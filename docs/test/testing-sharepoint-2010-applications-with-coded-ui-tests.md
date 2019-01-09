@@ -2,19 +2,18 @@
 title: Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 32b408743a2017b6fe83c28659496844b204444f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910193"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса
 
@@ -51,7 +50,7 @@ ms.locfileid: "52895448"
 > [!WARNING]
 > Вставка текста в любую ячейку Excel, а затем действие клавишей со стрелкой не запишется правильно. Используйте мышь для выделения ячеек.
 
-Если происходит запись действий в пустой ячейке, необходимо изменить код, дважды щелкнув по ячейке и выполнив набор операций с текстом. Это необходимо, поскольку щелчок по ячейке, за которым следует любое действие клавиатуры, активирует `textarea` внутри ячейки. Простая запись `setvalue` в пустой ячейке вызовет поиск `editbox` , которого не существует, пока по ячейке не щелкнули. Пример:
+Если происходит запись действий в пустой ячейке, необходимо изменить код, дважды щелкнув по ячейке и выполнив набор операций с текстом. Это необходимо, поскольку щелчок по ячейке, за которым следует любое действие клавиатуры, активирует `textarea` внутри ячейки. Простая запись `setvalue` в пустой ячейке вызовет поиск `editbox` , которого не существует, пока по ячейке не щелкнули. Например:
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));

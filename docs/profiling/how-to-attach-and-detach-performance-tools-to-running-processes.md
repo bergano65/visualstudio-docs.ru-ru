@@ -2,7 +2,6 @@
 title: Присоединение средств производительности к выполняющемуся процессу
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859689"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Как выполнить Присоединение средств производительности к выполняющемуся процессу и его отсоединение от этого процесса
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
@@ -64,6 +63,6 @@ ms.locfileid: "53048532"
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
- [Практическое руководство: Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

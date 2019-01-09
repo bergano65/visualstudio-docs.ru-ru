@@ -2,7 +2,6 @@
 title: Команда Log Command Window Output
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 23e6400df4323fc5bcf918448e35f6d4a2a9d767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830525"
 ---
 # <a name="log-command-window-output-command"></a>Команда Log Command Window Output
 Копирует все входные и выходные данные из окна **Команда** в файл.
@@ -34,7 +33,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Аргументы
  `filename`
 
- Необязательный. Имя файла журнала. По умолчанию этот файл создается в папке профиля пользователя. Если такое имя файла уже существует, журнал добавляется в конец имеющегося файла. Если файл не указан, используется последний указанный файл. Если предыдущий файл отсутствует, создается файл журнала по умолчанию с именем cmdline.log.
+ Необязательный параметр. Имя файла журнала. По умолчанию этот файл создается в папке профиля пользователя. Если такое имя файла уже существует, журнал добавляется в конец имеющегося файла. Если файл не указан, используется последний указанный файл. Если предыдущий файл отсутствует, создается файл журнала по умолчанию с именем cmdline.log.
 
 > [!TIP]
 > Чтобы изменить расположение для сохранения файла журнала, введите полный путь. Если этот путь содержит пробелы, заключите его в кавычки.
@@ -43,15 +42,15 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="switches"></a>Переключатели
  /on
 
- Необязательный. Запускает ведение журнала для окна **Команда** в указанном файле, добавляя в него новые данные.
+ Необязательный параметр. Запускает ведение журнала для окна **Команда** в указанном файле, добавляя в него новые данные.
 
  /off
 
- Необязательный. Останавливает ведение журнала для окна **Команда**.
+ Необязательный параметр. Останавливает ведение журнала для окна **Команда**.
 
  /overwrite
 
- Необязательный. Если указанный в аргументе `filename` файл совпадает с существующим файлом, он перезаписывается.
+ Необязательный параметр. Если указанный в аргументе `filename` файл совпадает с существующим файлом, он перезаписывается.
 
 ## <a name="remarks"></a>Примечания
  Если файл не указан, создается файл по умолчанию cmdline.log. По умолчанию эта команда имеет псевдоним Log.
@@ -75,9 +74,9 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

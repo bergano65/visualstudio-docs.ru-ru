@@ -1,8 +1,6 @@
 ---
 title: Задача LIB | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922024"
 ---
 # <a name="lib-task"></a>LIB - задача
 Заключает в оболочку 32-разрядный диспетчер библиотек Майкрософт *lib.exe*. Диспетчер библиотек создает библиотеку объектных файлов в формате COFF и управляет ею. Диспетчер библиотек также может создавать файлы экспорта и импортировать библиотеки в экспортированные справочные определения. Дополнительные сведения см. в разделах [Справочник по LIB](/cpp/build/reference/lib-reference) и [Запуск программы LIB](/cpp/build/reference/running-lib).  
@@ -40,7 +38,7 @@ ms.locfileid: "39079628"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи **LIB**. Большинство параметров задач соответствуют параметрам командной строки.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Необязательный параметр типа **String[]**.<br /><br /> Указывает дополнительные элементы для добавления в командную строку.|  
 |**AdditionalLibraryDirectories**|Необязательный параметр типа **String[]**.<br /><br /> Переопределяет путь к библиотеке среды. Задает имя каталога.<br /><br /> Дополнительные сведения см. в разделе [Параметр /LIBPATH (дополнительный параметр Libpath)](/cpp/build/reference/libpath-additional-libpath).|  
@@ -60,12 +58,12 @@ ms.locfileid: "39079628"
 |**RemoveObjects**|Необязательный параметр типа **String[]**.<br /><br /> Исключает указанный объект из выходной библиотеки. *Lib.exe* создает выходную библиотеку, объединяя все объекты (в объектных файлах или в библиотеках), а затем удаляя все объекты, указанные этим параметром.<br /><br /> Этот параметр соответствует параметру **/REMOVE** в *lib.exe*, который принимает аргумент `membername`.|  
 |**Sources**|Обязательный параметр `ITaskItem[]` .<br /><br /> Задает список исходных файлов, разделенных пробелами.|  
 |**SubSystem**|Необязательный параметр типа **String**.<br /><br /> Указывает среду для исполняемого файла. Выбор подсистемы влияет на символ точки входа или функцию точки входа.<br /><br /> Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Native** - **/SUBSYSTEM:NATIVE**<br />-   **Приложение EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI-драйвер службы загрузки** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI-среда выполнения** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Дополнительные сведения см. в разделе [/SUBSYSTEM (определение подсистемы)](/cpp/build/reference/subsystem-specify-subsystem).|  
-|**SuppressStartupBanner**|Необязательный параметр типа **Boolean**.<br /><br /> Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.<br /><br /> Дополнительные сведения см. в описании параметра **/NOLOGO** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
+|**SuppressStartupBanner**|Необязательный параметр **Boolean** .<br /><br /> Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.<br /><br /> Дополнительные сведения см. в описании параметра **/NOLOGO** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
 |**TargetMachine**|Необязательный параметр типа **String**.<br /><br /> Задает целевую платформу программы или DLL.<br /><br /> Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Дополнительные сведения см. в разделе [/MACHINE (определение целевой платформы)](/cpp/build/reference/machine-specify-target-platform).|  
 |**TrackerLogDirectory**|Необязательный параметр типа **String**.<br /><br /> Задает каталог журнала отслеживания.|  
-|**TreatLibWarningAsErrors**|Необязательный параметр типа **Boolean**.<br /><br /> Значение `true` приводит к тому, что задача **LIB** не создает выходной файл, если *lib.exe* создает предупреждение. Если указано значение `false`, выходной файл создается.<br /><br /> Дополнительные сведения см. в описании параметра **/WX** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
-|**UseUnicodeResponseFiles**|Необязательный параметр типа **Boolean**.<br /><br /> Значение `true` предписывает системе проектов создавать файлы ответа в Юникоде, когда порождается библиотекарь. Укажите значение `true`, если файлы в проекте имеют пути в Юникоде.|  
-|**Verbose**|Необязательный параметр типа **Boolean**.<br /><br /> Если указано значение `true`, то отображаются сведения о ходе выполнения сеанса, включая имена добавляемых *OBJ*-файлов. Эти сведения отправляются в стандартный вывод и могут быть перенаправлены в файл.<br /><br /> Дополнительные сведения см. в описании параметра **/VERBOSE** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
+|**TreatLibWarningAsErrors**|Необязательный параметр **Boolean** .<br /><br /> Значение `true` приводит к тому, что задача **LIB** не создает выходной файл, если *lib.exe* создает предупреждение. Если указано значение `false`, выходной файл создается.<br /><br /> Дополнительные сведения см. в описании параметра **/WX** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
+|**UseUnicodeResponseFiles**|Необязательный параметр **Boolean** .<br /><br /> Значение `true` предписывает системе проектов создавать файлы ответа в Юникоде, когда порождается библиотекарь. Укажите значение `true`, если файлы в проекте имеют пути в Юникоде.|  
+|**Verbose**|Необязательный параметр **Boolean** .<br /><br /> Если указано значение `true`, то отображаются сведения о ходе выполнения сеанса, включая имена добавляемых *OBJ*-файлов. Эти сведения отправляются в стандартный вывод и могут быть перенаправлены в файл.<br /><br /> Дополнительные сведения см. в описании параметра **/VERBOSE** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|  
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -1,8 +1,6 @@
 ---
 title: Задача GenerateTrustInfo | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f5e5e73f7e4e9f32c4fc929b86da3e629a1eb62
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f2c4c03eba5d0b154ce219daeea3761a001a2198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949580"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo - задача
 Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.  
@@ -31,7 +29,7 @@ ms.locfileid: "37946684"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `GenerateTrustInfo` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`ApplicationDependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает зависимые сборки.|  
 |`BaseManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает базовый манифест, на основе которого будет сформировано доверие к приложению.|  

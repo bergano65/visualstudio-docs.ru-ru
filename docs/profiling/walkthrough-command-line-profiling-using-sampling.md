@@ -1,8 +1,6 @@
 ---
 title: Пошаговое руководство. Профилирование из командной строки с помощью выборки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886813"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью выборки
 
@@ -35,7 +33,7 @@ ms.locfileid: "53592434"
 
 - Средний уровень знания [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)].
 - Средний уровень навыков работы с программами командной строки.
-- Копия [примера PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).
+- Копия [примера PeopleTrax](/visualstudio/profiling/performance-explorer).
 - Для работы со сведениями, полученными при профилировании, рекомендуется включить отладочные символы.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Профилирование из командной строки с помощью метода выборки

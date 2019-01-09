@@ -2,7 +2,6 @@
 title: Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 70401d064668cfdfec75a761d7486cf2732a9aac
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: dda6094b02c0172a7440fbfdfa255d07a122eb46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53593019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917544"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.  
@@ -106,7 +105,7 @@ ms.locfileid: "53593019"
 
     -   Введите команду **VSPerfCmd /detach**.  
 
-         -или-  
+         - или -  
 
     -   Закройте целевое приложение.  
 

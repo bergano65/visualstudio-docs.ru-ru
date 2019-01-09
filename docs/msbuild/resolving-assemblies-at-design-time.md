@@ -1,8 +1,6 @@
 ---
 title: Разрешение сборок во время разработки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986079"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 Когда вы добавляете ссылку на сборку с помощью вкладки **.NET** или диалога **добавления ссылки**, эта ссылка указывает на промежуточную базовую сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке **.NET** перечислены все базовые сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующие сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  

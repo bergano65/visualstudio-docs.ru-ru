@@ -1,8 +1,6 @@
 ---
 title: Элемент When (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932313"
 ---
 # <a name="when-element-msbuild"></a>Элемент When (MSBuild)
 Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.  
@@ -54,13 +52,13 @@ ms.locfileid: "39152432"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |Условие|Обязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Необязательный элемент.<br /><br /> Вычисляет дочерние элементы, чтобы выбрать один раздел кода для выполнения. Элемент `Choose` может содержать любое число элементов `When`, включая ноль.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Необязательный элемент.<br /><br /> Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Элемент `ItemGroup` может содержать любое число элементов `When`, включая ноль.|  
@@ -68,7 +66,7 @@ ms.locfileid: "39152432"
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Вычисляет дочерние элементы, чтобы выбрать один раздел кода для выполнения.|  
 

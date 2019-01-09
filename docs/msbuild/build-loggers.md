@@ -1,8 +1,6 @@
 ---
 title: Средства ведения журнала сборки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914005"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала сборки
 Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке *Microsoft.Build.Framework.dll*.  
@@ -64,7 +62,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере приведен полный код средства ведения журнала.  
   
 ### <a name="code"></a>Код  
@@ -72,7 +70,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере показано, как реализовать средство ведения журнала, которое записывает журнал в файл, а не окно консоли.  
   
 ### <a name="code"></a>Код  

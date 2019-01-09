@@ -1,8 +1,6 @@
 ---
 title: Интерфейсы API средств профилирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942571"
 ---
 # <a name="profiling-tools-apis"></a>Интерфейсы API средств профилирования
 Вы можете вставить управляемые или собственные методы интерфейсов API средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы управлять сбором данных во время выполнения профилирования. В этом разделе описываются методы интерфейсов API и способы их использования.  
@@ -27,7 +25,7 @@ ms.locfileid: "35255149"
  <xref:Microsoft.VisualStudio.Profiler>  
  Описывает методы средств профилирования .NET.  
   
- [Пошаговое руководство. Использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)  
+ [Пошаговое руководство: Использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)  
  Узнайте, как использовать методы средств профилирования .NET в этом полном примере.  
   
 ## <a name="related-sections"></a>Связанные разделы  

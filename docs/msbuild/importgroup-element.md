@@ -1,8 +1,6 @@
 ---
 title: Элемент ImportGroup | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c40fd9e5f21940be77af7dfbddf496594502641e
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 21dcaa5e4192c2ee4dd223da5cad560ded220275
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928994"
 ---
 # <a name="importgroup-element"></a>Элемент ImportGroup
 Содержит коллекцию элементов `Import`, сгруппированных по необязательному условию. Дополнительные сведения см. в разделе [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -45,13 +43,13 @@ ms.locfileid: "50751028"
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Import](../msbuild/import-element-msbuild.md)|Импортирует содержимое одного файла проекта в другой файл проекта.|  
 

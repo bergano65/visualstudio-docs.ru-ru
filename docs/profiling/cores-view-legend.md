@@ -1,8 +1,6 @@
 ---
 title: Легенда представления "Ядра" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 61d05ffc3bb2a43b29e2e5c91a7b28f5b8d1224a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949528"
 ---
 # <a name="cores-view-legend"></a>Легенда представления "Ядра"
 В легенде представления "Ядра" каждый поток обозначается с помощью цвета и имени. Она включает в себя столбцы, которые показывают количество переключений контекста между ядрами и процент переключений контекста между ядрами. Строки в легенде сортируются по количеству переключений контекста между ядрами по убыванию.  

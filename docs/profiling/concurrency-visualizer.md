@@ -1,8 +1,6 @@
 ---
 title: Визуализатор параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 07/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ed2edd453cd9e267a32bfdd5d9a6b0ad6a7ac3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 211f941e5ea9e3ae6ed1eeec7f8f558319d0f703
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908909"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 > [!NOTE]
@@ -43,7 +41,7 @@ ms.locfileid: "51220668"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Представление "Использование"](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|  
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|  

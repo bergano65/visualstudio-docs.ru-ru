@@ -1,8 +1,6 @@
 ---
 title: Задача Vbc| Документация Майкрософт
-ms.custom: ''
 ms.date: 04/12/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2ab82b16d3cdaf493afc15f506dc237e6a91d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956157"
 ---
 # <a name="vbc-task"></a>Vbc - задача
 Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода (*.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -34,7 +32,7 @@ ms.locfileid: "49937880"
  В следующей таблице приводятся параметры задачи `Vbc` .  
 
 
-| Параметр | Описание: |
+| Параметр | Описание |
 |------------------------------| - |
 | `AdditionalLibPaths` | Необязательный параметр `String[]` .<br /><br /> Задает дополнительные папки, в которых выполняется поиск сборок, указанных в атрибуте References. |
 | `AddModules` | Необязательный параметр `String[]` .<br /><br /> Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Этот параметр соответствует параметру [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) компилятора *vbc.exe*. |

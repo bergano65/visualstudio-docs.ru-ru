@@ -2,7 +2,6 @@
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, IntelliSense"
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 688360e117863b6a1e5e3b06ad23a8835d878bd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843013"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Чтобы открыть страницу **IntelliSense**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **IntelliSense.**
@@ -75,6 +74,6 @@ ms.locfileid: "50670784"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IntelliSense для JavaScript](../../ide/javascript-intellisense.md)

@@ -2,19 +2,18 @@
 title: Присоединение профилировщика к приложению .NET для сбора данных об использовании памяти
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c11a6cd6d34a73956b2efa64a45aae6c4ba2da62
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9c5130f6ea19112e5bb629f09ac7cd4171770653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821300"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework для сбора данных об использовании памяти с помощью командной строки
 
@@ -99,7 +98,7 @@ ms.locfileid: "53592421"
 
     - Введите команду **VSPerfCmd /detach**.
 
-         -или-
+         - или -
 
     - Закройте целевое приложение.
 

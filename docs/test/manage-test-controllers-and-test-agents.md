@@ -2,19 +2,18 @@
 title: Управление контроллерами и агентами тестирования
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891405"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Управление контроллерами и агентами тестирования
 
@@ -120,7 +119,7 @@ ms.locfileid: "53059500"
 |-|-----------------|
 |Выполнение теста|Выполнение тестов|
 |Готово|Доступен для выполнения тестов и сбора данных и диагностики|
-|Автономно|Недоступен для выполнения тестов и сбора данных и диагностики|
+|Offline|Недоступен для выполнения тестов и сбора данных и диагностики|
 |Отключен|Агент тестирования не запущен|
 
 Состояние и другие параметры агента тестирования можно изменить с помощью следующих процедур.

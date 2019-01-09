@@ -2,9 +2,8 @@
 title: Использование параметров командной строки для установки Visual Studio
 titleSuffix: ''
 description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869665"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 

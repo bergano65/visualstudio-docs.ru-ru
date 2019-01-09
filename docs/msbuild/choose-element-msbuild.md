@@ -1,8 +1,6 @@
 ---
 title: Элемент Choose (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Choose
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 227cf3ff0f065c535da10d23363044f33972a28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823264"
 ---
 # <a name="choose-element-msbuild"></a>Элемент Choose (MSBuild)
 Вычисляет дочерние элементы для выбора одного набора элементов `ItemGroup` и/или элементов `PropertyGroup` для вычисления.  
@@ -57,14 +55,14 @@ ms.locfileid: "49895474"
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Необязательный элемент.<br /><br /> Указывает блок кода `PropertyGroup` и элементы `ItemGroup` для оценки, если условия всех элементов `When` оценены как `false`. Элемент `Choose` может содержать ноль элементов `Otherwise` или один такой элемент, который должен быть последним.|  
 |[When](../msbuild/when-element-msbuild.md)|Обязательный элемент.<br /><br /> Указывает один из возможных блоков кода, который может выбрать элемент `Choose`. Элемент `When` может содержать один или несколько элементов `Choose`.|  
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-| Элемент | Описание: |
+| Элемент | Описание |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`. |
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |

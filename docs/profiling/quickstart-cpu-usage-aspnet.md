@@ -3,7 +3,6 @@ title: Анализ данных о загрузке ЦП (ASP.NET)
 description: Измерение производительности приложения в приложениях ASP.NET с помощью средства диагностики "Загрузка ЦП"
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837398"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
@@ -154,7 +153,7 @@ Visual Studio предоставляет множество эффективны
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
+##  <a name="step-1-collect-profiling-data"></a>Шаг 1. Сбор данных профилирования 
   
 1.  Сначала установите точку останова в приложении в следующей строке кода в конструкторе `Simple`:
 
@@ -195,7 +194,7 @@ Visual Studio предоставляет множество эффективны
 
      На этом этапе можно начать анализировать данные.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Шаг 2. Анализ данных о загрузке ЦП
+## <a name="step-2-analyze-cpu-usage-data"></a>Шаг 2. Анализ данных о загрузке ЦП
 
 Мы рекомендуем начать анализ данных с проверки списка функций на вкладке "Загрузка ЦП" и выявления функций, выполняющих основную часть работы, а затем подробно рассмотреть каждую из этих функций.
 
